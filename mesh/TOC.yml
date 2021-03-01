@@ -1,2 +1,6 @@
 - name: Index
-  href: index.md
+  href: index.yml
+- name: Mesh services
+  href: mesh/toc.yml
+- name: Mesh App for HoloLens
+  href: mesh-app/toc.yml
