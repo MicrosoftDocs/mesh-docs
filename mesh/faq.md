@@ -26,7 +26,7 @@ If you're interested in building a Mesh-enabled mixed reality app, [join the Mix
 You can get started with Microsoft Mesh today:
 
 - Complete the Microsoft Mesh [Register Interest](https://aka.ms/meshsignup) form to stay up to date with Mesh news and announcements, including general availability of AltspaceVR enterprise features.
-- Try Mesh-enabled experiences: [Mesh App on HoloLens](mesh-app/index.md), and [Mesh-enabled AltspaceVR](https://altvr.com).
+- Try Mesh-enabled experiences: [Mesh App on HoloLens](./mesh-app/index.md), and [Mesh-enabled AltspaceVR](https://altvr.com).
 
 We will provide information on availability of additional Mesh-enabled apps with time, as the service becomes generally available.
 
