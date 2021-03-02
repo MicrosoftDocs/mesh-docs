@@ -49,7 +49,7 @@ We collect information about your organization's identity, your account ID, and 
 
 ### The app says that my account isn't configured to use Mesh. What should I do?
 
-- In order to use the Microsoft Mesh App (Preview), you'll need to enable the service for your organization. Some companies may require you to have your admin specially enable this. You can find more information for your admin in [Set up Microsoft Mesh for your organization](../mesh/provisioning.md).
+- In order to use the Microsoft Mesh App (Preview), you'll need to enable the service for your organization. Some companies may require you to have your admin specially enable this. You can find more information for your admin in [Set up Microsoft Mesh for your organization](../provisioning.md).
 
 ## Feedback and support
 

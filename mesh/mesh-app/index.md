@@ -11,7 +11,7 @@ keywords: mixed reality, development, getting started, documentation, guides, fe
 
 # Collaborate with the Mesh App on your HoloLens 2 (Preview)
 
-The Microsoft Mesh App (Preview) is a collaboration-first experience for HoloLens 2, built on [Microsoft Mesh services](../mesh/overview.md). With the Mesh App, you can create spaces to work with others in your organization. You'll get a more natural and productive collaboration experience, with the feeling of being in the same room while working from different locations.
+The Microsoft Mesh App (Preview) is a collaboration-first experience for HoloLens 2, built on [Microsoft Mesh services](../overview.md). With the Mesh App, you can create spaces to work with others in your organization. You'll get a more natural and productive collaboration experience, with the feeling of being in the same room while working from different locations.
 
 ![Microsoft Mesh App collaboration experience](./media/mesh-app.png)
 
@@ -37,7 +37,7 @@ To try the Microsoft Mesh App (Preview), you will need:
 
 1. On your HoloLens 2, launch the Microsoft Mesh App from the pins panel.
 1. Sign into the app using your Microsoft Azure AD account (enterprise) or your Microsoft Account (personal).
-1. The first time you run the app, you must accept the [Microsoft Mesh (Preview)](../mesh/overview.md) terms and conditions. (Also see [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).)
+1. The first time you run the app, you must accept the [Microsoft Mesh (Preview)](../overview.md) terms and conditions. (Also see [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).)
 
 ## Use the app
 
@@ -197,7 +197,7 @@ The Utilities pane shows you several options for interacting with content.
 
 For other questions, see [Microsoft Mesh App troubleshooting and frequently asked questions](faq.md).
 
-- [Microsoft Mesh overview](../mesh/overview.md)
-- [Set up Microsoft Mesh for your organization](../mesh/provisioning.md)
+- [Microsoft Mesh overview](../overview.md)
+- [Set up Microsoft Mesh for your organization](../provisioning.md)
 - [HoloLens](/hololens/)
 - [Get started with Mixed Reality](/windows/mixed-reality/discover/get-started-with-mr)
