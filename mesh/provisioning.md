@@ -24,7 +24,7 @@ If your organization lets a user grant an application permissions to access your
 
 ## If user consent is disabled
 
-If your tenant administrator has disabled user consent to apps, they will need to follow the instructions below to manually provision the Mesh service and Mesh-enabled experiences such as [Mesh App on HoloLens](../mesh-app/index.md), to be used in your tenant.
+If your tenant administrator has disabled user consent to apps, they will need to follow the instructions below to manually provision the Mesh service and Mesh-enabled experiences such as [Mesh App on HoloLens](./mesh-app/index.md), to be used in your tenant.
 
 ### Mesh App on HoloLens (Preview)
 
