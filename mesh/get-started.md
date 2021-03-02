@@ -19,7 +19,7 @@ Complete the Microsoft Mesh [Register Interest](https://aka.ms/meshsignup) form 
 
 App | Overview | Device support
 ------ | ------ | ------
-[Mesh App](mesh-app/index.md) | Gather a few peers and download the [Mesh App on HoloLens 2](mesh-app/index.md) for room-scale collaboration scenarios, powered by Mesh. | HoloLens 2
+[Mesh App](./mesh-app/index.md) | Gather a few peers and download the [Mesh App on HoloLens 2](./mesh-app/index.md) for room-scale collaboration scenarios, powered by Mesh. | HoloLens 2
 [AltspaceVR](https://altvr.com/mesh) | [Request access](https://altvr.com/mesh) to the AltspaceVR Preview to bring your work events to Mesh-enabled AltspaceVR. | HTC Vive, Oculus (Rift, Rift S, Quest, Quest 2), Windows Mixed Reality, PC
 
 > [!IMPORTANT]

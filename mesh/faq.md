@@ -34,7 +34,7 @@ Developers can [join the Mixed Reality Developer Program](https://aka.ms/iwantmr
 
 ## What markets will Microsoft Mesh be available in?
 
-See the [Mesh App on HoloLens FAQ](mesh-app/faq.md) to learn about Mesh App availability. We will provide additional information on market availability as the service becomes generally available.
+See the [Mesh App on HoloLens FAQ](./mesh-app/faq.md) to learn about Mesh App availability. We will provide additional information on market availability as the service becomes generally available.
 
 ## How much will Microsoft Mesh cost?
 
@@ -46,6 +46,6 @@ We collect information about your organization's identity, your account ID, and 
 
 ## How do I file feedback and learn about Mesh news?
 
-- For the [Mesh App on HoloLens](mesh-app/index.md), you can file feedback through the [Feedback Hub](/hololens/hololens-feedback) app, under **Windows Holographic\Collaboration**.
+- For the [Mesh App on HoloLens](./mesh-app/index.md), you can file feedback through the [Feedback Hub](/hololens/hololens-feedback) app, under **Windows Holographic\Collaboration**.
 - If you're interested in deploying Mesh in your Enterprise, fill out the Mesh Preview [Register Interest](https://aka.ms/meshsignup) form to stay up to date with Mesh news and announcements.
 - If you're interested in building a Mesh app or have developer feedback, [join the Mixed Reality Developer Program](https://aka.ms/iwantmr).

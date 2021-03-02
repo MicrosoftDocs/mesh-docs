@@ -33,7 +33,7 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Get started with Microsoft Mesh (Preview)
-            url: mesh/get-started.md
+            url: get-started.md
           - text: Collaborate with the Microsoft Mesh App for HoloLens (Preview)
             url: mesh-app/index.md
 
@@ -43,4 +43,4 @@ landingContent:
       - linkListType: deploy
         links:
           - text: Set up Microsoft Mesh (Preview) for your organization
-            url: mesh/provisioning.md
+            url: provisioning.md
