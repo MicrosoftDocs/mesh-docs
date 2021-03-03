@@ -19,7 +19,7 @@ keywords: mixed reality, getting started, documentation, guides, features, holog
     In these Rules, "Microsoft", "we", "our", and "us" refer to Sponsor and "you" and "yourself" refers to a Sweepstakes participant, or the parent/legal guardian of any Sweepstakes entrant who has not reached the age of majority to contractually obligate themselves in their legal place of residence. By entering you (your parent/legal guardian if you are not the age of majority in your legal place of residence) agree to be bound by these Rules.   
 1. **ENTRY PERIOD**
 
-    The Sweepstakes starts at 12:01 a.m. Pacific Time (PT) on March 2, 2021, and ends at 11:59 p.m. PT on March 4, 2021 ("Entry Period"). 
+    The Sweepstakes starts at 12:01 a.m. Pacific Time (PT) on March 2, 2021, and ends at 11:59 p.m. PT on March 3, 2021 ("Entry Period"). 
 1. **ELIGIBILITY**
 
     To enter, you must  own or have access to a HoloLens2, and be 18 years of age or older. If you are 18 years of age or older but have not reached the age of majority in your legal place of residence, then you must have consent of a parent/legal guardian.
