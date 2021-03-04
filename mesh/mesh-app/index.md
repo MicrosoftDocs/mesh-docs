@@ -4,7 +4,7 @@ description: Get started with Microsoft Mesh App (Preview).
 ms.prod: mixed-reality
 author: jwmsft
 ms.author: jimwalk
-ms.date: 11/19/2020
+ms.date: 03/03/2021
 ms.topic: article
 keywords: mixed reality, development, getting started, documentation, guides, features, holograms
 ---
@@ -65,7 +65,7 @@ The taskbar lets you access tools and spaces in the Mesh App. You can open the t
 
 1. **Avatar**: Opens the avatar editor.
 1. [**Spaces**](#collaborative-spaces): Activates the spaces pane.
-1. [**Utilities**](#add-annotations): Activates the annotation tools pane.
+1. [**Tools**](#add-annotations): Activates the annotation tools pane.
 1. [**Content**](#import-content): Activates the content pane, where you can select 3D content to add to the space.
 1. **Settings**: Activates the settings pane.
 1. **Recenter**: Repositions the table to be in front of your current position.
@@ -86,7 +86,7 @@ The Microsoft Mesh App is for collaboration. To work with others, you can create
 
 To work with spaces, open the taskbar from the Hand Menu, and choose the Spaces icon.
 
-![The spaces icon](\media\spaces-icon.png)
+![The spaces icon](\media\spaces-pane.png)
 
 #### Create a collaborative space
 
@@ -148,12 +148,12 @@ You can add 3D objects to any space. You can then pinch an object to grab, move,
 
 To work with 3D content, open the Taskbar from the Hand Menu, and choose the Content icon.
 
-![The content icon](\media\content-icon.png)
+![The content icon](\media\content-pane.png)
 
 In the Content pane, there are 3 places from which you can pull content into a space:
 
 - **Samples**: This sample content is included in the app build.
-- **OneDrive**: This is content that's inside of the Microsoft Mesh App (Preview) > MyContent folder on your OneDrive. Other users can't see this content. When you share it in a collaborative space, a copy is made for that space.
+- **OneDrive**: This is content that's inside of the Microsoft Mixed Reality Collaboration Client (preview) > MyContent folder on your OneDrive. Other users can't see this content. When you share it in a collaborative space, a copy is made for that space.
 - **Space**: This is shared content that either you or another member added to the current space.
 
 > [!NOTE]
@@ -166,12 +166,12 @@ You can add your own custom 3D content to OneDrive to make it available in the O
 To add content to the User folder:
 
 1. Go to OneDrive for Business on your PC and log in with the same Azure AD account that you used to log in to the Microsoft Mesh App.
-1. In OneDrive, go to My files > Apps > Microsoft Mesh App (Preview) > MyContent and copy files to this directory.
+1. In OneDrive, go to Apps > Microsoft Mixed Reality Collaboration Client (preview) > MyContent and copy files to this directory.
 1. Once your files are copied to OneDrive, open the Content > OneDrive pane again to access them.
 
 #### Share content to a collaborative space
 
-You can share any content from the Samples or OneDrive folders to a collaborative space. This copies over the model file into your current space and shares the copy with all members of the space. Shared content for a space is stored in each users OneDrive under My files > Apps > Microsoft Mesh App (Preview) > _spaceGUID_.space.
+You can share any content from the Samples or OneDrive folders to a collaborative space. This copies over the model file into your current space and shares the copy with all members of the space. Shared content for a space is stored in each users OneDrive under Apps > Microsoft Mixed Reality Collaboration Client (preview) > _spaceGUID_.space.
 
 ![Share 3D content](\media\share-content.png)
 
@@ -184,9 +184,9 @@ To add 3D content to a space:
 
 ### Add annotations
 
-The Utilities pane shows you several options for interacting with content.
+The Tools pane shows you several options for interacting with content.
 
-![Annotation tools](\media\utilities-pane.png)
+![Annotation tools](\media\tools-pane.png)
 
 - Select the hand icon to enter selection mode, which let's you grab and move objects in the space.
 - Use the eraser to remove content. With the eraser selected, touch the content you want to remove with the red X.
