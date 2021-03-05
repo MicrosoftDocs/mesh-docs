@@ -78,6 +78,12 @@ Mesh provides a natural collaboration experience, in mixed reality. People are r
 
 ## Next steps
 
-[Get Started with the Microsoft Mesh Preview](get-started.md) by completing the Register Interest form to stay up to date with Mesh news and announcements, trying the Mesh App on your HoloLens 2, and requesting access to Mesh-enabled AltspaceVR.
+Get Started with the Microsoft Mesh Preview by completing the Register Interest form to stay up to date with Mesh news and announcements, trying the Mesh App on your HoloLens 2, and requesting access to Mesh-enabled AltspaceVR.
 
-[Join the Mixed Reality Developer Program](https://aka.ms/iwantmr) if you're interesting in building a Mesh-enabled application.
+   > [!div class="nextstepaction"]
+   > [Get Started with the Microsoft Mesh Preview](get-started.md)
+
+Join the Mixed Reality Developer Program if you're interesting in building a Mesh-enabled application.
+
+   > [!div class="nextstepaction"]
+   > [Join the Mixed Reality Developer Program](https://www.microsoft.com/store/apps/9P64LJ74NGW0)
