@@ -25,7 +25,7 @@ Mesh provides a natural collaboration experience, in mixed reality. People are r
 
 :::row:::
    :::column span="1":::
-      :::image type="content" source="media/scene-1.png" alt-text="Image alt text" lightbox="image-file-expanded.png":::
+      :::image type="content" source="media/scene-1.png" alt-text="Users looking at a life size hologram of a car from different locations":::
    :::column-end:::
    :::column span="":::
       Colleagues working time zones apart can collaborate as if they're physically present in the same room. Mesh is integrated with Microsoft 365, so connections, calendars, content and workflows naturally transition to their Mixed Reality world. These shared experiences help deepen understanding, increase employee engagement and improve productivity.
@@ -39,7 +39,7 @@ Mesh provides a natural collaboration experience, in mixed reality. People are r
       Mesh enhances 3D design reviews by enabling users to join from anywhere using any device. Whether physically present or holoported, colleagues can see and annotate 3D models in real-time. All content persists between design sessions so teams can quickly start where they left off.  This common understanding ignites ideas, sparks creativity, and forms powerful bonds.
    :::column-end:::
    :::column span="":::
-      :::image type="content" source="media/scene-2.png" alt-text="Image alt text" lightbox="image-file-expanded.png":::
+      :::image type="content" source="media/scene-2.png" alt-text="Two people using a HoloLens and a tablet to look at a holographic scene":::
    :::column-end:::
 :::row-end:::
 
@@ -47,7 +47,7 @@ Mesh provides a natural collaboration experience, in mixed reality. People are r
 
 :::row:::
    :::column span="1":::
-      :::image type="content" source="media/scene-3.png" alt-text="Image alt text" lightbox="image-file-expanded.png":::
+      :::image type="content" source="media/scene-3.png" alt-text="Two people looking at climate data on a holographic globe":::
    :::column-end:::
    :::column span="":::
       Training, especially on complex topics such as surgery, equipment maintenance, and traffic control, is hard to do without being in the same room with the instructor and looking at the same set of objects from multiple perspective. With Mesh, employees can learn together from anywhere thanks to holoportation, holographic sharing, and visualization. This helps improve the efficacy of virtual training while reducing travel and logistics costs.
@@ -61,7 +61,7 @@ Mesh provides a natural collaboration experience, in mixed reality. People are r
       Mesh enhances 3D design reviews by enabling users to join from anywhere using any device. Whether physically present or holoported, colleagues can see and annotate 3D models in real-time. All content persists between design sessions so teams can quickly start where they left off.  This common understanding ignites ideas, sparks creativity, and forms powerful bonds.
    :::column-end:::
    :::column span="":::
-      :::image type="content" source="media/scene-4.png" alt-text="Image alt text" lightbox="image-file-expanded.png":::
+      :::image type="content" source="media/scene-4.png" alt-text="People learning together":::
    :::column-end:::
 :::row-end:::
 
@@ -69,7 +69,7 @@ Mesh provides a natural collaboration experience, in mixed reality. People are r
 
 :::row:::
    :::column span="1":::
-      :::image type="content" source="media/scene-5.png" alt-text="Image alt text" lightbox="image-file-expanded.png":::
+      :::image type="content" source="media/scene-5.png" alt-text="A person using HoloLens to have a virtual meeting with a doctor":::
    :::column-end:::
    :::column span="":::
       Foster a deeper sense of connection and community, by hosting virtual meet-ups in Mesh-powered mixed reality experiences. Form powerful bonds with others by letting your personality shine through as technology fades away.
@@ -78,6 +78,12 @@ Mesh provides a natural collaboration experience, in mixed reality. People are r
 
 ## Next steps
 
-[Get Started with the Microsoft Mesh Preview](get-started.md) by completing the Register Interest form to stay up to date with Mesh news and announcements, trying the Mesh App on your HoloLens 2, and requesting access to Mesh-enabled AltspaceVR.
+Get Started with the Microsoft Mesh Preview by completing the Register Interest form to stay up to date with Mesh news and announcements, trying the Mesh App on your HoloLens 2, and requesting access to Mesh-enabled AltspaceVR.
 
-[Join the Mixed Reality Developer Program](https://aka.ms/iwantmr) if you're interesting in building a Mesh-enabled application.
+   > [!div class="nextstepaction"]
+   > [Get Started with the Microsoft Mesh Preview](get-started.md)
+
+Join the Mixed Reality Developer Program if you're interesting in building a Mesh-enabled application.
+
+   > [!div class="nextstepaction"]
+   > [Join the Mixed Reality Developer Program](https://www.microsoft.com/store/apps/9P64LJ74NGW0)
