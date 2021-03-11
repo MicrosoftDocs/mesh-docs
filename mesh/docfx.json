@@ -41,6 +41,7 @@
     "globalMetadata": {
       "breadcrumb_path": "/mesh/breadcrumb/toc.json",
       "extendBreadcrumb": true,
+      "uhfHeaderId": "MSDocsHeader-Hololens",
       "feedback_system": "None"
     },
     "fileMetadata": {},
