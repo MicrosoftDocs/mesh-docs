@@ -27,7 +27,9 @@ App | Overview | Device support
 > [!IMPORTANT]
 > Don't forget to fill out the Microsoft Mesh **[Register Interest](https://aka.ms/meshsignup)** form to stay up to date with Mesh news and announcements.
 
-## Stay up to date on Microsoft Mesh
+## Build a Mesh-enabled app
+
+If you're interested in building a Mesh-enabled mixed reality app, join the [Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/signup/) to get updates, and get notified when Mesh Public Preview begins.  
 
 Complete the Microsoft Mesh [Register Interest](https://info.microsoft.com/CO-NOGEP-CNTNT-FY21-03Mar-02-Microsoft-Mesh-5890_01Registration-ForminBody.html) form to stay up to date with Mesh announcements and news.
 
