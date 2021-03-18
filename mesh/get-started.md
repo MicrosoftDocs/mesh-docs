@@ -29,13 +29,11 @@ App | Overview | Device support
 
 ## Build a Mesh-enabled app
 
-If you're interested in building a Mesh-enabled mixed reality app, join the [Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/signup/) to get updates, and get notified when Mesh Public Preview begins.  
+If you're interested in building a Mesh-enabled mixed reality app, join the [Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/signup/) to get updates, and get notified when Mesh Public Preview begins.
+
+## Stay up to date
 
 Complete the Microsoft Mesh [Register Interest](https://info.microsoft.com/CO-NOGEP-CNTNT-FY21-03Mar-02-Microsoft-Mesh-5890_01Registration-ForminBody.html) form to stay up to date with Mesh announcements and news.
-
-## Stay up to date on all things Mixed Reality
-
-Join the [Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/signup/) to get updates.
 
 ## Learn more
 
