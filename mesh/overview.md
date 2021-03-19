@@ -83,7 +83,7 @@ Get Started with the Microsoft Mesh Preview by completing the Register Interest 
    > [!div class="nextstepaction"]
    > [Get Started with the Microsoft Mesh Preview](get-started.md)
 
-Join the Mixed Reality Developer Program if you're interesting in building a Mesh-enabled application.
+If you're interested in building a Mesh-enabled mixed reality app, join the Mixed Reality Developer Program to get updates, and get notified when Mesh Public Preview begins.
 
    > [!div class="nextstepaction"]
-   > [Join the Mixed Reality Developer Program](https://www.microsoft.com/store/apps/9P64LJ74NGW0)
+   > [Join the Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/en-US/signup/)
