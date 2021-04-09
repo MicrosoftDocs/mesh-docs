@@ -10,7 +10,7 @@ keywords: mixed reality, microsoft mesh, documentation, guides, features, hologr
 ---
 
 # Use the Mesh app
-
+This article describes how to use features of the Microsoft Mesh App on HoloLens 2.
 ## The Hand Menu
 
 When you look at the palm of either hand, you will invoke the Hand Menu. In addition to the standard HoloLens start menu on your wrist, the Hand Menu provides quick access to important tools.
