@@ -38,8 +38,8 @@ keywords: mixed reality, getting started, documentation, guides, features, holog
 
 ### Where does my data go?
 
-- User content is stored in your OneDrive storage at Apps > Microsoft Mixed Reality Collaboration Client (preview) > MyContent.
-- Shared content is stored in your OneDrive storage at Apps > Microsoft Mixed Reality Collaboration Client (preview) > _spaceGUID_.space.
+- User content is stored in your OneDrive storage at Apps > Microsoft Mesh App (Preview) > MyContent.
+- Shared content is stored in your OneDrive storage at Apps > Microsoft Mesh App (Preview) > _spaceGUID_.space.
 - Your avatar customization is stored in your OneDrive storage.
 - The drawing data that gets created in a session is stored in the OneDrive account of the user that created the session initially.
 
