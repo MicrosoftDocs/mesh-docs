@@ -1,4 +1,6 @@
-- name: Collaborate with the Mesh App
+- name: Get started with the Mesh App
   href: index.md
+- name: Use the Mesh App
+  href: use-mesh.md
 - name: Frequently asked questions
   href: faq.md
