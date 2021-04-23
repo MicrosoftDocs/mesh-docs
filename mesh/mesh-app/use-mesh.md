@@ -114,9 +114,9 @@ To move between spaces:
 
 ## Import content
 
-You can add 3D objects and 2D image files to any space. You can then pinch an object to grab, move, rotate, and scale it. In a collaborative space, all users who are a member of the space can add, manipulate, annotate, and delete any objects.
+You can add 3D objects and 2D images to any space. You can then pinch an object to grab, move, rotate, and scale it. In a collaborative space, all users who are a member of the space can add, manipulate, annotate, and delete any objects.
 
-To work with 3D content or image files, open the Taskbar from the Hand Menu, and choose the Content icon.
+To work with 3D content or images, open the Taskbar from the Hand Menu, and choose the Content icon.
 
 ![The content icon](\media\content-pane.png)
 
@@ -129,7 +129,7 @@ In the Content pane, there are 3 places from which you can pull content into a s
 > [!NOTE]
 > For 3D content, only .glb files are supported at this time.
 
-The following 2D image files are now supported: .png, .gif, .ico, .bmp, .tiff, .tif, .jpeg, .jpe, and .jpg.  For a .gif file, only the first frame will be loaded.
+The following 2D image file formats are supported: .png, .gif, .ico, .bmp, .tiff, .tif, .jpeg, .jpe, and .jpg.  For a .gif file, only the first frame will be loaded.
 
 ### Import user content
 
