@@ -2,6 +2,8 @@
   href: index.yml
 - name: Mesh overview
   href: overview.md
+- name: What's new highlights
+  href: whats-new.md  
 - name: Get started
   href: get-started.md
 - name: Set up for your organization

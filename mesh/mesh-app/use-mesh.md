@@ -4,7 +4,7 @@ description: All aspects of using the Microsoft Mesh App are covered
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 04/09/2021
+ms.date: 04/23/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -114,9 +114,9 @@ To move between spaces:
 
 ## Import content
 
-You can add 3D objects to any space. You can then pinch an object to grab, move, rotate, and scale it. In a collaborative space, all users who are a member of the space can add, manipulate, annotate, and delete any objects.
+You can add 3D objects and 2D image files to any space. You can then pinch an object to grab, move, rotate, and scale it. In a collaborative space, all users who are a member of the space can add, manipulate, annotate, and delete any objects.
 
-To work with 3D content, open the Taskbar from the Hand Menu, and choose the Content icon.
+To work with 3D content or image files, open the Taskbar from the Hand Menu, and choose the Content icon.
 
 ![The content icon](\media\content-pane.png)
 
@@ -127,7 +127,9 @@ In the Content pane, there are 3 places from which you can pull content into a s
 - **Space**: This is shared content that either you or another member added to the current space.
 
 > [!NOTE]
-> Only .glb files are supported at this time.
+> For 3D content, only .glb files are supported at this time.
+
+The following 2D image files are now supported: .png, .gif, .ico, .bmp, .tiff, .tif, .jpeg, .jpe, and .jpg.  For a .gif file, only the first frame will be loaded.
 
 ### Import user content
 
