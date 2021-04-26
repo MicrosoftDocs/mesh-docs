@@ -11,7 +11,7 @@ keywords: mixed reality, microsoft mesh, documentation, guides, features, hologr
 
 # Release notes for the Mesh App
 
-To ensure your experience with the Mesh App, we continue to release features, bugs, and security updates.  On this page, you can see what’s new for the Mesh App in the latest versions.
+To ensure your experience with the Mesh App, we continue to release features, bugs, and security updates.  On this page, you can see what’s new in the latest versions of the Mesh App.
 
 | Date          | Version           | Change description  |
 | :------------ |:-------------| :----------- |
