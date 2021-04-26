@@ -48,7 +48,7 @@ The table acts as the central hub for all collaborators, so each space includes 
 
 ## Collaborative Spaces
 
-The Microsoft Mesh App is for collaboration. To work with others, you can create collaborative spaces and invite others to join them, or you can be invited to join spaces that others have created. Users can only enter spaces they are a member of, and each space can have a maximum of 8 concurrent users. All contents and annotations are persistent and can be edited by anyone in the space. All collaboration spaces include the same table found in your home.
+The Microsoft Mesh App is for collaboration. To work with others, you can create a collaborative space and invite others to join your space, or you can be invited to join spaces that others have created. Users can only enter spaces they are a member of, and each space can have a maximum of 8 concurrent users. All contents and annotations are persistent and can be edited by anyone in the space. All collaboration spaces include the same table found in your home.
 
 To work with spaces, open the taskbar from the Hand Menu, and choose the Spaces icon.
 
@@ -98,7 +98,7 @@ To add others to the current space:
 
 ![Add users to a space](\media\add-users.png)
 
-- If the user is online, they will get a pop-up inviting them to join the space.
+- If the users are online, they will get a pop-up inviting them to join the space.
 - If they are offline, the space will show up on the user's Spaces menu the next time they log in.
 
 ### Move between spaces
@@ -133,7 +133,7 @@ The following 2D image file formats are supported: .png, .gif, .ico, .bmp, .tiff
 
 ### Import user content
 
-You can add your own custom 3D content or images to OneDrive to make it available in the OneDrive folder in the app.
+You can add your own custom 3D content or images to OneDrive to make them available in the OneDrive folder in the app.
 
 To add content to the User folder:
 
