@@ -20,4 +20,4 @@ keywords: mixed reality, microsoft mesh, documentation, guides, features, hologr
 Get started with the Microsoft Mesh Preview by completing the Register Interest form to stay up to date with Mesh news and announcements, trying the Mesh App on your HoloLens 2, and requesting access to Mesh-enabled AltspaceVR.
 
    > [!div class="nextstepaction"]
-   > [Get Started with the Microsoft Mesh Preview](get-started.md)
+   > [Get Started with the Microsoft Mesh Preview](../get-started.md)

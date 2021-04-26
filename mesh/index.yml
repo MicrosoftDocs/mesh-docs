@@ -26,8 +26,6 @@ landingContent:
         links:
           - text: What is Microsoft Mesh?
             url: overview.md
-          - text: What's new highlights
-            url: whats-new.md  
 
   # Card (optional)
   - title: Get started
