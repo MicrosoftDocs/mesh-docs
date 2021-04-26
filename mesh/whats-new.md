@@ -9,11 +9,11 @@ ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
 
-# What's new in the Mesh App
+# What's new in Microsoft Mesh
 
-See highlights of what's new in the recent versions of the Mesh App.
+See highlights of what's new in Microsoft Mesh.
 
-## Release notes
+## The Mesh App
 
 | Date          | Version           | Change description  |
 | :------------ |:-------------| :----------- |
