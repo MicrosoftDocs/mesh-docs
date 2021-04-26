@@ -11,7 +11,15 @@ keywords: mixed reality, getting started, documentation, guides, features, holog
 
 # Microsoft Mesh (Preview) overview
 
-Welcome to the Microsoft Mesh Preview. Mesh enables people to connect with presence, share across space, and collaborate with one another, from anywhere in the world. By bringing [Mesh-enabled mixed reality experiences](get-started.md) to your organization, you can enhance virtual meetings, conduct virtual design sessions, help others remotely, and host immersive virtual meet-ups to boost productivity.
+Welcome to the Microsoft Mesh Preview. Mesh enables people to connect with presence, share across space, and collaborate with one another, from anywhere in the world. By bringing [Mesh-enabled mixed reality experiences](get-started.md) to your organization, you can enhance virtual meetings, conduct virtual design sessions, help others remotely, and host immersive virtual meet-ups to boost productivity.  
+
+See the Microsoft Mesh hands-on demo video below for an overview Mesh and what it can do for you: 
+
+&nbsp;  
+
+> [!VIDEO https://channel9.msdn.com/Shows/Mixed-Reality/Microsoft-Mesh-hands-on-demo/player]
+
+&nbsp;  
 
 You can also [Join the Mixed Reality Developer Program](https://aka.ms/iwantmr) if you're interested in building a Mesh-enabled app.
 
