@@ -41,7 +41,5 @@ Visit the [Microsoft Mesh](https://microsoft.com/mesh) website to learn more abo
 
 ## Next steps
 
-Try the Mesh App on your HoloLens 2
-
    > [!div class="nextstepaction"]
    > [Try the Mesh App on your HoloLens 2](./mesh-app/index.md)

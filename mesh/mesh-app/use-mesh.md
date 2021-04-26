@@ -20,7 +20,7 @@ When you look at the palm of either hand, you will invoke the Hand Menu. In addi
 1. **Main Menu**: Toggles the Mesh App Taskbar on and off.
 1. **Selection Tool**: Activates selection mode. In this mode, you can grab a 3D object and move it around the space.
 1. **Draw Tool**: Activates the current pen and opens the annotation sub-menu with a variety of brushes and shapes. Once you've selected your tool, pinch and drag to annotate.
-1. **Eraser**: Activates the eraser. With the eraser active, move the red X through a 3D object or annotation to erase it.
+1. **Eraser**: Activates the eraser. With the eraser active, move the red X through content or annotation to erase it.
 1. **Mute Toggle**: Toggles the microphone on and off.
 
 ## The Taskbar
