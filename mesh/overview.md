@@ -11,11 +11,11 @@ keywords: mixed reality, getting started, documentation, guides, features, holog
 
 # Microsoft Mesh (Preview) overview
 
-Welcome to the Microsoft Mesh Preview. Mesh enables people to connect with presence, share across space, and collaborate with one another, from anywhere in the world. By bringing [Mesh-enabled mixed reality experiences](get-started.md) to your organization, you can enhance virtual meetings, conduct virtual design sessions, help others remotely, and host immersive virtual meet-ups to boost productivity.  
+Welcome to the Microsoft Mesh Preview. Mesh enables people to connect with presence, share across space, and collaborate with one another, from anywhere in the world.  By bringing [Mesh-enabled mixed reality experiences](get-started.md) to your organization, you can enhance virtual meetings, conduct virtual design sessions, help others remotely, and host immersive virtual meet-ups to boost productivity.  
 
 ![An image of people using HoloLens to collaborate.](media/holographic-collab.png)
 
-Mesh provides a natural collaboration experience, in mixed reality. People are represented as 3D avatars in a shared space. Proximity and spatial audio let people know where they are relative to one another. Users can visualize and annotate content together in a shared 3D space. A user can look at the person they're talking to, and point to features on a shared 3D object.
+Mesh provides a natural collaboration experience in mixed reality. People are represented as 3D avatars in a shared space. Proximity and spatial audio let people know where they are relative to one another. Users can visualize and annotate content together in a shared 3D space. A user can look at the person they're talking to, and point to features on a shared 3D object.
 
 See the Microsoft Mesh hands-on demo video below for an overview of Mesh and what it can do for you: 
 
