@@ -4,7 +4,7 @@ description: All aspects of using the Microsoft Mesh App are covered
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 04/09/2021
+ms.date: 04/26/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -18,9 +18,9 @@ When you look at the palm of either hand, you will invoke the Hand Menu. In addi
 ![The hand menu](\media\hand-menu.png)
 
 1. **Main Menu**: Toggles the Mesh App Taskbar on and off.
-1. **Selection Tool**: Activates selection mode. In this mode, you can grab a 3D object and move it around the space.
+1. **Selection Tool**: Activates selection mode. In this mode, you can grab a 3D object or 2D image and move it around the space.
 1. **Draw Tool**: Activates the current pen and opens the annotation sub-menu with a variety of brushes and shapes. Once you've selected your tool, pinch and drag to annotate.
-1. **Eraser**: Activates the eraser. With the eraser active, move the red X through a 3D object or annotation to erase it.
+1. **Eraser**: Activates the eraser. With the eraser active, move the red X through content or annotation to erase it.
 1. **Mute Toggle**: Toggles the microphone on and off.
 
 ## The Taskbar
@@ -32,7 +32,7 @@ The taskbar lets you access tools and spaces in the Mesh App. You can open the t
 1. **Avatar**: Opens the avatar editor.
 1. [**Spaces**](#collaborative-spaces): Activates the spaces pane.
 1. [**Tools**](#add-annotations): Activates the annotation tools pane.
-1. [**Content**](#import-content): Activates the content pane, where you can select 3D content to add to the space.
+1. [**Content**](#import-content): Activates the content pane, where you can select contents to add to the space.
 1. **Settings**: Activates the settings pane.
 1. **Recenter**: Repositions the table to be in front of your current position.
 
@@ -44,11 +44,11 @@ In your home you will see a blue table. This is the origin point for the space a
 
 Pinch the table (up close or at a distance) to grab and move it. When you have the table positioned comfortably, you can use the buttons on the table control panel to lock the table in place to prevent accidental movement, and snap the table to the floor. You can also tap the Recenter button on the taskbar to reposition the table in front of your current position.
 
-The table acts as the central hub for all collaborators, so each space includes a table like the one in your home. As you move between spaces, the table remains anchored in your physical space and each virtual space is centered around it. However, the table's label and any 3D objects are specific to the current room and don't move between spaces.
+The table acts as the central hub for all collaborators, so each space includes a table like the one in your home. As you move between spaces, the table remains anchored in your physical space and each virtual space is centered around it. However, the table's label and any contents are specific to the current room and don't move between spaces.
 
 ## Collaborative Spaces
 
-The Microsoft Mesh App is for collaboration. To work with others, you can create collaborative spaces and invite others to join them, or you can be invited to join spaces that others have created. Users can only enter spaces they are a member of, and each space can have a maximum of 8 concurrent users. All 3D objects and annotations are persistent and can be edited by anyone in the space. All collaboration spaces include the same table found in your home.
+The Microsoft Mesh App is for collaboration. To work with others, you can create a collaborative space and invite others to join your space, or you can be invited to join spaces that others have created. Users can only enter spaces they are a member of, and each space can have a maximum of 8 concurrent users. All contents and annotations are persistent and can be edited by anyone in the space. All collaboration spaces include the same table found in your home.
 
 To work with spaces, open the taskbar from the Hand Menu, and choose the Spaces icon.
 
@@ -98,7 +98,7 @@ To add others to the current space:
 
 ![Add users to a space](\media\add-users.png)
 
-- If the user is online, they will get a pop-up inviting them to join the space.
+- If the users are online, they will get a pop-up inviting them to join the space.
 - If they are offline, the space will show up on the user's Spaces menu the next time they log in.
 
 ### Move between spaces
@@ -114,9 +114,9 @@ To move between spaces:
 
 ## Import content
 
-You can add 3D objects to any space. You can then pinch an object to grab, move, rotate, and scale it. In a collaborative space, all users who are a member of the space can add, manipulate, annotate, and delete any objects.
+You can add 3D objects and 2D images to any space. You can then pinch an object to grab, move, rotate, and scale it. In a collaborative space, all users who are a member of the space can add, manipulate, annotate, and delete any objects.
 
-To work with 3D content, open the Taskbar from the Hand Menu, and choose the Content icon.
+To work with contents, open the Taskbar from the Hand Menu, and choose the Content icon.
 
 ![The content icon](\media\content-pane.png)
 
@@ -127,11 +127,13 @@ In the Content pane, there are 3 places from which you can pull content into a s
 - **Space**: This is shared content that either you or another member added to the current space.
 
 > [!NOTE]
-> Only .glb files are supported at this time.
+> For 3D content, only .glb files are supported at this time.
+
+The following 2D image file formats are supported: .png, .gif, .ico, .bmp, .tiff, .tif, .jpeg, .jpe, and .jpg.  For a .gif file, only the first frame will be loaded.
 
 ### Import user content
 
-You can add your own custom 3D content to OneDrive to make it available in the OneDrive folder in the app.
+You can add your own custom 3D content or images to OneDrive to make them available in the OneDrive folder in the app.
 
 To add content to the User folder:
 
@@ -143,9 +145,9 @@ To add content to the User folder:
 
 You can share any content from the Samples or OneDrive folders to a collaborative space. This copies over the model file into your current space and shares the copy with all members of the space. Shared content for a space is stored in each users OneDrive under Apps > Microsoft Mesh App (Preview) > _spaceGUID_.space.
 
-![Share 3D content](\media\share-content.png)
+![Share content](\media\share-content.png)
 
-To add 3D content to a space:
+To add content to a space:
 
 1. Open the Content pane.
 1. Go to the Samples folder or OneDrive folder. In the OneDrive folder, the Mesh App displays a list of all the files you added to OneDrive.
