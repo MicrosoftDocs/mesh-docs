@@ -133,7 +133,7 @@ The following 2D image file formats are supported: .png, .gif, .ico, .bmp, .tiff
 
 ### Accessing the Apps > Microsoft Mesh App (Preview) > MyContent folder
 
-The Apps > Microsoft Mesh App (Preview) > MyContent folder is created when you run the Mesh app and a specific UI panel is opened.  Even when the folder is created on OneDrive, it is not automatically synchronized for your desktop.
+The Apps > Microsoft Mesh App (Preview) > MyContent folder is created when you run the Mesh app and after a specific UI panel is opened.  Even when the folder is created on OneDrive, it is not automatically synchronized for your desktop.
 
 Once the Mesh app creates this folder, you will need to take additional steps to access it on your desktop:
 
