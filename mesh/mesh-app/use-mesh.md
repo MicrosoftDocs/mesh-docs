@@ -146,7 +146,7 @@ Once the Mesh app creates this folder, you will need to take additional steps to
 
 1. In the folder view, expand the **Apps** folder and then make sure the box next to **Mesh App (Preview)** is checked
 
-    ![Screenshot of the Microsoft OneDrive Account tab dialogue box](media\mesh-app-folder.png)
+    ![Screenshot of the Choose folders dialogue box](media\mesh-app-folder.png)
 
 1. Click **OK** and close dialog boxes
 
