@@ -38,17 +38,17 @@ The taskbar lets you access tools and spaces in the Mesh app. You can open the t
 
 ## Position your table
 
-In your home you will see a blue table. This is the origin point for the space and everything in the scene is oriented around it. Virtual objects and annotations will always move relative to this table. You should place the table in a comfortable position in the real world, preferably somewhere in an open space where you can move around.
+In your home space you will see a blue table. This is the origin point for the space and everything in the scene is oriented around it. Virtual objects and annotations will always move relative to this table. You should place the table in a comfortable position in the real world, preferably somewhere in an open space where you can move around.
 
 ![The table](\media\table.png)
 
 Pinch the table (up close or at a distance) to grab and move it. When you have the table positioned comfortably, you can use the buttons on the table control panel to lock the table in place to prevent accidental movement, and snap the table to the floor. You can also tap the Recenter button on the taskbar to reposition the table in front of your current position.
 
-The table acts as the central hub for all collaborators, so each space includes a table like the one in your home. As you move between spaces, the table remains anchored in your physical space and each virtual space is centered around it. However, the table's label and any contents are specific to the current room and don't move between spaces.
+The table acts as the central hub for all collaborators, so each space includes a table like the one in your home space. As you move between spaces, the table remains anchored in your physical space and each virtual space is centered around it. However, the table's label and any contents are specific to the current room and don't move between spaces.
 
 ## Collaborative Spaces
 
-The Microsoft Mesh app is for collaboration. To work with others, you can create a collaborative space and invite others to join your space, or you can be invited to join spaces that others have created. Users can only enter spaces they are a member of, and each space can have a maximum of 8 concurrent users. All contents and annotations are persistent and can be edited by anyone in the space. All collaboration spaces include the same table found in your home.
+The Microsoft Mesh app is for collaboration. To work with others, you can create a collaborative space and invite others to join your space, or you can be invited to join spaces that others have created. Users can only enter spaces they are a member of, and each space can have a maximum of 8 concurrent users. All contents and annotations are persistent and can be edited by anyone in the space. All collaboration spaces include the same table found in your home space.
 
 To work with spaces, open the taskbar from the Hand Menu, and choose the Spaces icon.
 
@@ -56,7 +56,7 @@ To work with spaces, open the taskbar from the Hand Menu, and choose the Spaces 
 
 ### Your home space
 
-You always start in your "home" space when you launch the Mesh app. This space is private, and only you can see and edit this space.
+You always start in your home space when you launch the Mesh app. This space is private, and only you can see and edit this space.
 
 ### Create a collaborative space
 
