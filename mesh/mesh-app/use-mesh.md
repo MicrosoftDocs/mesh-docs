@@ -133,7 +133,7 @@ The following 2D image file formats are supported: .png, .gif, .ico, .bmp, .tiff
 
 ### Accessing the MyContent folder
 
-The MyContent folder is created automatically when you select the OneDrive tab inside the Mesh app.  
+The MyContent folder is created automatically when you select the **OneDrive** tab inside the Mesh app.  
 
 ![Screenshot of the Microsoft Mesh Models - OneDrive](media\mesh-onedrive.png)
 
