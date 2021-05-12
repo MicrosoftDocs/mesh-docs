@@ -34,7 +34,7 @@ landingContent:
         links:
           - text: Get started with Microsoft Mesh (Preview)
             url: get-started.md
-          - text: Collaborate with the Microsoft Mesh App for HoloLens (Preview)
+          - text: Collaborate with the Microsoft Mesh app for HoloLens (Preview)
             url: mesh-app/index.md
 
   # Card
