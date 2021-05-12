@@ -4,7 +4,7 @@ description: All aspects of using the Microsoft Mesh App are covered
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 04/26/2021
+ms.date: 05/12/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -130,6 +130,27 @@ In the Content pane, there are 3 places from which you can pull content into a s
 > For 3D content, only .glb files are supported at this time.
 
 The following 2D image file formats are supported: .png, .gif, .ico, .bmp, .tiff, .tif, .jpeg, .jpe, and .jpg.  For a .gif file, only the first frame will be loaded.
+
+### Accessing the Apps > Microsoft Mesh App (Preview) > MyContent folder
+
+The Apps > Microsoft Mesh App (Preview) > MyContent folder is created when you run the Mesh app and a specific UI panel is opened.  Even when the folder is created on OneDrive, it is not automatically synchronized for your desktop.
+
+Once the Mesh app creates this folder, you will need to take additional steps to access it on your desktop:
+
+1. Right click on the OneDrive icon on the Windows Taskbar
+1. Click **Help & Settings -> Settings**
+1. Go to the **Account** tab
+1. Click the **Choose folders** link
+
+    ![Screenshot of the Microsoft OneDrive Account tab dialogue box](media\onedrive-choose-folders.png)
+
+1. In the folder view, expand the **Apps** folder and then check the box next to **Mesh App (Preview)**
+
+    ![Screenshot of the Microsoft OneDrive Account tab dialogue box](media\mesh-app-folder.png)
+
+1. Click **OK** and close dialog boxes
+
+Now you can access the Apps > Microsoft Mesh App (Preview) > MyContent folder on your desktop and start adding your content for the Mesh app.  Alternative, you can also use OneDrive web.
 
 ### Import user content
 
