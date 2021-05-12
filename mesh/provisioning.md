@@ -20,15 +20,15 @@ If your organization lets a user grant an application permissions to access your
 
 <img src=./media/mesh-consent-dialog.png alt="UI to grant permissions to apps" width="350">
 
-> _UI to grant permissions for Mesh and Mesh App on HoloLens_
+> _UI to grant permissions for Mesh and Mesh app on HoloLens_
 
 ## If user consent is disabled
 
-If your tenant administrator has disabled user consent to apps, they will need to follow the instructions below to manually provision the Mesh service and Mesh-enabled experiences such as [Mesh App on HoloLens](./mesh-app/index.md), to be used in your tenant.
+If your tenant administrator has disabled user consent to apps, they will need to follow the instructions below to manually provision the Mesh service and Mesh-enabled experiences such as [Mesh app on HoloLens](./mesh-app/index.md), to be used in your tenant.
 
-### Mesh App on HoloLens (Preview)
+### Mesh app on HoloLens (Preview)
 
-To manually enable Microsoft Mesh (Preview) and Mesh App on HoloLens in your organization:
+To manually enable Microsoft Mesh (Preview) and Mesh app on HoloLens in your organization:
 
 - Install the [AzureAD PowerShell module](https://www.powershellgallery.com/packages/AzureAD).
 
@@ -43,13 +43,13 @@ To manually enable Microsoft Mesh (Preview) and Mesh App on HoloLens in your org
     Connect-AzureAD -TenantId 'your-tenant-id'
     # Mesh
     New-AzureADServicePrincipal -AppId '98e6160b-4308-432a-b82d-ed6fce38dfbf'
-    # Mesh App on HoloLens
+    # Mesh app on HoloLens
     New-AzureADServicePrincipal -AppId '63b8670b-4b03-4c76-8e4f-0e2fb4be6a63'
     ```
 
 - After running these PowerShell commands, the tenant admin needs to visit the following URLs to provide tenant-wide consent to the app:
   - [Authorize Microsoft Mesh (Preview)](https://login.microsoftonline.com/common/oauth2/authorize?client_id=98e6160b-4308-432a-b82d-ed6fce38dfbf&response_type=code&prompt=admin_consent)
-  - [Authorize Microsoft Mesh App on HoloLens (Preview)](https://login.microsoftonline.com/common/oauth2/authorize?client_id=63b8670b-4b03-4c76-8e4f-0e2fb4be6a63&response_type=code&prompt=admin_consent)
+  - [Authorize Microsoft Mesh app on HoloLens (Preview)](https://login.microsoftonline.com/common/oauth2/authorize?client_id=63b8670b-4b03-4c76-8e4f-0e2fb4be6a63&response_type=code&prompt=admin_consent)
 
 ## Mesh's use of Microsoft Graph APIs
 
@@ -75,15 +75,15 @@ with each other in mixed reality using Mesh.
 | profile        | View user's basic profile                           | Authenticate users            |
 | User.Read      | Sign in and read user profile                       | Authenticate users            |
 
-### Mesh App on HoloLens (Preview)
+### Mesh app on HoloLens (Preview)
 
-The [Mesh App on HoloLens (Preview) app](mesh-app/index.md) (app id:
+The [Mesh app on HoloLens (Preview) app](mesh-app/index.md) (app id:
 63b8670b-4b03-4c76-8e4f-0e2fb4be6a63) needs consent to use the following
 Microsoft Graph delegated (user-level) permissions. All of these permissions
 must be granted for Azure Active Directory users to be able to collaborate
-with each other in mixed reality using the Mesh App on HoloLens.
+with each other in mixed reality using the Mesh app on HoloLens.
 
-| Permission                                                    | Description                                         | How Mesh App for HoloLens uses this permission         |
+| Permission                                                    | Description                                         | How Mesh app for HoloLens uses this permission         |
 |---------------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|
 | email                                                         | View user's email address                           | Authenticate users                                     |
 | offline_access                                                | Maintain access to data you have given it access to | Authenticate users                                     |
@@ -92,7 +92,7 @@ with each other in mixed reality using the Mesh App on HoloLens.
 | User.Read                                                     | Sign in and read user profile                       | Authenticate users                                     |
 | People.Read                                                   | Read user's relevant people lists                   | Invite others to Mesh sessions                         |
 | User.ReadBasic.All                                            | Read all users' basic profiles                      | Invite others to Mesh sessions                         |
-| User.ReadWrite                                                | Read and write access to user profile               | Save Mesh App on HoloLens settings                     |
+| User.ReadWrite                                                | Read and write access to user profile               | Save Mesh app on HoloLens settings                     |
 | Files.ReadWrite                                               | Have full access to user files                      | Load/save spaces and other assets from user's OneDrive |
 | Files.ReadWrite.All                                           | Have full access to all files user can access       | Load/save spaces and other assets from user's OneDrive |
 | api://98e6160b-4308-432a-b82d-ed6fce38dfbf/user_impersonation | Create and participate in Mesh sessions             | Use the Microsoft Mesh service                         |

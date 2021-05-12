@@ -1,6 +1,6 @@
 ---
-title: Release notes for the Mesh App
-description: Release notes for the Microsoft Mesh App
+title: Release notes for the Mesh app
+description: Release notes for the Microsoft Mesh app
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
@@ -9,9 +9,9 @@ ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
 
-# Release notes for the Mesh App
+# Release notes for the Mesh app
 
-To ensure your experience with the Mesh App, we continue to release features, bugs, and security updates.  On this page, you can see what’s new in the latest versions of the Mesh App.
+To ensure your experience with the Mesh app, we continue to release features, bugs, and security updates.  On this page, you can see what’s new in the latest versions of the Mesh app.
 
 | Date          | Version           | Change description  |
 | :------------ |:-------------| :----------- |
@@ -20,9 +20,9 @@ To ensure your experience with the Mesh App, we continue to release features, bu
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Try the Mesh App on your HoloLens 2](index.md)
+   > [Try the Mesh app on your HoloLens 2](index.md)
 
-You can file a feedback or get support for the Mesh App:
+You can file a feedback or get support for the Mesh app:
 
    > [!div class="nextstepaction"]
    > [Feedback and support](faq.md#feedback-and-support)
