@@ -8,5 +8,5 @@
   href: provisioning.md
 - name: Frequently asked questions
   href: faq.md
-- name: Mesh App for HoloLens
+- name: Mesh app for HoloLens
   href: mesh-app/toc.yml

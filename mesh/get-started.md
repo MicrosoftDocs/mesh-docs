@@ -11,7 +11,7 @@ keywords: mixed reality, development, getting started, documentation, guides, fe
 
 # Get started with Microsoft Mesh (Preview)
 
-[Microsoft Mesh](overview.md) is currently available in limited free preview. During preview, you can try the the Mesh App on your HoloLens, and request access to host virtual events in Mesh-enabled AltspaceVR. We will provide information on availability of additional Mesh-enabled apps with time, as the service becomes generally available. 
+[Microsoft Mesh](overview.md) is currently available in limited free preview. During preview, you can try the the Mesh app on your HoloLens, and request access to host virtual events in Mesh-enabled AltspaceVR. We will provide information on availability of additional Mesh-enabled apps with time, as the service becomes generally available. 
 
 :::image type="content" source="media/mesh-hero-1.png" alt-text="Two people viewing a hologram":::
 
@@ -21,7 +21,7 @@ Complete the Microsoft Mesh [Register Interest](https://aka.ms/meshsignup) form 
 
 App | Overview | Device support
 ------ | ------ | ------
-[Mesh App](./mesh-app/index.md) | Gather a few peers and download the [Mesh App on HoloLens 2](./mesh-app/index.md) for room-scale collaboration scenarios.  The Mesh App is powered by Mesh. | HoloLens 2
+[Mesh app](./mesh-app/index.md) | Gather a few peers and download the [Mesh app on HoloLens 2](./mesh-app/index.md) for room-scale collaboration scenarios.  The Mesh app is powered by Mesh. | HoloLens 2
 [AltspaceVR](https://altvr.com/mesh) | [Request access](https://altvr.com/mesh) to the AltspaceVR Preview to bring your work events to Mesh-enabled AltspaceVR. | HTC Vive, Oculus (Rift, Rift S, Quest, Quest 2), Windows Mixed Reality, PC
 
 > [!IMPORTANT]
@@ -42,4 +42,4 @@ Visit the [Microsoft Mesh](https://microsoft.com/mesh) website to learn more abo
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Try the Mesh App on your HoloLens 2](./mesh-app/index.md)
+   > [Try the Mesh app on your HoloLens 2](./mesh-app/index.md)
