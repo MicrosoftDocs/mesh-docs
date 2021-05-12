@@ -1,6 +1,6 @@
 ---
-title: Use the Mesh App
-description: All aspects of using the Microsoft Mesh App are covered
+title: Use the Mesh app
+description: All aspects of using the Microsoft Mesh app are covered
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
@@ -10,14 +10,14 @@ keywords: mixed reality, microsoft mesh, documentation, guides, features, hologr
 ---
 
 # Use the Mesh app
-This article describes how to use features of the Microsoft Mesh App on HoloLens 2.
+This article describes how to use features of the Microsoft Mesh app on HoloLens 2.
 ## The Hand Menu
 
 When you look at the palm of either hand, you will invoke the Hand Menu. In addition to the standard HoloLens start menu on your wrist, the Hand Menu provides quick access to important tools.
 
 ![The hand menu](\media\hand-menu.png)
 
-1. **Main Menu**: Toggles the Mesh App Taskbar on and off.
+1. **Main Menu**: Toggles the Mesh app Taskbar on and off.
 1. **Selection Tool**: Activates selection mode. In this mode, you can grab a 3D object or 2D image and move it around the space.
 1. **Draw Tool**: Activates the current pen and opens the annotation sub-menu with a variety of brushes and shapes. Once you've selected your tool, pinch and drag to annotate.
 1. **Eraser**: Activates the eraser. With the eraser active, move the red X through content or annotation to erase it.
@@ -25,7 +25,7 @@ When you look at the palm of either hand, you will invoke the Hand Menu. In addi
 
 ## The Taskbar
 
-The taskbar lets you access tools and spaces in the Mesh App. You can open the taskbar by tapping the top button on the Hand Menu. The taskbar buttons activate the following features, from left to right.
+The taskbar lets you access tools and spaces in the Mesh app. You can open the taskbar by tapping the top button on the Hand Menu. The taskbar buttons activate the following features, from left to right.
 
 ![The taskbar](\media\taskbar.png)
 
@@ -48,7 +48,7 @@ The table acts as the central hub for all collaborators, so each space includes 
 
 ## Collaborative Spaces
 
-The Microsoft Mesh App is for collaboration. To work with others, you can create a collaborative space and invite others to join your space, or you can be invited to join spaces that others have created. Users can only enter spaces they are a member of, and each space can have a maximum of 8 concurrent users. All contents and annotations are persistent and can be edited by anyone in the space. All collaboration spaces include the same table found in your home.
+The Microsoft Mesh app is for collaboration. To work with others, you can create a collaborative space and invite others to join your space, or you can be invited to join spaces that others have created. Users can only enter spaces they are a member of, and each space can have a maximum of 8 concurrent users. All contents and annotations are persistent and can be edited by anyone in the space. All collaboration spaces include the same table found in your home.
 
 To work with spaces, open the taskbar from the Hand Menu, and choose the Spaces icon.
 
@@ -56,7 +56,7 @@ To work with spaces, open the taskbar from the Hand Menu, and choose the Spaces 
 
 ### Your home space
 
-You always start in your "home" space when you launch the Mesh App. This space is private, and only you can see and edit this space.
+You always start in your "home" space when you launch the Mesh app. This space is private, and only you can see and edit this space.
 
 ### Create a collaborative space
 
@@ -86,8 +86,8 @@ To rename or delete a space:
 
 You can invite others to join any space that you're a member of.
 
-- **For Azure AD users**: All users need to be members of the same organization and have Microsoft Mesh (Preview) enabled for their accounts. Contacts will show all the users in your organization, but other users will have to set up the Microsoft Mesh App (Preview) on their HoloLens to receive calls.
-- **For MSA users**: Contacts will show those currently in the email address book associated with your MSA who have also set up the Microsoft Mesh App (Preview) on their HoloLens.
+- **For Azure AD users**: All users need to be members of the same organization and have Microsoft Mesh (Preview) enabled for their accounts. Contacts will show all the users in your organization, but other users will have to set up the Microsoft Mesh app (Preview) on their HoloLens to receive calls.
+- **For MSA users**: Contacts will show those currently in the email address book associated with your MSA who have also set up the Microsoft Mesh app (Preview) on their HoloLens.
 
 To add others to the current space:
 
@@ -123,7 +123,7 @@ To work with contents, open the Taskbar from the Hand Menu, and choose the Conte
 In the Content pane, there are 3 places from which you can pull content into a space:
 
 - **Samples**: This sample content is included in the app build.
-- **OneDrive**: This is content that's inside of the Apps > Microsoft Mesh App (Preview) > MyContent folder on your OneDrive. Other users can't see this content. When you share it in a collaborative space, a copy is made for that space.
+- **OneDrive**: This is content that's inside of the Apps > Microsoft Mesh app (Preview) > MyContent folder on your OneDrive. Other users can't see this content. When you share it in a collaborative space, a copy is made for that space.
 - **Space**: This is shared content that either you or another member added to the current space.
 
 > [!NOTE]
@@ -131,9 +131,9 @@ In the Content pane, there are 3 places from which you can pull content into a s
 
 The following 2D image file formats are supported: .png, .gif, .ico, .bmp, .tiff, .tif, .jpeg, .jpe, and .jpg.  For a .gif file, only the first frame will be loaded.
 
-### Accessing the Apps > Microsoft Mesh App (Preview) > MyContent folder
+### Accessing the Apps > Microsoft Mesh app (Preview) > MyContent folder
 
-The Apps > Microsoft Mesh App (Preview) > MyContent folder is created when you run the Mesh app and after a specific UI panel is opened.  Even when the folder is created on OneDrive, it is not automatically synchronized for your desktop.
+The Apps > Microsoft Mesh app (Preview) > MyContent folder is created when you run the Mesh app and after a specific UI panel is opened.  Even when the folder is created on OneDrive, it is not automatically synchronized for your desktop.
 
 Once the Mesh app creates this folder, you will need to take additional steps to access it on your desktop:
 
@@ -144,13 +144,13 @@ Once the Mesh app creates this folder, you will need to take additional steps to
 
     ![Screenshot of the Microsoft OneDrive Account tab dialogue box](media\onedrive-choose-folders.png)
 
-1. In the folder view, expand the **Apps** folder and then make sure the box next to **Mesh App (Preview)** is checked
+1. In the folder view, expand the **Apps** folder and then make sure the box next to **Mesh app (Preview)** is checked
 
     ![Screenshot of the Choose folders dialogue box](media\mesh-app-folder.png)
 
 1. Click **OK** and close dialog boxes
 
-Now you can access the Apps > Microsoft Mesh App (Preview) > MyContent folder on your desktop and start adding your content for the Mesh app.  Alternatively but not recommended, you can also use OneDrive web.
+Now you can access the Apps > Microsoft Mesh app (Preview) > MyContent folder on your desktop and start adding your content for the Mesh app.  Alternatively but not recommended, you can also use OneDrive web.
 
 ### Import user content
 
@@ -158,20 +158,20 @@ You can add your own custom 3D content or images to OneDrive to make them availa
 
 To add content to the User folder:
 
-1. Go to OneDrive for Business on your PC and log in with the same Azure AD account that you used to log in to the Microsoft Mesh App.
-1. In OneDrive, go to Apps > Microsoft Mesh App (Preview) > MyContent and copy files to this directory.
+1. Go to OneDrive for Business on your PC and log in with the same Azure AD account that you used to log in to the Microsoft Mesh app.
+1. In OneDrive, go to Apps > Microsoft Mesh app (Preview) > MyContent and copy files to this directory.
 1. Once your files are copied to OneDrive, open the Content > OneDrive pane again to access them.
 
 ### Share content to a collaborative space
 
-You can share any content from the Samples or OneDrive folders to a collaborative space. This copies over the model file into your current space and shares the copy with all members of the space. Shared content for a space is stored in each users OneDrive under Apps > Microsoft Mesh App (Preview) > _spaceGUID_.space.
+You can share any content from the Samples or OneDrive folders to a collaborative space. This copies over the model file into your current space and shares the copy with all members of the space. Shared content for a space is stored in each users OneDrive under Apps > Microsoft Mesh app (Preview) > _spaceGUID_.space.
 
 ![Share content](\media\share-content.png)
 
 To add content to a space:
 
 1. Open the Content pane.
-1. Go to the Samples folder or OneDrive folder. In the OneDrive folder, the Mesh App displays a list of all the files you added to OneDrive.
+1. Go to the Samples folder or OneDrive folder. In the OneDrive folder, the Mesh app displays a list of all the files you added to OneDrive.
 1. Select a model.
 1. The model is added to the current space.
 
@@ -188,7 +188,7 @@ The Tools pane shows you several options for interacting with content.
 
 ## Additional resources
 
-For other questions, see [Microsoft Mesh App troubleshooting and frequently asked questions](faq.md).
+For other questions, see [Microsoft Mesh app troubleshooting and frequently asked questions](faq.md).
 
 - [Microsoft Mesh overview](../overview.md)
 - [Set up Microsoft Mesh for your organization](../provisioning.md)
