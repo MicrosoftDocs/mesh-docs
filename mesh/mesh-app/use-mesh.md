@@ -150,7 +150,7 @@ Once the Mesh app creates this folder, you will need to take additional steps to
 
 1. Click **OK** and close dialog boxes
 
-Now you can access the Apps > Microsoft Mesh App (Preview) > MyContent folder on your desktop and start adding your content for the Mesh app.  Alternative, you can also use OneDrive web.
+Now you can access the Apps > Microsoft Mesh App (Preview) > MyContent folder on your desktop and start adding your content for the Mesh app.  Alternatively but not recommended, you can also use OneDrive web.
 
 ### Import user content
 
