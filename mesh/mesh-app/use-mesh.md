@@ -131,11 +131,13 @@ In the Content pane, there are 3 places from which you can pull content into a s
 
 The following 2D image file formats are supported: .png, .gif, .ico, .bmp, .tiff, .tif, .jpeg, .jpe, and .jpg.  For a .gif file, only the first frame will be loaded.
 
-### Accessing the Apps > Microsoft Mesh app (Preview) > MyContent folder
+### Accessing the MyContent folder
 
-The Apps > Microsoft Mesh app (Preview) > MyContent folder is created when you run the Mesh app and after a specific UI panel is opened.  Even when the folder is created on OneDrive, it is not automatically synchronized for your desktop.
+The MyContent folder is created automatically when you select the OneDrive tab inside the Mesh app.  
 
-Once the Mesh app creates this folder, you will need to take additional steps to access it on your desktop:
+![Screenshot of the Microsoft Mesh Models - OneDrive](media\mesh-onedrive.png)
+
+Once this folder is created, you'll need to take the following steps on your desktop to sync the folder:
 
 1. Right click on the OneDrive icon on the Windows Taskbar
 1. Click **Help & Settings -> Settings**
