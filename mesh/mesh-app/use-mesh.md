@@ -139,18 +139,18 @@ The MyContent folder is created automatically when you select the **OneDrive** t
 
 Once this folder is created, you'll need to take the following steps on your desktop to sync the folder:
 
-1. Right click on the OneDrive icon on the Windows Taskbar
-1. Click **Help & Settings -> Settings**
-1. Go to the **Account** tab
-1. Click the **Choose folders** link
+1. Right click on the OneDrive icon on the Windows Taskbar.
+1. Click **Help & Settings -> Settings**.
+1. Go to the **Account** tab.
+1. Click the **Choose folders** link.
 
     ![Screenshot of the Microsoft OneDrive Account tab dialogue box](media\onedrive-choose-folders.png)
 
-1. In the folder view, expand the **Apps** folder and then make sure the box next to **Mesh app (Preview)** is checked
+1. In the folder view, expand the **Apps** folder and then make sure the box next to **Mesh app (Preview)** is checked.
 
     ![Screenshot of the Choose folders dialogue box](media\mesh-app-folder.png)
 
-1. Click **OK** and close dialog boxes
+1. Click **OK** and close dialog boxes.
 
 Now you can access the Apps > Microsoft Mesh app (Preview) > MyContent folder on your desktop and start adding your content for the Mesh app.  Alternatively but not recommended, you can also use OneDrive web.
 
