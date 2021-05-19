@@ -18,7 +18,7 @@ If you want to load new Azure Remote Rendering (ARR) objects into a space, you w
 
     ![Screenshot of the **settings** tab.](media\mesh-app-settings.jpg)
 
-1. Check the box next to **Azure Remote Rendering**.
+1. Select **Azure Remote Rendering**.
 
     ![Screenshot of the **Experiments** option under **Settings** tab.](media\experimental-features.jpg)
 
