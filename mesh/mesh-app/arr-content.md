@@ -11,7 +11,7 @@ keywords: mixed reality, microsoft mesh, documentation, guides, features, hologr
 
 # Azure Remote Rendering (ARR) content
 
-[Azure Remote Rendering (ARR)](/azure/remote-rendering/) leverages the power of the Azure cloud to render high quality, interactive 3D content and streams it your devices in real time. With ARR, users can interact and collaborate with 3D content in amazing detail.  
+[Azure Remote Rendering (ARR)](/azure/remote-rendering/) is powered by Azure cloud to render high quality and interactive 3D content, and streams it to your devices in real time. With ARR, you can interact and collaborate with 3D content in amazing detail.  
 
 If you want to load new ARR objects into a space, you will need to enable the **ARR** option in **Experimental Features** by going through the following steps:  
 
