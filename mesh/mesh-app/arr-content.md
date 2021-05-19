@@ -13,6 +13,8 @@ keywords: mixed reality, microsoft mesh, documentation, guides, features, hologr
 
 [Azure Remote Rendering (ARR)](/azure/remote-rendering/) is powered by Azure cloud to render high quality and interactive 3D content, and streams it to your devices in real time. With ARR, you can interact and collaborate with 3D content in amazing detail.  
 
+## Enable ARR in Mesh app
+
 If you want to load new ARR objects into a space, you will need to enable the **ARR** option in **Experimental Features** by going through the following steps:  
 
 1. Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu** button at the top.
@@ -28,7 +30,9 @@ If you want to load new ARR objects into a space, you will need to enable the **
 
      ![Screenshot of the Mesh app **Content** menu.](media\mesh-app-content.jpg)
 
-Any ARR objects that you place in a space will be visible to all users in that space.  
+Any ARR objects that you place in a space will be visible to all users in that space.
+
+## Import your own ARR content  
 
 To import your own content for remote rendering, you will first need to upload and process your models, see [Quickstart: Convert a model for rendering](/azure/remote-rendering/quickstarts/convert-model).  To import your models into the Mesh app, see steps below:
 
