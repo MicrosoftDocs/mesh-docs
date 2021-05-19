@@ -11,7 +11,9 @@ keywords: mixed reality, microsoft mesh, documentation, guides, features, hologr
 
 # Azure Remote Rendering (ARR) content
 
-If you want to load new Azure Remote Rendering (ARR) objects into a space, you will need to enable the **ARR** option in **Experimental Features** by going through the following steps:  
+[Azure Remote Rendering (ARR)](/azure/remote-rendering/) leverages the power of the Azure cloud to render high quality, interactive 3D content and streams it your devices in real time. With ARR, users can interact and collaborate with 3D content in amazing detail.  
+
+If you want to load new ARR objects into a space, you will need to enable the **ARR** option in **Experimental Features** by going through the following steps:  
 
 1. Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu** button at the top.
 1. Go to **Settings** tab, and select **Experiments**.
