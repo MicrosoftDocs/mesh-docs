@@ -2,6 +2,11 @@
   href: index.md
 - name: Use the Mesh app
   href: use-mesh.md
+  items:
+  - name: Import content
+    href: import-content.md
+  - name: ARR content
+    href: arr-content.md
 - name: Frequently asked questions
   href: faq.md
 - name: Release notes
