@@ -41,7 +41,7 @@ To import your own content for remote rendering, you will first need to upload a
 1. If you’ve enabled **ARR** in the Mesh app, there should be a `.json` file called `remote_models.json`.
 1. Edit this `.json` file to give your model a name and add the [URI token address generated for your ARR model](/azure/remote-rendering/quickstarts/convert-model#insert-new-model-into-quickstart-sample-app).
 
-When loading multiple ARR models, you can simply add the following code in the `remote_models.json` for each additional model:
+When loading multiple ARR models, you can simply add the following code in the `remote_models.json` file for each additional model:
 
 ```json
 {
