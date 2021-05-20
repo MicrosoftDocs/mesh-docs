@@ -4,7 +4,7 @@ description: Release notes for the Microsoft Mesh app
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 05/19/2021
+ms.date: 05/20/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -15,7 +15,7 @@ To ensure your experience with the Mesh app, we continue to release features, bu
 
 | Date          | Version           | Change description  |
 | :------------ |:-------------| :----------- |
-| May 17, 2021  | 2105.13002.0 | What's new in this version: <br> <ul> <li> Spaces you have previously visited will now persist on your Spaces tab. </li> <li> Items in the [MyContent folder](import-content.md#accessing-the-mycontent-folder) now have thumbnail images. </li> <li> Load larger and complex holograms in the cloud using [Azure Remote Rendering](arr-content.md). </li> <li> <mark> You can upload a file from your HoloLens or OneDrive directly into your current Space. </mark> </li> </ul>|
+| May 17, 2021  | 2105.13002.0 | What's new in this version: <br> <ul> <li> Spaces you have previously visited will now persist on your Spaces tab. </li> <li> Items in the [MyContent folder](import-content.md#accessing-the-mycontent-folder) now have thumbnail images. </li> <li> Load larger and complex holograms in the cloud using [Azure Remote Rendering](arr-content.md). </li> <li> You can now [upload a file from your HoloLens or OneDrive directly into your current Space](). </li> </ul>|
 | April 22, 2021  | 2104.22007.0 | This version of the Mesh app for HoloLens adds new support for [importing images](import-content.md) from your OneDrive account into spaces, in addition to various bug fixes and improvements. |
 
 ## Next steps

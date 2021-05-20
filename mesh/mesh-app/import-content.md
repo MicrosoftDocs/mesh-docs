@@ -61,6 +61,23 @@ To add content to the User folder:
 1. In OneDrive, go to Apps > Microsoft Mesh app (Preview) > MyContent and copy files to this directory.
 1. Once your files are copied to OneDrive, open the Content > OneDrive pane again to access them.
 
+## Enable local file picker
+
+You can upload a file from your Hololens or OneDrive folder into your space.  To do this, you will need to enable the **Local File Picker** option in **Experimental Features** by going through the following steps:  
+
+1. Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu** button at the top.
+1. Go to **Settings** tab, and select **Experiments**.
+
+    ![Screenshot of the **settings** tab.](media\mesh-app-settings.jpg)
+
+1. Select **Local File Picker**.
+
+    ![Screenshot of the **Experiments** option under **Settings** tab.](media\experimental-features-local-files.jpg)
+
+1. You can now see **+ Upload file** in your **Content** menu.
+
+     ![Screenshot of the Mesh app **Content** menu.](media\content-upload-files.jpg)
+
 ## Share content to a collaborative space
 
 You can share any content from the Samples or OneDrive folders to a collaborative space. This copies over the model file into your current space and shares the copy with all members of the space. Shared content for a space is stored in each users OneDrive under Apps > Microsoft Mesh app (Preview) > _spaceGUID_.space.
