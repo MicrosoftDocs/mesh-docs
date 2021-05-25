@@ -4,15 +4,12 @@ description: Get started with Microsoft Mesh app (Preview).
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 04/09/2021
+ms.date: 05/25/2021
 ms.topic: article
 keywords: mixed reality, development, getting started, documentation, guides, features, holograms
 ---
 
 # Get started with the Mesh app on your HoloLens 2 (Preview)
-
->[!Warning]
->Mesh services will be offline from 10:00 p.m. Thursday, May 20, 2021 to 5:00 a.m. Pacific Time (PT) Friday, May 21, 2021, for scheduled maintenance.
 
 The Microsoft Mesh app (Preview) is a collaboration-first experience for HoloLens 2, built on [Microsoft Mesh services](../overview.md). With the Mesh app, you can create spaces to work with others in your organization. You'll get a more natural and productive collaboration experience, with the feeling of being in the same room while working from different locations.
 
