@@ -4,14 +4,19 @@ description: You can import your own content to the MyContent folder
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 05/25/2021
+ms.date: 05/26/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
 
 # Import content
 
-You can add 3D objects and 2D images to any space. You can then pinch an object to grab, move, rotate, and scale it. In a collaborative space, all users who are a member of the space can add, manipulate, annotate, and delete any objects.
+You can add 3D objects and 2D images to any space. You can then pinch an object to grab, move, rotate, and scale it. In a collaborative space, all users who are a member of the space can add, manipulate, annotate, and delete any objects.  Here you will learn about how to:
+
+* [Sync the MyContent folder on OneDrive.](#accessing-the-mycontent-folder)
+* [Import user content.](#import-user-content)
+* [Upload files from HoloLens or OneDrive.](#enable-local-file-picker)
+* [Share content to a collaborative space.](#share-content-to-a-collaborative-space)
 
 To work with contents, open the Taskbar from the Hand Menu, and choose the Content icon.
 
@@ -60,9 +65,6 @@ To add content to the User folder:
 1. Go to OneDrive for Business on your PC and log in with the same Azure AD account that you used to log in to the Microsoft Mesh app.
 1. In OneDrive, go to Apps > Microsoft Mesh app (Preview) > MyContent and copy files to this directory.
 1. Once your files are copied to OneDrive, open the Content > OneDrive pane again to access them.
-
->[!Warning]
->We currently have a file size limit of 75MB, or maximum 300,000 vertex count for 3D models. If these limits are exceeded, you will fail to load your content, and get a warning: "This model is too complex". To resolve this, you can use [Azure Remote Rendering (ARR)](/mesh/mesh-app/arr-content), where more complex models can be loaded in your space.
 
 ## Enable local file picker
 

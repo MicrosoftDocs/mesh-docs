@@ -32,6 +32,8 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
+          - text: What's new in the Microsoft Mesh app
+            url: mesh-app/release-notes.md
           - text: Get started with Microsoft Mesh (Preview)
             url: get-started.md
           - text: Collaborate with the Microsoft Mesh app for HoloLens (Preview)
@@ -44,3 +46,17 @@ landingContent:
         links:
           - text: Set up Microsoft Mesh (Preview) for your organization
             url: provisioning.md
+
+  # Card (optional)
+  - title: Use the Mesh app
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Use the Mesh app
+            url: ./mesh-app/use-mesh.md
+          - text: Import 2D images and 3D models
+            url: ./mesh-app/import-content.md
+          - text: Import Azure Remote Rendering (ARR) models
+            url: ./mesh-app/arr-content.md       
+          - text: Frequently asked questions
+            url: ./mesh-app/faq.md     
