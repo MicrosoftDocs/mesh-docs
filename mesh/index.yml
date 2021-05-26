@@ -32,12 +32,12 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: What's new in the Microsoft Mesh app
-            url: mesh-app/release-notes.md
           - text: Get started with Microsoft Mesh (Preview)
             url: get-started.md
           - text: Collaborate with the Microsoft Mesh app for HoloLens (Preview)
             url: mesh-app/index.md
+          - text: What's new in the Microsoft Mesh app
+            url: mesh-app/release-notes.md
 
   # Card
   - title: Manage access
