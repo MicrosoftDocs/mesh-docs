@@ -11,7 +11,9 @@ keywords: mixed reality, microsoft mesh, documentation, guides, features, hologr
 
 # Import content
 
-You can add 3D objects and 2D images to any space. You can then pinch an object to grab, move, rotate, and scale it. In a collaborative space, all users who are a member of the space can add, manipulate, annotate, and delete any objects.  Here you will learn about how to:
+You can add 3D objects and 2D images to any space. You can then pinch an object to grab, move, rotate, and scale it. In a collaborative space, all users who are a member of the space can add, manipulate, annotate, and delete any objects.  
+
+Here you will learn about how to:
 
 * [Sync the MyContent folder on OneDrive.](#accessing-the-mycontent-folder)
 * [Import user content.](#import-user-content)
