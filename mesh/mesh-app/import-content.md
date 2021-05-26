@@ -56,7 +56,7 @@ Once this folder is created, you'll need to take the following steps on your des
 
 1. Click **OK** and close dialog boxes.
 
-Now you can access the Apps > Microsoft Mesh app (Preview) > MyContent folder on your desktop and start adding your content for the Mesh app.  Alternatively but not recommended, you can also use OneDrive web.
+Now you can access the Apps > Microsoft Mesh app (Preview) > MyContent folder on your desktop and start adding your content for the Mesh app.  Desktop synchronization is beneficial for handling large file sizes and complex 3D models.  Alternatively if your content is small and not complex, you can also use OneDrive web.
 
 ## Import user content
 
