@@ -11,9 +11,6 @@ keywords: mixed reality, development, getting started, documentation, guides, fe
 
 # Get started with the Mesh app on your HoloLens 2 (Preview)
 
->[!Warning]
->Mesh services will be offline from 10:00 p.m. Thursday, May 20, 2021 to 5:00 a.m. Pacific Time (PT) Friday, May 21, 2021, for scheduled maintenance.
-
 The Microsoft Mesh app (Preview) is a collaboration-first experience for HoloLens 2, built on [Microsoft Mesh services](../overview.md). With the Mesh app, you can create spaces to work with others in your organization. You'll get a more natural and productive collaboration experience, with the feeling of being in the same room while working from different locations.
 
 ![Microsoft Mesh app collaboration experience](./media/mesh-app.png)

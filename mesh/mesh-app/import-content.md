@@ -66,6 +66,9 @@ To add content to the User folder:
 1. In OneDrive, go to Apps > Microsoft Mesh app (Preview) > MyContent and copy files to this directory.
 1. Once your files are copied to OneDrive, open the Content > OneDrive pane again to access them.
 
+>[!Warning]
+>We currently have a file size limit of 75MB, or maximum 300,000 vertex count for 3D models. If these limits are exceeded, you will fail to load your content, and get a warning: "This model is too complex". To resolve this, you can use [Azure Remote Rendering (ARR)](/mesh/mesh-app/arr-content), where more complex models can be loaded in your space.
+
 ## Enable local file picker
 
 You can upload a file from your Hololens or OneDrive folder into your space.  To do this, you will need to enable the **Local File Picker** option in **Experimental Features** by going through the following steps:  
