@@ -4,14 +4,21 @@ description: You can import your own content to the MyContent folder
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 05/25/2021
+ms.date: 05/26/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
 
 # Import content
 
-You can add 3D objects and 2D images to any space. You can then pinch an object to grab, move, rotate, and scale it. In a collaborative space, all users who are a member of the space can add, manipulate, annotate, and delete any objects.
+You can add 3D objects and 2D images to any space. You can then pinch an object to grab, move, rotate, and scale it. In a collaborative space, all users who are a member of the space can add, manipulate, annotate, and delete any objects.  
+
+Here you will learn about how to:
+
+* [Sync the MyContent folder on OneDrive.](#accessing-the-mycontent-folder)
+* [Import user content.](#import-user-content)
+* [Upload files from HoloLens or OneDrive.](#enable-local-file-picker)
+* [Share content to a collaborative space.](#share-content-to-a-collaborative-space)
 
 To work with contents, open the Taskbar from the Hand Menu, and choose the Content icon.
 
@@ -49,7 +56,7 @@ Once this folder is created, you'll need to take the following steps on your des
 
 1. Click **OK** and close dialog boxes.
 
-Now you can access the Apps > Microsoft Mesh app (Preview) > MyContent folder on your desktop and start adding your content for the Mesh app.  Alternatively but not recommended, you can also use OneDrive web.
+Now you can access the Apps > Microsoft Mesh app (Preview) > MyContent folder on your desktop and start adding your content for the Mesh app.  Desktop synchronization is beneficial for handling large file sizes and complex 3D models.  Alternatively if your content is small and not complex, you can also use OneDrive web.
 
 ## Import user content
 
