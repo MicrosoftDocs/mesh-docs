@@ -51,9 +51,11 @@ We collect information about your organization's identity, your account ID, and 
 
 - In order to use the Microsoft Mesh app (Preview), you'll need to enable the service for your organization. Some companies may require you to have your admin specially enable this. You can find more information for your admin in [Set up Microsoft Mesh for your organization](../provisioning.md).
 
-### How do I sign out of Mesh
+### How do I sign out of Mesh app
 
-Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu button** at the top.  Then go to Settings tab, and click **Sign out**.
+- Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu button** at the top.  Go to Settings tab, and click **Sign out** at the bottom right corner.  Then click **Yes**.
+
+    ![Screenshot of the **settings** tab.](media\mesh-app-sign-out.png)
 
 ### How do I file feedback or request a feature?
 
