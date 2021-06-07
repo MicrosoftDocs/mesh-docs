@@ -53,7 +53,7 @@ We collect information about your organization's identity, your account ID, and 
 
 ### How do I sign out of Mesh app
 
-- Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu button** at the top.  Go to Settings tab, and click **Sign out** at the bottom right corner.  Then click **Yes**.
+- Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu button** at the top.  Go to **Settings** tab, and click **Sign out** at the bottom right corner.  Click **Yes**.
 
     ![Screenshot of the **settings** tab.](media\mesh-app-sign-out.png)
 
