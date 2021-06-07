@@ -57,6 +57,8 @@ We collect information about your organization's identity, your account ID, and 
 
     ![Screenshot of the **settings** tab.](media\mesh-app-sign-out.png)
 
+## Feedback and support
+
 ### How do I file feedback or request a feature?
 
 - Provide your suggestions and insights through Feedback Hub. Our team looks at logs and feedback filed through the [Feedback Hub](/hololens/hololens-feedback) app, under **Windows Holographic\Collaboration**.
