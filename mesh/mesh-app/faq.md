@@ -2,9 +2,9 @@
 title: Microsoft Mesh app (Preview) frequently asked questions
 description: Microsoft Mesh app (Preview) frequently asked questions.
 ms.prod: mixed-reality
-author: jwmsft
-ms.author: jimwalk
-ms.date: 03/03/2021
+author: qianw211    
+ms.author: v-qianwen
+ms.date: 06/07/2021
 ms.topic: overview
 keywords: mixed reality, getting started, documentation, guides, features, holograms
 ---
@@ -50,6 +50,12 @@ We collect information about your organization's identity, your account ID, and 
 ### The app says that my account isn't configured to use Mesh. What should I do?
 
 - In order to use the Microsoft Mesh app (Preview), you'll need to enable the service for your organization. Some companies may require you to have your admin specially enable this. You can find more information for your admin in [Set up Microsoft Mesh for your organization](../provisioning.md).
+
+### How do I sign out of Mesh app
+
+- Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu button** at the top.  Go to **Settings** tab, and click **Sign out** at the bottom right corner.  Click **Yes**.
+
+    ![Screenshot of the **settings** tab.](media\mesh-app-sign-out.png)
 
 ## Feedback and support
 
