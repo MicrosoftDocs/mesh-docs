@@ -105,7 +105,7 @@ To add others to the current space:
 
 Users in the same physical location can collaborate with each other and also with remote participants.
 
-To enable the colocation experiement feature:
+To enable the colocation experimental feature:
 
 1. Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu** button at the top.
 
