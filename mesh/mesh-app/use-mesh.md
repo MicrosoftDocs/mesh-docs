@@ -101,6 +101,22 @@ To add others to the current space:
 - If the users are online, they will get a pop-up inviting them to join the space.
 - If they are offline, the space will show up on the user's Spaces menu the next time they log in.
 
+### Colocation
+
+Users in the same physical location can collaborate with each other and also with remote participants.
+
+To enable the colocation experiement feature:
+
+1. Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu** button at the top.
+
+1. Go to **Settings**, select **Experimental Features** under the **General** tab.
+
+    ![Screenshot of the **Settings -> General** tab.](media\settings-general.jpg)
+
+1. Select **Colocation**.
+
+    ![Screenshot of the **Experimental Features** option under **Settings** tab.](media\colocation.jpg)
+
 ### Move between spaces
 
 You can use the Spaces menu to move between any of the spaces you've created or of which you're a member.
@@ -122,6 +138,18 @@ The Tools pane shows you several options for interacting with content.
 - Use the eraser to remove content. With the eraser selected, touch the content you want to remove with the red X.
 - Use the pen tools to write and draw annotations on content. Choose a pen, choose a color, and tap your finger and thumb together to draw in 3D space.
 - Use the stamp tools to add quick 3D shapes.
+
+## Setting user preferences
+
+You can set user preferences under **Settings**.
+
+1. Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu** button at the top.
+
+1. Go to **Settings**, select **Preferences** under the **General** tab.
+
+    ![Screenshot of the **Settings -> General** tab.](media\settings-preferences.jpg)
+
+1. On this screen to adjust your microsoft input level, or enable subtitles and translation to a language of your choice.
 
 ## Additional resources
 
