@@ -147,7 +147,7 @@ You can set user preferences under **Settings**.
 
 1. Go to **Settings**, select **Preferences** under the **General** tab.
 
-    ![Screenshot of the **Settings -> General** tab.](media\settings-preferences.jpg)
+    ![Screenshot of the **Settings -> Preferences** tab.](media\settings-preferences.jpg)
 
 1. On this screen to adjust your microsoft input level, or enable subtitles and translation to a language of your choice.
 
