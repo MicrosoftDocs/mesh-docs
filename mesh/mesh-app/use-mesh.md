@@ -4,7 +4,7 @@ description: All aspects of using the Microsoft Mesh app are covered
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 05/19/2021
+ms.date: 06/28/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -103,7 +103,7 @@ To add others to the current space:
 
 ### Colocation
 
-Users in the same physical location can collaborate with each other and also with remote participants.
+Users in the same physical location can collaborate with each other and also with remote participants.  
 
 To enable the colocation experimental feature:
 
@@ -116,6 +116,22 @@ To enable the colocation experimental feature:
 1. Select **Colocation**.
 
     ![Screenshot of the **Experimental Features** option under **Settings** tab.](media\colocation.jpg)
+
+To ensure success with colocation: 
+
+1. All participants should turn on their hololens and walk around the meeting place before launching mesh. 
+
+1. Choose one person to be the host.  Once joining the space, the host is to place the center piece in the center of the room. 
+
+1. As each participant joins the space, have the host click on this participant in the current spaces tab, and click the green button to invite them to colocate. 
+
+1. The particiant needs to look at the host's center piece (center of the room). 
+
+1. You are colocated when avatars disappear and nametags appearing above people's head. 
+
+1. Its probably easiest if only one person does all of the invites one at a time (not group select).
+
+To resolve any issues, participants can leave and rejoin the space.
 
 ### Move between spaces
 
