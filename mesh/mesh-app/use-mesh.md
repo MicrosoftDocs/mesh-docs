@@ -129,7 +129,7 @@ To ensure success with colocation:
 
 1. You are colocated when avatars disappear and nametags appearing above people's head. 
 
-1. Its probably easiest if only one person does all of the invites one at a time (not group select).
+1. It's recommended that only the host does all the invites, one at a time (not group select).
 
 To resolve any issues, participants can leave and rejoin the space.
 
@@ -165,7 +165,7 @@ You can set user preferences under **Settings**.
 
     ![Screenshot of the **Settings -> Preferences** tab.](media\settings-preferences.jpg)
 
-1. Adjust your microphone input level, or enable subtitles and translation to a language of your choice.
+1. Adjust your microphone input level, or [enable subtitles and translation to a language of your choice](languages.md).
 
 ## Additional resources
 
