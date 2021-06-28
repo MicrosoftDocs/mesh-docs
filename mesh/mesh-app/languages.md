@@ -11,7 +11,7 @@ keywords: mixed reality, microsoft mesh, documentation, guides, features, hologr
 
 # Languages
 
-If a language is listed in the table below, the Mesh app can display subtitles in the language you have selected as participants speak.
+If a language is listed in the table below, the Mesh app can [display subtitles](use-mesh.md#setting-user-preferences) in the language you have selected as participants speak.
 
 >[!Note]
 >Translations are automated and may not be accurate.
