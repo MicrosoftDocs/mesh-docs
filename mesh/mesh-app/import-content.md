@@ -76,9 +76,9 @@ To add content to the User folder:
 You can upload a file from your Hololens or OneDrive folder into your space.  To do this, you will need to enable the **Local File Picker** option in **Experimental Features** by going through the following steps:  
 
 1. Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu** button at the top.
-1. Go to **Settings** tab, and select **Experiments**.
+1. Go to **Settings**, select **Experimental Features** under the **General** tab.
 
-    ![Screenshot of the **settings** tab.](media\mesh-app-settings.jpg)
+    ![Screenshot of the **Settings -> General** tab.](media\settings-general.jpg)
 
 1. Select **Local File Picker**.
 
