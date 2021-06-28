@@ -18,13 +18,13 @@ keywords: mixed reality, microsoft mesh, documentation, guides, features, hologr
 If you want to load new ARR objects into a space, you will need to enable the **ARR** option in **Experimental Features** by going through the following steps:  
 
 1. Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu** button at the top.
-1. Go to **Settings** tab, and select **Experiments**.
+1. Go to **Settings**, select **Experimental Features** under the **General** tab.
 
-    ![Screenshot of the **settings** tab.](media\mesh-app-settings.jpg)
+    ![Screenshot of the **Settings -> General** tab.](media\settings-general.jpg)
 
 1. Select **Azure Remote Rendering**.
 
-    ![Screenshot of the **Experiments** option under **Settings** tab.](media\experimental-features.jpg)
+    ![Screenshot of the **Experimental Features** option under **Settings** tab.](media\experimental-features.jpg)
 
 1. You can now see a tab for Azure Remote Rendering objects in your **Content** menu.
 
