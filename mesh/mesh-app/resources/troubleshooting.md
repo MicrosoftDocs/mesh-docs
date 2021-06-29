@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting
+title: Troubleshooting common Error Messages
 description: Troubleshooting information for the Mesh app.
 ms.prod: mixed-reality
 author: qianw211
@@ -9,7 +9,7 @@ ms.topic: troubleshooting
 keywords: mixed reality, development, getting started, documentation, guides, features, holograms
 ---
 
-# Troubleshooting Common Error Messages
+# Troubleshooting common Error Messages
 
 While running the Mesh app, you may run into the following errors.
 

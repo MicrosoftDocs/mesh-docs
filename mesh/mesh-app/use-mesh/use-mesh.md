@@ -161,7 +161,7 @@ You can set user preferences under **Settings**.
 
 1. Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu** button at the top.
 
-1. Go to **Settings**, select **Preferences** under the **General** tab.
+1. Go to **Settings**, select **Preferences**.
 
     ![Screenshot of the **Settings -> Preferences** tab.](media\settings-preferences.jpg)
 
