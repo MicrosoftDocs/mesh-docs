@@ -37,7 +37,7 @@ landingContent:
           - text: Collaborate with the Microsoft Mesh app for HoloLens (Preview)
             url: mesh-app/index.md
           - text: What's new in the Microsoft Mesh app
-            url: mesh-app/release-notes.md
+            url: mesh-app/resources/release-notes.md
 
   # Card
   - title: Manage access
@@ -53,10 +53,10 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Use the Mesh app
-            url: ./mesh-app/use-mesh.md
+            url: ./mesh-app/use-mesh/use-mesh.md
           - text: Import 2D images and 3D models
-            url: ./mesh-app/import-content.md
+            url: ./mesh-app/use-mesh/import-content.md
           - text: Import Azure Remote Rendering (ARR) models
-            url: ./mesh-app/arr-content.md       
+            url: ./mesh-app/use-mesh/arr-content.md       
           - text: Frequently asked questions
             url: ./mesh-app/faq.md     
