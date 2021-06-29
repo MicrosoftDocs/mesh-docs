@@ -13,7 +13,7 @@ keywords: mixed reality, development, getting started, documentation, guides, fe
 
 While running the Mesh app, you may run into the following errors.
 
-## Connection and loggin errors
+## Connection and loggin
 
 ### WelcomeScreen_Message_NetworkError
 
