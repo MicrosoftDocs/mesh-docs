@@ -22,7 +22,7 @@ Here you will learn about how to:
 
 To work with contents, open the Taskbar from the Hand Menu, and choose the Content icon.
 
-![The content icon](\media\content-pane.png)
+![The content tab](\media\content-pane.png)
 
 In the Content pane, there are 3 places from which you can pull content into a space:
 
@@ -103,10 +103,10 @@ To add content to a space:
 
 ## Additional resources
 
-For other questions, see [Microsoft Mesh app troubleshooting and frequently asked questions](faq.md).
+For other questions, see [Microsoft Mesh app troubleshooting and frequently asked questions](../faq.md).
 
-- [Microsoft Mesh overview](../overview.md)
-- [Set up Microsoft Mesh for your organization](../provisioning.md)
+- [Microsoft Mesh overview](../../overview.md)
+- [Set up Microsoft Mesh for your organization](../../provisioning.md)
 - [HoloLens](/hololens/)
 - [Get started with Mixed Reality](/windows/mixed-reality/discover/get-started-with-mr)
 - [Use the Mesh app](use-mesh.md)

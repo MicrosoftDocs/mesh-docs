@@ -36,6 +36,6 @@ If a language is listed in the table below, the Mesh app can [display subtitles]
 
 ## See also
 
-- [Microsoft Mesh overview](../overview.md)
+- [Microsoft Mesh overview](../../overview.md)
 - [Use the Mesh app](use-mesh.md)
 

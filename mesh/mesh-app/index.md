@@ -43,4 +43,4 @@ To try the Microsoft Mesh app (Preview), you will need:
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Start using the Mesh app on your HoloLens 2](./use-mesh.md)
+   > [Start using the Mesh app on your HoloLens 2](./use-mesh/use-mesh.md)
