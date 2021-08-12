@@ -4,7 +4,7 @@ description: All aspects of using the Microsoft Mesh app are covered
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 06/28/2021
+ms.date: 08/12/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -15,7 +15,7 @@ This article describes how to use features of the Microsoft Mesh app on HoloLens
 
 When you look at the palm of either hand, you will invoke the Hand Menu. In addition to the standard HoloLens start menu on your wrist, the Hand Menu provides quick access to important tools.
 
-![The hand menu](\media\hand-menu.png)
+![The hand menu](media\hand-menu.png)
 
 1. **Main Menu**: Toggles the Mesh app Taskbar on and off.
 1. **Selection Tool**: Activates selection mode. In this mode, you can grab a 3D object or 2D image and move it around the space.
@@ -27,20 +27,21 @@ When you look at the palm of either hand, you will invoke the Hand Menu. In addi
 
 The taskbar lets you access tools and spaces in the Mesh app. You can open the taskbar by tapping the top button on the Hand Menu. The taskbar buttons activate the following features, from left to right.
 
-![The taskbar](\media\taskbar.png)
+![The taskbar](media\taskbar.png)
 
-1. **Avatar**: Opens the avatar editor.
 1. [**Spaces**](#collaborative-spaces): Activates the spaces pane.
 1. [**Tools**](#add-annotations): Activates the annotation tools pane.
 1. [**Content**](./import-content.md): Activates the content pane, where you can select contents to add to the space.
 1. **Settings**: Activates the settings pane.
 1. **Recenter**: Repositions the table to be in front of your current position.
+1. **Avatar**: Opens the avatar editor.
+1. Leave your current space.
 
 ## Position your table
 
 In your home space you will see a blue table. This is the origin point for the space and everything in the scene is oriented around it. Virtual objects and annotations will always move relative to this table. You should place the table in a comfortable position in the real world, preferably somewhere in an open space where you can move around.
 
-![The table](\media\table.png)
+![The table](media\table.png)
 
 Pinch the table (up close or at a distance) to grab and move it. When you have the table positioned comfortably, you can use the buttons on the table control panel to lock the table in place to prevent accidental movement, and snap the table to the floor. You can also tap the Recenter button on the taskbar to reposition the table in front of your current position.
 
@@ -52,21 +53,23 @@ The Microsoft Mesh app is for collaboration. To work with others, you can create
 
 To work with spaces, open the taskbar from the Hand Menu, and choose the Spaces icon.
 
-![The spaces icon](\media\spaces-pane.png)
-
 ### Your home space
 
 You always start in your home space when you launch the Mesh app. This space is private, and only you can see and edit this space.
+
+![The Home space pannel.](media\home-space.jpg)
 
 ### Create a collaborative space
 
 To create a new space for collaboration:
 
-1. On the Spaces pane, tap **New Space**.
+![The new space button.](media\new-space.png)
+
+1. On the upper right corner of the Spaces pane, tap **New Space**.
 1. Enter a name for the space.
 1. Tap **Create**.
 
-![Create a collaborative space](\media\create-space.png)
+![Create a collaborative space](media\create-space.png)
 
 Creating a space automatically sends you there. You are now in a collaborative space. Any other users that join that space will be able to see, talk, and collaborate with you.
 
@@ -80,7 +83,7 @@ To rename or delete a space:
     - Delete Space
     - Back (no changes will be made)
 
-![Delete a collaborative space](\media\manage-space.png)
+![Delete a collaborative space](media\manage-space.png)
 
 ### Invite others to join a space
 
@@ -92,30 +95,18 @@ You can invite others to join any space that you're a member of.
 To add others to the current space:
 
 1. On the Spaces pane, select Current in the left menu.
-1. Tap **Add Others**
+1. Tap **Add Others** button on the upper right corner.
 1. Search for the user (using their Azure AD or MSA [identity](/hololens/hololens-identity)).
 1. Tap the user to add them to the space.
 
-![Add users to a space](\media\add-users.png)
+![Add users to a space](media\add-users.png)
 
 - If the users are online, they will get a pop-up inviting them to join the space.
 - If they are offline, the space will show up on the user's Spaces menu the next time they log in.
 
 ### Colocation
 
-Users in the same physical location can collaborate with each other and also with remote participants.  
-
-To enable the colocation experimental feature:
-
-1. Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu** button at the top.
-
-1. Go to **Settings**, select **Experimental Features** under the **General** tab.
-
-    ![Screenshot of the **Settings -> General** tab.](media\settings-general.jpg)
-
-1. Select **Colocation**.
-
-    ![Screenshot of the **Experimental Features** option under **Settings** tab.](media\colocation.jpg)
+Users in the same physical location can collaborate with each other and also with remote participants.  You can invite co-located or remote friends to join your space.
 
 To ensure success with colocation: 
 
@@ -142,18 +133,24 @@ To move between spaces:
 1. From the Spaces pane, make sure Spaces is selected in the left menu.
 1. Tap **Enter** on the space you want to join.
 
-![Move between spaces](\media\switch-space.png)
+    ![Move between spaces](media\switch-spaces.png)
 
 ## Add annotations
 
 The Tools pane shows you several options for interacting with content.
 
-![Annotation tools](\media\tools-pane.png)
+![Annotation tools](media\tools-brushes.png)
 
 - Select the hand icon to enter selection mode, which let's you grab and move objects in the space.
 - Use the eraser to remove content. With the eraser selected, touch the content you want to remove with the red X.
 - Use the pen tools to write and draw annotations on content. Choose a pen, choose a color, and tap your finger and thumb together to draw in 3D space.
-- Use the stamp tools to add quick 3D shapes.
+- Use the stamp tools to add quick 3D shapes. To enable **Sticky Notes** on this tab:
+    - Go to **Settings**
+    - Select **Sticky Notes** on the **Experimental** tab.
+
+    <br>
+
+    ![Annotation tools](media\experimental-features-sticky.png)
 
 ## Setting user preferences
 
@@ -163,7 +160,7 @@ You can set user preferences under **Settings**.
 
 1. Go to **Settings**, select **Preferences**.
 
-    ![Screenshot of the **Settings -> Preferences** tab.](media\settings-preferences.jpg)
+    ![Screenshot of the **Settings -> Preferences** tab.](media\settings-preferences.png)
 
 1. Adjust your microphone input level, or [enable subtitles and translation to a language of your choice](languages.md).
 

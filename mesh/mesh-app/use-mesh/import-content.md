@@ -4,7 +4,7 @@ description: You can import your own content to the MyContent folder
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 05/26/2021
+ms.date: 8/11/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -22,7 +22,7 @@ Here you will learn about how to:
 
 To work with contents, open the Taskbar from the Hand Menu, and choose the Content icon.
 
-![The content tab](\media\content-pane.png)
+![The content tab](media\content-pane.jpg)
 
 In the Content pane, there are 3 places from which you can pull content into a space:
 
@@ -39,7 +39,7 @@ The following 2D image file formats are supported: .png, .gif, .ico, .bmp, .tiff
 
 The MyContent folder is created automatically when you select the **OneDrive** tab inside the Mesh app.  
 
-![Screenshot of the Microsoft Mesh Models - OneDrive](media\mesh-onedrive.png)
+![Screenshot of the Microsoft Mesh Models - OneDrive](media\mesh-onedrive.jpg)
 
 Once this folder is created, you'll need to take the following steps on your desktop to sync the folder:
 
@@ -76,13 +76,10 @@ To add content to the User folder:
 You can upload a file from your Hololens or OneDrive folder into your space.  To do this, you will need to enable the **Local File Picker** option in **Experimental Features** by going through the following steps:  
 
 1. Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu** button at the top.
-1. Go to **Settings**, select **Experimental Features** under the **General** tab.
-
-    ![Screenshot of the **Settings -> General** tab.](media\settings-general.jpg)
-
+1. Go to **Settings**, select **Experimental Features**.
 1. Select **Local File Picker**.
 
-    ![Screenshot of the **Experiments** option under **Settings** tab.](media\experimental-features-local-files.jpg)
+    ![Screenshot of the **Experiments** option under **Settings** tab.](media\experimental-features-local-files.png)
 
 1. You can now see **+ Upload file** in your **Content** menu.
 
@@ -92,7 +89,7 @@ You can upload a file from your Hololens or OneDrive folder into your space.  To
 
 You can share any content from the Samples or OneDrive folders to a collaborative space. This copies over the model file into your current space and shares the copy with all members of the space. Shared content for a space is stored in each users OneDrive under Apps > Microsoft Mesh app (Preview) > _spaceGUID_.space.
 
-![Share content](\media\share-content.png)
+![Share content](media\share-content.png)
 
 To add content to a space:
 
