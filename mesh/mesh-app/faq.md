@@ -4,7 +4,7 @@ description: Microsoft Mesh app (Preview) frequently asked questions.
 ms.prod: mixed-reality
 author: qianw211    
 ms.author: v-qianwen
-ms.date: 06/07/2021
+ms.date: 8/12/2021
 ms.topic: overview
 keywords: mixed reality, getting started, documentation, guides, features, holograms
 ---
@@ -55,7 +55,7 @@ We collect information about your organization's identity, your account ID, and 
 
 - Look at your hand to [bring up the menu](use-mesh/use-mesh.md#the-hand-menu), and press the **Main menu button** at the top.  Go to **Settings**, and on the **Account** tab, click **Sign Out** next to your user information.  Click **Yes**.
 
-    ![Screenshot of the **settings** tab.](media\mesh-app-sign-out.jpg)
+    ![Screenshot of the **settings** tab.](media\mesh-app-sign-out.png)
 
 ## Feedback and support
 
