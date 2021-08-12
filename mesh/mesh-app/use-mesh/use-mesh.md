@@ -83,7 +83,7 @@ To rename or delete a space:
     - Delete Space
     - Back (no changes will be made)
 
-![Delete a collaborative space](media\manage-space.png)
+    ![Delete a collaborative space](media\manage-space.png)
 
 ### Invite others to join a space
 
