@@ -150,7 +150,7 @@ The Tools pane shows you several options for interacting with content.
 
     <br>
 
-    ![Annotation tools](media\experimental-features-sticky.png)
+    ![Sticky notes in Experimental features](media\experimental-features-sticky.png)
 
 ## Setting user preferences
 
