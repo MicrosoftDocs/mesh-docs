@@ -32,7 +32,7 @@ The taskbar lets you access tools and spaces in the Mesh app. You can open the t
 1. [**Spaces**](#collaborative-spaces): Activates the spaces pane.
 1. [**Tools**](#add-annotations): Activates the annotation tools pane.
 1. [**Content**](./import-content.md): Activates the content pane, where you can select contents to add to the space.
-1. **Settings**: Activates the settings pane.
+1. [**Settings**](#setting-user-preferences): Activates the settings pane.
 1. **Recenter**: Repositions the table to be in front of your current position.
 1. **Avatar**: Opens the avatar editor.
 1. Leave your current space.
@@ -99,7 +99,7 @@ To add others to the current space:
 1. Search for the user (using their Azure AD or MSA [identity](/hololens/hololens-identity)).
 1. Tap the user to add them to the space.
 
-![Add users to a space](media\add-users.png)
+    ![Add users to a space](media\add-users.png)
 
 - If the users are online, they will get a pop-up inviting them to join the space.
 - If they are offline, the space will show up on the user's Spaces menu the next time they log in.
