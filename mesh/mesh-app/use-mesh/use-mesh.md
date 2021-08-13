@@ -164,6 +164,26 @@ You can set user preferences under **Settings**.
 
 1. Adjust your microphone input level, or [enable subtitles and translation to a language of your choice](languages.md).
 
+### Eye gaze experimental feature
+
+![Info screen on Eye Gaze selection](media\eye-gaze-selection.png)
+
+There is now a very comfortable way of picking up and moving objects.  In your current space, follow the steps below:
+
+1. Look at the object of interest.
+1. Raise your hand slightly will highlight this object.
+1. Naturally move your hand to move the object.
+
+To enable the eye gaze feature:
+
+1. Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu** button at the top.
+
+1. Go to **Settings**, select **Experimental**.
+
+1. Select **Eye Gaze Interation**.
+
+    ![Screenshot of the **Settings -> Preferences** tab.](media\experimental-features-eye-gaze.png)
+
 ## Additional resources
 
 For other questions, see [Microsoft Mesh app troubleshooting and frequently asked questions](../faq.md).
