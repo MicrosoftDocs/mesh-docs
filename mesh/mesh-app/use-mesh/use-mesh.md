@@ -4,7 +4,7 @@ description: All aspects of using the Microsoft Mesh app are covered
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 08/12/2021
+ms.date: 08/13/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -135,7 +135,7 @@ To move between spaces:
 
     ![Move between spaces](media\switch-spaces.png)
 
-## Add annotations
+## Interact with content
 
 The Tools pane shows you several options for interacting with content.
 
@@ -182,7 +182,7 @@ To enable the eye gaze feature:
 
 1. Select **Eye Gaze Interation**.
 
-    ![Screenshot of the **Settings -> Preferences** tab.](media\experimental-features-eye-gaze.png)
+    ![Screenshot of the **Settings -> Experimental -> Eye Gaze Selection** option.](media\experimental-features-eye-gaze.png)
 
 ## Additional resources
 
