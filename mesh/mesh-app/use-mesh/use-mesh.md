@@ -30,7 +30,7 @@ The taskbar lets you access tools and spaces in the Mesh app. You can open the t
 ![The taskbar](media\taskbar.png)
 
 1. [**Spaces**](#collaborative-spaces): Activates the spaces pane.
-1. [**Tools**](#add-annotations): Activates the annotation tools pane.
+1. [**Tools**](#interact-with-content): Activates the annotation tools pane.
 1. [**Content**](./import-content.md): Activates the content pane, where you can select contents to add to the space.
 1. [**Settings**](#setting-user-preferences): Activates the settings pane.
 1. **Recenter**: Repositions the table to be in front of your current position.
