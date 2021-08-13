@@ -172,7 +172,7 @@ There is now a very comfortable way of picking up and moving objects.  In your c
 
 1. Look at the object of interest.
 1. Raise your hand slightly will highlight this object.
-1. Naturally move your hand to move the object.
+1. Pinch and naturally move your hand to move the object.
 
 To enable the eye gaze feature:
 
