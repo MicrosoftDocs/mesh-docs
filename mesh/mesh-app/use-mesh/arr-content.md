@@ -4,7 +4,7 @@ description: You can now load Azure Remote Rendering models to your space
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 8/13/2021
+ms.date: 8/16/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -22,7 +22,7 @@ If you want to load new ARR objects into a space, you will need to enable the **
 
 1. Select **Azure Remote Rendering**.
 
-    ![Screenshot of the **Experimental Features** option under **Settings** tab.](media\experimental-features-arr.png)
+    <img src="media\experimental-features-arr.png" alt="Screenshot of the **Experimental Features** option under **Settings** tab." width=500px>
 
 1. You can now see a tab for Azure Remote Rendering objects in your **Content** menu.
 
