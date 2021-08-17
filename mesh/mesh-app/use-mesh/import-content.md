@@ -22,7 +22,7 @@ Here you will learn about how to:
 
 To work with contents, open the Taskbar from the Hand Menu, and choose the Content icon.
 
-![The content tab](media\content-pane.jpg)
+<img src="media\content-pane.png" alt="The content tab." width=500px>
 
 In the Content pane, there are 3 places from which you can pull content into a space:
 
@@ -79,7 +79,7 @@ You can upload a file from your Hololens or OneDrive folder into your space.  To
 1. Go to **Settings**, select **Experimental Features**.
 1. Select **Local File Picker**.
 
-    ![Screenshot of the **Experiments** option under **Settings** tab.](media\experimental-features-local-files.png)
+    <img src="media\experimental-features-local-files.png" alt="Screenshot of the **Experiments** option under **Settings** tab." width=500px>
 
 1. You can now see **+ Upload file** in the upper right corner of your **Content** pane.
 
