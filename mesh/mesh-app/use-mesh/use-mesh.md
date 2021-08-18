@@ -4,7 +4,7 @@ description: All aspects of using the Microsoft Mesh app are covered
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 08/16/2021
+ms.date: 08/18/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -77,9 +77,9 @@ To rename or delete a space:
 
 1. On the Spaces pane, tap the _more_ (...) menu on the tile of the space you want to edit.
 1. From the menu, choose the action you want to perform.
-    - Rename Space
-    - Delete Space
-    - Back (no changes will be made)
+    - **Rename Space**
+    - **Delete Space**
+    - **Back** (no changes will be made)
 
     <img src="media\manage-space.png" alt="Delete a collaborative space" width=500px>
 
@@ -137,10 +137,11 @@ To move between spaces:
 
 The Tools pane shows you several options for interacting with content.
 
-<img src="media\tools-brushes.png" alt="Annotation tools" width=500px>
-
 - Select the hand icon to enter selection mode, which let's you grab and move objects in the space.
 - Use the eraser to remove content. With the eraser selected, touch the content you want to remove with the red X.
+
+<img src="media\tools-brushes.png" alt="Annotation tools" width=500px>
+
 - Use the pen tools to write and draw annotations on content. Choose a pen, choose a color, and tap your finger and thumb together to draw in 3D space.
 - Use the stamp tools to add quick 3D shapes. To enable **Sticky Notes** on this tab:
 

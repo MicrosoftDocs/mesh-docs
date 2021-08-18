@@ -4,7 +4,7 @@ description: You can import your own content to the MyContent folder
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 8/13/2021
+ms.date: 8/18/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -39,7 +39,7 @@ The following 2D image file formats are supported: .png, .gif, .ico, .bmp, .tiff
 
 The MyContent folder is created automatically when you select the **OneDrive** tab inside the Mesh app.  
 
-![Screenshot of the Microsoft Mesh Models - OneDrive](media\mesh-onedrive.jpg)
+<img src="media\mesh-onedrive.png" alt="Screenshot of the Microsoft Mesh Models - OneDrive." width=500px>
 
 Once this folder is created, you'll need to take the following steps on your desktop to sync the folder:
 
@@ -83,7 +83,7 @@ You can upload a file from your Hololens or OneDrive folder into your space.  To
 
 1. You can now see **+ Upload file** in the upper right corner of your **Content** pane.
 
-     ![Screenshot of the Mesh app **Content** menu.](media\content-upload-files.jpg)
+    <img src="media\content-upload-files.png" alt="Screenshot of the Mesh app **Content** menu." width=500px>
 
 ## Share content to a collaborative space
 
