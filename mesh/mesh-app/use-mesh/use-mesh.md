@@ -139,13 +139,15 @@ The Tools pane shows you several options for interacting with content.
 
 - Select the hand icon to enter selection mode, which let's you grab and move objects in the space.
 - Use the eraser to remove content. With the eraser selected, touch the content you want to remove with the red X.
+- Use the pen tools to write and draw annotations on content. Choose a pen, choose a color, and tap your finger and thumb together to draw in 3D space.
 
 <img src="media\tools-brushes.png" alt="Annotation tools" width=500px>
 
-- Use the pen tools to write and draw annotations on content. Choose a pen, choose a color, and tap your finger and thumb together to draw in 3D space.
-- Use the stamp tools to add quick 3D shapes. To enable **Sticky Notes** on this tab:
+- Use the stamp tools to add quick 3D shapes. 
 
     <img src="media\tools-stickers.png" alt="Sticker tool" width=500px>
+
+    To enable **Sticky Notes** on this tab:
 
     - Go to **Settings**
     - Select **Sticky Notes** on the **Experimental** tab.

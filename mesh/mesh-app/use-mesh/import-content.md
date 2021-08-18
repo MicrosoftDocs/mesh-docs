@@ -81,7 +81,7 @@ You can upload a file from your Hololens or OneDrive folder into your space.  To
 
     <img src="media\experimental-features-local-files.png" alt="Screenshot of the **Experiments** option under **Settings** tab." width=500px>
 
-1. You can now see **+ Upload file** in the upper right corner of your **Content** pane.
+1. You can now see **+ Upload file** on the upper right corner of your **Content** pane.
 
     <img src="media\content-upload-files.png" alt="Screenshot of the Mesh app **Content** menu." width=500px>
 
