@@ -67,7 +67,7 @@ To create a new space for collaboration:
 1. Enter a name for the space.
 1. Tap **Create**.
 
-<img src="media\create-space.png" alt="Create a collaborative space" width=500px>
+    <img src="media\create-space.png" alt="Create a collaborative space" width=500px>
 
 Creating a space automatically sends you there. You are now in a collaborative space. Any other users that join that space will be able to see, talk, and collaborate with you.
 
@@ -141,7 +141,7 @@ The Tools pane shows you several options for interacting with content.
 - Use the eraser to remove content. With the eraser selected, touch the content you want to remove with the red X.
 - Use the pen tools to write and draw annotations on content. Choose a pen, choose a color, and tap your finger and thumb together to draw in 3D space.
 
-<img src="media\tools-brushes.png" alt="Annotation tools" width=500px>
+    <img src="media\tools-brushes.png" alt="Annotation tools" width=500px>
 
 - Use the stamp tools to add quick 3D shapes. 
 
