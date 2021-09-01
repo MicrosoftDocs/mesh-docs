@@ -4,7 +4,7 @@ description: Get started with Microsoft Mesh app (Preview).
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 04/09/2021
+ms.date: 9/1/2021
 ms.topic: article
 keywords: mixed reality, development, getting started, documentation, guides, features, holograms
 ---
@@ -13,7 +13,7 @@ keywords: mixed reality, development, getting started, documentation, guides, fe
 
 The Microsoft Mesh app (Preview) is a collaboration-first experience for HoloLens 2, built on [Microsoft Mesh services](../overview.md). With the Mesh app, you can create spaces to work with others in your organization. You'll get a more natural and productive collaboration experience, with the feeling of being in the same room while working from different locations.
 
-![Microsoft Mesh app collaboration experience](./media/mesh-app.png)
+<img src="./media/mesh-app.png" alt="Microsoft Mesh app collaboration experience.">
 
 ## Requirements
 
