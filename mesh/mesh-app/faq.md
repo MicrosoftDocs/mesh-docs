@@ -18,7 +18,7 @@ keywords: mixed reality, getting started, documentation, guides, features, holog
 
 ### What devices are supported?
 
-- Microsoft Mesh app (Preview) requires a [HoleLens 2](/hololens/hololens2-options) with Windows 10, version 2004 (build 19041) or greater. For info about updating Windows, see [Update HoloLens](/hololens/hololens-update-hololens).
+- Microsoft Mesh app (Preview) requires a [HoloLens 2](/hololens/hololens2-options) with Windows 10, version 2004 (build 19041) or greater. For info about updating Windows, see [Update HoloLens](/hololens/hololens-update-hololens).
 
 ### How do I sign in to collaborate in the Microsoft Mesh app (Preview)?
 
