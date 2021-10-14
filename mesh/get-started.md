@@ -24,16 +24,11 @@ App | Overview | Device support
 [Mesh app](./mesh-app/index.md) | Gather a few peers and download the [Mesh app on HoloLens 2](./mesh-app/index.md) for room-scale collaboration scenarios.  The Mesh app is powered by Mesh. | HoloLens 2
 [AltspaceVR](https://altvr.com/mesh) | [Request access](https://altvr.com/mesh) to the AltspaceVR Preview to bring your work events to Mesh-enabled AltspaceVR. | HTC Vive, Oculus (Rift, Rift S, Quest, Quest 2), Windows Mixed Reality, PC
 
-> [!IMPORTANT]
-> Don't forget to fill out the Microsoft Mesh **[Register Interest](https://aka.ms/meshsignup)** form to stay up to date with Mesh news and announcements.
-
-## Build a Mesh-enabled app
-
-If you're interested in building a Mesh-enabled mixed reality app, join the [Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/signup/) to get updates, and get notified when Mesh Public Preview begins.
-
 ## Stay up to date
 
 Complete the Microsoft Mesh [Register Interest](https://info.microsoft.com/CO-NOGEP-CNTNT-FY21-03Mar-02-Microsoft-Mesh-5890_01Registration-ForminBody.html) form to stay up to date with Mesh announcements and news.
+
+If you're interested in building a mixed reality applications, join the Microsoft [Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/signup/) to get the latest news.
 
 ## Learn more
 
