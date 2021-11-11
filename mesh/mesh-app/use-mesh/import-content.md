@@ -4,7 +4,7 @@ description: You can import your own content to the MyContent folder
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 8/18/2021
+ms.date: 11/11/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -29,11 +29,6 @@ In the Content pane, there are 3 places from which you can pull content into a s
 - **Samples**: This sample content is included in the app build.
 - **OneDrive**: This is content that's inside of the Apps > Microsoft Mesh app (Preview) > MyContent folder on your OneDrive. Other users can't see this content. When you share it in a collaborative space, a copy is made for that space.
 - **Space**: This is shared content that either you or another member added to the current space.
-
-> [!NOTE]
-> For 3D content, only .glb files are supported at this time.
-
-The following 2D image file formats are supported: .png, .gif, .ico, .bmp, .tiff, .tif, .jpeg, .jpe, and .jpg.  For a .gif file, only the first frame will be loaded.
 
 ## Accessing the MyContent folder
 
@@ -69,7 +64,9 @@ To add content to the User folder:
 1. Once your files are copied to OneDrive, open the Content > OneDrive pane again to access them.
 
 >[!Warning]
->We currently have a file size limit of 75MB, or maximum 300,000 vertex count for 3D models. If these limits are exceeded, you will fail to load your content, and get a warning: "This model is too complex". To resolve this, you can use [Azure Remote Rendering (ARR)](/mesh/mesh-app/arr-content), where more complex models can be loaded in your space.
+>For 3D content, only .glb files are supported at this time. We currently have a file size limit of 75MB, or maximum 300,000 vertex count for 3D models. If these limits are exceeded, you will fail to load your content, and get a warning: "This model is too complex". To resolve this, you can use [Azure Remote Rendering (ARR)](/mesh/mesh-app/arr-content), where more complex models can be loaded in your space.
+
+The following 2D image file formats are supported: .png, .gif, .ico, .bmp, .tiff, .tif, .jpeg, .jpe, and .jpg.  For a .gif file, only the first frame will be loaded.
 
 ## Enable local file picker
 
