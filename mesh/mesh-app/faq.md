@@ -45,7 +45,7 @@ keywords: mixed reality, getting started, documentation, guides, features, holog
 
 ### What happens when I fail to import my 3D model from OneDrive?
 
-An error message normally shows up in this case: "this model is too complex." For more information on the supported 3D model file formats and size limits for the Mesh app, see [import content](import-content.md).
+An error message normally shows up in this case: "this model is too complex." For more information on the supported 3D model file formats and size limits for the Mesh app, see [import content](use-mesh/import-content.md).
 
 ### What data is shared with Microsoft?
 
