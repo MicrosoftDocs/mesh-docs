@@ -43,6 +43,10 @@ keywords: mixed reality, getting started, documentation, guides, features, holog
 - Your avatar customization is stored in your OneDrive storage.
 - The drawing data that gets created in a session is stored in the OneDrive account of the user that created the session initially.
 
+### What happens when I fail to import my 3D model from OneDrive?
+
+An error message normally shows up in this case: "this model is too complex." For more information on the Mesh app’s supported file formats and 3D model size limits, see [import user content](use-mesh/import-content.md#import-user-content).
+
 ### What data is shared with Microsoft?
 
 We collect information about your organization's identity, your account ID, and usage data related to the latency and performance of the service and app. See [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
