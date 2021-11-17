@@ -64,7 +64,7 @@ To add content to the User folder:
 1. Once your files are copied to OneDrive, open the Content > OneDrive pane again to access them.
 
 >[!Warning]
->For 3D content, only .glb files are supported at this time. We currently have a file size limit of 75MB, or maximum 300,000 vertex count for 3D models. If these limits are exceeded, you will fail to load your content, and get a warning: "This model is too complex". To resolve this, you can use [Azure Remote Rendering (ARR)](/mesh/mesh-app/arr-content), where more complex models can be loaded in your space.
+>For 3D content, only .glb files are supported at this time. We currently have a file size limit of 75MB, or maximum 300,000 vertex count for 3D models. If these limits are exceeded, you will fail to load your content, and get a warning: "This model is too complex". To resolve this, you can use [Azure Remote Rendering (ARR)](/mesh/mesh-app/use-mesh/arr-content), where more complex models can be loaded in your space.
 
 The following 2D image file formats are supported: .png, .gif, .ico, .bmp, .tiff, .tif, .jpeg, .jpe, and .jpg.  For a .gif file, only the first frame will be loaded.
 
