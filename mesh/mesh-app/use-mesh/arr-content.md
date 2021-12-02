@@ -4,7 +4,7 @@ description: You can now load Azure Remote Rendering models to your space
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 8/18/2021
+ms.date: 12/2/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -42,10 +42,18 @@ To import your own content for remote rendering, you will first need to upload a
 When loading multiple ARR models, you can simply add the following code in the `remote_models.json` file for each additional model:
 
 ```json
-{
-modelname="model name",
-modelUri="modelURI"
-}
+[
+  {
+    "version": 1,
+    "modelName": "hello",
+    "sasUri": "uri"
+  },
+  {
+    "version": 1,
+    "modelName": "hello",
+    "sasUri": "uri"
+  }
+]
 ```
 
 ## Additional resources
