@@ -159,9 +159,7 @@ There is now a comfortable way of picking up and moving objects.  In your curren
 
 <img src="media\pinch-and-drag.jpg" alt="The selection tool screen" width=500px>
 
-On the **selection** tool tab, you now have a **far interaction mode** to interact with objects not within your reach. To start the look and pinch tutorial, select the eye icon under **Far Interaction mode":
-
-The look and pinch tutorial screen will appear. Click **Next** when you're ready to begin the tutorial.
+On the **selection** tool tab, you now have a **far interaction mode** to interact with objects not within your reach. To start the look and pinch tutorial, select the eye icon under **Far Interaction mode**. The look and pinch tutorial screen will appear. Click **Next** when you're ready to begin the tutorial.
 
 <img src="media\look-and-pinch-tutorial.jpg" alt="Look and pinch tutorial for far interactive mode" width=500px>
 
