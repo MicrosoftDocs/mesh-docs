@@ -4,7 +4,7 @@ description: All aspects of using the Microsoft Mesh app are covered
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 08/18/2021
+ms.date: 12/08/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -30,7 +30,7 @@ The taskbar lets you access tools and spaces in the Mesh app. You can open the t
 <img src="media\taskbar.png" alt="The taskbar" width=600px>
 
 1. [**Spaces**](#collaborative-spaces): Activates the spaces pane.
-1. [**Tools**](#interact-with-content): Activates the annotation tools pane.
+1. [**Tools**](#tools): Activates the annotation tools pane.
 1. [**Content**](./import-content.md): Activates the content pane, where you can select contents to add to the space.
 1. [**Settings**](#setting-user-preferences): Activates the settings pane.
 1. **Recenter**: Repositions the table to be in front of your current position.
@@ -102,6 +102,18 @@ To add others to the current space:
 - If the users are online, they will get a pop-up inviting them to join the space.
 - If they are offline, the space will show up on the user's Spaces menu the next time they log in.
 
+### Invite cross-tenant users
+
+Given security and privacy guidelines, the cross-tenant sessions feature allows users to connect to other users outside of their tenant group. Thus, AAD users can add MSA users and other AAD users outside of their tenant to a space and vice versa. A lobby experience is included so that users outside of a tenant can be accepted into a space or denied from a space.
+
+After you click on **Add remote** to invite remote users to join your session.  You will see a list of remote users in your organization:
+
+<img src="media\add-remote-contacts.jfif" alt="Add remote users to a space" width=500px>
+
+Click the **add user** icon on the upper right corner to add cross-tenant users to your session.  The following dialoguebox will appear.
+
+<img src="media\add-cross-tenant-users.jfif" alt="Add remote cross-tenant users to a space" width=500px>
+
 ### Colocation
 
 Users in the same physical location can collaborate with each other and also with remote participants.  You can invite co-located or remote friends to join your space.
@@ -133,7 +145,21 @@ To move between spaces:
 
     <img src="media\switch-spaces.png" alt="Move between spaces" width=500px>
 
-## Interact with content
+## Tools
+
+In the tools pane, you will find the **selection** tool and the options for interacting with content.
+
+### Look and pinch tutorial
+
+Under the **selection** tool, you now have a look and pinch option to pick up an object not within your reach. To start the look and pinch tutorial, select the eye icon under **Far Interaction mode":
+
+<img src="media\pinch-and-drag.jfif" alt="The selection tool screen" width=500px>
+
+The look and pinch tutorial screen will appear, and click **Next** when you're ready to begin the tutorial.
+
+<img src="media\look-and-pinch-tutorial.jfif" alt="Look and pinch tutorial for far interactive mode" width=500px>
+
+### Interact with content
 
 The Tools pane shows you several options for interacting with content.
 
