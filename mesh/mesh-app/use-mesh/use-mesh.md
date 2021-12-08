@@ -108,11 +108,11 @@ Given security and privacy guidelines, the cross-tenant sessions feature allows 
 
 After you click on **Add remote** to invite remote users to join your session.  You will see a list of remote users in your organization:
 
-<img src="media\add-remote-contacts.jpeg" alt="Add remote users to a space" width=500px>
+<img src="media\add-remote-contacts.jpg" alt="Add remote users to a space" width=500px>
 
 Click the **add user** icon on the upper right corner to add cross-tenant users to your session.  The following dialoguebox will appear.
 
-<img src="media\add-cross-tenant-users.jpeg" alt="Add remote cross-tenant users to a space" width=500px>
+<img src="media\add-cross-tenant-users.jpg" alt="Add remote cross-tenant users to a space" width=500px>
 
 ### Colocation
 
@@ -153,11 +153,11 @@ In the tools pane, you will find the **selection** tool and the options for inte
 
 Under the **selection** tool, you now have a look and pinch option to pick up an object not within your reach. To start the look and pinch tutorial, select the eye icon under **Far Interaction mode":
 
-<img src="media\pinch-and-drag.jpeg" alt="The selection tool screen" width=500px>
+<img src="media\pinch-and-drag.jpg" alt="The selection tool screen" width=500px>
 
 The look and pinch tutorial screen will appear, and click **Next** when you're ready to begin the tutorial.
 
-<img src="media\look-and-pinch-tutorial.jpeg" alt="Look and pinch tutorial for far interactive mode" width=500px>
+<img src="media\look-and-pinch-tutorial.jpg" alt="Look and pinch tutorial for far interactive mode" width=500px>
 
 ### Interact with content
 
