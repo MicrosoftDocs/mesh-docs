@@ -151,11 +151,17 @@ In the tools pane, you will find the **selection** tool and the options for inte
 
 ### Look and pinch tutorial
 
-Under the **selection** tool, you now have a look and pinch option to pick up an object not within your reach. To start the look and pinch tutorial, select the eye icon under **Far Interaction mode":
+There is now a comfortable way of picking up and moving objects.  In your current space, follow the steps below:
+
+1. Look at the object of interest.
+1. Raise your hand slightly will highlight this object.
+1. Pinch and naturally move your hand to move the object.
 
 <img src="media\pinch-and-drag.jpg" alt="The selection tool screen" width=500px>
 
-The look and pinch tutorial screen will appear, and click **Next** when you're ready to begin the tutorial.
+On the **selection** tool tab, you now have a **far interaction mode** to interact with objects not within your reach. To start the look and pinch tutorial, select the eye icon under **Far Interaction mode":
+
+The look and pinch tutorial screen will appear. Click **Next** when you're ready to begin the tutorial.
 
 <img src="media\look-and-pinch-tutorial.jpg" alt="Look and pinch tutorial for far interactive mode" width=500px>
 
@@ -193,26 +199,6 @@ You can set user preferences under **Settings**.
     <img src="media\settings-preferences.png" alt="Screenshot of the **Settings -> Preferences** tab." width=500px>
 
 1. Adjust your microphone input level, or [enable subtitles and translation to a language of your choice](languages.md).
-
-### Eye gaze experimental feature
-
-<img src="media\eye-gaze-selection.png" alt="Info screen on Eye Gaze selection." width=600px>
-
-There is now a comfortable way of picking up and moving objects.  In your current space, follow the steps below:
-
-1. Look at the object of interest.
-1. Raise your hand slightly will highlight this object.
-1. Pinch and naturally move your hand to move the object.
-
-To enable the eye gaze feature:
-
-1. Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu** button at the top.
-
-1. Go to **Settings**, select **Experimental**.
-
-1. Select **Eye Gaze Interaction**.
-
-    <img src="media\experimental-features-eye-gaze.png" alt="Screenshot of the **Settings -> Experimental -> Eye Gaze Selection** option." width=500px>
 
 ## Additional resources
 
