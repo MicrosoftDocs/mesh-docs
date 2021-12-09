@@ -4,7 +4,7 @@ description: All aspects of using the Microsoft Mesh app are covered
 ms.prod: mixed-reality
 author: qianw211
 ms.author: v-qianwen
-ms.date: 08/18/2021
+ms.date: 12/08/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
 ---
@@ -19,7 +19,7 @@ When you look at the palm of either hand, you will invoke the Hand Menu. In addi
 
 1. **Main Menu**: Toggles the Mesh app Taskbar on and off.
 1. **Selection Tool**: Activates selection mode. In this mode, you can grab a 3D object or 2D image and move it around the space.
-1. **Draw Tool**: Activates the current pen and opens the annotation sub-menu with a variety of brushes and shapes. Once you've selected your tool, pinch and drag to annotate.
+1. **Draw Tool**: Activates the current pen and opens the annotation submenu with various brushes and shapes. Once you've selected your tool, pinch and drag to annotate.
 1. **Eraser**: Activates the eraser. With the eraser active, move the red X through content or annotation to erase it.
 1. **Mute Toggle**: Toggles the microphone on and off.
 
@@ -30,7 +30,7 @@ The taskbar lets you access tools and spaces in the Mesh app. You can open the t
 <img src="media\taskbar.png" alt="The taskbar" width=600px>
 
 1. [**Spaces**](#collaborative-spaces): Activates the spaces pane.
-1. [**Tools**](#interact-with-content): Activates the annotation tools pane.
+1. [**Tools**](#tools): Activates the annotation tools pane.
 1. [**Content**](./import-content.md): Activates the content pane, where you can select contents to add to the space.
 1. [**Settings**](#setting-user-preferences): Activates the settings pane.
 1. **Recenter**: Repositions the table to be in front of your current position.
@@ -39,7 +39,7 @@ The taskbar lets you access tools and spaces in the Mesh app. You can open the t
 
 ## Position your table
 
-In your home space you will see a blue table. This is the origin point for the space and everything in the scene is oriented around it. Virtual objects and annotations will always move relative to this table. You should place the table in a comfortable position in the real world, preferably somewhere in an open space where you can move around.
+In your home space, you will see a blue table. This is the origin point for the space and everything in the scene is oriented around it. Virtual objects and annotations will always move relative to this table. You should place the table in a comfortable position in the real world, preferably somewhere in an open space where you can move around.
 
 <img src="media\table.png" alt="The table" width=500px>
 
@@ -49,7 +49,7 @@ The table acts as the central hub for all collaborators, so each space includes 
 
 ## Collaborative Spaces
 
-The Microsoft Mesh app is for collaboration. To work with others, you can create a collaborative space and invite others to join your space, or you can be invited to join spaces that others have created. Users can only enter spaces they are a member of, and each space can have a maximum of 8 concurrent users. All contents and annotations are persistent and can be edited by anyone in the space. All collaboration spaces include the same table found in your home space.
+The Microsoft Mesh app is for collaboration. To work with others, you can create a collaborative space and invite others to join your space, or you can be invited to join spaces that others have created. Users can only enter spaces they are a member of, and each space can have a maximum of eight concurrent users. All contents and annotations are persistent and can be edited by anyone in the space. All collaboration spaces include the same table found in your home space.
 
 To work with spaces, open the taskbar from the Hand Menu, and choose the Spaces icon.
 
@@ -88,7 +88,7 @@ To rename or delete a space:
 You can invite others to join any space that you're a member of.
 
 - **For Azure AD users**: All users need to be members of the same organization and have Microsoft Mesh (Preview) enabled for their accounts. Contacts will show all the users in your organization, but other users will have to set up the Microsoft Mesh app (Preview) on their HoloLens to receive calls.
-- **For MSA users**: Contacts will show those currently in the email address book associated with your MSA who have also set up the Microsoft Mesh app (Preview) on their HoloLens.
+- **For MSA users**: Contacts will show those currently in the email address book associated with your MSA who've also set up the Microsoft Mesh app (Preview) on their HoloLens.
 
 To add others to the current space:
 
@@ -102,19 +102,31 @@ To add others to the current space:
 - If the users are online, they will get a pop-up inviting them to join the space.
 - If they are offline, the space will show up on the user's Spaces menu the next time they log in.
 
+### Invite cross-tenant users
+
+Given security and privacy guidelines, the cross-tenant sessions feature allows users to connect to other users outside of their tenant group. Thus, AAD users can add MSA users and other AAD users outside of their tenant to a space and vice versa. A lobby experience is included so that users outside of a tenant can be accepted into a space or denied from a space.
+
+After you click **Add remote** to invite remote users to join your session.  You will see a list of remote users in your organization:
+
+<img src="media\add-remote-contacts.jpg" alt="Add remote users to a space" width=500px>
+
+Click the **add user** icon on the upper right corner to add cross-tenant users to your session.  The following dialogue box will appear.
+
+<img src="media\add-cross-tenant-users.jpg" alt="Add remote cross-tenant users to a space" width=500px>
+
 ### Colocation
 
-Users in the same physical location can collaborate with each other and also with remote participants.  You can invite co-located or remote friends to join your space.
+Users in the same physical location can collaborate with each other and also with remote participants.  You can invite colocated or remote friends to join your space.
 
 To ensure success with colocation: 
 
-1. All participants should turn on their hololens and walk around the meeting place before launching mesh. 
+1. All participants should turn on their HoloLens and walk around the meeting place before launching mesh. 
 
 1. Choose one person to be the host.  Once joining the space, the host is to place the center piece in the center of the room. 
 
 1. As each participant joins the space, have the host click on this participant in the current spaces tab, and click the green button to invite them to colocate. 
 
-1. The particiant needs to look at the host's center piece (center of the room). 
+1. The participant needs to look at the host's center piece (center of the room). 
 
 1. You are colocated when avatars disappear and nametags appearing above people's head. 
 
@@ -128,16 +140,36 @@ You can use the Spaces menu to move between any of the spaces you've created or 
 
 To move between spaces:
 
-1. From the Spaces pane, make sure Spaces is selected in the left menu.
+1. From the Spaces pane, make sure Spaces be selected in the left menu.
 1. Tap **Enter** on the space you want to join.
 
     <img src="media\switch-spaces.png" alt="Move between spaces" width=500px>
 
-## Interact with content
+## Tools
+
+In the tools pane, you will find the **selection** tool and the options for interacting with content.
+
+### Look and pinch tutorial
+
+There is now a comfortable way of picking up and moving objects.  In your current space, follow the steps below:
+
+1. Look at the object of interest.
+1. Raise your hand slightly will highlight this object.
+1. Pinch and naturally move your hand to move the object.
+
+<img src="media\pinch-and-drag.jpg" alt="The selection tool screen" width=500px>
+
+On the **selection** tool tab, you now have a **far interaction mode** to interact with objects not within your reach. To start the look and pinch tutorial, select the eye icon under **Far Interaction mode**. The look and pinch tutorial screen will appear. Click **Next** when you're ready to begin the tutorial.
+
+<br>
+
+<img src="media\look-and-pinch-tutorial.jpg" alt="Look and pinch tutorial for far interactive mode" width=500px>
+
+### Interact with content
 
 The Tools pane shows you several options for interacting with content.
 
-- Select the hand icon to enter selection mode, which let's you grab and move objects in the space.
+- Select the hand icon to enter selection mode, which lets you grab and move objects in the space.
 - Use the eraser to remove content. With the eraser selected, touch the content you want to remove with the red X.
 - Use the pen tools to write and draw annotations on content. Choose a pen, choose a color, and tap your finger and thumb together to draw in 3D space.
 
@@ -167,26 +199,6 @@ You can set user preferences under **Settings**.
     <img src="media\settings-preferences.png" alt="Screenshot of the **Settings -> Preferences** tab." width=500px>
 
 1. Adjust your microphone input level, or [enable subtitles and translation to a language of your choice](languages.md).
-
-### Eye gaze experimental feature
-
-<img src="media\eye-gaze-selection.png" alt="Info screen on Eye Gaze selection." width=600px>
-
-There is now a very comfortable way of picking up and moving objects.  In your current space, follow the steps below:
-
-1. Look at the object of interest.
-1. Raise your hand slightly will highlight this object.
-1. Pinch and naturally move your hand to move the object.
-
-To enable the eye gaze feature:
-
-1. Look at your hand to [bring up the menu](use-mesh.md#the-hand-menu), and press the **Main menu** button at the top.
-
-1. Go to **Settings**, select **Experimental**.
-
-1. Select **Eye Gaze Interation**.
-
-    <img src="media\experimental-features-eye-gaze.png" alt="Screenshot of the **Settings -> Experimental -> Eye Gaze Selection** option." width=500px>
 
 ## Additional resources
 
