@@ -42,7 +42,7 @@ See the Microsoft Mesh hands-on demo video below for an overview of Mesh and wha
 
 :::row:::
    :::column span="1":::
-      Mesh enhances 3D design reviews by enabling users to join anywhere using any device. Whether physically present or holoported, colleagues can see and annotate 3D models in real-time. All content persists between design sessions so teams can quickly start where they left off. This shared understanding ignites ideas, sparks creativity, and forms powerful bonds.
+      Mesh enhances 3D design reviews by enabling users to join anywhere using any device. Whether physically present or holoported, colleagues can see and annotate 3D models in real time. All content persists between design sessions so teams can quickly start where they left off. This shared understanding ignites ideas, sparks creativity, and forms powerful bonds.
    :::column-end:::
    :::column span="":::
       :::image type="content" source="media/scene-2.png" alt-text="Two people using a HoloLens and a tablet to look at a holographic scene":::
