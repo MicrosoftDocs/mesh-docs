@@ -2,8 +2,8 @@
 title: Get started with Microsoft Mesh (Preview)
 description: Get started with the Microsoft Mesh (Preview).
 ms.prod: mixed-reality
-author: jwmsft
-ms.author: jimwalk
+author: qianw211
+ms.author: qianwen
 ms.date: 03/10/2021
 ms.topic: article
 keywords: mixed reality, development, getting started, documentation, guides, features, holograms
@@ -11,13 +11,13 @@ keywords: mixed reality, development, getting started, documentation, guides, fe
 
 # Get started with Microsoft Mesh (Preview)
 
-[Microsoft Mesh](overview.md) is currently available in limited free preview. During preview, you can try the the Mesh app on your HoloLens, and request access to host virtual events in Mesh-enabled AltspaceVR. We will provide information on availability of additional Mesh-enabled apps with time, as the service becomes generally available. 
+[Microsoft Mesh](overview.md) is currently available in limited free preview. During the preview, you can try the Mesh app on your HoloLens, and request access to host virtual events in Mesh-enabled AltspaceVR. We will provide information on the availability of additional Mesh-enabled apps with time as the service generally becomes available. 
 
 :::image type="content" source="media/mesh-hero-1.png" alt-text="Two people viewing a hologram":::
 
 ## Try the Microsoft Mesh Preview
 
-Complete the Microsoft Mesh [Register Interest](https://aka.ms/meshsignup) form to stay up to date with Mesh news and announcements. We also welcome you to try Mesh through our preview Mesh-enabled experiences:
+Complete the Microsoft Mesh [Register Interest](https://aka.ms/meshsignup) form to stay updated with Mesh news and announcements. We also welcome you to try Mesh through our preview Mesh-enabled experiences:
 
 App | Overview | Device support
 ------ | ------ | ------
@@ -28,7 +28,7 @@ App | Overview | Device support
 
 Complete the Microsoft Mesh [Register Interest](https://info.microsoft.com/CO-NOGEP-CNTNT-FY21-03Mar-02-Microsoft-Mesh-5890_01Registration-ForminBody.html) form to stay up to date with Mesh announcements and news.
 
-If you're interested in building a mixed reality applications, join the Microsoft [Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/signup/) to get the latest news.
+If you're interested in building mixed reality applications, join the Microsoft [Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/signup/) to get the latest news.
 
 ## Learn more
 
