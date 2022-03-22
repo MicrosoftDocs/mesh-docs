@@ -4,7 +4,7 @@ description: Lists frequently asked questions for Microsoft Mesh (Preview).
 ms.prod: mixed-reality
 author: anatarnousk
 ms.author: antarnou
-ms.date: 3/2/2022
+ms.date: 3/22/2022
 ms.topic: article
 keywords: mixed reality, getting started, documentation, guides, features, holograms
 ---
