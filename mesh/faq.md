@@ -4,7 +4,7 @@ description: Lists frequently asked questions for Microsoft Mesh (Preview).
 ms.prod: mixed-reality
 author: anatarnousk
 ms.author: antarnou
-ms.date: 3/1/2021
+ms.date: 3/2/2022
 ms.topic: article
 keywords: mixed reality, getting started, documentation, guides, features, holograms
 ---
@@ -25,8 +25,8 @@ If you're interested in building a Mesh-enabled mixed reality app, [join the Mix
 
 You can get started with Microsoft Mesh today:
 
-- Complete the Microsoft Mesh [Register Interest](https://aka.ms/meshsignup) form to stay up to date with Mesh news and announcements, including the general availability of AltspaceVR enterprise features.
-- Try Mesh-enabled experiences: [Mesh app on HoloLens](./mesh-app/index.md), and [Mesh-enabled AltspaceVR](https://altvr.com).
+- Complete the Microsoft Mesh [Register Interest](https://aka.ms/meshsignup) form to stay up to date with Mesh news and announcements.
+- Try Mesh-enabled experiences: [Mesh app on HoloLens](./mesh-app/index.md).
 
 As the services become generally available, we will provide information on the availability of additional Mesh-enabled apps.
 
@@ -38,7 +38,7 @@ See the [Mesh app on HoloLens FAQ](./mesh-app/faq.md) to learn about Mesh app av
 
 ## How much will Microsoft Mesh cost?
 
-There is no cost to try Microsoft Mesh during the preview. You can download the Microsoft Mesh app from the Microsoft Store and request access to the Altspace app with new capabilities for work by filling out the Mesh [Register Interest](https://aka.ms/meshsignup) form. Developers can [join the Mixed Reality Developer Program](https://aka.ms/iwantmr). We'll have more details to share on Microsoft Mesh pricing.
+There is no cost to try Microsoft Mesh during the preview. You can download the Microsoft Mesh app from the Microsoft Store and request new capabilities for work by filling out the Mesh [Register Interest](https://aka.ms/meshsignup) form. Developers can [join the Mixed Reality Developer Program](https://aka.ms/iwantmr). We'll have more details to share on Microsoft Mesh pricing.
 
 ## What data are shared with Microsoft?
 
