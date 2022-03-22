@@ -4,7 +4,7 @@ description: Microsoft Mesh (Preview) overview.
 ms.prod: mixed-reality
 author: qianw211
 ms.author: qianwen
-ms.date: 04/28/2021
+ms.date: 3/22/2022
 ms.topic: overview
 keywords: mixed reality, getting started, documentation, guides, features, holograms
 ---
@@ -84,7 +84,7 @@ See the Microsoft Mesh hands-on demo video below for an overview of Mesh and wha
 
 ## Next steps
 
-Get started with the Microsoft Mesh Preview by completing the Register Interest form to stay up to date with Mesh news and announcements, trying the Mesh app on your HoloLens 2, and requesting access to Mesh-enabled AltspaceVR.
+Get started with the Microsoft Mesh Preview by completing the Register Interest form to stay up to date with Mesh news and announcements and trying the Mesh app on your HoloLens 2.
 
    > [!div class="nextstepaction"]
    > [Get Started with the Microsoft Mesh Preview](get-started.md)
