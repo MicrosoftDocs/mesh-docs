@@ -23,7 +23,7 @@ This message is shown when you failed to connect since your servers can't be rea
 
 Mesh network uses the following ports and IP addresses.
 
-For normal port 80 and 443 for HTTP traffic, we use an application service that may connect on: 843/tcp 4520/tcp 4530/tcp 4531/tcp 4533/tcp 5055/udp 5056/udp 5058/udp 6060/tcp 6061/tcp 6063/tcp 9090/tcp 9091/tcp 9093/tcp 19090/tcp 19091/tcp 19093/tcp.
+For normal port 80 and 443 for HTTP traffic, we use an application service that may connect on: 843/TCP 4520/TCP 4530/TCP 4531/TCP 4533/TCP 5055/UDP 5056/UDP 5058/UDP 6060/TCP 6061/TCP 6063/TCP 9090/TCP 9091/TCP 9093/TCP 19090/TCP 19091/TCP 19093/TCP.
 
 Hosts can be any of the following: fnx-pht-prod-mstr.westus2.azurecontainer.io, fnx-pht-prod-gs0.westus2.azurecontainer.io, fnx-pht-prod-gs1.westus2.azurecontainer.io.
 
