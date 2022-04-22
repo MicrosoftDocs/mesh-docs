@@ -3,8 +3,8 @@ title: Troubleshooting common Error Messages
 description: Troubleshooting information for the Mesh app.
 ms.prod: mixed-reality
 author: qianw211
-ms.author: v-qianwen
-ms.date: 06/28/2021
+ms.author: qianwen
+ms.date: 4/21/2022
 ms.topic: troubleshooting
 keywords: mixed reality, development, getting started, documentation, guides, features, holograms
 ---
@@ -13,13 +13,21 @@ keywords: mixed reality, development, getting started, documentation, guides, fe
 
 While running the Mesh app, you may run into the following errors.
 
-## Connection and loggin
+## Connection and login
 
 ### WelcomeScreen_Message_NetworkError
 
 *Failed to connect to server.*
 
 This message is shown when you failed to connect since your servers can't be reached.
+
+Mesh network uses the following ports and IP addresses.
+
+For normal port 80 and 443 for HTTP traffic, we use an application service that may connect on: 843/TCP 4520/TCP 4530/TCP 4531/TCP 4533/TCP 5055/UDP 5056/UDP 5058/UDP 6060/TCP 6061/TCP 6063/TCP 9090/TCP 9091/TCP 9093/TCP 19090/TCP 19091/TCP 19093/TCP.
+
+Hosts can be any of the following: fnx-pht-prod-mstr.westus2.azurecontainer.io, fnx-pht-prod-gs0.westus2.azurecontainer.io, fnx-pht-prod-gs1.westus2.azurecontainer.io.
+
+We'll also be using TCP and UDP on ports 30000-31000 and IP Addresses matching the AzureCloud service tag: [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56519).
 
 ### WelcomeScreen_Message_LoginFailed
 
@@ -37,7 +45,7 @@ This message is shown when login fails. `{0}` will be a detailed error message.
 
 *Microphone access is required to use this application. Please go to settings to enable microphone access.*
 
-This message is shown when your app is denied permission to access the microphone.  Microphone acces is required for the Mesh app to function.
+This message is shown when your app is denied permission to access the microphone.  Microphone access is required for the Mesh app to function.
 
 ### WelcomeScreen_Message_SpaceLoadError
 
