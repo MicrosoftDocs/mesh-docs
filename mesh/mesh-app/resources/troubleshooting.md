@@ -13,7 +13,7 @@ keywords: mixed reality, development, getting started, documentation, guides, fe
 
 While running the Mesh app, you may run into the following errors.
 
-## Connection and loggin
+## Connection and login
 
 ### WelcomeScreen_Message_NetworkError
 
@@ -45,7 +45,7 @@ This message is shown when login fails. `{0}` will be a detailed error message.
 
 *Microphone access is required to use this application. Please go to settings to enable microphone access.*
 
-This message is shown when your app is denied permission to access the microphone.  Microphone acces is required for the Mesh app to function.
+This message is shown when your app is denied permission to access the microphone.  Microphone access is required for the Mesh app to function.
 
 ### WelcomeScreen_Message_SpaceLoadError
 
