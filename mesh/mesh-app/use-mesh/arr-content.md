@@ -3,7 +3,7 @@ title: Azure Remote Rendering (ARR) content
 description: You can now load Azure Remote Rendering models to your space
 ms.prod: mixed-reality
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 12/2/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces

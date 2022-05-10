@@ -3,7 +3,7 @@ title: Import content
 description: You can import your own content to the MyContent folder
 ms.prod: mixed-reality
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 11/11/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
