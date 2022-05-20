@@ -3,7 +3,7 @@ title: Use the Mesh app
 description: All aspects of using the Microsoft Mesh app are covered
 ms.prod: mixed-reality
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 12/08/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces

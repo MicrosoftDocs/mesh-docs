@@ -3,7 +3,7 @@ title: Microsoft Mesh app (Preview) frequently asked questions
 description: Microsoft Mesh app (Preview) frequently asked questions.
 ms.prod: mixed-reality
 author: qianw211    
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 8/16/2021
 ms.topic: overview
 keywords: mixed reality, getting started, documentation, guides, features, holograms

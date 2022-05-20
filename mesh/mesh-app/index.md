@@ -3,7 +3,7 @@ title: Get started with Microsoft Mesh app (Preview)
 description: Get started with Microsoft Mesh app (Preview).
 ms.prod: mixed-reality
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 9/1/2021
 ms.topic: article
 keywords: mixed reality, development, getting started, documentation, guides, features, holograms
