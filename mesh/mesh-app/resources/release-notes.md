@@ -3,7 +3,7 @@ title: Release notes for the Mesh app
 description: Release notes for the Microsoft Mesh app
 ms.prod: mixed-reality
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 12/8/2021
 ms.topic: article
 keywords: mixed reality, microsoft mesh, documentation, guides, features, holograms, spaces
