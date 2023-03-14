@@ -21,4 +21,4 @@ keywords: mixed reality, development, getting started, documentation, guides, fe
    > [Learn more about Avatars for Teams (placeholder for now!)](get-started.md)
 
    > [!div class="nextstepaction"]
-   > [Learn more about Mesh](https://www.microsoft.com/mesh)
+   > [Learn more about Microsoft Mesh](https://www.microsoft.com/mesh)

@@ -47,7 +47,5 @@ Foster a deeper sense of connection and community by hosting virtual meet-ups in
 
 ## Next steps
 
-Get started with Avatars for Teams: 
-
    > [!div class="nextstepaction"]
-   > [Get Started with the Microsoft Mesh](get-started.md)
+   > [Get Started with Avatars for Teams](get-started.md)
