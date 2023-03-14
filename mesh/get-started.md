@@ -13,7 +13,7 @@ keywords: mixed reality, development, getting started, documentation, guides, fe
 
 [Microsoft Mesh](overview.md) Avatars is currently available in Public Preview. During the preview, you can turn on Avatars during Teams meetings to choose how you are represented without turning on your camera. 
 
-:::image type="content" source="media/pre-join-screen.png" alt-text="Joining a Teams meeting as an avatar":::
+:::image type="content" source="media/pre-join-screen.png" alt-text="Try Avatars for Teams Public Preview":::
 
 ## Try the Microsoft Mesh Preview
 
