@@ -17,6 +17,6 @@ keywords: mixed reality, development, getting started, documentation, guides, fe
 
 ## Try the Microsoft Mesh Preview
 
-Learn more about Avatars in Teams at https://support.microsoft.com/teams.
+Learn more about Avatars for Teams at https://support.microsoft.com/teams.
 
 Learn more about Mesh for Teams at https://www.microsoft.com/mesh.
