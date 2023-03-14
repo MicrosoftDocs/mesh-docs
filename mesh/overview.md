@@ -57,4 +57,4 @@ Foster a deeper sense of connection and community by hosting virtual meet-ups in
 Get started with the Microsoft Mesh for Teams: 
 
    > [!div class="nextstepaction"]
-   > [Get Started with the Microsoft Mesh Preview](get-started.md)
+   > [Get Started with the Microsoft Mesh for Teams](get-started.md)
