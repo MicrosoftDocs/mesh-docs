@@ -1,6 +1,6 @@
 ---
-title: Microsoft Mesh for Teams overview
-description: Microsoft Mesh for Teams overview.
+title: Microsoft Mesh overview
+description: Microsoft Mesh overview.
 ms.prod: mixed-reality
 author: qianw211
 ms.author: qianwen
@@ -11,7 +11,7 @@ keywords: mixed reality, getting started, documentation, guides, features, holog
 
 # Microsoft Mesh for Teams overview
 
-Welcome to the Microsoft Mesh Preview. Mesh enables people to connect with a holographic presence, share across space, and collaborate from anywhere in the world. By bringing [Mesh-enabled mixed reality experiences](get-started.md) to your organization, you can enhance virtual meetings, conduct virtual design sessions, help others remotely, and host immersive virtual meet-ups to boost productivity.  
+Welcome to the Microsoft Mesh. Mesh enables people to build connections, share spaces, and collaborate from anywhere in the world. By bringing [Mesh-enabled mixed reality experiences](get-started.md) to your organization, you can enhance virtual meetings, conduct virtual design sessions, help others remotely, and host immersive virtual meet-ups to boost productivity.  
 
 ![An image of people meeting in Microsoft Teams as avatars.](media/avatars-hero-image.png)
 
@@ -22,13 +22,6 @@ Avatars for Microsoft Teams enables you to build connections in meetings, withou
 * **Build connections your way** – In addition to joining a meeting with your camera on and off, you can also join with an avatar. Combat video fatigue and include more people in the conversation, even those who are less comfortable with their video on. Avatars for Microsoft Teams gives you that much-needed camera break, while still allowing you to collaborate effectively. 
 
 * **Stay in Teams** - Available within the Microsoft Teams experience. Once your avatar is created, it is just a few clicks away.  
-
-
-&nbsp;  
-
-> [!VIDEO https://channel9.msdn.com/Shows/Mixed-Reality/Microsoft-Mesh-hands-on-demo/player]
-
-&nbsp;  
 
 ## Scenarios
 
@@ -57,4 +50,4 @@ Foster a deeper sense of connection and community by hosting virtual meet-ups in
 Get started with the Microsoft Mesh for Teams: 
 
    > [!div class="nextstepaction"]
-   > [Get Started with the Microsoft Mesh for Teams](get-started.md)
+   > [Get Started with the Microsoft Mesh](get-started.md)

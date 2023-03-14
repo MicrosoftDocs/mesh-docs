@@ -1,6 +1,6 @@
 ---
 title: Get started with Microsoft Mesh
-description: Get started with the Microsoft Mesh.
+description: Get started with Microsoft Mesh.
 ms.prod: mixed-reality
 author: qianw211
 ms.author: qianwen
@@ -17,6 +17,8 @@ keywords: mixed reality, development, getting started, documentation, guides, fe
 
 ## Try the Microsoft Mesh Preview
 
-Learn more about Avatars for Teams at https://support.microsoft.com/teams.
+   > [!div class="nextstepaction"]
+   > [Learn more about Avatars for Teams (placeholder for now!)](get-started.md)
 
-Learn more about Mesh for Teams at https://www.microsoft.com/mesh.
+   > [!div class="nextstepaction"]
+   > [Learn more about Mesh](https://www.microsoft.com/mesh)
