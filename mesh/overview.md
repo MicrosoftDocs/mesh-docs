@@ -54,12 +54,7 @@ Foster a deeper sense of connection and community by hosting virtual meet-ups in
 
 ## Next steps
 
-Get started with the Microsoft Mesh Preview by completing the Register Interest form to stay up to date with Mesh news and announcements and trying the Mesh app on your HoloLens 2.
+Get started with the Microsoft Mesh for Teams: 
 
    > [!div class="nextstepaction"]
    > [Get Started with the Microsoft Mesh Preview](get-started.md)
-
-If you're interested in building a Mesh-enabled mixed reality app, join the Mixed Reality Developer Program to get updates and be notified when Mesh Public Preview begins.
-
-   > [!div class="nextstepaction"]
-   > [Join the Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/en-US/signup/)
