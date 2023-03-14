@@ -1,0 +1,23 @@
+{
+	"redirections": [
+
+
+		{
+			"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "redirect of main MRTK page.",
+			"//c": "vtieto, 9/21/21" 
+		},
+
+		{
+			"source_path": "mesh/index.md",
+			"redirect_url": "/mesh/overview",
+			"redirect_document_id": false
+		},
+
+		
+	]
+}
