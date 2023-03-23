@@ -50,4 +50,4 @@ Foster a deeper sense of connection and community by hosting virtual meet-ups in
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Get Started with Avatars for Teams](get-started.md)
+   > [Get Started with avatars for Teams](get-started.md)
