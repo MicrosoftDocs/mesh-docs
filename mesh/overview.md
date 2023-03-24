@@ -4,14 +4,14 @@ description: Microsoft Mesh overview.
 ms.prod: mixed-reality
 author: qianw211
 ms.author: qianwen
-ms.date: 3/23/2023
+ms.date: 3/24/2023
 ms.topic: overview
 keywords: mixed reality, getting started, documentation, guides, features, holograms
 ---
 
 # Microsoft Mesh overview
 
-Microsoft Mesh enables people to build connections, share spaces, and collaborate from anywhere in the world by bringing [Mesh-enabled mixed reality experiences](get-started.md) to your organization like avatars for Microsoft Teams.
+Microsoft Mesh enables people to build connections, share spaces, and collaborate from anywhere in the world by bringing [Mesh-enabled mixed reality experiences](get-started.md) to your organization like Avatars for Microsoft Teams.
 
 ![An image of people meeting in Microsoft Teams as avatars.](media/avatars-hero-image.png)
 
@@ -23,31 +23,9 @@ Avatars for Microsoft Teams enables you to build connections in meetings without
 
 * **Stay in Teams** - Available within the Microsoft Teams experience. Once your avatar is created, it is just a few clicks away.  
 
-Avatars for Microsoft Teams are now available in public preview. More information about how to get access to avatars and participate in Teams public preview is available here:  [Public preview in Microsoft Teams - Microsoft Teams | Microsoft Learn](/microsoftteams/public-preview-doc-updates).
-
-## Scenarios
-
-### **Virtual collaboration**
-
-Colleagues working time zones apart can collaborate as physically present in the same room. Mesh integrates with Microsoft 365, so connections, calendars, content, and workflows naturally transition to their Mixed Reality world. These shared experiences help deepen understanding, increase employee engagement and improve productivity.
-
-### **Spatially aware design reviews**
-
-Mesh enhances 3D design reviews by enabling users to join anywhere using any device. Whether physically present or holoported, colleagues can see and annotate 3D models in real time. All content persists between design sessions so teams can quickly start where they left off. This shared understanding ignites ideas, sparks creativity, and forms powerful bonds.
-
-### **Help others remotely**
-
-When employees need help, there is nothing like working with an expert in providing guidance and offering new perspectives. Mesh enables remote experts to be present wherever they are needed. They can overlay contextual data and help share insights quickly and effectively, resolving issues faster.
-
-### **Train and learn together**
-
-Training, especially on complex topics such as surgery, equipment maintenance, and traffic control, is hard without being in the same room with the instructor and looking at the same set of objects from multiple perspectives. With Mesh, employees can learn together from anywhere thanks to holoportation, holographic sharing, and visualization. Mesh helps improve the efficacy of virtual training while reducing travel and logistics costs.
-
-### **Host virtual meet-ups**
-
-Foster a deeper sense of connection and community by hosting virtual meet-ups in Mesh-powered mixed reality experiences. Form powerful bonds with others by letting your personality shine through as technology fades away.
+Avatars for Microsoft Teams are now available in public preview. More information about how to get access to Avatars and participate in Teams public preview is available here:  [Public preview in Microsoft Teams - Microsoft Teams](/microsoftteams/public-preview-doc-updates).
 
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Get Started with avatars for Teams](get-started.md)
+   > [Get Started with Avatars for Teams](get-started.md)

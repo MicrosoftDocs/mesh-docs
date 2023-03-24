@@ -1,6 +1,6 @@
 ---
-title: Get started with Microsoft Mesh
-description: Get started with Microsoft Mesh.
+title: Get started with Avatars for Microsoft Mesh
+description: Get started with Avatars for Microsoft Mesh Public Preview
 ms.prod: mixed-reality
 author: qianw211
 ms.author: qianwen
@@ -9,16 +9,16 @@ ms.topic: article
 keywords: mixed reality, development, getting started, documentation, guides, features, holograms
 ---
 
-# Get started with Microsoft Mesh
+# Get started with Avatars for Microsoft Mesh
 
-[Microsoft Mesh](overview.md) avatars is currently available in Public Preview. During the preview, you can turn on avatars during Teams meetings to choose how you are represented without turning on your camera. 
+Avatars for Microsoft Teams is currently available in Public Preview. During the preview, you can turn on avatars during Teams meetings to choose how you are represented without turning on your camera. 
 
-:::image type="content" source="media/pre-join-screen.png" alt-text="Try avatars for Teams Public Preview":::
+:::image type="content" source="media/MicrosoftTeams-image.png" alt-text="Try Avatars for Teams Public Preview":::
 
-## Try the Microsoft Mesh Preview
+## Learn more
 
    > [!div class="nextstepaction"]
-   > [Learn more about avatars for Teams(placeholder for now)](get-started.md)
+   > [Learn more about Avatars for Teams(placeholder for now)](get-started.md)
 
    > [!div class="nextstepaction"]
    > [Learn more about Microsoft Mesh](https://www.microsoft.com/mesh)
