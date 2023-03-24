@@ -23,7 +23,7 @@ Avatars for Microsoft Teams enables you to build connections in meetings without
 
 * **Stay in Teams** - Available within the Microsoft Teams experience. Once your avatar is created, it is just a few clicks away.  
 
-Avatars for Microsoft Teams are now available in public preview. More information about how to get access to Avatars and participate in Teams public preview is available here:  [Public preview in Microsoft Teams - Microsoft Teams](/microsoftteams/public-preview-doc-updates).
+Avatars for Microsoft Teams are now available in public preview. More information about how to get access to Avatars and participate in Teams public preview is available here:  [Public preview in Microsoft Teams](/microsoftteams/public-preview-doc-updates).
 
 ## Next steps
 
