@@ -28,4 +28,4 @@ Avatars for Microsoft Teams are now available in public preview. More informatio
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Get Started with Avatars for Teams](get-started.md)
+   > [Get started with Avatars for Teams](get-started.md)
