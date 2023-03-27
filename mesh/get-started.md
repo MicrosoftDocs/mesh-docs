@@ -18,7 +18,7 @@ Avatars for Microsoft Teams is currently available in Public Preview. During the
 ## Learn more
 
    > [!div class="nextstepaction"]
-   > [Learn more about Avatars for Teams(placeholder for now)](get-started.md)
+   > [Learn more about Avatars for Teams)](http://support.microsoft.com/topic/5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
 
    > [!div class="nextstepaction"]
    > [Learn more about Microsoft Mesh](https://www.microsoft.com/mesh)
