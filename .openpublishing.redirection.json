@@ -1,0 +1,82 @@
+{
+	"redirections": [
+
+
+		{
+			"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "redirect of main MRTK page.",
+			"//c": "vtieto, 9/21/21" 
+		},
+
+		{
+			"source_path": "mesh/index.md",
+			"redirect_url": "/mesh/overview",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mesh/faq.md",
+			"redirect_url": "https://www.microsoft.com/mesh",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mesh/mesh-app/faq.md",
+			"redirect_url": "https://www.microsoft.com/mesh",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mesh/mesh-app/index.md",
+			"redirect_url": "https://www.microsoft.com/mesh",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mesh/mesh-app/resources/release-notes.md",
+			"redirect_url": "https://www.microsoft.com/mesh",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mesh/mesh-app/resources/troubleshooting.md",
+			"redirect_url": "https://www.microsoft.com/mesh",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mesh/mesh-app/use-mesh/arr-content.md",
+			"redirect_url": "https://www.microsoft.com/mesh",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mesh/mesh-app/use-mesh/import-content.md",
+			"redirect_url": "https://www.microsoft.com/mesh",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mesh/mesh-app/use-mesh/languages.md",
+			"redirect_url": "https://www.microsoft.com/mesh",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mesh/mesh-app/use-mesh/use-mesh.md",
+			"redirect_url": "https://www.microsoft.com/mesh",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mesh/provisioning.md",
+			"redirect_url": "https://www.microsoft.com/mesh",
+			"redirect_document_id": false
+		}
+	]
+	
+}

@@ -1,39 +1,27 @@
 ---
-title: Get started with Microsoft Mesh (Preview)
-description: Get started with the Microsoft Mesh (Preview).
+title: Get started with Avatars for Microsoft Teams
+description: Get started with Avatars for Microsoft Teams - Public Preview
 ms.prod: mixed-reality
 author: qianw211
 ms.author: qianwen
-ms.date: 03/22/2022
+ms.date: 03/23/2023
 ms.topic: article
 keywords: mixed reality, development, getting started, documentation, guides, features, holograms
 ---
 
-# Get started with Microsoft Mesh (Preview)
+# Get started with Avatars for Microsoft Teams
 
-[Microsoft Mesh](overview.md) is currently available in limited free preview. During the preview, you can try the Mesh app on your HoloLens. We will provide information on the availability of additional Mesh-enabled apps with time as the service generally becomes available. 
+Avatars for Microsoft Teams is currently available in Public Preview. During the preview, you can turn on avatars during Teams meetings to choose how you are represented without turning on your camera. 
 
-:::image type="content" source="media/mesh-hero-1.png" alt-text="Two people viewing a hologram":::
-
-## Try the Microsoft Mesh Preview
-
-Complete the Microsoft Mesh [Register Interest](https://aka.ms/meshsignup) form to stay updated with Mesh news and announcements. We also welcome you to try Mesh through our preview Mesh-enabled experiences:
-
-App | Overview | Device support
------- | ------ | ------
-[Mesh app](./mesh-app/index.md) | Gather a few peers and download the [Mesh app on HoloLens 2](./mesh-app/index.md) for room-scale collaboration scenarios.  The Mesh app is powered by Mesh. | HoloLens 2
-
-## Stay up to date
-
-Complete the Microsoft Mesh [Register Interest](https://info.microsoft.com/CO-NOGEP-CNTNT-FY21-03Mar-02-Microsoft-Mesh-5890_01Registration-ForminBody.html) form to stay up to date with Mesh announcements and news.
-
-If you're interested in building mixed reality applications, join the Microsoft [Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/signup/) to get the latest news.
+:::image type="content" source="media/MicrosoftTeams-image.png" alt-text="Try Avatars for Teams Public Preview":::
 
 ## Learn more
 
-Visit the [Microsoft Mesh](https://microsoft.com/mesh) website to learn more about Mesh.
-
-## Next steps
+   > [!div class="nextstepaction"]
+   > [Learn more about Avatars for Teams](http://support.microsoft.com/topic/5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
 
    > [!div class="nextstepaction"]
-   > [Try the Mesh app on your HoloLens 2](./mesh-app/index.md)
+   > [Learn more about Microsoft Mesh](https://www.microsoft.com/mesh)
+
+   > [!div class="nextstepaction"]
+   > [Sign up to get the latest on Mesh](https://info.microsoft.com/CO-NOGEP-CNTNT-FY21-03Mar-02-Microsoft-Mesh-5890_01Registration-ForminBody.html)
