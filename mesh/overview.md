@@ -46,7 +46,7 @@ Real time ideation, iteration and co-creation with Mesh will boost innovation, s
 ![An image of people meeting in Microsoft Teams as avatars on a laptop PC.](media/avatars-in-meetings.png)
 
    > [!div class="nextstepaction"]
-   > [Get started Avatars for Teams](http://support.microsoft.com/topic/5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
+   > [Get started Avatars for Teams](https://support.microsoft.com/topic/5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
 
    > [!div class="nextstepaction"]
    > [Register your interest in Mesh TAP](https://aka.ms/JoinMeshTAP)
