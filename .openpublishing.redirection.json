@@ -19,6 +19,12 @@
 		},
 
 		{
+			"source_path": "mesh/get-started.md",
+			"redirect_url": "/mesh/overview",
+			"redirect_document_id": false
+		},
+
+		{
 			"source_path": "mesh/faq.md",
 			"redirect_url": "https://www.microsoft.com/mesh",
 			"redirect_document_id": false
