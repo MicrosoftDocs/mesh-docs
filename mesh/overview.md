@@ -4,28 +4,52 @@ description: Microsoft Mesh overview.
 ms.prod: mixed-reality
 author: qianw211
 ms.author: qianwen
-ms.date: 3/24/2023
+ms.date: 5/23/2023
 ms.topic: overview
 keywords: mixed reality, getting started, documentation, guides, features, holograms
 ---
 
 # Microsoft Mesh overview
 
-Microsoft Mesh enables people to build connections, share spaces, and collaborate from anywhere in the world by bringing [Mesh-enabled mixed reality experiences](get-started.md) to your organization like Avatars for Microsoft Teams.
+Microsoft Mesh is a platform that powers shared immersive experiences. It offers remote and hybrid workers a more natural way to connect with a sense of co-presence. Mesh enables creators to build custom employee experiences that bring people together for new hire onboarding, training, team building, and more. At Microsoft, we are bringing Mesh capabilities into Microsoft Teams with avatars  and immersive experiences so employees can easily connect where work happens.
 
-![An image of people meeting in Microsoft Teams as avatars.](media/avatars-hero-image.png)
+## Experience Microsoft Teams like never before
 
-Avatars for Microsoft Teams enables you to build connections in meetings without turning your video on. Include more people in the conversation — whether they need a break due to video fatigue or just feel more comfortable with their video off. Add a new layer of choice to your meetings. 
+Mesh-powered immersive experiences are now integrated with Microsoft Teams, helping employees form more experiential connections where work happens.
 
-* **Choose how you’re represented** – Select from hundreds of combinations to customize an avatar that represents your physical attributes, wardrobe, accessories, and more. Choose how you express yourself with reactions. Save up to three avatars for different meeting types— such as casual, professional, or day-to-day. 
+Avatars for Microsoft Teams enables you to build connections in meetings without turning your video on. Include more people in the conversation — whether they need a break due to video fatigue or just feel more comfortable with their video off. Avatars add a new layer of choice to your meetings, enhancing your team meetings for more engagement and fun.
 
-* **Build connections your way** – In addition to joining a meeting with your camera on and off, you can also join with an avatar. Combat video fatigue and include more people in the conversation, even those who are less comfortable with their video on. Avatars for Microsoft Teams gives you that much-needed camera break, while still allowing you to collaborate effectively. 
+Take your digital presence a step further with immersive spaces for Teams. Add immersive spaces to a Teams meeting to create social gatherings that provide participants a sense of natural co-presence and togetherness. Connecting with others in immersive spaces mimics many elements of an in-person gathering – like the ability to have a side chat with someone you want to catch up with, or to have multiple conversations in the same space without talking over each other. Immersive spaces for Teams can be accessed through PCs or Quest 2 headsets.
 
-* **Stay in Teams** - Available within the Microsoft Teams experience. Once your avatar is created, it is just a few clicks away.  
+![An image of people meeting in Mesh Immersive spaces for Teams as avatars.](media/mesh-immersive-space-meeting.png)
 
-Avatars for Microsoft Teams are now available in public preview. More information about how to get access to Avatars and participate in Teams public preview is available here:  [Public preview in Microsoft Teams](/microsoftteams/public-preview-doc-updates).
+## Build custom experiences tailored to your organization’s needs
 
-## Next steps
+In addition to Mesh-powered experiences being integrated into Teams, the Mesh platform enables you to build custom experiences for your organization that are accessible through the standalone Mesh application.
+
+Mesh provides a rich set of out-of-box functionalities like synchronizing the experience for users across devices, on PCs and Quest 2 headsets. Core capabilities include avatars to represent participants, spatial audio to enable participants to experience sound as they would in an in-person setting, and the ability to interact with objects and the environment. With event management capabilities, you can orchestrate real-time experiences by facilitating presentations, teleporting users within the environment, and triggering content and animations all in a predetermined time sequence. With these capabilities, you can create employee training, team onboarding, guided tours and more. And, because Mesh is built on Microsoft 365, identity management and enterprise-grade privacy and security are built-in.
+
+With Mesh, there are plenty of ways to add value, content, interactivity, and magic to custom experiences.
+
+* Use Unity to create new 3D environments or port existing ones into your space. 
+* Use cloud scripting to add interactivity by inserting logic, integrating with live backend business data, connecting triggers to actions, infusing AI, and more – all with the full power of C# and .NET Core.
+* Enrich the user experience by adding interactive web content such as videos and webapps to your environment.
+* Use physics tools in Mesh to assign properties to objects in your space using gravity or buoyancy. Create a realistic experience or enable more fantastical interactions for games, challenges, and help participants unleash their endless creativity.
+* Diagnose potential issues and bring more polish to the experience with performance tools in Mesh.
+
+At this time, you’ll need to be a part of the Microsoft Mesh Technical Adoption Program (Mesh TAP) to build custom experiences with Mesh private preview.
+
+![An image of 3D Environment built with libarries and a table for collaboration.](media/3d-meeting-envrionment.jpg)
+
+## Next steps with Mesh
+
+![An image of people meeting in Microsoft Teams as avatars on a laptop PC.](media/avatars-in-meetings.png)
 
    > [!div class="nextstepaction"]
-   > [Get started with Avatars for Teams](get-started.md)
+   > [Get started with Avatars for Teams](https://support.microsoft.com/topic/5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
+
+   > [!div class="nextstepaction"]
+   > [Register your interest in Mesh TAP](https://aka.ms/JoinMeshTAP)
+
+   > [!div class="nextstepaction"]
+   > [Prepare your organization for Immersive spaces (coming soon)](/microsoftteams/public-preview-doc-updates)
