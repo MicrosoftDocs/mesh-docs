@@ -4,7 +4,7 @@ description: Latest release notes
 ms.prod: mixed-reality
 author: qianw211
 ms.author: qianwen
-ms.date: 5/23/2023
+ms.date: 6/21/2023
 ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -25,11 +25,10 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 This release is published June 21, 2023.
 
-* Light mode has been added to the Avatars app UI, and it’s automatically applied depending on the Teams UI theme.
+* Light mode is now supported in the UI of the Avatars app. It will be automatically applied for users who have this theme selected as the default in their Teams settings.
 * Improved application of makeup and pigmentation for all skin tones.
-* Fixed a bug where some characters failed to render in the Avatars app.
+* Fixed a bug where some text characters failed to render in the Avatars app.
 * Fixed an issue where the avatar’s zoom level would reset when an item filter is applied.
-
 
 ## Next steps
 
