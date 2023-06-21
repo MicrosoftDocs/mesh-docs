@@ -27,7 +27,7 @@ This release is published June 21, 2023.
 
 * Light mode is now supported in the UI of the Avatars app. It will be automatically applied for users who have this theme selected as the default in their Teams settings.
 * Improved application of makeup and pigmentation for all skin tones.
-* Fixed a bug where some text characters failed to render in the Avatars app.
+* Fixed an issue where some text characters failed to render in the Avatars app.
 * Fixed an issue where the avatar’s zoom level would reset when an item filter is applied.
 
 ## Next steps
