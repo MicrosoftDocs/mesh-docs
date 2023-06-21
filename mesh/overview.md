@@ -1,7 +1,7 @@
 ---
 title: Microsoft Mesh overview
 description: Microsoft Mesh overview.
-ms.prod: microsoft-mesh
+ms.prod: mixed-reality
 author: qianw211
 ms.author: qianwen
 ms.date: 5/23/2023
