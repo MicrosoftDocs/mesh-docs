@@ -21,11 +21,9 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 |  | Web  | No |
 | Mobile | View only | - |
 
-## June 21, 2023
+## June 21, 2023 - What's new
 
 This release is published June 21, 2023.
-
-### What's new
 
 * Light mode has been added to the Avatars app UI, and it’s automatically applied depending on the Teams UI theme.
 * Improved application of makeup and pigmentation for all skin tones.
