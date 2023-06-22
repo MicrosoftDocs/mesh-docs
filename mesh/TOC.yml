@@ -1,2 +1,4 @@
 - name: Welcome to Mesh
   href: overview.md
+- name: Release notes
+  href: avatars-release-notes.md
