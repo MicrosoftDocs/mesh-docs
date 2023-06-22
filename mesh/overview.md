@@ -6,7 +6,7 @@ author: qianw211
 ms.author: qianwen
 ms.date: 5/23/2023
 ms.topic: overview
-keywords: mixed reality, getting started, documentation, guides, features, holograms
+keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
 # Microsoft Mesh overview
