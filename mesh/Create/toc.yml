@@ -1,4 +1,8 @@
 - name: Creating for Mesh
   href: Content/development-overview.md
 - name: Setup you environment
-  href: Building your environment/settings-up-your-scene.md
+  href: Building your environment/toc.yml
+- name: Tutorials
+  href: Tutorials/toc.yml
+- name: Scripting your scene logic
+  href: Scripting your scene logic/toc.yml
