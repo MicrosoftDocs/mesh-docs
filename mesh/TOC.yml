@@ -4,7 +4,7 @@
   href: Setup/toc.yml
 - name: Use Mesh
   href: Use/toc.yml
-- name: Create for Mesh
+- name: Create
   href: Create/toc.yml
 - name: Release notes
   href: avatars-release-notes.md
