@@ -1,5 +1,5 @@
 ---
-title: How to use Mesh
+title: Mesh user guide
 description: Guide to using Mesh as a user.
 author: typride
 ms.author: tmilligan
@@ -8,6 +8,6 @@ ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-# Using Mesh overview
+# Mesh user guide
 
 Test Test
