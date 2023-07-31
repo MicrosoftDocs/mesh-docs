@@ -2,5 +2,5 @@
 items:
   - name: Mesh 101
     href: mesh-101.md
-  - name: toybox.md
+  - name: Toybox Mesh physics sample
     href: toybox.md
