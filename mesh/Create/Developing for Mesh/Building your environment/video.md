@@ -1,6 +1,6 @@
 ---
 title: Video
-description: How to setup Video in 
+description: How to setup video in 
 author: typride
 ms.author: tmilligan
 ms.date: 7/27/2023
