@@ -4,3 +4,17 @@
   href: animations-and-timelines.md
 - name: Graphics Tools
   href: graphics-tools.md
+- name: Fonts
+  href: fonts.md
+- name: Video
+  href: video.md
+- name: Web Views
+  href: webviews.md
+- name: Equippable and manipulable objects
+  href: equippable-manipulatable-objects.md
+- name: Player and object triggers
+  href: player-object-triggers.md
+- name: Anchors and tethers
+  href: anchors-tethers.md
+- name: Buttons and dialogs
+  href: buttons-dialogs.md

@@ -1,11 +1,11 @@
 ---
-title: Animations and Timelines
-description: How to use Animations and Timelines.
+title: Graphics tools
+description: How to use graphics tools in Unity to create for Mesh.
 author: typride
 ms.author: tmilligan
 ms.date: 7/27/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
+keywords: Microsoft Mesh, M365, Immersive spaces, Unity, graphics tools, documentation, features
 ---
 
-# How to use Animations and Timelines
+# Graphics tools for Mesh
