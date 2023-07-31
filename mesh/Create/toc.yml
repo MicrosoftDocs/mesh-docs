@@ -10,6 +10,10 @@
   href: Building your environment/toc.yml
 - name: Scripting your scene logic
   href: Scripting your scene logic/toc.yml
-- name: Debugging and optimizing performance
-  href: Debugging-optimizing-performance/toc.yml
+- name: Debugging & optimizing performance
+  href: Debugging & optimizing performance/toc.yml
+- name: API reference
+  href: API reference/toc.yml
+- name: Additional resources
+  href: Additional resources/toc.yml
 
