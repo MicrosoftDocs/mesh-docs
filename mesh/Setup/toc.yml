@@ -1,5 +1,5 @@
-- name: Preparing your organization for Mesh
-  href: Content/reparing-your-organization.md
-- name: Set up M365 for Mesh
-  href: Content/setup-M365-Mesh.md
-  
+items:
+  - name: Preparing your organization for Mesh
+    href: Content/preparing-your-organization.md
+  - name: Set up M365 for Mesh
+    href: Content/setup-M365-Mesh.md

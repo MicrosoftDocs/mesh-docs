@@ -1,0 +1,5 @@
+items:
+  - name: Playmode
+    href: playmode.md
+  - name: Content Performance Analyzer (CPA) tool
+    href: content-performance-analyzer.md

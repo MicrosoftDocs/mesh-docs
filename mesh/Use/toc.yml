@@ -1,4 +1,5 @@
-- name: Welcome to Mesh
-  href: Content/usage-overview.md
-- name: How to use Mesh
-  href: Content/mesh-usage-guide.md
+items:
+  - name: Welcome to Mesh
+    href: Content/usage-overview.md
+  - name: How to use Mesh
+    href: Content/mesh-usage-guide.md

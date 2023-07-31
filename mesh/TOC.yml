@@ -1,10 +1,11 @@
+items:
 - name: Welcome to Mesh
   href: Overview.md
-- name: Setup
+- name: Setup and Manage Mesh
   href: Setup/toc.yml
-- name: Use Mesh
+- name: Using Mesh
   href: Use/toc.yml
-- name: Create
+- name: Creating for Mesh
   href: Create/toc.yml
-- name: Release notes
-  href: avatars-release-notes.md
+- name: Additional resources
+  href: Additional resources/toc.yml

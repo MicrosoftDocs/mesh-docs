@@ -1,4 +1,7 @@
-- name: Release notes
-  href: release-notes.md
-- name: Terms
-  href: terms.md
+items:
+  - name: Release notes for Mesh
+    href: mesh-release-notes.md
+  - name: Release notes for avatars
+    href: avatars-release-notes.md
+  - name: Terms
+    href: terms.md
