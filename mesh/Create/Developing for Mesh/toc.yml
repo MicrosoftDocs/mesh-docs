@@ -1,9 +1,7 @@
 items:
-  - name: Building your environment
-    href: Building your environment/toc.yml
-  - name: Designing for Mesh
-    href: Designing for Mesh/toc.yml
-  - name: Tutorials
+  - name: Mesh Toolkit overview
+    href: mesh-toolkit-overview.md
+  - name: Samples and tutorials
     href: Tutorials/toc.yml
   - name: Building your environment
     href: Building your environment/toc.yml

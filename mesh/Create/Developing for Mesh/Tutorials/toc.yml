@@ -1,2 +1,6 @@
-- name: Mesh 101
-  href: mesh-101.md
+
+items:
+  - name: Mesh 101
+    href: mesh-101.md
+  - name: toybox.md
+    href: toybox.md

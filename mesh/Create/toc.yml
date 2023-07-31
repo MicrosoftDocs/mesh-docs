@@ -1,12 +1,9 @@
 items:
-  - name: Creating for Mesh
+  - name: Overview
     href: development-overview.md
-  - name: Tutorials
-    href: Tutorials/toc.yml
-  - name: Creating for Mesh
-    href: Creating for Mesh/toc.yml
-  - name: Scripting your scene logic
-    href: Scripting your scene logic/toc.yml
-  - name: Debugging & optimizing performance
-    href: Debugging & optimizing performance/toc.yml
-
+  - name: Getting started
+    href: Getting started/toc.yml
+  - name: Designing
+    href: Designing for Mesh/toc.yml
+  - name: Developing
+    href: Developing for Mesh/toc.yml
