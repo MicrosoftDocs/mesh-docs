@@ -1,6 +1,6 @@
 
 items:
-  - name: Mesh 101
+  - name: Mesh 101 Tutorial
     href: mesh-101.md
   - name: Toybox Mesh physics sample
     href: toybox.md

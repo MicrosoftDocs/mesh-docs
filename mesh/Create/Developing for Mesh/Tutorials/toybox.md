@@ -1,5 +1,5 @@
 ---
-title: Toybox for Mesh
+title: Toybox Sample for Mesh
 description: Toybox sample overview and usage instructions.
 author: typride
 ms.author: tmilligan
