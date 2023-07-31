@@ -1,5 +1,5 @@
 items: 
-  - name: Design guidelines for Mesh
+  - name: Design guidelines
     href: design-guidelines.md
-  - name: Performance guidelines for Mesh
+  - name: Performance guidelines
     href: performance-guidelines.md
