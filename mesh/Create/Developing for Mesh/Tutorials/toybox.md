@@ -7,5 +7,4 @@ ms.date: 7/27/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, M365, toybox, sample, getting started, documentation, features
 ---
-
 # Toybox sample for Mesh
