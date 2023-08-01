@@ -9,8 +9,8 @@ items:
   href: fonts.md
 - name: Video
   href: video.md
-- name: Web Views
-  href: webviews.md
+- name: Web Content
+  href: webcontent.md
 - name: Equippable and manipulable objects
   href: equippable-manipulatable-objects.md
 - name: Player and object triggers
