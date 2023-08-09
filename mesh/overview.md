@@ -31,7 +31,7 @@ Mesh provides a rich set of out-of-box functionalities like synchronizing the ex
 
 With Mesh, there are plenty of ways to add value, content, interactivity, and magic to custom experiences.
 
-* Use Unity to create new 3D environments or port existing ones into your space. 
+* Use Unity to create new 3D environments or port existing ones into your space.
 * Use cloud scripting to add interactivity by inserting logic, integrating with live backend business data, connecting triggers to actions, infusing AI, and more – all with the full power of C# and .NET Core.
 * Enrich the user experience by adding interactive web content such as videos and webapps to your environment.
 * Use physics tools in Mesh to assign properties to objects in your space using gravity or buoyancy. Create a realistic experience or enable more fantastical interactions for games, challenges, and help participants unleash their endless creativity.
