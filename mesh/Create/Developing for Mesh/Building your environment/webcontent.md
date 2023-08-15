@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, documentation, features, Unity, WebView
 
 # Overview WebView
 
-![](../../../media/webview-developer-guide/image002.png)![A picture containing screenshot,
+![Image of a Mesh environment with WebViews on display.](../../../media/webview-developer-guide/image002.png)![A picture containing screenshot,
 interior design, furniture, table Description automatically
 generated](../../../media/webview-developer-guide/image003.png)
 
@@ -54,7 +54,7 @@ WebView depends on the *Unity.InputSystem* and
 *Unity.XR.Interaction.Toolkit* Unity packages, located in the Mesh
 Authoring package.
 
-# Features
+## Features
 
 WebView loads an interactive page via a provided URL. The URL given to
 it in the Environment will be the same one loaded in Mesh. WebView
@@ -86,7 +86,7 @@ offers the following features:
     a distance, low image quality for embedded images or videos, or text
     with fonts that are easily read from afar.
 
-# Default Settings
+## Default Settings
 
 By default, the WebView loads the preset URL. The URL should be replaced
 with a desired one on each WebView in use. The image quality parameter
@@ -95,14 +95,14 @@ brightness).
 
 ![Unity usage of WebView](../../../media/webview-developer-guide/image004.png)
 
-# General Tips
+## General Tips
 
 - While WebViews can be placed on Game Objects other than a Quad by
     adding *WebView.cs* as a script component directly to your 3D object
     of choice, visual texture stretching, inversion, and/or rotation may
     be seen.
 
-> **Performance**
+### Performance
 
 - As a WebView is a loaded Web page, it is important to consider
     performance implications:
@@ -131,21 +131,19 @@ brightness).
     is cyclic and can be done inside the page. This can be done with a
     navigation sidebar, or links to a hub page, for example.
 
-# Limitations/Issues
+## Limitations/Issues
 
-**Known issues**
+### Known issues
 
-- When working with WebViews in the Unity editor, the editor needs to
-    > be restarted when updating the WebView or Mesh Toolkit packages
-    > through the Unity package manager.
+- When working with WebViews in the Unity editor, the editor needs to be restarted when updating the WebView or Mesh Toolkit packages through the Unity package manager.
 
-**General limitations**
+### General limitations
 
 - WebViews are currently supported in the Mesh App on PC Standalone, Quest 2, and for previewing in the Unity editor on Windows only.
 
 - We are still working on automatic scaling and scale adjustments for content with different resolution requirements.
 
-**Security restrictions**
+### Security restrictions
 
 - WebViews are locked to the URLs they navigate to, preventing malicious redirects. All unintended hyperlink navigations to outside domains are blocked.
 
@@ -154,11 +152,11 @@ brightness).
 
 - Device access to webcam, microphone, and geolocation are blocked.
 
-**Windows / PC Standalone**
+### Windows / PC Standalone
 
 - When interacting with a WebView, Mesh may capture keyboard input causing unintended interactions with the Mesh app.
 
-# Start with a sample
+## Start with a sample
 
 ![Webview example in the Hello World dartroom sample. Image of a cat.](../../../media/webview-developer-guide/image005.png)
 
@@ -168,13 +166,13 @@ Environments that you can download and use in Unity?
 Check out the **Room Blue** scene in the **HelloWorld** sample! There
 you can see WebViews like this one and much more.
 
-# Add a WebView to your Mesh Environment
+## Add a WebView to your Mesh Environment
 
 Adding a WebView to your Environment should be a relatively
 straightforward process so long as you have a Unity project set up to
 create Mesh Environments or artifacts.
 
-## Prerequisites
+### Prerequisites
 
 - Understand project setup in Unity covered in the E2E Environment Creation Guide.
 
@@ -184,15 +182,15 @@ create Mesh Environments or artifacts.
 
 - There must be an existing World that contains a Space in the Azure Portal that you can upload your work to. To learn more about setting this up, see our document titled "Custom Worlds -- IT Admin User Guide.
 
-## Import the Mesh Toolkit Packages
+### Import the Mesh Toolkit Packages
 
 If you haven't already imported the Mesh Toolkit, import it:
 
 **com.microsoft.mesh.toolkit-X.X.X.tgz**
 
-## Add a WebView prefab to your project
+### Add a WebView prefab to your project
 
-### Mesh Toolkit Context Menu (Recommended)
+#### Mesh Toolkit Context Menu (Recommended)
 
 Right-click the scene hierarchy, navigate to "Mesh Toolkit," and then
 click "WebView." You can also click the "+" button at the top left of
@@ -238,8 +236,7 @@ height="2.675824584426947in"}
 You can navigate to new URLs on your WebView while running in Playmode
 by changing the "Current URL" property and clicking "Navigate":
 
-![](media/image12.png){width="4.416666666666667in"
-height="1.1150984251968503in"}
+![](../../../media/webview-developer-guide/image012.png)
 
 ## Enable WebView interaction for Unity Play Mode
 
@@ -249,7 +246,7 @@ To enable interaction in the WebView, you have to set up a few things.
     drag it into your scene.
 
     ![Add playmode to your Unity scene](../../../media/webview-developer-guide/image013.png)
-    
+
     Ensure you see it in your scene, as shown here:
 
     ![Graphical user interface, text, application Description automatically
@@ -257,8 +254,7 @@ To enable interaction in the WebView, you have to set up a few things.
 
 2. Create a new **Plane** GameObject. ![Graphical user interface,
     application Description automatically
-    generated](media/image15.png){width="4.056788057742782in"
-    height="3.384557086614173in"}
+    generated](../../../media/webview-developer-guide/image015.png)
 
     This will be your floor. Ensure the Game Object is positioned at the
     origin (0,0,0).
