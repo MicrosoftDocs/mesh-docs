@@ -256,11 +256,14 @@ your personas in Mesh experiences.
 To create a new avatar, select **+** in the bottom right corner of your
 Mesh App. 
 
-![](../../media/end-user-guide/image016.png)
+![](../../media/end-user-guide/image028.png)
+
+
 You'll be asked to select a base avatar to start creating.
 
 ![A screenshot of a video game Description automatically
 generated](../../media/end-user-guide/image017.png)
+
 Select your desired avatar and click **Use Avatar**, and you're ready to
 start customizing your avatar.
 
@@ -271,11 +274,13 @@ select **Customize** to start customizing your avatar.
 
 ![A screenshot of a video game Description automatically
 generated](../../media/end-user-guide/image018.png)
+
 There's a horizontal toolbar with five options: **Body, Face, Hair,
 Appearance,** and **Wardrobe.**
 
 ![A screenshot of a video game Description automatically
 generated](../../media/end-user-guide/image019.png)
+
 The initial screen shows you the **Body** section. Note there are three
 buttons in the far left-side column: **Body Shape**, **Prosthetic**, and
 **Skin tone**. For **Body Shape, Face Shape,** and other subsections, we
@@ -289,18 +294,18 @@ Select any shape option to see how your avatar would look.  
 
 **Note:** Selecting the **slider** button will customize your current
 body shape. You can begin by selecting a body shape preset and click the
-**slider** button to fine tune it. 
+**slider** button to fine tune it.
 
-#### To fine tune avatar Body Shape:
+#### To fine tune avatar Body Shape
 
-1. Click the **sliders** button.\
-    \
+1. Click the **sliders** button.
+
     ![A screenshot of a video game Description automatically
     generated](../../media/end-user-guide/image020.png)
 2. Drag the **sliders** for the various body areas to adjust their
     proportions. To see more options, use the arrows below the
-    sliders. \
-    \
+    sliders.
+
     ![A screenshot of a video game Description automatically
     generated](../../media/end-user-guide/image021.png)
 3. Do one of the following:
