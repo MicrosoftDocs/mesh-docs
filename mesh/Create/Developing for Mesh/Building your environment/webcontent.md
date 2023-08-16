@@ -329,8 +329,7 @@ your TouchSensor's click event handler to navigate the WebView to a
 different URL. By adding a Mesh App script to WebView, your users now
 can update the WebView contents interactively.
 
-![Showcase GIF of WebViews in Mesh
-Scripting](../../../media/webview-developer-guide/image022.gif)
+![Showcase GIF of WebViews in Mesh Scripting](../../../media/webview-developer-guide/image022.gif)
 
 Refer to the [Visual scripting overview](../Scripting%20your%20scene%20logic/visual-scripting-overview.md) for further guidance on the WebView node in Mesh Apps.
 
