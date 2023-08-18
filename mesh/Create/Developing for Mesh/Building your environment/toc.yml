@@ -13,6 +13,8 @@ items:
   href: webcontent.md
 - name: Equippable and manipulable objects
   href: eqiuppable-manipulatable-objects.md
+- name: Physics interactions
+  href: physics-interactions.md
 - name: Player and object triggers
   href: player-object-triggers.md
 - name: Anchors and tethers
