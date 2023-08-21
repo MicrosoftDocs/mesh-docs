@@ -384,9 +384,7 @@ by adjusting the following: **Lip Color**, **Blush**, **Eyeshadow**,
 
 #### Change your wardrobe
 
-In the **Wardrobe** section, you're provided a wide selection of
-**Underlayer**, **Outerwear**, **Headwear**, and **Eyewear** to dress
-your avatar.
+In the **Wardrobe** section, you're provided a wide selection of **Underlayer**, **Outerwear**, **Headwear**, and **Eyewear** to dress your avatar.
 
 ![A screenshot of a video game Description automatically generated](../../media/end-user-guide/image029.png)
 

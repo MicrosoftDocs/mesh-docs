@@ -1,3 +1,13 @@
+---
+title: Mesh physics guide
+description: Guide to using Mesh physics to create environments for Mesh.
+author: typride
+ms.author: tmilligan
+ms.date: 7/27/2023
+ms.topic: Guide
+keywords: Microsoft Mesh, mesh physics, Immersive spaces, Avatars, getting started, documentation, features
+---
+
 # Overview
 
 In a Mesh experience, physics simulation is key to enabling engaging dynamic content. In order to provide Mesh participants with high quality shared physics experiences and offer developers a productive workflow in creating custom content, we've created the *Mesh Physics* system (usually referred to as "Mesh Physics" in this document). Mesh Physics is based on local authoritative simulation, which results in a very simple architecture. There's no need for server-side logic and special logic on the clients. Most importantly, this approach results in a very responsive and low-latency experience for each player interacting with their environment, even when connected to a high-latency network.
@@ -101,11 +111,16 @@ As you explore our other sample projects, you'll find various instances of Mesh 
 ![Screen shot of the Mass and Buoyancy exhibit which uses the Buoyancy Field and Buoyancy Field Waves components.](../../../media/physics-interactions/008-buoyancy-field-waves.png)
 
 ## Prerequisites for Mesh Physics
-- Advanced Unity skills.
-- A username and password for the Azure Portal so you can upload your work.  
-- Your account must be added as a Contributor to the Mesh world you’re trying to publish to. If you’re unsure about this, check with your IT admin.  
-- There must be an existing Mesh World in the Azure Portal that you can upload your work to. To learn more about setting this up, see our document titled *Mesh IT Admin Guide*.  
-- There must be an existing Unity project that contains the Mesh Uploader (in Mesh terms, this project is used to create an *Environment*), or you must create one. To learn more about creating one, see our document titled *Get Started with Mesh Environments*.
+
+* Advanced Unity skills.
+
+* A username and password for the Azure Portal so you can upload your work.
+
+* Your account must be added as a Contributor to the Mesh world you’re trying to publish to. If you’re unsure about this, check with your IT admin.
+
+* There must be an existing Mesh World in the Azure Portal that you can upload your work to. To learn more about setting this up, see our document titled *Mesh IT Admin Guide*.  
+
+* There must be an existing Unity project that contains the Mesh Uploader (in Mesh terms, this project is used to create an *Environment*), or you must create one. To learn more about creating one, see our document titled *Get Started with Mesh Environments*.
 
 ## Terminology
 

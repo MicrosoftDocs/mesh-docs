@@ -413,8 +413,7 @@ Spring 2022, when the Importer lists the On Demand Remap slot as 'None
 **Even one material set to 'None (Material)' has a performance cost.**
 
 ![](../../media/3d-design-performance-guide/image032.png){width="3.0in" height="5.213825459317586in"}
-![](../../media/3d-design-performance-guide/image033.png){width="2.9798906386701662in"
-height="5.246451224846894in"}
+
 
 **Ensure that all slots have corresponding Unity materials loaded in, as
 shown below.**
