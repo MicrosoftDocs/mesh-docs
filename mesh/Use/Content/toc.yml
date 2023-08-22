@@ -1,8 +1,0 @@
-items:
-  - name: Overview
-    href: usage-overview.md
-  - name: User guide
-    href: mesh-user-guide.md
-  - name: Events guide
-    href: mesh-events-guide.md
-
