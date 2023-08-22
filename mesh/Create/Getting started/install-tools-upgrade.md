@@ -174,21 +174,20 @@ notifications with upgrading and replacing older packages.
     downloaded earlier, and then add the *toolkit* file outlined in red
     in the image below.
 
-![A screen shot of a computer Description automatically generated with
-low confidence](../../media/get-started-developing-mesh/image010.jpg)
+![A screen shot of a computer Description automatically generated with low confidence](../../media/get-started-developing-mesh/image010.jpg)
 
 3. If you get a Warning, as shown below, select **Yes** to allow the
     packages to properly configure your project.
 
-![Graphical user interface, text Description automatically
-generated](../../media/get-started-developing-mesh/image011.jpg)
-You may see other dialogues, such as this one:
->
-![](../../media/get-started-developing-mesh/image012.jpg)
->
+    ![Graphical user interface, text Description automatically generated](../../media/get-started-developing-mesh/image011.jpg)
+
+    You may see other dialogues, such as this one:
+
+    ![](../../media/get-started-developing-mesh/image012.jpg)
+
 If you see a dialog box named **Project Settings for Mesh** with a
 **Configure Settings** button, select that button.
->
+
 Unity may restart during this process.
 
 4. Once you've installed the package, verify that you see it in the
