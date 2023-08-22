@@ -1,7 +1,7 @@
 items:
   - name: Overview
-    href: Content/usage-overview.md
-  - name: User guide
+    href: usage-overview.md
+  - name: Mesh user guide
     href: Content/mesh-user-guide.md
-  - name: Events guide
+  - name: Mesh events guide
     href: Content/mesh-events-guide.md
