@@ -3,3 +3,5 @@ items:
     href: visual-scripting-overview.md
   - name: Cloud scripting overview
     href: cloud-scripting-overview.md
+  - name: Cloud scripting infrastructure
+    href: cloud-scripting-infrastructure.md
