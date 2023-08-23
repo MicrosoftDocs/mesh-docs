@@ -1,0 +1,9 @@
+items: 
+  - name: Choose your journey
+    href: choose-your-journey.md
+  - name: Install tools and upgrade
+    href: install-tools-upgrade.md
+  - name: Start with a sample
+    href: start-with-sample.md
+  - name: Create new Mesh project
+    href: create-new-mesh-project.md

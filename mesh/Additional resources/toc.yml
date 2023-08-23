@@ -1,0 +1,9 @@
+items:
+  - name: Release notes for Mesh
+    href: mesh-release-notes.md
+  - name: Release notes for avatars
+    href: avatars-release-notes.md
+  - name: Terms and conditions
+    href: terms-conditions.md
+  - name: Key terms
+    href: key-terms-in-mesh.md

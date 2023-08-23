@@ -1,4 +1,14 @@
+items:
 - name: Welcome to Mesh
-  href: overview.md
-- name: Release notes
-  href: avatars-release-notes.md
+  href: Overview.md
+- name: Setup and Manage Mesh
+  href: Setup/toc.yml
+- name: Using Mesh
+  href: Use/toc.yml
+- name: Creating for Mesh
+  href: Create/toc.yml
+- name: Mesh for Teams
+  href: Mesh for Teams/toc.yml
+- name: Additional resources
+  href: Additional resources/toc.yml
+

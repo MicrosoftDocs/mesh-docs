@@ -21,7 +21,7 @@ Avatars for Microsoft Teams enables you to build connections in meetings without
 
 Take your digital presence a step further with immersive spaces for Teams. Add immersive spaces to a Teams meeting to create social gatherings that provide participants a sense of natural co-presence and togetherness. Connecting with others in immersive spaces mimics many elements of an in-person gathering – like the ability to have a side chat with someone you want to catch up with, or to have multiple conversations in the same space without talking over each other. Immersive spaces for Teams can be accessed through PCs or Quest 2 headsets.
 
-![An image of people meeting in Mesh Immersive spaces for Teams as avatars.](media/mesh-immersive-space-meeting.png)
+![An image of people meeting in Mesh Immersive spaces for Teams as avatars.](media/welcome-to-mesh/mesh-immersive-space-meeting.png)
 
 ## Build custom experiences tailored to your organization’s needs
 
@@ -31,7 +31,7 @@ Mesh provides a rich set of out-of-box functionalities like synchronizing the ex
 
 With Mesh, there are plenty of ways to add value, content, interactivity, and magic to custom experiences.
 
-* Use Unity to create new 3D environments or port existing ones into your space. 
+* Use Unity to create new 3D environments or port existing ones into your space.
 * Use cloud scripting to add interactivity by inserting logic, integrating with live backend business data, connecting triggers to actions, infusing AI, and more – all with the full power of C# and .NET Core.
 * Enrich the user experience by adding interactive web content such as videos and webapps to your environment.
 * Use physics tools in Mesh to assign properties to objects in your space using gravity or buoyancy. Create a realistic experience or enable more fantastical interactions for games, challenges, and help participants unleash their endless creativity.
@@ -39,11 +39,11 @@ With Mesh, there are plenty of ways to add value, content, interactivity, and ma
 
 At this time, you’ll need to be a part of the Microsoft Mesh Technical Adoption Program (Mesh TAP) to build custom experiences with Mesh private preview.
 
-![An image of 3D Environment built with libarries and a table for collaboration.](media/3d-meeting-envrionment.jpg)
+![An image of 3D Environment built with libarries and a table for collaboration.](media/welcome-to-mesh/3d-meeting-envrionment.jpg)
 
 ## Next steps with Mesh
 
-![An image of people meeting in Microsoft Teams as avatars on a laptop PC.](media/avatars-in-meetings.png)
+![An image of people meeting in Microsoft Teams as avatars on a laptop PC.](media/welcome-to-mesh/avatars-in-meetings.png)
 
    > [!div class="nextstepaction"]
    > [Get started with Avatars for Teams](https://support.microsoft.com/topic/5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
