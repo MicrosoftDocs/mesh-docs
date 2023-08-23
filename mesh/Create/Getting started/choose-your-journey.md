@@ -31,7 +31,6 @@ There are several ways to create Mesh Environments:
 
 - Start a new project from scratch.
 
-
 ## Start with a Mesh sample
 
 It's easiest to start with a sample file to ensure all packages are
@@ -95,8 +94,7 @@ you can add features including:
 
 - [Cloud scripting](../Developing%20for%20Mesh/Scripting%20your%20scene%20logic/cloud-scripting-overview.md), [visual scripting](../Developing%20for%20Mesh/Scripting%20your%20scene%20logic/visual-scripting-overview.md), and [Mesh Physics](../Developing%20for%20Mesh/Building%20your%20environment/physics-interactions.md) to add interactivity
 
-- And more!t
-
+- And more!
 
 ## Unity version 2021.3.21f1+
 

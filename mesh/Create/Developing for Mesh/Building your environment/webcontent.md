@@ -1,11 +1,11 @@
 ---
-title: WebView Guide
-description: Overview and usage guide using WebViews in Unity to display rich content in Mesh environments.
+title: Web content guide
+description: Overview and usage guide using Web content in Unity to display rich content in Mesh environments.
 author: typride
 ms.author: tmilligan
 ms.date: 8/14/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, documentation, features, Unity, WebView
+keywords: Microsoft Mesh, documentation, features, Unity, Web content
 ---
 
 # Overview WebView
