@@ -1,0 +1,77 @@
+---
+title: Join an event
+description: Joining an event in Mesh
+author: qianw211    
+ms.author: qianwen
+ms.date: 8/24/2023
+ms.topic: Guide
+keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
+---
+
+# Join an Event
+
+## From the Mesh App on PC
+
+In the Mesh App on PC or Quest, you can attend social gatherings,
+conferences, and all-hands events all within a wide selection of
+Environments. In these events, you can view content, interact with
+physical objects, and meet or network with your colleagues while
+representing yourself with your personalized avatars.
+
+Follow the steps below to see a list of events and join an event.
+
+1. Open the Mesh App and view the Mesh Dashboard.\
+    ![A screenshot of the Mesh dashboard](media/end-user-guide/image129.png)
+
+2. In the horizontal menu bar at the top, select **Events**. This shows
+    you a list of events you can join.
+
+    Hover the cursor over the Event, and then click the **Join now** button.
+
+    ![A screenshot of a computer Description automatically > generated](media/end-user-guide/image130.png)
+
+3. A **Pre-join** dialog box will appear. You can now select your audio
+    device from the **Pre-join** dialog.
+
+    ![A screenshot of the Pre-join dialog to an event](media/end-user-guide/image131.png)
+
+    and the **Devices** dialog box appears:
+
+    ![A screenshot of the Devices dialog](media/end-user-guide/image132.png)
+
+    >[!Note] 
+    >In the Mesh app on PC, the Windows default speaker will always be used by Mesh. You can change the speaker settings in the Windows **Settings** -\> **System** -\> **Sound settings** dialog box.
+
+4. For upcoming events, you can view event details by clicking the
+    **View Info** button.\
+    \
+    ![](media/end-user-guide/image133.png)
+
+## Using the Teams Hub on Quest 2
+
+If you're running the Mesh app on Quest, you can use the **Dashboard**
+shown below to find and join your Teams events.
+
+1. Open the Mesh app on Quest 2.
+
+2. Log in with your corporate email account.
+
+3. Select the **Teams hub** in the left-side navigation on the Mesh dashboard.
+
+    ![A screenshot of the Teams hub from the Mesh dashboard](media/end-user-guide/image134.png)
+
+4. Select **Join event** or **Start event** on any of the events.
+
+Go through the Mesh pre-join screen to setup/select/customize your avatar and select **Join** when ready.
+
+## Enjoy your event
+
+You can now view content, communicate with other users, listen to guests speaking, emote, and take selfies.
+
+You can interact with any games, puzzles, or interactive elements in the event environment.
+
+![](media/end-user-guide/image135.png)
+
+## Next steps
+
+See the [Mesh UI & user controls](#_Mesh_UI_&) section to learn about what you can do while in an event.
