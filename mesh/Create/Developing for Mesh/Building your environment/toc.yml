@@ -1,6 +1,6 @@
 items: 
-- name: Setting up your scene
-  href: setting-up-your-scene.md
+- name: Setting up your project
+  href: setting-up-your-project.md
 - name: Animations and timelines
   href: animations-and-timelines.md
 - name: Graphics tools
