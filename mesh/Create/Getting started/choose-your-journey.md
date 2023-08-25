@@ -24,9 +24,7 @@ If you're ready to starting building Mesh experiences, you have several approach
 
 ## Start with a Mesh sample
 
-It's easiest to start with a sample file to ensure all packages are configured in your Unity project. We recommend this option if you haven't already created a Mesh project in Unity. 
-
-There are several samples to choose from:
+It's easiest to start with a sample file to ensure all packages are configured in your Unity project. We recommend this option if you haven't already created a Mesh project in Unity. The available samples display an array of Mesh features.:
 
 - **Hello World.** A simple yet elegant small room with various
 paintings (powered by WebView) and objects that will set your Unity
@@ -41,31 +39,12 @@ interactive Mesh Physics features.
 - **Science Building.** An expansive museum exhibiting the power of
 Mesh Physics to create dynamic, engaging experiences.
 
-## Open and build upon an existing sample
+**To start with an existing sample**: 
 
-The easiest way to set up your Unity project for Mesh development is to start with a sample. There are various samples that display an array of Mesh features.
+1. If you haven't done so already, [download and unzip the Mesh toolkit ](download-the-mesh-toolkit.md).
 
-1. If you haven't done so already, [download and unzip the Mesh toolkit as explained in the previous section.](#_Download_the_Mesh)
-
-    To ensure the manifest files in each sample properly configure their
-    project settings and access the packages, you'll want to maintain this
-    file structure:
-    
-    Mesh Toolkit 23.x
-    
-    - Packages
-    
-    - Samples
-    
-      - DartRoom
-    
-      - Mesh101-Unity
-    
-      - HelloWorld-Unity
-    
-      - ScienceBuilding
-    
-      - ScriptedWorlds
+    > [!IMPORTANT]
+    > Make sure to follow the instructions in the Mesh Toolkit download article for maintaining the proper file structure. If you don't, packages might not load properly and this could result in things like missing materials.
 
 2. Navigate to the **Samples** folder and then unzip each sample.
 
@@ -90,11 +69,16 @@ The easiest way to set up your Unity project for Mesh development is to start wi
 
 ## Upgrade packages in a pre-existing Mesh project
 
-You can upgrade the packages in your existing project and then continue developing. Make sure your project uses the 3D (URP) project template, and then import the Mesh Toolkit package. Note that you may encounter some configuration notifications with upgrading and replacing older packages.
+You can upgrade the packages in your existing project and then continue developing. 
+1. Make sure your project uses the 3D (URP) project template.
+1. [Download and unzip the Mesh toolkit ](download-the-mesh-toolkit.md).
+1. Import the Toolkit package into your project. 
+
+Note that you may encounter some configuration notifications with upgrading and replacing older packages.
 
 ## Start from scratch
 
-If you'd like to start from scratch and build from the ground up, create a simple 3D URP (Core) project and then import the necessary packages.
+If you'd like to start from scratch and build from the ground up, create a simple 3D URP (Core), then [download and unzip the Mesh toolkit](download-the-mesh-toolkit.md), and then import the Toolkit package into your project.
 
 For a much more details explanation of how to set up a project for Mesh development, see the article named [Create a new Unity project](create-new-mesh-project.md).
 

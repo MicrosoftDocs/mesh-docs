@@ -1,5 +1,5 @@
 ---
-title: Import the Mesh Toolkit
+title: Importing the Mesh Toolkit
 description: Import the Mesh Toolkit into your existing project or a new project.
 author: typride
 ms.author: vtieto
@@ -8,7 +8,7 @@ ms.topic: How to
 keywords: Microsoft Mesh, Unity, M365, Immersive spaces, Avatars, getting started, documentation, features, toolkit
 ---
 
-## Import the Mesh Toolkit
+## Importing the Mesh Toolkit
 
 1. In Unity, open the Package manager, then select the "+" drop-down, and then select **Add package from tarball**.
     ![](../../media/get-started-developing-mesh/image009.jpg)
@@ -33,5 +33,8 @@ Unity may restart during this process.
 
 4. Once you've installed the package, verify that you see it in the
     Package Manager.
+
+Next Steps:
+Building for single and multiple platforms TBD
 
     

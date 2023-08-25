@@ -37,3 +37,21 @@ The Mesh Toolkit holds all packages and samples, as detailed in the [Package Ove
     hierarchy until you see folders named *Packages* and *Samples*.
 
     ![Graphical user interface, application Description automatically generated](../../media/get-started-developing-mesh/image005.jpg)
+
+To ensure the manifest files in each sample properly configure their project settings and access the packages, you'll want to maintain this file structure:
+
+Mesh Toolkit 23.x
+
+- Packages
+
+- Samples
+
+    - DartRoom
+
+    - Mesh101-Unity
+
+    - HelloWorld-Unity
+
+    - ScienceBuilding
+
+    - ScriptedWorlds
