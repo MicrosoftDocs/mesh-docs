@@ -136,21 +136,21 @@ with up to 200 people, split into 16 person rooms.
     the world you want.
 
     ![](../media/mesh-event-producer-guide/image005.png)
+
     > [!NOTE]
     >
->     You may have to scroll to view all the
->     worlds.
+    > You may have to scroll to view all the worlds.
+
     > [!TIP]
-> You can pin worlds to the left nav bar for easy access!
-> ![A picture containing text, screenshot, line, font Description automatically generated](../media/mesh-event-producer-guide/image006.png)
+    > You can pin worlds to the left nav bar for easy access!
+    > ![](../media/mesh-event-producer-guide/image006.png)
 
 3. In your Mesh world, select the **Create** button.
 
-     ![A screenshot of a computer Description automatically generated with medium confidence](../media/mesh-event-producer-guide/image007.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../media/mesh-event-producer-guide/image007.png)
 
-     > [!IMPORTANT]
-     >
-> If you don't see **Manage** or **Create**, then you aren't a [Content contributor](#content-contributor-permissions) for this world. Please speak to your IT Admin to get Content contributor privileges.
+    > [!IMPORTANT]
+    > If you don't see **Manage** or **Create**, then you aren't a [Content contributor](#content-contributor-permissions) for this world. Please speak to your IT Admin to get Content contributor privileges.
 
 4. Add your event details (**Name**, **Date**, **Time**,
     **Description**, etc.). ![A screenshot of a computer Description automatically
