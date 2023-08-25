@@ -1,12 +1,12 @@
 ---
-title: Adding a thumbnail camera
+title: Add a thumbnail camera to your scene
 description: Learn how to add a thumbnail camera to your scene.
 author: typride
-ms.author: vtieto
+ms.author: vinnietieto
 ms.date: 8/25/2023
+ms.prod: mesh
 ms.topic: How to
-keywords: Microsoft Mesh, Unity, getting started, new project, camera, 
-thumbnail
+keywords: Microsoft Mesh, Unity, getting started, new project, camera, thumbnail
 ---
 
 # Adding a Thumbnail Camera
@@ -40,7 +40,7 @@ like.
     up to you. For the following example, we chose a close-up front view of
     a wind turbine.
 
-    ![A screenshot of a computer Description automatically generated](../../media/get-started-developing-mesh/image013.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/get-started-developing-mesh/image013.jpg)
 
 Next Steps:
 TBD

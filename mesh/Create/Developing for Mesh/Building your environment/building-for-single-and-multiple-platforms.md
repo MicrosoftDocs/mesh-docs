@@ -1,14 +1,15 @@
 ---
-title: Building for single and multiple platforms
+title: Building a Mesh experience for single and multiple platforms
 description: Learn about your options for which platforms to build for.
 author: typride
-ms.author: vtieto
+ms.author: vinnietieto
 ms.date: 8/25/2023
 ms.topic: How to
+ms.prod: mesh
 keywords: Microsoft Mesh, Unity, getting started, platform, Quest, Android, new project
 ---
 
-## Building for single and multiple platforms
+# Building for single and multiple platforms
 
 Before starting to build your Environment, it's good to keep in mind
 that Mesh events can be experienced on two different platforms: desktop
