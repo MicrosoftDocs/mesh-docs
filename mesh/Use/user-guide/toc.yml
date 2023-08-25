@@ -1,0 +1,13 @@
+items:
+  - name: Overview
+    href: overview.md
+  - name: Mesh prerequisites
+    href: prerequisites.md
+  - name: Getting started with Mesh
+    href: getting-started.md
+  - name: Join an event
+    href: join-an-event.md
+  - name: Mesh user controls
+    href: mesh-user-controls.md
+  - name: Feedback for Mesh
+    href: feedback.md  
