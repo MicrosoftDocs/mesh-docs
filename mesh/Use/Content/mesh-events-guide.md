@@ -137,22 +137,19 @@ with up to 200 people, split into 16 person rooms.
     the world you want.
 
     ![](../../media/mesh-event-producer-guide/image005.png)
-
-    > [!NOTE] 
-    > You may have to scroll to view all the worlds.
-
+    > [!NOTE]
+>     You may have to scroll to view all the
+>     worlds.
     > [!TIP]
-    >  You can pin worlds to the left nav bar for easy access! 
-
-    ![A picture containing text, screenshot, line, font Description automatically generated](../../media/mesh-event-producer-guide/image006.png)
-
+>  You can pin worlds to the left nav bar for easy access!
+> ![A picture containing text, screenshot, line, font Description automatically generated](../../media/mesh-event-producer-guide/image006.png)
 
 3. In your Mesh world, select the **Create** button.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/mesh-event-producer-guide/image007.png)
+     ![A screenshot of a computer Description automatically generated with medium confidence](../../media/mesh-event-producer-guide/image007.png)
 
-    > [!IMPORTANT]
-    > If you don't see **Manage** or **Create**, then you aren't a [Content contributor](#content-contributor-permissions) for this world. Please speak to your IT Admin to get Content contributor privileges.
+     > [!IMPORTANT]
+> If you don't see **Manage** or **Create**, then you aren't a [Content contributor](#content-contributor-permissions) for this world. Please speak to your IT Admin to get Content contributor privileges.
 
 4. Add your event details (**Name**, **Date**, **Time**,
     **Description**, etc.). ![A screenshot of a computer Description automatically
@@ -162,10 +159,12 @@ with up to 200 people, split into 16 person rooms.
      ![](../../media/mesh-event-producer-guide/image009.png)
 
     > [!NOTE]
-    > **If you choose Multiple room:**
-    >
-    > - You must fill in the Room capacity and Total participants fields.
-    > - You must [provision your meeting](#multiple-rooms-event). Detail provided after this section.
+>     **If you choose Multiple room:**
+>     
+>     - You must fill in the Room capacity and Total participants fields.
+>     
+>     - You must [provision your meeting](#multiple-rooms-event). Detail
+>         provided after this section.
 
 6. When **you're** finished, click **Next**.
 
@@ -258,7 +257,9 @@ The participants you can invite fall into two categories:
     people** text box.
 
     > [!NOTE]
-    > You can add names individually or copy and paste a comma-delimited list of email addresses. Single room environments can have 16 while multiple room environments can have up to 200 total participants.
+> You can add names individually or copy and paste a comma-delimited
+>     list of email addresses. Single room environments can have 16 while
+>     multiple room environments can have up to 200 total participants.
 
     Having issues with adding guests in bulk?
 
@@ -341,7 +342,7 @@ medium confidence](../../media/mesh-event-producer-guide/image017.png)
     ![](../../media/mesh-event-producer-guide/image019.png)
 
     > [!IMPORTANT]
-    > You may need to select Provision a few times. Please re-select **Provision** if you've refreshed the event and it still shows Provision instead of Provisioned.
+> You may need to select Provision a few times. Please re-select **Provision** if you've refreshed the event and it still shows Provision instead of Provisioned.
 
 3.  While provisioning, the button will
     show **In Progress**.
@@ -446,7 +447,6 @@ to your nametag above your Avatar.
 
 ![A screenshot of a video game Description automatically
 generated](../../media/mesh-event-producer-guide/image025.png)
-
 #### Troubleshooting broadcasting
 
 If new joiners are still not seeing/hearing you, there are a few
@@ -496,9 +496,8 @@ the show.
 - [Event templates](#_Event_templates) -- now that you've created a
     custom event, create a template to reuse your work in future events.
 
-> [!NOTE]
-> Note: We recommend customizing an event at least one hour before the
-> event is scheduled to ensure a smooth experience.
+Note: We recommend customizing an event at least one hour before the
+event is scheduled to ensure a smooth experience.
 
 > [!TIP]
 > **Who should customize an event?**
@@ -508,16 +507,17 @@ the show.
 > caution, knowing that any edits you make will affect the environment
 > that event participants will join in.
 
-#### Open the Manage events page
-
-> [!IMPORTANT]
-> If you don't see **Manage**, then you aren't a [Content
-> contributor](#content-contributor-permissions) for this world. Please
-> speak to your IT Admin to get Content contributor privileges.
 
 > [!IMPORTANT]
 > Please ensure that you are supposed to customize the
 > event before proceeding.
+
+
+#### Open the Manage events page
+
+**Important!** If you don't see **Manage**, then you aren't a [Content
+contributor](#content-contributor-permissions) for this world. Please
+speak to your IT Admin to get Content contributor privileges.
 
 1. Go to your pinned world, or search for it using the **All Mesh
     worlds** button.
@@ -530,7 +530,8 @@ medium confidence](../../media/mesh-event-producer-guide/image013.png)
 #### Customize event experience
 
 Click the **Customize event experience** button and enter the event.
-Once you've joined, you can begin [adding content with the Control Panel](#_Add_Content_with).
+Once you've joined, you can begin [adding content with the Control
+Panel](#_Add_Content_with).
 
 ![A screenshot of a computer Description automatically generated with
 medium confidence](../../media/mesh-event-producer-guide/image016.png)
@@ -561,9 +562,11 @@ performance in real time.
     generated](../../media/mesh-event-producer-guide/image029.png)
 
     > [!NOTE]
-    > Adding content takes place in **Edit mode**.
-    > ![](../../media/mesh-event-producer-guide/image032.png)
-    > You should be in this mode by default (look at the top/middle of the window).
+>     Adding content takes place in **Edit mode**. 
+>
+> ![](../../media/mesh-event-producer-guide/image032.png)
+>
+> You should be in this mode by default (look at the top/middle of the window).
 
 4. Click the **+** button.
 
