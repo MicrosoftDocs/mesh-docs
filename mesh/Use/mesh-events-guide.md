@@ -8,9 +8,7 @@ ms.topic: Guide
 keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer, getting started, documentation, features
 ---
 
-# Mesh events guide
-
-# Event Producer Guide
+# Mesh event production guide
 
 Detailed instructions for setting up, managing, and producing events in Mesh.
 
@@ -111,19 +109,18 @@ you've **pinned**, or explore **all worlds**.
 medium confidence](../media/mesh-event-producer-guide/image003.png)
 
 ## Events
-
-![](../media/mesh-event-producer-guide/image004.png)
-
 Create an event to host a Mesh experience! Once an
 event is created in a World, people with access to the world will see
 the event in Mesh. Creating an event is the first step. Then you can
 invite people to collaborate as hosts or designers and customize the
 event.
 
-## Single vs Multiple room Events
+### Single vs Multiple room Events
 
 You can host a single room event with 16 people, or multiple room event
 with up to 200 people, split into 16 person rooms.
+
+![Single vs multiple room events](../media/mesh-event-producer-guide/image004.png)
 
 ## Create an event
 
@@ -135,7 +132,7 @@ with up to 200 people, split into 16 person rooms.
     button](#mesh-dashboard-overview) at the bottom left and then select
     the world you want.
 
-    ![](../media/mesh-event-producer-guide/image005.png)
+    ![All mesh worlds button](../media/mesh-event-producer-guide/image005.png)
 
     > [!NOTE]
     >
@@ -143,18 +140,21 @@ with up to 200 people, split into 16 person rooms.
 
     > [!TIP]
     > You can pin worlds to the left nav bar for easy access!
-    > ![](../media/mesh-event-producer-guide/image006.png)
+    > ![Pin worlds how to image](../media/mesh-event-producer-guide/image006.png)
 
 3. In your Mesh world, select the **Create** button.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../media/mesh-event-producer-guide/image007.png)
+    ![Create button for Mesh worlds](../media/mesh-event-producer-guide/image007.png)
 
     > [!IMPORTANT]
     > If you don't see **Manage** or **Create**, then you aren't a [Content contributor](#content-contributor-permissions) for this world. Please speak to your IT Admin to get Content contributor privileges.
 
 4. Add your event details (**Name**, **Date**, **Time**,
-    **Description**, etc.). ![A screenshot of a computer Description automatically
+    **Description**, etc.). 
+
+    ![A screenshot of a computer Description automatically
     generated](../media/mesh-event-producer-guide/image008.png)
+
 5. Choose your Room settings: **Single room** or **Multiple Rooms.**
 
     ![](../media/mesh-event-producer-guide/image009.png)
@@ -166,14 +166,13 @@ with up to 200 people, split into 16 person rooms.
     >
     > - You must [provision your meeting](#multiple-rooms-event). Detail provided after this section.
 
-6. When **you're** finished, click **Next**.
+6. When you're finished, click **Next**.
 
 7. On the **Template** page, this is where you can reuse any event
     templates that you create. If you choose a template, skip step 8.
     Otherwise, press **Skip** to select an Environment.
 
-     ![Graphical user interface, application Description automatically
- generated](../media/mesh-event-producer-guide/image010.png)
+     ![Graphical user interface, application Description automatically generated](../media/mesh-event-producer-guide/image010.png)
 
 8. On the **Environment** page, select an environment, and then click
     **Next**.
@@ -207,23 +206,19 @@ inviting others to collaborate!**
 There are several things you can do at least **one hour** **before** you
 start your event:
 
-- Edit event details
-
-- Invite collaborators
-
-- Invite participants
-
+- Invite guests or collaborators
+- Edit or delete event
 - Customize the event
-
 - Provision the event (in multiple room events)
 
 *You must complete any of these actions before your event. Once a guest
 joins the event, you won't be able to customize your event anymore.*
 
-**Open the Manage event page:**\
-\
+**Open the Manage event page:**
+
 ![A screenshot of a computer Description automatically generated with
 medium confidence](../media/mesh-event-producer-guide/image013.png)
+
 On the **Manage Events** page, you can invite guests to your event, edit
 event details, or join the event. Everything but the environment and
 room/session scale can be edited.
@@ -261,9 +256,7 @@ The participants you can invite fall into two categories:
 > list of email addresses. Single room environments can have 16 while
 > multiple room environments can have up to 200 total participants.
 
-    Having issues with adding guests in bulk?
-
-    [See discussion on adding guests](#adding-guests-to-events-in-bulk)
+    Having issues with adding guests in bulk? [See discussion on adding guests](#adding-guests-to-events-in-bulk)
 
 3. If there are any invalid emails, search for them and remove them.
     When you've finished adding names and all invitees are valid, click
@@ -285,7 +278,7 @@ in-experience tools.**
     **Search for people** text box. You can add names individually or
     copy and paste a list. The maximum number of participants is 15.
 
-### Edit or delete
+### Edit or delete your event
 
 #### To edit your event details
 
@@ -346,25 +339,28 @@ medium confidence](../media/mesh-event-producer-guide/image017.png)
     >
 > You may need to select Provision a few times. Please re-select **Provision** if you've refreshed the event and it still shows Provision instead of Provisioned.
 
-3. While provisioning, the button will
-    show **In Progress**.
+3. While provisioning, the button will show **In Progress**.
 
-    ![](../media/mesh-event-producer-guide/image020.png)
+    ![A screenshot of a cell phone Description automatically generated
+    with medium
+    confidence](../media/mesh-event-producer-guide/image021.png)
+
 
 4. Refresh the event periodically to ensure that provisioning was
     completed. You may need to Provision again if the button shows
     **Provision**. Once it shows **Provisioned,** as shown below, you're
     ready to host your event!
 
-    ![A screenshot of a cell phone Description automatically generated
-    with medium
-    confidence](../media/mesh-event-producer-guide/image021.png)
+    
+
+    ![](../media/mesh-event-producer-guide/image020.png)
 
 ## Start your event
 
 Now that you've created your event, invited participants, and edited the
 event settings, the event should be ready for participants to join.
-Great job!
+
+*Great job!*
 
 Invitees should see the event in Mesh and be able to join close to the
 event start time.
@@ -398,14 +394,12 @@ Mesh world **Events** tab.
 
 1. Go to your Mesh world, then select **Join now.**
 
-     ![A screenshot of a computer Description automatically
- generated](../media/mesh-event-producer-guide/image022.png)
+![](../media/mesh-event-producer-guide/image023.png)
 
  **Great job! Continue reading below to produce your event!**
 
 ## Producing your event
 
-![](../media/mesh-event-producer-guide/image023.png)
 
 Once you've joined your event, you'll have
 access to a few tools to help produce the event:
@@ -422,11 +416,14 @@ Use the **Control Panel** to access production tools like **Broadcast**,
 ## Host panel
 
 The host panel is the main panel for managing interactions, hand-raises,
-and broadcasting,. inc
+and broadcasting.
 
 ### Host controls in the Control Panel
 
-In the Control Panel, you'll see the following buttons:
+Use the control panel to access the production tools:
+
+![A screenshot of a video game Description automatically
+generated](../media/mesh-event-producer-guide/image024.png)
 
 #### Broadcast
 
@@ -436,19 +433,19 @@ select **Start broadcast**. To stop broadcasting, select the broadcast
 button again, then select **End** **broadcast**.
 
 ![A screenshot of a video game Description automatically
-generated](../media/mesh-event-producer-guide/image024.png)
+generated](../media/mesh-event-producer-guide/image025.png)
 
 > [!NOTE]
-> If your event is not Provisioned for broadcasting, you'll receive a pop-up that says "Unable to Start Broadcast. Your event must be provisioned to enable broadcasting. Please provision your event to proceed."*
-
-*The admin who provisions the event must exit the event to provision
-again.*
+> If your event is not Provisioned for broadcasting, you'll receive a pop-up that says "Unable to Start Broadcast. Your event must be provisioned to enable broadcasting. Please provision your event to proceed."
+>
+> *The admin who provisions the event **must exit the event to provision again**.*
 
 When broadcasting, other participants will see a broadcasting icon next
 to your nametag above your Avatar.
 
 ![A screenshot of a video game Description automatically
-generated](../media/mesh-event-producer-guide/image025.png)
+generated](../media/mesh-event-producer-guide/image026.png)
+
 
 #### Troubleshooting broadcasting
 
@@ -467,21 +464,21 @@ troubleshooting steps you can take to help.
 Use **Megaphone** to make your voice audible to all participants in the
 event.
 
-![A screenshot of a video game Description automatically
-generated](../media/mesh-event-producer-guide/image026.png)
+ ![A screenshot of a computer Description automatically generated with
+ medium confidence](../media/mesh-event-producer-guide/image027.png)
 
 ### Mute All
 
 Use **Mute Al**l to bring attention to your voice and mute all other
 participants.
 
- ![A screenshot of a computer Description automatically generated with
- medium confidence](../media/mesh-event-producer-guide/image027.png)
+:::image type="content" source="../media/mesh-event-producer-guide/image028.png" alt-text="Megaphone button location":::
+
 Use these tools to help produce your event and explore the [Customize
 your event](#customize-your-event) section to see how the Control Panel
 can be expanded to control scripted experiences in Events.
 
-### Customize your event
+## Customize your event
 
 If you have a custom environment created Unity, there may be components
 you can add to the environment that you can control as an event
@@ -491,17 +488,9 @@ Make your event your own! Create a scripted sequence that you control
 for your event -- think props for pizazz or a curtain opening to start
 the show.
 
-**Event Producers tools:**
-
-- [Control panel](#_Add_Content_with) -- control the elements you add
-    to the environment with scripted sequences of events. Imagine a
-    curtain raise to signal the start of the event!
-
-- [Event templates](#_Event_templates) -- now that you've created a
-    custom event, create a template to reuse your work in future events.
-
-Note: We recommend customizing an event at least one hour before the
-event is scheduled to ensure a smooth experience.
+> [!NOTE]
+> We recommend customizing an event at least one hour before the
+> event is scheduled to ensure a smooth experience.
 
 > [!TIP]
 > **Who should customize an event?**
@@ -511,9 +500,13 @@ event is scheduled to ensure a smooth experience.
 > caution, knowing that any edits you make will affect the environment
 > that event participants will join in.
 
-> [!IMPORTANT]
-> Please ensure that you are supposed to customize the
-> event before proceeding.
+#### Event Producers tools
+
+- [Control panel](#_Add_Content_with) -- control the elements you add
+    to the environment with scripted sequences of events. Imagine a
+    curtain raise to signal the start of the event!
+
+- [Event templates](#_Event_templates) -- create a template of your event with all customizations that you add to reuse in future events
 
 #### Open the Manage events page
 
