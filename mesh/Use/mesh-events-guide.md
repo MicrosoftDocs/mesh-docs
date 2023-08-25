@@ -9,7 +9,6 @@ keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
 ---
 
 # Mesh events guide
-Microsoft Mesh
 
 # Event Producer Guide
 
@@ -159,12 +158,11 @@ with up to 200 people, split into 16 person rooms.
      ![](../../media/mesh-event-producer-guide/image009.png)
 
     > [!NOTE]
->     **If you choose Multiple room:**
->     
->     - You must fill in the Room capacity and Total participants fields.
->     
->     - You must [provision your meeting](#multiple-rooms-event). Detail
->         provided after this section.
+    > **If you choose Multiple room:**
+    >
+    > - You must fill in the Room capacity and Total participants fields.
+    >
+    > - You must [provision your meeting](#multiple-rooms-event). Detail provided after this section.
 
 6. When **you're** finished, click **Next**.
 
