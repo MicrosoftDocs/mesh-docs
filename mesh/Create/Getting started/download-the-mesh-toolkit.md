@@ -1,5 +1,5 @@
 ---
-title: Downloading the Mesh Toolkit
+title: Download the Mesh Toolkit
 description: Step-by-step instructions for downloading the Mesh Toolkit.
 author: typride
 ms.author: vtieto
@@ -8,9 +8,9 @@ ms.topic: overview
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features, prerequisites, toolkit
 ---
 
-# Download the Mesh Toolkit
+# Downloading the Mesh Toolkit
 
-The Mesh Toolkit holds all packages and samples, as detailed in the [Package Overview](#package-overview). Once downloaded and unzipped, import the packages to your new project.
+The Mesh Toolkit holds all packages and samples, as detailed in the [Mesh Toolkit overview](../Developing for Mesh/mesh-toolkit-overview.md). Once downloaded and unzipped, import the packages to your new project.
 
 **Note**: Setting up a new project or updating an existing one both have the same steps for adding packages.
 

@@ -2,9 +2,10 @@
 title: Mesh Toolkit Overview
 description: Overview of the Mesh toolkit
 author: typride
-ms.author: vtieto
+ms.author: vinnietieto
 ms.date: 8/24/2023
 ms.topic: Overview
+ms.prod: Mesh
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features, toolkit, packages
 ---
 

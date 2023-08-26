@@ -2,9 +2,10 @@
 title: Choose your journey
 description: Determine the best path for you in our documentation.
 author: typride
-ms.author: tmilligan
-ms.date: 7/31/2023
+ms.author: vinnietieto
+ms.date: 8/25/2023
 ms.topic: overview
+ms.prod: mesh
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
@@ -91,14 +92,3 @@ Once you've created an Environment through the paths mentioned above, you can ad
 - [Cloud scripting](../Developing%20for%20Mesh/Scripting%20your%20scene%20logic/cloud-scripting-overview.md), [visual scripting](../Developing%20for%20Mesh/Scripting%20your%20scene%20logic/visual-scripting-overview.md), and [Mesh Physics](../Developing%20for%20Mesh/Building%20your%20environment/physics-interactions.md) to add interactivity
 
 - And more!
-
-## Next steps
-Now's the time to choose your journey:
-
-- [Open and build upon an existing sample](start-with-sample.md).
-
-- [Upgrade packages in a pre-existing Mesh project in Unity.](install-tools-upgrade.md)
-
-- [Start a new project from scratch.](create-new-mesh-project.md)
-
-

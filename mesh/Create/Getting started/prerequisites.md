@@ -2,9 +2,10 @@
 title: Prerequsites for Mesh development
 description: Prerequisites required for Mesh development, including Unity and Azure information.
 author: typride
-ms.author: vtieto
+ms.author: vinnietieto
 ms.date: 8/24/2023
 ms.topic: overload
+ms.prod: mesh
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features, prerequisites
 ---
 
@@ -34,5 +35,5 @@ To upload an Environment to a Mesh world, there are two things that must be enab
 
 1. **Mesh world already created.** There must be a Mesh world to upload to from Unity. If there isn't one, your Azure Admin or Mesh world  resource owner should make one for you. For more information, see the Mesh IT Admin Guide and the article named Creating a Mesh world.
 
-2. **Content Contributor role.** Your Azure Admin or Mesh world owner must add your work account as a content contributor for each Mesh world you want to upload an Environment to. For more information, see [Becoming a Content Contributor](#become-a-content-contributor).
+2. **Content Contributor role.** Your Azure Admin or Mesh world owner must add your work account as a content contributor for each Mesh world you want to upload an Environment to. For more information, see [Becoming a Content Contributor](TBD).
 
