@@ -1,6 +1,4 @@
 items:
-  - name: Overview
-    href: overview.md
   - name: Mesh prerequisites
     href: prerequisites.md
   - name: Getting started with Mesh
