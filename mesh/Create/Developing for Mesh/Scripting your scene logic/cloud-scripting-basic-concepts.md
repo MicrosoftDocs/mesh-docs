@@ -59,9 +59,9 @@ The Mesh API has types that map to only a *subset* of the full set of Unity Comp
 
 The Mesh API allows cloning of nodes. If the app makes a clone of "A" (which corresponds to the "A" node, **GameObjectParent**, in the Unity scene), this will clone the entire sub tree of **GameParentObject** *including* the particle system MeshApp can't see.
 
-## Authoring Mesh Scripting
+## Authoring Mesh Cloud Scripting
 
-Detailed instructions on Mesh Scripting can be found in the *Getting Started* and *Programmer's Guide* sections. Here, we give a brief overview.
+Detailed instructions on Mesh Cloud Scripting can be found in the *Getting Started* and *Programmer's Guide* articles TBD. Here, we give a brief overview.
 
 A typical Unity project containing a scene with an associated MeshApp would look as follows on disk (the folders are shown as bold):
 
@@ -94,9 +94,9 @@ Note the Scene.map file in the above list. This is an internal detail but it's u
 
 **Note**: In order for the above to work, the scene.map file and the Unity scene must match. If for some reason they don't, for example, as the result of an export error, this will be detected and the app and client won't connect.
 
-## Deploying Environments with Mesh Scripting
+## Deploying Environments with Mesh Cloud Scripting
 
-When you create an Environment with Mesh scripting, you must create *both* the Environment and the corresponding MeshApp and deploy them to the cloud. This is shown in the diagram below:
+When you create an Environment with Mesh Cloud Scripting, you must create *both* the Environment and the corresponding MeshApp and deploy them to the cloud. This is shown in the diagram below:
 
 ![Uploading the environment template and MeshApp to the cloud](../../../media/mesh-scripting/basic-concepts/002-deploy-meshapp-23-10.png)
 
