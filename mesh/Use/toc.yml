@@ -4,4 +4,4 @@ items:
   - name: Mesh user guide
     href: user-guide/toc.yml
   - name: Mesh events guide
-    href: mesh-events-guide.md
+    href: events-guide/toc.yml
