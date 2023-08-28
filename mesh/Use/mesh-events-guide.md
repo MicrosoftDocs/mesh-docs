@@ -783,7 +783,18 @@ guests:
  <Person1@EmailForWork.com>, <Person2@EmailForWork.com>, ... , ...
  []{#_Key_terminology .anchor}
 
-# Key terminology
+## Key terminology
+
+### Mesh
+
+|Term  | Descriptiong  |Images  |
+|---------|---------|---------|
+| Mesh app           |  The standalone app for Mesh                 |  (../media/mesh-event-producer-guide/image044.png)       |
+| Home button        |  Accessed through the Dashboard button       |  (../media/mesh-event-producer-guide/image045.png)       |
+| Template           |         |         |
+|Row4     |         |         |
+|Row5     |         |         |
+
 
 +----------------+-----------------------+----------------------------+
 | **Term**       | **Description**       | **Images to help**         |
