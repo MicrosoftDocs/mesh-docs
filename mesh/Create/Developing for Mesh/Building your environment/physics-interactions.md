@@ -3,8 +3,9 @@ title: Mesh physics
 description: Guide to using Mesh physics when creating Environments for Mesh.
 author: typride
 ms.author: vinnietieto
-ms.date: 7/28/23
+ms.date: 8/23/2023
 ms.topic: Guide
+ms.prod: mesh
 keywords: Microsoft Mesh, Mesh physics, physics, environments
 ---
 
