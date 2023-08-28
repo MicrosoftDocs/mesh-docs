@@ -3,5 +3,7 @@ items:
     href: Content/preparing-your-organization.md
   - name: Set up M365
     href: Content/setup-M365-Mesh.md
+  - name: Set up Azure
+    href: Content/setup-azure-mesh-guide.md
   - name: Set up Cloud Scripting infrastructure
     href: Content/setup-cloud-scripting-infrastructure.md

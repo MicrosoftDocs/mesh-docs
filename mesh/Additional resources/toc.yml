@@ -3,6 +3,10 @@ items:
     href: mesh-release-notes.md
   - name: Release notes for avatars
     href: avatars-release-notes.md
+  - name: Mesh Toolkit release notes
+    href: mesh-toolkit-release-notes.md
+  - name: Immersive spaces release notes
+    href: immersive-spaces-release-notes.md
   - name: Terms and conditions
     href: terms-conditions.md
   - name: Key terms
