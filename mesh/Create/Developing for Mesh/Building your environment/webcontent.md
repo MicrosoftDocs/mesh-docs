@@ -8,15 +8,15 @@ ms.topic: Guide
 keywords: Microsoft Mesh, documentation, features, Unity, Web content
 ---
 
-# Overview WebView
+# Web Content Overview
 
 ![Image of a Mesh environment with WebViews on display.](../../../media/webview-developer-guide/image002.png)![A picture containing screenshot,
 interior design, furniture, table Description automatically
 generated](../../../media/webview-developer-guide/image003.png)
 
-Use WebView to display Web content into your 3D Mesh Environment. Get a
+Use WebSlate to display web content into your 3D Mesh Environment. Get a
 full browsing experience on PC or Quest 2 with intuitive input,
-customizability, security, and performance management. With WebViews you
+customizability, security, and performance management. With Web Slates you
 can:
 
 - Display rich web content
@@ -25,17 +25,17 @@ can:
 
 - Experience built-in input across devices without extra work to enable it
 
-- Drag-and-drop prefabs to show simple WebViews or add scripted interactivity
+- Drag-and-drop prefabs to show simple web slates or add scripted interactivity
 
 - Manually authenticate to access secure content from within the experience
 
 - Secure experiences with disabled local file access and cleared cookies, cache, and session state during initialization
 
-In the Mesh Toolkit, the WebView prefab contains a URL parameter that
+In the Mesh Toolkit, the WebSlate prefab contains a URL parameter that
 developers can specify to control the content displayed in their Mesh
-Environment. WebView can display Web pages and supports interaction but
+Environment. Web slate can display Web pages and supports interaction but
 does not function as a browser and does not support bookmark, history or
-travel back-forth. Envision using WebView in your custom Environment
+travel back-forth. Envision using web slates in your custom environments
 for:
 
 - Viewing dashboards, web pages, photos, and videos
@@ -45,37 +45,37 @@ for:
 
 - Interacting with maps, diagrams, and data
 
-To experience a WebView showcase within a Unity scene, see the
+To experience a WebSlate showcase within a Unity scene, see the
 *HelloWorld-Unity.zip* sample on the EAP SharePoint site.
 
 ## Requirements/Dependencies
 
-WebView depends on the *Unity.InputSystem* and
+WebSlate depends on the *Unity.InputSystem* and
 *Unity.XR.Interaction.Toolkit* Unity packages, located in the Mesh
 Authoring package.
 
 ## Features
 
-WebView loads an interactive page via a provided URL. The URL given to
-it in the Environment will be the same one loaded in Mesh. WebView
+WebSlate loads an interactive page via a provided URL. The URL given to
+it in the Environment will be the same one loaded in Mesh. WebSlate
 offers the following features:
 
 - When loaded on the Mesh App for PC and Quest, Web pages loaded by
-    the WebView are interactable through mouse, keyboard, and Quest XR
+    the WebSlate are interactable through mouse, keyboard, and Quest XR
     controller input.
 
-- The size and shape of the WebView will match that of the quad
+- The size and shape of the web slate will match that of the quad
     GameObject on which it is placed, typically this is the quad baked
     inside of the prefab from the Mesh Authoring package.
 
-- Multiple WebViews can be added to a scene. The number of users in
-    your Mesh Environment does not affect WebView performance, as
-    WebView resources are initialized locally on the user's machine.
+- Multiple web slates can be added to a scene. The number of users in
+    your Mesh Environment does not affect web slate performance, as
+    WebSlate resources are initialized locally on the user's machine.
 
-- Configure WebViews with visual or cloud scripting to add interactive
+- Configure web slates with visual or cloud scripting to add interactive
     behaviors and synchronization across users.
 
-- You can preview your WebView before uploading your scene to Mesh by
+- You can preview your web slate before uploading your scene to Mesh by
     hitting play in the Unity editor on your Environment project.
 
 - For Web pages in which text rendering is more important, you can
@@ -88,8 +88,8 @@ offers the following features:
 
 ## Default Settings
 
-By default, the WebView loads the preset URL. The URL should be replaced
-with a desired one on each WebView in use. The image quality parameter
+By default, the WebSlate loads the preset URL. The URL should be replaced
+with a desired one on each WebSlate in use. The image quality parameter
 is set to "Low," and brightness is set to 1.0 (100% of the browser's
 brightness).
 
@@ -97,64 +97,75 @@ brightness).
 
 ## General Tips
 
-- While WebViews can be placed on Game Objects other than a Quad by
-    adding *WebView.cs* as a script component directly to your 3D object
+- While WebSlate can be placed on Game Objects other than a Quad by
+    adding *WebSlate.cs* as a script component directly to your 3D object
     of choice, visual texture stretching, inversion, and/or rotation may
     be seen.
 
 ### Performance
 
-- As a WebView is a loaded Web page, it is important to consider
+- As a WebSlate is a loaded Web page, it is important to consider
     performance implications:
 
-  - Scenes are typically performant at 60fps with up to 15 WebViews
+  - Scenes are typically performant at 60fps with up to 15 web slates
         with Image Quality set to "Low." Framerate and general
         performance degradation may be observed in proportion to the
-        number of WebViews placed in a scene, regardless of content.
+        number of web slates placed in a scene, regardless of content.
 
-  - Each Web page displayed in a WebView may have different
+  - Each Web page displayed in a WebSlate may have different
         performance characteristics based on its contents and Image
         Quality setting.
 
-  - While content is loaded and executed in the WebView on a thread
+  - While content is loaded and executed in the WebSlate on a thread
         separate to the scene's update and rendering thread(s) (and is
         therefore unlikely to directly affect framerate), it's still
         important to consider the cost of JavaScript running on a Web
         page both in terms of runtime complexity and memory usage.
 
   - When Mesh is loaded on Quest using the Android build, it is
-        advisable to keep the number of WebViews for which Image Quality
+        advisable to keep the number of WebSlates for which Image Quality
         is set to "High" under 5.
 
-- Since WebViews don't have any external navigation UI by default, the
+- Since web slates don't have any external navigation UI by default, the
     best practice is to only load custom URLs, where the site navigation
     is cyclic and can be done inside the page. This can be done with a
     navigation sidebar, or links to a hub page, for example.
+
+- The Content Performance Analyzer (CPA) tool includes a WebSlate analyzer which measures the average time it takes Unity's render pipeline to render WebSlates in a frame.
+  - Measurements are based on Unity's profiler recorder and requires playmode. The analyzer moves the camera over each WebSlate to collect sufficient profiler samples and calculates the average render time.
+
+  - This provides a first-stage, high-level analysis of WebSlate render times in the context of Unity's render pipeline (it does not provide the frame rate of the WebSlate content itself).
+  
+  - If Unity's render pipeline exceeds the threshold to render WebSlates (currently 10ms), the CPA tool provides a warning.
+  
+  - The same measurements are also available to the Visual Profiler. The group on the Visual Profiler typically changes colors from green to red when the budget allowance for a category is surpassed. For now, the WebSlate group only shows as green until a reasonable render time budget is rationalized for WebSlates.
+
+![WebSlate performance analysis using CPA tool](../../../media/webview-developer-guide/CPAwebslate.png)
 
 ## Limitations/Issues
 
 ### Known issues
 
-- When working with WebViews in the Unity editor, the editor needs to be restarted when updating the WebView or Mesh Toolkit packages through the Unity package manager.
+- When working with WebSlate in the Unity editor, the editor needs to be restarted when updating the WebSlate or Mesh Toolkit packages through the Unity package manager.
 
 ### General limitations
 
-- WebViews are currently supported in the Mesh App on PC Standalone, Quest 2, and for previewing in the Unity editor on Windows only.
+- WebSlates are currently supported in the Mesh App on PC Standalone, Quest 2, and for previewing in the Unity editor on Windows only.
 
 - We are still working on automatic scaling and scale adjustments for content with different resolution requirements.
 
 ### Security restrictions
 
-- WebViews are locked to the URLs they navigate to, preventing malicious redirects. All unintended hyperlink navigations to outside domains are blocked.
+- WebSlates are locked to the URLs they navigate to, preventing malicious redirects. All unintended hyperlink navigations to outside domains are blocked.
 
-- WebViews are restricted to navigation within the initial domain or
+- WebSlates are restricted to navigation within the initial domain or
     the specified URL's and server\'s redirections.
 
 - Device access to webcam, microphone, and geolocation are blocked.
 
 ### Windows / PC Standalone
 
-- When interacting with a WebView, Mesh may capture keyboard input causing unintended interactions with the Mesh app.
+- When interacting with a web slate, Mesh may capture keyboard input causing unintended interactions with the Mesh app.
 
 ## Start with a sample
 
@@ -164,11 +175,11 @@ Did you know we have pre-made Mesh
 Environments that you can download and use in Unity?
 
 Check out the **Room Blue** scene in the **HelloWorld** sample! There
-you can see WebViews like this one and much more.
+you can see web slates like this one and much more.
 
-## Add a WebView to your Mesh Environment
+## Add a WebSlate to your Mesh Environment
 
-Adding a WebView to your Environment should be a relatively
+Adding a WebSlate to your Environment should be a relatively
 straightforward process so long as you have a Unity project set up to
 create Mesh Environments or artifacts.
 
@@ -188,59 +199,59 @@ If you haven't already imported the Mesh Toolkit, import it:
 
 **com.microsoft.mesh.toolkit-X.X.X.tgz**
 
-### Add a WebView prefab to your project
+### Add a WebSlate prefab to your project
 
 #### Mesh Toolkit Context Menu (Recommended)
 
 Right-click the scene hierarchy, navigate to "Mesh Toolkit," and then
-click "WebView." You can also click the "+" button at the top left of
-the hierarchy window to see the same menu. Once you've added a WebView,
+click "WebSlate." You can also click the "+" button at the top left of
+the hierarchy window to see the same menu. Once you've added a WebSlate,
 add a URL to display content in Mesh.\
 \
 ![Image of adding the Mesh Toolkit using the context menu](../../../media/webview-developer-guide/image006.png)
 ![Add Mesh Toolkit to Hierarchy in Unity](../../../media/webview-developer-guide/image007.png)
 
-Once you've added the WebView, position it and enter the URL you want to
+Once you've added the WebSlate, position it and enter the URL you want to
 be displayed.
 
 ### Authoring Package
 
-You can also find the WebView manually by navigating or searching for it
-inside the authoring package. Search for "WebView" in your project, and
+You can also find the WebSlate manually by navigating or searching for it
+inside the authoring package. Search for "WebSlate" in your project, and
 make sure you're searching inside "Microsoft Mesh Toolkit Authoring":
 
 ![Authoring package install of Mesh Toolkit](../../../media/webview-developer-guide/image008.png)
 
 Drag and drop the prefab into your scene, then add a URL to display on
-the WebView:
+the WebSlate:
 
-![](../../../media/webview-developer-guide/image009.png)
+![Add the WebSlate prefab](../../../media/webview-developer-guide/WebSlate-Drag-Drop.png)
 
-# Preview WebView in Unity Play Mode
+# Preview WebSlate in Unity Play Mode
 
-To view a URL displayed in your WebView more quickly, you can use Unity
+To view a URL displayed in your WebSlate more quickly, you can use Unity
 Play Mode. Aside from using the Play Mode, the only other way to see
-your WebView is to upload it using the Mesh Toolkit Uploader and view it
+your WebSlate is to upload it using the Mesh Toolkit Uploader and view it
 in a Mesh experience.
 
 In the Inspector window, add a URL to the Web View (Script) via the
 Current URL property:
 
-![Screenshot of unity WebView component with a url input into it. Web URL is bing.com](../../../media/webview-developer-guide/image010.png)
+![Screenshot of unity WebSlate component with a url input into it. Web URL is bing.com](../../../media/webview-developer-guide/image010.png)
 
 Press the Unity editor Play button to view your Web page:
 
 ![](../../../media/webview-developer-guide/image011.png){width="6.001850393700788in"
 height="2.675824584426947in"}
 
-You can navigate to new URLs on your WebView while running in Playmode
+You can navigate to new URLs on your WebSlate while running in Playmode
 by changing the "Current URL" property and clicking "Navigate":
 
 ![](../../../media/webview-developer-guide/image012.png)
 
-## Enable WebView interaction for Unity Play Mode
+## Enable WebSlate interaction for Unity Play Mode
 
-To enable interaction in the WebView, you have to set up a few things.
+To enable interaction in the WebSlate, you have to set up a few things.
 
 1. Navigate to the PlaymodeSetup object in the authoring package and
     drag it into your scene.
@@ -259,35 +270,35 @@ To enable interaction in the WebView, you have to set up a few things.
     This will be your floor. Ensure the Game Object is positioned at the
     origin (0,0,0).
 
-3. Position the WebView so it sits in front of the PlaymodeSetup
+3. Position the WebSlate so it sits in front of the PlaymodeSetup
     character:
 
     ![A picture containing sky Description automatically
     generated](../../../media/webview-developer-guide/image016.png)
 
 4. Click the play button, and double click to interact with the Web
-    page displayed in the WebView:
+    page displayed in the WebSlate:
 
     ![Graphical user interface, application Description automatically
     generated](../../../media/webview-developer-guide/image017.png)
 
-**Great job! You added a custom WebView to your Unity scene and tested
+**Great job! You added a custom WebSlate to your Unity scene and tested
 the interaction in Unity Play Mode.**
 
 **Now you're ready to upload the Environment to Mesh and share your
 creation with the world!**
 
-# WebView in Visual Scripting
+# WebSlate in Visual Scripting
 
 Visual Scripting offers a \"no-code\" approach to adding behavior to a
-scene. This means that developers can now implement WebView
+scene. This means that developers can now implement WebSlate
 functionality and behavior without the need for traditional programming.
 Instead, a visual interface is provided, enabling users to define and
 connect various actions and events in a scene. This simplifies the
 process of adding interactivity and behavior, making it accessible to
 individuals without extensive programming knowledge or experience.
 
-To enable visual scripting using WebView, you must set up a few things.
+To enable visual scripting using WebSlate, you must set up a few things.
 
 1. Go to **Edit** \> **Project Settings**.
 
@@ -308,32 +319,32 @@ To enable visual scripting using WebView, you must set up a few things.
 
     Visual Scripting adds the **Microsoft.MixedReality.WebView** and its
     nodes to the Node Library. To use the nodes in your project, add
-    **WebView** type to your Type Options and regenerate the Node Library.
+    **WebSlate** type to your Type Options and regenerate the Node Library.
 
-    ![Screenshot of Microsoft.MixedRealtiy.WebView from the assembly menu in Unity](../../../media/webview-developer-guide/image020.png)
+    ![Screenshot of WebSlate from the assembly menu in Unity](../../../media/webview-developer-guide/image020.png)
 
-    After incorporating the WebView visual scripting node into your project,
+    After incorporating the WebSlate visual scripting node into your project,
     you can utilize it just like any other node in your visual script graph.
-    Here\'s an example of a script graph that loads a new URL in WebView
+    Here\'s an example of a script graph that loads a new URL in WebSlate
     when the state of a graph variable changes.
 
-    ![Visual scripting example in Unity of a WebView](../../../media/webview-developer-guide/image021.png)
+    ![Visual scripting example in Unity of a WebSlate](../../../media/webview-developer-guide/image021.png)
 
-# WebView in Mesh Scripting
+# WebSlate in Mesh Scripting
 
-Developers now can add a WebView to their scripted worlds. This means
-that a WebView can be navigated through a MeshApp script and therefore
+Developers now can add a WebSlate to their scripted worlds. This means
+that a WebSlate can be navigated through a MeshApp script and therefore
 synchronized across users. For example, create an app containing a
-WebView node and one or more TouchSensor nodes. Then, you can set up
-your TouchSensor's click event handler to navigate the WebView to a
-different URL. By adding a Mesh App script to WebView, your users now
-can update the WebView contents interactively.
+WebSlate node and one or more TouchSensor nodes. Then, you can set up
+your TouchSensor's click event handler to navigate the WebSlate to a
+different URL. By adding a Mesh App script to WebSlate, your users now
+can update the WebSlate contents interactively.
 
-![Showcase GIF of WebViews in Mesh Scripting](../../../media/webview-developer-guide/image022.gif)
+![Showcase GIF of web slates in Mesh Scripting](../../../media/webview-developer-guide/image022.gif)
 
-Refer to the [Visual scripting overview](../Scripting%20your%20scene%20logic/visual-scripting-overview.md) for further guidance on the WebView node in Mesh Apps.
+Refer to the [Visual scripting overview](../Scripting%20your%20scene%20logic/visual-scripting-overview.md) for further guidance on the WebSlate node in Mesh Apps.
 
-# Feedback for WebView
+# Feedback for web content in Mesh
 
 ![Screenshot of feedback button in the Mesh app](../../../media/webview-developer-guide/image023.png)
 
@@ -342,7 +353,7 @@ triaged and incorporated quickly.
 
 ![Screenshot of the feedback button in the Mesh app](../../../media/webview-developer-guide/image024.png)
 
-For WebView feedback, include "**\[WebView\]**" or **a mention of WebView**
+For WebSlate feedback, include "**\[web content\]**" or **a mention of WebSlate**
 in your feedback.
 
 If you're not able to give feedback or report bugs using the Feedback button in Mesh, use the Teams chats with your Microsoft partners, or contact your Microsoft partners directly.
