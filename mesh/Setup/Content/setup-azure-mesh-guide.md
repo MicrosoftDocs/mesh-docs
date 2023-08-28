@@ -389,3 +389,73 @@ Mesh Apps are dotnet based apps that are run in the Cloud. The Mesh Toolkit Uplo
 To learn about MeshApps cloud infrastructure deployment, see the [Set cloud scripting infrastructure in Azure](setup-cloud-scripting-infrastructure.md) article.
 
 
+## Troubleshooting Azure set up
+
+### World creation errors
+
+#### Consider any Azure policies that may affect Mesh world creation
+
+Azure configurations are unique to each corporate environment. As such, there may be Azure policies that affect deployment and provisioning of Mesh worlds.
+
+**For reference, Mesh must be able to create:**
+
+- Resources or resource groups are required to contain certain tags
+- Storage account creation is controllable via that Multi-region storage account toggle when creating a Mesh world. These regions are West Central US, East Asia or UK West.
+- Storage account replication across regions is not allowed
+
+
+#### How to diagnose the cause a world deployment failure
+
+1. When you receive an error upon deployment, it may be hard to read and take action from it:
+    :::image type="content" source="../../media/admin-azure-mesh-guide/image038.jpg" alt-text="world deployment error":::
+1. In the **Status** column, select **Error details**.
+    :::image type="content" source="../../media/admin-azure-mesh-guide/image039.png" alt-text="world deployment error":::
+1. By doing this, you should see the **Errors** > **Summary** page open:\
+    :::image type="content" source="../../media/admin-azure-mesh-guide/image040.png" alt-text="world deployment error":::
+1. Alternatively, in the **Operation details** column, select **Operation details** to see the Status message. You may need to scroll down to see the Error message:
+    :::image type="content" source="../../media/admin-azure-mesh-guide/image041.jpg" alt-text="world deployment error":::
+
+    **Fix deployment failure**
+
+1. In this example of deployment failure, the cause of the failure is that there’s a policy called "Storage accounts should disable public network access" which conflicts with the current storage account creation. Talk to your Azure policy administrators about any policies that are blocking Mesh world deployment and see if you can negotiate a policy that satisfies everyone's requirements.  As an option, you can ask for an additional "sandbox" subscription to be provisioned for Mesh, or even create a separate test tenant with less restrictive policies to do initial testing.
+
+**Further detail on deployment failures**
+
+See the [Find error codes - Azure Resource Manager | Microsoft Learn](/azure/azure-resource-manager/troubleshooting/find-error-code?tabs=azure-portal) guide to diagnose deployment failures deeper.
+
+### Multi-region storage when creating Mesh world
+
+**Multi-region storage for a Mesh world**. In some cases, toggling Multi-region storage to ON for a Mesh world can create some delay or bugginess when the world is created due to complexities of this configuration.
+
+- What does multi-region storage toggle do?
+
+    **Multi-region storage > OFF** : 1 storage account is created in the West Central US.
+
+    **Multi-region storage > ON** : 3 storage accounts are created in West Central US, UK West, and East Asia (as stated in the UI tooltip in Azure portal).
+
+- Solutions
+
+    *Potential solution*: In general, it’s best to wait at least 15 minutes between creating Mesh world to ensure that all deployment is properly propagated between services. In theory, the deployment should be relatively instantaneous, but try waiting a bit after creating a new Mesh world before testing to see if that helps.
+
+    *Potential solution*: Try creating a new Mesh world and toggle the Multi-region storage to **OFF**.
+
+### World creation fails after attempting all above troubleshooting steps
+
+If world creation still fails and there isn't enough information in the operation details try this: 
+In the same tenant, create an empty, tagless resource group in the West Central US region by running this command in Azure CloudShell (Bash) to see which policies were responsible and work with your Azure admins to see if you can find a resolution.
+
+
+```dotnetcli
+az group create --name meshVerificationResourceGroup --location westcentralus
+```
+
+If you have multiple subscriptions in the same tenant, you can set the subscription you want with the above command:
+
+```dotnetcli
+az account set --subscription [subId]
+```
+
+
+**World creation succeeds with tagless group, but world provisioning still fails?**
+
+Please use the Microsoft Teams channel for Mesh Early Adopters Onboarding and report the correlation ID for the failed world creation attempt.
