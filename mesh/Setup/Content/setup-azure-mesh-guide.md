@@ -1,5 +1,14 @@
-v
+---
+title: Set up Mesh in Azure
+description: Set up Azure to manage Mesh worlds.
+author: typride
+ms.author: tmilligan
+ms.date: 7/27/2023
+ms.topic: Tutorial
+keywords: Microsoft Mesh, Azure, admin, documentation, features
+---
 
+# Set up Mesh in Azure
 Microsoft Mesh offers a host of powerful features that enhance communication and collaboration in remote and hybrid workplaces. Corporate teams can interact in 3D with their custom expressive Avatars.
 
 All this, with the power of Azure for Resource management and Identity and Access Management (IAM) policies to suit most needs that are already met by Microsoft Teams, with the added power of three-dimensional environments. This document covers the security, administration, and deployment of Mesh within your business.
@@ -16,7 +25,7 @@ The Azure portal (Preview) is the link to use as a Admin tasked with setting up 
 
 [Azure portal (Preview)](https://portal.azure.com/?microsoft_azure_metaverseExtension_assettypeoptions=%7B%22metaverse%22%3A%7B%22options%22%3A%22%22%7D%7D&microsoft_azure_metaverseExtension=true&feature.canmodifyextensions=true#home)
 
-## Azure portal features for Meshh
+## Azure portal features for Mesh
 
 1. Tenant set up. Set up the tenant for Mesh inside Azure portal to set up service principals for managing Mesh worlds resources, users, and events.
 1. Mesh worlds creation and management. Create and manage Mesh worlds to suit corporate needs and organizational structures.
@@ -73,7 +82,10 @@ For more information about service tags, see the [Azure service tags overview](/
 ### Conditional access
 
 Conditional access is an important part of a zero-trust approach to helping secure your network and resources. As part of zero trust, many companies use conditional access features with Azure Active Directory and Microsoft Intune to restrict the types of devices that are permitted to access the network, and even the operating system version and configuration on those devices; devices that meet the defined profile are allowed in, and any other device that is not specified is denied access.
-In the future, Meta has stated that Quest 2 will provide support for MDM which will probably provide more specific control over how Quest 2 devices are permitted or denied access. In the meantime, because Quest 2 devices cannot be recognized and managed, allowing them access to your network may involve changes to your conditional access policy that go against company security standards. Each company using Mesh in pre-release will have to work with their security and endpoint management teams to decide if a policy can be constructed that is acceptable to the company’s risk profile while still permitting access to Quest 2 devices.
+
+In the future, Meta has stated that Quest 2 will provide support for MDM which will probably provide more specific control over how Quest 2 devices are permitted or denied access. 
+
+In the meantime, because Quest 2 devices cannot be recognized and managed, allowing them access to your network may involve changes to your conditional access policy that go against company security standards. Each company using Mesh in pre-release will have to work with their security and endpoint management teams to decide if a policy can be constructed that is acceptable to the company’s risk profile while still permitting access to Quest 2 devices.
 
 For more information about Conditional Access, see [conditional access and common uses of Intune](/mem/intune/protect/conditional-access-intune-common-ways-use).
 
@@ -179,8 +191,6 @@ Azure portal is the place to create and manage Mesh worlds. Within each Mesh wor
 
 ### Create a Mesh world in Azure portal
 
-
-
 > [!IMPORTANT]
 > Ensure that you’re logged into the account under the tenant that was shared with Microsoft for use with Mesh.
 > [!IMPORTANT]
@@ -192,10 +202,13 @@ Azure portal is the place to create and manage Mesh worlds. Within each Mesh wor
 
 1. Type Mesh worlds into the search bar and then select Mesh worlds in the dropdown list. Or select Mesh worlds in the available resources list at the top of the Azure portal Home.
 1. Click **Create**.
+
     :::image type="content" source="../../media/admin-azure-mesh-guide/image005.png" alt-text="Create":::
+
 1. Select your Subscription.
     > [!IMPORTANT]
     > Ensure that you’ve selected a subscription that has been shared with Microsoft for use with Mesh.
+
 1. Select your Resource Group or press Create New.
 1. Select your Region.
 1. Enter a Resource Name. This is the identifier for the resource in Azure.
@@ -203,22 +216,28 @@ Azure portal is the place to create and manage Mesh worlds. Within each Mesh wor
 1. Enter the Display Name. This is the name that will be shown in the Mesh Browser.
 1. Enter a Description.
 1. Press Review + Create.
+
     :::image type="content" source="../../media/admin-azure-mesh-guide/image006.png" alt-text="Next: Review and Create":::
+
 1. Review and confirm details.
 1. Press **Create**.
 
     Wait around two minutes while deployment is in progress.
     :::image type="content" source="../../media/admin-azure-mesh-guide/image007.png" alt-text="Next: Review and Create":::
+
 1. Select **Go to resource**.
+
     :::image type="content" source="../../media/admin-azure-mesh-guide/image008.png" alt-text="Go to resource":::
+
 1. Click Mesh world Images on the left-side menu. 
 1. Upload a Mesh world icon image and Mesh world background image. Click Save.
 1. Note that the Mesh world Icon is the one that shows up on the left-side bar in the Mesh Dashboard.
+
     :::image type="content" source="../../media/admin-azure-mesh-guide/image009.png" alt-text="Mesh world location ":::
 
 #### Issues with world creation?
 
-See the troubleshooting section for help with world creation errors. (HEADERLINK)
+See the T[roubleshooting section](#troubleshooting-azure-set-up) for help with world creation errors.
 
 ## Identity and Access Management (IAM)
 
@@ -298,6 +317,7 @@ To enable a user to manage specific Mesh worlds, you should assign them to the M
 1.Access controls: Allows control over the Mesh world that they have access to based on the permissions set: Owner, contributor, or Read.
 
 1. Content contributor. Allows users to upload through the Mesh Toolkit Uploader to Mesh worlds they have access to or be an Event Producer.
+
     :::image type="content" source="../../media/admin-azure-mesh-guide/image013.png" alt-text="Event access schematic":::
 
 ### Content contributors
@@ -320,7 +340,7 @@ Content contributors will need a subscription ID and resource group when deployi
 
 Now, a user with Content contributor privileges will be able to create, manage, or customize events in Mesh, and use the Mesh Toolkit Uploader to upload environment to each Mesh world they are a Content contributor in.
 
-For more detail, see the MeshApp Infrastructure section. (HEADERLINK)
+For more detail, see the [MeshApp Infrastructure article](../../Create/Developing%20for%20Mesh/Scripting%20your%20scene%20logic/cloud-scripting-infrastructure.md).
 
 ### Mesh users
 
@@ -332,13 +352,13 @@ Normal Mesh users without any extra permissions just need to be added to a speci
 
 ### Giving Azure access to a Mesh world
 
-#### User needs to create a Mesh world
+**User needs to create a Mesh world**
 
 |Action  | Description  |
 |---------|---------|
 |*Go to resource group** > **Access control** > **Add user as Owner or Contributor*    |  Add the user to a resource group, which in effect gives them permission to use a subscription. The person adding others to resource groups needs to be an admin for the whole tenant.       |
 
-#### User needs access to a specific Mesh world in Azure portal
+**User needs access to a specific Mesh world in Azure portal**
 
 |Action  | Description  |
 |---------|---------|
@@ -346,21 +366,20 @@ Normal Mesh users without any extra permissions just need to be added to a speci
 
 ### Giving Azure access to edit events
 
-#### User needs to create events/spaces for all Mesh worlds in resource group
+**User needs to create events/spaces for all Mesh worlds in resource group**
 
 |Action  | Description  |
 |---------|---------|
 |*Go to resource group > Access control > Add the user > choose role (Owner/Contributor)*   |  Add the user in the Access control tab for the specific Mesh world. The Owner role allows for full management, including edits to the Mesh world Access policy. The Contributor role allows for management of events, excluding edits of the Mesh world Access control.      |
 
-#### User needs to create events for specific Mesh world(s)
-
+**User needs to create events for specific Mesh world(s)**
 |Action  | Description  |
 |---------|---------|
 |*Go to resource > Access control > Add the user > choose role (Owner/contributor)*   |  Add the user at the resource level i.e., a specific Mesh world. This will enable them to create events and invite users for a specific Mesh world.      |
 
 ### Giving Event Producer privileges to create, manage, or customize events
 
-#### User needs to create, manage, and customize events in Mesh (collaboration session)
+**User needs to create, manage, and customize events in Mesh (collaboration session)**
 
 |Action  | 
 |---------|
@@ -368,7 +387,7 @@ Normal Mesh users without any extra permissions just need to be added to a speci
 
 ### Giving access to upload environments from the Mesh toolkit uploader
 
-#### User needs to upload but not see or manage worlds in Azure
+**User needs to upload but not see or manage worlds in Azure**
 
 |Action  | 
 |---------|
@@ -376,7 +395,7 @@ Normal Mesh users without any extra permissions just need to be added to a speci
 
 ### Giving access to upload environments from the Mesh toolkit uploader or deploy MeshApps
 
-#### User needs to upload but not see or manage worlds in Azure
+**User needs to upload but not see or manage worlds in Azure**
 
 |Action  | 
 |---------|
@@ -387,7 +406,6 @@ Normal Mesh users without any extra permissions just need to be added to a speci
 Mesh Apps are dotnet based apps that are run in the Cloud. The Mesh Toolkit Uploader helps developers provision their azure resources and deploy their web app. These are the steps involved in deploying the Mesh Apps cloud infrastructure today.
 
 To learn about MeshApps cloud infrastructure deployment, see the [Set cloud scripting infrastructure in Azure](setup-cloud-scripting-infrastructure.md) article.
-
 
 ## Troubleshooting Azure set up
 
