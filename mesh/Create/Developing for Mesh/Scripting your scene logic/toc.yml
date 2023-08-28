@@ -1,7 +1,7 @@
 items:
-  - name: Visual scripting overview
-    href: visual-scripting-overview.md
-  - name: Cloud scripting overview
-    href: cloud-scripting-overview.md
-  - name: Cloud scripting infrastructure
-    href: cloud-scripting-infrastructure.md
+  - name: Mesh Scripting overview
+    href: mesh-scripting-overview.md
+  - name: Cloud scripting
+    href: cloud-scripting.md
+  - name: Visual scripting
+    href: visual-scripting.md
