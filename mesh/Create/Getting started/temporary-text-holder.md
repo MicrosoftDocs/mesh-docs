@@ -1,6 +1,6 @@
 ---
-title: Create new Mesh project in Unity
-description: Learn how to create a new Mesh project in Unity and upload your first environment.
+title: Create and set up a new Unity project
+description: Learn how to create a new Mesh project in Unity.
 author: typride
 ms.author: tmilligan
 ms.date: 7/31/2023
@@ -8,136 +8,19 @@ ms.topic: How to
 keywords: Microsoft Mesh, Unity, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-# Create a new Unity project
 
-If you know what you want to build, use this guidance to create your own
-Environment from scratch. You can add your own content to the
-Environment and then upload it as an *Environment* to Mesh.
 
-1. Create a new Unity project using the **3D URP** (Core) template.
 
-![Rectangle Description automatically generated with low
-confidence](../../media/get-started-developing-mesh/image008.png)
 
-2. In Unity, create a new scene using the **Standard (URP)** scene
-    template. Save it with an appropriate name.
 
-3. In the **Hierarchy**, delete **Global Volume**.
 
-4. Add content to the scene.
 
-**Notes**
 
-- For tips on maximizing your creativity here, see our document named
-    "Mesh 3D Design and Performance Guide". There are also guides for
-    implementing advanced features such as Mesh Physics and Scripting.
-
-- **IMPORTANT**: Every scene in your project requires a NavMesh so
-    that the user can navigate using teleport. [Learn more about the
-    NavMesh](https://docs.unity3d.com/Manual/nav-Overview.html).
-
-## Importing packages into a Mesh project
-
-Import your packages into a new project or a pre-existing project. The
-process is mostly identical, but you may encounter some configuration
-notifications with upgrading and replacing older packages.
-
-## Prerequisite for a pre-existing project
-
-- Unity v. 2021.3.21f1+.
-
-## Import packages
-
-1. In Unity, open the Package manager, then select the "+" drop-down, and then select **Add package from tarball**.
-    ![](../../media/get-started-developing-mesh/image009.jpg)
-
-2. Navigate to the folder named *Packages* in the unzipped file you
-    downloaded earlier, and then add the *toolkit* file outlined in red
-    in the image below.
-    ![A screen shot of a computer Description automatically generated with low confidence](../../media/get-started-developing-mesh/image010.jpg)
-
-3. If you get a Warning, as shown below, select **Yes** to allow the
-    packages to properly configure your project.
-
-    ![Graphical user interface, text Description automatically generated](../../media/get-started-developing-mesh/image011.jpg)
-
-    You may see other dialogues, such as this one:
-
-    ![](../../media/get-started-developing-mesh/image12.jpg)
-
-    If you see a dialog box named **Project Settings for Mesh** with a **Configure Settings** button, select that button.
->
-Unity may restart during this process.
-
-4. Once you've installed the package, verify that you see it in the
-    Package Manager.
-
-    If so, great job -- you're now ready to develop for Mesh and upload Environments to a Mesh world.
-
-## Building for single and multiple platforms
-
-Before starting to build your Environment, it's good to keep in mind
-that Mesh events can be experienced on two different platforms: desktop
-PC and Android, which powers the Meta Quest headset. (In the future,
-this may be expanded to more platforms.) Since desktop PCs typically
-have far more power than mobile devices using Android, there are several
-potential scenarios to consider here:
-
-1. Create a single scene and then build and publish it for PC only.
-    You can make this a "high resolution" scene that leverages the full power of the PC.
-
-2. Create a single scene and then build and publish it for Android only.
-
-    In this scenario, your scene must be a more "low resolution" version that will run performantly on Quest/Android.
-
-3. Create a single scene and then build and publish it for PC *and* Android.
-
-This scene must also be a more "low resolution" version to accommodate
-Quest/Android. This means that your Environment won't take advantage
-of all the PC power even when it runs on a PC.
-
-The steps for each of these are explained in later sections. To learn
-more about optimizing for different platforms, see the document named
-*Mesh 3D Design and Performance Guide.pdf.*
-
-## Things to consider before getting started
-
-- Environments can't depend on any scripts that aren't included in the Mesh Toolkit Uploader package. This includes scripts you've added to the project manually or ones obtained by installing other packages.
-
-- If you get a dialogue asking you to configure project settings, confirm to ensure these items show up in the Menu bar.
+===================================
 
 ## Add the Mesh Thumbnail Camera
 
-Adding the Mesh Thumbnail Camera provides a thumbnail image that will be
-added to your Environment listings in the Azure Portal and the Mesh app.
-This comes in handy when you're selecting Environments in either place
-because it gives you a visual reminder of what the Environment looks
-like.
 
-**To add the thumbnail camera to the scene and sets its view:**
-
-1. In the **Scene** window, adjust the view so that it shows what you
-    want to display in the thumbnail (the Thumbnail Camera's view will
-    be based on the **Scene** view).
-
-2. Select the "+" drop-down located below the **Hierarchy** tab, and
-    then select **Mesh Toolkit** \**Thumbnail Camera**.
-
-3. To confirm that the view in the Thumbnail Camera is what you want,
-    in the **Hierarchy**, select **MeshThumbnailCamera**. The Camera's
-    view appears in a small window in the lower right of the **Scene**
-    view.
-
-    **Note**: If you decide you want a different view for the Thumbnail
-    Camera, you can adjust it directly in the **Scene** view or change its
-    **Position** and **Rotation** values in the **Inspector** prior to
-    uploading your Environment to Mesh.
-
-    There are no set rules for how your thumbnail should look---it's totally
-    up to you. For the following example, we chose a close-up front view of
-    a wind turbine.
-
-    ![A screenshot of a computer Description automatically generated](../../media/get-started-developing-mesh/image013.jpg)
 
 ## Create the Environment
 

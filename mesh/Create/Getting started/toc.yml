@@ -1,9 +1,11 @@
 items: 
+  - name: Mesh Development Overview
+    href: development-overview.md
+  - name: Prerequisites
+    href: prerequisites.md
+  - name: Download the Mesh Toolkit
+    href: download-the-mesh-toolkit.md
   - name: Choose your journey
     href: choose-your-journey.md
-  - name: Install tools and upgrade
-    href: install-tools-upgrade.md
-  - name: Start with a sample
-    href: start-with-sample.md
-  - name: Create new Mesh project
-    href: create-new-mesh-project.md
+  - name: Mesh 101 tutorial
+    href: mesh-101.md

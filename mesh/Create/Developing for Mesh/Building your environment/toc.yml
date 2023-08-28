@@ -1,23 +1,17 @@
 items: 
-- name: Setting up your scene
-  href: setting-up-your-scene.md
+- name: Creating a new project
+  href: creating-a-new-project.md
+- name: Importing the Mesh Toolkit
+  href: importing-the-mesh-toolkit.md
+- name: Building for single and multiple platforms
+  href: building-for-single-and-multiple-platforms.md
+- name: Adding a thumbnail camera
+  href: adding-a-thumbnail-camera.md  
 - name: Animations and timelines
   href: animations-and-timelines.md
 - name: Graphics tools
   href: graphics-tools.md
-- name: Fonts
-  href: fonts.md
-- name: Video
-  href: video.md
 - name: Web content
   href: webcontent.md
-- name: Equippable and manipulable objects
-  href: eqiuppable-manipulatable-objects.md
 - name: Physics interactions
   href: physics-interactions.md
-- name: Player and object triggers
-  href: player-object-triggers.md
-- name: Anchors and tethers
-  href: anchors-tethers.md
-- name: Buttons and dialogs
-  href: buttons-dialogs.md
