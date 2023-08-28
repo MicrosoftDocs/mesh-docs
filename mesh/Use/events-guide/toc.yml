@@ -1,3 +1,11 @@
 items:
-  - name: Mesh events guide
-    href: mesh-events-guide.md
+  - name: Getting started
+    href: getting-started-events.md
+  - name: Create event
+    href: create-event.md
+  - name: Manage event
+    href: manage-event.md
+  - name: Produce event
+    href: produce-event.md
+  - name: Help with events
+    href: events-help.md
