@@ -787,7 +787,7 @@ guests:
 
 ### Mesh
 
-|Term  | Descriptiong  |Images  |
+|Term  | Description  |Images  |
 |---------|---------|---------|
 | Mesh app           |  The standalone app for Mesh                 |  (../../media/mesh-event-producer-guide/image044.png)       |
 | Home button        |  Accessed through the Dashboard button       |  (../../media/mesh-event-producer-guide/image045.png)       |
