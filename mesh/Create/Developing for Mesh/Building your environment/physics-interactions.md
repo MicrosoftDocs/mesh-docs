@@ -1,14 +1,15 @@
 ---
-title: Mesh physics guide
-description: Guide to using Mesh physics to create environments for Mesh.
+title: Mesh physics
+description: Guide to using Mesh physics when creating Environments for Mesh.
 author: typride
-ms.author: tmilligan
-ms.date: 7/27/2023
+ms.author: vinnietieto
+ms.date: 8/23/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, mesh physics, Immersive spaces, Avatars, getting started, documentation, features
+ms.prod: mesh
+keywords: Microsoft Mesh, Mesh physics, physics, environments
 ---
 
-# Overview
+# Mesh Physics
 
 In a Mesh experience, physics simulation is key to enabling engaging dynamic content. In order to provide Mesh participants with high quality shared physics experiences and offer developers a productive workflow in creating custom content, we've created the *Mesh Physics* system (usually referred to as "Mesh Physics" in this document). Mesh Physics is based on local authoritative simulation, which results in a very simple architecture. There's no need for server-side logic and special logic on the clients. Most importantly, this approach results in a very responsive and low-latency experience for each player interacting with their environment, even when connected to a high-latency network.
 
@@ -18,43 +19,43 @@ Here's a sampling what you can do with Mesh Physics features:
 
 * Display a tether when a participant reaches for a distant object.
 
-![Screen shot of a tether appearing when you reach for a distant object.](../../../media/physics-interactions/004-tether.png)
+  ![Screen shot of a tether appearing when you reach for a distant object.](../../../media/physics-interactions/004-tether.png)
 
 * Make objects “throwable” (darts, different types of balls: for example, snowballs or bowling balls).
 
-![Screen shot of darts and a dart board.](../../../media/physics-interactions/001-darts.png)
+  ![Screen shot of darts and a dart board.](../../../media/physics-interactions/001-darts.png)
 
 * Control how gravity affects objects.
 
-![Screen shot of a game that uses gravity.](../../../media/physics-interactions/105-ball-drop.png)
+  ![Screen shot of a game that uses gravity.](../../../media/physics-interactions/105-ball-drop.png)
 
 * Fire certain events when an object is grabbed, carried and released.
 
 * Make an object “sticky”—it sticks to whatever it hits. Examples: throwing a dart at a dart board, attaching a picture to a wall.
 
-![Screen shot of paintings attached to a wall.](../../../media/physics-interactions/003-sticky-pictures.png)
+  ![Screen shot of paintings attached to a wall.](../../../media/physics-interactions/003-sticky-pictures.png)
 
 * Add auto-play animations that interact with physics bodies.
 
-![Screen shot of an animation trigger.](../../../media/physics-interactions/010-animation-trigger.png)
+  ![Screen shot of an animation trigger.](../../../media/physics-interactions/010-animation-trigger.png)
 
 * Allow participants to reset objects (for example, reset a chess board, or clean up a room after objects have been scattered about).
 
-![Two-part screen shot of a room with furniture in disarray and then the same room with furniture back in place.](../../../media/physics-interactions/002-rearrange.png)
+  ![Two-part screen shot of a room with furniture in disarray and then the same room with furniture back in place.](../../../media/physics-interactions/002-rearrange.png)
 
 * Fire events when an object enters a trigger collider.
 
-![Screen shot of a trigger volume.](../../../media/physics-interactions/030-trigger-volume.png)
+  ![Screen shot of a trigger volume.](../../../media/physics-interactions/030-trigger-volume.png)
 
 * Create a containment field. Objects will stay within the boundaries of the field.
 
-![Screen shot of a containment field.](../../../media/physics-interactions/061-containment-field-in-scene-view.png)
+  ![Screen shot of a containment field.](../../../media/physics-interactions/061-containment-field-in-scene-view.png)
 
 * Control the velocity of an object.
 
 * Control the buoyancy of objects&mdash;for example, make boats and other seagoing objects “float.”
 
-![Screen shot of a boat floating on water.](../../../media/physics-interactions/007-buoyancy-field.png)
+  ![Screen shot of a boat floating on water.](../../../media/physics-interactions/007-buoyancy-field.png)
 
 * Control the angular velocity of an object.
 
@@ -62,11 +63,11 @@ Here's a sampling what you can do with Mesh Physics features:
 
 * Create “bouncy” objects that bounce off each other with a predefined velocity.
 
-![Screen shot of numerous balls in mid-bounce.](../../../media/physics-interactions/006-balls-bounce.png)
+  ![Screen shot of numerous balls in mid-bounce.](../../../media/physics-interactions/006-balls-bounce.png)
 
 * Teleport an object to a new position and (optional) new rotation.
 
-![Two-part screen shot of the start and end points of a teleportation process.](../../../media/physics-interactions/034-teleport-path.png)
+  ![Two-part screen shot of the start and end points of a teleportation process.](../../../media/physics-interactions/034-teleport-path.png)
 
 ## Sample Projects that use Mesh Physics
 
@@ -90,7 +91,7 @@ The *DartRoom* project (scene: *DartRoom*) uses most physics features. In this p
 
 - **Globe:** The globe rotates, demonstrating a motored hinge. The globe also has a gravity field which influences small objects entering a spherical trigger volume. Drag some cups close to the globe and watch them rotate around it like satellites.
 
-![Screen shot of a gravity field causing cups to orbit around a globe like satellites.](../../../media/physics-interactions/005-gravity.png)
+  ![Screen shot of a gravity field causing cups to orbit around a globe like satellites.](../../../media/physics-interactions/005-gravity.png)
 
 This is a beautifully rendered scene that demonstrates the power of combining appealing visuals with the creative use of Mesh Physics features. Feel free to inspect the scene and play with it!
 
@@ -102,7 +103,7 @@ Open the *PhysicsShowcase* scene in this project and select the Play button. You
 
 ### Mesh 101 Tutorial
 
-In the Mesh 101 tutorial (sample name: *Mesh101.Unity*), Chapter 4 walks you step-by-step through the process of setting up three Mesh Physics features: grabbing and releasing objects, triggering an animation using a trigger volume, and constraining an object with a containment field. To learn more, see our document named *Mesh 101 Tutorial*, Chapter 4: *Move objects and trigger animations with Mesh Physics*.
+In the Mesh 101 tutorial (sample name: *Mesh101.Unity*), Chapter 4 walks you step-by-step through the process of setting up three Mesh Physics features: grabbing and releasing objects, triggering an animation using a trigger volume, and constraining an object with a containment field. To learn more, see our article named *Mesh 101 Tutorial*, Chapter 4: *Move objects and trigger animations with Mesh Physics*. TBD
 
 ### Other projects with Mesh Physics
 
@@ -116,11 +117,11 @@ As you explore our other sample projects, you'll find various instances of Mesh 
 
 * A username and password for the Azure Portal so you can upload your work.
 
-* Your account must be added as a Contributor to the Mesh world you’re trying to publish to. If you’re unsure about this, check with your IT admin.
+* Your account must be added as a Contributor to the Mesh world you’re trying to publish to TBD. If you’re unsure about this, check with your IT admin.
 
-* There must be an existing Mesh World in the Azure Portal that you can upload your work to. To learn more about setting this up, see our document titled *Mesh IT Admin Guide*.  
+* There must be an existing Mesh World in the Azure Portal that you can upload your work to. To learn more about setting this up, see our document titled *Mesh IT Admin Guide* TBD.  
 
-* There must be an existing Unity project that contains the Mesh Uploader (in Mesh terms, this project is used to create an *Environment*), or you must create one. To learn more about creating one, see our document titled *Get Started with Mesh Environments*.
+* There must be an existing Unity project that contains the Mesh Uploader (in Mesh terms, this project is used to create an *Environment*), or you must create one. To learn more about creating one, see our document titled *Get Started with Mesh Environments*. TBD
 
 ## Terminology
 
@@ -194,7 +195,7 @@ After updating the mesh.toolkit packages, any `lib.sharedphysics` content in the
 * Ensure that project is fully backed up (committed to source control)
 * Use the MeshPhysicsUpdater-23_5-to-23_6 tool on the project (available in the Extras/ folder on SharePoint).
 
-![A screen shot of the Mesh Physics Uploader in the Extras folder.](../../../media/physics-interactions/012-physics-uploader.png)
+  ![A screen shot of the Mesh Physics Uploader in the Extras folder.](../../../media/physics-interactions/012-physics-uploader.png)
 
 * Update package dependency
 * After loading, check the Unity console for warnings and errors about necessary manual adjustments.
@@ -258,13 +259,7 @@ After updating the mesh.toolkit packages, any `lib.sharedphysics` content in the
 | StickyBodyTrigger.onlyStickyBodyWithTag
 | TriggerEventsSensor.triggerDelay
 
-# Development
-
-## Quick Start
-
-The Mesh scene **Dartroom** demonstrates a fully designed example environment showcasing elements that are available with the released version of the library. You can find the Dartroom sample in the Mesh Toolkit (see the next section for download instructions).
-
-The scene can be tried out in its final form within the Mesh app: `https://aka.ms/sharedphysics-dartroom-nocode`
+## Development
 
 ### Download the Mesh Toolkit
 
@@ -274,13 +269,13 @@ The scene can be tried out in its final form within the Mesh app: `https://aka.m
 
     ![___](../../../media/physics-interactions/001-packages-go-button.png)
 
-1. 3.	On the **Files and Packages** page, download the latest version of the Mesh Toolkit--it will have a more recent version number than what you see here. Select the three-dot button and then select **Download**.
+1. On the **Files and Packages** page, download the latest version of the Mesh Toolkit--it will have a more recent version number than what you see here. Select the three-dot button and then select **Download**.
 
-    ![___](../../../media/physics-interactions/001-mesh-toolkit-package.png)
+    ![___](../../../media/physics-interactions/001-mesh-toolkit-package-23-10.png)
 
 1.	Place the downloaded zip file in a location where the file path won’t be too long, such as the Windows desktop.
 
-  **Note**: The downloaded zip file’s name may vary depending on your computer setup.
+    **Note**: The downloaded zip file’s name may vary depending on your computer setup.
 
 1.	Unzip the file, and then navigate through the unzipped folder hierarchy until you see folders named **Packages and Samples**. 
 
@@ -313,7 +308,7 @@ By default, Mesh Playmode runs with a single player. To add a second player with
 
 ### Upload your own Environment to your Mesh World
 
-To learn about uploading your Environment to your Mesh World, go to the EAP Onboarding Resources website and download the document named *Get Started with Mesh Environments*.
+To learn about uploading your Environment to your Mesh World, see the article named TBD.
 
 ## Extend existing content using Mesh Physics
 
@@ -338,24 +333,24 @@ To make an existing Unity project Mesh Physics-enabled, the following steps are 
 
 1. Add the prefab named `PlaymodeSetup [NoUpload]` to the scene via the context menu:
 
-  ![Screen shot of the `MeshToolkit|Add PlaymodeSetup` context menu](../../../media/physics-interactions/Add-PlaymodeSetup.png)
+    ![Screen shot of the `MeshToolkit|Add PlaymodeSetup` context menu](../../../media/physics-interactions/Add-PlaymodeSetup.png)
 
-- The avatar is replaced by a simple capsule-based character controller
-- The Camera is now attached to the avatar; the main scene camera is ignored and should be removed.
-- There is slightly downgraded performance due to C# bytecode being executed instead of optimized web-assembly.
-- Single user by default, but also offers to test multiplayer using Playmode split screen.
+    - The avatar is replaced by a simple capsule-based character controller
+    - The Camera is now attached to the avatar; the main scene camera is ignored and should be removed.
+    - There is slightly downgraded performance due to C# bytecode being executed instead of optimized web-assembly.
+    - Single user by default, but also offers to test multiplayer using Playmode split screen.
 
 1. Ensure that the physical origin (0,0,0) is a reasonable place for the character controller to start.
 
-  **Note:** The MeshSDK standard component `SpawnPointConfig` is currently ignored by our character controller.
+    **Note:** The MeshSDK standard component `SpawnPointConfig` is currently ignored by our character controller.
 
 1. Ensure that the static content of the scene contains correctly set up solid colliders. Note that planes are prone to tunneling.
 
-To learn more about Playmode, see the document titled *Get Started with Mesh Environments*, section: *Testing with the Playmode package*.
+To learn more about Playmode, see the document titled *Get Started with Mesh Environments*, section: *Testing with the Playmode package*. TBD
 
-# General tips for building Mesh Physics experiences
+## General tips for building Mesh Physics experiences
 
-You can start with scanning the Unity physics docs: `https://docs.unity3d.com/Manual/PhysicsOverview.html`. There are plenty of resources around on how to optimize physics in Unity.
+You can start with scanning the Unity physics docs: `https://docs.unity3d.com/Manual/PhysicsOverview.html`. There are plenty of resources available on how to optimize physics in Unity.
 
 Mesh Physics comes with some extra challenges:
 
@@ -365,32 +360,32 @@ Mesh Physics comes with some extra challenges:
 - **CPU limitations:** MeshXP runs inside a browser; as a result, its performance is limited. Try to use only a few dozen rigid bodies.
 - **Realistic masses in kg:** Content from various sources might interact in the same scene. This works well if the mass ratios between the objects are reasonable. A good starting point is to assign realistic masses to bodies using kg.
 
-# Feedback & Roadmap
+## Feedback & Roadmap
 
 Mesh Physics is currently under heavy development, and we are very hungry for feedback, suggestions, and feature requests.
 
 Our current roadmap is flexible:
 
-## Short term
+### Short term
 
 - Improve stability and better handling of network package drop
 - Add more control
 - More example scenes
 
-## Medium term
+### Medium term
 
 - Improve scalability, both bandwidth and CPU
 - Integrate interactions with MRTK3 Object Manipulator
 - More example scenes + artifacts
 
-## Long term
+### Long term
 
 - Integrate with client and server-side scripting
 - Add a builder tool, which supports scene graph manipulation. This tool is inspired by Kerbal Space Program. An example would be building cars out of random scene objects.
 
-![A screen shot of building cars out of random scene objects.](../../../media/physics-interactions/005_20220718_135823_image.png)
+  ![A screen shot of building cars out of random scene objects.](../../../media/physics-interactions/005_20220718_135823_image.png)
 
-# Configuring ForceTool interactions: ForceToolConfig
+## Configuring ForceTool interactions
 
 **Important**: As of July 2023, `ForceToolConfig` has been deprecated and replaced by the Object Configuration Layer (OCL), which features components that you can use for Mesh Physics as well as general object and player interactions. `ForceToolConfig` still has some useful features, but if you use it, keep in mind that it will be removed within a few months and you'll have to update your project(s) to use OCL. To learn more, see the document titled *Mesh Object and Player Interactions.pdf*.
 
@@ -402,7 +397,7 @@ Normally, you would create a `ForceToolConfig` at the root of your scene to set 
 
 ![A screen shot showing an object moving due to ForceTool interactions.](../../../media/physics-interactions/006_20220718_202229_image.png)
 
-## Default behaviors
+### Default behaviors
 
 Out-of-the-box, a newly added `ForceToolConfig` makes the physics bodies behave as follows:
 
@@ -414,7 +409,7 @@ Out-of-the-box, a newly added `ForceToolConfig` makes the physics bodies behave 
  
 The following section details how you can customize and override this default behavior.
 
-## Experimental settings
+### Experimental settings
 
 **WARNING**: The interaction with physics objects will be moved to a new architecture that's currently under construction. It's not yet clear which of the current experimental features will be reimplemented in the new model and whether a migration of the individual settings will be possible. Feel free to use the experimental settings until we can offer a replacement, but keep in mind that we don't expect to offer any kind of long term support for them.
 
@@ -424,10 +419,9 @@ The following section details how you can customize and override this default be
 * Menu allows activating experimental configuration
 * Button allows hiding settings, unless non-default settings are present
 
-![Screen shot of the menu of ForceToolConfig script.](../../../media/physics-interactions/ForceToolConfig-Experimental-Menu.jpg)
+  ![Screen shot of the menu of ForceToolConfig script.](../../../media/physics-interactions/ForceToolConfig-Experimental-Menu.jpg)
 
-![Screen shot of the experimental view of ForceToolConfig script.](../../../media/physics-interactions/ForceToolConfig-Experimental.jpg)
-
+  ![Screen shot of the experimental view of ForceToolConfig script.](../../../media/physics-interactions/ForceToolConfig-Experimental.jpg)
 
 **Settings**
 
@@ -573,11 +567,11 @@ The **When Targeting Override Started or Stopped** section covers events that ar
 - **Start Targeting Object** is fired when the carried object comes sufficiently close to an eligible target object for the targeting override to become active.
 - **Stop Targeting Object** is fired when the targeting override becomes inactive. This includes the situation when the object is released while a targeting override is in effect – this means you can rely on each **Start Targeting Object** event being (eventually) followed by a corresponding **Stop Targeting Object** event.
 
-## Recipes
+### Recipes
 
 The many `ForceToolConfig` options – especially around constraints – can be daunting, so here are several practical recipes (also seen in our _Dart Room_ sample scene) to illustrate how we've set up `ForceToolConfig` to arrive at different behaviors.
 
-### Default – move and turn any object
+#### Default – move and turn any object
 
 The default configuration is designed to give the player some small amount of control over random objects.
 
@@ -593,7 +587,7 @@ To maintain the vertical axis...
 - Constraint setup: Define **Targeting** body axis to point towards the player – (X=0, Y=0, Z=-1) in **Player Axes**
 - Constraint reference: Define **Targeting** reference axis the same and choose **Constrain Pointer to Direction**
 
-### Darts – pull close, point away
+#### Darts – pull close, point away
 
 Darts have an additional `ThrowableBody` behavior attached to them that makes them fly away in the direction of their local Z axis when released from ForceTool's grip, and a `StickBody` behavior that makes them stick to whatever surface they hit.
 
@@ -618,7 +612,7 @@ It doesn't look all that great for the player if they're looking straight at the
 
 That's all there needs to be for constraints. The **Targeting** constraint is irrelevant here because the **Rotation** constraint, as set up above, sufficiently constrains the dart's orientation down to one degree of freedom (which allows it to spin freely around its length).
 
-### Chairs and tables – return to upright orientation
+#### Chairs and tables – return to upright orientation
 
 Toppling over chairs and tables is lots of fun, but it'd be nice to be able to put them back in their proper upright position, too.
 
@@ -633,7 +627,7 @@ To rotate the body into an upright position...
 
 The **Targeting** constraint is set up per default settings to allow the player to turn the chair or table around its vertical axis.
 
-### Cabinets – dangle from the grab point
+#### Cabinets – dangle from the grab point
 
 Cabinets could easily be set up just like chairs and cabinets, but to add a little twist to their behavior, you can turn them any way you like with ForceTool simply by grabbing them off-center and allowing them to dangle down.
 
@@ -654,9 +648,9 @@ To disable all other constraints to allow gravity to take over...
 
 Disabling the **Rotation** and **Targeting** constraints gives the cabinet all three degrees of rotational freedom, which are then taken over by gravity pulling the cabinet's center of mass downwards from the grab point.
 
-# Developing enhanced Mesh Physics content
+## Developing enhanced Mesh Physics content
 
-## Auto-play animations
+### Auto-play animations
 
 You can add auto-play animations to the scene that interact with physics bodies. Those animations are automatically synchronized across clients by temporarily adjusting their playback speed (slowing them down or speeding them up) on each client until all clients are in the same animation state at the same time.
 
@@ -1171,7 +1165,7 @@ To understand the first precondition, **Game Object Name**, let’s imagine that
 1. Click the **Body Filter** "+" button and then select **Game Object Name**.  
 1. In the text box next to **Starts With**, type in "Dart."
 
-![___](../../../media/physics-interactions/008-trigger-starts-with.png)
+    ![___](../../../media/physics-interactions/008-trigger-starts-with.png)
  
 You aren’t restricted to just using **Starts With**. You can filter for exact names, or only names that *end* with certain letters, and more. To see all your options, click the **Starts With** drop-down.
 
@@ -1205,15 +1199,15 @@ Let’s say you have a root Game Object named "Robot" in your scene. Robot has n
 1. Do one of the following:
 - Drag the Game Object from the **Hierarchy** and then drop it in the **Root Game Object** field.
 
--or-
+    -or-
 
 - Click the round button in the **Root Game Object** field …
 
-![___](../../../media/physics-interactions/015-button.png)
+    ![___](../../../media/physics-interactions/015-button.png)
  
-… then, in the **Select GameObject** window, type in the name of Game Object you want to add, and then, in the resulting list, double-click the name of the Game Object.
+    … then, in the **Select GameObject** window, type in the name of Game Object you want to add, and then, in the resulting list, double-click the name of the Game Object.
 
-![___](../../../media/physics-interactions/016-select-game-object.png)
+    ![___](../../../media/physics-interactions/016-select-game-object.png)
  
 Note that in this example, there are two animal robot types in the scene. If you wanted *all* robots to be eligible for triggering, you could add a **Game Object Name** condition that contains the text "Robot" anywhere in the name. 
 
@@ -1597,24 +1591,3 @@ String that allows filtering messages by tag.
 - `On Shared Physics Message Received`(`PhysicsClient`, `ClientId sender`, `string tag`, `byte[] payload`) \
 Called when a message sent through `SharedBodyHandle.SendSharedBodyMessage()` is received. Use the tag to distinguish message types.
 
-# Example scene: Dart room
-
-Mesh Physics comes with a simple example scene: dart room. It showcases most physics features. Simply inspect the scene and play with it.
-
-![Screen shot of the Dart room example scene.](../../../media/physics-interactions/026_20220718_201454_image.png)
-
-## Features
-
-- **Cups:** Simple objects to pick up.
-
-- **Tables:** When grabbed, they try to align themselves with gravity.
-
-- **Cupboards:** These should feel heavy. They use physics constraints.
-
-- **Reset buttons (red):** Resets the transforms of a sub-scene.
-
-- **Clock pendulums:** Powered by a physics hinge and velocity field.
-
-- **Darts:** You can throw these in the camera direction. They're "sticky," so they'll stay attached to anything they hit.
-
-- **Globe:** The globe rotates, demonstrating a motored hinge. The globe also has a gravity field which influences small objects entering a spherical trigger volume. Drag some cups close to the globe and watch them rotate around it like satellites.
