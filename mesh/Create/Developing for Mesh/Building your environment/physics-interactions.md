@@ -3,7 +3,7 @@ title: Mesh physics
 description: Guide to using Mesh physics when creating Environments for Mesh.
 author: typride
 ms.author: vinnietieto
-ms.date: 8/23/2023
+ms.date: 8/29/2023
 ms.topic: Guide
 ms.prod: mesh
 keywords: Microsoft Mesh, Mesh physics, physics, environments
@@ -17,19 +17,9 @@ Here's a sampling what you can do with Mesh Physics features:
 
 * Allow participants to grab and carry objects.
 
-* Display a tether when a participant reaches for a distant object.
-
-  ![Screen shot of a tether appearing when you reach for a distant object.](../../../media/physics-interactions/004-tether.png)
-
-* Make objects “throwable” (darts, different types of balls: for example, snowballs or bowling balls).
-
-  ![Screen shot of darts and a dart board.](../../../media/physics-interactions/001-darts.png)
-
 * Control how gravity affects objects.
 
   ![Screen shot of a game that uses gravity.](../../../media/physics-interactions/105-ball-drop.png)
-
-* Fire certain events when an object is grabbed, carried and released.
 
 * Make an object “sticky”—it sticks to whatever it hits. Examples: throwing a dart at a dart board, attaching a picture to a wall.
 
@@ -156,27 +146,33 @@ Most Unity physics features will be synchronized without extra developer effort:
 
 Each client is responsible for simulating some of the bodies, called the distributed simulation "ownership". When a player touches a rigid body, simulation ownership is immediately transferred to allow low-latency interaction. For neighboring bodies, the physics synchronization engine performs local prediction, interpolation, and automatic ownership redistribution to minimize visual artifacts.
 
-## Current limitations for v1
-
-Mesh Physics is still an early version. Here are the things to consider:
-
-- **Scripting:** Mesh Physics only handles synchronizing of transforms. It doesn't provide any scriptable game logic or synchronize scene graph topology changes. However, if another script modifies the scene graph consistently between all participants of a meeting, including late join, Mesh Physics can handle this.
-
-- **API:** Since the Mesh Web client is fixed and can't be extended, there's no way to access the Mesh Physics C# API. However, if you have a specific use case which can be useful for others, contact our team.
-
-- **Bandwidth:** We're sending raw rigid body transforms uncompressed between the clients. This results in a higher bandwidth than necessary and limits the number of bodies in the scene to 100.
-
-    **Note:** We are working on a transform compression technology which will reduce the bandwidth by >10x (to be released soon).
-
-- **CPU:** Currently we are quite CPU limited, so do not go beyond 50 active rigid bodies.
-
-    **Note:** We're working to bring CPU-intensive tasks from Unity scripts into a WebAsm library which should improve performance by 10x.
-
-- **Versioning:** We expect Mesh Physics to continue evolving significantly in the near future. As a result, some Unity Mesh Physics components need to be replaced by newer versions. We plan to ship upgraded scripts to make the transition from one version to the next as painless as possible.
-
 ## Change Log
 
-### Mesh.Physics 6.0.x
+### Mesh.Physics 6.0.77 -- Mesh release 23.11
+
+* Assemblies have been renamed from `com.microsoft.mesh.physics.*` to `Microsoft.Mesh.Physics.*` requiring the use of the Mesh Updater executable to migrate existing content and a reupload of all content. See OneMeshToolkit migration steps for details.
+
+* Various deprecated components have been removed from the main Mesh Toolkit package. An additional package, 'com.microsoft.mesh.physics.legacy-6.0.77.tgz', is available for this release to facilitate manual migration. This package can be added to a legacy project in addition to the Mesh Toolkit package. Any reference to a deprecated component will then continue to work in PlayMode as well as the Mesh app, but will write an error message to the Unity Console window that allows finding and manually replacing the component. These errors must be addressed within this release cycle; afterwards, deprecated components may silently cease to work.
+
+* The SharedEvents mechanism, introduced to replace the UnityEvent for connecing Mesh.Physics components, has been superceeded by the far more powerful Mesh.VisualScripting integration. Wherever a low-level one-to-one replacement isn't possible, we've found it useful to take a step back to the higher-level use case to construct a solution that better fits the VisualScripting paradigm.
+
+Most deprecated components have no one-to-one replacement, but their main use cases can now be better realized by Mesh.VisualScripting. If important use cases in existing content can't be migrated, contact support to request features we might have missed.
+
+
+  | Component name                                      | Suggested migration path
+  |-----------------------------------------------------|-----------------
+  | `BodyPairDistanceSensor` *(part of BuzzerButton)*   | replace by new VisualScripting-enabled BuzzerButton
+  | `ButtonJoint` *(part of BuzzerButton)*              | replace by new VisualScripting-enabled BuzzerButton
+  | `SharedControlEvents` *(part of BuzzerButton)*      | replace by new VisualScripting-enabled BuzzerButton
+  | `MeshPhysicsBodyEvents` (a.k.a. `SharedBodyEvents`) | replace by VisualScripting
+  | `MeshPhysicsEvents` (a.k.a. `SharedPhysicsEvents`)  | replace by VisualScripting
+  | `StickyBodyEffects`                                 | replace by VisualScripting
+  | `StickyBodyTrigger`                                 | replace by `TriggerEventsSensor` & VisualScripting
+  | `TeleportBody`                                      | replace by VisualScripting SetPosition
+  | `ForceToolConfig`                                   | replace by MeshInteractableProperties
+  | `ThrowableBody`                                     | replace by MeshInteractableProperties \| Equippable \| Throwable
+
+### Mesh.Physics 6.0.60 -- Mesh release 23.10
 
 * The component `PhysicsSceneSetup` has become redundant and can be removed. It has been temporarily renamed to `obsolete_PhysicsSceneSetup` and triggers a harmless error message when found.
 
@@ -385,268 +381,6 @@ Our current roadmap is flexible:
 
   ![A screen shot of building cars out of random scene objects.](../../../media/physics-interactions/005_20220718_135823_image.png)
 
-## Configuring ForceTool interactions
-
-**Important**: As of July 2023, `ForceToolConfig` has been deprecated and replaced by the Object Configuration Layer (OCL), which features components that you can use for Mesh Physics as well as general object and player interactions. `ForceToolConfig` still has some useful features, but if you use it, keep in mind that it will be removed within a few months and you'll have to update your project(s) to use OCL. To learn more, see the document titled *Mesh Object and Player Interactions.pdf*.
-
-If you choose to continue using `ForceToolConfig` and want to physically interact with rigid bodies, you must enable the Mesh Physics force tool by adding the `ForceToolConfig` script.
-
-**Important:** A given `Rigidbody` object will only be interactable with ForceTool if it or one of its parents in the transform hierarchy has a `ForceToolConfig` script attached to it. The interaction behavior of a `Rigidbody` is defined by the `ForceToolConfig` closest to it in the transform hierarchy.
-
-Normally, you would create a `ForceToolConfig` at the root of your scene to set interaction defaults for all physics bodies in the scene, and optionally set up a more specific `ForceToolConfig` on specific sub-parts of the transform hierarchy or on individual `Rigidbody` objects.
-
-![A screen shot showing an object moving due to ForceTool interactions.](../../../media/physics-interactions/006_20220718_202229_image.png)
-
-### Default behaviors
-
-Out-of-the-box, a newly added `ForceToolConfig` makes the physics bodies behave as follows:
-
-- You can **grab and carry** the object with ForceTool.
-- While you're grabbing the object, if the object is farther away than about two meters, a **tether** (a semi-transparent white line) appears between your avatar and the object you're holding. The tether is visible both to you and to anyone else in the room. To disable or customize the tether, see [Tether settings](#tether-settings).
-- As you carry the object, its upright axis will remain upright, even if you move the object up or down. To change this behavior, see rotation constraints in [Constraint Setup and Reference settings](#constraint-setup-and-reference-settings).
-- As you carry the object, the side of the object that was facing you when you grabbed it will continue facing you, even if you turn. This gives you some control over the object's orientation around the vertical axis. To change this behavior, see targeting constraints in [Constraint Setup and Reference settings](#constraint-setup-and-reference-settings).
-- ForceTool applies a default motion behavior regardless of the object's `Rigidbody` mass. To change this behavior, see [Positional and Rotational Motion settings](#positional-and-rotational-motion-settings).
- 
-The following section details how you can customize and override this default behavior.
-
-### Experimental settings
-
-**WARNING**: The interaction with physics objects will be moved to a new architecture that's currently under construction. It's not yet clear which of the current experimental features will be reimplemented in the new model and whether a migration of the individual settings will be possible. Feel free to use the experimental settings until we can offer a replacement, but keep in mind that we don't expect to offer any kind of long term support for them.
-
-### Activating experimental settings
-
-* By default, no settings in the Inspector
-* Menu allows activating experimental configuration
-* Button allows hiding settings, unless non-default settings are present
-
-  ![Screen shot of the menu of ForceToolConfig script.](../../../media/physics-interactions/ForceToolConfig-Experimental-Menu.jpg)
-
-  ![Screen shot of the experimental view of ForceToolConfig script.](../../../media/physics-interactions/ForceToolConfig-Experimental.jpg)
-
-**Settings**
-
-![Screen shot of the options for the Force Tool Config script.](../../../media/physics-interactions/007_ForceToolConfig-overview.png)
-
-### Can Be Grabbed setting
-
-This option controls whether you can or can't use ForceTool to grab and carry the object (default: on).
-
-![Screen shot of the "Can be grabbed" option selected.](../../../media/physics-interactions/008_ForceToolConfig-detail-CanBeGrabbed.png)
-
-Switching this off disables ForceTool for these objects, and all the other settings are effectively ignored. You can use this to make certain physics objects un-grabbable when they would otherwise be considered grabbable by way of another `ForceToolConfig` further up the transform hierarchy, or you can switch this option at runtime (for example, through an event)  to make an object grabbable or un-grabbable in line with your gameplay logic.
-
-### Grab Behavior settings
-
-These settings control where you're grabbing the object, how far it can be away when you attempt to grab it, and whether (and how) it moves to a closer distance once you have grabbed it.
-
-![Screen shot of the Grab Behavior settings.](../../../media/physics-interactions/009_ForceToolConfig-detail-GrabBehavior.png)
-
-The **Grab Point** setting affects which point the object will rotate around as you're carrying it. The setting has the following options:
-
-- **Focus Point** makes you grab the object exactly at a point along the line of your aim. The point you're grabbing will be at the half-way point between the surface you're looking at and the corresponding surface on the opposite side. This means you're always grabbing a point within the substance of the object.
-- **Center Of Mass** makes you grab the object exactly at its `Rigidbody` center of mass regardless of where you aimed. If the center of mass is away from the line of your aim, this means the object will rotate around a point that's not underneath your visual focus point.
-- **Center Of Mass Moves to Focus Point** makes you grab the object at its `Rigidbody` center of mass but will then move the object so that its center of mass becomes coincident with your visual focus point. This combines the benefits of the first two options but also makes the object start moving as soon as you've grabbed it.
-
-The **Grab Distance** section contains settings that control the distance between the player and the carried object:  
-- **Max Grab Distance** setting controls how far the object can be away when you grab it. If set to _Infinity_, you can grab objects regardless of their distance to you. If set to anything less, objects that are farther away than what you've set can't be grabbed.  
-- **Max Carry Distance** setting makes ForceTool automatically pull the object towards you once you've grabbed it. If you're setting this to anything less than **Max Grab Distance**, this means you can grab objects that are far away, but you'll carry them much closer in front of you.  
-- **Pull Through Obstructions** option (default: off) controls if ForceTool will apply force when trying to move the object from where you grabbed it to the **Max Carry Distance** you'll be carrying it at. If switched off, ForceTool won't apply any force to move the object closer to you; it'll only move the object closer to you when there's unobstructed space to move the object closer. If switched on, ForceTool applies regular physical forces in all directions, including towards you.
-
-### Constraint Setup and Reference settings
-
-These settings control how the object will rotate while you're carrying it.
-
-![Screen shot of the "Constraint Setup On Grab" settings.](../../../media/physics-interactions/010_ForceToolConfig-detail-Constraints.png)
-
-Without further adjustments, a physics object that's being held at a single point would be able to freely rotate around that point – subject to outside physical forces affecting it. Examples of this are when it's dragged over the ground, or when one of its corners hits another solid object.
-
-The **Constraint Setup on Grab** and **Constraint Reference While Grabbed** settings give you control over the object's degrees of freedom as it's being carried. You can't make a carried physics object penetrate another solid object using these settings, but you can completely control how the carried object will orient itself when it would otherwise just freely rotate.
-
-Constraints are defined by way of two separate axes:
-
-- The **Rotation** axis has highest precedence and can be constrained to either two degrees of freedom (onto a plane) or just one degree of freedom (in a direction).
-- The **Targeting** axis, which applies after the **Rotation** axis constraint has been satisfied, can further constrain the object's rotation by another degree of freedom.
-
-Both axes are _defined_ in relation to the grabbed object's own coordinate frame in the moment the object is grabbed. You can use the **Constraint Setup on Grab** settings to control exactly how these axes are going to be oriented in relation to the grabbed object.
-
-Both **Rotation Setup** and **Targeting Setup** let you define an **Axis** vector, which can be normalized but doesn't have to be within a given **Frame of Reference** chosen from the following options:
-
-- **Camera Axes** keep the Z axis pointed in the player's look direction and the X axis pointing to the right of the player's look direction.
-- **Player Axes** keeps the Y axis vertically oriented along gravity (positive Y values point upwards), the Z axis horizontally in the player's look direction, and the X axis pointing to the right of the player's look direction.
-- **Body Axes** use the object's own frame of reference. This is the only setting that makes ForceTool completely disregard the object's current orientation when it's being grabbed.
-- **World Axes** uses the scene's frame of reference.
-
-Regardless of the **Frame of Reference** chosen for constraint setup, the defined axis will stick to the body's frame of reference once it has been defined.
-
-Then, while the object is being carried, ForceTool will rotate the object (as much as it can without causing objects to penetrate) so that these axes meet the corresponding _reference_ axes. You can use the **Constraint Reference While Grabbed** to control exactly how the reference axes are oriented and what kind of constraint they must satisfy.
-
-Both **Rotation Constraint** and **Targeting Constraint** let you, again, define an **Axis** vector within a given **Frame of Reference** chosen from the same options as during setup (except there's no "Body Axes" option here because the axes defined during constraint setup are themselves defined in relation to the object's frame of reference). The reference axes defined here are re-evaluated continuously while the object is being carried.
-
-The **Rotation Constraint > Type** setting allows you to specify which type of constraint ForceTool will apply to the **Rotation** axis:
-
-- **Unconstrained** applies no constraint – the **Rotation** axis can move freely in any direction.
-- **Constrain Axis to Plane** forces the **Rotation** axis onto a 2D plane in space, reducing the object's degrees of freedom by one. The plane's orientation is defined by interpreting the **Plane Normal or Direction** vector as the plane's normal vector (in other words, a vector perpendicular to the plane).
-- **Constrain Axis to Direction** forces the **Rotation** axis in a direction in space, reducing the object's degrees of freedom by two. The axis orientation is defined by interpreting the **Plane Normal or Direction** vector as this direction.
-
-The **Targeting Constraint > Type** setting allows you to specify whether ForceTool will apply a constraint to the **Targeting** axis:
-
-- **Unconstrained** applies no constraint – the **Targeting** axis can move freely in any direction (subject to the **Rotation** constraint, which has precedence).
-- **Constrain Pointer to Direction** forces the **Targeting** axis to rotate towards its reference.
-
-The **Targeting Constraint Override** settings let you temporarily override the **Targeting Constraint** settings when the carried object comes close to a certain other object. When the override is active, the **Targeting Setup** vector is made to point towards the other object's transform position.
-
-- **Targeting Constraint Override > Game Object Tag** specifies the other object (or objects) by their tag – if this setting is left empty, the **Targeting Constraint Override** is disabled.
-- **Targeting Constraint Override > Max Distance to Object** limits the distance to the other object (from the carried object's center of mass) within which the targeting override becomes active.
-
-### Gravity settings
-
-These settings control if (and how) gravity affects the carried object.
-
-![A screen shot of the Gravity settings.](../../../media/physics-interactions/011_ForceToolConfig-detail-Gravity.png)
-
-The **Dangle from Grab Point** setting specifies if gravity affects the carried object at all (default: off). Switching this on makes ForceTool rotate the object so that the object's center of mass ends up right below the grab point (see Grab Behavior settings).
-
-The **Dangle Damping** setting applies additional damping to the angular motion when the carried object is dangling. If this is set to zero, no additional damping is applied – in this case, only the regular `Rigidbody` angular drag is used.
-
-The **Neutral Radius Around Center of Mass** defines how close to the object's actual center of mass you must grab the object to avoid any rotation towards gravity. In all cases, if you grab an object _exactly_ at its center of mass, since there won't be any leverage to rotate towards gravity, it won't rotate (due to the **Gravity** settings, at least). The **Neutral Radius** extends this behavior to the given radius around the center of mass.
-
-### Positional and Rotational Motion settings
-
-These settings control the motion behavior (and through that, the perceived mass and inertia) of the object when it's being moved with ForceTool.
-
-![A screen shot of the Positional and Rotational motion settings.](../../../media/physics-interactions/012_ForceToolConfig-detail-Motion.png)
-
-Both **Positional Motion** and **Rotational Motion** can be controlled separately.
-
-- **Positional Motion** affects how the carried object's _position_ approaches the point you're aiming ForceTool at.
-- **Rotational Motion** affects how the carried object rotates around its grab point (see Grab Behavior settings) to satisfy the constraints you've defined (see Constraint Setup and Reference settings).
-
-In both sections, **Speed of Approach** controls how _quickly_ the goal position or rotation is being approached: greater values make the object move faster (making it appear lighter), lower values make it move more slowly (making it appear heavier).
-
-The **Collision Resistance** setting specifies the ratio between the velocity imposed by the physics engine's influence&#8212;for example, to avoid solid objects penetrating one another&#8212;and the velocity applied by ForceTool to move the object. This setting has little effect on the object's observable behavior and changing it is discouraged; it's best to leave it at its default value.
-
-### Tether settings
-
-These settings control the appearance of the visual tether (a semi-transparent white line connecting the player and the carried object).
-
-![A screen shot showing the Tether settings.](../../../media/physics-interactions/013_ForceToolConfig-detail-Tether.png)
-
-The **Tether Prefab** reference defaults to the bundled `ForceToolTether` prefab. To disable the visual tether, set it to **None**.
-
-The **Tether Setup** settings control aspects of whether and where the tether is displayed:
-
-- **Min Length** defines the minimum distance between the tether "hold" point on the player's end (subject to the **Hold Offset** settings below) and the grab point on the carried object's side (see Grab Behavior settings). If the distance is less than **Min Length**, the tether is hidden; otherwise, it's shown.
-- **Hold Offset in Focus Direction** moves the "hold" point on the player's side in the player's look direction.
-- **Hold Offset in Gravity Direction** moves the "hold" point on the player's side in gravity direction&#8212;for example, vertically down.
-
-If you'd like to customize the tether, you can provide your own prefab for the **Tether Prefab** setting:
-
-- One instance of this prefab is created (on each network client) each time an object is grabbed.
-- The prefab instance is parented to the carried object, so it moves along with the object as it's being carried around.
-- If the prefab has a `LineRenderer` (like the default `ForceToolTether` prefab), the line's vertices will be automatically positioned along a nice arc that extends from the player to the object, and its colors are made to fade in and out as the tether is created and destroyed.
-
-You can use this to create additional client-side effects on the carried object's side (for example, particle effects like dust, sparks, or steam) and to adjust the look of the tether to the overall look of your scene (or the carried object).
-
-### Event Handlers
-
-ForceTool can fire certain events as the object is grabbed, carried, and released. To learn about how to attach to these events, see [Shared Events](#shared-events).
-
-![A screen shot of event handlers for the ForceTool.](../../../media/physics-interactions/014_ForceToolConfig-detail-Events.png)
-
-All events are fired only on the client of the player who is using ForceTool to interact with the object.
-
-**Settings**
-
-The **When Grabbed or Released** section covers events that are fired as the player starts and stops using ForceTool to interact with an object:
-
-- **Body Grabbed** is fired when the object is grabbed.
-- **Body Released** is fired when the object is released. (Unless the body is already resting on the ground, this is the point when it will start falling due to gravity.)
-
-The **When Targeting Override Started or Stopped** section covers events that are fired when a targeting override (see Constraint Setup and Reference settings) becomes active or inactive:
-
-- **Start Targeting Object** is fired when the carried object comes sufficiently close to an eligible target object for the targeting override to become active.
-- **Stop Targeting Object** is fired when the targeting override becomes inactive. This includes the situation when the object is released while a targeting override is in effect – this means you can rely on each **Start Targeting Object** event being (eventually) followed by a corresponding **Stop Targeting Object** event.
-
-### Recipes
-
-The many `ForceToolConfig` options – especially around constraints – can be daunting, so here are several practical recipes (also seen in our _Dart Room_ sample scene) to illustrate how we've set up `ForceToolConfig` to arrive at different behaviors.
-
-#### Default – move and turn any object
-
-The default configuration is designed to give the player some small amount of control over random objects.
-
-![A screen shot of "Constraint Setup On Grab."](../../../media/physics-interactions/015_ForceToolConfig-recipe-default.png)
-
-Since these could be any kind of object at all, ForceTool can't make any assumptions about their shape or preferred orientation, so it just allows the player to turn the body around its vertical axis (along with the player themselves turning) and otherwise keeps it in the same orientation in which it was picked up.
-
-To maintain the vertical axis...
-
-- Constraint setup: Define **Rotation** body axis to be vertical in the world – (X=0, Y=1, Z=0) in **World Axes** or **Player Axes**
-- Constraint reference: Define **Rotation** reference axis the same and choose **Constrain Axis to Direction**
-- To make the body always turn the same face towards the player...
-- Constraint setup: Define **Targeting** body axis to point towards the player – (X=0, Y=0, Z=-1) in **Player Axes**
-- Constraint reference: Define **Targeting** reference axis the same and choose **Constrain Pointer to Direction**
-
-#### Darts – pull close, point away
-
-Darts have an additional `ThrowableBody` behavior attached to them that makes them fly away in the direction of their local Z axis when released from ForceTool's grip, and a `StickBody` behavior that makes them stick to whatever surface they hit.
-
-These additional behaviors aren't the subject of this recipe. We want to show, however, how to configure ForceTool in such a way that the dart can be grabbed, gets pulled close to the player's eye, and aligns itself in the player's direction of aim. As a bonus feature, we'd like to give the dart a degree of freedom so it can freely spin while held.
-
-![Screen shot of various ForceTool settings.](../../../media/physics-interactions/016_ForceToolConfig-recipe-darts.png)
-
-To make sure the center of the dart is in the center of the focus ray...
-
-- Set **Grab Point** to **Center of Mass Moves to Focus Point**.
-
-To align the dart's axis along the player's aim...
-
-- Constraint setup: Define **Rotation** body axis to be along the dart's longitudinal axis – for the dart, (X=0, Y=0, Z=1) in **Body Axes**.
-- Constraint reference: Define **Rotation** reference axis to be parallel to the player's aim – (X=0, Y=0, Z=1) in **Camera Axes** using **Constrain Axis to Direction**.
-
-To pull the dart close to the player's eye...
-
-- Set **Grab Distance > Max Carry Distance** to somewhere close (one meter from the camera's point of view).
-
-It doesn't look all that great for the player if they're looking straight at the exact back end of the dart. It's nicer (and adds a bit of darts-throwing challenge) if they get to look at the dart from slightly above. To achieve that effect, the dart's **Rotation** reference axis is set up to be _not exactly parallel_ to the player's aim but instead angled up a little by defining it to be (X=0, Y=**_0.1_**, Z=1) in **Camera Axes**.
-
-That's all there needs to be for constraints. The **Targeting** constraint is irrelevant here because the **Rotation** constraint, as set up above, sufficiently constrains the dart's orientation down to one degree of freedom (which allows it to spin freely around its length).
-
-#### Chairs and tables – return to upright orientation
-
-Toppling over chairs and tables is lots of fun, but it'd be nice to be able to put them back in their proper upright position, too.
-
-![Screen shot of Constraint Setup on Grab settings.](../../../media/physics-interactions/017_ForceToolConfig-recipe-chairsandtables.png)
-
-This is just a small variation of the default behavior: Instead of maintaining the vertical axis _as it was present_ when the chair or table is picked up, we're defining it in terms of the body's own frame of reference.
-
-To rotate the body into an upright position...
-
-- Constraint setup: Define **Rotation** body axis to be vertical in the body's frame of reference – for chairs and tables, (X=0, Y=1, Z=0) in **Body Axes**.
-- Constraint reference: Define **Rotation** reference axis to be vertical in the world – (X=0, Y=1, Z=0) in **World Axes** or **Player Axes**.
-
-The **Targeting** constraint is set up per default settings to allow the player to turn the chair or table around its vertical axis.
-
-#### Cabinets – dangle from the grab point
-
-Cabinets could easily be set up just like chairs and cabinets, but to add a little twist to their behavior, you can turn them any way you like with ForceTool simply by grabbing them off-center and allowing them to dangle down.
-
-![Screen shot of the Constraint Setup on Grab settings.](../../../media/physics-interactions/018_ForceToolConfig-recipe-cabinets.png)
-
-To make sure the cabinets are grabbed at the focus point instead of their center of mass...
-
-- Set **Grab Point** to **Focus Point**.
-
-To enable gravity...
-
-- Enable **Gravity > Dangle from Grab Point**.
-
-To disable all other constraints to allow gravity to take over...
-
-- Constraint setup: Not relevant because both constraints are getting disabled.
-- Constraint reference: Set both **Rotation** and **Targeting** to **Unconstrained**.
-
-Disabling the **Rotation** and **Targeting** constraints gives the cabinet all three degrees of rotational freedom, which are then taken over by gravity pulling the cabinet's center of mass downwards from the grab point.
 
 ## Developing enhanced Mesh Physics content
 
@@ -674,19 +408,6 @@ Optionally, you can add the Shared Animation script to control the potential spe
 
 Adding one of the following `MonoBehaviour` components to an object will add the specific behavior to this object.
 
-### Throwable Body
-
-Allows you to throw bodies such as snowballs, balls, darts, bowling balls, and more. It has a fixed velocity so it cannot be used, for example, for tossing a basketball into a hoop. Right now, the throw direction is defined in body space, so you want to use the `ForceToolConfig` to align your body with the camera.
-
-![Screen shot of the Throwable Body script settings in the Inspector.](../../../media/physics-interactions/019_ThrowableBody-overview.png)
-
-**Settings**
-
-- **Throw Direction in Body:** The throw direction is specified in the body space of the body you grab. Note that you can use ForceToolConfig to control the body rotation and thereby the throw direction.
-- **Throw Velocity:** A fixed velocity in meters/second to throw a body.
-- **Added Spin Velocity on Throw:** Once the body is thrown, you can add an angular velocity around the throw axis, like the spin of a bullet shot from a real gun (degrees/second).
-- **Keep Body Aligned to Velocity:** If set, the thrown body will rotate to match the path of its trajectory, like a flying arrow making a gently curve downwards.
-
 ### Sticky Body
 
 Makes bodies stick to other bodies. It could be used to throw darts at other bodies or to attach a picture on a wall. This is implemented by creating a fixed constraint between the two bodies involved.
@@ -702,34 +423,6 @@ Makes bodies stick to other bodies. It could be used to throw darts at other bod
 - **Affected Bodies For Collision** Body filter applied for **Collision Control**.
 - **Stickiness Events** Allows for triggering [Shared events](#shared-events) in response to stick/unstick events.
 
-### Sticky Body Trigger
-
-Attached to a trigger collider (for example, a collider whose **Is Trigger** option is switched on). Changes the behavior of any `StickyBody` that enters or leaves the trigger.
-
-![Screen shot of the Sticky Body Trigger script options in the Inspector.](../../../media/physics-interactions/021_StickyBodyTrigger-overview.png)
-
-**Settings**
-
-- **Stickiness Inside Trigger** overrides the "enabled" state of the `StickyBody` behavior while the object the `StickyBody` behavior is attached to is inside the trigger. You can use this to ensure that a body's stickiness is restricted to certain parts of your scene.
-  - **No Change** leaves the "enabled" state unaffected.
-  - **Sticky Body Enabled** enables any `StickyBody` that enters the trigger and disables it when it leaves the trigger.
-  - **Sticky Body Disabled** disables any `StickyBody` that enters the trigger and enables it when it leaves the trigger.
-- **Affected Bodies** is a body filter for **Stickiness Inside Trigger**
-- **Stickiness Events** fires **On Stick** and **On Unstick** events corresponding to those of all `StickyBody` behaviors currently inside of the trigger. This is useful if you want these [events](#shared-events) to be only fired for bodies while they're within certain parts of your scene (for example, close to a certain wall).
-
-### Reset Body Transforms
-
-Simply resets a subscene. This is very handy for resetting a chess board or cleaning up a room after you made a mess. Gets triggered by a Unity message (send, for example, by the `BuzzerButton`). Simply create a Unity subscene that contains all the bodies that should be affected by the reset script (for example, a chess board) and attach this script to the root of this subscene.
-
-![Screen shot of the Reset Body Transforms script options in the Inspector.](../../../media/physics-interactions/022_20220721_130159_image.png)
-
-**Settings**
-
-- **Initial Auto Save** automatically saves initial body transforms right after the scene starts. When disabled, body transforms are only saved when the `SaveBodyTransformsNow()` function is called explicitly.
-
-**Functions** – call these through a [Shared Event](#shared-events) (automatically dispatched across all clients):
-- `ResetBodyTransformsNow()` transitions the transformations of all bodies to their most recently saved state (subject to the **Transition** settings described above). Bodies that have no saved state are unaffected.
-- `SaveBodyTransformsNow()` saves transforms of all bodies underneath the `ResetBodyTransforms` behavior in the transform hierarchy.
 
 ### Trigger Events Sensor
 
@@ -1120,31 +813,7 @@ Offsets the center of mass of a rigidbody.
 
 - **Offset In Local Coordinates** defines the offset in local coordinates.
 
-### Teleport Body
-
-Teleports rigidbody to a new position with optional new rotation, new linear velocity and new angular velocity.
-
-![Screen shot of the Center Of Mass Offset script options in the Inspector.](../../../media/physics-interactions/049_TeleportRigidbody-overview.png)
-
-**Parameters:**
-
-- **Local Space Transform** has to be set if teleporting in local space, otherwise, global space is used.
-- **Respect Local Space Orientation** defines whether new coordinates, rotation and linear velocity are affected by local space oritentation. (Default is yes.)
-- **Respect Local Space Scale** defines whether new coordinates and linear velocity are affected by local space scale. (Default is no.)
-- **Coordinates** define the new position after the teleport.
-- **Randomize Radius** specifies the radius of the unit sphere around **Coordinates** in which the body is randomly teleported.
-- **Set Rotation** set this to true if you want to set the rotation of the body after the teleport. if not set, the object keeps the last orientation before the teleport.
-- **Euler Angles** has to be defined if **Set Rotation** is set to true.
-- **Set Linear Velocity** set this to true if you want to set the linear velocity of the body after the teleport. if not set, the object keeps the last linear velocity before the teleport.
-- **Linear Velocity** has to be defined if **Set Linear Velocity** is set to true.
-- **Set Angular Velocity** set this to true if you want to set the angular velocity of the body after the teleport. if not set, the object keeps the last angular velocity before the teleport.
-- **Angular Velocity** has to be defined if **Set Angular Velocity** is set to true.
-
-## Common Settings
-
-There are some settings that are common to a number of behavior scripts: **Body Filters** and [**Shared Events**](#shared-events).
-
-### Body Filters
+## Common Settings: Body Filters
 
 Some components, such as the Trigger Events Sensor and Collision Events Sensor components, have a **Body Filter** setting (usually named **Affected Bodies**).
 
@@ -1238,271 +907,12 @@ Each condition has a 3-dot menu with several options.
 **To make a condition active or inactive:**
 Select or clear the checkbox to the left of the condition name.
 
-### Shared Events
-
-An *event* is something that happens in the scene. Here are some examples of events:
-
-- Two Game Objects collide.
-- There's an ownership change.
-- The user presses a button.
-- A Game Object enters a [Trigger Volume](#trigger-volume).
-- A [Sticky Body](#sticky-body) sticks to a wall.
-
-When an event occurs across all clients rather than just locally, we call it a *Shared Event*. A Shared Event is what we previously called a "UnityEvent"; the differences are:
-
-- Shared Events can be shared across all clients. UnityEvents cannot.
-
-- Unity Events were "open-ended"; you could select a component and then access *any* public properties or methods the component provides. With Shared Events, there’s a standard set of up to a dozen different Actions that are safe to use in a multi-user setup.
-
-There are different types of Shared Events in various components. Some examples:
-
-#### Collision Events Sensor
-
-![](../../../media/physics-interactions/005-collision-events-sensor.png)
-
-#### Trigger Events Sensor
-
-![](../../../media/physics-interactions/009-trigger-events-sensor.png)
-
-#### Stickiness events
-
-![](../../../media/physics-interactions/041-stickiness-events.png)
-
-#### Shared Control events
-
-![](../../../media/physics-interactions/042-shared-control-events.png)
-
-#### Shared Body events
-
-![](../../../media/physics-interactions/044-shared-body-events.png)
-
-#### Shared Physics events
-
-![](../../../media/physics-interactions/045-shared-physics-events.png)
-
-### Actions
-
-By default, a Shared Event triggers no Actions. 
-
-![](../../../media/physics-interactions/046-no-actions.png)
-
-You can add Actions to a Shared Event by clicking the plus sign ("+") button for the event. There can be up to a dozen Actions in the drop-down list; the list will only contain Actions that make sense for that Shared Event. Here's the list for the Shared Events in the Trigger Volume component:
-
-![___](../../../media/physics-interactions/021-event-list.png)
-
-Actions may be influenced by other settings in the component. For example, in the Trigger Volume component, Actions are  subject to the **Trigger Type** setting.
-
-Multiple Actions can be added for each event.
-
-**Options on the 3-dot menu**
-
-Each Action has a 3-dot drop-down menu. Here's the menu for the **Forward Event** Action:
-
-![___](../../../media/physics-interactions/036-filter-event-menu.png)
-
-Every Action has the following four menu items:
-
-**Move Action Up:** Moves the Action one position higher in the component.
-
-**Move Action Down:** Moves the Action one position lower in the component.
-
-**Note:** Since all Actions execute in the same frame, the movement menu items are primarily for appearance.
-
-**Use Body Precondition:** Uses a per-Action body precondition to execute individual Actions conditionally. When you choose this menu item, a **Body Precondition** setting appears in your event with a drop-down menu that offers the [same conditions as the Body Filters setting](#body-filters) in [Shared Events](#shared-events). 
-
-![___](../../../media/physics-interactions/040-body-precondition.png)
-
-**Delete Action:** Deletes the Action.
-
-An Action can have one to four of the per-Action dispatch modes below. These control when and how the Action is dispatched to all clients in the same room. An Action will only have the mode(s) that make sense for that Action.
-
-**On Leader Client:** Action is executed on just one client (the arbitrarily chosen "leader client" in the room). This could be useful for things like the ResetBodyTransforms script; the Action is triggered on one client and it'll have an impact on all the clients. 
-
-**On Each Client Independently:** Action is executed on each client independently when (and if) the event occurs locally on that client (avoids network latency between event cause and effect; avoids effect without apparent cause).
-
-**On All Clients And Locally Predicted:** Action is predictively executed on the client where it initially occurs (avoids network latency between event cause and effect on that client) and is replicated over the network to make sure it's also executed on all other clients.
-
-**On All Clients In Consistent Order:** Action is replicated over the network and executed on all clients (including the one where it initially occurs; this incurs network latency on all clients) in a consistent order relative to all other Actions executed in this mode.
-
-**Note:** You'll see **(default)** inserted after one of the dispatch modes in the menu. The default varies depending on the type of Action.
-
-### Action types in detail
-
-#### Forward Event
- 
-**Forward Event** forwards the Trigger Enter event to a Shared Control Events component. This is useful when creating reusable interactive prefabs (for example, the Buzzer Button). 
-
-![___](../../../media/physics-interactions/022-forward-event.png)
-
-**Event Target:** The Shared Control Events component to forward the event to. Click the round button and then, in the **Select SharedControlEvents** window, search for and select the shared control event you want.
-
-![___](../../../media/physics-interactions/023-shared-control-events.png)
- 
-**Event Label:** The label of the event that’s configured in the target Shared Control Events component to be invoked.
-
-#### Log to Unity Console
-
-**Log to Unity Console** sends a log message to the Unity console.
-
-![___](../../../media/physics-interactions/024-log-to-unity-console.png)
- 
-**Message:** The message to send. The message is always prefixed with the name of the body (if any) that caused the event.
-
-**Show Wallclock Time:** Prefix the log message with the current Wallclock time (millisecond precision) and time zone suffix. Example:  
-
-`[11:12:56.333+01:00]  (hours:minutes:seconds.millis+timezone)`
-
-**Show Shared Scene Time:** Prefix the log message with the time elapsed since the shared scene started (millisecond precision), e.g. Example:
-
-`[Shared 00:02:56.773] (hours:minutes:seconds.millis)`
-
-**Show Local Scene Time:** Prefix the log message with the time elapsed since the local client joined the scene (millisecond precision). Example:
-
-`[Local 00:00:28.560] (hours:minutes:seconds.millis)`
-
-**Log Level:** Click the drop-down and then select **Info**, **Warning**, or **Error**. All these options work in Play mode; however, in Mesh, all "Info" messages are suppressed, and only "Warning" and "Error" messages show up in the Mesh log.
-
-#### Modify Button Joint
- 
-**Modify Button Joint** modifies a property of a given Button Joint component. Only a small subset of Button Joint properties&#8212;the ones that make the most sense to modify at runtime&#8212;are exposed.
-
-![___](../../../media/physics-interactions/025-button-joint.png)
-
-**Button Joint:** Select the Button Joint whose property should be modified. Click the round button and then, in the **Select ButtonJoint** window, search for and select the Button Joint event you want.
-
-**Property:** Click the drop-down and then select **Rest Length**, **Spring**, or **Damper**. For details, see the Button Joint documentation.
-
-**Value:** Updated value of the selected property.
-
-#### Modify Shader
-
-**Modify Shader** modifies a renderer's shader property. Initially, only the **Renderer** option is displayed until you select a specific renderer. 
-
-![___](../../../media/physics-interactions/026-renderer-none.png)
- 
-The rest of the UI is created dynamically based on the renderer's assigned materials and their respective shaders.
-
-**Renderer:** Click the round button and then, in the **Select Renderer** window, search for and select the Renderer component (for example, "Mesh Renderer") whose shader properties you want to modify.
-
-**Material:** Shows the first material assigned to the selected renderer. Beneath **Material** is a list of the material’s shader properties along with the default values that are in place when the Action is executed. The properties are initially unselected and their values are grayed out. To change a property’s value, select the check box to the left of the property name to make it editable, and then make your change. The screen shot below shows the shader properties for the **BasicWavyWaterSurface** material; the **WaveHeight** property is selected and is therefore editable.
-
-![___](../../../media/physics-interactions/027-wave-height.png)
- 
-If the selected renderer has multiple materials assigned, this section is repeated for each assigned material.
-
-#### Play Audio Effect
-
-**Play Audio Effect** plays a transient sound effect. There are two possible scenarios:
-
-**Scenario 1:** When the trigger event is fired, it causes the selected **Audio Source** object to play its attached **Audio clip**. The Audio Source object doesn't *have* to be the same object that triggered the event; it can be any object in the scene.
-
-![___](../../../media/physics-interactions/028-audio-source.png)
-
-**Audio Source:** Click the round button and then, in the **Select Audio Source** window, search for and select the Audio Source Game Object you want to play.
-
-**Audio Clip:** Shows the Audio Clip assigned to the selected Audio source. If you’ve chosen an Audio Source, this field can’t be edited. 
- 
-**Scenario 2:** Play an Audio Clip at the location of the body that caused the event.
-
-![___](../../../media/physics-interactions/029-audio-clip.png)
-
-**Audio Source:** Keep this value at **None**.
-
-**Audio Clip:** Click the round button and then, in the **Select AudioClip** window, search for and select the Audio clip you want to play.
- 
-For either of the above scenarios, the following options are the same.
-
-**Playback Delay:** Delay (in seconds) between the moment the event is fired and the moment the audio clip plays.
-
-**Playback Volume:** Relative volume (range 0 to 1) at which the audio clip is played back.
-
-#### Play Particle Effect
-
-**Play Particle Effect** plays a transient particle effect. There are two possible scenarios:
-
-**Scenario 1:** When the trigger event is fired, it causes the selected **Particle System** component to play. The Particle System can be anywhere in the scene.
-
-![___](../../../media/physics-interactions/030-particle-system.png)
-
-**Particle System:** Click the round button and then, in the **Select ParticleSystem** window, search for and select the Particle System you want to play.
- 
-**Scenario 2:** Play a particle system at the location of the body that caused the event.
-
-**Particle System:** Select a prefab asset whose root transform has a Particle System component attached.
-
-**Particle System Origin:** Click the drop-down menu and then select one of the following:
-
-**Stay Where Instigated:** The particle system's origin is placed, and remains, at the location where the event was instigated.
-
-**Stay With Body:** The particle system's origin remains attached to the body that caused the event and continues moving with that body.
-
-#### Reset Body Transforms
-
-**Reset Body Transforms** invokes the functionality of a Reset Body Transforms script placed in the scene. For more information, see the [ResetBodyTransform](#resetbodytransform) section.
-
-![___](../../../media/physics-interactions/031-reset-body-transforms.png)
-
-**Reset Target:** Click the round button and then, in the **Select ResetBodyTransforms** window, search for and select the Reset Body Transforms component you want to control.
-
-**Reset Action:** Click the drop-down menu and then select **Save** or **Reset**. 
-
-**Reset Delay:** Delay (in seconds) between the moment the event is fired and the moment the function is invoked.
- 
-#### Toggle Component
-
-**Toggle Component** enables, disables, or toggles a given component in the scene.
-
-![___](../../../media/physics-interactions/032-toggle-component.png)
-
-**Game Object:** Click the round button and then, in the **Select GameObject** window, search for and select the Game Object to which the component is attached.
-
-**Component:** Click the drop-down menu and then select the component attached to the selected Game Object that should be enabled, disabled, or toggled.
-
-**Enable Or Disable:** Click the drop-down menu and then select **Enable**, **Disable**, or **Toggle**.
-
-#### Toggle Game Object
-
-**Toggle Game Object** enables (shows), disables (hides), or toggles a given Game Object and its children in the scene.
-
-![___](../../../media/physics-interactions/033-toggle-game-object.png)
-
-**Game Object:** Click the round button and then, in the **Select GameObject** window, search for and select the Game Object to affect.
-
-**Enable Or Disable:** Click the drop-down menu and then select **Enable**, **Disable**, or **Toggle**.
-
-**To make a setting active or inactive:**
-Select or clear the checkbox to the left of the setting name.
-
-#### Trigger Animator
-
-![](../../../media/physics-interactions/SharedEventsAction_TriggerAnimator-overview.png)
-
-**Trigger Animator** sets an Animator state machine's triggers and parameters.
-
-**Settings**:
-
-**Animator**: Select the Animator component whose triggers or parameters should be set. Nothing else is displayed until a specific Animator is selected; the reset of the UI is created dynamically based on the Animator's exposed triggers and parameters.
-
-**Animator Controller**: Shows the Animator controller asset assigned to the selected Animator. This setting is for information only; it can't be edited. The list under **Animator Controller** contains triggers and parameters exposed by the selected Animator. The screenshot above shows an example with three triggers (**TransitionToEarth**,**TransitionToMoon**, and **TransitionToSpace**), one float parameter (**MovementSpeed**), one integer parameter (**NumberOfSteps**), and one boolean parameter (**DirectTransitions**).
-
-Select a trigger to set it when the action is executed.
-
-Select a parameter to edit the value it will be set to when the action is executed.
-
-If a parameter isn't selected, the value shown next to the parameter's name is the parameter's default value.
 
 ## Other simple helpers
 
 ### BuzzerButton.prefab
 
-A simple button which can be activated either by physical interaction or by clicking on it. Sends out a Unity message, which, for example, could be wired to a `ResetBodyTransform` script.
-
-# Shared Physics event dispatch
-
-Mesh Physics provides various events that can be connected to Unity Editor through two components:
-
-- `Shared Body Events` provides events related to one specific body.
-- `Shared Physics Events` provides events relating to the entire session.
+A simple button that can be activated by clicking on it. Exposes a shared variable, `IsPressed`, that can be observed with VisualScripting to, for example, trigger a `ResetBodyTransform` script.
 
 ## General concepts
 
