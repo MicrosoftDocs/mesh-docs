@@ -1,6 +1,6 @@
 items: 
 - name: Create a new project
-  href: creating-a-new-project.md
+  href: create-a-new-project.md
 - name: Import the Mesh Toolkit
   href: import-the-mesh-toolkit.md
 - name: Build for single and multiple platforms
