@@ -54,3 +54,12 @@ guests:
  *Correct:*
 
  <Person1@EmailForWork.com>, <Person2@EmailForWork.com>, ... , ...
+
+   > [!div class="nextstepaction"]
+   > [Customize your event](customize-event.md)
+
+   > [!div class="nextstepaction"]
+   > [Produce your event](produce-event.md)
+
+   > [!div class="nextstepaction"]
+   > [Event help](events-help.md)
