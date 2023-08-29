@@ -1,6 +1,8 @@
 items:
   - name: Mesh Toolkit overview
     href: mesh-toolkit-overview.md
+  - name: Design guidelines
+    href: design-guidelines.md    
   - name: Build your basic environment
     href: Build your environment/toc.yml
   - name: Enhance your environment
