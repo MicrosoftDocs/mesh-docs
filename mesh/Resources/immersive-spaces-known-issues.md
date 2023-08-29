@@ -8,7 +8,7 @@ ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
 
-# Immersive spaces known issues
+# Known issues
 
 **Version 2023-8-25**
 
