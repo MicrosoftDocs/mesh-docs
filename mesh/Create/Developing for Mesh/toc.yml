@@ -2,7 +2,7 @@ items:
   - name: Mesh Toolkit overview
     href: mesh-toolkit-overview.md
   - name: Build your basic environment
-    href: Build your environment/toc.yml
+    href: Build your basic environment/toc.yml
   - name: Enhance your environment
     href: Enhance your environment/toc.yml
   - name: Script your scene logic
