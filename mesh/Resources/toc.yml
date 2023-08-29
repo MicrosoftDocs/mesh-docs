@@ -3,6 +3,7 @@ items:
     href: avatars-release-notes.md
   - name: Immersive spaces release notes
     href: immersive-spaces-release-notes.md
+    items:
     - name: Active known issues
       href: immersive-spaces-known-issues.md
   - name: Mesh release notes
