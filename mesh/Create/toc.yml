@@ -3,7 +3,5 @@ items:
     href: development-overview.md
   - name: Getting started
     href: Getting started/toc.yml
-  - name: Designing
-    href: Designing for Mesh/toc.yml
-  - name: Developing
+  - name: Design and Develop
     href: Developing for Mesh/toc.yml

@@ -30,7 +30,7 @@ If you followed the instructions in the [Import the Mesh Toolkit
 Packages](#import-packages) TBD section, you added the tarball named
 *com.microsoft.mesh.toolkit-.xxx*, which includes the Playmode package.
 
-![A screenshot of a computer Description automatically generated](.../../../media/debug-and-optimize/image040.jpg)
+![A screenshot of a computer Description automatically generated](../../../media/debug-and-optimize/image040.jpg)
 
 **To use Playmode in your project**:
 
