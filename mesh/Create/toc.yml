@@ -4,4 +4,4 @@ items:
   - name: Getting started
     href: Getting started/toc.yml
   - name: Design and Develop
-    href: Developing for Mesh/toc.yml
+    href: Design & Develop/toc.yml
