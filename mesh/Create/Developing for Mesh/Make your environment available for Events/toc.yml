@@ -1,5 +1,5 @@
 items:
-  - name: Become a content contributor
-    href: become-a-content-contributor.md
-  - name: Get started with Mesh environments
-    href: get-started-with-mesh-environments.md
+  - name: Build and publish your Environment
+    href: build-and-publish-your-environment.md
+  - name: Get information about your Environment
+    href: get-information-about-your-environment.md
