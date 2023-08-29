@@ -5,7 +5,7 @@ items:
     items:
     - name: What's new
       href: immersive-spaces-release-notes.md
-    - name: Active known issues
+    - name: Known issues
       href: immersive-spaces-known-issues.md
   - name: Mesh release notes
     href: mesh-release-notes.md
