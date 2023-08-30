@@ -3,7 +3,7 @@ items:
   href: create-a-new-project.md
 - name: Import the Mesh Toolkit
   href: import-the-mesh-toolkit.md
-- name: Building for single and multiple platforms
+- name: Build for single and multiple platforms
   href: build-for-single-and-multiple-platforms.md
 - name: Adding a thumbnail camera
   href: add-a-thumbnail-camera.md  
