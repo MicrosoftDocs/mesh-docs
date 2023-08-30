@@ -1,0 +1,17 @@
+items:
+  - name: Avatars for Teams release notes
+    href: avatars-release-notes.md
+  - name: Immersive spaces release notes
+    items:
+    - name: What's new
+      href: immersive-spaces-release-notes.md
+    - name: Known issues
+      href: immersive-spaces-known-issues.md
+  - name: Mesh release notes
+    href: mesh-release-notes.md
+  - name: Mesh Toolkit release notes
+    href: mesh-toolkit-release-notes.md 
+  - name: Terms and conditions
+    href: terms-conditions.md
+  - name: Key terms
+    href: key-terms-in-mesh.md

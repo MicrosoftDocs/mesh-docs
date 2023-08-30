@@ -1,6 +1,4 @@
 items: 
-  - name: Mesh Development Overview
-    href: development-overview.md
   - name: Prerequisites
     href: prerequisites.md
   - name: Download the Mesh Toolkit

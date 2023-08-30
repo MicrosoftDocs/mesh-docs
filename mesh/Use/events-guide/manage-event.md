@@ -129,14 +129,11 @@ rooms event goes smoothly.
 
 **Open the Manage event page:**
 
-![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image017.png)
+![Graphical user interface, application Description automatically
+ generated](../../media/mesh-event-producer-guide/image018.png)
 
 1. In the Manage events page, your Multiple Rooms event will show a
     **Provisioning required** note:
-
-     ![Graphical user interface, application Description automatically
- generated](../../media/mesh-event-producer-guide/image018.png)
 
 2. Select the event to access the **Overview** page, then select the **Provision button**.
 
@@ -154,10 +151,11 @@ medium confidence](../../media/mesh-event-producer-guide/image017.png)
 
 4. Refresh the event periodically to ensure that provisioning was
     completed. You may need to Provision again if the button shows
-    **Provision**. Once it shows **Provisioned,** as shown below, you're
-    ready to host your event!
+    **Provision**.
 
     ![](../../media/mesh-event-producer-guide/image020.png)
+
+    Once it shows **Provisioned**, you're ready to host your event!
 
 ## Start your event
 
