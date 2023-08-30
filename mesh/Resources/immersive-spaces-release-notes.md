@@ -8,9 +8,9 @@ ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
 
-# Release notes
+# Release notes - Immersive Spaces for Teams
 
-## Version 2023-8-25
+## Version 2023-8-30
 
 ### What's new
 
@@ -18,11 +18,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
     ![A screenshot of the first run dialogue when someone steps out of the Meeting Zone](media/meeting-zone-fre.png)
 
-### Resolved known issues
+### Resolved product issues
 
 * On Quest, there’s a crackling sound when you try to click on the **Customize** button under **Profile**.
 * In the Mesh user profile dialog box, switching avatars will cause the avatar preview to briefly flash.
-
-## Next steps
-
-* See currently active known issues for Immersive spaces
