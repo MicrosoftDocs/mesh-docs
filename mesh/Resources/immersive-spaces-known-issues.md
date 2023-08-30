@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 # Active known issues - Immersive Spaces for Teams
 
-**Version 2023-8-30**
+## Version 2023-8-30
 
 1. **Default Mic/Speaker Settings**: Spatial Audio uses the same microphone and speaker as default OS settings, which might be a different mic and speaker that Teams uses. Users can switch which mic/speaker Mesh uses by going to the Immersive space and select **Settings > Audio** and updating mic and speaker settings.
 1. **Bluetooth Headset Limitations**: Most Bluetooth audio headsets switch to mono output when the microphone is in use. With mono output you will not be able to experience spatial audio. Here’s what you can do to resolve the issue: 
