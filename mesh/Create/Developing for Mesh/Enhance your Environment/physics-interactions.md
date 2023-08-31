@@ -421,8 +421,7 @@ Makes bodies stick to other bodies. It could be used to throw darts at other bod
 - **When:** Sometimes you want to stick a fast body when it just touches another body, and sometimes you want to stick a body when it is held against another body for a given time, like waiting for glue to harden when you glue a button on a wall.
 - **Collision Control** To disable specific collisions between one body and another. Normally you can/should use collision layers. However, since there are only 32 hard-coded collision layers in Microsoft Mesh, this might not be an option. Here you can disable specific bodies.
 - **Affected Bodies For Collision** Body filter applied for **Collision Control**.
-- **Stickiness Events** Allows for triggering [Shared events](#shared-events) in response to stick/unstick events.
-
+- **Stickiness Events** Allows for triggering events in response to stick/unstick events.
 
 ### Trigger Events Sensor
 
@@ -450,7 +449,7 @@ Any Game Object that enters the trigger volume in its default state is eligible 
 
 **On Trigger Enter** and **On Trigger Exit**
 
-These are considered to be [Shared Events](#shared-events). As the names imply (and the UI explains), these determine which Actions are fired when a Game Object enters or exits the trigger volume.
+These determine which Actions are fired when a Game Object enters or exits the trigger volume.
 
 ### Collision Events Sensor
 
@@ -478,7 +477,7 @@ Any Game Object that collides in its default state is eligible to trigger entry 
 
 **On Collision Enter** and **On Collision Exit**
 
-These are known collectively as “Shared Events.” As the names imply (and the UI explains), these determine which actions are fired when a Game Object enters or exits the collision. To learn more, see the [Shared Events section](#shared-events).
+These determine which actions are fired when a Game Object enters or exits the collision. 
 
 ### Containment Field
 
