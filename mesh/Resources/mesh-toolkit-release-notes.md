@@ -13,6 +13,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 **Release notes and known issues for Microsoft Mesh Toolkit and Azure**
 
 For purposes of this document, there are two categories of users:
+
 * Creators: Technical artist and developers building with the Mesh Toolkit
 * IT admins: Managers working in Azure
 
@@ -30,11 +31,10 @@ These are the offerings and packages currently available. There may be slight di
 | Mesh Toolkit Package      |        | 2023-8-  |
 | Mesh Azure Portal |         |  2023-8- |
 | Mesh (PC/Quest)   |         |  2023-8-  |
-| Content Performance Analyzer (CPA)  | 0.5.0 |   |
 
 ### What's new
 
-* Unity upgraded to 2022.3.7 LTS. We recommend all Unity projects for Mesh environments to be upgraded to Unity 2022 LTS, using the latest 23.11 Mesh Toolkit and Mesh app build.
+* Unity upgraded to 2022.3.7. We recommend all Unity projects for Mesh environments to be upgraded to Unity 2022 LTS, using the latest 23.11 Mesh Toolkit and Mesh app build.
 
 #### Scripting
 
