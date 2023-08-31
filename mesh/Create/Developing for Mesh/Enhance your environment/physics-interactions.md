@@ -161,9 +161,9 @@ Most deprecated components have no one-to-one replacement, but their main use ca
 
   | Component name                                      | Suggested migration path
   |-----------------------------------------------------|-----------------
-  | `BodyPairDistanceSensor` *(part of BuzzerButton)*   | replace by new VisualScripting-enabled BuzzerButton
-  | `ButtonJoint` *(part of BuzzerButton)*              | replace by new VisualScripting-enabled BuzzerButton
-  | `SharedControlEvents` *(part of BuzzerButton)*      | replace by new VisualScripting-enabled BuzzerButton
+  | `BodyPairDistanceSensor` *(part of BuzzerButton)*   | replace BuzzerButton by Mesh.Interactables and VisualScripting
+  | `ButtonJoint` *(part of BuzzerButton)*              | replace BuzzerButton by Mesh.Interactables & VisualScripting
+  | `SharedControlEvents` *(part of BuzzerButton)*      | replace BuzzerButton by Mesh.Interactables & VisualScripting
   | `MeshPhysicsBodyEvents` (a.k.a. `SharedBodyEvents`) | replace by VisualScripting
   | `MeshPhysicsEvents` (a.k.a. `SharedPhysicsEvents`)  | replace by VisualScripting
   | `StickyBodyEffects`                                 | replace by VisualScripting
