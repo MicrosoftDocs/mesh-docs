@@ -160,6 +160,8 @@ brightness).
 - WebSlates are restricted to navigation within the initial domain or
     the specified URL's and server\'s redirections.
 
+- Navigation within WebSlate is exclusively limited to HTTPS.
+
 - Device access to webcam, microphone, and geolocation are blocked.
 
 ### Windows / PC Standalone
@@ -200,7 +202,7 @@ If you haven't already imported the Mesh Toolkit, import it:
 
 ### Add a WebSlate prefab to your Unity project
 
-There are two flavors of WebSlate prefab available in the Mesh Toolkit that you can add to your scene. If you would like a WebSlate contained in a stylized frame with extra functionalities, you can use the WebSlateFramed prefab. Otherwise, if you would prefer a clean WebSlate with no extra components, you can use the WebSlate prefab.
+There are two flavors of WebSlate prefabs available in the Mesh Toolkit that you can add to your scene. If you would like a WebSlate contained in a stylized frame with extra functionalities, you can use the WebSlateFramed prefab. Otherwise, if you would prefer a clean WebSlate with no extra components, you can use the WebSlate prefab.
 
 ![Image showcasing two webslate prefabs](../../../media/webview-developer-guide/image025.png)
 
