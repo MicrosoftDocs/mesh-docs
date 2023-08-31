@@ -160,6 +160,8 @@ brightness).
 - WebSlates are restricted to navigation within the initial domain or
     the specified URL's and server\'s redirections.
 
+- Navigation within WebSlate is exclusively limited to HTTPS.
+
 - Device access to webcam, microphone, and geolocation are blocked.
 
 ### Windows / PC Standalone
