@@ -12,7 +12,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes and known issues for the Microsoft Mesh App on PC & Quest 2**
 
-## Version 2023-8-29
+## Version 2023-8-31
 
 ### What's new
 
