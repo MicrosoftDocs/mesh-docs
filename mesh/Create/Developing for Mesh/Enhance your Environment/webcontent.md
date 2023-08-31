@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, documentation, features, Unity, Web content
 
 # Web Content Overview
 
-![Image of a Mesh environment with WebViews on display.](../../../media/webview-developer-guide/image002.png)![A picture containing screenshot,
+![Image of a Mesh environment with WebSlates on display.](../../../media/webview-developer-guide/image002.png)![A picture containing screenshot,
 interior design, furniture, table Description automatically
 generated](../../../media/webview-developer-guide/image003.png)
 
@@ -92,7 +92,7 @@ By default, the WebSlate loads the preset URL. The URL should be replaced
 with a desired one on each WebSlate in use. The brightness parameter is set to 1.0 (100% of the browser's
 brightness).
 
-![Unity usage of WebView](../../../media/webview-developer-guide/image004.png)
+![Unity usage of WebSlate](../../../media/webview-developer-guide/image004.png)
 
 ## General Tips
 
@@ -200,7 +200,7 @@ If you haven't already imported the Mesh Toolkit, import it:
 
 ### Add a WebSlate prefab to your Unity project
 
-There are two flavors of WebSlate prefab available in the Mesh Toolkit that you can add to your scene. If you would like a WebSlate contained in a stylized frame with extra functionalities, you can use the WebSlateFramed prefab. Otherwise, if you would prefer a clean WebSlate with no extra components, you can use the WebSlate prefab.
+There are two flavors of WebSlate prefabs available in the Mesh Toolkit that you can add to your scene. If you would like a WebSlate contained in a stylized frame with extra functionalities, you can use the WebSlateFramed prefab. Otherwise, if you would prefer a clean WebSlate with no extra components, you can use the WebSlate prefab.
 
 ![Image showcasing two webslate prefabs](../../../media/webview-developer-guide/image025.png)
 
