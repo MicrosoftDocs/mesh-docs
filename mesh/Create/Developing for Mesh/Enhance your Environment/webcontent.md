@@ -301,12 +301,12 @@ To enable visual scripting using WebSlate, you must set up a few things.
 5. In the new assembly entry, select **(No Assembly)** to open the
     **Assembly** menu.
 
-6. Select **Microsoft.MixedReality.WebView** from the **Assembly**
+6. Select **Microsoft.Mesh.WebSlate** from the **Assembly**
     menu\
     ![A screenshot of a computer Description automatically
     generated](../../../media/webview-developer-guide/image019.png)
 
-    Visual Scripting adds the **Microsoft.MixedReality.WebView** and its
+    Visual Scripting adds the **Microsoft.Mesh.WebSlate** and its
     nodes to the Node Library. To use the nodes in your project, add
     **WebSlate** type to your Type Options and regenerate the Node Library.
 
@@ -317,7 +317,7 @@ To enable visual scripting using WebSlate, you must set up a few things.
     Here\'s an example of a script graph that loads a new URL in WebSlate
     when the state of a graph variable changes.
 
-    ![Visual scripting example in Unity of a WebSlate](../../../media/webview-developer-guide/image021.png)
+    ![Showcase of WebSlate in Mesh visual scripting](../../../media/webview-developer-guide/image021.png)
 
 # WebSlate in Mesh Scripting
 
