@@ -1,7 +1,7 @@
 items:
+  - name: Performance guidelines
+    href: performance-guidelines.md
   - name: Playmode
     href: playmode.md
-  - name: Content Performance Analyzer (CPA) tool
-    href: content-performance-analyzer.md
   - name: Getting help
     href: getting-help.md

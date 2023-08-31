@@ -12,7 +12,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, unity, design, documentation, 
 
 Mesh 3D Design and Performance Guide
 
-![Graphical user interface, text Description automatically generated](/../../media/3d-design-performance-guide/image001.png)
+![Graphical user interface, text Description automatically generated](../../media/3d-design-performance-guide/image001.png)
 
 A guide for artists, designers and developers who create content for
 Mesh experiences
