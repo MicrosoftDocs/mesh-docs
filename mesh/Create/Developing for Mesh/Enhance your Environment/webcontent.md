@@ -200,13 +200,13 @@ If you haven't already imported the Mesh Toolkit, import it:
 
 ### Add a WebSlate prefab to your Unity project
 
-There are two flavors of WebSlate prefab available in the Mesh Toolkit that you can add to your scene. If you would like a WebSlate contained in a stylized frame with extra functionalities, you can use the WebSlateFramed prefab. Otherwise if you would prefer a clean WebSlate with no extra components, you can use the WebSlate prefab.
+There are two flavors of WebSlate prefab available in the Mesh Toolkit that you can add to your scene. If you would like a WebSlate contained in a stylized frame with extra functionalities, you can use the WebSlateFramed prefab. Otherwise, if you would prefer a clean WebSlate with no extra components, you can use the WebSlate prefab.
 
 ![Image showcasing two webslate prefabs](../../../media/webview-developer-guide/image025.png)
 
 #### Using Mesh Toolkit Context Menu (Recommended)
 
-To add either of the prefabs right-click the scene hierarchy, navigate to "Mesh Toolkit," and then
+To include either of the prefabs to your scene, right-click the scene hierarchy, navigate to "Mesh Toolkit," and then
 click "WebSlate"/"WebSlateFrame". You can also click the "+" button at the top left of
 the hierarchy window to see the same menu. Once you've added a WebSlate,
 add a URL to display content in Mesh.
@@ -247,7 +247,7 @@ Press the Unity editor Play button to view your Web page:
 
 To enable interaction in the WebSlate, you have to set up a few things.
 
-1. Right-Click in the scene hierarchy, navigate to "Mesh Toolkit," and then
+1. Right-click in the scene hierarchy, navigate to "Mesh Toolkit," and then
     click "PlayModeSetup".
 
     ![Add playmode to your Unity scene](../../../media/webview-developer-guide/image013.png)
