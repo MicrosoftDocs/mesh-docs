@@ -204,6 +204,41 @@ To enable interaction in the WebSlate, you have to set up a few things.
 
 **Now you're ready to upload the Environment to Mesh and share your creation with the world!**
 
+# WebSlate domain allow-list
+
+To ensure security against unintended URL-based attack vectors such as phishing, WebSlates by default restrict navigation to the URL's that are included under the domain of the first page loaded into the WebSlate. For example, a WebSlate launched on https://www.microsoft.com/ will only navigate to pages whose URL's start with \"www.microsoft.com\".
+
+While this ensures that users will not accidentally diverge from the intended navigation flow, it can be an overly restrictive default for some use-cases, such as user authentication, during which there may be redirections to subdomains or third-party authentication providers.
+
+The way to accomodate for these use-cases is by adding domains to the WebSlate's allow-list.
+
+## Automatically add domains (recommended)
+
+When working with WebSlates in the Unity editor, you have the option of enabling \"Collect Allowed Domains,\" which will remove the domain navigation restriction so that you can navigate freely when running in playmode to test your scenario.
+
+While you navigate in playmode, the WebSlate will log the domains you visit in the background. 
+
+![Collect allowed domains checkbox is enabled](../../../media/webview-developer-guide/allowed-domains-enabled.png)
+
+In this case, we're expanding navigation from *microsoft.com* to also include *learn.microsoft.com*.
+
+Once you exit playmode, you will find an asset called *\"WebViewAllowedDomains.asset\"* in your top-level *Assets* folder.
+
+![WebSlate allowed domains asset](../../../media/webview-developer-guide/allowed-domains-asset.png)
+
+Clicking on this asset will give you the list of domains you visited. You can right click, copy, and then paste the values into the \"Allowed Domains\" field of the WebSlate component.
+
+![Copy allowed domains](../../../media/webview-developer-guide/copy-allowed-domains.png)
+![Paste allowed domains](../../../media/webview-developer-guide/paste-allowed-domains.png)
+
+**Note that this option is impossible to enable in uploaded scenes. Leaving the \"Collect Allowed Domains\" enabled will NOT remove the restriction in your final scene. However, your allowed domains list will persist and will allow navigation, as long as the domains are added to the WebSlate.**
+
+## Manually add domains
+
+If you already know which domains you will need, you can manually add them to the WebSlate by expanding the \"Allowed Domains\" drop-down and adding your supplemental domains to the list in the Unity GUI.
+
+![Manually adding allowed domains with the plus button](../../../media/webview-developer-guide/allowed-domains-manual.png)
+
 # WebSlate in Visual Scripting
 
 Visual Scripting offers a \"no-code\" approach to adding behavior to a scene. This means that developers can now implement WebSlate functionality and behavior without the need for traditional programming. Instead, a visual interface is provided, enabling users to define and connect various actions and events in a scene. This simplifies the process of adding interactivity and behavior, making it accessible to individuals without extensive programming knowledge or experience.
