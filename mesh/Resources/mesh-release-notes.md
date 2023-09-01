@@ -18,17 +18,17 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 #### Environment Editor panel is now available
 
-The Environment Editor panel can help to add content to your Event or Template. 
+The **Environment Editor** panel can help to add content to your Event or Template. 
 
-1.	Open the Environment Editor panel from the app bar, then you can add images, videos, and text to your environment. These are called Artifacts.  
+1.	Open the **Environment Editor** panel from the app bar, then you can add images, videos, and text to your environment. These are called Artifacts.  
 
     ![A screenshot of the Mesh event app bar](media/environment-editor.png)
 
-2.	In the Artifacts dialog, you can select the **+** button to add images, videos, and text to the environment.
+2.	In the **Artifacts** dialog, you can select the **+** button to add images, videos, and text to the environment.
 
     ![A screenshot of the Artifacts dialog](media/artifacts-dialog.png)
 
-Artifacts can be used to add branding to make the event environment feel unique to your event. Also, artifacts can be used with the Control Panel to highlight content as part of your presentations or serve as moments to your event flow.
+Artifacts can be used to add branding to make the event environment unique to your event. Also, artifacts can be used with the **Control Panel** to highlight content as part of your presentations or serve as moments to your event flow.
 
 For example, as you welcome new members to your team during your event, you can post a few pictures of them around the stage so everyone can put a name to the new faces.
 
