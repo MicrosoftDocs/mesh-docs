@@ -140,7 +140,7 @@ be enabled for your work account:
     must add your work account as a content contributor for each Mesh
     world you want to upload a template to.
 
-For more information, see our document titled *Custom Worlds \-- IT
+For more information, see our document titled *Custom Worlds -- IT
 Admin Guide*.
 
 ## Mesh Scripting setup information
@@ -159,7 +159,7 @@ Make sure you have the following installed:
 
 **To confirm that you have the Azure CLI installed:**
 
-- Run the **az \--version** command. (Learn about [choosing the right Azure command-line tool](https://learn.microsoft.com/en-us/cli/azure/choose-the-right-azure-command-line-tool)).
+- Run the **az --version** command. (Learn about [choosing the right Azure command-line tool](https://learn.microsoft.com/en-us/cli/azure/choose-the-right-azure-command-line-tool)).
 
 **To confirm that you're logged in to the subscription where you have
 permissions to deploy MeshApp's cloud infrastructure:**
@@ -168,10 +168,10 @@ permissions to deploy MeshApp's cloud infrastructure:**
     correct subscription, run **az logout** and then **az login** to log
     in to the right account. If you have access to multiple Azure
     subscriptions in different tenants, it's easier to log in using the
-    **az login \--use-device-code** command.
+    **az login --use-device-code** command.
 
     > [!NOTE]
-    > Switching Azure subscriptions/tenants using the Azure CLI resets your default subscription. To ensure that you update your default subscription if you switch tenants, use the **az account set -n "\<subscription-name>"** command. Example **: az account set -n "My Azure Subscription"**.
+    > Switching Azure subscriptions/tenants using the Azure CLI resets your default subscription. To ensure that you update your default subscription if you switch tenants, use the **az account set -n "<subscription-name>"** command. Example **: az account set -n "My Azure Subscription"**.
 
 **Resource Group**
 
@@ -377,11 +377,11 @@ feel like when it runs in the *Mesh app*. A key feature of Playmode is
 the ability to run multiple clients within the same process; this allows
 you to easily get a first impression of a multi-user scenario.
 
-1. Right-click inside the **Hierarchy** and then, in the context menu, select **Mesh Toolkit** \> **PlaymodeSetup**.
+1. Right-click inside the **Hierarchy** and then, in the context menu, select **Mesh Toolkit** > **PlaymodeSetup**.
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image018.jpg)
 
-    Note that this adds the **PlaymodeSetup \[ NoUpload\]** prefab to the
+    Note that this adds the **PlaymodeSetup [ NoUpload]** prefab to the
     scene.
 
     ![A screenshot of a computer Description automatically generated with
@@ -422,7 +422,7 @@ reminder of what the Environment looks like.
     be based on the **Scene** window).
 
 2. Select the "+" drop-down located below the **Hierarchy** tab, and
-    then select **Mesh Toolkit** \> **Thumbnail Camera**.
+    then select **Mesh Toolkit** > **Thumbnail Camera**.
 
 3. To confirm that the view in the Thumbnail Camera is what you want,
     in the **Hierarchy**, select **MeshThumbnailCamera**. The Camera's
@@ -492,9 +492,9 @@ and off and change the button text.
 
 **Add the button to the scene**
 
-1. In Unity, make sure the GameObject named **Chapter3** is expanded.
+1. In Unity, make sure the GameObject named **Chapter3** and its child object named **3.1 - Video** are expanded.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image036.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image036.jpg) TBD 031
 
 2. Search for the **ButtonBase** prefab.
 
@@ -506,29 +506,29 @@ and off and change the button text.
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image038.png)
 
-    Make sure the **Transform** \> **Position** values for **ButtonBase** are 0, 0, 0.
+    Make sure the **Transform** > **Position** values for **ButtonBase** are 0, 0, 0.
 
 **ButtonBase** is placed in the scene a little lower than where we want it.
 
-![A picture containing text, screenshot, multimedia software, software Description automatically generated](../../../media/sample-mesh-101/image039.png)
+![A picture containing text, screenshot, multimedia software, software Description automatically generated](../../../media/sample-mesh-101/image039.png) TBD 033
 
 Let's fix that.
 
 1. Ensure that **ButtonBase** is selected in the **Hierarchy**.
 
-2. In the **Inspector**, change the **Transform** \> **Position** \>
+2. In the **Inspector**, change the **Transform** > **Position** >
     **Y** value to "1".
 
 Perfect! Now **ButtonBase** is correctly located just in front of the **BackplateBase** object.
 
-![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/image040.jpg)
+![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/image040.jpg) TBD 034
 
 **Rename the button**
 
 - With **ButtonBase** selected, in the **Inspector**, change the name
     of **ButtonBase** to "PlayVideoButton".
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image042.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image042.png) TBD 035
 
 **Change the label of the button**
 
@@ -549,30 +549,54 @@ Right now, the text on the button says "Label." Let's change that to
 
 ## Create the Visual Script for the button
 
-1. In the **Hierarchy**, select *VideoPlayer*.
+Before we add our first visual script, in the **Hierarchy**, collapse **PlayVideoButton** and then expand **VideoPlayer**. 
+
+ <image 200)>
+
+1. In the **Hierarchy**, select **VideoPlayer**.
 1. In the **Inspector**, click **Add Component**, and then select **Script Machine**.
 
-Note that two new components have been added in the **Inspector**: **Script Machine** component and **Variables.**
+Note that two new components have been added in the **Inspector**: **Script Machine** component and **Variables.** There's also a new window named *Mesh Visual Scripting Diagnostics* in the **Inspector**. This will give you feedback on your visual script and can be useful for troubleshooting.
 
- <image>
+<image 201)>
 
-There's also a new window named *Mesh Visual Scripting Diagnostics* in the **Inspector**. This will give you feedback on your visual script and can be useful for troubleshooting.
-
-<image>
+Note that in the **Script Machine** component, the **Source** is set to **Graph**. Let's keep that setting. This means that we'll be creating a new script graph as an asset and saving it in the project.
 
 1. In the **Script Machine** component, click the **New** button.
+1. Navigate to the **Chapter3** > **StartingPointVisualScripts** folder.
 
-<image>
+Note that there are already two existing assets: **SPShowInfoDialog.asset** and **SPTeleportToOpenAir.asset**. We'll be using these as starting points for the other two features in this chapter. For the feature we're working on right, the interactable button, we'll create a new script graph.
 
-1. Navigate to the "StartingPointVisualScripts" folder.
-1. In the **Save Graph** dialog, enter the name "SPVideoPlayerBehavior" and then click **Save**.
+1. In the **File name** box, enter "SPVideoPlayerBehavior" and then click the **Save** button.
 1. In the **Script Machine** component, enter a name for the graph: "Video Player Behavior." 
 1. Enter a summary for the graph: "Video player behavior definition."
 
+## Putting the script graph together
+
+1. In the **Script Machine** component, click **Edit Graph**. This opens the **Script Graph** window. Dock it next to the **Project** and **Console** tab so that we can see the script graph and **Scene** window at the same time. As we add nodes, you may want more space in the window; you can click the three-dot button and then select **Maximize** for achieve this.
+
+<image 203)>
+
+1. Delete the **OnStart** and **OnUpdate** events.
+
+### Get a reference to the PlayVideoButton GameObject
+
+1. In the **Blackboard** section of the **Script Graph**, select the **Object** tab.
+1. Enter the variable name "PlayVideo" in the text box and then press the Enter key or click the + button.
+
+<image 204-playvideo-variable.png)>
+
+1. Click the **Type** drop-down and then select **Game Object**.
+
+<image 204-type-gameobject.png)>
+
+1. Click the circle button next to **Value** and then, in the **Select GameObject** window, search for and select **PlayVideoButton**.
+
+<image 205-value-playvideobutton.png)>
 
 
 
-
+==================================
 
 ## Test your work
 
@@ -681,7 +705,7 @@ gives it the teleport behavior.
 1. Copy the following code to the Windows Clipboard.
 
 // When the button is clicked teleport the user who pressed the button
-to the destination node\'s position and orientation.
+to the destination node's position and orientation.
 
 scene.GetAvatarForUser(e.User)?.TeleportTo(GetWorldPosition(destination),
 GetWorldForward(destination));
@@ -736,7 +760,7 @@ height="1.9666666666666666in"}
     ```csharp
     // When the button is clicked find the ClippingSphereAnimator.
     
-    var animator = scene.FindFirstChild\<ClippingSphereAnimator\>(true);
+    var animator = scene.FindFirstChild<ClippingSphereAnimator>(true);
     
     if (animator != null)
     
@@ -746,7 +770,7 @@ height="1.9666666666666666in"}
     in animation and update the button text.
     
     if (animator.CurrentBaseLayerState ==
-    ClippingSphereAnimator.BaseLayerState.Idle \|\|
+    ClippingSphereAnimator.BaseLayerState.Idle ||
     
     animator.CurrentBaseLayerState ==
     ClippingSphereAnimator.BaseLayerState.ClippingSphereScaleOut)
@@ -756,7 +780,7 @@ height="1.9666666666666666in"}
     animator.CurrentBaseLayerState =
     ClippingSphereAnimator.BaseLayerState.ClippingSphereScaleIn;
     
-    showGeneratorButton.LabelText = \"Hide Generator\";
+    showGeneratorButton.LabelText = "Hide Generator";
     
     }
     
@@ -767,7 +791,7 @@ height="1.9666666666666666in"}
     animator.CurrentBaseLayerState =
     ClippingSphereAnimator.BaseLayerState.ClippingSphereScaleOut;
     
-    showGeneratorButton.LabelText = \"Show Generator\";
+    showGeneratorButton.LabelText = "Show Generator";
     
     }
     
@@ -1030,15 +1054,15 @@ generated](../../../media/sample-mesh-101/image077.jpg)
 
 5. Drag the **Windmill_Turbine_001:Propellors10** GameObject from the
     **Hierarchy** to the **Trigger Events Sensor** component and then
-    drop it in the **On Trigger Enter** \> **Toggle Component** \>
+    drop it in the **On Trigger Enter** > **Toggle Component** >
     **Game Object** field.
 
     ![A screenshot of a computer program Description automatically generated with medium confidence](../../../media/sample-mesh-101/image082.jpg)
 
-6. Select the **On Trigger Enter** \> **Toggle Component** \>
+6. Select the **On Trigger Enter** > **Toggle Component** >
     **Component** drop-down and then choose **Animator**.
 
-7. Note that the **On Trigger Enter** \> **Enable or Disable** option
+7. Note that the **On Trigger Enter** > **Enable or Disable** option
     is set to **Enable**. Leave it at that setting.
 
 8. Select the "+" button for the **On Trigger Exit** option, and then,
@@ -1046,12 +1070,12 @@ generated](../../../media/sample-mesh-101/image077.jpg)
 
 9. Drag the **Windmill_Turbine_001:Propellors10** GameObject from the
     **Hierarchy** to the **Trigger Events Sensor** component and then
-    drop it in the **On Trigger Exit** \> **Game Object** field.
+    drop it in the **On Trigger Exit** > **Game Object** field.
 
-10. Select the **On Trigger Exit** \> **Toggle Component** \>
+10. Select the **On Trigger Exit** > **Toggle Component** >
     **Component** drop-down and then choose **Animator**.
 
-11. Select the **On Trigger Exit** \> **Enable or Disable** drop-down
+11. Select the **On Trigger Exit** > **Enable or Disable** drop-down
     and then select **Disable**.
 
 ## Test your work
@@ -1148,7 +1172,7 @@ Mesh *Environment* and upload it to your Mesh World in the Azure Portal.
 
 **Configure your project settings and sign in**
 
-1. On the menu bar, select **Mesh Toolkit** \> **Configure** \>
+1. On the menu bar, select **Mesh Toolkit** > **Configure** >
     **Project Settings**.
 
     ![A screenshot of a computer Description automaticallygenerated](../../../media/sample-mesh-101/image089.png)
@@ -1157,7 +1181,7 @@ Mesh *Environment* and upload it to your Mesh World in the Azure Portal.
 
     ![Graphical user interface, text, application Description automatically generated](../../../media/sample-mesh-101/image090.png)
 
-3. On the menu bar, select **Mesh Toolkit** \> **Environments**.
+3. On the menu bar, select **Mesh Toolkit** > **Environments**.
 
 4. In the **Mesh Environments** window, select **Sign In**.
 
@@ -1284,7 +1308,7 @@ Portal.
 
 # Chapter 6: Share your Mesh experience with others 
 
-Now that you\'ve uploaded your Mesh101 Environment to Mesh, you can
+Now that you've uploaded your Mesh101 Environment to Mesh, you can
 create and produce an Event based on that Environment that participants
 can experience through the Mesh app for PC or Quest. 
 
@@ -1332,8 +1356,8 @@ automatically generated](../../../media/sample-mesh-101/image103.png)
 8. On the **Environment** page, select the **Custom** tab.
 
 9. Find the **Wind Turbine Tutorial** Environment, then select it, and
-    then click **Next**.\
-    \
+    then click **Next**.
+    
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image106.jpg)
 
 10. On the **Review** page, review your event details. Click **Back** if
