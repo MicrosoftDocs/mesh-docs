@@ -2,8 +2,8 @@
 title: Mesh 101 Tutorial
 description: Mesh 101 Tutorial.
 author: typride
-ms.author: tmilligan
-ms.date: 7/27/2023
+ms.author: vinnietieto
+ms.date: 8/31/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -442,80 +442,12 @@ wind turbine.
 
 ## Chapter 3: Add interactivity with Mesh Scripting
 
-Now that we've completed the setup phase, let's move on to making your GameObjects interactive! In this chapter, we'll dive into Mesh
-Scripting, which you can use to add custom logic to your Environment
-through C# scripts. Mesh Scripting isn't required for every Environment,
-but you'll be using it for the features we want to add in this chapter,
-such as making a button interactive, triggering an informational text
-popup, and teleporting around the scene.
+Now that we've completed the setup phase, let's move on to making your GameObjects interactive! In this chapter, we'll dive into Mesh Visual Scripting, which you can use to add custom logic to your Environment. 
 
-Before you can use Mesh Scripting, there are several setup tasks you
-must perform.
+> [!NOTE]
+> - There are two types of Mesh Scripting: Mesh Cloud Scripting, which uses C# code, and Mesh Visual Scripting, where you create a Script Graph and then add nodes (also called *units*) in a sequence to create your coding logic. This version of the Mesh 101 tutorial uses Mesh Visual Scripting; the previous version used Mesh Cloud Scripting. 
 
-### Add MeshApp settings to your project
-
-As a reminder, MeshApp is an app service that you'll be adding to your
-project to support multiplayer interactivity.
-
-1. On the **Edit** menu, select **Project Settings**, and then navigate
-    to **Mesh Uploader Settings** \> **Extensions** \> **MeshApp Cloud
-    Host Tool**.
-
-![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image022.jpg)
-
-2. Expand the **Deployment Configuration** drop-down ...
-
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image023.png)
-
-    ... and then do the following:
-
-    - Copy the subscription ID that you obtained earlier for MeshApp (see
-        the Prerequisites section named *Mesh Scripting setup information*)
-        and then paste it into the **Subscription ID** field.
-    
-    - Enter a **Resource Group** or let the project choose one for you
-        (details on this are also in the Prerequisites section).
-    
-    - You can accept the default **Location** or choose a different one.
-
-3. When you're finished, close the **Project Settings** window.
-
-### Create the MeshApp application
-
-In order to provide interactive capability for GameObjects (in other
-words, make them "scripted objects"), you must have a component named
-*MeshApp* attached to an object in the scene. This component lets you
-create a C# application that\'s also called *MeshApp.* The application
-is responsible for managing the scripts you create and binding them to
-the Unity scene at both edit time and runtime in the Mesh app. When you
-eventually upload your Environment to the Azure Portal, you'll be
-uploading the MeshApp application at the same time; it runs on the Azure
-back end. We\'ve already created the scripts required for this project,
-but one of the scripts---*App.cs*---is incomplete, and you'll be
-updating it so you can learn how to use Mesh scripting to get the
-interactivity we want.
-
-1. Right-click in the **Hierarchy** and then, in the context menu,
-    select **Mesh Toolkit** \> **Create Mesh App**.
-
-2. Expand the **Chapter3** GameObject.
-
-3. Select all the child objects of **Chapter3** and then drag them to
-    the **Mesh App** GameObject, making them children of that object.
-
-4. Delete the **Chapter3** GameObject.
-
-5. Change the name of the **MeshApp** GameObject to \"Chapter3.\"
-
-6. Drag the newly-renamed **Chapter3** GameObject to the position just
-    above **Chapter4** in the **Hierarchy**.
-
-Does it matter *which* GameObject has the *MeshApp* component? Yes! All objects that you want to be scriptable must be children of a parent object that has the *MeshApp* component attached. In this case, we've made all of our potential scriptable objects children of the
-**Chapter3** GameObject, so that's the object that must have the *MeshApp* component attached. **IMPORTANT**: You can only have one MeshApp component in your scene. If you attempt to add a second one, an error will display.
-
-Your *MeshApp* component should look like this:
-
-![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image024.jpg)
+> - Mesh Scripting isn't required for every Environment, but you'll need it for the features we'll be adding here: making a button interactive, triggering an informational text popup, and teleporting around the scene.
 
 ### Choose the NavMesh layer 
 
@@ -540,34 +472,6 @@ add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
 You don't have to add the other walkable GameObjects to the NavMesh
 layer---we've already done it for you.
 
-### The Structure of your MeshApp project
-
-Let's take a brief look at how the *MeshApp* application is structured.
-
-1. In the **Hierarchy**, select the **Chapter3** GameObject.
-
-2. In the **Inspector** in the *MeshApp* component, select the **Open
-    application folder** button.
-
-    ![](../../../media/sample-mesh-101/image027.png)
-    
-    This opens the Windows File Explorer in the folder where your *MeshApp*
-    project has been created and Mesh scripts are stored. A folder named
-    .*MeshApps* has been created in your project's *Assets* folder, and in
-    the .*MeshApps* folder, a folder has been created for each scene in your
-    project. Since you were in the *StartingPoint* scene when you created
-    the *MeshApps* application, you're now in the application folder for
-    that scene. In the future, when you create your own Mesh scripts, you
-    should save them to the **Assets** \> .**MeshApps** \>**\<your scene
-    name\>** folder**.**
-    
-    ![A screenshot of a computer Description automatically generated with
-    medium confidence](../../../media/sample-mesh-101/image028.jpg)
-    
-    As you can see, this is a C# project with a project file
-    (*StartingPoint.csproj*), script files (*App.cs*, *Program.cs*), and
-    more.
-
 ### Station 1: Create an Interactable Button
 
 For our first task, we want to create a button that will play a video
@@ -582,99 +486,9 @@ when it's pressed by a participant.
 
 We already have a backplate for the button in the correct location in
 our scene, but we need to build up the button a little more and add a
-label to it. As the text box for the station explains, we'll update a
-Mesh script so that the button can be used to toggle the VideoPlayer on
+label to it. As the text box for the station explains, we'll create a
+Script Graph with some button logic so that the button can be used to toggle the VideoPlayer on
 and off and change the button text.
-
-**Create a reference to the button**
-
-At the moment, your project doesn't know what "Button" is---we need to
-add a reference to *Button.cs* to the *StartingPoint.csproj* file.
-
-1. Copy the following to the Windows Clipboard:
-
-    ```csharp
-    <ItemGroup>
-        <Compile Include="..\..\..\Packages\ControlSamples.package\.MeshApps\Button.cs" />
-    </ItemGroup>
-    
-    \</ItemGroup\>
-    ```
-
-
-2. You should already have File Explorer open to the folder containing
-    your MeshApp scripts.
-
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image028.jpg)
-
-    If not, follow the instructions in the previous section to open the
-    folder.
-
-3. From the *StartingPoint* folder, open the file named
-    *StartingPoint.csproj* in your code editor.
-
-    - If you're using Visual Studio, this opens the project and
-        displays the **Solution Explorer**. You must then right-click
-        the project name and select **Edit Project file**.
-
-        ![A screenshot of a computer program Description automatically generated with medium confidence](../../../media/sample-mesh-101/image030.jpg)
-
-    - If you're using Visual Studio Code, the project file opens directly
-        into the editor.
-
-4. Paste the text you copied as shown here and then save the file.
-
-    ![](../../../media/sample-mesh-101/image031.png)
-
-    If you're in Visual Studio with the project open, you can see that *Button.cs* is now included in the project.
-
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image032.jpg)
-
-**Add the code that makes the button interactive**
-
-1. Copy the code below to the Windows Clipboard:
-
-    ```csharp
-    /* Find the node named "PlayVideoButton" and create a button class. */
-
-    var videoButton = new Button(scene, "PlayVideoButton");
-    /* Subscribe to button clicked events.  All code within the statement lambda will be executed on click. */
-
-    videoButton.Clicked += (_, _) =>
-    {
-     /* Find the "Video" and "VideoStill" nodes.	 */
-     var video = scene.FindFirstChild("Video", true);
-         var videoStill = scene.FindFirstChild("VideoStill", true);
-         if (video != null && videoStill != null)
-         {
-            /* Toggle the active state on the video state nodes to enable or disable video playback. */
-            video.IsActive = !video.IsActive;
-            videoStill.IsActive = !videoStill.IsActive;
-            
-            /* Toggle the text on the button based on the current video playback action. */
-            videoButton.LabelText = video.IsActive ? "Stop" : "Play";
-          }
-        };
-    ```
-
-2. In your code editor, open the *App.cs* file (it's in the same folder
-    as the *StartingPoint.csproj* file), then navigate to the Try-Catch
-    block underneath the Chapter 3.1 heading ...
-
-    ![A computer screen shot of a code Description automatically generated](../../../media/sample-mesh-101/image033.jpg)
-
-    ... and then replace the "Paste code here" comment with the code you copied and save the file.
-
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image034.jpg)
-
-    **NOTE**: As mentioned earlier, the Unity project contains the finished
-    version of the tutorial in the *FinishedProject* scene. That scene
-    contains its own version of the *.MeshApps* application and a folder
-    named *FinishedProject* that contains completed versions of the scripts.
-    If in doubt, you can refer to those files to verify that you're updating
-    the code for the *StartingPoint* scene correctly.
-
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image035.png)
 
 **Add the button to the scene**
 
@@ -708,17 +522,10 @@ Let's fix that.
 Perfect! Now **ButtonBase** is correctly located just in front of the **BackplateBase** object.
 
 ![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/image040.jpg)
+
 **Rename the button**
 
-The button is referenced in the *App.cs* script using the name
-*PlayVideoButton* ...
-
-![A screenshot of a computer code Description automatically generated](../../../media/sample-mesh-101/image041.jpg)
-
-... so we need to make sure that's the name of the button in the Unity
-Editor.
-
-1. With **ButtonBase** selected, in the **Inspector**, change the name
+- With **ButtonBase** selected, in the **Inspector**, change the name
     of **ButtonBase** to "PlayVideoButton".
 
     ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image042.png)
@@ -739,6 +546,30 @@ Right now, the text on the button says "Label." Let's change that to
     "Play."
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image044.jpg)
+
+## Create the Visual Script for the button
+
+1. In the **Hierarchy**, select *VideoPlayer*.
+1. In the **Inspector**, click **Add Component**, and then select **Script Machine**.
+
+Note that two new components have been added in the **Inspector**: **Script Machine** component and **Variables.**
+
+<image>
+
+There's also a new window named *Mesh Visual Scripting Diagnostics* in the **Inspector**. This will give you feedback on your visual script and can be useful for troubleshooting.
+
+<image>
+
+1. In the **Script Machine** component, click the **New** button.
+
+<image>
+
+1. Navigate to the "StartingPointVisualScripts" folder.
+1. In the **Save Graph** dialog, enter the name "SPVideoPlayerBehavior" and then click **Save**.
+
+
+
+
 
 ## Test your work
 
