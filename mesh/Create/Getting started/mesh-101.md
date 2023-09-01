@@ -554,7 +554,7 @@ Right now, the text on the button says "Label." Let's change that to
 
 Note that two new components have been added in the **Inspector**: **Script Machine** component and **Variables.**
 
-<image>
+ <image>
 
 There's also a new window named *Mesh Visual Scripting Diagnostics* in the **Inspector**. This will give you feedback on your visual script and can be useful for troubleshooting.
 
@@ -566,6 +566,9 @@ There's also a new window named *Mesh Visual Scripting Diagnostics* in the **Ins
 
 1. Navigate to the "StartingPointVisualScripts" folder.
 1. In the **Save Graph** dialog, enter the name "SPVideoPlayerBehavior" and then click **Save**.
+1. In the **Script Machine** component, enter a name for the graph: "Video Player Behavior." 
+1. Enter a summary for the graph: "Video player behavior definition."
+
 
 
 
