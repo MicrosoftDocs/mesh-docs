@@ -20,17 +20,36 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 The **Environment Editor** panel can help to add content to your Event or Template. 
 
-1.	Open the **Environment Editor** panel from the app bar, then you can add images, videos, and text to your environment. These are called Artifacts.  
+1. Open the **Environment Editor** panel from the app bar, then you can add images, videos, and text to your environment. These are called Artifacts.  
 
     ![A screenshot of the Mesh event app bar](media/environment-editor.png)
 
-2.	In the **Artifacts** dialog, you can select the **+** button to add images, videos, and text to the environment.
+2. In the **Artifacts** dialog, you can select the **+** button to add images, videos, and text to the environment.
 
     ![A screenshot of the Artifacts dialog](media/artifacts-dialog.png)
 
-Artifacts can be used to add branding to make the event environment unique to your event. Also, artifacts can be used with the **Control Panel** to highlight content as part of your presentations or serve as moments to your event flow.
+    Artifacts can be used to add branding to make the event environment unique to your event. Also, artifacts can be used with the **Control Panel** to highlight content as part of your presentations or serve as moments to your event flow.
 
-For example, as you welcome new members to your team during your event, you can post a few pictures of them around the stage so everyone can put a name to the new faces.
+    For example, as you welcome new members to your team during your event, you can post a few pictures of them around the stage so everyone can put a name to the new faces.
+
+3. Once you have added an artifact to the scene, your artifact will appear in front of your avatar and you can configure it in the Artifact Details panel that will appear on the right side of the screen. 
+
+    ![A screenshot of the Artifacts details panel](media/video-artifact.png)
+ 
+    The parameters you set here will determine your artifact configuration when your event starts. If you want to change the configuration live during your event, for example, show a different image or video as the event progresses. If you would like to make the artifact invisible until the right moment in your experience and then have it appear at the right moment you can do so using the <mark> [link to docs for CP]control panel[/link]. </mark>
+
+4. Anywhere you see a URL parameter, you should be able to copy and paste a share link from SharePoint or OneDrive for the image or video you would like to share. Make sure you either make the link accessible to anyone at your organization or set the permissions so that everyone who attends your events will have access. 
+1. To position your artifact - with the environment editor open:
+
+    1. Select and drag your artifact to move it left, right, up, or down. 
+    1. **Alt + Select** and drag up or down to move the artifact toward and away from you 
+    1. **Shift + Select** and drag up or down to make the artifact bigger or smaller. 
+    1. You can also use the rotation and scale handles on the artifact to rotate and scale your artifact. Just select the handle and drag to rotate or scale. 
+ 
+    Make sure you check out the position from different angles to verify you’ve placed it properly. 
+    
+    >[!Tip]
+    >while you are moving an artifact you’ll see a small line drawn from your artifact down to the floor. This can help you position your artifacts relative to landmarks in the scene such as the edge of a stage or a piece of furniture. 
 
 ### Resolved product issues
 
