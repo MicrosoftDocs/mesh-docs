@@ -146,6 +146,8 @@ brightness).
 ### Known issues
 
 - When working with WebSlate in the Unity editor, the editor needs to be restarted when updating the WebSlate or Mesh Toolkit packages through the Unity package manager.
+- The "Current URL" field of a WebSlate currently cannot be updated during Play mode.
+- If your WebSlate game object displays an "internal shader error", navigate to the Inspector view of your WebSlate and ensure that the selected shader is set to "UnlitWebSlate".
 
 ### General limitations
 
