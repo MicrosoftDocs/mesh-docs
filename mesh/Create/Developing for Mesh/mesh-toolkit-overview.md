@@ -26,7 +26,7 @@ The Toolkit includes (but isn't limited to):
 
 - Mesh Physics, used to create enabling and engaging dynamic content.
 
-- The WebView prefab, to enable designers to add a panel that displays
+- The WebSlate prefab, to enable designers to add a panel that displays
     a given web page.
 
 - Mesh.Toolkit.Playmode package, offering the possibility to press
