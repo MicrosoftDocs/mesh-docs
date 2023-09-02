@@ -586,13 +586,25 @@ Note that there are already two existing assets: **SPShowInfoDialog.asset** and 
 
 <image 204-playvideo-variable.png)>
 
-1. Click the **Type** drop-down and then select **Game Object**.
+1. Click the **Type*[* drop-down and then select **Game Object**.
 
-<image 204-type-gameobject.png)>
+<image 205-type-gameobject.png)>
 
 1. Click the circle button next to **Value** and then, in the **Select GameObject** window, search for and select **PlayVideoButton**.
 
-<image 205-value-playvideobutton.png)>
+<image 206-value-playvideobutton.png)>
+
+### Add your new variable to the graph
+
+1. In the **PlayVideo** variable, click and hold on the double lines to the left of **Type**, and then drag the variable and drop it in the graph, where it appears as a node.
+
+> [!NOTE]
+> A node is also called a *unit* in Visual Scripting. In this tutorial, we'll be using the term *node*. 
+
+<image 207-drag-variable.png)>
+
+About VideoPlayerButton
+
 
 
 
