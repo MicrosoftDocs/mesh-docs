@@ -229,7 +229,7 @@ Once you exit playmode, you will find an asset called *\"WebViewAllowedDomains.a
 
 ![WebSlate allowed domains asset](../../../media/webview-developer-guide/allowed-domains-asset.png)
 
-Clicking on this asset will give you the list of domains you visited. You can right click, copy, and then paste the values into the \"Allowed Domains\" field of the WebSlate component.
+Clicking on this asset will give you the list of extra domains you visited, beyond the domain of your initial URL. You can right click, copy, and then paste the values into the \"Allowed Domains\" field of the WebSlate component.
 
 ![Copy allowed domains](../../../media/webview-developer-guide/copy-allowed-domains.png)
 ![Paste allowed domains](../../../media/webview-developer-guide/paste-allowed-domains.png)
