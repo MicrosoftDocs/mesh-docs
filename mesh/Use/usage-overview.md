@@ -16,6 +16,42 @@ Microsoft Mesh offers a host of powerful features that enhance communication and
 
 See [Introduction to Mesh](/mesh/overview) for more information.
 
+## Prerequisites of Microsoft Mesh
+
+For Microsoft Mesh to run on your system, you'll have to first meet
+licensing, subscription, and the minimum PC hardware requirements.
+
+### License or subscription requirements for Mesh
+
+Ensure that you have proper licenses to access Mesh.
+
+Mesh Custom Worlds:
+
+- Azure subscription with storage
+
+*Need assistance? Contact your Microsoft partner for clarification.*
+
+### Hardware requirements
+
+- Minimum PC requirements: 4 CPU cores, 8Gb RAM
+
+- Quest 2 Device for Mesh on Quest
+
+### Prerequisites for producing events
+
+#### Content contributor Role in Azure
+
+To create, manage, or customize events for a Mesh world, your account
+must be added as a Content contributor. Speak to your Azure or IT Admin
+to get added as a Content contributor for a Mesh world if you haven't
+been already.
+
+#### Create the event or be invited to collaborate on it
+
+To create, manage, or customize events you must have created the event
+yourself or be a collaborator for the event.
+
+
 ## Mesh scenarios
 
 Microsoft Mesh is made for corporate events wherein curated experiences
@@ -25,7 +61,7 @@ employee events.
 
 ![Use cases of Mesh: corporate events, interactive learning, self guided tours, and many more](user-guide/media/end-user-guide/mesh-scenarios.png)
 
-## Key features
+## User features
 
 Check out the highlighted features of Mesh below:
 
@@ -48,6 +84,7 @@ Check out the highlighted features of Mesh below:
 
 
 ## Event production features
+
 
 Mesh offers the following features for the Events attendance and
 production:
@@ -118,19 +155,6 @@ production:
     by event producers in events. All these are configured via the
     Control Panel, saved as a template, and used in any future events.*
 
-## Prerequisites for producing events
-
-### Content contributor Role in Azure
-
-To create, manage, or customize events for a Mesh world, your account
-must be added as a Content contributor. Speak to your Azure or IT Admin
-to get added as a Content contributor for a Mesh world if you haven't
-been already.
-
-### Create the event or be invited to collaborate on it
-
-To create, manage, or customize events you must have created the event
-yourself or be a collaborator for the event.
 
 ## Mesh dashboard overview
 
