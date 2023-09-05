@@ -14,6 +14,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 ### Scripting
 
+* If you run into a Trigger Zone component, please ignore it. This will be removed in the next release.
 * New `meshapp` deployments will fail to create `diagnosticSettings` on the `appService`. (19508)
 
     ![A screenshot of the Mesh scripting error](media/mesh-scripting-error.png)
