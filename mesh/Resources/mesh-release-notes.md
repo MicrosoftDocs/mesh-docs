@@ -44,7 +44,7 @@ The **Environment Editor** panel can help to add content to your Event or Templa
 
     ![A screenshot of the Artifacts details panel](media/video-artifact.png)
  
-    The parameters you set here will determine your artifact configuration when your event starts. If you want to change the configuration live during your event, for example, show a different image or video as the event progresses. If you would like to make the artifact invisible until the right moment in your experience and then have it appear at the right moment you can do so using the <mark> [link to docs for CP]control panel[/link]. </mark>
+    The parameters you set here will determine your artifact configuration when your event starts. If you want to change the configuration live during your event, for example, show a different image or video as the event progresses. If you would like to make the artifact invisible until the right moment in your experience and then have it appear at the right moment you can do so using the [**Control Panel**](../use/events-guide/customize-event.md#prepare-content-with-the-control-panel). </mark>
 
 4. Anywhere you see a URL parameter, you should be able to copy and paste a share link from SharePoint or OneDrive for the image or video you would like to share. Make sure you either make the link accessible to anyone at your organization or set the permissions so that everyone who attends your events will have access. 
 1. To position your artifact - with the environment editor open:
