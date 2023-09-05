@@ -14,7 +14,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 ### Scripting
 
-* New `meshapp` deployments will fail to create `diagnosticSettings` on the `appService`.
+* New `meshapp` deployments will fail to create `diagnosticSettings` on the `appService`. (19508)
 
     ![A screenshot of the Mesh scripting error](media/mesh-scripting-error.png)
 
