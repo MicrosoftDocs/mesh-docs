@@ -49,7 +49,7 @@ The tutorial is structured as follows:
 
 - Add a Thumbnail Camera
 
-**Chapter 3: Add interactivity with Mesh Scripting**
+**Chapter 3: Add interactivity with Mesh Visual Scripting**
 
 Learn how to update a script to enable the following:
 
@@ -100,9 +100,9 @@ Azure Portal is called an *Environment*.
 
 Minimum PC requirements: 4 CPU cores, 8Gb RAM
 
-### Unity version 2021.3.21f1
+### Unity version 2022.3.7f1
 
-Unity version 2021.3.21f1 is required for this tutorial.
+Unity version 2022.3.7f1 is required for this tutorial.
 
 [Get help installing Unity](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 
@@ -142,63 +142,6 @@ be enabled for your work account:
 
 For more information, see our document titled *Custom Worlds -- IT
 Admin Guide*.
-
-## Mesh Scripting setup information
-
-In order to use Mesh Scripting, which you'll do throughout Chapter 3,
-you'll be creating and deploying a service called *MeshApp*. This
-service contains the C# code that supports multiplayer interactivity and
-is built and deployed automatically when you upload your Environment to
-Mesh.
-
-Make sure you have the following installed:
-
-**[Azure CLI 2.40.0](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).**
-
-[**.NET 6.0 SDK Windows**](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-
-**To confirm that you have the Azure CLI installed:**
-
-- Run the **az --version** command. (Learn about [choosing the right Azure command-line tool](https://learn.microsoft.com/en-us/cli/azure/choose-the-right-azure-command-line-tool)).
-
-**To confirm that you're logged in to the subscription where you have
-permissions to deploy MeshApp's cloud infrastructure:**
-
-- Run the **az account show** command. If you're not logged in to the
-    correct subscription, run **az logout** and then **az login** to log
-    in to the right account. If you have access to multiple Azure
-    subscriptions in different tenants, it's easier to log in using the
-    **az login --use-device-code** command.
-
-    > [!NOTE]
-    > Switching Azure subscriptions/tenants using the Azure CLI resets your default subscription. To ensure that you update your default subscription if you switch tenants, use the **az account set -n "<subscription-name>"** command. Example **: az account set -n "My Azure Subscription"**.
-
-**Resource Group**
-
-You'll need to select an Azure resource group for Mesh Scripting. This
-is the resource group you intend to use to deploy MeshApp. You can do
-one of the following:
-
-- If you have subscription access privileges, let the project create a
-    default resource group for you.
-
--or-
-
-- Get contributor-level access to a specific resource group from your
-    subscription admin and make a note of the name of this resource
-    group.
-
-**Subscription ID**
-
-This is the subscription ID for your chosen resource group.
-
-![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image002.jpg)
-
-> [!IMPORTANT]
-> The configuration of a subscription and resource group
-> for the Mesh World that you'll publish your Environment to may or may
-> not be the same as the configuration of a subscription and resource
-> group for MeshApp.
 
 ## Chapter 1: Set things up for Mesh
 
@@ -304,7 +247,7 @@ with Mesh Environments*.
 
 1. Open the **Mesh101.unity** project in Unity. If you have more than
     one version of Unity installed, be sure to open the project with the
-    version required for this tutorial: Unity 2021.3.21f1.
+    version required for this tutorial: Unity 2022.3.7f1.
 
     > [!NOTE]
     > In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**.
@@ -355,19 +298,19 @@ If you navigate to the front of the Sphere Terraces and take a closer
 look, you can see that each Sphere Terrace contains a space inside that
 you'll soon be walking around in.
 
-![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image015.jpg)
+![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/013-sphere-terraces-v2.jpg)
 
 You'll be visiting the Sphere Terraces starting in the next
 chapter---they each contain a series of stations where you'll learn how
 to implement Mesh features. The first Sphere Terrace (covered in Chapter
 3) is where you'll learn about Mesh Scripting ...
 
-![A screenshot of a video game Description automatically generated with medium confidence](../../../media/sample-mesh-101/image016.jpg)
+![A screenshot of a video game Description automatically generated with medium confidence](../../../media/sample-mesh-101/014-chapter-3-sphere-terrace-v2.png)
 
 ... and the other Sphere Terrace, covered in Chapter 4, is where you'll
 learn about Mesh Physics.
 
-![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image017.jpg)
+![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/014-chapter-4-sphere-terrace-v2.jpg)
 
 ### Add the PlayModeSetup prefab
 
@@ -389,7 +332,7 @@ you to easily get a first impression of a multi-user scenario.
 
     This prefab provides you with a highly stylized avatar that has a camera attached, so now we can play the project and have a look around.
 
-    ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../../media/sample-mesh-101/image020.jpg)
+    ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../../media/sample-mesh-101/016-playmode-v2.png     )
 
 2. Select the Unity Editor Play button.
 
@@ -462,7 +405,7 @@ add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
 2. Select the **Sphere Terrace** GameObject that's a child object to
     the **Chapter3** GameObject.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image025.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/021-chapter-3-sphere-terrace-full-v2.png)
 
 3. In the **Inspector**, select the **Layer** drop-down and then choose
     **NavMesh**.
@@ -482,7 +425,7 @@ when it's pressed by a participant.
     you're looking at the first station, **3.1 -- Video Playback**, as
     shown below.
 
-![A screenshot of a video playlist Description automatically generated with low confidence](../../../media/sample-mesh-101/image029.png)
+![A screenshot of a video playlist Description automatically generated with low confidence](../../../media/sample-mesh-101/025-button-v2.png)
 
 We already have a backplate for the button in the correct location in
 our scene, but we need to build up the button a little more and add a
@@ -494,11 +437,11 @@ and off and change the button text.
 
 1. In Unity, make sure the GameObject named **Chapter3** and its child object named **3.1 - Video** are expanded.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image036.jpg) TBD 031
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/031-chapter3-expanded-v2.jpg) TBD 031
 
 2. Search for the **ButtonBase** prefab.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image037.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/032-buttonbase-v2.png)
 
 3. Drag **ButtonBase** from the **Project** window and then, in the
     **Hierarchy**, drop it on the GameObject named **3.1 -- Video** so
@@ -510,7 +453,7 @@ and off and change the button text.
 
 **ButtonBase** is placed in the scene a little lower than where we want it.
 
-![A picture containing text, screenshot, multimedia software, software Description automatically generated](../../../media/sample-mesh-101/image039.png) TBD 033
+![A picture containing text, screenshot, multimedia software, software Description automatically generated](../../../media/sample-mesh-101/033-buttonbase-too-low-v2.png) TBD 033
 
 Let's fix that.
 
@@ -521,14 +464,14 @@ Let's fix that.
 
 Perfect! Now **ButtonBase** is correctly located just in front of the **BackplateBase** object.
 
-![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/image040.jpg) TBD 034
+![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/.034-buttonbase-correct-v2.png) TBD 034
 
 **Rename the button**
 
 - With **ButtonBase** selected, in the **Inspector**, change the name
     of **ButtonBase** to "PlayVideoButton".
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image042.png) TBD 035
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/035-playvideobutton-v2.png) TBD 035
 
 **Change the label of the button**
 
@@ -545,7 +488,7 @@ Right now, the text on the button says "Label." Let's change that to
     component, and then, in the **Text Input** box, change the text to
     "Play."
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image044.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/036-playlabel-v2.jpg)
 
 ## Create the Visual Script for the button
 
