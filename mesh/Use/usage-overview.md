@@ -12,7 +12,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 Microsoft Mesh offers a host of powerful features that enhance communication and collaboration in remote and hybrid workplaces. With Microsoft Mesh, you can feel the presence of coworkers in shared experiences on PC or Quest 2, collaborate in 3D environments, and startup side-conversations with ease.
 
-![Strike up a conversation with colleagues in Mesh space](user-guide/media/end-user-guide/mesh-conversation.jpg)
+![Strike up a conversation with colleagues in Mesh space](user-guide/media/mesh-conversation.jpg)
 
 See [Introduction to Mesh](/mesh/overview) for more information.
 
@@ -59,7 +59,7 @@ and specific environments can be made to serve business needs -- whether
 serving external customers, creating for clients, or hosting internal
 employee events.
 
-![Use cases of Mesh: corporate events, interactive learning, self guided tours, and many more](user-guide/media/end-user-guide/mesh-scenarios.png)
+![Use cases of Mesh: corporate events, interactive learning, self guided tours, and many more](user-guide/media/mesh-scenarios.png)
 
 ## User features
 
@@ -80,7 +80,7 @@ Check out the highlighted features of Mesh below:
     will hear other participants' voices depending on their distance and spatial orientation. Spatial audio allows multiple localized conversations to happen within the same environment. This provides a natural way to
     virtually socialize which isn't possible without the Mesh-powered online events.
 
-    ![A screenshot of a computer Description automatically generated](user-guide/media/end-user-guide/image007.png)
+    ![A screenshot of a computer Description automatically generated](user-guide/media/image007.png)
 
 
 ## Event production features
@@ -171,6 +171,14 @@ medium confidence](../media/mesh-event-producer-guide/image003.png)
 
    > [!div class="nextstepaction"]
    > [Manage an event](manage-event.md)
+
+   > [!div class="nextstepaction"]
+   > [Customize your event](produce-event.md)
+
+## Next steps
+
+   > [!div class="nextstepaction"]
+   > [Get started with Mesh](user-guide/getting-started.md)
 
    > [!div class="nextstepaction"]
    > [Customize your event](produce-event.md)

@@ -28,7 +28,7 @@ your Avatar. Visit the link below:
 [Project Napili -- Microsoft Store
 Apps](https://apps.microsoft.com/store/detail/project-napili/9P0B5VMS9RTQ?hl=en-us&gl=us).
 
-![A screenshot of Project Napili in the Microsoft Store ready for download](media/end-user-guide/windows-store-project-napili.png)
+![A screenshot of Project Napili in the Microsoft Store ready for download](media/windows-store-project-napili.png)
 
 >[!Note]
 >If the app isn't available in the Microsoft Store, speak to
@@ -62,17 +62,17 @@ device, you should move to the new app available at the link below.
     device?](\l)
 
     ![Diagram Description automatically generated with medium
-    confidence](media/end-user-guide/image011.png)
+    confidence](media/image011.png)
 
 3. Once authenticated, select the **Get** button.
 
     ![A black background with white text Description automatically
-    generated with medium confidence](media/end-user-guide/image013.png)
+    generated with medium confidence](media/image013.png)
 
 4. You'll see the button grey out and change from **Get** to
     **Purchased** which indicates that the app has been acquired.
 
-    ![](media/end-user-guide/image015.png)
+    ![](media/image015.png)
 
     >[!Note] 
     >You may need to restart your headset to ensure the app
@@ -92,7 +92,7 @@ email.
 3. It should bring you to your **Profile** page. If not, click your
     **Profile** icon in the top right corner.
 
-   ![A screenshot of profile icon](media/end-user-guide/image017.png)
+   ![A screenshot of profile icon](media/image017.png)
 
 4. Select **Profile**. From there you should see your Email.
 
@@ -102,11 +102,11 @@ email.
 
 2. Select the **App library** button.
 
-    ![the App library button on your Quest menu](media/end-user-guide/image020.png)
+    ![the App library button on your Quest menu](media/image020.png)
 
 3. Find the **Microsoft Mesh (Preview)** app in the App library.
 
-    ![A screenshot of Microsoft Mesh (Preview) in the App library](media/end-user-guide/image022.png)
+    ![A screenshot of Microsoft Mesh (Preview) in the App library](media/image022.png)
 
 4. Select to **Install** then **Open** the app by selecting it
     again.
@@ -118,7 +118,7 @@ email.
 
     You'll see a window like this when the authentication is complete:
 
-    ![A screenshot of a video game Description automatically generated](media/end-user-guide/image024.png)
+    ![A screenshot of a video game Description automatically generated](media/image024.png)
 
 6. Select to **Allow** any **Terms of service & Allow Diagnostic data**.
 

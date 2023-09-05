@@ -34,7 +34,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
     If you're careful, you'll notice that the **MeshApp Deploy & Publish** step is no longer listed in the status dialog.  Attempting to connect to an event in this seemingly successful environment will result in mesh scripting failures.
 
-    The reason this occurs is that the earlier failure modified a file in such a way that subsequent uploads are not attempted.  This is why we are instructing users to remove the `"mode": ""` line.
+    The reason this occurs is that the earlier failure modified a file in such a way that subsequent uploads are not attempted.  This is why you'll need to remove the `"mode": ""` line.
 
     *Here's the workaround:*
 
