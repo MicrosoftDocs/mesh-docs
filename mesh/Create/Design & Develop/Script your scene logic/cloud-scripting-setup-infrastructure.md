@@ -28,7 +28,7 @@ The Mesh App Cloud Infrastructure deployed to the Customer's Azure Subscription 
 
 ## MeshApps cloud infrastructure diagram
 
-:::image type="content" source="../../media/cloud-scripting-infrastructure-guide/image016.png" alt-text="MeshApps infrastructure diagram":::
+:::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/image016.png" alt-text="MeshApps infrastructure diagram":::
 
 ## Resource provider registrations
 
@@ -72,7 +72,7 @@ Depending on how restrictive you'd like your access control policies to be, ther
     [You can assign this role directly on the Azure Security Group you created in the second prerequisite i.e](/azure/role-based-access-control/quickstart-assign-role-user-portal)., "Mesh App Developers".
 
     Below you can see our recommended permissions for the Custom roles you create:
-    :::image type="content" source="../../media/cloud-scripting-infrastructure-guide/image017.png" alt-text="MeshApps infrastructure diagram":::
+    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/image017.png" alt-text="MeshApps infrastructure diagram":::
 
    **Then the JSON file you would upload should be similar to this**:
 
@@ -148,3 +148,9 @@ The Mesh Apps infrastructure utilizes the Premium App Service Linux plan (P1V2),
 > The actual number of apps that you can host on these machines depends on the activity of the apps, the size of the machine instances, and the corresponding resource utilization.
 
 If you receive this error, “This region has quota of 0 PremiumV2 instances for your subscription. Try selecting a different region or SKU," please refer to [Azure subscription limits and quotas - Azure Resource Manager | Microsoft Learn](/azure/azure-resource-manager/management/azure-subscription-service-limits).
+
+   > [!div class="nextstepaction"]
+   > [Getting started with cloud scripting](cloud-scripting-getting-started.md)
+
+   > [!div class="nextstepaction"]
+   > [Mesh scripting overview](mesh-scripting-overview.md)
