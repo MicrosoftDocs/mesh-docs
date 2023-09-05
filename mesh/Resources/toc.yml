@@ -8,9 +8,17 @@ items:
     - name: Known issues
       href: immersive-spaces-known-issues.md
   - name: Mesh release notes
-    href: mesh-release-notes.md
+    items:
+    - name: What's new
+      href: mesh-release-notes.md
+    - name: Known issues
+      href: mesh-known-issues.md
   - name: Mesh Toolkit release notes
-    href: mesh-toolkit-release-notes.md 
+    items:
+    - name: What's new
+      href: mesh-toolkit-release-notes.md 
+    - name: Known issues
+      href: mesh-toolkit-known-issues.md
   - name: Terms and conditions
     href: terms-conditions.md
   - name: Key terms
