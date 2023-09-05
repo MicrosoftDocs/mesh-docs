@@ -167,7 +167,7 @@ medium confidence](../media/mesh-event-producer-guide/image003.png)
 
 
    > [!div class="nextstepaction"]
-   > [](create-event.md)
+   > [Create an event](create-event.md)
 
    > [!div class="nextstepaction"]
    > [Manage an event](manage-event.md)
@@ -181,4 +181,4 @@ medium confidence](../media/mesh-event-producer-guide/image003.png)
    > [Get started with Mesh](user-guide/getting-started.md)
 
    > [!div class="nextstepaction"]
-   > [Customize your event](produce-event.md)
+   > [Join an event in Mesh](user-guide/join-an-event.md.md)
