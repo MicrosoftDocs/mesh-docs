@@ -44,6 +44,6 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 ### WebSlate
 
-* After upgrading, WebSlate game objects may encounter an internal shader error. If so, navigate to the **Inspector** view of your WebSlate and ensure that the selected shader is set to `UnlitWebSlate`.
-* After upgrading, your visual scripting graph may still reference the legacy `WebView` type. If so, manually update this reference to the correct `WebSlate` type.
+* After upgrading, WebSlate game objects may encounter an internal shader error. You can navigate to the **Inspector** view of your WebSlate and ensure that the selected shader is set to `UnlitWebSlate`.
+* After upgrading, your visual scripting graph may still reference the legacy `WebView` type. You can manually update this reference to the correct `WebSlate` type.
 
