@@ -33,11 +33,11 @@ Follow the steps below to see a list of events and join an event.
 3. A **Pre-join** dialog box will appear. You can now select your audio
     device from the **Pre-join** dialog.
 
-    ![A screenshot of the Pre-join dialog to an event](media/image131.png)
+    ![A screenshot of the Mesh prejoin screen](media/mesh-prejoin-screen.png)
 
-    and the **Devices** dialog box appears:
+    and the **Devices** dialog box appears, where you can test your audio devices:
 
-    ![A screenshot of the Devices dialog](media/image132.png)
+    ![A screenshot of the audio device test dialog that can be accessed from the prejoin screen](media/audio-device-test-ui.png)
 
     >[!Note] 
     >In the Mesh app on PC, the Windows default speaker will always be used by Mesh. You can change the speaker settings in the Windows **Settings** -\> **System** -\> **Sound settings** dialog box.
