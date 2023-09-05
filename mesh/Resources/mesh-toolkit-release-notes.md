@@ -3,7 +3,7 @@ title: Release notes for Mesh Toolkit
 description: Mesh release notes
 author: qianw211    
 ms.author: qianwen
-ms.date: 8/29/2023
+ms.date: 9/8/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 ---
@@ -17,7 +17,7 @@ For purposes of this document, there are two categories of users:
 * Creators: Technical artist and developers building with the Mesh Toolkit
 * IT admins: Managers working in Azure
 
-## Release 2023-8-29
+## Release 2023-9-8
 
 ### Version list
 
@@ -28,9 +28,9 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
-| Mesh Toolkit Package      |        | 2023-8-  |
-| Mesh Azure Portal |         |  2023-8- |
-| Mesh (PC/Quest)   |         |  2023-8-  |
+| Mesh Toolkit Package      |        | 2023-9-  |
+| Mesh Azure Portal |  20230905.68       |  2023-9-5 |
+| Mesh (PC/Quest)   |  5.2311.0       |  2023-9-  |
 
 ### What's new
 

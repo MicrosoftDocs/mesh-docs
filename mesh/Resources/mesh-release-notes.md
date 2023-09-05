@@ -3,7 +3,7 @@ title: Release notes for Mesh
 description: Mesh release notes
 author: qianw211    
 ms.author: qianwen
-ms.date: 8/31/2023
+ms.date: 9/8/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -12,9 +12,17 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes and known issues for the Microsoft Mesh App on PC & Quest 2**
 
-## Version 2023-8-31
+## Version 2023-9-8
 
 ### What's new
+
+* There's a new audio device test dialog, which can be accessed from the **Prejoin** dialog to an event.
+
+    ![A screenshot of the Mesh prejoin screen](media/mesh-prejoin-screen.png)
+
+    And here's the new audio device test dialog:
+
+    ![A screenshot of the audio device test dialog that can be accessed from the prejoin screen](media/audio-device-test-ui.png)
 
 #### Environment Editor panel is now available
 
