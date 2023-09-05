@@ -21,7 +21,7 @@ event.
 You can host a single room event with 16 people, or multiple room event
 with up to 200 people, split into 16 person rooms.
 
-![Single vs multiple room events](../../../media/mesh-event-producer-guide/image004.png)
+![Single vs multiple room events](../../media/mesh-event-producer-guide/image004.png)
 
 ## Create an event
 

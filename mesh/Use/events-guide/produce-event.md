@@ -1,4 +1,4 @@
-## Customize your event
+## Produce your event
 
 If you have a custom environment created Unity, there may be components
 you can add to the environment that you can control as an event
@@ -8,25 +8,33 @@ Make your event your own! Create a scripted sequence that you control
 for your event -- think props for pizazz or a curtain opening to start
 the show.
 
-> [!NOTE]
-> We recommend customizing an event at least one hour before the
-> event is scheduled to ensure a smooth experience.
+### Considerations before starting your event
 
-> [!TIP]
-> **Who should customize an event?**
->
-> Anyone with **Content contributor** privileges and invited to
-> collaborate for an event can also customize an event. Do this with
-> caution, knowing that any edits you make will affect the environment
-> that event participants will join in.
+#### Customize before the event
 
-#### Event Producers tools
+To ensure the event runs smoothly, ensure that you customize the event
+at least one hour before the event should start.
 
-- [Control panel](#_Add_Content_with) -- control the elements you add
-    to the environment with scripted sequences of events. Imagine a
-    curtain raise to signal the start of the event!
 
-- [Event templates](#_Event_templates) -- create a template of your event with all customizations that you add to reuse in future events
+#### Provision Multiple Rooms before the Event
+
+If you've chosen a Multiple rooms event, ensure that you've provisioned
+your Multiple Rooms event at least 30 minutes before the event start
+time.
+
+*Provisioning is necessary to enable broadcasting between rooms as the
+event host.*
+
+See the [Provision Multiple Rooms event](#provision-multiple-rooms-before-the-event) section for more
+info.
+
+## Event Producers tools
+
+- Control panel -- control the elements you add to the environment with scripted sequences of events. Imagine a curtain raise to signal the start of the event!
+
+- Event templates -- create a template of your event with all customizations that you add to reuse in future events
+
+## Customize event experience
 
 #### Open the Manage events page
 
@@ -42,9 +50,9 @@ speak to your IT Admin to get Content contributor privileges.
 ![A screenshot of a computer Description automatically generated with
 medium confidence](../../media/mesh-event-producer-guide/image013.png)
 
-#### Customize event experience
+#### Join the customize event experience
 
-Click the **Customize event experience** button and enter the event.
+Select the **Customize event experience** button and enter the event.
 Once you've joined, you can begin [adding content with the Control
 Panel](#_Add_Content_with).
 
@@ -54,100 +62,6 @@ medium confidence](../../media/mesh-event-producer-guide/image016.png)
 **Now that you've joined the event customization experience it's time
 to start customizing!**
 
-## Add Content with the Control Panel
-
-Use the **Control Panel** to access the core set of tools that enable
-you to set up, customize, and trigger specific show-elements in your
-events. Like having a technical booth for theatrical technicians, it's
-designed to give the Event Producer the ability to orchestrate a
-performance in real time.
-
-1. On the **Manage Events** page, select the **Customize event
-    experience** button for the event you wish to customize and
-    collaborate on.
-
-    ![A screenshot of a computer Description automatically generated
-    with medium
-    confidence](../../media/mesh-event-producer-guide/image016.png)
-2. Click the **Join now** button.
-
-3. After you've joined the session, click
-    the "Control panel" button.
-    ![A screenshot of a video game Description automatically
-    generated](../../media/mesh-event-producer-guide/image029.png)
-
-    > [!NOTE]
-    >
->     Adding content takes place in **Edit mode**. 
->
-> ![](../../media/mesh-event-producer-guide/image032.png)
->
-> You should be in this mode by default (look at the top/middle of the window).
-
-4. Click the **+** button.
-
-    ![A screenshot of a computer Description automatically generated
-    with medium
-    confidence](../../media/mesh-event-producer-guide/image030.png)
-
-5. In the **Add items** window, click the **Content** entry.\
-    This opens the **Select content** window. You can add playable
-    content such as *Unity Timelines and Video Players*.
-
-    ![A screenshot of a video game Description automatically
-    generated](../../media/mesh-event-producer-guide/image031.png)
-
-**Control Panel Notes**:
-
-- For the playable content to be available, it must have been added to
-    the original Unity project used to create the environment. If the
-    environment contains no playable content, the **Select content**
-    window will be empty. Reference the [Choose your journey](../Create/Getting%20started/choose-your-journey.md)
-    to get started with adding custom content.
-
-- For a VideoPlayer, the URL needs to be a publicly accessible
-    webpage, or static hosted MP4.
-
-- In the **Select content** window, select the content you want to
-    add, and then click the **Add** button.
-
-    The added content appears in the **Control Panel** window:
-
-### Configure the content controls for a Timeline
-
-1. Select the **Play** button for the Timeline.
-
-2. Select or deselect **Scale animation**.
-
-    ![A screenshot of a video game Description automatically
-    generated](../../media/mesh-event-producer-guide/image033.png)
-
-### Configure the content controls for a Video Player
-
-1. In the Select content window, choose CentralVideoScreen and click
-    Add.\
-    \
-    ![](../../media/mesh-event-producer-guide/image034.png)
-
-2. Once the **CentralVideoScreen** is in your Control panel, click the
-    text button to input a URL for a static hosted MP4 file.\
-    ![Graphical user interface, application Description automatically
-    generated](../../media/mesh-event-producer-guide/image035.png)
-3. Press the **Play** button to view your content.
-
-    Note: To control the volume, use the volume slider found in the
-    expanded dropdown for the item on the Control Panel.**\
-    **![](../../media/mesh-event-producer-guide/image036.png)
-
-### Preview the live run of your event
-
-Within a Customize event experience, open the Control Panel, then Toggle
-to Preview Mode\
-![A screenshot of a video chat Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image037.png)
-
-When you're done configuring content for the event, you can exit the
-customization session and it will automatically save your changes.
 
 ### Producing Live with Configured Content
 
@@ -197,7 +111,7 @@ Here are things you need to look out for throughout this process:
 
  **We hope you enjoy the Mesh Producer Experience!**
 
-# Event templates
+## Event templates
 
 Now that you've created an event and customized it to your liking,
 create an Event template! Event templates to easily reproduce curated
@@ -236,13 +150,13 @@ medium confidence](../../media/mesh-event-producer-guide/image040.png)
 3. Click the **Manage Events** button.
 
 4. Select the event you want to create a template of, and then click
-    the **Options** button.\
-    \
+    the **Options** button.
+
     ![A screenshot of a phone Description automatically generated with
     medium confidence](../../media/mesh-event-producer-guide/image041.png)
 5. In the popup menu, select Save as template to save an event template
-    with the same name as the event you selected.\
-    \
+    with the same name as the event you selected.
+    
     ![Graphical user interface Description automatically
     generated](../../media/mesh-event-producer-guide/image042.png)
 
@@ -250,9 +164,13 @@ medium confidence](../../media/mesh-event-producer-guide/image040.png)
 
 1. Go to the **Manage Events** page.
 
-2. Click the **Templates** tab.\
+2. Click the **Templates** tab.
+
     ![Graphical user interface, application Description automatically
     generated](../../media/mesh-event-producer-guide/image043.png)
-3. In the Template list, select the template you want to delete, and
+1. In the Template list, select the template you want to delete, and
     then click its Trash Can icon. This deletes the template for you and
     everyone in your world.
+
+   > [!div class="nextstepaction"]
+   > [Event help](events-help.md)
