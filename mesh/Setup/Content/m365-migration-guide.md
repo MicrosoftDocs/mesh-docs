@@ -16,6 +16,9 @@ This migration should make the admin experience, event management, and event cre
 
 For now, we are migrating customers carefully. If you are migrating to M365 from Azure and beginning to use the Mesh Portal, continue reading to see how.
 
+> [!NOTE]
+> Azure management of Mesh is being removed with the exception of Mesh scripting resources. For more info on Mesh scripting and Azure, see the [Set up cloud scripting infrastructure in Azure](setup-cloud-scripting-infrastructure.md).
+
 ## Mesh Portal
 
 In the Mesh Portal, admins will be able to manage:
@@ -25,10 +28,6 @@ In the Mesh Portal, admins will be able to manage:
 - Environments and templates
 
 :::image type="content" source="../../media/m365-migration-guide/Homepage.png" alt-text="Mesh portal homepage":::
-
-## Prerequisities
-
-In order to use the mesh portal, you should 
 
 ## Migrating notes
 
@@ -67,7 +66,26 @@ Now your Mesh world is created. You can now upload environments from the Mesh To
 
 ## Events
 
-With the transition to M365 and the Mesh Portal, events are handled slightly differently. Now events can be created without being made in a Mesh world.
+With the transition to M365 and the Mesh Portal, events are handled slightly differently. Now events can be created without being made in a Mesh world. Mesh events will also show up in your Outlook or Teams calendar with a direct link that people can use to join events, making inviting and joining events quicker.
 
+### Create an event
 
-## 
+1. Open the [Mesh Portal](https://portal-selfhost.mesh.microsoft.com/).
+1. Log in with your corporate account.
+1. In the Home page, select **Events** in the left nav.
+    :::image type="content" source="../../media/m365-migration-guide/Select-events.png" alt-text="Events button in Mesh portal":::
+1. Select **Create event** at the top right.
+1. Add the event name, time duration, description, upload a thumbnail image, and adjust the room capacity settings.
+    :::image type="content" source="../../media/m365-migration-guide/Event-details.png" alt-text="Event details page in Mesh portal":::
+1. Select **Next** when complete.
+1. Choose an environment or select an event template that you may have created before. Select **Next** when finished.
+
+    [Learn more about Event templates](../../Use/events-guide/customize-event.md#event-templates)
+
+1. Add your Co-organizers (who will be able to edit the event) and your Attendees (who will be able to join the event) and select **Create event** when finished.
+    :::image type="content" source="../../media/m365-migration-guide/Invite-attendees-co-organizers.png" alt-text="Invite page in the Mesh portal":::
+
+Great job! You've now created your event. Co-organizers and invitees will now see the event in their Outlook and Teams calendars.
+
+> [!NOTE]
+> Please ensure that all participants have updated their Mesh app to the most recent version to ensure that they can use the link in their calendar invite and join the event you just created!
