@@ -66,6 +66,19 @@ These are the offerings and packages currently available. There may be slight di
     | `ForceToolConfig` | replace by `MeshInteractableProperties` |
     | `ThrowableBody` |	replace by `MeshInteractableProperties \| Equippable \| Throwable` |
 
+#### WebSlate
+
+* *Renaming*: We've renamed WebView to Webslate.
+* *Framed WebSlate prefab*: New WebSlate prefab with a Mesh-style design frame is now available in the Mesh Toolkit.
+* *Security enhancements*: Navigation within WebSlate is exclusively limited to HTTPS.
+* *Visual Scripting*: After incorporating the WebSlate visual scripting node into your project, you can utilize it just like any other node in your visual script graph. Here's an example of a script graph that loads a new URL in WebSlate when the state of a graph variable changes.
+* *Manual authentication*: To ensure security against unintended URL-based attack vectors such as phishing, WebSlates by default restricts navigation to the URLs that are included under the domain of the first page loaded into the WebSlate.
+* *Image Quality replacement*: For the 23.11 release, we are temporarily removing Image Quality. Image quality will default to medium quality. Pixels per Unit will enable WebSlates to match the resolution of your screen, enabling users to have a better experience at various viewing distances.
+* *WebSlate performance improvements*:
+    * *Culling*: stops rendering when webviews are outside the user's viewport.
+    * *Suspend/resume*: suspends any webslate not being actively rendered after a preset time.
+* CPA tool now supports WebSlate: Collects and analyzes performance (e.g. render time) across all WebSlates in your scene. This feature provides warnings if elements in your scene are affecting your WebSlates.
+
 #### Uploader
 
 * Updated Uploader to Unity version 2022.3.7f1
