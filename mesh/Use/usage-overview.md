@@ -181,4 +181,4 @@ medium confidence](../media/mesh-event-producer-guide/image003.png)
    > [Get started with Mesh](user-guide/getting-started.md)
 
    > [!div class="nextstepaction"]
-   > [Join an event in Mesh](user-guide/join-an-event.md.md)
+   > [Join an event in Mesh](user-guide/join-an-event.md)
