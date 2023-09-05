@@ -29,7 +29,7 @@ These are the offerings and packages currently available. There may be slight di
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
 | Mesh Toolkit Package      |        | 2023-9-  |
-| Mesh Azure Portal |  20230905.68       |  2023-9-5 |
+| Mesh Azure Portal |  20230817.92   |  2023-9-5 |
 | Mesh (PC/Quest)   |  5.2311.0       |  2023-9-  |
 
 ### What's new
