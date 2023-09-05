@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 # Acitive known issues - Mesh Toolkit
 
-## Version 2023-9-8
+## Version 23.11
 
 ### Interactables
 

@@ -17,9 +17,9 @@ For purposes of this document, there are two categories of users:
 * Creators: Technical artist and developers building with the Mesh Toolkit
 * IT admins: Managers working in Azure
 
-## Release 2023-9-8
+## Version 23.11
 
-### Version list
+### Version list and dates
 
 These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see. We are working to create better transparency and standardization of versions of offerings and packages to make upgrading easier.
 
