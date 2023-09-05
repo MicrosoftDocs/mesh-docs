@@ -12,9 +12,12 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 ## Version 2023-9-8
 
-### Scripting
+### Interactables
 
 * If you run into a Trigger Zone component, please ignore it. This will be removed in the next release.
+
+### Scripting
+
 * New `meshapp` deployments will fail to create `diagnosticSettings` on the `appService`. (19508)
 
     ![A screenshot of the Mesh scripting error](media/mesh-scripting-error.png)
