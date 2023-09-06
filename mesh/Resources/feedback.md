@@ -19,4 +19,3 @@ For product feedback, use the **Feedback** button inside your Mesh experience. T
 ![A screenshot of the Feedback menu in Mesh](media/image098.jpg)
 
 If you're not able to give feedback or report bugs using the **Feedback** button in the Mesh App, you can chat with your Microsoft partners in Teams, or contact your Microsoft partners directly.
-
