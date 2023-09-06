@@ -698,11 +698,11 @@ For the Value, you need to add the "Label" GameObject that's a child to the "Pla
 
 1. In the graph, drag a connection from the output control port of the second "Game Object: Set Active" node in the "if: True" sequence, and then drop it in empty space to open the Fuzzy Finder.
 
-![A screenshot ](../../media/sample-mesh-101/233-fuzzy-finder-v2.png)
+![A screenshot](../../media/sample-mesh-101/233-fuzzy-finder-v2.png)
 
 1. Search for "set text" and then select "Text Mesh Pro: Set Text."
 
-[!A screenshot ](../../media/sample-mesh-101/234-testmesh-pro-v2.png)
+[!A screenshot ](../../media/sample-mesh-101/234-textmesh-pro-v2.png)
 
 1. Drag the "VideoPlayerButtonLabel" from the **Blackboard** and drop it in the graph to create a new node.
 1. Connect the outport port of the new "Get Object Variable" node to the first input port on the "Text Mesh Pro: Set Text" node.
@@ -712,7 +712,7 @@ For the Value, you need to add the "Label" GameObject that's a child to the "Pla
 
 1. Repeat the steps above to create a label for the "If: False" sequence of nodes. This time, type in the label text "Play."
 
-![A screenshot ](../../media/sample-mesh-101/236-set-text-play-v2.png)
+![A screenshot ](../../media/sample-mesh-101/236-set-text-play.png)
 
 ## Test your work
 
