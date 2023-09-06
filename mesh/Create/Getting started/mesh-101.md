@@ -735,33 +735,20 @@ For this task, we'll enhance an existing visual script that causes an info dialo
 2. In the **Inspector**, expand the GameObject named **3.2 -- Info
     Dialog**.
 
-3. Select the **Proximity Trigger** child object. As the name implies,
-    this has been set up as a trigger volume located above the platform
-    which avatars will be stepping on. We just need to add the code to
-    make it work.
+3. In the **Hierarchy**, select **Information_Button**
+![A screen shot of 3.2 - Info_Dialog GameObject Hierachy with Information_Button selected](https://github.com/MicrosoftDocs/mesh-docs-pr/assets/15232740/d3756cc1-ed22-4f1a-82e1-5cd851a4d389)
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image047.jpg)
+4. In the **Inspector**, under **Script Machine** component for **Show Dialog**, click **Edit Graph**
+![A screen shot of the Information_Button's Inspector](https://github.com/MicrosoftDocs/mesh-docs-pr/assets/15232740/c4b0185a-adff-4ac2-a808-8c0ab36acd3b)
 
-4. Copy the following code to the Windows Clipboard:
+![Incomplete Graph for Show Dialog Behavior](https://github.com/MicrosoftDocs/mesh-docs-pr/assets/15232740/4257511d-aa82-436b-ab04-f19373a3dfe3)
 
 
-    ```csharp
-    // Subscribe to trigger entered events. All code within the statement lambda will be executed when an avatar enters the trigger.
-    trigger.Entered += (_, args) =>
-    {
-    _app.ShowMessageToUser("Did you know that the world's largest wind turbine has blades longer than a football field?", args.Avatar.User);
-    };
-    ```
+5. In the graph, add **Show Dialog** node 
+![Fuzzy Finder result for Show DIalog](https://github.com/MicrosoftDocs/mesh-docs-pr/assets/15232740/3a4b227d-b1e7-45c8-9415-ffb1dd69a035)
 
-5. In your code editor, open the *App.cs* file if it's not already
-    open.
-
-6. Navigate to the section named Chapter 3.2.
-
-7. Replace the "Paste code here" comment with the code you copied and
-    save the file.
-
-    ![A close-up of a text Description automatically generated](../../media/sample-mesh-101/image048.jpg)
+6. Edit the node, set the **Message** to "Did you know that the world's largest wind turbine has blades longer than a football field?" and Select **Continue** for the **Button***
+![Completed Graph for Show Dialog Behavior](https://github.com/MicrosoftDocs/mesh-docs-pr/assets/15232740/fab99dd4-4451-4e07-87d5-c07efa16b58f)
 
     Take a moment to read the message that you expect to display: "Did you know that the world's largest wind turbine has blades longer than a football field?"
 
