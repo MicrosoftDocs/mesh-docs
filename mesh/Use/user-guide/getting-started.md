@@ -25,8 +25,8 @@ Download the Microsoft Mesh app on PC (codenamed **Project Napili**)
 from the Microsoft Store for Business to access Events and to customize
 your Avatar. Visit the link below:
 
-[Project Napili -- Microsoft Store
-Apps](https://apps.microsoft.com/store/detail/project-napili/9P0B5VMS9RTQ?hl=en-us&gl=us).
+   > [!div class="nextstepaction"]
+   > [Project Napili -- Microsoft Store Apps](https://apps.microsoft.com/store/detail/project-napili/9P0B5VMS9RTQ)
 
 ![A screenshot of Project Napili in the Microsoft Store ready for download](media/windows-store-project-napili.png)
 
@@ -50,7 +50,8 @@ device, you should move to the new app available at the link below.
 
 1. On your PC, visit the link below to download Mesh on Quest 2.
 
-    [Microsoft Mesh (Preview) on Oculus Quest 2 \| Oculus](https://www.oculus.com/experiences/quest/8919580184782498/)
+    > [!div class="nextstepaction"]
+    > [Microsoft Mesh (Preview) on Oculus Quest 2 \| Oculus](https://www.oculus.com/experiences/quest/8919580184782498/)
 
     If the URL doesn't work, use a new private window in your browser.
 
@@ -128,3 +129,10 @@ email.
 
 **Congratulations! You\'re all set to start using Mesh on Quest 2!**
 
+## Next steps
+
+   > [!div class="nextstepaction"]
+   > [Getting started with Mesh](join-an-event.md)
+
+   > [!div class="nextstepaction"]
+   > [Create an event](events-guide/create-event.md)

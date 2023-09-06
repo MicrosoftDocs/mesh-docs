@@ -11,6 +11,12 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 # Prerequisites for Mesh Development
 
+## License requirement
+
+- Azure subscription with storage
+
+*Need assistance? Contact your Microsoft partner for clarification.*
+
 ## Unity version 2021.3.21f1+
 
 We recommend that you use Unity version 2021.3.21f1+. Later versions will work, but you may see errors which can be bypassed.
