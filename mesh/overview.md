@@ -48,7 +48,7 @@ At this time, you’ll need to be a part of the Microsoft Mesh Technical Adoptio
 
 ![An image of 3D Environment built with libarries and a table for collaboration.](media/welcome-to-mesh/3d-meeting-envrionment.jpg)
 
-## Next steps with Mesh
+## Next steps
 
 ![An image of people meeting in Microsoft Teams as avatars on a laptop PC.](media/welcome-to-mesh/avatars-in-meetings.png)
 

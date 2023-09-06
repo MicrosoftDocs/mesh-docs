@@ -1,6 +1,8 @@
 items:
   - name: Overview
     href: usage-overview.md
+  - name: Hardware and license requirements
+    href: hardware-license-requirements.md
   - name: Mesh user guide
     href: user-guide/toc.yml
   - name: Mesh events guide

@@ -16,7 +16,21 @@ the event in Mesh. Creating an event is the first step. Then you can
 invite people to collaborate as hosts or designers and customize the
 event.
 
-### Single vs Multiple room Events
+## Prerequisites for producing events
+
+### Content contributor Role in Azure
+
+To create, manage, or customize events for a Mesh world, your account
+must be added as a Content contributor. Speak to your Azure or IT Admin
+to get added as a Content contributor for a Mesh world if you haven't
+been already.
+
+### Create the event or be invited to collaborate on it
+
+To create, manage, or customize events you must have created the event
+yourself or be a collaborator for the event.
+
+## Single vs Multiple room Events
 
 You can host a single room event with 16 people, or multiple room event
 with up to 200 people, split into 16 person rooms.

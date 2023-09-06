@@ -16,41 +16,6 @@ Microsoft Mesh offers a host of powerful features that enhance communication and
 
 See [Introduction to Mesh](/mesh/overview) for more information.
 
-## Prerequisites of Microsoft Mesh
-
-For Microsoft Mesh to run on your system, you'll have to first meet
-licensing, subscription, and the minimum PC hardware requirements.
-
-### License or subscription requirements for Mesh
-
-Ensure that you have proper licenses to access Mesh.
-
-Mesh Custom Worlds:
-
-- Azure subscription with storage
-
-*Need assistance? Contact your Microsoft partner for clarification.*
-
-### Hardware requirements
-
-- Minimum PC requirements: 4 CPU cores, 8Gb RAM
-
-- Quest 2 Device for Mesh on Quest
-
-### Prerequisites for producing events
-
-#### Content contributor Role in Azure
-
-To create, manage, or customize events for a Mesh world, your account
-must be added as a Content contributor. Speak to your Azure or IT Admin
-to get added as a Content contributor for a Mesh world if you haven't
-been already.
-
-#### Create the event or be invited to collaborate on it
-
-To create, manage, or customize events you must have created the event
-yourself or be a collaborator for the event.
-
 
 ## Mesh scenarios
 
@@ -60,6 +25,7 @@ serving external customers, creating for clients, or hosting internal
 employee events.
 
 ![Use cases of Mesh: corporate events, interactive learning, self guided tours, and many more](user-guide/media/end-user-guide/mesh-scenarios.png)
+
 
 ## User features
 
@@ -141,7 +107,7 @@ production:
     a Template for use in future events. The content elements added or
     removed from the Control Panel will be saved in your Template but
     still require manual execution.
-    
+
     :::image type="content" source="../media/mesh-event-producer-guide/image047.png" alt-text="Event template":::
 
 - **Custom environments:** A custom environment with features created
@@ -165,12 +131,13 @@ you've **pinned**, or explore **all worlds**.
 ![A screenshot of a computer Description automatically generated with
 medium confidence](../media/mesh-event-producer-guide/image003.png)
 
+## Next steps
 
    > [!div class="nextstepaction"]
-   > [](create-event.md)
+   > [Getting started with Mesh](user-guide/getting-started.md)
 
    > [!div class="nextstepaction"]
-   > [Manage an event](manage-event.md)
+   > [Create an event](events-guide/create-event.md)
 
    > [!div class="nextstepaction"]
-   > [Customize your event](produce-event.md)
+   > [Customize your event](events-guide/produce-event.md)

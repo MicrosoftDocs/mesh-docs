@@ -19,6 +19,8 @@ items:
       href: mesh-toolkit-release-notes.md 
     - name: Known issues
       href: mesh-toolkit-known-issues.md
+  - name: Feedback for Mesh
+    href: feedback.md
   - name: Terms and conditions
     href: terms-conditions.md
   - name: Key terms

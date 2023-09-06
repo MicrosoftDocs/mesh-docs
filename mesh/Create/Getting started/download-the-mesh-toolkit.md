@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 # Downloading the Mesh Toolkit
 
-The Mesh Toolkit holds all packages and samples, as detailed in the [Mesh Toolkit overview](../Developing for Mesh/mesh-toolkit-overview.md). Once downloaded and unzipped, import the packages to your new project.
+The Mesh Toolkit holds all packages and samples, as detailed in the [Mesh Toolkit overview](../Design%20&%20Develop/mesh-toolkit-overview.md). Once downloaded and unzipped, import the packages to your new project.
 
 **Note**: Setting up a new project or updating an existing one both have the same steps for adding packages.
 
