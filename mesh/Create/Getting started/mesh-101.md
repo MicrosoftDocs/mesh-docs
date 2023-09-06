@@ -623,13 +623,62 @@ All the nodes you added basically do one thing: tell you when the button is pres
 
 ## Define the Play action
 
+The play logic we've been using is to enable and disable GameObjects. 
+Note that there are two objects in play here: "Video" and "VideoStill."
+When you want the video to play, we invoke "Video." It has an animation attached.
+When we want the video to stop and just have the screen show an image, we invoke "VideoStill."
+
 We want this flow to be triggered every time the value of "isPlaying" changes.
 
-1. Add the "isPlaying" variable to the graph.
+1. In the portion of the graph below the "Check Button Press" group, add the "isPlaying" variable.
 1. Attach the "On State Changed" node to "isPlaying."
 
 [A screenshot ](../../../media/sample-mesh-101/221-two-nodes-v2.png)
 
+Determine if the state changed or not with an "If" node.
+
+**To set things up so that the video plays if the Play button is pressed**:
+
+[A screenshot ](../../../media/sample-mesh-101/222-if-node-v2.png)
+
+1. Attach the "True" output control of the "If" node to the control input port of a new "Game Object: Set Active" node.  
+
+[A screenshot ](../../../media/sample-mesh-101/224-set-active-v2.png)
+
+If true (in other words, if the button has been pressed and the video is in Play mode), we want the video to play, so let's set it up as follows:
+
+1. Create two new Object variables as shown here:
+
+[A screenshot ](../../../media/sample-mesh-101/223-two-variables-v2.png)
+
+1. Add the two new variables to the graph.
+
+[A screenshot ](../../../media/sample-mesh-101/225-add-nodes-to-graph-v2.png)
+
+We want the "Video" GameObject to be active because it has the video animation attached to it. (Note that in the "Set Active" node attached to "Video, **Value** is selected.)
+
+[A screenshot ](../../../media/sample-mesh-101/226-set-active-to-video.png)
+
+Simultaneously, if the "If" node's value is true, we set the "VideoStill" GameObject to inactive. (Note that in the "Set Active" node attached to "VideoStill", **Value** is *not* selected.)
+
+[A screenshot ](../../../media/sample-mesh-101/227-set-videostill-inactive-v2.png)
+
+**To stop the video if the Play button is pressed while the video is play**:
+
+This is similar to what we did, but in reverse: if the "If" node is false, we make the "VideoStill" GameObject the active object.
+
+1. Select the four nodes that follow the "If" node.
+
+[A screenshot ](../../../media/sample-mesh-101/228-select-nodes-v2.png)
+
+1. Right-click on a selected node and then choose **Duplicate Selection.** 
+1. Drag the duplicated nodes to an empty space towards the bottom of the graph.
+
+[A screenshot ](../../../media/sample-mesh-101/229-duplicated-nodes-v2.png)
+
+1. Connect the "False" control output of the "If" node to the control input of the first "Game Object: Set Active" node in our duplicated set of nodes.
+
+[A screenshot ](../../../media/sample-mesh-101/230-if-is-false-v2.png)
 
 
 
