@@ -24,7 +24,7 @@ This article will help you configure your development environment and start iter
 ## Software dependencies
 
 1. [.NET 6.0 SDK Windows](https://dotnet.microsoft.com/en-us/download)
-1. [Unity 2021.3.21f1](https://unity3d.com/get-unity/download/archive)
+1. [Unity 2022.3.7f1+](https://unity.com/releases/editor/whats-new/2022.3.7)
 1. [Azure CLI 2.40.0](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 ## Create a Scene with a C# MeshApp application
