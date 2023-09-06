@@ -17,9 +17,9 @@ For purposes of this document, there are two categories of users:
 * Creators: Technical artist and developers building with the Mesh Toolkit
 * IT admins: Managers working in Azure
 
-## Release 2023-9-8
+## Version 23.11
 
-### Version list
+### Version list and dates
 
 These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see. We are working to create better transparency and standardization of versions of offerings and packages to make upgrading easier.
 
@@ -29,17 +29,17 @@ These are the offerings and packages currently available. There may be slight di
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
 | Mesh Toolkit Package      |        | 2023-9-  |
-| Mesh Azure Portal |  20230905.68       |  2023-9-5 |
+| Mesh Azure Portal |  20230817.92   |  2023-9-5 |
 | Mesh (PC/Quest)   |  5.2311.0       |  2023-9-  |
 
 ### What's new
 
 * Unity upgraded to 2022.3.7. We recommend all Unity projects for Mesh environments to be upgraded to Unity 2022 LTS, using the latest 23.11 Mesh Toolkit and Mesh app build.
+* Player spawning is now handled by `TravelPoints`, the legacy spawn system has been removed: this includes the `SpawnPointConfig` and `ArbitrarySpawnPointConfig` scripts and support for spawning into seats by default.  All Mesh environments must have `TravelPoints` configured to maintain desired player spawning behavior.  If no `TravelPoints` are found in the scene, the player will spawn above the origin, and if the floor is nearby, the player will be grounded, otherwise the player will fall and respawn in a loop.
 
 #### Scripting
 
 * Mesh 101 sample has been updated to include the Object Configuration Layer (OCL) and Visual scripting workflow.
-* Player spawning is now handled by `TravelPoints`, the legacy spawn system has been removed: this includes the `SpawnConfig` scripts and support for spawning into seats by default.  All Mesh environments must have `TravelPoints` configured to maintain desired player spawning behavior.  If no `TravelPoints` are found in the scene, the player will spawn above the origin, and if the floor is nearby, the player will be grounded, otherwise the player will fall and respawn in a loop.
 * Upgrade instructions: To use the global deployment configuration previously set in the project setting in Unity Editor, select your environment and scene in the Mesh Uploader **Update Environment** tab -> **Modify Deployment Configs** tick box -> select **Use Legacy Configs From Assets** option. This should apply the legacy global deployment configuration to your environment and scene.
 * For the latest information in Visual Scripting, see *Mesh Visual Scripting Guide.pdf*.
 * For the latest information on Cloud Scripting, see *Mesh Scripting Developer Guide.pdf*.
@@ -65,6 +65,19 @@ These are the offerings and packages currently available. There may be slight di
     | `TeleportBody` |	replace by `VisualScripting SetPosition` |
     | `ForceToolConfig` | replace by `MeshInteractableProperties` |
     | `ThrowableBody` |	replace by `MeshInteractableProperties \| Equippable \| Throwable` |
+
+#### WebSlate
+
+* *Renaming*: We've renamed WebView to Webslate.
+* *Framed WebSlate prefab*: New WebSlate prefab with a Mesh-style design frame is now available in the Mesh Toolkit.
+* *Security enhancements*: Navigation within WebSlate is exclusively limited to HTTPS.
+* *Visual Scripting*: After incorporating the WebSlate visual scripting node into your project, you can utilize it just like any other node in your visual script graph. Here's an example of a script graph that loads a new URL in WebSlate when the state of a graph variable changes.
+* *Manual authentication*: To ensure security against unintended URL-based attack vectors such as phishing, WebSlates by default restricts navigation to the URLs that are included under the domain of the first page loaded into the WebSlate.
+* *Image Quality replacement*: For the 23.11 release, we are temporarily removing Image Quality. Image quality will default to medium quality. Pixels per Unit will enable WebSlates to match the resolution of your screen, enabling users to have a better experience at various viewing distances.
+* *WebSlate performance improvements*:
+    * *Culling*: stops rendering when webviews are outside the user's viewport.
+    * *Suspend/resume*: suspends any webslate not being actively rendered after a preset time.
+* CPA tool now supports WebSlate: Collects and analyzes performance (e.g. render time) across all WebSlates in your scene. This feature provides warnings if elements in your scene are affecting your WebSlates.
 
 #### Uploader
 

@@ -40,7 +40,7 @@ your personas in Mesh experiences.
 To create a new avatar, select **+** in the bottom right corner of your
 Mesh App. 
 
-![](media/end-user-guide/image028.png)
+![](media/image028.png)
 
 
 You'll be asked to select a base avatar to start creating.
@@ -54,13 +54,13 @@ Once you're inside of an event, hover over your **profile bubble** and
 select **Customize** to start customizing your avatar.
 
 ![A screenshot of a video game Description automatically
-generated](media/end-user-guide/image018.png)
+generated](media/image018.png)
 
 There's a horizontal toolbar with five options: **Body, Face, Hair,
 Appearance,** and **Wardrobe.**
 
 ![A screenshot of a video game Description automatically
-generated](media/end-user-guide/image019.png)
+generated](media/image019.png)
 
 The initial screen shows you the **Body** section. Note there are three
 buttons in the far left-side column: **Body Shape**, **Prosthetic**, and
@@ -87,7 +87,7 @@ body shape. You can begin by selecting a body shape preset and click the
     sliders.
 
     ![A screenshot of a video game Description automatically
-    generated](media/end-user-guide/image021.png)
+    generated](media/image021.png)
 3. Do one of the following:
 
     - If you're satisfied with your choices, click **Apply**.
@@ -111,7 +111,7 @@ of the default shapes and then click the **sliders** to customize facial
 features.
 
 ![A screenshot of a video game Description automatically
-generated](media/end-user-guide/image023.png)
+generated](media/image023.png)
 We've added many facial features for fine-tuning with **sliders**, such
 as **Cranium** width/height, **Cheek Bone** width and fullness, **Cheek
 Fullness**, and so much more. These customizable options offer even more
@@ -128,13 +128,13 @@ the one you want. Select the **Custom Color Wheel** button and choose
 your favorite eye color.
 
 ![A screenshot of a video game Description automatically generated with
-medium confidence](media/end-user-guide/image025.png)
+medium confidence](media/image025.png)
 
 Tip:** *Select a color preset you like and use the slider bar at the
 bottom to adjust for lightness or darkness**.***
 
 ![A screenshot of a video game Description automatically
-generated](media/end-user-guide/image026.png)
+generated](media/image026.png)
 You can continue to adjust facial features using similar steps in the
 other sections in the left vertical menu, including **Nose**, **Mouth**,
 and **Ears**. Choose a feature, select the one you want from the
@@ -149,7 +149,7 @@ Style**, you can filter for short or long hair styles by clicking on the
 filter button as shown below:
 
 ![A screenshot of a video game Description automatically
-generated](media/end-user-guide/image027.png)
+generated](media/image027.png)
 Once you've customized your avatar, click **Save.**
 
 #### Change Appearance
@@ -158,13 +158,13 @@ Apply makeup and **wrinkles** to your face in the **Appearance** setting
 by adjusting the following: **Lip Color**, **Blush**, **Eyeshadow**,
 **Lashline**, **Face Lines**, or **Bindi**.
 
-![A screenshot of a video game Description automatically generated with medium confidence](media/end-user-guide/image028.png)
+![A screenshot of a video game Description automatically generated with medium confidence](media/image028.png)
 
 #### Change your wardrobe
 
 In the **Wardrobe** section, you're provided a wide selection of **Underlayer**, **Outerwear**, **Headwear**, and **Eyewear** to dress your avatar.
 
-![A screenshot of a video game Description automatically generated](media/end-user-guide/image029.png)
+![A screenshot of a video game Description automatically generated](media/image029.png)
 
 ### Useful customization tools
 
@@ -173,7 +173,7 @@ In the **Wardrobe** section, you're provided a wide selection of **Underlayer**,
 To help you quickly find your desired styles, filtering is available for
 the **Hair, Underlayer, Outerwear,** and **Headgear** sections:
 
-![A screenshot of a video game Description automatically generated](media/end-user-guide/image030.png)
+![A screenshot of a video game Description automatically generated](media/image030.png)
 
 #### Zoom in/out and rotate your avatar preview
 
@@ -212,13 +212,13 @@ The **Home** button at the top left shows you the events happening now
 and upcoming events for all worlds you have access to.
 
 ![A screenshot of a computer Description automatically
-generated](media/end-user-guide/image038.png)
+generated](media/image038.png)
 Select a pinned world in the left-side vertical navigation to see events
 for that specific world. All pinned worlds will be visible in this left
 navigation beneath the **Home** button.
 
 ![A screenshot of a computer Description automatically
-generated](media/end-user-guide/image039.png)
+generated](media/image039.png)
 **Note:** On the Dashboard, the changes from upcoming to live events are
 updated automatically in the **Events** view.
 
@@ -229,7 +229,7 @@ the Dashboard. Use this button to explore Mesh worlds that are available
 to you. Also, you can choose to **Pin** or **Unpin** a Mesh World to the
 left vertical navigation bar of the Dashboard.
 
-![](media/end-user-guide/image040.png)
+![](media/image040.png)
 
 ### Move around in your event
 
@@ -239,7 +239,7 @@ You can look around, walk, run, teleport around, or just sit at the
 table with other avatars. To move around, press the **WASD** keys.
 
 ![A picture containing text, screenshot, font Description automatically
-generated](media/end-user-guide/image041.jpeg)
+generated](media/image041.jpeg)
 **Other keyboard controls:**
 
 - **Q** to rotate left
@@ -255,7 +255,7 @@ generated](media/end-user-guide/image041.jpeg)
 Here are some keyboard shortcuts for moving around in your event:
 
 ![A screenshot of a computer Description automatically
-generated](media/end-user-guide/image042.png)
+generated](media/image042.png)
 
 #### On your Quest headset
 
@@ -271,7 +271,7 @@ bar in the middle holds the **Participants**, **Selfie**, and
 **Reactions** buttons. The **Profile** button in the lower right corner
 holds the **Customize** button for customizing your avatars.
 
-![A screenshot of a video game Description automatically generated](media/end-user-guide/image043.png)
+![A screenshot of a video game Description automatically generated](media/image043.png)
 
 ### Adjust settings
 
@@ -279,7 +279,7 @@ The **Settings** menu helps you to set up the app according to your
 preferences. There are many options available here. It can be accessed
 directly from the bottom left menu button of the Mesh menu bar.
 
-![A screenshot of a computer Description automatically generated](media/end-user-guide/image044.png)
+![A screenshot of a computer Description automatically generated](media/image044.png)
 
 ### Participants
 
@@ -291,13 +291,13 @@ event.
 Take a selfie of yourself with friends or snap a picture from the POV of
 your avatar!\
 \
-![A screenshot of a video game Description automatically generated](media/end-user-guide/image045.png)
+![A screenshot of a video game Description automatically generated](media/image045.png)
 **Note:** Avatars nametags are turned off by default when taking a photo
 or selfie. You can still turn on the nametag by clicking on **...** in
 the App bar.
 
 ![A screenshot of a video game Description automatically
-generated](media/end-user-guide/image046.png)
+generated](media/image046.png)
 Clicking on the photo icon in the menu will take you to the SharePoint
 folder where your photos are stored.
 
@@ -307,7 +307,7 @@ In the app bar, you can trigger **Reactions**, that cause your avatar to
 react with body gestures as well as emotes.
 
 ![A screenshot of a video game Description automatically
-generated](media/end-user-guide/image047.png)
+generated](media/image047.png)
 
 ### Profile
 
@@ -315,18 +315,18 @@ The **Profile** button in the lower right corner gives you access to
 your personal details and avatar customization options.
 
 ![A screenshot of a video game Description automatically
-generated](media/end-user-guide/image048.png)
+generated](media/image048.png)
 Select **Customize** to fine tune your Avatar's appearance while in an
 event!
 
-![](media/end-user-guide/image049.png)
+![](media/image049.png)
 
 ### Nametag and contact card
 
 To find out about another participant in your event, click the nametag
 above an avatar, and then select the **Contact card** icon.
 
-![](media/end-user-guide/image050.png)
+![](media/image050.png)
 
 ## Feedback for Mesh?
 
@@ -339,7 +339,7 @@ experience. This ensures that your feedback and bug reporting will be
 triaged and incorporated quickly.
 
 ![A screenshot of a computer Description automatically
-generated](media/end-user-guide/image051.png)
+generated](media/image051.png)
 If you're not able to give feedback or report bugs using the
 **Feedback** button in the Mesh App, you can chat with your Microsoft
 partners in Teams, or contact your Microsoft partners directly.

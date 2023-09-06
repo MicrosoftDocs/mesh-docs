@@ -16,7 +16,7 @@ For documentation feedback, click this link: [*Mesh TAP Documentation Feedback*]
 
 For product feedback, use the **Feedback** button inside your Mesh experience. This ensures that your feedback and bug reporting will be triaged and incorporated quickly.
 
-![A screenshot of the Feedback menu in Mesh](media/end-user-guide/image098.jpg)
+![A screenshot of the Feedback menu in Mesh](media/image098.jpg)
 
 If you're not able to give feedback or report bugs using the **Feedback** button in the Mesh App, you can chat with your Microsoft partners in Teams, or contact your Microsoft partners directly.
 
