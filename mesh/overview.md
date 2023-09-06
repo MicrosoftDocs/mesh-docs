@@ -53,10 +53,10 @@ At this time, you’ll need to be a part of the Microsoft Mesh Technical Adoptio
 ![An image of people meeting in Microsoft Teams as avatars on a laptop PC.](media/welcome-to-mesh/avatars-in-meetings.png)
 
    > [!div class="nextstepaction"]
-   > [Get started with Avatars for Teams](https://support.microsoft.com/topic/5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
+   > [Use Mesh](Use/usage-overview.md)
 
    > [!div class="nextstepaction"]
-   > [Register your interest in Mesh TAP](https://aka.ms/JoinMeshTAP)
+   > [Create for Mesh](Create/development-overview.md)
 
    > [!div class="nextstepaction"]
-   > [Prepare your organization for Immersive spaces (coming soon)](/microsoftteams/public-preview-doc-updates)
+   > [Setup Mesh](Setup/Content/setup-azure-mesh-guide.md)
