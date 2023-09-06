@@ -650,7 +650,7 @@ If true (in other words, if the button has been pressed and the video is in Play
 
 We want the "Video" GameObject to be active because it has the video animation attached to it. (Note that in the "Set Active" node attached to "Video, **Value** is selected.)
 
-![A screenshot ](../../media/sample-mesh-101/226-set-active-to-video.png)
+![A screenshot ](../../media/sample-mesh-101/226-set-active-to-video-v2.png)
 
 Simultaneously, if the "If" node's value is true, we set the "VideoStill" GameObject to inactive. (Note that in the "Set Active" node attached to "VideoStill", **Value** is *not* selected.)
 
@@ -695,7 +695,7 @@ For the Value, you need to add the "Label" GameObject that's a child to the "Pla
 
 1. Search for "set text" and then select "Text Mesh Pro: Set Text."
 
-[!A screenshot ](../../media/sample-mesh-101/234-textmesh-pro-v2.png)
+![A screenshot ](../../media/sample-mesh-101/234-textmesh-pro-v2.png)
 
 1. Drag the "VideoPlayerButtonLabel" from the **Blackboard** and drop it in the graph to create a new node.
 1. Connect the outport port of the new "Get Object Variable" node to the first input port on the "Text Mesh Pro: Set Text" node.
