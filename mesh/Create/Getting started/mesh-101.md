@@ -437,7 +437,7 @@ and off and change the button text.
 
 1. In Unity, make sure the GameObject named **Chapter3** and its child object named **3.1 - Video** are expanded.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/031-chapter3-expanded-v2.jpg) TBD 031
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/031-chapter3-expanded-v2.jpg)
 
 2. Search for the **ButtonBase** prefab.
 
@@ -453,7 +453,7 @@ and off and change the button text.
 
 **ButtonBase** is placed in the scene a little lower than where we want it.
 
-![A picture containing text, screenshot, multimedia software, software Description automatically generated](../../../media/sample-mesh-101/033-buttonbase-too-low-v2.png) TBD 033
+![A picture containing text, screenshot, multimedia software, software Description automatically generated](../../../media/sample-mesh-101/033-buttonbase-too-low-v2.png)
 
 Let's fix that.
 
@@ -464,14 +464,14 @@ Let's fix that.
 
 Perfect! Now **ButtonBase** is correctly located just in front of the **BackplateBase** object.
 
-![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/.034-buttonbase-correct-v2.png) TBD 034
+![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/.034-buttonbase-correct-v2.png)
 
 **Rename the button**
 
 - With **ButtonBase** selected, in the **Inspector**, change the name
     of **ButtonBase** to "PlayVideoButton".
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/035-playvideobutton-v2.png) TBD 035
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/035-playvideobutton-v2.png)
 
 **Change the label of the button**
 
@@ -494,14 +494,14 @@ Right now, the text on the button says "Label." Let's change that to
 
 Before we add our first visual script, in the **Hierarchy**, collapse **PlayVideoButton** and then expand **VideoPlayer**. 
 
-![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/200-expand-videoplayer-v2.png) TBD 034
+![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/200-expand-videoplayer-v2.png)
 
 1. In the **Hierarchy**, select **VideoPlayer**.
 1. In the **Inspector**, click **Add Component**, and then select **Script Machine**.
 
 Note that two new components have been added in the **Inspector**: **Script Machine** and **Variables.** There's also a new window named *Mesh Visual Scripting Diagnostics* at the bottom of the **Inspector**. This will give you feedback on your visual script and can be useful for troubleshooting.
 
-![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/201-script-machine-v2.png) TBD 034
+![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/201-script-machine-v2.png)
 
 Note that in the **Script Machine** component, the **Source** is set to **Graph**. Let's keep that setting. This means that we'll be creating a new script graph as an asset and saving it in the project.
 
@@ -510,7 +510,7 @@ Note that in the **Script Machine** component, the **Source** is set to **Graph*
 
 Note that there are already two existing assets: **SPShowInfoDialog.asset** and **SPTeleportToOpenAir.asset**. 
 
-![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/202-assets-v2.png) TBD 034
+![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/202-assets-v2.png)
 
 We'll be using these as starting points for the other two features in this chapter. For the feature we're working on right, the interactable button, we'll create a new script graph.
 
@@ -522,7 +522,7 @@ We'll be using these as starting points for the other two features in this chapt
 
 1. In the **Script Machine** component, click **Edit Graph**. This opens the **Script Graph** window. Dock it next to the **Project** and **Console** tab so that we can see the script graph and **Scene** window at the same time. As we add nodes, you may want more space in the window; you can click the three-dot button and then select **Maximize** for achieve this.
 
-![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/203-script-graph-maximized-v2.png) TBD 034
+![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/203-script-graph-maximized-v2.png)
 
 1. Delete the **OnStart** and **OnUpdate** events.
 
@@ -531,7 +531,7 @@ We'll be using these as starting points for the other two features in this chapt
 1. In the **Blackboard** section of the **Script Graph**, select the **Object** tab.
 1. Enter the variable name "PlayVideo" in the text box and then press the Enter key or click the + button.
 
-![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/204-playvideo-variable-v2.png) TBD 034
+![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/204-playvideo-variable-v2.png)
 
 1. Click the **Type*** drop-down and then select **Game Object**.
 
@@ -624,8 +624,8 @@ All the nodes you added basically do one thing: tell you when the button is pres
 ## Define the Play action
 
 The play logic we've been using is to enable and disable GameObjects. 
-Note that there are two objects in play here: "Video" and "VideoStill."
-When you want the video to play, we invoke "Video." It has an animation attached.
+Note that there are two main objects in this scenario: "Video" and "VideoStill."
+When we want the video to play, we invoke "Video." It has an animation attached.
 When we want the video to stop and just have the screen show an image, we invoke "VideoStill."
 
 We want this flow to be triggered every time the value of "isPlaying" changes.
@@ -732,7 +732,7 @@ For the Value, you need to add the "Label" GameObject that's a child to the "Pla
 
 ## Station 3.2: Trigger an info dialog
 
-For this task, we'll add some code to a script that causes an info dialog to appear when an avatar steps onto a platform. Note that the dialog is triggered when the user steps *into* a trigger volume located *above* the platform---the platform itself doesn't trigger anything. This is detailed further in step #3 below.
+For this task, we'll enhance an existing visual script that causes an info dialog to appear when an avatar presses a button.
 
 1. In the **Hierarchy**, collapse the **3.1 -- Video** GameObject.
    In the **Scene** window, note that the Info Dialog Trigger station is to the right of the **3.1 -- Video Playback** station. Adjust the view so that you can clearly see Station 3.2.
