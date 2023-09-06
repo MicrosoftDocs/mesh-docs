@@ -730,7 +730,7 @@ For this task, we'll enhance an existing visual script that causes an info dialo
 1. In the **Hierarchy**, collapse the **3.1 -- Video** GameObject.
    In the **Scene** window, note that the Info Dialog Trigger station is to the right of the **3.1 -- Video Playback** station. Adjust the view so that you can clearly see Station 3.2.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image046.jpg)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/300-info-dialog.jpg)
 
 2. In the **Inspector**, expand the GameObject named **3.2 -- Info
     Dialog**.
