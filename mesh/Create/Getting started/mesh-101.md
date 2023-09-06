@@ -12,7 +12,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 Microsoft Mesh 101 Tutorial
 
-![Graphical user interface, text Description automatically generated](../../../media/sample-mesh-101/image001.png)
+![Graphical user interface, text Description automatically generated](../../media/sample-mesh-101/image001.png)
 A basic tutorial journey for building a Mesh Environment
 
 # Welcome to the Mesh 101 tutorial
@@ -127,7 +127,7 @@ skills.
 You'll need a username and password for the Azure Portal so you can
 upload your work.
 
-#### Content Contributor permissions**
+#### Content Contributor permissions
 
 To upload an Environment to a Mesh world, there are two things that must
 be enabled for your work account:
@@ -147,7 +147,7 @@ Admin Guide*.
 
 ### Download the Mesh desktop app 
 
-To download the app (codenamed **Project Napili**), you can visit the link below.![](../../../media/sample-mesh-101/image003.png)
+To download the app (codenamed **Project Napili**), you can visit the link below.![](../../media/sample-mesh-101/image003.png)
 
 [Project Napili - Microsoft Store Apps](https://apps.microsoft.com/store/detail/project-napili/9P0B5VMS9RTQ?hl=en-us&gl=us)
 
@@ -167,13 +167,13 @@ The Mesh Toolkit contains the *Mesh 101* tutorial project.
     Tools** section, and then, under **Get the Files and Packages**,
     select the **Go** button.
 
-    ![A screenshot of a video game Description automatically generated](../../../media/sample-mesh-101/image004.jpg)
+    ![A screenshot of a video game Description automatically generated](../../media/sample-mesh-101/image004.jpg)
 
 3. On the **Files and Packages** page, download the latest version of
     the Mesh Toolkit (select the three-dot button and then select
     **Download**).
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image005.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image005.jpg)
 
 > [!NOTE]
 > The downloaded zip file's name may vary depending on your
@@ -183,13 +183,13 @@ The Mesh Toolkit contains the *Mesh 101* tutorial project.
 
    In the example below, the user created a folder on their C: drive named *Mesh101.* Next, they moved the downloaded Mesh Toolkit Zip file, which their system renamed *OneDrive_2023-07-24.zip*, to the *Mesh101* folder
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image006.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image006.jpg)
 
 5. In the new folder you created, unzip the Toolkit file, and then
     navigate through the unzipped folder hierarchy until you see folders
     named **Packages** and **Samples**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image007.png)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image007.png)
 
 6. Open the **Samples** folder. The tutorial project, named
     **Mesh101.Unity**, is located there and is packaged as a Zip file.
@@ -198,7 +198,7 @@ The Mesh Toolkit contains the *Mesh 101* tutorial project.
     This creates a **Mesh101.Unity** project folder which you'll open in
     Unity.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image008.png)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image008.png)
 
 > [!IMPORTANT]
 > Don't move the **Mesh101.Unity** project folder or the
@@ -231,7 +231,7 @@ Mesh Toolkit 23.x 
 > this happens, check to ensure that the folder structure described above
 > is correct.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image009.jpg)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image009.jpg)
 
 **The Packages**
 
@@ -252,13 +252,13 @@ with Mesh Environments*.
     > [!NOTE]
     > In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image010.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image010.png)
 
 2. Open the **StartingPoint** scene. You should see the **TMP Importer** window.
 
 3. Select **Import TMP Essentials**, and then close the window.
 
-    ![A screen shot of a computer Description automatically generated with low confidence](../../../media/sample-mesh-101/image011.png)
+    ![A screen shot of a computer Description automatically generated with low confidence](../../media/sample-mesh-101/image011.png)
 
     In the **Scene** window, the letter "T" appears over every object that
     contains Text Mesh Pro. You can turn these off to achieve a less
@@ -271,7 +271,7 @@ with Mesh Environments*.
     select its **icon** toggle button. This turns off the display of
     "T"s in the **Scene** window.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image012.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image012.png)
 
 **About the scenes**
 
@@ -292,25 +292,25 @@ the scene's contents. If we zoom out a little, we can see that there are
 a number of wind turbines in our wind farm. Those two white rounded
 items at the bottom of the window are called *Sphere Terraces*.
 
-![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image014.jpg)
+![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image014.jpg)
 
 If you navigate to the front of the Sphere Terraces and take a closer
 look, you can see that each Sphere Terrace contains a space inside that
 you'll soon be walking around in.
 
-![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/013-sphere-terraces-v2.jpg)
+![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/013-sphere-terraces-v2.jpg)
 
 You'll be visiting the Sphere Terraces starting in the next
 chapter---they each contain a series of stations where you'll learn how
 to implement Mesh features. The first Sphere Terrace (covered in Chapter
 3) is where you'll learn about Mesh Scripting ...
 
-![A screenshot of a video game Description automatically generated with medium confidence](../../../media/sample-mesh-101/014-chapter-3-sphere-terrace-v2.png)
+![A screenshot of a video game Description automatically generated with medium confidence](../../media/sample-mesh-101/014-chapter-3-sphere-terrace-v2.png)
 
 ... and the other Sphere Terrace, covered in Chapter 4, is where you'll
 learn about Mesh Physics.
 
-![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/014-chapter-4-sphere-terrace-v2.jpg)
+![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/014-chapter-4-sphere-terrace-v2.jpg)
 
 ### Add the PlayModeSetup prefab
 
@@ -322,17 +322,17 @@ you to easily get a first impression of a multi-user scenario.
 
 1. Right-click inside the **Hierarchy** and then, in the context menu, select **Mesh Toolkit** > **PlaymodeSetup**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image018.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image018.jpg)
 
     Note that this adds the **PlaymodeSetup [ NoUpload]** prefab to the
     scene.
 
     ![A screenshot of a computer Description automatically generated with
-    medium confidence](../../../media/sample-mesh-101/image019.jpg)
+    medium confidence](../../media/sample-mesh-101/image019.jpg)
 
     This prefab provides you with a highly stylized avatar that has a camera attached, so now we can play the project and have a look around.
 
-    ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../../media/sample-mesh-101/016-playmode-v2.png     )
+    ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../media/sample-mesh-101/016-playmode-v2.png     )
 
 2. Select the Unity Editor Play button.
 
@@ -381,7 +381,7 @@ There are no set rules for how your thumbnail should look---it's totally
 up to you. For the example below, we chose a close-up front view of a
 wind turbine.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/imag021.jpg)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/imag021.jpg)
 
 ## Chapter 3: Add interactivity with Mesh Scripting
 
@@ -405,12 +405,12 @@ add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
 2. Select the **Sphere Terrace** GameObject that's a child object to
     the **Chapter3** GameObject.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/021-chapter-3-sphere-terrace-full-v2.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/021-chapter-3-sphere-terrace-full-v2.png)
 
 3. In the **Inspector**, select the **Layer** drop-down and then choose
     **NavMesh**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image026.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image026.jpg)
 
 You don't have to add the other walkable GameObjects to the NavMesh
 layer---we've already done it for you.
@@ -425,7 +425,7 @@ when it's pressed by a participant.
     you're looking at the first station, **3.1 -- Video Playback**, as
     shown below.
 
-![A screenshot of a video playlist Description automatically generated with low confidence](../../../media/sample-mesh-101/025-button-v2.png)
+![A screenshot of a video playlist Description automatically generated with low confidence](../../media/sample-mesh-101/025-button-v2.png)
 
 We already have a backplate for the button in the correct location in
 our scene, but we need to build up the button a little more and add a
@@ -437,23 +437,23 @@ and off and change the button text.
 
 1. In Unity, make sure the GameObject named **Chapter3** and its child object named **3.1 - Video** are expanded.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/031-chapter3-expanded-v2.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/031-chapter3-expanded-v2.jpg)
 
 2. Search for the **ButtonBase** prefab.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/032-buttonbase-v2.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/032-buttonbase-v2.png)
 
 3. Drag **ButtonBase** from the **Project** window and then, in the
     **Hierarchy**, drop it on the GameObject named **3.1 -- Video** so
     that **ButtonBase** is placed as a child to **3.1 -- Video**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image038.png)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image038.png)
 
     Make sure the **Transform** > **Position** values for **ButtonBase** are 0, 0, 0.
 
 **ButtonBase** is placed in the scene a little lower than where we want it.
 
-![A picture containing text, screenshot, multimedia software, software Description automatically generated](../../../media/sample-mesh-101/033-buttonbase-too-low-v2.png)
+![A picture containing text, screenshot, multimedia software, software Description automatically generated](../../media/sample-mesh-101/033-buttonbase-too-low-v2.png)
 
 Let's fix that.
 
@@ -464,14 +464,14 @@ Let's fix that.
 
 Perfect! Now **ButtonBase** is correctly located just in front of the **BackplateBase** object.
 
-![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/.034-buttonbase-correct-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/.034-buttonbase-correct-v2.png)
 
 **Rename the button**
 
 - With **ButtonBase** selected, in the **Inspector**, change the name
     of **ButtonBase** to "PlayVideoButton".
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/035-playvideobutton-v2.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/035-playvideobutton-v2.png)
 
 **Change the label of the button**
 
@@ -482,26 +482,26 @@ Right now, the text on the button says "Label." Let's change that to
     display its child objects, and then select the **Label** child
     object.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image043.jpg)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image043.jpg)
 
 2. In the **Inspector**, navigate to the **TextMeshPro -- Text**
     component, and then, in the **Text Input** box, change the text to
     "Play."
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/036-playlabel-v2.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/036-playlabel-v2.jpg)
 
 ## Create the Visual Script for the button
 
 Before we add our first visual script, in the **Hierarchy**, collapse **PlayVideoButton** and then expand **VideoPlayer**. 
 
-![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/200-expand-videoplayer-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/200-expand-videoplayer-v2.png)
 
 1. In the **Hierarchy**, select **VideoPlayer**.
 1. In the **Inspector**, click **Add Component**, and then select **Script Machine**.
 
 Note that two new components have been added in the **Inspector**: **Script Machine** and **Variables.** There's also a new window named *Mesh Visual Scripting Diagnostics* at the bottom of the **Inspector**. This will give you feedback on your visual script and can be useful for troubleshooting.
 
-![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/201-script-machine-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/201-script-machine-v2.png)
 
 Note that in the **Script Machine** component, the **Source** is set to **Graph**. Let's keep that setting. This means that we'll be creating a new script graph as an asset and saving it in the project.
 
@@ -510,7 +510,7 @@ Note that in the **Script Machine** component, the **Source** is set to **Graph*
 
 Note that there are already two existing assets: **SPShowInfoDialog.asset** and **SPTeleportToOpenAir.asset**. 
 
-![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/202-assets-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/202-assets-v2.png)
 
 We'll be using these as starting points for the other two features in this chapter. For the feature we're working on right, the interactable button, we'll create a new script graph.
 
@@ -522,7 +522,7 @@ We'll be using these as starting points for the other two features in this chapt
 
 1. In the **Script Machine** component, click **Edit Graph**. This opens the **Script Graph** window. Dock it next to the **Project** and **Console** tab so that we can see the script graph and **Scene** window at the same time. As we add nodes, you may want more space in the window; you can click the three-dot button and then select **Maximize** for achieve this.
 
-![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/203-script-graph-maximized-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/203-script-graph-maximized-v2.png)
 
 1. Delete the **OnStart** and **OnUpdate** events.
 
@@ -531,15 +531,15 @@ We'll be using these as starting points for the other two features in this chapt
 1. In the **Blackboard** section of the **Script Graph**, select the **Object** tab.
 1. Enter the variable name "PlayVideo" in the text box and then press the Enter key or click the + button.
 
-![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/204-playvideo-variable-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/204-playvideo-variable-v2.png)
 
 1. Click the **Type*** drop-down and then select **Game Object**.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/205-type-gameobject-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/205-type-gameobject-v2.png)
 
 1. Click the circle button next to **Value** and then, in the **Select GameObject** window, search for and select **PlayVideoButton**.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/206-value-playvideobutton-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/206-value-playvideobutton-v2.png)
 
 ### Add your new variable to the graph
 
@@ -548,7 +548,7 @@ We'll be using these as starting points for the other two features in this chapt
 > [!NOTE]
 > A node is also called a *unit* in Visual Scripting. In this tutorial, we'll be using the term *node*. 
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/207-drag-variable-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/207-drag-variable-v2.png)
 
 > [!TIP]
 > About VideoPlayerButton
@@ -556,11 +556,11 @@ You may want to take a moment here to examine some of the components for the Pla
 - *Mesh Interactable Properties*: This makes *PlayVideoButton* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named *Mesh Object and Avator Interaction*.
 - **Script Machine**: This has a script graph named *Button Base Behaviour.*
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/208-playvideobutton-components-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/208-playvideobutton-components-v2.png)
 
 If you go into Play mode, you'll see that a new component named **Mesh Interactable Body** is added to **PlayVideoButton**.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/209-body-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/209-body-v2.png)
 
 < Make reference to this object type to get its behavior.>
 
@@ -568,56 +568,56 @@ Back in the script graph, we'll add a node that lets us know when the button is 
 
 1. Click and hold on the outport port of the **PlayVideo** variable, and then release the mouse button. This opens the Fuzzy Finder.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/210-add-body-node-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/210-add-body-node-v2.png)
 
 1. Search for "Mesh Interactable Body," click it, and then select "Is Selected." **Note**: This generates a Boolean value.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/211-is-selected-node-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/211-is-selected-node-v2.png)
 
 At this point, nothing is triggering the button yet. We need to add a node that ensures that every time the button is selected, the visual script runs.
 
 1. Add the "On State Changed" node to the "Is Selected" node.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/212-on-state-changed-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/212-on-state-changed-v2.png)
 
 In addition to knowing when the button is selected, we also want to be able to set the player mode. 
 
 1. On the output control port of the "On State Changed" node, add the "if" node as show below. Note that it points to "True."
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/213-if-node-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/213-if-node-v2.png)
 
 1. Connect the second output port of "On State Changed" to the second input port of "If". Note that this points to the "False" value.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/214-if-node-false-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/214-if-node-false-v2.png)
 
 > [!TIP]
 > The Graph Inspector can help you to better understand the activity of your nodes.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/215-graph-inspector-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/215-graph-inspector-v2.png)
 
 If the button is selected, set a variable to let you know it's selected.
 
 1. Add a "Set Object Variable" node to the "True" output port of the "If" node.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/216-set-object-variable-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/216-set-object-variable-v2.png)
 
 1. In the **Blackboard**, go to the **Object** tab, and then create a variable named "isPlaying." The type should be "Boolean" and the value is false (the default).
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/217-isplaying-var-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/217-isplaying-var-v2.png)
 
 1. In the **Set Object Variable" node, click the variable name drop-down and then select "isPlaying."
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/218-select-isplaying-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/218-select-isplaying-v2.png)
 
 If the video is playing, set to true. If it's not playing, set to false. The "Negate" node negates whatever the value of "IsPlaying" is.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/219-negate-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/219-negate-v2.png)
 
 All the nodes you added basically do one thing: tell you when the button is pressed.
 
 1. Ctrl-drag over the nodes to add them to a group.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/220-group-v2.png)
+[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/220-group-v2.png)
 
 1. Select the group title and then change it to "Check Button Press."
 
@@ -633,35 +633,35 @@ We want this flow to be triggered every time the value of "isPlaying" changes.
 1. In the portion of the graph below the "Check Button Press" group, add the "isPlaying" variable.
 1. Attach the "On State Changed" node to "isPlaying."
 
-[A screenshot ](../../../media/sample-mesh-101/221-two-nodes-v2.png)
+[A screenshot ](../../media/sample-mesh-101/221-two-nodes-v2.png)
 
 Determine if the state changed or not with an "If" node.
 
 **To set things up so that the video plays if the Play button is pressed**:
 
-[A screenshot ](../../../media/sample-mesh-101/222-if-node-v2.png)
+[A screenshot ](../../media/sample-mesh-101/222-if-node-v2.png)
 
 1. Attach the "True" output control of the "If" node to the control input port of a new "Game Object: Set Active" node.  
 
-[A screenshot ](../../../media/sample-mesh-101/224-set-active-v2.png)
+[A screenshot ](../../media/sample-mesh-101/224-set-active-v2.png)
 
 If true (in other words, if the button has been pressed and the video is in Play mode), we want the video to play, so let's set it up as follows:
 
 1. Create two new Object variables as shown here:
 
-[A screenshot ](../../../media/sample-mesh-101/223-two-variables-v2.png)
+[A screenshot ](../../media/sample-mesh-101/223-two-variables-v2.png)
 
 1. Add the two new variables to the graph.
 
-[A screenshot ](../../../media/sample-mesh-101/225-add-nodes-to-graph-v2.png)
+[A screenshot ](../../media/sample-mesh-101/225-add-nodes-to-graph-v2.png)
 
 We want the "Video" GameObject to be active because it has the video animation attached to it. (Note that in the "Set Active" node attached to "Video, **Value** is selected.)
 
-[A screenshot ](../../../media/sample-mesh-101/226-set-active-to-video.png)
+[A screenshot ](../../media/sample-mesh-101/226-set-active-to-video.png)
 
 Simultaneously, if the "If" node's value is true, we set the "VideoStill" GameObject to inactive. (Note that in the "Set Active" node attached to "VideoStill", **Value** is *not* selected.)
 
-[A screenshot ](../../../media/sample-mesh-101/227-set-videostill-inactive-v2.png)
+[A screenshot ](../../media/sample-mesh-101/227-set-videostill-inactive-v2.png)
 
 **To stop the video if the Play button is pressed while the video is play**:
 
@@ -669,21 +669,21 @@ This is similar to what we did, but in reverse: if the "If" node is false, we ma
 
 1. Select the four nodes that follow the "If" node.
 
-[A screenshot ](../../../media/sample-mesh-101/228-select-nodes-v2.png)
+[A screenshot ](../../media/sample-mesh-101/228-select-nodes-v2.png)
 
 1. Right-click on a selected node and then choose **Duplicate Selection.** 
 1. Drag the duplicated nodes to an empty space towards the bottom of the graph.
 
-[A screenshot ](../../../media/sample-mesh-101/229-duplicated-nodes-v2.png)
+[A screenshot ](../../media/sample-mesh-101/229-duplicated-nodes-v2.png)
 
 1. Connect the "False" control output of the "If" node to the control input of the first "Game Object: Set Active" node in our duplicated set of nodes.
 
-[A screenshot ](../../../media/sample-mesh-101/230-if-is-false-v2.png)
+[A screenshot ](../../media/sample-mesh-101/230-if-is-false-v2.png)
 
 1. In the first "Game Object: Set Active" node, deselect "Value."
 1. In the second "Game Object: Set Active" node, select "Value."
 
-[A screenshot ](../../../media/sample-mesh-101/231-reverse-conditions-v2.png)
+[A screenshot ](../../media/sample-mesh-101/231-reverse-conditions-v2.png)
 
 ## Changing the button label
 
@@ -694,25 +694,25 @@ For the Value, you need to add the "Label" GameObject that's a child to the "Pla
 1. In the **Hierarchy**, navigate to **Chapter 3** > **3.1 - Video** > **PlayVideoButton** > **Label.**
 1. Drag this **Label** GameObject from the **Hierarchy** and drop it in the **Value** field of your new variable.
 
-[A screenshot ](../../../media/sample-mesh-101/232-label-v2.png)
+[A screenshot ](../../media/sample-mesh-101/232-label-v2.png)
 
 1. In the graph, drag a connection from the output control port of the second "Game Object: Set Active" node in the "if: True" sequence, and then drop it in empty space to open the Fuzzy Finder.
 
-[A screenshot ](../../../media/sample-mesh-101/233-fuzzy-finder-v2.png)
+[A screenshot ](../../media/sample-mesh-101/233-fuzzy-finder-v2.png)
 
 1. Search for "set text" and then select "Text Mesh Pro: Set Text."
 
-[A screenshot ](../../../media/sample-mesh-101/234-testmesh-pro-v2.png)
+[A screenshot ](../../media/sample-mesh-101/234-testmesh-pro-v2.png)
 
 1. Drag the "VideoPlayerButtonLabel" from the **Blackboard** and drop it in the graph to create a new node.
 1. Connect the outport port of the new "Get Object Variable" node to the first input port on the "Text Mesh Pro: Set Text" node.
 1. In the "Text Mesh Pro: Set Text" node text field, type in "Pause."
 
-[A screenshot ](../../../media/sample-mesh-101/235-label-node-v2.png)
+[A screenshot ](../../media/sample-mesh-101/235-label-node-v2.png)
 
 1. Repeat the steps above to create a label for the "If: False" sequence of nodes. This time, type in the label text "Play."
 
-[A screenshot ](../../../media/sample-mesh-101/236-set-text-play-v2.png)
+[A screenshot ](../../media/sample-mesh-101/236-set-text-play-v2.png)
 
 ## Test your work
 
@@ -723,7 +723,7 @@ For the Value, you need to add the "Label" GameObject that's a child to the "Pla
     on. This causes a brief video about wind turbines to play on the
     screen above the button.
 
-    ![A screenshot of a video playback Description automatically generated with medium confidence](../../../media/sample-mesh-101/image045.jpg)
+    ![A screenshot of a video playback Description automatically generated with medium confidence](../../media/sample-mesh-101/image045.jpg)
 
 1. When you've finished watching the video, press the button you've
     been editing again (it now has the label "Stop").
@@ -737,7 +737,7 @@ For this task, we'll enhance an existing visual script that causes an info dialo
 1. In the **Hierarchy**, collapse the **3.1 -- Video** GameObject.
    In the **Scene** window, note that the Info Dialog Trigger station is to the right of the **3.1 -- Video Playback** station. Adjust the view so that you can clearly see Station 3.2.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image046.jpg)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image046.jpg)
 
 2. In the **Inspector**, expand the GameObject named **3.2 -- Info
     Dialog**.
@@ -747,7 +747,7 @@ For this task, we'll enhance an existing visual script that causes an info dialo
     which avatars will be stepping on. We just need to add the code to
     make it work.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image047.jpg)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image047.jpg)
 
 4. Copy the following code to the Windows Clipboard:
 
@@ -768,7 +768,7 @@ For this task, we'll enhance an existing visual script that causes an info dialo
 7. Replace the "Paste code here" comment with the code you copied and
     save the file.
 
-    ![A close-up of a text Description automatically generated](../../../media/sample-mesh-101/image048.jpg)
+    ![A close-up of a text Description automatically generated](../../media/sample-mesh-101/image048.jpg)
 
     Take a moment to read the message that you expect to display: "Did you know that the world's largest wind turbine has blades longer than a football field?"
 
@@ -781,14 +781,14 @@ For this task, we'll enhance an existing visual script that causes an info dialo
     **TIP**: You may want to tilt the view up a bit so you can keep the
     platform iwn view as you walk towards it.
 
-    ![A screen shot of a video game Description automatically generated with low confidence](../../../media/sample-mesh-101/image049.jpg)
+    ![A screen shot of a video game Description automatically generated with low confidence](../../media/sample-mesh-101/image049.jpg)
     
     Stepping onto the platform (which coincides with stepping *into* the trigger volume) causes an info dialog that displays a message to appear. The message is the one that you added to the script.
     
     > [!NOTE]
     > The info dialog in the image will look different in the Mesh app.
     
-    ![A screenshot of a video game Description automatically generated](../../../media/sample-mesh-101/image050.jpg)
+    ![A screenshot of a video game Description automatically generated](../../media/sample-mesh-101/image050.jpg)
 
 3. When you've finished viewing the message, click its **Okay** button.
 
@@ -802,7 +802,7 @@ teleported from their current location at Station 3.3 to an elevated
 platform that's attached to a wind turbine generator. They can then
 examine the generator.
 
-![A picture containing outdoor, text, screenshot, windmill Description automatically generated](../../../media/sample-mesh-101/image051.jpg)
+![A picture containing outdoor, text, screenshot, windmill Description automatically generated](../../media/sample-mesh-101/image051.jpg)
 
 **Update the script**
 
@@ -811,7 +811,7 @@ examine the generator.
     Trigger** station. Adjust the view so that you can clearly see
     Station 3.3.
 
-    ![A screen shot of a computer Description automatically generated with low confidence](../../../media/sample-mesh-101/image052.jpg)
+    ![A screen shot of a computer Description automatically generated with low confidence](../../media/sample-mesh-101/image052.jpg)
 
 The button is all set up for you---we just need to add the code that
 gives it the teleport behavior.
@@ -832,7 +832,7 @@ GetWorldForward(destination));
     then save the file.
 
 ![A computer code with red line Description automatically
-generated](../../../media/sample-mesh-101/image53.png){width="6.75in"
+generated](../../media/sample-mesh-101/image53.png){width="6.75in"
 height="1.9666666666666666in"}
 
 4. In Unity, save the project and then press the Unity Editor Play
@@ -843,12 +843,12 @@ height="1.9666666666666666in"}
 1. Use the navigation keys to make your avatar walk up to the
     **Teleport** button, and then press the button.
 
-    ![A screenshot of a video game Description automatically generated with medium confidence](../../../media/sample-mesh-101/image054.jpg)
+    ![A screenshot of a video game Description automatically generated with medium confidence](../../media/sample-mesh-101/image054.jpg)
     
     This teleports you up to the platform that's attached to the wind
     turbine's generator.
     
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image055.jpg)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image055.jpg)
     
     Note the information box on the side of the generator that says **3.3 --
     Generator**.
@@ -858,7 +858,7 @@ height="1.9666666666666666in"}
     show and hide the internals of the wind turbine by animating a
     ClippingSphere.
 
-    ![A picture containing text, computer, screenshot, software Description automatically generated](../../../media/sample-mesh-101/image056.jpg)
+    ![A picture containing text, computer, screenshot, software Description automatically generated](../../media/sample-mesh-101/image056.jpg)
 
 3. Select the button. You're supposed to see a window open in the side
     of the turbine so you can look inside, but nothing happens. That's
@@ -918,7 +918,7 @@ height="1.9666666666666666in"}
 3. Paste the code you just copied between the braces for the **ShowGeneratorButton.Clicked** statement lambda, replacing the
     "Paste code here" comment, and then save the file.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image057.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image057.jpg)
 
 4. In the Unity Editor, save the project and then press the Unity Editor Play button.
 
@@ -928,7 +928,7 @@ height="1.9666666666666666in"}
     Generator** button. This time, the ClippingSphere animation works,
     the window opens up, and you can see the wind turbine's generator.
 
-    ![A computer screen shot of a machine Description automatically generated with medium confidence](../../../media/sample-mesh-101/image058.jpg)
+    ![A computer screen shot of a machine Description automatically generated with medium confidence](../../media/sample-mesh-101/image058.jpg)
 
     Feel free to step up close to the generator and have a look. It's pretty
     cool! When you've finished, navigate back out and then press the
@@ -945,15 +945,15 @@ contains the stations for Chapter 4. To get there:
     generator and walk towards the **3.3 -- Go to Chapter 4**
     information box.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image059.jpg)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image059.jpg)
 
 2. Press the **Teleport to Chapter 4** button.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image060.jpg)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image060.jpg)
 
     As advertised, this places the avatar in front of the stations for Chapter 4 and Mesh Physics.
 
-    ![A picture containing text, screenshot, multimedia software, graphics software Description automatically generated](../../../media/sample-mesh-101/image061.jpg)
+    ![A picture containing text, screenshot, multimedia software, graphics software Description automatically generated](../../media/sample-mesh-101/image061.jpg)
 
 3. Press the Unity Editor Play button to exit play mode.
 
@@ -993,7 +993,7 @@ the first station.
 - In the **Hierarchy**, collapse the **Chapter3** GameObject and then
     expand the **Chapter4** GameObject.
 
-![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image062.jpg)
+![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image062.jpg)
 
 ## Add the Physics Scene Setup component
 
@@ -1002,7 +1002,7 @@ the first station.
 2. In the **Inspector**, select the **Add Component** button, and then
     add the **Physics Scene Setup** component.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image063.jpg)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image063.jpg)
 
 > This component ensures that all physics components contained in child
 > objects of **Chapter4** are synchronized correctly.
@@ -1019,7 +1019,7 @@ set up that view.
 1. In the **Hierarchy**, select the GameObject named **4.1 -- Grab and
     Release**.
 
-![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image064.jpg)
+![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image064.jpg)
 
 2. Move the cursor over the **Scene** window and then press the F key
     on your keyboard.
@@ -1030,7 +1030,7 @@ set up that view.
 3. Drag, rotate and/or zoom the view until you see the model in front
     of you, as shown below.
 
-![A computer generated image of a model of a mountain Description automatically generated](../../../media/sample-mesh-101/image065.jpg)
+![A computer generated image of a model of a mountain Description automatically generated](../../media/sample-mesh-101/image065.jpg)
 
 ## Station 4.1: Grab and Release
 
@@ -1043,7 +1043,7 @@ generating power.
     GameObject. Note that it contains three Wind Turbine GameObjects
     that are located on the tabletop in the scene.
 
-![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image066.jpg)
+![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image066.jpg)
 
 > Let's add "grab and release" capabilities to **WindTurbine1** so that
 > participants will be able to move it around in Mesh.
@@ -1055,7 +1055,7 @@ generating power.
 2. In the **Inspector**, select the **Add Component** button and select
     **Force Tool Config**.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image067.jpg)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image067.jpg)
 
 This component tags the object as something that can be picked up or
 manipulated.
@@ -1064,7 +1064,7 @@ manipulated.
     needed, and then for the **Freeze Rotation** settings, select **X,**
     **Y**, and **Z**.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image068.jpg)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image068.jpg)
 
 This will prevent the turbine moving tipping over if you place it on an
 uneven surface.
@@ -1081,12 +1081,12 @@ uneven surface.
 2. Rotate the view to the right until you see the **Go to Chapter 4**
     information box.
 
-![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image069.jpg)
+![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image069.jpg)
 
 3. Walk up to the information box and then select the **Teleport to
     Chapter 4** button.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image070.jpg)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image070.jpg)
 
 4. After you arrive at the Chapter 4 Sphere Terrace, move the cursor
     over **WindTurbine1** until the cursor's shape changes, and then
@@ -1098,7 +1098,7 @@ uneven surface.
 > blade-turning animation yet. We'll do that at the next station.
 
 ![A picture containing text, screenshot, graphics software, multimedia
-software Description automatically generated](../../../media/sample-mesh-101/image071.jpg)
+software Description automatically generated](../../media/sample-mesh-101/image071.jpg)
 
 5. Click the Unity Editor Play button to exit Play mode.
 
@@ -1113,22 +1113,22 @@ done that for you.
     GameObject, and then select its child object named **Animation
     Trigger**.
 
-![A screenshot of a computer program Description automatically generated with medium confidence](../../../media/sample-mesh-101/image072.jpg)
+![A screenshot of a computer program Description automatically generated with medium confidence](../../media/sample-mesh-101/image072.jpg)
 
 As the name suggests, **Animation Trigger** is a trigger volume.
 
-![A computer screen shot of a video game Description automatically generated](../../../media/sample-mesh-101/image073.jpg)
+![A computer screen shot of a video game Description automatically generated](../../media/sample-mesh-101/image073.jpg)
 
 Our goal here is to set up **Animation Trigger** so that when a wind turbine enters it, an animation is triggered that causes the turbine's blades to spin in response to the ocean wind. To make this happen, the **Animation Trigger** GameObject must contain a component called **Trigger Sensor Events** for each of the three wind turbines. Note that, in the **Inspector**, there are already two **Trigger Events Sensor** components set up---these are for **WindTurbine2** and **WindTurbine3**. To see these, expand the **Body Filter** options.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image074.jpg)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image074.jpg)
 
 Your task here will be to add and configure the **Trigger Events Sensor** component for **WindTurbine1**.
 
 - In the **Inspector**, select the **Add Component** button and then
     choose **Trigger Events Sensor**.
 
-![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image076.jpg)
+![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image076.jpg)
 
 **Choosing settings in the Trigger Events Sensor component**
 
@@ -1144,34 +1144,34 @@ trigger an event here, so let's add that to the **Body Filter**.
     menu, select **Root Game Object**.
 
 ![A screenshot of a computer Description automatically
-generated](../../../media/sample-mesh-101/image077.jpg)
+generated](../../media/sample-mesh-101/image077.jpg)
 
 2. Drag the **WindTurbine1** GameObject from the **Hierarchy** to the
     **Trigger Events Sensor** component and then drop it in the **Root
     Game Object** box.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image078.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image078.jpg)
     
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image079.jpg)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image079.jpg)
     
     You can also click the round button in the **Root Game Object** field and then search for and add **WindTurbine1** using the **Select GameObject** dialog.
 
 3. Select the "+" button for the **On Trigger Enter** option, and then,
     in the popup menu, select **Toggle Component**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image080.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image080.jpg)
 
 4. In the **Hierarchy**, expand the **WindTurbine1** and
     **WindTurbineBody** GameObjects.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image81.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image81.jpg)
 
 5. Drag the **Windmill_Turbine_001:Propellors10** GameObject from the
     **Hierarchy** to the **Trigger Events Sensor** component and then
     drop it in the **On Trigger Enter** > **Toggle Component** >
     **Game Object** field.
 
-    ![A screenshot of a computer program Description automatically generated with medium confidence](../../../media/sample-mesh-101/image082.jpg)
+    ![A screenshot of a computer program Description automatically generated with medium confidence](../../media/sample-mesh-101/image082.jpg)
 
 6. Select the **On Trigger Enter** > **Toggle Component** >
     **Component** drop-down and then choose **Animator**.
@@ -1200,7 +1200,7 @@ generated](../../../media/sample-mesh-101/image077.jpg)
     **Chapter3** Sphere Terrace. Rotate the scene to the right, and then
     walk over to the **Teleport to Chapter 4** button and press it.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image070.jpg)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image070.jpg)
 
 3. Now in the **Chapter4** Sphere Terrace, drag **WindTurbine1**
     (reminder: it's the furthest one in the back) over the ocean. Note
@@ -1209,7 +1209,7 @@ generated](../../../media/sample-mesh-101/image077.jpg)
     because as soon as the turbine enters the trigger volume which is
     located over the ocean, the blade-spinning animation is triggered.
 
-    ![A picture containing screenshot, 3d modeling, pc game, video game software Description automatically generated](../../../media/sample-mesh-101/image083.jpg)
+    ![A picture containing screenshot, 3d modeling, pc game, video game software Description automatically generated](../../media/sample-mesh-101/image083.jpg)
 
 4. When you've finished observing the animation, press the Unity Editor
     Play button to exit Play mode.
@@ -1227,30 +1227,30 @@ containment field. This is basically a transparent box---the turbines
 will be restricted to the inside of the box.
 
 ![A screenshot of a video game Description automatically generated with
-medium confidence](../../../media/sample-mesh-101/image084.png)
+medium confidence](../../media/sample-mesh-101/image084.png)
 
 1. In the **Hierarchy**, expand the **4.3 -- Constraining Bodies**
     GameObject and select its child object named **Containment Field**.
 
 ![A screenshot of a computer Description automatically
-generated](../../../media/sample-mesh-101/image085.jpg)
+generated](../../media/sample-mesh-101/image085.jpg)
 
 2. In the **Inspector**, select the **Add Component** button and then
     add the **Containment Field** component.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image086.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image086.jpg)
 
 3. In the **Containment Field** component, select the "+" button to the
     right of the **Affected bodies** option, and then, in the popup
     menu, select the **Game Object Name** condition.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image087.png)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image087.png)
 
 4. In the **Starts With** box, type "WindTurbine." Since all three wind
     turbines in our scene start with "WindTurbine," they'll all be
     restricted to the **Containment Field**.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image088.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image088.png)
 
 5. Save the project, and then press the Unity Editor Play button.
 
@@ -1258,7 +1258,7 @@ generated](../../../media/sample-mesh-101/image085.jpg)
     **Chapter3** Sphere Terrace. Rotate the scene to the right, and then
     walk over to the **Teleport to Chapter 4** button and press it.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image070.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image070.jpg)
 
 7. Now in the **Chapter4** Sphere Terrace, grab one of the wind
     turbines and drag it around in the scene. Try to drag it away from
@@ -1289,11 +1289,11 @@ Mesh *Environment* and upload it to your Mesh World in the Azure Portal.
 1. On the menu bar, select **Mesh Toolkit** > **Configure** >
     **Project Settings**.
 
-    ![A screenshot of a computer Description automaticallygenerated](../../../media/sample-mesh-101/image089.png)
+    ![A screenshot of a computer Description automaticallygenerated](../../media/sample-mesh-101/image089.png)
 
 2. Select **Yes** to configure project settings for Mesh.
 
-    ![Graphical user interface, text, application Description automatically generated](../../../media/sample-mesh-101/image090.png)
+    ![Graphical user interface, text, application Description automatically generated](../../media/sample-mesh-101/image090.png)
 
 3. On the menu bar, select **Mesh Toolkit** > **Environments**.
 
@@ -1308,7 +1308,7 @@ World you're uploading the Environment to.
 1. Make sure you're in the **Create** **Environment** tab, and then, in
     the **Internal Name** field, type "Wind Turbine Tutorial."
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image091.png)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image091.png)
 
 2. In the **Description** field, type "An interactive Mesh experience
     that teaches you about wind turbines."
@@ -1325,7 +1325,7 @@ World you're uploading the Environment to.
 5. In the **Capacity** field, enter the capacity for your Environment.
     The maximum is 16.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image092.png)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image092.png)
 
 6. Select **Create Asset** to create the Environment that you'll be
     uploading to the Azure Portal.
@@ -1333,14 +1333,14 @@ World you're uploading the Environment to.
 7. You'll receive a confirmation dialogue as shown below. Select
     **Close**.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image093.jpg)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image093.jpg)
 
 ## Build and publish your environment
 
 You should now be in the **Update Environment** tab of the **Mesh
 Environments** window.
 
-![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image094.jpg)
+![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image094.jpg)
 
 > [!NOTE]
 > > in the **Environment Configurations** section, a new
@@ -1351,7 +1351,7 @@ Environments** window.
 - Select **Include Thumbnails**. Leave the setting as **Generate
     Thumbnails**.
 
-    ![](../../../media/sample-mesh-101/image095.jpg)
+    ![](../../media/sample-mesh-101/image095.jpg)
 
 ## Building for single and multiple platforms
 
@@ -1371,14 +1371,14 @@ Started with Mesh Environments*.
     field, and then, in the **Select SceneAsset** dialog, select
     **StartingPoint**.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image096.jpg)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image096.jpg)
 
 In the **Build for Platforms** section, you choose which platforms to
 build for. Note that when a button background is gray, the button is
 "on"; when the background is black, the button is "off." We're building
 for both PC and Android, so make sure that both buttons are "on."
 
-![A screen shot of a computer Description automatically generated with low confidence](../../../media/sample-mesh-101/image097.jpg)
+![A screen shot of a computer Description automatically generated with low confidence](../../media/sample-mesh-101/image097.jpg)
 
 ## Build and publish your Environment
 
@@ -1387,12 +1387,12 @@ for both PC and Android, so make sure that both buttons are "on."
 
 - Select the **Build and Publish** button.
 
-![A screen shot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image098.png)
+![A screen shot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image098.png)
 
 - If the Environment builds and uploads successfully, the **Build and
     Upload Results** dialog appears and confirms the results.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image099.png)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image099.png)
 
     If the build and upload process fails, this is confirmed in the **Build and Upload** **Results** dialog.
 
@@ -1401,7 +1401,7 @@ for both PC and Android, so make sure that both buttons are "on."
 In the **Build and Upload Results** dialog, select the left button under
 **Published Asset**. This opens the Environment in the Mesh App.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image100.jpg)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image100.jpg)
 
 ## View your Environment in Azure
 
@@ -1409,7 +1409,7 @@ If you navigate to the **Environments** page for your World in the Azure
 Portal, you'll see that your Environment has been saved there. Its type
 will be listed as "Custom Environment."
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image101.png)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image101.png)
 
 Your saved custom Environment will be available to anyone who creates a
 new event in that Mesh world.
@@ -1437,7 +1437,7 @@ via the in-app event producer experience.  
     or click the ["All Worlds" button](#_Mesh_dashboard_overview) at the
     bottom left, and then select the world you want.
 
-    ![A blue square with white text Description automatically generated](../../../media/sample-mesh-101/image102.png)
+    ![A blue square with white text Description automatically generated](../../media/sample-mesh-101/image102.png)
 
 > **Notes**:
 
@@ -1446,11 +1446,11 @@ via the in-app event producer experience.  
 - You can pin worlds to the left nav bar for easy access.
 
 ![A picture containing text, screenshot, line, font Description
-automatically generated](../../../media/sample-mesh-101/image103.png)
+automatically generated](../../media/sample-mesh-101/image103.png)
 
 3. In your Mesh World, select the **Manage** button.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image104.jpg)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image104.jpg)
 
     > [!NOTE]
     > If you don't see the **Manage** button, then you aren't a [Content contributor](#_Content_contributor_permissions) for this World.
@@ -1461,7 +1461,7 @@ automatically generated](../../../media/sample-mesh-101/image103.png)
 5. Add your event details (**Name**, **Date**, **Time**,
     **Description**, etc.).
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image105.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image105.jpg)
 
 6. When you're finished, click **Next**.
 
@@ -1472,17 +1472,17 @@ automatically generated](../../../media/sample-mesh-101/image103.png)
 9. Find the **Wind Turbine Tutorial** Environment, then select it, and
     then click **Next**.
     
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image106.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image106.jpg)
 
 10. On the **Review** page, review your event details. Click **Back** if
     you need to go back and change anything.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image107.jpg)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image107.jpg)
 
 11. When you're ready to move forward, select **Create Event**. This
     saves your event and takes you to the **My Events** page.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image108.jpg)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image108.jpg)
 
 ## Summary
 
@@ -1491,7 +1491,7 @@ Environment. Participants can join the Event and then use the Mesh
 features that you enabled in Chapters 3 and 4 to learn about wind
 turbines.
 
-![A person looking at a group of people Description automatically generated](../../../media/sample-mesh-101/image109.png)
+![A person looking at a group of people Description automatically generated](../../media/sample-mesh-101/image109.png)
 
 # Conclusion
 
