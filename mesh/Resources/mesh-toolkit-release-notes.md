@@ -35,11 +35,11 @@ These are the offerings and packages currently available. There may be slight di
 ### What's new
 
 * Unity upgraded to 2022.3.7. We recommend all Unity projects for Mesh environments to be upgraded to Unity 2022 LTS, using the latest 23.11 Mesh Toolkit and Mesh app build.
+* Player spawning is now handled by `TravelPoints`, the legacy spawn system has been removed: this includes the `SpawnPointConfig` and `ArbitrarySpawnPointConfig` scripts and support for spawning into seats by default.  All Mesh environments must have `TravelPoints` configured to maintain desired player spawning behavior.  If no `TravelPoints` are found in the scene, the player will spawn above the origin, and if the floor is nearby, the player will be grounded, otherwise the player will fall and respawn in a loop.
 
 #### Scripting
 
 * Mesh 101 sample has been updated to include the Object Configuration Layer (OCL) and Visual scripting workflow.
-* Player spawning is now handled by `TravelPoints`, the legacy spawn system has been removed: this includes the `SpawnPointConfig` and `ArbitrarySpawnPointConfig` scripts and support for spawning into seats by default.  All Mesh environments must have `TravelPoints` configured to maintain desired player spawning behavior.  If no `TravelPoints` are found in the scene, the player will spawn above the origin, and if the floor is nearby, the player will be grounded, otherwise the player will fall and respawn in a loop.
 * Upgrade instructions: To use the global deployment configuration previously set in the project setting in Unity Editor, select your environment and scene in the Mesh Uploader **Update Environment** tab -> **Modify Deployment Configs** tick box -> select **Use Legacy Configs From Assets** option. This should apply the legacy global deployment configuration to your environment and scene.
 * For the latest information in Visual Scripting, see *Mesh Visual Scripting Guide.pdf*.
 * For the latest information on Cloud Scripting, see *Mesh Scripting Developer Guide.pdf*.
