@@ -494,31 +494,35 @@ Right now, the text on the button says "Label." Let's change that to
 
 Before we add our first visual script, in the **Hierarchy**, collapse **PlayVideoButton** and then expand **VideoPlayer**. 
 
- <image 200)>
+![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/200-expand-videoplayer-v2.png) TBD 034
 
 1. In the **Hierarchy**, select **VideoPlayer**.
 1. In the **Inspector**, click **Add Component**, and then select **Script Machine**.
 
-Note that two new components have been added in the **Inspector**: **Script Machine** component and **Variables.** There's also a new window named *Mesh Visual Scripting Diagnostics* in the **Inspector**. This will give you feedback on your visual script and can be useful for troubleshooting.
+Note that two new components have been added in the **Inspector**: **Script Machine** and **Variables.** There's also a new window named *Mesh Visual Scripting Diagnostics* at the bottom of the **Inspector**. This will give you feedback on your visual script and can be useful for troubleshooting.
 
-<image 201)>
+![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/201-script-machine-v2.png) TBD 034
 
 Note that in the **Script Machine** component, the **Source** is set to **Graph**. Let's keep that setting. This means that we'll be creating a new script graph as an asset and saving it in the project.
 
 1. In the **Script Machine** component, click the **New** button.
 1. Navigate to the **Chapter3** > **StartingPointVisualScripts** folder.
 
-Note that there are already two existing assets: **SPShowInfoDialog.asset** and **SPTeleportToOpenAir.asset**. We'll be using these as starting points for the other two features in this chapter. For the feature we're working on right, the interactable button, we'll create a new script graph.
+Note that there are already two existing assets: **SPShowInfoDialog.asset** and **SPTeleportToOpenAir.asset**. 
+
+![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/202-assets-v2.png) TBD 034
+
+We'll be using these as starting points for the other two features in this chapter. For the feature we're working on right, the interactable button, we'll create a new script graph.
 
 1. In the **File name** box, enter "SPVideoPlayerBehavior" and then click the **Save** button.
-1. In the **Script Machine** component, enter a name for the graph: "Video Player Behavior." 
-1. Enter a summary for the graph: "Video player behavior definition."
+1. In the **Script Machine** component, enter a name in the *Title* field for the graph: "Video Player Behavior." 
+1. Enter a description in the *Summary* field for the graph: "Video player behavior definition."
 
 ## Putting the script graph together
 
 1. In the **Script Machine** component, click **Edit Graph**. This opens the **Script Graph** window. Dock it next to the **Project** and **Console** tab so that we can see the script graph and **Scene** window at the same time. As we add nodes, you may want more space in the window; you can click the three-dot button and then select **Maximize** for achieve this.
 
-<image 203)>
+![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/203-script-graph-maximized-v2.png) TBD 034
 
 1. Delete the **OnStart** and **OnUpdate** events.
 
@@ -527,15 +531,15 @@ Note that there are already two existing assets: **SPShowInfoDialog.asset** and 
 1. In the **Blackboard** section of the **Script Graph**, select the **Object** tab.
 1. Enter the variable name "PlayVideo" in the text box and then press the Enter key or click the + button.
 
-<image 204-playvideo-variable.png)>
+![A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/204-playvideo-variable-v2.png) TBD 034
 
-1. Click the **Type*[* drop-down and then select **Game Object**.
+1. Click the **Type*** drop-down and then select **Game Object**.
 
-<image 205-type-gameobject.png)>
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/205-type-gameobject-v2.png)
 
 1. Click the circle button next to **Value** and then, in the **Select GameObject** window, search for and select **PlayVideoButton**.
 
-<image 206-value-playvideobutton.png)>
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/206-value-playvideobutton-v2.png)
 
 ### Add your new variable to the graph
 
@@ -544,9 +548,88 @@ Note that there are already two existing assets: **SPShowInfoDialog.asset** and 
 > [!NOTE]
 > A node is also called a *unit* in Visual Scripting. In this tutorial, we'll be using the term *node*. 
 
-<image 207-drag-variable.png)>
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/207-drag-variable-v2.png)
 
-About VideoPlayerButton
+> [!TIP]
+> About VideoPlayerButton
+You may want to take a moment here to examine some of the components for the PlayVideoButton GameObject:
+- *Mesh Interactable Properties*: This makes *PlayVideoButton* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named *Mesh Object and Avator Interaction*.
+- **Script Machine**: This has a script graph named *Button Base Behaviour.*
+
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/208-playvideobutton-components-v2.png)
+
+If you go into Play mode, you'll see that a new component named **Mesh Interactable Body** is added to **PlayVideoButton**.
+
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/209-body-v2.png)
+
+< Make reference to this object type to get its behavior.>
+
+Back in the script graph, we'll add a node that lets us know when the button is selected.
+
+1. Click and hold on the outport port of the **PlayVideo** variable, and then release the mouse button. This opens the Fuzzy Finder.
+
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/210-add-body-node-v2.png)
+
+1. Search for "Mesh Interactable Body," click it, and then select "Is Selected." **Note**: This generates a Boolean value.
+
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/211-is-selected-node-v2.png)
+
+At this point, nothing is triggering the button yet. We need to add a node that ensures that every time the button is selected, the visual script runs.
+
+1. Add the "On State Changed" node to the "Is Selected" node.
+
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/212-on-state-changed-v2.png)
+
+In addition to knowing when the button is selected, we also want to be able to set the player mode. 
+
+1. On the output control port of the "On State Changed" node, add the "if" node as show below. Note that it points to "True."
+
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/213-if-node-v2.png)
+
+1. Connect the second output port of "On State Changed" to the second input port of "If". Note that this points to the "False" value.
+
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/214-if-node-false-v2.png)
+
+> [!TIP]
+> The Graph Inspector can help you to better understand the activity of your nodes.
+
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/215-graph-inspector-v2.png)
+
+If the button is selected, set a variable to let you know it's selected.
+
+1. Add a "Set Object Variable" node to the "True" output port of the "If" node.
+
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/216-set-object-variable-v2.png)
+
+1. In the **Blackboard**, go to the **Object** tab, and then create a variable named "isPlaying." The type should be "Boolean" and the value is false (the default).
+
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/217-isplaying-var-v2.png)
+
+1. In the **Set Object Variable" node, click the variable name drop-down and then select "isPlaying."
+
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/218-select-isplaying-v2.png)
+
+If the video is playing, set to true. If it's not playing, set to false. The "Negate" node negates whatever the value of "IsPlaying" is.
+
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/219-negate-v2.png)
+
+All the nodes you added basically do one thing: tell you when the button is pressed.
+
+1. Ctrl-drag over the nodes to add them to a group.
+
+[A screenshot of a video play Description automatically generated with medium confidence](../../../media/sample-mesh-101/220-group-v2.png)
+
+1. Select the group title and then change it to "Check Button Press."
+
+## Define the Play action
+
+We want this flow to be triggered every time the value of "isPlaying" changes.
+
+1. Add the "isPlaying" variable to the graph.
+1. Attach the "On State Changed" node to "isPlaying."
+
+[A screenshot ](../../../media/sample-mesh-101/221-two-nodes-v2.png)
+
 
 
 
