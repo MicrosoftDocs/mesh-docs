@@ -10,22 +10,22 @@ keywords: Microsoft Mesh, M365, Mesh Portal, Immersive spaces, Avatars, getting 
 
 # Mesh Toolkit 23.11 upgrade guide
 
-How to upgrade to Unity 2022.3.7 and associated breaking changes for Mesh developers.
+How to upgrade to Unity 2022.3.7f1 and associated breaking changes for Mesh developers.
 
 ## Context
 
 During Private Preview, the Mesh Toolkit and Mesh application will ship with breaking changes that all developers must accommodate as they update their Unity projects to the latest version. As with previous versions of Mesh releases, moving to the latest version is required.
 
-In particular, the 23.11 release has two major updates that are larger than usual. Mesh has moved forward from Unity 2021 to Unity 2022.3.7. In addition, many component names, namespaces, and assemblies have been renamed to match the expected public shape. Developers and their organizations must consider the following when moving to the latest version:
+In particular, the Mesh 23.11 release has two major updates that are more impactful than most releases. Mesh has moved forward from `Unity 2021` to `Unity 2022.3.7f1`. In addition, many component names, namespaces, and assemblies have been renamed to match the expected public shape. Developers and their organizations must consider the following two sections of changes when moving to the latest version.
 
-## Requirements
+### Requirements
 
 * **Install Unity 2022.3.7**
-* **Download the latest Mesh Toolkit 23.11.zip and run your Mesh project(s) with Unity 2022.3.7** for access to the latest components and features.
+* **Download the latest `Mesh Toolkit 23.11.zip` and run your Mesh project(s) with Unity 2022.3.7** for access to the latest components and features.
 * **Run the renaming script provided in the SharePoint site to update renamed components.** Nearly all Mesh Toolkit components have been renamed as of 23.11, and the script is only available during Private Preview. We look forward to continuing to support you throughout the future, and this is a necessary step for customers in Private Preview who are with us during the transition to Public Preview in the near future.
 * **Request all Mesh users in your organization to update or download the latest Mesh client application from the Microsoft Store (for PC) and/or Meta App Lab (for Mesh on Quest).**
 
-## Component renames in 23.11
+### Component renames in 23.11
 
 | 23.10 Type                                                         | 23.11 Type                                                             |
 |--------------------------------------------------------------------|------------------------------------------------------------------------|
