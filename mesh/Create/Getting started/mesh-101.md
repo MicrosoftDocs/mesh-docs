@@ -10,13 +10,6 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 # Mesh 101 Tutorial
 
-Microsoft Mesh 101 Tutorial
-
-![Graphical user interface, text Description automatically generated](../../media/sample-mesh-101/image001.png)
-A basic tutorial journey for building a Mesh Environment
-
-# Welcome to the Mesh 101 tutorial
-
 The Mesh 101 tutorial is a great way to learn about adding Mesh features
 to a Unity project to create an interactive learning experience. Created
 for intermediate to advanced Unity developers, the tutorial will give
