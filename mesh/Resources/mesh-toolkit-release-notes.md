@@ -71,7 +71,7 @@ These are the offerings and packages currently available. There may be slight di
     | `StickyBodyTrigger` | replace by `TriggerEventsSensor & VisualScripting` |
     | `TeleportBody` |	replace by `VisualScripting SetPosition` |
     | `ForceToolConfig` | replace by `MeshInteractableProperties` |
-    | `ThrowableBody` |	replace by `MeshInteractableProperties \| Equippable \| Throwable` |
+    | `ThrowableBody` |	replace by `MeshInteractableProperties / Equippable / Throwable` |
     | `CollisionEventsSensor`    | replace by VisualScripting `OnCollisionEnter / OnCollisionExit` |
     | `TriggerEventsSensor`    | replace by VisualScripting `OnTriggerEnter / OnTriggerExit` |
 
