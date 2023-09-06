@@ -535,11 +535,11 @@ We'll be using these as starting points for the other two features in this chapt
 
 1. Click the **Type*** drop-down and then select **Game Object**.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/205-type-gameobject-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/205-type-gameobject-v2.png)
 
 1. Click the circle button next to **Value** and then, in the **Select GameObject** window, search for and select **PlayVideoButton**.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/206-value-playvideobutton-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/206-value-playvideobutton-v2.png)
 
 ### Add your new variable to the graph
 
@@ -548,7 +548,7 @@ We'll be using these as starting points for the other two features in this chapt
 > [!NOTE]
 > A node is also called a *unit* in Visual Scripting. In this tutorial, we'll be using the term *node*. 
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/207-drag-variable-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/207-drag-variable-v2.png)
 
 > [!TIP]
 > About VideoPlayerButton
@@ -556,11 +556,11 @@ You may want to take a moment here to examine some of the components for the Pla
 - *Mesh Interactable Properties*: This makes *PlayVideoButton* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named *Mesh Object and Avator Interaction*.
 - **Script Machine**: This has a script graph named *Button Base Behaviour.*
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/208-playvideobutton-components-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/208-playvideobutton-components-v2.png)
 
 If you go into Play mode, you'll see that a new component named **Mesh Interactable Body** is added to **PlayVideoButton**.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/209-body-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/209-body-v2.png)
 
 < Make reference to this object type to get its behavior.>
 
@@ -568,56 +568,56 @@ Back in the script graph, we'll add a node that lets us know when the button is 
 
 1. Click and hold on the outport port of the **PlayVideo** variable, and then release the mouse button. This opens the Fuzzy Finder.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/210-add-body-node-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/210-add-body-node-v2.png)
 
 1. Search for "Mesh Interactable Body," click it, and then select "Is Selected." **Note**: This generates a Boolean value.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/211-is-selected-node-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/211-is-selected-node-v2.png)
 
 At this point, nothing is triggering the button yet. We need to add a node that ensures that every time the button is selected, the visual script runs.
 
 1. Add the "On State Changed" node to the "Is Selected" node.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/212-on-state-changed-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/212-on-state-changed-v2.png)
 
 In addition to knowing when the button is selected, we also want to be able to set the player mode. 
 
 1. On the output control port of the "On State Changed" node, add the "if" node as show below. Note that it points to "True."
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/213-if-node-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/213-if-node-v2.png)
 
 1. Connect the second output port of "On State Changed" to the second input port of "If". Note that this points to the "False" value.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/214-if-node-false-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/214-if-node-false-v2.png)
 
 > [!TIP]
 > The Graph Inspector can help you to better understand the activity of your nodes.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/215-graph-inspector-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/215-graph-inspector-v2.png)
 
 If the button is selected, set a variable to let you know it's selected.
 
 1. Add a "Set Object Variable" node to the "True" output port of the "If" node.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/216-set-object-variable-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/216-set-object-variable-v2.png)
 
 1. In the **Blackboard**, go to the **Object** tab, and then create a variable named "isPlaying." The type should be "Boolean" and the value is false (the default).
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/217-isplaying-var-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/217-isplaying-var-v2.png)
 
 1. In the **Set Object Variable" node, click the variable name drop-down and then select "isPlaying."
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/218-select-isplaying-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/218-select-isplaying-v2.png)
 
 If the video is playing, set to true. If it's not playing, set to false. The "Negate" node negates whatever the value of "IsPlaying" is.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/219-negate-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/219-negate-v2.png)
 
 All the nodes you added basically do one thing: tell you when the button is pressed.
 
 1. Ctrl-drag over the nodes to add them to a group.
 
-[A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/220-group-v2.png)
+![A screenshot of a video play Description automatically generated with medium confidence](../../media/sample-mesh-101/220-group-v2.png)
 
 1. Select the group title and then change it to "Check Button Press."
 
@@ -633,35 +633,35 @@ We want this flow to be triggered every time the value of "isPlaying" changes.
 1. In the portion of the graph below the "Check Button Press" group, add the "isPlaying" variable.
 1. Attach the "On State Changed" node to "isPlaying."
 
-[A screenshot ](../../media/sample-mesh-101/221-two-nodes-v2.png)
+![A screenshot ](../../media/sample-mesh-101/221-two-nodes-v2.png)
 
 Determine if the state changed or not with an "If" node.
 
 **To set things up so that the video plays if the Play button is pressed**:
 
-[A screenshot ](../../media/sample-mesh-101/222-if-node-v2.png)
+![A screenshot ](../../media/sample-mesh-101/222-if-node-v2.png)
 
 1. Attach the "True" output control of the "If" node to the control input port of a new "Game Object: Set Active" node.  
 
-[A screenshot ](../../media/sample-mesh-101/224-set-active-v2.png)
+![A screenshot ](../../media/sample-mesh-101/224-set-active-v2.png)
 
 If true (in other words, if the button has been pressed and the video is in Play mode), we want the video to play, so let's set it up as follows:
 
 1. Create two new Object variables as shown here:
 
-[A screenshot ](../../media/sample-mesh-101/223-two-variables-v2.png)
+![A screenshot ](../../media/sample-mesh-101/223-two-variables-v2.png)
 
 1. Add the two new variables to the graph.
 
-[A screenshot ](../../media/sample-mesh-101/225-add-nodes-to-graph-v2.png)
+![A screenshot ](../../media/sample-mesh-101/225-add-nodes-to-graph-v2.png)
 
 We want the "Video" GameObject to be active because it has the video animation attached to it. (Note that in the "Set Active" node attached to "Video, **Value** is selected.)
 
-[A screenshot ](../../media/sample-mesh-101/226-set-active-to-video.png)
+![A screenshot ](../../media/sample-mesh-101/226-set-active-to-video.png)
 
 Simultaneously, if the "If" node's value is true, we set the "VideoStill" GameObject to inactive. (Note that in the "Set Active" node attached to "VideoStill", **Value** is *not* selected.)
 
-[A screenshot ](../../media/sample-mesh-101/227-set-videostill-inactive-v2.png)
+![A screenshot ](../../media/sample-mesh-101/227-set-videostill-inactive-v2.png)
 
 **To stop the video if the Play button is pressed while the video is play**:
 
@@ -669,21 +669,21 @@ This is similar to what we did, but in reverse: if the "If" node is false, we ma
 
 1. Select the four nodes that follow the "If" node.
 
-[A screenshot ](../../media/sample-mesh-101/228-select-nodes-v2.png)
+![A screenshot ](../../media/sample-mesh-101/228-select-nodes-v2.png)
 
 1. Right-click on a selected node and then choose **Duplicate Selection.** 
 1. Drag the duplicated nodes to an empty space towards the bottom of the graph.
 
-[A screenshot ](../../media/sample-mesh-101/229-duplicated-nodes-v2.png)
+![A screenshot ](../../media/sample-mesh-101/229-duplicated-nodes-v2.png)
 
 1. Connect the "False" control output of the "If" node to the control input of the first "Game Object: Set Active" node in our duplicated set of nodes.
 
-[A screenshot ](../../media/sample-mesh-101/230-if-is-false-v2.png)
+![A screenshot ](../../media/sample-mesh-101/230-if-is-false-v2.png)
 
 1. In the first "Game Object: Set Active" node, deselect "Value."
 1. In the second "Game Object: Set Active" node, select "Value."
 
-[A screenshot ](../../media/sample-mesh-101/231-reverse-conditions-v2.png)
+![A screenshot ](../../media/sample-mesh-101/231-reverse-conditions-v2.png)
 
 ## Changing the button label
 
@@ -694,25 +694,25 @@ For the Value, you need to add the "Label" GameObject that's a child to the "Pla
 1. In the **Hierarchy**, navigate to **Chapter 3** > **3.1 - Video** > **PlayVideoButton** > **Label.**
 1. Drag this **Label** GameObject from the **Hierarchy** and drop it in the **Value** field of your new variable.
 
-[A screenshot ](../../media/sample-mesh-101/232-label-v2.png)
+![A screenshot ](../../media/sample-mesh-101/232-label-v2.png)
 
 1. In the graph, drag a connection from the output control port of the second "Game Object: Set Active" node in the "if: True" sequence, and then drop it in empty space to open the Fuzzy Finder.
 
-[A screenshot ](../../media/sample-mesh-101/233-fuzzy-finder-v2.png)
+![A screenshot ](../../media/sample-mesh-101/233-fuzzy-finder-v2.png)
 
 1. Search for "set text" and then select "Text Mesh Pro: Set Text."
 
-[A screenshot ](../../media/sample-mesh-101/234-testmesh-pro-v2.png)
+[!A screenshot ](../../media/sample-mesh-101/234-testmesh-pro-v2.png)
 
 1. Drag the "VideoPlayerButtonLabel" from the **Blackboard** and drop it in the graph to create a new node.
 1. Connect the outport port of the new "Get Object Variable" node to the first input port on the "Text Mesh Pro: Set Text" node.
 1. In the "Text Mesh Pro: Set Text" node text field, type in "Pause."
 
-[A screenshot ](../../media/sample-mesh-101/235-label-node-v2.png)
+![A screenshot ](../../media/sample-mesh-101/235-label-node-v2.png)
 
 1. Repeat the steps above to create a label for the "If: False" sequence of nodes. This time, type in the label text "Play."
 
-[A screenshot ](../../media/sample-mesh-101/236-set-text-play-v2.png)
+![A screenshot ](../../media/sample-mesh-101/236-set-text-play-v2.png)
 
 ## Test your work
 
