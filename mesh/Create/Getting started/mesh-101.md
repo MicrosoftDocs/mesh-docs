@@ -782,7 +782,7 @@ examine the generator.
 
 ![A picture containing outdoor, text, screenshot, windmill Description automatically generated](../../media/sample-mesh-101/image051.jpg)
 
-**Update the script**
+**Update the script graph**
 
 1. In the **Scene** window, note that the **3.3 -** **Teleport to Turbine** station is to the right of the **3.2 -- Info Dialog  Trigger** station. Adjust the view so that you can clearly see Station 3.3.
 1. In the **Hiearchy**, collapse the **3.2 - Info Dialog** GameObject, and then expand the **3.3 - Teleport** GameObject.
@@ -800,9 +800,13 @@ give it the teleport behavior.
 
     ![A screen shot](../../media/sample-mesh-101/309-teleport-graph.png)
 
-1. Click the **Edit Graph** button. Just as in the previous chapter, our graph already has some nodes set up for you.
+1. Click the **Edit Graph** button. Just as in the previous chapter, our already have some variables and nodes set up for you.
 
     ![A screen shot](../../media/sample-mesh-101/310-teleport-first-nodes.png)
+
+In the **Teleport Button Behavior** group, the logic is similar to what you saw in Chapter 3.1: "If the button is selected, do something." We don't need to anything further to this group. We're going to make our changes to the second group, **Teleport to OpenPlatform**.
+
+
 
 
 
