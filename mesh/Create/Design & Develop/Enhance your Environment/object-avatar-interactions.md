@@ -2,7 +2,7 @@
 title: Mesh object and avatar interactions
 description: Learn how to create interactions between avatars and objects using components and scripts.
 author: typride
-ms.author: vtieto
+ms.author: vinnietieto
 ms.date: 9/6/2023
 ms.topic: overview
 keywords: Microsoft Mesh, M365, documentation, features, scripting, object and player interactions
