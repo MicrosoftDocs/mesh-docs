@@ -680,28 +680,55 @@ This is similar to what we did, but in reverse: if the "If" node is false, we ma
 
 [A screenshot ](../../../media/sample-mesh-101/230-if-is-false-v2.png)
 
+1. In the first "Game Object: Set Active" node, deselect "Value."
+1. In the second "Game Object: Set Active" node, select "Value."
 
+[A screenshot ](../../../media/sample-mesh-101/231-reverse-conditions-v2.png)
 
+## Changing the button label
 
-==================================
+1. In the **Blackboard**, go to the **Object** tab, and then create a variable named "VideoPlayerButtonlabel." The type should be TM Pro / "TextMeshPro".
+
+For the Value, you need to add the "Label" GameObject that's a child to the "PlayVideoButton" GameObject. If you click the round button next to the Value field, the popup menu shows many GameObjects named "Label" and it's unclear which one you should choose. Here's a better way to ensure you're making the right choice:
+
+1. In the **Hierarchy**, navigate to **Chapter 3** > **3.1 - Video** > **PlayVideoButton** > **Label.**
+1. Drag this **Label** GameObject from the **Hierarchy** and drop it in the **Value** field of your new variable.
+
+[A screenshot ](../../../media/sample-mesh-101/232-label-v2.png)
+
+1. In the graph, drag a connection from the output control port of the second "Game Object: Set Active" node in the "if: True" sequence, and then drop it in empty space to open the Fuzzy Finder.
+
+[A screenshot ](../../../media/sample-mesh-101/233-fuzzy-finder-v2.png)
+
+1. Search for "set text" and then select "Text Mesh Pro: Set Text."
+
+[A screenshot ](../../../media/sample-mesh-101/234-testmesh-pro-v2.png)
+
+1. Drag the "VideoPlayerButtonLabel" from the **Blackboard** and drop it in the graph to create a new node.
+1. Connect the outport port of the new "Get Object Variable" node to the first input port on the "Text Mesh Pro: Set Text" node.
+1. In the "Text Mesh Pro: Set Text" node text field, type in "Pause."
+
+[A screenshot ](../../../media/sample-mesh-101/235-label-node-v2.png)
+
+1. Repeat the steps above to create a label for the "If: False" sequence of nodes. This time, type in the label text "Play."
+
+[A screenshot ](../../../media/sample-mesh-101/236-set-text-play-v2.png)
 
 ## Test your work
 
-1. In your code editor, make sure *App.cs* is saved.
-
-2. In Unity, save the project and then press the Unity Editor Play
+1. In Unity, save the project and then press the Unity Editor Play
     button.
 
-3. In the **Game** window, click the **Play** button you just worked
+1. In the **Game** window, click the **Play** button you just worked
     on. This causes a brief video about wind turbines to play on the
     screen above the button.
 
     ![A screenshot of a video playback Description automatically generated with medium confidence](../../../media/sample-mesh-101/image045.jpg)
 
-4. When you've finished watching the video, press the button you've
+1. When you've finished watching the video, press the button you've
     been editing again (it now has the label "Stop").
 
-5. Press the Unity Editor Play button to exit Play mode.
+1. Press the Unity Editor Play button to exit Play mode.
 
 ## Station 3.2: Trigger an info dialog
 
