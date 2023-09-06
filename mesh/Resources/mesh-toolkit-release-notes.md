@@ -50,21 +50,30 @@ These are the offerings and packages currently available. There may be slight di
 * Various deprecated components have been removed from the main Mesh Toolkit package.
 * An additional package `com.microsoft.mesh.physics.legacy-6.0.77.tgz`` package is available for this release to facilitate manual migration. This package can be added to a legacy project in addition to the Mesh Toolkit package. Any references to a deprecated package will then continue to work in PlayMode as well as in the Mesh app, but write an error message to the Unity Console window that allows finding and manually replacing the component. These errors must be addressed within this release cycle, afterwards deprecated components may silently cease to work.
 * The `SharedEvents` mechanism, introduced to replace the `UnityEvent` for connecting `Mesh.Physics` components has been superseded by the far more powerful `Mesh.VisualScripting` integration. Wherever a low-level one-to-one replacement is not possible, we have generally found it useful to take a step back to the higher-level use case to construct a solution that better fits the Visual Scripting paradigm.
+
+    | SharedEvent name     | Suggested migration path |
+    | ----------- | ----------- |
+    | `CollisionEventsSensor.onCollisionEnter / Exit` | replace by VisualScripting `onCollisionEnter / Exit` |
+    | `TriggerEventsSensor.onTriggerEnter / Exit`     | replace by VisualScripting `OnTriggerEnter / Exit`   |
+    | `StickyBody.onStick / onUnstick`                | replace by VisualScripting with collision and/or interaction events |
+    | `BouncingSurface.onBounce`    | replace by VisualScripting with collision events |
+
 * Most deprecated components have no one-to-one replacement, but their main use cases can now be better realized by `Mesh.VisualScripting`. If important use cases in the existing content cannot be migrated, contact support to request features we might have missed.
 
     | Component name     | Suggested migration path |
     | ----------- | ----------- |
-    | **`BuzzerButton`**      | **`BuzzerButton`**       |
-    | &nbsp;&nbsp;`BodyPairDistanceSensor` |  &nbsp;&nbsp;replace by new Visual Scripting-enabled `BuzzerButton` |
-    | &nbsp;&nbsp;`ButtonJoint` |  &nbsp;&nbsp;replace by new Visual Scripting-enabled `BuzzerButton` |
-    | &nbsp;&nbsp;`SharedControlEvents` | &nbsp;&nbsp;replace by new VisualScripting-enabled `BuzzerButton` |
-    | `MeshPhysicsBodyEvents` <br> (a.k.a. `SharedBodyEvents`) | replace by `VisualScripting` |
-    | `MeshPhysicsEvents` <br> (a.k.a. `SharedPhysicsEvents`) |	replace by `VisualScripting` |
+    | `BodyPairDistanceSensor` |  replace by new Visual Scripting-enabled `BuzzerButton` |
+    | `ButtonJoint` |  replace by new Visual Scripting-enabled `BuzzerButton` |
+    | `SharedControlEvents` | replace by new VisualScripting-enabled `BuzzerButton` |
+    | `MeshPhysicsBodyEvents` (a.k.a. `SharedBodyEvents`) | replace by `VisualScripting` |
+    | `MeshPhysicsEvents` (a.k.a. `SharedPhysicsEvents`) |	replace by `VisualScripting` |
     | `StickyBodyEffects` | replace by `VisualScripting` |
     | `StickyBodyTrigger` | replace by `TriggerEventsSensor & VisualScripting` |
     | `TeleportBody` |	replace by `VisualScripting SetPosition` |
     | `ForceToolConfig` | replace by `MeshInteractableProperties` |
     | `ThrowableBody` |	replace by `MeshInteractableProperties \| Equippable \| Throwable` |
+    | `CollisionEventsSensor`    | replace by VisualScripting `OnCollisionEnter / OnCollisionExit` |
+    | `TriggerEventsSensor`    | replace by VisualScripting `OnTriggerEnter / OnTriggerExit` |
 
 #### WebSlate
 
