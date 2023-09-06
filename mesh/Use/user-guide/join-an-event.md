@@ -74,4 +74,5 @@ You can interact with any games, puzzles, or interactive elements in the event e
 
 ## Next steps
 
-See the [Mesh UI & user controls](#_Mesh_UI_&) section to learn about what you can do while in an event.
+   > [!div class="nextstepaction"]
+   > [Getting started with Mesh](mesh-user-controls.md#mesh-controls-overview)
