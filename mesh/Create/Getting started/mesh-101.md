@@ -732,51 +732,49 @@ For this task, we'll enhance an existing visual script that causes an info dialo
 
     ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/300-info-dialog.jpg)
 
-2. In the **Inspector**, expand the GameObject named **3.2 -- Info
+1. In the **Inspector**, expand the GameObject named **3.2 -- Info
     Dialog**.
 
-3. In the **Hierarchy**, select **Information_Button**
-![A screen shot of 3.2 - Info_Dialog GameObject Hierachy with Information_Button selected](https://github.com/MicrosoftDocs/mesh-docs-pr/assets/15232740/d3756cc1-ed22-4f1a-82e1-5cd851a4d389)
+1. In the **Hierarchy**, select **Information_Button**.
+![A screen shot of 3.2 - Info_Dialog GameObject Hierachy with Information_Button selected](../../media/sample-mesh-101/301-information-button.png)
 
-4. In the **Inspector**, under **Script Machine** component for **Show Dialog**, click **Edit Graph**
-![A screen shot of the Information_Button's Inspector](https://github.com/MicrosoftDocs/mesh-docs-pr/assets/15232740/c4b0185a-adff-4ac2-a808-8c0ab36acd3b)
+1. In the **Inspector**, navigate to the **Script Machine** component and then click the **Edit Graph** button.
+![A screen shot of the Information_Button's Inspector](../../media/sample-mesh-101/302-edit-graph-button.png)
 
-![Incomplete Graph for Show Dialog Behavior](https://github.com/MicrosoftDocs/mesh-docs-pr/assets/15232740/4257511d-aa82-436b-ab04-f19373a3dfe3)
+1. In the graph, add a **Show Dialog** node and then connect the **True** output port of the "If" node to the input control port of the **Show Dialog** node.
 
+![A screen shot showing the if node connect to the new Show Dialog node.](../../media/sample-mesh-101/303-show-dialog.png)
 
-5. In the graph, add **Show Dialog** node 
-![Fuzzy Finder result for Show DIalog](https://github.com/MicrosoftDocs/mesh-docs-pr/assets/15232740/3a4b227d-b1e7-45c8-9415-ffb1dd69a035)
+1. In the **Show Dialog** node, click the **Message** field and then add this text: "Did you know that the world's largest wind turbine has blades longer than a football field?" This is the message that will appear in the info dialog.
 
-6. Edit the node, set the **Message** to "Did you know that the world's largest wind turbine has blades longer than a football field?" and Select **Continue** for the **Button***
-![Completed Graph for Show Dialog Behavior](https://github.com/MicrosoftDocs/mesh-docs-pr/assets/15232740/fab99dd4-4451-4e07-87d5-c07efa16b58f)
+![A screen shot showing Show Dialog node with a message added.](../../media/sample-mesh-101/304-show-dialog-message.png)
 
-    Take a moment to read the message that you expect to display: "Did you know that the world's largest wind turbine has blades longer than a football field?"
+1. Select the drop-down that currently displays **OK**, and then, in the popup list, deselect **OK** and select **Continue**. This will add a "Continue" button to the info dialog that the user can click to close the dialog and continue in the experience.
+
+![A screen shot showing Show Dialog node with a message added.](../../media/sample-mesh-101/305-show-dialog-continue.png)
 
 ## Test your work
 
-1. In the Unity Editor, save the project and then press the Unity
-    Ewditor Play button.
+1. In the Unity Editor, save the project and then press the Unity Editor Play button.
 
-2. Use the navigation keys to make your avatar walk onto the platform.
-    **TIP**: You may want to tilt the view up a bit so you can keep the
-    platform iwn view as you walk towards it.
+1. Use the navigation keys to make your avatar walk away from the button. Note that when your avatar is a certain distance away, the button doesn't rotate and isn't selectable.
 
-    ![A screen shot of a video game Description automatically generated with low confidence](../../media/sample-mesh-101/image049.jpg)
-    
-    Stepping onto the platform (which coincides with stepping *into* the trigger volume) causes an info dialog that displays a message to appear. The message is the one that you added to the script.
-    
-    > [!NOTE]
-    > The info dialog in the image will look different in the Mesh app.
-    
-    ![A screenshot of a video game Description automatically generated](../../media/sample-mesh-101/image050.jpg)
+1. Walk towards the button. At a certain point, the button starts rotating, signaling that you can now select it.
 
-3. When you've finished viewing the message, click its **Okay** button.
+1. Select the button. The info dialog appears and displays the message you added to the **Show Dialog** node earlier.
 
-4. Press the Unity Editor Play button to exit Play mode.
+1. When you're finished with info dialog, click its **Continue** button. Note that after you click the button, it disappears. To use the button again, you must exit and then re-enter Play mode.
+   
+    > [!TIP]
+    > The distance and triggering elements in effect here are determined by the components of the **ProximityDetector** GameObject.
+
+    ![A screen shot showing the ProximityDetector GameObject in the Hierarcy.](../../media/sample-mesh-101/306-proximity-detector.png)
+
+1. Press the Unity Editor Play button to exit Play mode.
 
 ## Station 3.3: Teleport to the turbine generator
 
-For this task, we'll add some code to a button that allows participants
+For this task, we'll add some nodes to a script graph that allows participants
 in the scene to teleport. When a participant presses the button, they're
 teleported from their current location at Station 3.3 to an elevated
 platform that's attached to a wind turbine generator. They can then
@@ -786,37 +784,28 @@ examine the generator.
 
 **Update the script**
 
-- In the **Scene** window, note that the **3.3 -** **Teleport to
-    Turbine** station is to the right of the **3.2 -- Info Dialog
-    Trigger** station. Adjust the view so that you can clearly see
-    Station 3.3.
+1. In the **Scene** window, note that the **3.3 -** **Teleport to Turbine** station is to the right of the **3.2 -- Info Dialog  Trigger** station. Adjust the view so that you can clearly see Station 3.3.
+1. In the **Hiearchy**, collapse the **3.2 - Info Dialog** GameObject, and then expand the **3.3 - Teleport** GameObject.
 
-    ![A screen shot of a computer Description automatically generated with low confidence](../../media/sample-mesh-101/image052.jpg)
+    ![A screen shot](../../media/sample-mesh-101/303-teleport.png)
 
-The button is all set up for you---we just need to add the code that
-gives it the teleport behavior.
+The button is all set up for you---we just need to add the nodes in the script graph that
+give it the teleport behavior.
 
-1. Copy the following code to the Windows Clipboard.
+1. In the **Hiearchy**, select the **ChapterLabel** GameObject.
 
-// When the button is clicked teleport the user who pressed the button
-to the destination node's position and orientation.
+    ![A screen shot](../../media/sample-mesh-101/308-chapter-label.png)
 
-scene.GetAvatarForUser(e.User)?.TeleportTo(GetWorldPosition(destination),
-GetWorldForward(destination));
+    Note that in the **Inspector**, there's a **Script Machine** component that contains a script graph named *SPTeleportToOpenAir*.
 
-2. In your code editor, go to the *App.cs* file and then navigate to
-    the section named *Chapter 3.3*.
+    ![A screen shot](../../media/sample-mesh-101/309-teleport-graph.png)
 
-3. Paste the code you just copied into the if statement inside the
-    first Try-Catch block, replacing the "Paste code here" comment, and
-    then save the file.
+1. Click the **Edit Graph** button. Just as in the previous chapter, our graph already has some nodes set up for you.
 
-![A computer code with red line Description automatically
-generated](../../media/sample-mesh-101/image53.png){width="6.75in"
-height="1.9666666666666666in"}
+    ![A screen shot](../../media/sample-mesh-101/310-teleport-first-nodes.png)
 
-4. In Unity, save the project and then press the Unity Editor Play
-    button.
+
+
 
 **Teleport up to the wind turbine generator**
 
