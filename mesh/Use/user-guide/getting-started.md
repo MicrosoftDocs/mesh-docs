@@ -132,7 +132,7 @@ email.
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Getting started with Mesh](join-an-event.md)
+   > [Join an event](join-an-event.md)
 
    > [!div class="nextstepaction"]
    > [Create an event](events-guide/create-event.md)

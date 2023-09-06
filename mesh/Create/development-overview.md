@@ -15,3 +15,10 @@ The Mesh experience that you create starts out in Unity as a new project or exis
 
 In the Mesh documentation, you'll find articles that introduce you to the packages available for Mesh, walk you through the Unity setup, and describe the samples provided by Microsoft that you can use as a starting point for your Environment. 
 
+## Next steps
+
+   > [!div class="nextstepaction"]
+   > [Choose your development journey](Getting%20started/choose-your-journey.md)
+
+   > [!div class="nextstepaction"]
+   > [Download the Mesh Toolkit](Getting%20started/download-the-mesh-toolkit.md)

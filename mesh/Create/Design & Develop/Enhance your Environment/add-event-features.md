@@ -66,3 +66,10 @@ The scripts include:
 
 - *UnityPlayableBehavior:* For controlling a PlayableDirector
 
+## Next steps
+
+   > [!div class="nextstepaction"]
+   > [Animations and Timelines](animations-and-timelines.md)
+
+   > [!div class="nextstepaction"]
+   > [Add more features](enhanced-features-overview.md)

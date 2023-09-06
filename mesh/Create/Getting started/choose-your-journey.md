@@ -92,3 +92,9 @@ Once you've created an Environment through the paths mentioned above, you can ad
 - [Cloud scripting](../Developing%20for%20Mesh/Scripting%20your%20scene%20logic/cloud-scripting-overview.md), [visual scripting](../Developing%20for%20Mesh/Scripting%20your%20scene%20logic/visual-scripting-overview.md), and [Mesh Physics](../Developing%20for%20Mesh/Building%20your%20environment/physics-interactions.md) to add interactivity
 
 - And more!
+
+
+## Next steps
+
+   > [!div class="nextstepaction"]
+   > [Download the Mesh Toolkit](Getting%20started/download-the-mesh-toolkit.md)
