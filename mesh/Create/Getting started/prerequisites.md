@@ -3,7 +3,7 @@ title: Prerequsites for Mesh development
 description: Prerequisites required for Mesh development, including Unity and Azure information.
 author: typride
 ms.author: vinnietieto
-ms.date: 8/24/2023
+ms.date: 9/6/2023
 ms.topic: overload
 ms.prod: mesh
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features, prerequisites
@@ -17,9 +17,9 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 *Need assistance? Contact your Microsoft partner for clarification.*
 
-## Unity version 2021.3.21f1+
+## Unity version 2022.3.7f1+
 
-We recommend that you use Unity version 2021.3.21f1+. Later versions will work, but you may see errors which can be bypassed.
+You must use Unity version 2022.3.7f1+. Later versions will work, but you may see errors which can be bypassed.
 
 ![A screenshot of the suggested version of Unity.](../../media/get-started-developing-mesh/image002.jpg)
 
