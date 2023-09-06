@@ -296,3 +296,12 @@ If you need to use the CLI tool directly, it can be found in your Unity project 
 |   |   |   |
 
 To get help with any of the commands, enter the command followed by `-h`. For example: `meshapp publish -h`.
+
+
+## Next steps
+
+   > [!div class="nextstepaction"]
+   > [Cloud scripting basic concepts](cloud-scripting-basic-concepts.md)
+
+   > [!div class="nextstepaction"]
+   > [Cloud Scripting Troubleshooting](cloud-scripting-troubleshooting.md)
