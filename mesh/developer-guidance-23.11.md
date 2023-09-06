@@ -108,15 +108,19 @@ In particular, the Mesh 23.11 release has two major updates that are more impact
 a. See Cloud Scripting section in Breaking changes below
 10. Publish the environment.
 
-    **Note:** Update the Meshapp subscription, resource group, etc. in the Mesh Uploader.
+    > [!NOTE]
+    > Update the Meshapp subscription, resource group, etc. in the Mesh Uploader.
 
 ## Breaking changes
 
 This release introduces the following changes:
 
-* Unity component renames: Scene components should update automatically for the renames; however, if you have any visual scripts, you’ll need to use the Mesh Updater tool described above.
+* **Unity component renames:** Scene components should update automatically for the renames; however, if you have any visual scripts, you’ll need to use the Mesh Updater tool described above.
 
-1. Deploying environments: To use the global deployment configuration previously set in the project setting in Unity Editor:
+* **Deploying environments:**
+
+    To use the global deployment configuration previously set in the project setting in Unity Editor:
+
     1. Select the environment and scene in the Mesh Uploader "Update Environment" Tab.
     1. Select the "Modify Deployment Configs" option, and then select the "Use Legacy Configs From Assets" option. This should apply the legacy global deployment configuration to the environment and scene.
 * **Player & Object interactions:** 
@@ -139,7 +143,7 @@ This release introduces the following changes:
         However, at the moment that work is not entirely complete.  While these deployment settings will switch automatically when choosing an environment to upload, not everything will switch automatically.  Until the work is complete, please continue to use your existing process in addition to setting up this UX: so keep updating meshapp.manifest.json with the desired settings as normal before uploading an environment.
 
 * **Mesh Physics:**
-    * Various deprecated components have been removed from the main Mesh Toolkit package. An additional package, 'com.microsoft.mesh.physics.legacy-6.0.77.tgz', is available for this release to facilitate manual migration. This package can be added to a legacy project in addition to the Mesh Toolkit package. Any reference to a deprecated component will then continue to work in PlayMode as well as the Mesh app but will write an error message to the Unity Console window that allows finding and manually replacing the component. These errors must be addressed within this release cycle; afterwards, deprecated components may silently cease to work.
+    * Various deprecated components have been removed from the main Mesh Toolkit package. An additional package, 'com.microsoft.mesh.physics.legacy-6.0.77.tgz', is available for this release to facilitate manual migration. This package can be added to a legacy project in addition to the Mesh Toolkit package. Any reference to a deprecated component will then continue to work in PlayMode as well as the MeshApp but will write an error message to the Unity Console window that allows finding and manually replacing the component. These errors must be addressed within this release cycle; afterwards, deprecated components may silently cease to work.
     
     * The SharedEvents mechanism, introduced to replace the UnityEvent for connecting Mesh.Physics components, has been superseded by the far more powerful Mesh.VisualScripting integration. Wherever a low-level one-to-one replacement isn't possible, we've found it useful to take a step back to the higher-level use case to construct a solution that better fits the VisualScripting paradigm.
 
@@ -154,20 +158,20 @@ This release introduces the following changes:
     * Most deprecated components have no one-to-one replacement, but their main use cases can now be better realized by Mesh.VisualScripting. If important use cases in existing content can't be migrated, contact your Microsoft Mesh TAP partner to request features we might have missed.
 
 
-|**Component name**                                |**Suggested migration path**                                        |
-|--------------------------------------------------|--------------------------------------------------------------------|
-|BodyPairDistanceSensor (part of BuzzerButton)     |  replace by new VisualScripting-enabled BuzzerButton               |
-|ButtonJoint (part of BuzzerButton)                | replace by new VisualScripting-enabled BuzzerButton                |
-|SharedControlEvents (part of BuzzerButton)        |   replace by new VisualScripting-enabled BuzzerButton              |
-|MeshPhysicsBodyEvents (a.k.a. SharedBodyEvents)   |  replace by VisualScripting                                        |
-|MeshPhysicsEvents (a.k.a. SharedPhysicsEvents)    | replace by VisualScripting                                         |
-|StickyBodyEffects                                 |  replace by VisualScripting                                        |
-|StickyBodyTrigger                                 | replace by TriggerEventsSensor & VisualScripting                   |
-|TeleportBody                                      |  replace by VisualScripting SetPosition                            |
-|ForceToolConfig                                   |   replace by MeshInteractableProperties                            |
-|ThrowableBody                                     |    replace by MeshInteractableProperties Equippable Throwable      |
-|CollisionEventsSensor                             |  replace by VisualScripting OnCollisionEnter/OnCollisionExit       |
-|TriggerEventsSensor                               |  replace by VisualScripting OnTriggerEnter/OnTriggerExit           |
+    |**Component name**                                |**Suggested migration path**                                        |
+    |--------------------------------------------------|--------------------------------------------------------------------|
+    |BodyPairDistanceSensor (part of BuzzerButton)     |  replace by new VisualScripting-enabled BuzzerButton               |
+    |ButtonJoint (part of BuzzerButton)                | replace by new VisualScripting-enabled BuzzerButton                |
+    |SharedControlEvents (part of BuzzerButton)        |   replace by new VisualScripting-enabled BuzzerButton              |
+    |MeshPhysicsBodyEvents (a.k.a. SharedBodyEvents)   |  replace by VisualScripting                                        |
+    |MeshPhysicsEvents (a.k.a. SharedPhysicsEvents)    | replace by VisualScripting                                         |
+    |StickyBodyEffects                                 |  replace by VisualScripting                                        |
+    |StickyBodyTrigger                                 | replace by TriggerEventsSensor & VisualScripting                   |
+    |TeleportBody                                      |  replace by VisualScripting SetPosition                            |
+    |ForceToolConfig                                   |   replace by MeshInteractableProperties                            |
+    |ThrowableBody                                     |    replace by MeshInteractableProperties Equippable Throwable      |
+    |CollisionEventsSensor                             |  replace by VisualScripting OnCollisionEnter/OnCollisionExit       |
+    |TriggerEventsSensor                               |  replace by VisualScripting OnTriggerEnter/OnTriggerExit           |
 
 ## Visual script examples
 
@@ -181,9 +185,11 @@ To make a GameObject interactable, we add a *Mesh Interactable Properties* compo
 
 :::image type="content" source="media/developer-guidance-23.11/Picture1.png" alt-text="Mesh interactable properties script":::
 
-Next, we create a visual script. First, add a Script Machine component to the same GameObject. This will automatically also add the *Variables* component.
+Next, we create a visual script. First, add a Script Machine component to the same GameObject. 
 
 :::image type="content" source="media/developer-guidance-23.11/Picture2.png" alt-text="Script machine component":::
+
+This will automatically also add the *Variables* component.
 
 :::image type="content" source="media/developer-guidance-23.11/Picture3.png" alt-text="Varaibles component":::
 
@@ -192,6 +198,7 @@ Add a new variable with the following properties:
 * Name: ResetBodyTransformsComponent (this can be any unique name)
 * Type: Reset Body Transforms (select from a list of available objects)
 * Value is the actual reference to your Reset Body Transforms component which you want to call. The easiest way to assign this is to drag the GameObject with the Reset Body Transforms component from the scene Hierarchy window. This GameObject is probably at the root node of objects you’re resetting.
+
 :::image type="content" source="media/developer-guidance-23.11/Picture4.png" alt-text="Varaibles":::
 
 In the Script Machine, click New to create a new visual script and give it a name. After saving, Unity will automatically open a Visual Scripting Graph window where you can edit the visual script. We create the following nodes:
@@ -221,6 +228,70 @@ To replace the deprecated ForceToolConfig component, follow these steps:
 * If a ThrowableBody component was used in combination with ForceToolConfig, a similar effect can be achieved by activating Equippable and configuring Throw Settings.
 
 * Advanced behavior configuration of ForceToolConfig hasn’t been precisely re-implemented, but many use cases are covered by the various Manipulation Settings of MeshInteractableProperties. Contact support if critical use cases are missing.
+
+
+## Component renames in 23.11
+
+| 23.10 Type                                                         | 23.11 Type                                                             |
+|--------------------------------------------------------------------|------------------------------------------------------------------------|
+| Microsoft.Mesh.Toolkit.AspectRatioResizeBehavior                   | Microsoft.Mesh.Controllables.AspectRatioResizeProcessor                |
+| Microsoft.Mesh.Toolkit.EmbeddedAudioBehavior                       | Microsoft.Mesh.Controllables.EmbeddedAudioControllable                 |
+| Microsoft.Mesh.Toolkit.EmbeddedVideoBehavior                       | Microsoft.Mesh.Controllables.EmbeddedVideoControllable                 |
+| Microsoft.Mesh.Toolkit.ObjectBehavior                              | Microsoft.Mesh.Controllables.ObjectControllable                        |
+| Microsoft.Mesh.Toolkit.StreamedVideoBehavior                       | Microsoft.Mesh.Controllables.StreamedVideoControllable                 |
+| Microsoft.Mesh.Toolkit.UnityPlayableBehavior                       | Microsoft.Mesh.Controllables.UnityPlayableControllable                 |
+| Microsoft.Mesh.ObjectConfigurationLayer.PlayerAnchorObject         | Microsoft.Mesh.Interactables.AvatarAnchor                              |
+| Microsoft.Mesh.ObjectConfigurationLayer.PlayerTetherObject         | Microsoft.Mesh.Interactables.AvatarTether                              |
+| Microsoft.Mesh.ObjectConfigurationLayer.PlayerTriggerObject        | Microsoft.Mesh.Interactables.AvatarTrigger                             |
+| Microsoft.Mesh.ObjectConfigurationLayer.Billboard2D                | Microsoft.Mesh.Interactables.Billboard2D                               |
+| Microsoft.Mesh.ObjectConfigurationLayer.MeshInteractableObject     | Microsoft.Mesh.Interactables.MeshInteractableBody                      |
+| Microsoft.Mesh.ObjectConfigurationLayer.MeshInteractableConfig     | Microsoft.Mesh.Interactables.MeshInteractableProperties                |
+| Microsoft.Mesh.ObjectConfigurationLayer.TravelPoint                | Microsoft.Mesh.Interactables.TravelPoint                               |
+| Microsoft.Mesh.ObjectConfigurationLayer.TravelPointGroup           | Microsoft.Mesh.Interactables.TravelPointGroup                          |
+| Microsoft.Mesh.ObjectConfigurationLayer.UniqueObjectId             | Removed                                                                |
+| Microsoft.Mesh.Physics.BodyPairDistanceSensor                      | Legacy                                                                 |
+| Microsoft.Mesh.Physics.ButtonJoint                                 | Legacy                                                                 |
+| Microsoft.Mesh.Physics.CollisionEventsSensor                       | Legacy                                                                 |
+| Microsoft.Mesh.Physics.ForceToolConfig                             | Legacy                                                                 |
+| Microsoft.Mesh.Physics.ForceToolInteractableSetup                  | Legacy                                                                 |
+| Microsoft.Mesh.Physics.ForceToolTargetingHighlight                 | Legacy                                                                 |
+| Microsoft.Mesh.Physics.ForceToolTargetingMonitor                   | Legacy                                                                 |
+| Microsoft.Mesh.Physics.ForceToolTether                             | Legacy                                                                 |
+| Microsoft.Mesh.Physics.PhysicsArtifactSetup                        | Legacy                                                                 |
+| Microsoft.Mesh.Physics.PhysicsSceneSetup                           | Legacy                                                                 |
+| Microsoft.Mesh.Physics.SharedBodyEvents                            | Legacy Microsoft.Mesh.Physics.MeshPhysicsBodyEvents                    |
+| Microsoft.Mesh.Physics.SharedControlEvents                         | Legacy                                                                 |
+| Microsoft.Mesh.Physics.SharedPhysicsEvents                         | Legacy Microsoft.Mesh.Physics.MeshPhysicsEvents                        |
+| Microsoft.Mesh.Physics.StickyBodyEffects                           | Legacy                                                                 |
+| Microsoft.Mesh.Physics.StickyBodyTrigger                           | Legacy                                                                 |
+| Microsoft.Mesh.Physics.TeleportBody                                | Legacy                                                                 |
+| Microsoft.Mesh.Physics.ThrowableBody                               | Legacy                                                                 |
+| Microsoft.Mesh.Physics.TriggerEventsSensor                         | Legacy                                                                 |
+| Microsoft.Mesh.Toolkit.ArbitrarySpawnPointConfig                   | Removed, use Microsoft.Mesh.Interactables.TravelPoint/TravelPointGroup |
+| Microsoft.Mesh.Toolkit.MeshRichTextFonts                           | Microsoft.Mesh.Text.DynamicRichTextFonts                               |
+| Microsoft.Mesh.Toolkit.SpawnPointConfig                            | Removed, use Microsoft.Mesh.Interactables.TravelPoint/TravelPointGroup |
+| Microsoft.Mesh.VisualScripting.LocalSceneScope                     | Microsoft.Mesh.VisualScripting.LocalScriptScope                        |
+| Microsoft.Mesh.WebView.WebView                                     | Microsoft.Mesh.WebSlate.WebSlate                                       |
+| Microsoft.MeshApps.UnityRuntime.Binding.AnimatorDomBinding         | Microsoft.Mesh.CloudScripting.Binding.AnimatorDomBinding               |
+| Microsoft.MeshApps.UnityRuntime.Binding.BoxGeometryDomBinding      | Microsoft.Mesh.CloudScripting.Binding.BoxGeometryDomBinding            |
+| Microsoft.MeshApps.UnityRuntime.Binding.CapsuleGeometryDomBinding  | Microsoft.Mesh.CloudScripting.Binding.CapsuleGeometryDomBinding        |
+| Microsoft.MeshApps.UnityRuntime.Binding.DirectionalLightDomBinding | Microsoft.Mesh.CloudScripting.Binding.DirectionalLightDomBinding       |
+| Microsoft.MeshApps.UnityRuntime.Binding.GeometryDomBinding         | Microsoft.Mesh.CloudScripting.Binding.GeometryDomBinding               |
+| Microsoft.MeshApps.UnityRuntime.Binding.LightNodeDomBinding        | Microsoft.Mesh.CloudScripting.Binding.LightNodeDomBinding              |
+| Microsoft.MeshApps.UnityRuntime.Binding.MeshBehavior               | Microsoft.Mesh.CloudScripting.Binding.MeshBehavior                     |
+| Microsoft.MeshApps.UnityRuntime.Binding.MeshGeometryDomBinding     | Microsoft.Mesh.CloudScripting.Binding.MeshGeometryDomBinding           |
+| Microsoft.MeshApps.UnityRuntime.Binding.PointLightDomBinding       | Microsoft.Mesh.CloudScripting.Binding.PointLightDomBinding             |
+| Microsoft.MeshApps.UnityRuntime.Binding.RigidBodyDomBinding        | Microsoft.Mesh.CloudScripting.Binding.RigidBodyDomBinding              |
+| Microsoft.MeshApps.UnityRuntime.Binding.SceneDomBinding            | Microsoft.Mesh.CloudScripting.Binding.SceneDomBinding                  |
+| Microsoft.MeshApps.UnityRuntime.Binding.SidecarDomBinding          | Microsoft.Mesh.CloudScripting.Binding.SidecarDomBinding                |
+| Microsoft.MeshApps.UnityRuntime.Binding.SphereGeometryDomBinding   | Microsoft.Mesh.CloudScripting.Binding.SphereGeometryDomBinding         |
+| Microsoft.MeshApps.UnityRuntime.Binding.SpotLightDomBinding        | Microsoft.Mesh.CloudScripting.Binding.SpotLightDomBinding              |
+| Microsoft.MeshApps.UnityRuntime.Binding.TextDomBinding             | Microsoft.Mesh.CloudScripting.Binding.TextDomBinding                   |
+| Microsoft.MeshApps.UnityRuntime.Binding.TouchSensor                | Microsoft.Mesh.CloudScripting.Binding.TouchSensor                      |
+| Microsoft.MeshApps.UnityRuntime.Binding.TransformDomBinding        | Microsoft.Mesh.CloudScripting.Binding.TransformDomBinding              |
+| Microsoft.MeshApps.UnityRuntime.Binding.WebViewDomBinding          | Microsoft.Mesh.CloudScripting.Binding.WebSlateDomBinding               |
+| Microsoft.MeshApps.UnityRuntime.MeshApp                            | Microsoft.Mesh.CloudScripting.MeshApp                                  |
+
 
 ## Known issues
 

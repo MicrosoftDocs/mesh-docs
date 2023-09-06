@@ -75,4 +75,4 @@ You can interact with any games, puzzles, or interactive elements in the event e
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Getting started with Mesh](mesh-user-controls.md#mesh-controls-overview)
+   > [Mesh user controls](mesh-user-controls.md#mesh-controls-overview)

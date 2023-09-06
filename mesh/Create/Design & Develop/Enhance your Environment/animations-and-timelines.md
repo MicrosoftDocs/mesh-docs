@@ -125,3 +125,8 @@ If you create an Environment + Event features combination that you think
 Event Producers may want to repeat in the future, you can save the
 combination as a template. To learn more about templates, see our
 document named *Mesh Event Producer Guide*, section: *Event Templates*.
+
+## Next steps
+
+   > [!div class="nextstepaction"]
+   > [Add more features](enhanced-features-overview.md)
