@@ -28,6 +28,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ### Join the immersive space in Teams
 
 1. The only way to get to the immersive space is to use the Teams **View** menu from inside a Teams meeting. 
+
     1. You cannot access immersive spaces with the Mesh app pinned to the Teams menu. 
     1. It’s not useful to install the app. 
 1. If you are losing internet connection during a session in the immersive space, you will be disconnected, removed from the space, and sent back to the gallery. You can rejoin the immersive space manually once internet connection is restored.
@@ -39,6 +40,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ### Current limitations
 
 1. There is a room size limit of 16 persons for immersive users, while there’s no limit on the number of participants in a 2D Teams meeting. 
+
 1. Content limitations: PowerPoint Live and Whiteboard are not supported. If a meeting participant is using Powerpoint Live, it will not display on the immersive space stage. Same for whiteboard.
 1. If a meeting is being recorded, only the audio of immersive participant that are in range within the immersive space will be part of the meeting audio recording.
 1. When a meeting participant is sharing screen with audio, the audio won’t play in the immersive space on the virtual stage.
@@ -51,6 +53,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ### Other known issues
 
 1.	Text for **Microphone** settings in the pre-join dialog box isn’t readable in high contrast mode.
+
 1.	On Quest, if you try to rotate the avatar preview in the Avatar Customizer, your field of view will also move.
 1.	Mesh immersive spaces do not properly support low bandwidth situation: users who are experiencing poor network quality may see problems such as missing avatars and audio glitches. We are actively working on integrating notifications to alert users when they are in this state.
 
