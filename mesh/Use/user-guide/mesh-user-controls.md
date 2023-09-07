@@ -109,7 +109,7 @@ The **Profile** button in the lower right corner gives you access to your person
 
 Select **Customize** to fine tune your Avatar's appearance while in an event!
 
-![A screenshot of the Avatar customization dialog](media/image094.png)
+![A screenshot of the Avatar customization dialog](media/image035.png)
 
 ### Nametag and contact card
 
