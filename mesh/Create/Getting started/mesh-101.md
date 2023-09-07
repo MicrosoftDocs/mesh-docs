@@ -132,16 +132,16 @@ be enabled for your work account:
     must add your work account as a Content Contributor for each Mesh
     world you want to upload an Environment to.
 
-For more information, see our  IT
-Admin Guide*.
+For more information, see our IT Admin Guide*.
 
 ## Chapter 1: Set things up for Mesh
 
-### Download the Mesh desktop app 
+### Download the Mesh desktop app
 
-To download the app (codenamed **Project Napili**), you can visit the link below.![](../../media/sample-mesh-101/image003.png)
+To download the app (codenamed **Project Napili**), you can visit the link below.
 
-[Project Napili - Microsoft Store Apps](https://apps.microsoft.com/store/detail/project-napili/9P0B5VMS9RTQ?hl=en-us&gl=us)
+![Project Napili - Microsoft Store Apps](../../media/sample-mesh-101/image003.png)
+> [Project Napili - Microsoft Store Apps](https://apps.microsoft.com/store/detail/project-napili/9P0B5VMS9RTQ?hl=en-us&gl=us)
 
 **If the app isn't available, talk to your IT** **admin about making the
 app visible to you.**
@@ -151,32 +151,26 @@ app visible to you.**
 The Mesh Toolkit contains the *Mesh 101* tutorial project.
 
 1. In your browser, navigate to the **Microsoft Mesh TAP Onboarding
-    Resources** website:
-
-[Microsoft Mesh TAP Onboarding Resources - Home (sharepoint.com)](https://microsoft.sharepoint.com/teams/MicrosoftMeshEAPOnboardingResources/?OR=Teams-HL&CT=1660599435162&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMjA4MDcwMTAwMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D)
-
+    Resources** website
+    [Microsoft Mesh TAP Onboarding Resources - Home (sharepoint.com)](https://microsoft.sharepoint.com/teams/MicrosoftMeshEAPOnboardingResources/?OR=Teams-HL&CT=1660599435162&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMjA4MDcwMTAwMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D)
 2. On the main page, scroll down to the **Mesh Resources and Developer
     Tools** section, and then, under **Get the Files and Packages**,
     select the **Go** button.
 
-    ![A screenshot of a video game Description automatically generated](../../media/sample-mesh-101/image004.jpg)
-
+    ![Screenshot of Mesh Resources and Developer Tools](../../media/sample-mesh-101/image004.jpg)
 3. On the **Files and Packages** page, download the latest version of
     the Mesh Toolkit (it may be more recent than what you see here). Select the three-dot button and then select
     **Download**.
 
     ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image005.jpg)
 
-> [!NOTE]
-> The downloaded zip file's name may vary depending on your
-> computer setup.
-
+    > [!NOTE]
+    > The downloaded zip file's name may vary depending on your
+    > computer setup.
 4. On your C: drive, create a folder with a one-word name (for example,"Mesh101") and then move or copy the downloaded Mesh Toolkit Zip file to that folder. This is done to avoid running into a problem with the Windows path length limit which is 256 characters. **IMPORTANT**: *Don't* place the Zip file on the Windows desktop. Behind the scenes, this creates a very long path name.
-
    In the example below, the user created a folder on their C: drive named *Mesh101.* Next, they moved the downloaded Mesh Toolkit Zip file, which their system renamed *OneDrive_2023-07-24.zip*, to the *Mesh101* folder
 
     ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image006.jpg)
-
 5. In the new folder you created, unzip the Toolkit file, and then
     navigate through the unzipped folder hierarchy until you see folders
     named **Packages** and **Samples**.
@@ -194,7 +188,7 @@ The Mesh Toolkit contains the *Mesh 101* tutorial project.
 
 > [!IMPORTANT]
 > Don't move the **Mesh101.Unity** project folder or the
-> **Packages** folder after you unzip! 
+> **Packages** folder after you unzip!
 
 To ensure that the manifest file for the project (or any of the sample projects) configures project settings and loads the required packages correctly, you must maintain  this folder and file structure:  
 
@@ -208,14 +202,13 @@ Mesh Toolkit 23.x 
     ├──DartRoom
 
     ├──Mesh101.Unity
-    
+
     ├──HelloWorld-Unity
-    
+
     ├──ScienceBuilding
-    
+
     ├──ScriptedWorlds
 ```
-
 
 > [!TIP]
 > One sign that packages weren't loaded properly is pink surfaces
@@ -225,20 +218,19 @@ Mesh Toolkit 23.x 
 
 ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image009.jpg)
 
-**The Packages**
+### The Packages
 
 For this tutorial, you don't need to install any packages---they're
 already pre-loaded into the tutorial project. If you were creating your
 own project from scratch, you would need to install the Mesh Toolkit
-package. To learn more about this, see our article titled *Download the Mesh Tookit*.
+package. To learn more about this, see our article titled *Download the Mesh Toolkit*.
 
-## Chapter 2: Prepare the tutorial project 
+## Chapter 2: Prepare the tutorial project
 
 ### Scenes in the tutorial project
 
 1. Open the **Mesh101.unity** project in Unity. If you have more than
-    one version of Unity installed, be sure to open the project with the
-    version required for this tutorial: Unity 2022.3.7f1.
+    one version of Unity installed, be sure to open the project with `Unity 2022.3.7f1` which is required for this tutorial:
 
     > [!NOTE]
     > In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**.
@@ -376,14 +368,15 @@ wind turbine.
 
 ## Chapter 3: Add interactivity with Mesh Visual Scripting
 
-Now that we've completed the setup phase, let's move on to making your GameObjects interactive! In this chapter, we'll dive into Mesh Visual Scripting, which you can use to add custom logic to your Environment. 
+Now that we've completed the setup phase, let's move on to making your GameObjects interactive! In this chapter, we'll dive into Mesh Visual Scripting, which you can use to add custom logic to your Environment.
 
 > [!NOTE]
-> - There are two types of Mesh Scripting: Mesh Cloud Scripting, which uses C# code, and Mesh Visual Scripting, where you create a Script Graph and then add nodes (also called *units*) in a sequence to create your coding logic. This version of the Mesh 101 tutorial uses Mesh Visual Scripting; the previous version used Mesh Cloud Scripting. 
+>
+> - There are two types of Mesh Scripting: Mesh Cloud Scripting, which uses C# code, and Mesh Visual Scripting, where you create a Script Graph and then add nodes (also called *units*) in a sequence to create your coding logic. This version of the Mesh 101 tutorial uses Mesh Visual Scripting; the previous version used Mesh Cloud Scripting.
 >
 > - Mesh Scripting isn't required for every Environment, but you'll need it for the features we'll be adding here: making a button interactive, triggering an informational text popup, and teleporting around the scene.
 
-### Choose the NavMesh layer 
+### Choose the NavMesh layer
 
 For this project, we want our avatar to be able to walk around only on
 the floors inside the *Sphere Terrace* objects and the floor of a
@@ -483,7 +476,7 @@ Right now, the text on the button says "Label." Let's change that to
 
 ## Create the Visual Script for the button
 
-Before we add our first visual script, in the **Hierarchy**, collapse **PlayVideoButton** and then expand **VideoPlayer**. 
+Before we add our first visual script, in the **Hierarchy**, collapse **PlayVideoButton** and then expand **VideoPlayer**.
 
 ![A screenshot of a video play Description ](../../media/sample-mesh-101/200-expand-videoplayer-v2.png)
 
@@ -499,14 +492,14 @@ Note that in the **Script Machine** component, the **Source** is set to **Graph*
 1. In the **Script Machine** component, click the **New** button.
 1. Navigate to the **Chapter3** > **StartingPointVisualScripts** folder.
 
-Note that there are already two existing assets: **SPShowInfoDialog.asset** and **SPTeleportToOpenAir.asset**. 
+Note that there are already two existing assets: **SPShowInfoDialog.asset** and **SPTeleportToOpenAir.asset**.
 
 ![A screenshot of a video play Description ](../../media/sample-mesh-101/202-assets-v2.png)
 
 We'll be using these as starting points for the other two features in this chapter. For the feature we're working on right now, the interactable button, we'll create a new script graph.
 
 1. In the **File name** box, enter "SPVideoPlayerBehavior" and then click the **Save** button.
-1. In the **Script Machine** component, enter a name in the *Title* field for the graph: "Video Player Behavior." 
+1. In the **Script Machine** component, enter a name in the *Title* field for the graph: "Video Player Behavior."
 1. Enter a description in the *Summary* field for the graph: "Video player behavior definition."
 
 ## Putting the script graph together
@@ -537,7 +530,7 @@ We'll be using these as starting points for the other two features in this chapt
 1. In the **PlayVideo** variable, click and hold on the double lines to the left of **Type**, and then drag the variable and drop it in the graph, where it appears as a node.
 
 > [!NOTE]
-> A node is also called a *unit* in Visual Scripting. In this tutorial, we'll be using the term *node*. 
+> A node is also called a *unit* in Visual Scripting. In this tutorial, we'll be using the term *node*.
 
 ![A screenshot of a video play Description ](../../media/sample-mesh-101/207-drag-variable-v2.png)
 
@@ -578,7 +571,7 @@ At this point, nothing is triggering the button yet. We need to add a node that 
 
     ![A screenshot of a video play Description ](../../media/sample-mesh-101/212-on-state-changed-v2.png)
 
-In addition to knowing when the button is selected, we also want to be able to set the player mode. 
+In addition to knowing when the button is selected, we also want to be able to set the player mode.
 
 1. Connect the output control port of the "On State Changed" node to the "True" input control port of a new "If" node that you create.
 
@@ -588,7 +581,7 @@ In addition to knowing when the button is selected, we also want to be able to s
 
     ![A screenshot of a video play Description ](../../media/sample-mesh-101/214-if-node-false-v2.png)
 
-### Set a variable to let you know if the button is selected.
+### Set a variable to let you know if the button is selected
 
 1. Add a "Set Object Variable" node to the "True" output port of the "If" node.
 
@@ -625,7 +618,7 @@ All the nodes you just added basically do one thing: tell you when the button is
 
 ## Define the Play action
 
-In the following steps, we enable and disable two GameObjects: "Video" and "VideoStill." 
+In the following steps, we enable and disable two GameObjects: "Video" and "VideoStill."
 
 When we want the video to play, we invoke "Video." It has an animation attached.
 
@@ -643,9 +636,9 @@ We want this flow to be triggered every time the value of "isPlaying" changes.
 1. Connect the control output port of the "On State Changed" node to the "True" input port of a new "If" node that you create.
 1. Connect the remaining output port of the "On State Changed" node to the "False" input port of the "If" node.
 
-    ![A screenshot ](../../media/sample-mesh-101/222-if-node-v2.png)  
+    ![A screenshot ](../../media/sample-mesh-101/222-if-node-v2.png)
 
-1. Attach the "True" output control of the "If" node to the control input port of a new "Game Object: Set Active" node that you create.  
+1. Attach the "True" output control of the "If" node to the control input port of a new "Game Object: Set Active" node that you create.
 
     ![A screenshot ](../../media/sample-mesh-101/224-set-active-v2.png)
 
@@ -681,7 +674,7 @@ This is similar to what we just did, but in reverse: if the "If" node is false, 
 
     ![A screenshot ](../../media/sample-mesh-101/228-select-nodes-v2.png)
 
-1. Right-click on a selected node and then choose **Duplicate Selection.** 
+1. Right-click on a selected node and then choose **Duplicate Selection.**
 1. Drag the duplicated nodes to an empty space towards the bottom of the graph.
 
     ![A screenshot ](../../media/sample-mesh-101/229-duplicated-nodes-v2.png)
@@ -763,7 +756,7 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
     ![A screen shot showing the if node connect to the new Show Dialog node.](../../media/sample-mesh-101/303-show-dialog.png)
 
-1. In the **Show Dialog** node, click the **Message** field and then add this sentence: 
+1. In the **Show Dialog** node, click the **Message** field and then add this sentence:
 
 Did you know that the world's largest wind turbine has blades longer than a football field?
 
@@ -786,7 +779,7 @@ This is the message that will appear in the info dialog.
 1. Select the button. The info dialog appears and displays the message you added to the **Show Dialog** node earlier.
 
 1. When you're finished with info dialog, click its **Continue** button. Note that after you click the button, it disappears. To use the button again, you must exit and then re-enter Play mode.
-   
+
     > [!TIP]
     > The distance and triggering elements in effect here are determined by the components of the **ProximityDetector** GameObject.
 
@@ -1063,7 +1056,7 @@ The idea here is that when you drag a wind turbine over the ocean, the "wind" ca
 
     ![A screenshot](../../media/sample-mesh-101/322-wind-turbine-script.png)
 
-1. Click the **Edit Graph** button to open the script graph. Note that there are no custom Mesh nodes here; it's all standard Unity. 
+1. Click the **Edit Graph** button to open the script graph. Note that there are no custom Mesh nodes here; it's all standard Unity.
 
     ![A screenshot](../../media/sample-mesh-101/323-existing-nodes.png)
 
@@ -1161,7 +1154,7 @@ your experience to do the following:
 
 - Drop an object only in a particular area that you specified
 
-# Chapter 5: Create and upload your Environment 
+# Chapter 5: Create and upload your Environment
 
 You've completed adding all the features you need for your Mesh
 experience using Mesh Physics and Scripting. So far, we've been working
@@ -1246,7 +1239,7 @@ option #3: build and publish for PC and Android. To learn more about
 building for single and multiple platforms, see our document titled *Get
 Started with Mesh Environments*.
 
-## Create the Environment 
+## Create the Environment
 
 1. In the **Update Environment** tab, click the **Select a scene**
     field, and then, in the **Select SceneAsset** dialog, select
@@ -1301,16 +1294,16 @@ In this chapter, you learned how to create an Environment based on your
 scene and then build it and publish it to your World in the Azure
 Portal.
 
-# Chapter 6: Share your Mesh experience with others 
+# Chapter 6: Share your Mesh experience with others
 
 Now that you've uploaded your Mesh101 Environment to Mesh, you can
 create and produce an Event based on that Environment that participants
-can experience through the Mesh app for PC or Quest. 
+can experience through the Mesh app for PC or Quest.
 
 See our document titled *Mesh Event Producer Guide* to create an Event
 via the in-app event producer experience.  
 
-## Create an event 
+## Create an event
 
 1. Open the Mesh app and then log in.
 
@@ -1352,7 +1345,7 @@ automatically generated](../../media/sample-mesh-101/image103.png)
 
 9. Find the **Wind Turbine Tutorial** Environment, then select it, and
     then click **Next**.
-    
+
     ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image105.jpg)
 
 10. On the **Review** page, review your event details. Click **Back** if
