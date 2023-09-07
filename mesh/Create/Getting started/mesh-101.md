@@ -604,7 +604,7 @@ In addition to knowing when the button is selected, we also want to be able to s
 
 1. Drag the the "isPlaying" variable from the **Blackboard** to the graph to create a new "Get Object Variable" node.
 
-    [A screenshot of a video play Description ](../../media/sample-mesh-101/325-get-var-node.png)
+    [A screenshot of a video play Description ](../../media/sample-mesh-101/324-trigger-boundaries.png)
 
 [placeholder](../../media/sample-mesh-101/325-get-var-node.png)
 
