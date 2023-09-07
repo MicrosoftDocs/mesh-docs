@@ -37,9 +37,9 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 1. If you are losing internet connection during a session in the immersive space, you will be disconnected, removed from the space, and sent back to the gallery. You can rejoin the immersive space manually once internet connection is restored.
 
-### Teams UI vs. Immersive spaces UI
+### Teams vs. Immersive spaces menu bar
 
-1. Using the **React** options in the Teams UI will not trigger any gestures of the avatar in the immersive space. Other users will still see your reaction on their screen. Immersive space users should use the Mesh menu bar to emote, which will both trigger your avatar gestures as well as show the emote on other participants screens.
+1. Using the **React** options on the Teams meeting menu will not trigger any gestures of the avatar in the immersive space. Other users will still see your reaction on their screen. Immersive space users should use the Mesh menu bar to emote, which will both trigger your avatar gestures as well as show the emote on other participants screens.
 
 ### Current limitations
 
