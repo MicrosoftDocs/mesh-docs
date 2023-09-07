@@ -1153,7 +1153,7 @@ generated](../../media/sample-mesh-101/image084.png)
     the tabletop and ocean and drop it on the floor. The containment
     field prevents you from doing so.
 
-### Summary
+### Chapter 4: Summary
 
 In this chapter, you added Mesh features that empower participants in
 your experience to do the following:
