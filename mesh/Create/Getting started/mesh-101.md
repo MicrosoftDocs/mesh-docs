@@ -75,7 +75,8 @@ The tutorial is structured as follows:
     - [Station: 4.2 Animation Trigger](#station-42-animation-trigger)
       - [Test your work](#test-your-work-4)
     - [Station 4.3: Constraining Bodies](#station-43-constraining-bodies)
-    - [Summary](#summary)
+    - [Test your work](#test-your-work-5)
+    - [Chapter 4: Summary](#chapter-4-summary)
   - [Chapter 5: Create and upload your Environment](#chapter-5-create-and-upload-your-environment)
     - [Create your environment](#create-your-environment)
     - [Build and publish your environment](#build-and-publish-your-environment)
@@ -84,10 +85,10 @@ The tutorial is structured as follows:
     - [Build and publish your Environment](#build-and-publish-your-environment-1)
     - [Test the PC version of your Environment](#test-the-pc-version-of-your-environment)
     - [View your Environment in Azure](#view-your-environment-in-azure)
-    - [Summary](#summary-1)
+    - [Summary](#summary)
   - [Chapter 6: Share your Mesh experience with others](#chapter-6-share-your-mesh-experience-with-others)
     - [Create an event](#create-an-event)
-    - [Summary](#summary-2)
+    - [Summary](#summary-1)
 - [Conclusion](#conclusion)
 
 ## Terminology
@@ -198,23 +199,17 @@ The Mesh Toolkit contains the *Mesh 101* tutorial project.
 > Don't move the **Mesh101.Unity** project folder or the
 > **Packages** folder after you unzip!
 
-To ensure that the manifest file for the project (or any of the sample projects) configures project settings and loads the required packages correctly, you must maintain  this folder and file structure:  
+To ensure that the manifest file for the project (or any of the sample projects) configures project settings and loads the required packages correctly, you must maintain  this folder and file structure:
 
-```csharp
-Mesh Toolkit 23.x 
+```bash
+Mesh Toolkit 23.x
 
 ├──Packages
-
 ├──Samples
-
     ├──DartRoom
-
     ├──Mesh101.Unity
-
     ├──HelloWorld-Unity
-
     ├──ScienceBuilding
-
     ├──ScriptedWorlds
 ```
 
@@ -331,7 +326,7 @@ you to easily get a first impression of a multi-user scenario.
 2. Select the Unity Editor Play button.
 
 3. In the **Game** window, note that you now have a view from the
-    avatar's position. Use the WASD keys to walk around inside the
+    avatar's position. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the
     Sphere Terrace. You can also drag the right mouse button to pan in
     any direction. When you're done experimenting, click the Unity
     Editor Play button again to exit Play mode.
@@ -547,7 +542,7 @@ We'll be using these as starting points for the other two features in this chapt
 
 **TIP**: You may want to take a moment here to examine some of the components for the PlayVideoButton GameObject:
 
-- *Mesh Interactable Properties*: This makes *PlayVideoButton* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named *Mesh Object and Avator Interactions*.
+- *Mesh Interactable Properties*: This makes *PlayVideoButton* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named *Mesh Object and Avatar Interactions*.
 
 - *Script Machine*: This has a script graph named *Button Base Behaviour.*
 
@@ -757,7 +752,7 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
 1. In the **Hierarchy**, select **Information_Button**.
 
-![A screen shot of 3.2 - Info_Dialog GameObject Hierachy with Information_Button selected](../../media/sample-mesh-101/301-information-button.png)
+![A screen shot of 3.2 - Info_Dialog GameObject Hierarchy with Information_Button selected](../../media/sample-mesh-101/301-information-button.png)
 
 1. In the **Inspector**, navigate to the **Script Machine** component with the **Show Dialog** graph and then click the **Edit Graph** button.
 
@@ -794,7 +789,7 @@ This is the message that will appear in the info dialog.
     > [!TIP]
     > The distance and triggering elements in effect here are determined by the components of the **ProximityDetector** GameObject.
 
-    ![A screen shot showing the ProximityDetector GameObject in the Hierarcy.](../../media/sample-mesh-101/306-proximity-detector.png)
+    ![A screen shot showing the ProximityDetector GameObject in the Hierarchy.](../../media/sample-mesh-101/306-proximity-detector.png)
 
 1. Press the Unity Editor Play button to exit Play mode.
 
@@ -938,7 +933,7 @@ your experience to do the following:
 ## Chapter 4: Move objects and trigger animations with Mesh Physics
 
 In Chapter 4, you'll work with a model of the wind farm. You'll learn
-how to use Mesh Physics to grab and release Rigidbodies (in this case,
+how to use Mesh Physics to grab and release Rigid Bodies (in this case,
 wind turbines) and set up an animation trigger using Visual Scripting. You'll wrap things up by
 constraining the wind turbines so they can only be moved within a
 specified area.
@@ -1138,7 +1133,7 @@ generated](../../media/sample-mesh-101/image084.png)
 
     ![A screenshot of a computer Description ](../../media/sample-mesh-101/image087.png)
 
-###Test your work
+### Test your work
 
 1. Save the project, and then press the Unity Editor Play button.
 
@@ -1177,7 +1172,7 @@ Mesh *Environment* and upload it to your Mesh World in the Azure Portal.
 1. On the menu bar, select **Mesh Toolkit** > **Configure** >
     **Project Settings**.
 
-    ![A screenshot of a computer Description automaticallygenerated](../../media/sample-mesh-101/image088.png)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image088.png)
 
 2. Select **Yes** to configure project settings for Mesh.
 
@@ -1312,7 +1307,7 @@ create and produce an Event based on that Environment that participants
 can experience through the Mesh app for PC or Quest.
 
 See our document titled *Mesh Event Producer Guide* to create an Event
-via the in-app event producer experience.  
+via the in-app event producer experience.
 
 ### Create an event
 
@@ -1324,44 +1319,30 @@ via the in-app event producer experience.  
 
     ![A blue square with white text Description automatically generated](../../media/sample-mesh-101/image101.png)
 
-> **Notes**:
+    **Notes**:
+    - You may have to scroll to view all the worlds.
+    - You can pin worlds to the left nav bar for easy access.
 
-- You may have to scroll to view all the worlds.
-
-- You can pin worlds to the left nav bar for easy access.
-
-![A picture containing text, screenshot, line, font Description
-automatically generated](../../media/sample-mesh-101/image103.png)
-
+    ![A picture containing text, screenshot, line, font Description automatically generated](../../media/sample-mesh-101/image103.png)
 3. In your Mesh World, select the **Manage** button.
-
     ![A screenshot of a computer Description ](../../media/sample-mesh-101/image103.png)
 
     > [!NOTE]
     > If you don't see the **Manage** button, then you aren't a Content contributor for this World.
-
 4. Select the **Create** button, and then, in the drop-down menu,
     select **Create event**.
-
 5. Add your event details (**Name**, **Date**, **Time**,
     **Description**, etc.).
-
     ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image104.jpg)
-
 6. When you're finished, click **Next**.
-
 7. On the **Template** page, press **Skip**.
-
 8. On the **Environment** page, select the **Custom** tab.
-
 9. Find the **Wind Turbine Tutorial** Environment, then select it, and
     then click **Next**.
 
     ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image105.jpg)
-
 10. On the **Review** page, review your event details. Click **Back** if
     you need to go back and change anything.
-
     ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image106.jpg)
 
 11. When you're ready to move forward, select **Create Event**. This
