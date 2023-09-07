@@ -1268,7 +1268,7 @@ for both PC and Android, so make sure that both buttons are "on."
 
 - Select the **Build and Publish** button.
 
-    ![A screen shot of a computer Description ](../../media/sample-mesh-101/image097.png)
+    ![A screen shot of a computer Description ](../../media/sample-mesh-101/image097.jpg)
 
 - If the Environment builds and uploads successfully, the **Build and
     Upload Results** dialog appears and confirms the results.
@@ -1290,7 +1290,7 @@ If you navigate to the **Environments** page for your World in the Azure
 Portal, you'll see that your Environment has been saved there. Its type
 will be listed as "Custom Environment."
 
-![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image100.png)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image100.jpg)
 
 Your saved custom Environment will be available to anyone who creates a
 new event in that Mesh world.
@@ -1331,7 +1331,7 @@ automatically generated](../../media/sample-mesh-101/image103.png)
 
 3. In your Mesh World, select the **Manage** button.
 
-    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image103.jpg)
+    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image103.png)
 
     > [!NOTE]
     > If you don't see the **Manage** button, then you aren't a Content contributor for this World.
@@ -1372,7 +1372,7 @@ Environment. Participants can join the Event and then use the Mesh
 features that you enabled in Chapters 3 and 4 to learn about wind
 turbines.
 
-![A person looking at a group of people Description automatically generated](../../media/sample-mesh-101/image108.png)
+![A person looking at a group of people Description automatically generated](../../media/sample-mesh-101/image108.jpg)
 
 # Conclusion
 
