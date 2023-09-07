@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 # Release notes - Immersive Spaces for Teams
 
-## Version 2023-8-30
+## Version 5.2311.0
 
 ### What's new
 
