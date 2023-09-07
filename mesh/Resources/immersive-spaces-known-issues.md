@@ -41,13 +41,6 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 1. Using the **React** options in the Teams UI will not trigger any gestures of the avatar in the immersive space. Other users will still see your reaction on their screen. Immersive space users should use the Mesh menu bar to emote, which will both trigger your avatar gestures as well as show the emote on other participants screens.
 
-### Known issues
-
-1.	Text for **Microphone** settings in the pre-join dialog box isn’t readable in high contrast mode.
-1.	On Quest, if you try to rotate the avatar preview in the Avatar Customizer, your field of view will also move.
-1.	Mesh immersive spaces do not properly support low bandwidth situation: users who are experiencing poor network quality may see problems such as missing avatars and audio glitches. We are actively working on integrating notifications to alert users when they are in this state.
-1.	A single user joining Mesh from multiple devices will result in audio issues. Do not join from multiple devices at this time. This is not a supported use case.
-
 ### Current limitations
 
 1. There is a room size limit of 16 persons for immersive users, while there’s no limit on the number of participants in a 2D Teams meeting. 
@@ -58,8 +51,13 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 1.	When you share content while already in an immersive space, you will not see your own content on the virtual stage. Other meeting participants will be able to see it on the main stage.
 1. Chat in Quest can’t render images, only text. In addition, texts don’t wrap in both the chat and the feedback form on Quest.
 1. Mesh immersive spaces doesn't support cross-tenant calls.
+1.	A single user joining Mesh from multiple devices will result in audio issues. Do not join from multiple devices at this time. This is not a supported use case.
 
- 
+### Other known issues
+
+1.	Text for **Microphone** settings in the pre-join dialog box isn’t readable in high contrast mode.
+1.	On Quest, if you try to rotate the avatar preview in the Avatar Customizer, your field of view will also move.
+1.	Mesh immersive spaces do not properly support low bandwidth situation: users who are experiencing poor network quality may see problems such as missing avatars and audio glitches. We are actively working on integrating notifications to alert users when they are in this state.
 
 
 
