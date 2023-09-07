@@ -670,7 +670,7 @@ Simultaneously, if the "If" node's value is true, we set the "VideoStill" GameOb
 
  (Note that in the "Set Active" node attached to "VideoStill", **Value** is *not* selected.)
 
-![A screenshot ](../../media/sample-mesh-101/227-set-videostill-inactive-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/227-set-videostill-inactive-v2.png)
 
 ### Stop the video if the Play button (now labeled the "Stop" button) is pressed while the video is playing
 
@@ -678,21 +678,21 @@ This is similar to what we just did, but in reverse: if the "If" node is false, 
 
 1. Select the four nodes that follow the "If" node.
 
-![A screenshot ](../../media/sample-mesh-101/228-select-nodes-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/228-select-nodes-v2.png)
 
 1. Right-click on a selected node and then choose **Duplicate Selection.** 
 1. Drag the duplicated nodes to an empty space towards the bottom of the graph.
 
-![A screenshot ](../../media/sample-mesh-101/229-duplicated-nodes-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/229-duplicated-nodes-v2.png)
 
 1. Connect the "False" control output of the "If" node to the control input of the first "Game Object: Set Active" node in our duplicated set of nodes.
 
-![A screenshot ](../../media/sample-mesh-101/230-if-is-false-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/230-if-is-false-v2.png)
 
 1. In the first "Game Object: Set Active" node of the duplicate set, deselect "Value."
 1. In the second "Game Object: Set Active" node of the duplicate set, select "Value."
 
-![A screenshot ](../../media/sample-mesh-101/231-reverse-conditions-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/231-reverse-conditions-v2.png)
 
 ## Changing the button label
 
@@ -700,7 +700,7 @@ This is similar to what we just did, but in reverse: if the "If" node is false, 
 
 For the Value, you need to add the "Label" GameObject that's a child to the "PlayVideoButton" GameObject. If you click the round button next to the **Value** field, the popup menu shows many GameObjects named "Label" and it's unclear which one you should choose. Here's a better way to ensure you're making the right choice:
 
-1. In the **Hierarchy**, navigate to **Chapter 3** > **3.1 - Video** > **PlayVideoButton** > **Label.**
+1. In the **Hierarchy**, navigate to **Chapter 3** > **3.1 - Video** > **PlayerVideoButton** > **Label.**
 1. Drag this **Label** GameObject from the **Hierarchy** and drop it in the **Value** field of your new variable.
 
 ![A screenshot ](../../media/sample-mesh-101/232-label-v2.png)
@@ -714,7 +714,7 @@ For the Value, you need to add the "Label" GameObject that's a child to the "Pla
 ![A screenshot ](../../media/sample-mesh-101/234-textmesh-pro-v2.png)
 
 1. Drag the "VideoPlayerButtonLabel" from the **Blackboard** and drop it in the graph to create a new node.
-1. Connect the outport port of the new "Get Object Variable" node to the first input port on the "Text Mesh Pro: Set Text" node.
+1. Connect the outport port of the new "Get Object Variable" node to the next available input port on the "Text Mesh Pro: Set Text" node.
 1. In the "Text Mesh Pro: Set Text" node text field, type in "Pause."
 
 ![A screenshot ](../../media/sample-mesh-101/235-label-node-v2.png)
@@ -732,7 +732,7 @@ For the Value, you need to add the "Label" GameObject that's a child to the "Pla
     on. This causes a brief video about wind turbines to play on the
     screen above the button.
 
-    ![A screenshot of a video playback Description ](../../media/sample-mesh-101/image045.jpg)
+    ![A screenshot of a video playback Description ](../../media/sample-mesh-101/image044.jpg)
 
 1. When you've finished watching the video, press the button you've
     been editing again (it now has the label "Stop").
@@ -741,41 +741,46 @@ For the Value, you need to add the "Label" GameObject that's a child to the "Pla
 
 ## Station 3.2: Trigger an info dialog
 
-For this task, we'll enhance an existing visual script that causes an info dialog to appear when an avatar presses a button.
+For this feature, we'll enhance an existing visual script that causes an info dialog to appear when the avatar presses a button.
 
 1. In the **Hierarchy**, collapse the **3.1 -- Video** GameObject.
-   In the **Scene** window, note that the Info Dialog Trigger station is to the right of the **3.1 -- Video Playback** station. Adjust the view so that you can clearly see Station 3.2.
+1. In the **Scene** window, note that the Info Dialog Trigger station is to the right of the **3.1 -- Video Playback** station. Adjust the view so that you can clearly see Station 3.2.
 
     ![A screenshot of a computer Description ](../../media/sample-mesh-101/300-info-dialog.png)
 
-1. In the **Inspector**, expand the GameObject named **3.2 -- Info
-    Dialog**.
+1. In the **Inspector**, expand the GameObject named **3.2 -- Info Dialog**.
 
 1. In the **Hierarchy**, select **Information_Button**.
+
 ![A screen shot of 3.2 - Info_Dialog GameObject Hierachy with Information_Button selected](../../media/sample-mesh-101/301-information-button.png)
 
-1. In the **Inspector**, navigate to the **Script Machine** component and then click the **Edit Graph** button.
-![A screen shot of the Information_Button's Inspector](../../media/sample-mesh-101/302-edit-graph-button.png)
+1. In the **Inspector**, navigate to the **Script Machine** component with the **Show Dialog** graph and then click the **Edit Graph** button.
 
-1. In the graph, add a **Show Dialog** node and then connect the **True** output port of the "If" node to the input control port of the **Show Dialog** node.
+    ![A screen shot of the Information_Button's Inspector](../../media/sample-mesh-101/302-edit-graph-button.png)
 
-![A screen shot showing the if node connect to the new Show Dialog node.](../../media/sample-mesh-101/303-show-dialog.png)
+1. In the graph, connect the "True" output control port of the "If" node to the input control port of a new "Microsoft Mesh: Show Dialog" node that you create.
 
-1. In the **Show Dialog** node, click the **Message** field and then add this text: "Did you know that the world's largest wind turbine has blades longer than a football field?" This is the message that will appear in the info dialog.
+    ![A screen shot showing the if node connect to the new Show Dialog node.](../../media/sample-mesh-101/303-show-dialog.png)
 
-![A screen shot showing Show Dialog node with a message added.](../../media/sample-mesh-101/304-show-dialog-message.png)
+1. In the **Show Dialog** node, click the **Message** field and then add this sentence: 
+
+Did you know that the world's largest wind turbine has blades longer than a football field?
+
+This is the message that will appear in the info dialog.
+
+    ![A screen shot showing Show Dialog node with a message added.](../../media/sample-mesh-101/304-show-dialog-message.png)
 
 1. Select the drop-down that currently displays **OK**, and then, in the popup list, deselect **OK** and select **Continue**. This will add a "Continue" button to the info dialog that the user can click to close the dialog and continue in the experience.
 
-![A screen shot showing Show Dialog node with a message added.](../../media/sample-mesh-101/305-show-dialog-continue.png)
+    ![A screen shot showing Show Dialog node with a message added.](../../media/sample-mesh-101/305-show-dialog-continue.png)
 
 ## Test your work
 
 1. In the Unity Editor, save the project and then press the Unity Editor Play button.
 
-1. Use the navigation keys to make your avatar walk away from the button. Note that when your avatar is a certain distance away, the button doesn't rotate and isn't selectable.
+1. Use the navigation keys to make your avatar back away from the button. Note that when your avatar is a certain distance away, the button rotates and isn't selectable.
 
-1. Walk towards the button. At a certain point, the button starts rotating, signaling that you can now select it.
+1. Walk towards the button. At a certain point, the button stops rotating, signaling that you can now select it.
 
 1. Select the button. The info dialog appears and displays the message you added to the **Show Dialog** node earlier.
 
@@ -790,57 +795,55 @@ For this task, we'll enhance an existing visual script that causes an info dialo
 
 ## Station 3.3: Teleport to the turbine generator
 
-For this task, we'll add some nodes to a script graph that allows participants
+For this feature, we'll add some nodes to a script graph that allows participants
 in the scene to teleport. When a participant presses the button, they're
 teleported from their current location at Station 3.3 to an elevated
 platform that's attached to a wind turbine generator. They can then
 examine the generator.
 
-![A picture containing outdoor, text, screenshot, windmill Description automatically generated](../../media/sample-mesh-101/image051.jpg)
+![A picture containing outdoor, text, screenshot, windmill Description automatically generated](../../media/sample-mesh-101/307-teleport-to-turbine.png)
 
-**Update the script graph**
+### Update the script graph
 
 1. In the **Scene** window, note that the **3.3 -** **Teleport to Turbine** station is to the right of the **3.2 -- Info Dialog  Trigger** station. Adjust the view so that you can clearly see Station 3.3.
-1. In the **Hiearchy**, collapse the **3.2 - Info Dialog** GameObject, and then expand the **3.3 - Teleport** GameObject.
+1. In the **Hierarchy**, collapse the **3.2 - Info Dialog** GameObject, and then expand the **3.3 - Teleport** GameObject.
 
-    ![A screen shot](../../media/sample-mesh-101/303-teleport.png)
+    ![A screen shot](../../media/sample-mesh-101/307-teleport.png)
 
 The button is all set up for you---we just need to add the nodes in the script graph that
 give it the teleport behavior.
 
-1. In the **Hiearchy**, select the **ChapterLabel** GameObject.
+1. In the **Hierarchy**, select the **ChapterLabel** GameObject.
 
     ![A screen shot](../../media/sample-mesh-101/308-chapter-label.png)
 
-    Note that in the **Inspector**, there's a **Script Machine** component that contains a script graph named *SPTeleportToOpenAir*.
+    Note that in the **Inspector**, there's a **Script Machine** component named *Teleport to Open Air Platform* that contains a script graph named *SPTeleportToOpenAir*.
 
     ![A screen shot](../../media/sample-mesh-101/309-teleport-graph.png)
 
-1. Click the **Edit Graph** button. Just as in the previous chapter, our already have some variables and nodes set up for you.
+1. Click the **Edit Graph** button. Just as in the previous chapter, our graph already have some variables and nodes set up for you.
 
     ![A screen shot](../../media/sample-mesh-101/310-teleport-first-nodes.png)
 
 In the **Teleport Button Behavior** group, the logic is similar to what you saw in Chapter 3.1: "If the button is selected, do something." We don't need to anything further to this group. We're going to make our changes to the second group, **Teleport to OpenPlatform**.
 
-< TBD >
+### Create a Travel Point and add a reference to it
 
-1. Create a new empty GameObject as a child object to **TravelGroup** and then rename it "TeleportLocationWindTurbine".
+So what's a "Travel Point", you might be asking ... ? Basically, it's a component that you can use to define a point in space to spawn or teleport to. Normally, you would first create a *Travel Group*, and then add one or more Travel Points to it. We've already created the Travel Group for you in this project, so in the steps below, we'll add a Travel Point to that group. We'll then use that Travel point as the location the avatar will go to when they click the "Teleport" button. To learn more, see our article named *Mesh object and avatar interactions*.
+
+1. In the **Hierarchy**, create a new empty GameObject as a child object to **TravelGroup** and then rename it "TeleportLocationWindTurbine".
 
     ![A screen shot](../../media/sample-mesh-101/311-teleport-location.png)
 
+1. Click the **Add Component** button and then search for and add the *Travel Point* component.
 1. In the **Inspector**, in the **Transform** component, enter the following values:
 
     Position: X = 6, Y = 58, Z =61
     Rotation: X = 0, Y = -270, Z = 0
 
-1. Click the **Add Component button and then search for and add the *Travel Point* script.
+    The avatar will teleport to this location.
+
 1. Make the "TeleportLocationWindTurbine" GameObject inactive by deselecting the check box next to its name. If you have more than one TravePoint object active at runtime, the system won't spawn the avatar correctly.
-
-### Create a Travel Point and add a reference to it
-
-A *Travel Point* is a component that you can use to define a point in space to spawn or teleport to. Normally, you would first create a *Travel Group*, and then add one or more Travel Points to it. We've already created the Travel Group for you in this project, so in the steps below, we'll add a Travel Point to that group. We'll then use that Travel point as the location the avatar will go to when they click the "Teleport" button. To learn more, see our article named *Mesh object and avatar interactions*.
-
-1. Click the **Add Component** button and add the *Travel Point* component.
 1. In the script graph, go to the **Blackboard** and then select the **Object** tab.
 1. Create a new Object variable named "TeleportLocationWindTurbine."
 1. For the variable **Type**, select *GameObject."
@@ -852,7 +855,7 @@ A *Travel Point* is a component that you can use to define a point in space to s
 
     ![A screen shot](../../media/sample-mesh-101/313-add-node.png)
 
-1. Connect the "True" outport control port of the "If" node to a new "Game Object: Set Active" node.
+1. Connect the "True" outport control port of the "If" node to a new "Game Object: Set Active" node that you create.
 
     ![A screen shot](../../media/sample-mesh-101/314-set-active-node.png)
 
@@ -860,12 +863,12 @@ A *Travel Point* is a component that you can use to define a point in space to s
 
     ![A screen shot](../../media/sample-mesh-101/315-connect-to-set-active.png)
 
-1. Click the **Value** check box in the "Game Object: Set Active" node to set its value to "true."
+1. Click the **Value** check box in the "Game Object: Set Active" node to set its value to "True."
 1. Connect the output control port of the "Game Object: Set Active" node to a new "Travel Point: Travel to Point" node.
 
     ![A screen shot](../../media/sample-mesh-101/316-travelpoint-node.png)
 
-1. Connect the output data point of the "TeleportLocationWindTurbine" node to the available data input port on the "Travel Point: Travel to Point" node.
+1. Connect the output data port of the "TeleportLocationWindTurbine" node to the first available data input port on the "Travel Point: Travel to Point" node.
 
     ![A screen shot](../../media/sample-mesh-101/317-connect-from-wind-turbine.png)
 
@@ -940,8 +943,7 @@ Chapter 3---there's no scripting, and all the networking is done for
 you, which means that the physics will look the same to all avatars in
 the session.
 
-There are a couple of things we need to do before getting started with
-the first station.
+There are a couple of things we need to do before getting started with the first station.
 
 ## Reconfigure the Hierarchy
 
@@ -949,17 +951,6 @@ the first station.
     expand the **Chapter4** GameObject.
 
 ![A screenshot of a computer Description ](../../media/sample-mesh-101/image061.jpg)
-
-## Add the Physics Scene Setup component
-
-1. In the **Hierarchy**, select the **Chapter4** GameObject.
-
-2. In the **Inspector**, select the **Add Component** button, and then
-    add the **Physics Scene Setup** component.
-
-![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image062.jpg)
-
-This component ensures that all physics components contained in child objects of **Chapter4** are synchronized correctly.
 
 ## Change the view to display the Chapter 4 Sphere Terrace
 
@@ -973,7 +964,7 @@ set up that view.
 1. In the **Hierarchy**, select the GameObject named **4.1 -- Grab and
     Release**.
 
-![A screenshot of a computer Description ](../../media/sample-mesh-101/image063.jpg)
+    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image063.png)
 
 1. Move the cursor over the **Scene** window and then press the F key
     on your keyboard.
@@ -983,7 +974,7 @@ This centers the view on the **4.1 -- Grab and Release** object, but you'll most
 1. Drag, rotate and/or zoom the view until you see the model in front
     of you, as shown below.
 
-![A computer generated image of a model of a mountain Description automatically generated](../../media/sample-mesh-101/image064.jpg)
+    ![A computer generated image of a model of a mountain Description automatically generated](../../media/sample-mesh-101/image064.jpg)
 
 ## Station 4.1: Grab and Release
 
@@ -996,12 +987,12 @@ generating power.
     GameObject. Note that it contains three Wind Turbine GameObjects
     that are located on the tabletop in the scene.
 
-![A screenshot of a computer Description ](../../media/sample-mesh-101/image065.jpg)
+    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image065.jpg)
 
 Let's add "grab and release" capabilities to **WindTurbine1** so that participants will be able to move it around in Mesh.
 
-1. In the **Hierarchy**, select **WindTurbine1** -- note in the
-    **Scene** window that it's the one farthest in the back and has red
+1. In the **Hierarchy**, select **WindTurbine1** -- in the
+    **Scene** window, it's the one farthest in the back and has red
     blades.
 
     We want the avatar to be able to grab and manipulate this object.
@@ -1025,25 +1016,24 @@ uneven surface.
 
 1. Save the project and then select the Unity Editor Play button.
 
-Note that whenever you enter Play mode, your starting point in the **Game** window is the Chapter 3 Sphere Terrace. We want to e in the other Sphere Terrace---the one for the Chapter 4 features. Fortunately, there's an easy way to get there.
+    Note that whenever you enter Play mode, your starting point in the **Game** window is the Chapter 3 Sphere Terrace. We want to be in the other Sphere Terrace---the one for the Chapter 4 features. Fortunately, there's an easy way to get there.
 
 2. Rotate the view to the right until you see the **Go to Chapter 4**
     information box.
 
-![A screenshot of a computer Description ](../../media/sample-mesh-101/image068.jpg)
+    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image068.jpg)
 
 3. Walk up to the information box and then select the **Teleport to
     Chapter 4** button.
 
-![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image069.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image069.jpg)
 
-4. After you arrive at the Chapter 4 Sphere Terrace, move the cursor
-    over **WindTurbine1** until the cursor's shape changes, and then
+4. After you arrive at the Chapter 4 Sphere Terrace, drag **WindTurbine1** until the cursor's shape changes, and then
     drag the turbine around the scene and drop it in the ocean.
 
     The turbine will stay upright as a result of turning on its *Freeze Rotation* constraints. Notice that the wind is blowing, but the turbine's blades don't turn. This is because we haven't triggered the blade-turning animation yet. We'll do that at the next station.
 
-![A picture ](../../media/sample-mesh-101/image070.jpg)
+    ![A picture ](../../media/sample-mesh-101/image070.jpg)
 
 5. Click the Unity Editor Play button to exit Play mode.
 
@@ -1056,24 +1046,35 @@ The idea here is that when you drag a wind turbine over the ocean, the "wind" ca
 
 1. In the **Hierarchy**, expand the **4.2 -- Animation Trigger** GameObject, and then select its child object named **Animation Trigger**.
 
-![A screenshot](../../media/sample-mesh-101/image072.jpg)
+    ![A screenshot](../../media/sample-mesh-101/image071.jpg)
 
-1. In the **Inspector**, navigate to the **Box Collider** component and then select **Edit Collider**. This shows you the boundaries of the trigger volume in the **Scene** window. When you're finished, click **Edit Collider** again.
+1. In the **Inspector**, navigate to the **Box Collider** component and then select **Edit Collider**. This shows you the boundaries of the trigger volume in the **Scene** window. When you're finished, click **Edit Collider** again to hide the boundaries.
 
-![A screenshot](../../media/sample-mesh-101/324-trigger-boundaries.png)
+    ![A screenshot](../../media/sample-mesh-101/324-trigger-boundaries.png)
 
-1. In he **Box Collider** component, select **Is Trigger**.
+1. In the **Box Collider** component, select **Is Trigger**.
 
-![A screenshot](../../media/sample-mesh-101/321-is-trigger.png)
+    ![A screenshot](../../media/sample-mesh-101/321-is-trigger.png)
 
+1. In the **Hierarchy**, navigate to **Chapter 4** > **4.1 - Grab and Release** and then select **WindTurbine1**.
 1. Click the **Add Component** button, and then search for and add **Script Machine.**
-1. In the **Script Machine** component, click the round button next to **Graph**, and then in the **Select ScriptGraphAsset** window, search for and select "SPWindTurbineScript".
+1. In the **Script Machine** component, click the round button next to **Graph**, and then in the **Select ScriptGraphAsset** window, search for and select "WindTurbineScript".
 
-![A screenshot](../../media/sample-mesh-101/322-wind-turbine-script.png)
+    ![A screenshot](../../media/sample-mesh-101/322-wind-turbine-script.png)
 
 1. Click the **Edit Graph** button to open the script graph. Note that there are no custom Mesh nodes here; it's all standard Unity. 
 
-![A screenshot](../../media/sample-mesh-101/323-existing-nodes.png)
+    ![A screenshot](../../media/sample-mesh-101/323-existing-nodes.png)
+
+Note that the **Get Object Variable** node, it lists a variable called "WindTurbine"--but we don't actually have that variable in the graph yet. Let's create it now.
+
+1. In the **Blackboard** section of the **Script Graph**, select the **Object** tab.
+1. Enter the variable name "WindTurbine" in the text box and then press the Enter key or click the + button.
+1. For the **Type**, select "Game Object."
+1. In the **Hierarchy**, navigate to the GameObject **Chapter 4** > **4.1 - Grab and Release** > **WindTurbine1** > **WindTurbineBody** > **Windmill_Turbine_001:Propellors10**.
+1. Drag **Windmill_Turbine_001:Propellors10** from the **Hierarchy** and then drop it in the **Value** field for the *WindTurbine* Object variable.
+
+    ![A screenshot](../../media/sample-mesh-101/327-windturbine-var.png)
 
 ## Test your work
 
@@ -1083,7 +1084,7 @@ The idea here is that when you drag a wind turbine over the ocean, the "wind" ca
     **Chapter3** Sphere Terrace. Rotate the scene to the right, and then
     walk over to the **Teleport to Chapter 4** button and press it.
 
-![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image069.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image069.jpg)
 
 3. Now in the **Chapter4** Sphere Terrace, drag **WindTurbine1**
     (reminder: it's the furthest one in the back, with the red blades) over the ocean. Note
@@ -1113,18 +1114,18 @@ medium confidence](../../media/sample-mesh-101/image084.png)
     GameObject and select its child object named **Containment Field**.
 
 ![A screenshot of a computer Description automatically
-generated](../../media/sample-mesh-101/image085.jpg)
+generated](../../media/sample-mesh-101/image084.jpg)
 
-2. In the **Inspector**, select the **Add Component** button and then
+1. In the **Inspector**, select the **Add Component** button and then
     add the **Containment Field** component.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image085.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image085.png)
 
-3. In the **Containment Field** component, select the "+" button to the
+1. In the **Containment Field** component, select the "+" button to the
     right of the **Affected bodies** option, and then, in the popup
     menu, select the **Game Object Name** condition.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image086.png)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image086.jpg)
 
 4. In the **Starts With** box, type "WindTurbine." Since all three wind
     turbines in our scene start with "WindTurbine," they'll all be
@@ -1225,10 +1226,7 @@ Environments** window.
 ![A screenshot of a computer Description ](../../media/sample-mesh-101/image093.jpg)
 
 > [!NOTE]
-> > in the **Environment Configurations** section, a new
-> > Environment configuration has been created that displays the name you
-> > added in the **Create Environment** tab: *Wind Turbine Tutorial*. If
-> > you see any other Environment configurations, close them.
+> In the **Environment Configurations** section, a new Environment configuration has been created that displays the name you  added in the **Create Environment** tab: *Wind Turbine Tutorial*. If you see any other Environment configurations, close them.
 
 - Select **Include Thumbnails**. Leave the setting as **Generate
     Thumbnails**.
@@ -1269,7 +1267,7 @@ for both PC and Android, so make sure that both buttons are "on."
 
 - Select the **Build and Publish** button.
 
-![A screen shot of a computer Description ](../../media/sample-mesh-101/image097.png)
+    ![A screen shot of a computer Description ](../../media/sample-mesh-101/image097.png)
 
 - If the Environment builds and uploads successfully, the **Build and
     Upload Results** dialog appears and confirms the results.
@@ -1359,12 +1357,12 @@ automatically generated](../../media/sample-mesh-101/image103.png)
 10. On the **Review** page, review your event details. Click **Back** if
     you need to go back and change anything.
 
-![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image106.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image106.jpg)
 
 11. When you're ready to move forward, select **Create Event**. This
     saves your event and takes you to the **My Events** page.
 
-![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image107.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image107.jpg)
 
 ## Summary
 
