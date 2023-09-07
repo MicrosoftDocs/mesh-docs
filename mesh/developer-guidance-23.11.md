@@ -96,9 +96,9 @@ In particular, the Mesh 23.11 release has two major updates that are more impact
 3. Save and close the Unity project.
 4. Run the MeshUpdater.exe tool to change toolkit renames / references. Note that this mostly changes references for Mesh physics and visual scripts that call Mesh components.
 5. Change the toolkit package to the latest 23.11 version in manifest.json for the project.
-6. If the user has a Meshapp, upgrade the code:
+6. If the user has a MeshApp, upgrade the code:
 
-    Change `Microsoft.MeshApps.UnityRuntime to Microsoft.Mesh.CloudScripting` in `  D:\x\x\x\Packages\com.x.mesh\Editor\MeshTemplateMenu.cs`
+    Change `Microsoft.MeshApps.UnityRuntime` to `Microsoft.Mesh.CloudScripting` in `D:\x\x\x\Packages\com.x.mesh\Editor\MeshTemplateMenu.cs`
 
     Change `WebViewNode` to `WebSlateNode` in
     `D:\x\x\x\Assets\.MeshApps\x\Feature\DisplayView.cs`
@@ -109,7 +109,7 @@ a. See Cloud Scripting section in Breaking changes below
 10. Publish the environment.
 
     > [!NOTE]
-    > Update the Meshapp subscription, resource group, etc. in the Mesh Uploader.
+    > Update the MeshApp subscription, resource group, etc. in the Mesh Uploader.
 
 ## Breaking changes
 
@@ -123,7 +123,7 @@ This release introduces the following changes:
 
     1. Select the environment and scene in the Mesh Uploader "Update Environment" Tab.
     1. Select the "Modify Deployment Configs" option, and then select the "Use Legacy Configs From Assets" option. This should apply the legacy global deployment configuration to the environment and scene.
-* **Player & Object interactions:** 
+* **Player & Object interactions:**
 
     Scenes must have a new TravelPoint component. 23.11 removes the legacy spawning system entirely, and now requires that all Mesh environments use TravelPoints. This is our new publicly supported player repositioning system (including spawning). Player spawning is now handled by TravelPoints, the legacy spawn system has been removed (this includes the SpawnConfig scripts and support for spawning into seats by default).
 
@@ -137,17 +137,16 @@ This release introduces the following changes:
 
 * **Cloud scripting:**
     * Moved to a per-environment deployment configuration workflow. The deployment configuration is associated with environment and configured from the MeshUploader UI now. See the Getting Started guide for the latest workflow.
-    
-        To use the global deployment configuration previously set in the project setting in Unity Editor, select the environment and scene in the MeshUploader "Update Enviroment" tab, then select the "Modify Deployment Configs" option, and then select the "Use Legacy Configs From Assets" option. This should apply the legacy global deployment configuration to the environment and scene.
-    
-        However, at the moment that work is not entirely complete.  While these deployment settings will switch automatically when choosing an environment to upload, not everything will switch automatically.  Until the work is complete, please continue to use your existing process in addition to setting up this UX: so keep updating meshapp.manifest.json with the desired settings as normal before uploading an environment.
+
+        To use the global deployment configuration previously set in the project setting in Unity Editor, select the environment and scene in the MeshUploader "Update Environment" tab, then select the "Modify Deployment Configs" option, and then select the "Use Legacy Configs From Assets" option. This should apply the legacy global deployment configuration to the environment and scene.
+
+        However, at the moment that work is not entirely complete.  While these deployment settings will switch automatically when choosing an environment to upload, not everything will switch automatically.  Until the work is complete, please continue to use your existing process in addition to setting up this UX: so keep updating `meshapp.manifest.json` with the desired settings as normal before uploading an environment.
 
 * **Mesh Physics:**
     * Various deprecated components have been removed from the main Mesh Toolkit package. An additional package, 'com.microsoft.mesh.physics.legacy-6.0.77.tgz', is available for this release to facilitate manual migration. This package can be added to a legacy project in addition to the Mesh Toolkit package. Any reference to a deprecated component will then continue to work in PlayMode as well as the MeshApp but will write an error message to the Unity Console window that allows finding and manually replacing the component. These errors must be addressed within this release cycle; afterwards, deprecated components may silently cease to work.
-    
+
     * The SharedEvents mechanism, introduced to replace the UnityEvent for connecting Mesh.Physics components, has been superseded by the far more powerful Mesh.VisualScripting integration. Wherever a low-level one-to-one replacement isn't possible, we've found it useful to take a step back to the higher-level use case to construct a solution that better fits the VisualScripting paradigm.
 
-    
     |**SharedEvent name**                              |**Suggested migration path**                                                |
     |--------------------------------------------------|----------------------------------------------------------------------------|
     |CollisionEventsSensor.onCollisionEnter / Exit     | replace by VisualScripting OnCollisionEnter / Exit                         |
@@ -185,13 +184,13 @@ To make a GameObject interactable, we add a *Mesh Interactable Properties* compo
 
 :::image type="content" source="media/developer-guidance-23.11/Picture1.png" alt-text="Mesh interactable properties script":::
 
-Next, we create a visual script. First, add a Script Machine component to the same GameObject. 
+Next, we create a visual script. First, add a Script Machine component to the same GameObject.
 
 :::image type="content" source="media/developer-guidance-23.11/Picture2.png" alt-text="Script machine component":::
 
 This will automatically also add the *Variables* component.
 
-:::image type="content" source="media/developer-guidance-23.11/Picture3.png" alt-text="Varaibles component":::
+:::image type="content" source="media/developer-guidance-23.11/Picture3.png" alt-text="Variables component":::
 
 Add a new variable with the following properties:
 
@@ -199,7 +198,7 @@ Add a new variable with the following properties:
 * Type: Reset Body Transforms (select from a list of available objects)
 * Value is the actual reference to your Reset Body Transforms component which you want to call. The easiest way to assign this is to drag the GameObject with the Reset Body Transforms component from the scene Hierarchy window. This GameObject is probably at the root node of objects you’re resetting.
 
-:::image type="content" source="media/developer-guidance-23.11/Picture4.png" alt-text="Varaibles":::
+:::image type="content" source="media/developer-guidance-23.11/Picture4.png" alt-text="Variables":::
 
 In the Script Machine, click New to create a new visual script and give it a name. After saving, Unity will automatically open a Visual Scripting Graph window where you can edit the visual script. We create the following nodes:
 
