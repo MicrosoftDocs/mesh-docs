@@ -643,7 +643,7 @@ We want this flow to be triggered every time the value of "isPlaying" changes.
 1. Connect the control output port of the "On State Changed" node to the "True" input port of a new "If" node that you create.
 1. Connect the remaining output port of the "On State Changed" node to the "False" input port of the "If" node.
 
-    [A screenshot ](../../media/sample-mesh-101/222-if-node-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/222-if-node-v2.png)
 
 1. Attach the "True" output control of the "If" node to the control input port of a new "Game Object: Set Active" node that you create.  
 
@@ -653,7 +653,7 @@ If true (in other words, if the button has been pressed), we want the video to p
 
 1. Create two new Object variables as shown here:
 
-    [A screenshot ](../../media/sample-mesh-101/223-two-variables-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/223-two-variables-v2.png)
 
 1. Add the two new variables to the graph.
 
@@ -769,7 +769,7 @@ Did you know that the world's largest wind turbine has blades longer than a foot
 
 This is the message that will appear in the info dialog.
 
-    ![A screen shot showing Show Dialog node with a message added.](../../media/sample-mesh-101/304-show-dialog-message.png)
+![A screen shot showing Show Dialog node with a message added.](../../media/sample-mesh-101/304-show-dialog-message.png)
 
 1. Select the drop-down that currently displays **OK**, and then, in the popup list, deselect **OK** and select **Continue**. This will add a "Continue" button to the info dialog that the user can click to close the dialog and continue in the experience.
 
