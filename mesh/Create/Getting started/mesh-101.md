@@ -503,7 +503,7 @@ Note that there are already two existing assets: **SPShowInfoDialog.asset** and 
 
 ![A screenshot of a video play Description ](../../media/sample-mesh-101/202-assets-v2.png)
 
-We'll be using these as starting points for the other two features in this chapter. For the feature we're working on right, the interactable button, we'll create a new script graph.
+We'll be using these as starting points for the other two features in this chapter. For the feature we're working on right now, the interactable button, we'll create a new script graph.
 
 1. In the **File name** box, enter "SPVideoPlayerBehavior" and then click the **Save** button.
 1. In the **Script Machine** component, enter a name in the *Title* field for the graph: "Video Player Behavior." 
@@ -605,6 +605,8 @@ In addition to knowing when the button is selected, we also want to be able to s
 1. Drag the the "isPlaying" variable from the **Blackboard** to the graph to create a new "Get Object Variable" node.
 
     [A screenshot of a video play Description ](../../media/sample-mesh-101/325-get-var-node.png)
+
+[placeholder](../../media/sample-mesh-101/325-get-var-node.png)
 
 1. Connect the outport port of the "Get Object Variable" node to a new node you create called "Negate*.
 1. Connect the output port of the "Negate" node to the bottom input port of the "Set Variable Object" node.
