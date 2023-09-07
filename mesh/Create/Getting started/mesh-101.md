@@ -610,6 +610,8 @@ In addition to knowing when the button is selected, we also want to be able to s
 
 [placeholder](../../media/sample-mesh-101/325-get-var-node.png)
 
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/218-select-isplaying-v2.png)
+
 1. Connect the outport port of the "Get Object Variable" node to a new node you create called "Negate*.
 1. Connect the output port of the "Negate" node to the bottom input port of the "Set Variable Object" node.
 
