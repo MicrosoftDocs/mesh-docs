@@ -8,25 +8,25 @@ ms.topic: Guide
 keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer, customize
 ---
 
-# Customize your event
-
-### Considerations before starting your event
-
-
-
 ## Customize your event
 
-If you have a custom environment created Unity, there may be components
-you can add to the environment that you can control as an event
-producer.
+Now that you've created your event, it's time to customize your event to add any run-of-show tools you'd like to use during your event. 
 
-Make your event your own! Create a scripted sequence that you control
-for your event -- think props for pizazz or a curtain opening to start
-the show.
+## Considerations before starting your event
 
-> [!NOTE]
-> We recommend customizing an event at least one hour before the
-> event is scheduled to ensure a smooth experience.
+### Customize before the event
+
+To ensure the event runs smoothly, ensure that you customize the event
+at least one hour before the event should start.
+
+
+#### Provision Multiple Rooms before the Event
+
+If you've chosen a Multiple rooms event, ensure that you've provisioned
+your Multiple Rooms event at least 30 minutes before the event start
+time.
+
+*Provisioning is necessary to enable broadcasting between rooms as the event host.*
 
 > [!TIP]
 > **Who should customize an event?**
@@ -36,15 +36,21 @@ the show.
 > caution, knowing that any edits you make will affect the environment
 > that event participants will join in.
 
-#### Event Producers tools
 
-- [Control panel](#_Add_Content_with) -- control the elements you add
+
+## Event Producers tools
+
+The major tools you'll use to produce your event are the:
+
+- ([Control Panel](#prepare-content-with-the-control-panel)) -- control the elements you add
     to the environment with scripted sequences of events. Imagine a
     curtain raise to signal the start of the event!
 
-- [Event templates](#_Event_templates) -- create a template of your event with all customizations that you add to reuse in future events
-- Environment editor -- add content to your environment like a video player.
+- [Event templates](#event-templates) -- create a template of your event with all customizations that you add to reuse in future events
+
+- [Environment editor](#add-content-with-the-environment-editor) -- add content to your environment like a video player.
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-video-player.png" alt-text="Video player showing while avatar is customizing it":::
+
 
 ## Add content with the Environment editor
 
@@ -101,12 +107,11 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
     generated](../../media/mesh-event-producer-guide/image024.png)
 
     > [!NOTE]
+    > Adding content takes place in **Edit mode**. 
     >
->     Adding content takes place in **Edit mode**. 
->
-> ![](../../media/mesh-event-producer-guide/image032.png)
->
-> You should be in this mode by default (look at the top/middle of the window).
+    > ![](../../media/mesh-event-producer-guide/image032.png)
+    >
+    > You should be in this mode by default (look at the top/middle of the window).
 
 1. Click the **+** button.
 
@@ -141,7 +146,8 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
 ### Preview the live run of your event
 
 Within a Customize event experience, open the Control Panel, then Toggle
-to Preview Mode\
+to Preview Mode.
+
 ![A screenshot of a video chat Description automatically generated with
 medium confidence](../../media/mesh-event-producer-guide/image037.png)
 
@@ -178,7 +184,8 @@ medium confidence](../../media/mesh-event-producer-guide/image040.png)
 ## Create a template
 
 1. In the left-side vertical button bar, click the icon of your World,
-    or click the **All Mesh worlds** button to find your world.\
+    or click the **All Mesh worlds** button to find your world.
+
     ![A screenshot of a computer Description automatically generated with medium confidence](../../media/mesh-event-producer-guide/image003.png)
 
 2. In the horizontal menu bar at the top, click **Events**.
@@ -188,47 +195,23 @@ medium confidence](../../media/mesh-event-producer-guide/image040.png)
 4. Select the event you want to create a template of, and then click
     the **Options** button.
 
-    ![A screenshot of a phone Description automatically generated with
-    medium confidence](../../media/mesh-event-producer-guide/image046.png)
+    ![A screenshot of a phone Description automatically generated with medium confidence](../../media/mesh-event-producer-guide/image046.png)
 
 5. In the popup menu, select Save as template to save an event template
     with the same name as the event you selected.
 
-    ![Graphical user interface Description automatically
-    generated](../../media/mesh-event-producer-guide/image047.png)
+    ![Graphical user interface Description automatically generated](../../media/mesh-event-producer-guide/image047.png)
 
 ## Deleting templates
 
 1. Go to the **Manage Events** page.
 
 2. Click the **Templates** tab.\
-    ![Graphical user interface, application Description automatically
-    generated](../../media/mesh-event-producer-guide/image048.png)
+    ![Graphical user interface, application Description automatically generated](../../media/mesh-event-producer-guide/image048.png)
 
 3. In the Template list, select the template you want to delete, and
     then click its Trash Can icon. This deletes the template for you and
     everyone in your world.
-
-## Considerations before starting your event
-
-#### Customize before the event
-
-To ensure the event runs smoothly, ensure that you customize the event
-at least one hour before the event should start.
-
-
-#### Provision Multiple Rooms before the Event
-
-If you've chosen a Multiple rooms event, ensure that you've provisioned
-your Multiple Rooms event at least 30 minutes before the event start
-time.
-
-*Provisioning is necessary to enable broadcasting between rooms as the
-event host.*
-
-See the [Provision Multiple Rooms event](#provision-multiple-rooms-before-the-event) section for more
-info.
-
 
    > [!div class="nextstepaction"]
    > [Customize your event](produce-event.md)

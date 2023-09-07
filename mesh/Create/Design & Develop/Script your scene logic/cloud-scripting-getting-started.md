@@ -24,7 +24,7 @@ This article will help you configure your development environment and start iter
 ## Software dependencies
 
 1. [.NET 6.0 SDK Windows](https://dotnet.microsoft.com/en-us/download)
-1. [Unity 2021.3.21f1](https://unity3d.com/get-unity/download/archive)
+1. [Unity 2022.3.7f1+](https://unity.com/releases/editor/whats-new/2022.3.7)
 1. [Azure CLI 2.40.0](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 ## Create a Scene with a C# MeshApp application
@@ -296,3 +296,12 @@ If you need to use the CLI tool directly, it can be found in your Unity project 
 |   |   |   |
 
 To get help with any of the commands, enter the command followed by `-h`. For example: `meshapp publish -h`.
+
+
+## Next steps
+
+   > [!div class="nextstepaction"]
+   > [Cloud scripting basic concepts](cloud-scripting-basic-concepts.md)
+
+   > [!div class="nextstepaction"]
+   > [Cloud Scripting Troubleshooting](cloud-scripting-troubleshooting.md)
