@@ -806,10 +806,66 @@ give it the teleport behavior.
 
 In the **Teleport Button Behavior** group, the logic is similar to what you saw in Chapter 3.1: "If the button is selected, do something." We don't need to anything further to this group. We're going to make our changes to the second group, **Teleport to OpenPlatform**.
 
+< TBD >
+
+1. Create a new empty GameObject as a child object to **TravelGroup** and then rename it "TeleportLocationWindTurbine".
+
+    ![A screen shot](../../media/sample-mesh-101/311-teleport-location.png)
+
+1. In the **Inspector**, in the **Transform** component, enter the following values:
+
+    Position: X = 6, Y = 58, Z =61
+    Rotation: X = 0, Y = -270, Z = 0
+
+1. Click the **Add Component button and then search for and add the *Travel Point* script.
+1. Make the "TeleportLocationWindTurbine" GameObject inactive by deselecting the check box next to its name. If you have more than one TravePoint object active at runtime, the system won't spawn the avatar correctly.
+
+### Create a Travel Point and add a reference to it
+
+1. Click the **Add Component** button and add the *Travel Point* component.
+1. In the script graph, go to the **Blackboard** and then select the **Object** tab.
+1. Create a new Object variable named "TeleportLocationWindTurbine."
+1. For the variable **Type**, select *GameObject."
+1. For the **Value**, select the "TeleportLocationWindTurbine" GameObject.
+
+    ![A screen shot](../../media/sample-mesh-101/312-var-for-teleporting.png)
+
+1. Drag the new "TeleportLocationWindTurbine" variable to the graph to add it as a node.
+
+    ![A screen shot](../../media/sample-mesh-101/313-add-node.png)
+
+1. Connect the "True" outport control port of the "If" node to a new "Game Object: Set Active" node.
+
+    ![A screen shot](../../media/sample-mesh-101/314-set-active-node.png)
+
+1. Connect the output data port of the *TeleportLocationWindTurbine* node to the first available input data port of the new "Get Object: Set Active" node.
+
+    ![A screen shot](../../media/sample-mesh-101/315-connect-to-set-active.png)
+
+1. Click the **Value** check box in the "Game Object: Set Active" node to set its value to "true."
+1. Connect the output control port of the "Game Object: Set Active" node to a new "Travel Point: Travel to Point" node.
+
+    ![A screen shot](../../media/sample-mesh-101/316-travelpoint-node.png)
+
+1. Connect the output data point of the "TeleportLocationWindTurbine" node to the available data input port on the "Travel Point: Travel to Point" node.
+
+    ![A screen shot](../../media/sample-mesh-101/317-connect-from-wind-turbine.png)
+
+1. Connect the output control port of the "Travel Point: Travel to Point" node to the input control port of the "Set Object Variable" node located on the far right of the graph.
+
+    ![A screen shot](../../media/sample-mesh-101/318-connect-to-teleportnow.png)
+
+## Test your work
+
+1. Save the project and then press the Unity Editor Play button.
 
 
 
 
+
+
+
+==========
 
 **Teleport up to the wind turbine generator**
 
@@ -840,68 +896,21 @@ In the **Teleport Button Behavior** group, the logic is similar to what you saw 
 
 4. Press the Unity Editor Play button to exit Play mode.
 
-> **Add the code to show the generator**
-
-1. Copy the following code to the Windows Clipboard:
-
-    ```csharp
-    // When the button is clicked find the ClippingSphereAnimator.
-    
-    var animator = scene.FindFirstChild<ClippingSphereAnimator>(true);
-    
-    if (animator != null)
-    
-    {
-    
-    // If the animator is currently idle or scaling out then start the scale
-    in animation and update the button text.
-    
-    if (animator.CurrentBaseLayerState ==
-    ClippingSphereAnimator.BaseLayerState.Idle ||
-    
-    animator.CurrentBaseLayerState ==
-    ClippingSphereAnimator.BaseLayerState.ClippingSphereScaleOut)
-    
-    {
-    
-    animator.CurrentBaseLayerState =
-    ClippingSphereAnimator.BaseLayerState.ClippingSphereScaleIn;
-    
-    showGeneratorButton.LabelText = "Hide Generator";
-    
-    }
-    
-    else // Else start the scale out animation and update the button text.
-    
-    {
-    
-    animator.CurrentBaseLayerState =
-    ClippingSphereAnimator.BaseLayerState.ClippingSphereScaleOut;
-    
-    showGeneratorButton.LabelText = "Show Generator";
-    
-    }
-    
-    }
-    ```
+> **Teleport up to the wind turbine generator**
 
 
-2. In your code editor, go to the *App.cs* file. You should already be at the section named *Chapter 3.3*.
+![A screenshot](../../media/sample-mesh-101/319-teleport-button.jpg)
 
-3. Paste the code you just copied between the braces for the **ShowGeneratorButton.Clicked** statement lambda, replacing the
-    "Paste code here" comment, and then save the file.
+1. In the Unity Editor, save the project and then press the Unity Editor Play button.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image057.jpg)
+1. Go to Station 3.3 and then click the "Teleport" button to teleport up to the wind turbine generator.
 
-4. In the Unity Editor, save the project and then press the Unity Editor Play button.
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image055.jpg)
 
-5. Go to Station 3.3 and then teleport up to the wind turbine generator.
+1. In the **3.3 -- Generator** information box, select the **Show/Hide
+    Generator** button. A window opens up in the side of the wind turbine and you can see the generator inside.
 
-6. In the **3.3 -- Generator** information box, select the **Show/Hide
-    Generator** button. This time, the ClippingSphere animation works,
-    the window opens up, and you can see the wind turbine's generator.
-
-    ![A computer screen shot of a machine Description automatically generated with medium confidence](../../media/sample-mesh-101/image058.jpg)
+    ![A computer screen shot of a machine Description automatically generated with medium confidence](../../media/sample-mesh-101/image057.jpg)
 
     Feel free to step up close to the generator and have a look. It's pretty
     cool! When you've finished, navigate back out and then press the
@@ -932,13 +941,13 @@ contains the stations for Chapter 4. To get there:
 
 ## Summary
 
-In this chapter you added Mesh features that empower participants in
+In this chapter, you used Mesh Visual Scripting to add features that empower participants in
 your experience to do the following:
 
 1. Press a button that causes an educational video about wind turbines
     to play.
 
-2. Step onto a platform that triggers the display of an info dialog
+2. Press a button that triggers the display of an info dialog
     about wind turbines.
 
 3. Press a button that teleports the participant from the ground up to
