@@ -89,7 +89,7 @@ The tutorial is structured as follows:
   - [Chapter 6: Share your Mesh experience with others](#chapter-6-share-your-mesh-experience-with-others)
     - [Create an event](#create-an-event)
     - [Summary](#summary-1)
-- [Conclusion](#conclusion)
+  - [Conclusion](#conclusion)
 
 ## Terminology
 
@@ -249,18 +249,17 @@ package. To learn more about this, see our article titled *Download the Mesh Too
 
     ![A screen shot of a computer Description automatically generated with low confidence](../../media/sample-mesh-101/image011.png)
 
-    In the **Scene** window, the letter "T" appears over every object that
-    contains Text Mesh Pro. You can turn these off to achieve a less
-    cluttered view. To do so:
+In the **Scene** window, the letter "T" appears over every object that
+is using `TextMeshPro`. You can turn these off to achieve a less cluttered
+view. To do so:
 
-4. In the toolbar above the upper right corner of the **Scene** window,
+1. In the toolbar above the upper right corner of the **Scene** window,
     select the Gizmos drop-down.
-
-5. In the **Scripts** section, scroll down to **TextMeshPro**, and then
+2. In the **Scripts** section, scroll down to **TextMeshPro**, and then
     select its **icon** toggle button. This turns off the display of
     "T"s in the **Scene** window.
 
-    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image012.png)
+    ![Screenshot of TextMeshPro icon under gizmos](../../media/sample-mesh-101/image012.png)
 
 ### About the Scenes
 
@@ -313,13 +312,12 @@ you to easily get a first impression of a multi-user scenario.
 
     ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image017.jpg)
 
-    Note that this adds the **PlaymodeSetup [ NoUpload]** prefab to the
+    Note that this adds the **PlaymodeSetup [NoUpload]** prefab to the
     scene.
 
-    ![A screenshot of a computer Description automatically generated with
-    medium confidence](../../media/sample-mesh-101/image018.jpg)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image018.jpg)
 
-    This prefab provides you with a highly stylized avatar that has a camera attached, so now we can play the project and have a look around.
+    This prefab provides you with a highly stylized avatar controller that has a camera attached, so now we can play the project and have a look around.
 
     ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../media/sample-mesh-101/016-playmode-v2.png)
 
@@ -336,12 +334,12 @@ you to easily get a first impression of a multi-user scenario.
 The tutorial project uses default Unity scale values: 1 unit = 1 meter.
 The *PlaymodeSetup* avatar is the same height as an average human. When
 you're creating your own Environment, you can compare its size to any
-custom GameObjects you add to your project to ensure that those objects
+custom `GameObject` you add to your project to ensure that those objects
 are the size you want.
 
 ### Add the Mesh Thumbnail Camera
 
-Adding the Mesh Thumbnail Camera provides a thumbnail image that will be
+Adding the `Mesh Thumbnail Camera` provides a thumbnail image that will be
 added to your Environment's listing in the Azure Portal and its
 selection button in the Mesh app. This comes in handy when you're
 selecting Environments in either place because it gives you a visual
@@ -1359,7 +1357,7 @@ turbines.
 
 ![A person looking at a group of people Description automatically generated](../../media/sample-mesh-101/image108.jpg)
 
-# Conclusion
+## Conclusion
 
 Congratulations! Now that you've learned some of the basics of Mesh, you
 can create a Unity project using your own 3D assets and build a
