@@ -105,8 +105,7 @@ Unity supports three IDEs: VS, VS Code, and JetBrains Rider. We
 recommend Visual Studio, but other supported IDEs will work. You'll be
 using this for Mesh Scripting.
 
-**IMPORTANT**: Mesh Scripting requires Visual Studio *2022*, but Unity
-2021.3.21f1 installs with Visual Studio *2019* by default. If you're
+**IMPORTANT**: Mesh Scripting requires Visual Studio *2022*, but certain versions of Unity install with Visual Studio *2019* by default. If you're
 using Visual Studio, make sure you have version 2022 installed. To learn
 more, see the [Unity documentation](https://learn.unity.com/tutorial/get-started-with-visual-studio-and-unity).
 
@@ -130,10 +129,10 @@ be enabled for your work account:
     resource owner should make one for you.
 
 2. **Content Contributor role.** Your Azure Admin or Mesh world owner
-    must add your work account as a content contributor for each Mesh
-    world you want to upload a template to.
+    must add your work account as a Content Contributor for each Mesh
+    world you want to upload an Environment to.
 
-For more information, see our document titled *Custom Worlds -- IT
+For more information, see our  IT
 Admin Guide*.
 
 ## Chapter 1: Set things up for Mesh
@@ -163,8 +162,8 @@ The Mesh Toolkit contains the *Mesh 101* tutorial project.
     ![A screenshot of a video game Description automatically generated](../../media/sample-mesh-101/image004.jpg)
 
 3. On the **Files and Packages** page, download the latest version of
-    the Mesh Toolkit (select the three-dot button and then select
-    **Download**).
+    the Mesh Toolkit (it may be more recent than what you see here). Select the three-dot button and then select
+    **Download**.
 
     ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image005.jpg)
 
@@ -231,8 +230,7 @@ Mesh Toolkit 23.x 
 For this tutorial, you don't need to install any packages---they're
 already pre-loaded into the tutorial project. If you were creating your
 own project from scratch, you would need to install the Mesh Toolkit
-package. To learn more about this, see our document titled *Get Started
-with Mesh Environments*.
+package. To learn more about this, see our article titled *Download the Mesh Tookit*.
 
 ## Chapter 2: Prepare the tutorial project 
 
@@ -285,18 +283,18 @@ the scene's contents. If we zoom out a little, we can see that there are
 a number of wind turbines in our wind farm. Those two white rounded
 items at the bottom of the window are called *Sphere Terraces*.
 
-![A screenshot of a computer Description ](../../media/sample-mesh-101/image014.jpg)
+![A screenshot of a computer Description ](../../media/sample-mesh-101/image013.jpg)
 
 If you navigate to the front of the Sphere Terraces and take a closer
 look, you can see that each Sphere Terrace contains a space inside that
 you'll soon be walking around in.
 
-![A screenshot of a computer Description ](../../media/sample-mesh-101/013-sphere-terraces-v2.png)
+![A screenshot of a computer Description ](../../media/sample-mesh-101/013-sphere-terrace-v2.png)
 
 You'll be visiting the Sphere Terraces starting in the next
 chapter---they each contain a series of stations where you'll learn how
 to implement Mesh features. The first Sphere Terrace (covered in Chapter
-3) is where you'll learn about Mesh Scripting ...
+3) is where you'll learn about Mesh Visual Scripting ...
 
 ![A screenshot of a video game Description ](../../media/sample-mesh-101/014-chapter-3-sphere-terrace-v2.png)
 
@@ -315,17 +313,17 @@ you to easily get a first impression of a multi-user scenario.
 
 1. Right-click inside the **Hierarchy** and then, in the context menu, select **Mesh Toolkit** > **PlaymodeSetup**.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image018.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image017.jpg)
 
     Note that this adds the **PlaymodeSetup [ NoUpload]** prefab to the
     scene.
 
     ![A screenshot of a computer Description automatically generated with
-    medium confidence](../../media/sample-mesh-101/image019.jpg)
+    medium confidence](../../media/sample-mesh-101/image018.jpg)
 
     This prefab provides you with a highly stylized avatar that has a camera attached, so now we can play the project and have a look around.
 
-    ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../media/sample-mesh-101/016-playmode-v2.png     )
+    ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../media/sample-mesh-101/016-playmode-v2.png)
 
 2. Select the Unity Editor Play button.
 
@@ -374,15 +372,15 @@ There are no set rules for how your thumbnail should look---it's totally
 up to you. For the example below, we chose a close-up front view of a
 wind turbine.
 
-![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/imag021.jpg)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image020.jpg)
 
-## Chapter 3: Add interactivity with Mesh Scripting
+## Chapter 3: Add interactivity with Mesh Visual Scripting
 
 Now that we've completed the setup phase, let's move on to making your GameObjects interactive! In this chapter, we'll dive into Mesh Visual Scripting, which you can use to add custom logic to your Environment. 
 
 > [!NOTE]
 > - There are two types of Mesh Scripting: Mesh Cloud Scripting, which uses C# code, and Mesh Visual Scripting, where you create a Script Graph and then add nodes (also called *units*) in a sequence to create your coding logic. This version of the Mesh 101 tutorial uses Mesh Visual Scripting; the previous version used Mesh Cloud Scripting. 
-
+>
 > - Mesh Scripting isn't required for every Environment, but you'll need it for the features we'll be adding here: making a button interactive, triggering an informational text popup, and teleporting around the scene.
 
 ### Choose the NavMesh layer 
@@ -403,7 +401,7 @@ add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
 3. In the **Inspector**, select the **Layer** drop-down and then choose
     **NavMesh**.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image026.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image025.jpg)
 
 You don't have to add the other walkable GameObjects to the NavMesh
 layer---we've already done it for you.
@@ -430,7 +428,7 @@ and off and change the button text.
 
 1. In Unity, make sure the GameObject named **Chapter3** and its child object named **3.1 - Video** are expanded.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/031-chapter3-expanded-v2.png)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/031-chapter-3-expanded-v2.png)
 
 2. Search for the **ButtonBase** prefab.
 
@@ -440,7 +438,7 @@ and off and change the button text.
     **Hierarchy**, drop it on the GameObject named **3.1 -- Video** so
     that **ButtonBase** is placed as a child to **3.1 -- Video**.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image038.png)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image038.jpg)
 
     Make sure the **Transform** > **Position** values for **ButtonBase** are 0, 0, 0.
 
@@ -457,14 +455,14 @@ Let's fix that.
 
 Perfect! Now **ButtonBase** is correctly located just in front of the **BackplateBase** object.
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/.034-buttonbase-correct-v2.png)
+![A screenshot of a video play Description ](../../media/sample-mesh-101/034-buttonbase-correct-v2.png)
 
 **Rename the button**
 
 - With **ButtonBase** selected, in the **Inspector**, change the name
     of **ButtonBase** to "PlayVideoButton".
 
-    ![A screenshot of a computer Description ](../../media/sample-mesh-101/035-playvideobutton-v2.png)
+    ![A screenshot of a computer Description ](../../media/sample-mesh-101/035-playvideo-button-v2.png)
 
 **Change the label of the button**
 
@@ -475,13 +473,13 @@ Right now, the text on the button says "Label." Let's change that to
     display its child objects, and then select the **Label** child
     object.
 
-    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image043.png)
+    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image042.png)
 
 2. In the **Inspector**, navigate to the **TextMeshPro -- Text**
     component, and then, in the **Text Input** box, change the text to
     "Play."
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/036-playlabel-v2.png)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/036-play-label-v2.png)
 
 ## Create the Visual Script for the button
 
@@ -492,7 +490,7 @@ Before we add our first visual script, in the **Hierarchy**, collapse **PlayVide
 1. In the **Hierarchy**, select **VideoPlayer**.
 1. In the **Inspector**, click **Add Component**, and then select **Script Machine**.
 
-Note that two new components have been added in the **Inspector**: **Script Machine** and **Variables.** There's also a new window named *Mesh Visual Scripting Diagnostics* at the bottom of the **Inspector**. This will give you feedback on your visual script and can be useful for troubleshooting.
+Note that two new components have been added in the **Inspector**: **Script Machine** and **Variables.** There's also a new window named *Mesh Visual Scripting Diagnostics* at the bottom of the **Inspector**. This window will give you feedback on your visual script and can be useful for troubleshooting.
 
 ![A screenshot of a video play Description ](../../media/sample-mesh-101/201-script-machine-v2.png)
 
@@ -513,26 +511,26 @@ We'll be using these as starting points for the other two features in this chapt
 
 ## Putting the script graph together
 
-1. In the **Script Machine** component, click **Edit Graph**. This opens the **Script Graph** window. Dock it next to the **Project** and **Console** tab so that we can see the script graph and **Scene** window at the same time. As we add nodes, you may want more space in the window; you can click the three-dot button and then select **Maximize** for achieve this.
+1. In the **Script Machine** component, click **Edit Graph**. This opens the **Script Graph** window. Dock it next to the **Project** and **Console** tab so that we can see the script graph and **Scene** window at the same time. As we add nodes, you may want more space in the window; you can click the three-dot button and then select **Maximize** for achieve this, or click the **Full Screen** button in the upper right corner of the window.
 
 ![A screenshot of a video play Description ](../../media/sample-mesh-101/203-script-graph-maximized-v2.png)
 
-1. Delete the **OnStart** and **OnUpdate** events.
+1. We don't need the **OnStart** and **OnUpdate** events; delete them.
 
 ### Get a reference to the PlayVideoButton GameObject
 
 1. In the **Blackboard** section of the **Script Graph**, select the **Object** tab.
 1. Enter the variable name "PlayVideo" in the text box and then press the Enter key or click the + button.
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/204-playvideo-variable-v2.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/204-playvideo-variable-v2.png)
 
-1. Click the **Type*** drop-down and then select **Game Object**.
+1. Click the **Type** drop-down for the variable and then select **Game Object**.
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/205-type-gameobject-v2.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/205-type-gameobject-v2.png)
 
 1. Click the circle button next to **Value** and then, in the **Select GameObject** window, search for and select **PlayVideoButton**.
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/206-value-playvideobutton-v2.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/206-value-playvideobutton-v2.png)
 
 ### Add your new variable to the graph
 
@@ -544,69 +542,79 @@ We'll be using these as starting points for the other two features in this chapt
 ![A screenshot of a video play Description ](../../media/sample-mesh-101/207-drag-variable-v2.png)
 
 > [!TIP]
-> About VideoPlayerButton
-You may want to take a moment here to examine some of the components for the PlayVideoButton GameObject:
-- *Mesh Interactable Properties*: This makes *PlayVideoButton* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named *Mesh Object and Avator Interaction*.
-- **Script Machine**: This has a script graph named *Button Base Behaviour.*
+> You may want to take a moment here to examine some of the components for the PlayVideoButton GameObject:
+>- *Mesh Interactable Properties*: This makes *PlayVideoButton* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named *Mesh Object and Avator Interactions*.
+>- **Script Machine**: This has a script graph named *Button Base Behaviour.*
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/208-playvideobutton-components-v2.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/208-playvideobutton-components-v2.png)
 
 If you go into Play mode, you'll see that a new component named **Mesh Interactable Body** is added to **PlayVideoButton**.
 
 ![A screenshot of a video play Description ](../../media/sample-mesh-101/209-body-v2.png)
 
-< Make reference to this object type to get its behavior.>
+This component is added automatically at runtime to interactable bodies; it exposes various properties to Visual Scripting such as *IsHovered* and *IsSelected*, which will come in handy in a moment.
 
 Back in the script graph, we'll add a node that lets us know when the button is selected.
 
 1. Click and hold on the outport port of the **PlayVideo** variable, and then release the mouse button. This opens the Fuzzy Finder.
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/210-add-body-node-v2.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/210-add-body-node-v2.png)
 
-1. Search for "Mesh Interactable Body," click it, and then select "Is Selected." **Note**: This generates a Boolean value.
+1. Search for "Mesh Interactable Body," click it, and then select "Is Selected." **Note**: This generates a Boolean value; you can confirm this in the **Graph Inspector**.
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/211-is-selected-node-v2.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/211-is-selected-node-v2.png)
+
+> [!TIP]
+> The Graph Inspector can help you to better understand the makeup of all your nodes.
+>
+>![A screenshot of a video play Description ](../../media/sample-mesh-101/215-graph-inspector-v2.png)
+
+### Triggering the button
 
 At this point, nothing is triggering the button yet. We need to add a node that ensures that every time the button is selected, the visual script runs.
 
-1. Add the "On State Changed" node to the "Is Selected" node.
+1. Connect the output port of the "Is Selected" node to a new node that you create called "Microsoft Mesh: On State Changed." (In the Fuzzy Finder, search for "on state changed.")
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/212-on-state-changed-v2.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/212-on-state-changed-v2.png)
 
 In addition to knowing when the button is selected, we also want to be able to set the player mode. 
 
-1. On the output control port of the "On State Changed" node, add the "if" node as show below. Note that it points to "True."
+1. Connect the output control port of the "On State Changed" node to the "True" input control port of a new "If" node that you create.
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/213-if-node-v2.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/213-if-node-v2.png)
 
-1. Connect the second output port of "On State Changed" to the second input port of "If". Note that this points to the "False" value.
+1. Connect the second output port of "On State Changed" to the second input port of the "If" node. Note that this points to the "False" value.
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/214-if-node-false-v2.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/214-if-node-false-v2.png)
 
-> [!TIP]
-> The Graph Inspector can help you to better understand the activity of your nodes.
-
-![A screenshot of a video play Description ](../../media/sample-mesh-101/215-graph-inspector-v2.png)
-
-If the button is selected, set a variable to let you know it's selected.
+### Set a variable to let you know if the button is selected.
 
 1. Add a "Set Object Variable" node to the "True" output port of the "If" node.
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/216-set-object-variable-v2.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/216-set-object-variable-v2.png)
 
-1. In the **Blackboard**, go to the **Object** tab, and then create a variable named "isPlaying." The type should be "Boolean" and the value is false (the default).
+1. In the **Blackboard**, go to the **Object** tab, and then create a variable named "isPlaying." Make the **Type** "Boolean" and the value false (the default).
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/217-isplaying-var-v2.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/217-isplaying-var-v2.png)
 
 1. In the **Set Object Variable" node, click the variable name drop-down and then select "isPlaying."
 
 ![A screenshot of a video play Description ](../../media/sample-mesh-101/218-select-isplaying-v2.png)
 
+1. Drag the the "isPlaying" variable from the **Blackboard** to the graph to create a new "Get Object Variable" node.
+
+![A screenshot of a video play Description ](../../media/sample-mesh-101/325-get-var-node.png)
+
+1. Connect the outport port of the "Get Object Variable" node to a new node you create called "Negate*.
+1. Connect the output port of the "Negate" node to the bottom input port of the "Set Variable Object" node.
+
+![A screenshot of a video play Description ](../../media/sample-mesh-101/326-negate-connected.png)
+
 If the video is playing, set to true. If it's not playing, set to false. The "Negate" node negates whatever the value of "IsPlaying" is.
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/219-negate-v2.png)
+All the nodes you just added basically do one thing: tell you when the button is pressed.
 
-All the nodes you added basically do one thing: tell you when the button is pressed.
+### Create a group for the nodes
 
 1. Ctrl-drag over the nodes to add them to a group.
 
@@ -616,29 +624,31 @@ All the nodes you added basically do one thing: tell you when the button is pres
 
 ## Define the Play action
 
-The play logic we've been using is to enable and disable GameObjects. 
-Note that there are two main objects in this scenario: "Video" and "VideoStill."
+In the following steps, we enable and disable two GameObjects: "Video" and "VideoStill." 
+
 When we want the video to play, we invoke "Video." It has an animation attached.
-When we want the video to stop and just have the screen show an image, we invoke "VideoStill."
+
+When we want the video to stop and just have the video screen show an image, we invoke "VideoStill."
 
 We want this flow to be triggered every time the value of "isPlaying" changes.
 
 1. In the portion of the graph below the "Check Button Press" group, add the "isPlaying" variable.
-1. Attach the "On State Changed" node to "isPlaying."
+1. Attach a new "On State Changed" node to "isPlaying."
 
 ![A screenshot ](../../media/sample-mesh-101/221-two-nodes-v2.png)
 
-Determine if the state changed or not with an "If" node.
+### Play the video when the Play button is pressed
 
-**To set things up so that the video plays if the Play button is pressed**:
+1. Connect the control output port of the "On State Changed" node to the "True" input port of a new "If" node that you create.
+1. Connect the remaining output port of the "On State Changed" node to the "False" input port of the "If" node.
 
 ![A screenshot ](../../media/sample-mesh-101/222-if-node-v2.png)
 
-1. Attach the "True" output control of the "If" node to the control input port of a new "Game Object: Set Active" node.  
+1. Attach the "True" output control of the "If" node to the control input port of a new "Game Object: Set Active" node that you create.  
 
 ![A screenshot ](../../media/sample-mesh-101/224-set-active-v2.png)
 
-If true (in other words, if the button has been pressed and the video is in Play mode), we want the video to play, so let's set it up as follows:
+If true (in other words, if the button has been pressed), we want the video to play, so let's set it up as follows:
 
 1. Create two new Object variables as shown here:
 
@@ -652,13 +662,19 @@ We want the "Video" GameObject to be active because it has the video animation a
 
 ![A screenshot ](../../media/sample-mesh-101/226-set-active-to-video-v2.png)
 
-Simultaneously, if the "If" node's value is true, we set the "VideoStill" GameObject to inactive. (Note that in the "Set Active" node attached to "VideoStill", **Value** is *not* selected.)
+Simultaneously, if the "If" node's value is true, we set the "VideoStill" GameObject to inactive.
+
+1. Add a new "Game Object: Set Active" node to the graph.
+1. Connect the output port of the first "Get Object: Set Active" node to the input control port of the new "Game Object: Set Active" node.
+1. Connect the output of the "VideoStill" node to the next available input port of the second "Game Object: Set Active" node.
+
+ (Note that in the "Set Active" node attached to "VideoStill", **Value** is *not* selected.)
 
 ![A screenshot ](../../media/sample-mesh-101/227-set-videostill-inactive-v2.png)
 
-**To stop the video if the Play button is pressed while the video is play**:
+### Stop the video if the Play button (now labeled the "Stop" button) is pressed while the video is playing
 
-This is similar to what we did, but in reverse: if the "If" node is false, we make the "VideoStill" GameObject the active object.
+This is similar to what we just did, but in reverse: if the "If" node is false, we make the "VideoStill" GameObject the active object.
 
 1. Select the four nodes that follow the "If" node.
 
@@ -673,16 +689,16 @@ This is similar to what we did, but in reverse: if the "If" node is false, we ma
 
 ![A screenshot ](../../media/sample-mesh-101/230-if-is-false-v2.png)
 
-1. In the first "Game Object: Set Active" node, deselect "Value."
-1. In the second "Game Object: Set Active" node, select "Value."
+1. In the first "Game Object: Set Active" node of the duplicate set, deselect "Value."
+1. In the second "Game Object: Set Active" node of the duplicate set, select "Value."
 
 ![A screenshot ](../../media/sample-mesh-101/231-reverse-conditions-v2.png)
 
 ## Changing the button label
 
-1. In the **Blackboard**, go to the **Object** tab, and then create a variable named "VideoPlayerButtonlabel." The type should be TM Pro / "TextMeshPro".
+1. In the **Blackboard**, go to the **Object** tab, and then create a variable named "VideoPlayerButtonLabel." The type should be TM Pro / "TextMeshPro".
 
-For the Value, you need to add the "Label" GameObject that's a child to the "PlayVideoButton" GameObject. If you click the round button next to the Value field, the popup menu shows many GameObjects named "Label" and it's unclear which one you should choose. Here's a better way to ensure you're making the right choice:
+For the Value, you need to add the "Label" GameObject that's a child to the "PlayVideoButton" GameObject. If you click the round button next to the **Value** field, the popup menu shows many GameObjects named "Label" and it's unclear which one you should choose. Here's a better way to ensure you're making the right choice:
 
 1. In the **Hierarchy**, navigate to **Chapter 3** > **3.1 - Video** > **PlayVideoButton** > **Label.**
 1. Drag this **Label** GameObject from the **Hierarchy** and drop it in the **Value** field of your new variable.
