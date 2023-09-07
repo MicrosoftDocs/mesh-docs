@@ -20,6 +20,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
     * If you’re on a Bluetooth headset, in Teams **Audio Settings**, update the Microphone setting to use laptop Mic instead.
     >[!Note]
     >The most used Bluetooth audio profiles are **Stereo (recv-only)** and **Mono (send+recv)**. Using laptop mic allows the headphones to use the former mode.
+
     ![A screenshot of the Device settings menu](media/device-settings-menu.png)
 1. **Dropped audio when switching environments**: When you join the immersive space or switch environments, your audio may temporarily drop. 
 1. **Background noise cancelation**: Spatial Audio background noise cancellation is currently limited. You may experience audio quality inconsistency and/or artifacts when inside the immersive space. 
