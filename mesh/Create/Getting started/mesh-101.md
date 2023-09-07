@@ -503,7 +503,7 @@ Note that there are already two existing assets: **SPShowInfoDialog.asset** and 
 
 ![A screenshot of a video play Description ](../../media/sample-mesh-101/202-assets-v2.png)
 
-We'll be using these as starting points for the other two features in this chapter. For the feature we're working on right, the interactable button, we'll create a new script graph.
+We'll be using these as starting points for the other two features in this chapter. For the feature we're working on right now, the interactable button, we'll create a new script graph.
 
 1. In the **File name** box, enter "SPVideoPlayerBehavior" and then click the **Save** button.
 1. In the **Script Machine** component, enter a name in the *Title* field for the graph: "Video Player Behavior." 
@@ -541,10 +541,11 @@ We'll be using these as starting points for the other two features in this chapt
 
 ![A screenshot of a video play Description ](../../media/sample-mesh-101/207-drag-variable-v2.png)
 
-> [!TIP]
-> You may want to take a moment here to examine some of the components for the PlayVideoButton GameObject:
->- *Mesh Interactable Properties*: This makes *PlayVideoButton* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named *Mesh Object and Avator Interactions*.
->- **Script Machine**: This has a script graph named *Button Base Behaviour.*
+**TIP**: You may want to take a moment here to examine some of the components for the PlayVideoButton GameObject:
+
+- *Mesh Interactable Properties*: This makes *PlayVideoButton* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named *Mesh Object and Avator Interactions*.
+
+- *Script Machine*: This has a script graph named *Button Base Behaviour.*
 
     ![A screenshot of a video play Description ](../../media/sample-mesh-101/208-playvideobutton-components-v2.png)
 
@@ -603,12 +604,12 @@ In addition to knowing when the button is selected, we also want to be able to s
 
 1. Drag the the "isPlaying" variable from the **Blackboard** to the graph to create a new "Get Object Variable" node.
 
-    [A screenshot of a video play Description ](../../media/sample-mesh-101/325-get-var-node.png)
+    ![A screenshot](../../media/sample-mesh-101/325-get-var-node.png)
 
 1. Connect the outport port of the "Get Object Variable" node to a new node you create called "Negate*.
 1. Connect the output port of the "Negate" node to the bottom input port of the "Set Variable Object" node.
 
-    [A screenshot of a video play Description ](../../media/sample-mesh-101/326-negate-connected.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/326-negate-connected.png)
 
 If the video is playing, set to true. If it's not playing, set to false. The "Negate" node negates whatever the value of "IsPlaying" is.
 
@@ -642,7 +643,7 @@ We want this flow to be triggered every time the value of "isPlaying" changes.
 1. Connect the control output port of the "On State Changed" node to the "True" input port of a new "If" node that you create.
 1. Connect the remaining output port of the "On State Changed" node to the "False" input port of the "If" node.
 
-    [A screenshot ](../../media/sample-mesh-101/222-if-node-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/222-if-node-v2.png)
 
 1. Attach the "True" output control of the "If" node to the control input port of a new "Game Object: Set Active" node that you create.  
 
@@ -652,7 +653,7 @@ If true (in other words, if the button has been pressed), we want the video to p
 
 1. Create two new Object variables as shown here:
 
-    [A screenshot ](../../media/sample-mesh-101/223-two-variables-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/223-two-variables-v2.png)
 
 1. Add the two new variables to the graph.
 
@@ -768,7 +769,7 @@ Did you know that the world's largest wind turbine has blades longer than a foot
 
 This is the message that will appear in the info dialog.
 
-    ![A screen shot showing Show Dialog node with a message added.](../../media/sample-mesh-101/304-show-dialog-message.png)
+![A screen shot showing Show Dialog node with a message added.](../../media/sample-mesh-101/304-show-dialog-message.png)
 
 1. Select the drop-down that currently displays **OK**, and then, in the popup list, deselect **OK** and select **Continue**. This will add a "Continue" button to the info dialog that the user can click to close the dialog and continue in the experience.
 
@@ -1216,7 +1217,7 @@ World you're uploading the Environment to.
 7. You'll receive a confirmation dialogue as shown below. Select
     **Close**.
 
-    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image092.jpg)
+    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image092.png)
 
 ## Build and publish your environment
 
@@ -1267,7 +1268,7 @@ for both PC and Android, so make sure that both buttons are "on."
 
 - Select the **Build and Publish** button.
 
-    ![A screen shot of a computer Description ](../../media/sample-mesh-101/image097.png)
+    ![A screen shot of a computer Description ](../../media/sample-mesh-101/image097.jpg)
 
 - If the Environment builds and uploads successfully, the **Build and
     Upload Results** dialog appears and confirms the results.
@@ -1289,7 +1290,7 @@ If you navigate to the **Environments** page for your World in the Azure
 Portal, you'll see that your Environment has been saved there. Its type
 will be listed as "Custom Environment."
 
-![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image100.png)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image100.jpg)
 
 Your saved custom Environment will be available to anyone who creates a
 new event in that Mesh world.
@@ -1330,7 +1331,7 @@ automatically generated](../../media/sample-mesh-101/image103.png)
 
 3. In your Mesh World, select the **Manage** button.
 
-    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image103.jpg)
+    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image103.png)
 
     > [!NOTE]
     > If you don't see the **Manage** button, then you aren't a Content contributor for this World.
@@ -1371,7 +1372,7 @@ Environment. Participants can join the Event and then use the Mesh
 features that you enabled in Chapters 3 and 4 to learn about wind
 turbines.
 
-![A person looking at a group of people Description automatically generated](../../media/sample-mesh-101/image108.png)
+![A person looking at a group of people Description automatically generated](../../media/sample-mesh-101/image108.jpg)
 
 # Conclusion
 
