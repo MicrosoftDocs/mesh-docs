@@ -289,14 +289,14 @@ If you navigate to the front of the Sphere Terraces and take a closer
 look, you can see that each Sphere Terrace contains a space inside that
 you'll soon be walking around in.
 
-![A screenshot of a computer Description ](../../media/sample-mesh-101/013-sphere-terrace-v2.png)
+![A screenshot of a computer Description ](../../media/sample-mesh-101/013-sphere-terraces-v2.png)
 
 You'll be visiting the Sphere Terraces starting in the next
 chapter---they each contain a series of stations where you'll learn how
 to implement Mesh features. The first Sphere Terrace (covered in Chapter
 3) is where you'll learn about Mesh Visual Scripting ...
 
-![A screenshot of a video game Description ](../../media/sample-mesh-101/014-chapter-3-sphere-terrace-v2.png)
+![A screenshot of a video game Description ](../../media/sample-mesh-101/014-chapter3-sphere-terrace-v2.png)
 
 ... and the other Sphere Terrace, covered in Chapter 4, is where you'll
 learn about Mesh Physics.
@@ -401,7 +401,7 @@ add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
 3. In the **Inspector**, select the **Layer** drop-down and then choose
     **NavMesh**.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image025.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image025.png)
 
 You don't have to add the other walkable GameObjects to the NavMesh
 layer---we've already done it for you.
@@ -599,16 +599,16 @@ In addition to knowing when the button is selected, we also want to be able to s
 
 1. In the **Set Object Variable" node, click the variable name drop-down and then select "isPlaying."
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/218-select-isplaying-v2.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/218-select-isplaying-v2.png)
 
 1. Drag the the "isPlaying" variable from the **Blackboard** to the graph to create a new "Get Object Variable" node.
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/325-get-var-node.png)
+    [A screenshot of a video play Description ](../../media/sample-mesh-101/325-get-var-node.png)
 
 1. Connect the outport port of the "Get Object Variable" node to a new node you create called "Negate*.
 1. Connect the output port of the "Negate" node to the bottom input port of the "Set Variable Object" node.
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/326-negate-connected.png)
+    [A screenshot of a video play Description ](../../media/sample-mesh-101/326-negate-connected.png)
 
 If the video is playing, set to true. If it's not playing, set to false. The "Negate" node negates whatever the value of "IsPlaying" is.
 
@@ -618,7 +618,7 @@ All the nodes you just added basically do one thing: tell you when the button is
 
 1. Ctrl-drag over the nodes to add them to a group.
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/220-group-v2.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/220-group-v2.png)
 
 1. Select the group title and then change it to "Check Button Press."
 
@@ -635,28 +635,28 @@ We want this flow to be triggered every time the value of "isPlaying" changes.
 1. In the portion of the graph below the "Check Button Press" group, add the "isPlaying" variable.
 1. Attach a new "On State Changed" node to "isPlaying."
 
-![A screenshot ](../../media/sample-mesh-101/221-two-nodes-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/221-two-nodes-v2.png)
 
 ### Play the video when the Play button is pressed
 
 1. Connect the control output port of the "On State Changed" node to the "True" input port of a new "If" node that you create.
 1. Connect the remaining output port of the "On State Changed" node to the "False" input port of the "If" node.
 
-![A screenshot ](../../media/sample-mesh-101/222-if-node-v2.png)
+    [A screenshot ](../../media/sample-mesh-101/222-if-node-v2.png)
 
 1. Attach the "True" output control of the "If" node to the control input port of a new "Game Object: Set Active" node that you create.  
 
-![A screenshot ](../../media/sample-mesh-101/224-set-active-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/224-set-active-v2.png)
 
 If true (in other words, if the button has been pressed), we want the video to play, so let's set it up as follows:
 
 1. Create two new Object variables as shown here:
 
-![A screenshot ](../../media/sample-mesh-101/223-two-variables-v2.png)
+    [A screenshot ](../../media/sample-mesh-101/223-two-variables-v2.png)
 
 1. Add the two new variables to the graph.
 
-![A screenshot ](../../media/sample-mesh-101/225-add-nodes-to-graph-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/225-add-nodes-to-graph-v2.png)
 
 We want the "Video" GameObject to be active because it has the video animation attached to it. (Note that in the "Set Active" node attached to "Video, **Value** is selected.)
 
@@ -670,7 +670,7 @@ Simultaneously, if the "If" node's value is true, we set the "VideoStill" GameOb
 
  (Note that in the "Set Active" node attached to "VideoStill", **Value** is *not* selected.)
 
-    ![A screenshot ](../../media/sample-mesh-101/227-set-videostill-inactive-v2.png)
+![A screenshot ](../../media/sample-mesh-101/227-set-videostill-inactive-v2.png)
 
 ### Stop the video if the Play button (now labeled the "Stop" button) is pressed while the video is playing
 
@@ -703,25 +703,25 @@ For the Value, you need to add the "Label" GameObject that's a child to the "Pla
 1. In the **Hierarchy**, navigate to **Chapter 3** > **3.1 - Video** > **PlayerVideoButton** > **Label.**
 1. Drag this **Label** GameObject from the **Hierarchy** and drop it in the **Value** field of your new variable.
 
-![A screenshot ](../../media/sample-mesh-101/232-label-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/232-label-v2.png)
 
 1. In the graph, drag a connection from the output control port of the second "Game Object: Set Active" node in the "if: True" sequence, and then drop it in empty space to open the Fuzzy Finder.
 
-![A screenshot](../../media/sample-mesh-101/233-fuzzy-finder-v2.png)
+    ![A screenshot](../../media/sample-mesh-101/233-fuzzy-finder-v2.png)
 
 1. Search for "set text" and then select "Text Mesh Pro: Set Text."
 
-![A screenshot ](../../media/sample-mesh-101/234-textmesh-pro-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/234-textmesh-pro-v2.png)
 
 1. Drag the "VideoPlayerButtonLabel" from the **Blackboard** and drop it in the graph to create a new node.
 1. Connect the outport port of the new "Get Object Variable" node to the next available input port on the "Text Mesh Pro: Set Text" node.
 1. In the "Text Mesh Pro: Set Text" node text field, type in "Pause."
 
-![A screenshot ](../../media/sample-mesh-101/235-label-node-v2.png)
+    ![A screenshot ](../../media/sample-mesh-101/235-label-node-v2.png)
 
 1. Repeat the steps above to create a label for the "If: False" sequence of nodes. This time, type in the label text "Play."
 
-![A screenshot ](../../media/sample-mesh-101/236-set-text-play.png)
+    ![A screenshot ](../../media/sample-mesh-101/236-set-text-play.png)
 
 ## Test your work
 
@@ -801,7 +801,7 @@ teleported from their current location at Station 3.3 to an elevated
 platform that's attached to a wind turbine generator. They can then
 examine the generator.
 
-![A picture containing outdoor, text, screenshot, windmill Description automatically generated](../../media/sample-mesh-101/307-teleport-to-turbine.png)
+![A picture containing outdoor, text, screenshot, windmill Description automatically generated](../../media/sample-mesh-101/image050.jpg)
 
 ### Update the script graph
 
@@ -1007,7 +1007,7 @@ Let's add "grab and release" capabilities to **WindTurbine1** so that participan
     needed, and then for the **Freeze Rotation** settings, select **X,**
     **Y**, and **Z**.
 
-![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image067.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image067.jpg)
 
 This will prevent the turbine moving tipping over if you place it on an
 uneven surface.
@@ -1046,7 +1046,7 @@ The idea here is that when you drag a wind turbine over the ocean, the "wind" ca
 
 1. In the **Hierarchy**, expand the **4.2 -- Animation Trigger** GameObject, and then select its child object named **Animation Trigger**.
 
-    ![A screenshot](../../media/sample-mesh-101/image071.jpg)
+    ![A screenshot](../../media/sample-mesh-101/image071.png)
 
 1. In the **Inspector**, navigate to the **Box Collider** component and then select **Edit Collider**. This shows you the boundaries of the trigger volume in the **Scene** window. When you're finished, click **Edit Collider** again to hide the boundaries.
 
@@ -1114,7 +1114,7 @@ medium confidence](../../media/sample-mesh-101/image084.png)
     GameObject and select its child object named **Containment Field**.
 
 ![A screenshot of a computer Description automatically
-generated](../../media/sample-mesh-101/image084.jpg)
+generated](../../media/sample-mesh-101/image084.png)
 
 1. In the **Inspector**, select the **Add Component** button and then
     add the **Containment Field** component.
@@ -1281,7 +1281,7 @@ for both PC and Android, so make sure that both buttons are "on."
 In the **Build and Upload Results** dialog, select the left button under
 **Published Asset**. This opens the Environment in the Mesh App.
 
-![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image99.jpg)
+![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image099.png)
 
 ## View your Environment in Azure
 
