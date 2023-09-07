@@ -26,63 +26,71 @@ Mesh Toolkit.
 
 The tutorial is structured as follows:
 
-**Chapter 1: Set things up for Mesh**
+- [Mesh 101 Tutorial](#mesh-101-tutorial)
+  - [Terminology](#terminology)
+  - [Prerequisites](#prerequisites)
+    - [Hardware requirements](#hardware-requirements)
+    - [Unity version 2022.3.7f1](#unity-version-202237f1)
+    - [Previous Unity experience](#previous-unity-experience)
+    - [Azure portal access](#azure-portal-access)
+      - [Content Contributor permissions](#content-contributor-permissions)
+  - [Chapter 1: Set things up for Mesh](#chapter-1-set-things-up-for-mesh)
+    - [Download the Mesh desktop app](#download-the-mesh-desktop-app)
+    - [Download the Mesh Toolkit](#download-the-mesh-toolkit)
+    - [The Packages](#the-packages)
+  - [Chapter 2: Prepare the tutorial project](#chapter-2-prepare-the-tutorial-project)
+    - [Scenes in the tutorial project](#scenes-in-the-tutorial-project)
+    - [About the Scenes](#about-the-scenes)
+    - [Exploring the `StartingPoint` scene](#exploring-the-startingpoint-scene)
+    - [Add the PlayModeSetup prefab](#add-the-playmodesetup-prefab)
+    - [Check the scale of your GameObjects](#check-the-scale-of-your-gameobjects)
+    - [Add the Mesh Thumbnail Camera](#add-the-mesh-thumbnail-camera)
+  - [Chapter 3: Add interactivity with Mesh Visual Scripting](#chapter-3-add-interactivity-with-mesh-visual-scripting)
+    - [Choose the NavMesh layer](#choose-the-navmesh-layer)
+    - [Station 3.1: Create an Interactable Button](#station-31-create-an-interactable-button)
+      - [Create the Visual Script for the button](#create-the-visual-script-for-the-button)
+      - [Putting the script graph together](#putting-the-script-graph-together)
+      - [Get a reference to the PlayVideoButton GameObject](#get-a-reference-to-the-playvideobutton-gameobject)
+      - [Add your new variable to the graph](#add-your-new-variable-to-the-graph)
+      - [Triggering the button](#triggering-the-button)
+      - [Set a variable to let you know if the button is selected](#set-a-variable-to-let-you-know-if-the-button-is-selected)
+      - [Create a group for the nodes](#create-a-group-for-the-nodes)
+      - [Define the Play action](#define-the-play-action)
+      - [Play the video when the Play button is pressed](#play-the-video-when-the-play-button-is-pressed)
+      - [Stop the video if the Play button (now labeled the "Stop" button) is pressed while the video is playing](#stop-the-video-if-the-play-button-now-labeled-the-stop-button-is-pressed-while-the-video-is-playing)
+      - [Changing the button label](#changing-the-button-label)
+      - [Test your work](#test-your-work)
+    - [Station 3.2: Trigger an info dialog](#station-32-trigger-an-info-dialog)
+      - [Test your work](#test-your-work-1)
+    - [Station 3.3: Teleport to the turbine generator](#station-33-teleport-to-the-turbine-generator)
+      - [Update the script graph](#update-the-script-graph)
+      - [Create a Travel Point and add a reference to it](#create-a-travel-point-and-add-a-reference-to-it)
+      - [Test your work](#test-your-work-2)
+    - [Chapter 3: Summary](#chapter-3-summary)
+  - [Chapter 4: Move objects and trigger animations with Mesh Physics](#chapter-4-move-objects-and-trigger-animations-with-mesh-physics)
+    - [Reconfigure the Hierarchy](#reconfigure-the-hierarchy)
+    - [Change the view to display the Chapter 4 Sphere Terrace](#change-the-view-to-display-the-chapter-4-sphere-terrace)
+    - [Station 4.1: Grab and Release](#station-41-grab-and-release)
+      - [Test your work](#test-your-work-3)
+    - [Station: 4.2 Animation Trigger](#station-42-animation-trigger)
+      - [Test your work](#test-your-work-4)
+    - [Station 4.3: Constraining Bodies](#station-43-constraining-bodies)
+    - [Summary](#summary)
+  - [Chapter 5: Create and upload your Environment](#chapter-5-create-and-upload-your-environment)
+    - [Create your environment](#create-your-environment)
+    - [Build and publish your environment](#build-and-publish-your-environment)
+    - [Building for single and multiple platforms](#building-for-single-and-multiple-platforms)
+    - [Create the Environment](#create-the-environment)
+    - [Build and publish your Environment](#build-and-publish-your-environment-1)
+    - [Test the PC version of your Environment](#test-the-pc-version-of-your-environment)
+    - [View your Environment in Azure](#view-your-environment-in-azure)
+    - [Summary](#summary-1)
+  - [Chapter 6: Share your Mesh experience with others](#chapter-6-share-your-mesh-experience-with-others)
+    - [Create an event](#create-an-event)
+    - [Summary](#summary-2)
+- [Conclusion](#conclusion)
 
-- Download the Mesh desktop app
-
-- Download the Mesh Toolkit
-
-**Chapter 2: Prepare the tutorial project**
-
-- Understand the two scenes
-
-- Add the PlayModeSetup prefab
-
-- Choose the NavMesh layer
-
-- Add a Thumbnail Camera
-
-**Chapter 3: Add interactivity with Mesh Visual Scripting**
-
-Learn how to update a script to enable the following:
-
-- a button that a participant can click to cause an educational video
-    to play
-
-- a trigger volume that opens a customizable dialog that can be viewed
-    by Event participants
-
-- a button that teleports a participant to a different location in
-    your Mesh environment
-
-**Chapter 4: Move objects and trigger animations with Mesh Physics**
-
-Learn how to add physics components to objects to enable the following:
-
-- Make an object have "grab and move" capabilities
-
-- Trigger an animation that plays when an object enters a trigger
-    volume
-
-- Create a containment field so objects can only be dropped in a
-    certain area
-
-**Chapter 5: Create your Environment and Upload it to Mesh**
-
-Learn how to create an Environment based on your scene and then build it
-and publish it to your World in the Azure Portal.
-
-**Chapter 6: Share your Mesh experience with others**
-
-Learn how to create an Event that's based on your Environment.
-Participants can join the Event and then use the Mesh features that you
-enabled in Chapters 3 and 4 to learn about wind turbines.
-
-We hope this tutorial inspires you to build a Mesh solution for the use
-cases your business finds valuable, with immersive environments, rich
-interactivity, and meaningful content.
-
-Terminology
+## Terminology
 
 In Mesh terms, the project you create in Unity and then upload to the
 Azure Portal is called an *Environment*.
@@ -229,6 +237,9 @@ package. To learn more about this, see our article titled *Download the Mesh Too
 
 ### Scenes in the tutorial project
 
+> [!NOTE]
+> [jovaneen] May be worth nothing that the first load is expected to take a really long time.
+
 1. Open the **Mesh101.unity** project in Unity. If you have more than
     one version of Unity installed, be sure to open the project with `Unity 2022.3.7f1` which is required for this tutorial:
 
@@ -256,7 +267,7 @@ package. To learn more about this, see our article titled *Download the Mesh Too
 
     ![A screenshot of a computer Description ](../../media/sample-mesh-101/image012.png)
 
-**About the scenes**
+### About the Scenes
 
 **StartingPoint**: This is the scene you'll do the tutorial in. It
 contains a pre-built setting that includes the wind turbines and
@@ -268,7 +279,7 @@ time to confirm that you've completed tutorial steps in the
 *StartingPoint* scene correctly. Always save your work in the
 *StartingPoint* scene before switching scenes.
 
-### Exploring the StartingPoint scene
+### Exploring the `StartingPoint` scene
 
 Feel free to move around in the **Scene** window to get familiar with
 the scene's contents. If we zoom out a little, we can see that there are
@@ -325,7 +336,7 @@ you to easily get a first impression of a multi-user scenario.
     any direction. When you're done experimenting, click the Unity
     Editor Play button again to exit Play mode.
 
-## Check the scale of your GameObjects
+### Check the scale of your GameObjects
 
 The tutorial project uses default Unity scale values: 1 unit = 1 meter.
 The *PlaymodeSetup* avatar is the same height as an average human. When
@@ -333,7 +344,7 @@ you're creating your own Environment, you can compare its size to any
 custom GameObjects you add to your project to ensure that those objects
 are the size you want.
 
-## Add the Mesh Thumbnail Camera
+### Add the Mesh Thumbnail Camera
 
 Adding the Mesh Thumbnail Camera provides a thumbnail image that will be
 added to your Environment's listing in the Azure Portal and its
@@ -399,7 +410,7 @@ add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
 You don't have to add the other walkable GameObjects to the NavMesh
 layer---we've already done it for you.
 
-### Station 1: Create an Interactable Button
+### Station 3.1: Create an Interactable Button
 
 For our first task, we want to create a button that will play a video
 when it's pressed by a participant.
@@ -474,7 +485,7 @@ Right now, the text on the button says "Label." Let's change that to
 
     ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/036-play-label-v2.png)
 
-## Create the Visual Script for the button
+#### Create the Visual Script for the button
 
 Before we add our first visual script, in the **Hierarchy**, collapse **PlayVideoButton** and then expand **VideoPlayer**.
 
@@ -502,7 +513,7 @@ We'll be using these as starting points for the other two features in this chapt
 1. In the **Script Machine** component, enter a name in the *Title* field for the graph: "Video Player Behavior."
 1. Enter a description in the *Summary* field for the graph: "Video player behavior definition."
 
-## Putting the script graph together
+#### Putting the script graph together
 
 1. In the **Script Machine** component, click **Edit Graph**. This opens the **Script Graph** window. Dock it next to the **Project** and **Console** tab so that we can see the script graph and **Scene** window at the same time. As we add nodes, you may want more space in the window; you can click the three-dot button and then select **Maximize** for achieve this, or click the **Full Screen** button in the upper right corner of the window.
 
@@ -510,7 +521,7 @@ We'll be using these as starting points for the other two features in this chapt
 
 1. We don't need the **OnStart** and **OnUpdate** events; delete them.
 
-### Get a reference to the PlayVideoButton GameObject
+#### Get a reference to the PlayVideoButton GameObject
 
 1. In the **Blackboard** section of the **Script Graph**, select the **Object** tab.
 1. Enter the variable name "PlayVideo" in the text box and then press the Enter key or click the + button.
@@ -525,7 +536,7 @@ We'll be using these as starting points for the other two features in this chapt
 
     ![A screenshot of a video play Description ](../../media/sample-mesh-101/206-value-playvideobutton-v2.png)
 
-### Add your new variable to the graph
+#### Add your new variable to the graph
 
 1. In the **PlayVideo** variable, click and hold on the double lines to the left of **Type**, and then drag the variable and drop it in the graph, where it appears as a node.
 
@@ -563,7 +574,7 @@ Back in the script graph, we'll add a node that lets us know when the button is 
 >
 >![A screenshot of a video play Description ](../../media/sample-mesh-101/215-graph-inspector-v2.png)
 
-### Triggering the button
+#### Triggering the button
 
 At this point, nothing is triggering the button yet. We need to add a node that ensures that every time the button is selected, the visual script runs.
 
@@ -581,7 +592,7 @@ In addition to knowing when the button is selected, we also want to be able to s
 
     ![A screenshot of a video play Description ](../../media/sample-mesh-101/214-if-node-false-v2.png)
 
-### Set a variable to let you know if the button is selected
+#### Set a variable to let you know if the button is selected
 
 1. Add a "Set Object Variable" node to the "True" output port of the "If" node.
 
@@ -608,7 +619,7 @@ If the video is playing, set to true. If it's not playing, set to false. The "Ne
 
 All the nodes you just added basically do one thing: tell you when the button is pressed.
 
-### Create a group for the nodes
+#### Create a group for the nodes
 
 1. Ctrl-drag over the nodes to add them to a group.
 
@@ -616,7 +627,7 @@ All the nodes you just added basically do one thing: tell you when the button is
 
 1. Select the group title and then change it to "Check Button Press."
 
-## Define the Play action
+#### Define the Play action
 
 In the following steps, we enable and disable two GameObjects: "Video" and "VideoStill."
 
@@ -631,7 +642,7 @@ We want this flow to be triggered every time the value of "isPlaying" changes.
 
     ![A screenshot ](../../media/sample-mesh-101/221-two-nodes-v2.png)
 
-### Play the video when the Play button is pressed
+#### Play the video when the Play button is pressed
 
 1. Connect the control output port of the "On State Changed" node to the "True" input port of a new "If" node that you create.
 1. Connect the remaining output port of the "On State Changed" node to the "False" input port of the "If" node.
@@ -666,7 +677,7 @@ Simultaneously, if the "If" node's value is true, we set the "VideoStill" GameOb
 
 ![A screenshot ](../../media/sample-mesh-101/227-set-videostill-inactive-v2.png)
 
-### Stop the video if the Play button (now labeled the "Stop" button) is pressed while the video is playing
+#### Stop the video if the Play button (now labeled the "Stop" button) is pressed while the video is playing
 
 This is similar to what we just did, but in reverse: if the "If" node is false, we make the "VideoStill" GameObject the active object.
 
@@ -688,7 +699,7 @@ This is similar to what we just did, but in reverse: if the "If" node is false, 
 
     ![A screenshot ](../../media/sample-mesh-101/231-reverse-conditions-v2.png)
 
-## Changing the button label
+#### Changing the button label
 
 1. In the **Blackboard**, go to the **Object** tab, and then create a variable named "VideoPlayerButtonLabel." The type should be TM Pro / "TextMeshPro".
 
@@ -717,7 +728,7 @@ For the Value, you need to add the "Label" GameObject that's a child to the "Pla
 
     ![A screenshot ](../../media/sample-mesh-101/236-set-text-play.png)
 
-## Test your work
+#### Test your work
 
 1. In Unity, save the project and then press the Unity Editor Play
     button.
@@ -733,7 +744,7 @@ For the Value, you need to add the "Label" GameObject that's a child to the "Pla
 
 1. Press the Unity Editor Play button to exit Play mode.
 
-## Station 3.2: Trigger an info dialog
+### Station 3.2: Trigger an info dialog
 
 For this feature, we'll enhance an existing visual script that causes an info dialog to appear when the avatar presses a button.
 
@@ -768,7 +779,7 @@ This is the message that will appear in the info dialog.
 
     ![A screen shot showing Show Dialog node with a message added.](../../media/sample-mesh-101/305-show-dialog-continue.png)
 
-## Test your work
+#### Test your work
 
 1. In the Unity Editor, save the project and then press the Unity Editor Play button.
 
@@ -787,7 +798,7 @@ This is the message that will appear in the info dialog.
 
 1. Press the Unity Editor Play button to exit Play mode.
 
-## Station 3.3: Teleport to the turbine generator
+### Station 3.3: Teleport to the turbine generator
 
 For this feature, we'll add some nodes to a script graph that allows participants
 in the scene to teleport. When a participant presses the button, they're
@@ -797,7 +808,7 @@ examine the generator.
 
 ![A picture containing outdoor, text, screenshot, windmill Description automatically generated](../../media/sample-mesh-101/image050.jpg)
 
-### Update the script graph
+#### Update the script graph
 
 1. In the **Scene** window, note that the **3.3 -** **Teleport to Turbine** station is to the right of the **3.2 -- Info Dialog  Trigger** station. Adjust the view so that you can clearly see Station 3.3.
 1. In the **Hierarchy**, collapse the **3.2 - Info Dialog** GameObject, and then expand the **3.3 - Teleport** GameObject.
@@ -821,7 +832,7 @@ give it the teleport behavior.
 
 In the **Teleport Button Behavior** group, the logic is similar to what you saw in Chapter 3.1: "If the button is selected, do something." We don't need to anything further to this group. We're going to make our changes to the second group, **Teleport to OpenPlatform**.
 
-### Create a Travel Point and add a reference to it
+#### Create a Travel Point and add a reference to it
 
 So what's a "Travel Point", you might be asking ... ? Basically, it's a component that you can use to define a point in space to spawn or teleport to. Normally, you would first create a *Travel Group*, and then add one or more Travel Points to it. We've already created the Travel Group for you in this project, so in the steps below, we'll add a Travel Point to that group. We'll then use that Travel point as the location the avatar will go to when they click the "Teleport" button. To learn more, see our article named *Mesh object and avatar interactions*.
 
@@ -870,7 +881,7 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
 
     ![A screen shot](../../media/sample-mesh-101/318-connect-to-teleportnow.png)
 
-## Test your work
+#### Test your work
 
 1. In the Unity Editor, save the project and then press the Unity Editor Play button.
 
@@ -909,7 +920,7 @@ contains the stations for Chapter 4. To get there:
 
     ![A picture containing text, screenshot, multimedia software, graphics software Description automatically generated](../../media/sample-mesh-101/image060.jpg)
 
-## Summary
+### Chapter 3: Summary
 
 In this chapter, you used Mesh Visual Scripting to add features that empower participants in
 your experience to do the following:
@@ -924,7 +935,7 @@ your experience to do the following:
     a platform attached to a wind turbine generator, where they can
     examine the generator up close.
 
-# Chapter 4: Move objects and trigger animations with Mesh Physics
+## Chapter 4: Move objects and trigger animations with Mesh Physics
 
 In Chapter 4, you'll work with a model of the wind farm. You'll learn
 how to use Mesh Physics to grab and release Rigidbodies (in this case,
@@ -939,14 +950,14 @@ the session.
 
 There are a couple of things we need to do before getting started with the first station.
 
-## Reconfigure the Hierarchy
+### Reconfigure the Hierarchy
 
 - In the **Hierarchy**, collapse the **Chapter3** GameObject and then
     expand the **Chapter4** GameObject.
 
 ![A screenshot of a computer Description ](../../media/sample-mesh-101/image061.jpg)
 
-## Change the view to display the Chapter 4 Sphere Terrace
+### Change the view to display the Chapter 4 Sphere Terrace
 
 In the experience in Mesh, the participant will move smoothly from the
 end of Chapter 3 to the beginning of Chapter 4 and will be properly
@@ -970,7 +981,7 @@ This centers the view on the **4.1 -- Grab and Release** object, but you'll most
 
     ![A computer generated image of a model of a mountain Description automatically generated](../../media/sample-mesh-101/image064.jpg)
 
-## Station 4.1: Grab and Release
+### Station 4.1: Grab and Release
 
 The goal for the participant in this chapter of the training is to move
 wind turbines from the tabletop to the ocean. Once located there, the
@@ -1006,7 +1017,7 @@ Let's add "grab and release" capabilities to **WindTurbine1** so that participan
 This will prevent the turbine moving tipping over if you place it on an
 uneven surface.
 
-## Test your work
+#### Test your work
 
 1. Save the project and then select the Unity Editor Play button.
 
@@ -1034,7 +1045,7 @@ uneven surface.
 You don't need to update the other two wind turbines---we've already
 done that for you.
 
-## Station: 4.2 Animation Trigger
+### Station: 4.2 Animation Trigger
 
 The idea here is that when you drag a wind turbine over the ocean, the "wind" causes the turbine's blades to spin. What actually happens is that the **Animation Trigger** GameObject is located over the ocean and acts as a trigger volume. If you drag a wind turbine into the trigger volume, it sets off an "On Trigger Enter" event  that starts a spinning-blade animation.
 
@@ -1070,7 +1081,7 @@ Note that the **Get Object Variable** node, it lists a variable called "WindTurb
 
     ![A screenshot](../../media/sample-mesh-101/327-windturbine-var.png)
 
-## Test your work
+#### Test your work
 
 1. Save the project, and then press the Unity Editor Play button.
 
@@ -1091,7 +1102,7 @@ Note that the **Get Object Variable** node, it lists a variable called "WindTurb
 
 You don't have to update the other wind turbines---we've already done it for you.
 
-## Station 4.3: Constraining Bodies
+### Station 4.3: Constraining Bodies
 
 Right now, there's no constraint on where a participant can drop a wind
 turbine. The goal is to place the turbines in the ocean so they catch
@@ -1127,7 +1138,7 @@ generated](../../media/sample-mesh-101/image084.png)
 
     ![A screenshot of a computer Description ](../../media/sample-mesh-101/image087.png)
 
-## Test your work
+###Test your work
 
 1. Save the project, and then press the Unity Editor Play button.
 
@@ -1142,7 +1153,7 @@ generated](../../media/sample-mesh-101/image084.png)
     the tabletop and ocean and drop it on the floor. The containment
     field prevents you from doing so.
 
-## Summary
+### Summary
 
 In this chapter, you added Mesh features that empower participants in
 your experience to do the following:
@@ -1154,7 +1165,7 @@ your experience to do the following:
 
 - Drop an object only in a particular area that you specified
 
-# Chapter 5: Create and upload your Environment
+## Chapter 5: Create and upload your Environment
 
 You've completed adding all the features you need for your Mesh
 experience using Mesh Physics and Scripting. So far, we've been working
@@ -1180,7 +1191,7 @@ Sign in with your account. **Note**: As mentioned in the Prerequisites
 section, the account must have Content *Contributor* access to the Mesh
 World you're uploading the Environment to.
 
-## Create your environment
+### Create your environment
 
 1. Make sure you're in the **Create** **Environment** tab, and then, in
     the **Internal Name** field, type "Wind Turbine Tutorial."
@@ -1212,7 +1223,7 @@ World you're uploading the Environment to.
 
     ![A screenshot of a computer Description ](../../media/sample-mesh-101/image092.png)
 
-## Build and publish your environment
+### Build and publish your environment
 
 You should now be in the **Update Environment** tab of the **Mesh
 Environments** window.
@@ -1227,7 +1238,7 @@ Environments** window.
 
     ![](../../media/sample-mesh-101/image094.jpg)
 
-## Building for single and multiple platforms
+### Building for single and multiple platforms
 
 It's good to keep in mind that Mesh events can be experienced on two
 different platforms: desktop PC and Android, which powers the Meta Quest
@@ -1239,7 +1250,7 @@ option #3: build and publish for PC and Android. To learn more about
 building for single and multiple platforms, see our document titled *Get
 Started with Mesh Environments*.
 
-## Create the Environment
+### Create the Environment
 
 1. In the **Update Environment** tab, click the **Select a scene**
     field, and then, in the **Select SceneAsset** dialog, select
@@ -1254,7 +1265,7 @@ for both PC and Android, so make sure that both buttons are "on."
 
 ![A screen shot of a computer Description automatically generated with low confidence](../../media/sample-mesh-101/image096.jpg)
 
-## Build and publish your Environment
+### Build and publish your Environment
 
 1. In the **Publish** section, provide some information in the **Upload
     notes** box if you wish.
@@ -1270,14 +1281,14 @@ for both PC and Android, so make sure that both buttons are "on."
 
     If the build and upload process fails, this is confirmed in the **Build and Upload** **Results** dialog.
 
-## Test the PC version of your Environment
+### Test the PC version of your Environment
 
 In the **Build and Upload Results** dialog, select the left button under
 **Published Asset**. This opens the Environment in the Mesh App.
 
 ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image099.png)
 
-## View your Environment in Azure
+### View your Environment in Azure
 
 If you navigate to the **Environments** page for your World in the Azure
 Portal, you'll see that your Environment has been saved there. Its type
@@ -1288,13 +1299,13 @@ will be listed as "Custom Environment."
 Your saved custom Environment will be available to anyone who creates a
 new event in that Mesh world.
 
-## Summary
+### Summary
 
 In this chapter, you learned how to create an Environment based on your
 scene and then build it and publish it to your World in the Azure
 Portal.
 
-# Chapter 6: Share your Mesh experience with others
+## Chapter 6: Share your Mesh experience with others
 
 Now that you've uploaded your Mesh101 Environment to Mesh, you can
 create and produce an Event based on that Environment that participants
@@ -1303,7 +1314,7 @@ can experience through the Mesh app for PC or Quest.
 See our document titled *Mesh Event Producer Guide* to create an Event
 via the in-app event producer experience.  
 
-## Create an event
+### Create an event
 
 1. Open the Mesh app and then log in.
 
@@ -1358,7 +1369,7 @@ automatically generated](../../media/sample-mesh-101/image103.png)
 
     ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image107.jpg)
 
-## Summary
+### Summary
 
 In this chapter, you learned how to create an Event that's based on your
 Environment. Participants can join the Event and then use the Mesh
