@@ -547,7 +547,7 @@ We'll be using these as starting points for the other two features in this chapt
 
 - *Script Machine*: This has a script graph named *Button Base Behaviour.*
 
-![A screenshot of a video play Description ](../../media/sample-mesh-101/208-playvideobutton-components-v2.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/208-playvideobutton-components-v2.png)
 
 If you go into Play mode, you'll see that a new component named **Mesh Interactable Body** is added to **PlayVideoButton**.
 
