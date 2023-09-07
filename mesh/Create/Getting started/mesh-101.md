@@ -1217,7 +1217,7 @@ World you're uploading the Environment to.
 7. You'll receive a confirmation dialogue as shown below. Select
     **Close**.
 
-    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image092.jpg)
+    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image092.png)
 
 ## Build and publish your environment
 
