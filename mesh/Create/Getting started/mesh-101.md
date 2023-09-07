@@ -602,20 +602,14 @@ In addition to knowing when the button is selected, we also want to be able to s
 
     ![A screenshot of a video play Description ](../../media/sample-mesh-101/218-select-isplaying-v2.png)
 
-    [A screenshot of a video play Description ](../../media/sample-mesh-101/324-trigger-boundaries.png)   
-
 1. Drag the the "isPlaying" variable from the **Blackboard** to the graph to create a new "Get Object Variable" node.
 
-    [A screenshot of a video play Description ](../../media/sample-mesh-101/324-trigger-boundaries.png)
-
-[placeholder](../../media/sample-mesh-101/325-get-var-node.png)
-
-    ![A screenshot of a video play Description ](../../media/sample-mesh-101/218-select-isplaying-v2.png)
+    ![A screenshot](../../media/sample-mesh-101/325-get-var-node.png)
 
 1. Connect the outport port of the "Get Object Variable" node to a new node you create called "Negate*.
 1. Connect the output port of the "Negate" node to the bottom input port of the "Set Variable Object" node.
 
-    [A screenshot of a video play Description ](../../media/sample-mesh-101/326-negate-connected.png)
+    ![A screenshot of a video play Description ](../../media/sample-mesh-101/326-negate-connected.png)
 
 If the video is playing, set to true. If it's not playing, set to false. The "Negate" node negates whatever the value of "IsPlaying" is.
 
