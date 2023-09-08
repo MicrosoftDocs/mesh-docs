@@ -99,8 +99,6 @@ Once you've added an artifact to the Artifact panel, you can select the artifact
 
 Use the **Control Panel** to prepare your artifacts to be used during an event. Like having a technical booth for theatrical technicians, it's designed to give the Event Producer the ability to orchestrate a performance in real time.
 
-#### Open the Manage events page
-
 1. After you've joined the session, click
     the "Control panel" button.
     ![A screenshot of a video game Description automatically
@@ -119,12 +117,9 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
     with medium
     confidence](../../media/mesh-event-producer-guide/image034.png)
 
-1. In the **Add items** window, click the **Content** entry.
-    This opens the **Select content** window. You can add playable
-    content such as *Unity Timelines and Video Players*.
+1. In the **Select content** window, select the artifact then select  **Add**. You will see it show up in the Control Panel.
 
-    ![A screenshot of a video game Description automatically
-    generated](../../media/mesh-event-producer-guide/image035.png)
+    :::image type="content" source="../../media/mesh-event-producer-guide/Add-content-to-control-panle.png" alt-text="Select video player in to add it to the control panel for producing your event.":::
 
 **Control Panel Notes**:
 
@@ -148,12 +143,12 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
 Within a Customize event experience, open the Control Panel, then Toggle
 to Preview Mode.
 
-![A screenshot of a video chat Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image037.png)
+While in preview mode, you can test out using the control panel to play your video or interact with your content.
+
+:::image type="content" source="../../media/mesh-event-producer-guide/Video-player.png" alt-text="Video playing while in preview mode in a customization session":::
 
 When you're done configuring content for the event, you can exit the
 customization session and it will automatically save your changes.
-
 
 # Event templates
 
@@ -172,7 +167,7 @@ Template, used across future events with no additional work needed.
 To manage your events, you must be in the Manage events page.
 
 ![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image040.png)
+medium confidence](../../media/mesh-event-producer-guide/image013.png)
 
 1. Go to your pinned world, or search for it using the **All Mesh
     worlds** button.
