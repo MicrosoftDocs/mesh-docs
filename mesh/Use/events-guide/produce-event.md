@@ -1,4 +1,13 @@
-## Produce your event
+---
+title: Produce event in Mesh
+description: Guide to producing an event in Mesh.
+author: typride
+ms.author: tmilligan
+ms.date: 9/07/2023
+ms.topic: Guide
+keywords: Microsoft Mesh, Producing, M365, events, hosting, event producer, event organizer
+---
+# Produce your event
 
 If you have a custom environment created Unity, there may be components
 you can add to the environment that you can control as an event
@@ -15,7 +24,6 @@ the show.
 To ensure the event runs smoothly, ensure that you customize the event
 at least one hour before the event should start.
 
-
 #### Provision Multiple Rooms before the Event
 
 If you've chosen a Multiple rooms event, ensure that you've provisioned
@@ -30,73 +38,58 @@ info.
 
 ## Event Producers tools
 
-- Control panel -- control the elements you add to the environment with scripted sequences of events. Imagine a curtain raise to signal the start of the event!
+- **Control Panel:** Control the elements you add to the environment with scripted sequences of events. Imagine a curtain raise to signal the start of the event!
 
-- Event templates -- create a template of your event with all customizations that you add to reuse in future events
+- **Host Panel:** See the participants in your event and use the host panel toolbar to access the *Mute all*, *Megaphone*, *Broadcast*, and  *Share* buttons.
 
-## Customize event experience
+- **Event templates:**  Create a template of your event with all customizations that you add to reuse in future events
 
-#### Open the Manage events page
+## Producing your event
 
-**Important!** If you don't see **Manage**, then you aren't a [Content
-contributor](#content-contributor-permissions) for this world. Please
-speak to your IT Admin to get Content contributor privileges.
+After you've created your event and customized it, it's time to join and produce your event.
 
-1. Go to your pinned world, or search for it using the **All Mesh
-    worlds** button.
+1. Find your event and select **Join now**.
 
-2. You will see the **Manage** button.
+    :::image type="content" source="../../media/mesh-event-producer-guide/Join-now.png" alt-text="Join event button in Mesh app":::
 
-![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image013.png)
+1. Adjust your device settings to ensure they're set up properly.
 
-#### Join the customize event experience
+    :::image type="content" source="../../media/mesh-event-producer-guide/Device-settings-setup-before-join.png" alt-text="Device settings adjustment  inside pre-join window for Mesh event.":::
 
-Select the **Customize event experience** button and enter the event.
-Once you've joined, you can begin [adding content with the Control
-Panel](#_Add_Content_with).
+Once you select **Join now**, you'll utilize two main tools for your run of show:
 
-![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image016.png)
+### Host Panel
 
-**Now that you've joined the event customization experience it's time
-to start customizing!**
+1. Select the **Host Panel** button in the menu bar.
 
+    :::image type="content" source="../../media/mesh-event-producer-guide/host-panel-open2.png" alt-text="Host panel button for producing an event":::
+   
+1. In the window that opens, you'll see the following tools at the top:
+   
+    :::image type="content" source="../../media/mesh-event-producer-guide/host-tools-bar.png" alt-text="Host Panel tool bar":::
 
-### Producing Live with Configured Content
+### Host Panel tools
+- **Mute all:** Mute all participants in the event.
+  
+    :::image type="content" source="../../media/mesh-event-producer-guide/Mute-all-button.png" alt-text="Mute all button in host panel":::
 
-1. At the start time of your event, join the event.
+- **Megaphone:** Amplify your voice to all participants in the event.
+  
+    :::image type="content" source="../../media/mesh-event-producer-guide/Megaphone-button.png" alt-text="Megaphone button in host panel":::
 
-2. Open the **Control Panel** (it defaults to Live Mode).
+- **Broadcast:** Broadcast your avatar to all rooms in a multi-room event.
+  
+    :::image type="content" source="../../media/mesh-event-producer-guide/Broadcast-button.png" alt-text="Boradcast button in a Mesh event in the host panel":::
 
-3. View your content in the order in which you set it.
+- **Share:** Share your screen to the event.
+  
+    :::image type="content" source="../../media/mesh-event-producer-guide/Share-button.png" alt-text="Share button in host panel":::
 
-4. Play through each item to confirm that the configurations appear as
-    you've defined them in your customize event experience.
+### Host Panel participant panel
 
-### Show or Hide Elements
+See the event participants and use various controls available to manage individual participants.
 
-The **Show/Hide** option can eliminate distractions and help the Event
-Producer focus on only the elements being used in the show.
-
-**To show or hide an element in the Control Panel:**
-
-1. Ensure that you're in **Edit Mode**.
-
-2. Click the **eyeball icon** to the left of the element name.
-
-**Show:**
-
-![Graphical user interface, application Description automatically
-generated](../../media/mesh-event-producer-guide/image038.png)
-
-**Hide:**
-
-![Text Description automatically generated with medium
-confidence](../../media/mesh-event-producer-guide/image039.png)
-
-**Note**: Hidden elements aren't deleted from your list, but are hidden
-from view while in **Live Mode**.
+:::image type="content" source="../../media/mesh-event-producer-guide/Participant-host-panel-window.png" alt-text="Participant panel for host panel":::
 
 ## Event Production Best Practices
 
@@ -105,7 +98,7 @@ Here are things you need to look out for throughout this process:
 1. Don't have multiple producers editing the Control Panel
     simultaneously; the edits may be overwritten.
 
-5. For smooth event production, we recommend that you complete all
+1. For smooth event production, we recommend that you complete all
     edits at least one hour before showtime. Last minute edits can cause
     problems for your performance.
 
@@ -123,20 +116,6 @@ integration features (via the Control Panel, Unity Timelines, and Unity
 Video Player) to that event. That event can be saved and become a
 Template, used across future events with no additional work needed.
 
-## Manage events page
-
-To manage your events, you must be in the Manage events page.
-
-![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image040.png)
-
-1. Go to your pinned world, or search for it using the **All Mesh
-    worlds** button.
-
-2. Once in your world, select **Event** in the top bar.
-
-3. You will see the **Manage events** button.
-
 ## Create a template
 
 1. In the left-side vertical button bar, click the icon of your World,
@@ -153,12 +132,12 @@ medium confidence](../../media/mesh-event-producer-guide/image040.png)
     the **Options** button.
 
     ![A screenshot of a phone Description automatically generated with
-    medium confidence](../../media/mesh-event-producer-guide/image041.png)
+    medium confidence](../../media/mesh-event-producer-guide/image031.png)
 5. In the popup menu, select Save as template to save an event template
     with the same name as the event you selected.
-    
+
     ![Graphical user interface Description automatically
-    generated](../../media/mesh-event-producer-guide/image042.png)
+    generated](../../media/mesh-event-producer-guide/image047.png)
 
 ## Deleting templates
 
@@ -167,7 +146,7 @@ medium confidence](../../media/mesh-event-producer-guide/image040.png)
 2. Click the **Templates** tab.
 
     ![Graphical user interface, application Description automatically
-    generated](../../media/mesh-event-producer-guide/image043.png)
+    generated](../../media/mesh-event-producer-guide/image048.png)
 1. In the Template list, select the template you want to delete, and
     then click its Trash Can icon. This deletes the template for you and
     everyone in your world.

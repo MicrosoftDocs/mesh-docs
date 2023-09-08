@@ -3,7 +3,7 @@ title: Customize your event in Mesh
 description: Guide to customizing and event in Mesh
 author: typride
 ms.author: tmilligan
-ms.date: 7/27/2023
+ms.date: 9/07/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer, customize
 ---
@@ -49,6 +49,7 @@ The major tools you'll use to produce your event are the:
 - [Event templates](#event-templates) -- create a template of your event with all customizations that you add to reuse in future events
 
 - [Environment editor](#add-content-with-the-environment-editor) -- add content to your environment like a video player.
+
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-video-player.png" alt-text="Video player showing while avatar is customizing it":::
 
 
@@ -73,9 +74,13 @@ medium confidence](../../media/mesh-event-producer-guide/image016.png)
 1. Click the **Join now** button.
 
 1. Select the **Environment editor** button.
-    :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor.png" alt-text="Environment editor button in Mesh":::
+
+    :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor.png" alt-text="Environment editor button in Mesh.":::
+   
 1. Select the **+** button to open the Catalog of artifact you can add.
+
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-catalog.png" alt-text="Environment editor catalog of artifacts you can add to your event.":::
+   
 1. Browse the available artifacts that you can add then select one to add it.
 1. Once you've added an artifact, you'll see it show up in the Artifacts window as shown below:
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-added-artifact.png" alt-text="Video player artifact shown in list of artifacts":::
@@ -99,12 +104,10 @@ Once you've added an artifact to the Artifact panel, you can select the artifact
 
 Use the **Control Panel** to prepare your artifacts to be used during an event. Like having a technical booth for theatrical technicians, it's designed to give the Event Producer the ability to orchestrate a performance in real time.
 
-#### Open the Manage events page
-
 1. After you've joined the session, click
     the "Control panel" button.
-    ![A screenshot of a video game Description automatically
-    generated](../../media/mesh-event-producer-guide/image024.png)
+   
+       ![A screenshot of a video game Description automatically generated](../../media/mesh-event-producer-guide/image024.png)
 
     > [!NOTE]
     > Adding content takes place in **Edit mode**. 
@@ -119,19 +122,16 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
     with medium
     confidence](../../media/mesh-event-producer-guide/image034.png)
 
-1. In the **Add items** window, click the **Content** entry.
-    This opens the **Select content** window. You can add playable
-    content such as *Unity Timelines and Video Players*.
+1. In the **Select content** window, select the artifact then select  **Add**. You will see it show up in the Control Panel.
 
-    ![A screenshot of a video game Description automatically
-    generated](../../media/mesh-event-producer-guide/image035.png)
+    :::image type="content" source="../../media/mesh-event-producer-guide/Add-content-to-control-panle.png" alt-text="Select video player in to add it to the control panel for producing your event.":::
 
 **Control Panel Notes**:
 
 - For the playable content to be available, it must have been added to
     the original Unity project used to create the environment. If the
     environment contains no playable content, the **Select content**
-    window will be empty. Reference the [Choose your journey](../Create/Getting%20started/choose-your-journey.md)
+    window will be empty. Reference the [Choose your journey](../../Create/Getting%20started/choose-your-journey.md)
     to get started with adding custom content.
 
 - For a VideoPlayer, the URL needs to be a publicly accessible
@@ -148,12 +148,12 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
 Within a Customize event experience, open the Control Panel, then Toggle
 to Preview Mode.
 
-![A screenshot of a video chat Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image037.png)
+While in preview mode, you can test out using the control panel to play your video or interact with your content.
+
+:::image type="content" source="../../media/mesh-event-producer-guide/Video-player.png" alt-text="Video playing while in preview mode in a customization session":::
 
 When you're done configuring content for the event, you can exit the
 customization session and it will automatically save your changes.
-
 
 # Event templates
 
@@ -171,8 +171,7 @@ Template, used across future events with no additional work needed.
 
 To manage your events, you must be in the Manage events page.
 
-![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image040.png)
+![A screenshot of a computer Description automatically generated with medium confidence](../../media/mesh-event-producer-guide/image013.png)
 
 1. Go to your pinned world, or search for it using the **All Mesh
     worlds** button.
