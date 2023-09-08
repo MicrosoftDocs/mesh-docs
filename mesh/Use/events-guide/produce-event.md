@@ -7,26 +7,15 @@ ms.date: 9/07/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Producing, M365, events, hosting, event producer, event organizer
 ---
+
 # Produce your event
 
-If you have a custom environment created Unity, there may be components
-you can add to the environment that you can control as an event
-producer.
+## Considerations before starting your event
 
-Make your event your own! Create a scripted sequence that you control
-for your event -- think props for pizazz or a curtain opening to start
-the show.
-
-### Considerations before starting your event
-
-#### Customize before the event
-
-To ensure the event runs smoothly, ensure that you customize the event
+**Customize before your event:** To ensure the event runs smoothly, ensure that you customize the event
 at least one hour before the event should start.
 
-#### Provision Multiple Rooms before the Event
-
-If you've chosen a Multiple rooms event, ensure that you've provisioned
+**Provision event for multiple room events:** If you've chosen a Multiple rooms event, ensure that you've provisioned
 your Multiple Rooms event at least 30 minutes before the event start
 time.
 
@@ -38,9 +27,9 @@ info.
 
 ## Event Producers tools
 
-- **Control Panel:** Control the elements you add to the environment with scripted sequences of events. Imagine a curtain raise to signal the start of the event!
-
 - **Host Panel:** See the participants in your event and use the host panel toolbar to access the *Mute all*, *Megaphone*, *Broadcast*, and  *Share* buttons.
+
+- **Control Panel:** Control the elements you add to the environment with scripted sequences of events. Imagine a curtain raise to signal the start of the event!
 
 - **Event templates:**  Create a template of your event with all customizations that you add to reuse in future events
 
@@ -63,12 +52,13 @@ Once you select **Join now**, you'll utilize two main tools for your run of show
 1. Select the **Host Panel** button in the menu bar.
 
     :::image type="content" source="../../media/mesh-event-producer-guide/host-panel-open2.png" alt-text="Host panel button for producing an event":::
-   
+
 1. In the window that opens, you'll see the following tools at the top:
-   
+
     :::image type="content" source="../../media/mesh-event-producer-guide/host-tools-bar.png" alt-text="Host Panel tool bar":::
 
 ### Host Panel tools
+
 - **Mute all:** Mute all participants in the event.
   
     :::image type="content" source="../../media/mesh-event-producer-guide/Mute-all-button.png" alt-text="Mute all button in host panel":::
