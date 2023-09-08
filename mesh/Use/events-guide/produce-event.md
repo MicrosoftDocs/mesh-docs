@@ -91,18 +91,6 @@ See the event participants and use various controls available to manage individu
 
 :::image type="content" source="../../media/mesh-event-producer-guide/Participant-host-panel-window.png" alt-text="Participant panel for host panel":::
 
-## Event Production Best Practices
-
-Here are things you need to look out for throughout this process:
-
-1. Don't have multiple producers editing the Control Panel
-    simultaneously; the edits may be overwritten.
-
-1. For smooth event production, we recommend that you complete all
-    edits at least one hour before showtime. Last minute edits can cause
-    problems for your performance.
-
- **We hope you enjoy the Mesh Producer Experience!**
 
 ## Event templates
 
