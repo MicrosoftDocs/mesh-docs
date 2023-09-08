@@ -1,3 +1,12 @@
+---
+title: Produce event in Mesh
+description: Guide to producing an event in Mesh.
+author: typride
+ms.author: tmilligan
+ms.date: 9/07/2023
+ms.topic: Guide
+keywords: Microsoft Mesh, Producing, M365, events, hosting, event producer, event organizer
+---
 # Produce your event
 
 If you have a custom environment created Unity, there may be components
