@@ -61,18 +61,28 @@ Once you select **Join now**, you'll utilize two main tools for your run of show
 ### Host Panel
 
 1. Select the **Host Panel** button in the menu bar.
+
     :::image type="content" source="../../media/mesh-event-producer-guide/host-panel-open2.png" alt-text="Host panel button for producing an event":::
+   
 1. In the window that opens, you'll see the following tools at the top:
+   
     :::image type="content" source="../../media/mesh-event-producer-guide/host-tools-bar.png" alt-text="Host Panel tool bar":::
 
 ### Host Panel tools
 - **Mute all:** Mute all participants in the event.
+  
     :::image type="content" source="../../media/mesh-event-producer-guide/Mute-all-button.png" alt-text="Mute all button in host panel":::
+
 - **Megaphone:** Amplify your voice to all participants in the event.
+  
     :::image type="content" source="../../media/mesh-event-producer-guide/Megaphone-button.png" alt-text="Megaphone button in host panel":::
+
 - **Broadcast:** Broadcast your avatar to all rooms in a multi-room event.
+  
     :::image type="content" source="../../media/mesh-event-producer-guide/Broadcast-button.png" alt-text="Boradcast button in a Mesh event in the host panel":::
+
 - **Share:** Share your screen to the event.
+  
     :::image type="content" source="../../media/mesh-event-producer-guide/Share-button.png" alt-text="Share button in host panel":::
 
 ### Host Panel participant panel
