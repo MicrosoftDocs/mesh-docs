@@ -3,7 +3,7 @@ title: Customize your event in Mesh
 description: Guide to customizing and event in Mesh
 author: typride
 ms.author: tmilligan
-ms.date: 7/27/2023
+ms.date: 9/07/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer, customize
 ---
