@@ -73,7 +73,7 @@ medium confidence](../../media/mesh-event-producer-guide/image016.png)
 1. Click the **Join now** button.
 
 1. Select the **Environment editor** button.
-    :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor.png" alt-text="Environment editor button in Mesh":::
+    :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor.png" alt-text="Environment editor button in Mesh.":::
 1. Select the **+** button to open the Catalog of artifact you can add.
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-catalog.png" alt-text="Environment editor catalog of artifacts you can add to your event.":::
 1. Browse the available artifacts that you can add then select one to add it.
