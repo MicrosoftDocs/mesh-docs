@@ -126,7 +126,7 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
 - For the playable content to be available, it must have been added to
     the original Unity project used to create the environment. If the
     environment contains no playable content, the **Select content**
-    window will be empty. Reference the [Choose your journey](../Create/Getting%20started/choose-your-journey.md)
+    window will be empty. Reference the [Choose your journey](../../Create/Getting%20started/choose-your-journey.md)
     to get started with adding custom content.
 
 - For a VideoPlayer, the URL needs to be a publicly accessible
