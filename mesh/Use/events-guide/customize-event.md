@@ -49,6 +49,7 @@ The major tools you'll use to produce your event are the:
 - [Event templates](#event-templates) -- create a template of your event with all customizations that you add to reuse in future events
 
 - [Environment editor](#add-content-with-the-environment-editor) -- add content to your environment like a video player.
+
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-video-player.png" alt-text="Video player showing while avatar is customizing it":::
 
 
@@ -73,9 +74,13 @@ medium confidence](../../media/mesh-event-producer-guide/image016.png)
 1. Click the **Join now** button.
 
 1. Select the **Environment editor** button.
+
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor.png" alt-text="Environment editor button in Mesh.":::
+   
 1. Select the **+** button to open the Catalog of artifact you can add.
+
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-catalog.png" alt-text="Environment editor catalog of artifacts you can add to your event.":::
+   
 1. Browse the available artifacts that you can add then select one to add it.
 1. Once you've added an artifact, you'll see it show up in the Artifacts window as shown below:
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-added-artifact.png" alt-text="Video player artifact shown in list of artifacts":::
@@ -101,8 +106,8 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
 
 1. After you've joined the session, click
     the "Control panel" button.
-    ![A screenshot of a video game Description automatically
-    generated](../../media/mesh-event-producer-guide/image024.png)
+   
+       ![A screenshot of a video game Description automatically generated](../../media/mesh-event-producer-guide/image024.png)
 
     > [!NOTE]
     > Adding content takes place in **Edit mode**. 
@@ -166,8 +171,7 @@ Template, used across future events with no additional work needed.
 
 To manage your events, you must be in the Manage events page.
 
-![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image013.png)
+![A screenshot of a computer Description automatically generated with medium confidence](../../media/mesh-event-producer-guide/image013.png)
 
 1. Go to your pinned world, or search for it using the **All Mesh
     worlds** button.
