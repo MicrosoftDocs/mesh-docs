@@ -149,7 +149,7 @@ For more information, see our IT Admin Guide*.
 
 To download the app (codenamed **Project Napili**), you can visit the link below.
 
-![Project Napili - Microsoft Store Apps](../../media/sample-mesh-101/image003.png)
+![Project Napili - Microsoft Store Apps](../../../../media/sample-mesh-101/image003.png)
 > [Project Napili - Microsoft Store Apps](https://apps.microsoft.com/store/detail/project-napili/9P0B5VMS9RTQ?hl=en-us&gl=us)
 
 **If the app isn't available, talk to your IT** **admin about making the
@@ -166,12 +166,12 @@ The Mesh Toolkit contains the *Mesh 101* tutorial project.
     Tools** section, and then, under **Get the Files and Packages**,
     select the **Go** button.
 
-    ![Screenshot of Mesh Resources and Developer Tools](../../media/sample-mesh-101/image004.jpg)
+    ![Screenshot of Mesh Resources and Developer Tools](../../../media/sample-mesh-101/image004.jpg)
 3. On the **Files and Packages** page, download the latest version of
     the Mesh Toolkit (it may be more recent than what you see here). Select the three-dot button and then select
     **Download**.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image005.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image005.jpg)
 
     > [!NOTE]
     > The downloaded zip file's name may vary depending on your
@@ -179,12 +179,12 @@ The Mesh Toolkit contains the *Mesh 101* tutorial project.
 4. On your C: drive, create a folder with a one-word name (for example,"Mesh101") and then move or copy the downloaded Mesh Toolkit Zip file to that folder. This is done to avoid running into a problem with the Windows path length limit which is 256 characters. **IMPORTANT**: *Don't* place the Zip file on the Windows desktop. Behind the scenes, this creates a very long path name.
    In the example below, the user created a folder on their C: drive named *Mesh101.* Next, they moved the downloaded Mesh Toolkit Zip file, which their system renamed *OneDrive_2023-07-24.zip*, to the *Mesh101* folder
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image006.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image006.jpg)
 5. In the new folder you created, unzip the Toolkit file, and then
     navigate through the unzipped folder hierarchy until you see folders
     named **Packages** and **Samples**.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image007.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image007.png)
 
 6. Open the **Samples** folder. The tutorial project, named
     **Mesh101.Unity**, is located there and is packaged as a Zip file.
@@ -193,7 +193,7 @@ The Mesh Toolkit contains the *Mesh 101* tutorial project.
     This creates a **Mesh101.Unity** project folder which you'll open in
     Unity.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image008.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image008.png)
 
 > [!IMPORTANT]
 > Don't move the **Mesh101.Unity** project folder or the
@@ -219,7 +219,7 @@ Mesh Toolkit 23.x
 > this happens, check to ensure that the folder structure described above
 > is correct.
 
-![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image009.jpg)
+![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image009.jpg)
 
 ### The Packages
 
