@@ -28,7 +28,7 @@ There are a couple of things we need to do before getting started with the first
 - In the **Hierarchy**, collapse the **Chapter3** GameObject and then
     expand the **Chapter4** GameObject.
 
-![A screenshot of a computer Description ](../../media/sample-mesh-101/image061.jpg)
+![A screenshot of a computer Description ](../../../media/sample-mesh-101/image061.jpg)
 
 ### Change the view to display the Chapter 4 Sphere Terrace
 
@@ -42,7 +42,7 @@ set up that view.
 1. In the **Hierarchy**, select the GameObject named **4.1 -- Grab and
     Release**.
 
-    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image063.png)
+    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image063.png)
 
 1. Move the cursor over the **Scene** window and then press the F key
     on your keyboard.
@@ -52,7 +52,7 @@ This centers the view on the **4.1 -- Grab and Release** object, but you'll most
 1. Drag, rotate and/or zoom the view until you see the model in front
     of you, as shown below.
 
-    ![A computer generated image of a model of a mountain Description automatically generated](../../media/sample-mesh-101/image064.jpg)
+    ![A computer generated image of a model of a mountain Description automatically generated](../../../media/sample-mesh-101/image064.jpg)
 
 ### Station 4.1: Grab and Release
 
@@ -65,7 +65,7 @@ generating power.
     GameObject. Note that it contains three Wind Turbine GameObjects
     that are located on the tabletop in the scene.
 
-    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image065.jpg)
+    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image065.jpg)
 
 Let's add "grab and release" capabilities to **WindTurbine1** so that participants will be able to move it around in Mesh.
 
@@ -77,7 +77,7 @@ Let's add "grab and release" capabilities to **WindTurbine1** so that participan
 
 1. In the **Inspector**, click the **Add Component** button and then search for and add **Mesh Interactable Properties**.
 
-    ![A screenshot](../../media/sample-mesh-101/320-interactable-properties.png)
+    ![A screenshot](../../../media/sample-mesh-101/320-interactable-properties.png)
 
 1. In the same component, select **Manipulable**.
 1. Ensure that the component is active.
@@ -85,7 +85,7 @@ Let's add "grab and release" capabilities to **WindTurbine1** so that participan
     needed, and then for the **Freeze Rotation** settings, select **X,**
     **Y**, and **Z**.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image067.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image067.jpg)
 
 This will prevent the turbine moving tipping over if you place it on an
 uneven surface.
@@ -99,19 +99,19 @@ uneven surface.
 2. Rotate the view to the right until you see the **Go to Chapter 4**
     information box.
 
-    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image068.jpg)
+    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image068.jpg)
 
 3. Walk up to the information box and then select the **Teleport to
     Chapter 4** button.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image069.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image069.jpg)
 
 4. After you arrive at the Chapter 4 Sphere Terrace, drag **WindTurbine1** until the cursor's shape changes, and then
     drag the turbine around the scene and drop it in the ocean.
 
     The turbine will stay upright as a result of turning on its *Freeze Rotation* constraints. Notice that the wind is blowing, but the turbine's blades don't turn. This is because we haven't triggered the blade-turning animation yet. We'll do that at the next station.
 
-    ![A picture ](../../media/sample-mesh-101/image070.jpg)
+    ![A picture ](../../../media/sample-mesh-101/image070.jpg)
 
 5. Click the Unity Editor Play button to exit Play mode.
 
@@ -124,25 +124,25 @@ The idea here is that when you drag a wind turbine over the ocean, the "wind" ca
 
 1. In the **Hierarchy**, expand the **4.2 -- Animation Trigger** GameObject, and then select its child object named **Animation Trigger**.
 
-    ![A screenshot](../../media/sample-mesh-101/image071.png)
+    ![A screenshot](../../../media/sample-mesh-101/image071.png)
 
 1. In the **Inspector**, navigate to the **Box Collider** component and then select **Edit Collider**. This shows you the boundaries of the trigger volume in the **Scene** window. When you're finished, click **Edit Collider** again to hide the boundaries.
 
-    ![A screenshot](../../media/sample-mesh-101/324-trigger-boundaries.png)
+    ![A screenshot](../../../media/sample-mesh-101/324-trigger-boundaries.png)
 
 1. In the **Box Collider** component, select **Is Trigger**.
 
-    ![A screenshot](../../media/sample-mesh-101/321-is-trigger.png)
+    ![A screenshot](../../../media/sample-mesh-101/321-is-trigger.png)
 
 1. In the **Hierarchy**, navigate to **Chapter 4** > **4.1 - Grab and Release** and then select **WindTurbine1**.
 1. Click the **Add Component** button, and then search for and add **Script Machine.**
 1. In the **Script Machine** component, click the round button next to **Graph**, and then in the **Select ScriptGraphAsset** window, search for and select "WindTurbineScript".
 
-    ![A screenshot](../../media/sample-mesh-101/322-wind-turbine-script.png)
+    ![A screenshot](../../../media/sample-mesh-101/322-wind-turbine-script.png)
 
 1. Click the **Edit Graph** button to open the script graph. Note that there are no custom Mesh nodes here; it's all standard Unity.
 
-    ![A screenshot](../../media/sample-mesh-101/323-existing-nodes.png)
+    ![A screenshot](../../../media/sample-mesh-101/323-existing-nodes.png)
 
 Note that the **Get Object Variable** node, it lists a variable called "WindTurbine"--but we don't actually have that variable in the graph yet. Let's create it now.
 
@@ -152,7 +152,7 @@ Note that the **Get Object Variable** node, it lists a variable called "WindTurb
 1. In the **Hierarchy**, navigate to the GameObject **Chapter 4** > **4.1 - Grab and Release** > **WindTurbine1** > **WindTurbineBody** > **Windmill_Turbine_001:Propellors10**.
 1. Drag **Windmill_Turbine_001:Propellors10** from the **Hierarchy** and then drop it in the **Value** field for the *WindTurbine* Object variable.
 
-    ![A screenshot](../../media/sample-mesh-101/327-windturbine-var.png)
+    ![A screenshot](../../../media/sample-mesh-101/327-windturbine-var.png)
 
 #### Test your work
 
@@ -162,13 +162,13 @@ Note that the **Get Object Variable** node, it lists a variable called "WindTurb
     **Chapter3** Sphere Terrace. Rotate the scene to the right, and then
     walk over to the **Teleport to Chapter 4** button and press it.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image069.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image069.jpg)
 
 3. Now in the **Chapter4** Sphere Terrace, drag **WindTurbine1**
     (reminder: it's the furthest one in the back, with the red blades) over the ocean. Note
     that the turbine's blades are now spinning.
 
-    ![A picture containing screenshot, 3d modeling, pc game, video game software Description automatically generated](../../media/sample-mesh-101/image082.jpg)
+    ![A picture containing screenshot, 3d modeling, pc game, video game software Description automatically generated](../../../media/sample-mesh-101/image082.jpg)
 
 4. When you've finished observing the animation, press the Unity Editor
     Play button to exit Play mode.
@@ -186,30 +186,30 @@ containment field. This is basically a transparent box---the turbines
 will be restricted to the inside of the box.
 
 ![A screenshot of a video game Description automatically generated with
-medium confidence](../../media/sample-mesh-101/image084.png)
+medium confidence](../../../media/sample-mesh-101/image084.png)
 
 1. In the **Hierarchy**, expand the **4.3 -- Constraining Bodies**
     GameObject and select its child object named **Containment Field**.
 
 ![A screenshot of a computer Description automatically
-generated](../../media/sample-mesh-101/image084.png)
+generated](../../../media/sample-mesh-101/image084.png)
 
 1. In the **Inspector**, select the **Add Component** button and then
     add the **Containment Field** component.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image085.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image085.png)
 
 1. In the **Containment Field** component, select the "+" button to the
     right of the **Affected bodies** option, and then, in the popup
     menu, select the **Game Object Name** condition.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image086.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image086.jpg)
 
 4. In the **Starts With** box, type "WindTurbine." Since all three wind
     turbines in our scene start with "WindTurbine," they'll all be
     restricted to the **Containment Field**.
 
-    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image087.png)
+    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image087.png)
 
 ### Test your work
 
@@ -219,7 +219,7 @@ generated](../../media/sample-mesh-101/image084.png)
     **Chapter3** Sphere Terrace. Rotate the scene to the right, and then
     walk over to the **Teleport to Chapter 4** button and press it.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image069.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image069.jpg)
 
 1. Now in the **Chapter4** Sphere Terrace, grab one of the wind
     turbines and drag it around in the scene. Try to drag it away from

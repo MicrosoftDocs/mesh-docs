@@ -18,13 +18,13 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
     > [!NOTE]
     > In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**.
 
-    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image010.png)
+    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image010.png)
 
 2. Open the **StartingPoint** scene. You should see the **TMP Importer** window.
 
 3. Select **Import TMP Essentials**, and then close the window.
 
-    ![A screen shot of a computer Description automatically generated with low confidence](../../media/sample-mesh-101/image011.png)
+    ![A screen shot of a computer Description automatically generated with low confidence](../../../media/sample-mesh-101/image011.png)
 
 In the **Scene** window, the letter "T" appears over every object that
 is using `TextMeshPro`. You can turn these off to achieve a less cluttered
@@ -36,7 +36,7 @@ view. To do so:
     select its **icon** toggle button. This turns off the display of
     "T"s in the **Scene** window.
 
-    ![Screenshot of TextMeshPro icon under gizmos](../../media/sample-mesh-101/image012.png)
+    ![Screenshot of TextMeshPro icon under gizmos](../../../media/sample-mesh-101/image012.png)
 
 ### About the Scenes
 
@@ -57,25 +57,25 @@ the scene's contents. If we zoom out a little, we can see that there are
 a number of wind turbines in our wind farm. Those two white rounded
 items at the bottom of the window are called *Sphere Terraces*.
 
-![A screenshot of a computer Description ](../../media/sample-mesh-101/image013.jpg)
+![A screenshot of a computer Description ](../../../media/sample-mesh-101/image013.jpg)
 
 If you navigate to the front of the Sphere Terraces and take a closer
 look, you can see that each Sphere Terrace contains a space inside that
 you'll soon be walking around in.
 
-![A screenshot of a computer Description ](../../media/sample-mesh-101/013-sphere-terraces-v2.png)
+![A screenshot of a computer Description ](../../../media/sample-mesh-101/013-sphere-terraces-v2.png)
 
 You'll be visiting the Sphere Terraces starting in the next
 chapter---they each contain a series of stations where you'll learn how
 to implement Mesh features. The first Sphere Terrace (covered in Chapter  
 3) is where you'll learn about Mesh Visual Scripting ...
 
-![A screenshot of a video game Description ](../../media/sample-mesh-101/014-chapter3-sphere-terrace-v2.png)
+![A screenshot of a video game Description ](../../../media/sample-mesh-101/014-chapter3-sphere-terrace-v2.png)
 
 ... and the other Sphere Terrace, covered in Chapter 4, is where you'll
 learn about Mesh Physics.
 
-![A screenshot of a computer Description ](../../media/sample-mesh-101/014-chapter-4-sphere-terrace-v2.png)
+![A screenshot of a computer Description ](../../../media/sample-mesh-101/014-chapter-4-sphere-terrace-v2.png)
 
 ### Add the PlayModeSetup prefab
 
@@ -87,16 +87,16 @@ you to easily get a first impression of a multi-user scenario.
 
 1. Right-click inside the **Hierarchy** and then, in the context menu, select **Mesh Toolkit** > **PlaymodeSetup**.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image017.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image017.jpg)
 
     Note that this adds the **PlaymodeSetup [NoUpload]** prefab to the
     scene.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/sample-mesh-101/image018.jpg)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image018.jpg)
 
     This prefab provides you with a highly stylized avatar controller that has a camera attached, so now we can play the project and have a look around.
 
-    ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../media/sample-mesh-101/016-playmode-v2.png)
+    ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../../media/sample-mesh-101/016-playmode-v2.png)
 
 2. Select the Unity Editor Play button.
 
@@ -145,4 +145,4 @@ There are no set rules for how your thumbnail should look---it's totally
 up to you. For the example below, we chose a close-up front view of a
 wind turbine.
 
-![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image020.jpg)
+![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image020.jpg)

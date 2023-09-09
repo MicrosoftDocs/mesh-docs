@@ -149,7 +149,7 @@ For more information, see our IT Admin Guide*.
 
 To download the app (codenamed **Project Napili**), you can visit the link below.
 
-![Project Napili - Microsoft Store Apps](../../../../media/sample-mesh-101/image003.png)
+![Project Napili - Microsoft Store Apps](../../../media/sample-mesh-101/image003.png)
 > [Project Napili - Microsoft Store Apps](https://apps.microsoft.com/store/detail/project-napili/9P0B5VMS9RTQ?hl=en-us&gl=us)
 
 **If the app isn't available, talk to your IT** **admin about making the

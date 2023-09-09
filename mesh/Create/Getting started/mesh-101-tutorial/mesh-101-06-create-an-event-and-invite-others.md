@@ -25,15 +25,15 @@ via the in-app event producer experience.
     or click the ["All Worlds" button](#_Mesh_dashboard_overview) at the
     bottom left, and then select the world you want.
 
-    ![A blue square with white text Description automatically generated](../../media/sample-mesh-101/image101.png)
+    ![A blue square with white text Description automatically generated](../../../media/sample-mesh-101/image101.png)
 
     **Notes**:
     - You may have to scroll to view all the worlds.
     - You can pin worlds to the left nav bar for easy access.
 
-    ![A picture containing text, screenshot, line, font Description automatically generated](../../media/sample-mesh-101/image103.png)
+    ![A picture containing text, screenshot, line, font Description automatically generated](../../../media/sample-mesh-101/image103.png)
 3. In your Mesh World, select the **Manage** button.
-    ![A screenshot of a computer Description ](../../media/sample-mesh-101/image103.png)
+    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image103.png)
 
     > [!NOTE]
     > If you don't see the **Manage** button, then you aren't a Content contributor for this World.
@@ -41,22 +41,22 @@ via the in-app event producer experience.
     select **Create event**.
 5. Add your event details (**Name**, **Date**, **Time**,
     **Description**, etc.).
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image104.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image104.jpg)
 6. When you're finished, click **Next**.
 7. On the **Template** page, press **Skip**.
 8. On the **Environment** page, select the **Custom** tab.
 9. Find the **Wind Turbine Tutorial** Environment, then select it, and
     then click **Next**.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image105.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image105.jpg)
 10. On the **Review** page, review your event details. Click **Back** if
     you need to go back and change anything.
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image106.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image106.jpg)
 
 11. When you're ready to move forward, select **Create Event**. This
     saves your event and takes you to the **My Events** page.
 
-    ![A screenshot of a computer Description automatically generated](../../media/sample-mesh-101/image107.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image107.jpg)
 
 ### Summary
 
@@ -65,7 +65,7 @@ Environment. Participants can join the Event and then use the Mesh
 features that you enabled in Chapters 3 and 4 to learn about wind
 turbines.
 
-![A person looking at a group of people Description automatically generated](../../media/sample-mesh-101/image108.jpg)
+![A person looking at a group of people Description automatically generated](../../../media/sample-mesh-101/image108.jpg)
 
 ## Conclusion
 
