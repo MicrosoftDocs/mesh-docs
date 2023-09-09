@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 # Active known issues - Mesh
 
-## Version 23.11
+## Version 5.2311.0
 
 * On the Dashboard, the scroll bar length could be too long for the content being displayed. (19504)
 * On the Dashboard, go to **All Worlds**, and holding down the scroll bar and leaving the UI dialog will bring you back on top of the screen. (19502)
