@@ -6,4 +6,4 @@ items:
   - name: Choose your journey
     href: choose-your-journey.md
   - name: Mesh 101 tutorial
-    href: mesh-101.md
+    href: mesh-101-tutorial/toc.yml
