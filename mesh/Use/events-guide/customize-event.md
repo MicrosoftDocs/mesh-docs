@@ -62,8 +62,8 @@ Use the environment editor to add content to your environment that can be contro
     ![A screenshot of a computer Description automatically generated with medium confidence](../../media/mesh-event-producer-guide/image013.png)
 
 1. Click the **Customize event experience** button and enter the event.
-Once you've joined, you can begin [adding content with the Control
-Panel](#_Add_Content_with).
+Once you've joined, you can begin adding content with the Control
+Panel
 
     ![A screenshot of a computer Description automatically generated with
 medium confidence](../../media/mesh-event-producer-guide/image016.png)
