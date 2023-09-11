@@ -46,6 +46,7 @@ Added support for uploading asset bundles to M365.
 * See the [Mesh Toolkit 23.11 upgrade guide](../developer-guidance-23.11.md).
 * Unity upgraded to 2022.3.7. We recommend all Unity projects for Mesh environments to be upgraded to Unity 2022 LTS, using the latest 23.11 Mesh Toolkit and Mesh app build.
 * Player spawning is now handled by `TravelPoints`, the legacy spawn system has been removed: this includes the `SpawnPointConfig` and `ArbitrarySpawnPointConfig` scripts and support for spawning into seats by default.  All Mesh environments must have `TravelPoints` configured to maintain desired player spawning behavior.  If no `TravelPoints` are found in the scene, the player will spawn above the origin, and if the floor is nearby, the player will be grounded, otherwise the player will fall and respawn in a loop.
+* We're currently migrating from the interaction events on various Mesh Interactables and Mesh Physics components over to Visual Scripting.
 
 #### Scripting
 
