@@ -3,9 +3,9 @@ title: Mesh 101 Make your Environment available for Events
 description: Learn how to uploaded your Environment and make it available for Event.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/8/2023
+ms.date: 9/11/2023
 ms.topic: Tutorial
-keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, physics
+keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Azure Portal, uploader, uploading
 ---
 
 # Mesh 101 Tutorial Chapter 5: Make your Environment available for Events
@@ -141,6 +141,9 @@ will be listed as "Custom Environment."
 
 Your saved custom Environment will be available to anyone who creates a
 new event in that Mesh world.
+
+> [!NOTE]
+> For viewing Worlds in the Mesh Portal, refer to the [M365 Migration Guide](../../../Setup/Content/m365-migration-guide.md). 
 
 ### Summary
 
