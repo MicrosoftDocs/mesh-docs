@@ -81,53 +81,5 @@ See the event participants and use various controls available to manage individu
 
 :::image type="content" source="../../media/mesh-event-producer-guide/Participant-host-panel-window.png" alt-text="Participant panel for host panel":::
 
-
-## Event templates
-
-Now that you've created an event and customized it to your liking,
-create an Event template! Event templates to easily reproduce curated
-experiences in other events, saving time and effort. Create a template
-once and use it again and again!
-
-Simply use a custom or pre-created environment then add Event
-integration features (via the Control Panel, Unity Timelines, and Unity
-Video Player) to that event. That event can be saved and become a
-Template, used across future events with no additional work needed.
-
-## Create a template
-
-1. In the left-side vertical button bar, click the icon of your World,
-    or click the **All Mesh worlds** button to find your world.\
-    ![A screenshot of a computer Description automatically generated
-    with medium
-    confidence](../../media/mesh-event-producer-guide/image003.png)
-
-2. In the horizontal menu bar at the top, click **Events**.
-
-3. Click the **Manage Events** button.
-
-4. Select the event you want to create a template of, and then click
-    the **Options** button.
-
-    ![A screenshot of a phone Description automatically generated with
-    medium confidence](../../media/mesh-event-producer-guide/image031.png)
-5. In the popup menu, select Save as template to save an event template
-    with the same name as the event you selected.
-
-    ![Graphical user interface Description automatically
-    generated](../../media/mesh-event-producer-guide/image047.png)
-
-## Deleting templates
-
-1. Go to the **Manage Events** page.
-
-2. Click the **Templates** tab.
-
-    ![Graphical user interface, application Description automatically
-    generated](../../media/mesh-event-producer-guide/image048.png)
-1. In the Template list, select the template you want to delete, and
-    then click its Trash Can icon. This deletes the template for you and
-    everyone in your world.
-
    > [!div class="nextstepaction"]
    > [Event help](events-help.md)
