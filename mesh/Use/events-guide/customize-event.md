@@ -40,19 +40,19 @@ time.
 
 The major tools you'll use to produce your event are the:
 
+- [Environment editor](#add-content-with-the-environment-editor) -- add content to your environment like a video player.
+
+    :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-video-player.png" alt-text="Video player showing while avatar is customizing it":::
+
 - ([Control Panel](#prepare-content-with-the-control-panel)) -- control the elements you add
     to the environment with scripted sequences of events. Imagine a
     curtain raise to signal the start of the event!
 
 - [Event templates](#event-templates) -- create a template of your event with all customizations that you add to reuse in future events
 
-- [Environment editor](#add-content-with-the-environment-editor) -- add content to your environment like a video player.
-
-    :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-video-player.png" alt-text="Video player showing while avatar is customizing it":::
-
 ## Add content with the Environment editor
 
-Use the environment editor to add content to your environment that can be controlled during your run-of-show. 
+Use the environment editor to add content to your environment that can be controlled during your run-of-show.
 
 1. Go to your pinned world, or search for it using the **All Mesh
     worlds** button.
