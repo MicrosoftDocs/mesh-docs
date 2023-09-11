@@ -26,70 +26,25 @@ Mesh Toolkit.
 
 The tutorial is structured as follows:
 
-- [Mesh 101 Tutorial](#mesh-101-tutorial)
-  - [Terminology](#terminology)
-  - [Prerequisites](#prerequisites)
-    - [Hardware requirements](#hardware-requirements)
-    - [Unity version 2022.3.7f1](#unity-version-202237f1)
-    - [Previous Unity experience](#previous-unity-experience)
-    - [Azure portal access](#azure-portal-access)
-      - [Content Contributor permissions](#content-contributor-permissions)
-  - [Chapter 1: Set things up for Mesh](#chapter-1-set-things-up-for-mesh)
-    - [Download the Mesh desktop app](#download-the-mesh-desktop-app)
-    - [Download the Mesh Toolkit](#download-the-mesh-toolkit)
-    - [The Packages](#the-packages)
-  - [Chapter 2: Prepare the tutorial project](#chapter-2-prepare-the-tutorial-project)
-    - [Scenes in the tutorial project](#scenes-in-the-tutorial-project)
-    - [About the Scenes](#about-the-scenes)
-    - [Exploring the `StartingPoint` scene](#exploring-the-startingpoint-scene)
-    - [Add the PlayModeSetup prefab](#add-the-playmodesetup-prefab)
-    - [Check the scale of your GameObjects](#check-the-scale-of-your-gameobjects)
-    - [Add the Mesh Thumbnail Camera](#add-the-mesh-thumbnail-camera)
-  - [Chapter 3: Add interactivity with Mesh Visual Scripting](#chapter-3-add-interactivity-with-mesh-visual-scripting)
-    - [Choose the NavMesh layer](#choose-the-navmesh-layer)
-    - [Station 3.1: Create an Interactable Button](#station-31-create-an-interactable-button)
-      - [Create the Visual Script for the button](#create-the-visual-script-for-the-button)
-      - [Putting the script graph together](#putting-the-script-graph-together)
-      - [Get a reference to the PlayVideoButton GameObject](#get-a-reference-to-the-playvideobutton-gameobject)
-      - [Add your new variable to the graph](#add-your-new-variable-to-the-graph)
-      - [Triggering the button](#triggering-the-button)
-      - [Set a variable to let you know if the button is selected](#set-a-variable-to-let-you-know-if-the-button-is-selected)
-      - [Create a group for the nodes](#create-a-group-for-the-nodes)
-      - [Define the Play action](#define-the-play-action)
-      - [Play the video when the Play button is pressed](#play-the-video-when-the-play-button-is-pressed)
-      - [Stop the video if the Play button (now labeled the "Stop" button) is pressed while the video is playing](#stop-the-video-if-the-play-button-now-labeled-the-stop-button-is-pressed-while-the-video-is-playing)
-      - [Changing the button label](#changing-the-button-label)
-      - [Test your work](#test-your-work)
-    - [Station 3.2: Trigger an info dialog](#station-32-trigger-an-info-dialog)
-      - [Test your work](#test-your-work-1)
-    - [Station 3.3: Teleport to the turbine generator](#station-33-teleport-to-the-turbine-generator)
-      - [Update the script graph](#update-the-script-graph)
-      - [Create a Travel Point and add a reference to it](#create-a-travel-point-and-add-a-reference-to-it)
-      - [Test your work](#test-your-work-2)
-    - [Chapter 3: Summary](#chapter-3-summary)
-  - [Chapter 4: Move objects and trigger animations with Mesh Physics](#chapter-4-move-objects-and-trigger-animations-with-mesh-physics)
-    - [Reconfigure the Hierarchy](#reconfigure-the-hierarchy)
-    - [Change the view to display the Chapter 4 Sphere Terrace](#change-the-view-to-display-the-chapter-4-sphere-terrace)
-    - [Station 4.1: Grab and Release](#station-41-grab-and-release)
-      - [Test your work](#test-your-work-3)
-    - [Station: 4.2 Animation Trigger](#station-42-animation-trigger)
-      - [Test your work](#test-your-work-4)
-    - [Station 4.3: Constraining Bodies](#station-43-constraining-bodies)
-    - [Test your work](#test-your-work-5)
-    - [Chapter 4: Summary](#chapter-4-summary)
-  - [Chapter 5: Create and upload your Environment](#chapter-5-create-and-upload-your-environment)
-    - [Create your environment](#create-your-environment)
-    - [Build and publish your environment](#build-and-publish-your-environment)
-    - [Building for single and multiple platforms](#building-for-single-and-multiple-platforms)
-    - [Create the Environment](#create-the-environment)
-    - [Build and publish your Environment](#build-and-publish-your-environment-1)
-    - [Test the PC version of your Environment](#test-the-pc-version-of-your-environment)
-    - [View your Environment in Azure](#view-your-environment-in-azure)
-    - [Summary](#summary)
-  - [Chapter 6: Share your Mesh experience with others](#chapter-6-share-your-mesh-experience-with-others)
-    - [Create an event](#create-an-event)
-    - [Summary](#summary-1)
-  - [Conclusion](#conclusion)
+This article: Overview and setup
+
+[Chapter 2: Prepare the tutorial project](mesh-101-02-prepare-the-project.md)
+
+[Chapter 3: Add interactivity with Mesh Visual Scripting](mesh-101-03-visual-scripting.md)
+
+- Station 3.1: Create an Interactable Button
+- Station 3.2: Trigger an info dialog
+- Station 3.3: Teleport to the turbine generator
+
+[Chapter 4: Move objects and trigger animations with Mesh Physics](mesh-101-04-physics.md)
+
+- Station 4.1: Grab and Release
+- Station: 4.2 Animation Trigger
+- Station 4.3: Constraining Bodies
+
+[Chapter 5: Make your Environment available for Events](mesh-101-05-make-environment-available.md)
+
+[Chapter 6: Create an Event and invite others](mesh-101-06-create-an-event-and-invite-others.md)
 
 ## Terminology
 
