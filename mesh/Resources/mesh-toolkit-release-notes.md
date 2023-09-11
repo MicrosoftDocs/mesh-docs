@@ -32,15 +32,6 @@ These are the offerings and packages currently available. There may be slight di
 | Mesh Azure Portal |  20230817.92   |  2023-9-5 |
 | Mesh (PC/Quest)   |  5.2311.0       |  2023-9-  |
 
-### 23.11 Hotfix
-
-Added support for uploading asset bundles to M365.
-
-* Previously uploaded asset bundles are not accessible by new versions of the Environment. Ensure all required platforms are built and uploaded together to avoid any issues when entering events.
-* Thumbnails are now mandatory with each upload.
-* The button to directly open a test space after uploading an environment is not available with M365.
-* The Azure service can still be used with the **Environments (Azure)** menu item until it is deprecated.
-
 ### What's new
 
 * See the [Mesh Toolkit 23.11 upgrade guide](../developer-guidance-23.11.md).
@@ -116,3 +107,11 @@ Added support for uploading asset bundles to M365.
 * There is a new Animation analyzer to look at animators that update even when culled.
 * We added Mesh Uploader integration! Now some analyzers will run before every upload. Note: analyzers which require PlayMode are not run.
 
+#### 23.11 Hotfix
+
+Added support for uploading asset bundles to M365.
+
+* Previously uploaded asset bundles are not accessible by new versions of the Environment. Ensure all required platforms are built and uploaded together to avoid any issues when entering events.
+* Thumbnails are now mandatory with each upload.
+* The button to directly open a test space after uploading an environment is not available with M365.
+* The Azure service can still be used with the **Environments (Azure)** menu item until it is deprecated.
