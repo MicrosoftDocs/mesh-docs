@@ -12,6 +12,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 23.11
 
+* When an avatar is being broadcasted in a Mesh event, it may disappear when viewed from certain angles. The broadcaster is still visible locally. (20753)
 * On the Dashboard, the scroll bar length could be too long for the content being displayed. (19504)
 * On the Dashboard, go to **All Worlds**, and holding down the scroll bar and leaving the UI dialog will bring you back on top of the screen. (19502)
 * On the Dashboard, scrolling through the **All Worlds** menu with the scroll wheel on the mouse jumps multiple pages at a time. (19501)
