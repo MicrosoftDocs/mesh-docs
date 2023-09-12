@@ -43,11 +43,13 @@ In particular, the Mesh 23.11 release has two major updates that are more impact
 7. Open the Unity project.
 8. Run the Content Performance Analyzer and fix any errors it produces (**Mesh Toolkit** -> **Content Performance Analyzer**)
 9. Reconfigure the cloud scripting deployment configuration.
-a. See Cloud Scripting section in Breaking changes below
-10. Publish the environment.
+    1. See Cloud Scripting section in Breaking changes below
+1. Publish the environment.
 
     > [!NOTE]
     > Update the MeshApp subscription, resource group, etc. in the Mesh Uploader.
+
+Having issues? See the [troubleshooting](#troubleshooting) section below.
 
 ## Breaking changes
 
@@ -235,6 +237,10 @@ Connect the nodes as shown in the image below. If everything is correct, the bod
 ## Known issues
 
 See the [Mesh Toolkit release notes](Resources/mesh-toolkit-release-notes.md) for 23.11.
+
+## Troubleshooting
+
+If you have trouble with the update script, try to resolve it by right clicking the toolkit package folder in the Project View and select **Reimport**. This should help resolve dangling references in the PlaymodeSetup prefab.
 
 ## Next steps
 

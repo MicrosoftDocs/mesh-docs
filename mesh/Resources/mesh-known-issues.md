@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 # Active known issues - Mesh
 
-## Version 23.11
+## Version 5.2311.0
 
 * When an avatar is being broadcasted in a Mesh event, it may disappear when viewed from certain angles while the broadcaster visual indicator remains visible during this time. (20753)
 * On the Dashboard, the scroll bar length could be too long for the content being displayed. (19504)

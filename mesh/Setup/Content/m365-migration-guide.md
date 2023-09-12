@@ -90,3 +90,4 @@ Great job! You've now created your event. Co-organizers and invitees will now se
 
 > [!NOTE]
 > Please ensure that all participants have updated their Mesh app to the most recent version to ensure that they can use the link in their calendar invite and join the event you just created!
+

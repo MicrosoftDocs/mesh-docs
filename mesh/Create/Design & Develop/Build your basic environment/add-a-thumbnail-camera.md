@@ -24,7 +24,7 @@ like.
     be based on the **Scene** view).
 
 2. Select the "+" drop-down located below the **Hierarchy** tab, and
-    then select **Mesh Toolkit** \**Thumbnail Camera**.
+    then select **Mesh Toolkit Thumbnail Camera**.
 
 3. To confirm that the view in the Thumbnail Camera is what you want,
     in the **Hierarchy**, select **MeshThumbnailCamera**. The Camera's

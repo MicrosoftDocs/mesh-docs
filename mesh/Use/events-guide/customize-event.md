@@ -8,9 +8,9 @@ ms.topic: Guide
 keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer, customize
 ---
 
-## Customize your event
+# Customize your event
 
-Now that you've created your event, it's time to customize your event to add any run-of-show tools you'd like to use during your event. 
+Now that you've created your event, it's time to customize your event to add any run-of-show tools you'd like to use during your event.
 
 ## Considerations before starting your event
 
@@ -36,11 +36,13 @@ time.
 > caution, knowing that any edits you make will affect the environment
 > that event participants will join in.
 
-
-
 ## Event Producers tools
 
 The major tools you'll use to produce your event are the:
+
+- [Environment editor](#add-content-with-the-environment-editor) -- add content to your environment like a video player.
+
+    :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-video-player.png" alt-text="Video player showing while avatar is customizing it":::
 
 - ([Control Panel](#prepare-content-with-the-control-panel)) -- control the elements you add
     to the environment with scripted sequences of events. Imagine a
@@ -48,14 +50,9 @@ The major tools you'll use to produce your event are the:
 
 - [Event templates](#event-templates) -- create a template of your event with all customizations that you add to reuse in future events
 
-- [Environment editor](#add-content-with-the-environment-editor) -- add content to your environment like a video player.
-
-    :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-video-player.png" alt-text="Video player showing while avatar is customizing it":::
-
-
 ## Add content with the Environment editor
 
-Use the environment editor to add content to your environment that can be controlled during your run-of-show. 
+Use the environment editor to add content to your environment that can be controlled during your run-of-show.
 
 1. Go to your pinned world, or search for it using the **All Mesh
     worlds** button.
@@ -65,8 +62,8 @@ Use the environment editor to add content to your environment that can be contro
     ![A screenshot of a computer Description automatically generated with medium confidence](../../media/mesh-event-producer-guide/image013.png)
 
 1. Click the **Customize event experience** button and enter the event.
-Once you've joined, you can begin [adding content with the Control
-Panel](#_Add_Content_with).
+Once you've joined, you can begin adding content with the Control
+Panel
 
     ![A screenshot of a computer Description automatically generated with
 medium confidence](../../media/mesh-event-producer-guide/image016.png)
@@ -76,11 +73,11 @@ medium confidence](../../media/mesh-event-producer-guide/image016.png)
 1. Select the **Environment editor** button.
 
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor.png" alt-text="Environment editor button in Mesh.":::
-   
+
 1. Select the **+** button to open the Catalog of artifact you can add.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-catalog.png" alt-text="Environment editor catalog of artifacts you can add to your event.":::
-   
+    :::image type="content" source="../../Resources/media/artifacts-dialog.png" alt-text="Artifacts dialog with 3 artifacts":::
+
 1. Browse the available artifacts that you can add then select one to add it.
 1. Once you've added an artifact, you'll see it show up in the Artifacts window as shown below:
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-added-artifact.png" alt-text="Video player artifact shown in list of artifacts":::
@@ -155,7 +152,7 @@ While in preview mode, you can test out using the control panel to play your vid
 When you're done configuring content for the event, you can exit the
 customization session and it will automatically save your changes.
 
-# Event templates
+## Event templates
 
 Now that you've created an event and customized it to your liking,
 create an Event template! Event templates to easily reproduce curated
@@ -167,7 +164,7 @@ integration features (via the Control Panel, Unity Timelines, and Unity
 Video Player) to that event. That event can be saved and become a
 Template, used across future events with no additional work needed.
 
-## Manage events page
+### Manage events page
 
 To manage your events, you must be in the Manage events page.
 
@@ -180,7 +177,7 @@ To manage your events, you must be in the Manage events page.
 
 3. You will see the **Manage events** button.
 
-## Create a template
+### Create a template
 
 1. In the left-side vertical button bar, click the icon of your World,
     or click the **All Mesh worlds** button to find your world.
@@ -201,11 +198,12 @@ To manage your events, you must be in the Manage events page.
 
     ![Graphical user interface Description automatically generated](../../media/mesh-event-producer-guide/image047.png)
 
-## Deleting templates
+### Deleting templates
 
 1. Go to the **Manage Events** page.
 
-2. Click the **Templates** tab.\
+2. Click the **Templates** tab.
+
     ![Graphical user interface, application Description automatically generated](../../media/mesh-event-producer-guide/image048.png)
 
 3. In the Template list, select the template you want to delete, and
