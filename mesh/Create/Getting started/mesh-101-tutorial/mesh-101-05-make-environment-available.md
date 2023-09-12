@@ -20,7 +20,7 @@ Mesh *Environment* and upload it to your Mesh World in the Azure Portal. At that
 1. On the menu bar, select **Mesh Toolkit** > **Configure** >
     **Project Settings**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image088.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/001-project-settings.png)
 
 2. Select **Yes** to configure project settings for Mesh.
 
@@ -39,7 +39,7 @@ World you're uploading the Environment to.
 1. Make sure you're in the **Create** **Environment** tab, and then, in
     the **Internal Name** field, type "Wind Turbine Tutorial."
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image090.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/037-upload-create.png)
 
 2. In the **Description** field, type "An interactive Mesh experience
     that teaches you about wind turbines."
@@ -56,7 +56,7 @@ World you're uploading the Environment to.
 5. In the **Capacity** field, enter the capacity for your Environment.
     The maximum is 16.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image091.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/038-upload-capacity.png)
 
 6. Select **Create Asset** to create the Environment that you'll be
     uploading to the Azure Portal.
@@ -64,14 +64,14 @@ World you're uploading the Environment to.
 7. You'll receive a confirmation dialogue as shown below. Select
     **Close**.
 
-    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image092.png)
+    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/039-create-results.png)
 
 ### Build and publish your environment
 
 You should now be in the **Update Environment** tab of the **Mesh
 Environments** window.
 
-![A screenshot of a computer Description ](../../../media/sample-mesh-101/image093.jpg)
+![A screenshot of a computer Description ](../../../media/sample-mesh-101/040-upload-update.png)
 
 > [!NOTE]
 > In the **Environment Configurations** section, a new Environment configuration has been created that displays the name you  added in the **Create Environment** tab: *Wind Turbine Tutorial*. If you see any other Environment configurations, close them.
@@ -115,21 +115,14 @@ for both PC and Android, so make sure that both buttons are "on."
 
 - Select the **Build and Publish** button.
 
-    ![A screen shot of a computer Description ](../../../media/sample-mesh-101/image097.jpg)
+    ![A screen shot of a computer Description ](../../../media/sample-mesh-101/041-build-and-publish.jpg)
 
 - If the Environment builds and uploads successfully, the **Build and
     Upload Results** dialog appears and confirms the results.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image098.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/042-results.png)
 
-    If the build and upload process fails, this is confirmed in the **Build and Upload** **Results** dialog.
-
-### Test the PC version of your Environment
-
-In the **Build and Upload Results** dialog, select the left button under
-**Published Asset**. This opens the Environment in the Mesh App.
-
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image099.png)
+- If the build and upload process fails, this is confirmed in the **Build and Upload** **Results** dialog.
 
 ### View your Environment in Azure
 
