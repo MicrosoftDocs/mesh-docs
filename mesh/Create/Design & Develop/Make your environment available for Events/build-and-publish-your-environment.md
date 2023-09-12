@@ -21,7 +21,13 @@ After you finish adding all your scene content, the next step is to build the sc
 
     ![Graphical user interface, text, application Description automatically generated](../../../media/make-your-environment-available-for-events/image015.png)
 
-1.  On the menu bar, select **Mesh Toolkit** > **Environments (M365)**.
+1.  On the menu bar, do one of the following:
+
+**To build and publish to the Azure portal**:
+- Select **Mesh Toolkit** > **Environments**.
+
+**To build and publish to the Mesh Portal**:
+- Select **Mesh Toolkit** > **Environments (M365)**.
 
 1. In the **Mesh Environments** window, select **Sign In**.
 
