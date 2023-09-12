@@ -3,7 +3,7 @@ title: Release notes for Mesh
 description: Mesh release notes
 author: qianw211    
 ms.author: qianwen
-ms.date: 9/8/2023
+ms.date: 9/12/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -43,8 +43,11 @@ The **Environment Editor** panel can help to add content to your Event or Templa
 3. Once you have added an artifact to the scene, your artifact will appear in front of your avatar and you can configure it in the Artifact Details panel that will appear on the right side of the screen. 
 
     ![A screenshot of the Artifacts details panel](media/video-artifact.png)
+
+    >[!Note]
+    >The video artifact in a Mesh event currently supports only direct links to video files (such as .MP4) stored on SharePoint or direct HTTPS URLs. Links to video services like YouTube or Vimeo are not supported.
  
-    The parameters you set here will determine your artifact configuration when your event starts. If you want to change the configuration live during your event, for example, show a different image or video as the event progresses. If you would like to make the artifact invisible until the right moment in your experience and then have it appear at the right moment you can do so using the [**Control Panel**](../use/events-guide/customize-event.md#prepare-content-with-the-control-panel). </mark>
+    The parameters you set here will determine your artifact configuration when your event starts. If you want to change the configuration live during your event, for example, show a different image or video as the event progresses. Or if you would like to make the artifact invisible until the right moment in your experience and then have it appear at the right moment you can do so using the [**Control Panel**](../use/events-guide/customize-event.md#prepare-content-with-the-control-panel).
 
 4. Anywhere you see a URL parameter, you should be able to copy and paste a share link from SharePoint or OneDrive for the image or video you would like to share. Make sure you either make the link accessible to anyone at your organization or set the permissions so that everyone who attends your events will have access. 
 1. To position your artifact - with the environment editor open:
