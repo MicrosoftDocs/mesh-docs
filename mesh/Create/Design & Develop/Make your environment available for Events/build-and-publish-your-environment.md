@@ -68,7 +68,7 @@ After you finish adding all your scene content, the next step is to build the sc
     Environments** window.
 
     ![A screenshot of a computer Description automatically
-    generated](../../../media/make-your-environment-available-for-events/003-uploader-update.jpg)
+    generated](../../../media/make-your-environment-available-for-events/003-uploader-update.png)
 
     Note that in the **Environment Configurations** section, you already
     have an Environment configuration created which displays the name you
@@ -81,7 +81,7 @@ After you finish adding all your scene content, the next step is to build the sc
     project that you want as the Environment. In this example, we're
     using the Mesh sample project *Dartroom*, so our chosen scene will be the scene also named *DartRoom*.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/make-your-environment-available-for-events/004-scene-select.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/make-your-environment-available-for-events/004-scene-select.png)
 
 1.  Select **Include thumbnails** and then, in the popup menu, choose
     **Generate Thumbnails**.
@@ -115,10 +115,10 @@ After you finish adding all your scene content, the next step is to build the sc
 1.  If the Environment builds and uploads successfully, the **Build and
     Upload Results** dialog appears and confirms the results.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/make-your-environment-available-for-events/025-build-succeeded.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/make-your-environment-available-for-events/005-build-succeeded.png)
 
     If the build and upload process fails, this is confirmed in the **Build and Upload** Results dialog:
 
-    ![A screenshot of a computer program Description automatically generated with medium confidence](../../../media/make-your-environment-available-for-events/006-build-failed.jpg)
+    ![A screenshot of a computer program Description automatically generated with medium confidence](../../../media/make-your-environment-available-for-events/006-build-failed.png)
 
 

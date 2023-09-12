@@ -115,7 +115,7 @@ for both PC and Android, so make sure that both buttons are "on."
 
 - Select the **Build and Publish** button.
 
-    ![A screen shot of a computer Description ](../../../media/sample-mesh-101/041-build-and-publish.jpg)
+    ![A screen shot of a computer Description ](../../../media/sample-mesh-101/041-build-and-publish.png)
 
 - If the Environment builds and uploads successfully, the **Build and
     Upload Results** dialog appears and confirms the results.
