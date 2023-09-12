@@ -108,7 +108,7 @@ resource groups.
 NOTE: For Mesh TAP, resource groups can be created only in the west
 central US region.
 
-##Provide Microsoft with Required Information
+## Provide Microsoft with Required Information
 
 Microsoft requires certain information to provision tenants, users, and
 subscriptions for pre-release features in Mesh.
@@ -163,7 +163,6 @@ Properties of the domain.
 screenshot](../../media/preparing-organization-for-mesh/image002.png)
 
 
-
 ### Where
 
 Go to portal.azure.com, open Subscriptions, locate the subscription you
@@ -176,11 +175,11 @@ manage policies, view requests, view eligible subscriptions.
 
 ### More Information 
 
-<https://learn.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin>
+[Elevate access as a global admin](/azure/role-based-access-control/elevate-access-global-admin)
 
-<https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal-subscription-admin>
+[Role assignments for portal subscription admin](/azure/role-based-access-control/role-assignments-portal-subscription-admin)
 
-# Teams TAP for Mesh
+## Teams TAP for Mesh
 
 Access to Teams immersive spaces is available only to tenants enrolled
 in the Microsoft Teams TAP, which is administered by the Teams team. New
@@ -198,7 +197,7 @@ participation in Teams TAP or Mesh TAP. For more information, see [Set
 up avatars for Microsoft Teams - Microsoft Teams \| Microsoft
 Learn](https://learn.microsoft.com/en-us/microsoftteams/meeting-avatars)
 
-# Contact Owners of Supporting Teams
+### Contact Owners of Supporting Teams
 
 To complete the steps in the onboarding process, you will need to either
 have various rights and permissions or be in contact with people in your
@@ -209,7 +208,7 @@ completing the TAP paperwork. The following section lists organizational
 roles that you will probably need to work with to complete the required
 pre-deployment tasks.
 
-## Teams Apps Managers
+#### Teams Apps Managers
 
 Most of the administration for Mesh will happen in the Teams admin
 portal, [admin.teams.microsoft.com](https://admin.teams.microsoft.com).
@@ -218,7 +217,7 @@ Mesh team the role of Teams Administrator in Azure Active Directory, or
 you will need to work closely with a current Teams Apps Manager to make
 all necessary configurations.
 
-### Teams App Policy
+#### Teams App Policy
 
 Two of the Mesh components you will be using are Teams apps; you should
 set policy to make sure only approved users have access to them. Modify
@@ -233,7 +232,7 @@ specific details about the apps and suggested permissions will be
 available in the *All Users Guide for Mesh for Teams* doc, which you
 will have access to **after** the paperwork is signed.
 
-### Teams Feedback Policies
+#### Teams Feedback Policies
 
 Microsoft relies on feedback from users to make better products. The
 Teams administrator can set whether users can send feedback about Teams
@@ -498,7 +497,7 @@ described above, Quest users can attend standalone Mesh events if
 invited. After your tenant is onboarded for Teams immersive spaces,
 Quest users can also access all meetings in Teams via headset.
 
-# Summary
+## Summary
 
 Microsoft Mesh offers many powerful features that enhance communication
 and collaboration in remote and hybrid workplaces. Because this service
@@ -508,7 +507,7 @@ others specific to your organization. After you are onboarded to the
 preview program, you will get access to detailed documentation on
 setting up and using all available Mesh features.
 
-# Checklist
+## Checklist
 
 The following tasks can be completed prior to your paperwork being
 signed:
@@ -519,8 +518,7 @@ signed:
 - Enroll in the [Microsoft Teams TAP](http://aka.ms/JoinTAP100)
 
 - Verify that the tenant you will use for Mesh is licensed for
-    [Microsoft 365 E3 or
-    E5](https://www.microsoft.com/en-us/microsoft-365/enterprise/compare-office-365-plans?ef_id=f1e78938c11a11837d66ea4d52ed8289:G:s&OCID=AIDcmmwf9kwzdj_SEM_f1e78938c11a11837d66ea4d52ed8289:G:s&lnkd=Bing_O365SMB_Brand&msclkid=f1e78938c11a11837d66ea4d52ed8289)
+    [Microsoft 365 E3 or E5](https://www.microsoft.com/en-us/microsoft-365/enterprise/compare-office-365-plans?ef_id=f1e78938c11a11837d66ea4d52ed8289:G:s&OCID=AIDcmmwf9kwzdj_SEM_f1e78938c11a11837d66ea4d52ed8289:G:s&lnkd=Bing_O365SMB_Brand&msclkid=f1e78938c11a11837d66ea4d52ed8289)
 
 - Verify that the tenant you will use for Mesh has a [Storage subscription for Azure](#Verify_Your_Licensing)
 
