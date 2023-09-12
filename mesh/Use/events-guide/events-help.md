@@ -46,20 +46,17 @@ guests:
     determine what the emails are. Please only separate emails by commas
     (,) when pasting them.
 
- *Incorrect:*
+     > *Incorrect:*
+     >Person1@EmailForWork.com, Person2@EmailForWork.com, ... , ...
+    
+     >*Correct:*
+     >*Person1@EmailForWork.com*, Person2@EmailForWork.com, ... , ...
 
- \<\[<Person1@EmailForWork.com>\]\, \<\[<Person2@EmailForWork.com>\]\,
- ... , ...
+> [!div class="nextstepaction"]
+> [Customize your event](customize-event.md)
 
- *Correct:*
+> [!div class="nextstepaction"]
+> [Produce your event](produce-event.md)
 
- <Person1@EmailForWork.com>, <Person2@EmailForWork.com>, ... , ...
-
-   > [!div class="nextstepaction"]
-   > [Customize your event](customize-event.md)
-
-   > [!div class="nextstepaction"]
-   > [Produce your event](produce-event.md)
-
-   > [!div class="nextstepaction"]
-   > [Event help](events-help.md)
+> [!div class="nextstepaction"]
+> [Event help](events-help.md)

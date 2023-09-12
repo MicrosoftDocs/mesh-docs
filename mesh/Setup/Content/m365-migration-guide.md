@@ -40,6 +40,12 @@ As we are moving to Microsoft M365, there will be a need to:
 
 We are excited to move to M365 and appreciate your patience in this process.
 
+## Prerequisites
+
+Microsoft 365 Admins should use the M365 Admin Center (MAC) to enable the Mesh access policy for users to make the Mesh Portal accessible. If the Mesh Portal is not accessible to you, you may need to ask your M365 Admin or wait for the policy to be available for your organization.
+
+[See how to set up Mesh experiences in M365](setup-m365-mesh.md).
+
 ## Mesh worlds
 
 Mesh worlds are the home for your custom environments that you upload through the Mesh Toolkit Uploader in Unity.
@@ -91,3 +97,16 @@ Great job! You've now created your event. Co-organizers and invitees will now se
 > [!NOTE]
 > Please ensure that all participants have updated their Mesh app to the most recent version to ensure that they can use the link in their calendar invite and join the event you just created!
 
+
+## Upload a custom environment
+
+The real power of Mesh is the ability to use custom environments to *wow* attendees and curate experiences to your needs.
+
+These environments can vary widely, determined by your resources and creativity!
+
+In order to upload environments, you'll need to use Unity and follow the developer flow included in our docs.
+
+[See how to upload environments ](../../Create/Getting%20started/mesh-101-tutorial/mesh-101-05-make-environment-available.md)
+ 
+   > [!div class="nextstepaction"]
+   > [Mesh user guide](../../Use/user-guide/mesh-user-guide.md)
