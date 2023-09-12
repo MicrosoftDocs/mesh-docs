@@ -3,7 +3,7 @@ title: Release notes for Mesh Toolkit
 description: Mesh release notes
 author: qianw211    
 ms.author: qianwen
-ms.date: 9/8/2023
+ms.date: 9/11/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 ---
@@ -34,8 +34,10 @@ These are the offerings and packages currently available. There may be slight di
 
 ### What's new
 
+* See the [Mesh Toolkit 23.11 upgrade guide](../developer-guidance-23.11.md).
 * Unity upgraded to 2022.3.7. We recommend all Unity projects for Mesh environments to be upgraded to Unity 2022 LTS, using the latest 23.11 Mesh Toolkit and Mesh app build.
 * Player spawning is now handled by `TravelPoints`, the legacy spawn system has been removed: this includes the `SpawnPointConfig` and `ArbitrarySpawnPointConfig` scripts and support for spawning into seats by default.  All Mesh environments must have `TravelPoints` configured to maintain desired player spawning behavior.  If no `TravelPoints` are found in the scene, the player will spawn above the origin, and if the floor is nearby, the player will be grounded, otherwise the player will fall and respawn in a loop.
+* We're currently migrating from the interaction events on various Mesh Interactables and Mesh Physics components over to Visual Scripting.
 
 #### Scripting
 
@@ -105,3 +107,11 @@ These are the offerings and packages currently available. There may be slight di
 * There is a new Animation analyzer to look at animators that update even when culled.
 * We added Mesh Uploader integration! Now some analyzers will run before every upload. Note: analyzers which require PlayMode are not run.
 
+#### 23.11 Hotfix
+
+Added support for uploading asset bundles to M365.
+
+* Previously uploaded asset bundles are not accessible by new versions of the Environment. Ensure all required platforms are built and uploaded together to avoid any issues when entering events.
+* Thumbnails are now mandatory with each upload.
+* The button to directly open a test space after uploading an environment is not available with M365.
+* The Azure service can still be used with the **Environments (Azure)** menu item until it is deprecated.
