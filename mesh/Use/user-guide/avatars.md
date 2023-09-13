@@ -17,7 +17,7 @@ In Mesh events, you're represented by avatars. By customizing your avatars the w
 
 For more information, see [Join a meeting as an avatar in Microsoft Teams](https://support.microsoft.com/en-us/office/join-a-meeting-as-an-avatar-in-microsoft-teams-5384e7b7-30c7-4bcb-8065-0c9e830cc8ad).
 
-## Start customizing your avatars
+## Create your avatars
 
 You can access avatar customization from the following entry points:
 
