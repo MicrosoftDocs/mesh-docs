@@ -41,8 +41,7 @@ The participants you can invite fall into two categories:
     must have Content contributor privileges provided by an IT Admin in
     Azure.
 
- [Learn more about Content contributor
- privileges](#content-contributor-permissions)
+ [Learn more about Content contributor privileges](#content-contributor-permissions)
 
 ### To invite a guest
 
@@ -139,9 +138,8 @@ rooms event goes smoothly.
 
     ![](../../media/mesh-event-producer-guide/image019.png)
 
-    > [!IMPORTANT]
-    >
-> You may need to select Provision a few times. Please re-select **Provision** if you've refreshed the event and it still shows Provision instead of Provisioned.
+    > [!IMPORTANT] 
+    > You may need to select Provision a few times. Please re-select **Provision** if you've refreshed the event and it still shows Provision instead of Provisioned.
 
 3. While provisioning, the button will show **In Progress**.
 
