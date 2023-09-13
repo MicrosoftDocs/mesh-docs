@@ -35,5 +35,7 @@ The steps for each of these are explained in later sections. To learn
 more about optimizing for different platforms, see the article named
 *Mesh performance guidelines*.
 
-Next Steps:
-Add the Mesh Thumbnail camera TBD
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Add a thumbnail camera](add-a-thumbnail-camera.md)

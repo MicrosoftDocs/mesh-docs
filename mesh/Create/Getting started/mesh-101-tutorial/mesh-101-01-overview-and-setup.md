@@ -182,3 +182,8 @@ For this tutorial, you don't need to install any packages---they're
 already pre-loaded into the tutorial project. If you were creating your
 own project from scratch, you would need to install the Mesh Toolkit
 package. To learn more about this, see our article titled *Download the Mesh Toolkit*.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Chapter 2: Prepare the project](mesh-101-02-prepare-the-project)

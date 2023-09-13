@@ -28,3 +28,8 @@ View more information on Microsoft's technical documentation website.
 
 - API Reference -
     [Microsoft.MixedReality.GraphicsTools](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.GraphicsTools) 
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Object and avatar interactions](object-avatar-interactions.md)

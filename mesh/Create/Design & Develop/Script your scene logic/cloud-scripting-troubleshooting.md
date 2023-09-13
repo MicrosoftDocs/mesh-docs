@@ -190,3 +190,8 @@ A Log Analytics workspace is required for this setup. If you don't have an exist
 
 1. [Gather](#how-to-collect-logs) all the logs available.
 1. Report through the appropriate channel on Teams.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Cloud scripting known issues](cloud-scripting-known-issues.md)

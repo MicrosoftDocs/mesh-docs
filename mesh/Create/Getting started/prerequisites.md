@@ -43,3 +43,7 @@ To upload an Environment to a Mesh world, there are two things that must be enab
 
 2. **Content Contributor role.** Your Azure Admin or Mesh world owner must add your work account as a content contributor for each Mesh world you want to upload an Environment to. For more information, see [Becoming a Content Contributor](TBD).
 
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Download the Mesh Toolkit](download-the-mesh-toolkit.md)

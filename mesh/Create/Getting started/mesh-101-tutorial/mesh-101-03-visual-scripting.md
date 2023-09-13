@@ -565,3 +565,8 @@ your experience to do the following:
 3. Press a button that teleports the participant from the ground up to
     a platform attached to a wind turbine generator, where they can
     examine the generator up close.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Chapter 4: Move objects and trigger animations with Mesh Physics](mesh-101-04-physics)

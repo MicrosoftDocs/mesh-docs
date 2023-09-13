@@ -146,3 +146,8 @@ up to you. For the example below, we chose a close-up front view of a
 wind turbine.
 
 ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image020.jpg)
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Chapter 3: Add interactivity with Mesh Visual Scripting](mesh-101-03-visual-scripting.md)
