@@ -156,7 +156,7 @@ to Preview Mode.
 
 While in preview mode, you can test out using the control panel to play your video or interact with your content.
 
-:::image type="content" source="../../media/mesh-event-producer-guide/Video-player-2.png" alt-text=":::
+:::image type="content" source="../../media/mesh-event-producer-guide/Video-player-2.png" alt-text="___":::
 
 When you're done configuring content for the event, you can exit the
 customization session and it will automatically save your changes.
