@@ -14,6 +14,9 @@ Here is our current set of known issues.  We're working on addressing all these 
 
 ## High priority
 
+### Azure Login Expired
+Some users are experiencing an error during deploy and publish that shows the a similar log output to the following: `The client 'YOUR_USER_EMAIL' with object id 'YOUR_AAD_ID' does not have authorization to perform action 'Microsoft.Resources/deployments/write' over scope ...` This occurs when the locally cached login as expired. The expiration can be checked by running `az account get-access-token --query "expiresOn" --output tsv` in command line. As a workaround, manually run `az login` from the command line.
+
 ### Environment Upload Hangs
 If environment upload process never completes or hangs, refer to [Mesh APP CLI Tool]() TBD on how to deploy manually.
 
