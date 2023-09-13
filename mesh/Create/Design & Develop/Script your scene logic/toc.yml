@@ -15,3 +15,5 @@ items:
     href: cloud-scripting-release notes.md
   - name: Visual Scripting
     href: visual-scripting.md    
+  - name: Allowlist
+    href: allowlist-files/toc.yml    
