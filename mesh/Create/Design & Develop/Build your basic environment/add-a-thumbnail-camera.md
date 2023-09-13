@@ -42,8 +42,3 @@ like.
 
     ![A screenshot of a computer Description automatically generated](../../../media/get-started-developing-mesh/image013.jpg)
 
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Enhance your environment]../Enhance your Environment/enhanced-features-overview.md)
-

@@ -93,9 +93,3 @@ Once you've created an Environment through the paths mentioned above, you can ad
 
 - And more!
 
-## Next steps
-
-   > [!div class="nextstepaction"]
-   > [Download the Mesh Toolkit](Getting%20started/download-the-mesh-toolkit.md)
-   > [Mesh 101 tutorial](./mesh-101-tutorial/mesh-101-01-overview-and-setup.md)
-   

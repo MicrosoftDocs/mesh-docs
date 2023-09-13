@@ -126,9 +126,7 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
 
 1. Click the **+** button.
 
-    ![A screenshot of a computer Description automatically generated
-    with medium
-    confidence](../../media/mesh-event-producer-guide/image034.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/mesh-event-producer-guide/image034.png)
 
 1. In the **Select content** window, select the artifact then select  **Add**. You will see it show up in the Control Panel.
 
