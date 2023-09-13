@@ -116,7 +116,7 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
 1. After you've joined the session, click
     the "Control panel" button.
    
-       ![A screenshot of a video game Description automatically generated](../../media/mesh-event-producer-guide/image024.png)
+    ![A screenshot of a video game Description automatically generated](../../media/mesh-event-producer-guide/image024.png)
 
     > [!NOTE]
     > Adding content takes place in **Edit mode**. 
@@ -127,9 +127,7 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
 
 1. Click the **+** button.
 
-    ![A screenshot of a computer Description automatically generated
-    with medium
-    confidence](../../media/mesh-event-producer-guide/image034.png)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/mesh-event-producer-guide/image034.png)
 
 1. In the **Select content** window, select the artifact then select  **Add**. You will see it show up in the Control Panel.
 

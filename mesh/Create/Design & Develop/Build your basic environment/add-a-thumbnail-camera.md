@@ -42,5 +42,7 @@ like.
 
     ![A screenshot of a computer Description automatically generated](../../../media/get-started-developing-mesh/image013.jpg)
 
-Next Steps:
-TBD
+## Next steps
+
+   > [!div class="nextstepaction"]
+   > [Building for single and multiple platforms](build-for-single-and-multiple-platforms.md)
