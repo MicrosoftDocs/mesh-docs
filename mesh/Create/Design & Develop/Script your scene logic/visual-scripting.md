@@ -32,7 +32,7 @@ Otherwise, there's no special setup needed&#8212;you can just start scripting!
 
 **Limitations**
 
-- Only a subset of Unity functionality is exposed to visual scripts. See the [allowlist documentation](allowlist-files/allowlist.md) for details.
+- Only a subset of Unity functionality is exposed to visual scripts.
 - Variables and properties with non-simple types (including object references) aren't automatically shared. See [Sharing and networking](#sharing-and-networking) below to learn more about this.
 
 ## Development workflow
@@ -173,7 +173,7 @@ Mesh protects users from threat scenarios such as these:
 
 To achieve this, Mesh runs visual scripts in a sandbox (like JavaScript in a web browser).
 
-At scene startup, Mesh uses a curated allowlist to validate visual scripts to limit access to certain types of Unity components and a safe subset of their properties. See the [allowlist documentation](allowlist-files/allowlist.md) for details.
+At scene startup, Mesh uses a curated allowlist to validate visual scripts to limit access to certain types of Unity components and a safe subset of their properties.
 
 At scene runtime, Mesh limits access to certain parts of the scene:
 
