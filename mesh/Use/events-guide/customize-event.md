@@ -87,6 +87,15 @@ medium confidence](../../media/mesh-event-producer-guide/image016.png)
 1. Now you can manipulate the artifact as you'd like by selecting it with your cursor, dragging it to another location, or using the edges of the artifacts to scale them as you see fit.
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-video-player.png" alt-text="Video player showing while avatar is customizing it":::
 
+### Video player artifact requirements
+
+For video artifacts, you must:
+- Use **.MP4** file type only.
+- Use direct links to video files that are stored on SharePoint or HTTPS URLs. Links to video services like YouTube, Vimeo, etc. are not supported
+
+    For example, use the **Share** or the **Copy Link** functionality in SharePoint to copy the link of the video you want to share and paste it in the Video player artifact URL field.
+
+    :::image type="content" source="../../media/mesh-event-producer-guide/SharePoint-link.png" alt-text="Sharepoint link copied in sharepoint":::
 
 ### Configure content controls for artifacts
 
@@ -95,7 +104,10 @@ Once you've added an artifact to the Artifact panel, you can select the artifact
 1. Select an added artifact to open up the controls window.
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-open-controls-window.png" alt-text="Controls window showing for artrifact that hsas been added to an environment":::
 1. Configure the controls for the artifact. For example, you can add the URL for your video:
-    :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-URL-add.png" alt-text="Adding URL for a video to play during your event.":::
+    :::image type="content" source="../../media/mesh-event-producer-guide/Customize-sharepoint-link-video-url.png" alt-text="Adding URL for a video to play during your event.":::
+
+    > [!NOTE]
+    > The only video type that is supported is **.MP4** inside the video artifact.
 
 ## Prepare content with the Control Panel
 
@@ -131,8 +143,6 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
     window will be empty. Reference the [Choose your journey](../../Create/Getting%20started/choose-your-journey.md)
     to get started with adding custom content.
 
-- For a VideoPlayer, the URL needs to be a publicly accessible
-    webpage, or static hosted MP4.
 
 - In the **Select content** window, select the content you want to
     add, and then click the **Add** button.
@@ -147,7 +157,7 @@ to Preview Mode.
 
 While in preview mode, you can test out using the control panel to play your video or interact with your content.
 
-:::image type="content" source="../../media/mesh-event-producer-guide/Video-player.png" alt-text="Video playing while in preview mode in a customization session":::
+:::image type="content" source="../../media/mesh-event-producer-guide/Video-player-2.png" alt-text=":::
 
 When you're done configuring content for the event, you can exit the
 customization session and it will automatically save your changes.
