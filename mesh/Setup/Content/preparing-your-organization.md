@@ -10,6 +10,11 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 # Preparing your organization for Mesh
 
+> [!IMPORTANT]
+> For the 23.11 release, this document is in a draft form. Due to the nature of this release, there may be content that is out of date.
+> 
+> We thank you for your patience in this transition. In the coming weeks we will provide more up-to-date information regarging our transition to M365 and how to prepare your organization for that.
+
 ## Gather Your v-Team
 
 This document will cover the required tasks and suggest functional roles
@@ -437,7 +442,7 @@ access to Quest devices. For more information about Conditional Access,
 see
 <https://learn.microsoft.com/en-us/mem/intune/protect/conditional-access-intune-common-ways-use>.
 
-## Work with Stakeholders That Communicate Change 
+## Work with Stakeholders That Communicate Change
 
 The stakeholders listed above all have active steps that will impact the
 setup of your Mesh environment, but there may be other parts of your org
@@ -473,7 +478,7 @@ Microsoft has published a blog on Avatar etiquette: How Microsoft
 employees are using avatars for Microsoft Teams in their meetings. This
 doc can help inform materials you might want to share with your users.
 
-### Preparing Users for the Mesh App 
+### Preparing Users for the Mesh App
 
 Your users have access to the Mesh app for PC on the Windows store, and
 the Mesh app for Quest in the Meta store. There are no barriers to any

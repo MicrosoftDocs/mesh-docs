@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, M365, OCPS, Immersive spaces, Avatars, getting started
 
 # Set up Microsoft 365 for Mesh
 
-In the Microsoft 365 Admin Center (MAC) admins can enable access to Mesh experiences. This covers access to the following experiences:
+In the Microsoft 365 Apps Admin Center (MAC) admins can enable access to Mesh experiences. This covers access to the following experiences:
 
 - Mesh app on PC
 - Mesh app on Quest 2
@@ -41,6 +41,8 @@ The table below covers the Mesh experiences, the licensing required, the default
 
 Learn more about [Microsoft Teams Premium](https://www.microsoft.com/en-us/microsoft-teams/premium)
 
+> [!IMPORTANT]
+> Mesh experiences rely on Calendar and Sharepoint. Your M365 license should include these.
 ## Enable Mesh apps in OCPS
 
 1. Sign into [M365 Apps Admin Center](https://config.office.com/officeSettings/) with your Azure Active Directory account with admin privileges for the Microsoft 365 Admin Center.

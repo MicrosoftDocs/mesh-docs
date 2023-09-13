@@ -20,7 +20,8 @@ representing yourself with your personalized avatars.
 
 Follow the steps below to see a list of events and join an event.
 
-1. Open the Mesh App and view the Mesh Dashboard.\
+1. Open the Mesh App and view the Mesh Dashboard.
+
     ![A screenshot of the Mesh dashboard](media/image129.png)
 
 2. In the horizontal menu bar at the top, select **Events**. This shows
@@ -74,20 +75,29 @@ We offer a range of body shapes, facial features, and fine-tuning options so you
 
 
 1. In the prejoin dialogue, you can personalize the avatars you've made or create a new one using the avatar profile bubbles at the bottom.
+
     :::image type="content" source="media/Pre-join-avatars.png" alt-text="pre-join avatars bubbles":::
 1. Select a pre-made avatar to edit it, the pencil to edit the one you're currently looking at, or press the **+** button then **Create New** to create a new one.
-:::image type="content" source="media/Pre-join-create-new-avatar.png" alt-text="Create-new avatar in the prejoin dialogue for a meeting.":::
+
+    :::image type="content" source="media/Pre-join-create-new-avatar.png" alt-text="Create-new avatar in the prejoin dialogue for a meeting.":::
+
 1.  Select a base avatar to start off the customization flow. Scroll to see the variety of starter avatars.
+
     :::image type="content" source="media/Pre-join-base-avatars.png" alt-text="Base avatars selection in prejoin screen":::
+
 1. Select **Use avatar** to select a base avatar.
 1. If you'd like to customize your base avatar some more, select the pencil icon to get started.
+
     :::image type="content" source="media/Pre-join-customize-base.png" alt-text="Customize base avatar pencil icon in prejoin dialogue":::
+
 1. Once you're done customizing, select **Done** to finish.
+
     :::image type="content" source="media/Pre-join-customize-base-done.png" alt-text="Done building avatar":::
 
 Great job! Now you can **Join now** with your personalized avatar.
 
 At any time you can use the Profile button in the bottom right of your screen to further customize your avatar or create a new one.
+
 :::image type="content" source="media/Customize-through-profile.png" alt-text="Profile button in bottom right to select customize avatar":::
 
 ## Enjoy your event
