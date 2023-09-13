@@ -16,7 +16,8 @@ In the Mesh App on PC or Quest, you can attend social gatherings, conferences, a
 
 Follow the steps below to see a list of events and join an event.
 
-1. Open the Mesh App and view the Mesh Dashboard.\
+1. Open the Mesh App and view the Mesh Dashboard.
+
     ![A screenshot of the Mesh dashboard](media/image129.png)
 
 2. In the horizontal menu bar at the top, select **Events**. This shows

@@ -80,23 +80,27 @@ With the transition to M365 and the Mesh Portal, events are handled slightly dif
 1. Open the [Mesh Portal](https://portal-selfhost.mesh.microsoft.com/).
 1. Log in with your corporate account.
 1. In the Home page, select **Events** in the left nav.
+
     :::image type="content" source="../../media/m365-migration-guide/Select-events.png" alt-text="Events button in Mesh portal":::
+
 1. Select **Create event** at the top right.
 1. Add the event name, time duration, description, upload a thumbnail image, and adjust the room capacity settings.
+
     :::image type="content" source="../../media/m365-migration-guide/Event-details.png" alt-text="Event details page in Mesh portal":::
+
 1. Select **Next** when complete.
 1. Choose an environment or select an event template that you may have created before. Select **Next** when finished.
 
     [Learn more about Event templates](../../Use/events-guide/customize-event.md#event-templates)
 
 1. Add your Co-organizers (who will be able to edit the event) and your Attendees (who will be able to join the event) and select **Create event** when finished.
+1
     :::image type="content" source="../../media/m365-migration-guide/Invite-attendees-co-organizers.png" alt-text="Invite page in the Mesh portal":::
 
 Great job! You've now created your event. Co-organizers and invitees will now see the event in their Outlook and Teams calendars.
 
 > [!NOTE]
 > Please ensure that all participants have updated their Mesh app to the most recent version to ensure that they can use the link in their calendar invite and join the event you just created!
-
 
 ## Upload a custom environment
 
@@ -107,6 +111,8 @@ These environments can vary widely, determined by your resources and creativity!
 In order to upload environments, you'll need to use Unity and follow the developer flow included in our docs.
 
 [See how to upload environments ](../../Create/Getting%20started/mesh-101-tutorial/mesh-101-05-make-environment-available.md)
- 
+
+## Next steps
+
    > [!div class="nextstepaction"]
    > [Mesh user guide](../../Use/user-guide/mesh-user-guide.md)
