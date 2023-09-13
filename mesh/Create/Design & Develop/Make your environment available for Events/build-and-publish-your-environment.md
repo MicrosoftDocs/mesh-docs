@@ -121,4 +121,8 @@ After you finish adding all your scene content, the next step is to build the sc
 
     ![A screenshot of a computer program Description automatically generated with medium confidence](../../../media/make-your-environment-available-for-events/006-build-failed.png)
 
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Get information about your Environment](get-information-about-your-environment.md)
 

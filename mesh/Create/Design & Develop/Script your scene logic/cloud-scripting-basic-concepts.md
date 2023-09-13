@@ -124,3 +124,8 @@ The parties work together as illustrated below:
 ![Authentication Flow](../../../media/mesh-scripting/basic-concepts/Authentication_Diagram.png)
 
 Once you've tested from Unity, and you're ready to go live with your MeshApp, update the **Mode** option to **Prod** in the Mesh Uploader Settings located in your Unity project's settings. Select the "Force Deployment" option and use the Mesh Uploader to **Build and Publish** your MeshApp and Environment.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Cloud scripting getting started](cloud-scripting-getting-started.md)

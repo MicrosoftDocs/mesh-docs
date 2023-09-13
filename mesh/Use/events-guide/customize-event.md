@@ -113,15 +113,14 @@ Once you've added an artifact to the Artifact panel, you can select the artifact
 
 Use the **Control Panel** to prepare your artifacts to be used during an event. Like having a technical booth for theatrical technicians, it's designed to give the Event Producer the ability to orchestrate a performance in real time.
 
-1. After you've joined the session, click
-    the "Control panel" button.
+1. After you've joined the session, click the "Control panel" button.
    
     ![A screenshot of a video game Description automatically generated](../../media/mesh-event-producer-guide/image024.png)
 
     > [!NOTE]
     > Adding content takes place in **Edit mode**. 
     >
-    > ![](../../media/mesh-event-producer-guide/image032.png)
+    > ![___](../../media/mesh-event-producer-guide/image032.png)
     >
     > You should be in this mode by default (look at the top/middle of the window).
 
@@ -131,7 +130,7 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
 
 1. In the **Select content** window, select the artifact then select  **Add**. You will see it show up in the Control Panel.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/Add-content-to-control-panle.png" alt-text="Select video player in to add it to the control panel for producing your event.":::
+    ![Select video player to add it to the control panel for producing your event.](../../media/mesh-event-producer-guide/Add-content-to-control-panle.png)
 
 **Control Panel Notes**:
 
@@ -155,7 +154,7 @@ to Preview Mode.
 
 While in preview mode, you can test out using the control panel to play your video or interact with your content.
 
-:::image type="content" source="../../media/mesh-event-producer-guide/Video-player-2.png" alt-text=":::
+:::image type="content" source="../../media/mesh-event-producer-guide/Video-player-2.png" alt-text="___":::
 
 When you're done configuring content for the event, you can exit the
 customization session and it will automatically save your changes.
@@ -222,4 +221,5 @@ To manage your events, you must be in the Manage events page.
    > [Customize your event](produce-event.md)
 
    > [!div class="nextstepaction"]
+   > [Event help](events-help.md)
    > [Event help](events-help.md)

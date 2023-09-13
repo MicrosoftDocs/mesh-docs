@@ -232,3 +232,8 @@ The packages you need for working with Shared Physics are added to your project 
 `Shared Physics` will take care to synchronize motion of rigid bodies between clients. Mesh app `TransformNode.Position`, `TransformNode.Rotation`, `RigidBody.Velocity` and `RigidBody.AngularVelocity` won't be updated with lastest simulation state. However, clients will apply changes if these are set in the mesh app. Note that changing single property will leave others unchanged. For example, if only position is set, velocity won't be changed and rigid body will continue motion with old velocity from new position. Given that mesh app is not updated with latest motion state for rigid bodies, recommendation is to set these only for new rigid bodies.
 
 If `TransformNode` with `RigidBodyNode` is cloned, cloned body will be registered and handed over to `Shared Physics` for synchronization between clients. **Note**: Cloned rigid body will have position, rotation and velocities from the begining of the scene of original rigid body. If these should be different, they must be set explictly in the Mesh app script.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Cloud scripting troubleshooting](cloud-scripting-troubleshooting.md)

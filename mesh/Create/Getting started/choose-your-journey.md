@@ -93,8 +93,3 @@ Once you've created an Environment through the paths mentioned above, you can ad
 
 - And more!
 
-
-## Next steps
-
-   > [!div class="nextstepaction"]
-   > [[Download the Mesh Toolkit](Getting%20started/download-the-mesh-toolkit.md)](../Design%20&%20Develop/Build%20your%20basic%20environment/create-a-new-project.md)

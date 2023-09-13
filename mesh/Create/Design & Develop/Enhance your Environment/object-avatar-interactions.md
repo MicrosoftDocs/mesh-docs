@@ -270,3 +270,8 @@ For manipulables to modify the Target Position:
 **Modify With Visual Script:** Enable this to modify target transform for manipulable bodies using visual script. 
 
 :::image type="content" source="../../../media/mesh-scripting/object-player-interactions/Picture9.png" alt-text="Modify-with-visual-script":::
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Physics interactions](physics-interactions.md)

@@ -237,3 +237,8 @@ your experience to do the following:
     trigger volume
 
 - Drop an object only in a particular area that you specified
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Chapter 5: Make your environment available for Events](mesh-101-05-make-environment-available.md)
