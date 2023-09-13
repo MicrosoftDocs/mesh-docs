@@ -95,6 +95,5 @@ Once you've created an Environment through the paths mentioned above, you can ad
 
 ## Next Steps
 
-
    > [!div class="nextstepaction"]
-   > [[Mesh user controls](mesh-user-controls.md#mesh-controls-overview)](../Design%20&%20Develop/Build%20your%20basic%20environment/create-a-new-project.md)
+   > [Create e new project](../Design%20&%20Develop/Build%20your%20basic%20environment/create-a-new-project.md)

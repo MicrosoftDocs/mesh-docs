@@ -44,6 +44,5 @@ like.
 
 ## Next steps
 
-
    > [!div class="nextstepaction"]
-   > [[Mesh user controls](mesh-user-controls.md#mesh-controls-overview)](build-for-single-and-multiple-platforms.md)
+   > [Build for single and multiple platforms](build-for-single-and-multiple-platforms.md)
