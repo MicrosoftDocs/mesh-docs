@@ -132,7 +132,7 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
 
 1. In the **Select content** window, select the artifact then select  **Add**. You will see it show up in the Control Panel.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/Add-content-to-control-panle.png" alt-text="Select video player in to add it to the control panel for producing your event.":::
+    ![Select video player to add it to the control panel for producing your event.](../../media/mesh-event-producer-guide/Add-content-to-control-panle.png)
 
 **Control Panel Notes**:
 
