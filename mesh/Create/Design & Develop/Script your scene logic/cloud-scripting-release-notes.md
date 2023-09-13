@@ -3,12 +3,32 @@ title: Cloud scripting release notes
 description: Review the release notes for Cloud Scripting for Mesh.
 author: typride
 ms.author: vinnietieto
-ms.date: 8/28/2023
+ms.date: 9/13/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding, troubleshooting, problems
 ---
 
 # Cloud Scripting Release Notes
+
+## Release 31 Aug 2023
+### Versions
+|Component|Version|
+|-|-|
+| MeshApps Dom .NET SDK        |7.23113.1|
+| MeshApp CLI tool             |1.0.2308.2801|
+
+### Features
+- Updated package and samples for Unity 2022.3.7f1.
+- Moved to a per-environment deployment configuration workflow. The deployment configuration is associated with environment and configured from the MeshUploader UI now. See the Getting Started guide for the latest workflow.
+
+### Bug Fixes
+
+### Upgrade instructions
+- To use the global deployment configuration previously set in the project setting in Unity Editor, select the enviorment and scene in the MeshUploader "Update Enviroment" Tab, select the "Modify Deployment Configs" tickbox and subsquently select the "Use Legacy Configs From Assets" option. This should apply the legacy global deployment configuration to the environment and scene.
+
+**_Upgrade the Mesh App C# project_**
+
+Rename WebViewNode to WebSlateNode
 
 ## Release 10 Aug 2023
  
