@@ -26,7 +26,7 @@ You can access avatar customization from the following entry points:
 
 You can create up to three different versions of your avatar to show off your personas in Mesh experiences. 
 
-To create a new avatar, select **+** after clicking the **Profiles** in the bottom right corner of your Mesh App. You can also click on any of the existing avatars you have previously built to start [customizing]().
+To create a new avatar, select **+** after clicking the **Profiles** button in the lower right corner of your Mesh App. You can also click on any of the existing avatars you have previously built to start [customizing]().
 
 ![A screenshot of the Profile menu](media/profile-customize-avatar.png)
 
