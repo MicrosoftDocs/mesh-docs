@@ -650,31 +650,31 @@ medium confidence](../../media/3d-design-performance-guide/image046.png)
 
 *Unity Lighting settings (Window/Rendering/Lighting)*
 
-+---------------------------------------+------------------------------+
-| Save a new lighting file **per        | Creating a new Lightmap      |
-| scene**.                              | Parameters file and setting  |
-|                                       | BackfaceTolerance to a very  |
-| ![](../../media/3d-design-performance-guide/ima                         | low number keeps backface    |
-| ge047.png)                            | errors out of the light      |
-|                                       | bake.                        |
-|                                       |                              |
-| ![](../../media/3d-design-performance-guide/ima                         | ![](../../media/3d-design-performance-guide/image050.png){      |
-| ge048.png){width="4.159027777777778in" | width="3.1304505686789152in" |
-| height="1.7048611111111112in"}        | h                            |
-|                                       | eight="3.398043525809274in"} |
-| Ambient Occlusion is project          |                              |
-| dependent. We recommend that you      | ![](../../media/3d-design-performance-guide/image051.png)       |
-| don't use it since it does introduce  | {width="2.613636264216973in" |
-| artifacts in light bake.              | he                           |
-|                                       | ight="2.3652679352580925in"} |
-| **Non-Directional is required for     |                              |
-| WebGL environments.**                 | ![](../../media/3d-design-performance-guide/image052.png){      |
-|                                       | width="2.6131944444444444in" |
-| ![](../../media/3d-design-performance-guide/imag                        | he                           |
-| e049.png){width="3.8333333333333335in" | ight="2.1761450131233597in"} |
-| height="1.4270067804024498in"}        |                              |
-+=======================================+==============================+
-+---------------------------------------+------------------------------+
+| +---------------------------------------+------------------------------+ |
+|--------------------------------------------------------------------------|--|
+| scene**.                                                                 | Parameters file and setting |
+|                                                                          | BackfaceTolerance to a very |
+| ![](../../media/3d-design-performance-guide/image047.png)                          | low number keeps backface |
+|                                                                | errors out of the light |
+|                                                                          | bake. |
+|                                                                          |  |
+| ![](../../media/3d-design-performance-guide/ima                          | ![](../../media/3d-design-performance-guide/{ |
+| ge048.png){width="4.159027777777778in"                                   | width="3.1304505686789152in" |
+| height="1.7048611111111112in"}                                           | h |
+|                                                                          | eight="3.398043525809274in"} |
+| Ambient Occlusion is project                                             |  |
+| dependent. We recommend that you                                         | ![](../../media/3d-design-performance-guide/image051.png) |
+| don't use it since it does introduce                                     | {width="2.613636264216973in" |
+| artifacts in light bake.                                                 | he |
+|                                                                          | ight="2.3652679352580925in"} |
+| **Non-Directional is required for                                        |  |
+| WebGL environments.**                                                    | ![](../../media/3d-design-performance-guide/image052.png){ |
+|                                                                          | width="2.6131944444444444in" |
+| ![](../../media/3d-design-performance-guide/imag                         | he |
+| e049.png){width="3.8333333333333335in"                                   | ight="2.1761450131233597in"} |
+| height="1.4270067804024498in"}                                           |  |
+| +=======================================+==============================+ |
+| +---------------------------------------+------------------------------+ |
 
 # MRTK Graphics Tools for Unity
 
