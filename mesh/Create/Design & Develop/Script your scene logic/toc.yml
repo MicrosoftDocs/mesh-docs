@@ -12,6 +12,6 @@ items:
   - name: Cloud Scripting known issues
     href: cloud-scripting-known-issues.md
   - name: Cloud Scripting release notes
-    href: cloud-scripting-release notes.md
+    href: cloud-scripting-release-notes.md
   - name: Visual Scripting
     href: visual-scripting.md    
