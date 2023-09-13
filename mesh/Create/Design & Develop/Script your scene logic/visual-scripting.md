@@ -32,8 +32,8 @@ Otherwise, there's no special setup needed&#8212;you can just start scripting!
 
 **Limitations**
 
-- Only a subset of Unity functionality is exposed to visual scripts. See the [allowlist documentation](Generated/Allowlist/README.md) TBD for details.
-- Variables and properties with non-simple types (including object references) aren't automatically shared. See [Sharing and networking](#sharing-and-networking) TBD below to learn more about this.
+- Only a subset of Unity functionality is exposed to visual scripts. See the allowlist documentation for details.
+- Variables and properties with non-simple types (including object references) aren't automatically shared. See [Sharing and networking](#sharing-and-networking) below to learn more about this.
 
 ## Development workflow
 
@@ -164,8 +164,6 @@ If a **Result** variable is defined, it will be reset to an empty string as soon
 
 The **Result** variable can be local or shared. If it's shared, the user's response is sent to all clients in the same room, and the **On State Changed** event node triggers on all clients to react to the user's response.
 
-----------------------------------------------------------------------------------------------------
-
 ## Security
 
 Mesh protects users from threat scenarios such as these:
@@ -175,7 +173,7 @@ Mesh protects users from threat scenarios such as these:
 
 To achieve this, Mesh runs visual scripts in a sandbox (like JavaScript in a web browser).
 
-At scene startup, Mesh uses a curated allowlist to validate visual scripts to limit access to certain types of Unity components and a safe subset of their properties. See the [allowlist documentation](Generated/Allowlist/README.md) for details.
+At scene startup, Mesh uses a curated allowlist to validate visual scripts to limit access to certain types of Unity components and a safe subset of their properties. See the allowlist documentation for details.
 
 At scene runtime, Mesh limits access to certain parts of the scene:
 
@@ -186,8 +184,6 @@ Examples:
 
 - A malicious local visual script wants to give all avatars bobble heads. To that end, it attempts to scan the entire scene for GameObjects that represent avatar heads. Mesh automatically filters the scanning results to exclude the avatar system.
 - A malicious remote client wants to deface the scene by flipping all GameObjects upside down. To achieve that, it sends a property update that sets the vertical scale of each GameObject in the scene. However, since no visual script on the receiving client is designed to do anything like that, the local client ignores the remote input.
-
-----------------------------------------------------------------------------------------------------
 
 ## Mesh integration
 
@@ -209,8 +205,6 @@ Some components provide local actions:
 - Rendering: read and write material and shader properties
 
 Physics is handled specially because simulation for any given physics object is always authoritatively done by one client only: its owner. To make this work, setting physics properties triggers an automatic ownership transfer to the client that applies the change.
-
-----------------------------------------------------------------------------------------------------
 
 ## Best practices
 

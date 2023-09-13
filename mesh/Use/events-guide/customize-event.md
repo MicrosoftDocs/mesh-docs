@@ -113,15 +113,14 @@ Once you've added an artifact to the Artifact panel, you can select the artifact
 
 Use the **Control Panel** to prepare your artifacts to be used during an event. Like having a technical booth for theatrical technicians, it's designed to give the Event Producer the ability to orchestrate a performance in real time.
 
-1. After you've joined the session, click
-    the "Control panel" button.
+1. After you've joined the session, click the "Control panel" button.
    
-       ![A screenshot of a video game Description automatically generated](../../media/mesh-event-producer-guide/image024.png)
+    ![A screenshot of a video game Description automatically generated](../../media/mesh-event-producer-guide/image024.png)
 
     > [!NOTE]
     > Adding content takes place in **Edit mode**. 
     >
-    > ![](../../media/mesh-event-producer-guide/image032.png)
+    > ![___](../../media/mesh-event-producer-guide/image032.png)
     >
     > You should be in this mode by default (look at the top/middle of the window).
 
