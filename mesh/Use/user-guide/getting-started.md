@@ -132,6 +132,9 @@ email.
 ## Next steps
 
    > [!div class="nextstepaction"]
+   > [Personalize your avatars](avatars.md)
+
+   > [!div class="nextstepaction"]
    > [Join an event](join-an-event.md)
 
    > [!div class="nextstepaction"]
