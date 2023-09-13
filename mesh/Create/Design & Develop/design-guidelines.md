@@ -2,17 +2,13 @@
 title: Design guidelines for Mesh
 description: Design guidelines for Technical artists or developers creating for Mesh.
 author: typride
-ms.author: tmilligan
-ms.date: 7/28/2023
+ms.author: vinnietieto
+ms.date: 9/13/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, unity, design, documentation, features
 ---
 
 # Design guidelines for Mesh
-
-Mesh 3D Design and Performance Guide
-
-![Graphical user interface, text Description automatically generated](../../media/3d-design-performance-guide/image001.png)
 
 A guide for artists, designers and developers who create content for
 Mesh experiences
@@ -25,7 +21,7 @@ modeling programs. In Unity, you create a project from scratch or use
 one of our existing samples as a starting point, then add content, and
 then publish the project as an *Environment* to a world in the Azure
 portal. When a user creates a Mesh event for that world, they can choose
-to hold their event in the custom Environment you created.  
+to hold their event in the custom Environment you created.  
 
 Mesh is a new product and is always evolving to meet the needs of our
 partners. This document covers the design guidelines for creating 3D
@@ -149,8 +145,8 @@ the following:
 *Here are some naming convention examples:*
 
 ![Graphical user interface, text Description automatically
-generated](../../media/3d-design-performance-guide/image009.png){width="6.5in"
-height="2.6944444444444446in"}
+generated](../../media/3d-design-performance-guide/image009.png)
+
 
 ### Unity folder structure
 
@@ -160,7 +156,7 @@ generated](../../media/3d-design-performance-guide/image010.png)
 ### Perforce folder structure
 
 ![Graphical user interface, text, timeline Description automatically
-generated](../../media/3d-design-performance-guide/image011.png){width="7.29in" height="2.09in"}
+generated](../../media/3d-design-performance-guide/image011.png)
 
 ## Modeling
 
@@ -190,8 +186,8 @@ Plan for this and don't delete faces as aggressively when they're close
 to the collision boundaries.
 
 ![A picture containing text, screenshot Description automatically
-generated](../../media/3d-design-performance-guide/image012.png){width="7.68202646544182in"
-height="2.1797856517935257in"}
+generated](../../media/3d-design-performance-guide/image012.png)
+
 
 ### Aliasing 
 
@@ -232,8 +228,8 @@ and tips
 
 ### Materials
 
-![](../../media/3d-design-performance-guide/image013.png){width="2.5833333333333335in"
-height="3.829861111111111in"}Name each material in your .fbxfile to
+![](../../media/3d-design-performance-guide/image013.png) 
+Name each material in your .fbxfile to
 closely match its corresponding material inside Unity. Avoid exporting
 default material names.
 
@@ -253,7 +249,9 @@ default material names.
 
 - **Do not** plan to move meshes inside Unity. For environment FBX's,
     adjust inside your modeling program before export.
-![](../../media/3d-design-performance-guide/014.png){width="2.890277777777778in" height="2.823611111111111in"}Lightmap UVs
+![](../../media/3d-design-performance-guide/014.png)
+
+Lightmap UVs
 
 Setting up optimized and clean lightmap UVs is one of the most important
 aspects of achieving a clean and immersive VR environment.
@@ -266,7 +264,7 @@ Each mesh object that makes up an .fbx needs its **own** optimized UV
 channel 2 layout.
 
 ![Graphical user interface Description automatically
-generated](../../media/3d-design-performance-guide/image015.png){width="6.5in" height="2.09375in"}
+generated](../../media/3d-design-performance-guide/image015.png)
 
 ### Why?
 
@@ -274,8 +272,8 @@ Unity light bake grabs each individual mesh and packs it on its own. If
 you pack together in your 3D program, you'll end up with wasted space.
 
 ![Graphical user interface Description automatically
-generated](../../media/3d-design-performance-guide/image016.png){width="6.5in"
-height="1.4527777777777777in"}
+generated](../../media/3d-design-performance-guide/image016.png)
+
 
 Setting up optimized and clean light map UV's is one of the most
 important aspects of achieving a clean and immersive VR environment.
@@ -284,15 +282,15 @@ Splitting lightmap UV seams where there's a hard edge on the mesh will
 give you crisp edges with the Unity light bake.
 
 ![A picture containing text Description automatically
-generated](../../media/3d-design-performance-guide/image017.png){width="6.5in"
-height="1.2027777777777777in"}
+generated](../../media/3d-design-performance-guide/image017.png)
+
 
 If there isn't a UV seam at the hard edge, and with the light bake
 resolution constraints we have, the hard edges will turn soft and lose
 their impact.
 
-![](../../media/3d-design-performance-guide/image018.png){width="4.717361111111111in"
-height="1.4652777777777777in"}This version of the elephant has bigger UV
+![](../../media/3d-design-performance-guide/image018.png) 
+This version of the elephant has bigger UV
 shells with no cuts at the hard edges.
 
 Unity light bake smoothed it out.
@@ -302,15 +300,15 @@ Light bake aliasing is an issue with our resolution constraints.
 Straighten UV shells to cut out unwanted aliasing
 
 Aliasing in the UVs will cause aliasing in the light map textures.
-​Aliasing baked into textures hurts immersion and presence​.
+Aliasing baked into textures hurts immersion and presence.
 
-![](../../media/3d-design-performance-guide/image019.png){width="3.8916666666666666in"
-height="2.6631944444444446in"}
+![](../../media/3d-design-performance-guide/image019.png)
+
 
 The aliasing seen here is due to the UV shell being a circle.
 
-![](../../media/3d-design-performance-guide/image020.png){width="3.933333333333333in"
-height="2.6347222222222224in"}Aliasing will be gone regardless of the
+![](../../media/3d-design-performance-guide/image020.png) 
+Aliasing will be gone regardless of the
 lightmap texture resolution.
 
 Even a small amount of aliasing can be problematic for VR users since
@@ -319,9 +317,9 @@ they can view the mesh from any distance.
 Introducing a small amount of warping in the light bake is okay if it
 means ridding shell of aliasing
 
-![](../../media/3d-design-performance-guide/image021.png){width="3.325in" height="2.4460837707786527in"}
-![](../../media/3d-design-performance-guide/image022.png){width="3.091666666666667in"
-height="2.435725065616798in"}
+![](../../media/3d-design-performance-guide/image021.png)
+![](../../media/3d-design-performance-guide/image022.png)
+
 
 #### Resources for lightmapping
 
@@ -337,11 +335,11 @@ Once texel size is determined in Unity, make sure to go back and adjust
 any shells that are too closely packed to cut out texture bleed or have
 room for smaller padding.
 
-![](../../media/3d-design-performance-guide/image023.png){width="4.615277777777778in" height="2.4in"}First
+![](../../media/3d-design-performance-guide/image023.png) First
 pass, before the scene texel scale is determined.
 
-![](../../media/3d-design-performance-guide/image024.png){width="4.633333333333334in"
-height="2.436111111111111in"}Second pass, after the scene texel scale is
+![](../../media/3d-design-performance-guide/image024.png) 
+Second pass, after the scene texel scale is
 determined.
 
 ## Textures/Props
@@ -353,27 +351,29 @@ These props don't have custom textures, but instead rely on the
 URP/Baked Lit shader's Base Map color value and a clean light bake.
 
 ![A picture containing indoor, sofa, furniture, seat Description
-automatically generated](../../media/3d-design-performance-guide/image025.png){width="6.5in"
-height="1.0354166666666667in"}
+automatically generated](../../media/3d-design-performance-guide/image025.png)
+
 
 Not using textures also eliminates texture artifacts like pixelization
 and aliasing, which is a big boost to VR immersion.
 
-![](../../media/3d-design-performance-guide/image026.png){width="4.725in" height="2.379861111111111in"}When
+![](../../media/3d-design-performance-guide/image026.png)
+
+When
 a custom texture is used, like on these purple plants, green leaves, and
 the red leaves of the tree, keeping the detail simple and clean goes a
 long way towards hiding the textures' low resolution.
 
 Tiling textures should be authored at 3x3 meter scale.
 
-![](../../media/3d-design-performance-guide/image027.png){width="6.5in" height="3.4916666666666667in"}
+![](../../media/3d-design-performance-guide/image027.png)
 
 All tiling textures should be authored left to right.
 
-![](../../media/3d-design-performance-guide/image028.png){width="2.855660542432196in"
-height="2.863636264216973in"}
-![](../../media/3d-design-performance-guide/image029.png){width="2.851946631671041in"
-height="2.859911417322835in"}
+![](../../media/3d-design-performance-guide/image028.png)
+
+![](../../media/3d-design-performance-guide/image029.png)
+
 
 ## Unity file hierarchy
 
@@ -394,14 +394,14 @@ Keep the **Hierarchy** clean by removing disabled objects.
 **Disabled objects still add to the file size of the root
 object/project.**
 
-![](../../media/3d-design-performance-guide/image030.png){width="4.465908792650919in"
-height="1.8638943569553805in"}
+![](../../media/3d-design-performance-guide/image030.png)
+
 
 Embedding Prefabs into Prefabs is okay, especially if multiple people
 are working within a workstream.
 
-![](../../media/3d-design-performance-guide/image031.png){width="5.295060148731409in"
-height="0.7840912073490813in"}
+![](../../media/3d-design-performance-guide/image031.png)
+
 
 ## Unity model importer
 
@@ -412,14 +412,14 @@ Spring 2022, when the Importer lists the On Demand Remap slot as 'None
 
 **Even one material set to 'None (Material)' has a performance cost.**
 
-![](../../media/3d-design-performance-guide/image032.png){width="3.0in" height="5.213825459317586in"}
+![](../../media/3d-design-performance-guide/image032.png)
 
 
 **Ensure that all slots have corresponding Unity materials loaded in, as
 shown below.**
 
-![](../../media/3d-design-performance-guide/image034.png){width="3.579009186351706in"
-height="6.294248687664042in"}
+![](../../media/3d-design-performance-guide/image034.png)
+
 
 ## Unity shaders
 
@@ -486,8 +486,8 @@ developing for, reference the URP assets contained within the Mesh
 Toolkit Uploader's URP folder:
 
 ![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/3d-design-performance-guide/image035.png){width="4.959025590551181in"
-height="1.906515748031496in"}
+medium confidence](../../media/3d-design-performance-guide/image035.png)
+
 
 Note, that altering render pipeline settings or adding renderers is not
 supported.
@@ -499,8 +499,8 @@ supported.
 Using Prefabs allows easier collaboration within a single Unity scene
 and is preferred for Microsoft Mesh projects.
 
-![](../../media/3d-design-performance-guide/image036.png){width="5.0368055555555555in"
-height="2.064583333333333in"}When editing the scene, always make sure
+![](../../media/3d-design-performance-guide/image036.png) 
+When editing the scene, always make sure
 the Prefab you're working in has its overrides applied.
 
 If there are overrides waiting to be applied on a Prefab, that means
@@ -526,17 +526,17 @@ zeroed out **before** turning it into a Prefab.
 
 **CORRECT**
 
-![](../../media/3d-design-performance-guide/image037.png){width="6.5in" height="1.2708333333333333in"}
+![](../../media/3d-design-performance-guide/image037.png)
 
 **INCORRECT**
 
-![](../../media/3d-design-performance-guide/image038.png){width="6.5in" height="1.2402777777777778in"}
+![](../../media/3d-design-performance-guide/image038.png)
 
-![](../../media/3d-design-performance-guide/image039.png){width="4.279166666666667in"
-height="1.0194444444444444in"}
+![](../../media/3d-design-performance-guide/image039.png)
 
-![](../../media/3d-design-performance-guide/image040.png){width="4.573611111111111in"
-height="1.9319444444444445in"}
+
+![](../../media/3d-design-performance-guide/image040.png)
+
 
 +-----------+--------------------+-----------+------------------------+
 | The FLOOR | ![](../../media/3d-design-performance-guide/imag     | The WALLS | ![](../../media/3d-design-performance-guide/image042      |
@@ -588,8 +588,8 @@ For Microsoft Mesh environments, utilize Unity Baked Lighting.
 To include a mesh object in the light bake, make sure you check the
 **Static** checkbox in the **Inspector**.
 
-![](../../media/3d-design-performance-guide/image043.png){width="3.361111111111111in"
-height="0.7777777777777778in"}All Unity light types are available when
+![](../../media/3d-design-performance-guide/image043.png) 
+All Unity light types are available when
 using baked lighting.
 
 **Make sure you set the mode to "Baked". Realtime lights** **aren't
@@ -598,12 +598,12 @@ supported for use in the environment.**
 To include a mesh object in the light bake, make sure you check the
 **Static** checkbox in the **Inspector**.
 
-![](../../media/3d-design-performance-guide/image044.png){width="3.4307655293088364in"
-height="0.8888888888888888in"}If this isn't checked, lighting won't be
+![](../../media/3d-design-performance-guide/image044.png) 
+If this isn't checked, lighting won't be
 applied to the mesh, nor will it cast any shadows in the scene.
 
-![](../../media/3d-design-performance-guide/image045.png){width="3.361111111111111in"
-height="1.9166666666666667in"}
+![](../../media/3d-design-performance-guide/image045.png)
+
 
 The Scale in Lightmap value increases/decreases the size of the selected
 mesh's UVs in the Unity light map bake. If you need to change a specific
@@ -643,8 +643,8 @@ Analyzer](https://microsoft.sharepoint.com/teams/MicrosoftMeshEAPOnboardingResou
 will also display an error if a light like this is not found.
 
 ![A screenshot of a software Description automatically generated with
-medium confidence](../../media/3d-design-performance-guide/image046.png){width="4.2824835958005245in"
-height="5.084416010498687in"}
+medium confidence](../../media/3d-design-performance-guide/image046.png)
+
 
 ## Light Mapper Settings
 
@@ -655,8 +655,8 @@ height="5.084416010498687in"}
 | scene**.                              | Parameters file and setting  |
 |                                       | BackfaceTolerance to a very  |
 | ![](../../media/3d-design-performance-guide/ima                         | low number keeps backface    |
-| ge047.png){width="4.159027777777778in" | errors out of the light      |
-| height="2.5in"}                       | bake.                        |
+| ge047.png)                            | errors out of the light      |
+|                                       | bake.                        |
 |                                       |                              |
 | ![](../../media/3d-design-performance-guide/ima                         | ![](../../media/3d-design-performance-guide/image050.png){      |
 | ge048.png){width="4.159027777777778in" | width="3.1304505686789152in" |
@@ -679,15 +679,15 @@ height="5.084416010498687in"}
 # MRTK Graphics Tools for Unity
 
 MRTK Graphics Tools for Unity is a
-[Unity engine](https://unity.com/) package with code, shaders, assets,
+[Unity engine](https://unity.com/) package with code, shaders, assets,
 and samples created to help improve the visual fidelity of [mixed
 reality](https://docs.microsoft.com/windows/mixed-reality/discover/mixed-reality)
 applications while staying within performance budgets.
 
 ![A screenshot of a video game Description automatically generated with
-medium confidence](../../media/3d-design-performance-guide/image053.png){width="6.5in" height="2.275in"}
+medium confidence](../../media/3d-design-performance-guide/image053.png)
 
-Graphics Tools is included in the Mesh Toolkit package which is required
+Graphics Tools is included in the Mesh Toolkit package which is required
 for any Unity project being used to generate a Mesh Environment.
 
 ## More info on Graphics Tools 
@@ -698,7 +698,7 @@ View more information on Microsoft\'s technical documentation website.
     Unity](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/mrtk3-graphicstools/)
 
 - API Reference -
-    [Microsoft.MixedReality.GraphicsTools](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.GraphicsTools) 
+    [Microsoft.MixedReality.GraphicsTools](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.GraphicsTools) 
 
 # Next Steps
 
@@ -728,57 +728,27 @@ If you find new issues, file a bug or speak to your Microsoft partners.
 # Release notes
 
 Look at the Release notes for details on features, bug fixes, and known
-issues.![](../../media/3d-design-performance-guide/image054.png){width="4.053472222222222in"
-height="2.2in"}
+issues.![](../../media/3d-design-performance-guide/image054.png)
+
 
 We love feedback and bug reports! If you'd like to provide feedback, use
 the Feedback button inside any Mesh experience. This ensures that your
 feedback and bug reporting will be triaged and incorporated quickly.
 
-![](../../media/3d-design-performance-guide/image055.png){width="5.285714129483814in"
-height="3.09293416447944in"}
+![](../../media/3d-design-performance-guide/image055.png)
+
 
 If you're not able to give feedback or report bugs using the Feedback
 button in Mesh, use the Teams chats with your Microsoft partners or
 contact your Microsoft partners directly.
 
-+-----------------------------------------------------------------------+
-| This is a preliminary document and may be changed substantially prior |
-| to final commercial release of the software described herein.         |
-|                                                                       |
-| The information contained in this document represents the current     |
-| view of Microsoft Corporation on the issues discussed as of the date  |
-| of publication. Because Microsoft must respond to changing market     |
-| conditions, it should not be interpreted to be a commitment on the    |
-| part of Microsoft, and Microsoft cannot guarantee the accuracy of any |
-| information presented after the date of publication.                  |
-|                                                                       |
-| This onboarding documentation is for instructional purposes only.     |
-| Microsoft makes no warranties, express or implied, in this document.  |
-|                                                                       |
-| Complying with all applicable copyright laws is the responsibility of |
-| the user. Without limiting the rights under copyright, no part of     |
-| this document may be reproduced, stored in, or introduced into a      |
-| retrieval system, or transmitted in any form or by any means          |
-| (electronic, mechanical, photocopying, recording, or otherwise), or   |
-| for any purpose, without the express written permission of Microsoft  |
-| Corporation.                                                          |
-|                                                                       |
-| Microsoft may have patents, patent applications, trademarks,          |
-| copyrights, or other intellectual property rights covering subject    |
-| matter in this document. Except as expressly provided in any written  |
-| license agreement from Microsoft, the furnishing of this document     |
-| does not give you any license to these patents, trademarks,           |
-| copyrights, or other intellectual property.                           |
-|                                                                       |
-| © 2023 Microsoft Corporation. All rights reserved.                    |
-|                                                                       |
-| Microsoft, list Microsoft trademarks used in your white paper         |
-| alphabetically are either registered trademarks or trademarks of      |
-| Microsoft Corporation in the United States and/or other countries.    |
-+=======================================================================+
-+-----------------------------------------------------------------------+
 
 [^1]: See *Bug 39279: Avatar + camera movement is bumpy when going
     downhill* - for more details on the artifacts you can see when using
     overly complicated collision geometry for stairs.
+
+
+)
+
+
+
