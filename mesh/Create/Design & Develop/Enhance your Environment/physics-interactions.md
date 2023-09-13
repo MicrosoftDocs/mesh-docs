@@ -906,3 +906,9 @@ Each condition has a 3-dot menu with several options.
 **To make a condition active or inactive:**
 Select or clear the checkbox to the left of the condition name.
 
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Animations and timelines](animations-and-timelines.md)
+
+

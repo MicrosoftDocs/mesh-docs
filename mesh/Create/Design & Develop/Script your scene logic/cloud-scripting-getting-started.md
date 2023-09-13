@@ -305,3 +305,8 @@ To get help with any of the commands, enter the command followed by `-h`. For ex
 
    > [!div class="nextstepaction"]
    > [Cloud Scripting Troubleshooting](cloud-scripting-troubleshooting.md)
+
+   ## Next steps
+
+> [!div class="nextstepaction"]
+> [Cloud scripting programmer's guide](cloud-scripting-programmers-guide).md)

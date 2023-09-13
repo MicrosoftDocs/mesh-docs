@@ -54,3 +54,8 @@ When the user leaves a space or event, the event client disconnect callback does
 
 Internal ID:  [39437]
 
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Cloud scripting release notes](cloud-scripting-release-notes.md)
+

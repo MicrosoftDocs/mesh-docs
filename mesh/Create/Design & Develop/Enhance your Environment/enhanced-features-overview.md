@@ -34,4 +34,7 @@ After you've created a basic Environment, take it to the next level by incorpora
 
 -   **Event content** integration: You can set up objects within your Environment to be controlled during an Event. When you use scripts in the Event Production folder of the Toolkit package, certain features will become available, such as [controlling animations with Timelines](animations-and-timelines.md). To set this up in your scene, see the article named [Add Event features to your environment](add-event-features). To learn more about producing events, see the article named *Mesh Event Producer Guide*. TBD.
 
+## Next steps
 
+> [!div class="nextstepaction"]
+> [Add Event features to your Environment](add-event-features.md)

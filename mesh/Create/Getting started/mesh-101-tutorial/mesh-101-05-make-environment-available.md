@@ -143,3 +143,8 @@ new event in that Mesh world.
 In this chapter, you learned how to create an Environment based on your
 scene and then build it and publish it to your World in the Azure
 Portal.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Chapter 6: Create an Event and invite others](mesh-101-6-create-an-event-and-invite-others.md)

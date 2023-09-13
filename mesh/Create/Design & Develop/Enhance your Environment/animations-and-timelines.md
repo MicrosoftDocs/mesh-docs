@@ -129,4 +129,5 @@ document named *Mesh Event Producer Guide*, section: *Event Templates*.
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Add more features](enhanced-features-overview.md)
+   > [Web content](webcontent.md)
+

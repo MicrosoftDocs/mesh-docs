@@ -246,3 +246,8 @@ To fix a situation like this, consider the following options:
 - Execute the visual script only on one client.
 - In addition to executing the visual script only on one client, make the balloons into keyframed physics bodies to enable bandwidth-efficient transform streaming.
 
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Mesh scripting overview](mesh-scripting-overview.md)
+

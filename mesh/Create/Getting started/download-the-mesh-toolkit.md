@@ -55,3 +55,8 @@ Mesh Toolkit 23.x
     - ScienceBuilding
 
     - ScriptedWorlds
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Choose your journey](choose-your-journey.md)

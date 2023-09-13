@@ -43,3 +43,9 @@ Fortunately, you don’t have to choose one approach exclusively. You can do Mes
 ## Prerequisites
 
 Before getting started with Mesh Scripting, you should be able to create a basic Environment in Unity (to learn more, see our document named *Get Started with Mesh Environments* TBD). You should also familiarize yourself with the document named *Mesh 3D Design and Performance Guide* TBD. That document goes beyond the basics and includes many tips for building an Environment in Unity. Mesh Scripting builds on this Unity-based toolchain to let you add scripts to your Environments.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Cloud scripting basic concepts](cloud-scripting-basic-concepts.md)
+> [Visual Scripting](visual-scripting.md)

@@ -35,7 +35,8 @@ Unity may restart during this process.
 4. Once you've installed the package, verify that you see it in the
     Package Manager.
 
-Next Step
-Building for single and multiple platforms TBD
+> [!div class="nextstepaction"]
+> [Build for single and multiple platforms](build-for-single-and-multiple-platforms.md)
+
 
     
