@@ -1,6 +1,8 @@
 items:
   - name: Getting started with Mesh
     href: getting-started.md
+  - name: Personalize your avatar
+    href: avatars.md
   - name: Join an event
     href: join-an-event.md
   - name: Mesh user controls

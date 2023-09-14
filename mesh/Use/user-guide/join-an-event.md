@@ -12,11 +12,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 ## From the Mesh App on PC
 
-In the Mesh App on PC or Quest, you can attend social gatherings,
-conferences, and all-hands events all within a wide selection of
-Environments. In these events, you can view content, interact with
-physical objects, and meet or network with your colleagues while
-representing yourself with your personalized avatars.
+In the Mesh App on PC or Quest, you can attend social gatherings, conferences, and all-hands events all within a wide selection of Environments. In these events, you can view content, interact with physical objects, and meet or network with your colleagues.
 
 Follow the steps below to see a list of events and join an event.
 
@@ -43,9 +39,13 @@ Follow the steps below to see a list of events and join an event.
     >[!Note] 
     >In the Mesh app on PC, the Windows default speaker will always be used by Mesh. You can change the speaker settings in the Windows **Settings** -\> **System** -\> **Sound settings** dialog box.
 
-    Haven't customized your avatar? [See how to personalize your avatar before a meeting.](#personalize-your-avatar)
+4. Before you join an event, you can also select or customize your avatars from the pre-join dialog.
 
-4. For upcoming events, you can view event details by clicking the
+    ![A screenshot of the pre-join dialog with Avatars menu items highlighted](media/pre-join-dialog-avatars.png)
+
+    For more information, see [Personalize your avatar](avatars.md).
+
+5. For upcoming events, you can view event details by clicking the
     **View Info** button.\
     \
     ![](media/image133.png)
@@ -66,39 +66,6 @@ shown below to find and join your Teams events.
 4. Select **Join event** or **Start event** on any of the events.
 
 Go through the Mesh pre-join screen to setup/select/customize your avatar and select **Join** when ready.
-
-## Personalize your avatar
-
-Learn how to personlize your avatar before you join a meeting.
-
-We offer a range of body shapes, facial features, and fine-tuning options so you can craft your avatar in the way you want to be represented. Choose your favorite hair styles, make-up options, and so much more
-
-
-1. In the prejoin dialogue, you can personalize the avatars you've made or create a new one using the avatar profile bubbles at the bottom.
-
-    :::image type="content" source="media/Pre-join-avatars.png" alt-text="pre-join avatars bubbles":::
-1. Select a pre-made avatar to edit it, the pencil to edit the one you're currently looking at, or press the **+** button then **Create New** to create a new one.
-
-    :::image type="content" source="media/Pre-join-create-new-avatar.png" alt-text="Create-new avatar in the prejoin dialogue for a meeting.":::
-
-1.  Select a base avatar to start off the customization flow. Scroll to see the variety of starter avatars.
-
-    :::image type="content" source="media/Pre-join-base-avatars.png" alt-text="Base avatars selection in prejoin screen":::
-
-1. Select **Use avatar** to select a base avatar.
-1. If you'd like to customize your base avatar some more, select the pencil icon to get started.
-
-    :::image type="content" source="media/Pre-join-customize-base.png" alt-text="Customize base avatar pencil icon in prejoin dialogue":::
-
-1. Once you're done customizing, select **Done** to finish.
-
-    :::image type="content" source="media/Pre-join-customize-base-done.png" alt-text="Done building avatar":::
-
-Great job! Now you can **Join now** with your personalized avatar.
-
-At any time you can use the Profile button in the bottom right of your screen to further customize your avatar or create a new one.
-
-:::image type="content" source="media/Customize-through-profile.png" alt-text="Profile button in bottom right to select customize avatar":::
 
 ## Enjoy your event
 
