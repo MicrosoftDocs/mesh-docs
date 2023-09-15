@@ -4,12 +4,12 @@ items:
   - name: Design guidelines
     href: design-guidelines.md    
   - name: Build your basic environment
-    href: Build your basic environment/toc.yml
+    href: build-your-basic-environment/toc.yml
   - name: Enhance your environment
-    href: Enhance your environment/toc.yml
+    href: enhance-your-environment/toc.yml
   - name: Script your scene logic
-    href: Script your scene logic/toc.yml
+    href: script-your-scene-logic/toc.yml
   - name: Debug & optimize performance
-    href: Debug & optimize performance/toc.yml
+    href: debug-and-optimize-performance/toc.yml
   - name: Make your Environment available for Events
-    href: Make your Environment available for Events/toc.yml
+    href: make-your-environment-available-for-events/toc.yml
