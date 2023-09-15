@@ -69,13 +69,13 @@ You can look around, walk, run, turn, teleport around, or just sit at the table 
 Now that you're in an event, explore the interface to see what controls are available. To the left, we have the **System Menu** with **Dashboard**, **Settings**, **Feedback**, and **Quit Mesh**. The app bar in the middle holds the **Participants**, **Selfie**, and **Reactions** buttons. The **Profile** button in the lower right corner
 holds the **Customize** button for customizing your avatars.
 
-![A screenshot of the Mesh meeting with App bar information](media/image082.png)
+![A screenshot of the Mesh meeting with App bar information](media/user-controls.png)
 
 ### Adjust settings
 
 The **Settings** menu helps you to set up the app according to your preferences. There are many options available here. It can be accessed directly from the bottom left menu button of the Mesh menu bar.
 
-![A screenshot of the settings dialog](media/image084.png)
+![A screenshot of the settings dialog](media/settings-dialog.png)
 
 ### Participants
 
@@ -85,7 +85,7 @@ The **Participants** button will show the number of participants in an event.
 
 Take a selfie of yourself with friends or snap a picture from the POV of your avatar!
 
-![A screenshot of the Avatar selfie screen](media/image086.png)
+![A screenshot of the Avatar selfie screen](media/selfie.png)
 
 >[!Note]
 >Avatars nametags are turned off by default when taking a photo or selfie. You can still turn on the nametag by clicking on **...** in the App bar.
