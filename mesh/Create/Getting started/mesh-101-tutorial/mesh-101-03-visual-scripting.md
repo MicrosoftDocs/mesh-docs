@@ -246,13 +246,56 @@ If you look in the **Hierarchy**, you'll see that the GameObject named **Video**
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/424-video-player.png)
 
-Look again and you'll see that the **Video** GameObject is inactive. This is the default state; we don't want the video playing as soon as the participant enters Play mode! The scene also has an object named **VideoStill** which simply displays a still image on the video screen. This GameObject is active when the scene starts. When the participant presses the Play/Stop button, it makes **Video** active, which causes the video to play, and simultaneously makes **VideoStill** inactive, which hides the still image. When the participant presses the button again, the opposite happens: **Video** is made inactive, stopping the video, and **VideoStill** is made active again, which makes the video screen display the still image. The remaining nodes in our graph make all of this happen.
+Look again and you'll see that the **Video** GameObject is inactive. This is the default state; we don't want the video playing as soon as the participant enters Play mode! The scene also has an object named **VideoStill** which simply displays a still image on the video screen. 
+
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/425-videostill.png)
+
+This GameObject is active when the scene starts. When the participant presses the Play/Stop button, it makes **Video** active, which causes the video to play, and simultaneously makes **VideoStill** inactive, which hides the still image. When the participant presses the button again, the opposite happens: **Video** is made inactive, stopping the video, and **VideoStill** is made active again, which makes the video screen display the still image. The remaining nodes in our graph make all of this happen.
 
 1. Drag a connector from the True output control port of the "if" node and create a new *Game Object: Set Active* node. (In the Fuzzy Finder, search for "set active".)
 1. In the *Game Object: Set Active* node, click the round button in the GameObject field, and then, in the **Select GameObject** window, search for and select **Video**.
+1. Select the node's **Value** check box, which makes the node active.
 
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/426-set-active-video-node.png)
 
+1. Drag a connector from the output control port of the "Game Object: Set Active" node and create another new *Game Object: Set Active* node.
+1. In the new *Game Object: Set Active* node, click the round button in the GameObject field, and then, in the **Select GameObject** window, search for and select **VideoStill**.
+1. Keep the **Value** check box unselected. This makes the node inactive.
 
+Now when the button is clicked, the video will play and the still image will be hidden. We just need one more thing in this sequence. Since the Play/Stop button is a toggle, we have to make sure that after the participant clicks "Play," the button's label changes to "Stop," and then when clicked again back to "Play," and so on.
+
+1. Drag a connector from the output control port of the last "Game Object: Set Active" node and create a new *Text Mesh Pro: Set Text* node. (In the Fuzzy Finder, search for "set text".)
+
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/427-set-text.png)
+
+    For this node, we need to set its target GameObject to "Label". There are lots of "Labels" in the project, though, and they all look the same in the node's popup list, so let's do this with the drag and drop method.
+
+1. Drag the **Button** child object **Label** from the **Hierarchy** and then drop it in the *Set Test* node.
+
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/428-drag-label.png)
+
+1. In the text field for the node, type in "Stop."
+
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/429-stop.png)
+
+### Making the video stop
+
+Just three more nodes to go for this graph! We need to set up the false condition for the button: "If the button is clicked while the video is playing, *isPlaying* becomes false and it causes the video to stop and the button to display "Play" again.
+
+We can take a shortcut here.
+
+1. Control-click the last three nodes you added to select them.
+1. Right-click in the script graph and then, in the popup menu, select **Duplicate Selection**.
+1. Drag the duplicated notes to an empty space in the graph just below the nodes you duplicated.
+
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/430-duplicated-nodes.png)
+
+1. Drag a connector from the False output control port of the last "if" node and connect it to the control input port of the first *Game Object: Set Active* node in the duplicated set of nodes.
+1. In that same first *Game Object: Set Active* node, deselect **Value**.
+1. In the second *Game Object: Set Active* node in the duplicated set, select **Value**.
+1. In the **Set Text** node, change the text from "Stop" to "Play."
+
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/431-final-node-settings-for-button.png)
 
 
 
