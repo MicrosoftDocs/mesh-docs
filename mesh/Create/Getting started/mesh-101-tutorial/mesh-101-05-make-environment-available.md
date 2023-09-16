@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365
 You've completed adding all the features you need for your Mesh
 experience using Mesh Physics and Scripting. So far, we've been working
 in a Unity *project*; now you'll turn the *StartingPoint* scene into a
-Mesh *Environment* and upload it to your Mesh World in the Azure Portal. At that point, it will be available for the create of Events.
+Mesh *Environment* and upload it to a World in either the Mesh Portal or the Azure Portal. At that point, it will be available for the creation of *Events*.
 
 **Configure your project settings and sign in**
 
@@ -26,12 +26,18 @@ Mesh *Environment* and upload it to your Mesh World in the Azure Portal. At that
 
     ![Graphical user interface, text, application Description automatically generated](../../../media/sample-mesh-101/image089.png)
 
-3. On the menu bar, select **Mesh Toolkit** > **Environments**.
+1. Do one of the following:
 
-4. In the **Mesh Environments** window, select **Sign In**.
+    **To build and publish to the Azure portal**:
+    - On the menu bar, select **Mesh Toolkit** > **Environments**.
+
+    **To build and publish to the Mesh Portal**:
+    - On the menu bar, select **Mesh Toolkit** > **Environments (M365)**.
+
+1. In the **Mesh Environments** window, select **Sign In**.
 
 Sign in with your account. **Note**: As mentioned in the Prerequisites
-section, the account must have Content *Contributor* access to the Mesh
+section, the account must have *Content Contributor* access to the Mesh
 World you're uploading the Environment to.
 
 ### Create your environment
