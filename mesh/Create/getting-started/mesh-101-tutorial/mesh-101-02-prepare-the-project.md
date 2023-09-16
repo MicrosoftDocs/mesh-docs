@@ -87,6 +87,7 @@ you to easily get a first impression of a multi-user scenario.
 
 1. Right-click inside the **Hierarchy** and then, in the context menu, select **Mesh Toolkit** > **PlaymodeSetup**.
 
+
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/400-playmode-setup.png)
 
     Note that this adds the **PlaymodeSetup [NoUpload]** prefab to the
