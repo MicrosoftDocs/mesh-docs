@@ -46,7 +46,7 @@ set up that view.
 1. Move the cursor over the **Scene** window and then press the F key
     on your keyboard.
 
-This centers the view on the **4.1 -- Grab and Release** object, but you'll most likely not be in quite the position we need.
+    This centers the view on the **4.1 -- Grab and Release** object, but you'll most likely not be in quite the position we need.
 
 1. Drag, rotate and/or zoom the view until you see the model in front
     of you, as shown below.
@@ -95,24 +95,24 @@ uneven surface.
 
     Note that whenever you enter Play mode, your starting point in the **Game** window is the Chapter 3 Sphere Terrace. We want to be in the other Sphere Terrace---the one for the Chapter 4 features. Fortunately, there's an easy way to get there.
 
-2. Rotate the view to the right until you see the **Go to Chapter 4**
+1. Rotate the view to the right until you see the **Go to Chapter 4**
     information box.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image068.jpg)
 
-3. Walk up to the information box and then select the **Teleport to
+1. Walk up to the information box and then select the **Teleport to
     Chapter 4** button.
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image069.jpg)
 
-4. After you arrive at the Chapter 4 Sphere Terrace, drag **WindTurbine1** until the cursor's shape changes, and then
+1. After you arrive at the Chapter 4 Sphere Terrace, drag **WindTurbine1** until the cursor's shape changes, and then
     drag the turbine around the scene.
 
     The turbine will stay upright as a result of turning on its *Freeze Rotation* constraints. 
 
     ![A picture ](../../../media/sample-mesh-101/image070.jpg)
 
-5. Click the Unity Editor Play button to exit Play mode.
+1. Click the Unity Editor Play button to exit Play mode.
 
 You don't need to update the other two wind turbines---we've already
 done that for you.
@@ -152,19 +152,19 @@ The script is now attached and the animation trigger should work. If you'd like 
 
 1. Save the project, and then press the Unity Editor Play button.
 
-2. As noted earlier, entering Play mode places your avatar in the
+1. As noted earlier, entering Play mode places your avatar in the
     **Chapter3** Sphere Terrace. Rotate the scene to the right, and then
     walk over to the **Teleport to Chapter 4** button and press it.
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image069.jpg)
 
-3. You should now be in the **Chapter4** Sphere Terrace. Drag **WindTurbine1**
+1. You should now be in the **Chapter4** Sphere Terrace. Drag **WindTurbine1**
     (reminder: it's the furthest one in the back, with the red blades) over the ocean. Note
     that the turbine's blades are now spinning.
 
     ![A picture containing screenshot, 3d modeling, pc game, video game software Description automatically generated](../../../media/sample-mesh-101/image082.jpg)
 
-4. When you've finished observing the animation, press the Unity Editor
+1. When you've finished observing the animation, press the Unity Editor
     Play button to exit Play mode.
 
 You don't have to update the other wind turbines---we've already done it for you.

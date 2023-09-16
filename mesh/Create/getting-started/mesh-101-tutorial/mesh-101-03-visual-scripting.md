@@ -61,11 +61,11 @@ As you can see, there's already a video screen in place, but it needs a Play/Sto
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/404-chapter-3-expanded.png)
 
-2. Search for the **ButtonBase** prefab.
+1. Search for the **ButtonBase** prefab.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/032-buttonbase-v2.png)
 
-3. Drag **ButtonBase** from the **Project** window and then, in the
+1. Drag **ButtonBase** from the **Project** window and then, in the
     **Hierarchy**, drop it on the GameObject named **3.1 -- Video** so
     that **ButtonBase** is placed as a child to **3.1 -- Video**.
 
@@ -77,7 +77,7 @@ As you can see, there's already a video screen in place, but it needs a Play/Sto
 
 1. Ensure that **ButtonBase** is selected in the **Hierarchy**.
 
-2. In the **Inspector**, change the **Transform** > **Position** >
+1. In the **Inspector**, change the **Transform** > **Position** >
     **Y** value to "1".
 
 Perfect! Now **ButtonBase** is correctly located just in front of the **BackplateBase** object.
@@ -101,7 +101,7 @@ Right now, the text on the button says "Label." Let's change that to
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/408-label-object.png)
 
-2. In the **Inspector**, navigate to the **TextMeshPro -- Text**
+1. In the **Inspector**, navigate to the **TextMeshPro -- Text**
     component, and then, in the **Text Input** box, change the text to
     "Play."
 
@@ -230,7 +230,6 @@ The *Negate* does some math to make the value of *IsPlaying* become opposite of 
 
 Now we'll add the nodes that detect if *isPlaying* changes and plays or stops the video based on that change.
 
-
 1. In the lower part of the graph, add a *Get Object Variable* node and set its value to *isPlaying*.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/421-get-var-is-playing-second-note.png)
@@ -242,7 +241,7 @@ Now we'll add the nodes that detect if *isPlaying* changes and plays or stops th
 1. Drag a connector from the control output port of the "On State Changed" node and create a new *if* node. (In the Fuzzy Finder, search for "if".)
 1. Drag a connector from the data output port of the "On State Changed" node and connect it to the data input port of the *if* node.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/423-if-node.png)
+    ![A screenshot of a video play Description](../../../media/sample-mesh-101/423-if-node.png)
 
 ## Making the video play
 
@@ -519,7 +518,7 @@ contains the stations for Chapter 4. To get there:
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image058.jpg)
 
-2. Press the **Teleport to Chapter 4** button.
+1. Press the **Teleport to Chapter 4** button.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image059.jpg)
 
@@ -535,10 +534,10 @@ your experience to do the following:
 1. Press a button that causes an educational video about wind turbines
     to play.
 
-2. Press a button that triggers the display of an info dialog
+1. Press a button that triggers the display of an info dialog
     about wind turbines.
 
-3. Press a button that teleports the participant from the ground up to
+1. Press a button that teleports the participant from the ground up to
     a platform attached to a wind turbine generator, where they can
     examine the generator up close.
 
