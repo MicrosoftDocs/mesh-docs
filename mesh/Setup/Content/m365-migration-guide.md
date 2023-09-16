@@ -20,7 +20,7 @@ This migration should make the admin experience, event management, and event cre
 > [!NOTE]
 > Azure management of Mesh is being removed with the exception of Mesh scripting resources. For more info on Mesh scripting and Azure, see the [Set up cloud scripting infrastructure in Azure](setup-cloud-scripting-infrastructure.md).
 
-## Mesh Portal
+## Mesh Portal (Preview)
 
 In the Mesh Portal, admins will be able to manage:
 
@@ -110,7 +110,7 @@ These environments can vary widely, determined by your resources and creativity!
 
 In order to upload environments, you'll need to use Unity and follow the developer flow included in our docs.
 
-[See how to upload environments ](../../Create/Getting%20started/mesh-101-tutorial/mesh-101-05-make-environment-available.md)
+[See how to upload environments](../../Create/Design%20&%20Develop/Make%20your%20environment%20available%20for%20Events/build-and-publish-your-environment.md)
 
 ## Next steps
 

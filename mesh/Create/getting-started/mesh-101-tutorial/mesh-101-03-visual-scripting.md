@@ -51,6 +51,7 @@ when it's pressed by an avatar. The avatar can then press the same button to sto
     you're looking at the first station, **3.1 -- Video Playback**, as
     shown below.
 
+
 ![A screenshot of a video playlist Description automatically generated with low confidence](../../../media/sample-mesh-101/403-station-three-one.png)
 
 As you can see, there's already a video screen in place, but it needs a Play/Stop button. As the text box for the station explains, we'll create a Script Graph with some button logic so that the button can be used to toggle the VideoPlayer on and off and change the button text.
