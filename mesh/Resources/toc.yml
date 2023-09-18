@@ -1,6 +1,6 @@
 items:
   - name: Avatars for Teams release notes
-     items:
+    items:
     - name: What's new
       href: avatars-release-notes.md
     - name: Known issues
