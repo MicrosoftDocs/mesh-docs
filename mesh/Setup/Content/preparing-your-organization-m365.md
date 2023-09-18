@@ -1,11 +1,11 @@
 ---
-title: Preparing your organization for Mesh
-description: Prepare your organization to adopt Mesh and its features. Organize a team to manage setup and distribution.
+title: Preparing your organization for Mesh with M365
+description: Guide to using Mesh as a user.
 author: typride
 ms.author: tmilligan
-ms.date: 7/27/2023
-ms.topic: overview
-keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
+ms.date: 09/18/2023
+ms.topic: Guide
+keywords: Microsoft Mesh, M365, events, M365, setup, Mesh Portal
 ---
 
 # Preparing your organization for Mesh
