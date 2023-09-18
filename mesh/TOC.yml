@@ -1,7 +1,7 @@
 - name: Welcome to Mesh
   href: overview.md
 - name: Release notes
-  itesm:
+  items:
   -- name: What's new
       href: avatars-release-notes.md
     - name: Known issues
