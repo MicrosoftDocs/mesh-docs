@@ -22,11 +22,11 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 | Mobile | Teams mobile | View other avatars only |
 | VDI | Teams | No |
 
-## Sept 18, 2023 - What's new
+## Sept 18, 2023
 
 * Avatars for Microsoft Teams is now avialable on the New Teams Client for Windows Desktop Only. Mac Desktop support not yet available.
 
-## June 21, 2023 - What's new
+## June 21, 2023
 
 This release is published June 21, 2023.
 
