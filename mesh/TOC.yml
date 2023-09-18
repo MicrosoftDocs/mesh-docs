@@ -2,7 +2,7 @@
   href: overview.md
 - name: Release notes
   items:
-  -- name: What's new
-      href: avatars-release-notes.md
-    - name: Known issues
-      href: avatars-known-issues.md
+  - name: What's new
+    href: avatars-release-notes.md
+  - name: Known issues
+    href: avatars-known-issues.md
