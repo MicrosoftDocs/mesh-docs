@@ -2,6 +2,6 @@ items:
   - name: Overview
     href: development-overview.md
   - name: Getting started
-    href: Getting started/toc.yml
+    href: getting-started/toc.yml
   - name: Design and Develop
-    href: Design & Develop/toc.yml
+    href: design-and-develop/toc.yml
