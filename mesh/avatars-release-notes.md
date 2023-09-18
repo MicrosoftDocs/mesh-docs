@@ -20,7 +20,7 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 | Mac    | Desktop (Teams Client)    | Yes |
 |  | Web  | View other avatars only |
 | Mobile | Teams mobile | View other avatars only |
-| VDI | Teams | No |
+| VDI | Teams | View other avatars only |
 
 ## Sept 18, 2023
 

@@ -12,7 +12,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 ## September 18, 2023
 
-* Avatar lip sync is not working in the pre-join screen. It works as expected in a meeting. Users will notice if they apply their avatar in the pre-join screen and have their mic unmuted and speak, the avatars mouth will not move until you join the meeting.
+* Avatar lip sync is not working in the meeting's pre-join screen. If you have your avatar enabled in the pre-join screen and you are unmuted and speak, the avatars mouth will not move. Avatar lip sync will work as expected once you join the meeting.
 
 
 
