@@ -15,9 +15,9 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 > 
 > We thank you for your patience in this transition. In the coming weeks we will provide more up-to-date information regarging our transition to M365 and how to prepare your organization for that.
 
-## Gather Your v-Team
+## Gather Your v-Team 
 
-This document will cover the required tasks and suggest functional roles
+This document covers the required tasks and suggest functional roles
 that may need to know about the rollout, but follow your organization's
 standard rollout process, including change and configuration management.
 
