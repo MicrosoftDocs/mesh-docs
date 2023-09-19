@@ -18,6 +18,35 @@ Events in Mesh should be familiar to most organizations that work with Microsoft
 
 ## Create your event in the Mesh Portal
 
-Create an event in the Mesh Portal and invite participants. Once created, participants will see the event in Microsoft Teams and Outlook calendars.
+Create an event in the Mesh Portal and invite participants. Once created, participants will see the event in their calendars in Microsoft Teams and Outlook.
 
-To learn how to 
+:::image type="content" source="../../media/mesh-event-producer-guide/event-mesh-in-calendar.png" alt-text="Mesh event showing up in Teams calendar":::
+
+To learn how to create your event in the Mesh Portal, see [Create an event](create-event.md).
+
+> [!div class="nextstepaction"]
+> [Create an event](create-event.md)
+
+
+## Customize your event
+
+The power of Mesh really becomes clear when you customize your event by adding artifacts to your environment prior to the meeting start time. Add text, video players, or a screenshare screen that can be controlled during your run-of-show to engage and wow attendees.
+
+:::image type="content" source="../../media/mesh-event-producer-guide/Video-player-2.png" alt-text="Video player inside a Mesh meeting while customizing an event prior to the event start time.":::
+
+To learn how to customize your event in the Mesh app, see [Customize your event](customize-event.md).
+
+> [!div class="nextstepaction"]
+> [Customize your event](customize-event.md)
+
+
+## Produce your event
+
+When it's time for your event, join in Mesh and leverage a set of host tools to interact with participants, and curate your event experience.'
+
+:::image type="content" source="../../media/mesh-event-producer-guide/Host-panel-open2.png" alt-text="Host panel in an event used to interact with participants.":::
+
+To learn how to produce your event and leverage the tools, see [Produce your event](produce-event.md).
+
+> [!div class="nextstepaction"]
+> [Produce your event](produce-event.md)

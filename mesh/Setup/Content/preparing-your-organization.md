@@ -12,7 +12,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 > [!IMPORTANT]
 > For the 23.11 release, this document is in a draft form. Due to the nature of this release, there may be content that is out of date.
-> 
+>
 > We thank you for your patience in this transition. In the coming weeks we will provide more up-to-date information regarding our transition to M365 and how to prepare your organization for that.
 
 ## Gather Your v-Team
