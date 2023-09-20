@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, Unity, M365, Immersive spaces, Avatars, getting starte
 
 # Creating a new Unity project
 
-An easy way to start creating a Mesh experience is to [open an existing sample](../../Getting started/choose-your-journey.md) and build from there. If you know what you want to build and prefer to start from scratch, this article will get you started. You can add your own content to the scene and then upload it as an *Environment* to Mesh.
+An easy way to start creating a Mesh experience is to [open an existing sample](../../getting-started/choose-your-journey.md) and build from there. If you know what you want to build and prefer to start from scratch, this article will get you started. You can add your own content to the scene and then upload it as an *Environment* to Mesh.
 
 1. Create a new Unity project using the **3D URP** (Core) template.
 
@@ -39,8 +39,7 @@ confidence](../../../media/get-started-developing-mesh/image008.png)
 
 ## Add a TravelPoint
 
-Every scene must have at least one TravelPoint, which is used to configure avatar spawning behavior. If you're new to TravelPoints, we recommend that you [read our TravelPoint and TravelGroup documentation](../../Enhance your Environment/object-avatar-interactions#travelpoint-and-travelpointgroup) and follow the instructions there. When you're finished, continue on with the article named [Building for single and multiple platforms](build-for-single-and-multiple-platforms.md).
+Every scene must have at least one TravelPoint, which is used to configure avatar spawning behavior. If you're new to TravelPoints, we recommend that you [read our TravelPoint and TravelGroup documentation](../enhance-your-environment/object-avatar-interactions.md#travelpoint-and-travelpointgroup) and follow the instructions there. When you're finished, continue on with the article named [Building for single and multiple platforms](build-for-single-and-multiple-platforms.md).
 
 > [!div class="nextstepaction"]
 > [Import the Mesh Toolkit](import-the-mesh-toolkit.md)
-
