@@ -237,4 +237,4 @@ Things to be aware of:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Mesh scripting overview](mesh-scripting-overview.md)
+> [Debug & optimize performance](../debug-and-optimize-performance/performance-guidelines.md)

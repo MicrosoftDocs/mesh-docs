@@ -515,7 +515,7 @@ This component has two modes of operation:
   * **Instantaneous** will reach the target velocity immediately (Same as **Constant Acceleration** with **Max Acceleration** = Infinity).  
   * **Constant Acceleration** will ensure the body reaches target velocity no matter what within the limits of the **Max Acceleration** setting.  
   * **Smooth Approach** reduces acceleration the closer you get to target velocity. This means that, in practice, you will never reach the target velocity. Also, should there be any external influence, like going uphill or downhill, this extra influence will not be completely overridden, resulting in going faster downhill than uphill.  
-* **Affected Bodies** defines [optional filtering conditions](#body-filters) for the bodies affected by this component. (By default, all bodies are affected.)
+* **Affected Bodies** defines [optional filtering conditions](#common-settings-body-filters) for the bodies affected by this component. (By default, all bodies are affected.)
 
 ### Scale Gravity Field
 
@@ -536,7 +536,7 @@ There is an interesting relationship between the perception of the player's own 
 
 * **Gravity Preset** allows the selection of several interesting and useful presets for the **Gravity Scale** property: various celestial bodies (Moon, Mars, Earth, Jupiter), no gravity (Outer Space), or inverted gravity (Upside Down). You can always overwrite the **Gravity Scale** with any value you like.
 * **Gravity Scale** sets the local gravity inside the trigger volume in relation to the default physics gravity affecting the scene. The default gravity scale of 1 leaves gravity unaffected; larger values increase gravity; 0 removes gravity; negative values switch the direction of gravity.
-* **Affected Bodies** defines [optional filtering conditions](#body-filters) for the bodies affected by this component. (By default, all bodies are affected.)
+* **Affected Bodies** defines [optional filtering conditions](#common-settings-body-filters) for the bodies affected by this component. (By default, all bodies are affected.)
 
 ### Orbital Gravity Field
 
@@ -552,7 +552,7 @@ Any rigid bodies that touch or overlap the trigger colliders (the "trigger volum
 
 * **Gravity** defines the magnitude of gravity. This is the acceleration of the orbiting body (the "moon") towards the central body at a one-meter distance. Since the orbital velocity is sqrt(gravity/radius), this value describes the velocity² of a moon in a stable orbit at a radius of one meter.
 * **Disable Global Gravity** disables the scene's global physics gravity setting for bodies affected by this component. By default, the global scene gravity will still affect your planet and its moons.
-* **Affected Bodies** defines [optional filtering conditions](#body-filters) for the bodies that can become moons in this gravity field.
+* **Affected Bodies** defines [optional filtering conditions](#common-settings-body-filters) for the bodies that can become moons in this gravity field.
 
 * **Force Moons On Circular Orbit** is a cheat that applies some gentle forces to push the moon into a circular orbit. The motivation is that it is hard for a non-expert to set gravity and initial velocity of the bodies in a way to achieve a circular orbit. Additionally, if this option is enabled, any moons that are placed inside the gravity field in Unity Editor automatically start orbiting their central body when the scene is loaded.
 * **Strength Of Forced Orbit** scales the acceleration applied to force the moon onto a circular orbit.
@@ -587,7 +587,7 @@ This component uses the shape of the rigid body's colliders to calculate its den
   * **Static Flat** assumes that the water surface is perfectly planar and never moves from its initial position in the scene. The position and orientation of the water surface is determined just once, when the scene starts. This is the computationally cheapest option.
   * **Dynamic Flat** assumes that the water surface is perfectly planar but allows that it can move (for example, the water level can rise or sink). The position and orientation of the water surface is determined once per frame.
   * **Dynamic Flat Per Body** supports a water surface that isn't planar (for example, it can be wavy). For each rigid body floating on the water surface, a local planar approximation of the water surface underneath the rigid body is determined once per frame, which is then used to calculate buoyancy forces for this rigid body.
-* **Affected Bodies** defines [optional filtering conditions](#body-filters) for the bodies that can float in this buoyancy field. (By default, all bodies are eligible.)
+* **Affected Bodies** defines [optional filtering conditions](#common-settings-body-filters) for the bodies that can float in this buoyancy field. (By default, all bodies are eligible.)
 * **Drag** controls movement resistance as the rigid body hits the water (in other words, friction orthogonal to the body's surface).
 * **Skin friction** controls movement resistance as the rigid body is moved through the water (in other words, friction parallel to the body's surface).
 
@@ -667,7 +667,7 @@ This component has two modes of operation:
   * **Instantaneous** will reach the speed limit immediately (Same as **Constant Acceleration** with **Max Acceleration** = Infinity).
   * **Constant Acceleration** will ensure the body reaches target velocity no matter what within the limits of the **Max Acceleration** setting.
   * **Smooth Approach** reduces acceleration the closer you get to target velocity. This means that, in practice, you will never reach the target velocity. Also, should there be any external influence, like going uphill or downhill, this extra influence will not be completely overridden, resulting in going faster downhill than uphill.
-* **Affected Bodies** defines [optional filtering conditions](#body-filters) for the bodies affected by this component. (By default, all bodies are affected.)
+* **Affected Bodies** defines [optional filtering conditions](#common-settings-body-filters) for the bodies affected by this component. (By default, all bodies are affected.)
 
 ### Align Field
 
@@ -684,7 +684,7 @@ This component adds torque to the body to align it to a specific direction. Note
 * **Torque Multiplier** sets the amount of torque applied (between 1 and 1000).
 * **Rigidbody Axis** sets the axis of the affected rigidbody which is to be aligned to the target.
 * **Angular Drag** sets the damping factor.
-* **Affected Bodies** defines [optional filtering conditions](#body-filters) for the bodies affected by this component. (By default, all bodies are affected.)
+* **Affected Bodies** defines [optional filtering conditions](#common-settings-body-filters) for the bodies affected by this component. (By default, all bodies are affected.)
 
 ### Velocity Direction
 
@@ -711,7 +711,7 @@ This component has two modes of operation:
   * **Instantaneous** will reach the target direction immediately (Same as **Constant Acceleration** with **Max Acceleration** = Infinity).
   * **Constant Acceleration** will ensure the body reaches target velocity no matter what within the limits of the **Max Acceleration** setting.
   * **Smooth Approach** reduces acceleration the closer you get to target velocity. This means that, in practice, you will never reach the target velocity. Also, should there be any external influence, like going uphill or downhill, this extra influence will not be completely overridden, resulting in going faster downhill than uphill.
-* **Affected Bodies** defines [optional filtering conditions](#body-filters) for the bodies affected by this component. (By default, all bodies are affected.)
+* **Affected Bodies** defines [optional filtering conditions](#common-settings-body-filters) for the bodies affected by this component. (By default, all bodies are affected.)
 
 ### Magnetic Body
 
