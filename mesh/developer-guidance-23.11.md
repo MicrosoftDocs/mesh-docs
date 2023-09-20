@@ -29,6 +29,11 @@ In particular, the Mesh 23.11 release has two major updates that are more impact
 
 23.11 has both a Unity upgrade (2022.3.7f1) and a significant number of Toolkit renames. To update your content, the steps are:
 
+> [!IMPORTANT]
+> In rare instances, after you update the Toolkit package, your Unity project may become unexplainably and temporarily broken. This can result in mysterious compiler errors and missing script references despite the script file being present and clean. The steps to resolve this are:
+> 1. Close and restart Unity.
+> 1. If this doesn't work, on the Unity menu bar, select Assets > Reimport All. Note that this process can take some time.
+
 1. Clean the Unity project from the command line with git clean –dxf.
 2. Open the project in Unity 2022.3.7f1 and allow it to upgrade the project / materials etc.
 3. Save and close the Unity project.
