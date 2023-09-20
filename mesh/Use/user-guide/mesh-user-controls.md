@@ -90,7 +90,7 @@ Take a selfie of yourself with friends or snap a picture from the POV of your av
 >[!Note]
 >Avatars nametags are turned off by default when taking a photo or selfie. You can still turn on the nametag by clicking on **...** in the App bar.
 
-![A screenshot of selfie menu](media/image088.png)
+![A screenshot of selfie menu](media/selfie-controls.png)
 
 Selecting on the photo icon in the menu will take you to the SharePoint folder where your photos are stored.
 
