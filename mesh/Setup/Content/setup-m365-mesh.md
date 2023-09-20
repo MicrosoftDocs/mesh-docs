@@ -65,7 +65,7 @@ To enable Mesh in your managed tenant, you must have one of the following roles 
     :::image type="content" source="../../media/m365-setup-guide/m365-mesh-policy-enabled-successful.png" alt-text="Policy configuration for Mesh policy is successful created and visible in the Policy Management page":::
 
 
-## End user dialogue referenced in policy can be seen below (visible in upcoming release)
+## End user dialogue referenced in policy can be seen below
 
 Users will see a new license agreement dialogue in the upcoming release for Mesh products and data gathered from spatial audio. See the image below for more info:
 
