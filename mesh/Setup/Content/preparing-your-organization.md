@@ -12,6 +12,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 > [!IMPORTANT]
 > For the 23.11 release, this document is in a draft form. Due to the nature of this release, there may be content that is out of date.
+> (Cathy says: I am so confused about versions, but what I'm going to put here is what would be true for M365 admin, not Azure admin. Also, I question whether it makes sense to keep most of this, since it was originally intended to be handed out prior to people getitng access to the rest of the docs and the bits. It was designed to have no NDA content in it, so it just hints at things that are later discussed in the IT Admin content. In fact the IT Admin content later incorporated large chunsk of this. I propose we either a) publish this as a separate doc, which could even be released prior to the actual public preview release, or get rid of it and incorporate this into the rest of the IT Admin content. The rewrite below is as if we are gonig to have it standalone as a separate doc. The Azure section is empty because I do'n tknow what needs to happen with that yet.)
 > 
 > We thank you for your patience in this transition. In the coming weeks we will provide more up-to-date information regarging our transition to M365 and how to prepare your organization for that.
 
@@ -21,20 +22,15 @@ This document covers the required tasks and suggest functional roles
 that may need to know about the rollout, but follow your organization's
 standard rollout process, including change and configuration management.
 
-You must have an executive-level sponsor, either an IT Director or
-CIO-level executive. Sponsorship is advisable to help with any
-cross-team blocking issues, and it is a requirement to participate in
-the Teams TAP.
+Executive-level sponsorship is highly advisable to help with any cross-team blocking issues. 
 
 You will need access to several administration tools, so either get
 access to those tools or get people on the v-team who can access the
 tools.
 
-- Administration for Mesh Teams features will be done in Microsoft
-    Teams Admin Center (TAC) in the Microsoft 365 Admin Portal.
+- Team Admin Center (TAC) is needed to configure avatar and immersive spaces administration
 
-- Administration for Mesh features related to Worlds will be done in a
-    Mesh resource in the Azure Portal.
+- Azure portal is needed to administer Mesh scripting. 
 
 - Other tasks like permitting URLs and firewall ports will be done in
     whatever administrative tools are used by your organization.
@@ -45,28 +41,16 @@ and running the Mesh preview, for example Licensing, Security, and
 Endpoint Management. Other stakeholders like Help Desk and Human
 Resources may also need to be consulted.
 
-To participate in the TAP, you must have an existing Non-Disclosure
-Agreement (NDA) or sign a new one if you do not have one or if your
-current one expires in less than three months. You must also sign the
-[Microsoft Teams Pre-Release Technologies
-agreement](https://aka.ms/TAP100ProgramDocument). You should make sure
-you engage your legal team to review both agreements as soon as
-possible.
+To participate in the public preview, you must agree to the terms of use and privacy statements. You should be in contact with your legal and privacy teams to review those terms before accepting them. 
 
-## Verify Your Licensing
+> ## Verify Your Licensing 
 
-All tenants that you use for Mesh for Teams must have Microsoft 365
-Enterprise E3, Microsoft 365 Enterprise E5, Microsoft 365 Business
-Standard, Microsoft 365 Business Premium or Teams Premium. including any
-test tenants. You must also have an Azure subscription for Azure where
-your Mesh resources can be uploaded. Organizations may enroll multiple
-tenants to support preproduction or test tenants; each tenant must have
-the required licenses and subscriptions.
+>For immersive spaces for Teams, your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5. For Microsoft Mesh, a Teams Premium license is required during the Public Preview. If you plan to use Mesh scripting, you must also have an Azure subscription. 
 
-If your organization plans to create custom worlds for Mesh standalone,
+If your organization plans to create custom worlds for Microsoft Mesh,
 your world building team will need licenses for Unity.
  
-## Which Tenant Should I Provision for Mesh TAP?
+## Which Tenant Should I Provision for Mesh Public Preview?
 
 The two main factors to consider when choosing which tenant(s) to
 provision for Mesh are:
@@ -77,16 +61,16 @@ provision for Mesh are:
     having ultimate responsibility for running the domain securely and
     effectively.
 
-Mesh TAP will allow participants to provision multiple tenants.
+Mesh Public Preview will allow participants to provision multiple tenants.
 Provisioning up your primary production tenant for Mesh is recommended
 because it will give you the biggest scope to test with, but it may
 create overhead work through internal procedures and approvals. You may
-also want to provision tenants for test/dev/pre-production Because all
+also want to provision tenants for test/dev/pre-production. Because all
 users who will be participating in immersive experiences together must
-have accounts together in the same Azure Active Directory, and you may
+have accounts together in the same Microsoft Entra (formerly Azure Active Directory), you may
 want to consider using a separate tenant if you want to collaborate with
-people outside your production tenant; guest accounts in AAD do not have
-access to Mesh immersive experiences. There is no technical barrier to
+people outside your production tenant; guest accounts in Entra do not have
+access to Mesh experiences. There is no technical barrier to
 creating user accounts in a production tenant for people who do not work
 for that organization, but there may be strong business reasons against
 doing so. However, creating additional tenants will increase complexity
@@ -94,122 +78,25 @@ for admins and users to manage accounts, may also incur additional
 expenses for licensing and domain management, and may require additional
 process within your organization.
 
-If you expect to use Mesh for Immersive Meeting experiences for users in
+If you expect to use immersive spaces for Teams for users in
 your production version of Teams, you will definitely want to provision
-your production tenant for Mesh TAP. While you can create other tenants
+your production tenant for Mesh Public Preview. While you can create other tenants
 for testing, people who use Teams throughout the day are highly unlikely
 to want to log out of their main Teams account to log into a different
-account in a different AAD. A separate tenant is more practical for
-standalone worlds, where it's simpler to flip between accounts. Teams
-TAP gives you the option of enrolling all your users or a subset of
-users in TAP.
+account in a different Entra. A separate tenant is more practical for
+the Mesh app, where it's simpler to flip between accounts. 
 
 Each tenant can have multiple Azure Storage subscriptions, but the Azure
-Storage subscription used for Microsoft Mesh must be in the same AAD as
-the users who will access storage to upload environments, run events,
-and attend events. Access to Azure Storage is controlled by Azure
-resource groups.
-
-NOTE: For Mesh TAP, resource groups can be created only in the west
-central US region.
-
-## Provide Microsoft with Required Information
-
-Microsoft requires certain information to provision tenants, users, and
-subscriptions for pre-release features in Mesh.
-
-To provision your tenant for using custom worlds, you need to tell the
-TAP team the tenant name and ID of the tenant where your Azure Storage
-subscription is located. You also need to provide the ID for that Azure
-Storage Subscription. You should gather this information in advance, to
-make sure you know how to access the subscription.
-
-### Tenant ID and Primary Domain FQDN
-
-Before your tenant can be onboarded, you must provide Microsoft with the
-unique ID assigned to each Azure Active Directory tenant and the fully
-qualified domain name of the primary domain, for example
-contosodemo.onmicrosoft.com.
-
-### Who Can Do This?
-
-Any user in the domain can see the tenant ID and FQDN.
-
-### Where
-
-Go to [aad.portal.azure.com](https://aad.portal.azure.com) and look
-under Overview
-
-![Screen shot showing the Microsoft Entra Admin Center. In the Basic
-Information sectino, it has the name, Tenant ID, and Primary domain
-](../../media/preparing-organization-for-mesh/image002.png)
-
-### More Information 
-
-<https://learn.microsoft.com/en-us/partner-center/find-ids-and-domain-names>
-
-## Subscription ID for your Azure Subscription
-
-When you create worlds and upload templates and Unity items, they will
-go into Storage in your Azure subscription. Microsoft needs to associate
-your Azure subscription ID with the Mesh on the back end.
-
-### Who Can Do This?
-
-The Owner of the Azure Subscription will be able to view the
-subscription ID. The Global Administrator does not automatically have
-access to all your Azure subscriptions. If the owner of the Azure
-subscription is not known, the Global Administrator can elevate access
-to all subscriptions. To do that, go to
-[aad.portal.azure.com](https://aad.portal.azure.com) and manage the
-Properties of the domain.
-
-![Access management for Azure resources -
-screenshot](../../media/preparing-organization-for-mesh/image002.png)
-
-
-### Where
-
-Go to portal.azure.com, open Subscriptions, locate the subscription you
-want to use. The subscription ID is displayed in the default column
-view.
-
-![Graphical user interface showing Subscriptions UI where you can add,
-manage policies, view requests, view eligible subscriptions.
-](../../media/preparing-organization-for-mesh/image004.png)
-
-### More Information 
-
-[Elevate access as a global admin](/azure/role-based-access-control/elevate-access-global-admin)
-
-[Role assignments for portal subscription admin](/azure/role-based-access-control/role-assignments-portal-subscription-admin)
-
-## Teams TAP for Mesh
-
-Access to Teams immersive spaces is available only to tenants enrolled
-in the Microsoft Teams TAP, which is administered by the Teams team. New
-enrollments for companies wanting to use Mesh features in Teams are on
-hold. After immersive spaces moves to public preview, public-facing
-documentation will provide instructions on how to access it.
-
-Companies that want to join Teams TAP all-up, not just for Mesh, may
-apply if the program is currently accepting nominations. All
-organizations in TAP must meet activity thresholds to remain in TAP. To
-apply, go to <https://aka.ms/JoinTAP100>.
-
-Mesh Avatars in Teams is generally available and does not require
-participation in Teams TAP or Mesh TAP. For more information, see [Set
-up avatars for Microsoft Teams - Microsoft Teams \| Microsoft
-Learn](https://learn.microsoft.com/en-us/microsoftteams/meeting-avatars)
+Storage subscription used for Mesh scripting must be in the same Entra as
+the users who will attend events and the developers who will upload and manage the scripts. 
 
 ### Contact Owners of Supporting Teams
 
-To complete the steps in the onboarding process, you will need to either
+To complete the steps to get Mesh Public Preview running, you will need to either
 have various rights and permissions or be in contact with people in your
 organization who can grant the rights and permissions you will need.
 Depending on your company structure and policies, this process can be
-time-consuming, so it helps to start the outreach while you are
-completing the TAP paperwork. The following section lists organizational
+time-consuming, so it helps to start the outreach as soon as possible. The following section lists organizational
 roles that you will probably need to work with to complete the required
 pre-deployment tasks.
 
@@ -232,16 +119,13 @@ components installed automatically, you must set the Teams Apps setup
 policies too. Coordinate with whoever owns Teams app management to plan
 for appropriate policies. For more information about Teams access
 control, see
-<https://admin.microsoft.com/Adminportal/Home#/rbac/directory>. More
-specific details about the apps and suggested permissions will be
-available in the *All Users Guide for Mesh for Teams* doc, which you
-will have access to **after** the paperwork is signed.
+<https://admin.microsoft.com/Adminportal/Home#/rbac/directory>. 
 
 #### Teams Feedback Policies
 
 Microsoft relies on feedback from users to make better products. The
 Teams administrator can set whether users can send feedback about Teams
-to Microsoft. Feedback can be permitted based on Azure Active Directory
+to Microsoft. Feedback can be permitted based on Entra
 group membership. If Teams feedback is disabled, users will not be able
 to send feedback about Mesh features built into Teams. We strongly
 encourage your org to permit this feedback for Mesh users but consult
@@ -251,7 +135,8 @@ about managing feedback, see
 
 ## Office Apps Admin 
 
-Cloud Policy service for Microsoft 365 lets you enforce policy settings
+You must have a policy set in Office Cloud Policy Service to permit user to access any form of Mesh. Also, OCPS 
+lets you enforce policy settings
 for whether users can send feedback about Microsoft 365 apps for
 enterprise; this is a separate setting from the Teams feedback policies
 discussed previously and must be enabled for users of all Mesh features
@@ -283,53 +168,15 @@ For more information about managing feedback, see
 
 ## Endpoint Managers
 
-Users accessing Mesh on PCs can use either the web portal or a Windows
-app available (but hidden) in the Microsoft Store. You can use your MDM
+Make sure you know your organization's process for deploying apps. The Mesh app is available in the Microsoft Store and can be depoloyed from there using your MDM
 (mobile device management) solution like Microsoft Intune to deploy the
 app and make it show up in the users' Company Portal. If you block
-access to the Microsoft Store, you can add it to the Microsoft Store for
-Business instead. URLs will be provided in the onboarding documentation
-but find out your organization's process for requesting apps to be added
-to the Company Portal. For more information about deploying apps with
+access to the Microsoft Store, you can use WinGet instead. For more information about deploying apps with
 Microsoft Intune, see
 <https://learn.microsoft.com/en-us/mem/intune/apps/store-apps-windows>
 
 ## Azure Administrators
-
-Some management of Mesh will happen in the Azure portal, but it will be
-limited to resources specific to Mesh. Anyone listed as the Owner of the
-Storage subscription you provided when you enrolled will be able to see
-the Mesh app after it is installed to your Azure tenant. The owner can
-also assign additional access to the subscription. Note that by default
-the Global Admin does not have access to subscriptions they do not own,
-but you can [elevate access to manage all Azure
-subscriptions](https://learn.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin).
-
-The Storage subscription owner should create one or more resource
-groups, which will serve as containers for custom Worlds. Owners can
-assign additional owner, contributor, or read only access as needed.
-
-- Owner: Allows users to manage all Mesh resources in your resource
-    group.
-
-- Contributor: Allows users to see and manage Mesh resources in your
-    resource group, create/delete events/spaces, select templates, add
-    users, and share events/spaces.
-
-- Read permissions: Allows users to see the resources in the Mesh
-    resource group, but not manage or edit them.
-
-[]{#_Work_with_Your .anchor}Make sure you have access to an Owner of the
-Storage subscription, so you will be able to get resource groups created
-and access assigned as soon as the Mesh app is available to you.
-
-### CLI Tool Installation
-
-To deploy your Mesh Scripting to the cloud, someone with sufficient
-rights will need to install the Mesh App Command Line Interface (CLI)
-tool. You will need to be an owner of the resource group for the world
-you're deploying to or be a contributor on the Azure subscription where
-you're deploying.
+(needs content)
 
 ## Work with Your Security Organization
 
@@ -478,84 +325,13 @@ Microsoft has published a blog on Avatar etiquette: How Microsoft
 employees are using avatars for Microsoft Teams in their meetings. This
 doc can help inform materials you might want to share with your users.
 
-### Preparing Users for the Mesh App
-
-Your users have access to the Mesh app for PC on the Windows store, and
-the Mesh app for Quest in the Meta store. There are no barriers to any
-user installing these apps, whether or not your organization is enrolled
-in Mesh TAP, but users can't log into the Mesh app unless they are
-logging in as a user in a tenant that has been onboarded for Mesh. After
-your organization has been onboarded, users will be able to log into
-Mesh but will not be able to create standalone events until granted
-permissions in the Azure portal. Users will not be able to see Worlds or
-attend events in those worlds unless they have been invited to those
-events by the event creator.
-
-#### Quest App
-
-Users can go to the Meta App Lab on PC and "get" the app. The next time
-the user logs into Quest, the app will download. Users will have to
-authenticate when they start the app, which may involve security
-policies like 2-factor authentication on the headset, which may require
-additional training for users to understand and perform correctly. As
-described above, Quest users can attend standalone Mesh events if
-invited. After your tenant is onboarded for Teams immersive spaces,
-Quest users can also access all meetings in Teams via headset.
-
 ## Summary
 
 Microsoft Mesh offers many powerful features that enhance communication
 and collaboration in remote and hybrid workplaces. Because this service
 provides experiences that span services, make sure you plan for all
 necessary stakeholders to provide input, both those mentioned here and
-others specific to your organization. After you are onboarded to the
-preview program, you will get access to detailed documentation on
-setting up and using all available Mesh features.
-
-## Checklist
-
-The following tasks can be completed prior to your paperwork being
-signed:
-
-- Have your legal team review the [Microsoft Teams Pre-Release
-    Technologies agreement](https://aka.ms/TAP100ProgramDocument)
-
-- Enroll in the [Microsoft Teams TAP](http://aka.ms/JoinTAP100)
-
-- Verify that the tenant you will use for Mesh is licensed for
-    [Microsoft 365 E3 or E5](https://www.microsoft.com/en-us/microsoft-365/enterprise/compare-office-365-plans?ef_id=f1e78938c11a11837d66ea4d52ed8289:G:s&OCID=AIDcmmwf9kwzdj_SEM_f1e78938c11a11837d66ea4d52ed8289:G:s&lnkd=Bing_O365SMB_Brand&msclkid=f1e78938c11a11837d66ea4d52ed8289)
-
-- Verify that the tenant you will use for Mesh has a [Storage subscription for Azure](#Verify_Your_Licensing)
-
-- Gather the following information:
-
-  - [Azure Active Directory Tenant
-        ID](#tenant-id-and-primary-domain-fqdn)
-
-    - [Subscription ID for your Azure Storage
-        Subscription](#subscription-id-for-your-azure-subscription)
-
-- Get access to an [account with Teams App Manager
-    role](#teams-apps-managers)
-
-- Get your [Teams app policy approved](#teams-app-policy)
-
-  - Allow only approved users access to run Mesh
-
-- [Enable Teams feedback](#teams-feedback-policies) for Mesh users
-
-- [Enable Cloud Policy feedback](#office-apps-admin) for Mesh users
-
-- Coordinate with the endpoint management team to [deploy the Mesh app
-    for PC](#endpoint-managers)
-
-- Plan who your [Mesh administrators](#azure-administrators) will be
-    in Azure
-
-- Work with your [security or network access team](#_Work_with_Your)
-    on the endpoint/firewall configurations.
-
-- Discuss with your Security and Endpoint Management teams the risks and benefits of allowing Quest 2 devices to access your network and whether any changes should be made to [conditional access policies](#_Conditional_Access)
+others specific to your organization. 
 
 ## Next steps with Mesh
 
