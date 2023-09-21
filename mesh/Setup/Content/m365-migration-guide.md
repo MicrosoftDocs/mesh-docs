@@ -60,7 +60,7 @@ You may have made Mesh world(s) previously using the Azure portal. In this case,
 
 ### Create a Mesh world
 
-1. Open the [Mesh Portal](https://portal-selfhost.mesh.microsoft.com/).
+1. Open the [Mesh Portal](https://portal-preview.mesh.microsoft.com/).
 1. In the Home page, select **Worlds** in the left nav.
     :::image type="content" source="../../media/m365-migration-guide/Select-world.png" alt-text="Select worlds in left nav home page":::
 1. Select **Create World** in the top right.
@@ -77,7 +77,7 @@ With the transition to M365 and the Mesh Portal, events are handled slightly dif
 
 ### Create an event
 
-1. Open the [Mesh Portal](https://portal-selfhost.mesh.microsoft.com/).
+1. Open the [Mesh Portal](https://portal-preview.mesh.microsoft.com/).
 1. Log in with your corporate account.
 1. In the Home page, select **Events** in the left nav.
 
