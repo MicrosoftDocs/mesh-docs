@@ -288,7 +288,7 @@ Now when the button is clicked, the video will play and the still image will be 
 
     We need to set this node's target GameObject to "Label". However, there are lots of "Label" GameObjects in the project, and they all look the same in the node's popup list, so let's add this object by using the drag and drop method.
 
-1. From the **Hierarchy**, drag the **Label** GameObject that's a child of the **Button** object and then drop it in the first field in the *Set Test* node.
+1. Drag the **Label** GameObject that's a child of the **Button** object from the **Hierarchy** and then drop it in the first field in the *Set Test* node.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/428-drag-label.png)
 
@@ -357,31 +357,32 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
 1. In the **Hierarchy**, select **InfoButtonWrapper**.
 
-![A screen shot of 3.2 - Info_Dialog GameObject Hierarchy with Information_Button selected](../../../media/sample-mesh-101/433-info-buttton-wrapper.png)
+    ![A screen shot of 3.2 - Info_Dialog GameObject Hierarchy with Information_Button selected](../../../media/sample-mesh-101/433-info-buttton-wrapper.png)
 
-    In the **Inspector**, note that **InfoButtonWrapper** has the **Local script scope* component attached and that its "Share visual script variables on this Game Object" option isn't selected. 
+    In the **Inspector**, note that **InfoButtonWrapper** has the **Local Script Scope* component attached and that its "Share visual script variables on this Game Object" option isn't selected. 
     
     ![A screen shot of 3.2 - Info_Dialog GameObject Hierarchy with Information_Button selected](../../../media/sample-mesh-101/437-share-variables-off.png)
     
     This is because after a participant clicks the button that makes the info dialog appear, the button becomes hidden to them. If this option was selected, the button would become hidden to everyone in the scene, and we don't want that.
 
-1. In the **Inspector**, navigate to the **Script Machine** component with the **Show Dialog** graph and then click the **Edit Graph** button.
+1. In the **Inspector**, navigate to the **Script Machine** component, which contains the **Show Dialog** graph, and then click the **Edit Graph** button.
 
     ![A screen shot of the Information_Button's Inspector](../../../media/sample-mesh-101/436-edit-graph-button.png)
 
 1. In the graph, connect the "True" output control port of the "If" node to the input control port of a new "Microsoft Mesh: Show Dialog" node that you create.
+1. Drag a connector from the "True" output control port of the "If" node and then create a new "Microsoft Mesh: Show Dialog" node . (In the Fuzzy Finder, search for "show dialog".)
 
     ![A screen shot showing the if node connect to the new Show Dialog node.](../../../media/sample-mesh-101/303-show-dialog.png)
 
-1. In the **Show Dialog** node, click the **Message** field and then add this sentence:
+1. In the **Show Dialog** node, click the **Message** field and then replace the word "Message" with this sentence:
 
-    "Did you know that the world's largest wind turbine has blades longer than a football field?"
+    *Did you know that the world's largest wind turbine has blades longer than a football field?*
 
     This is the message that will appear in the info dialog.
 
     ![A screen shot showing Show Dialog node with a message added.](../../../media/sample-mesh-101/304-show-dialog-message.png)
 
-1. Select the drop-down that currently displays **OK**, and then, in the popup list, deselect **OK** and select **Continue**. This will add a "Continue" button to the info dialog that the user can click to close the dialog and continue in the experience.
+1. Select the drop-down that currently displays **OK**, and then, in the popup list, deselect **OK** and select **Continue**. This will add a "Continue" button to the info dialog that the user can click to close the dialog after they finish reading its message.
 
     ![A screen shot showing Show Dialog node with a message added.](../../../media/sample-mesh-101/305-show-dialog-continue.png)
 
@@ -395,7 +396,7 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
 1. Select the button. The info dialog appears and displays the message you added to the **Show Dialog** node earlier.
 
-1. When you're finished with info dialog, click its **Continue** button. Note that after you click the button, it disappears. To use the button again, you must exit and then re-enter Play mode.
+1. When you're finished with the info dialog, click its **Continue** button. Note that after you click the button, it disappears. To use the button again, you must exit and then re-enter Play mode.
 
     > [!TIP]
     > The distance and triggering elements in effect here are determined by the components of the **ProximityDetector** GameObject.
@@ -428,15 +429,15 @@ give it the teleport behavior.
 
     ![A screen shot](../../../media/sample-mesh-101/439-teleport-button.png)
 
-    Note that in the **Inspector**, there's a **Script Machine** component named *Teleport to Open Air Platform* and **Source** is set to **Embed**, which means the script graph is embedded in the scene.
+    Note that in the **Inspector**, there's a **Script Machine** component with a script graph named *Teleport to Open Air Platform*. The **Source** option is set to **Embed**, which means the script graph is embedded in the scene.
 
     ![A screen shot](../../../media/sample-mesh-101/440-teleport-graph-embedded.png)
 
-    Note also that there's a **Local Script Scope** component attached and its "Share" option is *not* selected. When a participant clicks the teleport button, we only want *them* to teleport, not everyone in the scene!
+    Note also that there's a **Local Script Scope** component attached and its "Share visual script variables" option is *not* selected. When a participant clicks the teleport button, we only want *them* to teleport, not everyone in the scene!
 
     ![A screen shot](../../../media/sample-mesh-101/445-event-not-shared.png)
 
-1. Click the **Edit Graph** button. Just as in the previous chapter, our graph already have some variables and nodes set up for you. They're contained inside two groups: **Teleport Button Behavior** and **Teleport to OpenPlatform**:
+1. Click the **Edit Graph** button. Just as in the previous chapter, our graph already has some variables and nodes set up for you. They're contained inside two groups: **Teleport Button Behavior** and **Teleport to OpenPlatform**:
 
     ![A screen shot](../../../media/sample-mesh-101/441-teleport-existing-nodes.png)
 
@@ -444,17 +445,28 @@ In the **Teleport Button Behavior** group, the logic is similar to what you saw 
 
 #### Create a Travel Point and add a reference to it
 
-So what's a "Travel Point", you might be asking ... ? Basically, it's a component that you can use to define a point in space to spawn or teleport to. Normally, you would first create a *Travel Group*, and then add one or more Travel Points to it. We've already created the Travel Group for you in this project, so in the steps below, we'll add a Travel Point to that group. We'll then use that Travel point as the location the avatar will go to when they click the "Teleport" button. To learn more, see our article named *Mesh object and avatar interactions*.
+So what's a "Travel Point", you might be asking ... ? Basically, it's a component that you can use to define a point in space to spawn or teleport to. Normally, you would first create a *Travel Group*, and then add one or more Travel Points to it. We've already created the Travel Group for you in this project, so in the steps below, we'll add a Travel Point to that group. We'll then use that Travel point as the location the avatar will go to when they click the "Teleport" button. To learn more, see our article named [*Mesh Object and Avatar Interactions*](../../design-and-develop/enhance-your-environment/object-avatar-interactions.md).
 
 1. In the **Hierarchy**, create a new empty GameObject as a child object to **TravelGroup** and then rename it "TeleportLocationWindTurbine".
 
     ![A screen shot](../../../media/sample-mesh-101/311-teleport-location.png)
 
-1. Click the **Add Component** button and then search for and add the *Travel Point* component.
+1. In the **Inspector**, click the **Add Component** button and then search for and add the *Travel Point* component.
 1. In the **Inspector**, in the **Transform** component, enter the following values:
 
-    Position: X = 6, Y = 58, Z =61
-    Rotation: X = 0, Y = -270, Z = 0
+**Position**:
+
+X = 6
+Y = 58
+Z = 61
+
+**Rotation**: 
+
+X = 0
+Y = 270
+Z = 0
+
+    ![A screen shot](../../../media/sample-mesh-101/455-teleport-transform-settings.png)
 
     The avatar will teleport to this location.
 
@@ -464,11 +476,11 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
 
 ### Adding the teleport nodes
 
-1. In the **Teleport to OpenPlatform** script graph, drag a connector from the True output control port of the "If" node and then create a new node called "Game Object: Set Active." (In the Fuzzy Finder, search for "set active".)
+1. In the **Teleport to Open Air Platform** script graph, group: **Teleport to OpenPlatform**, drag a connector from the True output control port of the "If" node and then create a new node called "Game Object: Set Active." (In the Fuzzy Finder, search for "set active".)
 
     ![A screen shot](../../../media/sample-mesh-101/314-set-active-node.png)
 
-1. Drag the **TeleportLocationWindTurbine**  object from the **Hierarchy** and then drop it in the *Game Object: Set Active* node.
+1. Drag the **TeleportLocationWindTurbine**  object from the **Hierarchy** and then drop it in the field that displays "This" in the *Game Object: Set Active* node.
 
     ![A screen shot](../../../media/sample-mesh-101/443-set-active-teleport.png)
 
@@ -482,23 +494,23 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
 
     ![A screen shot](../../../media/sample-mesh-101/444-select-travel-point.png)
 
-There's just one thing left to do in this graph: reset the *TeleportNow* object variable to false. So far, *TeleportNow* has only been used in the part of the graph that was already set up for you so we haven't talked about it. Let's take a look at it now so you can understand what's happening.
+There's just one thing left to do in this graph. Note that the "Set Object Variable" node contains an object variable named *TeleportNow*. After the teleport happens, we want this variable to be set to false. So far, *TeleportNow* has only been used in the part of the graph that was already set up for you so we haven't talked about it. Let's take a look at how it works in the scen so you can understand what's happening.
 
 The *TeleportNow* object variable is type *Boolean* and has a default value of False.
 
-    ![A screen shot](../../../media/sample-mesh-101/446-teleport-now-var.png)
+![A screen shot](../../../media/sample-mesh-101/446-teleportnow-var.png)
 
-The initial sequence of the graph, **Teleport Button Behavior**, detects if a participant clicks the teleport button. If they do, the *TeleportNow* variable is set to True.
+The nodes in the upper group in the graph, **Teleport Button Behavior**, detect if a participant clicks the teleport button. If they do, the *TeleportNow* variable is set to True.
 
-    ![A screen shot](../../../media/sample-mesh-101/447-teleportnow-true.png)
+![A screen shot](../../../media/sample-mesh-101/447-teleportnow-true.png)
 
-The "trueness" of *TeleportNow* is what triggers the sequence of nodes in the **Teleport to OpenPlatform** group that makes the teleport happen.
+The setting of True for *TeleportNow* is what triggers the sequence of nodes in the **Teleport to OpenPlatform** group that makes the teleport happen.
 
-    ![A screen shot](../../../media/sample-mesh-101/448-teleportnow-triggers-sequence.png)
+![A screen shot](../../../media/sample-mesh-101/448-teleportnow-triggers-sequence.png)
 
 After the teleport has occurred, *TeleportNow* needs to be reset to False so that the whole process can be repeated the next time the button is clicked. We've already set up the nodes for this; all you need to do is make the connection.
 
-1. Drag a connector from the output control port of the "Travel Point: Travel to Point" node and then connect it to the input control point of the "Set Object Variable: TeleportNow" node.
+1. In the **Teleport to OpenPlatform** group, drag a connector from the output control port of the "Travel Point: Travel to Point" node and then connect it to the input control point of the "Set Object Variable: TeleportNow" node.
 
     ![A screen shot](../../../media/sample-mesh-101/449-connect-final-teleportnow.png)
 
