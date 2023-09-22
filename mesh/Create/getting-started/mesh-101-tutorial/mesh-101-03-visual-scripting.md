@@ -3,7 +3,7 @@ title: Mesh 101 Add interactivity with Mesh Visual Scripting
 description: Learn adding about adding interactivity to objects with Mesh Visual Scripting.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/15/2023
+ms.date: 9/22/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
 ---
