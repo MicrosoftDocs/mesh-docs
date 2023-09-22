@@ -248,15 +248,27 @@ Now we'll add the nodes that detect if *isPlaying* changes and plays or stops th
 
 ## Making the video play
 
-If you look in the **Hierarchy**, you'll see that the GameObject named **Video** has a **Video Player** component attached. When **Video** is active, **Video Player** plays a video called "WindTurbine".
+1. In the **Hierarchy**, expand the **VideoPlayer** GameObject and and note that it has two child objects: **Video** and **VideoStill**.
+
+1. Select **Video** and then, in the **Inspector**, note the following:
+
+- **Video** has a component named **Video Player**, which has a video attached named "WindTurbine".
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/424-video-player.png)
 
-Look again and you'll see that the **Video** GameObject is inactive. This is the default state; we don't want the video playing as soon as the participant enters Play mode! The scene also has an object named **VideoStill** which simply displays a still image on the video screen. 
+- **Video** is inactive.
+
+1. In the **Hierarchy**, select the **VideoStill** GameObject and then, in the **Inspector**, note the following:
+
+- **VideoStill** has a still image attached.
+
+- **VideoStill** is active.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/425-videostill.png)
 
-This GameObject is active when the scene starts. When the participant presses the Play/Stop button, it makes **Video** active, which causes the video to play, and simultaneously makes **VideoStill** inactive, which hides the still image. When the participant presses the button again, the opposite happens: **Video** is made inactive, stopping the video, and **VideoStill** is made active again, which makes the video screen display the still image. The remaining nodes in our graph make all of this happen.
+When the scene starts, the video screen displays a still image (due to **VideoStill** being active) and does *not* play a video (which is due to **Video** being inactive). When the participant presses the Play/Stop button (which shows "Play"), it makes **Video**  active, which causes the video to play, and simultaneously makes **VideoStill** inactive, which hides the still image. When the participant presses the button again (which now shows "Stop"), **Video** is made inactive, stopping the video, and **VideoStill** is made active again, which makes the video screen display the still image. 
+
+The remaining nodes in our graph make all of this happen.
 
 1. Drag a connector from the True output control port of the "if" node and create a new *Game Object: Set Active* node. (In the Fuzzy Finder, search for "set active".)
 1. In the *Game Object: Set Active* node, click the round button in the GameObject field, and then, in the **Select GameObject** window, search for and select **Video**.
@@ -264,19 +276,19 @@ This GameObject is active when the scene starts. When the participant presses th
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/426-set-active-video-node.png)
 
-1. Drag a connector from the output control port of the "Game Object: Set Active" node and create another new *Game Object: Set Active* node.
-1. In the new *Game Object: Set Active* node, click the round button in the GameObject field, and then, in the **Select GameObject** window, search for and select **VideoStill**.
+1. Drag a connector from the output control port of the "Game Object: Set Active" node and then create another new *Game Object: Set Active* node.
+1. In the new *Game Object: Set Active* node, click the round button in the GameObject field (which currently displays "This"), and then, in the **Select GameObject** window, search for and select **VideoStill**.
 1. Keep the **Value** check box unselected. This makes the node inactive.
 
-Now when the button is clicked, the video will play and the still image will be hidden. We just need one more thing in this sequence. Since the Play/Stop button is a toggle, we have to make sure that after the participant clicks "Play," the button's label changes to "Stop," and then when clicked again back to "Play," and so on.
+Now when the button is clicked, the video will play and the still image will be hidden. We need just one more thing in this sequence. Since the Play/Stop button is a toggle, we have to make sure that after the participant clicks "Play," the button's label changes to "Stop," and then when it's clicked again, the label changes back to "Play". To achieve this, we'll add a *TextMeshPro* node.
 
 1. Drag a connector from the output control port of the last "Game Object: Set Active" node and create a new *Text Mesh Pro: Set Text* node. (In the Fuzzy Finder, search for "set text".)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/427-set-text.png)
 
-    For this node, we need to set its target GameObject to "Label". There are lots of "Labels" in the project, though, and they all look the same in the node's popup list, so let's do this with the drag and drop method.
+    We need to set this node's target GameObject to "Label". However, there are lots of "Label" GameObjects in the project, and they all look the same in the node's popup list, so let's add this object by using the drag and drop method.
 
-1. Drag the **Button** child object **Label** from the **Hierarchy** and then drop it in the *Set Test* node.
+1. From the **Hierarchy**, drag the **Label** GameObject that's a child of the **Button** object and then drop it in the first field in the *Set Test* node.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/428-drag-label.png)
 
@@ -286,19 +298,19 @@ Now when the button is clicked, the video will play and the still image will be 
 
 ### Making the video stop
 
-Just three more nodes to go for this graph! We need to set up the false condition for the button: "If the button is clicked while the video is playing, *isPlaying* becomes false and it causes the video to stop and the button to display "Play" again.
+Just three more nodes to go for this graph! We need to set up the false condition for the button: "If the button is clicked while the video is playing, the *isPlaying* variable becomes false and it causes the video to stop and the button label to change to "Play" again."
 
 We can take a shortcut here.
 
-1. Control-click the last three nodes you added to select them.
+1. Control-click the last three nodes you added. This selects them.
 1. Right-click in the script graph and then, in the popup menu, select **Duplicate Selection**.
-1. Drag the duplicated notes to an empty space in the graph just below the nodes you duplicated.
+1. Drag the duplicated nodes to an empty space in the graph just below the nodes you duplicated.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/430-duplicated-nodes.png)
 
 1. Drag a connector from the False output control port of the last "if" node and connect it to the control input port of the first *Game Object: Set Active* node in the duplicated set of nodes.
-1. In that same first *Game Object: Set Active* node, deselect **Value**.
-1. In the second *Game Object: Set Active* node in the duplicated set, select **Value**.
+1. In that same first *Game Object: Set Active* node (the one that contains "Video"), deselect **Value**.
+1. In the second *Game Object: Set Active* node in the duplicated set (the one that contains "VideoStill"), select **Value**.
 1. In the **Set Text** node, change the text from "Stop" to "Play."
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/431-final-node-settings-for-button.png)
@@ -312,7 +324,7 @@ There may be times when you want a script's events to be experienced only by the
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/434-local-script-scope.png)
 
-For this tutorial, we want every other participant in the experience to be able to see any interactions with the video player and see the video itself play and pause. To ensure this, make sure the "Share visual script variables on this Game Object" option is selected. The information box below this option tells you what's shared and what remains local.
+For this tutorial, we want all participants in the experience to be able to see any interactions with the video player and see the video itself play and pause. To ensure this, make sure the "Share visual script variables on this Game Object" option is selected. The information box below this option tells you what's shared and what remains local.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/435-share-variables.png)
 
@@ -322,7 +334,7 @@ For this tutorial, we want every other participant in the experience to be able 
     button.
 
 1. In the **Game** window, click the **Play** button you just worked
-    on. This causes a brief video about wind turbines to play on the
+    on. This causes the label on the button to change to "Stop" and a brief video about wind turbines to play on the
     screen above the button.
 
     ![A screenshot of a video playback Description ](../../../media/sample-mesh-101/image044.jpg)
