@@ -48,8 +48,7 @@ This article: Overview and setup
 
 ## Terminology
 
-In Mesh terms, the project you create in Unity and then upload to the
-Azure Portal is called an *Environment*.
+In Mesh terms, the project you create in Unity and then upload to the Mesh Portal or Azure Portal is called an *Environment*.
 
 ## Prerequisites
 
@@ -64,14 +63,6 @@ Unity version 2022.3.7f1 is required for this tutorial.
 [Get help installing Unity](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 
 Your installation should include modules for Android and Windows.
-
-Unity supports three IDEs: VS, VS Code, and JetBrains Rider. We
-recommend Visual Studio, but other supported IDEs will work. You'll be
-using this for Mesh Scripting.
-
-**IMPORTANT**: Mesh Scripting requires Visual Studio *2022*, but certain versions of Unity install with Visual Studio *2019* by default. If you're
-using Visual Studio, make sure you have version 2022 installed. To learn
-more, see the [Unity documentation](https://learn.unity.com/tutorial/get-started-with-visual-studio-and-unity).
 
 ### Previous Unity experience
 
@@ -107,8 +98,7 @@ To download the app (codenamed **Project Napili**), you can visit the link below
 ![Project Napili - Microsoft Store Apps](../../../media/sample-mesh-101/image003.png)
 > [Project Napili - Microsoft Store Apps](https://apps.microsoft.com/store/detail/project-napili/9P0B5VMS9RTQ?hl=en-us&gl=us)
 
-**If the app isn't available, talk to your IT** **admin about making the
-app visible to you.**
+If the app isn't available, talk to your IT admin about making the app visible to you.
 
 ### Download the Mesh Toolkit
 
@@ -181,7 +171,7 @@ Mesh Toolkit 23.x
 For this tutorial, you don't need to install any packages---they're
 already pre-loaded into the tutorial project. If you were creating your
 own project from scratch, you would need to install the Mesh Toolkit
-package. To learn more about this, see our article titled *Download the Mesh Toolkit*.
+package. To learn more about this, see our article titled [Download the Mesh Toolkit](../download-the-mesh-toolkit.md).
 
 ## Next steps
 

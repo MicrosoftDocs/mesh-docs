@@ -74,7 +74,7 @@ As you can see, there's already a video screen in place, but it needs a Play/Sto
 
     Make sure the **Transform** > **Position** values for **ButtonBase** are 0, 0, 0.
 
-**ButtonBase** is placed in the scene a little lower than where we want it.Let's fix that.
+**ButtonBase** is placed in the scene a little lower than where we want it. Let's fix that.
 
 1. Ensure that **ButtonBase** is selected in the **Hierarchy**.
 
@@ -83,7 +83,7 @@ As you can see, there's already a video screen in place, but it needs a Play/Sto
 
 Perfect! Now **ButtonBase** is correctly located just in front of the **BackplateBase** object.
 
-![A screenshot of a video play Description ](../../../media/sample-mesh-101/405-buttonbase-correct.png)
+![A screenshot of a video play Description ](../../../media/sample-mesh-101/406-buttonbase-correct.png)
 
 ## Rename the button
 
@@ -98,7 +98,7 @@ Right now, the text on the button says "Label." Let's change that to
 "Play."
 
 1. In the **Hierarchy**, expand the **PlayVideoButton** GameObject to
-    display its child object **Button**, then expand **Button** to display its child objects and then select the **Label** child object.
+    display its child object **Button**, then expand **Button** to display its child objects, and then select the **Label** child object.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/408-label-object.png)
 
@@ -119,21 +119,21 @@ Note that two new components have been added in the **Inspector**: **Script Mach
 
 Note that in the **Script Machine** component, the **Source** is set to **Graph**. Let's keep that setting. This means that we'll be creating a new script graph as an asset and saving it in the project.
 
-1. In the **Script Machine** component, click **Source** and then select **Embed**.
+1. Note that in the **Script Machine** component, the **Source** is set to **Graph**. You have two choices for **Source**: *Graph* and *Embed*. Click **Source** and then select **Embed**.
 
 > [!TIP]
-> You have two choices for **Source**: *Graph* and *Embed*. Each has advantages and disadvantages; you can learn more about them in the [Unity Script Machine artice](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We're choosing to use *Embed* here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
+> *Graph* and *Embed* each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine artice](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We're choosing to use *Embed* here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
 
 1. In the **Script Machine** component, enter a name in the *Title* field for the graph: "Video Player Behavior."
 1. Enter a description in the *Summary* field for the graph: "Video player behavior definition."
 
 ## Setting up the script graph
 
-1. In the **Script Machine** component, click **Edit Graph**. This opens the **Script Graph** window. Drag and place it next to the **Project** and **Console** tab so that we can see the script graph and **Scene** window at the same time.
+1. In the **Script Machine** component, click **Edit Graph**. This opens the **Script Graph** window. Drag and place it next to the **Project** and **Console** tab, if it's not already there, so that we can see the script graph and **Scene** window at the same time.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/409-script-graph-docked.png)
 
- As we add nodes, you may want more space in the window; you can click the three-dot button and then select **Maximize** for achieve this, or click the **Full Screen** button in the upper right corner of the window.
+    As we add nodes, you may want more space in the window; you can click the three-dot button and then select **Maximize** to achieve this, or click the **Full Screen** button in the upper right corner of the window.
 
 1. We don't need the **OnStart** and **OnUpdate** nodes; delete them.
 
@@ -141,14 +141,14 @@ Note that in the **Script Machine** component, the **Source** is set to **Graph*
 
 We can think of this script graph as having three main goals:
 
-    (1) Detect if the Play/Stop button is clicked.
-    (2) If it's clicked, play the video.
-    (3) When it's clicked again, stop the video
+1. Detect if the Play/Stop button is clicked.
+1. If it's clicked, play the video.
+1. When it's clicked again, stop the video
 
 The first goal, detect if the button is clicked, will require three nodes. The GameObject that actually "listens" for and reacts to a click is called **Button**. Let's add that to the script graph.
 
 > [!NOTE]
-> A node is also called a *unit* in Visual Scripting. In this tutorial, we'll be using the term *node*.
+> A node is also called a *unit* in Visual Scripting. In this tutorial, we'll continue using the term *node*.
 
 1. Drag **Button** from the **Hierarchy** and then drop it in the script graph.
 
@@ -160,9 +160,9 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 
 > [!TIP] You may want to take a moment here to examine some of the components for the **Button** GameObject:
 >
->- *Mesh Interactable Properties*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named *Mesh Object and Avatar Interactions*.
+> *Mesh Interactable Properties*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named [*Mesh Object and Avatar Interactions*](../../design-and-develop/enhance-your-environment/object-avatar-interactions.md).
 >
-> - *Script Machine*: This has a script graph named *Button Base Behaviour.*
+> *Script Machine*: This has a script graph named *Button Base Behaviour.*
 >
 >   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/208-playvideobutton-components-v2.png)
 >
@@ -172,27 +172,29 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 >
 > This component is added automatically at runtime to interactable bodies; it exposes various properties to Visual Scripting such as *IsHovered* and *IsSelected*, which will come in handy in a moment.
 
-In the script graph, add a node that lets us know when the button is selected.
-
+In the script graph, let's add a node that lets us know when the button is selected.
+1. Make sure you're viewing the embedded script graph that's attached to the **PlayVideoButton** GameObject.
 1. Click and hold on the outport port of the **PlayVideo** variable, and then release the mouse button. This opens the Fuzzy Finder.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/413-fuzzy-finder.png)
 
-1. Search for "Is Selected", and then, in the list, select *Mesh Interactable Body: IsSelected*." **Note**: This outputs a Boolean value; you can confirm this in the **Graph Inspector**.
+1. Search for "Is Selected", and then, in the list, select *Mesh Interactable Body: IsSelected*." 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/414-is-selected-node.png)
 
-1. Drag a connector from the output port of the "Is Selected" node and create a new node called "Microsoft Mesh: On State Changed." (In the Fuzzy Finder, search for "on state changed.")
+    **Note**: This node outputs a Boolean value; you can confirm this in the **Graph Inspector**.
+
+1. Drag a connector from the output port of the "Is Selected" node and then create a new node called "Microsoft Mesh: On State Changed." (In the Fuzzy Finder, search for "on state changed.")
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/415-on-state-changed.png)
 
-These are our three button-click detection nodes. The *Is Selected* node starts out with a value of False, but when the button is clicked, the value is changed to True and is passed to the *On State Changed* node. This node then triggers the play/stop nodes that follow.
+These are our three button-click detection nodes. The *Is Selected* node starts out with a value of False, but when the button is clicked, the value changes to True and is passed to the *On State Changed* node. This node then triggers the play/stop nodes that we'll add next.
 
 ### Play or stop the video
 
-If *On State Changed* has a value of true, the video will play. If it's already playing and the button is pressed, *On State Changed* will have a value of false and this will stop the video. Our next step is to add an *if* node to determine this flow.
+If *On State Changed* has a value of true, the video will play. If it's already playing and the button is pressed, *On State Changed* changes to a value of false and the video stops playing. Our next step is to add an *if* node to determine this flow.
 
-1. Drag a connector from the output control port of the "On State Changed" node and create a new *if* node. (In the Fuzzy Finder, search for "if.")
+1. Drag a connector from the output control port of the "On State Changed" node and then create a new *if* node. (In the Fuzzy Finder, search for "if.")
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/416-if-node.png)
 
@@ -202,21 +204,21 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
 ## Create a variable to determine if the video is playing or not
 
-1. In the **Blackboard**, go to the **Object** tab, and then create a variable named "isPlaying." Make the **Type** "Boolean" and the value false (the default).
+1. In the **Blackboard**, go to the **Object** tab, and then create a variable named "isPlaying." Make the **Type** "Boolean" and leave the **Value** check box unselected. This gives the Boolean the default value of false.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/217-isplaying-var-v2.png)
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/454-isplaying-var.png)
 
-1. Add a "Set Object Variable" node to the "True" output port of the "If" node.
+1. Drag a connector from the **True** output control port of the "If" node and then create a new *Set Object Variable* node. (In the Fuzzy Finder, search for "if."). 
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/417-set-object-varible-node.png)
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/417-set-object-variable-node.png)
 
 1. In the **Set Object Variable" node, click the variable name drop-down and then select "isPlaying."
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/418-set-var-is-playing.png)
 
-The *isPlaying* variable has to perform double-duty here. We can ensure that that *isPlaying* always had the correct value by attaching it to a *Negate* node.
+    The *isPlaying* variable has to perform double-duty here. To ensure that *isPlaying* always has the correct value, let's give it input from a *Negate* node.
 
-1. Drag a connector from the data input port of the "Set Object Variable: isPlaying" node and create a new *Negate* node. (In the Fuzzy Finder, search for "negate.")
+1. Drag a connector from the data input port of the "Set Object Variable: isPlaying" node and then create a new *Negate* node. (In the Fuzzy Finder, search for "negate.")
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/419-add-negate-node.png)
 
@@ -225,22 +227,22 @@ The *isPlaying* variable has to perform double-duty here. We can ensure that tha
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/420-get-object-is-playing.png)
 
-The *Negate* does some math to make the value of *IsPlaying* become opposite of what it currently is. When the scene starts, *isPlaying* is false (the default). When the Play/Stop button is clicked, the *Negate* node causes *isPlaying* to be set to true and this makes the video play. When the button is clicked again, the *Negate* node causes *isPlaying* to be reset to false and this makes the video stop.
+The *Negate* node does some math to make the value of *IsPlaying* to change to the opposite of whatever it's currently set to. When the scene starts, *isPlaying* is false (the default). When the Play/Stop button is clicked, the *Negate* node causes *isPlaying* in the **Set Object Variable** node to be set to true and this makes the video play. When the button is clicked again, the *Negate* node will cause *isPlaying* to be reset to false and this will make the video stop.
 
 ## Turning the video on or off
 
 Now we'll add the nodes that detect if *isPlaying* changes and plays or stops the video based on that change.
 
-1. In the lower part of the graph, add a *Get Object Variable* node and set its value to *isPlaying*.
+1. In the lower part of the graph, add a *Get Object Variable* node and set its value to *isPlaying*. (You can right-click in the graph and then select **Add Node**.)
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/421-get-var-is-playing-second-note.png)
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/421-get-var-is-playing-second-node.png)
 
-1. Drag a connector from the data output port of the "Get Object Variable: isPlaying" node and create a new *On State Changed* node. (In the Fuzzy Finder, search for "on state changed".)
+1. Drag a connector from the data output port of the "Get Object Variable: isPlaying" node and then create a new *On State Changed* node. (In the Fuzzy Finder, search for "on state changed".)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/422-on-state-changed-second.png)
 
-1. Drag a connector from the control output port of the "On State Changed" node and create a new *if* node. (In the Fuzzy Finder, search for "if".)
-1. Drag a connector from the data output port of the "On State Changed" node and connect it to the data input port of the *if* node.
+1. Drag a connector from the control output port of the "On State Changed" node and then create a new *if* node. (In the Fuzzy Finder, search for "if".)
+1. Drag a connector from the data output port of the "On State Changed" node and then connect it to the data input port of the *if* node.
 
     ![A screenshot of a video play Description](../../../media/sample-mesh-101/423-if-node.png)
 
