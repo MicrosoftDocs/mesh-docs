@@ -5,5 +5,4 @@ items:
     href: Content/m365-migration-guide.md
   - name: Set up M365
     href: Content/setup-M365-Mesh.md
-  - name: Set up Azure
-    href: Content/setup-azure-mesh-guide.md
+
