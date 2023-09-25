@@ -18,7 +18,7 @@ If you're brand new to Mesh Visual Scripting, we recommend one or both of the fo
 
 - Go through [Unity's Visual Scripting tutorial](https://learn.unity.com/project/introduction-to-visual-scripting). This teaches you most if not all of the concepts you need to get started with Mesh Visual Scripting.
 
-- Go through our [Mesh 101 tutorial](../../Getting%20started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md). Chapter 3 of the tutorial give you hands-on experience setting up three Mesh features using Visual scripting. The tutorial lists a prerequisite that you already have some Unity Visual Scripting knowledge; however, we've gotten feedback that some beginners have found the instructions easy to follow. If you go through the Unity tutorial linked above, this should prepare you sufficiently for the tutorial.
+- Go through our [Mesh 101 tutorial](../../getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md). Chapter 3 of the tutorial give you hands-on experience setting up three Mesh features using Visual scripting. The tutorial lists a prerequisite that you already have some Unity Visual Scripting knowledge; however, we've gotten feedback that some beginners have found the instructions easy to follow. If you go through the Unity tutorial linked above, this should prepare you sufficiently for the tutorial.
 
 Otherwise, there's no special setup needed&#8212;you can just start scripting!
 
@@ -27,7 +27,7 @@ Otherwise, there's no special setup needed&#8212;you can just start scripting!
 - Component properties and visual script variables that have simple types are automatically shared across clients in a session.
 - To exclude parts of your scene from this automatic sharing, add a **Local Scene Scope** component. Everything underneath that transform won't be shared automatically.
 - To do something in regular time intervals in sync across clients, use the **On Interval** trigger node.
-- To do something in response to certain component properties or visual script variables changing (for example, because this or some other client was setting them in a visual script), use the **On State Changed** trigger 
+- To do something in response to certain component properties or visual script variables changing (for example, because this or some other client was setting them in a visual script), use the **On State Changed** trigger
 - There are additional Visual Scripting functions provided by Mesh&#8212;see the _Microsoft_ > _Mesh_ and _Microsoft_ > _Events_ > _Mesh_ sections in the Fuzzy Finder.
 
 **Limitations**
@@ -106,9 +106,9 @@ Mesh offers some special script nodes:
 Mesh makes certain trade-offs in favor of simplicity:
 
 - If more than one client tries to change the same data, the last client wins (instead of using a transaction-based data update model).
-- To ensure data consistency, visual scripts that run on all clients must not read and then write shared properties or variables. If this occurs, it triggers a runtime error and aborts the script flow's execution. 
+- To ensure data consistency, visual scripts that run on all clients must not read and then write shared properties or variables. If this occurs, it triggers a runtime error and aborts the script flow's execution.
 
-## Hello World!
+## Hello World
 
 The simplest visual script you can create is one that just opens a message box:
 
@@ -237,4 +237,4 @@ Things to be aware of:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Mesh scripting overview](mesh-scripting-overview.md)
+> [Debug & optimize performance](../debug-and-optimize-performance/performance-guidelines.md)
