@@ -3,7 +3,7 @@ title: Mesh 101 Make your Environment available for Events
 description: Learn how to uploaded your Environment and make it available for Event.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/11/2023
+ms.date: 9/25/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Azure Portal, uploader, uploading
 ---
@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365
 You've completed adding all the features you need for your Mesh
 experience using Mesh Physics and Scripting. So far, we've been working
 in a Unity *project*; now you'll turn the *StartingPoint* scene into a
-Mesh *Environment* and upload it to a World in either the Mesh Portal or the Azure Portal. At that point, it will be available for the creation of *Events*.
+Mesh *Environment* and upload it to a World in  the Mesh Portal. At that point, it will be available for the creation of *Events*.
 
 **Configure your project settings and sign in**
 
@@ -22,18 +22,11 @@ Mesh *Environment* and upload it to a World in either the Mesh Portal or the Azu
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/001-project-settings.png)
 
-2. Select **Yes** to configure project settings for Mesh.
+1. Select **Yes** to configure project settings for Mesh.
 
     ![Graphical user interface, text, application Description automatically generated](../../../media/sample-mesh-101/image089.png)
 
-1. Do one of the following:
-
-    **To build and publish to the Azure portal**:
-    - On the menu bar, select **Mesh Toolkit** > **Environments**.
-
-    **To build and publish to the Mesh Portal**:
-    - On the menu bar, select **Mesh Toolkit** > **Environments (M365)**.
-
+1. On the menu bar, select **Mesh Toolkit** > **Environments**.
 1. In the **Mesh Environments** window, select **Sign In**.
 
 Sign in with your account. **Note**: As mentioned in the Prerequisites
@@ -53,8 +46,7 @@ World you're uploading the Environment to.
     > [!NOTE]
     > For future projects, keep in mind that the **Internal Name** field has a maximum of 40 characters, and the **Description** field has a maximum of 70 characters.
 
-3. To ensure you have the latest worlds that are available in the Azure
-    Portal, select the **Refresh List of Mesh Worlds** button.
+3. To ensure you have the latest worlds that are available in the Mesh Portal, select the **Refresh List of Mesh Worlds** button.
 
 4. Select the **Mesh World** drop down, and then select the world you
     want to upload your Environment to if it's not already selected.
@@ -65,7 +57,7 @@ World you're uploading the Environment to.
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/038-upload-capacity.png)
 
 6. Select **Create Asset** to create the Environment that you'll be
-    uploading to the Azure Portal.
+    uploading to the Mesh Portal.
 
 7. You'll receive a confirmation dialogue as shown below. Select
     **Close**.
@@ -96,16 +88,15 @@ devices using Android, when you're creating your own project, there are
 several potential scenarios to consider: build and publish your scene
 for PC only, Android only, or both PC and Android. This tutorial follows
 option #3: build and publish for PC and Android. To learn more about
-building for single and multiple platforms, see our document titled *Get
-Started with Mesh Environments*.
+building for single and multiple platforms, see our article titled [Build for single and multiple platforms](../../design-and-develop/build-your-basic-environment/build-for-single-and-multiple-platforms.md).
 
 ### Create the Environment
 
-1. In the **Update Environment** tab, click the **Select a scene**
+- In the **Update Environment** tab, click the **Select a scene**
     field, and then, in the **Select SceneAsset** dialog, select
     **StartingPoint**.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image095.jpg)
+![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/456-select-scene.png)
 
 In the **Build for Platforms** section, you choose which platforms to
 build for. Note that when a button background is gray, the button is
@@ -116,27 +107,23 @@ for both PC and Android, so make sure that both buttons are "on."
 
 ### Build and publish your Environment
 
-1. In the **Publish** section, provide some information in the **Upload
-    notes** box if you wish.
+Select the **Build and Publish** button.
 
-- Select the **Build and Publish** button.
-
-    ![A screen shot of a computer Description ](../../../media/sample-mesh-101/041-build-and-publish.png)
+![A screen shot of a computer Description ](../../../media/sample-mesh-101/041-build-and-publish.png)
 
 - If the Environment builds and uploads successfully, the **Build and
     Upload Results** dialog appears and confirms the results.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/042-results.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/457-build-and-upload-results.png)
 
 - If the build and upload process fails, this is confirmed in the **Build and Upload** **Results** dialog.
 
-### View your Environment in Azure
+### View your Environment in the Mesh Portal
 
-If you navigate to the **Environments** page for your World in the Azure
-Portal, you'll see that your Environment has been saved there. Its type
-will be listed as "Custom Environment."
+If you navigate to the **Environments** page for your World in the Mesh 
+Portal, you'll see that your Environment has been saved there. 
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image100.jpg)
+![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/458-environment-in-mesh-portal.png)
 
 Your saved custom Environment will be available to anyone who creates a
 new event in that Mesh world.
