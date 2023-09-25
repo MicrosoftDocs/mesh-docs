@@ -675,12 +675,22 @@ Aligns the body to the specified axis.
 
 This component adds torque to the body to align it to a specific direction. Note that torque is always applied in the direction that rotates the body towards the target.
 
+This component has two modes of operation:
+
+- If attached to a rigid body, this rigid body will be aligned.
+- If attached to a trigger collider, all rigid bodies entering this trigger volume will be aligned.
+
 **Setings:**
-- **Target Alignment** sets the target direction of the alignment.
-- **Align In Local Space** specifies whether **Target Alignment** is defined in a local space of the body.
-- **Torque Multiplier** sets the amount of torque applied (between 1 and 1000).
 - **Rigidbody Axis** sets the axis of the affected rigidbody which is to be aligned to the target.
-- **Angular Drag** sets the damping factor.
+- **Alignment Mode** provides different modes to specify target alignment:
+  - **In Global Space** to specify target alignment in global Space.
+  - **In Local Space** to specify target alignment in local Space (only makes sense with trigger volume).
+  - **Direction Of Velocity** to align the body to its linear velocity.
+  - **Towards Game Object** to align the body towards a target gameobject.
+- **Target Alignment** sets the target direction of the alignment. (Only when **Alignment Mode** is set to **In Global Space** or **In Local Space**.)
+- **Target Game Object** sets the target direction of the alignment. (Only when **Alignment Mode** is set to **Towards Game Object**.)
+- **Torque Multiplier** scales the applied torque to reach the target alignment, higher multiplier rotates the body faster (between 1 and 1000).
+- **Damping Coefficient** sets the damping factor (between 0 and 5). When set below 1, the body might oscillate around target orientation.
 - **Affected Bodies** defines [optional filtering conditions](#body-filters) for the bodies affected by this component. (By default, all bodies are affected.)
 
 
