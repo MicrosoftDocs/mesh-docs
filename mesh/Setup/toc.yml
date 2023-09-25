@@ -1,7 +1,7 @@
 items:
   - name: Preparing your organization
     href: Content/preparing-your-organization.md
-  - name: M365 migration guide
+  - name: M365 content migration guide
     href: Content/m365-migration-guide.md
   - name: Set up M365
     href: Content/setup-M365-Mesh.md

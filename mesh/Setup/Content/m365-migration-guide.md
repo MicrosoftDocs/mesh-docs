@@ -8,14 +8,13 @@ ms.topic: overview
 keywords: Microsoft Mesh, M365, Mesh Portal, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-# Mesh Portal migration guide
+# Mesh Portal usage guide
 
 The Microsoft Mesh setup experience is moving from Azure to M365. With this migration, the admin management of Mesh will be done primarily in the Mesh Portal.
 
 This migration should make the admin experience, event management, and event creation more unified and lead to a better experience using Mesh.
 
-> [!IMPORTANT]
-> For now, select customers can migrate to M365 and onboard to the Mesh Portal. If you are migrating to M365 from Azure and beginning to use the Mesh Portal, continue reading to see how.
+All content should be re-uploaded to M365, including all environments, and all events should be recreated in the Mesh portal.
 
 > [!NOTE]
 > Azure management of Mesh is being removed with the exception of Mesh scripting resources. For more info on Mesh scripting and Azure, see the [Set up cloud scripting infrastructure in Azure](setup-cloud-scripting-infrastructure.md).
