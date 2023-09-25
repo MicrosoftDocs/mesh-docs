@@ -53,8 +53,7 @@ Check out the highlighted features of Mesh below:
 Mesh offers the following features for the Events attendance and
 production:
 
-- **Event Creation:** Users can now create and manage
-    events in the Mesh app.
+- [Event Creation](events-guide/create-event-mesh-portal.md): Users can now create and manage events in the Mesh portal.
 
   - **Single Room or Multiple room events**: Host an event in a
         single room with 16 people or create a multi-room event with
@@ -135,7 +134,7 @@ medium confidence](../media/mesh-event-producer-guide/image003.png)
    > [Getting started with Mesh](user-guide/getting-started.md)
 
    > [!div class="nextstepaction"]
-   > [Create an event](events-guide/create-event.md)
+   > [Create an event](events-guide/create-event-mesh-portal.md)
 
    > [!div class="nextstepaction"]
    > [Customize your event](events-guide/produce-event.md)

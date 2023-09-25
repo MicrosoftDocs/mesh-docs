@@ -11,10 +11,8 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 # Preparing your organization for Mesh
 
 > [!IMPORTANT]
-> For the 23.11 release, this document is in a draft form. Due to the nature of this release, there may be content that is out of date.
-> (Cathy says: I am so confused about versions, but what I'm going to put here is what would be true for M365 admin, not Azure admin. Also, I question whether it makes sense to keep most of this, since it was originally intended to be handed out prior to people getitng access to the rest of the docs and the bits. It was designed to have no NDA content in it, so it just hints at things that are later discussed in the IT Admin content. In fact the IT Admin content later incorporated large chunsk of this. I propose we either a) publish this as a separate doc, which could even be released prior to the actual public preview release, or get rid of it and incorporate this into the rest of the IT Admin content. The rewrite below is as if we are gonig to have it standalone as a separate doc. The Azure section is empty because I do'n tknow what needs to happen with that yet.)
-> 
-> We thank you for your patience in this transition. In the coming weeks we will provide more up-to-date information regarging our transition to M365 and how to prepare your organization for that.
+> We thank you for your patience in this transition. In the coming weeks we will provide more up-to-date information regarding our transition to M365 and how to prepare your organization for that.
+
 
 ## Gather Your v-Team 
 
