@@ -19,7 +19,6 @@ Now that you've created your event, it's time to customize your event to add any
 To ensure the event runs smoothly, ensure that you customize the event
 at least one hour before the event should start.
 
-
 #### Provision Multiple Rooms before the Event
 
 If you've chosen a Multiple rooms event, ensure that you've provisioned
@@ -40,15 +39,23 @@ time.
 
 The major tools you'll use to produce your event are the:
 
-- [Environment editor](#add-content-with-the-environment-editor) -- add content to your environment like a video player.
+- [Environment editor](#add-content-with-the-environment-editor) -- add content to your environment like a screenshare, image, or video.
 
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-video-player.png" alt-text="Video player showing while avatar is customizing it":::
 
-- ([Control Panel](#prepare-content-with-the-control-panel)) -- control the elements you add
+- [Control Panel](#prepare-content-with-the-control-panel) -- control the elements you add
     to the environment with scripted sequences of events. Imagine a
     curtain raise to signal the start of the event!
 
 - [Event templates](#event-templates) -- create a template of your event with all customizations that you add to reuse in future events
+
+## Artifacts
+
+Use the Environment editor to place artifacts in your environment and customize the content displayed in each artifact.
+
+Currently, the three artifacts that you can add to your event are **Video**, **Screenshare**, and **Image**.
+
+:::image type="content" source="../../media/mesh-event-producer-guide/environment-editor-artifacts-no-text.jpg" alt-text="Video, screenshare, image artifacts in the environment editor":::
 
 ## Add content with the Environment editor
 
@@ -74,11 +81,11 @@ medium confidence](../../media/mesh-event-producer-guide/image016.png)
 
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor.png" alt-text="Environment editor button in Mesh.":::
 
-1. Select the **+** button to open the Catalog of artifact you can add.
+1. Select the **+** button to open the Catalog of artifact you can add. Select one to add it to the environment editor.
 
-    :::image type="content" source="../../Resources/media/artifacts-dialog.png" alt-text="Artifacts dialog with 3 artifacts":::
+    :::image type="content" source="../../media/mesh-event-producer-guide/environment-editor-artifacts-no-text.jpg" alt-text="Environment editor showing 3 artifacts. ":::
 
-1. Browse the available artifacts that you can add then select one to add it.
+
 1. Once you've added an artifact, you'll see it show up in the Artifacts window as shown below:
     :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-added-artifact.png" alt-text="Video player artifact shown in list of artifacts":::
 
@@ -102,8 +109,11 @@ For video artifacts, you must:
 Once you've added an artifact to the Artifact panel, you can select the artifact edit its controls.
 
 1. Select an added artifact to open up the controls window.
-    :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-open-controls-window.png" alt-text="Controls window showing for artrifact that hsas been added to an environment":::
+
+    :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-open-controls-window.png" alt-text="Controls window showing for artifact that has been added to an environment":::
+
 1. Configure the controls for the artifact. For example, you can add the URL for your video:
+
     :::image type="content" source="../../media/mesh-event-producer-guide/Customize-sharepoint-link-video-url.png" alt-text="Adding URL for a video to play during your event.":::
 
     > [!NOTE]
@@ -133,12 +143,10 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
     window will be empty. Reference the [Choose your journey](../../Create/Getting%20started/choose-your-journey.md)
     to get started with adding custom content.
 
-
 - In the **Select content** window, select the content you want to
     add, and then click the **Add** button.
 
     The added content appears in the **Control Panel** window:
-
 
 ### Preview the live run of your event
 
@@ -214,5 +222,4 @@ To manage your events, you must be in the Manage events page.
    > [Customize your event](produce-event.md)
 
    > [!div class="nextstepaction"]
-   > [Event help](events-help.md)
    > [Event help](events-help.md)

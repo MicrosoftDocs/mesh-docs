@@ -19,9 +19,9 @@ Mesh-powered immersive experiences are now integrated with Microsoft Teams, help
 
 Avatars for Microsoft Teams enables you to build connections in meetings without turning your video on. Include more people in the conversation — whether they need a break due to video fatigue or just feel more comfortable with their video off. Avatars add a new layer of choice to your meetings, enhancing your team meetings for more engagement and fun.
 
-[Learn more about avatars in Teams](https://support.microsoft.com/en-us/office/join-a-meeting-as-an-avatar-in-microsoft-teams-5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
+[Learn more about avatars for Teams](https://support.microsoft.com/en-us/office/join-a-meeting-as-an-avatar-in-microsoft-teams-5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
 
-[Learn more about setting up avatars in Teams](https://learn.microsoft.com/microsoftteams/meeting-avatars)
+[Learn more about setting up avatars for Teams](https://learn.microsoft.com/microsoftteams/meeting-avatars)
 
 Take your digital presence a step further with immersive spaces for Teams. Add immersive spaces to a Teams meeting to create social gatherings that provide participants a sense of natural co-presence and togetherness. Connecting with others in immersive spaces mimics many elements of an in-person gathering – like the ability to have a side chat with someone you want to catch up with, or to have multiple conversations in the same space without talking over each other. Immersive spaces for Teams can be accessed through PCs or Quest 2 headsets.
 

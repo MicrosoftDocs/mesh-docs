@@ -13,6 +13,11 @@ keywords: Microsoft Mesh, Unity, M365, Immersive spaces, Avatars, getting starte
 
 An easy way to start creating a Mesh experience is to [open an existing sample](../../getting-started/choose-your-journey.md) and build from there. If you know what you want to build and prefer to start from scratch, this article will get you started. You can add your own content to the scene and then upload it as an *Environment* to Mesh.
 
+> [!IMPORTANT]
+> In rare instances, after you update the Toolkit package, your Unity project may become unexplainably and temporarily broken. This can result in mysterious compiler errors and missing script references despite the script file being present and clean. The steps to resolve this are:
+> 1. Close and restart Unity.
+> 1. If this doesn't work, in the Unity menu bar select **Assets** then **Reimport All**. *Note that this process can take some time.*
+
 1. Create a new Unity project using the **3D URP** (Core) template.
 
 ![Rectangle Description automatically generated with low
