@@ -156,9 +156,9 @@ The services to register are:
 1. Microsoft.Insights
 1. Microsoft.OperationalInsights
 
-**Need help?** See how 
+**Need help?** See how
 
-> [!NOTE]`1    `
+> [!NOTE]
 > **Need help?** See how to register services [Resource provider registration errors - Azure Resource Manager | Microsoft Learn](/azure/azure-resource-manager/troubleshooting/error-register-resource-provider?tabs=azure-portal).
 
 > [!NOTE]
