@@ -1,8 +1,8 @@
 items:
+  - name: Events overview
+    href: events-overview.md
   - name: Create event
-    href: create-event.md
-  - name: Manage event
-    href: manage-event.md
+    href: create-event-mesh-portal.md
   - name: Customize event
     href: customize-event.md
   - name: Produce event

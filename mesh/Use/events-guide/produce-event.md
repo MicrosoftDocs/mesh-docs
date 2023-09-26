@@ -37,9 +37,12 @@ info.
 
 After you've created your event and customized it, it's time to join and produce your event.
 
-1. Find your event and select **Join now**.
+1. Find your event in the Mesh app and select **Join now**.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/Join-now.png" alt-text="Join event button in Mesh app":::
+    1. Open the app, find the event, and join the event.
+    1. Go to the calendar invite and use the link in the invite.
+
+    :::image type="content" source="../../media/mesh-event-producer-guide/event-mesh-in-calendar.png" alt-text="Mesh event showing up in Teams calendar":::
 
 1. Adjust your device settings to ensure they're set up properly.
 

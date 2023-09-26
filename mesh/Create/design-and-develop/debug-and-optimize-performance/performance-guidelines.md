@@ -100,10 +100,10 @@ below steps:
 
 3. Paste
 
-    [Microsoft Visual profiler package for Unity](https://github.com/microsoft/VisualProfilerUnity.git?path=/com.microsoft.mixedreality.visualprofiler#v3.0.0)
-    
+    <https://github.com/microsoft/VisualProfiler-Unity.git?path=/com.microsoft.mixedreality.visualprofiler#v3.0.0>
+
     into the text field and click \"Add\".
-    
+
     ![A screenshot of a computer Description automatically generated](../../../media/3d-design-performance-guide/image005.png)`
 
 4. The Visual Profiler will now be installed within your Unity project
@@ -134,7 +134,6 @@ demonstrated below:
   Specific branch    [*https://github.com/microsoft/VisualProfiler-Unity.git?path=/com.microsoft.mixedreality.visualprofiler#badc0ffee0ddf00ddead10cc8badf00d1badb002*](https://github.com/microsoft/VisualProfiler-Unity.git?path=/com.microsoft.mixedreality.visualprofiler#badc0ffee0ddf00ddead10cc8badf00d1badb002)
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 
 **Usage of the Visual Profiler**
 
@@ -198,8 +197,6 @@ custom shaders for most of the environment at:
 |Textures          |Lightmaps             | Skybox           | Shader                  |
 |--------------------|--------------------|------------------|------------------------|
 | <~15 MB (=16) 512x512)  |  < ~20 MB (=(4) 1023x2024)       |  1024x2048    |     Universal Render Pipeline/Baked Lit    |
-
-
 
 #### High-end PCs
 

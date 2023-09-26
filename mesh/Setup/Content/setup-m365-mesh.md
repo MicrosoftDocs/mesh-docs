@@ -28,22 +28,14 @@ To enable access, please visit the M365 Admin Center and enable the policy via t
 
 Learn how to [Enable Mesh experiences in OCPS](#enable-mesh-apps-in-ocps).
 
-## License requirements for Mesh
+## Prerequisites
 
-The table below covers the Mesh experiences, the licensing required, the default state of the policies for Mesh, and the action required by admins to enable access for their managed organization.
+To enable Mesh in your managed tenant, you must have one of the following roles in Azure AD:
+- Global Administrator
+- Security Administrator
+- Office Apps Admin
 
-
-|                         | Mesh on Meta Quest 2        | Mesh app on PC    | Mesh Portal            |
-|-------------------------|-----------------------------|-------------------|------------------------|
-| **Licensing required**  | Teams Core or Teams Premium | Teams Premium     |Teams Premium           |
-| **Default state**       | **OFF** by default          |**OFF** by default | **OFF** by default     |
-| **Action required**     | Enable via OCPS             |Enable via OCPS    | Enable via OCPS        |
-
-Learn more about [Microsoft Teams Premium](https://www.microsoft.com/en-us/microsoft-teams/premium)
-
-> [!IMPORTANT]
-> Mesh experiences rely on Calendar and Sharepoint. Your M365 license should include these.
-## Enable Mesh apps in OCPS
+## Enable Mesh in M365 Apps Admin Center
 
 1. Sign into [M365 Apps Admin Center](https://config.office.com/officeSettings/) with your Azure Active Directory account with admin privileges for the Microsoft 365 Admin Center.
     > [!div class="nextstepaction"]
@@ -53,7 +45,9 @@ Learn more about [Microsoft Teams Premium](https://www.microsoft.com/en-us/micro
 
     :::image type="content" source="../../media/m365-setup-guide/M365-policy-management.png" alt-text="Customization then policy management window in the M365 Admin Center":::
 
-1. Select **+ Create** and name the policy.
+1. Create or identify an existing policy that applies to the users that should have access to Mesh with the Mesh policy **enabled**. 
+
+    Create a new policy by selecting **+ Create** then name the policy.
 1. Adjust the scope for this policy to determine who or what groups can access **all Mesh experiences**.
 
     To be clear, if this policy is a applied to a user, they will be able to access Mesh on Meta Quest 2, the Mesh app on PC, and the Mesh Portal.
@@ -62,12 +56,20 @@ Learn more about [Microsoft Teams Premium](https://www.microsoft.com/en-us/micro
     :::image type="content" source="../../media/m365-setup-guide/M365-configure-settings-policy-name.png" alt-text="Policy name for enabling Mesh experiences is Control user access to Microsoft Mesh experiences.":::
 
 1. Select the policy and **Enable** it.
-1. In the Review and publish page, review the policy that was created and select **Create**.
+    :::image type="content" source="../../media/m365-setup-guide/OCPS-Enabled-policy.png" alt-text="Mesh access policy enabled":::
+1. In the Review and publish page, review the policy that was created then select **Create** to publish.
 
     :::image type="content" source="../../media/m365-setup-guide/m365-create-policy.png" alt-text="Create policy page in the MAC":::
 1. If successful, you should see the Policy configuration show up in the Policy Management page.
 
     :::image type="content" source="../../media/m365-setup-guide/m365-mesh-policy-enabled-successful.png" alt-text="Policy configuration for Mesh policy is successful created and visible in the Policy Management page":::
+
+
+## End user dialogue referenced in policy can be seen below
+
+Users will see a new license agreement dialogue in the upcoming release for Mesh products and data gathered from spatial audio. See the image below for more info:
+
+:::image type="content" source="../../media/m365-setup-guide/End-user-license-agreement.png" alt-text="End user license agreement for Mesh and spatial audio.":::
 
    > [!div class="nextstepaction"]
    > [Mesh Portal migration guide](m365-migration-guide.md)
