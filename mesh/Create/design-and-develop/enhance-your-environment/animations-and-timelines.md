@@ -15,27 +15,25 @@ An Event Producer can control animations that you set up in your Environment usi
 ## Animate Timelines in Unity for Mesh
 
 If you're unfamiliar with how **Timelines** work in Unity, we recommend that you watch this
-Unity Tutorial series on using **Timelines**:
+Unity Tutorial series on using [**Timelines**](https://learn.unity.com/project/up-to-speed-with-timeline)
 
-https://learn.unity.com/tutorial/timeline
+#### To create a Timeline for Mesh
 
-#### To create a Timeline for Mesh:
-
-1.  In the **Hierarchy**, add an empty GameObject and then rename it
+1. In the **Hierarchy**, add an empty GameObject and then rename it
     "Timelines."
 
-2.  Add another empty GameObject, make it a child to **Timelines**, and
+2. Add another empty GameObject, make it a child to **Timelines**, and
     then rename it "Timeline1."
 
 ![___](../../../media/enhance-your-environment/image033.png)
 
 **Notes**:
 
--   We suggest that you give this GameObject a more descriptive
+- We suggest that you give this GameObject a more descriptive
     name---for example, *1_Entrance_Doors*. For this scenario, we'll
     stick with the name "Timeline1."
 
--   If you have a door-opening animation, selecting the Play button will
+- If you have a door-opening animation, selecting the Play button will
     open the door in your scene. Selecting the Stop button will reset
     the animation back to its original position. A Playable will *not*
     animate in reverse; to do this, you'll need to create a different
@@ -44,25 +42,25 @@ https://learn.unity.com/tutorial/timeline
 **IMPORTANT**: Multiple timelines on a single GameObject will *not*
 work and will cause issues in events.
 
-3.  In the **Project** tab, navigate to the **Assets** folder and then
+3. In the **Project** tab, navigate to the **Assets** folder and then
     create a new folder named *Animations*.
 
-4.  In the **Hierarchy**, select **Timeline1**, and then select **Window
+4. In the **Hierarchy**, select **Timeline1**, and then select **Window
     Sequencing >Timeline**.
 
-5.  We recommend that you move the **Timeline** tab next to the
+5. We recommend that you move the **Timeline** tab next to the
     **Project** and **Console** tabs. This allows you to view the
     **Timeline** and the **Scene** or **Game** windows simultaneously.
 
 ![A screen shot of a video Description automatically generated with low
 confidence](../../../media/enhance-your-environment/image034.jpg)
 
-6.  Select **Create**.
+6. Select **Create**.
 
 ![Graphical user interface, website Description automatically
 generated](../../../media/enhance-your-environment/image035.png)
 
-7.  In the **Save** window, change the name of the Playable to
+7. In the **Save** window, change the name of the Playable to
     *Open_Doors* and then save it to the **Assets Animations**
     folder**.
     **
@@ -70,7 +68,7 @@ generated](../../../media/enhance-your-environment/image035.png)
 ![A screenshot of a computer Description automatically generated with
 medium confidence](../../../media/enhance-your-environment/image036.png)
 
-8.  You can now animate or customize your Timeline---for example, add
+8. You can now animate or customize your Timeline---for example, add
     animation clips, activation clips, and more. For more on how to do
     this, watch this tutorial series:
 
@@ -78,7 +76,7 @@ A Timeline with several tracks might look something like this:
 
 ![](../../../media/enhance-your-environment/image037.jpg)
 
-9.  Once you're done animating, in the **Hierarchy**, select the
+9. Once you're done animating, in the **Hierarchy**, select the
     **Timeline1** GameObject, and then in the **Inspector**, navigate to
     the **Playable Director** component.
 
@@ -130,4 +128,3 @@ document named *Mesh Event Producer Guide*, section: *Event Templates*.
 
    > [!div class="nextstepaction"]
    > [Web content](webcontent.md)
-
