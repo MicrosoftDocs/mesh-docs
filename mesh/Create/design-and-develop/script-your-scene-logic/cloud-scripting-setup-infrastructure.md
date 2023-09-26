@@ -3,7 +3,7 @@ title: Set up cloud scripting infrastructure
 description: Set up Azure to manage scripting deployment.
 author: typride
 ms.author: tmilligan
-ms.date: 7/27/2023
+ms.date: 09/26/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, Azure, admin, documentation, features, MeshApp, scripting
 ---
@@ -26,6 +26,122 @@ The Mesh App Cloud Infrastructure deployed to the Customer's Azure Subscription 
 1. **[Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal)**: This holds the logs emitted from the Mesh App running on App Service.
 1. **[Application Insights](/azure/azure-monitor/app/app-insights-overview?tabs=net)**: This provides application performance monitoring (APM) features. APM tools are useful to monitor applications from development, through test, and into production.
 
+### App Service Plan
+
+An App Service plan defines a set of compute resources for a web app to run.
+
+When you create an App Service plan in a certain region (for example, West Europe), a set of compute resources is created for that plan in that region. Whatever apps you put into this App Service plan run on these compute resources as defined by your App Service plan. Each App Service plan defines:
+
+- Operating System (Windows, Linux)
+- Region (West US, East US, and so on)
+- Number of VM instances
+- Size of VM instances (Small, Medium, Large)
+- Pricing tier (Free, Shared, Basic, Standard, Premium, PremiumV2, PremiumV3, Isolated, IsolatedV2)
+
+For more info, refer to the [App Service Plan Docs](/azure/app-service/overview-hosting-plans).
+
+#### Default settings for App Service Plan
+
+- **SKU Name**: P1v2
+- **SKU Tier**: PremiumV2
+- **SKU Capacity**: 1
+- **Kind**: Linux
+- **Reserved**: True
+
+In the context of Mesh Apps, the App Service Plan is the compute component. It can scale automatically, and handle how the different instances communicate with each other (networking). The CloudHost which is the application that runs and manages Mesh Apps is currently offered as a Docker image and as such, we use a Linux based plan. The Premium plans are more suited for production workloads.
+
+For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/microsoft.web/serverfarms?pivots=deployment-language-bicep) for the App Service Plan resource.
+
+### App Service
+
+Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. App Service adds the power of Microsoft Azure to your application, such as security, load balancing, autoscaling, and automated management. With App Service, you pay for the Azure compute resources you use. The compute resources you use are determined by the **App Service plan** that you run your apps on.
+
+For more information, refer to the [App Service Docs](/azure/app-service/overview).
+
+#### Default Settings -  App Service
+
+- **httpsOnly**: True
+- **alwaysOn**: True
+- **vnetPrivatePorts Count**: 2
+- **vnetRouteAllEnabled**: True
+- **vnetName**: Default Virtual Network Name
+
+For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/microsoft.web/sites?pivots=deployment-language-bicep) for the App Service Plan resource.
+
+### Virtual Network
+
+Azure Virtual Network is the fundamental building block for your private network in Azure. A virtual network enables many types of Azure resources, such as Azure Virtual Machines (VM), to securely communicate with each other, the internet, and on-premises networks. A virtual network is similar to a traditional network that you'd operate in your own data center. An Azure Virtual Network brings with it extra benefits of Azure's infrastructure such as scale, availability, and isolation.
+
+For more information, refer to the [Virtual Network Docs](/azure/virtual-network/virtual-networks-overview).
+
+#### Default Settings - Virtual Network
+
+- **AddressSpace addressPrefixes**: 10.0.0.0/16
+- **Subnet addressPrefix**: 10.0.0.0/24
+- **Subnet Delegations name**: delegation
+- **Subnet Delegations serviceName**: Microsoft.Web/serverFarms
+
+For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/Microsoft.Network/virtualNetworks?pivots=deployment-language-bicep) for the Virtual Network resource.
+
+### Storage Account
+
+An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, and tables. The storage account provides a unique namespace for your Azure Storage data that's accessible from anywhere in the world over HTTP or HTTPS. Data in your storage account is durable and highly available, secure, and massively scalable.
+
+For more information, refer to the [Storage Account Docs](/azure/storage/common/storage-account-overview).
+
+#### Default Settings - Storage Account
+
+- **SKU Name**: Standard_LRS
+- **Kind**: StorageV2
+
+For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/microsoft.storage/storageaccounts?pivots=deployment-language-bicep) for the Storage Account resource.
+
+### Log Analytics Workspace
+
+A Log Analytics workspace is a unique environment for log data from Azure Monitor and other Azure services, such as Microsoft Sentinel and Microsoft Defender for Cloud.  It is a tool in the Azure portal that's used to edit and run log queries against data in the Azure Monitor Logs store.
+
+For more information, refer to the [Log Analytics Workspace Docs](/azure/azure-monitor/logs/log-analytics-workspace-overview).
+
+
+#### Default Settings - Log Analytics Workspace
+
+- **forceCmkForQuery**: false
+- **retentionInDays**: 30
+- **SKU name**: PerGB2018
+- **dailyQuotaGb**: 2GB
+
+For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/microsoft.operationalinsights/workspaces?pivots=deployment-language-bicep) for the Workspace resource.
+
+### Application Insights
+
+Application Insights is an extension of [Azure Monitor](/azure/azure-monitor/overview) and provides application performance monitoring (APM) features. APM tools are useful to monitor applications from development, through test, and into production in the following ways:
+
+Proactively understand how an application is performing.
+Reactively review application execution data to determine the cause of an incident.
+Along with collecting [metrics](/azure/azure-monitor/app/standard-metrics) and application [telemetry](/azure/azure-monitor/app/data-model-complete) data, which describe application activities and health, you can use Application Insights to collect and store application [trace logging data](/azure/azure-monitor/app/asp-net-trace-logs).
+
+For more information, refer to the [Application Insights Docs](/azure/azure-monitor/app/app-insights-overview?tabs=net).
+
+#### Default Settings - Application Insights
+
+- **Kind**: web
+- **Request_Source**: rest
+- **WorkspaceResourceId**: Default Log Analytics Workspace Id.
+
+For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/microsoft.insights/components?pivots=deployment-language-bicep)
+ for the Virtual Network resource.
+
+## Supported regions and abbreviations
+
+Resources can be deployed to any of the following supported regions. All resources are deployed into the  same location. You can deploy resources to a different location than your resource group, but you'll need to supply the location via the Mesh Uploader's Settings window.
+
+| Australia Central (ac)   | Australia Central 2 (ac2) | Australia East (ae)    | Australia Southeast (ase) | Brazil South (bs)      | Brazil Southeast (bse) | Canada Central (cc)        | Canada East (ce)      | Central India (ci) |
+|--------------------------|---------------------------|------------------------|---------------------------|------------------------|------------------------|----------------------------|-----------------------|--------------------|
+| Central US (cu)          | East Asia (ea)            | East US (eu)           | East US 2 (eu2)           | France Central (fc)    | France South (fs)      | Germany West Central (gwc) | Japan East (je)       | Japan West (jw)    |
+| Jio India Central (jic)  | Jio India West (jiw)      | Korea Central (kc)     | Korea South (ks)          | North Central US (ncu) | North Europe (neu)     | Norway East (ne)           | Norway West (nw)      | Qatar Central (qc) |
+| South Africa North (san) | South Africa West (saw)   | South Central US (scu) | Southeast Asia (sea)      | South India (si)       | Sweden Central (sc)    | Switzerland North (sn)     | Switzerland West (sw) | UAE Central (uc)   |
+| UAE North (un)           | UK South (us)             | UK West (uw)           | West Europe (we)          | West US (wu)           | West US 2 (wu2)        | West US 3 (wu3)            |
+
 ## MeshApps cloud infrastructure diagram
 
 :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/image016.png" alt-text="MeshApps infrastructure diagram":::
@@ -40,7 +156,7 @@ The services to register are:
 1. Microsoft.Insights
 1. Microsoft.OperationalInsights
 
-**Need help?** See how 
+**Need help?** See how
 
 > [!NOTE]
 > **Need help?** See how to register services [Resource provider registration errors - Azure Resource Manager | Microsoft Learn](/azure/azure-resource-manager/troubleshooting/error-register-resource-provider?tabs=azure-portal).
