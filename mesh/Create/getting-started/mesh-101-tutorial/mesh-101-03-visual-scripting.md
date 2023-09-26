@@ -3,7 +3,7 @@ title: Mesh 101 Add interactivity with Mesh Visual Scripting
 description: Learn adding about adding interactivity to objects with Mesh Visual Scripting.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/22/2023
+ms.date: 9/25/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
 ---
@@ -171,6 +171,8 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 >   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/412-mesh-interactable-body.png)
 >
 > This component is added automatically at runtime to interactable bodies; it exposes various properties to Visual Scripting such as *IsHovered* and *IsSelected*, which will come in handy in a moment.
+>
+> **Tip**: You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Playmode tint has been changed to blue. This can help you to tell at a glance which mode you're in.
 
 In the script graph, let's add a node that lets us know when the button is selected.
 1. Make sure you're viewing the embedded script graph that's attached to the **PlayVideoButton** GameObject.
@@ -413,7 +415,7 @@ teleported from their current location at Station 3.3 to an elevated
 platform that's attached to a wind turbine generator. They can then
 examine the generator.
 
-![A picture containing outdoor, text, screenshot, windmill Description automatically generated](../../../media/sample-mesh-101/image050.jpg)
+![A picture containing outdoor, text, screenshot, windmill Description automatically generated](../../../media/sample-mesh-101/460-teleport-to-turbine.png)
 
 #### Update the script graph
 
@@ -452,25 +454,28 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
     ![A screen shot](../../../media/sample-mesh-101/311-teleport-location.png)
 
 1. In the **Inspector**, click the **Add Component** button and then search for and add the *Travel Point* component.
+
+    ![A screen shot](../../../media/sample-mesh-101/461-add-travelpoint.png)
+
 1. In the **Inspector**, in the **Transform** component, enter the following values:
 
-**Position**:
+    **Position**:
 
-X = 6
-Y = 58
-Z = 61
+    X = 6
+    Y = 58
+    Z = 61
 
-**Rotation**: 
+    **Rotation**: 
 
-X = 0
-Y = 270
-Z = 0
+    X = 0
+    Y = 270
+    Z = 0
 
     ![A screen shot](../../../media/sample-mesh-101/455-teleport-transform-settings.png)
 
     The avatar will teleport to this location.
 
-1. Make the "TeleportLocationWindTurbine" GameObject inactive by deselecting the check box next to its name. If you have more than one TravelPoint object active at runtime, Unity randomly picks one of the active Travel Points as the spawning point for the avatar. We want to ensure that the avatar spawns at the point indicated by the **TeleportLocationChapter3** GameObject, so that should be the only active Travel Point.
+1. In the **Inspector**, make the "TeleportLocationWindTurbine" GameObject inactive by deselecting the check box next to its name. If you have more than one TravelPoint object active at runtime, Unity randomly picks one of the active Travel Points as the spawning point for the avatar. We want to ensure that the avatar spawns at the point indicated by the **TeleportLocationChapter3** GameObject, so that should be the only active Travel Point.
 
     ![A screen shot](../../../media/sample-mesh-101/442-active-travel-point.png)
 

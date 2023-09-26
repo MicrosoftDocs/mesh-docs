@@ -3,7 +3,7 @@ title: Mesh 101 Overview and setup
 description: Learn about the prerequsites and setup process for the Mesh 101 tutorial project.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/8/2023
+ms.date: 9/25/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
@@ -113,10 +113,10 @@ The Mesh Toolkit contains the *Mesh 101* tutorial project.
 
     ![Screenshot of Mesh Resources and Developer Tools](../../../media/sample-mesh-101/image004.jpg)
 3. On the **Files and Packages** page, download the latest version of
-    the Mesh Toolkit (it may be more recent than what you see here). Select the three-dot button and then select
+    the Mesh Toolkit. Select the three-dot button and then select
     **Download**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image005.jpg)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/459-files-and-packages.png)
 
     > [!NOTE]
     > The downloaded zip file's name may vary depending on your

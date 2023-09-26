@@ -3,7 +3,7 @@ title: Mesh 101 Prepare the project
 description: Learn about adding a few basic features that are necessary for the Mesh 101 tutorial project.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/8/2023
+ms.date: 9/25/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
@@ -16,7 +16,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
     one version of Unity installed, be sure to open the project with `Unity 2022.3.7f1` which is required for this tutorial.
 
 
-2. In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**. 
+2. In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image010.png)
 
