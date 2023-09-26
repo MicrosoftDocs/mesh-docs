@@ -40,6 +40,8 @@ interactive Mesh Physics features.
 - **Science Building.** An expansive museum exhibiting the power of
 Mesh Physics to create dynamic, engaging experiences.
 
+- **Mesh 101.** As mentioned above, Mesh 101 is a tutorial, but it also doubles as a sample. In the project, you can open the *StartingPoint* scene and begin walking through the tutorial. However, the project contains another scene named *FinishedProject* which is a completed version of the tutorial. You can view this scene as a sample and use it as starting point for your project just as you would with any of the other samples.
+
 **To start with an existing sample**:
 
 1. If you haven't done so already, [download and unzip the Mesh toolkit](download-the-mesh-toolkit.md).
