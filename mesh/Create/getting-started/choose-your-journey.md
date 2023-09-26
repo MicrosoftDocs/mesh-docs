@@ -40,9 +40,9 @@ interactive Mesh Physics features.
 - **Science Building.** An expansive museum exhibiting the power of
 Mesh Physics to create dynamic, engaging experiences.
 
-**To start with an existing sample**: 
+**To start with an existing sample**:
 
-1. If you haven't done so already, [download and unzip the Mesh toolkit ](download-the-mesh-toolkit.md).
+1. If you haven't done so already, [download and unzip the Mesh toolkit](download-the-mesh-toolkit.md).
 
     > [!IMPORTANT]
     > Make sure to follow the instructions in the Mesh Toolkit download article for maintaining the proper file structure. If you don't, packages might not load properly and this could result in things like missing materials.
@@ -67,13 +67,13 @@ Mesh Physics to create dynamic, engaging experiences.
 
     Here's an example of what you'll find in that scene:![](../../media/get-started-developing-mesh/image007.png)
 
-
 ## Upgrade packages in a pre-existing Mesh project
 
-You can upgrade the packages in your existing project and then continue developing. 
+You can upgrade the packages in your existing project and then continue developing.
+
 1. Make sure your project uses the 3D (URP) project template.
-1. [Download and unzip the Mesh toolkit ](download-the-mesh-toolkit.md).
-1. Import the Toolkit package into your project. 
+1. [Download and unzip the Mesh toolkit](download-the-mesh-toolkit.md).
+1. Import the Toolkit package into your project.
 
 Note that you may encounter some configuration notifications with upgrading and replacing older packages.
 
@@ -87,13 +87,13 @@ For a much more details explanation of how to set up a project for Mesh developm
 
 Once you've created an Environment through the paths mentioned above, you can add features including:
 
-- [WebViews to display Web pages](../Developing%20for%20Mesh/Building%20your%20environment/webcontent.md)
+- [WebViews to display Web pages](../design-and-develop/enhance-your-environment/webcontent.md)
 
-- [Cloud scripting](../Developing%20for%20Mesh/Scripting%20your%20scene%20logic/cloud-scripting-overview.md), [visual scripting](../Developing%20for%20Mesh/Scripting%20your%20scene%20logic/visual-scripting-overview.md), and [Mesh Physics](../Developing%20for%20Mesh/Building%20your%20environment/physics-interactions.md) to add interactivity
+- [Cloud scripting](../design-and-develop/script-your-scene-logic/cloud-scripting-getting-started.md), [visual scripting](../design-and-develop/script-your-scene-logic/visual-scripting.md), and [Mesh Physics](../design-and-develop/enhance-your-environment/physics-interactions?branch=PuP-Mesh-Docs.md) to add interactivity
 
 - And more!
 
 ## Next Steps
 
    > [!div class="nextstepaction"]
-   > [Create e new project](../Design%20&%20Develop/Build%20your%20basic%20environment/create-a-new-project.md)
+   > [Create a new project](../design-and-develop/build-your-basic-environment/create-a-new-project.md)
