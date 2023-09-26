@@ -39,5 +39,7 @@ With the transition to M365 and the Mesh Portal, events are handled slightly dif
 
 Great job! You've now created your event. Co-organizers and invitees will now see the event in their Outlook and Teams calendars.
 
+:::image type="content" source="../../media/mesh-event-producer-guide/Join-event-link-calendar.gif" alt-text="Join event from a calendar invite":::
+
    > [!div class="nextstepaction"]
    > [Customize an event](customize-event.md)
