@@ -3,19 +3,18 @@ title: Mesh 101 Create an event and invite others
 description: Learn how to uploaded your Environment and make it available for Event.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/8/2023
+ms.date: 9/25/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, events, experiences
 ---
 
 # Mesh 101 Tutorial Chapter 6: Create an event and invite others
 
-Now that you've uploaded your Mesh 101 Environment to the Azure portal, you can
+Now that you've uploaded your Mesh 101 Environment to the Mesh portal, you can
 create and produce an Event based on that Environment that participants
 can experience through the Mesh app for PC or Quest.
 
-See our document titled *Mesh Event Producer Guide* to create an Event
-via the in-app event producer experience.
+To learn about creating an Event through the in-app event producer experience, see our article named [Create an Event](../../../Use/events-guide/create-event.md).
 
 ### Create an event
 
