@@ -1,9 +1,9 @@
 ---
 title: Mesh 101 Create an event and invite others
-description: Learn how to uploaded your Environment and make it available for Event.
+description: Learn how to create an event and invite others.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/25/2023
+ms.date: 9/26/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, events, experiences
 ---
@@ -14,53 +14,51 @@ Now that you've uploaded your Mesh 101 Environment to the Mesh portal, you can
 create and produce an Event based on that Environment that participants
 can experience through the Mesh app for PC or Quest.
 
-To learn about creating an Event through the in-app event producer experience, see our article named [Create an Event](../../../Use/events-guide/create-event.md).
-
 ### Create an event
 
-1. Open the Mesh app and then log in.
+> [!IMPORTANT]
+> Ensure that all participants have updated their Mesh app to the most recent version so they can use the link in their calendar invite and join the event you just created.
 
-2. In the left-side vertical button bar, click the icon for your World,
-    or click the ["All Worlds" button](#_Mesh_dashboard_overview) at the
-    bottom left, and then select the world you want.
+## Create an event
 
-    ![A blue square with white text Description automatically generated](../../../media/sample-mesh-101/image101.png)
+1. Open the [Mesh Portal](https://portal-preview.mesh.microsoft.com/).
+1. Log in with your corporate account.
+1. On the Home page, in the left-side navigation bar, select **Events**.
 
-    **Notes**:
-    - You may have to scroll to view all the worlds.
-    - You can pin worlds to the left nav bar for easy access.
+    :::image type="content" source="../../media/sample-mesh-101/466-select-events.png" alt-text="Events button in Mesh portal":::
 
-    ![A picture containing text, screenshot, line, font Description automatically generated](../../../media/sample-mesh-101/image103.png)
-3. In your Mesh World, select the **Manage** button.
-    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image103.png)
+1. Select **Create event** at the top right.
+1. On the **Event details** page, add the **Event name**, **Start time** and **End time**, **Description**, and an optional **Event thumbnail image**.
+1. Select a **Room configuration**. Your choices are "Single room" or "Multiple rooms."
 
-    > [!NOTE]
-    > If you don't see the **Manage** button, then you aren't a Content contributor for this World.
-4. Select the **Create** button, and then, in the drop-down menu,
-    select **Create event**.
-5. Add your event details (**Name**, **Date**, **Time**,
-    **Description**, etc.).
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image104.jpg)
-6. When you're finished, click **Next**.
-7. On the **Template** page, press **Skip**.
-8. On the **Environment** page, select the **Custom** tab.
-9. Find the **Wind Turbine Tutorial** Environment, then select it, and
-    then click **Next**.
+    - The **Room capacity** for both is *16*.
+    - The maximum number of participants allowed for a *Single room* is 16, and for **Multiple rooms** is 200. You can set the maximum number of participants for your event in the **Max participants** field.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image105.jpg)
-10. On the **Review** page, review your event details. Click **Back** if
-    you need to go back and change anything.
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image106.jpg)
+    :::image type="content" source="../../media/sample-mesh-101/468-event-details.png" alt-text="Event details page in Mesh portal":::
 
-11. When you're ready to move forward, select **Create Event**. This
-    saves your event and takes you to the **My Events** page.
+1. When you're finished, select **Next**.
+1. On the **Choose an Environment or Event template** page, select the **Start with an environment** box, and then click **Next**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image107.jpg)
+    :::image type="content" source="../../media/sample-mesh-101/462-choose-env-button.png" alt-text="A screenshot showing the choose environment or event template page in the Mesh Portal.":::
+
+1. On the following page, select the **From Worlds** drop-down and then choose the World that you uploaded your Environment to.
+
+    :::image type="content" source="../../media/sample-mesh-101/463-choose-worlds-drop-down.png" alt-text="A screenshot showing the from Worlds drop down in the Mesh Portal.":::
+
+1. On the following page, select your Environment, and then select **Next**.
+
+    :::image type="content" source="../../media/sample-mesh-101/464-choose-your-env.png" alt-text="A screenshot showing the Environment you uploaded to the Mesh Portal.":::
+
+1. On the **Invites** page, you can add **Co-organizers** (who will be able to edit the event) and **Attendees** (who will be able to join the event). For this event, you wouldn't need anyone to do any editing, so you would only fill in the **Attendees** list.
+
+    :::image type="content" source="../../media/sample-mesh-101/465-invites.png" alt-text="A screenshot showing the Invites page in the Mesh Portal, where you list the attendees and Co-organizers you wish to invite.":::
+
+1. When you're finished, select **Create event**.
 
 ### Summary
 
 In this chapter, you learned how to create an Event that's based on your
-Environment. Participants can join the Event and then use the Mesh
+Environment. Attendees you invite can join the Event and then use the Mesh
 features that you enabled in Chapters 3 and 4 to learn about wind
 turbines.
 
