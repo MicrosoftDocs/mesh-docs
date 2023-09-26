@@ -3,7 +3,7 @@ title: Mesh 101 Prepare the project
 description: Learn about adding a few basic features that are necessary for the Mesh 101 tutorial project.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/8/2023
+ms.date: 9/25/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
@@ -13,21 +13,20 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ### Scenes in the project
 
 1. Open the **Mesh101.unity** project in Unity. If you have more than
-    one version of Unity installed, be sure to open the project with `Unity 2022.3.7f1` which is required for this tutorial:
+    one version of Unity installed, be sure to open the project with `Unity 2022.3.7f1` which is required for this tutorial.
 
-    > [!NOTE]
-    > In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**.
+
+2. In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image010.png)
 
-2. Open the **StartingPoint** scene. You should see the **TMP Importer** window.
+    Open the **StartingPoint** scene. You should see the **TMP Importer** window.
 
 3. Select **Import TMP Essentials**, and then close the window.
 
     ![A screen shot of a computer Description automatically generated with low confidence](../../../media/sample-mesh-101/image011.png)
 
-In the **Scene** window, the letter "T" appears over every object that
-is using `TextMeshPro`. You can turn these off to achieve a less cluttered
+In the **Scene** window, the letter "T" appears over every object that's using `TextMeshPro`. You can turn these off to achieve a less cluttered
 view. To do so:
 
 1. In the toolbar above the upper right corner of the **Scene** window,
@@ -65,10 +64,7 @@ you'll soon be walking around in.
 
 ![A screenshot of a computer Description ](../../../media/sample-mesh-101/013-sphere-terraces-v2.png)
 
-You'll be visiting the Sphere Terraces starting in the next
-chapter---they each contain a series of stations where you'll learn how
-to implement Mesh features. The first Sphere Terrace (covered in Chapter  
-3) is where you'll learn about Mesh Visual Scripting ...
+You'll be visiting the Sphere Terraces starting in the next chapter---they each contain a series of stations where you'll learn how to implement Mesh features. The first Sphere Terrace (covered in Chapter 3) is where you'll learn about Mesh Visual Scripting ...
 
 ![A screenshot of a video game Description ](../../../media/sample-mesh-101/014-chapter3-sphere-terrace-v2.png)
 
@@ -87,12 +83,13 @@ you to easily get a first impression of a multi-user scenario.
 
 1. Right-click inside the **Hierarchy** and then, in the context menu, select **Mesh Toolkit** > **PlaymodeSetup**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image017.jpg)
+
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/400-playmode-setup.png)
 
     Note that this adds the **PlaymodeSetup [NoUpload]** prefab to the
     scene.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/image018.jpg)
+    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/453-playmodesetup-added.png)
 
     This prefab provides you with a highly stylized avatar controller that has a camera attached, so now we can play the project and have a look around.
 
