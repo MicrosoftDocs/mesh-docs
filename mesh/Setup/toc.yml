@@ -4,5 +4,5 @@ items:
   - name: M365 content migration guide
     href: Content/m365-migration-guide.md
   - name: Set up M365
-    href: Content/setup-M365-Mesh.md
+    href: Content/setup-m365-mesh.md
 
