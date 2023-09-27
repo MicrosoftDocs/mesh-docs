@@ -3,7 +3,7 @@ title: Release notes for Immersive spaces for Teams
 description: Immersive spaces for Teams release notes
 author: qianw211    
 ms.author: qianwen
-ms.date: 9/25/2023
+ms.date: 9/27/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
@@ -83,11 +83,15 @@ Spatial Audio replicates how we hear audio in real life by projecting sound from
 
 #### New environments
 
+<mark> See Immersive spaces end user documentation for detailed updates.
+
 * New environments are available. To see these environments, select **Environment settings** option on the app bar: **Lakehouse** (default), **Oasis - Small**, and **Oasis - Large**.
 
     ![A screenshot of the **Environment settings** dialog](media/environment-settings-dialog.png)
 
-    <mark> See Immersive spaces end user documentation for detailed updates.
+* The **Lakehouse** environment now offers a number of interactive elements: muscial spheres, radio, icebreaker spheres, bean bag toss, roasting marshmallows on campfire.
+
+* Both the **Oasis - Small** and **Oasis - Large** environments now offer a number of new seating settings for the immersive space.
 
 ### Resolved product issues
 
