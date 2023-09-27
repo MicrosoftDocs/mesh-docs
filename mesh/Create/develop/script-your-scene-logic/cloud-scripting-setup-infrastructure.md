@@ -8,7 +8,7 @@ ms.topic: Tutorial
 keywords: Microsoft Mesh, Azure, admin, documentation, features, MeshApp, scripting
 ---
 
-# Set cloud scripting infrastructure in Azure
+# Set cloud Scripting infrastructure in Azure
 
 ## MeshApps cloud infrastructure deployment
 
@@ -17,8 +17,11 @@ Mesh Apps are dotnet based apps that are run in the Cloud. The Mesh Toolkit Uplo
 ## Resources deployed
 
 The Mesh App Cloud Infrastructure deployed to the Customer's Azure Subscription contains the following Azure resources:
+
 1. **[App Service Plan](/azure/app-service/overview-hosting-plans)**: They represent a compute cluster where web apps can run. (It can also run one or more different web apps).
+
 1. **[Azure VNet](/azure/virtual-network/virtual-networks-overview)**: This is the virtual network resource that the app service instances are deployed in and allows them to communicate with each other.
+
 1. **Azure Web App Instance**: This represents an instance of the Web App running on a specific VM.
 1. **[Azure Storage account](/azure/storage/common/storage-account-overview)**: This holds the published content and information about the Azure Web App instances. It is sub-divided into three components:
     1. **[The Mesh App Blob Storage](/azure/storage/blobs/storage-blobs-introduction)**: This holds the Mesh App blob uploaded by the Mesh CLI tool (and in the future from the uploader)
@@ -102,7 +105,6 @@ A Log Analytics workspace is a unique environment for log data from Azure Monito
 
 For more information, refer to the [Log Analytics Workspace Docs](/azure/azure-monitor/logs/log-analytics-workspace-overview).
 
-
 #### Default Settings - Log Analytics Workspace
 
 - **forceCmkForQuery**: false
@@ -166,8 +168,8 @@ The services to register are:
 
 ## Access control for MeshApp deployment
 
-1.	Developer must have an email that can be used for their deployment. This could be a new account or a pre-existing email used, such as Environment uploading.
-1. If managing access control through an Azure Security Group, create this group (e.g “Mesh App Developers”). 
+1. Developer must have an email that can be used for their deployment. This could be a new account or a pre-existing email used, such as Environment uploading.
+1. If managing access control through an Azure Security Group, create this group (e.g “Mesh App Developers”).
 See Learn about groups and group membership - Microsoft Entra | Microsoft Learn for more Information on Azure Security Group versus Microsoft 365 group types.
 1. Decide how you’d like developers to access your Azure subscription. This depends on if the developer is a native member of the directory, or a guest user.
     1. For native members, you can add them to the Azure Security Group you created in the previous step if you’d like to easily manage access controls.
@@ -179,7 +181,7 @@ See Learn about groups and group membership - Microsoft Entra | Microsoft Learn 
 
 Depending on how restrictive you'd like your access control policies to be, there are a few recommendations on granting developers access to provision the Mesh Apps cloud infrastructure in Azure.
 
-1.	Grant developers the [Contributor role](/azure/role-based-access-control/built-in-roles) on the entire Subscription that is provisioned for your Mesh Apps.
+1. Grant developers the [Contributor role](/azure/role-based-access-control/built-in-roles) on the entire Subscription that is provisioned for your Mesh Apps.
 
 1. Create a dedicated resource group for Mesh Apps cloud infrastructure deployment and grant developers the Contributor role on this resource group. You can do this through the Azure Security Group you created in the second prerequisite i.e., "Mesh App Developers". This grants them full access to manage all resources but does not allow them to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries.
 
@@ -244,6 +246,7 @@ Depending on how restrictive you'd like your access control policies to be, ther
         }
     }
     ```
+
     > [!NOTE]
     > The MeshAppDeployer custom role doesn't allow user to create resource groups. If we want users to create a resource group, they need the **Microsoft.Resources/subscriptions/resourcegroups/write permissions** as well.
 
@@ -251,10 +254,9 @@ Depending on how restrictive you'd like your access control policies to be, ther
 
 The Mesh Apps infrastructure utilizes the Premium App Service Linux plan (P1V2), and these are the App Service limits that you might encounter while deploying Mesh Apps:
 
-
 |Resource |Premium (P1V2)  |
 |---------|---------|
-|[Web, mobile, or API apps](https://azure.microsoft.com/services/app-service/) per A[zure App Service plan ](/azure/app-service/overview-hosting-plans)  |   Unlimited      |
+|[Web, mobile, or API apps](https://azure.microsoft.com/services/app-service/) per [Azure App Service plan](/azure/app-service/overview-hosting-plans)  |   Unlimited      |
 |[App Service plan](/azure/app-service/overview-hosting-plans)     |   100 per resource group      |
 
 > [!NOTE]

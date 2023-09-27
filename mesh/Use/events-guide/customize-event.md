@@ -20,7 +20,7 @@ At a high level, there are three major steps to customize your event or template
     :::image type="content" source="../../media/mesh-event-producer-guide/environment-editor-add-artifacts.gif" alt-text="Add artifacts and update url":::
 
 1. **Configure** content with the **Control Panel** for your live event.
-    
+
 1. **Save changes** in the **Event Customization** window.
     :::image type="content" source="../../media/mesh-event-producer-guide/Event-customization-save-changes.png" alt-text="Save changse in event customization":::
 
@@ -67,7 +67,7 @@ Use the environment editor to add content to your environment that can be contro
 
 1. Once it loads, Select the **Environment editor** button.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/Environment-editor-button-open2.png" alt-text=":::
+    :::image type="content" source="../../media/mesh-event-producer-guide/Environment-editor-button-open2.png" alt-text="Environment editor button":::
 
 1. Select the **+** plus button to open the Catalog of artifact you can add. Select one to add it to the environment editor.
 
@@ -85,6 +85,7 @@ Use the environment editor to add content to your environment that can be contro
 ### Video artifact requirements
 
 For video artifacts, you must:
+
 - Use **.MP4** file type only.
 - Use direct links to video files that are stored on SharePoint or HTTPS URLs. Links to video services like YouTube, Vimeo, etc. are not supported
 
@@ -111,7 +112,6 @@ Once you've added an artifact, you can maneuver it around the spaces and select 
 
 > [!IMPORTANT]
 > You **must add the artifacts to the Control Panel** and **save** before starting your event.
-
 
 Use the **Control Panel** to prepare your artifacts to be used during an event. Like having a technical booth for theatrical technicians, it's designed to give the Event Producer the ability to orchestrate a performance in real time.
 
@@ -148,7 +148,6 @@ to Preview Mode.
 While in preview mode, you can test out using the control panel to play your video or interact with your content.
 
 :::image type="content" source="../../media/mesh-event-producer-guide/Environment-editor-preview-play-video.png" alt-text="Video playing in the control panel during preview mode mesh app":::
-
 
    > [!div class="nextstepaction"]
    > [Customize your event](produce-event.md)

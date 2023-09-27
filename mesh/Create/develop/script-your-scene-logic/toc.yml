@@ -1,6 +1,8 @@
 items:
   - name: Mesh Scripting overview
     href: mesh-scripting-overview.md
+  - name: Set up Cloud scripting infrastructure 
+    href: cloud-scripting-setup-infrastructure.md
   - name: Cloud Scripting basic concepts
     href: cloud-scripting-basic-concepts.md
   - name: Cloud Scripting getting started
