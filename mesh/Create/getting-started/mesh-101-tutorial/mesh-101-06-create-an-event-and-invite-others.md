@@ -60,6 +60,8 @@ turbines.
 
 ![A person looking at a group of people Description automatically generated](../../../media/sample-mesh-101/image108.jpg)
 
+![A person looking at a group of people Description automatically generated](../../../media/sample-mesh-101/465-invites.png)
+
 ## Conclusion
 
 Congratulations! Now that you've learned some of the basics of Mesh, you
