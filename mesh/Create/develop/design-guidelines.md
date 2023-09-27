@@ -1,93 +1,38 @@
 ---
-title: Design guidelines for Mesh
-description: Design guidelines for Technical artists or developers creating for Mesh.
+title: Design for Mesh overview
+description: An overview for technical artists and developers for how to design for Mesh.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/13/2023
+ms.date: 9/26/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, unity, design, documentation, features
 ---
 
-# Design guidelines for Mesh
-
-A guide for artists, designers and developers who create content for
-Mesh experiences
-
-# Overview
+# Designing for Mesh: Overview
 
 This is a guide for artists, designers and developers who want to create
 Mesh experiences using Unity and possibly other design tools such as 3D
-modeling programs. In Unity, you create a project from scratch or use
+modeling programs. Mesh has unique style and development guidelines that should be reviewed
+to ensure that Attendees at Mesh events are provided with the best experiencese possible.
+
+In Unity, you create a project from scratch or use
 one of our existing samples as a starting point, then add content, and
-then publish the project as an *Environment* to a world in the Azure
-portal. When a user creates a Mesh event for that world, they can choose
-to hold their event in the custom Environment you created.  
+then publish the project as an *Environment* to a World in the Mesh 
+portal. When an Event Organizer creates a Mesh event, they can choose
+to hold their Event in the custom Environment you created.  
 
 Mesh is a new product and is always evolving to meet the needs of our
-partners. This document covers the design guidelines for creating 3D
+partners. This and other articles cover the design guidelines for creating 3D
 Environments for various use cases.
 
 It's important to consider that your design and performance needs may be
-more expansive than what this doc provides. For example, needs may
-differ based on the scale of your Mesh experiences; a 16-person
-environment has different performance requirements from a 500-person
-environment. This doc provides principles and guidelines that should
+more expansive than what our documentation provides. For example, needs may
+differ based on the scale of your Mesh Experiences; a 16-person
+Environment has different performance requirements from a 200-person
+Environment. This doc provides principles and guidelines that should
 satisfy most needs for businesses deploying Mesh.
 
-**Foundational principles**
-
-Before creating Mesh Environments, it's important to have a strong
-foundation in the following disciplines:
-
-- 3D modeling skills or a source for obtaining the models you need
-
-- Texturing and light-mapping (UVs)
-
-- Performance and model optimization
-
-**Other tools & performance considerations**
-
-To design assets for use in Mesh Environments, you should have some
-experience with 3D modeling software such as Maya, 3DS Max, Cinema 4D,
-Houdini, ZBrush, or Blender. For painting and texturing models, you can
-use the features built into those apps or use a dedicated tool such as
-Adobe Substance Painter.
-
-## Getting Started
-
-There are several ways to create Mesh Environments in Unity:
-
-- Open and build upon an existing sample.
-
-- Upgrade packages in a pre-existing Mesh project.
-
-- Start a new project from scratch.
-
-To learn about each of these approaches, see our document titled *Custom
-Worlds* *-Get Started with Mesh Environments*. This will introduce you
-to the tools, show you how to create your first Mesh environment, and
-teach you how to deploy it to users.
-
-## Try our Mesh 101 tutorial
-
-If you're new to Mesh and like the idea of learning through a
-step-by-step tutorial, we recommend that you try our Mesh 101 tutorial.
-It starts you off with a pre-built Unity project and then walks you
-through the process of creating an educational windfarm experience.
-You'll learn how to use Mesh scripting and physics to add interactivity,
-and then you'll deploy the project as a metaverse Environment to your
-Mesh World. To get started with the tutorial, see our document named
-*Custom Worlds -- Mesh 101 Tutorials.pdf*.
-
-**If you've already completed this or are familiar with Mesh, continue
-with the following guidelines.**
-
-## Notes on designing for Mesh in Unity
-
-In Microsoft Mesh, content is downloaded and experienced through the
-Mesh Browser. We use Unity to build asset bundles that contain this
-content. These bundles run in the context of a Microsoft Mesh session
-which allows multiple users to simultaneously experience the content you
+A Microsoft Mesh Experience can allow multiple users to simultaneously experience the content you
 create. Because of this, we deliberately restrict some of the features
 available in Unity to a subset that are supported in Microsoft Mesh.
 Here are some things to consider when creating content:
@@ -104,24 +49,28 @@ Here are some things to consider when creating content:
 In general, Unity Packages downloaded from the Unity Asset store aren't
 expected to work unless they conform to the restrictions above.
 
-# Design guidelines for Mesh in Unity
+## Prerequisites
 
-Mesh has unique style and development guidelines that should be reviewed
-to ensure that templates and artifacts provide the optimal experience
-for Mesh users.
+Before creating Mesh Environments, it's important to have a strong
+foundation in the following disciplines:
 
-Review the design guidelines below.
+- 3D modeling skills or a source for obtaining the models you need
 
-## Technical specs
+- Texturing and light-mapping (UVs)
 
-For the purposes of this document, we are grouping platforms into two
-categories:
+- Performance and model optimization
 
-- Android, which is used on the Oculus Quest headsets.
+## Recommended tools
 
-- PC Desktops and Future Higher End Platforms
+To design assets for use in Mesh Environments, you should have some
+experience with 3D modeling software such as Maya, 3DS Max, Cinema 4D,
+Houdini, ZBrush, or Blender. For painting and texturing models, you can
+use the features built into those apps or use a dedicated tool such as
+Adobe Substance Painter.
 
-The Mesh Player Settings have been set to help boost fidelity through
+## Your Experience on the Mesh app
+
+The Mesh app has been designed to help boost fidelity through
 the following:
 
 - Final render texture size
@@ -134,9 +83,47 @@ the following:
 
 - Number of dynamic shadows
 
+# Sharing Unity projects
+
+Currently, sharing Unity projects with other parties is not guaranteed.
+Be aware that sharing can raise some errors and is **not** fully
+validated for Mesh-related projects.
+
+<!-- New article -->
+
+## Getting Started
+
+You can create Mesh Experiences for two different platforms:
+
+- Android, which is used on the Oculus Quest headsets.
+
+- PC Desktops and Future Higher End Platforms
+
+There are several ways to create Mesh Environments in Unity:
+
+- Open and build upon an existing sample.
+
+- Upgrade packages in a pre-existing Mesh project.
+
+- Start a new project from scratch.
+
+To learn about each of these approaches, see our article titled [Choose your journey](../getting-started/choose-your-journey.md). This will introduce you to the tools, show you how to create your first Mesh environment, and
+teach you how to deploy it to users.
+
+## Try our Mesh 101 tutorial
+
+If you're new to Mesh and like the idea of learning through a
+step-by-step tutorial, we recommend that you try our Mesh 101 tutorial.
+It starts you off with a pre-built Unity project and then walks you
+through the process of creating an educational windfarm experience.
+You'll learn how to use Mesh scripting and physics to add interactivity,
+and then you'll deploy the project as a metaverse Environment to your
+Mesh World. To get started with the tutorial, see our article named [Mesh 101 tutorial: overview and setup](../getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md).
 
 
-## Project Structure
+<!-- new article -->
+
+# Project Structure
 
 ### Naming conventions
 
@@ -146,7 +133,6 @@ the following:
 
 ![Graphical user interface, text Description automatically
 generated](../../media/3d-design-performance-guide/image009.png)
-
 
 ### Unity folder structure
 
@@ -158,7 +144,108 @@ generated](../../media/3d-design-performance-guide/image010.png)
 ![Graphical user interface, text, timeline Description automatically
 generated](../../media/3d-design-performance-guide/image011.png)
 
-## Modeling
+## Unity file hierarchy
+
+Keep the **Hierarchy** clean by removing disabled objects.
+
+**Disabled objects still add to the file size of the root
+object/project.**
+
+![](../../media/3d-design-performance-guide/image030.png)
+
+
+Embedding Prefabs into Prefabs is okay, especially if multiple people
+are working within a workstream.
+
+![](../../media/3d-design-performance-guide/image031.png)
+
+<!--------------- New article -->
+
+## Unity Prefabs
+
+### Prefabs
+
+We recommend that you start each project with Prefabs; this will allow
+your scene to be accessible to multiple people at once without worrying
+about overriding others' work. Splitting each scene up into common
+sub-disciplines is a great place to start.
+
+Using Prefabs allows easier collaboration within a single Unity scene
+and is preferred for Microsoft Mesh projects.
+
+![](../../media/3d-design-performance-guide/image036.png) 
+When editing the scene, always make sure
+the Prefab you're working in has its overrides applied.
+
+If there are overrides waiting to be applied on a Prefab, that means
+those changes are **not yet associated with the Prefab**. In the
+screenshot here, the changes are at the scene level and, when saved,
+will modify the scene file only.
+
+Applying the override will remove the changes from the scene file and
+apply them to the Prefab file.
+
+**Prefab Overrides and GIT**
+
+Note what happens if you save the project **without** applying the
+overrides and commit the project files to a GIT repository:
+
+When you eventually apply the overrides to the Prefab, you'll have to
+commit the Prefab file and the parent object file to the GIT repo. In
+this scenario, you're adding the changes to the Prefab file while
+removing the changes from the parent file.
+
+When you're making a new Prefab, make sure the empty GameObject node is
+zeroed out **before** turning it into a Prefab.
+
+**CORRECT**
+
+![](../../media/3d-design-performance-guide/image037.png)
+
+**INCORRECT**
+
+![](../../media/3d-design-performance-guide/image038.png)
+
+![](../../media/3d-design-performance-guide/image039.png)
+
+
+![](../../media/3d-design-performance-guide/image040.png)
+
++-----------+--------------------+-----------+------------------------+
+| The FLOOR | ![](../../media/3d-design-performance-guide/imag     | The WALLS | ![](../../media/3d-design-performance-guide/image042      |
+| mesh must | e41.png){width="2. | mesh      | .png){width="2.4625in" |
+| have its  | 462962598425197in" | should    | height="               |
+| Tag set   | height="2.         | leave its | 2.5058245844269464in"} |
+| to        | 49167104111986in"} | Tag and   |                        |
+| T         |                    | Layer set |                        |
+| eleporter |                    | to its    |                        |
+| and its   |                    | defaults, |                        |
+| Layer set |                    | u         |                        |
+| to        |                    | nchanged. |                        |
+| NavMesh.  |                    |           |                        |
+|           |                    | This      |                        |
+| This      |                    | object    |                        |
+| object    |                    | doesn't   |                        |
+| doesn't   |                    | have a    |                        |
+| have a    |                    | Mesh      |                        |
+| Mesh      |                    | Renderer  |                        |
+| Renderer  |                    | c         |                        |
+| c         |                    | omponent. |                        |
+| omponent. |                    |           |                        |
+|           |                    | This      |                        |
+| This      |                    | object    |                        |
+| object    |                    | needs a   |                        |
+| needs a   |                    | Mesh      |                        |
+| Mesh      |                    | Collider  |                        |
+| Collider  |                    | c         |                        |
+| c         |                    | omponent. |                        |
+| omponent. |                    |           |                        |
++===========+====================+===========+========================+
++-----------+--------------------+-----------+------------------------+
+
+<!-- New article -->
+
+# Creating models
 
 ### Clean geometry
 
@@ -188,14 +275,13 @@ to the collision boundaries.
 ![A picture containing text, screenshot Description automatically
 generated](../../media/3d-design-performance-guide/image012.png)
 
-
-### Aliasing 
+## Aliasing 
 
 When modeling and designing, avoid straight lines and aliasing-producing
 materials. This will save technical overhead later and create a better
 experience for users.
 
-Use matte, smooth, larger shapes when possible, avoiding bevels, hard
+Use matte, smooth, and larger shapes when possible. Avoid bevels, hard
 edges, and metallic materials.
 
 Consider the distance a user could be from an object and the lighting of
@@ -203,7 +289,7 @@ your Environments. Thin objects render as straight lines and metallic
 objects produce specular artifacts when lit. It's best to avoid these
 outcomes, when possible, with careful modelling.
 
-#### Resources for minimizing aliasing in levels & materials
+## Resources for minimizing aliasing in levels & materials
 
 **Level design:** [Advanced VR Graphics Techniques
 (arm.com)](https://developer.arm.com/documentation/102073/0100/Level-design)
@@ -211,13 +297,13 @@ outcomes, when possible, with careful modelling.
 **Banding:** [Advanced VR Graphics Techniques
 (arm.com)](https://developer.arm.com/documentation/102073/0100/Banding)
 
-### Minimizing polycount for props
+## Minimizing polycount for props
 
 Increase performance of your final scene by minimizing the polycount of
 your props before exporting them. This will reduce the resource cost to
 render objects and maximize performance in your final scene.
 
-#### Resources for minimizing polycount
+## Resources for minimizing polycount
 
 **Maya polycount reduction how to**: [HOW TO REDUCE POLYCOUNT IN MAYA -
 YouTube](https://www.youtube.com/watch?v=xWYEXj_Cemc)
@@ -226,14 +312,27 @@ YouTube](https://www.youtube.com/watch?v=xWYEXj_Cemc)
 and tips
 (autodesk.com)](https://help.autodesk.com/view/MAYAUL/2016/ENU/?guid=GUID-4A9B7918-06B9-4BDD-80DE-DD6D756B09B3)
 
-### Materials
+## Materials
 
 ![](../../media/3d-design-performance-guide/image013.png) 
 Name each material in your .fbxfile to
 closely match its corresponding material inside Unity. Avoid exporting
 default material names.
 
-### Exporting props
+## Stairs
+
+To optimize performance and to prevent visual artifacts in both camera
+and character, we recommend representing stair **collision** geometry as
+a sloped plane without modifying render geometry.
+
+The character controller is represented by a capsule with a small radius
+which does allow it to effectively climb up stepped geometry. However,
+this approach can cause jittering0F[^1] in both the camera and character
+movement.
+
+<!-- New article --->
+
+# Exporting models and environments
 
 - **Do not** export multiple prop meshes in one .fbxfile. Each prop
     should have its own .fbxfile.
@@ -251,7 +350,11 @@ default material names.
     adjust inside your modeling program before export.
 ![](../../media/3d-design-performance-guide/014.png)
 
-Lightmap UVs
+<!-- New article-->
+
+# Working with UVs
+
+## UVs and lightmaps
 
 Setting up optimized and clean lightmap UVs is one of the most important
 aspects of achieving a clean and immersive VR environment.
@@ -304,7 +407,6 @@ Aliasing baked into textures hurts immersion and presence.
 
 ![](../../media/3d-design-performance-guide/image019.png)
 
-
 The aliasing seen here is due to the UV shell being a circle.
 
 ![](../../media/3d-design-performance-guide/image020.png) 
@@ -320,13 +422,12 @@ means ridding shell of aliasing
 ![](../../media/3d-design-performance-guide/image021.png)
 ![](../../media/3d-design-performance-guide/image022.png)
 
-
-#### Resources for lightmapping
+## Resources for lightmapping
 
 [Unity - Manual: Generating lightmap UVs
 (unity3d.com)](https://docs.unity3d.com/Manual/LightingGiUvs-GeneratingLightmappingUVs.html)
 
-### Packing UV shell
+## Packing UV shells
 
 With our focus on lightweight and optimized projects, UV layouts need to
 be as efficient as possible.
@@ -342,7 +443,9 @@ pass, before the scene texel scale is determined.
 Second pass, after the scene texel scale is
 determined.
 
-## Textures/Props
+<!-- New article-->
+
+## Model textures
 
 Using flat colors and a clean light bake instead of custom textures is a
 very efficient and performant route to take for prop textures.
@@ -352,7 +455,6 @@ URP/Baked Lit shader's Base Map color value and a clean light bake.
 
 ![A picture containing indoor, sofa, furniture, seat Description
 automatically generated](../../media/3d-design-performance-guide/image025.png)
-
 
 Not using textures also eliminates texture artifacts like pixelization
 and aliasing, which is a big boost to VR immersion.
@@ -373,35 +475,6 @@ All tiling textures should be authored left to right.
 ![](../../media/3d-design-performance-guide/image028.png)
 
 ![](../../media/3d-design-performance-guide/image029.png)
-
-
-## Unity file hierarchy
-
-Working in Prefabs is the preferred way to organize a Microsoft Mesh
-project. This allows for greater flexibility when collaborating with
-multiple people or teams since it's much harder to override others'
-work.
-
-### Required
-
-We recommend that you start each project with Prefabs; this will allow
-your scene to be accessible to multiple people at once without worrying
-about overriding others' work. Splitting each scene up into common
-sub-disciplines is a great place to start.
-
-Keep the **Hierarchy** clean by removing disabled objects.
-
-**Disabled objects still add to the file size of the root
-object/project.**
-
-![](../../media/3d-design-performance-guide/image030.png)
-
-
-Embedding Prefabs into Prefabs is okay, especially if multiple people
-are working within a workstream.
-
-![](../../media/3d-design-performance-guide/image031.png)
-
 
 ## Unity model importer
 
@@ -492,94 +565,7 @@ medium confidence](../../media/3d-design-performance-guide/image035.png)
 Note, that altering render pipeline settings or adding renderers is not
 supported.
 
-## Unity Prefabs
-
-### Prefabs
-
-Using Prefabs allows easier collaboration within a single Unity scene
-and is preferred for Microsoft Mesh projects.
-
-![](../../media/3d-design-performance-guide/image036.png) 
-When editing the scene, always make sure
-the Prefab you're working in has its overrides applied.
-
-If there are overrides waiting to be applied on a Prefab, that means
-those changes are **not yet associated with the Prefab**. In the
-screenshot here, the changes are at the scene level and, when saved,
-will modify the scene file only.
-
-Applying the override will remove the changes from the scene file and
-apply them to the Prefab file.
-
-**Prefab Overrides and GIT**
-
-Note what happens if you save the project **without** applying the
-overrides and commit the project files to a GIT repository:
-
-When you eventually apply the overrides to the Prefab, you'll have to
-commit the Prefab file and the parent object file to the GIT repo. In
-this scenario, you're adding the changes to the Prefab file while
-removing the changes from the parent file.
-
-When you're making a new Prefab, make sure the empty GameObject node is
-zeroed out **before** turning it into a Prefab.
-
-**CORRECT**
-
-![](../../media/3d-design-performance-guide/image037.png)
-
-**INCORRECT**
-
-![](../../media/3d-design-performance-guide/image038.png)
-
-![](../../media/3d-design-performance-guide/image039.png)
-
-
-![](../../media/3d-design-performance-guide/image040.png)
-
-
-+-----------+--------------------+-----------+------------------------+
-| The FLOOR | ![](../../media/3d-design-performance-guide/imag     | The WALLS | ![](../../media/3d-design-performance-guide/image042      |
-| mesh must | e41.png){width="2. | mesh      | .png){width="2.4625in" |
-| have its  | 462962598425197in" | should    | height="               |
-| Tag set   | height="2.         | leave its | 2.5058245844269464in"} |
-| to        | 49167104111986in"} | Tag and   |                        |
-| T         |                    | Layer set |                        |
-| eleporter |                    | to its    |                        |
-| and its   |                    | defaults, |                        |
-| Layer set |                    | u         |                        |
-| to        |                    | nchanged. |                        |
-| NavMesh.  |                    |           |                        |
-|           |                    | This      |                        |
-| This      |                    | object    |                        |
-| object    |                    | doesn't   |                        |
-| doesn't   |                    | have a    |                        |
-| have a    |                    | Mesh      |                        |
-| Mesh      |                    | Renderer  |                        |
-| Renderer  |                    | c         |                        |
-| c         |                    | omponent. |                        |
-| omponent. |                    |           |                        |
-|           |                    | This      |                        |
-| This      |                    | object    |                        |
-| object    |                    | needs a   |                        |
-| needs a   |                    | Mesh      |                        |
-| Mesh      |                    | Collider  |                        |
-| Collider  |                    | c         |                        |
-| c         |                    | omponent. |                        |
-| omponent. |                    |           |                        |
-+===========+====================+===========+========================+
-+-----------+--------------------+-----------+------------------------+
-
-### Stairs
-
-To optimize performance and to prevent visual artifacts in both camera
-and character, we recommend representing stair **collision** geometry as
-a sloped plane without modifying render geometry.
-
-The character controller is represented by a capsule with a small radius
-which does allow it to effectively climb up stepped geometry. However,
-this approach can cause jittering0F[^1] in both the camera and character
-movement.
+<!--- New Article -->
 
 ## Lighting
 
@@ -645,7 +631,6 @@ will also display an error if a light like this is not found.
 ![A screenshot of a software Description automatically generated with
 medium confidence](../../media/3d-design-performance-guide/image046.png)
 
-
 ## Light Mapper Settings
 
 *Unity Lighting settings (Window/Rendering/Lighting)*
@@ -676,48 +661,12 @@ medium confidence](../../media/3d-design-performance-guide/image046.png)
 | +=======================================+==============================+ |
 | +---------------------------------------+------------------------------+ |
 
-# MRTK Graphics Tools for Unity
-
-MRTK Graphics Tools for Unity is a
-[Unity engine](https://unity.com/) package with code, shaders, assets,
-and samples created to help improve the visual fidelity of [mixed
-reality](https://docs.microsoft.com/windows/mixed-reality/discover/mixed-reality)
-applications while staying within performance budgets.
-
-![A screenshot of a video game Description automatically generated with
-medium confidence](../../media/3d-design-performance-guide/image053.png)
-
-Graphics Tools is included in the Mesh Toolkit package which is required
-for any Unity project being used to generate a Mesh Environment.
-
-## More info on Graphics Tools 
-
-View more information on Microsoft\'s technical documentation website.
-
-- Conceptual Docs - [MRTK
-    Unity](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/mrtk3-graphicstools/)
-
-- API Reference -
-    [Microsoft.MixedReality.GraphicsTools](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.GraphicsTools) 
-
-# Next Steps
-
-Now that you've learned how to design for Mesh and optimize your
-environment, we recommend expanding your Mesh project with Mesh
-Scripting or Physics. See the documentation and samples located in the
-[Mesh EAP
-SharePoint](https://microsoft.sharepoint.com/teams/MicrosoftMeshEAPOnboardingResources/Shared%20Documents/EAP%20Resources%20-%20External/Mesh%20-%20Custom%20Worlds/Docs/Mesh%20Design%20Guidelines%20for%20Technical%203D%20Artists%20v.%201.0.pdf).
-
-# Sharing Unity projects
-
-Currently, sharing Unity projects with other parties is not guaranteed.
-Be aware that sharing can raise some errors and is **not** fully
-validated for Mesh-related projects.
+# Troubleshooting
 
 # Known issues & limitations
 
 Mesh is still in development, with new features and updates to existing
-features ongoing. As an EAP partner, you may find that some features or
+features ongoing. You may find that some features or
 experiences are not polished or fully functional.
 
 Look at the Release notes for details on features, bug fixes, and known
@@ -730,25 +679,18 @@ If you find new issues, file a bug or speak to your Microsoft partners.
 Look at the Release notes for details on features, bug fixes, and known
 issues.![](../../media/3d-design-performance-guide/image054.png)
 
-
 We love feedback and bug reports! If you'd like to provide feedback, use
 the Feedback button inside any Mesh experience. This ensures that your
 feedback and bug reporting will be triaged and incorporated quickly.
 
 ![](../../media/3d-design-performance-guide/image055.png)
 
-
 If you're not able to give feedback or report bugs using the Feedback
 button in Mesh, use the Teams chats with your Microsoft partners or
 contact your Microsoft partners directly.
 
+<!--------------- end of article -->
 
-[^1]: See *Bug 39279: Avatar + camera movement is bumpy when going
-    downhill* - for more details on the artifacts you can see when using
-    overly complicated collision geometry for stairs.
-
-
-)
 
 
 
