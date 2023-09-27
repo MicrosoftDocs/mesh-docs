@@ -21,7 +21,7 @@ can experience through the Mesh app for PC or Quest.
 1. Log in with your corporate account.
 1. On the Home page, in the left-side navigation bar, select **Events**.
 
-    :::image type="content" source="../../../media/sample-mesh-101/466-select-events.png" alt-text="Events button in Mesh portal":::
+    ![___](../../../media/sample-mesh-101/466-select-events.png)
 
 1. Select **Create event** at the top right.
 1. On the **Event details** page, add the **Event name**, **Start time** and **End time**, **Description**, and an optional **Event thumbnail image**.
@@ -30,24 +30,24 @@ can experience through the Mesh app for PC or Quest.
     - The **Room capacity** for both is *16*.
     - The maximum number of participants allowed for a *Single room* is 16, and for **Multiple rooms** is 200. You can set the maximum number of participants for your event in the **Max participants** field.
 
-    :::image type="content" source="../../../media/sample-mesh-101/468-event-details.png" alt-text="Event details page in Mesh portal":::
+    ![___](../../../media/sample-mesh-101/468-event-details.png)
 
 1. When you're finished, select **Next**.
 1. On the **Choose an Environment or Event template** page, select the **Start with an environment** box, and then click **Next**.
 
-    :::image type="content" source="../../../media/sample-mesh-101/462-choose-env-button.png" alt-text="A screenshot showing the choose environment or event template page in the Mesh Portal.":::
+    ![___](../../../media/sample-mesh-101/462-choose-env-button.png)
 
 1. On the following page, select the **From Worlds** drop-down and then choose the World that you uploaded your Environment to.
 
-    :::image type="content" source="../../../media/sample-mesh-101/463-choose-worlds-drop-down.png" alt-text="A screenshot showing the from Worlds drop down in the Mesh Portal.":::
+    ![___](../../../media/sample-mesh-101/463-choose-worlds-drop-down.png)
 
 1. On the following page, select your Environment, and then select **Next**.
 
-    :::image type="content" source="../../../media/sample-mesh-101/464-choose-your-env.png" alt-text="A screenshot showing the Environment you uploaded to the Mesh Portal.":::
+    ![___](../../../media/sample-mesh-101/464-choose-your-env.png)
 
 1. On the **Invites** page, you can add **Co-organizers** (who will be able to edit the event) and **Attendees** (who will be able to join the event). For this event, you wouldn't need anyone to do any editing, so you would only fill in the **Attendees** list.
 
-    :::image type="content" source="../../../media/sample-mesh-101/465-invites.png" alt-text="A screenshot showing the Invites page in the Mesh Portal, where you list the attendees and Co-organizers you wish to invite.":::
+    ![___](../../../media/sample-mesh-101/465-invites.png)
 
 1. When you're finished, select **Create event**.
 
@@ -59,8 +59,6 @@ features that you enabled in Chapters 3 and 4 to learn about wind
 turbines.
 
 ![A person looking at a group of people Description automatically generated](../../../media/sample-mesh-101/image108.jpg)
-
-![A person looking at a group of people Description automatically generated](../../../media/sample-mesh-101/465-invites.png)
 
 ## Conclusion
 
