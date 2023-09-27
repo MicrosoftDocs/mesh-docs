@@ -3,7 +3,7 @@ title: Release notes for Mesh Toolkit
 description: Mesh release notes
 author: qianw211    
 ms.author: qianwen
-ms.date: 9/13/2023
+ms.date: 9/25/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 ---
@@ -16,6 +16,58 @@ For purposes of this document, there are two categories of users:
 
 * Creators: Technical artist and developers building with the Mesh Toolkit
 * IT admins: Managers working in Azure
+
+## Version 23.12
+
+### Version list and dates
+
+These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see. We are working to create better transparency and standardization of versions of offerings and packages to make upgrading easier.
+
+>[!Note]
+>The version number for Mesh (PC or Quest) **must** match the Mesh Toolkit Authoring package version you're using otherwise you may get errors or unexplained behavior. Please hold off on upgrading the Mesh Toolkit Authoring package until the Mesh client version for your target platform (PC or Quest) is available.
+
+| Mesh offering/package   | Version | Date released
+| ----------- | ----------- | ----------- |
+| Mesh Toolkit Package      |   5.2312.0     | 2023-10-  |
+| Mesh (PC/Quest)   |  5.2312.0       |  2023-10-  |
+
+### What's new
+
+#### Uploader
+
+* The `ContentVersion` has been incremented to `1.19.0`: Newly published content will only be visible in recent Mesh app.
+
+* Removed support to upload environments to Azure. 
+* Added support for the new M365 service.
+
+    * Previously uploaded asset bundles are not accessible by new versions of the Environment. Ensure all required platforms are built and uploaded together to avoid any issues when entering events.
+
+    * Thumbnails are now mandatory with each upload.
+
+    * Removed support for opening a test space after uploading an environment for the new service.
+
+* Validate that events are only using `ScriptMachine.TriggerUnityEvent` or `ScriptMachine.TriggerAnimationEvent` callback.
+* Added a check for a valid Mesh license after sign in.
+* Validate if environment has the `TravelPoint` component.
+* Added visual feedback while uploader is performing background operations.
+* Validate if all components in the scene are allowed, instead of only scripts.
+* The provisional thumbnails have been improved.
+* The Mesh Uploader will now trigger the default font settings on load. Users will be prompted before making any changes
+* Adjusted behavior of warning before modifying environment to exclude warning for new assets.
+* Improved Uploader's handling of the situation when Unity reloads scripts and assemblies.
+* The Uploader will use default thumbnails if no custom thumbnails are supplied on upload
+* Added validation check for empty descriptions during asset creation.
+* Removed the **Copy Bundles To Local Directory** feature.
+* Removed bypass when no valid thumbnails are found for upload.
+* Improved logging for uploader extension errors.
+* Fixed a bug where the results dialog can be hidden by the uploader window.
+
+### Resolved product issues
+
+* The **Build and Upload Results** now show the correct error: Mesh app manifest parsing issue result in incomplete uploads. (20317, 19058)
+
+    ![A screenshot of the Build and Upload Results dialog indicating an err](media/build-upload-results-dialog-error.png)
+
 
 ## Version 23.11
 

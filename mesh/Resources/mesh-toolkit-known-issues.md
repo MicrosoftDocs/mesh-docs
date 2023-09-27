@@ -10,6 +10,8 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 # Acitive known issues - Mesh Toolkit
 
+## Version 23.12
+
 ## Version 23.11
 
 ### Interactables
@@ -18,7 +20,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 ### Scripting
 
-* New `meshapp` deployments will fail to create `diagnosticSettings` on the `appService`. (19508)
+* New `meshapp` deployments will fail to create `diagnosticSettings` on the `appService`. (19058)
 
     ![A screenshot of the Mesh scripting error](media/mesh-scripting-error.png)
 
