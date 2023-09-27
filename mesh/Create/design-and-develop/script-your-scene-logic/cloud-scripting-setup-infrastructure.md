@@ -8,7 +8,7 @@ ms.topic: Tutorial
 keywords: Microsoft Mesh, Azure, admin, documentation, features, MeshApp, scripting
 ---
 
-# Set cloud Scripting infrastructure in Azure
+# Set cloud scripting infrastructure in Azure
 
 ## MeshApps cloud infrastructure deployment
 
@@ -23,10 +23,15 @@ The Mesh App Cloud Infrastructure deployed to the Customer's Azure Subscription 
 1. **[Azure VNet](/azure/virtual-network/virtual-networks-overview)**: This is the virtual network resource that the app service instances are deployed in and allows them to communicate with each other.
 
 1. **Azure Web App Instance**: This represents an instance of the Web App running on a specific VM.
+
 1. **[Azure Storage account](/azure/storage/common/storage-account-overview)**: This holds the published content and information about the Azure Web App instances. It is sub-divided into three components:
+
     1. **[The Mesh App Blob Storage](/azure/storage/blobs/storage-blobs-introduction)**: This holds the Mesh App blob uploaded by the Mesh CLI tool (and in the future from the uploader)
-    2. **[The Orleans Membership Table](/dotnet/orleans/overview)**: This holds information about the liveness of the Orleans Silo instances.
+
+    1. **[The Orleans Membership Table](/dotnet/orleans/overview)**: This holds information about the liveness of the Orleans Silo instances.
+
 1. **[Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal)**: This holds the logs emitted from the Mesh App running on App Service.
+
 1. **[Application Insights](/azure/azure-monitor/app/app-insights-overview?tabs=net)**: This provides application performance monitoring (APM) features. APM tools are useful to monitor applications from development, through test, and into production.
 
 ### App Service Plan
@@ -169,11 +174,15 @@ The services to register are:
 ## Access control for MeshApp deployment
 
 1. Developer must have an email that can be used for their deployment. This could be a new account or a pre-existing email used, such as Environment uploading.
+
 1. If managing access control through an Azure Security Group, create this group (e.g “Mesh App Developers”).
+
 See Learn about groups and group membership - Microsoft Entra | Microsoft Learn for more Information on Azure Security Group versus Microsoft 365 group types.
+
 1. Decide how you’d like developers to access your Azure subscription. This depends on if the developer is a native member of the directory, or a guest user.
     1. For native members, you can add them to the Azure Security Group you created in the previous step if you’d like to easily manage access controls.
-    2. For guest users, you can add them to your Azure subscription, or add them to the Azure Security Group from the previous step.
+
+    1. For guest users, you can add them to your Azure subscription, or add them to the Azure Security Group from the previous step.
 
     See [Add B2B collaboration users in the Azure portal - Microsoft Entra | Microsoft Learn](/azure/active-directory/external-identities/add-users-administrator) for more info on guest users.
 
