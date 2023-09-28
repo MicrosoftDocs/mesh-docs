@@ -7,5 +7,3 @@ items:
     href: customize-event.md
   - name: Produce event
     href: produce-event.md
-  - name: Help with events
-    href: events-help.md

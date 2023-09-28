@@ -176,6 +176,3 @@ See the [Considerations before starting your event](customize-event.md) to learn
 
    > [!div class="nextstepaction"]
    > [Produce your event](produce-event.md)
-
-   > [!div class="nextstepaction"]
-   > [Event help](events-help.md)
