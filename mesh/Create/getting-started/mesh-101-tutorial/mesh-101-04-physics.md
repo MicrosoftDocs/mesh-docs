@@ -228,7 +228,7 @@ generated](../../../media/sample-mesh-101/image084.png)
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image087.png)
 
-## Test your work
+### Test your work
 
 1. Save the project, and then press the Unity Editor Play button.
 
@@ -242,7 +242,7 @@ generated](../../../media/sample-mesh-101/image084.png)
     the tabletop and ocean and try to drop it on the floor. The containment
     field prevents you from doing so.
 
-## Chapter 4: Summary
+### Chapter 4: Summary
 
 In this chapter, you added Mesh features that empower participants in
 your experience to do the following:

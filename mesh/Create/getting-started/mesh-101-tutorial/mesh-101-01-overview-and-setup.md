@@ -52,6 +52,10 @@ In Mesh terms, the project you create in Unity and then upload to the Mesh Porta
 
 ## Prerequisites
 
+### Previous Unity experience
+
+This tutorial assumes that you have the intermediate to advanced Unity skills needed to creative an Environment. If you don't, you can still [create, customize and produce](../../../Use/events-guide/create-event-mesh-portal.md) Mesh events using existing Environments.
+
 ### Hardware requirements
 
 Minimum PC requirements: 4 CPU cores, 8Gb RAM
@@ -63,31 +67,6 @@ Unity version 2022.3.7f1 is required for this tutorial.
 [Get help installing Unity](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 
 Your installation should include modules for Android and Windows.
-
-### Previous Unity experience
-
-This tutorial assumes that you have intermediate to advanced Unity
-skills.
-
-### Azure portal access
-
-You'll need a username and password for the Azure Portal so you can
-upload your work.
-
-#### Content Contributor permissions
-
-To upload an Environment to a Mesh world, there are two things that must
-be enabled for your work account:
-
-1. **Mesh world already created.** There must be a Mesh world to upload
-    to from Unity. If there isn't one, your Azure Admin or Mesh world
-    resource owner should make one for you.
-
-2. **Content Contributor role.** Your Azure Admin or Mesh world owner
-    must add your work account as a Content Contributor for each Mesh
-    world you want to upload an Environment to.
-
-For more information, see our IT Admin Guide*.
 
 ## Set things up for Mesh
 
@@ -105,7 +84,7 @@ If the app isn't available, talk to your IT admin about making the app visible t
 
 The Mesh Toolkit contains the *Mesh 101* tutorial project.
 
-1. In your browser, navigate to 
+1. In your browser, go to GitHub, and then navigate to the [*Mesh-Toolkit-Unity* repository](https://github.com/microsoft/Mesh-Toolkit-Unity).
 
     ![______](../../../media/sample-mesh-101/469-toolkit-in-unity.png)
 
@@ -113,8 +92,7 @@ The Mesh Toolkit contains the *Mesh 101* tutorial project.
 
     ![______](../../../media/sample-mesh-101/470-code-and-download-zip.png)
 
-1. On your C: drive, create a folder with a one-word name (for example,"Mesh101") and then move or copy the downloaded Mesh Toolkit Zip file to that folder. This is done to avoid running into a problem with the Windows path length limit which is 256 characters. **IMPORTANT**: *Don't* place the Zip file on the Windows desktop. Behind the scenes, this creates a very long path name.
-
+1. On your C: drive, create a folder with a one-word name (for example,"Mesh101") and then move or copy the downloaded Mesh Toolkit Zip file to that folder. This is done to avoid running into a problem with the Windows path length limit, which is 256 characters. **IMPORTANT**: *Don't* place the Zip file on the Windows desktop. Behind the scenes, this creates a very long path name.
 
     In the example below, the user created a folder on their C: drive named *Mesh101.* Next, they moved the downloaded Mesh Toolkit Zip file to the *Mesh101* folder
 
@@ -123,7 +101,6 @@ The Mesh Toolkit contains the *Mesh 101* tutorial project.
 5. Unzip the Toolkit Zip file into the same folder, and then navigate through the unzipped folder hierarchy until you see the **Mesh101.unity** folder. This contains the tutorial project which you'll open in the next chapter.
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/472-mesh-tutorial-folder.png)
-
 
 ### The Packages
 
