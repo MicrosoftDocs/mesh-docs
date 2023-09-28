@@ -117,12 +117,10 @@ Note that two new components have been added in the **Inspector**: **Script Mach
 
 ![A screenshot of a video play Description ](../../../media/sample-mesh-101/201-script-machine-v2.png)
 
-Note that in the **Script Machine** component, the **Source** is set to **Graph**. Let's keep that setting. This means that we'll be creating a new script graph as an asset and saving it in the project.
-
 1. Note that in the **Script Machine** component, the **Source** is set to **Graph**. You have two choices for **Source**: *Graph* and *Embed*. Click **Source** and then select **Embed**.
 
-> [!TIP]
-> *Graph* and *Embed* each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine artice](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We're choosing to use *Embed* here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
+    > [!TIP]
+    > *Graph* and *Embed* each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine artice](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We're choosing to use *Embed* here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
 
 1. In the **Script Machine** component, enter a name in the *Title* field for the graph: "Video Player Behavior."
 1. Enter a description in the *Summary* field for the graph: "Video player behavior definition."
@@ -172,7 +170,7 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 >
 > This component is added automatically at runtime to interactable bodies; it exposes various properties to Visual Scripting such as *IsHovered* and *IsSelected*, which will come in handy in a moment.
 >
-> **Tip**: You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Playmode tint has been changed to blue. This can help you to tell at a glance which mode you're in.
+> You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Playmode tint has been changed to blue. This can help you to tell at a glance which mode you're in.
 
 In the script graph, let's add a node that lets us know when the button is selected.
 1. Make sure you're viewing the embedded script graph that's attached to the **PlayVideoButton** GameObject.
@@ -254,17 +252,17 @@ Now we'll add the nodes that detect if *isPlaying* changes and plays or stops th
 
 1. Select **Video** and then, in the **Inspector**, note the following:
 
-- **Video** has a component named **Video Player**, which has a video attached named "WindTurbine".
+    - **Video** has a component named **Video Player**, which has a video attached named "WindTurbine".
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/424-video-player.png)
 
-- **Video** is inactive.
+    - **Video** is inactive.
 
 1. In the **Hierarchy**, select the **VideoStill** GameObject and then, in the **Inspector**, note the following:
 
-- **VideoStill** has a still image attached.
+    - **VideoStill** has a still image attached.
 
-- **VideoStill** is active.
+    - **VideoStill** is active.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/425-videostill.png)
 
@@ -328,7 +326,7 @@ There may be times when you want a script's events to be experienced only by the
 
 For this tutorial, we want all participants in the experience to be able to see any interactions with the video player and see the video itself play and pause. To ensure this, make sure the "Share visual script variables on this Game Object" option is selected. The information box below this option tells you what's shared and what remains local.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/435-share-variables.png)
+![A screenshot of a video play Description ](../../../media/sample-mesh-101/435-share-variables.png)
 
 ### Test your work
 
@@ -515,9 +513,9 @@ The setting of True for *TeleportNow* is what triggers the sequence of nodes in 
 
 After the teleport has occurred, *TeleportNow* needs to be reset to False so that the whole process can be repeated the next time the button is clicked. We've already set up the nodes for this; all you need to do is make the connection.
 
-1. In the **Teleport to OpenPlatform** group, drag a connector from the output control port of the "Travel Point: Travel to Point" node and then connect it to the input control point of the "Set Object Variable: TeleportNow" node.
+- In the **Teleport to OpenPlatform** group, drag a connector from the output control port of the "Travel Point: Travel to Point" node and then connect it to the input control point of the "Set Object Variable: TeleportNow" node.
 
-    ![A screen shot](../../../media/sample-mesh-101/449-connect-final-teleportnow.png)
+![A screen shot](../../../media/sample-mesh-101/449-connect-final-teleportnow.png)
 
 ### Test your work
 

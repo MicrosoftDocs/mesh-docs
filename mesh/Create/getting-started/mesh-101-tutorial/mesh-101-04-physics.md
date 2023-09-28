@@ -169,7 +169,7 @@ This **Animator** is what will provide our animation.
 
 ![A screenshot](../../../media/sample-mesh-101/477-drag-anim-to-trigger-node.png)
 
-1. 1. Drag the **Windmill_Turbine_001:Propellors10** GameObject from the **Hierarchy** again and then, in the script graph, drop it in the first field in the  *Animator: Set Trigger* node located in the *second* group. 
+1. Drag the **Windmill_Turbine_001:Propellors10** GameObject from the **Hierarchy** again and then, in the script graph, drop it in the first field in the  *Animator: Set Trigger* node located in the *second* group. 
 
 The script is now complete.
 
@@ -208,8 +208,7 @@ will be restricted to the inside of the box.
 1. In the **Hierarchy**, expand the **4.3 -- Constraining Bodies**
     GameObject and select its child object named **Containment Field**.
 
-![A screenshot of a computer Description automatically
-generated](../../../media/sample-mesh-101/image084.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image084.png)
 
 1. In the **Inspector**, select the **Add Component** button and then
     add the **Containment Field** component.
