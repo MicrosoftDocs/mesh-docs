@@ -3,7 +3,7 @@ title: Release notes for Mesh Toolkit
 description: Mesh release notes
 author: qianw211    
 ms.author: qianwen
-ms.date: 9/25/2023
+ms.date: 9/28/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 ---
@@ -68,6 +68,9 @@ These are the offerings and packages currently available. There may be slight di
 
     ![A screenshot of the Build and Upload Results dialog indicating an err](media/build-upload-results-dialog-error.png)
 
+### Interactables
+
+* If you run into a Trigger Zone component, please ignore it. This has been removed in this release.
 
 ## Version 23.11
 
@@ -134,7 +137,7 @@ These are the offerings and packages currently available. There may be slight di
 * *Renaming*: We've renamed WebView to Webslate.
 * *Framed WebSlate prefab*: New WebSlate prefab with a Mesh-style design frame is now available in the Mesh Toolkit.
 * *Security enhancements*: Navigation within WebSlate is exclusively limited to HTTPS.
-* *Visual Scripting*: After incorporating the WebSlate visual scripting node into your project, you can utilize it just like any other node in your visual script graph. Here's an example of a script graph that loads a new URL in WebSlate when the state of a graph variable changes.
+* *Visual Scripting*: After incorporating the WebSlate visual scripting node into your project, you can utilize it just like any other node in your visual script graph. 
 * *Manual authentication*: To ensure security against unintended URL-based attack vectors such as phishing, WebSlates by default restricts navigation to the URLs that are included under the domain of the first page loaded into the WebSlate.
 * *Image Quality replacement*: For the 23.11 release, we are temporarily removing Image Quality. Image quality will default to medium quality. Pixels per Unit will enable WebSlates to match the resolution of your screen, enabling users to have a better experience at various viewing distances.
 * *WebSlate performance improvements*:
