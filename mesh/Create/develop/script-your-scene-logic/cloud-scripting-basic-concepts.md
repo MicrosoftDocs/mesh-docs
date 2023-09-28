@@ -111,7 +111,7 @@ That said, **the Auth flow in MeshApps doesn't require any extra effort from you
 
 Here are the parties involved in the Auth flow:
 
-**Mesh Uploader**: As the tool through which MeshApps are deployed to the cloud, you could choose the `mode` your MeshApps uses in validating the auth token. This can be done in the Mesh Uploader Settings located in your Unity project's settings. It defaults to "Dev", and could be set to "Prod" if you wish to enable auth for your MeshApp server.
+**Mesh Uploader**: As the tool through which MeshApps are deployed to the cloud, you could choose the `mode` your MeshApps uses in validating the auth token. This can be done in the "Mesh Uploader Settings/Extensions/Cloud Scripting Service Tool" located in your Unity project's settings. It defaults to "Dev", and could be set to "Prod" if you wish to enable auth for your MeshApp server.
 
 **Microsoft Mesh Service**: Responsible for issuing a token. Without a token, users can't interact with a MeshApp.
 
