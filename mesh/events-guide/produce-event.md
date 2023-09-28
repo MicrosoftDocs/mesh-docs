@@ -85,4 +85,4 @@ See the event participants and use various controls available to manage individu
 :::image type="content" source="../../media/mesh-event-producer-guide/Participant-host-panel-window.png" alt-text="Participant panel for host panel":::
 
    > [!div class="nextstepaction"]
-   > [Event help](events-help.md)
+   > [Getting started with attending events](../user-guide/getting-started.md)
