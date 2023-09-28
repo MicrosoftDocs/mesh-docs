@@ -41,7 +41,7 @@ The following instructions show how to create a simple app with a cube that rota
 
    ![Screen shot of the Create Mesh App menu item.](../../../media/mesh-scripting/getting-started/002-create-mesh-app.png)
 
-   Note that a game object named **MeshApp** appears in the **Hierarchy** and is selected. This also creates a new C# application project under `Assets\.MeshApps\MyFirstMeshApp`.
+   Note that a game object named **Mesh Cloud Scripting** appears in the **Hierarchy** and is selected. This also creates a new C# application project under `Assets/.MeshCloudScripting/MyFirstMeshApp`.
 
    ![img](../../../media/mesh-scripting/getting-started/003-mesh-app-files.png)
 
@@ -55,7 +55,7 @@ The following instructions show how to create a simple app with a cube that rota
 1. On the menu bar, select **GameObject** > **3D Object** > **Plane** to create a floor.
 1. In the **Hierarchy**, select the **Plane** object and, in the **Inspector**, change the **Layer** to **NavMesh**.
 1. On the menu bar, select **GameObject** > **3D object** > **Cube**.
-1. In the **Hierarchy**, drag the cube to the **MeshApp** object to make the cube a child of that object.
+1. In the **Hierarchy**, drag the cube to the **Mesh Cloud Scripting** object to make the cube a child of that object.
 
    ![A screen shot of the Cube placed as a child to MeshApp.](../../../media/mesh-scripting/getting-started/004-cube.png)
 
@@ -68,8 +68,8 @@ The following instructions show how to create a simple app with a cube that rota
 
 ### Modify the C# project
 
-1. In the **Hierarchy**, select the **MeshApp** object.
-1. In the **Inspector**, navigate to the **MeshApp** component and then click the **Open application folder** button. This opens File Explorer and shows you a view of your project contents.
+1. In the **Hierarchy**, select the **Mesh Cloud Scripting** object.
+1. In the **Inspector**, navigate to the **Mesh Cloud Scripting** component and then click the **Open application folder** button. This opens File Explorer and shows you a view of your project contents.
 
    ![img](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
 
@@ -78,7 +78,7 @@ The following instructions show how to create a simple app with a cube that rota
 
    ```c#
    private readonly ILogger<App> _logger;
-   private readonly CloudApplication _app;
+   private readonly ICloudApplication _app;
    ```
 
    Add the following as a third variable:
@@ -95,11 +95,11 @@ The following instructions show how to create a simple app with a cube that rota
        // First we find the TransformNode that corresponds to our Cube gameobject
        var transform = _app.Scene.FindFirstChild<TransformNode>();
 
-       // Then we find the TouchSensorNode child of that TransformNode
-       var touchSensor = transform.FindFirstChild<TouchSensorNode>();
+       // Then we find the InteractableNode child of that TransformNode
+       var sensor = transform.FindFirstChild<InteractableNode>();
 
-       // Listen to changes on the ClickTime property
-       touchSensor.Clicked += (_, _) =>
+       // Handle a button click
+       sensor.Selected += (_, _) =>
        {
            // Update the angle on each click
            _angle += MathF.PI / 8;
@@ -118,9 +118,9 @@ The following instructions show how to create a simple app with a cube that rota
 
 ### Debug your application with Visual Studio (optional)
 
-1. In the **Hierarchy**, ensure that you have the **MeshApp** object selected.
+1. In the **Hierarchy**, ensure that you have the **Mesh Cloud Scripting** object selected.
 
-1. In the **Inspector**, navigate to the **MeshApp** component and then select **Enable Application Debugging**.
+1. In the **Inspector**, navigate to the **Mesh Cloud Scripting** component and then select **Enable Application Debugging**.
 
    ![img](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorEnableDebugging.png)
 
