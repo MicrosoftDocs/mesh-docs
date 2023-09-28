@@ -25,7 +25,7 @@ Unity Tutorial series on using [**Timelines**](https://learn.unity.com/project/u
 2. Add another empty GameObject, make it a child to **Timelines**, and
     then rename it "Timeline1."
 
-![___](../../../media/enhance-your-environment/image033.png)
+![___](../../media/enhance-your-environment/image033.png)
 
 **Notes**:
 
@@ -53,12 +53,12 @@ work and will cause issues in events.
     **Timeline** and the **Scene** or **Game** windows simultaneously.
 
 ![A screen shot of a video Description automatically generated with low
-confidence](../../../media/enhance-your-environment/image034.jpg)
+confidence](../../media/enhance-your-environment/image034.jpg)
 
 6. Select **Create**.
 
 ![Graphical user interface, website Description automatically
-generated](../../../media/enhance-your-environment/image035.png)
+generated](../../media/enhance-your-environment/image035.png)
 
 7. In the **Save** window, change the name of the Playable to
     *Open_Doors* and then save it to the **Assets Animations**
@@ -66,7 +66,7 @@ generated](../../../media/enhance-your-environment/image035.png)
     **
 
 ![A screenshot of a computer Description automatically generated with
-medium confidence](../../../media/enhance-your-environment/image036.png)
+medium confidence](../../media/enhance-your-environment/image036.png)
 
 8. You can now animate or customize your Timeline---for example, add
     animation clips, activation clips, and more. For more on how to do
@@ -74,7 +74,7 @@ medium confidence](../../../media/enhance-your-environment/image036.png)
 
 A Timeline with several tracks might look something like this:
 
-![](../../../media/enhance-your-environment/image037.jpg)
+![](../../media/enhance-your-environment/image037.jpg)
 
 9. Once you're done animating, in the **Hierarchy**, select the
     **Timeline1** GameObject, and then in the **Inspector**, navigate to
@@ -93,7 +93,7 @@ otherwise, your timeline will reset to the start. There's also a
 **Wrap Mode** option named **Loop** which you may want to use in some
 instances.
 
-![Graphical user interface, application Description automatically generated](../../../media/enhance-your-environment/image038.jpg)
+![Graphical user interface, application Description automatically generated](../../media/enhance-your-environment/image038.jpg)
 
 Now you can upload your content to Mesh using the **Mesh Toolkit
 Uploader** and then see how it looks in your Mesh space. To learn more,
@@ -107,7 +107,7 @@ animation, *pause* it, and select *play* again to resume the animation.
 You can also select *stop* to reset the animation to the beginning or
 set your animation to *loop*.
 
-![___](../../../media/enhance-your-environment/image039.png)
+![___](../../media/enhance-your-environment/image039.png)
 
 For example, if you have a door-opening animation, selecting the *play*
 button will open the door in your scene. Selecting *stop* will reset the

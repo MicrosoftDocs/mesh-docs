@@ -235,7 +235,7 @@ The MeshApp.CLI tool from the 23.5 release creates the application insights reso
 
 - Open `nuget.config` file in the same directory and remove package source for local Mesh Apps, e.g.
 ```xml
-    <add key="MeshApps" value="../../../../../Packages" />
+    <add key="MeshApps" value="../../../../Packages" />
 ```
 
 **_Redeploy and Republish Mesh App_**

@@ -30,7 +30,7 @@ If you followed the instructions in the [Import the Mesh Toolkit
 Packages](#import-packages) TBD section, you added the tarball named
 *com.microsoft.mesh.toolkit-.xxx*, which includes the Playmode package.
 
-![A screenshot of a computer Description automatically generated](../../../media/debug-and-optimize/image040.jpg)
+![A screenshot of a computer Description automatically generated](../../media/debug-and-optimize/image040.jpg)
 
 **To use Playmode in your project**:
 
@@ -38,7 +38,7 @@ Packages](#import-packages) TBD section, you added the tarball named
     in the **Hierarchy**, and then select **Mesh Toolkit** >
     **PlaymodeSetup**.
 
-![A screenshot of a computer Description automatically generated](../../../media/debug-and-optimize/image041.jpg)
+![A screenshot of a computer Description automatically generated](../../media/debug-and-optimize/image041.jpg)
 
 2.  Ensure that the scene contains a piece of solid floor below the
     origin that's set to the *NavMesh* layer.
@@ -50,7 +50,7 @@ Packages](#import-packages) TBD section, you added the tarball named
 When working in a large scene, you may find it valuable to move to a
 specific location at startup.
 
-![A screenshot of a computer program Description automatically generated with medium confidence](../../../media/debug-and-optimize/image042.jpg)
+![A screenshot of a computer program Description automatically generated with medium confidence](../../media/debug-and-optimize/image042.jpg)
 
 Playmode Split Screen
 
@@ -61,7 +61,7 @@ emulated *PlaymodeNetwork* component that's sufficient to communicate
 the player position between the clients, allowing the different players
 to see each other as heavily stylized avatars:
 
-![A screenshot of a video game Description automatically generated with medium confidence](../../../media/debug-and-optimize/image043.png)
+![A screenshot of a video game Description automatically generated with medium confidence](../../media/debug-and-optimize/image043.png)
 
 This is sufficient for previewing static content. When developing
 interactive content Mesh Scripting and/or WebView, keep in mind that the
@@ -74,7 +74,7 @@ Do one of the following:
 -   Increase the initial screen count before entering Play mode by
     setting the value on the **PlaymodeSetup \[NoUpload\]** component:
 
-![Graphical user interface, text, application Description automatically generated](../../../media/debug-and-optimize/image044.jpg)
+![Graphical user interface, text, application Description automatically generated](../../media/debug-and-optimize/image044.jpg)
 
 -or-
 
@@ -83,7 +83,7 @@ Do one of the following:
 2.  In the **DontDestroyOnLoad** scene, navigate to the
     **PlaymodeSplitScreen** component and then select **Add player**.
 
-![___](../../../media/debug-and-optimize/image045.jpg)
+![___](../../media/debug-and-optimize/image045.jpg)
 
 Now you can quickly test your Unity Scene without going through the
 build and upload process each time you make an iteration.

@@ -15,11 +15,11 @@ After you finish adding all your scene content, the next step is to build the sc
 1. On the menu bar, select **Mesh Toolkit** > **Configure Project
     Settings**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/make-your-environment-available-for-events/001-project-settings.png)
+    ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/001-project-settings.png)
 
 1. Select **Yes** to configure project settings for Mesh.
 
-    ![Graphical user interface, text, application Description automatically generated](../../../media/make-your-environment-available-for-events/image015.png)
+    ![Graphical user interface, text, application Description automatically generated](../../media/make-your-environment-available-for-events/image015.png)
 
 1.  On the menu bar, do one of the following:
 
@@ -52,7 +52,7 @@ After you finish adding all your scene content, the next step is to build the sc
 1. In the **Capacity** field, enter the capacity for your Environment.
     The maximum is 16.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/make-your-environment-available-for-events/002-uploader-create.png)
+    ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/002-uploader-create.png)
 
 1.  Select **Create Asset** to create the Environment that you'll be
     uploading.
@@ -62,13 +62,13 @@ After you finish adding all your scene content, the next step is to build the sc
 
     ![A screenshot of a computer screen Description automatically
     generated with medium
-    confidence](../../../media/make-your-environment-available-for-events/image017.jpg)
+    confidence](../../media/make-your-environment-available-for-events/image017.jpg)
 
     You should now be in the **Update Environment** tab of the **Mesh
     Environments** window.
 
     ![A screenshot of a computer Description automatically
-    generated](../../../media/make-your-environment-available-for-events/003-uploader-update.png)
+    generated](../../media/make-your-environment-available-for-events/003-uploader-update.png)
 
     Note that in the **Environment Configurations** section, you already
     have an Environment configuration created which displays the name you
@@ -81,12 +81,12 @@ After you finish adding all your scene content, the next step is to build the sc
     project that you want as the Environment. In this example, we're
     using the Mesh sample project *Dartroom*, so our chosen scene will be the scene also named *DartRoom*.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/make-your-environment-available-for-events/004-scene-select.png)
+    ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/004-scene-select.png)
 
 1.  Select **Include thumbnails** and then, in the popup menu, choose
     **Generate Thumbnails**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/make-your-environment-available-for-events/image020.png)
+    ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/image020.png)
 
 1. In the **Build for Platforms** section, you choose which platforms
     to build for. Note that when a button background is gray, the button
@@ -96,30 +96,30 @@ After you finish adding all your scene content, the next step is to build the sc
     - To build for PC only, make sure that only the PC button ("Mesh
         app on PC", the button on the left) is "on."
 
-        ![A screen shot of a computer Description automatically generated with low confidence](../../../media/make-your-environment-available-for-events/image021.jpg)
+        ![A screen shot of a computer Description automatically generated with low confidence](../../media/make-your-environment-available-for-events/image021.jpg)
 
     - To build for Android only, make sure that only the Android button ("Mesh app on Quest", the button on the right) is "on."
 
-        ![A screen shot of a computer Description automatically generated with low confidence](../../../media/make-your-environment-available-for-events/image022.jpg)
+        ![A screen shot of a computer Description automatically generated with low confidence](../../media/make-your-environment-available-for-events/image022.jpg)
 
     - To build for both PC and Android, make sure that both buttons are "on."
 
-        ![A screen shot of a computer Description automatically generated with low confidence](../../../media/make-your-environment-available-for-events/image023.jpg)
+        ![A screen shot of a computer Description automatically generated with low confidence](../../media/make-your-environment-available-for-events/image023.jpg)
 
 ## Build and publish the Environment
 
 1. Select the **Build and Publish** button.
 
-    ![A screen shot of a computer Description automatically generated with medium confidence](../../../media/make-your-environment-available-for-events/image024.jpg)
+    ![A screen shot of a computer Description automatically generated with medium confidence](../../media/make-your-environment-available-for-events/image024.jpg)
 
 1.  If the Environment builds and uploads successfully, the **Build and
     Upload Results** dialog appears and confirms the results.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/make-your-environment-available-for-events/005-build-succeeded.png)
+    ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/005-build-succeeded.png)
 
     If the build and upload process fails, this is confirmed in the **Build and Upload** Results dialog:
 
-    ![A screenshot of a computer program Description automatically generated with medium confidence](../../../media/make-your-environment-available-for-events/006-build-failed.png)
+    ![A screenshot of a computer program Description automatically generated with medium confidence](../../media/make-your-environment-available-for-events/006-build-failed.png)
 
 ## Next steps
 

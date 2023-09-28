@@ -40,7 +40,7 @@ like.
     up to you. For the following example, we chose a close-up front view of
     a wind turbine.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/get-started-developing-mesh/image013.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/get-started-developing-mesh/image013.jpg)
 
 ## Next steps
 

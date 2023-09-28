@@ -10,9 +10,9 @@ keywords: Microsoft Mesh, documentation, features, Unity, Web content
 
 # Web Content Overview
 
-![Image of a Mesh environment with WebSlates on display.](../../../media/webview-developer-guide/image002.png)![A picture containing screenshot,
+![Image of a Mesh environment with WebSlates on display.](../../media/webview-developer-guide/image002.png)![A picture containing screenshot,
 interior design, furniture, table Description automatically
-generated](../../../media/webview-developer-guide/image003.png)
+generated](../../media/webview-developer-guide/image003.png)
 
 Use WebSlate to display web content into your 3D Mesh Environment. Get a full browsing experience on PC or Quest 2 with intuitive input, customizability, security, and performance management. With WebSlates you can:
 
@@ -60,7 +60,7 @@ WebSlate loads an interactive page via a provided URL. The URL given to it in th
 
 By default, the WebSlate loads the preset URL. The URL should be replaced with a desired one on each WebSlate in use. The brightness parameter is set to 1.0 (100% of the browser's brightness).
 
-![Unity usage of WebSlate](../../../media/webview-developer-guide/image004.png)
+![Unity usage of WebSlate](../../media/webview-developer-guide/image004.png)
 
 ## General Tips
 
@@ -85,7 +85,7 @@ By default, the WebSlate loads the preset URL. The URL should be replaced with a
   
   - The same measurements are also available to the Visual Profiler. The group on the Visual Profiler typically changes colors from green to red when the budget allowance for a category is surpassed. For now, the WebSlate group only shows as green until a reasonable render time budget is rationalized for WebSlates.
 
-  ![WebSlate performance analysis using CPA tool](../../../media/webview-developer-guide/CPAwebslate.png)
+  ![WebSlate performance analysis using CPA tool](../../media/webview-developer-guide/CPAwebslate.png)
 
 ## Limitations/Issues
 
@@ -118,7 +118,7 @@ By default, the WebSlate loads the preset URL. The URL should be replaced with a
 
 ## Start with a sample
 
-![WebSlate example in the Hello World sample.](../../../media/webview-developer-guide/image005.png)
+![WebSlate example in the Hello World sample.](../../media/webview-developer-guide/image005.png)
 
 Did you know we have pre-made Mesh Environments that you can download and use in Unity?
 
@@ -148,24 +148,24 @@ If you haven't already imported the Mesh Toolkit, import it:
 
 There are two flavors of WebSlate prefabs available in the Mesh Toolkit that you can add to your scene. If you would like a WebSlate contained in a stylized frame with extra functionalities, you can use the WebSlateFramed prefab. Otherwise, if you would prefer a clean WebSlate with no extra components, you can use the WebSlate prefab.
 
-![Image showcasing two webslate prefabs](../../../media/webview-developer-guide/image025.png)
+![Image showcasing two webslate prefabs](../../media/webview-developer-guide/image025.png)
 
 #### Using Mesh Toolkit Context Menu (Recommended)
 
 To include either of the prefabs to your scene, right-click the scene hierarchy, navigate to "Mesh Toolkit," and then click "WebSlate"/"WebSlateFrame". You can also click the "+" button at the top left of the hierarchy window to see the same menu. Once you've added a WebSlate, add a URL to display content in Mesh.
 
-![Image of adding the Mesh Toolkit using the context menu](../../../media/webview-developer-guide/image006.png)
-![Add Mesh Toolkit to Hierarchy in Unity](../../../media/webview-developer-guide/image007.png)
+![Image of adding the Mesh Toolkit using the context menu](../../media/webview-developer-guide/image006.png)
+![Add Mesh Toolkit to Hierarchy in Unity](../../media/webview-developer-guide/image007.png)
 
 #### Using Mesh Toolkit Package
 
 You can also find the WebSlate manually by navigating or searching for it inside the Mesh Toolkit package. Search for "WebSlate" in your project, and make sure you're searching inside "Microsoft Mesh Toolkit":
 
-![Add prefab by searching in Mesh Toolkit](../../../media/webview-developer-guide/image008.png)
+![Add prefab by searching in Mesh Toolkit](../../media/webview-developer-guide/image008.png)
 
 Drag and drop the prefab into your scene, then add a URL to display on the WebSlate:
 
-![Add the WebSlateFramed prefab](../../../media/webview-developer-guide/WebSlate-Drag-Drop.png)
+![Add the WebSlateFramed prefab](../../media/webview-developer-guide/WebSlate-Drag-Drop.png)
 
 # Preview WebSlate in Unity Play Mode
 
@@ -173,11 +173,11 @@ To view a URL displayed in your WebSlate more quickly, you can use Unity Play Mo
 
 In the Inspector window, add a URL to the WebSlate (Script) via the Current URL property:
 
-![Screenshot of unity WebSlate component with a url input into it. Web URL is bing.com](../../../media/webview-developer-guide/image010.png)
+![Screenshot of unity WebSlate component with a url input into it. Web URL is bing.com](../../media/webview-developer-guide/image010.png)
 
 Press the Unity editor Play button to view your Web page:
 
-![Showcase both webslate prefabs in playmode](../../../media/webview-developer-guide/image011.png)
+![Showcase both webslate prefabs in playmode](../../media/webview-developer-guide/image011.png)
 
 ## Enable WebSlate interaction for Unity Play Mode
 
@@ -185,23 +185,23 @@ To enable interaction in the WebSlate, you have to set up a few things.
 
 1. Right-click in the scene hierarchy, navigate to "Mesh Toolkit," and then click "PlayModeSetup".
 
-    ![Add playmode to your Unity scene](../../../media/webview-developer-guide/image013.png)
+    ![Add playmode to your Unity scene](../../media/webview-developer-guide/image013.png)
 
     Ensure you see it in your scene, as shown here:
 
-    ![Graphical user interface, text, application Description automatically generated](../../../media/webview-developer-guide/image014.png)
+    ![Graphical user interface, text, application Description automatically generated](../../media/webview-developer-guide/image014.png)
 
 2. Create a new **Plane** GameObject. This will be your floor. Ensure the Game Object is positioned at the origin (0,0,0):
     
-    ![Graphical user interface, application Description automatically generated](../../../media/webview-developer-guide/image015.png)
+    ![Graphical user interface, application Description automatically generated](../../media/webview-developer-guide/image015.png)
 
 3. Position the WebSlate so it sits in front of the PlaymodeSetup character:
 
-    ![A picture containing sky Description automatically generated](../../../media/webview-developer-guide/image016.png)
+    ![A picture containing sky Description automatically generated](../../media/webview-developer-guide/image016.png)
 
 4. Click the play button, and double click to interact with the Web page displayed in the WebSlate:
 
-    ![Graphical user interface, application Description automatically generated](../../../media/webview-developer-guide/image017.png)
+    ![Graphical user interface, application Description automatically generated](../../media/webview-developer-guide/image017.png)
 
 **Great job! You added a custom WebSlate to your Unity scene and tested the interaction in Unity Play Mode.**
 
@@ -221,18 +221,18 @@ When working with WebSlates in the Unity editor, you have the option of enabling
 
 While you navigate in playmode, the WebSlate will log the domains you visit in the background. 
 
-![Collect allowed domains checkbox is enabled](../../../media/webview-developer-guide/allowed-domains-enabled.png)
+![Collect allowed domains checkbox is enabled](../../media/webview-developer-guide/allowed-domains-enabled.png)
 
 In this case, we're expanding navigation from *microsoft.com* to also include *learn.microsoft.com*.
 
 Once you exit playmode, you will find an asset called *\"WebViewAllowedDomains.asset\"* in your top-level *Assets* folder.
 
-![WebSlate allowed domains asset](../../../media/webview-developer-guide/allowed-domains-asset.png)
+![WebSlate allowed domains asset](../../media/webview-developer-guide/allowed-domains-asset.png)
 
 Clicking on this asset will give you the list of extra domains you visited, beyond the domain of your initial URL. You can right click, copy, and then paste the values into the \"Allowed Domains\" field of the WebSlate component.
 
-![Copy allowed domains](../../../media/webview-developer-guide/copy-allowed-domains.png)
-![Paste allowed domains](../../../media/webview-developer-guide/paste-allowed-domains.png)
+![Copy allowed domains](../../media/webview-developer-guide/copy-allowed-domains.png)
+![Paste allowed domains](../../media/webview-developer-guide/paste-allowed-domains.png)
 
 **Note that this option is impossible to enable in uploaded scenes. Leaving the \"Collect Allowed Domains\" enabled will NOT remove the restriction in your final scene. However, your allowed domains list will persist and will allow navigation, as long as the domains are added to the WebSlate.**
 
@@ -240,7 +240,7 @@ Clicking on this asset will give you the list of extra domains you visited, beyo
 
 If you already know which domains you will need, you can manually add them to the WebSlate by expanding the \"Allowed Domains\" drop-down and adding your supplemental domains to the list in the Unity GUI.
 
-![Manually adding allowed domains with the plus button](../../../media/webview-developer-guide/allowed-domains-manual.png)
+![Manually adding allowed domains with the plus button](../../media/webview-developer-guide/allowed-domains-manual.png)
 
 # WebSlate in Visual Scripting
 
@@ -251,7 +251,7 @@ To enable visual scripting using WebSlate, you must set up a few things.
 1. Go to **Edit** \> **Project Settings**.
 
 2. Select **Visual Scripting**.\
-    ![A screenshot of Visual scripting page in Unity](../../../media/webview-developer-guide/image018.png)
+    ![A screenshot of Visual scripting page in Unity](../../media/webview-developer-guide/image018.png)
 
 3. Expand **Node Library**.
 
@@ -260,31 +260,31 @@ To enable visual scripting using WebSlate, you must set up a few things.
 5. In the new assembly entry, select **(No Assembly)** to open the **Assembly** menu.
 
 6. Select **Microsoft.Mesh.WebSlate** from the **Assembly** menu\
-    ![A screenshot of a computer Description automatically generated](../../../media/webview-developer-guide/image019.png)
+    ![A screenshot of a computer Description automatically generated](../../media/webview-developer-guide/image019.png)
 
     Visual Scripting adds the **Microsoft.Mesh.WebSlate** and its nodes to the Node Library. To use the nodes in your project, add **WebSlate** type to your Type Options and regenerate the Node Library.
 
-    ![Screenshot of WebSlate from the assembly menu in Unity](../../../media/webview-developer-guide/image020.png)
+    ![Screenshot of WebSlate from the assembly menu in Unity](../../media/webview-developer-guide/image020.png)
 
     After incorporating the WebSlate visual scripting node into your project, you can utilize it just like any other node in your visual script graph. Here\'s an example of a script graph that loads a new URL in WebSlate when the state of a graph variable changes.
 
-    ![Showcase of WebSlate in Mesh visual scripting](../../../media/webview-developer-guide/image021.png)
+    ![Showcase of WebSlate in Mesh visual scripting](../../media/webview-developer-guide/image021.png)
 
 # WebSlate in Mesh Scripting
 
 Developers now can add a WebSlate to their scripted worlds. This means that a WebSlate can be navigated through a MeshApp script and therefore synchronized across users. For example, create an app containing a WebSlate node and one or more TouchSensor nodes. Then, you can set up your TouchSensor's click event handler to navigate the WebSlate to a different URL. By adding a Mesh App script to WebSlate, your users now can update the WebSlate contents interactively.
 
-![Showcase of WebSlates in Mesh Scripting](../../../media/webview-developer-guide/ArcadeWebSlate.png)
+![Showcase of WebSlates in Mesh Scripting](../../media/webview-developer-guide/ArcadeWebSlate.png)
 
 Refer to the [Visual scripting overview](../Scripting%20your%20scene%20logic/visual-scripting-overview.md) for further guidance on the WebSlate node in Mesh Apps.
 
 # Feedback for web content in Mesh
 
-![Screenshot of feedback button in the Mesh app](../../../media/webview-developer-guide/image023.png)
+![Screenshot of feedback button in the Mesh app](../../media/webview-developer-guide/image023.png)
 
 We love feedback and bug reports! If you'd like to provide feedback, use the Feedback button inside any Mesh experience. This ensures that your feedback and bug reporting will be triaged and incorporated quickly.
 
-![Screenshot of the feedback button in the Mesh app](../../../media/webview-developer-guide/image024.png)
+![Screenshot of the feedback button in the Mesh app](../../media/webview-developer-guide/image024.png)
 
 For WebSlate feedback, include "**\[web content\]**" or **a mention of WebSlate** in your feedback.
 

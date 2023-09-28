@@ -19,33 +19,33 @@ Here's a sampling what you can do with Mesh Physics features:
 
 * Control how gravity affects objects.
 
-  ![Screen shot of a game that uses gravity.](../../../media/physics-interactions/105-ball-drop.png)
+  ![Screen shot of a game that uses gravity.](../../media/physics-interactions/105-ball-drop.png)
 
 * Make an object “sticky”—it sticks to whatever it hits. Examples: throwing a dart at a dart board, attaching a picture to a wall.
 
-  ![Screen shot of paintings attached to a wall.](../../../media/physics-interactions/003-sticky-pictures.png)
+  ![Screen shot of paintings attached to a wall.](../../media/physics-interactions/003-sticky-pictures.png)
 
 * Add auto-play animations that interact with physics bodies.
 
-  ![Screen shot of an animation trigger.](../../../media/physics-interactions/010-animation-trigger.png)
+  ![Screen shot of an animation trigger.](../../media/physics-interactions/010-animation-trigger.png)
 
 * Allow participants to reset objects (for example, reset a chess board, or clean up a room after objects have been scattered about).
 
-  ![Two-part screen shot of a room with furniture in disarray and then the same room with furniture back in place.](../../../media/physics-interactions/002-rearrange.png)
+  ![Two-part screen shot of a room with furniture in disarray and then the same room with furniture back in place.](../../media/physics-interactions/002-rearrange.png)
 
 * Fire events when an object enters a trigger collider.
 
-  ![Screen shot of a trigger volume.](../../../media/physics-interactions/030-trigger-volume.png)
+  ![Screen shot of a trigger volume.](../../media/physics-interactions/030-trigger-volume.png)
 
 * Create a containment field. Objects will stay within the boundaries of the field.
 
-  ![Screen shot of a containment field.](../../../media/physics-interactions/061-containment-field-in-scene-view.png)
+  ![Screen shot of a containment field.](../../media/physics-interactions/061-containment-field-in-scene-view.png)
 
 * Control the velocity of an object.
 
 * Control the buoyancy of objects&mdash;for example, make boats and other seagoing objects “float.”
 
-  ![Screen shot of a boat floating on water.](../../../media/physics-interactions/007-buoyancy-field.png)
+  ![Screen shot of a boat floating on water.](../../media/physics-interactions/007-buoyancy-field.png)
 
 * Control the angular velocity of an object.
 
@@ -53,11 +53,11 @@ Here's a sampling what you can do with Mesh Physics features:
 
 * Create “bouncy” objects that bounce off each other with a predefined velocity.
 
-  ![Screen shot of numerous balls in mid-bounce.](../../../media/physics-interactions/006-balls-bounce.png)
+  ![Screen shot of numerous balls in mid-bounce.](../../media/physics-interactions/006-balls-bounce.png)
 
 * Teleport an object to a new position and (optional) new rotation.
 
-  ![Two-part screen shot of the start and end points of a teleportation process.](../../../media/physics-interactions/034-teleport-path.png)
+  ![Two-part screen shot of the start and end points of a teleportation process.](../../media/physics-interactions/034-teleport-path.png)
 
 ## Sample Projects that use Mesh Physics
 
@@ -81,7 +81,7 @@ The *DartRoom* project (scene: *DartRoom*) uses most physics features. In this p
 
 * **Globe:** The globe rotates, demonstrating a motored hinge. The globe also has a gravity field which influences small objects entering a spherical trigger volume. Drag some cups close to the globe and watch them rotate around it like satellites.
 
-  ![Screen shot of a gravity field causing cups to orbit around a globe like satellites.](../../../media/physics-interactions/005-gravity.png)
+  ![Screen shot of a gravity field causing cups to orbit around a globe like satellites.](../../media/physics-interactions/005-gravity.png)
 
 This is a beautifully rendered scene that demonstrates the power of combining appealing visuals with the creative use of Mesh Physics features. Feel free to inspect the scene and play with it!
 
@@ -89,7 +89,7 @@ This is a beautifully rendered scene that demonstrates the power of combining ap
 
 Open the *PhysicsShowcase* scene in this project and select the Play button. You'll find a number of labeled buttons that, when clicked, demonstrate various Mesh Physics features.
 
-![Screen shot of the Physics Showcase scene with buttons that trigger various Mesh Physics features.](../../../media/physics-interactions/009-physics-showcase.png)
+![Screen shot of the Physics Showcase scene with buttons that trigger various Mesh Physics features.](../../media/physics-interactions/009-physics-showcase.png)
 
 ### Mesh 101 Tutorial
 
@@ -99,7 +99,7 @@ In the Mesh 101 tutorial (sample name: *Mesh101.Unity*), Chapter 4 walks you ste
 
 As you explore our other sample projects, you'll find various instances of Mesh Physics. For example, if you wander around in our *ScienceBuilding* project (scene: *ScienceBuilding*), you'll eventually encounter the **Mass & Buoyancy** exhibit which uses the **Buoyancy Field** and **Buoyancy Field Waves** components.
 
-![Screen shot of the Mass and Buoyancy exhibit which uses the Buoyancy Field and Buoyancy Field Waves components.](../../../media/physics-interactions/008-buoyancy-field-waves.png)
+![Screen shot of the Mass and Buoyancy exhibit which uses the Buoyancy Field and Buoyancy Field Waves components.](../../media/physics-interactions/008-buoyancy-field-waves.png)
 
 ## Prerequisites for Mesh Physics
 
@@ -121,7 +121,7 @@ Throughout this article, "body" is used as shorthand for "Rigidbody."
 
 The document titled *Get Started with Mesh Environments* contains instructions on how to load packages into your project. When you load the tarball named *com.microsoft.mesh.toolkit.xxx.tgz*, you import the Mesh Physics packages *mesh.physics.runtime* and *mesh.physics.playmode* (among other content).
 
-![Screen shot of the Mesh Physics packages in the Hierarchy in Unity.](../../../media/physics-interactions/001-toolkit-in-unity.png)
+![Screen shot of the Mesh Physics packages in the Hierarchy in Unity.](../../media/physics-interactions/001-toolkit-in-unity.png)
 
 The *mesh.physics.runtime* package synchronizes the positions of rigid bodies and should work out-of-the-box, assuming all clients share the same scene. It also offers interaction and additional physics-related functionalities such as:
 
@@ -133,7 +133,7 @@ The *mesh.physics.playmode* package enhances the Mesh.Toolkit.Playmode functiona
 
 ## Distributed physics simulation
 
-![A screen shot showing distributed physics objects.](../../../media/physics-interactions/002_20220718_133302_image.png)
+![A screen shot showing distributed physics objects.](../../media/physics-interactions/002_20220718_133302_image.png)
 
 Most Unity physics features will be synchronized without extra developer effort:
 
@@ -190,7 +190,7 @@ After updating the mesh.toolkit packages, any `lib.sharedphysics` content in the
 * Ensure that project is fully backed up (committed to source control)
 * Use the MeshPhysicsUpdater-23_5-to-23_6 tool on the project (available in the Extras/ folder on SharePoint).
 
-  ![A screen shot of the Mesh Physics Uploader in the Extras folder.](../../../media/physics-interactions/012-physics-uploader.png)
+  ![A screen shot of the Mesh Physics Uploader in the Extras folder.](../../media/physics-interactions/012-physics-uploader.png)
 
 * Update package dependency
 * After loading, check the Unity console for warnings and errors about necessary manual adjustments.
@@ -261,11 +261,11 @@ After updating the mesh.toolkit packages, any `lib.sharedphysics` content in the
 
 1. On the main page, scroll down to the **Mesh Resources and Developer Tools** section, and then, under **Get the Files and Packages**, select the **Go** button.
 
-    ![___](../../../media/physics-interactions/001-packages-go-button.png)
+    ![___](../../media/physics-interactions/001-packages-go-button.png)
 
 1. On the **Files and Packages** page, download the latest version of the Mesh Toolkit--it will have a more recent version number than what you see here. Select the three-dot button and then select **Download**.
 
-    ![___](../../../media/physics-interactions/001-mesh-toolkit-package-23-10.png)
+    ![___](../../media/physics-interactions/001-mesh-toolkit-package-23-10.png)
 
 1. Place the downloaded zip file in a location where the file path won’t be too long, such as the Windows desktop.
 
@@ -273,11 +273,11 @@ After updating the mesh.toolkit packages, any `lib.sharedphysics` content in the
 
 1. Unzip the file, and then navigate through the unzipped folder hierarchy until you see folders named **Packages and Samples**.
 
-    ![___](../../../media/physics-interactions/001-packages-and-samples.png)
+    ![___](../../media/physics-interactions/001-packages-and-samples.png)
 
 1. Double-click the **Samples** folder. This folder contains five Zip files.
 
-    ![___](../../../media/physics-interactions/001-samples-folder.png)
+    ![___](../../media/physics-interactions/001-samples-folder.png)
 
 1. Unzip the file named **DartRoom.zip**. This gives you a folder named **DartRoom** which contains your sample Unity project.
 
@@ -298,7 +298,7 @@ By default, Mesh Playmode runs with a single player. To add a second player with
 1. In the **Hierarchy**, select **PlaymodeSetup [NoUpload]**.
 1. In the **Inspector**, navigate to the **Playmode Setup** component, then increase the Inital Screen Count 2.
 
-  ![___](../../../media/physics-interactions/001-initial-count.png)
+  ![___](../../media/physics-interactions/001-initial-count.png)
 
 ### Upload your own Environment to your Mesh World
 
@@ -311,11 +311,11 @@ To make an existing Unity project Mesh Physics-enabled, the following steps are 
 1. Open the Package Manager and then remove the old 'com.microsoft.mesh.toolkit.authoring' package.
 1. Select the “+” drop-down, and then select **Add package from tarball**.
 
-    ![___](../../../media/physics-interactions/003-add-package.png)
+    ![___](../../media/physics-interactions/003-add-package.png)
 
 1. Navigate to the folder named *Packages* in the unzipped file you downloaded earlier, and then add the *toolkit* file (it will be a newer version than what's shown in the image below). If you haven't downloaded the *toolkit* tarball yet, see the instructions in the *Quickstart* section.
 
-    ![___](../../../media/physics-interactions/002-mesh-zip-523081.png)
+    ![___](../../media/physics-interactions/002-mesh-zip-523081.png)
   
 1. Select **Edit > Project Settings > Player > Other Settings > Configuration > Active Input Handling > Both**, and then restart.
 
@@ -327,7 +327,7 @@ To make an existing Unity project Mesh Physics-enabled, the following steps are 
 
 1. Add the prefab named `PlaymodeSetup [NoUpload]` to the scene via the context menu:
 
-    ![Screen shot of the `MeshToolkit|Add PlaymodeSetup` context menu](../../../media/physics-interactions/Add-PlaymodeSetup.png)
+    ![Screen shot of the `MeshToolkit|Add PlaymodeSetup` context menu](../../media/physics-interactions/Add-PlaymodeSetup.png)
 
     * The avatar is replaced by a simple capsule-based character controller
     * The Camera is now attached to the avatar; the main scene camera is ignored and should be removed.
@@ -377,7 +377,7 @@ Our current roadmap is flexible:
 * Integrate with client and server-side scripting
 * Add a builder tool, which supports scene graph manipulation. This tool is inspired by Kerbal Space Program. An example would be building cars out of random scene objects.
 
-  ![A screen shot of building cars out of random scene objects.](../../../media/physics-interactions/005_20220718_135823_image.png)
+  ![A screen shot of building cars out of random scene objects.](../../media/physics-interactions/005_20220718_135823_image.png)
 
 ## Developing enhanced Mesh Physics content
 
@@ -391,15 +391,15 @@ You can add auto-play animations to the scene that interact with physics bodies.
 * **Animate Physics** recommended (but not required) if the animation affects colliders that interact with physics bodies.
 * **Culling Type** set to "Always Animate" (automatically enforced by Mesh Physics) because the animation might affect physics bodies even when they're off-screen.
 
-![Screen shot of the Animation component settings in the Inspector.](../../../media/physics-interactions/038_SharedAnimation-Animation.png)
+![Screen shot of the Animation component settings in the Inspector.](../../media/physics-interactions/038_SharedAnimation-Animation.png)
 
 The animation clip used by the auto-play animation can use any **Wrap Mode**. Useful choices are "Loop" and "Ping Pong".
 
-![Screen shot of the Animation Clip asset settings in the Inspector.](../../../media/physics-interactions/039_SharedAnimation-AnimationClip.png)
+![Screen shot of the Animation Clip asset settings in the Inspector.](../../media/physics-interactions/039_SharedAnimation-AnimationClip.png)
 
 Optionally, you can add the Shared Animation script to control the potential speed adjustment range. We recommend that you set the minimum relative speed to significantly less than 1 and the maximum relative speed to signficantly greater than 1 to allow Mesh Physics to quickly approach the synchronized state and to get insight into which colliders and kinematic rigid bodies Mesh Physics views as part of the animation.
 
-![Screen shot of the Shared Animation script settings in the Inspector.](../../../media/physics-interactions/040_SharedAnimation-overview.png)
+![Screen shot of the Shared Animation script settings in the Inspector.](../../media/physics-interactions/040_SharedAnimation-overview.png)
 
 ## Other (shared) physics behaviors
 
@@ -410,7 +410,7 @@ Adding one of the following `MonoBehaviour` components to an object will add the
 Makes bodies stick to other bodies. It could be used to throw darts at other bodies or to attach a picture on a wall. This is implemented by creating a fixed constraint between the two bodies involved.
 **Note:** This operation is performed on all clients and therefore is implemented as a special network message.
 
-![Screen shot of the Sticky Body script options in the Inspector.](../../../media/physics-interactions/020_20220719_132303_image.png)
+![Screen shot of the Sticky Body script options in the Inspector.](../../media/physics-interactions/020_20220719_132303_image.png)
 
 **Settings**
 
@@ -424,7 +424,7 @@ Makes bodies stick to other bodies. It could be used to throw darts at other bod
 
 You can add this component to a trigger collider (in other words, a Game Object that has **Is Trigger** selected in its Collider component) to determine which events are fired when a Game Object enters and exits the trigger collider.
 
-![](../../../media/physics-interactions/003-trigger-events-sensor.png)
+![](../../media/physics-interactions/003-trigger-events-sensor.png)
 
 **Settings**
 
@@ -452,7 +452,7 @@ These determine which Actions are fired when a Game Object enters or exits the t
 
 You can add this component to a physics collider (in other words, a Game Object that does **not** have **Is Trigger** selected in its Collider component) to determine which events are fired when a Game Object enters and exits the collision with this collider.
 
-![](../../../media/physics-interactions/005-collision-events-sensor.png)
+![](../../media/physics-interactions/005-collision-events-sensor.png)
 
 **Settings**
 
@@ -480,7 +480,7 @@ These determine which actions are fired when a Game Object enters or exits the c
 
 Ensures that rigid bodies stay within the boundaries of one or several trigger colliders.
 
-![Screen shot of the Containment Field script options in the Inspector.](../../../media/physics-interactions/059-containment-field.png)
+![Screen shot of the Containment Field script options in the Inspector.](../../media/physics-interactions/059-containment-field.png)
 
 For this component to work, it needs to be attached to one or several trigger colliders. (These trigger colliders can also be nested in the transform hierarchy below the `GameObject` that has this component attached.)
 
@@ -496,7 +496,7 @@ The rigid bodies affected by this component must already be within the boundarie
 
 Allows to accelerate/decelerate a rigid body until it reaches a specific target velocity.
 
-![Screen shot of the Directional Velocity Field script options in the Inspector.](../../../media/physics-interactions/053-directional-velocity-field.png)
+![Screen shot of the Directional Velocity Field script options in the Inspector.](../../media/physics-interactions/053-directional-velocity-field.png)
 
 This component controls both the magnitude and the direction of velocity. See [Velocity Magnitude](#velocity-magnitude) to control only magnitude and [Velocity Direction](#velocity-direction) to control only direction.
 
@@ -521,7 +521,7 @@ This component has two modes of operation:
 
 Changes how gravity affects rigid bodies within the boundaries of one or several trigger colliders.
 
-![Screen shot of the Antigravity Field script options in the Inspector.](../../../media/physics-interactions/054-antigravity-field.png)
+![Screen shot of the Antigravity Field script options in the Inspector.](../../media/physics-interactions/054-antigravity-field.png)
 
 For this component to work, it needs to be attached to one or several trigger colliders. (These trigger colliders can also be nested in the transform hierarchy below the `GameObject` that has this component attached.)
 
@@ -542,7 +542,7 @@ There is an interesting relationship between the perception of the player's own 
 
 Simulates the gravity of a "toy planet" in your scene.
 
-![Screen shot of the Gravity Field script options in the Inspector.](../../../media/physics-interactions/055-gravity-field.png)
+![Screen shot of the Gravity Field script options in the Inspector.](../../media/physics-interactions/055-gravity-field.png)
 
 For this component to work, it needs to be attached to one or several trigger colliders. (These trigger colliders can also be nested in the transform hierarchy below the `GameObject` that has this component attached.)
 
@@ -564,7 +564,7 @@ Any rigid bodies that touch or overlap the trigger colliders (the "trigger volum
 
 Simulates buoyancy of arbitrary rigid bodies on water: Bodies appear to float on the connected trigger volume.
 
-![Screen shot of the Buoyancy Field script options in the Inspector.](../../../media/physics-interactions/056-buoyancy-field.png)
+![Screen shot of the Buoyancy Field script options in the Inspector.](../../media/physics-interactions/056-buoyancy-field.png)
 
 For this component to work it needs to be attached to one or several trigger colliders. (These trigger colliders can also be nested in the transform hierarchy below the `GameObject` that has this component attached.)
 
@@ -606,7 +606,7 @@ See the `BuoyancyFieldWaves` component below for how to get a wavy water surface
 
 Add-on to the `BuoyancyField` component that works with a specific vertex shader, `BuoyancyFieldWaves_VertexPosition` (available both as a sub-shader graph and an HLSL include file), to create the visual effect of a wavy water surface together with corresponding behavior of objects floating on the water surface.
 
-![Screen shot of the Buoyancy Field Waves script options in the Inspector.](../../../media/physics-interactions/034_BuoyancyFieldWaves-overview.png)
+![Screen shot of the Buoyancy Field Waves script options in the Inspector.](../../media/physics-interactions/034_BuoyancyFieldWaves-overview.png)
 
 This component must be added to a game object that already has a `BuoyancyField` component added to it.
 
@@ -625,13 +625,13 @@ The water surface to be animated must be supplied as a flat, tesselated mesh who
 
 The included sample `BasicWavyWaterSurface` shader graph (used by the material with the same name) uses the required `BuoyancyFieldWaves_VertexPosition` vertex sub-shader to produce the wavy 3D surface, but only includes a minimal stand-in implementation for the fragment shader, which makes it render the surface as an unshaded, plain-colored, semi-transparent mesh.
 
-![Screen shot of the Basic Wavy Water Surface shader graph in the Shader Graph Editor.](../../../media/physics-interactions/035_BuoyancyFieldWaves-BasicWavyWaterSurface.png)
+![Screen shot of the Basic Wavy Water Surface shader graph in the Shader Graph Editor.](../../media/physics-interactions/035_BuoyancyFieldWaves-BasicWavyWaterSurface.png)
 
 You can customize the **Fragment** path of a shader used with the `BuoyancyFieldWaves` component completely to your liking. However, it's essential that the **Vertex** path of your shader uses the `BuoyancyFieldWaves_VertexPosition` sub-shader graph and that it exposes the four inputs to this sub-shader graph as `float`-type shader properties of the overall shader graph so that the component can access them at runtime. If your shader fails to include the required sub-shader graph or if any of the required shader properties aren't exposed, the component's inspector will display an error message at design time and buoyancy will fail to work at runtime:
 
-![Screen shot of the Buoyancy Field Waves script options showing the error message: Required vertex sub-shader not in use.](../../../media/physics-interactions/036_BuoyancyFieldWaves-error-subshader.png)
+![Screen shot of the Buoyancy Field Waves script options showing the error message: Required vertex sub-shader not in use.](../../media/physics-interactions/036_BuoyancyFieldWaves-error-subshader.png)
 
-![Screen shot of the Buoyancy Field Waves script options showing the error message: Shader property not exposed by material.](../../../media/physics-interactions/037_BuoyancyFieldWaves-error-shaderproperty.png)
+![Screen shot of the Buoyancy Field Waves script options showing the error message: Shader property not exposed by material.](../../media/physics-interactions/037_BuoyancyFieldWaves-error-shaderproperty.png)
 
 The sample `BasicWavyWaterSurface` shader graph can serve as a stand-in during content development and as a starting point for your own shader developments. Alternatively, you can take an existing water surface shader, keep its **Fragment** path, and only replace its **Vertex** path.
 
@@ -639,7 +639,7 @@ The sample `BasicWavyWaterSurface` shader graph can serve as a stand-in during c
 
 Overrides the default maximum angular velocity of a physics body.
 
-![Screen shot of the Max Angular Velocity script options in the Inspector.](../../../media/physics-interactions/038_MaxAngularVelocity-overview.png)
+![Screen shot of the Max Angular Velocity script options in the Inspector.](../../media/physics-interactions/038_MaxAngularVelocity-overview.png)
 
 The physics engine won't allow the rigid body to exceed this angular velocity. This can be useful to either limit the rolling speed of a given rigid body or to allow it to roll faster than the physics default, which is 50 radians per second (approximately 8 revolutions per second).
 
@@ -649,7 +649,7 @@ The maximum angular velocity must be entered in radians per second. The entered 
 
 Allows acceleration/deceleration of a rigid body until it reaches a speed that's within an allowable range.
 
-![Screen shot of the Velocity Field script options in the Inspector.](../../../media/physics-interactions/052-velocity-field.png)
+![Screen shot of the Velocity Field script options in the Inspector.](../../media/physics-interactions/052-velocity-field.png)
 
 This component controls the magnitude of the velocity and keeps the current direction. Should the object be still, it chooses a random direction for the duration of one frame.
 
@@ -673,7 +673,7 @@ This component has two modes of operation:
 
 Aligns the body to the specified axis.
 
-![Screen shot of the Align Field script options in the Inspector.](../../../media/physics-interactions/061-align-field.png)
+![Screen shot of the Align Field script options in the Inspector.](../../media/physics-interactions/061-align-field.png)
 
 This component adds torque to the body to align it to a specific direction. Note that torque is always applied in the direction that rotates the body towards the target.
 
@@ -700,7 +700,7 @@ This component has two modes of operation:
 
 Allows to steer a rigid body until the velocity reaches a target direction.
 
-![Screen shot of the Steer Field script options in the Inspector.](../../../media/physics-interactions/042_SteerField-overview.png)
+![Screen shot of the Steer Field script options in the Inspector.](../../media/physics-interactions/042_SteerField-overview.png)
 
 This component controls only the direction of the velocity and keeps the current speed.
 
@@ -727,7 +727,7 @@ This component has two modes of operation:
 
 Gives body a magnetic property which attracts or repels other bodies.
 
-![Screen shot of the Magnetic Body script options in the Inspector.](../../../media/physics-interactions/043_MagneticBody-overview.png)
+![Screen shot of the Magnetic Body script options in the Inspector.](../../media/physics-interactions/043_MagneticBody-overview.png)
 
 For this component to work, it needs to be attached to one or several colliders. (These colliders can also be nested in the transform hierarchy below the `GameObject` that has this component attached.)
 Each collider exhibits a force on other rigidbodies that are close enough to this collider.
@@ -751,7 +751,7 @@ Each collider exhibits a force on other rigidbodies that are close enough to thi
 
 Creates an explosion which causes all bodies within a specific radius to move outwards.
 
-![Screen shot of the Spherical Explosion script options in the Inspector.](../../../media/physics-interactions/044_SphericalExplosion-overview.png)
+![Screen shot of the Spherical Explosion script options in the Inspector.](../../media/physics-interactions/044_SphericalExplosion-overview.png)
 
 The explosion force depends on the mass of a rigid body (and potentially the distance from the explosion center).
 
@@ -770,7 +770,7 @@ The explosion force depends on the mass of a rigid body (and potentially the dis
 
 Creates an explosion which causes all bodies within a trigger to move in a specific direction.
 
-![Screen shot of the Directional Eplosion script options in the Inspector.](../../../media/physics-interactions/045_DirectionalExplosion-overview.png)
+![Screen shot of the Directional Eplosion script options in the Inspector.](../../media/physics-interactions/045_DirectionalExplosion-overview.png)
 
 The explosion force depends on the mass of a rigid body.
 For this component to work, it needs to be attached to a trigger colliders. All bodies within trigger collider are affected.
@@ -788,7 +788,7 @@ For this component to work, it needs to be attached to a trigger colliders. All 
 
 Stabilizes constraint system by adjusting the rigidbody's inertia tensor.
 
-![Screen shot of the Joint Stabilization script options in the Inspector.](../../../media/physics-interactions/057-joint-stabilization.png)
+![Screen shot of the Joint Stabilization script options in the Inspector.](../../media/physics-interactions/057-joint-stabilization.png)
 
 The script works on all children with Rigidbody and Joint component attached.
 
@@ -802,7 +802,7 @@ The script works on all children with Rigidbody and Joint component attached.
 
 Creates a bouncing surface which causes all colliding objects to bounce off with a predefined velocity.
 
-![Screen shot of the Bouncing Surface script options in the Inspector.](../../../media/physics-interactions/058-bouncing-surface.png)
+![Screen shot of the Bouncing Surface script options in the Inspector.](../../media/physics-interactions/058-bouncing-surface.png)
 
 **Settings:**
 
@@ -819,7 +819,7 @@ Creates a bouncing surface which causes all colliding objects to bounce off with
 
 Offsets the center of mass of a rigidbody.
 
-![Screen shot of the Center Of Mass Offset script options in the Inspector.](../../../media/physics-interactions/060-center-of-mass-offset.png)
+![Screen shot of the Center Of Mass Offset script options in the Inspector.](../../media/physics-interactions/060-center-of-mass-offset.png)
 
 **Settings:**
 
@@ -829,28 +829,28 @@ Offsets the center of mass of a rigidbody.
 
 Some components, such as the Trigger Events Sensor and Collision Events Sensor components, have a **Body Filter** setting (usually named **Affected Bodies**).
 
-![___](../../../media/physics-interactions/006-trigger-body-filters.png)
+![___](../../media/physics-interactions/006-trigger-body-filters.png)
 
 This setting makes only Game Objects that meet certain preconditions eligible to trigger events. There are four main preconditions&#8212;to view them, click the plus sign ("+") button to the right of **Body Filter:**
 
-![___](../../../media/physics-interactions/007-trigger-preconditions.png)
+![___](../../media/physics-interactions/007-trigger-preconditions.png)
 
 Some components may have one or more [Shared Events](#shared-events) that trigger an Action. The same preconditions that are available through the **Body Filter** setting can be applied to an Action.
 
-![___](../../../media/physics-interactions/049-use-body-precondition.png)
+![___](../../media/physics-interactions/049-use-body-precondition.png)
 
-![___](../../../media/physics-interactions/050-body-precondition-options.png)
+![___](../../media/physics-interactions/050-body-precondition-options.png)
 
 To understand the first precondition, **Game Object Name**, let’s imagine that there’s a dart game in your scene and you have numerous dart Game Objects that are named Dart01, Dart02, Dart03, and so on. You want any dart, but *only* darts, to be eligible to trigger events, so you filter for any Game Object that starts with the four letters "Dart".
 
 1. Click the **Body Filter** "+" button and then select **Game Object Name**.  
 1. In the text box next to **Starts With**, type in "Dart."
 
-    ![___](../../../media/physics-interactions/008-trigger-starts-with.png)
+    ![___](../../media/physics-interactions/008-trigger-starts-with.png)
 
 You aren’t restricted to just using **Starts With**. You can filter for exact names, or only names that *end* with certain letters, and more. To see all your options, click the **Starts With** drop-down.
 
-![___](../../../media/physics-interactions/014-name-options.png)
+![___](../../media/physics-interactions/014-name-options.png)
 
 **Notes**
 
@@ -887,15 +887,15 @@ Let’s say you have a root Game Object named "Robot" in your scene. Robot has n
 
 * Click the round button in the **Root Game Object** field …
 
-    ![___](../../../media/physics-interactions/015-button.png)
+    ![___](../../media/physics-interactions/015-button.png)
 
     … then, in the **Select GameObject** window, type in the name of Game Object you want to add, and then, in the resulting list, double-click the name of the Game Object.
 
-    ![___](../../../media/physics-interactions/016-select-game-object.png)
+    ![___](../../media/physics-interactions/016-select-game-object.png)
 
 Note that in this example, there are two animal robot types in the scene. If you wanted *all* robots to be eligible for triggering, you could add a **Game Object Name** condition that contains the text "Robot" anywhere in the name.
 
-![___](../../../media/physics-interactions/019-name-contains.png)
+![___](../../media/physics-interactions/019-name-contains.png)
 
 **Important:** We recommend that you *don’t* have more than one instance of this condition active at any time. This can cause conflicts.
 
@@ -903,7 +903,7 @@ Note that in this example, there are two animal robot types in the scene. If you
 
 You can have more than one filter in your condition. For example, let’s say you want only larger or heavier robots&#8212;ones with a higher Mass value&#8212;to trigger events. You could search for Game Object names that contain "Robot" that have a minimum mass value of 100:
 
-![___](../../../media/physics-interactions/020-compound-conditions.png)
+![___](../../media/physics-interactions/020-compound-conditions.png)
 
 **Note:** If multiple conditions are defined, a body must match *all* of the conditions to be eligible for triggering events.
 
@@ -911,7 +911,7 @@ You can have more than one filter in your condition. For example, let’s say yo
 
 Each condition has a 3-dot menu with several options.
 
-![](../../../media/physics-interactions/035-body-filter-menu.png)
+![](../../media/physics-interactions/035-body-filter-menu.png)
 
 **Move Condition Up:** Moves the condition one position higher in the **Body Filter** list.
 

@@ -78,7 +78,7 @@ There are various places in the API that provide User properties. The `User.Iden
 
 During development the user display name, identifier, and event ID can be mocked in the MeshApp component editor in the "Developer Settings" as shown below.
 
-![Mock User Properties](../../../media/mesh-scripting/programmers-guide/mock_user_properties.jpg)
+![Mock User Properties](../../media/mesh-scripting/programmers-guide/mock_user_properties.jpg)
 
 ## Avatars
 Avatars are the representation of users in the scene. They can be used to teleport users to a given location, travel between scenes, and to detect collisions with trigger volumes.
@@ -108,7 +108,7 @@ The MeshInteractableSetup is a custom Unity component that's part of the Mesh To
 
 A simple example is shown below, where the MeshInteractableSetup component is added to the same game object as the box collider:
 
-![Simple Input example](../../../media/mesh-scripting/programmers-guide/simple_input_example.jpg)
+![Simple Input example](../../media/mesh-scripting/programmers-guide/simple_input_example.jpg)
 
 ## WebSlateNode
 The WebSlate is a custom Unity component that is part of the Mesh Toolkit Authoring package. To add a WebSlate prefab to your scene, select **GameObject** > **Mesh Toolkit** > **WebSlate** from the menu bar. The website that is assigned to the WebSlate instance's URL property is rendered on the quad of this prefab.
@@ -120,13 +120,13 @@ An example is shown below, where a WebSlate prefab has been added to the scene a
         webSlateNode.Url = new System.Uri("https://en.wikipedia.org/wiki/Color");
 ```
 
-![WebView example](../../../media/mesh-scripting/programmers-guide/webview_example.jpg)
+![WebView example](../../media/mesh-scripting/programmers-guide/webview_example.jpg)
 
 ### Setup
 Ensure that the new input system is enabled in your scene. You should be prompted about this when importing packages.
 
 You can double-check the value in Player settings:
-![Enable input](../../../media/mesh-scripting/programmers-guide/enable_input.jpg)
+![Enable input](../../media/mesh-scripting/programmers-guide/enable_input.jpg)
 
 With this setting enabled, you should be able to move around in Play Mode in Unity by pressing the WSAD keys, turn by right-clicking and then moving your mouse (or pressing the Q or E keys), and click on objects with the mouse.
 
