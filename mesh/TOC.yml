@@ -3,7 +3,7 @@ items:
   href: Overview.md
 - name: Set up and Manage Mesh
   href: Setup/toc.yml
-- name: Attend or organize events
+- name: Attend and organize events
   href: Use/toc.yml
 - name: Develop environments
   href: Create/toc.yml
