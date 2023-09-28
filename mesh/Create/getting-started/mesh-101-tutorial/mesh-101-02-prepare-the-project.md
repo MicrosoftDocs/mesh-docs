@@ -15,7 +15,6 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 1. Open the **Mesh101.unity** project in Unity. If you have more than
     one version of Unity installed, be sure to open the project with `Unity 2022.3.7f1` which is required for this tutorial.
 
-
 2. In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image010.png)

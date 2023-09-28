@@ -15,7 +15,7 @@ experience using Mesh Physics and Scripting. So far, we've been working
 in a Unity *project*; now you'll turn the *StartingPoint* scene into a
 Mesh *Environment* and upload it to a World in  the Mesh Portal. At that point, it will be available for the creation of *Events*.
 
-**Configure your project settings and sign in**
+## Configure your project settings and sign in
 
 1. On the menu bar, select **Mesh Toolkit** > **Configure** >
     **Project Settings**.
@@ -33,7 +33,7 @@ Sign in with your account. **Note**: As mentioned in the Prerequisites
 section, the account must have *Content Contributor* access to the Mesh
 World you're uploading the Environment to.
 
-### Create your environment
+## Create your environment
 
 1. Make sure you're in the **Create** **Environment** tab, and then, in
     the **Internal Name** field, type "Wind Turbine Tutorial."
@@ -64,7 +64,7 @@ World you're uploading the Environment to.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/039-create-results.png)
 
-### Build and publish your environment
+## Build and publish your environment
 
 You should now be in the **Update Environment** tab of the **Mesh
 Environments** window.
@@ -90,7 +90,7 @@ for PC only, Android only, or both PC and Android. This tutorial follows
 option #3: build and publish for PC and Android. To learn more about
 building for single and multiple platforms, see our article titled [Build for single and multiple platforms](../../design-and-develop/build-your-basic-environment/build-for-single-and-multiple-platforms.md).
 
-### Create the Environment
+### Update your Environment
 
 - In the **Update Environment** tab, click the **Select a scene**
     field, and then, in the **Select SceneAsset** dialog, select
@@ -105,7 +105,7 @@ for both PC and Android, so make sure that both buttons are "on."
 
 ![A screen shot of a computer Description automatically generated with low confidence](../../../media/sample-mesh-101/image096.jpg)
 
-### Build and publish your Environment
+### Build and publish
 
 Select the **Build and Publish** button.
 
@@ -118,7 +118,7 @@ Select the **Build and Publish** button.
 
 - If the build and upload process fails, this is confirmed in the **Build and Upload** **Results** dialog.
 
-### View your Environment in the Mesh Portal
+## View your Environment in the Mesh Portal
 
 If you navigate to the **Environments** page for your World in the Mesh 
 Portal, you'll see that your Environment has been saved there. 
@@ -131,7 +131,7 @@ new event in that Mesh world.
 > [!NOTE]
 > For viewing Worlds in the Mesh Portal, refer to the [M365 Migration Guide](../../../Setup/Content/m365-migration-guide.md). 
 
-### Summary
+## Summary
 
 In this chapter, you learned how to create an Environment based on your
 scene and then build it and publish it to your World in the Azure
