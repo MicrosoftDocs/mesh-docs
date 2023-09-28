@@ -42,11 +42,11 @@ After you've created your event and customized it, it's time to join and produce
     1. Open the app, find the event, and join the event.
     1. Go to the calendar invite and use the link in the invite.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/event-mesh-in-calendar.png" alt-text="Mesh event showing up in Teams calendar":::
+    :::image type="content" source="../media/mesh-event-producer-guide/event-mesh-in-calendar.png" alt-text="Mesh event showing up in Teams calendar":::
 
 1. Adjust your device settings to ensure they're set up properly.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/Device-settings-setup-before-join.png" alt-text="Device settings adjustment  inside pre-join window for Mesh event.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Device-settings-setup-before-join.png" alt-text="Device settings adjustment  inside pre-join window for Mesh event.":::
 
 Once you select **Join now**, you'll utilize two main tools for your run of show:
 
@@ -54,35 +54,35 @@ Once you select **Join now**, you'll utilize two main tools for your run of show
 
 1. Select the **Host Panel** button in the menu bar.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/host-panel-open2.png" alt-text="Host panel button for producing an event":::
+    :::image type="content" source="../media/mesh-event-producer-guide/host-panel-open2.png" alt-text="Host panel button for producing an event":::
 
 1. In the window that opens, you'll see the following tools at the top:
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/host-tools-bar.png" alt-text="Host Panel tool bar":::
+    :::image type="content" source="../media/mesh-event-producer-guide/host-tools-bar.png" alt-text="Host Panel tool bar":::
 
 ### Host Panel tools
 
 - **Mute all:** Mute all participants in the event.
   
-    :::image type="content" source="../../media/mesh-event-producer-guide/Mute-all-button.png" alt-text="Mute all button in host panel":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Mute-all-button.png" alt-text="Mute all button in host panel":::
 
 - **Megaphone:** Amplify your voice to all participants in the event.
   
-    :::image type="content" source="../../media/mesh-event-producer-guide/Megaphone-button.png" alt-text="Megaphone button in host panel":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Megaphone-button.png" alt-text="Megaphone button in host panel":::
 
 - **Broadcast:** Broadcast your avatar to all rooms in a multi-room event.
   
-    :::image type="content" source="../../media/mesh-event-producer-guide/Broadcast-button.png" alt-text="Boradcast button in a Mesh event in the host panel":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Broadcast-button.png" alt-text="Boradcast button in a Mesh event in the host panel":::
 
 - **Share:** Share your screen to the event.
   
-    :::image type="content" source="../../media/mesh-event-producer-guide/Share-button.png" alt-text="Share button in host panel":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Share-button.png" alt-text="Share button in host panel":::
 
 ### Host Panel participant panel
 
 See the event participants and use various controls available to manage individual participants.
 
-:::image type="content" source="../../media/mesh-event-producer-guide/Participant-host-panel-window.png" alt-text="Participant panel for host panel":::
+:::image type="content" source="../media/mesh-event-producer-guide/Participant-host-panel-window.png" alt-text="Participant panel for host panel":::
 
    > [!div class="nextstepaction"]
    > [Event help](events-help.md)

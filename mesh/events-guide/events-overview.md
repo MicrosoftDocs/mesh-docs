@@ -20,7 +20,7 @@ Events in Mesh should be familiar to most organizations that work with Microsoft
 
 Create an event in the Mesh Portal and invite participants. Once created, participants will see the event in their calendars in Microsoft Teams and Outlook.
 
-:::image type="content" source="../../media/mesh-event-producer-guide/Join-event-link-calendar.gif" alt-text="Join mesh event via a link in outlook or teams calendar":::
+:::image type="content" source="../media/mesh-event-producer-guide/Join-event-link-calendar.gif" alt-text="Join mesh event via a link in outlook or teams calendar":::
 
 To learn how to create your event in the Mesh Portal, see [Create an event](create-event.md).
 
@@ -31,7 +31,7 @@ To learn how to create your event in the Mesh Portal, see [Create an event](crea
 
 The power of Mesh really becomes clear when you customize your event by adding artifacts to your environment prior to the meeting start time. Add text, video players, or a screenshare screen that can be controlled during your run-of-show to engage and wow attendees.
 
-:::image type="content" source="../../media/mesh-event-producer-guide/Environment-editor-Customization.gif" alt-text="Gif of customizing event in the Mesh app":::
+:::image type="content" source="../media/mesh-event-producer-guide/Environment-editor-Customization.gif" alt-text="Gif of customizing event in the Mesh app":::
 
 To learn how to customize your event in the Mesh app, see [Customize your event](customize-event.md).
 
@@ -42,7 +42,7 @@ To learn how to customize your event in the Mesh app, see [Customize your event]
 
 When it's time for your event, join in Mesh and leverage a set of host tools to interact with participants, and curate your event experience.'
 
-:::image type="content" source="../../media/mesh-event-producer-guide/Host-panel-open2.png" alt-text="Host panel in an event used to interact with participants.":::
+:::image type="content" source="../media/mesh-event-producer-guide/Host-panel-open2.png" alt-text="Host panel in an event used to interact with participants.":::
 
 To learn how to produce your event and leverage the tools, see [Produce your event](produce-event.md).
 

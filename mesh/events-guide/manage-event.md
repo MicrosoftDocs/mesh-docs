@@ -24,7 +24,7 @@ joins the event, you won't be able to customize your event anymore.*
 **Open the Manage event page:**
 
 ![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image013.png)
+medium confidence](../media/mesh-event-producer-guide/image013.png)
 
 On the **Manage Events** page, you can invite guests to your event, edit
 event details, or join the event. Everything but the environment and
@@ -49,7 +49,7 @@ The participants you can invite fall into two categories:
 
     ![A screenshot of a video game Description automatically generated
     with medium
-    confidence](../../media/mesh-event-producer-guide/image014.png)
+    confidence](../media/mesh-event-producer-guide/image014.png)
 
     ... and then select **Invite Guests**.
 
@@ -70,7 +70,7 @@ The participants you can invite fall into two categories:
 
     ![A screenshot of a computer Description automatically generated
     with medium
-    confidence](../../media/mesh-event-producer-guide/image015.png)
+    confidence](../media/mesh-event-producer-guide/image015.png)
 
 **These invitees will now see the event in Mesh. Great job! Invite some
 collaborators to help you invite people or customize the event with
@@ -92,7 +92,7 @@ in-experience tools.**
 
     ![A screenshot of a computer Description automatically generated
     with medium
-    confidence](../../media/mesh-event-producer-guide/image016.png)
+    confidence](../media/mesh-event-producer-guide/image016.png)
 2. In the popup menu, select **Edit details**.
 
 3. On the **Details** page, change any of the details as needed, and
@@ -110,7 +110,7 @@ in-experience tools.**
 
     ![A screenshot of a computer Description automatically generated
     with medium
-    confidence](../../media/mesh-event-producer-guide/image016.png)
+    confidence](../media/mesh-event-producer-guide/image016.png)
 2. Select **Delete**.
 
 3. In the dialog that appears, click the **Confirm** button.
@@ -129,14 +129,14 @@ rooms event goes smoothly.
 **Open the Manage event page:**
 
 ![Graphical user interface, application Description automatically
- generated](../../media/mesh-event-producer-guide/image018.png)
+ generated](../media/mesh-event-producer-guide/image018.png)
 
 1. In the Manage events page, your Multiple Rooms event will show a
     **Provisioning required** note:
 
 2. Select the event to access the **Overview** page, then select the **Provision button**.
 
-    ![](../../media/mesh-event-producer-guide/image019.png)
+    ![](../media/mesh-event-producer-guide/image019.png)
 
     > [!IMPORTANT] 
     > You may need to select Provision a few times. Please re-select **Provision** if you've refreshed the event and it still shows Provision instead of Provisioned.
@@ -145,13 +145,13 @@ rooms event goes smoothly.
 
     ![A screenshot of a cell phone Description automatically generated
     with medium
-    confidence](../../media/mesh-event-producer-guide/image021.png)
+    confidence](../media/mesh-event-producer-guide/image021.png)
 
 4. Refresh the event periodically to ensure that provisioning was
     completed. You may need to Provision again if the button shows
     **Provision**.
 
-    ![](../../media/mesh-event-producer-guide/image020.png)
+    ![](../media/mesh-event-producer-guide/image020.png)
 
     Once it shows **Provisioned**, you're ready to host your event!
 
