@@ -35,7 +35,7 @@ yourself or be a collaborator for the event.
 You can host a single room event with 16 people, or multiple room event
 with up to 200 people, split into 16 person rooms.
 
-![Single vs multiple room events](../../media/mesh-event-producer-guide/image004.png)
+![Single vs multiple room events](../media/mesh-event-producer-guide/image004.png)
 
 ## Create an event
 
@@ -47,7 +47,7 @@ with up to 200 people, split into 16 person rooms.
     button](#mesh-dashboard-overview) at the bottom left and then select
     the world you want.
 
-    ![All mesh worlds button](../../media/mesh-event-producer-guide/image005.png)
+    ![All mesh worlds button](../media/mesh-event-producer-guide/image005.png)
 
     > [!NOTE]
     >
@@ -55,11 +55,11 @@ with up to 200 people, split into 16 person rooms.
 
     > [!TIP]
     > You can pin worlds to the left nav bar for easy access!
-    > ![Pin worlds how to image](../../media/mesh-event-producer-guide/image006.png)
+    > ![Pin worlds how to image](../media/mesh-event-producer-guide/image006.png)
 
 3. In your Mesh world, select the **Create** button.
 
-    ![Create button for Mesh worlds](../../media/mesh-event-producer-guide/image007.png)
+    ![Create button for Mesh worlds](../media/mesh-event-producer-guide/image007.png)
 
     > [!IMPORTANT]
     > If you don't see **Manage** or **Create**, then you aren't a [Content contributor](#content-contributor-permissions) for this world. Please speak to your IT Admin to get Content contributor privileges.
@@ -68,11 +68,11 @@ with up to 200 people, split into 16 person rooms.
     **Description**, etc.). 
 
     ![A screenshot of a computer Description automatically
-    generated](../../media/mesh-event-producer-guide/image008.png)
+    generated](../media/mesh-event-producer-guide/image008.png)
 
 5. Choose your Room settings: **Single room** or **Multiple Rooms.**
 
-    ![](../../media/mesh-event-producer-guide/image009.png)
+    ![](../media/mesh-event-producer-guide/image009.png)
 
     > [!NOTE]
     > **If you choose Multiple room:**
@@ -87,7 +87,7 @@ with up to 200 people, split into 16 person rooms.
     templates that you create. If you choose a template, skip step 8.
     Otherwise, press **Skip** to select an Environment.
 
-     ![Graphical user interface, application Description automatically generated](../../media/mesh-event-producer-guide/image010.png)
+     ![Graphical user interface, application Description automatically generated](../media/mesh-event-producer-guide/image010.png)
 
 8. On the **Environment** page, select an environment, and then click
     **Next**.
@@ -99,7 +99,7 @@ with up to 200 people, split into 16 person rooms.
      [Learn more about Environments](#_Key_terminology)
 
      ![A screenshot of a computer Description automatically
- generated](../../media/mesh-event-producer-guide/image011.png)
+ generated](../media/mesh-event-producer-guide/image011.png)
 
     See the [Choose your journey](../Create/Getting%20started/choose-your-journey.md) article
  to learn how to create a custom environment.
@@ -111,7 +111,7 @@ with up to 200 people, split into 16 person rooms.
     **Manage Events** page.
 
      ![A screenshot of a computer Description automatically
- generated](../../media/mesh-event-producer-guide/image012.png)
+ generated](../media/mesh-event-producer-guide/image012.png)
 
 **Congrats! Let's manage your event by inviting participants and
 inviting others to collaborate!**

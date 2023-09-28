@@ -106,7 +106,7 @@ here, you can **discover** events, go to your favorite worlds that
 you've **pinned**, or explore **all worlds**.
 
 ![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image003.png)
+medium confidence](../media/mesh-event-producer-guide/image003.png)
 
 ## Events
 Create an event to host a Mesh experience! Once an
@@ -120,7 +120,7 @@ event.
 You can host a single room event with 16 people, or multiple room event
 with up to 200 people, split into 16 person rooms.
 
-![Single vs multiple room events](../../../media/mesh-event-producer-guide/image004.png)
+![Single vs multiple room events](../../media/mesh-event-producer-guide/image004.png)
 
 ## Create an event
 
@@ -132,7 +132,7 @@ with up to 200 people, split into 16 person rooms.
     button](#mesh-dashboard-overview) at the bottom left and then select
     the world you want.
 
-    ![All mesh worlds button](../../media/mesh-event-producer-guide/image005.png)
+    ![All mesh worlds button](../media/mesh-event-producer-guide/image005.png)
 
     > [!NOTE]
     >
@@ -140,11 +140,11 @@ with up to 200 people, split into 16 person rooms.
 
     > [!TIP]
     > You can pin worlds to the left nav bar for easy access!
-    > ![Pin worlds how to image](../../media/mesh-event-producer-guide/image006.png)
+    > ![Pin worlds how to image](../media/mesh-event-producer-guide/image006.png)
 
 3. In your Mesh world, select the **Create** button.
 
-    ![Create button for Mesh worlds](../../media/mesh-event-producer-guide/image007.png)
+    ![Create button for Mesh worlds](../media/mesh-event-producer-guide/image007.png)
 
     > [!IMPORTANT]
     > If you don't see **Manage** or **Create**, then you aren't a [Content contributor](#content-contributor-permissions) for this world. Please speak to your IT Admin to get Content contributor privileges.
@@ -153,11 +153,11 @@ with up to 200 people, split into 16 person rooms.
     **Description**, etc.). 
 
     ![A screenshot of a computer Description automatically
-    generated](../../media/mesh-event-producer-guide/image008.png)
+    generated](../media/mesh-event-producer-guide/image008.png)
 
 5. Choose your Room settings: **Single room** or **Multiple Rooms.**
 
-    ![](../../media/mesh-event-producer-guide/image009.png)
+    ![](../media/mesh-event-producer-guide/image009.png)
 
     > [!NOTE]
     > **If you choose Multiple room:**
@@ -172,7 +172,7 @@ with up to 200 people, split into 16 person rooms.
     templates that you create. If you choose a template, skip step 8.
     Otherwise, press **Skip** to select an Environment.
 
-     ![Graphical user interface, application Description automatically generated](../../media/mesh-event-producer-guide/image010.png)
+     ![Graphical user interface, application Description automatically generated](../media/mesh-event-producer-guide/image010.png)
 
 8. On the **Environment** page, select an environment, and then click
     **Next**.
@@ -184,7 +184,7 @@ with up to 200 people, split into 16 person rooms.
      [Learn more about Environments](#_Key_terminology)
 
      ![A screenshot of a computer Description automatically
- generated](../../media/mesh-event-producer-guide/image011.png)
+ generated](../media/mesh-event-producer-guide/image011.png)
 
     See the [Choose your journey](../Create/Getting%20started/choose-your-journey.md) article
  to learn how to create a custom environment.
@@ -196,7 +196,7 @@ with up to 200 people, split into 16 person rooms.
     **Manage Events** page.
 
      ![A screenshot of a computer Description automatically
- generated](../../media/mesh-event-producer-guide/image012.png)
+ generated](../media/mesh-event-producer-guide/image012.png)
 
 **Congrats! Let's manage your event by inviting participants and
 inviting others to collaborate!**
@@ -217,7 +217,7 @@ joins the event, you won't be able to customize your event anymore.*
 **Open the Manage event page:**
 
 ![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image013.png)
+medium confidence](../media/mesh-event-producer-guide/image013.png)
 
 On the **Manage Events** page, you can invite guests to your event, edit
 event details, or join the event. Everything but the environment and
@@ -243,7 +243,7 @@ The participants you can invite fall into two categories:
 
     ![A screenshot of a video game Description automatically generated
     with medium
-    confidence](../../media/mesh-event-producer-guide/image014.png)
+    confidence](../media/mesh-event-producer-guide/image014.png)
 
     ... and then select **Invite Guests**.
 
@@ -264,7 +264,7 @@ The participants you can invite fall into two categories:
 
     ![A screenshot of a computer Description automatically generated
     with medium
-    confidence](../../media/mesh-event-producer-guide/image015.png)
+    confidence](../media/mesh-event-producer-guide/image015.png)
 
 **These invitees will now see the event in Mesh. Great job! Invite some
 collaborators to help you invite people or customize the event with
@@ -286,7 +286,7 @@ in-experience tools.**
 
     ![A screenshot of a computer Description automatically generated
     with medium
-    confidence](../../media/mesh-event-producer-guide/image016.png)
+    confidence](../media/mesh-event-producer-guide/image016.png)
 2. In the popup menu, select **Edit details**.
 
 3. On the **Details** page, change any of the details as needed, and
@@ -304,7 +304,7 @@ in-experience tools.**
 
     ![A screenshot of a computer Description automatically generated
     with medium
-    confidence](../../media/mesh-event-producer-guide/image016.png)
+    confidence](../media/mesh-event-producer-guide/image016.png)
 2. Select **Delete**.
 
 3. In the dialog that appears, click the **Confirm** button.
@@ -323,17 +323,17 @@ rooms event goes smoothly.
 **Open the Manage event page:**
 
 ![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image017.png)
+medium confidence](../media/mesh-event-producer-guide/image017.png)
 
 1. In the Manage events page, your Multiple Rooms event will show a
     **Provisioning required** note:
 
      ![Graphical user interface, application Description automatically
- generated](../../media/mesh-event-producer-guide/image018.png)
+ generated](../media/mesh-event-producer-guide/image018.png)
 
 2. Select the event to access the **Overview** page, then select the **Provision button**.
 
-    ![](../../media/mesh-event-producer-guide/image019.png)
+    ![](../media/mesh-event-producer-guide/image019.png)
 
     > [!IMPORTANT]
     >
@@ -343,7 +343,7 @@ medium confidence](../../media/mesh-event-producer-guide/image017.png)
 
     ![A screenshot of a cell phone Description automatically generated
     with medium
-    confidence](../../media/mesh-event-producer-guide/image021.png)
+    confidence](../media/mesh-event-producer-guide/image021.png)
 
 
 4. Refresh the event periodically to ensure that provisioning was
@@ -353,7 +353,7 @@ medium confidence](../../media/mesh-event-producer-guide/image017.png)
 
     
 
-    ![](../../media/mesh-event-producer-guide/image020.png)
+    ![](../media/mesh-event-producer-guide/image020.png)
 
 ## Start your event
 
@@ -394,7 +394,7 @@ Mesh world **Events** tab.
 
 1. Go to your Mesh world, then select **Join now.**
 
-![](../../media/mesh-event-producer-guide/image023.png)
+![](../media/mesh-event-producer-guide/image023.png)
 
  **Great job! Continue reading below to produce your event!**
 
@@ -423,7 +423,7 @@ and broadcasting.
 Use the control panel to access the production tools:
 
 ![A screenshot of a video game Description automatically
-generated](../../media/mesh-event-producer-guide/image024.png)
+generated](../media/mesh-event-producer-guide/image024.png)
 
 #### Broadcast
 
@@ -433,7 +433,7 @@ select **Start broadcast**. To stop broadcasting, select the broadcast
 button again, then select **End** **broadcast**.
 
 ![A screenshot of a video game Description automatically
-generated](../../media/mesh-event-producer-guide/image025.png)
+generated](../media/mesh-event-producer-guide/image025.png)
 
 > [!NOTE]
 > If your event is not Provisioned for broadcasting, you'll receive a pop-up that says "Unable to Start Broadcast. Your event must be provisioned to enable broadcasting. Please provision your event to proceed."
@@ -444,7 +444,7 @@ When broadcasting, other participants will see a broadcasting icon next
 to your nametag above your Avatar.
 
 ![A screenshot of a video game Description automatically
-generated](../../media/mesh-event-producer-guide/image026.png)
+generated](../media/mesh-event-producer-guide/image026.png)
 
 
 #### Troubleshooting broadcasting
@@ -465,14 +465,14 @@ Use **Megaphone** to make your voice audible to all participants in the
 event.
 
  ![A screenshot of a computer Description automatically generated with
- medium confidence](../../media/mesh-event-producer-guide/image027.png)
+ medium confidence](../media/mesh-event-producer-guide/image027.png)
 
 ### Mute All
 
 Use **Mute Al**l to bring attention to your voice and mute all other
 participants.
 
-:::image type="content" source="../../media/mesh-event-producer-guide/image028.png" alt-text="Megaphone button location":::
+:::image type="content" source="../media/mesh-event-producer-guide/image028.png" alt-text="Megaphone button location":::
 
 Use these tools to help produce your event and explore the [Customize
 your event](#customize-your-event) section to see how the Control Panel
@@ -520,7 +520,7 @@ speak to your IT Admin to get Content contributor privileges.
 2. You will see the **Manage** button.
 
 ![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image013.png)
+medium confidence](../media/mesh-event-producer-guide/image013.png)
 
 #### Customize event experience
 
@@ -529,7 +529,7 @@ Once you've joined, you can begin [adding content with the Control
 Panel](#_Add_Content_with).
 
 ![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image016.png)
+medium confidence](../media/mesh-event-producer-guide/image016.png)
 
 **Now that you've joined the event customization experience it's time
 to start customizing!**
@@ -548,19 +548,19 @@ performance in real time.
 
     ![A screenshot of a computer Description automatically generated
     with medium
-    confidence](../../media/mesh-event-producer-guide/image016.png)
+    confidence](../media/mesh-event-producer-guide/image016.png)
 2. Click the **Join now** button.
 
 3. After you've joined the session, click
     the "Control panel" button.
     ![A screenshot of a video game Description automatically
-    generated](../../media/mesh-event-producer-guide/image029.png)
+    generated](../media/mesh-event-producer-guide/image029.png)
 
     > [!NOTE]
     >
 >     Adding content takes place in **Edit mode**. 
 >
-> ![](../../media/mesh-event-producer-guide/image032.png)
+> ![](../media/mesh-event-producer-guide/image032.png)
 >
 > You should be in this mode by default (look at the top/middle of the window).
 
@@ -568,14 +568,14 @@ performance in real time.
 
     ![A screenshot of a computer Description automatically generated
     with medium
-    confidence](../../media/mesh-event-producer-guide/image030.png)
+    confidence](../media/mesh-event-producer-guide/image030.png)
 
 5. In the **Add items** window, click the **Content** entry.\
     This opens the **Select content** window. You can add playable
     content such as *Unity Timelines and Video Players*.
 
     ![A screenshot of a video game Description automatically
-    generated](../../media/mesh-event-producer-guide/image031.png)
+    generated](../media/mesh-event-producer-guide/image031.png)
 
 **Control Panel Notes**:
 
@@ -600,31 +600,31 @@ performance in real time.
 2. Select or deselect **Scale animation**.
 
     ![A screenshot of a video game Description automatically
-    generated](../../media/mesh-event-producer-guide/image033.png)
+    generated](../media/mesh-event-producer-guide/image033.png)
 
 ### Configure the content controls for a Video Player
 
 1. In the Select content window, choose CentralVideoScreen and click
     Add.\
     \
-    ![](../../media/mesh-event-producer-guide/image034.png)
+    ![](../media/mesh-event-producer-guide/image034.png)
 
 2. Once the **CentralVideoScreen** is in your Control panel, click the
     text button to input a URL for a static hosted MP4 file.\
     ![Graphical user interface, application Description automatically
-    generated](../../media/mesh-event-producer-guide/image035.png)
+    generated](../media/mesh-event-producer-guide/image035.png)
 3. Press the **Play** button to view your content.
 
     Note: To control the volume, use the volume slider found in the
     expanded dropdown for the item on the Control Panel.**\
-    **![](../../media/mesh-event-producer-guide/image036.png)
+    **![](../media/mesh-event-producer-guide/image036.png)
 
 ### Preview the live run of your event
 
 Within a Customize event experience, open the Control Panel, then Toggle
 to Preview Mode\
 ![A screenshot of a video chat Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image037.png)
+medium confidence](../media/mesh-event-producer-guide/image037.png)
 
 When you're done configuring content for the event, you can exit the
 customization session and it will automatically save your changes.
@@ -654,12 +654,12 @@ Producer focus on only the elements being used in the show.
 **Show:**
 
 ![Graphical user interface, application Description automatically
-generated](../../media/mesh-event-producer-guide/image038.png)
+generated](../media/mesh-event-producer-guide/image038.png)
 
 **Hide:**
 
 ![Text Description automatically generated with medium
-confidence](../../media/mesh-event-producer-guide/image039.png)
+confidence](../media/mesh-event-producer-guide/image039.png)
 
 **Note**: Hidden elements aren't deleted from your list, but are hidden
 from view while in **Live Mode**.
@@ -694,7 +694,7 @@ Template, used across future events with no additional work needed.
 To manage your events, you must be in the Manage events page.
 
 ![A screenshot of a computer Description automatically generated with
-medium confidence](../../media/mesh-event-producer-guide/image040.png)
+medium confidence](../media/mesh-event-producer-guide/image040.png)
 
 1. Go to your pinned world, or search for it using the **All Mesh
     worlds** button.
@@ -709,7 +709,7 @@ medium confidence](../../media/mesh-event-producer-guide/image040.png)
     or click the **All Mesh worlds** button to find your world.\
     ![A screenshot of a computer Description automatically generated
     with medium
-    confidence](../../media/mesh-event-producer-guide/image003.png)
+    confidence](../media/mesh-event-producer-guide/image003.png)
 
 2. In the horizontal menu bar at the top, click **Events**.
 
@@ -719,12 +719,12 @@ medium confidence](../../media/mesh-event-producer-guide/image040.png)
     the **Options** button.\
     \
     ![A screenshot of a phone Description automatically generated with
-    medium confidence](../../media/mesh-event-producer-guide/image041.png)
+    medium confidence](../media/mesh-event-producer-guide/image041.png)
 5. In the popup menu, select Save as template to save an event template
     with the same name as the event you selected.\
     \
     ![Graphical user interface Description automatically
-    generated](../../media/mesh-event-producer-guide/image042.png)
+    generated](../media/mesh-event-producer-guide/image042.png)
 
 ## Deleting templates
 
@@ -732,7 +732,7 @@ medium confidence](../../media/mesh-event-producer-guide/image040.png)
 
 2. Click the **Templates** tab.\
     ![Graphical user interface, application Description automatically
-    generated](../../media/mesh-event-producer-guide/image043.png)
+    generated](../media/mesh-event-producer-guide/image043.png)
 3. In the Template list, select the template you want to delete, and
     then click its Trash Can icon. This deletes the template for you and
     everyone in your world.
@@ -789,8 +789,8 @@ guests:
 
 |Term  | Description  |Images  |
 |---------|---------|---------|
-| Mesh app           |  The standalone app for Mesh                 |  (../../media/mesh-event-producer-guide/image044.png)       |
-| Home button        |  Accessed through the Dashboard button       |  (../../media/mesh-event-producer-guide/image045.png)       |
+| Mesh app           |  The standalone app for Mesh                 |  (../media/mesh-event-producer-guide/image044.png)       |
+| Home button        |  Accessed through the Dashboard button       |  (../media/mesh-event-producer-guide/image045.png)       |
 | Template           |         |         |
 |Row4     |         |         |
 |Row5     |         |         |
@@ -803,7 +803,7 @@ guests:
 |                | for Mesh              | text, monitor, electronics |
 |                |                       | Description automatically  |
 |                |                       | genera                     |
-|                |                       | ted](../../media/mesh-event-producer-guide/image044.png) |
+|                |                       | ted](../media/mesh-event-producer-guide/image044.png) |
 |                |                       |                            |
 |                |                       |                            |
 |                |                       |                            |
@@ -811,12 +811,12 @@ guests:
 | **Home         | Accessed through the  | ![Icon Description         |
 | button**       | Dashboard button.     | automatically              |
 |                |                       | genera                     |
-|                |                       | ted](../../media/mesh-event-producer-guide/image045.png){wi |
+|                |                       | ted](../media/mesh-event-producer-guide/image045.png){wi |
 |                |                       | dth="0.5801531058617673in" |
 |                |                       | heig                       |
 |                |                       | ht="0.5801531058617673in"} |
 +----------------+-----------------------+----------------------------+
-| **Template**   | Reusable event        | ![](../../media/mesh-event-producer-guide/image046.png){w   |
+| **Template**   | Reusable event        | ![](../media/mesh-event-producer-guide/image046.png){w   |
 |                | template that can be  | idth="2.438850612423447in" |
 |                | configured/customized | heig                       |
 |                | then applied to new   | ht="0.5643077427821522in"} |
@@ -834,14 +834,14 @@ guests:
 |                |     scripts or other  |                            |
 |                |     enhanced features |                            |
 +----------------+-----------------------+----------------------------+
-| *| The physical space    | ![](../../media/mesh-event-producer-guide/image047.png){wi  |
+| *| The physical space    | ![](../media/mesh-event-producer-guide/image047.png){wi  |
 |*Environment**| that events take      | dth="2.4327055993000877in" |
 |                | place in, such as a   | heig                       |
 |                | large conference room | ht="1.1854811898512685in"} |
 |                | or a roundtable       |                            |
 |                | meeting room.         |                            |
 +----------------+-----------------------+----------------------------+
-|**Control      | The core set of tools | ![](../../media/mesh-event-producer-guide/image048.png){w   |
+|**Control      | The core set of tools | ![](../media/mesh-event-producer-guide/image048.png){w   |
 | Panel**        | that enable you to    | idth="2.932703412073491in" |
 |                | set up, customize,    | heig                       |
 |                | and trigger specific  | ht="1.0302066929133857in"} |

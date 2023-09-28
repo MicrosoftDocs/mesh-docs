@@ -15,14 +15,14 @@ Now that you've created your event, it's time to customize your event to add any
 At a high level, there are three major steps to customize your event or template:
 
 1. **Add content** using the **Environment Editor** (or playable content uploaded from Unity to a custom environment).
-    :::image type="content" source="../../media/mesh-event-producer-guide/environment-editor-open-artifacts - Made with Clipchamp.gif" alt-text="Open environment editor and add artifact":::
+    :::image type="content" source="../media/mesh-event-producer-guide/environment-editor-open-artifacts - Made with Clipchamp.gif" alt-text="Open environment editor and add artifact":::
 1. **Edit content** controls.
-    :::image type="content" source="../../media/mesh-event-producer-guide/environment-editor-add-artifacts.gif" alt-text="Add artifacts and update url":::
+    :::image type="content" source="../media/mesh-event-producer-guide/environment-editor-add-artifacts.gif" alt-text="Add artifacts and update url":::
 
 1. **Configure** content with the **Control Panel** for your live event.
 
 1. **Save changes** in the **Event Customization** window.
-    :::image type="content" source="../../media/mesh-event-producer-guide/Event-customization-save-changes.png" alt-text="Save changse in event customization":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Event-customization-save-changes.png" alt-text="Save changse in event customization":::
 
 ## Considerations before starting your event
 
@@ -30,7 +30,7 @@ At a high level, there are three major steps to customize your event or template
 
 Saving is not available once event is provisioned or joined. Plan to customize and save your event before your start time.
 
-:::image type="content" source="../../media/mesh-event-producer-guide/Environment-editor-saving.png" alt-text="Save customization in your Mesh environment":::
+:::image type="content" source="../media/mesh-event-producer-guide/Environment-editor-saving.png" alt-text="Save customization in your Mesh environment":::
 
 > [!TIP]
 > **Who should customize an event?**
@@ -45,7 +45,7 @@ Use the Environment editor to place content in your environment and customize th
 
 Currently, the three artifacts that you can add to your event are **Video**, **Screenshare**, and **Image**.
 
-:::image type="content" source="../../media/mesh-event-producer-guide/environment-editor-artifacts-no-text.jpg" alt-text="Video, screenshare, image artifacts in the environment editor":::
+:::image type="content" source="../media/mesh-event-producer-guide/environment-editor-artifacts-no-text.jpg" alt-text="Video, screenshare, image artifacts in the environment editor":::
 
 ### Add content with the Environment editor
 
@@ -53,34 +53,34 @@ Use the environment editor to add content to your environment that can be contro
 
 1. Open the Mesh app on your computer or use the link in the calendar invite.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/Join-event-link-calendar.gif" alt-text="Join calendar invite Mesh":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Join-event-link-calendar.gif" alt-text="Join calendar invite Mesh":::
 
 1. Look for the event in the **Upcoming** category and select it.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/Customize-event-entrypoint3.png" alt-text="Event showing in Mesh app in the upcoming category":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-entrypoint3.png" alt-text="Event showing in Mesh app in the upcoming category":::
 
 1. In the Event details window, select **Customize**.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/Customize-event-entrypoint-event-details.png" alt-text="Customize button in the event details window":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-entrypoint-event-details.png" alt-text="Customize button in the event details window":::
 
 1. Select the **Join now** button.
 
 1. Once it loads, Select the **Environment editor** button.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/Environment-editor-button-open2.png" alt-text="Environment editor button":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Environment-editor-button-open2.png" alt-text="Environment editor button":::
 
 1. Select the **+** plus button to open the Catalog of artifact you can add. Select one to add it to the environment editor.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/environment-editor-open-artifacts - Made with Clipchamp.gif" alt-text="Open environment editor and add artifact":::
+    :::image type="content" source="../media/mesh-event-producer-guide/environment-editor-open-artifacts - Made with Clipchamp.gif" alt-text="Open environment editor and add artifact":::
 
 1. Once you've added an artifact, you'll see it show up in the Artifacts window as shown below:
-    :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-added-artifact.png" alt-text="Video player artifact shown in list of artifacts":::
+    :::image type="content" source="../media/mesh-event-producer-guide/image-environment-editor-added-artifact.png" alt-text="Video player artifact shown in list of artifacts":::
 
     Note the **Copy**, **Edit**, and **Delete** buttons available for the selected artifact.
 
 1. Now you can manipulate the artifact as you'd like by selecting it with your cursor, dragging it to another location, or using the edges of the artifacts to scale them as you see fit.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/environment-editor-maneuver-artifact2.png" alt-text="Move artifact with avatar arm up":::
+    :::image type="content" source="../media/mesh-event-producer-guide/environment-editor-maneuver-artifact2.png" alt-text="Move artifact with avatar arm up":::
 
 ### Video artifact requirements
 
@@ -91,7 +91,7 @@ For video artifacts, you must:
 
     For example, use the **Share** or the **Copy Link** functionality in SharePoint to copy the link of the video you want to share and paste it in the Video player artifact URL field.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/SharePoint-link.png" alt-text="Sharepoint link copied in sharepoint":::
+    :::image type="content" source="../media/mesh-event-producer-guide/SharePoint-link.png" alt-text="Sharepoint link copied in sharepoint":::
 
 ### Edit artifact controls
 
@@ -99,11 +99,11 @@ Once you've added an artifact, you can maneuver it around the spaces and select 
 
 1. Select an added artifact and adjust the controls to suit your preferences.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/image-environment-editor-open-controls-window.png" alt-text="Controls window showing for artifact that has been added to an environment":::
+    :::image type="content" source="../media/mesh-event-producer-guide/image-environment-editor-open-controls-window.png" alt-text="Controls window showing for artifact that has been added to an environment":::
 
 1. Configure the controls for the artifact. For example, you can add the URL for your video:
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/environment-editor-add-artifacts.gif" alt-text="Add artifacts and update url":::
+    :::image type="content" source="../media/mesh-event-producer-guide/environment-editor-add-artifacts.gif" alt-text="Add artifacts and update url":::
 
     > [!NOTE]
     > The only video type that is supported is **.MP4** inside the video artifact.
@@ -117,19 +117,19 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
 
 1. Once you're satisfied with your artifact, open the **Control Panel**.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/Control-panel-button.png" alt-text="Control-panel button in the Mesh app":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Control-panel-button.png" alt-text="Control-panel button in the Mesh app":::
 
 1. Select the **+** add button to add your artifact.
 
-    :::image type="content" source="../../media/mesh-event-producer-guide/Control-panel-add-button.png" alt-text="Control panel add button in Microsoft Mesh app":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Control-panel-add-button.png" alt-text="Control panel add button in Microsoft Mesh app":::
 
 1. In the **Select content** window, select the artifact then select  **Add**. You will see it show up in the Control Panel.
 
-    ![Select video player to add it to the control panel for producing your event.](../../media/mesh-event-producer-guide/Add-content-to-control-panle.png)
+    ![Select video player to add it to the control panel for producing your event.](../media/mesh-event-producer-guide/Add-content-to-control-panle.png)
 
 **Control Panel Notes:**
 
-- Playable content can be added from the environment editor or from a Unity project that has been uploaded to a custom environment. Reference the [Choose your journey article](../../Create/getting-started/choose-your-journey.md)
+- Playable content can be added from the environment editor or from a Unity project that has been uploaded to a custom environment. Reference the [Choose your journey article](../Create/getting-started/choose-your-journey.md)
     to get started with adding custom content.
 
 ## Save your content
@@ -138,7 +138,7 @@ Before you start your event, you must save the changes that you've made to your 
 
 Select the Event Customization button, then select **Save changes** or **Revert changes.**
 
-:::image type="content" source="../../media/mesh-event-producer-guide/Event-customization-save-changes.png" alt-text="SAve changes button in the Event Customization window in the Microsoft Mesh application":::
+:::image type="content" source="../media/mesh-event-producer-guide/Event-customization-save-changes.png" alt-text="SAve changes button in the Event Customization window in the Microsoft Mesh application":::
 
 ### Preview the live run of your event
 
@@ -147,7 +147,7 @@ to Preview Mode.
 
 While in preview mode, you can test out using the control panel to play your video or interact with your content.
 
-:::image type="content" source="../../media/mesh-event-producer-guide/Environment-editor-preview-play-video.png" alt-text="Video playing in the control panel during preview mode mesh app":::
+:::image type="content" source="../media/mesh-event-producer-guide/Environment-editor-preview-play-video.png" alt-text="Video playing in the control panel during preview mode mesh app":::
 
    > [!div class="nextstepaction"]
    > [Customize your event](produce-event.md)

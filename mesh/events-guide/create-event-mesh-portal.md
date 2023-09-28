@@ -21,12 +21,12 @@ With the transition to M365 and the Mesh Portal, events are handled slightly dif
 1. Log in with your corporate account.
 1. In the Home page, select **Events** in the left nav.
 
-    :::image type="content" source="../../media/m365-migration-guide/Select-events.png" alt-text="Events button in Mesh portal":::
+    :::image type="content" source="../media/m365-migration-guide/Select-events.png" alt-text="Events button in Mesh portal":::
 
 1. Select **Create event** at the top right.
 1. Add the event name, time duration, description, upload a thumbnail image, and adjust the room capacity settings.
 
-    :::image type="content" source="../../media/m365-migration-guide/Event-details.png" alt-text="Event details page in Mesh portal":::
+    :::image type="content" source="../media/m365-migration-guide/Event-details.png" alt-text="Event details page in Mesh portal":::
 
 1. Select **Next** when complete.
 1. Choose an environment or select an event template that you may have created before. Select **Next** when finished.
@@ -35,11 +35,11 @@ With the transition to M365 and the Mesh Portal, events are handled slightly dif
 
 1. Add your Co-organizers (who will be able to edit the event) and your Attendees (who will be able to join the event) and select **Create event** when finished.
 
-    :::image type="content" source="../../media/m365-migration-guide/Invite-attendees-co-organizers.png" alt-text="Invite page in the Mesh portal":::
+    :::image type="content" source="../media/m365-migration-guide/Invite-attendees-co-organizers.png" alt-text="Invite page in the Mesh portal":::
 
 Great job! You've now created your event. Co-organizers and invitees will now see the event in their Outlook and Teams calendars.
 
-:::image type="content" source="../../media/mesh-event-producer-guide/Join-event-link-calendar.gif" alt-text="Join event from a calendar invite":::
+:::image type="content" source="../media/mesh-event-producer-guide/Join-event-link-calendar.gif" alt-text="Join event from a calendar invite":::
 
    > [!div class="nextstepaction"]
    > [Customize an event](customize-event.md)
