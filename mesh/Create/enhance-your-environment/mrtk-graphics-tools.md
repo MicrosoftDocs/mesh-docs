@@ -15,7 +15,7 @@ MRTK Graphics Tools for Unity is a
 and samples created to help improve the visual fidelity of [mixed reality](https://docs.microsoft.com/windows/mixed-reality/discover/mixed-reality)
 applications while staying within performance budgets.
 
-![A screenshot of a video game Description automatically generated with medium confidence](../../../media/enhance-your-environment/image065.jpg)
+![A screenshot of a video game Description automatically generated with medium confidence](../../media/enhance-your-environment/image065.jpg)
 
 Graphics Tools is included in the Mesh Toolkit package which is required
 for any Unity project being used to generate a Mesh Environment.

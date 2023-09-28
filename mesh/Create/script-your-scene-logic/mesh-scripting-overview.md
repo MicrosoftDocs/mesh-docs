@@ -28,7 +28,7 @@ There are two different Mesh Scripting approaches:
 - Better debugging tools.
 - Access to external assemblies.
 
-## Benefits of using Mesh Visual Scripting**:
+## Benefits of using Mesh Visual Scripting:
 
 - Add interactivity and dynamic runtime behavior to your Mesh Environments without writing code.
 - Enables client-side scripting.
@@ -39,7 +39,6 @@ There are two different Mesh Scripting approaches:
 
 Fortunately, you don’t have to choose one approach exclusively. You can do Mesh Visual Scripting only or Mesh Cloud Scripting only, but you can also combine them. The two systems work well together; if you start scripting with one system, your script will still work seamlessly in the other.
 
-
 ## Prerequisites
 
 Before getting started with Mesh Scripting, you should be able to create a basic Environment in Unity (to learn more, see our document named *Get Started with Mesh Environments* TBD). You should also familiarize yourself with the document named *Mesh 3D Design and Performance Guide* TBD. That document goes beyond the basics and includes many tips for building an Environment in Unity. Mesh Scripting builds on this Unity-based toolchain to let you add scripts to your Environments.
@@ -48,4 +47,6 @@ Before getting started with Mesh Scripting, you should be able to create a basic
 
 > [!div class="nextstepaction"]
 > [Cloud scripting basic concepts](cloud-scripting-basic-concepts.md)
+
+> [!div class="nextstepaction"]
 > [Visual Scripting](visual-scripting.md)

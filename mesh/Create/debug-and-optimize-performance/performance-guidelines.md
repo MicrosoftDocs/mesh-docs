@@ -42,10 +42,10 @@ optimization issues and opportunities before content is uploaded to
 Mesh. Issues are reported via an editor window in Unity.
 
 ![A screenshot of a computer Description automatically generated with
-medium confidence](../../../media/3d-design-performance-guide/image002.png)
+medium confidence](../../media/3d-design-performance-guide/image002.png)
 
 ![A screenshot of a video game Description automatically
-generated](../../../media/3d-design-performance-guide/image003.png)
+generated](../../media/3d-design-performance-guide/image003.png)
 
 The CPA is included in the Mesh Toolkit package which is required for
 any Unity project being used to generate a Mesh Environment. You can
@@ -58,7 +58,7 @@ reality Unity application\'s frame rate, scene complexity, and memory
 usage across a variety of platforms.
 
 ![A screen shot of a number Description automatically
-generated](../../../media/3d-design-performance-guide/image004.png)
+generated](../../media/3d-design-performance-guide/image004.png)
 
 Missed frames are displayed over time to visually find problem areas.
 Scene complexity is reported in the form of draw calls and rendered
@@ -104,7 +104,7 @@ below steps:
 
     into the text field and click \"Add\".
 
-    ![A screenshot of a computer Description automatically generated](../../../media/3d-design-performance-guide/image005.png)`
+    ![A screenshot of a computer Description automatically generated](../../media/3d-design-performance-guide/image005.png)
 
 4. The Visual Profiler will now be installed within your Unity project
     as an immutable package within the project's Packages folder
@@ -145,7 +145,7 @@ frame indicators. These numbers can be indicative of why your app isn\'t
 meeting its target frame rate.
 
 ![A screenshot of a computer Description automatically
-generated](../../../media/3d-design-performance-guide/image006.png)
+generated](../../media/3d-design-performance-guide/image006.png)
 
 One should also keep an eye on the bottom memory bar to insure memory
 usage isn't rapidly changing or approaching the application\'s memory
@@ -154,7 +154,7 @@ limit.
 The profiler UI (such as anchoring, scale, follow behavior and UI color)
 can also be tweaked in the component inspector.
 
-![A screenshot of a computer program Description automatically generated](../../../media/3d-design-performance-guide/image007.png)
+![A screenshot of a computer program Description automatically generated](../../media/3d-design-performance-guide/image007.png)
 
 Custom profilers can be added to the bottom of the Visual Profiler by
 adding to the list of \"Profiler Groups.\" Profiler Groups use
@@ -163,7 +163,7 @@ For example the below image shows how the \"BehaviorUpdate\",
 "LateBehaviourUpdate\", and \"FixedBehaviourUpdate\" markers display a
 millisecond average over 300 samples with the group label "Scripting."
 
-![A screenshot of a computer Description automatically generated](../../../media/3d-design-performance-guide/image008.png)
+![A screenshot of a computer Description automatically generated](../../media/3d-design-performance-guide/image008.png)
 
 **Feedback on the Visual Profiler**
 

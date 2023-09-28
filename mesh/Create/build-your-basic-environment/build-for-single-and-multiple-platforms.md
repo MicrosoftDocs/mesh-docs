@@ -33,7 +33,7 @@ of all the PC power even when it runs on a PC.
 
 The steps for each of these are explained in later sections. To learn
 more about optimizing for different platforms, see the article named
-*Mesh performance guidelines*.
+[Performance guidelines for Mesh](../debug-and-optimize-performance/performance-guidelines.md).
 
 ## Next steps
 

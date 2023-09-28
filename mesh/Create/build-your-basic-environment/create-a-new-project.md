@@ -21,7 +21,7 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 1. Create a new Unity project using the **3D URP** (Core) template.
 
 ![Rectangle Description automatically generated with low
-confidence](../../../media/get-started-developing-mesh/image008.png)
+confidence](../../media/get-started-developing-mesh/image008.png)
 
 2. In Unity, create a new scene using the **Standard (URP)** scene
     template. Save it with an appropriate name.

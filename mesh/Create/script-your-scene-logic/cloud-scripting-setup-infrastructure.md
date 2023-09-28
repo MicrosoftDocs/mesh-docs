@@ -146,7 +146,7 @@ Resources can be deployed to any of the following supported regions. All resourc
 
 ## MeshApps cloud infrastructure diagram
 
-:::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/image016.png" alt-text="MeshApps infrastructure diagram":::
+:::image type="content" source="../../media/cloud-scripting-infrastructure-guide/image016.png" alt-text="MeshApps infrastructure diagram":::
 
 ## Resource provider registrations
 
@@ -190,7 +190,7 @@ Depending on how restrictive you'd like your access control policies to be, ther
     [You can assign this role directly on the Azure Security Group you created in the second prerequisite i.e](/azure/role-based-access-control/quickstart-assign-role-user-portal)., "Mesh App Developers".
 
     Below you can see our recommended permissions for the Custom roles you create:
-    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/image017.png" alt-text="MeshApps infrastructure diagram":::
+    :::image type="content" source="../../media/cloud-scripting-infrastructure-guide/image017.png" alt-text="MeshApps infrastructure diagram":::
 
    **Then the JSON file you would upload should be similar to this**:
 

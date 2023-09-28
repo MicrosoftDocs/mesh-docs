@@ -23,7 +23,7 @@ There are several major differences between Mesh scripts and MonoBehaviours:
 
 To enable Mesh Cloud Scripting, you must build and deploy an app service called *MeshApp* to a particular resource group that you specify in your Unity project. MeshApp runs on the Azure back end and consists of a set of server C# scripts running in a container with an endpoint that the clients connect to. In the diagram below, you can see that there are two clients that connect to MeshApp. MeshApp has its own authoritative scene graph (marked "A" in the diagram). MeshApp scripts interact with this scene graph through the Mesh scene graph API.
 
-![A diagram of the MeshApp Architecture.](../../../media/mesh-scripting/basic-concepts/Architecture_Overview_Diagram.png)
+![A diagram of the MeshApp Architecture.](../../media/mesh-scripting/basic-concepts/Architecture_Overview_Diagram.png)
 
 The Mesh scene graph is automatically synchronized from the cloud to all connected clients. Each client has an identical copy of the Mesh scene graph (marked "B" on the diagram), which is kept in sync with the authoritative cloud version. When the server scripts make changes to the Mesh scene graph in the cloud, these changes are propagated to the copies on all the clients. 
 
@@ -41,7 +41,7 @@ Objects that eventually appear in your Space in the Mesh Browser can be divided 
 
 In order to provide interactive capability for game objects (in other words, make them "scripted objects"), you must first add a game object named *MeshApp* to the scene. This object has a component that's also named *MeshApp*." 
 
-![A screen shot of the MeshApp component that's attached to the MeshApp GameObject.](../../../media/mesh-scripting/basic-concepts/009-meshapp-component.png)
+![A screen shot of the MeshApp component that's attached to the MeshApp GameObject.](../../media/mesh-scripting/basic-concepts/009-meshapp-component.png)
 
 The component is responsible for managing the scripts you create and binding them to the Unity scene both at edit time and runtime in the Mesh Browser. MeshApp is a standalone technology but it has a tight integration with Unity. You can find instructions for adding the MeshApp GameObject in the *Getting Started Guide* section and more detailed information about scripting in the *Programmer's Guide* section. TBD
 
@@ -53,7 +53,7 @@ Although MeshApp can't directly see the scene hierarchy of the rest of the scene
 
 In the diagram below, note that the hierarchy for the Unity Scene and Mesh Scene are identical. The blue nodes in the Unity Scene section represent GameObjects; every GameObject has a corresponding TransformNode in the Mesh Scene Graph. When a TransformNode is updated, it causes the transform of the game object it corresponds to in the Unity Scene to update to the same value.
 
-![Unity and Mesh Scene Hierarchies](../../../media/mesh-scripting/basic-concepts/Scene_Graph_Representation_Diagram.png)
+![Unity and Mesh Scene Hierarchies](../../media/mesh-scripting/basic-concepts/Scene_Graph_Representation_Diagram.png)
 
 The Mesh API has types that map to only a *subset* of the full set of Unity Components. It's still valid to create a Unity Scene with components the Mesh API can't map to; they'll simply be invisible to  MeshApp. In the diagram, a white-colored component has a corresponding node in the Mesh Scene Graph; a green-colored component doesn't. The Mesh scene graph doesn't have a particle system node, so in our example, the particle system component in the Unity scene won't show up in the corresponding Mesh Scene. However, its surrounding components and owning game object *are* in the Mesh Scene Graph. This means that  MeshApp will be able to move the particle system around the scene by moving its owning game objects even though the particle system itself is invisible to MeshApp.
 
@@ -98,7 +98,7 @@ Note the Scene.map file in the above list. This is an internal detail but it's u
 
 When you create an Environment with Mesh Cloud Scripting, you must create *both* the Environment and the corresponding MeshApp and deploy them to the cloud. This is shown in the diagram below:
 
-![Uploading the environment template and MeshApp to the cloud](../../../media/mesh-scripting/basic-concepts/002-deploy-meshapp-23-10.png)
+![Uploading the environment template and MeshApp to the cloud](../../media/mesh-scripting/basic-concepts/002-deploy-meshapp-23-10.png)
 
 
 When you make a change to your scene you should press **Play** in Unity to preview the scene with the newly built and locally running MeshApp. Then upload the modified environment using the Mesh Uploader. Uploading is described in more detail in the *Getting Started* section.
@@ -121,7 +121,7 @@ Here are the parties involved in the Auth flow:
 
 The parties work together as illustrated below:
 
-![Authentication Flow](../../../media/mesh-scripting/basic-concepts/Authentication_Diagram.png)
+![Authentication Flow](../../media/mesh-scripting/basic-concepts/Authentication_Diagram.png)
 
 Once you've tested from Unity, and you're ready to go live with your MeshApp, update the **Mode** option to **Prod** in the Mesh Uploader Settings located in your Unity project's settings. Select the "Force Deployment" option and use the Mesh Uploader to **Build and Publish** your MeshApp and Environment.
 

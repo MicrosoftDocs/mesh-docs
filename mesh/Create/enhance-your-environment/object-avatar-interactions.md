@@ -28,7 +28,7 @@ All the Interactables components have interaction callbacks and methods availabl
 
 An object that can be interacted with using XRI interactors.
 
-:::image type="content" source="../../../media/mesh-scripting/object-player-interactions/Picture1.png" alt-text="Meshinteractable properties (script)":::
+:::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture1.png" alt-text="Meshinteractable properties (script)":::
 
 #### Settings
 
@@ -143,7 +143,7 @@ An object that can be interacted with using XRI interactors.
 
 An object that tethers the avatar to its transform. This does a one-time position change for the local avatar and puts them into a tethered locomotion state based on the object's settings. Only one avatar at a time can be tethered.
 
-:::image type="content" source="../../../media/mesh-scripting/object-player-interactions/Picture2.png" alt-text="Avatar Tether Script":::
+:::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture2.png" alt-text="Avatar Tether Script":::
 
 #### Settings
 
@@ -168,7 +168,7 @@ Avatar tether exposes the following settings to visual scripting:
 
 An object that invokes events when the local avatar enters/exits its trigger volume. The events are invoked by a sibling TriggerZone.
 
-:::image type="content" source="../../../media/mesh-scripting/object-player-interactions/Picture3.png" alt-text="Avatar Trigger Script":::
+:::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture3.png" alt-text="Avatar Trigger Script":::
 
 #### Settings
 
@@ -182,7 +182,7 @@ AvatarTether exposes the following properties to visual scripting:
 
 An object that the avatar will anchor to when they’re inside the object’s trigger volume so that the avatar moves along with the object. Inherits from AvatarTrigger. Networked avatars will anchor as well so movement is smooth across the network. Any number of players can be anchored to a single object.
 
-:::image type="content" source="../../../media/mesh-scripting/object-player-interactions/Picture4.png" alt-text="AvatarAnchor":::
+:::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture4.png" alt-text="AvatarAnchor":::
 
 #### Settings
 
@@ -211,13 +211,13 @@ Setting up Travel Groups and Travel Points:
 1. Create a Travel Point Group: all travel points must belong to a group; a default group will be assigned to any travel points that don't have one. Every travel group must have a unique name.  
     1. To do this, create a new GameObject with a TravelPointGroup component attached.
 
-        :::image type="content" source="../../../media/mesh-scripting/object-player-interactions/Picture5.png" alt-text="Travelpoint3":::
+        :::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture5.png" alt-text="Travelpoint3":::
 
 1. Add Travel Points to the group. To do this, add new GameObjects as children of the Travel Point Group with a Travel Point Component attached.
 
-    :::image type="content" source="../../../media/mesh-scripting/object-player-interactions/Picture6.png" alt-text="Travelpointcomponentattached":::
+    :::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture6.png" alt-text="Travelpointcomponentattached":::
 
-    :::image type="content" source="../../../media/mesh-scripting/object-player-interactions/Picture7.png" alt-text="Travelpoint-zoomed-in":::
+    :::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture7.png" alt-text="Travelpoint-zoomed-in":::
 
     1. Look At Transform: the point you want the camera to look at after spawning into that transform. This will default to CenterTransform forward.  
     1. Radius: the size of the travel area. It’s a circle around the center transform.  
@@ -226,7 +226,7 @@ Setting up Travel Groups and Travel Points:
     1. Disabled travel groups can still be directly traveled into during the experience but only the enabled Travel Groups will be used when first joining.  
     1. In this example, only the StartingTravelGroup will be used when first joining.
 
-        :::image type="content" source="../../../media/mesh-scripting/object-player-interactions/Picture8.png" alt-text="Travelpointfirst join":::
+        :::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture8.png" alt-text="Travelpointfirst join":::
 
 Travel Point exposes the following methods to visual scripting:  
 - TravelToPoint() – Will travel the local avatar to this point
@@ -269,7 +269,7 @@ For manipulables to modify the Target Position:
 
 **Modify With Visual Script:** Enable this to modify target transform for manipulable bodies using visual script. 
 
-:::image type="content" source="../../../media/mesh-scripting/object-player-interactions/Picture9.png" alt-text="Modify-with-visual-script":::
+:::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture9.png" alt-text="Modify-with-visual-script":::
 
 ## Next steps
 
