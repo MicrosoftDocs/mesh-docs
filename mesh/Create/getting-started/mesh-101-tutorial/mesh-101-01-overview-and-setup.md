@@ -86,7 +86,7 @@ The Mesh Toolkit contains the *Mesh 101* tutorial project.
 
 1. In your browser, go to GitHub, and then navigate to the [*Mesh-Toolkit-Unity* repository](https://github.com/microsoft/Mesh-Toolkit-Unity).
 
-    ![______](../../../media/sample-mesh-101/469-toolkit-in-unity.png)
+    ![______](../../../media/sample-mesh-101/469-toolkit-in-github.png)
 
 1. Select the **Code** button, and then select **Download ZIP**.
 
@@ -112,4 +112,4 @@ package.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Chapter 2: Prepare the project](mesh-101-02-prepare-the-project)
+> [Chapter 2: Prepare the project](mesh-101-02-prepare-the-project.md)
