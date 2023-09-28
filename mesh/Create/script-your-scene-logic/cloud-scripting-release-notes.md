@@ -3,12 +3,70 @@ title: Cloud scripting release notes
 description: Review the release notes for Cloud Scripting for Mesh.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/13/2023
+ms.date: 9/27/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding, troubleshooting, problems
 ---
 
 # Cloud Scripting Release Notes
+
+## Release 27 Sept 2023
+### Versions
+|Component|Version|
+|-|-|
+| MeshApps Dom .NET SDK        |9.23124.8|
+| MeshApp CLI tool             |1.0.2309.2301|
+ 
+### Features
+- Added support for mesh interactables.  Travel to TravelPoints and TravelPointGroups, replace your TouchSensors with MeshInteractables, and use AvatarAnchor and AvatarTether for higher quality moving platform support.
+
+- The `Microsoft.MeshApps.Dom` `Vector2f`, `Vector3f`, `Vector4f` and `Matrix4f` have been replaced with their `System.Numerics` equivalents, namely `Vector2`, `Vector3`, `Vector4` and `Matrix4x4`.
+
+- The Unity `MeshApp` component has been renamed to `MeshCloudScripting`. As well, its default parent game object name is now `Mesh Cloud Scripting`. Select **GameObject** > **Mesh Toolkit** > **Set-up Cloud Scripting** on the menu bar to add a `Mesh Cloud Scripting` component to your scene. 
+
+### Bug Fixes
+
+### Upgrade instructions
+- When upgrading the mesh toolkit package, you should remove the reference to the old package, and them make the following renames:
+  - Copy the contents of `Assets/MeshApps` into `Assets/MeshToolkit`
+    - Rename the moved file `mesh_apps_manager_settings.asset` to `mesh_cloud_scripting_settings.asset` (and accompanying .meta file)
+    - Rename the moved file `MeshAppPublishSettings.asset` to `mesh_cloud_scripting_publish_settings.asset` (and accompanying .meta file)
+    - Rename the moved file `MeshAppPublishSettings.json` to `mesh_cloud_scripting_publish_settings.json` (and accompanying .meta file)
+  - Rename the `Assets/.MeshApps` folder to `Assets/.MeshCloudScripting`
+    - For every mesh cloud script within that folder, update the manifest file name from `meshapp.manifest.json` to `mesh.cloudscripting.manifest.json`
+- Once these renames are made, add the new mesh toolkit package reference, and make the following fixes to the project:
+
+  - Any TouchSensor in your Unity scenes and prefabs will no longer resolve and must be removed.  You should add MeshInteractableSetup to any node that you want to listen for Select events on.  Replace the usage of TouchSensorNode in your code with InteractableNode, and use the Selected event instead of the Clicked event.
+
+  - The Avatar.TeleportTo methods has been replaced with Avatar.TravelTo(TravelPointNode|TravelPointGroupNode).  Place TravelPointGroup and TravelPoint in your scene to indicate the desired destination, facing and other travel properties.
+
+  - The Avatar.AttachToMovingPlatform method has been removed.  Attachment to and detachment from moving platforms is now automatically handled using AvatarAnchor, and requires no scripting.
+
+  - The `Microsoft.MeshApps.Dom` namespace has been renamed to `Microsoft.Mesh.CloudScripting` - update all references in Mesh cloud scripts.
+
+  - Replace all occurences of `Vector2f`, `Vector3f`, `Vector4f` and `Matrix4f` originally in the `Microsoft.MeshApps.Dom` namespace with their `System.Numerics` equivalents, namely `Vector2`, `Vector3`, `Vector4` and `Matrix4x4`.
+
+  - The `Application` class and its implementations have been made internal. Replace `Application` by `IApplication` and `CloudApplication` by `ICloudApplication` in your code.
+
+  - The `Application.User` has been removed. As well, `Avatar.MovingPlatformChanged`, `Node.ClientActiveStateChanged`, `User.IsSuperUser` and `SceneNode.MessageDisplayed` have also been removed.
+
+  - The `Application.Logger` property has been removed. You can use Dependency Injection and capture an additional `ILogger` at the same location where you capture the `Application` object.
+
+  - Rename `UserStateChangedEventArgs` to `ParticipantStateChangedEventArgs`. Replace the `UserStateChanged` event in `CloudApplication` with `ParticipantStateChanged`. The type delegate associated with this event was also renamed from `UserStateChangedEventHandler` to `ParticipantStateChangedEventHandler`, so you'll need to update your code accordingly.
+
+  - Rename `DomObject` to `CloudObject`. Rename `DomObjectCreated` to  `CloudObjectCreated`. Rename `DomObjectDisposed` to `CloudObjectDisposed`. Rename `DomObjectPropertyChanged` to `CloudObjectPropertyChanged`.
+
+  - Rename `User` to `Participant`. `Node.SetActiveForUser(s)` to `SetActiveForParticipant(s)`. Rename `Node.GetActiveForUser` to `GetActiveForParticipant`. Rename `Node.GetActiveInHierarchyForUser` to `GetActiveInHierarchyForParticipant`. Rename `SceneNode.GetAvatarForUser` to `GetAvatarForParticipant`.
+
+  - Rename `Avatar.TravelTo` to `TravelToUri`.
+
+  - The `TimeStamp` type has been removed in favor of just using the `long` and `System.DateTime` built-ins.
+
+  - The `Matrix3d`, `Matrix3f`, `Matrix4d` and `Vector2d`, `Vector3d`, `Vector4d` types have been removed. 
+
+  - The `DomObject` property accessors have been refactored to go through a string-based indexer. Property getters should be refactored to `(<property_type>)cloudObject[<property_name>]`. Property setters should be refactored to `cloudObject[<property_name>].SetValue()`.
+
+  - The `AddCloudMeshApplication` method has been renamed to `AddCloudScriptingApplication`.
 
 ## Release 31 Aug 2023
 ### Versions

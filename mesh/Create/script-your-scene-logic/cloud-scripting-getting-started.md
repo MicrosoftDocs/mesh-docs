@@ -39,15 +39,15 @@ The following instructions show how to create a simple app with a cube that rota
 
 1. On the menu bar, select **GameObject** > **Mesh Toolkit** > **Create Mesh App**.
 
-   ![Screen shot of the Create Mesh App menu item.](../../media/mesh-scripting/getting-started/002-create-mesh-app.png)
+   ![Screen shot of the Create Mesh App menu item.](../../../media/mesh-scripting/getting-started/002-create-mesh-app.png)
 
    Note that a game object named **MeshApp** appears in the **Hierarchy** and is selected. This also creates a new C# application project under `Assets\.MeshApps\MyFirstMeshApp`.
 
-   ![img](../../media/mesh-scripting/getting-started/003-mesh-app-files.png)
+   ![img](../../../media/mesh-scripting/getting-started/003-mesh-app-files.png)
 
 1. You can use the **Open application folder** button to navigate to the project folder.
 
-   ![img](../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
+   ![img](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
 
 ### Modify the scene
 
@@ -57,11 +57,11 @@ The following instructions show how to create a simple app with a cube that rota
 1. On the menu bar, select **GameObject** > **3D object** > **Cube**.
 1. In the **Hierarchy**, drag the cube to the **MeshApp** object to make the cube a child of that object.
 
-   ![A screen shot of the Cube placed as a child to MeshApp.](../../media/mesh-scripting/getting-started/004-cube.png)
+   ![A screen shot of the Cube placed as a child to MeshApp.](../../../media/mesh-scripting/getting-started/004-cube.png)
 
 1. With the cube selected, in the **Inspector**, click **Add Component** and then select **Touch Sensor**.
 
-   ![img](../../media/mesh-scripting/getting-started/SimpleInteractionUnityAddTouchSensor.png)
+   ![img](../../../media/mesh-scripting/getting-started/SimpleInteractionUnityAddTouchSensor.png)
 
 1. In the **Transform** component, set the Cube's **Position** values to 0, 1, 3.
 1. Save the scene.
@@ -71,7 +71,7 @@ The following instructions show how to create a simple app with a cube that rota
 1. In the **Hierarchy**, select the **MeshApp** object.
 1. In the **Inspector**, navigate to the **MeshApp** component and then click the **Open application folder** button. This opens File Explorer and shows you a view of your project contents.
 
-   ![img](../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
+   ![img](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
 
 1. Open the `App.cs` script in your code editor.
 1. Note that in the App class, there are two variables:
@@ -122,19 +122,19 @@ The following instructions show how to create a simple app with a cube that rota
 
 1. In the **Inspector**, navigate to the **MeshApp** component and then select **Enable Application Debugging**.
 
-   ![img](../../media/mesh-scripting/getting-started/MeshAppCmpInspectorEnableDebugging.png)
+   ![img](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorEnableDebugging.png)
 
 1. Enter Play mode and select debugger.
 
-   ![img](../../media/mesh-scripting/getting-started/JITWindow.png)
+   ![img](../../../media/mesh-scripting/getting-started/JITWindow.png)
 
 1. Open the **App.cs** file, then add a break point, and then continue execution.
 
-   ![img](../../media/mesh-scripting/getting-started/JITSetBreakpoint.png)
+   ![img](../../../media/mesh-scripting/getting-started/JITSetBreakpoint.png)
 
 1. In Unity, click the cube.
 
-   ![img](../../media/mesh-scripting/getting-started/JITHitBreakpoint.png)
+   ![img](../../../media/mesh-scripting/getting-started/JITHitBreakpoint.png)
 
 
 ## Upload the Environment
@@ -144,31 +144,31 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
 1. Add your deployment configurations such as Azure subscription ID to the environment from the MeshUploader UI. You could do this when you create an environment: setup the configs in the **Mesh Environments** window, **Create Environment** tab, **Setup Mesh Script Configuration** block shown in the following images. Alternatively, you could set up and update the setting for an existing environment in the **Update Environment** steps.
 
-   ![img](../../media/mesh-scripting/getting-started/UploaderCreateUIProjectSettings.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderCreateUIProjectSettings.png)
 
 1. In the **Mesh Environments** window, **Update Environment** tab, select your environment and scene to upload. If the scene has a Mesh Script component, the deployment configurations will be shown along with the select scene. Select the **Modify Deployment Configs** tickbox to add or change the configs associated with the current environment and scene. Unselect the tickbox to save and update the settings and you should see the updated configs, as illustrated in the following images.
 
-   ![img](../../media/mesh-scripting/getting-started/UploaderUpdateUIProjectSettings.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderUpdateUIProjectSettings.png)
 
 1. In the **Mesh Environments** window, on the **Update Environment** tab, select **Build & Publish**. (To learn more about the Mesh Environments window, see our document titled *Get Started with Mesh Environments*.) TBD
 
-   ![img](../../media/mesh-scripting/getting-started/001-update-environment-tab.png)
+   ![img](../../../media/mesh-scripting/getting-started/001-update-environment-tab.png)
 
 1. As the Uploader builds and publishes your Environment, the application's infrastructure will be deployed to Azure and the application will be published.
 
    > [!TIP]
    > If this process doesn't complete successfully, see below on how to use **[Mesh APP CLI Tool](#appendix%3A-mesh-app-cli-tool)** to deploy manually.
    
-   ![img](../../media/mesh-scripting/getting-started/UploaderIntegrationDeployingMeshapp.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderIntegrationDeployingMeshapp.png)
 
-   ![img](../../media/mesh-scripting/getting-started/UploaderIntegrationPublishingMeshapp.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderIntegrationPublishingMeshapp.png)
 
 1. When the Uploader has finished, you should see the MeshApp deployment and publishing operation results in the results window
 
 > [!NOTE]
 > If you're publishing an Environment for both PC and Android, it's normal to see  multiple entries for *MeshApp Metadata* in the results window.
 
-   ![img](../../media/mesh-scripting/getting-started/UploaderIntegrationUploaderResults.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderIntegrationUploaderResults.png)
 
 ### Connect to the deployed application from Unity
 
@@ -191,15 +191,15 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
 2. Go to the main menu of the Mesh app.
 
-   ![img](../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_000.png)
+   ![img](../../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_000.png)
 
 2. Select "Settings" in the main menu.
 
-   ![img](../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_001.png)
+   ![img](../../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_001.png)
 
 2. Go to the "Troubleshooting" tab in "Settings" and toggle the "Show Mesh scripting error" button.
 
-   ![img](../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_002.png)
+   ![img](../../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_002.png)
 
 ## Mesh App CLI tool
 
@@ -215,7 +215,7 @@ If you need to use the CLI tool directly, it can be found in your Unity project 
 
 1. Disable MeshApp Cloud Host Tool Extension.
 
-   ![img](../../media/mesh-scripting/getting-started/UploaderIntegrationProjectSettings.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderIntegrationProjectSettings.png)
 
 1. Locate the `meshapp.exe` CLI tool under `{ProjectRoot}\Assets\.MeshApps\.Packages\{MeshToolkitVersion}\meshappcli`.
    If it's missing:

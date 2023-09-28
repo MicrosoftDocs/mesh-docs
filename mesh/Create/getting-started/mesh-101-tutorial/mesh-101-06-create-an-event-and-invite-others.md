@@ -51,7 +51,7 @@ can experience through the Mesh app for PC or Quest.
 
 1. When you're finished, select **Create event**.
 
-### Summary
+## Summary
 
 In this chapter, you learned how to create an Event that's based on your
 Environment. Attendees you invite can join the Event and then use the Mesh
