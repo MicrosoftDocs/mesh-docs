@@ -4,9 +4,9 @@ items:
 - name: Set up and Manage Mesh
   href: Setup/toc.yml
 - name: Attend events
-  href: Use/user-guide/toc.yml
+  href: Use/toc.yml
 - name: Organize events
-  href: Use/events-guide/toc.yml
+  href: Use/toc.yml
 - name: Develop environments
   href: Create/toc.yml
 - name: Resources
