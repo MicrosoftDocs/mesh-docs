@@ -25,8 +25,8 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 
     ![A screen shot of a computer Description automatically generated with low confidence](../../../media/sample-mesh-101/image011.png)
 
-In the **Scene** window, the letter "T" appears over every object that's using `TextMeshPro`. You can turn these off to achieve a less cluttered
-view. To do so:
+    In the **Scene** window, the letter "T" appears over every object that's using `TextMeshPro`. You can turn these off to achieve a less cluttered
+    view. To do so:
 
 1. In the toolbar above the upper right corner of the **Scene** window,
     select the Gizmos drop-down.
