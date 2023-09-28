@@ -4,26 +4,6 @@ items:
 - name: Hardware and license requirements
   href: hardware-license-requirements.md
 - name: Attend events
-  items:
-    - name: Getting started with Mesh
-      href: getting-started.md
-    - name: Personalize your avatar
-      href: avatars.md
-    - name: Join an event
-      href: join-an-event.md
-    - name: Mesh user controls
-      href: mesh-user-controls.md
+  href: user-guide/toc.yml
 - name: Organize events
-  items:
-    - name: Events overview
-      href: events-guide/events-overview.md
-      - name: Create event
-      href: events-guide/create-event-mesh-portal.md
-      - name: Customize event
-      href: events-guide/customize-event.md
-      - name: Customize event
-      href: events-guide/customize-event.md
-      - name: Produce event
-      href: events-guide/produce-event.md
-      - name: Help with events
-      href: events-guide/events-help.md
+  href: events-guide/toc.yml
