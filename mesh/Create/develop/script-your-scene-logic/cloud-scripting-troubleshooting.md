@@ -19,7 +19,7 @@ If a Mesh App stage during the Uploader process failed and the error shown is "C
 ### Mesh App Package Installation Failed
 1. If you encounter errors related to package installation or dotnet tool installation (`The tool package could not be restored` or `Verify your unity package integrity`), verify that you don't have non-valid package sources in your global nuget config (under `c:\users\UserName\AppData\Roaming\nuget\nuget.config` or default nuget config directory which is configured on the machine)
 2. If you encounter `package is already installed` error when starting Play Mode, exiting Play Mode and starting it again should mitigate that
-3. Verify access rights on directory `Assets\.MeshApps\.Packages`
+3. Verify access rights on directory `Assets\.MeshCloudScripting\.Packages`
 
 ### Mesh App Deploy & Publish Fails Due to Incorrect Azure Account being used.
 If you use multiple Azure accounts for deploying and publishing to multiple tenants, you will need to logout between environment publishing runs.
@@ -30,10 +30,10 @@ If you use multiple Azure accounts for deploying and publishing to multiple tena
 ## After running `meshapp publish`, nothing happens
 This error has been identified to be a build error.
 1. Use `Ctrl + C` to exit the command's execution.
-2. Rerun the command with the dotnet verbosity flag: `meshapp publish -v normal`. If logs still aren't informative enough to debug, increase the verbosity to `detailed` or `diagnostic`.
+2. Rerun the command with the dotnet verbosity flag: `meshcs publish -v normal`. If logs still aren't informative enough to debug, increase the verbosity to `detailed` or `diagnostic`.
 3. If build errors occurred, resolve them by doing the following:
    1. Open the csproj file for your Mesh App, then clean the project, and then rebuild it.
-   2. Rerun the `meshapp publish` command.
+   2. Rerun the `meshcs publish` command.
 
 ## After pressing play in Unity, nothing happens
 
@@ -46,12 +46,12 @@ This error has been identified to be a build error.
 
 1. Ensure that the scene plays as expected when you preview it locally.
 2. Ensure that the deployed environment matches the scene.map used by the Mesh App. To learn more about how this happens, see [the Mesh Scripting Getting Started Guide](Mesh_Scripting_Getting_Started_Guide.md#serialize-scene). TBD
-    1. In the Unity project, navigate to the **MeshApp** component and then press `Serialize Scene` to force scenegraph serialization.
+    1. In the Unity project, navigate to the **Mesh Cloud Scripting** component and then press `Serialize Scene` to force scenegraph serialization.
     2. Re-upload your environment with the Mesh Uploader.
     3. Re-deploy your Mesh App with the [CLI tool](Mesh_Scripting_Getting_Started_Guide.md#deploy-application-and-interactive-world-template).
 3. Test your local Unity version [against the deployed app](Mesh_Scripting_Getting_Started_Guide.md#connect-to-deployed-application-from-unity).
    - Check the logs in Unity for any errors if not working.
-4. You may need to manually restart the Mesh App to ensure that it's running correctly. From the root of the project, run `meshapp restart`, and then wait for the process to complete.
+4. You may need to manually restart the Mesh App to ensure that it's running correctly. From the root of the project, run `meshcs restart`, and then wait for the process to complete.
 5. If nothing helps, [report a bug](#how-to-report-bugs).
    -Inspect [Mesh app logs](#how-to-collect-logs), and include relevant information where possible in your bug report.
 

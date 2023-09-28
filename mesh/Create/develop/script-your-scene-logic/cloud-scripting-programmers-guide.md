@@ -139,15 +139,15 @@ Here's a simple Mesh app that rotates the cube each time it's clicked.  Replace 
         public Task StartAsync(CancellationToken token)
         {
             // First we find the TransformNode that corresponds to our Cube gameobject
-            var transform = _app.Scene.FindFirstChild<TransformNode>(); 
+            var transform = _app.Scene.FindFirstChild<TransformNode>();
 
-            // Then we find the TouchSensorNode child of that TransformNode
-            var touchSensor = transform.FindFirstChild<TouchSensorNode>();
+            // Then we find the InteractableNode child of that TransformNode
+            var sensor = transform.FindFirstChild<InteractableNode>();
 
-            // There's no Click event yet, so we'll listen to changes on the ClickTime property
-            touchSensor.Clicked += (_, _) =>
+            // Handle a button click
+            sensor.Selected += (_, _) =>
             {
-              // And we'll update the angle on each click
+                // Update the angle on each click
                 _angle += MathF.PI / 8;
                 transform.Rotation = new Rotation { X = 1, Y = 0, Z = 0, Angle = _angle };
             };
