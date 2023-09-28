@@ -16,10 +16,6 @@ This article will help you configure your development environment and start iter
 
 - Advanced Unity skills.
 - A username and password for the Azure Portal so you can upload your work.
-- Your account must be added as a Contributor to the Mesh world you’re trying to publish to. If you’re unsure about this, check with your IT admin.
-- There must be an existing Mesh World that contains a Space in the Azure Portal that you can upload your work to. To learn more about setting this up, see our document titled *Mesh IT Admin Guide*. TBD
-- There must be an existing Unity project that was created based on the process detailed in our document titled *Get Started with Mesh Environments* TBD, or you must create one. That document instructs you to load the *Mesh Toolkit* which contains the Unity package you need for Mesh Cloud Scripting. This package is named *com.microsoft.mesh.cloudscripting.client*.   
-- You should be at least somewhat familiar with event management. To learn more about this, see the event management section in the document titled *Mesh IT Admin Guide”*. TBD
 
 ## Software dependencies
 
