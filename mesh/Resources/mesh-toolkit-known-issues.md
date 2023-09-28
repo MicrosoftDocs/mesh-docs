@@ -12,6 +12,10 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 ## Version 23.12
 
+* The embedded videos show as black on Quest 2. (24096)
+
+    *Workaround:*  If you run into an issue where videos display and behave as expected on PC but not on Quest, add the video script to the video player.
+
 ### WebSlate
 
 * If loading too many WebSlates at once, lower-end computers may not be able to load all WebSlates, only some WebSlates will be loaded. We recommend using the CPA tool to measure rendering time and determine the proper allocations based on your environment's features.
