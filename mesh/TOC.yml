@@ -3,30 +3,8 @@ items:
   href: Overview.md
 - name: Set up and Manage Mesh
   href: Setup/toc.yml
-- name: Attend events
-  href: Use/user-guide/toc.yml
-  items:
-  - name: Getting started with Mesh
-    href: Use/user-guide/getting-started.md
-  - name: Personalize your avatar
-    href: Use/user-guide/avatars.md
-  - name: Join an event
-    href: Use/user-guide/join-an-event.md
-  - name: Mesh user controls
-    href: Use/user-guide/mesh-user-controls.md
-- name: Organize events
-  items:
-  - name: Events overview
-    href: Use/events-guide/events-overview.md
-  - name: Create event
-    href: Use/events-guide/create-event-mesh-portal.md
-  - name: Customize event
-    href: Use/events-guide/customize-event.md
-  - name: Produce event
-    href: Use/events-guide/produce-event.md
-  - name: Help with events
-    href: Use/events-guide/events-help.md
-  href: Use/events-guide/toc.yml
+- name: Attend or organize events
+  href: Use/toc.yml
 - name: Develop environments
   href: Create/toc.yml
 - name: Resources
