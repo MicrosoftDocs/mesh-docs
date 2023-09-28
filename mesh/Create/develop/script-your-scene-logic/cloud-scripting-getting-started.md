@@ -18,7 +18,7 @@ This article will help you configure your development environment and start iter
 - A username and password for the Azure Portal so you can upload your work.
 - Your account must be added as a Contributor to the Mesh world you’re trying to publish to. If you’re unsure about this, check with your IT admin.
 - There must be an existing Mesh World that contains a Space in the Azure Portal that you can upload your work to. To learn more about setting this up, see our document titled *Mesh IT Admin Guide*. TBD
-- There must be an existing Unity project that was created based on the process detailed in our document titled *Get Started with Mesh Environments* TBD, or you must create one. That document instructs you to load the *Mesh Toolkit* which contains the Unity package you need for Mesh Cloud Scripting. This package is named *mesh.meshapps.unityruntime*.   
+- There must be an existing Unity project that was created based on the process detailed in our document titled *Get Started with Mesh Environments* TBD, or you must create one. That document instructs you to load the *Mesh Toolkit* which contains the Unity package you need for Mesh Cloud Scripting. This package is named *com.microsoft.mesh.cloudscripting.client*.   
 - You should be at least somewhat familiar with event management. To learn more about this, see the event management section in the document titled *Mesh IT Admin Guide”*. TBD
 
 ## Software dependencies
@@ -37,7 +37,7 @@ The following instructions show how to create a simple app with a cube that rota
     > [!NOTE]
     > Renaming of Unity scenes isn't supported, and space characters aren't allowed in project and folder names.
 
-1. On the menu bar, select **GameObject** > **Mesh Toolkit** > **Create Mesh App**.
+1. On the menu bar, select **GameObject** > **Mesh Toolkit** > **Set-up Cloud Scripting**.
 
    ![Screen shot of the Create Mesh App menu item.](../../../media/mesh-scripting/getting-started/002-create-mesh-app.png)
 
