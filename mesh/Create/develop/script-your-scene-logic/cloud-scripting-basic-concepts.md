@@ -47,7 +47,7 @@ The component is responsible for managing the scripts you create and binding the
 
 Any further GameObjects that you add to the scene must be added as child objects to the MeshApp GameObject.
 
-Although MeshApp can't directly see the scene hierarchy of the rest of the scene, it can access APIs that the Mesh Browser provides--for example, it can get a list of Users in the scene or make an object "grabbable" by avatars. (**Note**: these APIs are still in development.)
+Although MeshApp can't directly see the scene hierarchy of the rest of the scene, it can access APIs that the Mesh Browser provides--for example, it can get a list of Users in the scene or react to an object being selected.
 
 ### Components and the Mesh Scene Graph
 
@@ -69,14 +69,14 @@ A typical Unity project containing a scene with an associated MeshApp would look
 	- **Assets**
 		- **Scenes**
 			- *MyScene.unity*
-		- **.MeshApps**
+		- **.MeshCloudScripting**
 			- **MyScene**
 				- *MyScene.csproj*
 				- *Program.cs*
 				- *scene.map*
 				- *App.cs*
   
-Each scene in your Unity project that contains the MeshApp component has a corresponding folder of the same name in a ".MeshApps" folder in your Assets directory. The MeshApp component creates this folder and its initial set of files which will compile to a fully working, though empty, MeshApp. Some of the initial files are shown above. `Program.cs` contains boilerplate code that takes care of:
+Each scene in your Unity project that contains the MeshApp component has a corresponding folder of the same name in a ".MeshCloudScripting" folder in your Assets directory. The MeshApp component creates this folder and its initial set of files which will compile to a fully working, though empty, MeshApp. Some of the initial files are shown above. `Program.cs` contains boilerplate code that takes care of:
 
 - configuring an [IHostBuilder](https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder) to launch the `App` [service](https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice).
 
