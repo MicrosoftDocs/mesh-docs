@@ -3,7 +3,7 @@ title: Mesh user controls
 description: What you can do when you have joined an event
 author: qianw211    
 ms.author: qianwen
-ms.date: 8/24/2023
+ms.date: 9/29/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -16,27 +16,10 @@ The Mesh Dashboard displays all Mesh events available to you. The Mesh Dashboard
 
 The Dashboard is viewable using the Mesh App on PC or Quest.
 
-### Dashboard vertical navigation bar
-
-On the left-side vertical navigation bar, there are mainly three types of items. From here you can open the **Home** view, see your Teams events, or browse and join event(s) and events in Mesh worlds that have
-been set up by your IT admin.
-
-The **Home** button at the top left shows you the events happening now and upcoming events for all worlds you have access to.
-
-![A screenshot showing the Home button on the Dashboard](media/image136.png)
-
-Select a pinned world in the left-side vertical navigation to see events for that specific world. All pinned worlds will be visible in this left navigation beneath the **Home** button.
-
-![A screenshot of a computer Description automatically generated](media/image137.png)
+![A screenshot of the Mesh dashboard](media/mesh-dashboard.png)
 
 >[!Note] 
->On the Dashboard, the changes from upcoming to live events are updated automatically in the **Events** view.
-
-### All Mesh Worlds
-
-The **All Mesh Worlds** button can be found in the lower left corner of the Dashboard. Use this button to explore Mesh worlds that are available to you. Also, you can choose to **Pin** or **Unpin** a Mesh World to the left vertical navigation bar of the Dashboard.
-
-![](media/image138.png)
+>On the Dashboard, the changes from upcoming to live events are updated automatically.
 
 ## Move around in your event
 
@@ -53,7 +36,7 @@ table with other avatars. To move around, press the **WASD** keys.
 - **E** to rotate right
 - Press and hold on **W, S, A,** or **D** to leave your chair when
     sitting
-- **C** to toggle between direct view and avatar view (1st and 3rd
+- **V** to toggle between direct view and avatar view (1st and 3rd
     person views)
 
 Here are some keyboard shortcuts for moving around in your event:
