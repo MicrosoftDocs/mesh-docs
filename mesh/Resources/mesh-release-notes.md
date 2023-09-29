@@ -3,7 +3,7 @@ title: Release notes for Mesh
 description: Mesh release notes
 author: qianw211    
 ms.author: qianwen
-ms.date: 9/12/2023
+ms.date: 9/25/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -11,6 +11,48 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 # Mesh release notes
 
 **Release notes and known issues for the Microsoft Mesh App on PC & Quest 2**
+
+## Version 5.2312.0
+
+### What's new
+
+* The keyboard shortcut for toggling between 1st and 3rd person views have been changed from **C** to **V**.
+* There's now a pop up notification to show up when you're experiencing poor network quality, which may negatively impact your experience in a Mesh event.
+
+    ![A toast notification warning the users of poor network quality.](media/toast-network-quality.png)
+
+#### New M365 Dashboard
+
+Public preview customers will see the new M365 Dashboard. 
+
+![A screenshot of the new M365 Dashboard](media/m365-dashboard.png)
+
+#### Screen share
+
+Screen sharing is now available to event hosts. To add a screen share window to your event, select the **Environment Editor** on the app bar:
+
+![A screenshot of the Mesh event app bar](media/environment-editor.png)
+
+In the **Environment Editor** dialog, select the **+** button to bring up the artifacts **Catalog** dialog and find the **Screenshare** artifact.
+    
+![A screenshot of the **Environment Editor** and the **Catalog** dialogs](media/environment-editor-catalog.png)
+
+Once the **Screenshare** artifact has been added to the event, you'll see the **screen share** button from the **Host panel**.
+
+![A screenshot of the **app bar -> Host Panel** button](media/app-bar-host-panel.png)
+
+You can now share screen with the participants of your event:
+
+![A screenshot of the Host Panel controls](media/host-panel.png)
+
+>[!Note]
+>For event hosts the **Screenshare** artifact currently won't display the screen content being shared, but participants to your event will be able to see the full screen share.
+>  
+>If you have added multiple **Screenshare** artifacts to your event, all these artifacts will display the same screen share content.
+
+### Resolved product issues
+
+
 
 ## Version 5.2311.0
 
@@ -53,14 +95,14 @@ The **Environment Editor** panel can help to add content to your Event or Templa
 1. To position your artifact - with the environment editor open:
 
     1. Select and drag your artifact to move it left, right, up, or down. 
-    1. **Alt + Select** and drag up or down to move the artifact toward and away from you 
+    1. **Alt + Select** and drag up or down to move the artifact toward and away from you.
     1. **Shift + Select** and drag up or down to make the artifact bigger or smaller. 
     1. You can also use the rotation and scale handles on the artifact to rotate and scale your artifact. Just select the handle and drag to rotate or scale. 
  
     Make sure you check out the position from different angles to verify you’ve placed it properly. 
     
     >[!Tip]
-    >while you are moving an artifact you’ll see a small line drawn from your artifact down to the floor. This can help you position your artifacts relative to landmarks in the scene such as the edge of a stage or a piece of furniture. 
+    >While you are moving an artifact, you’ll see a small line drawn from your artifact down to the floor. This can help you position your artifacts relative to landmarks in the scene such as the edge of a stage or a piece of furniture. 
 
 ### Resolved product issues
 
