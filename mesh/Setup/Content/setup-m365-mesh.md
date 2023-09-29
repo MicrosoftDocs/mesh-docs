@@ -26,7 +26,6 @@ To enable access, please visit the M365 Admin Center and enable the policy via t
    > [!div class="nextstepaction"]
    > [M365 Apps Admin Center](https://config.office.com/officeSettings/)
 
-Learn how to [Enable Mesh experiences in OCPS](#enable-mesh-apps-in-ocps).
 
 ## Prerequisites
 
@@ -34,6 +33,12 @@ To enable Mesh in your managed tenant, you must have one of the following roles 
 - Global Administrator
 - Security Administrator
 - Office Apps Admin
+
+### Ensure you have the proper licensing
+
+For the Microsoft Mesh app:
+
+[INSERT BLURB ABOUT LICENSING]
 
 ## Enable Mesh in M365 Apps Admin Center
 
@@ -72,4 +77,4 @@ Users will see a new license agreement dialogue in the upcoming release for Mesh
 :::image type="content" source="../../media/m365-setup-guide/End-user-license-agreement.png" alt-text="End user license agreement for Mesh and spatial audio.":::
 
    > [!div class="nextstepaction"]
-   > [Mesh Portal migration guide](m365-migration-guide.md)
+   > [Set up Mesh Portal (Preview)](setup-mesh-portal.md)
