@@ -3,7 +3,15 @@ items:
     href: development-overview.md
   - name: Getting started
     href: getting-started/toc.yml
-  - name: Design
+  - name: Build your basic environments
+    href: build-your-basic-environment/toc.yml
+  - name: Design your environment
     href: design/toc.yml
-  - name: Develop
-    href: develop/toc.yml
+  - name: Enhance your environment
+    href: enhance-your-environment/toc.yml
+  - name: Script your scene logic
+    href: script-your-scene-logic/toc.yml
+  - name: Debug and optimize performance
+    href: debug-and-optimize-performance/toc.yml
+  - name: Make your environment available for events
+    href: make-your-environment-available-for-events/toc.yml

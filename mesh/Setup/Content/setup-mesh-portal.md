@@ -102,4 +102,4 @@ See how to [build and publish your Environment](../../Create/design-and-develop/
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Mesh user guide](../../Use/user-guide/mesh-user-guide.md)
+   > [Mesh user overview](../../user-guide/usage-overview.md)
