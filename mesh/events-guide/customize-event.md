@@ -165,5 +165,3 @@ While in preview mode, you can test out using the control panel to play your vid
    > [!div class="nextstepaction"]
    > [Customize your event](produce-event.md)
 
-   > [!div class="nextstepaction"]
-   > [Event help](events-help.md)
