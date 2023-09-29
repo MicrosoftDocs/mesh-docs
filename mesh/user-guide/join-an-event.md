@@ -73,4 +73,10 @@ You can interact with any games, puzzles, or interactive elements in the event e
 ## Next steps
 
    > [!div class="nextstepaction"]
+   > [Personalize your avatars](avatars.md)
+
+   > [!div class="nextstepaction"]
    > [Mesh user controls](mesh-user-controls.md#mesh-controls-overview)
+
+   > [!div class="nextstepaction"]
+   > [Create an event](events-guide/create-event.md)
