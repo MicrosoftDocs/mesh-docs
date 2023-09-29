@@ -79,8 +79,21 @@ Use the environment editor to add content to your environment that can be contro
     Note the **Copy**, **Edit**, and **Delete** buttons available for the selected artifact.
 
 1. Now you can manipulate the artifact as you'd like by selecting it with your cursor, dragging it to another location, or using the edges of the artifacts to scale them as you see fit.
-
     :::image type="content" source="../media/mesh-event-producer-guide/environment-editor-maneuver-artifact2.png" alt-text="Move artifact with avatar arm up":::
+
+    To position your artifact - with the environment editor open:
+
+    1. Select and drag your artifact to move it left, right, up, or down. 
+    1. **Alt + Select** and drag up or down to move the artifact toward and away from you 
+    1. **Shift + Select** and drag up or down to make the artifact bigger or smaller. 
+    1. You can also use the rotation and scale handles on the artifact to rotate and scale your artifact. Just select the handle and drag to rotate or scale. 
+ 
+    Make sure you check out the position from different angles to verify you’ve placed it properly. 
+    
+    >[!Tip]
+    >while you are moving an artifact you’ll see a small line drawn from your artifact down to the floor. This can help you position your artifacts relative to landmarks in the scene such as the edge of a stage or a piece of furniture.
+
+    
 
 ### Video artifact requirements
 
@@ -151,6 +164,3 @@ While in preview mode, you can test out using the control panel to play your vid
 
    > [!div class="nextstepaction"]
    > [Customize your event](produce-event.md)
-
-   > [!div class="nextstepaction"]
-   > [Event help](events-help.md)

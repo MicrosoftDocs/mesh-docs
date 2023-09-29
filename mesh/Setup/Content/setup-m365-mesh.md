@@ -1,6 +1,6 @@
 ---
-title: Set up M365 for Mesh
-description: Prepare your organization to use M365 for Mesh.
+title: Set up Microsoft Mesh
+description: Set up Microsoft Mesh with M365.
 author: typride
 ms.author: tmilligan
 ms.date: 7/27/2023
@@ -8,7 +8,7 @@ ms.topic: Tutorial
 keywords: Microsoft Mesh, M365, OCPS, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-# Set up Microsoft 365 for Mesh
+# Set up Microsoft Mesh
 
 In the Microsoft 365 Apps Admin Center (MAC) admins can enable access to Mesh experiences. This covers access to the following experiences:
 
@@ -26,7 +26,6 @@ To enable access, please visit the M365 Admin Center and enable the policy via t
    > [!div class="nextstepaction"]
    > [M365 Apps Admin Center](https://config.office.com/officeSettings/)
 
-Learn how to [Enable Mesh experiences in OCPS](#enable-mesh-apps-in-ocps).
 
 ## Prerequisites
 
@@ -34,6 +33,19 @@ To enable Mesh in your managed tenant, you must have one of the following roles 
 - Global Administrator
 - Security Administrator
 - Office Apps Admin
+
+### Licensing requirements
+
+For Microsoft Mesh, you will need the following:
+
+- Teams premium license for Commercial use.
+
+> [!NOTE]
+> We don't support tenants with worldwide public sector, EDU, or GCC licenses.
+
+- A pre-requisite license for Teams Premium, as outlined in [Microsoft Teams Premium Licensing - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
+
+Learn more about [Teams for enterprise](https://www.microsoft.com/en-us/microsoft-teams/enterprise#pricing).
 
 ## Enable Mesh in M365 Apps Admin Center
 
@@ -72,4 +84,4 @@ Users will see a new license agreement dialogue in the upcoming release for Mesh
 :::image type="content" source="../../media/m365-setup-guide/End-user-license-agreement.png" alt-text="End user license agreement for Mesh and spatial audio.":::
 
    > [!div class="nextstepaction"]
-   > [Mesh Portal migration guide](m365-migration-guide.md)
+   > [Set up Mesh Portal (Preview)](setup-mesh-portal.md)
