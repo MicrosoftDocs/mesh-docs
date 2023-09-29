@@ -5,5 +5,7 @@ items:
     href: download-the-mesh-toolkit.md
   - name: Choose your journey
     href: choose-your-journey.md
+  - name: Samples
+    href: samples/toc.yml
   - name: Mesh 101 tutorial
     href: mesh-101-tutorial/toc.yml

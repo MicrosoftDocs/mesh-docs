@@ -99,3 +99,14 @@ Select **Customize** to fine tune your Avatar's appearance while in an event!
 To find out about another participant in your event, click the nametag above an avatar, and then select the **Contact card** icon.
 
 ![](media/image096.png)
+
+## Next steps
+
+  > [!div class="nextstepaction"]
+   > [Personalize your avatars](avatars.md)
+
+   > [!div class="nextstepaction"]
+   > [Join an event](join-an-event.md)
+
+   > [!div class="nextstepaction"]
+   > [Create an event](events-guide/create-event.md)
