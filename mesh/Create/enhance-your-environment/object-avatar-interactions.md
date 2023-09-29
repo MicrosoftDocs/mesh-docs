@@ -49,8 +49,9 @@ Setup script for defining the properties of an object that can be interacted wit
     - **Hand Pose Shape:** The hand pose shape to put the avatar's hand into when equipped.  
     - **Hand Pose Size:** Size of the hand pose from 0 – 1.  
 - **Throw Settings**  
-    - **Throwable:** Whether or not the object can be thrown. Throwable objects will enter the avatar into an aim state when the space bar is held  
-    - **Throw Velocity:** The velocity to throw the object at when the space bar is released
+    - **Throwable:** Whether or not the object can be thrown. Throwable objects will enter the avatar into an aim state when the left mouse button is held  
+    - **Min Throw Velocity:** The minimum velocity to throw an object. This is only used on Quest.
+    - **Max Throw Velocity:** The maxiumum velocity to throw an object. This is the velocity value used on PC. On quest the velocity will be scaled based on the user's physical arm movement.
     - **Arm Extension on Aim** – The amount to extend the arm when in aim mode.  
     - **Aim Hand Pose:**  
         - **Hand Pose Shape:** The hand pose shape to put the avatar's hand into when aiming.  
