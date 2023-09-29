@@ -1,6 +1,6 @@
 ---
-title: Set up M365 for Mesh
-description: Prepare your organization to use M365 for Mesh.
+title: Set up Microsoft Mesh
+description: Set up Microsoft Mesh with M365.
 author: typride
 ms.author: tmilligan
 ms.date: 7/27/2023
@@ -8,7 +8,7 @@ ms.topic: Tutorial
 keywords: Microsoft Mesh, M365, OCPS, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-# Set up Microsoft 365 for Mesh
+# Set up Microsoft Mesh
 
 In the Microsoft 365 Apps Admin Center (MAC) admins can enable access to Mesh experiences. This covers access to the following experiences:
 
@@ -34,11 +34,18 @@ To enable Mesh in your managed tenant, you must have one of the following roles 
 - Security Administrator
 - Office Apps Admin
 
-### Ensure you have the proper licensing
+### Licensing requirements
 
-For the Microsoft Mesh app:
+For Microsoft Mesh, you will need the following:
 
-[INSERT BLURB ABOUT LICENSING]
+- Teams premium license for Commercial use.
+
+> [!NOTE]
+> We don't support tenants with worldwide public sector, EDU, or GCC licenses.
+
+- A pre-requisite license for Teams Premium, as outlined in [Microsoft Teams Premium Licensing - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
+
+Learn more about [Teams for enterprise](https://www.microsoft.com/en-us/microsoft-teams/enterprise#pricing).
 
 ## Enable Mesh in M365 Apps Admin Center
 
