@@ -17,7 +17,7 @@ With the transition to M365 and the Mesh Portal, events are handled slightly dif
 
 ## Create an event
 
-1. Open the [Mesh Portal](https://portal-preview.mesh.microsoft.com/).
+1. Open the [Mesh Portal](https://portal.mesh.microsoft.com/).
 1. Log in with your corporate account.
 1. In the Home page, select **Events** in the left nav.
 
