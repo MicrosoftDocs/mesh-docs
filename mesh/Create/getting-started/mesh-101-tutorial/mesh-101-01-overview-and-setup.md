@@ -24,6 +24,9 @@ multi-user interaction and communication.
 The tutorial project is named *Mesh101.Unity* and is included in the
 Mesh Toolkit.
 
+> [!IMPORTANT]
+> The tutorial project is governed by the MIT license as shown in the [LICENSE.MD](https://github.com/microsoft/Mesh-Toolkit-Unity/blob/main/LICENSE) file in the *Mesh-Toolkit-Unity* repository. However, the samples functionality is dependent on the Mesh Toolkit, which is governed by a separate license, and contains 3rd party software. 
+
 The tutorial is structured as follows:
 
 This article: Overview and setup
