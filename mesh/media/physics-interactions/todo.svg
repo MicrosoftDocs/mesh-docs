@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800"
+   height="600"
+   viewBox="0 0 800 600"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="todo.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="4"
+     inkscape:cx="142.75"
+     inkscape:cy="72.5"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid11"
+       spacingx="1"
+       spacingy="1"
+       empspacing="4" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <color-profile
+       name="sRGB-IEC61966-2.1"
+       xlink:href="file:///C:/WINDOWS/system32/spool/drivers/color/sRGB%20Color%20Space%20Profile.icm"
+       id="color-profile715" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g643"
+       inkscape:export-filename="todo-write-frame1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#000000;stroke:none"
+         id="rect129"
+         width="129"
+         height="20"
+         x="16"
+         y="16"
+         inkscape:export-filename="todo-write-frame1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:16px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Heavy';fill:#ff0000;stroke:none"
+         x="21.757812"
+         y="31.597656"
+         id="text289"><tspan
+           sodipodi:role="line"
+           id="tspan287"
+           x="21.757812"
+           y="31.597656">TO DO · WRITE</tspan></text>
+    </g>
+    <g
+       id="g648"
+       inkscape:export-filename="todo-write-frame2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#ff0000;stroke:none"
+         id="rect619"
+         width="129"
+         height="20"
+         x="16"
+         y="44" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:16px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Heavy';fill:#000000;stroke:none"
+         x="21.757812"
+         y="59.597656"
+         id="text623"><tspan
+           sodipodi:role="line"
+           id="tspan621"
+           x="21.757812"
+           y="59.597656">TO DO · WRITE</tspan></text>
+    </g>
+    <g
+       id="g656"
+       inkscape:export-filename="todo-edit-frame1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       transform="translate(0,64)">
+      <rect
+         style="fill:#000000;stroke:none"
+         id="rect650"
+         width="114"
+         height="20"
+         x="16"
+         y="16"
+         inkscape:export-filename="todo-write-frame1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:16px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Heavy';fill:#ffd42a;stroke:none"
+         x="21.757812"
+         y="31.597656"
+         id="text654"><tspan
+           sodipodi:role="line"
+           id="tspan652"
+           x="21.757812"
+           y="31.597656">TO DO · EDIT</tspan></text>
+    </g>
+    <g
+       id="g672"
+       inkscape:export-filename="todo-edit-frame2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       transform="translate(0,92)">
+      <rect
+         style="fill:#ffd42a;stroke:none;font-variation-settings:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         id="rect666"
+         width="114"
+         height="20"
+         x="16"
+         y="16"
+         inkscape:export-filename="todo-write-frame1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:16px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Heavy';fill:#000000;stroke:none"
+         x="21.757812"
+         y="31.597656"
+         id="text670"><tspan
+           sodipodi:role="line"
+           id="tspan668"
+           x="21.757812"
+           y="31.597656">TO DO · EDIT</tspan></text>
+    </g>
+  </g>
+</svg>
