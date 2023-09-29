@@ -19,7 +19,7 @@ The Mesh samples are a great way to learn about the different kinds of Mesh Expe
 
 - **Physics Effects Gallery**: Contains a programmer-art designed scene that demonstrates the power of combining appealing visuals with the creative use of Mesh Physics features. [Learn more about the Physics Effects Gallery sample](physics-effects-gallery.md).
 
-- **Dartroom**: A saloon-style room with a dart game to showcase interactive Mesh Physics features. [Learn more about the Dartroom sample](dartroom.md).
+- **Dartroom**: A saloon-style room with a dart game to showcase interactive Mesh Physics features. [Learn more about the Dartroom sample](dart-room.md).
 
 - **Science Building**: An expansive museum exhibiting the power of Mesh Physics to create dynamic, engaging experiences. [Learn more about the Science Building sample](science-building.md).
 
@@ -27,7 +27,7 @@ The Mesh samples are a great way to learn about the different kinds of Mesh Expe
 
 **To start with a sample**:
 
-1. If you haven't done so already, [download and unzip the Mesh toolkit](download-the-mesh-toolkit.md).
+1. If you haven't done so already, [download and unzip the Mesh toolkit](../download-the-mesh-toolkit.md).
 
 1. In the Unity Hub, select **Open** > **Add project from disk**, and then navigate to the **Mesh-Toolkit-Unity-main** folder that contains your samples.
 
@@ -35,11 +35,11 @@ The Mesh samples are a great way to learn about the different kinds of Mesh Expe
 
 1. In Unity, navigate to **Assets** > **Scenes** and then open the scene you want---this will vary from sample to sample. For example, in the *Science Building* project, you would open the **ScienceBuilding** scene.
 
-Here's an example of what you'll find in that scene:![](../../../media/get-started-developing-mesh/image007.png)
+Here's an example of what you'll find in that scene:![___](../../../media/get-started-developing-mesh/image007.png)
 
 ## Contributions
 
-Mesh is a new product from Microsoft, and at this time we are not accepting code contributions to our samples.  If you have any feedback or if you run into any issues with the samples or the Mesh Toolkit, do the following: in a Unity project that has the Mesh Toolkit package installed, select **Mesh Toolkit** -> **Give feedback to Microsoft** and then use the feedback link in the Mesh Toolkit to let us know.
+Mesh is a new product from Microsoft, and at this time we are not accepting code contributions to our samples. If you have any feedback or if you run into any issues with the samples or the Mesh Toolkit, do the following: in a Unity project that has the Mesh Toolkit package installed, select **Mesh Toolkit** -> **Give feedback to Microsoft** and then use the feedback link in the Mesh Toolkit to let us know.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or

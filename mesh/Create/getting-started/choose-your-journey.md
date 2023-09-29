@@ -27,7 +27,7 @@ If you're ready to starting building Mesh experiences, you have several approach
 
 It's easiest to start with a sample file to ensure all packages are configured in your Unity project. We recommend this option if you haven't already created a Mesh project in Unity.
 
-[Learn more about starting with a Mesh sample](samples-overview.md).
+[Learn more about starting with a Mesh sample](samples/samples-overview.md).
 
 ## Upgrade packages in a pre-existing Mesh project
 
@@ -43,19 +43,19 @@ Note that you may encounter some configuration notifications with upgrading and 
 
 If you'd like to start from scratch and build from the ground up, create a simple 3D URP (Core), then [download and unzip the Mesh toolkit](download-the-mesh-toolkit.md), and then import the Toolkit package into your project.
 
-For a much more details explanation of how to set up a project for Mesh development, see the article named [Create a new Unity project](create-new-mesh-project.md).
+For a more detailed explanation of how to set up a project for Mesh development, see the article named [Create a new Unity project](../build-your-basic-environment/create-a-new-project.md).
 
 ## Add more features to your Environment
 
 Once you've created an Environment through the paths mentioned above, you can add features including:
 
-- [WebViews to display Web pages](../design-and-develop/enhance-your-environment/webcontent.md)
+- [WebViews to display Web pages](../enhance-your-environment/webcontent.md)
 
-- [Cloud scripting](../design-and-develop/script-your-scene-logic/cloud-scripting-getting-started.md), [visual scripting](../design-and-develop/script-your-scene-logic/visual-scripting.md), and [Mesh Physics](../design-and-develop/enhance-your-environment/physics-interactions?branch=PuP-Mesh-Docs.md) to add interactivity
+- [Cloud scripting](../script-your-scene-logic/cloud-scripting-getting-started.md), [visual scripting](../script-your-scene-logic/visual-scripting.md), and [Mesh Physics](../enhance-your-environment/physics-interactions.md) to add interactivity
 
 - And more!
 
 ## Next Steps
 
    > [!div class="nextstepaction"]
-   > [Create a new project](../design-and-develop/build-your-basic-environment/create-a-new-project.md)
+   > [Create a new project](../build-your-basic-environment/create-a-new-project.md)

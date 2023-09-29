@@ -25,7 +25,7 @@ In this project, you'll find:
 * **Darts**: You can throw these in the camera direction. They're "sticky," so they'll stay attached to anything they hit.
 * **Globe**: The globe rotates, demonstrating a motored hinge. The globe also has a gravity field which influences small objects entering a spherical trigger volume. Drag some cups close to the globe and watch them rotate around it like satellites.
 
-![A screenshot of the gravity globe in the Dartroom sample.](../../../media/samples/004-gravity-globe.png)
+![A screenshot of the gravity globe in the Dartroom sample.](../../../media/samples/004-dartroom-gravity-globe.png)
 
 ## Feedback and contributions
 
