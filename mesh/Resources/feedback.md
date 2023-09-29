@@ -3,7 +3,7 @@ title: Feedback
 description: Here's how to provide feedback for Microsoft Mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 8/24/2023
+ms.date: 9/25/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -16,6 +16,6 @@ For documentation feedback, click this link: [*Mesh TAP Documentation Feedback*]
 
 For product feedback, use the **Feedback** button inside your Mesh experience. This ensures that your feedback and bug reporting will be triaged and incorporated quickly.
 
-![A screenshot of the Feedback menu in Mesh](media/image098.jpg)
+![A screenshot of the Feedback menu in Mesh](media/feedback-dialog.png)
 
 If you're not able to give feedback or report bugs using the **Feedback** button in the Mesh App, you can chat with your Microsoft partners in Teams, or contact your Microsoft partners directly.
