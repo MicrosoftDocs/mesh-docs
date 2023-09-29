@@ -40,7 +40,6 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/mesh/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
       "uhfHeaderId": "MSDocsHeader-Hololens",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/mesh-docs",
