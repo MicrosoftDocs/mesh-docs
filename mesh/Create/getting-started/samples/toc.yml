@@ -1,4 +1,6 @@
 items: 
+  - name: Samples overview
+    href: samples-overview.md
   - name: Toybox
     href: toybox.md
   - name: Physics Effects Gallery
