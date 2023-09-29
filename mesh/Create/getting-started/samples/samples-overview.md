@@ -36,3 +36,17 @@ The Mesh samples are a great way to learn about the different kinds of Mesh Expe
 1. In Unity, navigate to **Assets** > **Scenes** and then open the scene you want---this will vary from sample to sample. For example, in the *Science Building* project, you would open the **ScienceBuilding** scene.
 
 Here's an example of what you'll find in that scene:![](../../../media/get-started-developing-mesh/image007.png)
+
+## Contributions
+
+Mesh is a new product from Microsoft, and at this time we are not accepting code contributions to our samples.  If you have any feedback or if you run into any issues with the samples or the Mesh Toolkit, do the following: in a Unity project that has the Mesh Toolkit package installed, select **Mesh Toolkit** -> **Give feedback to Microsoft** and then use the feedback link in the Mesh Toolkit to let us know.
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+The [Samples Overview](samples-overview.md) page contains instructions on how to download the Mesh Toolkit.
+
+## License
+
+The Mesh samples are governed by the MIT license as shown in the [LICENSE.MD](https://github.com/microsoft/Mesh-Toolkit-Unity/blob/main/LICENSE) file in the *Mesh-Toolkit-Unity* repository. However, the samples functionality is dependent on the Mesh Toolkit, which is governed by a separate license, and contains 3rd party software. 
