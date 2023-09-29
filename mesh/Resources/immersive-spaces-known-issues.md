@@ -10,21 +10,9 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 # Active known issues and limitations - Immersive Spaces for Teams
 
-## Version 5.2312.0
+## Version 5.2311.0
 
 ### Audio
-
-1. <mark> Need to synchronize speaker and microphone selection between Teams and immersive spaces.
-
-2. <mark> Users need to be informed when network issues may affect audio quality.
-
-3. <mark> User're denied mic permissions ( ACS connection is blocked when Teams continues to handle a Teams call).
-
-4. <mark> Need to improved transition between audio zones
-
-5. <mark> Need to continuouly work on audio quality improvements: 
-
-    * <mark> Improved audio attenuation for different environments and meeting scenarios.
 
 1. **Default Mic/Speaker Settings**: When going to the immersive space, Mesh handles the audio for users instead of Teams in order to enable spatial audio. However, Mesh uses the default OS settings, which might be a different mic and speaker that Teams uses. This may sometimes result in loss of audio for speaker/mic. In case of audio inconsistencies when in the immersive space, users can switch which mic/speaker Mesh uses by going to the Immersive space and select **Settings > Display & sound > Devices**, and updating mic and speaker settings.
 1. **Bluetooth Headset Limitations**: Most Bluetooth audio headsets switch to mono output when the microphone is in use. With mono output you will not be able to experience spatial audio. Here’s what you can do to resolve the issue: 
