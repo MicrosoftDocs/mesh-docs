@@ -41,7 +41,7 @@ Follow the steps below to see a list of events and join an event.
 
 4. Before you join an event, you can also select or customize your avatars from the pre-join dialog.
 
-    ![A screenshot of the pre-join dialog with Avatars menu items highlighted](media/pre-join-dialog-avatars.png)
+    ![A screenshot of the pre-join dialog with Avatars menu items highlighted](media/prejoin-dialog-avatars.png)
 
     For more information, see [Personalize your avatar](avatars.md).
 
