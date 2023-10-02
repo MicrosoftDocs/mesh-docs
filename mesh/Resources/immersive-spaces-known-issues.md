@@ -64,11 +64,12 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 ### Other known issues
 
-1. Can't switch environment in a Teams channel meeting. (24294)
+1. Can't switch environment in a Teams channel meeting.
 
 1. Text for **Microphone** settings in the pre-join dialog box isn’t readable in high contrast mode.
 
 1. On Quest, if you try to rotate the avatar preview in the Avatar Customizer, your field of view will also move.
+
 1. Mesh immersive spaces do not properly support low bandwidth situation: users who are experiencing poor network quality may see problems such as missing avatars and audio glitches. We are actively working on integrating notifications to alert users when they are in this state.
 
 
