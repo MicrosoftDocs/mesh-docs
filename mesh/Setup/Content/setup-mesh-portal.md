@@ -15,7 +15,7 @@ The Mesh portal is where you can create Mesh events, invite co-organizers or att
 :::image type="content" source="../../media/m365-migration-guide/Homepage.png" alt-text="Mesh portal homepage":::
 
 > [!NOTE]
-> Azure management of Mesh is solely required for Mesh scripting resources. For more info on Mesh scripting and Azure, see the [Set up cloud scripting infrastructure in Azure](setup-cloud-scripting-infrastructure.md).
+> Azure management of Mesh is solely required for Mesh scripting resources. For more info on Mesh scripting and Azure, see the [set up cloud scripting infrastructure in Azure](setup-cloud-scripting-infrastructure.md).
 
 ## Migrating notes
 
@@ -38,6 +38,7 @@ Microsoft 365 Admins should use the M365 Admin Center (MAC) to enable the Mesh a
 Mesh worlds are the home for your custom environments that you upload through the Mesh Toolkit Uploader in Unity.
 
 You can assign:
+
 - **Owners**: Can manage membership and change settings for the world.
 - **Members**: Can access and manage event templates and use the collaboration session to customize environments in the Mesh App.
 
@@ -102,4 +103,4 @@ See how to [build and publish your Environment](../../Create/design-and-develop/
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Mesh user overview](../../user-guide/usage-overview.md)
+   > [Getting started with Microsoft Mesh](../../user-guide/getting-started.md)
