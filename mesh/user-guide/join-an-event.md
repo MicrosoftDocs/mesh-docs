@@ -40,23 +40,29 @@ Follow the steps below to see a list of events and join an event.
 
     ![A screenshot of a computer Description automatically > generated](media/dashboard-view-event.png)
 
-3. A **Pre-join** dialog box will appear. You can now select your audio
-    device from the **Pre-join** dialog.
-
-    ![A screenshot of the Mesh prejoin screen](media/prejoin-dialog-audio.png)
-
-    and the **Devices** dialog box appears, where you can test your audio devices:
-
-    ![A screenshot of the audio device test dialog that can be accessed from the prejoin screen](media/audio-device-test-ui.png)
-
-    >[!Note] 
-    >In the Mesh app on PC, the Windows default speaker will always be used by Mesh. You can change the speaker settings in the Windows **Settings** -\> **System** -\> **Sound settings** dialog box.
-
-4. Before you join an event, you can also select or customize your avatars from the pre-join dialog.
+3. A **Pre-join** dialog box will appear before you join an event. You can select or customize your avatars from the pre-join dialog.
 
     ![A screenshot of the pre-join dialog with Avatars menu items highlighted](media/prejoin-dialog-avatars.png)
 
     For more information, see [Personalize your avatar](avatars.md).
+
+### Setup audio device
+
+You can select your audio device from the **Pre-join** dialog.
+
+![A screenshot of the Mesh prejoin screen](media/prejoin-dialog-audio.png)
+
+and the **Devices** dialog box appears, where you can test your audio devices:
+
+![A screenshot of the audio device test dialog that can be accessed from the prejoin screen](media/audio-device-test-ui.png)
+
+>[!Note] 
+>In the Mesh app on PC, the Windows default speaker will always be used by Mesh. You can change the speaker settings in the Windows **Settings** -\> **System** -\> **Sound settings** dialog box.
+
+Once inside Mesh, you can also select and setup your audio devices in the **Settings** dialog, **Display & sound -> Devices**.
+
+![A screenshot of the Settings dialog](media/settings-audio-devices.png)
+
 
 ## From the Mesh app on Quest 2
 
