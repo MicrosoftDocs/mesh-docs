@@ -3,7 +3,7 @@ title: Mesh 101 Move objects and trigger animations
 description: Learn how to move objects and trigger animations with Mesh Physics.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/22/2023
+ms.date: 9/28/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, physics
 ---
@@ -22,14 +22,14 @@ the session.
 
 There are a couple of things we need to do before getting started with the first station.
 
-### Reconfigure the Hierarchy
+## Reconfigure the Hierarchy
 
 - In the **Hierarchy**, collapse the **Chapter3** GameObject and then
     expand the **Chapter4** GameObject.
 
 ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image061.jpg)
 
-### Change the view to display the Chapter 4 Sphere Terrace
+## Change the view to display the Chapter 4 Sphere Terrace
 
 In the experience in Mesh, the participant will move smoothly from the
 end of Chapter 3 to the beginning of Chapter 4 and will be properly
@@ -52,7 +52,7 @@ set up that view.
 
     ![A computer generated image of a model of a mountain Description automatically generated](../../../media/sample-mesh-101/image064.jpg)
 
-### Station 4.1: Grab and Release
+## Station 4.1: Grab and Release
 
 The goal for the participant in this chapter of the training is to move
 wind turbines from the tabletop to the ocean. Once located there, the
@@ -86,7 +86,7 @@ Let's add "grab and release" capabilities to **WindTurbine1** so that participan
 This will prevent the turbine from tipping over if you place it on an
 uneven surface.
 
-#### Test your work
+### Test your work
 
 1. Save the project and then select the Unity Editor Play button.
 
@@ -114,38 +114,66 @@ uneven surface.
 You don't need to update the other two wind turbines---we've already
 done that for you.
 
-### Station: 4.2 Animation Trigger
+## Station: 4.2 Animation Trigger
 
-The idea here is that when you drag a wind turbine over the ocean, the "wind" causes the turbine's blades to spin. What actually happens is that a transparent cube named **Animation Trigger** is located over the ocean and acts as a trigger volume. If you drag a wind turbine into the trigger volume, it sets off an "On Trigger Enter" event  that starts a spinning-blade animation.
+The idea here is that when you drag a wind turbine over the ocean, the "wind" causes the turbine's blades to spin. What actually happens is that a transparent cube named **Animation Trigger** is located over the ocean and acts as a trigger volume. If you drag a wind turbine into the trigger volume, it sets off an "On Trigger Enter" event that starts a spinning-blade animation.
 
-For this chapter, we'll add a script to a GameObject, but we won't need to edit the script.
+For this chapter, we'll add a script to a GameObject and then enable animation in the script.
 
 1. In the **Hierarchy**, expand the **4.2 -- Animation Trigger** GameObject, and then select its child object named **Animation Trigger**.
 
     ![A screenshot](../../../media/sample-mesh-101/450-animation-trigger.png)
 
-    Note that you can see the green outlines of the object's Box Collider.
+    Note that you can see the green outlines of the **Animation Trigger** GameObject's Box Collider.
 
     ![A screenshot](../../../media/sample-mesh-101/324-trigger-boundaries.png)
 
-1. In the **Box Collider** component, select **Is Trigger**.
+1. In the **Inspector**, navigate to the **Box Collider** component and then select **Is Trigger**.
 
     ![A screenshot](../../../media/sample-mesh-101/321-is-trigger.png)
 
 1. In the **Hierarchy**, navigate to **Chapter 4** > **4.1 - Grab and Release** and then select **WindTurbine1**.
 1. Click the **Add Component** button, and then search for and add **Script Machine.**
 
-We want our script to be embedded, but that usually means you must start creating a new script graph from scratch. Since this chapter isn't a scripting tutorial, let's leave the **Source** option set to "Graph" for now. We'll attach an existing script graph and then convert it into an embedded graph.
+We want our script to be embedded, but that usually means you must start creating a new script graph from scratch. We'll take a shortcut; leave the **Source** option set to "Graph" for now. We'll attach an existing script graph and then convert it into an embedded graph.
 
 1. Click the button in the **Graph** field and then, in the **SelectSceneGraph** window, select *SPWindTurbineScript*.
 
     ![A screenshot](../../../media/sample-mesh-101/451-select-wind-turbine-script.png)
     
-1. Click the **Convert** button. Note that this removes the **Graph** setting and changes the **Source** option to *Embed*. 
+1. Click the **Convert** button. Note that this removes the **Graph** setting and changes the **Source** option to *Embed*.
 
-The script is now attached and the animation trigger should work. If you'd like to review the script graph, click the **Edit Graph** button. 
+### Add the spinning-blade animation to the graph
 
-## Test your work
+Take a moment to examine the script graph. It has two groups: the upper group triggers the blade-spinning animation when the user drags a wind turbine into the trigger volume, and the lower group stops the animation when the user drags the turbine out of the volume.
+
+![A screenshot](../../../media/sample-mesh-101/473-trigger-animation-graph.png)
+
+The graph is *almost* set up how we want it, but there's one remaining issue. The two **Animator: Set Trigger** nodes are set to *This* ...
+
+![A screenshot](../../../media/sample-mesh-101/474-animator-set-trigger-nodes.png)
+
+... but *This* (in other words, *WindTurbine1*) doesn't have the animation we want to trigger. Let's find it.
+
+1. In the **Hierarchy**, expand **WindTurbine1** and then expand its child object named **WindTurbineBody**. This reveals the child object named **Windmill_Turbine_001:Propellors10**.
+
+![A screenshot](../../../media/sample-mesh-101/475-expand-windturbine1.png)
+
+1. Select **Windmill_Turbine_001:Propellors10**, and then, in the **Inspector**, note that it contains an **Animator** component with the Animator **Controller** named **WindmillPropellors**.
+
+![A screenshot](../../../media/sample-mesh-101/476-animator.png)
+
+This **Animator** is what will provide our animation.
+
+1. Drag the **Windmill_Turbine_001:Propellors10** GameObject from the **Hierarchy** and then, in the script graph, drop it in the first field in the *Animator: Set Trigger* node located in the *first* group.
+
+![A screenshot](../../../media/sample-mesh-101/477-drag-anim-to-trigger-node.png)
+
+1. Drag the **Windmill_Turbine_001:Propellors10** GameObject from the **Hierarchy** again and then, in the script graph, drop it in the first field in the  *Animator: Set Trigger* node located in the *second* group. 
+
+The script is now complete.
+
+### Test your work
 
 1. Save the project, and then press the Unity Editor Play button.
 
@@ -161,12 +189,13 @@ The script is now attached and the animation trigger should work. If you'd like 
 
     ![A picture containing screenshot, 3d modeling, pc game, video game software Description automatically generated](../../../media/sample-mesh-101/image082.jpg)
 
-1. When you've finished observing the animation, press the Unity Editor
-    Play button to exit Play mode.
+1. Drag the same turbine away from the ocean and place it back on the tabletop. Note that the turbine's blades stop spinning.
+
+1. When you finish observing the animation, press the Unity Editor Play button to exit Play mode.
 
 You don't have to update the other wind turbines---we've already done it for you.
 
-### Station 4.3: Constraining Bodies
+## Station 4.3: Constraining Bodies
 
 Right now, there's no constraint on where a participant can drop a wind
 turbine. We *hope* they place the turbines in the ocean where they can catch
@@ -179,8 +208,7 @@ will be restricted to the inside of the box.
 1. In the **Hierarchy**, expand the **4.3 -- Constraining Bodies**
     GameObject and select its child object named **Containment Field**.
 
-![A screenshot of a computer Description automatically
-generated](../../../media/sample-mesh-101/image084.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image084.png)
 
 1. In the **Inspector**, select the **Add Component** button and then
     add the **Containment Field** component.

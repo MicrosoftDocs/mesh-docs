@@ -85,7 +85,7 @@ Perfect! Now **ButtonBase** is correctly located just in front of the **Backplat
 
 ![A screenshot of a video play Description ](../../../media/sample-mesh-101/406-buttonbase-correct.png)
 
-## Rename the button
+### Rename the button
 
 - With **ButtonBase** selected, in the **Inspector**, change the name
     of **ButtonBase** to "PlayVideoButton".
@@ -108,7 +108,7 @@ Right now, the text on the button says "Label." Let's change that to
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/036-play-label-v2.png)
 
-## Create the Visual Script for the button
+### Create the Visual Script for the button
 
 1. In the **Hierarchy**, ensure that **PlayVideoButton** is selected.
 1. In the **Inspector**, click **Add Component**, and then select **Script Machine**.
@@ -117,17 +117,15 @@ Note that two new components have been added in the **Inspector**: **Script Mach
 
 ![A screenshot of a video play Description ](../../../media/sample-mesh-101/201-script-machine-v2.png)
 
-Note that in the **Script Machine** component, the **Source** is set to **Graph**. Let's keep that setting. This means that we'll be creating a new script graph as an asset and saving it in the project.
-
 1. Note that in the **Script Machine** component, the **Source** is set to **Graph**. You have two choices for **Source**: *Graph* and *Embed*. Click **Source** and then select **Embed**.
 
-> [!TIP]
-> *Graph* and *Embed* each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine artice](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We're choosing to use *Embed* here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
+    > [!TIP]
+    > *Graph* and *Embed* each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine artice](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We're choosing to use *Embed* here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
 
 1. In the **Script Machine** component, enter a name in the *Title* field for the graph: "Video Player Behavior."
 1. Enter a description in the *Summary* field for the graph: "Video player behavior definition."
 
-## Setting up the script graph
+### Setting up the script graph
 
 1. In the **Script Machine** component, click **Edit Graph**. This opens the **Script Graph** window. Drag and place it next to the **Project** and **Console** tab, if it's not already there, so that we can see the script graph and **Scene** window at the same time.
 
@@ -137,7 +135,7 @@ Note that in the **Script Machine** component, the **Source** is set to **Graph*
 
 1. We don't need the **OnStart** and **OnUpdate** nodes; delete them.
 
-## Detect if the button is clicked
+### Detect if the button is clicked
 
 We can think of this script graph as having three main goals:
 
@@ -172,7 +170,7 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 >
 > This component is added automatically at runtime to interactable bodies; it exposes various properties to Visual Scripting such as *IsHovered* and *IsSelected*, which will come in handy in a moment.
 >
-> **Tip**: You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Playmode tint has been changed to blue. This can help you to tell at a glance which mode you're in.
+> You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Playmode tint has been changed to blue. This can help you to tell at a glance which mode you're in.
 
 In the script graph, let's add a node that lets us know when the button is selected.
 1. Make sure you're viewing the embedded script graph that's attached to the **PlayVideoButton** GameObject.
@@ -204,7 +202,7 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/432-if-data-input.png)
 
-## Create a variable to determine if the video is playing or not
+### Create a variable to determine if the video is playing or not
 
 1. In the **Blackboard**, go to the **Object** tab, and then create a variable named "isPlaying." Make the **Type** "Boolean" and leave the **Value** check box unselected. This gives the Boolean the default value of false.
 
@@ -231,7 +229,7 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
 The *Negate* node does some math to make the value of *IsPlaying* to change to the opposite of whatever it's currently set to. When the scene starts, *isPlaying* is false (the default). When the Play/Stop button is clicked, the *Negate* node causes *isPlaying* in the **Set Object Variable** node to be set to true and this makes the video play. When the button is clicked again, the *Negate* node will cause *isPlaying* to be reset to false and this will make the video stop.
 
-## Turning the video on or off
+### Turning the video on or off
 
 Now we'll add the nodes that detect if *isPlaying* changes and plays or stops the video based on that change.
 
@@ -248,23 +246,23 @@ Now we'll add the nodes that detect if *isPlaying* changes and plays or stops th
 
     ![A screenshot of a video play Description](../../../media/sample-mesh-101/423-if-node.png)
 
-## Making the video play
+### Making the video play
 
 1. In the **Hierarchy**, expand the **VideoPlayer** GameObject and and note that it has two child objects: **Video** and **VideoStill**.
 
 1. Select **Video** and then, in the **Inspector**, note the following:
 
-- **Video** has a component named **Video Player**, which has a video attached named "WindTurbine".
+    - **Video** has a component named **Video Player**, which has a video attached named "WindTurbine".
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/424-video-player.png)
 
-- **Video** is inactive.
+    - **Video** is inactive.
 
 1. In the **Hierarchy**, select the **VideoStill** GameObject and then, in the **Inspector**, note the following:
 
-- **VideoStill** has a still image attached.
+    - **VideoStill** has a still image attached.
 
-- **VideoStill** is active.
+    - **VideoStill** is active.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/425-videostill.png)
 
@@ -328,9 +326,9 @@ There may be times when you want a script's events to be experienced only by the
 
 For this tutorial, we want all participants in the experience to be able to see any interactions with the video player and see the video itself play and pause. To ensure this, make sure the "Share visual script variables on this Game Object" option is selected. The information box below this option tells you what's shared and what remains local.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/435-share-variables.png)
+![A screenshot of a video play Description ](../../../media/sample-mesh-101/435-share-variables.png)
 
-## Test your work
+### Test your work
 
 1. In Unity, save the project and then press the Unity Editor Play
     button.
@@ -346,7 +344,7 @@ For this tutorial, we want all participants in the experience to be able to see 
 
 1. Press the Unity Editor Play button to exit Play mode.
 
-### Station 3.2: Trigger an info dialog
+## Station 3.2: Trigger an info dialog
 
 For this feature, we'll enhance an existing visual script that causes an info dialog to appear when the avatar presses a button.
 
@@ -388,7 +386,7 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
     ![A screen shot showing Show Dialog node with a message added.](../../../media/sample-mesh-101/305-show-dialog-continue.png)
 
-#### Test your work
+### Test your work
 
 1. In the Unity Editor, save the project and then press the Unity Editor Play button.
 
@@ -407,7 +405,7 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
 1. Press the Unity Editor Play button to exit Play mode.
 
-### Station 3.3: Teleport to the turbine generator
+## Station 3.3: Teleport to the turbine generator
 
 For this feature, we'll add some nodes to a script graph that allows participants
 in the scene to teleport. When a participant presses the button, they're
@@ -417,7 +415,7 @@ examine the generator.
 
 ![A picture containing outdoor, text, screenshot, windmill Description automatically generated](../../../media/sample-mesh-101/460-teleport-to-turbine.png)
 
-#### Update the script graph
+### Update the script graph
 
 1. In the **Scene** window, note that the **3.3 -** **Teleport to Turbine** station is to the right of the **3.2 -- Info Dialog  Trigger** station. Adjust the view so that you can clearly see Station 3.3.
 1. In the **Hierarchy**, collapse the **3.2 - Info Dialog** GameObject, and then expand the **3.3 - Teleport** GameObject.
@@ -445,7 +443,7 @@ give it the teleport behavior.
 
 In the **Teleport Button Behavior** group, the logic is similar to what you saw in Chapter 3.1: "If the button is selected, do something." We don't need to do anything further to this group. We're going to make our changes to the second group, **Teleport to OpenPlatform**.
 
-#### Create a Travel Point and add a reference to it
+### Create a Travel Point and add a reference to it
 
 So what's a "Travel Point", you might be asking ... ? Basically, it's a component that you can use to define a point in space to spawn or teleport to. Normally, you would first create a *Travel Group*, and then add one or more Travel Points to it. We've already created the Travel Group for you in this project, so in the steps below, we'll add a Travel Point to that group. We'll then use that Travel point as the location the avatar will go to when they click the "Teleport" button. To learn more, see our article named [*Mesh Object and Avatar Interactions*](../../design-and-develop/enhance-your-environment/object-avatar-interactions.md).
 
@@ -515,11 +513,11 @@ The setting of True for *TeleportNow* is what triggers the sequence of nodes in 
 
 After the teleport has occurred, *TeleportNow* needs to be reset to False so that the whole process can be repeated the next time the button is clicked. We've already set up the nodes for this; all you need to do is make the connection.
 
-1. In the **Teleport to OpenPlatform** group, drag a connector from the output control port of the "Travel Point: Travel to Point" node and then connect it to the input control point of the "Set Object Variable: TeleportNow" node.
+- In the **Teleport to OpenPlatform** group, drag a connector from the output control port of the "Travel Point: Travel to Point" node and then connect it to the input control point of the "Set Object Variable: TeleportNow" node.
 
-    ![A screen shot](../../../media/sample-mesh-101/449-connect-final-teleportnow.png)
+![A screen shot](../../../media/sample-mesh-101/449-connect-final-teleportnow.png)
 
-#### Test your work
+### Test your work
 
 1. In the Unity Editor, save the project and then press the Unity Editor Play button.
 

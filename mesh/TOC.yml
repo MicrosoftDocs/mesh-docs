@@ -1,13 +1,13 @@
 items:
 - name: Welcome to Mesh
   href: Overview.md
-- name: Developer guidance for 23.11
-  href: developer-guidance-23.11.md
 - name: Set up and Manage Mesh
   href: Setup/toc.yml
-- name: Using Mesh
-  href: Use/toc.yml
-- name: Creating for Mesh
+- name: Attend events
+  href: user-guide/toc.yml
+- name: Organize events
+  href: events-guide/toc.yml
+- name: Develop environments
   href: Create/toc.yml
 - name: Resources
   href: Resources/toc.yml
