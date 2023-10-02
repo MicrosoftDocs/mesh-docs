@@ -16,6 +16,18 @@ Events in Mesh should be familiar to most organizations that work with Microsoft
 1. **Customize the event in the Mesh app:** Customize your event beforehand to add text, video, and/or screenshare artifacts and prepare your environment for your event.
 1. **Host your event in Mesh:** Leverage a set of tools to manage participants, and control the artifacts that you've added to your environment.
 
+## Download Mesh apps
+
+Download Microsoft Mesh on PC
+
+> [!div class="nextstepaction"]
+> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1)
+
+Download Microsoft Mesh for Meta Quest devices
+
+> [!div class="nextstepaction"]
+> [Microsoft Mesh on Meta Quest | Quest VR Games | Meta Store](https://www.meta.com/experiences/6750166401689690/)
+
 ## Create your event in the Mesh Portal
 
 Create an event in the Mesh Portal and invite participants. Once created, participants will see the event in their calendars in Microsoft Teams and Outlook.

@@ -30,6 +30,7 @@ To enable access, please visit the M365 Admin Center and enable the policy via t
 ## Prerequisites
 
 To enable Mesh in your managed tenant, you must have one of the following roles in Azure AD:
+
 - Global Administrator
 - Security Administrator
 - Office Apps Admin
@@ -40,8 +41,8 @@ For Microsoft Mesh, you will need the following:
 
 - Teams premium license for Commercial use.
 
-> [!NOTE]
-> We don't support tenants with worldwide public sector, EDU, or GCC licenses.
+    > [!NOTE]
+    > We don't support tenants with worldwide public sector, EDU, or GCC licenses.
 
 - A pre-requisite license for Teams Premium, as outlined in [Microsoft Teams Premium Licensing - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
 

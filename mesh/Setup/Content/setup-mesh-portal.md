@@ -1,5 +1,5 @@
 ---
-title: Mesh Portal migration guide
+title: Set up Mesh Portal (Preview)
 description: Prepare your organization to adopt Mesh and its features. Organize a team to manage setup and distribution.
 author: typride
 ms.author: tmilligan
@@ -8,7 +8,7 @@ ms.topic: overview
 keywords: Microsoft Mesh, M365, Mesh Portal, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-# Mesh Portal (Preview)
+# Set up Mesh Portal (Preview)
 
 The Mesh portal is where you can create Mesh events, invite co-organizers or attendees, create Mesh worlds to hold your custom environments, and manage your uploaded environments.
 
