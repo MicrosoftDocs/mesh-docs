@@ -47,6 +47,8 @@ Learn how to organize, customize, and produce events in Mesh.
 
 See how to join your first event and learn how to use Microsoft Mesh.
 
+:::image type="content" source="../media/mesh-event-producer-guide/Join-event-link-calendar.gif" alt-text="Join a Mesh event using the calendar invite link":::
+
 > [!div class="nextstepaction"]
 > [Join an Event](join-an-event.md)
 
@@ -57,6 +59,3 @@ See how to join your first event and learn how to use Microsoft Mesh.
 
    > [!div class="nextstepaction"]
    > [Join an event](join-an-event.md)
-
-   > [!div class="nextstepaction"]
-   > [Create an event](events-guide/create-event.md)
