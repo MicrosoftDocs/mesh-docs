@@ -75,7 +75,7 @@ shown below to find and join your Teams events.
 
 3. Select the **Dashboard** by clicking on the systems bubble on the lower left of your view.
 
-    ![A screenshot of the Mesh dashboard on Quest](media/Mesh-dashboard.png)
+    ![A screenshot of the Mesh dashboard on Quest](media/mesh-dashboard.png)
 
 4. Click on any of the events to **View event details**, or select **Join**.
 
