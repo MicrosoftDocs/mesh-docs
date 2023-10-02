@@ -10,11 +10,11 @@ keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 
 # Cloud Scripting programmer's guide
 
-This guide describes how to use the MeshApp API and developer tools to build scripted Environments (these start out as projects in Unity, and are then uploaded to a Mesh World in the Azure Portal). We recommend that you first read the *Overview* section to familiarize yourself with the concepts and basic architecture of Mesh Cloud Scripting.
+This guide describes how to use the MeshApp API and developer tools to build scripted Environments (these start out as projects in Unity, and are then uploaded to a Mesh World). We recommend that you first read the [Set cloud Scripting infrastructure in Azure](cloud-scripting-setup-infrastructure.md)to familiarize yourself with the concepts and basic architecture of Mesh Cloud Scripting.
 
 This document describes the features and interface of the Mesh Apps API, which is used to write the scripts that drive behaviors in Environments.
 
-Create your first Mesh Environment by following the instructions in the *Getting Started* section.
+Create your first Mesh Environment by following the instructions in the [Build and publish your Environment](../make-your-environment-available-for-events/build-and-publish-your-environment.md).
 
 ## Note on internal functions
 
@@ -252,7 +252,7 @@ Note that this is how the scene.map is packaged, which you can see in the .cspro
 
 ## Working with Shared Physics
 
-The packages you need for working with Shared Physics are added to your project when you import the Mesh Toolkit. To learn more, see the document named *Get Started with Mesh Environments*, section: *Importing Packages into a Mesh Project*. TBD
+The packages you need for working with Shared Physics are added to your project when you import the Mesh Toolkit. To learn more, see the document named [Importing the Mesh Toolkit](../build-your-basic-environment/import-the-mesh-toolkit.md#importing-the-mesh-toolkit).
 
 `Shared Physics` will take care to synchronize motion of rigid bodies between clients. Mesh app `TransformNode.Position`, `TransformNode.Rotation`, `RigidBody.Velocity` and `RigidBody.AngularVelocity` won't be updated with lastest simulation state. However, clients will apply changes if these are set in the mesh app. Note that changing single property will leave others unchanged. For example, if only position is set, velocity won't be changed and rigid body will continue motion with old velocity from new position. Given that mesh app is not updated with latest motion state for rigid bodies, recommendation is to set these only for new rigid bodies.
 
