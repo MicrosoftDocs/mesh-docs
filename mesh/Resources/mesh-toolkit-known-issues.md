@@ -12,7 +12,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 ## Version 23.12
 
-* The embedded videos show as black on Quest 2. (24096)
+* The embedded videos show as black on Quest 2. 
 
     *Workaround:*  If you run into an issue where videos display and behave as expected on PC but not on Quest, add the video script to the video player.
 
