@@ -19,7 +19,7 @@ There're three ways for you to join an event in Immersive space in Microsoft Mes
 
 ## From Microsoft Outlook and Teams
 
-You can easily find Mesh events right within their daily Outlook and Teams calendars without needing to go to another place to see and join the events.
+You can easily find Mesh events right within your daily Outlook and Teams calendars without needing to go to another place to see and join the events.
 
 ![Animation of joining a Mesh event from Outlook or Teams calendar](media/mesh-entry-points.gif)
 
