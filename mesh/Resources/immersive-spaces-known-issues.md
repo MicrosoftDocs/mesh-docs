@@ -3,7 +3,7 @@ title: Immersive spaces for Teams known issues and limitations
 description: Currently active known issues and limitations for Immersive spaces for Teams
 author: qianw211    
 ms.author: qianwen
-ms.date: 9/7/2023
+ms.date: 10/2/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
@@ -14,17 +14,11 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 ### Audio
 
-1. <mark> Need to synchronize speaker and microphone selection between Teams and immersive spaces.
+1. Synchronize speaker and microphone selection between Teams and Mesh.
 
-2. <mark> Users need to be informed when network issues may affect audio quality.
+1. Users need to be informed when network may affect Audio Quality; Continuous Improvement in Audio Quality.
 
-3. <mark> User're denied mic permissions ( ACS connection is blocked when Teams continues to handle a Teams call).
-
-4. <mark> Need to improved transition between audio zones
-
-5. <mark> Need to continuouly work on audio quality improvements: 
-
-    * <mark> Improved audio attenuation for different environments and meeting scenarios.
+1. Users can be denied Mic Permissions, leading to the mic being muted without warning.
 
 1. **Default Mic/Speaker Settings**: When going to the immersive space, Mesh handles the audio for users instead of Teams in order to enable spatial audio. However, Mesh uses the default OS settings, which might be a different mic and speaker that Teams uses. This may sometimes result in loss of audio for speaker/mic. In case of audio inconsistencies when in the immersive space, users can switch which mic/speaker Mesh uses by going to the Immersive space and select **Settings > Display & sound > Devices**, and updating mic and speaker settings.
 1. **Bluetooth Headset Limitations**: Most Bluetooth audio headsets switch to mono output when the microphone is in use. With mono output you will not be able to experience spatial audio. Here’s what you can do to resolve the issue: 
@@ -61,7 +55,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 1. Content limitations: PowerPoint Live and Whiteboard are not supported. If a meeting participant is using Powerpoint Live, it will not display on the immersive space stage. Same for whiteboard.
 1. If a meeting is being recorded, only the audio of immersive participant that are in range within the immersive space will be part of the meeting audio recording.
-1. When a meeting participant is sharing screen with audio, the audio won’t play in the immersive space on the virtual stage.
+1. When a meeting participant is sharing screen with audio, the audio won’t play in the immersive space on the virtual stage. If you want to share your screen with audio, you must come out of the immersive space.
 1. Mesh immersive space for Teams today can take up to a minute to load. Be patient as we improve the performance of the app. 
 1.	When you share content while already in an immersive space, you will not see your own content on the virtual stage. Other meeting participants will be able to see it on the main stage.
 1. Chat in Quest can’t render images, only text. In addition, texts don’t wrap in both the chat and the feedback form on Quest.
