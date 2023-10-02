@@ -231,7 +231,7 @@ If you need to use the CLI tool directly, it can be found in your Unity project 
    1. Rights to deploy resources in a specific Azure subscription&#8212;in other words, you're at least a Contributor for the target Azure subscription.
 
 1. In the app's C# project folder, open a command line window.
-1. [Log in to Azure](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest#az-login).
+1. [Log in to Azure](/cli/azure/reference-index?view=azure-cli-latest)
 
    ```cmd
    az login
@@ -239,7 +239,7 @@ If you need to use the CLI tool directly, it can be found in your Unity project 
 
 1. [Deploy the application's infrastructure](#mesh-app-cli-tool-command-reference):
 
-   This provisions all the resources needed to run the Meshapp in Azure&#8212;storage account, app service plan, app service, virtual network, application insights and log analytics workspace.
+   This provisions all the resources needed to run the Meshapp in Azure: storage account, app service plan, app service, virtual network, application insights and log analytics workspace.
 
     > [!NOTE]
     > This command only needs to be run once, unless you'd like to make some changes to the infrastructure such as changing MeshApp's authentication mode or deploying MeshApp to another resource group.
