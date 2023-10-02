@@ -3,6 +3,8 @@ items:
     href: prerequisites.md
   - name: Download the Mesh Toolkit
     href: download-the-mesh-toolkit.md
+  - name: Set up your scene
+    href: set-up-your-scene.md    
   - name: Choose your journey
     href: choose-your-journey.md
   - name: Samples
