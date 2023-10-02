@@ -103,4 +103,4 @@ See how to [build and publish your Environment](../../Create/design-and-develop/
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Mesh user overview](../../user-guide/usage-overview.md)
+   > [Getting started with Microsoft Mesh](../../user-guide/getting-started.md)
