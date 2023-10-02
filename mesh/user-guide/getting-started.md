@@ -3,7 +3,7 @@ title: Getting started with Mesh
 description: Getting started with microsoft Mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 9/29/2023
+ms.date: 10/2/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
