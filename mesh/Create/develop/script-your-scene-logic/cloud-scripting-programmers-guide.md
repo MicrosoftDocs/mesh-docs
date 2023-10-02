@@ -24,7 +24,7 @@ As much as possible, we aim for the API to be in its final state. In places wher
 
 ## Basic DOM structure
 
-The DOM structure mirrors the structure of your Unity scene. The application's "Scene" member corresponds to the game object to which your MeshApp component is attached. The following Mesh API classes map one-to-one with Unity objects created in the editor:
+The DOM structure mirrors the structure of your Unity scene. The application's "Scene" member corresponds to the game object to which your Mesh Cloud Scripting component is attached. The following Mesh API classes map one-to-one with Unity objects created in the editor:
 
 - GameObject (& Transform Component) -> TransformNode
 - Light Component -> PointLightNode, SpotLightNode, DirectionalLightNode
@@ -40,7 +40,7 @@ For example, if you create a scene with a game object that has a Light component
 
 Additionally, some Mesh API objects don't have corresponding built-in Unity components. These are additional components you can create in Unity that are part of the Mesh Toolkit Authoring package.
 
-- MeshApp component (Described above)
+- Mesh Cloud Scripting component (Described above)
 - TouchSensor component
 - WebView component
 
@@ -96,28 +96,28 @@ If an attempt is made to attach an avatar to two different moving platforms, the
 More complex arrangements are supported.  For example, you could create new per-user platforms based on a trigger volume or button click, and attach the user to one of those.  Similarly, you might automatically detach the user when reaching their destination based on another trigger volume or timer.
 
 ## Info Dialogs
-It's possible for a Mesh script to pop up a screen space dialog in the Mesh app with a custom message.  SceneNode contains a function for this, `ShowMessageToUsers(string message, IReadOnlyCollection<User> users)`. [Rich text tags](http://digitalnativestudios.com/textmeshpro/docs/rich-text/) can be used in the message to control text properties (color, bold etc).
+It's possible for a Mesh script to pop up a screen space dialog in the Mesh app with a custom message.  SceneNode contains a function for this, `ShowMessageToParticipants(string message, IReadOnlyCollection<Participant> participants)`. [Rich text tags](http://digitalnativestudios.com/textmeshpro/docs/rich-text/) can be used in the message to control text properties (color, bold etc).
 
 # Classes
 
 ## CloudApplication
-The `CloudApplication` class is the starting point for developing Mesh apps. It's available in "App.cs" as the _app variable. In addition to the scene, `CloudApplication` has create functions for all available types. It also has a number of other methods, but they're for internal use.
+The `ICloudApplication` interface is the starting point for developing Mesh apps. It's available in "App.cs" as the _app variable. In addition to the scene, `ICloudApplication` has create functions for all available types. It also has a number of other methods, but they're for internal use.
 
-## TouchSensorNode
-The touch sensor node is a custom Unity component that's part of the Mesh Toolkit Authoring package. When you attach it to a game object in Unity, it'll raise click events when any user clicks on any of the active collidables in that game object or its children.
+## InteractableNode
+The MeshInteractableSetup is a custom Unity component that's part of the Mesh Toolkit Authoring package. When you attach it to a game object in Unity, it'll raise click events when any user clicks on any of the active collidables in that game object or its children.
 
-A simple example is shown below, where the Touch Sensor component is added to the same game object as the box collider:
+A simple example is shown below, where the MeshInteractableSetup component is added to the same game object as the box collider:
 
 ![Simple Input example](../../../media/mesh-scripting/programmers-guide/simple_input_example.jpg)
 
-## WebViewNode
-The WebView node is a custom Unity component that is part of the Mesh Toolkit Authoring package. To add a WebView prefab to your scene, select **GameObject** > **Mesh Toolkit** > **WebView** from the menu bar. The website that is assigned to the WebView instance's URL property is rendered on the quad of this prefab.
+## WebSlateNode
+The WebSlate is a custom Unity component that is part of the Mesh Toolkit Authoring package. To add a WebSlate prefab to your scene, select **GameObject** > **Mesh Toolkit** > **WebSlate** from the menu bar. The website that is assigned to the WebSlate instance's URL property is rendered on the quad of this prefab.
 
-An example is shown below, where a WebView prefab has been added to the scene and assigned a Url:
+An example is shown below, where a WebSlate prefab has been added to the scene and assigned a Url:
 
 ```c#
-        var webViewNode = Root.FindFirstChild<WebViewNode>(true);
-        webViewNode.Url = new System.Uri("https://en.wikipedia.org/wiki/Color");
+        var webSlateNode = Root.FindFirstChild<WebSlateNode>(true);
+        webSlateNode.Url = new System.Uri("https://en.wikipedia.org/wiki/Color");
 ```
 
 ![WebView example](../../../media/mesh-scripting/programmers-guide/webview_example.jpg)
@@ -139,15 +139,15 @@ Here's a simple Mesh app that rotates the cube each time it's clicked.  Replace 
         public Task StartAsync(CancellationToken token)
         {
             // First we find the TransformNode that corresponds to our Cube gameobject
-            var transform = _app.Scene.FindFirstChild<TransformNode>(); 
+            var transform = _app.Scene.FindFirstChild<TransformNode>();
 
-            // Then we find the TouchSensorNode child of that TransformNode
-            var touchSensor = transform.FindFirstChild<TouchSensorNode>();
+            // Then we find the InteractableNode child of that TransformNode
+            var sensor = transform.FindFirstChild<InteractableNode>();
 
-            // There's no Click event yet, so we'll listen to changes on the ClickTime property
-            touchSensor.Clicked += (_, _) =>
+            // Handle a button click
+            sensor.Selected += (_, _) =>
             {
-              // And we'll update the angle on each click
+                // Update the angle on each click
                 _angle += MathF.PI / 8;
                 transform.Rotation = new Rotation { X = 1, Y = 0, Z = 0, Angle = _angle };
             };
