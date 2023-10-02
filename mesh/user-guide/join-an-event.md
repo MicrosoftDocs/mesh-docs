@@ -46,7 +46,7 @@ Follow the steps below to see a list of events and join an event.
 
     For more information, see [Personalize your avatar](avatars.md).
 
-### Setup audio device
+### Setup audio devices
 
 You can select your audio device from the **Pre-join** dialog.
 
