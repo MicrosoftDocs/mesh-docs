@@ -37,11 +37,11 @@ The following instructions show how to create a simple app with a cube that rota
     > [!NOTE]
     > Renaming of Unity scenes isn't supported, and space characters aren't allowed in project and folder names.
 
-1. On the menu bar, select **GameObject** > **Mesh Toolkit** > **Create Mesh App**.
+1. On the menu bar, select **GameObject** > **Mesh Toolkit** > **Set-up Cloud Scripting**.
 
    ![Screen shot of the Create Mesh App menu item.](../../media/mesh-scripting/getting-started/002-create-mesh-app.png)
 
-   Note that a game object named **MeshApp** appears in the **Hierarchy** and is selected. This also creates a new C# application project under `Assets\.MeshApps\MyFirstMeshApp`.
+   Note that a game object named **Mesh Cloud Scripting** appears in the **Hierarchy** and is selected. This also creates a new C# application project under `Assets/.MeshCloudScripting/MyFirstMeshApp`.
 
    ![img](../../media/mesh-scripting/getting-started/003-mesh-app-files.png)
 
@@ -55,7 +55,7 @@ The following instructions show how to create a simple app with a cube that rota
 1. On the menu bar, select **GameObject** > **3D Object** > **Plane** to create a floor.
 1. In the **Hierarchy**, select the **Plane** object and, in the **Inspector**, change the **Layer** to **NavMesh**.
 1. On the menu bar, select **GameObject** > **3D object** > **Cube**.
-1. In the **Hierarchy**, drag the cube to the **MeshApp** object to make the cube a child of that object.
+1. In the **Hierarchy**, drag the cube to the **Mesh Cloud Scripting** object to make the cube a child of that object.
 
    ![A screen shot of the Cube placed as a child to MeshApp.](../../media/mesh-scripting/getting-started/004-cube.png)
 
@@ -68,8 +68,8 @@ The following instructions show how to create a simple app with a cube that rota
 
 ### Modify the C# project
 
-1. In the **Hierarchy**, select the **MeshApp** object.
-1. In the **Inspector**, navigate to the **MeshApp** component and then click the **Open application folder** button. This opens File Explorer and shows you a view of your project contents.
+1. In the **Hierarchy**, select the **Mesh Cloud Scripting** object.
+1. In the **Inspector**, navigate to the **Mesh Cloud Scripting** component and then click the **Open application folder** button. This opens File Explorer and shows you a view of your project contents.
 
    ![img](../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
 
@@ -78,7 +78,7 @@ The following instructions show how to create a simple app with a cube that rota
 
    ```c#
    private readonly ILogger<App> _logger;
-   private readonly CloudApplication _app;
+   private readonly ICloudApplication _app;
    ```
 
    Add the following as a third variable:
@@ -95,11 +95,11 @@ The following instructions show how to create a simple app with a cube that rota
        // First we find the TransformNode that corresponds to our Cube gameobject
        var transform = _app.Scene.FindFirstChild<TransformNode>();
 
-       // Then we find the TouchSensorNode child of that TransformNode
-       var touchSensor = transform.FindFirstChild<TouchSensorNode>();
+       // Then we find the InteractableNode child of that TransformNode
+       var sensor = transform.FindFirstChild<InteractableNode>();
 
-       // Listen to changes on the ClickTime property
-       touchSensor.Clicked += (_, _) =>
+       // Handle a button click
+       sensor.Selected += (_, _) =>
        {
            // Update the angle on each click
            _angle += MathF.PI / 8;
@@ -118,9 +118,9 @@ The following instructions show how to create a simple app with a cube that rota
 
 ### Debug your application with Visual Studio (optional)
 
-1. In the **Hierarchy**, ensure that you have the **MeshApp** object selected.
+1. In the **Hierarchy**, ensure that you have the **Mesh Cloud Scripting** object selected.
 
-1. In the **Inspector**, navigate to the **MeshApp** component and then select **Enable Application Debugging**.
+1. In the **Inspector**, navigate to the **Mesh Cloud Scripting** component and then select **Enable Application Debugging**.
 
    ![img](../../media/mesh-scripting/getting-started/MeshAppCmpInspectorEnableDebugging.png)
 
@@ -171,13 +171,13 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
 ### Connect to the deployed application from Unity
 
-1. In the **Hierarchy**, ensure that the **MeshApp** object is selected.
-1. In the **Inspector**, navigate to the **MeshApp** component, and then open the **Developer Settings** drop-down.
-1. Unselect **Run Local MeshApp**.
+1. In the **Hierarchy**, ensure that the **Mesh Cloud Scripting** object is selected.
+1. In the **Inspector**, navigate to the **Mesh Cloud Scripting** component, and then open the **Developer Settings** drop-down.
+1. Unselect **Run Local Cloud Scripting Server**.
 1. Click the Play button.
 
 > [!NOTE]
-> Since auth is now enabled on the MeshApp server by default, it expects you to send an auth token from whichever client you're connecting from. You can set the auth mode in the Mesh Uploader Settings located in your Unity project's settings. The **Dev** option is recommended for MeshApps in active development.
+> Since auth is now enabled on the Cloud Scripting server by default, it expects you to send an auth token from whichever client you're connecting from. You can set the auth mode in the Mesh Uploader Settings located in your Unity project's settings. The **Dev** option is recommended for MeshApps in active development.
 
 ### Create an event and join it from the Mesh app
 
@@ -271,7 +271,6 @@ If you need to use the CLI tool directly, it can be found in your Unity project 
 
    Running this command will take ~2-10 minutes, depending on your network upload speed. The following console output is expected:
 
-
    ```txt
    ...
    100.00% Uploaded: 148.32 MB of 148.32 MB 00:04:28
@@ -282,8 +281,9 @@ If you need to use the CLI tool directly, it can be found in your Unity project 
    App connection string is: https://app-ma-0000000000000000-we.azurewebsites.net/channel
    ```
 
-2. _Optional_: **[Connect to the deployed application from Unity](#connect-to-the-deployed-application-from-unity)**.
-3. Follow the _Build and publish the Environment_ section in the document named *Get Started with Mesh Environments* to upload the **MyFirstMeshApp** scene as a new environment.
+1. *Optional*: **[Connect to the deployed application from Unity](#connect-to-the-deployed-application-from-unity)**.
+
+1. Follow the [Build and publish your Environment](../make-your-environment-available-for-events/build-and-publish-your-environment.md) to upload the **MyFirstMeshApp** scene as a new environment.
 
 ### Mesh App CLI tool command reference
 
@@ -295,7 +295,6 @@ If you need to use the CLI tool directly, it can be found in your Unity project 
 |   |   |   |
 
 To get help with any of the commands, enter the command followed by `-h`. For example: `meshapp publish -h`.
-
 
 ## Next steps
 
