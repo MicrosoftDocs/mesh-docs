@@ -1,6 +1,5 @@
 items:
 - name: Welcome to Mesh
-<<<<<<< HEAD
   href: overview.md
 - name: Release notes
   items:
@@ -8,17 +7,3 @@ items:
     href: avatars-release-notes.md
   - name: Known issues
     href: avatars-known-issues.md
-=======
-  href: Overview.md
-- name: Set up and Manage Mesh
-  href: Setup/toc.yml
-- name: Attend events
-  href: user-guide/toc.yml
-- name: Organize events
-  href: events-guide/toc.yml
-- name: Develop environments
-  href: Create/toc.yml
-- name: Resources
-  href: Resources/toc.yml
-
->>>>>>> b02e0d23e75e6d398743f4b49bd355d1bc77b244

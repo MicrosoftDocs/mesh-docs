@@ -27,7 +27,7 @@ If you use multiple Azure accounts for deploying and publishing to multiple tena
 2. Open a command line and run `az logout` to log out of the cached Azure account.
 3. Use the Toolkit Uploader again to deploy and publish the next environment, expecting a popup asking you to log-in to your Azure account.
 
-## After running `meshapp publish`, nothing happens
+## After running `meshcs publish`, nothing happens
 This error has been identified to be a build error.
 1. Use `Ctrl + C` to exit the command's execution.
 2. Rerun the command with the dotnet verbosity flag: `meshcs publish -v normal`. If logs still aren't informative enough to debug, increase the verbosity to `detailed` or `diagnostic`.
