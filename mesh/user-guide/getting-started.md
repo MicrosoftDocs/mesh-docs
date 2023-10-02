@@ -3,7 +3,7 @@ title: Getting started with Mesh
 description: Getting started with microsoft Mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 9/29/2023
+ms.date: 10/2/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -22,10 +22,10 @@ Here's how to download and install the Mesh app on PC and the Meta Quest 2 devic
 
 Download the Microsoft Mesh app on PC (codenamed **Project Napili**) from the Microsoft Store for Business to access Events and to customize your Avatar. Visit the link below:
 
-   > [!div class="nextstepaction"]
-   > [Project Napili -- Microsoft Store Apps](https://apps.microsoft.com/store/detail/project-napili/9P0B5VMS9RTQ)
+> [!div class="nextstepaction"]
+> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1)
 
-![A screenshot of Project Napili in the Microsoft Store ready for download](media/windows-store-project-napili.png)
+![A screenshot of Microsoft Mesh in the Microsoft Store ready for download](media/microsoft-store-dowload.png)
 
 >[!Note]
 >If the app isn't available in the Microsoft Store, speak to your Intune admin to make the app visible to you.
@@ -43,7 +43,7 @@ If you had previously downloaded the **Napili** app on your Quest 2 device, you 
 1. On your PC, visit the link below to download Mesh on Quest 2.
 
     > [!div class="nextstepaction"]
-    > [Microsoft Mesh (Preview) on Oculus Quest 2 \| Oculus](https://www.oculus.com/experiences/quest/8919580184782498/)
+    > [Microsoft Mesh on Meta Quest | Quest VR Games | Meta Store](https://www.meta.com/experiences/6750166401689690/)
 
     If the URL doesn't work, use a new private window in your browser.
 
