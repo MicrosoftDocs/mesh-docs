@@ -14,9 +14,9 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 ### Audio
 
-1. Synchronize speaker and microphone selection between Teams and Mesh.
+1. Currently, speaker and microphone selection are not synchronized between Teams and Mesh. You will need to double-check that the correct audio devices are selected on the pre-join screen when you go into immersive space.
 
-1. Users need to be informed when network may affect Audio Quality; Continuous Improvement in Audio Quality.
+1. Users who are experiencing poor network connection may hear audio quality issues as a result.  There is currently no warning message for poor network quality. We'll be implementing this soon, as well as working continuously to improve overall audio quality.
 
 1. Users can be denied Mic Permissions, leading to the mic being muted without warning.
 
@@ -64,7 +64,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 ### Other known issues
 
-1. Can't switch environment in a Teams channel meeting.
+1. Can't switch environment in a Teams channel meeting. (24294)
 
 1. Text for **Microphone** settings in the pre-join dialog box isn’t readable in high contrast mode.
 
