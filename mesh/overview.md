@@ -40,13 +40,6 @@ We are making building relationships easier by bringing the power of Mesh into t
 > [!div class="nextstepaction"]
 > [Learn about immersive spaces in Teams](/microsoftteams/meeting-avatars)
 
-As you enter an immersive space, choose an avatar that you’ve already built for standard 2D Teams meetings or create a new one. It’s easy to customize your avatar to reflect your appearance, style, or mood for the day.
-
-![An image of people meeting in Microsoft Teams as avatars on a laptop PC.](media/welcome-to-mesh/avatars-in-meetings.png)
-
-> [!div class="nextstepaction"]
-> [Learn more about avatars in Teams](https://support.microsoft.com/en-us/office/join-a-meeting-as-an-avatar-in-microsoft-teams-5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
-
 ## Create a custom immersive space with Microsoft Mesh
 
 Create custom immersive spaces with the Mesh toolkit in Unity that are tailored to your specific business needs such as employee events, training, guided tours, or internal product showcases.
@@ -78,10 +71,10 @@ With Mesh, there are plenty of ways to add value, content, interactivity, and ma
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Getting started with Microsoft Mesh](user-guide/getting-started.md)
+   > [[Getting started with Microsoft Mesh](user-guide/getting-started.md)](Create/getting-started/prerequisites.md)
 
    > [!div class="nextstepaction"]
-   > [Create for Mesh](Create/development-overview.md)
+   > [Choose your development journey](Create/getting-started/choose-your-journey.md)
 
    > [!div class="nextstepaction"]
-   > [Set up Microsoft Mesh](Setup/Content/setup-m365-mesh.md)
+   > [Go to Mesh Toolkit](https://github.com/microsoft/Mesh-Toolkit-Unity)
