@@ -3,7 +3,7 @@ title: Join an event
 description: Joining an event in Mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 10/2/2023
+ms.date: 10/3/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 There are three ways for you to join an event in Immersive space in Microsoft Mesh:
 
 1. Microsoft Outlook or Teams [meeting invites](#from-microsoft-outlook-and-teams) on your calendar
-1. The Microsoft Mesh application on [PC](#from-the-mesh-app-on-pc) or [Quest](#from-the-mesh-app-on-quest-2)
+1. The Microsoft Mesh application on PC or Quest
 1. The Microsoft Mesh portal: https://portal.mesh.microsoft.com/ 
 
 # [PC](#tab/pc)
@@ -26,7 +26,7 @@ You can easily find Mesh events right within your daily Outlook and Teams calend
 
 ## From the Mesh App on PC
 
-In the Mesh App on PC or Quest, you can attend social gatherings, conferences, and all-hands events all within a wide selection of Environments. In these events, you can view content, interact with physical objects, and meet or network with your colleagues.
+In the Mesh App on PC or Quest, you can attend social gatherings, conferences, and all-hands events all within a wide selection of Environments. In these events, you can view content, interact with physical objects, and meet or network with your colleagues.s
 
 Follow the steps below to see a list of events and join an event.
 
