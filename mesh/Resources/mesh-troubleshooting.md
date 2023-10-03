@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting for Microsoft Mesh
+title: Troubleshooting & FAQs - Microsoft Mesh
 description: Various help guides and FAQ answers regarding Mesh events.
 author: typride    
 ms.author: tmilligan
@@ -8,7 +8,7 @@ ms.topic: Troubleshooting
 keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
 ---
 
-# Troubleshooting for Microsoft Mesh
+# Troubleshooting & FAQ
 
 ## How to download Mesh on Quest 2 via App Lab
 
