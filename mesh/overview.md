@@ -43,7 +43,6 @@ With Mesh, there are plenty of ways to add value, content, interactivity, and ma
 * Use physics tools in Mesh to assign properties to objects in your space using gravity or buoyancy. Create a realistic experience or enable more fantastical interactions for games, challenges, and help participants unleash their endless creativity.
 * Diagnose potential issues and bring more polish to the experience with performance tools in Mesh.
 
-
 ![An image of 3D Environment built with libraries and a table for collaboration.](media/welcome-to-mesh/3d-meeting-envrionment.jpg)
 
 ## Next steps
