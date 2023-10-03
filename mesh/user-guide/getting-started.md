@@ -1,5 +1,5 @@
 ---
-title: Getting started with Mesh
+title: Getting started with events in Mesh
 description: Getting started with microsoft Mesh
 author: qianw211    
 ms.author: qianwen
@@ -8,15 +8,9 @@ ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-# Getting started with Microsoft Mesh
+# Getting started with events in Mesh
 
-To support a truly flexible workplace, organizations and employees need technology that helps them feel connected regardless of where they work. Over the years, we have learned that a thriving workplace fosters authentic human connections—allowing employees and teams to build meaningful relationships and trust so they can perform at their highest potential.
-
-Immersive spaces have unique attributes that create a perception of being physically together in a 3D digital space, including spatial interaction, co-presence, and immersion. Digital engagement is evolving from audio to video, and now to spatial interaction. Spatial awareness through directionality and distance enables multiple small group discussions in the same place, adding familiar human elements to digital connections.
-
-:::image type="content" source="media/lakehouse-environment.png" alt-text="Lakehouse environment in Microsoft Mesh":::
-
-Spending time in the same 3D environment also creates a powerful sense of togetherness, or co-presence, even without actively speaking. This co-presence can lead to serendipitous moments of conversation or even just the deepened connection of a shared experience.
+Join an event in [Microsoft Mesh](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1) to experience spatial interaction and feel a sense of co-presence.
 
 ## Download Microsoft Mesh
 

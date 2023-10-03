@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting for Microsoft Mesh
+title: Troubleshooting & FAQs - Microsoft Mesh
 description: Various help guides and FAQ answers regarding Mesh events.
 author: typride    
 ms.author: tmilligan
@@ -8,7 +8,7 @@ ms.topic: Troubleshooting
 keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
 ---
 
-# Troubleshooting for Microsoft Mesh
+# Troubleshooting & FAQ
 
 ## How to download Mesh on Quest 2 via App Lab
 
@@ -94,12 +94,9 @@ Using bluetooth headphones will not provide the most optimal spatial audio exper
 
 ### Where do I access audio input/output settings?
 
-- Where do I go to access my audio input/output settings during an event?
-- What are the advanced audio settings options?
+Audio input/output settings are available in:
 
-**Audio input/output settings are available in:**
-
-**Settings** > **Display and sound**.
+**Settings** > **Display and sound**
 
 There you can select your audio devices, choose system default speakers, adjust app volume and test speakers, choose mic device and test your microphone.
 
