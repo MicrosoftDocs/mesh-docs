@@ -69,10 +69,13 @@ With Mesh, there are plenty of ways to add value, content, interactivity, and ma
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Prerequisites for Mesh](Create/getting-started/prerequisites.md)
+   > [Set up Microsoft Mesh](Setup/Content/setup-m365-mesh.md)
 
    > [!div class="nextstepaction"]
-   > [Choose your development journey](Create/getting-started/choose-your-journey.md)
+   > [Organize Mesh event](events-guide/events-overview.md)
 
    > [!div class="nextstepaction"]
-   > [Go to Mesh Toolkit](https://github.com/microsoft/Mesh-Toolkit-Unity)
+   > [Join Mesh event](user-guide/getting-started.md)
+
+   > [!div class="nextstepaction"]
+   > [Develop Mesh environments](Create/development-overview.md)
