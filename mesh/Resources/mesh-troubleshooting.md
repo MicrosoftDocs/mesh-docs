@@ -1,5 +1,5 @@
 ---
-title: Mesh events help
+title: Troubleshooting for Microsoft Mesh
 description: Various help guides and FAQ answers regarding Mesh events.
 author: typride    
 ms.author: tmilligan
@@ -8,7 +8,7 @@ ms.topic: Troubleshooting
 keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
 ---
 
-# Mesh events help
+# Troubleshooting for Microsoft Mesh
 
 ## How to download Mesh on Quest 2 via App Lab
 
@@ -83,3 +83,30 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 1. Select to **Allow** any **Terms of service & Allow Diagnostic data**.
 
 1. Accept the **Terms of service & Allow Diagnostic data**.
+
+## Audio setup in Mesh
+
+### Which audio devices work best in Mesh?
+
+Spatial audio works best with **wired headphones**.
+
+Using bluetooth headphones will not provide the most optimal spatial audio experience.
+
+### Where do I access audio input/output settings?
+
+- Where do I go to access my audio input/output settings during an event?
+- What are the advanced audio settings options?
+
+**Audio input/output settings are available in:**
+
+**Settings** > **Display and sound**.
+
+There you can select your audio devices, choose system default speakers, adjust app volume and test speakers, choose mic device and test your microphone.
+
+### What are the advanced audio settings?
+
+For advanced audio settings, you can adjust:
+
+- Environment volume
+- Effects volume
+- Incoming Voices

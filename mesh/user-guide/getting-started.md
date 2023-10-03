@@ -32,7 +32,7 @@ Available through Meta App Lab. Log in with your Meta ID, get the app, and downl
 > [!div class="nextstepaction"]
 > [Microsoft Mesh on Meta Quest | Meta Store](https://www.meta.com/experiences/6750166401689690/)
 
-Need help? See [how to download Mesh on Quest 2 via App Lab](../Resources/mesh-events-help.md#how-to-download-mesh-on-quest-2-via-app-lab).
+Need help? See [how to download Mesh on Quest 2 via App Lab](../Resources/mesh-troubleshooting.md#how-to-download-mesh-on-quest-2-via-app-lab).
 
 ## Organize events
 

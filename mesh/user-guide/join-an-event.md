@@ -52,6 +52,8 @@ Follow the steps below to see a list of events and join an event.
     >[!Note] 
     >In the Mesh app on PC, the Windows default speaker will always be used by Mesh. You can change the speaker settings in the Windows **Settings** -\> **System** -\> **Sound settings** dialog box.
 
+    [Learn more about audio in Mesh](../Resources/mesh-troubleshooting.md#audio-setup-in-mesh)
+
 4. Before you join an event, you can also select or customize your avatars from the pre-join dialog.
 
     ![A screenshot of the pre-join dialog with Avatars menu items highlighted](media/prejoin-dialog-avatars.png)
