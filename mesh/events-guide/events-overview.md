@@ -34,10 +34,10 @@ Create an event in the Mesh Portal and invite participants. Once created, partic
 
 :::image type="content" source="../media/mesh-event-producer-guide/Join-event-link-calendar.gif" alt-text="Join mesh event via a link in outlook or teams calendar":::
 
-To learn how to create your event in the Mesh Portal, see [Create an event](create-event.md).
+To learn how to create your event, see how to [create an event in the Mesh portal](create-event-mesh-portal.md).
 
 > [!div class="nextstepaction"]
-> [Create an event](create-event.md)
+> [Create an event in the Mesh portal](create-event-mesh-portal.md)
 
 ## Customize your event
 
