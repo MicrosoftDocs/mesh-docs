@@ -11,31 +11,61 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 # Microsoft Mesh overview
 
-Microsoft Mesh is a platform that powers shared immersive experiences. It offers remote and hybrid workers a more natural way to connect with a sense of co-presence. Mesh enables creators to build custom employee experiences that bring people together for new hire onboarding, training, team building, and more. At Microsoft, we are bringing Mesh capabilities into Microsoft Teams with avatars  and immersive experiences so employees can easily connect where work happens.
+To support a truly flexible workplace, organizations and employees need technology that helps them feel connected regardless of where they work. Over the years, we have learned that a thriving workplace fosters authentic human connections—allowing employees and teams to build meaningful relationships and trust so they can perform at their highest potential.
 
-## Experience Microsoft Teams like never before
+According to Microsoft’s Work Trend Index report, 43 percent of leaders say relationship building is the [greatest challenge in remote and hybrid work](https://www.microsoft.com/en-us/worklab/work-trend-index/hybrid-work-is-just-work). Coming together in a physical space helps, but it’s not always possible—travel costs are prohibitive, real estate is expensive, and talent is increasingly dispersed. We need new ways for people to connect from different locations or geographies, using the tools they already have.
 
-Mesh-powered immersive experiences are now integrated with Microsoft Teams, helping employees form more experiential connections where work happens.
+## Introducing Microsoft Mesh
 
-Avatars for Microsoft Teams enables you to build connections in meetings without turning your video on. Include more people in the conversation — whether they need a break due to video fatigue or just feel more comfortable with their video off. Avatars add a new layer of choice to your meetings, enhancing your team meetings for more engagement and fun.
+We are re-imagining the way employees come together with Microsoft Mesh, a new three-dimensional (3D) immersive experience.
 
-[Learn more about avatars for Teams](https://support.microsoft.com/en-us/office/join-a-meeting-as-an-avatar-in-microsoft-teams-5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
+Microsoft Mesh is not merely another innovation, but a solution that enables your distributed workforce to connect like never before in a 3D immersive space, helping virtual meetings and events feel more like face-to-face connections.
 
-[Learn more about setting up avatars for Teams](https://learn.microsoft.com/microsoftteams/meeting-avatars)
+Here’s what makes Mesh a powerful tool to bring your organization together:
 
-Take your digital presence a step further with immersive spaces for Teams. Add immersive spaces to a Teams meeting to create social gatherings that provide participants a sense of natural co-presence and togetherness. Connecting with others in immersive spaces mimics many elements of an in-person gathering – like the ability to have a side chat with someone you want to catch up with, or to have multiple conversations in the same space without talking over each other. Immersive spaces for Teams can be accessed through PCs or Quest 2 headsets.
+### 3D digital environments—meaningful connections in shared spaces  
 
-[Learn more about immersive spaces in Teams](https://support.microsoft.com/en-us/office/join-a-meeting-as-an-avatar-in-microsoft-teams-5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
+Immersive spaces have unique attributes that create a perception of being physically together in a 3D digital space, including spatial interaction, co-presence, and immersion. Digital engagement is evolving from audio to video, and now to **spatial interaction**.
 
-![An image of people meeting in Mesh Immersive spaces for Teams as avatars.](media/welcome-to-mesh/mesh-immersive-space-meeting.png)
+Spatial awareness through directionality and distance enables multiple small group discussions in the same place, adding familiar human elements to digital connections. Spending time in the same 3D environment also creates a powerful sense of togetherness, or **co-presence**, even without actively speaking.
 
-## Build custom experiences tailored to your organization’s needs
+This co-presence can lead to serendipitous moments of conversation or even just the deepened connection of a shared experience. 3D environments also remove distractions and help participants focus on fewer things—specifically the people and objects that surround them, driving a higher sense of **immersion**.
 
-In addition to Mesh-powered experiences being integrated into Teams, the Mesh platform enables you to build custom experiences for your organization that are accessible through the standalone Mesh application.
+## Use immersive spaces in Microsoft Teams
 
-Mesh provides a rich set of out-of-box functionalities like synchronizing the experience for users across devices, on PCs and Quest 2 headsets. Core capabilities include avatars to represent participants, spatial audio to enable participants to experience sound as they would in an in-person setting, and the ability to interact with objects and the environment. With event management capabilities, you can orchestrate real-time experiences by facilitating presentations, teleporting users within the environment, and triggering content and animations all in a predetermined time sequence. With these capabilities, you can create employee training, team onboarding, guided tours and more. And, because Mesh is built on Microsoft 365, identity management and enterprise-grade privacy and security are built-in.
+We are making building relationships easier by bringing the power of Mesh into the place where people work every day—Microsoft Teams. Getting started is easy! From the View menu in a Teams meeting, you select the immersive space option. With just a click, you will transform your two-dimensional (2D) meeting into a 3D immersive experience.  
 
-With Mesh, there are plenty of ways to add value, content, interactivity, and magic to custom experiences.
+:::image type="content" source="media/welcome-to-mesh/04_ImmersiveSpaces_Splice.gif" alt-text="GIF of selecting view then immersive space in teams":::
+
+> [!div class="nextstepaction"]
+> [Learn about immersive spaces in Teams](/microsoftteams/meeting-avatars)
+
+As you enter an immersive space, choose an avatar that you’ve already built for standard 2D Teams meetings or create a new one. It’s easy to customize your avatar to reflect your appearance, style, or mood for the day.
+
+![An image of people meeting in Microsoft Teams as avatars on a laptop PC.](media/welcome-to-mesh/avatars-in-meetings.png)
+
+> [!div class="nextstepaction"]
+> [Learn more about avatars in Teams](https://support.microsoft.com/en-us/office/join-a-meeting-as-an-avatar-in-microsoft-teams-5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
+
+## Create a custom immersive space with Microsoft Mesh
+
+Create custom immersive spaces with the Mesh toolkit in Unity that are tailored to your specific business needs such as employee events, training, guided tours, or internal product showcases.
+
+:::image type="content" source="media/get-started-developing-mesh/image040-unity-overview-hero.png#lightbox" alt-text="Overview image of Unity development environment for Mesh":::
+
+> [!div class="nextstepaction"]
+> [Mesh Development Overview](Create/development-overview.md)
+
+### Customize and host events
+
+Use a no-code editor to easily customize the event or the Mesh toolkit to leverage the power of Unity for fully customizable immersive experiences.
+
+:::image type="content" source="user-guide/media/Events-customization.gif" alt-text="Customization":::
+
+> [!div class="nextstepaction"]
+> [Overview of Mesh events](events-guide/events-overview.md)
+
+With Mesh, there are plenty of ways to add value, content, interactivity, and magic to custom experiences:
 
 * Use Unity to create new 3D environments or port existing ones into your space.
 * Use cloud scripting to add interactivity by inserting logic, integrating with live backend business data, connecting triggers to actions, infusing AI, and more – all with the full power of C# and .NET Core.
@@ -46,8 +76,6 @@ With Mesh, there are plenty of ways to add value, content, interactivity, and ma
 ![An image of 3D Environment built with libraries and a table for collaboration.](media/welcome-to-mesh/3d-meeting-envrionment.jpg)
 
 ## Next steps
-
-![An image of people meeting in Microsoft Teams as avatars on a laptop PC.](media/welcome-to-mesh/avatars-in-meetings.png)
 
    > [!div class="nextstepaction"]
    > [Getting started with Microsoft Mesh](user-guide/getting-started.md)
