@@ -5,5 +5,7 @@ items:
   href: import-the-mesh-toolkit-package.md
 - name: Build for single and multiple platforms
   href: build-for-single-and-multiple-platforms.md
+- name: Set up your scene
+  href: set-up-your-scene.md  
 - name: Add a thumbnail camera
   href: add-a-thumbnail-camera.md

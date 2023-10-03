@@ -3,7 +3,7 @@ title: Prerequsites for Mesh development
 description: Prerequisites required for Mesh development, including Unity and Azure information.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/6/2023
+ms.date: 10/2/2023
 ms.topic: overload
 ms.prod: mesh
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features, prerequisites
@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 ## License requirement
 
-<TBD>
+Developing with the Mesh Toolkit doesn't require a license; however, building and publishing your Environment to Mesh requires a Teams Premium license (hyperlink to /mesh/setup/content/setup-m365-mesh?branch=pr-en-us-256#licensing-requirements section)
 
 ## Unity version 2022.3.7f1+
 

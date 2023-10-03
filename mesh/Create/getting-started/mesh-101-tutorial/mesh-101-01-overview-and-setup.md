@@ -75,13 +75,12 @@ Your installation should include modules for Android and Windows.
 
 ### Download the Mesh desktop app
 
-To download the app (codenamed **Project Napili**), you can visit the link below.
+Download Microsoft Mesh on PC
+ 
+> [!div class="nextstepaction"]
+> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1)
 
-![Project Napili - Microsoft Store Apps](../../../media/sample-mesh-101/image003.png)
-
-[Project Napili - Microsoft Store Apps](https://apps.microsoft.com/store/detail/project-napili/9P0B5VMS9RTQ?hl=en-us&gl=us)
-
-If the app isn't available, talk to your IT admin about making the app visible to you.
+    ![______](../../../media/get-started-developing-mesh/006-mesh-download-for-pc.png)
 
 ### Download the Mesh Toolkit
 
