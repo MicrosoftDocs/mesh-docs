@@ -49,7 +49,7 @@ Build environments built in Unity, upload to the Mesh portal, and experience the
 
 The Mesh experience that you create starts out in Unity as a new project or existing sample. You can add content to the project/sample scene and then upload it to a World in the Mesh Portal as an Environment. When an Event Producer creates a Mesh Event, they can choose to hold their Event in the custom environment you created.
 
-See [how to create a unity project for Mesh](build-your-basic-environment/create-a-new-project.md).
+See [Create a new project or update an existing one](build-your-basic-environment/create-a-new-project-or-update.md).
 
 In the Mesh documentation, you'll find articles that introduce you to the packages available for Mesh, walk you through the Unity setup, and describe the samples provided by Microsoft that you can use as a starting point for your Environment.
 
@@ -59,4 +59,4 @@ In the Mesh documentation, you'll find articles that introduce you to the packag
    > [Choose your journey](getting-started/choose-your-journey.md)
 
    > [!div class="nextstepaction"]
-   > [Creating a new Unity project](build-your-basic-environment/create-a-new-project.md)
+   > [Create a new project or update an existing one](build-your-basic-environment/create-a-new-project-or-update.md)

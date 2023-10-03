@@ -63,6 +63,7 @@ Once inside Mesh, you can also select and setup your audio devices in the **Sett
 
 ![A screenshot of the Settings dialog](media/settings-audio-devices.png)
 
+[Learn more about audio in Mesh](../Resources/mesh-troubleshooting.md#audio-setup-in-mesh)
 
 ## From the Mesh app on Quest 2
 
@@ -98,4 +99,4 @@ You can interact with any games, puzzles, or interactive elements in the event e
    > [Mesh user controls](mesh-user-controls.md#mesh-controls-overview)
 
    > [!div class="nextstepaction"]
-   > [Create an event](events-guide/create-event.md)
+   > [Create an event in the Mesh portal](../events-guide/create-event-mesh-portal.md)
