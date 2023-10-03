@@ -99,4 +99,4 @@ You can interact with any games, puzzles, or interactive elements in the event e
    > [Mesh user controls](mesh-user-controls.md#mesh-controls-overview)
 
    > [!div class="nextstepaction"]
-   > [Create an event](events-guide/create-event.md)
+   > [Create an event in the Mesh portal](../events-guide/create-event-mesh-portal.md)
