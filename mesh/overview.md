@@ -29,7 +29,6 @@ Take your digital presence a step further with immersive spaces for Teams. Add i
 
 ![An image of people meeting in Mesh Immersive spaces for Teams as avatars.](media/welcome-to-mesh/mesh-immersive-space-meeting.png)
 
-
 ## Build custom experiences tailored to your organization’s needs
 
 In addition to Mesh-powered experiences being integrated into Teams, the Mesh platform enables you to build custom experiences for your organization that are accessible through the standalone Mesh application.
@@ -44,19 +43,18 @@ With Mesh, there are plenty of ways to add value, content, interactivity, and ma
 * Use physics tools in Mesh to assign properties to objects in your space using gravity or buoyancy. Create a realistic experience or enable more fantastical interactions for games, challenges, and help participants unleash their endless creativity.
 * Diagnose potential issues and bring more polish to the experience with performance tools in Mesh.
 
-At this time, you’ll need to be a part of the Microsoft Mesh Technical Adoption Program (Mesh TAP) to build custom experiences with Mesh private preview.
 
-![An image of 3D Environment built with libarries and a table for collaboration.](media/welcome-to-mesh/3d-meeting-envrionment.jpg)
+![An image of 3D Environment built with libraries and a table for collaboration.](media/welcome-to-mesh/3d-meeting-envrionment.jpg)
 
 ## Next steps
 
 ![An image of people meeting in Microsoft Teams as avatars on a laptop PC.](media/welcome-to-mesh/avatars-in-meetings.png)
 
    > [!div class="nextstepaction"]
-   > [Use Mesh](Use/usage-overview.md)
+   > [Getting started with Microsoft Mesh](user-guide/getting-started.md)
 
    > [!div class="nextstepaction"]
    > [Create for Mesh](Create/development-overview.md)
 
    > [!div class="nextstepaction"]
-   > [Setup Mesh](Setup/Content/setup-azure-mesh-guide.md)
+   > [Set up Microsoft Mesh](Setup/Content/setup-m365-mesh.md)
