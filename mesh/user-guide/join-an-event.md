@@ -3,7 +3,7 @@ title: Join an event
 description: Joining an event in Mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 10/2/2023
+ms.date: 10/3/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -13,8 +13,10 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 There are three ways for you to join an event in Immersive space in Microsoft Mesh:
 
 1. Microsoft Outlook or Teams [meeting invites](#from-microsoft-outlook-and-teams) on your calendar
-1. The Microsoft Mesh application on [PC](#from-the-mesh-app-on-pc) or [Quest](#from-the-mesh-app-on-quest-2)
+1. The Microsoft Mesh application on PC or Quest
 1. The Microsoft Mesh portal: https://portal.mesh.microsoft.com/ 
+
+# [PC](#tab/pc)
 
 ## From Microsoft Outlook and Teams
 
@@ -24,7 +26,7 @@ You can easily find Mesh events right within your daily Outlook and Teams calend
 
 ## From the Mesh App on PC
 
-In the Mesh App on PC or Quest, you can attend social gatherings, conferences, and all-hands events all within a wide selection of Environments. In these events, you can view content, interact with physical objects, and meet or network with your colleagues.
+In the Mesh App on PC or Quest, you can attend social gatherings, conferences, and all-hands events all within a wide selection of Environments. In these events, you can view content, interact with physical objects, and meet or network with your colleagues.s
 
 Follow the steps below to see a list of events and join an event.
 
@@ -45,24 +47,20 @@ Follow the steps below to see a list of events and join an event.
 
     For more information, see [Personalize your avatar](avatars.md).
 
-### Setup audio devices
+4. You can also select your audio device from the **Pre-join** dialog.
 
-You can select your audio device from the **Pre-join** dialog.
+    ![A screenshot of the Mesh prejoin screen](media/prejoin-dialog-audio.png)
 
-![A screenshot of the Mesh prejoin screen](media/prejoin-dialog-audio.png)
+    and the **Devices** dialog box appears, where you can test your audio devices:
 
-and the **Devices** dialog box appears, where you can test your audio devices:
+    ![A screenshot of the audio device test dialog that can be accessed from the prejoin screen](media/audio-device-test-ui.png)
 
-![A screenshot of the audio device test dialog that can be accessed from the prejoin screen](media/audio-device-test-ui.png)
+    >[!Note] 
+    >In the Mesh app on PC, the Windows default speaker will always be used by Mesh. You can change the speaker settings in the Windows **Settings** -\> **System** -\> **Sound settings** dialog box.
 
->[!Note] 
->In the Mesh app on PC, the Windows default speaker will always be used by Mesh. You can change the speaker settings in the Windows **Settings** -\> **System** -\> **Sound settings** dialog box.
+    Learn more about frequently asked questions related to audio in Mesh [here](../Resources/mesh-troubleshooting.md#audio-setup-in-mesh).
 
-Once inside Mesh, you can also select and setup your audio devices in the **Settings** dialog, **Display & sound -> Devices**.
-
-![A screenshot of the Settings dialog](media/settings-audio-devices.png)
-
-[Learn more about audio in Mesh](../Resources/mesh-troubleshooting.md#audio-setup-in-mesh)
+# [Quest](#tab/quest)
 
 ## From the Mesh app on Quest 2
 
@@ -80,6 +78,8 @@ shown below to find and join your Teams events.
 4. Click on any of the events to **View event details**, or select **Join**.
 
 Go through the Mesh pre-join screen to setup/select/customize your avatar and select **Join** when ready.
+
+---
 
 ## Enjoy your event
 
