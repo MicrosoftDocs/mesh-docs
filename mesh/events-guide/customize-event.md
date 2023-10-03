@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
 
 # Customize your event
 
-Now that you've created your event, it's time to customize your event to add any run-of-show tools you'd like to use during your event.
+Now that you've created an event, it's time customize it in the [Microsoft Mesh app](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1) and add any run-of-show tools you'd like to use.
 
 At a high level, there are three major steps to customize your event or template:
 
