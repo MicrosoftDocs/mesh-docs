@@ -22,7 +22,7 @@ Every scene must have at least one TravelPoint, which is used to configure avata
 ## Add the Mesh Thumbnail Camera
 
 Adding the `Mesh Thumbnail Camera` provides a thumbnail image that will be
-added to your Environment's listing in the Azure Portal and its
+added to your Environment's listing in the Mesh Portal and its
 selection button in the Mesh app. This comes in handy when you're
 selecting Environments in either place because it gives you a visual
 reminder of what the Environment looks like.
@@ -47,7 +47,9 @@ reminder of what the Environment looks like.
 > **Inspector** prior to uploading your Environment to Mesh.
 
 There are no set rules for how your thumbnail should look---it's totally
-up to you. For the example below, we chose a close-up front view of a
-wind turbine.
+up to you. The example below is taken from our [Mesh 101 tutorial](../../Create/getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md). The tutorial teaches you how to add Mesh features to an educational experience about wind turbines, so the thumbnail shows the turbines.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image020.jpg)
+![A screenshot of a computer Description automatically generated](../../../media/get-started-developing-mesh/001-thumbnail-example.png)
+
+> [!div class="nextstepaction"]
+> [Enhanced features overview](../enhance-your-environment/enhanced-features-overview.md)
