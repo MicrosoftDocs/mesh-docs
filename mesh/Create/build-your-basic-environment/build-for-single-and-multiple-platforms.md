@@ -38,4 +38,4 @@ more about optimizing for different platforms, see the article named
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Add a thumbnail camera](add-a-thumbnail-camera.md)
+> [Set up your scene](set-up-your-scene.md)

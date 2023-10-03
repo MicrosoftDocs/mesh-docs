@@ -3,8 +3,6 @@ items:
   href: enhanced-features-overview.md
 - name: Add Event features to your Environment
   href: add-event-features.md
-- name: MRTK Graphics tools
-  href: mrtk-graphics-tools.md  
 - name: Object and avatar interactions
   href: object-avatar-interactions.md    
 - name: Physics interactions

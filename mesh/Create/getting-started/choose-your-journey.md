@@ -11,6 +11,10 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features
 
 # Choose your journey
 
+> [!IMPORTANT]
+> <License info TBD>
+> To build experiences for Mesh, you must have intermediate to advanced Unity skills.
+
 ## Try our Mesh 101 tutorial
 
 If you're new to Mesh and like the idea of learning through a step-by-step tutorial, we recommend that you try our Mesh 101 tutorial. It starts you off with a pre-built Unity project and then walks you through the process of creating an educational windfarm experience. You'll learn how to use Mesh scripting and physics to add interactivity, and then you'll deploy the project as a metaverse Environment to your Mesh World.
@@ -19,9 +23,7 @@ If you're ready to starting building Mesh experiences, you have several approach
 
 - Open and build upon an existing sample.
 
-- Upgrade packages in a pre-existing Mesh project in Unity.
-
-- Start a new project from scratch.
+- Update an existing project or create a new one.
 
 ## Start with a Mesh sample
 
@@ -29,21 +31,9 @@ It's easiest to start with a sample file to ensure all packages are configured i
 
 [Learn more about starting with a Mesh sample](samples/samples-overview.md).
 
-## Upgrade packages in a pre-existing Mesh project
+## Update an existing project or create a new one
 
-You can upgrade the packages in your existing project and then continue developing.
-
-1. Make sure your project uses the 3D (URP) project template.
-1. [Download and unzip the Mesh toolkit](download-the-mesh-toolkit.md).
-1. Import the Toolkit package into your project.
-
-Note that you may encounter some configuration notifications with upgrading and replacing older packages.
-
-## Start from scratch
-
-If you'd like to start from scratch and build from the ground up, create a simple 3D URP (Core), then [download and unzip the Mesh toolkit](download-the-mesh-toolkit.md), and then import the Toolkit package into your project.
-
-For a more detailed explanation of how to set up a project for Mesh development, see the article named [Create a new Unity project](../build-your-basic-environment/create-a-new-project.md).
+You can make an existing Unity project Mesh-capable by [importing the Mesh Toolkit](../build-your-basic-environment/import-the-mesh-toolkit.md) or simply [create a new 3D URP (Core) project](../build-your-basic-environment/create-a-new-project-or-update.md) and then start building your Mesh experience from scratch. 
 
 ## Add more features to your Environment
 

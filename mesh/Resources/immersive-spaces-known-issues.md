@@ -14,9 +14,9 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 ### Audio
 
-1. Synchronize speaker and microphone selection between Teams and Mesh.
+1. Currently, speaker and microphone selection are not synchronized between Teams and Mesh. You will need to double-check that the correct audio devices are selected on the pre-join screen when you go into immersive space.
 
-1. Users need to be informed when network may affect Audio Quality; Continuous Improvement in Audio Quality.
+1. Users who are experiencing poor network connection may hear audio quality issues as a result.  There is currently no warning message for poor network quality. We'll be implementing this soon, as well as working continuously to improve overall audio quality.
 
 1. Users can be denied Mic Permissions, leading to the mic being muted without warning.
 
@@ -69,6 +69,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 1. Text for **Microphone** settings in the pre-join dialog box isn’t readable in high contrast mode.
 
 1. On Quest, if you try to rotate the avatar preview in the Avatar Customizer, your field of view will also move.
+
 1. Mesh immersive spaces do not properly support low bandwidth situation: users who are experiencing poor network quality may see problems such as missing avatars and audio glitches. We are actively working on integrating notifications to alert users when they are in this state.
 
 
