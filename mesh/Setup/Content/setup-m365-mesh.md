@@ -17,18 +17,18 @@ In the Microsoft 365 Apps Admin Center (MAC) admins can enable access to Mesh ex
 - Mesh Portal
 
 > [!NOTE]
-> All Mesh experiences are enabled via one policy in the Microsoft 365 Admin Center.
+> All Mesh experiences are managed via one policy in the Microsoft 365 Admin Center.
 >
-> If a user has this policy enabled, they will be able to access all Mesh experiences including the Mesh app on PC, the Mesh app on Quest 2, and the Mesh portal.
+> As an admin, you can configure the Mesh policy to manage which users and groups in your organization have access to the Mesh app on PC, the Mesh app on Quest 2, and the Mesh portal. 
 
-To enable access, please visit the M365 Admin Center and enable the policy via the Overview of Cloud Policy Services (OCPS).
+To manage access, please visit the M365 Admin Center and configure the policy via M365 Apps Admin Center.
 
    > [!div class="nextstepaction"]
    > [M365 Apps Admin Center](https://config.office.com/officeSettings/)
 
 ## Prerequisites
 
-To enable Mesh in your managed tenant, you must have one of the following roles in Azure AD:
+To configure Mesh access in your tenant, you must have one of the following roles in Azure AD:
 
 - Global Administrator
 - Security Administrator
@@ -47,7 +47,7 @@ For Microsoft Mesh, you will need the following:
 
 Learn more about [Teams for enterprise](https://www.microsoft.com/en-us/microsoft-teams/enterprise#pricing).
 
-## Enable Mesh in M365 Apps Admin Center
+## Configure Mesh in M365 Apps Admin Center
 
 1. Sign into [M365 Apps Admin Center](https://config.office.com/officeSettings/) with your Azure Active Directory account with admin privileges for the Microsoft 365 Admin Center.
     > [!div class="nextstepaction"]
@@ -57,17 +57,17 @@ Learn more about [Teams for enterprise](https://www.microsoft.com/en-us/microsof
 
     :::image type="content" source="../../media/m365-setup-guide/M365-policy-management.png" alt-text="Customization then policy management window in the M365 Admin Center":::
 
-1. Create or identify an existing policy that applies to the users that should have access to Mesh with the Mesh policy **enabled**. 
+1. Create or identify an existing policy for the users or groups of users that you would like to configure Mesh for.  
 
     Create a new policy by selecting **+ Create** then name the policy.
 1. Adjust the scope for this policy to determine who or what groups can access **all Mesh experiences**.
 
-    To be clear, if this policy is a applied to a user, they will be able to access Mesh on Meta Quest 2, the Mesh app on PC, and the Mesh Portal.
+    To be clear, if this policy is a applied to a user, they will be able to access Mesh on Meta Quest 2, the Mesh app on PC, and the Mesh Portal. If you do not configure this policy, users will have access to all three Mesh experiences. 
 
 1. In the **Configure Settings** page, search for **Control user access to Microsoft Mesh experiences.** 
     :::image type="content" source="../../media/m365-setup-guide/M365-configure-settings-policy-name.png" alt-text="Policy name for enabling Mesh experiences is Control user access to Microsoft Mesh experiences.":::
 
-1. Select the policy and **Enable** it.
+1. Select the policy and **Enable** or **Disable** it for users or groups of users in your organization.
     :::image type="content" source="../../media/m365-setup-guide/OCPS-Enabled-policy.png" alt-text="Mesh access policy enabled":::
 1. In the Review and publish page, review the policy that was created then select **Create** to publish.
 
