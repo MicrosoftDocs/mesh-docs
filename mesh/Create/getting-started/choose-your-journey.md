@@ -11,9 +11,10 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features
 
 # Choose your journey
 
+To build experiences for Mesh, you must have intermediate to advanced Unity skills.
+
 > [!IMPORTANT]
-> <License info TBD>
-> To build experiences for Mesh, you must have intermediate to advanced Unity skills.
+> A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../Setup/Content/setup-m365-mesh.md).
 
 ## Try our Mesh 101 tutorial
 
