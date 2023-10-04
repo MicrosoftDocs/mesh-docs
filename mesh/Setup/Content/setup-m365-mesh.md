@@ -38,12 +38,12 @@ To configure Mesh access in your tenant, you must have one of the following role
 
 For Microsoft Mesh, you will need the following:
 
-- Teams premium license for Commercial use.
+- Teams Premium license in a tenant for Commercial use. Read more about [Microsoft Teams Premium licensing - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
 
     > [!NOTE]
     > We don't support tenants with worldwide public sector, EDU, or GCC licenses.
 
-- A pre-requisite license for Teams Premium, as outlined in [Microsoft Teams Premium Licensing - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
+- A pre-requisite license for Teams Premium, as outlined in [Requirements to purchase Teams Premium - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#what-are-the-requirements-to-purchase-teams-premium).
 
 Learn more about [Teams for enterprise](https://www.microsoft.com/en-us/microsoft-teams/enterprise#pricing).
 
