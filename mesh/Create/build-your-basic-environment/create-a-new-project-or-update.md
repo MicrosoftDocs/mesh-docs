@@ -41,7 +41,7 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 
 - **IMPORTANT**: Every scene in your project requires a NavMesh so that the user can navigate using teleport. [Learn more about the NavMesh](https://docs.unity3d.com/Manual/nav-Overview.html).
 
-- Environments can't depend on any scripts that aren't included in the Mesh Toolkit Uploader package. This includes scripts you've added to the project manually or ones obtained by installing other packages.
+- Environments can't depend on any scripts that aren't included in the Mesh Toolkit qpackage. This includes scripts you've added to the project manually or ones obtained by installing other packages.
 
 - If you get a dialogue asking you to configure project settings, confirm to ensure these items show up in the Menu bar.
 
