@@ -43,7 +43,7 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 
 - Environments can't depend on any scripts that aren't included in the Mesh Toolkit package. This includes scripts you've added to the project manually or ones obtained by installing other packages.
 
-- Environments components can only call _ScriptMachine.TriggerUnityEvent_ and _ScriptMachine.TriggerAnimationEvent_ events callback.
+- The only event callbacks that are allowed to be called by environment components are _ScriptMachine.TriggerUnityEvent_ and _ScriptMachine.TriggerAnimationEvent_.
 
 - If you get a dialogue asking you to configure project settings, confirm to ensure these items show up in the Menu bar.
 
