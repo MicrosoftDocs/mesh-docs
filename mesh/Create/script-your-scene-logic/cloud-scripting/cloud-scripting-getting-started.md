@@ -8,7 +8,7 @@ ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
 
-# Mesh Cloud Scripting Getting Started Guide
+# Mesh Cloud Scripting Getting Started
 
 This article will help you configure your development environment and start iterating on your project. We’ll also cover how to upload your environment, publish your app to Azure, and prepare for testing. Finally, we’ll go over testing and troubleshooting. We recommend that you familiarize yourself with the current list of [known issues](cloud-scripting-known-issues.md) before starting development with Mesh Cloud Scripting.
 
@@ -17,15 +17,15 @@ This article will help you configure your development environment and start iter
 - Advanced Unity skills.
 - A username and password for the Azure Portal so you can upload your work.
 - Your account must be added to the Mesh world you’re trying to publish to. If you’re unsure about this, check with your IT admin.
-- There must be an existing Mesh World that contains a Space in the Azure Portal that you can upload your work to. To learn more about setting this up, see how to [create a world](../../Setup/Content/setup-mesh-portal.md#create-a-mesh-world).
-- There must be an existing Unity project that was created, or you must [create a new Unity project](../build-your-basic-environment/create-a-new-project.md). You will need to [download the *Mesh Toolkit*](../getting-started/download-the-mesh-toolkit.md) which contains the Unity package you need for Mesh Cloud Scripting. This package is named *mesh.meshapps.unityruntime*.
+- There must be an existing Mesh World in the Azure Portal that you can upload your work to. To learn more about setting this up, see how to [create a world](../../Setup/Content/setup-mesh-portal.md#create-a-mesh-world).
+- There must be an existing Unity project that was created, or you must [create a new Unity project](../build-your-basic-environment/create-a-new-project-or-update.md). You'll need to [import the Mesh Toolkit package](../../build-your-basic-environment/import-the-mesh-toolkit-package.md); it contains the package you need for Mesh Cloud Scripting, which is named *mesh.meshapps.unityruntime*.
 - You should be at least somewhat familiar with event management. To learn more about this, see how to [create an event in the Mesh portal](../../events-guide/create-event-mesh-portal.md)
 
 ## Software dependencies
 
 1. [.NET 6.0 SDK Windows](https://dotnet.microsoft.com/en-us/download)
 1. [Unity 2022.3.7f1+](https://unity.com/releases/editor/whats-new/2022.3.7)
-1. [Azure CLI 2.40.0](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
+1. [Azure CLI 2.40.0](https://learn.microsoft.com/cli/azure/install-azure-cli)
 
 ## Create a Scene with a C# MeshApp application
 
