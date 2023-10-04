@@ -58,5 +58,7 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 
 - Only some Unity components are on the Mesh Cloud Scripting allow list.
 
+## Next steps
 
+[Import the Mesh Toolkit package](/import-the-mesh-toolkit-package.md)
 

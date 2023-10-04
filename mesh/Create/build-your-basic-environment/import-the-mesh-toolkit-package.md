@@ -9,7 +9,7 @@ ms.prod: mesh
 keywords: Microsoft Mesh, Unity, getting started, toolkit, Mesh Toolkit, packages
 ---
 
-# Importing the Mesh Toolkit
+# Import the Mesh Toolkit package
 
 The [Mesh Toolkit](../../Create/development-overview.md#develop-in-unity-with-mesh-toolkit) contains the packages you need to create your Mesh experience.
 
