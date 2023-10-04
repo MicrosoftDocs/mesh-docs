@@ -31,23 +31,23 @@ The Mesh toolkit provides a collection of packages for Unity that enable you to 
 
 **The Mesh toolkit includes:**
 
-* [Cloud Scripting](script-your-scene-logic/cloud-scripting-basic-concepts), used to add business logic to Mesh events via cloud hosted .NET applications.
+* [Cloud Scripting](script-your-scene-logic/cloud-scripting-basic-concepts.md), used to add business logic to Mesh events via cloud hosted .NET applications.
 
-* [Visual Scripting](script-your-scene-logic/visual-scripting), which lets you add interactivity and dynamic runtime behavior to your Mesh environments without writing code. For more information, see our document titled "Mesh Visual Scripting Guide."
+* [Visual Scripting](script-your-scene-logic/visual-scripting.md), which lets you add interactivity and dynamic runtime behavior to your Mesh environments without writing code. For more information, see our document titled "Mesh Visual Scripting Guide."
 
 * Graphics Tools, a package with scripts, shaders, assets, and samples created to help improve the visual fidelity of Mesh worlds while staying within performance budgets.
 
-* [Mesh Physics](enhance-your-environment/physics-interactions), used to create enabling and engaging dynamic content.
+* [Mesh Physics](enhance-your-environment/physics-interactions.md), used to create enabling and engaging dynamic content.
 
-* The [WebSlate](enhance-your-environment/webcontent) prefab, to enable designers to add a panel that displays a given web page.
+* The [WebSlate](enhance-your-environment/webcontent.md) prefab, to enable designers to add a panel that displays a given web page.
 
-* [Mesh.Toolkit.Playmode](debug-and-optimize-performance/playmode) package, offering the possibility to press Play in a Mesh content project get a preview of what the content will look like running in Mesh.
+* [Mesh.Toolkit.Playmode](debug-and-optimize-performance/playmode.md) package, offering the possibility to press Play in a Mesh content project get a preview of what the content will look like running in Mesh.
 
-* [EventProduction](enhance-your-environment/add-event-features) scripts can be added to show hard-coded and online videos in an Event.
+* [EventProduction](enhance-your-environment/add-event-features.md) scripts can be added to show hard-coded and online videos in an Event.
 
-* [Mesh Toolkit Uploader](make-your-environment-available-for-events/build-and-publish-your-environment), used to build Mesh-compatible asset bundles from your Unity content and upload them to your Mesh World.
+* [Mesh Toolkit Uploader](make-your-environment-available-for-events/build-and-publish-your-environment.md), used to build Mesh-compatible asset bundles from your Unity content and upload them to your Mesh World.
 
-* [Content Performance Analyzer](debug-and-optimize-performance/performance-guidelines) (CPA): automatically reports content optimization issues and opportunities before content is uploaded to the Mesh catalog.
+* [Content Performance Analyzer](debug-and-optimize-performance/performance-guidelines.md) (CPA): automatically reports content optimization issues and opportunities before content is uploaded to the Mesh catalog.
 
 
 
