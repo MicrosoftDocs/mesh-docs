@@ -18,11 +18,9 @@ You can use the Content Performance Analyzer (CPA) to automatically catch conten
 ## Using the CPA tool
 
 **To open the CPA tool**:
-In Unity, on the menu bar, select `Mesh Toolkit > Content Performance Analyzer`.
+In Unity, on the menu bar, select `Mesh Toolkit > Content Performance Analyzer`. This opens the CPA tool in its own window. 
 
-    ![______](../../media/debug-and-optimize/002-cpa-window.png)
-
-This opens the CPA tool in its own window. 
+![______](../../media/debug-and-optimize/002-cpa-window.png)
 
 **To run all analyzers**: 
 In the CPA tool, click the **Run All** (▶) button. Your content is analyzed based on the project's current quality settings.
