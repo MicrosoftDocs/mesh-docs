@@ -24,37 +24,37 @@ There are several benefits to using the Mesh Audio Manager.
 
 The safest and most efficient way to play a sound event in Mesh is through the *Play Mesh Audio* node.
  
-![______](../../media/enhance-your-enhancement/audio-manager/001-play-mesh-audio-node.png)
+![______](../../media/enhance-your-environment/audio-manager/001-play-mesh-audio-node.png)
  
 When you first add the node, it will show up with an orange title.
  
-![______](../../media/enhance-your-enhancement/audio-manager/002-play-mesh-audio-orange.png)
+![______](../../media/enhance-your-environment/audio-manager/002-play-mesh-audio-orange.png)
  
 This is because there are two requirements that need to be met for the node to work.
  
-![______](../../media/enhance-your-enhancement/audio-manager/003-requirements.png)
+![______](../../media/enhance-your-environment/audio-manager/003-requirements.png)
  
 Once the Sound and Mixer Group fields are filled in (or the nodes connected), the title will clear up, and the node can be used. By default, this will play the sound at full volume in stereo (not spatialized). You can change the volume and pitch to your needs, and even randomize the values in the Graph Inspector.
  
-![______](../../media/enhance-your-enhancement/audio-manager/004-audio-in-script-graph.png)
+![______](../../media/enhance-your-environment/audio-manager/004-audio-in-script-graph.png)
 
 With the "Randomize Volume" and "Randomize Pitch" boxes checked, new values appear to control the amount of randomization to apply each time the node is triggered. You can also assign a Fade In Time if you want a smooth volume ramp when the sound is played.
  
 To make your sound play from a particular location, add a Spatial Audio Properties node and connect it to the Spatial Settings input.
  
-![______](../../media/enhance-your-enhancement/audio-manager/005-find-spatial-audio-properties.png)
+![______](../../media/enhance-your-environment/audio-manager/005-find-spatial-audio-properties.png)
  
 Select Spatial Audio Properties and then Create Spatial Audio Properties.
  
-![______](../../media/enhance-your-enhancement/audio-manager/006-audio-properties-add-node.png)
+![______](../../media/enhance-your-environment/audio-manager/006-audio-properties-add-node.png)
  
 You will need to create the Spatial Audio Properties before you play the audio event. The Spatial Audio Properties will also have an orange title by default because you need to connect a GameObject reference to the Emitter property so the sound knows the location at which to play the sound.
  
-![______](../../media/enhance-your-enhancement/audio-manager/007-emitter-reference.png)
+![______](../../media/enhance-your-environment/audio-manager/007-emitter-reference.png)
  
 While any GameObject reference will work, most often you will probably want to use the This node to play the sound on the GameObject that this script is attached to. You will also want to change the Attenuation Curve to slope down instead of up so that the volume goes down as you move away from the object playing the sound.
  
-![______](../../media/enhance-your-enhancement/audio-manager/008-attentuation-curve.png)
+![______](../../media/enhance-your-environment/audio-manager/008-attentuation-curve.png)
  
 The properties here are as follows:
  
@@ -70,11 +70,11 @@ The properties here are as follows:
  
 Instead of placing a single sound on the *Play Mesh Audio* node, you can create a randomized sound from several AudioClips by using the *Random Sound* node.
  
-![______](../../media/enhance-your-enhancement/audio-manager/009-search-random-sound.png)
+![______](../../media/enhance-your-environment/audio-manager/009-search-random-sound.png)
  
 When you select the *Random Sound* node, the Inspector will show an array of AudioClips you can add to.
  
-![______](../../media/enhance-your-enhancement/audio-manager/010-audio-clip-choices.png)
+![______](../../media/enhance-your-environment/audio-manager/010-audio-clip-choices.png)
 
 Each time the *Play Mesh Audio* node is triggered, a new AudioClip will be selected.
 
