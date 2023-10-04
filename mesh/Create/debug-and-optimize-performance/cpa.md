@@ -56,6 +56,6 @@ Click the **Select Platform Quality** droop-down and then select the platform.
 After you click **Run All**, the words "Passed" or "Failed" will be added to each analyzer's title. To gain more insight into why an analyzer failed, look in the **Report** > **Issues** section of the analyzer.
 
 > [!TIP] 
-You can export results to a .CSV file and then open it in Microsoft Excel by clicking the **Export to CSV** button.
+> You can export results to a .CSV file and then open it in Microsoft Excel by clicking the **Export to CSV** button.
 
 Most restrictions for each analyzer are detailed in the [*Designing for Mesh*](../design/overview.md) series of articles or the [*Mesh Physics*](../enhance-your-environment/physics-interactions.md) article.
