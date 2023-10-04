@@ -96,11 +96,7 @@ you to easily get a first impression of a multi-user scenario.
 
 2. Select the Unity Editor Play button.
 
-3. In the **Game** window, note that you now have a view from the
-    avatar's position. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the
-    Sphere Terrace. You can also drag the right mouse button to pan in
-    any direction. When you're done experimenting, click the Unity
-    Editor Play button again to exit Play mode.
+3. In the **Game** window, note that you now have a view from the avatar's position. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Play mode.
 
 ### Check the scale of your GameObjects
 
