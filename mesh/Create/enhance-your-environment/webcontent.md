@@ -274,7 +274,7 @@ Developers now can add a WebSlate to their scripted worlds. This means that a We
 
 ![Showcase of WebSlates in Mesh Scripting](../../media/webview-developer-guide/ArcadeWebSlate.png)
 
-Refer to the [Visual scripting overview](../Scripting%20your%20scene%20logic/visual-scripting-overview.md) for further guidance on the WebSlate node in Mesh Apps.
+Refer to the [Visual scripting overview](../script-your-scene-logic/mesh-scripting-overview.md) for further guidance on the WebSlate node in Mesh Apps.
 
 ## Feedback for Web content in Mesh
 

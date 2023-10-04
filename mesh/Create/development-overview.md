@@ -41,7 +41,7 @@ The Mesh toolkit provides a collection of packages for Unity that enable you to 
 
 - Content Performance Analyzer (CPA): automatically reports content optimization issues and opportunities before content is uploaded to the Mesh catalog.
 
-* Visual Scripting, which lets you add interactivity and dynamic runtime behavior to your Mesh environments without writing code. For more information, see our document titled [Mesh Visual Scripting Overview](script-your-scene-logic/visual-scripting/visual-scripting-overview.md.md).
+* Visual Scripting, which lets you add interactivity and dynamic runtime behavior to your Mesh environments without writing code. For more information, see our document titled [Mesh Visual Scripting Overview](script-your-scene-logic/visual-scripting/visual-scripting-overview.md).
 
 The Mesh toolkit is free to download, however a Teams Premium license is required for all users (including developers and technical 3D artists) to use Microsoft Mesh.
 
