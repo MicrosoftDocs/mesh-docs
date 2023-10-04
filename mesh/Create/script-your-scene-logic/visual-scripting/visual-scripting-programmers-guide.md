@@ -27,7 +27,7 @@ This is how it looks in Mesh:
 
 ![Mesh browser window with a popup dialog displaying Hello World and an OK button](../../media/mesh-scripting/visual-scripting//helloworld-runtime-browser.png)
 
-![Screen shot of the Unity Editor with the Mesh Visual Scripting Hello World scene open.](../../media/mesh-scripting/visual-scripting//helloworld-editor.png)
+![Screen shot of the Unity Editor with the Mesh Visual Scripting Hello World scene open.](../../media/mesh-scripting/visual-scripting/helloworld-editor.png)
 
 ## Testing your scripts
 
@@ -37,7 +37,7 @@ Before you upload your scene to Mesh, you can develop and test visual scripts, e
 
 When a GameObject with a Script Machine is selected in the transform hierarchy, Mesh displays the _Mesh Visual Scripting Diagnostics_ panel at the bottom of the Inspector panel:
 
-![Screen shot of the Mesh Visual Scripting diagnostics panel](../../media/mesh-scripting/visual-scripting//helloworld-diagnostics.png)
+![Screen shot of the Mesh Visual Scripting diagnostics panel](../../media/mesh-scripting/visual-scripting/helloworld-diagnostics.png)
 
 The diagnostics panel gives immediate feedback on any warnings or errors that might prevent your scripts from working well in Mesh.
 
@@ -161,11 +161,12 @@ Examples:
 
 Generally, integration with other components is often done by changing and listening to component property changes. For example:
 
-- Interactables: observe "Is Hovered" and "Is Active" properties.
-- Avatars: read avatar position, view rotation, and name plate.
+- Interactables: observe "Is Hovered" and "Is Selected" properties.
 - Physics interactions: observe bodies in trigger volume or in contact with collider.
-- Session state: list participants and read participant info.
-- Cloud Scripting: operate in tandem with cloud scripts that can read and write variables and component properties.
+
+- Avatars: read avatar position, view rotation, and name plate. **_(Not available yet.)_**
+- Session state: list participants and read participant info. **_(Not available yet.)_**
+- Cloud Scripting: operate in tandem with cloud scripts that can read and write variables and component properties. **_(Not available yet.)_**
 
 Some components provide local actions:
 

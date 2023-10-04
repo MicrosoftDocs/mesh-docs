@@ -14,7 +14,7 @@ Mesh Interactables is a system for configuring objects with Unity scripts that d
 
 For objects you want the avatar to interact with, add a *MeshInteractableSetup* script. The properties for a group of objects that all behave the same can be set up with a parent *MeshInteractableSetup* script. The properties will be applied to all children with rigidbodies at runtime by automatically adding a *MeshInteractableBody* script. **MeshInteractableBody** will allow each interactable to behave independently. If you want to set up reactions to an object’s interactions with Visual Scripting, you can add the *MeshInteractableBody* yourself and create a script graph with a node to an available property, such as *OnHovered* or *OnSelected*, hooked up to an *OnStateChanged* node. For example, the following script graph will enable the cylinder while the button is pressed and disable it when the button is released. The button is fully interactable just by adding the script and a collider and you don't have to do anything else.
 
-:::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture10.png" alt-text="MeshInteractableBody script graph":::
+![MeshInteractableBody script graph](../../media/mesh-scripting/object-player-interactions/Picture10.png)
 
 Another option for interactable objects is to make them manipulable. Manipulable objects will move through space on the end of your interactor ray. Shortcut controls are available to rotate or translate the object. To turn this feature on, select the Manipulable box and then choose your desired settings. When manipulating objects in the MeshBrowser app you can turn on IK settings for the avatar hand to follow the object. Manipulable objects don’t require a rigidbody, but you should add one if you want the objects to have physics capabilities.
 
@@ -31,7 +31,7 @@ All the Interactables components have interaction properties and methods availab
 
 Setup script for defining the properties of an object that can be interacted with using XRI interactors.
 
-:::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture1.png" alt-text="MeshInteractableSetup (script)":::
+![MeshInteractableSetup (script)](../../media/mesh-scripting/object-player-interactions/Picture1.png)
 
 #### Settings
 
@@ -117,7 +117,7 @@ Setup script for defining the properties of an object that can be interacted wit
 
 An object that tethers the avatar to its transform. This does a one-time position change for the local avatar and puts them into a tethered locomotion state based on the object's settings. Only one avatar at a time can be tethered.
 
-:::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture2.png" alt-text="Avatar Tether Script":::
+![Avatar Tether Script](../../media/mesh-scripting/object-player-interactions/Picture2.png)
 
 #### Settings
 
@@ -142,7 +142,7 @@ An object that tethers the avatar to its transform. This does a one-time positio
 
 An object that tracks when the local avatar enters and exits its trigger volume.
 
-:::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture3.png" alt-text="Avatar Trigger Script":::
+![Avatar Tether Script](../../media/mesh-scripting/object-player-interactions/Picture3.png)
 
 #### Settings
 
@@ -156,7 +156,7 @@ An object that tracks when the local avatar enters and exits its trigger volume.
 
 An object that the avatar will anchor to when they’re inside the object’s trigger volume so that the avatar moves along with the object. Inherits from AvatarTrigger. Networked avatars will anchor as well so movement is smooth across the network. Any number of players can be anchored to a single object.
 
-:::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture4.png" alt-text="AvatarAnchor":::
+![AvatarAnchor](../../media/mesh-scripting/object-player-interactions/Picture4.png)
 
 #### Settings
 
@@ -177,14 +177,13 @@ Setting up Travel Groups and Travel Points:
 1. Create a Travel Point Group: all travel points must belong to a group; a default group will be assigned to any travel points that don't have one. Every travel group must have a unique name. The default travel group will not be set as a DefaultSpawnGroup unless it is the only group that exist.
     - To do this, create a new GameObject with a TravelPointGroup component attached.
 
-        :::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture5.png" alt-text="Travel Point Group":::
+        ![Travel Point Group](../../media/mesh-scripting/object-player-interactions/Picture5.png)
 
 2. Add Travel Points to the group. To do this, add new GameObjects as children of the Travel Point Group with a Travel Point Component attached.
 
-    :::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture6.png" alt-text="Travel Point Component attached":::
-
-    :::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture7.png" alt-text="Travel Point":::
-
+    ![Travel Point Component attached](../../media/mesh-scripting/object-player-interactions/Picture6.png)
+    ![Travel Point](../../media/mesh-scripting/object-player-interactions/Picture7.png)
+    
 3. Set "Default Spawn Group" to true for travel groups you want avatars to spawn into when initially joining an Event or space and false travel groups that you do not.  
 
 #### Settings
@@ -241,8 +240,7 @@ This component is added automatically at runtime to interactable bodies; develop
 #### Settings
 
 **Modify With Visual Script:** Enable this to modify target transform for manipulable bodies using visual script. 
-
-:::image type="content" source="../../media/mesh-scripting/object-player-interactions/Picture9.png" alt-text="Modify-with-visual-script":::
+![Modify-with-visual-script](../../media/mesh-scripting/object-player-interactions/Picture9.png)
 
 ## Next steps
 
