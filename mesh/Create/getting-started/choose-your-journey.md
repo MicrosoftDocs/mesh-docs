@@ -17,7 +17,7 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features
 
 ## Try our Mesh 101 tutorial
 
-If you're new to Mesh and like the idea of learning through a step-by-step tutorial, we recommend that you try our Mesh 101 tutorial. It starts you off with a pre-built Unity project and then walks you through the process of creating an educational windfarm experience. You'll learn how to use Mesh scripting and physics to add interactivity, and then you'll deploy the project as a metaverse Environment to your Mesh World.
+If you're new to Mesh and like the idea of learning through a step-by-step tutorial, we recommend that you try our [Mesh 101 tutorial](mesh-101-tutorial/mesh-101-01-overview-and-setup.md). It starts you off with a pre-built Unity project and then walks you through the process of creating an educational windfarm experience. You'll learn how to use Mesh scripting and physics to add interactivity, and then you'll deploy the project as a metaverse Environment to your Mesh World.
 
 If you're ready to starting building Mesh experiences, you have several approaches to choose from:
 
