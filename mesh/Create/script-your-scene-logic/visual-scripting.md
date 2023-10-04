@@ -25,9 +25,9 @@ Otherwise, there's no special setup needed&#8212;you can just start scripting!
 **Tips**
 
 - Component properties and visual script variables that have simple types are automatically shared across clients in a session.
-- To exclude parts of your scene from this automatic sharing, add a **Local Scene Scope** component. Everything underneath that transform won't be shared automatically.
+- To exclude parts of your scene from this automatic sharing, add a **Local Script Scope** component. Everything underneath that transform won't be shared automatically.
 - To do something in regular time intervals in sync across clients, use the **On Interval** trigger node.
-- To do something in response to certain component properties or visual script variables changing (for example, because this or some other client was setting them in a visual script), use the **On State Changed** trigger
+- To do something in response to certain component properties or visual script variables changing (for example, because this or some other client was setting them in a visual script), use the **On State Changed** trigger.
 - There are additional Visual Scripting functions provided by Mesh&#8212;see the _Microsoft_ > _Mesh_ and _Microsoft_ > _Events_ > _Mesh_ sections in the Fuzzy Finder.
 
 **Limitations**
@@ -37,7 +37,7 @@ Otherwise, there's no special setup needed&#8212;you can just start scripting!
 
 ## Development workflow
 
-![Screen shot of the Unity Editor with the Mesh Visual Scripting Hello World scene open.](../../media/mesh-scripting/visual-scripting//helloworld-editor.png)
+![Screen shot of the Unity Editor with the Mesh Visual Scripting Hello World scene open.](../../media/mesh-scripting/visual-scripting/helloworld-editor.png)
 
 ### Testing your scripts
 
@@ -47,11 +47,9 @@ Before you upload your scene to Mesh, you can develop and test visual scripts, e
 
 When a GameObject with a Script Machine is selected in the transform hierarchy, Mesh displays the _Mesh Visual Scripting Diagnostics_ panel at the bottom of the Inspector panel:
 
-![Screen shot of the Mesh Visual Scripting diagnostics panel](../../media/mesh-scripting/visual-scripting//helloworld-diagnostics.png)
+![Screen shot of the Mesh Visual Scripting diagnostics panel](../../media/mesh-scripting/visual-scripting/helloworld-diagnostics.png)
 
 The diagnostics panel gives immediate feedback on any warnings or errors that might prevent your scripts from working well in Mesh.
-
-**_Current limitation:_** Future versions of the diagnostics panel may also give insight into the visual script's use of shared variables and properties and display additional diagnostics and warnings.
 
 ### Uploading to Mesh
 
@@ -112,11 +110,11 @@ Mesh makes certain trade-offs in favor of simplicity:
 
 The simplest visual script you can create is one that just opens a message box:
 
-![Screen shot of the visual script graph of the Hello World sample](../../media/mesh-scripting/visual-scripting//helloworld-script.png)
+![Screen shot of the visual script graph of the Hello World sample](../../media/mesh-scripting/visual-scripting/helloworld-script.png)
 
 This is how it looks in Mesh:
 
-![Mesh browser window with a popup dialog displaying Hello World and an OK button](../../media/mesh-scripting/visual-scripting//helloworld-runtime-browser.png)
+![Mesh browser window with a popup dialog displaying Hello World and an OK button](../../media/mesh-scripting/visual-scripting/helloworld-runtime-browser.png)
 
 ## Mesh script nodes
 
@@ -131,7 +129,7 @@ The **On Interval** event node triggers a script flow in regular time intervals 
 
 ### On State Changed
 
-![On State Changed event node connecting to a Get Variable node](../../media/mesh-scripting/visual-scripting//node-OnStateChanged-variable.png)
+![On State Changed event node connecting to a Get Variable node](../../media/mesh-scripting/visual-scripting/node-OnStateChanged-variable.png)
 
 The **On State Changed** event node triggers when any of its inputs changes its value. This is a powerful mechanism that lets your scripts respond to state changes caused by user interaction or other visual scripts, both locally and on other clients in the same room.
 
@@ -141,15 +139,15 @@ The **On State Changed** event node triggers when any of its inputs changes its 
 
 When observing script variables or component properties, **On State Changed** usually operates by registering appropriate callbacks internally, avoiding the need to constantly re-evaluate its inputs. When an appropriate callback isn't available, like in the following example, the **On State Changed** node turns red and the _Graph Inspector_ panel warns that the input can't be observed efficiently and is therefore disabled:
 
-![Screen shots of the On State Changed event node connecting to the result of comparing a Get Variable node to an integer literal, no polling.](../../media/mesh-scripting/visual-scripting//node-OnStateChanged-volatile.png)
+![Screen shots of the On State Changed event node connecting to the result of comparing a Get Variable node to an integer literal, no polling.](../../media/mesh-scripting/visual-scripting/node-OnStateChanged-volatile.png)
 
 In this case, you can select **Allow Polling** in the _Graph Inspector_ panel to force **On State Changed** to detect changes by constantly re-evaluating its inputs. The node retains a yellow bar along its top to remind you that it's observing an input at an increased runtime cost.
 
-![Screen shots of the On State Changed event node connecting to the result of comparing a Get Variable node to an integer literal, allow polling.](../../media/mesh-scripting/visual-scripting//node-onstatechanged-allow-polling.png)
+![Screen shots of the On State Changed event node connecting to the result of comparing a Get Variable node to an integer literal, allow polling.](../../media/mesh-scripting/visual-scripting/node-onstatechanged-allow-polling.png)
 
 ### Show Dialog
 
-![Screen shot of the Show Dialog action node](../../media/mesh-scripting/visual-scripting//node-ShowDialog.png)
+![Screen shot of the Show Dialog action node](../../media/mesh-scripting/visual-scripting/node-ShowDialog.png)
 
 The **Show Dialog** node displays a dialog box with custom message and one or several buttons that allow the user to dismiss the dialog.
 
@@ -160,7 +158,7 @@ The **Show Dialog** node displays a dialog box with custom message and one or se
 
 If a **Result** variable is defined, it will be reset to an empty string as soon as the **Show Dialog** node is entered, and set to user's response asynchronously when the user selects a button to dismiss the dialog. The stored value is the button's unlocalized label from the list above. Use an **On State Changed** event node to react to the user's response like in the following example:
 
-![Screen shot of the Show Dialog node collecting the user response in a variable, followed by an On State Changed node responding to the variable change](../../media/mesh-scripting/visual-scripting//node-ShowDialog-response.png)
+![Screen shot of the Show Dialog node collecting the user response in a variable, followed by an On State Changed node responding to the variable change](../../media/mesh-scripting/visual-scripting/node-ShowDialog-response.png)
 
 The **Result** variable can be local or shared. If it's shared, the user's response is sent to all clients in the same room, and the **On State Changed** event node triggers on all clients to react to the user's response.
 
@@ -191,11 +189,12 @@ Examples:
 
 Generally, integration with other components is often done by changing and listening to component property changes. For example:
 
-- Interactables: observe "Is Hovered" and "Is Active" properties.
-- Avatars: read avatar position, view rotation, and name plate.
+- Interactables: observe "Is Hovered" and "Is Selected" properties.
 - Physics interactions: observe bodies in trigger volume or in contact with collider.
-- Session state: list participants and read participant info.
-- Cloud Scripting: operate in tandem with cloud scripts that can read and write variables and component properties.
+
+- Avatars: read avatar position, view rotation, and name plate. **_(Not available yet.)_**
+- Session state: list participants and read participant info. **_(Not available yet.)_**
+- Cloud Scripting: operate in tandem with cloud scripts that can read and write variables and component properties. **_(Not available yet.)_**
 
 Some components provide local actions:
 
