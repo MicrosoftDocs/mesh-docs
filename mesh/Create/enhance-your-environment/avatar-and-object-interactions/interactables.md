@@ -1,20 +1,20 @@
 ---
-title: Mesh object and avatar interactions
-description: Learn how to create interactions between avatars and objects using components and scripts.
-author: typride
+title: Grab, hold and throw with Interactables
+description: Learn how to create grab, hold, and throw interactions between avatars and objects using components and scripts.
+author: jackiecurley
 ms.author: vinnietieto
-ms.date: 9/6/2023
+ms.date: 10/4/2023
 ms.topic: overview
-keywords: Microsoft Mesh, M365, documentation, features, scripting, object and player interactions
+keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw
 ---
 
 # Mesh object and avatar interactions
 
-Mesh Interactables is a system for configuring objects with Unity scripts that defines interaction with an object or avatar behavior at runtime. The Interactables package contains scripts of different object types that can be defined. When a project runs, it sets up all the necessary prefabs and settings required for objects or the avatar to behave as defined. If you intend to use Interactables in Playmode during content development, include the Playmode Setup prefab in your scene. This sets everything up automatically so that all you have to do is click Play to test your objects. Note that the IK functionality seen in the Mesh app isn’t available in Playmode.
+Mesh Interactables is a system for configuring objects with Unity scripts that defines interaction with an object or avatar behavior at runtime. The Interactables package contains scripts of different object types that can be defined. When a project runs, it sets up all the necessary prefabs and settings required for objects or the avatar to behave as defined. If you intend to use Interactables in [Playmode](../../debug-and-optimize-performance/playmode.md) during content development, include the Playmode Setup prefab in your scene. This sets everything up automatically so that all you have to do is click Play to test your objects. Note that the IK functionality seen in the Mesh app isn’t available in Playmode.
 
-For objects you want the avatar to interact with, add a *MeshInteractableSetup* script. The properties for a group of objects that all behave the same can be set up with a parent *MeshInteractableSetup* script. The properties will be applied to all children with rigidbodies at runtime by automatically adding a *MeshInteractableBody* script. **MeshInteractableBody** will allow each interactable to behave independently. If you want to set up reactions to an object’s interactions with Visual Scripting, you can add the *MeshInteractableBody* yourself and create a script graph with a node to an available property, such as *OnHovered* or *OnSelected*, hooked up to an *OnStateChanged* node. For example, the following script graph will enable the cylinder while the button is pressed and disable it when the button is released. The button is fully interactable just by adding the script and a collider and you don't have to do anything else.
+For objects you want the avatar to interact with, add a *MeshInteractableSetup* script. The properties for a group of objects that all behave the same can be set up with a parent *MeshInteractableSetup* script. The properties will be applied to all children with rigidbodies at runtime by automatically adding a *MeshInteractableBody* script. **MeshInteractableBody** will allow each interactable to behave independently. If you want to set up reactions to an object’s interactions with [Visual Scripting](../../script-your-scene-logic/visual-scripting/visual-scripting-overview.md), you can add the *MeshInteractableBody* yourself and create a script graph with a node to an available property, such as *OnHovered* or *OnSelected*, hooked up to an *OnStateChanged* node. For example, the following script graph will enable the cylinder while the button is pressed and disable it when the button is released. The button is fully interactable just by adding the script and a collider and you don't have to do anything else.
 
-![MeshInteractableBody script graph](../../media/mesh-scripting/object-player-interactions/Picture10.png)
+![MeshInteractableBody script graph](../../../media/mesh-scripting/object-player-interactions/Picture10.png)
 
 Another option for interactable objects is to make them manipulable. Manipulable objects will move through space on the end of your interactor ray. Shortcut controls are available to rotate or translate the object. To turn this feature on, select the Manipulable box and then choose your desired settings. When manipulating objects in the MeshBrowser app you can turn on IK settings for the avatar hand to follow the object. Manipulable objects don’t require a rigidbody, but you should add one if you want the objects to have physics capabilities.
 
@@ -24,16 +24,13 @@ Other scenarios you can achieve with Interactables scripts include anchoring you
 
 All the Interactables components have interaction properties and methods available to Visual Scripting so you have an unlimited amount of ways to make them work together. A MeshInteractableBody can attach an OnStateChanged node to its **OnSelected** property that calls the **TetherLocalAvatar** method on an AvatarTether to tether an avatar. The AvatarTether could have its tether located on the same object as a moving AvatarAnchor so the avatar will start moving along with that object as soon as they’re tethered. At the end of the anchor's journey you could have an AvatarTrigger that untethers the avatar from its anchor object when they reach the zone; they are then free to move about as they please.
 
-
-## Object Types
-
-### *MeshInteractableSetup*
+## *MeshInteractableSetup*
 
 Setup script for defining the properties of an object that can be interacted with using XRI interactors.
 
-![MeshInteractableSetup (script)](../../media/mesh-scripting/object-player-interactions/Picture1.png)
+![MeshInteractableSetup (script)](../../../media/mesh-scripting/object-player-interactions/Picture1.png)
 
-#### Settings
+### Settings
 
 **[Recommended Component]** Rigidbody: A rigidbody must be added if you want this object to be physics enabled.
 
@@ -113,103 +110,14 @@ Setup script for defining the properties of an object that can be interacted wit
         - **Highlight Amount Properties**: The material's properties to set the amount of highlight when highlighted. This is a float value.
         - **Highlight Color Properties**: The material's properties to set the color of highlight when highlighted. This is a color value.
 
-### *AvatarTether*
-
-An object that tethers the avatar to its transform. This does a one-time position change for the local avatar and puts them into a tethered locomotion state based on the object's settings. Only one avatar at a time can be tethered.
-
-![Avatar Tether Script](../../media/mesh-scripting/object-player-interactions/Picture2.png)
-
-#### Settings
-
-- **Tether Transform:** The point to tether the avatar to. Will default to the transform the component is attached to.  
-- **Avatar Tether Point:** The point on the avatar to place them at the transform.  
-- **Allow Rotation:** Whether or not the avatar can rotate when they’re tethered.  
-- **Allow Teleport:** Whether or not the avatar can teleport when they’re tethered.  
-- **Untether Via Attempted Movement:** Whether or not the avatar will untether after a small amount of time trying to locomote.  
-- **Track HMD Movement:** Whether or not the avatar will untether after physically walking away.  
-- **Enforce HMD User Tether:** What to do when the avatar exceeds physical movement range. If true, the avatar will be teleported back to tether position; if false, the avatar will be untethered.  
-
-#### Visual Scripting
-
-- **Properties:** 
-    - **AvatarIsTethered** – Whether or not any avatar is tethered  
-    - **LocalAvatarIsTethered** - Whether or not the local avatar is tethered  
-- **Methods:**
-    - **TetherLocalAvatar(bool)** – Tether or untether the local avatar to this tether  
-    - **ToggleTether()** – Tether the avatar when they are not tethered or untether when they are
-
-### *AvatarTrigger*
-
-An object that tracks when the local avatar enters and exits its trigger volume.
-
-![Avatar Tether Script](../../media/mesh-scripting/object-player-interactions/Picture3.png)
-
-#### Settings
-
-**[Required Component] Collider:** A Collider is required to know what the trigger volume is. This should have **IsTrigger** set to true.
-
-#### Visual Scripting
-- **Properties:** 
-    - **LocalAvatarInTrigger** – true when the local avatar is inside the trigger
-
-### *AvatarAnchor*
-
-An object that the avatar will anchor to when they’re inside the object’s trigger volume so that the avatar moves along with the object. Inherits from AvatarTrigger. Networked avatars will anchor as well so movement is smooth across the network. Any number of players can be anchored to a single object.
-
-![AvatarAnchor](../../media/mesh-scripting/object-player-interactions/Picture4.png)
-
-#### Settings
-
-**[Required Component] Collider:** A Collider is required to know what the trigger volume is. This should have IsTrigger set to true.
-
-### *Billboard2D*
-
-Script to make an object always face the camera.
-
-## *TravelPoint and TravelPointGroup*
-
-TravelPoints are a component in the Interactables package that can be used to define where to place an avatar when first joining an event or space and also to transport avatars during their experience using Visual Scripting.
-
-If a TravelPoint is not present in an Environment, and there is a floor at the origin, the avatar will be grounded on the floor when spawned.  If no floor is present near the origin, the avatar will spawn above the origin and fall for a little while and then respawn in a loop.
-
-Setting up Travel Groups and Travel Points:
-
-1. Create a Travel Point Group: all travel points must belong to a group; a default group will be assigned to any travel points that don't have one. Every travel group must have a unique name. The default travel group will not be set as a DefaultSpawnGroup unless it is the only group that exist.
-    - To do this, create a new GameObject with a TravelPointGroup component attached.
-
-        ![Travel Point Group](../../media/mesh-scripting/object-player-interactions/Picture5.png)
-
-2. Add Travel Points to the group. To do this, add new GameObjects as children of the Travel Point Group with a Travel Point Component attached.
-
-    ![Travel Point Component attached](../../media/mesh-scripting/object-player-interactions/Picture6.png)
-    ![Travel Point](../../media/mesh-scripting/object-player-interactions/Picture7.png)
-    
-3. Set "Default Spawn Group" to true for travel groups you want avatars to spawn into when initially joining an Event or space and false travel groups that you do not.  
-
-#### Settings
-
-**Travel Point**
-- **Look At Transform:** the point you want the camera to look at after spawning into that transform. This will default to CenterTransform forward.  
-- **Radius:** the size of the travel area. It’s a circle around the center transform.  
-- **Single Travel:** If this is true, only one avatar at a time will spawn into this point unless there are no more points to choose from.
-
-**Travel Point Group**
-- **Default Spawn Group:** When true this group will be used for finding the default spawn point for an avatar entering a space
-
-#### Visual Scripting
-
-- **Travel Point Methods:**
-    - **TravelToPoint** – Transport the local avatar directly to a specific travel point
-- **Travel Point Group Methods:**
-    - **TravelToRandomTravelPoint()** – Transport the local avatar to a random point in the group
-
-### *Mesh Interactable Body*
+## Mesh Interactable Body
 
 This component is added automatically at runtime to interactable bodies; developers don’t need to use it. You may want to add it manually to use Mesh interactables with Visual Scripting, such as with interaction events or to modify the manipulable target transform through the visual script.
 
-#### Visual Scripting
+### Visual Scripting
 
 **For all interactable bodies:**
+
 - **Properties**
     - **IsHovered (read only)** – Whether or not your local avatar is hovering the object.  
     - **IsSelected (read only)** – Whether or not any avatar is selecting the object. When running in MeshBrowser this will be networked.
@@ -217,6 +125,7 @@ This component is added automatically at runtime to interactable bodies; develop
     - **IsMine (read only)** – True for the last avatar to select or equip the object.  
 
 **For equippables:**
+
 - **Properties**
     - **EquippedAt (read only)** - Where this object is equipped – None, DefaultHand, RightHand, LeftHand. When running in MeshBrowser this will be networked.
     - **EquipTime (read only)** – What time this object was equipped. When running in MeshBrowser this will be networked.
@@ -228,6 +137,7 @@ This component is added automatically at runtime to interactable bodies; develop
     - **ThrowVelocity** – The velocity to throw the object when it’s released.
 
 **For manipulables to modify the Target Position:**
+
 - **Target Position (read only)**: Target position of the body when using Default Force Mode in Mesh Interactable Properties  
 - **Target Rotation (read only)**: Target rotation of the body when using Default Force Mode in Mesh Interactable Properties  
 - **Ray Hit Position (read only)**: Position of the ray-cast hit of the interactor on the body  
@@ -237,12 +147,12 @@ This component is added automatically at runtime to interactable bodies; develop
     - Using On Late Update. If you require to change the target transform in every frame, do it in late update so that the new target transform is available immediately in the next frame.  
 - **Modified Target Rotation (read and write)**: Used to set the new target rotation by the visual script. This will override the default target position.
 
-#### Settings
+### Settings
 
 **Modify With Visual Script:** Enable this to modify target transform for manipulable bodies using visual script. 
-![Modify-with-visual-script](../../media/mesh-scripting/object-player-interactions/Picture9.png)
+![Modify-with-visual-script](../../../media/mesh-scripting/object-player-interactions/Picture9.png)
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Physics interactions](physics-interactions.md)
+> [Physics interactions](../physics-interactions.md)

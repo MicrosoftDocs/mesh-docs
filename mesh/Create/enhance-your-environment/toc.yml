@@ -3,10 +3,9 @@ items:
   href: enhanced-features-overview.md
 - name: Multi-room sync (animations, timelines, and video)
   href: multi-room-sync.md
-- name: Object and avatar interactions
-  href: object-avatar-interactions.md    
 - name: Physics interactions
   href: physics-interactions.md  
 - name: Web content
   href: webcontent.md
-
+- name: Avatar and object interactions
+  href: avatar-and-object-interactions/toc.yml   

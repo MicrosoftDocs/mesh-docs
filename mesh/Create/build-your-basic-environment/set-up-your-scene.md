@@ -22,7 +22,7 @@ In order for a scene to support teleportation, it must have a Navmesh layer. A t
 
 ## Add a TravelPoint
 
-Every scene must have at least one TravelPoint, which is used to configure avatar spawning behavior. If you're new to TravelPoints, we recommend that you [read our TravelPoint and TravelGroup documentation](../enhance-your-environment/object-avatar-interactions.md#travelpoint-and-travelpointgroup) and follow the instructions there. When you're finished, continue on with the article named [Building for single and multiple platforms](build-for-single-and-multiple-platforms.md).
+Every scene must have at least one TravelPoint, which is used to configure avatar spawning behavior. If you're new to TravelPoints, we recommend that you [read our TravelPoint and TravelGroup documentation](../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md) and follow the instructions there. When you're finished, continue on with the article named [Building for single and multiple platforms](build-for-single-and-multiple-platforms.md).
 
 ## Add the Mesh Thumbnail Camera
 
