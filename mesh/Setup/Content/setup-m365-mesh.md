@@ -21,7 +21,7 @@ In the Microsoft 365 Apps Admin Center (MAC) admins can enable access to Mesh ex
 >
 > As an admin, you can configure the Mesh policy to manage which users and groups in your organization have access to the Mesh app on PC, the Mesh app on Quest 2, and the Mesh portal. 
 
-To manage access, please visit the M365 Admin Center and configure the policy via M365 Apps Admin Center.
+To manage access, please visit the M365 Admin Center and configure the policy for Mesh.
 
    > [!div class="nextstepaction"]
    > [M365 Apps Admin Center](https://config.office.com/officeSettings/)
