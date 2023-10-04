@@ -28,7 +28,7 @@ There are two different Mesh Scripting approaches:
 - Better debugging tools.
 - Access to external assemblies.
 
-## Benefits of using Mesh Visual Scripting:
+## Benefits of using Mesh Visual Scripting
 
 - Add interactivity and dynamic runtime behavior to your Mesh Environments without writing code.
 - Enables client-side scripting.
