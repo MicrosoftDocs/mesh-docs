@@ -51,7 +51,7 @@ The Mesh toolkit provides a collection of packages for Unity that enable you to 
 
 The Mesh toolkit is free to download, however a Teams Premium license is required for all users (including developers and technical 3D artists) to use Microsoft Mesh.
 
-Build environments built in Unity, upload to the Mesh portal, and experience them within the application. Within the Mesh application, bring your environment to life and lead participants through stage-managed events with rich host tooling for customization and event moments.
+Build environments in Unity, upload to the Mesh portal, and experience them within the application. Within the Mesh application, bring your environment to life and lead participants through stage-managed events with rich host tooling for customization and event moments.
 
 The Mesh experience that you create starts out in Unity as a new project or existing sample. You can add content to the project/sample scene and then upload it to a World in the Mesh Portal as an Environment. When an Event Producer creates a Mesh Event, they can choose to hold their Event in the custom environment you created.
 
