@@ -347,13 +347,9 @@ All endpoints need to allow traffic on TCP ports 80 and 443:
 
 - \*.microsoft.com
 
-- \*.meshxp.net
-
 - \*.office.com
 
 - \*.office.net
-
-- js.monitor.azure.com
 
 ### Firewall Ports for Mesh immersive spaces
 
@@ -362,7 +358,7 @@ outgoing ports to be opened in your firewall:
 
 - TCP ports 80, 443
 
-- TCP & UDP ports 30,000-31,000
+- TCP & UDP ports 30,000-30,499
 
 - UDP ports 3478-3481
 
@@ -399,15 +395,11 @@ All endpoints need to allow traffic on TCP ports 80 and 443:
 
 - \*.microsoft.com
 
-- \*.meshxp.net
-
 - \*.office365.com
 
 - \*.office.com
 
 - \*.office.net
-
-- \*.servicebus.windows.net
 
 ### Firewall Ports for the Mesh app
 
@@ -416,7 +408,7 @@ following outgoing ports to be opened in your firewall:
 
 - TCP ports 80, 443, 8089, and 8989
 
-- TCP & UDP ports 30,000-31,000
+- TCP & UDP ports 30,000-30,499
 
 - UDP ports 3478-3481
 
