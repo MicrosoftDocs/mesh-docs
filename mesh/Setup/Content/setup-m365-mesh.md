@@ -8,7 +8,7 @@ ms.topic: Tutorial
 keywords: Microsoft Mesh, M365, OCPS, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-# Set up Microsoft Mesh
+# Set up M365 for Microsoft Mesh
 
 In the Microsoft 365 Apps Admin Center (MAC) admins can enable access to Mesh experiences. This covers access to the following experiences:
 
