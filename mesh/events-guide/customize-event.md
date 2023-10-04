@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
 
 # Customize your event
 
-Now that you've created an event, it's time customize it in the [Microsoft Mesh app](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1) and add any run-of-show tools you'd like to use.
+Now that you've created your event, it's time to customize your event to add any run-of-show tools you'd like to use during your event.
 
 At a high level, there are three major steps to customize your event or template:
 
@@ -26,9 +26,9 @@ At a high level, there are three major steps to customize your event or template
 
 ## Considerations before starting your event
 
-### Customize and save before event
+### Provision, customize, and save before event
 
-Saving is not available once event is joined. Plan to customize and save your event at-least **30 minutes before** the event start time.
+Saving is not available once event is provisioned or joined. Plan to customize and save your event before your start time.
 
 :::image type="content" source="../media/mesh-event-producer-guide/Environment-editor-saving.png" alt-text="Save customization in your Mesh environment":::
 
@@ -74,26 +74,26 @@ Use the environment editor to add content to your environment that can be contro
     :::image type="content" source="../media/mesh-event-producer-guide/environment-editor-open-artifacts - Made with Clipchamp.gif" alt-text="Open environment editor and add artifact":::
 
 1. Once you've added an artifact, you'll see it show up in the Artifacts window as shown below:
-
     :::image type="content" source="../media/mesh-event-producer-guide/image-environment-editor-added-artifact.png" alt-text="Video player artifact shown in list of artifacts":::
 
     Note the **Copy**, **Edit**, and **Delete** buttons available for the selected artifact.
 
 1. Now you can manipulate the artifact as you'd like by selecting it with your cursor, dragging it to another location, or using the edges of the artifacts to scale them as you see fit.
-
     :::image type="content" source="../media/mesh-event-producer-guide/environment-editor-maneuver-artifact2.png" alt-text="Move artifact with avatar arm up":::
 
     To position your artifact - with the environment editor open:
 
-    1. Select and drag your artifact to move it left, right, up, or down.
-    1. **Alt + Select** and drag up or down to move the artifact toward and away from you.
-    1. **Shift + Select** and drag up or down to make the artifact bigger or smaller.
-    1. You can also use the rotation and scale handles on the artifact to rotate and scale your artifact. Just select the handle and drag to rotate or scale.
-
-    Make sure you check out the position from different angles to verify you’ve placed it properly.
-
+    1. Select and drag your artifact to move it left, right, up, or down. 
+    1. **Alt + Select** and drag up or down to move the artifact toward and away from you 
+    1. **Shift + Select** and drag up or down to make the artifact bigger or smaller. 
+    1. You can also use the rotation and scale handles on the artifact to rotate and scale your artifact. Just select the handle and drag to rotate or scale. 
+ 
+    Make sure you check out the position from different angles to verify you’ve placed it properly. 
+    
     >[!Tip]
     >while you are moving an artifact you’ll see a small line drawn from your artifact down to the floor. This can help you position your artifacts relative to landmarks in the scene such as the edge of a stage or a piece of furniture.
+
+    
 
 ### Video artifact requirements
 

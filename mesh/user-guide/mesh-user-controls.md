@@ -60,12 +60,6 @@ The **Settings** menu helps you to set up the app according to your preferences.
 
 ![A screenshot of the settings dialog](media/settings-dialog.png)
 
-You can also select and setup your audio devices in the **Settings** dialog, **Display & sound -> Devices**.
-
-![A screenshot of the Settings dialog](media/settings-audio-devices.png)
-
-Learn more about frequently asked questions related to audio in Mesh [here](../Resources/mesh-troubleshooting.md#audio-setup-in-mesh).
-
 ### Participants
 
 The **Participants** button will show the number of participants in an event.

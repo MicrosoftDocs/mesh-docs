@@ -3,7 +3,7 @@ title: Creating a new Unity project for your Mesh experience
 description: Learn how to create a new Mesh project in Unity.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/12/2023
+ms.date: 10/3/2023
 ms.prod: mesh
 ms.topic: How to
 keywords: Microsoft Mesh, Unity, M365, Immersive spaces, Avatars, getting started, documentation, features
@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, Unity, M365, Immersive spaces, Avatars, getting starte
 
 # Create a new project or update an existing one
 
-An easy way to start creating a Mesh experience is to [open an existing sample](../../getting-started/choose-your-journey.md) and build from there. If you know what you want to build and prefer to start from scratch, this article will get you started. You can add your own content to the scene and then upload it as an *Environment* to Mesh.
+An easy way to start creating a Mesh experience is to [open an existing sample](../getting-started/choose-your-journey.md) and build from there. However, if you know what you want to build and prefer to start from scratch, this article will get you started. You can add your own content to the scene and then upload it as an *Environment* to Mesh.
 
 > [!IMPORTANT]
 > In rare instances, after you update the Toolkit package, your Unity project may become unexplainably and temporarily broken. This can result in mysterious compiler errors and missing script references despite the script file being present and clean. The steps to resolve this are:
@@ -29,13 +29,14 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 
 1. In the **Hierarchy**, delete **Global Volume**.
 
-1. > [Import the Mesh Toolkit](import-the-mesh-toolkit.md)
+1. > [Import the Mesh Toolkit](../build-your-basic-environment/import-the-mesh-toolkit-package.md)
 
 **To update an existing project**:
 
-- > [Import the Mesh Toolkit](import-the-mesh-toolkit.md)
+1. Ensure that your project targets the Universal Render Pipeline (URP).
+1. [Import the Mesh Toolkit](../build-your-basic-environment/import-the-mesh-toolkit-package.md).
 
-**Notes**
+## General Tips
 
 - For design tips, see our series of design articles starting with [Designing for Mesh: Overview](../../Create/design/overview.md). There are also guides for implementing advanced features such as [Mesh Physics](../../Create/enhance-your-environment/physics-interactions.md) and [Mesh Scripting](../../Create/script-your-scene-logic/mesh-scripting-overview.md).
 
@@ -45,9 +46,15 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 
 - If you get a dialogue asking you to configure project settings, confirm to ensure these items show up in the Menu bar.
 
-## Add a TravelPoint
+- You can't use UnityUI (uGUI) for custom UI.
 
-Every scene must have at least one TravelPoint, which is used to configure avatar spawning behavior. If you're new to TravelPoints, we recommend that you [read our TravelPoint and TravelGroup documentation](../enhance-your-environment/object-avatar-interactions.md#travelpoint-and-travelpointgroup) and follow the instructions there. When you're finished, continue on with the article named [Building for single and multiple platforms](build-for-single-and-multiple-platforms.md).
+- You must use Text Mesh Pro for displaying text.
+
+## Cloud Scripting Tips
+
+- C# MonoBehaviours aren't deployed to [Cloud Scripting](../script-your-scene-logic/mesh-scripting-overview.md).
+
+- Only some Unity components are on the Mesh Cloud Scripting allow list.
 
 
 

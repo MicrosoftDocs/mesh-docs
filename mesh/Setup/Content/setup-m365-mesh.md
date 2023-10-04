@@ -8,7 +8,7 @@ ms.topic: Tutorial
 keywords: Microsoft Mesh, M365, OCPS, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-# Set up Microsoft Mesh
+# Set up M365 for Microsoft Mesh
 
 In the Microsoft 365 Apps Admin Center (MAC) admins can enable access to Mesh experiences. This covers access to the following experiences:
 
@@ -18,13 +18,14 @@ In the Microsoft 365 Apps Admin Center (MAC) admins can enable access to Mesh ex
 
 > [!NOTE]
 > All Mesh experiences are enabled via one policy in the Microsoft 365 Admin Center.
->
+> 
 > If a user has this policy enabled, they will be able to access all Mesh experiences including the Mesh app on PC, the Mesh app on Quest 2, and the Mesh portal.
 
 To enable access, please visit the M365 Admin Center and enable the policy via the Overview of Cloud Policy Services (OCPS).
 
    > [!div class="nextstepaction"]
    > [M365 Apps Admin Center](https://config.office.com/officeSettings/)
+
 
 ## Prerequisites
 
