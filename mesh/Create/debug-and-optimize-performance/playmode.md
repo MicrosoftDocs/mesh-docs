@@ -26,7 +26,8 @@ quick iteration. A key feature of Playmode is the ability to run
 multiple clients within the same process; this allows a single developer
 to easily get a first impression of a multi-user scenario.
 
-If you followed the instructions in the [Import the Mesh Toolkit Packages](../build-your-basic-environment/import-the-mesh-toolkit-package.md) TBD section, you added the tarball named
+If you followed the instructions in the [Import the Mesh Toolkit
+Packages](#import-packages) TBD section, you added the tarball named
 *com.microsoft.mesh.toolkit-.xxx*, which includes the Playmode package.
 
 ![A screenshot of a computer Description automatically generated](../../media/debug-and-optimize/image040.jpg)
@@ -86,11 +87,6 @@ Do one of the following:
 
 Now you can quickly test your Unity Scene without going through the
 build and upload process each time you make an iteration.
-
- > [!IMPORTANT]
- > If you're using the [Visual Profiler](../debug-and-optimize-performance/performance-guidelines.md#visual-profiler) in your scene, make sure the **Initial Screen Count** setting in the **Playmode Setup** component is zero. If it's "1" or higher, you won't see the Visual Profiler.
-
- ![A screen shot of a number Description automatically generated](../../media/debug-and-optimize/001-playmode-count-one.png)
 
 ## Next steps
 

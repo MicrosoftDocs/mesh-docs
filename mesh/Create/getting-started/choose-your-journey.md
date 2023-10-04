@@ -11,10 +11,9 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features
 
 # Choose your journey
 
-To build experiences for Mesh, you must have intermediate to advanced Unity skills.
-
 > [!IMPORTANT]
-> A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../Setup/Content/setup-m365-mesh.md).
+> <License info TBD>
+> To build experiences for Mesh, you must have intermediate to advanced Unity skills.
 
 ## Try our Mesh 101 tutorial
 
@@ -35,6 +34,16 @@ It's easiest to start with a sample file to ensure all packages are configured i
 ## Update an existing project or create a new one
 
 You can make an existing Unity project Mesh-capable by [importing the Mesh Toolkit](../build-your-basic-environment/import-the-mesh-toolkit.md) or simply [create a new 3D URP (Core) project](../build-your-basic-environment/create-a-new-project-or-update.md) and then start building your Mesh experience from scratch. 
+
+## Add more features to your Environment
+
+Once you've created an Environment through the paths mentioned above, you can add features including:
+
+- [WebViews to display Web pages](../enhance-your-environment/webcontent.md)
+
+- [Cloud scripting](../script-your-scene-logic/cloud-scripting-getting-started.md), [visual scripting](../script-your-scene-logic/visual-scripting.md), and [Mesh Physics](../enhance-your-environment/physics-interactions.md) to add interactivity
+
+- And more!
 
 ## Next Steps
 
