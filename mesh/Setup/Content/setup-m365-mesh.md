@@ -21,7 +21,7 @@ In the Microsoft 365 Apps Admin Center (MAC) admins can enable access to Mesh ex
 >
 > If a user has this policy enabled, they will be able to access all Mesh experiences including the Mesh app on PC, the Mesh app on Quest 2, and the Mesh portal.
 
-To enable access, please visit the M365 Admin Center and enable the policy via the Overview of Cloud Policy services (OCPS).
+To enable access, please visit the M365 Admin Center and enable the policy via the Overview of Cloud Policy Services (OCPS).
 
    > [!div class="nextstepaction"]
    > [M365 Apps Admin Center](https://config.office.com/officeSettings/)
