@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 # Mesh Development Overview
 
-The Mesh experience that you create starts out in Unity as a new project or existing sample. You can add content to the project/sample *scene* and then upload it to a World in the Azure Portal as an *Environment*. When an Event Producer creates a Mesh Event, they can choose to hold their Event in the custom Environment you created.
+The Mesh experience that you create starts out in Unity as a new project or existing sample. You can add content to the project/sample *scene* and then upload it to a World in the Mesh Portal as an *Environment*. When an Event Producer creates a Mesh Event, they can choose to hold their Event in the custom Environment you created.
 
 In the Mesh documentation, you'll find articles that introduce you to the packages available for Mesh, walk you through the Unity setup, and describe the samples provided by Microsoft that you can use as a starting point for your Environment.
 
@@ -41,15 +41,15 @@ The Mesh toolkit provides a collection of packages for Unity that enable you to 
 
 - Content Performance Analyzer (CPA): automatically reports content optimization issues and opportunities before content is uploaded to the Mesh catalog.
 
-- Visual Scripting, which lets you add interactivity and dynamic runtime behavior to your Mesh environments without writing code. For more information, see our document titled "Mesh Visual Scripting Guide."
+* Visual Scripting, which lets you add interactivity and dynamic runtime behavior to your Mesh environments without writing code. For more information, see our document titled [Mesh Visual Scripting Overview](script-your-scene-logic/visual-scripting/visual-scripting-overview.md).
 
 The Mesh toolkit is free to download, however a Teams Premium license is required for all users (including developers and technical 3D artists) to use Microsoft Mesh.
 
-Build environments built in Unity, upload to the Mesh portal, and experience them within the application. Within the Mesh application, bring your environment to life and lead participants through stage-managed events with rich host tooling for customization and event moments.
+Build environments in Unity, upload to the Mesh portal, and experience them within the application. Within the Mesh application, bring your environment to life and lead participants through stage-managed events with rich host tooling for customization and event moments.
 
 The Mesh experience that you create starts out in Unity as a new project or existing sample. You can add content to the project/sample scene and then upload it to a World in the Mesh Portal as an Environment. When an Event Producer creates a Mesh Event, they can choose to hold their Event in the custom environment you created.
 
-See [Create a new project or update an existing one](build-your-basic-environment/create-a-new-project-or-update.md).
+See [how to create a unity project for Mesh](build-your-basic-environment/create-a-new-project-or-update.md).
 
 In the Mesh documentation, you'll find articles that introduce you to the packages available for Mesh, walk you through the Unity setup, and describe the samples provided by Microsoft that you can use as a starting point for your Environment.
 
@@ -57,6 +57,3 @@ In the Mesh documentation, you'll find articles that introduce you to the packag
 
    > [!div class="nextstepaction"]
    > [Choose your journey](getting-started/choose-your-journey.md)
-
-   > [!div class="nextstepaction"]
-   > [Create a new project or update an existing one](build-your-basic-environment/create-a-new-project-or-update.md)

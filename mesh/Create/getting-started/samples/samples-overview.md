@@ -27,7 +27,7 @@ The Mesh samples are a great way to learn about the different kinds of Mesh Expe
 
 **To start with a sample**:
 
-1. If you haven't done so already, [download and unzip the Mesh toolkit](../download-the-mesh-toolkit.md).
+1. If you haven't done so already, [download and unzip the Mesh toolkit](download-the-mesh-toolkit.md).
 
 1. In the Unity Hub, select **Open** > **Add project from disk**, and then navigate to the **Mesh-Toolkit-Unity-main** folder that contains your samples.
 

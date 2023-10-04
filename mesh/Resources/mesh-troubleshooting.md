@@ -30,15 +30,15 @@ If you had previously downloaded the **Napili** app on your Quest 2 device, you 
 
     [Can't find your Meta account associated with your Quest 2 device?](#how-do-i-find-my-meta-id)
 
-    ![Diagram Description automatically generated with medium confidence](../user-guide/media/image011.png)
+    ![Diagram Description automatically generated with medium confidence](media/image011.png)
 
 3. Once authenticated, select the **Get** button.
 
-    ![A black background with white text Description automatically generated with medium confidence](../user-guide/media/image013.png)
+    ![A black background with white text Description automatically generated with medium confidence](media/image013.png)
 
 4. You'll see the button grey out and change from **Get** to **Purchased** which indicates that the app has been acquired.
 
-    ![Log in with your Meta account confirmation page](../user-guide/media/image015.png)
+    ![Log in with your Meta account confirmation page](media/image015.png)
 
     >[!Note]
     >You may need to restart your headset to ensure the app loads.
@@ -53,7 +53,7 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 3. It should bring you to your **Profile** page. If not, click your **Profile** icon in the top right corner.
 
-   ![A screenshot of profile icon](../user-guide/media/image017.png)
+   ![A screenshot of profile icon](media/image017.png)
 
 4. Select **Profile**. From there you should see your Email.
 
@@ -63,11 +63,11 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 1. Select the **App library** button.
 
-    ![the App library button on your Quest menu](../user-guide/media/image020.png)
+    ![the App library button on your Quest menu](media/image020.png)
 
 1. Find the **Microsoft Mesh (Preview)** app in the App library.
 
-    ![A screenshot of Microsoft Mesh (Preview) in the App library](../user-guide/media/image022.png)
+    ![A screenshot of Microsoft Mesh (Preview) in the App library](media/image022.png)
 
 1. Select to **Install** then **Open** the app by selecting it again.
 
@@ -78,7 +78,7 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
     You'll see a window like this when the authentication is complete:
 
-    ![A screenshot of a video game Description automatically generated](../user-guide/media/image024.png)
+    ![A screenshot of a video game Description automatically generated](media/image024.png)
 
 1. Select to **Allow** any **Terms of service & Allow Diagnostic data**.
 
@@ -108,3 +108,22 @@ For advanced audio settings, you can adjust:
 - Effects volume
 - Incoming Voices
 
+### Does spatial audio work with bluetooth headphones? what about wired headphones? 
+
+Wired headphones work best for a full spatial audio experience where you will be able to detect audio distance (attenuation) and directionality.  When using a wireless or Bluetooth headphones, audio attenuation will be present but directionality will not be present.
+
+### Where do I go to access my audio input/output settings during an event? What are the advanced audio settings options?
+
+1. On the bottom left corner in Mesh (Preview), find the Menu button.
+
+1. Go to **Settings > Display & sound**. There you can select your audio devices.
+
+    ![A screenshot of the Settings dialog](media/settings-display-sound-dialog.png)
+
+For advanced audio settings, you can adjust:
+
+- *Environment volume:* You can adjust the loudness of the ambient sounds up or down.
+
+- *Effects volume:* You can adjust the loudness of the sound effects to help detect movement and activities in the immersive space.
+
+- *Incoming Voices:* You can adjust the loudness of participant activity around you. 
