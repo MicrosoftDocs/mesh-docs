@@ -122,7 +122,7 @@ Unity Tutorial series on using [**Timelines**](https://learn.unity.com/project/u
 
     A Timeline with several tracks might look something like this:
 
-    ![](../../media/enhance-your-environment/image037.jpg)
+    ![___](../../media/enhance-your-environment/image037.jpg)
 
 1. Once you're done animating, in the **Hierarchy**, select the
     **Timeline1** GameObject, and then in the **Inspector**, navigate to
