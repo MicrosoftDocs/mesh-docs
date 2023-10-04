@@ -60,5 +60,5 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 
 ## Next steps
 
-[Import the Mesh Toolkit package](/import-the-mesh-toolkit-package.md)
+[Import the Mesh Toolkit package](import-the-mesh-toolkit-package.md)
 
