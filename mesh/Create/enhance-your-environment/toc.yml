@@ -7,5 +7,7 @@ items:
   href: physics-interactions.md  
 - name: Web content
   href: webcontent.md
+- name: Play audio in Mesh
+  href: play-audio-in-mesh.md 
 - name: Avatar and object interactions
   href: avatar-and-object-interactions/toc.yml   
