@@ -47,7 +47,7 @@ Follow the steps below to see a list of events and join an event.
 
     For more information, see [Personalize your avatar](avatars.md).
 
-4. You can also select your audio device from the **Pre-join** dialog.
+4. You can also select your audio devices from the **Pre-join** dialog.
 
     ![A screenshot of the Mesh prejoin screen](media/prejoin-dialog-audio.png)
 
