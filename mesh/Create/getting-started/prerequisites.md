@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 ## License requirement
 
-Developing with the Mesh Toolkit doesn't require a license; however, building and publishing your Environment to Mesh requires a Teams Premium license (hyperlink to /mesh/setup/content/setup-m365-mesh?branch=pr-en-us-256#licensing-requirements section)
+A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license is not required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. See Set up Microsoft Mesh | Microsoft Learn for more information. "
 
 ## Unity version 2022.3.7f1+
 

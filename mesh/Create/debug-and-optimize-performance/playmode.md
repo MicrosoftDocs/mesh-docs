@@ -26,8 +26,7 @@ quick iteration. A key feature of Playmode is the ability to run
 multiple clients within the same process; this allows a single developer
 to easily get a first impression of a multi-user scenario.
 
-If you followed the instructions in the [Import the Mesh Toolkit
-Packages](#import-packages) TBD section, you added the tarball named
+If you followed the instructions in the [Import the Mesh Toolkit Packages](../build-your-basic-environment/import-the-mesh-toolkit-package.md) TBD section, you added the tarball named
 *com.microsoft.mesh.toolkit-.xxx*, which includes the Playmode package.
 
 ![A screenshot of a computer Description automatically generated](../../media/debug-and-optimize/image040.jpg)
