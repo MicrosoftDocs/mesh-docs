@@ -25,7 +25,7 @@ The tutorial project is named *Mesh101.Unity* and is included in the
 Mesh Toolkit.
 
 > [!IMPORTANT]
-> The tutorial project is governed by the MIT license as shown in the [LICENSE.txt](https://github.com/microsoft/Mesh-Toolkit-Unity/blob/main/LICENSE.txt) file in the *Mesh-Toolkit-Unity* repository. However, the samples functionality is dependent on the Mesh Toolkit, which is governed by a separate license, and contains 3rd party software. A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../Setup/Content/setup-m365-mesh.md).
+> The tutorial project is governed by the MIT license as shown in the [LICENSE.MD](https://github.com/microsoft/Mesh-Toolkit-Unity/blob/main/LICENSE) file in the *Mesh-Toolkit-Unity* repository. However, the samples functionality is dependent on the Mesh Toolkit, which is governed by a separate license, and contains 3rd party software. 
 
 The tutorial is structured as follows:
 
@@ -75,12 +75,13 @@ Your installation should include modules for Android and Windows.
 
 ### Download the Mesh desktop app
 
-Download Microsoft Mesh on PC
- 
-> [!div class="nextstepaction"]
-> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1)
+To download the app (codenamed **Project Napili**), you can visit the link below.
 
-    ![______](../../../media/get-started-developing-mesh/006-mesh-download-for-pc.png)
+![Project Napili - Microsoft Store Apps](../../../media/sample-mesh-101/image003.png)
+
+[Project Napili - Microsoft Store Apps](https://apps.microsoft.com/store/detail/project-napili/9P0B5VMS9RTQ?hl=en-us&gl=us)
+
+If the app isn't available, talk to your IT admin about making the app visible to you.
 
 ### Download the Mesh Toolkit
 
