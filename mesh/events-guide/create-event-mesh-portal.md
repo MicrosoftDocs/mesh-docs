@@ -18,15 +18,12 @@ Use the Mesh portal to create and manage events, Mesh worlds, and custom environ
 ## Create an event
 
 1. Open the [Mesh Portal](https://portal.mesh.microsoft.com/).
-
 1. Log in with your corporate account.
-
 1. In the Home page, select **Events** in the left nav.
 
     :::image type="content" source="../media/m365-migration-guide/Select-events.png" alt-text="Events button in Mesh portal":::
 
 1. Select **Create event** at the top right.
-
 1. Add the event name, time duration, description, upload a thumbnail image, and adjust the room capacity settings.
 
     :::image type="content" source="../media/m365-migration-guide/Event-details.png" alt-text="Event details page in Mesh portal":::
