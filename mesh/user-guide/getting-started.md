@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 # Getting started with events in Mesh
 
-Join an event in [Microsoft Mesh](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1) to experience spatial interaction and feel a sense of co-presence.
+Join an event in Microsoft Mesh to experience spatial interaction and feel a sense of co-presence.
 
 ## Download Microsoft Mesh
 
