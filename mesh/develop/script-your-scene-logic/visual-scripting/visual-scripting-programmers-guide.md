@@ -21,13 +21,13 @@ Go to the [Visual Scripting overview article](visual-scripting-overview.md)
 
 The simplest visual script you can create is one that just opens a message box:
 
-![Screen shot of the visual script graph of the Hello World sample](../../media/mesh-scripting/visual-scripting//helloworld-script.png)
+![Screen shot of the visual script graph of the Hello World sample](../../../media/mesh-scripting/visual-scripting/helloworld-script.png)
 
 This is how it looks in Mesh:
 
-![Mesh browser window with a popup dialog displaying Hello World and an OK button](../../media/mesh-scripting/visual-scripting//helloworld-runtime-browser.png)
+![Mesh browser window with a popup dialog displaying Hello World and an OK button](../../../media/mesh-scripting/visual-scripting/helloworld-runtime-browser.png)
 
-![Screen shot of the Unity Editor with the Mesh Visual Scripting Hello World scene open.](../../media/mesh-scripting/visual-scripting/helloworld-editor.png)
+![Screen shot of the Unity Editor with the Mesh Visual Scripting Hello World scene open.](../../../media/mesh-scripting/visual-scripting/helloworld-editor.png)
 
 ## Testing your scripts
 
@@ -37,7 +37,7 @@ Before you upload your scene to Mesh, you can develop and test visual scripts, e
 
 When a GameObject with a Script Machine is selected in the transform hierarchy, Mesh displays the _Mesh Visual Scripting Diagnostics_ panel at the bottom of the Inspector panel:
 
-![Screen shot of the Mesh Visual Scripting diagnostics panel](../../media/mesh-scripting/visual-scripting/helloworld-diagnostics.png)
+![Screen shot of the Mesh Visual Scripting diagnostics panel](../../../media/mesh-scripting/visual-scripting/helloworld-diagnostics.png)
 
 The diagnostics panel gives immediate feedback on any warnings or errors that might prevent your scripts from working well in Mesh.
 
