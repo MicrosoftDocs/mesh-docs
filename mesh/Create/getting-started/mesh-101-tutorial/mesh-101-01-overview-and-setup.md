@@ -47,7 +47,9 @@ The tutorial is structured as follows:
 
 - [Chapter 5: Make your Environment available for Events](mesh-101-05-make-environment-available.md)
 
-- [Chapter 6: Create an Event and invite others](mesh-101-06-create-an-event-and-invite-others.md)
+- [Chapter 6: Test your environment within the Mesh app](mesh-101-06-test-your-environment.md)
+
+- [Chapter 7: Create an Event and invite others](mesh-101-07-create-an-event-and-invite-others.md)
 
 ## Terminology
 
