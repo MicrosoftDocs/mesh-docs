@@ -38,7 +38,7 @@ We are making building relationships easier by bringing the power of Mesh into t
 :::image type="content" source="media/welcome-to-mesh/04_ImmersiveSpaces_Splice.gif" alt-text="GIF of selecting view then immersive space in teams":::
 
 > [!div class="nextstepaction"]
-> [Learn about immersive spaces in Teams](/microsoftteams/meeting-avatars)
+> [Learn about immersive spaces in Microsoft Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams)
 
 ## Create a custom immersive space with Microsoft Mesh
 
@@ -67,7 +67,10 @@ Use the Mesh toolkit to leverage the power of Unity for fully customizable immer
 To get started, make sure your organization's admins have set up Microsoft Mesh:
 
 > [!div class="nextstepaction"]
-> [Mesh setup for admins](Setup/Content/setup-m365-mesh.md)
+> [Set up immersive spaces in Microsoft Teams](/microsoftteams/meeting-immersive-spaces)
+
+> [!div class="nextstepaction"]
+> [Set up custom immersive spaces in Microsoft Mesh](Setup/Content/setup-m365-mesh.md)
 
 Then, dive in to organize your first Mesh event:
 
