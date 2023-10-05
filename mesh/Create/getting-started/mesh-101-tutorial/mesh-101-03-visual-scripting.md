@@ -62,7 +62,7 @@ As you can see, there's already a video screen in place, but it needs a Play/Sto
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/404-chapter-3-expanded.png)
 
-1. Search for the **ButtonBase** prefab.
+1. Search for the **ButtonBase** prefab. Make sure you choose **ALL** for the **Search** filter.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/032-buttonbase-v2.png)
 

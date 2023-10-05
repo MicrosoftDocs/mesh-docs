@@ -29,7 +29,7 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 
 1. In the **Hierarchy**, delete **Global Volume**.
 
-1. > [Import the Mesh Toolkit](../build-your-basic-environment/import-the-mesh-toolkit-package.md)
+1. [Import the Mesh Toolkit](../build-your-basic-environment/import-the-mesh-toolkit-package.md)
 
 **To update an existing project**:
 
@@ -51,3 +51,7 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 - You can't use UnityUI (uGUI) for custom UI.
 
 - You must use Text Mesh Pro for displaying text.
+
+## Next steps
+
+[Import the Mesh Toolkit package](import-the-mesh-toolkit-package.md)
