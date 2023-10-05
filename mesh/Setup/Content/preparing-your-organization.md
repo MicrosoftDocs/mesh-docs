@@ -175,9 +175,9 @@ Microsoft Intune, see:
 
 ## Azure Administrators
 
-If your developers plan to build custom Mesh environments that will use [Mesh cloud scripting](../../Create/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md), they will require an Azure subscription to which they can deploy their cloud scripting service.  An Azure subscription is not required for environments that only use [Mesh visual scripting](../../Create/script-your-scene-logic/visual-scripting/visual-scripting-overview.md).
+If your developers plan to build custom Mesh environments that will use [Mesh cloud scripting](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md), they will require an Azure subscription to which they can deploy their cloud scripting service.  An Azure subscription is not required for environments that only use [Mesh visual scripting](../../develop/script-your-scene-logic/visual-scripting/visual-scripting-overview.md).
 
-See [Set up Cloud Scripting infrastructure in Azure](../../Create/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md) for more details on these requirements.
+See [Set up Cloud Scripting infrastructure in Azure](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md) for more details on these requirements.
 
 ## Work with Your Security Organization
 

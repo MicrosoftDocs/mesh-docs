@@ -52,4 +52,4 @@ Now that you've set up Microsoft Mesh, dive in to organize your first Mesh event
 If you have skills using Unity, get started building your own custom environment for your new Mesh world:
 
    > [!div class="nextstepaction"]
-   > [Develop Mesh environments](../../Create/development-overview.md)
+   > [Develop Mesh environments](../../develop/development-overview.md)
