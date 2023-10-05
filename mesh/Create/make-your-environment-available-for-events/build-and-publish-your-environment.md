@@ -66,16 +66,33 @@ After you finish adding all your scene content, the next step is to build the sc
 ## Add more Environments for build and publish
 If you want to Build & Publish more then one Environment, click on **Add Environment Configuration** button and follow the steps from [Select the Environment for build and publish](#select-the-environment-for-build-and-publish).
 
+![A screenshot of adding new environment to configure](../../media/make-your-environment-available-for-events/uploader_add_environment_button.png)
+
+![A screenshot of added new environment to configure](../../media/make-your-environment-available-for-events/uploader_add_environment_button_result.png)
+
+
+
 ## Select the Environment for build and publish
 If you want to configure the Environment, that you have just created, ignore this section and go to [Configure the Environment for build and publish](#configure-the-environment-for-build-and-publish).
 If you want to pick one, that is already existed select the field that displays **Select Environment** and pick Environment, which configuration you want to update.
-Sometime list of the avaliable Environments can be big, this is why there are 2 filters:
 
-### Filter Environments by Worls
-By default you can see Environments from all the Worlds, that you have access too. However you can filter the list by specifing the World, which Environments you would like to update
+![A screenshot of available Environments](../../media/make-your-environment-available-for-events/uploader_list_of_avaliable_environments.png)
+
+If you added one of the environments from the list already, it will be marked grey and you won't be able to select it
+
+Sometime list of the available Environments can be big, this is why there are 2 filters:
+
+![A screenshot of Environments filters](../../media/make-your-environment-available-for-events/uploader_environment_filters.png)
+
+
+### Filter Environments by Worlds
+By default you can see Environments from all the Worlds, that you have access too. However you can filter the list by specifying the World, which Environments you would like to update
+![A screenshot of Environments World filter](../../media/make-your-environment-available-for-events/uploader_environment_world_filter.png)
+
 
 ### Filter Environment by Name
-By default you can see Environments from all the Worlds, that you have access too. However you can filter the list by specifing name / word that Environment name should have.
+By default you can see Environments from all the Worlds, that you have access too. However you can filter the list by specifying text that Environment name should have.
+![A screenshot of Environments Text filter](../../media/make-your-environment-available-for-events/uploader_environment_name_filter.png)
 
 
 ## Configure the Environment for build and publish
