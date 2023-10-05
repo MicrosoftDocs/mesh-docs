@@ -3,7 +3,7 @@ title: Build and publish your Environment
 description: Learn how to turn your Environment into an Asset and then publish it in the Mesh Portal.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/12/2023
+ms.date: 10/05/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, environment, build, publish, build and publish, uploader, Mesh uploader
 ---
@@ -64,6 +64,7 @@ After you finish adding all your scene content, the next step is to build the sc
     added in the **Create Environment** tab: *Vinnie's Dartroom*.
 
 ## Add more Environments for build and publish
+
 If you want to Build & Publish more then one Environment, click on **Add Environment Configuration** button and follow the steps from [Select the Environment for build and publish](#select-the-environment-for-build-and-publish).
 
 ![A screenshot of adding new environment to configure](../../media/make-your-environment-available-for-events/uploader_add_environment_button.png)
@@ -73,31 +74,34 @@ If you want to Build & Publish more then one Environment, click on **Add Environ
 
 
 ## Select the Environment for build and publish
-If you want to configure the Environment, that you have just created, ignore this section and go to [Configure the Environment for build and publish](#configure-the-environment-for-build-and-publish).
-If you want to pick one, that is already existed select the field that displays **Select Environment** and pick Environment, which configuration you want to update.
+
+If you want to configure the Environment that you've just created, ignore this section and go to [Configure the Environment for build and publish](#configure-the-environment-for-build-and-publish).
+If you want to pick one that already exists, select the field that displays **Select Environment**. Then pick your Environment and configuration that you want to update.
 
 ![A screenshot of available Environments](../../media/make-your-environment-available-for-events/uploader_list_of_avaliable_environments.png)
 
 If you added one of the environments from the list already, it will be marked grey and you won't be able to select it
 
-Sometime list of the available Environments can be big, this is why there are 2 filters:
+Sometimes the list of the available Environments can be big. Use these 2 filters to help sort environments:
 
 ![A screenshot of Environments filters](../../media/make-your-environment-available-for-events/uploader_environment_filters.png)
 
 
 ### Filter Environments by Worlds
+
 By default you can see Environments from all the Worlds, that you have access too. However you can filter the list by specifying the World, which Environments you would like to update
 ![A screenshot of Environments World filter](../../media/make-your-environment-available-for-events/uploader_environment_world_filter.png)
 
 
 ### Filter Environment by Name
+
 By default you can see Environments from all the Worlds, that you have access too. However you can filter the list by specifying text that Environment name should have.
 ![A screenshot of Environments Text filter](../../media/make-your-environment-available-for-events/uploader_environment_name_filter.png)
 
 
 ## Configure the Environment for build and publish
 
-1. Select the field that displays **Select a Scene** and then, in the
+1. Select the field that displays **Select a Scene**. In the
     **Select** **SceneAsset** window, double-click the scene in your
     project that you want as the Environment. In this example, we're
     using the Mesh sample project *Dartroom*, so our chosen scene will be the scene also named *DartRoom*.
