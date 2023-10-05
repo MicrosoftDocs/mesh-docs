@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, GitHub
 The Mesh 101 tutorial is a great way to learn about adding Mesh features
 to a Unity project to create an interactive learning experience. Created
 for intermediate to advanced Unity developers, the tutorial will give
-you a solid understanding of the power of Mesh, spanning Mesh Physics,
+you a solid understanding of the power of Mesh, spanning Mesh Interactables and Physics,
 Scripting, and more. You'll start with a pre-built Unity project, add
 custom interactivity and other Mesh features, and then deploy the
 project as an *Environment* to Microsoft Mesh. Customers can
@@ -39,7 +39,7 @@ The tutorial is structured as follows:
   - Station 3.2: Trigger an info dialog
   - Station 3.3: Teleport to the turbine generator
 
-- [Chapter 4: Move objects and trigger animations with Mesh Physics](mesh-101-04-physics.md)
+- [Chapter 4: Move objects and trigger animations with Mesh Interactables and Physics](mesh-101-04-physics.md)
 
   - Station 4.1: Grab and Release
   - Station 4.2: Animation Trigger
@@ -84,9 +84,9 @@ Download Microsoft Mesh on PC
 
     ![______](../../../media/get-started-developing-mesh/006-mesh-download-for-pc.png)
 
-### Download the Mesh 101 sample
+### Download the Mesh Toolkit samples
 
-The Mesh Toolkit samples repo on GitHub contains the *Mesh 101* tutorial project.
+The *Mesh 101* tutorial project is available in the [*Mesh-Toolkit-Unity*](https://github.com/microsoft/Mesh-Toolkit-Unity) GitHub repository.
 
 1. In your browser, go to GitHub, and then navigate to the [*Mesh-Toolkit-Unity* repository](https://github.com/microsoft/Mesh-Toolkit-Unity).
 
@@ -102,7 +102,7 @@ The Mesh Toolkit samples repo on GitHub contains the *Mesh 101* tutorial project
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/471-toolkit-zip-in-folder.png)
 
-5. Unzip the samples Zip file into the same folder, and then navigate through the unzipped folder hierarchy until you see the **Mesh101** folder. This contains the tutorial project which you'll open in the next chapter.
+1. Unzip the samples Zip file into the same folder, and then navigate through the unzipped folder hierarchy until you see the **Mesh101** folder. This contains the tutorial project which you'll open in the next chapter.
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/472-mesh-tutorial-folder.png)
 

@@ -1,17 +1,17 @@
 ---
 title: Mesh 101 Move objects and trigger animations
-description: Learn how to move objects and trigger animations with Mesh Physics.
+description: Learn how to move objects and trigger animations with Mesh Interactables and Physics.
 author: typride
 ms.author: vinnietieto
 ms.date: 9/28/2023
 ms.topic: Tutorial
-keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, physics
+keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, physics, interactables
 ---
 
-# Mesh 101 Tutorial Chapter 4: Move objects and trigger animations with Mesh Physics
+# Mesh 101 Tutorial Chapter 4: Move objects and trigger animations with Mesh Interactables and Physics
 
 In this chapter, you'll work with a model of the wind farm. You'll learn
-how to use Mesh Physics to grab and release Rigid Bodies (in this case,
+how to use Mesh Interactables and Physics to grab and release Rigid Bodies (in this case,
 wind turbines) and set up an animation trigger using Visual Scripting. You'll wrap things up by
 constraining the wind turbines so they can only be moved within a
 specified area.
@@ -27,7 +27,7 @@ There are a couple of things we need to do before getting started with the first
 - In the **Hierarchy**, collapse the **Chapter3** GameObject and then
     expand the **Chapter4** GameObject.
 
-![A screenshot of a computer Description ](../../../media/sample-mesh-101/image061.jpg)
+![A screenshot of a computer Description ](../../../media/sample-mesh-101/494-chapter-4-expanded.png)
 
 ## Change the view to display the Chapter 4 Sphere Terrace
 

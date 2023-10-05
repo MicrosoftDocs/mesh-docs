@@ -5,18 +5,18 @@ author: typride
 ms.author: tmilligan
 ms.date: 09/26/2023
 ms.topic: Tutorial
-keywords: Microsoft Mesh, Azure, admin, documentation, features, MeshApp, scripting
+keywords: Microsoft Mesh, Azure, admin, documentation, features, Mesh Cloud Scripting, scripting
 ---
 
-# Set cloud Scripting infrastructure in Azure
+# Set Cloud Scripting infrastructure in Azure
 
-## MeshApps cloud infrastructure deployment
+## Mesh Cloud Scripting Service cloud infrastructure deployment
 
-Mesh Apps are dotnet based apps that are run in the Cloud. The Mesh Toolkit Uploader helps developers provision their azure resources and deploy their web app. These are the steps involved in deploying the Mesh Apps cloud infrastructure today.
+Mesh Cloud Scripting Services are dotnet based apps that are run in the Cloud. The Mesh Toolkit Uploader helps developers provision their azure resources and deploy their web app. These are the steps involved in deploying the Mesh Cloud Scripting Service cloud infrastructure today.
 
 ## Resources deployed
 
-The Mesh App Cloud Infrastructure deployed to the Customer's Azure Subscription contains the following Azure resources:
+The Mesh Cloud Scripting Cloud Infrastructure deployed to the Customer's Azure Subscription contains the following Azure resources:
 
 1. **[App Service Plan](/azure/app-service/overview-hosting-plans)**: They represent a compute cluster where web apps can run. (It can also run one or more different web apps).
 
@@ -24,9 +24,9 @@ The Mesh App Cloud Infrastructure deployed to the Customer's Azure Subscription 
 
 1. **Azure Web App Instance**: This represents an instance of the Web App running on a specific VM.
 1. **[Azure Storage account](/azure/storage/common/storage-account-overview)**: This holds the published content and information about the Azure Web App instances. It is sub-divided into three components:
-    1. **[The Mesh App Blob Storage](/azure/storage/blobs/storage-blobs-introduction)**: This holds the Mesh App blob uploaded by the Mesh CLI tool (and in the future from the uploader)
+    1. **[The Mesh Cloud Scripting Service Blob Storage](/azure/storage/blobs/storage-blobs-introduction)**: This holds the Mesh Cloud Scripting Service blob uploaded by the Mesh Uploader
     2. **[The Orleans Membership Table](/dotnet/orleans/overview)**: This holds information about the liveness of the Orleans Silo instances.
-1. **[Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal)**: This holds the logs emitted from the Mesh App running on App Service.
+1. **[Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal)**: This holds the logs emitted from the Mesh Cloud Scripting Service running on App Service.
 1. **[Application Insights](/azure/azure-monitor/app/app-insights-overview?tabs=net)**: This provides application performance monitoring (APM) features. APM tools are useful to monitor applications from development, through test, and into production.
 
 ### App Service Plan
@@ -51,7 +51,7 @@ For more info, refer to the [App Service Plan Docs](/azure/app-service/overview-
 - **Kind**: Linux
 - **Reserved**: True
 
-In the context of Mesh Apps, the App Service Plan is the compute component. It can scale automatically, and handle how the different instances communicate with each other (networking). The CloudHost which is the application that runs and manages Mesh Apps is currently offered as a Docker image and as such, we use a Linux based plan. The Premium plans are more suited for production workloads.
+In the context of Mesh Cloud Scripting Services, the App Service Plan is the compute component. It can scale automatically, and handle how the different instances communicate with each other (networking). The CloudHost which is the application that runs and manages Mesh Cloud Scripting Services is currently offered as a Docker image and as such, we use a Linux based plan. The Premium plans are more suited for production workloads.
 
 For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/microsoft.web/serverfarms?pivots=deployment-language-bicep) for the App Service Plan resource.
 
@@ -144,9 +144,9 @@ Resources can be deployed to any of the following supported regions. All resourc
 | South Africa North (san) | South Africa West (saw)   | South Central US (scu) | Southeast Asia (sea)      | South India (si)       | Sweden Central (sc)    | Switzerland North (sn)     | Switzerland West (sw) | UAE Central (uc)   |
 | UAE North (un)           | UK South (us)             | UK West (uw)           | West Europe (we)          | West US (wu)           | West US 2 (wu2)        | West US 3 (wu3)            |
 
-## MeshApps cloud infrastructure diagram
+## Mesh Cloud Scripting Services cloud infrastructure diagram
 
-:::image type="content" source="../../media/cloud-scripting-infrastructure-guide/image016.png" alt-text="MeshApps infrastructure diagram":::
+:::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/image016.png" alt-text="Mesh Cloud Scripting Service infrastructure diagram":::
 
 ## Resource provider registrations
 
@@ -166,10 +166,10 @@ The services to register are:
 > [!NOTE]
 > From the Azure docs, registering services is done at a subscription level i.e., there's no need to register the services for different resource groups.
 
-## Access control for MeshApp deployment
+## Access control for Mesh Cloud Scripting Service deployment
 
 1. Developer must have an email that can be used for their deployment. This could be a new account or a pre-existing email used, such as Environment uploading.
-1. If managing access control through an Azure Security Group, create this group (e.g “Mesh App Developers”).
+1. If managing access control through an Azure Security Group, create this group (e.g “Mesh Cloud Scripting Services Developers”).
 See Learn about groups and group membership - Microsoft Entra | Microsoft Learn for more Information on Azure Security Group versus Microsoft 365 group types.
 1. Decide how you’d like developers to access your Azure subscription. This depends on if the developer is a native member of the directory, or a guest user.
     1. For native members, you can add them to the Azure Security Group you created in the previous step if you’d like to easily manage access controls.
@@ -179,18 +179,18 @@ See Learn about groups and group membership - Microsoft Entra | Microsoft Learn 
 
 ### Our recommendations for access control
 
-Depending on how restrictive you'd like your access control policies to be, there are a few recommendations on granting developers access to provision the Mesh Apps cloud infrastructure in Azure.
+Depending on how restrictive you'd like your access control policies to be, there are a few recommendations on granting developers access to provision the Mesh Cloud Scripting Services cloud infrastructure in Azure.
 
-1. Grant developers the [Contributor role](/azure/role-based-access-control/built-in-roles) on the entire Subscription that is provisioned for your Mesh Apps.
+1. Grant developers the [Contributor role](/azure/role-based-access-control/built-in-roles) on the entire Subscription that is provisioned for your Mesh Cloud Scripting Services.
 
-1. Create a dedicated resource group for Mesh Apps cloud infrastructure deployment and grant developers the Contributor role on this resource group. You can do this through the Azure Security Group you created in the second prerequisite i.e., "Mesh App Developers". This grants them full access to manage all resources but does not allow them to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries.
+1. Create a dedicated resource group for Mesh Cloud Scripting Services cloud infrastructure deployment and grant developers the Contributor role on this resource group. You can do this through the Azure Security Group you created in the second prerequisite i.e., "Mesh Cloud Scripting Services Developers". This grants them full access to manage all resources but does not allow them to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries.
 
-1. Create a [Custom Role in Azure](/azure/role-based-access-control/custom-roles) that has the least permissions needed to create and manage the Mesh Apps cloud infrastructure.
+1. Create a [Custom Role in Azure](/azure/role-based-access-control/custom-roles) that has the least permissions needed to create and manage the Mesh Cloud Scripting Services cloud infrastructure.
 
-    [You can assign this role directly on the Azure Security Group you created in the second prerequisite i.e](/azure/role-based-access-control/quickstart-assign-role-user-portal)., "Mesh App Developers".
+    [You can assign this role directly on the Azure Security Group you created in the second prerequisite i.e](/azure/role-based-access-control/quickstart-assign-role-user-portal)., "Mesh Cloud Scripting Services Developers".
 
     Below you can see our recommended permissions for the Custom roles you create:
-    :::image type="content" source="../../media/cloud-scripting-infrastructure-guide/image017.png" alt-text="MeshApps infrastructure diagram":::
+    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/image017.png" alt-text="Mesh Cloud Scripting Service infrastructure diagram":::
 
    **Then the JSON file you would upload should be similar to this**:
 
@@ -198,8 +198,8 @@ Depending on how restrictive you'd like your access control policies to be, ther
     {
     "id": "88888-8888-8888-888-8888888",
         "properties": {
-            "roleName": "MeshAppDeployer",
-            "description": "Grants access to Mesh App resources",
+            "roleName": "MeshCloudScriptingServiceDeployer",
+            "description": "Grants access to Mesh Cloud Scripting Services resources",
             "assignableScopes": [
                 "/subscriptions/{subscriptionID}"
             ],
@@ -248,11 +248,11 @@ Depending on how restrictive you'd like your access control policies to be, ther
     ```
 
     > [!NOTE]
-    > The MeshAppDeployer custom role doesn't allow user to create resource groups. If we want users to create a resource group, they need the **Microsoft.Resources/subscriptions/resourcegroups/write permissions** as well.
+    > The MeshCloudScriptingServiceDeployer custom role doesn't allow user to create resource groups. If we want users to create a resource group, they need the **Microsoft.Resources/subscriptions/resourcegroups/write permissions** as well.
 
-## Quota limitations for MeshApps
+## Quota limitations for Mesh Cloud Scripting Services
 
-The Mesh Apps infrastructure utilizes the Premium App Service Linux plan (P1V2), and these are the App Service limits that you might encounter while deploying Mesh Apps:
+The Mesh Cloud Scripting Services infrastructure utilizes the Premium App Service Linux plan (P1V2), and these are the App Service limits that you might encounter while deploying Mesh Cloud Scripting Service:
 
 |Resource |Premium (P1V2)  |
 |---------|---------|
