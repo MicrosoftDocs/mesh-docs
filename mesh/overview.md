@@ -4,7 +4,7 @@ description: Microsoft Mesh overview.
 ms.prod: mixed-reality
 author: qianw211
 ms.author: qianwen
-ms.date: 5/23/2023
+ms.date: 10/5/2023
 ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -38,7 +38,10 @@ We are making building relationships easier by bringing the power of Mesh into t
 :::image type="content" source="media/welcome-to-mesh/04_ImmersiveSpaces_Splice.gif" alt-text="GIF of selecting view then immersive space in teams":::
 
 > [!div class="nextstepaction"]
-> [Learn about immersive spaces in Teams](/microsoftteams/meeting-avatars)
+> [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces)
+
+> [!div class="nextstepaction"]
+> [Get started with immersive spaces in Microsoft Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams)
 
 ## Create a custom immersive space with Microsoft Mesh
 
@@ -73,6 +76,11 @@ Then, dive in to organize your first Mesh event:
 
 > [!div class="nextstepaction"]
 > [Organize Mesh events](events-guide/events-overview.md)
+
+Experience Mesh by joining a Mesh event
+
+> [!div class="nextstepaction"]
+> [Join a Mesh event](user-guide/join-an-event.md)
 
 If you have skills using Unity, get started building your own custom environments:
 
