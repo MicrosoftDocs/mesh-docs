@@ -96,7 +96,7 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 4. If the logs are too large to share, the two most important are `Player.log` and `Player-prev.log`.
 
-5. Open a support request using the <mark> guidelines WHERE?
+5. Open a support request by following the link [here](https://aka.ms/meshdevsupport).
 
 ### Audio setup in Mesh FAQ
 
