@@ -189,23 +189,15 @@ requirements in advance with the appropriate Security owners.
 
 To ensure the Mesh features work properly, the following endpoints must
 be allowed through your firewall or proxy server.
-
 All endpoints need to allow traffic on TCP ports 80 and 443:
 
 - \*.microsoft.com
-
-- \*.meshxp.net
 
 - \*.office.com
 
 - \*.office.net
 
-- js.monitor.azure.com
-
-Follow this link to learn more about how to Set up avatars for Microsoft
-Teams.
-
-[Set up immersive spaces in Microsoft Teams](/microsoftteams/meeting-immersive-spaces)
+To learn more, see how to [Set up immersive spaces in Teams](aka.ms/immersivespacesitdocs).
 
 ### Firewall Ports for Mesh immersive spaces
 
@@ -214,52 +206,44 @@ outgoing ports to be opened in your firewall:
 
 - TCP ports 80, 443
 
-- TCP & UDP ports 30,000-31,000
+- TCP & UDP ports 30,000-30,499
 
 - UDP ports 3478-3481
 
 Mesh traffic will use IP addresses in the AzureCloud service tag.
 
-For more information about service tags, see the Azure service tags
-overview.
+For more information about service tags, see the [Azure service tags overview | Microsoft Learn](/azure/virtual-network/service-tags-overview).
+
+To learn more, see how to [Set up immersive spaces in Teams](aka.ms/immersivespacesitdocs).
 
 ### Ensure endpoints can be allowed for Mesh avatars for Teams
 
 To ensure avatars for Teams works properly, allow the following
 endpoints:
-
 *All endpoints need to allow traffic on TCP ports 80 and 443*:
 
 - \*.microsoft.com
-
 - \*.office.com
-
 - \*.office.net
 
 Follow this link to learn more about how to Set up avatars for Microsoft
 Teams.
-
 [Set up avatars for Microsoft Teams](/microsoftteams/meeting-avatars)
 
 ### Ensure endpoints can be allowed for the Mesh app
 
 To ensure Mesh works properly, allow the following endpoints.
-
 All endpoints need to allow traffic on TCP ports 80 and 443:
 
 - \*.officeapps.live.com
 
 - \*.microsoft.com
 
-- \*.meshxp.net
-
 - \*.office365.com
 
 - \*.office.com
 
 - \*.office.net
-
-- \*.servicebus.windows.net
 
 ### Firewall Ports for the Mesh app
 
@@ -268,14 +252,9 @@ following outgoing ports to be opened in your firewall:
 
 - TCP ports 80, 443, 8089, and 8989
 
-- TCP & UDP ports 30,000-31,000
+- TCP & UDP ports 30,000-30,499
 
 - UDP ports 3478-3481
-
-Mesh traffic will use IP addresses in the AzureCloud service tag.
-
-For more information about service tags, see the Azure service tags
-overview.
 
 ### Conditional Access
 
