@@ -925,4 +925,4 @@ Select or clear the checkbox to the left of the condition name.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Animations and timelines](animations-and-timelines.md)
+> [Multi-room sync (animations, timelines, and video)](multi-room-sync.md)

@@ -3,7 +3,7 @@ title: Known issues for Mesh
 description: Active known issues for Mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 9/28/2023
+ms.date: 10/3/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -16,7 +16,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
     This is the current behavior we ship for Public Preview:
 
-    * For a Event Collaboration Session:  The environment used by the event is determined by the first join to the collaboration session. So for example, a Build Review event is created when the latest **Lakehouse** environment is version 1, the collaboration session for the event will always use version 1.
+    * For a Event Customization Session: The latest version of an environment is always used in an event customization session.
 
     * For the Event itself: The environment used by the event is determined by the first join to the event.  So let's say by the time someone first joins the same Build Review event, the latest **Lakehouse** environment is version 3, the Build Review event will always use version 3.
 

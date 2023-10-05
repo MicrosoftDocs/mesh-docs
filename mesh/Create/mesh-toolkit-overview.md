@@ -47,3 +47,5 @@ The Toolkit includes (but isn't limited to):
     runtime behavior to your Mesh environments without writing code. For
     more information, see our document titled "Mesh Visual Scripting
     Guide."
+
+- A number of [Mesh project samples](getting-started/samples/samples-overview.md) that you explore to learn about about Mesh experiences are created or even use as a starting point for your own custom experience.

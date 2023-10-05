@@ -62,7 +62,7 @@ As you can see, there's already a video screen in place, but it needs a Play/Sto
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/404-chapter-3-expanded.png)
 
-1. Search for the **ButtonBase** prefab.
+1. Search for the **ButtonBase** prefab. Make sure you choose **ALL** for the **Search** filter.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/032-buttonbase-v2.png)
 
@@ -158,11 +158,13 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 
 > [!TIP] You may want to take a moment here to examine some of the components for the **Button** GameObject:
 >
-> *Mesh Interactable Properties*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named [*Mesh Object and Avatar Interactions*](../../design-and-develop/enhance-your-environment/object-avatar-interactions.md).
+> *Mesh Interactable Setup*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named [*Grab, hold and throw with Interactables*](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
+>
+>   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/478-mesh-interactable-setup.png)
 >
 > *Script Machine*: This has a script graph named *Button Base Behaviour.*
 >
->   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/208-playvideobutton-components-v2.png)
+>   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/479-script-machine-button-base.png)
 >
 > If you go into Play mode, you'll see that a new component named **Mesh Interactable Body** is added to **Button**.
 >
@@ -445,7 +447,7 @@ In the **Teleport Button Behavior** group, the logic is similar to what you saw 
 
 ### Create a Travel Point and add a reference to it
 
-So what's a "Travel Point", you might be asking ... ? Basically, it's a component that you can use to define a point in space to spawn or teleport to. Normally, you would first create a *Travel Group*, and then add one or more Travel Points to it. We've already created the Travel Group for you in this project, so in the steps below, we'll add a Travel Point to that group. We'll then use that Travel point as the location the avatar will go to when they click the "Teleport" button. To learn more, see our article named [*Mesh Object and Avatar Interactions*](../../design-and-develop/enhance-your-environment/object-avatar-interactions.md).
+So what's a "Travel Point", you might be asking ... ? Basically, it's a component that you can use to define a point in space to spawn or teleport to. Normally, you would first create a *Travel Group*, and then add one or more Travel Points to it. We've already created the Travel Group for you in this project, so in the steps below, we'll add a Travel Point to that group. We'll then use that Travel point as the location the avatar will go to when they click the "Teleport" button. To learn more, see our article named [*Create avatar spawn and teleport points*](../../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md).
 
 1. In the **Hierarchy**, create a new empty GameObject as a child object to **TravelGroup** and then rename it "TeleportLocationWindTurbine".
 
@@ -574,4 +576,4 @@ your experience to do the following:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Chapter 4: Move objects and trigger animations with Mesh Physics](mesh-101-04-physics)
+> [Chapter 4: Move objects and trigger animations with Mesh Physics](mesh-101-04-physics.md)

@@ -46,6 +46,8 @@ Here are some things to consider when creating content:
     of the behaviors provided in the Mesh Toolkit. Any unsupported
     behaviors you include in your content won't be loaded or executed.
 
+- Events callbacks are limited to _ScriptMachine.TriggerUnityEvent_ and _ScriptMachine.TriggerAnimationEvent_. If you use any unsupported event callback in your components you won't be able to upload your environment as the build step will fail.
+
 In general, Unity Packages downloaded from the Unity Asset store aren't
 expected to work unless they conform to the restrictions above.
 

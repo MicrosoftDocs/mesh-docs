@@ -1,5 +1,5 @@
 ---
-title: Set up Mesh Portal (Preview)
+title: Create worlds and events in Mesh (Preview)
 description: Prepare your organization to adopt Mesh and its features. Organize a team to manage setup and distribution.
 author: typride
 ms.author: tmilligan
@@ -8,7 +8,7 @@ ms.topic: overview
 keywords: Microsoft Mesh, M365, Mesh Portal, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-# Set up Mesh Portal (Preview)
+# Create worlds and events in Mesh (Preview)
 
 The Mesh portal is where you can create Mesh events, invite co-organizers or attendees, create Mesh worlds to hold your custom environments, and manage your uploaded environments.
 
@@ -29,7 +29,7 @@ We are excited to move to M365 and appreciate your patience in this process.
 
 ## Prerequisites
 
-Microsoft 365 Admins should use the M365 Admin Center (MAC) to enable the Mesh access policy for users to make the Mesh Portal accessible. If the Mesh Portal is not accessible to you, you may need to ask your M365 Admin or wait for the policy to be available for your organization.
+Microsoft 365 Admins should use the M365 Apps Admin Center to enable the Mesh access policy for users to make the Mesh Portal accessible. If the Mesh Portal is not accessible to you, you may need to ask your IT Admin or wait for the policy to be available for your organization.
 
 [See how to set up Mesh experiences in M365](setup-m365-mesh.md).
 
@@ -107,4 +107,4 @@ See how to [build and publish your Environment](../../Create/design-and-develop/
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Getting started with Microsoft Mesh](../../user-guide/getting-started.md)
+   > [Join your event in the Mesh app](../../user-guide/getting-started.md)

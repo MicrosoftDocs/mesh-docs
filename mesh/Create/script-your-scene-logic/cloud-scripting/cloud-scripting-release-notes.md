@@ -68,6 +68,10 @@ keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding, 
 
   - The `AddCloudMeshApplication` method has been renamed to `AddCloudScriptingApplication`.
 
+  - In the `appsettings.Development.json` file replace `Microsoft.MeshApps` property names to `Microsoft.Mesh.CloudScripting`. The same change should be applied to `appsettings.Production.json` file.
+
+  - In the `Directory.Packages.props` file update the following values PackageReference `Microsoft.MeshApps.Dom.NET` should point now to `Microsoft.Mesh.CloudScripting`.
+
 ## Release 31 Aug 2023
 ### Versions
 |Component|Version|
