@@ -8,6 +8,6 @@ items:
 - name: Join events
   href: user-guide/toc.yml
 - name: Develop environments
-  href: Create/toc.yml
+  href: develop/toc.yml
 - name: Resources
   href: Resources/toc.yml
