@@ -3,7 +3,7 @@ title: Feedback and support for Mesh
 description: Here's how to provide feedback for Microsoft Mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 9/25/2023
+ms.date: 10/5/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -22,6 +22,14 @@ For product feedback, use the **Feedback** button inside your Mesh experience. T
 
 ## Developer feedback for Mesh
 
-For feedback on the development experience, once you've [downloaded the Mesh toolkit](../Create/build-your-basic-environment/import-the-mesh-toolkit-package.md), use the **Mesh toolkit** > **Feedback** menu dropdown to provide feedback.
+For feedback on the development experience, once you've [downloaded the Mesh toolkit](../develop/build-your-basic-environment/add-the-mesh-toolkit-package.md), use the **Mesh toolkit** > **Feedback** menu dropdown to provide feedback.
 
 We truly appreciate feedback!
+
+## Get support
+
+> [!div class="nextstepaction"]
+> [Here's how to get support for developers](https://aka.ms/meshdevsupport).
+
+> [!div class="nextstepaction"]
+> [Here's how to get support for IT admins](https://admin.microsoft.com).

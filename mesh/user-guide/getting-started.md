@@ -12,23 +12,23 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 Join an event in Microsoft Mesh to experience spatial interaction and feel a sense of co-presence.
 
-## Download Microsoft Mesh
+## Install and run Microsoft Mesh
 
-### Download Microsoft Mesh on PC
+*Download Microsoft Mesh on PC from the Microsoft store:*
 
 > [!div class="nextstepaction"]
-> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1)
+> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7)
 
-### Download Microsoft Mesh for Meta Quest devices
+*Download Microsoft Mesh for Meta Quest devices from the Meta App Lab:*
 
-Available through Meta App Lab. Log in with your Meta ID, get the app, and download it in the App Library on your Meta device.
+Log in with your Meta ID, get the app, and download it in the App Library on your Meta device.
 
 > [!div class="nextstepaction"]
 > [Microsoft Mesh on Meta Quest | Meta Store](https://www.meta.com/experiences/6750166401689690/)
 
 Need help? See [how to download Mesh on Quest 2 via App Lab](../Resources/mesh-troubleshooting.md#how-to-download-mesh-on-quest-2-via-app-lab).
 
-## Organize events
+## Organize and join events
 
 Learn how to organize, customize, and produce events in Mesh.
 
@@ -37,11 +37,7 @@ Learn how to organize, customize, and produce events in Mesh.
    > [!div class="nextstepaction"]
    > [Organizing events overview](../events-guide/events-overview.md)
 
-## Join events
-
 See how to join your first event and learn how to use Microsoft Mesh.
-
-![Join a Mesh event using the calendar invite link](../media/mesh-event-producer-guide/Join-event-link-calendar.gif)
 
 > [!div class="nextstepaction"]
 > [Join an Event](join-an-event.md)
@@ -49,7 +45,4 @@ See how to join your first event and learn how to use Microsoft Mesh.
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Personalize your avatars](avatars.md)
-
-   > [!div class="nextstepaction"]
-   > [Join an event](join-an-event.md)
+   > [Personalize your avatars before joining your event](avatars.md).
