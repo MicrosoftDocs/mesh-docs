@@ -57,4 +57,4 @@ For details on how you can customize your avatars, see [Personalize your avatars
    > [Join an event](join-an-event.md)
 
    > [!div class="nextstepaction"]
-   > [Mesh user controls](mmesh-user-controls.md)
+   > [Mesh user controls](mesh-user-controls.md)

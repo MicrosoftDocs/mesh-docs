@@ -131,8 +131,3 @@ A Log Analytics workspace is required for this setup. If you don't have an exist
 
 1. [Collect](#how-to-collect-logs) all the logs available.
 1. Follow [feedback](../../../Resources/feedback.md) guidance.
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [visual scripting](visual-scripting.md)

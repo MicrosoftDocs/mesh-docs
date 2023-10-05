@@ -52,7 +52,7 @@ The power of Mesh really becomes clear when you customize your event by adding a
 To learn how to customize your event in the Mesh app, see [Customize your event](customize-event.md).
 
 > [!div class="nextstepaction"]
-> [Customize your event](customize-event-mesh-portal.md)
+> [Customize your event](customize-event.md)
 
 ## Produce your event
 

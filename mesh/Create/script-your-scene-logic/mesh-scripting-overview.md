@@ -27,7 +27,7 @@ Mesh Visual Scripting makes it easy to build:
 
 ... and much more! 
 
-For an introduction to how Visual Scripting works with Mesh, we recommend our [Mesh 101 tutorial](../getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md). The tutorial takes you step-by-step through the process of building several interactive Mesh features using script graphs. The tutorial project also contains a completed tutorial scene that you can use as a starting point for your own custom Mesh experience. You can find the Mesh 101 tutorial in the Samples folder of the [Mesh Toolkit](../../Create/mesh-toolkit-overview.md).
+For an introduction to how Visual Scripting works with Mesh, we recommend our [Mesh 101 tutorial](../getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md). The tutorial takes you step-by-step through the process of building several interactive Mesh features using script graphs. The tutorial project also contains a completed tutorial scene that you can use as a starting point for your own custom Mesh experience.
 
 [Learn more about Mesh Visual Scripting](visual-scripting/visual-scripting-overview.md)
 

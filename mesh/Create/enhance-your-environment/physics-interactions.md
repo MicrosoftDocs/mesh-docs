@@ -227,7 +227,7 @@ Allows to accelerate/decelerate a rigid body until it reaches a specific target 
 
 ![Screen shot of the Directional Velocity Field script options in the Inspector.](../../media/physics-interactions/053-directional-velocity-field.png)
 
-This component controls both the magnitude and the direction of velocity. See [Velocity Magnitude](#velocity-magnitude) to control only magnitude and [Velocity Direction](#velocity-direction) to control only direction.
+This component controls both the magnitude and the direction of velocity. See [Velocity Magnitude Field](#velocity-magnitude-field) to control only magnitude and [Velocity Direction Field](#velocity-direction-field) to control only direction.
 
 This component has two modes of operation:
 
@@ -563,12 +563,6 @@ Some components, such as Sticky Body, have a **Body Filter** setting (usually na
 This setting makes only Game Objects that meet certain preconditions eligible to trigger events. There are four main preconditions&#8212;to view them, click the plus sign ("+") button to the right of **Body Filter:**
 
 ![___](../../media/physics-interactions/007-trigger-preconditions.png)
-
-Some components may have one or more [Shared Events](#shared-events) that trigger an Action. The same preconditions that are available through the **Body Filter** setting can be applied to an Action.
-
-![___](../../media/physics-interactions/049-use-body-precondition.png)
-
-![___](../../media/physics-interactions/050-body-precondition-options.png)
 
 To understand the first precondition, **Game Object Name**, let’s imagine that there’s a dart game in your scene and you have numerous dart Game Objects that are named Dart01, Dart02, Dart03, and so on. You want any dart, but *only* darts, to be eligible to trigger events, so you filter for any Game Object that starts with the four letters "Dart".
 

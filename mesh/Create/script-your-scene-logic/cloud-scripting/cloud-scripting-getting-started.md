@@ -184,7 +184,7 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
 1. Go to the **Troubleshooting** tab in **Settings** and toggle the **Show Mesh scripting error** button.
 
-   ![img](../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_002.png)
+   ![img](../../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_002.png)
 
 ## Next steps
 

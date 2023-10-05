@@ -69,7 +69,7 @@ With the transition to M365 and the Mesh Portal, events are handled slightly dif
 
 1. Choose an environment or select an event template that you may have created before. Select **Next** when finished.
 
-    [Learn more about Event templates](../../Use/events-guide/customize-event.md#event-templates)
+    [Learn more about event templates](../../events-guide/create-template.md)
 
 1. Add your Co-organizers (who will be able to edit the event) and your Attendees (who will be able to join the event) and select **Create event** when finished.
 
@@ -87,4 +87,4 @@ Now that you've set up Microsoft Mesh, dive in to organize your first Mesh event
 If you have skills using Unity, get started building your own custom environments:
 
    > [!div class="nextstepaction"]
-   > [Develop Mesh environments](../../Create/make-your-environment-available-for-events/development-overview.md)
+   > [Develop Mesh environments](../../Create/development-overview.md)

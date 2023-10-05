@@ -35,7 +35,7 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 **To update an existing project**:
 
 1. Ensure that your project targets the Universal Render Pipeline (URP).
-1. [Set up access to the Mesh Toolkit](../build-your-basic-environment/access-the-mesh-toolkit-package.md).
+1. [Add the Mesh Toolkit package](add-the-mesh-toolkit-package.md).
 
 ## General Tips
 
