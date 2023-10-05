@@ -107,4 +107,4 @@ See how to [build and publish your Environment](../../Create/design-and-develop/
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Getting started with Microsoft Mesh](../../user-guide/getting-started.md)
+   > [Join your event in the Mesh app](../../user-guide/getting-started.md)
