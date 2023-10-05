@@ -4,7 +4,7 @@ description: Microsoft Mesh overview.
 ms.prod: mixed-reality
 author: qianw211
 ms.author: qianwen
-ms.date: 5/23/2023
+ms.date: 10/5/2023
 ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -76,6 +76,11 @@ Then, dive in to organize your first Mesh event:
 
 > [!div class="nextstepaction"]
 > [Organize Mesh events](events-guide/events-overview.md)
+
+Experience Mesh by joining a Mesh event:
+
+> [!div class="nextstepaction"]
+> [Join a Mesh event](user-guide/join-an-event.md)
 
 If you have skills using Unity, get started building your own custom environments:
 
