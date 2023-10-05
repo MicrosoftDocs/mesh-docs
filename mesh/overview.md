@@ -58,7 +58,6 @@ Use a no-code editor to easily customize the event or the Mesh toolkit to levera
 > [!div class="nextstepaction"]
 > [Overview of Mesh events](events-guide/events-overview.md)
 
-
 ## Next steps
 
    > [!div class="nextstepaction"]

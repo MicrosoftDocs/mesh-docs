@@ -47,6 +47,78 @@ For Microsoft Mesh, you will need the following:
 
 Learn more about [Teams for enterprise](https://www.microsoft.com/en-us/microsoft-teams/enterprise#pricing).
 
+### Ensure endpoints can be allowed for the Mesh app
+
+To ensure Mesh works properly, allow the following endpoints.
+
+All endpoints need to allow traffic on TCP ports 80 and 443:
+
+- \*.officeapps.live.com
+
+- \*.microsoft.com
+
+- \*.meshxp.net
+
+- \*.office365.com
+
+- \*.office.com
+
+- \*.office.net
+
+- \*.servicebus.windows.net
+
+### Firewall Ports for the Mesh app
+
+In addition to the endpoints listed above, Mesh also requires the
+following outgoing ports to be opened in your firewall:
+
+- TCP ports 80, 443, 8089, and 8989
+
+- TCP & UDP ports 30,000-31,000
+
+- UDP ports 3478-3481
+
+Mesh traffic will use IP addresses in the AzureCloud service tag.
+
+For more information about service tags, see the Azure service tags
+overview.
+
+### Ensure endpoints can be allowed for the Mesh app
+
+To ensure Mesh works properly, allow the following endpoints.
+
+All endpoints need to allow traffic on TCP ports 80 and 443:
+
+- \*.officeapps.live.com
+
+- \*.microsoft.com
+
+- \*.meshxp.net
+
+- \*.office365.com
+
+- \*.office.com
+
+- \*.office.net
+
+- \*.servicebus.windows.net
+
+### Firewall Ports for the Mesh app
+
+In addition to the endpoints listed above, Mesh also requires the
+following outgoing ports to be opened in your firewall:
+
+- TCP ports 80, 443, 8089, and 8989
+
+- TCP & UDP ports 30,000-31,000
+
+- UDP ports 3478-3481
+
+Mesh traffic will use IP addresses in the AzureCloud service tag.
+
+For more information about service tags, see the Azure service tags
+overview.
+
 ## Configure Mesh in M365 Apps Admin Center
 
 1. Sign into [M365 Apps Admin Center](https://config.office.com/officeSettings/) with your Azure Active Directory account with admin privileges for the Microsoft 365 Admin Center.

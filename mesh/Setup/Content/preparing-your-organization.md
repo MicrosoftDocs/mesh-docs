@@ -81,11 +81,11 @@ your production tenant for Mesh Public Preview. While you can create other tenan
 for testing, people who use Teams throughout the day are highly unlikely
 to want to log out of their main Teams account to log into a different
 account in a different Entra. A separate tenant is more practical for
-the Mesh app, where it's simpler to flip between accounts. 
+the Mesh app, where it's simpler to flip between accounts.
 
 Each tenant can have multiple Azure Storage subscriptions, but the Azure
 Storage subscription used for Mesh scripting must be in the same Entra as
-the users who will attend events and the developers who will upload and manage the scripts. 
+the users who will attend events and the developers who will upload and manage the scripts.
 
 ### Contact Owners of Supporting Teams
 
@@ -116,7 +116,7 @@ components installed automatically, you must set the Teams Apps setup
 policies too. Coordinate with whoever owns Teams app management to plan
 for appropriate policies. For more information about Teams access
 control, see
-<https://admin.microsoft.com/Adminportal/Home#/rbac/directory>. 
+<https://admin.microsoft.com/Adminportal/Home#/rbac/directory>.
 
 #### Teams Feedback Policies
 
@@ -128,11 +128,12 @@ to send feedback about Mesh features built into Teams. We strongly
 encourage your org to permit this feedback for Mesh users but consult
 your company policies before making any changes. For more information
 about managing feedback, see
-<https://learn.microsoft.com/en-us/microsoftteams/manage-feedback-policies-in-teams>.
 
-## Office Apps Admin 
+[Manage feedback policies in Teams](/microsoftteams/manage-feedback-policies-in-teams)
 
-You must have a policy set in Office Cloud Policy Service to permit user to access any form of Mesh. Also, OCPS 
+## Office Apps Admin
+
+You must have a policy set in Office Cloud Policy Service to permit user to access any form of Mesh. Also, OCPS
 lets you enforce policy settings
 for whether users can send feedback about Microsoft 365 apps for
 enterprise; this is a separate setting from the Teams feedback policies
@@ -160,8 +161,8 @@ changes.
 - Allow users to include log files and content samples when feedback
     is submitted to Microsoft
 
-For more information about managing feedback, see
-<https://learn.microsoft.com/en-us/deployoffice/admincenter/overview-cloud-policy#steps-for-creating-a-policy-configuration>.
+For more information about managing feedback, see:
+[Steps for create a policy configuration](/deployoffice/admincenter/overview-cloud-policy)
 
 ## Endpoint Managers
 
@@ -169,10 +170,12 @@ Make sure you know your organization's process for deploying apps. The Mesh app 
 (mobile device management) solution like Microsoft Intune to deploy the
 app and make it show up in the users' Company Portal. If you block
 access to the Microsoft Store, you can use WinGet instead. For more information about deploying apps with
-Microsoft Intune, see
-<https://learn.microsoft.com/en-us/mem/intune/apps/store-apps-windows>
+Microsoft Intune, see:
+
+[https://learn.microsoft.com/en-us/mem/intune/apps/store-apps-windows](/mem/intune/apps/store-apps-windows)
 
 ## Azure Administrators
+
 (needs content)
 
 ## Work with Your Security Organization
@@ -198,6 +201,11 @@ All endpoints need to allow traffic on TCP ports 80 and 443:
 - \*.office.net
 
 - js.monitor.azure.com
+
+Follow this link to learn more about how to Set up avatars for Microsoft
+Teams.
+
+[Set up immersive spaces in Microsoft Teams](/microsoftteams/meeting-immersive-spaces)
 
 ### Firewall Ports for Mesh immersive spaces
 
@@ -283,8 +291,9 @@ company using Mesh in pre-release will have to work with their security
 and endpoint management teams to decide if a policy can be constructed
 that is acceptable to the company's risk profile while still permitting
 access to Quest devices. For more information about Conditional Access,
-see
-<https://learn.microsoft.com/en-us/mem/intune/protect/conditional-access-intune-common-ways-use>.
+see:
+
+[https://learn.microsoft.com/en-us/mem/intune/protect/conditional-access-intune-common-ways-use](/mem/intune/protect/conditional-access-intune-common-ways-use)
 
 ## Work with Stakeholders That Communicate Change
 
