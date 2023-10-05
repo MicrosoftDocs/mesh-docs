@@ -25,7 +25,7 @@ The tutorial project is named *Mesh101.Unity* and is included in the
 Mesh Toolkit.
 
 > [!IMPORTANT]
-> The tutorial project is governed by the MIT license as shown in the [LICENSE.txt](https://github.com/microsoft/Mesh-Toolkit-Unity/blob/main/LICENSE.txt) file in the *Mesh-Toolkit-Unity* repository. However, the samples functionality is dependent on the Mesh Toolkit, which is governed by a separate license, and contains 3rd party software. A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../Setup/Content/setup-m365-mesh.md).
+> The tutorial project is governed by the MIT license as shown in the [LICENSE.txt](https://github.com/microsoft/Mesh-Toolkit-Unity/blob/main/LICENSE.txt) file in the *Mesh-Toolkit-Unity* repository. However, the samples functionality is dependent on the Mesh Toolkit, which is governed by a separate license, and contains 3rd party software. A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../../Setup/Content/setup-m365-mesh.md).
 
 The tutorial is structured as follows:
 
@@ -57,7 +57,7 @@ In Mesh terms, the project you create in Unity and then upload to the Mesh Porta
 
 ### Previous Unity experience
 
-This tutorial assumes that you have the intermediate to advanced Unity skills needed to creative an Environment. If you don't, you can still [create, customize and produce](../../../Use/events-guide/create-event-mesh-portal.md) Mesh events using existing Environments.
+This tutorial assumes that you have the intermediate to advanced Unity skills needed to creative an Environment. If you don't, you can still [create, customize and produce](../../../../Use/events-guide/create-event-mesh-portal.md) Mesh events using existing Environments.
 
 ### Hardware requirements
 

@@ -17,9 +17,9 @@ This article will help you configure your development environment and start iter
 - Advanced Unity skills.
 - A username and password for the Azure Portal so you can upload your work.
 - Your account must be added to the Mesh world you’re trying to publish to. If you’re unsure about this, check with your IT admin.
-- There must be an existing Mesh World in the Azure Portal that you can upload your work to. To learn more about setting this up, see how to [create a world](../../../Setup/Content/setup-mesh-portal.md).
-- There must be an existing Unity project that was created, or you must [create a new Unity project](../../build-your-basic-environment/create-a-new-project-or-update.md). You'll need to [access the Mesh Toolkit package](../../build-your-basic-environment/access-the-mesh-toolkit-package.md); it contains the package you need for Mesh Cloud Scripting, which is named *mesh.meshapps.unityruntime*.
-- You should be at least somewhat familiar with event management. To learn more about this, see how to [create an event in the Mesh portal](../../../events-guide/create-event-mesh-portal.md)
+- There must be an existing Mesh World in the Azure Portal that you can upload your work to. To learn more about setting this up, see how to [create a world](../../../../Setup/Content/setup-mesh-portal.md).
+- There must be an existing Unity project that was created, or you must [create a new Unity project](../../../build-your-basic-environment/create-a-new-project-or-update.md). You'll need to [access the Mesh Toolkit package](../../../build-your-basic-environment/access-the-mesh-toolkit-package.md); it contains the package you need for Mesh Cloud Scripting, which is named *mesh.meshapps.unityruntime*.
+- You should be at least somewhat familiar with event management. To learn more about this, see how to [create an event in the Mesh portal](../../../../events-guide/create-event-mesh-portal.md)
 
 ## Software dependencies
 
@@ -149,7 +149,7 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
    ![img](../../../media/mesh-scripting/getting-started/UploaderUpdateUIProjectSettings.png)
 
-1. In the **Mesh Environments** window, on the **Update Environment** tab, select **Build & Publish**. To learn more about the Mesh Environments window, see how to [build and publish your Environment](../make-your-environment-available-for-events/build-and-publish-your-environment.md)
+1. In the **Mesh Environments** window, on the **Update Environment** tab, select **Build & Publish**. To learn more about the Mesh Environments window, see how to [build and publish your Environment](../../../make-your-environment-available-for-events/build-and-publish-your-environment.md)
 
    ![img](../../../media/mesh-scripting/getting-started/001-update-environment-tab.png)
 
@@ -181,7 +181,7 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
 ### Create an event and join it from the Mesh app
 
-1. Create an event using the Environment **MyFirstMeshApp**. If you need guidance, see how to [create an event in the Mesh portal](../../events-guide/create-event-mesh-portal.md).
+1. Create an event using the Environment **MyFirstMeshApp**. If you need guidance, see how to [create an event in the Mesh portal](../../../events-guide/create-event-mesh-portal.md).
 1. Join the event in the Mesh app.
 
 ### Show MeshApps errors in the Mesh app (optional)
