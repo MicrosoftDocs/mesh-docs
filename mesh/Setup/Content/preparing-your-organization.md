@@ -197,6 +197,8 @@ All endpoints need to allow traffic on TCP ports 80 and 443:
 
 - \*.office.net
 
+To learn more, see how to [Set up immersive spaces in Teams](aka.ms/immersivespacesitdocs).
+
 ### Firewall Ports for Mesh immersive spaces
 
 In addition to the endpoints above, Mesh also requires the following
@@ -211,6 +213,8 @@ outgoing ports to be opened in your firewall:
 Mesh traffic will use IP addresses in the AzureCloud service tag.
 
 For more information about service tags, see the [Azure service tags overview | Microsoft Learn](/azure/virtual-network/service-tags-overview).
+
+To learn more, see how to [Set up immersive spaces in Teams](aka.ms/immersivespacesitdocs).
 
 ### Ensure endpoints can be allowed for Mesh avatars for Teams
 
