@@ -2,7 +2,7 @@
 title: Download the Mesh Toolkit
 description: Step-by-step instructions for downloading the Mesh Toolkit.
 author: typride
-ms.author: vtieto
+ms.author: vinnietieto
 ms.date: 8/24/2023
 ms.topic: overview
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features, prerequisites, toolkit
