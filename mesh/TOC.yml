@@ -7,4 +7,8 @@
 - name: Create for Mesh
   href: Create/toc.yml
 - name: Release notes
-  href: avatars-release-notes.md
+  items:
+  - name: What's new
+    href: avatars-release-notes.md
+  - name: Known issues
+    href: avatars-known-issues.md
