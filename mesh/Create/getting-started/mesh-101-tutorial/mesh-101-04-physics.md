@@ -1,17 +1,17 @@
 ---
 title: Mesh 101 Move objects and trigger animations
-description: Learn how to move objects and trigger animations with Mesh Physics.
+description: Learn how to move objects and trigger animations with Mesh Interactables and Physics.
 author: typride
 ms.author: vinnietieto
 ms.date: 9/28/2023
 ms.topic: Tutorial
-keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, physics
+keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, physics, interactables
 ---
 
-# Mesh 101 Tutorial Chapter 4: Move objects and trigger animations with Mesh Physics
+# Mesh 101 Tutorial Chapter 4: Move objects and trigger animations with Mesh Interactables and Physics
 
 In this chapter, you'll work with a model of the wind farm. You'll learn
-how to use Mesh Physics to grab and release Rigid Bodies (in this case,
+how to use Mesh Interactables and Physics to grab and release Rigid Bodies (in this case,
 wind turbines) and set up an animation trigger using Visual Scripting. You'll wrap things up by
 constraining the wind turbines so they can only be moved within a
 specified area.
@@ -27,7 +27,7 @@ There are a couple of things we need to do before getting started with the first
 - In the **Hierarchy**, collapse the **Chapter3** GameObject and then
     expand the **Chapter4** GameObject.
 
-![A screenshot of a computer Description ](../../../media/sample-mesh-101/image061.jpg)
+![A screenshot of a computer Description ](../../../media/sample-mesh-101/494-chapter-4-expanded.png)
 
 ## Change the view to display the Chapter 4 Sphere Terrace
 
@@ -65,15 +65,15 @@ generate power.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image065.jpg)
 
-Let's add "grab and release" capabilities to **WindTurbine1** so that participants will be able to move it around in Mesh.
+    Let's add "grab and release" capabilities to **WindTurbine1** so that participants will be able to move it around in Mesh.
 
 1. In the **Hierarchy**, select **WindTurbine1**.
-1. In the **Inspector**, click the **Add Component** button and then search for and add **Mesh Interactable Properties**.
+1. In the **Inspector**, click the **Add Component** button and then search for and add **Mesh Interactable Setup**.
 
-    ![A screenshot](../../../media/sample-mesh-101/320-interactable-properties.png)
+    ![A screenshot](../../../media/sample-mesh-101/320-interactable-setup.png)
 
-> [!TIP]
-> An explanation of this component was given in [Chapter 3](mesh-101-03-visual-scripting.md) of this tutorial.
+    > [!TIP]
+    > An explanation of this component was given in [Chapter 3](mesh-101-03-visual-scripting.md) of this tutorial.
 
 1. In the same component, select **Manipulable**.
 1. Ensure that the component is active.
@@ -157,17 +157,17 @@ The graph is *almost* set up how we want it, but there's one remaining issue. Th
 
 1. In the **Hierarchy**, expand **WindTurbine1** and then expand its child object named **WindTurbineBody**. This reveals the child object named **Windmill_Turbine_001:Propellors10**.
 
-![A screenshot](../../../media/sample-mesh-101/475-expand-windturbine1.png)
+    ![A screenshot](../../../media/sample-mesh-101/475-expand-windturbine1.png)
 
 1. Select **Windmill_Turbine_001:Propellors10**, and then, in the **Inspector**, note that it contains an **Animator** component with the Animator **Controller** named **WindmillPropellors**.
 
-![A screenshot](../../../media/sample-mesh-101/476-animator.png)
+    ![A screenshot](../../../media/sample-mesh-101/476-animator.png)
 
-This **Animator** is what will provide our animation.
+    This **Animator** is what will provide our animation.
 
 1. Drag the **Windmill_Turbine_001:Propellors10** GameObject from the **Hierarchy** and then, in the script graph, drop it in the first field in the *Animator: Set Trigger* node located in the *first* group.
 
-![A screenshot](../../../media/sample-mesh-101/477-drag-anim-to-trigger-node.png)
+    ![A screenshot](../../../media/sample-mesh-101/477-drag-anim-to-trigger-node.png)
 
 1. Drag the **Windmill_Turbine_001:Propellors10** GameObject from the **Hierarchy** again and then, in the script graph, drop it in the first field in the  *Animator: Set Trigger* node located in the *second* group. 
 
@@ -222,7 +222,7 @@ will be restricted to the inside of the box.
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image086.jpg)
 
 1. In the **Starts With** box, type "WindTurbine." Since all three wind
-    turbines in our scene start with "WindTurbine," they'll all be
+    turbines in our scene start with "WindTurbine" they'll all be
     restricted to the Containment Field.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image087.png)

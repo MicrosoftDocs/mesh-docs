@@ -5,33 +5,24 @@ author: typride
 ms.author: vinnietieto
 ms.date: 9/25/2023
 ms.topic: Tutorial
-keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Azure Portal, uploader, uploading
+keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Mesh Portal, uploader, uploading
 ---
 
 # Mesh 101 Tutorial Chapter 5: Make your Environment available for Events
 
 You've completed adding all the features you need for your Mesh
-experience using Mesh Physics and Scripting. So far, we've been working
+experience using Mesh Interactables, Physics and Scripting. So far, we've been working
 in a Unity *project*; now you'll turn the *StartingPoint* scene into a
-Mesh *Environment* and upload it to a World in  the Mesh Portal. At that point, it will be available for the creation of *Events*.
+Mesh *environment* and upload it to a Mesh *world* in the Mesh Portal. At that point, this version of your environment is ready for you to test, as you prepare to schedule an *event*.
 
-## Configure your project settings and sign in
+> [!IMPORTANT]
+> A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../../Setup/Content/setup-m365-mesh.md).
 
-1. On the menu bar, select **Mesh Toolkit** > **Configure** >
-    **Project Settings**.
-
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/001-project-settings.png)
-
-1. Select **Yes** to configure project settings for Mesh.
-
-    ![Graphical user interface, text, application Description automatically generated](../../../media/sample-mesh-101/image089.png)
+## Sign in
 
 1. On the menu bar, select **Mesh Toolkit** > **Environments**.
 1. In the **Mesh Environments** window, select **Sign In**.
-
-Sign in with your account. **Note**: As mentioned in the Prerequisites
-section, the account must have *Content Contributor* access to the Mesh
-World you're uploading the Environment to.
+1. Sign in with your account.
 
 ## Create your environment
 
@@ -74,11 +65,6 @@ Environments** window.
 > [!NOTE]
 > In the **Environment Configurations** section, a new Environment configuration has been created that displays the name you  added in the **Create Environment** tab: *Wind Turbine Tutorial*. If you see any other Environment configurations, close them.
 
-- Select **Include Thumbnails**. Leave the setting as **Generate
-    Thumbnails**.
-
-    ![](../../../media/sample-mesh-101/image094.jpg)
-
 ### Building for single and multiple platforms
 
 It's good to keep in mind that Mesh events can be experienced on two
@@ -86,17 +72,21 @@ different platforms: desktop PC and Android, which powers the Meta Quest
 headset. Since desktop PCs typically have far more power than mobile
 devices using Android, when you're creating your own project, there are
 several potential scenarios to consider: build and publish your scene
-for PC only, Android only, or both PC and Android. This tutorial follows
-option #3: build and publish for PC and Android. To learn more about
-building for single and multiple platforms, see our article titled [Build for single and multiple platforms](../../design-and-develop/build-your-basic-environment/build-for-single-and-multiple-platforms.md).
+for PC only, Android only, or both PC and Android. For this tutorial, we'll build for both PC and Android. To learn more about
+building for single and multiple platforms, see our article titled [Build for single and multiple platforms](../../build-your-basic-environment/build-for-single-and-multiple-platforms.md).
 
 ### Update your Environment
 
-- In the **Update Environment** tab, click the **Select a scene**
+1. In the **Update Environment** tab, click the **Select a scene**
     field, and then, in the **Select SceneAsset** dialog, select
     **StartingPoint**.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/456-select-scene.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/456-select-scene.png)
+
+1. Select **Include Thumbnails**. Leave the setting as **Generate
+    Thumbnails**.
+
+    ![](../../../media/sample-mesh-101/image094.jpg)
 
 In the **Build for Platforms** section, you choose which platforms to
 build for. Note that when a button background is gray, the button is
@@ -107,7 +97,7 @@ for both PC and Android, so make sure that both buttons are "on."
 
 ### Build and publish
 
-Select the **Build and Publish** button.
+Select the **Build & Publish** button.
 
 ![A screen shot of a computer Description ](../../../media/sample-mesh-101/041-build-and-publish.png)
 
@@ -120,24 +110,20 @@ Select the **Build and Publish** button.
 
 ## View your Environment in the Mesh Portal
 
-If you navigate to the **Environments** page for your World in the Mesh 
-Portal, you'll see that your Environment has been saved there. 
+If you navigate to the **Environments** page for your World in the [Mesh 
+Portal](https://portal.mesh.microsoft.com), you'll see that your Environment has been saved there. 
 
 ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/458-environment-in-mesh-portal.png)
 
-Your saved custom Environment will be available to anyone who creates a
-new event in that Mesh world.
-
-> [!NOTE]
-> For viewing Worlds in the Mesh Portal, refer to the [M365 Migration Guide](../../../Setup/Content/m365-migration-guide.md). 
+Your saved custom Environment is now ready for you to test in the Mesh app on your desktop PC or Quest headset, to be sure it will look and perform exactly as you expect!
 
 ## Summary
 
 In this chapter, you learned how to create an Environment based on your
-scene and then build it and publish it to your World in the Azure
+scene and then build it and publish it to your World in the Mesh 
 Portal.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Chapter 6: Create an Event and invite others](mesh-101-6-create-an-event-and-invite-others.md)
+> [Chapter 6: Test your environment within the Mesh app](mesh-101-06-test-your-environment.md)

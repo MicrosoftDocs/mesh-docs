@@ -11,58 +11,43 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 # Mesh Development Overview
 
-The Mesh experience that you create starts out in Unity as a new project or existing sample. You can add content to the project/sample *scene* and then upload it to a World in the Mesh Portal as an *Environment*. When an Event Producer creates a Mesh Event, they can choose to hold their Event in the custom Environment you created.
+Your custom Mesh immersive space starts out in Unity as a new project or existing sample. You can add content to the project/sample *scene* and then upload it to a world in the Mesh portal as an *environment*. When an organizer creates a Mesh event, they can then choose to hold their event in the custom environment you created.
 
-In the Mesh documentation, you'll find articles that introduce you to the packages available for Mesh, walk you through the Unity setup, and describe the samples provided by Microsoft that you can use as a starting point for your Environment.
-
-With Mesh, there are plenty of ways to add value, content, interactivity, and magic to custom experiences:
-
-* Use Unity to create new 3D environments or port existing ones into your space.
-* Use cloud scripting to add interactivity by inserting logic, integrating with live backend business data, connecting triggers to actions, infusing AI, and more – all with the full power of C# and .NET Core.
-* Enrich the user experience by adding interactive web content such as videos and webapps to your environment.
-* Use physics tools in Mesh to assign properties to objects in your space using gravity or buoyancy. Create a realistic experience or enable more fantastical interactions for games, challenges, and help participants unleash their endless creativity.
-* Diagnose potential issues and bring more polish to the experience with performance tools in Mesh.
+In this section, you'll find articles that introduce you to the features of Mesh toolkit, walk you through Unity setup, and describe the samples provided by Microsoft that you can use as a starting point for your environment.
 
 ## Develop in Unity with Mesh toolkit
 
 :::image type="content" source="../media/get-started-developing-mesh/Overview-developing-Mesh-Unity.png" alt-text="Development overview of Mesh in Unity":::
 
-The Mesh toolkit provides a collection of packages for Unity that enable you to develop rich interactive worlds that help immerse users in scenarios where technology can empower you to build a better remote and hybrid work environment.
+The Mesh toolkit for Unity provides a collection of features that enable you to develop rich interactive worlds that help immerse users in scenarios where technology can empower you to build a better remote and hybrid work environment.
 
 **The Mesh toolkit includes:**
 
-* Cloud Scripting, used to add business logic to Mesh events via cloud hosted .NET applications.
+* [Mesh graphics tools](design/overview.md), a collection of scripts, shaders, assets, and samples created to help improve the visual fidelity of Mesh worlds while staying within performance budgets.
 
-* Graphics Tools, a package with scripts, shaders, assets, and samples created to help improve the visual fidelity of Mesh worlds while staying within performance budgets.
+* [Mesh physics](enhance-your-environment/physics-interactions.md), used to create enabling and engaging dynamic content.
 
-* Mesh Physics, used to create enabling and engaging dynamic content.
+* [Mesh interactables](enhance-your-environment/avatar-and-object-interactions/interactables.md), allowing participants to grab, hold, throw, select, anchor, tether and spawn
 
-* The WebSlate prefab, to enable designers to add a panel that displays a given web page.
+* [Mesh controllables](enhance-your-environment/multi-room-sync.md), enabling event hosts to control and sync video and timeline playback across multiple rooms of a large event.
 
-* Mesh.Toolkit.Playmode package, offering the possibility to press Play in a Mesh content project get a preview of what the content will look like running in Mesh.
+* [Mesh web slates](enhance-your-environment/webcontent.md), enabling designers to add a panel that displays a given web page.
 
-* EventProduction scripts can be added to show hard-coded and online videos in an Event.
+* [Mesh visual scripting](script-your-scene-logic/visual-scripting/visual-scripting-overview.md), which lets you add interactivity and dynamic runtime behavior to your Mesh environments without writing code.
 
-* Mesh Toolkit Uploader: used to build Mesh-compatible asset bundles from your Unity content and upload them to your Mesh World.
+* [Mesh cloud scripting](script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md), which lets you connect to real-time backend data and call .NET APIs via cloud-hosted server scripts.
 
-* Content Performance Analyzer (CPA): automatically reports content optimization issues and opportunities before content is uploaded to the Mesh catalog.
+* [Mesh play mode](debug-and-optimize-performance/playmode.md), which lets you press Play in a Mesh content project to preview how your content will look like running in Mesh for multiple users.
 
-* Visual Scripting, which lets you add interactivity and dynamic runtime behavior to your Mesh environments without writing code. For more information, see our document titled "Mesh Visual Scripting Guide."
+* [Mesh uploader](make-your-environment-available-for-events/build-and-publish-your-environment.md), used to build Mesh-compatible asset bundles from your Unity content and upload them to your Mesh World.
 
-The Mesh toolkit is free to download, however a Teams Premium license is required for all users (including developers and technical 3D artists) to use Microsoft Mesh.
+* [Mesh Content Performance Analyzer](debug-and-optimize-performance/cpa.md) (CPA): automatically reports content optimization issues and opportunities before content is uploaded to the Mesh catalog.
 
-Build environments in Unity, upload to the Mesh portal, and experience them within the application. Within the Mesh application, bring your environment to life and lead participants through stage-managed events with rich host tooling for customization and event moments.
+The Mesh Toolkit is free to download; however a Teams Premium license is required for all users (including developers and technical 3D artists) to use Microsoft Mesh.
 
-The Mesh experience that you create starts out in Unity as a new project or existing sample. You can add content to the project/sample scene and then upload it to a World in the Mesh Portal as an Environment. When an Event Producer creates a Mesh Event, they can choose to hold their Event in the custom environment you created.
-
-See [Create a new project or update an existing one](build-your-basic-environment/create-a-new-project-or-update.md).
-
-In the Mesh documentation, you'll find articles that introduce you to the packages available for Mesh, walk you through the Unity setup, and describe the samples provided by Microsoft that you can use as a starting point for your Environment.
+Build environments in Unity and then upload to the the Mesh portal. Within the Mesh application, bring your environment to life and lead attendees through stage-managed events with rich host tooling for customization and event moments.
 
 ## Next steps
 
    > [!div class="nextstepaction"]
    > [Choose your journey](getting-started/choose-your-journey.md)
-
-   > [!div class="nextstepaction"]
-   > [Create a new project or update an existing one](build-your-basic-environment/create-a-new-project-or-update.md)

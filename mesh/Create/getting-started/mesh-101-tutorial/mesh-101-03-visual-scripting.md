@@ -18,29 +18,6 @@ Now that we've completed the setup phase, let's move on to making your GameObjec
 >
 > - Mesh Scripting isn't required for every Environment, but you'll need it for the features we'll be adding here: making a button interactive, triggering an informational text popup, and teleporting around the scene.
 
-## Choose the NavMesh layer
-
-For this project, we want our avatar to be able to walk around only on
-the floors inside the *Sphere Terrace* objects and the floor of a
-platform that's attached to one of the wind turbine generators. For
-these areas to be walkable, they must be on the *NavMesh* layer. Let's
-add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
-
-1. In the **Hierarchy**, expand the **Chapter 3** GameObject.
-
-1. Select the **Sphere Terrace** GameObject that's a child object to
-    the **Chapter3** GameObject.
-
-    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/402-sphere-terrace.png)
-
-1. In the **Inspector**, select the **Layer** drop-down and then choose
-    **NavMesh**.
-
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image025.png)
-
-You don't have to add the other walkable GameObjects to the NavMesh
-layer---we've already done it for you.
-
 ## Station 3.1: Create an Interactable Button
 
 For our first task, we want to create a button that will play a video
@@ -62,7 +39,7 @@ As you can see, there's already a video screen in place, but it needs a Play/Sto
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/404-chapter-3-expanded.png)
 
-1. Search for the **ButtonBase** prefab.
+1. In the **Project** window, search for the **ButtonBase** prefab. Make sure you choose **ALL** for the **Search** filter.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/032-buttonbase-v2.png)
 
@@ -74,7 +51,7 @@ As you can see, there's already a video screen in place, but it needs a Play/Sto
 
     Make sure the **Transform** > **Position** values for **ButtonBase** are 0, 0, 0.
 
-**ButtonBase** is placed in the scene a little lower than where we want it. Let's fix that.
+    **ButtonBase** is placed in the scene a little lower than where we want it. Let's fix that.
 
 1. Ensure that **ButtonBase** is selected in the **Hierarchy**.
 
@@ -113,14 +90,14 @@ Right now, the text on the button says "Label." Let's change that to
 1. In the **Hierarchy**, ensure that **PlayVideoButton** is selected.
 1. In the **Inspector**, click **Add Component**, and then select **Script Machine**.
 
-Note that two new components have been added in the **Inspector**: **Script Machine** and **Variables.** There's also a new window named *Mesh Visual Scripting Diagnostics* at the bottom of the **Inspector**. This window will give you feedback on your visual script and can be useful for troubleshooting.
+    Note that two new components have been added in the **Inspector**: **Script Machine** and **Variables.** There's also a new window named *Mesh Visual Scripting Diagnostics* at the bottom of the **Inspector**. This window will give you feedback on your visual script and can be useful for troubleshooting.
 
-![A screenshot of a video play Description ](../../../media/sample-mesh-101/201-script-machine-v2.png)
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/201-script-machine-v2.png)
 
-1. Note that in the **Script Machine** component, the **Source** is set to **Graph**. You have two choices for **Source**: *Graph* and *Embed*. Click **Source** and then select **Embed**.
+1. Note that in the **Script Machine** component, the **Source** option is set to **Graph**. You have two choices for **Source**: *Graph* and *Embed*. Click **Source** and then select **Embed**.
 
     > [!TIP]
-    > *Graph* and *Embed* each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine artice](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We're choosing to use *Embed* here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
+    > *Graph* and *Embed* each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine article](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We're choosing to use *Embed* here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
 
 1. In the **Script Machine** component, enter a name in the *Title* field for the graph: "Video Player Behavior."
 1. Enter a description in the *Summary* field for the graph: "Video player behavior definition."
@@ -133,7 +110,7 @@ Note that two new components have been added in the **Inspector**: **Script Mach
 
     As we add nodes, you may want more space in the window; you can click the three-dot button and then select **Maximize** to achieve this, or click the **Full Screen** button in the upper right corner of the window.
 
-1. We don't need the **OnStart** and **OnUpdate** nodes; delete them.
+1. We don't need the default **OnStart** and **OnUpdate** nodes; delete them.
 
 ### Detect if the button is clicked
 
@@ -158,11 +135,13 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 
 > [!TIP] You may want to take a moment here to examine some of the components for the **Button** GameObject:
 >
-> *Mesh Interactable Properties*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named [*Mesh Object and Avatar Interactions*](../../design-and-develop/enhance-your-environment/object-avatar-interactions.md).
+> *Mesh Interactable Setup*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named [*Grab, hold and throw with Interactables*](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
+>
+>   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/478-mesh-interactable-setup.png)
 >
 > *Script Machine*: This has a script graph named *Button Base Behaviour.*
 >
->   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/208-playvideobutton-components-v2.png)
+>   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/479-script-machine-button-base.png)
 >
 > If you go into Play mode, you'll see that a new component named **Mesh Interactable Body** is added to **Button**.
 >
@@ -170,7 +149,11 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 >
 > This component is added automatically at runtime to interactable bodies; it exposes various properties to Visual Scripting such as *IsHovered* and *IsSelected*, which will come in handy in a moment.
 >
-> You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Playmode tint has been changed to blue. This can help you to tell at a glance which mode you're in.
+> You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Play mode tint has been changed to blue. This can help you to tell at a glance which mode you're in. To change the Play mode tint:
+>
+>1. On the menu bar, select **Edit** > **Preferences**.
+>1. In the left-side menu, select **Colors**.
+>1. Under **General**, click the **Playmode tint** color box and then select the color you want.
 
 In the script graph, let's add a node that lets us know when the button is selected.
 1. Make sure you're viewing the embedded script graph that's attached to the **PlayVideoButton** GameObject.
@@ -208,11 +191,11 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/454-isplaying-var.png)
 
-1. Drag a connector from the **True** output control port of the "If" node and then create a new *Set Object Variable* node. (In the Fuzzy Finder, search for "if."). 
+1. Drag a connector from the **True** output control port of the "If" node and then create a new *Set Object Variable* node. (In the Fuzzy Finder, search for "set object."). 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/417-set-object-variable-node.png)
 
-1. In the **Set Object Variable" node, click the variable name drop-down and then select "isPlaying."
+1. In the **Set Object Variable** node, click the variable name drop-down and then select "isPlaying."
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/418-set-var-is-playing.png)
 
@@ -222,7 +205,7 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/419-add-negate-node.png)
 
-1. Drag a connector from the data input port of the "Negate" node and create a new *Get Object Variable* node. (In the Fuzzy Finder, search for "get object variable".)
+1. Drag a connector from the data input port of the "Negate" node and then create a new *Get Object Variable* node. (In the Fuzzy Finder, search for "get object variable".)
 1. In the **Set Object Variable" node, click the variable name drop-down and then select "isPlaying."
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/420-get-object-is-playing.png)
@@ -241,7 +224,7 @@ Now we'll add the nodes that detect if *isPlaying* changes and plays or stops th
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/422-on-state-changed-second.png)
 
-1. Drag a connector from the control output port of the "On State Changed" node and then create a new *if* node. (In the Fuzzy Finder, search for "if".)
+1. Drag a connector from the control output port of the "On State Changed" node and then create a new *If* node. (In the Fuzzy Finder, search for "if".)
 1. Drag a connector from the data output port of the "On State Changed" node and then connect it to the data input port of the *if* node.
 
     ![A screenshot of a video play Description](../../../media/sample-mesh-101/423-if-node.png)
@@ -357,7 +340,7 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
 1. In the **Hierarchy**, select **InfoButtonWrapper**.
 
-    ![A screen shot of 3.2 - Info_Dialog GameObject Hierarchy with Information_Button selected](../../../media/sample-mesh-101/433-info-buttton-wrapper.png)
+    ![A screen shot of 3.2 - Info_Dialog GameObject Hierarchy with Information_Button selected](../../../media/sample-mesh-101/480-wrapper.png)
 
     In the **Inspector**, note that **InfoButtonWrapper** has the **Local Script Scope* component attached and that its "Share visual script variables on this Game Object" option isn't selected. 
     
@@ -369,8 +352,7 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
     ![A screen shot of the Information_Button's Inspector](../../../media/sample-mesh-101/436-edit-graph-button.png)
 
-1. In the graph, connect the "True" output control port of the "If" node to the input control port of a new "Microsoft Mesh: Show Dialog" node that you create.
-1. Drag a connector from the "True" output control port of the "If" node and then create a new "Microsoft Mesh: Show Dialog" node . (In the Fuzzy Finder, search for "show dialog".)
+1. In the graph, drag a connector from the "True" output control port of the "If" node and then create a new "Microsoft Mesh: Show Dialog" node . (In the Fuzzy Finder, search for "show dialog".)
 
     ![A screen shot showing the if node connect to the new Show Dialog node.](../../../media/sample-mesh-101/303-show-dialog.png)
 
@@ -395,6 +377,9 @@ For this feature, we'll enhance an existing visual script that causes an info di
 1. Walk towards the button. At a certain point, the button stops rotating, signaling that you can now select it.
 
 1. Select the button. The info dialog appears and displays the message you added to the **Show Dialog** node earlier.
+
+    > [!NOTE]
+    > The appearance of the info dialog in Play mode is different than how it will appear in Mesh, where it will appear much like the other panels in the Sphere Terrace.
 
 1. When you're finished with the info dialog, click its **Continue** button. Note that after you click the button, it disappears. To use the button again, you must exit and then re-enter Play mode.
 
@@ -422,8 +407,8 @@ examine the generator.
 
     ![A screen shot](../../../media/sample-mesh-101/438-teleport.png)
 
-The button is all set up for you---we just need to add the nodes in the script graph that
-give it the teleport behavior.
+    The button is all set up for you---we just need to add the nodes in the script graph that
+    give it the teleport behavior.
 
 1. In the **Hierarchy**, expand the **ChapterLabel** GameObject and then select the **TeleportToWindTurbineButton** GameObject.
 
@@ -445,7 +430,7 @@ In the **Teleport Button Behavior** group, the logic is similar to what you saw 
 
 ### Create a Travel Point and add a reference to it
 
-So what's a "Travel Point", you might be asking ... ? Basically, it's a component that you can use to define a point in space to spawn or teleport to. Normally, you would first create a *Travel Group*, and then add one or more Travel Points to it. We've already created the Travel Group for you in this project, so in the steps below, we'll add a Travel Point to that group. We'll then use that Travel point as the location the avatar will go to when they click the "Teleport" button. To learn more, see our article named [*Mesh Object and Avatar Interactions*](../../design-and-develop/enhance-your-environment/object-avatar-interactions.md).
+So what's a "Travel Point", you might be asking ... ? Basically, it's a component that you can use to define a point in space to spawn or teleport to. Normally, you would first create a *Travel Group*, and then add one or more Travel Points to it. We've already created the Travel Group for you in this project, so in the steps below, we'll add a Travel Point to that group. We'll then use that Travel point as the location the avatar will go to when they click the "Teleport" button. To learn more, see our article named [*Create avatar spawn and teleport points*](../../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md).
 
 1. In the **Hierarchy**, create a new empty GameObject as a child object to **TravelGroup** and then rename it "TeleportLocationWindTurbine".
 
@@ -497,7 +482,7 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
 
     ![A screen shot](../../../media/sample-mesh-101/444-select-travel-point.png)
 
-There's just one thing left to do in this graph. Note that the "Set Object Variable" node contains an object variable named *TeleportNow*. After the teleport happens, we want this variable to be set to false. So far, *TeleportNow* has only been used in the part of the graph that was already set up for you so we haven't talked about it. Let's take a look at how it works in the scen so you can understand what's happening.
+There's just one thing left to do in this graph. Note that the "Set Object Variable" node contains an object variable named *TeleportNow*. After the teleport happens, we want this variable to be set to false. So far, *TeleportNow* has only been used in the part of the graph that was already set up for you so we haven't talked about it. Let's take a look at how it works in the scene so you can understand what's happening.
 
 The *TeleportNow* object variable is type *Boolean* and has a default value of False.
 
@@ -574,4 +559,4 @@ your experience to do the following:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Chapter 4: Move objects and trigger animations with Mesh Physics](mesh-101-04-physics)
+> [Chapter 4: Move objects and trigger animations with Mesh Physics](mesh-101-04-physics.md)

@@ -9,15 +9,20 @@ ms.topic: How to
 keywords: Microsoft Mesh, Unity, getting started, documentation
 ---
 
-## Set up your scene
+# Set up your scene
 
-## Add a Navmesh
+The operations below are required for new or existing projects.
 
-<TBD>
+## Setting up teleportation
+
+In order for a scene to support teleportation, it must have a Navmesh layer. A teleportable surface (for example, a floor or the ground) doesn’t need a Navmesh, but it must meet the following conditions:
+
+--It must have some type of Collider attached (Mesh Collider or Box Collider, for example).
+--Its Layer must be set to Navmesh.
 
 ## Add a TravelPoint
 
-Every scene must have at least one TravelPoint, which is used to configure avatar spawning behavior. If you're new to TravelPoints, we recommend that you [read our TravelPoint and TravelGroup documentation](../enhance-your-environment/object-avatar-interactions.md#travelpoint-and-travelpointgroup) and follow the instructions there. When you're finished, continue on with the article named [Building for single and multiple platforms](build-for-single-and-multiple-platforms.md).
+Every scene must have at least one TravelPoint, which is used to configure avatar spawning behavior. If you're new to TravelPoints, we recommend that you [read our TravelPoint and TravelGroup documentation](../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md) and follow the instructions there. When you're finished, continue on with the article named [Building for single and multiple platforms](build-for-single-and-multiple-platforms.md).
 
 ## Add the Mesh Thumbnail Camera
 
@@ -49,7 +54,16 @@ reminder of what the Environment looks like.
 There are no set rules for how your thumbnail should look---it's totally
 up to you. The example below is taken from our [Mesh 101 tutorial](../../Create/getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md). The tutorial teaches you how to add Mesh features to an educational experience about wind turbines, so the thumbnail shows the turbines.
 
-![A screenshot of a computer Description automatically generated](../../../media/get-started-developing-mesh/001-thumbnail-example.png)
+![A screenshot of a computer Description automatically generated](../../media/get-started-developing-mesh/001-thumbnail-example.png)
+
+## Next Steps
+
+To enhance your project with features such as Web content, Mesh Physics, or Mesh Scripting, go to:
 
 > [!div class="nextstepaction"]
 > [Enhanced features overview](../enhance-your-environment/enhanced-features-overview.md)
+
+If you're interested in some of the more artistic elements of experience creation such as modeling, texture, and lighting, go to:
+
+> [!div class="nextstepaction"]
+> [Design overview](../design/overview.md)

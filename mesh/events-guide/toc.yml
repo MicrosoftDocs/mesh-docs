@@ -5,5 +5,7 @@ items:
     href: create-event-mesh-portal.md
   - name: Customize event
     href: customize-event.md
+  - name: Create event template
+    href: create-template.md
   - name: Produce event
     href: produce-event.md

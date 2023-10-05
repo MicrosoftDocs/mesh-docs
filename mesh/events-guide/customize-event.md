@@ -15,13 +15,19 @@ Now that you've created an event, it's time customize it in the [Microsoft Mesh 
 At a high level, there are three major steps to customize your event or template:
 
 1. **Add content** using the **Environment Editor** (or playable content uploaded from Unity to a custom environment).
-    :::image type="content" source="../media/mesh-event-producer-guide/environment-editor-open-artifacts - Made with Clipchamp.gif" alt-text="Open environment editor and add artifact":::
-1. **Edit content** controls.
-    :::image type="content" source="../media/mesh-event-producer-guide/environment-editor-add-artifacts.gif" alt-text="Add artifacts and update url":::
 
-1. **Configure** content with the **Control Panel** for your live event.
+    :::image type="content" source="../Resources/media/environment-editor.png" alt-text="Add content with environment editor":::
+
+1. Select the artifact to edit its properties.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/customize-image-artifact.png" alt-text="Image artifact adjustment":::
+
+1. **Configure** content with the **Control Panel** for your live event. Ensure that you've added artifacts to the control panel to be used in the production of your event.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Control-panel-button.png" alt-text="Control panel button":::
 
 1. **Save changes** in the **Event Customization** window.
+
     :::image type="content" source="../media/mesh-event-producer-guide/Event-customization-save-changes.png" alt-text="Save changse in event customization":::
 
 ## Considerations before starting your event
@@ -52,8 +58,6 @@ Currently, the three artifacts that you can add to your event are **Video**, **S
 Use the environment editor to add content to your environment that can be controlled during your run-of-show.
 
 1. Open the Mesh app on your computer or use the link in the calendar invite.
-
-    :::image type="content" source="../media/mesh-event-producer-guide/Join-event-link-calendar.gif" alt-text="Join calendar invite Mesh":::
 
 1. Look for the event in the **Upcoming** category and select it.
 
