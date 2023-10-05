@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365
 # Mesh 101 Tutorial Chapter 5: Make your Environment available for Events
 
 You've completed adding all the features you need for your Mesh
-experience using Mesh Physics and Scripting. So far, we've been working
+experience using Mesh Interactables, Physics and Scripting. So far, we've been working
 in a Unity *project*; now you'll turn the *StartingPoint* scene into a
 Mesh *Environment* and upload it to a Mesh *World* in the Mesh Portal. At that point, it will be available for the creation of *Events*.
 
