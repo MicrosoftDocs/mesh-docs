@@ -87,13 +87,7 @@ This is a beautifully rendered scene that demonstrates the power of combining ap
 
 ### Mesh 101 Tutorial
 
-In the Mesh 101 tutorial (sample name: *Mesh101.Unity*), [Chapter 4](../getting-started/mesh-101-tutorial/mesh-101-04-physics.md) walks you step-by-step through the process of setting up three Mesh Physics features: grabbing and releasing objects, triggering an animation using a trigger volume, and constraining an object with a containment field. 
-
-### Other projects with Mesh Physics
-
-As you explore our other sample projects, you'll find various instances of Mesh Physics. For example, if you wander around in our *ScienceBuilding* project (scene: *ScienceBuilding*), you'll eventually encounter the **Mass & Buoyancy** exhibit which uses the **Buoyancy Field** and **Buoyancy Field Waves** components.
-
-![Screen shot of the Mass and Buoyancy exhibit which uses the Buoyancy Field and Buoyancy Field Waves components.](../../media/physics-interactions/008-buoyancy-field-waves.png)
+In the Mesh 101 tutorial (sample name: *Mesh101.Unity*), [Chapter 4](../getting-started/mesh-101-tutorial/mesh-101-04-physics.md) walks you step-by-step through the process of setting up three Mesh Physics features: grabbing and releasing objects, triggering an animation using a trigger volume, and constraining an object with a containment field.
 
 ## Terminology
 
