@@ -3,7 +3,7 @@ title: Mesh user controls
 description: What you can do when you have joined an event
 author: qianw211    
 ms.author: qianwen
-ms.date: 9/29/2023
+ms.date: 10/4/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
