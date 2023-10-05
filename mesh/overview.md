@@ -38,10 +38,7 @@ We are making building relationships easier by bringing the power of Mesh into t
 :::image type="content" source="media/welcome-to-mesh/04_ImmersiveSpaces_Splice.gif" alt-text="GIF of selecting view then immersive space in teams":::
 
 > [!div class="nextstepaction"]
-> [Set up immersive spaces in Microsoft Teams](/microsoftteams/meeting-immersive-spaces)
-
-> [!div class="nextstepaction"]
-> [Get started with immersive spaces in Microsoft Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams)
+> [Learn about immersive spaces in Teams](/microsoftteams/meeting-avatars)
 
 ## Create a custom immersive space with Microsoft Mesh
 
