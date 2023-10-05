@@ -60,7 +60,7 @@ Use the Mesh toolkit to leverage the power of Unity for fully customizable immer
 :::image type="content" source="media/get-started-developing-mesh/image040-unity-overview-hero.png#lightbox" alt-text="Overview image of Unity development environment for Mesh":::
 
 > [!div class="nextstepaction"]
-> [Learn about developing custom environments in Unity](Create/development-overview.md)
+> [Learn about developing custom environments in Unity](develop/development-overview.md)
 
 ## Next steps
 
@@ -77,4 +77,4 @@ Then, dive in to organize your first Mesh event:
 If you have skills using Unity, get started building your own custom environments:
 
 > [!div class="nextstepaction"]
-> [Develop Mesh environments](Create/development-overview.md)
+> [Develop Mesh environments](develop/development-overview.md)

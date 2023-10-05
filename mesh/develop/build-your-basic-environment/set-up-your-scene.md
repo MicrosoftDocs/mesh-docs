@@ -52,7 +52,7 @@ reminder of what the Environment looks like.
 > **Inspector** prior to uploading your Environment to Mesh.
 
 There are no set rules for how your thumbnail should look---it's totally
-up to you. The example below is taken from our [Mesh 101 tutorial](../../Create/getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md). The tutorial teaches you how to add Mesh features to an educational experience about wind turbines, so the thumbnail shows the turbines.
+up to you. The example below is taken from our [Mesh 101 tutorial](../../develop/getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md). The tutorial teaches you how to add Mesh features to an educational experience about wind turbines, so the thumbnail shows the turbines.
 
 ![A screenshot of a computer Description automatically generated](../../media/get-started-developing-mesh/001-thumbnail-example.png)
 

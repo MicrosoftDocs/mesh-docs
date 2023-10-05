@@ -186,7 +186,7 @@ with up to 200 people, split into 16 person rooms.
      ![A screenshot of a computer Description automatically
  generated](../media/mesh-event-producer-guide/image011.png)
 
-    See the [Choose your journey](../Create/Getting%20started/choose-your-journey.md) article
+    See the [Choose your journey](../develop/Getting%20started/choose-your-journey.md) article
  to learn how to create a custom environment.
 
 9. Review your event details. Click **Back** if you need to change
@@ -582,7 +582,7 @@ performance in real time.
 - For the playable content to be available, it must have been added to
     the original Unity project used to create the environment. If the
     environment contains no playable content, the **Select content**
-    window will be empty. Reference the [Choose your journey](../Create/Getting%20started/choose-your-journey.md)
+    window will be empty. Reference the [Choose your journey](../develop/Getting%20started/choose-your-journey.md)
     to get started with adding custom content.
 
 - For a VideoPlayer, the URL needs to be a publicly accessible

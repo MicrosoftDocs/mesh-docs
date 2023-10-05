@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, Unity, getting started, toolkit, Mesh Toolkit, package
 
 # Importing the Mesh Toolkit
 
-The [Mesh Toolkit](../../Create/development-overview.md#develop-in-unity-with-mesh-toolkit) is a Unity package which is distributed via [npmjs.org](https://www.npmjs.com/package/com.microsoft.mesh.toolkit).
+The [Mesh Toolkit](../../develop/development-overview.md#develop-in-unity-with-mesh-toolkit) is a Unity package which is distributed via [npmjs.org](https://www.npmjs.com/package/com.microsoft.mesh.toolkit).
 
 1. In the Package Manager settings add scope registry.
   ![Scope Registry Configuration](../../media/build-your-basic-environment/configure-scoped-registry.png)
