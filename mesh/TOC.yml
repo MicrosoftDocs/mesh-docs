@@ -1,7 +1,7 @@
 items:
-- name: Welcome to Mesh
+- name: Welcome to Microsoft Mesh
   href: Overview.md
-- name: Set up and Manage Mesh
+- name: Set up and manage Mesh
   href: Setup/toc.yml
 - name: Organize events
   href: events-guide/toc.yml
@@ -11,4 +11,3 @@ items:
   href: Create/toc.yml
 - name: Resources
   href: Resources/toc.yml
-

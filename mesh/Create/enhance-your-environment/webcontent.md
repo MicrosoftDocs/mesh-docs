@@ -2,7 +2,7 @@
 title: Display Web content
 description: Learn how to display Web content in Mesh Environments.
 author: typride
-ms.author: vinnietietof
+ms.author: vinnietieto
 ms.date: 10/3/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Web content, Web, webslate
@@ -140,7 +140,7 @@ Adding a WebSlate to your Environment should be a relatively straightforward pro
 
 ### Import the Mesh Toolkit Packages
 
-If you haven't already imported the [Mesh Toolkit](../build-your-basic-environment/import-the-mesh-toolkit-package.md), import it.
+If you haven't done so already, set up access to the [Mesh Toolkit](../build-your-basic-environment/access-the-mesh-toolkit-package.md).
 
 ### Add a WebSlate prefab to your Unity project
 

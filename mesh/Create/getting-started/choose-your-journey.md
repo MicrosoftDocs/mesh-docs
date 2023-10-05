@@ -34,9 +34,9 @@ It's easiest to start with a sample file to ensure all packages are configured i
 
 ## Update an existing project or create a new one
 
-You can make an existing Unity project Mesh-capable by [importing the Mesh Toolkit](../build-your-basic-environment/import-the-mesh-toolkit.md) or simply [create a new 3D URP (Core) project](../build-your-basic-environment/create-a-new-project-or-update.md) and then start building your Mesh experience from scratch. 
+You can make an existing Unity project Mesh-capable by [setting up access to the Mesh Toolkit](../build-your-basic-environment/access-the-mesh-toolkit.md) or simply [create a new 3D URP (Core) project](../build-your-basic-environment/create-a-new-project-or-update.md) and then start building your Mesh experience from scratch. 
 
 ## Next Steps
 
    > [!div class="nextstepaction"]
-   > [Create a new project](../build-your-basic-environment/create-a-new-project.md)
+   > [Create a new project](../build-your-basic-environment/create-a-new-project-or-update.md)
