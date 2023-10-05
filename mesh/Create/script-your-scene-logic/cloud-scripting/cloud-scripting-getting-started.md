@@ -12,9 +12,6 @@ keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 
 This article will help you configure your development environment and start iterating on your project. We’ll also cover how to upload your environment with Mesh Cloud Scripting Service to Azure, and prepare for testing. Finally, we’ll go over testing and troubleshooting. We recommend that you familiarize yourself with the current list of [known issues](../../../Resources/mesh-toolkit-known-issues.md#cloud-scripting) before starting development with Mesh Cloud Scripting.
 
-- There must be an existing Mesh World that contains a Space in the Azure Portal that you can upload your work to. To learn more about setting this up, see how to [create a world](../../Setup/Content/setup-mesh-portal.md#create-a-mesh-world).
-- There must be an existing Unity project that was created, or you must [create a new Unity project](../build-your-basic-environment/create-a-new-project.md). You will need to [download the *Mesh Toolkit*](../getting-started/download-the-mesh-toolkit.md) which contains the Unity package you need for Mesh Cloud Scripting. This package is named *mesh.meshapps.unityruntime*.
-- You should be at least somewhat familiar with event management. To learn more about this, see how to [create an event in the Mesh portal](../../../events-guide/create-event-mesh-portal.md)
 ## Software dependencies
 
 1. [.NET 6.0 SDK Windows](https://dotnet.microsoft.com/en-us/download)
@@ -143,7 +140,7 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
    ![img](../../../media/mesh-scripting/getting-started/UploaderUpdateUIProjectSettings.png)
 
-1. In the **Mesh Environments** window, on the **Update Environment** tab, select **Build & Publish**. To learn more about the Mesh Environments window, see how to [build and publish your Environment](../../../make-your-environment-available-for-events/build-and-publish-your-environment.md)
+1. In the **Mesh Environments** window, on the **Update Environment** tab, select **Build & Publish**. To learn more about the Mesh Environments window, see how to [build and publish your Environment](../../make-your-environment-available-for-events/build-and-publish-your-environment.md)
 
    ![img](../../../media/mesh-scripting/getting-started/001-update-environment-tab.png)
 
