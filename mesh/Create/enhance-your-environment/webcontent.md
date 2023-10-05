@@ -132,11 +132,9 @@ Adding a WebSlate to your Environment should be a relatively straightforward pro
 
 - Understand project setup in Unity covered in the E2E Environment Creation Guide.
 
-- A username and password for the Azure Portal so you can upload your work.
-
 - Your account must be added as a Content Contributor in the Mesh World you're trying to publish to. If you're unsure about this, check with your IT admin. There's more information about this in the next section.
 
-- There must be an existing World that contains a Space in the Azure Portal that you can upload your work to. To learn more about setting this up, see our document titled "Custom Worlds -- IT Admin User Guide.
+- There must be an existing World in the Mesh Portal that you can upload your work to. 
 
 ### Import the Mesh Toolkit Packages
 

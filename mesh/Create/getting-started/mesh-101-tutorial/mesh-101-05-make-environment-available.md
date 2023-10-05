@@ -5,7 +5,7 @@ author: typride
 ms.author: vinnietieto
 ms.date: 9/25/2023
 ms.topic: Tutorial
-keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Azure Portal, uploader, uploading
+keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Mesh Portal, uploader, uploading
 ---
 
 # Mesh 101 Tutorial Chapter 5: Make your Environment available for Events
@@ -130,7 +130,7 @@ new event in that World.
 ## Summary
 
 In this chapter, you learned how to create an Environment based on your
-scene and then build it and publish it to your World in the Azure
+scene and then build it and publish it to your World in the Mesh 
 Portal.
 
 ## Next steps

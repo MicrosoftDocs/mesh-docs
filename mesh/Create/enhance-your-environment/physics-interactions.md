@@ -93,7 +93,7 @@ Open the *PhysicsShowcase* scene in this project and select the Play button. You
 
 ### Mesh 101 Tutorial
 
-In the Mesh 101 tutorial (sample name: *Mesh101.Unity*), Chapter 4 walks you step-by-step through the process of setting up three Mesh Physics features: grabbing and releasing objects, triggering an animation using a trigger volume, and constraining an object with a containment field. To learn more, see our article named *Mesh 101 Tutorial*, Chapter 4: *Move objects and trigger animations with Mesh Physics*. TBD
+In the Mesh 101 tutorial (sample name: *Mesh101.Unity*), [Chapter 4](../getting-started/mesh-101-tutorial/mesh-101-04-physics.md) walks you step-by-step through the process of setting up three Mesh Physics features: grabbing and releasing objects, triggering an animation using a trigger volume, and constraining an object with a containment field. 
 
 ### Other projects with Mesh Physics
 
@@ -105,13 +105,9 @@ As you explore our other sample projects, you'll find various instances of Mesh 
 
 * Advanced Unity skills.
 
-* A username and password for the Azure Portal so you can upload your work.
+* There must be an existing Mesh World in the Mesh Portal that you can upload your work to. 
 
-* Your account must be added as a Contributor to the Mesh world you’re trying to publish to TBD. If you’re unsure about this, check with your IT admin.
-
-* There must be an existing Mesh World in the Azure Portal that you can upload your work to. To learn more about setting this up, see our document titled *Mesh IT Admin Guide* TBD.  
-
-* There must be an existing Unity project that contains the Mesh Uploader (in Mesh terms, this project is used to create an *Environment*), or you must create one. To learn more about creating one, see our document titled *Get Started with Mesh Environments*. TBD
+* There must be an existing Unity project that contains the Mesh Uploader (in Mesh terms, this project is used to create an *Environment*), or you must create one. To learn more about creating one, see our article titled [Create a new project or update an existing one](../build-your-basic-environment/create-a-new-project-or-update.md).
 
 ## Terminology
 
@@ -302,7 +298,7 @@ By default, Mesh Playmode runs with a single player. To add a second player with
 
 ### Upload your own Environment to your Mesh World
 
-To learn about uploading your Environment to your Mesh World, see the article named TBD.
+To learn about uploading your Environment to your Mesh World, see the article named [Build and publish your Environment](../make-your-environment-available-for-events/build-and-publish-your-environment.md).
 
 ## Extend existing content using Mesh Physics
 
@@ -340,7 +336,7 @@ To make an existing Unity project Mesh Physics-enabled, the following steps are 
 
 1. Ensure that the static content of the scene contains correctly set up solid colliders. Note that planes are prone to tunneling.
 
-To learn more about Playmode, see the document titled *Get Started with Mesh Environments*, section: *Testing with the Playmode package*. TBD
+[Learn more about Playmode](../debug-and-optimize-performance/playmode.md).
 
 ## General tips for building Mesh Physics experiences
 
