@@ -19,14 +19,16 @@ If a TravelPoint is not present in an Environment, and there is a floor at the o
 Setting up Travel Groups and Travel Points:
 
 1. Create a Travel Point Group: all travel points must belong to a group; a default group will be assigned to any travel points that don't have one. Every travel group must have a unique name. The default travel group will not be set as a DefaultSpawnGroup unless it is the only group that exist.
+
     - To do this, create a new GameObject with a TravelPointGroup component attached.
 
-    ![Travel Point Group](../../../media/mesh-scripting/object-player-interactions/Picture5.png)
+    ![Travel Point Group](../../../media/mesh-scripting/object-player-interactions/006-travel-point-group.png)
 
 2. Add Travel Points to the group. To do this, add new GameObjects as children of the Travel Point Group with a Travel Point Component attached.
 
-    ![Travel Point Component attached](../../../media/mesh-scripting/object-player-interactions/Picture6.png)
-    ![Travel Point](../../../media/mesh-scripting/object-player-interactions/Picture7.png)
+    ![Travel Point Component attached](../../../media/mesh-scripting/object-player-interactions/007-travel-point.png)
+
+    ![Travel Point](../../../media/mesh-scripting/object-player-interactions/008-travel-point-in-hierarchy.png)
     
 3. Set "Default Spawn Group" to true for travel groups you want avatars to spawn into when initially joining an Event or space and false travel groups that you do not.  
 
