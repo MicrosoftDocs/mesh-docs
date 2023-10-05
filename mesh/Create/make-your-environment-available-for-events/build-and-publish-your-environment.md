@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, environment, build, publish, build and publish, upload
 
 # Build and publish your Environment
 
-After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen World in the Mesh Portal (M365), where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that World can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
+After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen World in the Mesh Portal, where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that World can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
 
 1. On the menu bar, select **Mesh Toolkit** > **Configure Project Settings**.
 
@@ -164,8 +164,3 @@ If you prefer to have static images as thumbnails you can choose to select the i
 1. The thumbnail images need to follow a specific name pattern, the easier way to follow that is to click on the button **Add provisional thumbnails** which will add three images to the folder selected with the correct names and sizes, you can then replace those images with the images you like, just remember to keep their names and try to follow their sizes for a better UI experience.
 
 1. Once you are ready to publish your Environment, click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Get information about your Environment](get-information-about-your-environment.md)

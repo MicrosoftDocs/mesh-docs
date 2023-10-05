@@ -58,7 +58,7 @@ up to you. The example below is taken from our [Mesh 101 tutorial](../../Create/
 
 ## Next Steps
 
-To enhance your project with features such as Web content, Mesh Physics, or Mesh Scripting, go to:
+To enhance your project with features such as Web content, Mesh Interactables, or Mesh Physics, go to:
 
 > [!div class="nextstepaction"]
 > [Enhanced features overview](../enhance-your-environment/enhanced-features-overview.md)

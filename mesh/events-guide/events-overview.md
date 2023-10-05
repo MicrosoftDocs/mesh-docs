@@ -25,7 +25,7 @@ Events in Mesh should be familiar to most organizations that work with Microsoft
 Download Microsoft Mesh on PC
 
 > [!div class="nextstepaction"]
-> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1)
+> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7)
 
 Download Microsoft Mesh for Meta Quest devices
 
@@ -52,7 +52,7 @@ The power of Mesh really becomes clear when you customize your event by adding a
 To learn how to customize your event in the Mesh app, see [Customize your event](customize-event.md).
 
 > [!div class="nextstepaction"]
-> [Customize your event](customize-event-mesh-portal.md)
+> [Customize your event](customize-event.md)
 
 ## Produce your event
 

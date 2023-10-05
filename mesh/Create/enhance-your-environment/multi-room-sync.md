@@ -12,7 +12,7 @@ keywords: Microsoft Mesh, Unity, environments, scenes, events, animations, timel
 
 ## Overview
 
-You can add various Event features to your Environment that can be controlled during an Event. Events in Mesh can create powerful interactive experiences for hosting all-hands meetings, social gatherings, showcases, or trainings. After you've uploaded your finished custom Environment to Mesh, an Event Producer can use your Environment to create an Event.  
+You can add various Event features to your Environment that can be controlled during an Event. Events in Mesh can create powerful interactive experiences for hosting all-hands meetings, social gatherings, showcases, or trainings. After you've uploaded your finished custom Environment to Mesh, an organizer can use your Environment to create an Event.  
 
 ## Playables
 
@@ -24,15 +24,14 @@ To learn more about the Unity Playables API, see [Unity - Manual:
 Playables API
 (unity3d.com)](https://docs.unity3d.com/Manual/Playables.html).
 
-## Event production scripts
+## Controllables
 
- The Mesh Toolkit includes scripts that integrate into the Mesh event production system.
+ The Mesh Toolkit includes key components that integrate into the Mesh event production system - these components are called *Controllables*.
 
 **To locate the scripts:**
 In the Project window, navigate to **Packages** > **Microsoft Mesh Toolkit** **mesh.toolkit.sharedcontent** > **Controllables**.
 
-![A screenshot of a computer Description automatically generated](../../media/enhance-your-environment/image032.jpg)
-The scripts include:
+The components include:
 
 - *EmbeddedAudioControllable*: For controlling Unity AudioSources with
     hard-coded/embedded audio clips
@@ -48,7 +47,7 @@ The scripts include:
 
 ## Controlling an Animation in an Event
 
-As a Producer in an Event, you can select *play* to start your
+As an organizer in an Event, you can select *play* to start your
 animation, *pause* it, and select *play* again to resume the animation.
 You can also select *stop* to reset the animation to the beginning or
 set your animation to *loop*.
@@ -60,8 +59,7 @@ button will open the door in your scene. Selecting *stop* will reset the
 animation back to its original position. A Playable will not animate in
 reverse; to do this, you'll need to create a different animation.
 
-For more information, see our document titled *Mesh Event Producer
-Guide*.
+For more information, see [Prepare content with the Control Panel](../../events-guide/customize-event.md#prepare-content-with-the-control-panel).
 
 ## Animate Timelines in Unity for Mesh
 
@@ -143,10 +141,9 @@ Unity Tutorial series on using [**Timelines**](https://learn.unity.com/project/u
 
     ![Graphical user interface, application Description automatically generated](../../media/enhance-your-environment/image038.jpg)
 
-Now you can upload your content to Mesh using the **Mesh Toolkit
+Now you can upload your environment to Mesh using the **Mesh Toolkit
 Uploader** and then see how it looks in your Mesh space. To learn more,
-see the document named *Mesh Event Producer Guide.pdf*, section: "All
-Content with the Control Panel."
+see [Prepare content with the Control Panel](../../events-guide/customize-event.md#prepare-content-with-the-control-panel).
 
 ### Unity Video Players
 
@@ -155,9 +152,7 @@ Player**. You'll first need to embed a video player in your Unity scene.
 Once added, it will appear as an option in your **Control Panel**
 content list and can be added to your **Control Panel** using the **+**
 button. You can then toggle it **on/off** or adjust playback controls.
-Learn more about how to use the **Control Panel** in the document named
-*Mesh Event Producer Guide.pdf*, section: *Add Content with the Control
-Panel*.
+Learn more about how to use the **Control Panel** in [Prepare content with the Control Panel](../../events-guide/customize-event.md#prepare-content-with-the-control-panel).
 
 To learn more about the Unity Video Player component, see [Unity -
 Manual: Video Player component
@@ -166,7 +161,6 @@ Manual: Video Player component
 ## Save your work as a template
 
 If you create an Environment + Event features combination that you think
-Event Producers may want to repeat in the future, you can save the
-combination as a template. To learn more about templates, see our
-document named *Mesh Event Producer Guide*, section: *Event Templates*.
+organizers may want to repeat in the future, you can save the
+combination as a template. To learn more about templates, see [Create event template](../../events-guide/create-template.md).
 

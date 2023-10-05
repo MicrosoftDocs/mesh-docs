@@ -82,7 +82,7 @@ Your installation should include modules for Android and Windows. The Mesh app w
 Download Microsoft Mesh on PC
  
 > [!div class="nextstepaction"]
-> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1)
+> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7)
 
     ![______](../../../media/get-started-developing-mesh/006-mesh-download-for-pc.png)
 

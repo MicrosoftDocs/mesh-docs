@@ -17,7 +17,7 @@ Join an event in Microsoft Mesh to experience spatial interaction and feel a sen
 ### Download Microsoft Mesh on PC
 
 > [!div class="nextstepaction"]
-> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1)
+> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7)
 
 ### Download Microsoft Mesh for Meta Quest devices
 
