@@ -3,7 +3,7 @@ items:
     href: development-overview.md
   - name: Getting started
     href: getting-started/toc.yml
-  - name: Build your basic environments
+  - name: Build your basic environment
     href: build-your-basic-environment/toc.yml
   - name: Design your environment
     href: design/toc.yml

@@ -57,7 +57,9 @@ In Mesh terms, the project you create in Unity and then upload to the Mesh Porta
 
 ### Previous Unity experience
 
-This tutorial assumes that you have the intermediate to advanced Unity skills needed to create an Environment. If you don't, you can still [create, customize and produce](../../../events-guide/create-event-mesh-portal.md) Mesh events using ready-to-use environments.
+This tutorial assumes that you have the intermediate to advanced Unity skills needed to create an Environment. We also recommend that you have some familiarity with Unity Visual Scripting; however, we've gotten feedback from scripting novices that they found the tutorial easy to follow. A good place to learn Visual Scripting basics is through [Unity's Visual Scripting tutorial](https://learn.unity.com/project/introduction-to-visual-scripting). This teaches you most if not all of the concepts you need to get started with Mesh Visual Scripting. 
+
+If you don't, you can still [create, customize and produce](../../../events-guide/create-event-mesh-portal.md) Mesh events using ready-to-use environments.
 
 ### Hardware requirements
 
@@ -69,7 +71,7 @@ Unity version 2022.3.7f1 is required for this tutorial.
 
 [Get help installing Unity](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 
-Your installation should include modules for Android and Windows.
+Your installation should include modules for Android and Windows. The Mesh app works for PC and the Oculus Quest 2, and Android is the operating system for the Quest.
 
 ## Set things up for Mesh
 
@@ -96,7 +98,7 @@ The Mesh Toolkit samples repo on GitHub contains the *Mesh 101* tutorial project
 
 1. On your C: drive, create a folder with a one-word name (for example, "Mesh101") and then move or copy the downloaded Mesh Toolkit Zip file to that folder. This is done to avoid running into a problem with the Windows path length limit, which is 256 characters. **IMPORTANT**: *Don't* place the Zip file on the Windows desktop. Behind the scenes, this creates a very long path name.
 
-    In the example below, the user created a folder on their C: drive named *Mesh101.* Next, they moved the downloaded Mesh Toolkit Zip file to the *Mesh101* folder
+    In the example below, the user created a folder on their C: drive named *Mesh101.* Next, they moved the downloaded Mesh Toolkit Zip file to the *Mesh101* folder.
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/471-toolkit-zip-in-folder.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Create worlds and events in Mesh (Preview)
-description: Prepare your organization to adopt Mesh and its features. Organize a team to manage setup and distribution.
+description: Setup Mesh portal.
 author: typride
 ms.author: tmilligan
 ms.date: 7/27/2023

@@ -18,16 +18,7 @@ Mesh *Environment* and upload it to a Mesh *World* in the Mesh Portal. At that p
 > [!IMPORTANT]
 > A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../../Setup/Content/setup-m365-mesh.md).
 
-## Configure your project settings and sign in
-
-1. On the menu bar, select **Mesh Toolkit** > **Configure** >
-    **Project Settings**.
-
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/001-project-settings.png)
-
-1. Select **Yes** to configure project settings for Mesh.
-
-    ![Graphical user interface, text, application Description automatically generated](../../../media/sample-mesh-101/image089.png)
+## Sign in
 
 1. On the menu bar, select **Mesh Toolkit** > **Environments**.
 1. In the **Mesh Environments** window, select **Sign In**.
@@ -119,8 +110,8 @@ Select the **Build & Publish** button.
 
 ## View your Environment in the Mesh Portal
 
-If you navigate to the **Environments** page for your World in the Mesh 
-Portal, you'll see that your Environment has been saved there. 
+If you navigate to the **Environments** page for your World in the [Mesh 
+Portal](https://portal.mesh.microsoft.com), you'll see that your Environment has been saved there. 
 
 ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/458-environment-in-mesh-portal.png)
 
