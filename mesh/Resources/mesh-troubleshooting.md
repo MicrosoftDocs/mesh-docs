@@ -102,9 +102,9 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 You'll need to first reproduce the problem, and then follow the steps below to collect all information related to Mesh:
 
-![A screenshot of the About Mesh dialog in the Mesh Portal](media/m365-about-mesh.png)
-
 1. Click the **?** help icon in the M365 header.
+
+    ![A screenshot of the About Mesh dialog in the Mesh Portal](media/m365-about-mesh.png)
 
 1. Click the **About Mesh** link in the **Other resources** section. You may need to scroll down to the bottom of the screen to see the **About Mesh**.
 1. Click the **Copy all** button.
