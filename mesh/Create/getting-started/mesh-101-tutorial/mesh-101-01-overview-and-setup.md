@@ -83,34 +83,11 @@ To download the app (codenamed **Project Napili**), you can visit the link below
 
 If the app isn't available, talk to your IT admin about making the app visible to you.
 
-### Download the Mesh Toolkit
+### Download the Mesh Toolkit Samples
 
-The Mesh Toolkit contains the *Mesh 101* tutorial project.
+*Mesh 101* tutorial project is available in [*Mesh-Toolkit-Unity*](https://github.com/microsoft/Mesh-Toolkit-Unity) github repository.
 
-1. In your browser, go to GitHub, and then navigate to the [*Mesh-Toolkit-Unity* repository](https://github.com/microsoft/Mesh-Toolkit-Unity).
-
-    ![______](../../../media/sample-mesh-101/469-toolkit-in-github.png)
-
-1. Select the **Code** button, and then select **Download ZIP**.
-
-    ![______](../../../media/sample-mesh-101/470-code-and-download-zip.png)
-
-1. On your C: drive, create a folder with a one-word name (for example,"Mesh101") and then move or copy the downloaded Mesh Toolkit Zip file to that folder. This is done to avoid running into a problem with the Windows path length limit, which is 256 characters. **IMPORTANT**: *Don't* place the Zip file on the Windows desktop. Behind the scenes, this creates a very long path name.
-
-    In the example below, the user created a folder on their C: drive named *Mesh101.* Next, they moved the downloaded Mesh Toolkit Zip file to the *Mesh101* folder
-
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/471-toolkit-zip-in-folder.png)
-
-5. Unzip the Toolkit Zip file into the same folder, and then navigate through the unzipped folder hierarchy until you see the **Mesh101.unity** folder. This contains the tutorial project which you'll open in the next chapter.
-
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/472-mesh-tutorial-folder.png)
-
-### The Packages
-
-For this tutorial, the only package you need is the Mesh Toolkit package, and it's  
-already pre-loaded into the tutorial project. If you were creating your
-own project from scratch, you would need to import the Mesh Toolkit
-package.
+Clone [*Mesh-Toolkit-Unity*](https://github.com/microsoft/Mesh-Toolkit-Unity) github repository or download it as a zip.
 
 ## Next steps
 

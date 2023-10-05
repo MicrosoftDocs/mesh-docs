@@ -11,23 +11,12 @@ keywords: Microsoft Mesh, Unity, getting started, toolkit, Mesh Toolkit, package
 
 # Importing the Mesh Toolkit
 
-The [Mesh Toolkit](../../Create/development-overview.md#develop-in-unity-with-mesh-toolkit) contains the packages you need to create your Mesh experience.
+The [Mesh Toolkit](../../Create/development-overview.md#develop-in-unity-with-mesh-toolkit) is a Unity package which is distributed via [npmjs.org](https://www.npmjs.com/package/com.microsoft.mesh.toolkit).
 
-1. In your browser, go to GitHub, and then navigate to the [*Mesh-Toolkit-Unity* repository](https://github.com/microsoft/Mesh-Toolkit-Unity).
-
-    ![______](../../media/get-started-developing-mesh/003-toolkit-in-github.png)
-
-1. Select the **Code** button, and then select the Copy button for the URL.
-
-    ![______](../../media/get-started-developing-mesh/002-github-copy-url-button.png)
-
-1. In Unity, open the Package manager, then select the "+" drop-down, and then select **Add package from git URL**.
-
-    ![___](../../media/get-started-developing-mesh/004-add-package.png)
-
-1. In the **Add package from git URL** field, paste the URL, and then select the **Add** button.
-
-    ![___](../../media/get-started-developing-mesh/005-git-url-field.png)
+1. In the Package Manager settings add scope registry.
+  ![Scope Registry Configuration](../../media/build-your-basic-environment/configure-scoped-registry.png)
+1. In the Package Manager add package by name **com.microsoft.mesh.toolkit**.
+  ![Add package by name](../../media/build-your-basic-environment/add-package-by-name.png)
 
 > [!div class="nextstepaction"]
 > [Build for single and multiple platforms](build-for-single-and-multiple-platforms.md)    

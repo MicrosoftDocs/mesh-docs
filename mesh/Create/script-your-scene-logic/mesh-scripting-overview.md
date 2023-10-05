@@ -12,7 +12,7 @@ keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 
 ## Introduction
 
-You can add Mesh Scripting development tools to your project in Unity, then create an Environment, and then assign behaviors to objects in the Environment and the Environment itself. 
+You can add Mesh Scripting development tools to your project in Unity, then create an Environment, and then assign behaviors to objects in the Environment and the Environment itself.
 
 There are two different Mesh Scripting approaches:
 
@@ -22,7 +22,7 @@ There are two different Mesh Scripting approaches:
 
 ## Benefits of using Mesh Cloud Scripting
 
-- Simple app model (all code and logic runs in one place).
+- Simple application model (all code and logic runs in one place).
 - Easy connection to cloud side content.
 - Allows code reviews, diffs, history inspection, and Git integration.
 - Better debugging tools.
@@ -33,7 +33,7 @@ There are two different Mesh Scripting approaches:
 - Add interactivity and dynamic runtime behavior to your Mesh Environments without writing code.
 - Enables client-side scripting.
 - Allows low latency operations such as custom tethered objects from the character’s viewpoint.
-- Server deployment can be hard or even impossible in some organizations. Mesh Visual Scripting is simpler to get started with than Mesh Cloud Scripting because it can work “standalone” without a MeshApp server deployment.
+- Server deployment can be hard or even impossible in some organizations. Mesh Visual Scripting is simpler to get started with than Mesh Cloud Scripting because it can work “standalone” without a Mesh Cloud Scripting Service deployment.
 
 ## Which scripting approach should you use?
 

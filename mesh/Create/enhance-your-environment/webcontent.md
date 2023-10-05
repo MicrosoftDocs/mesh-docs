@@ -272,7 +272,7 @@ To enable visual scripting using WebSlate, you must set up a few things.
 
 # WebSlate in Mesh Scripting
 
-Developers now can add a WebSlate to their scripted worlds. This means that a WebSlate can be navigated through a MeshApp script and therefore synchronized across users. For example, create an app containing a WebSlate node and one or more TouchSensor nodes. Then, you can set up your TouchSensor's click event handler to navigate the WebSlate to a different URL. By adding a Mesh App script to WebSlate, your users now can update the WebSlate contents interactively.
+Developers now can add a WebSlate to their scripted worlds. This means that a WebSlate can be navigated through a [Mesh Cloud Scripting](../script-your-scene-logic/mesh-scripting-overview.md) and therefore synchronized across users. For example, create an app containing a WebSlate node and one or more TouchSensor nodes. Then, you can set up your TouchSensor's click event handler to navigate the WebSlate to a different URL. By adding a Mesh App script to WebSlate, your users now can update the WebSlate contents interactively.
 
 ![Showcase of WebSlates in Mesh Scripting](../../media/webview-developer-guide/ArcadeWebSlate.png)
 

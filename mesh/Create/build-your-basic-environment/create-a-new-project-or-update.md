@@ -45,9 +45,12 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 
 - If you get a dialogue asking you to configure project settings, confirm to ensure these items show up in the Menu bar.
 
+## Remove Global Volume
+
+Delete the **Global Volume** object that unity creates in the new scene.
+> [!NOTE]
+> Some unity components are not supported by Mesh, and scenes contain them will fail to upload. The `Volume` component on this object falls into this category.
+
 ## Add a TravelPoint
 
 Every scene must have at least one TravelPoint, which is used to configure avatar spawning behavior. If you're new to TravelPoints, we recommend that you [read our TravelPoint and TravelGroup documentation](../enhance-your-environment/object-avatar-interactions.md#travelpoint-and-travelpointgroup) and follow the instructions there. When you're finished, continue on with the article named [Building for single and multiple platforms](build-for-single-and-multiple-platforms.md).
-
-
-
