@@ -30,8 +30,8 @@ After you finish adding all your scene content, the next step is to build the sc
     in the **Internal Name** and **Description** fields. 
     
     > [!IMPORTANT]
-    > The **Internal Name** field has a maximum of 40 characters, and the
-    **Description** field has a maximum of 70 characters.
+    > The **Internal Name** field has a maximum of 100 characters, and the
+    **Description** field has a maximum of 200 characters.
 
 1. To ensure you have the latest worlds that are available, select the **Refresh List of Mesh Worlds** button.
 
@@ -39,7 +39,7 @@ After you finish adding all your scene content, the next step is to build the sc
     want to upload your Environment to if it's not already selected.
 
 1. In the **Capacity** field, enter the capacity for your Environment.
-    The maximum is 16.
+    The default value is 16 and can't be less then 0.
 
     ![A screenshot of the Mesh Uploader window in the Create Environment tab](../../media/make-your-environment-available-for-events/002-uploader-create.png)
 
@@ -101,6 +101,18 @@ After you finish adding all your scene content, the next step is to build the sc
     If the build and upload process fails, this is confirmed in the **Build and Upload** Results dialog:
 
     ![A screenshot of the dialog shown with the failed results of the build and upload operation](../../media/make-your-environment-available-for-events/006-build-failed.png)
+
+    > [!IMPORTANT]
+    > Everytime, when you update the Environment, it will affect all the events, that are using this Environment.
+    > ![Warning that environment will be updated ](../../media/make-your-environment-available-for-events/uploader_warning_about_updating_environment.png)
+
+After your environment was uploaded, you will be able to see for what platforms it has been built.
+
+![A screenshot of supported platforms](../../media/make-your-environment-available-for-events/uploader_build_platforms.png)
+
+If you make several iteration of uploading same Environment for different platforms, platforms from only last iteration will be available.
+For example, if you built and published Environment for PC platform, but later build and publish same Environment for Android, this Envuronment won't be avaliable for PC anymore (until you build and publish it again). 
+
 
 ## Environment thumbnails
 
@@ -164,3 +176,9 @@ If you prefer to have static images as thumbnails you can choose to select the i
 1. The thumbnail images need to follow a specific name pattern, the easier way to follow that is to click on the button **Add provisional thumbnails** which will add three images to the folder selected with the correct names and sizes, you can then replace those images with the images you like, just remember to keep their names and try to follow their sizes for a better UI experience.
 
 1. Once you are ready to publish your Environment, click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Get information about your Environment](get-information-about-your-environment.md)
+
