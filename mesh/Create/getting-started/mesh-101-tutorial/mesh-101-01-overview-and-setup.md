@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, GitHub
 The Mesh 101 tutorial is a great way to learn about adding Mesh features
 to a Unity project to create an interactive learning experience. Created
 for intermediate to advanced Unity developers, the tutorial will give
-you a solid understanding of the power of Mesh, spanning Mesh Physics,
+you a solid understanding of the power of Mesh, spanning Mesh Interactables and Physics,
 Scripting, and more. You'll start with a pre-built Unity project, add
 custom interactivity and other Mesh features, and then deploy the
 project as an *Environment* to Microsoft Mesh. Customers can
@@ -39,7 +39,7 @@ This article: Overview and setup
 - Station 3.2: Trigger an info dialog
 - Station 3.3: Teleport to the turbine generator
 
-[Chapter 4: Move objects and trigger animations with Mesh Physics](mesh-101-04-physics.md)
+[Chapter 4: Move objects and trigger animations with Mesh Interactables and Physics](mesh-101-04-physics.md)
 
 - Station 4.1: Grab and Release
 - Station: 4.2 Animation Trigger
@@ -88,7 +88,30 @@ Download Microsoft Mesh on PC
 
 *Mesh 101* tutorial project is available in [*Mesh-Toolkit-Unity*](https://github.com/microsoft/Mesh-Toolkit-Unity) github repository.
 
-Clone [*Mesh-Toolkit-Unity*](https://github.com/microsoft/Mesh-Toolkit-Unity) github repository or download it as a zip.
+1. In your browser, go to GitHub, and then navigate to the [*Mesh-Toolkit-Unity* repository](https://github.com/microsoft/Mesh-Toolkit-Unity).
+
+    ![______](../../../media/sample-mesh-101/469-toolkit-in-github.png)
+
+1. Select the **Code** button, and then select **Download ZIP**.
+
+    ![______](../../../media/sample-mesh-101/470-code-and-download-zip.png)
+
+1. On your C: drive, create a folder with a one-word name (for example,"Mesh101") and then move or copy the downloaded Mesh Toolkit Zip file to that folder. This is done to avoid running into a problem with the Windows path length limit, which is 256 characters. **IMPORTANT**: *Don't* place the Zip file on the Windows desktop. Behind the scenes, this creates a very long path name.
+
+    In the example below, the user created a folder on their C: drive named *Mesh101.* Next, they moved the downloaded Mesh Toolkit Zip file to the *Mesh101* folder.
+
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/471-toolkit-zip-in-folder.png)
+
+5. Unzip the Toolkit Zip file into the same folder, and then navigate through the unzipped folder hierarchy until you see the **Mesh101** folder. This contains the tutorial project which you'll open in the next chapter.
+
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/472-mesh-tutorial-folder.png)
+
+### The Packages
+
+For this tutorial, the only package you need is the Mesh Toolkit package, and it's  
+already pre-loaded into the tutorial project. If you were creating your
+own project from scratch, you would need to import the Mesh Toolkit
+package.
 
 ## Next steps
 
