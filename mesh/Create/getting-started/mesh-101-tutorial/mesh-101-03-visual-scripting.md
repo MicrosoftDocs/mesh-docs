@@ -62,7 +62,7 @@ As you can see, there's already a video screen in place, but it needs a Play/Sto
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/404-chapter-3-expanded.png)
 
-1. Search for the **ButtonBase** prefab.
+1. Search for the **ButtonBase** prefab. Make sure you choose **ALL** for the **Search** filter.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/032-buttonbase-v2.png)
 
@@ -158,11 +158,13 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 
 > [!TIP] You may want to take a moment here to examine some of the components for the **Button** GameObject:
 >
-> *Mesh Interactable Properties*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named [*Mesh Object and Avatar Interactions*](../../design-and-develop/enhance-your-environment/object-avatar-interactions.md).
+> *Mesh Interactable Setup*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named [*Mesh Object and Avatar Interactions*](../../design-and-develop/enhance-your-environment/object-avatar-interactions.md).
+>
+>   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/478-mesh-interactiable-setup.png)
 >
 > *Script Machine*: This has a script graph named *Button Base Behaviour.*
 >
->   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/208-playvideobutton-components-v2.png)
+>   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/479-script-machine-button-base.png)
 >
 > If you go into Play mode, you'll see that a new component named **Mesh Interactable Body** is added to **Button**.
 >

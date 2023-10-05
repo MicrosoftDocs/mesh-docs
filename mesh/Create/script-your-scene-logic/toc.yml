@@ -1,19 +1,8 @@
 items:
   - name: Mesh Scripting overview
     href: mesh-scripting-overview.md
-  - name: Set up Cloud scripting infrastructure 
-    href: cloud-scripting-setup-infrastructure.md
-  - name: Cloud Scripting basic concepts
-    href: cloud-scripting-basic-concepts.md
-  - name: Cloud Scripting getting started
-    href: cloud-scripting-getting-started.md
-  - name: Cloud Scripting programmer's guide
-    href: cloud-scripting-programmers-guide.md
-  - name: Cloud Scripting troubleshooting
-    href: cloud-scripting-troubleshooting.md
-  - name: Cloud Scripting known issues
-    href: cloud-scripting-known-issues.md
-  - name: Cloud Scripting release notes
-    href: cloud-scripting-release-notes.md
+  - name: Cloud Scripting
+    href: cloud-scripting/toc.yml     
   - name: Visual Scripting
-    href: visual-scripting.md  
+    href: visual-scripting/toc.yml 
+

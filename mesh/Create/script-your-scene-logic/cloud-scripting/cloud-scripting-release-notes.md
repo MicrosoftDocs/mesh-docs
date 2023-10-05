@@ -70,13 +70,7 @@ keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding, 
 
   - In the `appsettings.Development.json` file replace `Microsoft.MeshApps` property names to `Microsoft.Mesh.CloudScripting`. The same change should be applied to `appsettings.Production.json` file.
 
-  - In the `Directory.Packages.props` file update the following values:
-    - If you consume Could Scripting nuget..
-        - PackageReference `Microsoft.MeshApps.Dom.NET` should point now to `Microsoft.Mesh.CloudScripting`.
-    - If you reference files in the local file system...
-        - Reference to `Microsoft.MeshApps.Common.NET` should be updated to `Microsoft.Mesh.CloudScripting.Common` including HintPath.
-        - Reference to `Microsoft.MeshApps.NET` should be updated to `Microsoft.Mesh.CloudScripting` including HintPath.
-        - Content reference to `MicrosoftMeshAppsDom.dll` should be updated to `MicrosoftMeshCloudScripting.dll` incluing Link.
+  - In the `Directory.Packages.props` file update the following values PackageReference `Microsoft.MeshApps.Dom.NET` should point now to `Microsoft.Mesh.CloudScripting`.
 
 ## Release 31 Aug 2023
 ### Versions

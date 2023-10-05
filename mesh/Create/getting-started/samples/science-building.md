@@ -23,8 +23,8 @@ Activities include the following:
 
 * **The Rambunctious Machine**: demonstrating interactive physics constrained to 2D
 * **Wave and Frequency**: connected physics bodies moving in a variety of synchronized ways
-* **Gravity Simulator**: switching between earth, moon and space
-* **Mass and Gravity**: planets and other objects orbiting around the sun
+* **Gravity Simulator**: switching between Earth, Moon and space
+* **Mass and Gravity**: planets and other objects orbiting around the Sun
 * **Buoyancy and Balance**: ships or other objects floating on the waves
 * **Gone Fishin'!**: catch fish, ships or a penguin with a magnetic fishing rod
 
