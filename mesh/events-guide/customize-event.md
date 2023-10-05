@@ -146,7 +146,7 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
 
 **Control Panel Notes:**
 
-- Playable content can be added from the environment editor or from a Unity project that has been uploaded to a custom environment. Reference the [Choose your journey article](../Create/getting-started/choose-your-journey.md)
+- Playable content can be added from the environment editor or from a Unity project that has been uploaded to a custom environment. Reference the [Choose your journey article](../develop/getting-started/choose-your-journey.md)
     to get started with adding custom content.
 
 ## Save your content
