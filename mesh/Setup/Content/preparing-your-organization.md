@@ -128,7 +128,8 @@ to send feedback about Mesh features built into Teams. We strongly
 encourage your org to permit this feedback for Mesh users but consult
 your company policies before making any changes. For more information
 about managing feedback, see
-<https://learn.microsoft.com/en-us/microsoftteams/manage-feedback-policies-in-teams>.
+
+[Manage feedback policies in Teams](/microsoftteams/manage-feedback-policies-in-teams)
 
 ## Office Apps Admin
 
@@ -160,8 +161,8 @@ changes.
 - Allow users to include log files and content samples when feedback
     is submitted to Microsoft
 
-For more information about managing feedback, see
-<https://learn.microsoft.com/en-us/deployoffice/admincenter/overview-cloud-policy#steps-for-creating-a-policy-configuration>.
+For more information about managing feedback, see:
+[Steps for create a policy configuration](/deployoffice/admincenter/overview-cloud-policy)
 
 ## Endpoint Managers
 
@@ -169,8 +170,9 @@ Make sure you know your organization's process for deploying apps. The Mesh app 
 (mobile device management) solution like Microsoft Intune to deploy the
 app and make it show up in the users' Company Portal. If you block
 access to the Microsoft Store, you can use WinGet instead. For more information about deploying apps with
-Microsoft Intune, see
-<https://learn.microsoft.com/en-us/mem/intune/apps/store-apps-windows>
+Microsoft Intune, see:
+
+[https://learn.microsoft.com/en-us/mem/intune/apps/store-apps-windows](/mem/intune/apps/store-apps-windows)
 
 ## Azure Administrators
 
@@ -289,8 +291,9 @@ company using Mesh in pre-release will have to work with their security
 and endpoint management teams to decide if a policy can be constructed
 that is acceptable to the company's risk profile while still permitting
 access to Quest devices. For more information about Conditional Access,
-see
-<https://learn.microsoft.com/en-us/mem/intune/protect/conditional-access-intune-common-ways-use>.
+see:
+
+[https://learn.microsoft.com/en-us/mem/intune/protect/conditional-access-intune-common-ways-use](/mem/intune/protect/conditional-access-intune-common-ways-use)
 
 ## Work with Stakeholders That Communicate Change
 
