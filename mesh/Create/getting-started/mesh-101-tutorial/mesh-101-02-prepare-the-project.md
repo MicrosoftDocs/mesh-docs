@@ -12,7 +12,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 
 ### Scenes in the project
 
-1. Open the **Mesh101.unity** project in Unity. If you have more than
+1. Open the **Mesh101** project in Unity. If you have more than
     one version of Unity installed, be sure to open the project with `Unity 2022.3.7f1` which is required for this tutorial.
 
 2. In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**.
@@ -68,15 +68,38 @@ You'll be visiting the Sphere Terraces starting in the next chapter---they each 
 ![A screenshot of a video game Description ](../../../media/sample-mesh-101/014-chapter3-sphere-terrace-v2.png)
 
 ... and the other Sphere Terrace, covered in Chapter 4, is where you'll
-learn about Mesh Physics.
+learn about Mesh Interactables and Mesh Physics.
 
 ![A screenshot of a computer Description ](../../../media/sample-mesh-101/014-chapter-4-sphere-terrace-v2.png)
+
+### Choose the NavMesh layer
+
+For this project, we want our avatar to be able to walk around only on
+the floors inside the *Sphere Terrace* objects and the floor of a
+platform that's attached to one of the wind turbine generators. For
+these areas to be walkable, they must be on the *NavMesh* layer. Let's
+add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
+
+1. In the **Hierarchy**, expand the **Chapter 3** GameObject.
+
+1. Select the **Sphere Terrace** GameObject that's a child object to
+    the **Chapter3** GameObject.
+
+    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/402-sphere-terrace.png)
+
+1. In the **Inspector**, select the **Layer** drop-down and then choose
+    **NavMesh**.
+
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image025.png)
+
+You don't have to add the other walkable GameObjects to the NavMesh
+layer---we've already done it for you.
 
 ### Add the PlaymodeSetup prefab
 
 Adding the PlaymodeSetup prefab will allow you to run the project in
-*Playmode*. This gives you a preview of what the content will look and
-feel like when it runs in the *Mesh app*. A key feature of Playmode is
+*Play mode*. This gives you a preview of what the content will look and
+feel like when it runs in the *Mesh app*. A key feature of Pla ymode is
 the ability to run multiple clients within the same process; this allows
 you to easily get a first impression of a multi-user scenario.
 
@@ -96,7 +119,7 @@ you to easily get a first impression of a multi-user scenario.
 
 2. Select the Unity Editor Play button.
 
-3. In the **Game** window, note that you now have a view from the avatar's position. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Playmode.
+3. In the **Game** window, note that you now have a view from the avatar's position. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Play mode.
 
 ### Check the scale of your GameObjects
 
@@ -129,9 +152,9 @@ reminder of what the Environment looks like.
     window.
 
 > **Note**: If you decide you want a different view for the Thumbnail
-> Camera, you can adjust the Camera GameObject directly in the **Scene**
-> window or change its **Position** and **Rotation** values in the
-> **Inspector** prior to uploading your Environment to Mesh.
+Camera, the easiest way to achieve this is to delete the Camera, establish the Scene view that you want, and then add the Camera again. You can also adjust the Camera GameObject directly in the **Scene**
+window or change its **Position** and **Rotation** values in the
+**Inspector** prior to uploading your Environment to Mesh.
 
 There are no set rules for how your thumbnail should look---it's totally
 up to you. For the example below, we chose a close-up front view of a
