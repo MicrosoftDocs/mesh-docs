@@ -1,6 +1,6 @@
 ---
-title: Mesh Toolkit DartRoom sample
-description: Learn about the Mesh Toolkit DartRoom sample.
+title: Mesh Toolkit Dart Room sample
+description: Learn about the Mesh Toolkit Dart Room sample.
 author: vtieto
 ms.author: vinnietieto
 ms.date: 9/29/2023
@@ -9,11 +9,11 @@ ms.prod: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, dartroom
 ---
 
-# Microsoft Mesh Toolkit Sample: DartRoom
+# Microsoft Mesh Toolkit Sample: Dart Room
 
 ![Gallery View](../../../media/samples/003-dartroom.png)
 
-The *DartRoom* project (scene: *DartRoom*) contains a carefully designed scene that demonstrates the power of combining appealing visuals with the creative use of Mesh Physics features found in the Mesh Toolkit. Feel free to inspect and modify the scene and play with it!.
+The *Dart Room* project (scene: *DartRoom*) contains a carefully designed scene that demonstrates the power of combining appealing visuals with the creative use of Mesh Physics features found in the Mesh Toolkit. Feel free to inspect and modify the scene and play with it!.
 
 In this project, you'll find:
 
