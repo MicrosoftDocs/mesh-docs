@@ -42,6 +42,8 @@ Use the Mesh portal to create and manage events, Mesh worlds, and custom environ
     > [!NOTE]
     > Once your event is created, you cannot change the environment, the template, or room configuration, room capacity, or Max Participants.
 
+    Learn more about [creating event templates](create-template.md).
+
 1. Add your Co-organizers (who will be able to edit the event) and your Attendees (who will be able to join the event) and select **Create event** when finished.
 
     :::image type="content" source="../media/m365-migration-guide/Invite-attendees-co-organizers.png" alt-text="Invite page in the Mesh portal":::
