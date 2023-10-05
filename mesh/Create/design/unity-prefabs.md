@@ -18,7 +18,8 @@ sub-disciplines is a great place to start.
 Using Prefabs allows easier collaboration within a single Unity scene
 and is preferred for Microsoft Mesh projects.
 
-![](../../media/3d-design-performance-guide/image036.png) 
+![___](../../media/3d-design-performance-guide/image036.png) 
+
 When editing the scene, always make sure
 the Prefab you're working in has its overrides applied.
 
@@ -55,35 +56,3 @@ zeroed out **before** turning it into a Prefab.
 
 
 ![](../../media/3d-design-performance-guide/image040.png)
-
-+-----------+--------------------+-----------+------------------------+
-| The FLOOR | ![](../../media/3d-design-performance-guide/imag     | The WALLS | ![](../../media/3d-design-performance-guide/image042      |
-| mesh must | e41.png) | mesh      | .png) |
-| have its  |  | should    |                |
-| Tag set   |          | leave its |  |
-| to        |  | Tag and   |                        |
-| T         |                    | Layer set |                        |
-| eleporter |                    | to its    |                        |
-| and its   |                    | defaults, |                        |
-| Layer set |                    | u         |                        |
-| to        |                    | nchanged. |                        |
-| NavMesh.  |                    |           |                        |
-|           |                    | This      |                        |
-| This      |                    | object    |                        |
-| object    |                    | doesn't   |                        |
-| doesn't   |                    | have a    |                        |
-| have a    |                    | Mesh      |                        |
-| Mesh      |                    | Renderer  |                        |
-| Renderer  |                    | c         |                        |
-| c         |                    | omponent. |                        |
-| omponent. |                    |           |                        |
-|           |                    | This      |                        |
-| This      |                    | object    |                        |
-| object    |                    | needs a   |                        |
-| needs a   |                    | Mesh      |                        |
-| Mesh      |                    | Collider  |                        |
-| Collider  |                    | c         |                        |
-| c         |                    | omponent. |                        |
-| omponent. |                    |           |                        |
-+===========+====================+===========+========================+
-+-----------+--------------------+-----------+------------------------+

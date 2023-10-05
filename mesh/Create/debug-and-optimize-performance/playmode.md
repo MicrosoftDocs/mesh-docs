@@ -32,7 +32,7 @@ to easily get a first impression of a multi-user scenario.
     in the **Hierarchy**, and then select **Mesh Toolkit** >
     **PlaymodeSetup**.
 
-![A screenshot of a computer Description automatically generated](../../media/debug-and-optimize/image041.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/debug-and-optimize/image041.jpg)
 
 2.  Ensure that the scene contains a piece of solid floor below the
     origin that's set to the *NavMesh* layer.

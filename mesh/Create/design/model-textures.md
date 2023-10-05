@@ -72,15 +72,15 @@ shown below.**
 Microsoft Mesh utilizes the URP renderer. Unity has multiple built-in
 URP shaders available to use.
 
-+-----------------------------------+-----------------------------------+
-| **For Android-focused projects**, | **For PC / High-end focused       |
-| we only use the following:        | projects**, we recommend that you |
-|                                   | use the following:                |
-+===================================+===================================+
-| -   **URP/BakedLit**              | -   **URP/ComplexLit (if advanced |
-|                                   |     materials are need)**         |
-| -   **URP/Unlit**                 |                                   |
-+-----------------------------------+-----------------------------------+
+**For Android-focused projects**, we only use the following: 
+
+**URP/BakedLit** 
+
+**URP/Unlit**
+
+**For PC / High-end focused projects**, we recommend that you use the following:  
+
+**URP/ComplexLit** (if advanced materials are needed)
 
 ### Resources for Unity shaders
 
