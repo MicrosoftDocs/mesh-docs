@@ -98,7 +98,7 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 5. Open a support request by following the link [here](https://aka.ms/meshdevsupport).
 
-### What do I do with issues relating to M365?
+### What should I do with issues relating to M365?
 
 You'll need to first reproduce the problem, and then follow the steps below to collect all information related to Mesh:
 
