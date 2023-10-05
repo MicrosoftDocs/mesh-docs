@@ -94,7 +94,6 @@ By default, the WebSlate loads the preset URL. The URL should be replaced with a
 - When working with WebSlate in the Unity editor, the editor needs to be restarted when updating the WebSlate or Mesh Toolkit packages through the Unity package manager.
 - The "Current URL" field of a WebSlate currently cannot be updated during Play mode.
 - If your WebSlate game object displays an "internal shader error", navigate to the Inspector view of your WebSlate and ensure that the selected shader is set to "UnlitWebSlate".
-- Visual scripting has WebSlate support. If your visual scripting graph shows references to the legacy “WebView” type, manually update this reference to “WebSlate”.
 
 ### General limitations
 
@@ -126,19 +125,7 @@ Check out the **Room Blue** scene in the **HelloWorld** sample! There you can se
 
 ## Add a WebSlate to your Mesh Environment
 
-Adding a WebSlate to your Environment should be a relatively straightforward process so long as you have a Unity project set up to create Mesh Environments or artifacts.
-
-### Prerequisites
-
-- Understand project setup in Unity covered in the E2E Environment Creation Guide.
-
-- Your account must be added as a Content Contributor in the Mesh World you're trying to publish to. If you're unsure about this, check with your IT admin. There's more information about this in the next section.
-
-- There must be an existing World in the Mesh Portal that you can upload your work to. 
-
-### Import the Mesh Toolkit Packages
-
-If you haven't done so already, set up access to the [Mesh Toolkit](../build-your-basic-environment/access-the-mesh-toolkit-package.md).
+Adding a WebSlate to your Environment should be a relatively straightforward process so long as you have a Unity project set up to create Mesh environments.
 
 ### Add a WebSlate prefab to your Unity project
 
@@ -283,5 +270,3 @@ We love feedback and bug reports! If you'd like to provide feedback, use the Fee
 ![Screenshot of the feedback button in the Mesh app](../../media/webview-developer-guide/image024.png)
 
 For WebSlate feedback, include "**\[web content\]**" or **a mention of WebSlate** in your feedback.
-
-If you're not able to give feedback or report bugs using the Feedback button in Mesh, use the Teams chats with your Microsoft partners, or contact your Microsoft partners directly.

@@ -20,15 +20,9 @@ To build experiences for Mesh, you must have intermediate to advanced Unity skil
 
 If you're new to Mesh and like the idea of learning through a step-by-step tutorial, we recommend that you try our [Mesh 101 tutorial](mesh-101-tutorial/mesh-101-01-overview-and-setup.md). It starts you off with a pre-built Unity project and then walks you through the process of creating an educational windfarm experience. You'll learn how to use Mesh scripting and physics to add interactivity, and then you'll deploy the project as an *Environment* to your Mesh World.
 
-If you're ready to starting building Mesh experiences, you have several approaches to choose from:
-
-- Open and build upon an existing sample.
-
-- Update an existing project or create a new one.
-
 ## Start with a Mesh sample
 
-It's easiest to start with a sample file to ensure all packages are configured in your Unity project. We recommend this option if you haven't already created a Mesh project in Unity.
+You can start with a sample project to quickly get inspired about what you can build with Mesh. These projects are already set up with the Mesh Toolkit.
 
 [Learn more about starting with a Mesh sample](samples/samples-overview.md).
 

@@ -1,36 +1,32 @@
 ---
-title: Playmode testing in Unity
+title: Play mode testing in Unity
 description: Development for Mesh using Unity.
 author: typride
 ms.author: vinnietieto
 ms.date: 8/29/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, testing, troubleshooting, playmode
+keywords: Microsoft Mesh, testing, troubleshooting, playmode, play mode
 ---
 
-# Playmode testing in Unity for Mesh
+# Play mode testing in Unity for Mesh
 
-The Mesh.Toolkit.Playmode package gives you the capability to
+**Mesh Play Mode** gives you the capability to
 select *Play* in a Mesh Environment project and get an
 approximate preview of what the content will look and feel like when it
 runs in the Mesh app. This greatly speeds up the iteration cycle during
 content development and allows developers of advanced interactive
 content to deeply debug the logic with all the powerful tools that Unity
 offers. From this point forward, we'll refer to this feature
-as *Playmode*.
+as *Play Mode*.
 
-The look and feel in Playmode are similar but not identical to those in
+The look and feel in Play Mode are similar but not identical to those in
 the Mesh app. It's an ongoing effort to reduce the differences where
 possible without sacrificing the lightweight Environment necessary for
-quick iteration. A key feature of Playmode is the ability to run
+quick iteration. A key feature of Play Mode is the ability to run
 multiple clients within the same process; this allows a single developer
 to easily get a first impression of a multi-user scenario.
 
-If you followed the instructions in the [Access the Mesh Toolkit Packages](../build-your-basic-environment/access-the-mesh-toolkit-package.md) article, you added access to the Mesh Toolkit package to your project. The Toolkit includes the Playmode package.
-
-![A screenshot of a computer Description automatically generated](../../media/debug-and-optimize/image040.jpg)
-
-**To use Playmode in your project**:
+**To use Play Mode in your project**:
 
 1.  Add a *PlaymodeSetup [NoUpload]* prefab to the scene: right-click
     in the **Hierarchy**, and then select **Mesh Toolkit** >
@@ -50,11 +46,10 @@ specific location at startup.
 
 ![A screenshot of a computer program Description automatically generated with medium confidence](../../media/debug-and-optimize/image042.jpg)
 
-Playmode Split Screen
+## Playmode Split Screen
 
 This feature lets you run multiple clients within the same process and
-show them side-by-side within the same window. The
-*Mesh.Toolkit.Playmode* package itself implements a very minimal
+show them side-by-side within the same window. Mesh toolkit itself implements a very minimal
 emulated *PlaymodeNetwork* component that's sufficient to communicate
 the player position between the clients, allowing the different players
 to see each other as heavily stylized avatars:
@@ -62,9 +57,9 @@ to see each other as heavily stylized avatars:
 ![A screenshot of a video game Description automatically generated with medium confidence](../../media/debug-and-optimize/image043.png)
 
 This is sufficient for previewing static content. When developing
-interactive content Mesh Scripting and/or WebView, keep in mind that the
-packages for those features each contain their own networking mechanisms
-which provide a Playmode preview of a synchronized experience with
+interactive content, visual scripting, cloud scripting and/or web slate,
+keep in mind that those features each contain their own networking mechanisms
+which provide a Play Mode preview of a synchronized experience with
 multiple users.
 
 Do one of the following:
@@ -76,7 +71,7 @@ Do one of the following:
 
 -or-
 
-1.  Start Play mode.
+1.  Start Play Mode.
 
 2.  In the **DontDestroyOnLoad** scene, navigate to the
     **PlaymodeSplitScreen** component and then select **Add player**.
@@ -90,8 +85,3 @@ build and upload process each time you make an iteration.
  > If you're using the [Visual Profiler](../debug-and-optimize-performance/performance-guidelines.md#visual-profiler) in your scene, make sure the **Initial Screen Count** setting in the **Playmode Setup** component is zero. If it's "1" or higher, you won't see the Visual Profiler.
 
  ![A screen shot of a number Description automatically generated](../../media/debug-and-optimize/001-playmode-count-one.png)
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Geting help](getting-help.md)
