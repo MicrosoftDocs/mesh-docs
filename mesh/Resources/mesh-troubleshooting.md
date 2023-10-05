@@ -158,11 +158,11 @@ There was an error loading the space. This happens sometimes... Please try again
 
 #### Unable to join the Teams meeting. Please try again later.
 
-This is a general error message for when we cannot connect to Microsoft Teams services.
+This error occurs when we cannot connect to Microsoft Teams services.
 
 #### `Response Code` Failed looking up space details.
 
-This is a general error message for when something goes wrong while trying to get event and space information
+This error occurs when something goes wrong while trying to get event and space information
 
 #### Failed to lookup Teams meeting details!
 
@@ -178,7 +178,7 @@ You need to run the latest verions of the Mesh app to enter this space.
 
 #### An unexpected error occurred when loading the environment for the space.
 
-This is a general error message for when we fail to load the asset bundle or we fail to extract the environment from the asset bundle
+This is a general error message when we fail to load the asset bundle or we fail to extract the environment from the asset bundle
 
 #### Something went wrong loading the space. Please try again later.
 
@@ -214,7 +214,7 @@ This error happens when finding a meeting failed.
 
 #### Failed looking up space details.
 
-This error happens when finding space info from service failed.
+This error happens when we failed to find space information from service.
 
 #### The destination you are trying to reach is not available.
 
