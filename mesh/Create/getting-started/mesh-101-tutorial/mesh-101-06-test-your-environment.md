@@ -1,6 +1,6 @@
 ---
-title: Mesh 101 Create an event and invite others
-description: Learn how to create an event and invite others.
+title: Test your environment within the Mesh app
+description: Learn how to test your environment with a developer template.
 author: typride
 ms.author: vinnietieto
 ms.date: 9/26/2023
