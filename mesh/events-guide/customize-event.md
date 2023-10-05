@@ -167,4 +167,4 @@ While in preview mode, you can test out using the control panel to play your vid
 :::image type="content" source="../media/mesh-event-producer-guide/Environment-editor-preview-play-video.png" alt-text="Video playing in the control panel during preview mode mesh app":::
 
    > [!div class="nextstepaction"]
-   > [Customize your event](produce-event.md)
+   > [Produce your event](produce-event.md)

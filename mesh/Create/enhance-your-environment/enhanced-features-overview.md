@@ -12,17 +12,10 @@ keywords: Microsoft Mesh, Unity, environments, scenes, events, animation, timeli
 
 After you've created a basic Environment, take it to the next level by incorporating one or more of the features or technologies listed below. 
 
-- With the **WebSlate** prefab, you can add panels to a scene
-    that display static or interactive webpages. To learn more, see the article named [Add Web content](webcontent.md).
+* [Mesh physics](enhance-your-environment/physics-interactions.md), used to create enabling and engaging dynamic content.
 
-- **Shared Physics** simulation is key to enabling engaging dynamic
-    content. The Mesh Physics system offers developers a productive
-    workflow for creating custom content that will provide Mesh users
-    with high-quality Mesh Physics experiences. To learn more, see the
-    article named [Mesh Physics](physics-interactions.md). 
+* [Mesh interactables](enhance-your-environment/avatar-and-object-interactions/interactables.md), allowing participants to grab, hold, throw, select, anchor, tether and spawn
 
-- With **Mesh Cloud Scripting** or **Mesh Visual Scripting**, you can
-    assign behaviors to objects in the Environment, and the template
-    itself, via C# scripts. To learn more, see the article named [Mesh Scripting overview](../script-your-scene-logic/mesh-scripting-overview.md)
+* [Mesh controllables](enhance-your-environment/multi-room-sync.md), enabling event hosts to control and sync video and timeline playback across multiple rooms of a large event.
 
-- **Event content** integration: You can set up objects within your Environment to be controlled during an Event. When you use scripts in the Event Production folder of the Toolkit package, certain features will become available, such as controlling animations with Timelines. To set this up in your scene, see the article named [Multi-room sync (animations, timelines, and video)](multi-room-sync.md). To learn more about creating and customizing events, see the article named [Events Overview](../../events-guide/events-overview.md).
+* [Mesh web slates](enhance-your-environment/webcontent.md), enabling designers to add a panel that displays a given web page.
