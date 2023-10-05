@@ -43,7 +43,7 @@ The development workflow and model for Mesh Cloud Scripting is very similar to r
 
 ![______](../../media/mesh-scripting/001-graph-example.png)
 
-[Learn more about Mesh Cloud Scripting](cloud-scripting/cloud-scripting-overview.md)
+[Learn more about Mesh Cloud Scripting](cloud-scripting/cloud-scripting-basic-concepts.md)
 
 ## Benefits of using Mesh Visual Scripting
 
@@ -71,8 +71,8 @@ Before getting started with Mesh Scripting, you should be able to create a basic
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Learn more about Mesh Cloud Scripting](cloud-scripting/cloud-scripting-overview.md)
+> [Mesh Visual Scripting](visual-scripting/visual-scripting-overview.md)
 
 > [!div class="nextstepaction"]
-> [Mesh Visual Scripting](visual-scripting/visual-scripting-overview.md)
+> [Mesh Cloud Scripting](cloud-scripting/cloud-scripting-basic-concepts.md)
 
