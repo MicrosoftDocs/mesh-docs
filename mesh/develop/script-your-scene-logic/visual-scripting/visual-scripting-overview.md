@@ -12,7 +12,7 @@ keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, gra
 
 ## Overview
 
-Read an [overview of Mesh Cloud Scripting and Mesh Visual Scripting](mesh-scripting-overview.md)
+Read an [overview of Mesh Cloud Scripting and Mesh Visual Scripting](../mesh-scripting-overview.md)
 
 If you're brand new to Mesh Visual Scripting, we recommend one or both of the following:
 

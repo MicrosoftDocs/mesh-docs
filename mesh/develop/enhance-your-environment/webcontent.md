@@ -132,13 +132,13 @@ To enable interaction in the WebSlate, you have to set up a few things.
 
 ## WebSlate in Visual Scripting
 
-Visual Scripting offers a \"no-code\" approach to adding behavior to a scene. This means that developers can now implement WebSlate functionality and behavior without the need for traditional programming. Instead, a visual interface is provided, enabling users to define and connect various actions and events in a scene. This simplifies the process of adding interactivity and behavior, making it accessible to individuals without extensive programming knowledge or experience.
+With Visual Scripting, developers can implement WebSlate functionality and behavior without the need for traditional programming. Instead, a node-based visual interface is provided, enabling users to define and connect various actions and events in a scene. This simplifies the process of adding interactivity and behavior, making it accessible to individuals without extensive programming knowledge or experience.
 
 To enable visual scripting using WebSlate, you must set up a few things.
 
-1. Go to **Edit** \> **Project Settings**.
+1. Go to **Edit** > **Project Settings**.
 
-2. Select **Visual Scripting**.\
+2. Select **Visual Scripting**.
 
    ![A screenshot of Visual scripting page in Unity](../../media/webview-developer-guide/image018.png)
 
@@ -148,7 +148,7 @@ To enable visual scripting using WebSlate, you must set up a few things.
 
 6. In the new assembly entry, select **(No Assembly)** to open the **Assembly** menu.
 
-7. Select **Microsoft.Mesh.WebSlate** from the **Assembly** menu\
+7. Select **Microsoft.Mesh.WebSlate** from the **Assembly** menu
 
    ![A screenshot of a computer Description automatically generated](../../media/webview-developer-guide/image019.png)
 
@@ -156,7 +156,7 @@ To enable visual scripting using WebSlate, you must set up a few things.
 
     ![Screenshot of WebSlate from the assembly menu in Unity](../../media/webview-developer-guide/image020.png)
 
-    After incorporating the WebSlate visual scripting node into your project, you can utilize it just like any other node in your visual script graph. Here\'s an example of a script graph that loads a new URL in WebSlate when the state of a graph variable changes.
+    After incorporating the WebSlate visual scripting node into your project, you can utilize it just like any other node in your visual script graph. Here's an example of a script graph that loads a new URL in WebSlate when the state of a graph variable changes.
 
     ![Showcase of WebSlate in Mesh visual scripting](../../media/webview-developer-guide/image021.png)
 
@@ -201,7 +201,7 @@ Refer to the [Visual scripting overview](../script-your-scene-logic/mesh-scripti
 
 - WebSlates are locked to the URLs they navigate to, preventing malicious redirects. All unintended hyperlink navigations to outside domains are blocked.
 
-- WebSlates are restricted to navigation within the initial domain or the specified URL's and server\'s redirections.
+- WebSlates are restricted to navigation within the initial domain or the specified URL's and server's redirections.
 
 - Navigation within WebSlate is exclusively limited to HTTPS.
 
@@ -209,7 +209,7 @@ Refer to the [Visual scripting overview](../script-your-scene-logic/mesh-scripti
 
 ### WebSlate domain allow-list
 
-To ensure security against unintended URL-based attack vectors such as phishing, WebSlates by default restrict navigation to the URL's that are included under the domain of the first page loaded into the WebSlate. For example, a WebSlate launched on https://www.microsoft.com/ will only navigate to pages whose URL's start with \"www.microsoft.com\".
+To ensure security against unintended URL-based attack vectors such as phishing, WebSlates by default restrict navigation to the URL's that are included under the domain of the first page loaded into the WebSlate. For example, a WebSlate launched on https://www.microsoft.com/ will only navigate to pages whose URL's start with "www.microsoft.com".
 
 While this ensures that users will not accidentally diverge from the intended navigation flow, it can be an overly restrictive default for some use-cases, such as user authentication, during which there may be redirections to subdomains or third-party authentication providers.
 
@@ -217,7 +217,7 @@ The way to accomodate for these use-cases is by adding domains to the WebSlate's
 
 ### Automatically add domains (recommended)
 
-When working with WebSlates in the Unity editor, you have the option of enabling \"Collect Allowed Domains,\" which will remove the domain navigation restriction so that you can navigate freely when running in playmode to test your scenario.
+When working with WebSlates in the Unity editor, you have the option of enabling "Collect Allowed Domains," which will remove the domain navigation restriction so that you can navigate freely when running in playmode to test your scenario.
 
 While you navigate in playmode, the WebSlate will log the domains you visit in the background. 
 
@@ -225,20 +225,21 @@ While you navigate in playmode, the WebSlate will log the domains you visit in t
 
 In this case, we're expanding navigation from *microsoft.com* to also include *learn.microsoft.com*.
 
-Once you exit playmode, you will find an asset called *\"WebViewAllowedDomains.asset\"* in your top-level *Assets* folder.
+Once you exit playmode, you will find an asset called *"WebViewAllowedDomains.asset"* in your top-level *Assets* folder.
 
 ![WebSlate allowed domains asset](../../media/webview-developer-guide/allowed-domains-asset.png)
 
-Clicking on this asset will give you the list of extra domains you visited, beyond the domain of your initial URL. You can right click, copy, and then paste the values into the \"Allowed Domains\" field of the WebSlate component.
+Clicking on this asset will give you the list of extra domains you visited, beyond the domain of your initial URL. You can right click, copy, and then paste the values into the "Allowed Domains" field of the WebSlate component.
 
 ![Copy allowed domains](../../media/webview-developer-guide/copy-allowed-domains.png)
 ![Paste allowed domains](../../media/webview-developer-guide/paste-allowed-domains.png)
 
->[!Note] This option is impossible to enable in uploaded scenes. Leaving the \"Collect Allowed Domains\" enabled will NOT remove the restriction in your final scene. However, your allowed domains list will persist and will allow navigation, as long as the domains are added to the WebSlate.
+>[!Note]
+> This option is impossible to enable in uploaded scenes. Leaving the "Collect Allowed Domains" enabled will NOT remove the restriction in your final scene. However, your allowed domains list will persist and will allow navigation, as long as the domains are added to the WebSlate.
 
 ### Manually add domains
 
-If you already know which domains you will need, you can manually add them to the WebSlate by expanding the \"Allowed Domains\" drop-down and adding your supplemental domains to the list in the Unity GUI.
+If you already know which domains you will need, you can manually add them to the WebSlate by expanding the "Allowed Domains" drop-down and adding your supplemental domains to the list in the Unity GUI.
 
 ![Manually adding allowed domains with the plus button](../../media/webview-developer-guide/allowed-domains-manual.png)
 
@@ -272,4 +273,4 @@ If you already know which domains you will need, you can manually add them to th
 
 ## Feedback for Web content in Mesh
 
-We love feedback and bug reports! If you'd like to provide feedback, use the Feedback button inside any Mesh experience. This ensures that your feedback and bug reporting will be triaged and incorporated quickly. For WebSlate feedback, include "**\[web content\]**" or **a mention of WebSlate** in your feedback.
+We love feedback and bug reports! If you'd like to provide feedback, use the Feedback button inside any Mesh experience. This ensures that your feedback and bug reporting will be triaged and incorporated quickly. For WebSlate feedback, include "**[web content]**" or **a mention of WebSlate** in your feedback.

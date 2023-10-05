@@ -3,7 +3,7 @@ title: Mesh 101 Create an event and invite others
 description: Learn how to create an event and invite others.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/26/2023
+ms.date: 10/5/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, events, experiences
 ---

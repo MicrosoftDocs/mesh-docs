@@ -1,6 +1,6 @@
 ---
-title: Design for Mesh overview
-description: An overview for technical artists and developers for how to design for Mesh.
+title: Project structure
+description: Learn about naming and folder structures when setting up a project for Mesh.
 author: typride
 ms.author: vinnietieto
 ms.date: 9/26/2023

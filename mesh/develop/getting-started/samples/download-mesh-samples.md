@@ -1,14 +1,14 @@
 ---
-title: Downloading Mesh samples
+title: Download Mesh samples
 description: Step-by-step instructions for downloading Mesh samples.
 author: typride
 ms.author: vinnietieto
-ms.date: 8/24/2023
+ms.date: 10/5/2023
 ms.topic: overview
 keywords: Microsoft Mesh, M365, getting started, documentation, samples, toolkit
 ---
 
-# Downloading Mesh samples
+# Download Mesh samples
 
 The Mesh Toolkit samples repo on GitHub contains a variety of Mesh sample projects to inspire you about what you can build with Microsoft Mesh.
 
