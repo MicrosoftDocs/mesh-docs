@@ -39,7 +39,7 @@ After you finish adding all your scene content, the next step is to build the sc
     want to upload your Environment to if it's not already selected.
 
 1. In the **Capacity** field, enter the capacity for your Environment.
-    The default value is 16 and can't be less then 0.
+    The maximum is 16.
 
     ![A screenshot of the Mesh Uploader window in the Create Environment tab](../../media/make-your-environment-available-for-events/002-uploader-create.png)
 
@@ -103,15 +103,15 @@ After you finish adding all your scene content, the next step is to build the sc
     ![A screenshot of the dialog shown with the failed results of the build and upload operation](../../media/make-your-environment-available-for-events/006-build-failed.png)
 
     > [!IMPORTANT]
-    > Everytime, when you update the Environment, it will affect all the events, that are using this Environment.
+    > Everytime you update the Environment, it can affect future events that reference this Environment.
     ![Warning that environment will be updated ](../../media/make-your-environment-available-for-events/uploader_warning_about_updating_environment.png)
 
 After your environment was uploaded, you will be able to see for what platforms it has been built.
 
 ![A screenshot of supported platforms](../../media/make-your-environment-available-for-events/uploader_build_platforms.png)
 
-If you make several iteration of uploading same Environment for different platforms, platforms from only last iteration will be available.
-For example, if you built and published Environment for PC platform, but later build and publish same Environment for Android, this Environment won't be avaliable for PC anymore (until you build and publish it again). 
+When uploading repeatedly to the same Environment, please note that only the platforms from the last iteration will be available.
+For example, if you built and publish an Environment for PC platform, but later want to include Android, you will need to build for both PC and Android. Building for Android only will cause the PC build to be lost.
 
 
 ## Environment thumbnails
