@@ -29,12 +29,12 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 
 1. In the **Hierarchy**, delete **Global Volume**.
 
-1. > [Import the Mesh Toolkit](../build-your-basic-environment/import-the-mesh-toolkit-package.md)
+1. > [Set up access to the Mesh Toolkit](../build-your-basic-environment/access-the-mesh-toolkit-package.md)
 
 **To update an existing project**:
 
 1. Ensure that your project targets the Universal Render Pipeline (URP).
-1. [Import the Mesh Toolkit](../build-your-basic-environment/import-the-mesh-toolkit-package.md).
+1. [Set up access to the Mesh Toolkit](../build-your-basic-environment/access-the-mesh-toolkit-package.md).
 
 ## General Tips
 
@@ -60,5 +60,5 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 
 ## Next steps
 
-[Import the Mesh Toolkit package](import-the-mesh-toolkit-package.md)
+[Access the Mesh Toolkit package](access-the-mesh-toolkit-package.md)
 
