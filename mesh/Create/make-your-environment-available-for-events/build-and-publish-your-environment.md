@@ -15,11 +15,11 @@ After you finish adding all your scene content, the next step is to build the sc
 1. On the menu bar, select **Mesh Toolkit** > **Configure Project
     Settings**.
 
-    ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/001-project-settings.png)
+    ![A screenshot of the menu bar in Unity showing the Configure Project Settings option](../../media/make-your-environment-available-for-events/001-project-settings.png)
 
 1. Select **Yes** to configure project settings for Mesh.
 
-    ![Graphical user interface, text, application Description automatically generated](../../media/make-your-environment-available-for-events/image015.png)
+    ![A screenshot of the dialog shown in Unity asking if you are sure you want to configure the project](../../media/make-your-environment-available-for-events/image015.png)
 
 1.  On the menu bar, do one of the following:
 
@@ -52,7 +52,7 @@ After you finish adding all your scene content, the next step is to build the sc
 1. In the **Capacity** field, enter the capacity for your Environment.
     The maximum is 16.
 
-    ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/002-uploader-create.png)
+    ![A screenshot of the Mesh Uploader window in the Create Environment tab](../../media/make-your-environment-available-for-events/002-uploader-create.png)
 
 1.  Select **Create Asset** to create the Environment that you'll be
     uploading.
@@ -60,15 +60,12 @@ After you finish adding all your scene content, the next step is to build the sc
 1. You'll receive a confirmation dialogue as shown below. Select
     **Close**.
 
-    ![A screenshot of a computer screen Description automatically
-    generated with medium
-    confidence](../../media/make-your-environment-available-for-events/image017.jpg)
+    ![A screenshot of a dialog showing the create operation was successful](../../media/make-your-environment-available-for-events/image017.jpg)
 
     You should now be in the **Update Environment** tab of the **Mesh
     Environments** window.
 
-    ![A screenshot of a computer Description automatically
-    generated](../../media/make-your-environment-available-for-events/003-uploader-update.png)
+    ![A screenshort of the Mesh Uploader window on the Update Environment tab](../../media/make-your-environment-available-for-events/003-uploader-update.png)
 
     Note that in the **Environment Configurations** section, you already
     have an Environment configuration created which displays the name you
@@ -81,12 +78,7 @@ After you finish adding all your scene content, the next step is to build the sc
     project that you want as the Environment. In this example, we're
     using the Mesh sample project *Dartroom*, so our chosen scene will be the scene also named *DartRoom*.
 
-    ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/004-scene-select.png)
-
-1.  Select **Include thumbnails** and then, in the popup menu, choose
-    **Generate Thumbnails**.
-
-    ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/image020.png)
+    ![A screenshot of the Mesh Uploader window with the select scene popup opened](../../media/make-your-environment-available-for-events/004-select-scene.png)
 
 1. In the **Build for Platforms** section, you choose which platforms
     to build for. Note that when a button background is gray, the button
@@ -96,30 +88,30 @@ After you finish adding all your scene content, the next step is to build the sc
     - To build for PC only, make sure that only the PC button ("Mesh
         app on PC", the button on the left) is "on."
 
-        ![A screen shot of a computer Description automatically generated with low confidence](../../media/make-your-environment-available-for-events/image021.jpg)
+        ![A screen shot of the PC and Android platforms buttons with PC selected](../../media/make-your-environment-available-for-events/image021.jpg)
 
     - To build for Android only, make sure that only the Android button ("Mesh app on Quest", the button on the right) is "on."
 
-        ![A screen shot of a computer Description automatically generated with low confidence](../../media/make-your-environment-available-for-events/image022.jpg)
+        ![A screen shot of the PC and Android platforms buttons with Android selected](../../media/make-your-environment-available-for-events/image022.jpg)
 
     - To build for both PC and Android, make sure that both buttons are "on."
 
-        ![A screen shot of a computer Description automatically generated with low confidence](../../media/make-your-environment-available-for-events/image023.jpg)
+        ![A screen shot of the PC and Android platforms buttons with both platforms selected](../../media/make-your-environment-available-for-events/image023.jpg)
 
 ## Build and publish the Environment
 
 1. Select the **Build and Publish** button.
 
-    ![A screen shot of a computer Description automatically generated with medium confidence](../../media/make-your-environment-available-for-events/image024.jpg)
+    ![A screen shot of the lower part of the Mesh Uploader window highlighting the Build & Publish button](../../media/make-your-environment-available-for-events/image024.jpg)
 
 1.  If the Environment builds and uploads successfully, the **Build and
     Upload Results** dialog appears and confirms the results.
 
-    ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/005-build-succeeded.png)
+    ![A screenshot of the dialog shown with the sucessful results of the build and upload operation](../../media/make-your-environment-available-for-events/005-build-succeeded.png)
 
     If the build and upload process fails, this is confirmed in the **Build and Upload** Results dialog:
 
-    ![A screenshot of a computer program Description automatically generated with medium confidence](../../media/make-your-environment-available-for-events/006-build-failed.png)
+    ![A screenshot of the dialog shown with the failed results of the build and upload operation](../../media/make-your-environment-available-for-events/006-build-failed.png)
 
 ## Environment thumbnails
 
@@ -133,7 +125,7 @@ You can customize the thumbnails from your environment in two ways:
 
 ### Option 1 - Adding the thumbnail camera
 
-To add the thumbnail camera to the scene and sets its view:
+To add the thumbnail camera to the scene and set its view:
 
 1. In the **Scene** window, adjust the view so that it shows what you
     want to display in the thumbnail (the Thumbnail Camera's view will
@@ -142,14 +134,14 @@ To add the thumbnail camera to the scene and sets its view:
 1. Select the "+" drop-down located below the **Hierarchy** tab, and
     then select **Mesh Toolkit > Thumbnail Camera**.
 
-    ![A screenshot of a computer program Description automatically generated with medium confidence](../../media/make-your-environment-available-for-events/007-add-thumbnail-camera.png)
+    ![A screenshot of Unity hierarchy menu popup showing the option to add a Thumbnail camera](../../media/make-your-environment-available-for-events/007-add-thumbnail-camera.png)
 
 1. To confirm that the view in the Thumbnail Camera is what you want,
     in the **Hierarchy**, select **MeshThumbnailCamera**. The Camera's
     view appears in a small window in the lower right of the **Scene**
     view.
 
-    ![A screenshot of a computer program Description automatically generated with medium confidence](../../media/make-your-environment-available-for-events/008-thumbnail-view.png)
+    ![A screenshot of Unity inspector and scene view highlighting the thumbnail camera view](../../media/make-your-environment-available-for-events/008-thumbnail-view.png)
 
     **Note**: If you decide you want a different view for the Thumbnail
     Camera, you can adjust it directly in the **Scene** view or change its
@@ -164,7 +156,7 @@ To add the thumbnail camera to the scene and sets its view:
 
 1. On the **Update Environment** tab make sure you have the correct Environment and scene selected than check the **Custom Thumbnails** field and choose the **Generate from Thumbnail Camera** option.
 
-    ![A screenshot of a computer program Description automatically generated with medium confidence](../../media/make-your-environment-available-for-events/009-select-custom-thumbnail.png)
+    ![A screenshot of Mesh Uploader in the Update Environment tab highlighting the Custom Thumbnails field with the Generate from Thumbnails camera option selected](../../media/make-your-environment-available-for-events/009-select-custom-thumbnail.png)
 
 1. Once you are ready to publish your Environment click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
 
@@ -178,7 +170,7 @@ If you prefer to have static images as thumbnails you can choose to select the i
 
 1. On the **Update Environment** tab make sure you have the correct Environment and Scene selected than check the **Custom Thumbnails** field and choose the **Take from folder** option. The default folder is shown and you can either add your images to this folder or choose a different folder.
 
-    ![A screenshot of a computer program Description automatically generated with medium confidence](../../media/make-your-environment-available-for-events/010-thumbnail-from-folder.png)
+    ![A screenshot of Mesh Uploader in the Update Environment tab highlighting the Custom Thumbnails field with the Take from folder option selected and highlighting the button to choose a different folder](../../media/make-your-environment-available-for-events/010-thumbnail-from-folder.png)
 
     **Note**: To choose a new folder for your thumbnails click on the button highlighted in yellow.
 
