@@ -45,7 +45,7 @@ This error has been identified to be a build error.
 ## When joining an event in the Mesh app, the app doesn't play
 
 1. Ensure that the scene plays as expected when you preview it locally.
-2. Ensure that the deployed environment matches the scene.map used by the Mesh App. To learn more about how this happens, see [the Mesh Scripting Getting Started Guide](Mesh_Scripting_Getting_Started_Guide.md#serialize-scene). TBD
+2. Ensure that the deployed environment matches the scene.map used by the Mesh App. To learn more about how this happens, see [the Mesh Scripting Getting Started Guide](./cloud-scripting-getting-started.md).
     1. In the Unity project, navigate to the **Mesh Cloud Scripting** component and then press `Serialize Scene` to force scenegraph serialization.
     2. Re-upload your environment with the Mesh Uploader.
     3. Re-deploy your Mesh App with the [CLI tool](Mesh_Scripting_Getting_Started_Guide.md#deploy-application-and-interactive-world-template).
