@@ -105,11 +105,9 @@ As you explore our other sample projects, you'll find various instances of Mesh 
 
 * Advanced Unity skills.
 
-* A username and password for the Azure Portal so you can upload your work.
-
 * Your account must be added as a Contributor to the Mesh world you’re trying to publish to TBD. If you’re unsure about this, check with your IT admin.
 
-* There must be an existing Mesh World in the Azure Portal that you can upload your work to. To learn more about setting this up, see our document titled *Mesh IT Admin Guide* TBD.  
+* There must be an existing Mesh World in the Mesh Portal that you can upload your work to. 
 
 * There must be an existing Unity project that contains the Mesh Uploader (in Mesh terms, this project is used to create an *Environment*), or you must create one. To learn more about creating one, see our document titled *Get Started with Mesh Environments*. TBD
 
