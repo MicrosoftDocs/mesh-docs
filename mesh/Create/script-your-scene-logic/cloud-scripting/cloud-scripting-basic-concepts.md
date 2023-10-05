@@ -43,7 +43,7 @@ In order to enable Mesh Cloud Scripting, your scene must have a *Mesh Cloud Scri
 
 ![A screen shot of the MeshApp component that's attached to the MeshApp GameObject.](../../../media/mesh-scripting/basic-concepts/009-meshapp-component.png)
 
-The component is responsible for managing the scripts you create and binding them to the Unity scene both at edit time and runtime in the Mesh Browser. MeshApp is a standalone technology but it has a tight integration with Unity. You can find instructions for adding the MeshApp GameObject in the *Getting Started Guide* section and more detailed information about scripting in the *Programmer's Guide* section. TBD
+The component is responsible for managing the scripts you create and binding them to the Unity scene both at edit time and runtime in the Mesh Browser. MeshApp is a standalone technology but it has a tight integration with Unity. You can find instructions for adding the MeshApp GameObject in the *Getting Started Guide* section and more detailed information about scripting in the [Programmer's Guide](cloud-scripting-programmers-guide.md) section.
 
 Cloud Scripting scene graph is limited to GameObjects that you add to the scene under Mesh Cloud Scripting component GameObject.
 
