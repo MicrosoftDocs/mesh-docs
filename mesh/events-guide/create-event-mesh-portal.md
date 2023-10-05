@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
 
 # Create an event in the Mesh portal
 
-This is a test update for a video.
+This is a test update for a video!
 
 Use the Mesh portal to create and manage events, Mesh worlds, and custom environments. Once events are made, Mesh events show up in your Outlook or Teams calendar with a direct link that people can use to join events, making inviting and joining events quicker.
 
