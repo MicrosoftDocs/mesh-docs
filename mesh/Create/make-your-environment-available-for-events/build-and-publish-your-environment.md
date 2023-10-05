@@ -115,8 +115,7 @@ After you finish adding all your scene content, the next step is to build the sc
 
 ## Environment thumbnails
 
-Adding a custom thumbnail image that will be
-added to your Environment listings in the Mesh Portal or Mesh App comes in handy when you're selecting Environments in either place because it gives you a visual reminder of what the Environment looks like.
+Adding a custom thumbnail image that will be added to your Environment listings in the Mesh Portal or Mesh App comes in handy when you're selecting Environments in either place because it gives you a visual reminder of what the Environment looks like.
 
 You can customize the thumbnails from your environment in two ways:
 
@@ -137,8 +136,7 @@ To add the thumbnail camera to the scene and set its view:
     ![A screenshot of Unity hierarchy menu popup showing the option to add a Thumbnail camera](../../media/make-your-environment-available-for-events/007-add-thumbnail-camera.png)
 
 1. To confirm that the view in the Thumbnail Camera is what you want,
-    in the **Hierarchy**, select **MeshThumbnailCamera**. The Camera's
-    view appears in a small window in the lower right of the **Scene**
+    in the **Hierarchy**, select **MeshThumbnailCamera**, you should see what the thumbnails will look like in the default camera view window which usually is on a small window in the lower right of the **Scene**
     view.
 
     ![A screenshot of Unity inspector and scene view highlighting the thumbnail camera view](../../media/make-your-environment-available-for-events/008-thumbnail-view.png)
@@ -158,9 +156,9 @@ To add the thumbnail camera to the scene and set its view:
 
     ![A screenshot of Mesh Uploader in the Update Environment tab highlighting the Custom Thumbnails field with the Generate from Thumbnails camera option selected](../../media/make-your-environment-available-for-events/009-select-custom-thumbnail.png)
 
-1. Once you are ready to publish your Environment click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
+1. Once you are ready to publish your Environment, click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
 
-    **Note**: If you uncheck the **Custom Thumbnails** field the thumbnails from your Environment will be removed, so make sure this is always checked when you do **Build & Publish**
+    **Note**: If you uncheck the **Custom Thumbnails** field the thumbnails from your Environment will be replace by the default thumbnail image, so make sure this is always checked when you do **Build & Publish**
 
 ### Option 2 - Custom thumbnail folder
 
@@ -168,7 +166,7 @@ If you prefer to have static images as thumbnails you can choose to select the i
 
 1. Open the **Mesh Uploader**, on the menu bar, select **Mesh Toolkit** > **Environments**.
 
-1. On the **Update Environment** tab make sure you have the correct Environment and Scene selected than check the **Custom Thumbnails** field and choose the **Take from folder** option. The default folder is shown and you can either add your images to this folder or choose a different folder.
+1. On the **Update Environment** tab make sure you have the correct Environment and Scene selected. Then check the **Custom Thumbnails** field and choose the **Take from folder** option. The default folder is shown and you can either add your images to this folder or choose a different folder.
 
     ![A screenshot of Mesh Uploader in the Update Environment tab highlighting the Custom Thumbnails field with the Take from folder option selected and highlighting the button to choose a different folder](../../media/make-your-environment-available-for-events/010-thumbnail-from-folder.png)
 
@@ -176,7 +174,7 @@ If you prefer to have static images as thumbnails you can choose to select the i
 
 1. The thumbnail images need to follow a specific name pattern, the easier way to follow that is to click on the button **Add provisional thumbnails** which will add three images to the folder selected with the correct names and sizes, you can then replace those images with the images you like, just remember to keep their names and try to follow their sizes for a better UI experience.
 
-1. Once you are ready to publish your Environment click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
+1. Once you are ready to publish your Environment, click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
 
 ## Next steps
 
