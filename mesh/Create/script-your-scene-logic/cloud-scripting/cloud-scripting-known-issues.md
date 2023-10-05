@@ -19,7 +19,7 @@ Some users are experiencing an error during deploy and publish that shows the a 
 
 ### Environment Upload Hangs
 
-If environment upload process never completes or hangs, refer to [Mesh APP CLI Tool]() TBD on how to deploy manually.
+If the Environment upload process never completes or hangs, refer to [Mesh APP CLI Tool](/cloud-scripting-getting-started.md#mesh-app-cli-tool) on how to deploy manually.
 
 ### Server app not updated with new changes
 
@@ -35,9 +35,6 @@ Internal ID: [39431]
 
 1. Space characters aren't allowed in the path to a Unity project
 1. Space characters aren't allowed in Unity folder and scene names.
-
-### The scene must be manually saved before uploading the template
-Refer to [this workaround](./Troubleshooting.md#when-joining-event-in-meshbrowser-scene-is-completely-different). TBD
 
 ### The performance of deployed apps with high frequency messages is sub optimal
 

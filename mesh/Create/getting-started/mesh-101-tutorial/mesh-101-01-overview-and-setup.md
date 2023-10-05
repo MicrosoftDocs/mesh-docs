@@ -51,7 +51,7 @@ This article: Overview and setup
 
 ## Terminology
 
-In Mesh terms, the project you create in Unity and then upload to the Mesh Portal or Azure Portal is called an *Environment*.
+In Mesh terms, the project you create in Unity and then upload to the Mesh Portal is called an *Environment*.
 
 ## Prerequisites
 

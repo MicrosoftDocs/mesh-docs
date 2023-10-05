@@ -43,7 +43,7 @@ In order to provide interactive capability for game objects (in other words, mak
 
 ![A screen shot of the MeshApp component that's attached to the MeshApp GameObject.](../../../media/mesh-scripting/basic-concepts/009-meshapp-component.png)
 
-The component is responsible for managing the scripts you create and binding them to the Unity scene both at edit time and runtime in the Mesh Browser. MeshApp is a standalone technology but it has a tight integration with Unity. You can find instructions for adding the MeshApp GameObject in the *Getting Started Guide* section and more detailed information about scripting in the *Programmer's Guide* section. TBD
+The component is responsible for managing the scripts you create and binding them to the Unity scene both at edit time and runtime in the Mesh Browser. MeshApp is a standalone technology but it has a tight integration with Unity. You can find instructions for adding the MeshApp GameObject in the [Getting Started](cloud-scripting-getting-started.md) article and more detailed information about scripting in the [Programmer's Guide](cloud-scripting-programmers-guide.md)
 
 Any further GameObjects that you add to the scene must be added as child objects to the MeshApp GameObject.
 
@@ -61,7 +61,7 @@ The Mesh API allows cloning of nodes. If the app makes a clone of "A" (which cor
 
 ## Authoring Mesh Cloud Scripting
 
-Detailed instructions on Mesh Cloud Scripting can be found in the *Getting Started* and *Programmer's Guide* articles TBD. Here, we give a brief overview.
+Detailed instructions on Mesh Cloud Scripting can be found in the [Getting Started](cloud-scripting-getting-started.md) and [Programmer's Guide](cloud-scripting-programmers-guide.md) articles. Here, we give a brief overview.
 
 A typical Unity project containing a scene with an associated MeshApp would look as follows on disk (the folders are shown as bold):
 
