@@ -111,7 +111,7 @@ After your environment was uploaded, you will be able to see for what platforms 
 ![A screenshot of supported platforms](../../media/make-your-environment-available-for-events/uploader_build_platforms.png)
 
 If you make several iteration of uploading same Environment for different platforms, platforms from only last iteration will be available.
-For example, if you built and published Environment for PC platform, but later build and publish same Environment for Android, this Envuronment won't be avaliable for PC anymore (until you build and publish it again). 
+For example, if you built and published Environment for PC platform, but later build and publish same Environment for Android, this Environment won't be avaliable for PC anymore (until you build and publish it again). 
 
 
 ## Environment thumbnails
