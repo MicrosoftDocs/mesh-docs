@@ -82,7 +82,7 @@ headset. Since desktop PCs typically have far more power than mobile
 devices using Android, when you're creating your own project, there are
 several potential scenarios to consider: build and publish your scene
 for PC only, Android only, or both PC and Android. For this tutorial, we'll build for both PC and Android. To learn more about
-building for single and multiple platforms, see our article titled [Build for single and multiple platforms](../../design/build-your-basic-environment/build-for-single-and-multiple-platforms.md).
+building for single and multiple platforms, see our article titled [Build for single and multiple platforms](../../build-your-basic-environment/build-for-single-and-multiple-platforms.md).
 
 ### Update your Environment
 
@@ -136,4 +136,4 @@ Portal.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Chapter 6: Create an Event and invite others](mesh-101-6-create-an-event-and-invite-others.md)
+> [Chapter 6: Create an Event and invite others](mesh-101-06-create-an-event-and-invite-others.md)
