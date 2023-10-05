@@ -10,9 +10,6 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 # Preparing your organization for Mesh
 
-> [!IMPORTANT]
-> We thank you for your patience in this transition. In the coming weeks we will provide more up-to-date information regarding our transition to M365 and how to prepare your organization for that.
-
 ## Gather Your v-team
 
 This page covers the required tasks and suggest functional roles
@@ -40,9 +37,11 @@ Resources may also need to be consulted.
 
 To participate in the public preview, you must agree to the terms of use and privacy statements. You should be in contact with your legal and privacy teams to review those terms before accepting them.
 
-> ## Verify Your Licensing
+## Verify Your Licensing
 
-For immersive spaces for Teams, your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5. For Microsoft Mesh, a Teams Premium license is required during the Public Preview. If you plan to use Mesh cloud scripting, you must also have an Azure subscription.
+For immersive spaces for Teams, your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5. For Microsoft Mesh, a Teams Premium license is required during the Public Preview. If you plan to use Mesh scripting, you must also have an Azure subscription.
+
+For Microsoft Mesh, a Teams Premium license is required during the Public Preview. If you plan to use Mesh cloud scripting, you must also have an Azure subscription with storage.
 
 If your organization plans to create custom worlds for Microsoft Mesh,
 your world building team will need licenses for Unity.
