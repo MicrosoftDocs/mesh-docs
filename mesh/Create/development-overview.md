@@ -25,9 +25,9 @@ The Mesh toolkit provides a collection of packages for Unity that enable you to 
 
 **The Mesh toolkit includes:**
 
-* [Cloud Scripting](script-your-scene-logic/cloud-scripting-basic-concepts.md), used to add business logic to Mesh events via cloud hosted .NET applications.
+* [Cloud Scripting](script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md), used to add business logic to Mesh events via cloud hosted .NET applications.
 
-* [Visual Scripting](script-your-scene-logic/visual-scripting.md), which lets you add interactivity and dynamic runtime behavior to your Mesh environments without writing code. For more information, see our document titled "Mesh Visual Scripting Guide."
+* [Visual Scripting](script-your-scene-logic/visual-scripting/visual-scripting.md), which lets you add interactivity and dynamic runtime behavior to your Mesh environments without writing code. For more information, see our document titled "Mesh Visual Scripting Guide."
 
 * Graphics Tools, a package with scripts, shaders, assets, and samples created to help improve the visual fidelity of Mesh worlds while staying within performance budgets.
 
