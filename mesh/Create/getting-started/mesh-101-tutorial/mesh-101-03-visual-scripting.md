@@ -18,29 +18,6 @@ Now that we've completed the setup phase, let's move on to making your GameObjec
 >
 > - Mesh Scripting isn't required for every Environment, but you'll need it for the features we'll be adding here: making a button interactive, triggering an informational text popup, and teleporting around the scene.
 
-## Choose the NavMesh layer
-
-For this project, we want our avatar to be able to walk around only on
-the floors inside the *Sphere Terrace* objects and the floor of a
-platform that's attached to one of the wind turbine generators. For
-these areas to be walkable, they must be on the *NavMesh* layer. Let's
-add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
-
-1. In the **Hierarchy**, expand the **Chapter 3** GameObject.
-
-1. Select the **Sphere Terrace** GameObject that's a child object to
-    the **Chapter3** GameObject.
-
-    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/402-sphere-terrace.png)
-
-1. In the **Inspector**, select the **Layer** drop-down and then choose
-    **NavMesh**.
-
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image025.png)
-
-You don't have to add the other walkable GameObjects to the NavMesh
-layer---we've already done it for you.
-
 ## Station 3.1: Create an Interactable Button
 
 For our first task, we want to create a button that will play a video
@@ -172,7 +149,7 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 >
 > This component is added automatically at runtime to interactable bodies; it exposes various properties to Visual Scripting such as *IsHovered* and *IsSelected*, which will come in handy in a moment.
 >
-> You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Playmode tint has been changed to blue. This can help you to tell at a glance which mode you're in. To change the Playmode tint:
+> You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Play mode tint has been changed to blue. This can help you to tell at a glance which mode you're in. To change the Play mode tint:
 >
 >1. On the menu bar, select **Edit** > **Preferences**.
 >1. In the left-side menu, select **Colors**.
@@ -228,7 +205,7 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/419-add-negate-node.png)
 
-1. Drag a connector from the data input port of the "Negate" node and create a new *Get Object Variable* node. (In the Fuzzy Finder, search for "get object variable".)
+1. Drag a connector from the data input port of the "Negate" node and then create a new *Get Object Variable* node. (In the Fuzzy Finder, search for "get object variable".)
 1. In the **Set Object Variable" node, click the variable name drop-down and then select "isPlaying."
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/420-get-object-is-playing.png)
@@ -247,7 +224,7 @@ Now we'll add the nodes that detect if *isPlaying* changes and plays or stops th
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/422-on-state-changed-second.png)
 
-1. Drag a connector from the control output port of the "On State Changed" node and then create a new *if* node. (In the Fuzzy Finder, search for "if".)
+1. Drag a connector from the control output port of the "On State Changed" node and then create a new *If* node. (In the Fuzzy Finder, search for "if".)
 1. Drag a connector from the data output port of the "On State Changed" node and then connect it to the data input port of the *if* node.
 
     ![A screenshot of a video play Description](../../../media/sample-mesh-101/423-if-node.png)
@@ -400,6 +377,9 @@ For this feature, we'll enhance an existing visual script that causes an info di
 1. Walk towards the button. At a certain point, the button stops rotating, signaling that you can now select it.
 
 1. Select the button. The info dialog appears and displays the message you added to the **Show Dialog** node earlier.
+
+> [!NOTE]
+> The appearance of the info dialog in Play mode is different than how it will appear in Mesh, where it will appear much like the other panels in the Sphere Terrace.
 
 1. When you're finished with the info dialog, click its **Continue** button. Note that after you click the button, it disappears. To use the button again, you must exit and then re-enter Play mode.
 
