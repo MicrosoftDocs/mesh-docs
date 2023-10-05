@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, toolkit
 
 # Samples Overview
 
-The Mesh samples are a great way to learn about the different kinds of Mesh Experiences you can create and the features you add  to an Experience. They can also be used as a starting point for your custom Experience; each project is already set up with the packages you need and contains many assets that you might find useful.
+The Mesh samples are a great way to learn about the different kinds of Mesh Experiences you can create and the features you can add to an environment. They can also be used as a starting point for your custom environment; each project is already set up with the Mesh Toolkit package and contains many assets that you might find useful.
 
 ## Mesh samples
 
@@ -28,9 +28,9 @@ The Mesh samples are a great way to learn about the different kinds of Mesh Expe
 
 **To start with a sample**:
 
-1. If you haven't done so already, [download and unzip the Mesh toolkit](download-the-mesh-toolkit.md).
+1. If you haven't done so already, [download and unzip the Mesh samples](download-mesh-samples.md).
 
-1. In the Unity Hub, select **Open** > **Add project from disk**, and then navigate to the **Mesh-Toolkit-Unity-main** folder that contains your samples.
+1. In the Unity Hub, select **Open** > **Add project from disk**, and then navigate to the folder you extracted that contains the samples.
 
 1. Open the sample project you want. 
 

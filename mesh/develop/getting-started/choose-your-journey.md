@@ -28,7 +28,7 @@ You can start with a sample project to quickly get inspired about what you can b
 
 ## Update an existing project or create a new one
 
-You can make an existing Unity project Mesh-capable by [setting up access to the Mesh Toolkit](../build-your-basic-environment/access-the-mesh-toolkit.md) or simply [create a new 3D URP (Core) project](../build-your-basic-environment/create-a-new-project-or-update.md) and then start building your Mesh experience from scratch. 
+You can [create a new 3D URP (Core) project or update an existing Unity project](../build-your-basic-environment/create-a-new-project-or-update.md) to start building your Mesh environment.
 
 ## Next Steps
 

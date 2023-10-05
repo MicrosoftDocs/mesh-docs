@@ -23,17 +23,17 @@ If a Mesh Cloud Scripting stage during the Uploader process failed and the error
 ### After pressing play in Unity, nothing happens
 
 1. Check Unity logs for any errors. In particular, if your Mesh Cloud Scripting code has a compile error, you'll see "Cloud Scripting build failed" in your error log. In this case, open the csproj file for your Mesh Cloud Scripting and fix the errors (if you build from Visual Studio, it'll show you the errors more conveniently in the build output).
-1. If there are other errors, review this document for additional troubleshooting information on particular errors.
+1. If there are other errors, review this page for additional troubleshooting information on particular errors.
 1. If there are no errors, there might be runtime errors in your Mesh Cloud Scripting code. Attach to your application with the debugger and inspect the output for any errors.
 1. If nothing helps, [report a bug](#how-to-report-issues).
 
 ### When joining an event in the Microsoft Mesh application, the Mesh Cloud Scripting doesn't work
 
 1. Ensure that the scene plays as expected when you preview it locally in Unity.
-2. Ensure that the deployed environment matches the scene.map used by the Mesh App.
+2. Ensure that the deployed environment matches the scene.map used by the Mesh Cloud Scripting service.
     1. In the Unity project, navigate to the **Mesh Cloud Scripting** component and then press `Serialize Scene` to force scene graph serialization.
     1. Re-upload your environment with the Mesh Uploader.
-1. Test your local Unity version [against the deployed app](cloud-scripting-getting-started.md#connect-to-the-cloud-scripting-service-from-unity).
+1. Test your local Unity version [against the deployed service](cloud-scripting-getting-started.md#connect-to-the-cloud-scripting-service-from-unity).
    - Check the logs in Unity for any errors if not working.
 1. If nothing helps, [report a bug](#how-to-report-issues).
    - Inspect [Mesh Cloud Scripting logs](#how-to-collect-logs), and include relevant information where possible in your bug report.
@@ -103,7 +103,7 @@ In the query Monitoring pane, you can select the logs you’re interested in. At
 
 Skip if you checked "Enable App Monitoring" during deployment.
 
-A Log Analytics workspace is required for this setup. If you don't have an existing workspace, follow the official [guide](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal).
+A Log Analytics workspace is required for this setup. If you don't have an existing workspace, follow the official [guide](https://learn.microsoft.com/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal).
 
 1. Open Azure Portal and navigate to the AppService resource in which your Mesh Cloud Scripting Service is running.
 2. Click the "Monitoring" tab and scroll to the bottom of the page. Click the "Configure Azure Monitor" button
@@ -131,8 +131,3 @@ A Log Analytics workspace is required for this setup. If you don't have an exist
 
 1. [Collect](#how-to-collect-logs) all the logs available.
 1. Follow [feedback](../../../Resources/feedback.md) guidance.
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [visual scripting](visual-scripting.md)

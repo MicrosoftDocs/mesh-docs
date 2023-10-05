@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, Mesh physics, physics, environments, interactions
 
 # Mesh Physics
 
-In a Mesh experience, physics simulation is key to enabling engaging dynamic content. In order to provide Mesh participants with high quality shared physics experiences and offer developers a productive workflow in creating custom content, we've created the *Mesh Physics* system (usually referred to as "Mesh Physics" in this document). Mesh Physics is based on local authoritative simulation, which results in a very simple architecture. There's no need for server-side logic and special logic on the clients. Most importantly, this approach results in a very responsive and low-latency experience for each player interacting with their environment, even when connected to a high-latency network.
+In a Mesh experience, physics simulation is key to enabling engaging dynamic content. In order to provide Mesh participants with high quality shared physics experiences and offer developers a productive workflow in creating custom content, we've created the *Mesh Physics* system. Mesh Physics is based on local authoritative simulation, which results in a very simple architecture. There's no need for server-side logic and special logic on the clients. Most importantly, this approach results in a very responsive and low-latency experience for each player interacting with their environment, even when connected to a high-latency network.
 
 Here's a sampling what you can do with Mesh Physics features:
 
@@ -152,10 +152,6 @@ By default, Mesh Playmode runs with a single player. To add a second player with
 
   ![___](../../media/physics-interactions/001-initial-count.png)
 
-### Upload your own Environment to your Mesh World
-
-To learn about uploading your Environment to your Mesh World, see the article named [Build and publish your Environment](../make-your-environment-available-for-events/build-and-publish-your-environment.md).
-
 ## General tips for building Mesh Physics experiences
 
 You can start with scanning the Unity physics docs: `https://docs.unity3d.com/Manual/PhysicsOverview.html`. There are plenty of resources available on how to optimize physics in Unity.
@@ -231,7 +227,7 @@ Allows to accelerate/decelerate a rigid body until it reaches a specific target 
 
 ![Screen shot of the Directional Velocity Field script options in the Inspector.](../../media/physics-interactions/053-directional-velocity-field.png)
 
-This component controls both the magnitude and the direction of velocity. See [Velocity Magnitude](#velocity-magnitude) to control only magnitude and [Velocity Direction](#velocity-direction) to control only direction.
+This component controls both the magnitude and the direction of velocity. See [Velocity Magnitude Field](#velocity-magnitude-field) to control only magnitude and [Velocity Direction Field](#velocity-direction-field) to control only direction.
 
 This component has two modes of operation:
 
@@ -567,12 +563,6 @@ Some components, such as Sticky Body, have a **Body Filter** setting (usually na
 This setting makes only Game Objects that meet certain preconditions eligible to trigger events. There are four main preconditions&#8212;to view them, click the plus sign ("+") button to the right of **Body Filter:**
 
 ![___](../../media/physics-interactions/007-trigger-preconditions.png)
-
-Some components may have one or more [Shared Events](#shared-events) that trigger an Action. The same preconditions that are available through the **Body Filter** setting can be applied to an Action.
-
-![___](../../media/physics-interactions/049-use-body-precondition.png)
-
-![___](../../media/physics-interactions/050-body-precondition-options.png)
 
 To understand the first precondition, **Game Object Name**, let’s imagine that there’s a dart game in your scene and you have numerous dart Game Objects that are named Dart01, Dart02, Dart03, and so on. You want any dart, but *only* darts, to be eligible to trigger events, so you filter for any Game Object that starts with the four letters "Dart".
 

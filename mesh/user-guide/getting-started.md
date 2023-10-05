@@ -17,7 +17,7 @@ Join an event in Microsoft Mesh to experience spatial interaction and feel a sen
 ### Download Microsoft Mesh on PC
 
 > [!div class="nextstepaction"]
-> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1)
+> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7)
 
 ### Download Microsoft Mesh for Meta Quest devices
 
@@ -32,7 +32,7 @@ Need help? See [how to download Mesh on Quest 2 via App Lab](../Resources/mesh-t
 
 Learn how to organize, customize, and produce events in Mesh.
 
-:::image type="content" source="media/Events-customization.gif" alt-text="Events cutsomizer gif in Microsoft Mesh":::
+![Events cutsomizer gif in Microsoft Mesh](media/Events-customization.gif)
 
    > [!div class="nextstepaction"]
    > [Organizing events overview](../events-guide/events-overview.md)
@@ -41,7 +41,7 @@ Learn how to organize, customize, and produce events in Mesh.
 
 See how to join your first event and learn how to use Microsoft Mesh.
 
-:::image type="content" source="../media/mesh-event-producer-guide/Join-event-link-calendar.gif" alt-text="Join a Mesh event using the calendar invite link":::
+![Join a Mesh event using the calendar invite link](../media/mesh-event-producer-guide/Join-event-link-calendar.gif)
 
 > [!div class="nextstepaction"]
 > [Join an Event](join-an-event.md)

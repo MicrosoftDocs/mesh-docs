@@ -8,7 +8,7 @@ ms.topic: Tutorial
 keywords: Microsoft Mesh, Azure, admin, documentation, features, Mesh Cloud Scripting, scripting
 ---
 
-# Set Cloud Scripting infrastructure in Azure
+# Set up Cloud Scripting infrastructure in Azure
 
 ## Mesh Cloud Scripting Service cloud infrastructure deployment
 
@@ -269,6 +269,3 @@ If you receive this error, “This region has quota of 0 PremiumV2 instances for
 
    > [!div class="nextstepaction"]
    > [Getting started with cloud scripting](cloud-scripting-getting-started.md)
-
-   > [!div class="nextstepaction"]
-   > [Mesh scripting overview](mesh-scripting-overview.md)

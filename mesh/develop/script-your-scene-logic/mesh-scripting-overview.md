@@ -27,7 +27,7 @@ Mesh Visual Scripting makes it easy to build:
 
 ... and much more! 
 
-For an introduction to how Visual Scripting works with Mesh, we recommend our [Mesh 101 tutorial](../getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md). The tutorial takes you step-by-step through the process of building several interactive Mesh features using script graphs. The tutorial project also contains a completed tutorial scene that you can use as a starting point for your own custom Mesh experience. You can find the Mesh 101 tutorial in the Samples folder of the [Mesh Toolkit](../../develop/mesh-toolkit-overview.md).
+For an introduction to how Visual Scripting works with Mesh, we recommend our [Mesh 101 tutorial](../getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md). The tutorial takes you step-by-step through the process of building several interactive Mesh features using script graphs. The tutorial project also contains a completed tutorial scene that you can use as a starting point for your own custom Mesh experience.
 
 [Learn more about Mesh Visual Scripting](visual-scripting/visual-scripting-overview.md)
 
@@ -50,7 +50,7 @@ The development workflow and model for Mesh Cloud Scripting is very similar to r
 - Add interactivity and dynamic runtime behavior to your Mesh Environments without writing code.
 - Enables client-side scripting.
 - Allows low latency operations such as custom tethered objects from the character’s viewpoint.
-- Server deployment can be hard or even impossible in some organizations. Mesh Visual Scripting is simpler to get started with than Mesh Cloud Scripting because it can work “standalone” without a MeshApp server deployment.
+- Server deployment can be hard or even impossible in some organizations. Mesh Visual Scripting is simpler to get started with than Mesh Cloud Scripting because it can work “standalone” without a server deployment.
 
 ## Benefits of using Mesh Cloud Scripting
 

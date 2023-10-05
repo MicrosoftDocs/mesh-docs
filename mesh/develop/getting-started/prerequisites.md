@@ -1,6 +1,6 @@
 ---
 title: Prerequsites for Mesh development
-description: Prerequisites required for Mesh development, including Unity and Azure information.
+description: Prerequisites required for Mesh development, including Unity information.
 author: typride
 ms.author: vinnietieto
 ms.date: 10/2/2023

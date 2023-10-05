@@ -14,7 +14,7 @@ This article will help you configure your development environment and start iter
 
 ## Software dependencies
 
-1. [.NET 6.0 SDK Windows](https://dotnet.microsoft.com/en-us/download)
+1. [.NET 6.0 SDK Windows](https://dotnet.microsoft.com/download)
 1. [Azure CLI 2.40.0](https://learn.microsoft.com/cli/azure/install-azure-cli)
 
 ## Create a Scene with Mesh Cloud Scripting
@@ -30,11 +30,11 @@ The following instructions show how to create a simple environment with a cube t
 
 1. On the menu bar, select **GameObject** > **Mesh Toolkit** > **Set-up Cloud Scripting**.
 
-   ![Screen shot of the Create Mesh App menu item.](../../../media/mesh-scripting/getting-started/002-create-mesh-app.png)
+   ![Screen shot of the Set up Cloud Scripting menu item.](../../../media/mesh-scripting/getting-started/002-setup-cloud-scripting.png)
 
-   Note that a game object named **Mesh Cloud Scripting** appears in the **Hierarchy** and is selected. This also creates a new [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/razor-pages/web-sdk?view=aspnetcore-6.0) project under `Assets/.MeshCloudScripting/MyFirstCloudScripting`.
+   Note that a game object named **Mesh Cloud Scripting** appears in the **Hierarchy** and is selected. This also creates a new [ASP.NET Core](https://learn.microsoft.com/aspnet/core/razor-pages/web-sdk?view=aspnetcore-6.0) project under `Assets/.MeshCloudScripting/MyFirstCloudScripting`.
 
-   ![img](../../../media/mesh-scripting/getting-started/003-mesh-app-files.png)
+   ![img](../../../media/mesh-scripting/getting-started/003-cloud-scripting-files.png)
 
 1. You can use the **Open application folder** button to navigate to the project folder.
 
@@ -184,7 +184,7 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
 1. Go to the **Troubleshooting** tab in **Settings** and toggle the **Show Mesh scripting error** button.
 
-   ![img](../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_002.png)
+   ![img](../../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_002.png)
 
 ## Next steps
 

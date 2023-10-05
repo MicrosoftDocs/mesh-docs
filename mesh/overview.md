@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 To support a truly flexible workplace, organizations and employees need technology that helps them feel connected regardless of where they work. Over the years, we have learned that a thriving workplace fosters authentic human connections—allowing employees and teams to build meaningful relationships and trust so they can perform at their highest potential.
 
-According to Microsoft’s Work Trend Index report, 43 percent of leaders say relationship building is the [greatest challenge in remote and hybrid work](https://www.microsoft.com/en-us/worklab/work-trend-index/hybrid-work-is-just-work). Coming together in a physical space helps, but it’s not always possible—travel costs are prohibitive, real estate is expensive, and talent is increasingly dispersed. We need new ways for people to connect from different locations or geographies, using the tools they already have.
+According to Microsoft’s Work Trend Index report, 43 percent of leaders say relationship building is the [greatest challenge in remote and hybrid work](https://www.microsoft.com/worklab/work-trend-index/hybrid-work-is-just-work). Coming together in a physical space helps, but it’s not always possible—travel costs are prohibitive, real estate is expensive, and talent is increasingly dispersed. We need new ways for people to connect from different locations or geographies, using the tools they already have.
 
 ## Introducing Microsoft Mesh
 
