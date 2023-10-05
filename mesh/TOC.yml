@@ -1,8 +1,13 @@
-- name: Welcome to Mesh
-  href: overview.md
-- name: Release notes
-  items:
-  - name: What's new
-    href: avatars-release-notes.md
-  - name: Known issues
-    href: avatars-known-issues.md
+items:
+- name: Welcome to Microsoft Mesh
+  href: Overview.md
+- name: Set up and manage Mesh
+  href: Setup/toc.yml
+- name: Organize events
+  href: events-guide/toc.yml
+- name: Join events
+  href: user-guide/toc.yml
+- name: Develop environments
+  href: develop/toc.yml
+- name: Resources
+  href: Resources/toc.yml

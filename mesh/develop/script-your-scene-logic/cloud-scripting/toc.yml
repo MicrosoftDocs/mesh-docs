@@ -1,0 +1,11 @@
+items:
+  - name: Cloud scripting basic concepts
+    href: cloud-scripting-basic-concepts.md
+  - name: Cloud scripting setup infrastructure
+    href: cloud-scripting-setup-infrastructure.md
+  - name: Cloud scripting getting started
+    href: cloud-scripting-getting-started.md
+  - name: Cloud scripting programmer's guide
+    href: cloud-scripting-programmers-guide.md
+  - name: Cloud scripting troubleshooting
+    href: cloud-scripting-troubleshooting.md
