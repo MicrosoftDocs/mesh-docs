@@ -51,7 +51,7 @@ As you can see, there's already a video screen in place, but it needs a Play/Sto
 
     Make sure the **Transform** > **Position** values for **ButtonBase** are 0, 0, 0.
 
-**ButtonBase** is placed in the scene a little lower than where we want it. Let's fix that.
+    **ButtonBase** is placed in the scene a little lower than where we want it. Let's fix that.
 
 1. Ensure that **ButtonBase** is selected in the **Hierarchy**.
 
@@ -378,8 +378,8 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
 1. Select the button. The info dialog appears and displays the message you added to the **Show Dialog** node earlier.
 
-> [!NOTE]
-> The appearance of the info dialog in Play mode is different than how it will appear in Mesh, where it will appear much like the other panels in the Sphere Terrace.
+    > [!NOTE]
+    > The appearance of the info dialog in Play mode is different than how it will appear in Mesh, where it will appear much like the other panels in the Sphere Terrace.
 
 1. When you're finished with the info dialog, click its **Continue** button. Note that after you click the button, it disappears. To use the button again, you must exit and then re-enter Play mode.
 
@@ -407,8 +407,8 @@ examine the generator.
 
     ![A screen shot](../../../media/sample-mesh-101/438-teleport.png)
 
-The button is all set up for you---we just need to add the nodes in the script graph that
-give it the teleport behavior.
+    The button is all set up for you---we just need to add the nodes in the script graph that
+    give it the teleport behavior.
 
 1. In the **Hierarchy**, expand the **ChapterLabel** GameObject and then select the **TeleportToWindTurbineButton** GameObject.
 
