@@ -5,7 +5,7 @@ author: typride
 ms.author: vinnietieto
 ms.date: 9/12/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, environment, build, publish, build and publish, uploader, Mesh uploader
+keywords: Microsoft Mesh, environment, build, publish, build and publish, uploader, Mesh uploader, thumbnail
 ---
 
 # Build and publish your Environment
@@ -121,8 +121,72 @@ After you finish adding all your scene content, the next step is to build the sc
 
     ![A screenshot of a computer program Description automatically generated with medium confidence](../../media/make-your-environment-available-for-events/006-build-failed.png)
 
+## Environment thumbnails
+
+Adding a custom thumbnail image that will be
+added to your Environment listings in the Mesh Portal or Mesh App comes in handy when you're selecting Environments in either place because it gives you a visual reminder of what the Environment looks like.
+
+You can customize the thumbnails from your environment in two ways:
+
+1. You can add a **MeshThumbnailCamera** to your scene which will ensure you always get the latest changes from your scene in the thumbnails.
+2. You can specify a folder containing the images you want to use for the thumbnails.
+
+### Option 1 - Adding the thumbnail camera
+
+To add the thumbnail camera to the scene and sets its view:
+
+1. In the **Scene** window, adjust the view so that it shows what you
+    want to display in the thumbnail (the Thumbnail Camera's view will
+    be based on the **Scene** view).
+
+1. Select the "+" drop-down located below the **Hierarchy** tab, and
+    then select **Mesh Toolkit > Thumbnail Camera**.
+
+    ![A screenshot of a computer program Description automatically generated with medium confidence](../../media/make-your-environment-available-for-events/007-add-thumbnail-camera.png)
+
+1. To confirm that the view in the Thumbnail Camera is what you want,
+    in the **Hierarchy**, select **MeshThumbnailCamera**. The Camera's
+    view appears in a small window in the lower right of the **Scene**
+    view.
+
+    ![A screenshot of a computer program Description automatically generated with medium confidence](../../media/make-your-environment-available-for-events/008-thumbnail-view.png)
+
+    **Note**: If you decide you want a different view for the Thumbnail
+    Camera, you can adjust it directly in the **Scene** view or change its
+    **Position** and **Rotation** values in the **Inspector** prior to
+    uploading your Environment to Mesh.
+
+    There are no set rules for how your thumbnail should look---it's totally
+    up to you. For the following example, we chose a close-up front view of
+    the darts.
+
+1. To upload the environment with your thumbnails open the **Mesh Uploader**, on the menu bar, select **Mesh Toolkit** > **Environments**.
+
+1. On the **Update Environment** tab make sure you have the correct Environment and scene selected than check the **Custom Thumbnails** field and choose the **Generate from Thumbnail Camera** option.
+
+    ![A screenshot of a computer program Description automatically generated with medium confidence](../../media/make-your-environment-available-for-events/009-select-custom-thumbnail.png)
+
+1. Once you are ready to publish your Environment click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
+
+    **Note**: If you uncheck the **Custom Thumbnails** field the thumbnails from your Environment will be removed, so make sure this is always checked when you do **Build & Publish**
+
+### Option 2 - Custom thumbnail folder
+
+If you prefer to have static images as thumbnails you can choose to select the images from a folder:
+
+1. Open the **Mesh Uploader**, on the menu bar, select **Mesh Toolkit** > **Environments**.
+
+1. On the **Update Environment** tab make sure you have the correct Environment and Scene selected than check the **Custom Thumbnails** field and choose the **Take from folder** option. The default folder is shown and you can either add your images to this folder or choose a different folder.
+
+    ![A screenshot of a computer program Description automatically generated with medium confidence](../../media/make-your-environment-available-for-events/010-thumbnail-from-folder.png)
+
+    **Note**: To choose a new folder for your thumbnails click on the button highlighted in yellow.
+
+1. The thumbnail images need to follow a specific name pattern, the easier way to follow that is to click on the button **Add provisional thumbnails** which will add three images to the folder selected with the correct names and sizes, you can then replace those images with the images you like, just remember to keep their names and try to follow their sizes for a better UI experience.
+
+1. Once you are ready to publish your Environment click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Get information about your Environment](get-information-about-your-environment.md)
-
