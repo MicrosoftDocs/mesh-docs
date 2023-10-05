@@ -15,9 +15,9 @@ create and produce an Event based on that Environment that participants
 can experience through the Mesh app for PC or Quest.
 
 > [!IMPORTANT]
-> Ensure that all participants have updated their Mesh app to the most recent version so they can use the link in their calendar invite and join the event you just created.
+> To ensure the best experience, we recommend that attendees to an event update the latest version of the Mesh app.
 
-1. Open the [Mesh Portal](https://portal-preview.mesh.microsoft.com/).
+1. Open the [Mesh Portal](https://portal.mesh.microsoft.com/).
 1. Log in with your corporate account.
 1. On the Home page, in the left-side navigation bar, select **Events**.
 
