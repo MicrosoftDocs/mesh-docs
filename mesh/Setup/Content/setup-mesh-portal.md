@@ -102,9 +102,9 @@ These environments can vary widely, determined by your resources and creativity!
 
 In order to upload environments, you'll need to use Unity and follow the developer flow included in our docs.
 
-See how to [build and publish your Environment](../../Create/design-and-develop/make-your-environments-available-for-events/build-and-publish-your-environment.md).
+See how to [build and publish your Environment](../../Create/make-your-environment-available-for-events/build-and-publish-your-environment.md).
 
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Getting started with Microsoft Mesh](../../user-guide/getting-started.md)
+   > [Join your event in the Mesh app](../../user-guide/getting-started.md)

@@ -54,7 +54,7 @@ You will need to create the Spatial Audio Properties before you play the audio e
  
 While any GameObject reference will work, most often you will probably want to use the This node to play the sound on the GameObject that this script is attached to. You will also want to change the Attenuation Curve to slope down instead of up so that the volume goes down as you move away from the object playing the sound.
  
-![______](../../media/enhance-your-environment/audio-manager/008-attentuation-curve.png)
+![______](../../media/enhance-your-environment/audio-manager/008-attenuation-curve.png)
  
 The properties here are as follows:
  

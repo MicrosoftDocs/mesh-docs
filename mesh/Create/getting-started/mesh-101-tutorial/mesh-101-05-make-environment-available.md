@@ -5,7 +5,7 @@ author: typride
 ms.author: vinnietieto
 ms.date: 9/25/2023
 ms.topic: Tutorial
-keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Azure Portal, uploader, uploading
+keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Mesh Portal, uploader, uploading
 ---
 
 # Mesh 101 Tutorial Chapter 5: Make your Environment available for Events
@@ -82,7 +82,7 @@ headset. Since desktop PCs typically have far more power than mobile
 devices using Android, when you're creating your own project, there are
 several potential scenarios to consider: build and publish your scene
 for PC only, Android only, or both PC and Android. For this tutorial, we'll build for both PC and Android. To learn more about
-building for single and multiple platforms, see our article titled [Build for single and multiple platforms](../../design/build-your-basic-environment/build-for-single-and-multiple-platforms.md).
+building for single and multiple platforms, see our article titled [Build for single and multiple platforms](../../build-your-basic-environment/build-for-single-and-multiple-platforms.md).
 
 ### Update your Environment
 
@@ -130,10 +130,10 @@ new event in that World.
 ## Summary
 
 In this chapter, you learned how to create an Environment based on your
-scene and then build it and publish it to your World in the Azure
+scene and then build it and publish it to your World in the Mesh 
 Portal.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Chapter 6: Create an Event and invite others](mesh-101-6-create-an-event-and-invite-others.md)
+> [Chapter 6: Create an Event and invite others](mesh-101-06-create-an-event-and-invite-others.md)

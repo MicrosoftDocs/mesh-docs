@@ -1,8 +1,8 @@
 items: 
 - name: Create a new project or update an existing one
   href: create-a-new-project-or-update.md
-- name: Import the Mesh Toolkit package
-  href: import-the-mesh-toolkit-package.md
+- name: Access the Mesh Toolkit package
+  href: access-the-mesh-toolkit-package.md
 - name: Build for single and multiple platforms
   href: build-for-single-and-multiple-platforms.md
 - name: Set up your scene

@@ -12,8 +12,7 @@ keywords: Microsoft Mesh, environment, build, publish, build and publish, upload
 
 After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen World in the Mesh Portal (M365), where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that World can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
 
-1. On the menu bar, select **Mesh Toolkit** > **Configure Project
-    Settings**.
+1. On the menu bar, select **Mesh Toolkit** > **Configure Project Settings**.
 
     ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/001-project-settings.png)
 
@@ -25,11 +24,7 @@ After you finish adding all your scene content, the next step is to build the sc
 
 1. In the **Mesh Environments** window, select **Sign In**.
 
-1. Sign in with your account. The account must have *Content
-    Contributor* access to the Mesh world you're uploading the
-    Environment to. If you need help with Content Contributor
-    privileges, see [*Become a Content
-    Contributor*](#become-a-content-contributor).
+1. Sign in with your account.
 
     Make sure you're in the **Create** **Environment** tab, and then fill
     in the **Internal Name** and **Description** fields. 
