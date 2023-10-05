@@ -54,7 +54,7 @@ The development workflow and model for Mesh Cloud Scripting is very similar to r
 
 ## Benefits of using Mesh Cloud Scripting
 
-- Simple app model (all code and logic runs in one place).
+- Simple application model (all code and logic runs in one place).
 - Easy connection to cloud side content.
 - Allows code reviews, diffs, history inspection, and Git integration.
 - Better debugging tools.

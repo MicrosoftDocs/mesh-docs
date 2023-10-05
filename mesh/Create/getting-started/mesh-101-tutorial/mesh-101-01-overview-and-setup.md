@@ -84,9 +84,9 @@ Download Microsoft Mesh on PC
 
     ![______](../../../media/get-started-developing-mesh/006-mesh-download-for-pc.png)
 
-### Download the Mesh Toolkit
+### Download the Mesh Toolkit Samples
 
-The Mesh Toolkit contains the *Mesh 101* tutorial project.
+*Mesh 101* tutorial project is available in [*Mesh-Toolkit-Unity*](https://github.com/microsoft/Mesh-Toolkit-Unity) github repository.
 
 1. In your browser, go to GitHub, and then navigate to the [*Mesh-Toolkit-Unity* repository](https://github.com/microsoft/Mesh-Toolkit-Unity).
 
