@@ -1,9 +1,9 @@
 ---
 title: Troubleshooting & FAQs - Microsoft Mesh
 description: Various help guides and FAQ answers regarding Mesh events.
-author: typride    
-ms.author: tmilligan
-ms.date: 10/4/2023
+author: qianw211
+ms.author: qianwen
+ms.date: 10/5/2023
 ms.topic: Troubleshooting
 keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
 ---
@@ -97,6 +97,18 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 4. If the logs are too large to share, the two most important are `Player.log` and `Player-prev.log`.
 
 5. Open a support request by following the link [here](https://aka.ms/meshdevsupport).
+
+### What do I do with issues relating to M365?
+
+You'll need to first reproduce the problem, and then follow the steps below to collect all information related to Mesh:
+
+![A screenshot of the About Mesh dialog in the Mesh Portal](media/m365-about-mesh.png)
+
+1. Click the **?** help icon in the M365 header.
+
+1. Click the **About Mesh** link in the **Other resources** section. You may need to scroll down to the bottom of the screen to see the **About Mesh**.
+1. Click the **Copy all** button.
+1. Share that data with [Microsoft support](https://aka.ms/meshdevsupport).
 
 ### Audio setup in Mesh FAQ
 
