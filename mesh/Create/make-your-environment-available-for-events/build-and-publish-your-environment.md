@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, environment, build, publish, build and publish, upload
 
 # Build and publish your Environment
 
-After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen World in the Mesh Portal (M365), where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that World can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
+After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen World in the Mesh Portal, where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that World can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
 
 1. On the menu bar, select **Mesh Toolkit** > **Configure Project Settings**.
 
@@ -104,9 +104,4 @@ After you finish adding all your scene content, the next step is to build the sc
     If the build and upload process fails, this is confirmed in the **Build and Upload** Results dialog:
 
     ![A screenshot of a computer program Description automatically generated with medium confidence](../../media/make-your-environment-available-for-events/006-build-failed.png)
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Get information about your Environment](get-information-about-your-environment.md)
 

@@ -12,7 +12,7 @@ keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 
 This guide describes how to use the Mesh Cloud Scripting API and developer tools to build Environments (these start out as projects in Unity, and are then uploaded to a Mesh World). We recommend that you first read the [Set cloud Scripting infrastructure in Azure](cloud-scripting-setup-infrastructure.md) to familiarize yourself with the concepts and basic architecture of Mesh Cloud Scripting.
 
-This document describes the features and interface of the Mesh Cloud Scripting API, which is used to write the scripts that drive behaviors in Environments.
+This section describes the features and interface of the Mesh Cloud Scripting API, which is used to write the scripts that drive behaviors in Environments.
 
 ## Basic DOM structure
 
@@ -201,7 +201,7 @@ TextNode maps to Unity's TextMeshPro component. If you add a TextMeshPro compone
 
 Meshes are currently "hidden" components to the Mesh Cloud Scripting API. They can be created in the Unity editor, and can be manipulated by manipulating their parent game objects/Transform components, but they can't be created programmatically, nor can their properties be edited at runtime through the Mesh API.
 
-# Other Mesh app topics
+# Other Mesh Cloud Scripting topics
 
 ## Adding resources to the Mesh Cloud Scripting Service
 
@@ -214,8 +214,6 @@ If you need to add a resource for your Mesh Cloud Scripting Service to use, you 
 Note that this is how the scene.map is packaged, which you can see in the .csproj file for reference.
 
 ## Working with Mesh Physics
-
-The packages you need for working with Mesh Physics are added to your project when you import the Mesh Toolkit. To learn more, see the document named [Importing the Mesh Toolkit](../build-your-basic-environment/import-the-mesh-toolkit.md#importing-the-mesh-toolkit).
 
 `Mesh Physics` will take care to synchronize motion of rigid bodies between clients. Mesh Cloud Scripting  `TransformNode.Position`, `TransformNode.Rotation`, `RigidBody.Velocity` and `RigidBody.AngularVelocity` won't be updated with latest simulation state. However, clients will apply changes if these are set in the Mesh Cloud Scripting Service. Note that changing single property will leave others unchanged. For example, if only position is set, velocity won't be changed and rigid body will continue motion with old velocity from new position. Given that Mesh Cloud Scripting Service is not updated with latest motion state for rigid bodies, recommendation is to set these only for new rigid bodies.
 

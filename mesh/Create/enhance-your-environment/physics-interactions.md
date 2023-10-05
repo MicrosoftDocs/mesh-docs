@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, Mesh physics, physics, environments, interactions
 
 # Mesh Physics
 
-In a Mesh experience, physics simulation is key to enabling engaging dynamic content. In order to provide Mesh participants with high quality shared physics experiences and offer developers a productive workflow in creating custom content, we've created the *Mesh Physics* system (usually referred to as "Mesh Physics" in this document). Mesh Physics is based on local authoritative simulation, which results in a very simple architecture. There's no need for server-side logic and special logic on the clients. Most importantly, this approach results in a very responsive and low-latency experience for each player interacting with their environment, even when connected to a high-latency network.
+In a Mesh experience, physics simulation is key to enabling engaging dynamic content. In order to provide Mesh participants with high quality shared physics experiences and offer developers a productive workflow in creating custom content, we've created the *Mesh Physics* system. Mesh Physics is based on local authoritative simulation, which results in a very simple architecture. There's no need for server-side logic and special logic on the clients. Most importantly, this approach results in a very responsive and low-latency experience for each player interacting with their environment, even when connected to a high-latency network.
 
 Here's a sampling what you can do with Mesh Physics features:
 
@@ -151,10 +151,6 @@ By default, Mesh Playmode runs with a single player. To add a second player with
 1. In the **Inspector**, navigate to the **Playmode Setup** component, then increase the Inital Screen Count 2.
 
   ![___](../../media/physics-interactions/001-initial-count.png)
-
-### Upload your own Environment to your Mesh World
-
-To learn about uploading your Environment to your Mesh World, see the article named [Build and publish your Environment](../make-your-environment-available-for-events/build-and-publish-your-environment.md).
 
 ## General tips for building Mesh Physics experiences
 

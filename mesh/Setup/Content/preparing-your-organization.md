@@ -13,9 +13,9 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 > [!IMPORTANT]
 > We thank you for your patience in this transition. In the coming weeks we will provide more up-to-date information regarding our transition to M365 and how to prepare your organization for that.
 
-## Gather Your v-Team
+## Gather Your v-team
 
-This document covers the required tasks and suggest functional roles
+This page covers the required tasks and suggest functional roles
 that may need to know about the rollout, but follow your organization's
 standard rollout process, including change and configuration management.
 
@@ -25,9 +25,9 @@ You will need access to several administration tools, so either get
 access to those tools or get people on the v-team who can access the
 tools.
 
-- Team Admin Center (TAC) is needed to configure avatar and immersive spaces administration
+- Teams Admin Center (TAC) is needed to configure avatar and immersive spaces administration
 
-- Azure portal is needed to administer Mesh scripting.
+- Azure portal is needed to administer Mesh cloud scripting (if your environments optionally use that form of scripting).
 
 - Other tasks like permitting URLs and firewall ports will be done in
     whatever administrative tools are used by your organization.
@@ -42,7 +42,7 @@ To participate in the public preview, you must agree to the terms of use and pri
 
 > ## Verify Your Licensing
 
->For immersive spaces for Teams, your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5. For Microsoft Mesh, a Teams Premium license is required during the Public Preview. If you plan to use Mesh scripting, you must also have an Azure subscription.
+For immersive spaces for Teams, your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5. For Microsoft Mesh, a Teams Premium license is required during the Public Preview. If you plan to use Mesh cloud scripting, you must also have an Azure subscription.
 
 If your organization plans to create custom worlds for Microsoft Mesh,
 your world building team will need licenses for Unity.
@@ -172,11 +172,13 @@ app and make it show up in the users' Company Portal. If you block
 access to the Microsoft Store, you can use WinGet instead. For more information about deploying apps with
 Microsoft Intune, see:
 
-[https://learn.microsoft.com/en-us/mem/intune/apps/store-apps-windows](/mem/intune/apps/store-apps-windows)
+[Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-microsoft)
 
 ## Azure Administrators
 
-(needs content)
+If your developers plan to build custom Mesh environments that will use [Mesh cloud scripting](../../Create/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md), they will require an Azure subscription to which they can deploy their cloud scripting service.  An Azure subscription is not required for environments that only use [Mesh visual scripting](../../Create/script-your-scene-logic/visual-scripting/visual-scripting-overview.md).
+
+See [Set up Cloud Scripting infrastructure in Azure](../../Create/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md) for more details on these requirements.
 
 ## Work with Your Security Organization
 
@@ -212,7 +214,7 @@ outgoing ports to be opened in your firewall:
 
 Mesh traffic will use IP addresses in the AzureCloud service tag.
 
-For more information about service tags, see the [Azure service tags overview | Microsoft Learn](/azure/virtual-network/service-tags-overview).
+For more information about service tags, see the [Azure service tags overview](/azure/virtual-network/service-tags-overview).
 
 To learn more, see how to [Set up immersive spaces in Teams](aka.ms/immersivespacesitdocs).
 
@@ -272,7 +274,7 @@ that is acceptable to the company's risk profile while still permitting
 access to Quest devices. For more information about Conditional Access,
 see:
 
-[https://learn.microsoft.com/en-us/mem/intune/protect/conditional-access-intune-common-ways-use](/mem/intune/protect/conditional-access-intune-common-ways-use)
+[Common ways to use Conditional Access with Intune](/mem/intune/protect/conditional-access-intune-common-ways-use)
 
 ## Work with Stakeholders That Communicate Change
 

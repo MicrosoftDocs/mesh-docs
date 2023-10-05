@@ -15,17 +15,7 @@ The Mesh portal is where you can create Mesh events, invite co-organizers or att
 :::image type="content" source="../../media/m365-migration-guide/Homepage.png" alt-text="Mesh portal homepage":::
 
 > [!NOTE]
-> Azure management of Mesh is solely required for Mesh scripting resources. For more info on Mesh scripting and Azure, see the [set up cloud scripting infrastructure in Azure](setup-cloud-scripting-infrastructure.md).
-
-## Migrating notes
-
-If you previously created Mesh worlds, uploaded environments, or created events in Azure, you will need to do the following in the Mesh portal:
-
-- Recreate all Mesh worlds
-- Recreate all Events
-- Reupload all environments
-
-We are excited to move to M365 and appreciate your patience in this process.
+> Azure management of Mesh is solely required for Mesh cloud scripting resources. For more info on Mesh cloud scripting and Azure, see the [set up cloud scripting infrastructure in Azure](setup-cloud-scripting-infrastructure.md).
 
 ## Prerequisites
 
@@ -40,21 +30,17 @@ Mesh worlds are the home for your custom environments that you upload through th
 You can assign:
 
 - **Owners**: Can manage membership and change settings for the world.
-- **Members**: Can access and manage event templates and use the collaboration session to customize environments in the Mesh App.
-
-### Migrating worlds
-
-You may have made Mesh world(s) previously using the Azure portal. In this case, you should create the Mesh world(s) again and reupload your environments to the Mesh world(s) using the Mesh Toolkit uploader.
+- **Members**: Can access and manage event templates and use the customization session to customize environments in the Mesh App.
 
 ### Create a Mesh world
 
-1. Open the [Mesh Portal](https://portal-preview.mesh.microsoft.com/).
+1. Open the [Mesh Portal](https://portal.mesh.microsoft.com/).
 1. In the Home page, select **Worlds** in the left nav.
     :::image type="content" source="../../media/m365-migration-guide/Select-world.png" alt-text="Select worlds in left nav home page":::
 1. Select **Create World** in the top right.
 1. Fill out the **World name**, **Description**, and add **Owners**, and **Members**.
     - **Owners**: Can manage membership and change settings for the world.
-    - **Members**: Can access and manage event templates and use the collaboration session to customize environments in the Mesh App.
+    - **Members**: Can access and manage event templates and use the customization session to customize environments in the Mesh App.
 1. Select **Create world**.
 
 Now your Mesh world is created. You can now upload environments from the Mesh Toolkit Uploader to your Mesh world and create events.
@@ -65,7 +51,7 @@ With the transition to M365 and the Mesh Portal, events are handled slightly dif
 
 ### Create an event
 
-1. Open the [Mesh Portal](https://portal-preview.mesh.microsoft.com/).
+1. Open the [Mesh Portal](https://portal.mesh.microsoft.com/).
 
 1. Log in with your corporate account.
 
@@ -91,20 +77,14 @@ With the transition to M365 and the Mesh Portal, events are handled slightly dif
 
 Great job! You've now created your event. Co-organizers and invitees will now see the event in their Outlook and Teams calendars.
 
-> [!NOTE]
-> Please ensure that all participants have updated their Mesh app to the most recent version to ensure that they can use the link in their calendar invite and join the event you just created!
-
-## Upload a custom environment
-
-The real power of Mesh is the ability to use custom environments to *wow* attendees and curate experiences to your needs.
-
-These environments can vary widely, determined by your resources and creativity!
-
-In order to upload environments, you'll need to use Unity and follow the developer flow included in our docs.
-
-See how to [build and publish your Environment](../../Create/make-your-environment-available-for-events/build-and-publish-your-environment.md).
-
 ## Next steps
 
+Now that you've set up Microsoft Mesh, dive in to organize your first Mesh event:
+
    > [!div class="nextstepaction"]
-   > [Join your event in the Mesh app](../../user-guide/getting-started.md)
+   > [Organize your event in the Mesh app](../../events-guide/events-overview.md)
+
+If you have skills using Unity, get started building your own custom environments:
+
+   > [!div class="nextstepaction"]
+   > [Develop Mesh environments](../../Create/make-your-environment-available-for-events/development-overview.md)

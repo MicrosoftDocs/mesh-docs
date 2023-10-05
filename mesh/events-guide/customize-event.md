@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
 
 # Customize your event
 
-Now that you've created an event, it's time customize it in the [Microsoft Mesh app](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1) and add any run-of-show tools you'd like to use.
+Now that you've created an event, it's time customize it in the [Microsoft Mesh app](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7) and add any run-of-show tools you'd like to use.
 
 At a high level, there are three major steps to customize your event or template:
 
@@ -130,7 +130,7 @@ Once you've added an artifact, you can maneuver it around the spaces and select 
 > [!IMPORTANT]
 > You **must add the artifacts to the Control Panel** and **save** before starting your event.
 
-Use the **Control Panel** to prepare your artifacts to be used during an event. Like having a technical booth for theatrical technicians, it's designed to give the Event Producer the ability to orchestrate a performance in real time.
+Use the **Control Panel** to prepare your artifacts to be used during an event. Like having a technical booth for theatrical technicians, it's designed to give the organizer the ability to orchestrate a performance in real time.
 
 1. Once you're satisfied with your artifact, open the **Control Panel**.
 
