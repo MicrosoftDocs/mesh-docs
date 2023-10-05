@@ -8,7 +8,7 @@ ms.topic: Tutorial
 keywords: Microsoft Mesh, Azure, admin, documentation, features, Mesh Cloud Scripting, scripting
 ---
 
-# Set cloud Scripting infrastructure in Azure
+# Set Cloud Scripting infrastructure in Azure
 
 ## Mesh Cloud Scripting Service cloud infrastructure deployment
 
