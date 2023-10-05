@@ -36,7 +36,7 @@ If you followed the instructions in the [Access the Mesh Toolkit Packages](../bu
     in the **Hierarchy**, and then select **Mesh Toolkit** >
     **PlaymodeSetup**.
 
-![A screenshot of a computer Description automatically generated](../../media/debug-and-optimize/image041.jpg)
+    ![A screenshot of a computer Description automatically generated](../../media/debug-and-optimize/image041.jpg)
 
 2.  Ensure that the scene contains a piece of solid floor below the
     origin that's set to the *NavMesh* layer.

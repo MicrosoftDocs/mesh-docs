@@ -65,15 +65,15 @@ generate power.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image065.jpg)
 
-Let's add "grab and release" capabilities to **WindTurbine1** so that participants will be able to move it around in Mesh.
+    Let's add "grab and release" capabilities to **WindTurbine1** so that participants will be able to move it around in Mesh.
 
 1. In the **Hierarchy**, select **WindTurbine1**.
 1. In the **Inspector**, click the **Add Component** button and then search for and add **Mesh Interactable Setup**.
 
     ![A screenshot](../../../media/sample-mesh-101/320-interactable-setup.png)
 
-> [!TIP]
-> An explanation of this component was given in [Chapter 3](mesh-101-03-visual-scripting.md) of this tutorial.
+    > [!TIP]
+    > An explanation of this component was given in [Chapter 3](mesh-101-03-visual-scripting.md) of this tutorial.
 
 1. In the same component, select **Manipulable**.
 1. Ensure that the component is active.
@@ -157,17 +157,17 @@ The graph is *almost* set up how we want it, but there's one remaining issue. Th
 
 1. In the **Hierarchy**, expand **WindTurbine1** and then expand its child object named **WindTurbineBody**. This reveals the child object named **Windmill_Turbine_001:Propellors10**.
 
-![A screenshot](../../../media/sample-mesh-101/475-expand-windturbine1.png)
+    ![A screenshot](../../../media/sample-mesh-101/475-expand-windturbine1.png)
 
 1. Select **Windmill_Turbine_001:Propellors10**, and then, in the **Inspector**, note that it contains an **Animator** component with the Animator **Controller** named **WindmillPropellors**.
 
-![A screenshot](../../../media/sample-mesh-101/476-animator.png)
+    ![A screenshot](../../../media/sample-mesh-101/476-animator.png)
 
-This **Animator** is what will provide our animation.
+    This **Animator** is what will provide our animation.
 
 1. Drag the **Windmill_Turbine_001:Propellors10** GameObject from the **Hierarchy** and then, in the script graph, drop it in the first field in the *Animator: Set Trigger* node located in the *first* group.
 
-![A screenshot](../../../media/sample-mesh-101/477-drag-anim-to-trigger-node.png)
+    ![A screenshot](../../../media/sample-mesh-101/477-drag-anim-to-trigger-node.png)
 
 1. Drag the **Windmill_Turbine_001:Propellors10** GameObject from the **Hierarchy** again and then, in the script graph, drop it in the first field in the  *Animator: Set Trigger* node located in the *second* group. 
 

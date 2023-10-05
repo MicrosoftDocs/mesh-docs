@@ -77,7 +77,8 @@ and tips
 
 ## Materials
 
-![](../../media/3d-design-performance-guide/image013.png) 
+![___](../../media/3d-design-performance-guide/image013.png) 
+
 Name each material in your .fbxfile to
 closely match its corresponding material inside Unity. Avoid exporting
 default material names.
