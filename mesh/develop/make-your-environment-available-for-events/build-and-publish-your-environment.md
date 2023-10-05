@@ -104,7 +104,7 @@ After you finish adding all your scene content, the next step is to build the sc
 
     > [!IMPORTANT]
     > Everytime, when you update the Environment, it will affect all the events, that are using this Environment.
-    > ![Warning that environment will be updated ](../../media/make-your-environment-available-for-events/uploader_warning_about_updating_environment.png)
+    ![Warning that environment will be updated ](../../media/make-your-environment-available-for-events/uploader_warning_about_updating_environment.png)
 
 After your environment was uploaded, you will be able to see for what platforms it has been built.
 
