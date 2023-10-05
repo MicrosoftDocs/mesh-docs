@@ -84,4 +84,4 @@ Users will see a new license agreement dialogue in the upcoming release for Mesh
 :::image type="content" source="../../media/m365-setup-guide/End-user-license-agreement.png" alt-text="End user license agreement for Mesh and spatial audio.":::
 
    > [!div class="nextstepaction"]
-   > [Create worlds and events in Mesh](setup-mesh-portal.md)
+   > [Manage Mesh worlds](manage-mesh-worlds.md)
