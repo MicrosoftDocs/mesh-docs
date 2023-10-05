@@ -35,7 +35,7 @@ Objects that eventually appear in your Event in the Microsoft Mesh can be divide
 
 1. Objects that you add to your Environment in Unity.
 
-1. Objects with which you [customize your Event](../../events-guide/customize-event.md). Since these weren’t part of the Environment, Mesh Cloud Scripting is unaware of them.
+1. Objects with which you [customize your Event](../../../events-guide/customize-event.md). Since these weren’t part of the Environment, Mesh Cloud Scripting is unaware of them.
 
 ## Building a scene
 

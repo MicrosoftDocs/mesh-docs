@@ -71,7 +71,7 @@ There are various places in the API that provide User properties. The `User.Iden
 
 During development the user display name, identifier, and event ID can be mocked in the Mesh Cloud Scripting component editor in the "Developer Settings" as shown below.
 
-![Mock User Properties](../../media/mesh-scripting/programmers-guide/mock_user_properties.jpg)
+![Mock User Properties](../../../media/mesh-scripting/programmers-guide/mock_user_properties.jpg)
 
 ## Avatars
 
@@ -93,7 +93,7 @@ The MeshInteractableSetup is a custom Unity component that's part of the Mesh To
 
 A simple example is shown below, where the MeshInteractableSetup component is added to the same game object as the box collider:
 
-![Simple Input example](../../media/mesh-scripting/programmers-guide/simple_input_example.jpg)
+![Simple Input example](../../../media/mesh-scripting/programmers-guide/simple_input_example.jpg)
 
 ## WebSlateNode
 
@@ -106,7 +106,7 @@ An example is shown below, where a WebSlate prefab has been added to the scene a
         webSlateNode.Url = new System.Uri("https://en.wikipedia.org/wiki/Color");
 ```
 
-![WebView example](../../media/mesh-scripting/programmers-guide/webview_example.jpg)
+![WebView example](../../../media/mesh-scripting/programmers-guide/webview_example.jpg)
 
 ### Listening for clicks
 

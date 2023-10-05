@@ -14,7 +14,7 @@ This article will help you configure your development environment and start iter
 
 - There must be an existing Mesh World that contains a Space in the Azure Portal that you can upload your work to. To learn more about setting this up, see how to [create a world](../../Setup/Content/setup-mesh-portal.md#create-a-mesh-world).
 - There must be an existing Unity project that was created, or you must [create a new Unity project](../build-your-basic-environment/create-a-new-project.md). You will need to [download the *Mesh Toolkit*](../getting-started/download-the-mesh-toolkit.md) which contains the Unity package you need for Mesh Cloud Scripting. This package is named *mesh.meshapps.unityruntime*.
-- You should be at least somewhat familiar with event management. To learn more about this, see how to [create an event in the Mesh portal](../../events-guide/create-event-mesh-portal.md)
+- You should be at least somewhat familiar with event management. To learn more about this, see how to [create an event in the Mesh portal](../../../events-guide/create-event-mesh-portal.md)
 ## Software dependencies
 
 1. [.NET 6.0 SDK Windows](https://dotnet.microsoft.com/en-us/download)
@@ -24,7 +24,7 @@ This article will help you configure your development environment and start iter
 
 The following instructions show how to create a simple environment with a cube that rotates when a user clicks on it. We'll demonstrate local development workflow, publishing and testing.
 
-1. [Create new or update an existing project](../build-your-basic-environment/create-a-new-project-or-update.md).
+1. [Create new or update an existing project](../../build-your-basic-environment/create-a-new-project-or-update.md).
 1. Create a new scene.
 1. Save the scene and name it. For this example, we'll use the name **MyFirstCloudScripting**.
 

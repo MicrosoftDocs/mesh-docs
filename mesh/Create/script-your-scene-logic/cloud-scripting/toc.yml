@@ -9,7 +9,3 @@ items:
     href: cloud-scripting-programmers-guide.md
   - name: Cloud scripting troubleshooting
     href: cloud-scripting-troubleshooting.md
-  - name: Cloud scripting known issues
-    href: cloud-scripting-known-issues.md
-  - name: Cloud scripting release notes
-    href: cloud-scripting-release-notes.md   
