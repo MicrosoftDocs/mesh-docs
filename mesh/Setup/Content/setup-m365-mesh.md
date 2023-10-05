@@ -10,25 +10,25 @@ keywords: Microsoft Mesh, M365, OCPS, Immersive spaces, Avatars, getting started
 
 # Set up Microsoft Mesh
 
-In the Microsoft 365 Apps Admin Center (MAC) admins can enable access to Mesh experiences. This covers access to the following experiences:
+In the Microsoft 365 Apps Admin Center admins can manage access to Mesh experiences. This covers access to the following experiences:
 
 - Mesh app on PC
 - Mesh app on Quest 2
 - Mesh Portal
 
 > [!NOTE]
-> All Mesh experiences are enabled via one policy in the Microsoft 365 Admin Center.
+> All Mesh experiences are managed via one policy in the Microsoft 365 Apps Admin Center.
 >
-> If a user has this policy enabled, they will be able to access all Mesh experiences including the Mesh app on PC, the Mesh app on Quest 2, and the Mesh portal.
+> As an admin, you can configure the Mesh policy to manage which users and groups in your organization have access to the Mesh app on PC, the Mesh app on Quest 2, and the Mesh portal. 
 
-To enable access, please visit the M365 Admin Center and enable the policy via the Overview of Cloud Policy Services (OCPS).
+To manage access, please visit the M365 Apps Admin Center and configure the policy for Mesh.
 
    > [!div class="nextstepaction"]
    > [M365 Apps Admin Center](https://config.office.com/officeSettings/)
 
 ## Prerequisites
 
-To enable Mesh in your managed tenant, you must have one of the following roles in Azure AD:
+To configure Mesh access in your tenant, you must have one of the following roles in Azure AD:
 
 - Global Administrator
 - Security Administrator
@@ -38,16 +38,88 @@ To enable Mesh in your managed tenant, you must have one of the following roles 
 
 For Microsoft Mesh, you will need the following:
 
-- Teams premium license for Commercial use.
+- Teams Premium license in a tenant for Commercial use. Read more about [Microsoft Teams Premium licensing - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
 
     > [!NOTE]
     > We don't support tenants with worldwide public sector, EDU, or GCC licenses.
 
-- A pre-requisite license for Teams Premium, as outlined in [Microsoft Teams Premium Licensing - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
+- A pre-requisite license for Teams Premium, as outlined in [Requirements to purchase Teams Premium - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#what-are-the-requirements-to-purchase-teams-premium).
 
 Learn more about [Teams for enterprise](https://www.microsoft.com/en-us/microsoft-teams/enterprise#pricing).
 
-## Enable Mesh in M365 Apps Admin Center
+### Ensure endpoints can be allowed for the Mesh app
+
+To ensure Mesh works properly, allow the following endpoints.
+
+All endpoints need to allow traffic on TCP ports 80 and 443:
+
+- \*.officeapps.live.com
+
+- \*.microsoft.com
+
+- \*.meshxp.net
+
+- \*.office365.com
+
+- \*.office.com
+
+- \*.office.net
+
+- \*.servicebus.windows.net
+
+### Firewall Ports for the Mesh app
+
+In addition to the endpoints listed above, Mesh also requires the
+following outgoing ports to be opened in your firewall:
+
+- TCP ports 80, 443, 8089, and 8989
+
+- TCP & UDP ports 30,000-31,000
+
+- UDP ports 3478-3481
+
+Mesh traffic will use IP addresses in the AzureCloud service tag.
+
+For more information about service tags, see the Azure service tags
+overview.
+
+### Ensure endpoints can be allowed for the Mesh app
+
+To ensure Mesh works properly, allow the following endpoints.
+
+All endpoints need to allow traffic on TCP ports 80 and 443:
+
+- \*.officeapps.live.com
+
+- \*.microsoft.com
+
+- \*.meshxp.net
+
+- \*.office365.com
+
+- \*.office.com
+
+- \*.office.net
+
+- \*.servicebus.windows.net
+
+### Firewall Ports for the Mesh app
+
+In addition to the endpoints listed above, Mesh also requires the
+following outgoing ports to be opened in your firewall:
+
+- TCP ports 80, 443, 8089, and 8989
+
+- TCP & UDP ports 30,000-31,000
+
+- UDP ports 3478-3481
+
+Mesh traffic will use IP addresses in the AzureCloud service tag.
+
+For more information about service tags, see the Azure service tags
+overview.
+
+## Configure Mesh in M365 Apps Admin Center
 
 1. Sign into [M365 Apps Admin Center](https://config.office.com/officeSettings/) with your Azure Active Directory account with admin privileges for the Microsoft 365 Admin Center.
     > [!div class="nextstepaction"]
@@ -55,19 +127,19 @@ Learn more about [Teams for enterprise](https://www.microsoft.com/en-us/microsof
 
 1. Navigate to the **Customization** > **Policy Management** in the left nav.
 
-    :::image type="content" source="../../media/m365-setup-guide/M365-policy-management.png" alt-text="Customization then policy management window in the M365 Admin Center":::
+    :::image type="content" source="../../media/m365-setup-guide/M365-policy-management.png" alt-text="Customization then policy management window in the M365 Apps Admin Center":::
 
-1. Create or identify an existing policy that applies to the users that should have access to Mesh with the Mesh policy **enabled**. 
+1. Create or identify an existing policy for the users or groups of users that you would like to configure Mesh for. For more information on how to apply cloud policies to users and groups, see [https://learn.microsoft.com/deployoffice/admincenter/overview-cloud-policy](/deployoffice/admincenter/overview-cloud-policy).
 
     Create a new policy by selecting **+ Create** then name the policy.
 1. Adjust the scope for this policy to determine who or what groups can access **all Mesh experiences**.
 
-    To be clear, if this policy is a applied to a user, they will be able to access Mesh on Meta Quest 2, the Mesh app on PC, and the Mesh Portal.
+    To be clear, if this policy is a applied to a user, they will be able to access Mesh on Meta Quest 2, the Mesh app on PC, and the Mesh Portal. If you do not configure this policy, users will have access to all three Mesh experiences. 
 
 1. In the **Configure Settings** page, search for **Control user access to Microsoft Mesh experiences.** 
     :::image type="content" source="../../media/m365-setup-guide/M365-configure-settings-policy-name.png" alt-text="Policy name for enabling Mesh experiences is Control user access to Microsoft Mesh experiences.":::
 
-1. Select the policy and **Enable** it.
+1. Select the policy and **Enable** or **Disable** it for users or groups of users in your organization.
     :::image type="content" source="../../media/m365-setup-guide/OCPS-Enabled-policy.png" alt-text="Mesh access policy enabled":::
 1. In the Review and publish page, review the policy that was created then select **Create** to publish.
 
@@ -84,4 +156,4 @@ Users will see a new license agreement dialogue in the upcoming release for Mesh
 :::image type="content" source="../../media/m365-setup-guide/End-user-license-agreement.png" alt-text="End user license agreement for Mesh and spatial audio.":::
 
    > [!div class="nextstepaction"]
-   > [Set up Mesh Portal (Preview)](setup-mesh-portal.md)
+   > [Create worlds and events in Mesh](setup-mesh-portal.md)
