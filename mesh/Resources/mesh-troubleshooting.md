@@ -106,7 +106,7 @@ You'll need to first reproduce the problem, and then follow the steps below to c
 
     ![A screenshot of the About Mesh dialog in the Mesh Portal](media/m365-about-mesh.png)
 
-1. Click the **About Mesh** link in the **Other resources** section. You may need to scroll down to the bottom of the screen to see the **About Mesh**.
+1. Click the **About Mesh** link in the **Other resources** section. You may need to scroll down to the bottom of the screen to see this option.
 1. Click the **Copy all** button.
 1. Share that data with [Microsoft support](https://aka.ms/meshdevsupport).
 
