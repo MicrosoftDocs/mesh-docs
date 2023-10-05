@@ -77,7 +77,7 @@ Then, dive in to organize your first Mesh event:
 > [!div class="nextstepaction"]
 > [Organize Mesh events](events-guide/events-overview.md)
 
-Experience Mesh by joining a Mesh event
+Experience Mesh by joining a Mesh event:
 
 > [!div class="nextstepaction"]
 > [Join a Mesh event](user-guide/join-an-event.md)
