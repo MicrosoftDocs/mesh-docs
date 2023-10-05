@@ -46,7 +46,8 @@ If there isn't a UV seam at the hard edge, and with the light bake
 resolution constraints we have, the hard edges will turn soft and lose
 their impact.
 
-![](../../media/3d-design-performance-guide/image018.png) 
+![___](../../media/3d-design-performance-guide/image018.png) 
+
 This version of the elephant has bigger UV
 shells with no cuts at the hard edges.
 
@@ -64,6 +65,7 @@ Aliasing baked into textures hurts immersion and presence.
 The aliasing seen here is due to the UV shell being a circle.
 
 ![](../../media/3d-design-performance-guide/image020.png) 
+
 Aliasing will be gone regardless of the
 lightmap texture resolution.
 
@@ -90,9 +92,12 @@ Once texel size is determined in Unity, make sure to go back and adjust
 any shells that are too closely packed to cut out texture bleed or have
 room for smaller padding.
 
-![](../../media/3d-design-performance-guide/image023.png) First
+![](../../media/3d-design-performance-guide/image023.png) 
+
+First
 pass, before the scene texel scale is determined.
 
 ![](../../media/3d-design-performance-guide/image024.png) 
+
 Second pass, after the scene texel scale is
 determined.

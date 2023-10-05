@@ -16,6 +16,7 @@ To include a mesh object in the light bake, make sure you check the
 **Static** checkbox in the **Inspector**.
 
 ![](../../media/3d-design-performance-guide/image043.png) 
+
 All Unity light types are available when
 using baked lighting.
 
@@ -26,6 +27,7 @@ To include a mesh object in the light bake, make sure you check the
 **Static** checkbox in the **Inspector**.
 
 ![](../../media/3d-design-performance-guide/image044.png) 
+
 If this isn't checked, lighting won't be
 applied to the mesh, nor will it cast any shadows in the scene.
 
@@ -72,32 +74,3 @@ will also display an error if a light like this is not found.
 ![A screenshot of a software Description automatically generated with
 medium confidence](../../media/3d-design-performance-guide/image046.png)
 
-## Light Mapper Settings
-
-*Unity Lighting settings (Window/Rendering/Lighting)*
-
-| +---------------------------------------+------------------------------+ |
-|--------------------------------------------------------------------------|--|
-| scene**.                                                                 | Parameters file and setting |
-|                                                                          | BackfaceTolerance to a very |
-| ![](../../media/3d-design-performance-guide/image047.png)                          | low number keeps backface |
-|                                                                | errors out of the light |
-|                                                                          | bake. |
-|                                                                          |  |
-| ![](../../media/3d-design-performance-guide/ima                          | ![](../../media/3d-design-performance-guide/{ |
-| ge048.png){width="4.159027777777778in"                                   | width="3.1304505686789152in" |
-| height="1.7048611111111112in"}                                           | h |
-|                                                                          | eight="3.398043525809274in"} |
-| Ambient Occlusion is project                                             |  |
-| dependent. We recommend that you                                         | ![](../../media/3d-design-performance-guide/image051.png) |
-| don't use it since it does introduce                                     | {width="2.613636264216973in" |
-| artifacts in light bake.                                                 | he |
-|                                                                          | ight="2.3652679352580925in"} |
-| **Non-Directional is required for                                        |  |
-| WebGL environments.**                                                    | ![](../../media/3d-design-performance-guide/image052.png){ |
-|                                                                          | width="2.6131944444444444in" |
-| ![](../../media/3d-design-performance-guide/imag                         | he |
-| e049.png){width="3.8333333333333335in"                                   | ight="2.1761450131233597in"} |
-| height="1.4270067804024498in"}                                           |  |
-| +=======================================+==============================+ |
-| +---------------------------------------+------------------------------+ |

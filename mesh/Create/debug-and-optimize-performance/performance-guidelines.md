@@ -33,7 +33,7 @@ of users that Mesh can support without performance issues decreases.
 
 ### Content Performance Analyzer (CPA)
 
-We recommend that you use the Content Performance Analyzer (CPA) to
+We recommend that you use the [Content Performance Analyzer (CPA)](./cpa.md) to
 maximize the number of users that can access and use a Mesh experience 
 without performance issues. You can use the CPA to audit polycount, draw
 call, texture size, and more. This allows you to catch content

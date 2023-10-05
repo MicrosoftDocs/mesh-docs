@@ -12,18 +12,9 @@ keywords: Microsoft Mesh, Producing, M365, events, hosting, event producer, even
 
 ## Considerations before starting your event
 
-**Customize before your event:** To ensure the event runs smoothly, ensure that you customize the event
-at least one hour before the event should start.
+**Customize before your event:** To ensure the event runs smoothly, ensure that you customize and save customizations at least 30 minutes before the event start time.
 
-**Provision event for multiple room events:** If you've chosen a Multiple rooms event, ensure that you've provisioned
-your Multiple Rooms event at least 30 minutes before the event start
-time.
-
-*Provisioning is necessary to enable broadcasting between rooms as the
-event host.*
-
-See the [Provision Multiple Rooms event](#provision-multiple-rooms-before-the-event) section for more
-info.
+**Event capacity:** An event can support up to 200 people, however only 16 people can be in the same room and interact spatially together. Use the broadcast feature to communicate with all participants.
 
 ## Event Producers tools
 
@@ -35,16 +26,17 @@ info.
 
 ## Producing your event
 
-After you've created your event and customized it, it's time to join and produce your event.
+After you've created your event, customized it, and added content to the control panel, it's time to join and produce your event.
 
-1. Find your event in the Mesh app and select **Join now**.
+> [!TIP]
+> **Ensure that you've customized your event properly** (added custom content or artifacts to your environment, added it to the control panel, and saved) before producing your event.
 
-    1. Open the app, find the event, and join the event.
-    1. Go to the calendar invite and use the link in the invite.
+1. Open the Mesh app directly or use the link your calendar invite to open the Mesh app.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/event-mesh-in-calendar.png" alt-text="Mesh event showing up in Teams calendar":::
-1. Find your event in the **Upcoming** or **Happening now**sections, and select **Join**.
-    :::image type="content" source="../media/mesh-event-producer-guide/Join-now-events.png" alt-text="Join now button in the Microsoft Mesh app":::    
+1. Find your event in the **Upcoming** or **Happening now** sections, and select **Join**.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Join-now-events.png" alt-text="Join now button in the Microsoft Mesh app":::
+
 1. Adjust your device settings to ensure they're set up properly.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Device-settings-setup-before-join.png" alt-text="Device settings adjustment  inside pre-join window for Mesh event.":::
@@ -71,7 +63,7 @@ Once you select **Join now**, you'll utilize two main tools for your run of show
   
     :::image type="content" source="../media/mesh-event-producer-guide/Megaphone-button.png" alt-text="Megaphone button in host panel":::
 
-- **Broadcast:** Broadcast your avatar to all rooms in a multi-room event.
+- **Broadcast:** Broadcast your avatar to all rooms in a multi-room event. 
   
     :::image type="content" source="../media/mesh-event-producer-guide/Broadcast-button.png" alt-text="Boradcast button in a Mesh event in the host panel":::
 
