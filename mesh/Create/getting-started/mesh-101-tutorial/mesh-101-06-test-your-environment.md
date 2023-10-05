@@ -3,7 +3,7 @@ title: Test your environment within the Mesh app
 description: Learn how to test your environment with a developer template.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/26/2023
+ms.date: 10/5/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, events, experiences
 ---
