@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365
 You've completed adding all the features you need for your Mesh
 experience using Mesh Physics and Scripting. So far, we've been working
 in a Unity *project*; now you'll turn the *StartingPoint* scene into a
-Mesh *Environment* and upload it to a Mesh *World* in the Mesh Portal. At that point, it will be available for the creation of *Events*.
+Mesh *environment* and upload it to a Mesh *world* in the Mesh Portal. At that point, this version of your environment is ready for you to test, as you prepare to schedule an *event*.
 
 > [!IMPORTANT]
 > A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../../Setup/Content/setup-m365-mesh.md).
@@ -115,8 +115,7 @@ Portal](https://portal.mesh.microsoft.com), you'll see that your Environment has
 
 ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/458-environment-in-mesh-portal.png)
 
-Your saved custom Environment will be available to anyone who creates a
-new event in that World.
+Your saved custom Environment is now ready for you to test in the Mesh app on your desktop PC or Quest headset, to be sure it will look and perform exactly as you expect!
 
 ## Summary
 
@@ -127,4 +126,4 @@ Portal.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Chapter 6: Create an Event and invite others](mesh-101-06-create-an-event-and-invite-others.md)
+> [Chapter 6: Test your environment within the Mesh app](mesh-101-06-test-your-environment.md)
