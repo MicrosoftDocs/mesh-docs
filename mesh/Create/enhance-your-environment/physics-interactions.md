@@ -85,12 +85,6 @@ The *DartRoom* project (scene: *DartRoom*) uses most physics features. In this p
 
 This is a beautifully rendered scene that demonstrates the power of combining appealing visuals with the creative use of Mesh Physics features. Feel free to inspect the scene and play with it!
 
-### ScriptedWorlds
-
-Open the *PhysicsShowcase* scene in this project and select the Play button. You'll find a number of labeled buttons that, when clicked, demonstrate various Mesh Physics features.
-
-![Screen shot of the Physics Showcase scene with buttons that trigger various Mesh Physics features.](../../media/physics-interactions/009-physics-showcase.png)
-
 ### Mesh 101 Tutorial
 
 In the Mesh 101 tutorial (sample name: *Mesh101.Unity*), [Chapter 4](../getting-started/mesh-101-tutorial/mesh-101-04-physics.md) walks you step-by-step through the process of setting up three Mesh Physics features: grabbing and releasing objects, triggering an animation using a trigger volume, and constraining an object with a containment field. 
@@ -101,31 +95,18 @@ As you explore our other sample projects, you'll find various instances of Mesh 
 
 ![Screen shot of the Mass and Buoyancy exhibit which uses the Buoyancy Field and Buoyancy Field Waves components.](../../media/physics-interactions/008-buoyancy-field-waves.png)
 
-## Prerequisites for Mesh Physics
-
-* Advanced Unity skills.
-
-* There must be an existing Mesh World in the Mesh Portal that you can upload your work to. 
-
-* There must be an existing Unity project that contains the Mesh Uploader (in Mesh terms, this project is used to create an *Environment*), or you must create one. To learn more about creating one, see our article titled [Create a new project or update an existing one](../build-your-basic-environment/create-a-new-project-or-update.md).
-
 ## Terminology
 
 Throughout this article, "body" is used as shorthand for "Rigidbody."
 
-## Packages
+## Overview
 
-The document titled *Get Started with Mesh Environments* contains instructions on how to load packages into your project. When you load the tarball named *com.microsoft.mesh.toolkit.xxx.tgz*, you import the Mesh Physics packages *mesh.physics.runtime* and *mesh.physics.playmode* (among other content).
-
-![Screen shot of the Mesh Physics packages in the Hierarchy in Unity.](../../media/physics-interactions/001-toolkit-in-unity.png)
-
-The *mesh.physics.runtime* package synchronizes the positions of rigid bodies and should work out-of-the-box, assuming all clients share the same scene. It also offers interaction and additional physics-related functionalities such as:
+Mesh physics synchronizes the positions of rigid bodies and should work out-of-the-box, assuming all clients share the same scene. It also offers interaction and additional physics-related functionalities such as:
 
 * various fields to physically influence bodies inside (buoyancy, gravity)
 * various components to modify the behavior of individual bodies (magnetic, sticky, throwable)
 * the ability to reset bodies to their startup positions (selective scene cleanup)
-
-The *mesh.physics.playmode* package enhances the Mesh.Toolkit.Playmode functionality with Mesh Physics synchronization. To learn more about Playmode, see the document titled *Get Started with Mesh Environments*, section: *Testing with the Playmode package*.
+* Play Mode support for multi-user testing of the features above
 
 ## Distributed physics simulation
 
@@ -142,146 +123,21 @@ Most Unity physics features will be synchronized without extra developer effort:
 
 Each client is responsible for simulating some of the bodies, called the distributed simulation "ownership". When a player touches a rigid body, simulation ownership is immediately transferred to allow low-latency interaction. For neighboring bodies, the physics synchronization engine performs local prediction, interpolation, and automatic ownership redistribution to minimize visual artifacts.
 
-## Change Log
-
-### Mesh.Physics 6.0.77 -- Mesh release 23.11
-
-* Assemblies have been renamed from `com.microsoft.mesh.physics.*` to `Microsoft.Mesh.Physics.*` requiring the use of the Mesh Updater executable to migrate existing content and a reupload of all content. See OneMeshToolkit migration steps for details.
-
-* Various deprecated components have been removed from the main Mesh Toolkit package. An additional package, 'com.microsoft.mesh.physics.legacy-6.0.77.tgz', is available for this release to facilitate manual migration. This package can be added to a legacy project in addition to the Mesh Toolkit package. Any reference to a deprecated component will then continue to work in PlayMode as well as the Mesh app, but will write an error message to the Unity Console window that allows finding and manually replacing the component. These errors must be addressed within this release cycle; afterwards, deprecated components may silently cease to work.
-
-* The SharedEvents mechanism, introduced to replace the UnityEvent for connecting Mesh.Physics components, has been superceded by the far more powerful Mesh.VisualScripting integration. Wherever a low-level one-to-one replacement isn't possible, we've found it useful to take a step back to the higher-level use case to construct a solution that better fits the VisualScripting paradigm.
-
-Most deprecated components have no one-to-one replacement, but their main use cases can now be better realized by Mesh.VisualScripting. If important use cases in existing content can't be migrated, contact support to request features we might have missed.
-
-  | Component name                                      | Suggested migration path
-  |-----------------------------------------------------|-----------------
-  | `BodyPairDistanceSensor` *(part of BuzzerButton)*   | replace BuzzerButton by Mesh.Interactables and VisualScripting
-  | `ButtonJoint` *(part of BuzzerButton)*              | replace BuzzerButton by Mesh.Interactables & VisualScripting
-  | `SharedControlEvents` *(part of BuzzerButton)*      | replace BuzzerButton by Mesh.Interactables & VisualScripting
-  | `MeshPhysicsBodyEvents` (a.k.a. `SharedBodyEvents`) | replace by VisualScripting
-  | `MeshPhysicsEvents` (a.k.a. `SharedPhysicsEvents`)  | replace by VisualScripting
-  | `StickyBodyEffects`                                 | replace by VisualScripting
-  | `StickyBodyTrigger`                                 | replace by `TriggerEventsSensor` & VisualScripting
-  | `TeleportBody`                                      | replace by VisualScripting SetPosition
-  | `ForceToolConfig`                                   | replace by MeshInteractableProperties
-  | `ThrowableBody`                                     | replace by MeshInteractableProperties \| Equippable \| Throwable
-
-### Mesh.Physics 6.0.60 -- Mesh release 23.10
-
-* The component `PhysicsSceneSetup` has become redundant and can be removed. It has been temporarily renamed to `obsolete_PhysicsSceneSetup` and triggers a harmless error message when found.
-
-### Mesh.Physics 0.21.0
-
-Mesh.Physics 0.21.0 brings a renaming of the package along with a major restructuring of its content. The major changes in transitioning from lib.sharedphysics 0.15.x are:
-
-* renaming of packages (`com.microsoft.edt.lib.sharedphysics.*` to `com.microsoft.mesh.physics.*`)
-* renaming of several physics components (detailed list below)
-* removal of various rarely-used or problematic components and properties (detailed list below)
-
-After updating the mesh.toolkit packages, any `lib.sharedphysics` content in the scene requires an explicit migration step for which a tool is provided (see below). If this step is found to be necessary, an error dialog will be displayed.
-
-#### Using Migration tool from lib.sharedphysics 0.15.x
-
-* Ensure that project is fully backed up (committed to source control)
-* Use the MeshPhysicsUpdater-23_5-to-23_6 tool on the project (available in the Extras/ folder on SharePoint).
-
-  ![A screen shot of the Mesh Physics Uploader in the Extras folder.](../../media/physics-interactions/012-physics-uploader.png)
-
-* Update package dependency
-* After loading, check the Unity console for warnings and errors about necessary manual adjustments.
-
-#### Details changes
-
-|old package name                                   |new package name
-|-------------------------------------------------- |-------------------------------------
-|com.microsoft.toolkit.authoring                    |com.microsoft.mesh.toolkit
-|com.microsoft.edt.lib.sharedphysics.runtime        |com.microsoft.mesh.physics.runtime
-|com.microsoft.edt.lib.sharedphysics.dev            |com.microsoft.mesh.physics.playmode
-
-|old component name                     |new component name
-|---------------------------------------|---------------------------------
-|AntigravityField                       |ScaledGravityField
-|CollisionVolume                        |CollisionEventsSensor
-|DirectionalVelocityField               |VelocityVectorField
-|GravityField                           |OrbitalGravityField
-|SteerField                             |VelocityDirectionField
-|VelocityField                          |VelocityMagnitudeField
-|SharedBodyDistanceSensor               |BodyPairDistanceSensor
-|TeleportRigidBody                      |TeleportBody
-|TriggerVolume                          |TriggerEventsSensor
-|SharedEventsAction_TeleportGameObject  |SharedEventsAction_TeleportBody
-
-|class name             |old property name           |new property name
-|-----------------------|---------------------------|-------------------------
-|AlignField             |bodiesToAffectFilter       |affectedBodies
-|AlignField             |damper                     |angularDrag
-|BouncingSurface        |bounceVelocity             |bounceVelocityMagnitude
-|BuoyancyField          |buoyantBodies              |affectedBodies
-|BuoyancyField          |waterDensity               |density
-|BuoyancyField          |WaterSurfaceType           |surfaceType
-|ContainmentField       |bodiesToContain            |affectedBodies
-|DirectionalExplosion   |bodiesToAffect             |affectedBodies
-|OrbitalGravityField    |moonsToCapture             |affectedBodies
-|OrbitalGravityField    |defaultRadiusOfForcedOrbit |defaultForceRadius
-|PreventSleep           |sleepTime                  |timeThreshold
-|PreventSleep           |bodiesToAffectFilter       |affectedBodies
-|ScaledGravityField     |bodiesToAffect             |affectedBodies
-|TeleportBody           |relativeToObject           |targetObject
-|VelocityDirectionField |bodiesToAffectFilter       |affectedBodies
-|VelocityMagnitudeField |bodiesToAffectFilter       |affectedBodies
-|VelocityVectorField    |bodiesToAffectFilter       |affectedBodies
-
-| removed property
-|-
-| BodyPairDistanceSensor.referencePoint
-| BuoyancyField.preventDrift
-| CollisionEventsSensor.triggerDelay
-| ResetBodyTransforms.initialAutoSaveDelay
-| ResetBodyTransforms.transitionEasing
-| ResetBodyTransforms.transitionEasingMode
-| ResetBodyTransforms.transitionDuration
-| ResetBodyTransforms.cooldownDuration
-| ResetBodyTransforms.additionalJumpHeightScale
-| SharedEventsAction_PlayAudio.playbackDelay
-| StickyBody.stickyBodyTriggerTag
-| StickyBody.collisionControlTag
-| StickyBodyTrigger.onlyStickyBodyWithTag
-| TriggerEventsSensor.triggerDelay
-
 ## Development
 
-### Download the Mesh Toolkit
+### Download the Dart Room sample
 
-1. In your browser, navigate to the [Microsoft Mesh EAP Onboarding Resources website](https://microsoft.sharepoint.com/teams/MicrosoftMeshEAPOnboardingResources).
+1. In your browser, navigate to the [Mesh Toolkit samples on GitHub](https://github.com/microsoft/Mesh-Toolkit-Unity/tree/main).
 
-1. On the main page, scroll down to the **Mesh Resources and Developer Tools** section, and then, under **Get the Files and Packages**, select the **Go** button.
+1. Click the green **Code** button and click **Download ZIP**.
 
-    ![___](../../media/physics-interactions/001-packages-go-button.png)
-
-1. On the **Files and Packages** page, download the latest version of the Mesh Toolkit--it will have a more recent version number than what you see here. Select the three-dot button and then select **Download**.
-
-    ![___](../../media/physics-interactions/001-mesh-toolkit-package-23-10.png)
-
-1. Place the downloaded zip file in a location where the file path won’t be too long, such as the Windows desktop.
-
-    **Note**: The downloaded zip file’s name may vary depending on your computer setup.
-
-1. Unzip the file, and then navigate through the unzipped folder hierarchy until you see folders named **Packages and Samples**.
-
-    ![___](../../media/physics-interactions/001-packages-and-samples.png)
-
-1. Double-click the **Samples** folder. This folder contains five Zip files.
-
-    ![___](../../media/physics-interactions/001-samples-folder.png)
-
-1. Unzip the file named **DartRoom.zip**. This gives you a folder named **DartRoom** which contains your sample Unity project.
+1. Extract the ZIP file. This gives you a folder named **DartRoom** which contains your sample Unity project.
 
 1. Open the sample project in Unity.
 
-### Run the Project in "Playmode"
+### Run the Project in "Play Mode"
 
-The project is already configured to use Mesh Playmode.
+The project is already configured to use Mesh Play Mode.
 
 1. Open the project in Unity.
 1. Navigate to the **Assets > Scenes** folder, and then load the **DartRoom** scene.
@@ -300,44 +156,6 @@ By default, Mesh Playmode runs with a single player. To add a second player with
 
 To learn about uploading your Environment to your Mesh World, see the article named [Build and publish your Environment](../make-your-environment-available-for-events/build-and-publish-your-environment.md).
 
-## Extend existing content using Mesh Physics
-
-To make an existing Unity project Mesh Physics-enabled, the following steps are necessary:
-
-1. Open the Package Manager and then remove the old 'com.microsoft.mesh.toolkit.authoring' package.
-1. Select the “+” drop-down, and then select **Add package from tarball**.
-
-    ![___](../../media/physics-interactions/003-add-package.png)
-
-1. Navigate to the folder named *Packages* in the unzipped file you downloaded earlier, and then add the *toolkit* file (it will be a newer version than what's shown in the image below). If you haven't downloaded the *toolkit* tarball yet, see the instructions in the *Quickstart* section.
-
-    ![___](../../media/physics-interactions/002-mesh-zip-523081.png)
-  
-1. Select **Edit > Project Settings > Player > Other Settings > Configuration > Active Input Handling > Both**, and then restart.
-
-1. Add the component named `ForceToolConfig` to any object in the scene that contains `Rigidbody` children that should become interactable.
-
-  **Note:** Any `ForceToolConfig` affects all Rigidbodies below it in the transform hierarchy. The detailed configuration options of the tool are described here.
-
-  **IMPORTANT**: As of July 2023, `ForceToolConfig` has been deprecated and replaced by the Object Configuration Layer (OCL), which features components that you can use for Mesh Physics as well as general object and player interactions. `ForceToolConfig` still has some useful features, but if you use it, keep in mind that it will be removed within a few months and you'll have to update your project(s) to use OCL. To learn more, see the document titled *Mesh Object and Player Interactions.pdf*.
-
-1. Add the prefab named `PlaymodeSetup [NoUpload]` to the scene via the context menu:
-
-    ![Screen shot of the `MeshToolkit|Add PlaymodeSetup` context menu](../../media/physics-interactions/Add-PlaymodeSetup.png)
-
-    * The avatar is replaced by a simple capsule-based character controller
-    * The Camera is now attached to the avatar; the main scene camera is ignored and should be removed.
-    * There is slightly downgraded performance due to C# bytecode being executed instead of optimized web-assembly.
-    * Single user by default, but also offers to test multiplayer using Playmode split screen.
-
-1. Ensure that the physical origin (0,0,0) is a reasonable place for the character controller to start.
-
-    **Note:** The MeshSDK standard component `SpawnPointConfig` is currently ignored by our character controller.
-
-1. Ensure that the static content of the scene contains correctly set up solid colliders. Note that planes are prone to tunneling.
-
-[Learn more about Playmode](../debug-and-optimize-performance/playmode.md).
-
 ## General tips for building Mesh Physics experiences
 
 You can start with scanning the Unity physics docs: `https://docs.unity3d.com/Manual/PhysicsOverview.html`. There are plenty of resources available on how to optimize physics in Unity.
@@ -349,31 +167,6 @@ Mesh Physics comes with some extra challenges:
 * Whenever possible, use thick convex pieces for static geometry. Try to avoid meshes, especially highly dense meshes.
 * **CPU limitations:** MeshXP runs inside a browser; as a result, its performance is limited. Try to use only a few dozen rigid bodies.
 * **Realistic masses in kg:** Content from various sources might interact in the same scene. This works well if the mass ratios between the objects are reasonable. A good starting point is to assign realistic masses to bodies using kg.
-
-## Feedback & Roadmap
-
-Mesh Physics is currently under heavy development, and we are very hungry for feedback, suggestions, and feature requests.
-
-Our current roadmap is flexible:
-
-### Short term
-
-* Improve stability and better handling of network package drop
-* Add more control
-* More example scenes
-
-### Medium term
-
-* Improve scalability, both bandwidth and CPU
-* Integrate interactions with MRTK3 Object Manipulator
-* More example scenes + artifacts
-
-### Long term
-
-* Integrate with client and server-side scripting
-* Add a builder tool, which supports scene graph manipulation. This tool is inspired by Kerbal Space Program. An example would be building cars out of random scene objects.
-
-  ![A screen shot of building cars out of random scene objects.](../../media/physics-interactions/005_20220718_135823_image.png)
 
 ## Developing enhanced Mesh Physics content
 
@@ -416,62 +209,6 @@ Makes bodies stick to other bodies. It could be used to throw darts at other bod
 * **Affected Bodies For Collision** Body filter applied for **Collision Control**.
 * **Stickiness Events** Allows for triggering events in response to stick/unstick events.
 
-### Trigger Events Sensor
-
-You can add this component to a trigger collider (in other words, a Game Object that has **Is Trigger** selected in its Collider component) to determine which events are fired when a Game Object enters and exits the trigger collider.
-
-![](../../media/physics-interactions/003-trigger-events-sensor.png)
-
-**Settings**
-
-**Trigger Type**
-
-You have two options for the Trigger Type:
-
-**Trigger On Each Body Individually:** execute Enter and Exit events for each body that enters or exits the trigger volume individually.
-
-**Trigger On Emptiness Change:** this can be useful for a scenario where several Game Objects might enter and exit the trigger volume at approximately the same time but you don’t want to fire events each time this happens. With this option selected, **On Trigger Enter** is fired when the first Game Object enters the trigger volume. Other Game Objects can enter and exit the trigger volume, but no other events are fired until the last Game Object exits, leaving the trigger volume empty. When that Game Object exits, **On Trigger Exit** is fired.
-
-**Trigger Delay**
-
-This is the delay (in seconds) between the moment a body enters or exits the trigger volume and the moment the corresponding event is executed.
-
-**Body Filter**
-
-Any Game Object that enters the trigger volume in its default state is eligible to trigger entry and exit events subject to the **Trigger Type** setting. You can use the **Body Filters** setting to make only Game Objects that meet certain conditions eligible for triggering events. To learn more, see the [Body Filter section](#common-settings-body-filters).
-
-**On Trigger Enter** and **On Trigger Exit**
-
-These determine which Actions are fired when a Game Object enters or exits the trigger volume.
-
-### Collision Events Sensor
-
-You can add this component to a physics collider (in other words, a Game Object that does **not** have **Is Trigger** selected in its Collider component) to determine which events are fired when a Game Object enters and exits the collision with this collider.
-
-![](../../media/physics-interactions/005-collision-events-sensor.png)
-
-**Settings**
-
-**Trigger Type**
-
-You have two options for the Trigger Type:
-
-**Trigger On Each Body Individually**: execute Enter and Exit events for each body that enters or exits the collision individually.
-
-**Trigger On Emptiness Change**: this can be useful for a scenario where several Game Objects might collide at approximately the same time but you don’t want to fire events each time this happens. With this option selected, **On Collision Enter** is fired when the first Game Object collides with this game object. Other Game Objects can collide, but no other events are fired until the last Game Object exits collision. When that Game Object exits, **On Collision Exit** is fired.
-
-**Trigger Delay**
-
-This is the delay (in seconds) between the moment a body collides and the moment the corresponding event is executed.
-
-**Body Filter**
-
-Any Game Object that collides in its default state is eligible to trigger entry and exit events subject to the **Trigger Type** setting. You can use the **Body Filters** setting to make only Game Objects that meet certain conditions eligible for triggering events. To learn more, see the [Body Filter section](#common-settings-body-filters).
-
-**On Collision Enter** and **On Collision Exit**
-
-These determine which actions are fired when a Game Object enters or exits the collision.
-
 ### Containment Field
 
 Ensures that rigid bodies stay within the boundaries of one or several trigger colliders.
@@ -488,7 +225,7 @@ The rigid bodies affected by this component must already be within the boundarie
 
 * **Affected Bodies** defines [optional filtering conditions](#common-settings-body-filters) for the bodies affected by this component. (By default, all bodies are affected.)
 
-### Velocity Vector
+### Velocity Vector Field
 
 Allows to accelerate/decelerate a rigid body until it reaches a specific target velocity.
 
@@ -513,7 +250,7 @@ This component has two modes of operation:
   * **Smooth Approach** reduces acceleration the closer you get to target velocity. This means that, in practice, you will never reach the target velocity. Also, should there be any external influence, like going uphill or downhill, this extra influence will not be completely overridden, resulting in going faster downhill than uphill.  
 * **Affected Bodies** defines [optional filtering conditions](#common-settings-body-filters) for the bodies affected by this component. (By default, all bodies are affected.)
 
-### Scale Gravity Field
+### Scaled Gravity Field
 
 Changes how gravity affects rigid bodies within the boundaries of one or several trigger colliders.
 
@@ -641,7 +378,7 @@ The physics engine won't allow the rigid body to exceed this angular velocity. T
 
 The maximum angular velocity must be entered in radians per second. The entered value is also displayed in degrees per second (180 degrees ≈ 3.14 radians) and revolutions per second (1 revolution = 360 degrees ≈ 6.28 radians).
 
-### Velocity Magnitude
+### Velocity Magnitude Field
 
 Allows acceleration/deceleration of a rigid body until it reaches a speed that's within an allowable range.
 
@@ -692,7 +429,7 @@ This component has two modes of operation:
 - **Damping Coefficient** sets the damping factor (between 0 and 5). When set below 1, the body might oscillate around target orientation.
 * **Affected Bodies** defines [optional filtering conditions](#common-settings-body-filters) for the bodies affected by this component. (By default, all bodies are affected.)
 
-### Velocity Direction
+### Velocity Direction Field
 
 Allows to steer a rigid body until the velocity reaches a target direction.
 
@@ -823,7 +560,7 @@ Offsets the center of mass of a rigidbody.
 
 ## Common Settings: Body Filters
 
-Some components, such as the Trigger Events Sensor and Collision Events Sensor components, have a **Body Filter** setting (usually named **Affected Bodies**).
+Some components, such as Sticky Body, have a **Body Filter** setting (usually named **Affected Bodies**).
 
 ![___](../../media/physics-interactions/006-trigger-body-filters.png)
 

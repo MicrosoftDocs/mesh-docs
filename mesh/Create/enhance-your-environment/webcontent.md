@@ -64,11 +64,7 @@ WebSlate depends on the *Unity.InputSystem* and *Unity.XR.Interaction.Toolkit* 
 
 ## Add a WebSlate to your Mesh environment
 
-Adding a WebSlate to your environment should be a relatively straightforward process so long as you have a Unity project set up to create Mesh environments.
-
-### Prerequisites
-
-If you haven't done so already, import the [Mesh Toolkit](../build-your-basic-environment/access-the-mesh-toolkit-package.md).
+Adding a WebSlate to your Environment should be a relatively straightforward process so long as you have a Unity project set up to create Mesh environments.
 
 ### Add a WebSlate prefab to your Unity project
 

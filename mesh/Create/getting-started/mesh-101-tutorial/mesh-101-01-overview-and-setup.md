@@ -21,7 +21,7 @@ attend an Event based on your Environment where they'll learn about wind
 turbines by visiting a series of interactive stations and experience
 multi-user interaction and communication.
 
-The tutorial project is named *Mesh101.Unity* and is included in the
+The tutorial project is named *Mesh101* and is included in the
 Mesh Toolkit.
 
 > [!IMPORTANT]
@@ -59,13 +59,13 @@ In Mesh terms, the project you create in Unity and then upload to the Mesh Porta
 
 ### Previous Unity experience
 
-This tutorial assumes that you have the intermediate to advanced Unity skills needed to creative an Environment. We also recommend that you have some familiarity with Unity Visual Scripting; however, we've gotten feedback from scripting novices that they found the tutorial easy to follow. A good place to learn Visual Scripting basics is through [Unity's Visual Scripting tutorial](https://learn.unity.com/project/introduction-to-visual-scripting). This teaches you most if not all of the concepts you need to get started with Mesh Visual Scripting. 
+This tutorial assumes that you have the intermediate to advanced Unity skills needed to create an Environment. We also recommend that you have some familiarity with Unity Visual Scripting; however, we've gotten feedback from scripting novices that they found the tutorial easy to follow. A good place to learn Visual Scripting basics is through [Unity's Visual Scripting tutorial](https://learn.unity.com/project/introduction-to-visual-scripting). This teaches you most if not all of the concepts you need to get started with Mesh Visual Scripting. 
 
-If you don't, you can still [create, customize and produce](../../../../Use/events-guide/create-event-mesh-portal.md) Mesh events using existing Environments.
+If you don't, you can still [create, customize and produce](../../../events-guide/create-event-mesh-portal.md) Mesh events using ready-to-use environments.
 
 ### Hardware requirements
 
-Minimum PC requirements: 4 CPU cores, 8Gb RAM
+Minimum PC requirements: 4 CPU cores, 8GB RAM
 
 ### Unity version 2022.3.7f1
 
@@ -86,9 +86,9 @@ Download Microsoft Mesh on PC
 
     ![______](../../../media/get-started-developing-mesh/006-mesh-download-for-pc.png)
 
-### Download the Mesh Toolkit Samples
+### Download the Mesh Toolkit samples
 
-*Mesh 101* tutorial project is available in [*Mesh-Toolkit-Unity*](https://github.com/microsoft/Mesh-Toolkit-Unity) github repository.
+The *Mesh 101* tutorial project is available in the [*Mesh-Toolkit-Unity*](https://github.com/microsoft/Mesh-Toolkit-Unity) GitHub repository.
 
 1. In your browser, go to GitHub, and then navigate to the [*Mesh-Toolkit-Unity* repository](https://github.com/microsoft/Mesh-Toolkit-Unity).
 
@@ -98,17 +98,17 @@ Download Microsoft Mesh on PC
 
     ![______](../../../media/sample-mesh-101/470-code-and-download-zip.png)
 
-1. On your C: drive, create a folder with a one-word name (for example,"Mesh101") and then move or copy the downloaded Mesh Toolkit Zip file to that folder. This is done to avoid running into a problem with the Windows path length limit, which is 256 characters. **IMPORTANT**: *Don't* place the Zip file on the Windows desktop. Behind the scenes, this creates a very long path name.
+1. On your C: drive, create a folder with a one-word name (for example, "Mesh101") and then move or copy the downloaded Mesh Toolkit Zip file to that folder. This is done to avoid running into a problem with the Windows path length limit, which is 256 characters. **IMPORTANT**: *Don't* place the Zip file on the Windows desktop. Behind the scenes, this creates a very long path name.
 
     In the example below, the user created a folder on their C: drive named *Mesh101.* Next, they moved the downloaded Mesh Toolkit Zip file to the *Mesh101* folder.
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/471-toolkit-zip-in-folder.png)
 
-5. Unzip the Toolkit Zip file into the same folder, and then navigate through the unzipped folder hierarchy until you see the **Mesh101** folder. This contains the tutorial project which you'll open in the next chapter.
+1. Unzip the samples Zip file into the same folder, and then navigate through the unzipped folder hierarchy until you see the **Mesh101** folder. This contains the tutorial project which you'll open in the next chapter.
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/472-mesh-tutorial-folder.png)
 
-### The Packages
+### Mesh Toolkit package
 
 For this tutorial, the only package you need is the Mesh Toolkit package, and it's  
 already pre-loaded into the tutorial project. If you were creating your
