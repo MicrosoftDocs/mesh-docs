@@ -42,32 +42,39 @@ We are making building relationships easier by bringing the power of Mesh into t
 
 ## Create a custom immersive space with Microsoft Mesh
 
-Create custom immersive spaces with the Mesh toolkit in Unity that are tailored to your specific business needs such as employee events, training, guided tours, or internal product showcases.
+Create custom immersive spaces in Microsoft Mesh that are tailored to your specific business needs such as employee events, training, guided tours, or internal product showcases.
 
-:::image type="content" source="media/get-started-developing-mesh/image040-unity-overview-hero.png#lightbox" alt-text="Overview image of Unity development environment for Mesh":::
+### Customize a ready-to-use environment
 
-> [!div class="nextstepaction"]
-> [Mesh Development Overview](Create/development-overview.md)
-
-### Customize and host events
-
-Use a no-code editor to easily customize the event or the Mesh toolkit to leverage the power of Unity for fully customizable immersive experiences.
+Start from a ready-to-use environment and then use a no-code editor to easily customize the event.
 
 :::image type="content" source="user-guide/media/Events-customization.gif" alt-text="Customization":::
 
 > [!div class="nextstepaction"]
-> [Overview of Mesh events](events-guide/events-overview.md)
+> [Learn about organizing Mesh events](events-guide/events-overview.md)
+
+### Develop a custom environment
+
+Use the Mesh toolkit to leverage the power of Unity for fully customizable immersive experiences.
+
+:::image type="content" source="media/get-started-developing-mesh/image040-unity-overview-hero.png#lightbox" alt-text="Overview image of Unity development environment for Mesh":::
+
+> [!div class="nextstepaction"]
+> [Learn about developing custom environments in Unity](Create/development-overview.md)
 
 ## Next steps
 
-   > [!div class="nextstepaction"]
-   > [Set up Microsoft Mesh](Setup/Content/setup-m365-mesh.md)
+To get started, make sure your organization's admins have set up Microsoft Mesh:
 
-   > [!div class="nextstepaction"]
-   > [Organize Mesh event](events-guide/events-overview.md)
+> [!div class="nextstepaction"]
+> [Mesh setup for admins](Setup/Content/setup-m365-mesh.md)
 
-   > [!div class="nextstepaction"]
-   > [Join Mesh event](user-guide/getting-started.md)
+Then, dive in to organize your first Mesh event:
 
-   > [!div class="nextstepaction"]
-   > [Develop Mesh environments](Create/development-overview.md)
+> [!div class="nextstepaction"]
+> [Organize Mesh events](events-guide/events-overview.md)
+
+If you have skills using Unity, get started building your own custom environments:
+
+> [!div class="nextstepaction"]
+> [Develop Mesh environments](Create/development-overview.md)
