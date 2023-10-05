@@ -8,9 +8,9 @@ ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, events, experiences
 ---
 
-# Mesh 101 Tutorial Chapter 6: Create an event and invite others
+# Mesh 101 Tutorial Chapter 7: Create an event and invite others
 
-Now that you've uploaded your Mesh 101 Environment to the Mesh portal, you can
+Now that you've uploaded your Mesh 101 Environment to the Mesh portal, tested its appearance and performance, and made any final tweaks, you can
 create and produce an Event based on that Environment that participants
 can experience through the Mesh app for PC or Quest.
 

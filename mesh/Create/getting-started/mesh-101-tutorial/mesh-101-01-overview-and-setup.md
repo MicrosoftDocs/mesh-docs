@@ -29,25 +29,27 @@ Mesh Toolkit.
 
 The tutorial is structured as follows:
 
-This article: Overview and setup
+- Chapter 1: Overview and setup *(this article)*
 
-[Chapter 2: Prepare the tutorial project](mesh-101-02-prepare-the-project.md)
+- [Chapter 2: Prepare the tutorial project](mesh-101-02-prepare-the-project.md)
 
-[Chapter 3: Add interactivity with Mesh Visual Scripting](mesh-101-03-visual-scripting.md)
+- [Chapter 3: Add interactivity with Mesh Visual Scripting](mesh-101-03-visual-scripting.md)
 
-- Station 3.1: Create an Interactable Button
-- Station 3.2: Trigger an info dialog
-- Station 3.3: Teleport to the turbine generator
+  - Station 3.1: Create an Interactable Button
+  - Station 3.2: Trigger an info dialog
+  - Station 3.3: Teleport to the turbine generator
 
-[Chapter 4: Move objects and trigger animations with Mesh Interactables and Physics](mesh-101-04-physics.md)
+- [Chapter 4: Move objects and trigger animations with Mesh Interactables and Physics](mesh-101-04-physics.md)
 
-- Station 4.1: Grab and Release
-- Station: 4.2 Animation Trigger
-- Station 4.3: Constraining Bodies
+  - Station 4.1: Grab and Release
+  - Station 4.2: Animation Trigger
+  - Station 4.3: Constraining Bodies
 
-[Chapter 5: Make your Environment available for Events](mesh-101-05-make-environment-available.md)
+- [Chapter 5: Make your Environment available for Events](mesh-101-05-make-environment-available.md)
 
-[Chapter 6: Create an Event and invite others](mesh-101-06-create-an-event-and-invite-others.md)
+- [Chapter 6: Test your environment within the Mesh app](mesh-101-06-test-your-environment.md)
+
+- [Chapter 7: Create an Event and invite others](mesh-101-07-create-an-event-and-invite-others.md)
 
 ## Terminology
 

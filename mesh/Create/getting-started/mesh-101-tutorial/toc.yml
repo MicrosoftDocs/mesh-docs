@@ -9,8 +9,10 @@ items:
     href: mesh-101-04-physics.md
   - name: 5. Make your Environment available for Events
     href: mesh-101-05-make-environment-available.md
-  - name: 6. Create an event and invite others
-    href: mesh-101-06-create-an-event-and-invite-others.md
+  - name: 6. Test your environment within the Mesh app
+    href: mesh-101-06-test-your-environment.md
+  - name: 7. Create an event and invite others
+    href: mesh-101-07-create-an-event-and-invite-others.md
 
 
 
