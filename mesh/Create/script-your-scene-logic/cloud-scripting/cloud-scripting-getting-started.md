@@ -8,14 +8,17 @@ ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
 
-# Mesh Cloud Scripting Getting Started Guide
+# Mesh Cloud Scripting Getting Started
 
-This article will help you configure your development environment and start iterating on your project. We’ll also cover how to upload your environment with Mesh Cloud Scripting Service to Azure, and prepare for testing. Finally, we’ll go over testing and troubleshooting. We recommend that you familiarize yourself with the current list of [known issues](../../Resources/mesh-toolkit-known-issues.md#cloud-scripting) before starting development with Mesh Cloud Scripting.
+This article will help you configure your development environment and start iterating on your project. We’ll also cover how to upload your environment with Mesh Cloud Scripting Service to Azure, and prepare for testing. Finally, we’ll go over testing and troubleshooting. We recommend that you familiarize yourself with the current list of [known issues](../../../Resources/mesh-toolkit-known-issues.md#cloud-scripting) before starting development with Mesh Cloud Scripting.
 
+- There must be an existing Mesh World that contains a Space in the Azure Portal that you can upload your work to. To learn more about setting this up, see how to [create a world](../../Setup/Content/setup-mesh-portal.md#create-a-mesh-world).
+- There must be an existing Unity project that was created, or you must [create a new Unity project](../build-your-basic-environment/create-a-new-project.md). You will need to [download the *Mesh Toolkit*](../getting-started/download-the-mesh-toolkit.md) which contains the Unity package you need for Mesh Cloud Scripting. This package is named *mesh.meshapps.unityruntime*.
+- You should be at least somewhat familiar with event management. To learn more about this, see how to [create an event in the Mesh portal](../../events-guide/create-event-mesh-portal.md)
 ## Software dependencies
 
 1. [.NET 6.0 SDK Windows](https://dotnet.microsoft.com/en-us/download)
-1. [Azure CLI 2.40.0](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
+1. [Azure CLI 2.40.0](https://learn.microsoft.com/cli/azure/install-azure-cli)
 
 ## Create a Scene with Mesh Cloud Scripting
 
@@ -30,15 +33,15 @@ The following instructions show how to create a simple environment with a cube t
 
 1. On the menu bar, select **GameObject** > **Mesh Toolkit** > **Set-up Cloud Scripting**.
 
-   ![Screen shot of the Create Mesh App menu item.](../../media/mesh-scripting/getting-started/002-create-mesh-app.png)
+   ![Screen shot of the Create Mesh App menu item.](../../../media/mesh-scripting/getting-started/002-create-mesh-app.png)
 
    Note that a game object named **Mesh Cloud Scripting** appears in the **Hierarchy** and is selected. This also creates a new [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/razor-pages/web-sdk?view=aspnetcore-6.0) project under `Assets/.MeshCloudScripting/MyFirstCloudScripting`.
 
-   ![img](../../media/mesh-scripting/getting-started/003-mesh-app-files.png)
+   ![img](../../../media/mesh-scripting/getting-started/003-mesh-app-files.png)
 
 1. You can use the **Open application folder** button to navigate to the project folder.
 
-   ![img](../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
+   ![img](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
 
 ### Modify the scene
 
@@ -48,11 +51,11 @@ The following instructions show how to create a simple environment with a cube t
 1. On the menu bar, select **GameObject** > **3D object** > **Cube**.
 1. In the **Hierarchy**, drag the cube to the **Mesh Cloud Scripting** object to make the cube a child of that object.
 
-   ![A screen shot of the Cube placed as a child to Mesh Cloud Scripting.](../../media/mesh-scripting/getting-started/004-cube.png)
+   ![A screen shot of the Cube placed as a child to Mesh Cloud Scripting.](../../../media/mesh-scripting/getting-started/004-cube.png)
 
 1. With the cube selected, in the **Inspector**, click **Add Component** and then select **MeshInteractableSetup**.
 
-   ![img](../../media/mesh-scripting/getting-started/SimpleInteractionUnityAddTouchSensor.png)
+   ![img](../../../media/mesh-scripting/getting-started/SimpleInteractionUnityAddTouchSensor.png)
 
 1. In the **Transform** component, set the Cube's **Position** values to 0, 1, 3.
 1. Save the scene.
@@ -62,7 +65,7 @@ The following instructions show how to create a simple environment with a cube t
 1. In the **Hierarchy**, select the **Mesh Cloud Scripting** object.
 1. In the **Inspector**, navigate to the **Mesh Cloud Scripting** component and then click the **Open application folder** button. This opens File Explorer and shows you a view of your project contents.
 
-   ![img](../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
+   ![img](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
 
 1. Open the `App.cs` script in your code editor.
 1. Note that in the App class, there are two variables:
@@ -113,19 +116,19 @@ The following instructions show how to create a simple environment with a cube t
 
 1. In the **Inspector**, navigate to the **Mesh Cloud Scripting** component and then select **Enable Application Debugging**.
 
-   ![img](../../media/mesh-scripting/getting-started/MeshAppCmpInspectorEnableDebugging.png)
+   ![img](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorEnableDebugging.png)
 
 1. Enter Play mode and select debugger.
 
-   ![img](../../media/mesh-scripting/getting-started/JITWindow.png)
+   ![img](../../../media/mesh-scripting/getting-started/JITWindow.png)
 
 1. Open the **App.cs** file, then add a break point, and then continue execution.
 
-   ![img](../../media/mesh-scripting/getting-started/JITSetBreakpoint.png)
+   ![img](../../../media/mesh-scripting/getting-started/JITSetBreakpoint.png)
 
 1. In Unity, click the cube.
 
-   ![img](../../media/mesh-scripting/getting-started/JITHitBreakpoint.png)
+   ![img](../../../media/mesh-scripting/getting-started/JITHitBreakpoint.png)
 
 ## Upload the Environment
 
@@ -134,26 +137,26 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
 1. Add your deployment configurations such as Azure subscription ID to the environment from the MeshUploader UI. You could do this when you create an environment: setup the configs in the **Mesh Environments** window, **Create Environment** tab, **Setup Mesh Script Configuration** block shown in the following images. Alternatively, you could set up and update the setting for an existing environment in the **Update Environment** steps.
 
-   ![img](../../media/mesh-scripting/getting-started/UploaderCreateUIProjectSettings.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderCreateUIProjectSettings.png)
 
 1. In the **Mesh Environments** window, **Update Environment** tab, select your environment and scene to upload. If the scene has a Mesh Cloud Scripting component, the deployment configurations will be shown along with the selected scene. Select the **Modify Deployment Configs** tickbox to add or change the configs associated with the current environment and scene. Unselect the tickbox to save and update the settings and you should see the updated configs, as illustrated below.
 
-   ![img](../../media/mesh-scripting/getting-started/UploaderUpdateUIProjectSettings.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderUpdateUIProjectSettings.png)
 
-1. In the **Mesh Environments** window, on the **Update Environment** tab, select **Build & Publish**. To learn more about the Mesh Environments window, see how to [build and publish your Environment](../make-your-environment-available-for-events/build-and-publish-your-environment.md)
+1. In the **Mesh Environments** window, on the **Update Environment** tab, select **Build & Publish**. To learn more about the Mesh Environments window, see how to [build and publish your Environment](../../../make-your-environment-available-for-events/build-and-publish-your-environment.md)
 
-   ![img](../../media/mesh-scripting/getting-started/001-update-environment-tab.png)
+   ![img](../../../media/mesh-scripting/getting-started/001-update-environment-tab.png)
 
 1. As the Uploader builds and publishes your Environment, the Mesh Cloud Scripting infrastructure will be provisioned in Azure and published.
 
-   ![img](../../media/mesh-scripting/getting-started/UploaderIntegrationDeployingMeshapp.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderIntegrationDeployingMeshapp.png)
 
 1. When the Uploader has finished, you should see the Mesh Cloud Scripting Service provisioning and publishing operation results in the results window
 
 > [!NOTE]
 > It's expected that there will be multiple entries for *Cloud Scripting Metadata* in the results window.
 
-   ![img](../../media/mesh-scripting/getting-started/UploaderIntegrationUploaderResults.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderIntegrationUploaderResults.png)
 
 ### Connect to the Cloud Scripting Service from Unity
 
@@ -167,7 +170,7 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
 ### Create an event and join it from the Microsoft Mesh application
 
-1. Create an event using the Environment **MyFirstCloudScripting**. If you need guidance, see how to [create an event in the Mesh portal](../../events-guide/create-event-mesh-portal.md).
+1. Create an event using the Environment **MyFirstCloudScripting**. If you need guidance, see how to [create an event in the Mesh portal](../../../events-guide/create-event-mesh-portal.md).
 1. Join the event in the Microsoft Mesh app.
 
 ### Show Mesh Cloud Scripting Service errors in the Microsoft Mesh application (optional)
@@ -176,11 +179,11 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
 1. Go to **Menu** in the Microsoft Mesh application.
 
-   ![img](../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_000.png)
+   ![img](../../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_000.png)
 
 1. Select **Settings** in the main menu.
 
-   ![img](../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_001.png)
+   ![img](../../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_001.png)
 
 1. Go to the **Troubleshooting** tab in **Settings** and toggle the **Show Mesh scripting error** button.
 

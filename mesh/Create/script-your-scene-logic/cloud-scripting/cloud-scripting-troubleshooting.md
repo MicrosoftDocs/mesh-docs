@@ -30,7 +30,7 @@ If a Mesh Cloud Scripting stage during the Uploader process failed and the error
 ### When joining an event in the Microsoft Mesh application, the Mesh Cloud Scripting doesn't work
 
 1. Ensure that the scene plays as expected when you preview it locally in Unity.
-1. Ensure that the deployed environment matches the scene.map used by the Mesh Cloud Scripting.
+2. Ensure that the deployed environment matches the scene.map used by the Mesh App. To learn more about how this happens, see [the Mesh Scripting Getting Started Guide](Mesh_Scripting_Getting_Started_Guide.md#serialize-scene). TBD
     1. In the Unity project, navigate to the **Mesh Cloud Scripting** component and then press `Serialize Scene` to force scene graph serialization.
     1. Re-upload your environment with the Mesh Uploader.
 1. Test your local Unity version [against the deployed app](cloud-scripting-getting-started.md#connect-to-the-cloud-scripting-service-from-unity).

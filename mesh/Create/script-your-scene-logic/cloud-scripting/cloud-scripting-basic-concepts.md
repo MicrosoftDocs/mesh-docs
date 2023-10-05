@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 
 # Cloud scripting basic concepts
 
-Read an [overview of Mesh Cloud Scripting and Mesh Visual Scripting](mesh-scripting-overview.md)
+Read an [overview of Mesh Cloud Scripting and Mesh Visual Scripting](../mesh-scripting-overview.md)
 
 ## Differences between Mesh Cloud Scripts and MonoBehaviours
 
@@ -23,7 +23,7 @@ There are several major differences between Mesh Cloud Scripting and MonoBehavio
 
 To enable Mesh Cloud Scripting, an application service called *Mesh Cloud Scripting Service* is deployed to a particular Azure resource group that you provide. Cloud Scripting runs on the Azure back end and consists of a set of server C# scripts running in a container with an endpoint that the clients connect to. In the diagram below, you can see that there are two clients that connect to Cloud Scripting Service. Cloud Scripting Service has its own authoritative scene graph (marked "A" in the diagram). Cloud Scripting Service interacts with this scene graph through the Mesh Cloud Scripting scene graph API.
 
-![A diagram of the Cloud Scripting Architecture.](../../media/mesh-scripting/basic-concepts/Architecture_Overview_Diagram.png)
+![A diagram of the Cloud Scripting Architecture.](../../../media/mesh-scripting/basic-concepts/Architecture_Overview_Diagram.png)
 
 The Mesh Cloud Scripting scene graph is automatically synchronized from the cloud to all connected clients. Each client has an identical copy of the Mesh Cloud Scripting scene graph (marked "B" on the diagram), which is kept in sync with the authoritative cloud version. When the Mesh Cloud Scripting Service makes changes to the scene graph in the cloud, these changes are propagated to the copies on all the clients.
 
@@ -41,9 +41,9 @@ Objects that eventually appear in your Event in the Microsoft Mesh can be divide
 
 In order to enable Mesh Cloud Scripting, your scene must have a *Mesh Cloud Scripting* component.
 
-![A screen shot of the Cloud Scripting component that's attached to the Cloud Scripting GameObject.](../../media/mesh-scripting/basic-concepts/009-meshapp-component.png)
+![A screen shot of the MeshApp component that's attached to the MeshApp GameObject.](../../../media/mesh-scripting/basic-concepts/009-meshapp-component.png)
 
-The component is responsible for communication with the Mesh Cloud Scripting Service and processing or triggering changes in the Mesh Cloud Scripting scene graph. Cloud Scripting is a standalone technology but it has a tight integration with Unity. You can find instructions on how to enable Cloud Scripting in the [Getting Started](cloud-scripting-getting-started.md) section and more detailed information about the Mesh Cloud Scripting API in the [Programmer's Guide](cloud-scripting-programmers-guide.md) section.
+The component is responsible for managing the scripts you create and binding them to the Unity scene both at edit time and runtime in the Mesh Browser. MeshApp is a standalone technology but it has a tight integration with Unity. You can find instructions for adding the MeshApp GameObject in the *Getting Started Guide* section and more detailed information about scripting in the *Programmer's Guide* section. TBD
 
 Cloud Scripting scene graph is limited to GameObjects that you add to the scene under Mesh Cloud Scripting component GameObject.
 
@@ -53,7 +53,7 @@ Although Cloud Scripting can't directly see the scene hierarchy of the rest of t
 
 In the diagram below, note that the hierarchy for the Unity Scene and Mesh Cloud Scripting Scene are identical. The blue nodes in the Unity Scene section represent GameObjects; every GameObject has a corresponding TransformNode in the Mesh Cloud Scripting Scene Graph. When a TransformNode is updated, it causes the transform of the game object it corresponds to in the Unity Scene to update to the same value.
 
-![Unity and Mesh Scene Hierarchies](../../media/mesh-scripting/basic-concepts/Scene_Graph_Representation_Diagram.png)
+![Unity and Mesh Scene Hierarchies](../../../media/mesh-scripting/basic-concepts/Scene_Graph_Representation_Diagram.png)
 
 The Mesh Cloud Scripting API has types that map to only a *subset* of the full set of Unity Components. It's still valid to create a Unity Scene with components the Mesh Cloud Scripting API can't map to; they'll simply be invisible to Cloud Scripting. In the diagram, a white-colored component has a corresponding node in the Mesh Cloud Scripting scene graph; a green-colored component doesn't. The Mesh Cloud Scripting scene graph doesn't have a particle system node, so in our example, the particle system component in the Unity scene won't show up in the corresponding Mesh Cloud Scripting scene. However, its surrounding components and owning game object *are* in the Mesh Cloud Scripting scene graph. This means that Cloud Scripting will be able to move the particle system around the scene by moving its owning game objects even though the particle system itself is invisible to Cloud Scripting.
 
@@ -96,7 +96,7 @@ Note the scene.map file in the above list. This is an internal detail but it's u
 
 When you publish an Environment with Mesh Cloud Scripting, it will publish the Environment and the Cloud Scripting Service to Azure. This is shown in the diagram below:
 
-![Uploading the environment template and Cloud Scripting to the cloud](../../media/mesh-scripting/basic-concepts/002-deploy-meshapp-23-10.png)
+![Uploading the environment template and Cloud Scripting to the cloud](../../../media/mesh-scripting/basic-concepts/002-deploy-meshapp-23-10.png)
 
 When you make a change to your scene you should press **Play** in Unity to preview the scene with the newly built and locally running Cloud Scripting Service. Then publish the modified environment using the Mesh Uploader. Publishing is described in more detail in the [Getting Started](cloud-scripting-getting-started.md) section.
 
@@ -118,7 +118,7 @@ Here are the parties involved in the Auth flow:
 
 The parties work together as illustrated below:
 
-![Authentication Flow](../../media/mesh-scripting/basic-concepts/Authentication_Diagram.png)
+![Authentication Flow](../../../media/mesh-scripting/basic-concepts/Authentication_Diagram.png)
 
 ## Next steps
 

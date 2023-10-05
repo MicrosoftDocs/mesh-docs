@@ -15,19 +15,20 @@ The Mesh samples are a great way to learn about the different kinds of Mesh Expe
 
 ## Mesh samples
 
+- **Mesh 101**: Mesh 101 is a tutorial, but it also doubles as a sample. In the project, you can open the *StartingPoint* scene and begin walking through the tutorial. However, the project contains another scene named *FinishedProject* which is a completed version of the tutorial. You can view this scene as a sample and use it as starting point for your project just as you would with any of the other samples. [Get started with the Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md).
+
 - **Toybox**: A project that showcases a number of useful Mesh features: assets, shaders, visual scripting, animations, VFX, and SoundFX. [Learn more about the Toybox sample](toybox.md).
 
 - **Physics Effects Gallery**: Contains a programmer-art designed scene that demonstrates the power of combining appealing visuals with the creative use of Mesh Physics features. [Learn more about the Physics Effects Gallery sample](physics-effects-gallery.md).
 
-- **Dartroom**: A saloon-style room with a dart game to showcase interactive Mesh Physics features. [Learn more about the Dartroom sample](dart-room.md).
+- **Dart Room**: A saloon-style room with a dart game to showcase interactive Mesh Physics features. [Learn more about the Dartroom sample](dart-room.md).
 
 - **Science Building**: An expansive museum exhibiting the power of Mesh Physics to create dynamic, engaging experiences. [Learn more about the Science Building sample](science-building.md).
 
-- **Mesh 101**: Mesh 101 is a tutorial, but it also doubles as a sample. In the project, you can open the *StartingPoint* scene and begin walking through the tutorial. However, the project contains another scene named *FinishedProject* which is a completed version of the tutorial. You can view this scene as a sample and use it as starting point for your project just as you would with any of the other samples. [Get started with the Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md).
 
 **To start with a sample**:
 
-1. If you haven't done so already, [download and unzip the Mesh toolkit](../download-the-mesh-toolkit.md).
+1. If you haven't done so already, [download and unzip the Mesh toolkit](download-the-mesh-toolkit.md).
 
 1. In the Unity Hub, select **Open** > **Add project from disk**, and then navigate to the **Mesh-Toolkit-Unity-main** folder that contains your samples.
 

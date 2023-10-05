@@ -25,7 +25,7 @@ The tutorial project is named *Mesh101.Unity* and is included in the
 Mesh Toolkit.
 
 > [!IMPORTANT]
-> The tutorial project is governed by the MIT license as shown in the [LICENSE.MD](https://github.com/microsoft/Mesh-Toolkit-Unity/blob/main/LICENSE) file in the *Mesh-Toolkit-Unity* repository. However, the samples functionality is dependent on the Mesh Toolkit, which is governed by a separate license, and contains 3rd party software. 
+> The tutorial project is governed by the MIT license as shown in the [LICENSE.txt](https://github.com/microsoft/Mesh-Toolkit-Unity/blob/main/LICENSE.txt) file in the *Mesh-Toolkit-Unity* repository. However, the samples functionality is dependent on the Mesh Toolkit, which is governed by a separate license, and contains 3rd party software. A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../../Setup/Content/setup-m365-mesh.md).
 
 The tutorial is structured as follows:
 
@@ -51,13 +51,15 @@ This article: Overview and setup
 
 ## Terminology
 
-In Mesh terms, the project you create in Unity and then upload to the Mesh Portal or Azure Portal is called an *Environment*.
+In Mesh terms, the project you create in Unity and then upload to the Mesh Portal is called an *Environment*.
 
 ## Prerequisites
 
 ### Previous Unity experience
 
-This tutorial assumes that you have the intermediate to advanced Unity skills needed to creative an Environment. If you don't, you can still [create, customize and produce](../../../Use/events-guide/create-event-mesh-portal.md) Mesh events using existing Environments.
+This tutorial assumes that you have the intermediate to advanced Unity skills needed to creative an Environment. We also recommend that you have some familiarity with Unity Visual Scripting; however, we've gotten feedback from scripting novices that they found the tutorial easy to follow. A good place to learn Visual Scripting basics is through [Unity's Visual Scripting tutorial](https://learn.unity.com/project/introduction-to-visual-scripting). This teaches you most if not all of the concepts you need to get started with Mesh Visual Scripting. 
+
+If you don't, you can still [create, customize and produce](../../../../Use/events-guide/create-event-mesh-portal.md) Mesh events using existing Environments.
 
 ### Hardware requirements
 
@@ -69,19 +71,18 @@ Unity version 2022.3.7f1 is required for this tutorial.
 
 [Get help installing Unity](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 
-Your installation should include modules for Android and Windows.
+Your installation should include modules for Android and Windows. The Mesh app works for PC and the Oculus Quest 2, and Android is the operating system for the Quest.
 
 ## Set things up for Mesh
 
 ### Download the Mesh desktop app
 
-To download the app (codenamed **Project Napili**), you can visit the link below.
+Download Microsoft Mesh on PC
+ 
+> [!div class="nextstepaction"]
+> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7?hl=en-us&gl=us&rtc=1)
 
-![Project Napili - Microsoft Store Apps](../../../media/sample-mesh-101/image003.png)
-
-[Project Napili - Microsoft Store Apps](https://apps.microsoft.com/store/detail/project-napili/9P0B5VMS9RTQ?hl=en-us&gl=us)
-
-If the app isn't available, talk to your IT admin about making the app visible to you.
+    ![______](../../../media/get-started-developing-mesh/006-mesh-download-for-pc.png)
 
 ### Download the Mesh Toolkit Samples
 

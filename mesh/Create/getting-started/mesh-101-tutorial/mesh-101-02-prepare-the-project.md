@@ -17,7 +17,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 
 2. In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**.
 
-    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image010.png)
+    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/481-project-settings.png)
 
     Open the **StartingPoint** scene. You should see the **TMP Importer** window.
 
@@ -72,9 +72,9 @@ learn about Mesh Physics.
 
 ![A screenshot of a computer Description ](../../../media/sample-mesh-101/014-chapter-4-sphere-terrace-v2.png)
 
-### Add the PlayModeSetup prefab
+### Add the PlaymodeSetup prefab
 
-Adding the PlayModeSetup prefab will allow you to run the project in
+Adding the PlaymodeSetup prefab will allow you to run the project in
 *Playmode*. This gives you a preview of what the content will look and
 feel like when it runs in the *Mesh app*. A key feature of Playmode is
 the ability to run multiple clients within the same process; this allows
@@ -96,11 +96,7 @@ you to easily get a first impression of a multi-user scenario.
 
 2. Select the Unity Editor Play button.
 
-3. In the **Game** window, note that you now have a view from the
-    avatar's position. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the
-    Sphere Terrace. You can also drag the right mouse button to pan in
-    any direction. When you're done experimenting, click the Unity
-    Editor Play button again to exit Play mode.
+3. In the **Game** window, note that you now have a view from the avatar's position. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Playmode.
 
 ### Check the scale of your GameObjects
 
@@ -113,7 +109,7 @@ are the size you want.
 ### Add the Mesh Thumbnail Camera
 
 Adding the `Mesh Thumbnail Camera` provides a thumbnail image that will be
-added to your Environment's listing in the Azure Portal and its
+added to your Environment's listing in the Mesh Portal and its
 selection button in the Mesh app. This comes in handy when you're
 selecting Environments in either place because it gives you a visual
 reminder of what the Environment looks like.

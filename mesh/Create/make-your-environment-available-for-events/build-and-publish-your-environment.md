@@ -1,6 +1,6 @@
 ---
 title: Build and publish your Environment
-description: Learn how to turn your Environment into an Asset and then publish it in the Mesh or Azure Portals.
+description: Learn how to turn your Environment into an Asset and then publish it in the Mesh Portal.
 author: typride
 ms.author: vinnietieto
 ms.date: 9/12/2023
@@ -10,10 +10,9 @@ keywords: Microsoft Mesh, environment, build, publish, build and publish, upload
 
 # Build and publish your Environment
 
-After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen World in the Mesh Portal (M365) or the Azure Portal, where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that World can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
+After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen World in the Mesh Portal (M365), where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that World can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
 
-1. On the menu bar, select **Mesh Toolkit** > **Configure Project
-    Settings**.
+1. On the menu bar, select **Mesh Toolkit** > **Configure Project Settings**.
 
     ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/001-project-settings.png)
 
@@ -21,21 +20,11 @@ After you finish adding all your scene content, the next step is to build the sc
 
     ![Graphical user interface, text, application Description automatically generated](../../media/make-your-environment-available-for-events/image015.png)
 
-1.  On the menu bar, do one of the following:
-
-**To build and publish to the Azure portal**:
-- Select **Mesh Toolkit** > **Environments**.
-
-**To build and publish to the Mesh Portal**:
-- Select **Mesh Toolkit** > **Environments (M365)**.
+1.  On the menu bar, select **Mesh Toolkit** > **Environments**.
 
 1. In the **Mesh Environments** window, select **Sign In**.
 
-1. Sign in with your account. The account must have *Content
-    Contributor* access to the Mesh world you're uploading the
-    Environment to. If you need help with Content Contributor
-    privileges, see [*Become a Content
-    Contributor*](#become-a-content-contributor).
+1. Sign in with your account.
 
     Make sure you're in the **Create** **Environment** tab, and then fill
     in the **Internal Name** and **Description** fields. 
@@ -81,12 +70,7 @@ After you finish adding all your scene content, the next step is to build the sc
     project that you want as the Environment. In this example, we're
     using the Mesh sample project *Dartroom*, so our chosen scene will be the scene also named *DartRoom*.
 
-    ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/004-scene-select.png)
-
-1.  Select **Include thumbnails** and then, in the popup menu, choose
-    **Generate Thumbnails**.
-
-    ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/image020.png)
+    ![A screenshot of a computer Description automatically generated](../../media/make-your-environment-available-for-events/004-select-scene.png)
 
 1. In the **Build for Platforms** section, you choose which platforms
     to build for. Note that when a button background is gray, the button

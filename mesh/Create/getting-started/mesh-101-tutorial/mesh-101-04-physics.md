@@ -68,9 +68,9 @@ generate power.
 Let's add "grab and release" capabilities to **WindTurbine1** so that participants will be able to move it around in Mesh.
 
 1. In the **Hierarchy**, select **WindTurbine1**.
-1. In the **Inspector**, click the **Add Component** button and then search for and add **Mesh Interactable Properties**.
+1. In the **Inspector**, click the **Add Component** button and then search for and add **Mesh Interactable Setup**.
 
-    ![A screenshot](../../../media/sample-mesh-101/320-interactable-properties.png)
+    ![A screenshot](../../../media/sample-mesh-101/320-interactable-setup.png)
 
 > [!TIP]
 > An explanation of this component was given in [Chapter 3](mesh-101-03-visual-scripting.md) of this tutorial.
@@ -222,7 +222,7 @@ will be restricted to the inside of the box.
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image086.jpg)
 
 1. In the **Starts With** box, type "WindTurbine." Since all three wind
-    turbines in our scene start with "WindTurbine," they'll all be
+    turbines in our scene start with "WindTurbine" they'll all be
     restricted to the Containment Field.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image087.png)
