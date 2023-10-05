@@ -110,6 +110,15 @@ You'll need to first reproduce the problem, and then follow the steps below to c
 1. Click the **Copy all** button.
 1. Share that data with [Microsoft support](https://aka.ms/meshdevsupport).
 
+The data should be your version of the following: 
+
+- **Portal host:**
+- **Portal version:**
+- **Session ID:**
+- **Tenant ID:**
+- **Trace ID:**
+- **Date:**
+
 ### Audio setup in Mesh FAQ
 
 #### Which audio devices work best in Mesh?
