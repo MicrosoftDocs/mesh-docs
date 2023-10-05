@@ -1,8 +1,7 @@
 items:
-  - name: Mesh Scripting overview
+  - name: Scripting overview
     href: mesh-scripting-overview.md
-  - name: Cloud Scripting
-    href: cloud-scripting/toc.yml     
-  - name: Visual Scripting
-    href: visual-scripting/toc.yml 
-
+  - name: Visual scripting
+    href: visual-scripting/toc.yml
+  - name: Cloud scripting
+    href: cloud-scripting/toc.yml
