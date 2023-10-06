@@ -29,7 +29,7 @@ We truly appreciate feedback!
 ## Get support
 
 > [!div class="nextstepaction"]
-> [Here's how to get support for developers](https://aka.ms/meshdevsupport).
+> [Here's how to get support for developers](https://aka.ms/meshdevsupport)
 
 > [!div class="nextstepaction"]
-> [Here's how to get support for IT admins](https://admin.microsoft.com).
+> [Here's how to get support for IT admins](https://admin.microsoft.com)

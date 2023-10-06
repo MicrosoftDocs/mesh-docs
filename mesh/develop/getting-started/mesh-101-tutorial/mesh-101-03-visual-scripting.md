@@ -133,9 +133,9 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/411-game-object-button-node.png)
 
-> [!TIP] You may want to take a moment here to examine some of the components for the **Button** GameObject:
->
-> *Mesh Interactable Setup*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named [*Grab, hold and throw with Interactables*](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
+    > [!TIP] You may want to take a moment here to examine some of the components for the **Button** GameObject:
+    >
+    > *Mesh Interactable Setup*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named [*Grab, hold and throw with Interactables*](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
 >
 >   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/478-mesh-interactable-setup.png)
 >
