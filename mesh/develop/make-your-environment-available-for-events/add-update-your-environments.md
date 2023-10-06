@@ -23,10 +23,12 @@ Sometimes the list of the available Environments can be big. Use these 2 filters
 ### Filter Environments by Worlds
 
 By default you can see Environments from all the Worlds, that you have access too. However you can filter the list by specifying the World, which Environments you would like to update
+
 ![A screenshot of Environments World filter](../../media/make-your-environment-available-for-events/uploader_environment_world_filter.png)
 
 
 ### Filter Environment by Name
 
 By default you can see Environments from all the Worlds, that you have access too. However you can filter the list by specifying text that Environment name should have.
+
 ![A screenshot of Environments Text filter](../../media/make-your-environment-available-for-events/uploader_environment_name_filter.png)
