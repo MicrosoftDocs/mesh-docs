@@ -81,13 +81,13 @@ Avatars are the representation of users in the scene. They can be used to telepo
 
 It's possible in Mesh Cloud Scripting to pop up a screen space dialog in the Microsoft Mesh application with a custom message. SceneNode contains a function for this, `ShowMessageToParticipants(string message, IReadOnlyCollection<Participant> participants)`. [Rich text tags](http://digitalnativestudios.com/textmeshpro/docs/rich-text/) can be used in the message to control text properties (color, bold etc).
 
-# Classes
+## Classes
 
-## CloudApplication
+### CloudApplication
 
 The `ICloudApplication` interface is the starting point for developing Mesh apps. It's available in "App.cs" as the _app variable. In addition to the scene, `ICloudApplication` has create functions for all available types. It also has a number of other methods, but they're for internal use.
 
-## InteractableNode
+### InteractableNode
 
 The MeshInteractableSetup is a custom Unity component that's part of the Mesh Toolkit package. When you attach it to a game object in Unity, it'll raise click events when any user clicks on any of the active collidables in that game object or its children.
 
@@ -95,7 +95,7 @@ A simple example is shown below, where the MeshInteractableSetup component is ad
 
 ![Simple Input example](../../../media/mesh-scripting/programmers-guide/simple_input_example.jpg)
 
-## WebSlateNode
+### WebSlateNode
 
 The WebSlate is a custom Unity component that is part of the Mesh Toolkit Authoring package. To add a WebSlate prefab to your scene, select **GameObject** > **Mesh Toolkit** > **WebSlate** from the menu bar. The website that is assigned to the WebSlate instance's URL property is rendered on the quad of this prefab.
 
@@ -159,7 +159,7 @@ Within a state, you can create an Animation Clip with no restrictions on what va
 
 When clients join a Mesh Event, they synchronize to the current state and local time of all running Animation Nodes. If you have a long-running animation playing in a state, the playback time will be set to the correct current time of the animation on late join. However, if your state fires events, these will NOT be fired in the late joined client. Some other scenarios might not work as expected; for example, if you trigger a sound by enabling an AudioSource at the start of a state, that AudioSource will still be enabled in the late join client, but will start playing at the beginning of the audio clip.
 
-#### Animator initial state
+### Animator initial state
 
 We recommend that you create Animators that have default states that do nothing. When a scene starts playing in Unity, it will activate all the Animators and start playing their default animations. This can happen before the Mesh Cloud Scripting Service connection occurs; therefore, there's no way to synchronize these states and behavior may not be as desired.
 
@@ -197,13 +197,13 @@ Geometry nodes can act as trigger volumes when their `IsTrigger` property is set
 
 TextNode maps to Unity's TextMeshPro component. If you add a TextMeshPro component to your scene there will be a corresponding TextNode in your Mesh Cloud Scripting scene hierarchy. This allows you to set the text of the component at runtime. You can also change the basic text properties through the TextNode API&#8212;bold, italic, underline, strikethrough and color. It's not currently possible to create a TextNode through the API; you must create them by adding them to your scene in Unity. Also, you can't clone a TextNode directly&#8212;you must instead clone the TextNode's parent TranformNode.
 
- ## Meshes
+## Meshes
 
 Meshes are currently "hidden" components to the Mesh Cloud Scripting API. They can be created in the Unity editor, and can be manipulated by manipulating their parent game objects/Transform components, but they can't be created programmatically, nor can their properties be edited at runtime through the Mesh API.
 
-# Other Mesh Cloud Scripting topics
+## Other Mesh Cloud Scripting topics
 
-## Adding resources to the Mesh Cloud Scripting Service
+### Adding resources to the Mesh Cloud Scripting Service
 
 If you need to add a resource for your Mesh Cloud Scripting Service to use, you need to add it as an embedded resource into your C# project file. This can be done through the project UI in Visual Studio or by adding the following line into the .csproj file directly:
 
