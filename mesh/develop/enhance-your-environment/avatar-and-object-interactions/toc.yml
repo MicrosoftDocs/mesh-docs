@@ -2,6 +2,6 @@ items:
 - name: Grab, attach and throw with Interactables
   href: interactables.md
 - name: Triggers, anchors and tethers
-  href: anchors-and-tethers.md
+  href: triggers-anchors-and-tethers.md
 - name: Create avatar spawn and teleport points
   href: create-avatar-spawn-and-teleport-points.md
