@@ -153,13 +153,13 @@ To add the thumbnail camera to the scene and set its view:
 
 1. To upload the environment with your thumbnails open the **Mesh Uploader**, on the menu bar, select **Mesh Toolkit** > **Environments**.
 
-1. On the **Update Environment** tab make sure you have the correct Environment and scene selected than check the **Custom Thumbnails** field and choose the **Generate from Thumbnail Camera** option.
+1. On the **Update Environment** tab make sure you have the correct Environment and scene selected. Then check the **Custom Thumbnails** field and choose the **Generate from Thumbnail Camera** option.
 
     ![A screenshot of Mesh Uploader in the Update Environment tab highlighting the Custom Thumbnails field with the Generate from Thumbnails camera option selected](../../media/make-your-environment-available-for-events/009-select-custom-thumbnail.png)
 
 1. Once you are ready to publish your Environment, click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
 
-    **Note**: If you uncheck the **Custom Thumbnails** field the thumbnails from your Environment will be replace by the default thumbnail image, so make sure this is always checked when you do **Build & Publish**
+    **Note**: If you uncheck the **Custom Thumbnails** field the thumbnails from your Environment will be replaced by the default thumbnail image, so make sure this is always checked when you do **Build & Publish**
 
 ### Option 2 - Custom thumbnail folder
 
@@ -177,8 +177,9 @@ If you prefer to have static images as thumbnails you can choose to select the i
 
 1. Once you are ready to publish your Environment, click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
 
+    **Note**: If you uncheck the **Custom Thumbnails** field the thumbnails from your Environment will be replaced by the default thumbnail image, so make sure this is always checked when you do **Build & Publish**
+
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Get information about your Environment](get-information-about-your-environment.md)
-
