@@ -183,4 +183,5 @@ If you prefer to have static images as thumbnails you can choose to select the i
 
 > [!div class="nextstepaction"]
 > [Get information about your Environment](get-information-about-your-environment.md)
+
 > [Add and update your Environment](add-update-your-environments.md)
