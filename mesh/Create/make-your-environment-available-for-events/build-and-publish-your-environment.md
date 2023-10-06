@@ -65,22 +65,21 @@ After you finish adding all your scene content, the next step is to build the sc
 
 ## Add more Environments for build and publish
 
-If you want to Build & Publish more then one Environment, click on **Add Environment Configuration** button and follow the steps from [Select the Environment for build and publish](#select-the-environment-for-build-and-publish).
+If you want to Build & Publish more than one Environment, click on **Add Environment Configuration** button and make sure you have the correct Environment and scene selected (you can see the details on the steps from [Select the Environment for build and publish](#select-the-environment-for-build-and-publish)).
 
 ![A screenshot of adding new environment to configure](../../media/make-your-environment-available-for-events/uploader_add_environment_button.png)
 
 ![A screenshot of added new environment to configure](../../media/make-your-environment-available-for-events/uploader_add_environment_button_result.png)
 
 
-
 ## Select the Environment for build and publish
 
 If you want to configure the Environment that you've just created, ignore this section and go to [Configure the Environment for build and publish](#configure-the-environment-for-build-and-publish).
-If you want to pick one that already exists, select the field that displays **Select Environment**. Then pick your Environment and configuration that you want to update.
+If you want to pick one that already exists, select the field that displays **Select Environment**. Then pick your Environment and scene that you want to update it with.
 
 ![A screenshot of available Environments](../../media/make-your-environment-available-for-events/uploader_list_of_avaliable_environments.png)
 
-If you added one of the environments from the list already, it will be marked grey and you won't be able to select it
+Environments that are already selected will be disabled.
 
 Sometimes the list of the available Environments can be big. Use these 2 filters to help sort environments:
 
