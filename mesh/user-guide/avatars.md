@@ -15,7 +15,7 @@ In Mesh events, you're represented by avatars. By customizing your avatars the w
 * **Choose how you’re represented** – There’re endless possibilities on how you want to customize an avatar that represents your physical attributes, wardrobe, accessories, and more. Choose how you express yourself with reactions and gestures. Save up to three avatars for different meeting types such as casual, professional, or day-to-day.
 * **Use the same avatar across Mesh experiences** – The same avatar that you create are available to you when you join a Teams meeting, an immersive space from a Teams meeting or a Microsoft Mesh event.
 
-For more information, see [Join a meeting as an avatar in Microsoft Teams](https://support.microsoft.com/en-us/office/join-a-meeting-as-an-avatar-in-microsoft-teams-5384e7b7-30c7-4bcb-8065-0c9e830cc8ad).
+For more information, see [Join a meeting as an avatar in Microsoft Teams](https://support.microsoft.com/office/join-a-meeting-as-an-avatar-in-microsoft-teams-5384e7b7-30c7-4bcb-8065-0c9e830cc8ad).
 
 ## Create your avatars
 
@@ -46,7 +46,7 @@ There's a horizontal menu bar on top with five options: **Body**, **Face**, **Ha
 
 ![A screenshot of the avatars customization dialog](media/image117.png)
 
-For details on how you can customize your avatars, see [Personalize your avatars]().
+For details on how you can customize your avatars, see [Customize your avatars](https://support.microsoft.com/en-us/topic/be6a9703-f03d-4eb5-9908-995fdc5c91a8).
 
 ## Next steps
 
@@ -57,4 +57,4 @@ For details on how you can customize your avatars, see [Personalize your avatars
    > [Join an event](join-an-event.md)
 
    > [!div class="nextstepaction"]
-   > [Mesh user controls](mmesh-user-controls.md)
+   > [Mesh user controls](mesh-user-controls.md)

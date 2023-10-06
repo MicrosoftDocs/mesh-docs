@@ -1,0 +1,7 @@
+items:
+  - name: Visual scripting overview
+    href: visual-scripting-overview.md 
+  - name: Visual scripting programmer's guide
+    href: visual-scripting-programmers-guide.md
+  - name: Visual scripting node reference
+    href: visual-scripting-node-reference.md

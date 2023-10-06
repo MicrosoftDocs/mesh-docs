@@ -10,12 +10,9 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 # Preparing your organization for Mesh
 
-> [!IMPORTANT]
-> We thank you for your patience in this transition. In the coming weeks we will provide more up-to-date information regarding our transition to M365 and how to prepare your organization for that.
+## Gather Your v-team
 
-## Gather Your v-Team
-
-This document covers the required tasks and suggest functional roles
+This page covers the required tasks and suggest functional roles
 that may need to know about the rollout, but follow your organization's
 standard rollout process, including change and configuration management.
 
@@ -25,9 +22,9 @@ You will need access to several administration tools, so either get
 access to those tools or get people on the v-team who can access the
 tools.
 
-- Team Admin Center (TAC) is needed to configure avatar and immersive spaces administration
+- Teams Admin Center (TAC) is needed to configure avatar and immersive spaces administration
 
-- Azure portal is needed to administer Mesh scripting.
+- Azure portal is needed to administer Mesh cloud scripting (if your environments optionally use that form of scripting).
 
 - Other tasks like permitting URLs and firewall ports will be done in
     whatever administrative tools are used by your organization.
@@ -40,9 +37,11 @@ Resources may also need to be consulted.
 
 To participate in the public preview, you must agree to the terms of use and privacy statements. You should be in contact with your legal and privacy teams to review those terms before accepting them.
 
-> ## Verify Your Licensing
+## Verify Your Licensing
 
->For immersive spaces for Teams, your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5. For Microsoft Mesh, a Teams Premium license is required during the Public Preview. If you plan to use Mesh scripting, you must also have an Azure subscription.
+For immersive spaces for Teams, your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5. For Microsoft Mesh, a Teams Premium license is required during the Public Preview. If you plan to use Mesh scripting, you must also have an Azure subscription.
+
+For Microsoft Mesh, a Teams Premium license is required during the Public Preview. If you plan to use Mesh cloud scripting, you must also have an Azure subscription with storage.
 
 If your organization plans to create custom worlds for Microsoft Mesh,
 your world building team will need licenses for Unity.
@@ -81,11 +80,11 @@ your production tenant for Mesh Public Preview. While you can create other tenan
 for testing, people who use Teams throughout the day are highly unlikely
 to want to log out of their main Teams account to log into a different
 account in a different Entra. A separate tenant is more practical for
-the Mesh app, where it's simpler to flip between accounts. 
+the Mesh app, where it's simpler to flip between accounts.
 
 Each tenant can have multiple Azure Storage subscriptions, but the Azure
 Storage subscription used for Mesh scripting must be in the same Entra as
-the users who will attend events and the developers who will upload and manage the scripts. 
+the users who will attend events and the developers who will upload and manage the scripts.
 
 ### Contact Owners of Supporting Teams
 
@@ -116,7 +115,7 @@ components installed automatically, you must set the Teams Apps setup
 policies too. Coordinate with whoever owns Teams app management to plan
 for appropriate policies. For more information about Teams access
 control, see
-<https://admin.microsoft.com/Adminportal/Home#/rbac/directory>. 
+<https://admin.microsoft.com/Adminportal/Home#/rbac/directory>.
 
 #### Teams Feedback Policies
 
@@ -128,11 +127,12 @@ to send feedback about Mesh features built into Teams. We strongly
 encourage your org to permit this feedback for Mesh users but consult
 your company policies before making any changes. For more information
 about managing feedback, see
-<https://learn.microsoft.com/en-us/microsoftteams/manage-feedback-policies-in-teams>.
 
-## Office Apps Admin 
+[Manage feedback policies in Teams](/microsoftteams/manage-feedback-policies-in-teams)
 
-You must have a policy set in Office Cloud Policy Service to permit user to access any form of Mesh. Also, OCPS 
+## Office Apps Admin
+
+You must have a policy set in Office Cloud Policy Service to permit user to access any form of Mesh. Also, OCPS
 lets you enforce policy settings
 for whether users can send feedback about Microsoft 365 apps for
 enterprise; this is a separate setting from the Teams feedback policies
@@ -160,8 +160,8 @@ changes.
 - Allow users to include log files and content samples when feedback
     is submitted to Microsoft
 
-For more information about managing feedback, see
-<https://learn.microsoft.com/en-us/deployoffice/admincenter/overview-cloud-policy#steps-for-creating-a-policy-configuration>.
+For more information about managing feedback, see:
+[Steps for create a policy configuration](/deployoffice/admincenter/overview-cloud-policy)
 
 ## Endpoint Managers
 
@@ -169,11 +169,15 @@ Make sure you know your organization's process for deploying apps. The Mesh app 
 (mobile device management) solution like Microsoft Intune to deploy the
 app and make it show up in the users' Company Portal. If you block
 access to the Microsoft Store, you can use WinGet instead. For more information about deploying apps with
-Microsoft Intune, see
-<https://learn.microsoft.com/en-us/mem/intune/apps/store-apps-windows>
+Microsoft Intune, see:
+
+[Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-microsoft)
 
 ## Azure Administrators
-(needs content)
+
+If your developers plan to build custom Mesh environments that will use [Mesh cloud scripting](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md), they will require an Azure subscription to which they can deploy their cloud scripting service.  An Azure subscription is not required for environments that only use [Mesh visual scripting](../../develop/script-your-scene-logic/visual-scripting/visual-scripting-overview.md).
+
+See [Set up Cloud Scripting infrastructure in Azure](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md) for more details on these requirements.
 
 ## Work with Your Security Organization
 
@@ -186,18 +190,15 @@ requirements in advance with the appropriate Security owners.
 
 To ensure the Mesh features work properly, the following endpoints must
 be allowed through your firewall or proxy server.
-
 All endpoints need to allow traffic on TCP ports 80 and 443:
 
 - \*.microsoft.com
-
-- \*.meshxp.net
 
 - \*.office.com
 
 - \*.office.net
 
-- js.monitor.azure.com
+To learn more, see how to [Set up immersive spaces in Teams](aka.ms/immersivespacesitdocs).
 
 ### Firewall Ports for Mesh immersive spaces
 
@@ -206,52 +207,44 @@ outgoing ports to be opened in your firewall:
 
 - TCP ports 80, 443
 
-- TCP & UDP ports 30,000-31,000
+- TCP & UDP ports 30,000-30,499
 
 - UDP ports 3478-3481
 
 Mesh traffic will use IP addresses in the AzureCloud service tag.
 
-For more information about service tags, see the Azure service tags
-overview.
+For more information about service tags, see the [Azure service tags overview](/azure/virtual-network/service-tags-overview).
+
+To learn more, see how to [Set up immersive spaces in Teams](aka.ms/immersivespacesitdocs).
 
 ### Ensure endpoints can be allowed for Mesh avatars for Teams
 
 To ensure avatars for Teams works properly, allow the following
 endpoints:
-
 *All endpoints need to allow traffic on TCP ports 80 and 443*:
 
 - \*.microsoft.com
-
 - \*.office.com
-
 - \*.office.net
 
 Follow this link to learn more about how to Set up avatars for Microsoft
 Teams.
-
 [Set up avatars for Microsoft Teams](/microsoftteams/meeting-avatars)
 
 ### Ensure endpoints can be allowed for the Mesh app
 
 To ensure Mesh works properly, allow the following endpoints.
-
 All endpoints need to allow traffic on TCP ports 80 and 443:
 
 - \*.officeapps.live.com
 
 - \*.microsoft.com
 
-- \*.meshxp.net
-
 - \*.office365.com
 
 - \*.office.com
 
 - \*.office.net
-
-- \*.servicebus.windows.net
 
 ### Firewall Ports for the Mesh app
 
@@ -260,14 +253,9 @@ following outgoing ports to be opened in your firewall:
 
 - TCP ports 80, 443, 8089, and 8989
 
-- TCP & UDP ports 30,000-31,000
+- TCP & UDP ports 30,000-30,499
 
 - UDP ports 3478-3481
-
-Mesh traffic will use IP addresses in the AzureCloud service tag.
-
-For more information about service tags, see the Azure service tags
-overview.
 
 ### Conditional Access
 
@@ -283,8 +271,9 @@ company using Mesh in pre-release will have to work with their security
 and endpoint management teams to decide if a policy can be constructed
 that is acceptable to the company's risk profile while still permitting
 access to Quest devices. For more information about Conditional Access,
-see
-<https://learn.microsoft.com/en-us/mem/intune/protect/conditional-access-intune-common-ways-use>.
+see:
+
+[Common ways to use Conditional Access with Intune](/mem/intune/protect/conditional-access-intune-common-ways-use)
 
 ## Work with Stakeholders That Communicate Change
 

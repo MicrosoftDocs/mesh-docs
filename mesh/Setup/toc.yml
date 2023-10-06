@@ -1,8 +1,8 @@
 items:
   - name: Preparing your organization
     href: Content/preparing-your-organization.md
-  - name: Set up M365
+  - name: Mesh setup for admins
     href: Content/setup-m365-mesh.md
-  - name: Set up Mesh portal
-    href: Content/setup-mesh-portal.md
+  - name: Manage Mesh worlds
+    href: Content/manage-mesh-worlds.md
 

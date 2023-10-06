@@ -4,7 +4,7 @@ description: Microsoft Mesh overview.
 ms.prod: mixed-reality
 author: qianw211
 ms.author: qianwen
-ms.date: 5/23/2023
+ms.date: 10/5/2023
 ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 To support a truly flexible workplace, organizations and employees need technology that helps them feel connected regardless of where they work. Over the years, we have learned that a thriving workplace fosters authentic human connections—allowing employees and teams to build meaningful relationships and trust so they can perform at their highest potential.
 
-According to Microsoft’s Work Trend Index report, 43 percent of leaders say relationship building is the [greatest challenge in remote and hybrid work](https://www.microsoft.com/en-us/worklab/work-trend-index/hybrid-work-is-just-work). Coming together in a physical space helps, but it’s not always possible—travel costs are prohibitive, real estate is expensive, and talent is increasingly dispersed. We need new ways for people to connect from different locations or geographies, using the tools they already have.
+According to Microsoft’s Work Trend Index report, 43 percent of leaders say relationship building is the [greatest challenge in remote and hybrid work](https://www.microsoft.com/worklab/work-trend-index/hybrid-work-is-just-work). Coming together in a physical space helps, but it’s not always possible—travel costs are prohibitive, real estate is expensive, and talent is increasingly dispersed. We need new ways for people to connect from different locations or geographies, using the tools they already have.
 
 ## Introducing Microsoft Mesh
 
@@ -38,37 +38,51 @@ We are making building relationships easier by bringing the power of Mesh into t
 :::image type="content" source="media/welcome-to-mesh/04_ImmersiveSpaces_Splice.gif" alt-text="GIF of selecting view then immersive space in teams":::
 
 > [!div class="nextstepaction"]
-> [Learn about immersive spaces in Teams](/microsoftteams/meeting-avatars)
+> [Learn about immersive spaces in Microsoft Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams)
 
 ## Create a custom immersive space with Microsoft Mesh
 
-Create custom immersive spaces with the Mesh toolkit in Unity that are tailored to your specific business needs such as employee events, training, guided tours, or internal product showcases.
+Create custom immersive spaces in Microsoft Mesh that are tailored to your specific business needs such as employee events, training, guided tours, or internal product showcases.
 
-:::image type="content" source="media/get-started-developing-mesh/image040-unity-overview-hero.png#lightbox" alt-text="Overview image of Unity development environment for Mesh":::
+### Customize a ready-to-use environment
 
-> [!div class="nextstepaction"]
-> [Mesh Development Overview](Create/development-overview.md)
-
-### Customize and host events
-
-Use a no-code editor to easily customize the event or the Mesh toolkit to leverage the power of Unity for fully customizable immersive experiences.
+Start from a ready-to-use environment and then use a no-code editor to easily customize the event.
 
 :::image type="content" source="user-guide/media/Events-customization.gif" alt-text="Customization":::
 
 > [!div class="nextstepaction"]
-> [Overview of Mesh events](events-guide/events-overview.md)
+> [Learn about organizing Mesh events](events-guide/events-overview.md)
 
+### Develop a custom environment
+
+Use the Mesh toolkit to leverage the power of Unity for fully customizable immersive experiences.
+
+:::image type="content" source="media/get-started-developing-mesh/image040-unity-overview-hero.png#lightbox" alt-text="Overview image of Unity development environment for Mesh":::
+
+> [!div class="nextstepaction"]
+> [Learn about developing custom environments in Unity](develop/development-overview.md)
 
 ## Next steps
 
-   > [!div class="nextstepaction"]
-   > [Set up Microsoft Mesh](Setup/Content/setup-m365-mesh.md)
+To get started, make sure your organization's admins have set up Microsoft Mesh:
 
-   > [!div class="nextstepaction"]
-   > [Organize Mesh event](events-guide/events-overview.md)
+> [!div class="nextstepaction"]
+> [Set up immersive spaces in Microsoft Teams](/microsoftteams/meeting-immersive-spaces)
 
-   > [!div class="nextstepaction"]
-   > [Join Mesh event](user-guide/getting-started.md)
+> [!div class="nextstepaction"]
+> [Set up custom immersive spaces in Microsoft Mesh](Setup/Content/setup-m365-mesh.md)
 
-   > [!div class="nextstepaction"]
-   > [Develop Mesh environments](Create/development-overview.md)
+Then, dive in to organize your first Mesh event:
+
+> [!div class="nextstepaction"]
+> [Organize Mesh events](events-guide/events-overview.md)
+
+Experience Mesh by joining a Mesh event:
+
+> [!div class="nextstepaction"]
+> [Join a Mesh event](user-guide/join-an-event.md)
+
+If you have skills using Unity, get started building your own custom environments:
+
+> [!div class="nextstepaction"]
+> [Develop Mesh environments](develop/development-overview.md)

@@ -3,7 +3,7 @@ title: Mesh user controls
 description: What you can do when you have joined an event
 author: qianw211    
 ms.author: qianwen
-ms.date: 9/29/2023
+ms.date: 10/4/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -43,10 +43,6 @@ Here are some keyboard shortcuts for moving around in your event:
 
 ![A screenshot of the Settings dialog showing Keyboard shortcuts](media/image080.png)
 
-### On your Quest headset
-
-You can look around, walk, run, turn, teleport around, or just sit at the table with other avatars all with the Quest controllers!
-
 ## Mesh controls overview
 
 Now that you're in an event, explore the interface to see what controls are available. To the left, we have the **System Menu** with **Dashboard**, **Settings**, **Feedback**, and **Quit Mesh**. The app bar in the middle holds the **Participants**, **Selfie**, and **Reactions** buttons. The **Profile** button in the lower right corner
@@ -70,9 +66,9 @@ Learn more about frequently asked questions related to audio in Mesh [here](../R
 
 The **Participants** button will show the number of participants in an event.
 
-### Avatar selfies and photos
+### Take a photo or selfie
 
-Take a selfie of yourself with friends or snap a picture from the POV of your avatar!
+Use the **Camera** button on the app bar to take a selfie of yourself with friends or snap a picture from the view of your avatar!
 
 ![A screenshot of the Avatar selfie screen](media/selfie.png)
 
