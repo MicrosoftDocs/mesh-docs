@@ -1,14 +1,14 @@
 ---
-title: Grab, hold and throw with Interactables
+title: Grab, attach and throw with Interactables
 description: Learn how to create grab, hold, and throw interactions between avatars and objects using components and scripts.
 author: jackiecurley
 ms.author: vinnietieto
 ms.date: 10/4/2023
 ms.topic: overview
-keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw
+keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach
 ---
 
-# Grab, hold and throw with Interactables
+# Grab, attach and throw with Interactables
 
 Mesh Interactables is a system for configuring objects with Unity scripts that defines interaction with an object or avatar behavior at runtime. The Interactables package contains scripts of different object types that can be defined. When a project runs, it sets up all the necessary prefabs and settings required for objects or the avatar to behave as defined. If you intend to use Interactables in [Playmode](../../debug-and-optimize-performance/playmode.md) during content development, include the Playmode Setup prefab in your scene. This sets everything up automatically so that all you have to do is click Play to test your objects. Note that the IK functionality seen in the Mesh app isn’t available in Playmode.
 
@@ -18,11 +18,9 @@ For objects you want the avatar to interact with, add a *MeshInteractableSetup* 
 
 Another option for interactable objects is to make them manipulable. Manipulable objects will move through space on the end of your interactor ray. Shortcut controls are available to rotate or translate the object. To turn this feature on, select the Manipulable box and then choose your desired settings. When manipulating objects in the MeshBrowser app you can turn on IK settings for the avatar hand to follow the object. Manipulable objects don’t require a rigidbody, but you should add one if you want the objects to have physics capabilities.
 
-Interactable objects can also be equippable (with or without also being manipulable). Equippable objects will attach to your avatar's hand when you equip them. The PC controls for equip are clicking the object or pressing ‘F’ while the object is selected. The Quest controls for equip are pressing the 'Grip' button while the object is selected. Equippable objects contain settings for IK targets for your avatar’s arm pose while the object is equipped. The IK targets are an offset from the avatar’s chest; this determines where the hand goes while the object is held or activated. Equippables also have the option of being **throwable**. When a throwable object is equipped, you can enter into aim mode by pressing and holding the left mouse button. This will allow your avatar’s arm to follow your mouse target and the object will be thrown when you release the left mouse button.
+Interactable objects can also be equippable (with or without also being manipulable). Equippable objects will attach to your avatar's hand when you equip them. The PC controls for equip are clicking the object or pressing ‘F’ while the object is selected. The Quest controls for equip are pressing the 'Grip' button while the object is selected. Equippable objects contain settings for IK targets for your avatar’s arm pose while the object is equipped. The IK targets are an offset from the avatar’s chest; this determines where the hand goes while the object is held or activated. Equippables also have the option of being *throwable*. When a throwable object is equipped, you can enter into aim mode by pressing and holding the left mouse button. This will allow your avatar’s arm to follow your mouse target and the object will be thrown when you release the left mouse button.
 
-Other scenarios you can achieve with Interactables scripts include anchoring your avatar to moving objects such as ziplines or elevators to transport them. You can add an AvatarAnchor component to a moving object to ensure that your avatar moves along smoothly with that object, both locally and for other avatars’ views across the network. If you want an avatar to be attached to an object that’s stationary (for example, a seat or podium) or has various settings for locomotion, you could add an AvatarTether component. This “tethers” the avatar to the object. AvatarTethers first transport the avatar to their location, and then follow the tether settings you’ve chosen to restrict movement while the avatar is tethered.
-
-All the Interactables components have interaction properties and methods available to Visual Scripting so you have an unlimited amount of ways to make them work together. A MeshInteractableBody can attach an OnStateChanged node to its **OnSelected** property that calls the **TetherLocalAvatar** method on an AvatarTether to tether an avatar. The AvatarTether could have its tether located on the same object as a moving AvatarAnchor so the avatar will start moving along with that object as soon as they’re tethered. At the end of the anchor's journey you could have an AvatarTrigger that untethers the avatar from its anchor object when they reach the zone; they are then free to move about as they please.
+All the Interactables components have interaction properties and methods available to Visual Scripting so you have an unlimited amount of ways to make them work together. 
 
 ## *MeshInteractableSetup*
 
@@ -154,5 +152,7 @@ This component is added automatically at runtime to interactable bodies; develop
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Physics interactions](../physics-interactions.md)
+[Triggers, anchors and tethers](./triggers-anchors-and-tethers.md)
+[Create avatar spawn and teleport points](./create-avatar-spawn-and-teleport-points.md)
+[Physics interactions](../physics-interactions.md)
+[Enhanced features overview](../enhanced-features-overview.md)

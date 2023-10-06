@@ -1,14 +1,30 @@
 ---
-title: Anchors and tethers
+title: Triggers, anchors and tethers
 description: Learn how to anchor an avatar inside an object's trigger volume and tether an object to an avator's transform.
 author: typride
 ms.author: vinnietieto
-ms.date: 10/4/2023
+ms.date: 10/6/2023
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw
 ---
 
 # Anchors and tethers
+
+## AvatarTrigger
+
+An object that tracks when the local avatar enters and exits its trigger volume.
+
+![Avatar Tether Script](../../../media/mesh-scripting/object-player-interactions/Picture3.png)
+
+### Settings
+
+**[Required Component] Collider:** A Collider is required to know what the trigger volume is. This should have **IsTrigger** set to true.
+
+### Visual Scripting
+- **Properties:** 
+    - **LocalAvatarInTrigger** – true when the local avatar is inside the trigger
+
+To ensure that an avatar moves along smoothly with a moving object, you can add an *AvatarAnchor* component to the object. Two instances where this would be useful are moving the avatar along a zipline or in an elevator. Movement can occur both locally and for other avatars’ views across the network.
 
 ## AvatarAnchor
 
@@ -26,7 +42,9 @@ Script to make an object always face the camera.
 
 ## AvatarTether
 
-An object that tethers the avatar to its transform. This does a one-time position change for the local avatar and puts them into a tethered locomotion state based on the object's settings. Only one avatar at a time can be tethered.
+If you want an avatar to be attached to an object that’s stationary (for example, a seat or podium) or one that has various settings for locomotion, you could add an *AvatarTether* component. This “tethers” the avatar to the object. AvatarTethers first transport the local avatar to their location (this is a one-time position change), and then follow the tether settings you’ve chosen to restrict movement while the avatar is tethered. Only one avatar at a time can be tethered.
+
+A MeshInteractableBody can attach an OnStateChanged node to its **OnSelected** property that calls the **TetherLocalAvatar** method on an AvatarTether to tether an avatar. The AvatarTether could have its tether located on the same object as a moving AvatarAnchor so the avatar will start moving along with that object as soon as they’re tethered. At the end of the anchor's journey you could have an AvatarTrigger that untethers the avatar from its anchor object when they reach the zone; they are then free to move about as they please.
 
 ![Avatar Tether Script](../../../media/mesh-scripting/object-player-interactions/Picture2.png)
 
@@ -49,6 +67,10 @@ An object that tethers the avatar to its transform. This does a one-time positio
     - **TetherLocalAvatar(bool)** – Tether or untether the local avatar to this tether  
     - **ToggleTether()** – Tether the avatar when they are not tethered or untether when they are
 
+## Next steps
 
-
+[Grab, attach and throw with Interactables](./interactables.md)
+[Create avatar spawn and teleport points](./create-avatar-spawn-and-teleport-points.md)
+[Physics interactions](../physics-interactions.md)
+[Enhanced features overview](../enhanced-features-overview.md)
 
