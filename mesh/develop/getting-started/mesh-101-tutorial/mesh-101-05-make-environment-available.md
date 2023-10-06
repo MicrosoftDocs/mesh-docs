@@ -3,7 +3,7 @@ title: Mesh 101 Make your Environment available for Events
 description: Learn how to uploaded your Environment and make it available for Event.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/25/2023
+ms.date: 10/5/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Mesh Portal, uploader, uploading
 ---
