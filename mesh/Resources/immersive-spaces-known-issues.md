@@ -72,10 +72,6 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 1. Mesh immersive spaces do not properly support low bandwidth situation: users who are experiencing poor network quality may see problems such as missing avatars and audio glitches. We are actively working on integrating notifications to alert users when they are in this state.
 
-1. Quest and Teams users will not be able to switch the environment in Immersive Spaces for Teams and will see this failure dialog.
-
-    ![A screenshot of the error dialog](media/quest-cant-switch-environment.png)
-
 ## Submit Feedback
  
 Have a question, problem, or suggestion? We deeply appreciate your input. Here are two ways to submit feedback: 
