@@ -177,7 +177,6 @@ If you prefer to have static images as thumbnails you can choose to select the i
 
 1. Once you are ready to publish your Environment, click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
 
-
     **Note**: If you uncheck the **Custom Thumbnails** field the thumbnails from your Environment will be replaced by the default thumbnail image, so make sure this is always checked when you do **Build & Publish**
 
 ## Next steps
