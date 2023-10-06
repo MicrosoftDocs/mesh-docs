@@ -14,7 +14,7 @@ Mesh Interactables is a system for configuring objects with Unity scripts that d
 
 For objects you want the avatar to interact with, add a *MeshInteractableSetup* script. The properties for a group of objects that all behave the same can be set up with a parent *MeshInteractableSetup* script. The properties will be applied to all children with rigidbodies at runtime by automatically adding a *MeshInteractableBody* script. **MeshInteractableBody** will allow each interactable to behave independently. If you want to set up reactions to an object’s interactions with [Visual Scripting](../../script-your-scene-logic/visual-scripting/visual-scripting-overview.md), you can add the *MeshInteractableBody* yourself and create a script graph with a node to an available property, such as *OnHovered* or *OnSelected*, hooked up to an *OnStateChanged* node. For example, the following script graph will enable the cylinder while the button is pressed and disable it when the button is released. The button is fully interactable just by adding the script and a collider and you don't have to do anything else.
 
-![MeshInteractableBody script graph](../../../media/mesh-scripting/object-player-interactions/Picture10.png)
+![MeshInteractableBody script graph](../../../media/enhance-your-environment/object-player-interactions/Picture10.png)
 
 Another option for interactable objects is to make them manipulable. Manipulable objects will move through space on the end of your interactor ray. Shortcut controls are available to rotate or translate the object. To turn this feature on, select the Manipulable box and then choose your desired settings. When manipulating objects in the MeshBrowser app you can turn on IK settings for the avatar hand to follow the object. Manipulable objects don’t require a rigidbody, but you should add one if you want the objects to have physics capabilities.
 
@@ -26,7 +26,7 @@ All the Interactables components have interaction properties and methods availab
 
 Setup script for defining the properties of an object that can be interacted with using XRI interactors.
 
-![MeshInteractableSetup (script)](../../../media/mesh-scripting/object-player-interactions/Picture1.png)
+![MeshInteractableSetup (script)](../../../media/enhance-your-environment/object-player-interactions/001-mesh-interactables-setup.png)
 
 ### Settings
 
@@ -148,7 +148,7 @@ This component is added automatically at runtime to interactable bodies; develop
 ### Settings
 
 **Modify With Visual Script:** Enable this to modify target transform for manipulable bodies using visual script. 
-![Modify-with-visual-script](../../../media/mesh-scripting/object-player-interactions/Picture9.png)
+![Modify-with-visual-script](../../../media/enhance-your-environment/object-player-interactions/Picture9.png)
 
 ## Next steps
 

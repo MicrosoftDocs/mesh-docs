@@ -14,7 +14,7 @@ keywords: Microsoft Mesh, object and player interactions, interactables, avatars
 
 An object that tracks when the local avatar enters and exits its trigger volume.
 
-![Avatar Tether Script](../../../media/mesh-scripting/object-player-interactions/Picture3.png)
+![Avatar Tether Script](../../../media/enhance-your-environment/object-player-interactions/002-avatar-trigger.png)
 
 ### Settings
 
@@ -30,7 +30,7 @@ To ensure that an avatar moves along smoothly with a moving object, you can add 
 
 An object that the avatar will anchor to when they’re inside the object’s trigger volume so that the avatar moves along with the object. Inherits from AvatarTrigger. Networked avatars will anchor as well so movement is smooth across the network. Any number of players can be anchored to a single object.
 
-![AvatarAnchor](../../../media/mesh-scripting/object-player-interactions/Picture4.png)
+![AvatarAnchor](../../../media/enhance-your-environment/object-player-interactions/004-avatar-anchor.png)
 
 #### Settings
 
@@ -46,7 +46,7 @@ If you want an avatar to be attached to an object that’s stationary (for examp
 
 A MeshInteractableBody can attach an OnStateChanged node to its **OnSelected** property that calls the **TetherLocalAvatar** method on an AvatarTether to tether an avatar. The AvatarTether could have its tether located on the same object as a moving AvatarAnchor so the avatar will start moving along with that object as soon as they’re tethered. At the end of the anchor's journey you could have an AvatarTrigger that untethers the avatar from its anchor object when they reach the zone; they are then free to move about as they please.
 
-![Avatar Tether Script](../../../media/mesh-scripting/object-player-interactions/Picture2.png)
+![Avatar Tether Script](../../../media/enhance-your-environment/object-player-interactions/005-avatar-tether.png)
 
 #### Settings
 
