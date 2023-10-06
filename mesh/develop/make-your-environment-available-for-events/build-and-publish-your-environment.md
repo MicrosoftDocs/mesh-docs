@@ -30,8 +30,8 @@ After you finish adding all your scene content, the next step is to build the sc
     in the **Internal Name** and **Description** fields. 
     
     > [!IMPORTANT]
-    > The **Internal Name** field has a maximum of 40 characters, and the
-    **Description** field has a maximum of 70 characters.
+    > The **Internal Name** field has a maximum of 100 characters, and the
+    **Description** field has a maximum of 200 characters.
 
 1. To ensure you have the latest worlds that are available, select the **Refresh List of Mesh Worlds** button.
 
@@ -102,6 +102,18 @@ After you finish adding all your scene content, the next step is to build the sc
 
     ![A screenshot of the dialog shown with the failed results of the build and upload operation](../../media/make-your-environment-available-for-events/006-build-failed.png)
 
+    > [!IMPORTANT]
+    > Everytime you update the Environment, it can affect future events that reference this Environment.
+    ![Warning that environment will be updated ](../../media/make-your-environment-available-for-events/uploader_warning_about_updating_environment.png)
+
+After your environment was uploaded, you will be able to see for what platforms it has been built.
+
+![A screenshot of supported platforms](../../media/make-your-environment-available-for-events/uploader_build_platforms.png)
+
+When uploading repeatedly to the same Environment, please note that only the platforms from the last iteration will be available.
+For example, if you built and publish an Environment for PC platform, but later want to include Android, you will need to build for both PC and Android. Building for Android only will cause the PC build to be lost.
+
+
 ## Environment thumbnails
 
 Adding a custom thumbnail image that will be added to your Environment listings in the Mesh Portal or Mesh App comes in handy when you're selecting Environments in either place because it gives you a visual reminder of what the Environment looks like.
@@ -164,3 +176,9 @@ If you prefer to have static images as thumbnails you can choose to select the i
 1. The thumbnail images need to follow a specific name pattern, the easier way to follow that is to click on the button **Add provisional thumbnails** which will add three images to the folder selected with the correct names and sizes, you can then replace those images with the images you like, just remember to keep their names and try to follow their sizes for a better UI experience.
 
 1. Once you are ready to publish your Environment, click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Get information about your Environment](get-information-about-your-environment.md)
+
