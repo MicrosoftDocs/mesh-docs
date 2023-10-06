@@ -182,4 +182,4 @@ If you prefer to have static images as thumbnails you can choose to select the i
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Get information about your Environment](get-information-about-your-environment.md)
+> [Test your environment in the Mesh app](./test-your-environment.md)

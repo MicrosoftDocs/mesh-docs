@@ -51,3 +51,7 @@ Others can join you in testing your developer template by launching the Mesh app
 ## Testing new iterations of your environment
 
 As you continue to work on building your environment, your developer template is always ready for you. When you publish an update to your environment, come back to the Mesh app, then click **Manage event templates**, and then click **Customize** again to view your new changes.
+
+## Next steps
+
+[Create and customize an event based on your Environment](../../../mesh/events-guide/events-overview.md)

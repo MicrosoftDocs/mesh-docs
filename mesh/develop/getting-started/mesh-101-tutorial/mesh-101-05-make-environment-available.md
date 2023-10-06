@@ -8,7 +8,7 @@ ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Mesh Portal, uploader, uploading
 ---
 
-# Mesh 101 Tutorial Chapter 5: Make your Environment available for Events
+# Mesh 101 Tutorial Chapter 5: Make your Environment available for testing
 
 You've completed adding all the features you need for your Mesh
 experience using Mesh Interactables, Physics and Scripting. So far, we've been working
@@ -126,4 +126,4 @@ Portal.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Chapter 6: Test your environment within the Mesh app](mesh-101-06-test-your-environment.md)
+> [Chapter 6: Test your environment in the Mesh app](mesh-101-06-test-your-environment.md)
