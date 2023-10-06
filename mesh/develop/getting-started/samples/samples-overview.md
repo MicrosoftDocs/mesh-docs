@@ -23,8 +23,6 @@ The Mesh samples are a great way to learn about the different kinds of Mesh Expe
 
 - **Dart Room**: A saloon-style room with a dart game to showcase interactive Mesh Physics features. [Learn more about the Dartroom sample](dart-room.md).
 
-- **Science Building**: An expansive museum exhibiting the power of Mesh Physics to create dynamic, engaging experiences. [Learn more about the Science Building sample](science-building.md).
-
 
 **To start with a sample**:
 
@@ -34,7 +32,7 @@ The Mesh samples are a great way to learn about the different kinds of Mesh Expe
 
 1. Open the sample project you want. 
 
-1. In Unity, navigate to **Assets** > **Scenes** and then open the scene you want---this will vary from sample to sample. For example, in the *Science Building* project, you would open the **ScienceBuilding** scene.
+1. In Unity, navigate to **Assets** > **Scenes** and then open the scene you want---this will vary from sample to sample.
 
 Here's an example of what you'll find in that scene:![___](../../../media/get-started-developing-mesh/image007.png)
 
