@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, object and player interactions, interactables, avatars
 
 # Anchors and tethers
 
-## AvatarTrigger
+## Avatar Trigger
 
 An object that tracks when the local avatar enters and exits its trigger volume.
 
@@ -26,7 +26,7 @@ An object that tracks when the local avatar enters and exits its trigger volume.
 
 To ensure that an avatar moves along smoothly with a moving object, you can add an *AvatarAnchor* component to the object. Two instances where this would be useful are moving the avatar along a zipline or in an elevator. Movement can occur both locally and for other avatars’ views across the network.
 
-## AvatarAnchor
+## Avatar Anchor
 
 An object that the avatar will anchor to when they’re inside the object’s trigger volume so that the avatar moves along with the object. Inherits from AvatarTrigger. Networked avatars will anchor as well so movement is smooth across the network. Any number of players can be anchored to a single object.
 
@@ -40,7 +40,7 @@ An object that the avatar will anchor to when they’re inside the object’s tr
 
 Script to make an object always face the camera.
 
-## AvatarTether
+## Avatar Tether
 
 If you want an avatar to be attached to an object that’s stationary (for example, a seat or podium) or one that has various settings for locomotion, you could add an *AvatarTether* component. This “tethers” the avatar to the object. AvatarTethers first transport the local avatar to their location (this is a one-time position change), and then follow the tether settings you’ve chosen to restrict movement while the avatar is tethered. Only one avatar at a time can be tethered.
 

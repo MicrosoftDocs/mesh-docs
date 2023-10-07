@@ -22,7 +22,7 @@ Interactable objects can also be equippable (with or without also being manipula
 
 All the Interactables components have interaction properties and methods available to Visual Scripting so you have an unlimited amount of ways to make them work together. 
 
-## *MeshInteractableSetup*
+## *Mesh Interactable Setup*
 
 Setup script for defining the properties of an object that can be interacted with using XRI interactors.
 
