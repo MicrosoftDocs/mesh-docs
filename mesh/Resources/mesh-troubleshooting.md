@@ -90,7 +90,7 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 1. Confirm you have a license required to use Mesh as shown [here](../setup/content/preparing-your-organization.md#verify-your-licensing).
 
-2. Double check that your network admins have allowlisted the required endpoints as described [here](../setup/content/preparing-your-organization.md#work-with-your-organization-s-security-team).
+2. Double check that your network admins have allowlisted the required endpoints as described [here](../setup/content/preparing-your-organization.md#work-with-your-organizations-security-team).
 
 3. Gather the logs from your device: `%USERPROFILE%\AppData\LocalLow\Microsoft Corporation\Microsoft Mesh\`.
 
