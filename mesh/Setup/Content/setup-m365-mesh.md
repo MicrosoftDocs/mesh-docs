@@ -43,7 +43,7 @@ For Microsoft Mesh, you will need the following:
     > [!NOTE]
     > We don't support tenants with worldwide public sector, EDU, or GCC licenses.
 
-- A pre-requisite license for Teams Premium, as outlined in [Requirements to purchase Teams Premium - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#what-are-the-requirements-to-purchase-teams-premium).
+- A pre-requisite license in Teams Premium, as outlined in [Requirements to purchase Teams Premium - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#what-are-the-requirements-to-purchase-teams-premium).
 
 Learn more about [Teams for enterprise](https://www.microsoft.com/microsoft-teams/enterprise#pricing).
 
