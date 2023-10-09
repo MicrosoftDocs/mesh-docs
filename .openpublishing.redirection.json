@@ -82,6 +82,10 @@
 			"source_path": "mesh/provisioning.md",
 			"redirect_url": "https://www.microsoft.com/mesh",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/debug-and-optimize-performance/test-your-environment.md",
+			"redirect_document_id": false
 		}
 	]
 	
