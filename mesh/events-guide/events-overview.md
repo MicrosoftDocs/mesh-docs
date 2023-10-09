@@ -10,13 +10,43 @@ keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
 
 # Overview of Mesh events
 
-Events in Mesh should be familiar to most organizations that work with Microsoft Teams. The general flow is to:
+Events experiences in Microsoft Mesh can vary widely—in their look, feel, and use case. Use the default environments and artifacts to run event experiences or create custom environments and content to curate company events even more.
+
+Create the event in the Mesh portal, customize it in the Microsoft Mesh app, create a template to reuse your customizations in the future, and use the powerful suite of tools to produce it.
+
+## Customization experience
+
+By default, all environments in Mesh are customizable with the Mesh editor. Whether it's a default environment or a custom one, use the Mesh editor in the menu bar to customize immersive experiences to address the unique needs of your event—without writing a line of code.
+
+Event creators can select from a set of ready-to-use immersive spaces, customize them by adding images, videos, and/or a screen share template, then prepare them to show up in an event in an orchestrated way. Once these objects are added, change the size and position, or put the video on loop so it fits right into your event. These customizations can then be saved as a template for anyone in the organization to reuse.
+
+### Custom environments and artifacts
+
+In addition to the no-code customization experience, you can leverage Unity and the Mesh toolkit to create custom environments and rich content that can be used in event experiences. To learn more about creating custom environments and artifacts, see the [Choose your journey](../develop/getting-started/choose-your-journey.md) developer docs to get started.
+
+## Key capabilities of Mesh event experiences
+
+- **Single vs multiroom events:** Single room events can host up-to 16 people. For larger events, participants are grouped into 16 person rooms to provide the optimal experience for all users.
+
+- **Broadcasting in multiroom events:** Broadcast to all attendees in all rooms simultaneously to ensure all attendees can hear and follow your lead as an event host.
+
+- **Event production tools:** Control the artifacts and content you add to orchestrate an immersive experience.
+
+- **Spatial audio:** Spatial audio provides directionality and distance to interactions in Mesh, enabling multiple small group discussions to occur in the same place.
+
+- **Multiple event roles:** Designate roles like co-organizer and attendee to specify who can customize events with you and who cannot.
+
+- **Event templates:** Save any customization you make in an environment or event to be reused in future events.
+
+## Event hosting flow
+
+Events in Mesh should be familiar to most organizations that work with Microsoft Teams with the added step of customize. So, Create, customize, and host:
 
 1. **Create an event in the Mesh Portal:** Start with the Mesh Portal to create or edit your event, invite participants, and manage Mesh worlds.
 
-1. **Customize and save the event in the Mesh app:** Customize your event at least 30 minutes before the start time to add text, video, and/or screenshare artifacts and prepare your environment for your event.
+1. **Customize and save the event experience in the Mesh app:** Customize your event at least 30 minutes before the start time to add text, video, and/or screenshare artifacts and prepare your environment for your event.
 
-    1. **Provision multiple room events** at-least 30 minutes before the start time to ensure that the event provisions properly.
+1. **Create event template:** Save your customizations as an event template to be reused in future events.
 
 1. **Host your event in Mesh:** Leverage a set of tools to manage participants, and control the artifacts that you've added to your environment.
 
@@ -53,6 +83,12 @@ To learn how to customize your event in the Mesh app, see [Customize your event]
 
 > [!div class="nextstepaction"]
 > [Customize your event](customize-event.md)
+
+## Create your event template
+
+Once you've customized your event, save it as an event template to be reused in future events.
+
+To learn how, see [Create event template](create-template.md).
 
 ## Produce your event
 
