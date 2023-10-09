@@ -87,7 +87,7 @@ This is a beautifully rendered scene that demonstrates the power of combining ap
 
 ### Mesh 101 Tutorial
 
-In the Mesh 101 tutorial (sample name: *Mesh101.Unity*), [Chapter 4](../getting-started/mesh-101-tutorial/mesh-101-04-physics.md) walks you step-by-step through the process of setting up three Mesh Physics features: grabbing and releasing objects, triggering an animation using a trigger volume, and constraining an object with a containment field. 
+In the Mesh 101 tutorial (sample name: *Mesh101*), [Chapter 4](../getting-started/mesh-101-tutorial/mesh-101-04-physics.md) walks you step-by-step through the process of setting up three Mesh Physics features: grabbing and releasing objects, triggering an animation using a trigger volume, and constraining an object with a containment field. 
 
 ### Other projects with Mesh Physics
 
