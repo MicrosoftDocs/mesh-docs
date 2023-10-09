@@ -39,7 +39,7 @@ To participate in the public preview, you must agree to the terms of use and pri
 
 ## Verify Your Licensing
 
-For immersive spaces for Teams, your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5. For Microsoft Mesh, a Teams Premium license is required during the Public Preview. If you plan to use Mesh scripting, you must also have an Azure subscription.
+For immersive spaces for Teams, your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5.
 
 For Microsoft Mesh, a Teams Premium license is required during the Public Preview. If you plan to use Mesh cloud scripting, you must also have an Azure subscription with storage.
 
@@ -198,7 +198,7 @@ All endpoints need to allow traffic on TCP ports 80 and 443:
 
 - \*.office.net
 
-To learn more, see how to [Set up immersive spaces in Teams](aka.ms/immersivespacesitdocs).
+To learn more, see how to [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces).
 
 ### Firewall Ports for Mesh immersive spaces
 
@@ -215,7 +215,7 @@ Mesh traffic will use IP addresses in the AzureCloud service tag.
 
 For more information about service tags, see the [Azure service tags overview](/azure/virtual-network/service-tags-overview).
 
-To learn more, see how to [Set up immersive spaces in Teams](aka.ms/immersivespacesitdocs).
+To learn more, see how to [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces).
 
 ### Ensure endpoints can be allowed for Mesh avatars for Teams
 
@@ -307,8 +307,8 @@ before you deploy.
 
 When you first roll out the avatar feature in Teams, some users may need
 guidance on when it's good to use them, and not good to use them.
-Microsoft has published a blog on Avatar etiquette: How Microsoft
-employees are using avatars for Microsoft Teams in their meetings. This
+Microsoft has published a blog on Avatar etiquette: [How Microsoft
+employees are using avatars for Microsoft Teams in their meetings](https://www.microsoft.com/insidetrack/blog/avatar-etiquette-how-microsoft-employees-are-using-avatars-for-microsoft-teams-in-their-meetings/). This
 doc can help inform materials you might want to share with your users.
 
 ## Summary

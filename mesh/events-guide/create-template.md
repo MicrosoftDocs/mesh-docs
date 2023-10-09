@@ -48,9 +48,9 @@ Event templates allow organizers to reuse environments and customization made in
 
     :::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-world-selection.png" alt-text="Select world to use for your event":::
 
-1. Find the template you selected, and choose it.
+1. Find the template you created, and choose it, then select **Next**.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-selection.png" alt-text="Select template":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-select-template.png" alt-text="Select template":::
 
 Now your template is created and selected for your event. When creating another event, you can find it in the Mesh world it was created and used in any future event.
 
