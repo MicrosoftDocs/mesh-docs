@@ -24,7 +24,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -40,10 +41,10 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/mesh/breadcrumb/toc.json",
-      "uhfHeaderId": "MSDocsHeader-Hololens",
+      "uhfHeaderId": "MSDocsHeader-Mesh",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/mesh-docs",
-      "feedback_product_url": "https://docs.microsoft.com/en-us/hololens/hololens-feedback"  
+      "feedback_product_url": "https://docs.microsoft.com/mesh/resources/feedback"  
     },
     "fileMetadata": {},
     "template": [],

@@ -1,0 +1,13 @@
+items: 
+- name: Enhanced features overview
+  href: enhanced-features-overview.md
+- name: Multi-room sync (animations, timelines, and video)
+  href: multi-room-sync.md
+- name: Physics interactions
+  href: physics-interactions.md  
+- name: Web content
+  href: webcontent.md
+- name: Play audio in Mesh
+  href: play-audio-in-mesh.md 
+- name: Avatar and object interactions
+  href: avatar-and-object-interactions/toc.yml   
