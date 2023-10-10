@@ -72,21 +72,24 @@ Reproduce the issue, and then share the Unity logs. Microsoft Mesh application l
 
 ### Collecting server logs
 #### **A. Log Stream**
+##### I. Log Stream on Azure Portal
 To see logs from the Mesh Cloud Scripting Service, in the **Monitoring** section of the AppService resource, click the **Log Stream** menu to see logs from the container, as shown in the image below.
 
 ![Log Stream Select](../../../media/mesh-scripting/troubleshooting/log_stream_select.png 'Log Stream Select')
 
-If you prefer, you can tail these same logs from your local machine by running the following command in your terminal:
+##### II. Log Stream via Azure CLI
+If you have the Azure CLI installed on your local machine, you could also tail these same logs from your local machine by running the following command in your terminal:
 
 ```az webapp log tail --name <APP_SERVICE_NAME> --resource-group <RESOURCE_GROUP_NAME>```
 
-You can also download log files from the hosted app service by going to the Advanced Tools (Kudu). 
+##### III. Download the logs as a zip file
+You may also download log files from the hosted app service by going to the Advanced Tools (Kudu). In the **"Development Tools"** section of the left pane, locate **Advanced Tools** and click the **Go** button.
+
+![AppService Advanced Tools](../../../media/mesh-scripting/troubleshooting/app_service_advanced_tools.png 'AppService Advanced Tools')
+
+The SCM website opens and you can download the Docker logs as a zip file, as shown below.
 
 ![Kudu](../../../media/mesh-scripting/troubleshooting/kudu.png 'Kudu')
-
-Under **Development Tools” >> Advanced Tools >> Go**. The SCM website opens and you can download the Docker logs as a zip file, as shown below.
-
-<!-- Is there supposed to be an image here? -->
 
 #### **B. Azure Monitor**
 Alternatively, using Azure Monitor, you could write KQL (Kusto Query Language) queries to pick out logs that you're particularly interested in from events, time ranges and more. This would be automatically set up for you if you checked the "Enable App Monitoring" box during deployment. If not, see the [manual setup for Azure Monitor](#manual-setup-for-azure-monitor-optional) section to configure Azure Monitor for your deployment.
@@ -98,6 +101,44 @@ To use this, in the **Monitoring** section of the navigation pane, select **Logs
 In the query Monitoring pane, you can select the logs you’re interested in. At the time of writing, we have “AppServiceConsoleLogs”, “AppServiceHTTPLogs”, “AppServiceAppLogs” and “AppServicePlatformLogs”. To view the logs from the Docker container, you may find the logs in “AppServiceAppLogs” and/or “AppServiceConsoleLogs” more useful.
 
 ![Azure Monitoring Pane](../../../media/mesh-scripting/troubleshooting/azure_monitoring_pane.png 'Azure Monitoring Pane')
+
+In the textbox provided on the right-hand side of the **Tables** menu, type in the following KQL query:
+
+```
+AppServiceConsoleLogs
+| extend newLog = iif(
+ResultDescription has ": Orleans.LifecycleSubject"
+or ResultDescription has ": Orleans.Runtime.Catalog"
+or ResultDescription has ": Microsoft.Hosting.Lifetime"
+or ResultDescription has ": Microsoft.Mesh.CloudScripting.CloudApplication"
+or ResultDescription has ": Microsoft.Mesh.CloudScripting.Hosting.Launcher.CloudAppInstance"
+or ResultDescription has ": Microsoft.Mesh.CloudScripting.Hosting.Core.NamedPipesCloudScriptingSessionGrain"
+or ResultDescription has ": Microsoft.Mesh.CloudScripting.Cloud.Middleware.CloudScriptingBridge"
+or ResultDescription has "UNOBSERVED EXCEPTION:"
+or ResultDescription has ": Microsoft.SceneAppService.SceneAppHub"
+or ResultDescription has ": Microsoft.Mesh.CloudScripting.Hosting.Core.NamedPipesCloudScriptingSessionGrain"
+or ResultDescription has ": Microsoft.Mesh.CloudScripting.Hosting.Launcher.CloudAppInstanceFactory"
+or ResultDescription has ": Microsoft.ClientChannel.Hosting.ProcessLifecycleLoggers"
+or ResultDescription has ": Microsoft.Mesh.CloudScripting.Services.ApplicationWorkDispatcher"
+or ResultDescription has ": Microsoft.Mesh.CloudScripting.Services.CloudScriptingHostedService"
+or ResultDescription has ": Microsoft.Mesh.CloudScripting.Hosting.Launcher.CloudScriptingPreparationService"
+or ResultDescription has ": Microsoft.Mesh.CloudScripting.Cloud.Middleware.CloudAppProcessFactory"
+or ResultDescription has ": Microsoft.ClientChannel.Resources.ClientLinkGrain"
+, 1, 0)
+| sort by TimeGenerated asc
+| extend logId = row_cumsum(newLog) 
+| summarize ResultDescription=make_list(ResultDescription), TimeGenerated=min(TimeGenerated) by logId
+| extend ResultDescription = strcat_array(ResultDescription, "")
+| sort by TimeGenerated desc
+| project TimeGenerated, ResultDescription
+| where not (ResultDescription has "Broadcasting data of size")
+```
+
+![Azure Monitoring Input Field](../../../media/mesh-scripting/troubleshooting/azure_monitoring_input_field.png 'Azure Monitoring Input Field')
+
+Export data to csv.
+
+![Azure Monitoring Export](../../../media/mesh-scripting/troubleshooting/azure_monitoring_export_csv.png 'Azure Monitoring Export')
 
 ##### **Manual Setup for Azure Monitor (Optional)**
 
