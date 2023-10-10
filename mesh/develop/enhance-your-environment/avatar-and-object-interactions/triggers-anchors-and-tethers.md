@@ -8,7 +8,7 @@ ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw
 ---
 
-# Anchors and tethers
+# Triggers, anchors and tethers
 
 ## Avatar Trigger
 

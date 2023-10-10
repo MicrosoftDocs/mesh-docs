@@ -3,7 +3,7 @@ title: Create avatar spawn and teleport points
 description: Learn how to create points that an avatar will spawn to or travel to when using teleportation.
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 10/4/2023
+ms.date: 10/9/2023
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, teleport, spawn
 ---
@@ -12,7 +12,7 @@ keywords: Microsoft Mesh, object and player interactions, interactables, avatars
 
 ## Travel Point and Travel Point Group
 
-*Travel Point* is a component in the Interactables package that can be used to define where to place an avatar when first joining an event or space and also to transport avatars during their experience using Visual Scripting.
+*Travel Point* is a component in the Mesh Toolkit that can be used to define where to place an avatar when first joining an event or space and also to transport avatars during their experience using Visual Scripting.
 
 If a travel point isn't present in an Environment, and there's a floor at the origin, the avatar will be grounded on the floor when spawned.  If no floor is present near the origin, the avatar will spawn above the origin and fall for a little while and then respawn in a loop.
 

@@ -1,5 +1,5 @@
 items: 
-- name: Grab, attach and throw with Interactables
+- name: Grab, hold and throw with Interactables
   href: interactables.md
 - name: Triggers, anchors and tethers
   href: triggers-anchors-and-tethers.md
