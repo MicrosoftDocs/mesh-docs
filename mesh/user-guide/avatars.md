@@ -3,7 +3,7 @@ title: Personalize your avatars
 description: Represent yourself in Mesh events as an avatar
 author: qianw211    
 ms.author: qianwen
-ms.date: 9/13/2023
+ms.date: 10/7/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
