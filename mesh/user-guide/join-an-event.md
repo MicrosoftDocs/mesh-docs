@@ -24,7 +24,7 @@ You can easily find Mesh events right within your daily Outlook and Teams calend
 
 ![Animation of joining a Mesh event from Outlook or Teams calendar](media/mesh-entry-points.gif)
 
-## Join from the immersive spaces in Mesh on PC
+## Join from Microsoft Mesh on PC
 
 In the Mesh app on PC or Quest, you can attend social gatherings, conferences, and all-hands events all within a wide selection of Environments. In these events, you can view content, interact with physical objects, and meet or network with your colleagues.s
 
@@ -62,7 +62,7 @@ Follow the steps below to see a list of events and join an event.
 
 # [Quest](#tab/quest)
 
-## Join from the immersive spaces in Mesh on Quest 2
+## Join from Microsoft Mesh on Quest 2
 
 If you're running the Mesh app on Quest, you can use the **Dashboard**
 shown below to find and join your Teams events.
