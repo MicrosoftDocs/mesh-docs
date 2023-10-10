@@ -12,16 +12,23 @@ keywords: Microsoft Mesh, Producing, M365, events, hosting, event producer, even
 
 ## Considerations before starting your event
 
-**Customize before your event:** To ensure the event runs smoothly, ensure that you customize and save customizations at least 30 minutes before the event start time.
+### Customize **before** your event
 
-**Event capacity:** An event can support up to 200 people, however only 16 people can be in the same room and interact spatially together. Use the broadcast feature to communicate with all participants.
+To ensure the event runs smoothly, ensure that you customize and save customizations at least 30 minutes before the event start time.
+
+### Event capacity
+
+An event can support up to 200 people, however only 16 people can be in the same room and interact spatially together. Use the broadcast feature to communicate with all participants.
+
+- 200-person limit per event
+- 16-person limit per room
+- 3 people can broadcast at the same time to the entire audience
+- 1 host room
 
 ## Event Producers tools
 
-- **Host Panel:** See the participants in your event and use the host panel toolbar to access the *Mute all*, *Megaphone*, *Broadcast*, and  *Share* buttons.
-
+- **Host Panel:** See the participants in your event and use the host panel toolbar to access the *Mute all*, *Megaphone*, *Broadcast*, and  *Share* buttons
 - **Control Panel:** Control the elements you add to the environment with scripted sequences of events. Imagine a curtain raise to signal the start of the event!
-
 - **Event templates:**  Create a template of your event with all customizations that you add to reuse in future events
 
 ## Producing your event
@@ -56,19 +63,19 @@ Once you select **Join now**, you'll utilize two main tools for your run of show
 ### Host Panel tools
 
 - **Mute all:** Mute all participants in the event.
-  
+
     :::image type="content" source="../media/mesh-event-producer-guide/Mute-all-button.png" alt-text="Mute all button in host panel":::
 
 - **Megaphone:** Amplify your voice to all participants in the event.
-  
+
     :::image type="content" source="../media/mesh-event-producer-guide/Megaphone-button.png" alt-text="Megaphone button in host panel":::
 
-- **Broadcast:** Broadcast your avatar to all rooms in a multi-room event. 
-  
+- **Broadcast:** Broadcast your avatar to all rooms in a multi-room event.
+
     :::image type="content" source="../media/mesh-event-producer-guide/Broadcast-button.png" alt-text="Boradcast button in a Mesh event in the host panel":::
 
 - **Share:** Share your screen to the event.
-  
+
     :::image type="content" source="../media/mesh-event-producer-guide/Share-button.png" alt-text="Share button in host panel":::
 
 ### Host Panel participant panel
