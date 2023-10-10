@@ -90,13 +90,15 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 1. Confirm you have a license required to use Mesh as shown [here](../setup/content/preparing-your-organization.md#verify-your-licensing).
 
-2. Double check that your network admins have allowlisted the required endpoints as described [here](../setup/content/preparing-your-organization.md#work-with-your-organizations-security-team).
+1. Double check that the machine has the latest Operating System and security updates.
 
-3. Gather the logs from your device: `%USERPROFILE%\AppData\LocalLow\Microsoft\Microsoft Mesh\`.
+1. Double check that your network admins have allowlisted the required endpoints as described [here](../setup/content/preparing-your-organization.md#work-with-your-organizations-security-team).
 
-4. If the logs are too large to share, the two most important are `Player.log` and `Player-prev.log`.
+1. Gather the logs from your device: `%USERPROFILE%\AppData\LocalLow\Microsoft\Microsoft Mesh\`.
 
-5. Open a support request by following the link [here](https://admin.microsoft.com) (this support link may only be available to M365 admins).
+1. If the logs are too large to share, the two most important are `Player.log` and `Player-prev.log`.
+
+1. Open a support request by following the link [here](https://admin.microsoft.com) (this support link may only be available to M365 admins).
 
 ### What should I do with issues relating to M365?
 
