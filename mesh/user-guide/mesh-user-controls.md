@@ -14,7 +14,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 The Mesh Dashboard displays all Mesh events available to you. The Mesh Dashboard is the main interface you can use to explore what Mesh has to offer.
 
-The Dashboard is viewable using the Mesh App on PC or Quest.
+The Dashboard is viewable using the Mesh app on PC or Quest.
 
 ![A screenshot of the Mesh dashboard](media/mesh-dashboard.png)
 
