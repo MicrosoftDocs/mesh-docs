@@ -267,5 +267,35 @@ The Mesh Cloud Scripting Services infrastructure utilizes the Premium App Servic
 
 If you receive this error, “This region has quota of 0 PremiumV2 instances for your subscription. Try selecting a different region or SKU," please refer to [Azure subscription limits and quotas - Azure Resource Manager | Microsoft Learn](/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
+## Clean up stale MeshApp services
+
+In the case that you have stale or unused MeshApp services, follow these steps to find your MeshApp resources and remove them.
+
+1. Login to Azure Portal
+
+1. Navigate to the "All Resources" tab
+
+    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-all-resources.png" alt-text="Select all resources in Azure portal":::
+
+1. On the "All Resources" page:
+
+    1. Select the appropriate Subscription
+
+    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-subscription.png" alt-text="Select subscription in Azure":::
+
+    1. Add a filter with the resources type as **App Service**.
+
+    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-add-filter-app-service.png" alt-text="Add filter tofr app service in Azure":::
+
+    1. Add another filter with the tag **MeshApp**.
+
+    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-filter.png" alt-text="Select filter to find Mesh apps in Azure":::
+
+    1. At top right, select **Group by** and select **Group by resource group**.
+
+    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-group-by-resource-group.png" alt-text="Group by resource group Azure":::
+
+1. Clean up the stale MeshApp services by deleting the corresponding resource group in 3d by using the Azure CLI as found here [Delete resource group and resources - Azure Resource Manager | Microsoft Learn](/azure/azure-resource-manager/management/delete-resource-group?tabs=azure-cli).
+
    > [!div class="nextstepaction"]
    > [Getting started with cloud scripting](cloud-scripting-getting-started.md)
