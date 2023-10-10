@@ -202,8 +202,9 @@ To learn more, see how to [Set up immersive spaces in Teams](/microsoftteams/mee
 
 ### Firewall Ports for Mesh immersive spaces
 
-In addition to the endpoints above, Mesh also requires the following
-outgoing ports to be opened in your firewall:
+In addition to the endpoints listed above, Mesh also requires that outgoing
+traffic be allowed to IP addresses in the "AzureCloud" service tag over the
+following protocols and ports:
 
 - TCP ports 80, 443
 
@@ -211,9 +212,11 @@ outgoing ports to be opened in your firewall:
 
 - UDP ports 3478-3481
 
-Mesh traffic will use IP addresses in the AzureCloud service tag.
+If you need to resolve a service tag to a list of IP ranges, you can
+periodically use the [service tag API][service-tag-api] or [download a
+snapshot][service-tag-download].
 
-For more information about service tags, see the [Azure service tags overview](/azure/virtual-network/service-tags-overview).
+For more information about service tags, see the [Azure service tags overview][service-tag].
 
 To learn more, see how to [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces).
 
@@ -248,14 +251,21 @@ All endpoints need to allow traffic on TCP ports 80 and 443:
 
 ### Firewall Ports for the Mesh app
 
-In addition to the endpoints listed above, Mesh also requires the
-following outgoing ports to be opened in your firewall:
+In addition to the endpoints listed above, Mesh also requires that outgoing
+traffic be allowed to IP addresses in the "AzureCloud" service tag over the
+following protocols and ports:
 
 - TCP ports 80, 443, 8089, and 8989
 
 - TCP & UDP ports 30,000-30,499
 
 - UDP ports 3478-3481
+
+If you need to resolve a service tag to a list of IP ranges, you can
+periodically use the [service tag API][service-tag-api] or [download a
+snapshot][service-tag-download].
+
+For more information about service tags, see the [Azure service tags overview][service-tag].
 
 ### Conditional Access
 
@@ -329,3 +339,7 @@ others specific to your organization.
 
 > [!div class="nextstepaction"]
 > [Prepare your organization for Immersive spaces (coming soon)](/microsoftteams/public-preview-doc-updates)
+
+[service-tag]: /azure/virtual-network/service-tags-overview
+[service-tag-api]: /azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api
+[service-tag-download]: /azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files
