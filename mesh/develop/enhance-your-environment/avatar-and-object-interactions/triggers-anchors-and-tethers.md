@@ -32,13 +32,9 @@ An object that the avatar will anchor to when they’re inside the object’s tr
 
 ![AvatarAnchor](../../../media/enhance-your-environment/object-player-interactions/004-avatar-anchor.png)
 
-#### Settings
+### Settings
 
 **[Required Component] Collider:** A Collider is required to know what the trigger volume is. This should have IsTrigger set to true.
-
-### *Billboard2D*
-
-Script to make an object always face the camera.
 
 ## Avatar Tether
 
@@ -48,7 +44,7 @@ A MeshInteractableBody can attach an OnStateChanged node to its **OnSelected** p
 
 ![Avatar Tether Script](../../../media/enhance-your-environment/object-player-interactions/005-avatar-tether.png)
 
-#### Settings
+### Settings
 
 - **Tether Transform:** The point to tether the avatar to. Will default to the transform the component is attached to.  
 - **Avatar Tether Point:** The point on the avatar to place them at the transform.  
@@ -58,7 +54,7 @@ A MeshInteractableBody can attach an OnStateChanged node to its **OnSelected** p
 - **Track HMD Movement:** Whether or not the avatar will untether after physically walking away.  
 - **Enforce HMD User Tether:** What to do when the avatar exceeds physical movement range. If true, the avatar will be teleported back to tether position; if false, the avatar will be untethered.  
 
-#### Visual Scripting
+### Visual Scripting
 
 - **Properties:** 
     - **AvatarIsTethered** – Whether or not any avatar is tethered  
@@ -66,6 +62,10 @@ A MeshInteractableBody can attach an OnStateChanged node to its **OnSelected** p
 - **Methods:**
     - **TetherLocalAvatar(bool)** – Tether or untether the local avatar to this tether  
     - **ToggleTether()** – Tether the avatar when they are not tethered or untether when they are
+
+## *Billboard2D*
+
+Script to make an object always face the camera.
 
 ## Next steps
 
