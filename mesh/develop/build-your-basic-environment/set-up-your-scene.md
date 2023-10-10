@@ -22,11 +22,11 @@ In order for a scene to support teleportation, it must have a Navmesh layer. A t
 
 ## Add a TravelPoint
 
-Every scene must have at least one travel point, which is used to configure avatar spawning behavior. If you're new to travel points, we recommend that you [read our TravelPoint and TravelGroup article](../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md) and follow the instructions there. When you're finished, continue on with the article named [Building for single and multiple platforms](build-for-single-and-multiple-platforms.md).
+Every scene must have at least one *travel point*, which is used to configure avatar spawning behavior. If you're new to travel points, we recommend that you [read our TravelPoint and TravelGroup article](../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md) and follow the instructions there. When you're finished, continue on with the article named [Building for single and multiple platforms](build-for-single-and-multiple-platforms.md).
 
 ## Add the Mesh Thumbnail Camera
 
-Adding the `Mesh Thumbnail Camera` provides a thumbnail image that will be
+Adding the *Mesh Thumbnail Camera* provides a thumbnail image that will be
 added to your Environment's listing in the Mesh Portal and its
 selection button in the Mesh app. This comes in handy when you're
 selecting Environments in either place because it gives you a visual
