@@ -1,5 +1,5 @@
 ---
-title: Mesh 101 Make your Environment available for Events
+title: Mesh 101 Make your environment available for Events
 description: Learn how to uploaded your Environment and make it available for Event.
 author: typride
 ms.author: vinnietieto
@@ -8,7 +8,7 @@ ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Mesh Portal, uploader, uploading
 ---
 
-# Mesh 101 Tutorial Chapter 5: Make your Environment available for testing
+# Mesh 101 Tutorial Chapter 5: Make your environment available for testing
 
 You've completed adding all the features you need for your Mesh
 experience using Mesh Interactables, Physics and Scripting. So far, we've been working
