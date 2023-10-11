@@ -102,6 +102,9 @@ After you finish adding all your scene content, the next step is to build the sc
 
     ![A screenshot of the dialog shown with the failed results of the build and upload operation](../../media/make-your-environment-available-for-events/006-build-failed.png)
 
+    > [!TIP]
+    > If a build and upload process fails, look in the **Console** for clues about what might have happened.
+
     > [!IMPORTANT]
     > Everytime you update the Environment, it can affect future events that reference this Environment.
     ![Warning that environment will be updated ](../../media/make-your-environment-available-for-events/uploader_warning_about_updating_environment.png)
