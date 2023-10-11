@@ -13,22 +13,16 @@ keywords: Microsoft Mesh, Producing, M365, events, hosting, event producer, even
 ## Considerations before starting your event
 
 ### Customize **before** your event
-
 To ensure the event runs smoothly, ensure that you customize and save customizations at least 30 minutes before the event start time.
 
 ### Event capacity
 
-An event can support up to 224 participants including 16 hosts and 208 total attendees. Hosts are grouped together in one room while the attendees are split into 16 person rooms.
+- 200 attendees per event
+- 16 attendees per room
+- Up to 16 hosts in a separate room, additional to the 200 attendees
 
-Up to three hosts can broadcast simultaneously to show their avatar in and communicate to all attendee rooms.
-
-Total breakdown of event capacity:
-
-- Total attendees per event: 208
-- Total hosts per event: 16
-- Host rooms per event: 1
-- Attendee rooms per event: 13
-- Number of **simultaneous** broadcasters per event: 3
+> [!NOTE]
+> Only 3 event hosts can broadcast at the same time. 
 
 ## Event Producers tools
 
@@ -59,7 +53,7 @@ Once you select **Join now**, you'll utilize two main tools for your run of show
 
 1. Select the **Host Panel** button in the menu bar.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/host-panel-open2.png" alt-text="Host panel button for producing an event":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Host-panel-button-overview.png" alt-text="Host panel button to see participant list and tools":::
 
 1. In the window that opens, you'll see the following tools at the top:
 
