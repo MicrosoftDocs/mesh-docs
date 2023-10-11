@@ -285,11 +285,11 @@ In the case that you have stale or unused MeshApp services, follow these steps t
 
     1. Add a filter with the resources type as **App Service**.
 
-    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-add-filter-app-service.png" alt-text="Add filter tofr app service in Azure":::
+    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-add-first-filter.png" alt-text="Add filter to see resources for App service":::
 
     1. Add another filter with the tag **MeshApp**.
 
-    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-filter.png" alt-text="Select filter to find Mesh apps in Azure":::
+    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-add-filter-app-service.png" alt-text="App service filter in azure":::
 
     1. At top right, select **Group by** and select **Group by resource group**.
 
