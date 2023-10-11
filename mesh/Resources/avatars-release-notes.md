@@ -24,11 +24,11 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 ## Sept 30, 2023
 
-* Avatars in Microsoft Teams is now available on Mac Desktops.
+* Avatars in Microsoft Teams is now available on the [new Teams client](https://www.microsoft.com/microsoft-teams/download-app) for Mac Desktops.
 
 ## Sept 18, 2023
 
-* Avatars in Microsoft Teams is now available on the New Teams Client for Windows Desktop Only. Mac Desktop support not yet available.
+* Avatars in Microsoft Teams is now available on the [new Teams client](https://www.microsoft.com/microsoft-teams/download-app) for WindowsDesktop Only. Mac Desktop support is not yet available.
 
 ## June 21, 2023
 
