@@ -29,7 +29,7 @@ when it's pressed by an avatar. The avatar can then press the same button to sto
     shown below.
 
 
-![A screenshot of a video playlist Description automatically generated with low confidence](../../../media/sample-mesh-101/403-station-three-one.png)
+![Screenshot of Video playback window in the Unity scene window showing the first station in the environment](../../../media/sample-mesh-101/403-station-three-one.png)
 
 As you can see, there's already a video screen in place, but it needs a Play/Stop button. As the text box for the station explains, we'll create a Script Graph with some button logic so that the button can be used to toggle the VideoPlayer on and off and change the button text.
 
@@ -37,17 +37,17 @@ As you can see, there's already a video screen in place, but it needs a Play/Sto
 
 1. In Unity, make sure the GameObject named **Chapter3** and its child object named **3.1 - Video** are expanded.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/404-chapter-3-expanded.png)
+    ![A screenshot of Unity hierachy showing Chapter3 and 3.1 Video folders expanded](../../../media/sample-mesh-101/404-chapter-3-expanded.png)
 
 1. In the **Project** window, search for the **ButtonBase** prefab. Make sure you choose **ALL** for the **Search** filter.
 
-    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/032-buttonbase-v2.png)
+    ![A screenshot of the term Buttonbase searched in the Project window in Unity](../../../media/sample-mesh-101/032-buttonbase-v2.png)
 
 1. Drag **ButtonBase** from the **Project** window and then, in the
     **Hierarchy**, drop it on the GameObject named **3.1 -- Video** so
     that **ButtonBase** is placed as a child to **3.1 -- Video**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/405-buttonbase-added.png)
+    ![A screenshot of Buttonbase dragged into the Hierarchy and added to the GameObject named 3.1 -- Video](../../../media/sample-mesh-101/405-buttonbase-added.png)
 
     Make sure the **Transform** > **Position** values for **ButtonBase** are 0, 0, 0.
 
@@ -60,14 +60,14 @@ As you can see, there's already a video screen in place, but it needs a Play/Sto
 
 Perfect! Now **ButtonBase** is correctly located just in front of the **BackplateBase** object.
 
-![A screenshot of a video play Description ](../../../media/sample-mesh-101/406-buttonbase-correct.png)
+![A screenshot of Unity showing the ButtonBase below the BackplateBase object](../../../media/sample-mesh-101/406-buttonbase-correct.png)
 
 ### Rename the button
 
 - With **ButtonBase** selected, in the **Inspector**, change the name
     of **ButtonBase** to "PlayVideoButton".
 
-    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/407-buttonbase-rename.png)
+    ![A screenshot of Unity showing ButtonBase renamed to PlayVideButton](../../../media/sample-mesh-101/407-buttonbase-rename.png)
 
 **Change the label of the button**
 
@@ -77,7 +77,7 @@ Right now, the text on the button says "Label." Let's change that to
 1. In the **Hierarchy**, expand the **PlayVideoButton** GameObject to
     display its child object **Button**, then expand **Button** to display its child objects, and then select the **Label** child object.
 
-    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/408-label-object.png)
+    ![A screenshot of a  ](../../../media/sample-mesh-101/408-label-object.png)
 
 1. In the **Inspector**, navigate to the **TextMeshPro -- Text**
     component, and then, in the **Text Input** box, change the text to
