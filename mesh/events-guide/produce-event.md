@@ -18,16 +18,17 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 
 ### Event capacity
 
-An event can support up to 200 people, however only 16 people can be in the same room and interact spatially together. Use the broadcast feature to communicate with all participants.
+An event can support up to 224 participants including 16 hosts and 208 total attendees. Hosts are grouped together in one room while the attendees are split into 16 person rooms.
 
-To support broadcasting and other producer tools, however, we *technically* support a total of **224 people per event**:
+Up to three hosts can broadcast simultaneously to show their avatar in and communicate to all attendee rooms.
 
-- `13` rooms per event
-- `208` attendees per event ⇒ `13 rooms` × `16 people`
-- `16` hosts per event
-- `224` total people in event ⇒ `208 attendees` + `16 hosts`
+Total breakdown of event capacity:
 
-⚠️ Note also that you can only have **3 event hosts broadcast at the same time.**
+- Total attendees per event: 208
+- Total hosts per event: 16
+- Host rooms per event: 1
+- Attendee rooms per event: 13
+- Number of **simultaneous** broadcasters per event: 3
 
 ## Event Producers tools
 
