@@ -1,5 +1,5 @@
 ---
-title: Add or update your environment
+title: Publish multiple environments from one Unity project
 description: Learn how to publish multiple environments from one Unity project using the Mesh Toolkit
 author: typride
 ms.author: iankudinova
