@@ -1,3 +1,5 @@
+# Add or update your environments
+
 ## Add more Environments for build and publish
 
 If you want to Build & Publish more than one Environment, click on **Add Environment Configuration** button and make sure you have the correct Environment and scene selected (you can see the details on the steps from [Configure the Environment for build and publish](https://github.com/MicrosoftDocs/mesh-docs-pr/blob/main/mesh/develop/make-your-environment-available-for-events/build-and-publish-your-environment.md#configure-the-environment-for-build-and-publish)).
