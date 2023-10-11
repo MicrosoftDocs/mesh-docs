@@ -1,6 +1,6 @@
 ---
-title: Avatars for Teams known issues
-description: Currently active known issues for Avatars for Teams
+title: Avatars in Teams known issues
+description: Currently active known issues for Avatars in Teams
 author: qianw211    
 ms.author: qianwen
 ms.date: 9/18/2023
@@ -8,7 +8,7 @@ ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
 
-# Active known issues - Avatars for Teams
+# Active known issues - Avatars in Teams
 
 ## September 18, 2023
 

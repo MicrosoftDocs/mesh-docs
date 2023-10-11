@@ -39,7 +39,7 @@ To participate in the public preview, you must agree to the terms of use and pri
 
 ## Verify Your Licensing
 
-For immersive spaces for Teams, your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5.
+For immersive spaces in Teams, your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5.
 
 For Microsoft Mesh, a Teams Premium license is required during the Public Preview. If you plan to use Mesh cloud scripting, you must also have an Azure subscription with storage.
 
@@ -74,7 +74,7 @@ for admins and users to manage accounts, may also incur additional
 expenses for licensing and domain management, and may require additional
 process within your organization.
 
-If you expect to use immersive spaces for Teams for users in
+If you expect to use immersive spaces in Teams for users in
 your production version of Teams, you will definitely want to provision
 your production tenant for Mesh Public Preview. While you can create other tenants
 for testing, people who use Teams throughout the day are highly unlikely
@@ -179,7 +179,7 @@ If your developers plan to build custom Mesh environments that will use [Mesh cl
 
 See [Set up Cloud Scripting infrastructure in Azure](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md) for more details on these requirements.
 
-## Work with Your Security Organization
+## Work with your organization's security team
 
 Before deploying any new app or service, you must consider the security
 implications and work closely with your security team to make sure you
@@ -217,9 +217,9 @@ For more information about service tags, see the [Azure service tags overview](/
 
 To learn more, see how to [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces).
 
-### Ensure endpoints can be allowed for Mesh avatars for Teams
+### Ensure endpoints can be allowed for Mesh avatars in Teams
 
-To ensure avatars for Teams works properly, allow the following
+To ensure avatars in Teams works properly, allow the following
 endpoints:
 *All endpoints need to allow traffic on TCP ports 80 and 443*:
 
@@ -229,7 +229,7 @@ endpoints:
 
 Follow this link to learn more about how to Set up avatars for Microsoft
 Teams.
-[Set up avatars for Microsoft Teams](/microsoftteams/meeting-avatars)
+[Set up avatars in Microsoft Teams](/microsoftteams/meeting-avatars)
 
 ### Ensure endpoints can be allowed for the Mesh app
 
@@ -308,7 +308,7 @@ before you deploy.
 When you first roll out the avatar feature in Teams, some users may need
 guidance on when it's good to use them, and not good to use them.
 Microsoft has published a blog on Avatar etiquette: [How Microsoft
-employees are using avatars for Microsoft Teams in their meetings](https://www.microsoft.com/insidetrack/blog/avatar-etiquette-how-microsoft-employees-are-using-avatars-for-microsoft-teams-in-their-meetings/). This
+employees are using avatars in Microsoft Teams in their meetings](https://www.microsoft.com/insidetrack/blog/avatar-etiquette-how-microsoft-employees-are-using-avatars-for-microsoft-teams-in-their-meetings/). This
 doc can help inform materials you might want to share with your users.
 
 ## Summary
@@ -322,7 +322,7 @@ others specific to your organization.
 ## Next steps with Mesh
 
 > [!div class="nextstepaction"]
-> [Get started with Avatars for Teams](https://support.microsoft.com/topic/5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
+> [Get started with Avatars in Teams](https://support.microsoft.com/topic/5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
 
 > [!div class="nextstepaction"]
 > [Register your interest in Mesh TAP](https://aka.ms/JoinMeshTAP)
