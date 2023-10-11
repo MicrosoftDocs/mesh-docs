@@ -3,3 +3,6 @@ items:
     href: build-and-publish-your-environment.md
   - name: Test your environment in the Mesh app
     href: test-your-environment.md
+  - name: Publish multiple environments
+    href: add-update-your-environments.md
+    
