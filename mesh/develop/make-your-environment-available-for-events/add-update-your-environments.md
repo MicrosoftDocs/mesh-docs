@@ -1,3 +1,13 @@
+---
+title: Add or update your environment
+description: Learn how to add or update environments in Unity using the Mesh toolkit
+author: typride
+ms.author: iankudinova
+ms.date: 10/11/2023
+ms.topic: Guide
+keywords: Microsoft Mesh, environment, Unity, build, publish, build and publish, uploader, Mesh uploader, thumbnail, filter
+---
+
 # Add or update your environments
 
 ## Add more Environments for build and publish
