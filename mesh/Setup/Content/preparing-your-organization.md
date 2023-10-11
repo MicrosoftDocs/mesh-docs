@@ -338,7 +338,7 @@ others specific to your organization.
 > [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces)
 
 > [!div class="nextstepaction"]
-> [Set up avatars in Teams](/microsoftteams/meeting-avatars)
+> [Set up avatars for Teams](/microsoftteams/meeting-avatars)
 
 [service-tag]: /azure/virtual-network/service-tags-overview
 [service-tag-api]: /azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api
