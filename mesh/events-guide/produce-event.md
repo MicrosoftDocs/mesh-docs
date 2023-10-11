@@ -14,7 +14,13 @@ keywords: Microsoft Mesh, Producing, M365, events, hosting, event producer, even
 
 **Customize before your event:** To ensure the event runs smoothly, ensure that you customize and save customizations at least 30 minutes before the event start time.
 
-**Event capacity:** An event can support up to 200 people, however only 16 people can be in the same room and interact spatially together. Use the broadcast feature to communicate with all participants.
+**Event capacity**
+- 200 attendees per event
+- 16 attendees per room
+- Up to 16 hosts in a separate room, additional to the 200 attendees
+
+> [!NOTE]
+> Only 3 event hosts can broadcast at the same time. 
 
 ## Event Producers tools
 
