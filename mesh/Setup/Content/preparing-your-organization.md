@@ -3,7 +3,7 @@ title: Preparing your organization for Mesh
 description: Prepare your organization to adopt Mesh and its features. Organize a team to manage setup and distribution.
 author: typride
 ms.author: tmilligan
-ms.date: 7/27/2023
+ms.date: 10/11/2023
 ms.topic: overview
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -332,10 +332,13 @@ others specific to your organization.
 ## Next steps with Mesh
 
 > [!div class="nextstepaction"]
-> [Get started with Avatars in Teams](https://support.microsoft.com/topic/5384e7b7-30c7-4bcb-8065-0c9e830cc8ad)
+> [Set up Microsoft Mesh](/mesh/setup/content/setup-m365-mesh)
 
 > [!div class="nextstepaction"]
-> [Prepare your organization for Immersive spaces (coming soon)](/microsoftteams/public-preview-doc-updates)
+> [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces)
+
+> [!div class="nextstepaction"]
+> [Set up avatars in Teams](/microsoftteams/meeting-avatars)
 
 [service-tag]: /azure/virtual-network/service-tags-overview
 [service-tag-api]: /azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api
