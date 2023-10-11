@@ -39,7 +39,7 @@ The Mesh toolkit for Unity provides a collection of features that enable you to 
 
 * [Mesh play mode](debug-and-optimize-performance/playmode.md), which lets you press Play in a Mesh content project to preview how your content will look like running in Mesh for multiple users.
 
-* [Mesh uploader](make-your-environment-available-for-events/build-and-publish-your-environment.md), used to build Mesh-compatible asset bundles from your Unity content and upload them to your Mesh World.
+* [Mesh uploader](make-your-environment-available/build-and-publish-your-environment.md), used to build Mesh-compatible asset bundles from your Unity content and upload them to your Mesh World.
 
 * [Mesh Content Performance Analyzer](debug-and-optimize-performance/cpa.md) (CPA): automatically reports content optimization issues and opportunities before content is uploaded to the Mesh catalog.
 

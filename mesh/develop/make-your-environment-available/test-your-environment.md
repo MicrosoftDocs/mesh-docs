@@ -54,4 +54,8 @@ As you continue to work on building your environment, your developer template is
 
 ## Next steps
 
-[Create and customize an event based on your Environment](../../../mesh/events-guide/events-overview.md)
+> [!div class="nextstepaction"]
+> [Create and customize an event based on your environment](../../../mesh/events-guide/events-overview.md)
+
+> [!div class="nextstepaction"]
+> [Publish multiple environments](./publish-multiple-environments.md)

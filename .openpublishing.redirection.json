@@ -85,7 +85,7 @@
 		},
 		{
 			"source_path": "mesh/develop/debug-and-optimize-performance/test-your-environment.md",
-			"redirect_url": "/mesh/develop/make-your-environment-available-for-mesh/test-your-environment",
+			"redirect_url": "/mesh/develop/make-your-environment-available/test-your-environment",
 			"redirect_document_id": false
 		}
 	]
