@@ -86,7 +86,7 @@ To learn how, see [Create event template](create-template.md).
 
 When it's time for your event, join in Mesh and leverage a set of host tools to interact with participants, and curate your event experience.'
 
-:::image type="content" source="../media/mesh-event-producer-guide/Host-panel-button-overview.png" alt-text="Host panel button to see participant list and tools":::
+:::image type="content" source="../media/mesh-event-producer-guide/Host-panel-button-overview2.png" alt-text="Host panel button to see participant list and tools":::
 
 > [!div class="nextstepaction"]
 > [Produce your event](produce-event.md)

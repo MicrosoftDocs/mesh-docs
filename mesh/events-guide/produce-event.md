@@ -53,7 +53,7 @@ Once you select **Join now**, you'll utilize two main tools for your run of show
 
 1. Select the **Host Panel** button in the menu bar.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Host-panel-button-overview.png" alt-text="Host panel button to see participant list and tools":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Host-panel-button-overview2.png" alt-text="Host panel button to see participant list and tools":::
 
 1. In the window that opens, you'll see the following tools at the top:
 
