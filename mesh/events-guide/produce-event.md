@@ -63,7 +63,7 @@ Once you select **Join now**, you'll utilize two main tools for your run of show
   
     :::image type="content" source="../media/mesh-event-producer-guide/Megaphone-button.png" alt-text="Megaphone button in host panel":::
 
-- **Broadcast:** Broadcast your avatar to all rooms in a multi-room event. 
+- **Broadcast:** Broadcast your avatar to all rooms in a multi-room event.
   
     :::image type="content" source="../media/mesh-event-producer-guide/Broadcast-button.png" alt-text="Boradcast button in a Mesh event in the host panel":::
 
