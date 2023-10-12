@@ -60,7 +60,7 @@ You can also select and setup your audio devices in the **Settings** dialog, **D
 
 ![A screenshot of the Settings dialog](media/settings-audio-devices.png)
 
-Learn more about frequently asked questions related to audio in Mesh [here](../Resources/mesh-troubleshooting.md#audio-setup-in-mesh).
+Learn more about frequently asked questions related to audio in Mesh [here](../Resources/mesh-troubleshooting.md#audio-setup-in-mesh-faq).
 
 ### Participants
 
@@ -100,7 +100,7 @@ Select **Customize** to fine tune your Avatar's appearance while in an event!
 
 To find out about another participant in your event, click the nametag above an avatar, and then select the **Contact card** icon.
 
-![](media/image096.png)
+![screenshot of the name card contact info button](media/name-card.png)
 
 ## Next steps
 
@@ -111,4 +111,4 @@ To find out about another participant in your event, click the nametag above an 
    > [Join an event](join-an-event.md)
 
    > [!div class="nextstepaction"]
-   > [Create an event](events-guide/create-event.md)
+   > [Create an event](events-guide/create-event-mesh-portal.md)

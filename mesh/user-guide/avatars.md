@@ -40,7 +40,7 @@ Select your desired avatar that looks closest to you and click **Use Avatar**. Y
 
 Once you're inside Mesh, hover over your **Profile** bubble and select **Customize** to start customizing your avatar at any time. 
 
-![A screenshot of the Profile menu](media/profile-customize.png)
+![A screenshot of the Profile menu highlighting the customize button](media/profile-customize.png)
 
 There's a horizontal menu bar on top with five options: **Body**, **Face**, **Hair**, **Appearance**, and **Wardrobe**.
 
