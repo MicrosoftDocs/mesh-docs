@@ -14,7 +14,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 The Mesh Dashboard displays all Mesh events available to you. The Mesh Dashboard is the main interface you can use to explore what Mesh has to offer.
 
-The Dashboard is viewable using the Mesh App on PC or Quest.
+The Dashboard is viewable using the Mesh app on PC or Quest.
 
 ![A screenshot of the Mesh dashboard](media/mesh-dashboard.png)
 
@@ -28,7 +28,7 @@ The Dashboard is viewable using the Mesh App on PC or Quest.
 You can look around, walk, run, teleport around, or just sit at the
 table with other avatars. To move around, press the **WASD** keys.
 
-![A infograph that summarizes all the mouse and keyboard keys for moving around](media/image079.jpg)
+![A infograph that summarizes all the mouse and keyboard keys for moving around](media/mouse-key-board.jpg)
 
 **Other keyboard controls:**
 
@@ -41,7 +41,7 @@ table with other avatars. To move around, press the **WASD** keys.
 
 Here are some keyboard shortcuts for moving around in your event:
 
-![A screenshot of the Settings dialog showing Keyboard shortcuts](media/image080.png)
+![A screenshot of the Settings dialog showing Keyboard shortcuts](media/settings-dialog-short-cut-keys.png)
 
 ## Mesh controls overview
 
@@ -60,7 +60,7 @@ You can also select and setup your audio devices in the **Settings** dialog, **D
 
 ![A screenshot of the Settings dialog](media/settings-audio-devices.png)
 
-Learn more about frequently asked questions related to audio in Mesh [here](../Resources/mesh-troubleshooting.md#audio-setup-in-mesh).
+Learn more about frequently asked questions related to audio in Mesh [here](../Resources/mesh-troubleshooting.md#audio-setup-in-mesh-faq).
 
 ### Participants
 
@@ -84,23 +84,23 @@ Selecting on the photo icon in the menu will take you to the SharePoint folder w
 In the app bar, you can trigger **Reactions**, that cause your avatar to
 react with body gestures as well as emotes.
 
-![A screenshot of emote menu](media/image090.png)
+![A screenshot of emote menu](media/emote-menu.png)
 
 ### Profile
 
 The **Profile** button in the lower right corner gives you access to your personal details and avatar customization options.
 
-![A screenshot of the profile menu](media/image092.png)
+![A screenshot of the profile menu](media/profile-menu.png)
 
 Select **Customize** to fine tune your Avatar's appearance while in an event!
 
-![A screenshot of the Avatar customization dialog](media/image035.png)
+![A screenshot of the Avatar customization dialog](media/avatars-customization-dialog.png)
 
 ### Nametag and contact card
 
 To find out about another participant in your event, click the nametag above an avatar, and then select the **Contact card** icon.
 
-![](media/image096.png)
+![screenshot of the name card contact info button](media/name-card.png)
 
 ## Next steps
 
@@ -111,4 +111,4 @@ To find out about another participant in your event, click the nametag above an 
    > [Join an event](join-an-event.md)
 
    > [!div class="nextstepaction"]
-   > [Create an event](events-guide/create-event.md)
+   > [Create an event](../events-guide/create-event-mesh-portal.md)
