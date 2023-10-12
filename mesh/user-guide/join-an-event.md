@@ -87,7 +87,7 @@ You can now view content, communicate with other users, listen to guests speakin
 
 You can interact with any games, puzzles, or interactive elements in the event environment.
 
-![](media/image135.png)
+![an image of the Meadows meeting space](media/the-meadows-meeting-space.png)
 
 ## Next steps
 
