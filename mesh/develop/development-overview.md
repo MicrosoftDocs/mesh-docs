@@ -1,6 +1,6 @@
 ---
 title: Mesh Development overview
-description: Development for Mesh using Unity.
+description: Development overview for Mesh using Unity.
 author: typride
 ms.author: vinnietieto
 ms.date: 10/02/2023
