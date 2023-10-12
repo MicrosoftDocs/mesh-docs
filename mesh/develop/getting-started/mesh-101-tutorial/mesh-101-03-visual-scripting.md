@@ -4,7 +4,7 @@ description: Learn adding about adding interactivity to objects with Mesh Visual
 author: typride
 ms.author: vinnietieto
 ms.date: 9/25/2023
-ms.prod: microsoft-mesh
+ms.prod: mesh
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
 ---
