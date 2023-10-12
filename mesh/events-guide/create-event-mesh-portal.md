@@ -1,6 +1,7 @@
 ---
 title: Create event in Mesh portal
 description: Guide to creating an event in Mesh.
+ms.prod: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 7/27/2023
