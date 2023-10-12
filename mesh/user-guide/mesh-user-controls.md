@@ -111,4 +111,4 @@ To find out about another participant in your event, click the nametag above an 
    > [Join an event](join-an-event.md)
 
    > [!div class="nextstepaction"]
-   > [Create an event](events-guide/create-event-mesh-portal.md)
+   > [Create an event](../events-guide/create-event-mesh-portal.md)
