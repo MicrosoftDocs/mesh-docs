@@ -1,3 +1,15 @@
+---
+title: Add or update your environment
+description: Learn how to add or update environments in Unity using the Mesh toolkit
+author: typride
+ms.author: iankudinova
+ms.date: 10/11/2023
+ms.topic: Guide
+keywords: Microsoft Mesh, environment, Unity, build, publish, build and publish, uploader, Mesh uploader, thumbnail, filter
+---
+
+# Add or update your environments
+
 ## Add more Environments for build and publish
 
 If you want to Build & Publish more than one Environment, click on **Add Environment Configuration** button and make sure you have the correct Environment and scene selected (you can see the details on the steps from [Configure the Environment for build and publish](https://github.com/MicrosoftDocs/mesh-docs-pr/blob/main/mesh/develop/make-your-environment-available-for-events/build-and-publish-your-environment.md#configure-the-environment-for-build-and-publish)).
