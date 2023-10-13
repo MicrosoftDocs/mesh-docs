@@ -40,11 +40,11 @@ Select your desired avatar that looks closest to you and click **Use Avatar**. Y
 
 Once you're inside Mesh, hover over your **Profile** bubble and select **Customize** to start customizing your avatar at any time. 
 
-![A screenshot of the Profile menu](media/profile-customize.png)
+![A screenshot of the Profile menu highlighting the customize button](media/profile-customize.png)
 
 There's a horizontal menu bar on top with five options: **Body**, **Face**, **Hair**, **Appearance**, and **Wardrobe**.
 
-![A screenshot of the avatars customization dialog](media/image117.png)
+![A screenshot of the avatars customization dialog](media/avatars-customization-dialog.png)
 
 For details on how you can customize your avatars, see [Customize your avatars](https://support.microsoft.com/en-us/topic/be6a9703-f03d-4eb5-9908-995fdc5c91a8).
 
