@@ -1,6 +1,7 @@
 ---
 title: Troubleshooting
-description: Learn how to access down known issues and release notes when designing for  Mesh.
+description: Learn how to access down known issues and release notes when designing for Mesh.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 9/26/2023

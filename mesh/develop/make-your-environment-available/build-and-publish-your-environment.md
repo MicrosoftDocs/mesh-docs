@@ -1,6 +1,7 @@
 ---
 title: Build and publish your environment
 description: Learn how to turn your environment into an Asset and then publish it in the Mesh Portal.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 9/12/2023

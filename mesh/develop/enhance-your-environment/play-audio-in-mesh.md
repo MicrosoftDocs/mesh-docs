@@ -1,6 +1,7 @@
 ---
 title: Play audio in Mesh
 description: Learn how to work with a Unity AudioSource or the Mesh Audio Manager to generate audio in Mesh.
+ms.service: mesh
 author: joekellyms
 ms.author: vinnietieto
 ms.date: 10/4/2023

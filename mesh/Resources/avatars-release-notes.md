@@ -1,7 +1,7 @@
 ---
 title: Avatars in Microsoft Teams - What's new
 description: Avatars in Microsoft Teams - Latest feature release 
-ms.service: mixed-reality
+ms.service: mesh
 author: qianw211
 ms.author: qianwen
 ms.date: 10/7/2023

@@ -2,6 +2,7 @@
 title: Model textures
 description: Learn about working with textures when designing for Mesh.
 author: typride
+ms.service: mesh
 ms.author: vinnietieto
 ms.date: 9/26/2023
 ms.topic: Guide

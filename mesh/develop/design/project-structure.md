@@ -1,6 +1,7 @@
 ---
 title: Project structure
 description: Learn about naming and folder structures when setting up a project for Mesh.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 9/26/2023

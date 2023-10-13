@@ -1,6 +1,7 @@
 ---
 title: Display and interact with web content
 description: Learn how to display Web content in Mesh Environments.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 10/3/2023

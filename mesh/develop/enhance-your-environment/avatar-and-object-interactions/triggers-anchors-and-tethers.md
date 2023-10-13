@@ -1,6 +1,7 @@
 ---
 title: Triggers, anchors and tethers
 description: Learn how to anchor an avatar inside an object's trigger volume and tether an object to an avator's transform.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 10/6/2023

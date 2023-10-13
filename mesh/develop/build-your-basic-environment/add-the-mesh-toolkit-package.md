@@ -1,6 +1,7 @@
 ---
 title: Add the Mesh Toolkit package
 description: Instructions for adding the Mesh Toolkit package to your project.
+ms.service: mesh
 author: typride
 ms.author: jbrentj
 ms.date: 10/4/2023

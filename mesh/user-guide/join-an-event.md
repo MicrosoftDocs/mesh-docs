@@ -1,6 +1,7 @@
 ---
 title: Join an event
 description: Joining an event in Mesh
+ms.service: mesh
 author: qianw211    
 ms.author: qianwen
 ms.date: 10/7/2023
