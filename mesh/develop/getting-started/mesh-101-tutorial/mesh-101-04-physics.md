@@ -257,5 +257,5 @@ your experience to do the following:
 
 > [!div class="nextstepaction"]
 
-> [Chapter 5: Make your environment available for Events](mesh-101-05-make-environment-available.md)
+> [Chapter 5: Make your environment available for testing](mesh-101-05-make-environment-available.md)
 
