@@ -58,7 +58,7 @@ Follow the steps below to see a list of events and join an event.
     >[!Note] 
     >In the Mesh app on PC, the Windows default speaker will always be used by Mesh. You can change the speaker settings in the Windows **Settings** -\> **System** -\> **Sound settings** dialog box.
 
-    Learn more about frequently asked questions related to audio in Mesh [here](../Resources/mesh-troubleshooting.md#audio-setup-in-mesh).
+    Learn more about frequently asked questions related to audio in Mesh [here](../Resources/mesh-troubleshooting.md#audio-setup-in-mesh-faq).
 
 # [Quest](#tab/quest)
 
@@ -87,7 +87,7 @@ You can now view content, communicate with other users, listen to guests speakin
 
 You can interact with any games, puzzles, or interactive elements in the event environment.
 
-![](media/image135.png)
+![an image of the Meadows meeting space](media/the-meadows-meeting-space.png)
 
 ## Next steps
 
