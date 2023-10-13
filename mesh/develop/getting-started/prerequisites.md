@@ -6,7 +6,7 @@ ms.author: vinnietieto
 ms.date: 10/2/2023
 ms.topic: overload
 ms.prod: mesh
-keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features, prerequisites
+keywords: Microsoft Mesh, prerequisites, getting started, Unity, license
 ---
 
 # Prerequisites for Mesh Development

@@ -140,7 +140,7 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
    ![img](../../../media/mesh-scripting/getting-started/UploaderUpdateUIProjectSettings.png)
 
-1. In the **Mesh Environments** window, on the **Update Environment** tab, select **Build & Publish**. To learn more about the Mesh Environments window, see how to [build and publish your Environment](../../make-your-environment-available-for-events/build-and-publish-your-environment.md)
+1. In the **Mesh Environments** window, on the **Update Environment** tab, select **Build & Publish**. To learn more about the Mesh Environments window, see how to [build and publish your environment](../../make-your-environment-available/build-and-publish-your-environment.md)
 
    ![img](../../../media/mesh-scripting/getting-started/001-update-environment-tab.png)
 
