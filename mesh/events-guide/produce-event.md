@@ -12,16 +12,22 @@ keywords: Microsoft Mesh, Producing, M365, events, hosting, event producer, even
 
 ## Considerations before starting your event
 
-**Customize before your event:** To ensure the event runs smoothly, ensure that you customize and save customizations at least 30 minutes before the event start time.
+### Customize **before** your event
+To ensure the event runs smoothly, ensure that you customize and save customizations at least 30 minutes before the event start time.
 
-**Event capacity:** An event can support up to 200 people, however only 16 people can be in the same room and interact spatially together. Use the broadcast feature to communicate with all participants.
+### Event capacity
+
+- 200 attendees per event
+- 16 attendees per room
+- Up to 16 hosts in a separate room, additional to the 200 attendees
+
+> [!NOTE]
+> Only 3 event hosts can broadcast at the same time. 
 
 ## Event Producers tools
 
-- **Host Panel:** See the participants in your event and use the host panel toolbar to access the *Mute all*, *Megaphone*, *Broadcast*, and  *Share* buttons.
-
+- **Host Panel:** See the participants in your event and use the host panel toolbar to access the *Mute all*, *Megaphone*, *Broadcast*, and  *Share* buttons
 - **Control Panel:** Control the elements you add to the environment with scripted sequences of events. Imagine a curtain raise to signal the start of the event!
-
 - **Event templates:**  Create a template of your event with all customizations that you add to reuse in future events
 
 ## Producing your event
@@ -47,7 +53,7 @@ Once you select **Join now**, you'll utilize two main tools for your run of show
 
 1. Select the **Host Panel** button in the menu bar.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/host-panel-open2.png" alt-text="Host panel button for producing an event":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Host-panel-button-overview2.png" alt-text="Host panel button to see participant list and tools":::
 
 1. In the window that opens, you'll see the following tools at the top:
 
@@ -56,19 +62,19 @@ Once you select **Join now**, you'll utilize two main tools for your run of show
 ### Host Panel tools
 
 - **Mute all:** Mute all participants in the event.
-  
+
     :::image type="content" source="../media/mesh-event-producer-guide/Mute-all-button.png" alt-text="Mute all button in host panel":::
 
 - **Megaphone:** Amplify your voice to all participants in the event.
-  
+
     :::image type="content" source="../media/mesh-event-producer-guide/Megaphone-button.png" alt-text="Megaphone button in host panel":::
 
-- **Broadcast:** Broadcast your avatar to all rooms in a multi-room event. 
-  
+- **Broadcast:** Broadcast your avatar to all rooms in a multi-room event.
+
     :::image type="content" source="../media/mesh-event-producer-guide/Broadcast-button.png" alt-text="Boradcast button in a Mesh event in the host panel":::
 
 - **Share:** Share your screen to the event.
-  
+
     :::image type="content" source="../media/mesh-event-producer-guide/Share-button.png" alt-text="Share button in host panel":::
 
 ### Host Panel participant panel
