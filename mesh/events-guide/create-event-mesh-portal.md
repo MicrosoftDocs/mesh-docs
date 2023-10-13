@@ -1,7 +1,7 @@
 ---
 title: Create event in Mesh portal
 description: Guide to creating an event in Mesh.
-ms.prod: microsoft-mesh
+ms.prod: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 7/27/2023
@@ -27,6 +27,29 @@ For example, when you create an event in the Mesh portal you have the option to 
 Should you want to create a template, customize, and reuse it, see how to [Create an Event template](create-template.md).
 
 Read on to learn how to create a single event.
+
+## Considerations before your event
+
+Consider the following time and capacity constraints when creating your Mesh event or Event template.
+
+### Time constraints for Mesh events
+
+- Single room events (16 people max): 24-hour time limit.
+
+- Multi-room events (200 people max): 3-hour time limit.
+
+### Event capacity
+
+- 200 attendees per event
+- 16 attendees per room
+- Up to 16 hosts in a separate room, additional to the 200 attendees
+
+> [!NOTE]
+> Only 3 event hosts can broadcast at the same time.
+
+### Customize **before** your event
+
+To ensure the event runs smoothly, ensure that you customize and save customizations at least 30 minutes before the event start time.
 
 ## Create an event
 
