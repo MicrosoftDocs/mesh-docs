@@ -57,7 +57,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 1. Content limitations: PowerPoint Live and Whiteboard are not supported. If a meeting participant is using Powerpoint Live, it will not display on the immersive space stage. Same for whiteboard.
 1. If a meeting is being recorded, only the audio of immersive participants in the meeting zone will be recorded. Those holding side conversations outside the meeting zone will not be in the meeting recording.
-1. Mesh immersive space in Teams today can take up to a minute to load. Be patient as we improve the performance of the app. 
+1. Mesh immersive space in Teams today can take up to a minute to load. Thank you for your patience while we improve app performance. 
 1. When you share content while already in an immersive space, you will not see your own content on the virtual stage. Other meeting participants will be able to see it on the main stage.
 1. Chat in Quest can’t render images, only text. In addition, texts don’t wrap in both the chat and the feedback form on Quest.
 1. Mesh immersive spaces doesn't support cross-tenant calls.
