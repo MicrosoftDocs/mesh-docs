@@ -5,7 +5,7 @@ author: typride
 ms.author: vinnietieto
 ms.date: 10/02/2023
 ms.topic: Guide
-ms.prod: mesh
+ms.service: mesh
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
