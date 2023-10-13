@@ -1,9 +1,7 @@
 items:
-  - name: Test your environment within the Mesh app
-    href: test-your-environment.md
+  - name: Mesh Play Mode testing in Unity
+    href: playmode.md
   - name: Performance guidelines
     href: performance-guidelines.md
-  - name: Playmode
-    href: playmode.md
   - name: Content Performance Analyzer
     href: cpa.md
