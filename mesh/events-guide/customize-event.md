@@ -75,7 +75,6 @@ To learn more about creating an Event template, see how to [Create event templat
 
     :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-entrypoint-event-details.png" alt-text="Customize button in the event details window":::
 
-
 ## Customize Event experience
 
 Now that you've created an event and joined the Event customization experience, it's time customize it in the [Microsoft Mesh app](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7) and add any run-of-show tools you'd like to use.
@@ -106,7 +105,7 @@ Currently, the three artifacts that you can add to your event are **Video**, **S
 
 :::image type="content" source="../media/mesh-event-producer-guide/environment-editor-artifacts-no-text.jpg" alt-text="Video, screenshare, image artifacts in the environment editor":::
 
-### Add content with the Environment editor
+### Start adding content
 
 Use the environment editor to add content to your environment that can be controlled during your run-of-show.
 
