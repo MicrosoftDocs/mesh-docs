@@ -17,7 +17,7 @@ Event templates can be created directly in Microsoft Mesh app, or created from a
 
 ## Event template creation flow
 
-1. [**Create** your Event template directly](#create-event-template-in-microsoft-mesh) or Create a template from an existing event.
+1. [**Create** your Event template directly](#create-event-template-in-microsoft-mesh) or [Create a template from an existing event](#create-event-template-from-an-existing-event).
 
 1. **Customize** your Event template using the Customize event experience.
 
