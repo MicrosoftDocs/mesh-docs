@@ -154,14 +154,14 @@ By default, Mesh Playmode runs with a single player. To add a second player with
 
 ## General tips for building Mesh Physics experiences
 
-You can start with scanning the Unity physics docs: `https://docs.unity3d.com/Manual/PhysicsOverview.html`. There are plenty of resources available on how to optimize physics in Unity.
+You can start with [scanning the Unity physics docs](https://docs.unity3d.com/Manual/PhysicsOverview.html). There are plenty of resources available on how to optimize physics in Unity.
 
 Mesh Physics comes with some extra challenges:
 
 * **Make thick walls:** Network synchronization might move rigid bodies slightly. As a result, you will see some extra penetration between objects. Small dynamic bodies might get pushed through thin walls. For thicker objects and walls, these tunneling effects are less likely. So, if possible:
 * Use convex hull or a small set of convex hulls for dynamic bodies
 * Whenever possible, use thick convex pieces for static geometry. Try to avoid meshes, especially highly dense meshes.
-* **CPU limitations:** MeshXP runs inside a browser; as a result, its performance is limited. Try to use only a few dozen rigid bodies.
+
 * **Realistic masses in kg:** Content from various sources might interact in the same scene. This works well if the mass ratios between the objects are reasonable. A good starting point is to assign realistic masses to bodies using kg.
 
 ## Developing enhanced Mesh Physics content
