@@ -5,7 +5,7 @@ author: typride
 ms.author: vinnietieto
 ms.date: 10/5/2023
 ms.topic: overview
-keywords: Microsoft Mesh, M365, getting started, documentation, samples, toolkit
+keywords: Microsoft Mesh, getting started, samples, toolkit, Mesh toolkit, tutorial
 ---
 
 # Download Mesh samples
