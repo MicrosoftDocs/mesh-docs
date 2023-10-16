@@ -1,6 +1,7 @@
 ---
 title: Mesh user controls
 description: What you can do when you have joined an event
+ms.service: mesh
 author: qianw211    
 ms.author: qianwen
 ms.date: 10/4/2023

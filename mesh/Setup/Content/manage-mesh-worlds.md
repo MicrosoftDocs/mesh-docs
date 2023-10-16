@@ -1,6 +1,7 @@
 ---
 title: Manage Mesh worlds
 description: Manage Mesh worlds to contain your environments and templates.
+ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 7/27/2023

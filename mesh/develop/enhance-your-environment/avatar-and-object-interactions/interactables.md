@@ -1,6 +1,7 @@
 ---
 title: Grab, hold and throw with Interactables
 description: Learn how to create grab, hold, and throw interactions between avatars and objects using components and scripts.
+ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
 ms.date: 10/4/2023

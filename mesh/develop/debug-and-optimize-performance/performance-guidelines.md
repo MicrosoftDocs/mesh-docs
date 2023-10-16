@@ -5,7 +5,7 @@ author: typride
 ms.author: tmilligan
 ms.date: 10/2/2023
 ms.topic: Guide
-ms.prod: mesh
+ms.service: mesh
 keywords: Microsoft Mesh, getting started, performance, content performance analzyer, visual profile, stats
 ---
 

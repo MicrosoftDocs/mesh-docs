@@ -1,6 +1,7 @@
 ---
 title: Create avatar spawn and teleport points
 description: Learn how to create points that an avatar will spawn to or travel to when using teleportation.
+ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
 ms.date: 10/9/2023

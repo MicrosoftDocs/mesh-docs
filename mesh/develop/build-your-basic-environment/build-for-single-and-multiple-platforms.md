@@ -5,7 +5,7 @@ author: typride
 ms.author: vinnietieto
 ms.date: 10/3/2023
 ms.topic: How to
-ms.prod: mesh
+ms.service: mesh
 keywords: Microsoft Mesh, Unity, getting started, platform, Quest, Android, new project
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Publish multiple environments from one Unity project
 description: Learn how to publish multiple environments from one Unity project using the Mesh Toolkit
+ms.service: mesh
 author: typride
 ms.author: iankudinova
 ms.date: 10/11/2023

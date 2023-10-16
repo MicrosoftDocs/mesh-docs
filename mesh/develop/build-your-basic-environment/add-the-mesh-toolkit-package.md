@@ -1,8 +1,9 @@
 ---
 title: Add the Mesh Toolkit package
 description: Instructions for adding the Mesh Toolkit package to your project.
+ms.service: mesh
 author: typride
-ms.author: jbrentj
+ms.author: jejacks
 ms.date: 10/4/2023
 ms.topic: overview
 keywords: Microsoft Mesh, getting started, toolkit, Mesh toolkit, import, registry, scoped registry, packages

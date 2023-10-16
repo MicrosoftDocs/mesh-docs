@@ -4,7 +4,7 @@ description: Learn how to use the Content Performance analyzer to optimize your 
 author: Cameron-Micka
 ms.author: vinnietieto
 ms.date: 10/4/2023
-ms.prod: mesh
+ms.service: mesh
 ms.topic: How to
 keywords: Microsoft Mesh, Unity, performance, resources
 ---

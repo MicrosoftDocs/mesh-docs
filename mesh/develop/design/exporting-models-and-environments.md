@@ -1,6 +1,7 @@
 ---
 title: Exporting models and environments
 description: Learn about exporting models and environments for use in Mesh.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 9/26/2023

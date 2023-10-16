@@ -1,6 +1,7 @@
 ---
 title: Cloud scripting getting started
 description: Get started with Cloud Scripting for Mesh.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 8/28/2023
