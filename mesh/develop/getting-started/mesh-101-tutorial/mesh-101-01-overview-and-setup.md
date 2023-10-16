@@ -1,6 +1,7 @@
 ---
 title: Mesh 101 Overview and setup
 description: Learn about the prerequsites and setup process for the Mesh 101 tutorial project.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 9/27/2023
@@ -45,11 +46,11 @@ The tutorial is structured as follows:
   - Station 4.2: Animation Trigger
   - Station 4.3: Constraining Bodies
 
-- [Chapter 5: Make your Environment available for Events](mesh-101-05-make-environment-available.md)
+- [Chapter 5: Make your environment available for Events](mesh-101-05-make-environment-available.md)
 
 - [Chapter 6: Test your environment within the Mesh app](mesh-101-06-test-your-environment.md)
 
-- [Chapter 7: Create an Event and invite others](mesh-101-07-create-an-event-and-invite-others.md)
+- [Chapter 7: Create an event and invite others](mesh-101-07-create-an-event-and-invite-others.md)
 
 ## Terminology
 

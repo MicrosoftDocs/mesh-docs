@@ -1,6 +1,7 @@
 ---
 title: Events overview
 description: Overview of Events in Mesh 
+ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 9/07/2023

@@ -1,6 +1,7 @@
 ---
 title: UVs and lightmaps
 description: Learn about working with UVs and lightmaps when designing for Mesh.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 9/26/2023

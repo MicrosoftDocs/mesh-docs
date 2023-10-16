@@ -1,6 +1,7 @@
 ---
 title: Test your environment within the Mesh app
 description: Learn how to test your environment with a developer template.
+ms.service: mesh
 author: thetuvix
 ms.author: alexturn
 ms.date: 10/5/2023
@@ -10,7 +11,7 @@ keywords: Microsoft Mesh, testing, troubleshooting, performance, optimizing
 
 # Test your environment within the Mesh app
 
-While [Mesh Play mode](playmode.md) is great for trying out your environment as you build it, at some point you'll want to see how your creation feels and performs in a headset or with multiple human attendees. At that point, it's time to launch the Mesh app and create a **developer template** you can use to test and iterate on your environment.
+While [Mesh Play Mode](../debug-and-optimize-performance/playmode.md) is great for trying out your environment as you build it, at some point you'll want to see how your creation feels and performs in a headset or with multiple human attendees. At that point, it's time to launch the Mesh app and create a **developer template** you can use to test and iterate on your environment.
 
 ## Testing your environment in Mesh
 
@@ -51,3 +52,11 @@ Others can join you in testing your developer template by launching the Mesh app
 ## Testing new iterations of your environment
 
 As you continue to work on building your environment, your developer template is always ready for you. When you publish an update to your environment, come back to the Mesh app, then click **Manage event templates**, and then click **Customize** again to view your new changes.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Create and customize an event based on your environment](../../../mesh/events-guide/events-overview.md)
+
+> [!div class="nextstepaction"]
+> [Publish multiple environments](./publish-multiple-environments.md)

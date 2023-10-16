@@ -1,6 +1,7 @@
 ---
 title: Mesh 101 Move objects and trigger animations
 description: Learn how to move objects and trigger animations with Mesh Interactables and Physics.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 9/28/2023
@@ -257,5 +258,5 @@ your experience to do the following:
 
 > [!div class="nextstepaction"]
 
-> [Chapter 5: Make your environment available for Events](mesh-101-05-make-environment-available.md)
+> [Chapter 5: Make your environment available for testing](mesh-101-05-make-environment-available.md)
 

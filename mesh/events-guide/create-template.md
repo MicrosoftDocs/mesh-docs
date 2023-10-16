@@ -1,6 +1,7 @@
 ---
 title: Create event template in Microsoft Mesh
 description: Guide to creating a template for events in Microsoft Mesh
+ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 10/05/2023
