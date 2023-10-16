@@ -1,6 +1,7 @@
 ---
 title: Produce event in Mesh
 description: Guide to producing an event in Mesh.
+ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 9/07/2023

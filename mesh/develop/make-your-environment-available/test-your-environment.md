@@ -1,6 +1,7 @@
 ---
 title: Test your environment within the Mesh app
 description: Learn how to test your environment with a developer template.
+ms.service: mesh
 author: thetuvix
 ms.author: alexturn
 ms.date: 10/5/2023

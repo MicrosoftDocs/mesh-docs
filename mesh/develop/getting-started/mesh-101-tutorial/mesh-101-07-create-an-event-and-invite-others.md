@@ -1,6 +1,7 @@
 ---
 title: Mesh 101 Create an event and invite others
 description: Learn how to create an event and invite others.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 10/5/2023

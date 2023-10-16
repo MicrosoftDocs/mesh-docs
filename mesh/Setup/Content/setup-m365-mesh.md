@@ -1,6 +1,7 @@
 ---
 title: Set up Microsoft Mesh
 description: Set up Microsoft Mesh with M365.
+ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 7/27/2023

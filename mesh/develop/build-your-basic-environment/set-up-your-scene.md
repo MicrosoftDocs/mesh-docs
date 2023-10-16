@@ -4,7 +4,7 @@ description: Learn how to set up a scene in Unity for Mesh development.
 author: vtieto
 ms.author: vinnietieto
 ms.date: 10/10/2023
-ms.prod: mesh
+ms.service: mesh
 ms.topic: How to
 keywords: Microsoft Mesh, Unity, getting started, Unity, scene, teleportation, navmesh, travelpoint, travelgroup
 ---

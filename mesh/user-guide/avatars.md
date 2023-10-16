@@ -1,6 +1,7 @@
 ---
 title: Personalize your avatars
 description: Represent yourself in Mesh events as an avatar
+ms.service: mesh
 author: qianw211    
 ms.author: qianwen
 ms.date: 10/7/2023
