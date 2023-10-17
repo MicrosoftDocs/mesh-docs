@@ -76,7 +76,7 @@ To use the Visual Profiler, add the *Visual Profiler* component to any GameObjec
  > [!IMPORTANT]
  > If you're using Playmode and have the Playmode Setup component in your scene, make sure the **Initial Screen Count** setting is zero. If it's "1" or higher, you won't see the Visual Profiler.
 
- ![A screen shot of a number Description automatically generated](../../media/debug-and-optimize/001-playmode-count-one.png)
+ ![A screen shot of a number Description automatically generated aaa](../../media/debug-and-optimize/001-playmode-count-one.png)
 
 **Usage of the Visual Profiler**
 
