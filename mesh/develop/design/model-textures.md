@@ -38,7 +38,7 @@ All tiling textures should be authored left to right.
 
 ![A screen shot of a number Description automatically generated aa](../../media/3d-design-performance-guide/image028.png)
 
-![](../../media/3d-design-performance-guide/image029.png)
+![A screen shot of a number Description automatically generated aac](../../media/3d-design-performance-guide/image029.png)
 
 ## Unity model importer
 
