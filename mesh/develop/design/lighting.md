@@ -1,5 +1,5 @@
 ---
-title: Design for Mesh overview
+title: Design - lighting concepts
 description: Learn about how lighting concepts when designing for Mesh.
 ms.service: mesh
 author: typride
@@ -16,7 +16,7 @@ For Microsoft Mesh environments, utilize Unity Baked Lighting.
 To include a mesh object in the light bake, make sure you check the
 **Static** checkbox in the **Inspector**.
 
-![](../../media/3d-design-performance-guide/image043.png) 
+![A screen shot of a number Description automatically generated](../../media/3d-design-performance-guide/image043.png) 
 
 All Unity light types are available when
 using baked lighting.
@@ -27,12 +27,12 @@ supported for use in the environment.**
 To include a mesh object in the light bake, make sure you check the
 **Static** checkbox in the **Inspector**.
 
-![](../../media/3d-design-performance-guide/image044.png) 
+![A screen shot of a number Description automatically generated a](../../media/3d-design-performance-guide/image044.png) 
 
 If this isn't checked, lighting won't be
 applied to the mesh, nor will it cast any shadows in the scene.
 
-![](../../media/3d-design-performance-guide/image045.png)
+![A screen shot of a number Description automatically generated aa](../../media/3d-design-performance-guide/image045.png)
 
 
 The Scale in Lightmap value increases/decreases the size of the selected
