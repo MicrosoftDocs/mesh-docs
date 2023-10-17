@@ -23,7 +23,7 @@ automatically generated](../../media/3d-design-performance-guide/image025.png)
 Not using textures also eliminates texture artifacts like pixelization
 and aliasing, which is a big boost to VR immersion.
 
-![](../../media/3d-design-performance-guide/image026.png)
+![A screen shot of a number Description automatically generated](../../media/3d-design-performance-guide/image026.png)
 
 When
 a custom texture is used, like on these purple plants, green leaves, and
@@ -32,11 +32,11 @@ long way towards hiding the textures' low resolution.
 
 Tiling textures should be authored at 3x3 meter scale.
 
-![](../../media/3d-design-performance-guide/image027.png)
+![A screen shot of a number Description automatically generated a](../../media/3d-design-performance-guide/image027.png)
 
 All tiling textures should be authored left to right.
 
-![](../../media/3d-design-performance-guide/image028.png)
+![A screen shot of a number Description automatically generated aa](../../media/3d-design-performance-guide/image028.png)
 
 ![](../../media/3d-design-performance-guide/image029.png)
 
@@ -49,13 +49,13 @@ Spring 2022, when the Importer lists the On Demand Remap slot as 'None
 
 **Even one material set to 'None (Material)' has a performance cost.**
 
-![](../../media/3d-design-performance-guide/image032.png)
+![A screen shot of a number Description automatically generated aaa](../../media/3d-design-performance-guide/image032.png)
 
 
 **Ensure that all slots have corresponding Unity materials loaded in, as
 shown below.**
 
-![](../../media/3d-design-performance-guide/image034.png)
+![A screen shot of a number Description automatically generated aab](../../media/3d-design-performance-guide/image034.png)
 
 ## Unity shaders
 
@@ -101,21 +101,15 @@ look ups..
 Most shader and renderer features are available to every platform, but
 some platforms disable features for performance considerations.
 
-  -----------------------------------------------------------------------
-                                **Android**       **PC**
-  ----------------------------- ----------------- -----------------------
-  **\_CameraDepthTexture**      ❌                ❌
 
-  **\_CameraColorTexture**      ❌                ❌
-
-  **HDR**                       ❌                ❌
-
-  **MSAA**                      2x                2x
-
-  **Reflection Probe Blending** ❌                ✔
-
-  **Post Processing**           ❌                ❌
-  -----------------------------------------------------------------------
+| | **Android** | **PC** |
+| -------------|--------|------------- |
+| **\_CameraDepthTexture**  | ❌ | ❌ |
+| **\_CameraColorTexture**  | ❌ | ❌ |
+| **HDR** | ❌ |  ❌ |
+| **MSAA** |  2x   |   2x |
+| **Reflection Probe Blending** | ❌ |  ✔ |
+| **Post Processing** |  ❌ | ❌ |
 
 When unsure if a setting is enabled or disabled for a platform you are
 developing for, reference the URP assets contained within the Mesh
