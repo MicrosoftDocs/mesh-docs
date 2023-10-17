@@ -17,30 +17,24 @@ keywords: Microsoft Mesh, unity, design, models, modeling
 
 *Here are some naming convention examples:*
 
-![Graphical user interface, text Description automatically
-generated](../../media/3d-design-performance-guide/image009.png)
+![Some examples using the naming convention for Materials, Textures, FBX, and other formats](../../media/3d-design-performance-guide/image009.png)
 
 ### Unity folder structure
 
-![Graphical user interface, text, application Description automatically
-generated](../../media/3d-design-performance-guide/image010.png)
+![Some examples of the Unity folder structure](../../media/3d-design-performance-guide/image010.png)
 
 ### Perforce folder structure
 
-![Graphical user interface, text, timeline Description automatically
-generated](../../media/3d-design-performance-guide/image011.png)
+![Some examples of the perforce folder structure](../../media/3d-design-performance-guide/image011.png)
 
 ## Unity file hierarchy
 
 Keep the **Hierarchy** clean by removing disabled objects.
 
-**Disabled objects still add to the file size of the root
-object/project.**
+**Disabled objects still add to the file size of the root object/project.**
 
-![](../../media/3d-design-performance-guide/image030.png)
+![A screenshot of the Unity Hierarchy window](../../media/3d-design-performance-guide/image030.png)
 
+Embedding Prefabs into Prefabs is okay, especially if multiple people are working within a workstream.
 
-Embedding Prefabs into Prefabs is okay, especially if multiple people
-are working within a workstream.
-
-![](../../media/3d-design-performance-guide/image031.png)
+![A screenshot of the example Geo_Prefab hierarchy window in Unity](../../media/3d-design-performance-guide/image031.png)
