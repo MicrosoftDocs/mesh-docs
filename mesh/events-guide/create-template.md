@@ -6,7 +6,6 @@ author: typride
 ms.author: tmilligan
 ms.date: 10/05/2023
 ms.topic: Guide
-ms.prod: mesh
 keywords: Microsoft Mesh, templates, events, hosting, event producer, event organizer, customize
 ---
 
@@ -102,6 +101,10 @@ Once you're happy with your customizations, **Publish** the Event template to be
     :::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-select-template.png" alt-text="Select template":::
 
 Now your template is created and selected for your event. When creating another event, you can find it in the Mesh world it was created and used in any future event.
+
+## Unpublish your template to customize again
+
+Should you want to edit an Event Template again, you can unpublish your template to convert it to a draft form. Then you can customize it as desired, publish again, and reuse.
 
 > [!div class="nextstepaction"]
 > [Produce your event](produce-event.md)
