@@ -41,9 +41,9 @@ Saving is not available once event is joined. Plan to customize and save your ev
 
 1. Open the Mesh app customize your **Event** or **Event Template**.
 
-1. **Add content** using the **Environment Editor** (or playable content uploaded from Unity to a custom environment).
+1. **Add content** using the **Environment Editor**.
 
-1. **Configure** content with the **Control Panel** for your live event. Ensure that you've added artifacts to the control panel to be used in the production of your event.
+1. **Configure** content with the **Control Panel** to be used in your live event.
 
 1. **Save changes** in the **Event Customization** window.
 
@@ -95,9 +95,9 @@ At a high level, there are three major steps to customize your event or template
 
     :::image type="content" source="../media/mesh-event-producer-guide/Control-panel-button.png" alt-text="Control panel button":::
 
-1. **Save changes** in the **Event Customization** window.
+1. **Save changes** in the **Event Customization** window. Or select **Revert** to discard recent changes and revert to the last saved state.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Event-customization-save-changes.png" alt-text="Save changse in event customization":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Event-customization-save-changes.png" alt-text="Save changes in event customization":::
 
 ## Add content with Environment editor
 
@@ -121,7 +121,7 @@ Use the environment editor to add content to your environment that can be contro
 
     :::image type="content" source="../media/mesh-event-producer-guide/image-environment-editor-added-artifact.png" alt-text="Video player artifact shown in list of artifacts":::
 
-    Note the **Copy**, **Edit**, and **Delete** buttons available for the selected artifact.
+    Note the **Duplicate**, **Edit**, and **Delete** buttons available for the selected artifact.
 
 1. Now you can manipulate the artifact as you'd like by selecting it with your cursor, dragging it to another location, or using the edges of the artifacts to scale them as you see fit.
 
