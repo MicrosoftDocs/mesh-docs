@@ -41,6 +41,8 @@ Download Microsoft Mesh for Meta Quest devices
 
 - **Event templates:** Save any customization you make in an environment for an event template to be reused in future events.
 
+- **Custom environments:** Create custom interactive experiences in Unity with the Mesh toolkit, designing and developing environments that best suit your business needs.
+
 ## Event flow
 
 Events in Mesh should be familiar to most organizations that work with Microsoft Teams with the added step of customization. So, Create, customize, and host:
@@ -75,7 +77,7 @@ The power of Mesh really becomes clear when you customize your event by adding a
 
 ### Custom environments and artifacts
 
-In addition to the default environments and artifacts, you can leverage Unity and the Mesh toolkit to create custom environments and rich content that can be used in event experiences. To learn more about creating custom environments and artifacts, see the [Choose your journey](../develop/getting-started/choose-your-journey.md) developer docs to get started.
+In addition to the default environments that are customizable with artifacts, you can leverage Unity and the Mesh toolkit to create custom environments and rich content that can be used in event experiences. To learn more about creating custom environments and artifacts, see the [Choose your journey](../develop/getting-started/choose-your-journey.md) developer docs to get started.
 
 ## Create your event template
 

@@ -34,16 +34,17 @@ Saving is not available once event is joined. Plan to customize and save your ev
 > **Who should customize an event?**
 >
 > Anyone who has been invited as a **Co-organizer** can customize an event. Do this with
-> caution, knowing that any edits you make will affect the environment
+> caution, knowing that any edits you make will affect the Event or Event Template
 > that event participants will join in.
 
 ## Customization flow
 
-1. Open the Mesh app customize your **Event** or **Event template**.
+1. Open the Mesh app customize your **Event** or **Event Template**.
 
 1. **Add content** using the **Environment Editor** (or playable content uploaded from Unity to a custom environment).
 
-1. **Configure** content with the **Control Panel** for your live event. Ensure that you've added artifacts to the control panel to be used in the production of your event
+1. **Configure** content with the **Control Panel** for your live event. Ensure that you've added artifacts to the control panel to be used in the production of your event.
+
 1. **Save changes** in the **Event Customization** window.
 
 ## Customize your Event Template or Event
