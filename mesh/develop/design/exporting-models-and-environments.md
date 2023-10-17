@@ -28,5 +28,5 @@ keywords: Microsoft Mesh, unity, design, models, modeling
 - **Do not** plan to move meshes inside Unity. For environment FBX's,
     adjust inside your modeling program before export.
 
-    ![A screen shot of a number Description automatically generated](../../media/3d-design-performance-guide/image014.png)
+    ![A screen shot of the environment FBXs](../../media/3d-design-performance-guide/image014.png)
 
