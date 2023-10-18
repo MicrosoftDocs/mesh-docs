@@ -44,9 +44,6 @@ After you've created your event, customized it, and added content to the control
     > [!NOTE]
 > As a host, you'll join into a Host Room along with any other co-organizers. Attendees will be in their own room(s).
 
-    > [!TIP]
-> Use the [broadcast feature](#event-producers-tools) to communicate with other rooms and participants.
-
 1. Adjust your device settings to ensure they're set up properly.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Device-settings-setup-before-join.png" alt-text="Device settings adjustment  inside pre-join window for Mesh event.":::
