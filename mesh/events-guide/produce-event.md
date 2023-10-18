@@ -42,6 +42,7 @@ After you've created your event, customized it, and added content to the control
     :::image type="content" source="../media/mesh-event-producer-guide/Join-now-events.png" alt-text="Join now button in the Microsoft Mesh app":::
 
     > [!NOTE]
+    >
 > As a host, you'll join into a Host Room along with any other co-organizers. Attendees will be in their own room(s).
 
 1. Adjust your device settings to ensure they're set up properly.
@@ -62,7 +63,7 @@ Once you select **Join now**, you'll utilize two main tools, Host panel and the 
 
 ### Host panel tools
 
-### Mute all
+#### Mute all
 
 Mute all attendees in the event. Hosts in the event can still use their mics and mute or unmute.
 
@@ -80,13 +81,13 @@ Amplify your voice to all participants in the event. A great tool when broadcast
 
 **Megaphone enabled:** Host voice is amplified to all participants in the Host's room only.
 
-**Disabled:** Host voice is not amplified. Only participants close to the host will hear the host.
+**Disabled:** Host voice is not amplified.
 
 :::image type="content" source="../media/mesh-event-producer-guide/Event-production-megaphone-button.png" alt-text="Megaphone button in host panel":::
 
 #### Broadcast
 
-Use broadcast anytime you wish to be seen/heard by your whole audience. Broadcasted avatars are visually distinguished by a purple-rings effect applied to their avatar.
+Use broadcast anytime you wish to be seen or heard by your whole audience in all rooms. Broadcasted avatars are visually distinguished by a purple-rings effect applied to their avatar.
 
 **Enabled:** Host avatar and voice are broadcast to all rooms in the event.
 
