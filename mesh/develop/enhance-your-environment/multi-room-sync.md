@@ -1,6 +1,7 @@
 ---
 title: Multi-room sync (animations, timelines, and video)
 description: Learn about the multi-room sync features you can add to your Environment.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 10/3/2023

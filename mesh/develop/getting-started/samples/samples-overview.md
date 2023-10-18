@@ -5,7 +5,7 @@ author: vtieto
 ms.author: vinnietieto
 ms.date: 9/29/2023
 ms.topic: overview
-ms.prod: mesh
+ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, toolkit, Mesh toolkit
 ---
 

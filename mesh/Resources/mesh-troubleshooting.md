@@ -1,9 +1,10 @@
 ---
 title: Troubleshooting & FAQs - Microsoft Mesh
 description: Various help guides and FAQ answers regarding Mesh events.
+ms.service: mesh
 author: qianw211
 ms.author: qianwen
-ms.date: 10/5/2023
+ms.date: 10/12/2023
 ms.topic: Troubleshooting
 keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
 ---
@@ -32,15 +33,15 @@ If you had previously downloaded the **Napili** app on your Quest 2 device, you 
 
     [Can't find your Meta account associated with your Quest 2 device?](#how-do-i-find-my-meta-id)
 
-    ![Diagram Description automatically generated with medium confidence](media/image011.png)
+    ![Screenshot of the Meta Mesh Preview webpage](media/meta-mesh-preview.png)
 
 3. Once authenticated, select the **Get** button.
 
-    ![A black background with white text Description automatically generated with medium confidence](media/image013.png)
+    ![Screenshot of the Meta Mesh Preview - Get button](media/meta-mesh-preview-get.png)
 
 4. You'll see the button grey out and change from **Get** to **Purchased** which indicates that the app has been acquired.
 
-    ![Log in with your Meta account confirmation page](media/image015.png)
+    ![Log in with your Meta account confirmation page](media/meta-mesh-preview-confirmation.png)
 
     >[!Note]
     >You may need to restart your headset to ensure the app loads.
@@ -55,7 +56,7 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 3. It should bring you to your **Profile** page. If not, click your **Profile** icon in the top right corner.
 
-   ![A screenshot of profile icon](media/image017.png)
+   ![A screenshot of profile icon](media/meta-profile.png)
 
 4. Select **Profile**. From there you should see your Email.
 
@@ -65,11 +66,11 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 1. Select the **App library** button.
 
-    ![the App library button on your Quest menu](media/image020.png)
+    ![the App library button on your Quest menu](media/meta-menu.png)
 
 1. Find the **Microsoft Mesh (Preview)** app in the App library.
 
-    ![A screenshot of Microsoft Mesh (Preview) in the App library](media/image022.png)
+    ![A screenshot of Microsoft Mesh (Preview) in the App library](media/meta-app-library-mesh.png)
 
 1. Select to **Install** then **Open** the app by selecting it again.
 
@@ -80,7 +81,7 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
     You'll see a window like this when the authentication is complete:
 
-    ![A screenshot of a video game Description automatically generated](media/image024.png)
+    ![A screenshot of the Mesh startup page as you verify the Quest device on your Microsoft webpage](media/mesh-startup-page.png)
 
 1. Select to **Allow** any **Terms of service & Allow Diagnostic data**.
 
@@ -90,13 +91,15 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 1. Confirm you have a license required to use Mesh as shown [here](../setup/content/preparing-your-organization.md#verify-your-licensing).
 
-2. Double check that your network admins have allowlisted the required endpoints as described [here](../setup/content/preparing-your-organization.md#work-with-your-organizations-security-team).
+1. Double check that the machine has the latest Operating System and security updates.
 
-3. Gather the logs from your device: `%USERPROFILE%\AppData\LocalLow\Microsoft Corporation\Microsoft Mesh\`.
+1. Double check that your network admins have allowlisted the required endpoints as described [here](../setup/content/preparing-your-organization.md#work-with-your-organizations-security-team).
 
-4. If the logs are too large to share, the two most important are `Player.log` and `Player-prev.log`.
+1. Gather the logs from your device: `%USERPROFILE%\AppData\LocalLow\Microsoft\Microsoft Mesh\`.
 
-5. Open a support request by following the link [here](https://admin.microsoft.com) (this support link may only be available to M365 admins).
+1. If the logs are too large to share, the two most important are `Player.log` and `Player-prev.log`.
+
+1. Open a support request by following the link [here](https://admin.microsoft.com) (this support link may only be available to M365 admins).
 
 ### What should I do with issues relating to M365?
 

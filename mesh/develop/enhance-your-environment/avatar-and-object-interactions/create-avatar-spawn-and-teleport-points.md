@@ -1,34 +1,37 @@
 ---
 title: Create avatar spawn and teleport points
 description: Learn how to create points that an avatar will spawn to or travel to when using teleportation.
+ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 10/4/2023
+ms.date: 10/9/2023
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, teleport, spawn
 ---
 
 # Create avatar spawn and teleport points
 
-## TravelPoint and TravelPointGroup
+## Travel Point and Travel Point Group
 
-TravelPoints are a component in the Interactables package that can be used to define where to place an avatar when first joining an event or space and also to transport avatars during their experience using Visual Scripting.
+*Travel Point* is a component in the Mesh Toolkit that can be used to define where to place an avatar when first joining an event or space and also to transport avatars during their experience using Visual Scripting.
 
-If a TravelPoint is not present in an Environment, and there is a floor at the origin, the avatar will be grounded on the floor when spawned.  If no floor is present near the origin, the avatar will spawn above the origin and fall for a little while and then respawn in a loop.
+If a travel point isn't present in an Environment, and there's a floor at the origin, the avatar will be grounded on the floor when spawned.  If no floor is present near the origin, the avatar will spawn above the origin and fall for a little while and then respawn in a loop.
 
-Setting up Travel Groups and Travel Points:
+**Setting up travel groups and travel points**
 
-1. Create a Travel Point Group: all travel points must belong to a group; a default group will be assigned to any travel points that don't have one. Every travel group must have a unique name. The default travel group will not be set as a DefaultSpawnGroup unless it is the only group that exist.
-    - To do this, create a new GameObject with a TravelPointGroup component attached.
+1. Create a trave point group: all travel points must belong to a group; a default group will be assigned to any travel points that don't have one. Every travel group must have a unique name. The default travel group will not be set as a DefaultSpawnGroup unless it's the only group that exists.
 
-    ![Travel Point Group](../../../media/mesh-scripting/object-player-interactions/Picture5.png)
+    - To do this, create a new GameObject with a *Travel Point Group* component attached.
 
-2. Add Travel Points to the group. To do this, add new GameObjects as children of the Travel Point Group with a Travel Point Component attached.
+    ![Travel Point Group](../../../media/enhance-your-environment/object-player-interactions/006-travel-point-group.png)
 
-    ![Travel Point Component attached](../../../media/mesh-scripting/object-player-interactions/Picture6.png)
-    ![Travel Point](../../../media/mesh-scripting/object-player-interactions/Picture7.png)
+2. Add travel points to the group. To do this, add new GameObjects as children of the travel point group with a *Travel Point* Component attached.
+
+    ![Travel Point Component attached](../../../media/enhance-your-environment/object-player-interactions/007-travel-point.png)
+
+    ![Travel Point](../../../media/enhance-your-environment/object-player-interactions/008-travel-point-in-hierarchy.png)
     
-3. Set "Default Spawn Group" to true for travel groups you want avatars to spawn into when initially joining an Event or space and false travel groups that you do not.  
+3. Set **Default Spawn Group** to true for travel groups you want avatars to spawn into when initially joining an event or space and false for travel groups that you do not.  
 
 ### Settings
 
@@ -46,3 +49,10 @@ Setting up Travel Groups and Travel Points:
     - **TravelToPoint** – Transport the local avatar directly to a specific travel point
 - **Travel Point Group Methods:**
     - **TravelToRandomTravelPoint()** – Transport the local avatar to a random point in the group
+
+## Next steps
+
+[Grab, attach and throw with Interactables](./interactables.md)
+[Triggers, anchors and tethers](./triggers-anchors-and-tethers.md)
+[Physics interactions](../physics-interactions.md)
+[Enhanced features overview](../enhanced-features-overview.md)

@@ -1,14 +1,15 @@
 ---
 title: Getting started with events in Mesh
 description: Getting started with microsoft Mesh
+ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 10/2/2023
+ms.date: 10/7/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-# Getting started with events in Mesh
+# Getting started with events in Microsoft Mesh
 
 Join an event in Microsoft Mesh to experience spatial interaction and feel a sense of co-presence.
 
