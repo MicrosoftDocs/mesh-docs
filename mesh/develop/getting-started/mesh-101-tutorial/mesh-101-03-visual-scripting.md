@@ -6,6 +6,7 @@ ms.author: vinnietieto
 ms.date: 9/25/2023
 ms.service: mesh
 ms.topic: Tutorial
+ms.prod: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
 ---
 
@@ -134,29 +135,34 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/411-game-object-button-node.png)
 
-    > [!TIP] You may want to take a moment here to examine some of the components for the **Button** GameObject:
-    >
-    > *Mesh Interactable Setup*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named [*Grab, hold and throw with Interactables*](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
->
->   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/478-mesh-interactable-setup.png)
->
-> *Script Machine*: This has a script graph named *Button Base Behaviour.*
->
->   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/479-script-machine-button-base.png)
->
-> If you go into Play mode, you'll see that a new component named **Mesh Interactable Body** is added to **Button**.
->
->   ![A screenshot of a video play Description ](../../../media/sample-mesh-101/412-mesh-interactable-body.png)
->
-> This component is added automatically at runtime to interactable bodies; it exposes various properties to Visual Scripting such as *IsHovered* and *IsSelected*, which will come in handy in a moment.
->
-> You can choose to have the Unity UI display a different color tint in Play mode than in Edit mode. In the image above, the Play mode tint has been changed to yellow. This can help you to tell at a glance which mode you're in. To change the Play mode tint:
->
->1. On the menu bar, select **Edit** > **Preferences**.
->1. In the left-side menu, select **Colors**.
->1. Under **General**, click the **Playmode tint** color box and then select the color you want.
+***
+
+**TIP**: You may want to take a moment here to examine some of the components for the **Button** GameObject:
+
+*Mesh Interactable Setup*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named [*Grab, hold and throw with Interactables*](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
+
+![A screenshot of a video play Description ](../../../media/sample-mesh-101/478-mesh-interactable-setup.png)
+
+*Script Machine*: This has a script graph named *Button Base Behaviour.*
+
+![A screenshot of a video play Description ](../../../media/sample-mesh-101/479-script-machine-button-base.png)
+
+If you go into Play mode, you'll see that a new component named **Mesh Interactable Body** is added to **Button**.
+
+![A screenshot of a video play Description ](../../../media/sample-mesh-101/412-mesh-interactable-body.png)
+
+This component is added automatically at runtime to interactable bodies; it exposes various properties to Visual Scripting such as *IsHovered* and *IsSelected*, which will come in handy in a moment.
+
+You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Play mode tint has been changed to blue. This can help you to tell at a glance which mode you're in. To change the Play mode tint:
+
+1. On the menu bar, select **Edit** > **Preferences**.
+1. In the left-side menu, select **Colors**.
+1. Under **General**, click the **Playmode tint** color box and then select the color you want.
+
+***
 
 In the script graph, let's add a node that lets us know when the button is selected.
+
 1. Make sure you're viewing the embedded script graph that's attached to the **PlayVideoButton** GameObject.
 1. Click and hold on the outport port of the **PlayVideo** variable, and then release the mouse button. This opens the Fuzzy Finder.
 
