@@ -1,6 +1,7 @@
 ---
 title: Exporting models and environments
 description: Learn about exporting models and environments for use in Mesh.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 9/26/2023
@@ -26,5 +27,6 @@ keywords: Microsoft Mesh, unity, design, models, modeling
 
 - **Do not** plan to move meshes inside Unity. For environment FBX's,
     adjust inside your modeling program before export.
-![](../../media/3d-design-performance-guide/image014.png)
+
+    ![A screen shot of the environment FBXs](../../media/3d-design-performance-guide/image014.png)
 

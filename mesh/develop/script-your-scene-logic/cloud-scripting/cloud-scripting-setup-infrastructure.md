@@ -1,11 +1,12 @@
 ---
 title: Set up cloud scripting infrastructure
 description: Set up Azure to manage scripting deployment.
+ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 09/26/2023
 ms.topic: Tutorial
-keywords: Microsoft Mesh, Azure, admin, documentation, features, Mesh Cloud Scripting, scripting
+keywords: Microsoft Mesh, Azure, admin, Mesh Cloud Scripting, scripting, cloud scripting
 ---
 
 # Set up Cloud Scripting infrastructure in Azure

@@ -1,6 +1,7 @@
 ---
 title: Mesh Visual Scripting programmer's guide
 description: Learn about how to create scripts using Visual Scripting in Mesh.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 10/13/2023

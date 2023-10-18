@@ -1,6 +1,7 @@
 ---
 title: Getting started with events in Mesh
 description: Getting started with microsoft Mesh
+ms.service: mesh
 author: qianw211    
 ms.author: qianwen
 ms.date: 10/7/2023

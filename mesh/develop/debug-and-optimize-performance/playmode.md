@@ -1,6 +1,7 @@
 ---
-title: Play mode testing in Unity
-description: Development for Mesh using Unity.
+title: Mesh Play Mode testing in Unity
+description: Testing your Mesh environment using Unity.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 8/29/2023
@@ -8,7 +9,7 @@ ms.topic: Guide
 keywords: Microsoft Mesh, testing, troubleshooting, playmode, play mode
 ---
 
-# Play mode testing in Unity for Mesh
+# Mesh Play Mode testing in Unity
 
 **Mesh Play Mode** gives you the capability to
 select *Play* in a Mesh Environment project and get an
