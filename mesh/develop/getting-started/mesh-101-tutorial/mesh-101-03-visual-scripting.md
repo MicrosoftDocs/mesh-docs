@@ -153,7 +153,7 @@ If you go into Play mode, you'll see that a new component named **Mesh Interacta
 
 This component is added automatically at runtime to interactable bodies; it exposes various properties to Visual Scripting such as *IsHovered* and *IsSelected*, which will come in handy in a moment.
 
-You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Play mode tint has been changed to blue. This can help you to tell at a glance which mode you're in. To change the Play mode tint:
+You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Play mode tint has been changed to yellow. This can help you to tell at a glance which mode you're in. To change the Play mode tint:
 
 1. On the menu bar, select **Edit** > **Preferences**.
 1. In the left-side menu, select **Colors**.
