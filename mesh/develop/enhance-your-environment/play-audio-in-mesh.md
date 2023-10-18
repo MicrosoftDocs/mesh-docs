@@ -4,7 +4,7 @@ description: Learn how to work with a Unity AudioSource or the Mesh Audio Manage
 ms.service: mesh
 author: joekellyms
 ms.author: vinnietieto
-ms.date: 10/4/2023
+ms.date: 10/18/2023
 ms.topic: overview
 keywords: Microsoft Mesh, Mesh, audio, sound
 ---
@@ -52,7 +52,10 @@ You'll need to create the *Spatial Audio Properties* node before you play the au
 While any GameObject reference will work, most often you'll probably want to use the *This* node to play the sound on the GameObject that this script is attached to. You'll also want to change the **Attenuation Curve** to slope down instead of up so that the volume goes down as you move away from the object playing the sound.
  
 ![______](../../media/enhance-your-environment/audio-manager/008-attenuation-curve.png)
- 
+
+> ![TIP]
+> **Attenuation** basically means "lowering of volume."
+
 The properties here are as follows:
  
 **Min Distance**: the distance at which the sound will start attenuating. The sound will play at full volume within this distance. "1" is the recommended starting value.
@@ -62,6 +65,8 @@ The properties here are as follows:
 **Attenuation Curve**: the volume ramp applied as you move away from the source of the sound. Apply a downward slope from 0 to 1 to start.
 
 **Reverb Zone Mix**: the volume sent to the reverb effect if you have *Reverb Zones* in your scene. "0" is the recommended starting value.
+
+**Doppler Level**: The "Doppler effect" is the change in frequency of a sound wave based on the movement of the object generating the sound relative to the listeners hearing the sound. A common example of this is when you hear a police car's siren changing in pitch as it moves away from you. This setting lets you adjust the amount of automatic pitch shifting that occurs when objects generating a sound move. **Warning**: Pitch-shifting when objects move quickly can cause noticeable artifacts. We recommend that you use a setting of 0 for most sounds.
 
 **Spread**: the angle in degrees that the sound will spread over the speakers. "0" is the recommended starting value.
  
