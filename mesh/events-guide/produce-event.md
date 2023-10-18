@@ -14,6 +14,7 @@ keywords: Microsoft Mesh, Producing, M365, events, hosting, event producer, even
 ## Considerations before starting your event
 
 ### Customize **before** your event
+
 To ensure the event runs smoothly, ensure that you customize and save customizations at least 30 minutes before the event start time.
 
 ### Event capacity
