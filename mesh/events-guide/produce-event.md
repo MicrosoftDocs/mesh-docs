@@ -152,7 +152,7 @@ In the Control panel, you'll see all the artifacts and content that you added to
 
     In the example below, in the **Play state** section for the **Video** artifact, we can select the **Play** button to play the video.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Event-production-control-panel-play-artifact-2.png" alt-text="":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Event-production-control-panel-play-artifact-2.png" alt-text="Screenshot of Mesh app, the control panel playing a video artifact.":::
 
    > [!div class="nextstepaction"]
    > [Getting started with attending events](../user-guide/getting-started.md)
