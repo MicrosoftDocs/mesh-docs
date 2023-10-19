@@ -43,7 +43,7 @@ Saving is not available once event is joined. Plan to customize and save your ev
 
 1. **Add content** using the **Environment Editor**.
 
-1. **Configure** content with the **Control Panel** to be used in your live event.
+1. **Configure** content with the **Control panel** to be used in your live event.
 
 1. **Save changes** in the **Event Customization** window.
 
@@ -91,7 +91,7 @@ At a high level, there are three major steps to customize your event or template
 
     :::image type="content" source="../media/mesh-event-producer-guide/customize-image-artifact.png" alt-text="Image artifact adjustment":::
 
-1. **Configure** content with the **Control Panel** for your live event. Ensure that you've added artifacts to the control panel to be used in the production of your event.
+1. **Configure** content with the **Control panel** for your live event. Ensure that you've added artifacts to the control panel to be used in the production of your event.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Control-panel-button.png" alt-text="Control panel button":::
 
@@ -165,14 +165,14 @@ Once you've added an artifact, you can maneuver it around the spaces and select 
     > [!NOTE]
     > The only video type that is supported is **.MP4** inside the video artifact.
 
-## Prepare content with the Control Panel
+## Prepare content with the Control panel
 
 > [!IMPORTANT]
-> You **must add the artifacts to the Control Panel** and **save** before starting your event.
+> You **must add the artifacts to the Control panel** and **save** before starting your event.
 
-Use the **Control Panel** to prepare your artifacts to be used during an event. Like having a technical booth for theatrical technicians, it's designed to give the organizer the ability to orchestrate a performance in real time.
+Use the **Control panel** to prepare your artifacts to be used during an event. Like having a technical booth for theatrical technicians, it's designed to give the organizer the ability to orchestrate a performance in real time.
 
-1. Once you're satisfied with your artifact, open the **Control Panel**.
+1. Once you're satisfied with your artifact, open the **Control panel**.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Control-panel-button.png" alt-text="Control-panel button in the Mesh app":::
 
@@ -180,11 +180,11 @@ Use the **Control Panel** to prepare your artifacts to be used during an event. 
 
     :::image type="content" source="../media/mesh-event-producer-guide/Control-panel-add-button.png" alt-text="Control panel add button in Microsoft Mesh app":::
 
-1. In the **Select content** window, select the artifact then select  **Add**. You will see it show up in the Control Panel.
+1. In the **Select content** window, select the artifact then select  **Add**. You will see it show up in the Control panel.
 
     ![Select video player to add it to the control panel for producing your event.](../media/mesh-event-producer-guide/Add-content-to-control-panle.png)
 
-**Control Panel Notes:**
+**Control panel Notes:**
 
 - Playable content can be added from the environment editor or from a Unity project that has been uploaded to a custom environment. Reference the [Choose your journey article](../develop/getting-started/choose-your-journey.md)
     to get started with adding custom content.
@@ -199,7 +199,7 @@ Select the Event Customization button, then select **Save changes** or **Revert 
 
 ### Preview the live run of your event
 
-Within a Customize event experience, open the Control Panel, then Toggle
+Within a Customize event experience, open the Control panel, then Toggle
 to Preview Mode.
 
 While in preview mode, you can test out using the control panel to play your video or interact with your content.
