@@ -1,6 +1,7 @@
 ---
 title: Download Mesh samples
 description: Step-by-step instructions for downloading Mesh samples.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 10/5/2023

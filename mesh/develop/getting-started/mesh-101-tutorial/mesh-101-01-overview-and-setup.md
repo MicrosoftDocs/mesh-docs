@@ -1,9 +1,10 @@
 ---
 title: Mesh 101 Overview and setup
 description: Learn about the prerequsites and setup process for the Mesh 101 tutorial project.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 9/27/2023
+ms.date: 10/18/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, GitHub
 ---

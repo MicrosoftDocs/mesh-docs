@@ -5,7 +5,7 @@ author: typride
 ms.author: vinnietieto
 ms.date: 10/02/2023
 ms.topic: Guide
-ms.prod: mesh
+ms.service: mesh
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
@@ -50,4 +50,4 @@ Build environments in Unity and then upload to the the Mesh portal. Within the M
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Choose your journey](getting-started/choose-your-journey.md)
+   > [Prerequisites](prerequisites.md)

@@ -1,6 +1,7 @@
 ---
 title: Set up cloud scripting infrastructure
 description: Set up Azure to manage scripting deployment.
+ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 09/26/2023

@@ -1,6 +1,7 @@
 ---
 title: Mesh 101 Make your environment available for Events
 description: Learn how to uploaded your Environment and make it available for Event.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 10/5/2023

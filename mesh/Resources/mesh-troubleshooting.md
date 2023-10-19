@@ -1,6 +1,7 @@
 ---
 title: Troubleshooting & FAQs - Microsoft Mesh
 description: Various help guides and FAQ answers regarding Mesh events.
+ms.service: mesh
 author: qianw211
 ms.author: qianwen
 ms.date: 10/12/2023

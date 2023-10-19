@@ -1,6 +1,7 @@
 ---
 title: Mesh Visual Scripting node reference
 description: Learn about the Mesh nodes available for Visual Scripting in Mesh.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 10/3/2023

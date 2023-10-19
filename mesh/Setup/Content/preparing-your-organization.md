@@ -1,6 +1,7 @@
 ---
 title: Preparing your organization for Mesh
 description: Prepare your organization to adopt Mesh and its features. Organize a team to manage setup and distribution.
+ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 10/11/2023

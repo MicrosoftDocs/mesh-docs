@@ -1,6 +1,7 @@
 ---
 title: Enhanced features overview
 description: View an overview of the various features you can add to your Environment.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 10/3/2023

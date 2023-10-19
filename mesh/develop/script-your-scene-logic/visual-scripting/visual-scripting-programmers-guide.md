@@ -1,9 +1,10 @@
 ---
 title: Mesh Visual Scripting programmer's guide
 description: Learn about how to create scripts using Visual Scripting in Mesh.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 10/3/2023
+ms.date: 10/13/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, graphs
 ---
@@ -112,9 +113,9 @@ Performance issues in visual scripts are almost always caused by the scripts doi
 
 Things to be aware of:
 
-- Avoid triggering visual scripts every frame (for example, **On Update**). Instead, use **On State Changed** or **On Interval** if possible.
+- Whenever possible, avoid triggering visual scripts every frame. Instead of using **On Update**, use **On State Changed** or **On Interval**.
 
-- Avoid triggering visual scripts every frame on many objects.
+- If you must trigger a visual script every frame, do it on as few objects as possible.
 
 - Don't update shared properties at high frequency. Instead, consider making high-frequency updated properties local by using the **Local Script Scope** component. Remember that visual script variables are also shared by default!
 

@@ -5,7 +5,7 @@ author: typride
 ms.author: vinnietieto
 ms.date: 8/31/2023
 ms.topic: Guide
-ms.prod: mesh
+ms.service: mesh
 keywords: Microsoft Mesh, Mesh physics, physics, environments, interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw
 ---
 
