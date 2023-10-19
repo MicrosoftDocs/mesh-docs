@@ -4,7 +4,7 @@ description: Learn about adding a few basic features that are necessary for the 
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 9/25/2023
+ms.date: 10/13/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
@@ -18,7 +18,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 
 2. In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**.
 
-    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/481-project-settings.png)
+    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image010.png)
 
     Open the **StartingPoint** scene. You should see the **TMP Importer** window.
 
@@ -26,7 +26,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 
     ![A screen shot of a computer Description automatically generated with low confidence](../../../media/sample-mesh-101/image011.png)
 
-    In the **Scene** window, the letter "T" appears over every object that's using `TextMeshPro`. You can turn these off to achieve a less cluttered
+    In the **Scene** window, the letter "T" appears over every object that's using **TextMeshPro**. You can turn these off to achieve a less cluttered
     view. To do so:
 
 1. In the toolbar above the upper right corner of the **Scene** window,
@@ -100,7 +100,7 @@ layer---we've already done it for you.
 
 Adding the PlaymodeSetup prefab will allow you to run the project in
 *Play mode*. This gives you a preview of what the content will look and
-feel like when it runs in the *Mesh app*. A key feature of Pla ymode is
+feel like when it runs in the *Mesh app*. A key feature of Playmode is
 the ability to run multiple clients within the same process; this allows
 you to easily get a first impression of a multi-user scenario.
 

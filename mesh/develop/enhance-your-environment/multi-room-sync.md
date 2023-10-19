@@ -95,8 +95,7 @@ Unity Tutorial series on using [**Timelines**](https://learn.unity.com/project/u
 1. In the **Project** tab, navigate to the **Assets** folder and then
     create a new folder named *Animations*.
 
-1. In the **Hierarchy**, select **Timeline1**, and then select **Window
-    Sequencing >Timeline**.
+1. In the **Hierarchy**, select **Timeline1**, and then select **Window** > **Sequencing** > **Timeline**.
 
 1. We recommend that you move the **Timeline** tab next to the
     **Project** and **Console** tabs. This allows you to view the
@@ -116,9 +115,8 @@ Unity Tutorial series on using [**Timelines**](https://learn.unity.com/project/u
     ![A screenshot of a computer Description automatically generated with medium confidence](../../media/enhance-your-environment/image036.png)
 
 1. You can now animate or customize your Timeline---for example, add
-    animation clips, activation clips, and more. For more on how to do
-    this, watch this tutorial series:
-
+    animation clips, activation clips, and more. To learn more about this, [see the Timeline tutorial](https://learn.unity.com/tutorial/introduction-to-timeline-2019-3#) on the Unity Learn website.
+    
     A Timeline with several tracks might look something like this:
 
     ![___](../../media/enhance-your-environment/image037.jpg)
