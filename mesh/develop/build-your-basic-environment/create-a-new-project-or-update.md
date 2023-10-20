@@ -1,9 +1,9 @@
 ---
-title: Creating a new Unity project for your Mesh experience
+title: Create a new Unity project for your Mesh Experience
 description: Learn how to create a new Mesh project in Unity.
 author: typride
 ms.author: vinnietieto
-ms.date: 10/3/2023
+ms.date: 10/20/2023
 ms.service: mesh
 ms.topic: How to
 keywords: Microsoft Mesh, Unity, M365, Immersive spaces, Avatars, getting started, documentation, features
@@ -29,17 +29,16 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 
 1. In the **Hierarchy**, delete **Global Volume**.
 
-1.. [Add the Mesh Toolkit](../build-your-basic-environment/add-the-mesh-toolkit-package.md)
-
+1. [Add the Mesh Toolkit package.](add-the-mesh-toolkit-package.md)
 
 **To update an existing project**:
 
 1. Ensure that your project targets the Universal Render Pipeline (URP).
-1. [Add the Mesh Toolkit package](add-the-mesh-toolkit-package.md).
+1. [Add the Mesh Toolkit package.](add-the-mesh-toolkit-package.md)
 
 ## General Tips
 
-- For design tips, see our series of design articles starting with [Designing for Mesh: Overview](../../develop/design/overview.md). There are also guides for implementing advanced features such as [Mesh Physics](../../develop/enhance-your-environment/physics-interactions.md) and [Mesh Scripting](../../develop/script-your-scene-logic/mesh-scripting-overview.md).
+- For design tips, see our series of design articles starting with [Designing for Mesh: Overview](../../develop/design/overview.md). There are also guides for implementing advanced features such as [Mesh Physics](../develop/enhance-your-environment/physics/physics-interactions-overview.md) and [Mesh Scripting](../../develop/script-your-scene-logic/mesh-scripting-overview.md).
 
 - Environments can't depend on any scripts that aren't included in the Mesh Toolkit package. This includes scripts you've added to the project manually or ones obtained by installing other packages.
 
