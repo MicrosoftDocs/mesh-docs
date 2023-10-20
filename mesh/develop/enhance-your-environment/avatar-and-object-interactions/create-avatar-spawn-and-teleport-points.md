@@ -54,5 +54,5 @@ If a travel point isn't present in an Environment, and there's a floor at the or
 
 [Grab, attach and throw with Interactables](./interactables.md)
 [Triggers, anchors and tethers](./triggers-anchors-and-tethers.md)
-[Physics interactions](../physics/physics-interactions-overview.md)
+[Physics interactions](../physics/mesh-physics-overview.md)
 [Enhanced features overview](../enhanced-features-overview.md)

@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, Unity, environments, scenes, events, animation, timeli
 
 After you've created a basic Environment, take it to the next level by incorporating one or more of the features or technologies listed below. 
 
-* [Mesh physics](../physics/physics-interactions-overview.md), used to create enabling and engaging dynamic content.
+* [Mesh physics](../physics/mesh-physics-overview.md), used to create enabling and engaging dynamic content.
 
 * [Mesh interactables](avatar-and-object-interactions/interactables.md), allowing participants to grab, hold, throw, select, anchor, tether and spawn
 

@@ -25,7 +25,7 @@ The Mesh toolkit for Unity provides a collection of features that enable you to 
 
 * [Mesh graphics tools](design/overview.md), a collection of scripts, shaders, assets, and samples created to help improve the visual fidelity of Mesh worlds while staying within performance budgets.
 
-* [Mesh physics](enhance-your-environment/physics/physics-interactions.md), used to create enabling and engaging dynamic content.
+* [Mesh physics](enhance-your-environment/physics/mesh-physics-overview.md), used to create enabling and engaging dynamic content.
 
 * [Mesh interactables](enhance-your-environment/avatar-and-object-interactions/interactables.md), allowing participants to grab, hold, throw, select, anchor, tether and spawn
 

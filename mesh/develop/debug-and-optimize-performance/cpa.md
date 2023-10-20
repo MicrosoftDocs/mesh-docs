@@ -58,4 +58,4 @@ After you click **Run All**, the words "Passed" or "Failed" will be added to eac
 > [!TIP] 
 > You can export results to a .CSV file and then open it in Microsoft Excel by clicking the **Export to CSV** button.
 
-Most restrictions for each analyzer are detailed in the [*Designing for Mesh*](../design/overview.md) or the [*Mesh Physics*](../enhance-your-environment/physics/physics-interactions-overview.md) articles.
+Most restrictions for each analyzer are detailed in the [*Designing for Mesh*](../design/overview.md) or the [*Mesh Physics*](../enhance-your-environment/physics/mesh-physics-overview.md) articles.
