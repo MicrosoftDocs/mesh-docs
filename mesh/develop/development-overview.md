@@ -49,5 +49,6 @@ Build environments in Unity and then upload to the the Mesh portal. Within the M
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Choose your journey](getting-started/choose-your-journey.md)
+ > [!div class="nextstepaction"]
+ > [Prerequisites](prerequisites.md)
+
