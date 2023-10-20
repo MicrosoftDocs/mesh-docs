@@ -38,7 +38,7 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 
 ## General Tips
 
-- For design tips, see our series of design articles starting with [Designing for Mesh: Overview](../../develop/design/overview.md). There are also guides for implementing advanced features such as [Mesh Physics](../enhance-your-environment/physics/physics-interactions-overview.md) and [Mesh Scripting](../../develop/script-your-scene-logic/mesh-scripting-overview.md).
+- For design tips, see our series of design articles starting with [Designing for Mesh: Overview](../../develop/design/overview.md). There are also guides for implementing advanced features such as [Mesh Physics](../enhance-your-environment/physics/mesh-physics-overview.md) and [Mesh Scripting](../../develop/script-your-scene-logic/mesh-scripting-overview.md).
 
 - Environments can't depend on any scripts that aren't included in the Mesh Toolkit package. This includes scripts you've added to the project manually or ones obtained by installing other packages.
 
