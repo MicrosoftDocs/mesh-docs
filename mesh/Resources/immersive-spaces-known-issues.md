@@ -4,14 +4,14 @@ description: Currently active known issues and limitations for Immersive spaces 
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 10/5/2023
+ms.date: 10/23/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
 
 # Active known issues and limitations - Immersive Spaces in Teams
 
-## Version 5.2312.0
+## Version 5.2313.0
 
 ### Audio
 
