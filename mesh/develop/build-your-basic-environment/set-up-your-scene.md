@@ -26,7 +26,8 @@ Every scene must have at least one *travel point*, which is used to configure av
 
 ## Add the Mesh Thumbnail Camera
 
-Adding the *Mesh Thumbnail Camera* provides a thumbnail image that will be
+Every time you upload your environment, a thumbnail of your scene will be captured based on the TravelPoint component and LookAt property using the *MeshThumbnailCamera*, however you can also add your own *MeshThumbnailCamera* and position it wherever you like.
+The *Mesh Thumbnail Camera* provides a thumbnail image that will be
 added to your Environment's listing in the Mesh Portal and its
 selection button in the Mesh app. This comes in handy when you're
 selecting Environments in either place because it gives you a visual
@@ -46,10 +47,12 @@ reminder of what the Environment looks like.
     view appears in a small window in the lower right of the **Scene**
     window.
 
-> **Note**: If you decide you want a different view for the Thumbnail
+> **Note 1**: If you decide you want a different view for the Thumbnail
 > Camera, you can adjust the Camera GameObject directly in the **Scene**
 > window or change its **Position** and **Rotation** values in the
 > **Inspector** prior to uploading your Environment to Mesh.
+
+> **Note 2**: You can also add the camera as a child of a game object by clicking with the right button of the mouse in the game object and choosing **Mesh Toolkit** > **Thumbnail Camera**. The camera position in this case will be 0 so it is important to adjust the position and rotation.
 
 There are no set rules for how your thumbnail should look---it's totally
 up to you. The example below is taken from our [Mesh 101 tutorial](../../develop/getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md). The tutorial teaches you how to add Mesh features to an educational experience about wind turbines, so the thumbnail shows the turbines.
