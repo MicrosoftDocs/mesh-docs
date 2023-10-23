@@ -184,7 +184,7 @@ Creating geometry nodes through the API will leave parameters that are not setta
 
 ### RigidBodyNode
 
-Adding a Rigidbody component to an object will put its motion under the control of [Mesh Physics](../../enhance-your-environment/physics-interactions.md). Without adding any code, a Rigidbody object will be pulled downward by gravity and will react to collisions with other objects.
+Adding a Rigidbody component to an object will put its motion under the control of [Mesh Physics](../../enhance-your-environment/physics/mesh-physics-overview.md). Without adding any code, a Rigidbody object will be pulled downward by gravity and will react to collisions with other objects.
 
 **Note**: `GeometryNode.Friction` will return `staticFriction`. However, if set on the Mesh Cloud Scripting side, it will update both `staticFriction` and `dynamicFriction` on clients.
 
