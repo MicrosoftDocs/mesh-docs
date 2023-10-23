@@ -3,10 +3,9 @@ title: Mesh 101 Add interactivity with Mesh Visual Scripting
 description: Learn adding about adding interactivity to objects with Mesh Visual Scripting.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/25/2023
-ms.service: mesh
+ms.date: 10/13/2023
 ms.topic: Tutorial
-ms.prod: mesh
+ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
 ---
 
@@ -67,34 +66,34 @@ Perfect! Now **ButtonBase** is correctly located just in front of the **Backplat
 ### Rename the button
 
 - With **ButtonBase** selected, in the **Inspector**, change the name
-    of **ButtonBase** to "PlayVideoButton".
+    of **ButtonBase** to "PlayVideoButton."
 
     ![A screenshot of Unity showing ButtonBase renamed to PlayVideButton](../../../media/sample-mesh-101/407-buttonbase-rename.png)
 
 **Change the label of the button**
 
-Right now, the text on the button says "Label." Let's change that to
+Right now, the text on the button says **Label**. Let's change that to
 "Play."
 
 1. In the **Hierarchy**, expand the **PlayVideoButton** GameObject to
     display its child object **Button**, then expand **Button** to display its child objects, and then select the **Label** child object.
 
-    ![A screenshot of a  ](../../../media/sample-mesh-101/408-label-object.png)
+    ![A screenshot of a Unity showing hierarcchy with Label for Button highlighted.](../../../media/sample-mesh-101/408-label-object.png)
 
 1. In the **Inspector**, navigate to the **TextMeshPro -- Text**
     component, and then, in the **Text Input** box, change the text to
     "Play."
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/036-play-label-v2.png)
+    ![A screenshot of Unity showing inspector for the Button Label with the text Play highlighted.](../../../media/sample-mesh-101/036-play-label-v2.png)
 
 ### Create the Visual Script for the button
 
 1. In the **Hierarchy**, ensure that **PlayVideoButton** is selected.
 1. In the **Inspector**, click **Add Component**, and then select **Script Machine**.
 
-    Note that two new components have been added in the **Inspector**: **Script Machine** and **Variables.** There's also a new window named *Mesh Visual Scripting Diagnostics* at the bottom of the **Inspector**. This window will give you feedback on your visual script and can be useful for troubleshooting.
+    Note that two new components have been added in the **Inspector**: **Script Machine** and **Variables**. There's also a new window named *Mesh Visual Scripting Diagnostics* at the bottom of the **Inspector**. This window will give you feedback on your visual script and can be useful for troubleshooting.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/201-script-machine-v2.png)
+    ![A screenshot of a Unity showing two components that were added, Script Machine and Variables.](../../../media/sample-mesh-101/201-script-machine-v2.png)
 
 1. Note that in the **Script Machine** component, the **Source** option is set to **Graph**. You have two choices for **Source**: *Graph* and *Embed*. Click **Source** and then select **Embed**.
 
@@ -108,7 +107,7 @@ Right now, the text on the button says "Label." Let's change that to
 
 1. In the **Script Machine** component, click **Edit Graph**. This opens the **Script Graph** window. Drag and place it next to the **Project** and **Console** tab, if it's not already there, so that we can see the script graph and **Scene** window at the same time.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/409-script-graph-docked.png)
+    ![A screenshot of Unity showing the Script Machine component highlighted with Script graph open.](../../../media/sample-mesh-101/409-script-graph-docked.png)
 
     As we add nodes, you may want more space in the window; you can click the three-dot button and then select **Maximize** to achieve this, or click the **Full Screen** button in the upper right corner of the window.
 
@@ -129,11 +128,11 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 
 1. Drag **Button** from the **Hierarchy** and then drop it in the script graph.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/410-drag-button.png)
+    ![A screenshot of Uniy showing the Button being dragged to the script graph.](../../../media/sample-mesh-101/410-drag-button.png)
 
 1. In the **Node** menu, select **Button**. A *Game Object Literal* node referencing that object is added to the graph.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/411-game-object-button-node.png)
+    ![A screenshot of Unity showing the Script graph selected and button object displaying in the Script Graph window.](../../../media/sample-mesh-101/411-game-object-button-node.png)
 
 ***
 
@@ -141,19 +140,19 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 
 *Mesh Interactable Setup*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named [*Grab, hold and throw with Interactables*](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
 
-![A screenshot of a video play Description ](../../../media/sample-mesh-101/478-mesh-interactable-setup.png)
+![A screenshot of Unity showing the Mesh interactable setup window and included settings.](../../../media/sample-mesh-101/478-mesh-interactable-setup.png)
 
 *Script Machine*: This has a script graph named *Button Base Behaviour.*
 
-![A screenshot of a video play Description ](../../../media/sample-mesh-101/479-script-machine-button-base.png)
+![A screenshot of Unity showing hte Button Base behavior window for Script Machine.](../../../media/sample-mesh-101/479-script-machine-button-base.png)
 
 If you go into Play mode, you'll see that a new component named **Mesh Interactable Body** is added to **Button**.
 
-![A screenshot of a video play Description ](../../../media/sample-mesh-101/412-mesh-interactable-body.png)
+![A screenshot of Unity showing the new component Mesh Interactable Body added to the Button component.](../../../media/sample-mesh-101/412-mesh-interactable-body.png)
 
 This component is added automatically at runtime to interactable bodies; it exposes various properties to Visual Scripting such as *IsHovered* and *IsSelected*, which will come in handy in a moment.
 
-You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Play mode tint has been changed to blue. This can help you to tell at a glance which mode you're in. To change the Play mode tint:
+You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Play mode tint has been changed to yellow. This can help you to tell at a glance which mode you're in. To change the Play mode tint:
 
 1. On the menu bar, select **Edit** > **Preferences**.
 1. In the left-side menu, select **Colors**.
@@ -168,13 +167,13 @@ In the script graph, let's add a node that lets us know when the button is selec
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/413-fuzzy-finder.png)
 
-1. Search for "Is Selected", and then, in the list, select *Mesh Interactable Body: IsSelected*." 
+1. Search for **Is Selected**, and then, in the list, select **Mesh Interactable Body: IsSelected**. 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/414-is-selected-node.png)
 
     **Note**: This node outputs a Boolean value; you can confirm this in the **Graph Inspector**.
 
-1. Drag a connector from the output port of the "Is Selected" node and then create a new node called "Microsoft Mesh: On State Changed." (In the Fuzzy Finder, search for "on state changed.")
+1. Drag a connector from the output port of the **Is Selected** node and then create a new node called **Microsoft Mesh: On State Changed**. (In the Fuzzy Finder, search for **on state changed**.)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/415-on-state-changed.png)
 
@@ -184,11 +183,11 @@ These are our three button-click detection nodes. The *Is Selected* node starts 
 
 If *On State Changed* has a value of true, the video will play. If it's already playing and the button is pressed, *On State Changed* changes to a value of false and the video stops playing. Our next step is to add an *if* node to determine this flow.
 
-1. Drag a connector from the output control port of the "On State Changed" node and then create a new *if* node. (In the Fuzzy Finder, search for "if.")
+1. Drag a connector from the output control port of the **On State Changed** node and then create a new *if* node. (In the Fuzzy Finder, search for **if**.)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/416-if-node.png)
 
-1. Drag a connector from the output data port of the "On State Changed" node to the input data port of the *if* node. 
+1. Drag a connector from the output data port of the **On State Changed** node to the input data port of the *if* node. 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/432-if-data-input.png)
 
@@ -198,41 +197,41 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/454-isplaying-var.png)
 
-1. Drag a connector from the **True** output control port of the "If" node and then create a new *Set Object Variable* node. (In the Fuzzy Finder, search for "set object."). 
+1. Drag a connector from the **True** output control port of the **If** node and then create a new *Set Object Variable* node. (In the Fuzzy Finder, search for **set object**.). 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/417-set-object-variable-node.png)
 
-1. In the **Set Object Variable** node, click the variable name drop-down and then select "isPlaying."
+1. In the **Set Object Variable** node, click the variable name drop-down and then select **isPlaying**.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/418-set-var-is-playing.png)
 
     The *isPlaying* variable has to perform double-duty here. To ensure that *isPlaying* always has the correct value, let's give it input from a *Negate* node.
 
-1. Drag a connector from the data input port of the "Set Object Variable: isPlaying" node and then create a new *Negate* node. (In the Fuzzy Finder, search for "negate.")
+1. Drag a connector from the data input port of the **Set Object Variable: isPlaying** node and then create a new *Negate* node. (In the Fuzzy Finder, search for **negate**.)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/419-add-negate-node.png)
 
-1. Drag a connector from the data input port of the "Negate" node and then create a new *Get Object Variable* node. (In the Fuzzy Finder, search for "get object variable".)
-1. In the **Set Object Variable" node, click the variable name drop-down and then select "isPlaying."
+1. Drag a connector from the data input port of the **Negate** node and then create a new *Get Object Variable* node. (In the Fuzzy Finder, search for **get object variable**.)
+1. In the **Set Object Variable** node, click the variable name drop-down and then select **isPlaying**.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/420-get-object-is-playing.png)
 
-The *Negate* node does some math to make the value of *IsPlaying* to change to the opposite of whatever it's currently set to. When the scene starts, *isPlaying* is false (the default). When the Play/Stop button is clicked, the *Negate* node causes *isPlaying* in the **Set Object Variable** node to be set to true and this makes the video play. When the button is clicked again, the *Negate* node will cause *isPlaying* to be reset to false and this will make the video stop.
+The *Negate* node makes the value of *IsPlaying* change to the opposite of whatever it's currently set to. When the scene starts, *isPlaying* is false (the default). When the Play/Stop button is clicked, the *Negate* node causes *isPlaying* in the **Set Object Variable** node to be set to true and this makes the video play. When the button is clicked again, the *Negate* node will cause *isPlaying* to be reset to false and this will make the video stop.
 
 ### Turning the video on or off
 
-Now we'll add the nodes that detect if *isPlaying* changes and plays or stops the video based on that change.
+Now we'll add the nodes that detect if *isPlaying* changes; the video will play or stop based on that change.
 
 1. In the lower part of the graph, add a *Get Object Variable* node and set its value to *isPlaying*. (You can right-click in the graph and then select **Add Node**.)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/421-get-var-is-playing-second-node.png)
 
-1. Drag a connector from the data output port of the "Get Object Variable: isPlaying" node and then create a new *On State Changed* node. (In the Fuzzy Finder, search for "on state changed".)
+1. Drag a connector from the data output port of the **Get Object Variable: isPlaying** node and then create a new *On State Changed* node. (In the Fuzzy Finder, search for **on state changed**.)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/422-on-state-changed-second.png)
 
-1. Drag a connector from the control output port of the "On State Changed" node and then create a new *If* node. (In the Fuzzy Finder, search for "if".)
-1. Drag a connector from the data output port of the "On State Changed" node and then connect it to the data input port of the *if* node.
+1. Drag a connector from the control output port of the **On State Changed** node and then create a new *If* node. (In the Fuzzy Finder, search for **if**.)
+1. Drag a connector from the data output port of the **On State Changed** node and then connect it to the data input port of the *if* node.
 
     ![A screenshot of a video play Description](../../../media/sample-mesh-101/423-if-node.png)
 
@@ -242,41 +241,41 @@ Now we'll add the nodes that detect if *isPlaying* changes and plays or stops th
 
 1. Select **Video** and then, in the **Inspector**, note the following:
 
-    - **Video** has a component named **Video Player**, which has a video attached named "WindTurbine".
+    - **Video** has a component named **Video Player**, which has a video attached named **WindTurbine**.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/424-video-player.png)
 
-    - **Video** is inactive.
+    - **Video** is inactive (the check box next to its name is empty).
 
 1. In the **Hierarchy**, select the **VideoStill** GameObject and then, in the **Inspector**, note the following:
 
     - **VideoStill** has a still image attached.
 
-    - **VideoStill** is active.
+    - **VideoStill** is active (the check box next to its name is selected).
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/425-videostill.png)
 
-When the scene starts, the video screen displays a still image (due to **VideoStill** being active) and does *not* play a video (which is due to **Video** being inactive). When the participant presses the Play/Stop button (which shows "Play"), it makes **Video**  active, which causes the video to play, and simultaneously makes **VideoStill** inactive, which hides the still image. When the participant presses the button again (which now shows "Stop"), **Video** is made inactive, stopping the video, and **VideoStill** is made active again, which makes the video screen display the still image. 
+When the scene starts, the video screen displays a still image (due to **VideoStill** being active) and does *not* play a video (which is due to **Video** being inactive). When the participant presses the Play/Stop button (which shows **Play**), it makes **Video**  active, which causes the video to play, and simultaneously makes **VideoStill** inactive, which hides the still image. When the participant presses the button again (which now shows **Stop**), **Video** is made inactive, stopping the video, and **VideoStill** is made active again, which makes the video screen display the still image. 
 
 The remaining nodes in our graph make all of this happen.
 
-1. Drag a connector from the True output control port of the "if" node and create a new *Game Object: Set Active* node. (In the Fuzzy Finder, search for "set active".)
+1. Drag a connector from the True output control port of the **if** node and create a new *Game Object: Set Active* node. (In the Fuzzy Finder, search for **set active**.)
 1. In the *Game Object: Set Active* node, click the round button in the GameObject field, and then, in the **Select GameObject** window, search for and select **Video**.
 1. Select the node's **Value** check box, which makes the node active.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/426-set-active-video-node.png)
 
-1. Drag a connector from the output control port of the "Game Object: Set Active" node and then create another new *Game Object: Set Active* node.
-1. In the new *Game Object: Set Active* node, click the round button in the GameObject field (which currently displays "This"), and then, in the **Select GameObject** window, search for and select **VideoStill**.
+1. Drag a connector from the output control port of the **Game Object: Set Active** node and then create another new *Game Object: Set Active* node.
+1. In the new *Game Object: Set Active* node, click the round button in the GameObject field (which currently displays **This**), and then, in the **Select GameObject** window, search for and select **VideoStill**.
 1. Keep the **Value** check box unselected. This makes the node inactive.
 
-Now when the button is clicked, the video will play and the still image will be hidden. We need just one more thing in this sequence. Since the Play/Stop button is a toggle, we have to make sure that after the participant clicks "Play," the button's label changes to "Stop," and then when it's clicked again, the label changes back to "Play". To achieve this, we'll add a *TextMeshPro* node.
+    Now when the button is clicked, the video will play and the still image will be hidden. We need just one more thing in this sequence. Since the Play/Stop button is a toggle, we have to make sure that after the participant clicks **Play,** the button's label changes to **Stop,** and then when it's clicked again, the label changes back to **Play**. To achieve this, we'll add a *TextMeshPro* node.
 
-1. Drag a connector from the output control port of the last "Game Object: Set Active" node and create a new *Text Mesh Pro: Set Text* node. (In the Fuzzy Finder, search for "set text".)
+1. Drag a connector from the output control port of the last **Game Object: Set Active** node and create a new *Text Mesh Pro: Set Text* node. (In the Fuzzy Finder, search for **set text**.)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/427-set-text.png)
 
-    We need to set this node's target GameObject to "Label". However, there are lots of "Label" GameObjects in the project, and they all look the same in the node's popup list, so let's add this object by using the drag and drop method.
+    We need to set this node's target GameObject to **Label**. However, there are lots of "Label" GameObjects in the project, and they all look the same in the node's popup list, so let's add this object by using the drag and drop method.
 
 1. Drag the **Label** GameObject that's a child of the **Button** object from the **Hierarchy** and then drop it in the first field in the *Set Test* node.
 
@@ -288,7 +287,7 @@ Now when the button is clicked, the video will play and the still image will be 
 
 ### Making the video stop
 
-Just three more nodes to go for this graph! We need to set up the false condition for the button: "If the button is clicked while the video is playing, the *isPlaying* variable becomes false and it causes the video to stop and the button label to change to "Play" again."
+Just three more nodes to go for this graph! We need to set up the false condition for the button: "If the button is clicked while the video is playing, the *isPlaying* variable becomes false and it causes the video to stop and the button label to change to **Play** again."
 
 We can take a shortcut here.
 
@@ -298,10 +297,10 @@ We can take a shortcut here.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/430-duplicated-nodes.png)
 
-1. Drag a connector from the False output control port of the last "if" node and connect it to the control input port of the first *Game Object: Set Active* node in the duplicated set of nodes.
-1. In that same first *Game Object: Set Active* node (the one that contains "Video"), deselect **Value**.
-1. In the second *Game Object: Set Active* node in the duplicated set (the one that contains "VideoStill"), select **Value**.
-1. In the **Set Text** node, change the text from "Stop" to "Play."
+1. Drag a connector from the False output control port of the last **if** node and connect it to the control input port of the first *Game Object: Set Active* node in the duplicated set of nodes.
+1. In that same first *Game Object: Set Active* node (the one that contains **Video**), deselect **Value**.
+1. In the second *Game Object: Set Active* node in the duplicated set (the one that contains **VideoStill**), select **Value**.
+1. In the **Set Text** node, change the text from **Stop** to **Play**.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/431-final-node-settings-for-button.png)
 
@@ -314,7 +313,7 @@ There may be times when you want a script's events to be experienced only by the
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/434-local-script-scope.png)
 
-For this tutorial, we want all participants in the experience to be able to see any interactions with the video player and see the video itself play and pause. To ensure this, make sure the "Share visual script variables on this Game Object" option is selected. The information box below this option tells you what's shared and what remains local.
+For this tutorial, we want all participants in the experience to be able to see any interactions with the video player and see the video itself play and pause. To ensure this, make sure the **Share visual script variables on this Game Object** option is selected. The information box below this option tells you what's shared and what remains local.
 
 ![A screenshot of a video play Description ](../../../media/sample-mesh-101/435-share-variables.png)
 
@@ -324,13 +323,13 @@ For this tutorial, we want all participants in the experience to be able to see 
     button.
 
 1. In the **Game** window, click the **Play** button you just worked
-    on. This causes the label on the button to change to "Stop" and a brief video about wind turbines to play on the
+    on. This causes the label on the button to change to **Stop** and a brief video about wind turbines to play on the
     screen above the button.
 
     ![A screenshot of a video playback Description ](../../../media/sample-mesh-101/image044.jpg)
 
 1. When you've finished watching the video, press the button you've
-    been editing again (it now has the label "Stop").
+    been editing again (it now has the label **Stop**).
 
 1. Press the Unity Editor Play button to exit Play mode.
 
@@ -349,7 +348,7 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
     ![A screen shot of 3.2 - Info_Dialog GameObject Hierarchy with Information_Button selected](../../../media/sample-mesh-101/480-wrapper.png)
 
-    In the **Inspector**, note that **InfoButtonWrapper** has the **Local Script Scope* component attached and that its "Share visual script variables on this Game Object" option isn't selected. 
+    In the **Inspector**, note that **InfoButtonWrapper** has the **Local Script Scope** component attached and that its **Share visual script variables on this Game Object** option isn't selected. 
     
     ![A screen shot of 3.2 - Info_Dialog GameObject Hierarchy with Information_Button selected](../../../media/sample-mesh-101/437-share-variables-off.png)
     
@@ -359,11 +358,11 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
     ![A screen shot of the Information_Button's Inspector](../../../media/sample-mesh-101/436-edit-graph-button.png)
 
-1. In the graph, drag a connector from the "True" output control port of the "If" node and then create a new "Microsoft Mesh: Show Dialog" node . (In the Fuzzy Finder, search for "show dialog".)
+1. In the graph, drag a connector from the **True** output control port of the **If** node and then create a new **Microsoft Mesh: Show Dialog** node . (In the Fuzzy Finder, search for **show dialog**.)
 
     ![A screen shot showing the if node connect to the new Show Dialog node.](../../../media/sample-mesh-101/303-show-dialog.png)
 
-1. In the **Show Dialog** node, click the **Message** field and then replace the word "Message" with this sentence:
+1. In the **Show Dialog** node, click the **Message** field and then replace the word **Message** with this sentence:
 
     *Did you know that the world's largest wind turbine has blades longer than a football field?*
 
@@ -371,7 +370,7 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
     ![A screen shot showing Show Dialog node with a message added.](../../../media/sample-mesh-101/304-show-dialog-message.png)
 
-1. Select the drop-down that currently displays **OK**, and then, in the popup list, deselect **OK** and select **Continue**. This will add a "Continue" button to the info dialog that the user can click to close the dialog after they finish reading its message.
+1. Select the drop-down that currently displays **OK**, and then, in the popup list, deselect **OK** and select **Continue**. This will add a **Continue** button to the info dialog that the user can click to close the dialog after they finish reading its message.
 
     ![A screen shot showing Show Dialog node with a message added.](../../../media/sample-mesh-101/305-show-dialog-continue.png)
 
@@ -425,7 +424,7 @@ examine the generator.
 
     ![A screen shot](../../../media/sample-mesh-101/440-teleport-graph-embedded.png)
 
-    Note also that there's a **Local Script Scope** component attached and its "Share visual script variables" option is *not* selected. When a participant clicks the teleport button, we only want *them* to teleport, not everyone in the scene!
+    Note also that there's a **Local Script Scope** component attached and its **Share visual script variables** option is *not* selected. When a participant clicks the teleport button, we only want *them* to teleport, not everyone in the scene!
 
     ![A screen shot](../../../media/sample-mesh-101/445-event-not-shared.png)
 
@@ -437,13 +436,13 @@ In the **Teleport Button Behavior** group, the logic is similar to what you saw 
 
 ### Create a Travel Point and add a reference to it
 
-So what's a "Travel Point", you might be asking ... ? Basically, it's a component that you can use to define a point in space to spawn or teleport to. Normally, you would first create a *Travel Group*, and then add one or more Travel Points to it. We've already created the Travel Group for you in this project, so in the steps below, we'll add a Travel Point to that group. We'll then use that Travel point as the location the avatar will go to when they click the "Teleport" button. To learn more, see our article named [*Create avatar spawn and teleport points*](../../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md).
+So what's a "Travel Point", you might be asking ... ? Basically, it's a component that you can use to define a point in space to spawn or teleport to. Normally, you would first create a *Travel Group*, and then add one or more Travel Points to it. We've already created the Travel Group for you in this project, so in the steps below, we'll add a Travel Point to that group. We'll then use that Travel point as the location the avatar will go to when they click the **Teleport** button. To learn more, see our article named [*Create avatar spawn and teleport points*](../../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md).
 
 1. In the **Hierarchy**, create a new empty GameObject as a child object to **TravelGroup** and then rename it "TeleportLocationWindTurbine".
 
     ![A screen shot](../../../media/sample-mesh-101/311-teleport-location.png)
 
-1. In the **Inspector**, click the **Add Component** button and then search for and add the *Travel Point* component.
+1. In the **Inspector**, click the **Add Component** button and then search for and add the **Travel Point** component.
 
     ![A screen shot](../../../media/sample-mesh-101/461-add-travelpoint.png)
 
@@ -465,17 +464,17 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
 
     The avatar will teleport to this location.
 
-1. In the **Inspector**, make the "TeleportLocationWindTurbine" GameObject inactive by deselecting the check box next to its name. If you have more than one TravelPoint object active at runtime, Unity randomly picks one of the active Travel Points as the spawning point for the avatar. We want to ensure that the avatar spawns at the point indicated by the **TeleportLocationChapter3** GameObject, so that should be the only active Travel Point.
+1. In the **Inspector**, make the **TeleportLocationWindTurbine** GameObject inactive by deselecting the check box next to its name. If you have more than one TravelPoint object active at runtime, Unity randomly picks one of the active Travel Points as the spawning point for the avatar. We want to ensure that the avatar spawns at the point indicated by the **TeleportLocationChapter3** GameObject, so that should be the only active Travel Point.
 
     ![A screen shot](../../../media/sample-mesh-101/442-active-travel-point.png)
 
 ### Adding the teleport nodes
 
-1. In the **Teleport to Open Air Platform** script graph, group: **Teleport to OpenPlatform**, drag a connector from the True output control port of the "If" node and then create a new node called "Game Object: Set Active." (In the Fuzzy Finder, search for "set active".)
+1. In the **Teleport to Open Air Platform** script graph, group: **Teleport to OpenPlatform**, drag a connector from the True output control port of the **If** node and then create a new node called **Game Object: Set Active**. (In the Fuzzy Finder, search for **set active**.)
 
     ![A screen shot](../../../media/sample-mesh-101/314-set-active-node.png)
 
-1. Drag the **TeleportLocationWindTurbine**  object from the **Hierarchy** and then drop it in the field that displays "This" in the *Game Object: Set Active* node.
+1. Drag the **TeleportLocationWindTurbine**  object from the **Hierarchy** and then drop it in the field that displays **This** in the *Game Object: Set Active* node.
 
     ![A screen shot](../../../media/sample-mesh-101/443-set-active-teleport.png)
 
@@ -483,13 +482,13 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
 
 ### Add the Travel Point node
 
-1. Drag a connector from the output control port of the "Game Object: Set Active" node and then create a new node called "Travel Point: Travel to Point." (In the Fuzzy Finder, search for "travel point: travel".)
+1. Drag a connector from the output control port of the **Game Object: Set Active** node and then create a new node called **Travel Point: Travel to Point**. (In the Fuzzy Finder, search for **travel point: travel**.)
 
-1. In the "Travel Point: Travel to Point" node, click the round button in the field that displays **This**, and then, in the **Select TravelPoint** window, select "TeleportLocationWindTurbine".
+1. In the **Travel Point: Travel to Point** node, click the round button in the field that displays **This**, and then, in the **Select TravelPoint** window, select **TeleportLocationWindTurbine**.
 
     ![A screen shot](../../../media/sample-mesh-101/444-select-travel-point.png)
 
-There's just one thing left to do in this graph. Note that the "Set Object Variable" node contains an object variable named *TeleportNow*. After the teleport happens, we want this variable to be set to false. So far, *TeleportNow* has only been used in the part of the graph that was already set up for you so we haven't talked about it. Let's take a look at how it works in the scene so you can understand what's happening.
+There's just one thing left to do in this graph. Note that the **Set Object Variable** node contains an object variable named *TeleportNow*. After the teleport happens, we want this variable to be set to false. So far, *TeleportNow* has only been used in the part of the graph that was already set up for you so we haven't talked about it. Let's take a look at how it works in the scene so you can understand what's happening.
 
 The *TeleportNow* object variable is type *Boolean* and has a default value of False.
 
@@ -505,7 +504,7 @@ The setting of True for *TeleportNow* is what triggers the sequence of nodes in 
 
 After the teleport has occurred, *TeleportNow* needs to be reset to False so that the whole process can be repeated the next time the button is clicked. We've already set up the nodes for this; all you need to do is make the connection.
 
-- In the **Teleport to OpenPlatform** group, drag a connector from the output control port of the "Travel Point: Travel to Point" node and then connect it to the input control point of the "Set Object Variable: TeleportNow" node.
+- In the **Teleport to OpenPlatform** group, drag a connector from the output control port of the **Travel Point: Travel to Point** node and then connect it to the input control point of the **Set Object Variable: TeleportNow** node.
 
 ![A screen shot](../../../media/sample-mesh-101/449-connect-final-teleportnow.png)
 
@@ -513,7 +512,7 @@ After the teleport has occurred, *TeleportNow* needs to be reset to False so tha
 
 1. In the Unity Editor, save the project and then press the Unity Editor Play button.
 
-1. Go to Station 3.3 and then click the "Teleport" button to teleport up to the wind turbine generator.
+1. Go to Station 3.3 and then click the **Teleport** button to teleport up to the wind turbine generator.
 
     ![A screenshot](../../../media/sample-mesh-101/319-teleport-button.png)
 

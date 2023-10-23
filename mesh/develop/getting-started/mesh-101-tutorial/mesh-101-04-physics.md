@@ -4,7 +4,7 @@ description: Learn how to move objects and trigger animations with Mesh Interact
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 9/28/2023
+ms.date: 10/13/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, physics, interactables
 ---
@@ -117,7 +117,7 @@ done that for you.
 
 ## Station: 4.2 Animation Trigger
 
-The idea here is that when you drag a wind turbine over the ocean, the "wind" causes the turbine's blades to spin. What actually happens is that a transparent cube named **Animation Trigger** is located over the ocean and acts as a trigger volume. If you drag a wind turbine into the trigger volume, it sets off an "On Trigger Enter" event that starts a spinning-blade animation.
+The idea here is that when you drag a wind turbine over the ocean, the "wind" causes the turbine's blades to spin. What actually happens is that a transparent cube named **Animation Trigger** is located over the ocean and acts as a trigger volume. If you drag a wind turbine into the trigger volume, it sets off an **On Trigger Enter** event that starts a spinning-blade animation.
 
 For this chapter, we'll add a script to a GameObject and then enable animation in the script.
 
@@ -133,10 +133,13 @@ For this chapter, we'll add a script to a GameObject and then enable animation i
 
     ![A screenshot](../../../media/sample-mesh-101/321-is-trigger.png)
 
+> [!TIP]
+> When you select **Is Trigger**, it makes the object the collider component is attached to a trigger volume.
+
 1. In the **Hierarchy**, navigate to **Chapter 4** > **4.1 - Grab and Release** and then select **WindTurbine1**.
 1. Click the **Add Component** button, and then search for and add **Script Machine.**
 
-We want our script to be embedded, but that usually means you must start creating a new script graph from scratch. We'll take a shortcut; leave the **Source** option set to "Graph" for now. We'll attach an existing script graph and then convert it into an embedded graph.
+We want our script to be embedded, but that usually means you must start creating a new script graph from scratch. We'll take a shortcut; leave the **Source** option set to **Graph** for now. We'll attach an existing script graph and then convert it into an embedded graph.
 
 1. Click the button in the **Graph** field and then, in the **SelectSceneGraph** window, select *SPWindTurbineScript*.
 
