@@ -4,10 +4,8 @@ description: Learn adding about adding interactivity to objects with Mesh Visual
 author: typride
 ms.author: vinnietieto
 ms.date: 10/13/2023
-ms.prod: mesh
-
 ms.topic: Tutorial
-ms.prod: mesh
+ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
 ---
 
@@ -80,13 +78,13 @@ Right now, the text on the button says **Label**. Let's change that to
 1. In the **Hierarchy**, expand the **PlayVideoButton** GameObject to
     display its child object **Button**, then expand **Button** to display its child objects, and then select the **Label** child object.
 
-    ![A screenshot of a  ](../../../media/sample-mesh-101/408-label-object.png)
+    ![A screenshot of a Unity showing hierarcchy with Label for Button highlighted.](../../../media/sample-mesh-101/408-label-object.png)
 
 1. In the **Inspector**, navigate to the **TextMeshPro -- Text**
     component, and then, in the **Text Input** box, change the text to
     "Play."
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/036-play-label-v2.png)
+    ![A screenshot of Unity showing inspector for the Button Label with the text Play highlighted.](../../../media/sample-mesh-101/036-play-label-v2.png)
 
 ### Create the Visual Script for the button
 
@@ -95,7 +93,7 @@ Right now, the text on the button says **Label**. Let's change that to
 
     Note that two new components have been added in the **Inspector**: **Script Machine** and **Variables**. There's also a new window named *Mesh Visual Scripting Diagnostics* at the bottom of the **Inspector**. This window will give you feedback on your visual script and can be useful for troubleshooting.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/201-script-machine-v2.png)
+    ![A screenshot of a Unity showing two components that were added, Script Machine and Variables.](../../../media/sample-mesh-101/201-script-machine-v2.png)
 
 1. Note that in the **Script Machine** component, the **Source** option is set to **Graph**. You have two choices for **Source**: *Graph* and *Embed*. Click **Source** and then select **Embed**.
 
@@ -109,7 +107,7 @@ Right now, the text on the button says **Label**. Let's change that to
 
 1. In the **Script Machine** component, click **Edit Graph**. This opens the **Script Graph** window. Drag and place it next to the **Project** and **Console** tab, if it's not already there, so that we can see the script graph and **Scene** window at the same time.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/409-script-graph-docked.png)
+    ![A screenshot of Unity showing the Script Machine component highlighted with Script graph open.](../../../media/sample-mesh-101/409-script-graph-docked.png)
 
     As we add nodes, you may want more space in the window; you can click the three-dot button and then select **Maximize** to achieve this, or click the **Full Screen** button in the upper right corner of the window.
 
@@ -130,11 +128,11 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 
 1. Drag **Button** from the **Hierarchy** and then drop it in the script graph.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/410-drag-button.png)
+    ![A screenshot of Uniy showing the Button being dragged to the script graph.](../../../media/sample-mesh-101/410-drag-button.png)
 
 1. In the **Node** menu, select **Button**. A *Game Object Literal* node referencing that object is added to the graph.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/411-game-object-button-node.png)
+    ![A screenshot of Unity showing the Script graph selected and button object displaying in the Script Graph window.](../../../media/sample-mesh-101/411-game-object-button-node.png)
 
 ***
 
@@ -142,15 +140,15 @@ The first goal, detect if the button is clicked, will require three nodes. The G
 
 *Mesh Interactable Setup*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named [*Grab, hold and throw with Interactables*](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
 
-![A screenshot of a video play Description ](../../../media/sample-mesh-101/478-mesh-interactable-setup.png)
+![A screenshot of Unity showing the Mesh interactable setup window and included settings.](../../../media/sample-mesh-101/478-mesh-interactable-setup.png)
 
 *Script Machine*: This has a script graph named *Button Base Behaviour.*
 
-![A screenshot of a video play Description ](../../../media/sample-mesh-101/479-script-machine-button-base.png)
+![A screenshot of Unity showing hte Button Base behavior window for Script Machine.](../../../media/sample-mesh-101/479-script-machine-button-base.png)
 
 If you go into Play mode, you'll see that a new component named **Mesh Interactable Body** is added to **Button**.
 
-![A screenshot of a video play Description ](../../../media/sample-mesh-101/412-mesh-interactable-body.png)
+![A screenshot of Unity showing the new component Mesh Interactable Body added to the Button component.](../../../media/sample-mesh-101/412-mesh-interactable-body.png)
 
 This component is added automatically at runtime to interactable bodies; it exposes various properties to Visual Scripting such as *IsHovered* and *IsSelected*, which will come in handy in a moment.
 
