@@ -50,5 +50,5 @@ Build environments in Unity and then upload to the the Mesh portal. Within the M
 ## Next steps
 
  > [!div class="nextstepaction"]
- > [Prerequisites](prerequisites.md)
+ > [Prerequisites](getting-started/prerequisites.md)
 
