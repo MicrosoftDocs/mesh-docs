@@ -3,7 +3,7 @@ title: Content Performance Analyzer
 description: Learn how to use the Content Performance analyzer to optimize your Mesh experience.
 author: Cameron-Micka
 ms.author: vinnietieto
-ms.date: 10/4/2023
+ms.date: 10/20/2023
 ms.service: mesh
 ms.topic: How to
 keywords: Microsoft Mesh, Unity, performance, resources
@@ -58,4 +58,4 @@ After you click **Run All**, the words "Passed" or "Failed" will be added to eac
 > [!TIP] 
 > You can export results to a .CSV file and then open it in Microsoft Excel by clicking the **Export to CSV** button.
 
-Most restrictions for each analyzer are detailed in the [*Designing for Mesh*](../design/overview.md) series of articles or the [*Mesh Physics*](../enhance-your-environment/physics-interactions.md) article.
+Most restrictions for each analyzer are detailed in the [*Designing for Mesh*](../design/overview.md) or the [*Mesh Physics*](../enhance-your-environment/physics/mesh-physics-overview.md) articles.
