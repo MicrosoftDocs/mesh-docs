@@ -62,7 +62,7 @@ Here's what to do for UnityEvent in a `SignalReceiver` as the starting point:
     1. Target the `ScriptMachine` you've created for the visual script.
 
     1. For the function to call, select `ScriptMachine > TriggerUnityEvent (string)`.
-    1. In the parameter field, enter the name you've chosen (for example, `DoThing`).
+    1. In the parameter field, enter the name of the UnityEvent trigger (for example, `DoThing`).
 
     ![Dialog box for `SignalReceiver`](media/signal-receiver-box.png)
 
