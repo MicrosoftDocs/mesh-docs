@@ -29,16 +29,11 @@ to easily get a first impression of a multi-user scenario.
 
 **To use Play Mode in your project**:
 
-1.  Add a *PlaymodeSetup [NoUpload]* prefab to the scene: right-click
-    in the **Hierarchy**, and then select **Mesh Toolkit** >
-    **PlaymodeSetup**.
+1.  Ensure that you have the Mesh Toolkit imported.
+1.  Ensure that the scene contains a piece of solid floor below the origin that's set to the *NavMesh* layer.
+1.  Press the Play button. The Toolkit checks to see if a GameObject with "PlaymodeSetup" in its name exists at the top level of the **Hierarchy**. If it doesn't, this dialog appears:
 
-    ![A screenshot of a computer Description automatically generated](../../media/debug-and-optimize/image041.jpg)
-
-2.  Ensure that the scene contains a piece of solid floor below the
-    origin that's set to the *NavMesh* layer.
-
-3.  Press the Play button.
+![A screenshot of a computer program Description automatically generated with medium confidence](../../media/debug-and-optimize/003-playmode-missing-setup-dialog.png)
 
 ## Teleport Player on Play
 
