@@ -66,6 +66,12 @@ Here's what to do for UnityEvent in a `SignalReceiver` as the starting point:
 
     ![Dialog box for `SignalReceiver`](media/signal-receiver-box.png)
 
+#### Physics
+
+* Added the component `LocalPhysicsScope`to create a part of the scene hierarchy where rigidbodies are not synced among clients.
+
+* Added the component `ThrowTrajectory` to calculate future positions of the rigidbody trajectory.
+
 #### WebSlate
 
 * We fixed an issue where it would allow scripting ([Visual scripting](/mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-overview) and [Cloud scripting](/mesh/develop/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts)) to correctly control WebSlate at start-up.
