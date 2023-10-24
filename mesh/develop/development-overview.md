@@ -47,20 +47,6 @@ The Mesh Toolkit is free to download; however a Teams Premium license is require
 
 Build environments in Unity and then upload to the the Mesh portal. Within the Mesh application, bring your environment to life and lead attendees through stage-managed events with rich host tooling for customization and event moments.
 
-## Preview developer tools
-
-As a developer, you may desire to develop using the preview version of Microsoft Mesh. This gives developers access the upcoming version to test and prepare before the preview version is released to the public.
-
-The release schedule generally follows this plan:
-
-In the second week of the month, the Preview version is released to allow developers three full weeks to test.
-
-After three weeks, the preview version is promoted to public and the cycle repeats.
-
-### Preview links
-
-
-
 ## Next steps
 
  > [!div class="nextstepaction"]
