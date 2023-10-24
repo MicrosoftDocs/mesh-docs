@@ -556,7 +556,7 @@ Offsets the center of mass of a rigidbody.
 
 ### Local Physics Scope
 
-All rigidbodies in the scene hierarchy under this component will no be synced among clients.
+All rigidbodies in the scene hierarchy under this component will not be synced among clients.
 This script should be added to rigidbodies whose position or rotation is set through a visual script or an animation.
 
 ![Screen shot of the Local Physics Scope settings in the Inspector.](../../../media/physics-interactions/062-local-physics-scope.png)
