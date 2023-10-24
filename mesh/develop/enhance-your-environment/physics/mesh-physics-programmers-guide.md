@@ -413,6 +413,29 @@ Offsets the center of mass of a rigidbody.
 
 * **Offset In Local Coordinates** defines the offset in local coordinates.
 
+### Local Physics Scope
+
+All rigidbodies in the scene hierarchy under this component will not be synced among clients.
+This script should be added to rigidbodies whose positions or rotations are set through a visual script or an animation.
+
+![Screen shot of the Local Physics Scope settings in the Inspector.](../../../media/physics-interactions/062-local-physics-scope.png)
+
+### Throw Trajectory
+
+Calculates the rigidbody's future position in free space under the effect of gravity.
+
+![Screen shot of the Throw Trajectory script options in the Inspector.](../../../media/physics-interactions/063-throw-trajectory.png)
+
+**Settings:**
+
+- **Rigidbody Mode**: When set to true, the rigidbody position and velocity are taken as initial conditions. Enables real time future position calculation.
+- **Rigidbody**: Defines which rigidbody is taken. This only applies when **Rigidbody Mode** is set to *true*.
+- **Initial Velocity**: Defines the initial velocity (this applies only when **Rigidbody Mode** is set to false). The initial position is taken from the position of the GameObject this component is attached to.
+- **Max Number Of Points**: Defines the maximum number of calculated points.
+- **Time Step**: Defines the time difference between the future positions.
+- **Gravity**: This is the gravitational acceleration.
+- **Line Renderer**: Specifies the line renderer the position of points are copied to. This displays the throw trajectory.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
