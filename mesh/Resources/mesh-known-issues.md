@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 # Active known issues - Mesh
 
-## Version 5.2312.0
+## Version 5.2313.0
 
 * The current way for how to determine which version of the environment to use for an event will be improved.
 
