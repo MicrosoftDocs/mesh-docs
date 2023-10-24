@@ -563,7 +563,7 @@ This script should be added to rigidbodies whose positions or rotations are set 
 
 ### Throw Trajectory
 
-Calculates the rigidbody future position in a free space under the effect of gravity.
+Calculates the rigidbody's future position in free space under the effect of gravity.
 
 ![Screen shot of the Throw Trajectory script options in the Inspector.](../../../media/physics-interactions/063-throw-trajectory.png)
 
