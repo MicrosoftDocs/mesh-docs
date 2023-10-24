@@ -6,17 +6,9 @@ items:
     - name: Known issues
       href: avatars-known-issues.md
   - name: Immersive spaces release notes
-    items:
-    - name: What's new
-      href: immersive-spaces-release-notes.md
-    - name: Known issues
-      href: immersive-spaces-known-issues.md
+    href: immersive-spaces-known-issues.md
   - name: Mesh release notes
-    items:
-    - name: What's new
-      href: mesh-release-notes.md
-    - name: Known issues
-      href: mesh-known-issues.md
+    href: mesh-known-issues.md
   - name: Mesh Toolkit release notes
     items:
     - name: What's new

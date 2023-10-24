@@ -40,29 +40,29 @@ These are the offerings and packages currently available. There may be slight di
 
 #### Scripting
 
-**Visual scripting restrictions**
+**Restrictions on UnityEvents and animation events in Unity**
 
-Every UnityEvent is affected by this restriction:
+UnityEvents and animation events must call into visual scripts. They are not allowed to directly manipulate properties or invoke methods. This restriction applies to the following:
 
-* including in a Timeline `SignalReceiver`
-* In Animation Events
+* in a Timeline `SignalReceiver`
+* in Animation Events
 
-Here's what to do for UnityEvent in the context of a `SignalReceiver` as the starting point:
+Here's what to do for UnityEvent in a `SignalReceiver` as the starting point:
 
-1. For Animation Events, it's essentially the same except you'd use the **Animation Event** visual script trigger and the corresponding `TriggerAnimationEvent` function on the `ScriptMachine` object, as the *Function* in the Animation Event – the `Float``, `Int`, `String` parameters there can be used or filled arbitrarily.
+1. For Animation Events, it's the same except you can use the **Animation Event** visual script trigger and the corresponding `TriggerAnimationEvent` function on the `ScriptMachine` object, where the *Function* in the Animation Event and the `Float`, `Int`, `String` parameters can be used or filled arbitrarily.
 
-1. Create a `ScriptMachine`` for a visual script that uses an UnityEvent trigger and that performs the action you'd like to do.
+1. Create a `ScriptMachine` for a visual script that uses an UnityEvent trigger and that performs the action you'd like to do.
  
-1. Choose a name for that trigger, for example `DoThing`. It doesn't matter what name you choose, you just have to repeat it in the UnityEvent so it makes sense for it to be somewhat memorable and descriptive:
+1. Choose a descriptive name for the UnityEvent trigger, for example `DoThing`:
 
     ![Dialog box for UnityEvent and `TriggerAnimationEvent`](media/unity-event-dialog.png)
  
-1. In the `SignalReceiver`, set up the UnityEvent like this:
+1. In the `SignalReceiver`, set up the UnityEvent by the following steps:
 
-    * Target the `ScriptMachine` you've created for the visual script
+    1. Target the `ScriptMachine` you've created for the visual script.
 
-    * For the function to call, select `ScriptMachine > TriggerUnityEvent (string)`
-    * In the parameter field, enter the name you've chosen (for example, `DoThing`)
+    1. For the function to call, select `ScriptMachine > TriggerUnityEvent (string)`.
+    1. In the parameter field, enter the name of the UnityEvent trigger (for example, `DoThing`).
 
     ![Dialog box for `SignalReceiver`](media/signal-receiver-box.png)
 
