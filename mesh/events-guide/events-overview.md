@@ -31,7 +31,7 @@ Create the event in the Mesh portal, customize it in the Microsoft Mesh app, cre
 
 Need help? See [how to download Mesh on Quest 2 via App Lab](../Resources/mesh-troubleshooting.md#how-to-download-mesh-on-quest-2-via-app-lab).
 
-*For Microsoft Mesh (Preview), download [Microsoft Mesh (Preview) on Meta Quest - Meta Store](https://www.meta.com/experiences/6427141004030955/).*
+*For Microsoft Mesh (Preview) on Meta Quest, download [Microsoft Mesh (Preview) on Meta Quest - Meta Store](https://www.meta.com/experiences/6427141004030955/).*
 
 ## Key capabilities of Mesh event experiences
 
