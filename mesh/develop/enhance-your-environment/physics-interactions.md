@@ -573,7 +573,7 @@ Calculates the rigidbody's future position in free space under the effect of gra
 - **Rigidbody**: Defines which rigidbody is taken. This only applies when **Rigidbody Mode** is set to *true*.
 - **Initial Velocity** defines the initial velocity (only when **Rigidbody Mode** is set to false). The initial position is taken from the gameobject position, to which this component is attached to.
 - **Max Number Of Points** defines maximum number of calculated points.
-- **Time Step** defines the time difference between the future positions.
+- **Time Step**: Defines the time difference between the future positions.
 - **Gravity** is the gravitational acceleration.
 - **Line Renderer** specifies the line renderer to which the position of points are copied. This displays the throw trajectory.
 
