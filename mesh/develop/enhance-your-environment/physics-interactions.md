@@ -570,7 +570,7 @@ Calculates the rigidbody future position in a free space under the effect of gra
 **Settings:**
 
 - **Rigidbody Mode**: When set to true, the rigidbody position and velocity are taken as initial conditions. Enables real time future position calculation.
-- **Rigidbody** defines which rigidbody is taken (only when **Rigidbody Mode** is set to true)
+- **Rigidbody**: Defines which rigidbody is taken. This only applies when **Rigidbody Mode** is set to *true*.
 - **Initial Velocity** defines the initial velocity (only when **Rigidbody Mode** is set to false). The initial position is taken from the gameobject position, to which this component is attached to.
 - **Max Number Of Points** defines maximum number of calculated points.
 - **Time Step** defines the time difference between the future positions.
