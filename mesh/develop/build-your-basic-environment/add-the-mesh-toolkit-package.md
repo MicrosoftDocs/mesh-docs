@@ -31,9 +31,29 @@ To add the Mesh Toolkit package to your Unity project:
 
 1. Click the **Packages** dropdown in the toolbar and select **My Registries**.
 
-1. Select **Microsoft Mesh Toolkit** in the list and click the **Install** button in the right pane.
+1. Select **Microsoft Mesh Toolkit** in the list and click the **Install**  button in the right pane. You can select the version, install a preview version, and update/remove versions.
+
+    :::image type="content" source="../../media/build-your-basic-environment/Microsft-Mesh-toolkit-download-pacakge-install-unity.png" alt-text="Screenshot of Unity package manager, install options for preview or public mesh toolkit.":::
 
 1. Wait for the spinner in that list item to disappear.
+
+## Preview developer tools
+
+As a developer, you may desire to develop using the preview version of Microsoft Mesh. This gives developers access the upcoming version to test and prepare before the preview version is released to the public.
+
+The release schedule generally follows this plan:
+
+In the second week of the month, the Preview version is released to allow developers three full weeks to test.
+
+After three weeks, the preview version is promoted to public and the cycle repeats.
+
+To download the latest Mesh Toolkit or preview version, see the
+[Mesh Toolkit for Unity | GitHub](https://github.com/microsoft/Mesh-Toolkit-Unity/releases).
+
+>[!Caution]
+>This is a preview release of the Mesh Toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh Toolkit will only work with the preview version of Mesh, and **are not compatible with the stable version of Mesh**. If you don't have access to Mesh preview, do not upgrade to this version of the Mesh Toolkit until a stable version is released.  Stable versions will not have a **-preview** tag at the end of the version number.  
+> 
+> **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
 
 ## Next steps
 
