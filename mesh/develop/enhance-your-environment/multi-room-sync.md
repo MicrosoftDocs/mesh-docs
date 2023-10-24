@@ -4,7 +4,7 @@ description: Learn about the multi-room sync features you can add to your Enviro
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 10/3/2023
+ms.date: 10/23/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Unity, environments, scenes, events, animations, timelines, templates, video, playables
 ---
@@ -79,24 +79,19 @@ Unity Tutorial series on using [**Timelines**](https://learn.unity.com/project/u
 
     **Notes**:
 
-    - We suggest that you give this GameObject a more descriptive
-        name---for example, *1_Entrance_Doors*. For this scenario, we'll
+    - For an actual project you're working on, we suggest that you give this GameObject a more descriptive
+        name---for example, *1_Entrance_Doors*. For this learning scenario, we'll
         stick with the name "Timeline1."
 
-    - If you have a door-opening animation, selecting the Play button will
-        open the door in your scene. Selecting the Stop button will reset
-        the animation back to its original position. A Playable will *not*
-        animate in reverse; to do this, you'll need to create a different
-        animation.
+    - A Playable will *not* animate in reverse. Let's say, for example, that you have a door-opening animation. Selecting the Play button will open the door in your scene, and selecting the Stop button will reset the animation back to its original position. To animate in reverse, you'll need to create a different animation.
 
-    **IMPORTANT**: Multiple timelines on a single GameObject will *not*
-    work and will cause issues in events.
+        **IMPORTANT**: Multiple timelines on a single GameObject will *not*
+        work and will cause issues in events.
 
 1. In the **Project** tab, navigate to the **Assets** folder and then
     create a new folder named *Animations*.
 
-1. In the **Hierarchy**, select **Timeline1**, and then select **Window
-    Sequencing >Timeline**.
+1. In the **Hierarchy**, select **Timeline1**, and then select **Window** > **Sequencing** > **Timeline**.
 
 1. We recommend that you move the **Timeline** tab next to the
     **Project** and **Console** tabs. This allows you to view the
@@ -109,16 +104,13 @@ Unity Tutorial series on using [**Timelines**](https://learn.unity.com/project/u
     ![Graphical user interface, website Description automatically generated](../../media/enhance-your-environment/image035.png)
 
 1. In the **Save** window, change the name of the Playable to
-    *Open_Doors* and then save it to the **Assets Animations**
-    folder**.
-    **
+    *Open_Doors* and then save it to the **Assets** > **Animations** folder.
 
     ![A screenshot of a computer Description automatically generated with medium confidence](../../media/enhance-your-environment/image036.png)
 
 1. You can now animate or customize your Timeline---for example, add
-    animation clips, activation clips, and more. For more on how to do
-    this, watch this tutorial series:
-
+    animation clips, activation clips, and more. To learn more about this, [see the Timeline tutorial](https://learn.unity.com/tutorial/introduction-to-timeline-2019-3#) on the Unity Learn website.
+    
     A Timeline with several tracks might look something like this:
 
     ![___](../../media/enhance-your-environment/image037.jpg)

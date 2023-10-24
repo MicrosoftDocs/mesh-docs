@@ -24,7 +24,7 @@ If you had previously downloaded the **Napili** app on your Quest 2 device, you 
 1. On your PC, visit the link below to download Mesh on Quest 2.
 
     > [!div class="nextstepaction"]
-    > [Microsoft Mesh (Preview) on Oculus Quest 2 \| Oculus](https://www.oculus.com/experiences/quest/8919580184782498/)
+    > [Microsoft Mesh (Preview) on Oculus Quest 2 \| Oculus](https://www.meta.com/experiences/6750166401689690/)
 
     If the URL doesn't work, use a new private window in your browser.
 
