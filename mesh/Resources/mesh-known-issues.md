@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.2312.0
 
-* The current way for how to determine which version of the environment to use for an event will be improved. 
+* The current way for how to determine which version of the environment to use for an event will be improved.
 
     This is the current behavior we ship for Public Preview:
 
@@ -21,7 +21,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
     * For the Event itself: The environment used by the event is determined by the first join to the event.  So let's say by the time someone first joins the same Build Review event, the latest **Lakehouse** environment is version 3, the Build Review event will always use version 3.
 
-    For future releases, organizers to an event will have better control over which version of the environment to use for their event, or the latest version of an environment is used by default. 
+    For future releases, organizers to an event will have better control over which version of the environment to use for their event, or the latest version of an environment is used by default.
 
 * You will need to make a new event for every new version of the environment that you upload. 
 
