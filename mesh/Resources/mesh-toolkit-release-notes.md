@@ -53,11 +53,11 @@ Here's what to do for UnityEvent in a `SignalReceiver` as the starting point:
 
 1. Create a `ScriptMachine` for a visual script that uses an UnityEvent trigger and that performs the action you'd like to do.
  
-1. Choose a descriptive name for that trigger, for example `DoThing`:
+1. Choose a descriptive name for the UnityEvent trigger, for example `DoThing`:
 
     ![Dialog box for UnityEvent and `TriggerAnimationEvent`](media/unity-event-dialog.png)
  
-1. In the `SignalReceiver`, set up the UnityEvent by the following:
+1. In the `SignalReceiver`, set up the UnityEvent by the following steps:
 
     1. Target the `ScriptMachine` you've created for the visual script.
 
