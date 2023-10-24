@@ -575,7 +575,7 @@ Calculates the rigidbody's future position in free space under the effect of gra
 - **Max Number Of Points** defines maximum number of calculated points.
 - **Time Step**: Defines the time difference between the future positions.
 - **Gravity** is the gravitational acceleration.
-- **Line Renderer** specifies the line renderer to which the position of points are copied. This displays the throw trajectory.
+- **Line Renderer**: Specifies the line renderer the position of points are copied to. This displays the throw trajectory.
 
 
 ## Common Settings: Body Filters
