@@ -72,7 +72,6 @@ This article contains a brief tutorial on how to use UnityEvents with Visual Scr
 
 - You can't pass any parameters into the script flow.
 
-
 ## UnityEvents and Timeline Signals
 
 You can trigger a UnityEvent from a Timeline by adding a Signal Emitter, then creating a Signal Asset and connecting it to the Signal emitter, and then creating a Signal Receiver component. Inside the Signal Receiver, you select a Signal Asset and then choose the function you wish you call (in other words, the UnityEvent). This is similar to how the UnityEvents work in the Button example explained above--the same event callback, *ScriptMachine.TriggerUnityEvent*, is used.
@@ -84,6 +83,116 @@ In this example, we created a Signal Asset named *Clicks*.
 To learn more about using Signals in the Timeline, [see this Unity Blog](https://blog.unity.com/engine-platform/how-to-use-timeline-signals).
 
 ## AnimationEvents
+
+1. Open the *ScienceBuilding* project.
+1. Dock the **Console** window to the right of the **Scene** window so that you can see both simultaneously.
+1. In the **Hierarchy**, search for and then select the *ReceptionBot* GameObject.
+
+**TIP**: To easily find *ReceptionBot*, type "bot" in the **Hierarchy** search box.
+
+### Copy ReceptionBot's animation
+
+*ReceptionBot* has an animation named *ReceptionBot_clip* attached that causes it to point to various info dialogs pop up around it. However, the current animation is read-only, which means you won't be able to add an AnimationEvent to it. Let's copy it and then use the editable copy.
+
+1. In the **Project** window, search for "reception." This will return a list that includes the **ReceptionBot_clip**. 
+
+    **IMPORTANT**: There are two items in the list with the name "ReceptionBot_clip." One is an .FBX file, and the other is the animation we want. Make sure you select the correct one before proceeding with the next step of copying.
+
+    ![Screenshot of the two similarly named items with the correct one to copy outlined in red.](../../media/enhance-your-environment/unityevents/016-anim-copy.png)
+
+1. Select the correct **ReceptionBot_clip** and then press Ctrl + D to copy it.
+1. Rename the copy "ReceptionBot_clip_copy."
+1. In the **Hierarchy**, search for and then select the *ReceptionBot* GameObject.
+1. In the **Inspector**, navigate to the **Animation** component and note that it currently points to **ReceptionBot_clip**.
+1. Drag the **ReceptionBot_clip_copy** from the **Project** folder and then drop it in the **Animation** component's **Animation** property.
+
+    ![Screenshot of the animation copy in ReceptionBot's Animation component.](../../media/enhance-your-environment/unityevents/017-drag-anim-copy-clip.png)
+
+1. In the component's **Animations** section, select the **Element** that contains **ReceptionBot_clip** and click the minus ("-") button to delete it.
+
+    ![Screenshot of the original animation clip being deleted.](../../media/enhance-your-environment/unityevents/018-delete-original-anim.png)
+
+### Viewing the animation
+
+1. In the **Scene** window, adjust the view so that you can clearly see *ReceptionBot* from the front.
+1. On the menu bar, select **Window** > **Animation** > **Animation**.
+1. Dock the **Animation** window next to the **Project** window.
+1. In the **Animation** window, move the playback head to frame 224 as show below. Note that at that point in the **Scene** window, *ReceptionBot* is pointing to the first in a series of informational popups. We're going to insert an AnimationEvent at this point that causes the **Console** to display a message indicating that *ReceptionBot* has pointed to the popup.
+
+    ![Screenshot of ReceptionBot pointing at the first info popup and the Animation window showing the frame when this occurs.](../../media/enhance-your-environment/unityevents/012-robot-points.png)
+
+    First, though, we'll create the visual script that we'll be calling from the animation.
+
+**TIP**: You can scrub the Animation timeline to zero in on the precise frame that you want to add an AnimationEvent to.
+
+### Create the Visual Script
+
+1. With **ReceptionBot** selected in the **Hiearchy**, select the **Add Component** button in the **Inspector** and then add the **Script Machine** component.
+1. Click the **Source** drop-down and then select **Embed**.
+1. Click the **Edit Graph** button.
+1. Dock the **Script Graph** window next to the **Animation** window and then delete the two default nodes, **On Start** and **On Update**.
+
+    ![Screenshot of the new Script Window with the default nodes displayed.](../../media/enhance-your-environment/unityevents/013-delete-default-nodes.png)
+
+    There are two types of AnimationEvent nodes, as shown below. The function called by an Animation Event has the option to take one parameter; it can be a float, string, int, or object reference, or an AnimationEvent object. In the node on the right, you can add a name. This is the node we'll use here.
+
+1. Right-click in the script graph and then, in the Fuzzy Finder, search for "named anim" and then add the *Named Animation Event* node.
+1. In the node, add the name "ShowMessage."
+
+    ![Screenshot of the new Script Window with the default nodes displayed.](../../media/enhance-your-environment/unityevents/014-node-with-name.png)
+
+1. Drag a connector from the output control port of the AnimationEvent node and then create a new *Debug Log* node (in the Fuzzy Finder, search for **debug log**.)
+1. Drag a connector from the data input port of the **Debug Log** node and then create a new **String** node (in the Fuzzy Finder, search for **string litera**.)
+1. In the **String** node, add this text: "Bot pointed to the first popup."
+
+    ![Screenshot of the three nodes required for our script graph.](../../media/enhance-your-environment/unityevents/015-string-node-with-message.png)
+
+### Add the AnimationEvent in the Animation window
+
+1. Select the **Animation tab**.
+1. In the **Animation** window, ensure that the playback head is at frame 224.
+1. Click the Add Event button. This will cause an AnimationEvent marker to appear at frame 224.
+
+    ![Screenshot of the Add Event button in the Animation window.](../../media/enhance-your-environment/unityevents/019-add-event-button.png)
+
+1. In the **Inspector**, select the **Function** drop-down, and then select **Script Machine** > **Methods** > **TriggerAnimationEvent (Animation Event)**.
+
+    ![Screenshot of the Animation Event's Function drop-down with Trigger Animation Event Animation Event selected.](../../media/enhance-your-environment/unityevents/020-choose-function.png)
+
+1. Recall that when you created the script machine for *ReceptionBot* you named the **AnimationEvent** node *ShowMessage*. 
+
+    ![Screenshot of the new Script Window with the default nodes displayed.](../../media/enhance-your-environment/unityevents/014-node-with-name.png)
+
+    Add this name to the **String** property in the **Animation Event** property list. This ensures that when the AnimationEvent in the **Animation** window fires at frame 224, it connects to the **AnimationEvent** node in the script graph and function that displays the message in the **Console**.
+
+    ![Screenshot of the new Script Window with the default nodes displayed.](../../media/enhance-your-environment/unityevents/021-string-property-filled-in.png)
+
+### Test your work
+
+1. Save the project and then press the Unity Editor Play button.
+2. Note that after a few seconds, the message from the **String** node in the script graph, "Bot pointed to the first popup.", displays in the **Console**.
+
+    ![Screenshot of the new Script Window with the default nodes displayed.](../../media/enhance-your-environment/unityevents/022-message-in-console.png)
+
+Your Playmode avatar, with attached camera, doesn't appear in the reception area by default, so you can't initially see the synchronization between the bot pointing and the display of the message. If you want to view this synchronization, you must navigate to the reception area and get a close-up view of *ReceptionBot*.
+
+![Screenshot of the new Script Window with the default nodes displayed.](../../media/enhance-your-environment/unityevents/023-view-bot-pointing.png)    
+
+The reception area is forward and to the left of the original vantage point of the camera.
+
+![Screenshot of the new Script Window with the default nodes displayed.](../../media/enhance-your-environment/unityevents/025-reception-area-ground-view.png)
+
+**Navigation tips**:
+
+Move foreward:  W
+Move back:      S
+Move left:      A
+Move right:     D
+Pan left:       Q
+Pan right:      E
+
+You can also pan up/down/left/right with your mouse's buttons.
+
 
 
 
