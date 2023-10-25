@@ -17,7 +17,7 @@ UnityEvents and AnimationEvents can be an effective way to employ user-driven ca
 
 1. Drag the **Console** window into the right side of the **Scene** window so you can view them side-by-side.
 1. On the menu bar, select **GameObject** > **UI** > **Legacy** > **Button.**
-1. Ensure that **Button** is selected, and then, in the **Inspector**, rest **Button** so that its **Rect Transform** component's XYZ values are all set to zero.
+1. Ensure that **Button** is selected, and then, in the **Inspector**, reset **Button** so that its **Rect Transform** component's XYZ values are all set to zero.
 
     ![Screenshot of a button in the Scene window.](../../media/enhance-your-environment/unityevents/001-button.png)
 
