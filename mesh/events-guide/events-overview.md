@@ -24,7 +24,7 @@ Create the event in the Mesh portal, customize it in the Microsoft Mesh app, cre
 
 *For Microsoft Mesh (Preview), download [Microsoft Mesh (Preview) - Microsoft Store Apps](https://apps.microsoft.com/detail/microsoft-mesh-preview/9N138ZR0KQWX?hl=en-us&gl=US).*
 
-### Download Microsoft Mesh for Meta Quest devices via App Lab
+### Download Microsoft Mesh for Meta Quest devices
 
 > [!div class="nextstepaction"]
 > [Download Microsoft Mesh on Meta Quest | Meta Store](https://www.meta.com/experiences/6750166401689690/)
