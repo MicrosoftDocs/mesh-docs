@@ -11,11 +11,11 @@ keywords: Microsoft Mesh, Unity, environments, scenes, events, animations, timel
 
 # UnityEvents and AnimationEvents
 
-This article contains a brief tutorial on how to use UnityEvents with Visual Scripting. **IMPORTANT**: UnityEvents can *only* be used in script graphs; they're not available in cloud scripting.
+UnityEvents and AnimationEvents can be an effective way to employ user-driven callbacks. Normally, UnityEvents can set properties and invoke methods on components, and AnimationEvents can call script methods from certain points in an animation. However, Mesh has restrictions you should keep in mind: UnityEvents and AnimationEvents are only allowed to initiate visual script flows (which can then set properties and invoke methods). UnityEvents can point to *ScriptMachine.TriggerUnityEvent* and AnimationEvents can point to *ScriptMachine.TriggerAnimationEvent*. From there, corresponding visual script flows can be triggered through "Unity Event" or "Animation Event" event nodes. This article walks you through brief tutorials for setting up and using both UnityEvents and AnimationEvents. 
 
 ## UnityEvent in a basic script
 
-1. Drag the Console window into the right side of the Scene window.
+1. Drag the **Console** window into the right side of the **Scene** window so you can view them side-by-side.
 1. On the menu bar, select **GameObject** > **UI** > **Legacy** > **Button.**
 1. Ensure that **Button** is selected, and then, in the **Inspector**, rest **Button** so that its **Rect Transform** component's XYZ values are all set to zero.
 
@@ -70,7 +70,7 @@ This article contains a brief tutorial on how to use UnityEvents with Visual Scr
 
 **Notes**
 
-- You can't pass any parameters into the script flow.
+- With the *ScriptMachine.TriggerUnityEvent* function, you can't pass any parameters into the script flow.
 
 ## UnityEvents and Timeline Signals
 
