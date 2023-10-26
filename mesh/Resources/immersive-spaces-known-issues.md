@@ -25,9 +25,6 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
     - or [clear the Teams cache](https://learn.microsoft.com/microsoftteams/troubleshoot/teams-administration/clear-teams-cache).
 
-    >[!Note]
-    >These workarounds are worth trying, but may not work for all users. 
-
 1. When a meeting participant is sharing screen with audio, the audio won’t play in the immersive space on the virtual stage. If you want to share your screen with audio, you must come out of the immersive space.
 
 1. **Default Mic/Speaker Settings:** When going to the immersive space, Mesh handles the audio for users instead of Teams in order to enable spatial audio. However, Mesh uses the default OS settings, which might be a different mic and speaker that Teams uses. This may sometimes result in loss of audio for speaker/mic. You will need to double-check that the correct audio devices are selected on the pre-join screen when you go into the immersive space. If you're experiencing audio issues, check which mic/speaker Mesh uses by going into the Immersive space and select **Settings > Display & sound > Devices**, and update mic and speaker settings.
