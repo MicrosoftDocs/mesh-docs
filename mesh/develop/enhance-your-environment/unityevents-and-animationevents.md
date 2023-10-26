@@ -204,12 +204,12 @@ The reception area is forward and to the left of the original vantage point of t
 
 **Navigation tips**:
 
-Move foreward:  W
-Move back:      S
-Move left:      A
-Move right:     D
-Pan left:       Q
-Pan right:      E
+Move foreward:  W  
+Move back:      S  
+Move left:      A  
+Move right:     D  
+Pan left:       Q  
+Pan right:      E  
 
 You can also pan up/down/left/right with your mouse's buttons.
 
