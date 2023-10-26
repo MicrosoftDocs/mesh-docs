@@ -4,18 +4,20 @@ description: Learn about how to use UnityEvents and AnimationsEvents in your pro
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 10/23/2023
+ms.date: 10/26/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, Unity, environments, scenes, events, animations, timelines, unityevents, animationevents, scripting, script graph
+keywords: Microsoft Mesh, Unity, environments, scenes, events, animations, timelines, unityevents, animationevents, scripting, script graph, science building
 ---
 
 # UnityEvents and AnimationEvents
 
-UnityEvents and AnimationEvents can be an effective way to employ user-driven callbacks. Normally, UnityEvents can set properties and invoke methods on components, and AnimationEvents can call script methods from certain points in an animation. However, Mesh has restrictions you should keep in mind: UnityEvents and AnimationEvents are only allowed to initiate visual script flows (which can then set properties and invoke methods). UnityEvents can point to *ScriptMachine.TriggerUnityEvent* and AnimationEvents can point to *ScriptMachine.TriggerAnimationEvent*. From there, corresponding visual script flows can be triggered through "Unity Event" or "Animation Event" event nodes. This article walks you through brief tutorials for setting up and using both UnityEvents and AnimationEvents. 
+UnityEvents and AnimationEvents can be an effective way to employ user-driven callbacks. Normally, UnityEvents can set properties and invoke methods on components, and AnimationEvents can call script methods from certain points in an animation. However, Mesh has restrictions that you should keep in mind: UnityEvents and AnimationEvents are only allowed to initiate visual script flows (which can then set properties and invoke methods). UnityEvents can point to *ScriptMachine.TriggerUnityEvent* and AnimationEvents can point to *ScriptMachine.TriggerAnimationEvent*. From there, corresponding visual script flows can be triggered through "Unity Event" or "Animation Event" event nodes. This article walks you through brief tutorials for setting up and using both UnityEvents and AnimationEvents. 
 
 ## UnityEvent in a basic script
 
-### Create a button
+To demonstrate how a UnityEvent in a visual script works, we'll create a button that, when clicked, causes a message to appear in the **Console** window.
+
+### Create the button
 
 1. In your project, drag the **Console** window into the right side of the **Scene** window so you can view them side-by-side.
 1. On the menu bar, select **GameObject** > **UI** > **Legacy** > **Button.**
@@ -24,17 +26,17 @@ UnityEvents and AnimationEvents can be an effective way to employ user-driven ca
 
     ![Screenshot of a button in the Scene window.](../../media/enhance-your-environment/unityevents/001-button.png)
 
-1. In the **Inspector**, navigate to the **Button** component and note that there's an **On Click()** UnityEvent. 
+1. In the **Inspector**, navigate to the **Button** component and note that it contains an **On Click()** UnityEvent. 
 
 ## Create a Script Machine
 
-    Right now, there are no events to trigger--we'll add something here in a moment. First, let's create the event. We'll keep it simple and set things up so that when you click the button, a message appears in the **Console**.
+Right now, there are no events to trigger--we'll add something here in a moment. First, let's create the event. We'll keep it simple and set things up so that when you click the button, a message appears in the **Console**.
 
 1. On the menu bar, select **GameObject** > **Create Empty**.
-1. Change the empty's name to *MessageHolder*.
+1. Change the empty object's name to *MessageHolder*.
 1. In the **Inspector**, select the **Add Component** button and then search for and add **Script Machine**.
-1. In the **Script Machine**, select the **Source** drop-down and then select **Embed**.
-1. Select the **Edit Graph** button, and then dock the **Script Graph** window next to the **Project** tab.
+1. In the **Script Machine** component, select the **Source** drop-down and then select **Embed**.
+1. Select the **Edit Graph** button, and then dock the **Script Graph** window next to the **Project** window.
 1. In the script graph, delete the two default nodes.
 1. Right-click in the graph and then add the **UnityEvent Event** node.
 
@@ -65,7 +67,7 @@ UnityEvents and AnimationEvents can be an effective way to employ user-driven ca
 
     ![Screenshot of the menu item trigger unity event string.](../../media/enhance-your-environment/unityevents/008-trigger-unity-event-string.png)
 
-    The final step here is to add the *name* of the UnityEvent node you want to trigger to the **On Click()** event. In a more complex script graph, you might have several to choose from, each with a different name; in our simple example, there's only one: *ShowClickMessage*.
+    The final step here is to add the UnityEvent node you want to trigger to the **On Click()** event. In a more complex script graph, you might have several to choose from, each with a different name; in our simple example, there's only one: *ShowClickMessage*.
 
     ![Screenshot of the UnityEvent node name added to the On Click event.](../../media/enhance-your-environment/unityevents/009-add-node-name-to-onclick.png)
 
@@ -96,31 +98,33 @@ To learn more about using Signals in the Timeline, [see this Unity Blog](https:/
 
 ## AnimationEvents
 
-Using AnimationEvents is similar to using UnityEvents; instead of pointing to *ScriptMachine.TriggerUnityEvent*, an AnimationEVent points to *ScriptMachine.TriggerAnimationEvent*. For this example, we'll use the [ScienceBuilding sample](../getting-started/samples/science-building.md) contained in the Mesh Toolkit, which is already set up with assets you can use.
+You can increase the power of animation clips With AnimationEvents, which allow you to call a function from a clip at a specific point in time, or a specific frame, that you specify. Using AnimationEvents is similar to using UnityEvents; instead of pointing to *ScriptMachine.TriggerUnityEvent*, an AnimationEvent points to *ScriptMachine.TriggerAnimationEvent*. For this example, we'll use the [ScienceBuilding sample](../getting-started/samples/science-building.md) that's contained in the Mesh Toolkit and is already set up with assets you can use. We'll work with an animation clip where a robot points to an informational popup; we'll insert an AnimationEvent into the clip that causes the **Console** to display a message when the robot points. We're keeping this simple for learning purposes but you can use AnimationEvents to trigger a range of effects, sounds, or other actions during an animation.
 
 1. Open the *ScienceBuilding* project, and then open the *ScienceBuilding* scene.
 1. Dock the **Console** window to the right of the **Scene** window so that you can see both simultaneously.
 1. In the **Hierarchy**, search for and then select the *ReceptionBot* GameObject.
 
-**TIP**: To easily find *ReceptionBot*, type "bot" in the **Hierarchy** search box.
+    **TIP**: To easily find *ReceptionBot*, type "bot" in the **Hierarchy** search box.
 
 1. Move the cursor over the **Scene** window and then press F on your keyboard to zoom in close to *ReceptionBot*. You may need to adjust the view further in order to see *ReceptionBot* more clearly.
 
 ### Copy ReceptionBot's animation
 
-1. In the **Inspector**, navigate to the **Animation** component and then note that the component contains an animation named *ReceptionBot_clip*. This animation causes *ReceptionBot* to point to various info dialog pop-ups around it. However, this animation is set to read-only, which means you won't be able to add an AnimationEvent to it. Let's copy it and then use the editable copy.
+1. In the **Inspector**, navigate to the **Animation** component.
+
+    Note that the component contains an animation named *ReceptionBot_clip*. This animation causes *ReceptionBot* to point to various info dialogs that pop up around it. However, the animation is set to read-only, which means you won't be able to add an AnimationEvent to it. To get around this, we can copy it and then use the editable copy.
 
 1. In the **Project** window, search for "reception." This will return a list that includes **ReceptionBot_clip**. 
 
-    **IMPORTANT**: There are two items in the list with the name "ReceptionBot_clip." One is an .FBX file, and the other is an animation. Make sure you select the animation before proceeding with the next step of copying. You can confirm this by selecting an item and then viewing the full name in the status bar at the bottom of the window to ensure that it has the *.anim* extension.
+    **IMPORTANT**: There are two items in the list with the name "ReceptionBot_clip." One is an .FBX file, and the other is the  animation clip we're interested in. Make sure you select the *animation clip*, not the .FBX file, before proceeding with the next step of copying. You can confirm that you've selected the right item by viewing its full name in the status bar at the bottom of the window and ensuring that it has the *.anim* extension.
 
     ![Screenshot of the two similarly named items with the correct one to copy outlined in red.](../../media/enhance-your-environment/unityevents/016-anim-copy.png)
 
-1. Select the correct **ReceptionBot_clip** and then press Ctrl + D to copy it.
+1. Select the **ReceptionBot_clip** animation clip and then press Ctrl + D to copy it.
 1. Rename the copy "ReceptionBot_clip_copy."
 1. In the **Hierarchy**, search for and then select the *ReceptionBot* GameObject.
 1. In the **Inspector**, navigate to the **Animation** component and note that it currently points to **ReceptionBot_clip**.
-1. Drag the **ReceptionBot_clip_copy** from the **Project** folder and then drop it in the **Animation** component's **Animation** property, replacing the previous animation clip.
+1. Drag **ReceptionBot_clip_copy** from the **Project** folder and then drop it in the **Animation** component's **Animation** property, replacing the previous animation clip.
 
     ![Screenshot of the animation copy in ReceptionBot's Animation component.](../../media/enhance-your-environment/unityevents/017-drag-anim-copy-clip.png)
 
@@ -133,7 +137,7 @@ Using AnimationEvents is similar to using UnityEvents; instead of pointing to *S
 1. If you haven't done so already, in the **Scene** window, adjust the view so that you can clearly see *ReceptionBot* from the front.
 1. On the menu bar, select **Window** > **Animation** > **Animation**.
 1. Dock the **Animation** window next to the **Project** window.
-1. In the **Animation** window, move the playback head to frame 224 as show below. Note that in the **Scene** window, *ReceptionBot* is pointing to the first in a series of informational popups. We're going to insert an AnimationEvent at this frame which will cause the **Console** to display a message indicating that *ReceptionBot* has pointed to the popup.
+1. In the **Animation** window, move the playback head to frame 224 as show below. Note that in the **Scene** window, *ReceptionBot* is pointing to the first in a series of informational popups. We'll insert our AnimationEvent at this frame.
 
     ![Screenshot of ReceptionBot pointing at the first info popup and the Animation window showing the frame when this occurs.](../../media/enhance-your-environment/unityevents/012-robot-points.png)
 
@@ -154,12 +158,12 @@ Using AnimationEvents is similar to using UnityEvents; instead of pointing to *S
     
     ![Screenshot of the two types of AnimationEvent nodes.](../../media/enhance-your-environment/unityevents/026-animationevent-node-two-types.png)    
     
-     The function called by an Animation Event has the option to take one parameter; it can be a float, string, int, or object reference, or an AnimationEvent object. In the node on the right, you can add a name. This is the node we'll use here.
+    The function called by an AnimationEvent has the option to take one parameter; it can be a float, string, int, or object reference, or an AnimationEvent object. In the node on the right, you can add a name. This is the node we'll use here.
 
 1. Right-click in the script graph and then, in the Fuzzy Finder, search for "named anim" and then add the *Named Animation Event* node.
 1. In the node, add the name "ShowMessage."
 
-    ![Screenshot of the new Script Window with the default nodes displayed.](../../media/enhance-your-environment/unityevents/014-node-with-name.png)
+    ![Screenshot of the AnimationEvent node with the name Show Message.](../../media/enhance-your-environment/unityevents/014-node-with-name.png)
 
 1. Drag a connector from the output control port of the **AnimationEvent** node and then create a new **Debug Log** node (in the Fuzzy Finder, search for **debug log**.)
 1. Drag a connector from the data input port of the **Debug Log** node and then create a new **String** (Literal) node (in the Fuzzy Finder, search for **string literal**.)
@@ -181,30 +185,30 @@ Using AnimationEvents is similar to using UnityEvents; instead of pointing to *S
 
 1. Recall that when you created the script machine for *ReceptionBot* you named the **AnimationEvent** node *ShowMessage*. 
 
-    ![Screenshot of the new Script Window with the default nodes displayed.](../../media/enhance-your-environment/unityevents/014-node-with-name.png)
+    ![Screenshot of the AnimationEvent node with the name Show Message.](../../media/enhance-your-environment/unityevents/014-node-with-name.png)
 
-1. In the **Inspector**, add this name to the text field for the **String** property. This ensures that when the AnimationEvent in the **Animation** window fires at frame 224, it connects to the **AnimationEvent** node in the script graph and the function that displays the message in the **Console**.
+1. In the **Inspector**, add this name to the text field for the **String** property. This ensures that when the AnimationEvent in the **Animation** window fires at frame 224, it connects to the **AnimationEvent** node in the script graph and triggers the function that displays the message in the **Console**.
 
-    ![Screenshot of the new Script Window with the default nodes displayed.](../../media/enhance-your-environment/unityevents/021-string-property-filled-in.png)
+    ![Screenshot of the Animation Event properties with the String property set to Show Message.](../../media/enhance-your-environment/unityevents/021-string-property-filled-in.png)
 
 ### Test your work
 
 1. Save the project and then press the Unity Editor Play button.
 2. Note that after a few seconds, the message from the **String** node in the script graph, "Bot pointed to the first popup.", displays in the **Console**.
 
-    ![Screenshot of the new Script Window with the default nodes displayed.](../../media/enhance-your-environment/unityevents/022-message-in-console.png)
+    ![Screenshot of the Console with the message Bot pointed to the first group displayed and the String node that generates that same message.](../../media/enhance-your-environment/unityevents/022-message-in-console.png)
 
-Your Playmode avatar, with attached camera, doesn't appear in the reception area by default, so you can't initially see the synchronization between the pointing *ReceptionBot* and the display of the message in the **Console**. If you want to view this synchronization, you must navigate to the reception area and get a close-up view of *ReceptionBot*.
+Your [Playmode](../debug-and-optimize-performance/playmode.md) avatar, with attached camera, doesn't appear in the reception area by default, so you can't initially see the synchronization between the pointing *ReceptionBot* and the display of the message in the **Console**. If you want to view this synchronization, you must navigate to the reception area and get a close-up view of *ReceptionBot*.
 
-![Screenshot of the new Script Window with the default nodes displayed.](../../media/enhance-your-environment/unityevents/023-view-bot-pointing.png)    
+![Screenshot of Reception Bot pointing to the first info popup and the Console displaying the message generated at that point by the Animation Event.](../../media/enhance-your-environment/unityevents/023-view-bot-pointing.png)    
 
 The reception area is forward and to the left of the original vantage point of the camera. You can navigate there while in Play mode.
 
-![Screenshot of the new Script Window with the default nodes displayed.](../../media/enhance-your-environment/unityevents/025-reception-area-ground-view.png)
+![Screenshot of the view from the camera vantage point with the reception area highlighted.](../../media/enhance-your-environment/unityevents/025-reception-area-ground-view.png)
 
 **Navigation tips**:
 
-Move foreward:  W  
+Move forward:   W  
 Move back:      S  
 Move left:      A  
 Move right:     D  
