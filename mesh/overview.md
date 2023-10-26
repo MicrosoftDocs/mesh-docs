@@ -6,6 +6,8 @@ author: qianw211
 ms.author: qianwen
 ms.date: 10/5/2023
 ms.topic: overview
+search.appverid: MET150
+audience: 
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
