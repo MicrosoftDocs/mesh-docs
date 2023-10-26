@@ -31,7 +31,7 @@ The scene should have Colliders for the player to walk and teleport on. In gener
 
 ## Supporting Teleportation
 
-In order for a scene to support teleportation, teleportable surfaces (for example, the floor or the ground) must have colliders on the NavMesh layer. In general, anything the player is allowed to walk on should likely be a NavMesh. Visual geometry isn't teleportable and shouldn't be on the NavMesh layer; only Colliders can be a NavMesh. Improper or inconsistent layering can cause undesirable effects when teleporting. 
+In order for a scene to support teleportation, teleportable surfaces (for example, the floor or the ground) must have colliders on the NavMesh layer. In general, any object the player is allowed to walk on should be a NavMesh, unless there is an intentional reason to make it non-teleportable. Visual geometry isn't teleportable and shouldn't be on the NavMesh layer; only Colliders can be a NavMesh. Improper or inconsistent layering can cause undesirable effects when teleporting. 
 
 **A teleportable surface must meet the following conditions:**  
 - It must have some type of Collider attached (Mesh Collider or Box Collider, for example).  
