@@ -19,10 +19,11 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 1. If a user declines to give Mesh access to their microphone upon first launch in Immersive space, they will be completely muted without additional notification. 
 
-    *Workaround:* If this occurs, go into your Teams **Settings -> App permissions**. Select the **Mesh immersive spaces** app, and switch the **Media permissions** on.
+    *Workaround:* If this occurs, you can try either of the following:
+    
+    - go into your Teams **Settings -> App permissions**. Select the **Mesh immersive spaces** app, and switch the **Media permissions** on.
 
-    >[!Note]
-    >This workaround is worth trying, but may not work for all users. 
+    - or [clear the Teams cache](https://learn.microsoft.com/microsoftteams/troubleshoot/teams-administration/clear-teams-cache).
 
 1. When a meeting participant is sharing screen with audio, the audio won’t play in the immersive space on the virtual stage. If you want to share your screen with audio, you must come out of the immersive space.
 
