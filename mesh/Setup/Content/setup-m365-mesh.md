@@ -6,6 +6,8 @@ author: typride
 ms.author: tmilligan
 ms.date: 7/27/2023
 ms.topic: Tutorial
+search.appverid: MET150
+audience: admin
 keywords: Microsoft Mesh, M365, OCPS, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
