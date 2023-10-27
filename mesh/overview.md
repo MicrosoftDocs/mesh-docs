@@ -48,7 +48,7 @@ We are making building relationships easier by bringing the power of Mesh into t
 Create custom immersive spaces in Microsoft Mesh that are tailored to your specific business needs such as employee events, training, guided tours, or internal product showcases.
 
 > [!div class="nextstepaction"]
-> [Set up custom immersive spaces in Microsoft Mesh](Setup/Content/setup-m365-mesh.md)
+> [Set up Microsoft Mesh](Setup/Content/setup-m365-mesh.md)
 
 ### Customize a ready-to-use environment
 
@@ -66,14 +66,14 @@ Use the Mesh toolkit to leverage the power of Unity for fully customizable immer
 :::image type="content" source="media/get-started-developing-mesh/image040-unity-overview-hero.png#lightbox" alt-text="Overview image of Unity development environment for Mesh":::
 
 > [!div class="nextstepaction"]
-> [Learn about developing custom environments in Unity](develop/development-overview.md)
+> [Learn about developing custom environments](develop/development-overview.md)
 
 ## Create and manage events in the Mesh portal
 
 Use the Mesh portal to create or manage events, create event templates to be reused in the future, and manage all your uploaded environments.
 
 > [!div class="nextstepaction"]
-> [Learn about developing custom environments in Unity](setup/Content/manage-mesh-worlds.md)
+> [Learn about the Mesh portal](setup/Content/manage-mesh-worlds.md)
 
 ## Next steps
 
