@@ -35,10 +35,13 @@ Need help? See [how to download Mesh on Quest 2 via App Lab](Resources/mesh-trou
 
 ## Download the Mesh Toolkit
 
-The Mesh Toolkit enables creators and developers to build custom 3D environments and experiences with Unity.
+The Mesh Toolkit enables creators and developers to build custom 3D environments and experiences with Unity. Choose your development journey or add the Mesh Toolkit to your Unity project.
 
 > [!div class="nextstepaction"]
-> [Add the Mesh Toolkit package](develop/build-your-basic-environment/add-the-mesh-toolkit-package.md)
+> [Choose your development journey](develop/getting-started/choose-your-journey.md)
+
+> [!div class="nextstepaction"]
+> [Add the Mesh Toolkit to your Unity project](develop/build-your-basic-environment/add-the-mesh-toolkit-package.md)
 
 ## Next steps
 
