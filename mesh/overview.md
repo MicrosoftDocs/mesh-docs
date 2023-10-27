@@ -42,9 +42,15 @@ We are making building relationships easier by bringing the power of Mesh into t
 > [!div class="nextstepaction"]
 > [Learn about immersive spaces in Microsoft Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams)
 
-## Create a custom immersive space with Microsoft Mesh
+> [!div class="nextstepaction"]
+> [Set up immersive spaces in Microsoft Teams](/microsoftteams/meeting-immersive-spaces)
+
+## Join a custom immersive space with Microsoft Mesh
 
 Create custom immersive spaces in Microsoft Mesh that are tailored to your specific business needs such as employee events, training, guided tours, or internal product showcases.
+
+> [!div class="nextstepaction"]
+> [Set up custom immersive spaces in Microsoft Mesh](Setup/Content/setup-m365-mesh.md)
 
 ### Customize a ready-to-use environment
 
@@ -64,27 +70,20 @@ Use the Mesh toolkit to leverage the power of Unity for fully customizable immer
 > [!div class="nextstepaction"]
 > [Learn about developing custom environments in Unity](develop/development-overview.md)
 
-## Next steps
+## Create and manage events in the Mesh portal
 
-To get started, make sure your organization's admins have set up Microsoft Mesh:
+Use the Mesh portal to create or manage events, create event templates to be reused in the future, and manage all your uploaded environments.
 
 > [!div class="nextstepaction"]
-> [Set up immersive spaces in Microsoft Teams](/microsoftteams/meeting-immersive-spaces)
+> [Learn about developing custom environments in Unity](setup/Content/manage-mesh-worlds.md)
+
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Set up custom immersive spaces in Microsoft Mesh](Setup/Content/setup-m365-mesh.md)
 
-Then, dive in to organize your first Mesh event:
-
 > [!div class="nextstepaction"]
-> [Organize Mesh events](events-guide/events-overview.md)
-
-Experience Mesh by joining a Mesh event:
-
-> [!div class="nextstepaction"]
-> [Join a Mesh event](user-guide/join-an-event.md)
-
-If you have skills using Unity, get started building your own custom environments:
+> [Organize your Mesh event](events-guide/events-overview.md)
 
 > [!div class="nextstepaction"]
 > [Develop Mesh environments](develop/development-overview.md)
