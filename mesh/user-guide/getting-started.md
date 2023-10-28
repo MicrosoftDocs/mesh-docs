@@ -14,6 +14,8 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 Join an event in Microsoft Mesh to experience spatial interaction and feel a sense of co-presence.
 
 ## Download Mesh apps
+> [!IMPORTANT]
+> Ensure you are on the app version that your event organizer intends for you to use. The preview versions of Mesh are typically intended for testing out new features, whereas the normal app is intended for general usage.
 
 ### Download Microsoft Mesh on PC
 

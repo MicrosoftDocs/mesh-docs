@@ -17,6 +17,9 @@ Mesh also has a separate preview build and preview toolkit. These are ideal for 
 
 At a regular cadence we promote the preview build to the stable public build. At this time, this happens every 3 weeks.
 
+> [!IMPORTANT]
+> Ensure you are on the app version that your event organizer intends for you to use. The preview versions of Mesh are typically intended for testing out new features, whereas the normal app is intended for general usage.
+
 ## Download Microsoft Mesh on PC
 
 > [!div class="nextstepaction"]
