@@ -18,9 +18,9 @@ Using the scenario above as an example, here's what you would do:
 1. Create a new Unity project named "GameRooms."
 1. Create an individual Scene for each game room. Name each Scene as follows:
 
-    DartsRoom
-    BilliardsRoom
-    ChessRoom
+    DartsRoom  
+    BilliardsRoom  
+    ChessRoom  
  
 1. Follow the instructions detailed in the [Build and publish your Environment](./build-and-publish-your-environment.md) article to open the Mesh Uploader and then create your first Asset, named "DartsRoom":
 
@@ -41,15 +41,15 @@ Using the scenario above as an example, here's what you would do:
 1. Select **Create Environment** to return to that tab.
 1. Replace the current information displayed in that tab with the information that applies to the *ChessRoom* Experience.
 
-    ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the ChessRoom Environment.](../../media/make-your-environment-available/012-create-chessroom-asset.png)
+    ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the ChessRoom Environment.](../../media/make-your-environment-available/013-create-chessroom-asset.png)
 
     You've now created three Experiences--one for each game room. This finishes our work in the **Create Environment** tab. The Uploader moves us to the **Update Environment** tab; we can stay there because this is where we select the correct Scene for each Experience.
 
-1. In the first Environment Configuration (the one that displays *(New) Dart Room*), click the field that displays **Select a Scene** and then, in the **Select** **SceneAsset** window, double-click **Dartrooms**, so our chosen scene will be the scene also named *DartRoom*.
+1. In the first **Environment Configuration** (the one that displays *(New) Dart Room*), click the field that displays **Select a Scene** and then, in the **Select** **SceneAsset** window, double-click **Dartrooms**.
 1. Repeat the step above for the other two Environment Configurations, selecting **BilliardsRoom** for #2 and **Chessroom** for #3.
 
     ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the ChessRoom Environment.](../../media/make-your-environment-available/014-three-scenes.png)
 
-You're now set up to generate the three different Environments. For instructions on completing the process, see the [Build and publish your Environment](./build-and-publish-your-environment.md) article.
+You're now set up to generate the three different Environments. For instructions on completing the build and publish process, see the [Build and publish your Environment](./build-and-publish-your-environment.md) article.
 
 
