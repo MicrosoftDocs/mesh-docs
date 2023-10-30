@@ -43,7 +43,7 @@ Using the scenario above as an example, here's what you would do:
 
     ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the ChessRoom Environment.](../../media/make-your-environment-available/012-create-chessroom-asset.png)
 
-    You've now created three Experiences--one for each game room. This finishes our work in the **Create Environment** tab; the Uploader moves us to the **Update Environment** tab and we can stay there because this is where we select the correct Scene for each Experience.
+    You've now created three Experiences--one for each game room. This finishes our work in the **Create Environment** tab. The Uploader moves us to the **Update Environment** tab; we can stay there because this is where we select the correct Scene for each Experience.
 
 1. In the first Environment Configuration (the one that displays *(New) Dart Room*), click the field that displays **Select a Scene** and then, in the **Select** **SceneAsset** window, double-click **Dartrooms**, so our chosen scene will be the scene also named *DartRoom*.
 1. Repeat the step above for the other two Environment Configurations, selecting **BilliardsRoom** for #2 and **Chessroom** for #3.
