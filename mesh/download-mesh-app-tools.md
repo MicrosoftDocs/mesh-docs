@@ -11,9 +11,10 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 # Download Mesh apps and tools
 
-Mesh has public build where all users can experience custom worlds and a corresponding toolkit for developers who wish to create custom environments or artifacts to be used in immersive experiences.
+```suggestion
+Mesh has a stable build where most users will experience immersive experiences and a corresponding stable toolkit for developers who wish to create custom environments or artifacts to be used in those immersive experiences.
 
-Mesh also has a separate preview build and preview toolkit. These are ideal for developers who want to test out upcoming features and prepare in advance for the next public build.
+Mesh also has a separate preview build and preview toolkit. These are ideal for developers who want to test out upcoming features and prepare in advance for the next stable build.
 
 At a regular cadence we promote the preview build to the stable public build. At this time, this happens every 3 weeks.
 
