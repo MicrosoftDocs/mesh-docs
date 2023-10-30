@@ -26,4 +26,4 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 *Microsoft Mesh also has a separate preview build and preview toolkit. These are ideal for developers who want to test out upcoming features and prepare in advance for the next public build. To download Microsoft Mesh (Preview) on Meta Quest devices, see [Microsoft Mesh (Preview) on Meta Quest - Meta Store](https://www.meta.com/experiences/6427141004030955/).*
 
-Need help? See [how to download Mesh on Quest 2 via App Lab](Resources/mesh-troubleshooting.md#how-to-download-mesh-on-quest-2-via-app-lab).
+Need help? See [how to download Mesh on Quest 2 via App Lab](../Resources/mesh-troubleshooting.md#how-to-download-mesh-on-quest-2-via-app-lab).

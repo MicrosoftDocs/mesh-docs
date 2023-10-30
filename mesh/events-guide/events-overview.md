@@ -17,7 +17,7 @@ Create the event in the Mesh portal, customize it in the Microsoft Mesh app, cre
 
 ## Download Mesh apps
 
-[!INCLUDE [<download-apps>](<../Includes/download-apps.md>)]
+[!INCLUDE [<download-apps>](<../includes/download-apps.md>)]
 
 ## Key capabilities of Mesh event experiences
 

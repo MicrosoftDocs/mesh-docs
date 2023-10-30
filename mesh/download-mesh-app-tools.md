@@ -17,7 +17,7 @@ Mesh also has a separate preview build and preview toolkit. These are ideal for 
 
 At a regular cadence we promote the preview build to the stable public build. At this time, this happens every 3 weeks.
 
-[!INCLUDE [<download-apps>](<Includes/download-apps.md>)]
+[!INCLUDE [<download-apps>](<includes/download-apps.md>)]
 
 ## Download the Mesh Toolkit
 
