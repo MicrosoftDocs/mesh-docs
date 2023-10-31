@@ -15,21 +15,7 @@ Join an event in Microsoft Mesh to experience spatial interaction and feel a sen
 
 ## Download Mesh apps
 
-### Download Microsoft Mesh on PC
-
-> [!div class="nextstepaction"]
-> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7)
-
-*For Microsoft Mesh (Preview), download [Microsoft Mesh (Preview) - Microsoft Store Apps](https://apps.microsoft.com/detail/microsoft-mesh-preview/9N138ZR0KQWX?hl=en-us&gl=US).*
-
-### Download Microsoft Mesh for Meta Quest devices via App Lab
-
-> [!div class="nextstepaction"]
-> [Microsoft Mesh on Meta Quest | Quest VR Games | Meta Store](https://www.meta.com/experiences/6750166401689690/)
-
-Need help? See [how to download Mesh on Quest 2 via App Lab](../Resources/mesh-troubleshooting.md#how-to-download-mesh-on-quest-2-via-app-lab).
-
-*For Microsoft Mesh (Preview), download [Microsoft Mesh (Preview) on Meta Quest - Meta Store](https://www.meta.com/experiences/6427141004030955/).*
+[!INCLUDE [<download-apps>](<../includes/download-apps.md>)]
 
 ## Organize and join events
 
