@@ -15,7 +15,7 @@ Join an event in Microsoft Mesh to experience spatial interaction and feel a sen
 
 ## Download Mesh apps
 
-[!INCLUDE [<download-apps>](<includes/download-apps.md>)]
+[!INCLUDE [<download-apps>](<../includes/download-apps.md>)]
 
 ## Organize and join events
 
