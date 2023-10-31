@@ -42,7 +42,7 @@ To participate in the public preview, you must agree to the terms of use and pri
 
 For immersive spaces in Teams, your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5.
 
-For Microsoft Mesh, a Teams Premium license is required during the Public Preview. If you plan to use Mesh cloud scripting, you must also have an Azure subscription with storage.
+For Microsoft Mesh, a Teams Premium license is required during the Public Preview. See [licensing requirements](/mesh/setup/content/setup-m365-mesh#licensing-requirements) for more details. If you plan to use Mesh cloud scripting, you must also have an Azure subscription with storage.
 
 If your organization plans to create custom worlds for Microsoft Mesh,
 your world building team will need licenses for Unity.
