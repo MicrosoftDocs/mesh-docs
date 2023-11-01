@@ -84,12 +84,11 @@ Learn more about [Teams for enterprise](https://www.microsoft.com/microsoft-team
 
     :::image type="content" source="../../media/m365-setup-guide/m365-mesh-policy-enabled-successful.png" alt-text="Policy configuration for Mesh policy is successful created and visible in the Policy Management page":::
 
-
 ## End user dialogue referenced in policy can be seen below
 
-Users will see a new license agreement dialogue in the upcoming release for Mesh products and data gathered from spatial audio. See the image below for more info:
+Users will see an End User License Agreement dialogue in the upcoming release for Mesh products and data gathered from spatial audio as seen in the following image:
 
-:::image type="content" source="../../media/m365-setup-guide/End-user-license-agreement.png" alt-text="End user license agreement for Mesh and spatial audio.":::
+:::image type="content" source="../../media/m365-setup-guide/EULA-agreemnet.png" alt-text="Screenshot of end user license agreement for Mesh and spatial audio.":::
 
    > [!div class="nextstepaction"]
    > [Manage Mesh worlds](manage-mesh-worlds.md)
