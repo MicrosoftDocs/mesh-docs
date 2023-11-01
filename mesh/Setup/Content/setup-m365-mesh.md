@@ -50,7 +50,7 @@ For Microsoft Mesh, you will need the following:
 
 - A pre-requisite license in Teams Premium, as outlined in [Requirements to purchase Teams Premium - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#what-are-the-requirements-to-purchase-teams-premium).
 
-Learn more about [Teams for enterprise](https://www.microsoft.com/microsoft-teams/enterprise#pricing).
+Learn more about [Teams for enterprise](https://www.microsoft.com/microsoft-teams/enterprise#pricing) and [Teams Premium trial license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#can-i-experience-teams-premium-before-buying-licenses).
 
 ## Configure Mesh in M365 Apps Admin Center (Optional)
 
