@@ -1,5 +1,5 @@
 ---
-title: Prerequsites for Mesh development
+title: Prerequisites for Mesh development
 description: Prerequisites required for Mesh development, including Unity information.
 author: typride
 ms.author: vinnietieto
