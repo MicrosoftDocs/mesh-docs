@@ -33,11 +33,14 @@ tools.
   
 - Mesh uses other parts of the Microsoft 365 suite. If your organization restricts access to these resources, parts of Mesh won't work. Talk to whoever has access to the Microsoft 365 Admin tools to determine if there are any restrictions and to test whether those restrictions will interfere with Mesh. 
 
-| Required Feature  | Mesh Usage |
+| Mesh Action | Access Needed |
 | --- | --- |
-| Microsoft 365 groups  | Managing access to environments and templates |
-| OneDrive and SharePoint  | Storing resources and customization for events and templates |
-| Outlook mail and calendar | Sending calendar invites to Mesh events  |
+| Create a Mesh World  | Create Microsoft 365 group |
+| Be added as a member to a Mesh world  | Access Microsoft 365 groups |
+| Create a Mesh event | Access to Microsoft 365 Calendar |
+| Be invited to a Mesh event | Access to Outlook Mail |
+| Create a template | Access to SharePoint |
+| Add an image or video top an event or template | Access to either SharePoint or OneDrive |
 
 There are some setup tasks that may require cooperation from individuals
 or departments outside of the individual or team that will be deploying
