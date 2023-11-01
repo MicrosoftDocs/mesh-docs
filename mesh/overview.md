@@ -33,7 +33,7 @@ This co-presence can lead to serendipitous moments of conversation or even just 
 
 ## Use immersive spaces in Microsoft Teams
 
-We are making building relationships easier by bringing the power of Mesh into the place where people work every day—Microsoft Teams. Getting started is easy! From the View menu in a Teams meeting, you select the immersive space option. With just a click, you will transform your two-dimensional (2D) meeting into a 3D immersive experience.  
+Use immersive spaces in Teams to bring the power of Mesh into Microsoft Teams. Getting started is easy! From the View menu in a Teams meeting, you select the immersive space option. With just a click, you will transform your two-dimensional (2D) meeting into a 3D immersive experience.
 
 :::image type="content" source="media/welcome-to-mesh/04_ImmersiveSpaces_Splice.gif" alt-text="GIF of selecting view then immersive space in teams":::
 
@@ -43,9 +43,9 @@ We are making building relationships easier by bringing the power of Mesh into t
 > [!div class="nextstepaction"]
 > [Set up immersive spaces in Microsoft Teams](/microsoftteams/meeting-immersive-spaces)
 
-## Join a custom immersive space with Microsoft Mesh
+## Use immersive spaces Microsoft Mesh
 
-Create custom immersive spaces in Microsoft Mesh that are tailored to your specific business needs such as employee events, training, guided tours, or internal product showcases.
+Use immersive spaces in Mesh to create custom experiences that are tailored to your specific business needs such as employee events, training, guided tours, or internal product showcases.
 
 > [!div class="nextstepaction"]
 > [Set up Microsoft Mesh](Setup/Content/setup-m365-mesh.md)
