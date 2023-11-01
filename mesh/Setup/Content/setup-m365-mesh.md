@@ -70,9 +70,9 @@ Learn more about [Teams for enterprise](https://www.microsoft.com/microsoft-team
     Create a new policy by selecting **+ Create** then name the policy.
 1. Adjust the scope for this policy to determine who or what groups can access **all Mesh experiences**.
 
-    To be clear, if this policy is a applied to a user, they will be able to access Mesh on Meta Quest 2, the Mesh app on PC, and the Mesh Portal. If you do not configure this policy, users will have access to all three Mesh experiences. 
+    To be clear, if this policy is a applied to a user, they will be able to access Mesh on Meta Quest 2, the Mesh app on PC, and the Mesh Portal. If you do not configure this policy, users will have access to all three Mesh experiences.
 
-1. In the **Configure Settings** page, search for **Control user access to Microsoft Mesh experiences.** 
+1. In the **Configure Settings** page, search for **Control user access to Microsoft Mesh experiences.**
     :::image type="content" source="../../media/m365-setup-guide/M365-configure-settings-policy-name.png" alt-text="Policy name for enabling Mesh experiences is Control user access to Microsoft Mesh experiences.":::
 
 1. Select the policy and **Enable** or **Disable** it for users or groups of users in your organization.
