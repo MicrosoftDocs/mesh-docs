@@ -50,7 +50,7 @@ For Microsoft Mesh, you will need the following:
 
 - A pre-requisite license in Teams Premium, as outlined in [Requirements to purchase Teams Premium - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#what-are-the-requirements-to-purchase-teams-premium).
 
-Learn more about [Teams for enterprise](https://www.microsoft.com/microsoft-teams/enterprise#pricing).
+Learn more about [Teams for enterprise](https://www.microsoft.com/microsoft-teams/enterprise#pricing) and [Teams Premium trial license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#can-i-experience-teams-premium-before-buying-licenses).
 
 ## Configure Mesh in M365 Apps Admin Center (Optional)
 
@@ -70,9 +70,9 @@ Learn more about [Teams for enterprise](https://www.microsoft.com/microsoft-team
     Create a new policy by selecting **+ Create** then name the policy.
 1. Adjust the scope for this policy to determine who or what groups can access **all Mesh experiences**.
 
-    To be clear, if this policy is a applied to a user, they will be able to access Mesh on Meta Quest 2, the Mesh app on PC, and the Mesh Portal. If you do not configure this policy, users will have access to all three Mesh experiences. 
+    To be clear, if this policy is a applied to a user, they will be able to access Mesh on Meta Quest 2, the Mesh app on PC, and the Mesh Portal. If you do not configure this policy, users will have access to all three Mesh experiences.
 
-1. In the **Configure Settings** page, search for **Control user access to Microsoft Mesh experiences.** 
+1. In the **Configure Settings** page, search for **Control user access to Microsoft Mesh experiences.**
     :::image type="content" source="../../media/m365-setup-guide/M365-configure-settings-policy-name.png" alt-text="Policy name for enabling Mesh experiences is Control user access to Microsoft Mesh experiences.":::
 
 1. Select the policy and **Enable** or **Disable** it for users or groups of users in your organization.
@@ -84,12 +84,11 @@ Learn more about [Teams for enterprise](https://www.microsoft.com/microsoft-team
 
     :::image type="content" source="../../media/m365-setup-guide/m365-mesh-policy-enabled-successful.png" alt-text="Policy configuration for Mesh policy is successful created and visible in the Policy Management page":::
 
-
 ## End user dialogue referenced in policy can be seen below
 
-Users will see a new license agreement dialogue in the upcoming release for Mesh products and data gathered from spatial audio. See the image below for more info:
+Users will see an End User License Agreement dialogue in the upcoming release for Mesh products and data gathered from spatial audio as seen in the following image:
 
-:::image type="content" source="../../media/m365-setup-guide/End-user-license-agreement.png" alt-text="End user license agreement for Mesh and spatial audio.":::
+:::image type="content" source="../../media/m365-setup-guide/EULA-agreemnet.png" alt-text="Screenshot of end user license agreement for Mesh and spatial audio.":::
 
    > [!div class="nextstepaction"]
    > [Manage Mesh worlds](manage-mesh-worlds.md)
