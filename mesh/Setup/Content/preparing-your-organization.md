@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 ---
 
 # Preparing your organization for Mesh
-This content covers requirements for Mesh implementations in Microsoft Teams and in the Mesh app. After planning for your Mesh implementation, learn how to [set up immersive spaces in Teams](https://learn.microsoft.com/en-us/microsoftteams/meeting-immersive-spaces) and [set up Microsoft Mesh](https://learn.microsoft.com/en-us/mesh/setup/content/setup-m365-mesh#prerequisites). 
+This content covers requirements for Mesh implementations in Microsoft Teams and in the Mesh app. After planning for your Mesh implementation, learn how to [set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces) and [set up Microsoft Mesh](/mesh/setup/content/setup-m365-mesh#prerequisites). 
 
 ## Gather Your v-team
 
@@ -61,7 +61,7 @@ For Microsoft Mesh, you will need the following:
     > [!NOTE]
     > We don't support tenants with worldwide public sector, EDU, or GCC licenses.
 
-- A pre-requisite license in Teams Premium, as outlined in [Requirements to purchase Teams Premium - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#what-are-the-requirements-to-purchase-teams-premium). Learn more about [Teams for enterprise](https://www.microsoft.com/microsoft-teams/enterprise#pricing) and [Teams Premium trial license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#can-i-experience-teams-premium-before-buying-licenses).
+- A pre-requisite license in Teams Premium, as outlined in [Requirements to purchase Teams Premium - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#what-are-the-requirements-to-purchase-teams-premium). Learn more about [Teams for enterprise]/microsoft-teams/enterprise#pricing) and [Teams Premium trial license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#can-i-experience-teams-premium-before-buying-licenses).
 
 - Licenses for related Microsoft 365 components. As described earlier, Mesh uses Microsoft 365 groups, OneDrive, SharePoint, and Outlook mail and calendar - if users don't have licenses for those components, some parts of Mesh won't work. 
   
