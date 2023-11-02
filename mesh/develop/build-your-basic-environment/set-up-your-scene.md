@@ -17,8 +17,8 @@ The operations below are required for new or existing projects.
 
 In order for a scene to support teleportation, it must have a Navmesh layer. A teleportable surface (for example, a floor or the ground) doesn’t need a Navmesh, but it must meet the following conditions:
 
---It must have some type of Collider attached (Mesh Collider or Box Collider, for example).
---Its Layer must be set to Navmesh.
+- It must have some type of Collider attached (Mesh Collider or Box Collider, for example).  
+- Its Layer must be set to Navmesh.
 
 ## Add a TravelPoint
 
