@@ -1,6 +1,7 @@
 ---
 title: Release notes for Mesh Toolkit
 description: Mesh Toolkit release notes
+ms.service: mesh
 author: qianw211    
 ms.author: qianwen
 ms.date: 11/2/2023
