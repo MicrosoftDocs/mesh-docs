@@ -13,21 +13,17 @@ keywords: Microsoft Mesh, Unity, environments, scenes, events, animations, timel
 
 ## Overview
 
-You can add various Event features to your Environment that can be controlled during an Event. Events in Mesh can create powerful interactive experiences for hosting all-hands meetings, social gatherings, showcases, or trainings. After you've uploaded your finished custom Environment to Mesh, an organizer can use your Environment to create an Event.  
+With Mesh, you can set up [single-room or multi-room events](../../events-guide/create-event-mesh-portal.md#considerations-before-your-event).  Your co-organizers who are hosting an event at showtime can then use the Control Panel to trigger video, audio, playables (timelines) and object hiding/showing in a consistent way across all rooms.
 
-## Playables
+## Single-room sync vs. multi-room sync
 
-*Playables* are objects that are meant to be played, paused, looped, and
-stopped; example Playables include animations, Unity-based Timeline elements and
-Unity Video Players. When you include Playables in your Environment, they appear in the Mesh app's Event Control Panel where they can be turned on or off.
+By default, any scene changes triggered in the world with visual script, cloud script, interactables or physics (e.g., button presses, avatar triggers, grabbing and moving objects) will stay independent to the room where that change occurred.  This is true even if a co-organizer is the one taking the action.
 
-To learn more about the Unity Playables API, see [Unity - Manual:
-Playables API
-(unity3d.com)](https://docs.unity3d.com/Manual/Playables.html).
+To sync changes across multiple rooms, a co-organizer will need to use the Control Panel to trigger a Controllable that you add to the scene in Unity.
 
 ## Controllables
 
- The Mesh Toolkit includes key components that integrate into the Mesh event production system - these components are called *Controllables*.
+The Mesh Toolkit includes key components that let you tag your Video Players, PlayableDirectors and other objects so that co-organizers can trigger them across all rooms of an event at showtime - these components are called *Controllables*.  Controllables enable you to tag in Unity those video players, playables and objects you want event hosts to trigger from the Control Panel at showtime.
 
 **To locate the scripts:**
 In the Project window, navigate to **Packages** > **Microsoft Mesh Toolkit** **mesh.toolkit.sharedcontent** > **Controllables**.
@@ -37,7 +33,7 @@ The components include:
 - *EmbeddedAudioControllable*: For controlling Unity AudioSources with
     hard-coded/embedded audio clips
 
-- *EmbededVideoControllable:* For controlling hard-coded video
+- *EmbeddedVideoControllable:* For controlling hard-coded video
 
 - *ObjectControllable*: For marking GameObjects that can be
     enabled/disabled via the control panels
@@ -46,7 +42,17 @@ The components include:
 
 - *UnityPlayableControllable:* For controlling a PlayableDirector
 
-## Controlling an Animation in an Event
+## Unity Playables
+
+*Playables* are objects that are meant to be played, paused, looped, and
+stopped; example Playables include animations, Unity-based Timeline elements and
+Unity Video Players. When you include Playables in your Environment, they appear in the Mesh app's Event Control Panel where they can be turned on or off.
+
+To learn more about the Unity Playables API, see [Unity - Manual:
+Playables API
+(unity3d.com)](https://docs.unity3d.com/Manual/Playables.html).
+
+## Controlling an Animation in an event
 
 As an organizer in an Event, you can select *play* to start your
 animation, *pause* it, and select *play* again to resume the animation.
@@ -62,12 +68,12 @@ reverse; to do this, you'll need to create a different animation.
 
 For more information, see [Prepare content with the Control Panel](../../events-guide/customize-event.md#prepare-content-with-the-control-panel).
 
-## Animate Timelines in Unity for Mesh
+### Animate Timelines in Unity for Mesh
 
 If you're unfamiliar with how **Timelines** work in Unity, we recommend that you watch this
 Unity Tutorial series on using [**Timelines**](https://learn.unity.com/project/up-to-speed-with-timeline)
 
-#### To create a Timeline for Mesh
+### To create a Timeline for Mesh
 
 1. In the **Hierarchy**, add an empty GameObject and then rename it
     "Timelines."
@@ -138,7 +144,7 @@ Now you can upload your environment to Mesh using the **Mesh Toolkit
 Uploader** and then see how it looks in your Mesh space. To learn more,
 see [Prepare content with the Control Panel](../../events-guide/customize-event.md#prepare-content-with-the-control-panel).
 
-### Unity Video Players
+## Controlling a Video Player in an event
 
 Video playback for the Control Panel can be done using the **Unity Video
 Player**. You'll first need to embed a video player in your Unity scene.
