@@ -17,15 +17,7 @@ Create the event in the Mesh portal, customize it in the Microsoft Mesh app, cre
 
 ## Download Mesh apps
 
-Download Microsoft Mesh on PC
-
-> [!div class="nextstepaction"]
-> [Microsoft Mesh - Microsoft Store Apps](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7)
-
-Download Microsoft Mesh for Meta Quest devices
-
-> [!div class="nextstepaction"]
-> [Microsoft Mesh on Meta Quest | Quest VR Games | Meta Store](https://www.meta.com/experiences/6750166401689690/)
+[!INCLUDE [<download-apps>](<../includes/download-apps.md>)]
 
 ## Key capabilities of Mesh event experiences
 

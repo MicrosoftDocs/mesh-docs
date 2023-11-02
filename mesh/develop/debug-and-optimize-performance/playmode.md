@@ -4,7 +4,7 @@ description: Testing your Mesh environment using Unity.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 8/29/2023
+ms.date: 10/30/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, testing, troubleshooting, playmode, play mode
 ---
@@ -21,24 +21,19 @@ offers. From this point forward, we'll refer to this feature
 as *Play Mode*.
 
 The look and feel in Play Mode are similar but not identical to those in
-the Mesh app. It's an ongoing effort to reduce the differences where
-possible without sacrificing the lightweight Environment necessary for
+the Mesh app. We're continuously working to reduce the differences where
+possible without sacrificing the lightweight environment necessary for
 quick iteration. A key feature of Play Mode is the ability to run
 multiple clients within the same process; this allows a single developer
 to easily get a first impression of a multi-user scenario.
 
 **To use Play Mode in your project**:
 
-1.  Add a *PlaymodeSetup [NoUpload]* prefab to the scene: right-click
-    in the **Hierarchy**, and then select **Mesh Toolkit** >
-    **PlaymodeSetup**.
+1.  Ensure that you have the Mesh Toolkit imported.
+1.  Ensure that the scene contains a piece of solid floor below the origin that's set to the *NavMesh* layer.
+1.  Press the Play button. The Toolkit checks to see if a GameObject with "PlaymodeSetup" in its name exists at the top level of the **Hierarchy**. If it doesn't, this dialog appears:
 
-    ![A screenshot of a computer Description automatically generated](../../media/debug-and-optimize/image041.jpg)
-
-2.  Ensure that the scene contains a piece of solid floor below the
-    origin that's set to the *NavMesh* layer.
-
-3.  Press the Play button.
+![A screenshot of a computer program Description automatically generated with medium confidence](../../media/debug-and-optimize/003-playmode-setup-missing-dialog.png)
 
 ## Teleport Player on Play
 
@@ -50,25 +45,24 @@ specific location at startup.
 ## Playmode Split Screen
 
 This feature lets you run multiple clients within the same process and
-show them side-by-side within the same window. Mesh toolkit itself implements a very minimal
+show them side-by-side within the same window. Mesh Toolkit itself implements a very minimal
 emulated *PlaymodeNetwork* component that's sufficient to communicate
 the player position between the clients, allowing the different players
 to see each other as heavily stylized avatars:
 
-![A screenshot of a video game Description automatically generated with medium confidence](../../media/debug-and-optimize/image043.png)
+![A screenshot of multiple clients displayed side-by-side in Play mode.](../../media/debug-and-optimize/image043.png)
 
 This is sufficient for previewing static content. When developing
-interactive content, visual scripting, cloud scripting and/or web slate,
-keep in mind that those features each contain their own networking mechanisms
+interactive content, [visual scripting](../script-your-scene-logic/visual-scripting/visual-scripting-overview.md), [cloud scripting](../script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md) and/or [WebSlate](../enhance-your-environment/webcontent.md), keep in mind that those features each contain their own networking mechanisms
 which provide a Play Mode preview of a synchronized experience with
 multiple users.
 
 Do one of the following:
 
 -   Increase the initial screen count before entering Play mode by
-    setting the value on the **PlaymodeSetup \[NoUpload\]** component:
+    setting the value in the **Playmode Setup** component:
 
-![Graphical user interface, text, application Description automatically generated](../../media/debug-and-optimize/image044.jpg)
+![A screenshot of the Playmode Setup component with the Initial Screen Count property set to two.](../../media/debug-and-optimize/image044.jpg)
 
 -or-
 
