@@ -73,14 +73,16 @@ your world building team will need licenses for Unity.
 The two main factors to consider when choosing which tenant(s) to
 provision for Mesh are:
 
-1. Which users you want to participate in immersive experiences
+1. Which users should be able to access immersive experiences.
 
-2. The tradeoffs between having unlimited control of a domain and
+    All users who will be participating in immersive experiences together must
+have native accounts in the same Microsoft Entra ID ([formerly Azure Active Directory](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) - guest access to the tenant does not work.
+
+1. The tradeoffs between having unlimited control of a domain and
     having ultimate responsibility for running the domain securely and
     effectively.
 
-All users who will be participating in immersive experiences together must
-have native accounts in the same Microsoft Entra ID (formerly Azure Active Directory) - guess access to the tenant does not work. Provisioning up your primary production tenant for Mesh is recommended
+Provisioning up your primary production tenant for Mesh is recommended
 because it will give you the biggest scope to test with, but it may
 create overhead work through internal procedures and approvals. If you want to collaborate with
 people outside your production tenant, you might want to set up a seprate tenant just for Mesh. There is no technical barrier to
@@ -118,7 +120,7 @@ pre-deployment tasks.
 The adminsitration for immersive spaces and avatars will happen in the Teams admin
 portal, [admin.teams.microsoft.com](https://admin.teams.microsoft.com).
 You will need the tenant Global Administrator to assign someone on the
-Mesh team the role of Teams Administrator in Azure Active Directory, or
+Mesh team the [role of Teams Administrator in Microsoft Entra](/microsoftteams/using-admin-roles), or
 you will need to work closely with a current Teams Apps Manager to make
 all necessary configurations.
 
