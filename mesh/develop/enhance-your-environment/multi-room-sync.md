@@ -52,7 +52,7 @@ animation, *pause* it, and select *play* again to resume the animation.
 They can also select *stop* to reset the animation to the beginning or
 set your animation to *loop*.
 
-![___](../../media/enhance-your-environment/image039.png)
+![Control Panel in edit mode](../../media/enhance-your-environment/image039.png)
 
 For example, if you have a door-opening animation, selecting the *play*
 button will open the door in your scene. Selecting *stop* will reset the
@@ -72,7 +72,7 @@ To learn more about the Unity Playables API in general, see [Playables in the Un
 1. Add another empty GameObject, make it a child to **Timelines**, and
     then rename it "Timeline1."
 
-    ![___](../../media/enhance-your-environment/image033.png)
+    ![Timeline1 in the Hierarchy](../../media/enhance-your-environment/image033.png)
 
     **Notes**:
 
@@ -94,23 +94,23 @@ To learn more about the Unity Playables API in general, see [Playables in the Un
     **Project** and **Console** tabs. This allows you to view the
     **Timeline** and the **Scene** or **Game** windows simultaneously.
 
-    ![A screen shot of a video Description automatically generated with low confidence](../../media/enhance-your-environment/image034.jpg)
+    ![The Timeline tab](../../media/enhance-your-environment/image034.jpg)
 
 1. Select **Create**.
 
-    ![Graphical user interface, website Description automatically generated](../../media/enhance-your-environment/image035.png)
+    ![An empty Timeline](../../media/enhance-your-environment/image035.png)
 
 1. In the **Save** window, change the name of the Playable to
     *Open_Doors* and then save it to the **Assets** > **Animations** folder.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../media/enhance-your-environment/image036.png)
+    ![The Project panel, with Animations folder highlighted](../../media/enhance-your-environment/image036.png)
 
 1. You can now animate or customize your Timeline---for example, add
     animation clips, activation clips, and more. To learn more about this, [see the Timeline tutorial](https://learn.unity.com/tutorial/introduction-to-timeline-2019-3#) on the Unity Learn website.
     
     A Timeline with several tracks might look something like this:
 
-    ![___](../../media/enhance-your-environment/image037.jpg)
+    ![The Timeline panel](../../media/enhance-your-environment/image037.jpg)
 
 1. Once you're done animating, in the **Hierarchy**, select the
     **Timeline1** GameObject, and then in the **Inspector**, navigate to
@@ -129,7 +129,7 @@ To learn more about the Unity Playables API in general, see [Playables in the Un
     **Wrap Mode** option named **Loop** which you may want to use in some
     instances.
 
-    ![Graphical user interface, application Description automatically generated](../../media/enhance-your-environment/image038.jpg)
+    ![The Playable Director component](../../media/enhance-your-environment/image038.jpg)
 
 1. Finally, in the Inspector, use **Add Component** to add a **Unity Playable Controllable** component on the same object as the **Playable Director**.
 
