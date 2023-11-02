@@ -3,7 +3,7 @@ title: Set up your scene
 description: Learn how to set up a scene in Unity for Mesh development.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 10/10/2023
+ms.date: 11/1/2023
 ms.service: mesh
 ms.topic: How to
 keywords: Microsoft Mesh, Unity, getting started, Unity, scene, teleportation, navmesh, travelpoint, travelgroup
@@ -17,12 +17,12 @@ The operations below are required for new or existing projects.
 
 In order for a scene to support teleportation, it must have a Navmesh layer. A teleportable surface (for example, a floor or the ground) doesn’t need a Navmesh, but it must meet the following conditions:
 
---It must have some type of Collider attached (Mesh Collider or Box Collider, for example).
---Its Layer must be set to Navmesh.
+- It must have some type of Collider attached (Mesh Collider or Box Collider, for example).  
+- Its Layer must be set to Navmesh.
 
 ## Add a TravelPoint
 
-Every scene must have at least one *travel point*, which is used to configure avatar spawning behavior. If you're new to travel points, we recommend that you [read our TravelPoint and TravelGroup article](../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md) and follow the instructions there. When you're finished, continue on with the article named [Building for single and multiple platforms](build-for-single-and-multiple-platforms.md).
+Every scene must have at least one *travel point*, which is used to configure avatar spawning behavior. If you're new to travel points, we recommend that you [read our TravelPoint and TravelGroup article](../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md) and follow the instructions there.
 
 ## Add the Mesh Thumbnail Camera
 
