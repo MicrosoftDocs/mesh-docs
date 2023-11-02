@@ -20,7 +20,8 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ### Resolved product issues
 
-* On Quest, there’s a crackling sound when you try to click on the **Customize** button under **Profile**. (16203)
-* In the Mesh user profile dialog box, switching avatars will cause the avatar preview to briefly flash. (12762)
-* On Quest, the **Event details** dialog and the **Invite list** for an event will show up as blank when accessed through the Dashboard Homepage. (13085)
-* For some microphones, the user may sometimes need to speak louder than normal to trigger both lip-sync and background highlighting of the name plate. (48816)
+* You will need to make a new event for every new version of the environment that you upload. (23629)
+
+* When an avatar is being broadcasted in a Mesh event, it may disappear when viewed from certain angles while the broadcaster visual indicator remains visible during this time. (20753)
+
+
