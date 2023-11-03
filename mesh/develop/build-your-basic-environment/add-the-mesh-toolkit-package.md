@@ -4,7 +4,7 @@ description: Instructions for adding the Mesh Toolkit package to your project.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 10/31/2023
+ms.date: 11/03/2023
 ms.topic: overview
 keywords: Microsoft Mesh, getting started, toolkit, Mesh toolkit, import, registry, scoped registry, packages
 ---
@@ -21,7 +21,7 @@ Mesh has a public build where all users can experience custom worlds and a corre
 
 1. Add a scoped registry with the following details:
 
-   - **Name:** mesh.toolkit
+   - **Name:** mesh.toolkit.preview
 
    - **URL:** https://registry.npmjs.org
 
@@ -37,7 +37,7 @@ Mesh has a public build where all users can experience custom worlds and a corre
 
 1. In the list, select **Microsoft Mesh Toolkit** and then click the **Install**  button. You can select the version, install a preview version, and update/remove versions.
 
-    :::image type="content" source="../../media/build-your-basic-environment/Microsft-Mesh-toolkit-download-pacakge-install-unity.png" alt-text="Screenshot of Unity package manager, install options for preview or public mesh toolkit.":::
+    :::image type="content" source="../../media/build-your-basic-environment/Microsft-Mesh-toolkit-download-package-install-unity.png" alt-text="A screenshot of the Unity package manager showing details of the preview Mesh Toolkit.":::
 
 When the spinner animation next to the package list stops, the package has finished downloading. 
 
