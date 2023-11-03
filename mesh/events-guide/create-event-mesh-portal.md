@@ -11,26 +11,26 @@ keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
 
 # Create an event in the Mesh portal
 
-Use the Mesh portal to create and manage events, Mesh worlds, and custom environments. Once events are made, Mesh events show up in your Outlook or Teams calendar with a direct link that people can use to join events, making inviting and joining events quicker.
+Use the Mesh portal to create and manage events, Collections, and custom environments. Once events are made, Mesh events show up in your Outlook or Teams calendar with a direct link that people can use to join events, making inviting and joining events quicker.
 
 > [!IMPORTANT]
 > Please ensure that all participants have updated their Mesh app to the most recent version to ensure that they can use the link in their calendar invite and join the event you just created!
 
-## Events vs Event templates
+## Events vs Templates
 
-With Mesh you can create one-off Events or create Event templates to be reused as needed. Create an Event template, customize it once, and reuse it again and again.
+With Mesh you can create one-off Events or create Templates to be reused as needed. Create a Template, customize it once, and reuse it again and again.
 
-For example, when you create an event in the Mesh portal you have the option to Use an Event template:
+For example, when you create an event in the Mesh portal you have the option to Use a Template:
 
-:::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-selection.png" alt-text="Screenshot of Mesh portal with red box around Use an event template selection.":::
+:::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-selection.png" alt-text="Screenshot of Mesh portal with red box around Use a Template selection.":::
 
-Should you want to create a template, customize, and reuse it, see how to [Create an Event template](create-template.md).
+Should you want to create a template, customize, and reuse it, see how to [Create a Template](create-template.md).
 
 Read on to learn how to create a single event.
 
 ## Considerations before your event
 
-Consider the following time and capacity constraints when creating your Mesh event or Event template.
+Consider the following time and capacity constraints when creating your Mesh event or Template.
 
 ### Time constraints for Mesh events
 
@@ -59,7 +59,7 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 
 1. In the Home page, select **Events** in the left nav.
 
-    :::image type="content" source="../media/m365-migration-guide/Select-events.png" alt-text="Events button in Mesh portal":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Mesh-portal-event-tab-select.png" alt-text="":::
 
 1. Select **Create event** at the top right.
 
@@ -71,14 +71,14 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
     :::image type="content" source="../media/m365-migration-guide/Event-details.png" alt-text="Event details page in Mesh portal":::
 
 1. Select **Next** when complete.
-1. Choose an environment or select an Event template that you may have created before. Select **Next** when finished.
+1. Choose an environment or select an Template that you may have created before. Select **Next** when finished.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-environment.png" alt-text="Choose an environment template or environment mesh portal":::
 
     > [!NOTE]
     > Once your event is created, you cannot change the environment, the template, or room configuration, room capacity, or Max Participants.
 
-    Learn more about [creating Event templates](create-template.md).
+    Learn more about [creating Templates](create-template.md).
 
 1. Add your Co-organizers (who will be able to edit the event) and your Attendees (who will be able to join the event) and select **Create event** when finished.
 
@@ -90,16 +90,16 @@ Co-organizers can also invite people in outlook and forward the invite to people
 
 :::image type="content" source="../media/mesh-event-producer-guide/Join-event-link-calendar.gif" alt-text="Join event from a calendar invite":::
 
-## Create Event template from your event
+## Create Templates from your event
 
-Once your event is created, you have the option to save it as an Event template to be reused in the future.
+Once your event is created, you have the option to save it as an Template to be reused in the future.
 
 > [!IMPORTANT]
-> When you save an event as an Event template, any future customizations in the app won't make it into the saved template. In order to edit the Event template, you need to customize it directly.
+> When you save an event as an Template, any future customizations in the app won't make it into the saved template. In order to edit the Template, you need to customize it directly.
 
 :::image type="content" source="../media/mesh-event-producer-guide/Event-create-save-as-event-template.png" alt-text="Screenshot of Mesh portal showing option to save a created event as an event template.":::
 
-To learn more about event templates and how to create them, see how to [Create an Event template](create-template.md).
+To learn more about event templates and how to create them, see how to [Create an Template](create-template.md).
 
    > [!div class="nextstepaction"]
    > [Customize an event](customize-event.md)

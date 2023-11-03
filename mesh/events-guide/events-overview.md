@@ -31,7 +31,7 @@ Create the event in the Mesh portal, customize it in the Microsoft Mesh app, cre
 
 - **Multiple event roles:** Designate roles like co-organizer and attendee to specify who can customize events with you and who cannot.
 
-- **Event templates:** Save any customization you make in an environment for an event template to be reused in future events.
+- **Templates:** Save any customization you make in an environment for a Template to be reused in future events.
 
 - **Custom environments:** Create custom interactive experiences in Unity with the Mesh toolkit, designing and developing environments that best suit your business needs.
 
@@ -43,7 +43,7 @@ Events in Mesh should be familiar to most organizations that work with Microsoft
 
 1. **[Customize and save the event experience in the Mesh app](customize-event.md):** Customize your event at least 30 minutes before the start time to add text, video, and/or screenshare artifacts and prepare your environment for your event.
 
-1. **[Create event template](create-template.md) (Optional):** Save your customizations in an event template to be reused in future events.
+1. **[Create Template](create-template.md) (Optional):** Save your customizations in a Template to be reused in future events.
 
 1. **[Produce your event in Mesh](produce-event.md):** Leverage a set of tools to manage participants and control the artifacts that you've added to your environment.
 
@@ -62,7 +62,7 @@ You can customize the environment for events and or customize the environment to
 
 :::image type="content" source="../media/mesh-event-producer-guide/Environment-editor-Customization.gif" alt-text="Gif of customizing event in the Mesh app":::
 
-The power of Mesh really becomes clear when you customize your event by adding artifacts to your environment prior to the meeting start time. Add text, video players, or a screenshare screen that can be controlled during your run-of-show to engage and wow attendees. These customizations can then be saved as in an event template for anyone in the organization to reuse.
+The power of Mesh really becomes clear when you customize your event by adding artifacts to your environment prior to the meeting start time. Add text, video players, or a screenshare screen that can be controlled during your run-of-show to engage and wow attendees. These customizations can then be saved as in a Template for anyone in the organization to reuse.
 
 > [!div class="nextstepaction"]
 > [Customize your event](customize-event.md)
@@ -71,11 +71,11 @@ The power of Mesh really becomes clear when you customize your event by adding a
 
 In addition to the default environments that are customizable with artifacts, you can leverage Unity and the Mesh toolkit to create custom environments and rich content that can be used in event experiences. To learn more about creating custom environments and artifacts, see the [Choose your journey](../develop/getting-started/choose-your-journey.md) developer docs to get started.
 
-### Create your event template
+### Create your Template
 
-Once you've customized your event, save it as an event template to be reused in future events.
+Once you've customized your event, save it as a Template to be reused in future events.
 
-To learn how, see [Create event template](create-template.md).
+To learn how, see [Create Template](create-template.md).
 
 ## Produce your event
 
