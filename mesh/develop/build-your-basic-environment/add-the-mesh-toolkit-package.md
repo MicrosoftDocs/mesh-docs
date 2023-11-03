@@ -35,7 +35,7 @@ Mesh has a public build where all users can experience custom worlds and a corre
 
    ![A screenshot of the Package Manager with the Packages drop down highlighted.](../../media/build-your-basic-environment/001-packages-drop-down.png)
 
-1. In the list, select **Microsoft Mesh Toolkit** and then click the **Install**  button. You can select the version, install a preview version, and update/remove versions.
+1. In the list, select **Microsoft Mesh Toolkit**--the full package name should be **com.microsoft.mesh-toolkit-preview**, as highlighted in the image below--and then click the **Install** button. You can select the version, install a preview version, and update/remove versions.
 
     :::image type="content" source="../../media/build-your-basic-environment/Microsft-Mesh-toolkit-download-package-install-unity.png" alt-text="A screenshot of the Unity package manager showing details of the preview Mesh Toolkit.":::
 
