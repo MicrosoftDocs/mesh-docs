@@ -7,8 +7,6 @@ items:
   href: webcontent.md
 - name: Play audio in Mesh
   href: play-audio-in-mesh.md
-- name: UnityEvents and AnimationEvents
-  href: unityevents-and-animationevents.md  
 - name: Physics interactions
   href: physics/toc.yml  
 - name: Avatar and object interactions
