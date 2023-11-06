@@ -1,17 +1,17 @@
 ---
-title: Create event in Mesh portal
-description: Guide to creating an event in Mesh.
+title: Create event in Mesh on Web
+description: Guide to creating an event in Mesh using Mesh on the Web.
 ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 7/27/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
+keywords: Microsoft Mesh, Mesh on Web, M365, events, hosting, event producer, event organizer
 ---
 
-# Create an event in the Mesh portal
+# Create an event in Mesh on the Web
 
-Use the Mesh portal to create and manage events, Collections, and custom environments. Once events are made, Mesh events show up in your Outlook or Teams calendar with a direct link that people can use to join events, making inviting and joining events quicker.
+Use Mesh on the Web to create and manage events, Collections, and custom environments. Once events are made, Mesh events show up in your Outlook or Teams calendar with a direct link that people can use to join events, making inviting and joining events quicker.
 
 > [!IMPORTANT]
 > Please ensure that all participants have updated their Mesh app to the most recent version to ensure that they can use the link in their calendar invite and join the event you just created!
@@ -20,9 +20,9 @@ Use the Mesh portal to create and manage events, Collections, and custom environ
 
 With Mesh you can create one-off Events or create Templates to be reused as needed. Create a Template, customize it once, and reuse it again and again.
 
-For example, when you create an event in the Mesh portal you have the option to Use a Template:
+For example, when you create an event in the Mesh on the Web you have the option to Use a Template:
 
-:::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-selection.png" alt-text="Screenshot of Mesh portal with red box around Use a Template selection.":::
+:::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-selection.png" alt-text="Screenshot of Mesh on the Web with red box around Use a Template selection.":::
 
 Should you want to create a template, customize, and reuse it, see how to [Create a Template](create-template.md).
 
@@ -53,7 +53,7 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 
 ## Create an event
 
-1. Open the [Mesh Portal](https://portal.mesh.microsoft.com/).
+1. Open [Mesh on the Web](https://mesh.cloud.microsoft).
 
 1. Log in with your corporate account.
 
@@ -68,12 +68,12 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
     > [!NOTE]
     > Events should not be longer than 3 hours and scheduled more than 30 minutes in advance.
 
-    :::image type="content" source="../media/m365-migration-guide/Event-details.png" alt-text="Event details page in Mesh portal":::
+    :::image type="content" source="../media/m365-migration-guide/Event-details.png" alt-text="Event details page in Mesh on the Web":::
 
 1. Select **Next** when complete.
 1. Choose an environment or select an Template that you may have created before. Select **Next** when finished.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-environment.png" alt-text="Choose an environment template or environment mesh portal":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-environment.png" alt-text="Choose an environment template or environment Mesh on the Web":::
 
     > [!NOTE]
     > Once your event is created, you cannot change the environment, the template, or room configuration, room capacity, or Max Participants.
@@ -82,7 +82,7 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 
 1. Add your Co-organizers (who will be able to edit the event) and your Attendees (who will be able to join the event) and select **Create event** when finished.
 
-    :::image type="content" source="../media/m365-migration-guide/Invite-attendees-co-organizers.png" alt-text="Invite page in the Mesh portal":::
+    :::image type="content" source="../media/m365-migration-guide/Invite-attendees-co-organizers.png" alt-text="Invite page in the Mesh on the Web":::
 
 Great job! You've now created your event. Co-organizers and invitees will now see the event in their Outlook and Teams calendars.
 
@@ -97,7 +97,7 @@ Once your event is created, you have the option to save it as an Template to be 
 > [!IMPORTANT]
 > When you save an event as an Template, any future customizations in the app won't make it into the saved template. In order to edit the Template, you need to customize it directly.
 
-:::image type="content" source="../media/mesh-event-producer-guide/Event-create-save-as-event-template.png" alt-text="Screenshot of Mesh portal showing option to save a created event as an event template.":::
+:::image type="content" source="../media/mesh-event-producer-guide/Event-create-save-as-event-template.png" alt-text="Screenshot of Mesh on the Web showing option to save a created event as an event template.":::
 
 To learn more about event templates and how to create them, see how to [Create an Template](create-template.md).
 
