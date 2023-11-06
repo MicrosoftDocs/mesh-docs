@@ -61,13 +61,19 @@ Let's turn off some of the icons we don't need to make the view more clear.
     ![Screenshot of using the search field to find the TextMeshPro object in the list.](../../../media/sample-mesh-101/500-textmeshpro-icon-button.png)
 
 1. Click the icon toggle button for **TextMeshPro** to turn off its icons.
-1. Do the same for objects that display **AudioSource** ... 
+1. Do the same for these objects:
+
+    **AudioSource**:
 
     ![Screenshot of using the search field to find the AudioSource object in the list.](../../../media/sample-mesh-101/501-audiosource-icon-button.png)
 
-    ... and **Variables.**
+    **Variables**:
 
     ![Screenshot of using the search field to find the Variables object in the list.](../../../media/sample-mesh-101/502-variables-icon-button.png)
+
+    **ScriptMachine**:
+
+    ![Screenshot of using the search field to find the Variables object in the list.](../../../media/sample-mesh-101/505-scriptmachine-icon-button.png)
 
     This will make it easier to read info dialogs, labels on buttons, and more.
 
