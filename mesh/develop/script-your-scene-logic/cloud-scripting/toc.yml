@@ -1,5 +1,5 @@
 items:
-  - name: Cloud scripting Basic concepts
+  - name: Cloud scripting basic concepts
     href: cloud-scripting-basic-concepts.md
     displayName: cloud scripting, script, scripting
   - name: Cloud scripting setup infrastructure
