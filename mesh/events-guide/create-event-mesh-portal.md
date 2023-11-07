@@ -68,12 +68,12 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
     > [!NOTE]
     > Events should not be longer than 3 hours and scheduled more than 30 minutes in advance.
 
-    :::image type="content" source="../media/m365-migration-guide/Event-details.png" alt-text="Event details page in Mesh on the Web":::
+    :::image type="content" source="../media/events-guide-create-event/Mesh-on-web-create-event-details.png" alt-text="Screenshot of Create event page in Mesh on the Web with red box around the event details forms.":::
 
 1. Select **Next** when complete.
 1. Choose an environment or select an Template that you may have created before. Select **Next** when finished.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-environment.png" alt-text="Choose an environment template or environment Mesh on the Web":::
+    :::image type="content" source="../media/events-guide-create-event/Mesh-on-web-start-with-an-environment.png" alt-text="Invite page in the Mesh on the Web":::
 
     > [!NOTE]
     > Once your event is created, you cannot change the environment, the template, or room configuration, room capacity, or Max Participants.
@@ -82,7 +82,7 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 
 1. Add your Co-organizers (who will be able to edit the event) and your Attendees (who will be able to join the event) and select **Create event** when finished.
 
-    :::image type="content" source="../media/m365-migration-guide/Invite-attendees-co-organizers.png" alt-text="Invite page in the Mesh on the Web":::
+    :::image type="content" source="../media/events-guide-create-event/Mesh-on-web-invite-coorganizer.png" alt-text="Screenshot of Mesh on the Web showing invite co-organizer page for an event.":::
 
 Great job! You've now created your event. Co-organizers and invitees will now see the event in their Outlook and Teams calendars.
 
