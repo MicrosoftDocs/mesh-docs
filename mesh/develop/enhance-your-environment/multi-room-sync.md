@@ -134,8 +134,8 @@ Unity Tutorial series on using [**Timelines**](https://learn.unity.com/project/u
 
     ![Graphical user interface, application Description automatically generated](../../media/enhance-your-environment/image038.jpg)
 
-Now you can upload your environment to Mesh using the **Mesh Toolkit
-Uploader** and then see how it looks in your Mesh space. To learn more,
+Now you can upload your Environment to Mesh using the **Mesh Toolkit
+Uploader** and then see how it looks in Mesh. To learn more,
 see [Prepare content with the Control Panel](../../events-guide/customize-event.md#prepare-content-with-the-control-panel).
 
 ### Unity Video Players
