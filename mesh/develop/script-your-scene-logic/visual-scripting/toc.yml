@@ -5,3 +5,5 @@ items:
     href: visual-scripting-programmers-guide.md
   - name: Visual scripting node reference
     href: visual-scripting-node-reference.md
+  - name: Visual Scripting and Unity events
+    href: visual-scripting-and-unityevents.md

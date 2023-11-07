@@ -3,7 +3,5 @@ items:
     href: mesh-scripting-overview.md
   - name: Visual scripting
     href: visual-scripting/toc.yml
-  - name: UnityEvents and AnimationEvents
-    href: unityevents-and-animationevents.md
   - name: Cloud scripting
     href: cloud-scripting/toc.yml

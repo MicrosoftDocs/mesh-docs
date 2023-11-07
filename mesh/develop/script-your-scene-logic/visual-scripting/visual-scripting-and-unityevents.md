@@ -4,12 +4,12 @@ description: Learn about how to use UnityEvents and AnimationsEvents in your pro
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 10/26/2023
+ms.date: 11/06/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Unity, environments, scenes, events, animations, timelines, unityevents, animationevents, scripting, script graph, science building
 ---
 
-# UnityEvents and AnimationEvents
+# Visual Scripting and UnityEvents
 
 UnityEvents and AnimationEvents can be an effective way to employ user-driven callbacks. Normally, UnityEvents can set properties and invoke methods on components, and AnimationEvents can call script methods from certain points in an animation. However, Mesh has restrictions that you should keep in mind: UnityEvents and AnimationEvents are only allowed to initiate visual script flows (which can then set properties and invoke methods). UnityEvents can point to *ScriptMachine.TriggerUnityEvent* and AnimationEvents can point to *ScriptMachine.TriggerAnimationEvent*. From there, corresponding visual script flows can be triggered through "Unity Event" or "Animation Event" event nodes. This article walks you through brief tutorials for setting up and using both UnityEvents and AnimationEvents. 
 
