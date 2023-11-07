@@ -1,6 +1,6 @@
 items: 
 - name: Overview
-  href: mesh-physics-overview.
+  href: mesh-physics-overview.md
   displayName: physics
 - name: Mesh Physics in samples
   href: mesh-physics-in-samples.md
@@ -9,5 +9,5 @@ items:
   href: mesh-physics-programmers-guide.md
   displayName: physics
 - name: Filter Physics events with Body Filters
-  href: filter-physics-events.
+  href: filter-physics-events.md
   displayName: physics
