@@ -27,7 +27,7 @@ Mesh has a public build where all users can experience custom worlds and a corre
 
    - **Scopes(s):** com.microsoft
 
-   ![A screenshot of the Project Settings window with the Package Manager Scope Registry Configuration displayed.](../../media/build-your-basic-environment/configure-scoped-registry.png)
+   ![A screenshot of the Project Settings window with the Package Manager Scope Registry Configuration displayed.](../../media/build-your-basic-environment/Microsft-Mesh-toolkit-download-package-install-proper-name.png)
 
 1. Close the **Project Settings** window, and then, on the menu bar, go to **Window** > **Package Manager**.
 
@@ -35,11 +35,13 @@ Mesh has a public build where all users can experience custom worlds and a corre
 
    ![A screenshot of the Package Manager with the Packages drop down highlighted.](../../media/build-your-basic-environment/001-packages-drop-down.png)
 
-1. In the list, select **Microsoft Mesh Toolkit**--the full package name should be **com.microsoft.mesh-toolkit-preview**, as highlighted in the image below--and then click the **Install** button. You can select the version, install a preview version, and update/remove versions.
+1. In the list, you will see the stable and preview build of the **Microsoft Mesh Toolkit**. 
 
-    :::image type="content" source="../../media/build-your-basic-environment/Microsft-Mesh-toolkit-download-package-install-unity.png" alt-text="A screenshot of the Unity package manager showing details of the preview Mesh Toolkit.":::
+    Select **Microsoft Mesh Toolkit**--the full package name should be **com.microsoft.mesh-toolkit**, as highlighted in the image below--and then click the **Install** button. You can select the version, install a preview version, and update/remove versions.
 
-When the spinner animation next to the package list stops, the package has finished downloading. 
+    :::image type="content" source="../../media/build-your-basic-environment/Microsoft-Mesh-toolkit-package-manager-view.png" alt-text="A screenshot of the Unity package manager showing details of the preview Mesh Toolkit.":::
+
+When the spinner animation next to the package list stops, the package has finished downloading.
 
 ## Microsoft Mesh preview
 
@@ -47,8 +49,10 @@ In addition to the stable release builds, we offer a preview build and preview t
 
 We promote the preview build to the stable public build at regular intervals. Currently (November 2023), this happens every three weeks. If you downloaded the Mesh Toolkit through the Package Manager in Unity, you should have both the Preview and Stable build.
 
+:::image type="content" source="../../media/build-your-basic-environment/Microsoft-Mesh-toolkit-preview-package-manager-view.png" alt-text="A screenshot of the Unity Package manager showing the Mesh Toolkit.":::
+
 > [!Caution]
-> This is a preview release of the Mesh Toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh Toolkit will only work with the preview version of Mesh, and **are not compatible with the stable version of Mesh**. If you don't have access to Mesh preview, don't upgrade to this version of the Mesh Toolkit until a stable version is released. Stable versions won't have a **-preview** tag at the end of the version number.  
+> Take caution when developing with the preview release of the Mesh Toolkit, noted by a **preview** tag at the end of the version number. Environments published with this preview version of the Mesh Toolkit will only work with the preview version of Mesh, and **are not compatible with the stable version of Mesh**. If you don't have access to Mesh preview, don't upgrade to this version of the Mesh Toolkit until a stable version is released. Stable versions won't have a **-preview** tag at the end of the version number.
 >
 > **Be careful not to overwrite Environments currently in use by your company with the preview version.**
 
