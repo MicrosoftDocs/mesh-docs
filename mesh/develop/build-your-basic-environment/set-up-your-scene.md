@@ -26,7 +26,7 @@ Every scene must have at least one *travel point*, which is used to configure av
 
 ## Add the Mesh Thumbnail Camera
 
-Every time you upload your environment, a thumbnail of your scene will be captured based on the TravelPoint component and LookAt property using the *MeshThumbnailCamera*, however you can also add your own *MeshThumbnailCamera* and position it wherever you like.
+Every time you upload your Environment, a thumbnail image of your scene will be captured based on the *TravelPoint * component and *LookAt* property using the *MeshThumbnailCamera*; however, you can also add your own *MeshThumbnailCamera* and position it wherever you like.
 The *Mesh Thumbnail Camera* provides a thumbnail image that will be
 added to your Environment's listing in the Mesh Portal and its
 selection button in the Mesh app. This comes in handy when you're
