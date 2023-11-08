@@ -138,6 +138,10 @@ To learn more about the Unity Playables API in general, see [Playables in the Un
 Once added, this timeline will appear in **Control Panel** for events and templates that use this environment.
 Hosts can then control this timeline in sync across all rooms.
 
+Now you can upload your Environment to Mesh using the **Mesh Toolkit
+Uploader** and then see how it looks in Mesh. To learn more,
+see [Prepare content with the Control Panel](../../events-guide/customize-event.md#prepare-content-with-the-control-panel).
+
 ## Controlling a Video Player in an event
 
 Synchronized video playback triggered by the Control Panel can be done using the Unity Video
