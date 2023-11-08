@@ -3,7 +3,7 @@ title: Mesh Physics Programmer's Guide
 description: Learn general guidelines and component details for the many available Mesh Physics components.
 author: michael-buschbeck-ms
 ms.author: vinnietieto
-ms.date: 10/20/2023
+ms.date: 11/07/2023
 ms.topic: Guide
 ms.service: mesh
 keywords: Microsoft Mesh, Mesh physics, physics, environments, interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw
@@ -288,7 +288,7 @@ This component has two modes of operation:
 
 Allows to steer a rigid body until the velocity reaches a target direction.
 
-![Screen shot of the Steer Field script options in the Inspector.](../../../media/physics-interactions/042_SteerField-overview.png)
+![Screen shot of the Velocity Direction Field script options in the Inspector.](../../../media/physics-interactions/064-velocity-direction-field.png)
 
 This component controls only the direction of the velocity and keeps the current speed.
 
