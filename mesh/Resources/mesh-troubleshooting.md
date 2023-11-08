@@ -11,6 +11,38 @@ keywords: Microsoft Mesh, M365, events, join events, organize events, immersive 
 
 # Troubleshooting & FAQ
 
+## Troubleshooting
+
+### Teams and Office licensing
+
+#### Limitations arising from policies that limit user abilities
+
+If you do not *allow* users with Teams and Office Licensing to create Groups, Sharepoint/OneDrive sites, or use Mailbox/Calendar, the user may notice the following:
+
+1. You cannot create a collection (aka Mesh World) since you do not have the ability to do M365 Group creation in your organization.
+
+1. You cannot create an event since you do not have access to M365 Calendar in your organization.
+
+1. One or more people cannot be invited to the event because they do not have access to Outlook.
+
+1. User cannot be added to collection membership since they do not have the ability to access M365 Groups in your organization.
+
+1. You cannot create a template since you do not have access to SharePoint in your organization.
+
+### Licensing frequently asked questions
+
+#### Will there be support added in future to use an existing M365 Group?
+
+We currently have no plans to support this feature. Right now, when Mesh creates an M365 Group, some additional data is added to the group to identify it as being a Mesh World.
+
+#### When an M365 Group is created through Mesh, can it still be enabled for Teams after? Just like any other M365 Group?
+
+All M365 Groups created are normal M365 groups. A unique identifier is added to the group for the Mesh Portal to identify which Groups are associated with specific Mesh World groups.
+
+#### Can we script or automate the creation of an M365 Group for use with Mesh?
+
+We currently do not support this feature.  
+
 ## Frequently asked questions
 
 ### How to download Mesh on Quest 2 via App Lab
