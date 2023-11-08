@@ -38,6 +38,7 @@ In order for a scene to support teleportation, teleportable surfaces (for exampl
 - Its **Layer** must be set to NavMesh.  
 
 Be cautious of low ceilings or tunnels; these could potentially affect player grounding and teleportation.  For example, player physics or the teleport arc may intersect or interact with the collider above them. There should be a small buffer of space above the player's head. The minimum height from ground to roof is roughly 3m (~2m player height + ~1m buffer).
+
 - It must have some type of Collider attached (Mesh Collider or Box Collider, for example).  
 - Its Layer must be set to Navmesh.
 
