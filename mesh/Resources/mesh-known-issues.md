@@ -4,7 +4,7 @@ description: Active known issues for Mesh
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 10/4/2023
+ms.date: 11/2/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -13,7 +13,9 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.2313.0
 
-* The current way for how to determine which version of the environment to use for an event will be improved.
+* On Quest devices: users who remain idle for some time will be ejected out of an event. (21976)
+
+* The current way for how to determine which version of the environment to use for an event will be improved. (23681)
 
     This is the current behavior we ship for Public Preview:
 
@@ -23,24 +25,11 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
     For future releases, organizers to an event will have better control over which version of the environment to use for their event, or the latest version of an environment is used by default.
 
-* You will need to make a new event for every new version of the environment that you upload. 
-
-    For example:
-
-    1. Upload an environment (let's call it version 1.0.0).
-    2. Make an Event based on that environment.
-    3. Join the event. At this point in time the event is tied to version 1.0.0.
-    4. Re-upload my environment (let's call it version 2.0.0).
-    5. Join the event I created in step 3.
-
-    As the result, you'll get environment 1.0.0 rather than 2.0.0.
-
-* If an event organizer uses the Teams' calendar to make changes to the event, the location URI containing the Mesh sessionID will be erased, thus corrupting the Mesh event.  
+* If an event organizer uses the Teams' calendar to make changes to the event, the location URI containing the Mesh sessionID will be erased, thus corrupting the Mesh event. (21568)
 
     *Workaround:* Organizers must not use the Teams' calendar to make any changes to the Mesh event. Using Outlook to make changes will work, but organizers shouldn't turn a Mesh event to a Teams meeting by adding Teams call link to it.
     
-* When an avatar is being broadcasted in a Mesh event, it may disappear when viewed from certain angles while the broadcaster visual indicator remains visible during this time. 
-* On the Dashboard, the scroll bar length could be too long for the content being displayed. 
-* When downloading the Mesh app from Microsoft Store, some users will get a blank screen in the web browser. To search for the most current data on the server, press the **CTRL + F5** keys to clear your browser cache.  The latest version of the Microsoft store webpage will then load. 
+* On the Dashboard, the scroll bar length could be too long for the content being displayed. (19501)
+* When downloading the Mesh app from Microsoft Store, some users will get a blank screen in the web browser. To search for the most current data on the server, press the **CTRL + F5** keys to clear your browser cache.  The latest version of the Microsoft store webpage will then load. (14921)
 
 
