@@ -4,7 +4,7 @@ description: Mesh Toolkit active known issues
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 10/3/2023
+ms.date: 11/2/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 ---
@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 ## Version 23.13
 
-* The embedded videos show as black on Quest 2.
+* The embedded videos show as black on Quest 2. (24096)
 
     *Workaround:*  If you run into an issue where videos display and behave as expected on PC but not on Quest, add the video script to the video player.
 
