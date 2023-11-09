@@ -39,7 +39,7 @@ To configure Mesh access in your tenant, you must have one of the following role
 - Security Administrator
 - Office Apps Admin
 
-[!Include [Include file for the immersive spaces in Mesh article]](../../Includes/license-requirements-for-Mesh.md)
+[!INCLUDE [Include file for the immersive spaces in Mesh article](../../Includes/license-requirements-for-Mesh.md)]
 
 ## Configure Mesh in M365 Apps Admin Center (Optional)
 

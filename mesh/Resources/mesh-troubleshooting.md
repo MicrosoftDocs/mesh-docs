@@ -15,7 +15,7 @@ keywords: Microsoft Mesh, M365, events, join events, organize events, immersive 
 
 ### What are the license requirements for Immersive spaces in Mesh?
 
-[!Include [The include file for the license requirements in Mesh]](../Includes/license-requirements-for-Mesh.md)
+[!INCLUDE [The include file for the license requirements in Mesh](../Includes/license-requirements-for-Mesh.md)]
 
 ### What if I limit user permissions with corporate policies
 
@@ -45,7 +45,7 @@ We currently do not support this feature.
 
 ### What are the license requirements for Immersive spaces in Teams?
 
-[!INCLUDE [The include file for license reqs for immersive spaces in Teams]](../Includes/license-requirements-for-immersive-spaces-in-teams.md)
+[!INCLUDE [The include file for license reqs for immersive spaces in Teams](../Includes/license-requirements-for-immersive-spaces-in-teams.md)]
 
 ## Frequently asked questions
 
