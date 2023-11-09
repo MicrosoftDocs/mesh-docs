@@ -61,7 +61,7 @@ For Microsoft Mesh, you will need the following:
     > [!NOTE]
     > We don't support tenants with worldwide public sector, EDU, or GCC licenses.
 
-- A pre-requisite license in Teams Premium, as outlined in [Requirements to purchase Teams Premium - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#what-are-the-requirements-to-purchase-teams-premium). Learn more about [Teams for enterprise]/microsoft-teams/enterprise#pricing) and [Teams Premium trial license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#can-i-experience-teams-premium-before-buying-licenses).
+- A pre-requisite license in Teams Premium, as outlined in [Requirements to purchase Teams Premium - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#what-are-the-requirements-to-purchase-teams-premium). Learn more about [Teams for enterprise](https://www.microsoft.com/en-us/microsoft-teams/enterprise#pricing) and [Teams Premium trial license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#can-i-experience-teams-premium-before-buying-licenses).
 
 - Licenses for related Microsoft 365 components. As described earlier, Mesh uses Microsoft 365 groups, OneDrive, SharePoint, and Outlook mail and calendar - if users don't have licenses for those components, some parts of Mesh won't work. 
   
