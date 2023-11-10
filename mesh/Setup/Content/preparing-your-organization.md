@@ -10,29 +10,34 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 ---
 
 # Preparing your organization for Mesh
-This content covers requirements for Mesh implementations in Microsoft Teams and in the Mesh app. After planning for your Mesh implementation, learn how to [set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces) and [set up Microsoft Mesh](/mesh/setup/content/setup-m365-mesh#prerequisites). 
-
-## Preparation overview
 
 This page covers the required tasks and suggested functional roles
 that may need to know about the rollout, but follow your organization's
 standard rollout process, including change and configuration management.
 
-At a high level, you should:
+This content covers requirements for Mesh implementations for Immersive spaces in Mesh and immersive spaces in Teams. At a high level, the steps are:
 
+1. [Gather your deployment team](#gather-your-v-team)
 
+1. [Verify licenses and policies](#verify-your-licenses-and-policies)
 
-## Gather Your v-team
+1. [Consider tenant selection](#consider-which-tenant-to-provision-for-mesh)
 
-This page covers the required tasks and suggested functional roles
-that may need to know about the rollout, but follow your organization's
-standard rollout process, including change and configuration management.
+1. [Contact owners of supporting teams](#contact-owners-of-supporting-teams)
+
+1. [Configure Office Apps Policy Service (OCPS)](#configure-office-apps-policy-service-for-mesh)
+
+1. [Work with your security team](#work-with-your-organizations-security-team)
+
+1. [Work with stakeholders to begin deployment](#work-with-stakeholders-that-communicate-change)
+
+After planning for your Mesh implementation, learn how [set up Microsoft Mesh](/mesh/setup/content/setup-m365-mesh#prerequisites) and [set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces).
+
+## Gather your deployment team
 
 Executive-level sponsorship is highly advisable to help with any cross-team blocking issues.
 
-You will need access to several administration tools, so either get
-access to those tools or get people on the v-team who can access the
-tools.
+You will need access to several administration tools:
 
 - Teams Admin Center (TAC) is needed to configure avatar and immersive spaces administration.
 
@@ -54,15 +59,16 @@ tools.
     | Create a template | Access to SharePoint |
     | Add an image or video top an event or template | Access to either SharePoint or OneDrive |
 
-There are some setup tasks that may require cooperation from individuals
-or departments outside of the individual or team that will be deploying
-and running the Mesh preview, for example Licensing, Security, and
-Endpoint Management. Other stakeholders like Help Desk and Human
-Resources may also need to be consulted.
+> [!TIP]
+> There are some setup tasks that may require cooperation from individuals
+> or departments outside of the individual or team that will be deploying
+> and running the Mesh preview, for example Licensing, Security, and
+> Endpoint Management. Other stakeholders like Help Desk and Human
+> Resources may also need to be consulted.
 
 To participate in the Mesh public preview, you must agree to the terms of use and privacy statements. You should be in contact with your legal and privacy teams to review those terms before accepting them.
 
-## Verify Your licensing and policies
+## Verify your licenses and policies
 
 For avatars and immersive spaces in Teams, your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5.
 
@@ -70,7 +76,7 @@ For avatars and immersive spaces in Teams, your users must have licenses for one
 
 [!INCLUDE [The include file for license reqs for immersive spaces in Teams](../../Includes/license-requirements-for-immersive-spaces-in-teams.md)]
 
-## Consider which tenant to Provision for Mesh Public Preview
+## Consider which tenant to Provision for Mesh
 
 The two main factors to consider when choosing which tenant(s) to
 provision for Mesh are:
@@ -84,40 +90,46 @@ have native accounts in the same Microsoft Entra ID ([formerly Azure Active Dire
     having ultimate responsibility for running the domain securely and
     effectively.
 
+### Primary tenant for Mesh
+
 Provisioning up your primary production tenant for Mesh is recommended
 because it will give you the biggest scope to test with, but it may
-create overhead work through internal procedures and approvals. If you want to collaborate with
-people outside your production tenant, you might want to set up a seprate tenant just for Mesh. There is no technical barrier to
-creating user accounts in a production tenant for people who do not work
-for that organization, but there may be strong business reasons against
-doing so. However, creating additional tenants will increase complexity
-for admins and users to manage accounts, may also incur additional
-expenses for licensing and domain management, and may require additional
-process within your organization.
+create overhead work through internal procedures and approvals.
+
+### Separate tenant for Mesh
+
+If you want to collaborate with
+people outside your production tenant, you might want to set up a separate tenant just for Mesh. There is no technical barrier to creating user accounts in a production tenant for people who do not work for that organization, but there may be strong business reasons against doing so.
+
+> [!NOTE]
+> However, creating additional tenants will increase complexity
+> for admins and users to manage accounts, may also incur additional
+> expenses for licensing and domain management, and may require additional
+> process within your organization.
 
 If you expect to use immersive spaces in Teams for users in
 your production version of Teams, you will definitely want to provision
 your production tenant for Mesh Public Preview. While you can create other tenants
 for testing, people who use Teams throughout the day are highly unlikely
 to want to log out of their main Teams account to log into a different
-account in a different Entra. A separate tenant is more practical for
+account in a different tenant. A separate tenant is more practical for
 the Mesh app, where it's simpler to flip between accounts.
 
 Each tenant can have multiple Azure Storage subscriptions, but the Azure
 Storage subscription used for Mesh cloud scripting must be in the same EntraID as
 the users who will attend events and the developers who will upload and manage the scripts.
 
-### Contact Owners of Supporting Teams
+### Contact owners of supporting teams
 
 To complete the steps to get Mesh Public Preview running, you will need to either
 have various rights and permissions or be in contact with people in your
 organization who can grant the rights and permissions you will need.
 Depending on your company structure and policies, this process can be
-time-consuming, so it helps to start the outreach as soon as possible. The following section lists organizational
-roles that you will probably need to work with to complete the required
-pre-deployment tasks.
+time-consuming, so it helps to start the outreach as soon as possible.
 
-#### Teams Apps Managers
+The following section lists organizational roles that you will probably need to work with to complete the required pre-deployment tasks:
+
+#### Teams apps managers
 
 The adminsitration for immersive spaces and avatars will happen in the Teams admin
 portal, [admin.teams.microsoft.com](https://admin.teams.microsoft.com).
@@ -126,7 +138,7 @@ Mesh team the [role of Teams Administrator in Microsoft Entra](/microsoftteams/u
 you will need to work closely with a current Teams Apps Manager to make
 all necessary configurations.
 
-#### Teams App Policy
+#### Teams apps policies
 
 Two of the Mesh components you will be using are Teams apps; you should
 set policy to make sure only approved users have access to them. Modify
@@ -138,7 +150,7 @@ for appropriate policies. For more information about Teams access
 control, see
 <https://admin.microsoft.com/Adminportal/Home#/rbac/directory>.
 
-#### Teams Feedback Policies
+#### Teams feedback policies
 
 Microsoft relies on feedback from users to make better products. The
 Teams administrator can set whether users can send feedback about Teams
@@ -151,7 +163,7 @@ about managing feedback, see
 
 [Manage feedback policies in Teams](/microsoftteams/manage-feedback-policies-in-teams)
 
-## Office Apps Admin
+## Configure Office Apps Policy Service for Mesh
 
 You must have a policy set in Office Cloud Policy Service to permit user to access any form of Mesh. Also, OCPS
 lets you enforce policy settings
@@ -184,7 +196,7 @@ changes.
 For more information about managing feedback, see:
 [Steps for create a policy configuration](/deployoffice/admincenter/overview-cloud-policy)
 
-## Endpoint Managers
+## Review endpoint managers
 
 Make sure you know your organization's process for deploying apps. The Mesh app is available in the Microsoft Store and can be depoloyed from there using your MDM
 (mobile device management) solution like Microsoft Intune to deploy the
@@ -194,9 +206,9 @@ Microsoft Intune, see:
 
 [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-microsoft)
 
-## Azure Administrators
+## Configure Azure for Cloud Scripting
 
-If your developers plan to build custom Mesh environments that will use [Mesh cloud scripting](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md), they will require an Azure subscription to which they can deploy their cloud scripting service.  An Azure subscription is not required for environments that only use [Mesh visual scripting](../../develop/script-your-scene-logic/visual-scripting/visual-scripting-overview.md).
+If your developers plan to build custom Mesh environments that will use [Mesh Cloud Scripting](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md), they will require an Azure subscription to which they can deploy their cloud scripting service. An Azure subscription is not required for environments that only use [Mesh Visual Scripting](../../develop/script-your-scene-logic/visual-scripting/visual-scripting-overview.md).
 
 See [Set up Cloud Scripting infrastructure in Azure](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md) for more details on these requirements.
 
@@ -348,7 +360,7 @@ Microsoft Mesh offers many powerful features that enhance communication
 and collaboration in remote and hybrid workplaces. Because this service
 provides experiences that span services, make sure you plan for all
 necessary stakeholders to provide input, both those mentioned here and
-others specific to your organization. 
+others specific to your organization.
 
 ## Next steps with Mesh
 
