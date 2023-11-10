@@ -1,12 +1,12 @@
 ---
-title: Mesh Play Mode testing in Unity
-description: Testing your Mesh environment using Unity.
+title: Mesh Emulator testing in Unity
+description: Test your Mesh environment using the Mesh Emulator in Unity.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 11/9/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, testing, troubleshooting, playmode, play mode
+keywords: Microsoft Mesh, testing, troubleshooting, Mesh emulator, emulator, troubleshooting, debugging
 ---
 
 # Mesh Emulator testing in Unity
