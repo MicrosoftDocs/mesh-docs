@@ -4,79 +4,90 @@ description: Testing your Mesh environment using Unity.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 10/30/2023
+ms.date: 11/9/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, testing, troubleshooting, playmode, play mode
 ---
 
-# Mesh Play Mode testing in Unity
+# Mesh Emulator testing in Unity
 
-**Mesh Play Mode** gives you the capability to
-select *Play* in a Mesh Environment project and get an
+If you add the *Mesh Emulator* (or, simply, the "Emulator") to your project, you get an
 approximate preview of what the content will look and feel like when it
-runs in the Mesh app. This greatly speeds up the iteration cycle during
+runs in the Mesh app every time you enter Play mode. This greatly speeds up the iteration cycle during
 content development and allows developers of advanced interactive
 content to deeply debug the logic with all the powerful tools that Unity
-offers. From this point forward, we'll refer to this feature
-as *Play Mode*.
+offers.
 
-The look and feel in Play Mode are similar but not identical to those in
+The look and feel in the Emulator are similar but not identical to those in
 the Mesh app. We're continuously working to reduce the differences where
 possible without sacrificing the lightweight environment necessary for
-quick iteration. A key feature of Play Mode is the ability to run
+quick iteration. A key feature of the Emulator is the ability to run
 multiple clients within the same process; this allows a single developer
 to easily get a first impression of a multi-user scenario.
 
-**To use Play Mode in your project**:
+**To use the Emulator in your project (or not)**:
 
 1.  Ensure that you have the Mesh Toolkit imported.
 1.  Ensure that the scene contains a piece of solid floor below the origin that's set to the *NavMesh* layer.
-1.  Press the Play button. The Toolkit checks to see if a GameObject with "PlaymodeSetup" in its name exists at the top level of the **Hierarchy**. If it doesn't, this dialog appears:
+1.  Press the Play button. The Toolkit checks to see if a GameObject with "EmulatorSetup" in its name exists at the top level of the **Hierarchy**. If it doesn't, this dialog appears:
 
-![A screenshot of a computer program Description automatically generated with medium confidence](../../media/debug-and-optimize/003-playmode-setup-missing-dialog.png)
+    ![A screenshot of the Mesh Emulator Setup missing dialog.](../../media/debug-and-optimize/003-emulator-setup-missing-dialog.png)
+
+    Do one of the following:
+
+    **To ensure that the Emulator runs every time you click Play**:
+    Select the first button, **Add working MeshEmulatorSetup prefab.** The **MeshEmulatorSetup [NoUpload]** prefab appears in the **Hierarchy**.
+
+    ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../media/debug-and-optimize/004-mesh-emulator-in-hierarchy.png)
+
+    **To avoid running the Emulator and prevent the Emulator Setup missing dialog from appearing again when you click Play**:
+    Select the second button, **Add dummy NoMeshEmulatorSetup game object**. As the name suggests, this doesn't actually do anything, but the Toolkit will find "EmulatorSetup" in its name and will refrain from showing you the **Emulator Setup missing** dialog again.
+
+If you initially decide you don't want to use the Emulator, but change your mind later on, delete the **NoMeshEmulatorSetup [NoUpload]** dialog from the **Hierarchy**. The next time you click Play, the Toolkit will display the **Emulator Setup missing** dialog again, and you can click the button to add the Emulator.
 
 ## Teleport Player on Play
 
-When working in a large scene, you may find it valuable to move to a
-specific location at startup.
+When working in a large scene, you may find it valuable to teleport the player to a specific location at startup. To achieve this:
 
-![A screenshot of a computer program Description automatically generated with medium confidence](../../media/debug-and-optimize/image042.jpg)
+1. In the **Hierarchy**, select **MeshEmulatorSetup [NoUpload]**.
+1. In the **Inspector**, navigate to the **Mesh Emulator Setup** script.
+1. In the **Teleport Player on Play** section, enter the **Position** and **Rotation** XYZ values you want the player to teleport to.
 
-## Playmode Split Screen
+![A screenshot of the Mesh Emulator Setup component with the Teleport Player on Play section highlighted.](../../media/debug-and-optimize/005-teleport-player-on-play.jpg)
+
+## Emulator Split Screen
 
 This feature lets you run multiple clients within the same process and
 show them side-by-side within the same window. Mesh Toolkit itself implements a very minimal
-emulated *PlaymodeNetwork* component that's sufficient to communicate
+emulated ____________________ component that's sufficient to communicate
 the player position between the clients, allowing the different players
 to see each other as heavily stylized avatars:
 
-![A screenshot of multiple clients displayed side-by-side in Play mode.](../../media/debug-and-optimize/image043.png)
+![A screenshot of multiple clients displayed side-by-side in the Emulator.](../../media/debug-and-optimize/image043.png)
 
 This is sufficient for previewing static content. When developing
 interactive content, [visual scripting](../script-your-scene-logic/visual-scripting/visual-scripting-overview.md), [cloud scripting](../script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md) and/or [WebSlate](../enhance-your-environment/webcontent.md), keep in mind that those features each contain their own networking mechanisms
-which provide a Play Mode preview of a synchronized experience with
-multiple users.
+which provide an Emulator preview of a synchronized experience with multiple users.
 
 Do one of the following:
 
--   Increase the initial screen count before entering Play mode by
-    setting the value in the **Playmode Setup** component:
+-   Increase the initial screen count before entering Play mode by setting the value in the **Mesh Emulator Setup** component:
 
-![A screenshot of the Playmode Setup component with the Initial Screen Count property set to two.](../../media/debug-and-optimize/image044.jpg)
+![A screenshot of the Mesh Emulator Setup component with the Initial Screen Count property set to two.](../../media/debug-and-optimize/006-initial-screen-count.jpg)
 
 -or-
 
 1.  Start Play Mode.
 
 2.  In the **DontDestroyOnLoad** scene, navigate to the
-    **PlaymodeSplitScreen** component and then select **Add player**.
+    **EmulatorSplitScreen** component and then select **Add screen**.
 
-![___](../../media/debug-and-optimize/image045.jpg)
+![___](../../media/debug-and-optimize/007-add-screen.png)
 
 Now you can quickly test your Unity Scene without going through the
 build and upload process each time you make an iteration.
 
  > [!IMPORTANT]
- > If you're using the [Visual Profiler](../debug-and-optimize-performance/performance-guidelines.md#visual-profiler) in your scene, make sure the **Initial Screen Count** setting in the **Playmode Setup** component is zero. If it's "1" or higher, you won't see the Visual Profiler.
+ > If you're using the [Visual Profiler](../debug-and-optimize-performance/performance-guidelines.md#visual-profiler) in your scene, make sure the **Initial Screen Count** setting in the **Mesh Emulator Setup** component is zero. If it's "1" or higher, you won't see the Visual Profiler.
 
- ![A screen shot of a number Description automatically generated](../../media/debug-and-optimize/001-playmode-count-one.png)
+ ![A screen shot of the Mesh Emulator Setup component with Initial Screen Count set to zero.](../../media/debug-and-optimize/008-screen-count-zero.png)
