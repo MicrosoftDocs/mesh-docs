@@ -16,17 +16,17 @@ For Microsoft Mesh environments, utilize Unity Baked Lighting. To include a Mesh
 All Unity light types are available when using baked lighting. Make sure you set the mode to "Baked". Realtime lights aren't
 supported for use in the environment.
 
-![___](../../media/3d-design-performance-guide/image048.png) 
+![Screenshot of Unity light module with baked selected.](../../media/3d-design-performance-guide/image048.png) 
 
 All Unity light types are available when using baked lighting.
 
 To include a mesh object in the light bake, make sure you check the **Static** checkbox in the **Inspector**.
 
-![A screen shot of a number Description automatically generated](../../media/3d-design-performance-guide/image049.png) 
+![A screen shot of Unity showing the checked Static checkbox in the Inspector.](../../media/3d-design-performance-guide/image049.png) 
 
 If this isn't checked, lighting won't be applied to the mesh and it won't cast any shadows in the scene.
 
-![A screen shot of a number Description automatically generateda](../../media/3d-design-performance-guide/image050.png)
+![A screen shot of Unity showing the Mesh renderer.](../../media/3d-design-performance-guide/image050.png)
 
 The Scale in Lightmap value increases/decreases the size of the selected mesh's UVs in the Unity light map bake. If you need to change a specific mesh's resolution, this is where to do it.
 
