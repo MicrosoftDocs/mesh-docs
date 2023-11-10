@@ -17,7 +17,7 @@ standard rollout process, including change and configuration management.
 
 This content covers requirements for Mesh implementations for Immersive spaces in Mesh and immersive spaces in Teams. At a high level, the steps are:
 
-1. [Gather your deployment team](#gather-your-v-team)
+1. [Gather your deployment team](#gather-your-deployment-team)
 
 1. [Verify licenses and policies](#verify-your-licenses-and-policies)
 

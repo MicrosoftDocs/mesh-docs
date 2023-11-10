@@ -125,7 +125,7 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 ### What should I do if the Mesh app on Windows crashes during startup, crashes during runtime, or behaves strangely during runtime?
 
-1. Confirm you have a license required to use Mesh as shown [here](../setup/content/preparing-your-organization.md#verify-your-licensing).
+1. Confirm you have a license required to use Mesh as shown in [here](../Setup/Content/preparing-your-organization.md#verify-your-licenses-and-policies).
 
 1. Double check that the machine has the latest Operating System and security updates.
 

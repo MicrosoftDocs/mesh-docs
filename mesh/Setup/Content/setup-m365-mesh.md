@@ -19,7 +19,7 @@ In the Microsoft 365 Apps Admin Center admins can manage access to Mesh experien
 - Mesh app on Quest 2
 - Mesh Portal
 
-By default, these Mesh experiences will be available to all users if a policy is not created to restrict access. Follow the [Configure Mesh in M365 Apps Admin Center](#configure-mesh-in-m365-apps-admin-center-optional) steps below to block specific groups or people.
+By default, these Mesh experiences will be available to all users if a policy is not created to restrict access. Follow the [Configure Mesh in M365 Apps Admin Center](#optional-configure-mesh-in-m365-apps-admin-center)steps below to block specific groups or people.
 
 > [!NOTE]
 > All Mesh experiences are managed via one policy in the Microsoft 365 Apps Admin Center.
