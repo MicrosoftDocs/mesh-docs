@@ -82,7 +82,7 @@ For help, see the [immersive spaces in mesh licensing Troubleshooting and FAQs](
 
 Users will see an End User License Agreement dialogue in the upcoming release for Mesh products and data gathered from spatial audio as seen in the following image:
 
-:::image type="content" source="../../media/m365-setup-guide/EULA-agreemnet.png" alt-text="Screenshot of end user license agreement for Mesh and spatial audio.":::
+:::image type="content" source="../../media/m365-setup-guide/EULA-agreemnet-small.png" alt-text="Screenshot of end user license agreement for Mesh and spatial audio." lightbox="../../media/m365-setup-guide/EULA-agreemnet.png":::
 
    > [!div class="nextstepaction"]
    > [Manage Mesh worlds](manage-mesh-worlds.md)
