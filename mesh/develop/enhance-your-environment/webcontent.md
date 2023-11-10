@@ -4,7 +4,7 @@ description: Learn how to display Web content in Mesh Environments.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 10/3/2023
+ms.date: 11/20/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Web content, Web, webslate
 ---
@@ -15,9 +15,9 @@ keywords: Microsoft Mesh, Web content, Web, webslate
 interior design, furniture, table Description automatically
 generated](../../media/webview-developer-guide/image003.png)
 
-Use WebSlate to display interactive web content into your 3D Mesh environment. Get a full browsing experience on PC or Quest 2 with intuitive input, customizability, security, and performance management. 
+Use WebSlate to display interactive web content in your 3D Mesh environment. Get a full browsing experience on PC or Quest 2 with intuitive input, customizability, security, and performance management. 
 
-Envision using WebSlates in your custom environments for:
+You can use WebSlates for:
 
 - Interacting with maps, diagrams, and data
 
@@ -27,53 +27,51 @@ Envision using WebSlates in your custom environments for:
 
 ## WebSlate features
 
-- **Specify a default URL:** Choose your location, drag-and-drop the prefab, then add a URL. Repeat for multiple WebSlates in your scene.
+- **Specify a default URL:** Choose your location, then drag-and-drop the prefab, and then add a URL. Repeat if you want multiple WebSlates in your scene.
 
-- **Input & audio built-in:** End user web navifation, interaction with apps, and viewing videos become available in Mesh.
+- **Input & audio built-in:** End user Web navigation, interaction with apps, and viewing videos become available in Mesh.
 
 - **Secure navigation:** Lock redirect URLs to prevent malicious redirects and unintended hyperlink navigations.
 
-- **Visual customization:** Modify quality to optimize for user's devices. Attact users from a distance with easy-to-view content.
+- **Visual customization:** Modify quality to optimize for users' devices. Attract users from a distance with easy-to-view content.
 
-- **Scriptable:** With visual and cloud scripting, enable togglign between pages with a button.
+- **Scriptable:** With [visual scripting and cloud scripting](../script-your-scene-logic/mesh-scripting-overview.md), you can enable toggling between pages with a button.
 
-- **Content Performance Analyzer tool integration:** Measure the average time it takes for URP to render WebSlates in a frame and find content loading issues.
+- **[Content Performance Analyzer tool](../debug-and-optimize-performance/cpa.md) integration:** Measure the average time it takes for URP to render WebSlates in a frame and find content loading issues.
 
-- **Testing in Play Mode:** Interact with your content as a user would, directly from the Unity editor.  
+- **Testing with the Mesh Emulator:** Interact with your content as a user would, directly from the Unity editor.  
 
 - **Manually authenticate in-experience:** Access secure content from within the experience by logging into your account and viewing content at runtime.
 
 ## How WebSlate works
 
-WebSlate loads an interactive page via a provided URL. The URL given to it in the environment will be the same one loaded in Mesh. In the Mesh Toolkit, the WebSlate prefab contains a URL parameter that developers can specify to control the content displayed in their Mesh environment. 
+If you have a Unity project set up to [create Mesh Environments](../build-your-basic-environment/create-a-new-project-or-update.md), adding a WebSlate to your Environment is a straightforward process.
 
-- When loaded on the Mesh App for PC and Quest, Web pages loaded by the WebSlate are interactable through mouse, keyboard, and Quest XR controller input.
+In Mesh, WebSlate loads an interactive page through a provided URL. The URL given to it in the Environment will be the same one loaded in Mesh. In the Mesh Toolkit, the WebSlate prefab contains a URL parameter that developers can specify to control the content displayed in their Mesh Environment. 
 
-- The size and shape of the WebSlate will match that of the quad GameObject on which it is placed, typically this is the quad baked inside of the WebSlate prefab.
+- When loaded on the Mesh App for PC and Quest, Web pages loaded by a WebSlate are interactable through mouse, keyboard, and Quest XR controller input.
 
-- Multiple WebSlates can be added to a scene. The number of users in your Mesh environment does not affect WebSlate performance, as WebSlate resources are initialized locally on the user's machine.
+- The size and shape of the WebSlate will match that of the quad GameObject it's place on. Typically, this is the quad baked inside of the WebSlate prefab.
+
+- Multiple WebSlates can be added to a scene. The number of users in your Mesh Environment doesn't affect WebSlate performance; WebSlate resources are initialized locally on the user's machine.
 
 - WebSlates can be configured with visual or cloud scripting to add interactive behaviors and synchronization across users.
 
-- WebSlate can display Web pages and supports interaction but does not function as a browser and does not support bookmark, history or travel back-forth. 
+- WebSlate can display Web pages and it supports interaction but doesn't function as a browser and doesn't support bookmark, history or travel back-forth. 
 
-- You can preview your WebSlate before uploading your scene to Mesh by hitting play in the Unity editor on your environment project.
+- You can preview your WebSlate in your Unity project before uploading your scene to Mesh by pressing Play.
 
 ## Requirements/Dependencies
 
 WebSlate depends on the *Unity.InputSystem* and *Unity.XR.Interaction.Toolkit* Unity packages, located in the Mesh Toolkit.
 
-## Add a WebSlate to your Mesh environment
-
-Adding a WebSlate to your Environment should be a relatively straightforward process so long as you have a Unity project set up to create Mesh environments.
-
 ### Add a WebSlate prefab to your Unity project
 
-There are two flavors of WebSlate prefabs available in the Mesh Toolkit that you can add to your scene. If you would like a WebSlate contained in a stylized frame with extra functionalities, you can use the WebSlateFramed prefab. Otherwise, if you would prefer a clean WebSlate with no extra components, you can use the WebSlate prefab.
+There are two flavors of WebSlate prefabs available in the Mesh Toolkit that you can add to your scene. If you would like a WebSlate contained in a stylized frame with extra features, you can use the WebSlateFramed prefab. Otherwise, if you prefer a clean WebSlate with no extra components, you can use the WebSlate prefab.
 
 ![Image showcasing two webslate prefabs](../../media/webview-developer-guide/image025.png)
 
-#### Using Mesh Toolkit Context Menu (Recommended)
+#### Using the Mesh Toolkit Context Menu (Recommended)
 
 To include either of the prefabs to your scene, right-click the scene hierarchy, navigate to "Mesh Toolkit," and then click "WebSlate"/"WebSlateFrame". You can also click the "+" button at the top left of the hierarchy window to see the same menu. Once you've added a WebSlate, add a URL to display content in Mesh.
 
