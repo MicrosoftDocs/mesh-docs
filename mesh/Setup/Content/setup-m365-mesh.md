@@ -65,7 +65,7 @@ To configure access to Mesh in your tenant, you must have one of the following r
     :::image type="content" source="../../media/m365-setup-guide/M365-configure-settings-policy-name.png" alt-text="Policy name for enabling Mesh experiences is Control user access to Microsoft Mesh experiences.":::
 
 1. Select the policy and **Enable** or **Disable** it for users or groups of users in your organization.
-    :::image type="content" source="../../media/m365-setup-guide/OCPS-Enabled-policy.png" alt-text="Mesh access policy enabled":::
+    :::image type="content" source="../../media/m365-setup-guide/OCPS-Enabled-policy-small.png" alt-text="Mesh access policy enabled" lightbox="../../media/m365-setup-guide/OCPS-Enabled-policy.png":::
 1. In the Review and publish page, review the policy that was created then select **Create** to publish.
 
     :::image type="content" source="../../media/m365-setup-guide/m365-create-policy.png" alt-text="Create policy page in the MAC":::
