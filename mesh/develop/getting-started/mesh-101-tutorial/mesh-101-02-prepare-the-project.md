@@ -78,7 +78,7 @@ learn about Mesh Interactables and Mesh Physics.
 For this project, we want our avatar to be able to walk around only on
 the floors inside the *Sphere Terrace* objects and the floor of a
 platform that's attached to one of the wind turbine generators. For
-these areas to be walkable, they must be on the *NavMesh* layer. Let's
+these areas to be teleportable, they must be on the *NavMesh* layer. Let's
 add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
 
 1. In the **Hierarchy**, expand the **Chapter 3** GameObject.
