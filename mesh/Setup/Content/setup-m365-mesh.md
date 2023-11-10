@@ -33,7 +33,7 @@ To manage access, please visit the M365 Apps Admin Center and configure the poli
 
 ## Prerequisites
 
-To configure Mesh access in your tenant, you must have one of the following roles in Azure AD:
+To configure access to Mesh in your tenant, you must have one of the following roles in Azure Active Directory:
 
 - Global Administrator
 - Security Administrator

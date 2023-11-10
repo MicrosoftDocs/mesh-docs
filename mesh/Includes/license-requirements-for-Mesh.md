@@ -1,15 +1,15 @@
 ---
-title: License requirements for Microsoft Mesh app
+title: License requirements for Immersive spaces in Mesh
 description: License requirements for Microsoft Mesh.
 ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 11/08/2023
 ms.topic: overview
-keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, licenses
+keywords: Microsoft Mesh, Immersive spaces, Avatars, setup, admin, M365, getting started, documentation, licenses
 ---
 
-### License requirements for Microsoft Mesh
+### License requirements for Immersive spaces in Mesh
 
 For Microsoft Mesh, you will need the following:
 
