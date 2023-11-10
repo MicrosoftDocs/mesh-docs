@@ -4,7 +4,7 @@ description: Mesh Toolkit active known issues
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 11/2/2023
+ms.date: 11/9/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 ---
@@ -17,11 +17,39 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
     *Workaround:*  If you run into an issue where videos display and behave as expected on PC but not on Quest, add the video script to the video player.
 
+### Scripting
+
+* The **On State Changed** event node stops triggering completely and indefinitely after it had been disabled for the first time. (26333)
+
+* In the script graph, the per-node annotations **Local to this client** and **Shared by all clients** currently doesn't reliably update in real time when the scene is changed while the script graph window is visible. (26334)
+
+* The Mesh **Interactable Body | Is Selected** incorrectly behaves as if it's a local property even though it's networked in the Mesh client. (26792)
+
+* Mesh's injected framework nodes (for example, **Track Object State** and **Sanitize Data**) persist in second-level subgraphs after running a scene in the Mesh Emulator. (28966)
+
+* When the **On State Changed** event node is used to observe a shared property or variable, it should be triggered immediately after the property or variable is changed locally. Currently, for shared properties or variables, it's triggered only after the local change had been sent to and received back from the server, incurring network delay even on the sending client. (28968)
+
+* Currently, the list of available script nodes can easily be auto-populated with incompatible (default) project settings or without having been filtered to include only nodes supported by Mesh. For example, this could happen if users chose not to apply Mesh project settings before starting to work on visual scripts, or if they manually edited Visual Scripting's **Type Options** or **Node Library** and selected **Regenerate Nodes**. (26109)
+
+#### Physics
+
+* The physics event nodes: **On Trigger Enter**, **On Trigger Exit**, **On Collision Enter**, and **On Collision Exit** may not reliably trigger on all clients in the room. Depending on network conditions, it's possible that they'll only trigger on a subset of clients. (27635)
+
+* It's currently hard to reliably read-then-write shared state (for example: update a shared score variable) in a script node triggered by one of the physics event nodes: **On Trigger Enter**, **On Trigger Exit**, **On Collision Enter**, and **On Collision Exit**, as these events are generally triggered on more than one client in the room for the same interaction. (27635)
+
+### Interactables
+
+* [Equippable objects](/mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactables#equippable-objects) should respond to a mouse down as opposed to the current mouse release. (27858)
+
+* On Quest devices: to pick up an [equippable object](/mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactables#equippable-objects), you need to point the controller ray at the object and click the Grip button. If you simply bring your hand close to the object and click the Grip button, nothing will happen.  This feels very unnatural for interaction with objects that are near.  When you're very close to an object, it's hard to point your controller ray at it to interact. (24187)
+
+* Missing `MeshUniqueIdManager`` causes serialization failures. (25151)
+
 ### WebSlate
 
 * If loading too many WebSlates at once, lower-end computers may not be able to load all WebSlates, only some WebSlates will be loaded. We recommend using the CPA tool to measure rendering time and determine the proper allocations based on your environment's features.
 
-### Cloud Scripting
+### Cloud Scripting known limitations
 
 #### Azure Login Expired
 Some users are experiencing an error during deploy and publish that shows the a similar log output to the following: `The client 'YOUR_USER_EMAIL' with object id 'YOUR_AAD_ID' does not have authorization to perform action 'Microsoft.Resources/deployments/write' over scope ...` This occurs when the locally cached login as expired. The expiration can be checked by running `az account get-access-token --query "expiresOn" --output tsv` in command line. As a workaround, manually run `az login` from the command line.

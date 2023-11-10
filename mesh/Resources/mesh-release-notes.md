@@ -4,7 +4,7 @@ description: Mesh release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 10/23/2023
+ms.date: 11/9/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -14,6 +14,10 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 **Release notes and known issues for the Immersive spaces in Microsoft Mesh on PC & Quest 2**
 
 ## Version 5.2313.0
+
+### What's new
+
+* For an event session, if the session's room usage number is exceeded, there will be a new error dialog popping up when you attempt to join the session. The error message will display: **Mesh Service is currently experiencing unusually high traffic. Please try again later.**
 
 ### Resolved product issues
 
