@@ -3,7 +3,7 @@ title: Mesh Physics Programmer's Guide
 description: Learn general guidelines and component details for the many available Mesh Physics components.
 author: michael-buschbeck-ms
 ms.author: vinnietieto
-ms.date: 11/9/2023
+ms.date: 11/10/2023
 ms.topic: Guide
 ms.service: mesh
 keywords: Microsoft Mesh, Mesh physics, physics, environments, interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw
@@ -40,10 +40,6 @@ You can add auto-play animations to the scene that interact with physics bodies.
 The animation clip used by the auto-play animation can use any **Wrap Mode**. Useful choices are "Loop" and "Ping Pong".
 
 ![Screen shot of the Animation Clip asset settings in the Inspector.](../../../media/physics-interactions/039_SharedAnimation-AnimationClip.png)
-
-Optionally, you can add the Shared Animation script to control the potential speed adjustment range. We recommend that you set the minimum relative speed to significantly less than 1 and the maximum relative speed to signficantly greater than 1 to allow Mesh Physics to quickly approach the synchronized state and to get insight into which colliders and kinematic rigid bodies Mesh Physics views as part of the animation.
-
-![Screen shot of the Shared Animation script settings in the Inspector.](../../../media/physics-interactions/040_SharedAnimation-overview.png)
 
 ## Components
 
@@ -407,6 +403,8 @@ Offsets the center of mass of a rigidbody.
 All rigidbodies in the **Hierarchy** under this component won't be synced among clients. This script should be added to rigidbodies whose positions or rotations are set through a visual script or an animation.
 
 ![Screen shot of the Local Physics Scope settings in the Inspector.](../../../media/physics-interactions/081-local-physics-scope.png)
+
+[Learn about Mesh Visual Scripting physics event nodes](../../script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md#physics-events-nodes).
 
 ### Throw Trajectory
 
