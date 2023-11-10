@@ -104,11 +104,11 @@ approximate preview of what the content will look and feel like when it runs in 
 **To add the Mesh Emulator**:
 1. Press the Play button. This dialog appears:
 
-    ![A screenshot of the Mesh Emulator Setup missing dialog.](../../media/debug-and-optimize/499-emulator-setup-missing-dialog.png)
+    ![A screenshot of the Mesh Emulator Setup missing dialog.](../../media/sample-mesh-101/499-emulator-setup-missing-dialog.png)
 
 1. Select the first button, **Add working MeshEmulatorSetup prefab.** The **MeshEmulatorSetup [NoUpload]** prefab appears in the **Hierarchy**.
 
-    ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../media/debug-and-optimize/500-mesh-emulator-setup-added.png)
+    ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../media/sample-mesh-101/500-mesh-emulator-setup-added.png)
 
     This prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around.
 

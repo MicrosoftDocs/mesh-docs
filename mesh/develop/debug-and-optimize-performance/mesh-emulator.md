@@ -53,7 +53,7 @@ When working in a large scene, you may find it valuable to teleport the player t
 1. In the **Inspector**, navigate to the **Mesh Emulator Setup** script.
 1. In the **Teleport Player on Play** section, enter the **Position** and **Rotation** XYZ values you want the player to teleport to.
 
-![A screenshot of the Mesh Emulator Setup component with the Teleport Player on Play section highlighted.](../../media/debug-and-optimize/005-teleport-player-on-play.jpg)
+![A screenshot of the Mesh Emulator Setup component with the Teleport Player on Play section highlighted.](../../media/debug-and-optimize/005-teleport-player-on-play.png)
 
 ## Emulator Split Screen
 
@@ -73,7 +73,7 @@ Do one of the following:
 
 -   Increase the initial screen count before entering Play mode by setting the value in the **Mesh Emulator Setup** component:
 
-![A screenshot of the Mesh Emulator Setup component with the Initial Screen Count property set to two.](../../media/debug-and-optimize/006-initial-screen-count.jpg)
+![A screenshot of the Mesh Emulator Setup component with the Initial Screen Count property set to two.](../../media/debug-and-optimize/006-initial-screen-count.png)
 
 -or-
 
