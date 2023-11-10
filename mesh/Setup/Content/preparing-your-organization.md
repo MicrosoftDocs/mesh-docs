@@ -12,6 +12,16 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 # Preparing your organization for Mesh
 This content covers requirements for Mesh implementations in Microsoft Teams and in the Mesh app. After planning for your Mesh implementation, learn how to [set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces) and [set up Microsoft Mesh](/mesh/setup/content/setup-m365-mesh#prerequisites). 
 
+## Preparation overview
+
+This page covers the required tasks and suggested functional roles
+that may need to know about the rollout, but follow your organization's
+standard rollout process, including change and configuration management.
+
+At a high level, you should:
+
+
+
 ## Gather Your v-team
 
 This page covers the required tasks and suggested functional roles
@@ -31,16 +41,18 @@ tools.
 - Other tasks like permitting URLs and firewall ports will be done in
     whatever administrative tools are used by your organization.
   
-- Mesh uses other parts of the Microsoft 365 suite. If your organization restricts access to these resources, parts of Mesh won't work. Talk to whoever has access to the Microsoft 365 Admin tools to determine if there are any restrictions and to test whether those restrictions will interfere with Mesh. 
+- Mesh uses other parts of the Microsoft 365 suite. If your organization restricts access to these resources, parts of Mesh won't work. Talk to whoever has access to the Microsoft 365 Admin tools to determine if there are any restrictions and to test whether those restrictions will interfere with Mesh.
 
-| Mesh Action | Access Needed |
-| --- | --- |
-| Create a Mesh World  | Create Microsoft 365 group |
-| Be added as a member to a Mesh world  | Access Microsoft 365 groups |
-| Create a Mesh event | Access to Microsoft 365 Calendar |
-| Be invited to a Mesh event | Access to Outlook Mail |
-| Create a template | Access to SharePoint |
-| Add an image or video top an event or template | Access to either SharePoint or OneDrive |
+    For example, the table below defines what access is needed for specific actions:
+
+    | Mesh Action | Access Needed |
+    | --- | --- |
+    | Create a Mesh World  | Create Microsoft 365 group |
+    | Be added as a member to a Mesh world  | Access Microsoft 365 groups |
+    | Create a Mesh event | Access to Microsoft 365 Calendar |
+    | Be invited to a Mesh event | Access to Outlook Mail |
+    | Create a template | Access to SharePoint |
+    | Add an image or video top an event or template | Access to either SharePoint or OneDrive |
 
 There are some setup tasks that may require cooperation from individuals
 or departments outside of the individual or team that will be deploying
@@ -50,25 +62,15 @@ Resources may also need to be consulted.
 
 To participate in the Mesh public preview, you must agree to the terms of use and privacy statements. You should be in contact with your legal and privacy teams to review those terms before accepting them.
 
-## Verify Your Licensing
+## Verify Your licensing and policies
 
 For avatars and immersive spaces in Teams, your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5.
 
-For Microsoft Mesh, you will need the following:
+[!INCLUDE [Include file for the immersive spaces in Mesh article](../../Includes/license-requirements-for-Mesh.md)]
 
-- Teams Premium license in a tenant for Commercial use. Read more about [Microsoft Teams Premium licensing - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
+[!INCLUDE [The include file for license reqs for immersive spaces in Teams](../../Includes/license-requirements-for-immersive-spaces-in-teams.md)]
 
-    > [!NOTE]
-    > We don't support tenants with worldwide public sector, EDU, or GCC licenses.
-
-- A pre-requisite license in Teams Premium, as outlined in [Requirements to purchase Teams Premium - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#what-are-the-requirements-to-purchase-teams-premium). Learn more about [Teams for enterprise](https://www.microsoft.com/en-us/microsoft-teams/enterprise#pricing) and [Teams Premium trial license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#can-i-experience-teams-premium-before-buying-licenses).
-
-- Licenses for related Microsoft 365 components. As described earlier, Mesh uses Microsoft 365 groups, OneDrive, SharePoint, and Outlook mail and calendar - if users don't have licenses for those components, some parts of Mesh won't work.
-  
-- If your organization plans to create custom worlds for Microsoft Mesh,
-your world building team will need licenses for Unity.
-
-## Which Tenant Should I Provision for Mesh Public Preview?
+## Consider which tenant to Provision for Mesh Public Preview
 
 The two main factors to consider when choosing which tenant(s) to
 provision for Mesh are:

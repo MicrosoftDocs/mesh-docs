@@ -41,10 +41,10 @@ To configure Mesh access in your tenant, you must have one of the following role
 
 [!INCLUDE [Include file for the immersive spaces in Mesh article](../../Includes/license-requirements-for-Mesh.md)]
 
-## Configure Mesh in M365 Apps Admin Center (Optional)
+## (Optional) Configure Mesh in M365 Apps Admin Center
 
 > [!IMPORTANT]
-> Mesh will be available to all users by default. Create a policy or updated an existing one to block specific groups or people.
+> Mesh will be available to all users by default. Create a policy or update an existing one to block specific groups or people.
 
 1. Sign into [M365 Apps Admin Center](https://config.office.com/officeSettings/) with your Azure Active Directory account with admin privileges for the Microsoft 365 Admin Center.
     > [!div class="nextstepaction"]
