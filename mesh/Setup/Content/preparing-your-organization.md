@@ -292,7 +292,7 @@ In addition to the endpoints listed above, Mesh also requires that outgoing
 traffic be allowed to IP addresses in the "AzureCloud" service tag over the
 following protocols and ports:
 
-- TCP ports 80, 443, 8089, and 8989
+- TCP ports 80, 443
 
 - TCP & UDP ports 30,000-30,499
 
