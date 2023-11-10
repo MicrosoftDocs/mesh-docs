@@ -74,7 +74,11 @@ For avatars and immersive spaces in Teams, your users must have licenses for one
 
 [!INCLUDE [Include file for the immersive spaces in Mesh article](../../Includes/license-requirements-for-Mesh.md)]
 
+For extra help, see the [Mesh licensing in Troubleshooting and FAQs](../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-mesh).
+
 [!INCLUDE [The include file for license reqs for immersive spaces in Teams](../../Includes/license-requirements-for-immersive-spaces-in-teams.md)]
+
+Need help with Teams and Office licensing for Microsoft Mesh, see the [Mesh licensing in Troubleshooting and FAQs](../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-teams).
 
 ## Consider which tenant to Provision for Mesh
 

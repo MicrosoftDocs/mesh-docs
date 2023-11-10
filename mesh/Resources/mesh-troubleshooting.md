@@ -147,7 +147,7 @@ You'll need to first reproduce the problem, and then follow the steps below to c
 1. Click the **Copy all** button.
 1. Share that data with [Microsoft support](https://admin.microsoft.com) (this support link may only be available to M365 admins).
 
-The data should be your version of the following: 
+The data should be your version of the following:
 
 - **Portal host:**
 - **Portal version:**

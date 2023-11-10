@@ -41,6 +41,8 @@ To configure access to Mesh in your tenant, you must have one of the following r
 
 [!INCLUDE [Include file for the immersive spaces in Mesh article](../../Includes/license-requirements-for-Mesh.md)]
 
+For extra help, see the [Mesh licensing in Troubleshooting and FAQs](../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-mesh).
+
 ## (Optional) Configure Mesh in M365 Apps Admin Center
 
 > [!IMPORTANT]

@@ -37,5 +37,3 @@ These are required for:
 - **Group creation**: Used for Mesh World creation in the Mesh Portal.
 - **SharePoint/OneDrive**: Used for custom event/template creation.
 - **Mailbox/Calendar**: Used for events creation and/or sending/receipt of event invites.
-
-For extra help, see the [Mesh licensing in Troubleshooting and FAQs](../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-mesh).
