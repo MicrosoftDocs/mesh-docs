@@ -1,9 +1,10 @@
 ---
 title: Release notes for Mesh Toolkit
 description: Mesh Toolkit release notes
+ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 10/23/2023
+ms.date: 11/2/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 ---
@@ -80,7 +81,7 @@ Here's what to do for UnityEvent in a `SignalReceiver` as the starting point:
 
 #### Uploader
 
-* The `ContentVersion` has been incremented to 1.20.0: Newly published content will only be visible in the recent MeshBrowsers.
+* The `ContentVersion` has been incremented to 1.20.0: Newly published content will only be visible in recent Mesh app.
 
 * Fixed a rendering issue at World List and Environment dropdowns.
 

@@ -39,33 +39,33 @@ Here are more things you can do with Mesh Physics features:
 
 * Control how gravity affects objects.
 
-![Screen shot of a game that uses gravity.](../../../media/physics-interactions/105-ball-drop.png)
+    ![Screen shot of a game that uses gravity.](../../../media/physics-interactions/105-ball-drop.png)
 
 * Make an object “sticky”—it sticks to whatever it hits. Examples: throwing a dart at a dart board, attaching a picture to a wall.
 
-![Screen shot of paintings attached to a wall.](../../../media/physics-interactions/003-sticky-pictures.png)
+    ![Screen shot of paintings attached to a wall.](../../../media/physics-interactions/003-sticky-pictures.png)
 
 * Add auto-play animations that interact with physics bodies.
 
-![Screen shot of an animation trigger.](../../../media/physics-interactions/010-animation-trigger.png)
+    ![Screen shot of an animation trigger.](../../../media/physics-interactions/010-animation-trigger.png)
 
 * Allow participants to reset objects (for example, reset a chess board, or clean up a room after objects have been scattered about).
 
-![Two-part screen shot of a room with furniture in disarray and then the same room with furniture back in place.](../../../media/physics-interactions/002-rearrange.png)
+    ![Two-part screen shot of a room with furniture in disarray and then the same room with furniture back in place.](../../../media/physics-interactions/002-rearrange.png)
 
 * Fire events when an object enters a trigger collider.
 
-![Screen shot of a trigger volume.](../../../media/physics-interactions/030-trigger-volume.png)
+    ![Screen shot of a trigger volume.](../../../media/physics-interactions/030-trigger-volume.png)
 
 * Create a containment field. Objects will stay within the boundaries of the field.
 
-![Screen shot of a containment field.](../../../media/physics-interactions/061-containment-field-in-scene-view.png)
+    ![Screen shot of a containment field.](../../../media/physics-interactions/061-containment-field-in-scene-view.png)
 
 * Control the velocity of an object.
 
 * Control the buoyancy of objects&mdash;for example, make boats and other seagoing objects “float.”
 
-![Screen shot of a boat floating on water.](../../../media/physics-interactions/007-buoyancy-field.png)
+    ![Screen shot of a boat floating on water.](../../../media/physics-interactions/007-buoyancy-field.png)
 
 * Control the angular velocity of an object.
 
@@ -73,11 +73,11 @@ Here are more things you can do with Mesh Physics features:
 
 * Create “bouncy” objects that bounce off each other with a predefined velocity.
 
-![Screen shot of numerous balls in mid-bounce.](../../../media/physics-interactions/006-balls-bounce.png)
+    ![Screen shot of numerous balls in mid-bounce.](../../../media/physics-interactions/006-balls-bounce.png)
 
 * Teleport an object to a new position and (optional) new rotation.
 
-![Two-part screen shot of the start and end points of a teleportation process.](../../../media/physics-interactions/034-teleport-path.png)
+    ![Two-part screen shot of the start and end points of a teleportation process.](../../../media/physics-interactions/034-teleport-path.png)
 
 ## Terminology
 
