@@ -15,10 +15,6 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.2313.0
 
-### What's new
-
-
-
 ### Resolved product issues
 
 * You will need to make a new event for every new version of the environment that you upload. (23629)
