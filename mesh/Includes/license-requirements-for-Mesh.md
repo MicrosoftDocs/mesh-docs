@@ -15,18 +15,18 @@ For Microsoft Mesh, you will need the following:
 
 - **Teams Premium license in a tenant for Commercial use**. Learn more about [Microsoft Teams Premium licensing - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
 
-    > [!NOTE]
-> We don't support tenants with worldwide public sector, EDU, or GCC licenses.
+  > [!NOTE]
+  > We don't support tenants with worldwide public sector, EDU, or GCC licenses.
 
 - **Pre-requisite license for Teams Premium**, as outlined in [Requirements to purchase Teams Premium - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#what-are-the-requirements-to-purchase-teams-premium) for all users of Mesh.
-    > [!NOTE]
-> All Teams Premium prerequisite licenses include Sharepoint, OneDrive, and M365 Calendar.
 
+  > [!NOTE]
+  > All Teams Premium prerequisite licenses include Sharepoint, OneDrive, and M365 Calendar.
     Learn more about [Teams for enterprise](https://www.microsoft.com/microsoft-teams/enterprise#pricing) and [Teams Premium trial license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#can-i-experience-teams-premium-before-buying-licenses).
 
 - **(Optional) Unity license(s) and Azure subscription with storage** to develop custom immersive spaces and deploy Cloud Scripting for Mesh environments.
 
-    Learn more about [Cloud scripting for custom immersive spaces in Microsoft Mesh](../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md).
+  Learn more about [Cloud scripting for custom immersive spaces in Microsoft Mesh](../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md).
 
 #### Configure policies to allow SharePoint Group, M365 Calendar, OneDrive
 
