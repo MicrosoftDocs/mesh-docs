@@ -50,20 +50,6 @@ Before creating Mesh Environments, it's important to have a strong foundation in
 
 To design assets for use in Mesh Environments, you should have some experience with 3D modeling software such as Maya, 3DS Max, Cinema 4D, Houdini, ZBrush, or Blender. For painting and texturing models, you can use the features built into those apps or use a dedicated tool such as Adobe Substance Painter.
 
-## Graphics quality on the Mesh app
-
-The Mesh app has been designed to help boost fidelity through the following:
-
-- Final render texture size
-
-- Anti-aliasing and post effects settings
-
-- Maximum texture sizes
-
-- Number of dynamic lights
-
-- Number of dynamic shadows
-
 ## Sharing Unity projects
 
 Currently, sharing Unity projects with other parties is not guaranteed. Be aware that sharing can raise some errors and is **not** fully validated for Mesh-related projects.
