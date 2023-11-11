@@ -4,7 +4,7 @@ description: An overview for technical artists and developers for how to design 
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 9/26/2023
+ms.date: 11/9/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, unity, design, models, modeling, prerequisites
 ---
@@ -28,11 +28,11 @@ Here are some things to consider when creating content:
 
 - Microsoft Mesh controls the camera in the scene.
 
-- Microsoft Mesh controls users' movements and interactions in the scene.
+- Microsoft Mesh controls Attendees' movements and interactions in the scene.
 
 - For security reasons, C# behaviors are restricted to a limited set of the behaviors provided in the Mesh Toolkit. Any unsupported behaviors you include in your content won't be loaded or executed.
 
-- Events callbacks are limited to `ScriptMachine.TriggerUnityEvent` and `ScriptMachine.TriggerAnimationEvent`. If you use any unsupported event callback in your components you won't be able to upload your environment as the build step will fail.
+- Events callbacks are limited to `ScriptMachine.TriggerUnityEvent` and `ScriptMachine.TriggerAnimationEvent`. If you use any unsupported event callback in your components you won't be able to upload your Environment; the build step will fail.
 
 In general, Unity Packages downloaded from the Unity Asset store aren't expected to work unless they conform to the restrictions above.
 
