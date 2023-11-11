@@ -77,6 +77,6 @@ Now you can quickly test your Unity Scene without going through the
 build and upload process each time you make an iteration.
 
  > [!IMPORTANT]
- > If you want to profiler your scene with the [Performance Profiler](../debug-and-optimize-performance/performance-guidelines.md#performance-profiler),m ake sure the **Initial Screen Count** setting is zero. If it's one or higher, you won't be able to toggle on the Performance Profiler when playing.
+ > If you want to profile your scene with the [Performance Profiler](../debug-and-optimize-performance/performance-guidelines.md#performance-profiler),make sure the **Initial Screen Count** setting is zero. If it's one or higher, you won't be able to toggle the Performance Profiler on when playing.
 
  ![A screen shot of the Mesh Emulator Setup dialog](../../media/debug-and-optimize/001-playmode-count-one.png)
