@@ -11,6 +11,40 @@ keywords: Microsoft Mesh, M365, events, join events, organize events, immersive 
 
 # Troubleshooting & FAQ
 
+## What are the license requirements for immersive spaces in Mesh?
+
+[!INCLUDE [The include file for the license requirements in Mesh](../Includes/license-requirements-for-Mesh.md)]
+
+### What if I limit user permissions with corporate policies
+
+If you do not *allow* users with Teams and Office licenses to create Groups, Sharepoint/OneDrive sites, or use Mailbox/Calendar, the user may notice the following:
+
+1. You cannot create a collection (aka Mesh World) since you do not have the ability to do M365 Group creation in your organization.
+
+1. You cannot create an event since you do not have access to M365 Calendar in your organization.
+
+1. One or more people cannot be invited to the event because they do not have access to Outlook.
+
+1. User cannot be added to collection membership since they do not have the ability to access M365 Groups in your organization.
+
+1. You cannot create a template since you do not have access to SharePoint in your organization.
+
+### Will there be support added in future to use an existing M365 Group?
+
+We currently have no plans to support this feature. Right now, when Mesh creates an M365 Group, some additional data is added to the group to identify it as being a Mesh World.
+
+### When an M365 Group is created through Mesh, can it still be enabled for Teams after? Just like any other M365 Group?
+
+All M365 Groups created are normal M365 groups. A unique identifier is added to the group for the Mesh Portal to identify which Groups are associated with specific Mesh World groups.
+
+### Can we script or automate the creation of an M365 Group for use with Mesh?
+
+We currently do not support this feature.  
+
+## What are the license requirements for Immersive spaces in Teams?
+
+[!INCLUDE [The include file for license reqs for immersive spaces in Teams](../Includes/license-requirements-for-immersive-spaces-in-teams.md)]
+
 ## Frequently asked questions
 
 ### How to download Mesh on Quest 2 via App Lab
@@ -89,7 +123,7 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 ### What should I do if the Mesh app on Windows crashes during startup, crashes during runtime, or behaves strangely during runtime?
 
-1. Confirm you have a license required to use Mesh as shown [here](../setup/content/preparing-your-organization.md#verify-your-licensing).
+1. Confirm you have a license required to use Mesh as shown in [here](../Setup/Content/preparing-your-organization.md#verify-your-licenses-and-policies).
 
 1. Double check that the machine has the latest Operating System and security updates.
 
@@ -113,7 +147,7 @@ You'll need to first reproduce the problem, and then follow the steps below to c
 1. Click the **Copy all** button.
 1. Share that data with [Microsoft support](https://admin.microsoft.com) (this support link may only be available to M365 admins).
 
-The data should be your version of the following: 
+The data should be your version of the following:
 
 - **Portal host:**
 - **Portal version:**

@@ -4,7 +4,11 @@ description: Active known issues for Mesh
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
+<<<<<<< HEAD
 ms.date: 11/13/2023
+=======
+ms.date: 11/2/2023
+>>>>>>> a31fc7300a372151ce2869ab877f8ff446c9da73
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---

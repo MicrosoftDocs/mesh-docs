@@ -60,6 +60,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 ### Current limitations
 
+1. On Quest devices: users who remain idle for some time will be ejected out of an event. (21976)
 1. There is a room size limit of 16 persons for immersive users, while there’s no limit on the number of participants in a 2D Teams meeting. 
 
 1. Content limitations: PowerPoint Live and Whiteboard are not supported. If a meeting participant is using Powerpoint Live, it will not display on the immersive space stage. Same for whiteboard.
