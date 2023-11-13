@@ -35,6 +35,8 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 1. On Quest: the Mesh UI no longer locks with the user's head view. As you turn your head, the Mesh UI will now remain stationary. (13061)
 
+1. On Quest, you'll no longer be disconnected from a meeting when you remove your headset. (25764)
+
 ## Version 5.2313.0
 
 ### What's new
