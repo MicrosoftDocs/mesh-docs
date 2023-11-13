@@ -17,7 +17,7 @@ Templates can be created directly in Microsoft Mesh app, or created from an exis
 
 ## Template creation flow
 
-1. [**Create** your Template directly](#create-event-template-in-microsoft-mesh) or [Create a template from an existing event](#create-event-template-from-an-existing-event).
+1. [**Create** your Template directly](#create-template-in-microsoft-mesh) or [Create a template from an existing event](#create-template-from-an-existing-event).
 
 1. **Customize** your Template using the Customize event experience.
 
@@ -64,7 +64,7 @@ If you've already customized an event or prefer to create a template from an exi
 
 ## Customize your Template
 
-Now that your Template was created, you can customize it with the Customize it. For more info how to customize see [Customize event experience](customize-event.md#customize-an-event-template).
+Now that your Template was created, you can customize it with the Customize it. For more info how to customize see [Customize event experience](customize-event.md#customize-a-template).
 
 1. Find your **Template** draft.
 
