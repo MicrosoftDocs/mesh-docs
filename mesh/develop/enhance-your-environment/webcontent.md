@@ -39,7 +39,7 @@ Envision using WebSlates in your custom environments for:
 
 - **Content Performance Analyzer tool integration:** Measure the average time it takes for URP to render WebSlates in a frame and find content loading issues.
 
-- **Testing in Play Mode:** Interact with your content as a user would, directly from the Unity editor.  
+- **Testing with the Mesh Emulator:** Interact with your content as a user would, directly from the Unity editor.  
 
 - **Manually authenticate in-experience:** Access secure content from within the experience by logging into your account and viewing content at runtime.
 
@@ -91,45 +91,37 @@ Drag and drop the prefab into your scene, then add a URL to display on the WebSl
 
 ![Add the WebSlateFramed prefab](../../media/webview-developer-guide/WebSlate-Drag-Drop.png)
 
-#### Preview WebSlate in Unity Play Mode
+#### Preview WebSlate using the Mesh Emulator
 
-To view a URL displayed in your WebSlate more quickly, you can use Unity Play Mode. Aside from using the Play Mode, the only other way to see your WebSlate is to upload it using the Mesh Toolkit Uploader and view it in a Mesh experience.
+To view a URL displayed in your WebSlate more quickly, you can use the Mesh Emulator. Aside from using Emulator, the only other way to see your WebSlate is to upload it using the Mesh Toolkit Uploader and view it in a Mesh experience.
 
-In the Inspector window, add a URL to the WebSlate (Script) via the Current URL property:
-
-![Screenshot of unity WebSlate component with a url input into it. Web URL is bing.com](../../media/webview-developer-guide/image010.png)
+To add the Emulator to your project, follow the instructions in the [Mesh Emulator article](../debug-and-optimize-performance/mesh-emulator.md).
 
 Press the Unity editor Play button to view your Web page:
 
-![Showcase both webslate prefabs in playmode](../../media/webview-developer-guide/image011.png)
+![Showcase both webslate prefabs in the Mesh Emulator.](../../media/webview-developer-guide/image011.png)
 
-### Enable WebSlate interaction for Unity Play Mode
+### Enable WebSlate interaction for the Mesh Emulator
 
 To enable interaction in the WebSlate, you have to set up a few things.
 
-1. Right-click in the scene hierarchy, navigate to "Mesh Toolkit," and then click "PlayModeSetup".
+1. Add the [Mesh Emulator](../debug-and-optimize-performance/mesh-emulator.md) to your scene.
 
-    ![Add playmode to your Unity scene](../../media/webview-developer-guide/image013.png)
-
-    Ensure you see it in your scene, as shown here:
-
-    ![Graphical user interface, text, application Description automatically generated](../../media/webview-developer-guide/image014.png)
-
-2. Create a new **Plane** GameObject. This will be your floor. Ensure the Game Object is positioned at the origin (0,0,0):
+1. Create a new **Plane** GameObject. This will be your floor. Ensure the Game Object is positioned at the origin (0,0,0):
     
     ![Graphical user interface, application Description automatically generated](../../media/webview-developer-guide/image015.png)
 
-3. Position the WebSlate so it sits in front of the PlaymodeSetup character:
+1. Position the WebSlate so it sits in front of the MeshEmulatorSetup character:
 
     ![A picture containing sky Description automatically generated](../../media/webview-developer-guide/image016.png)
 
-4. Click the play button, and double click to interact with the Web page displayed in the WebSlate:
+1. Click the play button, and double click to interact with the Web page displayed in the WebSlate:
 
     ![Graphical user interface, application Description automatically generated](../../media/webview-developer-guide/image017.png)
 
-**Great job! You added a custom WebSlate to your Unity scene and tested the interaction in Unity Play Mode.**
+Great job! You added a custom WebSlate to your Unity scene and tested the interaction using the Mesh Emulator.
 
-**Now you're ready to upload the Environment to Mesh and share your creation with the world!**
+Now you're ready to upload the Environment to Mesh and share your creation with the world!
 
 ## WebSlate in Visual Scripting
 
@@ -188,7 +180,7 @@ Refer to the [Visual scripting overview](../script-your-scene-logic/mesh-scripti
 - Since WebSlates don't have any external navigation UI by default, the best practice is to only load custom URLs, where the site navigation is cyclic and can be done inside the page. This can be done with a navigation sidebar, or links to a hub page, for example.
 
 - The Content Performance Analyzer (CPA) tool includes a WebSlate analyzer which measures the average time it takes Unity's render pipeline to render WebSlates in a frame.
-  - Measurements are based on Unity's profiler recorder and requires playmode. The analyzer moves the camera over each WebSlate to collect sufficient profiler samples and calculates the average render time.
+  - Measurements are based on Unity's profiler recorder and requires Play mode. The analyzer moves the camera over each WebSlate to collect sufficient profiler samples and calculates the average render time.
 
   - This provides a first-stage, high-level analysis of WebSlate render times in the context of Unity's render pipeline (it does not provide the frame rate of the WebSlate content itself).
   
@@ -218,15 +210,15 @@ The way to accomodate for these use-cases is by adding domains to the WebSlate's
 
 ### Automatically add domains (recommended)
 
-When working with WebSlates in the Unity editor, you have the option of enabling "Collect Allowed Domains," which will remove the domain navigation restriction so that you can navigate freely when running in playmode to test your scenario.
+When working with WebSlates in the Unity editor, you have the option of enabling "Collect Allowed Domains," which will remove the domain navigation restriction so that you can navigate freely when running in Play mode to test your scenario.
 
-While you navigate in playmode, the WebSlate will log the domains you visit in the background. 
+While you navigate in Play mode, the WebSlate will log the domains you visit in the background. 
 
 ![Collect allowed domains checkbox is enabled](../../media/webview-developer-guide/allowed-domains-enabled.png)
 
 In this case, we're expanding navigation from *microsoft.com* to also include *learn.microsoft.com*.
 
-Once you exit playmode, you will find an asset called *"WebViewAllowedDomains.asset"* in your top-level *Assets* folder.
+Once you exit Play mode, you'll find an asset called *"WebViewAllowedDomains.asset"* in your top-level *Assets* folder.
 
 ![WebSlate allowed domains asset](../../media/webview-developer-guide/allowed-domains-asset.png)
 

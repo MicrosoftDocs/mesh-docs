@@ -64,9 +64,9 @@ To use the Visual Profiler, add the *Visual Profiler* component to any GameObjec
 >On Windows and UWP platforms, you can toggle the Visual Profiler on and off with enabled/disable voice command keywords.
 
 > [!IMPORTANT]
-> If you're using Playmode and have the Playmode Setup component in your scene, make sure the **Initial Screen Count** setting is zero. If it's "1" or higher, you won't see the Visual Profiler.
+> If you're using the [Mesh Emulator](./mesh-emulator.md) and have the *Mesh Emulator Setup* component in your scene, make sure the **Initial Screen Count** setting is zero. If it's "1" or higher, you won't see the Visual Profiler.
 
- ![A screen shot of the Playmode Setup dialog](../../media/debug-and-optimize/001-playmode-count-one.png)
+ ![A screen shot of the Mesh Emulator Setup dialog](../../media/debug-and-optimize/008-screen-count-zero.png)
 
 **Usage of the Visual Profiler**
 
