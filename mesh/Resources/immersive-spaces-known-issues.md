@@ -4,16 +4,20 @@ description: Currently active known issues and limitations for Immersive spaces 
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 11/13/2023
+ms.date: 11/8/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
 
 # Active known issues and limitations - Immersive Spaces in Teams
 
-## Version 5.2314.0
+## Version 5.2313.0
 
 ### Audio
+
+1. On Quest, two different mics are shown and both are named *Quest*. The second one won't capture audio, and no error is shown. (20795)
+
+    *Workaround*: Quest will select the first one in the list by default, and this will work. 
 
 1. Users who are experiencing poor network connection may hear audio quality issues as a result.  There is currently no warning message for poor network quality. We'll be implementing this soon, as well as working continuously to improve overall audio quality.
 
@@ -54,13 +58,14 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 1. If you are losing internet connection during a session in the immersive space, you will be disconnected, removed from the space, and sent back to the gallery. You can rejoin the immersive space manually once internet connection is restored.
 
+1. The **Prejoin** dialog currently doesn't show a thumbnail picture of the event. (20071)
+
 ### React with the Teams vs. Immersive spaces menu bar
 
 1. Using the **React** options on the Teams meeting menu will not trigger any gestures of the avatar in the immersive space. Other Teams users will still see your reaction on their screen. Immersive space users should use the Mesh menu bar to emote, which will both trigger your avatar gestures as well as show the emote on the Teams meeting screen.
 
 ### Current limitations
 
-1. On Quest devices: users who remain idle for some time will be ejected out of an event. (21976)
 1. There is a room size limit of 16 persons for immersive users, while there’s no limit on the number of participants in a 2D Teams meeting. 
 
 1. Content limitations: PowerPoint Live and Whiteboard are not supported. If a meeting participant is using Powerpoint Live, it will not display on the immersive space stage. Same for whiteboard.
@@ -82,7 +87,23 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 1. When pressing the right mouse button inside the viewport and releasing it outside the viewport, whichever keyboard button pressed at the time of release will continue to trigger as soon as the user re-enters the immersive space. Consequently, the user may walk or rotate (possibly other things) even when it's unintended. To resolve the issue, the user needs to trigger the same button again. (27944)
 
+1. When trying to throw an object by clicking on the object, the cursor still shows. (25542)
+
+1. The Teams meeting details page doesn't show event dates and times according to the same rule as the Mesh event list to account for all-day or multiday events. (28309)
+
+1. Currently, all-day event times are being converted to local time zones. (26665)
+
+1. Seats in the immersive spaces show as blue and available even when there's another user sitting on it. (21535)
+
+1. When joining a Teams meeting, users on Quest see a screenshare instead of the default background wall in the Lakehouse environment. (27425)
+
+1. On Quest, you'll be disconnected from a meeting when you remove your headset. (25764)
+
+1. The settings dialogs currently don't show the selected state for many settings. (17308)
+
 1. Pressing Mesh buttons + the **Enter** key on the keypad produces no action. The same **Enter** key on the main keyboard selects the button and executes the associated action. (26462)
+
+1. On Quest: the Mesh UI is currently locked with the user's head view. As you turn your head, the Mesh UI will also turn, which can give a nauseating experience in VR. (13061)
 
 1. On Quest devices: users who remain idle for some time will be ejected out of an event. (21976)
 
