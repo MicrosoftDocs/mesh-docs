@@ -23,7 +23,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
     
     - go into your Teams **Settings -> App permissions**. Select the **Mesh immersive spaces** app, and switch the **Media permissions** on.
 
-    - or [clear the Teams cache](https://learn.microsoft.com/microsoftteams/troubleshoot/teams-administration/clear-teams-cache).
+    - or [clear the Teams cache](/microsoftteams/troubleshoot/teams-administration/clear-teams-cache).
 
 1. When a meeting participant is sharing screen with audio, the audio won’t play in the immersive space on the virtual stage. If you want to share your screen with audio, you must come out of the immersive space.
 
