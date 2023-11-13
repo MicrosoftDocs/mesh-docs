@@ -84,11 +84,6 @@ building for single and multiple platforms, see our article titled [Build for si
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/456-select-scene.png)
 
-1. Select **Include Thumbnails**. Leave the setting as **Generate
-    Thumbnails**.
-
-    ![](../../../media/sample-mesh-101/image094.jpg)
-
 In the **Build for Platforms** section, you choose which platforms to
 build for. Note that when a button background is gray, the button is
 "on"; when the background is black, the button is "off." We're building
