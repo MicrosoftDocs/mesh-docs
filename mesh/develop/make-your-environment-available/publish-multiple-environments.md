@@ -6,7 +6,7 @@ author: typride
 ms.author: iankudinova
 ms.date: 10/26/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, environment, Unity, build, publish, build and publish, uploader, Mesh uploader, thumbnail, filter, multiple
+keywords: Microsoft Mesh, environment, Unity, build, publish, build and publish, uploader, Mesh uploader, filter, multiple
 ---
 
 # Publish multiple Environments from one Unity project
