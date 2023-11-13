@@ -19,10 +19,10 @@ These props don't have custom textures, but instead rely on the URP/Baked Lit sh
 
 Not using textures also eliminates texture artifacts like pixelization and aliasing, which is a big boost to VR immersion.
 
-![An image of an environment with trees, rocks, and structure.](../../media/3d-design-performance-guide/image026.png)
-
 When a custom texture is used, like on these purple plants, green leaves, and the red leaves of the tree, keeping the detail simple and clean goes a
 long way towards hiding the textures' low resolution.
+
+![An image of an environment with trees, rocks, and structure.](../../media/3d-design-performance-guide/image026.png)
 
 Tiling textures should be authored at 3x3 meter scale.
 
@@ -30,7 +30,12 @@ Tiling textures should be authored at 3x3 meter scale.
 
 All tiling textures should be authored left to right.
 
+
+**Correct**:
+
 ![An image of a brick surface showing horizontal patterns of brick layout](../../media/3d-design-performance-guide/image028.png)
+
+**Incorrect**:
 
 ![An image of a brick surface showing vertical patterns of brick layout](../../media/3d-design-performance-guide/image029.png)
 
@@ -41,7 +46,6 @@ Utilizing the Unity Importer for material management not only speeds up iteratio
 **Even one material set to 'None (Material)' has a performance cost.**
 
 ![A screen shot of the Unity Environment Exterior Import settings dialog](../../media/3d-design-performance-guide/image032.png)
-
 
 **Ensure that all slots have corresponding Unity materials loaded in, as shown below.**
 
@@ -98,6 +102,6 @@ Most shader and renderer features are available to every platform, but some plat
 When unsure if a setting is enabled or disabled for a platform you are developing for, reference the URP assets contained within the Mesh
 Toolkit Uploader's URP folder:
 
-![A screenshot of the Inspector - Environment_Exterior Import Settings dialog](../../media/3d-design-performance-guide/image035.png)
+![A screenshot of the Inspector - Environment_Exterior Import Settings dialog](../../media/3d-design-performance-guide/image036.png)
 
-Note, that altering render pipeline settings or adding renderers is not supported.
+**Note**: Altering render pipeline settings or adding renderers isn't supported.

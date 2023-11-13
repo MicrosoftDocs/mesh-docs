@@ -186,7 +186,7 @@ Refer to the [Visual scripting overview](../script-your-scene-logic/mesh-scripti
   
   - If Unity's render pipeline exceeds the threshold to render WebSlates (currently 10ms), the CPA tool provides a warning.
   
-  - The same measurements are also available to the Visual Profiler. The group on the Visual Profiler typically changes colors from green to red when the budget allowance for a category is surpassed. For now, the WebSlate group only shows as green until a reasonable render time budget is rationalized for WebSlates.
+  - The same measurements are also available to the Performance Profiler. The group on the Performance Profiler typically changes colors from green to red when the budget allowance for a category is surpassed. For now, the WebSlate group only shows as green until a reasonable render time budget is rationalized for WebSlates.
 
   ![WebSlate performance analysis using CPA tool](../../media/webview-developer-guide/CPAwebslate.png)
 

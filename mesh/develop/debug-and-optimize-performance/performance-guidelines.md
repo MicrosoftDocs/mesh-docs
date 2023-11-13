@@ -6,135 +6,155 @@ ms.author: tmilligan
 ms.date: 10/2/2023
 ms.topic: Guide
 ms.service: mesh
-keywords: Microsoft Mesh, getting started, performance, content performance analzyer, visual profile, stats
+keywords: Microsoft Mesh, getting started, performance, content performance analzyer, performance profile, stats
 ---
 
 # Performance guidelines for Mesh
 
 ## Performance
 
-Your current choice is to develop for desktop PC or Quest. Once your scene is created and optimized for either of these platforms, it will
-generally be easier to build for other platforms that may become available in the future. Your Environment will be performant and you can
-maximize the number of possible participants. In the future, you can clone the scene to develop for higher-end platforms and take advantage
-of extra computing power to incorporate things like advanced materials and more complex models.
+This article is an introduction to understanding the significance of performance when authoring content in Mesh. Framerate is the easiest unit to rationalize performance. Normally framerate is measured in "frames per second" (fps) or how many times your application can render an image per second. A user's experience can be greatly degraded if your content doesn't run at an optimal framerate. To help you track and achieve quality framerate, Mesh provides a variety of tools and recommendations.
+
+The below table lists the target framerate per platform Mesh supports.
+
+|PC                                   |Android (Quest) |
+|-------------------------------------|----------------|
+|[Monitor refresh rate](https://support.microsoft.com/en-us/windows/change-your-display-refresh-rate-in-windows-c8ea729e-0678-015c-c415-f806f04aae5a) (minimum 30fps) |72fps |
 
 ## Simple vs complex scenes
 
-As with all game development, in Mesh there's a tradeoff between complexity/quality and performance. Depending on the machine running
-Mesh, or other programs running simultaneously, your user may experience decreased performance, especially if your scene is complex. As you
-increase complexity and/or the quality of your Mesh Environments, the number of users that Mesh can support without performance issues decreases.
+As with all 3D development, in Mesh there's a tradeoff between visual fidelity and performance. Depending on the machine running
+Mesh, your user may experience decreased performance, especially if your scene is complex.
+
+Think of performance like a financial budget. If you have $100 dollars to spend you can't spend $60 rendering a complex environment, $40 simulating advanced physics, and $20 for visual scripts - you would end up spending over your budget. As a developer you have to make tradeoffs between visual fidelity, interaction complexity, the number of users, and other systems. The Mesh team has generated a list of [performance thresholds](#performance-thresholds) not as a rule, but a guide to development.
+
+## Profiling methodology
+
+Generally authoring environments in Mesh involves three steps.
+
+1. Author content in Unity
+1. Upload to Microsoft Mesh
+1. Run your content in the Mesh app
+
+During step one it's recommended you use a mixture of the [Content Performance Analyzer (CPA)](#content-performance-analyzer-cpa) and [Performance Profiler](#performance-profiler) found in the [Mesh Toolkit](../development-overview.md#develop-in-unity-with-mesh-toolkit) package which is required for any Unity project being used to generate a Mesh environment. During step two the CPA tool automatically runs. Finally, during step three final profiling should occur via Mesh's built-in Performance Profiler.
 
 ## Tools for analyzing performance
 
 ### Content Performance Analyzer (CPA)
 
-We recommend that you use the [Content Performance Analyzer (CPA)](./cpa.md) to maximize the number of users that can access and use a Mesh experience 
-without performance issues. You can use the CPA to audit polycount, draw call, texture size, and more. This allows you to catch content
-optimization issues and opportunities before content is uploaded to Mesh. Issues are reported via an editor window in Unity.
+We recommend that you use the [Content Performance Analyzer (CPA)](./cpa.md) to maximize the performance of your Mesh experience. The CPA tool can statically analyze your content at authoring time. You can use the CPA to audit triangle counts, batches, texture memory utilization, and more. This allows you to catch content optimization issues and opportunities before content is uploaded to Mesh.
+
+To run the CPA tool select **Mesh Toolkit** > **Content Performance Analyzer** from the menu items.
 
 ![Accessing the Content Performance Analyzer through the Unity menu](../../media/3d-design-performance-guide/image002.png)
 
-![A screenshot of the Content Performance Analyzer dialog](../../media/3d-design-performance-guide/image003.png)
+Issues and suggestions are reported via an editor window in Unity.
 
-The CPA is included in the [Mesh Toolkit](../development-overview.md#develop-in-unity-with-mesh-toolkit) package which is required for any Unity project being used to generate a Mesh Environment.
-
-### Visual Profiler
-
-The Visual Profiler provides a drop-in solution for viewing your Mesh Unity project's frame rate, scene complexity, and memory
-usage across available platforms.
-
-![A screen shot of the visual Profiler](../../media/3d-design-performance-guide/image004.png)
-
-Missed frames are displayed over time to visually find problem areas. Scene complexity is reported in the form of draw calls and rendered
-vertex counts (or triangle counts). Memory is reported in a bar graph as current, peak and max usage.
-
->[!Note] 
->To ensure the profiler is minimally intrusive, it doesn't create any GameObjects or perform any per frame managed allocations, and it renders in a single draw call.
-
-**Add the Visual Profiler to your project**
-
-The Visual Profiler is included in the [Mesh Toolkit](../development-overview.md#develop-in-unity-with-mesh-toolkit).
-
-To use the Visual Profiler, add the *Visual Profiler* component to any GameObject in the Unity scene you wish to profile. The profiler is initially active and visible.
-
-**To toggle the Visual Profiler on or off**:
-- In the **Visual Profiler** component, select or clear the **Is Visible** option.
-
->[!Note] 
->On Windows and UWP platforms, you can toggle the Visual Profiler on and off with enabled/disable voice command keywords.
+![A screenshot of the Content Performance Analyzer window](../../media/3d-design-performance-guide/image003.png)
 
 > [!IMPORTANT]
-> If you're using the [Mesh Emulator](./mesh-emulator.md) and have the *Mesh Emulator Setup* component in your scene, make sure the **Initial Screen Count** setting is zero. If it's "1" or higher, you won't see the Visual Profiler.
+> A portion of the CPA analyzers will run automatically when uploading content to Mesh. Because not all tests can run automatically it's good to run the CPA manually as part of your development process.
 
- ![A screen shot of the Mesh Emulator Setup dialog](../../media/debug-and-optimize/008-screen-count-zero.png)
+### Performance Profiler
 
-**Usage of the Visual Profiler**
+The Performance Profiler provides a simple window for viewing your Mesh project's frame rate, scene complexity, and memory
+usage across all platforms. The Performance Profiler is accessible within the Mesh app and within the Mesh Toolkit.
 
-When using the profiler, look for *missed frames*, which appear as orange bars. Missed frames indicate that your application isn't hitting its
-target frame rate and may need optimization work. Draw call counts and vertex counts (or triangle counts) are also displayed under the missed
-frame indicators. These numbers can indicate why your app isn't meeting its target frame rate.
+![A screen shot of the Performance Profiler in isolation](../../media/3d-design-performance-guide/image004.png)
 
-![A screenshot of the Visual Profiler screen](../../media/3d-design-performance-guide/image006.png)
+To view the Performance Profiler in the Mesh app open the settings panel and select **For developers** > **Performance Profiler**. The Performance Profiler will appear at the top center of the window.
+
+![A screen shot of the Performance Profiler in Mesh](../../media/3d-design-performance-guide/image007.png)
+
+When using the Performance Profiler, look for *missed frames*, which appear as red boxes, marked with an 'x'. Missed frames indicate that your content isn't hitting Mesh's target framerate and may need optimization work. Scene complexity and memory usage is displayed under the missed
+frame indicators. These numbers might indicate why your content isn't meeting Mesh's target frame rate.
+
+![A diagram of the Performance Profiler metrics](../../media/3d-design-performance-guide/image006.png)
+
+Text on the Performance Profiler will turn red when a metric does not meet Mesh's recommended performance threshold. More details around [performance thresholds](#performance-thresholds) are listed in a proceeding section.
+
+> [!IMPORTANT]
+> Batches cannot be displayed within the Mesh app. They are only available within the Unity editor.
 
 You should also keep an eye on the bottom memory bar to insure that memory usage isn't rapidly changing or approaching the application's memory limit.
 
-The profiler UI (such as anchoring, scale, follow behavior and UI color) can also be adjusted in the **Visual Profiler** component.
+To view the Performance Profiler in the Unity editor ensure you have the Mesh Emulator Setup component in your scene. Make sure the **Initial Screen Count** setting is zero. If it's one or higher, you won't be able to toggle on the Performance Profiler when playing.
 
-![A screenshot of the Visual Profiler (Script) dialog](../../media/3d-design-performance-guide/image007.png)
+ ![A screen shot of the Mesh Emulator Setup dialog](../../media/debug-and-optimize/001-playmode-count-one.png)
 
-Custom profilers can be added to the bottom of the Visual Profiler by adding to the list of "Profiler Groups." Profiler Groups use Unity's [ProfilerRecorder](https://docs.unity3d.com/ScriptReference/Unity.Profiling.ProfilerRecorder.html) API. For example, the image below shows how the "BehaviorUpdate", "LateBehaviourUpdate", and "FixedBehaviourUpdate" markers display a millisecond average over 300 samples with the group label "Scripting."
+Click Unity's **Play** button to enter play mode, toggle the Performance Profiler on via the **'v'** key. The Performance Profiler will appear at the top center of the game window.
 
-![A screenshot of the Unity interface with Custom profilers being displayed](../../media/3d-design-performance-guide/image008.png)
+![A screenshot of the Performance Profiler in Unity editor](../../media/3d-design-performance-guide/image008.png)
 
-**Feedback on the Visual Profiler**
+> [!IMPORTANT]
+> When viewing the Performance Profiler in the Unity editor you an gleam more information, such as batch counts and and millisecond time it takes for certain subsystems to execute. Note these metrics are a relative approximation of performance and final profiling should happen within the Mesh app.
 
-To file issues or suggestions, use the [Issues](https://github.com/Microsoft/VisualProfiler/issues) page for this project on GitHub.
+If you are curious what the millisecond times at the bottom of the Performance Profiler are measuring you can find that info in the [performance thresholds](#performance-thresholds) section.
 
-### Performance Optimization
+### Other tools
+
+Both the CPA and Performance Profiler are custom built for Mesh, but there are also a handful of great tools for profiling content in Unity:
+
+- [Unity's Profiler](https://docs.unity3d.com/Manual/Profiler.html)
+- [Unity's Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html)
+- [RenderDoc](https://docs.unity3d.com/Manual/RenderDocIntegration.html)
+
+### Performance thresholds
 
 Optimizing for performance can be a balancing act depending on the scenario you're developing for and the experience you want to achieve.
-Below are how-to suggestions for our two current platforms.
+Rendering a scene in Mesh is a direct consequence of how the environment's content is authored. Below are rendering suggestions for our current platforms.
 
-We suggest that you use the cheaper out-of-the-box Universal Render Pipeline shaders; this will make upgrading easier in the future. We also
-understand the value of custom shaders. In general, we try to keep our custom shaders for most of the environment at:
+#### PC rendering thresholds
 
-- 30 math operations in vertex
+|Polycount           |Batches             | Post processing     |
+|--------------------|--------------------|---------------------|
+|<~500k Triangles    |~200 batches        |Disabled             |
+|**Textures**        |**Lightmaps**       |**Skybox Resolution**|
+|< ~160 MB           |< ~80 MB            |2048x4096            |
 
-- 120 math operations in fragment
+#### Android (Quest) rendering thresholds
 
-- Two texture lookups
+|Polycount           |Batches             |Post processing      |
+|--------------------|--------------------|---------------------|
+|<~80k Triangles     |~50 batches         |Disabled             |
+|**Textures**        |**Lightmaps**       |**Skybox Resolution**|
+|< ~15 MB            |< ~20 MB            |1024x2048            |
 
-#### Android
+You might notice that shader restrictions are not specified in the above tables. Because Mesh uses Unity's [Universal Render Pipeline (URP)](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/index.html) we suggest that you use cheaper out-of-the-box URP shaders (like [Universal Render Pipeline/Baked Lit](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/baked-lit-shader.html) or [Universal Render Pipeline/Simple Lit](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/simple-lit-shader.html)). We also understand the value of custom shaders. In general, we try to keep our custom shaders for most of the environment within the below thresholds:
 
-|Polycount           |Batches             | Renderer         | Color                  |
-|--------------------|--------------------|------------------|------------------------|
-| <~80k Triangles    |  ~50 batches       |  URP required    |     Linear required    |
+|Vertex math      |Fragment math     |Texture      |
+|-----------------|------------------|-------------|
+| < 30 operations | < 120 operations | < 2 lookups |
 
-|Textures          |Lightmaps             | Skybox           | Shader                  |
-|--------------------|--------------------|------------------|------------------------|
-| <~15 MB (=16) 512x512)  |  < ~20 MB (=(4) 1023x2024)       |  1024x2048    |     Universal Render Pipeline/Baked Lit    |
+> [!IMPORTANT]
+> Counting shader operations is in imperfect metric for calculating shader performance, a shader developer should also profile their shader running in Mesh to verify it runs performantly.
 
-#### High-end PCs
+If you are curious how the URP's render pipeline is configured for the Mesh app you can inspect the platform specific renderers in your project's **\Library\PackageCache\com.microsoft.mesh.toolkit\mesh.toolkit.uploader\Assets\URP** directory.
 
-|Polycount           |Batches             | Renderer         | Color                  |
-|--------------------|--------------------|------------------|------------------------|
-| <~500k Triangles    |  ~200 batches  (Use Unit Frame Debugger)    |  URP required    |     Linear required    |
+#### Scripting thresholds
 
-|Textures          |Lightmaps             | Skybox           | Shader                  |
-|--------------------|--------------------|------------------|------------------------|
-| <~160 MB   |  < ~80 MB        |  2048x4096    |     Universal Render Pipeline/Baked Lit    |
+Mesh allows you to create interactive content via [visual scripting](../script-your-scene-logic/visual-scripting/visual-scripting-overview.md), [cloud scripting](../script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md), [Mesh Physics](../enhance-your-environment/physics/mesh-physics-overview.md), and/or [WebSlate](../enhance-your-environment/webcontent.md). When viewing the Performance Profiler in the Unity editor the millisecond (ms) times it takes for certain subsystems to execute is displayed at the bottom of the profiler. When text changes from green to red that indicates a subsystem could be over budget. The table below provides more information about these budgets.
 
-#### Resources for developing advanced Mesh Environments in Unity
+|Subsystem name |Max Frame Budget |Description          |
+|---------------|-----------------|---------------------|
+|Behaviour      |N/A              |Millisecond time taken to update all local MonoBehaviour scripts (C# and Visual) |
+|Render         |25%              |Millisecond time for the CPU render of the scene|
+|WebSlate       |N/A              |Millisecond time to update and render any WebSlates in the scene|
+|Phys Sim       |15%              |Millisecond time to step the PhysX simulation|
+|Phys Sync      |15%              |Millisecond time to synchronize all physics bodies|
+|Phys Effx      |10%              |Millisecond time to update bespoke physics behaviors|
+|VS User        |15%              |Millisecond time spent in Visual Script graphs placed in the scene|
+|VS Env         |10%              |Millisecond time spent updating the Visual Script infrastructure|
+|VS Net         |10%              |Millisecond time spent synchronizing the Visual Script network state|
 
-**Frame Debugger:** <https://docs.unity3d.com/Manual/FrameDebugger.html>
+The "Max Frame Percentage" values listed above are recommendations based on generic content. As a developer it is up to you to balance these systems to ensure your frame can update in the time alloted.
 
-**Unity Sky:** <https://docs.unity3d.com/Manual/sky.html>
+### Performance and Optimization Resources
 
-**URP:** <https://docs.unity3d.com/Manual/universal-render-pipeline.html>
+**Graphics performance fundamentals** <https://docs.unity3d.com/Manual/OptimizingGraphicsPerformance.html>
 
-**Lightmaps:** <https://docs.unity3d.com/Manual/Lightmappers.html>
+**Universal Render Pipeline (URP)** <https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/index.html>
 
-**Draw Calls** <https://docs.unity3d.com/Manual/DrawCallBatching.html>
+**SRP Batcher** <https://docs.unity3d.com/Manual/SRPBatcher.html>
 
-**Mipmapping:** [Advanced VR Graphics Techniques
-(arm.com)](https://developer.arm.com/documentation/102073/0100/Mipmapping)
+**Single-pass instanced rendering and custom shaders** <https://docs.unity3d.com/Manual/SinglePassInstancing.html>
