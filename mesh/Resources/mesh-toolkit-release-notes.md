@@ -20,11 +20,6 @@ For purposes of this document, there are two categories of users:
 
 ## Version 23.13
 
->[!Caution]
->This is a preview release of the Mesh Toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh Toolkit will only work with the preview version of Mesh, and **are not compatible with the stable version of Mesh**. If you don't have access to Mesh preview, do not upgrade to this version of the Mesh Toolkit until a stable version is released.  Stable versions will not have a **-preview** tag at the end of the version number.  
-> 
-> **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
-
 ### Version list and dates
 
 These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see. We are working to create better transparency and standardization of versions of offerings and packages to make upgrading easier.
@@ -34,8 +29,8 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
-| Mesh Toolkit Package      |   5.2313.0     | 2023-10-23  |
-| Mesh (PC/Quest)   |  5.2313.0       |  2023-10-23  |
+| Mesh Toolkit Package      |   5.2313.0     | 2023-11-13  |
+| Mesh (PC/Quest)   |  5.2313.0       |  2023-11-13  |
 
 ### What's new
 
