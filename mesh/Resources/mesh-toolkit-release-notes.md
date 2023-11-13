@@ -39,10 +39,6 @@ These are the offerings and packages currently available. There may be slight di
 
 ### What's new
 
-#### Interactables
-
-* Added player movement guidelines and updated teleportation section with more details. For more information, see ------- .
-
 #### Scripting
 
 **Restrictions on UnityEvents and animation events in Unity**
