@@ -4,14 +4,14 @@ description: Currently active known issues and limitations for Immersive spaces 
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 10/25/2023
+ms.date: 11/13/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
 
 # Active known issues and limitations - Immersive Spaces in Teams
 
-## Version 5.2313.0
+## Version 5.2314.0
 
 ### Audio
 
@@ -78,6 +78,12 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 1. On Quest, if you try to rotate the avatar preview in the Avatar Customizer, your field of view will also move.
 
 1. Mesh immersive spaces do not properly support low bandwidth situation: users who are experiencing poor network quality may see problems such as missing avatars and audio glitches. We are actively working on integrating notifications to alert users when they are in this state.
+
+1. When pressing the right mouse button inside the viewport and releasing it outside the viewport, whichever keyboard button pressed at the time of release will continue to trigger as soon as the user re-enters the immersive space. Consequently, the user may walk or rotate (possibly other things) even when it's unintended. To resolve the issue, the user needs to trigger the same button again. (27944)
+
+1. Pressing Mesh buttons + the **Enter** key on the keypad produces no action. The same **Enter** key on the main keyboard selects the button and executes the associated action. (26462)
+
+1. On Quest devices: users who remain idle for some time will be ejected out of an event. (21976)
 
 ## Submit Feedback
  
