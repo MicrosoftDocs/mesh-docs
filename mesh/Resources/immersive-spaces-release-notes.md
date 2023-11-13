@@ -37,6 +37,8 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 1. On Quest, you'll no longer be disconnected from a meeting when you remove your headset. (25764)
 
+1. Fixed the issue: On PC and Quest, when attempting to delete any artifacts in the Environment Editor will crash Mesh while running. (28903)
+
 ## Version 5.2313.0
 
 ### What's new
@@ -55,7 +57,7 @@ New interactions for [equippable objects](/mesh/develop/enhance-your-environment
 
 * Left mouse click to throw the bean bag.
 
-#### For Marshmallow Roasing on PC (In Teams)
+#### For Marshmallow Roasting on PC (In Teams)
 
 * Left mouse click on the marshmallow stick to pick it up (same behavior as before)
 

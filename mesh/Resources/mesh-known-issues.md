@@ -17,8 +17,6 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 * Pressing Mesh buttons + the **Enter** key on keypad produces no action, the same **Enter** key on the main keyboard selects the button and executes the associated action. (26462)
 
-* On PC and Quest, when attempting to delete any artifacts in the **Environment Editor** will crash Mesh while running. (28903)
-
 * When downloading the Mesh app from Microsoft Store, some users will get a blank screen in the web browser. To search for the most current data on the server, press the **CTRL + F5** keys to clear your browser cache.  The latest version of the Microsoft store webpage will then load. (14921)
 
 ### Events
