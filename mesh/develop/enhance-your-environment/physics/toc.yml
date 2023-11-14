@@ -5,5 +5,5 @@ items:
   href: mesh-physics-in-samples.md
 - name: Programmer's Guide
   href: mesh-physics-programmers-guide.md
-- name: Set conditions for affecting objects
+- name: Set conditions for affecting Rigidbodies
   href: set-conditions.md
