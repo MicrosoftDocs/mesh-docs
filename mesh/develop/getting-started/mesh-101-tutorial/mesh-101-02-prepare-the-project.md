@@ -1,40 +1,30 @@
 ---
 title: Mesh 101 Prepare the project
 description: Learn about adding a few basic features that are necessary for the Mesh 101 tutorial project.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 9/25/2023
+ms.date: 10/13/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
 
 # Mesh 101 Tutorial Chapter 2: Prepare the project
 
-### Scenes in the project
+## Scenes in the project
 
 1. Open the **Mesh101** project in Unity. If you have more than
     one version of Unity installed, be sure to open the project with `Unity 2022.3.7f1` which is required for this tutorial.
 
 2. In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**.
 
-    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/481-project-settings.png)
+    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image010.png)
 
     Open the **StartingPoint** scene. You should see the **TMP Importer** window.
 
 3. Select **Import TMP Essentials**, and then close the window.
 
     ![A screen shot of a computer Description automatically generated with low confidence](../../../media/sample-mesh-101/image011.png)
-
-    In the **Scene** window, the letter "T" appears over every object that's using `TextMeshPro`. You can turn these off to achieve a less cluttered
-    view. To do so:
-
-1. In the toolbar above the upper right corner of the **Scene** window,
-    select the Gizmos drop-down.
-2. In the **Scripts** section, scroll down to **TextMeshPro**, and then
-    select its **icon** toggle button. This turns off the display of
-    "T"s in the **Scene** window.
-
-    ![Screenshot of TextMeshPro icon under gizmos](../../../media/sample-mesh-101/image012.png)
 
 ### About the Scenes
 
@@ -47,6 +37,47 @@ accurate completed version of the tutorial. You can refer to this at any
 time to confirm that you've completed tutorial steps in the
 *StartingPoint* scene correctly. Always save your work in the
 *StartingPoint* scene before switching scenes.
+
+### Turn object icons off for a clearer view
+
+Many objects appear in a scene with gizmos or icons displayed by default. This can help you identify the objects, but it can also clutter the view and make objects harder to see. 
+
+![A screen shot of the Scene view with gizmos and icons cluttering the view.](../../../media/sample-mesh-101/499-scene-with-icons-displayed.png)
+
+Let's turn off some of the icons we don't need to make the view more clear.
+
+1. In the toolbar above the upper right corner of the **Scene** window, select the Gizmos drop-down.
+
+    ![A screen shot of the gizmos drop down button.](../../../media/sample-mesh-101/503-gizmos-drop-down.png)
+
+    The first icon we'll address is the one for *TextMeshPro*. The goal here is find **TextMeshPro** in the list and then click its **icon** toggle button, which turns off the display of the icons in the **Scene** window. You could scroll down until you find TextMeshPro in the list:
+
+    ![Screenshot of the gizmos list with the TextMeshPro icon highlighted.](../../../media/sample-mesh-101/image012.png)
+
+    ... but there's a faster to find objects than scrolling.
+
+1. In the search field, type in "text." The list narrows down to objects starting with those letters.
+
+    ![Screenshot of using the search field to find the TextMeshPro object in the list.](../../../media/sample-mesh-101/500-textmeshpro-icon-button.png)
+
+1. Click the icon toggle button for **TextMeshPro** to turn off its icons.
+1. Do the same for these objects:
+
+    **AudioSource**:
+
+    ![Screenshot of using the search field to find the AudioSource object in the list.](../../../media/sample-mesh-101/501-audiosource-icon-button.png)
+
+    **Variables**:
+
+    ![Screenshot of using the search field to find the Variables object in the list.](../../../media/sample-mesh-101/502-variables-icon-button.png)
+
+    **ScriptMachine**:
+
+    ![Screenshot of using the search field to find the Variables object in the list.](../../../media/sample-mesh-101/505-scriptmachine-icon-button.png)
+
+    This will make it easier to read info dialogs, labels on buttons, and more.
+
+    ![Screenshot of the Scene view with icons turned off and a clearer view of objects.](../../../media/sample-mesh-101/504-view-with-icons-turned-off.png)
 
 ### Exploring the `StartingPoint` scene
 
@@ -77,7 +108,7 @@ learn about Mesh Interactables and Mesh Physics.
 For this project, we want our avatar to be able to walk around only on
 the floors inside the *Sphere Terrace* objects and the floor of a
 platform that's attached to one of the wind turbine generators. For
-these areas to be walkable, they must be on the *NavMesh* layer. Let's
+these areas to be teleportable, they must be on the *NavMesh* layer. Let's
 add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
 
 1. In the **Hierarchy**, expand the **Chapter 3** GameObject.
@@ -95,36 +126,32 @@ add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
 You don't have to add the other walkable GameObjects to the NavMesh
 layer---we've already done it for you.
 
-### Add the PlaymodeSetup prefab
+### Add the Mesh Emulator
 
-Adding the PlaymodeSetup prefab will allow you to run the project in
-*Play mode*. This gives you a preview of what the content will look and
-feel like when it runs in the *Mesh app*. A key feature of Pla ymode is
-the ability to run multiple clients within the same process; this allows
-you to easily get a first impression of a multi-user scenario.
+Let's add the *Mesh Emulator* (or, simply, the "Emulator") to your project. This will give you an
+approximate preview of what the content will look and feel like when it runs in the Mesh app every time you enter Play mode. A key feature of the Mesh Emulator is the ability to run multiple clients within the same process; this allows you to easily get a first impression of a multi-user scenario.
 
-1. Right-click inside the **Hierarchy** and then, in the context menu, select **Mesh Toolkit** > **PlaymodeSetup**.
+**To add the Mesh Emulator**:
+1. Press the Play button. This dialog appears:
 
+    ![A screenshot of the Mesh Emulator Setup missing dialog.](../../../media/sample-mesh-101/499-emulator-setup-missing-dialog.png)
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/400-playmode-setup.png)
+1. Select the first button, **Add working MeshEmulatorSetup prefab.** The **MeshEmulatorSetup [NoUpload]** prefab appears in the **Hierarchy**.
 
-    Note that this adds the **PlaymodeSetup [NoUpload]** prefab to the
-    scene.
+    ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/500-mesh-emulator-setup-added.png)
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/453-playmodesetup-added.png)
-
-    This prefab provides you with a highly stylized avatar controller that has a camera attached, so now we can play the project and have a look around.
+    This prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around.
 
     ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../../media/sample-mesh-101/016-playmode-v2.png)
 
-2. Select the Unity Editor Play button.
+1. Select the Unity Editor Play button.
 
-3. In the **Game** window, note that you now have a view from the avatar's position. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Play mode.
+1. In the **Game** window, note that you now have a view from the avatar's position. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Play mode.
 
 ### Check the scale of your GameObjects
 
 The tutorial project uses default Unity scale values: 1 unit = 1 meter.
-The *PlaymodeSetup* avatar is the same height as an average human. When
+The *MeshEmulatorSetup* avatar is the same height as an average human. When
 you're creating your own Environment, you can compare its size to any
 custom `GameObject` you add to your project to ensure that those objects
 are the size you want.

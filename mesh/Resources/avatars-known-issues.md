@@ -1,6 +1,7 @@
 ---
 title: Avatars in Teams known issues
 description: Currently active known issues for Avatars in Teams
+ms.service: mesh
 author: qianw211    
 ms.author: qianwen
 ms.date: 9/18/2023

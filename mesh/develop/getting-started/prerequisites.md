@@ -1,25 +1,25 @@
 ---
-title: Prerequsites for Mesh development
+title: Prerequisites for Mesh development
 description: Prerequisites required for Mesh development, including Unity information.
 author: typride
 ms.author: vinnietieto
-ms.date: 10/2/2023
+ms.date: 11/7/2023
 ms.topic: overload
-ms.prod: mesh
-keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features, prerequisites
+ms.service: mesh
+keywords: Microsoft Mesh, prerequisites, getting started, Unity, license
 ---
 
 # Prerequisites for Mesh Development
 
 ## License requirement
 
-A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../Setup/Content/setup-m365-mesh.md).
+A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see the article named [Set up Microsoft Mesh](../../Setup/Content/setup-m365-mesh.md).
 
-## Unity version 2022.3.7f1+
+## Unity version 2022.3.7f1
 
-You must use Unity version 2022.3.7f1+. Later versions will work, but you may see errors which can be bypassed.
+You must use Unity version 2022.3.7f1.
 
-![A screenshot of the suggested version of Unity.](../../media/get-started-developing-mesh/image002.jpg)
+![A screenshot of the required version of Unity.](../../media/get-started-developing-mesh/image002.jpg)
 
 [Get help installing Unity Template](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 

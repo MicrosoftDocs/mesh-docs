@@ -1,22 +1,33 @@
 ---
 title: Immersive spaces in Teams known issues and limitations
 description: Currently active known issues and limitations for Immersive spaces in Teams
+ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 10/5/2023
+ms.date: 11/8/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
 
 # Active known issues and limitations - Immersive Spaces in Teams
 
-## Version 5.2312.0
+## Version 5.2313.0
 
 ### Audio
 
+1. On Quest, two different mics are shown and both are named *Quest*. The second one won't capture audio, and no error is shown. (20795)
+
+    *Workaround*: Quest will select the first one in the list by default, and this will work. 
+
 1. Users who are experiencing poor network connection may hear audio quality issues as a result.  There is currently no warning message for poor network quality. We'll be implementing this soon, as well as working continuously to improve overall audio quality.
 
-1. If a user declines to give Mesh access to their microphone upon first launch in Immersive space, they will be completely muted without additional notification. If this occurs, go into your Teams **Settings -> App permissions**. Select the **Mesh immersive spaces** app, and switch the **Media permissions** on.
+1. If a user declines to give Mesh access to their microphone upon first launch in Immersive space, they will be completely muted without additional notification. 
+
+    *Workaround:* If this occurs, you can try either of the following:
+    
+    - go into your Teams **Settings -> App permissions**. Select the **Mesh immersive spaces** app, and switch the **Media permissions** on.
+
+    - or [clear the Teams cache](/microsoftteams/troubleshoot/teams-administration/clear-teams-cache).
 
 1. When a meeting participant is sharing screen with audio, the audio won’t play in the immersive space on the virtual stage. If you want to share your screen with audio, you must come out of the immersive space.
 
@@ -47,6 +58,8 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 1. If you are losing internet connection during a session in the immersive space, you will be disconnected, removed from the space, and sent back to the gallery. You can rejoin the immersive space manually once internet connection is restored.
 
+1. The **Prejoin** dialog currently doesn't show a thumbnail picture of the event. (20071)
+
 ### React with the Teams vs. Immersive spaces menu bar
 
 1. Using the **React** options on the Teams meeting menu will not trigger any gestures of the avatar in the immersive space. Other Teams users will still see your reaction on their screen. Immersive space users should use the Mesh menu bar to emote, which will both trigger your avatar gestures as well as show the emote on the Teams meeting screen.
@@ -57,7 +70,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 1. Content limitations: PowerPoint Live and Whiteboard are not supported. If a meeting participant is using Powerpoint Live, it will not display on the immersive space stage. Same for whiteboard.
 1. If a meeting is being recorded, only the audio of immersive participants in the meeting zone will be recorded. Those holding side conversations outside the meeting zone will not be in the meeting recording.
-1. Mesh immersive space in Teams today can take up to a minute to load. Be patient as we improve the performance of the app. 
+1. Mesh immersive space in Teams today can take up to a minute to load. Thank you for your patience while we improve app performance. 
 1. When you share content while already in an immersive space, you will not see your own content on the virtual stage. Other meeting participants will be able to see it on the main stage.
 1. Chat in Quest can’t render images, only text. In addition, texts don’t wrap in both the chat and the feedback form on Quest.
 1. Mesh immersive spaces doesn't support cross-tenant calls.
@@ -71,6 +84,28 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 1. On Quest, if you try to rotate the avatar preview in the Avatar Customizer, your field of view will also move.
 
 1. Mesh immersive spaces do not properly support low bandwidth situation: users who are experiencing poor network quality may see problems such as missing avatars and audio glitches. We are actively working on integrating notifications to alert users when they are in this state.
+
+1. When pressing the right mouse button inside the viewport and releasing it outside the viewport, whichever keyboard button pressed at the time of release will continue to trigger as soon as the user re-enters the immersive space. Consequently, the user may walk or rotate (possibly other things) even when it's unintended. To resolve the issue, the user needs to trigger the same button again. (27944)
+
+1. When trying to throw an object by clicking on the object, the cursor still shows. (25542)
+
+1. The Teams meeting details page doesn't show event dates and times according to the same rule as the Mesh event list to account for all-day or multiday events. (28309)
+
+1. Currently, all-day event times are being converted to local time zones. (26665)
+
+1. Seats in the immersive spaces show as blue and available even when there's another user sitting on it. (21535)
+
+1. When joining a Teams meeting, users on Quest see a screenshare instead of the default background wall in the Lakehouse environment. (27425)
+
+1. On Quest, you'll be disconnected from a meeting when you remove your headset. (25764)
+
+1. The settings dialogs currently don't show the selected state for many settings. (17308)
+
+1. Pressing Mesh buttons + the **Enter** key on the keypad produces no action. The same **Enter** key on the main keyboard selects the button and executes the associated action. (26462)
+
+1. On Quest: the Mesh UI is currently locked with the user's head view. As you turn your head, the Mesh UI will also turn, which can give a nauseating experience in VR. (13061)
+
+1. On Quest devices: users who remain idle for some time will be ejected out of an event. (21976)
 
 ## Submit Feedback
  

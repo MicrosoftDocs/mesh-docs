@@ -1,6 +1,7 @@
 ---
 title: Mesh 101 Test your environment within the Mesh app
 description: Learn how to test the Mesh 101 environment with a developer template.
+ms.service: mesh
 author: thetuvix
 ms.author: alexturn
 ms.date: 10/5/2023
@@ -10,7 +11,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, events, experienc
 
 # Mesh 101 Tutorial Chapter 6: Test your environment within the Mesh app
 
-While [Mesh Play mode](../../debug-and-optimize-performance/playmode.md) is great for trying out your environment as you build it, at some point you'll want to see how your creation feels and performs in a headset or with multiple human attendees. At that point, it's time to launch the Mesh app and create a **developer template** you can use to test and iterate on your environment.
+While the [Mesh Emulator](../../debug-and-optimize-performance/mesh-emulator.md) is great for trying out your environment as you build it, at some point you'll want to see how your creation feels and performs in a headset or with multiple human attendees. At that point, it's time to launch the Mesh app and create a **developer template** you can use to test and iterate on your environment.
 
 ## Testing your environment in Mesh
 
