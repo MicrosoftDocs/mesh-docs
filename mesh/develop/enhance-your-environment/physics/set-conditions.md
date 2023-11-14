@@ -1,15 +1,17 @@
 ---
-title: Set conditions for affecting objects
-description: Set conditions that determine which GameObjects will be affected by physics features.
+title: Set conditions for affecting Rigidbodies
+description: Set conditions that determine which Rigidbodies will be affected by physics features.
 author: michael-buschbeck-ms
 ms.author: vinnietieto
 ms.date: 11/9/2023
 ms.topic: Guide
 ms.service: mesh
-keywords: Microsoft Mesh, Mesh physics, physics, environments, interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, conditions
+keywords: Microsoft Mesh, Mesh physics, physics, environments, interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, conditions, bodies, Rigidbodies
 ---
 
-# Set conditions for affecting objects
+# Set conditions for affecting Rigidbodies
+
+In the Mesh component UIs, and in this article, we use "body/bodies" as shortcuts for "Rigidbody/Rigidbodies."
 
 Some components have a property named **Affected Bodies** ...
 
@@ -19,7 +21,14 @@ Some components have a property named **Affected Bodies** ...
 
 ![___](../../../media/physics-interactions/006-stickybody-body-filters.png)
 
-This setting makes only GameObjects that meet certain preconditions affected by the component (in the case of "Affected Bodies") or affected when they collide with the GameObject the component is attached to (in the case of "Affected Bodies for Collision"). There are four main preconditions&#8212;to view them, click the plus sign ("+") drop-down.
+This setting makes only bodies that meet certain preconditions affected by the component (in the case of "Affected Bodies") or affected when they collide with the body the component is attached to (in the case of "Affected Bodies for Collision"). There are four main preconditions:
+
+1. **Game Object Name**
+2. **Game Object Tag**
+3. **Rigidbody Mass**
+4. **Root Game Object**
+
+To view the preconditions, click the plus sign ("+") drop-down.
 
 ![___](../../../media/physics-interactions/007-stickybody-preconditions.png)
 
@@ -61,7 +70,7 @@ Let’s say you have a root GameObject named "Robot1" in your scene. Robot1 has 
 1. Click the **Body Filter** "+" drop-down and then select **Root Game Object**.
 1. Do one of the following:
 
-* Drag the Game Object from the **Hierarchy** and then drop it in the **Root Game Object** field.
+* Drag the GameObject from the **Hierarchy** and then drop it in the **Root Game Object** field.
 
     -or-
 
