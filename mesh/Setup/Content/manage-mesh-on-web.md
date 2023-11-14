@@ -11,9 +11,19 @@ keywords: Microsoft Mesh, M365, Mesh on the web, Immersive spaces, Avatars, gett
 
 # Manage Mesh on the web
 
-Use Mesh on the web to create events, invite co-organizers or attendees, manage environments and templates, and create collections to hold custom environments. Before you can [upload custom environments](../../develop/make-your-environment-available/build-and-publish-your-environment.md) and [create templates](../../events-guide/create-template.md), you'll need to create a Collection to hold them.
+Use Mesh on the web to create events, invite co-organizers or attendees, manage environments and templates, and create collections to hold custom environments.
 
-:::image type="content" source="../../media/m365-migration-guide/Homepage.png" alt-text="Mesh on the web homepage":::
+:::image type="content" source="../../media/mesh-on-web/Mesh-on-the-we-home-page.png" alt-text="Screenshot of Mesh on the web home page.":::
+
+Mesh on web has the following pages:
+
+- **Home:** See upcoming events and access some useful articles.
+- **Events:** [Create or manage events](../../events-guide/create-event-mesh-portal.md) that are joined view the Microsoft Mesh application.
+- **Environments:** View and manage the environments that are available from Microsoft or view the environments and Templates that were uploaded to your collections.
+
+    Learn more about [how to create custom environments and create for Mesh](../../develop/development-overview.md).
+
+- **Collections:** View, manage, and [create collections](#create-a-collection).
 
 ## Prerequisites
 
@@ -23,25 +33,9 @@ Learn more about [how to set up Mesh experiences in M365](setup-m365-mesh.md).
 
 ## Overview of Collections
 
-Collections are the home for your custom environments that you upload through the Mesh Toolkit Uploader in Unity, as well as [Templates that you create](../../events-guide/create-template.md) in Mesh for reuse.
+Collections are the home for your custom environments that are developed through the Mesh Toolkit Uploader in Unity, as well as [Templates that you create](../../events-guide/create-template.md) in Mesh for reuse.
 
-In Mesh on the web, the **Home** page shows a few useful articles and upcoming events.
-
-:::image type="content" source="../../media/mesh-on-web/Mesh-on-the-we-home-page.png" alt-text="Screenshot of Mesh on the web home page.":::
-
-In the left nav, you can select from the following pages:
-
-- **Home:** See upcoming events and access some useful articles.
-- **Events:** [Create or manage events](../../events-guide/create-event-mesh-portal.md) that are joined view the Microsoft Mesh application.
-- **Environments:** View and manage the environments available from Microsoft or view the environments and Templates from collections.
-
-    :::image type="content" source="../../media/mesh-on-web/Mesh-on-the-web-environments.png" alt-text="Screenshot of Mesh on the web showing environments ":::
-
-    Learn more about [how to create custom environments and create for Mesh](../../develop/development-overview.md).
-
-- **Collections:** View, manage, and [create collections](#create-a-collection).
-
-    :::image type="content" source="../../media/mesh-on-web/Collections-home-page.png" alt-text="Screenshot of Mesh on the web collections page.":::
+Before you can [upload custom environments](../../develop/make-your-environment-available/build-and-publish-your-environment.md) and [create templates](../../events-guide/create-template.md), you'll need to create a Collection to hold them.
 
 ### Owners and members for Collections
 
@@ -81,7 +75,8 @@ Select a collection to see the collection details for **Environments**, **Member
 
 :::image type="content" source="../../media/mesh-on-web/Collection-details-highlighted.png" alt-text="Screenshot of Mesh on the web showing a collection highlighted with Environments, Members.":::
 
-### Manage environments and  
+### Manage environments and templates
+
 In the Environments tab, you can see custom environments that were uploaded, and environments that have been used to create templates.
 
 :::image type="content" source="../../media/mesh-on-web/Collection-environment-tab-selected.png" alt-text="Screenshot of Mesh on the web showing Environment tab selected.":::
