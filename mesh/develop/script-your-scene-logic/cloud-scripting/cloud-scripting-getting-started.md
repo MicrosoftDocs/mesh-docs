@@ -127,6 +127,9 @@ The following instructions show how to create a simple environment with a cube t
 
    ![img](../../../media/mesh-scripting/getting-started/JITHitBreakpoint.png)
 
+> [!NOTE]
+> By default, the application will timeout after 2 minutes of inactivity. To increase this window, put a numeric `"debugTimeoutSecs"` value to your manifest file (ex. `"debugTimeoutSecs": 240`)
+
 ## Upload the Environment
 
 The Mesh Cloud Scripting Service  infrastructure deployment and publishing is integrated as part of the Mesh Toolkit Uploader.
