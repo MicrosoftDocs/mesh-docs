@@ -3,8 +3,9 @@ items:
   href: enhanced-features-overview.md
 - name: Multi-room sync (animations, timelines, and video)
   href: multi-room-sync.md
-- name: Web content
+- name: Display Web content
   href: webcontent.md
+  displayName: WebSlate, streaming, video
 - name: Play audio in Mesh
   href: play-audio-in-mesh.md
 - name: Physics interactions
