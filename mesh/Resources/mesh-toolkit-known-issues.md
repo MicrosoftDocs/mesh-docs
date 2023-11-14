@@ -4,14 +4,14 @@ description: Mesh Toolkit active known issues
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 11/2/2023
+ms.date: 11/13/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 ---
 
 # Active known issues - Mesh Toolkit
 
-## Version 23.13
+## Version 23.14 (Preview)
 
 * The embedded videos show as black on Quest 2. (24096)
 
