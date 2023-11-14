@@ -1,6 +1,6 @@
 ---
-title: Immersive spaces for Teams known issues and limitations
-description: Currently active known issues and limitations for Immersive spaces for Teams
+title: Immersive spaces in Teams known issues and limitations
+description: Currently active known issues and limitations for Immersive spaces in Teams
 author: qianw211    
 ms.author: qianwen
 ms.date: 10/5/2023
@@ -8,7 +8,7 @@ ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
 
-# Active known issues and limitations - Immersive Spaces for Teams
+# Active known issues and limitations - Immersive Spaces in Teams
 
 ## Version 5.2312.0
 
@@ -57,7 +57,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 1. Content limitations: PowerPoint Live and Whiteboard are not supported. If a meeting participant is using Powerpoint Live, it will not display on the immersive space stage. Same for whiteboard.
 1. If a meeting is being recorded, only the audio of immersive participants in the meeting zone will be recorded. Those holding side conversations outside the meeting zone will not be in the meeting recording.
-1. Mesh immersive space for Teams today can take up to a minute to load. Be patient as we improve the performance of the app. 
+1. Mesh immersive space in Teams today can take up to a minute to load. Be patient as we improve the performance of the app. 
 1. When you share content while already in an immersive space, you will not see your own content on the virtual stage. Other meeting participants will be able to see it on the main stage.
 1. Chat in Quest can’t render images, only text. In addition, texts don’t wrap in both the chat and the feedback form on Quest.
 1. Mesh immersive spaces doesn't support cross-tenant calls.

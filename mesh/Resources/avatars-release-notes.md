@@ -1,6 +1,6 @@
 ---
-title: Avatars for Microsoft Teams - What's new
-description: Avatars for Microsoft Teams - Latest feature release 
+title: Avatars in Microsoft Teams - What's new
+description: Avatars in Microsoft Teams - Latest feature release 
 ms.prod: mixed-reality
 author: qianw211
 ms.author: qianwen
@@ -9,7 +9,7 @@ ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-# What's new - Avatars for Teams
+# What's new - Avatars in Teams
 
 ## Platform support
 
@@ -24,7 +24,7 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 ## Sept 18, 2023
 
-* Avatars for Microsoft Teams is now avialable on the New Teams Client for Windows Desktop Only. Mac Desktop support not yet available.
+* Avatars in Microsoft Teams is now avialable on the New Teams Client for Windows Desktop Only. Mac Desktop support not yet available.
 
 ## June 21, 2023
 

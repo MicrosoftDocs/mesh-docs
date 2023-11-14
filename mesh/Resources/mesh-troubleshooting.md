@@ -88,15 +88,15 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 ### What should I do if the Mesh app on Windows crashes during startup, crashes during runtime, or behaves strangely during runtime?
 
-1. Confirm you have a license required to use Mesh as shown [here](../Setup/Content/preparing-your-organization-m365.md#verify-your-licensing).
+1. Confirm you have a license required to use Mesh as shown [here](../setup/content/preparing-your-organization.md#verify-your-licensing).
 
-2. Double check that your network admins have allowlisted the required endpoints as described [here](../setup/content/preparing-your-organization-m365.md#work-with-your-security-organization).
+2. Double check that your network admins have allowlisted the required endpoints as described [here](../setup/content/preparing-your-organization.md#work-with-your-organizations-security-team).
 
 3. Gather the logs from your device: `%USERPROFILE%\AppData\LocalLow\Microsoft Corporation\Microsoft Mesh\`.
 
 4. If the logs are too large to share, the two most important are `Player.log` and `Player-prev.log`.
 
-5. Open a support request by following the link [here](https://aka.ms/meshdevsupport).
+5. Open a support request by following the link [here](https://admin.microsoft.com) (this support link may only be available to M365 admins).
 
 ### What should I do with issues relating to M365?
 
