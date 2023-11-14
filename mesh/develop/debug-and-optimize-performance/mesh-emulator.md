@@ -4,7 +4,7 @@ description: Test your Mesh environment using the Mesh Emulator in Unity.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/9/2023
+ms.date: 11/13/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, testing, troubleshooting, Mesh emulator, emulator, troubleshooting, debugging
 ---
@@ -88,6 +88,6 @@ Now you can quickly test your Unity Scene without going through the
 build and upload process each time you make an iteration.
 
  > [!IMPORTANT]
- > If you're using the [Visual Profiler](../debug-and-optimize-performance/performance-guidelines.md#visual-profiler) in your scene, make sure the **Initial Screen Count** setting in the **Mesh Emulator Setup** component is zero. If it's "1" or higher, you won't see the Visual Profiler.
+ > If you're using the [Visual Profiler](performance-guidelines.md#performance-profiler) in your scene, make sure the **Initial Screen Count** setting in the **Mesh Emulator Setup** component is zero. If it's "1" or higher, you won't see the Visual Profiler.
 
  ![A screen shot of the Mesh Emulator Setup component with Initial Screen Count set to zero.](../../media/debug-and-optimize/008-screen-count-zero.png)
