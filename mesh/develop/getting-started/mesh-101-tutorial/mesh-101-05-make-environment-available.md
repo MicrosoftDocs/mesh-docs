@@ -4,17 +4,14 @@ description: Learn how to uploaded your Environment and make it available for Ev
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 10/5/2023
+ms.date: 11/10/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Mesh Portal, uploader, uploading
 ---
 
 # Mesh 101 Tutorial Chapter 5: Make your environment available for testing
 
-You've completed adding all the features you need for your Mesh
-experience using Mesh Interactables, Physics and Scripting. So far, we've been working
-in a Unity *project*; now you'll turn the *StartingPoint* scene into a
-Mesh *environment* and upload it to a Mesh *world* in the Mesh Portal. At that point, this version of your environment is ready for you to test, as you prepare to schedule an *event*.
+You've completed adding all the features you need for your Mesh experience using Mesh Interactables, Physics and Scripting. So far, we've been working in a Unity *project*; now you'll turn the *StartingPoint* scene into a Mesh *Environment* and upload it to a Mesh *Collection* in *Mesh on the Web*. At that point, this version of your Environment is ready for you to test, as you prepare to schedule an *Event*.
 
 > [!IMPORTANT]
 > A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../../Setup/Content/setup-m365-mesh.md).
