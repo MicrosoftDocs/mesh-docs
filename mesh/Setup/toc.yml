@@ -3,6 +3,6 @@ items:
     href: Content/preparing-your-organization.md
   - name: Mesh setup for admins
     href: Content/setup-m365-mesh.md
-  - name: Manage Mesh worlds
-    href: Content/manage-mesh-worlds.md
+  - name: Manage Mesh on the web
+    href: Content/manage-mesh-on-web.md
 
