@@ -3,7 +3,7 @@ title: Mesh Physics Programmer's Guide
 description: Learn general guidelines and component details for the many available Mesh Physics components.
 author: michael-buschbeck-ms
 ms.author: vinnietieto
-ms.date: 11/10/2023
+ms.date: 11/07/2023
 ms.topic: Guide
 ms.service: mesh
 keywords: Microsoft Mesh, Mesh physics, physics, environments, interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw
