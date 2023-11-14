@@ -88,7 +88,7 @@ Now you can quickly test your Unity Scene without going through the
 build and upload process each time you make an iteration.
 
  > [!IMPORTANT]
- > If you're using the [Visual Profiler](../debug-and-optimize-performance/performance-guidelines.md#visual-profiler) in your scene, make sure the **Initial Screen Count** setting in the **Mesh Emulator Setup** component is zero. If it's "1" or higher, you won't see the Visual Profiler.
+ > If you're using the [Visual Profiler](performance-guidelines.md#performance-profiler) in your scene, make sure the **Initial Screen Count** setting in the **Mesh Emulator Setup** component is zero. If it's "1" or higher, you won't see the Visual Profiler.
 
 **TIP**: You may have noticed in the image above that the Unity interface has a slightly blue tint. You can choose to have the Unity interface display a different color tint in Play mode than in Edit mode. This can help you to tell at a glance which mode you're in. 
 
