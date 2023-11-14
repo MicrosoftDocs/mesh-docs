@@ -4,7 +4,7 @@ description: Test your Mesh environment using the Mesh Emulator in Unity.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/9/2023
+ms.date: 11/13/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, testing, troubleshooting, Mesh emulator, emulator, troubleshooting, debugging
 ---
@@ -89,5 +89,12 @@ build and upload process each time you make an iteration.
 
  > [!IMPORTANT]
  > If you're using the [Visual Profiler](../debug-and-optimize-performance/performance-guidelines.md#visual-profiler) in your scene, make sure the **Initial Screen Count** setting in the **Mesh Emulator Setup** component is zero. If it's "1" or higher, you won't see the Visual Profiler.
+
+**TIP**: You may have noticed in the image above that the Unity interface has a slightly blue tint. You can choose to have the Unity interface display a different color tint in Play mode than in Edit mode. This can help you to tell at a glance which mode you're in. 
+
+**To change the Play mode tint**:
+1. On the menu bar, select **Edit** > **Preferences**.
+1. In the left-side menu, select **Colors**.
+1. Under **General**, click the **Playmode** tint color box and then select the color you want.
 
  ![A screen shot of the Mesh Emulator Setup component with Initial Screen Count set to zero.](../../media/debug-and-optimize/008-screen-count-zero.png)
