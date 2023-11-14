@@ -59,7 +59,7 @@ When working in a large scene, you may find it valuable to teleport the player t
 
 This feature lets you run multiple clients within the same process and
 show them side-by-side within the same window. Mesh Toolkit itself implements a very minimal
-emulated ____________________ component that's sufficient to communicate
+emulated networked component that's sufficient to communicate
 the player position between the clients, allowing the different players
 to see each other as heavily stylized avatars:
 
