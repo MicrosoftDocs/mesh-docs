@@ -91,7 +91,7 @@ Right now, there are no events to trigger--we'll add something here in a moment.
 
 ## UnityEvents and Timeline Signals
 
-You can trigger a UnityEvent from a [Timeline](../enhance-your-environment/multi-room-sync.md#animate-timelines-in-unity-for-mesh) by adding a Signal Emitter, then creating a Signal Asset and connecting it to the Signal emitter, and then creating a Signal Receiver component. Inside the Signal Receiver, you select a Signal Asset and then choose the function you wish you call (in other words, the UnityEvent). This is similar to how the UnityEvents work in the Button example explained above--the same event callback, *ScriptMachine.TriggerUnityEvent*, is used.
+You can trigger a UnityEvent from a [Timeline](animationevents.md) by adding a Signal Emitter, then creating a Signal Asset and connecting it to the Signal emitter, and then creating a Signal Receiver component. Inside the Signal Receiver, you select a Signal Asset and then choose the function you wish you call (in other words, the UnityEvent). This is similar to how the UnityEvents work in the Button example explained above--the same event callback, *ScriptMachine.TriggerUnityEvent*, is used.
 
 In this example, we created a Signal Asset named *Clicks*.
 
