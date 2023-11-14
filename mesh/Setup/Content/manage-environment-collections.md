@@ -59,7 +59,7 @@ In the left nav, you can select from the following pages:
     :::image type="content" source="../../media/mesh-on-web/Select-collections-mesh-on-web.png" alt-text="Screenshot of Mesh on the web showing collection button highlighted.":::
 
 1. Select **Create collection** in the top right.
-1. Fill out the **Collection name**, **Description**, adjust the **Sensitivity** and privacy.
+1. Fill out the **Collection name**, **Description**, adjust the **Sensitivity** and **Privacy**.
 
     :::image type="content" source="../../media/mesh-on-web/Enter-collection-details-and-select-sensitivity.png" alt-text="Screenshot of Mesh on the web showing collection details filled out.":::
 
