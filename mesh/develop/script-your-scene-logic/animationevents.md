@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, Unity, environments, scenes, events, animations, timel
 
 # AnimationEvents
 
-You can increase the power of animation clips with *AnimationEvents*, which allow you to employ user-driven callbacks to call a function from a clip at a specific point in time, or a specific frame, that you specify. This article walks you through a brief tutorial for setting up and using AnimationEvents.
+You can increase the power of animation clips with *AnimationEvents*, which allow you to employ user-driven callbacks to trigger logic from a clip at a specific point in time, or a specific frame, that you specify. This article walks you through a brief tutorial for setting up and using AnimationEvents.
 
 **IMPORTANT:** AnimationEvents are only allowed to initiate [visual script](../script-your-scene-logic/visual-scripting/visual-scripting-overview.md) flows, which can then set properties and invoke methods. An AnimationEvent points to *ScriptMachine.TriggerAnimationEvent*. From there, corresponding visual script flows can be triggered through "Animation Event" event nodes.
 

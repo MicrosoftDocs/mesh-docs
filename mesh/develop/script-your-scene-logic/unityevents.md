@@ -11,9 +11,9 @@ keywords: Microsoft Mesh, Unity, environments, scenes, events, animations, timel
 
 # UnityEvents
 
-UnityEvents can be an effective way to employ user-driven callbacks that can set properties and invoke methods on components. This article walks you through a brief tutorial for setting up and using UnityEvents.
+Mesh environments can also wire logic to UnityEvents to handle user-driven callbacks with a visual script flow. This article walks you through a brief tutorial for setting up and using UnityEvents for this kind of interop.
 
-**IMPORTANT**: UnityEvents are only allowed to initiate [visual script](../script-your-scene-logic/visual-scripting/visual-scripting-overview.md) flows, which can then set properties and invoke methods. A UnityEvent points to *ScriptMachine.TriggerUnityEvent*. From there, corresponding visual script flows can be triggered through "Unity Event" event nodes.
+**IMPORTANT**: UnityEvents are only allowed to initiate [visual script](visual-scripting/visual-scripting-overview.md) flows, which can then set properties and invoke methods. A UnityEvent points to *ScriptMachine.TriggerUnityEvent*. From there, corresponding visual script flows can be triggered through "Unity Event" event nodes.
 
 > [!TIP]
 > You can also create [AnimationEvents](./animationevents.md) to call a function from an animation clip at a specific point in time, or a specific frame, that you specify.
@@ -91,7 +91,7 @@ Right now, there are no events to trigger--we'll add something here in a moment.
 
 ## UnityEvents and Timeline Signals
 
-You can trigger a UnityEvent from a [Timeline](../enhance-your-environment/multi-room-sync.md#animate-timelines-in-unity-for-mesh) by adding a Signal Emitter, then creating a Signal Asset and connecting it to the Signal emitter, and then creating a Signal Receiver component. Inside the Signal Receiver, you select a Signal Asset and then choose the function you wish you call (in other words, the UnityEvent). This is similar to how the UnityEvents work in the Button example explained above--the same event callback, *ScriptMachine.TriggerUnityEvent*, is used.
+You can trigger a UnityEvent from a [Timeline](../enhance-your-environment/multi-room-sync.md#controlling-a-timeline-animation-in-an-event) by adding a Signal Emitter, then creating a Signal Asset and connecting it to the Signal emitter, and then creating a Signal Receiver component. Inside the Signal Receiver, you select a Signal Asset and then choose the function you wish you call (in other words, the UnityEvent). This is similar to how the UnityEvents work in the Button example explained above--the same event callback, *ScriptMachine.TriggerUnityEvent*, is used.
 
 In this example, we created a Signal Asset named *Clicks*.
 
