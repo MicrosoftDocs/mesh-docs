@@ -23,9 +23,6 @@ Learn more about [how to set up Mesh experiences in M365](setup-m365-mesh.md).
 
 ## Overview of Collections
 
-> [!NOTE]
-> Collections use a M3
-
 Collections are the home for your custom environments that you upload through the Mesh Toolkit Uploader in Unity, as well as [Templates that you create](../../events-guide/create-template.md) in Mesh for reuse.
 
 In Mesh on the web, the **Home** page shows a few useful articles and upcoming events.
