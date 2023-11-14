@@ -56,7 +56,7 @@ The options for this condition are similar to the options for *Game Object Name*
 
 **Note:** Tag comparison is case-*in*sensitive.
 
-**IMPORTANT:** Unity allows you to create custom tags, but you can’t use custom tags in Mesh. You must choose one of the pre-defined tags that Unity provides.
+**IMPORTANT:** Unity allows you to create custom tags, but you can’t upload custom tags in Mesh. You must choose one of the pre-defined tags that Unity provides.
 
 **To filter for bodies based on their mass:**  
 1. Click the **Body Filter** "+" drop-down and then select **Rigidbody Mass**.
