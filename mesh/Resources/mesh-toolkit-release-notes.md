@@ -4,7 +4,7 @@ description: Mesh Toolkit release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 11/2/2023
+ms.date: 11/14/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 ---
@@ -21,7 +21,7 @@ For purposes of this document, there are two categories of users:
 ## Version 23.14 (Preview)
 
 >[!Caution]
->This is a preview release of the Mesh Toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh Toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. If you don't have access to Mesh preview, do not upgrade to this version of the Mesh Toolkit until a stable public version is released.  Stable public versions will not have a **-preview** tag at the end of the version number.  
+>This is a preview release of the Mesh Toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh Toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh Toolkit until a stable public version is released, and stable public versions will not have a **-preview** tag at the end of the version number.  
 > 
 > **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
 

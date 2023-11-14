@@ -4,7 +4,7 @@ description: Mesh release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 11/13/2023
+ms.date: 11/14/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -16,6 +16,17 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 ## Version 5.2314.0 (Preview)
 
 ### What's new
+
+New UI termonlogy changes:
+
+| UI terms previously used   | New terms  |
+|---|---|
+| Event template   | Template   |
+| Mesh World, World   | Environment collection, collection  |
+| Artifact   | Object  |
+| Environment Editor | Editor |
+| App Menu |  Menu bar |
+| Mesh Portal | Mesh on the Web |
 
 ### Resolved product issues
 
