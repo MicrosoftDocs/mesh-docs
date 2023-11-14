@@ -118,7 +118,7 @@ For this example, we'll use the [ScienceBuilding sample](../getting-started/samp
 
     ![Screenshot of the Console with the message Bot pointed to the first group displayed and the String node that generates that same message.](../../media/enhance-your-environment/unityevents/022-message-in-console.png)
 
-Your [Playmode](../debug-and-optimize-performance/playmode.md) avatar, with attached camera, doesn't appear in the reception area by default, so you can't initially see the synchronization between the pointing *ReceptionBot* and the display of the message in the **Console**. If you want to view this synchronization, you must navigate to the reception area and get a close-up view of *ReceptionBot*.
+Your [Mesh Emulator](../debug-and-optimize-performance/mesh-emulator.md) avatar, with attached camera, doesn't appear in the reception area by default, so you can't initially see the synchronization between the pointing *ReceptionBot* and the display of the message in the **Console**. If you want to view this synchronization, you must navigate to the reception area and get a close-up view of *ReceptionBot*.
 
 ![Screenshot of Reception Bot pointing to the first info popup and the Console displaying the message generated at that point by the Animation Event.](../../media/enhance-your-environment/unityevents/023-view-bot-pointing.png)    
 
