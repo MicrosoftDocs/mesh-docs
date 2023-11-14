@@ -90,11 +90,4 @@ build and upload process each time you make an iteration.
  > [!IMPORTANT]
  > If you're using the [Visual Profiler](performance-guidelines.md#performance-profiler) in your scene, make sure the **Initial Screen Count** setting in the **Mesh Emulator Setup** component is zero. If it's "1" or higher, you won't see the Visual Profiler.
 
-**TIP**: You may have noticed in the image above that the Unity interface has a slightly blue tint. You can choose to have the Unity interface display a different color tint in Play mode than in Edit mode. This can help you to tell at a glance which mode you're in. 
-
-**To change the Play mode tint**:
-1. On the menu bar, select **Edit** > **Preferences**.
-1. In the left-side menu, select **Colors**.
-1. Under **General**, click the **Playmode** tint color box and then select the color you want.
-
  ![A screen shot of the Mesh Emulator Setup component with Initial Screen Count set to zero.](../../media/debug-and-optimize/008-screen-count-zero.png)
