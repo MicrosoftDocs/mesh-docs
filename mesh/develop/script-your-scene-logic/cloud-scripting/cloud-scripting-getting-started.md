@@ -132,7 +132,7 @@ The following instructions show how to create a simple environment with a cube t
 
 ## Upload the Environment
 
-The Mesh Cloud Scripting Service  infrastructure deployment and publishing is integrated as part of the Mesh Toolkit Uploader.
+The Mesh Cloud Scripting Service infrastructure deployment and publishing is integrated as part of the Mesh Toolkit Uploader.
 You can use the specific settings UI in MeshUploader to define your Azure subscription ID that the Mesh Cloud Scripting Service will be deployed to.
 
 1. Add your deployment configurations such as Azure subscription ID to the environment from the MeshUploader UI. You could do this when you create an environment: setup the configs in the **Mesh Environments** window, **Create Environment** tab, **Setup Mesh Script Configuration** block shown in the following images. Alternatively, you could set up and update the setting for an existing environment in the **Update Environment** steps.
