@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, environment, Unity, build, publish, build and publish,
 
 # Publish multiple Environments from one Unity project
 
-There might be times when you can benefit by having a single Unity project that can generate multiple Experiences. Here's one example: Let's say you want to build a series of gaming Experiences that'll reuse a lot of the same assets. You can create a single Unity project that contains all your assets, then create each individual game room as a Scene, and then use the Mesh Uploader to turn the Scenes into Experiences and upload them to a World in the Mesh Portal.
+There might be times when you can benefit by having a single Unity project that can generate multiple Experiences. Here's one example: Let's say you want to build a series of gaming Experiences that'll reuse a lot of the same assets. You can create a single Unity project that contains all your assets, then create each individual game room as a Scene, and then use the Mesh Uploader to turn the Scenes into Experiences and upload them to a World in Mesh on the Web.
 
 Using the scenario above as an example, here's what you would do:
 

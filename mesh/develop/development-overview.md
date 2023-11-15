@@ -6,7 +6,7 @@ ms.author: vinnietieto
 ms.date: 11/06/2023
 ms.topic: Guide
 ms.service: mesh
-keywords: Microsoft Mesh, getting started, Mesh Portal, experiences, environments
+keywords: Microsoft Mesh, getting started, Mesh on the Web, experiences, environments
 ---
 
 # Mesh Development Overview
@@ -39,9 +39,9 @@ The Mesh Toolkit for Unity provides a collection of features that enable you to 
 
 * [Mesh Play mode](debug-and-optimize-performance/playmode.md), which lets you press Play in a Mesh content project to preview how your content will look like running in Mesh for multiple users.
 
-* [Mesh Uploader](make-your-environment-available/build-and-publish-your-environment.md), which lets you upload the Environments you create to the Mesh Portal.
+* [Mesh Uploader](make-your-environment-available/build-and-publish-your-environment.md), which lets you upload the Environments you create to Mesh on the Web.
 
-* [Mesh Content Performance Analyzer](debug-and-optimize-performance/cpa.md) (CPA): automatically reports content optimization issues and opportunities before content is uploaded to the Mesh Portal.
+* [Mesh Content Performance Analyzer](debug-and-optimize-performance/cpa.md) (CPA): automatically reports content optimization issues and opportunities before content is uploaded to Mesh on the Web.
 
 The Mesh Toolkit is free to download; however, a Teams Premium license is required for all users (including developers and technical 3D artists) to use Microsoft Mesh.
 

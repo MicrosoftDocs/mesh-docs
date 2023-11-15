@@ -54,7 +54,7 @@ The tutorial is structured as follows:
 
 ## Terminology
 
-In Mesh terms, the project you create in Unity and then upload to the Mesh Portal is called an *Environment*.
+In Mesh terms, the project you create in Unity and then upload to Mesh on the Web is called an *Environment*.
 
 ## Prerequisites
 

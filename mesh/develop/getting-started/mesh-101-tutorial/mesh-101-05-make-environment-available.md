@@ -4,14 +4,14 @@ description: Learn how to uploaded your Environment and make it available for Ev
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/10/2023
+ms.date: 11/14/2023
 ms.topic: Tutorial
-keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Mesh Portal, uploader, uploading
+keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Mesh Portal, uploader, uploading, Mesh on the Web
 ---
 
 # Mesh 101 Tutorial Chapter 5: Make your environment available for testing
 
-You've completed adding all the features you need for your Mesh experience using Mesh Interactables, Physics and Scripting. So far, we've been working in a Unity *project*; now you'll turn the *StartingPoint* scene into a Mesh *Environment* and upload it to a Mesh *Collection* in *Mesh on the Web*. At that point, this version of your Environment is ready for you to test, as you prepare to schedule an *Event*.
+You've completed adding all the features you need for your Mesh experience using Mesh Interactables, Physics and Scripting. So far, we've been working in a Unity *project*; now you'll turn the *StartingPoint* scene into a Mesh *Environment* and upload it to a Mesh *World* in *Mesh on the Web*. At that point, this version of your Environment is ready for you to test, as you prepare to schedule an *Event*.
 
 > [!IMPORTANT]
 > A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../../Setup/Content/setup-m365-mesh.md).
@@ -24,7 +24,7 @@ You've completed adding all the features you need for your Mesh experience using
 
 ## Create your environment
 
-1. Make sure you're in the **Create** **Environment** tab, and then, in
+1. Make sure you're in the **Create Environment** tab, and then, in
     the **Internal Name** field, type "Wind Turbine Tutorial."
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/037-upload-create.png)
@@ -35,7 +35,7 @@ You've completed adding all the features you need for your Mesh experience using
     > [!NOTE]
     > For future projects, keep in mind that the **Internal Name** field has a maximum of 40 characters, and the **Description** field has a maximum of 70 characters.
 
-3. To ensure you have the latest worlds that are available in the Mesh Portal, select the **Refresh List of Mesh Worlds** button.
+3. To ensure you have the latest worlds that are available in Mesh on the Web, select the **Refresh List of Mesh Worlds** button.
 
 4. Select the **Mesh World** drop down, and then select the world you
     want to upload your Environment to if it's not already selected.
@@ -46,7 +46,7 @@ You've completed adding all the features you need for your Mesh experience using
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/038-upload-capacity.png)
 
 6. Select **Create Asset** to create the Environment that you'll be
-    uploading to the Mesh Portal.
+    uploading to Mesh on the Web.
 
 7. You'll receive a confirmation dialogue as shown below. Select
     **Close**.
@@ -101,10 +101,9 @@ Select the **Build & Publish** button.
 
 - If the build and upload process fails, this is confirmed in the **Build and Upload** **Results** dialog.
 
-## View your Environment in the Mesh Portal
+## View your Environment in Mesh on the Web
 
-If you navigate to the **Environments** page for your World in the [Mesh 
-Portal](https://portal.mesh.microsoft.com), you'll see that your Environment has been saved there. 
+If you navigate to the **Environments** page for your World in [Mesh on the Web](https://portal.mesh.microsoft.com), you'll see that your Environment has been saved there. 
 
 ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/458-environment-in-mesh-portal.png)
 
@@ -113,8 +112,7 @@ Your saved custom Environment is now ready for you to test in the Mesh app on yo
 ## Summary
 
 In this chapter, you learned how to create an Environment based on your
-scene and then build it and publish it to your World in the Mesh 
-Portal.
+scene and then build it and publish it to your World in Mesh on the Web.
 
 ## Next steps
 

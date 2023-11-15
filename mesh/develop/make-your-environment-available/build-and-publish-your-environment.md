@@ -1,6 +1,6 @@
 ---
 title: Build and publish your environment
-description: Learn how to turn your environment into an Asset and then publish it in the Mesh Portal.
+description: Learn how to turn your environment into an Asset and then publish it in Mesh on the Web.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, environment, build, publish, build and publish, upload
 
 # Build and publish your environment
 
-After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen World in the Mesh Portal, where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that World can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
+After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen World in Mesh on the Web, where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that World can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
 
 1. On the menu bar, select **Mesh Toolkit** > **Configure Project Settings**.
 
@@ -121,7 +121,7 @@ For example, if you built and publish an Environment for PC platform, but later 
 
 ## Environment thumbnails
 
-Adding a custom thumbnail image that will be added to your Environment listings in the Mesh Portal or Mesh App comes in handy when you're selecting Environments in either place because it gives you a visual reminder of what the Environment looks like.
+Adding a custom thumbnail image that will be added to your Environment listings in Mesh on the Web or Mesh App comes in handy when you're selecting Environments in either place because it gives you a visual reminder of what the Environment looks like.
 
 You can customize the thumbnails from your environment in two ways:
 

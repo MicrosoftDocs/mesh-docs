@@ -18,7 +18,7 @@ can experience through the Mesh app for PC or Quest.
 > [!IMPORTANT]
 > To ensure the best experience, we recommend that attendees to an event update the latest version of the Mesh app.
 
-1. Open the [Mesh Portal](https://portal.mesh.microsoft.com/).
+1. Open [Mesh on the Web](https://portal.mesh.microsoft.com/).
 1. Log in with your corporate account.
 1. On the Home page, in the left-side navigation bar, select **Events**.
 
