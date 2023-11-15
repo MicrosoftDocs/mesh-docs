@@ -17,7 +17,8 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 Use Mesh on the web to create events, invite co-organizers or attendees, manage environments and templates, and create collections to hold custom environments.
 
- [Microsoft Mesh on the web](https://portal.mesh.microsoft.com/).
+> [!div class="nextstepaction"]
+> [Microsoft Mesh on the web](https://portal.mesh.microsoft.com/)
 
 ## Mesh Toolkit
 
