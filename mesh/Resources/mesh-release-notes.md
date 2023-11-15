@@ -17,7 +17,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ### What's new
 
-New UI termonlogy changes:
+#### New UI termonlogy
 
 | UI terms previously used   | New terms  |
 |---|---|
@@ -27,6 +27,40 @@ New UI termonlogy changes:
 | Environment Editor | Editor |
 | App Menu |  Menu bar |
 | Mesh Portal | Mesh on the Web |
+
+#### Avatar customizer
+
+* Users are now prompted to confirm if they're sure they'd like to lose their changes before exiting the avatar customizer.
+
+#### Event production
+
+* New hand raise functionality:
+
+    * Hosts can now see who raised their hand, and then enable **Broadcast** and **Megaphone** for them. **Broadcast** allows the user to be visible in multiple rooms,  and **Megaphone** allows them to be heard.
+
+    * Users can now raise their hand and wait to be called on by the host(s) in an event. Once called, their avatar will be **Broadcasted** (in multiple-room events) and **Megaphone** will be turned on.
+
+* Updated the dialog box for when an attendee is invited to accept broadcast. You can either choose to **Decline** or **Confirm** to start broadcasting. (24459)
+
+    ![A screenshot of the go-on the air dialog](media/go-on-the-air-dialog.png)
+
+#### New controls for interactive objects
+
+* Throwable (for example: [the bean bag toss](https://support.microsoft.com/en-us/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games)):
+
+    * Aim and left mouse click to throw
+
+    * Press **Space bar** to drop
+
+* Acitvatable (for example: [the marshmallow stick in the Lakehouse environment](https://support.microsoft.com/en-us/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games)):
+
+    * Click to use
+
+    * Press **Space bar** to drop
+
+* [Equippable objects](/mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactables#equippable-objects) without any special interactions:
+
+    * Press **Space bar** to drop
 
 ### Resolved product issues
 
@@ -48,6 +82,8 @@ New UI termonlogy changes:
 
 #### Events
 
+* In the case of a failure to connect to Mesh services when joining an event, we now show an error dialog asking users to contact their IT admin. Consult the Mesh admin documentation, and in particular the details about [configuring firewalls](/mesh/setup/content/preparing-your-organization#work-with-your-organizations-security-team), to ensure traffic to and from Mesh services are allowed. (27527) 
+
 * For users with a license for Teams Premium but without Teams Core, we do not block their entrance into Mesh on PC, however they will not be able to access any events. We have provided the user with a more accurate error why they are not able to see events. (25623)
 
 * All-day event times are no longer being converted to local time zones. (26665)
@@ -60,8 +96,7 @@ New UI termonlogy changes:
 
 ### Resolved product issues
 
-* You will need to make a new event for every new version of the environment that you upload. (23629)
-
-* When an avatar is being broadcasted in a Mesh event, it may disappear when viewed from certain angles while the broadcaster visual indicator remains visible during this time. (20753)
-
-
+* On Quest, there’s a crackling sound when you try to click on the **Customize** button under **Profile**. (16203)
+* In the Mesh user profile dialog box, switching avatars will cause the avatar preview to briefly flash. (12762)
+* On Quest, the **Event details** dialog and the **Invite list** for an event will show up as blank when accessed through the Dashboard Homepage. (13085)
+* For some microphones, the user may sometimes need to speak louder than normal to trigger both lip-sync and background highlighting of the name plate. (48816)

@@ -39,7 +39,7 @@ These are the offerings and packages currently available. There may be slight di
 
 ### What's new
 
-### Scripting
+#### Scripting
 
 * The **On State Changed** event node now works correctly after its `ScriptMachine` is disabled and later re-enabled. Previously, the node incorrectly stopped triggering completely and indefinitely after it had been disabled for the first time. (26333)
 
@@ -55,11 +55,11 @@ These are the offerings and packages currently available. There may be slight di
 
     Previously, the list of available script nodes can easily be auto-populated with incompatible (default) project settings or without having been filtered to include only nodes supported by Mesh. For example, this could happen if users chose not to apply Mesh project settings before starting to work on visual scripts, or if they manually edited Visual Scripting's **Type Options** or **Node Library** and selected **Regenerate Nodes**.
 
-#### Physics
+##### Physics
 
 * The physics event nodes **On Trigger Enter**, **On Trigger Exit**, **On Collision Enter**, and **On Collision Exit** are now reliably networked. By default, these events reliably trigger on all clients in the room. However, if the physics collider observed by these event nodes is in scope of a **Local Physics Scope** component, the events reliably trigger on exactly one client, which makes it possible for the script flows they trigger to reliably read and write shared state (for example: update a shared score variable). (27635)
 
-### Interactables
+#### Interactables
 
 * [Equippable objects](/mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactables#equippable-objects) now respond to a mouse button down as opposed to the mouse button release. (27858)
 
@@ -68,6 +68,52 @@ These are the offerings and packages currently available. There may be slight di
     Previously, you need to point the controller ray at the object and click the **Grip** button. This feels very unnatural for interaction with objects that are near.  When you're very close to an object, it's hard to point your controller ray at it to interact. (24187)
 
 * **Validate Unique ID** added to environment upload. To verify the interactables in your scene that have valid unique ids go to **Mesh Toolkit -> Validate Unique IDs**. (25151)
+
+* Throwable objects have a new setting for **Throw Direction Offset**. This is added to the direction the object is being thrown. (26308)
+
+* `MeshInteractableSetup` will no longer allow objects to be both manipulable and equippable. Objects that were previously defined as both will only be equippable and you may change it back to manipulable if that's not intended. (26632)
+
+#### Uploader
+
+* The ContentVersion has been incremented to 1.21.0: Newly published content will only be visible in the recent Mesh build.
+
+* The environment thumbnail will be automatically generated based on travel point when no thumbnail camera is found in the scene.
+
+* Renamed **Mesh World** to **Environment collection** on the uploader user interface and logs.
+
+* Updated the Mesh logo.
+
+* Fixed the **Feedback** window which was previously blank.
+
+* Added tooltips to the **Uploader** dialog which can contain useful information in case of failures.
+
+* Making the **Results** section for **Extension tools** an expandable area.
+
+* Fixed a bug where the Uploader could appear to open in a valid state but also show a dialog claiming the user's license is not valid.
+
+* Fixed a bug where missing TMP settings will not setup default font.
+
+* Fixed `ArgumentNullException` when using **Toggle [NoUpload] suffix** without selecting a game object.
+
+* Added handler for the graph error when the Uploader fails to find the OneDrive folder.
+
+* Failed to upload Thumbnails will now report correctly as an error and fail before trying to publish an asset.
+
+* Fixed an issue which displayed a warning before uploading disabled entries.
+
+#### WebSlate
+
+* Fixed this issue: On Quest, if the user resumes from sleep, entering an event will crash if the event has WebSlate. (27705)
+
+#### Error messages
+
+* A new `TravelExceptionReason` and localized error message for  `RelayServerUnreachableException`:
+
+    Oops! We failed to connect. Please check your internet connection and try again. If you continue to experience this problem, check with your IT department and mention: the client didn't receive a response from the Relay server within the connection timeout. (29004)
+
+* A new `TravelExceptionReason` and localized error message for `RelayNetworkException`:
+
+    Oops! We failed to connect. Please check your internet connection and try again. (29004)
 
 ## Version 23.13
 
@@ -136,3 +182,14 @@ Here's what to do for UnityEvent in a `SignalReceiver` as the starting point:
 * Fixed a bug where the Uploader was throwing regex exceptions after a failed build.
 
 * Added a check for potential null reference exception when publishing assets.
+
+### Content Performance Analyzer (CPA)
+
+* Batch counts reported by the Content Performance Analyzer and the Mesh Performance Profiler are now more accurately counted based on Unity's SRP batcher markers. 
+
+    >[!Note]
+    >Batch counts will no longer be reported outside of the Unity editor because they can't be accurately counted in release builds.
+
+## Resolved product issues
+
+* This issue: "a privacy statement for the `com.microsoft.mesh.toolkit` package gets truncated when viewed in the **Unity Package Manager** in the package description section" -- has been fixed.
