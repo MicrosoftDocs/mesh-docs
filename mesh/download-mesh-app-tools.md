@@ -11,6 +11,10 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 # Get Mesh apps and tools
 
+Get quick access to all the Mesh apps and tools in the sections below.
+
+If Mesh is not set up for your organization, see how to [Set up Microsoft Mesh](Setup/Content/setup-m365-mesh.md).
+
 [!INCLUDE [<download-apps>](<includes/download-apps.md>)]
 
 ## Mesh on the web
@@ -34,9 +38,3 @@ The Mesh Toolkit enables creators and developers to build custom 3D environments
 
 > [!div class="nextstepaction"]
 > [Set up custom immersive spaces in Microsoft Mesh](Setup/Content/setup-m365-mesh.md)
-
-> [!div class="nextstepaction"]
-> [Organize your Mesh event](events-guide/events-overview.md)
-
-> [!div class="nextstepaction"]
-> [Develop Mesh environments](develop/development-overview.md)

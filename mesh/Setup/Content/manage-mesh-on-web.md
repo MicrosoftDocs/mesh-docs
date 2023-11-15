@@ -11,11 +11,11 @@ keywords: Microsoft Mesh, M365, Mesh on the web, Immersive spaces, Avatars, gett
 
 # Manage Mesh collections
 
-Use Mesh on the web to create events, invite co-organizers or attendees, manage environments and templates, and create collections to hold custom environments. For any custom environments to be uploaded using the Mesh Toolkit in Unity, you'll need a collection to hold your uploads.
+Use Mesh on the web to create events, invite co-organizers or attendees, manage environments and templates, and create collections to hold custom environments. For any custom environments to be uploaded using the Mesh Toolkit in Unity, you'll need a collection to hold your uploads, making them accessible to any event organizer in your organization.
 
 :::image type="content" source="../../media/mesh-on-web/Mesh-on-the-we-home-page.png" alt-text="Screenshot of Mesh on the web home page.":::
 
-Mesh on web has the following pages:
+To provide context, Mesh on the web has the following pages:
 
 - **Home:** See upcoming events and access some useful articles.
 - **Events:** [Create or manage events](../../events-guide/create-event-mesh-portal.md) that are joined view the Microsoft Mesh application.
@@ -23,26 +23,21 @@ Mesh on web has the following pages:
 
     Learn more about [how to create custom environments for Mesh](../../develop/development-overview.md).
 
-- **Collections:** View, manage, and [create collections](#create-a-collection).
+- **Collections:** View, manage, and [create collections](#create-a-collection) to hold custom environments and templates.
 
 ## Prerequisites
 
-Microsoft 365 Admins should use the M365 Apps Admin Center to enable the Mesh access policy for users to access Mesh on the web. If Mesh on the web is not accessible to you, you may need to ask your IT Admin or wait for the policy to be available for your organization.
+Microsoft 365 Admins should use the M365 Apps Admin Center to ensure that Mesh is properly setup and access  to Mesh is allowed. If Mesh on the web is not accessible to you, you may need to ask your IT Admin or wait for the policy to be available for your organization.
 
 Learn more about [how to set up Mesh experiences in M365](setup-m365-mesh.md).
 
 ## Overview of Collections
 
-Collections are the home for your custom environments that are developed through the Mesh Toolkit Uploader in Unity, as well as [Templates that you create](../../events-guide/create-template.md) in Mesh for reuse.
+Collections are the home for your custom environments that are developed in Unity and uploaded using the Mesh Toolkit uploader, as well as a place to review [Templates that you create](../../events-guide/create-template.md) to be reused in events.
 
 Before you can [upload custom environments](../../develop/make-your-environment-available/build-and-publish-your-environment.md) and [create templates](../../events-guide/create-template.md), you'll need to create a Collection to hold them.
 
-### Owners and members for Collections
-
-- **Owners**: Can manage membership and change settings for the collection.
-- **Members**: Can access and manage event templates and use the customization session to customize environments in the Mesh App.
-
-### Create a Collection
+## Create a Collection
 
 1. Open [Mesh on the web](https://portal.mesh.microsoft.com/).
 1. In the Home page, select **Collections** in the left nav.
@@ -54,7 +49,7 @@ Before you can [upload custom environments](../../develop/make-your-environment-
 
     :::image type="content" source="../../media/mesh-on-web/Enter-collection-details-and-select-sensitivity.png" alt-text="Screenshot of Mesh on the web showing collection details filled out.":::
 
-Learn more about [M365 group public and private settings](https://support.microsoft.com/en-us/office/make-microsoft-365-groups-public-or-private-c0a991b3-9c56-48b8-bf0f-05530f836b1b).
+    Learn more about [M365 group public and private settings](https://support.microsoft.com/en-us/office/make-microsoft-365-groups-public-or-private-c0a991b3-9c56-48b8-bf0f-05530f836b1b).
 
 1. Add **Owners**, and **Members**.
     - **Owners**: Can change membership and settings for a collection.
