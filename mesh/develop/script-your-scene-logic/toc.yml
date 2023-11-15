@@ -5,3 +5,7 @@ items:
     href: visual-scripting/toc.yml
   - name: Cloud scripting
     href: cloud-scripting/toc.yml
+  - name: UnityEvents
+    href: unityevents.md
+  - name: AnimationEvents
+    href: animationevents.md
