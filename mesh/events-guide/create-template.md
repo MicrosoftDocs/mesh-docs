@@ -29,7 +29,7 @@ Event templates can be created directly in Microsoft Mesh app, or created from a
 
 1. In the Microsoft Mesh app, select the **Manage event templates** button.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Template-dashboard-creation-button.png" alt-text="Event template creation button in ":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Logo-update-event-templates-button.png" alt-text="Screenshot of Mesh app showing Manage event templates button selected.":::
 
 1. In this view, you can see the previous templates that have been created, see the draft templates, or create a new template.
 
