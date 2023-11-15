@@ -39,7 +39,7 @@ After you've created your event, customized it, and added content to the control
 
 1. Find your event in the **Upcoming** or **Happening now** sections, and select **Join**.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Join-now-events.png" alt-text="Join now button in the Microsoft Mesh app":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Join-event-2314-2.png" alt-text="Screenshot of Mesh app showing join button highlighted.":::
 
     > [!NOTE]
     >
@@ -121,7 +121,8 @@ Share your screen or a specific window on your PC to all participants. Screensha
 
 1. You will have two notifications visible to indicate that you are screensharing.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Event-production-screenshare-in-action.png" alt-text="Screenshot of Mesh app showing host panel open, screenshare started.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Screenshare-alerts-shown.png" alt-text="Screenshot of Mesh app showing alerts for screenshare.":::
+
 1. Stop sharing your screen by selecting the Share button again at the top of host panel.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Event-production-screenshare-stop.png" alt-text="Screenshot of Mesh app showing stop sharing button in host panel.":::
