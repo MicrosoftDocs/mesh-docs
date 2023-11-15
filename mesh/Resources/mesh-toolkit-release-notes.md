@@ -183,13 +183,13 @@ Here's what to do for UnityEvent in a `SignalReceiver` as the starting point:
 
 * Added a check for potential null reference exception when publishing assets.
 
-### Content Performance Analyzer (CPA)
+#### Content Performance Analyzer (CPA)
 
 * Batch counts reported by the Content Performance Analyzer and the Mesh Performance Profiler are now more accurately counted based on Unity's SRP batcher markers. 
 
     >[!Note]
     >Batch counts will no longer be reported outside of the Unity editor because they can't be accurately counted in release builds.
 
-## Resolved product issues
+### Resolved product issues
 
 * This issue: "a privacy statement for the `com.microsoft.mesh.toolkit` package gets truncated when viewed in the **Unity Package Manager** in the package description section" -- has been fixed.
