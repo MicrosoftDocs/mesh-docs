@@ -19,7 +19,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 ### WebView
 
-* On Quest, the system webview is about 2 years behind and causes some websites to show *Unsupported browser* message. We are working with Meta to update Chromium to a more recent version. (28696)
+* On Quest, the system webview is about 2 years behind and causes some websites show *Unsupported browser* message. We are working with Meta to update Chromium to a more recent version. (28696)
 
 ### WebSlate
 

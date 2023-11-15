@@ -30,7 +30,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 #### Avatar customizer
 
-* Users are now prompted to confirm if they're sure they'd like to lose their changes before exiting the avatar customizer. (26701)
+* Users are now prompted to confirm if they're sure they'd like to lose their changes before exiting the avatar customizer.
 
 #### Event production
 
