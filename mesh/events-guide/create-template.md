@@ -52,15 +52,15 @@ Event templates can be created directly in Microsoft Mesh app, or created from a
 
 ## Create Event template from an existing event
 
-If you've already customized an event or prefer to create a template from an existing event, you can do that in the Mesh portal in the Event details page or the Environments page.
+If you've already customized an event or prefer to create a template from an existing event, you can do that in Mesh on the web in the Event details page or the Environments page.
 
 **Event details page:**
 
-:::image type="content" source="../media/mesh-event-producer-guide/Event-create-save-as-event-template.png" alt-text="Screenshot of Mesh portal showing option to save an event as a template.":::
+:::image type="content" source="../media/mesh-event-producer-guide/Event-create-save-as-event-template.png" alt-text="Screenshot of Mesh on the web showing option to save an event as a template.":::
 
 **Environments page:**
 
-:::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-from-environments-page.png" alt-text="Screenshot of Mesh portal Environments page, showing create Event template option.":::
+:::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-from-environments-page.png" alt-text="Screenshot of Mesh on the web Environments page, showing create Event template option.":::
 
 ## Customize your Event template
 

@@ -45,7 +45,7 @@ When the spinner animation next to the package list stops, the package has finis
 
 ## Microsoft Mesh preview
 
-In addition to the stable release builds, we offer a preview build and preview toolkit. These are ideal for developers who want to test out upcoming features and prepare in advance for the next public build.
+In addition to the stable release builds, we offer a preview build and preview toolkit. These are ideal for developers who want to test out upcoming features and prepare in advance for the next public build. The preview Toolkit and preview build of Microsoft Mesh should be used together.
 
 We promote the preview build to the stable public build at regular intervals. Currently (November 2023), this happens every three weeks. If you downloaded the Mesh Toolkit through the Package Manager in Unity, you should have both the Preview and Stable build.
 
