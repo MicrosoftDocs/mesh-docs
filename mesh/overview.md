@@ -33,19 +33,17 @@ This co-presence can lead to serendipitous moments of conversation or even just 
 
 ## Use immersive spaces in Microsoft Teams
 
-Use immersive spaces in Teams to bring the power of Mesh into Microsoft Teams. Getting started is easy! From the View menu in a Teams meeting, you select the immersive space option. With just a click, you will transform your two-dimensional (2D) meeting into a 3D immersive experience.
+Use [immersive spaces in Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams) to bring the power of Mesh into Microsoft Teams. Getting started is easy! From the View menu in a Teams meeting, you select the immersive space option. With just a click, you will transform your two-dimensional (2D) meeting into a 3D immersive experience.
 
 :::image type="content" source="media/welcome-to-mesh/04_ImmersiveSpaces_Splice.gif" alt-text="GIF of selecting view then immersive space in teams":::
 
-Learn more about [immersive spaces in Microsoft Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams).
-
-Learn [how to set up immersive spaces in Microsoft Teams](/microsoftteams/meeting-immersive-spaces).
+See how to [set up immersive spaces in Microsoft Teams today](/microsoftteams/meeting-immersive-spaces).
 
 ## Use immersive spaces Microsoft Mesh
 
 Use immersive spaces in Mesh to create custom experiences that are tailored to your specific business needs such as employee events, training, guided tours, or internal product showcases.
 
-Learn [how to set up immersive spaces in Microsoft Mesh](Setup/Content/setup-m365-mesh.md).
+See [how to set up immersive spaces in Microsoft Mesh](Setup/Content/setup-m365-mesh.md).
 
 ### Customize a ready-to-use environment
 
@@ -57,17 +55,13 @@ Learn [how to organize Mesh events](events-guide/events-overview.md).
 
 ### Develop a custom environment
 
-Use the Mesh toolkit to leverage the power of Unity for fully customizable immersive experiences.
-
-Learn [how to develop a custom environment for Mesh today](develop/development-overview.md).
+Leverage the power of Unity and the Mesh toolkit to [create custom immersive experiences that are tailored to your unique needs](develop/development-overview.md). Then upload them to Mesh and collaborate with people across the world.
 
 :::image type="content" source="media/get-started-developing-mesh/image040-unity-overview-hero.png#lightbox" alt-text="Overview image of Unity development environment for Mesh":::
 
 ## Create and manage events in the Mesh portal
 
-Use the Mesh portal to create or manage events, create event templates to be reused in the future, and manage all your uploaded environments.
-
-Learn [how to manage Mesh on the web](setup/Content/manage-mesh-on-web.md).
+Use Mesh on the web to create or manage events, create event templates to be reused in the future, and manage all your uploaded environments. See [how collections are used to manage your uploaded environments](setup/Content/manage-mesh-on-web.md).
 
 ## Next steps
 
