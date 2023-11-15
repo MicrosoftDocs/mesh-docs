@@ -67,7 +67,7 @@ Learn [how to develop a custom environment for Mesh today](develop/development-o
 
 Use the Mesh portal to create or manage events, create event templates to be reused in the future, and manage all your uploaded environments.
 
-Learn [how to manage Mesh on the web](setup/Content/manage-mesh-worlds.md).
+Learn [how to manage Mesh on the web](setup/Content/manage-mesh-on-web.md).
 
 ## Next steps
 
