@@ -19,8 +19,6 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 > [!IMPORTANT]
 > Ensure you are on the app version that your event organizer intends for you to use. The preview versions of Mesh are typically intended for testing out new features, whereas the normal app is intended for general usage.
 
-Mesh has a stable build where most users will experience immersive experiences and a corresponding stable toolkit for developers who wish to create custom environments or artifacts to be used in those immersive experiences.
-
 ## Microsoft Mesh for Meta Quest devices
 
 > [!div class="nextstepaction"]
