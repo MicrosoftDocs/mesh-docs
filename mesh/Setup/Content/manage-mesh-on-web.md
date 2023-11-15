@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, M365, Mesh on the web, Immersive spaces, Avatars, gett
 
 # Manage Mesh collections
 
-Use Mesh on the web to create events, invite co-organizers or attendees, manage environments and templates, and create collections to hold custom environments.
+Use Mesh on the web to create events, invite co-organizers or attendees, manage environments and templates, and create collections to hold custom environments. For any custom environments to be uploaded using the Mesh Toolkit in Unity, you'll need a collection to hold your uploads.
 
 :::image type="content" source="../../media/mesh-on-web/Mesh-on-the-we-home-page.png" alt-text="Screenshot of Mesh on the web home page.":::
 
@@ -21,7 +21,7 @@ Mesh on web has the following pages:
 - **Events:** [Create or manage events](../../events-guide/create-event-mesh-portal.md) that are joined view the Microsoft Mesh application.
 - **Environments:** View and manage the environments that are available from Microsoft or view the environments and Templates that were uploaded to your collections.
 
-    Learn more about [how to create custom environments and create for Mesh](../../develop/development-overview.md).
+    Learn more about [how to create custom environments for Mesh](../../develop/development-overview.md).
 
 - **Collections:** View, manage, and [create collections](#create-a-collection).
 
