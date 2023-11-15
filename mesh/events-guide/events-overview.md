@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
 
 Events experiences in Microsoft Mesh can vary widely—in their look, feel, and use case. Use the default environments and artifacts to run event experiences or create custom environments and content to curate company events even more.
 
-Create the event in the Mesh portal, customize it in the Microsoft Mesh app, create a template to reuse your customizations in the future, and use the powerful suite of tools to produce it.
+Create the event in Mesh on the web, customize it in the Microsoft Mesh app, create a template to reuse your customizations in the future, and use the powerful suite of tools to produce it.
 
 ## Download Mesh apps
 
@@ -39,7 +39,7 @@ Create the event in the Mesh portal, customize it in the Microsoft Mesh app, cre
 
 Events in Mesh should be familiar to most organizations that work with Microsoft Teams with the added step of customization. So, Create, customize, and host:
 
-1. **[Create an event in the Mesh Portal](create-event-mesh-portal.md):** Start with the Mesh Portal to create or edit your event, invite participants, and manage Mesh worlds.
+1. **[Create an event in Mesh on the web](create-event-mesh-portal.md):** Start with Mesh on the web to create or edit your event, invite participants, and manage Mesh worlds.
 
 1. **[Customize and save the event experience in the Mesh app](customize-event.md):** Customize your event at least 30 minutes before the start time to add text, video, and/or screenshare artifacts and prepare your environment for your event.
 
@@ -47,14 +47,14 @@ Events in Mesh should be familiar to most organizations that work with Microsoft
 
 1. **[Produce your event in Mesh](produce-event.md):** Leverage a set of tools to manage participants and control the artifacts that you've added to your environment.
 
-### Create your event in the Mesh Portal
+### Create your event in Mesh on the web
 
-Create an event in the Mesh Portal and invite participants. Once created, participants will see the event in their calendars in Microsoft Teams and Outlook.
+Create an event in Mesh on the web and invite participants. Once created, participants will see the event in their calendars in Microsoft Teams and Outlook.
 
 :::image type="content" source="../media/mesh-event-producer-guide/Join-event-link-calendar.gif" alt-text="Join mesh event via a link in outlook or teams calendar":::
 
 > [!div class="nextstepaction"]
-> [Create an event in the Mesh portal](create-event-mesh-portal.md)
+> [Create an event in Mesh on the web](create-event-mesh-portal.md)
 
 ### Customize your event
 
