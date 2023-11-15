@@ -39,7 +39,7 @@ After you've created your event, customized it, and added content to the control
 
 1. Find your event in the **Upcoming** or **Happening now** sections, and select **Join**.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Join-now-events.png" alt-text="Join now button in the Microsoft Mesh app":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Join-event-2314-2.png" alt-text="Screenshot of Mesh app showing join button highlighted.":::
 
     > [!NOTE]
     >
