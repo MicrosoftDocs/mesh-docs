@@ -13,6 +13,9 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes and known issues for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
+>[!Important]
+>The Immersive spaces in Teams is currently only available in the new Teams client.
+
 ## Version 5.2313.0
 
 ### What's new
