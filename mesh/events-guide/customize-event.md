@@ -55,7 +55,7 @@ To learn more about creating an Event template, see how to [Create event templat
 
 1. In the Microsoft Mesh app, select the **Manage event templates** button.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Template-dashboard-creation-button.png" alt-text="Event template creation button in ":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Logo-update-event-templates-button.png" alt-text="Screenshot of Mesh app showing Manage event templates button selected.":::
 
 1. Find your **Event template** draft.
 
@@ -71,11 +71,12 @@ To learn more about creating an Event template, see how to [Create event templat
 
 1. Look for the event in the **Upcoming** category and select it.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-entrypoint3.png" alt-text="Event showing in Mesh app in the upcoming category":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Select-event-details-template.png" alt-text="Screenshot of event in Microsoft Mesh.":::
 
 1. In the Event details window, select **Customize**.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-entrypoint-event-details.png" alt-text="Customize button in the event details window":::
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Select-customize-button.png" alt-text="Screenshot of Mesh application with customize button highlighted.":::
 
 ## Customize Event experience
 
