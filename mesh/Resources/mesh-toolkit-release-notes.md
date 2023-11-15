@@ -69,6 +69,52 @@ These are the offerings and packages currently available. There may be slight di
 
 * **Validate Unique ID** added to environment upload. To verify the interactables in your scene that have valid unique ids go to **Mesh Toolkit -> Validate Unique IDs**. (25151)
 
+* Throwable objects have a new setting for **Throw Direction Offset**. This is added to the direction the object is being thrown. (26308)
+
+* `MeshInteractableSetup` will no longer allow objects to be both manipulable and equippable. Objects that were previously defined as both will only be equippable and you may change it back to manipulable if that's not intended. (26632)
+
+### Uploader
+
+* The ContentVersion has been incremented to 1.21.0: Newly published content will only be visible in the recent Mesh build.
+
+* The environment thumbnail will be automatically generated based on travel point when no thumbnail camera is found in the scene.
+
+* Renamed **Mesh World** to **Environment collection** on the uploader user interface and logs.
+
+* Updated the Mesh logo.
+
+* Fixed the **Feedback** window which was previously blank.
+
+* Added tooltips to the **Uploader** dialog which can contain useful information in case of failures.
+
+* Making the **Results** section for **Extension tools** an expandable area.
+
+* Fixed a bug where the Uploader could appear to open in a valid state but also show a dialog claiming the user's license is not valid.
+
+* Fixed a bug where missing TMP settings will not setup default font.
+
+* Fixed `ArgumentNullException` when using **Toggle [NoUpload] suffix** without selecting a game object.
+
+* Added handler for the graph error when the Uploader fails to find the OneDrive folder.
+
+* Failed to upload Thumbnails will now report correctly as an error and fail before trying to publish an asset.
+
+* Fixed an issue which displayed a warning before uploading disabled entries.
+
+### WebSlate
+
+* Fixed this issue: On Quest, if the user resumes from sleep, entering an event will crash if the event has WebSlate. (27705)
+
+### Error messages
+
+* A new `TravelExceptionReason` and localized error message for  `RelayServerUnreachableException`:
+
+    Oops! We failed to connect. Please check your internet connection and try again. If you continue to experience this problem, check with your IT department and mention: the client didn't receive a response from the Relay server within the connection timeout. (29004)
+
+* A new `TravelExceptionReason` and localized error message for `RelayNetworkException`:
+
+    Oops! We failed to connect. Please check your internet connection and try again. (29004)
+
 ## Version 23.13
 
 ### Version list and dates

@@ -17,6 +17,10 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
     *Workaround:*  If you run into an issue where videos display and behave as expected on PC but not on Quest, add the video script to the video player.
 
+### WebView
+
+* On Quest, the system webview is about 2 years behind and causes some websites to show *Unsupported browser* message. We are working with Meta to update Chromium to a more recent version. (28696)
+
 ### WebSlate
 
 * If loading too many WebSlates at once, lower-end computers may not be able to load all WebSlates, only some WebSlates will be loaded. We recommend using the CPA tool to measure rendering time and determine the proper allocations based on your environment's features.
