@@ -1,7 +1,7 @@
 items:
 - name: Welcome to Microsoft Mesh
   href: Overview.md
-- name: Download Mesh apps and tools
+- name: Get Mesh apps and tools
   href: download-mesh-app-tools.md
 - name: Set up and manage Mesh
   href: Setup/toc.yml

@@ -1,5 +1,5 @@
 ---
-title: Manage Mesh on the web
+title: Manage Mesh collections
 description: Manage Mesh on the web and create collections to hold custom environments made in Unity.
 ms.service: mesh
 author: typride
@@ -9,7 +9,7 @@ ms.topic: overview
 keywords: Microsoft Mesh, M365, Mesh on the web, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-# Manage Mesh on the web
+# Manage Mesh collections
 
 Use Mesh on the web to create events, invite co-organizers or attendees, manage environments and templates, and create collections to hold custom environments.
 
