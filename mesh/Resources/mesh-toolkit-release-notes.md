@@ -87,7 +87,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * Added tooltips to the **Uploader** dialog which can contain useful information in case of failures.
 
-*Making the **Results** section for **Extension tools** an expandable area.
+* Making the **Results** section for **Extension tools** an expandable area.
 
 * Fixed a bug where the Uploader could appear to open in a valid state but also show a dialog claiming the user's license is not valid.
 
