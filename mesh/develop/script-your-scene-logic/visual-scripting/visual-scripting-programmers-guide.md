@@ -131,13 +131,13 @@ Things to be aware of:
 
 - Component properties and visual script variables that have simple types are automatically shared across clients in a session. To reduce overhead by limiting the amount of sharing, add a **Local Script Scope** component to the relevant GameObject, and then do one of the following:
 
-    **To share visual script variables but not component properties or the script variables or component properties of child objects**:
+    **To share visual script variables but not component properties or the script variables or component properties of child objects**:  
     In the **Local Script Scope** component, select **Share visual script variables on this Game Object**.
 
     ![Screen shot of the local script scope component with its property named "Share visual script variables on this Game Object" selected.](../../../media/mesh-scripting/visual-scripting/002-share-variables.png)
 
-    **To keep all visual script variables and component properties for the current object and its child objects local**:
-    In the **Local Script Scope** component, don't select **Share visual script variables on this Game Object**.
+    **To keep all visual script variables and component properties for the current object and its child objects local**:  
+    This is achieved by just adding the **Local Script Scope** component and keeping **Share visual script variables on this Game Object** unselected.
 
     ![Screen shot of the local script scope component with its property named "Share visual script variables on this Game Object" left unselected.](../../../media/mesh-scripting/visual-scripting/003-event-not-shared.png)
 
