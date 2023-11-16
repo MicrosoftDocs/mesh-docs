@@ -32,7 +32,7 @@ As explained in the article named [Add the Mesh Toolkit package](../build-your-b
 1. The preview version has a new Mesh logo.
 1. *Mesh Worlds* in the stable version are now called *Mesh Environment Collections* in the preview version.
 
-    ![Screenshots of the current stable and preview versions of the Mesh Uploader with the differences highlighted.](../../../media/sample-mesh-101/506-uploader-stable-preview-comparison.png)
+    ![Screenshots of the current stable and preview versions of the Mesh Uploader with the differences highlighted.](../../media/sample-mesh-101/506-uploader-stable-preview-comparison.png)
 
 For this article, we'll assume you're using the stable build, with **Mesh Worlds** displayed, but keep these differences in mind if you're using the preview version.
 
