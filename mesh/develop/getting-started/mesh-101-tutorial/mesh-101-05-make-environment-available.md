@@ -11,12 +11,23 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365
 
 # Mesh 101 Tutorial Chapter 5: Make your environment available for testing
 
-You've completed adding all the features you need for your Mesh experience using Mesh Interactables, Physics and Scripting. So far, we've been working in a Unity *project*; now you'll turn the *StartingPoint* scene into a Mesh *Environment* and upload it to a Mesh *World* in *Mesh on the Web*. At that point, this version of your Environment is ready for you to test, as you prepare to schedule an *Event*.
+You've completed adding all the features you need for your Mesh experience using Mesh Interactables, Physics and Scripting. So far, we've been working in a Unity *project*; now you'll turn the *StartingPoint* scene into a Mesh *Environment* and upload it to the *Collections* page in *Mesh on the Web*. At that point, this version of your Environment is ready for you to test, as you prepare to schedule an *Event*.
 
 > [!IMPORTANT]
 > A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../../Setup/Content/setup-m365-mesh.md).
 
-## Sign in
+## Mesh Uploader versions
+
+As explained in the article named [Add the Mesh Toolkit package](../../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh Toolkit: the stable build and the preview build. At the time of this writing (mid-November 2023), the preview version of the Uploader contains a few updates that make it slightly different from the stable build:
+
+1. The preview version has a new Mesh logo.
+1. *Mesh Worlds* in the stable version are now called *Mesh Environment Collections* in the preview version.
+
+    ![Screenshots of the current stable and preview versions of the Mesh Uploader with the differences highlighted.](../../../media/sample-mesh-101/506-uploader-stable-preview-comparison.png)
+
+For this tutorial, we'll assume you're using the stable build, with **Mesh Worlds** displayed, but keep these differences in mind if you're using the preview version.
+
+## Sign in to the Mesh Uploader
 
 1. On the menu bar, select **Mesh Toolkit** > **Environments**.
 1. In the **Mesh Environments** window, select **Sign In**.
@@ -37,8 +48,10 @@ You've completed adding all the features you need for your Mesh experience using
 
 3. To ensure you have the latest worlds that are available in Mesh on the Web, select the **Refresh List of Mesh Worlds** button.
 
-4. Select the **Mesh World** drop down, and then select the world you
+4. Select the **Mesh World** drop down, and then select the World you
     want to upload your Environment to if it's not already selected.
+
+    **Note**: In Mesh on the Web, "Worlds" are found on the "Collections" page.
 
 5. In the **Capacity** field, enter the capacity for your Environment.
     The maximum is 16.

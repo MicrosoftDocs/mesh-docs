@@ -4,14 +4,16 @@ description: Learn how to turn your environment into an Asset and then publish i
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 9/12/2023
+ms.date: 11/15/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, environment, build, publish, build and publish, uploader, Mesh uploader, thumbnail
 ---
 
 # Build and publish your environment
 
-After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen World in Mesh on the Web, where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that World can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
+After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen *Collection* (formerly called "World") in Mesh on the Web, where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that World can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
+
+## Configure your project settings
 
 1. On the menu bar, select **Mesh Toolkit** > **Configure Project Settings**.
 
@@ -20,6 +22,21 @@ After you finish adding all your scene content, the next step is to build the sc
 1. Select **Yes** to configure project settings for Mesh.
 
     ![A screenshot of the dialog shown in Unity asking if you are sure you want to configure the project](../../media/make-your-environment-available/image015.png)
+
+## Using the Mesh Uploader
+
+## Mesh Uploader versions
+
+As explained in the article named [Add the Mesh Toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh Toolkit: the stable build and the preview build. At the time of this writing (mid-November 2023), the preview version of the Uploader contains a few updates that make it slightly different from the stable build:
+
+1. The preview version has a new Mesh logo.
+1. *Mesh Worlds* in the stable version are now called *Mesh Environment Collections* in the preview version.
+
+    ![Screenshots of the current stable and preview versions of the Mesh Uploader with the differences highlighted.](../../../media/sample-mesh-101/506-uploader-stable-preview-comparison.png)
+
+For this article, we'll assume you're using the stable build, with **Mesh Worlds** displayed, but keep these differences in mind if you're using the preview version.
+
+## Sign in to the Mesh Uploader
 
 1.  On the menu bar, select **Mesh Toolkit** > **Environments**.
 
