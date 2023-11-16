@@ -49,7 +49,7 @@ We currently do not support this feature.
 
 ### How to download Mesh on Quest 2 via App Lab
 
-Microsoft Mesh (Preview) for Meta Quest devices is available through AppLab.
+Microsoft Mesh for Meta Quest devices is available through AppLab.
 
 If you had previously downloaded the **Napili** app on your Quest 2 device, you should move to the new app available at the link below.
 
@@ -58,7 +58,7 @@ If you had previously downloaded the **Napili** app on your Quest 2 device, you 
 1. On your PC, visit the link below to download Mesh on Quest 2.
 
     > [!div class="nextstepaction"]
-    > [Microsoft Mesh (Preview) on Oculus Quest 2 \| Oculus](https://www.meta.com/experiences/6750166401689690/)
+    > [Microsoft Mesh on Oculus Quest 2 \| Oculus](https://www.meta.com/experiences/6750166401689690/)
 
     If the URL doesn't work, use a new private window in your browser.
 
@@ -67,15 +67,15 @@ If you had previously downloaded the **Napili** app on your Quest 2 device, you 
 
     [Can't find your Meta account associated with your Quest 2 device?](#how-do-i-find-my-meta-id)
 
-    ![Screenshot of the Meta Mesh Preview webpage](media/meta-mesh-preview.png)
+    ![Log in to meta account](media/log-in-meta.png)
 
 3. Once authenticated, select the **Get** button.
 
-    ![Screenshot of the Meta Mesh Preview - Get button](media/meta-mesh-preview-get.png)
+    ![Screenshot of the Meta Mesh page on Meta](media/mesh-meta-quest-get.png)
 
 4. You'll see the button grey out and change from **Get** to **Purchased** which indicates that the app has been acquired.
 
-    ![Log in with your Meta account confirmation page](media/meta-mesh-preview-confirmation.png)
+    ![Log in with your Meta account confirmation page](media/mesh-meta-purchased.png)
 
     >[!Note]
     >You may need to restart your headset to ensure the app loads.
