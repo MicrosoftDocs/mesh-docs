@@ -4,7 +4,7 @@ description: Learn about how to create scripts using Visual Scripting in Mesh.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 10/13/2023
+ms.date: 11/16/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, graphs
 ---
@@ -129,8 +129,20 @@ Things to be aware of:
 
 **Tips**
 
-- Component properties and visual script variables that have simple types are automatically shared across clients in a session.
-- To exclude parts of your scene from this automatic sharing, add a **Local Scene Scope** component. Everything underneath that transform won't be shared automatically.
+- Component properties and visual script variables that have simple types are automatically shared across clients in a session. To reduce overhead by limiting the amount of sharing, add a **Local Script Scope** component to the relevant GameObject, and then do one of the following:
+
+    **To share visual script variables from the object the component is attached to, but not the object's component properties or the script variables or component properties of its child objects**:
+    In the **Local Script Scope** component, select **Share visual script variables on this Game Object**.
+
+    ![Screen shot of the local script scope component with its property named "Share visual script variables on this Game Object" selected.](../../../media/mesh-scripting/visual-scripting/003-share-variables.png)
+
+    **To keep all visual script variables and component properties for the attached object and its child objects local**:
+    In the **Local Script Scope** component, don't select **Share visual script variables on this Game Object**.
+
+    ![Screen shot of the local script scope component with its property named "Share visual script variables on this Game Object" left unselected.](../../../media/mesh-scripting/visual-scripting/004-event-not-shared.png)
+
+    You can see several examples of how the *Local Script Scope* component is used in [Chapter 3 of our Mesh 101 tutorial](../../getting-started/mesh-101-tutorial/mesh-101-03-visual-scripting.md) which focuses on visual scripting.
+
 - To do something in regular time intervals in sync across clients, use the **On Interval** trigger node.
 - To do something in response to certain component properties or visual script variables changing (for example, because this or some other client was setting them in a visual script), use the **On State Changed** trigger
 - There are additional Visual Scripting functions provided by Mesh&#8212;see the _Microsoft_ > _Mesh_ and _Microsoft_ > _Events_ > _Mesh_ sections in the Fuzzy Finder.
