@@ -19,11 +19,11 @@ While the [Mesh Emulator](../../debug-and-optimize-performance/mesh-emulator.md)
 1. Log in with your corporate account.
 1. Click the **Manage event templates** button in the upper right of the Mesh dashboard:
 
-    ![A screen shot of the Mesh app with the Manage event templates button highlighted.](../../media/sample-mesh-101/030-event-templates-button.png)  
+    ![A screen shot of the Mesh app with the Manage event templates button highlighted.](../../media/sample-mesh-101/030-event-templates-button.png)
 
 1. Select your Mesh world and then click **Create event template**:
 
-    ![A screen shot of the Mesh app with the create event template button highlighted.](../../media/sample-mesh-101/031-create-event-template-button.png) 
+    ![A screen shot of the Mesh app with the create event template button highlighted.](../../media/sample-mesh-101/031-create-event-template-button.png)
 
 1. Give your developer template a name and description. In this example we'll name the template **Mesh 101** and describe it as **Template for Mesh 101**. The world location will populate for you. Click **Next**.
 
