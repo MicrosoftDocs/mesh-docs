@@ -27,7 +27,7 @@ After you finish adding all your scene content, the next step is to build the sc
 
 ## Mesh Uploader versions
 
-As explained in the article named [Add the Mesh Toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh Toolkit: the stable build and the preview build. At the time of this writing (mid-November 2023), the preview version of the Uploader contains a few updates that make it slightly different from the stable build:
+As explained in the article named [Add the Mesh Toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh Toolkit: the stable build and the preview build. At the time of this writing (mid-November 2023), the preview build of the Uploader contains a few updates that make it slightly different from the stable build:
 
 1. The preview version has a new Mesh logo.
 1. *Mesh Worlds* in the stable version are now called *Mesh Environment Collections* in the preview version.
