@@ -4,7 +4,7 @@ description: Immersive spaces in Teams release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 11/9/2023
+ms.date: 11/16/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -14,7 +14,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 **Release notes and known issues for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
 >[!Important]
->Immersive spaces in Teams is currently only available in [the new Teams client](https://www.microsoft.com/microsoft-teams/download-app).
+>Immersive spaces in Teams is currently only available in [the new Teams client](https://www.microsoft.com/microsoft-teams/download-app). We are not yet fully rolled out to all customers yet, so if you don't see the Immersive space option in the View picker, you will in the next few days!
 
 ## Version 5.2313.0
 
