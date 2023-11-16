@@ -1,7 +1,7 @@
 ---
 title: Mesh 101 Prepare the project
 description: Learn about adding a few basic features that are necessary for the Mesh 101 tutorial project.
-ms.service: mesh
+ms.service: meshproject
 author: typride
 ms.author: vinnietieto
 ms.date: 10/13/2023
