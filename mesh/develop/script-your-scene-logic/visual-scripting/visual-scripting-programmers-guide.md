@@ -134,12 +134,12 @@ Things to be aware of:
     **To share visual script variables but not component properties or the script variables or component properties of child objects**:
     In the **Local Script Scope** component, select **Share visual script variables on this Game Object**.
 
-    ![Screen shot of the local script scope component with its property named "Share visual script variables on this Game Object" selected.](../../../media/mesh-scripting/visual-scripting/003-share-variables.png)
+    ![Screen shot of the local script scope component with its property named "Share visual script variables on this Game Object" selected.](../../../media/mesh-scripting/visual-scripting/002-share-variables.png)
 
     **To keep all visual script variables and component properties for the current object and its child objects local**:
     In the **Local Script Scope** component, don't select **Share visual script variables on this Game Object**.
 
-    ![Screen shot of the local script scope component with its property named "Share visual script variables on this Game Object" left unselected.](../../../media/mesh-scripting/visual-scripting/004-event-not-shared.png)
+    ![Screen shot of the local script scope component with its property named "Share visual script variables on this Game Object" left unselected.](../../../media/mesh-scripting/visual-scripting/003-event-not-shared.png)
 
     You can see several examples of how the *Local Script Scope* component is used in [Chapter 3 of our Mesh 101 tutorial](../../getting-started/mesh-101-tutorial/mesh-101-03-visual-scripting.md) which focuses on visual scripting.
 
