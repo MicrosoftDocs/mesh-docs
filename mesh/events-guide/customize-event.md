@@ -55,15 +55,15 @@ To learn more about creating an Event template, see how to [Create event templat
 
 1. In the Microsoft Mesh app, select the **Manage event templates** button.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Logo-update-event-templates-button.png" alt-text="Screenshot of Mesh app showing Manage event templates button selected.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Select-manage-event-templates.png" alt-text="Screenshot of Mesh app dashboard showing Manage event templates button highlighted.":::
 
 1. Find your **Event template** draft.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Template-selection.png" alt-text="Screenshot of Mesh app Manage event templates window, draft events highlighted.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Select-template-to-edit.png" alt-text="Screenshot of Mesh app showing template highlighted.":::
 
-1. Select the **Customize event experience** button to start customizing the Event template.
+1. Select the **Customize template** button to start customizing the Event template.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Template-enter-customize-event-experience.png" alt-text="Screenshot of Mesh app, Customize event experience button highlighted.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Select-customize-template.png" alt-text="Screenshot of Mesh app showing Customize template button highlighted.":::
 
 ### Customize a single Event
 
@@ -71,12 +71,11 @@ To learn more about creating an Event template, see how to [Create event templat
 
 1. Look for the event in the **Upcoming** category and select it.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Select-event-details-template.png" alt-text="Screenshot of event in Microsoft Mesh.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Select-event-details-blurred.png" alt-text="Screenshot of Mesh app showing an upcoming event highlighted to indicate that you should select it.":::
 
 1. In the Event details window, select **Customize**.
 
-
-    :::image type="content" source="../media/mesh-event-producer-guide/Select-customize-button.png" alt-text="Screenshot of Mesh application with customize button highlighted.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Select-customize-button.png" alt-text="Screenshot of Mesh app showing Customize button for an event highlighted.":::
 
 ## Customize Event experience
 
