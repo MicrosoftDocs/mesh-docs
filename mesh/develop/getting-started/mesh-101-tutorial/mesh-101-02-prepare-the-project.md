@@ -1,17 +1,17 @@
 ---
 title: Mesh 101 Prepare the project
 description: Learn about adding a few basic features that are necessary for the Mesh 101 tutorial project.
-ms.service: mesh
+ms.service: meshproject
 author: typride
 ms.author: vinnietieto
-ms.date: 11/06/2023
+ms.date: 10/13/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
 
 # Mesh 101 Tutorial Chapter 2: Prepare the project
 
-### Scenes in the project
+## Scenes in the project
 
 1. Open the **Mesh101** project in Unity. If you have more than
     one version of Unity installed, be sure to open the project with `Unity 2022.3.7f1` which is required for this tutorial.
@@ -108,7 +108,7 @@ learn about Mesh Interactables and Mesh Physics.
 For this project, we want our avatar to be able to walk around only on
 the floors inside the *Sphere Terrace* objects and the floor of a
 platform that's attached to one of the wind turbine generators. For
-these areas to be walkable, they must be on the *NavMesh* layer. Let's
+these areas to be teleportable, they must be on the *NavMesh* layer. Let's
 add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
 
 1. In the **Hierarchy**, expand the **Chapter 3** GameObject.
@@ -126,36 +126,32 @@ add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
 You don't have to add the other walkable GameObjects to the NavMesh
 layer---we've already done it for you.
 
-### Add the PlaymodeSetup prefab
+### Add the Mesh Emulator
 
-Adding the PlaymodeSetup prefab will allow you to run the project in
-*Play mode*. This gives you a preview of what the content will look and
-feel like when it runs in the *Mesh app*. A key feature of Playmode is
-the ability to run multiple clients within the same process; this allows
-you to easily get a first impression of a multi-user scenario.
+Let's add the *Mesh Emulator* (or, simply, the "Emulator") to your project. This will give you an
+approximate preview of what the content will look and feel like when it runs in the Mesh app every time you enter Play mode. A key feature of the Mesh Emulator is the ability to run multiple clients within the same process; this allows you to easily get a first impression of a multi-user scenario.
 
-1. Right-click inside the **Hierarchy** and then, in the context menu, select **Mesh Toolkit** > **PlaymodeSetup**.
+**To add the Mesh Emulator**:
+1. Press the Play button. This dialog appears:
 
+    ![A screenshot of the Mesh Emulator Setup missing dialog.](../../../media/sample-mesh-101/499-emulator-setup-missing-dialog.png)
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/400-playmode-setup.png)
+1. Select the first button, **Add working MeshEmulatorSetup prefab.** The **MeshEmulatorSetup [NoUpload]** prefab appears in the **Hierarchy**.
 
-    Note that this adds the **PlaymodeSetup [NoUpload]** prefab to the
-    scene.
+    ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/500-mesh-emulator-setup-added.png)
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../../../media/sample-mesh-101/453-playmodesetup-added.png)
-
-    This prefab provides you with a highly stylized avatar controller that has a camera attached, so now we can play the project and have a look around.
+    This prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around.
 
     ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../../media/sample-mesh-101/016-playmode-v2.png)
 
-2. Select the Unity Editor Play button.
+1. Select the Unity Editor Play button.
 
-3. In the **Game** window, note that you now have a view from the avatar's position. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Play mode.
+1. In the **Game** window, note that you now have a view from the avatar's position. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Play mode.
 
 ### Check the scale of your GameObjects
 
 The tutorial project uses default Unity scale values: 1 unit = 1 meter.
-The *PlaymodeSetup* avatar is the same height as an average human. When
+The *MeshEmulatorSetup* avatar is the same height as an average human. When
 you're creating your own Environment, you can compare its size to any
 custom `GameObject` you add to your project to ensure that those objects
 are the size you want.

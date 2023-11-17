@@ -5,12 +5,16 @@ items:
     href: download-mesh-samples.md    
   - name: Toybox
     href: toybox.md
+    displayName: samples
   - name: Physics Effects Gallery
     href: physics-effects-gallery.md
+    displayName: samples
   - name: Science Building
     href: science-building.md
+    displayName: samples
   - name: Dart Room
     href: dart-room.md
+    displayName: samples
 
 
 
