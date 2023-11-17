@@ -27,15 +27,15 @@ For purposes of this document, there are two categories of users:
 
 ### Version list and dates
 
-These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see. We are working to create better transparency and standardization of versions of offerings and packages to make upgrading easier.
+These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
 
 >[!Note]
->The version number for Mesh (PC or Quest) **must** match the Mesh Toolkit Authoring package version you're using otherwise you may get errors or unexplained behavior. Please hold off on upgrading the Mesh Toolkit Authoring package until the Mesh client version for your target platform (PC or Quest) is available.
+>The version number for your environment project's Mesh Toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh Toolkit package, which releases only after the matching Mesh app is available in stores.
 
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
-| Mesh Toolkit Package      |   5.2313.0     | 2023-10-23  |
-| Mesh (PC/Quest)   |  5.2313.0       |  2023-10-23  |
+| Mesh Toolkit package      |   5.2313.0     | 2023-10-23  |
+| Mesh app (PC/Quest)   |  5.2313.0       |  2023-10-23  |
 
 ### What's new
 

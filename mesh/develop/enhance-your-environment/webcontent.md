@@ -262,7 +262,7 @@ If you already know which domains you will need, you can manually add them to th
 
 ### Known issues
 
-- When working with WebSlate in the Unity editor, the editor needs to be restarted when updating the WebSlate or Mesh Toolkit packages through the Unity package manager.
+- When working with WebSlate in the Unity editor, the editor needs to be restarted when updating the Mesh Toolkit package through the Unity package manager.
 
 - The "Current URL" field of a WebSlate currently cannot be updated during Play mode.
 
