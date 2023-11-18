@@ -28,7 +28,7 @@ Using the scenario above as an example, here's what you would do:
 
 As explained in the article named [Add the Mesh Toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh Toolkit: the stable build and the preview build. At the time of this writing (mid-November 2023), the preview build of the Uploader contains a few updates that make it slightly different from the stable build:
 
-1. The preview version has a new Mesh logo.
+1. The preview version has a new Mesh logo. **NOTE**: In some case, you might see the new logo in the stable build.
 1. *Mesh Worlds* in the stable version are now called *Mesh Environment Collections* in the preview version.
 
     ![Screenshots of the current stable and preview versions of the Mesh Uploader with the differences highlighted.](../../../media/sample-mesh-101/506-uploader-stable-preview-comparison.png)
