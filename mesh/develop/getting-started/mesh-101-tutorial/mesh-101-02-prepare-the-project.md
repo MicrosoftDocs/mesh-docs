@@ -159,7 +159,7 @@ are the size you want.
 ### Add the Mesh Thumbnail Camera
 
 Adding the `Mesh Thumbnail Camera` provides a thumbnail image that will be
-added to your Environment's listing in the Mesh Portal and its
+added to your Environment's listing in Mesh on the web and its
 selection button in the Mesh app. This comes in handy when you're
 selecting Environments in either place because it gives you a visual
 reminder of what the Environment looks like.
