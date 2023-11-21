@@ -4,14 +4,16 @@ description: Learn how to publish multiple environments from one Unity project u
 ms.service: mesh
 author: typride
 ms.author: iankudinova
-ms.date: 10/26/2023
+ms.date: 11/15/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, environment, Unity, build, publish, build and publish, uploader, Mesh uploader, filter, multiple
 ---
 
 # Publish multiple Environments from one Unity project
 
-There might be times when you can benefit by having a single Unity project that can generate multiple Experiences. Here's one example: Let's say you want to build a series of gaming Experiences that'll reuse a lot of the same assets. You can create a single Unity project that contains all your assets, then create each individual game room as a Scene, and then use the Mesh Uploader to turn the Scenes into Experiences and upload them to a World in the Mesh Portal.
+## Overview
+
+There might be times when you can benefit by having a single Unity project that can generate multiple Experiences. Here's one example: Let's say you want to build a series of gaming Experiences that'll reuse a lot of the same assets. You can create a single Unity project that contains all your assets, then create each individual game room as a Scene, and then use the Mesh Uploader to turn the Scenes into Experiences and upload them to a World in Mesh on the web.
 
 Using the scenario above as an example, here's what you would do:
 
@@ -22,6 +24,19 @@ Using the scenario above as an example, here's what you would do:
     BilliardsRoom  
     ChessRoom  
  
+## Mesh Uploader versions
+
+As explained in the article named [Add the Mesh Toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh Toolkit: the stable build and the preview build. At the time of this writing (mid-November 2023), the preview build of the Uploader contains a few updates that make it slightly different from the stable build:
+
+1. The preview version has a new Mesh logo. **NOTE**: In some case, you might see the new logo in the stable build.
+1. *Mesh Worlds* in the stable version are now called *Mesh Environment Collections* in the preview version.
+
+    ![Screenshots of the current stable and preview versions of the Mesh Uploader with the differences highlighted.](../../../media/sample-mesh-101/506-uploader-stable-preview-comparison.png)
+
+For this article, we'll assume you're using the stable build, with **Mesh Worlds** displayed, but keep these differences in mind if you're using the preview version.
+
+## Create your Environments
+
 1. Follow the instructions detailed in the [Build and publish your Environment](./build-and-publish-your-environment.md) article to open the Mesh Uploader and then create your first Asset, named "DartsRoom":
 
     ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the DartsRoom Environment.](../../media/make-your-environment-available/011-create-dartsroom-asset.png)

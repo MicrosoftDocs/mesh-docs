@@ -35,12 +35,12 @@ to easily get a first impression of a multi-user scenario.
 
     Do one of the following:
 
-    **To ensure that the Emulator runs every time you click Play**:
+    **To ensure that the Emulator runs every time you click Play**:  
     Select the first button, **Add working MeshEmulatorSetup prefab.** The **MeshEmulatorSetup [NoUpload]** prefab appears in the **Hierarchy**.
 
     ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../media/debug-and-optimize/004-mesh-emulator-in-hierarchy.png)
 
-    **To avoid running the Emulator and prevent the Emulator Setup missing dialog from appearing again when you click Play**:
+    **To avoid running the Emulator and prevent the Emulator Setup missing dialog from appearing again when you click Play**:  
     Select the second button, **Add dummy NoMeshEmulatorSetup game object**. As the name suggests, this doesn't actually do anything, but the Toolkit will find "EmulatorSetup" in its name and will refrain from showing you the **Emulator Setup missing** dialog again.
 
 If you initially decide you don't want to use the Emulator, but change your mind later on, delete the **NoMeshEmulatorSetup [NoUpload]** dialog from the **Hierarchy**. The next time you click Play, the Toolkit will display the **Emulator Setup missing** dialog again, and you can click the button to add the Emulator.
@@ -59,7 +59,7 @@ When working in a large scene, you may find it valuable to teleport the player t
 
 This feature lets you run multiple clients within the same process and
 show them side-by-side within the same window. Mesh Toolkit itself implements a very minimal
-emulated ____________________ component that's sufficient to communicate
+emulated network component that's sufficient to communicate
 the player position between the clients, allowing the different players
 to see each other as heavily stylized avatars:
 
