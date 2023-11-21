@@ -6,7 +6,7 @@ ms.author: vinnietieto
 ms.date: 11/06/2023
 ms.topic: Guide
 ms.service: mesh
-keywords: Microsoft Mesh, getting started, Mesh on the Web, experiences, environments
+keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environments
 ---
 
 # Mesh Development Overview
