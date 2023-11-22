@@ -137,7 +137,7 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
    ![img](../../../media/mesh-scripting/getting-started/UploaderCreateUIProjectSettings.png)
 
-1. In the **Mesh Environments** window, **Update Environment** tab, select your environment and scene to upload. If the scene has a Mesh Cloud Scripting component, the deployment configurations will be shown along with the selected scene. Select the **Edit Settings** to add or change the configs associated with the current environment and scene. Select **Save Settings** to save and update the settings and you should see the updated configs, as illustrated below.
+1. In the **Mesh Environments** window, **Update Environment** tab, select your environment and scene to upload. If the scene has a Mesh Cloud Scripting component, the deployment configurations will be shown along with the selected scene. Press **Edit Settings** to add or change the configs associated with the current environment and scene. Press **Save Settings** to save and update the settings and you should see the updated configs, as illustrated below.
 
    ![img](../../../media/mesh-scripting/getting-started/001-update-environment-tab.png)
    ![img](../../../media/mesh-scripting/getting-started/UploaderUpdateUIProjectSettings.png)
