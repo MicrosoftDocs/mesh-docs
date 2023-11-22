@@ -19,28 +19,28 @@ While the [Mesh Emulator](../debug-and-optimize-performance/mesh-emulator.md) is
 1. Log in with your corporate account.
 1. Click the **Manage event templates** button in the upper right of the Mesh dashboard:
 
-    ![___](../../media/sample-mesh-101/483-mesh-events-with-callout.png) 
+    ![A screen shot of the Mesh app with the Manage event templates button highlighted.](../../media/sample-mesh-101/030-event-templates-button.png) 
 
 1. Select your Mesh world and then click **Create event template**:
 
-    ![___](../../media/sample-mesh-101/485-create-event-template.png) 
+    ![A screen shot of the Mesh app with the create event template button highlighted.](../../media/sample-mesh-101/031-create-event-template-button.png) 
 
 1. Give your developer template a name and description. In this example we'll name the template **Mesh 101** and describe it as **Template for Mesh 101**. The world location will populate for you. Click **Next**.
 
-    ![___](../../media/sample-mesh-101/486-template-details.png) 
- 
-1. Make sure the tab **From *(your world)*** is selected at the top. You'll then see your published Wind Turbine Tutorial environment. Select this template and then click **Save draft**: 
+    ![A screen shot of the Mesh app with the name and description fields filled in.](../../media/sample-mesh-101/032-template-name-and-description.png) 
 
-    ![___](../../media/sample-mesh-101/488-thumbnail-highlighted.png)
- 
+1. Make sure the tab **From *(name of your world)*** is selected at the top. You'll then see your published Wind Turbine Tutorial environment. Select this template and then click **Save draft**: 
+
+    ![A screen shot of the Mesh app with the save draft button for your template highlighted.](../../media/sample-mesh-101/033-save-draft-button.png)
+
 1. You should get a confirmation that your developer template was created. Click **OK**.
 
-    ![___](../../media/sample-mesh-101/489-success-message.png)
- 
+    ![A screen shot of the Mesh app with the sucess template created dialog displayed.](../../media/sample-mesh-101/034-success-dialog.png)
+
 1. Click the **Customize** button (the door icon). This will start a new customization session for your developer template to let you see your environment in Mesh.
  
-    ![___](../../media/sample-mesh-101/491-mesh101-button-highlighted.png)
- 
+    ![A screen shot of the Mesh app with the customize button for your newly created template highlighted.](../../media/sample-mesh-101/035-customize-button.png)
+
 1. You can now test the appearance and performance of your environment in the Mesh app on your desktop PC or Quest headset. You can use the Environment editor and Control panel tools to place artifacts and see how your environment works when it's customized, or simply explore your environment to ensure it works as expected.
 
     ![___](../../media/sample-mesh-101/493-info-dialog-buttons-highlighted.png)
