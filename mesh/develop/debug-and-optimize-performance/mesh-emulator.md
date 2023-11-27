@@ -6,7 +6,7 @@ author: typride
 ms.author: vinnietieto
 ms.date: 11/27/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, testing, troubleshooting, Mesh emulator, emulator, troubleshooting, debugging, Mesh Emulation Mode
+keywords: Microsoft Mesh, testing, troubleshooting, Mesh emulator, emulator, troubleshooting, debugging, Mesh Emulation Mode, emulation
 ---
 
 # Mesh Emulation Mode testing in Unity
