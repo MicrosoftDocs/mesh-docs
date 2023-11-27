@@ -130,6 +130,7 @@ To enable interaction in the WebSlate, you have to set up a few things.
 
     ![A picture containing sky Description automatically generated](../../media/webview-developer-guide/image016.png)
 
+
 1. Click the Play button, and then double-click to interact with the Web page displayed in the WebSlate:
 
     ![Graphical user interface, application Description automatically generated](../../media/webview-developer-guide/image017.png)
