@@ -4,7 +4,7 @@ description: Learn about adding a few basic features that are necessary for the 
 ms.service: meshproject
 author: typride
 ms.author: vinnietieto
-ms.date: 10/13/2023
+ms.date: 11/27/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
@@ -126,12 +126,11 @@ add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
 You don't have to add the other walkable GameObjects to the NavMesh
 layer---we've already done it for you.
 
-### Add the Mesh Emulator
+### Add Mesh Emulation Mode capability
 
-Let's add the *Mesh Emulator* (or, simply, the "Emulator") to your project. This will give you an
-approximate preview of what the content will look and feel like when it runs in the Mesh app every time you enter Play mode. A key feature of the Mesh Emulator is the ability to run multiple clients within the same process; this allows you to easily get a first impression of a multi-user scenario.
+Let's add Mesh Emulation Mode capability to your project. In this mode, when you press the Unity editor Play button, you get an approximate preview of what the content will look and feel like when it runs in the Mesh app. A key feature of Mesh Emulation Mode is the ability to run multiple clients within the same process; this allows you to easily get a first impression of a multi-user scenario.
 
-**To add the Mesh Emulator**:
+**To add Mesh Emulation Mode capability**:  
 1. Press the Play button. This dialog appears:
 
     ![A screenshot of the Mesh Emulator Setup missing dialog.](../../../media/sample-mesh-101/499-emulator-setup-missing-dialog.png)

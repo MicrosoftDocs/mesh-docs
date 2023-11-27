@@ -39,7 +39,7 @@ Envision using WebSlates in your custom environments for:
 
 - **Content Performance Analyzer tool integration:** Measure the average time it takes for URP to render WebSlates in a frame and find content loading issues.
 
-- **Testing with the Mesh Emulator:** Interact with your content as a user would, directly from the Unity editor.  
+- **Testing in Mesh Emulation Mode:** Interact with your content as a user would, directly from the Unity editor.  
 
 - **Manually authenticate in-experience:** Access secure content from within the experience by logging into your account and viewing content at runtime.
 
@@ -91,21 +91,21 @@ Drag and drop the prefab into your scene, then add a URL to display on the WebSl
 
 ![Add the WebSlateFramed prefab](../../media/webview-developer-guide/WebSlate-Drag-Drop.png)
 
-#### Preview WebSlate using the Mesh Emulator
+#### Preview WebSlate in Mesh Emulation Mode
 
-To view a URL displayed in your WebSlate more quickly, you can use the Mesh Emulator. Aside from using Emulator, the only other way to see your WebSlate is to upload it using the Mesh Toolkit Uploader and view it in a Mesh experience.
+To view a URL displayed in your WebSlate more quickly, you can use Mesh Emulation Mode. Aside from testing in this mode, the only other way to see your WebSlate is to upload it using the Mesh Toolkit Uploader and view it in a Mesh experience.
 
-To add the Emulator to your project, follow the instructions in the [Mesh Emulator article](../debug-and-optimize-performance/mesh-emulator.md).
+To add Mesh Emulation Mode to your project, follow the instructions in the [Mesh Emulator article](../debug-and-optimize-performance/mesh-emulator.md).
 
 Press the Unity editor Play button to view your Web page:
 
 ![Showcase both webslate prefabs in the Mesh Emulator.](../../media/webview-developer-guide/image011.png)
 
-### Enable WebSlate interaction for the Mesh Emulator
+### Enable WebSlate interaction for Mesh Emulation Mode
 
 To enable interaction in the WebSlate, you have to set up a few things.
 
-1. Add the [Mesh Emulator](../debug-and-optimize-performance/mesh-emulator.md) to your scene.
+1. Add the [Mesh Emulator](../debug-and-optimize-performance/mesh-emulator.md) to your scene to enable Mesh Emulation Mode.
 
 1. Create a new **Plane** GameObject. This will be your floor. Ensure the Game Object is positioned at the origin (0,0,0):
     
@@ -119,7 +119,7 @@ To enable interaction in the WebSlate, you have to set up a few things.
 
     ![Graphical user interface, application Description automatically generated](../../media/webview-developer-guide/image017.png)
 
-Great job! You added a custom WebSlate to your Unity scene and tested the interaction using the Mesh Emulator.
+Great job! You added a custom WebSlate to your Unity scene and tested the interaction in Mesh Emulation Mode.
 
 Now you're ready to upload the Environment to Mesh and share your creation with the world!
 

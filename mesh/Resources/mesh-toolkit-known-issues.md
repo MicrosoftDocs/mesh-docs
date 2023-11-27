@@ -39,7 +39,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 * The Mesh **Interactable Body | Is Selected** incorrectly behaves as if it's a local property even though it's networked in the Mesh client. (26792)
 
-* Mesh's injected framework nodes (for example, **Track Object State** and **Sanitize Data**) persist in second-level subgraphs after running a scene in the Mesh Emulator. (28966)
+* Mesh's injected framework nodes (for example, **Track Object State** and **Sanitize Data**) persist in second-level subgraphs after running a scene in Mesh Emulation Mode. (28966)
 
 * When the **On State Changed** event node is used to observe a shared property or variable, it should be triggered immediately after the property or variable is changed locally. Currently, for shared properties or variables, it's triggered only after the local change had been sent to and received back from the server, incurring network delay even on the sending client. (28968)
 

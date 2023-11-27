@@ -1,15 +1,15 @@
 ---
-title: Mesh Emulator testing in Unity
-description: Test your Mesh environment using the Mesh Emulator in Unity.
+title: Mesh Emulation Mode testing in Unity
+description: Test your Mesh environment using Mesh Emulation Mode in Unity.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 11/27/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, testing, troubleshooting, Mesh emulator, emulator, troubleshooting, debugging
+keywords: Microsoft Mesh, testing, troubleshooting, Mesh emulator, emulator, troubleshooting, debugging, Mesh Emulation Mode
 ---
 
-# Mesh Emulator testing in Unity
+# Mesh Emulation Mode testing in Unity
 
 If you add the *Mesh Emulator* prefab (or, simply, the "Emulator") to your Unity project, you gain the ability to run the project in *Mesh Emulator Mode*. In this mode, when you press the Unity editor Play button, you get an approximate preview of what the content will look and feel like when it
 runs in the Mesh app. This greatly speeds up the iteration cycle during
