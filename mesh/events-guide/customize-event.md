@@ -160,7 +160,7 @@ Once you've added an artifact, you can maneuver it around the spaces and select 
 
 1. Configure the controls for the artifact. For example, you can add the URL for your video:
 
-    :::image type="content" source="../media/mesh-event-producer-guide/environment-editor-add-artifacts.gif" alt-text="Add artifacts and update url":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Configure-controls-artifact-larger.gif" alt-text="Add artifacts and update url":::
 
     > [!NOTE]
     > The only video type that is supported is **.MP4** inside the video artifact.
