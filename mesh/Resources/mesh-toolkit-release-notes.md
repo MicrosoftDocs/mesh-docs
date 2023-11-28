@@ -4,7 +4,7 @@ description: Mesh Toolkit release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 11/2/2023
+ms.date: 11/14/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 ---

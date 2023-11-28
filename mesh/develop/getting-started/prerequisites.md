@@ -19,7 +19,7 @@ A Teams Premium license is required for using the Mesh application for custom im
 
 You must use Unity version 2022.3.7f1.
 
-![A screenshot of the required version of Unity.](../../media/get-started-developing-mesh/image002.jpg)
+![A screenshot of the required version of Unity.](../../media/get-started-developing-mesh/image002.png)
 
 [Get help installing Unity Template](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 

@@ -31,7 +31,7 @@ New interactions for [equippable objects](/mesh/develop/enhance-your-environment
 
 * Left mouse click to throw the bean bag.
 
-#### For Marshmallow Roasing on PC (In Teams)
+#### For Marshmallow Roasting on PC (In Teams)
 
 * Left mouse click on the marshmallow stick to pick it up (same behavior as before)
 

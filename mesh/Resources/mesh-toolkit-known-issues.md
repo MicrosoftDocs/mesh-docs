@@ -4,7 +4,7 @@ description: Mesh Toolkit active known issues
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 11/9/2023
+ms.date: 11/13/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 ---
@@ -30,7 +30,6 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 * The embedded videos show as black on Quest 2. (24096)
 
     *Workaround:*  If you run into an issue where videos display and behave as expected on PC but not on Quest, add the video script to the video player.
-
 ### Scripting
 
 * The **On State Changed** event node stops triggering completely and indefinitely after it had been disabled for the first time. (26333)
@@ -58,6 +57,10 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 * On Quest devices: to pick up an [equippable object](/mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactables#equippable-objects), you need to point the controller ray at the object and click the Grip button. If you simply bring your hand close to the object and click the Grip button, nothing will happen.  This feels very unnatural for interaction with objects that are near.  When you're very close to an object, it's hard to point your controller ray at it to interact. (24187)
 
 * Missing `MeshUniqueIdManager`` causes serialization failures. (25151)
+=======
+### WebView
+
+* On Quest, the system webview is about 2 years behind and causes some websites show *Unsupported browser* message. We are working with Meta to update Chromium to a more recent version. (28696)
 
 ### WebSlate
 
