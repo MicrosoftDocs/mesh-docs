@@ -2,8 +2,8 @@
 title: Performance guidelines for Mesh
 description: Performance guidelines for development for Mesh using Unity.
 author: typride
-ms.author: tmilligan
-ms.date: 10/2/2023
+ms.author: vinnietieto
+ms.date: 11/13/2023
 ms.topic: Guide
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, performance, content performance analzyer, performance profile, stats

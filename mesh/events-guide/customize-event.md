@@ -34,12 +34,12 @@ Saving is not available once event is joined. Plan to customize and save your ev
 > **Who should customize an event?**
 >
 > Anyone who has been invited as a **Co-organizer** can customize an event. Do this with
-> caution, knowing that any edits you make will affect the Event or Event Template
+> caution, knowing that any edits you make will affect the Event or Template
 > that event participants will join in.
 
 ## Customization flow
 
-1. Open the Mesh app customize your **Event** or **Event Template**.
+1. Open the Mesh app customize your **Event** or **Template**.
 
 1. **Add content** using the **Environment Editor**.
 
@@ -47,21 +47,24 @@ Saving is not available once event is joined. Plan to customize and save your ev
 
 1. **Save changes** in the **Event Customization** window.
 
-## Customize your Event Template or Event
+## Customize your Template or Event
 
-### Customize an Event template
+### Customize a Template
 
-To learn more about creating an Event template, see how to [Create event template](create-template.md).
+To learn more about creating a Template, see how to [Create Template](create-template.md).
 
-1. In the Microsoft Mesh app, select the **Manage event templates** button.
+1. In the Microsoft Mesh app, select the **Manage Templates** button.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Select-manage-event-templates.png" alt-text="Screenshot of Mesh app dashboard showing Manage event templates button highlighted.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Template-dashboard-creation-button.png" alt-text="Screenshot of Template creation button in ":::
 
-1. Find your **Event template** draft.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Select-template-to-edit.png" alt-text="Screenshot of Mesh app showing template highlighted.":::
+1. Find your **Template** draft.
 
-1. Select the **Customize template** button to start customizing the Event template.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Template-selection.png" alt-text="Screenshot of Mesh app Manage Templates window, draft events highlighted.":::
+
+1. Select the **Customize event experience** button to start customizing the Template.
+
 
     :::image type="content" source="../media/mesh-event-producer-guide/Select-customize-template.png" alt-text="Screenshot of Mesh app showing Customize template button highlighted.":::
 
