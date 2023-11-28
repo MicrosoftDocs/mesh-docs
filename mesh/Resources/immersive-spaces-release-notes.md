@@ -13,9 +13,6 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes and known issues for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
->[!Important]
->Immersive spaces in Teams is currently only available in [the new Teams client](https://www.microsoft.com/microsoft-teams/download-app). We are not yet fully rolled out to all customers yet, so if you don't see the Immersive space option in the View picker, you will in the next few days!
-
 ## Version 5.2313.0
 
 ### What's new
@@ -34,7 +31,7 @@ New interactions for [equippable objects](/mesh/develop/enhance-your-environment
 
 * Left mouse click to throw the bean bag.
 
-#### For Marshmallow Roasing on PC (In Teams)
+#### For Marshmallow Roasting on PC (In Teams)
 
 * Left mouse click on the marshmallow stick to pick it up (same behavior as before)
 

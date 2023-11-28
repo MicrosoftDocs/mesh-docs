@@ -4,7 +4,7 @@ description: Test your Mesh environment using the Mesh Emulator in Unity.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/9/2023
+ms.date: 11/13/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, testing, troubleshooting, Mesh emulator, emulator, troubleshooting, debugging
 ---
@@ -35,12 +35,12 @@ to easily get a first impression of a multi-user scenario.
 
     Do one of the following:
 
-    **To ensure that the Emulator runs every time you click Play**:
+    **To ensure that the Emulator runs every time you click Play**:  
     Select the first button, **Add working MeshEmulatorSetup prefab.** The **MeshEmulatorSetup [NoUpload]** prefab appears in the **Hierarchy**.
 
     ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../media/debug-and-optimize/004-mesh-emulator-in-hierarchy.png)
 
-    **To avoid running the Emulator and prevent the Emulator Setup missing dialog from appearing again when you click Play**:
+    **To avoid running the Emulator and prevent the Emulator Setup missing dialog from appearing again when you click Play**:  
     Select the second button, **Add dummy NoMeshEmulatorSetup game object**. As the name suggests, this doesn't actually do anything, but the Toolkit will find "EmulatorSetup" in its name and will refrain from showing you the **Emulator Setup missing** dialog again.
 
 If you initially decide you don't want to use the Emulator, but change your mind later on, delete the **NoMeshEmulatorSetup [NoUpload]** dialog from the **Hierarchy**. The next time you click Play, the Toolkit will display the **Emulator Setup missing** dialog again, and you can click the button to add the Emulator.
@@ -58,9 +58,7 @@ When working in a large scene, you may find it valuable to teleport the player t
 ## Emulator Split Screen
 
 This feature lets you run multiple clients within the same process and
-show them side-by-side within the same window. Mesh Toolkit itself implements a very minimal
-emulated ____________________ component that's sufficient to communicate
-the player position between the clients, allowing the different players
+show them side-by-side within the same window. Mesh Toolkit itself implements a very minimal emulated network component that's sufficient to communicate the player position between the clients, allowing the different players
 to see each other as heavily stylized avatars:
 
 ![A screenshot of multiple clients displayed side-by-side in the Emulator.](../../media/debug-and-optimize/image043.png)
@@ -88,6 +86,6 @@ Now you can quickly test your Unity Scene without going through the
 build and upload process each time you make an iteration.
 
  > [!IMPORTANT]
- > If you're using the [Visual Profiler](../debug-and-optimize-performance/performance-guidelines.md#visual-profiler) in your scene, make sure the **Initial Screen Count** setting in the **Mesh Emulator Setup** component is zero. If it's "1" or higher, you won't see the Visual Profiler.
+ > If you're using the [Visual Profiler](performance-guidelines.md#performance-profiler) in your scene, make sure the **Initial Screen Count** setting in the **Mesh Emulator Setup** component is zero. If it's "1" or higher, you won't see the Visual Profiler.
 
  ![A screen shot of the Mesh Emulator Setup component with Initial Screen Count set to zero.](../../media/debug-and-optimize/008-screen-count-zero.png)
