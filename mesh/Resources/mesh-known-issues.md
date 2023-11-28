@@ -62,6 +62,9 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 * On the Dashboard, the scroll bar length could be too long for the content being displayed. (19501)
 * When downloading the Mesh app from Microsoft Store, some users will get a blank screen in the web browser. To search for the most current data on the server, press the **CTRL + F5** keys to clear your browser cache.  The latest version of the Microsoft store webpage will then load. (14921)
+=======
+
+* The Megaphone indicator is currently broken - it doesn't tell the users who's currently using the megaphone feature. (29315)
 
 ### Events
 
