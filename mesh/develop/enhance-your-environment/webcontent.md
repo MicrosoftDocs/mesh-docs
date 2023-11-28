@@ -27,7 +27,7 @@ You can use WebSlates for:
 
 - **Specify a default URL:** Choose your location, then drag-and-drop the prefab, and then add a URL. Repeat if you want multiple WebSlates in your scene.
 
-- **Input & audio built-in:** End user Web navigation, interaction with apps, and viewing videos become available in Mesh.
+- **Input & audio built-in:** End user web navigation, interaction with apps, and viewing videos become available in Mesh.
 
 - **Secure navigation:** Lock redirect URLs to prevent malicious redirects and unintended hyperlink navigations.
 
@@ -47,15 +47,15 @@ If you have a Unity project set up to [create Mesh Environments](../build-your-b
 
 In Mesh, WebSlate loads an interactive page through a provided URL. The URL given to it in the Environment will be the same one loaded in Mesh. In the Mesh Toolkit, the WebSlate prefab contains a URL parameter that developers can specify to control the content displayed in their Mesh Environment. 
 
-- When loaded on the Mesh App for PC and Quest, Web pages loaded by a WebSlate are interactable through mouse, keyboard, and Quest XR controller input.
+- When loaded on the Mesh App for PC and Quest, webpages loaded by a WebSlate are interactable through mouse, keyboard, and Quest XR controller input.
 
-- The size and shape of the WebSlate will match that of the quad GameObject it's place on. Typically, this is the quad baked inside of the WebSlate prefab.
+- The size and shape of the WebSlate will match that of the quad GameObject it's placed on. Typically, this is the quad baked inside of the WebSlate prefab.
 
 - Multiple WebSlates can be added to a scene. The number of users in your Mesh Environment doesn't affect WebSlate performance; WebSlate resources are initialized locally on the user's machine.
 
 - WebSlates can be configured with visual or cloud scripting to add interactive behaviors and synchronization across users.
 
-- WebSlate can display Web pages and it supports interaction but doesn't function as a browser and doesn't support bookmark, history or travel back-forth. 
+- WebSlate can display webpages and it supports interaction but doesn't function as a browser and doesn't support bookmark, history or travel back-forth. 
 
 - You can preview your WebSlate in your Unity project before uploading your scene to Mesh by pressing Play.
 
@@ -63,13 +63,13 @@ In Mesh, WebSlate loads an interactive page through a provided URL. The URL give
 
 WebSlate depends on the *Unity.InputSystem* and *Unity.XR.Interaction.Toolkit* Unity packages, located in the Mesh Toolkit.
 
-### Add a WebSlate prefab to your Unity project
+## Add a WebSlate prefab to your Unity project
 
 There are two flavors of WebSlate prefabs available in the Mesh Toolkit that you can add to your scene. If you prefer a clean WebSlate with no extra components, add the WebSlate prefab. If you'd like a WebSlate contained in a stylized frame with extra features, add the *WebSlateFramed* prefab.
 
 ![Image showcasing two webslate prefabs.](../../media/webview-developer-guide/image025.png)
 
-**Add the WebSlate prefab from a menu**
+### Add the WebSlate prefab from a menu
 
 **To add either of the prefabs to your scene**:
 1. Right-click inside the **Hierarchy**, and then in the context menu, do one of the following:
@@ -88,7 +88,7 @@ There are two flavors of WebSlate prefabs available in the Mesh Toolkit that you
 
 ![Add Mesh Toolkit to Hierarchy in Unity.](../../media/webview-developer-guide/image007.png)
 
-**Search for and add the WebSlate prefab**
+### Search for and add the WebSlate prefab
 
 You can also search for and add a WebSlate prefab.
 
@@ -104,7 +104,13 @@ You can also search for and add a WebSlate prefab.
 
     ![A screnshot of the WebSlate component with a custom URL added.](../../media/enhance-your-environment/web_content/003-webslate-url.png)
 
-#### Preview WebSlate using the Mesh Emulator
+## Ensure that your WebSlate is readable
+
+It's important to ensure that all the attendees in a Mesh experience can read all the content on a WebSlate comfortably. It's a good idea to leave some space in front of a WebSlate so that attendees can move closer to it for better view. If your experience contains seats, view the WebSlate from each seat to ensure that an attendee sitting in that seat can read the text on the WebSlate. If you have control over the content that will appear on a WebSlate, experiment with various font sizes for the text to determine the optimal size. In the example experience below, the "Microsoft Teams" text in the middle of the WebSlate is more than large enough for comfortable viewing, but the much smaller text in the corners is difficult to read. In this type of scenario, you wouldn't have control over the text in the streaming video so you should consider moving the seats closer.
+
+![A view inside a Mesh experience that contains a WebSlate with large and small text.](../../media/enhance-your-environment/web_content/003-webslate-url.png)
+
+## Preview WebSlate using the Mesh Emulator
 
 To view a URL displayed in your WebSlate more quickly, you can use the Mesh Emulator. Aside from using Emulator, the only other way to see your WebSlate is to upload it using the Mesh Toolkit Uploader and view it in a Mesh experience.
 
