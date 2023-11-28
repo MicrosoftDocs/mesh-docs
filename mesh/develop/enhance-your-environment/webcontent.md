@@ -84,9 +84,9 @@ There are two flavors of WebSlate prefabs available in the Mesh Toolkit that you
 
     **Tip**: You can also click the "+" button at the top left of the Hierarchy window to see the same menu.
 
-![Image of adding the Mesh Toolkit using the context menu.](../../media/webview-developer-guide/image006.png)
+    ![Image of adding the Mesh Toolkit using the context menu.](../../media/webview-developer-guide/image006.png)
 
-![Add Mesh Toolkit to Hierarchy in Unity.](../../media/webview-developer-guide/image007.png)
+    ![Add Mesh Toolkit to Hierarchy in Unity.](../../media/webview-developer-guide/image007.png)
 
 ### Search for and add the WebSlate prefab
 
@@ -186,7 +186,7 @@ For further guidance on the WebSlate node in Mesh Apps, see the [Visual scriptin
 
 - A WebSlate loads a default URL. You should replace this URL with one that you prefer for each WebSlate in use. The brightness parameter is set to 1.0 (100% of the browser's brightness).
 
-![Unity usage of WebSlate.](../../media/webview-developer-guide/image004.png)
+    ![Unity usage of WebSlate.](../../media/webview-developer-guide/image004.png)
 
 ## Performance
 
