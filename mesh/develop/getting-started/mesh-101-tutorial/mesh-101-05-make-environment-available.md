@@ -30,7 +30,7 @@ Mesh *environment* and upload it to a Mesh *world* in the Mesh Portal. At that p
 1. Make sure you're in the **Create** **Environment** tab, and then, in
     the **Internal Name** field, type "Wind Turbine Tutorial."
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/037-upload-create.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/037-upload-create-new-logo.png)
 
 2. In the **Description** field, type "An interactive Mesh experience
     that teaches you about wind turbines."
@@ -46,7 +46,7 @@ Mesh *environment* and upload it to a Mesh *world* in the Mesh Portal. At that p
 5. In the **Capacity** field, enter the capacity for your Environment.
     The maximum is 16.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/038-upload-capacity.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/038-upload-capacity-logo.png)
 
 6. Select **Create Asset** to create the Environment that you'll be
     uploading to the Mesh Portal.
@@ -61,7 +61,7 @@ Mesh *environment* and upload it to a Mesh *world* in the Mesh Portal. At that p
 You should now be in the **Update Environment** tab of the **Mesh
 Environments** window.
 
-![A screenshot of a computer Description ](../../../media/sample-mesh-101/040-upload-update.png)
+![A screenshot of a computer Description ](../../../media/sample-mesh-101/040-upload-update-logo.png)
 
 > [!NOTE]
 > In the **Environment Configurations** section, a new Environment configuration has been created that displays the name you  added in the **Create Environment** tab: *Wind Turbine Tutorial*. If you see any other Environment configurations, close them.
@@ -82,7 +82,7 @@ building for single and multiple platforms, see our article titled [Build for si
     field, and then, in the **Select SceneAsset** dialog, select
     **StartingPoint**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/456-select-scene.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/456-select-scene-logo.png)
 
 In the **Build for Platforms** section, you choose which platforms to
 build for. Note that when a button background is gray, the button is
@@ -104,10 +104,9 @@ Select the **Build & Publish** button.
 
 - If the build and upload process fails, this is confirmed in the **Build and Upload** **Results** dialog.
 
-## View your Environment in the Mesh Portal
+## View your Environment in Mesh on the web
 
-If you navigate to the **Environments** page for your World in the [Mesh 
-Portal](https://portal.mesh.microsoft.com), you'll see that your Environment has been saved there. 
+If you navigate to the **Environments** page for your Environment collection in the [Mesh on the web](https://portal.mesh.microsoft.com), you'll see that your Environment has been saved there.
 
 ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/458-environment-in-mesh-portal.png)
 
@@ -116,8 +115,7 @@ Your saved custom Environment is now ready for you to test in the Mesh app on yo
 ## Summary
 
 In this chapter, you learned how to create an Environment based on your
-scene and then build it and publish it to your World in the Mesh 
-Portal.
+scene and then build it and publish it to your World in the Mesh Portal.
 
 ## Next steps
 

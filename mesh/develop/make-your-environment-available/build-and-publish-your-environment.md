@@ -42,7 +42,7 @@ After you finish adding all your scene content, the next step is to build the sc
 1. In the **Capacity** field, enter the capacity for your Environment.
     The maximum is 16.
 
-    ![A screenshot of the Mesh Uploader window in the Create Environment tab](../../media/make-your-environment-available/002-uploader-create.png)
+    ![A screenshot of the Mesh Uploader window in the Create Environment tab](../../media/make-your-environment-available/002-uploader-create-logo.png)
 
 1.  Select **Create Asset** to create the Environment that you'll be
     uploading.
@@ -55,7 +55,7 @@ After you finish adding all your scene content, the next step is to build the sc
     You should now be in the **Update Environment** tab of the **Mesh
     Environments** window.
 
-    ![A screenshort of the Mesh Uploader window on the Update Environment tab](../../media/make-your-environment-available/003-uploader-update.png)
+    ![A screenshort of the Mesh Uploader window on the Update Environment tab](../../media/make-your-environment-available/003-uploader-update-logo.png)
 
     Note that in the **Environment Configurations** section, you already
     have an Environment configuration created which displays the name you
@@ -68,7 +68,7 @@ After you finish adding all your scene content, the next step is to build the sc
     project that you want as the Environment. In this example, we're
     using the Mesh sample project *Dartroom*, so our chosen scene will be the scene also named *DartRoom*.
 
-    ![A screenshot of the Mesh Uploader window with the select scene popup opened](../../media/make-your-environment-available/004-select-scene.png)
+    ![A screenshot of the Mesh Uploader window with the select scene popup opened](../../media/make-your-environment-available/004-select-scene-logo.png)
 
 1. In the **Build for Platforms** section, you choose which platforms
     to build for. Note that when a button background is gray, the button
@@ -160,7 +160,7 @@ To add the thumbnail camera to the scene and set its view:
 
 1. On the **Update Environment** tab make sure you have the correct Environment and scene selected. Then check the **Custom Thumbnails** field and choose the **Generate from Thumbnail Camera** option.
 
-    ![A screenshot of Mesh Uploader in the Update Environment tab highlighting the Custom Thumbnails field with the Generate from Thumbnails camera option selected](../../media/make-your-environment-available/009-select-custom-thumbnail.png)
+    ![A screenshot of Mesh Uploader in the Update Environment tab highlighting the Custom Thumbnails field with the Generate from Thumbnails camera option selected](../../media/make-your-environment-available/009-select-custom-thumbnail-logo.png)
 
 1. Once you are ready to publish your environment, click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
 
@@ -174,7 +174,7 @@ If you prefer to have static images as thumbnails you can choose to select the i
 
 1. On the **Update Environment** tab make sure you have the correct Environment and Scene selected. Then check the **Custom Thumbnails** field and choose the **Take from folder** option. The default folder is shown and you can either add your images to this folder or choose a different folder.
 
-    ![A screenshot of Mesh Uploader in the Update Environment tab highlighting the Custom Thumbnails field with the Take from folder option selected and highlighting the button to choose a different folder](../../media/make-your-environment-available/010-thumbnail-from-folder.png)
+    ![A screenshot of Mesh Uploader in the Update Environment tab highlighting the Custom Thumbnails field with the Take from folder option selected and highlighting the button to choose a different folder](../../media/make-your-environment-available/010-thumbnail-from-folder-logo.png)
 
     **Note**: To choose a new folder for your thumbnails click on the button highlighted in yellow.
 

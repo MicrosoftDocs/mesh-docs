@@ -138,15 +138,15 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
 1. Add your deployment configurations such as Azure subscription ID to the environment from the MeshUploader UI. You could do this when you create an environment: setup the configs in the **Mesh Environments** window, **Create Environment** tab, **Setup Mesh Script Configuration** block shown in the following images. Alternatively, you could set up and update the setting for an existing environment in the **Update Environment** steps.
 
-   ![img](../../../media/mesh-scripting/getting-started/UploaderCreateUIProjectSettings.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderCreateUIProjectSettings-logo.png)
 
 1. In the **Mesh Environments** window, **Update Environment** tab, select your environment and scene to upload. If the scene has a Mesh Cloud Scripting component, the deployment configurations will be shown along with the selected scene. Select the **Modify Deployment Configs** tickbox to add or change the configs associated with the current environment and scene. Unselect the tickbox to save and update the settings and you should see the updated configs, as illustrated below.
 
-   ![img](../../../media/mesh-scripting/getting-started/UploaderUpdateUIProjectSettings.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderUpdateUIProjectSettings-logo.png)
 
 1. In the **Mesh Environments** window, on the **Update Environment** tab, select **Build & Publish**. To learn more about the Mesh Environments window, see how to [build and publish your environment](../../make-your-environment-available/build-and-publish-your-environment.md)
 
-   ![img](../../../media/mesh-scripting/getting-started/001-update-environment-tab.png)
+   ![img](../../../media/mesh-scripting/getting-started/001-update-environment-tab-logo.png)
 
 1. As the Uploader builds and publishes your Environment, the Mesh Cloud Scripting infrastructure will be provisioned in Azure and published.
 
@@ -157,7 +157,7 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 > [!NOTE]
 > It's expected that there will be multiple entries for *Cloud Scripting Metadata* in the results window.
 
-   ![img](../../../media/mesh-scripting/getting-started/UploaderIntegrationUploaderResults.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderIntegrationUploaderResults-logo.png)
 
 ### Connect to the Cloud Scripting Service from Unity
 
