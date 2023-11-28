@@ -4,9 +4,9 @@ description: Learn how to display Web content in Mesh Environments.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/22/2023
+ms.date: 11/28/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, Web content, Web, webslate
+keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming video, whiteboard
 ---
 
 # Display and interact with web content
@@ -71,13 +71,13 @@ There are two flavors of WebSlate prefabs available in the Mesh Toolkit that you
 
 ### Add the WebSlate prefab from a menu
 
-**To add either of the prefabs to your scene**:
+**To add either of the prefabs to your scene**:  
 1. Right-click inside the **Hierarchy**, and then in the context menu, do one of the following:
 
-    **To add the clean WebSlate with no extra components**;
+    **To add the clean WebSlate with no extra components**:  
     Select **Mesh Toolkit** > **WebSlate**.
     
-    **To the WebSlate with the stylized frame and extra features**:
+    **To the WebSlate with the stylized frame and extra features**:  
     Select **Mesh Toolkit** > **WebSlateFramed**.
 
 1. Add a URL to the WebSlate to display content.
@@ -114,10 +114,10 @@ It's important to ensure that all the attendees in a Mesh experience can read al
 
 To view a URL displayed in your WebSlate more quickly, you can use the Mesh Emulator. Aside from using Emulator, the only other way to see your WebSlate is to upload it using the Mesh Toolkit Uploader and view it in a Mesh experience.
 
-**To add the Emulator to your project**:
+**To add the Emulator to your project**:  
 Follow the instructions in the [Mesh Emulator article](../debug-and-optimize-performance/mesh-emulator.md).
 
-**To view your Web page in the WebSlate**:
+**To view your Web page in the WebSlate**:  
 Press the Unity editor Play button.
 
 ![Showcase both webslate prefabs in the Mesh Emulator.](../../media/webview-developer-guide/image011.png)
@@ -128,11 +128,11 @@ To enable interaction in the WebSlate, you have to set up a few things.
 
 1. Add the [Mesh Emulator](../debug-and-optimize-performance/mesh-emulator.md) to your scene.
 
-1. Create a new **Plane** GameObject. This will be your floor. Ensure the Game Object is positioned at the origin (0,0,0):
+1. Create a new **Plane** GameObject. This will be your floor. Ensure the GameObject is positioned at the origin (0,0,0):
     
     ![A screenshot of the Plane menu item.](../../media/webview-developer-guide/image015.png)
 
-1. Position the WebSlate so it sits in front of the MeshEmulatorSetup character:
+1. Position the WebSlate so it sits in front of the *MeshEmulatorSetup* character:
 
     ![A screenshot of the Mesh Emulator Setup character placed in front of and facing two WebSlates.](../../media/webview-developer-guide/image016.png)
 
@@ -168,7 +168,7 @@ To enable visual scripting using WebSlate, you must set up a few things.
 
     ![Screenshot of WebSlate from the assembly menu in Unity.](../../media/webview-developer-guide/image020.png)
 
-    After incorporating the WebSlate visual scripting node into your project, you can utilize it just like any other node in your visual script graph. Here's an example of a script graph that loads a new URL in WebSlate when the state of a graph variable changes.
+    After incorporating the WebSlate visual scripting node into your project, you can utilize it just like any other node in your script graph. Here's an example of a script graph that loads a new URL in WebSlate when the state of a graph variable changes.
 
     ![A screenshot of an example script graph that loads a new URL in a WebSlate.](../../media/webview-developer-guide/image021.png)
 
@@ -182,7 +182,7 @@ For further guidance on the WebSlate node in Mesh Apps, see the [Visual scriptin
 
 ## General Tips
 
-- You can place a WebSlate on Game Objects other than a Quad by adding *WebSlate.cs* as a script component directly to your 3D object of choice. Note that this might result in visual texture stretching, inversion, and/or rotation.
+- You can place a WebSlate on GameObjects other than a Quad by adding *WebSlate.cs* as a script component directly to your 3D object of choice. Note that this might result in visual texture stretching, inversion, and/or rotation.
 
 - A WebSlate loads a default URL. You should replace this URL with one that you prefer for each WebSlate in use. The brightness parameter is set to 1.0 (100% of the browser's brightness).
 
@@ -190,7 +190,7 @@ For further guidance on the WebSlate node in Mesh Apps, see the [Visual scriptin
 
 ## Performance
 
-- Since a WebSlate is a loaded Web page, it's important to consider performance implications:
+- Since a WebSlate is a loaded web page, it's important to consider performance implications:
 
   - Scenes are typically performant at 60fps with up to 10 WebSlates. You may observe frame rate and general performance degradation in proportion to the number of WebSlates placed in a scene, regardless of content.
 
@@ -216,7 +216,7 @@ For further guidance on the WebSlate node in Mesh Apps, see the [Visual scriptin
 
 - WebSlates are restricted to navigation within the initial domain or the specified URL's and server's redirections.
 
-- Navigation within WebSlate is exclusively limited to HTTPS.
+- Navigation within a WebSlate is exclusively limited to HTTPS.
 
 - Device access to webcam, microphone, and geolocation are blocked.
 
