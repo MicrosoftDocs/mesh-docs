@@ -11,16 +11,16 @@ keywords: Microsoft Mesh, testing, troubleshooting, Mesh emulator, emulator, tro
 
 # Mesh Emulation Mode testing in Unity
 
-If you add the *Mesh Emulator* prefab (or, simply, the "Emulator") to your Unity project, you gain the ability to run the project in *Mesh Emulator Mode*. In this mode, when you press the Unity editor Play button, you get an approximate preview of what the content will look and feel like when it
+If you add the *Mesh Emulator* prefab (or, simply, the "Emulator") to your Unity project, you gain the ability to run the project in *Mesh Emulation Mode*. In this mode, when you press the Unity editor Play button, you get an approximate preview of what the content will look and feel like when it
 runs in the Mesh app. This greatly speeds up the iteration cycle during
 content development and allows developers of advanced interactive
 content to deeply debug the logic with all the powerful tools that Unity
 offers.
 
-The look and feel in Mesh Emulator Mode is similar but not identical to the look and feel in
+The look and feel in Mesh Emulation Mode is similar but not identical to the look and feel in
 the Mesh app. We're continuously working to reduce the differences where
 possible without sacrificing the lightweight environment necessary for
-quick iteration. A key feature of Mesh Emulator Mode is the ability to run
+quick iteration. A key feature of Mesh Emulation Mode is the ability to run
 multiple clients within the same process; this allows a single developer
 to easily get a first impression of a multi-user scenario.
 
@@ -60,7 +60,7 @@ This feature lets you run multiple clients within the same process and
 show them side-by-side within the same window. Mesh Toolkit itself implements a very minimal emulated network component that's sufficient to communicate the player position between the clients, allowing the different players
 to see each other as heavily stylized avatars:
 
-![A screenshot of multiple clients displayed side-by-side in the Emulator.](../../media/debug-and-optimize/image043.png)
+![A screenshot of multiple clients displayed side-by-side in Mesh Emulation Mode.](../../media/debug-and-optimize/image043.png)
 
 This is sufficient for previewing static content. When developing
 interactive content, [visual scripting](../script-your-scene-logic/visual-scripting/visual-scripting-overview.md), [cloud scripting](../script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md) and/or [WebSlate](../enhance-your-environment/webcontent.md), keep in mind that those features each contain their own networking mechanisms
