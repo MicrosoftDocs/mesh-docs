@@ -4,7 +4,7 @@ description: Get started with Cloud Scripting for Mesh.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 8/28/2023
+ms.date: 11/27/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
@@ -43,9 +43,7 @@ The following instructions show how to create a simple environment with a cube t
 
 ### Modify the scene
 
-1. On the menu bar, select **GameObject** > **Mesh Toolkit** > **PlaymodeSetup** to add simulation support.
-1. On the menu bar, select **GameObject** > **3D Object** > **Plane** to create a floor.
-1. In the **Hierarchy**, select the **Plane** object and, in the **Inspector**, change the **Layer** to **NavMesh**.
+1. [Set up Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md).
 1. On the menu bar, select **GameObject** > **3D object** > **Cube**.
 1. In the **Hierarchy**, drag the cube to the **Mesh Cloud Scripting** object to make the cube a child of that object.
 

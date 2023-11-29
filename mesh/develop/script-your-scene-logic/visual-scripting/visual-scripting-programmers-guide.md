@@ -32,7 +32,7 @@ This is how it looks in Mesh:
 
 ## Testing your scripts
 
-Before you upload your scene to Mesh, you can develop and test visual scripts, even with multiple clients in split screen mode, in Mesh Playmode.
+Before you upload your scene to Mesh, you can develop and test visual scripts, even with multiple clients in split screen mode, using [Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md).
 
 ## Visual script diagnostics in the Editor
 
