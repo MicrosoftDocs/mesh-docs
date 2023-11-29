@@ -57,9 +57,9 @@ As you explore our other sample projects, you'll find various instances of Mesh 
 
 1. Open the sample project in Unity.
 
-### Run the Project using the Mesh Emulator
+### Run the Project in Mesh Emulation Mode
 
-The project is already configured to use the [Mesh Emulator](../../debug-and-optimize-performance/mesh-emulator.md).
+The project is already configured to run in [Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md).
 
 1. Open the project in Unity.
 1. Navigate to the **Assets > Scenes** folder, and then load the **DartRoom** scene.
@@ -67,7 +67,7 @@ The project is already configured to use the [Mesh Emulator](../../debug-and-opt
 
 ### Run Split Screen with multiple players
 
-By default, the Mesh Emulator runs with a single player. To add a second player with emulated networking:
+By default, Mesh Emulation Mode runs with a single player. To add a second player with emulated networking:
 
 1. In the **Hierarchy**, select **MeshEmulatorSetup [NoUpload]**.
 1. In the **Inspector**, navigate to the **Mesh Emulator Setup** component, then increase the Inital Screen Count to 2.
