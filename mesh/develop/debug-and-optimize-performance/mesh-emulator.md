@@ -4,7 +4,7 @@ description: Test your Mesh environment using Mesh Emulation Mode in Unity.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/27/2023
+ms.date: 11/28/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, testing, troubleshooting, Mesh emulator, emulator, troubleshooting, debugging, Mesh Emulation Mode, emulation
 ---
@@ -57,9 +57,7 @@ When working in a large scene, you may find it valuable to teleport the player t
 ## Mesh Emulation Mode Split Screen
 
 This feature lets you run multiple clients within the same process and
-show them side-by-side within the same window. Mesh Toolkit itself implements a very minimal
-emulated network component that's sufficient to communicate
-the player position between the clients, allowing the different players
+show them side-by-side within the same window. Mesh Toolkit itself implements a very minimal emulated network component that's sufficient to communicate the player position between the clients, allowing the different players
 to see each other as heavily stylized avatars:
 
 ![A screenshot of multiple clients displayed side-by-side in the Emulator.](../../media/debug-and-optimize/image043.png)
@@ -87,6 +85,6 @@ Now you can quickly test your Unity Scene without going through the
 build and upload process each time you make an iteration.
 
  > [!IMPORTANT]
- > If you're using the [Visual Profiler](../debug-and-optimize-performance/performance-guidelines.md#visual-profiler) in your scene, make sure the **Initial Screen Count** setting in the **Mesh Emulator Setup** component is zero. If it's "1" or higher, you won't see the Visual Profiler.
+ > If you're using the [Visual Profiler](performance-guidelines.md#performance-profiler) in your scene, make sure the **Initial Screen Count** setting in the **Mesh Emulator Setup** component is zero. If it's "1" or higher, you won't see the Visual Profiler.
 
  ![A screen shot of the Mesh Emulator Setup component with Initial Screen Count set to zero.](../../media/debug-and-optimize/008-screen-count-zero.png)
