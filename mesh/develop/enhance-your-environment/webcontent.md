@@ -4,7 +4,7 @@ description: Learn how to display Web content in Mesh Environments.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/28/2023
+ms.date: 11/30/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming video, whiteboard
 ---
@@ -255,13 +255,11 @@ If you already know which domains you'll need, you can manually add them to the 
 
 ### General limitations
 
-- WebSlates are currently supported in the Mesh application on PC Standalone and Quest devices. In the Unity editor on Windows, WebSlates are only available to preview.
+- WebSlates are currently supported in the Mesh application on PC Standalone and Quest devices. WebSlates are only available to preview in the Unity Editor on Windows.
 
-- Automatic scaling and scale adjustments for content with different resolution requirements isn't currently available.
+- WebSlates in Editor preview are missing a few input capabilities (double-click, dragging).
 
-- WebSlates in the editor preview are missing a few input capabilities, such as double-click and dragging.
-
-- Low legibility for viewing from a distance on Quest.
+- When viewing from a distance on Quest, legibility is low.
 
 - Audio isn't spatially localized.
 
@@ -269,15 +267,7 @@ If you already know which domains you'll need, you can manually add them to the 
 
 ### Known issues
 
-- When working with WebSlate in the Unity editor, the editor needs to be restarted when updating the WebSlate or Mesh Toolkit packages through the Unity Package Manager.
-
-- The "Current URL" field of a WebSlate can't be updated during Play mode.
-
-- If your WebSlate GameObject displays "internal shader error", navigate to the **Inspector** view of your WebSlate and ensure that the selected shader is set to "UnlitWebSlate".
-
-- Visual scripting has WebSlate support. If your visual scripting graph shows references to the legacy “WebView” type, manually update this reference to “WebSlate”.
-
-- When interacting with a WebSlate, Mesh may capture keyboard input, causing unintended interactions with the Mesh app.
+See the [WebSlate sections in the Mesh Toolkit known issues article](../../Resources/mesh-toolkit-known-issues.md).
 
 ## Feedback for Web content in Mesh
 
