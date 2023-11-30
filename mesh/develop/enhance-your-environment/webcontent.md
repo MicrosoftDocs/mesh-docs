@@ -4,7 +4,7 @@ description: Learn how to display Web content in Mesh Environments.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/28/2023
+ms.date: 11/30/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming video, whiteboard
 ---
@@ -267,11 +267,7 @@ If you already know which domains you'll need, you can manually add them to the 
 
 ### Known issues
 
-See the Mesh Toolkit known issues article:
-
-[WebSlate issues for version 23.13](../../Resources/mesh-toolkit-known-issues.md#webslate-in-2313).
-
-[WebSlate issues for version 23.14](../../Resources/mesh-toolkit-known-issues.md#webslate-in-2314).
+See the [WebSlate sections in the Mesh Toolkit known issues article](../../Resources/mesh-toolkit-known-issues.md).
 
 ## Feedback for Web content in Mesh
 
