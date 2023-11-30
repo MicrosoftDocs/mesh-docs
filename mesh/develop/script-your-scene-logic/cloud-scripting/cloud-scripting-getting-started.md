@@ -35,11 +35,11 @@ The following instructions show how to create a simple environment with a cube t
 
    Note that a game object named **Mesh Cloud Scripting** appears in the **Hierarchy** and is selected. This also creates a new [ASP.NET Core](https://learn.microsoft.com/aspnet/core/razor-pages/web-sdk?view=aspnetcore-6.0) project under `Assets/.MeshCloudScripting/MyFirstCloudScripting`.
 
-   ![img](../../../media/mesh-scripting/getting-started/003-cloud-scripting-files.png)
+   ![Screenshot of a folder structure in Windows showing scripting project](../../../media/mesh-scripting/getting-started/003-cloud-scripting-files.png)
 
 1. You can use the **Open application folder** button to navigate to the project folder.
 
-   ![img](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
+   ![Screenshot of Open application folder button in Unity.](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
 
 ### Modify the scene
 
@@ -51,7 +51,7 @@ The following instructions show how to create a simple environment with a cube t
 
 1. With the cube selected, in the **Inspector**, click **Add Component** and then select **MeshInteractableSetup**.
 
-   ![img](../../../media/mesh-scripting/getting-started/SimpleInteractionUnityAddTouchSensor.png)
+   ![Screenshot of Unity showin ghte Inspector window opened.](../../../media/mesh-scripting/getting-started/SimpleInteractionUnityAddTouchSensor.png)
 
 1. In the **Transform** component, set the Cube's **Position** values to 0, 1, 3.
 1. Save the scene.

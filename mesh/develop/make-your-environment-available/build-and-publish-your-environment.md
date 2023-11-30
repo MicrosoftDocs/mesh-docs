@@ -126,7 +126,7 @@ For this article, we'll assume you're using the stable build, with **Mesh Worlds
     > [!IMPORTANT]
     > Every time you update the Environment, it can affect future events that reference this Environment.
     >
-    > ![Warning that environment will be updated ](../../media/make-your-environment-available-for-events/uploader_warning_about_updating_environment.png)
+> :::image type="content" source="../../media/make-your-environment-available/uploader_warning_about_updating_environment.png" alt-text="Screenshot of warning about updating your environment.":::
 
 After your environment was uploaded, you will be able to see for what platforms it has been built.
 

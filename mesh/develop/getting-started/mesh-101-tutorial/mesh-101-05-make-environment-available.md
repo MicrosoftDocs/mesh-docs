@@ -20,10 +20,7 @@ You've completed adding all the features you need for your Mesh experience using
 
 As explained in the article named [Add the Mesh Toolkit package](../../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh Toolkit: the stable build and the preview build. At the time of this writing (mid-November 2023), the preview build of the Uploader contains a few updates that make it slightly different from the stable build:
 
-1. The preview version has a new Mesh logo. **NOTE**: In some cases, you might also see the new logo in the stable build.
-1. *Mesh Worlds* in the stable version are now called *Mesh Environment Collections* in the preview version.
-
-    ![Screenshots of the current stable and preview versions of the Mesh Uploader with the differences highlighted.](../../../media/sample-mesh-101/506-uploader-stable-preview-comparison.png)
+- *Mesh Worlds* in the stable version are now called *Mesh Environment Collections* in the preview version.
 
 For this tutorial, we'll assume you're using the stable build, with **Mesh Worlds** displayed, but keep these differences in mind if you're using the preview version.
 
@@ -38,7 +35,7 @@ For this tutorial, we'll assume you're using the stable build, with **Mesh World
 1. Make sure you're in the **Create Environment** tab, and then, in
     the **Internal Name** field, type "Wind Turbine Tutorial."
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/037-upload-create-new-logo.png)
+    ![A screenshot of the Internal name field filled out in the Mesh uploader.](../../../media/sample-mesh-101/037-upload-create-new-logo.png)
 
 2. In the **Description** field, type "An interactive Mesh experience
     that teaches you about wind turbines."
@@ -56,7 +53,7 @@ For this tutorial, we'll assume you're using the stable build, with **Mesh World
 5. In the **Capacity** field, enter the capacity for your Environment.
     The maximum is 16.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/038-upload-capacity-logo.png)
+    ![A screenshot of a Mesh uploader showing the Create environment tab filled out.](../../../media/sample-mesh-101/038-upload-capacity-logo.png)
 
 6. Select **Create Asset** to create the Environment that you'll be
     uploading to Mesh on the web.
@@ -64,14 +61,14 @@ For this tutorial, we'll assume you're using the stable build, with **Mesh World
 7. You'll receive a confirmation dialogue as shown below. Select
     **Close**.
 
-    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/039-create-results.png)
+    ![A screenshot a window in Unity showing that the environment was uploaded properly.](../../../media/sample-mesh-101/039-create-results.png)
 
 ## Build and publish your environment
 
 You should now be in the **Update Environment** tab of the **Mesh
 Environments** window.
 
-![A screenshot of a computer Description ](../../../media/sample-mesh-101/040-upload-update-logo.png)
+![A screenshot of the Mesh uploader showing the wind turbine tutorial environment selected.](../../../media/sample-mesh-101/040-upload-update-logo.png)
 
 > [!NOTE]
 > In the **Environment Configurations** section, a new Environment configuration has been created that displays the name you  added in the **Create Environment** tab: *Wind Turbine Tutorial*. If you see any other Environment configurations, close them.
@@ -92,25 +89,25 @@ building for single and multiple platforms, see our article titled [Build for si
     field, and then, in the **Select SceneAsset** dialog, select
     **StartingPoint**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/456-select-scene-logo.png)
+    ![A screenshot of StartingPoint highlighted in the Mesh uploader](../../../media/sample-mesh-101/456-select-scene-logo.png)
 
 In the **Build for Platforms** section, you choose which platforms to
 build for. Note that when a button background is gray, the button is
 "on"; when the background is black, the button is "off." We're building
 for both PC and Android, so make sure that both buttons are "on."
 
-![A screen shot of a computer Description automatically generated with low confidence](../../../media/sample-mesh-101/image096.jpg)
+![A screen shot of build platforms shown in the Mesh uploader, solely highlighted.](../../../media/sample-mesh-101/image096.jpg)
 
 ### Build and publish
 
 Select the **Build & Publish** button.
 
-![A screen shot of a computer Description ](../../../media/sample-mesh-101/041-build-and-publish.png)
+![A screen shot of build button shown in the Mesh Uploader.](../../../media/sample-mesh-101/041-build-and-publish.png)
 
 - If the Environment builds and uploads successfully, the **Build and
     Upload Results** dialog appears and confirms the results.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/457-build-and-upload-results.png)
+    ![A screenshot of build and publish results post upload of an environment](../../../media/sample-mesh-101/457-build-and-upload-results.png)
 
 - If the build and upload process fails, this is confirmed in the **Build and Upload** **Results** dialog.
 
