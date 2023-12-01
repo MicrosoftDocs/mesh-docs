@@ -16,7 +16,7 @@ keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding, 
 If a Mesh Cloud Scripting stage during the Uploader process failed and the error shown is "Check the logs for more information", make sure Info logs are being shown in the Unity console.Currently some errors are shown as info logs. This will be improved in a future release.
 
 ### Mesh Cloud Scripting Package Installation Failed
-1. If you encounter errors related to package installation or dotnet tool installation (`The tool package could not be restored` or `Verify your unity package integrity`), verify that you don't have non-valid package sources in your global nuget config (under `c:\users\UserName\AppData\Roaming\nuget\nuget.config` or default nuget config directory which is configured on the machine)
+1. If you encounter errors related to package installation or dotnet tool installation (`The tool package could not be restored` or `Verify your unity package integrity`), verify that you don't have non-valid package sources in your global nuget config (under `C:\Users\<UserName>\AppData\Roaming\nuget\nuget.config` or default nuget config directory which is configured on the machine)
 1. If you encounter `package is already installed` error when starting Play Mode, exiting Play Mode and starting it again should mitigate that
 1. Verify access rights on directory `Assets\.MeshCloudScripting\.Packages`
 
