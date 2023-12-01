@@ -2,8 +2,8 @@
 title: Performance guidelines for Mesh
 description: Performance guidelines for development for Mesh using Unity.
 author: typride
-ms.author: tmilligan
-ms.date: 10/2/2023
+ms.author: vinnietieto
+ms.date: 11/13/2023
 ms.topic: Guide
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, performance, content performance analzyer, performance profile, stats
@@ -78,7 +78,7 @@ Text on the Performance Profiler will turn red when a metric does not meet Mesh'
 
 You should also keep an eye on the bottom memory bar to insure that memory usage isn't rapidly changing or approaching the application's memory limit.
 
-To view the Performance Profiler in the Unity editor ensure you have the Mesh Emulator Setup component in your scene. Make sure the **Initial Screen Count** setting is zero. If it's one or higher, you won't be able to toggle on the Performance Profiler when playing.
+To view the Performance Profiler in the Unity editor ensure you have the [Mesh Emulator Setup component](../debug-and-optimize-performance/mesh-emulator.md) in your scene. Make sure the **Initial Screen Count** setting is zero. If it's one or higher, you won't be able to toggle on the Performance Profiler when playing.
 
  ![A screen shot of the Mesh Emulator Setup dialog](../../media/debug-and-optimize/001-playmode-count-one.png)
 

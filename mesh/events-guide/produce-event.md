@@ -100,7 +100,7 @@ Use broadcast anytime you wish to be seen or heard by your whole audience in all
 
 #### Share
 
-Share your screen or a specific window on your PC to all participants. Screenshare requires the Screenshare artifact that is [added when you customize your Event or Event Template](customize-event.md#add-content-with-environment-editor).
+Share your screen or a specific window on your PC to all participants. Screenshare requires the Screenshare artifact that is [added when you customize your Event or Template](customize-event.md#add-content-with-environment-editor).
 
 **Enabled:** Host screen or window will be shown to all participants.
 
@@ -140,7 +140,7 @@ At the top of the panel, you have *two tabs* to choose from:
 
 ## Control panel
 
-The Control panel is used to control the content or artifacts that were added when customizing an Event or Event template. To learn more, see how to [Customize your event](customize-event.md).
+The Control panel is used to control the content or artifacts that were added when customizing an Event or Template. To learn more, see how to [Customize your event](customize-event.md).
 
 ### Control artifacts in the Control panel
 
@@ -148,7 +148,7 @@ The Control panel is used to control the content or artifacts that were added wh
 
     :::image type="content" source="../media/mesh-event-producer-guide/Event-production-control-panel-button.png" alt-text="Screenshot of Mesh app showing Control panel button and panel":::
 
-In the Control panel, you'll see all the artifacts and content that you added to your Event or Event Template.
+In the Control panel, you'll see all the artifacts and content that you added to your Event or Template.
 
 1. In the Control panel, select an artifact and interact with its controls as desired during your event.
 
