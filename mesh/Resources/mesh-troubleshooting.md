@@ -104,8 +104,6 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 1. Find the **Microsoft Mesh (Preview)** app in the App library.
 
-    ![A screenshot of Microsoft Mesh (Preview) in the App library](media/meta-app-library-mesh.png)
-
 1. Select to **Install** then **Open** the app by selecting it again.
 
 1. Complete the device login flow using the link below on your computer (*this requires a mobile phone for verification*): https://login.microsoftonline.com/common/oauth2/deviceauth
