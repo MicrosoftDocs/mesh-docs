@@ -55,8 +55,7 @@ To learn more about creating a Template, see how to [Create Template](create-tem
 
 1. In the Microsoft Mesh app, select the **Manage Templates** button.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Template-dashboard-creation-button.png" alt-text="Screenshot of Template creation button in ":::
-
+    :::image type="content" source="../media/mesh-event-producer-guide/Select-manage-event-templates.png" alt-text="Screenshot of Mesh app dashboard showing Manage event templates button highlighted."::: 
 
 1. Find your **Template** draft.
 
