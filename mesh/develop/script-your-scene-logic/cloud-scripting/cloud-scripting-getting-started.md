@@ -4,7 +4,7 @@ description: Get started with Cloud Scripting for Mesh.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/27/2023
+ms.date: 12/1/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
@@ -22,7 +22,7 @@ This article will help you configure your development environment and start iter
 
 The following instructions show how to create a simple environment with a cube that rotates when a user clicks on it. We'll demonstrate local development workflow, publishing and testing.
 
-1. [Create new or update an existing project](../../build-your-basic-environment/create-a-new-project-or-update.md).
+1. Go to the article named [Create new or update an existing project](../../build-your-basic-environment/create-a-new-project-or-update.md). If you're creating a new project, make sure you follow all the steps in the section named **To create a new project**. If you're updating an existing project, do the same for the section named **To update an existing project**.
 1. Create a new scene.
 1. Save the scene and name it. For this example, we'll use the name **MyFirstCloudScripting**.
 
