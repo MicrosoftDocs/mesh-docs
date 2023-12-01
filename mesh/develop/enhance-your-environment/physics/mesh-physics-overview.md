@@ -31,7 +31,7 @@ Mesh Physics offers interaction and additional physics-related functionalities s
 * various fields to physically influence bodies inside (buoyancy, gravity)
 * various components to modify the behavior of individual bodies (magnetic, sticky, throwable)
 * the ability to reset bodies to their startup positions (selective scene cleanup)
-* [Mesh Emulator](../../debug-and-optimize-performance/mesh-emulator.md) support for multi-user testing of the features above
+* [Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md) support for multi-user testing of the features above
 
 Here are more things you can do with Mesh Physics features:
 

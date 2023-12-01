@@ -4,7 +4,7 @@ description: Get started with Cloud Scripting for Mesh.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 8/28/2023
+ms.date: 11/27/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
@@ -35,17 +35,15 @@ The following instructions show how to create a simple environment with a cube t
 
    Note that a game object named **Mesh Cloud Scripting** appears in the **Hierarchy** and is selected. This also creates a new [ASP.NET Core](https://learn.microsoft.com/aspnet/core/razor-pages/web-sdk?view=aspnetcore-6.0) project under `Assets/.MeshCloudScripting/MyFirstCloudScripting`.
 
-   ![img](../../../media/mesh-scripting/getting-started/003-cloud-scripting-files.png)
+   ![Screenshot of a folder structure in Windows showing scripting project](../../../media/mesh-scripting/getting-started/003-cloud-scripting-files.png)
 
 1. You can use the **Open application folder** button to navigate to the project folder.
 
-   ![img](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
+   ![Screenshot of Open application folder button in Unity.](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
 
 ### Modify the scene
 
-1. On the menu bar, select **GameObject** > **Mesh Toolkit** > **PlaymodeSetup** to add simulation support.
-1. On the menu bar, select **GameObject** > **3D Object** > **Plane** to create a floor.
-1. In the **Hierarchy**, select the **Plane** object and, in the **Inspector**, change the **Layer** to **NavMesh**.
+1. [Set up Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md).
 1. On the menu bar, select **GameObject** > **3D object** > **Cube**.
 1. In the **Hierarchy**, drag the cube to the **Mesh Cloud Scripting** object to make the cube a child of that object.
 
@@ -53,7 +51,7 @@ The following instructions show how to create a simple environment with a cube t
 
 1. With the cube selected, in the **Inspector**, click **Add Component** and then select **MeshInteractableSetup**.
 
-   ![img](../../../media/mesh-scripting/getting-started/SimpleInteractionUnityAddTouchSensor.png)
+   ![Screenshot of Unity showin ghte Inspector window opened.](../../../media/mesh-scripting/getting-started/SimpleInteractionUnityAddTouchSensor.png)
 
 1. In the **Transform** component, set the Cube's **Position** values to 0, 1, 3.
 1. Save the scene.
@@ -138,15 +136,15 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
 1. Add your deployment configurations such as Azure subscription ID to the environment from the MeshUploader UI. You could do this when you create an environment: setup the configs in the **Mesh Environments** window, **Create Environment** tab, **Setup Mesh Script Configuration** block shown in the following images. Alternatively, you could set up and update the setting for an existing environment in the **Update Environment** steps.
 
-   ![img](../../../media/mesh-scripting/getting-started/UploaderCreateUIProjectSettings.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderCreateUIProjectSettings-logo.png)
 
 1. In the **Mesh Environments** window, **Update Environment** tab, select your environment and scene to upload. If the scene has a Mesh Cloud Scripting component, the deployment configurations will be shown along with the selected scene. Select the **Modify Deployment Configs** tickbox to add or change the configs associated with the current environment and scene. Unselect the tickbox to save and update the settings and you should see the updated configs, as illustrated below.
 
-   ![img](../../../media/mesh-scripting/getting-started/UploaderUpdateUIProjectSettings.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderUpdateUIProjectSettings-logo.png)
 
 1. In the **Mesh Environments** window, on the **Update Environment** tab, select **Build & Publish**. To learn more about the Mesh Environments window, see how to [build and publish your environment](../../make-your-environment-available/build-and-publish-your-environment.md)
 
-   ![img](../../../media/mesh-scripting/getting-started/001-update-environment-tab.png)
+   ![img](../../../media/mesh-scripting/getting-started/001-update-environment-tab-logo.png)
 
 1. As the Uploader builds and publishes your Environment, the Mesh Cloud Scripting infrastructure will be provisioned in Azure and published.
 
@@ -157,7 +155,7 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 > [!NOTE]
 > It's expected that there will be multiple entries for *Cloud Scripting Metadata* in the results window.
 
-   ![img](../../../media/mesh-scripting/getting-started/UploaderIntegrationUploaderResults.png)
+   ![img](../../../media/mesh-scripting/getting-started/UploaderIntegrationUploaderResults-logo.png)
 
 ### Connect to the Cloud Scripting Service from Unity
 

@@ -57,6 +57,10 @@ If a **Result** variable is defined, it will be reset to an empty string as soon
 
 The **Result** variable can be local or shared. If it's shared, the user's response is sent to all clients in the same room, and the **On State Changed** event node triggers on all clients to react to the user's response.
 
+## Physics events nodes
+
+The physics event nodes **On Trigger Enter**, **On Trigger Exit**, **On Collision Enter**, and **On Collision Exit** are reliably networked. By default, these events reliably trigger on all clients in the room; however, if the physics collider observed by these event nodes is in scope of a *Local Physics Scope* component, the events reliably trigger on exactly one client. This makes it possible for the script flows that are triggered to reliably read and write shared state (for example, update a shared score variable).
+
 ## Security
 
 Mesh protects users from threat scenarios such as these:

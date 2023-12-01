@@ -1,17 +1,19 @@
 ---
 title: Build and publish your environment
-description: Learn how to turn your environment into an Asset and then publish it in the Mesh Portal.
+description: Learn how to turn your environment into an Asset and then publish it in Mesh on the web.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 9/12/2023
+ms.date: 11/15/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, environment, build, publish, build and publish, uploader, Mesh uploader, thumbnail
 ---
 
 # Build and publish your environment
 
-After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen World in the Mesh Portal, where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that World can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
+After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen *Collection* (formerly called "World") in Mesh on the web, where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that World can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
+
+## Configure your project settings
 
 1. On the menu bar, select **Mesh Toolkit** > **Configure Project Settings**.
 
@@ -20,6 +22,21 @@ After you finish adding all your scene content, the next step is to build the sc
 1. Select **Yes** to configure project settings for Mesh.
 
     ![A screenshot of the dialog shown in Unity asking if you are sure you want to configure the project](../../media/make-your-environment-available/image015.png)
+
+## Using the Mesh Uploader
+
+## Mesh Uploader versions
+
+As explained in the article named [Add the Mesh Toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh Toolkit: the stable build and the preview build. At the time of this writing (mid-November 2023), the preview build of the Uploader contains a few updates that make it slightly different from the stable build:
+
+1. The preview version has a new Mesh logo. **NOTE**: In some case, you might see the new logo in the stable build.
+1. *Mesh Worlds* in the stable version are now called *Mesh Environment Collections* in the preview version.
+
+    ![Screenshots of the current stable and preview versions of the Mesh Uploader with the differences highlighted.](../../media/sample-mesh-101/506-uploader-stable-preview-comparison.png)
+
+For this article, we'll assume you're using the stable build, with **Mesh Worlds** displayed, but keep these differences in mind if you're using the preview version.
+
+## Sign in to the Mesh Uploader
 
 1.  On the menu bar, select **Mesh Toolkit** > **Environments**.
 
@@ -42,7 +59,7 @@ After you finish adding all your scene content, the next step is to build the sc
 1. In the **Capacity** field, enter the capacity for your Environment.
     The maximum is 16.
 
-    ![A screenshot of the Mesh Uploader window in the Create Environment tab](../../media/make-your-environment-available/002-uploader-create.png)
+    ![A screenshot of the Mesh Uploader window in the Create Environment tab](../../media/make-your-environment-available/002-uploader-create-logo.png)
 
 1.  Select **Create Asset** to create the Environment that you'll be
     uploading.
@@ -55,7 +72,7 @@ After you finish adding all your scene content, the next step is to build the sc
     You should now be in the **Update Environment** tab of the **Mesh
     Environments** window.
 
-    ![A screenshort of the Mesh Uploader window on the Update Environment tab](../../media/make-your-environment-available/003-uploader-update.png)
+    ![A screenshort of the Mesh Uploader window on the Update Environment tab](../../media/make-your-environment-available/003-uploader-update-logo.png)
 
     Note that in the **Environment Configurations** section, you already
     have an Environment configuration created which displays the name you
@@ -68,7 +85,7 @@ After you finish adding all your scene content, the next step is to build the sc
     project that you want as the Environment. In this example, we're
     using the Mesh sample project *Dartroom*, so our chosen scene will be the scene also named *DartRoom*.
 
-    ![A screenshot of the Mesh Uploader window with the select scene popup opened](../../media/make-your-environment-available/004-select-scene.png)
+    ![A screenshot of the Mesh Uploader window with the select scene popup opened](../../media/make-your-environment-available/004-select-scene-logo.png)
 
 1. In the **Build for Platforms** section, you choose which platforms
     to build for. Note that when a button background is gray, the button
@@ -109,7 +126,7 @@ After you finish adding all your scene content, the next step is to build the sc
     > [!IMPORTANT]
     > Every time you update the Environment, it can affect future events that reference this Environment.
     >
-    > ![Warning that environment will be updated ](../../media/make-your-environment-available-for-events/uploader_warning_about_updating_environment.png)
+> :::image type="content" source="../../media/make-your-environment-available/uploader_warning_about_updating_environment.png" alt-text="Screenshot of warning about updating your environment.":::
 
 After your environment was uploaded, you will be able to see for what platforms it has been built.
 
@@ -121,7 +138,7 @@ For example, if you built and publish an Environment for PC platform, but later 
 
 ## Environment thumbnails
 
-Adding a custom thumbnail image that will be added to your Environment listings in the Mesh Portal or Mesh App comes in handy when you're selecting Environments in either place because it gives you a visual reminder of what the Environment looks like.
+Adding a custom thumbnail image that will be added to your Environment listings in Mesh on the web or Mesh App comes in handy when you're selecting Environments in either place because it gives you a visual reminder of what the Environment looks like.
 
 You can customize the thumbnails from your environment in two ways:
 
@@ -160,7 +177,7 @@ To add the thumbnail camera to the scene and set its view:
 
 1. On the **Update Environment** tab make sure you have the correct Environment and scene selected. Then check the **Custom Thumbnails** field and choose the **Generate from Thumbnail Camera** option.
 
-    ![A screenshot of Mesh Uploader in the Update Environment tab highlighting the Custom Thumbnails field with the Generate from Thumbnails camera option selected](../../media/make-your-environment-available/009-select-custom-thumbnail.png)
+    ![A screenshot of Mesh Uploader in the Update Environment tab highlighting the Custom Thumbnails field with the Generate from Thumbnails camera option selected](../../media/make-your-environment-available/009-select-custom-thumbnail-logo.png)
 
 1. Once you are ready to publish your environment, click on **Build & Publish** and the custom thumbnails will be uploaded together with your environment.
 
@@ -174,7 +191,7 @@ If you prefer to have static images as thumbnails you can choose to select the i
 
 1. On the **Update Environment** tab make sure you have the correct Environment and Scene selected. Then check the **Custom Thumbnails** field and choose the **Take from folder** option. The default folder is shown and you can either add your images to this folder or choose a different folder.
 
-    ![A screenshot of Mesh Uploader in the Update Environment tab highlighting the Custom Thumbnails field with the Take from folder option selected and highlighting the button to choose a different folder](../../media/make-your-environment-available/010-thumbnail-from-folder.png)
+    ![A screenshot of Mesh Uploader in the Update Environment tab highlighting the Custom Thumbnails field with the Take from folder option selected and highlighting the button to choose a different folder](../../media/make-your-environment-available/010-thumbnail-from-folder-logo.png)
 
     **Note**: To choose a new folder for your thumbnails click on the button highlighted in yellow.
 
