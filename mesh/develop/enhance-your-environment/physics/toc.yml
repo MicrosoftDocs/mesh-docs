@@ -9,5 +9,5 @@ items:
   href: mesh-physics-programmers-guide.md
   displayName: physics
 - name: Set conditions for affecting Rigidbodies
-  href: set-conditions
+  href: set-conditions.md
   displayName: physics
