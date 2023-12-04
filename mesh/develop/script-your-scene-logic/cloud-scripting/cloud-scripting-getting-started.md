@@ -24,6 +24,7 @@ The following instructions show how to create a simple environment with a cube t
 
 1. Go to the article named [Create new or update an existing project](../../build-your-basic-environment/create-a-new-project-or-update.md). If you're creating a new project, make sure you follow all the steps in the section named **To create a new project**. If you're updating an existing project, do the same for the section named **To update an existing project**.
 1. Create a new scene.
+1. [Add a travel point to the scene](../../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md).
 1. Save the scene and name it. For this example, we'll use the name **MyFirstCloudScripting**.
 
     > [!NOTE]
@@ -33,13 +34,13 @@ The following instructions show how to create a simple environment with a cube t
 
    ![Screen shot of the Set up Cloud Scripting menu item.](../../../media/mesh-scripting/getting-started/002-setup-cloud-scripting.png)
 
-   Note that a game object named **Mesh Cloud Scripting** appears in the **Hierarchy** and is selected. This also creates a new [ASP.NET Core](https://learn.microsoft.com/aspnet/core/razor-pages/web-sdk?view=aspnetcore-6.0) project under `Assets/.MeshCloudScripting/MyFirstCloudScripting`.
-
-   ![Screenshot of a folder structure in Windows showing scripting project](../../../media/mesh-scripting/getting-started/003-cloud-scripting-files.png)
-
-1. You can use the **Open application folder** button to navigate to the project folder.
+   Note that a game object named **Mesh Cloud Scripting** appears in the **Hierarchy** and is selected. If you click the **Open application folder** button in the **Inspector** ... 
 
    ![Screenshot of Open application folder button in Unity.](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
+   
+   ... you'll see in the Windows File Explorer that this also creates a new [ASP.NET Core](https://learn.microsoft.com/aspnet/core/razor-pages/web-sdk?view=aspnetcore-6.0) project named **MyFirstCloudScripting.csproj** in the **Assets > .MeshCloudScripting > MyFirstCloudScripting** folder.
+
+   ![Screenshot of a folder structure in Windows showing scripting project.](../../../media/mesh-scripting/getting-started/003-cloud-scripting-files.png)
 
 ### Modify the scene
 
@@ -51,7 +52,7 @@ The following instructions show how to create a simple environment with a cube t
 
 1. With the cube selected, in the **Inspector**, click **Add Component** and then select **MeshInteractableSetup**.
 
-   ![Screenshot of Unity showin ghte Inspector window opened.](../../../media/mesh-scripting/getting-started/SimpleInteractionUnityAddTouchSensor.png)
+   ![Screenshot of Unity showin ghte Inspector window opened.](../../../media/mesh-scripting/getting-started/006-mesh-interactable-setup.png)
 
 1. In the **Transform** component, set the Cube's **Position** values to 0, 1, 3.
 1. Save the scene.
@@ -99,12 +100,13 @@ The following instructions show how to create a simple environment with a cube t
        return Task.CompletedTask;
    }
    ```
+1. Save your work.
 
 ### Run your application locally
 
-1. Click the Play button.
+1. In Unity, click Unity Editor Play button.
 1. Navigate around the scene and click on the cube.
-1. Exit play mode.
+1. When you're finished, exit Play Mode.
 
 ### Debug your application with Visual Studio (optional)
 
