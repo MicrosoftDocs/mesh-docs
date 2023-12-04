@@ -83,6 +83,13 @@ Enable or disable Hand Raise for participants. Hand Raise is ideal for Question 
 
 :::image type="content" source="../media/common-event-scenarios\producer-tools-hand-raise-2314.png" alt-text="Mute all button in host panel":::
 
+When an attendee has their hand raised, you'll see the hand raise notification next to their name in the host panel. In a single room event, you'll also see hand raise icon above their avatar.
+
+:::image type="content" source="../media/common-event-scenarios/Event-host-Hand-raise-notifications.png" alt-text="Screenshot of Mesh app showing hand raise notification next to participant names and avatar.":::
+
+> [!TIP]
+> In multi-room events, you won't see the avatar until they are broadcast.
+
 #### Megaphone
 
 Amplify your voice to all participants in the event. A great tool when broadcasting or using a screenshare.
@@ -94,6 +101,29 @@ Amplify your voice to all participants in the event. A great tool when broadcast
 **Disabled:** Host voice is not amplified.
 
 :::image type="content" source="../media/mesh-event-producer-guide/producer-tools-megaphone-2314.png" alt-text="Megaphone button in host panel":::
+
+#### Broadcast in multi-room events
+
+In multi-room events, use broadcast anytime you wish to be seen or heard by your whole audience in all rooms. Broadcasted avatars are visually distinguished by a purple-rings effect applied to their avatar.
+
+**Enabled:** Host avatar and voice are broadcast to all rooms in the event.
+
+**Disabled:** Host avatar and voice are not broadcasted to all rooms.
+
+:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-broadcast-2314-multi-room.png" alt-text="Broadcast button in a Mesh event in the host panel.":::
+
+#### Broadcast or Megaphone other participants
+
+In a multi-room scenario, you'll use Broadcast to make the participant visible to all other participants. This is ideal when someone has raised their hand, as shown below:
+
+:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-hand-raise-2314-multi-room.png" alt-text="Hand raise and broadcast  in a multi-room Mesh event in the host panel.":::
+
+> [!NOTE]
+> Only three hosts can broadcast at the same time.
+
+When you request an attendee to broadcast or megaphone, you'll receive a notification. Once you request it, the attendee will also receive the request and be able to accept or deny the option.
+
+:::image type="content" source="../media/common-event-scenarios/Request-to-broadcast-or-megaphone.png" alt-text="Screenshot of request to megaphone or broadcast from the host perspective.":::
 
 #### Share
 
@@ -107,25 +137,6 @@ Share your screen or a specific window on your PC to all participants. Screensha
 
 > [!NOTE]
 > As with Microsoft Teams, an organizer will not see their active screen share. However, all non-sharing attendees will be able to see the screen share.
-
-#### Broadcast
-
-In multi-room events, use broadcast anytime you wish to be seen or heard by your whole audience in all rooms. Broadcasted avatars are visually distinguished by a purple-rings effect applied to their avatar.
-
-**Enabled:** Host avatar and voice are broadcast to all rooms in the event.
-
-**Disabled:** Host avatar and voice are not broadcasted to all rooms.
-
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-broadcast-2314-multi-room.png" alt-text="Broadcast button in a Mesh event in the host panel.":::
-
-#### Broadcast other participants
-
-In a multi-room scenario, you'll use Broadcast to make the participant visible to all other participants. This is ideal when someone has raised their hand, as shown below:
-
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-hand-raise-2314-multi-room.png" alt-text="Hand raise and broadcast  in a multi-room Mesh event in the host panel.":::
-
-> [!NOTE]
-> Only three hosts can broadcast at the same time.
 
 **How to screenshare:**
 
