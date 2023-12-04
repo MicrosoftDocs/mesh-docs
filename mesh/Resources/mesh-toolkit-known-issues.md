@@ -31,6 +31,16 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 * If loading too many WebSlates at once, lower-end computers may not be able to load all WebSlates; only some WebSlates will be loaded. We recommend that you use the [Content Performance Analyzer tool](../develop/debug-and-optimize-performance/cpa.md) to measure rendering time and determine the proper allocations based on your environment's features.
 
+- When working with WebSlate in the Unity editor, the editor needs to be restarted when updating the WebSlate or Mesh Toolkit packages through the Unity package manager.
+
+- The "Current URL" field of a WebSlate currently cannot be updated during Play mode.
+
+- If your WebSlate game object displays an "internal shader error", navigate to the Inspector view of your WebSlate and ensure that the selected shader is set to "UnlitWebSlate".
+
+- Visual scripting has WebSlate support. If your visual scripting graph shows references to the legacy “WebView” type, manually update this reference to “WebSlate”.
+
+- When interacting with a WebSlate, Mesh may capture keyboard input causing unintended interactions with the Mesh app.
+
 ## Cloud Scripting known limitations
 
 ### Azure Login Expired
