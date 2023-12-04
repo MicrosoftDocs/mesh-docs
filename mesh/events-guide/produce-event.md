@@ -28,6 +28,10 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 - **[Host panel:](#host-panel)** See the participants in your event and use the host panel toolbar to access the *[Mute all](#mute-all)*, *[Hand Raise](#hand-raise)*, *[Megaphone](#megaphone)*, *[Broadcast](#broadcast)*, and  *[Share](#share)* buttons.
 - **[Control panel](#control-panel):** Control the elements that were added in a Customization session. [Play a video](#control-artifacts-in-the-control-panel), for example, or control custom artifacts that you may have added!
 
+## Common event scenarios
+
+For those interested in running question and answer scenarios where participants can raise their hand, be called on by the host, and megaphoned or broadcast to the entire event, see the [common event scenarios article](common-event-scenarios.md) for more info.
+
 ## Join the event
 
 After you've created your event, customized it, and added content to the control panel, it's time to join and produce your event.
