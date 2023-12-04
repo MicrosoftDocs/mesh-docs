@@ -86,17 +86,19 @@ As a host, you'll be able to disable attendee Megaphone or Megaphone or broadcas
 
 Simply select the **Megaphone** or **Broadcast** button, or select the **Mute microphone** button next to their name to disable their communication abilities.
 
+#### In a single room event
+
+Use the **Megaphone** or **Mute Microphone** to stop their megaphone or mute their microphone.
+
+:::image type="content" source="../media/common-event-scenarios/Controls-during-attendee-answer-single-room.png" alt-text="Screenshot of Mesh showing controls that host has to limit attendee answer communication.":::
+
 #### In a multi-room event
 
 Use the **Broadcast** or **Mute Microphone** to stop their broadcast or mute their microphone.
 
 :::image type="content" source="../media/common-event-scenarios/Controls-during-attendee-answer.png" alt-text="Screenshot of Mesh showing controls that a host has to disable attendee communication.":::
 
-#### In a single room event
-
-Use the **Megaphone** or **Mute Microphone** to stop their megaphone or mute their microphone.
-
-:::image type="content" source="../media/common-event-scenarios/Controls-during-attendee-answer-single-room.png" alt-text="Screenshot of Mesh showing controls that host has to limit attendee answer communication.":::
+## Next steps
 
    > [!div class="nextstepaction"]
    > [Produce your event](produce-event.md)
