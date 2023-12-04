@@ -44,7 +44,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
     ![A screenshot of the go-on the air dialog](media/go-on-the-air-dialog.png)
 
-* New screensharing UI:
+* New screen share UI:
 
     * Before starting a screenshare, the dotted line indicates you can share to that screen.
 
