@@ -41,7 +41,7 @@ Saving is not available once event is joined. Plan to customize and save your ev
 
 1. Open the Mesh app customize your **Event** or **Template**.
 
-1. **Add content** using the **Environment Editor**.
+1. **Add content** using the **Editor**.
 
 1. **Configure** content with the **Control panel** to be used in your live event.
 
@@ -85,31 +85,31 @@ At a high level, there are three major steps to customize your event or template
 
 1. **Add content** using the **Environment Editor** (or playable content uploaded from Unity to a custom environment).
 
-    :::image type="content" source="../Resources/media/environment-editor.png" alt-text="Add content with environment editor":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Customize-select-editor-button.png" alt-text="Screenshot of Editor button highlighted in Mesh app.":::
 
 1. Select the object to edit its properties.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/customize-image-artifact.png" alt-text="Image object adjustment":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-control-panel-object-selection.png" alt-text="Image object adjustment":::
 
 1. **Save changes** in the **Save** window. Or select **Revert** to discard recent changes and revert to the last saved state.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Event-customization-save-changes.png" alt-text="Save changes in event customization":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-object-save-changes.png" alt-text="Screenshot of Mesh app showing save changes dialogue after customizing.":::
 
-## Add content with Environment editor
+## Add content with Editor
 
-Use the Environment editor to place content in your environment and customize the content displayed in each object.
+Use the Editor to place content in your environment and customize the content displayed in each object.
 
-Currently, the three objects that you can add to your event are **Video**, **Image**, and **Screenshare**.
+:::image type="content" source="../media/mesh-event-producer-guide/Customize-event-control-panel-catalog.png" alt-text="Video, screenshare, image objects in the Editor":::
 
-:::image type="content" source="../media/mesh-event-producer-guide/environment-editor-artifacts-no-text.jpg" alt-text="Video, screenshare, image objects in the environment editor":::
+The three objects we'll cover here are **Video**, **Image**, and **Screenshare**.
 
 ### Start adding content
 
-Use the environment editor to add content to your environment that can be controlled during your run-of-show.
+Use the Editor to add content to your environment that can be controlled during your run-of-show.
 
-1. Once it loads, Select the **Environment editor** button.
+1. Once it loads, Select the **Editor** button.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Environment-editor-button-open2.png" alt-text="Environment editor button":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Event-customization-editor-open.png" alt-text="Screenshot of Mesh app showing Editor open with no objects added.":::
 
 1. Select the **+** plus button to open the **Catalog** of objects that you can add. Select one to add it to the environment editor.
 
@@ -117,7 +117,7 @@ Use the environment editor to add content to your environment that can be contro
 
     :::image type="content" source="../media/mesh-event-producer-guide/image-environment-editor-added-artifact.png" alt-text="Video player object shown in list of objects":::
 
-    Note the **Duplicate**, **Edit**, and **Delete** buttons available for the selected object.
+    Note the **Edit**, **Duplicate**, and **Delete** buttons for the selected object.
 
 1. Now you can manipulate the object as you'd like by selecting it with your cursor, dragging it to another location, or using the edges of the objects to scale them as you see fit.
 
