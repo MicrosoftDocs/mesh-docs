@@ -8,6 +8,6 @@ items:
 - name: Programmer's Guide
   href: mesh-physics-programmers-guide.md
   displayName: physics
-- name: Filter Physics events with Body Filters
-  href: filter-physics-events.md
+- name: Set conditions for affecting Rigidbodies
+  href: set-conditions
   displayName: physics
