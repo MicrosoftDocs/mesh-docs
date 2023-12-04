@@ -53,6 +53,10 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
     * Once screen sharing is started, you see a **You are screen sharing** toast notification, and the **Stop sharring** option. Solid line indicates you're current sharing a screen.
 
         ![A screenshot of the screensharing UI during a screen share](media/after-screen-share.png)
+
+* New **Control panel** dialog where the **Controls** list is now on a separate tab:
+
+    ![A screenshot of the **Control panel** dialog showing the **Controls** tab](media/controls-tab.png)
         
 #### New controls for interactive objects
 
