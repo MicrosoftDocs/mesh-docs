@@ -38,7 +38,7 @@ Broadcast is the notable difference here, which shows your avatar and makes your
 > [!TIP]
 > Use **Broadcast** as a host while in a multi-room event otherwise participants won't be able to see or hear you.
 
-## Using hand raise and broadcast for Q&A
+## Using hand raise for Q&A
 
 As a host, you may want participants to be able to ask their questions or say comments to the whole event.
 
