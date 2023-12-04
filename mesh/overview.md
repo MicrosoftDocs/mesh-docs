@@ -11,6 +11,9 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 # Microsoft Mesh overview
 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1eO6Z]
+
 To support a truly flexible workplace, organizations and employees need technology that helps them feel connected regardless of where they work. Over the years, we have learned that a thriving workplace fosters authentic human connections—allowing employees and teams to build meaningful relationships and trust so they can perform at their highest potential.
 
 According to Microsoft’s Work Trend Index report, 43 percent of leaders say relationship building is the [greatest challenge in remote and hybrid work](https://www.microsoft.com/worklab/work-trend-index/hybrid-work-is-just-work). Coming together in a physical space helps, but it’s not always possible—travel costs are prohibitive, real estate is expensive, and talent is increasingly dispersed. We need new ways for people to connect from different locations or geographies, using the tools they already have.
@@ -18,8 +21,6 @@ According to Microsoft’s Work Trend Index report, 43 percent of leaders say re
 ## Introducing Microsoft Mesh
 
 We are re-imagining the way employees come together with Microsoft Mesh, a new three-dimensional (3D) immersive experience.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1eO6Z]
 
 Microsoft Mesh is not merely another innovation, but a solution that enables your distributed workforce to connect like never before in a 3D immersive space, helping virtual meetings and events feel more like face-to-face connections.
 
