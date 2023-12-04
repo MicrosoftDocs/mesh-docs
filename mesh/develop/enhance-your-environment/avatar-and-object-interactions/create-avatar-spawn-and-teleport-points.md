@@ -19,7 +19,7 @@ If a travel point isn't present in an Environment, and there's a floor at the or
 
 **Setting up travel groups and travel points**
 
-1. Create a trave point group: all travel points must belong to a group; a default group will be assigned to any travel points that don't have one. Every travel group must have a unique name. The default travel group will not be set as a DefaultSpawnGroup unless it's the only group that exists.
+1. Create a travel point group: all travel points must belong to a group; a default group will be assigned to any travel points that don't have one. Every travel group must have a unique name. The default travel group will not be set as a DefaultSpawnGroup unless it's the only group that exists.
 
     - To do this, create a new GameObject with a *Travel Point Group* component attached.
 
