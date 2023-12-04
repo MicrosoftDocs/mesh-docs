@@ -19,11 +19,11 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 ### Scripting
 
-* Script graphs were saved with redundant type and versioning information in some object references. This will not visibly impact user experience.
+* Script graphs were saved with redundant type and versioning information in some object references. This will not visibly impact user experience. (30688)
 
-* The **Mesh Visual Scripting Diagnostics** panel only displays the diagnostics for the first selected `ScriptMachine` and errors were logged to the console panel if several were selected at the same time.
+* The **Mesh Visual Scripting Diagnostics** panel only displays the diagnostics for the first selected `ScriptMachine` and errors were logged to the console panel if several were selected at the same time. (30873)
 
-* When the **Travel Point** is set up in isolation, not nested in an explicit **Travel Point Group**, and a reference to it is passed to the method or property node from another script node, for example, from a **Get Variable** node, the **Travel Point** reference is incorrectly filtered out at runtime and the method call or property access will fail to work.
+* When the **Travel Point** is set up in isolation, not nested in an explicit **Travel Point Group**, and a reference to it is passed to the method or property node from another script node, for example, from a **Get Variable** node, the **Travel Point** reference is incorrectly filtered out at runtime and the method call or property access will fail to work. (31414)
 
 ### WebSlate
 
