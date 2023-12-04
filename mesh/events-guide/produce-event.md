@@ -102,7 +102,7 @@ Amplify your voice to all participants in the event. A great tool when broadcast
 
 :::image type="content" source="../media/mesh-event-producer-guide/producer-tools-megaphone-2314.png" alt-text="Megaphone button in host panel":::
 
-#### Broadcast in multi-room events
+#### Broadcast
 
 In multi-room events, use broadcast anytime you wish to be seen or heard by your whole audience in all rooms. Broadcasted avatars are visually distinguished by a purple-rings effect applied to their avatar.
 
