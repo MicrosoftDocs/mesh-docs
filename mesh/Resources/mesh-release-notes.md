@@ -46,13 +46,13 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 * New screen share UI:
 
-    * Before starting a screenshare, the dotted line indicates you can share to that screen.
+    * Before starting a screen share, the dotted line indicates you can share to that screen.
 
-        ![A screenshot of the screensharing UI](media/before-screen-share.png)
+        ![A screenshot of the screen sharing UI](media/before-screen-share.png)
 
     * Once screen sharing is started, you see a **You are screen sharing** toast notification, and the **Stop sharring** option. The solid line indicates you're currently sharing a screen.
 
-        ![A screenshot of the screensharing UI during a screen share](media/after-screen-share.png)
+        ![A screenshot of the screen sharing UI during a screen share](media/after-screen-share.png)
 
 * New **Control panel** dialog where the **Controls** list is now on a separate tab:
 
