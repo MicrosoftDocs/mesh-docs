@@ -29,10 +29,7 @@ After you finish adding all your scene content, the next step is to build the sc
 
 As explained in the article named [Add the Mesh Toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh Toolkit: the stable build and the preview build. At the time of this writing (mid-November 2023), the preview build of the Uploader contains a few updates that make it slightly different from the stable build:
 
-1. The preview version has a new Mesh logo. **NOTE**: In some case, you might see the new logo in the stable build.
-1. *Mesh Worlds* in the stable version are now called *Mesh Environment Collections* in the preview version.
-
-    ![Screenshots of the current stable and preview versions of the Mesh Uploader with the differences highlighted.](../../media/sample-mesh-101/506-uploader-stable-preview-comparison.png)
+- *Mesh Worlds* in the stable version are now called *Mesh Environment Collections* in the preview version.
 
 For this article, we'll assume you're using the stable build, with **Mesh Worlds** displayed, but keep these differences in mind if you're using the preview version.
 
@@ -45,8 +42,8 @@ For this article, we'll assume you're using the stable build, with **Mesh Worlds
 1. Sign in with your account.
 
     Make sure you're in the **Create** **Environment** tab, and then fill
-    in the **Internal Name** and **Description** fields. 
-    
+    in the **Internal Name** and **Description** fields.
+
     > [!IMPORTANT]
     > The **Internal Name** field has a maximum of 100 characters, and the
     **Description** field has a maximum of 200 characters.
