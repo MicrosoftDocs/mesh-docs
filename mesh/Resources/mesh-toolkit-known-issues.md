@@ -4,20 +4,28 @@ description: Mesh Toolkit active known issues
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 11/13/2023
+ms.date: 12/4/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 ---
 
 # Active known issues - Mesh Toolkit
 
-## Version 23.14 (Preview)
+## Version 23.14
 
 * The embedded videos show as black on Quest 2. (24096)
 
     *Workaround:*  If you run into an issue where videos display and behave as expected on PC but not on Quest, add the video script to the video player.
 
-### WebSlate in 23.14
+### Scripting
+
+* Script graphs were saved with redundant type and versioning information in some object references. This will not visibly impact user experience.
+
+* The **Mesh Visual Scripting Diagnostics** panel only displays the diagnostics for the first selected `ScriptMachine` and errors were logged to the console panel if several were selected at the same time.
+
+* When the **Travel Point** is set up in isolation, not nested in an explicit **Travel Point Group**, and a reference to it is passed to the method or property node from another script node, for example, from a **Get Variable** node, the **Travel Point** reference is incorrectly filtered out at runtime and the method call or property access will fail to work.
+
+### WebSlate
 
 * On Quest, the system webview is about two years behind and causes some websites to show an *Unsupported browser* message. We're working with Meta to update Chromium to a more recent version. (28696)
 
@@ -29,7 +37,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
     *Workaround:*  If you run into an issue where videos display and behave as expected on PC but not on Quest, add the video script to the video player.
 
-### Scripting in 23.13
+### Scripting
 
 * The **On State Changed** event node stops triggering completely and indefinitely after it had been disabled for the first time. (26333)
 
@@ -43,13 +51,13 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 * Currently, the list of available script nodes can easily be auto-populated with incompatible (default) project settings or without having been filtered to include only nodes supported by Mesh. For example, this could happen if users chose not to apply Mesh project settings before starting to work on visual scripts, or if they manually edited Visual Scripting's **Type Options** or **Node Library** and selected **Regenerate Nodes**. (26109)
 
-#### Physics in 23.13
+#### Physics
 
 * The physics event nodes: **On Trigger Enter**, **On Trigger Exit**, **On Collision Enter**, and **On Collision Exit** may not reliably trigger on all clients in the room. Depending on network conditions, it's possible that they'll only trigger on a subset of clients. (27635)
 
 * It's currently hard to reliably read-then-write shared state (for example: update a shared score variable) in a script node triggered by one of the physics event nodes: **On Trigger Enter**, **On Trigger Exit**, **On Collision Enter**, and **On Collision Exit**, as these events are generally triggered on more than one client in the room for the same interaction. (27635)
 
-### Interactables in 23.13
+### Interactables
 
 * [Equippable objects](/mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactables#equippable-objects) should respond to a mouse down as opposed to the current mouse release. (27858)
 
@@ -57,7 +65,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 * Missing `MeshUniqueIdManager`` causes serialization failures. (25151)
 
-### WebSlate in 23.13
+### WebSlate
 
 - On Quest, the system webview is about two years behind and causes some websites to show an *Unsupported browser* message. We're working with Meta to update Chromium to a more recent version. (28696)
 

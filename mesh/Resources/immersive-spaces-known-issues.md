@@ -74,6 +74,12 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 ### Other known issues
 
+1. When clicking the Immersive view in Teams, the user isn't able to get into the immersive space, and gets an error instead. (29271)
+
+1. In the new Teams client, when the presenter changed shared content, an error dialog pops up and displays: "Can't display content". (22587)
+
+1. In the new Teams client, going from immersive view back to the Teams gallery, and then go back to immersive space for the second time will crash Teams. (22854)
+
 1. If a user starts a meeting from a Teams channel as opposed to joining a scheduled meeting, they will not be able to change environments.
 
 1. On Quest, if you try to rotate the avatar preview in the Avatar Customizer, your field of view will also move.
