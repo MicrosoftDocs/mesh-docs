@@ -99,7 +99,7 @@ At a high level, there are three major steps to customize your event or template
 
 Use the Editor to place content in your environment and customize the content displayed in each object.
 
-:::image type="content" source="../media/mesh-event-producer-guide/Customize-event-control-panel-catalog.png" alt-text="Video, screenshare, image objects in the Editor":::
+:::image type="content" source="../Resources/media/environment-editor-catalog.png" alt-text="Screenshot of editor catalog":::
 
 The three objects we'll cover here are **Video**, **Image**, and **Screenshare**.
 
