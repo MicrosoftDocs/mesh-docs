@@ -57,6 +57,10 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 * New **Control panel** dialog where the **Controls** list is now on a separate tab:
 
     ![A screenshot of the **Control panel** dialog showing the **Controls** tab](media/controls-tab.png)
+  
+* Save customizations in a customization session using the **Save** buttton.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-object-save-changes.png" alt-text="Screenshot of save dialogue and button in a customization session.":::
         
 #### New controls for interactive objects
 
@@ -66,7 +70,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
     * Press **Space bar** to drop
 
-* Acitvatable (for example: [the marshmallow stick in the Lakehouse environment](https://support.microsoft.com/en-us/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games)):
+* Activatable (for example: [the marshmallow stick in the Lakehouse environment](https://support.microsoft.com/en-us/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games)):
 
     * Click to use
 
