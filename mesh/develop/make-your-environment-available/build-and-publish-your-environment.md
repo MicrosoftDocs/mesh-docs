@@ -185,11 +185,11 @@ If you prefer, you can create a custom thumbnail, then save it in a designated "
 
     ![A screenshot of the Mesh Uploader with the Thumbnail take from folder option selected.](../../media/make-your-environment-available/041-thumbnail-take-from-folder.png)
 
-1. Drag the right side of the **Mesh Environments** window to make it wider. This makes it easier to read all the thumnail options.
+1. Drag the right side of the **Mesh Environments** window to make it wider. This makes it easier to read all the thumbnail options.
 
     ![A screenshot of the Mesh Uploader widened so the user can see the thumbnail options better.](../../media/make-your-environment-available/042-thumbnail-options-wider.png)
 
-1. Select the folder that will store your custom thumbnails: click the *Select custom thumbnail folder* button. **TIP**: You may have to click it twice. 
+1. Select the folder that will store your custom thumbnails: click the *Select custom thumbnail folder* button (the three-dot button). **TIP**: You may have to click it twice. 
 
     ![A screenshot of the Mesh Uploader widened so the user can see the thumbnail options better.](../../media/make-your-environment-available/043-thumbnail-select-folder-button.png)
 
@@ -203,7 +203,7 @@ If you prefer, you can create a custom thumbnail, then save it in a designated "
 
     ![A screenshot of the Mesh Uploader widened so the user can see the thumbnail options better.](../../media/make-your-environment-available/045-thumbnail-path-change.png)
 
-1. CLick the **Add provisional thumbnails** button. A **Success** dialog appears telling you that thumbnails were generated successfully.
+1. Click the **Add provisional thumbnails** button. A **Success** dialog appears telling you that thumbnails were generated successfully.
 
     ![A screenshot of the Mesh Uploader widened so the user can see the thumbnail options better.](../../media/make-your-environment-available/046-thumbnail-success-dialog.png)
 
@@ -215,20 +215,19 @@ You can now create your custom thumbnails and save them in this folder. There ar
 
 1. Create three versions of your thumbnail: a "large" one, a "medium" one, and a "small" one. The sizes for each are:
 
-    Large = 1024 x 512 px
-    Medium = 512 x 256 px
+    Large = 1024 x 512 px  
+    Medium = 512 x 256 px  
     Small = 256 x 128 px
 
     Having three versions of your thumbnail means that each device running Mesh can choose the best size for its user interface.
 
 1. Give your thumbnails the same names as the provisional thumbnails:
 
-    thumbnail_large.png
-    thumbnail_medium.png
+    thumbnail_large.png  
+    thumbnail_medium.png  
     thumbnail_small.png
 
-    (This means that your thumbnails will replace the provisional ones in your chosen thumbnails folder.)
-
+    (Your custom thumbnails will replace the provisional ones in your chosen thumbnails folder.)
 
 1. Once you're ready to publish your environment, select **Build & Publish**. The thumbnails will be uploaded together with your environment.
 

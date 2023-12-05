@@ -50,7 +50,7 @@ Let's turn off some of the icons we don't need to make the view more clear.
 
     ![Screenshot of the gizmos list with the TextMeshPro icon highlighted.](../../../media/sample-mesh-101/image012.png)
 
-    ... but there's a faster to find objects than scrolling.
+    ... but there's a faster way to find objects than scrolling.
 
 1. In the search field, type in "text." The list narrows down to objects starting with those letters.
 
@@ -124,20 +124,18 @@ layer---we've already done it for you.
 
 ### Add Mesh Emulation Mode capability
 
-Let's add Mesh Emulation Mode capability to your project. In this mode, when you press the Unity editor Play button, you get an approximate preview of what the content will look and feel like when it runs in the Mesh app. A key feature of Mesh Emulation Mode is the ability to run multiple clients within the same process; this allows you to easily get a first impression of a multi-user scenario.
+Let's add Mesh Emulation Mode capability to your project. In this mode, when you press the Unity Editor Play button, you get an approximate preview of what the content will look and feel like when it runs in the Mesh app. A key feature of Mesh Emulation Mode is the ability to run multiple clients within the same process; this allows you to easily get a first impression of a multi-user scenario.
 
 **To add Mesh Emulation Mode capability**:  
 1. Press the Unity Editor Play button. This dialog appears:
 
     ![A screenshot of the Mesh Emulator Setup missing dialog.](../../../media/sample-mesh-101/499-emulator-setup-missing-dialog.png)
 
-1. Select the first button, **Add working MeshEmulatorSetup prefab.** The **MeshEmulatorSetup [NoUpload]** prefab appears in the **Hierarchy**.
+1. Select the first button, **Add working MeshEmulatorSetup prefab.** The **MeshEmulatorSetup [NoUpload]** prefab appears in the **Hierarchy** ...
 
     ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/500-mesh-emulator-setup-added.png)
 
-
-
-    ... and the project goes into "play" mode.   This prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around. By default, the Mesh Emulator is set up to give you two different views in the **Game** window. 
+    ... and the project goes into Play Mode. This prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around. By default, the Mesh Emulator is set up to give you two different views in the **Game** window. 
  
      ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/507-emulator-double-view.png)
  
@@ -148,12 +146,9 @@ Let's add Mesh Emulation Mode capability to your project. In this mode, when you
 
      ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/508-emulator-component-single.png)
 
-
-
-1. Select the Unity Editor Play button. Note the change to a single view, from the avatar's position, in the **Game** window.
+1. Click the Unity Editor Play button. Note that you now have a single view, from the avatar's position, in the **Game** window.
 
     ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../../media/sample-mesh-101/016-playmode-v2.png)
-
 
 1. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Play mode.
 

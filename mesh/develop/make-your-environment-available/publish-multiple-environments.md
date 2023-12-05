@@ -42,7 +42,7 @@ As explained in the article named [Add the Mesh Toolkit package](../build-your-b
 1. Select **Create Environment** to return to that tab.
 1. Replace the current information displayed in that tab with the information that applies to the *BilliardsRoom* Experience.
 
-    ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the BilliardsRoom Environment.](../../media/make-your-environment-available/012-create-billiardsroom-asset-logo.png)
+    ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the BilliardsRoom Environment.](../../media/make-your-environment-available/012-create-billiardsroom-asset.png)
 
 1. Select **Create Asset**.
 1. In the **Create Results** window, confirm that the operation was successful and then click the **Close** button. 
