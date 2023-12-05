@@ -80,6 +80,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
     * Press **Space bar** to drop
 
+
 ### Resolved product issues
 
 * On Quest, when running multiple video players will cause the videos to flicker intensely. (24490)
