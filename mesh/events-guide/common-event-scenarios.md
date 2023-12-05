@@ -29,7 +29,7 @@ In a single room event, you have access to the **Mute all**, **Hand Raise**, **M
 
 ### Host tools in a multi-room event
 
-In a multi-room event, you have access to the **Mute all**, **Hand Raise**, **Broadcast**, **Megaphone**, and **Screenshare** controls.
+In a multi-room event, you have access to the **Mute all**, **Hand Raise**, **Megaphone**, **Broadcast**, and **Screenshare** controls.
 
 :::image type="content" source="../media/common-event-scenarios/multi-room-host-tools.png" alt-text="Screenshot of the host tools in a single room event.":::
 

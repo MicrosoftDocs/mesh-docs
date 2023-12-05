@@ -125,7 +125,7 @@ In a multi-room scenario, you'll use Broadcast to make the participant visible t
 :::image type="content" source="../media/mesh-event-producer-guide/producer-tools-hand-raise-2314-multi-room.png" alt-text="Hand raise and broadcast  in a multi-room Mesh event in the host panel.":::
 
 > [!NOTE]
-> Only three hosts can broadcast at the same time.
+> Only three people can broadcast at the same time.
 
 When you request an attendee to broadcast or megaphone, you'll receive a notification. Once you request it, the attendee will also receive the request and be able to accept or deny the option.
 
