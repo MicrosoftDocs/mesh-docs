@@ -171,19 +171,18 @@ reminder of what the Environment looks like.
 **To add the thumbnail camera to the scene and set its view:**
 
 1. In the **Scene** window, adjust the view so that it shows what you
-    want to display in the thumbnail (the Thumbnail Camera's view will
+    want to eventually display in the thumbnail image (the Thumbnail Camera's view will
     be based on the **Scene** window).
 
-2. Select the "+" drop-down located below the **Hierarchy** tab, and
+1. Select the "+" drop-down located below the **Hierarchy** tab, and
     then select **Mesh Toolkit** > **Thumbnail Camera**.
 
-3. To confirm that the view in the Thumbnail Camera is what you want,
-    in the **Hierarchy**, select **MeshThumbnailCamera**. The Camera's
-    view appears in a small window in the lower right of the **Scene**
-    window.
+1. To see what your thumbnail will look like, view the small **MeshThumbnailCamera** window which appears in the lower right corner of the **Scene** window. 
+
+    ![A screen shot of the Mesh thumbnail camera highlighted in the Hierarchy and the camera's view highlighted in the Scene view.](../../../media/sample-mesh-101/509-thumbnail-camera-view.png)
 
 > **Note**: If you decide you want a different view for the Thumbnail
-Camera, the easiest way to achieve this is to delete the Camera, establish the Scene view that you want, and then add the Camera again. You can also adjust the Camera GameObject directly in the **Scene**
+Camera, the easiest way to achieve this is to delete the Camera, establish the **Scene** view that you want, and then add the Camera again. You can also adjust the Camera GameObject directly in the **Scene**
 window or change its **Position** and **Rotation** values in the
 **Inspector** prior to uploading your Environment to Mesh.
 
