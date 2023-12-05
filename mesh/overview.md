@@ -17,6 +17,9 @@ According to Microsoft’s Work Trend Index report, 43 percent of leaders say re
 
 ## Introducing Microsoft Mesh
 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1eO6Z]
+
 We are re-imagining the way employees come together with Microsoft Mesh, a new three-dimensional (3D) immersive experience.
 
 Microsoft Mesh is not merely another innovation, but a solution that enables your distributed workforce to connect like never before in a 3D immersive space, helping virtual meetings and events feel more like face-to-face connections.

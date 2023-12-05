@@ -80,6 +80,18 @@ Use the **Camera** button on the app bar to take a selfie of yourself with frien
 
 Selecting on the photo icon in the menu will take you to the SharePoint folder where your photos are stored.
 
+### Raise hand to speak to hosts and all participants
+
+If a host has enabled **Hand Raise**, you should see the hand raise button in the Menu bar.
+
+Simply select the Hand Raise button, wait for the host to call on you, then you can comment or ask questions to the whole event.
+
+:::image type="content" source="media/raise-hand.png" alt-text="Screenshot of hand raise button from the user perspective.":::
+
+Lower your hand to finish answering your question and speaking to the whole event. You may need to select End broadcast in a multi-room event, as shown below:
+
+:::image type="content" source="media/Lower-hand.png" alt-text="Screenshot of lower hand notification and end broadcast alert.":::
+
 ### React with emotes
 
 In the app bar, you can trigger **Reactions**, that cause your avatar to
