@@ -53,7 +53,7 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 
 ## Create an event
 
-1. Open [Mesh on the Web](https://mesh.cloud.microsoft).
+1. Open [Mesh on the web](https://portal.mesh.microsoft.com).
 
 1. Log in with your corporate account.
 
@@ -68,12 +68,10 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
     > [!NOTE]
     > Events should not be longer than 3 hours and scheduled more than 30 minutes in advance.
 
-
     :::image type="content" source="../media/events-guide-create-event/Mesh-on-web-create-event-details.png" alt-text="Screenshot of Create event page in Mesh on the Web with red box around the event details forms.":::
 
 1. Select **Next** when complete.
 1. Choose an environment or select an Template that you may have created before. Select **Next** when finished.
-
 
     :::image type="content" source="../media/events-guide-create-event/Mesh-on-web-start-with-an-environment.png" alt-text="Invite page in the Mesh on the Web":::
 
@@ -83,7 +81,6 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
     Learn more about [creating Templates](create-template.md).
 
 1. Add your Co-organizers (who will be able to edit the event) and your Attendees (who will be able to join the event) and select **Create event** when finished.
-
 
     :::image type="content" source="../media/events-guide-create-event/Mesh-on-web-invite-coorganizer.png" alt-text="Screenshot of Mesh on the Web showing invite co-organizer page for an event.":::
 
