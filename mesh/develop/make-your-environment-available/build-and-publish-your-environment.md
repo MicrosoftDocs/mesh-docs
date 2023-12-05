@@ -60,7 +60,7 @@ As explained in the article named [Add the Mesh Toolkit package](../build-your-b
 1. You'll receive a confirmation dialogue as shown below. Select
     **Close**.
 
-    ![A screenshot of a dialog showing the create operation was successful](../../media/make-your-environment-available/036-create-results-success.jpg)
+    ![A screenshot of a dialog showing the create operation was successful](../../media/make-your-environment-available/036-create-results-success.png)
 
     You should now be in the **Update Environment** tab of the **Mesh
     Environments** window.
@@ -183,7 +183,7 @@ If you prefer, you can create a custom thumbnail, then save it in a designated "
 
 1. Click the **Thumbnail** drop-down and then select **Take from folder**.
 
-    ![A screenshot of the Mesh Uploader with the Thumbnail take from folder option selected.](../../media/make-your-environment-available/040-thumbnail-take-from-folder.png)
+    ![A screenshot of the Mesh Uploader with the Thumbnail take from folder option selected.](../../media/make-your-environment-available/041-thumbnail-take-from-folder.png)
 
 1. Drag the right side of the **Mesh Environments** window to make it wider. This makes it easier to read all the thumnail options.
 
