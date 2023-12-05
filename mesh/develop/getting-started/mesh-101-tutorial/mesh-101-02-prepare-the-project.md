@@ -4,7 +4,7 @@ description: Learn about adding a few basic features that are necessary for the 
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/27/2023
+ms.date: 12/4/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
@@ -20,11 +20,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image010.png)
 
-    Open the **StartingPoint** scene. You should see the **TMP Importer** window.
-
-3. Select **Import TMP Essentials**, and then close the window.
-
-    ![A screen shot of a computer Description automatically generated with low confidence](../../../media/sample-mesh-101/image011.png)
+1. Open the **StartingPoint** scene. 
 
 ### About the Scenes
 
@@ -79,7 +75,7 @@ Let's turn off some of the icons we don't need to make the view more clear.
 
     ![Screenshot of the Scene view with icons turned off and a clearer view of objects.](../../../media/sample-mesh-101/504-view-with-icons-turned-off.png)
 
-### Exploring the `StartingPoint` scene
+### Exploring the *StartingPoint* scene
 
 Feel free to move around in the **Scene** window to get familiar with
 the scene's contents. If we zoom out a little, we can see that there are
@@ -131,7 +127,7 @@ layer---we've already done it for you.
 Let's add Mesh Emulation Mode capability to your project. In this mode, when you press the Unity editor Play button, you get an approximate preview of what the content will look and feel like when it runs in the Mesh app. A key feature of Mesh Emulation Mode is the ability to run multiple clients within the same process; this allows you to easily get a first impression of a multi-user scenario.
 
 **To add Mesh Emulation Mode capability**:  
-1. Press the Play button. This dialog appears:
+1. Press the Unity Editor Play button. This dialog appears:
 
     ![A screenshot of the Mesh Emulator Setup missing dialog.](../../../media/sample-mesh-101/499-emulator-setup-missing-dialog.png)
 
@@ -139,13 +135,27 @@ Let's add Mesh Emulation Mode capability to your project. In this mode, when you
 
     ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/500-mesh-emulator-setup-added.png)
 
-    This prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around.
+
+
+    ... and the project goes into "play" mode.   This prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around. By default, the Mesh Emulator is set up to give you two different views in the **Game** window. 
+ 
+     ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/507-emulator-double-view.png)
+ 
+    For this tutorial, we only want a single view, so let's change that.
+
+1. Press the Unity Editor Play button to exit Play Mode.
+1. With **MeshEmulatorSetup** still selected in the **Hierarchy**, in the **Inspector**, navigate to the **Mesh Emulator Setup** component, and then change its **Initial Screen Count** property to 1.
+
+     ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/508-emulator-component-single.png)
+
+
+
+1. Select the Unity Editor Play button. Note the change to a single view, from the avatar's position, in the **Game** window.
 
     ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../../media/sample-mesh-101/016-playmode-v2.png)
 
-1. Select the Unity Editor Play button.
 
-1. In the **Game** window, note that you now have a view from the avatar's position. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Play mode.
+1. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Play mode.
 
 ### Check the scale of your GameObjects
 
