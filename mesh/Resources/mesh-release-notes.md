@@ -4,7 +4,7 @@ description: Mesh release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 11/15/2023
+ms.date: 12/4/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes and known issues for the Immersive spaces in Microsoft Mesh on PC & Quest 2**
 
-## Version 5.2314.0 (Preview)
+## Version 5.2314.0
 
 ### What's new
 
@@ -44,6 +44,24 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
     ![A screenshot of the go-on the air dialog](media/go-on-the-air-dialog.png)
 
+* New screen share UI:
+
+    * Before starting a screen share, the dotted line indicates you can share to that screen.
+
+        ![A screenshot of the screen sharing UI](media/before-screen-share.png)
+
+    * Once screen sharing is started, you see a **You are screen sharing** toast notification, and the **Stop sharring** option. The solid line indicates you're currently sharing a screen.
+
+        ![A screenshot of the screen sharing UI during a screen share](media/after-screen-share.png)
+
+* New **Control panel** dialog where the **Controls** list is now on a separate tab:
+
+    ![A screenshot of the **Control panel** dialog showing the **Controls** tab](media/controls-tab.png)
+  
+* Save customizations in a customization session using the **Save** buttton.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-object-save-changes.png" alt-text="Screenshot of save dialogue and button in a customization session.":::
+        
 #### New controls for interactive objects
 
 * Throwable (for example: [the bean bag toss](https://support.microsoft.com/en-us/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games)):
@@ -52,7 +70,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
     * Press **Space bar** to drop
 
-* Acitvatable (for example: [the marshmallow stick in the Lakehouse environment](https://support.microsoft.com/en-us/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games)):
+* Activatable (for example: [the marshmallow stick in the Lakehouse environment](https://support.microsoft.com/en-us/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games)):
 
     * Click to use
 
@@ -62,7 +80,10 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
     * Press **Space bar** to drop
 
+
 ### Resolved product issues
+
+* On Quest, when running multiple video players will cause the videos to flicker intensely. (24490)
 
 * On Quest: the Mesh UI no longer locks with the user's head view. As you turn your head, the Mesh UI will now remain stationary. (13061)
 
