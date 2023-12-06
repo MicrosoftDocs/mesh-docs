@@ -54,7 +54,7 @@ As explained in the article named [Add the Mesh toolkit package](../build-your-b
 
     ![A screenshot of the Mesh Uploader window in the Create Environment tab](../../media/make-your-environment-available/002-uploader-create-logo.png)
 
-1.  Select **Create Asset** to create the Environment that you'll be
+1.  Select **Create Environment** to create the Environment that you'll be
     uploading.
 
 1. You'll receive a confirmation dialogue as shown below. Select
