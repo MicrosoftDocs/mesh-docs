@@ -43,7 +43,7 @@ set up that view.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image063.png)
 
-1. Move the cursor over the **Scene** window and then press the F key
+1. Move the cursor over the **Scene** window and then press the <kbd>F</kbd> key
     on your keyboard.
 
     This centers the view on the **4.1 -- Grab and Release** object, but you'll most likely not be in quite the position we need.
@@ -115,7 +115,7 @@ uneven surface.
 
 1. Click the Unity Editor Play button to exit Play mode.
 
-You don't need to update the other two wind turbines---we've already
+You don't need to update the other two wind turbines--we've already
 done that for you.
 
 ## Station: 4.2 Animation Trigger
