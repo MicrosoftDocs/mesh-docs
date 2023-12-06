@@ -3,7 +3,7 @@ title: Mesh 101 Add interactivity with Mesh Visual Scripting
 description: Learn adding about adding interactivity to objects with Mesh Visual Scripting.
 author: typride
 ms.author: vinnietieto
-ms.date: 10/13/2023
+ms.date: 12/5/2023
 ms.topic: Tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
@@ -95,7 +95,7 @@ Right now, the text on the button says **Label**. Let's change that to
 
     ![A screenshot of a Unity showing two components that were added, Script Machine and Variables.](../../../media/sample-mesh-101/201-script-machine-v2.png)
 
-1. Note that in the **Script Machine** component, the **Source** option is set to **Graph**. You have two choices for **Source**: *Graph* and *Embed*. Click **Source** and then select **Embed**.
+1. Note that in the **Script Machine** component, the **Source** option is set to **Graph**. You have two choices for **Source**: *Graph* and *Embed*. Click the **Source** drop-down and then select **Embed**.
 
     > [!TIP]
     > *Graph* and *Embed* each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine article](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We're choosing to use *Embed* here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
@@ -117,11 +117,11 @@ Right now, the text on the button says **Label**. Let's change that to
 
 We can think of this script graph as having three main goals:
 
-1. Detect if the Play/Stop button is clicked.
-1. If it's clicked, play the video.
-1. When it's clicked again, stop the video
+1. Detect when the Play/Stop button gets clicked.
+1. When it gets clicked, play the video.
+1. When it gets clicked again, stop the video
 
-The first goal, detect if the button is clicked, will require three nodes. The GameObject that actually "listens" for and reacts to a click is called **Button**. Let's add that to the script graph.
+The first goal, detect when the button gets clicked, will require three nodes. The GameObject in the project that actually "listens" for and reacts to a click is **Button**. Let's add that to the script graph.
 
 > [!NOTE]
 > A node is also called a *unit* in Visual Scripting. In this tutorial, we'll continue using the term *node*.
@@ -152,7 +152,7 @@ If you go into Play mode, you'll see that a new component named **Mesh Interacta
 
 This component is added automatically at runtime to interactable bodies; it exposes various properties to Visual Scripting such as *IsHovered* and *IsSelected*, which will come in handy in a moment.
 
-You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Play mode tint has been changed to yellow. This can help you to tell at a glance which mode you're in. To change the Play mode tint:
+You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Play mode tint has been changed to light blue. This can help you to tell at a glance which mode you're in. To change the Play mode tint:
 
 1. On the menu bar, select **Edit** > **Preferences**.
 1. In the left-side menu, select **Colors**.
