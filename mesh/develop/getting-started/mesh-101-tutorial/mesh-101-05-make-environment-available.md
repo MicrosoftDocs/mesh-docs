@@ -115,9 +115,9 @@ If you navigate to the **Environments** page for your Environment collection in 
 
 1. On the **Collections** page, select your Collection.
 
-    Your Environment should be displayed in the **Environments** tab.
+    On the next page, your Environment should be displayed in the **Environments** tab.
 
-![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/458-environment-in-mesh-portal.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/458-environment-in-mesh-portal.png)
 
 Your saved custom Environment is now ready for you to test in the Mesh app on your desktop PC or Quest headset to be sure it will look and perform exactly as you expect.
 
