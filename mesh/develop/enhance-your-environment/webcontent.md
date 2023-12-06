@@ -175,7 +175,7 @@ Refer to the [Visual scripting overview](../script-your-scene-logic/mesh-scripti
 
 - By default, the WebSlate loads the preset URL. The URL should be replaced with a desired one on each WebSlate in use. The brightness parameter is set to 1.0 (100% of the browser's brightness).
 
-- WebSlates will automatically suspend themselves after being off-screen for too long. If you need to ensure a given slate is always running (such as a livestream or continuous audio playback), then check the "Prevent Suspension" button on the association WebSlate. See below for performance implications.
+- WebSlates will automatically suspend themselves after being offscreen for too long. If you need to ensure a given slate is always running (such as a livestream or continuous audio playback), then check the "Prevent Suspension" button on the association WebSlate. See below for performance implications.
 
 ![Unity usage of WebSlate](../../media/webview-developer-guide/image004.png)
 
