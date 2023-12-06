@@ -76,7 +76,10 @@ generate power.
     > [!TIP]
     > An explanation of this component was given in [Chapter 3](mesh-101-03-visual-scripting.md) of this tutorial.
 
-1. In the same component, select **Manipulable**.
+1. In the same component, click the **Object Type** drop-down and then select **Manipulable**.
+
+    ![A screenshot](../../../media/sample-mesh-101/510-select-manipulable.png)
+
 1. Ensure that the component is active.
 1. In the **Rigidbody** component, expand the **Constraints** option if
     needed, and then for the **Freeze Rotation** settings, select **X,**
@@ -163,7 +166,7 @@ The graph is *almost* set up how we want it, but there's one remaining issue. Th
 
     ![A screenshot](../../../media/sample-mesh-101/475-expand-windturbine1.png)
 
-1. Select **Windmill_Turbine_001:Propellors10**, and then, in the **Inspector**, note that it contains an **Animator** component with the Animator **Controller** named **WindmillPropellors**.
+1. Select **Windmill_Turbine_001:Propellors10**, and then, in the **Inspector**, note that it contains an **Animator** component with the Animator **Controller** named **WindTurbine1Propellers**.
 
     ![A screenshot](../../../media/sample-mesh-101/476-animator.png)
 
