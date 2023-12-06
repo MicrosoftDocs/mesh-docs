@@ -175,15 +175,21 @@ Refer to the [Visual scripting overview](../script-your-scene-logic/mesh-scripti
 
 - By default, the WebSlate loads the preset URL. The URL should be replaced with a desired one on each WebSlate in use. The brightness parameter is set to 1.0 (100% of the browser's brightness).
 
+- WebSlates will automatically suspend themselves after being off-screen for too long. If you need to ensure a given slate is always running (such as a livestream or continuous audio playback), then check the "Prevent Suspension" button on the association WebSlate. See below for performance implications.
+
 ![Unity usage of WebSlate](../../media/webview-developer-guide/image004.png)
 
 ## Performance
 
 - As a WebSlate is a loaded Web page, it is important to consider performance implications:
 
-  - Scenes are typically performant at 60fps with up to 10 WebSlates. Framerate and general performance degradation may be observed in proportion to the number of WebSlates placed in a scene, regardless of content.
+  - Scenes are typically performant at 60fps with up to 10 active WebSlates. Framerate and general performance degradation may be observed in proportion to the number of WebSlates placed in a scene, regardless of content.
 
   - While content is loaded and executed in the WebSlate on a thread separate to the scene's update and rendering thread(s) (and is therefore unlikely to directly affect framerate), it's still important to consider the cost of JavaScript running on a Web page both in terms of runtime complexity and memory usage.
+
+  - To help save on performance, WebSlates that are offscreen for over 30s are automatically suspended. They quickly resume on coming back onscreen, but this can impact actively-running services on the hosted page. If this is an issue, developers can disable suspension with the prefab's "Prevent Suspension" checkbox. Note that doing so can cause the scene to consume more resources, as these WebSlates remain active at all times.
+
+![WebSlate with Suspension Prevention circled](../../media/webview-developer-guide/WebSlate-Prevent-Suspension.png)
 
 - Since WebSlates don't have any external navigation UI by default, the best practice is to only load custom URLs, where the site navigation is cyclic and can be done inside the page. This can be done with a navigation sidebar, or links to a hub page, for example.
 
@@ -200,7 +206,7 @@ Refer to the [Visual scripting overview](../script-your-scene-logic/mesh-scripti
 
 ## Security restrictions
 
-- WebSlates are locked to the URLs they navigate to, preventing malicious redirects. All unintended hyperlink navigations to outside domains are blocked.
+- WebSlates are locked to the URLs they navigate to, preventing malicious redirects. All unintended hyperlink navigations to outside domains are blocked, unless explicitly listed as an allowed domain (see below).
 
 - WebSlates are restricted to navigation within the initial domain or the specified URL's and server's redirections.
 
