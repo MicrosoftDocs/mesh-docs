@@ -47,7 +47,11 @@ We currently do not support this feature.
 
 [!INCLUDE [The include file for license reqs for immersive spaces in Teams](../Includes/license-requirements-for-immersive-spaces-in-teams.md)]
 
-### How to download Mesh on Quest 2 via App Lab
+## What are the data handling standards for Mesh?
+
+Mesh is a part of M365, and it operates within the [M365 compliance framework](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview), including with respect to security and privacy commitments.
+
+## How to download Mesh on Quest 2 via App Lab
 
 Microsoft Mesh for Meta Quest devices is available through AppLab.
 
@@ -80,7 +84,7 @@ If you had previously downloaded the **Napili** app on your Quest 2 device, you 
     >[!Note]
     >You may need to restart your headset to ensure the app loads.
 
-#### How do I find my Meta ID?
+### How do I find my Meta ID?
 
 Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
