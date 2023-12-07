@@ -1,9 +1,10 @@
 ---
 title: Mesh 101 Move objects and trigger animations
 description: Learn how to move objects and trigger animations with Mesh Interactables and Physics.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 9/28/2023
+ms.date: 10/13/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, physics, interactables
 ---
@@ -42,7 +43,7 @@ set up that view.
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image063.png)
 
-1. Move the cursor over the **Scene** window and then press the F key
+1. Move the cursor over the **Scene** window and then press the <kbd>F</kbd> key
     on your keyboard.
 
     This centers the view on the **4.1 -- Grab and Release** object, but you'll most likely not be in quite the position we need.
@@ -75,7 +76,10 @@ generate power.
     > [!TIP]
     > An explanation of this component was given in [Chapter 3](mesh-101-03-visual-scripting.md) of this tutorial.
 
-1. In the same component, select **Manipulable**.
+1. In the same component, click the **Object Type** drop-down and then select **Manipulable**.
+
+    ![A screenshot](../../../media/sample-mesh-101/510-select-manipulable.png)
+
 1. Ensure that the component is active.
 1. In the **Rigidbody** component, expand the **Constraints** option if
     needed, and then for the **Freeze Rotation** settings, select **X,**
@@ -111,12 +115,12 @@ uneven surface.
 
 1. Click the Unity Editor Play button to exit Play mode.
 
-You don't need to update the other two wind turbines---we've already
+You don't need to update the other two wind turbines--we've already
 done that for you.
 
 ## Station: 4.2 Animation Trigger
 
-The idea here is that when you drag a wind turbine over the ocean, the "wind" causes the turbine's blades to spin. What actually happens is that a transparent cube named **Animation Trigger** is located over the ocean and acts as a trigger volume. If you drag a wind turbine into the trigger volume, it sets off an "On Trigger Enter" event that starts a spinning-blade animation.
+The idea here is that when you drag a wind turbine over the ocean, the "wind" causes the turbine's blades to spin. What actually happens is that a transparent cube named **Animation Trigger** is located over the ocean and acts as a trigger volume. If you drag a wind turbine into the trigger volume, it sets off an **On Trigger Enter** event that starts a spinning-blade animation.
 
 For this chapter, we'll add a script to a GameObject and then enable animation in the script.
 
@@ -132,10 +136,13 @@ For this chapter, we'll add a script to a GameObject and then enable animation i
 
     ![A screenshot](../../../media/sample-mesh-101/321-is-trigger.png)
 
+> [!TIP]
+> When you select **Is Trigger**, it makes the object the collider component is attached to a trigger volume.
+
 1. In the **Hierarchy**, navigate to **Chapter 4** > **4.1 - Grab and Release** and then select **WindTurbine1**.
 1. Click the **Add Component** button, and then search for and add **Script Machine.**
 
-We want our script to be embedded, but that usually means you must start creating a new script graph from scratch. We'll take a shortcut; leave the **Source** option set to "Graph" for now. We'll attach an existing script graph and then convert it into an embedded graph.
+We want our script to be embedded, but that usually means you must start creating a new script graph from scratch. We'll take a shortcut; leave the **Source** option set to **Graph** for now. We'll attach an existing script graph and then convert it into an embedded graph.
 
 1. Click the button in the **Graph** field and then, in the **SelectSceneGraph** window, select *SPWindTurbineScript*.
 
@@ -159,7 +166,7 @@ The graph is *almost* set up how we want it, but there's one remaining issue. Th
 
     ![A screenshot](../../../media/sample-mesh-101/475-expand-windturbine1.png)
 
-1. Select **Windmill_Turbine_001:Propellors10**, and then, in the **Inspector**, note that it contains an **Animator** component with the Animator **Controller** named **WindmillPropellors**.
+1. Select **Windmill_Turbine_001:Propellors10**, and then, in the **Inspector**, note that it contains an **Animator** component with the Animator **Controller** named **WindTurbine1Propellers**.
 
     ![A screenshot](../../../media/sample-mesh-101/476-animator.png)
 
@@ -257,5 +264,5 @@ your experience to do the following:
 
 > [!div class="nextstepaction"]
 
-> [Chapter 5: Make your environment available for Events](mesh-101-05-make-environment-available.md)
+> [Chapter 5: Make your environment available for testing](mesh-101-05-make-environment-available.md)
 

@@ -1,9 +1,10 @@
 ---
 title: Mesh 101 Overview and setup
 description: Learn about the prerequsites and setup process for the Mesh 101 tutorial project.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 9/27/2023
+ms.date: 12/4/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, GitHub
 ---
@@ -45,15 +46,15 @@ The tutorial is structured as follows:
   - Station 4.2: Animation Trigger
   - Station 4.3: Constraining Bodies
 
-- [Chapter 5: Make your Environment available for Events](mesh-101-05-make-environment-available.md)
+- [Chapter 5: Make your environment available for Events](mesh-101-05-make-environment-available.md)
 
 - [Chapter 6: Test your environment within the Mesh app](mesh-101-06-test-your-environment.md)
 
-- [Chapter 7: Create an Event and invite others](mesh-101-07-create-an-event-and-invite-others.md)
+- [Chapter 7: Create an event and invite others](mesh-101-07-create-an-event-and-invite-others.md)
 
 ## Terminology
 
-In Mesh terms, the project you create in Unity and then upload to the Mesh Portal is called an *Environment*.
+In Mesh terms, the project you create in Unity and then upload to Mesh on the web is called an *Environment*.
 
 ## Prerequisites
 
@@ -70,6 +71,8 @@ Minimum PC requirements: 4 CPU cores, 8GB RAM
 ### Unity version 2022.3.7f1
 
 Unity version 2022.3.7f1 is required for this tutorial.
+
+[Review system requirements for Unity](https://docs.unity3d.com/2022.3/Documentation/Manual/system-requirements.html)
 
 [Get help installing Unity](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 
@@ -110,10 +113,8 @@ The *Mesh 101* tutorial project is available in the [*Mesh-Toolkit-Unity*](https
 
 ### Mesh Toolkit package
 
-For this tutorial, the only package you need is the Mesh Toolkit package, and it's  
-already pre-loaded into the tutorial project. If you were creating your
-own project from scratch, you would need to import the Mesh Toolkit
-package.
+For this tutorial, the only package you need is the Mesh Toolkit package, and it's already pre-loaded into the tutorial project. If you were creating your
+own project from scratch, you would need to [import the Mesh Toolkit package](../../build-your-basic-environment/add-the-mesh-toolkit-package.md).
 
 ## Next steps
 

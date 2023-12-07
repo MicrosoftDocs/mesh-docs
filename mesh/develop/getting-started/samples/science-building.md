@@ -5,7 +5,7 @@ author: vtieto
 ms.author: vinnietieto
 ms.date: 9/29/2023
 ms.topic: overview
-ms.prod: mesh
+ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, science, sciencebuilding
 ---
 
@@ -32,7 +32,7 @@ The [Samples Overview](samples-overview.md) page contains instructions on how to
 
 ## Contributions
 
-Mesh is a new product from Microsoft, and at this time we are not accepting code contributions to our samples.  If you have any feedback or if you run into any issues with the samples or the Mesh Toolkit, do the following: in a Unity project that has the Mesh Toolkit package installed, select **Mesh Toolkit** -> **Give feedback to Microsoft** and then use the feedback link in the Mesh Toolkit to let us know.
+We are not currently accepting code contributions to our samples.  If you have any feedback or if you run into any issues with the samples or the Mesh Toolkit, do the following: in a Unity project that has the Mesh Toolkit package installed, select **Mesh Toolkit** -> **Give feedback to Microsoft** and then use the feedback link in the Mesh Toolkit to let us know.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or

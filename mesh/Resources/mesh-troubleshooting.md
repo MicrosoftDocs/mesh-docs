@@ -1,9 +1,10 @@
 ---
 title: Troubleshooting & FAQs - Microsoft Mesh
 description: Various help guides and FAQ answers regarding Mesh events.
+ms.service: mesh
 author: qianw211
 ms.author: qianwen
-ms.date: 10/5/2023
+ms.date: 10/12/2023
 ms.topic: Troubleshooting
 keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
 ---
@@ -12,9 +13,47 @@ keywords: Microsoft Mesh, M365, events, join events, organize events, immersive 
 
 ## Frequently asked questions
 
-### How to download Mesh on Quest 2 via App Lab
+## What are the license requirements for immersive spaces in Mesh?
 
-Microsoft Mesh (Preview) for Meta Quest devices is available through AppLab.
+[!INCLUDE [The include file for the license requirements in Mesh](../Includes/license-requirements-for-Mesh.md)]
+
+### What if I limit user permissions with corporate policies
+
+If you do not *allow* users with Teams and Office licenses to create Groups, Sharepoint/OneDrive sites, or use Mailbox/Calendar, the user may notice the following:
+
+1. You cannot create a collection (aka Mesh World) since you do not have the ability to do M365 Group creation in your organization.
+
+1. You cannot create an event since you do not have access to M365 Calendar in your organization.
+
+1. One or more people cannot be invited to the event because they do not have access to Outlook.
+
+1. User cannot be added to collection membership since they do not have the ability to access M365 Groups in your organization.
+
+1. You cannot create a template since you do not have access to SharePoint in your organization.
+
+### Will there be support added in future to use an existing M365 Group?
+
+We currently have no plans to support this feature. Right now, when Mesh creates an M365 Group, some additional data is added to the group to identify it as being a Mesh World.
+
+### When an M365 Group is created through Mesh, can it still be enabled for Teams after? Just like any other M365 Group?
+
+All M365 Groups created are normal M365 groups. A unique identifier is added to the group for the Mesh Portal to identify which Groups are associated with specific Mesh World groups.
+
+### Can we script or automate the creation of an M365 Group for use with Mesh?
+
+We currently do not support this feature.  
+
+## What are the license requirements for Immersive spaces in Teams?
+
+[!INCLUDE [The include file for license reqs for immersive spaces in Teams](../Includes/license-requirements-for-immersive-spaces-in-teams.md)]
+
+## What are the data handling standards for Mesh?
+
+Mesh is a part of M365, and it operates within the [M365 compliance framework](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview), including with respect to security and privacy commitments.
+
+## How to download Mesh on Quest 2 via App Lab
+
+Microsoft Mesh for Meta Quest devices is available through AppLab.
 
 If you had previously downloaded the **Napili** app on your Quest 2 device, you should move to the new app available at the link below.
 
@@ -23,7 +62,7 @@ If you had previously downloaded the **Napili** app on your Quest 2 device, you 
 1. On your PC, visit the link below to download Mesh on Quest 2.
 
     > [!div class="nextstepaction"]
-    > [Microsoft Mesh (Preview) on Oculus Quest 2 \| Oculus](https://www.oculus.com/experiences/quest/8919580184782498/)
+    > [Microsoft Mesh on Oculus Quest 2 \| Oculus](https://www.meta.com/experiences/6750166401689690/)
 
     If the URL doesn't work, use a new private window in your browser.
 
@@ -32,20 +71,20 @@ If you had previously downloaded the **Napili** app on your Quest 2 device, you 
 
     [Can't find your Meta account associated with your Quest 2 device?](#how-do-i-find-my-meta-id)
 
-    ![Diagram Description automatically generated with medium confidence](media/image011.png)
+    ![Log in to meta account](media/log-in-meta.png)
 
 3. Once authenticated, select the **Get** button.
 
-    ![A black background with white text Description automatically generated with medium confidence](media/image013.png)
+    ![Screenshot of the Meta Mesh page on Meta](media/mesh-meta-quest-get.png)
 
 4. You'll see the button grey out and change from **Get** to **Purchased** which indicates that the app has been acquired.
 
-    ![Log in with your Meta account confirmation page](media/image015.png)
+    ![Log in with your Meta account confirmation page](media/mesh-meta-purchased.png)
 
     >[!Note]
     >You may need to restart your headset to ensure the app loads.
 
-#### How do I find my Meta ID?
+### How do I find my Meta ID?
 
 Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
@@ -55,7 +94,7 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 3. It should bring you to your **Profile** page. If not, click your **Profile** icon in the top right corner.
 
-   ![A screenshot of profile icon](media/image017.png)
+   ![A screenshot of profile icon](media/meta-profile.png)
 
 4. Select **Profile**. From there you should see your Email.
 
@@ -65,11 +104,9 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 1. Select the **App library** button.
 
-    ![the App library button on your Quest menu](media/image020.png)
+    ![the App library button on your Quest menu](media/meta-menu.png)
 
 1. Find the **Microsoft Mesh (Preview)** app in the App library.
-
-    ![A screenshot of Microsoft Mesh (Preview) in the App library](media/image022.png)
 
 1. Select to **Install** then **Open** the app by selecting it again.
 
@@ -80,7 +117,7 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
     You'll see a window like this when the authentication is complete:
 
-    ![A screenshot of a video game Description automatically generated](media/image024.png)
+    ![A screenshot of the Mesh startup page as you verify the Quest device on your Microsoft webpage](media/mesh-startup-page.png)
 
 1. Select to **Allow** any **Terms of service & Allow Diagnostic data**.
 
@@ -88,15 +125,17 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 ### What should I do if the Mesh app on Windows crashes during startup, crashes during runtime, or behaves strangely during runtime?
 
-1. Confirm you have a license required to use Mesh as shown [here](../setup/content/preparing-your-organization.md#verify-your-licensing).
+1. Confirm you have a license required to use Mesh as shown [here](../setup/content/preparing-your-organization.md#verify-your-licenses-and-policies).
 
-2. Double check that your network admins have allowlisted the required endpoints as described [here](../setup/content/preparing-your-organization.md#work-with-your-organizations-security-team).
+1. Double check that the machine has the latest Operating System and security updates.
 
-3. Gather the logs from your device: `%USERPROFILE%\AppData\LocalLow\Microsoft Corporation\Microsoft Mesh\`.
+1. Double check that your network admins have allowlisted the required endpoints as described [here](../setup/content/preparing-your-organization.md#work-with-your-organizations-security-team).
 
-4. If the logs are too large to share, the two most important are `Player.log` and `Player-prev.log`.
+1. Gather the logs from your device: `%USERPROFILE%\AppData\LocalLow\Microsoft\Microsoft Mesh\`.
 
-5. Open a support request by following the link [here](https://admin.microsoft.com) (this support link may only be available to M365 admins).
+1. If the logs are too large to share, the two most important are `Player.log` and `Player-prev.log`.
+
+1. Open a support request by following the link [here](https://admin.microsoft.com) (this support link may only be available to M365 admins).
 
 ### What should I do with issues relating to M365?
 
