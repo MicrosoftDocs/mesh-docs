@@ -1,6 +1,7 @@
 ---
 title: Mesh Visual Scripting node reference
 description: Learn about the Mesh nodes available for Visual Scripting in Mesh.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 10/3/2023
@@ -55,6 +56,10 @@ If a **Result** variable is defined, it will be reset to an empty string as soon
 ![Screen shot of the Show Dialog node collecting the user response in a variable, followed by an On State Changed node responding to the variable change](../../../media/mesh-scripting/visual-scripting//node-ShowDialog-response.png)
 
 The **Result** variable can be local or shared. If it's shared, the user's response is sent to all clients in the same room, and the **On State Changed** event node triggers on all clients to react to the user's response.
+
+## Physics events nodes
+
+The physics event nodes **On Trigger Enter**, **On Trigger Exit**, **On Collision Enter**, and **On Collision Exit** are reliably networked. By default, these events reliably trigger on all clients in the room; however, if the physics collider observed by these event nodes is in scope of a *Local Physics Scope* component, the events reliably trigger on exactly one client. This makes it possible for the script flows that are triggered to reliably read and write shared state (for example, update a shared score variable).
 
 ## Security
 

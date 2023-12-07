@@ -1,6 +1,7 @@
 ---
 title: Feedback and support for Mesh
 description: Here's how to provide feedback for Microsoft Mesh
+ms.service: mesh
 author: qianw211    
 ms.author: qianwen
 ms.date: 10/5/2023
@@ -22,7 +23,7 @@ For product feedback, use the **Feedback** button inside your Mesh experience. T
 
 ## Developer feedback for Mesh
 
-For feedback on the development experience, once you've [downloaded the Mesh toolkit](../develop/build-your-basic-environment/add-the-mesh-toolkit-package.md), use the **Mesh toolkit** > **Feedback** menu dropdown to provide feedback.
+For feedback on the development experience, once you've [downloaded the Mesh toolkit](../develop/build-your-basic-environment/add-the-mesh-toolkit-package.md), use the **Mesh Toolkit** > **Feedback** menu dropdown to provide feedback.
 
 We truly appreciate feedback!
 

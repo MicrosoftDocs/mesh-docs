@@ -1,9 +1,10 @@
 ---
 title: Mesh Visual Scripting programmer's guide
 description: Learn about how to create scripts using Visual Scripting in Mesh.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 10/3/2023
+ms.date: 11/16/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, graphs
 ---
@@ -31,7 +32,7 @@ This is how it looks in Mesh:
 
 ## Testing your scripts
 
-Before you upload your scene to Mesh, you can develop and test visual scripts, even with multiple clients in split screen mode, in Mesh Playmode.
+Before you upload your scene to Mesh, you can develop and test visual scripts, even with multiple clients in split screen mode, using [Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md).
 
 ## Visual script diagnostics in the Editor
 
@@ -112,9 +113,9 @@ Performance issues in visual scripts are almost always caused by the scripts doi
 
 Things to be aware of:
 
-- Avoid triggering visual scripts every frame (for example, **On Update**). Instead, use **On State Changed** or **On Interval** if possible.
+- Whenever possible, avoid triggering visual scripts every frame. Instead of using **On Update**, use **On State Changed** or **On Interval**.
 
-- Avoid triggering visual scripts every frame on many objects.
+- If you must trigger a visual script every frame, do it on as few objects as possible.
 
 - Don't update shared properties at high frequency. Instead, consider making high-frequency updated properties local by using the **Local Script Scope** component. Remember that visual script variables are also shared by default!
 
@@ -128,8 +129,20 @@ Things to be aware of:
 
 **Tips**
 
-- Component properties and visual script variables that have simple types are automatically shared across clients in a session.
-- To exclude parts of your scene from this automatic sharing, add a **Local Scene Scope** component. Everything underneath that transform won't be shared automatically.
+- Component properties and visual script variables that have simple types are automatically shared across clients in a session. To reduce overhead by limiting the amount of sharing, add a **Local Script Scope** component to the relevant GameObject, and then do one of the following:
+
+    **To share visual script variables but not component properties or the script variables or component properties of child objects**:  
+    In the **Local Script Scope** component, select **Share visual script variables on this Game Object**.
+
+    ![Screen shot of the local script scope component with its property named "Share visual script variables on this Game Object" selected.](../../../media/mesh-scripting/visual-scripting/002-share-variables.png)
+
+    **To keep all visual script variables and component properties for the current object and its child objects local**:  
+    This is achieved by just adding the **Local Script Scope** component and keeping **Share visual script variables on this Game Object** unselected.
+
+    ![Screen shot of the local script scope component with its property named "Share visual script variables on this Game Object" left unselected.](../../../media/mesh-scripting/visual-scripting/003-event-not-shared.png)
+
+    You can see several examples of how the *Local Script Scope* component is used in [Chapter 3 of our Mesh 101 tutorial](../../getting-started/mesh-101-tutorial/mesh-101-03-visual-scripting.md) which focuses on visual scripting.
+
 - To do something in regular time intervals in sync across clients, use the **On Interval** trigger node.
 - To do something in response to certain component properties or visual script variables changing (for example, because this or some other client was setting them in a visual script), use the **On State Changed** trigger
 - There are additional Visual Scripting functions provided by Mesh&#8212;see the _Microsoft_ > _Mesh_ and _Microsoft_ > _Events_ > _Mesh_ sections in the Fuzzy Finder.

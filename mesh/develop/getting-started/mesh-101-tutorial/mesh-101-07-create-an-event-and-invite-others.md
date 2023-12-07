@@ -1,6 +1,7 @@
 ---
 title: Mesh 101 Create an event and invite others
 description: Learn how to create an event and invite others.
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
 ms.date: 10/5/2023
@@ -17,7 +18,7 @@ can experience through the Mesh app for PC or Quest.
 > [!IMPORTANT]
 > To ensure the best experience, we recommend that attendees to an event update the latest version of the Mesh app.
 
-1. Open the [Mesh Portal](https://portal.mesh.microsoft.com/).
+1. Open [Mesh on the web](https://portal.mesh.microsoft.com/).
 1. Log in with your corporate account.
 1. On the Home page, in the left-side navigation bar, select **Events**.
 
