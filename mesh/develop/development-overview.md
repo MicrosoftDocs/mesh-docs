@@ -37,7 +37,7 @@ The Mesh Toolkit for Unity provides a collection of features that enable you to 
 
 * [Mesh cloud scripting](script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md), which lets you connect to real-time backend data and call .NET APIs via cloud-hosted server scripts.
 
-* [Mesh Play mode](debug-and-optimize-performance/playmode.md), which lets you press Play in a Mesh content project to preview how your content will look like running in Mesh for multiple users.
+* [Mesh Play mode](debug-and-optimize-performance/mesh-emulator.md), which lets you press Play in a Mesh content project to preview how your content will look like running in Mesh for multiple users.
 
 * [Mesh Uploader](make-your-environment-available/build-and-publish-your-environment.md), which lets you upload the Environments you create to Mesh on the web.
 

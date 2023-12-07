@@ -29,20 +29,19 @@ Templates can be created directly in Microsoft Mesh app, or created from an exis
 
 1. In the Microsoft Mesh app, select the **Manage Templates** button.
 
-
-    :::image type="content" source="../media/mesh-event-producer-guide/Template-dashboard-creation-button.png" alt-text="Screenshot of Template creation button in ":::
-
+    :::image type="content" source="../media/mesh-event-producer-guide/Select-manage-event-templates.png" alt-text="Screenshot of Mesh app dashboard showing Manage event templates button highlighted.":::
 
 1. In this view, you can see the previous templates that have been created, see the draft templates, or create a new template.
 
     - **Published** Templates cannot be edited further and can be used in Events.
 
-
     - **Draft** Templates are a work-in-progress, can be customized, and can be used in Event.
 
     :::image type="content" source="../media/mesh-event-producer-guide/template-create-new.png" alt-text="Template create new mesh app":::
 
-1. Select create new template and add your **Title**, **Description**, and select the **World location** for the template to exist in.
+1. Select create new template and add your **Title**, **Description**, and select the **Collection location** for the template to exist in. Select **Next** when done.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Create-template-fill-out-details.png" alt-text="Screenshot of Mesh app showing event details to fill out.":::
 
 1. Select the environment that you want to use with your template. This could be a standard environment or a custom environment that was uploaded with the Mesh toolkit.
 
@@ -53,7 +52,6 @@ Templates can be created directly in Microsoft Mesh app, or created from an exis
     :::image type="content" source="../media/mesh-event-producer-guide/Template-create-success.png" alt-text="Template creation success toast notification in Mesh":::
 
 ## Create Template from an existing event
-
 
 If you've already customized an event or prefer to create a template from an existing event, you can do that in Mesh on the Web in the Event details page or the Environments page.
 
