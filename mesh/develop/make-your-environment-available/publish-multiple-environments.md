@@ -4,44 +4,64 @@ description: Learn how to publish multiple environments from one Unity project u
 ms.service: mesh
 author: typride
 ms.author: iankudinova
-ms.date: 10/11/2023
+ms.date: 12/4/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, environment, Unity, build, publish, build and publish, uploader, Mesh uploader, thumbnail, filter, multiple
+keywords: Microsoft Mesh, environment, Unity, build, publish, build and publish, uploader, Mesh uploader, filter, multiple
 ---
 
-# Publish multiple environments from one Unity project
+# Publish multiple Environments from one Unity project
 
-## Add more Environments for build and publish
+## Overview
 
-If you want to build and publish more than one environment from a single Unity project, click on **Add Environment Configuration** button and make sure you have the correct Environment and scene selected (you can see the details on the steps from [Configure the Environment for build and publish](https://github.com/MicrosoftDocs/mesh-docs-pr/blob/main/mesh/develop/make-your-environment-available/build-and-publish-your-environment.md#configure-the-environment-for-build-and-publish)).
+There might be times when you can benefit by having a single Unity project that can generate multiple Experiences. Here's one example: Let's say you want to build a series of gaming Experiences that'll reuse a lot of the same assets. You can create a single Unity project that contains all your assets, then create each individual game room as a Scene, and then use the Mesh Uploader to turn the Scenes into Experiences and upload them to a World in Mesh on the web.
 
-![A screenshot of adding new environment to configure](../../media/make-your-environment-available/uploader_add_environment_button.png)
+Using the scenario above as an example, here's what you would do:
 
-![A screenshot of added new environment to configure](../../media/make-your-environment-available/uploader_add_environment_button_result.png)
+1. Create a new Unity project named "GameRooms."
+1. Create an individual Scene for each game room. Name each Scene as follows:
 
+    DartsRoom  
+    BilliardsRoom  
+    ChessRoom  
 
-## Select the Environment for build and publish
+## Mesh Uploader versions
 
-If you want to pick one that already exists, select the field that displays **Select Environment**. Then pick your Environment and scene that you want to update it with.
+As explained in the article named [Add the Mesh Toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh Toolkit: the stable build and the preview build. Note that from time to time you may see minor differences between the two versions.
 
-![A screenshot of available Environments](../../media/make-your-environment-available/uploader_list_of_avaliable_environments.png)
+## Create your Environments
 
-Environments that are already selected will be disabled.
+1. Follow the instructions detailed in the [Build and publish your Environment](./build-and-publish-your-environment.md) article to open the Mesh Uploader and then create your first Asset, named "DartsRoom":
 
-Sometimes the list of the available Environments can be big. Use these 2 filters to help sort environments:
+    ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the DartsRoom Environment.](../../media/make-your-environment-available/011-create-dartsroom-asset-logo.png)
 
-![A screenshot of Environments filters](../../media/make-your-environment-available/uploader_environment_filters.png)
+1. Select **Create Asset**.
+1. In the **Create Results** window, confirm that the operation was successful and then click the **Close** button. 
 
+    The Uploader automatically takes you to the **Update Environment** tab. If you were creating a single Environment, this would be the right place to continue the process. However, in this example, we're creating multiple Environments, which means we have more work to do in the **Create Environment** tab.
 
-### Filter Environments by Worlds
+1. Select **Create Environment** to return to that tab.
+1. Replace the current information displayed in that tab with the information that applies to the *BilliardsRoom* Experience.
 
-By default you can see Environments from all the Worlds you have access, you can filter the list by specifying one specific World.
+    ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the BilliardsRoom Environment.](../../media/make-your-environment-available/012-create-billiardsroom-asset.png)
 
-![A screenshot of Environments World filter](../../media/make-your-environment-available/uploader_environment_world_filter.png)
+1. Select **Create Asset**.
+1. In the **Create Results** window, confirm that the operation was successful and then click the **Close** button. 
+1. Select **Create Environment** to return to that tab.
+1. Replace the current information displayed in that tab with the information that applies to the *ChessRoom* Experience.
 
+    ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the BilliardsRoom Environment.](../../media/make-your-environment-available/013-create-chessroom-asset.png)
 
-### Filter Environment by Name
+1. Select **Create Asset**.
+1. In the **Create Results** window, confirm that the operation was successful and then click the **Close** button. 
 
-You can also filter the list by a specifying a text and that will only show Environments with that given text in the title.
+    You've now created three Experiences--one for each game room. This finishes our work in the **Create Environment** tab. The Uploader moves us to the **Update Environment** tab; we can stay there because this is where we select the correct Scene for each Experience.
 
-![A screenshot of Environments Text filter](../../media/make-your-environment-available/uploader_environment_name_filter.png)
+1. In the first **Environment Configuration** (the one that displays *(New) Dart Room*), click the field that displays **Select a Scene** and then, in the **Select** **SceneAsset** window, double-click **Dartrooms**.
+1. Repeat the step above for the other two Environment Configurations, selecting **BilliardsRoom** for #2 and **Chessroom** for #3.
+
+    ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the ChessRoom Environment.](../../media/make-your-environment-available/014-three-scenes-logo.png)
+
+    **Tip**: You might have to scroll down or make the **Mesh Environments** window taller to see all three Environment Configurations.
+
+You're now set up to generate the three different Environments. For instructions on completing the build and publish process, see the [Build and publish your Environment](./build-and-publish-your-environment.md) article.
+

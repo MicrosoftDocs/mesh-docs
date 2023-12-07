@@ -4,26 +4,32 @@ description: Learn how to create grab, hold, and throw interactions between avat
 ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 10/4/2023
+ms.date: 11/27/2023
 ms.topic: overview
-keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach
+keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation Mode
 ---
 
 # Grab, hold and throw with Interactables
 
-Mesh Interactables is a system for configuring objects with Unity scripts that defines interaction with an object or avatar behavior at runtime. The Mesh Toolkit contains scripts of different object types that can be defined. When a project runs, it sets up all the necessary prefabs and settings required for objects or the avatar to behave as defined. If you intend to use Interactables in [Playmode](../../debug-and-optimize-performance/playmode.md) during content development, include the Playmode Setup prefab in your scene. This sets everything up automatically so that all you have to do is click Play to test your objects. Note that the IK functionality seen in the Mesh app isn’t available in Playmode.
+## Overview
+
+Mesh Interactables is a system for configuring objects with Unity scripts that defines interaction with an object or avatar behavior at runtime. The Mesh Toolkit contains scripts of different object types that can be defined. When a project runs, it sets up all the necessary prefabs and settings required for objects or the avatar to behave as defined. If you'd like to see an approximate preview of what your interactable objects will look and feel like when they run in the Mesh app, be sure to [set up Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md). Note that the IK functionality seen in the Mesh app isn’t available in Mesh Emulation Mode.
 
 For objects you want the avatar to interact with, add a *MeshInteractableSetup* script. The properties for a group of objects that all behave the same can be set up with a parent *MeshInteractableSetup* script. The properties will be applied to all children with rigidbodies at runtime by automatically adding a *MeshInteractableBody* script. **MeshInteractableBody** will allow each interactable to behave independently. If you want to set up reactions to an object’s interactions with [Visual Scripting](../../script-your-scene-logic/visual-scripting/visual-scripting-overview.md), you can add the *MeshInteractableBody* yourself and create a script graph with a node to an available property, such as *OnHovered* or *OnSelected*, hooked up to an *OnStateChanged* node. For example, the following script graph will enable the cylinder while the button is pressed and disable it when the button is released. The button is fully interactable just by adding the script and a collider and you don't have to do anything else.
 
 ![MeshInteractableBody script graph](../../../media/enhance-your-environment/object-player-interactions/Picture10.png)
 
-Another option for interactable objects is to make them manipulable. Manipulable objects will move through space on the end of your interactor ray. Shortcut controls are available to rotate or translate the object. To turn this feature on, select the Manipulable box and then choose your desired settings. When manipulating objects in the MeshBrowser app you can turn on IK settings for the avatar hand to follow the object. Manipulable objects don’t require a rigidbody, but you should add one if you want the objects to have physics capabilities.
+## Manipulable objects
 
-Interactable objects can also be equippable (with or without also being manipulable). Equippable objects will attach to your avatar's hand when you equip them. The PC controls for equip are clicking the object or pressing ‘F’ while the object is selected. The Quest controls for equip are pressing the 'Grip' button while the object is selected. Equippable objects contain settings for IK targets for your avatar’s arm pose while the object is equipped. The IK targets are an offset from the avatar’s chest; this determines where the hand goes while the object is held or activated. Equippables also have the option of being *throwable*. When a throwable object is equipped, you can enter into aim mode by pressing and holding the left mouse button. This will allow your avatar’s arm to follow your mouse target and the object will be thrown when you release the left mouse button.
+Another option for interactable objects is to make them *manipulable*. Manipulable objects will move through space on the end of your interactor ray. Shortcut controls are available to rotate or translate the object. To turn this feature on, select the Manipulable box and then choose your desired settings. When manipulating objects in the Mesh app you can turn on IK settings for the avatar hand to follow the object. Manipulable objects don’t require a rigidbody, but you should add one if you want the objects to have physics capabilities.
+
+## Equippable objects
+
+Interactable objects can also be *equippable* (with or without also being manipulable). Equippable objects will attach to your avatar's hand when you equip them. The PC controls for equip are clicking the object or pressing ‘F’ while the object is selected. The Quest controls for equip are pressing the 'Grip' button while the object is selected. Equippable objects contain settings for IK targets for your avatar’s arm pose while the object is equipped. The IK targets are an offset from the avatar’s chest; this determines where the hand goes while the object is held or activated. Equippables also have the option of being *throwable*. When a throwable object is equipped, you can enter into aim mode by pressing and holding the left mouse button. This will allow your avatar’s arm to follow your mouse target and the object will be thrown when you release the left mouse button.
 
 All the Interactables components have interaction properties and methods available to Visual Scripting so you have an unlimited amount of ways to make them work together. 
 
-## *Mesh Interactable Setup*
+## Mesh Interactable Setup
 
 Setup script for defining the properties of an object that can be interacted with using XRI interactors.
 
@@ -155,5 +161,5 @@ This component is added automatically at runtime to interactable bodies; develop
 
 [Triggers, anchors and tethers](./triggers-anchors-and-tethers.md)
 [Create avatar spawn and teleport points](./create-avatar-spawn-and-teleport-points.md)
-[Physics interactions](../physics-interactions.md)
+[Physics interactions](../physics/mesh-physics-overview.md)
 [Enhanced features overview](../enhanced-features-overview.md)

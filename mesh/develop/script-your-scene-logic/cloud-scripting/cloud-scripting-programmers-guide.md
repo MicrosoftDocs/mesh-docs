@@ -34,7 +34,7 @@ For example, if you create a scene with a game object that has a Light component
 Additionally, some Mesh Cloud Scripting API objects don't have corresponding built-in Unity components. These are additional components you can create in Unity that are part of the Mesh Toolkit package.
 
 - Mesh Cloud Scripting component (Described above)
-- WebView component
+- WebSlate component
 
 ## Mapping the Unity DOM to the Mesh DOM
 
@@ -98,7 +98,7 @@ A simple example is shown below, where the MeshInteractableSetup component is ad
 
 ### WebSlateNode
 
-The WebSlate is a custom Unity component that is part of the Mesh Toolkit Authoring package. To add a WebSlate prefab to your scene, select **GameObject** > **Mesh Toolkit** > **WebSlate** from the menu bar. The website that is assigned to the WebSlate instance's URL property is rendered on the quad of this prefab.
+The WebSlate is a custom Unity component that is part of the Mesh Toolkit package. To add a WebSlate prefab to your scene, select **GameObject** > **Mesh Toolkit** > **WebSlate** from the menu bar. The website that is assigned to the WebSlate instance's URL property is rendered on the quad of this prefab.
 
 An example is shown below, where a WebSlate prefab has been added to the scene and assigned a Url:
 
@@ -107,7 +107,7 @@ An example is shown below, where a WebSlate prefab has been added to the scene a
         webSlateNode.Url = new System.Uri("https://en.wikipedia.org/wiki/Color");
 ```
 
-![WebView example](../../../media/mesh-scripting/programmers-guide/webview_example.jpg)
+![WebSlate example](../../../media/mesh-scripting/programmers-guide/webview_example.jpg)
 
 ### Listening for clicks
 
@@ -184,7 +184,7 @@ Creating geometry nodes through the API will leave parameters that are not setta
 
 ### RigidBodyNode
 
-Adding a Rigidbody component to an object will put its motion under the control of [Mesh Physics](../../enhance-your-environment/physics-interactions.md). Without adding any code, a Rigidbody object will be pulled downward by gravity and will react to collisions with other objects.
+Adding a Rigidbody component to an object will put its motion under the control of [Mesh Physics](../../enhance-your-environment/physics/mesh-physics-overview.md). Without adding any code, a Rigidbody object will be pulled downward by gravity and will react to collisions with other objects.
 
 **Note**: `GeometryNode.Friction` will return `staticFriction`. However, if set on the Mesh Cloud Scripting side, it will update both `staticFriction` and `dynamicFriction` on clients.
 

@@ -1,5 +1,5 @@
 items:
-  - name: Avatars in Teams release notes
+  - name: Avatars for Teams release notes
     items:
     - name: What's new
       href: avatars-release-notes.md
@@ -7,13 +7,22 @@ items:
       href: avatars-known-issues.md
   - name: Immersive spaces release notes
     items:
-    href: immersive-spaces-known-issues.md
+    - name: What's new
+      href: immersive-spaces-release-notes.md
+    - name: Known issues
+      href: immersive-spaces-known-issues.md
   - name: Mesh release notes
     items:
-    href: mesh-known-issues.md
+    - name: What's new
+      href: mesh-release-notes.md
+    - name: Known issues
+      href: mesh-known-issues.md
   - name: Mesh Toolkit release notes
     items:
-    href: mesh-toolkit-known-issues.md
+    - name: What's new
+      href: mesh-toolkit-release-notes.md 
+    - name: Known issues
+      href: mesh-toolkit-known-issues.md
   - name: Troubleshooting and FAQ
     href: mesh-troubleshooting.md
   - name: Feedback and support
