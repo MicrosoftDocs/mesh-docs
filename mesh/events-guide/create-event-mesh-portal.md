@@ -59,7 +59,7 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 
 1. In the Home page, select **Events** in the left nav.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Mesh-portal-event-tab-select.png" alt-text="Screenshot of Mesh on web shoting the event tab selected.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Mesh-portal-event-tab-select.png" alt-text="Screenshot of Mesh on web showing the event tab selected.":::
 
 1. Select **Create event** at the top right.
 
