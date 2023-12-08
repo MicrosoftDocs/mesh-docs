@@ -21,7 +21,7 @@ After you [create a new Unity project or choose an existing one](./create-a-new-
 
 - Only some Unity components, methods and properties are supported in Visual Scripting within Mesh environments.
 
-- If you're presented with the **Project Settinghs for Mesh** dialog which asks you toonfigure project settings, click the **Configure Settings** button. This ensures that your project is fully set up for Mesh.
+- If you're presented with the **Project Settinghs for Mesh** dialog which asks you to configure project settings, click the **Configure Settings** button. This ensures that your project is fully set up for Mesh.
 
     ![A screenshot of Project Settings for Mesh button which enables you to fully set up your project for Mesh.](../../media/build-your-basic-environment/004-project-settings-for-mesh-dialog.png)
 
