@@ -31,3 +31,14 @@ After you [create a new Unity project or choose an existing one](./create-a-new-
 
 - If you publish any materials, including things such as web pages or digital ads, that feature Unity Trademarks, they must carry a trademark notice. This notice can appear in credits, a footer, or other similar locations. For more information, see [Guidelines for Using Unity Trademarks](https://unity.com/legal/branding-trademarks).
 
+## Next Steps
+
+To enhance your project with features such as web content, Mesh Interactables, or Mesh Physics, go to:
+
+> [!div class="nextstepaction"]
+> [Enhanced features overview](../enhance-your-environment/enhanced-features-overview.md)
+
+If you're interested in some of the more artistic elements of experience creation such as modeling, texture, and lighting, go to:
+
+> [!div class="nextstepaction"]
+> [Design overview](../design/overview.md)

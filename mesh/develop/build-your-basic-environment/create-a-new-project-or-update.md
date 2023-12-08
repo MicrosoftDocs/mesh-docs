@@ -36,22 +36,6 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 1. Ensure that your project targets the Universal Render Pipeline (URP).
 1. [Add the Mesh Toolkit package.](add-the-mesh-toolkit-package.md)
 
-## General Tips
-
-- For design tips, see our series of design articles starting with [Designing for Mesh: Overview](../../develop/design/overview.md). There are also guides for implementing advanced features such as [Mesh Physics](../enhance-your-environment/physics/mesh-physics-overview.md) and [Mesh Scripting](../../develop/script-your-scene-logic/mesh-scripting-overview.md).
-
-- Environments can't depend on any scripts that aren't included in the Mesh Toolkit package. This includes scripts you've added to the project manually or ones obtained by installing other packages.
-
-- The only event callbacks that are allowed to be called by environment components are _ScriptMachine.TriggerUnityEvent_ and _ScriptMachine.TriggerAnimationEvent_.
-
-- Only some Unity components, methods and properties are supported in Visual Scripting within Mesh environments.
-
-- If you get a dialog asking you to configure project settings, allow this to ensure your project is fully set up for Mesh.
-
-- You can't use UnityUI (uGUI) for custom UI.
-
-- You must use Text Mesh Pro for displaying text.
-
 ## Next steps
 
 [Add the Mesh Toolkit package](add-the-mesh-toolkit-package.md)
