@@ -39,9 +39,9 @@ As explained in the article named [Add the Mesh Toolkit package](../../build-you
     > [!NOTE]
     > For future projects, keep in mind that the **Internal Name** field has a maximum of 40 characters, and the **Description** field has a maximum of 70 characters.
 
-3. To ensure you have the latest worlds that are available in Mesh on the web, select the **Refresh Environment collections** button.
+3. To ensure you have the latest Collections that are available in Mesh on the web, select the **Refresh Environment collections** button.
 
-4. Select the **Enviornment collection** drop down, and then select the Environment Collection you
+4. Select the **Environment collection** drop down, and then select the Environment Collection you
     want to upload your Environment to if it's not already selected.
 
 5. In the **Capacity** field, enter the capacity for your Environment.

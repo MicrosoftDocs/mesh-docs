@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environ
 
 # Mesh Development Overview
 
-Your custom Mesh experience starts out in Unity as a new project or existing sample. You can add content to the project/sample *Scene* and then upload it to a world in the Mesh portal as an *Environment*. An *organizer* can then create a Mesh event based on your Environment.
+Your custom Mesh experience starts out in Unity as a new project or existing sample. You can add content to the project/sample *Scene* and then upload it to a world in Mesh on the web as an *Environment*. An *organizer* can then create a Mesh event based on your Environment.
 
 In this section, you'll find articles that introduce you to the features of Mesh Toolkit, walk you through Unity setup, and describe the samples provided by Microsoft that you can use as a starting point for your Environment.
 
