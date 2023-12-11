@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 # Active known issues - Mesh Toolkit
 
-## Version 23.15
+## Version 23.15 (Preview)
 
 * The embedded videos show as black on Quest 2. (24096)
 
