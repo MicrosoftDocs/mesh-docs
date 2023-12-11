@@ -34,6 +34,6 @@ To use Microsoft Mesh, all users (including developers, event organizers, and ev
 
 These are required for:
 
-- **Group creation**: Used for Mesh World creation in the Mesh Portal.
+- **Group creation**: Used for Mesh World creation in Mesh on the web.
 - **SharePoint/OneDrive**: Used for custom event/template creation.
 - **Mailbox/Calendar**: Used for events creation and/or sending/receipt of event invites.
