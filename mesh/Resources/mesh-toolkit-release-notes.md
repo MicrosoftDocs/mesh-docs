@@ -55,7 +55,7 @@ These are the offerings and packages currently available. There may be slight di
 
     * New visuals of injected nodes:
 
-        | New visual | Injected nodes |
+        | New visuals | Injected nodes |
         | -------- | ------- |
         | ![an image of the profiling visual](media/profiling.png)  | profiling (start of flow)    |
         | ![an image of the data filtering visual](media/data-filtering.png) | data filtering   |
