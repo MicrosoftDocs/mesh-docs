@@ -19,6 +19,19 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 The following product issues have been fixed for this release:
 
+1. If a user declines to give Mesh access to their microphone upon first launch in Immersive space, they will be completely muted without additional notification. 
+
+    *Workaround:* If this occurs, you can try either of the following:
+    
+    - go into your Teams **Settings -> App permissions**. Select the **Mesh** app, and switch the **Media permissions** on.
+
+        ![A screenshot of the Teams settings menu](media/teams-settings.png)
+
+        ![the Mesh app permissions dialog in Teams settings](media/teams-app-permissions.png)
+
+    - or [clear the Teams cache](/microsoftteams/troubleshoot/teams-administration/clear-teams-cache).
+
+
 * When clicking the Immersive view in Teams, the user isn't able to get into the immersive space, and gets an error instead. (29271)
 
 * In the new Teams client, when the presenter changed shared content, an error dialog pops up and displays: "Can't display content". (22587)
