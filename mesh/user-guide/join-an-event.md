@@ -15,7 +15,7 @@ There are three ways for you to join an event in Immersive space in Microsoft Me
 
 1. Microsoft Outlook or Teams meeting invites on your calendar
 1. The Microsoft Mesh application on PC or Quest
-1. The Microsoft Mesh portal: https://portal.mesh.microsoft.com/ 
+1. Mesh on the web: https://portal.mesh.microsoft.com/ 
 
 # [PC](#tab/pc)
 
@@ -99,4 +99,4 @@ You can interact with any games, puzzles, or interactive elements in the event e
    > [Mesh user controls](mesh-user-controls.md#mesh-controls-overview)
 
    > [!div class="nextstepaction"]
-   > [Create an event in the Mesh portal](../events-guide/create-event-mesh-portal.md)
+   > [Create an event in Mesh on the web](../events-guide/create-event-mesh-portal.md)

@@ -52,8 +52,8 @@ You will need access to several administration tools:
 
     | Mesh Action | Access Needed |
     | --- | --- |
-    | Create a Mesh World  | Create Microsoft 365 group |
-    | Be added as a member to a Mesh world  | Access Microsoft 365 groups |
+    | Create a Mesh Collection  | Create Microsoft 365 group |
+    | Be added as a member to a Mesh Collection  | Access Microsoft 365 groups |
     | Create a Mesh event | Access to Microsoft 365 Calendar |
     | Be invited to a Mesh event | Access to Outlook Mail |
     | Create a template | Access to SharePoint |

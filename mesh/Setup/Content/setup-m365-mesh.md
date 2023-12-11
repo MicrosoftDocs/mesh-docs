@@ -17,14 +17,14 @@ In the Microsoft 365 Apps Admin Center admins can manage access to Mesh experien
 
 - Mesh app on PC
 - Mesh app on Quest 2
-- Mesh Portal
+- Mesh on the web
 
 By default, these Mesh experiences will be available to all users if a policy is not created to restrict access. Follow the [Configure Mesh in M365 Apps Admin Center](#optional-configure-mesh-in-m365-apps-admin-center) steps below to block specific groups or people.
 
 > [!NOTE]
 > All Mesh experiences are managed via one policy in the Microsoft 365 Apps Admin Center.
 >
-> As an admin, you can configure the Mesh policy to manage which users and groups in your organization have access to the Mesh app on PC, the Mesh app on Quest 2, and the Mesh portal.
+> As an admin, you can configure the Mesh policy to manage which users and groups in your organization have access to the Mesh app on PC, the Mesh app on Quest 2, and Mesh on the web.
 
 To manage access, please visit the M365 Apps Admin Center and configure the policy for Mesh.
 
@@ -61,7 +61,7 @@ For help, see the [immersive spaces in mesh licensing Troubleshooting and FAQs](
     Create a new policy by selecting **+ Create** then name the policy.
 1. Adjust the scope for this policy to determine who or what groups can access **all Mesh experiences**.
 
-    To be clear, if this policy is a applied to a user, they will be able to access Mesh on Meta Quest 2, the Mesh app on PC, and the Mesh Portal. If you do not configure this policy, users will have access to all three Mesh experiences.
+    To be clear, if this policy is a applied to a user, they will be able to access Mesh on Meta Quest 2, the Mesh app on PC, and Mesh on the web. If you do not configure this policy, users will have access to all three Mesh experiences.
 
 1. In the **Configure Settings** page, search for **Control user access to Microsoft Mesh experiences.**
 

@@ -4,14 +4,14 @@ description: Learn how to turn your environment into an Asset and then publish i
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/15/2023
+ms.date: 12/6/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, environment, build, publish, build and publish, uploader, Mesh uploader, thumbnail
 ---
 
 # Build and publish your environment
 
-After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen *Collection* (formerly called "World") in Mesh on the web, where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that World can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
+After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen *Collection* (formerly called "World") in Mesh on the web, where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that Collection can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
 
 ## Configure your project settings
 
@@ -25,11 +25,11 @@ After you finish adding all your scene content, the next step is to build the sc
 
 ## Using the Mesh Uploader
 
-## Mesh Uploader versions
+### Mesh Uploader versions
 
 As explained in the article named [Add the Mesh Toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh Toolkit: the stable build and the preview build. Note that from time to time you may see minor differences between the two versions.
 
-## Sign in to the Mesh Uploader
+### Sign in to the Mesh Uploader
 
 1.  On the menu bar, select **Mesh Toolkit** > **Environments**.
 
@@ -44,9 +44,9 @@ As explained in the article named [Add the Mesh Toolkit package](../build-your-b
     > The **Internal Name** field has a maximum of 100 characters, and the
     **Description** field has a maximum of 200 characters.
 
-1. To ensure you have the latest worlds that are available, select the **Refresh List of Mesh Worlds** button.
+1. To ensure you have the latest Collections that are available, select the **Refresh Environment collections** button.
 
-1. Select the **Mesh World** drop down, and then select the world you
+1. Select the **Environment collection** drop down, and then select the Collection you
     want to upload your Environment to if it's not already selected.
 
 1. In the **Capacity** field, enter the capacity for your Environment.
@@ -71,7 +71,7 @@ As explained in the article named [Add the Mesh Toolkit package](../build-your-b
     have an Environment configuration created which displays the name you
     added in the **Create Environment** tab: *Vinnie's Dartroom*.
 
-## Configure the Environment for build and publish
+### Configure the Environment for build and publish
 
 1. Select the field that displays **Select a Scene** and then, in the
     **Select** **SceneAsset** window, double-click the scene in your
@@ -98,7 +98,7 @@ As explained in the article named [Add the Mesh Toolkit package](../build-your-b
 
         ![A screen shot of the PC and Android platforms buttons with both platforms selected](../../media/make-your-environment-available/039-build-both-on.png)
 
-## Build and publish the Environment
+### Build and publish the Environment
 
 1. Select the **Build and Publish** button.
 
@@ -128,7 +128,7 @@ After your environment was uploaded, you will be able to see for what platforms 
 When uploading repeatedly to the same Environment, please note that only the platforms from the last iteration will be available.
 For example, if you built and publish an Environment for PC platform, but later want to include Android, you will need to build for both PC and Android. Building for Android only will cause the PC build to be lost.
 
-## Environment thumbnails
+### Environment thumbnails
 
 You may want to add a custom thumbnail image that will be added to your Environment listings in Mesh on the web or the Mesh App. This comes in handy because it gives you a visual reminder of what the Environment looks like.
 
@@ -137,7 +137,7 @@ You can customize the thumbnails from your environment in two ways:
 1. You can add a **MeshThumbnailCamera** to your scene which will ensure that you always get the latest changes from your scene in the thumbnails.
 2. You can specify a folder containing the images you want to use for the thumbnails.
 
-### Option 1 - Adding the thumbnail camera
+#### Option 1 - Adding the thumbnail camera
 
 **To add the thumbnail camera to the scene and set its view**:
 
@@ -173,7 +173,7 @@ You can customize the thumbnails from your environment in two ways:
 
 1. When you're ready to publish your environment, select **Build & Publish**. The  thumbnail will be uploaded together with your environment.
 
-### Option 2 - Custom thumbnail folder
+#### Option 2 - Custom thumbnail folder
 
 If you prefer, you can create a custom thumbnail, then save it in a designated "thumbnail folder", and then use that image as your thumbnail.
 

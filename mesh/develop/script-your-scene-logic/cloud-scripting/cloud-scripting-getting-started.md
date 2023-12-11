@@ -140,7 +140,8 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
    ![A screen shot of the Mesh Uploader with deployment configuration options display.](../../../media/mesh-scripting/getting-started/UploaderCreateUIProjectSettings-logo.png)
 
-1. In the **Mesh Environments** window, **Update Environment** tab, select your environment and scene to upload. If the scene has a Mesh Cloud Scripting component, the deployment configurations will be shown along with the selected scene. Select the **Modify Deployment Configs** tickbox to add or change the configs associated with the current environment and scene. Unselect the tickbox to save and update the settings and you should see the updated configs, as illustrated below.
+1. In the **Mesh Environments** window, **Update Environment** tab, select your environment and scene to upload. If the scene has a Mesh Cloud Scripting component, the deployment configurations will be shown along with the selected scene. Press **Edit Settings** to add or change the configs associated with the current environment and scene. Press **Save Settings** to save and update the settings and you should see the updated configs, as illustrated below.
+
 
    ![A screen shot of the Mesh Environments window in the Update Environment tab with deployment configuration options displayed.](../../../media/mesh-scripting/getting-started/UploaderUpdateUIProjectSettings-logo.png)
 
@@ -148,11 +149,13 @@ You can use the specific settings UI in MeshUploader to define your Azure subscr
 
    ![A screen shot of the Mesh Environments window with various configuration options displayed.](../../../media/mesh-scripting/getting-started/001-update-environment-tab-logo.png)
 
+
 1. As the Uploader builds and publishes your Environment, the Mesh Cloud Scripting infrastructure will be provisioned in Azure and published.
 
    ![A screen shot of three progress bars showing the progress of related of building and publishing for Mesh cloud infrastructure.](../../../media/mesh-scripting/getting-started/UploaderIntegrationDeployingMeshapp.png)
 
 1. When the Uploader has finished, you should see the Mesh Cloud Scripting Service provisioning and publishing operation results in the results window
+
 
 > [!NOTE]
 > It's expected that there will be multiple entries for *Cloud Scripting Metadata* in the results window.

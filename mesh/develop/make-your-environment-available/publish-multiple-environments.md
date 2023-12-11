@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, environment, Unity, build, publish, build and publish,
 
 ## Overview
 
-There might be times when you can benefit by having a single Unity project that can generate multiple Experiences. Here's one example: Let's say you want to build a series of gaming Experiences that'll reuse a lot of the same assets. You can create a single Unity project that contains all your assets, then create each individual game room as a Scene, and then use the Mesh Uploader to turn the Scenes into Experiences and upload them to a World in Mesh on the web.
+There might be times when you can benefit by having a single Unity project that can generate multiple Experiences. Here's one example: Let's say you want to build a series of gaming Experiences that'll reuse a lot of the same assets. You can create a single Unity project that contains all your assets, then create each individual game room as a Scene, and then use the Mesh Uploader to turn the Scenes into Experiences and upload them to a Collection in Mesh on the web.
 
 Using the scenario above as an example, here's what you would do:
 
@@ -49,7 +49,7 @@ As explained in the article named [Add the Mesh Toolkit package](../build-your-b
 1. Select **Create Environment** to return to that tab.
 1. Replace the current information displayed in that tab with the information that applies to the *ChessRoom* Experience.
 
-    ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the BilliardsRoom Environment.](../../media/make-your-environment-available/013-create-chessroom-asset.png)
+    ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the BilliardsRoom Environment.](../../media/make-your-environment-available/013-create-chessroom-asset-logo.png)
 
 1. Select **Create Asset**.
 1. In the **Create Results** window, confirm that the operation was successful and then click the **Close** button. 

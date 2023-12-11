@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 
 # Cloud Scripting programmer's guide
 
-This guide describes how to use the Mesh Cloud Scripting API and developer tools to build Environments (these start out as projects in Unity, and are then uploaded to a Mesh World). We recommend that you first read the [Set cloud Scripting infrastructure in Azure](cloud-scripting-setup-infrastructure.md) to familiarize yourself with the concepts and basic architecture of Mesh Cloud Scripting.
+This guide describes how to use the Mesh Cloud Scripting API and developer tools to build Environments (these start out as projects in Unity, and are then uploaded to a Mesh Collection). We recommend that you first read the [Set cloud Scripting infrastructure in Azure](cloud-scripting-setup-infrastructure.md) to familiarize yourself with the concepts and basic architecture of Mesh Cloud Scripting.
 
 This section describes the features and interface of the Mesh Cloud Scripting API, which is used to write the scripts that drive behaviors in Environments.
 
