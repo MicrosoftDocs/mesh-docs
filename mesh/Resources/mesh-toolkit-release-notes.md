@@ -4,7 +4,7 @@ description: Mesh Toolkit release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 11/14/2023
+ms.date: 12/11/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 ---
@@ -17,6 +17,105 @@ For purposes of this document, there are two categories of users:
 
 * Creators: Technical artist and developers building with the Mesh Toolkit
 * IT admins: Managers working in Azure
+
+## Version 23.15 (Preview)
+
+>[!Caution]
+>This is a preview release of the Mesh Toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh Toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh Toolkit until a stable public version is released, and stable public versions will not have a **-preview** tag at the end of the version number.  
+> 
+> **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
+
+### Version list and dates
+
+These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
+
+>[!Note]
+>The version number for your environment project's Mesh Toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh Toolkit package, which releases only after the matching Mesh app is available in stores.
+
+| Mesh offering/package   | Version | Date released
+| ----------- | ----------- | ----------- |
+| Mesh Toolkit package      |   5.2315.0     | 2023-12-11  |
+| Mesh (PC/Quest)   |  5.2315.0       |  2023-12-11  |
+
+### What's new
+
+#### Scripting
+
+* Using Timer nodes in subgraphs no longer causes repeated error messages related to `OptimizedTimerUnitUpdateScheduler` to be logged. (31866)
+
+* The visual script graph UI now includes usage notes and helpful hints on Mesh's and Unity's visual script nodes.
+
+* It's no longer necessary to add `Microsoft.Mesh.VisualScripting.xml` to version control. If it has been previously deployed into your Unity project, it can be safely deleted and removed from version control.
+
+* In the **Local Script Scope** component, the **Share visual script variables on this Game Object** setting now defaults to being off when a new instance of this component is added to the scene. Existing instances are unaffected.
+
+* The special script nodes injected by Mesh at runtime have significantly improved visuals and handling now:
+
+    * The visual footprint of injected nodes has been reduced to remove visual clutter and to make script flows easier to follow while they're executing. They're now firmly attached to one of the neighboring user-defined nodes.
+
+    * New visuals of injected nodes:
+
+        | New visual | Injected nodes |
+        | -------- | ------- |
+        | ![an image of the profiling visual](media/profiling.png)  | profiling (start of flow)    |
+        | ![an image of the data filtering visual](media/data-filtering.png) | data filtering   |
+        | ![an image of the state tracking visual](media/state-tracking.png)    | state tracking    |
+
+    * When the data filtering node blocks data and passes on a `Null` value instead, its icon changes and its tooltip shows diagnostic information on what data is blocked most recently:
+
+        ![an image of the data filter node blocking data showing diagnostic information on what data is blocked most recently](media/blocked-data-forbidden-text.png)
+
+    * When you edit script graphs at runtime in the Emulator, injected nodes are now automatically injected and removed as required.
+
+* Script graphs were saved with redundant type and versioning information in some object references. This will not visibly impact user experience. This redundant information is no longer included. (30688)
+
+* The **Mesh Visual Scripting Diagnostics** panel now correctly displays diagnostics for all selected `ScriptMachine` components if more than one is selected in the transform hierarchy. Previously, only diagnostics for the first selected ScriptMachine were displayed. If several were selected at the same time, errors were logged to the console panel. (30873)
+
+* Accessing **Travel Point** methods and properties now works in all cases. Previously, when the **Travel Point** was set up in isolation and not nested in an explicit **Travel Point Group**, and a reference to it was passed to the method or property node from another script node (for example, from a Get Variable node), the **Travel Point** reference was incorrectly filtered out at runtime and the method call or property access would fail to work.
+
+#### Uploader
+
+* The ContentVersion has been incremented to 1.22.0: Newly published content will only be visible in recent MeshBrowsers.
+
+* Added new prebuild validation which will only allow game objects on certain layers.
+
+* Renamed **Create Asset** button to **Create Environment**.
+
+* Fixed build status in the result report, when there are invalid assets during the build phase.
+
+* If the level of diagnostic data is not set by the tenant admin, then by default the Uploader will send optional diagnostics.
+
+* Renamed menu from **Mesh Toolkit/Configure/Default Font** to **Mesh Toolkit/Configure/Apply Default Font Settings**.
+
+* Renamed menu from **Mesh Toolkit/Configure/Project Settings** to **Mesh Toolkit/Configure/Apply Project Settings**.
+
+* Renamed button **Add Provisional Thumbnail** to **Add guidance thumbnails**.
+
+* We now show an error dialog when user picks a folder outside of the project.
+
+* Fixed bugs in the Uploader extensions system:
+
+    * Metadata stages were accidentally being run multiple times.
+
+    * Metadata results were being ignored in certain cases.
+
+* We now return to an empty default scene after building when there was no active scene.
+
+* We now avoid displaying collections that could not be validated in Mesh.
+
+* We now show the toolkit package version in the Uploader Window.
+
+* Uploader build platforms are now stored as per project settings instead of per computer settings.
+
+* Improved how the uploader handles an operation being cancelled.
+
+* Prevent refreshing asset list when changing window focus.
+
+* Added an updated title and warning when using the preview version of the toolkit.
+
+* We cleared a confusing progress bar when Unity reloads assembly during an operation.
+
+* We now prompt the user to re-authenticate if authentication has expired when retrying an operation.
 
 ## Version 23.14
 

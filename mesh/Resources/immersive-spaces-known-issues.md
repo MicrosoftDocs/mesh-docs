@@ -61,6 +61,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ### Current limitations
 
 1. On Quest devices: users who remain idle for some time will be ejected out of an event. (21976)
+
 1. There is a room size limit of 16 persons for immersive users, while there’s no limit on the number of participants in a 2D Teams meeting. 
 
 1. Content limitations: PowerPoint Live and Whiteboard are not supported. If a meeting participant is using Powerpoint Live, it will not display on the immersive space stage. Same for whiteboard.
@@ -74,23 +75,13 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 ### Other known issues
 
-1. When clicking the Immersive view in Teams, the user isn't able to get into the immersive space, and gets an error instead. (29271)
-
-1. In the new Teams client, when the presenter changed shared content, an error dialog pops up and displays: "Can't display content". (22587)
-
-1. In the new Teams client, going from immersive view back to the Teams gallery, and then go back to immersive space for the second time will crash Teams. (22854)
-
 1. If a user starts a meeting from a Teams channel as opposed to joining a scheduled meeting, they will not be able to change environments.
 
 1. On Quest, if you try to rotate the avatar preview in the Avatar Customizer, your field of view will also move.
 
 1. Mesh immersive spaces do not properly support low bandwidth situation: users who are experiencing poor network quality may see problems such as missing avatars and audio glitches. We are actively working on integrating notifications to alert users when they are in this state.
 
-1. When pressing the right mouse button inside the viewport and releasing it outside the viewport, whichever keyboard button pressed at the time of release will continue to trigger as soon as the user re-enters the immersive space. Consequently, the user may walk or rotate (possibly other things) even when it's unintended. To resolve the issue, the user needs to trigger the same button again. (27944)
-
 1. Pressing Mesh buttons + the **Enter** key on the keypad produces no action. The same **Enter** key on the main keyboard selects the button and executes the associated action. (26462)
-
-1. On Quest devices: users who remain idle for some time will be ejected out of an event. (21976)
 
 ## Submit Feedback
  

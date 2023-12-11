@@ -4,18 +4,14 @@ description: Active known issues for Mesh
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 12/4/2023
+ms.date: 12/11/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
 
 # Active known issues - Mesh
 
-## Version 5.2314.0
-
-* Searching for co-organizers on the Invite page yields no results. (29365)
-
-* On Quest, the user is disconnected from an event if headset is removed. (25764)
+## Version 5.2315.0
 
 * Pressing Mesh buttons + the **Enter** key on keypad produces no action, the same **Enter** key on the main keyboard selects the button and executes the associated action. (26462)
 
@@ -39,6 +35,5 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 * On Quest devices: users who remain idle for some time will be ejected out of an event. (21976)
 
-* The Megaphone indicator is currently broken - it doesn't tell the users who's currently using the megaphone feature. (29315)
 
 
