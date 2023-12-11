@@ -43,13 +43,13 @@ These are the offerings and packages currently available. There may be slight di
 
 * Using Timer nodes in subgraphs no longer causes repeated error messages related to `OptimizedTimerUnitUpdateScheduler` to be logged. (31866)
 
-* The visual script graph UI now includes usage notes and helpful hints on Mesh's and Unity's visual script nodes.
+* The visual script graph UI now includes usage notes and helpful hints on Mesh's and Unity's visual script nodes. (25922)
 
-* It's no longer necessary to add `Microsoft.Mesh.VisualScripting.xml` to version control. If it has been previously deployed into your Unity project, it can be safely deleted and removed from version control.
+* It's no longer necessary to add `Microsoft.Mesh.VisualScripting.xml` to version control. If it has been previously deployed into your Unity project, it can be safely deleted and removed from version control. (25922)
 
-* In the **Local Script Scope** component, the **Share visual script variables on this Game Object** setting now defaults to being off when a new instance of this component is added to the scene. Existing instances are unaffected.
+* In the **Local Script Scope** component, the **Share visual script variables on this Game Object** setting now defaults to being off when a new instance of this component is added to the scene. Existing instances are unaffected. (26551)
 
-* The special script nodes injected by Mesh at runtime have significantly improved visuals and handling now:
+* The special script nodes injected by Mesh at runtime have significantly improved visuals and handling now (30925):
 
     * The visual footprint of injected nodes has been reduced to remove visual clutter and to make script flows easier to follow while they're executing. They're now firmly attached to one of the neighboring user-defined nodes.
 
@@ -71,7 +71,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * The **Mesh Visual Scripting Diagnostics** panel now correctly displays diagnostics for all selected `ScriptMachine` components if more than one is selected in the transform hierarchy. Previously, only diagnostics for the first selected ScriptMachine were displayed. If several were selected at the same time, errors were logged to the console panel. (30873)
 
-* Accessing **Travel Point** methods and properties now works in all cases. Previously, when the **Travel Point** was set up in isolation and not nested in an explicit **Travel Point Group**, and a reference to it was passed to the method or property node from another script node (for example, from a Get Variable node), the **Travel Point** reference was incorrectly filtered out at runtime and the method call or property access would fail to work.
+* Accessing **Travel Point** methods and properties now works in all cases. Previously, when the **Travel Point** was set up in isolation and not nested in an explicit **Travel Point Group**, and a reference to it was passed to the method or property node from another script node (for example, from a Get Variable node), the **Travel Point** reference was incorrectly filtered out at runtime and the method call or property access would fail to work. (31414)
 
 #### Uploader
 
