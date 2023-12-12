@@ -19,7 +19,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 The following product issues have been fixed for this release:
 
-1. If a user declines to give Mesh access to their microphone upon first launch in immersive spaces, they'll be completely muted without additional notification. 
+* If a user declines to give Mesh access to their microphone upon first launch in immersive spaces, they'll be completely muted without additional notification. 
 
     *Workaround:* If this occurs, you can try either of the following:
     
