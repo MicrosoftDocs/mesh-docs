@@ -21,7 +21,7 @@ For purposes of this document, there are two categories of users:
 ## Version 23.15 (Preview)
 
 >[!Caution]
->This is a preview release of the Mesh Toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh Toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh Toolkit until a stable public version is released, and stable public versions will not have a **-preview** tag at the end of the version number.  
+>This is a preview release of the Mesh Toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh Toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh Toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
 > 
 > **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
 
@@ -47,7 +47,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * It's no longer necessary to add `Microsoft.Mesh.VisualScripting.xml` to version control. If it has been previously deployed into your Unity project, it can be safely deleted and removed from version control. (25922)
 
-* In the **Local Script Scope** component, the **Share visual script variables on this Game Object** setting now defaults to being off when a new instance of this component is added to the scene. Existing instances are unaffected. (26551)
+* In the **Local Script Scope** component, the **Share visual script variables on this GameObject** setting now defaults to being off when a new instance of this component is added to the scene. Existing instances are unaffected. (26551)
 
 * The special script nodes injected by Mesh at runtime have significantly improved visuals and handling now (30925):
 
@@ -71,27 +71,27 @@ These are the offerings and packages currently available. There may be slight di
 
 * The **Mesh Visual Scripting Diagnostics** panel now correctly displays diagnostics for all selected `ScriptMachine` components if more than one is selected in the transform hierarchy. Previously, only diagnostics for the first selected ScriptMachine were displayed. If several were selected at the same time, errors were logged to the console panel. (30873)
 
-* Accessing **Travel Point** methods and properties now works in all cases. Previously, when the **Travel Point** was set up in isolation and not nested in an explicit **Travel Point Group**, and a reference to it was passed to the method or property node from another script node (for example, from a Get Variable node), the **Travel Point** reference was incorrectly filtered out at runtime and the method call or property access would fail to work. (31414)
+* Accessing **Travel Point** methods and properties now works in all cases. Previously, when the **Travel Point** was set up in isolation and not nested in an explicit **Travel Point Group**, and a reference to it was passed to the method or property node from another script node (for example, from a **Get Variable** node), the **Travel Point** reference was incorrectly filtered out at runtime and the method call or property access would fail to work. (31414)
 
 #### Uploader
 
-* The ContentVersion has been incremented to 1.22.0: Newly published content will only be visible in recent MeshBrowsers.
+* The `ContentVersion` has been incremented to 1.22.0. Newly published content will only be visible in recent versions of the Mesh app.
 
-* Added new prebuild validation which will only allow game objects on certain layers.
+* Added new prebuild validation which will only allow GameObjects on certain layers.
 
-* Renamed **Create Asset** button to **Create Environment**.
+* Renamed the **Create Asset** button to **Create Environment**.
 
-* Fixed build status in the result report, when there are invalid assets during the build phase.
+* Fixed build status in the result report when there are invalid assets during the build phase.
 
 * If the level of diagnostic data is not set by the tenant admin, then by default the Uploader will send optional diagnostics.
 
-* Renamed menu from **Mesh Toolkit/Configure/Default Font** to **Mesh Toolkit/Configure/Apply Default Font Settings**.
+* Renamed the menu item from **Mesh Toolkit/Configure/Default Font** to **Mesh Toolkit/Configure/Apply Default Font Settings**.
 
-* Renamed menu from **Mesh Toolkit/Configure/Project Settings** to **Mesh Toolkit/Configure/Apply Project Settings**.
+* Renamed the menu item from **Mesh Toolkit/Configure/Project Settings** to **Mesh Toolkit/Configure/Apply Project Settings**.
 
 * Renamed button **Add Provisional Thumbnail** to **Add guidance thumbnails**.
 
-* We now show an error dialog when user picks a folder outside of the project.
+* We now show an error dialog when the user picks a folder outside of the project.
 
 * Fixed bugs in the Uploader extensions system:
 
@@ -103,7 +103,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * We now avoid displaying collections that could not be validated in Mesh.
 
-* We now show the toolkit package version in the Uploader Window.
+* We now show the Toolkit package version in the Uploader Window.
 
 * Uploader build platforms are now stored as per project settings instead of per computer settings.
 
@@ -111,7 +111,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * Prevent refreshing asset list when changing window focus.
 
-* Added an updated title and warning when using the preview version of the toolkit.
+* Added an updated title and warning when using the preview version of the Toolkit.
 
 * We cleared a confusing progress bar when Unity reloads assembly during an operation.
 
@@ -187,7 +187,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * Fixed a bug where missing TMP settings will not setup default font.
 
-* Fixed `ArgumentNullException` when using **Toggle [NoUpload] suffix** without selecting a game object.
+* Fixed `ArgumentNullException` when using **Toggle [NoUpload] suffix** without selecting a GameObject.
 
 * Added handler for the graph error when the Uploader fails to find the OneDrive folder.
 

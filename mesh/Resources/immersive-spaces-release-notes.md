@@ -19,7 +19,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 The following product issues have been fixed for this release:
 
-1. If a user declines to give Mesh access to their microphone upon first launch in Immersive space, they will be completely muted without additional notification. 
+1. If a user declines to give Mesh access to their microphone upon first launch in immersive spaces, they'll be completely muted without additional notification. 
 
     *Workaround:* If this occurs, you can try either of the following:
     
@@ -34,11 +34,11 @@ The following product issues have been fixed for this release:
 
 * When clicking the Immersive view in Teams, the user isn't able to get into the immersive space, and gets an error instead. (29271)
 
-* In the new Teams client, when the presenter changed shared content, an error dialog pops up and displays: "Can't display content". (22587)
+* In the new Teams client, when the presenter changes shared content, an error dialog pops up and displays: "Can't display content". (22587)
 
-* In the new Teams client, going from immersive view back to the Teams gallery, and then go back to immersive space for the second time will crash Teams. (22854)
+* In the new Teams client, going from immersive view back to the Teams gallery and then back to immersive space for the second time will crash Teams. (22854)
 
-* When pressing the right mouse button inside the viewport and releasing it outside the viewport, whichever keyboard button pressed at the time of release will continue to trigger as soon as the user re-enters the immersive space. Consequently, the user may walk or rotate (possibly other things) even when it's unintended. To resolve the issue, the user needs to trigger the same button again. (27944)
+* When pressing the right mouse button inside the viewport and releasing it outside the viewport, whichever keyboard button pressed at the time of release will continue to trigger as soon as the user re-enters the immersive space. As a result, the user might walk or rotate (and possibly do other things) even when it's unintended. To resolve the issue, the user needs to trigger the same button again. (27944)
 
 
 ## Version 5.2314.0
@@ -50,7 +50,6 @@ The following product issues have been fixed for this release:
 * The **Prejoin** dialog now show a thumbnail picture of the event. (20071)
 
 * When trying to throw an object by clicking on the object, the cursor no longer shows. (25542)
-
 * On the Teams meeting details page, event dates and times according now align with the Mesh event list to account for all-day or multiday events. (28309)
 
 * All-day event times are no longer being converted to local time zones. (26665)
