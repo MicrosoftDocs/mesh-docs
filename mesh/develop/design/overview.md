@@ -4,7 +4,7 @@ description: An overview for technical artists and developers for how to design 
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/9/2023
+ms.date: 12/8/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, unity, design, models, modeling, prerequisites
 ---
@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, unity, design, models, modeling, prerequisites
 
 This is a guide for artists, designers and developers who want to create Mesh experiences using Unity and possibly other design tools such as 3D modeling programs. Mesh has unique style and development guidelines that should be reviewed to ensure that Attendees at Mesh events are provided with the best experiences possible.
 
-In Unity, you create a project from scratch or use one of our existing samples as a starting point, then add content, and then publish the project as an *Environment* to a World in the Mesh portal. When an Event Organizer creates a Mesh event, they can choose to hold their Event in the custom Environment you created.  
+In Unity, you create a project from scratch or use one of our existing samples as a starting point, then add content, and then publish the project as an *Environment* to a Collection in Mesh on the web. When an Event Organizer creates a Mesh event, they can choose to hold their Event in the custom Environment you created.  
 
 Mesh is a new product and is always evolving to meet the needs of our partners. This and other articles cover the design guidelines for creating 3D Environments for various use cases.
 

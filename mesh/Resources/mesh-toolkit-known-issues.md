@@ -58,11 +58,7 @@ If you switch the focus from Unity to another app while Unity is playing, the Me
 
 Changing floor or any platform game object's layer to 'NavMesh' is sufficient.
 
-### Multiple "Cloud Scripting Metadata" Uploader stages are shown when publishing environment to PC and Android
-
-The "Cloud Scripting Metadata" stage in the Uploader results window shows twice when publishing an environment to both PC and Androind. This is expected and a change to make it more clear is coming soon.
-
-### Adding multiple lights as children of the same transform  will cause an error
+#### Adding multiple lights as children of the same transform  will cause an error
 
 Unity doesn't support adding multiple lights to the same game object, so adding two light nodes to the same transform node will cause a runtime error.
 
