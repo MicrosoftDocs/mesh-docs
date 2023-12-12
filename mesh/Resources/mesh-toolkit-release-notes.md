@@ -125,7 +125,7 @@ These are the offerings and packages currently available. There may be slight di
 
 #### Mesh 101 Tutorial
 
-* The **Create Asset** button is now **Create Environment**.  See [Mesh 101 Tutorial Chapter 5: Make your environment available for testing](https://learn.microsoft.com/mesh/develop/getting-started/mesh-101-tutorial/mesh-101-05-make-environment-available).
+* The **Create Asset** button is now **Create Environment**.  See [Mesh 101 Tutorial Chapter 5: Make your environment available for testing](/mesh/develop/getting-started/mesh-101-tutorial/mesh-101-05-make-environment-available).
 
 ## Version 23.14
 
