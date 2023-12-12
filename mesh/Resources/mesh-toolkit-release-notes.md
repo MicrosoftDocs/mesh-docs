@@ -73,6 +73,12 @@ These are the offerings and packages currently available. There may be slight di
 
 * Accessing **Travel Point** methods and properties now works in all cases. Previously, when the **Travel Point** was set up in isolation and not nested in an explicit **Travel Point Group**, and a reference to it was passed to the method or property node from another script node (for example, from a **Get Variable** node), the **Travel Point** reference was incorrectly filtered out at runtime and the method call or property access would fail to work. (31414)
 
+#### WebSlate
+
+* Added the option to prevent the WebSlate from suspending when users are at a distance, or when it is offscreen. Useful for slates that need to keep running in the background, but can cause performance issues if overused. Normally, to save resources, WebSlates suspend 30 seconds after going offscreen or becoming too small to be useful.
+
+    This option can be seen in Unity's inspector when a WebSlate is selected, as a checkbox on the WebSlate script called **Prevent Suspension**.
+
 #### Uploader
 
 * The `ContentVersion` has been incremented to 1.22.0. Newly published content will only be visible in recent versions of the Mesh app.
@@ -116,6 +122,10 @@ These are the offerings and packages currently available. There may be slight di
 * We cleared a confusing progress bar when Unity reloads assembly during an operation.
 
 * We now prompt the user to re-authenticate if authentication has expired when retrying an operation.
+
+#### Mesh 101 Tutorial
+
+* The **Create Asset** button is now **Create Environment**.  See [Mesh 101 Tutorial Chapter 5: Make your environment available for testing](https://learn.microsoft.com/mesh/develop/getting-started/mesh-101-tutorial/mesh-101-05-make-environment-available).
 
 ## Version 23.14
 
