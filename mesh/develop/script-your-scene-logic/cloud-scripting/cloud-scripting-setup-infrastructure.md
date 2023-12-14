@@ -288,7 +288,7 @@ In the case that you have stale or unused Mesh Cloud Scripting services, follow 
 
     :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-first-filter.png" alt-text="EnvironmentName filter in azure":::
 
-    c. Select the corresponding environment you wish to cleanup, and click Apply to filter the resources.
+    c. Find the resources that match the environments you wish to delete.
 
     :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-second-filter.png" alt-text="Resource filter in azure":::
 
