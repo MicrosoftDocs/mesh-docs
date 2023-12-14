@@ -4,7 +4,7 @@ description: Immersive spaces in Teams release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 12/4/2023
+ms.date: 12/11/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -13,31 +13,58 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes and known issues for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
+## Version 5.2315.0 (Preview)
+
+### Resolved product issues
+
+The following product issues have been fixed for this release:
+
+* If a user declines to give Mesh access to their microphone upon first launch in immersive spaces, they'll be completely muted without additional notification. 
+
+    *Workaround:* If this occurs, you can try either of the following:
+    
+    - go into your Teams **Settings -> App permissions**. Select the **Mesh** app, and switch the **Media permissions** on.
+
+        ![A screenshot of the Teams settings menu](media/teams-settings.png)
+
+        ![the Mesh app permissions dialog in Teams settings](media/teams-app-permissions.png)
+
+    - or [clear the Teams cache](/microsoftteams/troubleshoot/teams-administration/clear-teams-cache).
+
+
+* When clicking the Immersive view in Teams, the user isn't able to get into the immersive space, and gets an error instead. (29271)
+
+* In the new Teams client, when the presenter changes shared content, an error dialog pops up and displays: "Can't display content". (22587)
+
+* In the new Teams client, going from immersive view back to the Teams gallery and then back to immersive space for the second time will crash Teams. (22854)
+
+* When pressing the right mouse button inside the viewport and releasing it outside the viewport, whichever keyboard button pressed at the time of release will continue to trigger as soon as the user re-enters the immersive space. As a result, the user might walk or rotate (and possibly do other things) even when it's unintended. To resolve the issue, the user needs to trigger the same button again. (27944)
+
+
 ## Version 5.2314.0
 
 ### Resolved product issues
 
-1. Fixed: On Quest, two different mics are shown and both are named *Quest*. The second one won't capture audio, and no error is shown. (20795)
+* Fixed: On Quest, two different mics are shown and both are named *Quest*. The second one won't capture audio, and no error is shown. (20795)
 
-1. The **Prejoin** dialog now show a thumbnail picture of the event. (20071)
+* The **Prejoin** dialog now show a thumbnail picture of the event. (20071)
 
-1. When trying to throw an object by clicking on the object, the cursor no longer shows. (25542)
+* When trying to throw an object by clicking on the object, the cursor no longer shows. (25542)
+* On the Teams meeting details page, event dates and times according now align with the Mesh event list to account for all-day or multiday events. (28309)
 
-1. On the Teams meeting details page, event dates and times according now align with the Mesh event list to account for all-day or multiday events. (28309)
+* All-day event times are no longer being converted to local time zones. (26665)
 
-1. All-day event times are no longer being converted to local time zones. (26665)
+* Seats in the immersive spaces no longer show as blue and available even when there's another user sitting on it. (21535)
 
-1. Seats in the immersive spaces no longer show as blue and available even when there's another user sitting on it. (21535)
+* When joining a Teams meeting, users on Quest no longer see a screenshare instead of the default background wall in the Lakehouse environment. (27425)
 
-1. When joining a Teams meeting, users on Quest no longer see a screenshare instead of the default background wall in the Lakehouse environment. (27425)
+* The settings dialogs now show the current selected state for many settings. (17308)
 
-1. The settings dialogs now show the current selected state for many settings. (17308)
+* On Quest: the Mesh UI no longer locks with the user's head view. As you turn your head, the Mesh UI will now remain stationary. (13061)
 
-1. On Quest: the Mesh UI no longer locks with the user's head view. As you turn your head, the Mesh UI will now remain stationary. (13061)
+* On Quest, you'll no longer be disconnected from a meeting when you remove your headset. (25764)
 
-1. On Quest, you'll no longer be disconnected from a meeting when you remove your headset. (25764)
-
-1. Fixed the issue: On PC and Quest, when attempting to delete any artifacts in the Environment Editor will crash Mesh while running. (28903)
+* Fixed the issue: On PC and Quest, when attempting to delete any artifacts in the Environment Editor will crash Mesh while running. (28903)
 
 ## Version 5.2313.0
 
