@@ -3,7 +3,7 @@ title: Environment construction tips
 description: Read tips on how to construct your Mesh experience in Unity.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 12/7/2023
+ms.date: 12/14/2023
 ms.service: mesh
 ms.topic: How to
 keywords: Microsoft Mesh, Unity, getting started, environments
@@ -26,8 +26,6 @@ After you [create a new Unity project or choose an existing one](./create-a-new-
     ![A screenshot of Project Settings for Mesh button which enables you to fully set up your project for Mesh.](../../media/build-your-basic-environment/004-project-settings-for-mesh-dialog.png)
 
 - You can't use UnityUI (uGUI) for custom UI.
-
-- You must use Text Mesh Pro for displaying text.
 
 - If you publish any materials, including things such as web pages or digital ads, that feature Unity Trademarks, they must carry a trademark notice. This notice can appear in credits, a footer, or other similar locations. For more information, see [Guidelines for Using Unity Trademarks](https://unity.com/legal/branding-trademarks).
 
