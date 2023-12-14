@@ -1,19 +1,19 @@
 ---
-title: Handling syncing issues in Visual Scripting
-description: Learn how to handle syncing issues when using Visual Scripting in Mesh.
+title: Keeping types and node options updated in Visual Scripting
+description: Learn how ensure that your type and node options in Visual Scripting are up-to-date in Mesh.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 12/8/2023
+ms.date: 12/14/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, graphs
+keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, graphs, types
 ---
 
-# Handling syncing issues in Visual Scripting
+# Keeping types and node options updated in Visual Scripting
 
-If you find that something is wrong with what type or node options you're seeing in Visual Scripting, it could mean that the unit database is out of sync. If the *UnitOptions.db* file is absent from your project, Visual Scripting will regenerate it, but it doesn't ensure that Mesh's assemblies and types are included or that any nodes that aren't on Mesh's allowlist are filtered out.
+If you find that something is wrong with the type or node options you're seeing in Visual Scripting, it could mean that the unit database is out of sync, resulting in types and node options not getting updated. If the *UnitOptions.db* file is absent from your project, Visual Scripting will regenerate it, but it doesn't ensure that Mesh's assemblies and types are included or that any nodes that aren't on Mesh's allowlist are filtered out.
 
-**To resolve a syncing issue**:
+**To resolve the out-of-sync database issue**:
 1. On the menu bar, select **Mesh Toolkit** > **Configure** > **Apply Project Settings**.
 1. In the **Project Settings for Mesh** dialog, select **Configure Settings**.
 
@@ -23,7 +23,7 @@ It's also a good idea to run **Configure Settings** before you start working on 
 
 ## Preventive measures
 
-Here are some other things you can do to avoid syncing issues:
+Here are some other things you can do to avoid the out-of-sync database issue:
 
 - Preserve the following files by keeping them in version control:
     

@@ -8,6 +8,6 @@ items:
   - name: Visual scripting node reference
     href: visual-scripting-node-reference.md
     displayName: visual scripting, script, scripting, units, nodes
-  - name: Handling syncing issues
-    href: handling-syncing-issues.md
-    displayName: visual scripting, script, scripting, sync, syncing, units, nodes, unit database, node database
+  - name: Keeping types and node options updated
+    href: types-and-node-options.md
+    displayName: visual scripting, script, scripting, sync, syncing, units, nodes, unit database, node database, types
