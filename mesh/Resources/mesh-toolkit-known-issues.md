@@ -25,7 +25,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 * When the **Travel Point** is set up in isolation, not nested in an explicit **Travel Point Group**, and a reference to it is passed to the method or property node from another script node, for example, from a **Get Variable** node, the **Travel Point** reference is incorrectly filtered out at runtime and the method call or property access will fail to work. (31414)
 
-* There's an issue with Visual Scripting not being updated to reflect the current list of nodes that can be referenced. To learn more, see [Handling syncing issues in Visual Scripting](../develop/script-your-scene-logic/visual-scripting/handling-syncing-issues.md).
+* There's an issue with Visual Scripting not being updated to reflect the current types and node options that can be referenced. To learn more, see [Keeping types and node options updated in Visual Scripting](../develop/script-your-scene-logic/visual-scripting/types-and-node-options.md).
 
 ### WebSlate
 
