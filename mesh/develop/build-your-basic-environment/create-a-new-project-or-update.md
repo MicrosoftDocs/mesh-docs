@@ -3,7 +3,7 @@ title: Create a new Unity project for your Mesh Experience
 description: Learn how to create a new Mesh project in Unity.
 author: typride
 ms.author: vinnietieto
-ms.date: 10/20/2023
+ms.date: 12/13/2023
 ms.service: mesh
 ms.topic: How to
 keywords: Microsoft Mesh, Unity, M365, Immersive spaces, Avatars, getting started, documentation, features
@@ -24,8 +24,7 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 
     ![A screenshot of the 3D URP Core template option when you create a new Unity project.](../../media/get-started-developing-mesh/image008.png)
 
-1. In Unity, create a new scene using the **Standard (URP)** scene
-    template. Save it with an appropriate name.
+1. In Unity, you can use the default scene. Save it with the name you want.
 
 1. In the **Hierarchy**, delete **Global Volume**.
 
