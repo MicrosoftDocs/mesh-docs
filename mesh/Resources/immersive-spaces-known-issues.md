@@ -4,26 +4,18 @@ description: Currently active known issues and limitations for Immersive spaces 
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 10/25/2023
+ms.date: 12/11/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
 
 # Active known issues and limitations - Immersive Spaces in Teams
 
-## Version 5.2313.0
+## Version 5.2315.0 (Preview)
 
 ### Audio
 
 1. Users who are experiencing poor network connection may hear audio quality issues as a result.  There is currently no warning message for poor network quality. We'll be implementing this soon, as well as working continuously to improve overall audio quality.
-
-1. If a user declines to give Mesh access to their microphone upon first launch in Immersive space, they will be completely muted without additional notification. 
-
-    *Workaround:* If this occurs, you can try either of the following:
-    
-    - go into your Teams **Settings -> App permissions**. Select the **Mesh immersive spaces** app, and switch the **Media permissions** on.
-
-    - or [clear the Teams cache](/microsoftteams/troubleshoot/teams-administration/clear-teams-cache).
 
 1. When a meeting participant is sharing screen with audio, the audio won’t play in the immersive space on the virtual stage. If you want to share your screen with audio, you must come out of the immersive space.
 
@@ -61,6 +53,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ### Current limitations
 
 1. On Quest devices: users who remain idle for some time will be ejected out of an event. (21976)
+
 1. There is a room size limit of 16 persons for immersive users, while there’s no limit on the number of participants in a 2D Teams meeting. 
 
 1. Content limitations: PowerPoint Live and Whiteboard are not supported. If a meeting participant is using Powerpoint Live, it will not display on the immersive space stage. Same for whiteboard.
@@ -79,6 +72,8 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 1. On Quest, if you try to rotate the avatar preview in the Avatar Customizer, your field of view will also move.
 
 1. Mesh immersive spaces do not properly support low bandwidth situation: users who are experiencing poor network quality may see problems such as missing avatars and audio glitches. We are actively working on integrating notifications to alert users when they are in this state.
+
+1. Pressing Mesh buttons + the **Enter** key on the keypad produces no action. The same **Enter** key on the main keyboard selects the button and executes the associated action. (26462)
 
 ## Submit Feedback
  

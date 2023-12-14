@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 
 # Cloud Scripting programmer's guide
 
-This guide describes how to use the Mesh Cloud Scripting API and developer tools to build Environments (these start out as projects in Unity, and are then uploaded to a Mesh World). We recommend that you first read the [Set cloud Scripting infrastructure in Azure](cloud-scripting-setup-infrastructure.md) to familiarize yourself with the concepts and basic architecture of Mesh Cloud Scripting.
+This guide describes how to use the Mesh Cloud Scripting API and developer tools to build Environments (these start out as projects in Unity, and are then uploaded to a Mesh Collection). We recommend that you first read the [Set cloud Scripting infrastructure in Azure](cloud-scripting-setup-infrastructure.md) to familiarize yourself with the concepts and basic architecture of Mesh Cloud Scripting.
 
 This section describes the features and interface of the Mesh Cloud Scripting API, which is used to write the scripts that drive behaviors in Environments.
 
@@ -34,7 +34,7 @@ For example, if you create a scene with a game object that has a Light component
 Additionally, some Mesh Cloud Scripting API objects don't have corresponding built-in Unity components. These are additional components you can create in Unity that are part of the Mesh Toolkit package.
 
 - Mesh Cloud Scripting component (Described above)
-- WebView component
+- WebSlate component
 
 ## Mapping the Unity DOM to the Mesh DOM
 
@@ -98,7 +98,7 @@ A simple example is shown below, where the MeshInteractableSetup component is ad
 
 ### WebSlateNode
 
-The WebSlate is a custom Unity component that is part of the Mesh Toolkit Authoring package. To add a WebSlate prefab to your scene, select **GameObject** > **Mesh Toolkit** > **WebSlate** from the menu bar. The website that is assigned to the WebSlate instance's URL property is rendered on the quad of this prefab.
+The WebSlate is a custom Unity component that is part of the Mesh Toolkit package. To add a WebSlate prefab to your scene, select **GameObject** > **Mesh Toolkit** > **WebSlate** from the menu bar. The website that is assigned to the WebSlate instance's URL property is rendered on the quad of this prefab.
 
 An example is shown below, where a WebSlate prefab has been added to the scene and assigned a Url:
 
@@ -107,7 +107,7 @@ An example is shown below, where a WebSlate prefab has been added to the scene a
         webSlateNode.Url = new System.Uri("https://en.wikipedia.org/wiki/Color");
 ```
 
-![WebView example](../../../media/mesh-scripting/programmers-guide/webview_example.jpg)
+![WebSlate example](../../../media/mesh-scripting/programmers-guide/webview_example.jpg)
 
 ### Listening for clicks
 

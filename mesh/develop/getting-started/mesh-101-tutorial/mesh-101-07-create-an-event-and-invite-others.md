@@ -11,14 +11,14 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, events, experienc
 
 # Mesh 101 Tutorial Chapter 7: Create an event and invite others
 
-Now that you've uploaded your Mesh 101 Environment to the Mesh portal, tested its appearance and performance, and made any final tweaks, you can
+Now that you've uploaded your Mesh 101 Environment to Mesh on the web, tested its appearance and performance, and made any final tweaks, you can
 create and produce an Event based on that Environment that participants
 can experience through the Mesh app for PC or Quest.
 
 > [!IMPORTANT]
 > To ensure the best experience, we recommend that attendees to an event update the latest version of the Mesh app.
 
-1. Open the [Mesh Portal](https://portal.mesh.microsoft.com/).
+1. Open [Mesh on the web](https://portal.mesh.microsoft.com/).
 1. Log in with your corporate account.
 1. On the Home page, in the left-side navigation bar, select **Events**.
 
@@ -34,11 +34,11 @@ can experience through the Mesh app for PC or Quest.
     ![___](../../../media/sample-mesh-101/468-event-details.png)
 
 1. When you're finished, select **Next**.
-1. On the **Choose an Environment or Event template** page, select the **Start with an environment** box, and then click **Next**.
+1. On the **Choose an Environment or Event template** page, select the **Start with an environment** box if it's not already selected, and then click **Next**.
 
     ![___](../../../media/sample-mesh-101/462-choose-env-button.png)
 
-1. On the following page, select the **From Worlds** drop-down and then choose the World that you uploaded your Environment to.
+1. On the following page, click the **From collections** drop-down and then, in the list that appears, choose the Collection that you uploaded your Environment to.
 
     ![___](../../../media/sample-mesh-101/463-choose-worlds-drop-down.png)
 

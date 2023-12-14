@@ -48,8 +48,8 @@ Every scene must have at least one *travel point*, which is used to configure av
 
 ## Add the Mesh Thumbnail Camera
 
-Adding the *Mesh Thumbnail Camera* provides a thumbnail image that will be
-added to your Environment's listing in the Mesh Portal and its
+Every time you upload your Environment, a thumbnail image of your scene will be captured based on the *TravelPoint* component and *LookAt* property using the *MeshThumbnailCamera*; however, you can also add your own *MeshThumbnailCamera* and position it wherever you like. The *Mesh Thumbnail Camera* provides a thumbnail image that will be
+added to your Environment's listing in Mesh on the web and its
 selection button in the Mesh app. This comes in handy when you're
 selecting Environments in either place because it gives you a visual
 reminder of what the Environment looks like.
@@ -68,10 +68,12 @@ reminder of what the Environment looks like.
     view appears in a small window in the lower right of the **Scene**
     window.
 
-> **Note**: If you decide you want a different view for the Thumbnail
+> **Note 1**: If you decide you want a different view for the Thumbnail
 > Camera, you can adjust the Camera GameObject directly in the **Scene**
 > window or change its **Position** and **Rotation** values in the
 > **Inspector** prior to uploading your Environment to Mesh.
+
+> - You can also add the camera as a child of a GameObject: right-click the GameObject and then select **Mesh Toolkit** > **Thumbnail Camera**. The camera position in this case will be 0 so it's important to adjust the position and rotation.
 
 There are no set rules for how your thumbnail should look---it's totally
 up to you. The example below is taken from our [Mesh 101 tutorial](../../develop/getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md). The tutorial teaches you how to add Mesh features to an educational experience about wind turbines, so the thumbnail shows the turbines.
@@ -80,12 +82,5 @@ up to you. The example below is taken from our [Mesh 101 tutorial](../../develop
 
 ## Next Steps
 
-To enhance your project with features such as Web content, Mesh Interactables, or Mesh Physics, go to:
-
 > [!div class="nextstepaction"]
-> [Enhanced features overview](../enhance-your-environment/enhanced-features-overview.md)
-
-If you're interested in some of the more artistic elements of experience creation such as modeling, texture, and lighting, go to:
-
-> [!div class="nextstepaction"]
-> [Design overview](../design/overview.md)
+> [Environment construction tips](./environment-construction-tips.md)

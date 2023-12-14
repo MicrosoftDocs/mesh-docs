@@ -4,16 +4,24 @@ description: Active known issues for Mesh
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 11/2/2023
+ms.date: 12/11/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
 
 # Active known issues - Mesh
 
-## Version 5.2313.0
+## Version 5.2315.0 (Preview)
 
-* On Quest devices: users who remain idle for some time will be ejected out of an event. (21976)
+* Pressing Mesh buttons + the **Enter** key on keypad produces no action, the same **Enter** key on the main keyboard selects the button and executes the associated action. (26462)
+
+* When downloading the Mesh app from Microsoft Store, some users will get a blank screen in the web browser. To search for the most current data on the server, press the **CTRL + F5** keys to clear your browser cache.  The latest version of the Microsoft store webpage will then load. (14921)
+
+### Events
+
+* If an event organizer uses the Teams' calendar to make changes to the event, the location URI containing the Mesh sessionID will be erased, thus corrupting the Mesh event. (21568)
+
+    *Workaround:* Organizers must not use the Teams' calendar to make any changes to the Mesh event. Using Outlook to make changes will work, but organizers shouldn't turn a Mesh event to a Teams meeting by adding Teams call link to it.
 
 * The current way for how to determine which version of the environment to use for an event will be improved. (23681)
 
@@ -25,11 +33,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
     For future releases, organizers to an event will have better control over which version of the environment to use for their event, or the latest version of an environment is used by default.
 
-* If an event organizer uses the Teams' calendar to make changes to the event, the location URI containing the Mesh sessionID will be erased, thus corrupting the Mesh event. (21568)
+* On Quest devices: users who remain idle for some time will be ejected out of an event. (21976)
 
-    *Workaround:* Organizers must not use the Teams' calendar to make any changes to the Mesh event. Using Outlook to make changes will work, but organizers shouldn't turn a Mesh event to a Teams meeting by adding Teams call link to it.
-    
-* On the Dashboard, the scroll bar length could be too long for the content being displayed. (19501)
-* When downloading the Mesh app from Microsoft Store, some users will get a blank screen in the web browser. To search for the most current data on the server, press the **CTRL + F5** keys to clear your browser cache.  The latest version of the Microsoft store webpage will then load. (14921)
 
 

@@ -3,18 +3,26 @@ items:
     href: overview.md
   - name: Project structure
     href: project-structure.md
+    displayName: design
   - name: Unity prefabs
     href: unity-prefabs.md
+    displayName: design
   - name: Creating models
     href: creating-models.md
+    displayName: design
   - name: Exporting models and Environments
     href: exporting-models-and-environments.md
+    displayName: design
   - name: Working with UV mapping
     href: working-with-uvs.md
+    displayName: design
   - name: Model textures
     href: model-textures.md
+    displayName: design
   - name: Lighting
     href: lighting.md
+    displayName: design
   - name: Troubleshooting
     href: troubleshooting.md
+    displayName: design
 
