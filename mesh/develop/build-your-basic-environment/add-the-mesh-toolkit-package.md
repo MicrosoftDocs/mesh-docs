@@ -4,16 +4,20 @@ description: Instructions for adding the Mesh Toolkit package to your project.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 12/14/2023
+ms.date: 12/15/2023
 ms.topic: overview
 keywords: Microsoft Mesh, getting started, toolkit, Mesh toolkit, import, registry, scoped registry, packages
 ---
 
 # Add the Mesh Toolkit package
 
-The Mesh Toolkit enables creators and developers to build custom 3D environments and experiences with Unity.
+With the Mesh toolkit package installed in Unity, you can use your 3D world-building skills to create fully customized multi-user 3D experiences. Mesh itself does the heavy lifting to enable engagement in 3D environments by handling the avatar system, Spatial Audio, and multi-user synchronization, but you have control over environment development, iteration, performance optimization and publishing through the Mesh toolkit. If you're already an intermediate to advanced Unity user, you can build environments in a familiar way and leverage existing scenes and assets to create Mesh experiences. You can add interactive content, insert logic, integrate with business data, or infuse AI--all with physics and interaction tools that you can leverage out-of-the-box.
 
-Mesh has a stable app build where all users can experience immersive experiences and a corresponding toolkit for developers who wish to create custom environments or artifacts to be used in immersive experiences.
+When you install the Mesh toolkit, it does the following:
+
+- Adjusts your Unity project's settings to match Mesh. This modifies several files in the *ProjectSettings* folder (for example, *GraphicsSettings.asset*).
+- Ensures that OpenXR is enabled and adjusts the XR settings. To see these settings, on the menu bar, select **Edit** > **Project Settings ** > **XR Plug-in Management**.
+- Ensures that *TextMeshPro* is configured and sets its default font to "Segoe UI Fluent Semibold SDF".
 
 **To add the Mesh Toolkit package(s) to your Unity project**:
 
