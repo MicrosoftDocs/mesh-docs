@@ -248,7 +248,7 @@ Avatar height: 1.8
 
     - In some cases a Capsule Collider or similar rounded shape on objects or areas the avatar shouldn't walk on may suffice. These shapes are unwalkable if the slope is steep enough and will cause the avatar to slide off.
 
-### Supporting Teleportation
+## Supporting Teleportation
 
 For a scene to support teleportation, teleportable surfaces (for example, the floor or the ground) must have colliders on the *GroundCollision* layer. There are other walkable layers, but only *GroundCollision* is teleportable. Visual geometry isn't teleportable and shouldn't be on the *GroundCollision* layer; only Colliders can be on the *GroundCollision* layer. Improper or inconsistent layering and collision can cause undesirable effects when teleporting or finding the ground.
 
