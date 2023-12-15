@@ -27,11 +27,11 @@ All the avatars in a session should be at a consistent height. The avatar positi
 
 - A VR user physically goes to and from a seated or standing position. The HMD movement causes the avatar in the scene to penetrate the ground or be standing much higher vertically than other avatars.
 
--- A poorly configured visual script teleports the avatar into a position that they don't fit or is vertically too low.
+- A poorly configured visual script teleports the avatar into a position that they don't fit or is vertically too low.
 
 Another reason this is important is that when the avatar physics update, if the avatar isn't grounded, it will jump into position as a result of its capsule colliding with the ground and yanking the avatar into the new position.  This is especially impactful for HMD users because unnatural movements like this can be nausea-inducing.
 
-Layers the avatar interacts with and can walk on:
+**Layers the avatar interacts with and can walk on:**
 
 0  - Default  
 2  - Ignore Raycast  
@@ -49,17 +49,17 @@ Layers the avatar interacts with and can walk on:
 
 When a GameObject has a non-trigger collider, it will collide with other objects if it's on one of the object layers.
 
-0  - Default
-2  - Ignore Raycast
-4  - Water (only trigger colliders allowed)
-14 - GroundCollision
-18 - TriggerVolume (only trigger colliders allowed)
-20 - ObjectCollision
-26 - Custom26
-27 - Custom27
-28 - Custom28
-29 - IgnoreRealtimeLight
-30 - WallCollision
+0  - Default  
+2  - Ignore Raycast  
+4  - Water (only trigger colliders allowed)  
+14 - GroundCollision  
+18 - TriggerVolume (only trigger colliders allowed)  
+20 - ObjectCollision  
+26 - Custom26  
+27 - Custom27  
+28 - Custom28  
+29 - IgnoreRealtimeLight  
+30 - WallCollision  
 31 - IgnoreParticipant
 
 The default layer in Unity is (not surprisingly) named "Default", so you may need to use a different layer if you don't want to interact with other objects. For example, *IgnoreParticipant* is used for objects that shouldn't interact with the avatar and *IgnoreCollisions* is used for objects that shouldn't interact with anything.
@@ -70,13 +70,13 @@ The default layer in Unity is (not surprisingly) named "Default", so you may nee
 
 If not otherwise specified, a Collider will be on the *Default* layer. This is a walkable layer, and the avatar will be correctly grounded. It's not a valid teleport target for the local user. This layer interacts and collides with other objects.
 
-**GroundCollision layer**
+**GroundCollision**
 
 Only colliders on the *GroundCollision* layer are valid teleport targets for the local user. It is otherwise identical to the *Default* layer.
 
 Visual geometry not backed with collision is not walkable and doesn't block the avatar, so it's an improper teleport target and shouldn't be on the *GroundCollision* layer.
 
-**WallCollision layer**
+**WallCollision**
 
 The *WallCollision* layer is used to indicate walls the avatar shouldn't penetrate in order to constrain the avatar within a playable space. VR users can move their avatars in arbitrary ways with HMD movement during roomscale locomotion and may physically walk through a virtual wall. The avatar will be teleported back to the bounds of the play area after it has walked a set distance. This layer is otherwise identical to the *Default* layer.
 
@@ -160,7 +160,7 @@ The following is a list of layers defined by ID and name, including blocking sem
 
 21. IgnoreObjects
 
-   * [Avatar/Raycast Blocking]*
+    *[Avatar/Raycast Blocking]*
 
     Layer to collide with avatar but not objects.
 
@@ -230,10 +230,10 @@ The scene should have Colliders for the avatar to walk and teleport on. In gener
 
 ### Mesh avatar movement limits:
 
-Maximum walkable slope: <45 degrees
-Maximum step height: 0.3
-Avatar capsule radius: 0.3
-Avatar capsule height: 2
+Maximum walkable slope: <45 degrees  
+Maximum step height: 0.3  
+Avatar capsule radius: 0.3  
+Avatar capsule height: 2  
 Avatar height: 1.8
 
 ### Suggestions for best results:
