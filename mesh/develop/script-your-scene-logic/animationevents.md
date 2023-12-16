@@ -18,7 +18,7 @@ You can increase the power of animation clips with *AnimationEvents*, which allo
 > [!TIP]
 > You can also create [UnityEvents](./unityevents.md) to employ user-driven callbacks.
 
-For this example, we'll use the [ScienceBuilding sample](../getting-started/samples/science-building.md) which is contained in the [Mesh Toolkit](../build-your-basic-environment/add-the-mesh-toolkit-package.md) and is already set up with assets you can use. We'll work with an animation clip where a robot points to an informational popup; we'll insert an AnimationEvent into the clip that causes the **Console** to display a message when the robot points. We're keeping this simple for learning purposes but you can use AnimationEvents to trigger a range of effects, sounds, or other actions during an animation.
+For this example, we'll use the [ScienceBuilding sample](../getting-started/samples/science-building.md) which is contained in the [Mesh toolkit](../build-your-basic-environment/add-the-mesh-toolkit-package.md) and is already set up with assets you can use. We'll work with an animation clip where a robot points to an informational popup; we'll insert an AnimationEvent into the clip that causes the **Console** to display a message when the robot points. We're keeping this simple for learning purposes but you can use AnimationEvents to trigger a range of effects, sounds, or other actions during an animation.
 
 1. Open the *ScienceBuilding* project, and then open the *ScienceBuilding* scene.
 1. Dock the **Console** window to the right of the **Scene** window so that you can see both simultaneously.

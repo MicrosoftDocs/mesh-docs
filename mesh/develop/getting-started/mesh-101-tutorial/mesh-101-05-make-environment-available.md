@@ -14,11 +14,11 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365
 You've completed adding all the features you need for your Mesh experience using Mesh Interactables, Physics and Scripting. So far, we've been working in a Unity *project*; now you'll turn the *StartingPoint* scene into a Mesh *Environment* and upload it to the *Collections* page in *Mesh on the web*. At that point, your Environment is ready for you to test so you can move ahead with confidence as you prepare to schedule an *Event*.
 
 > [!IMPORTANT]
-> A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh Toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../../Setup/Content/setup-m365-mesh.md).
+> A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../../Setup/Content/setup-m365-mesh.md).
 
 ## Mesh Uploader versions
 
-As explained in the article named [Add the Mesh Toolkit package](../../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh Toolkit: the stable build and the preview build. Note that from time to time you may see minor differences between the two versions.
+As explained in the article named [Add the Mesh toolkit package](../../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh toolkit: the stable build and the preview build. Note that from time to time you may see minor differences between the two versions.
 
 ## Sign in to the Mesh Uploader
 
