@@ -31,7 +31,7 @@ The DOM structure mirrors the structure of your Unity scene. The application's "
 
 For example, if you create a scene with a game object that has a Light component (set to a point light) and a sphere collider attached, your scene will contain a TransformNode with two children: a PointLightNode and a SphereGeometryNode.
 
-Additionally, some Mesh Cloud Scripting API objects don't have corresponding built-in Unity components. These are additional components you can create in Unity that are part of the Mesh Toolkit package.
+Additionally, some Mesh Cloud Scripting API objects don't have corresponding built-in Unity components. These are additional components you can create in Unity that are part of the Mesh toolkit package.
 
 - Mesh Cloud Scripting component (Described above)
 - WebSlate component
@@ -90,7 +90,7 @@ The `ICloudApplication` interface is the starting point for developing Mesh apps
 
 ### InteractableNode
 
-The MeshInteractableSetup is a custom Unity component that's part of the Mesh Toolkit package. When you attach it to a game object in Unity, it'll raise click events when any user clicks on any of the active collidables in that game object or its children.
+The MeshInteractableSetup is a custom Unity component that's part of the Mesh toolkit package. When you attach it to a game object in Unity, it'll raise click events when any user clicks on any of the active collidables in that game object or its children.
 
 A simple example is shown below, where the MeshInteractableSetup component is added to the same game object as the box collider:
 
@@ -98,7 +98,7 @@ A simple example is shown below, where the MeshInteractableSetup component is ad
 
 ### WebSlateNode
 
-The WebSlate is a custom Unity component that is part of the Mesh Toolkit package. To add a WebSlate prefab to your scene, select **GameObject** > **Mesh Toolkit** > **WebSlate** from the menu bar. The website that is assigned to the WebSlate instance's URL property is rendered on the quad of this prefab.
+The WebSlate is a custom Unity component that is part of the Mesh toolkit package. To add a WebSlate prefab to your scene, select **GameObject** > **Mesh Toolkit** > **WebSlate** from the menu bar. The website that is assigned to the WebSlate instance's URL property is rendered on the quad of this prefab.
 
 An example is shown below, where a WebSlate prefab has been added to the scene and assigned a Url:
 
@@ -142,7 +142,7 @@ It's possible to find out which user clicked the collider by looking at the prop
 
 ## Animators
 
-You can create and add a Unity Animator to your scene and control it through Mesh Cloud Scripting. The Mesh Toolkit plugin will look through the assets in your Unity project, and for each Animator that's found, it'll generate a class in an "AnimationScripts" folder in your Mesh Cloud Scripting project. This class derives from AnimationNode and can be used to control the Animator from the Mesh Cloud Scripting. When you add the Animator as a component to a game object in Unity, you'll find a corresponding instance of the generated class as a child of the corresponding TransformNode. Using the API of this class, you can control the Animator.
+You can create and add a Unity Animator to your scene and control it through Mesh Cloud Scripting. The Mesh toolkit plugin will look through the assets in your Unity project, and for each Animator that's found, it'll generate a class in an "AnimationScripts" folder in your Mesh Cloud Scripting project. This class derives from AnimationNode and can be used to control the Animator from the Mesh Cloud Scripting. When you add the Animator as a component to a game object in Unity, you'll find a corresponding instance of the generated class as a child of the corresponding TransformNode. Using the API of this class, you can control the Animator.
 
 The Mesh Cloud Scripting programming model is server authoritative, and we support only a small subset of the Animator functionality. This is because we model the Animator on the server and expect that all clients will synchronize accurately to the server model. For this reason, only the following API is currently supported:
 

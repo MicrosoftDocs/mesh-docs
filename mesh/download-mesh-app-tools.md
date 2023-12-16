@@ -24,15 +24,15 @@ Use Mesh on the web to create events, invite co-organizers or attendees, manage 
 > [!div class="nextstepaction"]
 > [Microsoft Mesh on the web](https://portal.mesh.microsoft.com/)
 
-## Mesh Toolkit
+## Mesh toolkit
 
-The Mesh Toolkit enables creators and developers to build custom 3D environments and experiences with Unity. Choose your development journey or add the Mesh Toolkit to your Unity project.
+The Mesh toolkit enables creators and developers to build custom 3D environments and experiences with Unity. Choose your development journey or add the Mesh toolkit to your Unity project.
 
 > [!div class="nextstepaction"]
 > [Choose your development journey](develop/getting-started/choose-your-journey.md)
 
 > [!div class="nextstepaction"]
-> [Add the Mesh Toolkit to your Unity project](develop/build-your-basic-environment/add-the-mesh-toolkit-package.md)
+> [Add the Mesh toolkit to your Unity project](develop/build-your-basic-environment/add-the-mesh-toolkit-package.md)
 
 ## Next steps
 

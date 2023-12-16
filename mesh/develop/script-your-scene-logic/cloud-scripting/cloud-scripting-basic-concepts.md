@@ -109,7 +109,7 @@ That said, **the Auth flow in Cloud Scripting Service doesn't require any extra 
 
 Here are the parties involved in the Auth flow:
 
-**Mesh Toolkit**: As the tool through which Cloud Scripting Services are deployed to the cloud, you could choose the `Service Mode` your Cloud Scripting Service uses in validating the auth token. This can be done in the Environment Configuration setting in the Mesh Uploader UI.
+**Mesh toolkit**: As the tool through which Cloud Scripting Services are deployed to the cloud, you could choose the `Service Mode` your Cloud Scripting Service uses in validating the auth token. This can be done in the Environment Configuration setting in the Mesh Uploader UI.
 
 **Microsoft Mesh Service**: Responsible for issuing a token. Without a token, users can't interact with a Cloud Scripting.
 

@@ -100,7 +100,7 @@ Most shader and renderer features are available to every platform, but some plat
 | **Post Processing** |  ❌ | ❌ |
 
 When unsure if a setting is enabled or disabled for a platform you are developing for, reference the URP assets contained within the Mesh
-Toolkit Uploader's URP folder:
+toolkit Uploader's URP folder:
 
 ![A screenshot of the Inspector - Environment_Exterior Import Settings dialog](../../media/3d-design-performance-guide/image036.png)
 

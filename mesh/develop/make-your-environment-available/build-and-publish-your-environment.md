@@ -27,7 +27,7 @@ After you finish adding all your scene content, the next step is to build the sc
 
 ### Mesh Uploader versions
 
-As explained in the article named [Add the Mesh Toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh Toolkit: the stable build and the preview build. Note that from time to time you may see minor differences between the two versions.
+As explained in the article named [Add the Mesh toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh toolkit: the stable build and the preview build. Note that from time to time you may see minor differences between the two versions.
 
 ### Sign in to the Mesh Uploader
 
