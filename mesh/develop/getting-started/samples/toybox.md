@@ -1,6 +1,6 @@
 ---
-title: Mesh Toolkit Toybox sample
-description: Learn about the Mesh Toolkit Toybox sample.
+title: Mesh toolkit Toybox sample
+description: Learn about the Mesh toolkit Toybox sample.
 author: vtieto
 ms.author: vinnietieto
 ms.date: 9/29/2023
@@ -9,7 +9,7 @@ ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, toybox
 ---
 
-# Microsoft Mesh Toolkit Sample: Toybox
+# Microsoft Mesh toolkit Sample: Toybox
 
 ![Toybox](../../../media/samples/005-toybox.png)
 
@@ -22,18 +22,18 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics
 * **Radio & Boombox** 
 * **Bonus: Astronaut**
 
-The [Samples Overview](samples-overview.md) page contains instructions on how to download the Mesh Toolkit which contains this sample.
+The [Samples Overview](samples-overview.md) page contains instructions on how to download the Mesh toolkit which contains this sample.
 
 ## Contributions
 
-We are not currently accepting code contributions to our samples.  If you have any feedback or if you run into any issues with the samples or the Mesh Toolkit, do the following: in a Unity project that has the Mesh Toolkit package installed, select **Mesh Toolkit** -> **Give feedback to Microsoft** and then use the feedback link in the Mesh Toolkit to let us know.
+We are not currently accepting code contributions to our samples.  If you have any feedback or if you run into any issues with the samples or the Mesh toolkit, do the following: in a Unity project that has the Mesh toolkit package installed, select **Mesh Toolkit** -> **Give feedback to Microsoft** and then use the feedback link in the Mesh toolkit to let us know.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-The [Samples Overview](samples-overview.md) page contains instructions on how to download the Mesh Toolkit.
+The [Samples Overview](samples-overview.md) page contains instructions on how to download the Mesh toolkit.
 
 ## License
 
-The Mesh sample in this project is governed by the MIT license as shown in the [LICENSE.MD](https://github.com/microsoft/Mesh-Toolkit-Unity/blob/main/LICENSE) file in the *Mesh-Toolkit-Unity* repository. However, the samples functionality is dependent on the Mesh Toolkit, which is governed by a separate license, and contains 3rd party software. 
+The Mesh sample in this project is governed by the MIT license as shown in the [LICENSE.MD](https://github.com/microsoft/Mesh-Toolkit-Unity/blob/main/LICENSE) file in the *Mesh-Toolkit-Unity* repository. However, the samples functionality is dependent on the Mesh toolkit, which is governed by a separate license, and contains 3rd party software. 

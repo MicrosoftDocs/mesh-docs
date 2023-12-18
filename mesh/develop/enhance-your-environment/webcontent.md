@@ -45,7 +45,7 @@ You can use WebSlates for:
 
 If you have a Unity project set up to [create Mesh Environments](../build-your-basic-environment/create-a-new-project-or-update.md), adding a WebSlate to your Environment is a straightforward process.
 
-In Mesh, WebSlate loads an interactive page through a provided URL. The URL given to it in the Environment will be the same one loaded in Mesh. In the Mesh Toolkit, the WebSlate prefab contains a URL parameter that developers can specify to control the content displayed in their Mesh Environment. 
+In Mesh, WebSlate loads an interactive page through a provided URL. The URL given to it in the Environment will be the same one loaded in Mesh. In the Mesh toolkit, the WebSlate prefab contains a URL parameter that developers can specify to control the content displayed in their Mesh Environment. 
 
 - When loaded on the Mesh App for PC and Quest, webpages loaded by a WebSlate are interactable through mouse, keyboard, and Quest XR controller input.
 
@@ -61,11 +61,11 @@ In Mesh, WebSlate loads an interactive page through a provided URL. The URL give
 
 ## Requirements/Dependencies
 
-WebSlate depends on the *Unity.InputSystem* and *Unity.XR.Interaction.Toolkit* Unity packages, located in the Mesh Toolkit.
+WebSlate depends on the *Unity.InputSystem* and *Unity.XR.Interaction.Toolkit* Unity packages, located in the Mesh toolkit.
 
 ## Add a WebSlate prefab to your Unity project
 
-There are two flavors of WebSlate prefabs available in the Mesh Toolkit that you can add to your scene. If you prefer a clean WebSlate with no extra components, add the WebSlate prefab. If you'd like a WebSlate contained in a stylized frame with extra features, add the *WebSlateFramed* prefab.
+There are two flavors of WebSlate prefabs available in the Mesh toolkit that you can add to your scene. If you prefer a clean WebSlate with no extra components, add the WebSlate prefab. If you'd like a WebSlate contained in a stylized frame with extra features, add the *WebSlateFramed* prefab.
 
 ![Image showcasing two webslate prefabs.](../../media/webview-developer-guide/image025.png)
 
@@ -84,9 +84,9 @@ There are two flavors of WebSlate prefabs available in the Mesh Toolkit that you
 
     **Tip**: You can also click the "+" button at the top left of the Hierarchy window to see the same menu.
 
-    ![Image of adding the Mesh Toolkit using the context menu.](../../media/webview-developer-guide/image006.png)
+    ![Image of adding the Mesh toolkit using the context menu.](../../media/webview-developer-guide/image006.png)
 
-    ![Add Mesh Toolkit to Hierarchy in Unity.](../../media/webview-developer-guide/image007.png)
+    ![Add Mesh toolkit to Hierarchy in Unity.](../../media/webview-developer-guide/image007.png)
 
 ### Search for and add the WebSlate prefab
 
@@ -112,7 +112,7 @@ It's important to ensure that all the attendees in a Mesh experience can read al
 
 ## Preview WebSlate in Mesh Emulation Mode
 
-To view a URL displayed in your WebSlate more quickly, you can use Mesh Emulation Mode. Aside from testing in this mode, the only other way to see your WebSlate is to upload it using the Mesh Toolkit Uploader and view it in a Mesh experience.
+To view a URL displayed in your WebSlate more quickly, you can use Mesh Emulation Mode. Aside from testing in this mode, the only other way to see your WebSlate is to upload it using the Mesh toolkit Uploader and view it in a Mesh experience.
 
 To add Mesh Emulation Mode to your project, follow the instructions in the [Mesh Emulator article](../debug-and-optimize-performance/mesh-emulator.md).
 
@@ -276,7 +276,7 @@ If you already know which domains you'll need, you can manually add them to the 
 
 ### Known issues
 
-See the [WebSlate sections in the Mesh Toolkit known issues article](../../Resources/mesh-toolkit-known-issues.md).
+See the [WebSlate sections in the Mesh toolkit known issues article](../../Resources/mesh-toolkit-known-issues.md).
 
 ## Feedback for Web content in Mesh
 
