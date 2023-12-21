@@ -23,7 +23,7 @@ To sync changes across multiple rooms, a co-organizer will need to use the Contr
 
 ## Controllables
 
-The Mesh Toolkit includes key components called **Controllables** that you use to tag a **Video Player**, **PlayableDirector**, **AudioSource** or other object in your scene so that event hosts can control it across all rooms of an event at showtime.
+The Mesh toolkit includes key components called **Controllables** that you use to tag a **Video Player**, **PlayableDirector**, **AudioSource** or other object in your scene so that event hosts can control it across all rooms of an event at showtime.
 
 The list of Mesh **Controllable** components includes:
 
@@ -138,7 +138,7 @@ To learn more about the Unity Playables API in general, see [Playables in the Un
 Once added, this timeline will appear in **Control Panel** for events and templates that use this environment.
 Hosts can then control this timeline in sync across all rooms.
 
-Now you can upload your Environment to Mesh using the **Mesh Toolkit
+Now you can upload your Environment to Mesh using the **Mesh toolkit
 Uploader** and then see how it looks in Mesh. To learn more,
 see [Prepare content with the Control Panel](../../events-guide/customize-event.md#prepare-content-with-the-control-panel).
 

@@ -4,7 +4,7 @@ description: Immersive spaces in Teams release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 12/11/2023
+ms.date: 12/18/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -21,7 +21,7 @@ The following product issues have been fixed for this release:
 
 * If a user declines to give Mesh access to their microphone upon first launch in immersive spaces, they'll be completely muted without additional notification. 
 
-    *Workaround:* If this occurs, you can try either of the following:
+    *Workaround:* If this occurs, you need to first switch to the new Teams client, and then try either of the following:
     
     - go into your Teams **Settings -> App permissions**. Select the **Mesh** app, and switch the **Media permissions** on.
 

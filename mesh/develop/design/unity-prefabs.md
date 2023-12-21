@@ -16,7 +16,7 @@ about overriding others' work. Splitting each scene up into common sub-disciplin
 
 Using Prefabs allows easier collaboration within a single Unity scene and is preferred for Microsoft Mesh projects.
 
-![A screenshot of the Packages > Microsoft Mesh Toolkit prefabs](../../media/3d-design-performance-guide/image036.png) 
+![A screenshot of the Microsoft Mesh toolkit prefabs.](../../media/3d-design-performance-guide/image036.png) 
 
 When editing the scene, always make sure the Prefab you're working in has its overrides applied.
 

@@ -1,6 +1,6 @@
 ---
 title: Publish multiple environments from one Unity project
-description: Learn how to publish multiple environments from one Unity project using the Mesh Toolkit
+description: Learn how to publish multiple environments from one Unity project using the Mesh toolkit
 ms.service: mesh
 author: typride
 ms.author: iankudinova
@@ -26,7 +26,7 @@ Using the scenario above as an example, here's what you would do:
 
 ## Mesh Uploader versions
 
-As explained in the article named [Add the Mesh Toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh Toolkit: the stable build and the preview build. Note that from time to time you may see minor differences between the two versions.
+As explained in the article named [Add the Mesh toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh toolkit: the stable build and the preview build. Note that from time to time you may see minor differences between the two versions.
 
 ## Create your Environments
 

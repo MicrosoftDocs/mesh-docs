@@ -1,10 +1,13 @@
 items:
   - name: Visual scripting overview
     href: visual-scripting-overview.md 
-    displayName: visual scripting, script, scripting
+    displayName: visual scripting, script, scripting, units, nodes
   - name: Visual scripting programmer's guide
     href: visual-scripting-programmers-guide.md
-    displayName: visual scripting, script, scripting
+    displayName: visual scripting, script, scripting, units, nodes
   - name: Visual scripting node reference
     href: visual-scripting-node-reference.md
-    displayName: visual scripting, script, scripting
+    displayName: visual scripting, script, scripting, units, nodes
+  - name: Keeping types and node options updated
+    href: types-and-node-options.md
+    displayName: visual scripting, script, scripting, sync, syncing, units, nodes, unit database, node database, types

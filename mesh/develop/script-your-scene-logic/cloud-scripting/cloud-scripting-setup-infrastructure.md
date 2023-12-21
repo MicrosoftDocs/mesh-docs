@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, Azure, admin, Mesh Cloud Scripting, scripting, cloud s
 
 ## Mesh Cloud Scripting Service cloud infrastructure deployment
 
-Mesh Cloud Scripting Services are dotnet based apps that are run in the Cloud. The Mesh Toolkit Uploader helps developers provision their azure resources and deploy their web app. These are the steps involved in deploying the Mesh Cloud Scripting Service cloud infrastructure today.
+Mesh Cloud Scripting Services are dotnet based apps that are run in the Cloud. The Mesh toolkit Uploader helps developers provision their azure resources and deploy their web app. These are the steps involved in deploying the Mesh Cloud Scripting Service cloud infrastructure today.
 
 ## Resources deployed
 
