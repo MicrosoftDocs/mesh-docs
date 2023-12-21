@@ -223,7 +223,7 @@ implications and work closely with your security team to make sure you
 comply with all standard security policies. Discuss the following Mesh
 requirements in advance with the appropriate Security owners.
 
-### Ensure endpoints can be allowed for Mesh immersive spaces 
+### Ensure endpoints can be allowed for immersive spaces in Teams
 
 To ensure the Mesh features work properly, the following endpoints **must**
 be allowed through your firewall or proxy server.
@@ -231,13 +231,15 @@ All endpoints need to allow traffic on TCP ports 80 and 443:
 
 - \*.microsoft.com
 
+- \*.cloud.microsoft
+
 - \*.office.com
 
 - \*.office.net
 
 To learn more, see how to [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces).
 
-### Firewall Ports for Mesh immersive spaces
+### Firewall Ports for immersive spaces in Teams
 
 In addition to the endpoints listed above, Mesh also requires that outgoing
 traffic be allowed to IP addresses in the "AzureCloud" service tag over the
@@ -266,12 +268,13 @@ endpoints:
 - \*.microsoft.com
 - \*.office.com
 - \*.office.net
+- \*.cloud.microsoft
 
 Follow this link to learn more about how to Set up avatars for Microsoft
 Teams.
 [Set up avatars in Microsoft Teams](/microsoftteams/meeting-avatars)
 
-### Ensure endpoints can be allowed for the Mesh app
+### Ensure endpoints can be allowed for immersive spaces in Mesh (Mesh app)
 
 To ensure Mesh works properly, allow the following endpoints.
 All endpoints need to allow traffic on TCP ports 80 and 443:
@@ -286,7 +289,9 @@ All endpoints need to allow traffic on TCP ports 80 and 443:
 
 - \*.office.net
 
-### Firewall Ports for the Mesh app
+- \*.cloud.microsoft
+
+### Firewall Ports for the immersive spaces in Mesh (Mesh app)
 
 In addition to the endpoints listed above, Mesh also requires that outgoing
 traffic be allowed to IP addresses in the "AzureCloud" service tag over the
