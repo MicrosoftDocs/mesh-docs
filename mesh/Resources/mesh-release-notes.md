@@ -15,18 +15,16 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.2315.0 (Preview)
 
-### Mesh on the web link
+### Mesh on the web
 
-Mesh on the web is moving to cloud.microsoft [with all Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). To help ease this transition, we are providing two links for Mesh on the web. To use the new cloud.microsoft endpoint, ensure you have allowed the proper endpoints allowed, as detailed in the [Preparing your organization article](../Setup/Content/preparing-your-organization.md#ensure-endpoints-can-be-allowed-for-immersive-spaces-in-teams).
-
- If you have any issues with the new Mesh on the web experience, you can continue to use *portal.mesh.microsoft.com*.
+Mesh on the web is moving to cloud.microsoft with the [Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). Currently, we are providing two links for Mesh on the web to ensure smooth transition. For the new [cloud.microsoft](https://mesh.cloud.microsoft) link, make sure you have allowed the proper endpoints. See [Preparing your organization article](../Setup/Content/preparing-your-organization.md#ensure-endpoints-can-be-allowed-for-immersive-spaces-in-teams) for details.
 
 The two Mesh on the web links are:
 
 - Old: https://portal.mesh.microsoft.com 
 - New: https://mesh.cloud.microsoft
 
-If you have any issues with the new Mesh on the web experience, you can continue to use portal.mesh.microsoft.com.
+If you have any issues with the new Mesh on the web experience, you can continue to use [portal.mesh.microsoft.com](https://portal.mesh.microsoft.com).
 
 ### Resolved product issues
 
