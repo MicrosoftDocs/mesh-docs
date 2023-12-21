@@ -21,7 +21,7 @@ keywords: Microsoft Mesh, M365, events, join events, organize events, immersive 
 
 If you do not *allow* users with Teams and Office licenses to create Groups, Sharepoint/OneDrive sites, or use Mailbox/Calendar, the user may notice the following:
 
-1. You cannot create a collection (aka Mesh World) since you do not have the ability to do M365 Group creation in your organization.
+1. You cannot create a Collection (formerly called a "Mesh World") since you do not have the ability to do M365 Group creation in your organization.
 
 1. You cannot create an event since you do not have access to M365 Calendar in your organization.
 
@@ -33,11 +33,11 @@ If you do not *allow* users with Teams and Office licenses to create Groups, Sha
 
 ### Will there be support added in future to use an existing M365 Group?
 
-We currently have no plans to support this feature. Right now, when Mesh creates an M365 Group, some additional data is added to the group to identify it as being a Mesh World.
+We currently have no plans to support this feature. Right now, when Mesh creates an M365 Group, some additional data is added to the group to identify it as being a Mesh Collection.
 
 ### When an M365 Group is created through Mesh, can it still be enabled for Teams after? Just like any other M365 Group?
 
-All M365 Groups created are normal M365 groups. A unique identifier is added to the group for the Mesh Portal to identify which Groups are associated with specific Mesh World groups.
+All M365 Groups created are normal M365 groups. A unique identifier is added to the group for the Mesh Portal to identify which Groups are associated with specific Mesh Collection groups.
 
 ### Can we script or automate the creation of an M365 Group for use with Mesh?
 
@@ -47,7 +47,11 @@ We currently do not support this feature.
 
 [!INCLUDE [The include file for license reqs for immersive spaces in Teams](../Includes/license-requirements-for-immersive-spaces-in-teams.md)]
 
-### How to download Mesh on Quest 2 via App Lab
+## What are the data handling standards for Mesh?
+
+Mesh is a part of M365, and it operates within the [M365 compliance framework](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview), including with respect to security and privacy commitments.
+
+## How to download Mesh on Quest 2 via App Lab
 
 Microsoft Mesh for Meta Quest devices is available through AppLab.
 
@@ -80,7 +84,7 @@ If you had previously downloaded the **Napili** app on your Quest 2 device, you 
     >[!Note]
     >You may need to restart your headset to ensure the app loads.
 
-#### How do I find my Meta ID?
+### How do I find my Meta ID?
 
 Log in to Oculus in a web browser, go to **Profile**, and get your email.
 

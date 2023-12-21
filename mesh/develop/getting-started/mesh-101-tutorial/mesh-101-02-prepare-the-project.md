@@ -1,10 +1,10 @@
 ---
 title: Mesh 101 Prepare the project
 description: Learn about adding a few basic features that are necessary for the Mesh 101 tutorial project.
-ms.service: meshproject
+ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/27/2023
+ms.date: 12/4/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
@@ -20,11 +20,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image010.png)
 
-    Open the **StartingPoint** scene. You should see the **TMP Importer** window.
-
-3. Select **Import TMP Essentials**, and then close the window.
-
-    ![A screen shot of a computer Description automatically generated with low confidence](../../../media/sample-mesh-101/image011.png)
+1. Open the **StartingPoint** scene. 
 
 ### About the Scenes
 
@@ -54,7 +50,7 @@ Let's turn off some of the icons we don't need to make the view more clear.
 
     ![Screenshot of the gizmos list with the TextMeshPro icon highlighted.](../../../media/sample-mesh-101/image012.png)
 
-    ... but there's a faster to find objects than scrolling.
+    ... but there's a faster way to find objects than scrolling.
 
 1. In the search field, type in "text." The list narrows down to objects starting with those letters.
 
@@ -79,7 +75,7 @@ Let's turn off some of the icons we don't need to make the view more clear.
 
     ![Screenshot of the Scene view with icons turned off and a clearer view of objects.](../../../media/sample-mesh-101/504-view-with-icons-turned-off.png)
 
-### Exploring the `StartingPoint` scene
+### Exploring the *StartingPoint* scene
 
 Feel free to move around in the **Scene** window to get familiar with
 the scene's contents. If we zoom out a little, we can see that there are
@@ -128,24 +124,33 @@ layer---we've already done it for you.
 
 ### Add Mesh Emulation Mode capability
 
-Let's add Mesh Emulation Mode capability to your project. In this mode, when you press the Unity editor Play button, you get an approximate preview of what the content will look and feel like when it runs in the Mesh app. A key feature of Mesh Emulation Mode is the ability to run multiple clients within the same process; this allows you to easily get a first impression of a multi-user scenario.
+Let's add Mesh Emulation Mode capability to your project. In this mode, when you press the Unity Editor Play button, you get an approximate preview of what the content will look and feel like when it runs in the Mesh app. A key feature of Mesh Emulation Mode is the ability to run multiple clients within the same process; this allows you to easily get a first impression of a multi-user scenario.
 
 **To add Mesh Emulation Mode capability**:  
-1. Press the Play button. This dialog appears:
+1. Press the Unity Editor Play button. This dialog appears:
 
     ![A screenshot of the Mesh Emulator Setup missing dialog.](../../../media/sample-mesh-101/499-emulator-setup-missing-dialog.png)
 
-1. Select the first button, **Add working MeshEmulatorSetup prefab.** The **MeshEmulatorSetup [NoUpload]** prefab appears in the **Hierarchy**.
+1. Select the first button, **Add working MeshEmulatorSetup prefab.** The **MeshEmulatorSetup [NoUpload]** prefab appears in the **Hierarchy** ...
 
     ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/500-mesh-emulator-setup-added.png)
 
-    This prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around.
+    ... and the project goes into Play Mode. This prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around. By default, the Mesh Emulator is set up to give you two different views in the **Game** window. 
+ 
+     ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/507-emulator-double-view.png)
+ 
+    For this tutorial, we only want a single view, so let's change that.
+
+1. Press the Unity Editor Play button to exit Play Mode.
+1. With **MeshEmulatorSetup** still selected in the **Hierarchy**, in the **Inspector**, navigate to the **Mesh Emulator Setup** component, and then change its **Initial Screen Count** property to 1.
+
+     ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/508-emulator-component-single.png)
+
+1. Click the Unity Editor Play button. Note that you now have a single view, from the avatar's position, in the **Game** window.
 
     ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../../media/sample-mesh-101/016-playmode-v2.png)
 
-1. Select the Unity Editor Play button.
-
-1. In the **Game** window, note that you now have a view from the avatar's position. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Play mode.
+1. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Play mode.
 
 ### Check the scale of your GameObjects
 
@@ -166,19 +171,18 @@ reminder of what the Environment looks like.
 **To add the thumbnail camera to the scene and set its view:**
 
 1. In the **Scene** window, adjust the view so that it shows what you
-    want to display in the thumbnail (the Thumbnail Camera's view will
+    want to eventually display in the thumbnail image (the Thumbnail Camera's view will
     be based on the **Scene** window).
 
-2. Select the "+" drop-down located below the **Hierarchy** tab, and
+1. Select the "+" drop-down located below the **Hierarchy** tab, and
     then select **Mesh Toolkit** > **Thumbnail Camera**.
 
-3. To confirm that the view in the Thumbnail Camera is what you want,
-    in the **Hierarchy**, select **MeshThumbnailCamera**. The Camera's
-    view appears in a small window in the lower right of the **Scene**
-    window.
+1. To see what your thumbnail will look like, view the small **MeshThumbnailCamera** window which appears in the lower right corner of the **Scene** window. 
+
+    ![A screen shot of the Mesh thumbnail camera highlighted in the Hierarchy and the camera's view highlighted in the Scene view.](../../../media/sample-mesh-101/509-thumbnail-camera-view.png)
 
 > **Note**: If you decide you want a different view for the Thumbnail
-Camera, the easiest way to achieve this is to delete the Camera, establish the Scene view that you want, and then add the Camera again. You can also adjust the Camera GameObject directly in the **Scene**
+Camera, the easiest way to achieve this is to delete the Camera, establish the **Scene** view that you want, and then add the Camera again. You can also adjust the Camera GameObject directly in the **Scene**
 window or change its **Position** and **Rotation** values in the
 **Inspector** prior to uploading your Environment to Mesh.
 

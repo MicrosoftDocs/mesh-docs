@@ -36,7 +36,7 @@ Generally authoring environments in Mesh involves three steps.
 1. Upload to Microsoft Mesh
 1. Run your content in the Mesh app
 
-During step one it's recommended you use a mixture of the [Content Performance Analyzer (CPA)](#content-performance-analyzer-cpa) and [Performance Profiler](#performance-profiler) found in the [Mesh Toolkit](../development-overview.md#develop-in-unity-with-mesh-toolkit) package which is required for any Unity project being used to generate a Mesh environment. During step two the CPA tool automatically runs. Finally, during step three final profiling should occur via Mesh's built-in Performance Profiler.
+During step one it's recommended you use a mixture of the [Content Performance Analyzer (CPA)](#content-performance-analyzer-cpa) and [Performance Profiler](#performance-profiler) found in the [Mesh toolkit](../development-overview.md#develop-in-unity-with-mesh-toolkit) package which is required for any Unity project being used to generate a Mesh environment. During step two the CPA tool automatically runs. Finally, during step three final profiling should occur via Mesh's built-in Performance Profiler.
 
 ## Tools for analyzing performance
 
@@ -58,7 +58,7 @@ Issues and suggestions are reported via an editor window in Unity.
 ### Performance Profiler
 
 The Performance Profiler provides a simple window for viewing your Mesh project's frame rate, scene complexity, and memory
-usage across all platforms. The Performance Profiler is accessible within the Mesh app and within the Mesh Toolkit.
+usage across all platforms. The Performance Profiler is accessible within the Mesh app and within the Mesh toolkit.
 
 ![A screen shot of the Performance Profiler in isolation](../../media/3d-design-performance-guide/image004.png)
 

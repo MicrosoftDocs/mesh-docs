@@ -45,7 +45,7 @@ You can use WebSlates for:
 
 If you have a Unity project set up to [create Mesh Environments](../build-your-basic-environment/create-a-new-project-or-update.md), adding a WebSlate to your Environment is a straightforward process.
 
-In Mesh, WebSlate loads an interactive page through a provided URL. The URL given to it in the Environment will be the same one loaded in Mesh. In the Mesh Toolkit, the WebSlate prefab contains a URL parameter that developers can specify to control the content displayed in their Mesh Environment. 
+In Mesh, WebSlate loads an interactive page through a provided URL. The URL given to it in the Environment will be the same one loaded in Mesh. In the Mesh toolkit, the WebSlate prefab contains a URL parameter that developers can specify to control the content displayed in their Mesh Environment. 
 
 - When loaded on the Mesh App for PC and Quest, webpages loaded by a WebSlate are interactable through mouse, keyboard, and Quest XR controller input.
 
@@ -61,11 +61,11 @@ In Mesh, WebSlate loads an interactive page through a provided URL. The URL give
 
 ## Requirements/Dependencies
 
-WebSlate depends on the *Unity.InputSystem* and *Unity.XR.Interaction.Toolkit* Unity packages, located in the Mesh Toolkit.
+WebSlate depends on the *Unity.InputSystem* and *Unity.XR.Interaction.Toolkit* Unity packages, located in the Mesh toolkit.
 
 ## Add a WebSlate prefab to your Unity project
 
-There are two flavors of WebSlate prefabs available in the Mesh Toolkit that you can add to your scene. If you prefer a clean WebSlate with no extra components, add the WebSlate prefab. If you'd like a WebSlate contained in a stylized frame with extra features, add the *WebSlateFramed* prefab.
+There are two flavors of WebSlate prefabs available in the Mesh toolkit that you can add to your scene. If you prefer a clean WebSlate with no extra components, add the WebSlate prefab. If you'd like a WebSlate contained in a stylized frame with extra features, add the *WebSlateFramed* prefab.
 
 ![Image showcasing two webslate prefabs.](../../media/webview-developer-guide/image025.png)
 
@@ -84,9 +84,9 @@ There are two flavors of WebSlate prefabs available in the Mesh Toolkit that you
 
     **Tip**: You can also click the "+" button at the top left of the Hierarchy window to see the same menu.
 
-    ![Image of adding the Mesh Toolkit using the context menu.](../../media/webview-developer-guide/image006.png)
+    ![Image of adding the Mesh toolkit using the context menu.](../../media/webview-developer-guide/image006.png)
 
-    ![Add Mesh Toolkit to Hierarchy in Unity.](../../media/webview-developer-guide/image007.png)
+    ![Add Mesh toolkit to Hierarchy in Unity.](../../media/webview-developer-guide/image007.png)
 
 ### Search for and add the WebSlate prefab
 
@@ -112,7 +112,7 @@ It's important to ensure that all the attendees in a Mesh experience can read al
 
 ## Preview WebSlate in Mesh Emulation Mode
 
-To view a URL displayed in your WebSlate more quickly, you can use Mesh Emulation Mode. Aside from testing in this mode, the only other way to see your WebSlate is to upload it using the Mesh Toolkit Uploader and view it in a Mesh experience.
+To view a URL displayed in your WebSlate more quickly, you can use Mesh Emulation Mode. Aside from testing in this mode, the only other way to see your WebSlate is to upload it using the Mesh toolkit Uploader and view it in a Mesh experience.
 
 To add Mesh Emulation Mode to your project, follow the instructions in the [Mesh Emulator article](../debug-and-optimize-performance/mesh-emulator.md).
 
@@ -185,17 +185,26 @@ For further guidance on the WebSlate node in Mesh Apps, see the [Visual scriptin
 
 - A WebSlate loads a default URL. You should replace this URL with one that you prefer for each WebSlate in use. The brightness parameter is set to 1.0 (100% of the browser's brightness).
 
-    ![Unity usage of WebSlate.](../../media/webview-developer-guide/image004.png)
+- WebSlates will automatically suspend themselves after being offscreen for too long. If you need to ensure a given slate is always running (such as a livestream or continuous audio playback), then check the "Prevent Suspension" button on the association WebSlate. See below for performance implications.
+
+![Unity usage of WebSlate](../../media/webview-developer-guide/image004.png)
+
 
 ## Performance
 
 - Since a WebSlate is a loaded web page, it's important to consider performance implications:
 
-  - Scenes are typically performant at 60fps with up to 10 WebSlates. You may observe frame rate and general performance degradation in proportion to the number of WebSlates placed in a scene, regardless of content.
+  - Scenes are typically performant at 60fps with up to 10 active WebSlates. Framerate and general performance degradation may be observed in proportion to the number of WebSlates placed in a scene, regardless of content.
 
   - Content is loaded and executed in the WebSlate on a thread separate from the scene's update and rendering thread(s), and is therefore unlikely to directly affect frame rate. However, it's still important to consider the cost of JavaScript running on a Web page both in terms of runtime complexity and memory usage.
 
-- Since WebSlates don't have any external navigation UI by default, the best practice is to only load custom URLs, where the site navigation is cyclic and can be done inside the page. This can be done with a navigation sidebar or links to a hub page, for example.
+  - To help save on performance, WebSlates that are offscreen for over 30s are automatically suspended. They quickly resume on coming back onscreen, but this can impact actively-running services on the hosted page. If this is an issue, developers can disable suspension with the prefab's "Prevent Suspension" checkbox. Note that doing so can cause the scene to consume more resources, as these WebSlates remain active at all times.
+
+![WebSlate with Suspension Prevention circled](../../media/webview-developer-guide/WebSlate-Prevent-Suspension.png)
+
+- Since WebSlates don't have any external navigation UI by default, the best practice is to only load custom URLs, where the site navigation is cyclic and can be done inside the page. This can be done with a navigation sidebar, or links to a hub page, for example.
+
+
 
 - The Content Performance Analyzer (CPA) tool includes a WebSlate analyzer which measures the average time it takes Unity's render pipeline to render WebSlates in a frame. 
 
@@ -211,7 +220,7 @@ For further guidance on the WebSlate node in Mesh Apps, see the [Visual scriptin
 
 ## Security restrictions
 
-- WebSlates are locked to the URLs they navigate to, preventing malicious redirects. All unintended hyperlink navigations to outside domains are blocked.
+- WebSlates are locked to the URLs they navigate to, preventing malicious redirects. All unintended hyperlink navigations to outside domains are blocked, unless explicitly listed as an allowed domain (see below).
 
 - WebSlates are restricted to navigation within the initial domain or the specified URL's and server's redirections.
 
@@ -267,8 +276,10 @@ If you already know which domains you'll need, you can manually add them to the 
 
 ### Known issues
 
-See the [WebSlate sections in the Mesh Toolkit known issues article](../../Resources/mesh-toolkit-known-issues.md).
+See the [WebSlate sections in the Mesh toolkit known issues article](../../Resources/mesh-toolkit-known-issues.md).
 
 ## Feedback for Web content in Mesh
 
+
 We love feedback and bug reports! If you'd like to provide feedback, use the Feedback button inside any Mesh experience. This ensures that your feedback and bug reporting will be reviewed and incorporated quickly. For WebSlate feedback, include "**[web content]**" or **a mention of WebSlate** in your feedback.
+
