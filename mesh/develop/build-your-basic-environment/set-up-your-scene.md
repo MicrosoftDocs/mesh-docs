@@ -82,12 +82,5 @@ up to you. The example below is taken from our [Mesh 101 tutorial](../../develop
 
 ## Next Steps
 
-To enhance your project with features such as Web content, Mesh Interactables, or Mesh Physics, go to:
-
 > [!div class="nextstepaction"]
-> [Enhanced features overview](../enhance-your-environment/enhanced-features-overview.md)
-
-If you're interested in some of the more artistic elements of experience creation such as modeling, texture, and lighting, go to:
-
-> [!div class="nextstepaction"]
-> [Design overview](../design/overview.md)
+> [Environment construction tips](./environment-construction-tips.md)

@@ -25,8 +25,12 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 
 ## Event Producers tools
 
-- **[Host panel:](#host-panel)** See the participants in your event and use the host panel toolbar to access the *[Mute all](#mute-all)*, *[Megaphone](#megaphone)*, *[Broadcast](#broadcast)*, and  *[Share](#share)* buttons.
+- **[Host panel:](#host-panel)** See the participants in your event and use the host panel toolbar to access the *[Mute all](#mute-all)*, *[Hand Raise](#hand-raise)*, *[Megaphone](#megaphone)*, *[Broadcast](#broadcast)*, and  *[Share](#share)* buttons.
 - **[Control panel](#control-panel):** Control the elements that were added in a Customization session. [Play a video](#control-artifacts-in-the-control-panel), for example, or control custom artifacts that you may have added!
+
+## Common event scenarios
+
+For those interested in running question and answer scenarios where participants can raise their hand, be called on by the host, and megaphoned or broadcast to the entire event, see the [common event scenarios article](common-event-scenarios.md) for more info.
 
 ## Join the event
 
@@ -55,11 +59,11 @@ Once you select **Join now**, you'll utilize two main tools, Host panel and the 
 
 1. Select the **Host panel** button in the menu bar.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Host-panel-button-overview2.png" alt-text="Host panel button to see participant list and tools":::
+    :::image type="content" source="../media/mesh-event-producer-guide/host-panel-menu-bar-2314.png" alt-text="Host panel button to see participant list and tools":::
 
 1. In the window that opens, you'll see the following tools at the top:
 
-    :::image type="content" source="../media/mesh-event-producer-guide/host-tools-bar.png" alt-text="Host panel tool bar":::
+    :::image type="content" source="../media/mesh-event-producer-guide/producer-tools-2314.png" alt-text="Host panel tool bar":::
 
 ### Host panel tools
 
@@ -71,7 +75,26 @@ Mute all attendees in the event. Hosts in the event can still use their mics and
 
 **Disabled:** Attendees can now use their microphone.
 
-:::image type="content" source="../media/mesh-event-producer-guide/Event-production-mute-button.png" alt-text="Mute all button in host panel":::
+:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-mute-all-2314.png" alt-text="Mute all button in host panel":::
+
+#### Hand Raise
+
+Enable or disable Hand Raise for participants. Hand Raise is ideal for Question and Answer scenarios. When someone raises their hand, there will be an indicator next to their name in the host panel. This allows you as a the host to call on attendees.
+
+**Hand raise enabled:** Participants can raise their hand to await being called on and megaphoned.
+
+**Hand raise disabled:** Participants cannot raise their hand.
+
+:::image type="content" source="../media/common-event-scenarios\producer-tools-hand-raise-2314.png" alt-text="Mute all button in host panel":::
+
+When an attendee has their hand raised, you'll see the hand raise notification next to their name in the host panel. In a single room event, you'll also see hand raise icon above their avatar.
+
+:::image type="content" source="../media/common-event-scenarios/Event-host-Hand-raise-notifications.png" alt-text="Screenshot of Mesh app showing hand raise notification next to participant names and avatar.":::
+
+> [!TIP]
+> In multi-room events, you won't see any attendee avatars until they are broadcast.
+
+Learn how to [use Hand Raise for question and answer (Q&A) scenarios](common-event-scenarios.md#using-hand-raise-for-Q&A)
 
 #### Megaphone
 
@@ -83,20 +106,30 @@ Amplify your voice to all participants in the event. A great tool when broadcast
 
 **Disabled:** Host voice is not amplified.
 
-:::image type="content" source="../media/mesh-event-producer-guide/Event-production-megaphone-button.png" alt-text="Megaphone button in host panel":::
+:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-megaphone-2314.png" alt-text="Megaphone button in host panel":::
 
 #### Broadcast
 
-Use broadcast anytime you wish to be seen or heard by your whole audience in all rooms. Broadcasted avatars are visually distinguished by a purple-rings effect applied to their avatar.
+In multi-room events, use broadcast anytime you wish to be seen or heard by your whole audience in all rooms. Broadcasted avatars are visually distinguished by a purple-rings effect applied to their avatar.
 
 **Enabled:** Host avatar and voice are broadcast to all rooms in the event.
 
 **Disabled:** Host avatar and voice are not broadcasted to all rooms.
 
-:::image type="content" source="../media/mesh-event-producer-guide/Event-production-broadcast-button.png" alt-text="Boradcast button in a Mesh event in the host panel":::
+:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-broadcast-2314-multi-room.png" alt-text="Broadcast button in a Mesh event in the host panel.":::
+
+#### Broadcast or Megaphone other participants
+
+In a multi-room scenario, you'll use Broadcast to make the participant visible to all other participants. This is ideal when someone has raised their hand, as shown below:
+
+:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-hand-raise-2314-multi-room.png" alt-text="Hand raise and broadcast  in a multi-room Mesh event in the host panel.":::
 
 > [!NOTE]
-> Only three hosts can broadcast at the same time.
+> A maximum of three people can broadcast at the same time.
+
+When you request an attendee to broadcast or megaphone, you'll receive a notification. Once you request it, the attendee will also receive the request and be able to accept or deny the option.
+
+:::image type="content" source="../media/common-event-scenarios/Request-to-broadcast-or-megaphone.png" alt-text="Screenshot of request to megaphone or broadcast from the host perspective.":::
 
 #### Share
 
@@ -106,7 +139,7 @@ Share your screen or a specific window on your PC to all participants. Screensha
 
 **Disabled:** Host screen or window is not shown.
 
-:::image type="content" source="../media/mesh-event-producer-guide/Event-production-screenshare.png" alt-text="Share button in host panel":::
+:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-sharing-2314.png" alt-text="Share button in host panel":::
 
 > [!NOTE]
 > As with Microsoft Teams, an organizer will not see their active screen share. However, all non-sharing attendees will be able to see the screen share.
@@ -123,9 +156,9 @@ Share your screen or a specific window on your PC to all participants. Screensha
 
     :::image type="content" source="../media/mesh-event-producer-guide/Screenshare-alerts-shown.png" alt-text="Screenshot of Mesh app showing alerts for screenshare.":::
 
-1. Stop sharing your screen by selecting the Share button again at the top of host panel.
+1. Exit or stop sharing your screen by selecting the Share button again at the top of host panel.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Event-production-screenshare-stop.png" alt-text="Screenshot of Mesh app showing stop sharing button in host panel.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/producer-tools-sharing-stop-2314.png" alt-text="Screenshot of Mesh app showing stop sharing button in host panel.":::
 
 ### Social panel
 
