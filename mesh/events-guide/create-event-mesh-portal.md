@@ -56,7 +56,7 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 1. Open Mesh on the web at [https://portal.mesh.microsoft.com/](https://portal.mesh.microsoft.com/) or [https://mesh.cloud.microsoft/](https://mesh.cloud.microsoft/).
 
     > [!NOTE]
-    > Mesh on the web is moving to cloud.microsoft [with all Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). To help ease this transition, we are providing two links for Mesh on the web. Please ensure you have allowed the proper endpoints in the [Preparing your organization article](preparing-your-organization.md#ensure-endpoints-can-be-allowed-for-immersive-spaces-in-teams) to use the new cloud.microsoft endpoint..
+    > Mesh on the web is moving to cloud.microsoft [with all Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). To help ease this transition, we are providing two links for Mesh on the web. Please ensure you have allowed the proper endpoints in the [Preparing your organization article](../Setup/Content/preparing-your-organization.md#ensure-endpoints-can-be-allowed-for-immersive-spaces-in-teams) to use the new cloud.microsoft endpoint.
 
 1. Log in with your corporate account.
 
