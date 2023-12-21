@@ -13,13 +13,13 @@ keywords: Microsoft Mesh, object and player interactions, interactables, avatars
 
 ## Travel Point and Travel Point Group
 
-*Travel Point* is a component in the Mesh Toolkit that can be used to define where to place an avatar when first joining an event and also to transport avatars during their experience using Visual Scripting.
+*Travel Point* is a component in the Mesh toolkit that can be used to define where to place an avatar when first joining an event and also to transport avatars during their experience using Visual Scripting.
 
 If a travel point isn't present in an Environment, and there's a floor at the origin, the avatar will be grounded on the floor when spawned.  If no floor is present near the origin, the avatar will spawn above the origin and fall for a little while and then respawn in a loop.
 
 **Setting up travel groups and travel points**
 
-1. Create a trave point group: all travel points must belong to a group; a default group will be assigned to any travel points that don't have one. Every travel group must have a unique name. The default travel group will not be set as a DefaultSpawnGroup unless it's the only group that exists.
+1. Create a travel point group: all travel points must belong to a group; a default group will be assigned to any travel points that don't have one. Every travel group must have a unique name. The default travel group will not be set as a DefaultSpawnGroup unless it's the only group that exists.
 
     - To do this, create a new GameObject with a *Travel Point Group* component attached.
 

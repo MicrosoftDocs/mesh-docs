@@ -26,9 +26,9 @@ to easily get a first impression of a multi-user scenario.
 
 **To use Mesh Emulation Mode in your project (or not)**:
 
-1.  Ensure that you have the Mesh Toolkit imported.
+1.  Ensure that you have the Mesh toolkit imported.
 1.  Ensure that the scene contains a piece of solid floor below the origin that's set to the *NavMesh* layer.
-1.  Press the Play button. The Toolkit checks to see if a GameObject with "EmulatorSetup" in its name exists at the top level of the **Hierarchy**. If it doesn't, this dialog appears:
+1.  Press the Play button. The toolkit checks to see if a GameObject with "EmulatorSetup" in its name exists at the top level of the **Hierarchy**. If it doesn't, this dialog appears:
 
     ![A screenshot of the Mesh Emulator Setup missing dialog.](../../media/debug-and-optimize/003-emulator-setup-missing-dialog.png)
 
@@ -40,9 +40,9 @@ to easily get a first impression of a multi-user scenario.
     ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../media/debug-and-optimize/004-mesh-emulator-in-hierarchy.png)
 
     **To avoid running the Emulator and prevent the "Emulator Setup missing" dialog from appearing again when you click Play**:  
-    - Select the second button, **Add dummy NoMeshEmulatorSetup game object**. As the name suggests, this doesn't actually do anything, but the Toolkit will find "EmulatorSetup" in its name and will refrain from showing you the **Emulator Setup missing** dialog again.
+    - Select the second button, **Add dummy NoMeshEmulatorSetup game object**. As the name suggests, this doesn't actually do anything, but the toolkit will find "EmulatorSetup" in its name and will refrain from showing you the **Emulator Setup missing** dialog again.
 
-If you initially decide you don't want to use Mesh Emulation Mode, but change your mind later on, delete the **NoMeshEmulatorSetup [NoUpload]** GameObject from the **Hierarchy**. The next time you click Play, the Toolkit will display the **Emulator Setup missing** dialog again, and you can click the button to add the Emulator.
+If you initially decide you don't want to use Mesh Emulation Mode, but change your mind later on, delete the **NoMeshEmulatorSetup [NoUpload]** GameObject from the **Hierarchy**. The next time you click Play, the toolkit will display the **Emulator Setup missing** dialog again, and you can click the button to add the Emulator.
 
 ## Teleport Player on Play
 
@@ -57,7 +57,7 @@ When working in a large scene, you may find it valuable to teleport the player t
 ## Mesh Emulation Mode Split Screen
 
 This feature lets you run multiple clients within the same process and
-show them side-by-side within the same window. Mesh Toolkit itself implements a very minimal emulated network component that's sufficient to communicate the player position between the clients, allowing the different players
+show them side-by-side within the same window. Mesh toolkit itself implements a very minimal emulated network component that's sufficient to communicate the player position between the clients, allowing the different players
 to see each other as heavily stylized avatars:
 
 ![A screenshot of multiple clients displayed side-by-side in Mesh Emulation Mode.](../../media/debug-and-optimize/image043.png)

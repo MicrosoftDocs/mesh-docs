@@ -1,6 +1,6 @@
 ---
-title: Mesh Toolkit Dart Room sample
-description: Learn about the Mesh Toolkit Dart Room sample.
+title: Mesh toolkit Dart Room sample
+description: Learn about the Mesh toolkit Dart Room sample.
 author: vtieto
 ms.author: vinnietieto
 ms.date: 9/29/2023
@@ -9,11 +9,11 @@ ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, dartroom
 ---
 
-# Microsoft Mesh Toolkit Sample: Dart Room
+# Microsoft Mesh toolkit Sample: Dart Room
 
 ![Gallery View](../../../media/samples/003-dartroom.png)
 
-The *Dart Room* project (scene: *DartRoom*) contains a carefully designed scene that demonstrates the power of combining appealing visuals with the creative use of Mesh Physics features found in the Mesh Toolkit. Feel free to inspect and modify the scene and play with it!.
+The *Dart Room* project (scene: *DartRoom*) contains a carefully designed scene that demonstrates the power of combining appealing visuals with the creative use of Mesh Physics features found in the Mesh toolkit. Feel free to inspect and modify the scene and play with it!.
 
 In this project, you'll find:
 
@@ -43,14 +43,14 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## Contributions
 
-We are not currently accepting code contributions to our samples.  If you have any feedback or if you run into any issues with the samples or the Mesh Toolkit, do the following: in a Unity project that has the Mesh Toolkit package installed, select **Mesh Toolkit** -> **Give feedback to Microsoft** and then use the feedback link in the Mesh Toolkit to let us know.
+We are not currently accepting code contributions to our samples.  If you have any feedback or if you run into any issues with the samples or the Mesh toolkit, do the following: in a Unity project that has the Mesh toolkit package installed, select **Mesh Toolkit** -> **Give feedback to Microsoft** and then use the feedback link in the Mesh toolkit to let us know.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-The [Samples Overview](samples-overview.md) page contains instructions on how to download the Mesh Toolkit.
+The [Samples Overview](samples-overview.md) page contains instructions on how to download the Mesh toolkit.
 
 ## License
 
-The Mesh sample in this project is governed by the MIT license as shown in the [LICENSE.MD](https://github.com/microsoft/Mesh-Toolkit-Unity/blob/main/LICENSE) file in the *Mesh-Toolkit-Unity* repository. However, the samples functionality is dependent on the Mesh Toolkit, which is governed by a separate license, and contains 3rd party software. 
+The Mesh sample in this project is governed by the MIT license as shown in the [LICENSE.MD](https://github.com/microsoft/Mesh-Toolkit-Unity/blob/main/LICENSE) file in the *Mesh-Toolkit-Unity* repository. However, the samples functionality is dependent on the Mesh toolkit, which is governed by a separate license, and contains 3rd party software. 
