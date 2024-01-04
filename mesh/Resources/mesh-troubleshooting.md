@@ -17,7 +17,7 @@ keywords: Microsoft Mesh, M365, events, join events, organize events, immersive 
 
 [!INCLUDE [The include file for the license requirements in Mesh](../Includes/license-requirements-for-Mesh.md)]
 
-### What if I limit user permissions with corporate policies
+### What if I limit user permissions with corporate policies?
 
 If you do not *allow* users with Teams and Office licenses to create Groups, Sharepoint/OneDrive sites, or use Mailbox/Calendar, the user may notice the following:
 
@@ -157,6 +157,10 @@ The data should be your version of the following:
 - **Tenant ID:**
 - **Trace ID:**
 - **Date:**
+
+## I created a Collection, but now I can't generate an environment or template based on that Collection. *Or* I was able to create an environment, but now I can't create an event based on that environment. What's causing this?
+
+You're probably running into the "partially created Collection" problem. A Collection consists of two parts: an M365 group and a database entry related to room creation in an event. There may be times when the Collection is created before the database provisioning part of the process has completed. If this occurs, the Collection may be partially usable but will be in a bad state. You should delete this Collection and create a new one.
 
 ### Audio setup in Mesh FAQ
 
