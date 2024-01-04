@@ -160,7 +160,9 @@ The data should be your version of the following:
 
 ## I created a Collection, but now I can't upload an environment to that Collection. *Or* I was able to upload an environment to that Collection, but now I can't create an event or template based on that environment. What's causing this?
 
-You're probably running into the "partially created Collection" problem. A Collection consists of two parts: an M365 group and a database entry related to room creation in an event. There may be times when the Collection is created before the database provisioning part of the process has completed. If this occurs, the Collection may be partially or even completely unusable. You should delete this Collection and create a new one.
+You're probably running into the "partially created Collection" problem. A Collection consists of two parts: an M365 group and a database entry for your tenant related to room creation. There may be times when the Collection is created before the database provisioning part of the process has completed. If this occurs, the Collection may be partially or even completely unusable. You should delete this Collection and create a new one.
+
+[Learn more about setting up your organization and provisioning your tenant](../Setup/Content/preparing-your-organization.md#consider-which-tenant-to-provision-for-mesh).
 
 ### Audio setup in Mesh FAQ
 
