@@ -6,7 +6,7 @@ author: qianw211
 ms.author: qianwen
 ms.date: 10/12/2023
 ms.topic: Troubleshooting
-keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
+keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, license requirements, licensing, permissions, Oculus, Quest, download, ID, Meta ID, collection, environments, templates, sharding, provisioning, audio, spatial audio, error messages
 ---
 
 # Troubleshooting & FAQ
@@ -41,7 +41,7 @@ All M365 Groups created are normal M365 groups. A unique identifier is added to 
 
 ### Can we script or automate the creation of an M365 Group for use with Mesh?
 
-We currently do not support this feature.  
+We currently don't support this feature.  
 
 ## What are the license requirements for Immersive spaces in Teams?
 
