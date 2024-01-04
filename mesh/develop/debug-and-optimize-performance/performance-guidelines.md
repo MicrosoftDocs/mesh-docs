@@ -50,7 +50,7 @@ To run the CPA tool select **Mesh Toolkit** > **Content Performance Analyzer** f
 
 Issues and suggestions are reported via an editor window in Unity.
 
-![A screenshot of the Content Performance Analyzer window](../../media/3d-design-performance-guide/image003.png)
+![A screenshot of the Content Performance Analyzer window](../../media/debug-and-optimize/003-cpa-analyzer-with-background.png)
 
 > [!IMPORTANT]
 > A portion of the CPA analyzers will run automatically when uploading content to Mesh. Because not all tests can run automatically it's good to run the CPA manually as part of your development process.
