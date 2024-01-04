@@ -158,7 +158,7 @@ The data should be your version of the following:
 - **Trace ID:**
 - **Date:**
 
-## I created a Collection, but now I can't generate an environment or template based on that Collection. *Or* I was able to create an environment, but now I can't create an event based on that environment. What's causing this?
+## I created a Collection, but now I can't upload an environment to that Collection. *Or* I was able to upload an environment to that Collection, but now I can't create an event or template based on that environment. What's causing this?
 
 You're probably running into the "partially created Collection" problem. A Collection consists of two parts: an M365 group and a database entry related to room creation in an event. There may be times when the Collection is created before the database provisioning part of the process has completed. If this occurs, the Collection may be partially usable but will be in a bad state. You should delete this Collection and create a new one.
 
