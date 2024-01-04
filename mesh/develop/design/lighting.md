@@ -4,7 +4,7 @@ description: Learn about how lighting concepts when designing for Mesh.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/9/2023
+ms.date: 1/2/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, unity, design, models, modeling
 ---
@@ -26,9 +26,9 @@ To include a mesh object in the light bake, make sure you check the **Static** c
 
 If this isn't checked, lighting won't be applied to the mesh and it won't cast any shadows in the scene.
 
-![A screen shot of Unity showing the Mesh renderer.](../../media/3d-design-performance-guide/image050.png)
-
 The Scale in Lightmap value increases/decreases the size of the selected mesh's UVs in the Unity light map bake. If you need to change a specific mesh's resolution, this is where to do it.
+
+![A screen shot of Unity showing the Mesh renderer.](../../media/3d-design-performance-guide/image050.png)
 
 Leave **Scale in Lightmap** at its default (1) while setting up your scene.
 
@@ -54,4 +54,24 @@ avatars, user content, and physics objects. To ensure these objects are properly
 Color and intensity can be any values that suit the environment. The [Content Performance Analyzer](/mesh/develop/debug-and-optimize-performance/cpa) will also display an error if a light like this is not found.
 
 ![A screenshot of Inspector window in Unity](../../media/3d-design-performance-guide/image052.png)
+
+## Light Mapper Settings
+
+1. On the **Windows** menu, select **Render** > **Lighting**.
+1. Navigate to the **Lightmapping Settings** section.
+
+![A screenshot of the Lighting window in the Scene tab with the Lightmapper Settings section highlighted.](../../media/3d-design-performance-guide/003-lighting-settings.png).
+
+Save a new lighting file *per scene*.
+
+**To keep backface errors out of the light bake**:
+Create a new Lightmap Parameters file and set **Backface Tolerance** to a very low number.
+
+Here's a scene with a backface tolerance setting of 1.0:
+
+![A screenshot of a scene with a backface tolerance setting of one point zero.](../../media/3d-design-performance-guide/005-backface-tolerance-one.png).
+
+Here's the same scene with a backface tolerance setting of .002:
+
+![A screenshot of a scene with a backface tolerance setting of point zero zero two.](../../media/3d-design-performance-guide/006-backface-tolerance-002.png).
 

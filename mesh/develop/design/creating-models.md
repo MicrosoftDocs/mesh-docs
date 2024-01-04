@@ -4,7 +4,7 @@ description: Learn about design concepts when creating models for Mesh.
 author: typride
 ms.author: vinnietieto
 ms.service: mesh
-ms.date: 9/26/2023
+ms.date: 1/2/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, unity, design, models, modeling
 ---
