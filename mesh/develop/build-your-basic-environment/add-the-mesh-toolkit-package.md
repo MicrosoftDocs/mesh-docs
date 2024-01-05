@@ -16,7 +16,7 @@ With the Mesh toolkit package installed in Unity, you can use your 3D world-buil
 When you install the Mesh toolkit, it does the following:
 
 - Adjusts your Unity project's settings to match Mesh. This modifies several files in the *ProjectSettings* folder (for example, *GraphicsSettings.asset*).
-- Ensures that OpenXR is enabled and adjusts the XR settings. To see these settings, on the menu bar, select **Edit** > **Project Settings ** > **XR Plug-in Management**.
+- Ensures that OpenXR is enabled and adjusts the XR settings. To see these settings, on the menu bar, select **Edit** > **Project Settings** > **XR Plug-in Management**.
 - Ensures that *TextMeshPro* is configured and sets its default font to "Segoe UI Fluent Semibold SDF".
 
 **To add the Mesh toolkit package(s) to your Unity project**:
