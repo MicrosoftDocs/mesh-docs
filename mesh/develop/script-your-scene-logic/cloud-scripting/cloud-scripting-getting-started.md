@@ -16,7 +16,7 @@ This article will help you configure your development environment and start iter
 ## Software dependencies
 
 1. [.NET 6.0 SDK Windows](https://dotnet.microsoft.com/download)a3
-1. [Azure CLI 2.40.0](https://learn.microsoft.com/cli/azure/install-azure-cli)
+1. [Azure CLI 2.40.0](/cli/azure/install-azure-cli)
 
 ## Create a Scene with Mesh Cloud Scripting
 
@@ -38,7 +38,7 @@ The following instructions show how to create a simple environment with a cube t
 
    ![Screenshot of Open application folder button in Unity.](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
    
-   ... you'll see in the Windows File Explorer that this also creates a new [ASP.NET Core](https://learn.microsoft.com/aspnet/core/razor-pages/web-sdk?view=aspnetcore-6.0) project named **MyFirstCloudScripting.csproj** in the **Assets > .MeshCloudScripting > MyFirstCloudScripting** folder.
+   ... you'll see in the Windows File Explorer that this also creates a new [ASP.NET Core](/aspnet/core/razor-pages/web-sdk?view=aspnetcore-6.0) project named **MyFirstCloudScripting.csproj** in the **Assets > .MeshCloudScripting > MyFirstCloudScripting** folder.
 
    ![Screenshot of a folder structure in Windows showing scripting project.](../../../media/mesh-scripting/getting-started/003-cloud-scripting-files.png)
 
@@ -129,7 +129,7 @@ The following instructions show how to create a simple environment with a cube t
    ![A screen shot of feedback in Unity after clicking the cube.](../../../media/mesh-scripting/getting-started/JITHitBreakpoint.png)
 
 > [!NOTE]
-> By default, the application will time out after two minutes of inactivity. To increase this window, add a numeric `"debugTimeoutSecs"` value to your manifest file (for example: `"debugTimeoutSecs": 240`)
+> By default, the application will timeout after two minutes of inactivity. To increase this window, set a `"debugTimeoutSecs"` value to your manifest file (ex. `"debugTimeoutSecs": "240"`)
 
 ## Upload the Environment
 
