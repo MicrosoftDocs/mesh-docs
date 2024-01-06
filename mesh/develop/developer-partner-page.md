@@ -1,10 +1,10 @@
 ---
-title: Mesh Development overview
-description: Development overview for Mesh using Unity.
+title: Meet our Mesh Early Adopters
+description: Partners of the Mesh Technology Adoption program.
 author: typride
-ms.author: vinnietieto
-ms.date: 11/06/2023
-ms.topic: Guide
+ms.author: tmilligan
+ms.date: 01/05/2024
+ms.topic: Reference
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environments
 ---
