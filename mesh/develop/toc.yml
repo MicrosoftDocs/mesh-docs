@@ -15,3 +15,5 @@ items:
     href: debug-and-optimize-performance/toc.yml
   - name: Make your environment available in Mesh
     href: make-your-environment-available/toc.yml
+  - name: Mesh partners 
+    href: developer-partner-page.md
