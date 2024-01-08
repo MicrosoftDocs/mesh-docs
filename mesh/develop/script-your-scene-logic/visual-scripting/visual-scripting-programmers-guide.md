@@ -4,7 +4,7 @@ description: Learn about how to create scripts using Visual Scripting in Mesh.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/16/2023
+ms.date: 1/4/24
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, graphs
 ---
@@ -85,6 +85,14 @@ All visual script flows start in response to an event.
 
 - If the event originates on a single client (for example, the user clicks a button), the visual script executes only on that client.
 - If the event occurs on all clients, the visual script executes on all clients (for example, timer event, shared property change, shared variable update, avatar enters trigger, physics body touches collider).
+
+When adding a node to detect if an object is selected, it's important to choose the correct one. You have two choices: *Mesh Interactable Body: Is Selected Locally*, and *Mesh Interactable Body: Is Selected*. Let's say, for example, you want to have a button that can be clicked to trigger teleportation. To have the attendee click the button and transport only themselves, use the *Mesh Interactable Body: Is Selected Locally* node.
+
+![Screen shot of the Mesh Interactable Body Is Selected locally node.](../../../media/mesh-scripting/visual-scripting/006-is-selected-locally.png)
+
+To have the attendee click the button and teleport everyone in the experience, use the *Mesh Interactable Body: Is Selected* node. In each case, the text above the node tells you the behavior to expect:
+
+![Screen shot of the Mesh Interactable Body Is Selected node, which will affect all clients.](../../../media/mesh-scripting/visual-scripting/007-is-selected-all-clients.png)
 
 If a local script sets a shared variable and a second script listens to changes to this variable (using the **On State Changed** trigger; see below), the second script will be executed on all clients.
 
