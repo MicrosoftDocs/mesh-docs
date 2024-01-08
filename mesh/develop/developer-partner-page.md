@@ -21,8 +21,8 @@ Consider reaching out to our partners bring your ideas to life with Mesh.
 |---------|---------|---------|---------|
 |[Sulava](#sulava---create-better-worklife)    | Build custom immersive solutions or experiences. System integration (e.g. setting up and onboarding organizations onto M365). Onboarding organizations to the future with Microsoft Mesh as a Service.        |  Finland     | [sulava.com](https://sulava.com/en/services/metaverse/microsoft-mesh-as-a-service/)        |
 |[Telefónica](#telefónica)   |  Build custom immersive solutions or experiences   |   Spain      |  [metaverso.telefonica.com](https://metaverso.telefonica.com/en)       |
-|iCreate Ltd.     |  Build custom immersive solutions or experiences        |  Germany       |  [icreate.io](https://icreate.io)       |
-|Hololux     |  Build custom immersive solutions or experiences       |  Germany     | [ilovemesh.com](https://ilovemesh.com) |
+|[iCreate Ltd.](#icreate-ltd)     |  Build custom immersive solutions or experiences        |  Germany       |  [icreate.io](https://icreate.io)       |
+|[Hololux](#hololux)     |  Build custom immersive solutions or experiences       |  Germany     | [ilovemesh.com](https://ilovemesh.com) |
 |Row5     |         |         |         |
 |Row6     |         |         |         |
 |Row7     |         |         |         |
