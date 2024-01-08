@@ -19,10 +19,10 @@ Consider reaching out to our partners bring your ideas to life with Mesh.
 
 |Partner  |Services  |Location  |Website  |
 |---------|---------|---------|---------|
-|Sulava    | Build custom immersive solutions or experiences. System integration (e.g. setting up and onboarding organizations onto M365). Onboarding organizations to the future with Microsoft Mesh as a Service.        |  Finland     | [sulava.com](https://sulava.com/en/services/metaverse/microsoft-mesh-as-a-service/)        |
-|Telefónica   |  Build custom immersive solutions or experiences   |   Spain      |  [https://metaverso.telefonica.com/en](https://metaverso.telefonica.com/en)       |
-|Row3     |         |         |         |
-|Row4     |         |         |         |
+|[Sulava](#sulava---create-better-worklife)    | Build custom immersive solutions or experiences. System integration (e.g. setting up and onboarding organizations onto M365). Onboarding organizations to the future with Microsoft Mesh as a Service.        |  Finland     | [sulava.com](https://sulava.com/en/services/metaverse/microsoft-mesh-as-a-service/)        |
+|[Telefónica](#telefónica)   |  Build custom immersive solutions or experiences   |   Spain      |  [https://metaverso.telefonica.com/en](https://metaverso.telefonica.com/en)       |
+|iCreate Ltd.     |  Build custom immersive solutions or experiences        |  Germany       |  [https://icreate.io](https://icreate.io)       |
+|Hololux     |  Build custom immersive solutions or experiences       |  Germany     | [https://ilovemesh.com](https://ilovemesh.com)   |
 |Row5     |         |         |         |
 |Row6     |         |         |         |
 |Row7     |         |         |         |
@@ -31,7 +31,6 @@ Consider reaching out to our partners bring your ideas to life with Mesh.
 |Row10     |         |         |         |
 |Row11     |         |         |         |
 |Row12     |         |         |         |
-
 
 ## Sulava - Create better worklife
 
@@ -54,7 +53,7 @@ With our help customers can perform a successful onboarding of Mesh, VR, XR and 
 
 - System integration (e.g. setting up and onboarding organizations onto M365)
 
-- Onboarding organizations to the future with Microsoft Mesh as a Service;
+- Onboarding new employees, trainings and various other services in Mesh worlds
 
 #### Contact info
 
@@ -94,4 +93,42 @@ For more info, [read about Telefónica](https://www.telefonica.com/en/about-us/)
 
 **Contact:** mariavictoria.rubiomunoz@telefonica.com
 
+## iCreate Ltd.
 
+:::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
+
+### About us
+
+iCreate designs and builds bespoke metaverse spaces and virtual experiences for creative agencies, companies and brands. With over 20 years industry experience, we can build your custom 3D environment for immersive event, meeting, and collaboration spaces.
+
+### Services provided
+
+- Build custom immersive solutions or experiences
+
+#### Contact info
+
+**Website:**  [https://icreate.io](https://icreate.io)
+
+**Location:** United Kingdom, Swansea
+
+**Contact:** hello@icreate.io
+
+## Hololux
+
+:::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
+
+### About us
+
+Welcome to Hololux, the cutting-edge innovation agency that is revolutionizing the way businesses and employees interact with technology. At Hololux, we specialize in the design, development and implementation of metaverse, mixed reality and AI solutions. Our stunning and mesmerizing experiences leave an unforgettable impression and set new standards in the digital world.
+
+### Services provided
+
+- Build custom immersive solutions or experiences
+
+#### Contact info
+
+**Website:**  [https://ilovemesh.com](https://ilovemesh.com)
+
+**Location:** Germany
+
+**Contact:** hello@hololux.com
