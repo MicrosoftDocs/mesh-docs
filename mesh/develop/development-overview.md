@@ -19,7 +19,7 @@ As a Mesh developer, you have an exciting opportunity to bring people together i
 
 Click the thumbnails below to learn about what some of our partners are doing with Mesh.
 
-:::image type="content" source="../media/get-started-developing-mesh/058-accenture-small.png" alt-text="a thumbnail image of the Accenture logo that the reader can click to open a larger descriptive image." lightbox="../media/get-started-developing-mesh/043-accenture-expanded.png":::
+---
 
 :::image type="content" source="../media/get-started-developing-mesh/040-accenture-inline.png" alt-text="a thumbnail image of the Accenture logo that the reader can click to open a larger descriptive image." lightbox="../media/get-started-developing-mesh/043-accenture-expanded.png":::
 
