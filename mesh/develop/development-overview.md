@@ -49,7 +49,7 @@ In the *Develop environnments* section of the Mesh help site, you'll find articl
 
 * [Mesh graphics tools](design/overview.md) is a collection of scripts, shaders, assets, and samples created to help improve the visual fidelity of Mesh worlds while staying within performance budgets.
 
-    ![A screen shot of shaders available in the Mesh toolkit.](../media/get-started-developing-mesh/056-mesh-toolkit-features.png)
+    ![A screen shot of shaders available in the Mesh toolkit.](../media/get-started-developing-mesh/057-mesh-graphics-tools.png)
 
 * [Mesh physics](enhance-your-environment/physics/mesh-physics-overview.md) lets you create engaging dynamic content.
 
