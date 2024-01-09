@@ -19,9 +19,9 @@ Consider reaching out to our partners bring your ideas to life with Mesh.
 
 |Partner  |Services  |Location  |Website  |
 |---------|---------|---------|---------|
-|[Sulava](#sulava---create-better-worklife)    | Build custom immersive solutions or experiences. System integration (e.g. setting up and onboarding organizations onto M365). Onboarding organizations to the future with Microsoft Mesh as a Service.        |  Finland     | [sulava.com](https://sulava.com/en/services/metaverse/microsoft-mesh-as-a-service/)        |
-|[Telefónica](#telefónica)   |  Build custom immersive solutions or experiences   |   Spain      |  [metaverso.telefonica.com](https://metaverso.telefonica.com/en)       |
-|[iCreate Ltd.](#icreate-ltd)     |  Build custom immersive solutions or experiences        |  Germany       |  [icreate.io](https://icreate.io)       |
+|[Sulava](#sulava---create-better-worklife) :::image type="content" source="../media/developer-partner-page/Logo-filler.png" alt-text="logo filler for companies":::    | Build custom immersive solutions or experiences. System integration (e.g. setting up and onboarding organizations onto M365). Onboarding organizations to the future with Microsoft Mesh as a Service.        |  Finland     | [sulava.com](https://sulava.com/en/services/metaverse/microsoft-mesh-as-a-service/)        |
+|[Telefónica](#telefónica) :::image type="content" source="../media/developer-partner-page/Logo-filler-150pt.png" alt-text="Logo filler 150pt":::  |  Build custom immersive solutions or experiences   |   Spain      |  [metaverso.telefonica.com](https://metaverso.telefonica.com/en)       |
+|[iCreate Ltd.](#icreate-ltd)  :::image type="content" source="../media/developer-partner-page/Logo-filler-100pt.png" alt-text="Logo filler 100pt":::   |  Build custom immersive solutions or experiences        |  Germany       |  [icreate.io](https://icreate.io)       |
 |[Hololux](#hololux)     |  Build custom immersive solutions or experiences       |  Germany     | [ilovemesh.com](https://ilovemesh.com) |
 | [Polycount](#polycount)    | Build custom immersive solutions or experiences        |  United States, Texas       | [polycount.io](https://www.polycount.io)        |
 | [Big Rock Creative](#big-rock-creative)     |  Build custom immersive solutions or experiences       |   United States, California, Los Angeles      |   [bigrockxr.com](https://bigrockxr.com/)      |
