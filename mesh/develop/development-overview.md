@@ -85,7 +85,7 @@ In the *Develop environnments* section of the Mesh help site, you'll find articl
 
     ![A screenshot of the main screen of the Content Performance Analyzer.](../media/get-started-developing-mesh/055-content-performance-analyzer.png)
 
-The Mesh toolkit is free to download; however, a Teams Premium license is required for all users (including developers and technical 3D artists) to use Microsoft Mesh.
+The Mesh toolkit is free to [download](../develop/build-your-basic-environment/add-the-mesh-toolkit-package.md); however, a Teams Premium license is required for all users (including developers and technical 3D artists) to use Microsoft Mesh.
 
 ## Next steps
 
