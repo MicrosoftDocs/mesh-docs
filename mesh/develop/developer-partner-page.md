@@ -25,12 +25,12 @@ Consider reaching out to our partners bring your ideas to life with Mesh.
 |[Hololux](#hololux)     |  Build custom immersive solutions or experiences       |  Germany     | [ilovemesh.com](https://ilovemesh.com) |
 | [Polycount](#polycount)    | Build custom immersive solutions or experiences        |  United States, Texas       | [polycount.io](https://www.polycount.io)        |
 | [Big Rock Creative](#big-rock-creative)     |  Build custom immersive solutions or experiences       |   United States, California, Los Angeles      |   [bigrockxr.com](https://bigrockxr.com/)      |
-|Row7     |         |         |         |
-|Row8     |         |         |         |
-|Row9     |         |         |         |
-|Row10     |         |         |         |
-|Row11     |         |         |         |
-|Row12     |         |         |         |
+| [Bravent](#bravent)    |  Build custom immersive solutions or experiences. System integration (e.g. setting up and onboarding organizations onto M365)       |  United States, Florida, Miami       |  [bravent.net](https://www.bravent.net/en/contact/)      |
+|[Kluge Interactive](#kluge-interactive)     | Build custom immersive solutions or experiences. System integration (e.g. setting up and onboarding organizations onto M365)     |  United States, California, Los Angeles       |  [klugeinteractive.com](http://klugeinteractive.com)       |
+|[HCLTech](#hcltech)    |  Build custom immersive solutions or experiences. System integration (e.g. setting up and onboarding organizations onto M365). Academy, Ecosystem Enablement, XR.      |  India, Noida    |  [hcltech.com/cloud/microsoft](https://www.hcltech.com/cloud/microsoft)       |
+| [Link To VR](#link-to-vr)    |   System integration (e.g. setting up and onboarding organizations onto M365). Build custom immersive solutions or experiences. Production of internal / external virtual events for enterprise.|    United States, Massachusets, Boston     |  [linktovr.com](https://www.linktovr.com)       |
+|[Mazars USA LLP ](#mazars-usa-llp)    |  Build custom immersive solutions or experiences. System integration (e.g. setting up and onboarding organizations onto M365). D365 Remote Assist/Guides, Azure Spatial       |    United States, New York     |  [mazars.us](https://www.mazars.us/Home/Services/Consulting/Technology-digital-consulting)       |
+|Cassette     |   Build custom immersive solutions or experiences. System integration (e.g. setting up and onboarding organizations onto M365)   |  United Kingdom + Global, London       |  [cassettegroup.com/microsoftmesh](https://www.cassettegroup.com/microsoftmesh)       |
 
 ## Sulava - Create better worklife
 
@@ -174,3 +174,140 @@ Big Rock Creative, your premier choice for crafting extraordinary XR experiences
 
 **Contact:** info@bigrockxr.com
 
+## Bravent
+
+:::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
+
+### About Bravent
+
+Big Rock Creative, your premier choice for crafting extraordinary XR experiences. Our unwavering mission is to construct immersive and inclusive social landscapes across realities, fostering collaboration, uplifting artists, and enchanting participants. Our trailblazing success includes working with Microsoft, the United Nations, T-Mobile for Business, Golden Apple Comics, Breonna’s Garden, Pride, and more.
+
+### Services provided
+
+- Build custom immersive solutions or experiences
+
+- System integration (e.g. setting up and onboarding organizations onto M365)
+
+#### Contact info
+
+**Website:**  [bravent.net](https://www.bravent.net/en/contact/)
+
+**Location:** United States, Florida, Miami
+
+**Contact:** info@bravent.net
+
+## Kluge Interactive
+
+:::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
+
+### About Kluge Interactive
+
+Kluge is a game studio founded in 2008. Our flagship game is top-rated VR rhythm game Synth Riders. We also make social games in Horizon Worlds in partnership with Meta. We have a long track record of working with enterprise clients, and we are excited to bring our gaming and B2B experience to Mesh.
+
+### Services provided
+
+- Build custom immersive solutions or experiences
+
+- System integration (e.g. setting up and onboarding organizations onto M365)
+
+#### Contact info
+
+**Website:**  [klugeinteractive.com](http://klugeinteractive.com)
+
+**Location:** United States, California, Los Angeles
+
+**Contact:** https://klugeinteractive.com/contact/
+
+## HCLTech
+
+:::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
+
+### About HCLTech
+
+HCLTech is a global technology company, home to more than 221,000 people across 60 countries, delivering industry-leading capabilities centered around digital, engineering, cloud and AI, powered by a broad portfolio of technology services and products. We work with clients across all major verticals, providing industry solutions for Financial Services, Manufacturing, Life Sciences and Healthcare, Technology and Services, Telecom and Media, Retail and CPG, and Public Services. Consolidated revenues as of 12 months ending September 2023 totaled $12.9 billion. To learn how we can supercharge progress for you, visit hcltech.com.
+
+### Services provided
+
+- Build custom immersive solutions or experiences
+
+- System integration (e.g. setting up and onboarding organizations onto M365)
+
+- Academy, Ecosystem Enablement, XR
+
+#### Contact info
+
+**Website:**  [hcltech.com/cloud/microsoft](https://www.hcltech.com/cloud/microsoft)
+
+**Location:** India, Noida
+
+**Contact:** Achyut Chandra, achyut.chandra@hcl.com
+
+## Link To VR
+
+:::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
+
+### About Link To VR
+
+Link To VR is an XR business solutions company. Our primary services include, marketing deployments, virtual event production, software development, and consulting. Our team is dedicated to helping enterprise leverage the latest opportunities in spatial computing today.  
+
+### Services provided
+
+- System integration (e.g. setting up and onboarding organizations onto M365)
+
+- Build custom immersive solutions or experiences
+
+- Production of internal / external virtual events for enterprise
+
+#### Contact info
+
+**Website:**  [linktovr.com](https://www.linktovr.com)
+
+**Location:** United States, Massachusetts, Boston
+
+**Contact:** info@linktovr.com
+
+## Mazars USA LLP
+
+:::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
+
+### About Mazars USA LLP
+
+Mazars is a full system integrator. Our implementation services range from M365, Teams & Microsoft Mesh (including custom immerse solutions) over Dynamics 365 Mixed Reality and Dynamics 365 FSCM & Retail to Power Platform, Custom Dev and Client Care.
+
+### Services provided
+
+- Build custom immersive solutions or experiences
+
+- System integration (e.g. setting up and onboarding organizations onto M365)
+
+- D365 Remote Assist/Guides, Azure Spatial
+
+#### Contact info
+
+**Website:**  [mazars.us](https://www.mazars.us/Home/Services/Consulting/Technology-digital-consulting)
+
+**Location:** United States, New York
+
+**Contact:** christian.segurado@mazarsusa.com
+
+## Cassette
+
+:::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
+
+### About Cassette
+
+Cassette have been working with Microsoft Mesh since early release in Jan ‘23, developing and implementing immersive spaces for one of our Pharmaceutical clients.  We work with clients to design Mesh environments that meet their desired outcomes, we are specialists in developing 3D worlds along with unique and engaging interactions.
+
+### Services provided
+
+- Build custom immersive solutions or experiences
+
+- System integration (e.g. setting up and onboarding organizations onto M365)
+
+#### Contact info
+
+**Website:**  [cassettegroup.com/microsoftmesh](https://www.cassettegroup.com/microsoftmesh)
+
+**Location:** United Kingdom + Global, London
+
+**Contact:** ben.taylor@cassettegroup.com
