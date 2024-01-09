@@ -25,7 +25,7 @@ Click the thumbnails below to learn about what some of our partners are doing wi
 ---
 :::image type="content" source="../media/get-started-developing-mesh/042-village-inline.png" alt-text="a thumbnail image of the World Economic Forum's Mesh project title that the reader can click to open a larger descriptive image." lightbox="../media/get-started-developing-mesh/045-global-expanded.png":::
 
-## How to build a Mesh experience
+## How building and publishing a Mesh experience works
 
 Your custom Mesh experience starts out in Unity as a new project or existing sample. You can add content to the project/sample *Scene* and then upload it to a Collection in Mesh on the web as an *Environment*. An *organizer* can then create a Mesh event based on your Environment.
 
@@ -41,15 +41,17 @@ In the *Develop environnments* section of the Mesh help site, you'll find articl
 
 [Build and publish your environment](../develop/make-your-environment-available/build-and-publish-your-environment.md)
 
-## The Mesh tookit in detail
+[Explore Mesh samples](../develop/getting-started/samples/samples-overview.md)
 
-:::image type="content" source="../media/get-started-developing-mesh/056-mesh-toolkit-features" alt-text="An inforgraphic that shows four of the features of the Mesh toolkit.":::
+## The Mesh toolkit in detail
+
+:::image type="content" source="../media/get-started-developing-mesh/056-mesh-toolkit-features" alt-text="An infographic that shows four of the features of the Mesh toolkit.":::
 
 * [Mesh graphics tools](design/overview.md) is a collection of scripts, shaders, assets, and samples created to help improve the visual fidelity of Mesh worlds while staying within performance budgets.
 
-    ![An illustration of the Mesh Science Building sample.](../media/get-started-developing-mesh/046-science-building-sample.png)
+    ![A screen shot of shaders available in the Mesh toolkit.](../media/get-started-developing-mesh/056-mesh-toolkit-features.png)
 
-* [Mesh physics](enhance-your-environment/physics/mesh-physics-overview.md) lets you create enabling and engaging dynamic content.
+* [Mesh physics](enhance-your-environment/physics/mesh-physics-overview.md) lets you create engaging dynamic content.
 
     ![A screenshot of the buoyancy and balance exhibit in the Mesh Science Building sample.](../media/get-started-developing-mesh/047-buoyancy-and-balance.png)
 
@@ -63,13 +65,13 @@ In the *Develop environnments* section of the Mesh help site, you'll find articl
 
 * [Mesh WebSlates](enhance-your-environment/webcontent.md) are panels that display web content.
 
-    ![A screenshot of a Mesh experience with a WebSlate on the wall showing a live presentation.](../media/get-started-developing-mesh/050-webslate.png)
+    ![A screenshot of a Mesh experience with a WebSlate on the wall showing a video.](../media/get-started-developing-mesh/050-webslate.png)
 
 * [Mesh visual scripting](script-your-scene-logic/visual-scripting/visual-scripting-overview.md) lets you add interactivity and dynamic runtime behavior to your Mesh Environments by creating script graphs instead of writing code.
 
     ![A screenshot of a visual script.](../media/get-started-developing-mesh/051-visual-scripting.png)
 
-* [Mesh cloud scripting](script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md) is a more traditional coding approach that lets you connect to real-time backend data and call .NET APIs via cloud-hosted server scripts.
+* [Mesh cloud scripting](script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md) is a more traditional coding approach that lets you connect to real-time backend data, call .NET APIs via cloud-hosted server scripts, and more.
 
     ![A screenshot of a script that's used for cloud scripting.](../media/get-started-developing-mesh/052-cloud-scripting.png)
 
