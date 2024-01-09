@@ -23,8 +23,8 @@ Consider reaching out to our partners bring your ideas to life with Mesh.
 |[Telefónica](#telefónica)   |  Build custom immersive solutions or experiences   |   Spain      |  [metaverso.telefonica.com](https://metaverso.telefonica.com/en)       |
 |[iCreate Ltd.](#icreate-ltd)     |  Build custom immersive solutions or experiences        |  Germany       |  [icreate.io](https://icreate.io)       |
 |[Hololux](#hololux)     |  Build custom immersive solutions or experiences       |  Germany     | [ilovemesh.com](https://ilovemesh.com) |
-|Row5     |         |         |         |
-|Row6     |         |         |         |
+| [Polycount](#polycount)    | Build custom immersive solutions or experiences        |  United States, Texas       | [polycount.io](https://www.polycount.io)        |
+| [Big Rock Creative](#big-rock-creative)     |  Build custom immersive solutions or experiences       |   United States, California, Los Angeles      |   [bigrockxr.com](https://bigrockxr.com/)      |
 |Row7     |         |         |         |
 |Row8     |         |         |         |
 |Row9     |         |         |         |
@@ -36,7 +36,7 @@ Consider reaching out to our partners bring your ideas to life with Mesh.
 
 :::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
 
-### About us
+### About Sulava
 
 With our help, our customers are able to adapt their business to the demands of the rapidly changing world. We are passionate about using Microsoft cloud technologies in business operations and put our hearts into changing the way you work. We are a pioneer in Microsoft cloud technologies with extensive and in-depth experience in introducing Microsoft technologies to employees’ everyday lives and companies’ business operations.
 
@@ -67,7 +67,7 @@ With our help customers can perform a successful onboarding of Mesh, VR, XR and 
 
 :::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
 
-### About us
+### About Telefónica
 
 We want to make our world more human by connecting lives. In Telefónica, we believe that it´s people who give meaning to technology and not the other way around
 At a time when technology is more present than ever in our lives, we cannot forget that the most important connections are human connections. Because in today’s society, people’s quality of life, mostly depends on that connection.
@@ -97,7 +97,7 @@ For more info, [read about Telefónica](https://www.telefonica.com/en/about-us/)
 
 :::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
 
-### About us
+### About iCreate Ltd.
 
 iCreate designs and builds bespoke metaverse spaces and virtual experiences for creative agencies, companies and brands. With over 20 years industry experience, we can build your custom 3D environment for immersive event, meeting, and collaboration spaces.
 
@@ -117,7 +117,7 @@ iCreate designs and builds bespoke metaverse spaces and virtual experiences for 
 
 :::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
 
-### About us
+### About Hololux
 
 Welcome to Hololux, the cutting-edge innovation agency that is revolutionizing the way businesses and employees interact with technology. At Hololux, we specialize in the design, development and implementation of metaverse, mixed reality and AI solutions. Our stunning and mesmerizing experiences leave an unforgettable impression and set new standards in the digital world.
 
@@ -132,3 +132,45 @@ Welcome to Hololux, the cutting-edge innovation agency that is revolutionizing t
 **Location:** Germany
 
 **Contact:** hello@hololux.com
+
+## Polycount
+
+
+:::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
+
+### About Polycount
+
+Polycount is a creative design agency specializing in creation of Immersive 3D environments, Digital Twins and AR experiences. Founded in 2000, the studio offers 240 years of collective 3D experience designing and building for two dozen Fortune 500 companies. Polycount believes Immersive experiences offers a new digital touchpoint that allows brands the opportunity to engage with their staff, existing audiences and attract new consumers through digital gaming and social interactions.  By designing and building immersive 3D experiences that are interoperable across many different platforms, Polycount offers their clients the opportunity to expand their digital strategy through increased engagement and brand exposure.
+
+### Services provided
+
+- Build custom immersive solutions or experiences
+
+#### Contact info
+
+**Website:**  [polycount.io](https://www.polycount.io)
+
+**Location:** United States, Texas
+
+**Contact:** info@polycount.io
+
+## Big Rock Creative
+
+:::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
+
+### About Big Rock Creative
+
+Big Rock Creative, your premier choice for crafting extraordinary XR experiences. Our unwavering mission is to construct immersive and inclusive social landscapes across realities, fostering collaboration, uplifting artists, and enchanting participants. Our trailblazing success includes working with Microsoft, the United Nations, T-Mobile for Business, Golden Apple Comics, Breonna’s Garden, Pride, and more.
+
+### Services provided
+
+- Build custom immersive solutions or experiences
+
+#### Contact info
+
+**Website:**  [bigrockxr.com](https://bigrockxr.com/)
+
+**Location:** United States, California, Los Angeles
+
+**Contact:** info@bigrockxr.com
+
