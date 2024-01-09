@@ -63,11 +63,7 @@ The development workflow and model for Mesh Cloud Scripting is very similar to r
 
 ## Which scripting approach should you use?
 
-While you can theoretically use Mesh Visual Scripting only or Mesh Cloud Scripting only, we recommend that you use both, because there are certain Mesh features that are only available in one or the other. If you're accustomed to doing traditional C# scripting in Unity, and haven't yet tried Visual Scripting, it's well worth it to learn. It's not that difficult--it basically presents coding concepts you already understand, along with some new Mesh concepts, in a node-based format. You'll appreciate the Mesh features it adds to your toolkit (for example, custom low-latency physics interactions). Here's a sampling of what you can do in Mesh using either method:
-
-![A table that shows you the availability of some Mesh features in visual scripting and cloud scripting.](../../media/mesh-scripting/002-scripting-comparison.png)
-
-The two systems work well together; if you start scripting with one system, your script will still work seamlessly in the other.
+Fortunately, you don’t have to choose one approach exclusively. You can do Mesh Visual Scripting only or Mesh Cloud Scripting only, but you can also combine them. The two systems work well together; if you start scripting with one system, your script will still work seamlessly in the other. The two systems work well together; if you start scripting with one system, your script will still work seamlessly in the other.
 
 ## Prerequisites
 
