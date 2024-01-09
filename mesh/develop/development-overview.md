@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environ
 
 ## What you can do with Mesh
 
-As a Mesh developer, you have an exciting opportunity to bring people together in shared immersive experiences in 2D (PC) or 3D (Oculus Quest). Your key to creating these experiences is the Mesh toolkit for Unity which provides a collection of features that enable you to develop rich interactive worlds. Here are some examples of the types of experiences you can create:
+As a Mesh developer, you have an exciting opportunity to bring people together in shared immersive experiences in 2D (PC) or 3D (Oculus Quest). Here are some examples of the types of experiences you can create:
 
 ![An infographic that shows five possible types of Mesh experiences.](../media/get-started-developing-mesh/039-mesh-examples.png)
 
@@ -33,9 +33,9 @@ Click the thumbnails below to learn about what some of our partners are doing wi
 
 ## How building and publishing a Mesh experience works
 
-Your custom Mesh experience starts out in Unity as a new project or existing sample. You can add content to the project/sample *Scene* and then upload it to a Collection in Mesh on the web as an *Environment*. An *organizer* can then create a Mesh event based on your Environment.
+Your custom Mesh experience starts out in Unity as a new project or existing sample. Your key to creating these experiences is the Mesh toolkit for Unity which provides a collection of features that enable you to develop rich interactive worlds.You can add content to the project/sample *Scene* and then upload it to a Collection in Mesh on the web as an *Environment*. An *organizer* can then create a Mesh event based on your Environment.
 
-In the *Develop environnments* section of the Mesh help site, you'll find articles that introduce you to the features of Mesh toolkit, walk you through Unity setup, and describe the samples provided by Microsoft that you can use as a starting point for your Environment. Here are some links to the major steps in Mesh development:
+In the *Develop environnments* section of the Mesh help site, you'll find articles that introduce you to the features of the Mesh toolkit, walk you through Unity setup, and describe the samples provided by Microsoft that you can use as a starting point for your Environment. Here are some links to the major steps in Mesh development:
 
 [Create a new project or update an existing one](../develop/build-your-basic-environment/create-a-new-project-or-update.md)
 
