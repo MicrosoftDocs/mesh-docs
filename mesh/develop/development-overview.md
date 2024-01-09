@@ -51,7 +51,7 @@ In the *Develop environnments* section of the Mesh help site, you'll find articl
 
 ## The Mesh toolkit in detail
 
-:::image type="content" source="../media/get-started-developing-mesh/056-mesh-toolkit-features" alt-text="An infographic that shows four of the features of the Mesh toolkit.":::
+:::image type="content" source="../media/get-started-developing-mesh/056-mesh-toolkit-features.png" alt-text="An infographic that shows four of the features of the Mesh toolkit.":::
 
 * [Mesh graphics tools](design/overview.md) is a collection of scripts, shaders, assets, and samples created to help improve the visual fidelity of Mesh worlds while staying within performance budgets.
 
