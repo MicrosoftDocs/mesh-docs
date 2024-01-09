@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environ
 
 :::image type="content" source="../media/developer-partner-page/Mesh-TAP-logo-v4.png" alt-text="Mesh tap logo":::
 
-Mesh is an engaging 3D collaboration platform, bringing people together in unique environments to serve business needs. The Mesh Technology Adoption Program (Mesh TAP) gave our partners early access to build experiences to suit their needs. These companies have been through Mesh onboarding end-to-end and are looking to help you onboard to Microsoft Mesh.
+For those interested in bringing Microsoft Mesh to their company, we recommend consulting with these Mesh TAP (Mesh Technology Adoption Program) partners. Throughout the development of Mesh, these companies contributed to the product through feedback and direct partnership with Microsoft. From IT setup to custom environment creation to suit business needs, these partners have been through Mesh onboarding end-to-end.
 
 Consider reaching out to our partners bring your ideas to life with Mesh.
 
