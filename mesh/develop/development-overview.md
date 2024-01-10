@@ -13,7 +13,9 @@ keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environ
 
 ## What you can do with Mesh
 
-As a Mesh developer, you have an exciting opportunity to bring people together in shared immersive experiences in 2D (PC) or 3D (Oculus Quest). Here are some examples of the types of experiences you can create:
+As a Mesh developer, you have an exciting opportunity to bring people together in shared immersive experiences in 2D (PC) or 3D (Oculus Quest). Microsoft Teams offers the Mesh experience in pre-built [Immersive Spaces](https://support.microsoft.com/en-us/office/get-started-with-immersive-spaces-in-microsoft-teams-4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams), but you can create custom experiences that take full advantage of your creativity. Build imaginative settings in Unity, add 3D models created by you and others, and develop activities that will delight visitors to your experiences. You'll also help the hosts of your experiences reduce business costs by bringing distributed teams together.
+
+Here are some examples of the types of experiences you can create:
 
 ![An infographic that shows five possible types of Mesh experiences.](../media/get-started-developing-mesh/039-mesh-examples.png)
 
@@ -33,9 +35,11 @@ Click the thumbnails below to learn about what some of our partners are doing wi
 
 ## How building and publishing a Mesh experience works
 
-Your custom Mesh experience starts out in Unity as a new project or existing sample. Your key to creating these experiences is the Mesh toolkit for Unity which provides a collection of features that enable you to develop rich interactive worlds.You can add content to the project/sample *Scene* and then upload it to a Collection in Mesh on the web as an *Environment*. An *organizer* can then create a Mesh event based on your Environment.
+Your custom Mesh experience starts out in Unity as a new project or existing sample. Your key to creating these experiences is the Mesh toolkit for Unity which provides a collection of features that enable you to develop rich interactive worlds. You can add content to the project/sample *Scene* and then upload it to a Collection in Mesh on the web as an *Environment*. An *organizer* can then create a Mesh event based on your Environment.
 
-In the *Develop environnments* section of the Mesh help site, you'll find articles that introduce you to the features of the Mesh toolkit, walk you through Unity setup, and describe the samples provided by Microsoft that you can use as a starting point for your Environment. Here are some links to the major steps in Mesh development:
+In the *Develop environnments* section of the Mesh help site, you'll find articles that introduce you to the features of the Mesh toolkit, walk you through Unity setup, and provide step-by-step instructions for building and publishing your environment to Mesh on the web. If you don't want to start from scratch, you can use one of our [Mesh sample projects](../develop/getting-started/samples/samples-overview.md) as a starting point.
+
+Here are some links to the major steps in Mesh development:
 
 [Create a new project or update an existing one](../develop/build-your-basic-environment/create-a-new-project-or-update.md)
 
@@ -93,7 +97,13 @@ In the *Develop environnments* section of the Mesh help site, you'll find articl
 
     ![A screenshot of the main screen of the Content Performance Analyzer.](../media/get-started-developing-mesh/055-content-performance-analyzer.png)
 
-The Mesh toolkit is free to [download](../develop/build-your-basic-environment/add-the-mesh-toolkit-package.md); however, a Teams Premium license is required for all users (including developers and technical 3D artists) to use Microsoft Mesh.
+**Notes**
+
+- The Mesh toolkit is free to [download](../develop/build-your-basic-environment/add-the-mesh-toolkit-package.md); however, a Teams Premium license is required for all users (including developers and technical 3D artists) to use Microsoft Mesh. You can start building a project for free, but you must have a license in place before you can build and publish the environment.
+
+- Mesh brings enterprise-grade security, compliance and privacy controls for user and company data.
+
+- Mesh integrates with M365 apps--Teams, Exchange calendar, and Outlook--with deep links for direct app access.
 
 ## Next steps
 
