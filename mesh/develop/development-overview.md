@@ -49,7 +49,7 @@ In the *Develop environnments* section of the Mesh help site, you'll find articl
 | [**Add C# scripts (cloud scripting) or use visual scripting**](../develop/script-your-scene-logic/mesh-scripting-overview.md) |
 | [**Build and publish your environment**](../develop/make-your-environment-available/build-and-publish-your-environment.md) |
 | [**Explore Mesh samples**](../develop/getting-started/samples/samples-overview.md) |  
-
+  
 ---
 
 # The Mesh toolkit in detail
