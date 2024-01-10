@@ -3,7 +3,7 @@ title: Mesh Development overview
 description: Development overview for Mesh using Unity.
 author: typride
 ms.author: vinnietieto
-ms.date: 1/8/2024
+ms.date: 1/10/2024
 ms.topic: Guide
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environments
@@ -39,21 +39,16 @@ Your custom Mesh experience starts out in Unity as a new project or existing sam
 
 In the *Develop environnments* section of the Mesh help site, you'll find articles that introduce you to the features of the Mesh toolkit, walk you through Unity setup, and provide step-by-step instructions for building and publishing your environment to Mesh on the web. If you don't want to start from scratch, you can use one of our [Mesh sample projects](../develop/getting-started/samples/samples-overview.md) as a starting point.
 
-Here are some links to the major steps in Mesh development:
+| **Major steps in Mesh development** |
+|---|
+| [**Create a new project or update an existing one**](../develop/build-your-basic-environment/create-a-new-project-or-update.md) |
+| [**Add 3D models, textures and lighting**](../develop/design/overview.md)|
+| [**Add enhanced features (animations, physics, WebSlates)**](../develop/enhance-your-environment/enhanced-features-overview.md) |
+| [**Add C# scripts (cloud scripting) or use visual scripting**](../develop/script-your-scene-logic/mesh-scripting-overview.md) |
+| [**Build and publish your environment**](../develop/make-your-environment-available/build-and-publish-your-environment.md) |
+| [**Explore Mesh samples**](../develop/getting-started/samples/samples-overview.md) |
 
-[Create a new project or update an existing one](../develop/build-your-basic-environment/create-a-new-project-or-update.md)
-
-[Add 3D models, textures and lighting](../develop/design/overview.md)
-
-[Add enhanced features such as animations, physics and WebSlates](../develop/enhance-your-environment/enhanced-features-overview.md)
-
-[Add C# scripts for integrating live backend data, calling .NET APIs, and more, or use node-based visual scripting](../develop/script-your-scene-logic/mesh-scripting-overview.md)
-
-[Build and publish your environment](../develop/make-your-environment-available/build-and-publish-your-environment.md)
-
-[Explore Mesh samples](../develop/getting-started/samples/samples-overview.md)
-
-## The Mesh toolkit in detail
+# The Mesh toolkit in detail
 
 :::image type="content" source="../media/get-started-developing-mesh/056-mesh-toolkit-features.png" alt-text="An infographic that shows four of the features of the Mesh toolkit.":::
 
