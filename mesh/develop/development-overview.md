@@ -13,15 +13,15 @@ keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environ
 
 Your custom Mesh experience starts out in Unity as a new project or existing sample. You can add content to the project/sample *Scene* and then upload it to a world in Mesh on the web as an *Environment*. An *organizer* can then create a Mesh event based on your Environment.
 
-In this section, you'll find articles that introduce you to the features of Mesh Toolkit, walk you through Unity setup, and describe the samples provided by Microsoft that you can use as a starting point for your Environment.
+In this section, you'll find articles that introduce you to the features of Mesh toolkit, walk you through Unity setup, and describe the samples provided by Microsoft that you can use as a starting point for your Environment.
 
-## Develop in Unity with Mesh Toolkit
+## Develop in Unity with Mesh toolkit
 
 :::image type="content" source="../media/get-started-developing-mesh/Overview-developing-Mesh-Unity.png" alt-text="Development overview of Mesh in Unity":::
 
-The Mesh Toolkit for Unity provides a collection of features that enable you to develop rich interactive worlds.
+The Mesh toolkit for Unity provides a collection of features that enable you to develop rich interactive worlds.
 
-**The Mesh Toolkit includes:**
+**The Mesh toolkit includes:**
 
 * [Mesh graphics tools](design/overview.md), a collection of scripts, shaders, assets, and samples created to help improve the visual fidelity of Mesh worlds while staying within performance budgets.
 
@@ -43,7 +43,7 @@ The Mesh Toolkit for Unity provides a collection of features that enable you to 
 
 * [Mesh Content Performance Analyzer](debug-and-optimize-performance/cpa.md) (CPA): automatically reports content optimization issues and opportunities before content is uploaded to Mesh on the web.
 
-The Mesh Toolkit is free to download; however, a Teams Premium license is required for all users (including developers and technical 3D artists) to use Microsoft Mesh.
+The Mesh toolkit is free to download; however, a Teams Premium license is required for all users (including developers and technical 3D artists) to use Microsoft Mesh.
 
 ## Next steps
 

@@ -30,7 +30,7 @@ Here are some things to consider when creating content:
 
 - Microsoft Mesh controls Attendees' movements and interactions in the scene.
 
-- For security reasons, C# behaviors are restricted to a limited set of the behaviors provided in the Mesh Toolkit. Any unsupported behaviors you include in your content won't be loaded or executed.
+- For security reasons, C# behaviors are restricted to a limited set of the behaviors provided in the Mesh toolkit. Any unsupported behaviors you include in your content won't be loaded or executed.
 
 - Events callbacks are limited to `ScriptMachine.TriggerUnityEvent` and `ScriptMachine.TriggerAnimationEvent`. If you use any unsupported event callback in your components you won't be able to upload your Environment; the build step will fail.
 

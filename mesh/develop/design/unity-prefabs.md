@@ -4,7 +4,7 @@ description: Learn about working with prefabs when designing for Mesh.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 9/26/2023
+ms.date: 1/2/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, unity, design, models, modeling
 ---
@@ -16,11 +16,9 @@ about overriding others' work. Splitting each scene up into common sub-disciplin
 
 Using Prefabs allows easier collaboration within a single Unity scene and is preferred for Microsoft Mesh projects.
 
-![A screenshot of the Packages > Microsoft Mesh Toolkit prefabs](../../media/3d-design-performance-guide/image036.png) 
+When editing the scene, always make sure the Prefab you're working in has its overrides applied. If there are overrides waiting to be applied on a Prefab, that means those changes are **not yet associated with the Prefab**. In the screenshot here, the changes are at the scene level and, when saved, will modify the scene file only.
 
-When editing the scene, always make sure the Prefab you're working in has its overrides applied.
-
-If there are overrides waiting to be applied on a Prefab, that means those changes are **not yet associated with the Prefab**. In the screenshot here, the changes are at the scene level and, when saved, will modify the scene file only.
+![A screenshot of Microsoft Mesh toolkit prefabs with overrides applied.](../../media/3d-design-performance-guide/image037.png) 
 
 Applying the override will remove the changes from the scene file and apply them to the Prefab file.
 
@@ -34,12 +32,8 @@ When you're making a new Prefab, make sure the empty GameObject node is zeroed o
 
 **CORRECT**
 
-![A screenshot of the Unity Hierarchy and Inspector windows](../../media/3d-design-performance-guide/image037.png)
+![A screenshot of the Unity Hierarchy and Inspector windows](../../media/3d-design-performance-guide/image038.png)
 
 **INCORRECT**
 
-![A screenshot of the Hierarchy and Inspector windows](../../media/3d-design-performance-guide/image038.png)
-
-![A screenshot of the Hierarchy and Inspector windows a](../../media/3d-design-performance-guide/image039.png)
-
-![A screenshot of the Hierarchy and Inspector windows b](../../media/3d-design-performance-guide/image040.png)
+![A screenshot of the Hierarchy and Inspector windows](../../media/3d-design-performance-guide/image040.png)

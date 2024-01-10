@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, Azure, admin, Mesh Cloud Scripting, scripting, cloud s
 
 ## Mesh Cloud Scripting Service cloud infrastructure deployment
 
-Mesh Cloud Scripting Services are dotnet based apps that are run in the Cloud. The Mesh Toolkit Uploader helps developers provision their azure resources and deploy their web app. These are the steps involved in deploying the Mesh Cloud Scripting Service cloud infrastructure today.
+Mesh Cloud Scripting Services are dotnet based apps that are run in the Cloud. The Mesh toolkit Uploader helps developers provision their azure resources and deploy their web app. These are the steps involved in deploying the Mesh Cloud Scripting Service cloud infrastructure today.
 
 ## Resources deployed
 
@@ -268,9 +268,9 @@ The Mesh Cloud Scripting Services infrastructure utilizes the Premium App Servic
 
 If you receive this error, “This region has quota of 0 PremiumV2 instances for your subscription. Try selecting a different region or SKU," please refer to [Azure subscription limits and quotas - Azure Resource Manager | Microsoft Learn](/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
-## Clean up stale MeshApp services
+## Clean up stale Mesh Cloud Scripting services
 
-In the case that you have stale or unused MeshApp services, follow these steps to find your MeshApp resources and remove them.
+In the case that you have stale or unused Mesh Cloud Scripting services, follow these steps to find your Mesh Cloud Scripting resources and remove them.
 
 1. Login to Azure Portal
 
@@ -280,23 +280,19 @@ In the case that you have stale or unused MeshApp services, follow these steps t
 
 1. On the "All Resources" page:
 
-    1. Select the appropriate Subscription
+    a. Select the appropriate Subscription.
 
     :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-subscription.png" alt-text="Select subscription in Azure":::
 
-    1. Add a filter with the resources type as **App Service**.
+    b. Add a filter with the tag **EnvironmentName**.
 
-    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-add-first-filter.png" alt-text="Add filter to see resources for App service":::
+    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-first-filter.png" alt-text="EnvironmentName filter in azure":::
 
-    1. Add another filter with the tag **MeshApp**.
+    c. Find the resources that match the environments you wish to delete.
 
-    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-add-filter-app-service.png" alt-text="App service filter in azure":::
+    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-second-filter.png" alt-text="Resource filter in azure":::
 
-    1. At top right, select **Group by** and select **Group by resource group**.
-
-    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-group-by-resource-group.png" alt-text="Group by resource group Azure":::
-
-1. Clean up the stale MeshApp services by deleting the corresponding resource group in 3d by using the Azure CLI as found here [Delete resource group and resources - Azure Resource Manager | Microsoft Learn](/azure/azure-resource-manager/management/delete-resource-group?tabs=azure-cli).
+1. Clean up the stale Mesh Cloud Scripting services by clicking the ellipsis next to the name of each resource found in step 3C and then clicking Delete in the dropdown. Alternatively, you can use the Azure CLI as described in [Delete resources - Azure Resource Manager | Microsoft Learn](/azure/azure-resource-manager/management/delete-resource-group?tabs=azure-cli#delete-resource) to delete the resources by name.
 
    > [!div class="nextstepaction"]
    > [Getting started with cloud scripting](cloud-scripting-getting-started.md)

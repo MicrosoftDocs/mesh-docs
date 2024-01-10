@@ -1,27 +1,27 @@
 ---
-title: Release notes for Mesh Toolkit
-description: Mesh Toolkit release notes
+title: Release notes for Mesh toolkit
+description: Mesh toolkit release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
 ms.date: 12/11/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
+keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
 
-# Mesh Toolkit release notes
+# Mesh toolkit release notes
 
-**Release notes and known issues for Microsoft Mesh Toolkit**
+**Release notes and known issues for Microsoft Mesh toolkit**
 
 For purposes of this document, there are two categories of users:
 
-* Creators: Technical artist and developers building with the Mesh Toolkit
+* Creators: Technical artist and developers building with the Mesh toolkit
 * IT admins: Managers working in Azure
 
 ## Version 23.15 (Preview)
 
 >[!Caution]
->This is a preview release of the Mesh Toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh Toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh Toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
+>This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
 > 
 > **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
 
@@ -30,11 +30,11 @@ For purposes of this document, there are two categories of users:
 These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
 
 >[!Note]
->The version number for your environment project's Mesh Toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh Toolkit package, which releases only after the matching Mesh app is available in stores.
+>The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh toolkit package, which releases only after the matching Mesh app is available in stores.
 
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
-| Mesh Toolkit package      |   5.2315.0     | 2023-12-11  |
+| Mesh toolkit package      |   5.2315.0     | 2023-12-11  |
 | Mesh (PC/Quest)   |  5.2315.0       |  2023-12-11  |
 
 ### What's new
@@ -109,7 +109,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * We now avoid displaying collections that could not be validated in Mesh.
 
-* We now show the Toolkit package version in the Uploader Window.
+* We now show the toolkit package version in the Uploader Window.
 
 * Uploader build platforms are now stored as per project settings instead of per computer settings.
 
@@ -117,7 +117,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * Prevent refreshing asset list when changing window focus.
 
-* Added an updated title and warning when using the preview version of the Toolkit.
+* Added an updated title and warning when using the preview version of the toolkit.
 
 * We cleared a confusing progress bar when Unity reloads assembly during an operation.
 
@@ -134,11 +134,11 @@ These are the offerings and packages currently available. There may be slight di
 These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
 
 >[!Note]
->The version number for your environment project's Mesh Toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh Toolkit package, which releases only after the matching Mesh app is available in stores.
+>The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh toolkit package, which releases only after the matching Mesh app is available in stores.
 
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
-| Mesh Toolkit package      |   5.2314.0     | 2023-12-4  |
+| Mesh toolkit package      |   5.2314.0     | 2023-12-4  |
 | Mesh (PC/Quest)   |  5.2314.0       |  2023-12-4  |
 
 ### What's new
@@ -226,11 +226,11 @@ These are the offerings and packages currently available. There may be slight di
 These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see. We are working to create better transparency and standardization of versions of offerings and packages to make upgrading easier.
 
 >[!Note]
->The version number for Mesh (PC or Quest) **must** match the Mesh Toolkit Authoring package version you're using otherwise you may get errors or unexplained behavior. Please hold off on upgrading the Mesh Toolkit Authoring package until the Mesh client version for your target platform (PC or Quest) is available.
+>The version number for Mesh (PC or Quest) **must** match the Mesh toolkit authoring package version you're using otherwise you may get errors or unexplained behavior. Please hold off on upgrading the Mesh toolkit authoring package until the Mesh client version for your target platform (PC or Quest) is available.
 
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
-| Mesh Toolkit Package      |   5.2313.0     | 2023-11-13  |
+| Mesh toolkit Package      |   5.2313.0     | 2023-11-13  |
 | Mesh (PC/Quest)   |  5.2313.0       |  2023-11-13  |
 
 ### What's new

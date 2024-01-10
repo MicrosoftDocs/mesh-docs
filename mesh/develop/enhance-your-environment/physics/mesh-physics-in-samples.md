@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, Mesh physics, physics, environments, interactions, int
 
 # Explore Mesh Physics in sample projects
 
-In the Mesh Toolkit Samples folder, you'll find several projects that contain scenes that use Mesh Physics.
+In the Mesh toolkit Samples folder, you'll find several projects that contain scenes that use Mesh Physics.
 
 ## DartRoom
 
@@ -47,9 +47,9 @@ As you explore our other sample projects, you'll find various instances of Mesh 
 
 ## Exploring Mesh physics in the Dart Room sample
 
-### Download the Mesh Toolkit
+### Download the Mesh toolkit
 
-1. In your browser, navigate to the [Mesh Toolkit samples on GitHub](https://github.com/microsoft/Mesh-Toolkit-Unity/tree/main).
+1. In your browser, navigate to the [Mesh toolkit samples on GitHub](https://github.com/microsoft/Mesh-Toolkit-Unity/tree/main).
 
 1. Click the green **Code** button and click **Download ZIP**.
 

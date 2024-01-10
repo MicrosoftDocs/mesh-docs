@@ -63,7 +63,7 @@ The development workflow and model for Mesh Cloud Scripting is very similar to r
 
 ## Which scripting approach should you use?
 
-Fortunately, you don’t have to choose one approach exclusively. You can do Mesh Visual Scripting only or Mesh Cloud Scripting only, but you can also combine them. The two systems work well together; if you start scripting with one system, your script will still work seamlessly in the other.
+Fortunately, you don’t have to choose one approach exclusively. You can do Mesh Visual Scripting only or Mesh Cloud Scripting only, but you can also combine them. The two systems work well together; if you start scripting with one system, your script will still work seamlessly in the other. The two systems work well together; if you start scripting with one system, your script will still work seamlessly in the other.
 
 ## Prerequisites
 

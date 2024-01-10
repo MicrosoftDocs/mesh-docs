@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, M365, Mesh on the web, Immersive spaces, Avatars, gett
 
 # Manage Mesh collections
 
-Use Mesh on the web to create events, invite co-organizers or attendees, manage environments and templates, and create collections to hold custom environments. For any custom environments to be uploaded using the Mesh Toolkit in Unity, you'll need a collection to hold your uploads, making them accessible to any event organizer in your organization.
+Use Mesh on the web to create events, invite co-organizers or attendees, manage environments and templates, and create collections to hold custom environments. For any custom environments to be uploaded using the Mesh toolkit in Unity, you'll need a collection to hold your uploads, making them accessible to any event organizer in your organization.
 
 :::image type="content" source="../../media/mesh-on-web/Mesh-on-the-we-home-page.png" alt-text="Screenshot of Mesh on the web home page.":::
 
@@ -33,13 +33,19 @@ Learn more about [how to set up Mesh experiences in M365](setup-m365-mesh.md).
 
 ## Overview of Collections
 
-Collections are the home for your custom environments that are developed in Unity and uploaded using the Mesh Toolkit uploader, as well as a place to review [Templates that you create](../../events-guide/create-template.md) to be reused in events.
+Collections are the home for your custom environments that are developed in Unity and uploaded using the Mesh toolkit uploader, as well as a place to review [Templates that you create](../../events-guide/create-template.md) to be reused in events.
 
 Before you can [upload custom environments](../../develop/make-your-environment-available/build-and-publish-your-environment.md) and [create templates](../../events-guide/create-template.md), you'll need to create a Collection to hold them.
 
 ## Create a Collection
 
-1. Open [Mesh on the web](https://portal.mesh.microsoft.com/).
+1. Open Mesh on the web at [https://portal.mesh.microsoft.com/](https://portal.mesh.microsoft.com/) or [https://mesh.cloud.microsoft/](https://mesh.cloud.microsoft/).
+
+    > [!NOTE]
+    > Mesh on the web is moving to cloud.microsoft [with all Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). To help ease this transition, we are providing two links for Mesh on the web. To use the new cloud.microsoft endpoint, ensure you have allowed the proper endpoints allowed, as detailed in the [Preparing your organization article](preparing-your-organization.md#ensure-endpoints-can-be-allowed-for-immersive-spaces-in-teams).
+    >
+    > If you have any issues with the new Mesh on the web experience, you can continue to use *portal.mesh.microsoft.com*.
+
 1. In the Home page, select **Collections** in the left nav.
 
     :::image type="content" source="../../media/mesh-on-web/Select-collections-mesh-on-web.png" alt-text="Screenshot of Mesh on the web showing collection button highlighted.":::
@@ -59,7 +65,7 @@ Before you can [upload custom environments](../../develop/make-your-environment-
 
 1. Select **Create collection**.
 
-Now your Collection is created, you can now upload environments from the Mesh Toolkit Uploader to your Collection and create events.
+Now your Collection is created, you can now upload environments from the Mesh toolkit Uploader to your Collection and create events.
 
 > [!NOTE]
 > It can take up to 15 minutes for storage set up and you can upload environments and templates.

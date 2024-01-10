@@ -1,15 +1,15 @@
 ---
-title: Known issues for Mesh Toolkit
-description: Mesh Toolkit active known issues
+title: Known issues for Mesh toolkit
+description: Mesh toolkit active known issues
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
 ms.date: 12/11/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
+keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
 
-# Active known issues - Mesh Toolkit
+# Active known issues - Mesh toolkit
 
 ## Version 23.15 (Preview)
 
@@ -23,7 +23,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 * If loading too many WebSlates at once, lower-end computers may not be able to load all WebSlates; only some WebSlates will be loaded. We recommend that you use the [Content Performance Analyzer tool](../develop/debug-and-optimize-performance/cpa.md) to measure rendering time and determine the proper allocations based on your environment's features.
 
-- When working with WebSlate in the Unity editor, the editor needs to be restarted when updating the WebSlate or Mesh Toolkit packages through the Unity package manager.
+- When working with WebSlate in the Unity editor, the editor needs to be restarted when updating the WebSlate or Mesh toolkit packages through the Unity package manager.
 
 - The "Current URL" field of a WebSlate currently cannot be updated during Play mode.
 
