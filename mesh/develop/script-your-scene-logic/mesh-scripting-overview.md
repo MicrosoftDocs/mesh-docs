@@ -19,6 +19,8 @@ You can add Mesh Scripting development tools to your project in Unity, then crea
 
 The easiest way to add interactivity and magic to your Microsoft Mesh Environments with zero-latency responsiveness is through Mesh Visual Scripting. Mesh Visual Scripting is based on Unity Visual Scripting but has added features for Mesh development. Developers can create industry-standard Unity visual script graphs that execute within Mesh and synchronize their state changes across users. 
 
+![A screenshot of a visual scripting script graph.](../../media/mesh-scripting/001-graph-example.png)
+
 Mesh Visual Scripting makes it easy to build: 
 
 - Message buttons 
@@ -34,15 +36,17 @@ For an introduction to how Visual Scripting works with Mesh, we recommend our [M
 
 **Mesh Cloud Scripting**: 
 
-You’ve built a beautiful Microsoft Mesh Environment and you’ve made it interactive using Mesh Visual Scripting, but how do you now bring real-time cloud data into your world? With Mesh Cloud Scripting, you can call any .NET API and connect to any of your Azure resources. This uses a simple programming model that, once on the server, runs your business logic, keeping all participants in sync without the complexity of traditional multi-user development. Cloud scripting enables you to: 
+You’ve built a beautiful Microsoft Mesh Environment and you’ve made it interactive using Mesh Visual Scripting, but how do you now bring real-time cloud data into your world? With Mesh Cloud Scripting, you can call any .NET API and connect to any of your Azure resources. This uses a simple programming model that, once on the server, runs your business logic, keeping all participants in sync without the complexity of traditional multi-user development.
+
+![A screenshot of a C sharp script used in cloud scripting.](../../media/mesh-scripting/003-cloud-scripting-example.png)
+
+Cloud scripting enables you to: 
 
 - **Integrate live backend** data into your 3D environments. 
 - **Call into any .NET API** to connect out to cloud services or do your own computation directly.  
 - **Synchronize scene changes easily across all clients** (including late joiners), while still supporting per-user content when needed. 
 
 The development workflow and model for Mesh Cloud Scripting is very similar to regular Unity scripting with MonoBehaviours. Scripts can edit runtime values of game objects, have "initialize" and "quit" methods, and subscribe to events. As with MonoBehaviours, Mesh scripts are written in C#.
-
-![______](../../media/mesh-scripting/001-graph-example.png)
 
 [Learn more about Mesh Cloud Scripting](cloud-scripting/cloud-scripting-basic-concepts.md)
 
