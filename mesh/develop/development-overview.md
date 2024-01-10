@@ -48,9 +48,7 @@ In the *Develop environnments* section of the Mesh help site, you'll find articl
 | [**Build and publish your environment**](../develop/make-your-environment-available/build-and-publish-your-environment.md) |
 | [**Explore Mesh samples**](../develop/getting-started/samples/samples-overview.md) |  
 
-![An image created to provide space in on the page.](../media/get-started-developing-mesh/spacer1.png)
-
-# The Mesh toolkit in detail
+## The Mesh toolkit in detail
 
 :::image type="content" source="../media/get-started-developing-mesh/056-mesh-toolkit-features.png" alt-text="An infographic that shows four of the features of the Mesh toolkit.":::
 
