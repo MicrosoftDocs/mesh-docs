@@ -1,15 +1,15 @@
 ---
-title: Create avatar spawn and teleport points
+title: Create avatar spawn and travel points
 description: Learn how to create points that an avatar will spawn to or travel to when using teleportation.
 ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 11/06/2023
+ms.date: 1/10/24
 ms.topic: overview
-keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, teleport, spawn
+keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, teleport, spawn, travel points
 ---
 
-# Create avatar spawn and teleport points
+# Create avatar spawn and travel points
 
 ## Travel Point and Travel Point Group
 

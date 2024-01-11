@@ -41,10 +41,11 @@ In the *Develop environnments* section of the Mesh help site, you'll find articl
 
 | **Major steps in Mesh development** |
 |---|
-| [**Create a new project or update an existing one**](../develop/build-your-basic-environment/create-a-new-project-or-update.md) |
+| [**Choose your journey**](../develop/build-your-basic-environment/create-a-new-project-or-update.md) |
+|  (You can build from a tutorial or sample or start from scratch)
 | [**Add 3D models, textures and lighting**](../develop/design/overview.md)|
 | [**Add enhanced features (animations, physics, WebSlates)**](../develop/enhance-your-environment/enhanced-features-overview.md) |
-| [**Add C# scripts (cloud scripting) or use visual scripting**](../develop/script-your-scene-logic/mesh-scripting-overview.md) |
+| [**Add logic with visual scripts and C# cloud scripts**](../develop/script-your-scene-logic/mesh-scripting-overview.md) |
 | [**Build and publish your environment**](../develop/make-your-environment-available/build-and-publish-your-environment.md) |
 | [**Explore Mesh samples**](../develop/getting-started/samples/samples-overview.md) |  
 
@@ -58,15 +59,23 @@ In the *Develop environnments* section of the Mesh help site, you'll find articl
 
 * [Mesh physics](enhance-your-environment/physics/mesh-physics-overview.md) lets you create engaging dynamic content.
 
-    ![A screenshot of the buoyancy and balance exhibit in the Mesh Science Building sample.](../media/get-started-developing-mesh/047-buoyancy-and-balance.png)
+    ![A screenshot of the mass and gravity exhibit in the Mesh Science Building sample, with objects rotating around the sun.](../media/get-started-developing-mesh/047-mass-and-gravity.png)
 
-* [Mesh interactables](enhance-your-environment/avatar-and-object-interactions/interactables.md) allow event attendees to grab, hold, throw, select, anchor, tether and spawn.
+* [Mesh interactables](enhance-your-environment/avatar-and-object-interactions/interactables.md) allow event attendees to select, grab, hold, and throw objects.
 
     ![A screenshot of the ball dropping game exhibit in the Mesh Science Building sample.](../media/get-started-developing-mesh/048-ball-game.png)
 
 * [Mesh controllables](enhance-your-environment/multi-room-sync.md) enable event hosts to control and sync video and timeline playback across multiple rooms of a large event.
 
     ![A screenshot of a timeline in Unity.](../media/get-started-developing-mesh/049-timeline.png)
+
+* [Mesh triggers, anchors and tethers](../develop/enhance-your-environment/avatar-and-object-interactions/triggers-anchors-and-tethers.md) enable avatars to trigger events, move along smoothly with an object, or be attached to an object that's stationary (for example, a seat or podium).
+
+    ![A screenshot of a trigger volume in Unity.](../media/get-started-developing-mesh/058-trigger-boundaries.png)
+
+* [Mesh avatar spawn and travel points](../develop/enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-travel-points.md) to spawn in or move to specific locations.
+
+    ![A screenshot of avatars spawned in a Mesh experience.](../media/get-started-developing-mesh/059-avatars-spawned.png)
 
 * [Mesh WebSlates](enhance-your-environment/webcontent.md) are panels that display web content.
 
