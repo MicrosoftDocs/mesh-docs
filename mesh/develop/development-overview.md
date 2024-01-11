@@ -73,7 +73,7 @@ In the *Develop environnments* section of the Mesh help site, you'll find articl
 
     ![A screenshot of a trigger volume in Unity.](../media/get-started-developing-mesh/058-trigger-boundaries.png)
 
-* [Mesh avatar spawn and travel points](../develop/enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-travel-points.md) to spawn in or move to specific locations.
+* [Mesh avatar spawn and travel points](../develop/enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-travel-points.md) enable avatars to spawn in or move to specific locations.
 
     ![A screenshot of avatars spawned in a Mesh experience.](../media/get-started-developing-mesh/059-avatars-spawned.png)
 
