@@ -4,7 +4,7 @@ description: Learn how to create points that an avatar will spawn to or travel t
 ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 1/10/24
+ms.date: 1/10/2024
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, teleport, spawn, travel points
 ---
