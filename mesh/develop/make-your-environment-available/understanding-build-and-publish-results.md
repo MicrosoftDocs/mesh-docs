@@ -27,7 +27,7 @@ Here's what each of those mean:
 
 ## Failed results
 
-If you get the **Fail** indicator for any one of these, it means there's a problem that needs to resolved.
+If you get the **Failed** indicator for any one of these, it means there's a problem that needs to resolved.
 
 **Build failed**: Unity failed to build the scene. Look at the **Console** to see if contains messages on what went wrong. This will probably need to be fixed before you can continue.
 
@@ -57,7 +57,7 @@ If you see a scroll bar next to the extensions, it means not all of them are dis
 
 ![A screenshot of the build and upload results window with the Mesh uploader extensions section fully expanded..](../../media/make-your-environment-available/049-build-and-upload-results-full-window.png)
 
-If you hover the cursor over the text in an indicator, a popup tip appears. (This also works with the **Build**, **Upload** and **Publish** indicators.)
+If you hover the cursor over the text in an indicator, a popup tip appears. (This also works for certin **Build**, **Upload** and **Publish** indicators.)
 
 ![A screenshot of the build and upload results window with a popup tip appearing for the Content Performance indicator.](../../media/make-your-environment-available/064-content-popup-help.png)
 
