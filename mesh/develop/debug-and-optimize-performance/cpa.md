@@ -3,10 +3,10 @@ title: Content Performance Analyzer
 description: Learn how to use the Content Performance analyzer to optimize your Mesh experience.
 author: Cameron-Micka
 ms.author: vinnietieto
-ms.date: 1/2/2024
+ms.date: 1/10/2024
 ms.service: mesh
 ms.topic: How to
-keywords: Microsoft Mesh, Unity, performance, resources
+keywords: Microsoft Mesh, Unity, performance, resources, content performance analyzer, optimizing, optimization, frames per second, FPS
 ---
 
 # Content Performance Analyzer
@@ -17,18 +17,16 @@ You can use the Content Performance Analyzer (CPA) to automatically catch conten
 
 ## Using the CPA tool
 
-**To run the CPA tool**:
+**To run the CPA tool**:  
 On the menu bar, select **Mesh Toolkit** > **Content Performance Analyzer**.
 
-![Accessing the Content Performance Analyzer through the Unity menu](../../media/debug-and-optimize/003-cpa-analyzer-with-background.png)
+This opens the CPA tool in its own window.
 
- This opens the CPA tool in its own window.
-
-![A screenshot of the Content Performance Analyzer window](../../media/3d-design-performance-guide/image003.png)
+![A screenshot of the Content Performance Analyzer window](../../media/debug-and-optimize/003-cpa-analyzer-with-background.png)
 
 In the CPA tool, click the **Run All** (▶) button. Your content will be automatically analyzed based on the project's current quality settings. 
 
-**To audit other platform quality settings**:
+**To audit other platform quality settings**:  
 Click the **Select Platform Quality** drop-down and then select your desired platform.
 
 > [!IMPORTANT]
