@@ -1,5 +1,5 @@
 ---
-title: Understanding your Build and Upload results
+title: Understanding your Build and Publish results
 description: Learn about what the messages in the Build and Upload Results window mean.
 ms.service: mesh
 author: vtieto
@@ -9,7 +9,7 @@ ms.topic: Guide
 keywords: Microsoft Mesh, environment, build, publish, build and upload, uploader, Mesh uploader, thumbnail
 ---
 
-# Understanding your Build and Upload results
+# Understanding your Build and Publish results
 
 ## Overview 
 
