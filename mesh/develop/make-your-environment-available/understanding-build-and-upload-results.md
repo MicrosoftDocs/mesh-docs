@@ -15,7 +15,7 @@ keywords: Microsoft Mesh, environment, build, publish, build and upload, uploade
 
 After you select the **Build & Publish** button in the Mesh Uploader to [build and publish your environment](../make-your-environment-available/build-and-publish-your-environment.md), that process will take place and then you'll automatically see the **Build and Upload Results** window. If all goes well, you'll see that **Build**, **Upload**, and **Publish** all have the green **Success** indicator. 
 
-![A screenshot of initial build and upload results window.](../../media/make-your-environment-available/047-initial-build-results.png)
+![A screenshot of the build and upload results window with with results for a successful build.](../../media/make-your-environment-available/047-initial-build-results.png)
 
 Here's what each of those mean:
 
@@ -31,19 +31,19 @@ If you get the **Fail** indicator for any one of these, it means there's a probl
 
 **Build failed**: Unity failed to build the scene. Look at the **Console** to see if contains messages on what went wrong. This will probably need to be fixed before you can continue.
 
-![A screenshot of initial build and upload results window expanded.](../../media/make-your-environment-available/062-build-failed.png)
+![A screenshot of the build and upload results window with the build indicator showing failed.](../../media/make-your-environment-available/062-build-failed.png)
 
 **Upload failed**: Your asset bundles weren't uploaded to your OneDrive folder.
 
-![A screenshot of initial build and upload results window expanded.](../../media/make-your-environment-available/060-upload-failed.png)
+![A screenshot of the build and upload results window with the upload indicator showing failed.](../../media/make-your-environment-available/060-upload-failed.png)
 
 **Publish failed**: The Environment failed to upload to Mesh on the web. Look at the **Console** to see if there are any helpful error messages related to this.
 
-![A screenshot of initial build and upload results window expanded.](../../media/make-your-environment-available/061-publish-failed.png)
+![A screenshot of the build and upload results window with the publish indicator showing failed.](../../media/make-your-environment-available/061-publish-failed.png)
 
 Note that if you have an upload or publish fail, the **Retry failed operations** button appears at the bottom of the window. 
 
-![A screenshot of initial build and upload results window expanded.](../../media/make-your-environment-available/063-retry-failed-operations-button.png)
+![A screenshot of the build and upload results window with the retry failed operations button highlighted.](../../media/make-your-environment-available/063-retry-failed-operations-button.png)
 
 If you think the failure may have been due to some temporary circumstance such as a network outage, you can click this button to try the process again.
 
@@ -51,15 +51,15 @@ If you think the failure may have been due to some temporary circumstance such a
 
 You may have noticed in the above images that there's a **Warning** indicator next to the **Mesh Uploader Extensions** drop-down. This means that at least one of the extensions in this section has a warning indicator. Click the drop-down to see the extensions.
 
-![A screenshot of initial build and upload results window expanded.](../../media/make-your-environment-available/048-build-and-upload-expanded.png)
+![A screenshot of the build and upload results window with the Mesh uploader extensions section partly expanded.](../../media/make-your-environment-available/048-build-and-upload-expanded.png)
 
 If you see a scroll bar next to the extensions, it means not all of them are displayed. To see the whole list, drag the bottom of the window downwards until the scroll bar disappears.
 
-![A screenshot of initial build and upload results window expanded.](../../media/make-your-environment-available/049-build-and-upload-results-full-window.png)
+![A screenshot of the build and upload results window with the Mesh uploader extensions section fully expanded..](../../media/make-your-environment-available/049-build-and-upload-results-full-window.png)
 
 If you hover the cursor over the text in an indicator, a popup tip appears. (This also works with the **Build**, **Upload** and **Publish** indicators.)
 
-![A screenshot of initial build and upload results window expanded.](../../media/make-your-environment-available/064-content-popup-help.png)
+![A screenshot of the build and upload results window with a popup tip appearing for the Content Performance indicator.](../../media/make-your-environment-available/064-content-popup-help.png)
 
 **Content Performance**
 
