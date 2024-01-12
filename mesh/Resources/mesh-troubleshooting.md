@@ -158,9 +158,19 @@ The data should be your version of the following:
 - **Trace ID:**
 - **Date:**
 
-## I created a Collection, but now I can't upload an environment to that Collection. *Or* I was able to upload an environment to that Collection, but now I can't create an event or template based on that environment. What's causing this?
+**I recently created an environment collection and can't create environments or templates yet. What's causing this?**
 
-You're probably running into the "partially created Collection" problem. A Collection consists of two parts: an M365 group and a database entry for your tenant related to room creation. There may be times when the Collection is created before the database provisioning part of the process has completed. If this occurs, the Collection may be partially or even completely unusable. You should delete this Collection and create a new one.
+The M365 backend takes a certain amount of time to fully initialize every required dependency for content creation. This can result in your newly created collection not being available yet when you try to create an environment with the Mesh Uploader or create a template in the Mesh app or Mesh on the web. For example, the OneDrive backend not being fully initialized yet would prevent environment or template creation, but eventually it will resolve. For newly created collections, you can monitor progress by navigating to the **Collections** page in Mesh on the web and clicking the **View details** button for your collection.
+
+![A screen shot of the Mesh on the web Collections page with the View details button highlighted.](media/001-collections-view-details.png)
+
+Environment collections that are still initializing will show the spinner "progress" animation and status message as shown here:
+
+![A screen shot of the message stating that the collection was successfully created.](media/002-collection-creation-progress-spinner.png)
+
+**I was recently added as a member to a collection and can't create environments or templates yet.**
+
+Unfortunately, there's no easy way for you to track your permission sync progress. We estimate that this process can take up to 30 minutes, so we recommend that you try again after that period of time. This might require several attempts since the precise waiting period isn't known. **Tip**: This is related to the underlying M365 group permissions/SharePoint.
 
 [Learn more about setting up your organization and provisioning your tenant](../Setup/Content/preparing-your-organization.md#consider-which-tenant-to-provision-for-mesh).
 
