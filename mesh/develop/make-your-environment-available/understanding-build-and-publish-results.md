@@ -4,7 +4,7 @@ description: Learn about what the messages in the Build and Upload Results windo
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 1/11/2024
+ms.date: 1/13/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, environment, build, publish, build and upload, uploader, Mesh uploader, thumbnail
 ---
@@ -70,3 +70,12 @@ Here are the three potential indicators for the **Content Performance** extensio
 **Warning**: Unity found one or more issues but they're not blocking. Look at the **Console** for more information, and also try running the [Content Performance Analyzer (CPA) tool](../debug-and-optimize-performance/cpa.md).
 
 **Failed**: Unity found something that's blocking the upload. Look at the **Console** for more information, and also try running the [Content Performance Analyzer (CPA) tool](../debug-and-optimize-performance/cpa.md).
+
+If you don't want to see **Content Performance** results in the Mesh Uploader Extetensions, you can disable it in the **Project Settings** window.  
+1. On the menu bar, select **Edit** > **Project Settings**.
+1. Navigate to **Mesh Uploader Settings** > **Extensions** > **Content Performance Analyzer**.
+1. Clear the **Enabled** check box.
+
+![A screenshot of the Content Performance Analyzer page in Project Settings.](../../media/make-your-environment-available/065-cpa-in-project-settings.png).
+
+
