@@ -4,7 +4,7 @@ description: Learn about what the messages in the Build and Upload Results windo
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 1/13/2024
+ms.date: 1/12/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, environment, build, publish, build and upload, uploader, Mesh uploader, thumbnail
 ---
@@ -61,7 +61,7 @@ If you hover the cursor over the text in an indicator, a popup tip appears. (Thi
 
 ![A screenshot of the build and upload results window with a popup tip appearing for the Content Performance indicator.](../../media/make-your-environment-available/064-content-popup-help.png)
 
-**Content Performance**
+### Content Performance
 
 Here are the three potential indicators for the **Content Performance** extension:
 
@@ -78,4 +78,32 @@ If you don't want to see **Content Performance** results in the Mesh Uploader Ex
 
 ![A screenshot of the Content Performance Analyzer page in Project Settings.](../../media/make-your-environment-available/065-cpa-in-project-settings.png).
 
+### Interactables
 
+The **Interactables** validation checks to see if the Interactables have been saved with the latest serialization data and have valid unique ID's.
+
+**Warning**: *MeshInteractableSetup serialized with previous version*. 
+
+This indicates you that your scene hasn't been updated with the latest serialization. Everything will still work properly in the Mesh app; if you want to remove the warning:
+
+1. Open the scene.
+1. On the menu bar, select **Mesh Toolkit** > **Interactables** > **Update Serialized Versions**. 
+1. Save the project.
+
+**Error**: *Interactables cannot be both equippable and manipulable*. 
+
+This indicates that your project contains one or more objects created using an earlier version of the Mesh toolkit, when an object could be both equippable and manipulable. This dual option is no longer available. The error message will include the object. To fix this:
+
+1. In the **Hierarchy**, select the object.
+2. In the **Inspector**, navigate to the **Mesh Interactable setup** component.
+3. Click the **Object Type** drop-down and then select one of the options in the menu.
+
+![A screenshot of an object's Mesh Interactable Setup with the Object Type drop down menu highlighted.](../../media/make-your-environment-available/066-mesh-interactable-component.png).
+
+**Error**: *Multiple Unique Id Managers found*, *No Unique Id Manager found*, or *Invalid Unique interactables found*.
+
+All of these error messages indicate that something went wrong with the automatic process to set up Interactables with unique IDs. To fix this:
+
+1. Open the scene.
+1. On the menu bar, select **Mesh Toolkit** > **Interactables** > **Validate Unique Ids**. 
+1. Save the project.
