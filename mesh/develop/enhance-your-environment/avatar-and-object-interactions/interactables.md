@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, object and player interactions, interactables, avatars
 
 ## Overview
 
-Mesh Interactables is a system for configuring objects with Unity scripts that defines interaction with an object or avatar behavior at runtime. The Mesh Toolkit contains scripts of different object types that can be defined. When a project runs, it sets up all the necessary prefabs and settings required for objects or the avatar to behave as defined. If you'd like to see an approximate preview of what your interactable objects will look and feel like when they run in the Mesh app, be sure to [set up Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md). Note that the IK functionality seen in the Mesh app isn’t available in Mesh Emulation Mode.
+Mesh Interactables is a system for configuring objects with Unity scripts that defines interaction with an object or avatar behavior at runtime. The Mesh toolkit contains scripts of different object types that can be defined. When a project runs, it sets up all the necessary prefabs and settings required for objects or the avatar to behave as defined. If you'd like to see an approximate preview of what your interactable objects will look and feel like when they run in the Mesh app, be sure to [set up Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md). Note that the IK functionality seen in the Mesh app isn’t available in Mesh Emulation Mode.
 
 For objects you want the avatar to interact with, add a *MeshInteractableSetup* script. The properties for a group of objects that all behave the same can be set up with a parent *MeshInteractableSetup* script. The properties will be applied to all children with rigidbodies at runtime by automatically adding a *MeshInteractableBody* script. **MeshInteractableBody** will allow each interactable to behave independently. If you want to set up reactions to an object’s interactions with [Visual Scripting](../../script-your-scene-logic/visual-scripting/visual-scripting-overview.md), you can add the *MeshInteractableBody* yourself and create a script graph with a node to an available property, such as *OnHovered* or *OnSelected*, hooked up to an *OnStateChanged* node. For example, the following script graph will enable the cylinder while the button is pressed and disable it when the button is released. The button is fully interactable just by adding the script and a collider and you don't have to do anything else.
 
@@ -160,6 +160,6 @@ This component is added automatically at runtime to interactable bodies; develop
 ## Next steps
 
 [Triggers, anchors and tethers](./triggers-anchors-and-tethers.md)
-[Create avatar spawn and teleport points](./create-avatar-spawn-and-teleport-points.md)
+[Create avatar spawn and teleport points](./create-avatar-spawn-and-travel-points.md)
 [Physics interactions](../physics/mesh-physics-overview.md)
 [Enhanced features overview](../enhanced-features-overview.md)

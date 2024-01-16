@@ -1,22 +1,131 @@
 ---
-title: Release notes for Mesh Toolkit
-description: Mesh Toolkit release notes
+title: Release notes for Mesh toolkit
+description: Mesh toolkit release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 11/14/2023
+ms.date: 12/11/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
+keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
 
-# Mesh Toolkit release notes
+# Mesh toolkit release notes
 
-**Release notes and known issues for Microsoft Mesh Toolkit**
+**Release notes and known issues for Microsoft Mesh toolkit**
 
 For purposes of this document, there are two categories of users:
 
-* Creators: Technical artist and developers building with the Mesh Toolkit
+* Creators: Technical artist and developers building with the Mesh toolkit
 * IT admins: Managers working in Azure
+
+## Version 23.15 (Preview)
+
+>[!Caution]
+>This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
+> 
+> **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
+
+### Version list and dates
+
+These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
+
+>[!Note]
+>The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh toolkit package, which releases only after the matching Mesh app is available in stores.
+
+| Mesh offering/package   | Version | Date released
+| ----------- | ----------- | ----------- |
+| Mesh toolkit package      |   5.2315.0     | 2023-12-11  |
+| Mesh (PC/Quest)   |  5.2315.0       |  2023-12-11  |
+
+### What's new
+
+#### Scripting
+
+* Using Timer nodes in subgraphs no longer causes repeated error messages related to `OptimizedTimerUnitUpdateScheduler` to be logged. (31866)
+
+* The visual script graph UI now includes usage notes and helpful hints on Mesh's and Unity's visual script nodes. (25922)
+
+* It's no longer necessary to add `Microsoft.Mesh.VisualScripting.xml` to version control. If it has been previously deployed into your Unity project, it can be safely deleted and removed from version control. (25922)
+
+* In the **Local Script Scope** component, the **Share visual script variables on this GameObject** setting now defaults to being off when a new instance of this component is added to the scene. Existing instances are unaffected. (26551)
+
+* The special script nodes injected by Mesh at runtime have significantly improved visuals and handling now (30925):
+
+    * The visual footprint of injected nodes has been reduced to remove visual clutter and to make script flows easier to follow while they're executing. They're now firmly attached to one of the neighboring user-defined nodes.
+
+    * New visuals of injected nodes:
+
+        | New visuals | Injected nodes |
+        | -------- | ------- |
+        | ![an image of the profiling visual](media/profiling.png)  | profiling (start of flow)    |
+        | ![an image of the data filtering visual](media/data-filtering.png) | data filtering   |
+        | ![an image of the state tracking visual](media/state-tracking.png)    | state tracking    |
+
+    * When the data filtering node blocks data and passes on a `Null` value instead, its icon changes and its tooltip shows diagnostic information on what data is blocked most recently:
+
+        ![an image of the data filter node blocking data showing diagnostic information on what data is blocked most recently](media/blocked-data-forbidden-text.png)
+
+    * When you edit script graphs at runtime in the Emulator, injected nodes are now automatically injected and removed as required.
+
+* Script graphs were saved with redundant type and versioning information in some object references. This will not visibly impact user experience. This redundant information is no longer included. (30688)
+
+* The **Mesh Visual Scripting Diagnostics** panel now correctly displays diagnostics for all selected `ScriptMachine` components if more than one is selected in the transform hierarchy. Previously, only diagnostics for the first selected ScriptMachine were displayed. If several were selected at the same time, errors were logged to the console panel. (30873)
+
+* Accessing **Travel Point** methods and properties now works in all cases. Previously, when the **Travel Point** was set up in isolation and not nested in an explicit **Travel Point Group**, and a reference to it was passed to the method or property node from another script node (for example, from a **Get Variable** node), the **Travel Point** reference was incorrectly filtered out at runtime and the method call or property access would fail to work. (31414)
+
+#### WebSlate
+
+* Added the option to prevent the WebSlate from suspending when users are at a distance, or when it is offscreen. Useful for slates that need to keep running in the background, but can cause performance issues if overused. Normally, to save resources, WebSlates suspend 30 seconds after going offscreen or becoming too small to be useful.
+
+    This option can be seen in Unity's inspector when a WebSlate is selected, as a checkbox on the WebSlate script called **Prevent Suspension**.
+
+#### Uploader
+
+* The `ContentVersion` has been incremented to 1.22.0. Newly published content will only be visible in recent versions of the Mesh app.
+
+* Added new prebuild validation which will only allow GameObjects on certain layers.
+
+* Renamed the **Create Asset** button to **Create Environment**.
+
+* Fixed build status in the result report when there are invalid assets during the build phase.
+
+* If the level of diagnostic data is not set by the tenant admin, then by default the Uploader will send optional diagnostics.
+
+* Renamed the menu item from **Mesh Toolkit/Configure/Default Font** to **Mesh Toolkit/Configure/Apply Default Font Settings**.
+
+* Renamed the menu item from **Mesh Toolkit/Configure/Project Settings** to **Mesh Toolkit/Configure/Apply Project Settings**.
+
+* Renamed button **Add Provisional Thumbnail** to **Add guidance thumbnails**.
+
+* We now show an error dialog when the user picks a folder outside of the project.
+
+* Fixed bugs in the Uploader extensions system:
+
+    * Metadata stages were accidentally being run multiple times.
+
+    * Metadata results were being ignored in certain cases.
+
+* We now return to an empty default scene after building when there was no active scene.
+
+* We now avoid displaying collections that could not be validated in Mesh.
+
+* We now show the toolkit package version in the Uploader Window.
+
+* Uploader build platforms are now stored as per project settings instead of per computer settings.
+
+* Improved how the uploader handles an operation being cancelled.
+
+* Prevent refreshing asset list when changing window focus.
+
+* Added an updated title and warning when using the preview version of the toolkit.
+
+* We cleared a confusing progress bar when Unity reloads assembly during an operation.
+
+* We now prompt the user to re-authenticate if authentication has expired when retrying an operation.
+
+#### Mesh 101 Tutorial
+
+* The **Create Asset** button is now **Create Environment**.  See [Mesh 101 Tutorial Chapter 5: Make your environment available for testing](/mesh/develop/getting-started/mesh-101-tutorial/mesh-101-05-make-environment-available).
 
 ## Version 23.14
 
@@ -25,11 +134,11 @@ For purposes of this document, there are two categories of users:
 These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
 
 >[!Note]
->The version number for your environment project's Mesh Toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh Toolkit package, which releases only after the matching Mesh app is available in stores.
+>The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh toolkit package, which releases only after the matching Mesh app is available in stores.
 
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
-| Mesh Toolkit package      |   5.2314.0     | 2023-12-4  |
+| Mesh toolkit package      |   5.2314.0     | 2023-12-4  |
 | Mesh (PC/Quest)   |  5.2314.0       |  2023-12-4  |
 
 ### What's new
@@ -88,7 +197,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * Fixed a bug where missing TMP settings will not setup default font.
 
-* Fixed `ArgumentNullException` when using **Toggle [NoUpload] suffix** without selecting a game object.
+* Fixed `ArgumentNullException` when using **Toggle [NoUpload] suffix** without selecting a GameObject.
 
 * Added handler for the graph error when the Uploader fails to find the OneDrive folder.
 
@@ -117,11 +226,11 @@ These are the offerings and packages currently available. There may be slight di
 These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see. We are working to create better transparency and standardization of versions of offerings and packages to make upgrading easier.
 
 >[!Note]
->The version number for Mesh (PC or Quest) **must** match the Mesh Toolkit Authoring package version you're using otherwise you may get errors or unexplained behavior. Please hold off on upgrading the Mesh Toolkit Authoring package until the Mesh client version for your target platform (PC or Quest) is available.
+>The version number for Mesh (PC or Quest) **must** match the Mesh toolkit authoring package version you're using otherwise you may get errors or unexplained behavior. Please hold off on upgrading the Mesh toolkit authoring package until the Mesh client version for your target platform (PC or Quest) is available.
 
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
-| Mesh Toolkit Package      |   5.2313.0     | 2023-11-13  |
+| Mesh toolkit Package      |   5.2313.0     | 2023-11-13  |
 | Mesh (PC/Quest)   |  5.2313.0       |  2023-11-13  |
 
 ### What's new
@@ -165,6 +274,10 @@ Here's what to do for UnityEvent in a `SignalReceiver` as the starting point:
 * We fixed an issue where it would allow scripting ([Visual scripting](/mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-overview) and [Cloud scripting](/mesh/develop/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts)) to correctly control WebSlate at start-up.
 
     Before this fix, if the scripting navigate or push HTML content to WebSlates at start-up, it would not show up correctly due to a race-condition.
+  
+* Added the option to prevent the WebSlate from suspending when users are at a distance, or when it is offscreen. Useful for slates that need to keep running in the background, but can cause performance issues if overused. Normally, WebSlates suspend 30 seconds after going offscreen or becoming too small to be useful, to save resources.
+  
+    This option can be seen in Unity's inspector when a WebSlate is selected, as a checkbox on the WebSlate script called "Prevent Suspension".
 
 #### Uploader
 

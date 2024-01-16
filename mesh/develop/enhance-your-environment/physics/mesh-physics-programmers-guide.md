@@ -157,7 +157,7 @@ This component uses the shape of the rigidbody's colliders to calculate its dens
 
 **Benefit**: Performance. The compute cost of the buoyancy calculations scales linearly with the number of collider vertices. Typical physics colliders for bodies, even if already simplified, are often significantly more complex (in terms of number of vertices) than requiresd for buoyancy to work well enough.
 
-**How to use**: Add one (or several) additional colliders (they can be disabled) to a body. Mark the colliders as explicit buoyancy hulls by assigning a physics material named `BuoyancyHull` (exact spelling matters!) to them. The configuration details of this physics material don't matter - a suitable physics material is supplied with the Mesh Toolkit package. If a body has any colliders marked like that, only these colliders are used for buoyancy calculations; all other colliders are ignored.
+**How to use**: Add one (or several) additional colliders (they can be disabled) to a body. Mark the colliders as explicit buoyancy hulls by assigning a physics material named `BuoyancyHull` (exact spelling matters!) to them. The configuration details of this physics material don't matter - a suitable physics material is supplied with the Mesh toolkit package. If a body has any colliders marked like that, only these colliders are used for buoyancy calculations; all other colliders are ignored.
 
 **Best practices**: Explicit buoyancy hull colliders to any Rigidbody that can possibly be thrown into a *BuoyancyField*. It's best (and easiest) to use Cube colliders because they have the fewest vertices (eight per collider). Matching the exact visual shape of the buoyant body usually isn't required for a good result; a very coarse approximation is usually sufficient.
 

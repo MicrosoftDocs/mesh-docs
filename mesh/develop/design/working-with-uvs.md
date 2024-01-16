@@ -4,7 +4,7 @@ description: Learn about working with UVs and lightmaps when designing for Mesh.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 9/26/2023
+ms.date: 1/2/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, unity, design, models, modeling
 ---
@@ -38,23 +38,20 @@ If there isn't a UV seam at the hard edge, and with the light bake resolution co
 
 ![A side by side comparison of UV seam at the hard edge](../../media/3d-design-performance-guide/image018.png) 
 
-This version of the elephant has bigger UV shells with no cuts at the hard edges.
-
-Unity light bake smoothed it out.
+This version of the elephant has bigger UV shells with no cuts at the hard edges. Unity light bake smoothed it out.
 
 Light bake aliasing is an issue with our resolution constraints.
 
-Straighten UV shells to cut out unwanted aliasing.
+**Straighten UV shells to cut out unwanted aliasing**. 
 
-Aliasing in the UVs will cause aliasing in the light map textures. Aliasing baked into textures hurts immersion and presence.
+Aliasing in the UVs will cause aliasing in the light map textures. Aliasing baked into textures hurts immersion and presence. The aliasing seen here is due to the UV shell being a circle.
 
 ![An image showing the effects of aliasing in UV](../../media/3d-design-performance-guide/image019.png)
 
-The aliasing seen here is due to the UV shell being a circle.
+Aliasing will be gone regardless of the lightmap texture resolution.
 
 ![The correct way of aliasing as shown on the 3D object](../../media/3d-design-performance-guide/image020.png) 
 
-Aliasing will be gone regardless of the lightmap texture resolution.
 
 Even a small amount of aliasing can be problematic for VR users since
 they can view the mesh from any distance.
@@ -74,14 +71,13 @@ means ridding shell of aliasing
 
 With our focus on lightweight and optimized projects, UV layouts need to be as efficient as possible.
 
-Once texel size is determined in Unity, make sure to go back and adjust any shells that are too closely packed to cut out texture bleed or have
-room for smaller padding.
+Once texel size is determined in Unity, make sure to go back and adjust any shells that are too closely packed to cut out texture bleed or have room for smaller padding.
+
+First pass, before the scene texel scale is determined:
 
 ![Image of a textured wall in first pass](../../media/3d-design-performance-guide/image023.png) 
 
-First
-pass, before the scene texel scale is determined.
+Second pass, after the scene texel scale is determined:
 
 ![Image of a textured wall in second pass](../../media/3d-design-performance-guide/image024.png) 
 
-Second pass, after the scene texel scale is determined.

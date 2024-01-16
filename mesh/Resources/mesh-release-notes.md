@@ -4,7 +4,7 @@ description: Mesh release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 12/4/2023
+ms.date: 12/11/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -12,6 +12,27 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 # Mesh release notes
 
 **Release notes and known issues for the Immersive spaces in Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2315.0 (Preview)
+
+### Mesh on the web
+
+Mesh on the web is moving to cloud.microsoft with the [Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). Currently, we are providing two links for Mesh on the web to ensure a smooth transition. For the new [cloud.microsoft](https://mesh.cloud.microsoft) link, make sure you have allowed the proper endpoints. See [Preparing your organization](../Setup/Content/preparing-your-organization.md#ensure-endpoints-can-be-allowed-for-immersive-spaces-in-teams) for details.
+
+The two Mesh on the web links are:
+
+- Old: https://portal.mesh.microsoft.com 
+- New: https://mesh.cloud.microsoft
+
+If you have any issues with the new Mesh on the web experience, you can continue to use [portal.mesh.microsoft.com](https://portal.mesh.microsoft.com).
+
+### Resolved product issues
+
+The following product issues have been fixed for this release:
+
+* On Quest, the user is disconnected from an event if headset is removed. (25764)
+
+* Searching for co-organizers on the Invite page yields no results. (29365)
 
 ## Version 5.2314.0
 

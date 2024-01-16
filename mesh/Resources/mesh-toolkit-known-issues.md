@@ -1,29 +1,21 @@
 ---
-title: Known issues for Mesh Toolkit
-description: Mesh Toolkit active known issues
+title: Known issues for Mesh toolkit
+description: Mesh toolkit active known issues
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 12/4/2023
+ms.date: 12/11/2023
 ms.topic: Guide
-keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
+keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
 
-# Active known issues - Mesh Toolkit
+# Active known issues - Mesh toolkit
 
-## Version 23.14
+## Version 23.15 (Preview)
 
 * The embedded videos show as black on Quest 2. (24096)
 
     *Workaround:*  If you run into an issue where videos display and behave as expected on PC but not on Quest, add the video script to the video player.
-
-### Scripting
-
-* Script graphs were saved with redundant type and versioning information in some object references. This will not visibly impact user experience. (30688)
-
-* The **Mesh Visual Scripting Diagnostics** panel only displays the diagnostics for the first selected `ScriptMachine` and errors were logged to the console panel if several were selected at the same time. (30873)
-
-* When the **Travel Point** is set up in isolation, not nested in an explicit **Travel Point Group**, and a reference to it is passed to the method or property node from another script node, for example, from a **Get Variable** node, the **Travel Point** reference is incorrectly filtered out at runtime and the method call or property access will fail to work. (31414)
 
 ### WebSlate
 
@@ -31,7 +23,7 @@ keywords: Microsoft Mesh, Mesh Toolkit, Mesh Developer
 
 * If loading too many WebSlates at once, lower-end computers may not be able to load all WebSlates; only some WebSlates will be loaded. We recommend that you use the [Content Performance Analyzer tool](../develop/debug-and-optimize-performance/cpa.md) to measure rendering time and determine the proper allocations based on your environment's features.
 
-- When working with WebSlate in the Unity editor, the editor needs to be restarted when updating the WebSlate or Mesh Toolkit packages through the Unity package manager.
+- When working with WebSlate in the Unity editor, the editor needs to be restarted when updating the WebSlate or Mesh toolkit packages through the Unity package manager.
 
 - The "Current URL" field of a WebSlate currently cannot be updated during Play mode.
 

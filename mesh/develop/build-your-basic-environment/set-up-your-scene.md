@@ -6,7 +6,7 @@ ms.author: vinnietieto
 ms.date: 11/1/2023
 ms.service: mesh
 ms.topic: How to
-keywords: Microsoft Mesh, Unity, getting started, Unity, scene, teleportation, navmesh, travelpoint, travelgroup, player movement
+keywords: Microsoft Mesh, Unity, getting started, Unity, scene, teleportation, navmesh, travel point, travelgroup, player movement
 ---
 
 # Set up your scene
@@ -44,7 +44,7 @@ Be cautious of low ceilings or tunnels; these could potentially affect player gr
 
 ## Add a TravelPoint
 
-Every scene must have at least one *travel point*, which is used to configure avatar spawning behavior. If you're new to travel points, we recommend that you [read our TravelPoint and TravelGroup article](../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md) and follow the instructions there.
+Every scene must have at least one *travel point*, which is used to configure avatar spawning behavior. If you're new to travel points, we recommend that you [read our TravelPoint and TravelGroup article](../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-travel-points.md) and follow the instructions there.
 
 ## Add the Mesh Thumbnail Camera
 
@@ -82,12 +82,5 @@ up to you. The example below is taken from our [Mesh 101 tutorial](../../develop
 
 ## Next Steps
 
-To enhance your project with features such as Web content, Mesh Interactables, or Mesh Physics, go to:
-
 > [!div class="nextstepaction"]
-> [Enhanced features overview](../enhance-your-environment/enhanced-features-overview.md)
-
-If you're interested in some of the more artistic elements of experience creation such as modeling, texture, and lighting, go to:
-
-> [!div class="nextstepaction"]
-> [Design overview](../design/overview.md)
+> [Environment construction tips](./environment-construction-tips.md)

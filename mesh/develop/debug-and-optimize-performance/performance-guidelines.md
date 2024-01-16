@@ -3,10 +3,10 @@ title: Performance guidelines for Mesh
 description: Performance guidelines for development for Mesh using Unity.
 author: typride
 ms.author: vinnietieto
-ms.date: 11/13/2023
+ms.date: 1/4/2024
 ms.topic: Guide
 ms.service: mesh
-keywords: Microsoft Mesh, getting started, performance, content performance analzyer, performance profile, stats
+keywords: Microsoft Mesh, getting started, performance, content performance analzyer, performance profile, stats, profiler, frame debugger, renderdoc
 ---
 
 # Performance guidelines for Mesh
@@ -36,7 +36,7 @@ Generally authoring environments in Mesh involves three steps.
 1. Upload to Microsoft Mesh
 1. Run your content in the Mesh app
 
-During step one it's recommended you use a mixture of the [Content Performance Analyzer (CPA)](#content-performance-analyzer-cpa) and [Performance Profiler](#performance-profiler) found in the [Mesh Toolkit](../development-overview.md#develop-in-unity-with-mesh-toolkit) package which is required for any Unity project being used to generate a Mesh environment. During step two the CPA tool automatically runs. Finally, during step three final profiling should occur via Mesh's built-in Performance Profiler.
+During step one it's recommended you use a mixture of the [Content Performance Analyzer (CPA)](#content-performance-analyzer-cpa) and [Performance Profiler](#performance-profiler) found in the [Mesh toolkit](../development-overview.md#develop-in-unity-with-mesh-toolkit) package which is required for any Unity project being used to generate a Mesh environment. During step two the CPA tool automatically runs. Finally, during step three final profiling should occur via Mesh's built-in Performance Profiler.
 
 ## Tools for analyzing performance
 
@@ -50,7 +50,7 @@ To run the CPA tool select **Mesh Toolkit** > **Content Performance Analyzer** f
 
 Issues and suggestions are reported via an editor window in Unity.
 
-![A screenshot of the Content Performance Analyzer window](../../media/3d-design-performance-guide/image003.png)
+![A screenshot of the Content Performance Analyzer window](../../media/debug-and-optimize/003-cpa-analyzer-with-background.png)
 
 > [!IMPORTANT]
 > A portion of the CPA analyzers will run automatically when uploading content to Mesh. Because not all tests can run automatically it's good to run the CPA manually as part of your development process.
@@ -58,7 +58,7 @@ Issues and suggestions are reported via an editor window in Unity.
 ### Performance Profiler
 
 The Performance Profiler provides a simple window for viewing your Mesh project's frame rate, scene complexity, and memory
-usage across all platforms. The Performance Profiler is accessible within the Mesh app and within the Mesh Toolkit.
+usage across all platforms. The Performance Profiler is accessible within the Mesh app and within the Mesh toolkit.
 
 ![A screen shot of the Performance Profiler in isolation](../../media/3d-design-performance-guide/image004.png)
 
@@ -97,7 +97,7 @@ Both the CPA and Performance Profiler are custom built for Mesh, but there are a
 
 - [Unity's Profiler](https://docs.unity3d.com/Manual/Profiler.html)
 - [Unity's Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html)
-- [RenderDoc](https://docs.unity3d.com/Manual/RenderDocIntegration.html)
+- [RenderDoc](https://docs.unity3d.com/Manual/RenderDocIntegration.html) (**IMPORTANT**: RenderDoc can only perform captures from the Unity editor. Mesh app builds won't work).
 
 ### Performance thresholds
 

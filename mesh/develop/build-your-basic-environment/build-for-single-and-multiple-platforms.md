@@ -32,7 +32,7 @@ This scene must also be a more "low resolution" version to in order to perform w
 
 The steps for each of these are explained in later sections. To learn more about optimizing for different platforms, see the *Performance optimization* section of the article named [Performance guidelines for Mesh](../debug-and-optimize-performance/performance-guidelines.md#performance-thresholds).
 
-Keep in mind that if you want to host a multi-platform event where Atendees can join from PC and from Meta Quest headset you should use option 3 above. You can only select one environment per event so you will not be able to select an environment for PC and another environment for Android when creating your event.
+Keep in mind that if you want to host a multi-platform event where Attendees can join from PC and from Meta Quest headset you should use option 3 above. You can only select one environment per event so you will not be able to select an environment for PC and another environment for Android when creating your event.
 
 ## Next steps
 

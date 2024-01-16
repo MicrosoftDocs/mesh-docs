@@ -16,7 +16,7 @@ This article will help you configure your development environment and start iter
 ## Software dependencies
 
 1. [.NET 6.0 SDK Windows](https://dotnet.microsoft.com/download)a3
-1. [Azure CLI 2.40.0](https://learn.microsoft.com/cli/azure/install-azure-cli)
+1. [Azure CLI 2.40.0](/cli/azure/install-azure-cli)
 
 ## Create a Scene with Mesh Cloud Scripting
 
@@ -24,7 +24,7 @@ The following instructions show how to create a simple environment with a cube t
 
 1. Go to the article named [Create new or update an existing project](../../build-your-basic-environment/create-a-new-project-or-update.md). If you're creating a new project, make sure you follow all the steps in the section named **To create a new project**. If you're updating an existing project, do the same for the section named **To update an existing project**.
 1. Create a new scene.
-1. [Add a travel point to the scene](../../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md).
+1. [Add a travel point to the scene](../../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-travel-points.md).
 1. Save the scene and name it. For this example, we'll use the name **MyFirstCloudScripting**.
 
     > [!NOTE]
@@ -38,7 +38,7 @@ The following instructions show how to create a simple environment with a cube t
 
    ![Screenshot of Open application folder button in Unity.](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
    
-   ... you'll see in the Windows File Explorer that this also creates a new [ASP.NET Core](https://learn.microsoft.com/aspnet/core/razor-pages/web-sdk?view=aspnetcore-6.0) project named **MyFirstCloudScripting.csproj** in the **Assets > .MeshCloudScripting > MyFirstCloudScripting** folder.
+   ... you'll see in the Windows File Explorer that this also creates a new [ASP.NET Core](/aspnet/core/razor-pages/web-sdk?view=aspnetcore-6.0) project named **MyFirstCloudScripting.csproj** in the **Assets > .MeshCloudScripting > MyFirstCloudScripting** folder.
 
    ![Screenshot of a folder structure in Windows showing scripting project.](../../../media/mesh-scripting/getting-started/003-cloud-scripting-files.png)
 
@@ -129,11 +129,11 @@ The following instructions show how to create a simple environment with a cube t
    ![A screen shot of feedback in Unity after clicking the cube.](../../../media/mesh-scripting/getting-started/JITHitBreakpoint.png)
 
 > [!NOTE]
-> By default, the application will time out after two minutes of inactivity. To increase this window, add a numeric `"debugTimeoutSecs"` value to your manifest file (for example: `"debugTimeoutSecs": 240`)
+> By default, the application will timeout after two minutes of inactivity. To increase this window, set a `"debugTimeoutSecs"` value to your manifest file (ex. `"debugTimeoutSecs": "240"`)
 
 ## Upload the Environment
 
-The Mesh Cloud Scripting Service infrastructure deployment and publishing is integrated as part of the Mesh Toolkit Uploader.
+The Mesh Cloud Scripting Service infrastructure deployment and publishing is integrated as part of the Mesh toolkit Uploader.
 You can use the specific settings UI in MeshUploader to define your Azure subscription ID that the Mesh Cloud Scripting Service will be deployed to.
 
 1. Add your deployment configurations such as Azure subscription ID to the environment from the MeshUploader UI. You could do this when you create an environment: setup the configs in the **Mesh Environments** window, **Create Environment** tab, **Setup Mesh Script Configuration** block shown in the following images. Alternatively, you could set up and update the setting for an existing environment in the **Update Environment** steps.
