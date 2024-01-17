@@ -4,7 +4,7 @@ description: Learn how to create grab, hold, and throw interactions between avat
 ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 1/16/24
+ms.date: 1/16/2024
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation Mode
 ---
