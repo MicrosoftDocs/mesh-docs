@@ -9,7 +9,6 @@ f1.keywords:
 - NOCSH
 ms.topic: article
 ms.service: mesh
-ms.subservice: viva-goals
 search.appverid:
 - MET150
 description: "Learn how to start a trial with Microsoft Mesh as an admin."
