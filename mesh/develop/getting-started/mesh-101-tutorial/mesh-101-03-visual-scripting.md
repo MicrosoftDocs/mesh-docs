@@ -11,7 +11,11 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual
 
 # Mesh 101 Tutorial Chapter 3: Add interactivity with Mesh Visual Scripting
 
+<br>
+
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=6b52c8c4-06cd-4908-b31b-7f9c3650134f]
+
+<br>
 
 Now that we've completed the setup phase, let's move on to making your GameObjects interactive! In this chapter, we'll dive into Mesh Visual Scripting, which you can use to add custom logic to your Environment.
 

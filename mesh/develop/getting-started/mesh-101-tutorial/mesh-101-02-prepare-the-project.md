@@ -11,7 +11,11 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 
 # Mesh 101 Tutorial Chapter 2: Prepare the project
 
+<br>
+
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=c6b989b4-6634-4c4d-a1f7-2aa38ab3cd70]
+
+<br>
 
 ## Scenes in the project
 
