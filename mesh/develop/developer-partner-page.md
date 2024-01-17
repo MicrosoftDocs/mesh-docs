@@ -34,52 +34,8 @@ Consider reaching out to our partners bring your ideas to life with Mesh.
 | [Sulava](https://sulava.com/en/services/metaverse/microsoft-mesh-as-a-service/)  :::image type="icon" source="../media/developer-partner-page/logo-sulava.png" border="false":::<br> [Contact mail](mailto:sales@sulava.com) |Sulava – Creating better worklife. With our help, our customers are able to adapt their business to the demands of the rapidly changing world. We are passionate about using Microsoft cloud technologies in business operations and put our hearts into changing the way you work. We are a pioneer in Microsoft cloud technologies with extensive and in-depth experience in introducing Microsoft technologies to employees’ everyday lives and companies’ business operations. Sulava Microsoft Mesh as a Service includes following phases: planning, implementation of solutions, worlds and integrations, deployment and training, on-going support and development. With our help customers can perform a successful onboarding of Mesh, VR, XR and the Metaverse onto their worklife and business processes.   | Finland | - System integration (e.g. setting up and onboarding organizations onto M365)<br>- Build custom immersive solutions or experiences |
 | [Telefónica](https://metaverso.telefonica.com/en) :::image type="icon" source="../media/developer-partner-page/logo-telefonica.png" border="false":::<br> [Contact mail](mailto:mariavictoria.rubiomunoz@telefonica.com) | [Telefónica - About us](https://www.telefonica.com/en/about-us/) | Spain | - System integration (e.g. setting up and onboarding organizations onto M365)<br>- Build custom immersive solutions or experiences |
 
-## Sulava - Create better worklife
 
-:::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
+## Next steps
 
-### About Sulava
-
-With our help, our customers are able to adapt their business to the demands of the rapidly changing world. We are passionate about using Microsoft cloud technologies in business operations and put our hearts into changing the way you work. We are a pioneer in Microsoft cloud technologies with extensive and in-depth experience in introducing Microsoft technologies to employees’ everyday lives and companies’ business operations.
-
-Sulava Microsoft Mesh as a Service includes the following phases:
-
-- Planning, implementation of solutions, worlds and integrations
-- deployment and training, on-going support and development.
-
-With our help customers can perform a successful onboarding of Mesh, VR, XR and the Metaverse onto their worklife and business processes.
-
-### Services provided
-
-- Build custom immersive solutions or experiences.
-
-- System integration (e.g. setting up and onboarding organizations onto M365)
-
-- Onboarding new employees, trainings and various other services in Mesh worlds
-
-#### Contact info
-
-**Website:**  [https://sulava.com/](https://sulava.com/en/services/metaverse/microsoft-mesh-as-a-service/)
-
-**Location:** Finland
-
-**Contact:** sales@sulava.com
-
-## Telefónica
-
-:::image type="content" source="../media/developer-partner-page/Partner-logo-filler.png" alt-text="Partner logo filler":::
-
-### About Telefónica
-
-We want to make our world more human by connecting lives. In Telefónica, we believe that it´s people who give meaning to technology and not the other way around
-At a time when technology is more present than ever in our lives, we cannot forget that the most important connections are human connections. Because in today’s society, people’s quality of life, mostly depends on that connection.
-
-And this is where we come in. Offering connections that bring people together, rather than isolate them; connections that invite people to be themselves, to express themselves, to share.
-
-Offering connections that bring people together
-Our mission puts people at the center of everything we do. We want to be a company that customers, employees, suppliers, shareholders and society in general can trust.
-
-This mission commits us to protecting people and the planet, as well as ensuring that social corporate responsibility is at the core of everything we do. We aspire to digitize the entire society, leaving no one behind, thus aligning ourselves naturally with the United Nations 2030 Agenda, which highlights the key role of technology, innovation and communications in addressing humanity’s great challenges.
-
-For more info, [read about Telefónica](https://www.telefonica.com/en/about-us/).
-
+   > [!div class="nextstepaction"]
+   > [Mesh Development Overview](development-overview.md)
