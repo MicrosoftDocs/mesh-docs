@@ -29,7 +29,11 @@ The properties for a group of objects that all behave the same can be set up wit
 
 ![A screen shot of the Mesh Interactable Body component.](../../../media/enhance-your-environment/object-player-interactions/016-mesh-interactable-body.png)
 
-*Mesh Interactable Body* will allow each interactable to behave independently. 
+**Notes**:
+
+- *Mesh Interactable Body* will allow each interactable to behave independently.
+
+- A rigidbody must be added to an object if you want it to be physics enabled.
 
 ## Interactable Object Types
 
@@ -53,21 +57,15 @@ As mentioned above, this is the default type and the most basic one. It gives yo
 
 An object of this type can have its transform manipulated at runtime and will move through space on the end of an interactor ray. Shortcut controls are available to rotate or translate the object. When manipulating objects in the Mesh app you can turn on IK settings for the avatar hand to follow the object. Manipulable objects don't require a rigidbody, but you should add one if you want the objects to have physics capabilities.
 
-![A screen shot of the Mesh Interactable Setup component with the Manipulable settings displayed.](../../../media/enhance-your-environment/object-player-interactions/011-interactables-object-type-manipulable.png)
-
 ![A screen shot of a Mesh experience with a coffee pot being manipulated.](../../../media/enhance-your-environment/object-player-interactions/017-manipulable-coffeepot.png)
 
 ### Equippable
 
 An object of this type will attach to your avatar's hand. The PC controls for equip are clicking the object or pressing ‘F' while the object is selected. The Quest controls for equip are pressing the 'Grip' button while the object is selected. Equippable objects contain settings for IK targets for your avatar's arm pose while the object is equipped. The IK targets are an offset from the avatar's chest; this determines where the hand goes while the object is held or activated.
 
-![A screen shot of the Mesh Interactable Setup component with the Equippable settings displayed.](../../../media/enhance-your-environment/object-player-interactions/012-interactables-object-type-equippable.png)
-
 ### Throwable
 
 As the name implies, you can grab and throw an object of this type. After grabbing, you can enter into aim mode by pressing and holding the left mouse button. This will allow your avatar's arm to follow your mouse target; to throw the object, release the left mouse button.
-
-![A screen shot of the Mesh Interactable Setup component with the Throwable settings displayed.](../../../media/enhance-your-environment/object-player-interactions/013-interactables-object-type-throwable.png)
 
 ![A screen shot of a dart game with a dart grabbed and read to be thrown.](../../../media/enhance-your-environment/object-player-interactions/018-throwable-dart.png)
 
@@ -94,19 +92,34 @@ If you want to set up reactions to an object's interactions with [Visual Scripti
 **Highlight Settings**
 - **Hovered/Selected**: Whether or not to highlight the object if it's highlighted or selected.
 - **Highlight Mechanism**
-    - **Inner Glow** Applies a highlight with a glow effect using the given properties.
-        - **Custom highlight material**: Override option specific to this object to set the material used for the glow. If this isn't set, the default material from the settings asset will be used.
-        -  **Exclusion string:** If this is set then any Game Object with a name containing the exclusion string will be excluded from the highlight.
-    - **Mesh Outline:** Adds an automatic outline of the specified color/width to objects.
-    - **Shader Properties**
+
+
+
+    - Menu item 1: **Shader Properties**
         - **Highlight Color**: The color to set the material's color properties when the object is highlighted.
         - **Highlight Transition Duration**: The amount of time to fade the highlight in/out when transitioning.
         - **Highlight Amount Properties**: The material's properties to set the amount of highlight when highlighted. This is a float value.
         - **Highlight Color Properties**: The material's properties to set the color of highlight when highlighted. This is a color value.
 
+    - Menu item 2: **Mesh Outline**: Adds an automatic outline of the specified color/width to objects.
+        
+        - **Highlight Color**: TBD
+        - **Highlight Transition Duration**: TBD
+        - **Highlight Outline Width**: TBD
+        - **Custom Outline Material**: TBD
+        - **Custom Stencil Write Material**: TBD
+        - **Outline Exclusion Mode**: TBD
+
+    - Menu item 3: **Inner Glow**: Applies a highlight with a glow effect using the given properties.
+
+        - **Highlight Color**: TBD
+        - **Highlight Transition Duration**: TBD
+        - **Custom highlight material**: Override option specific to this object to set the material used for the glow. If this isn't set, the default material from the settings asset will be used.
+        -  **Exclusion string:** If this is set then any Game Object with a name containing the exclusion string will be excluded from the highlight.
+
 ### Settings exclusive to Manipulables
 
-**Manipulable:** Whether or not the object can be manipulated through space along the XR ray interactors.
+![A screen shot of the Mesh Interactable Setup component with the Manipulable settings displayed.](../../../media/enhance-your-environment/object-player-interactions/011-interactables-object-type-manipulable.png)
 
 - **Force Mode:** The mode to use to force the object through space  
     - **Default:** Default MRTK behavior that moves the object using its center.  
@@ -120,7 +133,7 @@ If you want to set up reactions to an object's interactions with [Visual Scripti
 - **Point Spring (Only available for Point Spring mode)**  
     - **Spring strength:** The force of the spring which pulls the object. The higher the value, the faster it will reach the target point.  
     - **Damping Factor:** How much damping is applied to prevent oscillation around the grab point.  
-- **Modify Target Transform:** Gives user the option to override the default transform and set the desired position and rotation of object relative to camera/avatar while object is selected:  
+- **Modify Target Transform:** Gives user the option to override the default transform and set the desired position and rotation of object relative to camera/avatar while object is selected. When this is set to **Enabled**, you get the following three properties:
     - **Target Space:**  
         - **Local Space Of Camera:** Whether to specify position and rotation in the camera local space.
         - **Local Space Of Avatar:** Whether to specify position and rotation in the avatar local space.
@@ -134,27 +147,32 @@ If you want to set up reactions to an object's interactions with [Visual Scripti
 
 ### Settings shared by Equippables and Throwables
 
+![A screen shot of the Mesh Interactable Setup component with the settings common to Equippables and Throwables highlighted.](../../../media/enhance-your-environment/object-player-interactions/019-common-settings-for-equippable-and-throwable.png)
+
 - **Interaction Offset:** The position and rotation offset relative to the avatar's hand to place the object.  
 - **Equip Target Pose**  
     - *Position*: The distance from the avatar's chest to place the hand when an item is equipped.  
     - *Rotation*: The amount to rotate the wrist when an item is equipped.  
 - **Held Hand Pose:**
-    - **Hand Pose Shape:** The hand pose shape to put the avatar's hand into when equipped.  
+    - **Hand Pose Shape:** This is a drop-down that provides a range of hand pose shapes to put the avatar's hand into when equipped. You can also choose *none*.
     - **Hand Pose Size:** Size of the hand pose from 0 – 1.  
 
 ### Settings exclusive to Equippables
+
+![A screen shot of the Mesh Interactable Setup component with the Equippable settings displayed.](../../../media/enhance-your-environment/object-player-interactions/012-interactables-object-type-equippable.png)
 
 - **Activate Configuration**  
     - **Activate Type:** When to set the item as active. Throwable objects cannot be activated and will always have activated type set to none.
         - **None**: This item can't be activated.  
         - **Toggle:** This item toggles between active/not active every time the activate control is clicked.  
         - **Single:** This item is activated when the activate control is clicked and then automatically deactivated once it reaches it's last target pose.
-    - **Activate Target Poses:** A list of target poses used to place the avatar's hand when an item is activated. The position and rotation offsets are relative to the avatar's chest. The avatar will interpolate using the animation curve from the previous pose to the current one sequentially down the list for the amount of time defined in interpolation time, staying at the final pose until deactivated. When deactivated, the avatar hand pose will move backwards through the list.  
+    - **Activate Target Poses:** A list of target poses used to place the avatar's hand when an item is activated. Each pose consists of four properties: Position, Rotation, Interpolation time, and Animation Curve. The position and rotation offsets are relative to the avatar's chest. The avatar will interpolate using the animation curve from the previous pose to the current one sequentially down the list for the amount of time defined in interpolation time, staying at the final pose until deactivated. When deactivated, the avatar hand pose will move backwards through the list.  
 
 ### Settings exclusive to Throwables
 
-- **Throwable:** Whether or not the object can be thrown. Throwable objects will enter the avatar into an aim state when the left mouse button is held  
+![A screen shot of the Mesh Interactable Setup component with the Throwable settings displayed.](../../../media/enhance-your-environment/object-player-interactions/013-interactables-object-type-throwable.png)
 
+- **Aim Configuration**:
 - **Arm Extension on Aim** – The amount to extend the arm when in aim mode.  
 - **Aim Hand Pose:**  
     - **Hand Pose Shape:** The hand pose shape to put the avatar's hand into when aiming.  
@@ -164,31 +182,11 @@ If you want to set up reactions to an object's interactions with [Visual Scripti
     - **Hand Pose Shape:** The hand pose shape to put the avatar's hand into when the throw is released  
     - **Hand Pose Size:** Size of the hand pose from 0 – 1.
 - **VR Min Throw Velocity:** The minimum velocity to throw an object. This is only used on Quest.
-- **VR Max Throw Velocity:** The maxiumum velocity to throw an object. This is the velocity value used on PC. On quest the velocity will be scaled based on the user's physical arm movement.    
+- **VR Max Throw Velocity:** The maximum velocity to throw an object. This is the velocity value used on PC. On Quest the velocity will be scaled based on the user's physical arm movement.
+- **2D Settings**
+    - **2D Throw Velocity**: TBD
+    - **Throw Direction Offset**: TBD
 - **Throw Target Poses:** A list of target poses used to place the avatar's hand when an item is thrown. The position and rotation offsets are relative to the position of the avatar's hand when the throw was initiated. The avatar will interpolate using the animation curve from the previous pose to the current one sequentially down the list for the amount of time defined in interpolation time. The object will be released and the throw hand pose will be used at the second to last target.
-
-
-
-
-
-
-
-### Settings
-
-**[Recommended Component]** Rigidbody: A rigidbody must be added if you want this object to be physics enabled.
-
-
-
-**Equippable:** Whether or not this object can be equipped in the avatar's hand.
-
-
-- **Throw Settings**  
-
-
-
-
-
-
 
 ## Mesh Interactable Body
 
@@ -204,7 +202,7 @@ This component is added automatically at runtime to interactable bodies; develop
     - **IsSelectedLocally** – Whether or not the local avatar is selecting the object.
     - **IsMine (read only)** – True for the last avatar to select or equip the object.  
 
-**For equippables:**
+**For Equippables:**
 
 - **Properties**
     - **EquippedAt (read only)** - Where this object is equipped – None, DefaultHand, RightHand, LeftHand. When running in MeshBrowser this will be networked.
@@ -227,7 +225,7 @@ This component is added automatically at runtime to interactable bodies; develop
     - Using On Late Update. If you require to change the target transform in every frame, do it in late update so that the new target transform is available immediately in the next frame.  
 - **Modified Target Rotation (read and write)**: Used to set the new target rotation by the visual script. This will override the default target position.
 
-### Settings
+#### Settings
 
 **Modify With Visual Script:** Enable this to modify target transform for manipulable bodies using visual script. 
 ![Modify-with-visual-script](../../../media/enhance-your-environment/object-player-interactions/Picture9.png)
