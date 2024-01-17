@@ -15,7 +15,7 @@ keywords: Microsoft Mesh, object and player interactions, interactables, avatars
 
 Mesh Interactables is a system for configuring objects with Unity scripts that defines interaction with an object or avatar behavior at runtime. The scripts define the properties of the object that can be interacted with using XRI interactors. The [Mesh toolkit](../../build-your-basic-environment/add-the-mesh-toolkit-package.md) contains scripts of different object types that can be defined. When a project runs, it sets up all the necessary prefabs and settings required for objects or the avatar to behave as defined. If you'd like to see an approximate preview of what your interactable objects will look and feel like when they run in the Mesh app, be sure to [set up Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md). Note that the IK functionality seen in the Mesh app isn't available in Mesh Emulation Mode.
 
-To make an object interactable:
+**To make an object interactable**:
 1. In the **Hierarchy**, select the object.
 1. In the **Inspector**, click the **Add Component** button and then select **Mesh Interactable Setup**.
 
@@ -25,7 +25,7 @@ The component is added and with its default **Object Type** property set to **In
 
 ![A screen shot of the Mesh Interactable Setup component with Object Type set to Interactable.](../../../media/enhance-your-environment/object-player-interactions/009-interactables-common-settings.png)
 
-The properties for a group of objects that all behave the same can be set up with a parent *Mesh Interactable Setup* component. The properties will be applied to all children with rigidbodies at runtime by automatically adding a *Mesh Interactable Body* component to each child object. 
+The properties for a group of objects that all behave the same can be set up with a parent *Mesh Interactable Setup* component. The properties will be applied to all children with rigidbodies at runtime by automatically adding a *Mesh Interactable Body* component to each child object. You may want to add *Mesh Interactable Body* manually to use Mesh interactables with [Visual Scripting](#visual-scripting), such as with interaction events or to modify the manipulable target transform through the visual script.
 
 ![A screen shot of the Mesh Interactable Body component.](../../../media/enhance-your-environment/object-player-interactions/016-mesh-interactable-body.png)
 
@@ -51,11 +51,11 @@ There are four object types:
 
 ### Interactable
 
-As mentioned above, this is the default type and the most basic one. It gives you access to callbacks that can be invoked when the user hovers over or selects the object that you can have other scripts react to. For example, if you have a button that you want to use to enable another object, add add this type to the object with an *OnSelected* callback to enable that other object. The button will be fully interactable just by adding this type and a collider; you won't have to do anything else. 
+As mentioned above, this is the default type and the most basic one. It gives you access to callbacks that can be invoked when the user hovers over or selects the object that you can have other scripts react to. For example, if you have a button that you want to use to enable another object, add this type to the object with an *OnSelected* callback to enable that other object. The button will be fully interactable just by adding this type and a collider; you won't have to do anything else. 
 
 ### Manipulable
 
-An object of this type can have its transform manipulated at runtime and will move through space on the end of an interactor ray. Shortcut controls are available to rotate or translate the object. When manipulating objects in the Mesh app you can turn on IK settings for the avatar hand to follow the object. Manipulable objects don't require a rigidbody, but you should add one if you want the objects to have physics capabilities.
+An object of this type can have its transform manipulated at runtime and will move through space on the end of an interactor ray. Shortcut controls are available to rotate or translate the object. For manipulation of objects in the Mesh app, you can turn on IK settings for the avatar hand to follow the object. Manipulable objects don't require a rigidbody, but you should add one if you want the objects to have physics capabilities.
 
 ![A screen shot of a Mesh experience with a coffee pot being manipulated.](../../../media/enhance-your-environment/object-player-interactions/017-manipulable-coffeepot.png)
 
@@ -75,11 +75,13 @@ All the Interactables components have interaction properties and methods availab
 
 If you want to set up reactions to an object's interactions with [Visual Scripting](../../script-your-scene-logic/visual-scripting/visual-scripting-overview.md), you can make use of the *Mesh Interactable Body* component inside a script graph with a node to an available property, such as *OnHovered* or *OnSelected*, hooked up to an *OnStateChanged* node. For example, the following script graph will enable the cylinder while the button is pressed and disable it when the button is released. The button is fully interactable just by adding the script and a collider; you don't have to do anything else.
 
-![MeshInteractableBody script graph](../../../media/enhance-your-environment/object-player-interactions/Picture10.png)
+![A screen shot of a script graph with a Mesh Interactable body Is Selected node.](../../../media/enhance-your-environment/object-player-interactions/Picture10.png)
 
 ## Settings
 
 ### Settings common to Manipulables, Equippables and Throwables
+
+![A screen shot of a Mesh Interactable Setup component with the properties common to all object types highlighted.](../../../media/enhance-your-environment/object-player-interactions/020-common-settings-or-all-types.png)
 
 **Interaction Proximity Radius** Furthest distance the avatar can be to interact with this object
 
@@ -172,7 +174,7 @@ If you want to set up reactions to an object's interactions with [Visual Scripti
 
 ![A screen shot of the Mesh Interactable Setup component with the Throwable settings displayed.](../../../media/enhance-your-environment/object-player-interactions/013-interactables-object-type-throwable.png)
 
-- **Aim Configuration**:
+**Aim Configuration**:
 - **Arm Extension on Aim** – The amount to extend the arm when in aim mode.  
 - **Aim Hand Pose:**  
     - **Hand Pose Shape:** The hand pose shape to put the avatar's hand into when aiming.  
@@ -188,11 +190,7 @@ If you want to set up reactions to an object's interactions with [Visual Scripti
     - **Throw Direction Offset**: TBD
 - **Throw Target Poses:** A list of target poses used to place the avatar's hand when an item is thrown. The position and rotation offsets are relative to the position of the avatar's hand when the throw was initiated. The avatar will interpolate using the animation curve from the previous pose to the current one sequentially down the list for the amount of time defined in interpolation time. The object will be released and the throw hand pose will be used at the second to last target.
 
-## Mesh Interactable Body
-
-This component is added automatically at runtime to interactable bodies; developers don't need to use it. You may want to add it manually to use Mesh interactables with Visual Scripting, such as with interaction events or to modify the manipulable target transform through the visual script.
-
-### Visual Scripting
+## Visual Scripting
 
 **For all interactable bodies:**
 
