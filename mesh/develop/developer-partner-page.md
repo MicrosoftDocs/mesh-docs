@@ -3,7 +3,7 @@ title: Meet our Mesh Early Adopters
 description: Partners of the Mesh Technology Adoption program.
 author: typride
 ms.author: tmilligan
-ms.date: 01/05/2024
+ms.date: 01/17/2024
 ms.topic: Reference
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environments
