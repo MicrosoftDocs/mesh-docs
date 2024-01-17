@@ -6,7 +6,7 @@ ms.author: vinnietieto
 ms.date: 11/1/2023
 ms.service: mesh
 ms.topic: How to
-keywords: Microsoft Mesh, Unity, getting started, Unity, scene, teleportation, navmesh, travelpoint, travelgroup, player movement
+keywords: Microsoft Mesh, Unity, getting started, Unity, scene, teleportation, navmesh, travel point, travelgroup, player movement
 ---
 
 # Set up your scene
@@ -44,7 +44,7 @@ Be cautious of low ceilings or tunnels; these could potentially affect player gr
 
 ## Add a TravelPoint
 
-Every scene must have at least one *travel point*, which is used to configure avatar spawning behavior. If you're new to travel points, we recommend that you [read our TravelPoint and TravelGroup article](../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md) and follow the instructions there.
+Every scene must have at least one *travel point*, which is used to configure avatar spawning behavior. If you're new to travel points, we recommend that you [read our TravelPoint and TravelGroup article](../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-travel-points.md) and follow the instructions there.
 
 ## Add the Mesh Thumbnail Camera
 
