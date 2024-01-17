@@ -6,7 +6,7 @@ author: qianw211
 ms.author: qianwen
 ms.date: 10/12/2023
 ms.topic: Troubleshooting
-keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
+keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, license requirements, licensing, permissions, Oculus, Quest, download, ID, Meta ID, collection, environments, templates, sharding, provisioning, audio, spatial audio, error messages
 ---
 
 # Troubleshooting & FAQ
@@ -17,7 +17,7 @@ keywords: Microsoft Mesh, M365, events, join events, organize events, immersive 
 
 [!INCLUDE [The include file for the license requirements in Mesh](../Includes/license-requirements-for-Mesh.md)]
 
-### What if I limit user permissions with corporate policies
+### What if I limit user permissions with corporate policies?
 
 If you do not *allow* users with Teams and Office licenses to create Groups, Sharepoint/OneDrive sites, or use Mailbox/Calendar, the user may notice the following:
 
@@ -41,7 +41,7 @@ All M365 Groups created are normal M365 groups. A unique identifier is added to 
 
 ### Can we script or automate the creation of an M365 Group for use with Mesh?
 
-We currently do not support this feature.  
+We currently don't support this feature.  
 
 ## What are the license requirements for Immersive spaces in Teams?
 
@@ -157,6 +157,22 @@ The data should be your version of the following:
 - **Tenant ID:**
 - **Trace ID:**
 - **Date:**
+
+**I recently created an environment collection and can't create environments or templates yet. What's causing this?**
+
+The M365 backend takes a certain amount of time to fully initialize every required dependency for content creation. This can result in your newly created collection not being available yet when you try to create an environment with the Mesh Uploader or create a template in the Mesh app or Mesh on the web. For example, the OneDrive backend not being fully initialized yet would prevent environment or template creation, but eventually it will resolve. For newly created collections, you can monitor progress by navigating to the **Collections** page in Mesh on the web and clicking the **View details** button for your collection.
+
+![A screen shot of the Mesh on the web Collections page with the View details button highlighted.](media/001-collections-view-details.png)
+
+Environment collections that are still initializing will show the spinner "progress" animation and status message as shown here:
+
+![A screen shot of the message stating that the collection was successfully created.](media/002-collection-creation-progress-spinner.png)
+
+**I was recently added as a member to a collection and can't create environments or templates yet.**
+
+Unfortunately, there's no easy way for you to track your permission sync progress. We estimate that this process can take up to 30 minutes, so we recommend that you try again after that period of time. This might require several attempts since the precise waiting period isn't known. **Tip**: This is related to the underlying M365 group permissions/SharePoint.
+
+[Learn more about setting up your organization and provisioning your tenant](../Setup/Content/preparing-your-organization.md#consider-which-tenant-to-provision-for-mesh).
 
 ### Audio setup in Mesh FAQ
 
