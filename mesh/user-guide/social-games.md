@@ -27,7 +27,7 @@ Some social games and activities from the Mesh sample environments are covered i
 
 The Toybox sample environment comes with a number of activities to drive social engagement across Mesh experiences:
 
-* **Fire Pit & Roasting Marshmallows** - Socialize and recreate the experience of gathering around the campfire. Here's what to do:
+* **Fire Pit & Roasting Marshmallows:** socialize and recreate the experience of gathering around the campfire. Here's what to do:
 
     * Left click on the marshmallow stick with your mouse to pick it up.
 
@@ -35,11 +35,11 @@ The Toybox sample environment comes with a number of activities to drive social 
 
     * Click Space bar on your keyboard to drop the marshmallow.
 
-* **Radio & Boombox** - click on the radio button the turn music on or off.
+* **Radio & Boombox:** click on the radio button the turn music on or off.
 
     ![A screenshot of the Radio, Fire Pit and Marshmallow roasting](media/fire-pit-marshmallow-radio.png)
 
-* **Bean Bag Toss** - This is a throwing game. You win by getting the most bags into the hole. Here's what to do:
+* **Bean Bag Toss:** this is a throwing game. You win by getting the most bags into the hole. Here's what to do:
 
     * Left mouse click on a bean bag to pick it up with your hand.
 
@@ -51,15 +51,15 @@ The Toybox sample environment comes with a number of activities to drive social 
 
     * Left mouse click to throw the bean bag.
 
-* **Sound Orbs** - Select a sphere to play a musical sound.
+* **Sound Orbs:** select a sphere to play a musical sound.
 
     ![A screenshot of the Bean Bag Toss and Sound Orbs](media/sound-orb-bean-bag.png)
 
-* **Ice Breaker** - Select the spheres with a friend for conversation starters. An example would be: “What is your favorite outdoor activity?”
+* **Ice Breaker:** select the spheres with a friend for conversation starters. An example would be: “What is your favorite outdoor activity?”
 
     ![A screenshot of the ice breaker orb](media/ice-breaker.png)
 
-* **Astronaut** - try clicking on the astronaut with your left mouse button to see what happens!
+* **Astronaut:** try selecting the astronaut with your left mouse button to see what happens!
 
     ![A screenshot of the Astronaut game](media/astronaut.png)
 
@@ -73,27 +73,27 @@ In the gallery, there're exhibits such as **Magnetism**, **Bowling**, **Air Hock
 
 Some activities include:
 
-* The Rambunctious Machine: demonstrating interactive physics constrained to 2D
+* **The Rambunctious Machine**: demonstrating interactive physics constrained to 2D
 
     ![A screenshot of the rambunctious machine](media/rambunctious-machine.png)
 
-* Wave and Frequency: connected physics bodies moving in a variety of synchronized ways. Click on the aparatus to see how waves are formed!
+* **Wave and Frequency**: connected physics bodies moving in a variety of synchronized ways. Click on the aparatus to see how waves are formed!
 
     ![A screenshot of the Wave and Frequency exhibit](media/wave-frequency.png)
 
-* Gravity Simulator: select your environment such as the Moon, Earth, or space to visually experience gravitational pull in that specific environment.
+* **Gravity Simulator**: select your environment such as the Moon, Earth, or space to visually experience gravitational pull in that specific environment.
 
     ![A screenshot of the Gravity Simulator interactive game](media/gravity-simulator.png)
 
-* Mass and Gravity: select a planet or other objects orbiting around the Sun to see how it moves.
+* **Mass and Gravity**: select a planet or other objects orbiting around the Sun to see how it moves.
 
     ![A screenshot of the Mass & Gravity interactive exhibit](media/mass-gravity.png)
 
-* Buoyancy and Balance: try to load a ship with cargo to see how the weight affects its balance in water, or see how ships can float on waves.
+* **Buoyancy and Balance**: try to load a ship with cargo to see how the weight affects its balance in water, or see how ships can float on waves.
 
     ![A screenshot of the Buoyancy and Balance science exhibit](media/buoyancy-mass.png)
 
-* Gone Fishin'!: catch fish, ships or a penguin with a magnetic fishing rod. 
+* **Gone Fishin'!**: catch fish, ships or a penguin with a magnetic fishing rod. 
 
     * Select the fishing rod and move over to the object you want to catch
     
