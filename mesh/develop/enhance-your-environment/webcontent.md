@@ -191,7 +191,7 @@ For further guidance on the WebSlate node in Mesh Apps, see the [Visual scriptin
 
 - To size image URL to the size of the WebSlate wrap the URL in HTML. Load this HTML into the WebSlate using Visual Scripting WebSlate LoadHTML api. Add the constructed HTML to HTMLContent property.
 
-  Sample HTML with image URL and Visual scripting graph using LoadHTML api:
+  Sample HTML with the image URL and Visual scripting graph using the LoadHTML API:
 
   `<!DOCTYPE html><html><head><title>Your image title</title></head><body><img src="https://learn.microsoft.com/en-us/mesh/media/webview-developer-guide/ArcadeWebSlate.png"></body></html>`
 
