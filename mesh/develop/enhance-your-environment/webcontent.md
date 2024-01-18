@@ -189,7 +189,7 @@ For further guidance on the WebSlate node in Mesh Apps, see the [Visual scriptin
 
 ![Unity usage of WebSlate](../../media/webview-developer-guide/image004.png)
 
-- To size image URL to the size of the webslate wrap the URL in HTML. Load this HTML  into the WebSlate using Visual Scripting WebSlate LoadHTML api HTMLContent property.
+- To size image URL to the size of the WebSlate wrap the URL in HTML. Load this HTML into the WebSlate using Visual Scripting WebSlate LoadHTML api. Add the constructed HTML to HTMLContent property.
 
   Sample HTML with image URL and Visual scripting graph using LoadHTML api:
 
