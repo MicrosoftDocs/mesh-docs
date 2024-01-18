@@ -25,6 +25,8 @@ Some social games and activities from the Mesh sample environments are covered i
 
 ## The Toybox sample
 
+![the Toybox sample environment](media/toybox-environment.png)
+
 The Toybox sample environment comes with a number of activities to drive social engagement across Mesh experiences:
 
 * **Fire Pit & Roasting Marshmallows:** socialize and recreate the experience of gathering around the campfire. Here's what to do:
