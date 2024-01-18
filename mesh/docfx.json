@@ -44,7 +44,8 @@
       "uhfHeaderId": "MSDocsHeader-Mesh",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/mesh-docs",
-      "feedback_product_url": "https://docs.microsoft.com/mesh/resources/feedback"  
+      "feedback_product_url": "https://docs.microsoft.com/mesh/resources/feedback",
+      "searchScope": "Mesh"  
     },
     "fileMetadata": {},
     "template": [],
