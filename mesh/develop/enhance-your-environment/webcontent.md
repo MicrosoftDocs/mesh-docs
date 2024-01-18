@@ -271,7 +271,7 @@ If you already know which domains you'll need, you can manually add them to the 
 
 To accomplish this, integrate the WebSlate Prefab in your environment and provide the livestream URL. In the case where livestream URL is not available beforehand, you could utilize a URL redirection service to generate a URL and provide that to the WebSlate. This approach provides the flexibility to update the redirection URL at the last moment without needing to re-publish the large environment with the livestream URL. Ensure you select the 'Prevent Suspension' option during the WebSlate setup to prevent it from suspending after 30 seconds if someone isn't actively viewing the WebSlate. WebSlates don't require configuration with the Host Tools, therefore host-less events can be created and serve as drop-in spaces with meaningful content.
 
-![Watching Ignite Live stream in Mesh](../../media/webview-developer-guide/ignite-livestream.png)
+![A screen shot of a Mesh event with attendees watching a live stream of the Microsoft Ignite event.](../../media/webview-developer-guide/ignite-livestream.png)
 
 ## Limitations and Known Issues
 
