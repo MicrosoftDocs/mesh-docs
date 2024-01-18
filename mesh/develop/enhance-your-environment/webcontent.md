@@ -195,7 +195,7 @@ For further guidance on the WebSlate node in Mesh Apps, see the [Visual scriptin
 
   `<!DOCTYPE html><html><head><title>Your image title</title></head><body><img src="https://learn.microsoft.com/en-us/mesh/media/webview-developer-guide/ArcadeWebSlate.png"></body></html>`
 
-![A screen of how to setup VS to use LoadHTML api](../../media/webview-developer-guide/loadHTML-with-image.png)
+![A screen shot showing how to set up Visual Scripting to use the LoadHTML API.](../../media/webview-developer-guide/loadHTML-with-image.png)
 
 ## Performance
 
