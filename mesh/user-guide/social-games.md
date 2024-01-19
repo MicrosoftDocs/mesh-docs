@@ -37,7 +37,7 @@ The Toybox sample environment comes with a number of activities to drive social 
 
     * Click Space bar on your keyboard to drop the marshmallow.
 
-* **Radio & Boombox:** click on the radio button the turn music on or off.
+* **Radio & Boombox:** click on the radio button to turn the music on or off.
 
     ![A screenshot of the Radio, Fire Pit and Marshmallow roasting](media/fire-pit-marshmallow-radio.png)
 
