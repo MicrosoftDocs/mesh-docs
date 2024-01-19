@@ -79,7 +79,7 @@ Some activities include:
 
     ![A screenshot of the rambunctious machine](media/rambunctious-machine.png)
 
-* **Wave and Frequency**: connected physics bodies moving in a variety of synchronized ways. Click on the aparatus to see how waves are formed!
+* **Wave and Frequency**: connected physics bodies moving in a variety of synchronized ways. Click on the apparatus to see how waves are formed!
 
     ![A screenshot of the Wave and Frequency exhibit](media/wave-frequency.png)
 
