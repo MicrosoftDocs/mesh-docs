@@ -35,7 +35,7 @@ The Toybox sample environment comes with a number of activities to drive social 
 
     * To roast the marshmallow, simply walk up to the firepit so the marshmallow is over the fire.
 
-    * Click Space bar on your keyboard to drop the marshmallow.
+    * Press the Spacebar on your keyboard to drop the marshmallow.
 
 * **Radio & Boombox:** click on the radio button to turn the music on or off.
 
