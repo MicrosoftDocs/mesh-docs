@@ -49,7 +49,7 @@ The Toybox sample environment comes with a number of activities to drive social 
 
         * Move the mouse cursor around to aim where you want to throw.
 
-        * Click Space bar on your keyboard to drop the bean bag.
+        * Press the Spacebar on your keyboard to drop the bean bag.
 
     * Left mouse click to throw the bean bag.
 
