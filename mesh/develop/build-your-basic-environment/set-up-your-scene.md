@@ -83,4 +83,4 @@ up to you. The example below is taken from our [Mesh 101 tutorial](../../develop
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Environment construction tips](./environment-construction-tips.md)
+> [Optimize as you build](./optimize-as-you-build.md)
