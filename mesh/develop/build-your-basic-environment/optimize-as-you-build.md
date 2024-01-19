@@ -33,9 +33,12 @@ You can also use these tools which are useful for profiling content in Unity:
 - [Unity's Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html)
 - [RenderDoc](https://docs.unity3d.com/Manual/RenderDocIntegration.html) (**IMPORTANT**: RenderDoc can only perform captures from the Unity editor. Mesh app builds won't work).
 
+**Note**: After you build and publish your project, the **Build and Upload Results** window appears. It contains a **Content Performance** indicator which gives you a results message related to content in your project. To learn more about these messages and what they mean, see the "Content Performance" section in [Understanding your Build and Publish results](../make-your-environment-available/understanding-build-and-publish-results.md#content-performance).
+
+![A screenshot of the Build and Upload results window with the Content Performance indicator highlighted.](../../media/build-your-basic-environment/007-build-and-upload-expanded.png)
+
 ## Next Steps
 
 > [!div class="nextstepaction"]
 > [Environment construction tips](./environment-construction-tips.md)
 > [Performance Guidelines](../debug-and-optimize-performance/performance-guidelines.md)
-
