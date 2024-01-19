@@ -19,7 +19,6 @@ For those interested in bringing Microsoft Mesh to their company, we recommend c
 
 :::image type="content" source="../media/developer-partner-page/Partner-map.png" alt-text="Screenshot of world map showing where partners are located." lightbox="../media/developer-partner-page/Partner-map.png":::
 
-
 Consider reaching out to our partners bring your ideas to life with Mesh.
 
 In the services column, each icon represents a service that the partner provides, as shown in the table below:
