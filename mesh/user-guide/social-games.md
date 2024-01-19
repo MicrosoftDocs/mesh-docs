@@ -21,6 +21,9 @@ Currently the default environments that come with Immersive spaces in Mesh do no
 
 - Upload and deploy a sample environment from Mesh that has interactive games built-in.  See the [Samples overview](/mesh/develop/getting-started/samples/samples-overview) for a list of Mesh samples.
 
+    >[!Note]
+    >This option assumes that you have gone through the steps outlined in the [Mesh Development Overview](/mesh/develop/development-overview) to build and deploy Mesh sample environments.
+
 Some social games and activities from the Mesh sample environments are covered in detail here.
 
 ## The Toybox sample
@@ -107,7 +110,8 @@ Some activities include:
 
     ![A screenshot of the Gone Fishin' interactive game](media/gone-fishing.png)
 
-What we have shown here is just a subset of what is possible for interactive games in Mesh.  Check with your Mesh environment design and development team for the latest in social games and activities!
+>[!Note]
+>What we have shown here is just a subset of what is possible for interactive games in Mesh.  Check with your Mesh environment design and development team for the latest in social games and activities!
 
 ## Next steps
 
