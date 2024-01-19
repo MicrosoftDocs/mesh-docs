@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 # Social games and activities
 
-Play built-in social games and interactive activities for team bonding in Mesh immersive spaces. We offer several sample environments that comes with built-in games and activities. 
+Play built-in social games and interactive activities for team bonding in Mesh immersive spaces. We offer several sample environments that come with built-in games and activities. 
 
 ![A screenshot of a team gathered around a science museum exhibit](media/social-games-hero-image.jpg)
 
