@@ -75,7 +75,7 @@ In the gallery, there're exhibits such as **Magnetism**, **Bowling**, **Air Hock
 
 Some activities include:
 
-* **The Rambunctious Machine**: demonstrating interactive physics constrained to 2D
+* **The Rambunctious Machine**: challenge yourself by placing the interactive elements to build a path for the ball to go from the left to the buckets on the right!
 
     ![A screenshot of the rambunctious machine](media/rambunctious-machine.png)
 
