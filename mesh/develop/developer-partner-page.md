@@ -15,7 +15,7 @@ keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environ
 
 For those interested in bringing Microsoft Mesh to their company, we recommend consulting with these Mesh TAP (Mesh Technology Adoption Program) partners. Throughout the development of Mesh, these companies contributed to the product through feedback and direct partnership with Microsoft. From IT setup to custom environment creation to suit business needs, these partners have been through Mesh onboarding end-to-end.
 
-Consider reaching out to our partners bring your ideas to life with Mesh.
+:::image type="icon" source="../media/developer-partner-page/check.png" border="false":::Consider reaching out to our partners bring your ideas to life with Mesh.
 
 :::image type="content" source="../media/developer-partner-page/Services-offered.png" alt-text="Key of the services offered by Mesh partners to help with Mesh.":::
 
@@ -36,7 +36,7 @@ Consider reaching out to our partners bring your ideas to life with Mesh.
 |   :::image type="icon" source="../media/developer-partner-page/logo-sulava.png" border="false":::  |Sulava – Creating better worklife. With our help, our customers are able to adapt their business to the demands of the rapidly changing world. We are passionate about using Microsoft cloud technologies in business operations and put our hearts into changing the way you work. We are a pioneer in Microsoft cloud technologies with extensive and in-depth experience in introducing Microsoft technologies to employees’ everyday lives and companies’ business operations. Sulava Microsoft Mesh as a Service includes following phases: planning, implementation of solutions, worlds and integrations, deployment and training, on-going support and development. With our help customers can perform a successful onboarding of Mesh, VR, XR and the Metaverse onto their worklife and business processes.<br><br>**[Sulava](https://sulava.com/en/services/metaverse/microsoft-mesh-as-a-service/)** &nbsp; \| &nbsp; [Contact mail](mailto:sales@sulava.com)  | Finland | - System integration (e.g. setting up and onboarding organizations onto M365)<br>- Build custom immersive solutions or experiences |
 |  :::image type="icon" source="../media/developer-partner-page/logo-telefonica.png" border="false"::: | [Telefónica - About us](https://www.telefonica.com/en/about-us/)<br>**[Telefónica](https://metaverso.telefonica.com/en)** &nbsp; \| &nbsp; [Contact mail](mailto:mariavictoria.rubiomunoz@telefonica.com)  | Spain | - System integration (e.g. setting up and onboarding organizations onto M365)<br>- Build custom immersive solutions or experiences |
 
-## Next steps
+## Next steps 
 
    > [!div class="nextstepaction"]
    >
