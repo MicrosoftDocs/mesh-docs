@@ -17,7 +17,9 @@ For those interested in bringing Microsoft Mesh to their company, we recommend c
 
 Consider reaching out to our partners bring your ideas to life with Mesh.
 
+:::image type="icon" source="../media/developer-partner-page/Services-integration.svg" border="false"::: This partner can help set up and onboard to Mesh & M365
 
+:::image type="icon" source="../media/developer-partner-page/Services-build.svg" border="false"::: This partner builds custom immersive solutions or experiences.
 
 :::image type="content" source="../media/developer-partner-page/Services-offered.png" alt-text="Key of the services offered by Mesh partners to help with Mesh.":::
 
