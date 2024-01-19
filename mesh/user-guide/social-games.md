@@ -86,7 +86,7 @@ Some activities include:
 
     ![A screenshot of the Wave and Frequency exhibit](media/wave-frequency.png)
 
-* **Gravity Simulator**: select your environment such as the Moon, Earth, or space to visually experience gravitational pull in that specific environment.
+* **Gravity Simulator**: select your environment such as the **Moon**, **Earth**, or **Space** to visually experience gravitational pull in that specific environment.
 
     ![A screenshot of the Gravity Simulator interactive game](media/gravity-simulator.png)
 
