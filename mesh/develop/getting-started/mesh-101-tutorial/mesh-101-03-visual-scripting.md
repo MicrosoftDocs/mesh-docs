@@ -3,7 +3,7 @@ title: Mesh 101 Add interactivity with Mesh Visual Scripting
 description: Learn adding about adding interactivity to objects with Mesh Visual Scripting.
 author: typride
 ms.author: vinnietieto
-ms.date: 12/5/2023
+ms.date: 1/17/2024
 ms.topic: Tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
@@ -59,7 +59,7 @@ As you can see, there's already a video screen in place, but it needs a Play/Sto
 1. In the **Inspector**, change the **Transform** > **Position** >
     **Y** value to "1".
 
-Perfect! Now **ButtonBase** is correctly located just in front of the **BackplateBase** object.
+Perfect! Now **ButtonBase** is correctly located just below the video screen.
 
 ![A screenshot of Unity showing the ButtonBase below the BackplateBase object](../../../media/sample-mesh-101/406-buttonbase-correct.png)
 
@@ -117,9 +117,9 @@ Right now, the text on the button says **Label**. Let's change that to
 
 We can think of this script graph as having three main goals:
 
-1. Detect when the Play/Stop button gets clicked.
+1. Detect when the video player Play/Stop button gets clicked.
 1. When it gets clicked, play the video.
-1. When it gets clicked again, stop the video
+1. When it gets clicked again, stop the video.
 
 The first goal, detect when the button gets clicked, will require three nodes. The GameObject in the project that actually "listens" for and reacts to a click is **Button**. Let's add that to the script graph.
 
@@ -152,18 +152,12 @@ If you go into Play mode, you'll see that a new component named **Mesh Interacta
 
 This component is added automatically at runtime to interactable bodies; it exposes various properties to Visual Scripting such as *IsHovered* and *IsSelected*, which will come in handy in a moment.
 
-You can choose to have the Unity UI  display a different color tint in Play mode than in Edit mode. In the image above, the Play mode tint has been changed to light blue. This can help you to tell at a glance which mode you're in. To change the Play mode tint:
-
-1. On the menu bar, select **Edit** > **Preferences**.
-1. In the left-side menu, select **Colors**.
-1. Under **General**, click the **Playmode tint** color box and then select the color you want.
-
 ***
 
 In the script graph, let's add a node that lets us know when the button is selected.
 
-1. Make sure you're viewing the embedded script graph that's attached to the **PlayVideoButton** GameObject.
-1. Click and hold on the outport port of the **PlayVideo** variable, and then release the mouse button. This opens the Fuzzy Finder.
+1. If you need to, exit Play mode, and then select **PlayVideoButton** in the **Hierarchy** to ensure that you're seeing its embedded graph in the **Script Graph** window. 
+1. Click and hold on the outport port of the **PlayVideo** variable, and then release the mouse button. This opens the Fuzzy Finder. **WARNING**: Once you open the Fuzzy Finder, don't click anywhere outside of the Unity interface. This closes the Fuzzy Finder and causes unpredictable behavior in the Script Graph.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/413-fuzzy-finder.png)
 
@@ -255,7 +249,7 @@ Now we'll add the nodes that detect if *isPlaying* changes; the video will play 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/425-videostill.png)
 
-When the scene starts, the video screen displays a still image (due to **VideoStill** being active) and does *not* play a video (which is due to **Video** being inactive). When the participant presses the Play/Stop button (which shows **Play**), it makes **Video**  active, which causes the video to play, and simultaneously makes **VideoStill** inactive, which hides the still image. When the participant presses the button again (which now shows **Stop**), **Video** is made inactive, stopping the video, and **VideoStill** is made active again, which makes the video screen display the still image. 
+When the scene starts, the video screen displays a still image (due to **VideoStill** being active) and does *not* play a video (which is due to **Video** being inactive). When the participant presses the Play/Stop button while it's showing **Play**, it makes **Video**  active, which causes the video to play, and simultaneously makes **VideoStill** inactive, which hides the still image. The button's label  also changes from **Play** to **Stop** When the participant presses the button again, **Video** is made inactive, stopping the video, and **VideoStill** is made active again, which makes the video screen display the still image again. 
 
 The remaining nodes in our graph make all of this happen.
 
@@ -322,8 +316,7 @@ For this tutorial, we want all participants in the experience to be able to see 
 1. In Unity, save the project and then press the Unity Editor Play
     button.
 
-1. In the **Game** window, click the **Play** button you just worked
-    on. This causes the label on the button to change to **Stop** and a brief video about wind turbines to play on the
+1. In the **Game** window, click the **Play** button below the video player. This causes the label on the button to change to **Stop** and a brief video about wind turbines to play on the
     screen above the button.
 
     ![A screenshot of a video playback Description ](../../../media/sample-mesh-101/image044.jpg)
