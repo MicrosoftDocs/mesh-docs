@@ -87,7 +87,7 @@ Some activities include:
 
     ![A screenshot of the Gravity Simulator interactive game](media/gravity-simulator.png)
 
-* **Mass and Gravity**: select a planet or other objects orbiting around the Sun to see how it moves.
+* **Mass and Gravity**: select a planet or other objects orbiting around the Sun to see how they move.
 
     ![A screenshot of the Mass & Gravity interactive exhibit](media/mass-gravity.png)
 
