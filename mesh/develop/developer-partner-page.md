@@ -15,6 +15,11 @@ keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environ
 
 For those interested in bringing Microsoft Mesh to their company, we recommend consulting with these Mesh TAP (Mesh Technology Adoption Program) partners. Throughout the development of Mesh, these companies contributed to the product through feedback and direct partnership with Microsoft. From IT setup to custom environment creation to suit business needs, these partners have been through Mesh onboarding end-to-end.
 
+## Where our partners are located
+
+:::image type="content" source="../media/developer-partner-page/Partner-map.png" alt-text="Screenshot of world map showing where partners are located.":::
+
+
 Consider reaching out to our partners bring your ideas to life with Mesh.
 
 In the services column, each icon represents a service that the partner provides, as shown in the table below:
