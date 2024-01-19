@@ -107,7 +107,7 @@ Some activities include:
 
     ![A screenshot of the Gone Fishin' interactive game](media/gone-fishing.png)
 
-What we have shown here are just a subset of what is possible for interactive games in Mesh.  Check with your Mesh environment design and development team for the latest in social games and activities!
+What we have shown here is just a subset of what is possible for interactive games in Mesh.  Check with your Mesh environment design and development team for the latest in social games and activities!
 
 ## Next steps
 
