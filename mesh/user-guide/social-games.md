@@ -11,13 +11,13 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 # Social games and activities
 
-Play built-in social games and interactive activities for team bonding in Mesh immersive spaces. We offer several sample environments that comes with built-in games and activities. 
+Play built-in social games and interactive activities for team bonding in Mesh immersive spaces. We offer several sample environments that come with built-in games and activities. 
 
 ![A screenshot of a team gathered around a science museum exhibit](media/social-games-hero-image.jpg)
 
 Currently the default environments that come with Immersive spaces in Mesh do not offer social games and activities. You will need one of the following to try out some of the activities:
 
-- Join the Lake house environment in the immersive space in Teams from a Teams meeting.  For more information, see the [Social games and activies](https://support.microsoft.com/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games) section in the Immersive spaces in Teams documentation.
+- Join the Lake house environment in the immersive space in Teams from a Teams meeting.  For more information, see the [Social games and activities](https://support.microsoft.com/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games) section in the Immersive spaces in Teams documentation.
 
 - Upload and deploy a sample environment from Mesh that has interactive games built-in.  See the [Samples overview](/mesh/develop/getting-started/samples/samples-overview) for a list of Mesh samples.
 
@@ -35,9 +35,9 @@ The Toybox sample environment comes with a number of activities to drive social 
 
     * To roast the marshmallow, simply walk up to the firepit so the marshmallow is over the fire.
 
-    * Click Space bar on your keyboard to drop the marshmallow.
+    * Press the Spacebar on your keyboard to drop the marshmallow.
 
-* **Radio & Boombox:** click on the radio button the turn music on or off.
+* **Radio & Boombox:** click on the radio button to turn the music on or off.
 
     ![A screenshot of the Radio, Fire Pit and Marshmallow roasting](media/fire-pit-marshmallow-radio.png)
 
@@ -49,7 +49,7 @@ The Toybox sample environment comes with a number of activities to drive social 
 
         * Move the mouse cursor around to aim where you want to throw.
 
-        * Click Space bar on your keyboard to drop the bean bag.
+        * Press the Spacebar on your keyboard to drop the bean bag.
 
     * Left mouse click to throw the bean bag.
 
@@ -79,7 +79,7 @@ Some activities include:
 
     ![A screenshot of the rambunctious machine](media/rambunctious-machine.png)
 
-* **Wave and Frequency**: connected physics bodies moving in a variety of synchronized ways. Click on the aparatus to see how waves are formed!
+* **Wave and Frequency**: connected physics bodies moving in a variety of synchronized ways. Click on the apparatus to see how waves are formed!
 
     ![A screenshot of the Wave and Frequency exhibit](media/wave-frequency.png)
 
@@ -87,7 +87,7 @@ Some activities include:
 
     ![A screenshot of the Gravity Simulator interactive game](media/gravity-simulator.png)
 
-* **Mass and Gravity**: select a planet or other objects orbiting around the Sun to see how it moves.
+* **Mass and Gravity**: select a planet or other objects orbiting around the Sun to see how they move.
 
     ![A screenshot of the Mass & Gravity interactive exhibit](media/mass-gravity.png)
 
@@ -107,7 +107,7 @@ Some activities include:
 
     ![A screenshot of the Gone Fishin' interactive game](media/gone-fishing.png)
 
-What we have shown here are just a subset of what is possible for interactive games in Mesh.  Check with your Mesh environment design and development team for the latest in social games and activities!
+What we have shown here is just a subset of what is possible for interactive games in Mesh.  Check with your Mesh environment design and development team for the latest in social games and activities!
 
 ## Next steps
 
