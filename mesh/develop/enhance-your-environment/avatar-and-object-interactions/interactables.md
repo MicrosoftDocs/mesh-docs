@@ -160,6 +160,6 @@ This component is added automatically at runtime to interactable bodies; develop
 ## Next steps
 
 [Triggers, anchors and tethers](./triggers-anchors-and-tethers.md)
-[Create avatar spawn and teleport points](./create-avatar-spawn-and-teleport-points.md)
+[Create avatar spawn and teleport points](./create-avatar-spawn-and-travel-points.md)
 [Physics interactions](../physics/mesh-physics-overview.md)
 [Enhanced features overview](../enhanced-features-overview.md)
