@@ -1,5 +1,5 @@
 ---
-title: Working with 3D models
+title: Getting started with 3D models
 description: Get a comprehensive overview of 3D modeling options for your Mesh experience.
 author: vtieto    
 ms.author: vinnietieto
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: 3D, 3D models, modeling, exporting, importing
 ---
 
-# Working with 3D models
+# Getting started with 3D models
 
 If you want your Mesh experience to be rich in content, you'll probably want to include at least some 3D models. Thankfully, you don't have to be a 3D artist, or have one on your team, to assemble the assets you need to realize your vision. There are many ways to obtain pre-made models free, or at a reasonable cost, which we'll introduce here. We'll also discuss how you can get started on creating your own 3D models.
 
@@ -113,6 +113,10 @@ If you're willing to pay, here are some of the more popular video tutorial sites
 [Coursera](https://www.coursera.org/)
 
 [edX](https://www.edx.org/)
+
+## Next steps
+
+[3D modeling tips](./3d-modeling-tips.md)
 
 ### Resources
 
