@@ -15,11 +15,11 @@ keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environ
 
 For those interested in bringing Microsoft Mesh to their company, consider the following list of Mesh TAP (Technology Adoption Program) participants. These participants gained early access to Mesh and contributed to its creation and development. The list contains companies from around the world who have set up, created, and deployed Mesh. Whether you need to onboard to M365 and set up infrastructure, or create engaging and bespoke immersive experiences, these Mesh TAP participants can help.
 
-## Where our partners are located
+## Locations
 
-:::image type="content" source="../media/developer-partner-page/Partner-map.png" alt-text="Screenshot of world map showing where partners are located." lightbox="../media/developer-partner-page/Partner-map.png":::
+:::image type="content" source="../media/developer-partner-page/Partner-map.png" alt-text="Screenshot of world map showing where participants are located." lightbox="../media/developer-partner-page/Partner-map.png":::
 
-Consider reaching out to our partners bring your ideas to life with Mesh.
+Consider reaching out to the Mesh TAP participants to bring your ideas to life with Mesh.
 
 In the services column, each icon represents a service that the partner provides, as shown in the table below:
 
@@ -28,6 +28,7 @@ In the services column, each icon represents a service that the partner provides
 | This partner can help set up and onboard to onboard to Mesh and/or M365. | :::image type="icon" source="../media/developer-partner-page/Services-integration.png" border="false"::: |
 | This partner builds custom immersive solutions or experiences.          | :::image type="icon" source="../media/developer-partner-page/Services-build-small.png" border="false":::  |
 
+## Explore the companies
 
 | **Partner** | **Description** | **Location** | **Services** |
 |--|--|--|--|
