@@ -54,6 +54,8 @@ For details on how to move around with your Quest devices, you can access the **
 
 Now that you're in an event, explore the interface to see what controls are available. To the left, we have the **System Menu** with [**Dashboard**](#mesh-dashboard), [**Settings**](#adjust-settings), [**Feedback**](/mesh/resources/feedback), and **Quit Mesh**. The app bar in the middle holds the [**Participants**](#participants), [**Selfie**](#take-a-photo-or-selfie), [**Hand raise**](#raise-hand-to-speak-to-hosts-and-all-participants), and [**Reactions**](#react-with-emotes) buttons. The [**Profile**](#profile) button in the lower right corner holds the **Customize** button for customizing your avatars.
 
+You can also click on [the Nametag and contact card](#nametag-and-contact-card) of other participants to find out more information about them.
+
 ![A screenshot of the Mesh meeting with App bar information](media/user-controls.png)
 
 ### Adjust settings
