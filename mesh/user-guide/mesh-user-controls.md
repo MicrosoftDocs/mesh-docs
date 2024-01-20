@@ -40,14 +40,19 @@ table with other avatars. To move around, press the **WASD** keys.
 - **V** to toggle between direct view and avatar view (1st and 3rd
     person views)
 
-Here are some keyboard shortcuts for moving around in your event:
+For details, you can also access the **Control tutorial** from the **Help** menu:
 
-![A screenshot of the Settings dialog showing Keyboard shortcuts](media/settings-dialog-short-cut-keys.png)
+![A screenshot of the Help > Control tutorial dialog on PC](media/help-control-tutorial-pc.png)
+
+### On Quest
+
+For details on how to move around with your Quest devices, you can access the **Control tutorial** from the **Help** menu.
+
+![A screenshot of the Help > Control tutorial dialog on Quest](media/help-control-tutorial-quest.png)
 
 ## Mesh controls overview
 
-Now that you're in an event, explore the interface to see what controls are available. To the left, we have the **System Menu** with **Dashboard**, **Settings**, **Feedback**, and **Quit Mesh**. The app bar in the middle holds the **Participants**, **Selfie**, and **Reactions** buttons. The **Profile** button in the lower right corner
-holds the **Customize** button for customizing your avatars.
+Now that you're in an event, explore the interface to see what controls are available. To the left, we have the **System Menu** with [**Dashboard**](#mesh-dashboard), [**Settings**](#adjust-settings), [**Feedback**](/mesh/resources/feedback), and **Quit Mesh**. The app bar in the middle holds the [**Participants**](#participants), [**Selfie**](#take-a-photo-or-selfie), [**Hand raise**](#raise-hand-to-speak-to-hosts-and-all-participants), and [**Reactions**](#react-with-emotes) buttons. The [**Profile**](#profile) button in the lower right corner holds the **Customize** button for customizing your avatars.
 
 ![A screenshot of the Mesh meeting with App bar information](media/user-controls.png)
 
