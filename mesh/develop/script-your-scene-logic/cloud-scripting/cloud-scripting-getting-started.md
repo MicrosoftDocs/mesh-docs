@@ -24,7 +24,7 @@ The following instructions show how to create a simple environment with a cube t
 
 1. Go to the article named [Create new or update an existing project](../../build-your-basic-environment/create-a-new-project-or-update.md). If you're creating a new project, make sure you follow all the steps in the section named **To create a new project**. If you're updating an existing project, do the same for the section named **To update an existing project**.
 1. Create a new scene.
-1. [Add a travel point to the scene](../../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-teleport-points.md).
+1. [Add a travel point to the scene](../../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-travel-points.md).
 1. Save the scene and name it. For this example, we'll use the name **MyFirstCloudScripting**.
 
     > [!NOTE]

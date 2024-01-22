@@ -3,5 +3,5 @@ items:
   href: interactables.md
 - name: Triggers, anchors and tethers
   href: triggers-anchors-and-tethers.md
-- name: Create avatar spawn and teleport points
-  href: create-avatar-spawn-and-teleport-points.md
+- name: Create avatar spawn and travel points
+  href: create-avatar-spawn-and-travel-points.md

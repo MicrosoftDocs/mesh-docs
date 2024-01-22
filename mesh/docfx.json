@@ -42,9 +42,13 @@
     "globalMetadata": {
       "breadcrumb_path": "/mesh/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Mesh",
+      "ms.service": "mesh",
+      "ms.topc": "conceptual",
+      "titleSuffix": "Microsoft Mesh",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/mesh-docs",
-      "feedback_product_url": "https://docs.microsoft.com/mesh/resources/feedback"  
+      "feedback_product_url": "https://docs.microsoft.com/mesh/resources/feedback",
+      "searchScope": ["Mesh"]  
     },
     "fileMetadata": {},
     "template": [],
