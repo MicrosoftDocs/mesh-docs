@@ -35,8 +35,8 @@ There are licensing requirements and configuration steps needed prior to beginni
 Trials are publicly available from one of the following sources. These IT Admin trials offer customers access to Microsoft Mesh for 6 months.
 To sign up for a trial, please visit either:
 
-- [https://www.microsoft.com/mesh](https://www.microsoft.com/mesh)
-- [https://admin.microsoft.com/](https://admin.microsoft.com/)
+- [Microsoft Mesh - Home](https://www.microsoft.com/mesh)
+- [M365 Admin Portal](https://admin.microsoft.com/)
     1. Sign in to [https://admin.microsoft.com/](https://admin.microsoft.com/).
     1. Go to **Billing** > **Purchase Services**.
     1. Scroll down to the **Microsoft 365** section or search for Microsoft Mesh.
@@ -44,14 +44,13 @@ To sign up for a trial, please visit either:
     1. Select **Get free trial**.
     1. Follow the remaining steps to confirm the trial.
 
-These admin-led trials are not available worldwide. They aren't available for Government customers or customers with EDU or FLW SKUs. See the [Mesh Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md) for full licensing requirements. 
+These admin-led trials are not available worldwide. They aren't available for Government customers or customers with EDU or FLW SKUs. See the [Mesh Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md) for full licensing requirements.
 
 Based on customer tenant configuration, some customers may be unable to see the Microsoft Mesh trial if searching directly in Microsoft 365 admin center. Following the Microsoft Mesh trial link (AKA.MS LINK) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh) will take those customers directly to the trial location.
 
 The expiration date appears in the trial subscription details page within the Microsoft 365 admin center. Upon expiration of the trial, the user won't be able to access their content in Microsoft Mesh and will have to reach out to their IT Admin to purchase a paid license for themselves and their business groups.
 
 ## Who should be involved in a trial
-
 
 | **Role**                                                                                    | **Activity**                                                              | **Mesh licensed user** |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------|
@@ -68,9 +67,9 @@ When you initiate a trial, you need to:
 - Assign licenses to the relevant users
 - Educate organizational stakeholders how to get started hosting Mesh events
 
-For more information on preparing your organization for Microsoft Mesh, please see documentation located at [Preparing your organization for Microsoft Mesh](preparing-your-organization.md)
+For more information on preparing your organization for Microsoft Mesh, please see [Preparing your organization](preparing-your-organization.md)
 
-For more information on setting up Mesh events, please see our Events overview page at [Mesh events overview ](../../events-guide/events-overview.md).
+For more information on setting up Mesh events, please see our Events overview page at [Mesh events overview](../../events-guide/events-overview.md).
 
 ## During a Trial
 
@@ -82,7 +81,7 @@ During the Mesh trial, we suggest you evaluate the following:
 
 For more adoption and deployment resources, visit our Mesh Adoption page found (LINK TO ADOPTION PAGE)
 
-For more information on setting up Mesh events, please see our Events overview page at [Mesh events overview ](../../events-guide/events-overview.md).
+For more information on setting up Mesh events, please see our Events overview page at [Mesh events overview](../../events-guide/events-overview.md).
 
 ## After a Trial
 
