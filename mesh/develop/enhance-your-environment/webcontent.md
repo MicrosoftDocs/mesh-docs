@@ -78,7 +78,7 @@ There are two flavors of WebSlate prefabs available in the Mesh toolkit that you
    **To add the clean WebSlate with no extra components**:  
    Select **Mesh Toolkit** > **WebSlate**.
 
-   **To the WebSlate with the stylized frame and extra features**:  
+   **To add the WebSlate with the stylized frame and extra features**:  
    Select **Mesh Toolkit** > **WebSlateFramed**.
 
 1. Add a URL to the WebSlate to display content.
@@ -103,7 +103,7 @@ You can also search for and add a WebSlate prefab.
 
 1. In the **Inspector**, navigate to the **WebSlate** component, and then add the URL you want to display on the WebSlate:
 
-   ![A screnshot of the WebSlate component with a custom URL added.](../../media/enhance-your-environment/web_content/003-webslate-url.png)
+   ![A screenshot of the WebSlate component with a custom URL added.](../../media/enhance-your-environment/web_content/003-webslate-url.png)
 
 ## Ensure that your WebSlate is readable
 
@@ -170,7 +170,7 @@ To enable visual scripting using WebSlate, you must set up a few things.
 
    ### Load URL
 
-   Developers can now dynamically change web content in real-time by loading new URLs through Visual Scripting. This functionality broadens the scope for various applications, including altering web content based on user preferences or updating it in response to real-time data.
+   Developers can now dynamically change web content in real time by loading new URLs through Visual Scripting. This functionality broadens the scope for various applications, including altering web content based on user preferences or updating it in response to real-time data.
 
    ![A screenshot of an example script graph that loads a new URL in a WebSlate.](../../media/webview-developer-guide/image021.png)
 
@@ -178,7 +178,7 @@ To enable visual scripting using WebSlate, you must set up a few things.
 
    This new feature in WebSlate allows developers to directly load HTML content using Unity TextAssets, streamlining the development process. This integration not only simplifies the workflow but also enables immediate feedback in Unity Play Mode, enhancing real-time editing and debugging. Additionally, it supports dynamic content switching, offering flexibility and a more interactive user experience.
 
-   ![A screenshot of an example script graph that loads a HTML content in a WebSlate.](../../media/webview-developer-guide/image026.png)
+   ![A screenshot of an example script graph that loads HTML content into a WebSlate.](../../media/webview-developer-guide/image026.png)
 
 ## WebSlate in Cloud Scripting
 
