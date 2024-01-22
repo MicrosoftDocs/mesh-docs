@@ -29,20 +29,11 @@ The Dashboard is viewable using the Mesh app on PC or Quest.
 You can look around, walk, run, teleport around, or just sit at the
 table with other avatars. To move around, press the **WASD** keys.
 
-![A infograph that summarizes all the mouse and keyboard keys for moving around](media/mouse-key-board.jpg)
-
-**Other keyboard controls:**
-
-- **Q** to rotate left
-- **E** to rotate right
-- Press and hold on **W, S, A,** or **D** to leave your chair when
-    sitting
-- **V** to toggle between direct view and avatar view (1st and 3rd
-    person views)
-
 For details, you can also access the **Control tutorial** from the **Help** menu:
 
 ![A screenshot of the Help > Control tutorial dialog on PC](media/help-control-tutorial-pc.png)
+
+Use **V** to toggle between direct view and avatar view (1st and 3rd     person views)
 
 ### On Quest
 
@@ -56,7 +47,7 @@ Now that you're in an event, explore the interface to see what controls are avai
 
 You can also click on [the Nametag and contact card](#nametag-and-contact-card) of other participants to find out more information about them.
 
-![A screenshot of the Mesh meeting with App bar information](media/user-controls.png)
+![A screeanshot of the Mesh meeting with App bar information](media/user-controls.png)
 
 ### Adjust settings
 
