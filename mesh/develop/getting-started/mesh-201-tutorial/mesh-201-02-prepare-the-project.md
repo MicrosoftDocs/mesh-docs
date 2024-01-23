@@ -123,4 +123,4 @@ This is another feature that's already set up for you and is explained in detail
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Chapter 3: Add interactivity with Mesh Visual Scripting](mesh-101-03-visual-scripting.md)
+> [Chapter 3: Load a local non-shared HTML file into a WebSlate](./mesh-201-03-webslate-1.md)

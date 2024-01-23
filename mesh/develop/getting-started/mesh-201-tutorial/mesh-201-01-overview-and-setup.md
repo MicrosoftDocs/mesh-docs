@@ -93,4 +93,4 @@ own project from scratch, you would need to [import the Mesh toolkit package](..
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Chapter 2: Prepare the project](mesh-101-02-prepare-the-project.md)
+> [Chapter 2: Prepare the project](./mesh-201-02-prepare-the-project.md)
