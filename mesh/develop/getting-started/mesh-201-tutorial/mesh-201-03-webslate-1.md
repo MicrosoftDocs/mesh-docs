@@ -19,7 +19,7 @@ Now that we've completed the setup phase, let's move on to web content in WebSla
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/014-station-one-front-view.png)
 
-The station already has an object in place that has some descriptive text and a **Load** button. We'll complete the station by adding a WebSlate below the button, and then updating a script graph so that when the user clicks the **Load** button, a non-shared HTML file loads into the WebSlate.
+The station already has an object in place that has some descriptive text and a **Load** button. We'll complete the station by adding a WebSlate below the button and then updating a script graph attached to the **Load** button so that when the user clicks the button, a non-shared HTML file loads into the WebSlate.
 
 All the WebSlates that we'll be adding and/or working with are contained within the hierarchy of the **MeshWebSlates** GameObject. 
 
