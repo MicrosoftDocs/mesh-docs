@@ -137,6 +137,57 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 1. Open a support request by following the link [here](https://admin.microsoft.com) (this support link may only be available to M365 admins).
 
+### How to get a list of signed-in users to Mesh?
+
+Admins may desire a list of users that have signed in to Mesh. You can use the Microsoft Azure portal get a list of users that have signed-in to Mesh due to the fact that all users sign into Mesh with their Microsoft Entra ID (formerly known as Azure Active Directory).
+
+#### Prerequisites
+
+Before you begin, make sure you have the following:
+
+- A Microsoft Azure administrator account with an active Microsoft Entra ID.
+
+Follow these steps to get a list of signed-in users to Mesh from the Azure portal:
+
+1. Open your web browser and go to [https://portal.azure.com/](https://portal.azure.com/).
+
+1. Sign in with your Microsoft Azure administrator account credentials.
+
+1. Click on the menu button in the upper left corner to open the portal menu.
+
+1. In the portal menu, select **Microsoft Entra ID**.
+
+    :::image type="content" source="media/list-users-azure-entra-id.png" alt-text="Screenshot of Azure portal showing Entra idea selected in the list of resources.":::
+
+1. On the Microsoft Entra ID page menu, click **Sign-in logs** under the **Monitoring** section.
+
+    :::image type="content" source="media/list-users-sign-in-logs.png" alt-text="Screenshot of Azure portal showing Sign in logs highlighted.":::
+
+1. Update the filter to find only Mesh users:
+    - Date: Last 1 month (or choose the time period you’re interested in)
+    -Show dates as: Local
+    - Time aggregate: 24 hours
+    - Add filters
+        - Resource (filter by Resource name: Microsoft Mesh Services)
+    - **OPTIONAL**: filter to Immersive spaces for Teams usage only:
+        - Add filters
+            - Application (filter by app name: Microsoft Teams)
+    - **OPTIONAL**: filter to Microsoft Mesh PC standalone and Quest VR usage only:
+        - Add filters
+            - Application (filter by app name: Microsoft Mesh)
+
+1. Switch to the **User sign-ins (non-interactive)** page:
+
+    :::image type="content" source="media/list-users-date-resource-filters.png" alt-text="Screenshot of user sign ins page in Azure portal showing filters date, user sign ins non-interactive, mesh service highlighted.":::
+
+1. Verify the list of **User sign-ins (non-interactive)** looks accurate and then click the **Download > Download JSON** menu item to open the Download pane.
+
+    :::image type="content" source="media/list-users-date-download-JSON.png" alt-text="Screenshot of Azure portal showing Download JSON highlighted.":::
+
+1. Click the **Download** button underneath the file named **NonInteractiveSignIns…** to save the records locally.
+
+    :::image type="content" source="media/list-users-date-download-button.png" alt-text="Screenshot of Azure portal showing download button highlighted.":::
+
 ### What should I do with issues relating to M365?
 
 You'll need to first reproduce the problem, and then follow the steps below to collect all information related to Mesh:
