@@ -6,7 +6,7 @@ author: vtieto
 ms.author: vinnietieto
 ms.date: 1/22/2024
 ms.topic: Tutorial
-keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
+keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, webslates, HTML, scripting, visual scripting, code, coding, interactivity
 ---
 
 # Mesh 201 Tutorial Chapter 2: Prepare the project
