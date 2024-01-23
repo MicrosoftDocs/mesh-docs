@@ -26,17 +26,17 @@ In the services column, each icon represents a service that the partner provides
 
 TESTING
 
-<img src="Services-integration-32px" alt="Services small" width="32" height="32">
+<img src="Services-integration-32px" alt="Services small 32" width="32" height="32">
 
-<img src="Services-integration-58px" alt="Services small" width="58" height="58">
+<img src="Services-integration-58px" alt="Services small 58" width="58" height="58">
 
-<img src="Services-integration-95px" alt="Services small" width="95" height="95">
+<img src="Services-integration-95px" alt="Services small 95" width="95" height="95">
 
-<img src="Services-both-32px" alt="Services small" width="76" height="32">
+<img src="Services-both-32px" alt="Services small 76" width="76" height="32">
 
-<img src="Services-both-57px" alt="Services small" width="135" height="57">
+<img src="Services-both-57px" alt="Services small 135" width="135" height="57">
 
-<img src="Services-both-95px" alt="Services small" width="229" height="95">
+<img src="Services-both-95px" alt="Services small 229" width="229" height="95">
 
 ## Mesh TAP participants
 
