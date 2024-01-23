@@ -189,13 +189,15 @@ For further guidance on the WebSlate node in Mesh Apps, see the [Visual scriptin
 
 ![Unity usage of WebSlate](../../media/webview-developer-guide/image004.png)
 
-- To size the image URL to the size of the WebSlate, wrap the URL in HTML. Make use of the WebSlate LoadHTML API via visual scripting to render this HTML content onto your WebSlate. Add the constructed HTML to the HTMLContent property.
+- To size the image URL to the size of the WebSlate, wrap the URL in HTML. Make use of the WebSlate LoadHTML API via visual scripting to render this HTML content onto your WebSlate. Add the constructed HTML to the HTMLContent property. Alternatively, you can use the LoadHTMAsset API and pass the HTML as an asset. Replace the image URL with your image URL.
 
-  Sample HTML with the image URL and Visual scripting graph using the LoadHTML API:
+  Sample HTML with the image URL and Visual scripting graph using the LoadHTML and LoadHTMLAsset API:
 
-  `<!DOCTYPE html><html><head><title>Your image title</title></head><body><img src="https://learn.microsoft.com/en-us/mesh/media/webview-developer-guide/ArcadeWebSlate.png"></body></html>`
+  `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width initial-scale=1.0"><title>Microsoft</title></head><body style="margin: 0; height: 100vh; overflow: hidden; background-color: black;"><img src="https://learn.microsoft.com/en-us/mesh/media/webview-developer-guide/ArcadeWebSlate.png" loading="lazy" style="width: 100%; height: 100%;"></body></html>`
 
-![A screen shot showing how to set up Visual Scripting to use the LoadHTML API.](../../media/webview-developer-guide/loadHTML-with-image.png)
+  ![A screen shot showing how to set up Visual Scripting to use the LoadHTML API.](../../media/webview-developer-guide/loadHTML-with-image.png)
+
+  ![A screen shot showing how to set up Visual Scripting to use the LoadHTMLAsset API.](../../media/webview-developer-guide/LoadHTMLAsset-with-image.png)
 
 ## Performance
 
@@ -207,7 +209,7 @@ For further guidance on the WebSlate node in Mesh Apps, see the [Visual scriptin
 
   - To help save on performance, WebSlates that are offscreen for over 30s are automatically suspended. They quickly resume on coming back onscreen, but this can impact actively-running services on the hosted page. If this is an issue, developers can disable suspension with the prefab's "Prevent Suspension" checkbox. Note that doing so can cause the scene to consume more resources, as these WebSlates remain active at all times.
 
-![WebSlate with Suspension Prevention circled](../../media/webview-developer-guide/WebSlate-Prevent-Suspension.png)
+  ![WebSlate with Suspension Prevention circled](../../media/webview-developer-guide/WebSlate-Prevent-Suspension.png)
 
 - Since WebSlates don't have any external navigation UI by default, the best practice is to only load custom URLs, where the site navigation is cyclic and can be done inside the page. This can be done with a navigation sidebar, or links to a hub page, for example.
 
