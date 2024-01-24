@@ -117,7 +117,7 @@ add the *Sphere Terrace* in Chapter 3 to the GroundCollision layer.
 1. In the **Inspector**, select the **Layer** drop-down and then choose
     **GroundCollision**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image025.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/514-ground-collision-layer.png)
 
 You don't have to add the other walkable GameObjects to the GroundCollision layer---we've already done it for you.
 
