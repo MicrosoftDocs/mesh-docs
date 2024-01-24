@@ -3,7 +3,7 @@ title: Getting started with 3D models
 description: Get a comprehensive overview of 3D modeling options for your Mesh experience.
 author: vtieto    
 ms.author: vinnietieto
-ms.date: 1/19/2024
+ms.date: 1/23/2024
 ms.topic: article
 keywords: 3D, 3D models, modeling, exporting, importing
 ---
@@ -16,23 +16,23 @@ If you want your Mesh experience to be rich in content, you'll probably want to 
 
 For general best practices on preparing your own 3D models for use in a range of Microsoft apps including Mesh, see Microsoft's [real-time 3D model conversion and optimization guide](/dynamics365/mixed-reality/import-tool/best-practices). 
 
-If you're looking for other tools to post-process 3D models, you can optimize any glTF 2.0 model using the [Windows Mixed Reality Asset Converter](https://github.com/microsoft/glTF-Toolkit) available on GitHub. This toolkit includes a command line tool that uses these steps in sequence in order to convert a glTF 2.0 core asset for use in the Windows Mixed Reality home.
+If you're looking for other tools to post-process 3D models, you can optimize any glTF 2.0 model using the [Windows Mixed Reality Asset Converter](https://github.com/microsoft/glTF-Toolkit) available on GitHub. This toolkit includes a command line tool that uses these steps in sequence in order to convert a glTF 2.0 core asset for use in the Windows Mixed Reality home. We also recommend [this Unity plugin](https://github.com/KhronosGroup/UnityGLTF); it's maintained by the creators of glTF.
 
 Once your models are in your project, you'll want to ensure that the project as a whole will meet your performance expectations. We recommend that you regularly use the [Content Performance Analyzer](../debug-and-optimize-performance/cpa.md) (CPA) tool to keep track of your project statistics. 
 
-## For Unity Developers: Mixed Reality Toolkit and Asset Store
-
-If you're a Unity developer and need objects that you can use for spatial interaction and UI, you can download Microsoft's Mixed Reality Toolkit (MRTK) and gain access to a wide range of objects including bounding boxes, reusable buttons, hand menus, slates, sliders and more.
-
-![An illustration of some of the 3D objects found in the Mixed Reality Toolkit.](../../media/3d-design-performance-guide/007-mrtk-objects.png)
-
-If you're new to MRTK, [download the MRTK Examples Hub app](/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab) and have a look around.
+## Unity Asset Store
 
 The [Unity Asset Store](https://assetstore.unity.com/3d) is a great place to find assets that you can quickly integrate into your project. Their inventory is massive and they claim to have over 11,000 five-star assets so there's a good chance you can find what you need or something close. It's worth taking a look, especially when you consider that many of the assets are free.
 
 ## Pre-made Assets
 
 There are numerous Web sites that offer pre-made 3D and CAD (Computer-Aided Design) models and animations at reasonable or no cost. Some of the more popular ones are:
+
+Microsoft Paint3D:
+
+- [Install](https://apps.microsoft.com/detail/9NBLGGH5FV99?launch=true&mode=full&hl=en-us&gl=us&referrer=bingwebsearch&ocid=bingwebsearch).
+
+- [Loading and working with models](https://support.microsoft.com/en-au/topic/using-objects-in-paint-3d-3c50155c-db04-42e4-b600-3d97db8184b2).
 
 [Sketchfab](https://sketchfab.com/tags/hololens)
 
@@ -47,6 +47,10 @@ There are numerous Web sites that offer pre-made 3D and CAD (Computer-Aided Desi
 [Blender Market](https://www.blendermarket.com/) (Learn more about the Blender modeling tool below)
 
 [3DExport](https://3dexport.com/)
+
+You might also want to consider "kitbashing", where you download a "kit" of pre-made 3D parts. This allows you to assemble a complex model without the need for advanced modeling skills. Note that in many cases the 3D parts won't have UV maps set up--you'll have to take care of that part. You can find many kits here:
+
+[www.artstation.com](https://www.artstation.com/marketplace/game-dev/resources/3d-models/props/kitbash?page=2)
 
 ## Make your own 3D Models
 
