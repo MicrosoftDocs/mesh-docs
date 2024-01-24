@@ -4,20 +4,24 @@ description: Various help guides and FAQ answers regarding Mesh events.
 ms.service: mesh
 author: qianw211
 ms.author: qianwen
-ms.date: 10/12/2023
+ms.date: 1/22/2023
 ms.topic: Troubleshooting
-keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, license requirements, licensing, permissions, Oculus, Quest, download, ID, Meta ID, collection, environments, templates, sharding, provisioning, audio, spatial audio, error messages
+keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
 ---
 
 # Troubleshooting & FAQ
-
-## Frequently asked questions
 
 ## What are the license requirements for immersive spaces in Mesh?
 
 [!INCLUDE [The include file for the license requirements in Mesh](../Includes/license-requirements-for-Mesh.md)]
 
-### What if I limit user permissions with corporate policies?
+## What are the license requirements for Immersive spaces in Teams?
+
+[!INCLUDE [The include file for license reqs for immersive spaces in Teams](../Includes/license-requirements-for-immersive-spaces-in-teams.md)]
+
+## Frequently asked questions
+
+### What if I limit user permissions with corporate policies
 
 If you do not *allow* users with Teams and Office licenses to create Groups, Sharepoint/OneDrive sites, or use Mailbox/Calendar, the user may notice the following:
 
@@ -41,17 +45,13 @@ All M365 Groups created are normal M365 groups. A unique identifier is added to 
 
 ### Can we script or automate the creation of an M365 Group for use with Mesh?
 
-We currently don't support this feature.  
+We currently do not support this feature.  
 
-## What are the license requirements for Immersive spaces in Teams?
-
-[!INCLUDE [The include file for license reqs for immersive spaces in Teams](../Includes/license-requirements-for-immersive-spaces-in-teams.md)]
-
-## What are the data handling standards for Mesh?
+### What are the data handling standards for Mesh?
 
 Mesh is a part of M365, and it operates within the [M365 compliance framework](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview), including with respect to security and privacy commitments.
 
-## How to download Mesh on Quest 2 via App Lab
+### How to download Mesh on Quest 2 via App Lab
 
 Microsoft Mesh for Meta Quest devices is available through AppLab.
 
@@ -209,22 +209,6 @@ The data should be your version of the following:
 - **Trace ID:**
 - **Date:**
 
-**I recently created an environment collection and can't create environments or templates yet. What's causing this?**
-
-The M365 backend takes a certain amount of time to fully initialize every required dependency for content creation. This can result in your newly created collection not being available yet when you try to create an environment with the Mesh Uploader or create a template in the Mesh app or Mesh on the web. For example, the OneDrive backend not being fully initialized yet would prevent environment or template creation, but eventually it will resolve. For newly created collections, you can monitor progress by navigating to the **Collections** page in Mesh on the web and clicking the **View details** button for your collection.
-
-![A screen shot of the Mesh on the web Collections page with the View details button highlighted.](media/001-collections-view-details.png)
-
-Environment collections that are still initializing will show the spinner "progress" animation and status message as shown here:
-
-![A screen shot of the message stating that the collection was successfully created.](media/002-collection-creation-progress-spinner.png)
-
-**I was recently added as a member to a collection and can't create environments or templates yet.**
-
-Unfortunately, there's no easy way for you to track your permission sync progress. We estimate that this process can take up to 30 minutes, so we recommend that you try again after that period of time. This might require several attempts since the precise waiting period isn't known. **Tip**: This is related to the underlying M365 group permissions/SharePoint.
-
-[Learn more about setting up your organization and provisioning your tenant](../Setup/Content/preparing-your-organization.md#consider-which-tenant-to-provision-for-mesh).
-
 ### Audio setup in Mesh FAQ
 
 #### Which audio devices work best in Mesh?
@@ -271,27 +255,79 @@ For advanced audio settings, you can adjust:
 
 Incoming Voices:* You can adjust the loudness of participant activity around you.
 
+#### What do I do if I can't hear audio from other participants in immersive space in Mesh?
+
+This can be fixed by switching off the **Exclusive mode** for your bluetooth headphones. To turn off the **Exclusive mode** for your headphones, go to **Settings > System > Sound**.  Select **Advanced > More sound settings**.
+
+![A screenshot of the System > Sound settings](media/system-sound.png)
+
+In the **Sound** dialog box, select **Headset Earphone > Properties**.
+
+![A screenshot of the Sound dialog](media/sound-properties.png)
+
+In **Headset Earphone Properties** dialogbox, select the **Advanced** tab. Uncheck **Allow applications to take exclusive control of this device**, and then click **Apply**.
+
+![A screenshot of the Headset Earphone Properties dialog](media/headset-properties.png)
+
 ## Mesh error messages
 
-#### You don't have permission to enter this space.
+#### Join space from different tenant than the meeting owner is not allowed. Please use a different account to join this space.
 
-You don't have permission to enter this room as the event host. 
+This error means that you're joining an event with a diffrent tenant ID from that of the event organizer. Please check with your event organizer and sign into Mesh from the correct tenant ID.
 
 #### You have already joined this space from another location. Please disconnect and retry.
 
 You have already joined this event from another device. Please disconnect from the other device and try again. 
 
+#### Falied to connect to Mesh session. Please try again later.
+
+This is likely a network setup issue with your organization. See [Work with your organization's security team](/mesh/setup/content/preparing-your-organization#work-with-your-organizations-security-team).
+
+#### Oops! We're having trouble connecting to our services. Please check your internet connection and try again.  If you continue to encounter this issue, contact your IT department and let them know that the network configuration might prevent communication with the relay server."
+
+This is likely a network setup issue with your organization. See [Work with your organization's security team](/mesh/setup/content/preparing-your-organization#work-with-your-organizations-security-team).
+
+#### Oops! We failed to connect. Please check your internet connection and try again. Or: Oops! We failed to connect. Please try again.
+
+This is likely a network setup issue with your organization. See [Work with your organization's security team](/mesh/setup/content/preparing-your-organization#work-with-your-organizations-security-team).
+
+#### The space {0} does not currently support the {1} endpoint, try using another device.
+
+For supported devices to run Mesh, see [Download Mesh apps](/mesh/user-guide/getting-started#download-mesh-apps). Also see [Configure the Environment to build and publish](/mesh/develop/make-your-environment-available/build-and-publish-your-environment#configure-the-environment-for-build-and-publish).
+
+#### Failed to get Teams meeting info from service. Or: Failed to find meeting.
+
+This is likely a network setup issue with your organization. See [Work with your organization's security team](/mesh/setup/content/preparing-your-organization#work-with-your-organizations-security-team).
+
+#### Failed to join the Teams meeting. Please try again later.
+
+This is likely a network setup issue with your organization. See [Work with your organization's security team](/mesh/setup/content/preparing-your-organization#work-with-your-organizations-security-team).
+
+#### Oops! We failed to load the {0} environment. Please try again.
+
+This is likely a network setup issue with your organization. See [Work with your organization's security team](/mesh/setup/content/preparing-your-organization#work-with-your-organizations-security-team).
+
+#### Failed to connect to Mesh service. Please try again later.
+
+This is likely a network setup issue with your organization. See [Work with your organization's security team](/mesh/setup/content/preparing-your-organization#work-with-your-organizations-security-team).
+
+#### The destination you are trying to reach is not available.
+
+This is likely a network setup issue with your organization. See [Work with your organization's security team](/mesh/setup/content/preparing-your-organization#work-with-your-organizations-security-team).
+
+This can also be a generic error message when we don't know what specific error you're hitting. Help us diagnose this problem by using the **Report a Problem** feature in Teams.
+
+#### Cannot join the space since one (or more) people are using an unsupported version of the app. Please ensure you have downloaded the latest version of the software.
+
+To resolve this problem, you'll need to download the latest version of Mesh app for Windows or Quest.  See [Download Mesh apps](/mesh/user-guide/getting-started#download-mesh-apps).
+
+#### You don't have permission to enter this space.
+
+You don't have permission to enter this room as the event host. 
+
 #### This space is full. Please try back later!
 
 Mesh spaces can support up to 16 people. This space is currently at full capacity. 
-
-#### Cannot join the space since one (or more) people are using a different version of the client.
-
-Please make sure all participants are joining the Mesh event with the same version of the Mesh app.
-
-#### Falied to connect to Mesh session. Please try again later.
-
-We cannot connect to Mesh services. This happens sometimes... Please try again.
 
 #### Unable to load the environment. Please try again later.
 
@@ -357,6 +393,4 @@ This error happens when finding a meeting failed.
 
 This error happens when we failed to find space information from service.
 
-#### The destination you are trying to reach is not available.
 
-This is the generic error message you see if we don't know what specific error you're hitting. Help us diagnose this problem by using the **Report a Problem** feature in Teams.

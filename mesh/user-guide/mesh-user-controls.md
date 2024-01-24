@@ -29,27 +29,25 @@ The Dashboard is viewable using the Mesh app on PC or Quest.
 You can look around, walk, run, teleport around, or just sit at the
 table with other avatars. To move around, press the **WASD** keys.
 
-![A infograph that summarizes all the mouse and keyboard keys for moving around](media/mouse-key-board.jpg)
+For details, you can also access the **Control tutorial** from the **Help** menu:
 
-**Other keyboard controls:**
+![A screenshot of the Help > Control tutorial dialog on PC](media/help-control-tutorial-pc.png)
 
-- **Q** to rotate left
-- **E** to rotate right
-- Press and hold on **W, S, A,** or **D** to leave your chair when
-    sitting
-- **V** to toggle between direct view and avatar view (1st and 3rd
-    person views)
+Use **V** to toggle between direct view and avatar view (1st and 3rd     person views)
 
-Here are some keyboard shortcuts for moving around in your event:
+### On Quest
 
-![A screenshot of the Settings dialog showing Keyboard shortcuts](media/settings-dialog-short-cut-keys.png)
+For details on how to move around with your Quest devices, you can access the **Control tutorial** from the **Help** menu.
+
+![A screenshot of the Help > Control tutorial dialog on Quest](media/help-control-tutorial-quest.png)
 
 ## Mesh controls overview
 
-Now that you're in an event, explore the interface to see what controls are available. To the left, we have the **System Menu** with **Dashboard**, **Settings**, **Feedback**, and **Quit Mesh**. The app bar in the middle holds the **Participants**, **Selfie**, and **Reactions** buttons. The **Profile** button in the lower right corner
-holds the **Customize** button for customizing your avatars.
+Now that you're in an event, explore the interface to see what controls are available. To the left, we have the **System Menu** with [**Dashboard**](#mesh-dashboard), [**Settings**](#adjust-settings), [**Feedback**](/mesh/resources/feedback), and **Quit Mesh**. The app bar in the middle holds the [**Participants**](#participants), [**Selfie**](#take-a-photo-or-selfie), [**Hand raise**](#raise-hand-to-speak-to-hosts-and-all-participants), and [**Reactions**](#react-with-emotes) buttons. The [**Profile**](#profile) button in the lower right corner holds the **Customize** button for customizing your avatars.
 
-![A screenshot of the Mesh meeting with App bar information](media/user-controls.png)
+You can also click on [the Nametag and contact card](#nametag-and-contact-card) of other participants to find out more information about them.
+
+![A screeanshot of the Mesh meeting with App bar information](media/user-controls.png)
 
 ### Adjust settings
 

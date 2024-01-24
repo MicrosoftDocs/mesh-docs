@@ -49,12 +49,15 @@ As explained in the article named [Add the Mesh toolkit package](../build-your-b
 1. Select the **Environment collection** drop down, and then select the Collection you
     want to upload your Environment to if it's not already selected.
 
+    > [!NOTE]
+    > If the Environment Collection field shows **No Environment collections available** then we have not found any valid collections for your account. If this is unexpected try refreshing with the **Refresh Environment Colletions** button. Otherwise see [Manage Mesh Collections](../../Setup/Content/manage-mesh-on-web.md) to setup/manage your collections.
+
 1. In the **Capacity** field, enter the capacity for your Environment.
     The maximum is 16.
 
     ![A screenshot of the Mesh Uploader window in the Create Environment tab](../../media/make-your-environment-available/002-uploader-create-logo.png)
 
-1.  Select **Create Asset** to create the Environment that you'll be
+1.  Select **Create Environment** to create the Environment that you'll be
     uploading.
 
 1. You'll receive a confirmation dialogue as shown below. Select

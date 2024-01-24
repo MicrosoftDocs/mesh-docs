@@ -4,7 +4,7 @@ description: Test your Mesh environment using Mesh Emulation Mode in Unity.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/28/2023
+ms.date: 1/19/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, testing, troubleshooting, Mesh emulator, emulator, troubleshooting, debugging, Mesh Emulation Mode, emulation
 ---
@@ -27,7 +27,7 @@ to easily get a first impression of a multi-user scenario.
 **To use Mesh Emulation Mode in your project (or not)**:
 
 1.  Ensure that you have the Mesh toolkit imported.
-1.  Ensure that the scene contains a piece of solid floor below the origin that's set to the *NavMesh* layer.
+1.  Ensure that the scene contains a piece of solid floor below the origin that's set to the *GroundCollision* layer.
 1.  Press the Play button. The toolkit checks to see if a GameObject with "EmulatorSetup" in its name exists at the top level of the **Hierarchy**. If it doesn't, this dialog appears:
 
     ![A screenshot of the Mesh Emulator Setup missing dialog.](../../media/debug-and-optimize/003-emulator-setup-missing-dialog.png)
