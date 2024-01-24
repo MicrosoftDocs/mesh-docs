@@ -46,7 +46,7 @@ To sign up for a trial, please visit either:
 
 These admin-led trials are not available worldwide. They aren't available for Government customers or customers with EDU or FLW SKUs. See the [Mesh Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md) for full licensing requirements.
 
-Based on customer tenant configuration, some customers may be unable to see the Microsoft Mesh trial if searching directly in Microsoft 365 admin center. Following the Microsoft Mesh trial link (AKA.MS LINK) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh) will take those customers directly to the trial location.
+Based on customer tenant configuration, some customers may be unable to see the Microsoft Mesh trial if searching directly in Microsoft 365 admin center. Following the [Microsoft Mesh trial](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh) will take those customers directly to the trial location.
 
 The expiration date appears in the trial subscription details page within the Microsoft 365 admin center. Upon expiration of the trial, the user won't be able to access their content in Microsoft Mesh and will have to reach out to their IT Admin to purchase a paid license for themselves and their business groups.
 
@@ -57,7 +57,6 @@ The expiration date appears in the trial subscription details page within the Mi
 | Microsoft 365 global administrator (or an admin with Billing and License and/or User roles) | Activate the trial and assign licenses                                    | **Yes**                |
 | Mesh Host                                                                                   | Schedule and host Mesh immersive experiences and provide feedback         | **Yes**                |
 | Mesh Attendee                                                                               | Attend and participate in Mesh immersive experiences and provide feedback | **Yes**                |
-
 
 ## Activate a trial
 
