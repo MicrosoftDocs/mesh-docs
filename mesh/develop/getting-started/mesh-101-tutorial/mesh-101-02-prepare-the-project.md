@@ -109,8 +109,8 @@ learn about Mesh Interactables and Mesh Physics.
 For this project, we want our avatar to be able to walk around only on the floors inside the *Sphere Terrace* objects and the floor of a
 platform that's attached to one of the wind turbine generators. For
 these areas to be teleportable, they must be on the *GroundCollision* layer. Let's
-add the *Sphere Terrace* we'll be working with in Chapter 3 to the GroundCollision layer.
 
+add the *Sphere Terrace* in Chapter 3 to the GroundCollision layer.
 
 1. In the **Hierarchy**, expand the **Chapter 3** GameObject.
 
