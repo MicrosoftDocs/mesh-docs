@@ -39,3 +39,4 @@ Consider reaching out to the Mesh TAP participants to bring your ideas to life w
 ## Next steps
 
    > [!div class="nextstepaction"]
+   > [Set up Microsoft Mesh](../Setup/Content/setup-m365-mesh.md)
