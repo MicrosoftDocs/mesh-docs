@@ -95,8 +95,6 @@ If you want to set up reactions to an object's interactions with [Visual Scripti
 - **Hovered/Selected**: Whether or not to highlight the object if it's highlighted or selected.
 - **Highlight Mechanism**
 
-
-
     - Menu item 1: **Shader Properties**
         - **Highlight Color**: The color to set the material's color properties when the object is highlighted.
         - **Highlight Transition Duration**: The amount of time to fade the highlight in/out when transitioning.
@@ -105,17 +103,17 @@ If you want to set up reactions to an object's interactions with [Visual Scripti
 
     - Menu item 2: **Mesh Outline**: Adds an automatic outline of the specified color/width to objects.
         
-        - **Highlight Color**: TBD
-        - **Highlight Transition Duration**: TBD
-        - **Highlight Outline Width**: TBD
-        - **Custom Outline Material**: TBD
-        - **Custom Stencil Write Material**: TBD
-        - **Outline Exclusion Mode**: TBD
+        - **Highlight Color**: The color of the outline.
+        - **Highlight Transition Duration**: The amount of time to fade the outline in/out when transitioning.
+        - **Highlight Outline Width**: How thick (in meters) should the outline be. Overrides the "Extrusion Value" in the Graphics Tools/Standard material.
+        - **Custom Outline Material**: The material used to render the outline.
+        - **Custom Stencil Write Material**: The material used write a value to the stencil buffer
+        - **Outline Exclusion Mode**: None / Tag / Name Starts With / Name contains.
 
     - Menu item 3: **Inner Glow**: Applies a highlight with a glow effect using the given properties.
 
-        - **Highlight Color**: TBD
-        - **Highlight Transition Duration**: TBD
+        - **Highlight Color**: The color of the inner glow.
+        - **Highlight Transition Duration**: The amount of time to fade the inner glow in/out when transitioning
         - **Custom highlight material**: Override option specific to this object to set the material used for the glow. If this isn't set, the default material from the settings asset will be used.
         -  **Exclusion string:** If this is set then any Game Object with a name containing the exclusion string will be excluded from the highlight.
 
