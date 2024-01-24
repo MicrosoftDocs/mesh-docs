@@ -3,7 +3,7 @@ title: Set up your scene
 description: Learn how to set up a scene in Unity for Mesh development.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 11/1/2023
+ms.date: 1/19/2024
 ms.service: mesh
 ms.topic: How to
 keywords: Microsoft Mesh, Unity, getting started, Unity, scene, teleportation, navmesh, travel point, travelgroup, player movement
@@ -40,7 +40,7 @@ In order for a scene to support teleportation, teleportable surfaces (for exampl
 Be cautious of low ceilings or tunnels; these could potentially affect player grounding and teleportation.  For example, player physics or the teleport arc may intersect or interact with the collider above them. There should be a small buffer of space above the player's head. The minimum height from ground to roof is roughly 3m (~2m player height + ~1m buffer).
 
 - It must have some type of Collider attached (Mesh Collider or Box Collider, for example).  
-- Its Layer must be set to Navmesh.
+- Its Layer must be set to GroundCollision.
 
 ## Add a TravelPoint
 
