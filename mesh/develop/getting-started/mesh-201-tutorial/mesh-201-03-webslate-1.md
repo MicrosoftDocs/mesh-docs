@@ -96,7 +96,8 @@ We have a node in the script graph set up for this--**Get Component in Children*
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/022-drag-slate-object.png)
 
-1. Drag a connector from the output control port of the **Get Component in Children** node and create a new **Web Slate: Load HTML Asset** node. In the Fuzzy Finder, search for "Web Slate: Load HTML Content (Html Content). **Note** that there are two nodes with very similar names. 
+1. Click and hold on the Control Output port of the **Get Component in Children** node, and then release the mouse button. This opens the Fuzzy Finder. **WARNING**: Once you open the Fuzzy Finder, don't click anywhere outside of the Unity interface. This closes the Fuzzy Finder and causes unpredictable behavior in the Script Graph.
+1. In the Fuzzy Finder, search for "Web Slate: Load HTML Content (Html Content)" and then select it. **Note** that there are two nodes with very similar names. 
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/023-load-html-content.png)
 
@@ -104,11 +105,11 @@ We have a node in the script graph set up for this--**Get Component in Children*
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/024-node-content-or-asset.png)
 
-1. Drag a connector from the data output port of the **Get Component in Children** node and then connect it to the data input port of the **Load HTML Content** node.
+1. Drag a connector from the Data Output port of the **Get Component in Children** node and then connect it to the Data Input port of the **Load HTML Content** node.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/026-connector-to-html-content.png)
 
-1. We already have the web page we want to load in a **Get Variable** node. Drag a connector from the data output port of the **Get Variable** node and then connect it to the data input port of the **Load HTML Content** node.
+1. We already have the web page we want to load in a **Get Variable** node. Drag a connector from the Data Output port of the **Get Variable** node and then connect it to the Data Input port of the **Load HTML Content** node.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/025-connect-variable-node.png)
 
