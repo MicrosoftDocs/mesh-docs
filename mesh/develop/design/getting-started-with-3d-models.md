@@ -48,6 +48,8 @@ Microsoft Paint3D:
 
 [3DExport](https://3dexport.com/)
 
+[3D Warehouse](https://3dwarehouse.sketchup.com/)
+
 You might also want to consider "kitbashing", where you download a "kit" of pre-made 3D parts. This allows you to assemble a complex model without the need for advanced modeling skills. Note that in many cases the 3D parts won't have UV maps set up--you'll have to take care of that part. You can find many kits here:
 
 [www.artstation.com](https://www.artstation.com/marketplace/game-dev/resources/3d-models/props/kitbash?page=2)
@@ -86,11 +88,14 @@ CAD programs also let you build 3D models and may offer you advanced domain-spec
 
 Here are some of the more popular CAD programs. 
 
-[SketchUp](https://www.sketchup.com/)
+[SketchUp](https://www.sketchup.com/): Web-based building app.
 
-[AutoCAD](https://www.autodesk.com/products/autocad/overview?term=1-YEAR&tab=subscription)
+Autodesk:
 
-[Autodesk Inventor](https://www.autodesk.com/products/inventor/overview?term=1-YEAR&tab=subscription)
+- [AutoCAD](https://www.autodesk.com/products/autocad/overview?term=1-YEAR&tab=subscription)  
+- [Inventor](https://www.autodesk.com/products/inventor/overview?term=1-YEAR&tab=subscription)  
+- [Fusion](https://www.autodesk.com/ca-en/products/fusion-360/overview?term=1-YEAR&tab=subscription)
+- [Revit](https://www.autodesk.com/ca-en/products/revit/overview?term=1-YEAR&tab=subscription)
 
 [Siemens NX](https://www.plm.automation.siemens.com/global/en/products/nx/)
 
@@ -98,9 +103,17 @@ Here are some of the more popular CAD programs.
 
 [SolidWorks](https://my.solidworks.com/try-solidworks?mktid=13825&utm_campaign=202007_nam_sw_BINGSWOPT_en_XOP2062_rise_brand_nam_us_exact&utm_medium=cpc&utm_source=bing&utm_content=search&utm_term=1970a52062131481b383c4a1cb107268&gclid=1970a52062131481b383c4a1cb107268&gclsrc=3p.ds&msclkid=1970a52062131481b383c4a1cb107268)
 
+[Tinkercad](https://www.tinkercad.com/): Web-based building app.
+
 ## Scanning a space
 
-[Polycam](https://poly.cam/): Android and Apple iOS app. You can use it for free to export to Blender or to take measurements. There's also a pay verion. 
+[Polycam](https://poly.cam/): Android and Apple iOS app. You can use it for free to export to Blender or to take measurements. There's also a pay version.
+
+More scanning apps:
+
+[Scaniverse](https://scaniverse.com/)
+
+[Metascan](https://metascan.ai/)
 
 ## Learning Resources
 
