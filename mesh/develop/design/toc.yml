@@ -18,7 +18,6 @@ items:
   - name: Working with UV mapping
     href: working-with-uvs.md
     displayName: design
-    displayName: design
   - name: Lighting
     href: lighting.md
     displayName: design
