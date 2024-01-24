@@ -20,11 +20,11 @@ This article describes how to set up and run an IT Admin-led trial pilot program
 
 ## Getting started
 
-There are a few steps to take before initiating your Microsoft Mesh trial. First, we need to ensure your organization is set up to run Microsoft Mesh by:
+There are a few steps to take before initiating your Microsoft Mesh trial to ensure your organization is set up for Microsoft Mesh:
 
-- Visiting the [Preparing your organization for Microsoft Mesh](preparing-your-organization.md) page to accomplish the required tasks and assign the suggested functional roles that may be involved a rollout.
+- Visit the [Preparing your organization for Microsoft Mesh](preparing-your-organization.md) page to accomplish the required tasks and assign the suggested functional roles that may be involved a rollout.
 
-- Completing the prerequisite steps and ensure you have prerequisite licenses, as described in [Guide to set up Microsoft Mesh with M365](setup-m365-mesh.md#prerequisites).
+- Complete the prerequisite steps and ensure you have prerequisite licenses, as described in [Guide to set up Microsoft Mesh with M365](setup-m365-mesh.md#prerequisites).
 
 There are [licensing requirements](../../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-mesh) and [configuration steps](preparing-your-organization.md#preparing-your-organization-for-mesh) needed prior to beginning your Microsoft Mesh trial. The trial start date initiates from the date the trial licenses are activated in Microsoft 365 Admin Center so please ensure your organization is configured to run Microsoft Mesh prior to initiating the trial.
 
