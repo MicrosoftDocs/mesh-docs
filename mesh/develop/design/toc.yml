@@ -18,8 +18,6 @@ items:
   - name: Working with UV mapping
     href: working-with-uvs.md
     displayName: design
-  - name: Model textures
-    href: model-textures.md
     displayName: design
   - name: Lighting
     href: lighting.md
