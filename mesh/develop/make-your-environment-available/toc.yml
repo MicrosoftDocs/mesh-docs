@@ -1,6 +1,8 @@
 items:
   - name: Build and publish your environment
     href: build-and-publish-your-environment.md
+  - name: Understanding your Build and Publish results
+    href: understanding-build-and-publish-results.md
   - name: Test your environment in the Mesh app
     href: test-your-environment.md
   - name: Publish multiple environments
