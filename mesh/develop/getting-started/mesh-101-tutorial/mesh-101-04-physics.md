@@ -11,6 +11,12 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual
 
 # Mesh 101 Tutorial Chapter 4: Move objects and trigger animations with Mesh Interactables and Physics
 
+<br>
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6b52c8c4-06cd-4908-b31b-7f9c3650134f]
+
+<br>
+
 In this chapter, you'll work with a model of the wind farm. You'll learn
 how to use Mesh Interactables and Physics to grab and release Rigid Bodies (in this case,
 wind turbines) and set up an animation trigger using Visual Scripting. You'll wrap things up by

@@ -190,13 +190,27 @@ For further guidance on the WebSlate node in Mesh Apps, see the [Visual scriptin
 
 ## General Tips
 
-- You can place a WebSlate on GameObjects other than a Quad by adding _WebSlate.cs_ as a script component directly to your 3D object of choice. Note that this might result in visual texture stretching, inversion, and/or rotation.
+
+- You can place a WebSlate on GameObjects other than a Quad by adding *WebSlate.cs* as a script component directly to your 3D object of choice and adding *UnlitWebSlate.mat* to MeshRenderer Materials. Note that this might result in visual texture stretching, inversion, and/or rotation.
+
 
 - A WebSlate loads a default URL. You should replace this URL with one that you prefer for each WebSlate in use. The brightness parameter is set to 1.0 (100% of the browser's brightness).
 
 - WebSlates will automatically suspend themselves after being offscreen for too long. If you need to ensure a given slate is always running (such as a livestream or continuous audio playback), then check the "Prevent Suspension" button on the association WebSlate. See below for performance implications.
 
 ![Unity usage of WebSlate](../../media/webview-developer-guide/image004.png)
+
+
+- To size the image URL to the size of the WebSlate, wrap the URL in HTML. Make use of the WebSlate LoadHTML API via visual scripting to render this HTML content onto your WebSlate. Add the constructed HTML to the HTMLContent property. Alternatively, you can use the LoadHTMAsset API and pass the HTML as an asset. Replace the image URL with your image URL.
+
+  Sample HTML with the image URL and Visual scripting graph using the LoadHTML and LoadHTMLAsset API:
+
+  `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width initial-scale=1.0"><title>Microsoft</title></head><body style="margin: 0; height: 100vh; overflow: hidden; background-color: black;"><img src="https://learn.microsoft.com/en-us/mesh/media/webview-developer-guide/ArcadeWebSlate.png" loading="lazy" style="width: 100%; height: 100%;"></body></html>`
+
+  ![A screen shot showing how to set up Visual Scripting to use the LoadHTML API.](../../media/webview-developer-guide/loadHTML-with-image.png)
+
+  ![A screen shot showing how to set up Visual Scripting to use the LoadHTMLAsset API.](../../media/webview-developer-guide/LoadHTMLAsset-with-image.png)
+
 
 ## Performance
 
@@ -208,7 +222,7 @@ For further guidance on the WebSlate node in Mesh Apps, see the [Visual scriptin
 
   - To help save on performance, WebSlates that are offscreen for over 30s are automatically suspended. They quickly resume on coming back onscreen, but this can impact actively-running services on the hosted page. If this is an issue, developers can disable suspension with the prefab's "Prevent Suspension" checkbox. Note that doing so can cause the scene to consume more resources, as these WebSlates remain active at all times.
 
-![WebSlate with Suspension Prevention circled](../../media/webview-developer-guide/WebSlate-Prevent-Suspension.png)
+  ![WebSlate with Suspension Prevention circled](../../media/webview-developer-guide/WebSlate-Prevent-Suspension.png)
 
 - Since WebSlates don't have any external navigation UI by default, the best practice is to only load custom URLs, where the site navigation is cyclic and can be done inside the page. This can be done with a navigation sidebar, or links to a hub page, for example.
 
@@ -265,6 +279,12 @@ Clicking on this asset will give you the list of extra domains you visited beyon
 If you already know which domains you'll need, you can manually add them to the WebSlate by expanding the "Allowed Domains" drop-down and adding your supplemental domains to the list in the Unity GUI.
 
 ![Manually adding allowed domains with the plus button](../../media/webview-developer-guide/allowed-domains-manual.png)
+
+## Live streams powered by WebSlate
+
+To accomplish this, integrate the WebSlate Prefab in your environment and provide the livestream URL. In the case where the livestream URL isn't available beforehand, you could utilize a URL redirection service to generate a URL and provide that to the WebSlate. This approach provides the flexibility to update the redirection URL at the last moment without needing to re-publish the large environment with the livestream URL. Ensure that you select the 'Prevent Suspension' option during the WebSlate setup to prevent it from suspending after 30 seconds if someone isn't actively viewing the WebSlate. WebSlates don't require configuration with the Host Tools, so host-less events can be created and serve as drop-in spaces with meaningful content.
+
+![A screen shot of a Mesh event with attendees watching a live stream of the Microsoft Ignite event.](../../media/webview-developer-guide/ignite-livestream.png)
 
 ## Limitations and Known Issues
 
