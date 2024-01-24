@@ -11,11 +11,23 @@ keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 
 # Active known issues - Mesh toolkit
 
-## Version 23.15 (Preview)
+## Version 23.15
 
 * The embedded videos show as black on Quest 2. (24096)
 
     *Workaround:*  If you run into an issue where videos display and behave as expected on PC but not on Quest, add the video script to the video player.
+
+### Events
+
+* You may not able to access **host tools** in an event template or customization session. Here are the steps to reproduce this issue: (33738)
+
+    * Open your project in the Unity editor;
+
+    * Join a customization session or event template;
+
+    * You'll find no **host tools** available;
+
+    * Add a screenshare, and you won't be able to access **host tools* to start the screenshare for validation.
 
 ### WebSlate
 
