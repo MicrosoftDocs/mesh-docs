@@ -137,7 +137,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * Sometimes the Uploader would hit a `UserInteractionNeeded` exception when authenticating the user. We now mitigate this problem when it occurs by delegating the user to a Web Browser based authentication.
 
-* Renamed some layers - details to come.
+* Renamed some layers, see [Configuring for avatar movement and teleportation](/mesh/develop/build-your-basic-environment/configuring-for-avatar-movement-and-teleportation).
 
 * Moved the setting from `RequireNavMeshLayer` to `RequireGroundCollisionLayer`.
 
