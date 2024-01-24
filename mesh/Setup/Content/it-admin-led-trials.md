@@ -79,7 +79,7 @@ During the Mesh trial, we suggest you evaluate the following:
 
 - Explore and deploy customized 3D experiences in Microsoft Mesh using the Mesh toolkit available for Unity.
 
-For more adoption and deployment resources, visit our Mesh Adoption page found (LINK TO ADOPTION PAGE)
+For more adoption and deployment resources, visit our Mesh Adoption page found at [Mesh Adoption - Home](https://aka.ms/MeshAdoptionPage)
 
 For more information on setting up Mesh events, please see our Events overview page at [Mesh events overview](../../events-guide/events-overview.md).
 
