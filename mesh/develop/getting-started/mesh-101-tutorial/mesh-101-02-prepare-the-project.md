@@ -4,7 +4,7 @@ description: Learn about adding a few basic features that are necessary for the 
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 12/4/2023
+ms.date: 1/23/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
@@ -104,13 +104,13 @@ learn about Mesh Interactables and Mesh Physics.
 
 ![A screenshot of a computer Description ](../../../media/sample-mesh-101/014-chapter-4-sphere-terrace-v2.png)
 
-### Choose the NavMesh layer
+### Choose the GroundCollision layer
 
-For this project, we want our avatar to be able to walk around only on
-the floors inside the *Sphere Terrace* objects and the floor of a
+For this project, we want our avatar to be able to walk around only on the floors inside the *Sphere Terrace* objects and the floor of a
 platform that's attached to one of the wind turbine generators. For
 these areas to be teleportable, they must be on the *GroundCollision* layer. Let's
 add the *Sphere Terrace* we'll be working with in Chapter 3 to the GroundCollision layer.
+
 
 1. In the **Hierarchy**, expand the **Chapter 3** GameObject.
 
@@ -122,10 +122,9 @@ add the *Sphere Terrace* we'll be working with in Chapter 3 to the GroundCollisi
 1. In the **Inspector**, select the **Layer** drop-down and then choose
     **GroundCollision**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image025.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/514-ground-collision-layer.png)
 
-You don't have to add the other walkable GameObjects to the NavMesh
-layer---we've already done it for you.
+You don't have to add the other walkable GameObjects to the GroundCollision layer---we've already done it for you.
 
 ### Add Mesh Emulation Mode capability
 

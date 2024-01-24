@@ -4,7 +4,7 @@ description: Mesh toolkit active known issues
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 12/11/2023
+ms.date: 1/23/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
@@ -46,9 +46,9 @@ Currently, animating the transforms of more than a couple of objects by setting 
 
 If you switch the focus from Unity to another app while Unity is playing, the Mesh Cloud Scripting Service continues to run, submitting messages to the message queue. When you switch the focus back to Unity, it pauses until it completely drains the queue. If the Mesh Cloud Scripting Service is making lots of frequent state changes and/or you have switched focus away from Unity for a long time, Unity can freeze for some time while this happens.
 
-### If scene doesn't contain at least one collider on a gameObject with 'NavMesh' layer, input in Mesh Browser might not work
+### If scene doesn't contain at least one collider on a gameObject set to the 'GroundCollision' layer, input in Mesh Browser might not work
 
-Changing floor or any platform game object's layer to 'NavMesh' is sufficient.
+Changing floor or any platform game object's layer to 'GroundCollision' is sufficient.
 
 #### Adding multiple lights as children of the same transform  will cause an error
 
