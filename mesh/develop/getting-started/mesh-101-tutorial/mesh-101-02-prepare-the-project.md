@@ -4,12 +4,18 @@ description: Learn about adding a few basic features that are necessary for the 
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 12/4/2023
+ms.date: 1/23/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
 
 # Mesh 101 Tutorial Chapter 2: Prepare the project
+
+<br>
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c6b989b4-6634-4c4d-a1f7-2aa38ab3cd70]
+
+<br>
 
 ## Scenes in the project
 
@@ -80,12 +86,11 @@ Let's turn off some of the icons we don't need to make the view more clear.
 Feel free to move around in the **Scene** window to get familiar with
 the scene's contents. If we zoom out a little, we can see that there are
 a number of wind turbines in our wind farm. Those two white rounded
-items at the bottom of the window are called *Sphere Terraces*.
+items are called *Sphere Terraces*.
 
 ![A screenshot of a computer Description ](../../../media/sample-mesh-101/image013.jpg)
 
-If you navigate to the front of the Sphere Terraces and take a closer
-look, you can see that each Sphere Terrace contains a space inside that
+When viewing the sphere terraces from the front, you can see that each one contains a space inside that
 you'll soon be walking around in.
 
 ![A screenshot of a computer Description ](../../../media/sample-mesh-101/013-sphere-terraces-v2.png)
@@ -99,13 +104,13 @@ learn about Mesh Interactables and Mesh Physics.
 
 ![A screenshot of a computer Description ](../../../media/sample-mesh-101/014-chapter-4-sphere-terrace-v2.png)
 
-### Choose the NavMesh layer
+### Choose the GroundCollision layer
 
-For this project, we want our avatar to be able to walk around only on
-the floors inside the *Sphere Terrace* objects and the floor of a
+For this project, we want our avatar to be able to walk around only on the floors inside the *Sphere Terrace* objects and the floor of a
 platform that's attached to one of the wind turbine generators. For
-these areas to be teleportable, they must be on the *NavMesh* layer. Let's
-add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
+these areas to be teleportable, they must be on the *GroundCollision* layer. Let's
+
+add the *Sphere Terrace* in Chapter 3 to the GroundCollision layer.
 
 1. In the **Hierarchy**, expand the **Chapter 3** GameObject.
 
@@ -115,12 +120,11 @@ add the *Sphere Terrace* in Chapter 3 to the NavMesh layer.
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/402-sphere-terrace.png)
 
 1. In the **Inspector**, select the **Layer** drop-down and then choose
-    **NavMesh**.
+    **GroundCollision**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image025.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/514-ground-collision-layer.png)
 
-You don't have to add the other walkable GameObjects to the NavMesh
-layer---we've already done it for you.
+You don't have to add the other walkable GameObjects to the GroundCollision layer---we've already done it for you.
 
 ### Add Mesh Emulation Mode capability
 
@@ -131,11 +135,11 @@ Let's add Mesh Emulation Mode capability to your project. In this mode, when you
 
     ![A screenshot of the Mesh Emulator Setup missing dialog.](../../../media/sample-mesh-101/499-emulator-setup-missing-dialog.png)
 
-1. Select the first button, **Add working MeshEmulatorSetup prefab.** The **MeshEmulatorSetup [NoUpload]** prefab appears in the **Hierarchy** ...
+1. Select the first button, **Add working MeshEmulatorSetup prefab.** The project goes into Play mode and the **MeshEmulatorSetup [NoUpload]** prefab appears in the **Hierarchy** ...
 
-    ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/500-mesh-emulator-setup-added.png)
+    ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/514-emulator-in-hierarchy.png)
 
-    ... and the project goes into Play Mode. This prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around. By default, the Mesh Emulator is set up to give you two different views in the **Game** window. 
+    This prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around. By default, the Mesh Emulator is set up to give you two different views in the **Game** window. 
  
      ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/507-emulator-double-view.png)
  
@@ -149,6 +153,16 @@ Let's add Mesh Emulation Mode capability to your project. In this mode, when you
 1. Click the Unity Editor Play button. Note that you now have a single view, from the avatar's position, in the **Game** window.
 
     ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../../media/sample-mesh-101/016-playmode-v2.png)
+
+***
+
+**Tip**: You may have noticed that the images above of Unity in Play mode have a blue tint. You can choose to have the Unity UI display a different color tint in Play mode than in Edit mode. This can help you to tell at a glance which mode you're in. To change the Play mode tint:
+
+1. On the menu bar, select **Edit** > **Preferences**.
+1. In the left-side menu, select **Colors**.
+1. Under **General**, click the **Playmode tint** color box and then select the color you want.    
+
+***
 
 1. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Play mode.
 
@@ -171,7 +185,7 @@ reminder of what the Environment looks like.
 **To add the thumbnail camera to the scene and set its view:**
 
 1. In the **Scene** window, adjust the view so that it shows what you
-    want to eventually display in the thumbnail image (the Thumbnail Camera's view will
+    want to display in the thumbnail image (the Thumbnail Camera's view will
     be based on the **Scene** window).
 
 1. Select the "+" drop-down located below the **Hierarchy** tab, and

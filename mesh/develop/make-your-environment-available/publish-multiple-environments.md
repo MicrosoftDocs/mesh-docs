@@ -34,7 +34,7 @@ As explained in the article named [Add the Mesh toolkit package](../build-your-b
 
     ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the DartsRoom Environment.](../../media/make-your-environment-available/011-create-dartsroom-asset-logo.png)
 
-1. Select **Create Asset**.
+1. Select **Create Environment**.
 1. In the **Create Results** window, confirm that the operation was successful and then click the **Close** button. 
 
     The Uploader automatically takes you to the **Update Environment** tab. If you were creating a single Environment, this would be the right place to continue the process. However, in this example, we're creating multiple Environments, which means we have more work to do in the **Create Environment** tab.
@@ -44,14 +44,14 @@ As explained in the article named [Add the Mesh toolkit package](../build-your-b
 
     ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the BilliardsRoom Environment.](../../media/make-your-environment-available/012-create-billiardsroom-asset.png)
 
-1. Select **Create Asset**.
+1. Select **Create Environment**.
 1. In the **Create Results** window, confirm that the operation was successful and then click the **Close** button. 
 1. Select **Create Environment** to return to that tab.
 1. Replace the current information displayed in that tab with the information that applies to the *ChessRoom* Experience.
 
     ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the BilliardsRoom Environment.](../../media/make-your-environment-available/013-create-chessroom-asset-logo.png)
 
-1. Select **Create Asset**.
+1. Select **Create Environment**.
 1. In the **Create Results** window, confirm that the operation was successful and then click the **Close** button. 
 
     You've now created three Experiences--one for each game room. This finishes our work in the **Create Environment** tab. The Uploader moves us to the **Update Environment** tab; we can stay there because this is where we select the correct Scene for each Experience.

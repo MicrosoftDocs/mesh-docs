@@ -167,7 +167,11 @@ about managing feedback, see
 
 [Manage feedback policies in Teams](/microsoftteams/manage-feedback-policies-in-teams)
 
-## Configure Office Apps Policy Service for Mesh
+## Configure service plan or Office Apps Policy Service for Mesh
+
+In order to streamline the admin experience, admins will no longer need to configure Mesh in M365 Apps Admin Center. If you had previously restricted Mesh access to users or groups in your organization via the Mesh policy found in the M365 Apps Admin Center, you will need to switch to restricting access via the Mesh service plan instead in the M365 Admin Center (MAC) **by the end of February, 2024**.
+
+For more information about service plans and OCPS policies, see [Configure access to Mesh using service plans](setup-m365-mesh.md#configure-access-to-mesh-using-service-plans).
 
 You must have a policy set in Office Cloud Policy Service to permit user to access any form of Mesh. Also, OCPS
 lets you enforce policy settings

@@ -10,7 +10,12 @@ items:
   displayName: getting started, basics
 - name: Set up your scene
   href: set-up-your-scene.md 
+- name: Configuring for avatar movement and teleportation
+  href: configuring-for-avatar-movement-and-teleportation.md 
   displayName: getting started, basics
+- name: Optimize as you build
+  href: optimize-as-you-build.md  
+  displayName: getting started, basics, optimizing, performance 
 - name: Environment construction tips
   href: environment-construction-tips.md 
   displayName: getting started, basics, Unity, trademarks
