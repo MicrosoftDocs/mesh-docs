@@ -181,11 +181,14 @@ If you want to set up reactions to an object's interactions with [Visual Scripti
 - **Throw Hand Pose:**  
     - **Hand Pose Shape:** The hand pose shape to put the avatar's hand into when the throw is released  
     - **Hand Pose Size:** Size of the hand pose from 0 – 1.
-- **VR Min Throw Velocity:** The minimum velocity to throw an object. This is only used on Quest.
-- **VR Max Throw Velocity:** The maximum velocity to throw an object. This is the velocity value used on PC. On Quest the velocity will be scaled based on the user's physical arm movement.
+- **VR Min Throw Velocity:** The minimum velocity to apply to an object when thrown on the Quest.
+- **VR Max Throw Velocity:** The maximum velocity to apply to an object when thrown on Quest. This is the velocity value used on PC. On Quest the velocity will be scaled based on the user's physical arm movement.
+
+On the Quest, the velocity applied when an object is thrown will be scaled between the minimum and maximum values using the real velocity of the user's arm movement.
+
 - **2D Settings**
-    - **2D Throw Velocity**: TBD
-    - **Throw Direction Offset**: TBD
+    - **2D Throw Velocity**: The velocity to apply to an object when it's thrown on PC.
+    - **Throw Direction Offset**: A directional offset to apply to an object when it's thrown on PC.
 - **Throw Target Poses:** A list of target poses used to place the avatar's hand when an item is thrown. The position and rotation offsets are relative to the position of the avatar's hand when the throw was initiated. The avatar will interpolate using the animation curve from the previous pose to the current one sequentially down the list for the amount of time defined in interpolation time. The object will be released and the throw hand pose will be used at the second to last target.
 
 ## Visual Scripting
