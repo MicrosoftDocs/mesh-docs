@@ -108,7 +108,7 @@ If you want to set up reactions to an object's interactions with [Visual Scripti
         - **Highlight Outline Width**: How thick (in meters) should the outline be. Overrides the "Extrusion Value" in the Graphics Tools/Standard material.
         - **Custom Outline Material**: The material used to render the outline.
         - **Custom Stencil Write Material**: The material used write a value to the stencil buffer
-        - **Outline Exclusion Mode**: None / Tag / Name Starts With / Name contains.
+        - **Outline Exclusion Mode**: Option to filter out renderers you don’t want included in the outline.
 
     - Menu item 3: **Inner Glow**: Applies a highlight with a glow effect using the given properties.
 
