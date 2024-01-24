@@ -13,9 +13,6 @@ keywords: Microsoft Mesh, M365, OCPS, Immersive spaces, Avatars, getting started
 
 # Set up Microsoft Mesh
 
-> [!IMPORTANT]
-> In order to streamline the admin experience, admins will no longer need to configure Mesh in M365 Apps Admin Center. If you had previously restricted Mesh access to users or groups in your organization via the Mesh policy found in the M365 Apps Admin Center, you will need to switch to restricting access via the Mesh service plan instead in the M365 Admin Center (MAC).
-
 In the Microsoft 365 Apps Admin Center admins can manage access to Mesh experiences. This covers access to the following experiences:
 
 - Mesh app on PC
@@ -38,11 +35,14 @@ For help, see the [immersive spaces in mesh licensing Troubleshooting and FAQs](
 
 ## Configure access to Mesh using service plans
 
+> [!IMPORTANT]
+> In order to streamline the admin experience, admins will no longer need to configure Mesh in M365 Apps Admin Center. If you had previously restricted Mesh access to users or groups in your organization via the Mesh policy found in the M365 Apps Admin Center, you will need to switch to restricting access via the Mesh service plan instead in the M365 Admin Center (MAC) by the end of February, 2024.
+
 1. Sign into [M365 Admin Center](https://admin.microsoft.com/) with an admin account with at least Global, License, or User level permissions and open the left navigation panel to the Users section.
 
     :::image type="content" source="../../media/m365-setup-guide/Left-nav-panel.png" alt-text="Screenshot of left nav panel in M365 admin center.":::
 
-1. Select a user or group and select **Licenses and apps** to manage the user's or groups' active licenses and service plans.
+1. Select a user or group and select **Licenses and apps** to manage the user's or group's active licenses and service plans.
 
     :::image type="content" source="../../media/m365-setup-guide/licenses-apps-selection.png" alt-text="Screenshot of licenses and apps section in M365 Admin Center.":::
 
