@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, Unity, getting started, Unity, scene, teleportation, n
 
 The operations below are required for new or existing projects.
 
-## Guidelines for Player Movement
+## Guidelines for player movement
 
 The scene should have Colliders for the player to walk and teleport on. In general, a low poly MeshCollider that tightly fits the visual geometry with some rounding on the corners will produce the best results. Box Colliders work great for trivial scenarios, but can result in a number of problems such as causing the player to get stuck on the corners or defeat step height limits.  
 
@@ -26,16 +26,16 @@ The scene should have Colliders for the player to walk and teleport on. In gener
 **Suggestions for best results:**
 - Rounded corners help smooth out player movement and prevent the player from getting stuck.  
 - To block player movement, use steep slopes or a height much larger than the maximum step height.
-- Use a Capsule Collider or similar rounded shape on objects or areas the player shouldn't walk on. These shapes are unwalkable due to the slope and will cause the player to slide off them. Do not add to the NavMesh layer.
+- Use a Capsule Collider or similar rounded shape on objects or areas the player shouldn't walk on. These shapes are unwalkable due to the slope and will cause the player to slide off them. Do not add to the GroundCollision layer.
 - Align the collision surfaces with the visual surfaces that the player will walk on. This is important in order to avoid any issues with the player's position relative to the visual surface (prevent floating or clipping).  
 
-## Supporting Teleportation
+## Supporting teleportation
 
-In order for a scene to support teleportation, teleportable surfaces (for example, the floor or the ground) must have colliders on the NavMesh layer. In general, any object the player is allowed to walk on should be on the NavMesh layer, unless there is an intentional reason to make it non-teleportable. Visual geometry isn't teleportable and shouldn't be on the NavMesh layer; only Colliders can be on the NavMesh layer. Improper or inconsistent layering can cause undesirable effects when teleporting. 
+In order for a scene to support teleportation, teleportable surfaces (for example, the floor or the ground) must have colliders on the GroundCollision layer. In general, any object the player is allowed to walk on should be on the GroundCollision layer, unless there is an intentional reason to make it non-teleportable. Visual geometry isn't teleportable and shouldn't be on the GroundCollision layer; only Colliders can be on the GroundCollision layer. Improper or inconsistent layering can cause undesirable effects when teleporting. 
 
 **A teleportable surface must meet the following conditions:**  
 - It must have some type of Collider attached (Mesh Collider or Box Collider, for example).  
-- Its **Layer** must be set to NavMesh.  
+- Its **Layer** must be set to GroundCollision.  
 
 Be cautious of low ceilings or tunnels; these could potentially affect player grounding and teleportation.  For example, player physics or the teleport arc may intersect or interact with the collider above them. There should be a small buffer of space above the player's head. The minimum height from ground to roof is roughly 3m (~2m player height + ~1m buffer).
 
@@ -80,7 +80,7 @@ up to you. The example below is taken from our [Mesh 101 tutorial](../../develop
 
 ![A screenshot of a computer Description automatically generated](../../media/get-started-developing-mesh/001-thumbnail-example.png)
 
-## Next Steps
+## Next steps
 
 > [!div class="nextstepaction"]
-> [Environment construction tips](./environment-construction-tips.md)
+> [Optimize as you build](./optimize-as-you-build.md)

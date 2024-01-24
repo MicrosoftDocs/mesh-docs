@@ -7,17 +7,16 @@ items:
   - name: Unity prefabs
     href: unity-prefabs.md
     displayName: design
-  - name: Creating models
-    href: creating-models.md
+  - name: Getting started with 3D models
+    href: getting-started-with-3d-models.md  
+  - name: 3D modeling tips
+    href: 3d-modeling-tips.md
     displayName: design
   - name: Exporting models and Environments
     href: exporting-models-and-environments.md
     displayName: design
   - name: Working with UV mapping
     href: working-with-uvs.md
-    displayName: design
-  - name: Model textures
-    href: model-textures.md
     displayName: design
   - name: Lighting
     href: lighting.md
