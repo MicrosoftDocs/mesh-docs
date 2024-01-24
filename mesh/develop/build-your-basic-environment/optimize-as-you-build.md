@@ -25,7 +25,7 @@ As you start your Mesh project, it's important to keep in mind the things you ca
 
 - Within the Mesh app, using the Performance Profiler to view your Mesh project's frame rate, scene complexity, and memory usage across all platforms. The Performance Profiler is also accessible within the Mesh toolkit.
 
-![A screenshot of the Performance Profiler.](../../media/build-your-basic-environment/005-cpa-analyzer-with-background.png)
+![A screenshot of the Performance Profiler.](../../media/build-your-basic-environment/006-performance-profiler.png)
 
 You can also use these tools which are useful for profiling content in Unity:
 
