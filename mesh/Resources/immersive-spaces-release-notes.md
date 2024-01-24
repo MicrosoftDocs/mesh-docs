@@ -4,20 +4,32 @@ description: Immersive spaces in Teams release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 12/18/2023
+ms.date: 1/17/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
 
 # Immersive spaces in Teams release notes
 
-**Release notes and known issues for the Immersive spaces in Microsoft Teams on PC & Quest 2**
+**Release notes for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
-## Version 5.2315.0 (Preview)
+## Version 5.2401.0 (Preview)
+
+### What's new
+
+* Now Mesh uses the same audio device settings as Teams, where previously Mesh uses the OS audio device settings which often led to confusion and broken experiences for users.
+
+## Version 5.2315.0
+
+### What's new
+
+* The Meeting zone is now called the Teams screen share area. For more information, please see the immersive spaces documentation on [Spatial audio in Microsoft Teams meetings](https://support.microsoft.com/en-us/office/spatial-audio-in-microsoft-teams-meetings-547b5f81-1825-4ee1-a1cf-f02e12db4fdb?preview=true).
 
 ### Resolved product issues
 
 The following product issues have been fixed for this release:
+
+* Pressing Mesh buttons + the **Enter** key on the keypad produces no action. The same **Enter** key on the main keyboard selects the button and executes the associated action. (26462)
 
 * If a user declines to give Mesh access to their microphone upon first launch in immersive spaces, they'll be completely muted without additional notification. 
 
