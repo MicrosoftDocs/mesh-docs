@@ -4,7 +4,7 @@ description: Learn how to turn your environment into an Asset and then publish i
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 12/6/2023
+ms.date: 1/11/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, environment, build, publish, build and publish, uploader, Mesh uploader, thumbnail
 ---
@@ -48,6 +48,9 @@ As explained in the article named [Add the Mesh toolkit package](../build-your-b
 
 1. Select the **Environment collection** drop down, and then select the Collection you
     want to upload your Environment to if it's not already selected.
+
+    > [!NOTE]
+    > If the Environment Collection field shows **No Environment collections available** then we have not found any valid collections for your account. If this is unexpected try refreshing with the **Refresh Environment Colletions** button. Otherwise see [Manage Mesh Collections](../../Setup/Content/manage-mesh-on-web.md) to setup/manage your collections.
 
 1. In the **Capacity** field, enter the capacity for your Environment.
     The maximum is 16.
@@ -104,17 +107,14 @@ As explained in the article named [Add the Mesh toolkit package](../build-your-b
 
     ![A screen shot of the lower part of the Mesh Uploader window highlighting the Build & Publish button](../../media/make-your-environment-available/image024.jpg)
 
-1.  If the Environment builds and uploads successfully, the **Build and
-    Upload Results** dialog appears and confirms the results.
+1.  If the Environment builds and publishes successfully, the **Build and Upload Results** window appears and confirms the results.
 
     ![A screenshot of the dialog shown with the sucessful results of the build and upload operation](../../media/make-your-environment-available/005-build-succeeded.png)
 
-    If the build and upload process fails, this is confirmed in the **Build and Upload** Results dialog:
-
-    ![A screenshot of the dialog shown with the failed results of the build and upload operation](../../media/make-your-environment-available/006-build-failed.png)
+    However, you may get **Warning** or even **Failed** indicators in this window. To learn more about what these mean and how to make needed corrections, see the article named [Understanding your Build and Publish results](./understanding-build-and-publish-results.md).
 
     > [!TIP]
-    > If a build and upload process fails, look in the **Console** for clues about what might have happened.
+    > If a build and publish process fails, look in the **Console** for clues about what might have happened.
 
     > [!IMPORTANT]
     > Every time you update the Environment, it can affect future events that reference this Environment.
