@@ -17,7 +17,7 @@ As you start your Mesh project, it's important to keep in mind the things you ca
 
 - Having a performance budget that aligns with the platforms you're targeting. You can build for PC, Quest/Android, or both. If you build for both, you'll need to optimize for Quest/Android.
 
-- Ensuring that any 3D models you import into your project are constructed appropriately for high performance.
+- Ensuring that any 3D models, materials, and shaders you import into your project are constructed appropriately for real-time high-performance scenarios.
 
 - As you build, regularly checking with the [Content Performance Analyzer](../debug-and-optimize-performance/cpa.md) (CPA) tool to view a range of helpful performance-related statistics about your project.
 
