@@ -11,6 +11,9 @@ items:
 - name: Set up your scene
   href: set-up-your-scene.md 
   displayName: getting started, basics
+- name: Optimize as you build
+  href: optimize-as-you-build.md  
+  displayName: getting started, basics, optimizing, performance 
 - name: Environment construction tips
   href: environment-construction-tips.md 
   displayName: getting started, basics, Unity, trademarks
