@@ -4,15 +4,14 @@ description: Currently active known issues and limitations for Immersive spaces 
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 12/11/2023
+ms.date: 1/17/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
 
 # Active known issues and limitations - Immersive Spaces in Teams
 
-## Version 5.2315.0 (Preview)
-
+## Version 5.2315.0
 ### Audio
 
 1. Users who are experiencing poor network connection may hear audio quality issues as a result.  There is currently no warning message for poor network quality. We'll be implementing this soon, as well as working continuously to improve overall audio quality.
@@ -52,12 +51,14 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 ### Current limitations
 
+1. If a user starts a meeting from a Teams Channel by clicking **Meet Now**, sometimes they will hit an **Unable to join** message when trying to go into immersive space. This could also happen to other meeting participants in the same Teams channel trying to join the immersive space from their Teams meeting. (30916)
+
 1. On Quest devices: users who remain idle for some time will be ejected out of an event. (21976)
 
 1. There is a room size limit of 16 persons for immersive users, while there’s no limit on the number of participants in a 2D Teams meeting. 
 
 1. Content limitations: PowerPoint Live and Whiteboard are not supported. If a meeting participant is using Powerpoint Live, it will not display on the immersive space stage. Same for whiteboard.
-1. If a meeting is being recorded, only the audio of immersive participants in the meeting zone will be recorded. Those holding side conversations outside the meeting zone will not be in the meeting recording.
+1. If a meeting is being recorded, only the audio of immersive participants in the Teams screen share area will be recorded. Those holding side conversations outside the screen share area will not be in the meeting recording.
 1. Mesh immersive space in Teams today can take up to a minute to load. Thank you for your patience while we improve app performance. 
 1. When you share content while already in an immersive space, you will not see your own content on the virtual stage. Other meeting participants will be able to see it on the main stage.
 1. Chat in Quest can’t render images, only text. In addition, texts don’t wrap in both the chat and the feedback form on Quest.
@@ -67,13 +68,17 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 ### Other known issues
 
-1. If a user starts a meeting from a Teams channel as opposed to joining a scheduled meeting, they will not be able to change environments.
+1. If a user starts a meeting from a Teams channel as opposed to joining a scheduled meeting, they won't be able to change environments.
 
 1. On Quest, if you try to rotate the avatar preview in the Avatar Customizer, your field of view will also move.
 
 1. Mesh immersive spaces do not properly support low bandwidth situation: users who are experiencing poor network quality may see problems such as missing avatars and audio glitches. We are actively working on integrating notifications to alert users when they are in this state.
 
-1. Pressing Mesh buttons + the **Enter** key on the keypad produces no action. The same **Enter** key on the main keyboard selects the button and executes the associated action. (26462)
+1. Users may find it hard to figure out how to drop interactable objects. The keys for dropping interactable objects - such as marshmallow sticks in the Lake House environment, are the middle mouse button (scroll wheel) and the space bar. This is communicated via a short pop up that users might overlook. (32968)
+
+1. On Quest, when a user is trying to join an immersive space meeting and is shown a "loading is taking a long time" popup dialog, the user will get kicked out of the immersive meeting with an error. (32893)
+
+1. On Quest, the avatar's level of details (LOD) may seem off or changing depending on the actions an avatar takes such as nodding or looking up and down. (32894)
 
 ## Submit Feedback
  
@@ -89,14 +94,12 @@ This is the preferred method for providing feedback to us.
 
     ![A screenshot of the immersive spaces feedback dialog](media/immersive-spaces-feedback-dialog.png)
 
-#### Provide feedback from Teams
- 
-1. If you're in Microsoft Teams, click on the **Help** icon in the Teams window. 
- 
-2. Select **Report a problem**. 
- 
-3. Under What is this related to? Select Immersive space from the drop-down.
+#### Provide feedback from the Teams menu
 
-    ![A screenshot of the Teams Help menu](media/teams-help-menu.png)
+1. Select **Settings and more ...** next to your profile picture in the upper right corner of Teams, and then select **Help > Give feedback**.
 
-    ![A screenshot of the Teams Report a Problem menu](media/teams-report-a-problem.png)
+    ![A screenshot of the Teams Help menu](media/teams-help.png)
+
+2. In the **Give feedback** dialog box, follow the instructions to enter details about your issue.
+
+    ![A screenshot of the Teams Give feedback dialog box](media/teams-give-feedback.png)

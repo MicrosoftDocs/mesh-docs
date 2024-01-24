@@ -4,16 +4,28 @@ description: Mesh release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 12/11/2023
+ms.date: 1/23/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
 
 # Mesh release notes
 
-**Release notes and known issues for the Immersive spaces in Microsoft Mesh on PC & Quest 2**
+**Release notes for the Immersive spaces in Microsoft Mesh on PC & Quest 2**
 
-## Version 5.2315.0 (Preview)
+## Version 5.2315.0
+
+### What's new
+
+* The new Microsoft Mesh trial license offering is now publicly available for enterprise customers to access Mesh for 6 months! For more information on how to sign up, see [IT admin-led trials for Microsoft Mesh](/mesh/setup/content/it-admin-led-trials). You can also find additional licensing requirements in [Troubleshooting and FAQ](/mesh/resources/mesh-troubleshooting).
+
+* Controls in the **Environment Editor** and the **Control Panel** are now ordered based on relevance or priority, so it's easier for users to find the controls they need.
+
+* If a user joins an event with a different tenant ID from that of the event organizer, we now show the following error dialog: **Join space from different tenant than the meeting owner is not allowed. Please use a different account to join this space.**
+
+* We have improved ambient indicators as to who is megaphoning, broadcasting, or screen sharing.
+
+    ![A screenshot showing the improved ambient indicators](media/ambient-indicators.png)
 
 ### Mesh on the web
 

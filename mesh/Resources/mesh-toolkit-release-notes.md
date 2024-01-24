@@ -4,21 +4,19 @@ description: Mesh toolkit release notes
 ms.service: mesh
 author: qianw211    
 ms.author: qianwen
-ms.date: 12/11/2023
+ms.date: 1/23/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
 
 # Mesh toolkit release notes
 
-**Release notes and known issues for Microsoft Mesh toolkit**
-
 For purposes of this document, there are two categories of users:
 
 * Creators: Technical artist and developers building with the Mesh toolkit
 * IT admins: Managers working in Azure
 
-## Version 23.15 (Preview)
+## Version 24.1 (Preview)
 
 >[!Caution]
 >This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
@@ -34,52 +32,66 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
-| Mesh toolkit package      |   5.2315.0     | 2023-12-11  |
-| Mesh (PC/Quest)   |  5.2315.0       |  2023-12-11  |
+| Mesh toolkit package      |   5.2315.0     | 2023-1-24  |
+| Mesh (PC/Quest)   |  5.2315.0       |  2023-1-24  |
 
 ### What's new
 
-#### Scripting
+#### Toolkit
 
-* Using Timer nodes in subgraphs no longer causes repeated error messages related to `OptimizedTimerUnitUpdateScheduler` to be logged. (31866)
+* The `ContentVersion` has been incremented to 1.24.0: Newly published content will only be visible in the recent Mesh app.
 
-* The visual script graph UI now includes usage notes and helpful hints on Mesh's and Unity's visual script nodes. (25922)
+* Some errors that came from the Mesh services did not have enough information in them. For example, some errors were just reported as "BadRequest" or "BadGateway". We've improved error messages from the service to include more useful details.
 
-* It's no longer necessary to add `Microsoft.Mesh.VisualScripting.xml` to version control. If it has been previously deployed into your Unity project, it can be safely deleted and removed from version control. (25922)
+* Simplified discovery of options by moving the **Settings** in the **Options** tab into the **Project/Mesh Uploader Settings** pane with the other **Uploader** settings.
 
-* In the **Local Script Scope** component, the **Share visual script variables on this GameObject** setting now defaults to being off when a new instance of this component is added to the scene. Existing instances are unaffected. (26551)
+* Improved error handling when thumbnail generation fails.
 
-* The special script nodes injected by Mesh at runtime have significantly improved visuals and handling now (30925):
+* Improved error handling on asset validation.
 
-    * The visual footprint of injected nodes has been reduced to remove visual clutter and to make script flows easier to follow while they're executing. They're now firmly attached to one of the neighboring user-defined nodes.
+* If we fail to create a copy of the asset, the build and publish operation won't proceed.
 
-    * New visuals of injected nodes:
+* Fixed an issue where the **Require Ground Collision Layer** won't have the correct value when changed while a window was open.
 
-        | New visuals | Injected nodes |
-        | -------- | ------- |
-        | ![an image of the profiling visual](media/profiling.png)  | profiling (start of flow)    |
-        | ![an image of the data filtering visual](media/data-filtering.png) | data filtering   |
-        | ![an image of the state tracking visual](media/state-tracking.png)    | state tracking    |
+##### Diagnostics and debug tools are now easier to discover and use in the Mesh Emulator:
 
-    * When the data filtering node blocks data and passes on a `Null` value instead, its icon changes and its tooltip shows diagnostic information on what data is blocked most recently:
+* In the Unity editor, click the **Enter Split Screen** button to enable split-screen mode, which allows you to test and debug multi-user issues. 
 
-        ![an image of the data filter node blocking data showing diagnostic information on what data is blocked most recently](media/blocked-data-forbidden-text.png)
+* In the split-screen mode, click **Add** or **Leave** to add more split-screen clients to the session or to make them leave the session.
 
-    * When you edit script graphs at runtime in the Emulator, injected nodes are now automatically injected and removed as required.
+* Select **Script Stats** to show a panel of real-time visual script performance statistics, such as:
 
-* Script graphs were saved with redundant type and versioning information in some object references. This will not visibly impact user experience. This redundant information is no longer included. (30688)
+    * which visual script flows require the most per-frame time to execute 
+    
+    * which shared properties and variables are updated (and replicated over network) most often 
+    
+    Clicking on an entry brings you straight to the corresponding scene object in the **Hierarchy** panel.
 
-* The **Mesh Visual Scripting Diagnostics** panel now correctly displays diagnostics for all selected `ScriptMachine` components if more than one is selected in the transform hierarchy. Previously, only diagnostics for the first selected ScriptMachine were displayed. If several were selected at the same time, errors were logged to the console panel. (30873)
+* Select **Perf Stats** to show to **Visual Profiler** (only in single-screen mode) to displays real-time CPU and GPU performance statistics for the scene you're running.
 
-* Accessing **Travel Point** methods and properties now works in all cases. Previously, when the **Travel Point** was set up in isolation and not nested in an explicit **Travel Point Group**, and a reference to it was passed to the method or property node from another script node (for example, from a **Get Variable** node), the **Travel Point** reference was incorrectly filtered out at runtime and the method call or property access would fail to work. (31414)
+#### Scripting and physics
 
-#### WebSlate
+* It's now possible to use the **On State Changed** visual script event to observe the transform of a physics body. The event fires whenever the physics body is moved directly on the local client or by a remote client. (31869)
 
-* Added the option to prevent the WebSlate from suspending when users are at a distance, or when it is offscreen. Useful for slates that need to keep running in the background, but can cause performance issues if overused. Normally, to save resources, WebSlates suspend 30 seconds after going offscreen or becoming too small to be useful.
+* During an environment upload, issues detected by the Visual Scripts validation step now log significantly improved diagnostics and extended guidance on how to avoid the reported issues. (34450)
 
-    This option can be seen in Unity's inspector when a WebSlate is selected, as a checkbox on the WebSlate script called **Prevent Suspension**.
+## Version 23.15
 
-#### Uploader
+### Version list and dates
+
+These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
+
+>[!Note]
+>The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh toolkit package, which releases only after the matching Mesh app is available in stores.
+
+| Mesh offering/package   | Version | Date released
+| ----------- | ----------- | ----------- |
+| Mesh toolkit package      |   5.2315.0     | 2023-1-24  |
+| Mesh (PC/Quest)   |  5.2315.0       |  2023-1-24  |
+
+### What's new
+
+#### Toolkit
 
 * The `ContentVersion` has been incremented to 1.22.0. Newly published content will only be visible in recent versions of the Mesh app.
 
@@ -122,6 +134,76 @@ These are the offerings and packages currently available. There may be slight di
 * We cleared a confusing progress bar when Unity reloads assembly during an operation.
 
 * We now prompt the user to re-authenticate if authentication has expired when retrying an operation.
+
+* Sometimes the Uploader would hit a `UserInteractionNeeded` exception when authenticating the user. We now mitigate this problem when it occurs by delegating the user to a Web Browser based authentication.
+
+* Renamed some layers - details to come.
+
+* Moved the setting from `RequireNavMeshLayer` to `RequireGroundCollisionLayer`.
+
+* Fixed failure message in the result dialog for successful publishes.
+
+#### Scripting
+
+* The NavMesh layer is now called the GroundCollision layer. For more information on the uses of the GroundCollision layer, see [Set up your scene > Guidelines for Player Movement & Supporting Teleportation](/mesh/develop/build-your-basic-environment/set-up-your-scene#guidelines-for-player-movement)
+
+* Shared properties and script variables set on dynamic targets, for example, target component instances read from script variables or otherwise deduced at script runtime, now reliably work on all viable targets throughout the scene. (32730)
+
+    Previously, only a subset of viable target instances throughout the scene worked reliably when a target was deduced dynamically during script runtime: this doesn't include target instances that were placed in sibling branches of the transform tree.
+    
+    * anything on the implicit `This` scene object, 
+
+    * anything below it, 
+    
+    * anything on any of its parents 
+    
+    The `This` scene object is the GameObject the `ScriptMachine` executing the visual script is attached to.
+    
+    For example, if you were trying to set a shared property of a `Foo`-type component and you were using a variable to dynamically reference a specific `Foo` instance to turn that property on, this would only have worked reliably for any for the following `Foo` instances:
+
+    * was attached to `This` = the same GameObject as the `ScriptMachine` running the visual script
+
+    * was attached to any parent/ancestor GameObject of `This` in the transform hierarchy
+
+    * was attached to any child/descendant GameObject of This in the transform hierarchy.
+
+* Using Timer nodes in subgraphs no longer causes repeated error messages related to `OptimizedTimerUnitUpdateScheduler` to be logged. (31866)
+
+* The visual script graph UI now includes usage notes and helpful hints on Mesh's and Unity's visual script nodes. (25922)
+
+* It's no longer necessary to add `Microsoft.Mesh.VisualScripting.xml` to version control. If it has been previously deployed into your Unity project, it can be safely deleted and removed from version control. (25922)
+
+* In the **Local Script Scope** component, the **Share visual script variables on this GameObject** setting now defaults to being off when a new instance of this component is added to the scene. Existing instances are unaffected. (26551)
+
+* The special script nodes injected by Mesh at runtime have significantly improved visuals and handling now (30925):
+
+    * The visual footprint of injected nodes has been reduced to remove visual clutter and to make script flows easier to follow while they're executing. They're now firmly attached to one of the neighboring user-defined nodes.
+
+    * New visuals of injected nodes:
+
+        | New visuals | Injected nodes |
+        | -------- | ------- |
+        | ![an image of the profiling visual](media/profiling.png)  | profiling (start of flow)    |
+        | ![an image of the data filtering visual](media/data-filtering.png) | data filtering   |
+        | ![an image of the state tracking visual](media/state-tracking.png)    | state tracking    |
+
+    * When the data filtering node blocks data and passes on a `Null` value instead, its icon changes and its tooltip shows diagnostic information on what data is blocked most recently:
+
+        ![an image of the data filter node blocking data showing diagnostic information on what data is blocked most recently](media/blocked-data-forbidden-text.png)
+
+    * When you edit script graphs at runtime in the Emulator, injected nodes are now automatically injected and removed as required.
+
+* Script graphs were saved with redundant type and versioning information in some object references. This will not visibly impact user experience. This redundant information is no longer included. (30688)
+
+* The **Mesh Visual Scripting Diagnostics** panel now correctly displays diagnostics for all selected `ScriptMachine` components if more than one is selected in the transform hierarchy. Previously, only diagnostics for the first selected ScriptMachine were displayed. If several were selected at the same time, errors were logged to the console panel. (30873)
+
+* Accessing **Travel Point** methods and properties now works in all cases. Previously, when the **Travel Point** was set up in isolation and not nested in an explicit **Travel Point Group**, and a reference to it was passed to the method or property node from another script node (for example, from a **Get Variable** node), the **Travel Point** reference was incorrectly filtered out at runtime and the method call or property access would fail to work. (31414)
+
+#### WebSlate
+
+* Added the option to prevent the WebSlate from suspending when users are at a distance, or when it is offscreen. Useful for slates that need to keep running in the background, but can cause performance issues if overused. Normally, to save resources, WebSlates suspend 30 seconds after going offscreen or becoming too small to be useful.
+
+    This option can be seen in Unity's inspector when a WebSlate is selected, as a checkbox on the WebSlate script called **Prevent Suspension**.
 
 #### Mesh 101 Tutorial
 
