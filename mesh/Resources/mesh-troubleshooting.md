@@ -137,6 +137,14 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 1. Open a support request by following the link [here](https://admin.microsoft.com) (this support link may only be available to M365 admins).
 
+### Why am I'm getting an error when accessing Mesh on Quest?
+
+Mesh on Quest currently doesn't support [Azure Active Directory Conditional Access](/appcenter/general/configuring-aad-conditional-access). If your organization applies Conditional Access policies for managed or unmanaged devices, then you won’t be able to access Mesh on Quest. If a user in your organization attempts to launch Mesh on Quest where conditional access policies are applied, they will receive errors [AADSTS50199](/entra/identity-platform/reference-error-codes) and [AADSTS53003](/entra/identity-platform/reference-error-codes).
+
+### How can I manage Quest VR headsets for my organization?
+
+[Meta Quest for Business](https://forwork.meta.com/quest/business-subscription/) offers user, device, and app management for Meta Quest devices used in the workplace. Quest for Business works with Microsoft Intune to enable you to have a cloud-based unified endpoint management across the broad set of device form factors in your organization.
+
 ### How to get a list of signed-in users to Mesh?
 
 Admins may desire a list of users that have signed in to Mesh. You can use the Microsoft Azure portal get a list of users that have signed-in to Mesh due to the fact that all users sign into Mesh with their Microsoft Entra ID (formerly known as Azure Active Directory).
