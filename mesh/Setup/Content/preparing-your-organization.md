@@ -313,23 +313,15 @@ snapshot][service-tag-download].
 
 For more information about service tags, see the [Azure service tags overview][service-tag].
 
-### Conditional Access
+### Conditional Access & Quest
 
-Conditional access is an important part of a zero-trust approach to
-helping secure your network and resources. As part of zero trust, many
-companies use conditional access features with Azure Active Directory
-and Microsoft Intune to restrict the types of devices that are permitted
-to access company resources, and even the operating system version and
-configuration on those devices; devices that meet the defined profile
-are allowed in, and any other device that is not specified is denied
-access. Meta has released a beta version MDM support for Quest. Each
-company using Mesh in pre-release will have to work with their security
-and endpoint management teams to decide if a policy can be constructed
-that is acceptable to the company's risk profile while still permitting
-access to Quest devices. For more information about Conditional Access,
-see:
+Conditional access is an important part of a zero-trust approach to helping secure your network and resources. As part of zero trust, many companies use conditional access features policies with Azure Active Directory and Microsoft Intune to restrict the types of devices that are permitted to access company resources, and even the operating system version and configuration on those devices; devices that meet the defined profile are allowed in, and any other device that is not specified is denied access. Meta has released a beta GA version MDM support for Quest that works with Intune. Each company using Mesh in pre-release will have to work with their security and endpoint management teams to decide if a policy can be constructed that is acceptable to the company's risk profile while still permitting access to Quest devices.
 
-[Common ways to use Conditional Access with Intune](/mem/intune/protect/conditional-access-intune-common-ways-use)
+For more information about Conditional Access, see:
+
+- [Common ways to use Conditional Access with Intune](/mem/intune/protect/conditional-access-intune-common-ways-use)
+
+- [How can I manage Quest VR headsets for my organization?](../../Resources/mesh-troubleshooting.md#how-can-i-manage-quest-vr-headsets-for-my-organization)
 
 ## Work with Stakeholders That Communicate Change
 
