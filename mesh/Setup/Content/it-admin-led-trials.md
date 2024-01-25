@@ -36,13 +36,13 @@ Trials are publicly available from one of the following sources. These IT Admin 
 
 To sign up for a trial, please visit:
 
-- [Microsoft Mesh - Home](https://www.microsoft.com/mesh)
-- [M365 Admin Portal](https://admin.microsoft.com/)
+- The [Microsoft Mesh Trial - Admin link](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh)
+- [M365 Admin Center](https://admin.microsoft.com/)
     1. Sign in to [https://admin.microsoft.com/](https://admin.microsoft.com/).
     1. Go to **Billing** > **Purchase Services**.
-    1. Scroll down to the **Microsoft 365** section or search for Microsoft Mesh.
+    1. Scroll down to the **Other Services** section or search for Microsoft Mesh.
     1. On the **Microsoft Mesh Trial** title, select **Details**.
-    1. Select **Get free trial**.
+    1. Select **Start free trial**.
     1. Follow the remaining steps to confirm the trial.
 
 These admin-led trials are not available worldwide. They aren't available for Government customers or customers with EDU or FLW SKUs. See the [Mesh Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md) for full licensing requirements.
