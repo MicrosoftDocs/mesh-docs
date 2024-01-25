@@ -37,21 +37,21 @@ All the WebSlates that we'll be adding and/or working with are contained within 
  
     ![A screenshot of a computer Description ](../../../media/mesh-201/015-webslateframed-in-hierarchy.png)
 
-**Note**: You have two options when choosing a WebSlate prefab: **WebSlate**, which is a simple design with no extra components, and **WebSlateFramed**, which has a stylized frame and extra features.
+    **Note**: You have two options when choosing a WebSlate prefab: **WebSlate**, which is a simple design with no extra components, and **WebSlateFramed**, which has a stylized frame and extra features.
 
-Our WebSlate is now in the scene, but it doesn't have the size, position or rotation we want.
+    Our WebSlate is now in the scene, but it doesn't have the size, position or rotation we want.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/016-slate-wrong-size-and-location.png)
 
-Let's change that.
+    Let's change that.
 
 1. In the **Hierarchy**, ensure that that **WebSlateFramed** is selected, and then, in the **Inspector**, update the values in the **Transform** component to the following:
 
-**Position**: X = 2, Y = 1.3, Z = 2.5
-**Rotation**: X = 0, Y = -180, Z = 0
-**Scale**: X = 2.5, Y = 1.5, Z = 1
+    **Position**: X = 2, Y = 1.3, Z = 2.5
+    **Rotation**: X = 0, Y = -180, Z = 0
+    **Scale**: X = 2.5, Y = 1.5, Z = 1
 
-This is much better!
+    This is much better!
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/017-slate-after-adjustments.png)
 
@@ -136,6 +136,6 @@ We have a node in the script graph set up for this--**Get Component in Children*
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Chapter 4: Load a local shared HTML file into a WebSlate.](mesh-101-04-webslate-2.md)
+> [Chapter 4: Load a local shared HTML file into a WebSlate.](./mesh-201-04-webslate-2.md)
 
 

@@ -24,11 +24,11 @@ Just as in the previous chapter, there's already a GameObject in place with some
 1. In the **Hierarchy**, collapse the GameObject named **1.0 - LocalWebslate**.
 1. Expand **1.1 - StaticContentWebslate**. In the previous chapter, you were required to add a WebSlate prefab, but in this chapter we've already done it for you.
 
-![A screenshot of a computer Description ](../../../media/mesh-201/033-slate-in-hierarchy.png)
+    ![A screenshot of a computer Description ](../../../media/mesh-201/033-slate-in-hierarchy.png)
 
 1. Expand **ChapterLabel** and its child object **Actions**. The buttons we'll be working with, **LoadButton1** and **LoadButton2**, are located here.
 
-![A screenshot of a computer Description ](../../../media/mesh-201/034-buttons-in-hierarchy.png)
+    ![A screenshot of a computer Description ](../../../media/mesh-201/034-buttons-in-hierarchy.png)
 
 ## Edit the script graph
 
@@ -40,7 +40,7 @@ Just as in the previous chapter, there's already a GameObject in place with some
 
 1. In the **Script Machine** component, click **Edit Graph**. 
 
-As in the previous chapter, the script graph has already been started for you.
+    As in the previous chapter, the script graph has already been started for you.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/037-loadbutton1-script-graph.png)
 
@@ -48,7 +48,7 @@ As in the previous chapter, the script graph has already been started for you.
 
 Our first task is to add a *Mesh Interactable Body: Is Selected* node. As discussed in the previous chapter, you have a choice of *two* "Mesh Interactable Body: Is Selected" nodes. The text above each node can help you to confirm the behavior.
 
-    ![A screenshot of a computer Description ](../../../media/mesh-201/027-is-selected-local-or-global.png)
+![A screenshot of a computer Description ](../../../media/mesh-201/027-is-selected-local-or-global.png)
 
 For Station 1.0, we wanted only the person triggering the event to experience it, so the script contained the node that says "Is Selected *Locally*. This time, we want *all* attendees to share the event, so we'll select the other node for this--the one that simply says "Is Selected".
 
@@ -63,7 +63,7 @@ For Station 1.0, we wanted only the person triggering the event to experience it
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/039-connect-to-on-state-changed.png)
 
-## Add the *Web Slate: Load HTML Content (HTML Asset)** node
+## Add the *Web Slate: Load HTML Content (HTML Asset)* node
 
 The **Get Component in Children** node already contains the target we want--**WebSlateFramed**--so we can move forward and add the next node.
 

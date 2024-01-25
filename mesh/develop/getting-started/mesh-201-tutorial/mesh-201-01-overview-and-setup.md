@@ -22,13 +22,13 @@ The tutorial is structured as follows:
 
 - Chapter 1: Overview and setup *(this article)*
 
-- [Chapter 2: Prepare the project.](<link>))
+- [Chapter 2: Prepare the project.](./mesh-201-02-prepare-the-project.md)
 
-- [Chapter 3: Load a local HTML file that's *not* shared.](<link>))
+- [Chapter 3: Load a local HTML file that's *not* shared.](./mesh-201-03-webslate-1.md)
 
-- [Chapter 4: Load a local HTML file that *is* shared.](<link>))
+- [Chapter 4: Load a local HTML file that *is* shared.](./mesh-201-04-webslate-2.md)
 
-- [Chapter 5: Load a URL from a 3D asset.](<link>))
+- [Chapter 5: Load a URL from a 3D asset.](<link>)
 
 ## Prerequisites
 
