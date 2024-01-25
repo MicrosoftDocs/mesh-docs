@@ -89,10 +89,40 @@ The **Get Component in Children** node already contains the target we want--**We
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/042-station-one-one-with-default-homepage.png)
 
-1. Click the **Load 1** button. The WebSlate loads and displays a page that says "Hello World."
+1. Click the **Load 1** button. The WebSlate loads and displays a page that says "Hello World." Note that the WebSlate is interactive--you can drag the scroll bar down to see more content.
+
+    ![A screenshot of a computer Description ](../../../media/mesh-201/043-station-one-one-with-html-asset-loaded.png)
+
+1. Click the **Load 2** button and note that an image loads into the WebSlate.
+
+    ![A screenshot of a computer Description ](../../../media/mesh-201/044-station-one-one-with-image-loaded.png)
+
+This works because we already have a complete script set up for the **Load 2** button and it has *exactly the same node structure as the script for the **Load 1** button*. The only difference is the variable for each script. For the **Load 1** button, the value for its **HTMLAsset** variable is the HTML file "windenergyfacts". 
+
+![A screenshot of a computer Description ](../../../media/mesh-201/045-html-file-windenergyfacts.png)
+
+With the **Load 2** button, the value for its **HTMLAsset** variable is the HTML file *meshimage*.
+
+![A screenshot of a computer Description ](../../../media/mesh-201/046-html-file-meshimage.png)
+
+If you're curious about the meshimage.html file, open it and take a look. It's located in the project's **Assets** > **MeshWebSlates** > **HTMLFiles** folder.
+
+![A screenshot of a computer Description ](../../../media/mesh-201/047-meshimage-in-folder.png)
+
+The sole content in the file is a link to an image.
+
+![A screenshot of a computer Description ](../../../media/mesh-201/048-meshimage-link.png)
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [TBD](TBD)
 
 
-## Placing an image on a WebSlate
+
+
+
+
 
 
 
