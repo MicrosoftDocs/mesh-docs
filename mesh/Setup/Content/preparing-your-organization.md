@@ -25,7 +25,7 @@ This content covers requirements for Mesh implementations for Immersive spaces i
 
 1. [Contact owners of supporting teams](#contact-owners-of-supporting-teams)
 
-1. [Configure Office Apps Policy Service (OCPS)](#configure-office-apps-policy-service-for-mesh)
+1. [Configure service plan or Office Apps Policy Service for Mesh](#configure-service-plan-or-office-apps-policy-service-for-mesh)
 
 1. [Work with your security team](#work-with-your-organizations-security-team)
 
