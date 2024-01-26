@@ -188,13 +188,9 @@ Follow these steps to get a list of signed-in users to Mesh from the Azure porta
 
     :::image type="content" source="media/list-users-date-resource-filters.png" alt-text="Screenshot of user sign ins page in Azure portal showing filters date, user sign ins non-interactive, mesh service highlighted.":::
 
-1. Verify the list of **User sign-ins (non-interactive)** looks accurate and then click the **Download > Download JSON** menu item to open the Download pane.
-
-    :::image type="content" source="media/list-users-date-download-JSON.png" alt-text="Screenshot of Azure portal showing Download JSON highlighted.":::
+1. Verify the list of **User sign-ins (non-interactive)** looks accurate and then click the **Download > Download CSV** menu item to open the Download pane.
 
 1. Click the **Download** button underneath the file named **NonInteractiveSignIns…** to save the records locally.
-
-    :::image type="content" source="media/list-users-date-download-button.png" alt-text="Screenshot of Azure portal showing download button highlighted.":::
 
 ### What should I do with issues relating to M365?
 
