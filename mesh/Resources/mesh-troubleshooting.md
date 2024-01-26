@@ -192,7 +192,7 @@ Follow these steps to get a list of signed-in users to Mesh from the Azure porta
 
 1. Click the **Download** button underneath the file named **NonInteractiveSignIns…** to save the records locally.
 
-### What should I do with issues relating to M365?
+### What should I do with issues relating to M365? 
 
 You'll need to first reproduce the problem, and then follow the steps below to collect all information related to Mesh:
 
