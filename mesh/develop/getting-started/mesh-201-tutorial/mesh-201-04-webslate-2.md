@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual
 
 # Mesh 201 Tutorial Chapter 4: Load a local shared HTML file into a WebSlate
 
-In the previous chapter of this tutorial, you enabled a button to load a local non-shared HTML file into a WebSlate. In this chapter, we'll also set up an HTML page load, but this time it will have the capability to be shared among all attendees in the experience.
+In the previous chapter of this tutorial, you enabled a button to load a local non-shared HTML file into a WebSlate. In this chapter, we'll also set up an HTML page to load, but this time it will have the capability to be shared among all attendees in the experience.
 
 ## Navigate to the buttons
 
@@ -19,7 +19,7 @@ In the previous chapter of this tutorial, you enabled a button to load a local n
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/032-station-one-one.png)
 
-Just as in the previous chapter, there's already a GameObject in place with some descriptive text but this time there are two buttons: **LoadButton1** and **LoadButton2**.  a **Load** button. We'll complete the station by adding a WebSlate below the buttons and then updating script graphs attached to the buttons. When an attendee clicks a button, a web page is loaded and is *shared* among all other attendees in the experience. Each button loads a slightly different type of content.
+Just as in the previous chapter, there's already a GameObject in place with some descriptive text but this time there are two buttons: **LoadButton1** and **LoadButton2**.  a **Load** button. We'll complete the station by  updating a script graph attached to one of the buttons. When an attendee clicks either button, a web page is loaded and is *shared* among all other attendees in the experience. Each button loads a slightly different type of content.
 
 1. In the **Hierarchy**, collapse the GameObject named **1.0 - LocalWebslate**.
 1. Expand **1.1 - StaticContentWebslate**. In the previous chapter, you were required to add a WebSlate prefab, but in this chapter we've already done it for you.
@@ -116,27 +116,4 @@ The sole content in the file is a link to an image.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [TBD](TBD)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Next steps
-
-> [!div class="nextstepaction"]
-
-> [________________________________](TBD)
-
+> [Chapter 5: Load a URL from a 3D asset](./mesh-201-05-webslate-3.md)
