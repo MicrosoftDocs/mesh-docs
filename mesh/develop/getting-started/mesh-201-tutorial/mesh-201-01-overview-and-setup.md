@@ -4,7 +4,7 @@ description: Learn about the prerequsites and setup process for the Mesh 201 tut
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 1/22/2024
+ms.date: 1/26/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web
 ---
@@ -12,6 +12,8 @@ keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates
 # Mesh 201 Tutorial Chapter 1: Overview and setup
 
 In the Mesh 101 tutorial (a prerequisite to this tutorial), you get up and running with creating a Mesh experience and gain a solid understanding of Interactables, Physics, Visual Scripting, and more. In this tutorial, you build on that knowledge and learn how to use WebSlates to display web content in your experience. The tutorial includes an interactive globe--when an event attendee clicks on the globe, a call is made to the Bing maps API and the geographical area the attendee clicked is displayed on a nearby WebSlate.
+
+    ![A screenshot of a computer Description ](../../../media/mesh-201/066-attendees-at-globe.png)
 
 The tutorial project is named *Mesh201* and is included in the Mesh toolkit.
 
@@ -69,11 +71,11 @@ Download Microsoft Mesh on PC
 
 1. In your browser, go to the [*Mesh-Toolkit-Unity* repository](https://github.com/microsoft/Mesh-Toolkit-Unity).
 
-    ![______](../../../media)
+    ![______](../../../media/mesh-201/001A-toolkit-in-github.png)
 
 1. Select the **Code** button, and then select **Download ZIP**.
 
-    ![______](../../../media/mesh-201/001-toolkit-in-github.png)
+    ![______](../../../media/mesh-201/001B-code-and-download-zip.png)
 
 1. On your C: drive, create a folder with a one-word name (for example, "Mesh201") and then move or copy the downloaded Mesh toolkit Zip file to that folder. This is done to avoid running into a problem with the Windows path length limit, which is 256 characters. **IMPORTANT**: *Don't* place the Zip file on the Windows desktop. Behind the scenes, this creates a very long path name.
 

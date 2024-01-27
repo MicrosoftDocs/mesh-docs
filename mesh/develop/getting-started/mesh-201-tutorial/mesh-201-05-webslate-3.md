@@ -4,7 +4,7 @@ description: Learn how to load a URL from a 3D asset.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 1/25/2024
+ms.date: 1/26/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
 ---
@@ -105,7 +105,9 @@ Now we just need to ensure that this URL (which, naturally, changes every time *
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/064-station-one-two-play-mode.png)
 
-**Tip**: A good way to get further insights into your scripts is to watch them in the **Script Graph** window as you try out features in Play mode. For example, in this project, you can see the latitude and longitude of the location clicked on the **Earth** object flowing out of the connectors from the **Microsoft Mesh: On State Changed** node.
+**Notes**
+- The WebSlate is *interactive* so you can click the +/- buttons to zoom in or out, or drag the map to adjust its position, or click links. Note, however, that other attendees in the experience won't see these changes; they'll only see an update when you click the globe in a new location.
+- A good way to get further insights into your scripts is to watch them in the **Script Graph** window as you try out features in Play mode. For example, in this project, you can see the latitude and longitude of the location clicked on the **Earth** object flowing out of the connectors from the **Microsoft Mesh: On State Changed** node.
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/065-connector-data.png)
 
