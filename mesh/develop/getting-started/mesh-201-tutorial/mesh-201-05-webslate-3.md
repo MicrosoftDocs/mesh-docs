@@ -114,3 +114,7 @@ Now we just need to ensure that this URL (which, naturally, changes every time *
 ## Conclusion
 
 Congratulations! In this Mesh 201 tutorial, you learned about loading local shared and non-shared HTML files into a WebSlate. You also learned about using a 3D asset to call a Web API and download data into a WebSlate. Now you can put your new WebSlate skills to work and build collaborative Mesh experiences that are even more useful and exciting!
+
+## Next Steps
+
+If you want to build and publish this tutorial project and need some guidance, you can continue on from here with the article named [Mesh 101 Chapter 5: Making your environment available for testing](../mesh-101-tutorial/mesh-101-05-make-environment-available.md). The process of using the Mesh Uploader to build and publish is the same--you'll just have to use an internal name and description that applies to this tutorial, not the Wind Turbines scene featured in Mesh 101. 
