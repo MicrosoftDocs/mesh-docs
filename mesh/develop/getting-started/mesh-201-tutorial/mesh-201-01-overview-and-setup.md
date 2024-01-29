@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates
 
 # Mesh 201 Tutorial Chapter 1: Overview and setup
 
-In the Mesh 101 tutorial (a prerequisite to this tutorial), you get up and running with creating a Mesh experience and gain a solid understanding of Interactables, Physics, Visual Scripting, and more. In this tutorial, you build on that knowledge and learn how to use WebSlates to display web content in your experience. The tutorial includes an interactive globe--when an event attendee clicks on the globe, a call is made to the Bing maps API and the geographical area the attendee clicked is displayed on a nearby WebSlate.
+In the Mesh 101 tutorial (a prerequisite for this tutorial), you'll get up and running with creating a Mesh experience and gain a solid understanding of Interactables, Physics, Visual Scripting, and more. In this tutorial, you'll build on that knowledge and learn how to use WebSlates to display web content in your experience. The tutorial includes an interactive globe--when an event attendee clicks on the globe, a call is made to the Bing Maps API and the geographical area clicked on by the attendee is displayed on a nearby WebSlate.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/066-attendees-at-globe.png)
 
