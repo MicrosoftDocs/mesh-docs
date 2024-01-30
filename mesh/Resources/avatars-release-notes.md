@@ -4,7 +4,7 @@ description: Avatars in Microsoft Teams - Latest feature release
 ms.service: mesh
 author: qianw211
 ms.author: qianwen
-ms.date: 10/7/2023
+ms.date: 1/26/2024
 ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -21,6 +21,16 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 |  | Web  | View other avatars only |
 | Mobile | Teams mobile | View other avatars only |
 | VDI | Teams | View other avatars only |
+
+## Jan 26, 2024
+
+* When inside a Teams meeting, you can now turn on your avatar from the **Camera** drop down menu.
+
+    ![Avatars are now available as alternative choice to turning on your Camera during a Teams meeting.](media/camera-turn-on-avatars.png)
+
+* More Avatars options can now be found in the Teams meeting menu under **More ... > Video effects and settings > Avatars**.
+
+    ![Avatars options are now found under More... > Video effects and settings menu in a Teams meeting.](media/video-effects-and-settings.png)
 
 ## Sept 30, 2023
 
