@@ -77,7 +77,7 @@ The button object is named *LoadButton*.
 
 **Tip**: If you want more space in the **Script Graph** window, you can click its three-dot button and then select **Maximize**, or click the **Full Screen** button in the upper right corner of the window.
 
-**Important**: Note that the second node in the script is named **Mesh Interactable Body: Is Selected Locally**. There are two available "Mesh Interactable Body" nodes. If you want only the person triggering an event to experience it, use the node that says "Is Selected *Locally*. If you want *all* attendees in the event to experience it, select the node that simply says "Is Selected." See the differences in the image below. The text above each node can help you to confirm the behavior.
+**Important**: Note that the second node in the script is named **Mesh Interactable Body: Is Selected Locally**. There are two available "Mesh Interactable Body" nodes. If you want only the person triggering an event to experience it, use the node that says "Is Selected *Locally*". If you want *all* attendees in the event to experience it, select the node that simply says "Is Selected." See the differences in the image below. The text above each node can help you to confirm the behavior.
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/027-is-selected-local-or-global.png).
 
@@ -98,7 +98,7 @@ We have a node in the script graph set up for this--**Get Component in Children*
     ![A screenshot of a computer Description ](../../../media/mesh-201/022-drag-slate-object.png)
 
 1. Click and hold on the Control Output port of the **Get Component in Children** node, and then release the mouse button. This opens the Fuzzy Finder. **WARNING**: Once you open the Fuzzy Finder, don't click anywhere outside of the Unity interface. This closes the Fuzzy Finder and causes unpredictable behavior in the Script Graph.
-1. In the Fuzzy Finder, search for "Web Slate: Load HTML Content (Html Content)" and then select it. **Note** that there are two nodes with very similar names. 
+1. In the Fuzzy Finder, search for "Web Slate: Load HTML Content (Html Asset)" and then select it. **Note** that there are two nodes with very similar names. 
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/023-load-html-content.png)
 
