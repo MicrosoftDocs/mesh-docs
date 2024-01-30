@@ -44,7 +44,7 @@ Just as in the previous chapter, there's already a GameObject in place with some
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/037-loadbutton1-script-graph.png)
 
-### Add the *Mesh Interactable Body: Is Selected Locally* node
+### Add the *Mesh Interactable Body: Is Selected* node
 
 Our first task is to add a *Mesh Interactable Body: Is Selected* node. As discussed in the previous chapter, you have a choice of *two* "Mesh Interactable Body" nodes: *Is Selected Locally* or *Is Selected*. The text above each node can help you to confirm the behavior.
 
