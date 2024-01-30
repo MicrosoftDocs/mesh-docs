@@ -104,13 +104,10 @@ learn about Mesh Interactables and Mesh Physics.
 
 ![A screenshot of a computer Description ](../../../media/sample-mesh-101/014-chapter-4-sphere-terrace-v2.png)
 
-### Choose the GroundCollision layer
+### Choose the NavMesh layer
 
 For this project, we want our avatar to be able to walk around only on the floors inside the *Sphere Terrace* objects and the floor of a
-platform that's attached to one of the wind turbine generators. For
-these areas to be teleportable, they must be on the *GroundCollision* layer. Let's
-
-add the *Sphere Terrace* in Chapter 3 to the GroundCollision layer.
+platform that's attached to one of the wind turbine generators. For these areas to be teleportable, they must be on the *NavMesh* layer. Let's add the *Sphere Terrace* in Chapter 3 to the Navmesh layer.
 
 1. In the **Hierarchy**, expand the **Chapter 3** GameObject.
 
@@ -120,11 +117,11 @@ add the *Sphere Terrace* in Chapter 3 to the GroundCollision layer.
     ![A screenshot of a computer Description ](../../../media/sample-mesh-101/402-sphere-terrace.png)
 
 1. In the **Inspector**, select the **Layer** drop-down and then choose
-    **GroundCollision**.
+    **NavMesh**.
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/514-ground-collision-layer.png)
-
-You don't have to add the other walkable GameObjects to the GroundCollision layer---we've already done it for you.
+    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/517-navmesh-menu-option.png)
+<!-- new image for 23.15 is 514-ground-collision-layer.png -->
+You don't have to add the other walkable GameObjects to the NavMesh layer---we've already done it for you.
 
 ### Add Mesh Emulation Mode capability
 

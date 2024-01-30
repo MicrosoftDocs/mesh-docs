@@ -3,7 +3,7 @@ title: Mesh 101 Add interactivity with Mesh Visual Scripting
 description: Learn adding about adding interactivity to objects with Mesh Visual Scripting.
 author: typride
 ms.author: vinnietieto
-ms.date: 1/17/2024
+ms.date: 1/29/2024
 ms.topic: Tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
@@ -423,15 +423,11 @@ examine the generator.
 
     ![A screen shot](../../../media/sample-mesh-101/440-teleport-graph-embedded.png)
 
-    Note also that there's a **Local Script Scope** component attached and its **Share visual script variables** option is *not* selected. When a participant clicks the teleport button, we only want *them* to teleport, not everyone in the scene!
+1. Click the **Edit Graph** button. Just as in the previous chapter, our graph already has some nodes set up for you. 
 
-    ![A screen shot](../../../media/sample-mesh-101/445-event-not-shared.png)
+    ![A screen shot](../../../media/sample-mesh-101/515-teleport-existing-nodes.png)
 
-1. Click the **Edit Graph** button. Just as in the previous chapter, our graph already has some variables and nodes set up for you. They're contained inside two groups: **Teleport Button Behavior** and **Teleport to OpenPlatform**:
-
-    ![A screen shot](../../../media/sample-mesh-101/441-teleport-existing-nodes.png)
-
-In the **Teleport Button Behavior** group, the logic is similar to what you saw in Chapter 3.1: "If the button is selected, do something." We don't need to do anything further to this group. We're going to make our changes to the second group, **Teleport to OpenPlatform**.
+We'll add nodes to this script graph in a moment.
 
 ### Create a Travel Point and add a reference to it
 
@@ -449,27 +445,27 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
 
     **Position**:
 
-    X = 6
-    Y = 58
+    X = 6  
+    Y = 58  
     Z = 61
 
     **Rotation**: 
 
-    X = 0
-    Y = 270
+    X = 0  
+    Y = 270  
     Z = 0
 
     ![A screen shot](../../../media/sample-mesh-101/455-teleport-transform-settings.png)
 
     The avatar will teleport to this location.
 
-1. In the **Inspector**, make the **TeleportLocationWindTurbine** GameObject inactive by deselecting the check box next to its name. If you have more than one TravelPoint object active at runtime, Unity randomly picks one of the active Travel Points as the spawning point for the avatar. We want to ensure that the avatar spawns at the point indicated by the **TeleportLocationChapter3** GameObject, so that should be the only active Travel Point.
+1. In the **Inspector**, make the **TeleportLocationWindTurbine** GameObject inactive by deselecting the check box next to its name. If you have more than one TravelPoint object active at runtime, Unity randomly picks one of the active Travel Points as the spawning point for the avatar. We want to ensure that the avatar spawns at the point indicated by the **TeleportLocationChapter3** GameObject, so that should be the only active Travel Point. As a result of being made inactive, **TeleportLocationWindTurbine** appears dimmed in the **Hierarchy**.
 
     ![A screen shot](../../../media/sample-mesh-101/442-active-travel-point.png)
 
 ### Adding the teleport nodes
 
-1. In the **Teleport to Open Air Platform** script graph, group: **Teleport to OpenPlatform**, drag a connector from the True output control port of the **If** node and then create a new node called **Game Object: Set Active**. (In the Fuzzy Finder, search for **set active**.)
+1. In the **Teleport to Open Air Platform** script graph, drag a connector from the True output control port of the **If** node and then create a new node called **Game Object: Set Active**. (In the Fuzzy Finder, search for **set active**.)
 
     ![A screen shot](../../../media/sample-mesh-101/314-set-active-node.png)
 
@@ -487,25 +483,9 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
 
     ![A screen shot](../../../media/sample-mesh-101/444-select-travel-point.png)
 
-There's just one thing left to do in this graph. Note that the **Set Object Variable** node contains an object variable named *TeleportNow*. After the teleport happens, we want this variable to be set to false. So far, *TeleportNow* has only been used in the part of the graph that was already set up for you so we haven't talked about it. Let's take a look at how it works in the scene so you can understand what's happening.
+This completes the graph.
 
-The *TeleportNow* object variable is type *Boolean* and has a default value of False.
-
-![A screen shot](../../../media/sample-mesh-101/446-teleportnow-var.png)
-
-The nodes in the upper group in the graph, **Teleport Button Behavior**, detect if a participant clicks the teleport button. If they do, the *TeleportNow* variable is set to True.
-
-![A screen shot](../../../media/sample-mesh-101/447-teleportnow-true.png)
-
-The setting of True for *TeleportNow* is what triggers the sequence of nodes in the **Teleport to OpenPlatform** group that makes the teleport happen.
-
-![A screen shot](../../../media/sample-mesh-101/448-teleportnow-triggers-sequence.png)
-
-After the teleport has occurred, *TeleportNow* needs to be reset to False so that the whole process can be repeated the next time the button is clicked. We've already set up the nodes for this; all you need to do is make the connection.
-
-- In the **Teleport to OpenPlatform** group, drag a connector from the output control port of the **Travel Point: Travel to Point** node and then connect it to the input control point of the **Set Object Variable: TeleportNow** node.
-
-![A screen shot](../../../media/sample-mesh-101/449-connect-final-teleportnow.png)
+    ![A screen shot](../../../media/sample-mesh-101/516-graph-completed.png)
 
 ### Test your work
 
