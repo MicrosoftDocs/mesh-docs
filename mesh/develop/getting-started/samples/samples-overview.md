@@ -3,7 +3,7 @@ title: Samples overview
 description: Read an overview of the Mesh sample Unity projects available in the Mesh toolkit.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 1/29/24
+ms.date: 1/29/2024
 ms.topic: overview
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, toolkit, Mesh toolkit
