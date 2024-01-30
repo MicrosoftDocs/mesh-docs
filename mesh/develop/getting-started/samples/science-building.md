@@ -3,7 +3,7 @@ title: Mesh toolkit Science Building sample
 description: Learn about the Mesh toolkit Science Building sample.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 9/29/2023
+ms.date: 1/29/2024
 ms.topic: overview
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, science, sciencebuilding
@@ -37,8 +37,6 @@ We are not currently accepting code contributions to our samples.  If you have a
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-The [Samples Overview](samples-overview.md) page contains instructions on how to download the Mesh toolkit.
 
 ## License
 
