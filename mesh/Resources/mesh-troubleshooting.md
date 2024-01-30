@@ -2,9 +2,9 @@
 title: Troubleshooting & FAQs - Microsoft Mesh
 description: Various help guides and FAQ answers regarding Mesh events.
 ms.service: mesh
-author: qianw211
+author: typride
 ms.author: qianwen
-ms.date: 1/22/2023
+ms.date: 1/30/2024
 ms.topic: Troubleshooting
 keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
 ---
@@ -137,9 +137,11 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 1. Open a support request by following the link [here](https://admin.microsoft.com) (this support link may only be available to M365 admins).
 
-### Why am I'm getting an error when accessing Mesh on Quest?
+### Why am I getting an error when accessing Mesh on Quest?
 
 Mesh on Quest currently doesn't support [Azure Active Directory Conditional Access](/appcenter/general/configuring-aad-conditional-access). If your organization applies Conditional Access policies for managed or unmanaged devices, then you won’t be able to access Mesh on Quest. If a user in your organization attempts to launch Mesh on Quest where conditional access policies are applied, they will receive errors [AADSTS50199](/entra/identity-platform/reference-error-codes) and [AADSTS53003](/entra/identity-platform/reference-error-codes).
+
+If you would like to test Mesh on Quest, we recommend **either** deploying Mesh on a test tenant with test accounts where conditional access policies are not applied **or** work with your security IT Administration team to see if they are willing to make a policy exception for select Quest devices. Mesh expects to support conditional access in the future.
 
 ### How can I manage Quest VR headsets for my organization?
 
