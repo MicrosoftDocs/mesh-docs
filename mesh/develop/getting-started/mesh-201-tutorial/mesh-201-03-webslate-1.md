@@ -3,7 +3,7 @@ title: Mesh 201 Load a local non-shared HTML file into a WebSlate
 description: Learn about loading a local non-shared HTML file into a WebSlate.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 1/23/2024
+ms.date: 1/29/2024
 ms.topic: Tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
@@ -11,25 +11,26 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual
 
 # Mesh 201 Tutorial Chapter 3: Load a local non-shared HTML file into a WebSlate
 
-Now that we've completed the setup phase, let's move on to web content in WebSlates! 
+Now that we've completed the setup phase, let's move on to web content in WebSlates! A WebSlate is basically a big interactive screen. You can use it to view dashboards, web pages, photos and videos or interact with maps, diagrams, and data. At Station 1.0, we'll load a local non-shared HTML file into a WebSlate.
 
 ## Add the WebSlate to the scene
 
-1. In the **Scene** window, change your view so that you're looking at Station 1.0, pictured below.
+1. In the **Scene** window, ensure that you're positioned so you're in front of and looking at Station 1.0, pictured below.
 
-![A screenshot of a computer Description ](../../../media/mesh-201/014-station-one-front-view.png)
+    ![A screenshot of a computer Description ](../../../media/mesh-201/014-station-one-front-view.png)
 
-The station already has an object in place that has some descriptive text and a **Load** button. We'll complete the station by adding a WebSlate below the button and then updating a script graph attached to the **Load** button so that when the user clicks the button, a non-shared HTML file loads into the WebSlate.
+    The station already has an object in place that has some descriptive text and a **Load** button. We'll complete the station by adding a WebSlate below the button and then updating a script graph attached to the **Load** button so that when the user clicks the button, a non-shared HTML file loads into the WebSlate.
 
-All the WebSlates that we'll be adding and/or working with are contained within the hierarchy of the **MeshWebSlates** GameObject. 
+    All the WebSlates that we'll be adding and/or working with are contained within the hierarchy of the **MeshWebSlates** GameObject. 
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/011-mesh-webslates.png)
 
-1. In the **Hierarchy**, expand **MeshWebSlates** and then expand its child GameObject named **1.0 - LocalWebslate**.
+1. In the **Hierarchy**, collapse the **staticSceneObjects** object.
+1. Expand **MeshWebSlates** and then expand its child object named **1.0 - LocalWebslate**.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/012-webslates-expanded.png)
 
-1. In the **Project** window, search for the **WebSlateFramed** prefab. Make sure you choose **All* or **In packages** for the Search filter.
+1. In the **Project** window, search for the **WebSlateFramed** prefab. Make sure you choose **All** or **In packages** for the Search filter.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/013-search.png)
 
@@ -47,8 +48,8 @@ All the WebSlates that we'll be adding and/or working with are contained within 
 
 1. In the **Hierarchy**, ensure that that **WebSlateFramed** is selected, and then, in the **Inspector**, update the values in the **Transform** component to the following:
 
-    **Position**: X = 2, Y = 1.3, Z = 2.5
-    **Rotation**: X = 0, Y = -180, Z = 0
+    **Position**: X = 2, Y = 1.3, Z = 2.5  
+    **Rotation**: X = 0, Y = -180, Z = 0  
     **Scale**: X = 2.5, Y = 1.5, Z = 1
 
     This is much better!
@@ -68,25 +69,25 @@ The button object is named *LoadButton*.
     ![A screenshot of a computer Description ](../../../media/mesh-201/019-button-components.png)
 
     > [!TIP]
-    > The *Source** for a script can be set to *Graph* or *Embed*. Each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine article](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We used the *Embed* option here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
+    > The **Source** property for the script has two options: *Graph* and *Embed*. Each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine article](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We use the *Embed* option here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
 
-1. In the **Script Machine** component, click the **Edit Graph** button. This opens the **Script Graph** window. Its tab should already be placed next to the **Project** and **Console** tabs; if not, drag it there so that we can see the script graph and **Scene** window at the same time.
+1. In the **Script Machine** component, click the **Edit Graph** button. This opens the **Script Graph** window. Its tab should already be placed next to the **Project** and **Console** tabs; if not, drag it there so that we can see the script graph and **Scene** window above it at the same time.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/020-script-graph.png)
 
-    **Tip**: If you want more space in the window, you can click the three-dot button and then select **Maximize**, or click the **Full Screen** button in the upper right corner of the window.
+**Tip**: If you want more space in the **Script Graph** window, you can click its three-dot button and then select **Maximize**, or click the **Full Screen** button in the upper right corner of the window.
 
-    **Important**: You have a choice of *two* "Mesh Interactable Body: Is Selected" nodes. If you only want the person triggering an event to experience it, use the node that says "Is Selected *Locally*. If you want *all* attendees to experience it, select the node that simply says "Is Selected." See the differences in the image below. The text above each node can help you to confirm the behavior.
+**Important**: Note that the second node in the script is named **Mesh Interactable Body: Is Selected Locally**. There are two available "Mesh Interactable Body" nodes. If you want only the person triggering an event to experience it, use the node that says "Is Selected *Locally*. If you want *all* attendees in the event to experience it, select the node that simply says "Is Selected." See the differences in the image below. The text above each node can help you to confirm the behavior.
 
-    ![A screenshot of a computer Description ](../../../media/mesh-201/027-is-selected-local-or-global.png).
+![A screenshot of a computer Description ](../../../media/mesh-201/027-is-selected-local-or-global.png).
 
-    In our current script, we use "Is Selected Locally".
+In our current script, we use "Is Selected Locally".
 
 ## Get the HTML page
 
-As you can see in the image above, the script graph has already been started for you. We'll complete the tasks needed to enable the Load button to load the HTML page.
+As you probably noticed, the script graph has already been started for you. We'll complete the tasks needed to enable the **Load** button at Station 1.0 to load the HTML page.
 
-The first thing we need to do is get access to the **WebSlate** component that's attached to the **WebSlate** object. This object is a child to the **WebSlateFramed** prefab we added earlier.
+The first thing we need to do is get access to the **WebSlate** component that's attached to the **WebSlate** object. This object is a child to the **WebSlateFramed** prefab we added earlier. To see it, in the **Hierarchy**, expand **WebSlateFramed**.
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/021-webslate-component.png)
 
@@ -101,7 +102,7 @@ We have a node in the script graph set up for this--**Get Component in Children*
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/023-load-html-content.png)
 
-    You want the one that says "HTML **Asset**", not "HTML **Content**.
+    You want the one that says **Html Asset**, not **Html Content**.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/024-node-content-or-asset.png)
 
@@ -109,7 +110,7 @@ We have a node in the script graph set up for this--**Get Component in Children*
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/026-connector-to-html-content.png)
 
-1. We already have the web page we want to load in a **Get Variable** node. Drag a connector from the Data Output port of the **Get Variable** node and then connect it to the Data Input port of the **Load HTML Content** node.
+1. We already have the web page we want to load in a **Get Variable** node in the script graph. Drag a connector from the Data Output port of the **Get Variable** node and then connect it to the Data Input port of the **Load HTML Content** node.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/025-connect-variable-node.png)
 

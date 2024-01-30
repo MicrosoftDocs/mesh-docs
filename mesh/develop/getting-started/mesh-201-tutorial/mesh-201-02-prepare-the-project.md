@@ -4,7 +4,7 @@ description: Learn about adding a few basic features that are necessary for the 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 1/22/2024
+ms.date: 1/29/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, webslates, HTML, scripting, visual scripting, code, coding, interactivity
 ---
@@ -16,30 +16,35 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, webslates, HTML, 
 1. Open the **Mesh201** project in Unity. If you have more than
     one version of Unity installed, be sure to open the project with `Unity 2022.3.7f1` which is required for this tutorial.
 
-2. In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**.
+2. In the **Assets** folder, note that there are two scenes available: **Starting Point** and **Finished Project**.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/004-tutorial-scenes.png)
 
-1. Open the **StartingPoint** scene. 
+    **StartingPoint**: This is the scene you'll do the tutorial in. It
+    contains a pre-built setting that includes the WebSlates and interative globe you'll be visiting and adding Mesh features to.
 
-### About the Scenes
+    **FinishedProject**: As the title implies, this scene contains an
+    accurate completed version of the tutorial. You can refer to this at any
+    time to confirm that you've completed tutorial steps in the
+    *StartingPoint* scene correctly. Always save your work in the
+    *StartingPoint* scene before switching scenes.
 
-**StartingPoint**: This is the scene you'll do the tutorial in. It
-contains a pre-built setting that includes the WebSlates and interative globe you'll be visiting and adding Mesh features to.
+1. Open the **StartingPoint** scene.
 
-**FinishedProject**: As the title implies, this scene contains an
-accurate completed version of the tutorial. You can refer to this at any
-time to confirm that you've completed tutorial steps in the
-*StartingPoint* scene correctly. Always save your work in the
-*StartingPoint* scene before switching scenes.
+## Explore the *StartingPoint* scene
 
-### Turn object icons off for a clearer view
+Feel free to move around in the **Scene** window to get familiar with
+the scene's contents. If we zoom out a little, we can see that the WebSlates we'll be updating are located on a GameObject called a *Sphere Terrace*. It contains a series of stations where you'll learn how to implement Mesh features for the WebSlates.
 
-Many objects appear in a scene with gizmos or icons displayed by default. This can help you identify the objects, but it can also clutter the view and make objects harder to see. 
+![A screenshot of a computer Description ](../../../media/mesh-201/008-sphere-terrace-wide-view.png)
 
-![A screen shot of the Scene view with gizmos and icons cluttering the view.](../../../media/mesh-201/005-scene-with-gizmos-displayed.png)
+## Turn object icons off for a clearer view
 
-Let's turn off some of the icons we don't need to make the view more clear.
+- In the **Scene** window, navigate onto the sphere terrace so that you're facing stations 1.0 and 1.1, as seen below.
+
+    ![A screen shot of the Scene view with gizmos and icons cluttering the view.](../../../media/mesh-201/005-scene-with-gizmos-displayed.png)
+
+As you can see, some of the objects in front of the stations have gizmos or icons displayed. These can help you identify the objects, but they can also clutter the view and make objects harder to see. Let's turn off some of the icons we don't need to make the view more clear.
 
 1. In the toolbar above the upper right corner of the **Scene** window, select the Gizmos drop-down.
 
@@ -74,22 +79,12 @@ Let's turn off some of the icons we don't need to make the view more clear.
 
     ![Screenshot of the Scene view with icons turned off and a clearer view of objects.](../../../media/mesh-201/007-scene-with-gizmos-turned-off.png)
 
-### Exploring the *StartingPoint* scene
-
-Feel free to move around in the **Scene** window to get familiar with
-the scene's contents. If we zoom out a little, we can see that the WebSlates we'll be updating are located on a GameObject called a *Sphere Terrace*. It contains a space inside that
-you'll soon be walking around in.
-
-![A screenshot of a computer Description ](../../../media/mesh-201/008-sphere-terrace-wide-view.png)
-
-You'll be visiting the Sphere Terrace starting in the next chapter---it contains a series of stations where you'll learn how to implement Mesh features for the WebSlates.
-
-### Choose the GroundCollision layer
+## Choose the GroundCollision layer
 
 For this project, we want our avatar to be able to walk around only on
 the floor inside the *Sphere Terrace* object. For this area to be walkable, it must be on the *GroundCollision* layer. Let's add the *Sphere Terrace* we'll be working with in Chapter 3 to the GroundCollision layer.
 
-1. In the **Scene**, view, select the sphere terrace--you should click it towards the bottom and ensure that the whole terrace has an orange outline, as pictured below. The actual object  name, as shown in the **Hierarchy**, is *pods_TUBE_dome_end-air__1`_*.
+1. In the **Hierarchy**, expand **staticSceneObjects** and **pods_01** and then select the child object named **pods_TUBE_dome_end-air__1_**. This is the sphere terrace object--the image below gives you a zoomed-out view of the whole sphere terrace selected.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/009-sphere-terrace-selected.png)
 
@@ -98,7 +93,7 @@ the floor inside the *Sphere Terrace* object. For this area to be walkable, it m
 
     ![A screenshot of a computer Description automatically generated](../../../media/mesh-201/010-ground-collision-menu-item.png)
 
-### Mesh Emulation Mode capability
+## Mesh Emulation Mode capability
 
 In Mesh Emulation mode, when you press the Unity Editor Play button, you get an approximate preview of what the content will look and feel like when it runs in the Mesh app. A key feature of this mode is the ability to run multiple clients within the same process; this allows you to easily get a first impression of a multi-user scenario.
 
@@ -106,19 +101,20 @@ Normally, there are a few steps involved in setting up Mesh Emulation mode, but 
 
 ***
 
-**Tip**: You may find that when you click the Unity Editor Play mode button, the interface changes to having a blue tint. You can choose to have the Unity UI display a different color tint in Play mode than in Edit mode. This can help you to tell at a glance which mode you're in. To change the Play mode tint:
+**Tip**: You can choose to have the Unity UI display a different color tint in Play mode than in Edit mode. This can help you to tell at a glance which mode you're in. In this tutorial, Play mode images are tinted blue.
 
+**To change the Play mode tint**:  
 1. On the menu bar, select **Edit** > **Preferences**.
 1. In the left-side menu, select **Colors**.
 1. Under **General**, click the **Playmode tint** color box and then select the color you want.    
 
 ***
 
-### Add the Mesh Thumbnail Camera
+## Add the Mesh Thumbnail Camera
 
 The `Mesh Thumbnail Camera` provides a thumbnail image that will be added to your Environment's listing in Mesh on the web and its selection button in the Mesh app. This comes in handy when you're selecting Environments in either place because it gives you a visual reminder of what the Environment looks like.
 
-This is another feature that's already set up for you and is explained in detailed in the Mesh 101 tutorial.
+This is another feature that's already set up for you and is explained in detail in the Mesh 101 tutorial.
 
 ## Next steps
 

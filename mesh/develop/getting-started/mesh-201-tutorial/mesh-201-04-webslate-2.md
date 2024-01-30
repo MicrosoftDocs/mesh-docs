@@ -4,7 +4,7 @@ description: Learn how to load a local shared HTML file into a WebSlate.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 1/23/2024
+ms.date: 1/29/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
 ---
@@ -19,10 +19,10 @@ In the previous chapter of this tutorial, you enabled a button to load a local n
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/032-station-one-one.png)
 
-Just as in the previous chapter, there's already a GameObject in place with some descriptive text but this time there are two buttons: **LoadButton1** and **LoadButton2**.  a **Load** button. We'll complete the station by  updating a script graph attached to one of the buttons. When an attendee clicks either button, a web page is loaded and is *shared* among all other attendees in the experience. Each button loads a slightly different type of content.
+Just as in the previous chapter, there's already a GameObject in place with some descriptive text but this time there are two buttons: **LoadButton1** and **LoadButton2**. There's also a WebSlate already in place. We'll complete the station by updating a script graph that's attached to one of the buttons. When an attendee clicks either button, a web page will load and all the other attendees in the experience can *share* in viewing the new page. Each button at this Station loads a slightly different type of content.
 
 1. In the **Hierarchy**, collapse the GameObject named **1.0 - LocalWebslate**.
-1. Expand **1.1 - StaticContentWebslate**. In the previous chapter, you were required to add a WebSlate prefab, but in this chapter we've already done it for you.
+1. Expand **1.1 - StaticContentWebslate**. The **WebSlateFramed** object that has been pre-added is located here.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/033-slate-in-hierarchy.png)
 
@@ -46,7 +46,7 @@ Just as in the previous chapter, there's already a GameObject in place with some
 
 ### Add the *Mesh Interactable Body: Is Selected* node
 
-Our first task is to add a *Mesh Interactable Body: Is Selected* node. As discussed in the previous chapter, you have a choice of *two* "Mesh Interactable Body: Is Selected" nodes. The text above each node can help you to confirm the behavior.
+Our first task is to add a *Mesh Interactable Body: Is Selected* node. As discussed in the previous chapter, you have a choice of *two* "Mesh Interactable Body" nodes: *Is Selected Locally* or *Is Selected*. The text above each node can help you to confirm the behavior.
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/027-is-selected-local-or-global.png)
 
@@ -63,11 +63,11 @@ For Station 1.0, we wanted only the person triggering the event to experience it
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/039-connect-to-on-state-changed.png)
 
-## Add the *Web Slate: Load HTML Content (HTML Asset)* node
+### Add the *Web Slate: Load HTML Content (HTML Asset)* node
 
 The **Get Component in Children** node already contains the target we want--**WebSlateFramed**--so we can move forward and add the next node.
 
-1. Drag a connector from the Control Output port of the **Mesh Interactable Body: Is Selected** node and then create a new *Web Slate: Load HTML Content (HTML Asset)* node. **Note** that there are two nodes with very similar names. 
+1. Drag a connector from the Control Output port of the **Mesh Interactable Body: Is Selected** node and then create a new *Web Slate: Load HTML Content (HTML Asset)* node. As discussed in the previous chapter, keep in mind that there are two nodes with very similar names. 
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/023-load-html-content.png)
 
@@ -89,7 +89,7 @@ The **Get Component in Children** node already contains the target we want--**We
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/042-station-one-one-with-default-homepage.png)
 
-1. Click the **Load 1** button. The WebSlate loads and displays a page that says "Hello World." Note that the WebSlate is interactive--you can drag the scroll bar down to see more content.
+1. Click the **Load 1** button. The WebSlate loads and displays a page with the title "Wind Energy Across the World". Note that the WebSlate is interactive--you can click an empty space in the scroll bar to move the slider to that position and change the view of the page. (You can't drag the scroll bar itself.)
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/043-station-one-one-with-html-asset-loaded.png)
 
