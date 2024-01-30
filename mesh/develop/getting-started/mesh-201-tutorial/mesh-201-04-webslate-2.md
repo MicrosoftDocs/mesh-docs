@@ -50,7 +50,7 @@ Our first task is to add a *Mesh Interactable Body: Is Selected* node. As discus
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/027-is-selected-local-or-global.png)
 
-For Station 1.0, we wanted only the person triggering the event to experience it, so the script contained the node that says "Is Selected *Locally*. This time, we want *all* attendees to share the event, so we'll select the other node for this--the one that simply says "Is Selected".
+For Station 1.0, we wanted only the person triggering the event to experience it, so the script contained the node that says "Is Selected *Locally*". This time, we want *all* attendees to share the event, so we'll select the other node for this--the one that simply says "Is Selected".
 
 1. Click and hold on the Data Output port of the **Game Object** node, and then release the mouse button. This opens the Fuzzy Finder. **WARNING**: Once you open the Fuzzy Finder, don't click anywhere outside of the Unity interface. This closes the Fuzzy Finder and causes unpredictable behavior in the Script Graph.
 1. In the Fuzzy Finder, search for "Mesh Interactable Body: Is Selected" and then select it. 
@@ -71,7 +71,7 @@ The **Get Component in Children** node already contains the target we want--**We
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/023-load-html-content.png)
 
-    You want the one that says "HTML **Asset**", not "HTML **Content**.
+    You want the one that says "HTML **Asset**", not "HTML **Content**".
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/024-node-content-or-asset.png)
 
@@ -89,7 +89,7 @@ The **Get Component in Children** node already contains the target we want--**We
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/042-station-one-one-with-default-homepage.png)
 
-1. Click the **Load 1** button. The WebSlate loads and displays a page with the title "Wind Energy Across the World". Note that the WebSlate is interactive--you can click an empty space in the scroll bar to move the slider to that position and change the view of the page. (You can't drag the scroll bar itself.)
+1. Click the **Load 1** button. The WebSlate loads and displays a page with the title "Wind Energy Across the World". Note that the WebSlate is interactive--you can click an empty space in the scroll bar to move the slider to that position and change the view of the page. (You can't drag the slider itself.)
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/043-station-one-one-with-html-asset-loaded.png)
 
@@ -101,7 +101,7 @@ This works because we already have a complete script set up for the **Load 2** b
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/045-html-file-windenergyfacts.png)
 
-With the **Load 2** button, the value for its **HTMLAsset** variable is the HTML file *meshimage*.
+With the **Load 2** button, the value for its **HTMLAsset** variable is the HTML file "meshimage".
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/046-html-file-meshimage.png)
 
@@ -109,7 +109,7 @@ If you're curious about the meshimage.html file, open it and take a look. It's l
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/047-meshimage-in-folder.png)
 
-The sole content in the file is a link to an image.
+The sole content in the file is a link to the image that you saw when you clicked the **Load 2** button.
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/048-meshimage-link.png)
 

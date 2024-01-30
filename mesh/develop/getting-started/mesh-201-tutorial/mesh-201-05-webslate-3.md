@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual
 
 # Mesh 201 Tutorial Chapter 5: Load a URL from a 3D asset
 
-In this chapter, we move forward to Station 1.2 and explore a way to load data from the Web into a WebSlate. There's a 3D GameObject in the scene that represents the planet Earth. We'll update a script so that when you click anywhere on the **Earth** object, the coordinates of the location you clicked are saved, a call is made to the Bing Maps API, and the geographical area related to the coordinates appears on a WebSlate located close by.
+In this chapter, we move forward to Station 1.2 and explore a way to load data from the web into a WebSlate. There's a 3D GameObject in the scene that represents the planet Earth. We'll update a script so that when you click anywhere on the **Earth** object, the coordinates of the location you clicked are saved, a call is made to the Bing Maps API, and the geographical area related to the coordinates appears on a WebSlate located close by.
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/064-station-one-two-play-mode.png)
 
@@ -25,7 +25,7 @@ In this chapter, we move forward to Station 1.2 and explore a way to load data f
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/050-station-one-two-closeup.png)
 
-    As you can see, there's already a WebSlate object in the scene with some informational text above, as well as the **Earth** object. Let's run the project and see what happens.
+    As you can see, there's already a WebSlate in the scene with some informational text above it, as well as the **Earth** object. Let's run the project and see what happens.
 
 1. Click the Unity editor Play button. You're initially placed on the other side of the sphere terrace, so you'll have to navigate back to Station 1.2. The WebSlate displays the Bing Maps website.
 
