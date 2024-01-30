@@ -46,7 +46,7 @@ Now that we've completed the setup phase, let's move on to web content in WebSla
 
     Let's change that.
 
-1. In the **Hierarchy**, ensure that that **WebSlateFramed** is selected, and then, in the **Inspector**, update the values in the **Transform** component to the following:
+1. In the **Hierarchy**, ensure that **WebSlateFramed** is selected, and then, in the **Inspector**, update the values in the **Transform** component to the following:
 
     **Position**: X = 2, Y = 1.3, Z = 2.5  
     **Rotation**: X = 0, Y = -180, Z = 0  
