@@ -2,9 +2,9 @@
 title: Troubleshooting & FAQs - Microsoft Mesh
 description: Various help guides and FAQ answers regarding Mesh events.
 ms.service: mesh
-author: qianw211
+author: typride
 ms.author: qianwen
-ms.date: 1/22/2023
+ms.date: 1/30/2024
 ms.topic: Troubleshooting
 keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
 ---
