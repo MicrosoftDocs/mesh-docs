@@ -4,18 +4,18 @@ description: Learn how to load a URL from a 3D asset.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 1/26/2024
+ms.date: 1/29/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
 ---
 
 # Mesh 201 Tutorial Chapter 5: Load a URL from a 3D asset
 
-In this chapter, we move forward to Station 1.2 and explore a way to load data from the Web into a WebSlate. There's a 3D GameObject in the scene that represents the planet Earth. We'll update a script so that when you click anywhere on the **Earth** object, the coordinates of the location you clicked are saved, a call is made to the Bing Maps API, and the geographical area related to the coordinates appears on a WebSlate located close by.
+In this chapter, we move forward to Station 1.2 and explore a way to load data from the web into a WebSlate. There's a 3D GameObject in the scene that represents the planet Earth. We'll update a script so that when you click anywhere on the **Earth** object, the coordinates of the location you clicked are saved, a call is made to the Bing Maps API, and the geographical area related to the coordinates appears on a WebSlate located close by.
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/064-station-one-two-play-mode.png)
 
-## Trying out the project
+## Try out the project
 
 1. In the **Scene** window, navigate to station 1.2. It's on the opposite side of the sphere terrace from the first two stations.
 
@@ -25,18 +25,20 @@ In this chapter, we move forward to Station 1.2 and explore a way to load data f
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/050-station-one-two-closeup.png)
 
-    As you can see, there's already a WebSlate object in the scene. Let's run the project and see what happens.
+    As you can see, there's already a WebSlate in the scene with some informational text above it, as well as the **Earth** object. Let's run the project and see what happens.
 
-1. Click the Unity editor Play button, and then navigate to Station 1.2. The WebSlate displays the Bing Maps  website.
+1. Click the Unity editor Play button. You're initially placed on the other side of the sphere terrace, so you'll have to navigate back to Station 1.2. The WebSlate displays the Bing Maps website.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/051-webslate-with-bing-maps-loaded.png)
 
-1. Click several different spots on the **Earth** object--you can rotate it by left-clicking on it and then dragging. Note that no matter where you click, the WebSlate keeps loading the same Bing Maps page. We want to change this so that when you click the **Earth** object, the geographical area you clicked appears on the WebSlate. We'll be adding a node to a script that accomplishes this in a moment, but first, let's take a brief look at the scripts.
+1. Click several different spots on the **Earth** object--you can rotate it by left-clicking on it and then dragging. Note that no matter where you click, the WebSlate keeps loading the same Bing Maps page. We want to change this so that when you click the **Earth** object, the geographical area you clicked appears on the WebSlate. We'll be adding a node to a script that accomplishes this in a moment, but before that, we'll take a brief look at the scripts.
 
-## Exploring the Earth script
+1. Click the Unity editor Play button to exit Play mode.
+
+## Explore the Earth script
 
 1. In the **Hierarchy**, collapse the GameObject named **1.1 - StaticContentWebslate**.
-1. Expand **1.2 - LoadURL** and note that it has child objects named **EarthActions** and **Earth**. Each of these two objects have Script Machines attached. 
+1. Expand **1.2 - LoadURL** and note that it has child objects named **EarthActions** and **Earth**. Each of these objects has a Script Machine attached. 
 1. Select **Earth**, and then, in the **Inspector**, navigate to the **Script Machine** component and click its **Edit Graph** button.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/052-edit-graph-button.png)
@@ -45,9 +47,9 @@ In this chapter, we move forward to Station 1.2 and explore a way to load data f
     
     ![A screenshot of a computer Description ](../../../media/mesh-201/053-earth-graph.png)
     
-    As you can see, there's a lot going on in this graph. We don't need to make any changes to it, but you may want to take a moment to analyze it to get a better understanding of how the **Earth** object works.
+    As you can see, there's a lot going on in this graph. We don't need to make any changes to it, but if you're curious, you can take a moment here to study the graph and get a better understanding of how the **Earth** object works.
 
-## Exploring the EarthActions script
+## Explore the EarthActions script
 
 This script is where we need to make our update.
 
@@ -57,27 +59,27 @@ This script is where we need to make our update.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/054-earthactions-script.png)
 
-1. The first groups contains a node called **Web Slate: Load** with a value of the Bing Maps URL. 
+1. The first group contains a node called **Web Slate: Load** with a value of the Bing Maps URL. 
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/055-default-url.png)
 
-    Right now, the default behavior is that every time you click the **Earth** object, this URL loads into the WebSlate.
+    Right now, things are set up so that every time you click the **Earth** object, this URL loads into the WebSlate.
 
 1. In the **URL Builder** group, the first node, **Get Variable: Object**, loads the variable that contains the coordinate that was clicked on the **Earth** object.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/056-get-existing-coordinate.png)
 
-1. The next few nodes take that coordinate, convert it to a string, and attach it to the end of the Bing Maps URL in the **String: Concat** node.
+1. The next few nodes after the **Microsoft Mesh: On State Changed** node take that coordinate, convert it to a string, and attach it as a parameter to the end of the Bing Maps URL in the **String: Concat** node.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/057-string-concat.png)
 
-1. The **Set Variable** Object** node intitializes the **WebSlateURL** variable with the URL.
+1. The **Set Variable** node intitializes the **WebSlateURL** variable with the URL.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/059-variable-initialized.png)
 
 Now we just need to ensure that this URL (which, naturally, changes every time **Earth** is clicked) loads into the WebSlate.
 
-## Updating the EarthActions script
+## Update the EarthActions script
 
 1. Drag a connector from the Control Output port of the **Set Variable: Object** node and then create a new **Web Slate: Load** node. (In the Fuzzy Finder, search for **Web Slate: Load (URL)**.)
 
@@ -97,19 +99,19 @@ Now we just need to ensure that this URL (which, naturally, changes every time *
 
 ## Test your work
 
-1. In Unity, save the project and then press the Unity Editor Play button.
+1. Save the project and then press the Unity Editor Play button.
 
-1. Navigate to Station 1.2 and position yourself in front of it. As mentioned earlier, the WebSlate is displaying some information about Microsoft because the default URL when you first enter Play mode is set to the Microsoft home page.
+1. Navigate to Station 1.2 and position yourself in front of it. 
 
-1. Click various places on the **Earth** object. The WebSlate loads and displays a map of the area you clicked.
+1. Click various places on the **Earth** object. As noted earlier, each time you click, the coordinates of the clicked spot (latitude and longitude) are saved, a call is made to the Bing Maps API, that API returns a map based on the coordinates, and the map is loaded into the WebSlate.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/064-station-one-two-play-mode.png)
 
 **Notes**
-- The WebSlate is *interactive* so you can click the +/- buttons to zoom in or out, or drag the map to adjust its position, or click links. Note, however, that other attendees in the experience won't see these changes; they'll only see an update when you click the globe in a new location.
+- The WebSlate is *interactive*. In an event, and attendee can click the +/- buttons to zoom in or out, or drag the map to adjust its position, or click links. Note, however, that other attendees in the experience won't see these changes; they'll only see an update when the globe is clicked again.
 - A good way to get further insights into your scripts is to watch them in the **Script Graph** window as you try out features in Play mode. For example, in this project, you can see the latitude and longitude of the location clicked on the **Earth** object flowing out of the connectors from the **Microsoft Mesh: On State Changed** node.
 
-![A screenshot of a computer Description ](../../../media/mesh-201/065-connector-data.png)
+    ![A screenshot of a computer Description ](../../../media/mesh-201/065-connector-data.png)
 
 ## Conclusion
 
