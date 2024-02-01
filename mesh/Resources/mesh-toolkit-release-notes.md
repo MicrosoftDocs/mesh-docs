@@ -16,7 +16,7 @@ For purposes of this document, there are two categories of users:
 * Creators: Technical artist and developers building with the Mesh toolkit
 * IT admins: Managers working in Azure
 
-## Version 24.1 (Preview)
+## Version 23.15 (Preview)
 
 >[!Caution]
 >This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
@@ -32,62 +32,8 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
-| Mesh toolkit package      |   5.2315.0     | 2023-1-24  |
-| Mesh (PC/Quest)   |  5.2315.0       |  2023-1-24  |
-
-### What's new
-
-#### Toolkit
-
-* The `ContentVersion` has been incremented to 1.24.0: Newly published content will only be visible in the recent Mesh app.
-
-* Some errors that came from the Mesh services did not have enough information in them. For example, some errors were just reported as "BadRequest" or "BadGateway". We've improved error messages from the service to include more useful details.
-
-* Simplified discovery of options by moving the **Settings** in the **Options** tab into the **Project/Mesh Uploader Settings** pane with the other **Uploader** settings.
-
-* Improved error handling when thumbnail generation fails.
-
-* Improved error handling on asset validation.
-
-* If we fail to create a copy of the asset, the build and publish operation won't proceed.
-
-* Fixed an issue where the **Require Ground Collision Layer** won't have the correct value when changed while a window was open.
-
-##### Diagnostics and debug tools are now easier to discover and use in the Mesh Emulator:
-
-* In the Unity editor, click the **Enter Split Screen** button to enable split-screen mode, which allows you to test and debug multi-user issues. 
-
-* In the split-screen mode, click **Add** or **Leave** to add more split-screen clients to the session or to make them leave the session.
-
-* Select **Script Stats** to show a panel of real-time visual script performance statistics, such as:
-
-    * which visual script flows require the most per-frame time to execute 
-    
-    * which shared properties and variables are updated (and replicated over network) most often 
-    
-    Clicking on an entry brings you straight to the corresponding scene object in the **Hierarchy** panel.
-
-* Select **Perf Stats** to show to **Visual Profiler** (only in single-screen mode) to displays real-time CPU and GPU performance statistics for the scene you're running.
-
-#### Scripting and physics
-
-* It's now possible to use the **On State Changed** visual script event to observe the transform of a physics body. The event fires whenever the physics body is moved directly on the local client or by a remote client. (31869)
-
-* During an environment upload, issues detected by the Visual Scripts validation step now log significantly improved diagnostics and extended guidance on how to avoid the reported issues. (34450)
-
-## Version 23.15
-
-### Version list and dates
-
-These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
-
->[!Note]
->The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh toolkit package, which releases only after the matching Mesh app is available in stores.
-
-| Mesh offering/package   | Version | Date released
-| ----------- | ----------- | ----------- |
-| Mesh toolkit package      |   5.2315.0     | 2023-1-24  |
-| Mesh (PC/Quest)   |  5.2315.0       |  2023-1-24  |
+| Mesh toolkit package      |   5.2315.0     | 2024-1-24  |
+| Mesh (PC/Quest)   |  5.2315.0       |  2024-1-24  |
 
 ### What's new
 
