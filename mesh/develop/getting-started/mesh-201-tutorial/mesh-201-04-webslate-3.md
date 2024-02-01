@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual
 
 # Mesh 201 Tutorial Chapter 4: Load a URL from a 3D asset
 
-In this chapter, we move forward to Station 4 and explore a way to load data from the web into a WebSlate. There's a 3D GameObject in the scene that represents the planet Earth. We'll update a script so that when an event attendee clicks on the globe, the coordinates (latitude and longitude) of the location they clicked are captured and added to a Bing Maps URL as parameters. An HTTP request is then made using that URL, and a map of the selected area is downloaded from Bing Maps to a nearby WebSlate.
+In this chapter, we move forward to Station 4 and explore a way to load data from the web into a WebSlate. There's a 3D GameObject in the scene that represents the planet Earth. We'll update a script so that when a person in your experience clicks on the globe, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate.
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/064-station-one-two-play-mode.png)
 
@@ -103,7 +103,7 @@ Now we just need to ensure that this URL (which, naturally, changes every time *
 
 1. Navigate to Station 4 and position yourself in front of it. 
 
-1. Click various places on the **Earth** object. As noted earlier, each time you click, the coordinates (latitude and longitude) of the location you clicked are captured and added to a Bing Maps URL as parameters. An HTTP request is then made using that URL, and a map of the selected area is downloaded from Bing Maps to a nearby WebSlate.
+1. Click various places on the **Earth** object. As noted earlier, each time you click, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/064-station-one-two-play-mode.png)
 
