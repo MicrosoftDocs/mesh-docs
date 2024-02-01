@@ -41,7 +41,7 @@ Now that you're all set up and have had a chance to try out the project, let's m
 
     **Note**: You have two options when choosing a WebSlate prefab: **WebSlate**, which is a simple design with no extra components, and **WebSlateFramed**, which has a stylized frame and extra features.
 
-    Our WebSlate is now in the scene, but it doesn't have the size, position or rotation we want.
+    Our WebSlate is now in the scene, but it doesn't have the size, position or rotation we want. (**Tip**: If your WebSlate looks dark blue, you're looking at its back, not its screen!)
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/016-slate-wrong-size-and-location.png)
 

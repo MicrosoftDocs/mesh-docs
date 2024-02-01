@@ -119,4 +119,10 @@ Congratulations! In this Mesh 201 tutorial, you learned about loading local shar
 
 ## Next Steps
 
-If you want to build and publish this tutorial project and need some guidance, you can continue on from here with this article from our Mesh 101 tutorial named [Mesh 101 Chapter 5: Making your environment available for testing](../mesh-101-tutorial/mesh-101-05-make-environment-available.md). The process of using the Mesh Uploader to build and publish is the same for both the Mesh 101 and Mesh 201 tutorial--you'll just have to use an internal name and description that applies to this tutorial, not the Wind Turbines scene featured in Mesh 101. 
+- **Build and Publish**
+
+    If you want to build and publish this tutorial project and need some guidance, you can continue on from here with this article from our Mesh 101 tutorial named [Mesh 101 Chapter 5: Making your environment available for testing](../mesh-101-tutorial/mesh-101-05-make-environment-available.md). The process of using the Mesh Uploader to build and publish is the same for both the Mesh 101 and Mesh 201 tutorial--you'll just have to use an internal name and description that applies to this tutorial, not the Wind Turbines scene featured in Mesh 101. 
+
+- **Challenge**
+
+    Try creating your own station with a WebSlate and a button that loads an HTML file. Be sure to share your efforts in our [Mesh Developer Forum](https://techcommunity.microsoft.com/t5/mesh-creators/welcome-to-the-microsoft-mesh-creator-discussion-space-a-hub-for/m-p/3938730)!
