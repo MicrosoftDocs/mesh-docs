@@ -90,7 +90,7 @@
 		},
 		{
 			"source_path": "mesh/develop/mesh-tap-participants.md",
-			"redirect_url": "mesh/develop/mesh-early-adopters.md",
+			"redirect_url": "/mesh/develop/mesh-early-adopters.md",
 			"redirect_document_id": true
 		}
 	]
