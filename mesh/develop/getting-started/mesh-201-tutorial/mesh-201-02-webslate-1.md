@@ -11,11 +11,12 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual
 
 # Mesh 201 Tutorial Chapter 2: Load a local non-shared HTML file into a WebSlate
 
-Now that we've completed the setup phase, let's move on to web content in WebSlates! A WebSlate is basically a big interactive screen. You can use it to view dashboards, web pages, photos and videos or interact with maps, diagrams, and data. At Station 1.1, we'll load a local non-shared HTML file into a WebSlate.
+Now that you're all set up and have had a chance to try out the project, let's move on to scripting web content in WebSlates! A WebSlate is basically a big interactive screen. You can use it to view dashboards, web pages, photos and videos or interact with maps, diagrams, and data. At Station 2, we'll load a local non-shared HTML file into a WebSlate.
 
 ## Add the WebSlate to the scene
 
-1. In the **Scene** window, ensure that you're positioned so you're in front of and looking at Station 1.1, pictured below.
+1. Open the **StartingPoint** scene.
+1. In the **Scene** window, ensure that you're positioned so you're in front of and looking at Station 2, pictured below.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/014-station-one-front-view.png)
 
@@ -26,7 +27,7 @@ Now that we've completed the setup phase, let's move on to web content in WebSla
     ![A screenshot of a computer Description ](../../../media/mesh-201/011-mesh-webslates.png)
 
 1. In the **Hierarchy**, collapse the **staticSceneObjects** object.
-1. Expand **MeshWebSlates** and then expand its child object named **1.1 - LocalWebslate**.
+1. Expand **MeshWebSlates** and then expand its child object named **2 - LocalWebslate**.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/012-webslates-expanded.png)
 
@@ -85,7 +86,7 @@ In our current script, we use "Is Selected Locally".
 
 ## Get the HTML page
 
-As you probably noticed, the script graph has already been started for you. We'll complete the tasks needed to enable the **Load** button at Station 1.1 to load the HTML page.
+As you probably noticed, the script graph has already been started for you. We'll complete the tasks needed to enable the **Load** button at Station 2 to load the HTML page.
 
 The first thing we need to do is get access to the **WebSlate** component that's attached to the **WebSlate** object. This object is a child to the **WebSlateFramed** prefab we added earlier. To see it, in the **Hierarchy**, expand **WebSlateFramed**.
 
@@ -118,7 +119,7 @@ We have a node in the script graph set up for this--**Get Component in Children*
 
 1. In Unity, save the project and then press the Unity Editor Play button.
 
-1. Position yourself in front of Station 1.1, and notice that the WebSlate is displaying some information about Microsoft.
+1. Position yourself in front of Station 2, and notice that the WebSlate is displaying some information about Microsoft.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/028-webslate-with-default-page.png)
 

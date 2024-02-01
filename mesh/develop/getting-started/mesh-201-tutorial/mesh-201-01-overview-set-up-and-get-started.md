@@ -137,14 +137,21 @@ For this tutorial, the only package you need is the Mesh toolkit package, and it
     *StartingPoint* scene correctly. Always save your work in the
     *StartingPoint* scene before switching scenes.
 
-1. Open the **StartingPoint** scene.
+## Trying out the finished project
 
-## Explore the *StartingPoint* scene
+We recommend that you open the **FinishedProject** scene to get an idea of what the finished project will look like. The WebSlates we'll be updating are located on a GameObject called a *Sphere Terrace*. It contains a series of stations where you'll learn how to implement Mesh features for the WebSlates. Stations 2 and 3 are located on one side of the Sphere Terrace:
 
-Feel free to move around in the **Scene** window to get familiar with
-the scene's contents. If we zoom out a little, we can see that the WebSlates we'll be updating are located on a GameObject called a *Sphere Terrace*. It contains a series of stations where you'll learn how to implement Mesh features for the WebSlates.
+![A screenshot of a computer Description ](../../../media/mesh-201/008-sphere-terrace-wide-view.png) 
 
-![A screenshot of a computer Description ](../../../media/mesh-201/008-sphere-terrace-wide-view.png)
+At these stations, click the **Load** buttons and notice that this action loads HTML pages into the WebSlates.
+
+Station 4 is located on the opposite side of the Sphere Terrace:
+
+![A screenshot of a computer Description ](../../../media/mesh-201/049-station-one-two-overhead-view.png) 
+
+At this station, click several different spots on the **Earth** object--you can rotate it by left-clicking on it and then dragging. Notice how each time you click, a map of that area appears on the nearby WebSlate.
+
+![A screenshot of a computer Description ](../../../media/mesh-201/051-webslate-with-bing-maps-loaded.png) 
 
 ## Next steps
 

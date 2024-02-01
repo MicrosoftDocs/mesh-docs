@@ -15,14 +15,14 @@ In the previous chapter of this tutorial, you enabled a button to load a local n
 
 ## Navigate to the buttons
 
-1. In the **Scene** window, change your view so that you're looking at Station 1.2, pictured below.
+1. In the **Scene** window, change your view so that you're looking at Station 3, pictured below.
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/032-station-one-one.png)
 
 Just as in the previous chapter, there's already a GameObject in place with some descriptive text but this time there are two buttons: **LoadButton1** and **LoadButton2**. There's also a WebSlate already in place. We'll complete the station by updating a script graph that's attached to one of the buttons. When an attendee clicks either button, a web page will load and all the other attendees in the experience can *share* in viewing the new page. Each button at this Station loads a slightly different type of content.
 
-1. In the **Hierarchy**, collapse the GameObject named **1.1 - LocalWebslate**.
-1. Expand **1.2 - StaticContentWebslate**. The **WebSlateFramed** object that has been pre-added is located here.
+1. In the **Hierarchy**, collapse the GameObject named **2 - LocalWebslate**.
+1. Expand **3 - StaticContentWebslate**. The **WebSlateFramed** object that has been pre-added is located here.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/033-slate-in-hierarchy.png)
 
@@ -85,7 +85,7 @@ The **Get Component in Children** node already contains the target we want--**We
 
 1. In Unity, save the project and then press the Unity Editor Play button.
 
-1. Position yourself in front of Station 1.2. As in the previous chapter, WebSlate is displaying some information about Microsoft because the default URL in the **WebSlate** component is set to the Microsoft home page.
+1. Position yourself in front of Station 3. As in the previous chapter, WebSlate is displaying some information about Microsoft because the default URL in the **WebSlate** component is set to the Microsoft home page.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/042-station-one-one-with-default-homepage.png)
 
