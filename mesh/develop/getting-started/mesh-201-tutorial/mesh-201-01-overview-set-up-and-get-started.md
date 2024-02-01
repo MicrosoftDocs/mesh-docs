@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates
 
 # Mesh 201 Tutorial Chapter 1: Overview, set up and get started
 
-If you completed the [Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md), you got up and running with creating a Mesh experience and gaining a solid understanding of Interactables, Physics, Visual Scripting, and more. In this tutorial, you build on that knowledge and learn how to use WebSlates to display web content in your experience. The tutorial includes an interactive globe; when an event attendee clicks on the globe, the coordinates (latitude and longitude) of the location they clicked are captured and added to a Bing Maps URL as parameters. An HTTP request is then made using that URL, and a map of the selected area is downloaded from Bing Maps to a nearby WebSlate. 
+If you completed the [Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md), you got up and running with creating a Mesh experience and gaining a solid understanding of Interactables, Physics, Visual Scripting, and more. In this tutorial, you build on that knowledge and learn how to use WebSlates to display web content in your experience. The tutorial includes an interactive globe; when a person in your experience clicks on the globe, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate. 
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/066-attendees-at-globe.png)
 
