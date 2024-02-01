@@ -120,10 +120,11 @@ For this tutorial, the only package you need is the Mesh toolkit package, and it
 
 ## Scenes in the project
 
-1. Open the **Mesh201** project in Unity. If you have more than
-    one version of Unity installed, be sure to open the project with `Unity 2022.3.7f1` which is required for this tutorial.
+1. Open the **Mesh201** project in Unity. If you have more than  one version of Unity installed, be sure to open the project with `Unity 2022.3.7f1` which is required for this tutorial.
 
-2. In the **Assets** folder, note that there are two scenes available: **Starting Point** and **Finished Project**.
+    **WARNING**: The project could take 15 minutes or slightly longer to load due to large asset sizes. If you need to, change your Sleep mode setting so that the computer doesn't go to sleep while the project is loading. If this happens, it could cause the project to not load properly.
+    
+1. In the **Assets** folder, note that there are two scenes available: **Starting Point** and **Finished Project**.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/004-tutorial-scenes.png)
 
