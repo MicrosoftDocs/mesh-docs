@@ -31,7 +31,7 @@ The Mesh samples are a great way to learn about the different kinds of Mesh Expe
 
 1. In the Unity Hub, select **Open** > **Add project from disk**, and then navigate to the folder you extracted that contains the samples.
 
-1. Open the sample project you want. 
+1. Open the sample project you want.
 
 1. In Unity, navigate to **Assets** > **Scenes** and then open the scene you want---this will vary from sample to sample. For example, in the *Science Building* project, you would open the **ScienceBuilding** scene.
 
