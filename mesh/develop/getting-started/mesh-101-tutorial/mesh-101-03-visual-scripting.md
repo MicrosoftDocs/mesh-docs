@@ -485,7 +485,7 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
 
 This completes the graph.
 
-    ![A screen shot](../../../media/sample-mesh-101/516-graph-completed.png)
+![A screen shot](../../../media/sample-mesh-101/516-graph-completed.png)
 
 ### Test your work
 
