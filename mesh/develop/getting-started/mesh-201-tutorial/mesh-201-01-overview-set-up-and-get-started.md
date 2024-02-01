@@ -9,7 +9,7 @@ ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web
 ---
 
-# Mesh 201 Tutorial Chapter 1: Overview and setup
+# Mesh 201 Tutorial Chapter 1: Overview, set up and get started
 
 If you completed the [Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md), you got up and running with creating a Mesh experience and gaining a solid understanding of Interactables, Physics, Visual Scripting, and more. In this tutorial, you build on that knowledge and learn how to use WebSlates to display web content in your experience. The tutorial includes an interactive globe; when an event attendee clicks on the globe, the coordinates (latitude and longitude) of the location they clicked are captured and added to a Bing Maps URL as parameters. An HTTP request is then made using that URL, and a map of the selected area is downloaded from Bing Maps to a nearby WebSlate. 
 
@@ -81,7 +81,7 @@ Download Microsoft Mesh on PC
 
     ![______](../../../media/mesh-201/001A-toolkit-in-github.png)
 
-    You can either clone the repo or download a Zip file of the Mesh Toolkit samples. Cloning the repo will probably take longer, but in the future, you can get the latest changes by updating the repo instead of downloading the latest Zip file. Note that we're not currently accepting code contributions to our samples. If you have any feedback or if you run into any issues with the samples or the Mesh toolkit, do the following: in a Unity project that has the Mesh toolkit package installed, select Mesh Toolkit -> Give feedback to Microsoft and then use the feedback link in the Mesh toolkit to let us know.
+    You can either clone the repo or download a Zip file of the Mesh Toolkit samples. Cloning the repo will probably take longer, but in the future, you can get the latest changes by updating the repo instead of downloading another Zip file. Note that we're not currently accepting code contributions to our samples. If you have any feedback or if you run into any issues with the samples or the Mesh toolkit, do the following: in a Unity project that has the Mesh toolkit package installed, select **Mesh Toolkit** > **Give feedback to Microsoft** and then use the feedback link in the Mesh toolkit to let us know.
 
 **To download the Zip file**:
 
@@ -109,8 +109,8 @@ Download Microsoft Mesh on PC
 
     ![A screenshot of a computer Description automatically generated](../../../media/mesh-201/068-copy-url.png)
 
-1. On your C: drive, create a folder with a one-word name (for example, "Mesh201"). We recommend using a short name to avoid running into a problem with the Windows path length limit, which is 256 characters.
-1. In the newly created folder, create a Git repo and then clone the repo by pasting the URL you copied after the *git clone* command in Git Bash and then pressing the Enter key.
+1. We recommend that you create a folder on your C: drive named "Mesh Samples" and then clone the repo to that folder. This is a good name for two reasons: it's short, so it avoids running into a problem with the Windows path length limit, which is 256 characters. Also, there are other Mesh samples in addition to the Mesh 201 tutorial, so all your samples are located in one place.
+1. In the newly created folder, create a Git repo and then clone the repo by pasting the copied URL after the *git clone* command in Git Bash and then pressing the Enter key.
 
     ![A screenshot of a computer Description automatically generated](../../../media/mesh-201/069-git-bash-with-clone-command.png)
 
