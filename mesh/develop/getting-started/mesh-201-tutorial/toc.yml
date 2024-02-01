@@ -1,17 +1,14 @@
 items: 
-  - name: 1. Overview and setup
-    href: mesh-201-01-overview-and-setup.md
+  - name: 1. Overview, set up, and get started
+    href: mesh-201-01-overview-set-up-and-get-started.md
     displayName: tutorial, getting started, basics
-  - name: 2. Prepare the project
-    href: mesh-201-02-prepare-the-project.md
+  - name: 2. Load a local non-shared HTML file into a WebSlate
+    href: mesh-201-02-webslate-1.md
     displayName: tutorial, getting started, basics
-  - name: 3. Load a local non-shared HTML file into a WebSlate
-    href: mesh-201-03-webslate-1.md
-    displayName: tutorial, getting started, basics
-  - name: 4. Load a local shared HTML file into a WebSlate
-    href: mesh-201-04-webslate-2.md
-  - name: 5. Load a URL from a 3D asset
-    href: mesh-201-05-webslate-3.md
+  - name: 3. Load a local shared HTML file into a WebSlate
+    href: mesh-201-02-webslate-2.md
+  - name: 4. Load a URL from a 3D asset
+    href: mesh-201-04-webslate-3.md
 
 
 

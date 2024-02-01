@@ -9,25 +9,25 @@ ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
 ---
 
-# Mesh 201 Tutorial Chapter 5: Load a URL from a 3D asset
+# Mesh 201 Tutorial Chapter 4: Load a URL from a 3D asset
 
-In this chapter, we move forward to Station 1.2 and explore a way to load data from the web into a WebSlate. There's a 3D GameObject in the scene that represents the planet Earth. We'll update a script so that when you click anywhere on the **Earth** object, the coordinates of the location you clicked are saved, a call is made to the Bing Maps API, and the geographical area related to the coordinates appears on a WebSlate located close by.
+In this chapter, we move forward to Station 1.3 and explore a way to load data from the web into a WebSlate. There's a 3D GameObject in the scene that represents the planet Earth. We'll update a script so that when an event attendee clicks on the globe, the coordinates (latitude and longitude) of the location they clicked are captured and added to a Bing Maps URL as parameters. An HTTP request is then made using that URL, and a map of the selected area is downloaded from Bing Maps to a nearby WebSlate.
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/064-station-one-two-play-mode.png)
 
 ## Try out the project
 
-1. In the **Scene** window, navigate to station 1.2. It's on the opposite side of the sphere terrace from the first two stations.
+1. In the **Scene** window, navigate to station 1.3. It's on the opposite side of the sphere terrace from the first two stations.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/049-station-one-two-overhead-view.png)
 
-1. Adjust your view so that you're directly in front of and looking at Station 1.2.
+1. Adjust your view so that you're directly in front of and looking at Station 1.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/050-station-one-two-closeup.png)
 
     As you can see, there's already a WebSlate in the scene with some informational text above it, as well as the **Earth** object. Let's run the project and see what happens.
 
-1. Click the Unity editor Play button. You're initially placed on the other side of the sphere terrace, so you'll have to navigate back to Station 1.2. The WebSlate displays the Bing Maps website.
+1. Click the Unity editor Play button. You're initially placed on the other side of the sphere terrace, so you'll have to navigate back to Station 1.3. The WebSlate displays the Bing Maps website.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/051-webslate-with-bing-maps-loaded.png)
 
@@ -37,8 +37,8 @@ In this chapter, we move forward to Station 1.2 and explore a way to load data f
 
 ## Explore the Earth script
 
-1. In the **Hierarchy**, collapse the GameObject named **1.1 - StaticContentWebslate**.
-1. Expand **1.2 - LoadURL** and note that it has child objects named **EarthActions** and **Earth**. Each of these objects has a Script Machine attached. 
+1. In the **Hierarchy**, collapse the GameObject named **1.2 - StaticContentWebslate**.
+1. Expand **1.3 - LoadURL** and note that it has child objects named **EarthActions** and **Earth**. Each of these objects has a Script Machine attached. 
 1. Select **Earth**, and then, in the **Inspector**, navigate to the **Script Machine** component and click its **Edit Graph** button.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/052-edit-graph-button.png)
@@ -101,9 +101,9 @@ Now we just need to ensure that this URL (which, naturally, changes every time *
 
 1. Save the project and then press the Unity Editor Play button.
 
-1. Navigate to Station 1.2 and position yourself in front of it. 
+1. Navigate to Station 1.3 and position yourself in front of it. 
 
-1. Click various places on the **Earth** object. As noted earlier, each time you click, the coordinates of the clicked spot (latitude and longitude) are saved, a call is made to the Bing Maps API, that API returns a map based on the coordinates, and the map is loaded into the WebSlate.
+1. Click various places on the **Earth** object. As noted earlier, each time you click, the coordinates (latitude and longitude) of the location you clicked are captured and added to a Bing Maps URL as parameters. An HTTP request is then made using that URL, and a map of the selected area is downloaded from Bing Maps to a nearby WebSlate.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/064-station-one-two-play-mode.png)
 
