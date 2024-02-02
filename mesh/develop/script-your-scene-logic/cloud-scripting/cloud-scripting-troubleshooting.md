@@ -145,7 +145,7 @@ Export data to csv.
 
 Skip if you checked "Enable App Monitoring" during deployment.
 
-A Log Analytics workspace is required for this setup. If you don't have an existing workspace, follow the official [guide](https://learn.microsoft.com/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal).
+A Log Analytics workspace is required for this setup. If you don't have an existing workspace, follow the official [guide](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal).
 
 1. Open Azure Portal and navigate to the AppService resource in which your Mesh Cloud Scripting Service is running.
 2. Click the "Monitoring" tab and scroll to the bottom of the page. Click the "Configure Azure Monitor" button
