@@ -32,8 +32,8 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
-| Mesh toolkit package      |   5.2315.0     | 2023-1-29  |
-| Mesh (PC/Quest)   |  5.2315.0       |  2023-1-29  |
+| Mesh toolkit package      |   5.2401.0     | 2023-1-29  |
+| Mesh (PC/Quest)   |  5.2401.0       |  2023-1-29  |
 
 ### What's new
 
