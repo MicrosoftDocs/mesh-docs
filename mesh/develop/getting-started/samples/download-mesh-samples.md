@@ -23,6 +23,10 @@ The Mesh toolkit samples repo on GitHub contains a variety of Mesh sample projec
 
 1. On your C: drive, create a folder with a one-word name (for example, "Mesh101") and then move or copy the downloaded Mesh toolkit Zip file to that folder. This is done to avoid running into a problem with the Windows path length limit, which is 256 characters. **IMPORTANT**: *Don't* place the Zip file on the Windows desktop. Behind the scenes, this creates a very long path name.
 
+We recommend that you create a folder on your C: drive named "Mesh Samples" and then move or copy the downloaded Mesh toolkit Zip file to that folder. This is a good name for two reasons: it's short, so it avoids running into a problem with the Windows path length limit, which is 256 characters. Also, the Zip file contains other Mesh samples in addition to the Mesh 201 tutorial, so all your samples are saved in one place.
+
+
+
     In the example below, the user created a folder on their C: drive named *Mesh101.* Next, they moved the downloaded Mesh toolkit Zip file to the *Mesh101* folder
 
     ![A screenshot of a computer Description automatically generated](../../../media/samples/008-toolkit-zip-in-folder.png)
