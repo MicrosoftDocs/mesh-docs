@@ -4,7 +4,7 @@ description: Learn how to load a URL from a 3D asset.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 1/29/2024
+ms.date: 2/5/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
 ---
@@ -27,7 +27,7 @@ In this chapter, we move forward to Station 4 and explore a way to load data fro
 
     As you can see, there's already a WebSlate in the scene with some informational text above it, as well as the **Earth** object. Let's run the project and see what happens.
 
-1. Click the Unity editor Play button. You're initially placed on the other side of the sphere terrace, so you'll have to navigate back to Station 4. The WebSlate displays the Bing Maps website.
+1. Click the Unity editor Play button. You're initially placed on the other side of the Sphere Terrace, so you'll have to navigate back to Station 4. The WebSlate displays the Bing Maps website.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/051-webslate-with-bing-maps-loaded.png)
 

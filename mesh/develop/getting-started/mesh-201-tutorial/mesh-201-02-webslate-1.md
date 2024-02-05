@@ -3,7 +3,7 @@ title: Mesh 201 Load a local non-shared HTML file into a WebSlate
 description: Learn about loading a local non-shared HTML file into a WebSlate.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 1/29/2024
+ms.date: 2/5/2024
 ms.topic: Tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
@@ -134,6 +134,8 @@ We have a node in the script graph set up for this--**Get Component in Children*
     This page comes from the **HTMLAsset** variable in the button's script graph.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/031-hello-world-page.png)
+
+1. When you're finished, click the Unity Editor Play button to exit Play mode.
 
 ## Next steps
 
