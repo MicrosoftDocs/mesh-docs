@@ -3,7 +3,7 @@ title: Mesh toolkit Dart Room sample
 description: Learn about the Mesh toolkit Dart Room sample.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 1/29/2024
+ms.date: 2/2/2024
 ms.topic: overview
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, dartroom
@@ -28,6 +28,10 @@ In this project, you'll find:
 ![A screenshot of the gravity globe in the Dartroom sample.](../../../media/samples/004-dartroom-gravity-globe.png)
 
 The [Samples Overview](samples-overview.md) page contains instructions on how to download the Mesh toolkit which contains this sample.
+
+## Warning about sample load time
+
+The sample could take 15 minutes or slightly longer to load into Unity due to large asset sizes. If you need to, change your Sleep mode setting so that the computer doesn't go to sleep while the project is loading. If this happens, it could cause the project to not load properly.
 
 ## Contributions
 
