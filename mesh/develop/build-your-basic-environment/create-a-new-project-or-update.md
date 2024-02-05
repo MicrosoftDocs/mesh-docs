@@ -3,7 +3,7 @@ title: Create a new Unity project for your Mesh Experience
 description: Learn how to create a new Mesh project in Unity.
 author: typride
 ms.author: vinnietieto
-ms.date: 2/2/24
+ms.date: 2/2/2024
 ms.service: mesh
 ms.topic: How to
 keywords: Microsoft Mesh, Unity, M365, Immersive spaces, Avatars, getting started, documentation, features
