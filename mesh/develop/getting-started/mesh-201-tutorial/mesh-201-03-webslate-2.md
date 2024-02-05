@@ -19,7 +19,7 @@ In the previous chapter of this tutorial, you enabled a button to load a local n
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/032-station-one-one.png)
 
-Just as in the previous chapter, there's already a GameObject in place with some descriptive text but this time there are two buttons: **LoadButton1** and **LoadButton2**. There's also a WebSlate already in place. We'll complete the station by updating a script graph that's attached to one of the buttons. When an attendee clicks either button, a web page will load and all the other attendees in the experience can *share* in viewing the new page. Each button at this Station loads a slightly different type of content.
+Just as in the previous chapter, there's already a GameObject in place with some descriptive text but this time there are two buttons: **LoadButton1** and **LoadButton2**. There's also a WebSlate already in place. We'll complete the Station by updating a script graph that's attached to one of the buttons. When an attendee clicks either button, a web page will load and all the other attendees in the experience can *share* in viewing the new page. Each button at this Station loads a slightly different type of content.
 
 1. In the **Hierarchy**, collapse the GameObject named **2 - LocalWebslate**.
 1. Expand **3 - StaticContentWebslate**. The **WebSlateFramed** object that has been pre-added is located here.
@@ -50,7 +50,7 @@ Our first task is to add a *Mesh Interactable Body: Is Selected* node. As discus
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/027-is-selected-local-or-global.png)
 
-For Station 1.0, we wanted only the person triggering the event to experience it, so the script contained the node that says "Is Selected *Locally*". This time, we want *all* attendees to share the event, so we'll select the other node for this--the one that simply says "Is Selected".
+For Station 2, we wanted only the person triggering the event to experience it, so the script contained the node that says "Is Selected *Locally*". This time, we want *all* attendees to share the event, so we'll select the other node for this--the one that simply says "Is Selected".
 
 1. Click and hold on the Data Output port of the **Game Object** node, and then release the mouse button. This opens the Fuzzy Finder. **WARNING**: Once you open the Fuzzy Finder, don't click anywhere outside of the Unity interface. This closes the Fuzzy Finder and causes unpredictable behavior in the Script Graph.
 1. In the Fuzzy Finder, search for "Mesh Interactable Body: Is Selected" and then select it. 

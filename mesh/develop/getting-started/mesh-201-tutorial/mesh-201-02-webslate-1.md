@@ -20,7 +20,7 @@ Now that you're all set up and have had a chance to try out the project, let's m
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/014-station-one-front-view.png)
 
-    The station already has an object in place that has some descriptive text and a **Load** button. We'll complete the station by adding a WebSlate below the button and then updating a script graph attached to the **Load** button so that when the user clicks the button, a non-shared HTML file loads into the WebSlate.
+    The Station already has an object in place that has some descriptive text and a **Load** button. We'll complete the Station by adding a WebSlate below the button and then updating a script graph attached to the **Load** button so that when the user clicks the button, a non-shared HTML file loads into the WebSlate.
 
     All the WebSlates that we'll be adding and/or working with are contained within the hierarchy of the **MeshWebSlates** GameObject. 
 
@@ -35,7 +35,7 @@ Now that you're all set up and have had a chance to try out the project, let's m
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/013-search.png)
 
-1. Drag **WebSlateFramed** from the **Project** window and then, in the **Hierarchy**, drop it in the space between **1.1 - LocalWebslate** and **ChapterLabel** so that it's the first child object to **1.1 - LocalWebSlate**.  
+1. Drag **WebSlateFramed** from the **Project** window and then, in the **Hierarchy**, drop it in the space between **2 - LocalWebslate** and **ChapterLabel** so that it's the first child object to **2 - LocalWebSlate**.  
  
     ![A screenshot of a computer Description ](../../../media/mesh-201/015-webslateframed-in-hierarchy.png)
 

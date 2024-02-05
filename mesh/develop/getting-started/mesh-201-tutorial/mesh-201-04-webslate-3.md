@@ -17,7 +17,7 @@ In this chapter, we move forward to Station 4 and explore a way to load data fro
 
 ## Try out the project
 
-1. In the **Scene** window, navigate to station 4. It's on the opposite side of the sphere terrace from the first two stations.
+1. In the **Scene** window, navigate to Station 4. It's on the opposite side of the sphere terrace from the first two Stations.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/049-station-one-two-overhead-view.png)
 
@@ -131,5 +131,5 @@ Congratulations! In this Mesh 201 tutorial, you learned about loading local shar
 
 - **Challenge**
 
-    Try creating your own station with a WebSlate and a button that loads an HTML file. Be sure to share your efforts in our [Mesh Developer Forum](https://techcommunity.microsoft.com/t5/mesh-creators/welcome-to-the-microsoft-mesh-creator-discussion-space-a-hub-for/m-p/3938730)!
+    Try creating your own Station with a WebSlate and a button that loads an HTML file. Be sure to share your efforts in our [Mesh Developer Forum](https://techcommunity.microsoft.com/t5/mesh-creators/welcome-to-the-microsoft-mesh-creator-discussion-space-a-hub-for/m-p/3938730)!
 
