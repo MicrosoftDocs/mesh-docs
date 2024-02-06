@@ -4,7 +4,7 @@ description: Learn about adding a few basic features that are necessary for the 
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 12/4/2023
+ms.date: 2/5/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
@@ -98,7 +98,7 @@ learn about Mesh Interactables and Mesh Physics.
 
 ![A screenshot of a computer Description ](../../../media/sample-mesh-101/014-chapter-4-sphere-terrace-v2.png)
 
-### Choose the NavMesh layer
+### Choose the GroundCollision layer
 
 For this project, we want our avatar to be able to walk around only on
 the floors inside the *Sphere Terrace* objects and the floor of a
@@ -118,7 +118,7 @@ add the *Sphere Terrace* we'll be working with in Chapter 3 to the GroundCollisi
 
     ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/image025.png)
 
-You don't have to add the other walkable GameObjects to the NavMesh
+You don't have to add the other walkable GameObjects to the GroundCollision
 layer---we've already done it for you.
 
 ### Add Mesh Emulation Mode capability

@@ -42,13 +42,13 @@ This tutorial assumes that you have the intermediate to advanced Unity skills ne
 
 If you've been developing Mesh experiences for a while and are familiar not only with Unity Visual Scripting in general but also with some of the more common Mesh-specific Visual Scripting nodes, you can probably complete this tutorial successfully without first having gone through the Mesh 101 tutorial. If you have any doubt, we highly recommend that you complete the Mesh 101 tutorial. The following features were covered in the Mesh 101 documentation and are also included in this tutorial project but won't be covered again in the documentation. If you feel a need to understand these better, click the links.
 
-[Turn object icons off for a clearer view](./mesh-201-02-prepare-the-project.md#turn-object-icons-off-for-a-clearer-view)
+[Turn object icons off for a clearer view](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#turn-object-icons-off-for-a-clearer-view)
 
-[Choose the right layer for objects with walkable or teleportable surfaces.](./mesh-201-02-prepare-the-project.md#choose-the-groundcollision-layer).
+[Choose the right layer for objects with walkable or teleportable surfaces.](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#choose-the-groundcollision-layer).
 
-[Mesh Emulation Mode](./mesh-201-02-prepare-the-project.md#mesh-emulation-mode-capability)
+[Mesh Emulation Mode](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#add-mesh-emulation-mode-capability)
 
-[Mesh Thumbnail Camera](./mesh-201-02-prepare-the-project.md#add-the-mesh-thumbnail-camera)
+[Mesh Thumbnail Camera](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#add-the-mesh-thumbnail-camera)
 
 ### Hardware requirements
 
@@ -150,13 +150,14 @@ We recommend that you open the **FinishedProject** scene and run it to get an id
 
 1. Move in closer to each Station and then click their **Load** buttons and notice that this action loads HTML pages into the WebSlates.
 
-    ![A screenshot of a computer Description ](../../../media/mesh-201/070-stations-two-and-three-load-buttons.png) 
+    ![A screenshot of a computer Description ](../../../media/mesh-201/070-stations-two-and-three.png) 
 
 1. Station 4 is located on the opposite side of the Sphere Terrace:
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/049-station-one-two-overhead-view.png) 
 
-    At this station, click several different spots on the **Earth** object--you can rotate it by left-clicking on it and then dragging. Notice how each time you click, a map of that area appears on the nearby WebSlate.
+    Navigate to this area and then position yourself so that you're facing the Station.
+1. Click several different spots on the **Earth** object--you can rotate it by left-clicking on it and then dragging. Notice how each time you click, a map of that area appears on the nearby WebSlate.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/051-webslate-with-bing-maps-loaded.png) 
 
