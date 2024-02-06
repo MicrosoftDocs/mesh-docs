@@ -35,7 +35,7 @@ Now that you're all set up and have had a chance to try out the project, let's m
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/013-search.png)
 
-1. Drag **WebSlateFramed** from the **Project** window and then, in the **Hierarchy**, drop it in the space between **2 - LocalWebslate** and **ChapterLabel** so that it's the first child object to **2 - LocalWebSlate**.  
+1. Drag **WebSlateFramed** from the **Project** window and then, in the **Hierarchy**, drop it in the space between **2 - LocalWebslate** and **ChapterLabel** so that it's the first child object of **2 - LocalWebSlate**.  
  
     ![A screenshot of a computer Description ](../../../media/mesh-201/015-webslateframed-in-hierarchy.png)
 
