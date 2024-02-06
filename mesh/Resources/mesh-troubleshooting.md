@@ -2,9 +2,9 @@
 title: Troubleshooting & FAQs - Microsoft Mesh
 description: Various help guides and FAQ answers regarding Mesh events.
 ms.service: mesh
-author: typride
+author: qianw211
 ms.author: qianwen
-ms.date: 1/30/2024
+ms.date: 2/2/2024
 ms.topic: Troubleshooting
 keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
 ---
@@ -214,6 +214,12 @@ The data should be your version of the following:
 - **Tenant ID:**
 - **Trace ID:**
 - **Date:**
+
+### Why don't avatars have legs?
+
+Avatars add a new layer of choice to your meetings, both in 2D and 3D immersive spaces. We are continuously researching and collecting feedback on ways to best represent yourself in Mesh and Teams whether it's improving your likeness, adding options for clothing, creating more realistic avatars, or including full body representation. Driving improvements in each of these areas comes with its own set of challenges. In particular, representing legs today is a surprisingly complex engineering challenge - inferring leg position without any data that helps describe actual leg position.
+
+Our goal is to use the latest technologies to their fullest to represent users' likenesses in Mesh and Teams and we will continue to drive toward that goal. Please continue to share your feedback with us so we can evolve how people can visually represent themselves in meetings.
 
 ### Audio setup in Mesh FAQ
 
