@@ -198,7 +198,7 @@ If you prefer, you can create a custom thumbnail, then save it in a designated "
 
     ![A screenshot of the Mesh Uploader widened so the user can see the thumbnail options better.](../../media/make-your-environment-available/045-thumbnail-path-change.png)
 
-1. Click the **Add provisional thumbnails** button. A **Success** dialog appears telling you that thumbnails were generated successfully.
+1. Click the **Add guidance thumbnails** button. A **Success** dialog appears telling you that thumbnails were generated successfully.
 
     ![A screenshot of the Mesh Uploader widened so the user can see the thumbnail options better.](../../media/make-your-environment-available/046-thumbnail-success-dialog.png)
 
