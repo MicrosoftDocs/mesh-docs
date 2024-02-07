@@ -111,7 +111,7 @@ If you create repeated builds of the same Environment but want to change the pla
 
 1.  If the Environment builds and publishes successfully, the **Build and Upload Results** window appears and confirms the results.
 
-    ![A screenshot of the dialog shown with the sucessful results of the build and upload operation](../../media/make-your-environment-available/068-build-and-upload-results.png)
+    ![A screenshot of the dialog shown with the sucessful results of the build and upload operation](../../media/make-your-environment-available/005-build-succeeded.png)
 
     However, you may get **Warning** or even **Failed** indicators in this window. To learn more about what these mean and how to make needed corrections, see the article named [Understanding your Build and Publish results](./understanding-build-and-publish-results.md).
 
