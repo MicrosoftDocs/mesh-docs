@@ -53,10 +53,6 @@ You may have noticed in the above images that there's a **Warning** indicator ne
 
 ![A screenshot of the build and upload results window with the Mesh uploader extensions section partly expanded.](../../media/make-your-environment-available/048-build-and-upload-expanded.png)
 
-If you see a scroll bar next to the extensions, it means not all of them are displayed. To see the whole list, drag the bottom of the window downwards until the scroll bar disappears.
-
-![A screenshot of the build and upload results window with the Mesh uploader extensions section fully expanded..](../../media/make-your-environment-available/049-build-and-upload-results-full-window.png)
-
 If you hover the cursor over the text in an indicator, a popup tip appears. (This also works for certin **Build**, **Upload** and **Publish** indicators.)
 
 ![A screenshot of the build and upload results window with a popup tip appearing for the Content Performance indicator.](../../media/make-your-environment-available/064-content-popup-help.png)
