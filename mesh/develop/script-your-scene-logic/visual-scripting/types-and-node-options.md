@@ -21,7 +21,7 @@ Here are some things you can do to avoid the "out-of-sync database" issue:
 
     `Assets\Unity.VisualScripting.Generated\VisualScripting.Flow\UnitOptions.db`
 
-    As of version 23.15, this file should *not* be kept in version control. You should also exclude the folder named `Assets\Unity.VisualScripting.Generated` from version control. Both of the above are regenerated on demand as needed. We recommend that you put the `Assets\Unity.VisualScripting.Generated` folder into `.gitignore` or its equivalent in your version control system.
+    As of version 5.2315.0, this file should *not* be kept in version control. You should also exclude the folder named `Assets\Unity.VisualScripting.Generated` from version control. Both of the above are regenerated on demand as needed. We recommend that you put the `Assets\Unity.VisualScripting.Generated` folder into `.gitignore` or its equivalent in your version control system.
 
 - On the **Edit** > **Project Settings** > **Visual Scripting** page, don't change anything in the **Type Options** or **Node Library** sections and don't click the **Regenerate Nodes** button.
 
