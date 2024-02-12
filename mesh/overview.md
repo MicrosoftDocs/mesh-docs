@@ -34,10 +34,6 @@ Spatial awareness through directionality and distance enables multiple small gro
 
 This co-presence can lead to serendipitous moments of conversation or even just the deepened connection of a shared experience. 3D environments also remove distractions and help participants focus on fewer things—specifically the people and objects that surround them, driving a higher sense of **immersion**.
 
-## Immersive spaces in Teams or Mesh
-
-With two major entrypoints to immersive experiences, one in Microsoft Teams through the View selector and one in the Microsoft Mesh application, what should you use?
-
 ## Use immersive spaces in Microsoft Teams
 
 With [immersive spaces in Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams), up-to 16 coworkers can hop into stunning pre-made virtual environments, offering icebreakers and activities with two clicks of a button, right from their Teams meeting.
@@ -60,7 +56,7 @@ Immersive spaces in Teams is:
 
 - **Provides Icebreakers and activities**, ready for you to enjoy and share with your teams.
 
-## Use immersive spaces Microsoft Mesh
+## Use immersive spaces in Mesh
 
 Use immersive spaces in Mesh for medium-to-large events with up-to 200 people to create custom experiences that are tailored to your specific business needs such as employee events, training, guided tours, or internal product showcases.
 
