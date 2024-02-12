@@ -4,7 +4,7 @@ description: Learn how to turn your environment into an Asset and then publish i
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 1/11/2024
+ms.date: 2/6/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, environment, build, publish, build and publish, uploader, Mesh uploader, thumbnail
 ---
@@ -101,6 +101,8 @@ As explained in the article named [Add the Mesh toolkit package](../build-your-b
 
         ![A screen shot of the PC and Android platforms buttons with both platforms selected](../../media/make-your-environment-available/039-build-both-on.png)
 
+If you create repeated builds of the same Environment but want to change the platform(s) they're being created for, make sure you choose the correct **Build for Platforms** buttons.
+
 ### Build and publish the Environment
 
 1. Select the **Build and Publish** button.
@@ -119,14 +121,7 @@ As explained in the article named [Add the Mesh toolkit package](../build-your-b
     > [!IMPORTANT]
     > Every time you update the Environment, it can affect future events that reference this Environment.
     >
-> :::image type="content" source="../../media/make-your-environment-available/uploader_warning_about_updating_environment.png" alt-text="Screenshot of warning about updating your environment.":::
-
-After your environment was uploaded, you will be able to see for what platforms it has been built.
-
-![A screenshot of supported platforms](../../media/make-your-environment-available/040-show-platforms-built-for.png)
-
-When uploading repeatedly to the same Environment, please note that only the platforms from the last iteration will be available.
-For example, if you built and publish an Environment for PC platform, but later want to include Android, you will need to build for both PC and Android. Building for Android only will cause the PC build to be lost.
+    > :::image type="content" source="../../media/make-your-environment-available/uploader_warning_about_updating_environment.png" alt-text="Screenshot of warning about updating your environment.":::
 
 ### Environment thumbnails
 
@@ -203,7 +198,7 @@ If you prefer, you can create a custom thumbnail, then save it in a designated "
 
     ![A screenshot of the Mesh Uploader widened so the user can see the thumbnail options better.](../../media/make-your-environment-available/045-thumbnail-path-change.png)
 
-1. Click the **Add provisional thumbnails** button. A **Success** dialog appears telling you that thumbnails were generated successfully.
+1. Click the **Add guidance thumbnails** button. A **Success** dialog appears telling you that thumbnails were generated successfully.
 
     ![A screenshot of the Mesh Uploader widened so the user can see the thumbnail options better.](../../media/make-your-environment-available/046-thumbnail-success-dialog.png)
 
