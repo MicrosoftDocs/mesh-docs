@@ -15,7 +15,7 @@ This article will help you configure your development environment and start iter
 
 ## Software dependencies
 
-1. [.NET 6.0 SDK Windows](https://dotnet.microsoft.com/download)a3
+1. [.NET 6.0 SDK Windows](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 1. [Azure CLI 2.40.0](/cli/azure/install-azure-cli)
 
 ## Create a Scene with Mesh Cloud Scripting
