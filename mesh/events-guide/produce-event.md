@@ -26,7 +26,7 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 ## Event Producers tools
 
 - **[Host panel:](#host-panel)** See the participants in your event and use the host panel toolbar to access the *[Mute all](#mute-all)*, *[Hand Raise](#hand-raise)*, *[Megaphone](#megaphone)*, *[Broadcast](#broadcast)*, and  *[Share](#share)* buttons.
-- **[Control panel](#control-panel):** Control the elements that were added in a Customization session. [Play a video](#control-artifacts-in-the-control-panel), for example, or control custom objects that you may have added!
+- **[Control panel](#control-panel):** Control the elements that were added in a Customization session. [Play a video](#control-objects-in-the-control-panel), for example, or control custom objects that you may have added!
 
 ## Common event scenarios
 
@@ -75,7 +75,7 @@ Mute all attendees in the event. Hosts in the event can still use their mics and
 
 **Disabled:** Attendees can now use their microphone.
 
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-mute-all-2314.png" alt-text="Mute all button in host panel":::
+:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-mute-all-2314.png" alt-text="Mute all button highlighted in host panel":::
 
 #### Hand Raise
 
@@ -85,7 +85,7 @@ Enable or disable Hand Raise for participants. Hand Raise is ideal for Question 
 
 **Hand raise disabled:** Participants cannot raise their hand.
 
-:::image type="content" source="../media/common-event-scenarios\producer-tools-hand-raise-2314.png" alt-text="Mute all button in host panel":::
+:::image type="content" source="../media/common-event-scenarios\producer-tools-hand-raise-2314.png" alt-text="Hand raise button highlighted in host panel.":::
 
 When an attendee has their hand raised, you'll see the hand raise notification next to their name in the host panel. In a single room event, you'll also see hand raise icon above their avatar.
 
@@ -94,7 +94,7 @@ When an attendee has their hand raised, you'll see the hand raise notification n
 > [!TIP]
 > In multi-room events, you won't see any attendee avatars until they are broadcast.
 
-Learn how to [use Hand Raise for question and answer (Q&A) scenarios](common-event-scenarios.md#using-hand-raise-for-Q&A)
+Learn how to [use Hand Raise for question and answer (Q&A) scenarios](common-event-scenarios.md#using-hand-raise-for-qa)
 
 #### Megaphone
 
@@ -133,7 +133,7 @@ When you request an attendee to broadcast or megaphone, you'll receive a notific
 
 #### Share
 
-Share your screen or a specific window on your PC to all participants. Screenshare requires the Screenshare object that is [added when you customize your Event or Template](customize-event.md#add-content-with-environment-editor).
+Share your screen or a specific window on your PC to all participants. Screenshare requires the Screenshare object that is [added when you customize your Event or Template](customize-event.md#add-content-with-editor).
 
 **Enabled:** Host screen or window will be shown to all participants.
 
