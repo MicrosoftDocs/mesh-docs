@@ -85,7 +85,7 @@ See [how to set up immersive spaces in Microsoft Mesh](Setup/Content/setup-m365-
 
     :::image type="content" source="media/get-started-developing-mesh/image040-unity-overview-hero.png#lightbox" alt-text="Overview image of Unity development environment for Mesh":::
 
-- **Customize and create events that tell stories** by adding objects that can be used in your events with no-code in-experience tools like screen shares, images, and videos.
+- **Create and customize events that tell stories** by adding objects that can be used in your events with no-code in-experience tools like screen shares, images, and videos.
 
     :::image type="content" source="user-guide/media/Events-customization.gif" alt-text="Customization":::
 
