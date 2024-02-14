@@ -15,19 +15,19 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1eO6Z]
 
-We are re-imagining the way employees come together with [Microsoft Mesh](https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh), a new three-dimensional (3D) immersive experience.
+We are re-imagining the way employees come together with [Microsoft Mesh](https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh).
 
-Microsoft Mesh is not merely another innovation, but a solution that enables your distributed workforce to connect like never before in a 3D immersive space, helping virtual meetings and events feel more like face-to-face connections.
+Microsoft Mesh enables your distributed workforce to connect in a 3D immersive space using the tools you use everyday: Microsoft Teams, a PC, or Meta headset, helping virtual meetings and events feel more like face-to-face connections.
 
-### Why immersive spaces?
+### Why immersive?
 
-Immersive spaces have unique attributes that create a perception of being physically together in a 3D digital space, including spatial interaction, co-presence, and immersion. Digital engagement is evolving from audio to video, and now to spatial interaction.
+Immersive experiences have unique attributes that create a perception of being physically together in a 3D digital space, including spatial interaction, co-presence, and immersion. Digital engagement is evolving from audio to video, and now to spatial interaction.
 
 **Spatial awareness** through directionality and distance enables multiple small group discussions in the same place, adding familiar human elements to digital connections. Spending time in the same 3D environment also creates a powerful sense of togetherness, or co-presence, even without actively speaking.
 
 **Co-presence** can lead to serendipitous moments of conversation or even just the deepened connection of a shared experience. 3D environments also remove distractions and help participants focus on fewer things—specifically the people and objects that surround them, driving a higher sense of immersion.
 
-## Immersive spaces & custom immersive experiences
+## Immersive spaces in Teams or custom immersive experiences?
 
 |**[Immersive spaces in Teams](#use-immersive-spaces-in-microsoft-teams)** |[**Custom immersive experiences in Mesh**](#what-can-you-do-in-immersive-spaces-in-mesh)  |
 |:---------|:---------|
@@ -52,7 +52,7 @@ See [how to set up immersive spaces in Microsoft Teams today](/microsoftteams/me
 
 - **Join right from Microsoft Teams** – a tool you use every day – bringing co-presence to hybrid or remote teams.
 
-## Custom immersive experiences
+## Custom immersive experiences in Mesh
 
 Use Microsoft Mesh for medium-to-large events with up-to 200 people to create custom experiences that are tailored to your specific business needs such as employee events, training, guided tours, or internal product showcases.
 
