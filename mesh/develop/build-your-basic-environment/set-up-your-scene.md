@@ -15,30 +15,7 @@ The operations below are required for new or existing projects.
 
 ## Guidelines for avatar movement
 
-The scene should have Colliders for the player to walk and teleport on. In general, a low poly Mesh Collider that tightly fits the visual geometry with some rounding on the corners will produce the best results. Box Colliders work great for trivial scenarios, but can result in a number of problems such as causing the player to get stuck on the corners or defeat step height limits.  
-
-**Mesh Player CharacterController movement limits:**
-- Maximum walkable slope: < 45 degrees
-- Maximum step height: 0.3
-- Player capsule radius: 0.3
-- Player capsule height: 1.9
-
-**Suggestions for best results:**
-- Rounded corners help smooth out player movement and prevent the player from getting stuck.  
-- To block player movement, use steep slopes or a height much larger than the maximum step height.
-- Use a Capsule Collider or similar rounded shape on objects or areas the player shouldn't walk on. These shapes are unwalkable due to the slope and will cause the player to slide off them. Don't add to the GroundCollision layer.
-- Align the collision surfaces with the visual surfaces that the player will walk on. This is important in order to avoid any issues with the player's position relative to the visual surface (prevent floating or clipping).  
-
-## Supporting teleportation
-
-In order for a scene to support teleportation, teleportable surfaces (for example, the floor or the ground) must have colliders on the GroundCollision layer. In general, any object the player is allowed to walk on should be on the GroundCollision layer, unless there's a specific reason for making it non-teleportable. Visual geometry isn't teleportable and shouldn't be on the GroundCollision layer; only Colliders can be on that layer. Improper or inconsistent layering can cause undesirable effects when teleporting. 
-
-**A teleportable surface must meet the following conditions:**  
-- It must have some type of Collider attached (for example, a Mesh Collider or Box Collider).  
-- Its **Layer** must be set to GroundCollision.  
-
-Be cautious about low ceilings or tunnels; these could potentially affect player grounding and teleportation.  
-For example, player physics or the teleport arc may intersect or interact with the collider above them. There should be a small buffer of space above the player's head. The minimum height from ground to roof is roughly 3m (~2m player height + ~1m buffer).
+In order for Mesh avatars to move around and teleport in your experience successfully, it's important to follow certain design guidelines. For further details, see [Configuring for avatar movement and teleportation](./configuring-for-avatar-movement-and-teleportation.md).
 
 ## Add a Travel Point
 

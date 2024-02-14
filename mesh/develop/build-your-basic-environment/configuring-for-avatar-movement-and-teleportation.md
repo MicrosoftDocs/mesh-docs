@@ -250,12 +250,11 @@ Avatar height: 1.8
 
 ## Supporting Teleportation
 
-For a scene to support teleportation, teleportable surfaces (for example, the floor or the ground) must have colliders on the *GroundCollision* layer. There are other walkable layers, but only *GroundCollision* is teleportable. Visual geometry isn't teleportable and shouldn't be on the *GroundCollision* layer; only Colliders can be on the *GroundCollision* layer. Improper or inconsistent layering and collision can cause undesirable effects when teleporting or finding the ground.
+For a scene to support teleportation, teleportable surfaces (for example, the floor or the ground) must have colliders on the *GroundCollision* layer. There are other walkable layers, but only *GroundCollision* is teleportable. Visual geometry isn't teleportable and shouldn't be on the *GroundCollision* layer; only Colliders can be on that layer. Improper or inconsistent layering and collision can cause undesirable effects when teleporting or finding the ground.
 
 **A teleportable surface must meet the following conditions:**
 
-- It must have some type of non-trigger Collider attached (a Mesh Collider or Box Collider, for example).
-
+- It must have some type of non-trigger Collider attached (for example, a Mesh Collider or Box Collider).  
 - Its **Layer** must be set to *GroundCollision*.
 
 Be cautious of low ceilings or tunnels; these could potentially affect avatar grounding and teleportation. For example, avatar physics or the teleport arc may intersect or interact with the collider above them. The height from ground to roof for a traversable area should be more than the 2m avatar capsule height. There needs to be a small buffer of space above the avatar's head, especially if the roof is sloped instead of flat.
