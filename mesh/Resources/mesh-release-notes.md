@@ -2,16 +2,28 @@
 title: Release notes for Mesh
 description: Mesh release notes
 ms.service: mesh
-author: qianw211    
-ms.author: qianwen
-ms.date: 1/23/2023
+author: typride  
+ms.author: tmilligan
+ms.date: 02/18/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
 
 # Mesh release notes
 
-**Release notes for the Immersive spaces in Microsoft Mesh on PC & Quest 2**
+**Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.24.02 (Preview)
+
+## Version 5.24.01
+
+### Resolve product issues
+
+The following product issues have been fixed for this release:
+
+* Unexpected startup failure when launching Quest app related to conditional access now provides a more relevant error message: "Either your Quest device or Mesh app is currently blocked by your organization's AAD Conditional Access policies. Please contact your IT administrator for assistance."
+
+    This should provide more clarity when conditional access is blocking usage of the quest application, helping customers better understand why the app failed to load. (38252)
 
 ## Version 5.2315.0
 

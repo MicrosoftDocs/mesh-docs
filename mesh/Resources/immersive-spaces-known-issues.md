@@ -11,7 +11,19 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 # Active known issues and limitations - Immersive Spaces in Teams
 
+## Version 5.2401.0
+
+1. The Radio in Lakehouse plays music, but the button on it is outdented, and music notes do not rise from the top, when initially joining a meeting.
+
+    Pressing the outdented button will cause the music to stop, and the clicking sound effect will play, while the button stays outdented.
+    Pressing the button once more will cause the radio to behave as intended. (38531)
+
+1. On Quest, users may experience frame drops between 20-30 in the Lakehouse environment when facing or looking at the mini waterfall. (32899)
+
+1. When user highlights a seat but other user occupies it. Seat stays highlighted until the seated user leaves the seat. (40764)
+
 ## Version 5.2315.0
+
 ### Audio
 
 1. Users who are experiencing poor network connection may hear audio quality issues as a result.  There is currently no warning message for poor network quality. We'll be implementing this soon, as well as working continuously to improve overall audio quality.

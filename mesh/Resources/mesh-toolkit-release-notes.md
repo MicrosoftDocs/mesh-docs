@@ -16,24 +16,62 @@ For purposes of this document, there are two categories of users:
 * Creators: Technical artist and developers building with the Mesh toolkit
 * IT admins: Managers working in Azure
 
-## Version 24.1 (Preview)
-
->[!Caution]
->This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
-> 
-> **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
-
-### Version list and dates
+## Version list and dates
 
 These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
 
 >[!Note]
 >The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh toolkit package, which releases only after the matching Mesh app is available in stores.
 
-| Mesh offering/package   | Version | Date released
-| ----------- | ----------- | ----------- |
-| Mesh toolkit package      |   5.2401.0     | 2023-1-29  |
-| Mesh (PC/Quest)   |  5.2401.0       |  2023-1-29  |
+| Mesh offering/package      | Version  | Date released |
+|----------------------------|----------|---------------|
+| Mesh toolkit               | 5.2401.0 | 2023-2-18     |
+| Mesh toolkit (preview)     | 5.2402.0 | 2023-2-18     |
+| Mesh on PC/Quest           | 5.2401.0 | 2023-2-18     |
+| Mesh on PC/Quest (Preview) | 5.2402.0 | 2023-2-18     |
+
+## Mesh toolkit 5.2402.0 (Preview)
+
+>[!Caution]
+>This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
+> 
+> **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
+
+### What's new
+
+#### Visual scripting
+
+* Visual scripts are no longer completely disabled if the environment contains a ScriptMachine with a broken ("Missing") or unassigned ("None") asset graph reference. (36795)
+
+* Fixed the String | Create node, which previously only worked in the Emulator but failed to work in standalone builds. (37040)
+
+* The script node selector (Fuzzy Finder) in the script graph UI no longer includes nodes that access inherited properties or methods through types that cannot be accessed directly. (37824)
+
+* Fixed sharing tags shown in the Visual Scripting graph UI for the following Mesh Interactable Body script nodes to correctly say Shared by all clients (instead of incorrectly Local to this client): 
+    - Mesh Interactable Body | Is Activated
+    - Mesh Interactable Body | Get Equipped At
+    - Mesh Interactable Body | Is Equipped
+    - Mesh Interactable Body | Get Equip Time
+
+    The functionality of these visual script nodes is unchanged. If you need a local version of these properties, you can combine them with the Mesh Interactable Body | Is Mine property. (38589)
+
+* Fixed Script Stats panel in Mesh Emulator not displaying anything if the visual script graph UI hasn't ever been opened for that Unity project on the local machine yet. (40526)
+
+* Fixed Mesh Visual Scripting Diagnostics panel not displaying anything if the visual script graph UI hasn't ever been opened for that Unity project on the local machine yet. (40527)
+
+* Fixed the On Interval node occasionally triggering twice in short sequence after an interval has elapsed. (40894)
+
+#### Mesh uploader
+
+* The ContentVersion has been incremented to 1.25.0; Newly published content will only be visible in recent MeshBrowsers.
+
+* Improved handling and reporting of failures during Environment creation.
+
+* Add a prompt to open the Mesh Portal if we failed to find any collections for the user.
+
+* Improved message when cancelling the dialog to select a new thumbnail folder.
+
+## Mesh toolkit 5.2401.0
 
 ### What's new
 
