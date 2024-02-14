@@ -16,7 +16,11 @@ For purposes of this document, there are two categories of users:
 * Creators: Technical artist and developers building with the Mesh toolkit
 * IT admins: Managers working in Azure
 
-## Version 24.1 (Preview)
+## Verison 24.2 (Preview)
+
+
+
+## Version 24.1
 
 >[!Caution]
 >This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
