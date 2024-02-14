@@ -42,7 +42,7 @@ For example, player physics or the teleport arc may intersect or interact with t
 
 ## Add a Travel Point
 
-Every scene must have at least one *Travel Point*, which is used to configure avatar spawning behavior. If you're new to travel points, we recommend that you [read our TravelPoint and TravelGroup article](../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-travel-points.md) and follow the instructions there.
+Every scene must have at least one *Travel Point*, which is used to configure avatar spawning behavior. If you're new to travel points, we recommend that you [read our Travel Point and Travel Group article](../enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-travel-points.md) and follow the instructions there.
 
 ## Add the Mesh Thumbnail Camera
 
