@@ -22,7 +22,7 @@ If you open a Prefab definition, then edit the embedded visual script, and then 
 1. Select the Prefab instance.
 1. In the **Inspector**, click the **Overrides** drop-down.
 1. Select the "Script Machine" entry (or entries).
-1. Click Script Machine's  **Revert** button.
+1. Click Script Machine's **Revert** button.
 
 ![Screen shot of the Prefab overrides menu with script machine selected.](../../../media/mesh-scripting/visual-scripting/009-prefab-script-overrides.png).
 
