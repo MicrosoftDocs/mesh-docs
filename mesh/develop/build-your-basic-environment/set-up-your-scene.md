@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, Unity, getting started, Unity, scene, teleportation, n
 
 The operations below are required for new or existing projects.
 
-## Guidelines for avatar movement
+## Guidelines for avatar movement and teleportation
 
 In order for Mesh avatars to move around and teleport in your experience successfully, it's important to follow certain design guidelines. For further details, see [Configuring for avatar movement and teleportation](./configuring-for-avatar-movement-and-teleportation.md).
 

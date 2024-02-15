@@ -149,7 +149,7 @@ These are the offerings and packages currently available. There may be slight di
 
 #### Scripting
 
-* The NavMesh layer is now called the GroundCollision layer. For more information on the uses of the GroundCollision layer, in the "Set up your scene" article, see the sections named [Guidelines for Player Movement](../develop/build-your-basic-environment/set-up-your-scene.md#guidelines-for-avatar-movement) and [Supporting Teleportation](../develop/build-your-basic-environment/set-up-your-scene.md#supporting-teleportation).
+* The NavMesh layer is now called the GroundCollision layer. For more information on the uses of the GroundCollision layer, see [Configuring for avatar movement and teleportation](../develop/build-your-basic-environment/configuring-for-avatar-movement-and-teleportation.md).
 
 * Shared properties and script variables set on dynamic targets--for example, target component instances read from script variables or otherwise deduced at script runtime--now reliably work on all viable targets throughout the scene. (32730)
 

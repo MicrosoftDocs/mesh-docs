@@ -15,7 +15,7 @@ keywords: Microsoft Mesh, Unity, getting started, Unity, scene, teleportation, a
 
 In order for Mesh avatars to move around and teleport in your experience successfully, it's important to follow certain design guidelines. This article contains information on how to set up surfaces for movement and teleportation, tips for things such as avatar movement limits and collider design, and a detailed section about Layers.
 
-## Avatar Movement Guidance
+## Avatar movement guidance
 
 A scene should have Colliders for the avatar to walk and teleport on. In general, a low poly Mesh Collider that tightly fits the visual geometry will produce the best results. Box Colliders work great for trivial scenarios, but can result in some problems such as causing the avatar to get stuck on the corners or defeat step height limits.
 
@@ -71,7 +71,7 @@ Another reason this is important is that when the avatar physics update, if the 
 
 [Learn more about Layers in a Mesh project](#layers-in-detail).
 
-## Supporting Teleportation
+## Supporting teleportation
 
 For a scene to support teleportation, teleportable surfaces (for example, the floor or the ground) must have colliders on the *GroundCollision* layer. There are other walkable layers, but only *GroundCollision* is teleportable. Visual geometry isn't teleportable and shouldn't be on the *GroundCollision* layer; only Colliders can be on that layer. Improper or inconsistent layering and collision can cause undesirable effects when teleporting or finding the ground.
 
@@ -121,7 +121,7 @@ Visual geometry not backed with collision is not walkable and doesn't block the 
 
 The *WallCollision* layer is used to indicate walls the avatar shouldn't penetrate in order to constrain the avatar within a playable space. VR users can move their avatars in arbitrary ways with HMD movement during roomscale locomotion and may physically walk through a virtual wall. The avatar will be teleported back to the bounds of the play area after it has walked a set distance. This layer is otherwise identical to the *Default* layer.
 
-### Layer Definitions
+### Layer definitions
 
 The following is a list of layers defined by ID and name, including blocking semantics and description:
 
@@ -255,7 +255,7 @@ The following is a list of layers defined by ID and name, including blocking sem
 
 ### Layer interactions and table
 
-**Layer Interactions**
+**Layer interactions**
 
 ![A screen shot of the layer collision matrix.](../../media/build-your-basic-environment/007-layer-interaction-matrix.png)
 
