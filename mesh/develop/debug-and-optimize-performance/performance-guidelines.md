@@ -30,13 +30,13 @@ Think of performance like a financial budget. If you have $100 dollars to spend 
 
 ## Profiling methodology
 
-Generally authoring environments in Mesh involves three steps.
+Authoring environments in Mesh generally involves three steps.
 
 1. Author content in Unity
 1. Upload to Microsoft Mesh
 1. Run your content in the Mesh app
 
-During step one it's recommended you use a mixture of the [Content Performance Analyzer (CPA)](#content-performance-analyzer-cpa) and [Performance Profiler](#performance-profiler) found in the [Mesh toolkit](../development-overview.md#develop-in-unity-with-mesh-toolkit) package which is required for any Unity project being used to generate a Mesh environment. During step two the CPA tool automatically runs. Finally, during step three final profiling should occur via Mesh's built-in Performance Profiler.
+During step one we recommend that you use a mixture of the [Content Performance Analyzer (CPA)](#content-performance-analyzer-cpa) and [Performance Profiler](#performance-profiler) found in the [Mesh toolkit](../build-your-basic-environment/add-the-mesh-toolkit-package.md) package which is required for any Unity project being used to generate a Mesh environment. During step two, the CPA tool automatically runs. Finally, during step three final, profiling should occur via Mesh's built-in Performance Profiler.
 
 ## Tools for analyzing performance
 

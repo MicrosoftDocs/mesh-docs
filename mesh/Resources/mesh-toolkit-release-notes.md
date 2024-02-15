@@ -3,8 +3,8 @@ title: Release notes for Mesh toolkit
 description: Mesh toolkit release notes
 ms.service: mesh
 author: qianw211    
-ms.author: qianwen
-ms.date: 2/7/2023
+ms.author: vinnietieto
+ms.date: 2/12/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
@@ -16,11 +16,7 @@ For purposes of this document, there are two categories of users:
 * Creators: Technical artist and developers building with the Mesh toolkit
 * IT admins: Managers working in Azure
 
-## Verison 24.2 (Preview)
-
-
-
-## Version 24.1
+## Version 5.2401.0
 
 >[!Caution]
 >This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
@@ -79,7 +75,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * During an environment upload, issues detected by the Visual Scripts validation step now log significantly improved diagnostics and extended guidance on how to avoid the reported issues. (34450)
 
-## Version 23.15
+## Version 5.2315.0
 
 ### Version list and dates
 
@@ -213,7 +209,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * The **Create Asset** button is now **Create Environment**.  See [Mesh 101 Tutorial Chapter 5: Make your environment available for testing](/mesh/develop/getting-started/mesh-101-tutorial/mesh-101-05-make-environment-available).
 
-## Version 23.14
+## Version 5.2314.0
 
 ### Version list and dates
 
@@ -305,7 +301,7 @@ These are the offerings and packages currently available. There may be slight di
 
     Oops! We failed to connect. Please check your internet connection and try again. (29004)
 
-## Version 23.13
+## Version 5.2313.0
 
 ### Version list and dates
 
