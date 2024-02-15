@@ -3,8 +3,8 @@ title: Release notes for Mesh toolkit
 description: Mesh toolkit release notes
 ms.service: mesh
 author: qianw211    
-ms.author: qianwen
-ms.date: 1/23/2023
+ms.author: vinnietieto
+ms.date: 2/12/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
@@ -15,6 +15,7 @@ For purposes of this document, there are two categories of users:
 
 * Creators: Technical artist and developers building with the Mesh toolkit
 * IT admins: Managers working in Azure
+
 
 ## Version list and dates
 
@@ -29,8 +30,6 @@ These are the offerings and packages currently available. There may be slight di
 | Mesh toolkit (preview)     | 5.2402.0 | 2023-2-18     |
 | Mesh on PC/Quest           | 5.2401.0 | 2023-2-18     |
 | Mesh on PC/Quest (Preview) | 5.2402.0 | 2023-2-18     |
-
-## Mesh toolkit 5.2402.0 (Preview)
 
 >[!Caution]
 >This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
@@ -81,7 +80,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * Some errors that came from the Mesh services did not have enough information in them. For example, some errors were just reported as "BadRequest" or "BadGateway". We've improved error messages from the service to include more useful details.
 
-* Simplified discovery of options by moving the **Settings** in the **Options** tab into the **Project/Mesh Uploader Settings** pane with the other **Uploader** settings.
+* Simplified discovery of options by moving the **Settings** in the **Options** tab into the **Project Settings/Mesh Uploader Settings** pane with the other **Uploader** settings.
 
 * Improved error handling when thumbnail generation fails.
 
@@ -105,7 +104,7 @@ These are the offerings and packages currently available. There may be slight di
     
     Clicking on an entry brings you straight to the corresponding scene object in the **Hierarchy** panel.
 
-* Select **Perf Stats** to show to **Visual Profiler** (only in single-screen mode) to displays real-time CPU and GPU performance statistics for the scene you're running.
+* Select **Perf Stats** to show to **Visual Profiler** (only in single-screen mode) to display real-time CPU and GPU performance statistics for the scene you're running.
 
 #### Scripting and physics
 
@@ -113,7 +112,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * During an environment upload, issues detected by the Visual Scripts validation step now log significantly improved diagnostics and extended guidance on how to avoid the reported issues. (34450)
 
-## Version 23.15
+## Version 5.2315.0
 
 ### Version list and dates
 
@@ -145,7 +144,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * Renamed the menu item from **Mesh Toolkit/Configure/Project Settings** to **Mesh Toolkit/Configure/Apply Project Settings**.
 
-* Renamed button **Add Provisional Thumbnail** to **Add guidance thumbnails**.
+* In the Mesh Uploader **Update Environment** tab, when you click the the **Thumbnail** drop-down and select **Take from folder**, a button appears with a label that used to say **Add Provisional Thumbnails** but now says **Add guidance thumbnails**.
 
 * We now show an error dialog when the user picks a folder outside of the project.
 
@@ -175,7 +174,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * Sometimes the Uploader would hit a `UserInteractionNeeded` exception when authenticating the user. We now mitigate this problem when it occurs by delegating the user to a Web Browser based authentication.
 
-* Breaking changes to layers - renamed several layers, moving currently unused layers into reserved layers, and updated cross-layer interactions. See [Configuring for avatar movement and teleportation](/mesh/develop/build-your-basic-environment/configuring-for-avatar-movement-and-teleportation).
+* Breaking changes to layers: we renamed several layers, moving currently unused layers into reserved layers, and updated cross-layer interactions. See [Configuring for avatar movement and teleportation](/mesh/develop/build-your-basic-environment/configuring-for-avatar-movement-and-teleportation).
 
 * Moved the setting from `RequireNavMeshLayer` to `RequireGroundCollisionLayer`.
 
@@ -183,15 +182,15 @@ These are the offerings and packages currently available. There may be slight di
 
 #### Scripting
 
-* The NavMesh layer is now called the GroundCollision layer. For more information on the uses of the GroundCollision layer, see [Set up your scene > Guidelines for Player Movement & Supporting Teleportation](/mesh/develop/build-your-basic-environment/set-up-your-scene#guidelines-for-player-movement)
+* The NavMesh layer is now called the GroundCollision layer. For more information on the uses of the GroundCollision layer, in the "Set up your scene" article, see the sections named [Guidelines for Player Movement](../develop/build-your-basic-environment/set-up-your-scene.md#guidelines-for-player-movement) and [Supporting Teleportation](../develop/build-your-basic-environment/set-up-your-scene.md#supporting-teleportation).
 
-* Shared properties and script variables set on dynamic targets, for example, target component instances read from script variables or otherwise deduced at script runtime, now reliably work on all viable targets throughout the scene. (32730)
+* Shared properties and script variables set on dynamic targets--for example, target component instances read from script variables or otherwise deduced at script runtime--now reliably work on all viable targets throughout the scene. (32730)
 
-    Previously, only a subset of viable target instances throughout the scene worked reliably when a target was deduced dynamically during script runtime: this doesn't include target instances that were placed in sibling branches of the transform tree.
+    Previously, only a subset of viable target instances throughout the scene worked reliably when a target was deduced dynamically during script runtime. This doesn't include target instances that were placed in sibling branches of the transform tree.
     
-    * anything on the implicit `This` scene object, 
+    * anything on the implicit `This` scene object
 
-    * anything below it, 
+    * anything below it
     
     * anything on any of its parents 
     
@@ -203,7 +202,7 @@ These are the offerings and packages currently available. There may be slight di
 
     * was attached to any parent/ancestor GameObject of `This` in the transform hierarchy
 
-    * was attached to any child/descendant GameObject of This in the transform hierarchy.
+    * was attached to any child/descendant GameObject of This in the transform hierarchy
 
 * Using Timer nodes in subgraphs no longer causes repeated error messages related to `OptimizedTimerUnitUpdateScheduler` to be logged. (31866)
 
@@ -247,7 +246,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * The **Create Asset** button is now **Create Environment**.  See [Mesh 101 Tutorial Chapter 5: Make your environment available for testing](/mesh/develop/getting-started/mesh-101-tutorial/mesh-101-05-make-environment-available).
 
-## Version 23.14
+## Version 5.2314.0
 
 ### Version list and dates
 
@@ -339,7 +338,7 @@ These are the offerings and packages currently available. There may be slight di
 
     Oops! We failed to connect. Please check your internet connection and try again. (29004)
 
-## Version 23.13
+## Version 5.2313.0
 
 ### Version list and dates
 
