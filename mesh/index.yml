@@ -1,0 +1,108 @@
+### YamlMime:Landing 
+
+title: Microsoft Mesh documentation reference
+summary: Microsoft Mesh is a suite of 3D collaboration experiences, including immersive spaces in Teams, custom immersive experience in Mesh, avatar in Teams, and developer suite of tools for Unity, the Mesh toolkit. 
+metadata: 
+  title: Microsoft Mesh documentation reference | 
+  description: Microsoft Mesh is a suite of 3D collaboration experiences, including immersive spaces in Teams, custom immersive experience in Mesh, avatar in Teams, and developer suite of tools for Unity, the Mesh toolkit.  
+  ms.service: mesh 
+  ms.topic: landing-page
+  ms.collection: 
+  author: typride
+  ms.author: tmilligan 
+  ms.date: 02/14/2024
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+  # Card
+  - title: Set up and manage mesh
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Welcome to Mesh
+            url: overview.md
+          - text: Join the trial for Mesh
+            url: Setup/Content/it-admin-led-trials.md
+          - text: Get Mesh apps and tools
+            url: download-mesh-app-tools.md
+      - linkListType: learn
+        links:
+          - text: Preparing your organization
+            url: Setup/Content/preparing-your-organization.md
+      - linkListType: reference
+        links:
+          - text: Configure Microsoft Mesh
+            url: Setup/Content/setup-m365-mesh.md
+ 
+  # Card
+  - title: Organize events
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Events overview
+            url: events-guide/events-overview.md
+      - linkListType: reference
+        links:
+          - text: Create events or manage collections
+            url: Setup/Content/manage-mesh-on-web.md
+          - text: Customize event
+            url: events-guide/customize-event.md
+
+  # Card
+  - title: Organize events
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: DAX glossary
+            url: dax-glossary.md
+          - text: DAX operators
+            url: dax-operator-reference.md
+          - text: DAX queries
+            url: dax-queries.md
+          - text: DAX syntax
+            url: dax-syntax-reference.md
+
+  # Card
+  - title: Join events
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: DAX glossary
+            url: dax-glossary.md
+          - text: DAX operators
+            url: dax-operator-reference.md
+          - text: DAX queries
+            url: dax-queries.md
+          - text: DAX syntax
+            url: dax-syntax-reference.md
+
+  # Card
+  - title: Develop environments
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: DAX glossary
+            url: dax-glossary.md
+          - text: DAX operators
+            url: dax-operator-reference.md
+          - text: DAX queries
+            url: dax-queries.md
+          - text: DAX syntax
+            url: dax-syntax-reference.md
+
+  - title: Resources
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: DAX glossary
+            url: dax-glossary.md
+          - text: DAX operators
+            url: dax-operator-reference.md
+          - text: DAX queries
+            url: dax-queries.md
+          - text: DAX syntax
+            url: dax-syntax-reference.md
