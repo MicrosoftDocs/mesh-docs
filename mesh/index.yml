@@ -19,6 +19,17 @@ landingContent:
 # Start card title with a verb
 
   # Card
+  - title: About Microsoft Mesh
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Welcome to Mesh
+      - linkListType: video
+        links:
+          - text: Introducing Microsoft Mesh
+          - url: https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh
+
+  # Card
   - title: Set up and manage mesh
     linkLists:
       - linkListType: overview
@@ -39,23 +50,27 @@ landingContent:
             url: Setup/Content/setup-m365-mesh.md
  
   # Card
-  - title: Organize events
+  - title: Mesh events
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
           - text: Events overview
             url: events-guide/events-overview.md
-      - linkListType: reference
+      - linkListType: learn
         links:
           - text: Create events or manage collections
             url: Setup/Content/manage-mesh-on-web.md
-          - text: Customize event
+          - text: Customize an event
             url: events-guide/customize-event.md
+          - text: Produce an event
+            url: events-guide/produce-event.md
+          - text: Join an event
+            url: user-guide/join-an-event.md
 
   # Card
-  - title: Organize events
+  - title: Join events
     linkLists:
-      - linkListType: concept
+      - linkListType: Reference
         links:
           - text: DAX glossary
             url: dax-glossary.md
