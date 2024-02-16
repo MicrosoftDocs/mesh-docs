@@ -68,56 +68,29 @@ landingContent:
             url: user-guide/join-an-event.md
 
   # Card
-  - title: Join events
+  - title: Develop
     linkLists:
-      - linkListType: Reference
+      - linkListType: reference
         links:
-          - text: DAX glossary
-            url: dax-glossary.md
-          - text: DAX operators
-            url: dax-operator-reference.md
-          - text: DAX queries
-            url: dax-queries.md
-          - text: DAX syntax
-            url: dax-syntax-reference.md
-
-  # Card
-  - title: Join events
-    linkLists:
-      - linkListType: concept
+          - text: Mesh development overview
+            url: develop/development-overview.md
+          - text: Choose your journey
+            url: develop/getting-started/choose-your-journey.md
+      - linkListType: tutorial
         links:
-          - text: DAX glossary
-            url: dax-glossary.md
-          - text: DAX operators
-            url: dax-operator-reference.md
-          - text: DAX queries
-            url: dax-queries.md
-          - text: DAX syntax
-            url: dax-syntax-reference.md
+          - text: Mesh 101 Overview and Setup
+            url: develop/getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md
 
-  # Card
-  - title: Develop environments
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: DAX glossary
-            url: dax-glossary.md
-          - text: DAX operators
-            url: dax-operator-reference.md
-          - text: DAX queries
-            url: dax-queries.md
-          - text: DAX syntax
-            url: dax-syntax-reference.md
-
+# Card
   - title: Resources
     linkLists:
-      - linkListType: concept
+      - linkListType: whats-new
         links:
-          - text: DAX glossary
-            url: dax-glossary.md
-          - text: DAX operators
-            url: dax-operator-reference.md
-          - text: DAX queries
-            url: dax-queries.md
-          - text: DAX syntax
-            url: dax-syntax-reference.md
+          - text: Mesh release notes
+            url: Resources/mesh-release-notes.md
+          - text: Mesh toolkit release notes
+            url: Resources/mesh-toolkit-release-notes.md
+          - text: Immersive spaces in Teams release notes
+            url: Resources/immersive-spaces-release-notes.md
+          - text: Avatars in Teams release notes
+            url: Resources/avatars-release-notes.md
