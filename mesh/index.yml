@@ -24,6 +24,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Welcome to Mesh
+            url: develop/design/overview.md
       - linkListType: video
         links:
           - text: Introducing Microsoft Mesh
@@ -34,8 +35,6 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Welcome to Mesh
-            url: overview.md
           - text: Join the trial for Mesh
             url: Setup/Content/it-admin-led-trials.md
           - text: Get Mesh apps and tools
