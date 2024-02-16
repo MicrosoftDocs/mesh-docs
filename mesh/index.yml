@@ -2,6 +2,7 @@
 
 title: Microsoft Mesh documentation reference
 summary: Microsoft Mesh is a suite of 3D collaboration experiences, including immersive spaces in Teams, custom immersive experience in Mesh, avatar in Teams, and developer suite of tools for Unity, the Mesh toolkit. 
+
 metadata: 
   title: Microsoft Mesh documentation reference | 
   description: Microsoft Mesh is a suite of 3D collaboration experiences, including immersive spaces in Teams, custom immersive experience in Mesh, avatar in Teams, and developer suite of tools for Unity, the Mesh toolkit.  
@@ -28,7 +29,7 @@ landingContent:
       - linkListType: video
         links:
           - text: Introducing Microsoft Mesh
-          - url: https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh
+            url: https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh
 
   # Card
   - title: Set up and manage mesh
