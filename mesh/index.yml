@@ -1,11 +1,11 @@
 ### YamlMime:Landing 
 
 title: Microsoft Mesh documentation reference
-summary: Microsoft Mesh is a suite of 3D collaboration experiences, including immersive spaces in Teams, custom immersive experience in Mesh, avatar in Teams, and developer suite of tools for Unity, the Mesh toolkit. 
+summary: Microsoft Mesh is a suite of tools that bring immersive experiences to your organization. Join in Microsoft Teams, or create custom immersive experiences with the Mesh toolkit and join from a PC or Meta VR headsets.
 
 metadata: 
   title: Microsoft Mesh documentation reference | 
-  description: Microsoft Mesh is a suite of 3D collaboration experiences, including immersive spaces in Teams, custom immersive experience in Mesh, avatar in Teams, and developer suite of tools for Unity, the Mesh toolkit.  
+  description: Microsoft Mesh is a suite of tools that bring immersive experiences to your organization. Join in Microsoft Teams, or create custom immersive experiences with the Mesh toolkit and join from a PC or Meta VR headsets.
   ms.service: mesh 
   ms.topic: landing-page
   ms.collection: 
