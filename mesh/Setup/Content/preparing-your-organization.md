@@ -25,7 +25,7 @@ This content covers requirements for Mesh implementations for Immersive spaces i
 
 1. [Contact owners of supporting teams](#contact-owners-of-supporting-teams)
 
-1. [Configure Office Apps Policy Service (OCPS)](#configure-office-apps-policy-service-for-mesh)
+1. [Configure service plan or Office Apps Policy Service for Mesh](#configure-service-plan-or-office-apps-policy-service-for-mesh)
 
 1. [Work with your security team](#work-with-your-organizations-security-team)
 
@@ -167,7 +167,11 @@ about managing feedback, see
 
 [Manage feedback policies in Teams](/microsoftteams/manage-feedback-policies-in-teams)
 
-## Configure Office Apps Policy Service for Mesh
+## Configure service plan or Office Apps Policy Service for Mesh
+
+In order to streamline the admin experience, admins will no longer need to configure Mesh in M365 Apps Admin Center. If you had previously restricted Mesh access to users or groups in your organization via the Mesh policy found in the M365 Apps Admin Center, you will need to switch to restricting access via the Mesh service plan instead in the M365 Admin Center (MAC) **by the end of February, 2024**.
+
+For more information about service plans and OCPS policies, see [Configure access to Mesh using service plans](setup-m365-mesh.md#configure-access-to-mesh-using-service-plans).
 
 You must have a policy set in Office Cloud Policy Service to permit user to access any form of Mesh. Also, OCPS
 lets you enforce policy settings
@@ -309,23 +313,15 @@ snapshot][service-tag-download].
 
 For more information about service tags, see the [Azure service tags overview][service-tag].
 
-### Conditional Access
+### Conditional Access & Quest
 
-Conditional access is an important part of a zero-trust approach to
-helping secure your network and resources. As part of zero trust, many
-companies use conditional access features with Azure Active Directory
-and Microsoft Intune to restrict the types of devices that are permitted
-to access company resources, and even the operating system version and
-configuration on those devices; devices that meet the defined profile
-are allowed in, and any other device that is not specified is denied
-access. Meta has released a beta version MDM support for Quest. Each
-company using Mesh in pre-release will have to work with their security
-and endpoint management teams to decide if a policy can be constructed
-that is acceptable to the company's risk profile while still permitting
-access to Quest devices. For more information about Conditional Access,
-see:
+Conditional access is an important part of a zero-trust approach to helping secure your network and resources. As part of zero trust, many companies use conditional access features policies with Azure Active Directory and Microsoft Intune to restrict the types of devices that are permitted to access company resources, and even the operating system version and configuration on those devices; devices that meet the defined profile are allowed in, and any other device that is not specified is denied access. Meta has released a beta GA version MDM support for Quest that works with Intune. Each company using Mesh in pre-release will have to work with their security and endpoint management teams to decide if a policy can be constructed that is acceptable to the company's risk profile while still permitting access to Quest devices.
 
-[Common ways to use Conditional Access with Intune](/mem/intune/protect/conditional-access-intune-common-ways-use)
+For more information about Conditional Access, see:
+
+- [Common ways to use Conditional Access with Intune](/mem/intune/protect/conditional-access-intune-common-ways-use)
+
+- [How can I manage Quest VR headsets for my organization?](../../Resources/mesh-troubleshooting.md#how-can-i-manage-quest-vr-headsets-for-my-organization)
 
 ## Work with Stakeholders That Communicate Change
 

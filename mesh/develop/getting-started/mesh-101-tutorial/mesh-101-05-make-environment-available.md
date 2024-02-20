@@ -49,7 +49,7 @@ As explained in the article named [Add the Mesh toolkit package](../../build-you
 
     ![A screenshot of a Mesh uploader showing the Create environment tab filled out.](../../../media/sample-mesh-101/038-upload-capacity-logo.png)
 
-6. Select **Create Asset** to create the Environment that you'll be
+6. Select **Create Environment** to create the Environment that you'll be
     uploading to Mesh on the web.
 
 7. You'll receive a confirmation dialogue as shown below. Select

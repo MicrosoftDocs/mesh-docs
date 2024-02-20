@@ -17,7 +17,7 @@ As a Mesh developer, you have an exciting opportunity to bring people together i
 
 Here are some examples of the types of experiences you can create:
 
-![An infographic that shows five possible types of Mesh experiences.](../media/get-started-developing-mesh/039-mesh-examples.png)
+![An infographic that shows five possible types of Mesh experiences.](../media/get-started-developing-mesh/060-mesh-examples-white-background.png)
 
 Click the thumbnails below to learn about what some of our partners are doing with Mesh.
 

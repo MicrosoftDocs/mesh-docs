@@ -3,22 +3,20 @@ title: Release notes for Mesh toolkit
 description: Mesh toolkit release notes
 ms.service: mesh
 author: qianw211    
-ms.author: qianwen
-ms.date: 12/11/2023
+ms.author: vinnietieto
+ms.date: 2/12/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
 
 # Mesh toolkit release notes
 
-**Release notes and known issues for Microsoft Mesh toolkit**
-
 For purposes of this document, there are two categories of users:
 
 * Creators: Technical artist and developers building with the Mesh toolkit
 * IT admins: Managers working in Azure
 
-## Version 23.15 (Preview)
+## Version 5.2401.0
 
 >[!Caution]
 >This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
@@ -34,12 +32,140 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
-| Mesh toolkit package      |   5.2315.0     | 2023-12-11  |
-| Mesh (PC/Quest)   |  5.2315.0       |  2023-12-11  |
+| Mesh toolkit package      |   5.2401.0     | 2023-1-29  |
+| Mesh (PC/Quest)   |  5.2401.0       |  2023-1-29  |
 
 ### What's new
 
+#### Toolkit
+
+* The `ContentVersion` has been incremented to 1.24.0: Newly published content will only be visible in the recent Mesh app.
+
+* Some errors that came from the Mesh services did not have enough information in them. For example, some errors were just reported as "BadRequest" or "BadGateway". We've improved error messages from the service to include more useful details.
+
+* Simplified discovery of options by moving the **Settings** in the **Options** tab into the **Project Settings/Mesh Uploader Settings** pane with the other **Uploader** settings.
+
+* Improved error handling when thumbnail generation fails.
+
+* Improved error handling on asset validation.
+
+* If we fail to create a copy of the asset, the build and publish operation won't proceed.
+
+* Fixed an issue where the **Require Ground Collision Layer** won't have the correct value when changed while a window was open.
+
+##### Diagnostics and debug tools are now easier to discover and use in the Mesh Emulator:
+
+* In the Unity editor, click the **Enter Split Screen** button to enable split-screen mode, which allows you to test and debug multi-user issues. 
+
+* In the split-screen mode, click **Add** or **Leave** to add more split-screen clients to the session or to make them leave the session.
+
+* Select **Script Stats** to show a panel of real-time visual script performance statistics, such as:
+
+    * which visual script flows require the most per-frame time to execute 
+    
+    * which shared properties and variables are updated (and replicated over network) most often 
+    
+    Clicking on an entry brings you straight to the corresponding scene object in the **Hierarchy** panel.
+
+* Select **Perf Stats** to show to **Visual Profiler** (only in single-screen mode) to display real-time CPU and GPU performance statistics for the scene you're running.
+
+#### Scripting and physics
+
+* It's now possible to use the **On State Changed** visual script event to observe the transform of a physics body. The event fires whenever the physics body is moved directly on the local client or by a remote client. (31869)
+
+* During an environment upload, issues detected by the Visual Scripts validation step now log significantly improved diagnostics and extended guidance on how to avoid the reported issues. (34450)
+
+## Version 5.2315.0
+
+### Version list and dates
+
+These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
+
+>[!Note]
+>The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh toolkit package, which releases only after the matching Mesh app is available in stores.
+
+| Mesh offering/package   | Version | Date released
+| ----------- | ----------- | ----------- |
+| Mesh toolkit package      |   5.2315.0     | 2023-2-2  |
+| Mesh (PC/Quest)   |  5.2315.0       |  2023-2-2  |
+
+### What's new
+
+#### Toolkit
+
+* The `ContentVersion` has been incremented to 1.22.0. Newly published content will only be visible in recent versions of the Mesh app.
+
+* Added new prebuild validation which will only allow GameObjects on certain layers.
+
+* Renamed the **Create Asset** button to **Create Environment**.
+
+* Fixed build status in the result report when there are invalid assets during the build phase.
+
+* If the level of diagnostic data is not set by the tenant admin, then by default the Uploader will send optional diagnostics.
+
+* Renamed the menu item from **Mesh Toolkit/Configure/Default Font** to **Mesh Toolkit/Configure/Apply Default Font Settings**.
+
+* Renamed the menu item from **Mesh Toolkit/Configure/Project Settings** to **Mesh Toolkit/Configure/Apply Project Settings**.
+
+* In the Mesh Uploader **Update Environment** tab, when you click the the **Thumbnail** drop-down and select **Take from folder**, a button appears with a label that used to say **Add Provisional Thumbnails** but now says **Add guidance thumbnails**.
+
+* We now show an error dialog when the user picks a folder outside of the project.
+
+* Fixed bugs in the Uploader extensions system:
+
+    * Metadata stages were accidentally being run multiple times.
+
+    * Metadata results were being ignored in certain cases.
+
+* We now return to an empty default scene after building when there was no active scene.
+
+* We now avoid displaying collections that could not be validated in Mesh.
+
+* We now show the toolkit package version in the Uploader Window.
+
+* Uploader build platforms are now stored as per project settings instead of per computer settings.
+
+* Improved how the uploader handles an operation being cancelled.
+
+* Prevent refreshing asset list when changing window focus.
+
+* Added an updated title and warning when using the preview version of the toolkit.
+
+* We cleared a confusing progress bar when Unity reloads assembly during an operation.
+
+* We now prompt the user to re-authenticate if authentication has expired when retrying an operation.
+
+* Sometimes the Uploader would hit a `UserInteractionNeeded` exception when authenticating the user. We now mitigate this problem when it occurs by delegating the user to a Web Browser based authentication.
+
+* Breaking changes to layers: we renamed several layers, moving currently unused layers into reserved layers, and updated cross-layer interactions. See [Configuring for avatar movement and teleportation](/mesh/develop/build-your-basic-environment/configuring-for-avatar-movement-and-teleportation).
+
+* Moved the setting from `RequireNavMeshLayer` to `RequireGroundCollisionLayer`.
+
+* Fixed failure message in the result dialog for successful publishes.
+
 #### Scripting
+
+* The NavMesh layer is now called the GroundCollision layer. For more information on the uses of the GroundCollision layer, in the "Set up your scene" article, see the sections named [Guidelines for Player Movement](../develop/build-your-basic-environment/set-up-your-scene.md#guidelines-for-player-movement) and [Supporting Teleportation](../develop/build-your-basic-environment/set-up-your-scene.md#supporting-teleportation).
+
+* Shared properties and script variables set on dynamic targets--for example, target component instances read from script variables or otherwise deduced at script runtime--now reliably work on all viable targets throughout the scene. (32730)
+
+    Previously, only a subset of viable target instances throughout the scene worked reliably when a target was deduced dynamically during script runtime. This doesn't include target instances that were placed in sibling branches of the transform tree.
+    
+    * anything on the implicit `This` scene object
+
+    * anything below it
+    
+    * anything on any of its parents 
+    
+    The `This` scene object is the GameObject the `ScriptMachine` executing the visual script is attached to.
+    
+    For example, if you were trying to set a shared property of a `Foo`-type component and you were using a variable to dynamically reference a specific `Foo` instance to turn that property on, this would only have worked reliably for any for the following `Foo` instances:
+
+    * was attached to `This` = the same GameObject as the `ScriptMachine` running the visual script
+
+    * was attached to any parent/ancestor GameObject of `This` in the transform hierarchy
+
+    * was attached to any child/descendant GameObject of This in the transform hierarchy
 
 * Using Timer nodes in subgraphs no longer causes repeated error messages related to `OptimizedTimerUnitUpdateScheduler` to be logged. (31866)
 
@@ -79,55 +205,11 @@ These are the offerings and packages currently available. There may be slight di
 
     This option can be seen in Unity's inspector when a WebSlate is selected, as a checkbox on the WebSlate script called **Prevent Suspension**.
 
-#### Uploader
-
-* The `ContentVersion` has been incremented to 1.22.0. Newly published content will only be visible in recent versions of the Mesh app.
-
-* Added new prebuild validation which will only allow GameObjects on certain layers.
-
-* Renamed the **Create Asset** button to **Create Environment**.
-
-* Fixed build status in the result report when there are invalid assets during the build phase.
-
-* If the level of diagnostic data is not set by the tenant admin, then by default the Uploader will send optional diagnostics.
-
-* Renamed the menu item from **Mesh Toolkit/Configure/Default Font** to **Mesh Toolkit/Configure/Apply Default Font Settings**.
-
-* Renamed the menu item from **Mesh Toolkit/Configure/Project Settings** to **Mesh Toolkit/Configure/Apply Project Settings**.
-
-* Renamed button **Add Provisional Thumbnail** to **Add guidance thumbnails**.
-
-* We now show an error dialog when the user picks a folder outside of the project.
-
-* Fixed bugs in the Uploader extensions system:
-
-    * Metadata stages were accidentally being run multiple times.
-
-    * Metadata results were being ignored in certain cases.
-
-* We now return to an empty default scene after building when there was no active scene.
-
-* We now avoid displaying collections that could not be validated in Mesh.
-
-* We now show the toolkit package version in the Uploader Window.
-
-* Uploader build platforms are now stored as per project settings instead of per computer settings.
-
-* Improved how the uploader handles an operation being cancelled.
-
-* Prevent refreshing asset list when changing window focus.
-
-* Added an updated title and warning when using the preview version of the toolkit.
-
-* We cleared a confusing progress bar when Unity reloads assembly during an operation.
-
-* We now prompt the user to re-authenticate if authentication has expired when retrying an operation.
-
 #### Mesh 101 Tutorial
 
 * The **Create Asset** button is now **Create Environment**.  See [Mesh 101 Tutorial Chapter 5: Make your environment available for testing](/mesh/develop/getting-started/mesh-101-tutorial/mesh-101-05-make-environment-available).
 
-## Version 23.14
+## Version 5.2314.0
 
 ### Version list and dates
 
@@ -219,7 +301,7 @@ These are the offerings and packages currently available. There may be slight di
 
     Oops! We failed to connect. Please check your internet connection and try again. (29004)
 
-## Version 23.13
+## Version 5.2313.0
 
 ### Version list and dates
 

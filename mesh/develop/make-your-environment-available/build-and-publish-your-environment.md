@@ -4,7 +4,7 @@ description: Learn how to turn your environment into an Asset and then publish i
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 12/6/2023
+ms.date: 2/6/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, environment, build, publish, build and publish, uploader, Mesh uploader, thumbnail
 ---
@@ -49,12 +49,15 @@ As explained in the article named [Add the Mesh toolkit package](../build-your-b
 1. Select the **Environment collection** drop down, and then select the Collection you
     want to upload your Environment to if it's not already selected.
 
+    > [!NOTE]
+    > If the Environment Collection field shows **No Environment collections available** then we have not found any valid collections for your account. If this is unexpected try refreshing with the **Refresh Environment Colletions** button. Otherwise see [Manage Mesh Collections](../../Setup/Content/manage-mesh-on-web.md) to setup/manage your collections.
+
 1. In the **Capacity** field, enter the capacity for your Environment.
     The maximum is 16.
 
     ![A screenshot of the Mesh Uploader window in the Create Environment tab](../../media/make-your-environment-available/002-uploader-create-logo.png)
 
-1.  Select **Create Asset** to create the Environment that you'll be
+1.  Select **Create Environment** to create the Environment that you'll be
     uploading.
 
 1. You'll receive a confirmation dialogue as shown below. Select
@@ -98,35 +101,27 @@ As explained in the article named [Add the Mesh toolkit package](../build-your-b
 
         ![A screen shot of the PC and Android platforms buttons with both platforms selected](../../media/make-your-environment-available/039-build-both-on.png)
 
+If you create repeated builds of the same Environment but want to change the platform(s) they're being created for, make sure you choose the correct **Build for Platforms** buttons.
+
 ### Build and publish the Environment
 
 1. Select the **Build and Publish** button.
 
     ![A screen shot of the lower part of the Mesh Uploader window highlighting the Build & Publish button](../../media/make-your-environment-available/image024.jpg)
 
-1.  If the Environment builds and uploads successfully, the **Build and
-    Upload Results** dialog appears and confirms the results.
+1.  If the Environment builds and publishes successfully, the **Build and Upload Results** window appears and confirms the results.
 
     ![A screenshot of the dialog shown with the sucessful results of the build and upload operation](../../media/make-your-environment-available/005-build-succeeded.png)
 
-    If the build and upload process fails, this is confirmed in the **Build and Upload** Results dialog:
-
-    ![A screenshot of the dialog shown with the failed results of the build and upload operation](../../media/make-your-environment-available/006-build-failed.png)
+    However, you may get **Warning** or even **Failed** indicators in this window. To learn more about what these mean and how to make needed corrections, see the article named [Understanding your Build and Publish results](./understanding-build-and-publish-results.md).
 
     > [!TIP]
-    > If a build and upload process fails, look in the **Console** for clues about what might have happened.
+    > If a build and publish process fails, look in the **Console** for clues about what might have happened.
 
     > [!IMPORTANT]
     > Every time you update the Environment, it can affect future events that reference this Environment.
     >
-> :::image type="content" source="../../media/make-your-environment-available/uploader_warning_about_updating_environment.png" alt-text="Screenshot of warning about updating your environment.":::
-
-After your environment was uploaded, you will be able to see for what platforms it has been built.
-
-![A screenshot of supported platforms](../../media/make-your-environment-available/040-show-platforms-built-for.png)
-
-When uploading repeatedly to the same Environment, please note that only the platforms from the last iteration will be available.
-For example, if you built and publish an Environment for PC platform, but later want to include Android, you will need to build for both PC and Android. Building for Android only will cause the PC build to be lost.
+    > :::image type="content" source="../../media/make-your-environment-available/uploader_warning_about_updating_environment.png" alt-text="Screenshot of warning about updating your environment.":::
 
 ### Environment thumbnails
 
@@ -203,7 +198,7 @@ If you prefer, you can create a custom thumbnail, then save it in a designated "
 
     ![A screenshot of the Mesh Uploader widened so the user can see the thumbnail options better.](../../media/make-your-environment-available/045-thumbnail-path-change.png)
 
-1. Click the **Add provisional thumbnails** button. A **Success** dialog appears telling you that thumbnails were generated successfully.
+1. Click the **Add guidance thumbnails** button. A **Success** dialog appears telling you that thumbnails were generated successfully.
 
     ![A screenshot of the Mesh Uploader widened so the user can see the thumbnail options better.](../../media/make-your-environment-available/046-thumbnail-success-dialog.png)
 
