@@ -39,6 +39,10 @@ These are the offerings and packages currently available. There may be slight di
 
 ### What's new
 
+#### Mesh 201 Tutorial
+
+* Mesh 201 is released for the Mesh Toolkit version 5.2402.0 (Preview). In this tutorial, you build on that knowledge and learn how to use WebSlates to display web content in your experience. The tutorial includes an interactive globe; when a person in your experience clicks on the globe, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate.
+
 #### Visual scripting
 
 * Visual scripts are no longer completely disabled if the environment contains a ScriptMachine with a broken ("Missing") or unassigned ("None") asset graph reference. (36795)
