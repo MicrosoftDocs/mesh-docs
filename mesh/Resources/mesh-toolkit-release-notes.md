@@ -14,7 +14,7 @@ keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 For purposes of this document, there are two categories of users:
 
 * Creators: Technical artist and developers building with the Mesh toolkit
-* IT admins: Managers working in Azure
+* IT admins: Managers working in Azure or M365
 
 ## Version list and dates
 
