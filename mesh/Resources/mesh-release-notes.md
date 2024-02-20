@@ -21,7 +21,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.2401.0
 
-### Resolve product issues
+### Resolved product issues
 
 The following product issues have been fixed for this release:
 

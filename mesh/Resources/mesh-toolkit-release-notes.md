@@ -65,6 +65,49 @@ These are the offerings and packages currently available. There may be slight di
 
 * Fixed the On Interval node occasionally triggering twice in short sequence after an interval has elapsed. (40894)
 
+* Several useful Render Settings properties are now exposed to visual scripts:
+
+    * For environments whose Environment Lighting Source is set to Skybox:
+        * Render Settings | Get Skybox – see [Unity docs](https://docs.unity3d.com/ScriptReference/RenderSettings-skybox.html)
+        * Render Settings | Get/Set Ambient Intensity – see [Unity docs](https://docs.unity3d.com/ScriptReference/RenderSettings-ambientIntensity.html)
+    * Note that in order to see the effects of skybox material updates on dynamic lighting, include the Dynamic GI | Update Environment script node after modifying the skybox material.
+
+    * For environments whose Environment Lighting Source is set to Color:
+        * Render Settings | Get/Set Ambient Light – see [Unity docs](https://docs.unity3d.com/ScriptReference/RenderSettings-ambientLight.html)
+
+    * For environments whose Environment Lighting Source is set to Gradient:
+        * Render Settings | Get/Set Ambient Sky Color – see [Unity docs](https://docs.unity3d.com/ScriptReference/RenderSettings-ambientSkyColor.html)
+        * Render Settings | Get/Set Ambient Equator Color – see [Unity docs](https://docs.unity3d.com/ScriptReference/RenderSettings-ambientEquatorColor.html)
+        * Render Settings | Get/Set Ambient Ground Color – see [Unity docs](https://docs.unity3d.com/ScriptReference/RenderSettings-ambientGroundColor.html)
+
+* Several Line Renderer component methods and properties are now exposed to visual scripts:
+    * Methods:
+        * Line Renderer | Get Position – see [Unity docs](https://docs.unity3d.com/ScriptReference/LineRenderer.GetPosition.html)
+        * Line Renderer | Get Positions – see [Unity docs](https://docs.unity3d.com/ScriptReference/LineRenderer.GetPositions.html)
+        * Line Renderer | Set Position – see [Unity docs](https://docs.unity3d.com/ScriptReference/LineRenderer.SetPosition.html)
+        * Line Renderer | Set Positions – see [Unity docs](https://docs.unity3d.com/ScriptReference/LineRenderer.SetPositions.html)
+
+    * Properties:
+        * Line Renderer | Get/Set Position Count – see [Unity docs](https://docs.unity3d.com/ScriptReference/LineRenderer-positionCount.html)
+
+* Many useful Video Player component methods and properties are now exposed to visual scripts.
+    * Methods:
+        * Video Player | Play – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer.Play.html)
+        * Video Player | Pause – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer.Pause.html)
+        * Video Player | Stop – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer.Stop.html)
+        * Video Player | Step Forward – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer.StepForward.html)
+
+    * Properties – which can all be observed using an *On State Changed* event node:
+        * Video Player | Is Prepared – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-isPrepared.html)
+        * Video Player | Is Playing – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-isPlaying.html)
+        * Video Player | Is Paused – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-isPaused.html)
+        * Video Player | Is/Set Looping – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-isLooping.html)
+        * Video Player | Get/Set Time – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-time.html)
+        * Video Player | Get/Set Playback Speed – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-playbackSpeed.html)
+        * Video Player | Get Length – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-length.html)
+        * Video Player | Can Set Time – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-canSetTime.html)
+        * Video Player | Can Set Playback Speed – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-canSetPlaybackSpeed.html)
+
 #### Mesh uploader
 
 * The ContentVersion has been incremented to 1.25.0; Newly published content will only be visible in recent MeshBrowsers.
