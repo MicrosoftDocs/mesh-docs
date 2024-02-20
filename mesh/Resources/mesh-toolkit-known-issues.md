@@ -11,14 +11,6 @@ keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 
 # Active known issues - Mesh toolkit
 
-## Version 5.2401.0
-
-## Dashboard
-
-* When using 'Accessibility - High Contrast mode', Descriptions for events and content in the Dashboard may not be visible.
-
-* 
-
 ## Version 5.2315.0
 
 * The embedded videos show as black on Quest 2. (24096)

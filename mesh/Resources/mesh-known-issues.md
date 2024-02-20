@@ -11,6 +11,8 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 # Active known issues - Mesh
 
+## Version 5.2402.0 (Preview)
+
 ## Version 5.2401.0
 
 * On starting a broadcast, broadcasters may experience a temporary low framerate due to un-optimized net code. (32963)
@@ -28,7 +30,6 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 * On PC, the avatar's eyes do not follow the selfie camera. (32895)
 
 * Users may find it hard to figure out how to drop interactable objects. The keys for dropping interactable objects - such as marshmallow sticks in the Lake House environment, are the middle mouse button (scroll wheel) and the space bar. This is communicated via a short pop up that users might overlook. (32968)
-
 
 ### Events
 
@@ -53,6 +54,3 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 ## Current limitations
 
 * Currently, audio capture and text input from users are not supported in Mesh. (35598)
-
-
-
