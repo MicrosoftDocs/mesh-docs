@@ -25,16 +25,16 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2401.0 | 2023-2-18     |
-| Mesh toolkit (preview)     | 5.2402.0 | 2023-2-18     |
-| Mesh on PC/Quest           | 5.2401.0 | 2023-2-18     |
-| Mesh on PC/Quest (Preview) | 5.2402.0 | 2023-2-18     |
+| Mesh toolkit               | 5.2401.0 | 2023-2-20     |
+| Mesh toolkit (preview)     | 5.2402.0 | 2023-2-20     |
+| Mesh on PC/Quest           | 5.2401.0 | 2023-2-20     |
+| Mesh on PC/Quest (Preview) | 5.2402.0 | 2023-2-20     |
 
 ## Mesh toolkit 5.2402.0 (Preview)
 
 >[!Caution]
 >This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
-> 
+>
 > **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
 
 ### What's new
@@ -47,7 +47,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * The script node selector (Fuzzy Finder) in the script graph UI no longer includes nodes that access inherited properties or methods through types that cannot be accessed directly. (37824)
 
-* Fixed sharing tags shown in the Visual Scripting graph UI for the following Mesh Interactable Body script nodes to correctly say Shared by all clients (instead of incorrectly Local to this client): 
+* Fixed sharing tags shown in the Visual Scripting graph UI for the following Mesh Interactable Body script nodes to correctly say Shared by all clients (instead of incorrectly Local to this client):
     - Mesh Interactable Body | Is Activated
     - Mesh Interactable Body | Get Equipped At
     - Mesh Interactable Body | Is Equipped
@@ -71,7 +71,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * Improved message when cancelling the dialog to select a new thumbnail folder.
 
-## Mesh toolkit 5.2401.0
+## Mesh toolkit 5.2401.0 (Preview)
 
 ### What's new
 
@@ -99,10 +99,10 @@ These are the offerings and packages currently available. There may be slight di
 
 * Select **Script Stats** to show a panel of real-time visual script performance statistics, such as:
 
-    * which visual script flows require the most per-frame time to execute 
-    
-    * which shared properties and variables are updated (and replicated over network) most often 
-    
+    * which visual script flows require the most per-frame time to execute
+
+    * which shared properties and variables are updated (and replicated over network) most often
+
     Clicking on an entry brings you straight to the corresponding scene object in the **Hierarchy** panel.
 
 * Select **Perf Stats** to show to **Visual Profiler** (only in single-screen mode) to display real-time CPU and GPU performance statistics for the scene you're running.

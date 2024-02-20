@@ -11,6 +11,12 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 # Active known issues - Mesh
 
+## Version 5.2401.0
+
+* On starting a broadcast, broadcasters may experience a temporary low framerate due to un-optimized net code. (32963)
+
+* On Quest, the avatar's level of details (LOD) may seem off or changing depending on the actions an avatar takes such as nodding or looking up and down. (32894)
+
 ## Version 5.2315.0
 
 * Pressing Mesh buttons + the **Enter** key on keypad produces no action, the same **Enter** key on the main keyboard selects the button and executes the associated action. (26462)
@@ -19,11 +25,10 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 * On Quest, when a user is trying to join an immersive space meeting and is shown a "loading is taking a long time" popup dialog, the user will get kicked out of the immersive meeting with an error. (32893)
 
-* On Quest, the avatar's level of details (LOD) may seem off or changing depending on the actions an avatar takes such as nodding or looking up and down. (32894)
-
 * On PC, the avatar's eyes do not follow the selfie camera. (32895)
 
 * Users may find it hard to figure out how to drop interactable objects. The keys for dropping interactable objects - such as marshmallow sticks in the Lake House environment, are the middle mouse button (scroll wheel) and the space bar. This is communicated via a short pop up that users might overlook. (32968)
+
 
 ### Events
 

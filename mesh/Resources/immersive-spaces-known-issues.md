@@ -13,14 +13,18 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 ## Version 5.2401.0
 
-1. The Radio in Lakehouse plays music, but the button on it is outdented, and music notes do not rise from the top, when initially joining a meeting.
+1. The Radio in Lakehouse plays music at first when the button is not indented, indicating that it's not on, and music notes do not rise from the top, when initially joining a meeting.
 
-    Pressing the outdented button will cause the music to stop, and the clicking sound effect will play, while the button stays outdented.
+    Pressing the button will cause the music to stop, and the clicking sound effect will play, while the button stays out.
     Pressing the button once more will cause the radio to behave as intended. (38531)
 
 1. On Quest, users may experience frame drops between 20-30 in the Lakehouse environment when facing or looking at the mini waterfall. (32899)
 
 1. When user highlights a seat but other user occupies it. Seat stays highlighted until the seated user leaves the seat. (40764)
+
+1. **Default Mic/Speaker Settings:** When going to the immersive space, Mesh will now sync with your Teams' audio device selection, resolving the previous potential misalignment with your system default audio device selection.
+
+1. Teams Channels allow multiple ad-hoc meetings to go in parallel in the same channel. When this happens, users in different online meetings of the same channel will join one immersive space and share audio. (42207)
 
 ## Version 5.2315.0
 

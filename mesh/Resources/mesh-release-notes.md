@@ -13,9 +13,11 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
-## Version 5.24.02 (Preview)
-
 ## Version 5.24.01
+
+### What's new
+
+* Presenters can now see their own screenshare when sharing content in Mesh. Previously, screenshared content was only visible to participants other than the presenter, requiring the presenter to navigate out of Mesh to see the content being shared.
 
 ### Resolve product issues
 
