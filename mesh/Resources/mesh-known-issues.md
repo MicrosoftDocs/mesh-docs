@@ -15,7 +15,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.2401.0
 
-* On starting a broadcast, broadcasters may experience a temporary low framerate due to un-optimized net code. (32963)
+* On starting a broadcast, broadcasters may experience a temporary low framerate. (32963)
 
 * On Quest, the avatar's level of details (LOD) may seem off or changing depending on the actions an avatar takes such as nodding or looking up and down. (32894)
 
