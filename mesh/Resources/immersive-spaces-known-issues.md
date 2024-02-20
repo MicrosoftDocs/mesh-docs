@@ -2,8 +2,8 @@
 title: Immersive spaces in Teams known issues and limitations
 description: Currently active known issues and limitations for Immersive spaces in Teams
 ms.service: mesh
-author: qianw211    
-ms.author: qianwen
+author: typride  
+ms.author: tmilligan
 ms.date: 1/17/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
