@@ -22,8 +22,6 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 1. When user highlights a seat but other user occupies it. Seat stays highlighted until the seated user leaves the seat. (40764)
 
-1. **Default Mic/Speaker Settings:** When going to the immersive space, Mesh will now sync with your Teams' audio device selection, resolving the previous potential misalignment with your system default audio device selection.
-
 1. Teams Channels allow multiple ad-hoc meetings to go in parallel in the same channel. When this happens, users in different online meetings of the same channel will join one immersive space and share audio. (42207)
 
 ## Version 5.2315.0
