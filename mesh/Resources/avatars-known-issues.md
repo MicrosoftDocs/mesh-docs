@@ -11,10 +11,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes, Mesh avatars
 
 # Active known issues - Avatars in Teams
 
-
-## February 18, 2023
-=======
-## February 15, 2024
+## February 20, 2024
 
 * Users with ARM devices and running Teams 2.1 may not be able to see the **Avatars** entrypoint in Video effects & Settings and other users' avatars may not render properly. (41694)
 
