@@ -2,8 +2,8 @@
 title: Release notes for Mesh toolkit
 description: Mesh toolkit release notes
 ms.service: mesh
-author: qianw211    
-ms.author: vinnietieto
+author: typride    
+ms.author: tmilligan
 ms.date: 2/12/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
