@@ -96,7 +96,7 @@ landingContent:
             url: Resources/avatars-release-notes.md
 
 # Card
-  - title: Adoption materials
+  - title: Materials for adoption managers
     linkLists:
       - linkListType: deploy
         links:
