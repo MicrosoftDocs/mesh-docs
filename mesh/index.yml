@@ -1,10 +1,10 @@
 ### YamlMime:Landing 
 
-title: Microsoft Mesh documentation reference
+title: Welcome to Microsoft Mesh
 summary: Microsoft Mesh is a suite of tools that bring immersive experiences to your organization. Join in Microsoft Teams, or create custom immersive experiences with the Mesh toolkit and join from a PC or Meta VR headsets.
 
 metadata: 
-  title: Microsoft Mesh documentation reference | 
+  title: Welcome to Microsoft Mesh | 
   description: Microsoft Mesh is a suite of tools that bring immersive experiences to your organization. Join in Microsoft Teams, or create custom immersive experiences with the Mesh toolkit and join from a PC or Meta VR headsets.
   ms.service: mesh 
   ms.topic: landing-page
@@ -24,7 +24,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Welcome to Mesh
+          - text: Overview
             url: develop/design/overview.md
       - linkListType: video
         links:
@@ -44,7 +44,7 @@ landingContent:
         links:
           - text: Preparing your organization
             url: Setup/Content/preparing-your-organization.md
-      - linkListType: reference
+      - linkListType: training
         links:
           - text: Configure Microsoft Mesh
             url: Setup/Content/setup-m365-mesh.md
@@ -70,7 +70,7 @@ landingContent:
   # Card
   - title: Develop
     linkLists:
-      - linkListType: reference
+      - linkListType: training
         links:
           - text: Mesh development overview
             url: develop/development-overview.md
@@ -94,3 +94,11 @@ landingContent:
             url: Resources/immersive-spaces-release-notes.md
           - text: Avatars in Teams release notes
             url: Resources/avatars-release-notes.md
+
+# Card
+  - title: Adoption materials for Mesh
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Adoption materials
+            url: https://adoption.microsoft.com/en-us/microsoft-mesh/

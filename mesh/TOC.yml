@@ -1,7 +1,7 @@
 items:
-- name: Mesh documentation reference
-  href: index.yml
 - name: Welcome to Microsoft Mesh
+  href: index.yml
+- name: Overview
   href: Overview.md
 - name: Get Mesh apps and tools
   href: download-mesh-app-tools.md
