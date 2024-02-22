@@ -34,7 +34,7 @@ landingContent:
   # Card
   - title: Set up and manage
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
           - text: Join the trial for Mesh
             url: Setup/Content/it-admin-led-trials.md
@@ -44,10 +44,10 @@ landingContent:
         links:
           - text: Preparing your organization
             url: Setup/Content/preparing-your-organization.md
-      - linkListType: training
-        links:
           - text: Configure Microsoft Mesh
             url: Setup/Content/setup-m365-mesh.md
+
+          
  
   # Card
   - title: Setup and join events
