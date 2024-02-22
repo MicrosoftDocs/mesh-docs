@@ -24,8 +24,10 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview
+          - text: Overview of Microsoft Mesh
             url: develop/design/overview.md
+          - text: Overview of immersive spaces in Teams
+            url: https://support.microsoft.com/en-us/office/get-started-with-immersive-spaces-in-microsoft-teams-4a6182f8-0f43-4c24-bb66-ef229fa221d8
       - linkListType: video
         links:
           - text: Introducing Microsoft Mesh
@@ -70,12 +72,14 @@ landingContent:
   # Card
   - title: Develop
     linkLists:
-      - linkListType: training
+      - linkListType: get-started
         links:
           - text: Mesh development overview
             url: develop/development-overview.md
           - text: Choose your journey
             url: develop/getting-started/choose-your-journey.md
+          - text: Samples overview
+            url: develop/getting-started/samples/samples-overview.md
       - linkListType: tutorial
         links:
           - text: Mesh 101 Overview and Setup
