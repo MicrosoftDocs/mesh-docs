@@ -32,7 +32,7 @@ landingContent:
             url: https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh
 
   # Card
-  - title: Set up and manage mesh
+  - title: Set up and manage
     linkLists:
       - linkListType: overview
         links:
@@ -50,7 +50,7 @@ landingContent:
             url: Setup/Content/setup-m365-mesh.md
  
   # Card
-  - title: Mesh events
+  - title: Setup and join events
     linkLists:
       - linkListType: get-started
         links:
@@ -96,7 +96,7 @@ landingContent:
             url: Resources/avatars-release-notes.md
 
 # Card
-  - title: Adoption materials for Mesh
+  - title: Adoption materials
     linkLists:
       - linkListType: deploy
         links:
