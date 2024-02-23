@@ -80,8 +80,6 @@ landingContent:
             url: develop/getting-started/choose-your-journey.md
           - text: Samples overview
             url: develop/getting-started/samples/samples-overview.md
-      - linkListType: get-started
-        links:
           - text: Start creating your experience
             url: develop/build-your-basic-environment/create-a-new-project-or-update.md
       - linkListType: training
