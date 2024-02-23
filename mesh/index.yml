@@ -70,7 +70,7 @@ landingContent:
             url: user-guide/join-an-event.md
 
   # Card
-  - title: Develop
+  - title: Develop for Mesh
     linkLists:
       - linkListType: get-started
         links:
