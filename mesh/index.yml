@@ -31,10 +31,10 @@ landingContent:
       - linkListType: video
         links:
           - text: Introducing Microsoft Mesh
-            url: https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh
+            url: https://aka.ms/MeshAdoptionMaterials
 
   # Card
-  - title: Set up and manage
+  - title: Set up and manage Mesh
     linkLists:
       - linkListType: get-started
         links:
@@ -52,7 +52,7 @@ landingContent:
           
  
   # Card
-  - title: Setup and join events
+  - title: Organize and join events
     linkLists:
       - linkListType: get-started
         links:
@@ -80,9 +80,19 @@ landingContent:
             url: develop/getting-started/choose-your-journey.md
           - text: Samples overview
             url: develop/getting-started/samples/samples-overview.md
-      - linkListType: tutorial
+      - linkListType: get-started
         links:
-          - text: Mesh 101 Overview and Setup
+          - text: Start creating your experience
+            url: develop/build-your-basic-environment/create-a-new-project-or-update.md
+      - linkListType: training
+        links:
+          - text: Add Mesh features
+            url: develop/enhance-your-environment/enhanced-features-overview.md
+          - text: Make your experience available for events
+            url: develop/make-your-environment-available/build-and-publish-your-environment.md
+      - linkListType: how-to-guide
+        links:
+          - text: Mesh 101 tutorial
             url: develop/getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md
 
 # Card
