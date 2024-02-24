@@ -16,7 +16,6 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 1. The Radio in Lakehouse plays music at first when the button is not indented, indicating that it's not on, and music notes do not rise from the top, when initially joining a meeting.
 
     Pressing the button will cause the music to stop, and the clicking sound effect will play, while the button stays out.
-    
     Pressing the button once more will cause the radio to behave as intended. (38531)
 
 1. On Quest, users may experience frame drops between 20-30 in the Lakehouse environment when facing or looking at the mini waterfall. (32899)
