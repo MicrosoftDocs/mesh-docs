@@ -2,8 +2,8 @@
 title: Known issues for Mesh
 description: Active known issues for Mesh
 ms.service: mesh
-author: qianw211    
-ms.author: qianwen
+author: typride    
+ms.author: tmilligan
 ms.date: 1/17/2023
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
@@ -11,15 +11,19 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 # Active known issues - Mesh
 
+## Version 5.2401.0
+
+* On starting a broadcast, broadcasters may experience a temporary low framerate. (32963)
+
+* On Quest, the avatar's level of details (LOD) may seem off or changing depending on the actions an avatar takes such as nodding or looking up and down. (32894)
+
 ## Version 5.2315.0
 
 * Pressing Mesh buttons + the **Enter** key on keypad produces no action, the same **Enter** key on the main keyboard selects the button and executes the associated action. (26462)
 
-* When downloading the Mesh app from Microsoft Store, some users will get a blank screen in the web browser. To search for the most current data on the server, press the **CTRL + F5** keys to clear your browser cache.  The latest version of the Microsoft store webpage will then load. (14921)
+* When downloading the Mesh app from Microsoft Store, some users will get a blank screen in the web browser. To search for the most current data on the server, press the **CTRL + F5** keys to clear your browser cache. The latest version of the Microsoft store webpage will then load. (14921)
 
 * On Quest, when a user is trying to join an immersive space meeting and is shown a "loading is taking a long time" popup dialog, the user will get kicked out of the immersive meeting with an error. (32893)
-
-* On Quest, the avatar's level of details (LOD) may seem off or changing depending on the actions an avatar takes such as nodding or looking up and down. (32894)
 
 * On PC, the avatar's eyes do not follow the selfie camera. (32895)
 
@@ -48,6 +52,3 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 ## Current limitations
 
 * Currently, audio capture and text input from users are not supported in Mesh. (35598)
-
-
-
