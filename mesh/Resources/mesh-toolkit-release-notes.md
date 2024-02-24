@@ -32,12 +32,16 @@ These are the offerings and packages currently available. There may be slight di
 
 ## Mesh toolkit 5.2402.0 (Preview)
 
+
 >[!Caution]
 >This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
 >
 > **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
 
 ### What's new
+
+
+* Visual scripts are no longer completely disabled if the environment contains a ScriptMachine with a broken ("Missing") or unassigned ("None") asset graph reference. (36795)
 
 #### Mesh 201 Tutorial
 
@@ -47,11 +51,13 @@ These are the offerings and packages currently available. There may be slight di
 
 * Visual scripts are no longer completely disabled if the environment contains a ScriptMachine with a broken ("Missing") or unassigned ("None") asset graph reference. (36795)
 
+
 * Fixed the String | Create node, which previously only worked in the Emulator but failed to work in standalone builds. (37040)
 
 * The script node selector (Fuzzy Finder) in the script graph UI no longer includes nodes that access inherited properties or methods through types that cannot be accessed directly. (37824)
 
 * Fixed sharing tags shown in the Visual Scripting graph UI for the following Mesh Interactable Body script nodes to correctly say Shared by all clients (instead of incorrectly Local to this client):
+
     - Mesh Interactable Body | Is Activated
     - Mesh Interactable Body | Get Equipped At
     - Mesh Interactable Body | Is Equipped
@@ -107,6 +113,7 @@ These are the offerings and packages currently available. There may be slight di
         * Video Player | Get Length – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-length.html)
         * Video Player | Can Set Time – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-canSetTime.html)
         * Video Player | Can Set Playback Speed – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-canSetPlaybackSpeed.html)
+
 
 #### Mesh uploader
 
