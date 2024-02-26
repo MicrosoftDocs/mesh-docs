@@ -40,7 +40,7 @@ This tutorial assumes that you have the intermediate to advanced Unity skills ne
 
 ### Previous Mesh development with Visual Scripting *or* completion of the Mesh 101 tutorial
 
-If you've been developing Mesh experiences for a while and are familiar not only with Unity Visual Scripting in general but also with some of the more common Mesh-specific Visual Scripting nodes, you can probably complete this tutorial successfully without first having gone through the Mesh 101 tutorial. If you have any doubt, we highly recommend that you complete the Mesh 101 tutorial. The following features were covered in the Mesh 101 documentation and are also included in this tutorial project but won't be covered again in the documentation. If you feel a need to understand these better, click the links.
+If you've been developing Mesh experiences for a while and are familiar not only with Unity Visual Scripting in general but also with some of the more common Mesh-specific Visual Scripting nodes, you can probably complete this tutorial successfully without first having gone through the Mesh 101 tutorial. If you have any doubt, we highly recommend that you complete the Mesh 101 tutorial. The following features were covered in the Mesh 101 documentation and are also included in this tutorial project but won't be covered again in the Mesh 201 documentation. If you feel a need to understand these concepts better, click the links.
 
 [Turn object icons off for a clearer view](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#turn-object-icons-off-for-a-clearer-view)
 
@@ -146,7 +146,7 @@ We recommend that you open the **FinishedProject** scene and run it to get an id
 1. Click the Unity Editor Play button.
 1. Stations 2 and 3 are located on one side of the Sphere Terrace. Navigate to this area and then position yourself so that you're facing the Stations. 
 
-![A screenshot of a computer Description ](../../../media/mesh-201/008B-sphere-terrace-stations-two-and-three.png) 
+    ![A screenshot of a computer Description ](../../../media/mesh-201/008B-sphere-terrace-stations-two-and-three.png) 
 
 1. Move in closer to each Station and then click their **Load** buttons and notice that this action loads HTML pages into the WebSlates.
 
