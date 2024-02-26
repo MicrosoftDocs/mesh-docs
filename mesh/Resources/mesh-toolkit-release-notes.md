@@ -2,9 +2,9 @@
 title: Release notes for Mesh toolkit
 description: Mesh toolkit release notes
 ms.service: mesh
-author: qianw211    
-ms.author: qianwen
-ms.date: 1/23/2023
+author: typride    
+ms.author: tmilligan
+ms.date: 2/12/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
@@ -14,26 +14,111 @@ keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 For purposes of this document, there are two categories of users:
 
 * Creators: Technical artist and developers building with the Mesh toolkit
-* IT admins: Managers working in Azure
+* IT admins: Managers working in Azure or M365
 
-## Version 24.1 (Preview)
-
->[!Caution]
->This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
-> 
-> **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
-
-### Version list and dates
+## Version list and dates
 
 These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
 
 >[!Note]
 >The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh toolkit package, which releases only after the matching Mesh app is available in stores.
 
-| Mesh offering/package   | Version | Date released
-| ----------- | ----------- | ----------- |
-| Mesh toolkit package      |   5.2315.0     | 2023-1-24  |
-| Mesh (PC/Quest)   |  5.2315.0       |  2023-1-24  |
+| Mesh offering/package      | Version  | Date released |
+|----------------------------|----------|---------------|
+| Mesh toolkit               | 5.2315.0 | 2024-2-02     |
+| Mesh toolkit (preview)     | 5.2401.0 | 2024-2-16     |
+| Mesh on PC/Quest           | 5.2401.0 | 2024-2-20     |
+| Mesh on PC/Quest (Preview) | 5.2402.0 | 2024-2-20     |
+
+## Mesh toolkit 5.2402.0 (Preview)
+
+>[!Caution]
+>This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
+>
+> **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
+
+### What's new
+
+#### Mesh 201 Tutorial
+
+* Mesh 201 is released for the Mesh Toolkit version 5.2402.0 (Preview). In this tutorial, you build on that knowledge and learn how to use WebSlates to display web content in your experience. The tutorial includes an interactive globe; when a person in your experience clicks on the globe, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate.
+
+#### Visual scripting
+
+* Visual scripts are no longer completely disabled if the environment contains a ScriptMachine with a broken ("Missing") or unassigned ("None") asset graph reference. (36795)
+
+* Fixed the String | Create node, which previously only worked in the Emulator but failed to work in standalone builds. (37040)
+
+* The script node selector (Fuzzy Finder) in the script graph UI no longer includes nodes that access inherited properties or methods through types that cannot be accessed directly. (37824)
+
+* Fixed sharing tags shown in the Visual Scripting graph UI for the following Mesh Interactable Body script nodes to correctly say Shared by all clients (instead of incorrectly Local to this client):
+    - Mesh Interactable Body | Is Activated
+    - Mesh Interactable Body | Get Equipped At
+    - Mesh Interactable Body | Is Equipped
+    - Mesh Interactable Body | Get Equip Time
+
+    The functionality of these visual script nodes is unchanged. If you need a local version of these properties, you can combine them with the Mesh Interactable Body | Is Mine property. (38589)
+
+* Fixed Script Stats panel in Mesh Emulator not displaying anything if the visual script graph UI hasn't ever been opened for that Unity project on the local machine yet. (40526)
+
+* Fixed Mesh Visual Scripting Diagnostics panel not displaying anything if the visual script graph UI hasn't ever been opened for that Unity project on the local machine yet. (40527)
+
+* Fixed the On Interval node occasionally triggering twice in short sequence after an interval has elapsed. (40894)
+
+* Several useful Render Settings properties are now exposed to visual scripts:
+
+    * For environments whose Environment Lighting Source is set to Skybox:
+        * Render Settings | Get Skybox – see [Unity docs](https://docs.unity3d.com/ScriptReference/RenderSettings-skybox.html)
+        * Render Settings | Get/Set Ambient Intensity – see [Unity docs](https://docs.unity3d.com/ScriptReference/RenderSettings-ambientIntensity.html)
+    * Note that in order to see the effects of skybox material updates on dynamic lighting, include the Dynamic GI | Update Environment script node after modifying the skybox material.
+
+    * For environments whose Environment Lighting Source is set to Color:
+        * Render Settings | Get/Set Ambient Light – see [Unity docs](https://docs.unity3d.com/ScriptReference/RenderSettings-ambientLight.html)
+
+    * For environments whose Environment Lighting Source is set to Gradient:
+        * Render Settings | Get/Set Ambient Sky Color – see [Unity docs](https://docs.unity3d.com/ScriptReference/RenderSettings-ambientSkyColor.html)
+        * Render Settings | Get/Set Ambient Equator Color – see [Unity docs](https://docs.unity3d.com/ScriptReference/RenderSettings-ambientEquatorColor.html)
+        * Render Settings | Get/Set Ambient Ground Color – see [Unity docs](https://docs.unity3d.com/ScriptReference/RenderSettings-ambientGroundColor.html)
+
+* Several Line Renderer component methods and properties are now exposed to visual scripts:
+    * Methods:
+        * Line Renderer | Get Position – see [Unity docs](https://docs.unity3d.com/ScriptReference/LineRenderer.GetPosition.html)
+        * Line Renderer | Get Positions – see [Unity docs](https://docs.unity3d.com/ScriptReference/LineRenderer.GetPositions.html)
+        * Line Renderer | Set Position – see [Unity docs](https://docs.unity3d.com/ScriptReference/LineRenderer.SetPosition.html)
+        * Line Renderer | Set Positions – see [Unity docs](https://docs.unity3d.com/ScriptReference/LineRenderer.SetPositions.html)
+
+    * Properties:
+        * Line Renderer | Get/Set Position Count – see [Unity docs](https://docs.unity3d.com/ScriptReference/LineRenderer-positionCount.html)
+
+* Many useful Video Player component methods and properties are now exposed to visual scripts.
+    * Methods:
+        * Video Player | Play – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer.Play.html)
+        * Video Player | Pause – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer.Pause.html)
+        * Video Player | Stop – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer.Stop.html)
+        * Video Player | Step Forward – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer.StepForward.html)
+
+    * Properties – which can all be observed using an *On State Changed* event node:
+        * Video Player | Is Prepared – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-isPrepared.html)
+        * Video Player | Is Playing – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-isPlaying.html)
+        * Video Player | Is Paused – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-isPaused.html)
+        * Video Player | Is/Set Looping – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-isLooping.html)
+        * Video Player | Get/Set Time – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-time.html)
+        * Video Player | Get/Set Playback Speed – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-playbackSpeed.html)
+        * Video Player | Get Length – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-length.html)
+        * Video Player | Can Set Time – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-canSetTime.html)
+        * Video Player | Can Set Playback Speed – see [Unity docs](https://docs.unity3d.com/ScriptReference/Video.VideoPlayer-canSetPlaybackSpeed.html)
+
+#### Mesh uploader
+
+* The ContentVersion has been incremented to 1.25.0; Newly published content will only be visible in recent MeshBrowsers.
+
+* Improved handling and reporting of failures during Environment creation.
+
+* Add a prompt to open the Mesh Portal if we failed to find any collections for the user.
+
+* Improved message when cancelling the dialog to select a new thumbnail folder.
+
+## Mesh toolkit 5.2401.0 (Preview)
 
 ### What's new
 
@@ -43,7 +128,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * Some errors that came from the Mesh services did not have enough information in them. For example, some errors were just reported as "BadRequest" or "BadGateway". We've improved error messages from the service to include more useful details.
 
-* Simplified discovery of options by moving the **Settings** in the **Options** tab into the **Project/Mesh Uploader Settings** pane with the other **Uploader** settings.
+* Simplified discovery of options by moving the **Settings** in the **Options** tab into the **Project Settings/Mesh Uploader Settings** pane with the other **Uploader** settings.
 
 * Improved error handling when thumbnail generation fails.
 
@@ -61,13 +146,13 @@ These are the offerings and packages currently available. There may be slight di
 
 * Select **Script Stats** to show a panel of real-time visual script performance statistics, such as:
 
-    * which visual script flows require the most per-frame time to execute 
-    
-    * which shared properties and variables are updated (and replicated over network) most often 
-    
+    * which visual script flows require the most per-frame time to execute
+
+    * which shared properties and variables are updated (and replicated over network) most often
+
     Clicking on an entry brings you straight to the corresponding scene object in the **Hierarchy** panel.
 
-* Select **Perf Stats** to show to **Visual Profiler** (only in single-screen mode) to displays real-time CPU and GPU performance statistics for the scene you're running.
+* Select **Perf Stats** to show to **Visual Profiler** (only in single-screen mode) to display real-time CPU and GPU performance statistics for the scene you're running.
 
 #### Scripting and physics
 
@@ -75,7 +160,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * During an environment upload, issues detected by the Visual Scripts validation step now log significantly improved diagnostics and extended guidance on how to avoid the reported issues. (34450)
 
-## Version 23.15
+## Version 5.2315.0
 
 ### Version list and dates
 
@@ -86,8 +171,8 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package   | Version | Date released
 | ----------- | ----------- | ----------- |
-| Mesh toolkit package      |   5.2315.0     | 2023-1-24  |
-| Mesh (PC/Quest)   |  5.2315.0       |  2023-1-24  |
+| Mesh toolkit package      |   5.2315.0     | 2023-2-2  |
+| Mesh (PC/Quest)   |  5.2315.0       |  2023-2-2  |
 
 ### What's new
 
@@ -107,7 +192,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * Renamed the menu item from **Mesh Toolkit/Configure/Project Settings** to **Mesh Toolkit/Configure/Apply Project Settings**.
 
-* Renamed button **Add Provisional Thumbnail** to **Add guidance thumbnails**.
+* In the Mesh Uploader **Update Environment** tab, when you click the the **Thumbnail** drop-down and select **Take from folder**, a button appears with a label that used to say **Add Provisional Thumbnails** but now says **Add guidance thumbnails**.
 
 * We now show an error dialog when the user picks a folder outside of the project.
 
@@ -137,7 +222,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * Sometimes the Uploader would hit a `UserInteractionNeeded` exception when authenticating the user. We now mitigate this problem when it occurs by delegating the user to a Web Browser based authentication.
 
-* Renamed some layers - details to come.
+* Breaking changes to layers: we renamed several layers, moving currently unused layers into reserved layers, and updated cross-layer interactions. See [Configuring for avatar movement and teleportation](/mesh/develop/build-your-basic-environment/configuring-for-avatar-movement-and-teleportation).
 
 * Moved the setting from `RequireNavMeshLayer` to `RequireGroundCollisionLayer`.
 
@@ -145,15 +230,15 @@ These are the offerings and packages currently available. There may be slight di
 
 #### Scripting
 
-* The NavMesh layer is now called the GroundCollision layer. For more information on the uses of the GroundCollision layer, see [Set up your scene > Guidelines for Player Movement & Supporting Teleportation](/mesh/develop/build-your-basic-environment/set-up-your-scene#guidelines-for-player-movement)
+* The NavMesh layer is now called the GroundCollision layer. For more information on the uses of the GroundCollision layer, see [Configuring for avatar movement and teleportation](../develop/build-your-basic-environment/configuring-for-avatar-movement-and-teleportation.md).
 
-* Shared properties and script variables set on dynamic targets, for example, target component instances read from script variables or otherwise deduced at script runtime, now reliably work on all viable targets throughout the scene. (32730)
+* Shared properties and script variables set on dynamic targets--for example, target component instances read from script variables or otherwise deduced at script runtime--now reliably work on all viable targets throughout the scene. (32730)
 
-    Previously, only a subset of viable target instances throughout the scene worked reliably when a target was deduced dynamically during script runtime: this doesn't include target instances that were placed in sibling branches of the transform tree.
+    Previously, only a subset of viable target instances throughout the scene worked reliably when a target was deduced dynamically during script runtime. This doesn't include target instances that were placed in sibling branches of the transform tree.
     
-    * anything on the implicit `This` scene object, 
+    * anything on the implicit `This` scene object
 
-    * anything below it, 
+    * anything below it
     
     * anything on any of its parents 
     
@@ -165,7 +250,7 @@ These are the offerings and packages currently available. There may be slight di
 
     * was attached to any parent/ancestor GameObject of `This` in the transform hierarchy
 
-    * was attached to any child/descendant GameObject of This in the transform hierarchy.
+    * was attached to any child/descendant GameObject of This in the transform hierarchy
 
 * Using Timer nodes in subgraphs no longer causes repeated error messages related to `OptimizedTimerUnitUpdateScheduler` to be logged. (31866)
 
@@ -209,7 +294,7 @@ These are the offerings and packages currently available. There may be slight di
 
 * The **Create Asset** button is now **Create Environment**.  See [Mesh 101 Tutorial Chapter 5: Make your environment available for testing](/mesh/develop/getting-started/mesh-101-tutorial/mesh-101-05-make-environment-available).
 
-## Version 23.14
+## Version 5.2314.0
 
 ### Version list and dates
 
@@ -301,7 +386,7 @@ These are the offerings and packages currently available. There may be slight di
 
     Oops! We failed to connect. Please check your internet connection and try again. (29004)
 
-## Version 23.13
+## Version 5.2313.0
 
 ### Version list and dates
 

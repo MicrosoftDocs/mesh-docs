@@ -1,10 +1,10 @@
 ---
 title: IT admin-led trials
-ms.reviewer: 
 ms.author: tmilligan
 author: typride
 manager: tyadams
 audience: Admin
+ms.date: 02/01/2024
 f1.keywords:
 - NOCSH
 ms.topic: article
@@ -20,28 +20,30 @@ This article describes how to set up and run an IT Admin-led trial pilot program
 
 ## Getting started
 
-There are a few steps to take before initiating your Microsoft Mesh trial. First, we need to ensure your organization is set up to run Microsoft Mesh by:
+There are a few steps to take before initiating your Microsoft Mesh trial to ensure your organization is set up for Microsoft Mesh:
 
-- Visiting the [Preparing your organization for Microsoft Mesh](preparing-your-organization.md) page to accomplish the required tasks and assign the suggested functional roles that may be involved a rollout.
+- Visit the [Preparing your organization for Microsoft Mesh](preparing-your-organization.md) page to accomplish the required tasks and assign the suggested functional roles that may be involved a rollout.
 
-- Completing the prerequisite steps in our [Guide to set up Microsoft Mesh with M365](setup-m365-mesh.md).
+- Complete the prerequisite steps and ensure you have prerequisite licenses, as described in [Guide to set up Microsoft Mesh with M365](setup-m365-mesh.md#prerequisites).
 
-There are licensing requirements and configuration steps needed prior to beginning your Microsoft Mesh trial. The trial start date initiates from the date the trial licenses are activated in Microsoft 365 Admin Center so please ensure your organization is configured to run Microsoft Mesh prior to initiating the trial.
+There are [licensing requirements](../../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-mesh) and [configuration steps](preparing-your-organization.md#preparing-your-organization-for-mesh) needed prior to beginning your Microsoft Mesh trial. The trial start date initiates from the date the trial licenses are activated in Microsoft 365 Admin Center so please ensure your organization is configured to run Microsoft Mesh prior to initiating the trial.
 
 ## Sign up for a trial
+
+This offer is applicable with an active Microsoft 365 or Teams plan for business or enterprise. A Teams Premium license is required upon expiration of the Mesh trial.
 
 Trials are publicly available from one of the following sources. These IT Admin trials offer customers access to Microsoft Mesh for 6 months.
 
 To sign up for a trial, please visit:
 
-- [Microsoft Mesh - Home](https://www.microsoft.com/mesh)
-- [M365 Admin Portal](https://admin.microsoft.com/)
+- The [Microsoft Mesh Trial - Admin link](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh)
+- The [M365 Admin Center](https://admin.microsoft.com/) and follow the steps below:
     1. Sign in to [https://admin.microsoft.com/](https://admin.microsoft.com/).
-    1. Go to **Billing** > **Purchase Services**.
-    1. Scroll down to the **Microsoft 365** section or search for Microsoft Mesh.
+    1. Go to **Marketplace** > **Billing** > **Purchase Services**.
+    1. Search for **Microsoft Mesh** or **Purchase services** or scroll down to the **Other Services** section of **Purchase services**.
     1. On the **Microsoft Mesh Trial** title, select **Details**.
-    1. Select **Get free trial**.
-    1. Follow the remaining steps to confirm the trial.
+    1. Select **Start free trial**.
+    1. Follow the remaining wizard steps to confirm the trial.
 
 These admin-led trials are not available worldwide. They aren't available for Government customers or customers with EDU or FLW SKUs. See the [Mesh Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md) for full licensing requirements.
 
@@ -92,3 +94,7 @@ If you don't purchase licenses following the trial:
 - Users will continue to have access to the Mesh toolkit in Unity but will be unable to access the Microsoft Mesh application to publish and experience your environments in Mesh.
 
 Give us feedback about your trial experience! Tell us what you think in the feedback below.
+
+## Troubleshooting
+
+Based on customer tenant configuration, some customers may be unable to see the Microsoft Mesh trial if searching directly in Microsoft 365 admin center. Following the [Microsoft Mesh Trial - Admin link](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh) will take you directly to the trial location.

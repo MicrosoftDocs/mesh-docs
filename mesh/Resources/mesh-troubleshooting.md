@@ -4,7 +4,7 @@ description: Various help guides and FAQ answers regarding Mesh events.
 ms.service: mesh
 author: qianw211
 ms.author: qianwen
-ms.date: 1/22/2023
+ms.date: 2/2/2024
 ms.topic: Troubleshooting
 keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
 ---
@@ -137,6 +137,16 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 1. Open a support request by following the link [here](https://admin.microsoft.com) (this support link may only be available to M365 admins).
 
+### Why am I getting an error when accessing Mesh on Quest?
+
+Mesh on Quest currently doesn't support [Azure Active Directory Conditional Access](/appcenter/general/configuring-aad-conditional-access). If your organization applies Conditional Access policies for managed or unmanaged devices, then you won’t be able to access Mesh on Quest. If a user in your organization attempts to launch Mesh on Quest where conditional access policies are applied, they will receive errors [AADSTS50199](/entra/identity-platform/reference-error-codes) and [AADSTS53003](/entra/identity-platform/reference-error-codes).
+
+If you would like to test Mesh on Quest, we recommend **either** deploying Mesh on a test tenant with test accounts where conditional access policies are not applied **or** work with your security IT Administration team to see if they are willing to make a policy exception for select Quest devices. Mesh expects to support conditional access in the future.
+
+### How can I manage Quest VR headsets for my organization?
+
+[Meta Quest for Business](https://forwork.meta.com/quest/business-subscription/) offers user, device, and app management for Meta Quest devices used in the workplace. Quest for Business works with Microsoft Intune to enable you to have a cloud-based unified endpoint management across the broad set of device form factors in your organization.
+
 ### How to get a list of signed-in users to Mesh?
 
 Admins may desire a list of users that have signed in to Mesh. You can use the Microsoft Azure portal get a list of users that have signed-in to Mesh due to the fact that all users sign into Mesh with their Microsoft Entra ID (formerly known as Azure Active Directory).
@@ -180,15 +190,11 @@ Follow these steps to get a list of signed-in users to Mesh from the Azure porta
 
     :::image type="content" source="media/list-users-date-resource-filters.png" alt-text="Screenshot of user sign ins page in Azure portal showing filters date, user sign ins non-interactive, mesh service highlighted.":::
 
-1. Verify the list of **User sign-ins (non-interactive)** looks accurate and then click the **Download > Download JSON** menu item to open the Download pane.
-
-    :::image type="content" source="media/list-users-date-download-JSON.png" alt-text="Screenshot of Azure portal showing Download JSON highlighted.":::
+1. Verify the list of **User sign-ins (non-interactive)** looks accurate and then click the **Download > Download CSV** menu item to open the Download pane.
 
 1. Click the **Download** button underneath the file named **NonInteractiveSignIns…** to save the records locally.
 
-    :::image type="content" source="media/list-users-date-download-button.png" alt-text="Screenshot of Azure portal showing download button highlighted.":::
-
-### What should I do with issues relating to M365?
+### What should I do with issues relating to M365? 
 
 You'll need to first reproduce the problem, and then follow the steps below to collect all information related to Mesh:
 
@@ -208,6 +214,12 @@ The data should be your version of the following:
 - **Tenant ID:**
 - **Trace ID:**
 - **Date:**
+
+### Why don't avatars have legs?
+
+Avatars add a new layer of choice to your meetings, both in 2D and 3D immersive spaces. We are continuously researching and collecting feedback on ways to best represent yourself in Mesh and Teams whether it's improving your likeness, adding options for clothing, creating more realistic avatars, or including full body representation. Driving improvements in each of these areas comes with its own set of challenges. In particular, representing legs today is a surprisingly complex engineering challenge - inferring leg position without any data that helps describe actual leg position.
+
+Our goal is to use the latest technologies to their fullest to represent users' likenesses in Mesh and Teams and we will continue to drive toward that goal. Please continue to share your feedback with us so we can evolve how people can visually represent themselves in meetings.
 
 ### Audio setup in Mesh FAQ
 

@@ -3,15 +3,15 @@ title: Known issues for Mesh toolkit
 description: Mesh toolkit active known issues
 ms.service: mesh
 author: qianw211    
-ms.author: qianwen
-ms.date: 1/23/2024
+ms.author: vinnietieto
+ms.date: 2/12/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
 
 # Active known issues - Mesh toolkit
 
-## Version 23.15
+## Version 5.2315.0
 
 * The embedded videos show as black on Quest 2. (24096)
 
