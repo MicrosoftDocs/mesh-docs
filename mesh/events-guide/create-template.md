@@ -11,9 +11,9 @@ keywords: Microsoft Mesh, templates, events, hosting, event producer, event orga
 
 # Create Template
 
-Templates allow organizers to reuse environments and customization made in environments for future events.
+Templates allow organizers to reuse an event and any customizations made for an event in future events. By creating a template, you save time and effort in creating multiple events.
 
-Templates can be created directly in Microsoft Mesh app, or created from an existing Event.
+Templates can be created directly in Microsoft Mesh app dashboard, or created from an existing Event in Mesh on the web.
 
 ## Template creation flow
 
@@ -63,10 +63,9 @@ If you've already customized an event or prefer to create a template from an exi
 
 :::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-from-environments-page.png" alt-text="Screenshot of Mesh on the Web Environments page, showing create Template option.":::
 
-
 ## Customize your Template
 
-Now that your Template was created, you can customize it with the Customize it. For more info how to customize see [Customize event experience](customize-event.md#customize-a-template).
+Now that your Template was created, you can customize it. For more info how to customize see [Customize event experience](customize-event.md#customize-a-template).
 
 1. Find your **Template** draft.
 

@@ -4,7 +4,7 @@ description: Learn about adding a few basic features that are necessary for the 
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 1/23/2024
+ms.date: 2/7/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
@@ -106,11 +106,7 @@ learn about Mesh Interactables and Mesh Physics.
 
 ### Choose the GroundCollision layer
 
-For this project, we want our avatar to be able to walk around only on the floors inside the *Sphere Terrace* objects and the floor of a
-platform that's attached to one of the wind turbine generators. For
-these areas to be teleportable, they must be on the *GroundCollision* layer. Let's
-
-add the *Sphere Terrace* in Chapter 3 to the GroundCollision layer.
+For this project, we want our avatar to be able to walk around only on the floors inside the *Sphere Terrace* objects and the floor of a platform that's attached to one of the wind turbine generators. For these areas to be teleportable, they must be on the *GroundCollision* layer. Let's add the *Sphere Terrace* in Chapter 3 to the GroundCollision layer.
 
 1. In the **Hierarchy**, expand the **Chapter 3** GameObject.
 

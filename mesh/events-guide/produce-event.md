@@ -26,7 +26,7 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 ## Event Producers tools
 
 - **[Host panel:](#host-panel)** See the participants in your event and use the host panel toolbar to access the *[Mute all](#mute-all)*, *[Hand Raise](#hand-raise)*, *[Megaphone](#megaphone)*, *[Broadcast](#broadcast)*, and  *[Share](#share)* buttons.
-- **[Control panel](#control-panel):** Control the elements that were added in a Customization session. [Play a video](#control-artifacts-in-the-control-panel), for example, or control custom artifacts that you may have added!
+- **[Control panel](#control-panel):** Control the elements that were added in a Customization session. [Play a video](#control-objects-in-the-control-panel), for example, or control custom objects that you may have added!
 
 ## Common event scenarios
 
@@ -37,7 +37,7 @@ For those interested in running question and answer scenarios where participants
 After you've created your event, customized it, and added content to the control panel, it's time to join and produce your event.
 
 > [!TIP]
-> **Ensure that you've [customized your event](customize-event.md) properly** (added custom content or artifacts to your environment, added it to the control panel, and saved) before producing your event.
+> **Ensure that you've [customized your event](customize-event.md) properly** (added custom content or objects to your environment, added it to the control panel, and saved) before producing your event.
 
 1. Open the Mesh app directly or use the link your calendar invite to open the Mesh app.
 
@@ -75,7 +75,7 @@ Mute all attendees in the event. Hosts in the event can still use their mics and
 
 **Disabled:** Attendees can now use their microphone.
 
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-mute-all-2314.png" alt-text="Mute all button in host panel":::
+:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-mute-all-2314.png" alt-text="Mute all button highlighted in host panel":::
 
 #### Hand Raise
 
@@ -85,7 +85,7 @@ Enable or disable Hand Raise for participants. Hand Raise is ideal for Question 
 
 **Hand raise disabled:** Participants cannot raise their hand.
 
-:::image type="content" source="../media/common-event-scenarios\producer-tools-hand-raise-2314.png" alt-text="Mute all button in host panel":::
+:::image type="content" source="../media/common-event-scenarios\producer-tools-hand-raise-2314.png" alt-text="Hand raise button highlighted in host panel.":::
 
 When an attendee has their hand raised, you'll see the hand raise notification next to their name in the host panel. In a single room event, you'll also see hand raise icon above their avatar.
 
@@ -94,7 +94,7 @@ When an attendee has their hand raised, you'll see the hand raise notification n
 > [!TIP]
 > In multi-room events, you won't see any attendee avatars until they are broadcast.
 
-Learn how to [use Hand Raise for question and answer (Q&A) scenarios](common-event-scenarios.md#using-hand-raise-for-Q&A)
+Learn how to [use Hand Raise for question and answer (Q&A) scenarios](common-event-scenarios.md#using-hand-raise-for-qa)
 
 #### Megaphone
 
@@ -133,7 +133,7 @@ When you request an attendee to broadcast or megaphone, you'll receive a notific
 
 #### Share
 
-Share your screen or a specific window on your PC to all participants. Screenshare requires the Screenshare artifact that is [added when you customize your Event or Template](customize-event.md#add-content-with-environment-editor).
+Share your screen or a specific window on your PC to all participants. Screenshare requires the Screenshare object that is [added when you customize your Event or Template](customize-event.md#add-content-with-editor).
 
 **Enabled:** Host screen or window will be shown to all participants.
 
@@ -173,21 +173,21 @@ At the top of the panel, you have *two tabs* to choose from:
 
 ## Control panel
 
-The Control panel is used to control the content or artifacts that were added when customizing an Event or Template. To learn more, see how to [Customize your event](customize-event.md).
+The Control panel is used to control the content or objects that were added when customizing an Event or Template. To learn more, see how to [Customize your event](customize-event.md).
 
-### Control artifacts in the Control panel
+### Control objects in the Control panel
 
 1. Select the **Control panel** button in the bottom right of the menu bar.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Event-production-control-panel-button.png" alt-text="Screenshot of Mesh app showing Control panel button and panel":::
 
-In the Control panel, you'll see all the artifacts and content that you added to your Event or Template.
+In the Control panel, you'll see all the objects and content that you added to your Event or Template.
 
-1. In the Control panel, select an artifact and interact with its controls as desired during your event.
+1. In the Control panel, select an object and interact with its controls as desired during your event.
 
-    In the example below, in the **Play state** section for the **Video** artifact, we can select the **Play** button to play the video.
+    In the example below, in the **Play state** section for the **Video** object, we can select the **Play** button to play the video.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Event-production-control-panel-play-artifact-2.png" alt-text="Screenshot of Mesh app, the control panel playing a video artifact.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Event-production-control-panel-play-artifact-2.png" alt-text="Screenshot of Mesh app, the control panel playing a video object.":::
 
    > [!div class="nextstepaction"]
    > [Getting started with attending events](../user-guide/getting-started.md)

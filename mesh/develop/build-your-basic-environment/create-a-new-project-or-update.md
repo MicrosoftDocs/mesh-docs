@@ -3,7 +3,7 @@ title: Create a new Unity project for your Mesh Experience
 description: Learn how to create a new Mesh project in Unity.
 author: typride
 ms.author: vinnietieto
-ms.date: 12/13/2023
+ms.date: 2/2/2024
 ms.service: mesh
 ms.topic: How to
 keywords: Microsoft Mesh, Unity, M365, Immersive spaces, Avatars, getting started, documentation, features
@@ -37,4 +37,5 @@ An easy way to start creating a Mesh experience is to [open an existing sample](
 
 ## Next steps
 
-[Add the Mesh toolkit package](add-the-mesh-toolkit-package.md)
+> [!div class="nextstepaction"]
+> [Add the Mesh toolkit package](add-the-mesh-toolkit-package.md)

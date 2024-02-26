@@ -17,7 +17,6 @@ According to Microsoft’s Work Trend Index report, 43 percent of leaders say re
 
 ## Introducing Microsoft Mesh
 
-
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1eO6Z]
 
 We are re-imagining the way employees come together with Microsoft Mesh, a new three-dimensional (3D) immersive experience.
@@ -33,6 +32,10 @@ Immersive spaces have unique attributes that create a perception of being physic
 Spatial awareness through directionality and distance enables multiple small group discussions in the same place, adding familiar human elements to digital connections. Spending time in the same 3D environment also creates a powerful sense of togetherness, or **co-presence**, even without actively speaking.
 
 This co-presence can lead to serendipitous moments of conversation or even just the deepened connection of a shared experience. 3D environments also remove distractions and help participants focus on fewer things—specifically the people and objects that surround them, driving a higher sense of **immersion**.
+
+## Immersive spaces in Microsoft or Mesh
+
+When to use immersive spaces in Teams or use the Mesh application.
 
 ## Use immersive spaces in Microsoft Teams
 

@@ -79,13 +79,13 @@ A typical Unity project containing a scene with an associated Cloud Scripting wo
   
 Each scene in your Unity project that contains the MeshCloudScripting component has a corresponding folder of the same name in a ".MeshCloudScripting" folder in your Assets directory. The Cloud Scripting component creates this folder and its initial set of files which will compile to a fully working, though empty, Cloud Scripting Service. Some of the initial files are shown above. `Program.cs` contains boilerplate code that takes care of:
 
-- configuring an [IHostBuilder](https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder) to launch the `App` [service](https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice).
+- configuring an [IHostBuilder](/dotnet/api/microsoft.extensions.hosting.ihostbuilder) to launch the `App` [service](/dotnet/api/microsoft.extensions.hosting.ihostedservice).
 
-- building an [IHost](https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihost) instance.
+- building an [IHost](/dotnet/api/microsoft.extensions.hosting.ihost) instance.
 
 - running the `IHost` instance to completion.
 
-`App.cs` is the class that hosts your application logic. It implements the [IHostedService](https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice) interface, so it has two entrypoints: `StartAsync` and `StopAsync`. `StartAsync` is triggered once, when the `IHost` is ready to start the `App` service. As well, `StopAsync` is triggered when the `IHost` is performing a graceful shutdown.
+`App.cs` is the class that hosts your application logic. It implements the [IHostedService](/dotnet/api/microsoft.extensions.hosting.ihostedservice) interface, so it has two entrypoints: `StartAsync` and `StopAsync`. `StartAsync` is triggered once, when the `IHost` is ready to start the `App` service. As well, `StopAsync` is triggered when the `IHost` is performing a graceful shutdown.
 
 ### Scene representation
 
