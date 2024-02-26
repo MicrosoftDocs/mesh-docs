@@ -26,12 +26,20 @@ landingContent:
         links:
           - text: Overview of Microsoft Mesh
             url: develop/design/overview.md
-          - text: Overview of immersive spaces in Teams
-            url: https://support.microsoft.com/en-us/office/get-started-with-immersive-spaces-in-microsoft-teams-4a6182f8-0f43-4c24-bb66-ef229fa221d8
       - linkListType: video
         links:
           - text: Introducing Microsoft Mesh
             url: https://aka.ms/MeshAdoptionMaterials
+
+  # Card
+  - title: Immersive spaces in Teams & avatars
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of immersive spaces in Teams
+            url: aka.ms/GetStartedImmersiveSpaces
+          - text: Join a meeting as an avatar
+            url: aka.ms/MeshAvatarDocs
 
   # Card
   - title: Set up and manage Mesh
