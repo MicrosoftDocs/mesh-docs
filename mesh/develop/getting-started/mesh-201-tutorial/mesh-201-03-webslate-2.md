@@ -39,9 +39,7 @@ Just as in the previous chapter, there's already a GameObject in place with some
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/035-loadbutton1-script-graph.png)
 
-1. In the **Script Machine** component, click **Edit Graph**, and then dock the **Script Graph** window next to the **Project** and **Console** tabs if it's not there already.
-
-    As in the previous chapter, the script graph has already been started for you.
+1. When you selected **LoadButton1**, its Script Machine's script graph automatically loaded into the **Script Graph** window. If needed, click that window's tab to display its contents. As in the previous chapter, the script graph has already been started for you.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/037-loadbutton1-script-graph.png)
 

@@ -41,8 +41,6 @@ In this chapter, we move forward to Station 4 and explore a way to load data fro
 1. Expand **4 - LoadURL** and note that it has child objects named **EarthActions** and **Earth**. Each of these objects has a Script Machine attached. 
 1. Select **Earth**. Its script graph appears in the **Script Graph** window. 
 
-    ![A screenshot of a computer Description ](../../../media/mesh-201/052-edit-graph-button.png)
-
 The script graph, named *Globe location on Webslate*, is designed to detect a click on the **Earth** object and to know the precise geographical location of that click (latitude and longitude) so that a map of that area can be displayed on the WebSlate. 
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/053-earth-graph.png)

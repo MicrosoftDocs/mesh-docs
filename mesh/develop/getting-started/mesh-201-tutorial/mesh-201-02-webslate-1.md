@@ -72,7 +72,7 @@ The button object is named *LoadButton*.
     > [!TIP]
     > The **Source** property for the script has two options: *Graph* and *Embed*. Each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine article](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We use the *Embed* option here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
 
-1. The **Script Machine** window should already be open and placed next to the **Project** and **Console** tabs.
+1. The **Script Graph** window should already be open and placed next to the **Project** and **Console** tabs. Click its tab to see its contents.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/020-script-graph.png)
 
