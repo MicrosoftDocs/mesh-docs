@@ -81,14 +81,14 @@ Download Microsoft Mesh on PC
 
 To get the samples, you must go to the [*Mesh-Toolkit-Unity* repository](https://github.com/microsoft/Mesh-Toolkit-Unity) and then clone the repo.
 
-    ![______](../../../media/mesh-201/001A-toolkit-in-github.png)
+![______](../../../media/mesh-201/001A-toolkit-in-github.png)
 
-    **NOTES**:
-    
-    - GitHub also gives you the option to download the samples in a Zip file. We recommend that you clone the repo since it's more convenient to get future updates simply by updating the repo rather than downloading a new Zip file every time.  
-    - We're not currently accepting code contributions to our samples. If you have any feedback or if you run into any issues with the samples or the Mesh toolkit, do the following: in a Unity project that has the Mesh toolkit package installed, select **Mesh Toolkit** > **Give feedback to Microsoft** and then use the feedback link in the Mesh toolkit to let us know.
+**NOTES**:
 
-    **Important**: If you're cloning, you should have [Git LFS installed](https://git-lfs.com/).
+- GitHub also gives you the option to download the samples in a Zip file. We recommend that you clone the repo since it's more convenient to get future updates simply by updating the repo rather than downloading a new Zip file every time.  
+- We're not currently accepting code contributions to our samples. If you have any feedback or if you run into any issues with the samples or the Mesh toolkit, do the following: in a Unity project that has the Mesh toolkit package installed, select **Mesh Toolkit** > **Give feedback to Microsoft** and then use the feedback link in the Mesh toolkit to let us know.
+
+**Important**: If you're cloning, you should have [Git LFS installed](https://git-lfs.com/).
 
 1. Select the **Code** button, and then click the "Copy url to clipboard" button.
 
@@ -152,7 +152,7 @@ We recommend that you open the **FinishedProject** scene and run it to get an id
 
 If things look a little blurry in the **Game** window when you're in Play mode, take a look at the **Scale** slider located just above the window. For the best visual fidelity, the slider show be moved all the way to the left so the scale equals "1x."
 
-    ![A screenshot of a computer Description ](../../../media/mesh-201/071-scale-settings.png) 
+![A screenshot of a computer Description ](../../../media/mesh-201/071-scale-settings.png) 
 
 ## Next steps
 
