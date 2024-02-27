@@ -4,7 +4,7 @@ description: Learn how to load a local shared HTML file into a WebSlate.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 2/5/2024
+ms.date: 2/27/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
 ---
@@ -19,7 +19,7 @@ In the previous chapter of this tutorial, you enabled a button to load a local n
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/032-station-one-one.png)
 
-Just as in the previous chapter, there's already a GameObject in place with some descriptive text but this time there are two buttons: **LoadButton1** and **LoadButton2**. There's also a WebSlate already in place. We'll complete the Station by updating a script graph that's attached to one of the buttons. When an attendee clicks either button, a web page will load and all the other attendees in the experience can *share* in viewing the new page. Each button at this Station loads a slightly different type of content.
+Just as in the previous chapter, there's already a GameObject in place with some descriptive text but this time there are two buttons: **Load 1** and **Load 2**. There's also a WebSlate already in place. We'll complete the Station by updating a script graph that's attached to one of the buttons. When an attendee clicks either button, a web page will load and all the other attendees in the experience can *share* in viewing the new page. Each button at this Station loads a slightly different type of content.
 
 1. In the **Hierarchy**, collapse the GameObject named **2 - LocalWebslate**.
 1. Expand **3 - StaticContentWebslate**. The **WebSlateFramed** object that has been pre-added is located here.
@@ -32,13 +32,14 @@ Just as in the previous chapter, there's already a GameObject in place with some
 
 ## Edit the script graph
 
+1. Close the **Load HTML** script graph window you worked with in the previous chapter. 
 1. In the **Hierarchy**, select **LoadButton1**.
 
-    In the **Inspector**, you can see that that **LoadButton1** has a **Script Machine** component containing an embedded script named **Load HTML on a Shared Webslate** and a variable that we'll be using in the script.
+    In the **Inspector**, you can see that **LoadButton1** has a **Script Machine** component containing an embedded script named **Load HTML on a Shared Webslate** and a variable that we'll be using in the script.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/035-loadbutton1-script-graph.png)
 
-1. In the **Script Machine** component, click **Edit Graph**. 
+1. In the **Script Machine** component, click **Edit Graph**, and then dock the **Script Graph** window next to the **Project** and **Console** tabs if it's not there already.
 
     As in the previous chapter, the script graph has already been started for you.
 
@@ -89,7 +90,7 @@ The **Get Component in Children** node already contains the target we want--**We
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/042-station-one-one-with-default-homepage.png)
 
-1. Click the **Load 1** button. The WebSlate loads and displays a page with the title "Wind Energy Across the World". Note that the WebSlate is interactive--you can click an empty space in the scroll bar to move the slider to that position and change the view of the page. (You can't drag the slider itself.)
+1. Click the **Load 1** button. The WebSlate loads and displays a page with the title "Wind Energy Across the World". Note that the WebSlate is interactive--you can click the arrows above and below the scroll bar or an empty space in the scroll bar to move the slider and change the view of the page. (You can't drag the slider itself.)
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/043-station-one-one-with-html-asset-loaded.png)
 

@@ -3,7 +3,7 @@ title: Mesh 201 Load a local non-shared HTML file into a WebSlate
 description: Learn about loading a local non-shared HTML file into a WebSlate.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 2/5/2024
+ms.date: 2/26/2024
 ms.topic: Tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
@@ -26,7 +26,7 @@ Now that you're all set up and have had a chance to try out the project, let's m
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/011-mesh-webslates.png)
 
-1. In the **Hierarchy**, collapse the **staticSceneObjects** object.
+1. In the **Hierarchy**, collapse the **staticSceneObjects** object, if needed.
 1. Expand **MeshWebSlates** and then expand its child object named **2 - LocalWebslate**.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/012-webslates-expanded.png)
@@ -72,7 +72,7 @@ The button object is named *LoadButton*.
     > [!TIP]
     > The **Source** property for the script has two options: *Graph* and *Embed*. Each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine article](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We use the *Embed* option here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
 
-1. In the **Script Machine** component, click the **Edit Graph** button. This opens the **Script Graph** window. Its tab should already be placed next to the **Project** and **Console** tabs; if not, drag it there so that we can see the script graph and **Scene** window above it at the same time.
+1. The **Script Machine** window should already be open and placed next to the **Project** and **Console** tabs.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/020-script-graph.png)
 
