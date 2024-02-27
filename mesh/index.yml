@@ -50,10 +50,10 @@ landingContent:
             url: Setup/Content/it-admin-led-trials.md
           - text: Get Mesh apps and tools
             url: download-mesh-app-tools.md
-      - linkListType: learn
-        links:
           - text: Preparing your organization
             url: Setup/Content/preparing-your-organization.md
+      - linkListType: how-to-guide
+        links:
           - text: Configure Microsoft Mesh
             url: Setup/Content/setup-m365-mesh.md
 
@@ -66,7 +66,7 @@ landingContent:
         links:
           - text: Events overview
             url: events-guide/events-overview.md
-      - linkListType: learn
+      - linkListType: how-to-guide
         links:
           - text: Create events or manage collections
             url: Setup/Content/manage-mesh-on-web.md

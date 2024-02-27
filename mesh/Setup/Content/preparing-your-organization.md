@@ -25,7 +25,7 @@ This content covers requirements for Mesh implementations for Immersive spaces i
 
 1. [Contact owners of supporting teams](#contact-owners-of-supporting-teams)
 
-1. [Configure service plan or Office Apps Policy Service for Mesh](#configure-service-plan-or-office-apps-policy-service-for-mesh)
+1. [Configure service plan](#configure-service-plan)
 
 1. [Work with your security team](#work-with-your-organizations-security-team)
 
@@ -167,9 +167,10 @@ about managing feedback, see
 
 [Manage feedback policies in Teams](/microsoftteams/manage-feedback-policies-in-teams)
 
-## Configure service plan or Office Apps Policy Service for Mesh
+## Configure service plan
 
-In order to streamline the admin experience, admins will no longer need to configure Mesh in M365 Apps Admin Center. If you had previously restricted Mesh access to users or groups in your organization via the Mesh policy found in the M365 Apps Admin Center, you will need to switch to restricting access via the Mesh service plan instead in the M365 Admin Center (MAC) **by the end of February, 2024**.
+> [!IMPORTANT]
+> In order to streamline the admin experience, admins will no longer need to configure Mesh in M365 Apps Admin Center. If you had previously restricted Mesh access to users or groups in your organization via the Mesh policy found in the M365 Apps Admin Center, you will need to switch to restricting access via the Mesh service plan instead in the M365 Admin Center (MAC) **by the end of February, 2024**.
 
 For more information about service plans and OCPS policies, see [Configure access to Mesh using service plans](setup-m365-mesh.md#configure-access-to-mesh-using-service-plans).
 
