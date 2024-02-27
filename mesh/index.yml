@@ -37,9 +37,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Overview of immersive spaces in Teams
-            url: aka.ms/GetStartedImmersiveSpaces
+            url: https://aka.ms/GetStartedImmersiveSpaces
           - text: Join a meeting as an avatar
-            url: aka.ms/MeshAvatarDocs
+            url: https://aka.ms/MeshAvatarDocs
 
   # Card
   - title: Set up and manage Mesh
