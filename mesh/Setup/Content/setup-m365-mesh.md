@@ -24,7 +24,7 @@ This covers access to the following experiences:
 - Mesh app on Quest 2
 - Mesh on the web
 
-By default, these Mesh experiences will be available to all users if a service plan or policy does not restrict access. Follow the [Configure access to Mesh using service plans](#configure-access-to-mesh-using-service-plans) or [Configure access to Mesh using policies](#configure-access-to-mesh-using-policies) steps below to block specific groups or people.
+By default, these Mesh experiences will be available to all users if a service plan or policy does not restrict access. Follow the [Configure access to Mesh using service plans](#configure-access-to-mesh-using-service-plans) or [Configure access to Mesh using policies](#configure-access-to-mesh-using-service-plans) steps below to block specific groups or people.
 
 ## Prerequisites
 
