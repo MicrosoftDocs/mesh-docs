@@ -4,7 +4,7 @@ description: Learn about the prerequsites, set up, and then get started with the
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 2/5/2024
+ms.date: 2/27/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web
 ---
@@ -162,6 +162,12 @@ We recommend that you open the **FinishedProject** scene and run it to get an id
     ![A screenshot of a computer Description ](../../../media/mesh-201/051-webslate-with-bing-maps-loaded.png) 
 
 1. Click the Unity Editor Play button to exit Play mode.
+
+## Check the Scene window "Scale" setting
+
+If things look a little blurry in the **Game** window when you're in Play mode, take a look at the **Scale** slider located just above the window. For the best visual fidelity, the slider show be moved all the way to the left so the scale equals "1x."
+
+    ![A screenshot of a computer Description ](../../../media/mesh-201/071-scale-settings.png) 
 
 ## Next steps
 
