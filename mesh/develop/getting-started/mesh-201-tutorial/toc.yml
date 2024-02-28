@@ -4,7 +4,6 @@ items:
     displayName: tutorial, getting started, basics
   - name: 2. Load a local non-shared HTML file into a WebSlate
     href: mesh-201-02-webslate-1.md
-    displayName: tutorial, getting started, basics
   - name: 3. Load a local shared HTML file into a WebSlate
     href: mesh-201-03-webslate-2.md
   - name: 4. Load a URL from a 3D asset
