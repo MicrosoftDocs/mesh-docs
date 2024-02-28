@@ -167,43 +167,20 @@ about managing feedback, see
 
 [Manage feedback policies in Teams](/microsoftteams/manage-feedback-policies-in-teams)
 
-## Configure service plan
+## Configure service plan to allow user access
 
 > [!IMPORTANT]
 > In order to streamline the admin experience, admins will no longer need to configure Mesh in M365 Apps Admin Center. If you had previously restricted Mesh access to users or groups in your organization via the Mesh policy found in the M365 Apps Admin Center, you will need to switch to restricting access via the Mesh service plan instead in the M365 Admin Center (MAC) **by the end of February, 2024**.
 
-For more information about service plans and OCPS policies, see [Configure access to Mesh using service plans](setup-m365-mesh.md#configure-access-to-mesh-using-service-plans).
+For more information about service plans, see [Configure access to Mesh using service plans](setup-m365-mesh.md#configure-access-to-mesh-using-service-plans).
 
-You must have a policy set in Office Cloud Policy Service to permit user to access any form of Mesh. Also, OCPS
-lets you enforce policy settings
-for whether users can send feedback about Microsoft 365 apps for
-enterprise; this is a separate setting from the Teams feedback policies
-discussed previously and must be enabled for users of all Mesh features
-that operate independently of Teams. The Office Apps Admin can assign
-this policy. The Security Administrator role and Global Administrator
-can also assign Cloud Policy.
+## End user license agreement
 
-We strongly encourage your org to permit the following feedback settings
-for Mesh users but consult your company policies before making any
-changes.
+Your users must enter a separate agreement directly with Microsoft to enable spatial audio for Mesh experiences. That agreement is presented to your users before the user's first use of Mesh. If a user does not wish to enter into that agreement, the user cannot use Mesh.
 
-- Allow the user of connected experiences in Office
+If an admin does not agree to the license agreement terms, then admins can disable Mesh for users via Service Plans described above.
 
-- Allow users to submit feedback to Microsoft
-
-- Allow users to receive and respond to in-product surveys from
-    Microsoft
-
-- Allow users to include screenshots and attachments when they submit
-    feedback to Microsoft
-
-- Allow Microsoft to follow up on feedback submitted by users
-
-- Allow users to include log files and content samples when feedback
-    is submitted to Microsoft
-
-For more information about managing feedback, see:
-[Steps for create a policy configuration](/deployoffice/admincenter/overview-cloud-policy)
+For more info about service plans and the end user license agreement, see [End user license agreement](setup-m365-mesh.md#end-user-license-agreement).
 
 ## Review endpoint managers
 
