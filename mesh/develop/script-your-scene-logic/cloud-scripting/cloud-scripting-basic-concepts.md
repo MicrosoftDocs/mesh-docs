@@ -122,4 +122,4 @@ The parties work together as illustrated below:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Cloud scripting getting started](cloud-scripting-getting-started.md)
+> [Cloud scripting setup infrastructure](./cloud-scripting-setup-infrastructure.md)
