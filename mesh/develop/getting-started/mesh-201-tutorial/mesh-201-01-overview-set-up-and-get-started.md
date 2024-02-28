@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates
 
 # Mesh 201 Tutorial Chapter 1: Overview, set up and get started
 
-If you completed the [Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md), you got up and running with creating a Mesh experience and gaining a solid understanding of Interactables, Physics, Visual Scripting, and more. In this tutorial, you build on that knowledge and learn how to use WebSlates to display web content in your experience. The tutorial includes an interactive globe; when a person in your experience clicks on the globe, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate. 
+If you completed the [Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md), you got up and running with creating a Mesh experience and gaining a solid understanding of Interactables, Physics, Visual Scripting, and more. In this tutorial, you build on that knowledge and learn how to use WebSlates to display web content in your experience. The tutorial includes an interactive globe; when an attendee in your experience clicks on the globe, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate. 
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/066-attendees-at-globe.png)
 
@@ -22,15 +22,13 @@ The tutorial project is named *Mesh201* and is included in the Mesh toolkit.
 
 The tutorial is structured as follows:
 
-- Chapter 1: Overview and setup *(this article)*
+- Chapter 1: Overview, setup and get started. *(this article)*
 
-- [Chapter 2: Prepare the project.](./mesh-201-02-prepare-the-project.md)
+- [Chapter 2: Load a local non-shared HTML file into a WebSlate](./mesh-201-02-webslate-1.md).
 
-- [Chapter 3: Load a local HTML file that's *not* shared.](./mesh-201-03-webslate-1.md)
+- [Chapter 3: Load a local shared HTML file into a WebSlate](./mesh-201-03-webslate-2.md).
 
-- [Chapter 4: Load a local HTML file that *is* shared.](./mesh-201-04-webslate-2.md)
-
-- [Chapter 5: Load a URL from a 3D asset.](<link>)
+- [Chapter 4: Load a URL from a 3D asset](./mesh-201-04-webslate-3.md).
 
 ## Prerequisites
 
