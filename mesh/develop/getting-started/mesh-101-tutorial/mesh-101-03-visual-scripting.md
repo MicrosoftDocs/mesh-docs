@@ -183,11 +183,11 @@ These are our three button-click detection nodes. The *Is Selected* node starts 
 
 If *On State Changed* has a value of true, the video will play. If it's already playing and the button is pressed, *On State Changed* changes to a value of false and the video stops playing. Our next step is to add an *if* node to determine this flow.
 
-1. Drag a connector from the output control port of the **On State Changed** node and then create a new *if* node. (In the Fuzzy Finder, search for **if**.)
+1. Drag a connector from the Control Output port of the **On State Changed** node and then create a new *if* node. (In the Fuzzy Finder, search for **if**.)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/416-if-node.png)
 
-1. Drag a connector from the output data port of the **On State Changed** node to the input data port of the *if* node. 
+1. Drag a connector from the Data Output port of the **On State Changed** node to the Data Input port of the *if* node. 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/432-if-data-input.png)
 
@@ -197,7 +197,7 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/454-isplaying-var.png)
 
-1. Drag a connector from the **True** output control port of the **If** node and then create a new *Set Object Variable* node. (In the Fuzzy Finder, search for **set object**.). 
+1. Drag a connector from the **True** Control Output port of the **If** node and then create a new *Set Object Variable* node. (In the Fuzzy Finder, search for **set object**.). 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/417-set-object-variable-node.png)
 
@@ -207,11 +207,11 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
     The *isPlaying* variable has to perform double-duty here. To ensure that *isPlaying* always has the correct value, let's give it input from a *Negate* node.
 
-1. Drag a connector from the data input port of the **Set Object Variable: isPlaying** node and then create a new *Negate* node. (In the Fuzzy Finder, search for **negate**.)
+1. Drag a connector from the Data Input port of the **Set Object Variable: isPlaying** node and then create a new *Negate* node. (In the Fuzzy Finder, search for **negate**.)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/419-add-negate-node.png)
 
-1. Drag a connector from the data input port of the **Negate** node and then create a new *Get Object Variable* node. (In the Fuzzy Finder, search for **get object variable**.)
+1. Drag a connector from the Data Input port of the **Negate** node and then create a new *Get Object Variable* node. (In the Fuzzy Finder, search for **get object variable**.)
 1. In the **Set Object Variable** node, click the variable name drop-down and then select **isPlaying**.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/420-get-object-is-playing.png)
@@ -231,7 +231,7 @@ Now we'll add the nodes that detect if *isPlaying* changes; the video will play 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/422-on-state-changed-second.png)
 
 1. Drag a connector from the control output port of the **On State Changed** node and then create a new *If* node. (In the Fuzzy Finder, search for **if**.)
-1. Drag a connector from the data output port of the **On State Changed** node and then connect it to the data input port of the *if* node.
+1. Drag a connector from the data output port of the **On State Changed** node and then connect it to the Data Input port of the *if* node.
 
     ![A screenshot of a video play Description](../../../media/sample-mesh-101/423-if-node.png)
 
@@ -259,19 +259,19 @@ When the scene starts, the video screen displays a still image (due to **VideoSt
 
 The remaining nodes in our graph make all of this happen.
 
-1. Drag a connector from the True output control port of the **if** node and create a new *Game Object: Set Active* node. (In the Fuzzy Finder, search for **set active**.)
+1. Drag a connector from the True Control Output port of the **if** node and create a new *Game Object: Set Active* node. (In the Fuzzy Finder, search for **set active**.)
 1. In the *Game Object: Set Active* node, click the round button in the GameObject field, and then, in the **Select GameObject** window, search for and select **Video**.
 1. Select the node's **Value** check box, which makes the node active.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/426-set-active-video-node.png)
 
-1. Drag a connector from the output control port of the **Game Object: Set Active** node and then create another new *Game Object: Set Active* node.
+1. Drag a connector from the Control Output port of the **Game Object: Set Active** node and then create another new *Game Object: Set Active* node.
 1. In the new *Game Object: Set Active* node, click the round button in the GameObject field (which currently displays **This**), and then, in the **Select GameObject** window, search for and select **VideoStill**.
 1. Keep the **Value** check box unselected. This makes the node inactive.
 
     Now when the button is clicked, the video will play and the still image will be hidden. We need just one more thing in this sequence. Since the Play/Stop button is a toggle, we have to make sure that after the attendee clicks **Play,** the button's label changes to **Stop,** and then when it's clicked again, the label changes back to **Play**. To achieve this, we'll add a *TextMeshPro* node.
 
-1. Drag a connector from the output control port of the last **Game Object: Set Active** node and create a new *Text Mesh Pro: Set Text* node. (In the Fuzzy Finder, search for **set text**.)
+1. Drag a connector from the Control Output port of the last **Game Object: Set Active** node and create a new *Text Mesh Pro: Set Text* node. (In the Fuzzy Finder, search for **set text**.)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/427-set-text.png)
 
@@ -297,7 +297,7 @@ We can take a shortcut here.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/430-duplicated-nodes.png)
 
-1. Drag a connector from the False output control port of the last **if** node and connect it to the control input port of the first *Game Object: Set Active* node in the duplicated set of nodes.
+1. Drag a connector from the False Control Output port of the last **if** node and connect it to the control input port of the first *Game Object: Set Active* node in the duplicated set of nodes.
 1. In that same first *Game Object: Set Active* node (the one that contains **Video**), deselect **Value**.
 1. In the second *Game Object: Set Active* node in the duplicated set (the one that contains **VideoStill**), select **Value**.
 1. In the **Set Text** node, change the text from **Stop** to **Play**.
@@ -357,7 +357,7 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
     ![A screen shot of the Information_Button's Inspector](../../../media/sample-mesh-101/436-edit-graph-button.png)
 
-1. In the graph, drag a connector from the **True** output control port of the **If** node and then create a new **Microsoft Mesh: Show Dialog** node . (In the Fuzzy Finder, search for **show dialog**.)
+1. In the graph, drag a connector from the **True** Control Output port of the **If** node and then create a new **Microsoft Mesh: Show Dialog** node . (In the Fuzzy Finder, search for **show dialog**.)
 
     ![A screen shot showing the if node connect to the new Show Dialog node.](../../../media/sample-mesh-101/303-show-dialog.png)
 
@@ -477,7 +477,7 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
 
 ### Add the Travel Point node
 
-1. Drag a connector from the output control port of the **Game Object: Set Active** node and then create a new node called **Travel Point: Travel to Point**. (In the Fuzzy Finder, search for **travel point: travel**.)
+1. Drag a connector from the Control Output port of the **Game Object: Set Active** node and then create a new node called **Travel Point: Travel to Point**. (In the Fuzzy Finder, search for **travel point: travel**.)
 
 1. In the **Travel Point: Travel to Point** node, click the round button in the field that displays **This**, and then, in the **Select TravelPoint** window, select **TeleportLocationWindTurbine**.
 
