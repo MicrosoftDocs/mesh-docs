@@ -3,7 +3,7 @@ title: Mesh 101 Add interactivity with Mesh Visual Scripting
 description: Learn adding about adding interactivity to objects with Mesh Visual Scripting.
 author: typride
 ms.author: vinnietieto
-ms.date: 1/29/2024
+ms.date: 2/22/2024
 ms.topic: Tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
@@ -163,7 +163,7 @@ This component is added automatically at runtime to interactable bodies; it expo
 In the script graph, let's add a node that lets us know when the button is selected.
 
 1. If you need to, exit Play mode, and then select **PlayVideoButton** in the **Hierarchy** to ensure that you're seeing its embedded graph in the **Script Graph** window. 
-1. Click and hold on the Control Output port of the **PlayVideo** variable, and then release the mouse button. This opens the Fuzzy Finder. **WARNING**: Once you open the Fuzzy Finder, don't click anywhere outside of the Unity interface. This closes the Fuzzy Finder and causes unpredictable behavior in the Script Graph.
+1. In the script graph, click and hold on the outport port of the **Game Object** node, and then release the mouse button. This opens the Fuzzy Finder. **WARNING**: Once you open the Fuzzy Finder, don't click anywhere outside of the Unity interface. This closes the Fuzzy Finder and causes unpredictable behavior in the Script Graph.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/413-fuzzy-finder.png)
 
@@ -201,7 +201,7 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/417-set-object-variable-node.png)
 
-1. In the **Set Object Variable** node, click the variable name drop-down and then select **isPlaying**.
+1. In the **Get Object Variable** node, click the variable name drop-down and then select **isPlaying**.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/418-set-var-is-playing.png)
 
@@ -255,7 +255,7 @@ Now we'll add the nodes that detect if *isPlaying* changes; the video will play 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/425-videostill.png)
 
-When the scene starts, the video screen displays a still image (due to **VideoStill** being active) and does *not* play a video (which is due to **Video** being inactive). When the participant presses the Play/Stop button while it's showing **Play**, it makes **Video**  active, which causes the video to play, and simultaneously makes **VideoStill** inactive, which hides the still image. The button's label  also changes from **Play** to **Stop** When the participant presses the button again, **Video** is made inactive, stopping the video, and **VideoStill** is made active again, which makes the video screen display the still image again. 
+When the scene starts, the video screen displays a still image (due to **VideoStill** being active) and does *not* play a video (which is due to **Video** being inactive). When the attendee presses the Play/Stop button while it's showing **Play**, it makes **Video**  active, which causes the video to play, and simultaneously makes **VideoStill** inactive, which hides the still image. The button's label  also changes from **Play** to **Stop** When the attendee presses the button again, **Video** is made inactive, stopping the video, and **VideoStill** is made active again, which makes the video screen display the still image again. 
 
 The remaining nodes in our graph make all of this happen.
 
@@ -269,7 +269,7 @@ The remaining nodes in our graph make all of this happen.
 1. In the new *Game Object: Set Active* node, click the round button in the GameObject field (which currently displays **This**), and then, in the **Select GameObject** window, search for and select **VideoStill**.
 1. Keep the **Value** check box unselected. This makes the node inactive.
 
-    Now when the button is clicked, the video will play and the still image will be hidden. We need just one more thing in this sequence. Since the Play/Stop button is a toggle, we have to make sure that after the participant clicks **Play,** the button's label changes to **Stop,** and then when it's clicked again, the label changes back to **Play**. To achieve this, we'll add a *TextMeshPro* node.
+    Now when the button is clicked, the video will play and the still image will be hidden. We need just one more thing in this sequence. Since the Play/Stop button is a toggle, we have to make sure that after the attendee clicks **Play,** the button's label changes to **Stop,** and then when it's clicked again, the label changes back to **Play**. To achieve this, we'll add a *TextMeshPro* node.
 
 1. Drag a connector from the Control Output port of the last **Game Object: Set Active** node and create a new *Text Mesh Pro: Set Text* node. (In the Fuzzy Finder, search for **set text**.)
 
@@ -287,7 +287,7 @@ The remaining nodes in our graph make all of this happen.
 
 ### Making the video stop
 
-Just three more nodes to go for this graph! We need to set up the false condition for the button: "If the button is clicked while the video is playing, the *isPlaying* variable becomes false and it causes the video to stop and the button label to change to **Play** again."
+Just three more nodes to go for this graph! We need to set up the false condition for the button, so that if the button is clicked while the video is playing, the *isPlaying* variable becomes false and it causes the video to stop and the button label to change to **Play** again.
 
 We can take a shortcut here.
 
@@ -306,14 +306,14 @@ We can take a shortcut here.
 
 ### Share the video player interactions with others in the experience
 
-There may be times when you want a script's events to be experienced only by the participant triggering the events, and other times when you want the events to be experienced by everyone in the scene. You can control this with the **Local Script Scope** component.
+There may be times when you want a script's events to be experienced only by the attendee triggering the events, and other times when you want the events to be experienced by everyone in the scene. You can control this with the **Local Script Scope** component.
 
 1. In the **Hierarchy**, ensure that **PlayVideoButton** is selected.
 1. In the **Inspector**, click the **Add Component** button and then add **Local Script Scope**.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/434-local-script-scope.png)
 
-For this tutorial, we want all participants in the experience to be able to see any interactions with the video player and see the video itself play and pause. To ensure this, make sure the **Share visual script variables on this Game Object** option is selected. The information box below this option tells you what's shared and what remains local.
+For this tutorial, we want all attendees in the experience to be able to see any interactions with the video player and see the video itself play and pause. To ensure this, make sure the **Share visual script variables on this Game Object** option is selected. The information box below this option tells you what's shared and what remains local.
 
 ![A screenshot of a video play Description ](../../../media/sample-mesh-101/435-share-variables.png)
 
@@ -351,7 +351,7 @@ For this feature, we'll enhance an existing visual script that causes an info di
     
     ![A screen shot of 3.2 - Info_Dialog GameObject Hierarchy with Information_Button selected](../../../media/sample-mesh-101/437-share-variables-off.png)
     
-    This is because after a participant clicks the button that makes the info dialog appear, the button becomes hidden to them. If this option was selected, the button would become hidden to everyone in the scene, and we don't want that.
+    This is because after a attendee clicks the button that makes the info dialog appear, the button becomes hidden to them. If this option was selected, the button would become hidden to everyone in the scene, and we don't want that.
 
 1. In the **Inspector**, navigate to the **Script Machine** component, which contains the **Show Dialog** graph, and then click the **Edit Graph** button.
 
@@ -397,8 +397,8 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
 ## Station 3.3: Teleport to the turbine generator
 
-For this feature, we'll add some nodes to a script graph that allows participants
-in the scene to teleport. When a participant presses the button, they're
+For this feature, we'll add some nodes to a script graph that allows attendees
+in the scene to teleport. When a attendee presses the button, they're
 teleported from their current location at Station 3.3 to an elevated
 platform that's attached to a wind turbine generator. They can then
 examine the generator.
@@ -507,7 +507,7 @@ cool! When you've finished, navigate back out and then press the
 
 **Go to Chapter 4**
 
-At this point, the participant in the experience would be ready to move
+At this point, the attendee in the experience would be ready to move
 on to Chapter 4 and learn about wind turbine activities related to
 physics. Just like with Chapter 3, there's a Sphere Terrace that
 contains the stations for Chapter 4. To get there:
@@ -528,7 +528,7 @@ contains the stations for Chapter 4. To get there:
 
 ### Chapter 3: Summary
 
-In this chapter, you used Mesh Visual Scripting to add features that empower participants in
+In this chapter, you used Mesh Visual Scripting to add features that empower attendees in
 your experience to do the following:
 
 1. Press a button that causes an educational video about wind turbines
@@ -537,7 +537,7 @@ your experience to do the following:
 1. Press a button that triggers the display of an info dialog
     about wind turbines.
 
-1. Press a button that teleports the participant from the ground up to
+1. Press a button that teleports the attendee from the ground up to
     a platform attached to a wind turbine generator, where they can
     examine the generator up close.
 
