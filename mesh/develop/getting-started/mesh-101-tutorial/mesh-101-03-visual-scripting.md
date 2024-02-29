@@ -351,7 +351,7 @@ For this feature, we'll enhance an existing visual script that causes an info di
     
     ![A screen shot of 3.2 - Info_Dialog GameObject Hierarchy with Information_Button selected](../../../media/sample-mesh-101/437-share-variables-off.png)
     
-    This is because after a attendee clicks the button that makes the info dialog appear, the button becomes hidden to them. If this option was selected, the button would become hidden to everyone in the scene, and we don't want that.
+    This is because after an attendee clicks the button that makes the info dialog appear, the button becomes hidden to them. If this option was selected, the button would become hidden to everyone in the scene, and we don't want that.
 
 1. In the **Inspector**, navigate to the **Script Machine** component, which contains the **Show Dialog** graph, and then click the **Edit Graph** button.
 
