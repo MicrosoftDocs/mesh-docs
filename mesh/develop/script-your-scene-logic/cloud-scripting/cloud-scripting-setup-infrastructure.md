@@ -167,10 +167,10 @@ The services to register are:
 > [!NOTE]
 > From the Azure docs, registering services is done at a subscription level. In other words, there's no need to register the services for different resource groups.
 
-## Access control for Mesh Cloud Scripting Service deployment
+## Access control for the Mesh Cloud Scripting Service deployment
 
-1. Developer must have an email that can be used for their deployment. This could be a new account or a pre-existing email used, such as Environment uploading.
-1. If managing access control through an Azure Security Group, create this group (for example, "Mesh Cloud Scripting Services Developers"). For more Information on Azure Security Group versus Microsoft 365 group types, see [Learn about groups and group membership](/entra/fundamentals/concept-learn-about-groups). 
+1. Developers must have an email acccount that can be used for the deployment. This can be a new or pre-existing account.
+1. If you're managing access control through an Azure Security Group, create this group (for example, "Mesh Cloud Scripting Services Developers"). For more information on Azure Security Group compared to Microsoft 365 group types, see [Learn about groups and group membership](/entra/fundamentals/concept-learn-about-groups). 
 1. Decide how you'd like developers to access your Azure subscription. This is determined by whether the developer is a native member of the directory or a guest user.
     1. You can add native members to the Azure Security Group you created in step #2 above if you'd like to easily manage access controls.
     2. You can add guest users to your Azure subscription or add them to the Azure Security Group (see step #2 above).
