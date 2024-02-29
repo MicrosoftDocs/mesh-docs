@@ -57,6 +57,18 @@ Now that you're all set up and have had a chance to try out the project, let's m
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/017-slate-after-adjustments.png)
 
+## Change the URL of the WebSlate
+
+In the WebSlate prefab's **WebSlate** component, the **Current URL** property is set to the home page for all of Microsoft.
+
+![A screenshot of a computer Description ](../../../media/mesh-201/029-default-url.png)
+
+Let's change the URL so it points to the home page for Microsoft Mesh.
+
+- In the **Inspector**, navigate to the **WebSlate** component and then add "mesh" to the end of the URL.
+
+    ![A screenshot of a computer Description ](../../../media/mesh-201/072-mesh-url.png)
+
 ## Open the button script
 
 The button object is named *LoadButton*.
@@ -119,13 +131,9 @@ We have a node in the script graph set up for this--**Get Component in Children*
 
 1. In Unity, save the project and then press the Unity Editor Play button.
 
-1. Position yourself in front of Station 2, and notice that the WebSlate is displaying some information about Microsoft.
+1. Position yourself in front of Station 2, and notice that the WebSlate is displaying the Microsoft Mesh home page.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/028-webslate-with-default-page.png)
-
-    This is because the default URL in the **WebSlate** component of the prefab you added is set to the Microsoft home page.
-
-    ![A screenshot of a computer Description ](../../../media/mesh-201/029-default-url.png)
 
 1. Click the **Load** button. The WebSlate loads and displays a page that says "Hello World."
 
