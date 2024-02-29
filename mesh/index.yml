@@ -1,0 +1,124 @@
+### YamlMime:Landing 
+
+title: Welcome to Microsoft Mesh
+summary: Microsoft Mesh is a suite of tools that bring immersive experiences to your organization. Join in Microsoft Teams, or create custom immersive experiences with the Mesh toolkit and join from a PC or Meta VR headsets.
+
+metadata: 
+  title: Welcome to Microsoft Mesh | 
+  description: Microsoft Mesh is a suite of tools that bring immersive experiences to your organization. Join in Microsoft Teams, or create custom immersive experiences with the Mesh toolkit and join from a PC or Meta VR headsets.
+  ms.service: mesh 
+  ms.topic: landing-page
+  ms.collection: 
+  author: typride
+  ms.author: tmilligan 
+  ms.date: 02/14/2024
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+  # Card
+  - title: About Microsoft Mesh
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of Microsoft Mesh
+            url: develop/design/overview.md
+      - linkListType: video
+        links:
+          - text: Introducing Microsoft Mesh
+            url: https://aka.ms/MeshAdoptionMaterials
+
+  # Card
+  - title: Immersive spaces in Teams & avatars
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of immersive spaces in Teams
+            url: https://aka.ms/GetStartedImmersiveSpaces
+          - text: Join a meeting as an avatar
+            url: https://aka.ms/MeshAvatarDocs
+
+  # Card
+  - title: Set up and manage Mesh
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Join the trial for Mesh
+            url: Setup/Content/it-admin-led-trials.md
+          - text: Get Mesh apps and tools
+            url: download-mesh-app-tools.md
+          - text: Preparing your organization
+            url: Setup/Content/preparing-your-organization.md
+      - linkListType: how-to-guide
+        links:
+          - text: Configure Microsoft Mesh
+            url: Setup/Content/setup-m365-mesh.md
+
+
+
+  # Card
+  - title: Organize and join events
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Events overview
+            url: events-guide/events-overview.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create events or manage collections
+            url: Setup/Content/manage-mesh-on-web.md
+          - text: Customize an event
+            url: events-guide/customize-event.md
+          - text: Produce an event
+            url: events-guide/produce-event.md
+          - text: Join an event
+            url: user-guide/join-an-event.md
+
+  # Card
+  - title: Develop for Mesh
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Mesh development overview
+            url: develop/development-overview.md
+          - text: Choose your journey
+            url: develop/getting-started/choose-your-journey.md
+          - text: Samples overview
+            url: develop/getting-started/samples/samples-overview.md
+          - text: Start creating your experience
+            url: develop/build-your-basic-environment/create-a-new-project-or-update.md
+      - linkListType: training
+        links:
+          - text: Add Mesh features
+            url: develop/enhance-your-environment/enhanced-features-overview.md
+          - text: Make your experience available for events
+            url: develop/make-your-environment-available/build-and-publish-your-environment.md
+      - linkListType: how-to-guide
+        links:
+          - text: Mesh 101 tutorial
+            url: develop/getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md
+
+# Card
+  - title: Resources
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Mesh release notes
+            url: Resources/mesh-release-notes.md
+          - text: Mesh toolkit release notes
+            url: Resources/mesh-toolkit-release-notes.md
+          - text: Immersive spaces in Teams release notes
+            url: Resources/immersive-spaces-release-notes.md
+          - text: Avatars in Teams release notes
+            url: Resources/avatars-release-notes.md
+
+# Card
+  - title: Materials for adoption managers
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Adoption materials
+            url: https://adoption.microsoft.com/en-us/microsoft-mesh/
