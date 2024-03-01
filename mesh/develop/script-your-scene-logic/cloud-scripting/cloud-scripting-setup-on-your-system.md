@@ -1,6 +1,6 @@
 ---
-title: Cloud scripting setup in the Mesh Uploader
-description: Learn about the settings needed in the Mesh Uploader for Cloud Scripting.
+title: Set up Mesh Cloud scripting on your system
+description: Learn how to set up your system so you can use Mesh Cloud Script in your Unity project.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
@@ -9,9 +9,7 @@ ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
 
-# Cloud scripting setup in the Mesh Uploader
-
-Mesh Scripting setup information
+# Set up Mesh Cloud scripting on your system
 
 When you use Mesh Cloud Scripting, you create and deploy a service called MeshApp. This service contains the C# code that supports multiplayer interactivity and is built and deployed automatically when you upload your Environment to Mesh. 
 
