@@ -9,11 +9,14 @@ ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
 
-# Cloud scripting basic concepts
+# Cloud scripting setup in the Mesh Uploader
 
 Mesh Scripting setup information
 
-In order to use Mesh Scripting, which you'll do throughout Chapter 3, you'll be creating and deploying a service called MeshApp. This service contains the C# code that supports multiplayer interactivity and is built and deployed automatically when you upload your Environment to Mesh. 
+When you use Mesh Cloud Scripting, you create and deploy a service called MeshApp. This service contains the C# code that supports multiplayer interactivity and is built and deployed automatically when you upload your Environment to Mesh. 
+
+
+
 Make sure you have the following installed:
 
 Azure CLI 2.40.0. 
