@@ -13,16 +13,17 @@ keywords: Microsoft Mesh, Azure, admin, Mesh Cloud Scripting, scripting, cloud s
 
 ## Overview
 
-In this article, you'll learn about the steps involved in deploying the Mesh Cloud Scripting Service cloud infrastructure to Azure. Mesh Cloud Scripting Services are .NET-based apps that run in the Cloud. 
+In order to use Mesh Cloud scripting in your Mesh experience, there are three things you must do:
 
-Keep in mind that there are two more phases required to ensure that your Mesh experience can use Mesh Cloud Scripting:
+1. Deploy the Mesh Cloud Scripting Service cloud infrastructure to Azure.
+2. Set up your development environment.  
+1. Provide cloud scripting details when you build and publish your experience.
 
-1. Set up your development environment.  
-1. When you build and publish your Mesh experience, provide cloud scripting details in the Mesh Uploader.
+In this article, you'll learn about Step #1: deploy the Mesh Cloud Scripting Service cloud infrastructure to Azure.
 
 ### Resources deployed
 
-The Mesh Cloud Scripting cloud infrastructure deployed to the customer's Azure Subscription contains the following Azure resources:
+Mesh Cloud Scripting Services are .NET-based apps that run in the Cloud. The Mesh Cloud Scripting cloud infrastructure deployed to the customer's Azure Subscription contains the following Azure resources:
 
 1. **[App Service plan](/azure/app-service/overview-hosting-plans)**: Represents a compute cluster where web apps can run. It can also run one or more different web apps.
 
