@@ -9,7 +9,9 @@ ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding, Mesh Uploader, Uploader, 
 ---
 
-# Set up Mesh Cloud scripting on your system
+# Provide Cloud Scripting details in your project
+
+## Overview
 
 In order to use Mesh Cloud scripting in your Mesh experience, there are three things you must do:
 
@@ -17,19 +19,26 @@ In order to use Mesh Cloud scripting in your Mesh experience, there are three th
 2. Set up your development environment.  
 1. Provide cloud scripting details when you build and publish your experience.
 
-In this article, you'll learn about Step #3: provide cloud scripting details when you build and publish your experience.
+In this article, you'll learn about Step #3: provide cloud scripting details when you build and publish your experience. If you've reached this point, you should have already completed steps 1 and 2 above. You should also have a resource group and Subscription ID handy as mentioned in the article named []
 
+As explained in the [Cloud Scripting basic concepts](./cloud-scripting-basic-concepts.md) article, an application service called *Mesh Cloud Scripting Service* is deployed to a particular Azure resource group that you provide. This service contains the C# code that supports multiplayer interactivity and is built and deployed automatically when you upload your Environment to Mesh.
 
+## Cloud Scripting options in the Mesh Uploader
 
-As a reminder, MeshApp is an app service that you'll be adding to your project to support multiplayer interactivity.
+The rest of this article focuses solely on the information you need to provide for Mesh Cloud Scripting when building and publishing your environment. To learn about the full build and publish process, see [Build and publish your environment](../../make-your-environment-available/build-and-publish-your-environment.md).
 
-< TBD >
+At this point you should have a resource group and Subscription ID recorded and handy.
 
-... and then do the following:
+1. In the Mesh Uploader, in the **Create Environment** tab, expand the **Setup Cloud Scripting Configuration** drop-down.
 
-- Copy the subscription ID that you obtained earlier for MeshApp (see the Prerequisites section named Mesh Scripting setup information) and then paste it into the Subscription ID field.  
-- Enter a Resource Group or let the project choose one for you (details on this are also in the Prerequisites section).  
-- You can accept the default Location or choose a different one.
+![_______](../../../media/mesh-scripting/provide-details/001-uploader-setup-scripting-dropdown.jpg)
 
-- When you're finished, close the Project Settings window.
+1. Copy the subscription ID that you recorded earlier for *Mesh Cloud Scripting Service* and then paste it into the Subscription ID field.  
+1. Enter a [Resource Group](./cloud-scripting-setup-on-your-system.md#resource-group) or let the project choose one for you.  
+1. You can accept the default **Location** or choose a different one.
+1. If you want to use [Azure Monitor](./cloud-scripting-troubleshooting.md#b-azure-monitor), select **Enable Monitoring**.
+
+If you navigated to this article from the Build and publish your environment article, [return to that article](../../make-your-environment-available/build-and-publish-your-environment.md#create-your-environment).
+
+If you navigated to this article from the Mesh Cloud Scripting getting started article, [return to that article](TBD)
 

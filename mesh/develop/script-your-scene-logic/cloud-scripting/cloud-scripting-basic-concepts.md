@@ -4,7 +4,7 @@ description: Cloud scripting overview for Mesh.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 2/25/2024
+ms.date: 3/1/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
@@ -26,7 +26,7 @@ To enable Mesh Cloud Scripting, an application service called *Mesh Cloud Script
 
 ![A diagram of the Cloud Scripting Architecture.](../../../media/mesh-scripting/basic-concepts/Architecture_Overview_Diagram.png)
 
-The Mesh Cloud Scripting scene graph is automatically synchronized from the cloud to all connected clients. Each client has an identical copy of the Mesh Cloud Scripting scene graph (marked "B" on the diagram), which is kept in sync with the authoritative cloud version. When the Mesh Cloud Scripting Service makes changes to the scene graph in the cloud, these changes are propagated to the copies on all the clients.
+The Mesh Cloud Scripting scene graph is automatically synchronized from the cloud to all connected clients. Each client has an identical copy of the Mesh Cloud Scripting scene graph (marked "B" on the diagram), which is kept in sync with the authoritative cloud version. When *Mesh Cloud Scripting Service* makes changes to the scene graph in the cloud, these changes are propagated to the copies on all the clients.
 
 On each client, the Unity Mesh runtime reacts to changes in the client's instance of the Mesh Cloud Scripting scene graph and updates the Unity scene to reflect its state. Although the Mesh Cloud Scripting scene graph API and the Unity scene graph API are different, they map closely to each other and have the same or similar structure.
 
@@ -87,23 +87,23 @@ Each scene in your Unity project that contains the MeshCloudScripting component 
 
 ### Scene representation
 
-Note the *scene.map* file in the above list. This is an internal detail but it's useful to understand. When manually triggered in the UI, or when the Unity scene plays in the Editor, the Mesh Cloud Scripting component writes a *scene.map* file into the corresponding Mesh Cloud Scripting folder.  This is a representation of the scene as a Mesh Cloud Scripting Scene hierarchy; the Unity types are converted into Mesh Cloud Scripting types. When the Mesh Cloud Scripting Service is deployed to the cloud, it doesn't need the original Unity scene to run. Instead, it loads the *scene.map* file which defines the initial scene hierarchy. When a Mesh client connects to Mesh Cloud Scripting Service, it receives the Mesh Cloud Scripting hierarchy and updates its Unity scene to match. To allow this, we additionally store IDs in Mesh Cloud Scripting bindings that are used to map to the corresponding Unity objects in the Scene.
+Note the *scene.map* file in the above list. This is an internal detail but it's useful to understand. When manually triggered in the UI, or when the Unity scene plays in the Editor, the Mesh Cloud Scripting component writes a *scene.map* file into the corresponding Mesh Cloud Scripting folder.  This is a representation of the scene as a Mesh Cloud Scripting Scene hierarchy; the Unity types are converted into Mesh Cloud Scripting types. When *Mesh Cloud Scripting Service* is deployed to the cloud, it doesn't need the original Unity scene to run. Instead, it loads the *scene.map* file which defines the initial scene hierarchy. When a Mesh client connects to *Mesh Cloud Scripting Service*, it receives the Mesh Cloud Scripting hierarchy and updates its Unity scene to match. To allow this, we additionally store IDs in Mesh Cloud Scripting bindings that are used to map to the corresponding Unity objects in the Scene.
 
-**Note**: In order for the above to work, the *scene.map* file and the Unity scene must match. If for some reason they don't--for example, as the result of an export error--this will be detected and the Mesh Cloud Scripting Service and Mesh client won't connect.
+**Note**: In order for the above to work, the *scene.map* file and the Unity scene must match. If for some reason they don't--for example, as the result of an export error--this will be detected and *Mesh Cloud Scripting Service* and Mesh client won't connect.
 
 ## Publishing Environments with Mesh Cloud Scripting
 
-When you publish an Environment with Mesh Cloud Scripting, it will publish the Environment and the Mesh Cloud Scripting Service to Azure. This is shown in the diagram below:
+When you publish an Environment with Mesh Cloud Scripting, it will publish the Environment and *Mesh Cloud Scripting Service* to Azure. This is shown in the diagram below:
 
 ![Uploading the environment template and Cloud Scripting to the cloud](../../../media/mesh-scripting/basic-concepts/002-deploy-cloudscripting-23-10.png)
 
-When you make a change to your scene you should press **Play** in Unity to preview the scene with the newly built and locally running Mesh Cloud Scripting Service. Then publish the modified environment using the Mesh Uploader. Publishing is described in more detail in the [Getting Started](cloud-scripting-getting-started.md) section.
+When you make a change to your scene you should press **Play** in Unity to preview the scene with the newly built and locally running *Mesh Cloud Scripting Service*. Then publish the modified environment using the Mesh Uploader. Publishing is described in more detail in the [Getting Started](cloud-scripting-getting-started.md) section.
 
-## Auth in Mesh Cloud Scripting Service
+## Auth in *Mesh Cloud Scripting Service*
 
 A Cloud Scripting Service can keep a list of who its users are. Once a user is authenticated, the Cloud Scripting Service has a persistent identifier for the user across multiple sessions.
 
-That said, **the Auth flow in Cloud Scripting Service doesn't require any extra effort from your end**. It's entirely implicit and the parties involved work to get the token and validate it automatically.
+That said, **the Auth flow in *Mesh Cloud Scripting Service* doesn't require any extra effort from your end**. It's entirely implicit and the parties involved work to get the token and validate it automatically.
 
 Here are the parties involved in the Auth flow:
 

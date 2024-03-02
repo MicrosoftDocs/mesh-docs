@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, environment, build, publish, build and publish, upload
 
 # Build and publish your environment
 
-After you finish adding all your scene content, the next step is to build the scene as an *asset* and then upload it to your chosen *Collection* (formerly called "World") in Mesh on the web, where it's saved as an *Environment.* This is achieved by using the Mesh Uploader. Event producers with access to that Collection can then create an Event based on your Environment and invite participants to come and share in a *Mesh experience*.
+After you finish adding all your scene content, the next step is to build the scene as an *Environment* and then upload it to your chosen *Collection* (formerly called "World") in Mesh on the web. This is achieved by using the Mesh Uploader. Event producers with access to that Collection can then create an *Event* based on your Environment and invite attendees to come and share in it.
 
 ## Configure your project settings
 
@@ -37,8 +37,9 @@ As explained in the article named [Add the Mesh toolkit package](../build-your-b
 
 1. Sign in with your account.
 
-    Make sure you're in the **Create** **Environment** tab, and then fill
-    in the **Internal Name** and **Description** fields.
+### Add your project details
+
+1. Make sure you're in the **Create Environment** tab, and then fill in the **Internal Name** and **Description** fields.
 
     > [!IMPORTANT]
     > The **Internal Name** field has a maximum of 100 characters, and the
@@ -46,27 +47,30 @@ As explained in the article named [Add the Mesh toolkit package](../build-your-b
 
 1. To ensure you have the latest Collections that are available, select the **Refresh Environment collections** button.
 
-1. Select the **Environment collection** drop down, and then select the Collection you
-    want to upload your Environment to if it's not already selected.
+1. Select the **Environment collection** drop down, and then select the Collection you want to upload your Environment to if it's not already selected.
 
     > [!NOTE]
-    > If the Environment Collection field shows **No Environment collections available** then we have not found any valid collections for your account. If this is unexpected try refreshing with the **Refresh Environment Colletions** button. Otherwise see [Manage Mesh Collections](../../Setup/Content/manage-mesh-on-web.md) to setup/manage your collections.
+    > If the Environment Collection field shows **No Environment collections available** then no valid Collections for your account were found. If this is unexpected, try refreshing with the **Refresh Environment Collections** button. Otherwise, see [Manage Mesh Collections](../../Setup/Content/manage-mesh-on-web.md) to set up and manage your Collections.
 
-1. In the **Capacity** field, enter the capacity for your Environment.
-    The maximum is 16.
+1. In the **Capacity** field, enter the capacity for your Environment. The maximum is 16.
 
     ![A screenshot of the Mesh Uploader window in the Create Environment tab](../../media/make-your-environment-available/002-uploader-create-logo.png)
 
-1.  Select **Create Environment** to create the Environment that you'll be
-    uploading.
+### Add Mesh Clouding Scripting options
 
-1. You'll receive a confirmation dialogue as shown below. Select
-    **Close**.
+If your project uses Mesh Cloud Scripting, follow the steps in the [Provide Cloud Scripting details in your project](../script-your-scene-logic/cloud-scripting/cloud-scripting-provide-details.md) article to add the needed information, and then click the link at the end of that article to return here and continue on.
+
+### Create your environment
+
+1.  Select **Create Environment** to create the Environment that you'll be uploading.
+
+1. You'll receive a confirmation dialogue as shown below. Select **Close**.
 
     ![A screenshot of a dialog showing the create operation was successful](../../media/make-your-environment-available/036-create-results-success.png)
 
-    You should now be in the **Update Environment** tab of the **Mesh
-    Environments** window.
+### Options in the Update Environment tab
+
+    You should now be in the **Update Environment** tab of the Mesh Uploader.
 
     ![A screenshort of the Mesh Uploader window on the Update Environment tab](../../media/make-your-environment-available/003-uploader-update-logo.png)
 
