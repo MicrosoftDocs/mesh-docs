@@ -21,6 +21,8 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 * Icebreaker activity with spheres is localized (translated) into 20+ different languages.
 
+* Admins can now enable immersive spaces for users using service plans, instead of the previous method of using OCPS. Please refer to the [Mesh setup for admins](../Setup/Content/setup-m365-mesh.md) for more detail.
+
 ## Version 5.2315.0
 
 ### What's new
