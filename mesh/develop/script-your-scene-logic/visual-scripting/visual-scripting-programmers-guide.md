@@ -4,7 +4,7 @@ description: Learn about how to create scripts using Visual Scripting in Mesh.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 1/4/24
+ms.date: 1/4/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, graphs
 ---

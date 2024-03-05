@@ -59,6 +59,8 @@ The expiration date appears in the trial subscription details page within the Mi
 | Mesh Host                                                                                   | Schedule and host Mesh immersive experiences and provide feedback         | **Yes**                |
 | Mesh Attendee                                                                               | Attend and participate in Mesh immersive experiences and provide feedback | **Yes**                |
 
+To see a list of your role assignments, see the [List Microsoft Entra role assignments - Microsoft Entra ID | Microsoft Learn ](/entra/identity/role-based-access-control/view-assignments).
+
 ## Activate a trial
 
 When you initiate a trial, you need to:
@@ -98,3 +100,21 @@ Give us feedback about your trial experience! Tell us what you think in the feed
 ## Troubleshooting
 
 Based on customer tenant configuration, some customers may be unable to see the Microsoft Mesh trial if searching directly in Microsoft 365 admin center. Following the [Microsoft Mesh Trial - Admin link](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh) will take you directly to the trial location.
+
+### Trial link is not working
+
+There are several scenarios where the trial link may not allow you to sign in and start the Mesh trial:
+
+1. **Trial has already been redeemed, it's expired, not supported in your region, or you already have access via a Team Premium license or Teams Premium Trial**
+
+    In this case, the page will say "The offer that you want is unavailable..."
+
+    :::image type="content" source="../../media/admin-led-trial/Trial-redeemed-page.png" alt-text="Page on a browser showing that your Mesh trial is not valid.":::
+1. **You have incorrect permissions.**
+
+    In this case, the page will say "Switch to an account that has permission."
+1. **You do not have access to Microsoft Entra. Your account must be associated with or managed through Microsoft Entra.**
+
+    In this case, the page may say "Hmm... can't reach that page. The connection was reset."
+
+    To see a list of your role assignments, see the [List Microsoft Entra role assignments - Microsoft Entra ID | Microsoft Learn ](/entra/identity/role-based-access-control/view-assignments).
