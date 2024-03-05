@@ -105,7 +105,7 @@ Based on customer tenant configuration, some customers may be unable to see the 
 
 There are several scenarios where the trial link may not allow you to sign in and start the Mesh trial:
 
-1. **Trial has already been redeemed, it's expired, expired, not supported in your region, or you already have access via a Team Premium license or Teams Premium Trial.**
+1. **Trial has already been redeemed, it's expired, not supported in your region, or you already have access via a Team Premium license or Teams Premium Trial**
 
     In this case, the page will say "The offer that you want is unavailable..."
 
