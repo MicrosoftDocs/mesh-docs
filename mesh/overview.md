@@ -82,6 +82,12 @@ See [how to set up custom immersive spaces in Microsoft Mesh](Setup/Content/setu
 
 - **Add complex logic to scenes and integrate live backend data** from business or public sources with cloud scripting, harnessing the power and reliability of the .NET infrastructure.
 
+## Interested in adoption Microsoft Mesh?
+
+For more detail on adopting Microsoft Mesh and gathering materials for deploying Mesh to your organization, please look to the adoption.microsoft page for Microsoft Mesh.
+
+[Read more about adopting Microsoft Mesh](https://adoption.microsoft.com/en-us/microsoft-mesh/)
+
 ## Get started
 
 > [!div class="nextstepaction"]
