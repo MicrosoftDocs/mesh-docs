@@ -59,6 +59,8 @@ The expiration date appears in the trial subscription details page within the Mi
 | Mesh Host                                                                                   | Schedule and host Mesh immersive experiences and provide feedback         | **Yes**                |
 | Mesh Attendee                                                                               | Attend and participate in Mesh immersive experiences and provide feedback | **Yes**                |
 
+To see a list of your role assignments, see the [List Microsoft Entra role assignments - Microsoft Entra ID | Microsoft Learn ](/entra/identity/role-based-access-control/view-assignments).
+
 ## Activate a trial
 
 When you initiate a trial, you need to:
@@ -115,4 +117,4 @@ There are several scenarios where the trial link may not allow you to sign in an
 
     In this case, the page may say "Hmm... can't reach that page. The connection was reset."
 
-    To see a list of your role assignments, see the [List Microsoft Entra role assignments - Microsoft Entra ID | Microsoft Learn ](/entra/identity/role-based-access-control/view-assignments)
+    To see a list of your role assignments, see the [List Microsoft Entra role assignments - Microsoft Entra ID | Microsoft Learn ](/entra/identity/role-based-access-control/view-assignments).
