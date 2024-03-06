@@ -4,14 +4,14 @@ description: Learn how to turn your environment into an Asset and then publish i
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 2/6/2024
+ms.date: 3/5/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, environment, build, publish, build and publish, uploader, Mesh uploader, thumbnail
 ---
 
 # Build and publish your environment
 
-After you finish adding all your scene content, the next step is to build the scene as an *Environment* and then upload it to your chosen *Collection* (formerly called "World") in Mesh on the web. This is achieved by using the Mesh Uploader. Event producers with access to that Collection can then create an *Event* based on your Environment and invite attendees to come and share in it.
+After you finish adding all your scene content, the next step is to build the scene as an *Environment* and then upload it to your chosen *Collection* in Mesh on the web. This is achieved by using the Mesh Uploader. Event producers with access to that Collection can then create an *Event* based on your Environment and invite attendees to come and share in it.
 
 ## Configure your project settings
 
@@ -42,8 +42,7 @@ As explained in the article named [Add the Mesh toolkit package](../build-your-b
 1. Make sure you're in the **Create Environment** tab, and then fill in the **Internal Name** and **Description** fields.
 
     > [!IMPORTANT]
-    > The **Internal Name** field has a maximum of 100 characters, and the
-    **Description** field has a maximum of 200 characters.
+    > The **Internal Name** field has a maximum of 100 characters, and the **Description** field has a maximum of 200 characters.
 
 1. To ensure you have the latest Collections that are available, select the **Refresh Environment collections** button.
 
@@ -70,13 +69,13 @@ If your project uses Mesh Cloud Scripting, follow the steps in the [Provide Clou
 
 ### Options in the Update Environment tab
 
-    You should now be in the **Update Environment** tab of the Mesh Uploader.
+You should now be in the **Update Environment** tab of the Mesh Uploader.
 
-    ![A screenshort of the Mesh Uploader window on the Update Environment tab](../../media/make-your-environment-available/003-uploader-update-logo.png)
+![A screenshort of the Mesh Uploader window on the Update Environment tab](../../media/make-your-environment-available/003-uploader-update-logo.png)
 
-    Note that in the **Environment Configurations** section, you already
-    have an Environment configuration created which displays the name you
-    added in the **Create Environment** tab: *Vinnie's Dartroom*.
+Note that in the **Environment Configurations** section, you already
+have an Environment configuration created which displays the name you
+added in the **Create Environment** tab: *Vinnie's Dartroom*.
 
 ### Configure the Environment for build and publish
 
@@ -112,6 +111,10 @@ If you create repeated builds of the same Environment but want to change the pla
 1. Select the **Build and Publish** button.
 
     ![A screen shot of the lower part of the Mesh Uploader window highlighting the Build & Publish button](../../media/make-your-environment-available/image024.jpg)
+
+    If your project includes Mesh Cloud Scripting, you'll see progress bars showing that the [Cloud Scripting infrastructure](../script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md) is being being provisioned in Azure and published.
+
+    ![__________](../../media/mesh-scripting/getting-started/007-uploader-build-messages.png)
 
 1.  If the Environment builds and publishes successfully, the **Build and Upload Results** window appears and confirms the results.
 

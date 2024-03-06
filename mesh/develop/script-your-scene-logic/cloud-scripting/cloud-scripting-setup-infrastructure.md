@@ -298,8 +298,7 @@ If you have stale or unused Mesh Cloud Scripting services, follow these steps to
 
 1. Clean up the stale Mesh Cloud Scripting services by clicking the ellipsis next to the name of each resource found in step 3C and then clicking Delete in the dropdown. Alternatively, you can use the Azure CLI as described in this [Delete resource](/azure/azure-resource-manager/management/delete-resource-group?tabs=azure-cli#delete-resource) article to delete the resources by name.
 
-## 
-
+## Next steps
 
    > [!div class="nextstepaction"]
-   > [Getting started with cloud scripting](cloud-scripting-getting-started.md)
+   > [Set up Mesh Cloud scripting on your system](./cloud-scripting-setup-on-your-system.md)

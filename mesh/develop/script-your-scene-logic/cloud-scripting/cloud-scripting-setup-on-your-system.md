@@ -59,3 +59,7 @@ This is the subscription ID for your chosen resource group.
 
 **IMPORTANT**: The configuration of a subscription and resource group for the Mesh World that you'll publish your Environment to may or may not be the same as the configuration of a subscription and resource group for MeshApp.
 
+## Next steps
+
+   > [!div class="nextstepaction"]
+   > [Provide Cloud Scripting details in your project](./cloud-scripting-provide-details.md)
