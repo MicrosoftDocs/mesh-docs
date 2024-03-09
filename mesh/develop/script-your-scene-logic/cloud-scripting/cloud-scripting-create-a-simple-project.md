@@ -1,17 +1,19 @@
 ---
-title: Cloud scripting getting started
-description: Get started with Cloud Scripting for Mesh.
+title: Cloud scripting tutorial
+description: Create a simple project that uses Mesh Cloud Scripting.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 3/5/2024
+ms.date: 3/8/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
 
-# Mesh Cloud Scripting Getting Started
+# Mesh Cloud Scripting tutorial
 
-In this article, you'll create a simple project using Mesh Cloud Scripting and go over testing and troubleshooting. The article assumes that you've already [set up Cloud Scripting in Azure](./cloud-scripting-setup-infrastructure.md) and [on your system](./cloud-scripting-setup-on-your-system.md). We recommend that you familiarize yourself with the current list of [Mesh toolkit known issues](../../../Resources/mesh-toolkit-known-issues.md) before starting development with Mesh Cloud Scripting.
+In this article, you'll create and publish a simple project using Mesh Cloud Scripting. The article assumes that you've already [set up Cloud Scripting on your system](./cloud-scripting-setup-on-your-system.md). We recommend that you familiarize yourself with the current list of [Mesh toolkit known issues](../../../Resources/mesh-toolkit-known-issues.md) before starting development with Mesh Cloud Scripting.
+
+[Learn more about Mesh Cloud Scripting Infrastructure and management](cloud-scripting-setup-infrastructure.md).
 
 ## Create a Scene with Mesh Cloud Scripting
 
@@ -36,17 +38,27 @@ The following instructions show how to create a simple environment with a cube t
 
 ### Modify the scene
 
-1. [Set up Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md).
+1. [Set up Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md). Make sure you add a GameObject to the scene that can act as a floor and set it to the *GroundCollision* layer.
+1. When you set up Mesh Emulation Mode, it adds the prefab *MeshEmulatorSetup[NoUpoload]* to the scene which contains the camera that you'll be using from this point on. You no longer need the default *Main camera* GameObject; delete it.
 1. On the menu bar, select **GameObject** > **3D object** > **Cube**.
 1. In the **Hierarchy**, drag the cube to the **Mesh Cloud Scripting** object to make the cube a child of that object.
 
    ![A screen shot of the Cube placed as a child to Mesh Cloud Scripting.](../../../media/mesh-scripting/getting-started/004-cube.png)
 
-1. With the cube selected, in the **Inspector**, click **Add Component** and then select [**MeshInteractableSetup**](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
+1. In the **Inspector**, navigate to the **Transform** component and then change the Cube's **Position** and **Rotation** values to the following:
 
-   ![Screenshot of Unity showin ghte Inspector window opened.](../../../media/mesh-scripting/getting-started/006-mesh-interactable-setup.png)
+**Position: X = 0.1, Y = 1.5, Z = 3.3.  
 
-1. In the **Transform** component, set the Cube's **Position** values to 0, 1, 3.
+**Rotation**: X = -15, Y = 0.8, Z = 0.1
+
+**Tip**: The **Camera** in the **MeshEmulatorSetup[NoUpload]** prefab is a child object of **AvatarHead**.
+
+   ![A screen shot of the Camera game object in the Hierarchy and the cube placed in the Scene view.](../../../media/mesh-scripting/getting-started/004-cube.png)
+
+1. In the **Inspector**, click **Add Component** and then select [**MeshInteractableSetup**](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
+
+   ![Screenshot of the Add Component search bar with Mesh Interactables Setup selected.](../../../media/mesh-scripting/getting-started/006-mesh-interactable-setup.png)
+
 1. Save the scene.
 
 ### Modify the C# project
@@ -97,7 +109,7 @@ The following instructions show how to create a simple environment with a cube t
 ### Run your application locally
 
 1. In Unity, click Unity Editor Play button.
-1. Navigate around the scene and click on the cube.
+1. In the **Game** window, click on the cube. Each time you click, the cube rotates on its "X" axis.
 1. When you're finished, exit Play Mode.
 
 ### Debug your application with Visual Studio (optional)
@@ -121,7 +133,7 @@ The following instructions show how to create a simple environment with a cube t
    ![A screen shot of feedback in Unity after clicking the cube.](../../../media/mesh-scripting/getting-started/JITHitBreakpoint.png)
 
 > [!NOTE]
-> By default, the application will timeout after two minutes of inactivity. To increase this window, set a `"debugTimeoutSecs"` value to your manifest file (ex. `"debugTimeoutSecs": "240"`)
+> By default, the application will time out after two minutes of inactivity. To increase this window, set a `"debugTimeoutSecs"` value in your manifest file (example: `"debugTimeoutSecs": "240"`).
 
 ## Build and publish the environment
 
@@ -129,34 +141,35 @@ To build and publish the environment, follow the instructions in the [Build and 
 
 ### Connect to the Cloud Scripting Service from Unity
 
+> [!NOTE]
+> This is only available when **ServiceMode** is set to **Dev**.
+
 1. In the **Hierarchy**, ensure that the **Mesh Cloud Scripting** object is selected.
 1. In the **Inspector**, navigate to the **Mesh Cloud Scripting** component, and then open the **Developer Settings** drop-down.
 1. Unselect **Run Local Cloud Scripting Server**.
 1. Click the Unity Editor Play button.
 
-> [!NOTE]
-> This is only available when **ServiceMode** is set to **Dev**.
-
 ### Create an event and join it from the Mesh app
 
-1. Create an event using the Environment **MyFirstCloudScripting**. If you need guidance, see how to [create an event in the Mesh portal](../../../events-guide/create-event-mesh-portal.md).
+1. Create an event using the Environment you just built and published. If you need guidance, see how to [create an event in the Mesh portal](../../../events-guide/create-event-mesh-portal.md).
 1. Join the event in the Mesh app.
 
 ### Show Mesh Cloud Scripting Service errors in the Microsoft Mesh application (optional)
 
-1. The error messages from Cloud Scripting Service are by default not shown in the Microsoft Mesh application in order to minimize user disruption. If you need to show these messages for debug purposes, use the following steps:
+1. The error messages from Cloud Scripting Service are by default not shown in the Mesh app in order to minimize user disruption. If you need to show these messages for debug purposes, use the following steps:
 
-1. Go to **Menu** in the Microsoft Mesh application.
+1. Open the Mesh app.
+1. Click the **Menu** button and then select **Settings**.
 
-   ![A screen of the Mesh app interface with the Menu button highlighted.](../../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_000.png)
+   ![A screen of the Mesh app interface with the Menu button highlighted.](../../../media/mesh-scripting/getting-started/009-settings-option.png)
 
-1. Select **Settings** in the main menu.
+1. In the left-side menu bar, select **For developers**.
 
-   ![A screen shot of the Mesh app interface with the Settings option highlighted.](../../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_001.png)
+   ![A screen shot of the Mesh app interface with the Settings option highlighted.](../../../media/mesh-scripting/getting-started/010-for-developers-option.png)
 
-1. Go to the **Troubleshooting** tab in **Settings** and toggle the **Show Mesh scripting error** button.
+1. Toggle the **Show Mesh scripting error** button to "on".
 
-   ![A screen shot of the Mesh app Settings page and the setting for Show Mesh scripting error.](../../../media/mesh-scripting/getting-started/MeshScriptingShowErrors_002.png)
+   ![A screen shot of the Mesh app Settings page and the setting for Show Mesh scripting error.](../../../media/mesh-scripting/getting-started/011-show-mesh-scripting-errors.png)
 
 ## Next steps
 

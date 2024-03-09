@@ -4,7 +4,7 @@ description: Learn about adding Mesh Cloud Scripting details to your project whe
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 3/1/2024
+ms.date: 3/8/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding, Mesh Uploader, Uploader, 
 ---
@@ -13,19 +13,15 @@ keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding, 
 
 ## Overview
 
-In order to use Mesh Cloud scripting in your Mesh experience, there are three things you must do:
+In this article, you'll learn about providing Mesh Cloud Scripting details when you build and publish your Mesh project. The article assumes that you've taken the necessary steps to [prepare to create a project that uses Cloud Scripting](./cloud-scripting-prepare-for-your-project.md) and, as explained in that article, have chosen a Resource Group and Subscription ID which you'll need when you build and publish.
 
-1. Deploy the Mesh Cloud Scripting Service cloud infrastructure to Azure.
-2. Set up your development environment.  
-1. Provide cloud scripting details when you build and publish your experience.
+[Learn more about Mesh Cloud Scripting Infrastructure and management](cloud-scripting-setup-infrastructure.md).
 
-In this article, you'll learn about Step #3: provide cloud scripting details when you build and publish your experience. If you've reached this point, you should have already completed steps 1 and 2 above. You should also have a resource group and Subscription ID handy as mentioned in the article named [Set up Mesh Cloud scripting on your system](./cloud-scripting-setup-on-your-system.md).
-
-As explained in the [Cloud Scripting basic concepts](./cloud-scripting-basic-concepts.md) article, an application service called *Mesh Cloud Scripting Service* is deployed to a particular Azure resource group that you provide. This service contains the C# code that supports multiplayer interactivity and is built and deployed automatically when you upload your Environment to Mesh.
+As explained in the [Cloud Scripting basic concepts](./cloud-scripting-basic-concepts.md) article, an application service called *Mesh Cloud Scripting Service* is deployed to an Azure resource group that you provide. This service contains the C# code that supports multiplayer interactivity and is built and deployed automatically when you build and publish.
 
 ## Cloud Scripting options in the Mesh Uploader
 
-The rest of this article focuses solely on the information you need to provide for Mesh Cloud Scripting when building and publishing your environment. To learn about the full build and publish process, see [Build and publish your environment](../../make-your-environment-available/build-and-publish-your-environment.md).
+The rest of this article focuses solely on the information you need to provide for Mesh Cloud Scripting when building and publishing your project. To learn about the full build and publish process, see [Build and publish your environment](../../make-your-environment-available/build-and-publish-your-environment.md).
 
 ### Settings in the Create Environment tab
 
@@ -51,9 +47,9 @@ At this point you should have a resource group and Subscription ID handy.
 
 After you click the **Create Environment** button in the **Create Environment** tab, you're taken to the **Update Environment** tab, where you select an environment and Scene to build and publish. If the Scene has a Mesh Cloud Scripting component, the deployment configurations are also shown here.
 
-If you navigated to this article from the *Build and publish your environment* article, [return to that article](../../make-your-environment-available/build-and-publish-your-environment.md#create-your-environment).
+If you navigated to this article from the *Build and publish your environment* article, you can now [return to that article](../../make-your-environment-available/build-and-publish-your-environment.md#create-your-environment). **Note**: When you build and publish, the Mesh Cloud Scripting cloud infrastructure is deployed to your Azure Subscription. To learn more about the specific apps that are deployed, see [Resources deployed](./cloud-scripting-setup-infrastructure.md#resources-deployed).
 
-If you navigated to this article from the *Mesh Cloud Scripting getting started* article, [return to that article](./cloud-scripting-getting-started.md)
+If you navigated to this article from the *Mesh Cloud Scripting getting started* article, you can now [return to that article](./cloud-scripting-getting-started.md)
 
 ## Next steps
 

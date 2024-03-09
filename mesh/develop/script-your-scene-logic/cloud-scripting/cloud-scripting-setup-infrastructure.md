@@ -1,10 +1,10 @@
 ---
-title: Set up Mesh Cloud Scripting in Azure
+title: Cloud Scripting infrastructure and management
 description: Learn about setting up Mesh Cloud Scripting in Azure.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 02/28/2024
+ms.date: 3/8/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, Azure, admin, Mesh Cloud Scripting, scripting, cloud scripting
 ---
@@ -13,13 +13,7 @@ keywords: Microsoft Mesh, Azure, admin, Mesh Cloud Scripting, scripting, cloud s
 
 ## Overview
 
-In order to use Mesh Cloud scripting in your Mesh experience, there are three things you must do:
-
-1. Deploy the Mesh Cloud Scripting Service cloud infrastructure to Azure.
-2. Set up your development environment.  
-1. Provide cloud scripting details when you build and publish your experience.
-
-In this article, you'll learn about Step #1: deploy the Mesh Cloud Scripting Service cloud infrastructure to Azure.
+In this article, you'll learn about various aspects of Mesh Clouding infrastructure and management, including the services that get deployed to your Azure Subscription when you build and publish your Cloud Scripting project.
 
 ### Resources deployed
 
@@ -139,17 +133,6 @@ For more information, refer to the [Application Insights Docs](/azure/azure-moni
 
 For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/microsoft.insights/components?pivots=deployment-language-bicep)
  for the Virtual Network resource.
-
-### Supported regions and abbreviations
-
-Resources can be deployed to any of the following supported regions. All resources are deployed into the same location. You can deploy resources to a different location than your resource group, but you'll need to supply the location in the Mesh Uploader's *Update Environment* tab.
-
-| Australia Central (ac)   | Australia Central 2 (ac2) | Australia East (ae)    | Australia Southeast (ase) | Brazil South (bs)      | Brazil Southeast (bse) | Canada Central (cc)        | Canada East (ce)      | Central India (ci) |
-|--------------------------|---------------------------|------------------------|---------------------------|------------------------|------------------------|----------------------------|-----------------------|--------------------|
-| Central US (cu)          | East Asia (ea)            | East US (eu)           | East US 2 (eu2)           | France Central (fc)    | France South (fs)      | Germany West Central (gwc) | Japan East (je)       | Japan West (jw)    |
-| Jio India Central (jic)  | Jio India West (jiw)      | Korea Central (kc)     | Korea South (ks)          | North Central US (ncu) | North Europe (neu)     | Norway East (ne)           | Norway West (nw)      | Qatar Central (qc) |
-| South Africa North (san) | South Africa West (saw)   | South Central US (scu) | Southeast Asia (sea)      | South India (si)       | Sweden Central (sc)    | Switzerland North (sn)     | Switzerland West (sw) | UAE Central (uc)   |
-| UAE North (un)           | UK South (us)             | UK West (uw)           | West Europe (we)          | West US (wu)           | West US 2 (wu2)        | West US 3 (wu3)            |
 
 ### Mesh Cloud Scripting Services cloud infrastructure diagram
 
