@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, object and player interactions, interactables, avatars
 
 ## Travel Point Overview
 
-*Travel Point* is a component in the Mesh toolkit that can be used to define where an attendee's avatar is placed when it joins an Event and also to teleport  avatars during an Event using Visual Scripting.
+*Travel Point* is a component in the Mesh toolkit that can be used to define where an attendee's avatar is placed when it joins an Event and also to teleport avatars during an Event using Visual Scripting.
 
 If a Travel Point isn't present in an Environment, and there's a GameObject that represents a floor at the origin, the avatar will be grounded on the floor when spawned. If no floor is present near the origin, the avatar will spawn above the origin, fall for a little while, and then respawn in a loop.
 
