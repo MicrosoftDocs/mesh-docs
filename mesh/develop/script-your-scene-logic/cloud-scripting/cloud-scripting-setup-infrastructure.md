@@ -4,7 +4,7 @@ description: Learn about setting up Mesh Cloud Scripting in Azure.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 3/8/2024
+ms.date: 3/12/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, Azure, admin, Mesh Cloud Scripting, scripting, cloud scripting
 ---
@@ -44,7 +44,7 @@ When you create an App Service plan in a certain region (for example, West Europ
 
 For more info, refer to the [App Service Plan Docs](/azure/app-service/overview-hosting-plans).
 
-**Default settings for App Service Plan**
+**Mesh toolkit default resource settings for App Service Plan**
 
 - **SKU Name**: P1v2
 - **SKU Tier**: PremiumV2
@@ -62,7 +62,7 @@ Azure App Service is an HTTP-based service for hosting web applications, REST AP
 
 For more information, refer to the [App Service Docs](/azure/app-service/overview).
 
-**Default Settings -  App Service**
+**Mesh toolkit default resource settings -  App Service**
 
 - **httpsOnly**: True
 - **alwaysOn**: True
@@ -78,7 +78,7 @@ Azure Virtual Network is the fundamental building block for your private network
 
 For more information, refer to the [Virtual Network Docs](/azure/virtual-network/virtual-networks-overview).
 
-**Default Settings - Virtual Network**
+**Mesh toolkit default resource settings - Virtual Network**
 
 - **AddressSpace addressPrefixes**: 10.0.0.0/16
 - **Subnet addressPrefix**: 10.0.0.0/24
@@ -93,7 +93,7 @@ An Azure storage account contains all of your Azure Storage data objects: blobs,
 
 For more information, refer to the [Storage Account Docs](/azure/storage/common/storage-account-overview).
 
-**Default Settings - Storage Account**
+**Mesh toolkit default resource settings - Storage Account**
 
 - **SKU Name**: Standard_LRS
 - **Kind**: StorageV2
@@ -106,7 +106,7 @@ A Log Analytics workspace is a unique environment for log data from Azure Monito
 
 For more information, refer to the [Log Analytics Workspace Docs](/azure/azure-monitor/logs/log-analytics-workspace-overview).
 
-**Default Settings - Log Analytics Workspace**
+**Mesh toolkit default resource settings - Log Analytics Workspace**
 
 - **forceCmkForQuery**: false
 - **retentionInDays**: 30
@@ -125,7 +125,7 @@ Along with collecting [metrics](/azure/azure-monitor/app/standard-metrics) and a
 
 For more information, refer to the [Application Insights Docs](/azure/azure-monitor/app/app-insights-overview?tabs=net).
 
-**Default Settings - Application Insights**
+**Mesh toolkit default resource settings - Application Insights**
 
 - **Kind**: web
 - **Request_Source**: rest
@@ -284,4 +284,4 @@ If you have stale or unused Mesh Cloud Scripting services, follow these steps to
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Set up Mesh Cloud scripting on your system](./cloud-scripting-setup-on-your-system.md)
+   > [Cloud scripting troubleshooting](./cloud-scripting-troubleshooting.md)

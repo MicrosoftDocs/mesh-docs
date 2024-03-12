@@ -4,7 +4,7 @@ description: Cloud scripting overview for Mesh.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 3/1/2024
+ms.date: 3/12/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
@@ -44,7 +44,7 @@ In order to enable Mesh Cloud Scripting, your scene must have a *Mesh Cloud Scri
 
 ![A screen shot of the Mesh Cloud Scripting component that's attached to the GameObject.](../../../media/mesh-scripting/basic-concepts/009-cloudscripting-component.png)
 
-The component is responsible for managing the scripts you create and binding them to the Unity scene both at edit time and runtime in the Mesh app. Mesh Cloud Scripting is a standalone technology but it has a tight integration with Unity. You can find instructions for adding the Mesh Cloud Scripting GameObject in the [Getting Started Guide](cloud-scripting-getting-started.md) and more detailed information about scripting in the [Programmer's Guide](cloud-scripting-programmers-guide.md) section.
+The component is responsible for managing the scripts you create and binding them to the Unity scene both at edit time and runtime in the Mesh app. Mesh Cloud Scripting is a standalone technology but it has a tight integration with Unity. You can find instructions for adding the Mesh Cloud Scripting GameObject in the article named [Create a simple Cloud Scripting project](./cloud-scripting-create-a-simple-project.md) and more detailed information about scripting in the [Programmer's Guide](cloud-scripting-programmers-guide.md) section.
 
 The Mesh Cloud Scripting scene graph is limited to GameObjects that you add to the scene under the GameObject that contains the Mesh Cloud Scripting component. Although Mesh Cloud Scripting can't directly see the scene hierarchy of the rest of the scene, it can access APIs that the Mesh app provides&ndash;for example, it can get a list of Users in the scene or react to an object being selected.
 
@@ -60,7 +60,7 @@ The Mesh Cloud Scripting API allows cloning of nodes. If the app makes a clone o
 
 ## Authoring Mesh Cloud Scripting
 
-Detailed instructions on Mesh Cloud Scripting can be found in the [Getting Started](cloud-scripting-getting-started.md) and [Programmer's Guide](cloud-scripting-programmers-guide.md) articles. Here, we give a brief overview.
+Detailed instructions on Mesh Cloud Scripting can be found in the [Create a simple Cloud Scripting project](./cloud-scripting-create-a-simple-project.md) and [Programmer's Guide](cloud-scripting-programmers-guide.md) articles. Here, we give a brief overview.
 
 A typical Unity project containing a scene with Mesh Cloud Scripting would look as follows on the disk (the folders are shown as bold):
 
@@ -97,7 +97,7 @@ When you publish an Environment with Mesh Cloud Scripting, it will publish the E
 
 ![Uploading the environment template and Cloud Scripting to the cloud](../../../media/mesh-scripting/basic-concepts/002-deploy-cloudscripting-23-10.png)
 
-When you make a change to your scene you should press **Play** in Unity to preview the scene with the newly built and locally running *Mesh Cloud Scripting Service*. Then publish the modified environment using the Mesh Uploader. Publishing is described in more detail in the [Getting Started](cloud-scripting-getting-started.md) section.
+When you make a change to your scene you should press **Play** in Unity to preview the scene with the newly built and locally running *Mesh Cloud Scripting Service*. Then publish the modified environment using the Mesh Uploader. Publishing is described in more detail in the [Build and publish your environment](../../make-your-environment-available/build-and-publish-your-environment.md) and [Provide Cloud Scripting details for build and publish](./cloud-scripting-provide-details.md) articles.
 
 ## Auth in *Mesh Cloud Scripting Service*
 
@@ -122,4 +122,4 @@ The parties work together as illustrated below:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Cloud scripting setup infrastructure](./cloud-scripting-setup-infrastructure.md)
+> [Prepare for your first Mesh Cloud Scripting project](./cloud-scripting-prepare-for-your-project.md)

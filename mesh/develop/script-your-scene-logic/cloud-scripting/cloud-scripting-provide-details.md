@@ -1,5 +1,5 @@
 ---
-title: Provide Cloud Scripting details in your project
+title: Provide Cloud Scripting details for build and publish
 description: Learn about adding Mesh Cloud Scripting details to your project when you build and publish.
 ms.service: mesh
 author: typride
@@ -9,7 +9,7 @@ ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding, Mesh Uploader, Uploader, 
 ---
 
-# Provide Cloud Scripting details in your project
+# Provide Cloud Scripting details for build and publish
 
 ## Overview
 

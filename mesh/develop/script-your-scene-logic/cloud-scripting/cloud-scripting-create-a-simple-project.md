@@ -1,15 +1,15 @@
 ---
-title: Cloud scripting tutorial
+title: Create a simple Cloud Scripting project
 description: Create a simple project that uses Mesh Cloud Scripting.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 3/8/2024
+ms.date: 3/12/2024
 ms.topic: Guide
-keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
+keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding, tutorial, getting started
 ---
 
-# Mesh Cloud Scripting tutorial
+# Create a simple Cloud Scripting project
 
 In this article, you'll create and publish a simple project using Mesh Cloud Scripting. The article assumes that you've already [set up Cloud Scripting on your system](./cloud-scripting-setup-on-your-system.md). We recommend that you familiarize yourself with the current list of [Mesh toolkit known issues](../../../Resources/mesh-toolkit-known-issues.md) before starting development with Mesh Cloud Scripting.
 

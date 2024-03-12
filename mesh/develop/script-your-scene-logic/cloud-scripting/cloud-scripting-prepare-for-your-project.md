@@ -1,19 +1,19 @@
 ---
-title: Prepare for your Mesh Cloud Scripting Project
-description: Learn how to prepare to create a project that uses Mesh Cloud Scripting.
+title: Prepare for your first Mesh Cloud Scripting project
+description: Learn how to prepare for creating your first Mesh Cloud Scripting project
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 3/7/2024
+ms.date: 3/12/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
 
-# Prepare for your Mesh Cloud Scripting Project
+# Prepare for your first Mesh Cloud Scripting project
 
 ## Overview
 
-In this article, you'll learn about how to prepare for your Mesh Cloud Scripting project. You'll need some of the information chosen during this process to [build and publish your project](../../make-your-environment-available/build-and-publish-your-environment.md) with the necessary [Cloud Scripting details](./cloud-scripting-provide-details.md).
+In this article, you'll learn about how to prepare for your first Mesh Cloud Scripting project. You'll need some of the information you'll choose during this process to [build and publish your project](../../make-your-environment-available/build-and-publish-your-environment.md) with the necessary [Cloud Scripting details](./cloud-scripting-provide-details.md).
 
 [Learn more about Mesh Cloud Scripting Infrastructure and management](cloud-scripting-setup-infrastructure.md).
 
@@ -69,4 +69,4 @@ Resources can be deployed to any of the following supported regions. All resourc
 ## Next steps
 
    > [!div class="nextstepaction"]
-   > [Provide Cloud Scripting details in your project](./cloud-scripting-provide-details.md)
+   > [Create a simple Cloud Scripting project](./cloud-scripting-create-a-simple-project.md)

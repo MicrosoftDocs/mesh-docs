@@ -4,7 +4,7 @@ description: Learn how to build scripting Environments for Mesh.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 8/28/2023
+ms.date: 3/12/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
@@ -223,4 +223,4 @@ If `TransformNode` with `RigidBodyNode` is cloned, cloned body will be registere
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Cloud scripting troubleshooting](cloud-scripting-troubleshooting.md)
+> [Cloud Scripting infrastructure and management](./cloud-scripting-setup-infrastructure.md)
