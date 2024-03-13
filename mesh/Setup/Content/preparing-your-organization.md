@@ -205,91 +205,23 @@ implications and work closely with your security team to make sure you
 comply with all standard security policies. Discuss the following Mesh
 requirements in advance with the appropriate Security owners.
 
-### Ensure endpoints can be allowed for immersive spaces in Teams
+### Endoints and firewall ports for experiences in Teams
 
-To ensure the Mesh features work properly, the following endpoints **must**
-be allowed through your firewall or proxy server.
-All endpoints need to allow traffic on TCP ports 80 and 443:
+|   | Immersive spaces in Teams | Avatars in Teams  | 
+|---|---|---|
+| **Required endpoints** | The following endpoints **must** be allowed through your firewall or proxy server. All endpoints need to allow traffic on TCP ports 80 and 443: <p><p> \*.microsoft.com <br> \*.office.com <br> \*.office.net <br> \*.cloud.microsoft |The following endpoints **must** be allowed through your firewall or proxy server. All endpoints need to allow traffic on TCP ports 80 and 443: <p><p> \*.microsoft.com <br> \*.office.com <br> \*.office.net <br> \*.cloud.microsoft |
+| **Firewall ports** | In addition to the endpoints listed above, Mesh also requires that outgoing traffic be allowed to IP addresses in the "AzureCloud" service tag over the following protocols and ports: <p><p> TCP ports 80, 443 <br> TCP & UDP ports 30,000-30,499 <br> UDP ports 3478-3481 <p><p> If you need to resolve a service tag to a list of IP ranges, you can periodically use the [service tag API][service-tag-api] or [download a snapshot][service-tag-download]. <p> For more information about service tags, see the [Azure service tags overview][service-tag]. | Aligned to standard set of Microsoft Teams requirements outlined in [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams). |
 
-- \*.microsoft.com
+To learn more, see [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces) and [Set up avatars in Microsoft Teams](/microsoftteams/meeting-avatars).
 
-- \*.office.com
+### Endoints and firewall ports for immersive spaces in Mesh (Mesh app)
 
-- \*.office.net
+|   | Single room event in the Mesh app | Multi room event in the Mesh app  | 
+|---|---|---|
+| **Required endpoints** | Aligned to standard set of Microsoft Teams requirements outlined in [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams). | To ensure Mesh works properly, allow the following endpoints. All endpoints need to allow traffic on TCP ports 80 and 443: <p><p> \*.officeapps.live.com <br> \*.microsoft.com <br> \*.office365.com <br> \*.office.com <br> \*.office.net <br> \*.cloud.microsoft <p><p> |
+| **Firewall ports** | Aligned to standard set of Microsoft Teams requirements outlined in [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams). | In addition to the endpoints listed above, Mesh also requires that outgoing traffic be allowed to IP addresses in the "AzureCloud" service tag over the following protocols and ports: <p><p> TCP ports 80, 443 <br> TCP & UDP ports 30,000-30,499 <br> UDP ports 3478-3481 <p><p> If you need to resolve a service tag to a list of IP ranges, you can periodically use the [service tag API][service-tag-api] or [download a snapshot][service-tag-download]. <p><p> For more information about service tags, see the [Azure service tags overview][service-tag]. |
 
-- \*.cloud.microsoft
-
-To learn more, see how to [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces).
-
-### Firewall Ports for immersive spaces in Teams
-
-In addition to the endpoints listed above, Mesh also requires that outgoing
-traffic be allowed to IP addresses in the "AzureCloud" service tag over the
-following protocols and ports:
-
-- TCP ports 80, 443
-
-- TCP & UDP ports 30,000-30,499
-
-- UDP ports 3478-3481
-
-If you need to resolve a service tag to a list of IP ranges, you can
-periodically use the [service tag API][service-tag-api] or [download a
-snapshot][service-tag-download].
-
-For more information about service tags, see the [Azure service tags overview][service-tag].
-
-To learn more, see how to [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces).
-
-### Ensure endpoints can be allowed for Mesh avatars in Teams
-
-To ensure avatars in Teams works properly, allow the following
-endpoints:
-*All endpoints need to allow traffic on TCP ports 80 and 443*:
-
-- \*.microsoft.com
-- \*.office.com
-- \*.office.net
-- \*.cloud.microsoft
-
-Follow this link to learn more about how to Set up avatars for Microsoft
-Teams.
-[Set up avatars in Microsoft Teams](/microsoftteams/meeting-avatars)
-
-### Ensure endpoints can be allowed for immersive spaces in Mesh (Mesh app)
-
-To ensure Mesh works properly, allow the following endpoints.
-All endpoints need to allow traffic on TCP ports 80 and 443:
-
-- \*.officeapps.live.com
-
-- \*.microsoft.com
-
-- \*.office365.com
-
-- \*.office.com
-
-- \*.office.net
-
-- \*.cloud.microsoft
-
-### Firewall Ports for the immersive spaces in Mesh (Mesh app)
-
-In addition to the endpoints listed above, Mesh also requires that outgoing
-traffic be allowed to IP addresses in the "AzureCloud" service tag over the
-following protocols and ports:
-
-- TCP ports 80, 443
-
-- TCP & UDP ports 30,000-30,499
-
-- UDP ports 3478-3481
-
-If you need to resolve a service tag to a list of IP ranges, you can
-periodically use the [service tag API][service-tag-api] or [download a
-snapshot][service-tag-download].
-
-For more information about service tags, see the [Azure service tags overview][service-tag].
+To learn more about single room vs. multi room events, see [Create an event in Mesh](/mesh/events-guide/create-event-mesh-portal).
 
 ### Conditional Access & Quest
 
