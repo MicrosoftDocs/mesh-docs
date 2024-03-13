@@ -28,6 +28,24 @@ There are a few steps to take before initiating your Microsoft Mesh trial to ens
 
 There are [licensing requirements](../../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-mesh) and [configuration steps](preparing-your-organization.md#preparing-your-organization-for-mesh) needed prior to beginning your Microsoft Mesh trial. The trial start date initiates from the date the trial licenses are activated in Microsoft 365 Admin Center so please ensure your organization is configured to run Microsoft Mesh prior to initiating the trial.
 
+### Roles needed to start trial and assign licenses
+
+| **Role**                 | **Description**                                                                                                                                                                                       | **Permissions**                               |
+|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator)     | This role has access to all administrative features in Microsoft 365. Global administrators can manage administrative roles and access all administrative features in the Microsoft 365 admin center. | **Activate trial & Assign licenses to users** |
+| [Billing Administrator](/entra/identity/role-based-access-control/permissions-reference#billing-administrator)    | This role has access to the billing-related functions in the Microsoft 365 admin center. Billing administrators can make purchases, manage subscriptions, and manage support tickets.                 | **Activate trial**                            |
+| [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator) | This role has access to user management tasks in the Microsoft 365 admin center. User management administrators can create and manage user accounts, reset passwords, and manage user licenses.       | **Assign licenses to users**                  |
+| [License Administrator](/entra/identity/role-based-access-control/permissions-reference#license-administrator)    | This role has access to manage subscriptions and licenses for Microsoft 365. License administrators can assign licenses to users, remove licenses, and manage license assignments                     | **Assign licenses to users**                  |
+
+Learn more about [role based access control | Microsoft Entra](https://learn.microsoft.com/entra/identity/role-based-access-control/delegate-by-task#licenses).
+
+### Roles for people hosting and experiencing events in Mesh
+
+| **Role**      | **Activity**                                                              | **Mesh licensed user** |
+|---------------|---------------------------------------------------------------------------|------------------------|
+| Mesh Host     | Schedule and host Mesh immersive experiences and provide feedback         | **Yes**                |
+| Mesh Attendee | Attend and participate in Mesh immersive experiences and provide feedback | **Yes**                |
+
 ## Sign up for a trial
 
 This offer is applicable with an active Microsoft 365 or Teams plans for business or enterprise. A Teams Premium license is required upon expiration of the Mesh trial. These IT Admin trials offer customers access to Microsoft Mesh for 6 months.
@@ -56,19 +74,12 @@ You can sign up for the trial through two entrypoints at the following sources:
         :::image type="content" source="../../media/admin-led-trial/Sign-up-trial-4.png" alt-text="Screenshot of Start free trial button showing highlighted.":::
     1. Follow the remaining wizard steps to confirm the trial.
 
-These admin-led trials are not available worldwide. They aren't available for Government customers or customers with EDU or FLW SKUs. See the [Mesh Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md) for full licensing requirements.
+These admin-led trials are not available worldwide. Specifically, aren't available for Government customers or customers with EDU or FLW SKUs. See the [Mesh Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md) for full licensing requirements.
 
-Based on customer tenant configuration, some customers may be unable to see the Microsoft Mesh trial if searching directly in Microsoft 365 admin center. Following the [Microsoft Mesh trial](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh) will take those customers directly to the trial location.
+> [!IMPORTANT]
+> Based on customer tenant configuration, some customers may be unable to see the Microsoft Mesh trial if searching directly in Microsoft 365 admin center. Following the [Microsoft Mesh trial](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh) will take those customers directly to the trial location.
 
 The expiration date appears in the trial subscription details page within the Microsoft 365 admin center. Upon expiration of the trial, the user won't be able to access their content in Microsoft Mesh and will have to reach out to their IT Admin to purchase a paid license for themselves and their business groups.
-
-## Who should be involved in a trial
-
-| **Role**                                                                                    | **Activity**                                                              | **Mesh licensed user** |
-|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------|
-| Microsoft 365 global administrator ([or an admin with Billing and License and/or User roles](https://learn.microsoft.com/entra/identity/role-based-access-control/delegate-by-task#licenses))  | Activate the trial and assign licenses                                    | **Yes**                |
-| Mesh Host                                                                                   | Schedule and host Mesh immersive experiences and provide feedback         | **Yes**                |
-| Mesh Attendee                                                                               | Attend and participate in Mesh immersive experiences and provide feedback | **Yes**                |
 
 ## Activate a trial
 
