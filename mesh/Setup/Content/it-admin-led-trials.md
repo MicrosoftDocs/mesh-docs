@@ -18,15 +18,16 @@ description: "Learn how to start a trial with Microsoft Mesh as an admin."
 
 This article describes how to set up and run an IT Admin-led trial pilot program to deploy Microsoft Mesh in your organization.
 
-## Getting started
+## Prerequisites
 
-There are a few steps to take before initiating your Microsoft Mesh trial to ensure your organization is set up for Microsoft Mesh:
+There are [licensing requirements](../../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-mesh) and [configuration steps](preparing-your-organization.md#preparing-your-organization-for-mesh) needed prior to beginning your Microsoft Mesh trial.
 
-- Visit the [Preparing your organization for Microsoft Mesh](preparing-your-organization.md) page to accomplish the required tasks and assign the suggested functional roles that may be involved a rollout.
+> [!IMPORTANT]
+> Once the trial is activated, the six-month trial starts. Please ensure your organization is configured to run Microsoft Mesh prior to activating the trial.
 
-- Complete the prerequisite steps and ensure you have prerequisite licenses, as described in [Guide to set up Microsoft Mesh with M365](setup-m365-mesh.md#prerequisites).
-
-There are [licensing requirements](../../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-mesh) and [configuration steps](preparing-your-organization.md#preparing-your-organization-for-mesh) needed prior to beginning your Microsoft Mesh trial. The trial start date initiates from the date the trial licenses are activated in Microsoft 365 Admin Center so please ensure your organization is configured to run Microsoft Mesh prior to initiating the trial.
+- Start by [Preparing your organization for Microsoft Mesh](preparing-your-organization.md) page to assign the suggested functional roles that may be involved in the rollout of Microsoft Mesh, and consider the various required configuration tasks.
+- Review the [licensing requirements](../../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-mesh) for all users who will access Microsoft Mesh.
+- Review the [roles needed to start the Microsoft Mesh trial](#roles-needed-to-start-trial-and-assign-licenses) and assign licenses.
 
 ### Roles needed to start trial and assign licenses
 
@@ -39,19 +40,14 @@ There are [licensing requirements](../../Resources/mesh-troubleshooting.md#what-
 
 Learn more about [role based access control | Microsoft Entra](https://learn.microsoft.com/entra/identity/role-based-access-control/delegate-by-task#licenses).
 
-### Roles for people hosting and experiencing events in Mesh
-
-| **Role**      | **Activity**                                                              | **Mesh licensed user** |
-|---------------|---------------------------------------------------------------------------|------------------------|
-| Mesh Host     | Schedule and host Mesh immersive experiences and provide feedback         | **Yes**                |
-| Mesh Attendee | Attend and participate in Mesh immersive experiences and provide feedback | **Yes**                |
-
 ## Sign up for a trial
 
-This offer is applicable with an active Microsoft 365 or Teams plans for business or enterprise. A Teams Premium license is required upon expiration of the Mesh trial. These IT Admin trials offer customers access to Microsoft Mesh for 6 months. There are two entrypoints for the trial that are detailed below:
+This offer is applicable with an active Microsoft 365 or Teams plans for business or enterprise. A Teams Premium license is required upon expiration of the Mesh trial. These IT Admin trials offer customers access to Microsoft Mesh for 6 months.
 
 > [!IMPORTANT]
 > In order to access the trial and assign licenses to users, you must have an [adequate role and privileges](#roles-needed-to-start-trial-and-assign-licenses).
+
+There are two entrypoints for the trial that are detailed below:
 
 ### Direct link to trial
 
@@ -68,6 +64,8 @@ This offer is applicable with an active Microsoft 365 or Teams plans for busines
         :::image type="content" source="../../media/admin-led-trial/Sign-up-trial-2.png" alt-text="Screenshot of Admin center showing purchase services highlighted.":::
 
     1. Search for **Microsoft Mesh** or **Purchase services** or scroll down to the **Other Services** section of **Purchase services**.
+        > [!NOTE]
+> Based on customer tenant configuration, some customers may be unable to see the Microsoft Mesh trial if searching directly in Microsoft 365 admin center. Following the [Microsoft Mesh trial](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh) will take those customers directly to the trial location.
     1. On the **Microsoft Mesh Trial** title, select **Details**.
 
         :::image type="content" source="../../media/admin-led-trial/Sign-up-trial-3.png" alt-text="Screenshot of Mesh details button showing highlighted.":::
@@ -80,22 +78,7 @@ This offer is applicable with an active Microsoft 365 or Teams plans for busines
 
 These admin-led trials are not available worldwide. Specifically, they aren't available for Government customers or customers with EDU or FLW SKUs. See the [Mesh Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md) for full licensing requirements.
 
-> [!IMPORTANT]
-> Based on customer tenant configuration, some customers may be unable to see the Microsoft Mesh trial if searching directly in Microsoft 365 admin center. Following the [Microsoft Mesh trial](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh) will take those customers directly to the trial location.
-
 The expiration date appears in the trial subscription details page within the Microsoft 365 admin center. Upon expiration of the trial, the user won't be able to access their content in Microsoft Mesh and will have to reach out to their IT Admin to purchase a paid license for themselves and their business groups.
-
-## Activate a trial
-
-When you initiate a trial, you need to:
-
-- Ensure your organization is configured to run Microsoft Mesh
-- Assign licenses to the relevant users
-- Educate organizational stakeholders how to get started hosting Mesh events
-
-For more information on preparing your organization for Microsoft Mesh, please see [Preparing your organization](preparing-your-organization.md)
-
-For more information on setting up Mesh events, please see our Events overview page at [Mesh events overview](../../events-guide/events-overview.md).
 
 ## During a Trial
 
@@ -108,6 +91,14 @@ During the Mesh trial, we suggest you evaluate the following:
 For more adoption and deployment resources, visit our Mesh Adoption page found at [Mesh Adoption - Home](https://aka.ms/MeshAdoptionPage)
 
 For more information on setting up Mesh events, please see our Events overview page at [Mesh events overview](../../events-guide/events-overview.md).
+
+### Roles for people hosting and experiencing events in Mesh
+
+| **Role**      | **Activity**                                                              | **Mesh licensed user** |
+|---------------|---------------------------------------------------------------------------|------------------------|
+| Mesh Host     | Schedule and host Mesh immersive experiences and provide feedback         | **Yes**                |
+| Mesh Attendee | Attend and participate in Mesh immersive experiences and provide feedback | **Yes**                |
+
 
 ## After a Trial
 
