@@ -30,7 +30,7 @@ There are [licensing requirements](../../Resources/mesh-troubleshooting.md#what-
 
 ## Sign up for a trial
 
-This offer is applicable with an active Microsoft 365 or Teams plan for business or enterprise. A Teams Premium license is required upon expiration of the Mesh trial.
+This offer is applicable with an active Microsoft 365 or Teams plans for business or enterprise. A Teams Premium license is required upon expiration of the Mesh trial.
 
 Trials are publicly available from one of the following sources. These IT Admin trials offer customers access to Microsoft Mesh for 6 months.
 
