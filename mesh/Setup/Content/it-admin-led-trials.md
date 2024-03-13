@@ -48,33 +48,37 @@ Learn more about [role based access control | Microsoft Entra](https://learn.mic
 
 ## Sign up for a trial
 
-This offer is applicable with an active Microsoft 365 or Teams plans for business or enterprise. A Teams Premium license is required upon expiration of the Mesh trial. These IT Admin trials offer customers access to Microsoft Mesh for 6 months.
+This offer is applicable with an active Microsoft 365 or Teams plans for business or enterprise. A Teams Premium license is required upon expiration of the Mesh trial. These IT Admin trials offer customers access to Microsoft Mesh for 6 months. There are two entrypoints for the trial that are detailed below:
 
 > [!IMPORTANT]
-> In order to access the trial, you must have the adequate privileges to access start trials and assign licenses to users.
-> 
-> [Who should be involved in a trial?](#who-should-be-involved-in-a-trial)
+> In order to access the trial and assign licenses to users, you must have an [adequate role and privileges](#roles-needed-to-start-trial-and-assign-licenses).
 
-You can sign up for the trial through two entrypoints at the following sources:
+### Direct link to trial
 
 - Visit the [Microsoft Mesh Trial - Admin link](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh)
 
     :::image type="content" source="../../media/admin-led-trial/Start-trial-link.png" alt-text="Screenshot of start trial page with Try now highlighted.":::
 
-**OR**
+### Navigate to trial in M365 Admin Center
 
 - Go to the [M365 Admin Center](https://admin.microsoft.com/) and follow the steps below:
     1. Sign in to [https://admin.microsoft.com/](https://admin.microsoft.com/).
     1. Go to **Marketplace** > **Billing** > **Purchase Services**.
+
         :::image type="content" source="../../media/admin-led-trial/Sign-up-trial-2.png" alt-text="Screenshot of Admin center showing purchase services highlighted.":::
+
     1. Search for **Microsoft Mesh** or **Purchase services** or scroll down to the **Other Services** section of **Purchase services**.
     1. On the **Microsoft Mesh Trial** title, select **Details**.
+
         :::image type="content" source="../../media/admin-led-trial/Sign-up-trial-3.png" alt-text="Screenshot of Mesh details button showing highlighted.":::
+
     1. Select **Start free trial**.
+
         :::image type="content" source="../../media/admin-led-trial/Sign-up-trial-4.png" alt-text="Screenshot of Start free trial button showing highlighted.":::
+
     1. Follow the remaining wizard steps to confirm the trial.
 
-These admin-led trials are not available worldwide. Specifically, aren't available for Government customers or customers with EDU or FLW SKUs. See the [Mesh Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md) for full licensing requirements.
+These admin-led trials are not available worldwide. Specifically, they aren't available for Government customers or customers with EDU or FLW SKUs. See the [Mesh Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md) for full licensing requirements.
 
 > [!IMPORTANT]
 > Based on customer tenant configuration, some customers may be unable to see the Microsoft Mesh trial if searching directly in Microsoft 365 admin center. Following the [Microsoft Mesh trial](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh) will take those customers directly to the trial location.
