@@ -30,19 +30,30 @@ There are [licensing requirements](../../Resources/mesh-troubleshooting.md#what-
 
 ## Sign up for a trial
 
-This offer is applicable with an active Microsoft 365 or Teams plans for business or enterprise. A Teams Premium license is required upon expiration of the Mesh trial.
+This offer is applicable with an active Microsoft 365 or Teams plans for business or enterprise. A Teams Premium license is required upon expiration of the Mesh trial. These IT Admin trials offer customers access to Microsoft Mesh for 6 months.
 
-Trials are publicly available from one of the following sources. These IT Admin trials offer customers access to Microsoft Mesh for 6 months.
+> [!IMPORTANT]
+> In order to access the trial, you must have the adequate privileges to access start trials and assign licenses to users.
+> 
+> [Who should be involved in a trial?](#who-should-be-involved-in-a-trial)
 
-To sign up for a trial, please visit:
+You can sign up for the trial through two entrypoints at the following sources:
 
-- The [Microsoft Mesh Trial - Admin link](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh)
-- The [M365 Admin Center](https://admin.microsoft.com/) and follow the steps below:
+- Visit the [Microsoft Mesh Trial - Admin link](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh)
+
+    :::image type="content" source="../../media/admin-led-trial/Start-trial-link.png" alt-text="Screenshot of start trial page with Try now highlighted.":::
+
+**OR**
+
+- Go to the [M365 Admin Center](https://admin.microsoft.com/) and follow the steps below:
     1. Sign in to [https://admin.microsoft.com/](https://admin.microsoft.com/).
     1. Go to **Marketplace** > **Billing** > **Purchase Services**.
+        :::image type="content" source="../../media/admin-led-trial/Sign-up-trial-2.png" alt-text="Screenshot of Admin center showing purchase services highlighted.":::
     1. Search for **Microsoft Mesh** or **Purchase services** or scroll down to the **Other Services** section of **Purchase services**.
     1. On the **Microsoft Mesh Trial** title, select **Details**.
+        :::image type="content" source="../../media/admin-led-trial/Sign-up-trial-3.png" alt-text="Screenshot of Mesh details button showing highlighted.":::
     1. Select **Start free trial**.
+        :::image type="content" source="../../media/admin-led-trial/Sign-up-trial-4.png" alt-text="Screenshot of Start free trial button showing highlighted.":::
     1. Follow the remaining wizard steps to confirm the trial.
 
 These admin-led trials are not available worldwide. They aren't available for Government customers or customers with EDU or FLW SKUs. See the [Mesh Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md) for full licensing requirements.
@@ -55,7 +66,7 @@ The expiration date appears in the trial subscription details page within the Mi
 
 | **Role**                                                                                    | **Activity**                                                              | **Mesh licensed user** |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------|
-| Microsoft 365 global administrator (or an admin with Billing and License and/or User roles) | Activate the trial and assign licenses                                    | **Yes**                |
+| Microsoft 365 global administrator ([or an admin with Billing and License and/or User roles](https://learn.microsoft.com/entra/identity/role-based-access-control/delegate-by-task#licenses))  | Activate the trial and assign licenses                                    | **Yes**                |
 | Mesh Host                                                                                   | Schedule and host Mesh immersive experiences and provide feedback         | **Yes**                |
 | Mesh Attendee                                                                               | Attend and participate in Mesh immersive experiences and provide feedback | **Yes**                |
 
