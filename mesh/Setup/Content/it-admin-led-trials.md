@@ -25,8 +25,8 @@ There are [licensing requirements](../../Resources/mesh-troubleshooting.md#what-
 > [!IMPORTANT]
 > Once the trial is activated, the six-month trial starts. Please ensure your organization is configured to run Microsoft Mesh prior to activating the trial.
 
-- Start by [Preparing your organization for Microsoft Mesh](preparing-your-organization.md) page to assign the suggested functional roles that may be involved in the rollout of Microsoft Mesh, and consider the various required configuration tasks.
-- Review the [licensing requirements](../../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-mesh) for all users who will access Microsoft Mesh.
+- [Preparing your organization for Microsoft Mesh](preparing-your-organization.md) by assigning the suggested functional roles that may be involved in the rollout of Microsoft Mesh, and consider the various required configuration tasks.
+- To use Microsoft Mesh, all users (including developers, event organizers, and event attendees/users) are required to have a M365 Office subscription with access to SharePoint, OneDrive, and M365 Calendar. Ensure your organization has a M365 Business Basic/Standard/Premium, Office 365 E1/E3/E5, or Microsoft 365 E3/E5 subscription and users have licenses assigned.
 - Review the [roles needed to start the Microsoft Mesh trial](#roles-needed-to-start-trial-and-assign-licenses) and assign licenses.
 
 ### Roles needed to start trial and assign licenses
@@ -46,6 +46,9 @@ This offer is applicable with an active Microsoft 365 or Teams plans for busines
 
 > [!IMPORTANT]
 > In order to access the trial and assign licenses to users, you must have an [adequate role and privileges](#roles-needed-to-start-trial-and-assign-licenses).
+
+> [!NOTE]
+> These admin-led trials are not available worldwide. Specifically, they aren't available for Government customers or customers with EDU or FLW SKUs. See the [Mesh Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md) for full licensing requirements.
 
 There are two entrypoints for the trial that are detailed below:
 
@@ -76,31 +79,38 @@ There are two entrypoints for the trial that are detailed below:
 
     1. Follow the remaining wizard steps to confirm the trial.
 
-These admin-led trials are not available worldwide. Specifically, they aren't available for Government customers or customers with EDU or FLW SKUs. See the [Mesh Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md) for full licensing requirements.
+    1. Once complete, you should see a confirmation page.
 
-The expiration date appears in the trial subscription details page within the Microsoft 365 admin center. Upon expiration of the trial, the user won't be able to access their content in Microsoft Mesh and will have to reach out to their IT Admin to purchase a paid license for themselves and their business groups.
+        :::image type="content" source="../../media/admin-led-trial/Trial-redeemed-confirmation.png" alt-text="Screenshot of confirmation page for trial redemption."::: 
+
+> [!IMPORTANT]
+> The expiration date appears in the trial subscription details page within the Microsoft 365 admin center. Upon expiration of the trial, the user won't be able to access their content in Microsoft Mesh and will have to reach out to their IT Admin to purchase a paid license for themselves and their business groups.
+
+## Assign licenses to users
+
+Upon redemption of the trial, the **Microsoft Mesh Trial** will show in your **Billing** > **Your products** page.
+
+:::image type="content" source="../../media/admin-led-trial/Microsoft-Mesh-Product.png" alt-text="Screenshot of microsoft Mesh trial product in admin center.":::
+
+Select the **Microsoft Mesh Trial** product and **Assign licenses**.
+
+Once licenses are assigned, users should be able to [download Microsoft Mesh](../../download-mesh-app-tools.md) and [join or host events in Mesh](../../events-guide/events-overview.md).
 
 ## During a Trial
 
-During the Mesh trial, we suggest you evaluate the following:
+It's time to get started with Mesh! Start by [creating your first event](../../events-guide/events-overview.md) and inviting the users you just assigned licenses to!
 
-- Host Mesh events in the ready-made immersive spaces or customize your own space by adding visual elements like banners featuring your organization’s logo, videos showcasing your product, or presentation content with the no-code editor.
+- **Host Mesh events** in the ready-made immersive spaces or customize your own space by adding visual elements like banners featuring your organization’s logo, videos showcasing your product, or presentation content with the no-code editor.
 
-- Explore and deploy customized 3D experiences in Microsoft Mesh using the Mesh toolkit available for Unity.
+    :::image type="content" source="../../user-guide/media/Events-customization.gif" alt-text="Event customization gif":::
+
+- **Develop** 3D experiences for Mesh and explore samples with the Mesh toolkit available for Unity.
+
+    :::image type="content" source="../../media/get-started-developing-mesh/image040-unity-overview-hero.png#lightbox" alt-text="Overview image of Unity development environment for Mesh":::
 
 For more adoption and deployment resources, visit our Mesh Adoption page found at [Mesh Adoption - Home](https://aka.ms/MeshAdoptionPage)
 
-For more information on setting up Mesh events, please see our Events overview page at [Mesh events overview](../../events-guide/events-overview.md).
-
-### Roles for people hosting and experiencing events in Mesh
-
-| **Role**      | **Activity**                                                              | **Mesh licensed user** |
-|---------------|---------------------------------------------------------------------------|------------------------|
-| Mesh Host     | Schedule and host Mesh immersive experiences and provide feedback         | **Yes**                |
-| Mesh Attendee | Attend and participate in Mesh immersive experiences and provide feedback | **Yes**                |
-
-
-## After a Trial
+## After the Trial
 
 Based on the outcome of the trial, you can decide whether to proceed to purchase licenses of Teams Premium to access Microsoft Mesh.
 To ensure continuity of service, you must purchase the required number of licenses and assign those licenses to users. Trial users who don't have a full license at the end of the trial period won't be able to access any Microsoft Mesh experiences.
@@ -110,7 +120,25 @@ If you don't purchase licenses following the trial:
 - Users will no longer be able to access Microsoft Mesh.
 - Users will continue to have access to the Mesh toolkit in Unity but will be unable to access the Microsoft Mesh application to publish and experience your environments in Mesh.
 
-Give us feedback about your trial experience! Tell us what you think in the feedback below.
+Give us feedback about your trial experience! Tell us what you think using the feedback form in Microsoft Mesh or using the feedback button below.
+
+## Microsoft Mesh Trial FAQs
+
+### How many licenses come with the Microsoft Mesh trial?
+
+The trial allocates 1,000,000 licenses for users.
+
+### How long does the trial last?
+
+The duration of the trial is six months, starting from the activation date/time.
+
+### What are the subscription and license requirements for Microsoft Mesh?
+
+To use Microsoft Mesh, all users (including developers, event organizers, and event attendees/users) are required to have a M365 Office subscription with access to SharePoint, OneDrive, and M365 Calendar. Ensure your organization has a M365 Business Basic/Standard/Premium, Office 365 E1/E3/E5, or Microsoft 365 E3/E5 subscription and users have licenses assigned.
+
+### What M365 admin roles are necessary for deployment?
+
+Please refer to the table listed above, [Roles needed to start trial and assign licenses](#roles-needed-to-start-trial-and-assign-licenses).
 
 ## Troubleshooting
 
