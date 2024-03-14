@@ -38,7 +38,7 @@ There are [licensing requirements](../../Resources/mesh-troubleshooting.md#what-
 | [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator) | This role has access to user management tasks in the Microsoft 365 admin center. User management administrators can create and manage user accounts, reset passwords, and manage user licenses.       | **Assign licenses to users**                  |
 | [License Administrator](/entra/identity/role-based-access-control/permissions-reference#license-administrator)    | This role has access to manage subscriptions and licenses for Microsoft 365. License administrators can assign licenses to users, remove licenses, and manage license assignments                     | **Assign licenses to users**                  |
 
-Learn more about [role based access control | Microsoft Entra](https://learn.microsoft.com/entra/identity/role-based-access-control/delegate-by-task#licenses).
+Learn more about [Role based access control | Microsoft Entra](/entra/identity/role-based-access-control/delegate-by-task#licenses).
 
 ## Sign up for a trial
 
@@ -68,7 +68,7 @@ There are two entrypoints for the trial that are detailed below:
 
     1. Search for **Microsoft Mesh** or **Purchase services** or scroll down to the **Other Services** section of **Purchase services**.
         > [!NOTE]
-> Based on customer tenant configuration, some customers may be unable to see the Microsoft Mesh trial if searching directly in Microsoft 365 admin center. Following the [Microsoft Mesh trial](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh) will take those customers directly to the trial location.
+        > Based on customer tenant configuration, some customers may be unable to see the Microsoft Mesh trial if searching directly in Microsoft 365 admin center. Following the [Microsoft Mesh trial](https://go.microsoft.com/fwlink/?linkid=2258400) from the [Microsoft Mesh Homepage](https://www.microsoft.com/mesh) will take those customers directly to the trial location.
     1. On the **Microsoft Mesh Trial** title, select **Details**.
 
         :::image type="content" source="../../media/admin-led-trial/Sign-up-trial-3.png" alt-text="Screenshot of Mesh details button showing highlighted.":::
