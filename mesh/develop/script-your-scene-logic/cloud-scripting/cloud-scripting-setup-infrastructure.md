@@ -1,38 +1,38 @@
 ---
-title: Set up cloud scripting infrastructure
-description: Set up Azure to manage scripting deployment.
+title: Cloud Scripting infrastructure and management
+description: Learn about setting up Mesh Cloud Scripting in Azure.
 ms.service: mesh
 author: typride
-ms.author: tmilligan
-ms.date: 09/26/2023
+ms.author: vinnietieto
+ms.date: 3/12/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, Azure, admin, Mesh Cloud Scripting, scripting, cloud scripting
 ---
 
-# Set up Cloud Scripting infrastructure in Azure
+# Set up Mesh Cloud Scripting in Azure
 
-## Mesh Cloud Scripting Service cloud infrastructure deployment
+## Overview
 
-Mesh Cloud Scripting Services are dotnet based apps that are run in the Cloud. The Mesh toolkit Uploader helps developers provision their azure resources and deploy their web app. These are the steps involved in deploying the Mesh Cloud Scripting Service cloud infrastructure today.
+In this article, you'll learn about various aspects of Mesh Clouding infrastructure and management, including the services that get deployed to your Azure Subscription when you build and publish your Cloud Scripting project.
 
-## Resources deployed
+### Resources deployed
 
-The Mesh Cloud Scripting Cloud Infrastructure deployed to the Customer's Azure Subscription contains the following Azure resources:
+Mesh Cloud Scripting Services are .NET-based apps that run in the Cloud. The Mesh Cloud Scripting cloud infrastructure deployed to the customer's Azure Subscription contains the following Azure resources:
 
-1. **[App Service Plan](/azure/app-service/overview-hosting-plans)**: They represent a compute cluster where web apps can run. (It can also run one or more different web apps).
+1. **[App Service plan](/azure/app-service/overview-hosting-plans)**: Represents a compute cluster where web apps can run. It can also run one or more different web apps.
 
 1. **[Azure VNet](/azure/virtual-network/virtual-networks-overview)**: This is the virtual network resource that the app service instances are deployed in and allows them to communicate with each other.
 
-1. **Azure Web App Instance**: This represents an instance of the Web App running on a specific VM.
-1. **[Azure Storage account](/azure/storage/common/storage-account-overview)**: This holds the published content and information about the Azure Web App instances. It is sub-divided into three components:
-    1. **[The Mesh Cloud Scripting Service Blob Storage](/azure/storage/blobs/storage-blobs-introduction)**: This holds the Mesh Cloud Scripting Service blob uploaded by the Mesh Uploader
-    2. **[The Orleans Membership Table](/dotnet/orleans/overview)**: This holds information about the liveness of the Orleans Silo instances.
-1. **[Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal)**: This holds the logs emitted from the Mesh Cloud Scripting Service running on App Service.
-1. **[Application Insights](/azure/azure-monitor/app/app-insights-overview?tabs=net)**: This provides application performance monitoring (APM) features. APM tools are useful to monitor applications from development, through test, and into production.
+1. **Azure Web App Instance**: Represents an instance of the web app running on a specific VM.
+1. **[Azure Storage account](/azure/storage/common/storage-account-overview)**: Holds the published content and information about the Azure web app instances. It's subdivided into two components:
+    1. **[The Mesh Cloud Scripting Service Blob Storage](/azure/storage/blobs/storage-blobs-introduction)**: Holds the Mesh Cloud Scripting Service blob uploaded by the Mesh Uploader.
+    2. **[The Orleans Membership Table](/dotnet/orleans/overview)**: Holds information about the liveness of the Orleans Silo instances.
+1. **[Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal)**: Holds the logs emitted from the Mesh Cloud Scripting Service running on App Service.
+1. **[Application Insights](/azure/azure-monitor/app/app-insights-overview?tabs=net)**: Provides application performance monitoring (APM) features. APM tools are useful to monitor applications from development, through test, and into production.
 
-### App Service Plan
+#### App Service Plan
 
-An App Service plan defines a set of compute resources for a web app to run.
+An App Service plan defines a set of compute resources that enable a web app to run.
 
 When you create an App Service plan in a certain region (for example, West Europe), a set of compute resources is created for that plan in that region. Whatever apps you put into this App Service plan run on these compute resources as defined by your App Service plan. Each App Service plan defines:
 
@@ -44,7 +44,7 @@ When you create an App Service plan in a certain region (for example, West Europ
 
 For more info, refer to the [App Service Plan Docs](/azure/app-service/overview-hosting-plans).
 
-#### Default settings for App Service Plan
+**Mesh toolkit default resource settings for App Service Plan**
 
 - **SKU Name**: P1v2
 - **SKU Tier**: PremiumV2
@@ -52,17 +52,17 @@ For more info, refer to the [App Service Plan Docs](/azure/app-service/overview-
 - **Kind**: Linux
 - **Reserved**: True
 
-In the context of Mesh Cloud Scripting Services, the App Service Plan is the compute component. It can scale automatically, and handle how the different instances communicate with each other (networking). The CloudHost which is the application that runs and manages Mesh Cloud Scripting Services is currently offered as a Docker image and as such, we use a Linux based plan. The Premium plans are more suited for production workloads.
+In the context of Mesh Cloud Scripting Services, the App Service plan is the compute component. It can scale automatically, and handle how the different instances communicate with each other (networking). The CloudHost, which is the application that runs and manages Mesh Cloud Scripting Services, is currently offered as a Docker image and as such, we use a Linux based plan. The Premium plans are more suited for production workloads.
 
-For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/microsoft.web/serverfarms?pivots=deployment-language-bicep) for the App Service Plan resource.
+For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/microsoft.web/serverfarms?pivots=deployment-language-bicep) for the App Service plan resource.
 
-### App Service
+#### App Service
 
 Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. App Service adds the power of Microsoft Azure to your application, such as security, load balancing, autoscaling, and automated management. With App Service, you pay for the Azure compute resources you use. The compute resources you use are determined by the **App Service plan** that you run your apps on.
 
 For more information, refer to the [App Service Docs](/azure/app-service/overview).
 
-#### Default Settings -  App Service
+**Mesh toolkit default resource settings -  App Service**
 
 - **httpsOnly**: True
 - **alwaysOn**: True
@@ -72,13 +72,13 @@ For more information, refer to the [App Service Docs](/azure/app-service/overvie
 
 For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/microsoft.web/sites?pivots=deployment-language-bicep) for the App Service Plan resource.
 
-### Virtual Network
+#### Virtual Network
 
 Azure Virtual Network is the fundamental building block for your private network in Azure. A virtual network enables many types of Azure resources, such as Azure Virtual Machines (VM), to securely communicate with each other, the internet, and on-premises networks. A virtual network is similar to a traditional network that you'd operate in your own data center. An Azure Virtual Network brings with it extra benefits of Azure's infrastructure such as scale, availability, and isolation.
 
 For more information, refer to the [Virtual Network Docs](/azure/virtual-network/virtual-networks-overview).
 
-#### Default Settings - Virtual Network
+**Mesh toolkit default resource settings - Virtual Network**
 
 - **AddressSpace addressPrefixes**: 10.0.0.0/16
 - **Subnet addressPrefix**: 10.0.0.0/24
@@ -87,26 +87,26 @@ For more information, refer to the [Virtual Network Docs](/azure/virtual-network
 
 For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/Microsoft.Network/virtualNetworks?pivots=deployment-language-bicep) for the Virtual Network resource.
 
-### Storage Account
+#### Storage Account
 
 An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, and tables. The storage account provides a unique namespace for your Azure Storage data that's accessible from anywhere in the world over HTTP or HTTPS. Data in your storage account is durable and highly available, secure, and massively scalable.
 
 For more information, refer to the [Storage Account Docs](/azure/storage/common/storage-account-overview).
 
-#### Default Settings - Storage Account
+**Mesh toolkit default resource settings - Storage Account**
 
 - **SKU Name**: Standard_LRS
 - **Kind**: StorageV2
 
 For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/microsoft.storage/storageaccounts?pivots=deployment-language-bicep) for the Storage Account resource.
 
-### Log Analytics Workspace
+#### Log Analytics Workspace
 
-A Log Analytics workspace is a unique environment for log data from Azure Monitor and other Azure services, such as Microsoft Sentinel and Microsoft Defender for Cloud.  It is a tool in the Azure portal that's used to edit and run log queries against data in the Azure Monitor Logs store.
+A Log Analytics workspace is a unique environment for log data from Azure Monitor and other Azure services, such as Microsoft Sentinel and Microsoft Defender for Cloud. It's a tool in the Azure portal that's used to edit and run log queries against data in the Azure Monitor Logs store.
 
 For more information, refer to the [Log Analytics Workspace Docs](/azure/azure-monitor/logs/log-analytics-workspace-overview).
 
-#### Default Settings - Log Analytics Workspace
+**Mesh toolkit default resource settings - Log Analytics Workspace**
 
 - **forceCmkForQuery**: false
 - **retentionInDays**: 30
@@ -115,7 +115,7 @@ For more information, refer to the [Log Analytics Workspace Docs](/azure/azure-m
 
 For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/microsoft.operationalinsights/workspaces?pivots=deployment-language-bicep) for the Workspace resource.
 
-### Application Insights
+#### Application Insights
 
 Application Insights is an extension of [Azure Monitor](/azure/azure-monitor/overview) and provides application performance monitoring (APM) features. APM tools are useful to monitor applications from development, through test, and into production in the following ways:
 
@@ -125,7 +125,7 @@ Along with collecting [metrics](/azure/azure-monitor/app/standard-metrics) and a
 
 For more information, refer to the [Application Insights Docs](/azure/azure-monitor/app/app-insights-overview?tabs=net).
 
-#### Default Settings - Application Insights
+**Mesh toolkit default resource settings - Application Insights**
 
 - **Kind**: web
 - **Request_Source**: rest
@@ -134,22 +134,11 @@ For more information, refer to the [Application Insights Docs](/azure/azure-moni
 For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/microsoft.insights/components?pivots=deployment-language-bicep)
  for the Virtual Network resource.
 
-## Supported regions and abbreviations
-
-Resources can be deployed to any of the following supported regions. All resources are deployed into the  same location. You can deploy resources to a different location than your resource group, but you'll need to supply the location via the Mesh Uploader's Settings window.
-
-| Australia Central (ac)   | Australia Central 2 (ac2) | Australia East (ae)    | Australia Southeast (ase) | Brazil South (bs)      | Brazil Southeast (bse) | Canada Central (cc)        | Canada East (ce)      | Central India (ci) |
-|--------------------------|---------------------------|------------------------|---------------------------|------------------------|------------------------|----------------------------|-----------------------|--------------------|
-| Central US (cu)          | East Asia (ea)            | East US (eu)           | East US 2 (eu2)           | France Central (fc)    | France South (fs)      | Germany West Central (gwc) | Japan East (je)       | Japan West (jw)    |
-| Jio India Central (jic)  | Jio India West (jiw)      | Korea Central (kc)     | Korea South (ks)          | North Central US (ncu) | North Europe (neu)     | Norway East (ne)           | Norway West (nw)      | Qatar Central (qc) |
-| South Africa North (san) | South Africa West (saw)   | South Central US (scu) | Southeast Asia (sea)      | South India (si)       | Sweden Central (sc)    | Switzerland North (sn)     | Switzerland West (sw) | UAE Central (uc)   |
-| UAE North (un)           | UK South (us)             | UK West (uw)           | West Europe (we)          | West US (wu)           | West US 2 (wu2)        | West US 3 (wu3)            |
-
-## Mesh Cloud Scripting Services cloud infrastructure diagram
+### Mesh Cloud Scripting Services cloud infrastructure diagram
 
 :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/image016.png" alt-text="Mesh Cloud Scripting Service infrastructure diagram":::
 
-## Resource provider registrations
+### Resource provider registrations
 
 The services to register are:
 
@@ -159,41 +148,39 @@ The services to register are:
 1. Microsoft.Insights
 1. Microsoft.OperationalInsights
 
-**Need help?** See how
+**Notes**
 
-> [!NOTE]
-> **Need help?** See how to register services [Resource provider registration errors - Azure Resource Manager | Microsoft Learn](/azure/azure-resource-manager/troubleshooting/error-register-resource-provider?tabs=azure-portal).
+- If you need help with errors, see [Resource provider registration errors](/azure/azure-resource-manager/troubleshooting/error-register-resource-provider?tabs=azure-portal).
 
-> [!NOTE]
-> From the Azure docs, registering services is done at a subscription level i.e., there's no need to register the services for different resource groups.
+- As explained in the Azure documentation, registering services is done at a subscription level. In other words, there's no need to register the services for different resource groups.
 
-## Access control for Mesh Cloud Scripting Service deployment
+### Access control for the Mesh Cloud Scripting Service deployment
 
-1. Developer must have an email that can be used for their deployment. This could be a new account or a pre-existing email used, such as Environment uploading.
-1. If managing access control through an Azure Security Group, create this group (e.g “Mesh Cloud Scripting Services Developers”).
-See Learn about groups and group membership - Microsoft Entra | Microsoft Learn for more Information on Azure Security Group versus Microsoft 365 group types.
-1. Decide how you’d like developers to access your Azure subscription. This depends on if the developer is a native member of the directory, or a guest user.
-    1. For native members, you can add them to the Azure Security Group you created in the previous step if you’d like to easily manage access controls.
-    2. For guest users, you can add them to your Azure subscription, or add them to the Azure Security Group from the previous step.
+1. Developers must have an email acccount that can be used for the deployment. This can be a new or pre-existing account.
+1. If you're managing access control through an Azure Security Group, create this group (for example, "Mesh Cloud Scripting Services Developers"). For more information on Azure Security Group compared to Microsoft 365 group types, see [Learn about groups and group membership](/entra/fundamentals/concept-learn-about-groups). 
+1. Decide how you'd like developers to access your Azure subscription. This is determined by whether the developer is a native member of the directory or a guest user.
+    1. You can add native members to the Azure Security Group you created in step #2 above if you'd like to easily manage access controls.
+    2. You can add guest users to your Azure subscription or add them to the Azure Security Group (see step #2 above).
 
-    See [Add B2B collaboration users in the Azure portal - Microsoft Entra | Microsoft Learn](/azure/active-directory/external-identities/add-users-administrator) for more info on guest users.
+    For more information on guest users, see [Add B2B collaboration users in the Azure portal](/azure/active-directory/external-identities/add-users-administrator) .
 
-### Our recommendations for access control
+#### Our recommendations for access control
 
-Depending on how restrictive you'd like your access control policies to be, there are a few recommendations on granting developers access to provision the Mesh Cloud Scripting Services cloud infrastructure in Azure.
+Here are a few recommendations for how to grant developers access to provision the Mesh Cloud Scripting Services cloud infrastructure in Azure. These vary depending on how restrictive you'd like your access control policies to be.
 
-1. Grant developers the [Contributor role](/azure/role-based-access-control/built-in-roles) on the entire Subscription that is provisioned for your Mesh Cloud Scripting Services.
+1. Grant developers the [Contributor role](/azure/role-based-access-control/built-in-roles) on the entire Subscription that's provisioned for your Mesh Cloud Scripting Services.
 
-1. Create a dedicated resource group for Mesh Cloud Scripting Services cloud infrastructure deployment and grant developers the Contributor role on this resource group. You can do this through the Azure Security Group you created in the second prerequisite i.e., "Mesh Cloud Scripting Services Developers". This grants them full access to manage all resources but does not allow them to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries.
+1. Create a dedicated resource group for Mesh Cloud Scripting Services cloud infrastructure deployment and grant developers the Contributor role in this resource group. You can do this through the Azure Security Group you created in the second prerequisite--in other words, "Mesh Cloud Scripting Services Developers". This grants them full access to manage all resources but doesn't allow them to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries.
 
 1. Create a [Custom Role in Azure](/azure/role-based-access-control/custom-roles) that has the least permissions needed to create and manage the Mesh Cloud Scripting Services cloud infrastructure.
 
     [You can assign this role directly on the Azure Security Group you created in the second prerequisite i.e](/azure/role-based-access-control/quickstart-assign-role-user-portal)., "Mesh Cloud Scripting Services Developers".
 
-    Below you can see our recommended permissions for the Custom roles you create:
+    Here are our recommended permissions for the Custom roles you create:
+
     :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/image017.png" alt-text="Mesh Cloud Scripting Service infrastructure diagram":::
 
-   **Then the JSON file you would upload should be similar to this**:
+    The JSON file you would upload should be similar to this**:
 
     ```dotnetcli
     {
@@ -249,11 +236,11 @@ Depending on how restrictive you'd like your access control policies to be, ther
     ```
 
     > [!NOTE]
-    > The MeshCloudScriptingServiceDeployer custom role doesn't allow user to create resource groups. If we want users to create a resource group, they need the **Microsoft.Resources/subscriptions/resourcegroups/write permissions** as well.
+    > The MeshCloudScriptingServiceDeployer custom role doesn't allow users to create resource groups. If we want users to create a resource group, they need the **Microsoft.Resources/subscriptions/resourcegroups/write permissions** as well.
 
-## Quota limitations for Mesh Cloud Scripting Services
+### Quota limitations for Mesh Cloud Scripting Services
 
-The Mesh Cloud Scripting Services infrastructure utilizes the Premium App Service Linux plan (P1V2), and these are the App Service limits that you might encounter while deploying Mesh Cloud Scripting Service:
+The Mesh Cloud Scripting Services infrastructure utilizes the Premium App Service Linux plan (P1V2). These are the App Service limits that you might encounter while deploying Mesh Cloud Scripting Service:
 
 |Resource |Premium (P1V2)  |
 |---------|---------|
@@ -266,15 +253,15 @@ The Mesh Cloud Scripting Services infrastructure utilizes the Premium App Servic
 > [!NOTE]
 > The actual number of apps that you can host on these machines depends on the activity of the apps, the size of the machine instances, and the corresponding resource utilization.
 
-If you receive this error, “This region has quota of 0 PremiumV2 instances for your subscription. Try selecting a different region or SKU," please refer to [Azure subscription limits and quotas - Azure Resource Manager | Microsoft Learn](/azure/azure-resource-manager/management/azure-subscription-service-limits).
+If you receive the following error: "This region has quota of 0 PremiumV2 instances for your subscription. Try selecting a different region or SKU," see [Azure subscription limits and quotas](/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
-## Clean up stale Mesh Cloud Scripting services
+### Clean up stale Mesh Cloud Scripting services
 
-In the case that you have stale or unused Mesh Cloud Scripting services, follow these steps to find your Mesh Cloud Scripting resources and remove them.
+If you have stale or unused Mesh Cloud Scripting services, follow these steps to find your Mesh Cloud Scripting resources and remove them.
 
-1. Login to Azure Portal
+1. Log in to Azure Portal.
 
-1. Navigate to the "All Resources" tab
+1. Navigate to the "All Resources" tab.
 
     :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-all-resources.png" alt-text="Select all resources in Azure portal":::
 
@@ -292,7 +279,9 @@ In the case that you have stale or unused Mesh Cloud Scripting services, follow 
 
     :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/Stale-cleanup-second-filter.png" alt-text="Resource filter in azure":::
 
-1. Clean up the stale Mesh Cloud Scripting services by clicking the ellipsis next to the name of each resource found in step 3C and then clicking Delete in the dropdown. Alternatively, you can use the Azure CLI as described in [Delete resources - Azure Resource Manager | Microsoft Learn](/azure/azure-resource-manager/management/delete-resource-group?tabs=azure-cli#delete-resource) to delete the resources by name.
+1. Clean up the stale Mesh Cloud Scripting services by clicking the ellipsis next to the name of each resource found in step 3C and then clicking Delete in the dropdown. Alternatively, you can use the Azure CLI as described in this [Delete resource](/azure/azure-resource-manager/management/delete-resource-group?tabs=azure-cli#delete-resource) article to delete the resources by name.
+
+## Next steps
 
    > [!div class="nextstepaction"]
-   > [Getting started with cloud scripting](cloud-scripting-getting-started.md)
+   > [Cloud scripting troubleshooting](./cloud-scripting-troubleshooting.md)

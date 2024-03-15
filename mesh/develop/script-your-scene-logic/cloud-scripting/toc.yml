@@ -1,16 +1,21 @@
 items:
-  - name: Cloud scripting basic concepts
+  - name: Basic concepts
     href: cloud-scripting-basic-concepts.md
     displayName: cloud scripting, script, scripting
-  - name: Cloud scripting setup infrastructure
+  - name: Prepare for your first project
+    href: cloud-scripting-prepare-for-your-project.md
+    displayName: cloud scripting, script, scripting
+  - name: Create a simple project
+    href: cloud-scripting-create-a-simple-project.md
+    displayName: cloud scripting, script, scripting
+  - name: Provide details for build and publish
+    href: cloud-scripting-provide-details.md
+  - name: Programmer's guide
+    href: cloud-scripting-programmers-guide.md
+    displayName: cloud scripting, script, scripting    
+  - name: Infrastructure and management
     href: cloud-scripting-setup-infrastructure.md
     displayName: cloud scripting, script, scripting
-  - name: Cloud scripting getting started
-    href: cloud-scripting-getting-started.md
-    displayName: cloud scripting, script, scripting
-  - name: Cloud scripting programmer's guide
-    href: cloud-scripting-programmers-guide.md
-    displayName: cloud scripting, script, scripting
-  - name: Cloud scripting troubleshooting
+  - name: Troubleshooting
     href: cloud-scripting-troubleshooting.md
     displayName: cloud scripting, script, scripting
