@@ -47,7 +47,7 @@ The following instructions show how to create a simple environment with a cube t
 
 1. In the **Inspector**, navigate to the **Transform** component and then change the Cube's **Position** and **Rotation** values to the following:
 
-**Position: X = 0.1, Y = 1.5, Z = 3.3.  
+**Position**: X = 0.1, Y = 1.5, Z = 3.3.  
 
 **Rotation**: X = -15, Y = 0.8, Z = 0.1
 
@@ -134,6 +134,8 @@ The following instructions show how to create a simple environment with a cube t
 
 > [!NOTE]
 > By default, the application will time out after two minutes of inactivity. To increase this window, set a `"debugTimeoutSecs"` value in your manifest file (example: `"debugTimeoutSecs": "240"`).
+
+   ![A screen shot of Windows Explorer with the mesh cloudscripting manifest json file highlighted.](../../../media/mesh-scripting/getting-started/012-json-file.png)
 
 ## Build and publish the environment
 
