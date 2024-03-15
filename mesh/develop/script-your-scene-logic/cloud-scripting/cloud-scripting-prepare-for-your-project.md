@@ -21,9 +21,9 @@ In this article, you'll learn about how to prepare for your first Mesh Cloud Scr
 
 Make sure you have the following installed:
 
-[Azure CLI 2.40.0.](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
+[Azure CLI 2.40.0.](/cli/azure/install-azure-cli)
 
-[.NET 6.0 SDK Windows](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+[.NET 6.0 SDK Windows](https://dotnet.microsoft.com/download/dotnet/6.0)
 
 **To confirm that you have the Azure CLI installed**:
 
@@ -33,7 +33,7 @@ Make sure you have the following installed:
 
 - Run the **az account show** command. If you're not logged in to the correct subscription, run **az logout** and then **az login** to log in to the right account. If you have access to multiple Azure subscriptions in different tenants, it's easier to log in using the **az login --use-device-code** command.
 
-**Note**: Switching Azure subscriptions/tenants using the Azure CLI resets your default subscription. To ensure that you update your default subscription if you switch tenants, use the **az account set -n "<subscription-name>"** command. Example: **az account set -n "My Azure Subscription"**.
+**Note**: Switching Azure subscriptions/tenants using the Azure CLI resets your default subscription. To ensure that you update your default subscription if you switch tenants, use the **az account set -n "\<subscription-name\>"** command. Example: **az account set -n "My Azure Subscription"**.
 
 ## Record your resource group and Subscription ID for later use
 
@@ -51,7 +51,7 @@ You'll need to select an Azure resource group for Mesh Cloud Scripting (see the 
 
 This is the subscription ID for your chosen resource group. 
 
-    ![_________________________](../../../media/mesh-scripting/setup-in-uploader/001-subscription-id.png)
+![_________________________](../../../media/mesh-scripting/setup-in-uploader/001-subscription-id.png)
 
 **IMPORTANT**: The configuration of a subscription and resource group for the Mesh World that you'll publish your Environment to may or may not be the same as the configuration of a subscription and resource group for MeshApp.
 

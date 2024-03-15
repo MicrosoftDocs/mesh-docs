@@ -32,7 +32,7 @@ At this point you should have a resource group and Subscription ID handy.
 ![_______](../../../media/mesh-scripting/provide-details/001-uploader-setup-scripting-dropdown.jpg)
 
 1. Copy the subscription ID that you recorded earlier for *Mesh Cloud Scripting Service* and then paste it into the Subscription ID field.  
-1. Enter a [Resource Group](./cloud-scripting-setup-on-your-system.md#resource-group) or let the project choose one for you.  
+1. Enter a [Resource Group](./cloud-scripting-prepare-for-your-project.md#resource-group) or let the project choose one for you.  
 1. You can accept the default **Location** or choose a different one.
 
 1. For **ServiceMode**, you have two options:
@@ -48,8 +48,6 @@ At this point you should have a resource group and Subscription ID handy.
 After you click the **Create Environment** button in the **Create Environment** tab, you're taken to the **Update Environment** tab, where you select an environment and Scene to build and publish. If the Scene has a Mesh Cloud Scripting component, the deployment configurations are also shown here.
 
 If you navigated to this article from the *Build and publish your environment* article, you can now [return to that article](../../make-your-environment-available/build-and-publish-your-environment.md#create-your-environment). **Note**: When you build and publish, the Mesh Cloud Scripting cloud infrastructure is deployed to your Azure Subscription. To learn more about the specific apps that are deployed, see [Resources deployed](./cloud-scripting-setup-infrastructure.md#resources-deployed).
-
-If you navigated to this article from the *Mesh Cloud Scripting getting started* article, you can now [return to that article](./cloud-scripting-getting-started.md)
 
 ## Next steps
 

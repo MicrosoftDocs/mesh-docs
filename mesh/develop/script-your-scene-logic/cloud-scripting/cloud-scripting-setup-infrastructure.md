@@ -24,7 +24,7 @@ Mesh Cloud Scripting Services are .NET-based apps that run in the Cloud. The Mes
 1. **[Azure VNet](/azure/virtual-network/virtual-networks-overview)**: This is the virtual network resource that the app service instances are deployed in and allows them to communicate with each other.
 
 1. **Azure Web App Instance**: Represents an instance of the web app running on a specific VM.
-1. **[Azure Storage account](/azure/storage/common/storage-account-overview)**: Holds the published content and information about the Azure web app instances. It's subdivided into three components:
+1. **[Azure Storage account](/azure/storage/common/storage-account-overview)**: Holds the published content and information about the Azure web app instances. It's subdivided into two components:
     1. **[The Mesh Cloud Scripting Service Blob Storage](/azure/storage/blobs/storage-blobs-introduction)**: Holds the Mesh Cloud Scripting Service blob uploaded by the Mesh Uploader.
     2. **[The Orleans Membership Table](/dotnet/orleans/overview)**: Holds information about the liveness of the Orleans Silo instances.
 1. **[Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal)**: Holds the logs emitted from the Mesh Cloud Scripting Service running on App Service.

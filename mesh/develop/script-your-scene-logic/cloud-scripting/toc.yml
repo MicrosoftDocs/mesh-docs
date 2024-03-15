@@ -10,11 +10,11 @@ items:
     displayName: cloud scripting, script, scripting
   - name: Provide details for build and publish
     href: cloud-scripting-provide-details.md
-  - name: Infrastructure and management
-    href: cloud-scripting-setup-infrastructure.md
-    displayName: cloud scripting, script, scripting
   - name: Programmer's guide
     href: cloud-scripting-programmers-guide.md
+    displayName: cloud scripting, script, scripting    
+  - name: Infrastructure and management
+    href: cloud-scripting-setup-infrastructure.md
     displayName: cloud scripting, script, scripting
   - name: Troubleshooting
     href: cloud-scripting-troubleshooting.md

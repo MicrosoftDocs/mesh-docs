@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding, 
 
 # Create a simple Cloud Scripting project
 
-In this article, you'll create and publish a simple project using Mesh Cloud Scripting. The article assumes that you've already [set up Cloud Scripting on your system](./cloud-scripting-setup-on-your-system.md). We recommend that you familiarize yourself with the current list of [Mesh toolkit known issues](../../../Resources/mesh-toolkit-known-issues.md) before starting development with Mesh Cloud Scripting.
+In this article, you'll create and publish a simple project using Mesh Cloud Scripting. The article assumes that you've already [set up Cloud Scripting on your system](./cloud-scripting-prepare-for-your-project.md). We recommend that you familiarize yourself with the current list of [Mesh toolkit known issues](../../../Resources/mesh-toolkit-known-issues.md) before starting development with Mesh Cloud Scripting.
 
 [Learn more about Mesh Cloud Scripting Infrastructure and management](cloud-scripting-setup-infrastructure.md).
 
@@ -32,7 +32,7 @@ The following instructions show how to create a simple environment with a cube t
 
    ![Screenshot of Open application folder button in Unity.](../../../media/mesh-scripting/getting-started/MeshAppCmpInspectorDefaultView.png)
    
-   ... you'll see in the Windows File Explorer that this also creates a new [ASP.NET Core](/aspnet/core/razor-pages/web-sdk?view=aspnetcore-6.0) project named **MyFirstCloudScripting.csproj** in the **Assets > .MeshCloudScripting > MyFirstCloudScripting** folder.
+   ... you'll see in the Windows File Explorer that this also creates a new [ASP.NET Core](/aspnet/core/razor-pages/web-sdk) project named **MyFirstCloudScripting.csproj** in the **Assets > .MeshCloudScripting > MyFirstCloudScripting** folder.
 
    ![Screenshot of a folder structure in Windows showing scripting project.](../../../media/mesh-scripting/getting-started/003-cloud-scripting-files.png)
 
