@@ -4,7 +4,7 @@ description: Learn how to display Web content in Mesh Environments.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 11/30/2023
+ms.date: 02/29/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming video, whiteboard
 ---
@@ -176,9 +176,15 @@ To enable visual scripting using WebSlate, you must set up a few things.
 
    ### Load HTML Content
 
-   This new feature in WebSlate allows developers to directly load HTML content using Unity TextAssets, streamlining the development process. This integration not only simplifies the workflow but also enables immediate feedback in Unity Play Mode, enhancing real-time editing and debugging. Additionally, it supports dynamic content switching, offering flexibility and a more interactive user experience.
+   This new feature in WebSlate allows developers to drop HTML files as TextAssets into the Unity scene with low effort. This integration not only simplifies the workflow but also enables immediate feedback in Unity Play Mode, enhancing real-time editing and debugging. Additionally, it supports dynamic content switching, offering flexibility and a more interactive user experience.
 
    ![A screenshot of an example script graph that loads HTML content into a WebSlate.](../../media/webview-developer-guide/image026.png)
+
+   **Create new or reuse existing HTML for viewing/interacting in your Mesh environment**: If you don't want to host HTML content or you have secure offline files, you can add HTML on the spot and include it as part of the asset in your scene. 
+
+   **Dynamic Loading at Runtime**: Loading HTML from files allows developers to make real-time changes using Visual Scripting. This dynamic capability enhances the user experience.
+
+   **Quick Feedback Loop in Unity Play Mode**: With the HTML content loaded from files, developers can instantly see the effects of their changes while inf Unity Play Mode.
 
 ## WebSlate in Cloud Scripting
 

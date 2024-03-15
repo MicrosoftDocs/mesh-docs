@@ -13,12 +13,6 @@
 		},
 
 		{
-			"source_path": "mesh/index.md",
-			"redirect_url": "/mesh/overview",
-			"redirect_document_id": false
-		},
-
-		{
 			"source_path": "mesh/get-started.md",
 			"redirect_url": "/mesh/overview",
 			"redirect_document_id": false
