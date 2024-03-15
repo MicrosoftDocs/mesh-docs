@@ -13,13 +13,15 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
-## Version 5.2401.0
+## Version 5.2401.0 (February 20, 2024)
 
 ### What's new
 
 **Default Mic/Speaker Settings:** When going to the immersive space, Mesh will now sync with your Teams' audio device selection, resolving the previous potential misalignment with your system default audio device selection.
 
 * Icebreaker activity with spheres is localized (translated) into 20+ different languages.
+
+* Admins can now enable immersive spaces for users using service plans, instead of the previous method of using OCPS. Please refer to the [Mesh setup for admins](../Setup/Content/setup-m365-mesh.md) for more detail.
 
 ## Version 5.2315.0
 

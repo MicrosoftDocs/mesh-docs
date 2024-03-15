@@ -28,7 +28,7 @@ For Microsoft Mesh, you will need the following:
 
   Learn more about [Cloud scripting for custom immersive spaces in Microsoft Mesh](../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md).
 
-#### Configure policies to allow SharePoint Group, M365 Calendar, OneDrive
+#### Subscription requirements
 
 To use Microsoft Mesh, all users (including developers, event organizers, and event attendees/users) are required to have a M365 Office subscription with access to SharePoint, OneDrive, and M365 Calendar.
 
