@@ -4,7 +4,7 @@ description: Overview of Mesh Cloud Scripting and Mesh Visual Scripting.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 8/28/2023
+ms.date: 2/25/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
@@ -50,14 +50,16 @@ The development workflow and model for Mesh Cloud Scripting is very similar to r
 
 [Learn more about Mesh Cloud Scripting](cloud-scripting/cloud-scripting-basic-concepts.md)
 
-## Benefits of using Mesh Visual Scripting
+## Benefits Comparison: Cloud Scripting and Mesh Visual Scripting
+
+### Benefits of Visual Scripting
 
 - Add interactivity and dynamic runtime behavior to your Mesh Environments without writing code.
 - Enables client-side scripting.
 - Allows low latency operations such as custom tethered objects from the character’s viewpoint.
 - Server deployment can be hard or even impossible in some organizations. Mesh Visual Scripting is simpler to get started with than Mesh Cloud Scripting because it can work “standalone” without a server deployment.
 
-## Benefits of using Mesh Cloud Scripting
+### Benefits of Cloud Scripting
 
 - Simple application model (all code and logic runs in one place).
 - Easy connection to cloud side content.

@@ -34,7 +34,7 @@ If a Mesh Cloud Scripting stage during the Mesh Uploader process failed and the 
 2. Ensure that the deployed environment matches the *scene.map* used by the Mesh Cloud Scripting service.
     1. In the Unity project, navigate to the **Mesh Cloud Scripting** component and then press `Serialize Scene` to force scene graph serialization.
     1. Re-upload your environment with the Mesh Uploader.
-1. Test your local Unity version [against the deployed service](cloud-scripting-getting-started.md#connect-to-the-cloud-scripting-service-from-unity).
+1. Test your local Unity version [against the deployed service](./cloud-scripting-create-a-simple-project.md#connect-to-the-cloud-scripting-service-from-unity).
    - Check the logs in Unity for any errors if not working.
 1. If nothing helps, [report a bug](#how-to-report-issues).
    - Inspect [Mesh Cloud Scripting logs](#how-to-collect-logs) and include relevant information where possible in your bug report.
