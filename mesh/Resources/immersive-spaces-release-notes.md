@@ -80,7 +80,7 @@ The following product issues have been fixed for this release:
 
 * On Quest, you'll no longer be disconnected from a meeting when you remove your headset. (25764)
 
-* Fixed the issue: On PC and Quest, when attempting to delete any artifacts in the Environment Editor will crash Mesh while running. (28903)
+* Fixed the issue: On PC and Quest, when attempting to delete any Objects in the Environment Editor will crash Mesh while running. (28903)
 
 ## Version 5.2313.0
 
