@@ -16,7 +16,17 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.2403.0 (Preview)
 
+### What's new
 
+* [Updated firewall requirements](../Setup/Content/preparing-your-organization.md#endoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app) for single room events in the Microsoft Mesh app.
+
+### Resolved product issues
+
+* In high-contrast mode, the descriptions for environments will not disappear.
+
+* The radio in the Lakehouse has a properly functioning button to start/stop playing music.
+
+* Avatar eye saturation is improved to be more accurate to the user-selected color palette.
 
 ## Version 5.2402.0
 

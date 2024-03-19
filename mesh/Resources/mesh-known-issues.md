@@ -11,6 +11,13 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 # Active known issues - Mesh
 
+## Version 5.2402.0 (March 12, 2024)
+
+* On starting a broadcast, broadcasters may experience a temporary low framerate. (32963)
+
+* Keys for dropping interactables, like marshmallow sticks in the Lake House, are the middle mouse button (scroll wheel) and space bar. This is communicated via a short pop up that users might overlook. (32968)
+
+* 
 ## Version 5.2401.0 (February 20, 2024)
 
 * On starting a broadcast, broadcasters may experience a temporary low framerate. (32963)
