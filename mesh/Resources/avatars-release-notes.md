@@ -22,6 +22,8 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 | Mobile | Teams mobile | View other avatars only |
 | VDI | Teams | View other avatars only |
 
+## March 11, 2024
+
 ## Jan 26, 2024
 
 * When inside a Teams meeting, you can now turn on your avatar from the **Camera** drop down menu.

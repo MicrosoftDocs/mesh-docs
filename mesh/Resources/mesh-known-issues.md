@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 # Active known issues - Mesh
 
-## Version 5.2401.0
+## Version 5.2401.0 (February 20, 2024)
 
 * On starting a broadcast, broadcasters may experience a temporary low framerate. (32963)
 

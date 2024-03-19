@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
-## Version 5.2401.0
+## Version 5.2401.0 (February 20, 2024)
 
 ### What's new
 
