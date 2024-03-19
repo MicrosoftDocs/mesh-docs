@@ -24,7 +24,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 * Presenters can now see their own screenshare when sharing content in Mesh. Previously, screenshared content was only visible to participants other than the presenter, requiring the presenter to navigate out of Mesh to see the content being shared.
 
-## Version 5.2401.0
+## Version 5.2401.0 (February 20, 2024)
 
 ### Resolved product issues
 
