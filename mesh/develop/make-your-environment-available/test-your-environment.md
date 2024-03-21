@@ -4,7 +4,7 @@ description: Learn how to test your environment with a developer template.
 ms.service: mesh
 author: thetuvix
 ms.author: alexturn
-ms.date: 11/27/2023
+ms.date: 3/19/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, testing, troubleshooting, performance, optimizing
 ---
@@ -41,7 +41,7 @@ While [Mesh Emulation Mode](../debug-and-optimize-performance/mesh-emulator.md) 
  
     ![A screen shot of the Mesh app with the customize button for your newly created template highlighted.](../../media/sample-mesh-101/035-customize-button.png)
 
-1. You can now test the appearance and performance of your environment in the Mesh app on your desktop PC or Quest headset. You can use the Environment editor and Control panel tools to place artifacts and see how your environment works when it's customized, or simply explore your environment to ensure it works as expected.
+1. You can now test the appearance and performance of your environment in the Mesh app on your desktop PC or Quest headset. You can use the Environment editor and Control panel tools to place Objects and see how your environment works when it's customized, or simply explore your environment to ensure it works as expected.
 
     ![___](../../media/sample-mesh-101/493-info-dialog-buttons-highlighted.png)
 
