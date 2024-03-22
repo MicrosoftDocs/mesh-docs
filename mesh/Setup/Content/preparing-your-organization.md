@@ -205,7 +205,7 @@ implications and work closely with your security team to make sure you
 comply with all standard security policies. Discuss the following Mesh
 requirements in advance with the appropriate Security owners.
 
-### Endoints and firewall ports for experiences in Teams
+### Endpoints and firewall ports for experiences in Teams
 
 |   | Immersive spaces in Teams | Avatars in Teams  | 
 |---|---|---|
@@ -214,7 +214,7 @@ requirements in advance with the appropriate Security owners.
 
 To learn more, see [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces) and [Set up avatars in Microsoft Teams](/microsoftteams/meeting-avatars).
 
-### Endoints and firewall ports for immersive spaces in Mesh (Mesh app)
+### Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)
 
 |   | Single room event in the Mesh app | Multi room event in the Mesh app  | 
 |---|---|---|
