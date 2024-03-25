@@ -11,6 +11,14 @@ keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 
 # Active known issues - Mesh toolkit
 
+## Version 5.2402.0
+
+* On public toolkit controllables there was a "Name" property that was not correctly being resolved to the internal field of "Display Name" (it was being mitigated by using the GameObject name directly). This has been fixed in 24.3, however, it will require setting the property on the new DisplayName field on the controllable and reupload with the new Toolkit. (42638)
+
+* The **Align Field | Set Enabled** and **Align Field | Get Enabled** visual script nodes are directly available for use again.
+
+    Workaround: **Use Behaviour | Set Enabled** or **Behaviour | Get Enabled** instead.
+
 ## Version 5.2315.0
 
 * The embedded videos show as black on Quest 2. (24096)
