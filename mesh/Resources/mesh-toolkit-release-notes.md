@@ -25,12 +25,12 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2315.0 | 2024-2-02     |
-| Mesh toolkit (preview)     | 5.2401.0 | 2024-2-16     |
-| Mesh on PC/Quest           | 5.2401.0 | 2024-2-20     |
-| Mesh on PC/Quest (Preview) | 5.2402.0 | 2024-2-20     |
+| Mesh toolkit               | 5.2402.X | 2024-3-18     |
+| Mesh toolkit (preview)     | 5.2403.X | 2024-3-12     |
+| Mesh on PC/Quest           | 5.2401.X | 2024-2-20     |
+| Mesh on PC/Quest (Preview) | 5.2402.X | 2024-2-20     |
 
-## Mesh toolkit 5.2402.0 (Preview)
+## Mesh toolkit 5.2403.X
 
 >[!Caution]
 >This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
@@ -39,11 +39,39 @@ These are the offerings and packages currently available. There may be slight di
 
 ### What's new
 
+#### Mesh Toolkit uploader
+
+* The Mesh Toolkit now requires the use of Unity Version 2022.3.15f1. This is a minor upgrade from the previous version (2022.3.7f1), so projects should upgrade without problems.
+
+* If there is a validation error during creation operation, user won't see a message dialog anymore. Failure will be shown in result dialog and more details will be presented in the logs.
+
+* Fixed a bug where opening ocv after sign in caused unity to crash.
+
+* Handle errors when failing to save the Mesh Toolkit configuration to disk.
+
+* Improved reporting of the states of the Mesh Uploader Extensions in the results dialog.
+
+## Mesh toolkit 5.2402.X
+
+### What's new
+
+#### Mesh Toolkit uploader
+
+* The ContentVersion has been incremented to 1.25.0: Newly published content will only be visible in recent MeshBrowsers.
+
+* Improved handling and reporting of failures during Environment creation.
+
+* Add a prompt to open the Mesh Portal if we failed to find any collections for the user.
+
+* Improved message when cancelling the dialog to select a new thumbnail folder.
+
 #### Mesh 201 Tutorial
 
 * Mesh 201 is released for the Mesh Toolkit version 5.2402.0 (Preview). In this tutorial, you build on that knowledge and learn how to use WebSlates to display web content in your experience. The tutorial includes an interactive globe; when a person in your experience clicks on the globe, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate.
 
 #### Visual scripting
+
+* Mesh-injected nodes are no longer invisible in the Emulator at runtime, and no longer fill the console with repeated "null texture" warnings. (44056)
 
 * Visual scripts are no longer completely disabled if the environment contains a ScriptMachine with a broken ("Missing") or unassigned ("None") asset graph reference. (36795)
 
