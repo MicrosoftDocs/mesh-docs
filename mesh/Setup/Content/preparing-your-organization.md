@@ -62,11 +62,9 @@ You will need access to several administration tools:
 > [!TIP]
 > There are some setup tasks that may require cooperation from individuals
 > or departments outside of the individual or team that will be deploying
-> and running the Mesh preview, for example Licensing, Security, and
+> and running Mesh, for example Licensing, Security, and
 > Endpoint Management. Other stakeholders like Help Desk and Human
 > Resources may also need to be consulted.
-
-To participate in the Mesh public preview, you must agree to the terms of use and privacy statements. You should be in contact with your legal and privacy teams to review those terms before accepting them.
 
 ## Verify your licenses and policies
 
@@ -113,7 +111,7 @@ people outside your production tenant, you might want to set up a separate tenan
 
 If you expect to use immersive spaces in Teams for users in
 your production version of Teams, you will definitely want to provision
-your production tenant for Mesh Public Preview. While you can create other tenants
+your production tenant for Mesh. While you can create other tenants
 for testing, people who use Teams throughout the day are highly unlikely
 to want to log out of their main Teams account to log into a different
 account in a different tenant. A separate tenant is more practical for
@@ -125,7 +123,7 @@ the users who will attend events and the developers who will upload and manage t
 
 ### Contact owners of supporting teams
 
-To complete the steps to get Mesh Public Preview running, you will need to either
+To complete the steps to get Mesh running, you will need to either
 have various rights and permissions or be in contact with people in your
 organization who can grant the rights and permissions you will need.
 Depending on your company structure and policies, this process can be
@@ -205,7 +203,7 @@ implications and work closely with your security team to make sure you
 comply with all standard security policies. Discuss the following Mesh
 requirements in advance with the appropriate Security owners.
 
-### Endoints and firewall ports for experiences in Teams
+### Endpoints and firewall ports for experiences in Teams
 
 |   | Immersive spaces in Teams | Avatars in Teams  | 
 |---|---|---|
@@ -214,7 +212,7 @@ requirements in advance with the appropriate Security owners.
 
 To learn more, see [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces) and [Set up avatars in Microsoft Teams](/microsoftteams/meeting-avatars).
 
-### Endoints and firewall ports for immersive spaces in Mesh (Mesh app)
+### Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)
 
 |   | Single room event in the Mesh app | Multi room event in the Mesh app  | 
 |---|---|---|
@@ -225,7 +223,7 @@ To learn more about single room vs. multi room events, see [Create an event in M
 
 ### Conditional Access & Quest
 
-Conditional access is an important part of a zero-trust approach to helping secure your network and resources. As part of zero trust, many companies use conditional access features policies with Azure Active Directory and Microsoft Intune to restrict the types of devices that are permitted to access company resources, and even the operating system version and configuration on those devices; devices that meet the defined profile are allowed in, and any other device that is not specified is denied access. Meta has released a beta GA version MDM support for Quest that works with Intune. Each company using Mesh in pre-release will have to work with their security and endpoint management teams to decide if a policy can be constructed that is acceptable to the company's risk profile while still permitting access to Quest devices.
+Conditional access is an important part of a zero-trust approach to helping secure your network and resources. As part of zero trust, many companies use conditional access features policies with Azure Active Directory and Microsoft Intune to restrict the types of devices that are permitted to access company resources, and even the operating system version and configuration on those devices; devices that meet the defined profile are allowed in, and any other device that is not specified is denied access. Meta has released a beta GA version MDM support for Quest that works with Intune. Each company using Mesh in pre-release will have to work with their security and endpoint management teams to decide if a policy can be constructed that is acceptable to the company's risk profile while still permitting access to Quest devices. 
 
 For more information about Conditional Access, see:
 
