@@ -85,6 +85,7 @@ Reset_Button_Marshmallow_Varient
 | Activity | GameObjects     | Script Machine Name | Graph Name |
 |----------|-----------------|---------------------|------------|
 | Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
+***
 <br/>
 
 **Mesh Interactable Body: Is Selected**
