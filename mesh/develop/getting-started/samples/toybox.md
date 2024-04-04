@@ -84,7 +84,7 @@ Reset_Button_Marshmallow_Varient
 ***
 | Activity | GameObjects     | Script Machine Name | Graph Name |  
 |----------|-----------------|---------------------|------------|  
-| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
+| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |  
 ***
 <br/>
 
@@ -94,21 +94,21 @@ Reset_Button_Marshmallow_Varient
 |----------|-----------------|---------------------|------------|  
 | Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |  
 | Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |  
-| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |
+| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |  
 <br/>
 
 **Mesh Interactable Body: IsHovered**
 ***
 | Activity | GameObjects     | Script Machine Name | Graph Name |  
 |----------|-----------------|---------------------|------------|  
-| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |
+| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |  
 <br/>
 
 **Reset Body Transforms: Reset Body Transforms Now**
 ***
 | Activity | GameObjects     | Script Machine Name | Graph Name |  
 |----------|-----------------|---------------------|------------|  
-| Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |
+| Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |  
 <br/>
 
 **Spatial Audio Properties: Create**
@@ -117,7 +117,7 @@ Reset_Button_Marshmallow_Varient
 |----------|-----------------|---------------------|------------|  
 | Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
 | Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | 
-SpheresSculptureSphere_Simple |
+SpheresSculptureSphere_Simple |  
 <br/>
 
 **Microsoft Mesh: Play Mesh Audio**
@@ -126,14 +126,14 @@ SpheresSculptureSphere_Simple |
 |----------|-----------------|---------------------|------------|  
 | Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |  
 | Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | 
-SpheresSculptureSphere_Simple |
+SpheresSculptureSphere_Simple |  
 <br/>
 
 **Microsoft Mesh: Random Sound**
 ***
 | Activity | GameObjects     | Script Machine Name | Graph Name |
 |----------|-----------------|---------------------|------------|  
-| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
+| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |  
 <br/>
 
 ## Warning about sample load time
