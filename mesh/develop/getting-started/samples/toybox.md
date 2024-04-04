@@ -32,7 +32,7 @@ The [Samples Overview](samples-overview.md) page contains instructions on how to
 
 ## Understanding the scene interactables
 
-In order to understand the interactions between objects in the scene, we recommend that you review the [Grab, hold and throw with Interactables](../../enhance-your-environment/avatar-and-object-interactions/interactables.md) article and then take a look at the objects in the Toybox sample that are made interactable by containing the Mesh Interactable Setup or Mesh Interactable Body components. Examining the visual scripts attached to certain objects will give you further insights. The scripts contain a mixture of standard Unity nodes and nodes that are specially made for Mesh. To learn more about the Mesh nodes, see the [Visual Scripting Node Reference](). There are a lot of GameObjects in the Toybox sample; the lists and tables below should help you find the locations of interactable objects and the Mesh nodes in the scripts.
+In order to understand the interactions between objects in the scene, we recommend that you review the [Grab, hold and throw with Interactables](../../enhance-your-environment/avatar-and-object-interactions/interactables.md) article and then take a look at the objects in the Toybox sample that are made interactable by containing the Mesh Interactable Setup or Mesh Interactable Body components. Examining the visual scripts attached to certain objects will give you further insights. The scripts contain a mixture of standard Unity nodes and nodes that are specially made for Mesh. To learn more about the Mesh nodes, see the [Visual Scripting Node Reference](../../script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md). There are a lot of GameObjects in the Toybox sample; the lists and tables below should make is easier for you to find the interactable objects and the Mesh nodes in the scripts.
 
 **The The Mesh Interactable Setup component is attached to these objects:**
 
@@ -56,12 +56,21 @@ Reset_Button_Marshmallow_Varient
 
 | GameObject | Component |
 |------------|-----------|
-| Gravity | Orbital Gravity Field |
-| ContainmentField | Containment Field |
-| Buoyancy | Buoyancy Field |
+| Gravity | [Orbital Gravity Field](../../enhance-your-environment/physics/mesh-physics-programmers-guide.md#orbital-gravity-field) |
+| ContainmentField | [Containment Field](../../enhance-your-environment/physics/mesh-physics-programmers-guide.md#containment-field) |
+| Buoyancy | [Buoyancy Field](../../enhance-your-environment/physics/mesh-physics-programmers-guide.md#buoyancy-field) |
 | BeanBags, Marshmallow Holder, Marshmallow_Pos | Reset Body Transform |
 
 ### Mesh nodes used in script graphs
+
+**[Microsoft Mesh: On State Changed](../../script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md#on-state-changed**
+***
+| Activity | GameObjects     | Script Machine Name | Graph Name |
+|----------|-----------------|---------------------|------------|
+| Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |
+| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
+| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |
+<br/>
 
 **Mesh Interactable Body: Is Equipped**
 ***
@@ -69,6 +78,36 @@ Reset_Button_Marshmallow_Varient
 |----------|-----------------|---------------------|------------|
 | Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
 ***
+<br/>
+
+**Mesh Interactable Body: Is Aiming**
+***
+| Activity | GameObjects     | Script Machine Name | Graph Name |
+|----------|-----------------|---------------------|------------|
+| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
+<br/>
+
+**Mesh Interactable Body: Is Selected**
+***
+| Activity | GameObjects     | Script Machine Name | Graph Name |
+|----------|-----------------|---------------------|------------|
+| Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |
+| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
+| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |
+<br/>
+
+**Mesh Interactable Body: IsHovered**
+***
+| Activity | GameObjects     | Script Machine Name | Graph Name |
+|----------|-----------------|---------------------|------------|
+| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |
+<br/>
+
+**Reset Body Transforms: Reset Body Transforms Now**
+***
+| Activity | GameObjects     | Script Machine Name | Graph Name |
+|----------|-----------------|---------------------|------------|
+| Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |
 <br/>
 
 **Spatial Audio Properties: Create**
@@ -89,32 +128,6 @@ SpheresSculptureSphere_Simple |
 SpheresSculptureSphere_Simple |
 <br/>
 
-**Mesh Interactable Body: Is Aiming**
-***
-| Activity | GameObjects     | Script Machine Name | Graph Name |
-|----------|-----------------|---------------------|------------|
-| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
-<br/>
-
-**Mesh Interactable Body: Is Selected**
-***
-| Activity | GameObjects     | Script Machine Name | Graph Name |
-|----------|-----------------|---------------------|------------|
-| Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |
-| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
-| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |
-<br/>
-
-**Microsoft Mesh: On State Changed**
-***
-| Activity | GameObjects     | Script Machine Name | Graph Name |
-|----------|-----------------|---------------------|------------|
-| Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |
-| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
-| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |
-<br/>
-
-
 **Microsoft Mesh: Random Sound**
 ***
 | Activity | GameObjects     | Script Machine Name | Graph Name |
@@ -122,25 +135,9 @@ SpheresSculptureSphere_Simple |
 | Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
 <br/>
 
-**Mesh Interactable Body: IsHovered**
-***
-| Activity | GameObjects     | Script Machine Name | Graph Name |
-|----------|-----------------|---------------------|------------|
-| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |
-<br/>
-
-**Reset Body Transforms: Reset Body Transforms Now**
-***
-| Activity | GameObjects     | Script Machine Name | Graph Name |
-|----------|-----------------|---------------------|------------|
-| Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |
-<br/>
-
 ## Warning about sample load time
 
 The sample could take 15 minutes or slightly longer to load into Unity due to large asset sizes. If you need to, change your Sleep mode setting so that the computer doesn't go to sleep while the project is loading. If this happens, it could cause the project to not load properly.
-
-
 
 ## Contributions
 
