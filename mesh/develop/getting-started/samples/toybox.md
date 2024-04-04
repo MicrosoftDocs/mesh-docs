@@ -3,10 +3,10 @@ title: Mesh toolkit Toybox sample
 description: Learn about the Mesh toolkit Toybox sample.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 2/2/2024
+ms.date: 4/3/2024
 ms.topic: overview
 ms.service: mesh
-keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, toybox
+keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, toybox, interactables
 ---
 
 # Microsoft Mesh toolkit Sample: Toybox
@@ -16,7 +16,13 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics
 *Toybox* is a Mesh sample that empowers creators to build interactive Mesh experiences and games. The sample provides a number of activities that use mixtures of assets, shaders, visual scripting, animations, VFX, and SoundFX to drive social engagment across Mesh experiences:
   
 * **Bean Bag Toss** 
+
+:::image type="content" source="../../../media/samples/009-beanbag-1.gif" alt-text="GIF that shows an event attendee playing the bean bag toss game.":::
+
 * **Fire Pit & Roasting Marshmallows** 
+
+:::image type="content" source="../../../media/samples/010-marshmallow-2.gif" alt-text="GIF that shows an event attendee roasting a marshmallow.":::
+
 * **Ice Breaker**
 * **Sound Orbs** 
 * **Radio & Boombox** 
@@ -24,9 +30,117 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics
 
 The [Samples Overview](samples-overview.md) page contains instructions on how to download the Mesh toolkit which contains this sample.
 
+## Understanding the scene interactables
+
+In order to understand the interactions between objects in the scene, we recommend that you review the [Grab, hold and throw with Interactables](../../enhance-your-environment/avatar-and-object-interactions/interactables.md) article and then take a look at the objects in the Toybox sample that are made interactable by containing the Mesh Interactable Setup or Mesh Interactable Body components. Examining the visual scripts attached to certain objects will give you further insights. The scripts contain a mixture of standard Unity nodes and nodes that are specially made for Mesh. To learn more about the Mesh nodes, see the [Visual Scripting Node Reference](). There are a lot of GameObjects in the Toybox sample; the lists and tables below should help you find the locations of interactable objects and the Mesh nodes in the scripts.
+
+**The The Mesh Interactable Setup component is attached to these objects:**
+
+beanbag_red  
+beanbag_blue  
+toybox_beanbag_reset_button_variant  
+InteractableSphere  
+Planet_Mars  
+Planet_Earth  
+Planet_Jupiter  
+Reset_Button_Marshmallow_Varient
+
+**The Mesh Interactable Body component is attached to these objects:**
+
+beanbag_red  
+beanbag_blue  
+toybox_beanbag_reset_button_variant  
+Reset_Button_Marshmallow_Varient  
+
+**GameObjects with Mesh Physics Components**
+
+| GameObject | Component |
+|------------|-----------|
+| Gravity | Orbital Gravity Field |
+| ContainmentField | Containment Field |
+| Buoyancy | Buoyancy Field |
+| BeanBags, Marshmallow Holder, Marshmallow_Pos | Reset Body Transform |
+
+### Mesh nodes used in script graphs
+
+**Mesh Interactable Body: Is Equipped**
+***
+| Activity | GameObjects     | Script Machine Name | Graph Name |
+|----------|-----------------|---------------------|------------|
+| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
+***
+<br/>
+
+**Spatial Audio Properties: Create**
+***
+| Activity | GameObjects     | Script Machine Name | Graph Name |
+|----------|-----------------|---------------------|------------|
+| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
+| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | 
+SpheresSculptureSphere_Simple |
+<br/>
+
+**Microsoft Mesh: Play Mesh Audio**
+***
+| Activity | GameObjects     | Script Machine Name | Graph Name |
+|----------|-----------------|---------------------|------------|
+| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
+| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | 
+SpheresSculptureSphere_Simple |
+<br/>
+
+**Mesh Interactable Body: Is Aiming**
+***
+| Activity | GameObjects     | Script Machine Name | Graph Name |
+|----------|-----------------|---------------------|------------|
+| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
+<br/>
+
+**Mesh Interactable Body: Is Selected**
+***
+| Activity | GameObjects     | Script Machine Name | Graph Name |
+|----------|-----------------|---------------------|------------|
+| Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |
+| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
+| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |
+<br/>
+
+**Microsoft Mesh: On State Changed**
+***
+| Activity | GameObjects     | Script Machine Name | Graph Name |
+|----------|-----------------|---------------------|------------|
+| Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |
+| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
+| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |
+<br/>
+
+
+**Microsoft Mesh: Random Sound**
+***
+| Activity | GameObjects     | Script Machine Name | Graph Name |
+|----------|-----------------|---------------------|------------|
+| Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
+<br/>
+
+**Mesh Interactable Body: IsHovered**
+***
+| Activity | GameObjects     | Script Machine Name | Graph Name |
+|----------|-----------------|---------------------|------------|
+| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |
+<br/>
+
+**Reset Body Transforms: Reset Body Transforms Now**
+***
+| Activity | GameObjects     | Script Machine Name | Graph Name |
+|----------|-----------------|---------------------|------------|
+| Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |
+<br/>
+
 ## Warning about sample load time
 
 The sample could take 15 minutes or slightly longer to load into Unity due to large asset sizes. If you need to, change your Sleep mode setting so that the computer doesn't go to sleep while the project is loading. If this happens, it could cause the project to not load properly.
+
+
 
 ## Contributions
 
