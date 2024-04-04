@@ -34,7 +34,7 @@ The [Samples Overview](samples-overview.md) page contains instructions on how to
 
 In order to understand the interactions between objects in the scene, we recommend that you review the [Grab, hold and throw with Interactables](../../enhance-your-environment/avatar-and-object-interactions/interactables.md) article and then take a look at the objects in the Toybox sample that are made interactable by containing the Mesh Interactable Setup or Mesh Interactable Body components. Examining the visual scripts attached to certain objects will give you further insights. The scripts contain a mixture of standard Unity nodes and nodes that are specially made for Mesh. To learn more about the Mesh nodes, see the [Visual Scripting Node Reference](../../script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md). There are a lot of GameObjects in the Toybox sample; the lists and tables below should make is easier for you to find the interactable objects and the Mesh nodes in the scripts.
 
-**The The Mesh Interactable Setup component is attached to these objects:**
+**The Mesh Interactable Setup component is attached to these objects:**
 
 beanbag_red  
 beanbag_blue  
@@ -63,7 +63,7 @@ Reset_Button_Marshmallow_Varient
 
 ### Mesh nodes used in script graphs
 
-**[Microsoft Mesh: On State Changed](../../script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md#on-state-changed**
+**[Microsoft Mesh: On State Changed](../../script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md#on-state-changed)**
 ***
 | Activity | GameObjects     | Script Machine Name | Graph Name |
 |----------|-----------------|---------------------|------------|
