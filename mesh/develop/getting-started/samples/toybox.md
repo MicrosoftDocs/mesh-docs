@@ -17,11 +17,11 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics
   
 * **Bean Bag Toss** 
 
-:::image type="content" source="../../../media/samples/009-beanbag-1.gif" alt-text="GIF that shows an event attendee playing the bean bag toss game.":::
+    :::image type="content" source="../../../media/samples/009-beanbag-1.gif" alt-text="GIF that shows an event attendee playing the bean bag toss game.":::
 
 * **Fire Pit & Roasting Marshmallows** 
 
-:::image type="content" source="../../../media/samples/010-marshmallow-2.gif" alt-text="GIF that shows an event attendee roasting a marshmallow.":::
+    :::image type="content" source="../../../media/samples/010-marshmallow-2.gif" alt-text="GIF that shows an event attendee roasting a marshmallow.":::
 
 * **Ice Breaker**
 * **Sound Orbs** 
