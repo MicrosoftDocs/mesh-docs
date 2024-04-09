@@ -53,7 +53,7 @@ This is the subscription ID for your chosen resource group.
 
 ![_________________________](../../../media/mesh-scripting/setup-in-uploader/001-subscription-id.png)
 
-**IMPORTANT**: The configuration of a subscription and resource group for the Mesh World that you'll publish your Environment to may or may not be the same as the configuration of a subscription and resource group for MeshApp.
+**IMPORTANT**: The configuration of a subscription and resource group for the Mesh Collection that you'll publish your Environment to may or may not be the same as the configuration of a subscription and resource group for MeshApp.
 
 ### Supported regions and abbreviations
 
