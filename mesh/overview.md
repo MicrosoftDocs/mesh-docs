@@ -57,8 +57,6 @@ Use Microsoft Mesh for medium-to-large events with up to 200 people. Create cust
 
 Deliver dazzling immersive experiences that can be experienced across on PC or Meta headsets. You can start with ready-to-use environments or develop your own custom environments using Unity and the Mesh toolkit. You can then use no-code customization to enhance your events with images, videos, or screen shares.```
 
-See [how to set up custom immersive spaces in Microsoft Mesh](Setup/Content/setup-m365-mesh.md).
-
 ### What can you do in custom immersive experiences?
 
 - **Create and customize events that tell stories** by adding objects that can be used in your events with no-code in-experience tools like screen shares, images, and videos.
@@ -83,9 +81,7 @@ See [how to set up custom immersive spaces in Microsoft Mesh](Setup/Content/setu
 
 ## Interested in adopting Microsoft Mesh?
 
-For more detail on adopting Microsoft Mesh and gathering materials for deploying Mesh to your organization, see the adoption page for Microsoft Mesh.
-
-[Read more about adopting Microsoft Mesh](https://adoption.microsoft.com/en-us/microsoft-mesh/)
+For more detail on adopting Microsoft Mesh and gathering materials for deploying Mesh to your organization, see the [adoption page for Microsoft Mesh](https://adoption.microsoft.com/en-us/microsoft-mesh/).
 
 ## Get started
 
