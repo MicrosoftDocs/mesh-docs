@@ -89,7 +89,7 @@ For more detail on adopting Microsoft Mesh and gathering materials for deploying
 ## Get started
 
 > [!div class="nextstepaction"]
-> [Start a trial for Microsoft Mesh](Setup/Content/it-admin-led-trials.md)
+> [Start a trial pilot program to deploy Microsoft Mesh](Setup/Content/it-admin-led-trials.md)
 
 > [!div class="nextstepaction"]
 > [Set up custom immersive spaces in Microsoft Mesh](Setup/Content/setup-m365-mesh.md)
