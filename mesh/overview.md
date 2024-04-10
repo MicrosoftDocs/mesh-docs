@@ -31,30 +31,31 @@ Immersive experiences have unique attributes, including spatial interaction, co-
 
 |**[Immersive spaces in Teams](#immersive-spaces-in-microsoft-teams)** |[**Custom immersive experiences in Mesh**](#what-can-you-do-in-custom-immersive-experiences)  |
 |:---------|:---------|
-| For small meetings, *up-to 16 people* can quickly join an immersive space directly in a Teams meeting. <br><br> Host casual team bonding get-togethers, weekly scrum or standup with your team, brainstorming sessions with break-out groups. <br><br> | For medium-to-large events, *up-to 200* people can join from the Mesh application after being [set up in your organization](Setup/Content/preparing-your-organization.md). <br><br> Host large immersive employee experiences such as all-hands, town halls, and new-hire onboarding with Mesh <br><br> |
-|**Key benefits:** <br><br> **Lower effort** to get set up and for users to get familiar with immersive experiences. <br><br>**[Integrated into Microsoft Teams](https://support.microsoft.com/en-us/office/get-started-with-immersive-spaces-in-microsoft-teams-4a6182f8-0f43-4c24-bb66-ef229fa221d8)** – a tool you use every day – bringing co-presence to hybrid or remote teams. <br><br> **[Provides Icebreakers and activities](https://support.microsoft.com/en-us/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games)**, ready for you to enjoy and share with your teams. | **Key benefits:** <br><br> **[Create custom experiences](develop/development-overview.md#what-you-can-do-with-mesh)** using the Mesh Toolkit, leveraging Physics, scripting, and web content.  <br><br> **[Interact with engaging and dynamic](user-guide/join-an-event.md)** environments synchronized across all participants simultaneously. <br><br> **[Customize and create events that tell stories](events-guide/customize-event.md)** by adding objects that can be used in your events.  <br><br>   |
+| For small meetings, *up-to 16 people* can quickly join an immersive space directly in a Teams meeting. <br><br> Host casual team bonding get-togethers, weekly scrums or standups with your team, or brainstorming sessions with breakout groups. <br><br> | For medium-to-large events, *up-to 200* people can join from the Mesh application after Mesh is [set up for your organization](Setup/Content/preparing-your-organization.md). <br><br> Host large immersive employee experiences such as all-hands, town halls, and new-hire onboarding with Mesh <br><br> |
+|**Key benefits:** <br><br> **Lower effort** to set up for and have users get familiar with immersive experiences. <br><br>**[Integrated into Microsoft Teams](https://support.microsoft.com/en-us/office/get-started-with-immersive-spaces-in-microsoft-teams-4a6182f8-0f43-4c24-bb66-ef229fa221d8)** – a tool you use every day – bringing co-presence to hybrid or remote teams. <br><br> **[Provides Icebreakers and activities](https://support.microsoft.com/en-us/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games)**, ready for you to enjoy and share with your teams. | **Key benefits:** <br><br> **[Create custom experiences](develop/development-overview.md#what-you-can-do-with-mesh)** using the Mesh toolkit, leveraging physics, scripting, and web content.  <br><br> **[Interact with engaging and dynamic](user-guide/join-an-event.md)** environments synchronized across all attendees simultaneously. <br><br> **[Customize and create events that tell stories](events-guide/customize-event.md)** by adding objects that can be used in your events.  <br><br>   |
 
 ## Immersive spaces in Microsoft Teams
 
 :::image type="content" source="media/welcome-to-mesh/04_ImmersiveSpaces_Splice.gif" alt-text="GIF of selecting view then immersive space in teams":::
 
-Use [immersive spaces in Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams) for small meetings up-to 16 coworkers. Hop into stunning pre-made virtual environments, offering icebreakers and activities with two clicks of a button, right from their Teams meeting.
+Use [immersive spaces in Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams) for small meetings of up to 16 coworkers. Hop into stunning pre-made virtual environments, offering icebreakers and activities with two clicks of a button, right from a Teams meeting.
 
 Getting started is easy! From the **View menu** in a Teams meeting, select the **Immersive space (3D)** option. With just few a clicks, transform your two-dimensional (2D) meeting into a 3D immersive experience.
 
 ### What can you do in immersive spaces in Teams?
 
-- **Connect with colleagues in new way** right from your pre-existing Teams meeting. Experience the benefits of spatial audio and 3D interaction.
+- **Connect with colleagues in new ways** right from your pre-existing Teams meeting. Experience the benefits of spatial audio and 3D interaction.
 
 - **Play as a team with ready-to-use icebreakers and activities** like prompt bubbles, marshmallow roasting, and bean bag toss.
 
-- **Join right from Microsoft Teams** – a tool you use every day – bringing co-presence to hybrid or remote teams.
+- **Join right from Microsoft Teams**&#8212;
+a tool you use every day&#8212;bringing co-presence to hybrid or remote teams.
 
 ## Custom immersive experiences in Mesh
 
-Use Microsoft Mesh for medium-to-large events with up-to 200 people to create custom experiences that are tailored to your specific business needs such as employee events, training, guided tours, or internal product showcases.
+Use Microsoft Mesh for medium-to-large events with up to 200 people. Create custom experiences that are tailored to your specific business needs, such as employee events, training, guided tours, or internal product showcases.
 
-Start with ready-to-use environments or develop your own custom environments with the Mesh Toolkit. Then customize your events with images, videos, or screen shares with in-experience no-code customization to deliver dazzling immersive experiences that can be experienced across devices, on PC or Meta headsets.
+Deliver dazzling immersive experiences that can be experienced across on PC or Meta headsets. You can start with ready-to-use environments or develop your own custom environments using Unity and the Mesh toolkit. You can then use no-code customization to enhance your events with images, videos, or screen shares.```
 
 See [how to set up custom immersive spaces in Microsoft Mesh](Setup/Content/setup-m365-mesh.md).
 
@@ -66,23 +67,23 @@ See [how to set up custom immersive spaces in Microsoft Mesh](Setup/Content/setu
 
 - **Use Mesh on the web** to create or manage events, create event templates to be reused in the future, and manage all your uploaded environments. See [how collections are used to manage your uploaded environments](setup/Content/manage-mesh-on-web.md).
 
-- **Integrate with M365** using a secure immersive app that is performant and highly customizable
+- **Integrate with M365** using a secure immersive app that's performant and highly customizable.
 
 #### Develop custom immersive experiences in Mesh
 
-- **Bring your own or create 3D models** to use in an interactable and navigable environment.
+- **Import 3D models** that will be used in an interactable and navigable environment.
 
-- **[Rapidly create compelling 3D experiences](develop/development-overview.md#what-you-can-do-with-mesh)** using the Mesh Toolkit. Leverage the power of Unity and start fast with out-of-the-box capabilities like physics, scripting, and web content sharing provided by the Mesh toolkit to [create custom immersive experiences that are tailored to your unique needs](develop/development-overview.md).
+- **[Rapidly create compelling 3D experiences](develop/development-overview.md#what-you-can-do-with-mesh)** using Unity and the Mesh toolkit. Start fast with out-of-the-box capabilities like physics, scripting, and web content sharing and [create custom immersive experiences that are tailored to your unique needs](develop/development-overview.md).
 
     :::image type="content" source="media/get-started-developing-mesh/image040-unity-overview-hero.png#lightbox" alt-text="Overview image of Unity development environment for Mesh":::
 
-    Mesh does the heavy lifting to enable multi-user engagement in 3D environments, managing the customizable avatar system, Spatial Audio, multi-user synchronization and provides orchestration tools for delivering dynamic meetings and events. This frees you to enrich your business solutions and experiences with engaging environments, interactive content, and business data– all with functionality enabled through the Mesh toolkit.
+    Mesh does the heavy lifting to enable multi-user engagement in 3D environments, managing the customizable avatar system, Spatial Audio, and multi-user synchronization, and provides orchestration tools for delivering dynamic meetings and events. This frees you to enrich your business solutions and experiences with engaging environments, interactive content, and business data&#8212;all with functionality enabled through the Mesh toolkit.
 
 - **Add complex logic to scenes and integrate live backend data** from business or public sources with cloud scripting, harnessing the power and reliability of the .NET infrastructure.
 
 ## Interested in adopting Microsoft Mesh?
 
-For more detail on adopting Microsoft Mesh and gathering materials for deploying Mesh to your organization, please look to the adoption.microsoft page for Microsoft Mesh.
+For more detail on adopting Microsoft Mesh and gathering materials for deploying Mesh to your organization, see the adoption page for Microsoft Mesh.
 
 [Read more about adopting Microsoft Mesh](https://adoption.microsoft.com/en-us/microsoft-mesh/)
 
