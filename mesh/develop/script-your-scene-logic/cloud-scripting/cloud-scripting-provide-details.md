@@ -45,7 +45,11 @@ At this point you should have a resource group and Subscription ID handy.
 
 ### Settings in the Update Environment tab
 
-After you click the **Create Environment** button in the **Create Environment** tab, you're taken to the **Update Environment** tab, where you select an environment and Scene to build and publish. If the Scene has a Mesh Cloud Scripting component, the deployment configurations are also shown here.
+After you click the **Create Environment** button in the **Create Environment** tab, you're taken to the **Update Environment** tab, where you select an environment and Scene to build and publish. If the Scene has a Mesh Cloud Scripting component, the deployment configurations are also shown here. 
+
+**To change any of the settings**:  
+1. Click the **Edit Settings** button.
+2. When you're finished with your changes, click **Save Settings**.
 
 If you navigated to this article from the *Build and publish your environment* article, you can now [return to that article](../../make-your-environment-available/build-and-publish-your-environment.md#create-your-environment). **Note**: When you build and publish, the Mesh Cloud Scripting cloud infrastructure is deployed to your Azure Subscription. To learn more about the specific apps that are deployed, see [Resources deployed](./cloud-scripting-setup-infrastructure.md#resources-deployed).
 
