@@ -17,7 +17,7 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 We're reimagining the way employees come together with [Microsoft Mesh](https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh), powering several immersive experiences across the devices you use every day.
 
-Microsoft Mesh enables your distributed workforce to connect in 3D immersive experiences using Microsoft Teams, a PC, or Meta headset, helping virtual meetings and events feel more like face-to-face connections.
+Microsoft Mesh enables your distributed workforce to connect in 3D immersive experiences using Microsoft Teams, a PC, or a Meta headset, helping you feel that virtual meetings and events are more like face-to-face connections.
 
 ### Why immersive?
 
