@@ -23,7 +23,7 @@ Microsoft Mesh enables your distributed workforce to connect in 3D immersive exp
 
 Immersive experiences have unique attributes, including spatial interaction, co-presence, and immersion, that create a perception of being physically together in a 3D digital space. Digital engagement is evolving from audio to video and now to spatial interaction.
 
-**Spatial awareness** through directionality and distance enables multiple small group discussions in the same place, adding familiar human elements to digital connections. Spending time in the same 3D environment also creates a powerful sense of togetherness, or co-presence, even without actively speaking.
+**Spatial awareness** through directionality and distance enables multiple small group discussions in the same place, adding familiar human elements to digital connections. Spending time with others in the same 3D environment also creates a powerful sense of togetherness, or co-presence, even when you're not actively speaking.
 
 **Co-presence** can lead to serendipitous moments of conversation or even just the deepened connection of a shared experience. Focus on what matters; the people, conversations, and space you occupy should be our priority.
 
