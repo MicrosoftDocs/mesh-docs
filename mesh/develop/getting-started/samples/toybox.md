@@ -3,7 +3,7 @@ title: Mesh toolkit Toybox sample
 description: Learn about the Mesh toolkit Toybox sample.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 4/3/2024
+ms.date: 4/10/2024
 ms.topic: overview
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, toybox, interactables
@@ -30,11 +30,11 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics
 
 The [Samples Overview](samples-overview.md) page contains instructions on how to download the Mesh toolkit which contains this sample.
 
-## Understanding the scene interactables
+## Understanding the scene Interactables
 
 In order to understand the interactions between objects in the scene, we recommend that you review the [Grab, hold and throw with Interactables](../../enhance-your-environment/avatar-and-object-interactions/interactables.md) article and then take a look at the objects in the Toybox sample that are made interactable by containing the Mesh Interactable Setup or Mesh Interactable Body components. Examining the visual scripts attached to certain objects will give you further insights. The scripts contain a mixture of standard Unity nodes and nodes that are specially made for Mesh. To learn more about the Mesh nodes, see the [Visual Scripting Node Reference](../../script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md). There are a lot of GameObjects in the Toybox sample; the lists and tables below should make is easier for you to find the interactable objects and the Mesh nodes in the scripts.
 
-**The Mesh Interactable Setup component is attached to these objects:**
+**Some of the objects the Mesh Interactable Setup component is attached to:**
 
 beanbag_red  
 beanbag_blue  
@@ -44,15 +44,17 @@ Planet_Mars
 Planet_Earth  
 Planet_Jupiter  
 Reset_Button_Marshmallow_Varient
+MarshmallowStick
 
-**The Mesh Interactable Body component is attached to these objects:**
+
+**Some of the objects the Mesh Interactable Body component is attached to:**
 
 beanbag_red  
 beanbag_blue  
 toybox_beanbag_reset_button_variant  
 Reset_Button_Marshmallow_Varient  
 
-**GameObjects with Mesh Physics Components**
+**Some of the objects with Mesh Physics Components**
 
 | GameObject | Component |
 |------------|-----------|
@@ -60,6 +62,7 @@ Reset_Button_Marshmallow_Varient
 | ContainmentField | [Containment Field](../../enhance-your-environment/physics/mesh-physics-programmers-guide.md#containment-field) |
 | Buoyancy | [Buoyancy Field](../../enhance-your-environment/physics/mesh-physics-programmers-guide.md#buoyancy-field) |
 | BeanBags, Marshmallow Holder, Marshmallow_Pos | Reset Body Transform |
+| Marshmallow_Pos | Reset Body Transforms |
 
 ### Mesh nodes used in script graphs
 
@@ -68,9 +71,11 @@ Reset_Button_Marshmallow_Varient
 
 | Activity | GameObjects     | Script Machine Name | Graph Name |  
 |----------|-----------------|---------------------|------------|  
-| Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |
+| Campfire | Reset_Button_Marshmallow_Varient | ResetButton | ResetButton |
 | Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |
-| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |
+| Sphere Sculpture | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |
+| IceBreaker | IceBreaker | IceBreaker | IceBreaker |  
+
 
 <br/>
 
@@ -99,18 +104,31 @@ Reset_Button_Marshmallow_Varient
 
 | Activity | GameObjects     | Script Machine Name | Graph Name |  
 |----------|-----------------|---------------------|------------|  
-| Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |  
+| Campfire | Reset_Button_Marshmallow_Varient | ResetButton | ResetButton |  
 | Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |  
-| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |  
+| Sphere Sculpture | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |  
 
 <br/>
+
+**Mesh Interactable Body: Is Selected Locally**
+***
+
+| Activity | GameObjects     | Script Machine Name | Graph Name |  
+|----------|-----------------|---------------------|------------|  
+| IceBreaker | IceBreaker | IceBreaker | IceBreaker |  
+| Music Box | Radio_Pressable_Prefab | Pressable Radio | PressableRadio |
+
+<br/>
+
 
 **Mesh Interactable Body: IsHovered**
 ***
 
 | Activity | GameObjects     | Script Machine Name | Graph Name |  
 |----------|-----------------|---------------------|------------|  
-| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |  
+| Sphere Sculpture | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple | 
+| IceBreaker | IceBreaker | IceBreaker | IceBreaker |  
+
 
 <br/>
 
@@ -119,7 +137,7 @@ Reset_Button_Marshmallow_Varient
 
 | Activity | GameObjects     | Script Machine Name | Graph Name |  
 |----------|-----------------|---------------------|------------|  
-| Campfire | Reset_Button-Marshmallow-Varient | ResetButton | ResetButton |  
+| Campfire | Reset_Button_Marshmallow_Varient | ResetButton | ResetButton |  
 
 <br/>
 
@@ -129,7 +147,7 @@ Reset_Button_Marshmallow_Varient
 | Activity | GameObjects     | Script Machine Name | Graph Name |  
 |----------|-----------------|---------------------|------------|  
 | Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |  
-| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |  
+| Sphere Sculpture | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |  
 
 <br/>
 
@@ -139,7 +157,7 @@ Reset_Button_Marshmallow_Varient
 | Activity | GameObjects     | Script Machine Name | Graph Name |  
 |----------|-----------------|---------------------|------------|  
 | Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |  
-| Bean Bag Toss | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |  
+| Sphere Sculpture | InteractableSphere | SpheresSculptureSphere | SpheresSculptureSphere_Simple |  
 
 <br/>
 
