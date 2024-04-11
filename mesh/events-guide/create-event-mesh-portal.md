@@ -13,8 +13,21 @@ keywords: Microsoft Mesh, Mesh on Web, M365, events, hosting, event producer, ev
 
 Use Mesh on the web to create and manage events, Mesh collections, and custom environments. Once events are made, Mesh events show up in your Outlook or Teams calendar with a direct link that people can use to join events, making inviting and joining events quicker.
 
-> [!IMPORTANT]
-> Ensure that all participants have updated their Mesh app to the most recent version to ensure that they can use the link in their calendar invite and join the event you just created!
+The overall flow of creating an event in Mesh on the web is:
+
+1. Go to [https://mesh.cloud.microsoft/](https://mesh.cloud.microsoft/).
+1. Select **Create event** in the top right.
+1. Add the **Title**, **Date/Duration**, and **Details about the event**.
+1. Choose your room settings like:
+    1. **Single room** (up to 16 people, 24-hour time limit)
+    1. **Multi-room** (up to 200 people, hosts are grouped in one room, 3-hour time limit)
+1. Invite people:
+    1. **Co-organizers** (People to help set up and run the event)
+    1. **Attendees** (People to join the event)
+1. Choose the event space:
+    1. **Choose a template** (that you or someone previously created)
+    1. **Start from scratch** (a default environment with no customizations)
+1. (Optional) Upload a event cover image (size 512x256 px)
 
 ## Events vs Templates
 
