@@ -13,6 +13,6 @@ keywords: Immersive spaces in Teams, Avatars, getting started, documentation, li
 
 #### Required Licenses
 
-Your users must have licenses for one of the following: Teams Essentials, Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5.
+Your users must have a commercial Teams license: Microsoft Teams Enterprise, Teams Essentials, or one of the following M365, O365, or Business SKUs with Teams included: Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5.
 
 Learn more about [how to set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces).
