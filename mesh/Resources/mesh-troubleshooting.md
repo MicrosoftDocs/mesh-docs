@@ -2,9 +2,9 @@
 title: Troubleshooting & FAQs - Microsoft Mesh
 description: Various help guides and FAQ answers regarding Mesh events.
 ms.service: mesh
-author: qianw211
-ms.author: qianwen
-ms.date: 2/2/2024
+author: typride
+ms.author: tmilligan
+ms.date: 04/15/2024
 ms.topic: Troubleshooting
 keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
 ---
@@ -131,7 +131,7 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 1. Double check that your network admins have allowlisted the required endpoints as described [here](../setup/content/preparing-your-organization.md#work-with-your-organizations-security-team).
 
-1. Gather the logs from your device: `%USERPROFILE%\AppData\LocalLow\Microsoft\Microsoft Mesh\`.
+1. Gather the logs from your device: `%USERPROFILE%\AppData\LocalLow\Microsoft\Microsoft Mesh\Player.log`.
 
 1. If the logs are too large to share, the two most important are `Player.log` and `Player-prev.log`.
 

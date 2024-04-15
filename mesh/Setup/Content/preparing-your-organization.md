@@ -62,11 +62,9 @@ You will need access to several administration tools:
 > [!TIP]
 > There are some setup tasks that may require cooperation from individuals
 > or departments outside of the individual or team that will be deploying
-> and running the Mesh preview, for example Licensing, Security, and
+> and running Mesh, for example Licensing, Security, and
 > Endpoint Management. Other stakeholders like Help Desk and Human
 > Resources may also need to be consulted.
-
-To participate in the Mesh public preview, you must agree to the terms of use and privacy statements. You should be in contact with your legal and privacy teams to review those terms before accepting them.
 
 ## Verify your licenses and policies
 
@@ -113,7 +111,7 @@ people outside your production tenant, you might want to set up a separate tenan
 
 If you expect to use immersive spaces in Teams for users in
 your production version of Teams, you will definitely want to provision
-your production tenant for Mesh Public Preview. While you can create other tenants
+your production tenant for Mesh. While you can create other tenants
 for testing, people who use Teams throughout the day are highly unlikely
 to want to log out of their main Teams account to log into a different
 account in a different tenant. A separate tenant is more practical for
@@ -125,7 +123,7 @@ the users who will attend events and the developers who will upload and manage t
 
 ### Contact owners of supporting teams
 
-To complete the steps to get Mesh Public Preview running, you will need to either
+To complete the steps to get Mesh running, you will need to either
 have various rights and permissions or be in contact with people in your
 organization who can grant the rights and permissions you will need.
 Depending on your company structure and policies, this process can be
