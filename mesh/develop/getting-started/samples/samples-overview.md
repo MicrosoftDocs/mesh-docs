@@ -1,5 +1,5 @@
 ---
-title: Samples overview
+title: Mesh Samples overview
 description: Read an overview of the Mesh sample Unity projects available in the Mesh toolkit.
 author: vtieto
 ms.author: vinnietieto
@@ -9,11 +9,21 @@ ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, toolkit, Mesh toolkit
 ---
 
-# Samples Overview
+# Mesh Samples Overview
 
-The Mesh samples are a great way to learn about the different kinds of Mesh Experiences you can create and the features you can add to an environment. They can also be used as a starting point for your custom environment; each project is already set up with the Mesh toolkit package and contains many assets that you might find useful.
+The Mesh samples can be used as a starting point for your custom environment; each project is already set up with the Mesh toolkit package and contains many assets that you might find useful.
 
-## About the Mesh samples
+Studying the Mesh samples will help you learn about the following:
+
+- Different types of experiences you can create with Mesh.
+- The many assets available in the Mesh toolkit.
+- The Mesh components that can make GameObjects interactive.
+- The different types of interactivity (for example, simple grabbing, or grabbing and holding, or grabbing and throwing)
+- How to set up events and actions through visual scripting.
+- Mesh-specific nodes that you can use in your scripts.
+- How physics works in Mesh.
+
+## About the samples
 
 - **Mesh 101**: Mesh 101 is a tutorial, but it also doubles as a sample. In the project, you can open the *StartingPoint* scene and begin walking through the tutorial. However, the project contains another scene named *FinishedProject* which is a completed version of the tutorial. You can view this scene as a sample and use it as starting point for your project just as you would with any of the other samples. [Get started with the Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md).
 

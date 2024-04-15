@@ -32,7 +32,7 @@ The [Samples Overview](samples-overview.md) page contains instructions on how to
 
 ## Understanding the scene Interactables
 
-In order to understand the interactions between objects in the scene, we recommend that you review the [Grab, hold and throw with Interactables](../../enhance-your-environment/avatar-and-object-interactions/interactables.md) article and then take a look at the objects in the Toybox sample that are made interactable by containing the Mesh Interactable Setup or Mesh Interactable Body components. Examining the visual scripts attached to certain objects will give you further insights. The scripts contain a mixture of standard Unity nodes and nodes that are specially made for Mesh. To learn more about the Mesh nodes, see the [Visual Scripting Node Reference](../../script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md). There are a lot of GameObjects in the Toybox sample; the lists and tables below should make is easier for you to find the interactable objects and the Mesh nodes in the scripts.
+In order to understand the interactions between objects in the scene, we recommend that you review the [Grab, hold and throw with Interactables](../../enhance-your-environment/avatar-and-object-interactions/interactables.md) article and then take a look at the objects in the Toybox sample that are made interactable by containing the *Mesh Interactable Setup* or *Mesh Interactable Body* components. Examining the visual scripts attached to certain objects will give you further insights. The scripts contain a mixture of standard Unity nodes and nodes that are specially made for Mesh. To learn more about the Mesh nodes, see the [Visual Scripting Node Reference](../../script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md). There are a lot of GameObjects in the Toybox sample; the lists and tables below should make is easier for you to find the interactable objects and the Mesh nodes in the scripts.
 
 **Some of the objects the Mesh Interactable Setup component is attached to:**
 
@@ -51,6 +51,8 @@ Planet_Mars
 Planet_Earth
 Planet_Jupiter
 Planet_astronaut_hip
+Button (child object of *ButtonHolder*)
+toybox_play_button_01_varient
 
 **Some of the objects the Mesh Interactable Body component is attached to:**
 
@@ -58,7 +60,8 @@ beanbag_red
 beanbag_blue  
 toybox_beanbag_reset_button_variant  
 Reset_Button_Marshmallow_Varient  
-Button
+Button (child object of *ButtonHolder*)
+toybox_play_button_01_varient
 
 **Some of the objects with Mesh Physics Components**
 
