@@ -3,7 +3,7 @@ title: Mesh toolkit Toybox sample
 description: Learn about the Mesh toolkit Toybox sample.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 4/14/2024
+ms.date: 4/15/2024
 ms.topic: overview
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, toybox, interactables
