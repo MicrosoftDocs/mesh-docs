@@ -61,7 +61,9 @@ The overall flow of creating an event in Mesh on the web is:
 
 1. Choose the room configuration for your event: **Single** or **Multi-room**.
 
-1. Add your Co-organizers (who will be able to edit the event) and your Attendees (who will be able to join the event). You may add groups or individuals. Co-organizers can also invite people in Outlook and forward the invite to people as desired.
+1. Add your **Co-organizers** and your **Attendees**. You may add groups or individuals.
+    1. **Co-organizers** can edit the event, customize the environment in the Mesh application, and forward the event or invite others in Outlook
+    1. **Attendees** can join the event.
 
 1. Choose the event space: **Choose a template** or **Start from scratch**.
 
@@ -70,7 +72,7 @@ The overall flow of creating an event in Mesh on the web is:
 
     :::image type="content" source="../media/events-guide-create-event/4-choose-event-space.png" alt-text="Screenshot of event space options: template or start from scratch in Mesh on the web.":::
 
-    1. Whether you **Choose a template** or **Start from scratch**, you can choose environments from Microsoft directly or from your collections.
+    1. Whether you **Choose a template** or **Start from scratch**, you can choose environments from Microsoft directly or from your Collections.
 
     :::image type="content" source="../media/events-guide-create-event/5-select-environment-from-collections-2.png" alt-text="Screenshot showing environment selection made from collections in Mesh on the web":::
 
