@@ -15,7 +15,7 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics
 
 *Toybox* is a Mesh sample that empowers creators to build interactive Mesh experiences and games. The sample provides a number of activities that use mixtures of assets, shaders, visual scripting, animations, VFX, and SoundFX to drive social engagment across Mesh experiences.
 
-If this is your first time using one of our samples, we recommend that you review our [Samples overview](./samples-overview.md) if you haven't already.
+If this is your first time using one of our samples, we recommend that you review our [Samples overview](./samples-overview.md) if you haven't already. This page contains instructions on how to download the Mesh toolkit which contains this sample.
 
 ## The Toybox Package
 
@@ -27,15 +27,13 @@ Here's how it looks in the Unity project.
 
 ![A screen shot of the Toybox package in the Unity project.](../../../media/samples/009-toybox-package.png)
 
-The [Samples Overview](samples-overview.md) page contains instructions on how to download the Mesh toolkit which contains this sample.
-
 ## Understanding the scene Interactables
 
 In order to understand the interactions between objects in the scene, we recommend that you review the [Grab, hold and throw with Interactables](../../enhance-your-environment/avatar-and-object-interactions/interactables.md) article and then take a look at the objects in the Toybox sample that are made interactable by containing the [*Mesh Interactable Setup*](../../enhance-your-environment/avatar-and-object-interactions/interactables.md#the-mesh-interactable-setup-component) or *Mesh Interactable Body* components. Examining the visual scripts attached to certain objects will give you further insights. The scripts contain a mixture of standard Unity nodes and nodes that are specially made for Mesh. To learn more about the Mesh nodes, see the [Visual Scripting Node Reference](../../script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md). There are a lot of GameObjects in the Toybox sample; the lists and tables below should make is easier for you to find the interactable objects and the Mesh nodes in the scripts.
 
 ## Toybox Activities
 
-This image can help you find the different activities in the scene.
+The image below can help you find the different activities in the scene. To see a larger version, click the image.
 
 1. Bean Bag Toss
 1. Fire Pit and Roasting Marhmallows
@@ -47,7 +45,7 @@ This image can help you find the different activities in the scene.
 
 :::image type="content" source="../../../media/samples/019-toybox-map-625.png" alt-text="Long distance view of the Toybox scene with features numbered." lightbox="../../../media/samples/018-toybox-map-1250.png":::
 
-* **Bean Bag Toss** 
+* **Bean Bag Toss**
 
     :::image type="content" source="../../../media/samples/009-beanbag-1.gif" alt-text="GIF that shows an event attendee playing the bean bag toss game.":::
 
@@ -98,18 +96,18 @@ InteractableSphere
 Planet_Mars  
 Planet_Earth  
 Planet_Jupiter  
-Reset_Button_Marshmallow_Varient
-MarshmallowStick
-Button
-toybox_play_button_01_varient
-Planet_Mars
-Planet_Earth
-Planet_Jupiter
-Planet_astronaut_hip
-Button (child object of *ButtonHolder*)
-toybox_play_button_01_varient
+Reset_Button_Marshmallow_Varient  
+MarshmallowStick  
+Button  
+toybox_play_button_01_varient  
+Planet_Mars  
+Planet_Earth  
+Planet_Jupiter  
+Planet_astronaut_hip  
+Button (child object of *ButtonHolder*)  
+toybox_play_button_01_varient  
 
-## Objects with the Mesh Interactable Body component**
+## Objects with the Mesh Interactable Body component
 
 beanbag_red  
 beanbag_blue  
@@ -118,7 +116,7 @@ Reset_Button_Marshmallow_Varient
 Button (child object of *ButtonHolder*)
 toybox_play_button_01_varient
 
-## Objects with the Mesh Physics Components**
+## Objects with the Mesh Physics Components
 
 | GameObject | Component |
 |------------|-----------|
@@ -126,7 +124,7 @@ toybox_play_button_01_varient
 | ContainmentField | [Containment Field](../../enhance-your-environment/physics/mesh-physics-programmers-guide.md#containment-field) |
 | Astronaut_containmen | Containment Field |
 | Buoyancy | [Buoyancy Field](../../enhance-your-environment/physics/mesh-physics-programmers-guide.md#buoyancy-field) |
-| BeanBags, Marshmallow Holder, Marshmallow_Pos | Reset Body Transform |
+| BeanBags, Marshmallow Holder, Marshmallow_Pos | [Reset Body Transform](../../enhance-your-environment/physics/mesh-physics-programmers-guide.md#reset-body-transforms) |
 | Marshmallow_Pos | Reset Body Transforms |
 
 ### Mesh nodes used in script graphs
@@ -241,13 +239,13 @@ toybox_play_button_01_varient
 
 There are a couple of ways to add Toybox to your project.
 
-1. Copy and paste the *com.microsoft.mesh.toolkit.toybox* folder located in *Toybox\Packages\* into your project's *Packages* folder.  
+1. Copy and paste the *com.microsoft.mesh.toolkit.toybox* folder located in "Toybox\Packages\" into your project's *Packages* folder.  
 1. Reference the Toybox package from GitHub.  
 
 **To import Toybox into your Unity project using GitHub**:
 
 1. In your project, on the menu bar, select **Window** > **Package Manager**.
-1. In the Package Manager, click the '+' drop-down and then select "Add package from git URL..."
+1. In the *Package Manager*, click the '+' drop-down and then select "Add package from git URL..."
 
 ![A screen shot of Add package from Github menu option.](../../../media/samples/011-add-package-with-github.png)
 
