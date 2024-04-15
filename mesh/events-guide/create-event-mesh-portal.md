@@ -26,7 +26,7 @@ The overall flow of creating an event in Mesh on the web is:
     1. **Attendees** (People to join the event)
 1. Choose the event space:
     1. **Choose a template** (that you or someone previously created)
-    1. **Start from scratch** (a default environment with no customizations)
+    1. **Start from scratch** (a default environment or custom environment with no customizations)
 1. (Optional) Upload a event cover image (size 512x256 px)
 1. (Optional) Customize your event 30 minutes before it starts!
 
