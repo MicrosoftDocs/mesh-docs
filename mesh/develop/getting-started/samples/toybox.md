@@ -34,7 +34,19 @@ The [Samples Overview](samples-overview.md) page contains instructions on how to
 In order to understand the interactions between objects in the scene, we recommend that you review the [Grab, hold and throw with Interactables](../../enhance-your-environment/avatar-and-object-interactions/interactables.md) article and then take a look at the objects in the Toybox sample that are made interactable by containing the [*Mesh Interactable Setup*](../../enhance-your-environment/avatar-and-object-interactions/interactables.md#the-mesh-interactable-setup-component) or *Mesh Interactable Body* components. Examining the visual scripts attached to certain objects will give you further insights. The scripts contain a mixture of standard Unity nodes and nodes that are specially made for Mesh. To learn more about the Mesh nodes, see the [Visual Scripting Node Reference](../../script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md). There are a lot of GameObjects in the Toybox sample; the lists and tables below should make is easier for you to find the interactable objects and the Mesh nodes in the scripts.
 
 ## Toybox Activities
-  
+
+This image can help you find the different activities in the scene.
+
+1. Bean Bag Toss
+1. Fire Pit and Roasting Marhmallows
+1. Ice Breaker
+1. Sphere Sculpture
+1. Solar System
+1. Radio
+1. Boombox
+
+:::image type="content" source="../../../media/samples/019-toybox-map-625.png" alt-text="Long distance view of the Toybox scene with features numbered." lightbox="../../../media/samples/018-toybox-map-1250.png":::
+
 * **Bean Bag Toss** 
 
     :::image type="content" source="../../../media/samples/009-beanbag-1.gif" alt-text="GIF that shows an event attendee playing the bean bag toss game.":::
