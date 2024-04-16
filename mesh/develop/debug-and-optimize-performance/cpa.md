@@ -38,7 +38,7 @@ Each analyzer performs a different test to check if content is optimally setup. 
 
 | Name | Description | Requires Play Mode | PC thresholds | Android (Quest) thresholds |
 | -------- | ------- | ------- | ------- | ------- |
-| **Animation** | Checks if Animator and Animation components have visibility culling setup optimally. | No | N/A | N/A |
+| **Animation** | Checks if Animator and Animation components have visibility culling set up optimally. | No | N/A | N/A |
 | **Collision Complexity** | Checks for high triangle count MeshCollider components. | No | Under 100 triangles for dynamic MeshColliders and under 10,000 triangles for static MeshColliders | Same as PC |
 | **Light Complexity** | Checks utilization of realtime lights and shadow casting lights. And for the existence of an avatar light. | No | Under 5 realtime per pixel lights. And 0 realtime shadow casting lights. | Under 3 realtime per pixel lights. And 0 realtime shadow casting lights. |
 | **Mesh Complexity** | Warns about the use of very dense MeshFilter components. | No | Above 30,000 triangles per MeshFilter emits a warning and above 100,000 triangles per MeshFilter emits an error. | Same as PC |
