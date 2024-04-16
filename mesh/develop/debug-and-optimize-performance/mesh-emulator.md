@@ -27,7 +27,7 @@ to easily get a first impression of a multi-user scenario.
 **To use Mesh Emulation Mode in your project (or not)**:
 
 1.  Ensure that you have the Mesh toolkit imported.
-1.  Ensure that the scene contains a piece of solid floor below the origin that's set to the *GroundCollision* layer.
+1.  Ensure that the scene contains a piece of solid floor below the origin that's set to the *GroundCollision* layer. Set the floors XYZ Position values to 0, 0, 0.
 1.  Press the Play button. The toolkit checks to see if a GameObject with "EmulatorSetup" in its name exists at the top level of the **Hierarchy**. If it doesn't, this dialog appears:
 
     ![A screenshot of the Mesh Emulator Setup missing dialog.](../../media/debug-and-optimize/003-emulator-setup-missing-dialog.png)

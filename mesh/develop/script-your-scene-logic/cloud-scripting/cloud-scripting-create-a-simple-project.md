@@ -47,15 +47,15 @@ The following instructions show how to create a simple environment with a cube t
 
 1. In the **Inspector**, navigate to the **Transform** component and then change the Cube's **Position** and **Rotation** values to the following:
 
-**Position**: X = 0.1, Y = 1.5, Z = 3.3.  
+   **Position**: X = 0.1, Y = 1.5, Z = 3.3.  
 
-**Rotation**: X = -15, Y = 0.8, Z = 0.1
+   **Rotation**: X = -15, Y = 0.8, Z = 0.1
 
-**Tip**: The **Camera** in the **MeshEmulatorSetup[NoUpload]** prefab is a child object of **AvatarHead**.
+   **Tip**: The **Camera** in the **MeshEmulatorSetup[NoUpload]** prefab is a child object of **AvatarHead**.
 
    ![A screen shot of the Camera game object in the Hierarchy and the cube placed in the Scene view.](../../../media/mesh-scripting/getting-started/004-cube.png)
 
-1. In the **Inspector**, click **Add Component** and then select [**MeshInteractableSetup**](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
+1. In the **Inspector**, click **Add Component** and then select [**Mesh Interactable Setup**](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
 
    ![Screenshot of the Add Component search bar with Mesh Interactables Setup selected.](../../../media/mesh-scripting/getting-started/006-mesh-interactable-setup.png)
 

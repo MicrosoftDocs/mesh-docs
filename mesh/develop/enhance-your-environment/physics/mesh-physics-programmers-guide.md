@@ -3,7 +3,7 @@ title: Mesh Physics Programmer's Guide
 description: Learn general guidelines and component details for the many available Mesh Physics components.
 author: michael-buschbeck-ms
 ms.author: vinnietieto
-ms.date: 11/07/2023
+ms.date: 4/4/2024
 ms.topic: Guide
 ms.service: mesh
 keywords: Microsoft Mesh, Mesh physics, physics, environments, interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw
@@ -45,7 +45,7 @@ The animation clip used by the auto-play animation can use any **Wrap Mode**. Us
 
 Adding one of the following `MonoBehaviour` components to an object will add the specific behavior to this object.
 
-### Sticky Body
+## Sticky Body
 
 Makes bodies stick to other bodies. It could be used to throw darts at other bodies or to attach a picture on a wall. This is implemented by creating a fixed constraint between the two bodies involved.
 **Note:** This operation is performed on all clients and therefore is implemented as a special network message.
@@ -59,7 +59,7 @@ Makes bodies stick to other bodies. It could be used to throw darts at other bod
 * **Collision Control** To disable specific collisions between one body and another. Normally you can/should use collision layers. However, since there are only 32 hard-coded collision layers in Microsoft Mesh, this might not be an option. Here you can disable specific bodies.
 * **Affected Bodies For Collision** Body filter applied for **Collision Control**.
 
-### Containment Field
+## Containment Field
 
 Ensures that rigid bodies stay within the boundaries of one or several trigger colliders.
 
@@ -75,7 +75,7 @@ The rigid bodies affected by this component must already be within the boundarie
 
 * **Affected Bodies** defines [optional filtering conditions](set-conditions.md) for the bodies affected by this component. (By default, all bodies are affected.)
 
-### Velocity Vector Field
+## Velocity Vector Field
 
 Allows to accelerate/decelerate a rigidbody until it reaches a specific target velocity.
 
@@ -98,7 +98,7 @@ This component controls both the magnitude and the direction of velocity. See [V
   * **Smooth Approach** reduces acceleration the closer you get to target velocity. This means that, in practice, you will never reach the target velocity. Also, should there be any external influence, like going uphill or downhill, this extra influence won't be completely overridden, resulting in going faster downhill than uphill.  
 * **Affected Bodies** defines [optional filtering conditions](set-conditions.md) for the bodies affected by this component. (By default, all bodies are affected.)
 
-### Scaled Gravity Field
+## Scaled Gravity Field
 
 Changes how gravity affects rigid bodies within the boundaries of one or several trigger colliders.
 
@@ -119,7 +119,7 @@ There is an interesting relationship between the perception of the player's own 
 * **Gravity Scale** sets the local gravity inside the trigger volume in relation to the default physics gravity affecting the scene. The default gravity scale of 1 leaves gravity unaffected; larger values increase gravity; 0 removes gravity; negative values switch the direction of gravity.
 * **Affected Bodies** defines [optional filtering conditions](set-conditions.md) for the bodies affected by this component. (By default, all bodies are affected.)
 
-### Orbital Gravity Field
+## Orbital Gravity Field
 
 Simulates the gravity of a "toy planet" in your scene.
 
@@ -141,7 +141,7 @@ Any rigid bodies that touch or overlap the trigger colliders (the "trigger volum
 * **Set Forced Radius Where Dropped** makes moons that are interactively grabbed and moved into the gravity field automatically adopt the distance from the central body at which they were dropped as their preferred orbit.
 * **Default Force Radius** defines the default radius for the above cheat that's used unless overridden by any of the other options.
 
-### Buoyancy Field
+## Buoyancy Field
 
 Simulates buoyancy of arbitrary rigid bodies on water: Bodies appear to float on the connected trigger volume.
 
@@ -153,7 +153,7 @@ Any rigid bodies that touch or overlap the trigger colliders (the "trigger volum
 
 This component uses the shape of the rigidbody's colliders to calculate its density (in other words, volume divided by mass), buoyancy, drag, and friction.
 
-### Buoyancy Colliders
+## Buoyancy Colliders
 
 **Benefit**: Performance. The compute cost of the buoyancy calculations scales linearly with the number of collider vertices. Typical physics colliders for bodies, even if already simplified, are often significantly more complex (in terms of number of vertices) than requiresd for buoyancy to work well enough.
 
@@ -183,7 +183,7 @@ By default, the buoyancy field samples the surface of the trigger volume to dete
 
 See the `BuoyancyFieldWaves` component below for how to get a wavy water surface with a no-code approach.
 
-### Buoyancy Field Waves
+## Buoyancy Field Waves
 
 Add-on to the `BuoyancyField` component that works with a specific vertex shader, `BuoyancyFieldWaves_VertexPosition` (available both as a sub-shader graph and an HLSL include file). This creates the visual effect of a wavy water surface together with corresponding behavior of objects floating on the water surface.
 
@@ -216,7 +216,7 @@ You can customize the **Fragment** path of a shader used with the `BuoyancyField
 
 The sample `BasicWavyWaterSurface` shader graph can serve as a stand-in during content development and as a starting point for your own shader developments. Alternatively, you can take an existing water surface shader, keep its **Fragment** path, and only replace its **Vertex** path.
 
-### Max Angular Velocity
+## Max Angular Velocity
 
 Overrides the default maximum angular velocity of a physics body.
 
@@ -226,7 +226,7 @@ The physics engine won't allow the rigidbody to exceed this angular velocity. Th
 
 The maximum angular velocity must be entered in radians per second. The entered value is also displayed in degrees per second (180 degrees ≈ 3.14 radians) and revolutions per second (1 revolution = 360 degrees ≈ 6.28 radians).
 
-### Velocity Magnitude Field
+## Velocity Magnitude Field
 
 Allows acceleration/deceleration of a rigidbody until it reaches a speed that's within an allowable range.
 
@@ -248,7 +248,7 @@ This component controls the magnitude of the velocity and keeps the current dire
   * **Smooth Approach** reduces acceleration the closer you get to target velocity. This means that, in practice, you will never reach the target velocity. Also, should there be any external influence, like going uphill or downhill, this extra influence won't be completely overridden, resulting in going faster downhill than uphill.
 * **Affected Bodies** defines [optional filtering conditions](set-conditions.md) for the bodies affected by this component. (By default, all bodies are affected.)
 
-### Align Field
+## Align Field
 
 Aligns the body to the specified axis.
 
@@ -273,7 +273,7 @@ This component adds torque to the body to align it to a specific direction. Note
 - **Damping Coefficient** sets the damping factor (between 0 and 5). When set below 1, the body might oscillate around target orientation.
 * **Affected Bodies** defines [optional filtering conditions](set-conditions.md) for the bodies affected by this component. (By default, all bodies are affected.)
 
-### Velocity Direction Field
+## Velocity Direction Field
 
 Allows to steer a rigidbody until the velocity reaches a target direction.
 
@@ -298,7 +298,7 @@ This component controls only the direction of the velocity and keeps the current
   * **Smooth Approach** reduces acceleration the closer you get to target velocity. This means that, in practice, you'll never reach the target velocity. Also, if there's any external influence such as going uphill or downhill, this extra influence won't be completely overridden, resulting in going faster downhill than uphill.
 * **Affected Bodies** defines [optional filtering conditions](set-conditions.md) for the bodies affected by this component. (By default, all bodies are affected.)
 
-### Magnetic Body
+## Magnetic Body
 
 Gives the body a magnetic property which attracts or repels other bodies.
 
@@ -322,7 +322,7 @@ Each collider exhibits a force on other rigidbodies that are close enough to thi
   * **Magnetic** attracts both **South Pole** and **North Pole**.
 * **Disable Gravity On Contact**: If this is enabled, *and* **Strength** of the magnet is two times bigger than gravity, gravity is disabled for bodies that are in contact with this magnet. One of the objects must be static for this to have an affect. This is often used to prevent the sliding of bodies down a wall.
 
-### Spherical Explosion
+## Spherical Explosion
 
 Creates an explosion which causes all bodies within a specific radius to move outwards.
 
@@ -341,7 +341,7 @@ The explosion force depends on the mass of a rigidbody (and potentially the dist
 * **Angular Impulse Scale** defines where the force is applied. If set to 0, force is applied at the center of mass, which means no rotation. If set to 1, force is applied at the closest point to the explosion.
 * **Occlusion** If enabled, objects hidden behind other objects don't feel the explosion. Only a single ray between the center of the explosion and the center of mass is checked for occlusion.
 
-### Directional Explosion
+## Directional Explosion
 
 Creates an explosion which causes all bodies within a trigger to move in a specific direction.
 
@@ -358,7 +358,7 @@ The explosion force depends on the mass of a rigidbody. For this component to wo
 * **Angular Impulse Scale** defines where the force is applied. If set to 0, force is applied at the center of mass, which means no rotation. If set to 1, force is applied at the closest point to the explosion.
 * **Affected Bodies** defines optional filtering conditions for the bodies affected by this component. (By default, all bodies are affected.)
 
-### Joint Stabilization
+## Joint Stabilization
 
 Stabilizes the constraint system by adjusting the rigidbody's inertia tensor.
 
@@ -372,7 +372,7 @@ The script works on all children with the Rigidbody or Joint component attached.
 * **Joint Projection** enables constraint projection on all children. This can dramatically improve stability but sacrifices physical correctness. It only works on Configurable and Character Joints.
 * **Projection Distance** defines the maximum allowed violation of constraints. To avoid physics issues, try to set this value as high as possible.
 
-### Bouncing Surface
+## Bouncing Surface
 
 Creates a bouncing surface which causes all colliding objects to bounce off with a predefined velocity.
 
@@ -388,7 +388,7 @@ Creates a bouncing surface which causes all colliding objects to bounce off with
   * **Bounce Towards Target Body**: the direction of outgoing velocity is directed towards a target Body. If this option is selected, the **Target Body** property appears and must be set.
 * **Friction** controls how much tangential velocity is lost upon collision. When set to 0, the bouncing object retains tangential velocity. When set to 1, the object bounces in direction perpendicular to the surface (tangential velocity is 0). For values more than 1, the object bounces backwards.
 
-### Center Of Mass Offset
+## Center Of Mass Offset
 
 Offsets the center of mass of a rigidbody.
 
@@ -406,7 +406,7 @@ All rigidbodies in the **Hierarchy** under this component won't be synced among 
 
 [Learn about Mesh Visual Scripting physics event nodes](../../script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md#physics-events-nodes).
 
-### Throw Trajectory
+## Throw Trajectory
 
 Calculates the rigidbody's future position in free space under the effect of gravity.
 
@@ -421,6 +421,26 @@ Calculates the rigidbody's future position in free space under the effect of gra
 - **Time Step**: Defines the time difference between the future positions.
 - **Gravity**: This is the gravitational acceleration.
 - **Line Renderer**: Specifies the line renderer the position of points are copied to. This displays the throw trajectory.
+
+## Reset Body Transforms
+
+When triggered by a visual script, this component resets the position and rotation of all physics bodies on the same transform or any child transforms to their initial values.
+
+![Screen shot of the Reset Body Transforms component in the Inspector.](../../../media/physics-interactions/106-reset-body-transforms.png)
+
+**Settings:**
+
+- **Initial Auto Save**: If selected, use the transforms at environment startup as the reset transforms. If unselected, you must use a visual script to call the *Save Body Transforms Now* function to save reset transforms before performing a reset.
+
+**Functions available to visual scripts**
+
+- **Reset Body Transforms Now**: Resets the position and rotation of all physics bodies in scope of this **Reset Body Transforms**  component to their most recently saved reset transforms. Invoke this only on one client.
+
+![Screen shot of the Reset Body Transforms component in edit mode with the Reset Body Transforms Now only in play mode button highlighted.](../../../media/physics-interactions/108-reset-button-in-edit-mode.png)
+
+![Screen shot of the Reset Body Transforms component in play mode with the Reset Body Transform Now button highlighted.](../../../media/physics-interactions/107-reset-button-in-play-mode.png)
+
+- **Save Body Transforms Now** Saves the current position and rotation of all physics bodies in scope of this **Reset Body Transforms** component as their reset transforms. Invoke this only on one client.
 
 ## Next steps
 

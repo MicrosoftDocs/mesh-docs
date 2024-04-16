@@ -13,6 +13,8 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.2402.0 (March 12, 2024)
 
+* There may be a travel time latency that occurs when joining a space, which can cause avatar movement and audio to be out of sync, causing confusion while interacting with other users in the same space. This issue is more pronounced in custom environments where certain environment and event building occurs, causing the aggregate latency to be more pronounced.
+ 
 * On starting a broadcast, broadcasters may experience a temporary low framerate. (32963)
 
 * Keys for dropping interactables, like marshmallow sticks in the Lake House, are the middle mouse button (scroll wheel) and space bar. This is communicated via a short pop up that users might overlook. (32968)
