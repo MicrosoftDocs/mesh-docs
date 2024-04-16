@@ -44,7 +44,7 @@ Each analyzer performs a different test to check if content is optimally setup. 
 | **Mesh Complexity** | Warns about the use of very dense MeshFilter components. | No | Above 30,000 triangles per MeshFilter emits a warning and above 100,000 triangles per MeshFilter emits an error. | Same as PC |
 | **Mesh Complexity Rendered** | Checks if a viewpoint is rendering too many triangles. | Yes | Under 500,000 triangles rendered. | Under 80,000 triangles rendered. |
 | **Reflection Probes** | Checks if real-time reflection probes are being used. | No | Allowed | Disallowed |
-| **Rigidbody Complexity** | Checks for too many Rigidbody components being used. | No | Under 50 rigid bodies. | Same as PC |
+| **Rigidbody Complexity** | Checks for too many Rigidbody components being used. | No | Under 50 Rigidbodies. | Same as PC |
 | **Scene Complexity** | Checks if a viewpoint is emitting too many rendering batches. | Yes | Under 200 batches emitted. | Under 50 batches emitted |
 | **Shader Complexity** | Checks the number vertex and fragment stage math operations of referenced shaders. | No | Under 150 math operations for the vertex stage. Under 600 math operations for the fragment stage. | Under 30 math operations for the vertex stage. Under 120 math operations for the fragment stage. |
 | **SRP Batcher Compatible** | Checks if SRP Batcher compatible shaders are being used. | No | N/A | N/A |
