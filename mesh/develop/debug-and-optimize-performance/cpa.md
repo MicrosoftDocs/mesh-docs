@@ -34,7 +34,7 @@ Click the **Select Platform Quality** drop-down and then select your desired pla
 
 ## Analyzers
 
-Each analyzer performs a different test to check if content is optimally setup. The below table highlights what each analyzer does as well as discrete thresholds.
+Each analyzer performs a different test to check if content is optimally setup. The table below highlights what each analyzer does as well as discrete thresholds.
 
 | Name | Description | Requires Play Mode | PC thresholds | Android (Quest) thresholds |
 | -------- | ------- | ------- | ------- | ------- |
