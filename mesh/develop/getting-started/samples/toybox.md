@@ -87,6 +87,26 @@ The image below can help you find the different activities in the scene. To see 
 
     This is similar in operation to the Radio, with a slightly different music style. The script for playing the sound (*PlayButton_Script*) is attached to the *toybox_play_button_3_varient* object. The script has a subgraph (*BoomboxState*) that contains the nodes for the audio.
 
+## Add the Toybox package to an existing project
+
+There are a couple of ways to add Toybox to your project.
+
+1. Copy and paste the *com.microsoft.mesh.toolkit.toybox* folder located in "Toybox\Packages\" into your project's *Packages* folder.  
+1. Reference the Toybox package from GitHub.  
+
+**To import Toybox into your Unity project using GitHub**:
+
+1. In your project, on the menu bar, select **Window** > **Package Manager**.
+1. In the *Package Manager*, click the '+' drop-down and then select "Add package from git URL..."
+
+    ![A screen shot of Add package from Github menu option.](../../../media/samples/011-add-package-with-github.png)
+
+1. Paste https://github.com/microsoft/Mesh-Toolkit-Unity.git?path=/Toybox/Packages/com.microsoft.mesh.toolkit.toybox into the text field and then click **Add**.
+
+    ![A screen shot of the toybox URL pasted into the Github text box.](../../../media/samples/012-add-github-url.png)
+
+Toybox will now be installed in your Unity project as a package in the project's *Packages* folder with the name  *Microsoft Mesh Toolkit Toybox.*
+
 ## Objects with the Mesh Interactable Setup component
 
 - beanbag_red  
@@ -234,26 +254,6 @@ The image below can help you find the different activities in the scene. To see 
 | Bean Bag Toss | beanbag_red, beanbag_blue | BeanBagPower | BeanBagGraph |  
 
 <br/>
-
-## Add the Toybox package to an existing project
-
-There are a couple of ways to add Toybox to your project.
-
-1. Copy and paste the *com.microsoft.mesh.toolkit.toybox* folder located in "Toybox\Packages\" into your project's *Packages* folder.  
-1. Reference the Toybox package from GitHub.  
-
-**To import Toybox into your Unity project using GitHub**:
-
-1. In your project, on the menu bar, select **Window** > **Package Manager**.
-1. In the *Package Manager*, click the '+' drop-down and then select "Add package from git URL..."
-
-![A screen shot of Add package from Github menu option.](../../../media/samples/011-add-package-with-github.png)
-
-1. Paste https://github.com/microsoft/Mesh-Toolkit-Unity.git?path=/Toybox/Packages/com.microsoft.mesh.toolkit.toybox into the text field and then click **Add**.
-
-![A screen shot of the toybox URL pasted into the Github text box.](../../../media/samples/012-add-github-url.png)
-
-Toybox will now be installed in your Unity project as a package in the project's *Packages* folder with the name  *Microsoft Mesh Toolkit Toybox.*
 
 ## Warning about sample load time
 
