@@ -15,7 +15,7 @@ After you finish adding all your scene content, the next step is to build the sc
 
 ## Configure your project settings
 
-1. On the menu bar, select **Mesh Toolkit** > **Configure Project Settings**.
+1. On the menu bar, select **Mesh Toolkit** > **Configure** > **Apply Project Settings**.
 
     ![A screenshot of the menu bar in Unity showing the Configure Project Settings option](../../media/make-your-environment-available/001-project-settings.png)
 
