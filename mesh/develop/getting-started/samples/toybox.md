@@ -89,32 +89,32 @@ The image below can help you find the different activities in the scene. To see 
 
 ## Objects with the Mesh Interactable Setup component
 
-beanbag_red  
-beanbag_blue  
-toybox_beanbag_reset_button_variant  
-InteractableSphere  
-Planet_Mars  
-Planet_Earth  
-Planet_Jupiter  
-Reset_Button_Marshmallow_Varient  
-MarshmallowStick  
-Button  
-toybox_play_button_01_varient  
-Planet_Mars  
-Planet_Earth  
-Planet_Jupiter  
-Planet_astronaut_hip  
-Button (child object of *ButtonHolder*)  
-toybox_play_button_01_varient  
+- beanbag_red  
+- beanbag_blue  
+- toybox_beanbag_reset_button_variant  
+- InteractableSphere  
+- Planet_Mars  
+- Planet_Earth  
+- Planet_Jupiter  
+- Reset_Button_Marshmallow_Varient  
+- MarshmallowStick  
+- Button  
+- toybox_play_button_01_varient  
+- Planet_Mars  
+- Planet_Earth  
+- Planet_Jupiter  
+- Planet_astronaut_hip  
+- Button (child object of *ButtonHolder*)  
+- toybox_play_button_01_varient  
 
 ## Objects with the Mesh Interactable Body component
 
-beanbag_red  
-beanbag_blue  
-toybox_beanbag_reset_button_variant  
-Reset_Button_Marshmallow_Varient  
-Button (child object of *ButtonHolder*)
-toybox_play_button_01_varient
+- beanbag_red  
+- beanbag_blue  
+- toybox_beanbag_reset_button_variant  
+- Reset_Button_Marshmallow_Varient  
+- Button (child object of *ButtonHolder*)
+- toybox_play_button_01_varient
 
 ## Objects with the Mesh Physics Components
 
