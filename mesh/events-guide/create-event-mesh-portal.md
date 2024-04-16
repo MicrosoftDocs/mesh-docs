@@ -13,98 +13,78 @@ keywords: Microsoft Mesh, Mesh on Web, M365, events, hosting, event producer, ev
 
 Use Mesh on the web to create and manage events, Mesh collections, and custom environments. Once events are made, Mesh events show up in your Outlook or Teams calendar with a direct link that people can use to join events, making inviting and joining events quicker.
 
-> [!IMPORTANT]
-> Ensure that all participants have updated their Mesh app to the most recent version to ensure that they can use the link in their calendar invite and join the event you just created!
+The overall flow of creating an event in Mesh on the web is:
 
-## Events vs Templates
-
-With Mesh, you can create one-time Events or Templates that can be reused as needed. Create a Template, customize it once, and reuse it again and again.
-
-For example, when you create an event in Mesh on the web you can choose the **Use an Event template** option:
-
-:::image type="content" source="../media/mesh-event-producer-guide/Create-event-template-selection.png" alt-text="Screenshot of Mesh on the web with red box around Use an event template selection.":::
-
-If you want to create a template, customize it, and reuse it, see [Create event template](create-template.md).
-
-Read on to learn how to create a single event.
+1. Go to [https://mesh.cloud.microsoft/](https://mesh.cloud.microsoft/).
+1. Select **Create event** in the top right.
+1. Add the **Title**, **Date/Duration**, and **Details about the event**.
+1. Choose your room settings like:
+    1. **Single room** (up to 16 people, 24-hour time limit)
+    1. **Multi-room** (up to 200 people, hosts are grouped in one room, 3-hour time limit)
+1. Invite people:
+    1. **Co-organizers** (People to help set up and run the event)
+    1. **Attendees** (People to join the event)
+1. Choose the event space:
+    1. **Choose a template** (that you or someone previously created)
+    1. **Start from scratch** (a default environment or custom environment with no customizations)
+1. (Optional) Upload a event cover image (size 512x256 px)
+1. (Optional) Customize your event 30 minutes before it starts!
 
 ## Considerations before your event
 
-Consider the following time and capacity constraints when creating your Mesh event or Template.
-
-### Time constraints for Mesh events
-
-- Single room events (16 people max): 24-hour time limit.
-
-- Multi-room events (200 people max): 3-hour time limit.
-
-### Event capacity
-
-- 200 attendees per event
-- 16 attendees per room
-- Up to 16 hosts in a separate room, additional to the 200 attendees
-
-> [!NOTE]
-> Only three event hosts can broadcast at the same time.
-
-### Customize **before** your event
-
-To ensure the event runs smoothly, customize and save the customizations at least 30 minutes before the event start time.
+- **Single room events (16 people max)**: 24-hour time limit.
+- **Multi-room events (200 people max)**: 3-hour time limit.
+  - Hosts are grouped into a separate room (up-to 16 hosts + 200 attendees)
+- **Customize and save edits at least 30 minutes** before your event to ensure the event runs smoothly.
 
 ## Create an event
 
-1. Open Mesh on the web at [https://portal.mesh.microsoft.com/](https://portal.mesh.microsoft.com/) or [https://mesh.cloud.microsoft/](https://mesh.cloud.microsoft/).
+1. Open Mesh on the web at [https://mesh.cloud.microsoft/](https://mesh.cloud.microsoft/).
 
     > [!NOTE]
-    > Mesh on the web is moving to cloud.microsoft [with all Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). To help ease this transition, we are providing two links for Mesh on the web. To use the new cloud.microsoft endpoint, ensure you have allowed the proper endpoints allowed, as detailed in the [Preparing your organization article](../Setup/Content/preparing-your-organization.md#endoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
+    > Mesh on the web is moving to cloud.microsoft [with all Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). To use the new cloud.microsoft endpoint, ensure you have allowed the proper endpoints allowed, as detailed in the [Preparing your organization article](../Setup/Content/preparing-your-organization.md#endoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
     >
     > If you have any issues with the new Mesh on the web experience, you can continue to use *portal.mesh.microsoft.com*.
 
 1. Log in with your corporate account.
 
-1. In the Home page, select **Events** in the left navigation bar.
-
-    :::image type="content" source="../media/mesh-event-producer-guide/Mesh-portal-event-tab-select.png" alt-text="Screenshot of Mesh on web showing the event tab selected.":::
-
 1. Select **Create event** at the top right.
 
-1. Add the event name, time duration, description, upload a thumbnail image, and adjust the room capacity settings.
+    :::image type="content" source="../media/events-guide-create-event/1-create-event.png" alt-text="Screenshot of Mesh on the web, Create event button highlighted.":::
+
+1. Add the **Title**, **Date/Duration**, and **Details about the event**.
 
     > [!NOTE]
-    > Events should not be longer than three hours and should be scheduled more than 30 minutes in advance.
+    > All events should be scheduled more than 30 minutes in advance to allow for event customization in the Mesh app.
 
-    :::image type="content" source="../media/events-guide-create-event/Mesh-on-web-create-event-details.png" alt-text="Screenshot of Create event page in Mesh on the Web with red box around the event details forms.":::
+    :::image type="content" source="../media/events-guide-create-event/2-enter-event-details.png" alt-text="Screenshot of event details filled out in Mesh on the web.":::
 
-1. Select **Next** when complete.
-1. Choose an environment or pre-existing Template. Select **Next** when finished.
+1. Choose the room configuration for your event: **Single** or **Multi-room**.
 
-    :::image type="content" source="../media/events-guide-create-event/Mesh-on-web-start-with-an-environment.png" alt-text="Invite page in the Mesh on the Web":::
+1. Add your **Co-organizers** and your **Attendees**. You may add groups or individuals.
+    1. **Co-organizers** can edit the event, customize the environment in the Mesh application, and forward the event or invite others in Outlook
+    1. **Attendees** can join the event.
 
-    > [!NOTE]
-    > Once your event is created, you cannot change the environment, the template, room configuration, room capacity, or Max Participants.
+1. Choose the event space: **Choose a template** or **Start from scratch**.
 
-    Learn more about [creating Templates](create-template.md).
+    > [!TIP]
+    > With Mesh, you can create environment templates with customizations to be reused as needed. [Create a Template](create-template.md), customize it once, and reuse it again and again.
 
-1. Add your Co-organizers (who will be able to edit the event) and your Attendees (who will be able to join the event) and select **Create event** when finished.
+    :::image type="content" source="../media/events-guide-create-event/4-choose-event-space.png" alt-text="Screenshot of event space options: template or start from scratch in Mesh on the web.":::
 
-    :::image type="content" source="../media/events-guide-create-event/Mesh-on-web-invite-coorganizer.png" alt-text="Screenshot of Mesh on the Web showing invite co-organizer page for an event.":::
+    1. Whether you **Choose a template** or **Start from scratch**, you can choose environments from Microsoft directly or from your Collections.
 
-Great job! You've now created your event. Co-organizers and invitees will now see the event in their Outlook and Teams calendars.
+    :::image type="content" source="../media/events-guide-create-event/5-select-environment-from-collections-2.png" alt-text="Screenshot showing environment selection made from collections in Mesh on the web":::
 
-Co-organizers can also invite people in Outlook and forward the invite to people as desired.
+1. (Optional) Upload an event cover image.
 
-:::image type="content" source="../media/mesh-event-producer-guide/Join-event-link-calendar.gif" alt-text="Join event from a calendar invite":::
+Great job! You've now created your event. Co-organizers and invitees will now see the event in their Outlook and Teams calendars. Select **Customize now** to open the Mesh app and [customize your event](customize-event.md) by adding objects to your environment to help with your meeting.
 
-## Create Templates from your event
+:::image type="content" source="../media/events-guide-create-event/6-congrats.png" alt-text="Screenshot showing confirmation screen for newly created event in the Mesh portal.":::
 
-Once your event is created, you have the option to save it as an Template to be reused in the future.
+You can also review your event in the **Events** tab in Mesh on the web.
 
-> [!IMPORTANT]
-> When you save an event as a Template, any future customizations in the app won't make it into the saved template. In order to edit the Template, you need to customize it directly.
-
-:::image type="content" source="../media/mesh-event-producer-guide/Event-create-save-as-event-template.png" alt-text="Screenshot of Mesh on the Web showing option to save a created event as an event template.":::
-
-To learn more about event templates and how to create them, see [Create event template](create-template.md).
+:::image type="content" source="../media/events-guide-create-event/6-review-event-or-join.png" alt-text="Screenshot showing created event in the Events tab in Mesh on the web.":::
 
    > [!div class="nextstepaction"]
    > [Customize an event](customize-event.md)
