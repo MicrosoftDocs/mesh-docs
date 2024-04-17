@@ -118,7 +118,7 @@ Rendering a scene in Mesh is a direct consequence of how the environment's conte
 |--------------------|--------------------|---------------------|
 |<~80k Triangles     |~50 batches         |Disabled             |
 |**Textures**        |**Lightmaps**       |**Skybox Resolution**|
-|< ~15 MB            |< ~20 MB            |1024x2048            |
+|< ~16 MB            |< ~20 MB            |1024x2048            |
 
 You might notice that shader restrictions are not specified in the above tables. Because Mesh uses Unity's [Universal Render Pipeline (URP)](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/index.html) we suggest that you use cheaper out-of-the-box URP shaders (like [Universal Render Pipeline/Baked Lit](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/baked-lit-shader.html) or [Universal Render Pipeline/Simple Lit](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/simple-lit-shader.html)). We also understand the value of custom shaders. In general, we try to keep our custom shaders for most of the environment within the below thresholds:
 
