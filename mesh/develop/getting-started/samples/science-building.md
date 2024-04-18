@@ -25,7 +25,7 @@ Activities include the following:
 * **Wave and Frequency**: connected physics bodies moving in a variety of synchronized ways
 * **Gravity Simulator**: switching between Earth, Moon and space
 * **Mass and Gravity**: planets and other objects orbiting around the Sun
-* **Buoyancy and Balance**: ships or other objects floating on the waves
+* **Mass, Buoyancy and Balance**: ships or other objects floating on the waves
 * **Gone Fishin'!**: catch fish, ships or a penguin with a magnetic fishing rod
 
 The [Samples Overview](samples-overview.md) page contains instructions on how to download the Mesh toolkit which contains this sample.
