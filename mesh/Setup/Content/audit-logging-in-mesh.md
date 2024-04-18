@@ -19,9 +19,12 @@ keywords: Microsoft Mesh, M365, Unity, API, reference, documentation, features, 
 <!---
 Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations.
 --->
-Audit logging help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. This article summarizes how to query and request audit logs for Microsoft Mesh operations and events. Some operations are Mesh specific, while others are associated with other M365 operations, such as M365: Exchange, SharePoint, Microsoft Entra (Azure AD) operations, Microsoft Teams, etc. This article covers how to to gather insights into individual or bulk operations that relate to User Activity or operations which result from interactions with M365 services for Microsoft Mesh.
+Audit logging help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. This article summarizes how to query and request audit logs for Microsoft Mesh operations and events. Some operations are Mesh specific, while others are associated with other M365 operations, such as M365: Exchange, SharePoint, Microsoft Entra (Azure AD) operations, Microsoft Teams, etc. with audit logging for Mesh, an admin can gather insights into individual or bulk operations that relate to User Activity or operations which result from interactions with M365 services for Microsoft Mesh.
 
-For Mesh, audit logging can be done using [Exchange Online Powershell](/powershell/exchange/exchange-online-powershell?view=exchange-ps).
+Audit logging for Mesh can be done using [Exchange Online Powershell](/powershell/exchange/exchange-online-powershell?view=exchange-ps).
+
+> [!NOTE]
+> Microsoft Mesh has two main offerings for users:  Immersive spaces in Teams and custom immersive spaces. Audit logging does not treat these offerings as independent and thus the events in the audit may refer to either offering or both offerings, depending on the event you edit.
 
 Examples of user activity and operations that an admin may be interested in for Mesh are:
 
@@ -67,11 +70,14 @@ The audit events that are currently available are listed below. Events are gener
 
 Some clarification on what the terminology in these events refers to:
 
-- **Session**: is an **Mesh Event** scheduled for the Mesh application or an immersive meeting from teams.  When you schedule a standalone meeting, certain things are configured like the environment to use and assignment of a co-organizer, for example. Those bits of information are stored in the SessionXXXXXXXXXX events.
+- **Session**: refers to sessions when certain things are configured for environments or meetings. There are three types of sessions that are captured by audit logs:
+  - *Template Customization Session*: logs are captured when a user customizes an event template and saves changes in the Mesh application.
+  - *Event Customization Session*: logs are captured when a user customizes a single event and saves changes in the Mesh application.
+  - *Event Session*: logs are captured when a Mesh event occurs. Typically, the configuration is immutable since components cannot be placed by users in a live event, for example.
 
-- **World**: refers to Collections in Mesh on the web.
+- **World** : refers to Collections in Mesh on the web. Collections is a bucket that holds environments and templates of environments that are used in Mesh events. Audit logs capture when a user creates a Collection, deletes a Collection, adds members to a Collection, adds Owners to a Collection, or removes Owners from a collection.
 
-- **Component**: refers to 3D objects. 
+- **Component**: refers to the Objects that are rendered in an environment when a session is started for an event, template, or customization session. If a user attempts to enter an environment, the components in that environment are loaded and captured by component logs.
 
 ## Gather audit logs for Mesh
 
