@@ -223,7 +223,9 @@ To learn more about single room vs. multi room events, see [Create an event in M
 
 ### Conditional Access & Quest
 
-Conditional access is an important part of a zero-trust approach to helping secure your network and resources. As part of zero trust, many companies use conditional access features policies with Azure Active Directory and Microsoft Intune to restrict the types of devices that are permitted to access company resources, and even the operating system version and configuration on those devices; devices that meet the defined profile are allowed in, and any other device that is not specified is denied access. Meta has released a beta GA version MDM support for Quest that works with Intune. Each company using Mesh in pre-release will have to work with their security and endpoint management teams to decide if a policy can be constructed that is acceptable to the company's risk profile while still permitting access to Quest devices. 
+Conditional access is an important part of a zero-trust approach to helping secure your network and resources. As part of zero trust, many companies use conditional access features policies with Microsoft Entra and Microsoft Intune to restrict the types of devices that are permitted to access company resources, and even the operating system version and configuration on those devices; devices that meet the defined profile are allowed in, and any other device that is not specified is denied access. Meta has released a beta GA version MDM support for Quest that works with Intune. Each company using Mesh in pre-release will have to work with their security and endpoint management teams to decide if a policy can be constructed that is acceptable to the company's risk profile while still permitting access to Quest devices.
+
+There is one solution currently: In order to access Mesh on Quest with conditional access policies that may block Mesh on Quest, the solution is to create a custom conditional access policy in Microsoft Entra to exclude Microsoft Mesh Services and Office 365.
 
 For more information about Conditional Access, see:
 
