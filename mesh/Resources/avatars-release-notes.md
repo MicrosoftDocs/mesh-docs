@@ -2,9 +2,9 @@
 title: Avatars in Microsoft Teams - What's new
 description: Avatars in Microsoft Teams - Latest feature release 
 ms.service: mesh
-author: qianw211
-ms.author: qianwen
-ms.date: 1/26/2024
+author: typride
+ms.author: tmilligan
+ms.date: 04/19/2024
 ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -22,9 +22,6 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 | Mobile | Teams mobile | View other avatars only |
 | VDI | Teams | View other avatars only |
 
-## April 18, 2024
-
-* Avatar emotes refresh that improves the content based on usage, workplace appropriateness, and global relevance, as well as a overall tone adjustment for default emote intensity.
 
 ## Jan 26, 2024
 

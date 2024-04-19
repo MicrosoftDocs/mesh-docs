@@ -4,7 +4,7 @@ description: Mesh toolkit release notes
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
-ms.date: 2/12/2024
+ms.date: 4/19/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---

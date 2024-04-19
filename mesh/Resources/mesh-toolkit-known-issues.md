@@ -2,9 +2,9 @@
 title: Known issues for Mesh toolkit
 description: Mesh toolkit active known issues
 ms.service: mesh
-author: qianw211    
-ms.author: vinnietieto
-ms.date: 2/12/2024
+author: typride 
+ms.author: tmilligan
+ms.date: 4/19/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---

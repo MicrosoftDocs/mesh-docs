@@ -4,7 +4,7 @@ description: Currently active known issues and limitations for Immersive spaces 
 ms.service: mesh
 author: typride  
 ms.author: tmilligan
-ms.date: 1/17/2023
+ms.date: 4/19/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
