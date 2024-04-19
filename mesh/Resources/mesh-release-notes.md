@@ -11,6 +11,16 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 # Mesh release notes
 
+## Version update history 
+
+Microsoft Mesh application
+
+| Release year | Release date | Mesh version |
+|--------------|--------------|--------------|
+| 2024         | April 18     | 5.2403.XX+   |
+| 2024         | April 9      | 5.2403.XX    |
+| 2024         | March 11     | 5.2402.XX    |
+
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
 ## Version 5.2403.0 (Preview)
