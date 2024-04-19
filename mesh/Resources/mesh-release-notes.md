@@ -25,7 +25,11 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ### Resolved product issues
 
+The following product issues have been fixed for this release:
+
 * In high-contrast mode, the descriptions for environments will not disappear.
+
+* Fixed a latency issue when joining an event that was passed onto the user, especially noticeable in custom environments.
 
 * The radio in the Lakehouse has a properly functioning button to start/stop playing music.
 
