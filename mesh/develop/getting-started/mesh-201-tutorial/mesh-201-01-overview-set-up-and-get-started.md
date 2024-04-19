@@ -4,7 +4,7 @@ description: Learn about the prerequsites, set up, and then get started with the
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 2/27/2024
+ms.date: 4/18/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web
 ---
@@ -54,9 +54,9 @@ If you've been developing Mesh experiences for a while and are familiar not only
 
 Minimum PC requirements: 4 CPU cores, 8GB RAM
 
-### Unity version 2022.3.7f1
+### Unity version 2022.3.15
 
-Unity version 2022.3.7f1 is required for this tutorial.
+Unity version 2022.3.15 is required for this tutorial.
 
 [Review system requirements for Unity](https://docs.unity3d.com/2022.3/Documentation/Manual/system-requirements.html)
 
