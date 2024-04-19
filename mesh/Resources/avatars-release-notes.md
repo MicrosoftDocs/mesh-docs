@@ -22,7 +22,9 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 | Mobile | Teams mobile | View other avatars only |
 | VDI | Teams | View other avatars only |
 
-## March 11, 2024
+## April 18, 2024
+
+* Avatar emotes refresh that improves the content based on usage, workplace appropriateness, and global relevance, as well as a overall tone adjustment for default emote intensity.
 
 ## Jan 26, 2024
 

@@ -39,6 +39,17 @@ These are the offerings and packages currently available. There may be slight di
 
 ### What's new
 
+* Add Screen Share support to Mesh Toolkit, allowing developers to place on their environments screen share components that later will allow users in a Mesh to screenshare.
+
+    To add a Screen Share component you can:
+
+    1. Open context menu on the **Scene Hierarchy** > **Mesh Toolkit** > **Screen Share**.
+    1. Search for the Screen Share prefab on Mesh Toolkit Package and drag and drop it to your scene.
+
+    The added prefab contains an editable root and a mock UI that will not be uploaded to help developers place and design their environments. Modifying the provided mock UI under [NoUpload] will not be reflected when uploading and joining an event on Mesh. The added prefab can be sized and placed as desired on the scene.
+
+    If adding multiple Screen Share components on the scene all of them will show the same screen when a user starts Screen Sharing on Mesh.
+
 ## Mesh toolkit 5.2403.X
 
 ### What's new
