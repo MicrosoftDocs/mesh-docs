@@ -25,17 +25,21 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2402.X | 2024-3-18     |
-| Mesh toolkit (preview)     | 5.2403.X | 2024-3-12     |
-| Mesh on PC/Quest           | 5.2401.X | 2024-2-20     |
-| Mesh on PC/Quest (Preview) | 5.2402.X | 2024-2-20     |
+| Mesh toolkit               | 5.2403.X | 2024-4-18     |
+| Mesh toolkit (preview)     | 5.2404.X | 2024-3-12     |
+| Mesh on PC/Quest           | 5.2403.X | 2024-4-12     |
+| Mesh on PC/Quest (Preview) | 5.2404.X | 2024-4-12     |
 
-## Mesh toolkit 5.2403.X
+## Mesh toolkit 5.2404.X (Preview)
 
 >[!Caution]
 >This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
 >
 > **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
+
+### What's new
+
+## Mesh toolkit 5.2403.X
 
 ### What's new
 
@@ -50,6 +54,10 @@ These are the offerings and packages currently available. There may be slight di
 * Handle errors when failing to save the Mesh Toolkit configuration to disk.
 
 * Improved reporting of the states of the Mesh Uploader Extensions in the results dialog.
+
+## Mesh emulator
+
+* Fixed bug on emulator when all scenes would get darker if the first player left.
 
 ## Mesh toolkit 5.2402.X
 

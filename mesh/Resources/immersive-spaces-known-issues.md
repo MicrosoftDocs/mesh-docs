@@ -11,6 +11,12 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 # Active known issues and limitations - Immersive Spaces in Teams
 
+## Version 5.2403.0 (April 18, 20)
+
+### Seat selection
+
+* If a user selects a seat while the seat is occupied, the seat remains highlighted as if a user could select the seat still. (40764)
+
 ## Version 5.2401.0 (February 20, 2024)
 
 1. The Radio in Lakehouse plays music at first when the button is not indented, indicating that it's not on, and music notes do not rise from the top, when initially joining a meeting.

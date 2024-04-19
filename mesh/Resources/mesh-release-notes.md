@@ -13,11 +13,15 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
-## Version 5.2403.0 (Preview)
+## Version 5.2403.0
 
 ### What's new
 
 * [Updated firewall requirements](../Setup/Content/preparing-your-organization.md#endoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app) for single room events in the Microsoft Mesh app.
+
+## Conditional access on Quest
+
+* If you have Conditional Access policies in place for your organization that my block on Mesh on Quest, the solution is to create a custom conditional access policy in Microsoft Entra Admin Center to exclude Microsoft Mesh Services and Office 365.
 
 ### Resolved product issues
 
@@ -26,6 +30,14 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 * The radio in the Lakehouse has a properly functioning button to start/stop playing music.
 
 * Avatar eye saturation is improved to be more accurate to the user-selected color palette.
+
+* Fixed an issue where visual scripts using a computed or variable reference to access `Transform` component instances in large environments could cause a spike in network traffic on environment load.
+
+* Fixed a rare issue where an isolated `TravelPoint` (not parented by a `TravelPointGroup`) in a user environment could lead to an internal error that caused visual scripts to be deactivated.
+
+* Fixed environment startup delays (both in Mesh Emulator and the Mesh app) that could be triggered by environments that contain visual scripts with many variable or computed targets for property updates or method invocations while also containing many potential component instances of the corresponding target type.
+
+* The On State Changed event node can now be used in subgraph assets without issue. Previously, attempting to use it in a subgraph asset caused a `GraphPointerException` error to be logged.
 
 ## Version 5.2402.0
 

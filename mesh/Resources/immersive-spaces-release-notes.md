@@ -13,6 +13,16 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
+## Version 5.2403.0 (April 18, 2024)
+
+### What's new
+
+### Resolved product issues
+
+* In high contrast mode, the descriptions for Topics now don't disappear. (28695)
+
+* On Quest, while loading an immersive meeting, the screen may go black and take longer than expected, causing users to become disoriented and hear other users before they enter the space. This has been fixed. (32893)
+
 ## Version 5.2401.0 (February 20, 2024)
 
 ### What's new
@@ -32,6 +42,8 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 ### Resolved product issues
 
 The following product issues have been fixed for this release:
+
+* Keys for dropping interactables, like marshmallow sticks in the Lake House, are the middle mouse button (scroll wheel) and space bar. This is communicated via a short pop up that users might overlook.
 
 * Pressing Mesh buttons + the **Enter** key on the keypad produces no action. The same **Enter** key on the main keyboard selects the button and executes the associated action. (26462)
 
