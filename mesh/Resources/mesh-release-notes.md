@@ -13,19 +13,35 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
-## Version 5.2403.0 (Preview)
+## Version 5.2403.0
 
 ### What's new
 
-* [Updated firewall requirements](../Setup/Content/preparing-your-organization.md#endoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app) for single room events in the Microsoft Mesh app.
+* [Updated firewall requirements](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app) for single room events in the Microsoft Mesh app.
+
+## Conditional access on Quest
+
+* If you have Conditional Access policies in place for your organization that my block on Mesh on Quest, the solution is to create a custom conditional access policy in Microsoft Entra Admin Center to exclude Microsoft Mesh Services and Office 365.
 
 ### Resolved product issues
 
+The following product issues have been fixed for this release:
+
 * In high-contrast mode, the descriptions for environments will not disappear.
+
+* Fixed a latency issue when joining an event that was passed onto the user, especially noticeable in custom environments.
 
 * The radio in the Lakehouse has a properly functioning button to start/stop playing music.
 
 * Avatar eye saturation is improved to be more accurate to the user-selected color palette.
+
+* Fixed an issue where visual scripts using a computed or variable reference to access `Transform` component instances in large environments could cause a spike in network traffic on environment load.
+
+* Fixed a rare issue where an isolated `TravelPoint` (not parented by a `TravelPointGroup`) in a user environment could lead to an internal error that caused visual scripts to be deactivated.
+
+* Fixed environment startup delays (both in Mesh Emulator and the Mesh app) that could be triggered by environments that contain visual scripts with many variable or computed targets for property updates or method invocations while also containing many potential component instances of the corresponding target type.
+
+* The On State Changed event node can now be used in subgraph assets without issue. Previously, attempting to use it in a subgraph asset caused a `GraphPointerException` error to be logged.
 
 ## Version 5.2402.0
 
@@ -59,7 +75,7 @@ The following product issues have been fixed for this release:
 
 ### Mesh on the web
 
-Mesh on the web is moving to cloud.microsoft with the [Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). Currently, we are providing two links for Mesh on the web to ensure a smooth transition. For the new [cloud.microsoft](https://mesh.cloud.microsoft) link, make sure you have allowed the proper endpoints. See [Preparing your organization](../Setup/Content/preparing-your-organization.md#endoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app) for details.
+Mesh on the web is moving to cloud.microsoft with the [Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). Currently, we are providing two links for Mesh on the web to ensure a smooth transition. For the new [cloud.microsoft](https://mesh.cloud.microsoft) link, make sure you have allowed the proper endpoints. See [Preparing your organization](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app) for details.
 
 The Mesh on the web link is:
 
