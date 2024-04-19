@@ -11,10 +11,6 @@ keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 
 # Active known issues - Mesh toolkit
 
-
-## Version 5.2403.0
-
-
 ## Version 5.2402.0
 
 * On public toolkit controllables there was a "Name" property that was not correctly being resolved to the internal field of "Display Name" (it was being mitigated by using the GameObject name directly). This has been fixed in 24.3, however, it will require setting the property on the new DisplayName field on the controllable and reupload with the new Toolkit. (42638)
@@ -22,6 +18,10 @@ keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 * The **Align Field | Set Enabled** and **Align Field | Get Enabled** visual script nodes are directly available for use again.
 
     Workaround: **Use Behaviour | Set Enabled** or **Behaviour | Get Enabled** instead.
+
+### Webslate
+
+* On Quest, the system webview was about two years behind and causes some websites to show an Unsupported browser message. Weve worked with Meta to update Chromium to a more recent version and is now available in Meta Quest's v64 software update.
 
 ## Version 5.2315.0
 
