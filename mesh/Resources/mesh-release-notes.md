@@ -39,7 +39,9 @@ The following product issues have been fixed for this release:
 
 * In high-contrast mode, the descriptions for environments will not disappear.
 
-* Fixed a latency issue when joining an event that was passed onto the user, especially noticeable in custom environments.
+* Fixed environment startup delays (both in Mesh Emulator and the Mesh app) that could be triggered by environments that contain visual scripts with many variable or computed targets for property updates or method invocations while also containing many potential component instances of the corresponding target type. (47009)
+
+* Fixed a latency issue when joining an event that was passed onto the user, especially noticeable in custom environments. (29657)
 
 * The radio in the Lakehouse has a properly functioning button to start/stop playing music.
 
@@ -49,7 +51,7 @@ The following product issues have been fixed for this release:
 
 * Fixed a rare issue where an isolated `TravelPoint` (not parented by a `TravelPointGroup`) in a user environment could lead to an internal error that caused visual scripts to be deactivated.
 
-* Fixed environment startup delays (both in Mesh Emulator and the Mesh app) that could be triggered by environments that contain visual scripts with many variable or computed targets for property updates or method invocations while also containing many potential component instances of the corresponding target type.
+
 
 * The On State Changed event node can now be used in subgraph assets without issue. Previously, attempting to use it in a subgraph asset caused a `GraphPointerException` error to be logged.
 
