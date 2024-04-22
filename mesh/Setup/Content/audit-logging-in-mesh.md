@@ -46,27 +46,27 @@ In order to conduct audit logging for Mesh operations, the following prerequisit
 
 The audit events that are currently available are listed below. Events are generated based on user activity in Mesh Admin portal, or session/template customization activity in the Mesh application.
 
-| Event name                     | Description                                           |
-|--------------------------------|-------------------------------------------------------|
-| EnvironmentDeleted             | Delete a Mesh Environment.                            |
-| EnvironmentPublished           | Publish a new version of a Mesh Environment.          |
-| ComponentCreated               | Create a session component for a given Mesh session.  |
-| ComponentDeleted               | Delete a session component of a given Mesh session.   |
-| TemplateCreated                | Create a new Mesh World Template.                     |
-| TemplateDeleted                | Delete Mesh World Template contents and metadata.     |
-| WorldCreated                   | Create a Mesh World.                                  |
-| WorldDeleted                   | Delete a Mesh World.                                  |
-| WorldUpdated                   | Update a Mesh World.                                  |
-| WorldMembersAdded              | Add members to the Mesh World.                        |
-| WorldOwnersAdded               | Add owners of a Mesh World.                           |
-| WorldMembersRemoved            | Remove a member from a Mesh World.                    |
-| WorldOwnersRemoved             | Remove an owner from a Mesh World.                    |
-| EnvironmentStorageCreated      | Create a new storage location for a Mesh Environment. |
-| SessionMetadataCreated         | Create Mesh World Session Metadata.                   |
-| SessionMetadataDeleted         | Delete Mesh World Session Metadata.                   |
-| SessionMetadataUpdated         | Update Mesh World Session Metadata.                   |
-| SessionMetadataTemplateCreated | Create a template customization for Mesh World.       |
-| SessionEnvironmentSet          | Set the environment for a collaboration session.      |
+|--------------------------------|------------------------------------------------------------|
+| ------------------------------ | -----------------------------------------------------------|
+| EnvironmentDeleted             | Delete a Mesh Environment.                                 |
+| EnvironmentPublished           | Publish a new version of a Mesh Environment.               |
+| ComponentCreated               | Create a session component for a given Mesh session.       |
+| ComponentDeleted               | Delete a session component of a given Mesh session.        |
+| TemplateCreated                | Create a new Mesh World Template.                          |
+| TemplateDeleted                | Delete Mesh World Template contents and metadata.          |
+| WorldCreated                   | Create a Mesh World/Collection.                            |
+| WorldDeleted                   | Delete a Mesh World/Collection.                            |
+| WorldUpdated                   | Update a Mesh World/Collection.                            |
+| WorldMembersAdded              | Add members to the Mesh World/Collection.                  |
+| WorldOwnersAdded               | Add owners of a Mesh World/Collection.                     |
+| WorldMembersRemoved            | Remove a member from a Mesh World/Collection.              |
+| WorldOwnersRemoved             | Remove an owner from a Mesh World/Collection.              |
+| EnvironmentStorageCreated      | Create a new storage location for a Mesh Environment.      |
+| SessionMetadataCreated         | Create Mesh World/Collection Session Metadata.             |
+| SessionMetadataDeleted         | Delete Mesh World/Collection Session Metadata.             |
+| SessionMetadataUpdated         | Update Mesh World/Collection Session Metadata.             |
+| SessionMetadataTemplateCreated | Create a template customization for Mesh World/Collection. |
+| SessionEnvironmentSet          | Set the environment for a collaboration session.           |
 
 Some clarification on what the terminology in these events refers to:
 
