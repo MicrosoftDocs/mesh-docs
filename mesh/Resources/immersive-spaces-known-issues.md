@@ -4,12 +4,18 @@ description: Currently active known issues and limitations for Immersive spaces 
 ms.service: mesh
 author: typride  
 ms.author: tmilligan
-ms.date: 1/17/2023
+ms.date: 4/19/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
 
 # Active known issues and limitations - Immersive Spaces in Teams
+
+## Version 5.2403.0 (April 18, 20)
+
+### Seat selection
+
+* If a user selects a seat while the seat is occupied, the seat remains highlighted as if a user could select the seat still. (40764)
 
 ## Version 5.2401.0 (February 20, 2024)
 
