@@ -1,12 +1,12 @@
 ---
-title: Release notes for Mesh
-description: Mesh release notes
+title: Audit logging for Microsoft Mesh
+description: How to use audit logging to investigate events done with Mesh resources, including the Mesh standalone application and associated azure or M365 events, and immersive spaces in Teams.
 ms.service: mesh
 author: typride  
 ms.author: tmilligan
-ms.date: 04/16/2024
+ms.date: 04/22/2024
 ms.topic: Guide
-keywords: Microsoft Mesh, M365, Unity, API, reference, documentation, features, performance, powershell, Microsoft Purview
+keywords: Microsoft Mesh, M365, Unity, API, reference, documentation, features, performance, powershell, Microsoft Purview, Exchange Online PowerShell
 ---
 
 # Audit logging in Mesh
