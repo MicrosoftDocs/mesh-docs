@@ -85,11 +85,15 @@ Some clarification on what the terminology in these events refers to:
 
 In PowerShell, load the Exchange Online PowerShell module
 
-`Import-Module ExchangeOnlineManagement`
+```powershell
+Import-Module ExchangeOnlineManagement
+```
 
 Connect and authenticate
 
-`Connect-ExchangeOnline -UserPrincipalName maxgolov@meshrp.onmicrosoft.com`
+```powershell
+Connect-ExchangeOnline -UserPrincipalName [USER]@[AADDOMAIN].com
+```
 
 For more information, see [how to connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps&preserve-view=true).
 
