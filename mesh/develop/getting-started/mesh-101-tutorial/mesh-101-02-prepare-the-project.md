@@ -4,7 +4,7 @@ description: Learn about adding a few basic features that are necessary for the 
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 2/20/2023
+ms.date: 4/22/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
@@ -19,8 +19,8 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 
 ## Scenes in the project
 
-1. Open the **Mesh101** project in Unity. If you have more than
-    one version of Unity installed, be sure to open the project with `Unity 2022.3.15f1` which is required for this tutorial.
+1. Open the **Mesh101** project in Unity. If you have more than one version of Unity installed, be sure to open the project with `Unity 2022.3.15f1` which is required for this tutorial.
+
 
 2. In the **Assets** folder, there are two scenes available: **Starting Point** and **Finished Project**.
 

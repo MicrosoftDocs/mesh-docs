@@ -4,7 +4,7 @@ description: Learn how to prepare for creating your first Mesh Cloud Scripting p
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 3/12/2024
+ms.date: 4/18/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
@@ -23,7 +23,7 @@ Make sure you have the following installed:
 
 [Azure CLI 2.40.0.](/cli/azure/install-azure-cli)
 
-[.NET 6.0 SDK Windows](https://dotnet.microsoft.com/download/dotnet/6.0)
+[.NET 7.0 SDK Windows](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 
 **To confirm that you have the Azure CLI installed**:
 
