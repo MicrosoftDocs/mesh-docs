@@ -201,7 +201,7 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/417-set-object-variable-node.png)
 
-1. In the **Get Object Variable** node, click the variable name drop-down and then select **isPlaying**.
+1. In the **Set Object Variable** node, click the variable name drop-down and then select **isPlaying**.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/418-set-var-is-playing.png)
 
@@ -212,7 +212,7 @@ If *On State Changed* has a value of true, the video will play. If it's already 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/419-add-negate-node.png)
 
 1. Drag a connector from the Data Input port of the **Negate** node and then create a new *Get Object Variable* node. (In the Fuzzy Finder, search for **get object variable**.)
-1. In the **Set Object Variable** node, click the variable name drop-down and then select **isPlaying**.
+1. In the **Get Object Variable** node, click the variable name drop-down and then select **isPlaying**.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/420-get-object-is-playing.png)
 

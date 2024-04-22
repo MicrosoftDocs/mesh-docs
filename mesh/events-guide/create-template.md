@@ -35,7 +35,7 @@ Templates can be created directly in Microsoft Mesh app dashboard, or created fr
 
     - **Published** Templates cannot be edited further and can be used in Events.
 
-    - **Draft** Templates are a work-in-progress, can be customized, and can be used in Event.
+    - **Draft** Templates are a work-in-progress, can be customized, but cannot be used to create Events until published.
 
     :::image type="content" source="../media/mesh-event-producer-guide/template-create-new.png" alt-text="Template create new mesh app":::
 

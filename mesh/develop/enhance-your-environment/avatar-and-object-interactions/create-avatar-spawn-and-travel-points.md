@@ -38,11 +38,11 @@ The *Default Spawn Group* is the group you want avatars to spawn into when they 
 1. In the **Inspector**, click the **Add Component** button.
 1. Search for and then select **Travel Point Group.**
 
-![A screen shot of a game object with the Travel Point Group component attached.](../../../media/enhance-your-environment/object-player-interactions/006-travel-point-group.png)
+    ![A screen shot of a game object with the Travel Point Group component attached.](../../../media/enhance-your-environment/object-player-interactions/006-travel-point-group.png)
 
 1. If you want the group to be the one that avatars spawn into when initially joining an event, make sure **Default Spawn Group** is selected. Otherwise, make sure it's unselected.  
 
-![A screen shot of a Travel Point component with its Default Spawn Group property selected.](../../../media/enhance-your-environment/object-player-interactions/023-default-spawn-group-selected.png)
+    ![A screen shot of a Travel Point component with its Default Spawn Group property selected.](../../../media/enhance-your-environment/object-player-interactions/023-default-spawn-group-selected.png)
 
 ### Create Travel Points
 

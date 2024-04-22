@@ -55,7 +55,7 @@ a tool you use every day&#8212;bringing co-presence to hybrid or remote teams.
 
 Use Microsoft Mesh for medium-to-large events with up to 200 people. Create custom experiences that are tailored to your specific business needs, such as employee events, training, guided tours, or internal product showcases.
 
-Deliver dazzling immersive experiences that can be experienced across on PC or Meta headsets. You can start with ready-to-use environments or develop your own custom environments using Unity and the Mesh toolkit. You can then use no-code customization to enhance your events with images, videos, or screen shares.```
+Deliver dazzling immersive experiences that can be experienced across on PC or Meta headsets. You can start with ready-to-use environments or develop your own custom environments using Unity and the Mesh toolkit. You can then use no-code customization to enhance your events with images, videos, or screen shares.
 
 ### What can you do in custom immersive experiences?
 
