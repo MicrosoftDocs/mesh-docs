@@ -23,7 +23,7 @@ You must use Unity version 2022.3.15.
 
 [Get help installing Unity Template](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 
-Your installation should include modules for Android and Windows. When you create a new project, we recommend using the URP 3D Core template.
+Your installation should include modules for Android and Windows. Make sure to include the module [`Windows Build Support (IL2CPP)`](https://docs.unity3d.com/2023.2/Documentation/Manual/IL2CPP.html); this is required. When you create a new project, we recommend using the URP 3D Core template.
 
 ## Intermediate to advanced Unity skills
 
