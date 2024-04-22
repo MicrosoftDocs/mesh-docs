@@ -91,21 +91,21 @@ Connect and authenticate
 
 `Connect-ExchangeOnline -UserPrincipalName maxgolov@meshrp.onmicrosoft.com`
 
-For more information, see [how to connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+For more information, see [how to connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps&preserve-view=true).
 
 ### Verify that audit logging is on
 
 Audit logging is turned on by default for Microsoft 365 organizations. However, when setting up a new Microsoft 365 organization, you should verify the auditing status for your organization. For instructions, see how to [turn auditing on or off](/purview/audit-log-enable-disable).
 
 > [!TIP]
-> To check the permissions required for each cmdlet, please visit [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions?view=exchange-ps).
+> To check the permissions required for each cmdlet, please visit [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions?view=exchange-ps&preserve-view=true).
 
 ### Search for Unified AuditLog events
 
-Once you've verified that audit logging is turned **on** and you have the proper permissions to run cmdlets, you can now search for log records using the [Search-UnifiedAuditLog command](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) with various filters.
+Once you've verified that audit logging is turned **on** and you have the proper permissions to run cmdlets, you can now search for log records using the [Search-UnifiedAuditLog command](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps&preserve-view=true) with various filters.
 
 > [!IMPORTANT]
-> There are a wide array of parameters for `Search-UnifiedAuditLog`. Please review [Search-UnifiedAuditLog documentation | Microsoft Learn](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) for more info.
+> There are a wide array of parameters for `Search-UnifiedAuditLog`. Please review [Search-UnifiedAuditLog documentation | Microsoft Learn](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps&preserve-view=true) for more info.
 
 The audit record contents contain the following fields:
 
@@ -125,7 +125,7 @@ A basic query for audit logs with `-StartDate` and `-EndDate`.
 `Search-UnifiedAuditLog -StartDate 2024-04-01 -EndDate 2024-05-01 | Export-Csv -Path .\export-all.csv -NoTypeInformation`
 
 > [!TIP]
-> `-NoTypeInformation` is [a PowerShell utility](/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-7.4) to make .csv exports cleaner.
+> `-NoTypeInformation` is [a PowerShell utility](/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-7.4&preserve-view=true) to make .csv exports cleaner.
 
 #### Search Search-UnifiedAuditLog example 2
 
@@ -143,3 +143,4 @@ A basic query for all audit logs with `-UserIds` that include the `[email@compan
 
 The audit log record contents return in a JSON format. AuditData analysis may require a familiarity with [parsing text as JSON or XML](https://support.microsoft.com/en-us/office/parse-text-as-json-or-xml-power-query-7436916b-210a-4299-83dd-8531a1d5e945).
 
+The record contents will come 
