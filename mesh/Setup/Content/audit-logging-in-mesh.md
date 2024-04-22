@@ -121,8 +121,17 @@ The audit record contents contain the following fields:
 #### Search-UnifiedAuditLog example 1
 
 A basic query for audit logs with `-StartDate` and `-EndDate`.
+```powershell
+Search-UnifiedAuditLog -StartDate 2024-04-01 -EndDate 2024-05-01 | Export-Csv -Path .\export-all.csv -NoTypeInformation
+```
+The record contents will come in a format that may be hard to parse initially, but once formatted it should be understandable.
 
-`Search-UnifiedAuditLog -StartDate 2024-04-01 -EndDate 2024-05-01 | Export-Csv -Path .\export-all.csv -NoTypeInformation`
+Example response:
+
+```json
+"AzureActiveDirectory","4/9/2024 6:49:03 PM","[XXXXXXX]@[XXXXX].com","Update group.","{""CreationTime"":""2024-04-09T18:49:03"",""Id"":""871d4a2e-8e38-488e-a83e-b7a7c6c65228"",""Operation"":""Update group."",""OrganizationId"":""05e05ab5-f8a3-409d-bfa5-01edb8cecf82"",""RecordType"":8,""ResultStatus"":""Success"",""UserKey"":""10032002CCA9134A@meshrp.onmicrosoft.com"",""UserType"":0,""Version"":1,""Workload"":""AzureActiveDirectory"",""ClientIP"":""20.171.55.147"",""ObjectId"":""Group_1ae6e759-85e0-4f8f-b6b5-691b72ca1ba7"",""UserId"":""[XXXXXXX]@[XXXXX].com"",""AzureActiveDirectoryEventType"":1,""ExtendedProperties"":[{""Name"":""additionalDetails"",""Value"":""{\""GroupType\"":\""Unified\"",\""User-Agent\"":\""kiota-dotnet\/1.3.4\""}""},{""Name"":""extendedAuditEventCategory"",""Value"":""Group""}],""ModifiedProperties"":[{""Name"":""Description"",""NewValue"":""[\r\n  \""New collection of stuff for M365 Audit feature testing\""\r\n]"",""OldValue"":""[\r\n  \""New collection of stuff\""\r\n]""},{""Name"":""MailNickname"",""NewValue"":""[\r\n  \""MyCollectionofStuff2272\""\r\n]"",""OldValue"":""[\r\n  \""MyCollectionofStuff2\""\r\n]""},{""Name"":""Included Updated Properties"",""NewValue"":""Description, MailNickname"",""OldValue"":""""},{""Name"":""TargetId.GroupType"",""NewValue"":""Unified"",""OldValue"":""""}],""Actor"":[{""ID"":""[XXXXXXX]@[XXXXX].com"",""Type"":5},{""ID"":""10032002CCA9134A"",""Type"":3},{""ID"":""Microsoft Mesh Services"",""Type"":1},{""ID"":""3016d0ce-47cc-4005-b11d-5fcabb1b643d"",""Type"":2},{""ID"":""User_c7e95ea2-64f6-4743-b8e6-52ce520cba81"",""Type"":2},{""ID"":""c7e95ea2-64f6-4743-b8e6-52ce520cba81"",""Type"":2},{""ID"":""User"",""Type"":2}],""ActorContextId"":""05e05ab5-f8a3-409d-bfa5-01edb8cecf82"",""ActorIpAddress"":""20.171.55.147"",""InterSystemsId"":""2cd62b4e-4744-4c55-8a88-e64771393266"",""IntraSystemId"":""0b9fe72c-eca5-4ad5-a9c5-5986e8bc963d"",""SupportTicketId"":"""",""Target"":[{""ID"":""Group_1ae6e759-85e0-4f8f-b6b5-691b72ca1ba7"",""Type"":2},{""ID"":""1ae6e759-85e0-4f8f-b6b5-691b72ca1ba7"",""Type"":2},{""ID"":""Group"",""Type"":2},{""ID"":""My Collection of Stuff 2"",""Type"":1}],""TargetContextId"":""05e05ab5-f8a3-409d-bfa5-01edb8cecf82""}","4","2148","871d4a2e-8e38-488e-a83e-b7a7c6c65228","True","Unchanged"
+```
+
 
 > [!TIP]
 > `-NoTypeInformation` is [a PowerShell utility](/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-7.4&preserve-view=true) to make .csv exports cleaner.
@@ -131,16 +140,20 @@ A basic query for audit logs with `-StartDate` and `-EndDate`.
 
 A basic query for all audit logs with `-Operations` that include the `World` string.
 
-`Search-UnifiedAuditLog -StartDate 2024-04-01 -EndDate 2024-05-01 -Operations World* | Export-Csv -Path .\export-all-world.csv -NoTypeInformation`
+```powershell
+Search-UnifiedAuditLog -StartDate 2024-04-01 -EndDate 2024-05-01 -Operations World* | Export-Csv -Path .\export-all-world.csv -NoTypeInformation
+```
 
 #### Search Search-UnifiedAuditLog example 3
 
 A basic query for all audit logs with `-UserIds` that include the `[email@company.com]` string.
 
-`Search-UnifiedAuditLog -StartDate 2024-04-01 -EndDate 2024-04-10 -UserIds [email@company.com] | Export-Csv -Path .\export-all-Max.csv -NoTypeInformation`
+```powershell
+Search-UnifiedAuditLog -StartDate 2024-04-01 -EndDate 2024-04-10 -UserIds [email@company.com] | Export-Csv -Path .\export-all-Max.csv -NoTypeInformation
+```
 
 ### Record contents analysis
 
 The audit log record contents return in a JSON format. AuditData analysis may require a familiarity with [parsing text as JSON or XML](https://support.microsoft.com/en-us/office/parse-text-as-json-or-xml-power-query-7436916b-210a-4299-83dd-8531a1d5e945).
 
-The record contents will come 
+The set of records can be imported to Excel for analysis. For more info, see [how to import data from sources into Excel](https://support.microsoft.com/en-us/office/import-data-from-data-sources-power-query-be4330b3-5356-486c-a168-b68e9e616f5a).
