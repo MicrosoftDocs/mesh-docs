@@ -24,7 +24,7 @@ Audit logging help organizations effectively respond to security events, forensi
 Audit logging for Mesh can be done using [Exchange Online Powershell](/powershell/exchange/exchange-online-powershell?view=exchange-ps&preserve-view=true).
 
 > [!NOTE]
-> Microsoft Mesh has two main offerings for users:  Immersive spaces in Teams and custom immersive spaces. Audit logging does not treat these offerings as independent and thus the events in the audit may refer to either offering or both offerings, depending on the event you edit.
+> Microsoft Mesh has two main offerings for users:  Immersive spaces in Teams and custom immersive spaces. Audit logging does not treat these offerings as independent and thus the events in the audit may refer to either offering or both offerings, depending on the event you query.
 
 Examples of user activity and operations that an admin may be interested in for Mesh are:
 
@@ -46,7 +46,7 @@ In order to conduct audit logging for Mesh operations, the following prerequisit
 
 The audit events that are currently available are listed below. Events are generated based on user activity in Mesh Admin portal, or session/template customization activity in the Mesh application.
 
-|--------------------------------|------------------------------------------------------------|
+|Event Name| Description|
 | ------------------------------ | -----------------------------------------------------------|
 | EnvironmentDeleted             | Delete a Mesh Environment.                                 |
 | EnvironmentPublished           | Publish a new version of a Mesh Environment.               |
