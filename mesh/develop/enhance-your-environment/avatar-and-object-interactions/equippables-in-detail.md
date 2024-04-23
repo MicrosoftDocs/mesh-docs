@@ -48,6 +48,55 @@ When an attendee grabs a Wineglass, their hand holds the glass by the stem. To r
 
 ![Screen shots of an avatar holding a Wineglass in the default position and raising it in a toast.](../../../media/enhance-your-environment/equips-in-detail/006-wineglass-toast.png)
 
+### Birthday Cake
+
+
+### Drill
+
+
+### Wrench
+
+
+### Baseball
+
+
+### Beachball
+
+The Beachball uses a specfic type of throwing--it's more of a push than a throw. It's based on a vector from the attendee's neck and chest area towards the target reticle. The attendee can move around and aim the push. 
+
+![Screen shots of an throwing the Beachball with a pushing motion.](../../../media/enhance-your-environment/equips-in-detail/009-beachball-throw.png)
+
+
+### Trophy
+
+
+### Tablet
+
+Activation mode: toggle
+
+An attendee may want to move around in an event and access a user interface that they can carry with them. The Tablet can provide this; you can attach events to objects on the screen of the Tablet, and then the attendee can trigger the events by touching the screen. One way to achieve this is by attaching a [WebSlate](../../enhance-your-environment/webcontent.md).
+
+When the Tablet is activated, the attendee holds the Tablet up to their face but slightly lower than eye level. This means that the attendee has an unobstructed view if they look around the room. When the Tablet is deactivated, the Tablet is still held in front of the attendee but in a lower position.
+
+![Screen shots of an avatar holding a Wineglass in the default lower position and the raised position.](../../../media/enhance-your-environment/equips-in-detail/008-tablet-hold.png)
+
+### Coffee cup
+
+
+### Wand
+
+
+
+
+## Position of objects
+
+There are different ways of holding an object. Some objects, when grabbed, are designed to be held away from the body and high enough to be in your field of view (for example, the Wineglass or Trophy). 
+
+< TBD image>
+
+Other objects are designed to be hold closer to the body and *not* in your field of view (for example, the Wrench). 
+
+< TBD image>
 
 
 
@@ -71,4 +120,12 @@ To change the state, the avatar can click the screen anywhere except on the Equi
 There can be more than one pose that's incorporated into a transition. For example, with the Wand, it's not just a linear transition from A to B; there can be a wrist flick and the durtation of that transition can be adjusted in the Animation Curve.
 
 ![______](../../../media/enhance-your-environment/equips-in-detail/007-animation-curve.png)
+
+Wand: The trigger is sent just before the last pose. If you're looking at the trigger activation that's sent by Mesh Interactable Setup, it sends it just before the last (pose?) there.
+
+TO DO: David said there's a GIF available with the transition of the sizes of a ball pose for the hand. A Cylinder holding, and a pinch kind of pose. That's accessible in the old hand pose or in the throw hand pose or in the aim hand pose in the setup options. 21:00. The hand pose refers to the finger position (shows the avatar holding a coffee mug). Those are a series of dictated hand positions. Within the ball, pinch and cylinder, there's a flexible range that devs are able to tune. (Visual of the avatar holding a tea cup). This shows a small pinch vs. something else with a larger pinch. 
+
+(David:)" We've created the prefabs in a way that devs can take their own art and if it's in a similar size and similar type of orientation, they can turn off ours (art?) and turn on theirs in the same structure. Each Equippable has a child object named "Artwork" which is where you can insert your custom model.  
+
+Question: David mentioned that they're working on putting an avatar in the scene so devs have a basis of comparison for determining scale. He said it hasn't been approved yet. What's the status of that right now? Is this the object that Cameron talked about recently?
 
