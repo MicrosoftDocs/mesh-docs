@@ -4,22 +4,29 @@ description: Active known issues for Mesh
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
-ms.date: 1/17/2023
+ms.date: 4/19/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
 
 # Active known issues - Mesh
 
+## Version 5.2403.0 (April 18, 2024)
+
+* There may be a travel time latency that occurs when joining a space, which can cause avatar movement and audio to be out of sync, causing confusion while interacting with other users in the same space. This issue is more pronounced in custom environments where certain environment and event building occurs, causing the aggregate latency to be more pronounced.
+
 ## Version 5.2402.0 (March 12, 2024)
 
 * There may be a travel time latency that occurs when joining a space, which can cause avatar movement and audio to be out of sync, causing confusion while interacting with other users in the same space. This issue is more pronounced in custom environments where certain environment and event building occurs, causing the aggregate latency to be more pronounced.
- 
+
 * On starting a broadcast, broadcasters may experience a temporary low framerate. (32963)
 
 * Keys for dropping interactables, like marshmallow sticks in the Lake House, are the middle mouse button (scroll wheel) and space bar. This is communicated via a short pop up that users might overlook. (32968)
 
-* 
+## Conditional access on Quest
+
+* In order to access Mesh on Quest with conditional access policies that may block Mesh on Quest, the solution is to create a custom conditional access policy in Microsoft Entra to exclude Microsoft Mesh Services and Office 365.
+
 ## Version 5.2401.0 (February 20, 2024)
 
 * On starting a broadcast, broadcasters may experience a temporary low framerate. (32963)

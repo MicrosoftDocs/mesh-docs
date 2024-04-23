@@ -4,7 +4,7 @@ description: Learn about the prerequsites and setup process for the Mesh 101 tut
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 12/4/2023
+ms.date: 4/22/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, GitHub
 ---
@@ -73,9 +73,9 @@ If you don't, you can still [create, customize and produce](../../../events-guid
 
 Minimum PC requirements: 4 CPU cores, 8GB RAM
 
-### Unity version 2022.3.7f1
+### Unity version 2022.3.15
 
-Unity version 2022.3.7f1 is required for this tutorial.
+Unity version 2022.3.15f1 is required for this tutorial.
 
 [Review system requirements for Unity](https://docs.unity3d.com/2022.3/Documentation/Manual/system-requirements.html)
 
