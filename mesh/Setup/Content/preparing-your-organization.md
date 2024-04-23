@@ -214,6 +214,9 @@ To learn more, see [Set up immersive spaces in Teams](/microsoftteams/meeting-im
 
 ### Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)
 
+> [!IMPORTANT]
+> Due to an active issue, single room and multi-room events require the same firewall endpoint and port configurations. We are actively working to resolve this issue and apologize for any inconvenience. This notice will be removed once the fix is rolled out.
+
 |   | Single room event in the Mesh app | Multi room event in the Mesh app  | 
 |---|---|---|
 | **Required endpoints** | Aligned to standard set of Microsoft Teams requirements outlined in [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams). | To ensure Mesh works properly, allow the following endpoints. All endpoints need to allow traffic on TCP ports 80 and 443: <p><p> \*.officeapps.live.com <br> \*.microsoft.com <br> \*.office365.com <br> \*.office.com <br> \*.office.net <br> \*.cloud.microsoft <p><p> |
