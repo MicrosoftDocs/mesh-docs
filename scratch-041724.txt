@@ -1,13 +1,14 @@
 Science-building:
 
-ScienceBuilding_MainHall_02
-Gallery_Rail
-BUOYANCY_flag
-ScienceBuilding_MainHall_02
-GravityStation_Flag_01
-ScienceBuilding_MainHall_02_NavFloor
+ScienceBuilding_MainHall_02=
+Gallery_Rail=
+BUOYANCY_flag=
+ScienceBuilding_MainHall_02=
+GravityStation_Flag_01=
+ScienceBuilding_MainHall_02_NavFloor=
 
-NeonPlanets
+
+NeonPlanets=
 
 Auditorium-atrium-assets
 
