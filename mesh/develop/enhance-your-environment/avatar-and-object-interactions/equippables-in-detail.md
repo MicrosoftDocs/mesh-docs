@@ -53,6 +53,10 @@ When an attendee grabs a Wineglass, their hand holds the glass by the stem. To r
 
 ### Drill
 
+Activation mode: toggle
+
+
+
 
 ### Wrench
 
@@ -71,6 +75,14 @@ The Beachball uses a specfic type of throwing--it's more of a push than a throw.
 
 
 ### Tablet
+
+## Grab and throw behaviors
+
+In real life, certain objects that are in the same general category but have different shapes and sizes--for example, a softball, football, and beach ball--are held and thrown in different ways. With Mesh Equippables, these objects are grouped together into one category of "tossable" objects; all objects in this category are held and thrown the same way. A tossable object connects with a specific pre-loaded animation contained in the avatar. Providing more variety presents a technical challenge because it calls for more animations to be pre-loaded which could result in decreased performance. Despite this, we're working on an inverse kinematics (IK) system which we expect will provide more realistic grab-and-hold behaviors per object.
+
+
+With this animation, you can look around the room--up, down, left or right 
+
 
 Activation mode: toggle
 
@@ -128,4 +140,8 @@ TO DO: David said there's a GIF available with the transition of the sizes of a 
 (David:)" We've created the prefabs in a way that devs can take their own art and if it's in a similar size and similar type of orientation, they can turn off ours (art?) and turn on theirs in the same structure. Each Equippable has a child object named "Artwork" which is where you can insert your custom model.  
 
 Question: David mentioned that they're working on putting an avatar in the scene so devs have a basis of comparison for determining scale. He said it hasn't been approved yet. What's the status of that right now? Is this the object that Cameron talked about recently?
+
+Brandon talks about the script graphs:
+
+Wand
 
