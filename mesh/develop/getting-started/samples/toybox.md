@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics
 
 ![A long distance view of the Toybox scene in a Mesh event.](../../../media/samples/005-toybox.png)
 
-*Toybox* is a Mesh sample that empowers creators to build interactive Mesh experiences and games. The sample provides a number of activities that use mixtures of assets, shaders, visual scripting, animations, VFX, and SoundFX to drive social engagment across Mesh experiences.
+*Toybox* is a Mesh sample that empowers creators to build interactive Mesh experiences and games. The sample provides a number of activities that use mixtures of assets, shaders, visual scripting, animations, VFX, and SoundFX to drive social engagement across Mesh experiences.
 
 If this is your first time using one of our samples, we recommend that you review our [Samples overview](./samples-overview.md) if you haven't already.
 
