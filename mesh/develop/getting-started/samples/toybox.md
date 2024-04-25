@@ -3,7 +3,7 @@ title: Mesh toolkit Toybox sample
 description: Learn about the Mesh toolkit Toybox sample.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 4/15/2024
+ms.date: 4/25/2024
 ms.topic: overview
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, toybox, interactables
@@ -36,7 +36,7 @@ In order to understand the interactions between objects in the scene, we recomme
 The image below can help you find the different activities in the scene. To see a larger version, click the image.
 
 1. Bean Bag Toss
-1. Fire Pit and Roasting Marhmallows
+1. Fire Pit and Roasting Marshmallows
 1. Ice Breaker
 1. Sphere Sculpture
 1. Solar System
