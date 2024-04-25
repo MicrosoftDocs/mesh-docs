@@ -49,9 +49,9 @@ The image below can help you find the different activities in the scene. To see 
 
     :::image type="content" source="../../../media/samples/009-beanbag-1.gif" alt-text="GIF that shows an event attendee playing the bean bag toss game.":::
 
-    This is a fun activity that can add a gaming element to your project and promote social interaction and team-building through some friendly competition. The bean bags are [interactables](../../enhance-your-environment/avatar-and-object-interactions/interactables.md) and rigidbodies that have visual scripts with several object variables attached. One set of targets has animations attached that cause the holes to rotate (object name: *Rotation*). When a bag “scores” by falling in a hole, a particle system component generates a "winning" visual cue (object name: *vfx_beanbag_score_001*).
+    This is a fun activity that can add a gaming element to your project and promote social interaction and team-building through some friendly competition. The bean bags are [interactables](../../enhance-your-environment/avatar-and-object-interactions/interactables.md) and rigidbodies that have visual scripts with several object variables attached. One set of targets has animations attached that cause the holes to rotate (object name: *Rotation*). When a bag "scores" by falling in a hole, a particle system component generates a "winning" visual cue (object name: *vfx_beanbag_score_001*).
 
-* **Fire Pit & Roasting Marshmallows** 
+* **Fire Pit & Roasting Marshmallows**
 
     :::image type="content" source="../../../media/samples/010-marshmallow-2.gif" alt-text="GIF that shows an event attendee roasting a marshmallow.":::
 
@@ -73,7 +73,7 @@ The image below can help you find the different activities in the scene. To see 
 
     ![A screen shot of a Mesh attendee at the Solar System activity grabbing the astronaut.](../../../media/samples/016-solar-system-grab-astronaut.png)
 
-    This is a mini-version of our solar system, with Earth, Mars and Jupiter models floating in orbit around the Sun (object names: *Planet_Earth*, *Planet_Mars*, *Planet_Jupiter*). There’s also an astronaut model (object name: *Astronaut Rig*). An attendee can reach out and grab the models from a distance because they each have [Mesh Interactable Setup components](../../enhance-your-environment/avatar-and-object-interactions/interactables.md#the-mesh-interactable-setup-component) set to type [Manipulable](../../enhance-your-environment/avatar-and-object-interactions/interactables.md#manipulable). The astronaut model has joints and a rig; when it’s grabbed and moved, its arms and legs flail about. The models can’t be moved out of the room due to the presence of a [Containment Field](../../enhance-your-environment/physics/mesh-physics-programmers-guide.md#containment-field) object.
+    This is a mini-version of our solar system, with Earth, Mars and Jupiter models floating in orbit around the Sun (object names: *Planet_Earth*, *Planet_Mars*, *Planet_Jupiter*). There's also an astronaut model (object name: *Astronaut Rig*). An attendee can reach out and grab the models from a distance because they each have [Mesh Interactable Setup components](../../enhance-your-environment/avatar-and-object-interactions/interactables.md#the-mesh-interactable-setup-component) set to type [Manipulable](../../enhance-your-environment/avatar-and-object-interactions/interactables.md#manipulable). The astronaut model has joints and a rig; when it's grabbed and moved, its arms and legs flail about. The models can't be moved out of the room due to the presence of a [Containment Field](../../enhance-your-environment/physics/mesh-physics-programmers-guide.md#containment-field) object.
 
 * **Radio**
 
