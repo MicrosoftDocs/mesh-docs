@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.2403.0 (April 18, 2024)
 
-* There may be a travel time latency that occurs when joining a space, which can cause avatar movement and audio to be out of sync, causing confusion while interacting with other users in the same space. This issue is more pronounced in custom environments where certain environment and event building occurs, causing the aggregate latency to be more pronounced.
+* Single room and multi-room events require the same firewall endpoint and port configurations. We are actively working to resolve this issue and apologize for any inconvenience.
 
 ## Version 5.2402.0 (March 12, 2024)
 
