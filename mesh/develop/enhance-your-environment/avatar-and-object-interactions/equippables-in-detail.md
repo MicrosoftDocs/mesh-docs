@@ -143,5 +143,40 @@ Question: David mentioned that they're working on putting an avatar in the scene
 
 Brandon talks about the script graphs:
 
+Nodes: IsMine, EquipLocation. If "EquipLocation" = None, that means the object was dropped. (I think you have to look for this in Mesh Interactable Setup). 39:42
+
 Wand
+
+The Wand is in the scene--it's static, it's just sitting there.
+
+In the visual script attached to the Wand, the node that determines if the Wand is grabbed or not is *Mesh Interactable Body: Is Mine*. It's a Boolean, and starts with a value of False.
+
+![______](../../../media/enhance-your-environment/equips-in-detail/010-is-mine-node.png)
+
+My interpretation of the graph:
+
+Things start with section 2:
+
+IsMine is a Boolean with a default value of false. If the attendee picks up the Wand (IsMine = true), the state changes from false to true. If true, it triggers Play Mesh Audio and sets the startGlowVFX variable to true.
+
+Section 5
+
+With startFlowVFX now true, its state changes. If true, it sets the PersistentVFX variable to true. This is a variable of type *Object* and its value is the GameObject *vfx_wand_ethereal_perisstent_02*, which has a particle system attached which is now triggered.
+
+Section 4
+
+Activating the avatar
+
+The click to activate the avatar is detected by the *Mesh Interactable Body: Is Activated* node. It's a Boolean with a default value of false. When the attendee clicks in the event, *Is Activated* changes to "true"; the *On State Changed" node detects the change and passes the "true" value on to the *If* node. This causes the *Set Variable* node to set the *isPressed* Boolean to the opposite of what it was before (so now it's "true").
+
+Section 3
+
+The *isPressed* node, a Boolean with a default value of "false", is now "true" and this true value reaches the *Set Variable: Object" node. This node sets the *startGlowVGX* variable to "false" and then, after a brief *Cooldown* period (TBD), it triggers a sound (TBD) and a particle system object named vfx_wand_blast_trail_spheres_01* which is the value of the *ShootTrailVFX* Object variable (TBD).
+
+(After this, in the event, the avatar's arm returns to its starting position.)
+
+Releasing the Wand
+
+To release the Wand, the attendee presses the Space key and the Wand drops to the ground. When this happens, the *On State Changed* node (TBD) detects the change
+
 
