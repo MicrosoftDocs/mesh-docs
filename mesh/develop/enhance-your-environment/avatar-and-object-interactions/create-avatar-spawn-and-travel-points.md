@@ -81,7 +81,14 @@ The *Default Spawn Group* is the group you want avatars to spawn into when they 
 
 ## Next steps
 
-[Grab, attach and throw with Interactables](./interactables.md)
-[Triggers, anchors and tethers](./triggers-anchors-and-tethers.md)
-[Physics interactions](../physics/mesh-physics-overview.md)
-[Enhanced features overview](../enhanced-features-overview.md)
+> [!div class="nextstepaction"]
+> [Grab, attach and throw with Interactables](./interactables.md)
+
+> [!div class="nextstepaction"]
+> [Triggers, anchors and tethers](./triggers-anchors-and-tethers.md)
+
+> [!div class="nextstepaction"]
+> [Physics interactions](../physics/mesh-physics-overview.md)
+
+> [!div class="nextstepaction"]
+> [Enhanced features overview](../enhanced-features-overview.md)
