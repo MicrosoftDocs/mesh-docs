@@ -9,7 +9,7 @@ ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation Mode
 ---
 
-# Grab and manipoulate objects realistically
+# Grab and manipulate objects realistically
 
 ## Equippables
 
@@ -157,7 +157,9 @@ My interpretation of the graph:
 
 Things start with section 2:
 
-IsMine is a Boolean with a default value of false. If the attendee picks up the Wand (IsMine = true), the state changes from false to true. If true, it triggers Play Mesh Audio and sets the startGlowVFX variable to true.
+IsMine is a Boolean with a default value of false.
+
+TBD: Where does the value of  If the attendee picks up the Wand (IsMine = true), the state changes from false to true. If true, it triggers Play Mesh Audio and sets the startGlowVFX variable to true.
 
 Section 5
 
