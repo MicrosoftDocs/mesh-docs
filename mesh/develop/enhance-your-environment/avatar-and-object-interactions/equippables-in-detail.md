@@ -17,20 +17,9 @@ The Toybox sample contains ten different Equippable prefabs. In Unity in the **S
 
 ![A screen shot of the equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/004-equips-in-building.png)
 
-In the **Hierarchy**, they're nexted prefabs to **Equipable Interactable Samples**, which is connected to a prefab named *toybox_Equipable_Interactable_Samples*.
+In the **Hierarchy**, they're nested prefabs to **Equipable Interactable Samples**, which is connected to a prefab named *toybox_Equipable_Interactable_Samples*.
 
 ![A screen shot of the equippable prefabs in the Hierarchy.](../../../media/enhance-your-environment/equips-in-detail/001-equips-in-the-hierarchy.png)
-
-For each Equippable, there are two activation types.
-
-![A screen shot of the visual scripts for the single and toggle equippable activation types.](../../../media/enhance-your-environment/equips-in-detail/002-activation-type-scripts.png)
-
-Examples:
-
-- The Wand has the activate type *Single*.  You grab the Wand and click; the Wand raises and throws off some fireworks, and then returns to its default position.
-- The Wineglass has the activation type *Toggle*. There are two states, and the avatar controls the transition between them. You grab the glass--that's the first state. You click--the glass raises, and that's the second state. To lower the glass to its default position, you must click again.
-
-![Screen shots of avatars holding the Wand, which is the single equippable activation type, and the Drill, which is the toggle equippable activation type.](../../../media/enhance-your-environment/equips-in-detail/003-activation-type-examples.png)
 
 The Equippable prefabs live in subfolders of the *Runtime* folder. These folders start with *Toybox_* followed by the name of the prefab. For example, the Wineglass prefab is stored in the *Toybox_Wineglass* folder.
 
@@ -39,6 +28,13 @@ The Equippable prefabs live in subfolders of the *Runtime* folder. These folders
 **Tip**: To quickly find a prefab in the **Project** folder, in the **Hierarchy**, select the prefab, and then, in the **Inspector**, click the **Select** button.
 
 ## Equippable behaviors
+
+In an event, you can grab an Equippable and then do something with it--for example, raise and lower a glass, generate some sparkles from a wand, or turn a drill on and off. These actions are called *activating* the object. There are two activation types: *single* and *toggle*.
+
+- The Wand has the activation type *Single*.  You grab the Wand and click once; the Wand raises and throws off some fireworks, and then returns to its default position.
+- The Wineglass has the activation type *Toggle*. There are two states, and the avatar controls the transition between them. After you grab the glass, you click, and the glass raises--that's the first state. To lower the glass to its default position, you must click again--that's the second state. Another example of a toggle activation type is the Drill. You grab the Drill and then click to turn it on. You must click again to turn it off.
+
+![Screen shots of avatars holding the Wand, which is the single equippable activation type, and the Drill, which is the toggle equippable activation type.](../../../media/enhance-your-environment/equips-in-detail/003-activation-type-examples.png)
 
 ### Wineglass
 
@@ -149,36 +145,84 @@ Wand
 
 The Wand is in the scene--it's static, it's just sitting there.
 
-In the visual script attached to the Wand, the node that determines if the Wand is grabbed or not is *Mesh Interactable Body: Is Mine*. It's a Boolean, and starts with a value of False.
+In the visual script attached to the Wand, we start in the group named **Checking if Held to start magic glow**.
+
+<overview image>
+
+The node that determines if the Wand is grabbed or not is *Mesh Interactable Body: Is Mine*. It's a Boolean, and starts with a value of False.
 
 ![______](../../../media/enhance-your-environment/equips-in-detail/010-is-mine-node.png)
 
-My interpretation of the graph:
+When an avatar picks up the Wand, its state changes. The true value of *isMinde* is passed to an *if* node and this causes a sound to trigger ....
 
-Things start with section 2:
+<image>
 
-IsMine is a Boolean with a default value of false.
+... and it also changes the value of the object variable *StartGlowVFX* to "true."
 
-TBD: Where does the value of  If the attendee picks up the Wand (IsMine = true), the state changes from false to true. If true, it triggers Play Mesh Audio and sets the startGlowVFX variable to true.
+<image>
 
-Section 5
+**Tip**: The *isMine* variable is found in the *Mesh Interactable Body* script.
 
-With startFlowVFX now true, its state changes. If true, it sets the PersistentVFX variable to true. This is a variable of type *Object* and its value is the GameObject *vfx_wand_ethereal_perisstent_02*, which has a particle system attached which is now triggered.
+<image>
+
+In the node group named **Networking startMagic** ...
+
+<overview image>
+
+... the state change causes the "true" value of *startFLowVFX* to be passed to an *if* node ..
+
+<image>
+
+... and this causes the value of the *PersistentVFX* object variable to also be true, which triggers the *vfx_wand-ethereal_persistent_02* particle system effect.
+
+<image>
 
 Section 4
 
 Activating the avatar
 
-The click to activate the avatar is detected by the *Mesh Interactable Body: Is Activated* node. It's a Boolean with a default value of false. When the attendee clicks in the event, *Is Activated* changes to "true"; the *On State Changed" node detects the change and passes the "true" value on to the *If* node. This causes the *Set Variable* node to set the *isPressed* Boolean to the opposite of what it was before (so now it's "true").
+Let's assume the attendee clicks (on PC) or presses the controller button (on Quest). This is called "activating the Equippable." It causes the avatar's arm position to change, and in the node group named **Networking isPressed** ...
 
-Section 3
+<overview image>
 
-The *isPressed* node, a Boolean with a default value of "false", is now "true" and this true value reaches the *Set Variable: Object" node. This node sets the *startGlowVGX* variable to "false" and then, after a brief *Cooldown* period (TBD), it triggers a sound (TBD) and a particle system object named vfx_wand_blast_trail_spheres_01* which is the value of the *ShootTrailVFX* Object variable (TBD).
+ ... the click is detected by the *Mesh Interactable Body: Is Activated* node. This node is a Boolean with a default value of false. The click changes *Is Activated* to "true"; the *On State Changed* node passes the "true" value on to the *If* node. This causes the *Set Variable* node to set the *isPressed* Boolean to the opposite of what it was before (so now it's "true").
 
-(After this, in the event, the avatar's arm returns to its starting position.)
+<image>
+
+**Tip**: The *isActivated* variable is found in the *Mesh Interactable Body* script.
+
+<image>
+
+In the node group named **Spell cast on click** ...
+
+<overview image>
+
+... the true value of *isPressed* node causes an *if* node to trigger the *Set Variable: Object* node. This node sets the *startGlowVFX* variable to "false", and this triggers the nodes in the **Networking startMagic** node group again. This time, the false value of *startGlowVFX* removes the value of *PersistentVFX* from a *Game Object: Set Active*, causing the particle effect that's the value of *PersistentVFX* to stop.
+
+<image>
+
+Back to the **Spell Cast on click** node group. After a brief cooldown period, a sound is played, and then a different particle effect is triggered: *vfx_wand_blast_trail_spheres_01*, which is the value for the *ShootTrailVFX* object variable.
+
+<image>
+
+After another brief cooldown period, the *startGlowVFX** Boolean value is changed back to "true", which turns the *vfx_wand_ethereal_persistent_02* particle system effect back on in the **Networking startMagic** group.
+
+<image>
+
+At this point, the avatar's arm returns to the position it was in before the Wand was activated.
 
 Releasing the Wand
 
-To release the Wand, the attendee presses the Space key and the Wand drops to the ground. When this happens, the *On State Changed* node (TBD) detects the change
+To release the Wand, the attendee presses the Space key and the Wand drops to the ground. This causes the nodes in the **If not occupied, Turn off Wand** node group come into play. The purpose of this node group is to turn off the "glow" particle effect. 
+
+<overview image>
+
+While the Wand is being held, the value of the *Mesh Interactable Body: Get Equipped At** is "DefaultHand". The value of the *Equip Location* node (a Boolean) is "None." These two values are compared in the *Equal* node (also a Boolen); since they're not the same, the output of *Equal* is "false" and the *if* node isn't triggered.
+
+When the Wand is dropped, the value of *Get Equipped At* changes to "None." This causes the *Equal* and *If* nodes to output "true." This triggers the *Set Variable: Object* node which turns the value of the *startGlowVFX* object variable to "false." This once again triggers the nodes in the **Networking startMagic** node group and turns off the particle effect--*vfx_wand_ethereal_persistent_02--*that's the value of the *PersistantVFX* object variable.
+
+
+
+
 
 
