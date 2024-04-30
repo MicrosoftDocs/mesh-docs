@@ -3,7 +3,7 @@ title: Prerequisites for Mesh development
 description: Prerequisites required for Mesh development, including Unity information.
 author: typride
 ms.author: vinnietieto
-ms.date: 4/18/2024
+ms.date: 4/29/2024
 ms.topic: overload
 ms.service: mesh
 keywords: Microsoft Mesh, prerequisites, getting started, Unity, license
@@ -23,7 +23,14 @@ You must use Unity version 2022.3.15.
 
 [Get help installing Unity Template](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 
-Your installation should include modules for Android and Windows. Make sure to include the module [`Windows Build Support (IL2CPP)`](https://docs.unity3d.com/2023.2/Documentation/Manual/IL2CPP.html); this is required. When you create a new project, we recommend using the URP 3D Core template.
+Your installation should include modules for Android and Windows. 
+
+> [!IMPORTANT]
+> Make sure to include the module [`Windows Build Support (IL2CPP)`](https://docs.unity3d.com/2023.2/Documentation/Manual/IL2CPP.html); this is required. If you don't have the module installed, you might see this message: `error CS7036: There is no argument given that corresponds to the required formal parameter 'safety' of 'NativeArray<T>.ReadOnly.ReadOnly(void*, int, ref AtomicSafetyHandle)'`
+
+## Project template
+
+When you create a new project, we recommend that you use the URP 3D Core template.
 
 ## Intermediate to advanced Unity skills
 
