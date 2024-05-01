@@ -3,13 +3,17 @@ title: Prerequisites for Mesh development
 description: Prerequisites required for Mesh development, including Unity information.
 author: typride
 ms.author: vinnietieto
-ms.date: 4/29/2024
+ms.date: 5/1/2024
 ms.topic: overload
 ms.service: mesh
 keywords: Microsoft Mesh, prerequisites, getting started, Unity, license
 ---
 
 # Prerequisites for Mesh Development
+
+## Platforms
+
+Mesh is available for PC and Quest 2. The Mesh toolkit does *not* work on the Mac.
 
 ## License requirement
 
