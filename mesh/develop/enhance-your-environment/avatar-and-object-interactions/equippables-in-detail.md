@@ -1,5 +1,5 @@
 ---
-title: Grab and manipulate objects realistically
+title: Equippables -- Picking up objects realistically
 description: Learn about various equippable objects and the realistic ways they can be grabbed and manipulated.
 ms.service: mesh
 author: vtieto
@@ -9,11 +9,11 @@ ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, pick up, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation Mode
 ---
 
-# Pick up objects realistically with Equippables
+# Equippables: Picking up objects realistically
 
 ## Overview
 
-In the Toybox sample, certain prefabs are classied as *Equippables*. When you pick up such an object, your hand and arm position adjust so that the object appears to be held realistically. This is called *equipping an object to your hand*.  
+In the Toybox sample, certain prefabs are classied as *Equippables*. When you pick up such an object, your hand and arm position adjust so that the object is held in a realistic way. This is called *equipping an object to your hand*.  
 
 There are eight Equippables:
 
@@ -86,7 +86,7 @@ Activation mode: None
 
 Activation mode: toggle
 
-You click once to turn the Drill on, and then click again to turn it off.
+When you pick up the drill, it's "ready for action"--it's held out in front of you and turned on. When you click, the drill turns off and your arm moves the drill down to your side. When you click again, the drill goes back into its "ready for action" state. This is a good example of the "toggle" activate type, which always toggles between two states.
 
 ![Screen shot of an avatar holding the Drill.](../../../media/enhance-your-environment/equips-in-detail/016-drill.png)
 
@@ -110,7 +110,7 @@ When you pick up the Trophy, you hold it out in front of you chest high. You cli
 
 Activation mode: toggle
 
-The Tablet is viewed by many as one of the more useful Equippables because you can make attach a [WebSlate](../webcontent.md) to its screen, and then reap all the benefits of having a WebSlate that you can move around the scene with. When you pick up the Tablet, you hold it out in front of you chest high. You click once to raise the Tablet up to eye level, and then click again to lower it back to its initial position.
+The Tablet is viewed by many as one of the more useful Equippables because you can attach buttons or a [WebSlate](../webcontent.md) to its screen and then move around the scene with it. When you pick up the Tablet, you hold it out in front of you chest high. You click once to raise the Tablet up to eye level, and then click again to lower it back to its initial position.
 
 ![Screen shot of an avatar holding the Tablet.](../../../media/enhance-your-environment/equips-in-detail/019-tablet.png)
 
@@ -207,7 +207,7 @@ The node that determines if the Wand is picked up or not is *Mesh Interactable B
 
 ![______](../../../media/enhance-your-environment/equips-in-detail/010-is-mine-node.png)
 
-When an avatar picks up the Wand, its state changes. The true value of *isMinde* is passed to an *if* node and this causes a sound to trigger ....
+When an avatar picks up the Wand, its state changes. The "true" value of *isMind* is passed to an *if* node and this causes a "pickup sound" to trigger.
 
 <image>
 
@@ -215,15 +215,23 @@ When an avatar picks up the Wand, its state changes. The true value of *isMinde*
 
 <image>
 
+Note that the text above the *isMind* and *On State Changed* nodes says "Local to this client." 
+
+<image of nodes with text above it highlighted>
+
+These nodes, and the sound that gets triggered, occur locally. However, we want the other attendees in the event to experience what happens with the Wand. This is achieved by inserting the *Set Object Variable* node which displays the text "Shared by all clients." 
+
+< image of set object variable node with text above it >
+
 **Tip**: The *isMine* variable is found in the *Mesh Interactable Body* script.
 
 <image>
 
-In the node group named **Networking startMagic** ...
+We pick up the flow in the node group named **Networking startMagic**.
 
 <overview image>
 
-... the state change causes the "true" value of *startFLowVFX* to be passed to an *if* node ..
+The state change causes the "true" value of *startFLowVFX* to be passed to an *if* node ..
 
 <image>
 
@@ -231,9 +239,7 @@ In the node group named **Networking startMagic** ...
 
 <image>
 
-Section 4
-
-Activating the avatar
+## Activating the Wand
 
 Let's assume the attendee clicks the left mouse button (PC) or controller trigger button (Quest). This is called "activating the Equippable." It causes the avatar's arm position to change, and in the node group named **Networking isPressed** ...
 
@@ -247,15 +253,15 @@ Let's assume the attendee clicks the left mouse button (PC) or controller trigge
 
 <image>
 
-In the node group named **Spell cast on click** ...
+We pick up the flow in the node group named **Spell cast on click**.
 
 <overview image>
 
-... the true value of *isPressed* node causes an *if* node to trigger the *Set Variable: Object* node. This node sets the *startGlowVFX* variable to "false", and this triggers the nodes in the **Networking startMagic** node group again. This time, the false value of *startGlowVFX* removes the value of *PersistentVFX* from a *Game Object: Set Active*, causing the particle effect that's the value of *PersistentVFX* to stop.
+The "true" value of isPressed* causes an *if* node to trigger the *Set Variable: Object* node. This node sets the *startGlowVFX* variable to "false", and this triggers the nodes in the **Networking startMagic** node group again. This time, the "false" value of *startGlowVFX* causes the *PersistentVFX* particle effect to turn off.
 
 <image>
 
-Back to the **Spell Cast on click** node group. After a brief cooldown period, a sound is played, and then a different particle effect is triggered: *vfx_wand_blast_trail_spheres_01*, which is the value for the *ShootTrailVFX* object variable.
+Back to the **Spell Cast on click** node group. After a brief cooldown period, a sound is played, and then a different particle effect is triggered at the tip of the wand: *vfx_wand_blast_trail_spheres_01*, which is the value for the *ShootTrailVFX* object variable.
 
 <image>
 
@@ -265,7 +271,9 @@ After another brief cooldown period, the *startGlowVFX** Boolean value is change
 
 At this point, the avatar's arm returns to the position it was in before the Wand was activated.
 
-Releasing the Wand
+## Releasing the Wand
+
+If the Wand had the activate type "toggle," when the attendee clicked again, it would trigger a second, different "state." However, the Wand's activate type is "single", and this means that every time the attendee clicks, the same "state", or series of actions and effects, is repeated.
 
 To release the Wand, the attendee presses the Space key and the Wand drops to the ground. This causes the nodes in the **If not occupied, Turn off Wand** node group come into play. The purpose of this node group is to turn off the "glow" particle effect. 
 
@@ -275,6 +283,12 @@ While the Wand is being held, the value of the *Mesh Interactable Body: Get Equi
 
 When the Wand is dropped, the value of *Get Equipped At* changes to "None." This causes the *Equal* and *If* nodes to output "true." This triggers the *Set Variable: Object* node which turns the value of the *startGlowVFX* object variable to "false." This once again triggers the nodes in the **Networking startMagic** node group and turns off the particle effect--*vfx_wand_ethereal_persistent_02--*that's the value of the *PersistantVFX* object variable.
 
+Suggestions for experimentation with the script
+
+- Create different effects that could be triggered when one of the existing Equippables is picked up and held.
+- Create new Equippables that could use some of the existing effects. For example, certain types of fireworks could use the "sparkle" effects that are currently used by the Wand.
+- Create different effects and behaviors for a new Equippable that could be triggered when the Equippable is held and the left mouse button (PC) or controller button (Quest 2) is pressed. For example, instead of a Wand, you could have a fishing rod that casts out a lure when you press the button.
+- Think about the difference between having an object move right into its "read for action" state when picked up (for example, the Drill) and having an object that starts off in "waiting" mode and moves into "ready for action" mode after the attendee clicks (for example, the Tablet). Make objects that take advantage of both approaches.
 
 
 
