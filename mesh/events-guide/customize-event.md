@@ -15,35 +15,42 @@ keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
 
 ### Customize before your event
 
-To ensure the event runs smoothly, ensure that you customize and save customizations at least 30 minutes before the event start time.
-
-### Event capacity
-
-- 200 attendees per event
-- 16 attendees per room
-- Up to 16 hosts in a separate room, additional to the 200 attendees
-
-> [!NOTE]
-> Only 3 event hosts can broadcast at the same time.
-
-### Customize and save before event
-
-Saving is not available once event is joined. Plan to customize and save your event at-least **30 minutes before** the event start time.
+* To ensure the event runs smoothly, ensure that you customize and save customizations at least **30 minutes before** the event start time. Once someone joins the event, saving customizations is not available.
 
 > [!TIP]
 > **Who should customize an event?**
 >
 > Anyone who has been invited as a **Co-organizer** can customize an event. Do this with
-> caution, knowing that any edits you make will affect the Event or Template
-> that event participants will join in.
+> caution, knowing that any edits you make will directly alter the Event or Template
+> that event attendees will join.
+
+## Why customize an event?
+
+As a host for a Mesh event, you have many tools at your disposal to orchestrate an experience for attendees.
+
+Along with tools to interact with and manage guests, you have a Control Panel to manage aspects of the environment. You may want to play a video when people enter the event, use text to draw attention to objects or give directions to attendees, or execute a pre-planned sequence of actions like a stage director raising the curtain and queueing the lights. All of this can be added (and more) when you customize your event.
+
+### Types of customizations
+
+* Add objects through the Editor like Screenshares, Images, or Videos.
+
+    :::image type="content" source="../Resources/media/environment-editor-catalog.png" alt-text="Screenshot of editor catalog":::
+
+* Use the **Control Panel** to adjust Objects that you have in your environment using the Controls tab
+    
+
+and group objects together in **Action Groups** to create scripted actions in your environment like displaying photos of your team, or showing a company logo and playing a video.
+
+
+## How to customize an event
 
 ## Customization flow
 
-1. Open the Mesh app customize your **Event** or **Template**.
+1. Once your event is created using [https://mesh.cloud.microsoft/](https://mesh.cloud.microsoft/), open the Mesh app to find your event.
 
 1. **Add content** using the **Editor**.
 
-1. **Configure** content with the **Control panel** to be used in your live event.
+1. **Configure** content with the **Control panel** to be used in your live event. You can edit the Controls of each object individually or group them together in Action Groups.
 
 1. **Save changes** in the **Event Customization** window.
 
