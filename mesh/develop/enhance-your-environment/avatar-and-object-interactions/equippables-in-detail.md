@@ -6,18 +6,39 @@ author: vtieto
 ms.author: vinnietieto
 ms.date: 4/24/2024
 ms.topic: overview
-keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation Mode
+keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, pick up, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation Mode
 ---
 
-# Grab and manipulate objects realistically
+# Pick up objects realistically with Equippables
 
-## Equippables
+## Overview
 
-The Toybox sample contains ten different Equippable prefabs. In Unity in the **Scene** window, they're located on a table against the back wall.
+In the Toybox sample, certain prefabs are classied as *Equippables*. When you pick up such an object, your hand and arm position adjust so that the object appears to be held realistically. This is called *equipping an object to your hand*.  
 
-![A screen shot of the equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/004-equips-in-building.png)
+There are eight Equippables:
 
-In the **Hierarchy**, they're nested prefabs to **Equipable Interactable Samples**, which is connected to a prefab named *toybox_Equipable_Interactable_Samples*.
+Wine glass
+Birthday cake
+Drill
+Wrench
+Trophy
+Tablet
+Coffee Cup
+Wand
+
+To see the Equippables in Unity, in the **Scene** window, navigate into the building with a fish on the front. The Equippables are on two tables against the back wall.
+
+![A screen shot of the first set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/012-table1.png)
+
+![A screen shot of the second set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/013-table2.png)
+
+Note that not all the objects on the tables are Equippables--the Baseball and Beach Ball are [*throwables*](./interactables.md#throwable). To determine an object's type, view the **Object Type** setting in the object's *Mesh Interactable setup* component.
+
+![A screen shot of an object's type in its Mesh Interactabe Setup component.](../../../media/enhance-your-environment/equips-in-detail/014-object-type.png)
+
+## Where to find Equippables
+
+In the **Hierarchy**, the Equippables re nested prefabs to **Equipable Interactable Samples**, which is connected to a prefab named *toybox_Equipable_Interactable_Samples*.
 
 ![A screen shot of the equippable prefabs in the Hierarchy.](../../../media/enhance-your-environment/equips-in-detail/001-equips-in-the-hierarchy.png)
 
@@ -29,52 +50,85 @@ The Equippable prefabs live in subfolders of the *Runtime* folder. These folders
 
 ## Equippable behaviors
 
-In an event, you can grab an Equippable and then do something with it--for example, raise and lower a glass, generate some sparkles from a wand, or turn a drill on and off. These actions are called *activating* the object. There are two activation types: *single* and *toggle*.
+For some Equippables, you can pick them up and then press the left mouse button (PC) or controller button (Quest 2) to trigger an action that's appropriate for that Equippable. Examples:
 
-- The Wand has the activation type *Single*.  You grab the Wand and click once; the Wand raises and throws off some fireworks, and then returns to its default position.
-- The Wineglass has the activation type *Toggle*. There are two states, and the avatar controls the transition between them. After you grab the glass, you click, and the glass raises--that's the first state. To lower the glass to its default position, you must click again--that's the second state. Another example of a toggle activation type is the Drill. You grab the Drill and then click to turn it on. You must click again to turn it off.
+- Raise and lower a Wine glass.
+- Generate sparkles from the end of a Wand.
+- Turn a drill on and off. 
+
+This is called *activating* the object. You can see the possible activate types in the object's *Mesh Interactable Setup* component.
+
+![A screen shot of an object's activate type in its Mesh Interactabe Setup component.](../../../media/enhance-your-environment/equips-in-detail/015-activate-type.png)
+
+**Single**: You click once to activate the object. Example: the Wand.
+
+**Toggle**: You click once to activate the object, and then click again to return the object to its non-activated state. Examples: the Wine Glass and the Drill.
+
+**None**: The object can't be activated. Example: the Birthday Cake. After you pick it up, there's nothing further you can do with it.
 
 ![Screen shots of avatars holding the Wand, which is the single equippable activation type, and the Drill, which is the toggle equippable activation type.](../../../media/enhance-your-environment/equips-in-detail/003-activation-type-examples.png)
 
-### Wineglass
+### Wine glass
 
 Activation mode: toggle
 
-When an attendee grabs a Wineglass, their hand holds the glass by the stem. To raise the glass in a toast, press the left mouse button (Windows) or (TBD) (Quest 2).
+After you pick up the Wine glass, you click, and the glass raises--that's the activated state. To lower the glass to its default position and non-activated state, you must click again.
 
 ![Screen shots of an avatar holding a Wineglass in the default position and raising it in a toast.](../../../media/enhance-your-environment/equips-in-detail/006-wineglass-toast.png)
 
 ### Birthday Cake
 
+Activation mode: None
+
+![Screen shot of an avatar holding the Birthday Cake.](../../../media/enhance-your-environment/equips-in-detail/011-birthday-cake.png)
 
 ### Drill
 
 Activation mode: toggle
 
+You click once to turn the Drill on, and then click again to turn it off.
 
-
+![Screen shot of an avatar holding the Drill.](../../../media/enhance-your-environment/equips-in-detail/016-drill.png)
 
 ### Wrench
 
+Activation mode: toggle
 
-### Baseball
+When you pick up the Wrench, you hold it out in front of you almost chest high. You click once to move the Wrench to your side, and then click again to lower it back to its initial position.
 
-
-### Beachball
-
-The Beachball uses a specfic type of throwing--it's more of a push than a throw. It's based on a vector from the attendee's neck and chest area towards the target reticle. The attendee can move around and aim the push. 
-
-![Screen shots of an throwing the Beachball with a pushing motion.](../../../media/enhance-your-environment/equips-in-detail/009-beachball-throw.png)
-
+![Screen shot of an avatar holding the Wrench.](../../../media/enhance-your-environment/equips-in-detail/017-wrench.png)
 
 ### Trophy
 
+Activation mode: toggle
+
+When you pick up the Trophy, you hold it out in front of you chest high. You click once to raise the Trophy above your head in a "salute" position, and then click again to lower it back to its initial position.
+
+![Screen shot of an avatar holding the Trophy.](../../../media/enhance-your-environment/equips-in-detail/018-trophy.png)
 
 ### Tablet
 
+Activation mode: toggle
+
+The Tablet is viewed by many as one of the more useful Equippables because you can make attach a [WebSlate](../webcontent.md) to its screen, and then reap all the benefits of having a WebSlate that you can move around the scene with. When you pick up the Tablet, you hold it out in front of you chest high. You click once to raise the Tablet up to eye level, and then click again to lower it back to its initial position.
+
+![Screen shot of an avatar holding the Tablet.](../../../media/enhance-your-environment/equips-in-detail/019-tablet.png)
+
+## Coffee cup
+
+Activation mode: none
+
+![Screen shot of an avatar holding the Coffee cup.](../../../media/enhance-your-environment/equips-in-detail/020-coffee-cup.png)
+
+## Wand
+
+Activation mode: single
+
+When you pick up the Wand, you hold it out in front of you almost chest high. The tip of the Wand displayed a particle effect. When you click, your arm thrusts the Wand forward and the Wand emits "sparkles" (generated through another particle effect). Your arm then returns to its initial position.
+
 ## Grab and throw behaviors
 
-In real life, certain objects that are in the same general category but have different shapes and sizes--for example, a softball, football, and beach ball--are held and thrown in different ways. With Mesh Equippables, these objects are grouped together into one category of "tossable" objects; all objects in this category are held and thrown the same way. A tossable object connects with a specific pre-loaded animation contained in the avatar. Providing more variety presents a technical challenge because it calls for more animations to be pre-loaded which could result in decreased performance. Despite this, we're working on an inverse kinematics (IK) system which we expect will provide more realistic grab-and-hold behaviors per object.
+In real life, certain objects that are in the same general category but have different shapes and sizes--for example, a softball, football, and beach ball--are held and thrown in different ways. With Mesh Equippables, these objects are grouped together into one category of "tossable" objects; all objects in this category are held and thrown the same way. A tossable object connects with a specific pre-loaded animation contained in the avatar. Providing more variety presents a technical challenge because it calls for more animations to be pre-loaded which could result in decreased performance. Despite this, we're working on an inverse kinematics (IK) system which we expect will provide more realistic pick up-and-hold behaviors per object.
 
 
 With this animation, you can look around the room--up, down, left or right 
@@ -98,7 +152,7 @@ When the Tablet is activated, the attendee holds the Tablet up to their face but
 
 ## Position of objects
 
-There are different ways of holding an object. Some objects, when grabbed, are designed to be held away from the body and high enough to be in your field of view (for example, the Wineglass or Trophy). 
+There are different ways of holding an object. Some objects, when when picked up, are designed to be held away from the body and high enough to be in your field of view (for example, the Wineglass or Trophy). 
 
 < TBD image>
 
@@ -149,7 +203,7 @@ In the visual script attached to the Wand, we start in the group named **Checkin
 
 <overview image>
 
-The node that determines if the Wand is grabbed or not is *Mesh Interactable Body: Is Mine*. It's a Boolean, and starts with a value of False.
+The node that determines if the Wand is picked up or not is *Mesh Interactable Body: Is Mine*. It's a Boolean, and starts with a value of False.
 
 ![______](../../../media/enhance-your-environment/equips-in-detail/010-is-mine-node.png)
 
@@ -181,7 +235,7 @@ Section 4
 
 Activating the avatar
 
-Let's assume the attendee clicks (on PC) or presses the controller button (on Quest). This is called "activating the Equippable." It causes the avatar's arm position to change, and in the node group named **Networking isPressed** ...
+Let's assume the attendee clicks the left mouse button (PC) or controller trigger button (Quest). This is called "activating the Equippable." It causes the avatar's arm position to change, and in the node group named **Networking isPressed** ...
 
 <overview image>
 
