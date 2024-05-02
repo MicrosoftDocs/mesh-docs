@@ -36,17 +36,19 @@ Along with tools to interact with and manage guests, you have a Control Panel to
 
     :::image type="content" source="../Resources/media/environment-editor-catalog.png" alt-text="Screenshot of editor catalog":::
 
-* Use the **Control Panel** to adjust Objects that you have in your environment using the Controls tab
-    
+    * 
 
-and group objects together in **Action Groups** to create scripted actions in your environment like displaying photos of your team, or showing a company logo and playing a video.
+* Use the **Control Panel** to adjust Objects that you have in your environment using the **Controls** tab.
 
+    :::image type="content" source="../media/mesh-event-producer-guide/Control-panel.png" alt-text="Screenshot of control panel showing the objects in an environment.":::
+
+* Use the **Control Panel** > **Action Groups** tab to control multiple objects at once for an experience such as displaying photos of your team, or showing a company logo and playing a video.
 
 ## How to customize an event
 
 ## Customization flow
 
-1. Once your event is created using [https://mesh.cloud.microsoft/](https://mesh.cloud.microsoft/), open the Mesh app to find your event.
+1. Once your event is created using [https://mesh.cloud.microsoft/](https://mesh.cloud.microsoft/), open the Mesh app to find and start customizing your event.
 
 1. **Add content** using the **Editor**.
 
@@ -54,7 +56,9 @@ and group objects together in **Action Groups** to create scripted actions in yo
 
 1. **Save changes** in the **Event Customization** window.
 
-## Customize your Template or Event
+## How to enter the Customization session
+
+# [Template](#tab/template)
 
 ### Customize a Template
 
@@ -72,6 +76,8 @@ To learn more about creating a Template, see how to [Create Template](create-tem
 
     :::image type="content" source="../media/mesh-event-producer-guide/Select-customize-template.png" alt-text="Screenshot of Mesh app showing Customize template button highlighted.":::
 
+# [Event](#tab/event)
+
 ### Customize a single Event
 
 1. Open the Mesh app on your computer or use the link in the calendar invite.
@@ -84,7 +90,9 @@ To learn more about creating a Template, see how to [Create Template](create-tem
 
     :::image type="content" source="../media/mesh-event-producer-guide/Select-customize-button.png" alt-text="Screenshot of Mesh app showing Customize button for an event highlighted.":::
 
-## Customize Event experience
+---
+
+## Start customizing
 
 Now that you've created an event and joined the Event customization experience, it's time customize it in the [Microsoft Mesh app](https://apps.microsoft.com/store/detail/microsoft-mesh/9NLXZJ1FDBD7) and add any run-of-show tools you'd like to use.
 
@@ -98,6 +106,10 @@ At a high level, there are three major steps to customize your event or template
 
     :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-control-panel-object-selection.png" alt-text="Image object adjustment":::
 
+1. Use the **Control Panel** to adjust your objects or create **Action Groups** to control multiple objects simultaneously.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Action-groups.png" alt-text="Screenshot of the control panel in Mesh experience with Action Groups tab selected. Several actions are highlighted such as display images.":::
+
 1. **Save changes** in the **Save** window. Or select **Revert** to discard recent changes and revert to the last saved state.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-object-save-changes.png" alt-text="Screenshot of Mesh app showing save changes dialogue after customizing.":::
@@ -109,8 +121,6 @@ Use the Editor to place content in your environment and customize the content di
 :::image type="content" source="../Resources/media/environment-editor-catalog.png" alt-text="Screenshot of editor catalog":::
 
 The three objects we'll cover here are **Video**, **Image**, and **Screenshare**.
-
-### Start adding content
 
 Use the Editor to add content to your environment that can be controlled during your run-of-show.
 
