@@ -70,8 +70,14 @@ Script to make an object always face the camera.
 
 ## Next steps
 
-[Grab, attach and throw with Interactables](./interactables.md)
-[Create avatar spawn and teleport points](./create-avatar-spawn-and-travel-points.md)
-[Physics interactions](../physics/mesh-physics-overview.md)
-[Enhanced features overview](../enhanced-features-overview.md)
+> [!div class="nextstepaction"]
+> [Grab, attach and throw with Interactables](./interactables.md)
 
+> [!div class="nextstepaction"]
+> [Create avatar spawn and teleport points](./create-avatar-spawn-and-travel-points.md)
+
+> [!div class="nextstepaction"]
+> [Physics interactions](../physics/mesh-physics-overview.md)
+
+> [!div class="nextstepaction"]
+> [Enhanced features overview](../enhanced-features-overview.md)

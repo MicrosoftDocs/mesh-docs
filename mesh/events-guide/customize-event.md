@@ -13,8 +13,6 @@ keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
 
 ## Considerations before starting your event
 
-### Customize before your event
-
 * To ensure the event runs smoothly, ensure that you customize and save customizations at least **30 minutes before** the event start time. Once someone joins the event, saving customizations is not available.
 
 > [!TIP]
@@ -28,7 +26,7 @@ keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
 
 As a host for a Mesh event, you have many tools at your disposal to orchestrate an experience for attendees.
 
-Along with tools to interact with and manage guests, you have a Control Panel to manage aspects of the environment. You may want to play a video when people enter the event, use text to draw attention to objects or give directions to attendees, or execute a pre-planned sequence of actions like a stage director raising the curtain and queueing the lights. All of this can be added (and more) when you customize your event.
+Along with tools to interact with and manage attendees, you have a Control Panel to manage aspects of the environment. You may want to play a video when people enter the event, or execute a pre-planned sequence of actions like queuing a video, displaying images, and showing a Screenshare simultaneously. All of this can be added (and more) when you customize your event.
 
 ### Types of customizations
 
@@ -36,27 +34,37 @@ Along with tools to interact with and manage guests, you have a Control Panel to
 
     :::image type="content" source="../Resources/media/environment-editor-catalog.png" alt-text="Screenshot of editor catalog":::
 
-    * 
-
 * Use the **Control Panel** to adjust Objects that you have in your environment using the **Controls** tab.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Control-panel.png" alt-text="Screenshot of control panel showing the objects in an environment.":::
 
 * Use the **Control Panel** > **Action Groups** tab to control multiple objects at once for an experience such as displaying photos of your team, or showing a company logo and playing a video.
 
+    :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-gif.gif" alt-text="Gif of an avatar in the Mesh app using action groups to display imaes, a video and company logo, and screenshare.":::
+
+#### Objects you can add
+
+|Object |Controls  |Notes  |
+|---------|---------|---------|
+|Video   |   URL, Looping, Volume, Backplate, Visible      |  Direct links to videos hosted via SharePoint or HTTPS URLs and **.MP4** file types only.       |
+|Screenshare     |  Visible       |  Display screen as an event host with Organizer or Co-Organizer privileges.       |
+|Image     |  URL, Orientation, Backplate, Visible      |   Direct links to images hosted via SharePoint or HTTPS URLs      |
+
 ## How to customize an event
 
 ## Customization flow
+
+At a high level, this is the flow you can expect to follow when customizing your event:
 
 1. Once your event is created using [https://mesh.cloud.microsoft/](https://mesh.cloud.microsoft/), open the Mesh app to find and start customizing your event.
 
 1. **Add content** using the **Editor**.
 
-1. **Configure** content with the **Control panel** to be used in your live event. You can edit the Controls of each object individually or group them together in Action Groups.
+1. **Configure** content with the **Control panel** to be used in your live event. You can edit the Controls of each object individually or group them together in **Action Groups**.
 
 1. **Save changes** in the **Event Customization** window.
 
-## How to enter the Customization session
+## Enter a Customization session for a template or event
 
 # [Template](#tab/template)
 
@@ -157,11 +165,12 @@ Use the Editor to add content to your environment that can be controlled during 
 For video objects, you must:
 
 - Use **.MP4** file type only.
-- Use direct links to video files that are stored on SharePoint or HTTPS URLs. Links to video services like YouTube, Vimeo, etc. are not supported
+- Use direct links to video files that are stored on SharePoint or HTTPS URLs. Links to video services like YouTube, Vimeo, etc. are not supported.
 
-    For example, use the **Share** or the **Copy Link** functionality in SharePoint to copy the link of the video you want to share and paste it in the Video player object URL field.
-
-    :::image type="content" source="../media/mesh-event-producer-guide/SharePoint-link.png" alt-text="Sharepoint link copied in sharepoint":::
+> [!TIP]
+>     For example, use the **Share** or the **Copy Link** functionality in SharePoint to copy the link of the video you want to share and paste it in the Video player object URL field.
+> 
+>     :::image type="content" source="../media/mesh-event-producer-guide/SharePoint-link.png" alt-text="Sharepoint link copied in sharepoint":::
 
 ### Edit object controls
 
@@ -175,14 +184,38 @@ Once you've added an object, you can maneuver it around the spaces and select th
 
     :::image type="content" source="../media/mesh-event-producer-guide/Configure-controls-artifact-larger.gif" alt-text="Add objects and update url":::
 
-    > [!NOTE]
-    > The only video type that is supported is **.MP4**.
-
 ## Prepare content with the Control panel
 
-The **Control panel** shows all the controls available for your content during the event. Like having a technical booth for theatrical technicians, it's designed to give the organizer the ability to orchestrate a performance in real time.
+The **Control panel** holds all the controls available for your content during the event. Like having a technical booth for theatrical technicians, it's designed to give the organizer the ability to orchestrate a performance in real time.
 
 You can try out the controls during the customization session, but make sure you set everything back to how you want your event to look when it starts and then save your changes (or if you're just practicing, you can use **Revert changes** in the save dialog).
+
+### Create an Action Group
+
+Sometimes you want to trigger multiple production elements simultaneously, like starting a video and revealing a banner image at the same time. To simplify multiple actions into just one click in the Control Panel, you can create an Action Group.
+
+Action Groups allow organizers to take a bunch of content, preconfigure the controls for it, and save everything to a single-click group in the Control Panel.
+
+For example, you might want to create an Action Group that contains all of the things you’d like to trigger for the Welcome portion of your event. Here, you might want to hide a countdown video, toggle the screenshare object to visible, and unfurl some logos. If you add each element individually to the Control Panel, you will have to take multiple actions to trigger these changes. Or you can simplify it all down to one-click with an Action Group.
+
+To create an **Action Group**, start by opening your **Control Panel** and selecting the “Action Groups” tab:
+
+1. Select the **+** button then type in your name for the Action Group.
+1. In the Action group panel, select the **Pencil icon** then choose the objects you want to add to the group and **Confirm**.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-select-objects.gif" alt-text="Gif showing objecst being selected to be added to an action group.":::
+
+1. For each object, choose the **Pencil icon** to choose which properties you want to control then select the controls you want to be included in the Action Group.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-select-controls-for-objects.gif" alt-text="Gif showing an avatar in the Mesh app choosing the controls for objects that they want to be in the Action Group."::: 
+
+1. Adjust the controls for each object and select the **Save** icon. You'll see the Action Group show up in the **Control Panel** to the right.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-adjust-properties-for-each-object.gif" alt-text="Gif showing an avatar or user adjusting the controls for each object in an action group and saving to show the Action Group in the control panel.":::
+
+1. Repeat for all Action Groups you want, then you'll have a sequence of Actions available for use in your event.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-gif.gif" alt-text="Gif showing Action Groups populated and available to select Play for each to see the actions occur in your environment.":::
 
 **Control panel Notes:**
 
