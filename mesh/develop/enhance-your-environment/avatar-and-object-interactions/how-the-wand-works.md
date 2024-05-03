@@ -11,7 +11,9 @@ keywords: interactions, interactables, equippables, throwables, avatars, grab, p
 
 # Equippables: How the Wand works
 
-## Wand
+## Wand Overview
+
+
 
 The Wand, under the hood: it has an onHold() event. (?) It changes its state when it goes from not being held to being held. When it's activated, it's a "single instance" activation. It plays the VFX and audio and changes the avatar pose. 
 
