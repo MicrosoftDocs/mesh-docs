@@ -138,7 +138,17 @@ The Tablet is viewed by many as one of the more useful Equippables because you c
 
 **Activation mode**: single
 
-When you pick up the Wand, you hold it out in front of you almost chest high. The tip of the Wand displays a particle effect. Click to activate the Wand; your arm thrusts forward and the tip of the Wand emits "sparkles" that are generated through another particle effect. Since the Wand has the *single* activate type, as soon as it runs through its behaviors, it de-activates and your arm returns to its initial position. Click again to repeat the behaviors.
+When you pick up the Wand, you hold it out in front of you almost chest high. The tip of the Wand displays a sparkly vapor particle effect. 
+
+:::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-holding1.gif" alt-text="GIF that shows an event attendee holding the Wand in its non-activated state.":::
+
+Click to activate the Wand; your arm thrusts forward and the tip of the Wand emits fireworks that are generated through another particle effect. 
+
+:::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-thrusting1.gif" alt-text="GIF that shows an event attendee activating the Wand which then generates fireworks.":::
+
+Since the Wand has the *single* activate type, as soon as it runs through its behaviors, it de-activates and your arm returns to its initial position. Click again to repeat the behaviors.
+
+
 
 ## Create a custom Equippable
 
