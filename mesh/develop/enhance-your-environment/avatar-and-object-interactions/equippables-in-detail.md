@@ -19,7 +19,6 @@ There are eight Equippables:
 
 - Wine glass
 - Birthday cake
-- Birthday cake
 - Drill
 - Wrench
 - Trophy
@@ -55,7 +54,7 @@ In the **Project** window, the Equippable prefabs live in subfolders of the *Run
 
 ## Position of objects
 
-There are different ways of holding an Equippable object. Some objects, when when picked up, are designed to be held away from the body and high enough to be in your field of view (for example, the Wineglass or Trophy). Other objects are designed to be hold closer to the body and *not* in your field of view (for example, the Wrench).
+There are different ways of holding an Equippable object. Some objects, when when picked up, are designed to be held away from the body and high enough to be in your field of view (for example, the Wineglass or Trophy). Other objects are designed to be held closer to the body and *not* in your field of view (for example, the Wrench).
 
 ## Equippable behaviors
 
@@ -65,15 +64,13 @@ For some Equippables, you can pick them up and then press the left mouse button 
 - Generate sparkles from the end of a Wand.
 - Turn a drill off and on.
 
-This is called *activating* the object. You can see the possible activate types in the object's *Mesh Interactable Setup* component.
+This is called *activating* the object. You can see the possible activate types in the object's *Mesh Interactable Setup* component. There are three activate options: *Single*, *Toggle*, and *None*.
 
 ![A screen shot of an object's activate type in its Mesh Interactabe Setup component.](../../../media/enhance-your-environment/equips-in-detail/015-activate-type.png)
 
-There are three activate options: *Single*, *Toggle*, and *None*.
+**Single**: The object has a single "state", or set of behaviors. Example: the Wand. Think of this as turning the object "on" and "off" with one click. When you pick up the Wand, it's in its default (non-activated) state. When you click, the Wand runs through its behaviors and then immediately returns to its default state. If you click again, the object repeats the same set of behaviors.
 
-**Single**: The object has a single "state", or set of behaviors. Example: the Wand. Think of this as turning the object "on" and "off" with one click. When you pick up the Wand, its in its default (non-activated) state. When you click, the Wand runs through its behaviors and then immediately returns to its default state. If you click again, the object repeats the same set of behaviors.
-
-**Toggle**: The object has two "states." When you pick it up, it's in its default (non-activated) state. When you click, it triggers the "activated" state and turns the behaviors for that state "on." They stay on until you click again. this second click turns the behaviors "off" and returns the object to its default (non-activated) state. Examples: the Wine Glass and the Drill. This should become more clear when we examine individual object behaviors in the sections below.
+**Toggle**: The object has two "states." When you pick it up, it's in its default (non-activated) state. When you click, it triggers the "activated" state and turns the behaviors for that state "on." They stay on until you click again. This second click turns the behaviors "off" and returns the object to its default (non-activated) state. Examples: the Wine Glass and the Drill. This should become more clear when we examine individual object behaviors in the sections below.
 
 **None**: The object can't be activated. Example: the Birthday Cake. After you pick it up, there's nothing further you can do with it; just just hold it until you decide to put it down.
 
@@ -87,7 +84,7 @@ To release an Equippable, press the Space bar.
 
 ### Wine glass
 
-Activation mode: toggle
+**Activation mode**: toggle
 
 After you pick up the Wine glass, you click, and the glass raises--that's the activated state. To lower the glass to its default position and non-activated state, you must click again.
 
@@ -95,13 +92,13 @@ After you pick up the Wine glass, you click, and the glass raises--that's the ac
 
 ### Birthday Cake
 
-Activation mode: None
+**Activation mode**: None
 
 ![Screen shot of an avatar holding the Birthday Cake.](../../../media/enhance-your-environment/equips-in-detail/011-birthday-cake.png)
 
 ### Drill
 
-Activation mode: toggle
+**Activation mode**: toggle
 
 When you pick up the drill, it's automatically activated--it's held out in front of you and turned on. When you click, the drill turns off and your arm moves the drill down to your side. When you click again, the drill goes back into its turned-on state. This is a good example of the "toggle" activate type, which always toggles between two states.
 
@@ -109,15 +106,15 @@ When you pick up the drill, it's automatically activated--it's held out in front
 
 ### Wrench
 
-Activation mode: toggle
+**Activation mode**: toggle
 
-When you pick up the Wrench, it's automatically activated--it's held out in front of you almost chest high. When you click, the wrench is lowered to your side. Click again to activate it again.
+When you pick up the Wrench, it's automatically activated--it's held out in front of you almost chest high. When you click, the wrench is lowered to your side and de-activated. Click again to activate it again.
 
 ![Screen shot of an avatar holding the Wrench.](../../../media/enhance-your-environment/equips-in-detail/017-wrench.png)
 
 ### Trophy
 
-Activation mode: toggle
+**Activation mode**: toggle
 
 When you pick up the Trophy, you hold it out in front of you chest high. Click to activate it; this raises the Trophy above your head in a "salute" position. Click again to lower (and de-activate) the Trophy.
 
@@ -125,24 +122,24 @@ When you pick up the Trophy, you hold it out in front of you chest high. Click t
 
 ### Tablet
 
-Activation mode: toggle
+**Activation mode**: toggle
 
-The Tablet is viewed by many as one of the more useful Equippables because you can attach a UI object with buttons or a [WebSlate](../webcontent.md) to its screen and then move around the scene with it. When you pick up the Tablet, you hold it out in front of you chest high. Click once to activate the Tablet--this raises it up to almost eye level, but gives you an unobstructed view if you wish to look around the room. Click again to lower it back to its initial position (and de-activate it).
+The Tablet is viewed by many as one of the more useful Equippables because you can attach a UI object with buttons or a [WebSlate](../webcontent.md) to its screen and then move around the scene with it. When you pick up the Tablet, you hold it out in front of you chest high. Click once to activate the Tablet--this raises it up to almost eye level, but leaves you with an unobstructed view if you wish to look around the room. Click again to lower it back to its initial position (and de-activate it).
 
 ![Screen shot of an avatar holding the Tablet.](../../../media/enhance-your-environment/equips-in-detail/019-tablet.png)
 
 ## Coffee cup
 
-Activation mode: none
+**Activation mode**: none
 
 ![Screen shot of an avatar holding the Coffee cup.](../../../media/enhance-your-environment/equips-in-detail/020-coffee-cup.png)
 
 ## Wand
 
-Activation mode: single
+**Activation mode**: single
 
 When you pick up the Wand, you hold it out in front of you almost chest high. The tip of the Wand displays a particle effect. Click to activate the Wand; your arm thrusts forward and the tip of the Wand emits "sparkles" that are generated through another particle effect. Since the Wand has the *single* activate type, as soon as it runs through its behaviors, it de-activates and your arm returns to its initial position. Click again to repeat the behaviors.
 
 ## Create a custom Equippable
 
-If you have a model that's similar in size and orientation to one of our Equippable prefabs, you replace the Equippable model with your model Each prefab has a child object named "Artwork" which is where you can insert your custom model.
+If you have a model that's similar in size and orientation to one of our Equippable prefabs, you can replace the Equippable model with your model. Each prefab has a child object named "Artwork" which is where you can insert your custom model.
