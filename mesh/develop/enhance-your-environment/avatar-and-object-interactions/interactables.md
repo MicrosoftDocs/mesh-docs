@@ -234,7 +234,14 @@ On the Quest, the velocity applied when an object is thrown will be scaled betwe
 
 ## Next steps
 
-[Triggers, anchors and tethers](./triggers-anchors-and-tethers.md)
-[Create avatar spawn and teleport points](./create-avatar-spawn-and-travel-points.md)
-[Physics interactions](../physics/mesh-physics-overview.md)
-[Enhanced features overview](../enhanced-features-overview.md)
+> [!div class="nextstepaction"]
+> [Triggers, anchors and tethers](./triggers-anchors-and-tethers.md)
+
+> [!div class="nextstepaction"]
+> [Create avatar spawn and teleport points](./create-avatar-spawn-and-travel-points.md)
+
+> [!div class="nextstepaction"]
+> [Physics interactions](../physics/mesh-physics-overview.md)
+
+> [!div class="nextstepaction"]
+>[Enhanced features overview](../enhanced-features-overview.md)
