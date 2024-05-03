@@ -70,15 +70,15 @@ This is called *activating* the object. You can see the possible activate types 
 
 **Single**: The object has a single "state", or set of behaviors. Example: the Wand. Think of this as turning the object "on" and "off" with one click. When you pick up the Wand, it's in its default (non-activated) state. When you click, the Wand runs through its behaviors and then immediately returns to its default state. If you click again, the object repeats the same set of behaviors.
 
-**Toggle**: The object has two "states." When you pick it up, it's in its default (non-activated) state. When you click, it triggers the "activated" state and turns the behaviors for that state "on." They stay on until you click again. This second click turns the behaviors "off" and returns the object to its default (non-activated) state. Examples: the Wine Glass and the Drill. This should become more clear when we examine individual object behaviors in the sections below.
+**Toggle**: The object has two "states." When you pick it up, it might be in its activated or non-activated state. When you click, it toggles from whatever state it's in to its second state. This state, and the behaviors it triggers, remain active until you click again. This second click toggles the object back to the original state. Examples: the Wine Glass and the Drill. This should become more clear when we examine individual object behaviors in the sections below.
 
-**None**: The object can't be activated. Example: the Birthday Cake. After you pick it up, there's nothing further you can do with it; just just hold it until you decide to put it down.
+**None**: The object can't be activated. Example: the Birthday Cake. After you pick it up, there's nothing further you can do with it; you just hold it until you decide to release it.
 
 ![Screen shots of avatars holding the Wand, which is the single equippable activation type, and the Drill, which is the toggle equippable activation type.](../../../media/enhance-your-environment/equips-in-detail/003-activation-type-examples.png)
 
 **Release an Equippable**
 
-To release an Equippable, press the Space bar.
+To release an Equippable, press the Space bar. This causes the Equippable to drop downwards.
 
 ## How each Equippable object works
 
