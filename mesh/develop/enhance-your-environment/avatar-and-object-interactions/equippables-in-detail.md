@@ -4,7 +4,7 @@ description: Learn about various equippable objects and the realistic ways they 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 4/24/2024
+ms.date: 5/2/2024
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, pick up, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation Mode
 ---
@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, object and player interactions, interactables, manipul
 
 ## Overview
 
-In the Toybox sample, certain prefabs are classied as *Equippables*. When you pick up such an object, your hand and arm position adjust so that the object is held in a realistic way. This is called *equipping an object to your hand*.  
+In the Toybox sample, certain prefabs are classied as *Equippables*. When you pick up such an object, your hand and arm position adjust to hold the object in a realistic way. This is called *equipping an object to your hand*.  
 
 There are eight Equippables:
 
@@ -26,27 +26,35 @@ Tablet
 Coffee Cup
 Wand
 
-To see the Equippables in Unity, in the **Scene** window, navigate into the building with a fish on the front. The Equippables are on two tables against the back wall.
+To see the Equippables in Unity, in the **Scene** window, navigate into the building with the fish on the front. The Equippables are on two tables against the back wall.
 
 ![A screen shot of the first set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/012-table1.png)
 
 ![A screen shot of the second set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/013-table2.png)
 
-Note that not all the objects on the tables are Equippables--the Baseball and Beach Ball are [*throwables*](./interactables.md#throwable). To determine an object's type, view the **Object Type** setting in the object's *Mesh Interactable setup* component.
+Note that not all the objects on the tables are Equippables--the Baseball and Beach Ball are [*throwables*](./interactables.md#throwable). 
+
+**To determine an object's type**:
+1. Select the object.
+1. In the **Inspector**, navigate to the *Mesh Interactable setup* component and then view the **Object Type** property.
 
 ![A screen shot of an object's type in its Mesh Interactabe Setup component.](../../../media/enhance-your-environment/equips-in-detail/014-object-type.png)
 
 ## Where to find Equippables
 
-In the **Hierarchy**, the Equippables re nested prefabs to **Equipable Interactable Samples**, which is connected to a prefab named *toybox_Equipable_Interactable_Samples*.
+In the **Hierarchy**, the Equippables are nested prefabs to **Equipable Interactable Samples**, which is an instance of the prefab named *toybox_Equipable_Interactable_Samples*.
 
 ![A screen shot of the equippable prefabs in the Hierarchy.](../../../media/enhance-your-environment/equips-in-detail/001-equips-in-the-hierarchy.png)
 
-The Equippable prefabs live in subfolders of the *Runtime* folder. These folders start with *Toybox_* followed by the name of the prefab. For example, the Wineglass prefab is stored in the *Toybox_Wineglass* folder.
+In the **Project** window, the Equippable prefabs live in subfolders of the *Runtime* folder. These folders start with *Toybox_* followed by the name of the prefab. For example, the Wineglass prefab is stored in the *Toybox_Wineglass* folder.
 
 ![Screen shot of the wineglass prefab in the Toybox_WineGlass folder.](../../../media/enhance-your-environment/equips-in-detail/005-wineglass-location-in-folder.png)
 
 **Tip**: To quickly find a prefab in the **Project** folder, in the **Hierarchy**, select the prefab, and then, in the **Inspector**, click the **Select** button.
+
+## Position of objects
+
+There are different ways of holding an Equippable object. Some objects, when when picked up, are designed to be held away from the body and high enough to be in your field of view (for example, the Wineglass or Trophy). Other objects are designed to be hold closer to the body and *not* in your field of view (for example, the Wrench).
 
 ## Equippable behaviors
 
@@ -54,19 +62,27 @@ For some Equippables, you can pick them up and then press the left mouse button 
 
 - Raise and lower a Wine glass.
 - Generate sparkles from the end of a Wand.
-- Turn a drill on and off. 
+- Turn a drill off and on.
 
 This is called *activating* the object. You can see the possible activate types in the object's *Mesh Interactable Setup* component.
 
 ![A screen shot of an object's activate type in its Mesh Interactabe Setup component.](../../../media/enhance-your-environment/equips-in-detail/015-activate-type.png)
 
-**Single**: You click once to activate the object. Example: the Wand.
+There are three activate options: *Single*, *Toggle*, and *None*.
 
-**Toggle**: You click once to activate the object, and then click again to return the object to its non-activated state. Examples: the Wine Glass and the Drill.
+**Single**: The object has a single "state", or set of behaviors. Example: the Wand. Think of this as turning the object "on" and "off" with one click. When you pick up the Wand, its in its default (non-activated) state. When you click, the Wand runs through its behaviors and then immediately returns to its default state. If you click again, the object repeats the same set of behaviors.
 
-**None**: The object can't be activated. Example: the Birthday Cake. After you pick it up, there's nothing further you can do with it.
+**Toggle**: The object has two "states." When you pick it up, it's in its default (non-activated) state. When you click, it triggers the "activated" state and turns the behaviors for that state "on." They stay on until you click again. this second click turns the behaviors "off" and returns the object to its default (non-activated) state. Examples: the Wine Glass and the Drill. This should become more clear when we examine individual object behaviors in the sections below.
+
+**None**: The object can't be activated. Example: the Birthday Cake. After you pick it up, there's nothing further you can do with it; just just hold it until you decide to put it down.
 
 ![Screen shots of avatars holding the Wand, which is the single equippable activation type, and the Drill, which is the toggle equippable activation type.](../../../media/enhance-your-environment/equips-in-detail/003-activation-type-examples.png)
+
+**Release an Equippable**
+
+To release an Equippable, press the Space bar.
+
+## How each Equippable object works
 
 ### Wine glass
 
@@ -86,7 +102,7 @@ Activation mode: None
 
 Activation mode: toggle
 
-When you pick up the drill, it's "ready for action"--it's held out in front of you and turned on. When you click, the drill turns off and your arm moves the drill down to your side. When you click again, the drill goes back into its "ready for action" state. This is a good example of the "toggle" activate type, which always toggles between two states.
+When you pick up the drill, it's automatically activated--it's held out in front of you and turned on. When you click, the drill turns off and your arm moves the drill down to your side. When you click again, the drill goes back into its turned-on state. This is a good example of the "toggle" activate type, which always toggles between two states.
 
 ![Screen shot of an avatar holding the Drill.](../../../media/enhance-your-environment/equips-in-detail/016-drill.png)
 
@@ -94,7 +110,7 @@ When you pick up the drill, it's "ready for action"--it's held out in front of y
 
 Activation mode: toggle
 
-When you pick up the Wrench, you hold it out in front of you almost chest high. You click once to move the Wrench to your side, and then click again to lower it back to its initial position.
+When you pick up the Wrench, it's automatically activated--it's held out in front of you almost chest high. When you click, the wrench is lowered to your side. Click again to activate it again.
 
 ![Screen shot of an avatar holding the Wrench.](../../../media/enhance-your-environment/equips-in-detail/017-wrench.png)
 
@@ -102,7 +118,7 @@ When you pick up the Wrench, you hold it out in front of you almost chest high. 
 
 Activation mode: toggle
 
-When you pick up the Trophy, you hold it out in front of you chest high. You click once to raise the Trophy above your head in a "salute" position, and then click again to lower it back to its initial position.
+When you pick up the Trophy, you hold it out in front of you chest high. Click to activate it; this raises the Trophy above your head in a "salute" position. Click again to lower (and de-activate) the Trophy.
 
 ![Screen shot of an avatar holding the Trophy.](../../../media/enhance-your-environment/equips-in-detail/018-trophy.png)
 
@@ -110,7 +126,7 @@ When you pick up the Trophy, you hold it out in front of you chest high. You cli
 
 Activation mode: toggle
 
-The Tablet is viewed by many as one of the more useful Equippables because you can attach buttons or a [WebSlate](../webcontent.md) to its screen and then move around the scene with it. When you pick up the Tablet, you hold it out in front of you chest high. You click once to raise the Tablet up to eye level, and then click again to lower it back to its initial position.
+The Tablet is viewed by many as one of the more useful Equippables because you can attach a UI object with buttons or a [WebSlate](../webcontent.md) to its screen and then move around the scene with it. When you pick up the Tablet, you hold it out in front of you chest high. Click once to activate the Tablet--this raises it up to almost eye level, but gives you an unobstructed view if you wish to look around the room. Click again to lower it back to its initial position (and de-activate it).
 
 ![Screen shot of an avatar holding the Tablet.](../../../media/enhance-your-environment/equips-in-detail/019-tablet.png)
 
@@ -124,7 +140,17 @@ Activation mode: none
 
 Activation mode: single
 
-When you pick up the Wand, you hold it out in front of you almost chest high. The tip of the Wand displayed a particle effect. When you click, your arm thrusts the Wand forward and the Wand emits "sparkles" (generated through another particle effect). Your arm then returns to its initial position.
+When you pick up the Wand, you hold it out in front of you almost chest high. The tip of the Wand displays a particle effect. Click to activate the Wand; your arm thrusts forward and the tip of the Wand emits "sparkles" that are generated through another particle effect. Since the Wand has the *single* activate type, as soon as it runs through its behaviors, it de-activates and your arm returns to its initial position. Click again to repeat the behaviors.
+
+## Create a custom Equippable
+
+If you have a model that's similar in size and orientation to one of our Equippable prefabs, you replace the Equippable model with your model Each prefab has a child object named "Artwork" which is where you can insert your custom model.
+
+
+Next Steps
+
+
+===================================
 
 ## Grab and throw behaviors
 
@@ -150,36 +176,22 @@ When the Tablet is activated, the attendee holds the Tablet up to their face but
 
 
 
-## Position of objects
-
-There are different ways of holding an object. Some objects, when when picked up, are designed to be held away from the body and high enough to be in your field of view (for example, the Wineglass or Trophy). 
-
-< TBD image>
-
-Other objects are designed to be hold closer to the body and *not* in your field of view (for example, the Wrench). 
-
-< TBD image>
-
-
-
-
-
 NOTES:
 
 Brandon said Equippables well be moving to an Assets/Equippables folder sometime soon.
 
-For 3P developers (from David Wilson): when they go into Play mode they get no avatars spawned. They can't see what's going on with the interaction with the Equippable. They're 100% when trying to set up an object. They can only get to a result after they save, publish, and then create an enter an event. At that point they can't edit anything live. 7:52
+For 3P developers (from David Wilson): when they go into Play mode they get no avatars spawned. They can't see what's going on with the interaction with the Equippable. They're 100% when trying to set up an object. They can only get to a result after they save, publish, and then create and enter an event. At that point they can't edit anything live. 7:52
 
 Wineglass raise: the Animator is on the avatar. There are signals from the Interactable to the avatar via the Mesh Interactable Body component. With the Wineglass: 
 Body type is Equippable (the object will be attached to the hand of the avatar.)
 The dev can change the activation type via "Activate Target Poses." It's currently set to Toggle. Other choices: None and Single.
 Dev can change the object type to "Throwable."
 
-Wand, under the hood: it has an onHold() event. (?) It changes its state when it goes from not being held to being held. When it's activated, it's a "single instance" activation. It plays the VFX and audio and changes the avatar pose. 
+
 
 To change the state, the avatar can click the screen anywhere except on the Equippable they're holding. 
 
-There can be more than one pose that's incorporated into a transition. For example, with the Wand, it's not just a linear transition from A to B; there can be a wrist flick and the durtation of that transition can be adjusted in the Animation Curve.
+There can be more than one pose that's incorporated into a transition. For example, with the Wand, it's not just a linear transition from A to B; there can be a wrist flick and the duration of that transition can be adjusted in the Animation Curve.
 
 ![______](../../../media/enhance-your-environment/equips-in-detail/007-animation-curve.png)
 
@@ -187,15 +199,16 @@ Wand: The trigger is sent just before the last pose. If you're looking at the tr
 
 TO DO: David said there's a GIF available with the transition of the sizes of a ball pose for the hand. A Cylinder holding, and a pinch kind of pose. That's accessible in the old hand pose or in the throw hand pose or in the aim hand pose in the setup options. 21:00. The hand pose refers to the finger position (shows the avatar holding a coffee mug). Those are a series of dictated hand positions. Within the ball, pinch and cylinder, there's a flexible range that devs are able to tune. (Visual of the avatar holding a tea cup). This shows a small pinch vs. something else with a larger pinch. 
 
-(David:)" We've created the prefabs in a way that devs can take their own art and if it's in a similar size and similar type of orientation, they can turn off ours (art?) and turn on theirs in the same structure. Each Equippable has a child object named "Artwork" which is where you can insert your custom model.  
-
-Question: David mentioned that they're working on putting an avatar in the scene so devs have a basis of comparison for determining scale. He said it hasn't been approved yet. What's the status of that right now? Is this the object that Cameron talked about recently?
+@@@ 
 
 Brandon talks about the script graphs:
 
 Nodes: IsMine, EquipLocation. If "EquipLocation" = None, that means the object was dropped. (I think you have to look for this in Mesh Interactable Setup). 39:42
 
-Wand
+## Wand
+
+The Wand, under the hood: it has an onHold() event. (?) It changes its state when it goes from not being held to being held. When it's activated, it's a "single instance" activation. It plays the VFX and audio and changes the avatar pose. 
+
 
 The Wand is in the scene--it's static, it's just sitting there.
 
