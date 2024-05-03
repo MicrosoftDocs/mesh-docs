@@ -1,15 +1,15 @@
 ---
-title: Equippables -- Picking up objects realistically
-description: Learn about various equippable objects and the realistic ways they can be grabbed and manipulated.
+title: Hold objects realistically with Equippables
+description: Learn about various equippable objects and the realistic ways they can be picked up and held.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
 ms.date: 5/2/2024
 ms.topic: overview
-keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, pick up, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation Mode
+keywords: interactions, interactables, equippables, throwables, avatars, grab, pick up, hold, throw, attach, activate, activation
 ---
 
-# Equippables: Picking up objects realistically
+# Hold objects realistically with Equippables
 
 ## Overview
 
