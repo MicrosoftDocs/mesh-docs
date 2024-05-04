@@ -31,11 +31,11 @@ Let's take a look at how the Wand works by examining the script graph that's att
 
 1. In the **Hierarchy**, select the **Wand_Prefab** GameObject.
 
-![A screen shot of the Hierarchy with the Wand prefab highlighted.](../../../media/enhance-your-environment/equips-in-detail/021-wand-prefab-in-hierarchy.png)
+    ![A screen shot of the Hierarchy with the Wand prefab highlighted.](../../../media/enhance-your-environment/equips-in-detail/021-wand-prefab-in-hierarchy.png)
 
 1. In the **Inspector**, navigate to the **Script Machine** component and note that it contains a script graph asset named **MagicWand**. Click the **Edit Graph** button.
 
-![A screen shot of the Wand's Script Machine component with the Edit Graph button highlighted.](../../../media/enhance-your-environment/equips-in-detail/022-edit-graph-button.png)
+    ![A screen shot of the Wand's Script Machine component with the Edit Graph button highlighted.](../../../media/enhance-your-environment/equips-in-detail/022-edit-graph-button.png)
 
 ## Detect when the Wand is picked up
 
