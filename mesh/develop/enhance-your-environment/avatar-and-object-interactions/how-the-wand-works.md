@@ -37,7 +37,7 @@ Let's take a look at how the Wand works by examining the script graph that's att
 
 ![A screen shot of the Wand's Script Machine component with the Edit Graph button highlighted.](../../../media/enhance-your-environment/equips-in-detail/022-edit-graph-button.png)
 
-## Detecting when the Wand is picked up
+## Detect when the Wand is picked up
 
 In the visual script attached to the Wand, we start our journey in the group named **Checking if Held to start magic glow**.
 
@@ -83,7 +83,7 @@ The state change causes the "true" value of *startFLowVFX* to be passed to an *i
 
 :::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-holding1.gif" alt-text="GIF that shows an event attendee holding the Wand in its non-activated state.":::
 
-## Activating the Wand
+## Activate the Wand
 
 Let's assume the attendee clicks the left mouse button (PC) or controller trigger button (Quest). This is called "activating the Equippable." It causes the avatar's arm position to change, and in the node group named **Networking isPressed** ...
 
@@ -119,6 +119,8 @@ Back to the **Spell Cast on click** node group. After a brief cooldown period, a
 
 :::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-thrusting1.gif" alt-text="GIF that shows an event attendee activating the Wand which then generates fireworks.":::
 
+## Turn the non-activate particle effect back on
+
 After another brief cooldown period, the *startGlowVFX** Boolean value is changed back to "true", which turns the *vfx_wand_ethereal_persistent_02* particle system ("sparkly vapor") effect back on in the **Networking startMagic** group.
 
 ![A screen shot of the nodes that turn the sparkly vapor particle effect back on.](../../../media/enhance-your-environment/equips-in-detail/039-turn-on-original-particle-effect.png)
@@ -127,7 +129,7 @@ At this point, the avatar's arm returns to the position it was in before the Wan
 
 :::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-holding1.gif" alt-text="GIF that shows an event attendee holding the Wand in its non-activated state.":::
 
-## Releasing the Wand
+## Release the Wand
 
 If the Wand had the activate type "toggle," when the attendee clicked again, it would trigger a second, different "state", or set of behaviors. However, the Wand's activate type is "single", and this means that every time the attendee clicks, the same "state", or set of behaviors, is repeated.
 
