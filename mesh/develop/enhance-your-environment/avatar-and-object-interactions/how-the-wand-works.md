@@ -15,15 +15,15 @@ keywords: interactions, interactables, equippables, throwables, avatars, grab, p
 
 **Activation mode**: single
 
-The Wand is an *Equippable* object found in the Toybox sample. The Wand's activate type is *single*. When you pick up the Wand, you hold it out in front of you almost chest high. The tip of the Wand displays a sparkly vapor particle effect. 
+The Wand is an *Equippable* object found in the Toybox sample. When you pick up the Wand, you hold it out in front of you almost chest high and the Wand displays a sparkly vapor particle effect. 
 
 :::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-holding1.gif" alt-text="GIF that shows an event attendee holding the Wand in its non-activated state.":::
 
-Click to *activate* the Wand; your arm thrusts forward and the tip of the Wand emits fireworks that are generated through another particle effect.
+Click to *activate* the Wand; your arm thrusts forward and the tip of the Wand emits fireworks that are generated through another particle effect. 
 
 :::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-thrusting1.gif" alt-text="GIF that shows an event attendee activating the Wand which then generates fireworks.":::
 
-Since the Wand has the *single* activate type, as soon as it runs through its behaviors, it de-activates and your arm returns to its initial position. Click again to repeat the behaviors.
+The Wand's *activate type* is set to *single*. This means that as soon as it runs through its behaviors, it de-activates and your arm returns to its initial position. Click again to repeat the behaviors.
 
 ## The Wand script graph
 
@@ -69,7 +69,7 @@ These nodes, and the sound that gets triggered, occur locally. However, we want 
 
 ## Turn on the non-activated state particle effect
 
-We pick up the flow in the node group named **Networking startMagic**. The purpose of this node group is to turn the initial particle effect that appears when the avatar picks up the Wand on and off.
+We pick up the flow in the node group named **Networking startMagic**. The purpose of this node group is to turn the initial particle effect that appears at the tip of the Wand on and off. We'll call this effect "sparkly vapor".
 
 ![A screen shot of the Wand's full script graph with the fifth section highlighted.](../../../media/enhance-your-environment/equips-in-detail/028-ismine-in-code.png)
 
@@ -77,7 +77,7 @@ The state change causes the "true" value of *startFLowVFX* to be passed to an *i
 
 ![A screen shot of the get object variable, on stage changed, and if nodes.](../../../media/enhance-your-environment/equips-in-detail/030-start-glow-vfx.png)
 
-... and this causes the value of the *PersistentVFX* object variable to also be true, which triggers the *vfx_wand-ethereal_persistent_02* particle system effect.
+... and this causes the value of the *PersistentVFX* object variable to also be true, which triggers the *vfx_wand-ethereal_persistent_02* particle system ("sparkly vapor") effect.
 
 ![A screen shot of the set active node with the value of the boolean that triggers the particle effect set to true.](../../../media/enhance-your-environment/equips-in-detail/031-turn-particle-effect-on.png)
 
@@ -103,7 +103,7 @@ We pick up the flow in the node group named **Spell cast on click**.
 
 ![A screen shot of the Wand's full script graph with the third section highlighted.](../../../media/enhance-your-environment/equips-in-detail/035-full-script-graph-section-three-highlighted.png)
 
-This node group triggers the fireworks effect at the end of the Wand that occurs when the attendee clicks the button. After the Wand returns to its non-activated state, this node group turns the first particle effect (sparkly vapor) back on.
+This node group triggers the fireworks particle effect at the end of the Wand that occurs when the attendee clicks the button and activates the Wand. After the Wand returns to its non-activated state, this node group turns the first particle effect ("sparkly vapor") back on.
 
 In the graph, the "true" value of isPressed* causes an *if* node to trigger the *Set Variable: Object* node. This node sets the *startGlowVFX* variable to "false".
 
@@ -113,7 +113,7 @@ This triggers the nodes in the **Networking startMagic** node group again. This 
 
 ![A screen shot of the persistant vfx boolen changed to false, which turns off the first particle effect.](../../../media/enhance-your-environment/equips-in-detail/037-turn-off-first-particle-effect.png)
 
-Back to the **Spell Cast on click** node group. After a brief cooldown period, a sound is played, and then a different particle effect is triggered at the tip of the wand: *vfx_wand_blast_trail_spheres_01*, which is the value for the *ShootTrailVFX* object variable.
+Back to the **Spell Cast on click** node group. After a brief cooldown period, a sound is played, and then a different particle effect is triggered at the tip of the wand: *vfx_wand_blast_trail_spheres_01* ("fireworks"), which is the value for the *ShootTrailVFX* object variable.
 
 ![A screen shot of the nodes that trigger the activated state sound and particle effect.](../../../media/enhance-your-environment/equips-in-detail/038-trigger-fireworks-particle-effect.png)
 
@@ -131,7 +131,7 @@ At this point, the avatar's arm returns to the position it was in before the Wan
 
 If the Wand had the activate type "toggle," when the attendee clicked again, it would trigger a second, different "state", or set of behaviors. However, the Wand's activate type is "single", and this means that every time the attendee clicks, the same "state", or set of behaviors, is repeated.
 
-To release the Wand, the attendee presses the Space key; this causes the Wand drops to the ground. When the Wand *isn't* being held, we don't want the sparkly vapor particle effect to show at the tip of the Wand. The nodes in the **If not occupied, Turn off Wand** node group turn off this particle effect.
+To release the Wand, the attendee presses the Space key; this causes the Wand drops to the ground. When the Wand *isn't* being held, we don't want the sparkly vapor particle effect to run at the tip of the Wand. The nodes in the **If not occupied, Turn off Wand** node group turn off this particle effect.
 
 ![A screen shot of the Wand's full script graph with the first section highlighted.](../../../media/enhance-your-environment/equips-in-detail/040-full-script-graph-section-one-highlighted.png)
 
