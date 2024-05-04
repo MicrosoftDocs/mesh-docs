@@ -1,6 +1,8 @@
 items: 
 - name: Grab, hold and throw with Interactables
   href: interactables.md
+- name: Equippables--How the Wand works
+  href: how-the-wand-works.md
 - name: Triggers, anchors and tethers
   href: triggers-anchors-and-tethers.md
 - name: Create avatar spawn and travel points
