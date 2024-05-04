@@ -71,7 +71,7 @@ These nodes, and the sound that gets triggered, occur locally. However, we want 
 
 We pick up the flow in the node group named **Networking startMagic**. The purpose of this node group is to turn the initial particle effect that appears at the tip of the Wand on and off. We'll call this effect "sparkly vapor".
 
-![A screen shot of the Wand's full script graph with the fifth section highlighted.](../../../media/enhance-your-environment/equips-in-detail/028-ismine-in-code.png)
+![A screen shot of the Wand's full script graph with the fifth section highlighted.](../../../media/enhance-your-environment/equips-in-detail/029-full-script-graph-section-five-highlighted.png)
 
 The state change causes the "true" value of *startFLowVFX* to be passed to an *if* node ..
 
@@ -145,7 +145,7 @@ When the Wand is dropped, the value of *Get Equipped At* changes to "None." This
 
 ![A screen shot of the get equipped at node with a value of none after the Wand has been dropped.](../../../media/enhance-your-environment/equips-in-detail/042-wand-has-been-dropped.png)
 
-This once again triggers the nodes in the **Networking startMagic** node group and turns off the particle effect--*vfx_wand_ethereal_persistent_02*--which is the value of the *PersistantVFX* object variable.
+This once again triggers the nodes in the **Networking startMagic** node group and turns off the "sparkly vapor" particle effect--*vfx_wand_ethereal_persistent_02*--which is the value of the *PersistantVFX* object variable.
 
 ![A screen shot of the persistant vfx boolen changed to false, which turns off the sparkly vapor particle effect.](../../../media/enhance-your-environment/equips-in-detail/037-turn-off-first-particle-effect.png)
 
