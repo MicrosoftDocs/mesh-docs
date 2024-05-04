@@ -39,7 +39,7 @@ Let's take a look at how the Wand works by examining the script graph that's att
 
 ## Detect when the Wand is picked up
 
-In the visual script attached to the Wand, we start our journey in the group named **Checking if Held to start magic glow**.
+In the visual script attached to the Wand, we start our journey in the node group named **Checking if Held to start magic glow**.
 
 ![A screen shot of the Wand's full script graph with the second section highlighted.](../../../media/enhance-your-environment/equips-in-detail/023-full-script-graph-section-two-highlighted.png)
 
@@ -47,7 +47,7 @@ The node that determines if the Wand is picked up or not is *Mesh Interactable B
 
 ![A screen shot of the isMine node.](../../../media/enhance-your-environment/equips-in-detail/010-is-mine-node.png)
 
-When an avatar picks up the Wand, its state changes. The "true" value of *isMind* is passed to an *if* node and this causes a "pickup sound" to trigger ...
+When an avatar picks up the Wand, its state changes. The value of *isMine* changes to "true" value and is passed to an *if* node. This causes a "pick-up sound" to trigger ...
 
 ![A screen shot of the on state changed, if, and play mesh audio nodes.](../../../media/enhance-your-environment/equips-in-detail/024-play-mesh-audio.png)
 
@@ -121,11 +121,11 @@ Back to the **Spell Cast on click** node group. After a brief cooldown period, a
 
 ## Turn the non-activate particle effect back on
 
-After another brief cooldown period, the *startGlowVFX** Boolean value is changed back to "true", which turns the *vfx_wand_ethereal_persistent_02* particle system ("sparkly vapor") effect back on in the **Networking startMagic** group.
+After another brief cooldown period, the *startGlowVFX* Boolean value is changed back to "true", which turns the *vfx_wand_ethereal_persistent_02* particle system ("sparkly vapor") effect back on in the **Networking startMagic** group.
 
 ![A screen shot of the nodes that turn the sparkly vapor particle effect back on.](../../../media/enhance-your-environment/equips-in-detail/039-turn-on-original-particle-effect.png)
 
-At this point, the avatar's arm returns to the position it was in before the Wand was activated.
+At this point, the avatar's arm returns to the position it was in before the Wand was activated and the sparkly vapor can be seen again.
 
 :::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-holding1.gif" alt-text="GIF that shows an event attendee holding the Wand in its non-activated state.":::
 
