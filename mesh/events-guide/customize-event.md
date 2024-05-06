@@ -11,22 +11,13 @@ keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
 
 # Customize your event
 
-## Considerations before starting your event
-
-* To ensure the event runs smoothly, ensure that you customize and save customizations at least **30 minutes before** the event start time. Once someone joins the event, saving customizations is not available.
-
-> [!TIP]
-> **Who should customize an event?**
->
-> Anyone who has been invited as a **Co-organizer** can customize an event. Do this with
-> caution, knowing that any edits you make will directly alter the Event or Template
-> that event attendees will join.
+Event customization empowers organizers and co-organizers to add content to an event or template of default or custom environments.
 
 ## Why customize an event?
 
 As a host for a Mesh event, you have many tools at your disposal to orchestrate an experience for attendees.
 
-Along with tools to interact with and manage attendees, you have a Control Panel to manage aspects of the environment. You may want to play a video when people enter the event, or execute a pre-planned sequence of actions like queuing a video, displaying images, and showing a Screenshare simultaneously. All of this can be added (and more) when you customize your event.
+Along with [tools to interact with and manage attendees](produce-event.md#event-producers-tools), you have a Control Panel to manage aspects of the environment. You may want to play a video when people enter the event, or execute a pre-planned sequence of actions like queuing a video, displaying images, and showing a Screenshare simultaneously. All of this can be added (and more) when you customize your event.
 
 ### Types of customizations
 
@@ -50,6 +41,17 @@ Along with tools to interact with and manage attendees, you have a Control Panel
 |Screenshare     |  Visible       |  Display screen as an event host with Organizer or Co-Organizer privileges.       |
 |Image     |  URL, Orientation, Backplate, Visible      |   Direct links to images hosted via SharePoint or HTTPS URLs      |
 
+## Considerations before starting your event
+
+* To ensure the event runs smoothly, ensure that you customize and save customizations at least **30 minutes before** the event start time. Once someone joins the event, saving customizations is not available.
+
+> [!TIP]
+> **Who should customize an event?**
+>
+> Anyone who has been invited as a **Co-organizer** can customize an event. Do this with
+> caution, knowing that any edits you make will directly alter the Event or Template
+> that event attendees will join.
+
 ## How to customize an event
 
 ## Customization flow
@@ -57,6 +59,8 @@ Along with tools to interact with and manage attendees, you have a Control Panel
 At a high level, this is the flow you can expect to follow when customizing your event:
 
 1. Once your event is created using [https://mesh.cloud.microsoft/](https://mesh.cloud.microsoft/), open the Mesh app to find and start customizing your event.
+
+1. **Enter a Customization session** for your Event or Template.
 
 1. **Add content** using the **Editor**.
 
@@ -122,7 +126,7 @@ At a high level, there are three major steps to customize your event or template
 
     :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-object-save-changes.png" alt-text="Screenshot of Mesh app showing save changes dialogue after customizing.":::
 
-## Add content with Editor
+### Add content with Editor
 
 Use the Editor to place content in your environment and customize the content displayed in each object.
 
@@ -132,7 +136,7 @@ The three objects we'll cover here are **Video**, **Image**, and **Screenshare**
 
 Use the Editor to add content to your environment that can be controlled during your run-of-show.
 
-1. Once it loads, Select the **Editor** button.
+1. Select the **Editor** button.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Event-customization-editor-open.png" alt-text="Screenshot of Mesh app showing Editor open with no objects added.":::
 
@@ -160,19 +164,12 @@ Use the Editor to add content to your environment that can be controlled during 
     >[!Tip]
     >while you are moving an object you’ll see a small line drawn from your object down to the floor. This can help you position your objects relative to landmarks in the scene such as the edge of a stage or a piece of furniture.
 
-### Video object requirements
-
-For video objects, you must:
-
-- Use **.MP4** file type only.
-- Use direct links to video files that are stored on SharePoint or HTTPS URLs. Links to video services like YouTube, Vimeo, etc. are not supported.
-
 > [!TIP]
->     For example, use the **Share** or the **Copy Link** functionality in SharePoint to copy the link of the video you want to share and paste it in the Video player object URL field.
+>     Use the **Share** or the **Copy Link** functionality in SharePoint to copy the link of the video or image that you want to share and paste it in the Video player or Image object URL field.
 > 
 >     :::image type="content" source="../media/mesh-event-producer-guide/SharePoint-link.png" alt-text="Sharepoint link copied in sharepoint":::
 
-### Edit object controls
+#### Edit object controls
 
 Once you've added an object, you can maneuver it around the spaces and select the it to edit the controls.
 
@@ -184,13 +181,13 @@ Once you've added an object, you can maneuver it around the spaces and select th
 
     :::image type="content" source="../media/mesh-event-producer-guide/Configure-controls-artifact-larger.gif" alt-text="Add objects and update url":::
 
-## Prepare content with the Control panel
+### Prepare content with the Control panel
 
 The **Control panel** holds all the controls available for your content during the event. Like having a technical booth for theatrical technicians, it's designed to give the organizer the ability to orchestrate a performance in real time.
 
 You can try out the controls during the customization session, but make sure you set everything back to how you want your event to look when it starts and then save your changes (or if you're just practicing, you can use **Revert changes** in the save dialog).
 
-### Create an Action Group
+#### Create an Action Group
 
 Sometimes you want to trigger multiple production elements simultaneously, like starting a video and revealing a banner image at the same time. To simplify multiple actions into just one click in the Control Panel, you can create an Action Group.
 
@@ -217,10 +214,9 @@ To create an **Action Group**, start by opening your **Control Panel** and selec
 
     :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-gif.gif" alt-text="Gif showing Action Groups populated and available to select Play for each to see the actions occur in your environment.":::
 
-**Control panel Notes:**
-
-- Playable content can be added from the environment editor or from a Unity project that has been uploaded to a custom environment. Reference the [Choose your journey article](../develop/getting-started/choose-your-journey.md)
-    to get started with adding custom content.
+> [!TIP]
+>  Playable content can be added from the environment editor or from a Unity project that has been uploaded to a custom environment. Reference the [Choose your journey article](../develop/getting-started/choose-your-journey.md)
+>     to get started with adding custom content.
 
 ## Save your content
 
