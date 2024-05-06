@@ -214,9 +214,9 @@ To create an **Action Group**, start by opening your **Control Panel** and selec
 
     :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-gif.gif" alt-text="Gif showing Action Groups populated and available to select Play for each to see the actions occur in your environment.":::
 
-> [!TIP]
->  Playable content can be added from the environment editor or from a Unity project that has been uploaded to a custom environment. Reference the [Choose your journey article](../develop/getting-started/choose-your-journey.md)
->     to get started with adding custom content.
+    > [!TIP]
+    >  Playable content can be added from the environment editor or from a Unity project that has been uploaded to a custom environment. Reference the [Choose your journey article](../develop/getting-started/choose-your-journey.md)
+    >     to get started with adding custom content.
 
 ## Save your content
 
