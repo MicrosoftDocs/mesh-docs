@@ -167,10 +167,6 @@ Use the Editor to add content to your environment that can be controlled during 
     >[!Tip]
     >while you are moving an object you’ll see a small line drawn from your object down to the floor. This can help you position your objects relative to landmarks in the scene such as the edge of a stage or a piece of furniture.
 
-> [!TIP]
->     Use the **Share** or the **Copy Link** functionality in SharePoint to copy the link of the video or image that you want to share and paste it in the Video player or Image object URL field.
-> 
->     :::image type="content" source="../media/mesh-event-producer-guide/SharePoint-link.png" alt-text="Sharepoint link copied in sharepoint":::
 
 #### Edit object controls
 
@@ -183,6 +179,11 @@ Once you've added an object, you can maneuver it around the spaces and select th
 1. Configure the controls for the object. For example, you can add the URL for your video:
 
     :::image type="content" source="../media/mesh-event-producer-guide/Configure-controls-artifact-larger.gif" alt-text="Add objects and update url":::
+
+    > [!TIP]
+    > Use the **Share** or the **Copy Link** functionality in SharePoint to copy the link of the video or image that you want to share and paste it in the Video player or Image object URL field.
+    > 
+    >     :::image type="content" source="../media/mesh-event-producer-guide/SharePoint-link.png" alt-text="Sharepoint link copied in sharepoint":::
 
 ### Prepare content with the Control panel
 
