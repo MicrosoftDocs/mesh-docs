@@ -33,13 +33,6 @@ Along with [tools to interact with and manage attendees](produce-event.md#event-
 
     :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-gif.gif" alt-text="Gif of an avatar in the Mesh app using action groups to display imaes, a video and company logo, and screenshare.":::
 
-#### Objects you can add
-
-|Object |Controls  |Notes  |
-|---------|---------|---------|
-|Video   |   URL, Looping, Volume, Backplate, Visible      |  Direct links to videos hosted via SharePoint or HTTPS URLs and **.MP4** file types only.       |
-|Screenshare     |  Visible       |  Display screen as an event host with Organizer or Co-Organizer privileges.       |
-|Image     |  URL, Orientation, Backplate, Visible      |   Direct links to images hosted via SharePoint or HTTPS URLs      |
 
 ## Considerations before starting your event
 
@@ -132,7 +125,13 @@ Use the Editor to place content in your environment and customize the content di
 
 :::image type="content" source="../Resources/media/environment-editor-catalog.png" alt-text="Screenshot of editor catalog":::
 
-The three objects we'll cover here are **Video**, **Image**, and **Screenshare**.
+The three objects we'll cover here are **Video**,**Screenshare**, and **Image**.
+
+|Object |Controls  |Notes  |
+|---------|---------|---------|
+|Video   |   URL, Looping, Volume, Backplate, Visible      |  Direct links to videos hosted via SharePoint or HTTPS URLs and **.MP4** file types only.       |
+|Screenshare     |  Visible       |  Display screen as an event host with Organizer or Co-Organizer privileges.       |
+|Image     |  URL, Orientation, Backplate, Visible      |   Direct links to images hosted via SharePoint or HTTPS URLs      |
 
 Use the Editor to add content to your environment that can be controlled during your run-of-show.
 
