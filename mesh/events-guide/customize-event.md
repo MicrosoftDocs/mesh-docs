@@ -182,8 +182,7 @@ Once you've added an object, you can maneuver it around the spaces and select th
 
     > [!TIP]
     > Use the **Share** or the **Copy Link** functionality in SharePoint to copy the link of the video or image that you want to share and paste it in the Video player or Image object URL field.
-    > 
-    >     :::image type="content" source="../media/mesh-event-producer-guide/SharePoint-link.png" alt-text="Sharepoint link copied in sharepoint":::
+    > :::image type="content" source="../media/mesh-event-producer-guide/SharePoint-link.png" alt-text="Sharepoint link copied in sharepoint":::
 
 ### Prepare content with the Control panel
 
@@ -208,7 +207,7 @@ To create an **Action Group**, start by opening your **Control Panel** and selec
 
 1. For each object, choose the **Pencil icon** to choose which properties you want to control then select the controls you want to be included in the Action Group.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-select-controls-for-objects.gif" alt-text="Gif showing an avatar in the Mesh app choosing the controls for objects that they want to be in the Action Group."::: 
+    :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-select-controls-for-objects.gif" alt-text="Gif showing an avatar in the Mesh app choosing the controls for objects that they want to be in the Action Group.":::
 
 1. Adjust the controls for each object and select the **Save** icon. You'll see the Action Group show up in the **Control Panel** to the right.
 
@@ -217,8 +216,6 @@ To create an **Action Group**, start by opening your **Control Panel** and selec
 1. Repeat for all Action Groups you want, then you'll have a sequence of Actions available for use in your event.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-gif.gif" alt-text="Gif showing Action Groups populated and available to select Play for each to see the actions occur in your environment.":::
-
-    
 
 ## Save your content
 
