@@ -148,6 +148,10 @@ Use the Editor to add content to your environment that can be controlled during 
 
     Note the **Edit**, **Duplicate**, and **Delete** buttons for the selected object.
 
+    > [!TIP]
+    >  Playable content can be added from the environment editor or from a Unity project that has been uploaded to a custom environment. Reference the [Choose your journey article](../develop/getting-started/choose-your-journey.md)
+    >     to get started with adding custom content.
+
 1. Now you can manipulate the object as you'd like by selecting it with your cursor, dragging it to another location, or using the edges of the objects to scale them as you see fit.
 
     :::image type="content" source="../media/mesh-event-producer-guide/environment-editor-maneuver-artifact2.png" alt-text="Move object with avatar arm up":::
@@ -214,9 +218,7 @@ To create an **Action Group**, start by opening your **Control Panel** and selec
 
     :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-gif.gif" alt-text="Gif showing Action Groups populated and available to select Play for each to see the actions occur in your environment.":::
 
-    > [!TIP]
-    >  Playable content can be added from the environment editor or from a Unity project that has been uploaded to a custom environment. Reference the [Choose your journey article](../develop/getting-started/choose-your-journey.md)
-    >     to get started with adding custom content.
+    
 
 ## Save your content
 
