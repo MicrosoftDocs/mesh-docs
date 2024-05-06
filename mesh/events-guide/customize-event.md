@@ -125,7 +125,7 @@ Use the Editor to place content in your environment and customize the content di
 
 :::image type="content" source="../Resources/media/environment-editor-catalog.png" alt-text="Screenshot of editor catalog":::
 
-The three objects we'll cover here are **Video**,**Screenshare**, and **Image**.
+The three objects that you can add to through the editor are **Video**, **Screenshare**, and **Image**.
 
 |Object |Controls  |Notes  |
 |---------|---------|---------|
