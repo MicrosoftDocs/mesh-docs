@@ -21,12 +21,37 @@ In the gallery there a a number of exhibits and activities.
 
 **Exhibits**
 
-* **The Rambunctious Machine**: demonstrating interactive physics constrained to 2D
-* **Wave and Frequency**: connected physics bodies moving in a variety of synchronized ways
-* **Gravity Simulator**: switching between Earth, Moon and space
-* **Mass and Gravity**: planets and other objects orbiting around the Sun
-* **Mass, Buoyancy and Balance**: ships or other objects floating on the waves
+Four of the exhibits are in the Science Building's main hall.
+
+:::image type="content" source="../../../media/samples/science-building/002-sci-bldg-wide-630.png" alt-text="Elevated view of the four exhibits in the main hall of the science building" lightbox="../../../media/samples/science-building/001-sci-bldg-wide-1260.png":::
+
+1. **Mass and Gravity**: planets and other objects orbiting around the Sun
+
+    ![A screen shot of the Mass and Gravity exhibit.](../../../media/samples/science-building/011-mass-gravity.png)
+
+2. **Gravity Simulator**: switching between Earth, Moon and space
+
+    ![A screen shot of the Gravity Simulator exhibit.](../../../media/samples/science-building/012-gravity-simulator.png)
+
+3. **Wave and Frequency**: connected physics bodies moving in a variety of synchronized ways
+
+    ![A screen shot of the Wave Frequency exhibit.](../../../media/samples/science-building/009-wave-and-freq.png)
+
+4. **Mass, Buoyancy and Balance**: ships or other objects floating on the waves
+
+    ![A screen shot of the Mass, Buoyance, and Balance exhibit.](../../../media/samples/science-building/010-mass-buoyancy-balance.png)
+
+One exhibit is outside and in front of the main hall.
+
 * **Gone Fishin'!**: catch fish, ships or a penguin with a magnetic fishing rod
+
+:::image type="content" source="../../../media/samples/science-building/004-gone-fishing-630.png" alt-text="Elevated view of the Gone fishing exhibit" lightbox="../../../media/samples/science-building/003-gone-fishing-1260":::
+
+One exhibit is by the font desk which is in a building to the left of the main hall.
+
+* **The Rambunctious Machine**: demonstrating interactive physics constrained to 2D
+
+:::image type="content" source="../../../media/samples/science-building/006-ramb-machine-630.png" alt-text="Elevated view of the rambunctious machine exhibit." lightbox="../../../media/samples/science-building/005-ramb-machine-1260.png":::
 
 **Activities**
 
