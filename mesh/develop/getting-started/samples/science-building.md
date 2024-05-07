@@ -11,15 +11,15 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics
 
 # Microsoft Mesh toolkit Sample: ScienceBuilding
 
+## Overview
+
 ![Science Museum](../../../media/samples/002-science-building.png)
 
 The *ScienceBuilding* project (scene: *ScienceBuilding*) contains a carefully designed scene that demonstrates the power of combining appealing visuals with the creative use of Mesh Physics features found in the Mesh toolkit. Feel free to inspect, modify and play with the scene or use elements to creatively enhance your own custom experiences!
 
-In the gallery there a a number of exhibits:
+In the gallery there a a number of exhibits and activities.
 
-* **Magnetism**, **Bowling**, **Air Hockey**, **Balance Scales**, **Black Holes** and the **Marble Race**
-
-Activities include the following:
+**Exhibits**
 
 * **The Rambunctious Machine**: demonstrating interactive physics constrained to 2D
 * **Wave and Frequency**: connected physics bodies moving in a variety of synchronized ways
@@ -27,6 +27,14 @@ Activities include the following:
 * **Mass and Gravity**: planets and other objects orbiting around the Sun
 * **Mass, Buoyancy and Balance**: ships or other objects floating on the waves
 * **Gone Fishin'!**: catch fish, ships or a penguin with a magnetic fishing rod
+
+**Activities**
+
+* **Magnetism**, **Bowling**, **Air Hockey**, **Balance Scales**, **Black Holes** and the **Marble Race**
+
+Activities include the following:
+
+
 
 The [Samples Overview](samples-overview.md) page contains instructions on how to download the Mesh toolkit which contains this sample.
 
