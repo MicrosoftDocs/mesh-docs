@@ -17,11 +17,7 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics
 
 The *ScienceBuilding* project (scene: *ScienceBuilding*) contains a carefully designed scene that demonstrates the power of combining appealing visuals with the creative use of Mesh Physics features found in the Mesh toolkit. Feel free to inspect, modify and play with the scene or use elements to creatively enhance your own custom experiences!
 
-In the gallery there a a number of exhibits and activities.
-
-**Exhibits**
-
-Four of the exhibits are in the Science Building's main hall.
+In the gallery there a a number of exhibits. Four of the main exhibits are in the Science Building's main hall.
 
 :::image type="content" source="../../../media/samples/science-building/002-sci-bldg-wide-630.png" alt-text="Elevated view of the four exhibits in the main hall of the science building" lightbox="../../../media/samples/science-building/001-sci-bldg-wide-1260.png":::
 
@@ -53,9 +49,33 @@ One exhibit is by the font desk which is in a building to the left of the main h
 
 :::image type="content" source="../../../media/samples/science-building/006-ramb-machine-630.png" alt-text="Elevated view of the rambunctious machine exhibit." lightbox="../../../media/samples/science-building/005-ramb-machine-1260.png":::
 
-**Activities**
+Other exhibits are on the upper level of the main building.
 
-* **Magnetism**, **Bowling**, **Air Hockey**, **Balance Scales**, **Black Holes** and the **Marble Race**
+* **Magnetism**
+
+    ![A screen shot of the Magnets exhibit.](../../../media/samples/science-building/013-magnets.png)
+
+* **Bowling**
+
+    ![A screen shot of the bowling exhibit.](../../../media/samples/science-building/014-bowling.png)
+
+* **Air Hockey**
+
+    ![A screen shot of the air hockey exhibit.](../../../media/samples/science-building/017-air-hockey.png)
+
+* **Balance Scales**
+
+    ![A screen shot of the scales exhibit.](../../../media/samples/science-building/015-scales.png)
+
+* **Black Holes**
+
+    ![A screen shot of the black hole run exhibit.](../../../media/samples/science-building/108-black-hole-run.png)
+
+
+* **Marble Race**
+
+    ![A screen shot of the marble race exhibit.](../../../media/samples/science-building/016-marble-race.png)
+
 
 Activities include the following:
 
