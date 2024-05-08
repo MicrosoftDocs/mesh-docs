@@ -13,7 +13,7 @@ keywords: interactions, interactables, equippables, throwables, avatars, grab, p
 
 ## Overview
 
-In the Toybox sample, certain prefabs are classied as *Equippables*. When you pick up such an object, your hand and arm position adjust to hold the object in a realistic way. This is called *equipping an object to your hand*.
+In the Toybox sample, certain prefabs are [Interactables](./interactables.md) of the type known as *Equippable*. When you pick up such an object, your hand and arm position adjust to hold the object in a realistic way. This is called *equipping an object to your hand*.
 
 > [!NOTE]
 > The Toybox sample is where we currently showcase our Equippables prefabs, but you can use the prefabs or create your own Equippables in any project.
