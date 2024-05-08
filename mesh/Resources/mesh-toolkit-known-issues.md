@@ -2,9 +2,9 @@
 title: Known issues for Mesh toolkit
 description: Mesh toolkit active known issues
 ms.service: mesh
-author: qianw211    
-ms.author: vinnietieto
-ms.date: 2/12/2024
+author: typride 
+ms.author: tmilligan
+ms.date: 4/19/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
@@ -18,6 +18,10 @@ keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 * The **Align Field | Set Enabled** and **Align Field | Get Enabled** visual script nodes are directly available for use again.
 
     Workaround: **Use Behaviour | Set Enabled** or **Behaviour | Get Enabled** instead.
+
+### Webslate
+
+* On Quest, the system webview was about two years behind and causes some websites to show an Unsupported browser message. Weve worked with Meta to update Chromium to a more recent version and is now available in Meta Quest's v64 software update.
 
 ## Version 5.2315.0
 
