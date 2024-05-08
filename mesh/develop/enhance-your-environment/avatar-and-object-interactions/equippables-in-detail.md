@@ -13,7 +13,10 @@ keywords: interactions, interactables, equippables, throwables, avatars, grab, p
 
 ## Overview
 
-In the Toybox sample, certain prefabs are classied as *Equippables*. When you pick up such an object, your hand and arm position adjust to hold the object in a realistic way. This is called *equipping an object to your hand*.  
+In the Toybox sample, certain prefabs are classied as *Equippables*. When you pick up such an object, your hand and arm position adjust to hold the object in a realistic way. This is called *equipping an object to your hand*.
+
+> [!NOTE]
+> The Toybox sample is where we currently showcase our Equippables prefabs, but you can use the prefabs or create your own Equippables in any project.
 
 There are eight Equippables:
 
@@ -153,3 +156,8 @@ Since the Wand has the *single* activate type, as soon as it runs through its be
 ## Create a custom Equippable
 
 If you have a model that's similar in size and orientation to one of our Equippable prefabs, you can replace the Equippable model with your model. Each prefab has a child object named "Artwork" which is where you can insert your custom model.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Equippables&#8212;How the Wand works](./how-the-wand-works.md)
