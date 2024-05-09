@@ -11,7 +11,9 @@ keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
 
 # Customize your event
 
-Event customization empowers organizers and co-organizers to add content to an event or template of default or custom environments.
+Mesh enables no-code customization of 3D environments that help your organization create experiences tailored to your business goals.
+
+With customization, organizers and co-organizers can add content to an event or template of default or custom environments.
 
 ## Why customize an event?
 
@@ -20,6 +22,8 @@ As a host for a Mesh event, you have many tools at your disposal to orchestrate 
 Along with [tools to interact with and manage attendees](produce-event.md#event-producers-tools), you have a Control Panel to manage aspects of the environment. You may want to play a video when people enter the event, or execute a pre-planned sequence of actions like queuing a video, displaying images, and showing a Screenshare simultaneously. All of this can be added (and more) when you customize your event.
 
 ### Types of customizations
+
+Customization in Mesh is made possible with a built-in event production system that empowers you to add images,  videos directly in the Mesh app, in addition to the customizations developers can add in Unity (link to dev docs). At showtime you can use tools to interact with and manage attendees, and control aspects of the environment in real-time.
 
 * Add objects through the Editor like Screenshares, Images, or Videos.
 
