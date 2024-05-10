@@ -1,7 +1,7 @@
 items: 
 - name: Grab, hold and throw with Interactables
   href: interactables.md
-- name: Equippables--How the Wand works
+- name: Equippables&mdash;How the Wand works
   href: how-the-wand-works.md
 - name: Triggers, anchors and tethers
   href: triggers-anchors-and-tethers.md

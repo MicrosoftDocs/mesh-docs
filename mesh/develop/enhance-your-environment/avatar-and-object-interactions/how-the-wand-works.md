@@ -1,10 +1,10 @@
 ---
-title: Equippables -- How the Wand works
+title: Equippables&mdash;How the Wand works
 description: Take an-indepth look at the visual script that makes the Wand Equippable object work.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 5/3/2024
+ms.date: 5/10/2024
 ms.topic: overview
 keywords: interactions, interactables, equippables, throwables, avatars, grab, pick up, hold, throw, attach, activate, activation
 ---
@@ -15,7 +15,7 @@ keywords: interactions, interactables, equippables, throwables, avatars, grab, p
 
 **Activation mode**: single
 
-The Wand is an *Equippable* object found in the Toybox sample. When you pick up the Wand, you hold it out in front of you almost chest high and the Wand displays a sparkly vapor particle effect. 
+In the Toybox sample, certain prefabs are a type of [Interactable](./interactables.md) known as *Equippable*. When you pick up such an object, your hand and arm position adjust to hold the object in a realistic way. When you pick up the Wand, you hold it out in front of you almost chest high and the Wand displays a sparkly vapor particle effect.
 
 :::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-holding1.gif" alt-text="GIF that shows an event attendee holding the Wand in its non-activated state.":::
 
