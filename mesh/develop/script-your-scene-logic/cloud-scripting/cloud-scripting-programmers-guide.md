@@ -82,6 +82,11 @@ Avatars are the representation of users in the scene. They can be used to telepo
 
 It's possible in Mesh Cloud Scripting to pop up a screen space dialog in the Microsoft Mesh application with a custom message. SceneNode contains a function for this, `ShowMessageToParticipants(string message, IReadOnlyCollection<Participant> participants)`. [Rich text tags](http://digitalnativestudios.com/textmeshpro/docs/rich-text/) can be used in the message to control text properties (color, bold etc).
 
+## Input Dialogs
+
+Mesh Cloud Scripting can request text input from an attendee in a Mesh event with a custom message. `CloudApplication` provides the method `Task<string> ShowInputDialogToParticipantAsync(string message, Participant participant, CancellationToken token)`. [Rich text tags](http://digitalnativestudios.com/textmeshpro/docs/rich-text/) can be used in the message to control text properties (for example, color or bold).
+
+
 ## Classes
 
 ### CloudApplication
