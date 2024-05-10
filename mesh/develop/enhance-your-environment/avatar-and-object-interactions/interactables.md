@@ -6,7 +6,7 @@ author: jackiecurley
 ms.author: vinnietieto
 ms.date: 4/15/2024
 ms.topic: overview
-keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation Mode
+keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation Mode
 ---
 
 # Grab, hold and throw with Interactables
@@ -234,7 +234,14 @@ On the Quest, the velocity applied when an object is thrown will be scaled betwe
 
 ## Next steps
 
-[Triggers, anchors and tethers](./triggers-anchors-and-tethers.md)
-[Create avatar spawn and teleport points](./create-avatar-spawn-and-travel-points.md)
-[Physics interactions](../physics/mesh-physics-overview.md)
-[Enhanced features overview](../enhanced-features-overview.md)
+> [!div class="nextstepaction"]
+> [Triggers, anchors and tethers](./triggers-anchors-and-tethers.md)
+
+> [!div class="nextstepaction"]
+> [Create avatar spawn and teleport points](./create-avatar-spawn-and-travel-points.md)
+
+> [!div class="nextstepaction"]
+> [Physics interactions](../physics/mesh-physics-overview.md)
+
+> [!div class="nextstepaction"]
+>[Enhanced features overview](../enhanced-features-overview.md)

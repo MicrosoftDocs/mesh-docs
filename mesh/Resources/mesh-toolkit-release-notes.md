@@ -4,7 +4,7 @@ description: Mesh toolkit release notes
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
-ms.date: 2/12/2024
+ms.date: 4/19/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
@@ -25,17 +25,32 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2402.X | 2024-3-18     |
-| Mesh toolkit (preview)     | 5.2403.X | 2024-3-12     |
-| Mesh on PC/Quest           | 5.2401.X | 2024-2-20     |
-| Mesh on PC/Quest (Preview) | 5.2402.X | 2024-2-20     |
+| Mesh toolkit               | 5.2403.X | 2024-4-18     |
+| Mesh toolkit (preview)     | 5.2404.X | 2024-3-12     |
+| Mesh on PC/Quest           | 5.2403.X | 2024-4-12     |
+| Mesh on PC/Quest (Preview) | 5.2404.X | 2024-4-12     |
 
-## Mesh toolkit 5.2403.X
+## Mesh toolkit 5.2404.X (Preview)
 
 >[!Caution]
 >This is a preview release of the Mesh toolkit noted by a **-preview** tag at the end of the version number.  Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable public version of Mesh**. Do not upgrade to this version of the Mesh toolkit until a stable public version is released; stable public versions won't have a **-preview** tag at the end of the version number.  
 >
 > **Be careful that you don't overwrite environments currently in use by your company with the preview version.**
+
+### What's new
+
+* Add Screen Share support to Mesh Toolkit, allowing developers to place on their environments screen share components that later will allow users in a Mesh to screenshare.
+
+    To add a Screen Share component you can:
+
+    1. Open context menu on the **Scene Hierarchy** > **Mesh Toolkit** > **Screen Share**.
+    1. Search for the Screen Share prefab on Mesh Toolkit Package and drag and drop it to your scene.
+
+    The added prefab contains an editable root and a mock UI that will not be uploaded to help developers place and design their environments. Modifying the provided mock UI under [NoUpload] will not be reflected when uploading and joining an event on Mesh. The added prefab can be sized and placed as desired on the scene.
+
+    If adding multiple Screen Share components on the scene all of them will show the same screen when a user starts Screen Sharing on Mesh.
+
+## Mesh toolkit 5.2403.X
 
 ### What's new
 
@@ -50,6 +65,10 @@ These are the offerings and packages currently available. There may be slight di
 * Handle errors when failing to save the Mesh Toolkit configuration to disk.
 
 * Improved reporting of the states of the Mesh Uploader Extensions in the results dialog.
+
+## Mesh emulator
+
+* Fixed bug on emulator when all scenes would get darker if the first player left.
 
 ## Mesh toolkit 5.2402.X
 
