@@ -4,7 +4,7 @@ description: Mesh release notes
 ms.service: mesh
 author: typride  
 ms.author: tmilligan
-ms.date: 02/18/2024
+ms.date: 05/10/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -17,24 +17,33 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | May 10       | 5.2405.XX    |
 | 2024         | April 18     | 5.2403.XX+   |
 | 2024         | April 9      | 5.2403.XX    |
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
+## Version 5.2405.0
+
 > [!IMPORTANT]
 > The Microsoft Mesh application will only have a Public version starting with the 5.2405 build, expected to be delivered this week. This means that there will be no Preview version of the Mesh application. The Preview application will be deprecated and will stop being functional. Please uninstall the Preview version of the Microsoft Mesh app.
 >  
 > Why are we making this change?
+>
 > With this change, the Public build will receive updates faster and include newer updates that would've otherwise been flighted in the Preview release before going to the Public release. Each Public build will continue to be released every 3-weeks.
 >  
 > Mesh Toolkit
+>
 > The Mesh Toolkit will continue to deliver a Preview version for testing and development purposes and remain back compatible to the Public version of the Mesh application. The delivery of the Mesh Toolkit packages will continue to be released 7 days after the release of the Public Mesh application to ensure the Mesh Toolkit package is compatible with the new version of the Mesh application.
 >  
 > The Immersive spaces in Teams delivery schedule is not affected by this change.
 >  
 > We hope this delivery schedule change will lead to a faster update cadence with newer features reaching the public app sooner than before.
+
+## What's new
+
+
 
 ## Version 5.2403.0
 
