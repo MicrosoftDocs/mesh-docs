@@ -41,7 +41,7 @@ One exhibit is outside and in front of the main hall.
 
 * **Gone Fishin'!**: catch fish, ships or a penguin with a magnetic fishing rod
 
-    :::image type="content" source="../../../media/samples/science-building/004-gone-fishing-630.png" alt-text="Elevated view of the Gone fishing exhibit" lightbox="../../../media/samples/science-building/003-gone-fishing-1260":::
+    :::image type="content" source="../../../media/samples/science-building/004-gone-fishing-630.png" alt-text="Elevated view of the Gone fishing exhibit" lightbox="../../../media/samples/science-building/003-gone-fishing-1260.png":::
 
 One exhibit is by the front desk in a building to the left of the main hall.
 
