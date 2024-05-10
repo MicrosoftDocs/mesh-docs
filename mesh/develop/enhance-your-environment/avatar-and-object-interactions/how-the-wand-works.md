@@ -155,3 +155,8 @@ This once again triggers the nodes in the **Networking startMagic** node group a
 - Create new Equippables that could use some of the existing effects. For example, certain types of fireworks could use the "sparkle" effects that are currently used by the Wand.  
 - Create different effects and behaviors for a new Equippable that could be triggered when the Equippable is held and the left mouse button (PC) or controller button (Quest 2) is pressed. For example, instead of a Wand, you could have a fishing rod that casts out a lure when you press the button.  
 - Think about the difference between having an object move right into its activated state when picked up (for example, the Drill) and having an object that starts off non-activated and then moves into its activated state after the attendee clicks (for example, the Tablet). Make objects that take advantage of both approaches.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Equippables&#8212;How the Wand works](./interactables.md)
