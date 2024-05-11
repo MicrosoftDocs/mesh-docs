@@ -3,7 +3,7 @@ items:
   href: interactables.md
 - name: Hold objects realistically with Equippables
   href: equippables-in-detail.md
-- name: Equippables&mdash;How the Wand works
+- name: Equippables&#8212;How the Wand works
   href: how-the-wand-works.md
 - name: Triggers, anchors and tethers
   href: triggers-anchors-and-tethers.md
