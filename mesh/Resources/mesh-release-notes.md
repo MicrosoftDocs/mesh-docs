@@ -49,7 +49,20 @@ Microsoft Mesh application
 
     For more detail, see [how to create an Action Group](../events-guide/customize-event.md#create-an-action-group).
 
+* More professional wardrobe styles are coming to the Avatar builder. Customize your avatar to see all the new and updated looks available to freshen up your avatar for your next meeting.
+    :::image type="content" source="media/Avatar-wardrobe-update.png" alt-text="Screenshot of Avatar wardrobe updates. ":::
+
+* As an Event host, you can now see your own ScreenShare when sharing your screen in Mesh. Before this update, event hosts were unable to see their own screen on ScreenShare objects, limiting the usability and deteriorating the screen sharing experience for hosts. This update should resolve some of these usability issues and enhance the sharing experience for hosts.
+
+* As an Event host, when using PowerPoint for a presentation that's displayed on a ScreenShare object, you can now use Powerpoint Slideshow to present content. Alike Microsoft Teams, Mesh will now display the presenter view of a PowerPoint presentation.
+
+* Search and filter for content in the Editor and Control panel to search for objects or controls in a Customization session for an environment or template.
+
+    :::image type="content" source="media/Customization-search-objects.png" alt-text="Screenshot of the search functionality available in the Editor tool when customizing an environment in Mesh.":::
+
 ### Resolved product issues
+
+* In the previous release there was requirement that single room and multi-room events required the same firewall and port configurations. This issue is resolved. For info on the firewall and port requirements, please see [Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
 
 ## Version 5.2403.0
 
