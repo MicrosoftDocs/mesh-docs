@@ -27,23 +27,29 @@ Microsoft Mesh application
 ## Version 5.2405.0
 
 > [!IMPORTANT]
-> The Microsoft Mesh application will only have a Public version starting with the 5.2405 build, expected to be delivered this week. This means that there will be no Preview version of the Mesh application. The Preview application will be deprecated and will stop being functional. Please uninstall the Preview version of the Microsoft Mesh app.
->  
-> Why are we making this change?
+> The Microsoft Mesh application will only have a Public version starting with the 5.2405 build. This means that there will be no Preview version of the Mesh application. The Preview application will be deprecated and will stop being functional. Please uninstall the Preview version of the Microsoft Mesh app.
+>
+> **Why are we making this change?**
 >
 > With this change, the Public build will receive updates faster and include newer updates that would've otherwise been flighted in the Preview release before going to the Public release. Each Public build will continue to be released every 3-weeks.
->  
-> Mesh Toolkit
+>
+> **Mesh Toolkit**
 >
 > The Mesh Toolkit will continue to deliver a Preview version for testing and development purposes and remain back compatible to the Public version of the Mesh application. The delivery of the Mesh Toolkit packages will continue to be released 7 days after the release of the Public Mesh application to ensure the Mesh Toolkit package is compatible with the new version of the Mesh application.
->  
+>
 > The Immersive spaces in Teams delivery schedule is not affected by this change.
->  
+>
 > We hope this delivery schedule change will lead to a faster update cadence with newer features reaching the public app sooner than before.
 
 ## What's new
 
-* Action groups are now available in the event or template customization flow. This new feature allows an organizer to simultaneously control multiple objects in a event with a single button. For more detail, see the 
+* Action groups are now available in the event or template customization flow. This new feature allows an organizer to simultaneously control multiple objects in a event with the the control panel to dynamically change the environment to suit your event needs. Display several images of your team and play a video with the push of a button or show a ScreenShare screen and display supplementary images at the same time.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-gif.gif" alt-text="Gif showing how action groups work while in the Mesh application.":::
+
+    For more detail, see [how to create an Action Group](../events-guide/customize-event.md#create-an-action-group).
+
+### Resolved product issues
 
 ## Version 5.2403.0
 
