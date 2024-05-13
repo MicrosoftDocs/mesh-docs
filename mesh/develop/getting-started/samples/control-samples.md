@@ -13,11 +13,15 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, toolkit
 
 ## Overview
 
-The Control Samples package provides user interface controls built using the Mesh Toolkit that you can use in your projects. The control samples are still in development so we call them "samples" to indicate that they're evolving and are subject to change over time. Details about the control samples are given in the [Control Samples in detail section](#control-samples-in-detail) further down this page, but here's a quick look at how we use them in our [Mesh 101](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md) and [Mesh 201](../mesh-201-tutorial/mesh-201-01-overview-set-up-and-get-started.md) tutorials.
+The Control Samples package provides user interface controls built using the Mesh Toolkit that you can import into your projects. We use them extensively in our [Mesh 101](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md) and [Mesh 201](../mesh-201-tutorial/mesh-201-01-overview-set-up-and-get-started.md) tutorials.
+
+![Screen shot of several control samples in the Mesh 101 tutorial.](../../../media/samples/control-samples/016-controls-in-use.png)
+
+The control samples are still in development so we call them "samples" to indicate that they're evolving and are subject to change over time. Details about the control samples are given in the [Control Samples in detail section](#control-samples-in-detail) further down this page, but here's a quick look at how we use them in our tutorials.
 
 **BackplateBase**
 
-Since a backplate is such a useful supporting object for any informational text display, the BackplateBase prefab is used in quite a few places in our tutorials.
+Since a backplate is such a useful supporting object for any informational text display, we use the BackplateBase prefab in quite a few places.
 
 ![Screen shot of the numerous instances of the BackplateBase prefab in the Mesh 101 tutorial.](../../../media/samples/control-samples/011-backplatebase-instances.png)
 
