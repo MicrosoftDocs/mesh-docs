@@ -17,7 +17,7 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
-| 2024         | May 10       | 5.2405.XX    |
+| 2024         | May 13       | 5.2405.XX    |
 | 2024         | April 18     | 5.2403.XX+   |
 | 2024         | April 9      | 5.2403.XX    |
 | 2024         | March 11     | 5.2402.XX    |
@@ -43,7 +43,7 @@ Microsoft Mesh application
 
 ## What's new
 
-
+* Action groups are now available in the event or template customization flow. This new feature allows an organizer to simultaneously control multiple objects in a event with a single button. For more detail, see the 
 
 ## Version 5.2403.0
 
@@ -51,7 +51,17 @@ Microsoft Mesh application
 
 * [Updated firewall requirements](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app) for single room events in the Microsoft Mesh app.
 
-## Conditional access on Quest
+#### Accessibility features
+
+* High-Contrast modes are available in Settings > Accessibility for low and colorblind users. The **Aqua** and **Desert** color modes make it easier for low vision users to see and interact with content. It can help to distinguish between different colors and shades, making it easier to read text, view images, and navigate through experiences.
+
+    :::image type="content" source="media/Accessibility-high-contrast.png" alt-text="Screenshot of high-contrast accessibility features in Microsoft Mesh.":::
+
+* The Mesh Magnifier lens tool is incredibly useful for accessibility for low vision customers. This feature allows users with low vision to zoom in on objects and text, making it easier for them to see and interact with the virtual environment. The Mesh Magnifier Lens can greatly enhance the user experience for those who may otherwise struggle to navigate and engage with VR content. Additionally, magnifier lens tools can be used by anyone who wants to take a closer look at details within the virtual environment, making them a valuable tool for all users.
+
+    :::image type="content" source="media/Accessibility-magnifier-tool.png" alt-text="Screenshot of Magnifier accessibility tool, available in the Accessibility settings for the Microsoft Mesh application.":::
+
+#### Conditional access on Quest
 
 * If you have Conditional Access policies in place for your organization that my block on Mesh on Quest, the solution is to create a custom conditional access policy in Microsoft Entra Admin Center to exclude Microsoft Mesh Services and Office 365.
 
