@@ -1,15 +1,15 @@
 ---
-title: Sample objects
-description: Read an overview of the sample objects available in the Mesh toolkit.
+title: Mesh Control Samples
+description: Read an overview of the Control Sample prefabs available in the Mesh toolkit.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 05/10/2024
+ms.date: 05/13/2024
 ms.topic: overview
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, toolkit, Mesh toolkit, sample objects
 ---
 
-# Mesh Sample objects
+# Mesh Control Samples
 
 ## Overview
 
