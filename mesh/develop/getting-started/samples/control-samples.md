@@ -1,19 +1,47 @@
 ---
-title: Control samples
-description: Read an overview of the control samples available in the Mesh toolkit.
+title: Sample objects
+description: Read an overview of the sample objects available in the Mesh toolkit.
 author: vtieto
 ms.author: vinnietieto
 ms.date: 05/10/2024
 ms.topic: overview
 ms.service: mesh
-keywords: Microsoft Mesh, getting started, samples, tutorials, features, toolkit, Mesh toolkit, control samples
+keywords: Microsoft Mesh, getting started, samples, tutorials, features, toolkit, Mesh toolkit, sample objects
 ---
 
-# Mesh Control Samples
+# Mesh Sample objects
 
 ## Overview
 
-The Control Samples package provides user interface controls built using the Mesh Toolkit. We want to you have access to these features, but they're still in development so we call them "samples" to indicate that they're evolving and are subject to change over time.
+The Control Samples package provides user interface controls built using the Mesh Toolkit that you can use in your projects. The control samples are still in development so we call them "samples" to indicate that they're evolving and are subject to change over time. Details about the control samples are given in the [Control Samples in detail section](#control-samples-in-detail) further down this page, but here's a quick look at how we use them in our [Mesh 101](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md) and [Mesh 201](../mesh-201-tutorial/mesh-201-01-overview-set-up-and-get-started.md) tutorials.
+
+**BackplateBase**
+
+Since a backplate is such a useful supporting object for any informational text display, the BackplateBase prefab is used in quite a few places in our tutorials.
+
+![Screen shot of the numerous instances of the BackplateBase prefab in the Mesh 101 tutorial.](../../../media/samples/control-samples/011-backplatebase-instances.png)
+
+One example: In the Mesh 101 tutorial, BackplateBase can be found as a child object to **ChapterLabel** which is the information text display for the first station, **3.1: Video Playback**.
+
+![Screen shot of a BackplateBase instance in the Mesh 101 tutorial.](../../../media/samples/control-samples/012-backplatebase-one-example.png)
+
+**ButtonBase**
+
+In the Mesh 101 tutorial, the ButtonBase prefab is used to create the *Play* button for the video screen in the *3.1: Video Playback* station. Note that the prefab has been renamed here to "PlayVideoButton".
+
+![Screen shot of a ButtonBase instance in the Mesh 101 tutorial.](../../../media/samples/control-samples//013-buttonbase-prefab.png)
+
+**Earth**
+
+In the Mesh 201 tutorial, the Earth prefab is used for *Station 4: Load a URL from a 3D asset*.
+
+![Screen shot of a ButtonBase instance in the Mesh 101 tutorial.](../../../media/samples/control-samples/014-information-button.png)
+
+**InformationButton**
+
+In the Mesh 101 tutorial, the InformationButton prefab is used for the *3.2: Info Dialog Trigger* station. Note that the prefab has been renamed slightly here to "Information_Button".
+
+![Screen shot of an InformationButton instance in the Mesh 101 tutorial.](../../../media/samples/control-samples//013-buttonbase-prefab.png)
 
 ## Getting started
 
@@ -40,7 +68,7 @@ The Control Samples package is included when you [download the Mesh samples from
 
 ![Screen shot of the Control Samples package in the Packages folder.](../../../media/samples/control-samples/005-control-samples-in-packages-folder.png)
 
-## List of Control Sample prefabs
+## Control Samples in detail
 
 The Control Sample prefabs are in subfolders of the *Runtime* folder.
 
