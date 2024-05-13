@@ -35,13 +35,13 @@ In the Mesh 101 tutorial, the ButtonBase prefab is used to create the *Play* but
 
 In the Mesh 201 tutorial, the Earth prefab is used for *Station 4: Load a URL from a 3D asset*.
 
-![Screen shot of a ButtonBase instance in the Mesh 101 tutorial.](../../../media/samples/control-samples/014-information-button.png)
+![Screen shot of a ButtonBase instance in the Mesh 101 tutorial.](../../../media/samples/control-samples/015-earth.png)
 
 **InformationButton**
 
 In the Mesh 101 tutorial, the InformationButton prefab is used for the *3.2: Info Dialog Trigger* station. Note that the prefab has been renamed slightly here to "Information_Button".
 
-![Screen shot of an InformationButton instance in the Mesh 101 tutorial.](../../../media/samples/control-samples//013-buttonbase-prefab.png)
+![Screen shot of an InformationButton instance in the Mesh 101 tutorial.](../../../media/samples/control-samples/014-information-button.png)
 
 ## Getting started
 
