@@ -21,6 +21,8 @@ Along with [tools to interact with and manage attendees](produce-event.md#event-
 
 With the Control panel, you can control individual objects like playing a video when people enter the event, or execute a pre-planned sequence of actions like queuing a video, displaying images, and showing a Screenshare simultaneously.
 
+If you're using a custom environment or there are [**Controllable** objects in your environment that have been added through Unity](../develop/enhance-your-environment/multi-room-sync.md#controllables), these will also show up in the Control panel as well.
+
 ### Types of customizations
 
 * Add objects through the **Editor** like Screenshares, Images, or Videos. Drag and resize the these objects easily by selecting the objects and moving them around the environment.
