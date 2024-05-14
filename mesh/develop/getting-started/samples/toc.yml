@@ -15,8 +15,5 @@ items:
   - name: Dart Room
     href: dart-room.md
     displayName: samples
-
-
-
-
-
+  - name: Control samples
+    href: control-samples.md

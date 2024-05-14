@@ -15,7 +15,7 @@ keywords: interactions, interactables, equippables, throwables, avatars, grab, p
 
 **Activation mode**: single
 
-In the Toybox sample, certain prefabs are a type of [Interactable](./interactables.md) known as *Equippable*. When you pick up such an object, your hand and arm position adjust to hold the object in a realistic way. When you pick up the Wand, you hold it out in front of you almost chest high and the Wand displays a sparkly vapor particle effect.
+In the Toybox sample, certain prefabs are a type of [Interactable](./interactables.md) known as *Equippable*. When you pick up such an object, your hand and arm position adjust to hold the object in a realistic way. When you pick up the Wand, you hold it out in front of you almost chest high and the Wand displays a sparkly vapor particle effect at its tip.
 
 :::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-holding1.gif" alt-text="GIF that shows an event attendee holding the Wand in its non-activated state.":::
 
@@ -39,7 +39,7 @@ Let's take a look at how the Wand works by examining the script graph that's att
 
 ## Detect when the Wand is picked up
 
-In the visual script attached to the Wand, we start our journey in the node group named **Checking if Held to start magic glow**.
+In the visual script attached to the Wand, we start our analysis in the node group named **Checking if Held to start magic glow**.
 
 ![A screen shot of the Wand's full script graph with the second section highlighted.](../../../media/enhance-your-environment/equips-in-detail/023-full-script-graph-section-two-highlighted.png)
 
@@ -47,7 +47,7 @@ The node that determines if the Wand is picked up or not is *Mesh Interactable B
 
 ![A screen shot of the isMine node.](../../../media/enhance-your-environment/equips-in-detail/010-is-mine-node.png)
 
-When an avatar picks up the Wand, its state changes. The value of *isMine* changes to "true" value and is passed to an *if* node. This causes a "pick-up sound" to trigger ...
+When an avatar picks up the Wand, its state changes. The value of *isMine* changes to "true" and that value is passed to an *if* node. This causes a "pick-up sound" to trigger ...
 
 ![A screen shot of the on state changed, if, and play mesh audio nodes.](../../../media/enhance-your-environment/equips-in-detail/024-play-mesh-audio.png)
 
@@ -65,7 +65,7 @@ These nodes, and the sound that gets triggered, occur locally. However, we want 
 
 **Tip**: The *isMine* variable is found in the *Mesh Interactable Body* script.
 
-![A screen shot of the is mine boolean in Mesh Interactable Body script.](../../../media/enhance-your-environment/equips-in-detail/027-shared-by-all-clients.png)
+![A screen shot of the is mine boolean in Mesh Interactable Body script.](../../../media/enhance-your-environment/equips-in-detail/028-ismine-in-code.png)
 
 ## Turn on the non-activated state particle effect
 
