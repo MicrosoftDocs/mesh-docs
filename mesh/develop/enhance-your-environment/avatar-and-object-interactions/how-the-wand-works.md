@@ -47,7 +47,7 @@ The node that determines if the Wand is picked up or not is *Mesh Interactable B
 
 ![A screen shot of the isMine node.](../../../media/enhance-your-environment/equips-in-detail/010-is-mine-node.png)
 
-When an avatar picks up the Wand, its state changes. The value of *isMine* changes to "true" and that value passed to an *if* node. This causes a "pick-up sound" to trigger ...
+When an avatar picks up the Wand, its state changes. The value of *isMine* changes to "true" and that value is passed to an *if* node. This causes a "pick-up sound" to trigger ...
 
 ![A screen shot of the on state changed, if, and play mesh audio nodes.](../../../media/enhance-your-environment/equips-in-detail/024-play-mesh-audio.png)
 
