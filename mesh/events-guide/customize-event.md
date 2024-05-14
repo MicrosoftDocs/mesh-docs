@@ -17,17 +17,17 @@ Mesh enables no-code customization of 3D environments that help your organizatio
 
 As a host for a Mesh event, you have many tools at your disposal to orchestrate an experience for attendees.
 
-Along with [tools to interact with and manage attendees](produce-event.md#event-producers-tools), you have a Control Panel to manage aspects of the environment. You may want to play a video when people enter the event, or execute a pre-planned sequence of actions like queuing a video, displaying images, and showing a Screenshare simultaneously. All of this can be added (and more) when you customize your event.
+Along with [tools to interact with and manage attendees](produce-event.md#event-producers-tools), you have a **Control Panel** to manage aspects of the environment.
+
+With the Control panel, you can control individual objects like playing a video when people enter the event, or execute a pre-planned sequence of actions like queuing a video, displaying images, and showing a Screenshare simultaneously.
 
 ### Types of customizations
 
-Customization in Mesh is made possible with a built-in event production system that empowers you to control various objects like Sreenshares, Images, or Videos in addition to the [customizations developers can add in Unity](../develop/enhance-your-environment/enhanced-features-overview.md). At showtime you can use tools to interact with and manage attendees, and control aspects of the environment in real-time.
-
-* Add objects through the **Editor** like Screenshares, Images, or Videos.
+* Add objects through the **Editor** like Screenshares, Images, or Videos. Drag and resize the these objects easily by selecting the objects and moving them around the environment.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-editor-catalog.png" alt-text="Screenshot of Editor catalog in the Microsoft Mesh application.":::
 
-* Use the **Control Panel** to adjust Objects that you have in your environment using the **Controls** tab.
+* Use the **Control Panel** to granularly adjust or configure Objects that you have in your environment using the **Controls** tab.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Control-panel.png" alt-text="Screenshot of control panel showing the objects in an environment.":::
 
