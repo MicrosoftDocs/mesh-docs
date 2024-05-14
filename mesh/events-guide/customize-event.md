@@ -31,6 +31,7 @@ Customization in Mesh is made possible with a built-in event production system t
 
 * Use the **Control Panel** to adjust Objects that you have in your environment using the **Controls** tab.
 
+
     :::image type="content" source="../media/mesh-event-producer-guide/Control-panel.png" alt-text="Screenshot of control panel showing the objects in an environment.":::
 
 * Use the **Control Panel** > **Action Groups** tab to control multiple objects at once for an experience such as displaying photos of your team, or showing a company logo and playing a video.

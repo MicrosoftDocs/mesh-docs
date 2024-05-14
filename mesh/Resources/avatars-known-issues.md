@@ -11,6 +11,10 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes, Mesh avatars
 
 # Active known issues - Avatars in Teams
 
+## May 13, 2024
+
+* Some users may experience a change in color on their outerwear choice. Customizing the color choice is simple, and can be done so in the Avatars for Teams app. After choosing an avatar, click ‘Customize’ and navigate to the ‘Wardrobe’ section, then choose ‘Outerwear’ in the left menu. Click the ‘color wheel’ to view the color palettes and select the color of choice. Click ‘Save’ to save and apply the changes to the avatar.
+
 ## February 20, 2024
 
 * Users with ARM devices and running Teams 2.1 may not be able to see the **Avatars** entrypoint in Video effects & Settings and other users' avatars may not render properly. (41694)

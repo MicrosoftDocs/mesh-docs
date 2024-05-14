@@ -13,6 +13,12 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
+## Version 5.2405.0 (May 13, 2024)
+
+* More professional wardrobe styles are coming to the Avatar builder. Customize your avatar to see all the new and updated looks available to freshen up your avatar for your next meeting.
+    :::image type="content" source="media/Avatar-wardrobe-update.png" alt-text="Screenshot of Avatar wardrobe updates. ":::
+
+
 ## Version 5.2403.0 (April 18, 2024)
 
 ### What's new
