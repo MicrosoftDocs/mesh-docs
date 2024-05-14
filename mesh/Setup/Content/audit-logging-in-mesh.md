@@ -52,8 +52,9 @@ The audit events that are currently available are listed below. Events are gener
 | EnvironmentPublished           | Publish a new version of a Mesh Environment.               |
 | ComponentCreated               | Create a session component for a given Mesh session.       |
 | ComponentDeleted               | Delete a session component of a given Mesh session.        |
-| TemplateCreated                | Create a new Mesh World Template.                          |
+| TemplateCreated                | Create a new Mesh World/Collection Template.               |
 | TemplateDeleted                | Delete Mesh World Template contents and metadata.          |
+| TemplateUpdated                | Update an existing Mesh World/Collection Template.         |
 | WorldCreated                   | Create a Mesh World/Collection.                            |
 | WorldDeleted                   | Delete a Mesh World/Collection.                            |
 | WorldUpdated                   | Update a Mesh World/Collection.                            |
@@ -67,6 +68,7 @@ The audit events that are currently available are listed below. Events are gener
 | SessionMetadataUpdated         | Update Mesh World/Collection Session Metadata.             |
 | SessionMetadataTemplateCreated | Create a template customization for Mesh World/Collection. |
 | SessionEnvironmentSet          | Set the environment for a collaboration session.           |
+| SessionJoin                    | Mesh service provisioned the necessary system resources and provided the client application with the information required to join a Mesh session. |
 
 Some clarification on what the terminology in these events refers to:
 

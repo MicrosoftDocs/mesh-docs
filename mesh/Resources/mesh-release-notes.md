@@ -4,24 +4,65 @@ description: Mesh release notes
 ms.service: mesh
 author: typride  
 ms.author: tmilligan
-ms.date: 02/18/2024
+ms.date: 05/10/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
 
 # Mesh release notes
 
-## Version update history 
+## Version update history
 
 Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | May 13       | 5.2405.XX    |
 | 2024         | April 18     | 5.2403.XX+   |
 | 2024         | April 9      | 5.2403.XX    |
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2405.0
+
+> [!IMPORTANT]
+> The Microsoft Mesh application will only have a Public version starting with the 5.2405 build. This means that there will be no Preview version of the Mesh application. The Preview application will be deprecated and will stop being functional. Please uninstall the Preview version of the Microsoft Mesh app.
+>
+> **Why are we making this change?**
+>
+> With this change, the Public build will receive updates faster and include newer updates that would've otherwise been flighted in the Preview release before going to the Public release. Each Public build will continue to be released every 3-weeks.
+>
+> **Mesh Toolkit**
+>
+> The Mesh Toolkit will continue to deliver a Preview version for testing and development purposes and remain back compatible to the Public version of the Mesh application. The delivery of the Mesh Toolkit packages will continue to be released 7 days after the release of the Public Mesh application to ensure the Mesh Toolkit package is compatible with the new version of the Mesh application.
+>
+> The Immersive spaces in Teams delivery schedule is not affected by this change.
+>
+> We hope this delivery schedule change will lead to a faster update cadence with newer features reaching the public app sooner than before.
+
+## What's new
+
+* Action groups are now available in the event or template customization flow. This new feature allows an organizer to simultaneously control multiple objects in a event with the the control panel to dynamically change the environment to suit your event needs. Display several images of your team and play a video with the push of a button or show a ScreenShare screen and display supplementary images at the same time.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-gif.gif" alt-text="Gif showing how action groups work while in the Mesh application.":::
+
+    For more detail, see [how to create an Action Group](../events-guide/customize-event.md#create-an-action-group).
+
+* More professional wardrobe styles are coming to the Avatar builder. Customize your avatar to see all the new and updated looks available to freshen up your avatar for your next meeting.
+    :::image type="content" source="media/Avatar-wardrobe-update.png" alt-text="Screenshot of Avatar wardrobe updates. ":::
+
+* As an Event host, you can now see your own ScreenShare when sharing your screen in Mesh. Before this update, event hosts were unable to see their own screen on ScreenShare objects, limiting the usability and deteriorating the screen sharing experience for hosts. This update should resolve some of these usability issues and enhance the sharing experience for hosts.
+
+* As an Event host, when using PowerPoint for a presentation that's displayed on a ScreenShare object, you can now use Powerpoint Slideshow to present content. Alike Microsoft Teams, Mesh will now display the presenter view of a PowerPoint presentation.
+
+* Search and filter for content in the Editor and Control panel to search for objects or controls in a Customization session for an environment or template.
+
+    :::image type="content" source="media/Customization-search-objects.png" alt-text="Screenshot of the search functionality available in the Editor tool when customizing an environment in Mesh.":::
+
+### Resolved product issues
+
+* In the previous release there was requirement that single room and multi-room events required the same firewall and port configurations. This issue is resolved. For info on the firewall and port requirements, please see [Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
 
 ## Version 5.2403.0
 
@@ -29,7 +70,17 @@ Microsoft Mesh application
 
 * [Updated firewall requirements](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app) for single room events in the Microsoft Mesh app.
 
-## Conditional access on Quest
+#### Accessibility features
+
+* High-Contrast modes are available in Settings > Accessibility for low and colorblind users. The **Aqua** and **Desert** color modes make it easier for low vision users to see and interact with content. It can help to distinguish between different colors and shades, making it easier to read text, view images, and navigate through experiences.
+
+    :::image type="content" source="media/Accessibility-high-contrast.png" alt-text="Screenshot of high-contrast accessibility features in Microsoft Mesh.":::
+
+* The Mesh Magnifier lens tool is incredibly useful for accessibility for low vision customers. This feature allows users with low vision to zoom in on objects and text, making it easier for them to see and interact with the virtual environment. The Mesh Magnifier Lens can greatly enhance the user experience for those who may otherwise struggle to navigate and engage with VR content. Additionally, magnifier lens tools can be used by anyone who wants to take a closer look at details within the virtual environment, making them a valuable tool for all users.
+
+    :::image type="content" source="media/Accessibility-magnifier-tool.png" alt-text="Screenshot of Magnifier accessibility tool, available in the Accessibility settings for the Microsoft Mesh application.":::
+
+#### Conditional access on Quest
 
 * If you have Conditional Access policies in place for your organization that my block on Mesh on Quest, the solution is to create a custom conditional access policy in Microsoft Entra Admin Center to exclude Microsoft Mesh Services and Office 365.
 
