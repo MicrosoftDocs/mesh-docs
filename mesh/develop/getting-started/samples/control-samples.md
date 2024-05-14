@@ -39,7 +39,7 @@ In the Mesh 101 tutorial, the ButtonBase prefab is used to create the *Play* but
 
 In the Mesh 201 tutorial, the Earth prefab is used for *Station 4: Load a URL from a 3D asset*.
 
-![Screen shot of a ButtonBase instance in the Mesh 101 tutorial.](../../../media/samples/control-samples/015-earth.png)
+![Screen shot of an Earth prefab instance in the Mesh 101 tutorial.](../../../media/samples/control-samples/015-earth.png)
 
 **InformationButton**
 
