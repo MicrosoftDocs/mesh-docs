@@ -22,6 +22,20 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 | Mobile | Teams mobile | View other avatars only |
 | VDI | Teams | View other avatars only |
 
+## May 13, 2024
+
+### More professional wardrobe styles for Avatars
+
+More professional wardrobe styles are coming to the Avatar builder. Customize your avatar in the **Avatars** app to see all the new and updated looks available to freshen up your avatar for your next meeting. This update will be available in Microsoft Teams on Windows PC and Mac, and Microsoft Mesh on Quest.
+
+:::image type="content" source="media/Avatar-wardrobe-update.png" alt-text="Image showing eight avatars with examples of the new wardrobe pieces.":::
+
+Users can update their avatar wardrobe in the Avatars for Teams app and choosing an avatar. Then click ‘Customize’ and navigate to the wardrobe section to view the updated avatar catalog.
+
+Some users may experience a change in color on their outerwear choice as this update rolls out. Customizing the color choice is simple, and can be done so in the Avatars for Teams app. After choosing an avatar, click ‘Customize’ and navigate to the ‘Wardrobe’ section, then choose ‘Outerwear’ in the left menu. Click the ‘color wheel’ to view the color palettes and select the color of choice. Click ‘Save’ to save and apply the changes to the avatar.
+
+Previously available colors might no longer be available in the avatar builder. The update includes a refresh of the wardrobe items and their default color for more polished and professional customization options.
+
 ## May 02, 2024
 
 * Avatar emotes have been updated/refreshed to make emotes feel more appropriate for business use cases. This includes a removal of some emotes and a tone/intensity adjustment for others.
