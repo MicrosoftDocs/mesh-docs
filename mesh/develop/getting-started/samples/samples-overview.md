@@ -11,19 +11,22 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, toolkit
 
 # Mesh Samples Overview
 
-The Mesh samples can be used as a starting point for your custom environment; each project is already set up with the Mesh toolkit package and contains many assets that you might find useful.
+There are a number of Mesh sample projects available that you can use as starting points for your own custom environments. Each project is already set up with the Mesh toolkit package and contains many assets that you might find useful.
 
-Studying the Mesh samples will help you learn about the following:
+When you [download the samples from GitHub](./download-mesh-samples.md), you also get a [Control Samples package](./control-samples.md) that contains user interface controls you can use in your projects. The control samples were built using the Mesh Toolkit.
+
+Studying the Mesh sample projects will help you learn about the following:
 
 - Different types of experiences you can create with Mesh.
-- The many assets available in the Mesh toolkit.
-- The Mesh components that can make GameObjects interactive.
-- The different types of interactivity (for example, simple grabbing, or grabbing and holding, or grabbing and throwing)
-- How to set up events and actions through visual scripting.
-- Mesh-specific nodes that you can use in your scripts.
-- How physics works in Mesh.
+- The many assets available in the [Mesh toolkit](../../build-your-basic-environment/add-the-mesh-toolkit-package.md).
+- The Mesh components that can make GameObjects [interactive](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
+- The different types of interactivity (for example, simple grabbing, or grabbing and holding, or grabbing and throwing).
+- How to ensure that objects are held realistically by using [Equippables](../../enhance-your-environment/avatar-and-object-interactions/equippables-in-detail.md).
+- How to set up events and actions through [visual scripting](../../script-your-scene-logic/visual-scripting/visual-scripting-overview.md).
+- [Mesh-specific nodes](../../script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md) that you can use in your scripts.
+- How [physics](../../enhance-your-environment/physics/mesh-physics-overview.md) works in Mesh.
 
-## About the samples
+## About the sample projects
 
 - **Mesh 101**: Mesh 101 is a tutorial, but it also doubles as a sample. In the project, you can open the *StartingPoint* scene and begin walking through the tutorial. However, the project contains another scene named *FinishedProject* which is a completed version of the tutorial. You can view this scene as a sample and use it as starting point for your project just as you would with any of the other samples. [Get started with the Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md).
 
@@ -35,7 +38,7 @@ Studying the Mesh samples will help you learn about the following:
 
 - **Science Building**: An expansive museum exhibiting the power of Mesh Physics to create dynamic, engaging experiences. [Learn more about the Science Building sample](science-building.md).
 
-**To start with a sample**:
+**To start with a sample project**:
 
 1. If you haven't done so already, [download and unzip the Mesh samples](download-mesh-samples.md).
 
