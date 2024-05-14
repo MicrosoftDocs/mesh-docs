@@ -13,8 +13,6 @@ keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer
 
 Mesh enables no-code customization of 3D environments that help your organization create experiences tailored to your business goals.
 
-With customization, organizers and co-organizers can add content to an event or template of default or custom environments.
-
 ## Why customize an event?
 
 As a host for a Mesh event, you have many tools at your disposal to orchestrate an experience for attendees.
@@ -23,21 +21,19 @@ Along with [tools to interact with and manage attendees](produce-event.md#event-
 
 ### Types of customizations
 
-Customization in Mesh is made possible with a built-in event production system that empowers you to add images,  videos directly in the Mesh app, in addition to the customizations developers can add in Unity (link to dev docs). At showtime you can use tools to interact with and manage attendees, and control aspects of the environment in real-time.
+Customization in Mesh is made possible with a built-in event production system that empowers you to control various objects like Sreenshares, Images, or Videos in addition to the [customizations developers can add in Unity](../develop/enhance-your-environment/enhanced-features-overview.md). At showtime you can use tools to interact with and manage attendees, and control aspects of the environment in real-time.
 
-* Add objects through the Editor like Screenshares, Images, or Videos.
+* Add objects through the **Editor** like Screenshares, Images, or Videos.
 
-    :::image type="content" source="../Resources/media/environment-editor-catalog.png" alt-text="Screenshot of editor catalog":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-editor-catalog.png" alt-text="Screenshot of Editor catalog in the Microsoft Mesh application.":::
 
 * Use the **Control Panel** to adjust Objects that you have in your environment using the **Controls** tab.
-
 
     :::image type="content" source="../media/mesh-event-producer-guide/Control-panel.png" alt-text="Screenshot of control panel showing the objects in an environment.":::
 
 * Use the **Control Panel** > **Action Groups** tab to control multiple objects at once for an experience such as displaying photos of your team, or showing a company logo and playing a video.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-gif.gif" alt-text="Gif of an avatar in the Mesh app using action groups to display imaes, a video and company logo, and screenshare.":::
-
 
 ## Considerations before starting your event
 
@@ -110,7 +106,7 @@ At a high level, there are three major steps to customize your event or template
 
 1. **Add content** using the **Environment Editor** (or playable content uploaded from Unity to a custom environment).
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Customize-select-editor-button.png" alt-text="Screenshot of Editor button highlighted in Mesh app.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-editor-catalog.png" alt-text="Screenshot of Editor catalog in the Microsoft Mesh application.":::
 
 1. Select the object to edit its properties.
 
