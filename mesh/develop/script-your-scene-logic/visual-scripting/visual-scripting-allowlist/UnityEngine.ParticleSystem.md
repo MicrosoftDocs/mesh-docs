@@ -2,7 +2,7 @@
 
 ## Scene
 
-### UnityEngine\.ParticleSystem
+### [UnityEngine\.ParticleSystem](https://docs.unity3d.com/ScriptReference/ParticleSystem.html)
 
 Script interface for the Built\-in Particle System\. Unity's powerful and versatile particle system implementation\.
 
@@ -31,9 +31,7 @@ Supports additional properties and methods from UnityEngine\.Component and Unity
 
 ## Structs
 
-### UnityEngine\.ParticleSystem\.EmissionModule
-
-
+### [UnityEngine\.ParticleSystem\.EmissionModule[(https://docs.unity3d.com/ScriptReference/ParticleSystem.EmissionModule.html)]
 
 | Property | Type | Read? | Write? | Script |
 |----------|------|:-----:|:------:|--------|

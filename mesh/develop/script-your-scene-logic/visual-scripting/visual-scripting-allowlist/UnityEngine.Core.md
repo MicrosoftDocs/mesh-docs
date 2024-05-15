@@ -25,18 +25,18 @@ Supports additional properties and methods from UnityEngine\.Object.
 |`tag`|string|The tag of this GameObject\.|yes|no|no|Component \| Get Tag
 |`transform`|UnityEngine\.Transform|The Transform attached to this GameObject\.|yes|no|no|Component \| Get Transform
 
-| Method | Parameters | Returns | Description | Script |
-|--------|------------|---------|-------------|--------|
-|`GetComponent`|`type` System\.Type|UnityEngine\.Component|The non\-generic version of this method\.|Component \| Get Component
-|`GetComponentInChildren`|`t` System\.Type|UnityEngine\.Component|This is the non\-generic version of this method\.|Component \| Get Component In Children
-|`GetComponentInChildren`|`t` System\.Type<br>`includeInactive` bool|UnityEngine\.Component|This is the non\-generic version of this method\.|Component \| Get Component In Children
-|`GetComponentInParent`|`t` System\.Type|UnityEngine\.Component|The non\-generic version of this method\.|Component \| Get Component In Parent
-|`GetComponentInParent`|`t` System\.Type<br>`includeInactive` bool|UnityEngine\.Component|The non\-generic version of this method\.|Component \| Get Component In Parent
-|`GetComponents`|`type` System\.Type|UnityEngine\.Component\[\]|The non\-generic version of this method\.|Component \| Get Components
+| Method | Parameters | Returns | Script |
+|--------|------------|---------|--------|
+|`GetComponent`|`type` System\.Type|UnityEngine\.Component| Component \| Get Component
+|`GetComponentInChildren`|`t` System\.Type|UnityEngine\.Component| Component \| Get Component In Children
+|`GetComponentInChildren`|`t` System\.Type<br>`includeInactive` bool|UnityEngine\.Component| Component \| Get Component In Children
+|`GetComponentInParent`|`t` System\.Type|UnityEngine\.Component| Component \| Get Component In Parent
+|`GetComponentInParent`|`t` System\.Type<br>`includeInactive` bool|UnityEngine\.Component| Component \| Get Component In Parent
+|`GetComponents`|`type` System\.Type|UnityEngine\.Component\[\]| Component \| Get Components
 |`GetComponentsInChildren`|`t` System\.Type|UnityEngine\.Component\[\]||Component \| Get Components In Children
-|`GetComponentsInChildren`|`t` System\.Type<br>`includeInactive` bool|UnityEngine\.Component\[\]|The non\-generic version of this method\.|Component \| Get Components In Children
+|`GetComponentsInChildren`|`t` System\.Type<br>`includeInactive` bool|UnityEngine\.Component\[\]| Component \| Get Components In Children
 |`GetComponentsInParent`|`t` System\.Type|UnityEngine\.Component\[\]||Component \| Get Components In Parent
-|`GetComponentsInParent`|`t` System\.Type<br>`includeInactive` bool|UnityEngine\.Component\[\]|The non\-generic version of this method\.|Component \| Get Components In Parent
+|`GetComponentsInParent`|`t` System\.Type<br>`includeInactive` bool|UnityEngine\.Component\[\]| Component \| Get Components In Parent
 
 ### [UnityEngine\.GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html)
 
@@ -52,18 +52,18 @@ Supports additional properties and methods from UnityEngine\.Object.
 |`tag`|string|The tag of this GameObject\.|yes|no|no|Game Object \| Get Tag
 |`transform`|UnityEngine\.Transform|The Transform attached to this GameObject\.|yes|no|no|Game Object \| Get Transform
 
-| Method | Parameters | Returns | Description | Script |
-|--------|------------|---------|-------------|--------|
-|`GetComponent`|`type` System\.Type|UnityEngine\.Component|The non\-generic version of this method\.|Game Object \| Get Component
-|`GetComponentInChildren`|`type` System\.Type|UnityEngine\.Component|This is the non\-generic version of this method\.|Game Object \| Get Component In Children
-|`GetComponentInChildren`|`type` System\.Type<br>`includeInactive` bool|UnityEngine\.Component|This is the non\-generic version of this method\.|Game Object \| Get Component In Children
-|`GetComponentInParent`|`type` System\.Type|UnityEngine\.Component|The non\-generic version of this method\.|Game Object \| Get Component In Parent
-|`GetComponentInParent`|`type` System\.Type<br>`includeInactive` bool|UnityEngine\.Component|The non\-generic version of this method\.|Game Object \| Get Component In Parent
-|`GetComponents`|`type` System\.Type|UnityEngine\.Component\[\]|The non\-generic version of this method\.|Game Object \| Get Components
-|`GetComponentsInChildren`|`type` System\.Type|UnityEngine\.Component\[\]|The non\-generic version of this method\.|Game Object \| Get Components In Children
-|`GetComponentsInChildren`|`type` System\.Type<br>`includeInactive` bool|UnityEngine\.Component\[\]|The non\-generic version of this method\.|Game Object \| Get Components In Children
+| Method | Parameters | Returns | Script |
+|--------|------------|---------|--------|
+|`GetComponent`|`type` System\.Type|UnityEngine\.Component| Game Object \| Get Component
+|`GetComponentInChildren`|`type` System\.Type|UnityEngine\.Component| Game Object \| Get Component In Children
+|`GetComponentInChildren`|`type` System\.Type<br>`includeInactive` bool|UnityEngine\.Component| Game Object \| Get Component In Children
+|`GetComponentInParent`|`type` System\.Type|UnityEngine\.Component| Game Object \| Get Component In Parent
+|`GetComponentInParent`|`type` System\.Type<br>`includeInactive` bool|UnityEngine\.Component| Game Object \| Get Component In Parent
+|`GetComponents`|`type` System\.Type|UnityEngine\.Component\[\]| Game Object \| Get Components
+|`GetComponentsInChildren`|`type` System\.Type|UnityEngine\.Component\[\]| Game Object \| Get Components In Children
+|`GetComponentsInChildren`|`type` System\.Type<br>`includeInactive` bool|UnityEngine\.Component\[\]| Game Object \| Get Components In Children
 |`GetComponentsInParent`|`type` System\.Type|UnityEngine\.Component\[\]||Game Object \| Get Components In Parent
-|`GetComponentsInParent`|`type` System\.Type<br>`includeInactive` bool|UnityEngine\.Component\[\]|The non\-generic version of this method\.|Game Object \| Get Components In Parent
+|`GetComponentsInParent`|`type` System\.Type<br>`includeInactive` bool|UnityEngine\.Component\[\]| Game Object \| Get Components In Parent
 |`SetActive`|`value` bool|void|ActivatesDeactivates the GameObject, depending on the given true or false/ value\.|Game Object \| Set Active
 
 ### [UnityEngine\.Light](https://docs.unity3d.com/ScriptReference/Light.html)

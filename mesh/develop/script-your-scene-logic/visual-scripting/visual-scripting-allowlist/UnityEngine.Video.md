@@ -2,7 +2,7 @@
 
 ## Scene
 
-### UnityEngine\.Video\.VideoPlayer
+### [UnityEngine\.Video\.VideoPlayer](https://docs.unity3d.com/Manual/class-VideoPlayer.html)
 
 Plays video content onto a target\.
 

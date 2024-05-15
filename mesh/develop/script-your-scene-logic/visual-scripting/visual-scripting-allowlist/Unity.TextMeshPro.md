@@ -2,7 +2,7 @@
 
 ## Scene
 
-### TMPro\.TextMeshPro
+### [TMPro\.TextMeshPro](https://docs.unity3d.com/Manual/com.unity.textmeshpro.html)
 
 
 
@@ -14,7 +14,7 @@ Supports additional properties and methods from UnityEngine\.UI\.Graphic, UnityE
 
 ## Enums
 
-### TMPro\.FontStyles
+### [TMPro\.FontStyles](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/api/TMPro.FontStyles.html)
 
 
 

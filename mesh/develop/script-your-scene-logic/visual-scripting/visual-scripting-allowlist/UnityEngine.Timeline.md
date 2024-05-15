@@ -2,7 +2,7 @@
 
 ## Scene
 
-### UnityEngine\.Playables\.PlayableDirector
+### [UnityEngine\.Playables\.PlayableDirector](https://docs.unity3d.com/ScriptReference/Playables.PlayableDirector.html)
 
 Instantiates a PlayableAsset and controls playback of Playable objects\.
 
@@ -27,15 +27,13 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 
 ## Other
 
-### UnityEngine\.Playables\.IPlayableAsset
-
-
+### [UnityEngine\.Playables\.IPlayableAsset](https://docs.unity3d.com/ScriptReference/Playables.IPlayableAsset.html)
 
 | Property | Type | Description | Read? | Write? | Script |
 |----------|------|-------------|:-----:|:------:|--------|
 |`duration`|double|Duration in seconds\.|yes|no|Playable Asset Interface \| Get Duration
 
-### UnityEngine\.Playables\.PlayableAsset
+### [UnityEngine\.Playables\.PlayableAsset](https://docs.unity3d.com/ScriptReference/Playables.PlayableAsset.html)
 
 A base class for assets that can be used to instantiate a Playable at runtime\.
 
@@ -47,7 +45,7 @@ Supports additional properties and methods from UnityEngine\.Object.
 
 ## Enums
 
-### UnityEngine\.Playables\.DirectorWrapMode
+### [UnityEngine\.Playables\.DirectorWrapMode](https://docs.unity3d.com/ScriptReference/Playables.DirectorWrapMode.html)
 
 Wrap mode for Playables\.
 
@@ -59,7 +57,8 @@ Values are mutually exclusive\.
 |`Hold`|0|Hold the last frame when the playable time reaches its duration\.
 |`Loop`|1|Loop back to zero time and continue playing\.
 |`None`|2|Do not keep playing when the time reaches the duration\.
-### UnityEngine\.Playables\.PlayState
+
+### [UnityEngine\.Playables\.PlayState](https://docs.unity3d.com/ScriptReference/Playables.PlayState.html)
 
 Status of a Playable\.
 

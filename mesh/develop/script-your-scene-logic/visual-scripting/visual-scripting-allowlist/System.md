@@ -2,7 +2,7 @@
 
 ## Structs
 
-### bool
+### [bool](https://learn.microsoft.com/en-us/dotnet/api/system.boolean?view=net-8.0)
 
 
 
@@ -16,7 +16,7 @@
 |`Equals`|`obj` bool|bool|Boolean \| Equals
 |`Parse`|`value` string|bool|Boolean \| Parse
 
-### char
+### [char](https://learn.microsoft.com/en-us/dotnet/api/system.char?view=net-8.0)
 
 
 
@@ -44,7 +44,7 @@
 |`ToUpper`|`c` char|char|Character \| To Upper
 |`ToUpperInvariant`|`c` char|char|Character \| To Upper Invariant
 
-### double
+ ### [double([_______](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0))
 
 
 
@@ -67,7 +67,7 @@
 |`IsPositiveInfinity`|`d` double|bool|Double \| Is Positive Infinity
 |`Parse`|`s` string|double|Double \| Parse
 
-### float
+ ### [float](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0))
 
 
 
@@ -93,7 +93,7 @@
 |`IsSubnormal`|`f` float|bool|Float \| Is Subnormal
 |`Parse`|`s` string|float|Float \| Parse
 
-### int
+ ### [int](https://learn.microsoft.com/en-us/dotnet/api/system.int32?view=net-8.0)
 
 
 
@@ -107,7 +107,7 @@
 |`Equals`|`obj` int|bool|Integer \| Equals
 |`Parse`|`s` string|int|Integer \| Parse
 
-### System\.DateTime
+ ### [System\.DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-8.0)
 
 
 
@@ -153,7 +153,7 @@
 |`ToString`|`format` string|string|Date Time \| To String
 |`ToUniversalTime`||System\.DateTime|Date Time \| To Universal Time
 
-### System\.DateTimeOffset
+ ### [System\.DateTimeOffset([_______](https://learn.microsoft.com/en-us/dotnet/api/system.datetimeoffset?view=net-8.0))
 
 
 
@@ -162,7 +162,7 @@
 |`Subtract`|`value` System\.DateTimeOffset|System\.TimeSpan|Date Time Offset \| Subtract
 |`Subtract`|`value` System\.TimeSpan|System\.DateTimeOffset|Date Time Offset \| Subtract
 
-### System\.TimeSpan
+ ### [System\.TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/system.timespan?view=net-8.0)
 
 
 
@@ -172,11 +172,11 @@
 
 ## Other
 
-### object
+ ### [object](https://learn.microsoft.com/en-us/dotnet/api/system.object?view=net-8.0)
 
 
 
-### string
+ ### [string](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0)
 
 
 
@@ -248,7 +248,7 @@
 |`TrimEnd`||string|String \| Trim End
 |`TrimStart`||string|String \| Trim Start
 
-### System\.TimeZoneInfo
+ ### [System\.TimeZoneInfo](https://learn.microsoft.com/en-us/dotnet/api/system.timezoneinfo?view=net-8.0)
 
 
 
@@ -278,11 +278,11 @@
 |`IsDaylightSavingTime`|`dateTime` System\.DateTime|bool|Time Zone Info \| Is Daylight Saving Time
 |`IsInvalidTime`|`dateTime` System\.DateTime|bool|Time Zone Info \| Is Invalid Time
 
-### System\.Type
+ ### [System\.Type](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0)
 
 
 
-### System\.Uri
+ ### [System\.Uri](https://learn.microsoft.com/en-us/dotnet/api/system.uri?view=net-8.0)
 
 
 
@@ -310,7 +310,7 @@
 
 ## Enums
 
-### System\.DateTimeKind
+ ### [System\.DateTimeKind](https://learn.microsoft.com/en-us/dotnet/api/system.datetimekind?view=net-8.0)
 
 
 
@@ -322,7 +322,8 @@ Values are mutually exclusive\.
 |`Unspecified`|0
 |`Utc`|1
 |`Local`|2
-### System\.DayOfWeek
+
+ ### [System\.DayOfWeek](https://learn.microsoft.com/en-us/dotnet/api/system.dayofweek?view=net-8.0)
 
 
 
@@ -338,7 +339,8 @@ Values are mutually exclusive\.
 |`Thursday`|4
 |`Friday`|5
 |`Saturday`|6
-### System\.StringComparison
+
+ ### [System\.StringComparison](https://learn.microsoft.com/en-us/dotnet/api/system.stringcomparison?view=net-8.0)
 
 
 

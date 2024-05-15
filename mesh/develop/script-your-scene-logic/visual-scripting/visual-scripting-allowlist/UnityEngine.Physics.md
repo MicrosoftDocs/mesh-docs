@@ -2,7 +2,7 @@
 
 ## Scene
 
-### UnityEngine\.BoxCollider
+### [UnityEngine\.BoxCollider](https://docs.unity3d.com/ScriptReference/BoxCollider.html)
 
 A box\-shaped primitive collider\.
 
@@ -13,7 +13,7 @@ Supports additional properties and methods from UnityEngine\.Collider, UnityEngi
 |`center`|UnityEngine\.Vector3|The center of the box, measured in the object's local space\.|yes|yes|yes|Box Collider \| Get Center<br>Box Collider \| Set Center
 |`size`|UnityEngine\.Vector3|The size of the box, measured in the object's local space\.|yes|yes|yes|Box Collider \| Get Size<br>Box Collider \| Set Size
 
-### UnityEngine\.CapsuleCollider
+### [UnityEngine\.CapsuleCollider](https://docs.unity3d.com/ScriptReference/CapsuleCollider.html)
 
 A capsule\-shaped primitive collider\.
 
@@ -26,13 +26,13 @@ Supports additional properties and methods from UnityEngine\.Collider, UnityEngi
 |`height`|float|The height of the capsule measured in the object's local space\.|yes|yes|yes|Capsule Collider \| Get Height<br>Capsule Collider \| Set Height
 |`radius`|float|The radius of the sphere, measured in the object's local space\.|yes|yes|yes|Capsule Collider \| Get Radius<br>Capsule Collider \| Set Radius
 
-### UnityEngine\.CharacterJoint
+### [UnityEngine\.CharacterJoint](https://docs.unity3d.com/ScriptReference/CharacterJoint.html)
 
 Character Joints are mainly used for Ragdoll effects\.
 
 Supports additional properties and methods from UnityEngine\.Joint, UnityEngine\.Component, and UnityEngine\.Object.
 
-### UnityEngine\.Collider
+### [UnityEngine\.Collider](https://docs.unity3d.com/ScriptReference/Collider.html)
 
 A base class of all colliders\.
 
@@ -50,13 +50,13 @@ Supports additional properties and methods from UnityEngine\.Component and Unity
 |`ClosestPoint`|`position` UnityEngine\.Vector3|UnityEngine\.Vector3|Returns a point on the collider that is closest to a given location\.|Collider \| Closest Point
 |`ClosestPointOnBounds`|`position` UnityEngine\.Vector3|UnityEngine\.Vector3|The closest point to the bounding box of the attached collider\.|Collider \| Closest Point On Bounds
 
-### UnityEngine\.ConfigurableJoint
+### [UnityEngine\.ConfigurableJoint](https://docs.unity3d.com/ScriptReference/ConfigurableJoint.html)
 
 The configurable joint is an extremely flexible joint giving you complete control over rotation and linear motion\.
 
 Supports additional properties and methods from UnityEngine\.Joint, UnityEngine\.Component, and UnityEngine\.Object.
 
-### UnityEngine\.ConstantForce
+### [UnityEngine\.ConstantForce](https://docs.unity3d.com/ScriptReference/ConstantForce.html)
 
 A force applied constantly\.
 
@@ -69,13 +69,13 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 |`relativeTorque`|UnityEngine\.Vector3|The torque \- relative to the Rigidbodies coordinate system \- applied every frame\.|yes|yes|yes|Constant Force \| Get Relative Torque<br>Constant Force \| Set Relative Torque
 |`torque`|UnityEngine\.Vector3|The torque applied to the Rigidbody every frame\.|yes|yes|yes|Constant Force \| Get Torque<br>Constant Force \| Set Torque
 
-### UnityEngine\.FixedJoint
+### [UnityEngine\.FixedJoint](https://docs.unity3d.com/ScriptReference/FixedJoint.html)
 
 The Fixed joint groups together 2 Rigidbodies, making them stick together in their bound position\.
 
 Supports additional properties and methods from UnityEngine\.Joint, UnityEngine\.Component, and UnityEngine\.Object.
 
-### UnityEngine\.HingeJoint
+### [UnityEngine\.HingeJoint](https://docs.unity3d.com/ScriptReference/HingeJoint.html)
 
 The HingeJoint groups together two Rigidbodies, constraining them to move like connected by a hinge\.
 
@@ -91,7 +91,7 @@ Supports additional properties and methods from UnityEngine\.Joint, UnityEngine\
 |`useSpring`|bool|Enables the joint's spring\. Disabled by default\.|yes|yes|yes|Hinge Joint \| Get Use Spring<br>Hinge Joint \| Set Use Spring
 |`velocity`|float|The angular velocity of the joint in degrees per second\. \(Read Only\)|yes|no|no|Hinge Joint \| Get Velocity
 
-### UnityEngine\.Joint
+### [UnityEngine\.Joint](https://docs.unity3d.com/ScriptReference/Joint.html)
 
 Joint is the base class for all joints\.
 
@@ -108,7 +108,7 @@ Supports additional properties and methods from UnityEngine\.Component and Unity
 |`currentForce`|UnityEngine\.Vector3|The force applied by the solver to satisfy all constraints\.|yes|no|no|Joint \| Get Current Force
 |`currentTorque`|UnityEngine\.Vector3|The torque applied by the solver to satisfy all constraints\.|yes|no|no|Joint \| Get Current Torque
 
-### UnityEngine\.MeshCollider
+### [UnityEngine\.MeshCollider](https://docs.unity3d.com/ScriptReference/MeshCollider.html)
 
 A mesh collider allows you to do between meshes and primitives\.
 
@@ -118,7 +118,7 @@ Supports additional properties and methods from UnityEngine\.Collider, UnityEngi
 |----------|------|-------------|:-----:|:------:|:------:|--------|
 |`convex`|bool|Use a convex collider from the mesh\.|yes|no|no|Mesh Collider \| Get Convex
 
-### UnityEngine\.Rigidbody
+### [UnityEngine\.Rigidbody](https://docs.unity3d.com/ScriptReference/Rigidbody.html)
 
 Control of an object's position through physics simulation\.
 
@@ -170,7 +170,7 @@ Supports additional properties and methods from UnityEngine\.Component and Unity
 |`MoveRotation`|`rot` UnityEngine\.Quaternion|void|Rotates the Rigidbody to rotation\.|Rigidbody \| Move Rotation
 |`ResetCenterOfMass`||void|Reset the center of mass of the Rigidbody\.|Rigidbody \| Reset Center Of Mass
 
-### UnityEngine\.SphereCollider
+### [UnityEngine\.SphereCollider](https://docs.unity3d.com/ScriptReference/SphereCollider.html)
 
 A sphere\-shaped primitive collider\.
 
@@ -181,7 +181,7 @@ Supports additional properties and methods from UnityEngine\.Collider, UnityEngi
 |`center`|UnityEngine\.Vector3|The center of the sphere in the object's local space\.|yes|yes|yes|Sphere Collider \| Get Center<br>Sphere Collider \| Set Center
 |`radius`|float|The radius of the sphere measured in the object's local space\.|yes|yes|yes|Sphere Collider \| Get Radius<br>Sphere Collider \| Set Radius
 
-### UnityEngine\.SpringJoint
+### [UnityEngine\.SpringJoint](https://docs.unity3d.com/ScriptReference/SpringJoint.html)
 
 The spring joint ties together two Rigidbodies; spring forces will be automatically applied to keep the object at the given distance\.
 
@@ -197,7 +197,7 @@ Supports additional properties and methods from UnityEngine\.Joint, UnityEngine\
 
 ## Structs
 
-### UnityEngine\.ContactPoint
+### [UnityEngine\.ContactPoint](https://docs.unity3d.com/ScriptReference/ContactPoint.html)
 
 Describes a contact point where the collision occurs\.
 
@@ -209,7 +209,7 @@ Describes a contact point where the collision occurs\.
 |`separation`|float|The distance between the colliders at the contact point\.|yes|no|Contact Point \| Get Separation
 |`thisCollider`|UnityEngine\.Collider|The first collider in contact at the point\.|yes|no|Contact Point \| Get This Collider
 
-### UnityEngine\.JointDrive
+### [UnityEngine\.JointDrive](https://docs.unity3d.com/ScriptReference/JointDrive.html)
 
 How the joint's movement will behave along its local X axis\.
 
@@ -219,7 +219,7 @@ How the joint's movement will behave along its local X axis\.
 |`positionDamper`|float|Resistance strength against the Position Spring\. Only used if mode includes Position\.|yes|yes|Joint Drive \| Get Position Damper<br>Joint Drive \| Set Position Damper
 |`positionSpring`|float|Strength of a rubber\-band pull toward the defined direction\. Only used if mode includes Position\.|yes|yes|Joint Drive \| Get Position Spring<br>Joint Drive \| Set Position Spring
 
-### UnityEngine\.JointLimits
+### [UnityEngine\.JointLimits](https://docs.unity3d.com/ScriptReference/JointLimits.html)
 
 JointLimits is used by HingeJoint to limit the joints angle\.
 
@@ -231,7 +231,7 @@ JointLimits is used by HingeJoint to limit the joints angle\.
 |`max`|float|The upper angular limit \(in degrees\) of the joint\.|yes|yes|Joint Limits \| Get Max<br>Joint Limits \| Set Max
 |`min`|float|The lower angular limit \(in degrees\) of the joint\.|yes|yes|Joint Limits \| Get Min<br>Joint Limits \| Set Min
 
-### UnityEngine\.JointMotor
+### [UnityEngine\.JointMotor](https://docs.unity3d.com/ScriptReference/JointMotor.html)
 
 The JointMotor is used to motorize a joint\.
 
@@ -241,7 +241,7 @@ The JointMotor is used to motorize a joint\.
 |`freeSpin`|bool|If freeSpin is enabled the motor will only accelerate but never slow down\.|yes|yes|Joint Motor \| Get Free Spin<br>Joint Motor \| Set Free Spin
 |`targetVelocity`|float|The motor will apply a force up to force to achieve targetVelocity\.|yes|yes|Joint Motor \| Get Target Velocity<br>Joint Motor \| Set Target Velocity
 
-### UnityEngine\.JointSpring
+### [UnityEngine\.JointSpring](https://docs.unity3d.com/ScriptReference/JointSpring.html)
 
 JointSpring is used add a spring force to HingeJoint and PhysicMaterial\.
 
@@ -251,7 +251,7 @@ JointSpring is used add a spring force to HingeJoint and PhysicMaterial\.
 |`spring`|float|The spring forces used to reach the target position\.|yes|yes|Joint Spring \| Get Spring<br>Joint Spring \| Set Spring
 |`targetPosition`|float|The target position the joint attempts to reach\.|yes|yes|Joint Spring \| Get Target Position<br>Joint Spring \| Set Target Position
 
-### UnityEngine\.RaycastHit
+### [UnityEngine\.RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html)
 
 Structure used to get information back from a Raycast\.
 
@@ -270,7 +270,7 @@ Structure used to get information back from a Raycast\.
 |`transform`|UnityEngine\.Transform|The Transform of the Rigidbody or collider that was hit\.|yes|no|Raycast Hit \| Get Transform
 |`triangleIndex`|int|The index of the triangle that was hit\.|yes|no|Raycast Hit \| Get Triangle Index
 
-### UnityEngine\.SoftJointLimit
+### [UnityEngine\.SoftJointLimit](https://docs.unity3d.com/ScriptReference/SoftJointLimit.html)
 
 The limits defined by the CharacterJoint\.
 
@@ -280,7 +280,7 @@ The limits defined by the CharacterJoint\.
 |`contactDistance`|float|Determines how far ahead in space the solver can "see" the joint limit\.|yes|yes|Soft Joint Limit \| Get Contact Distance<br>Soft Joint Limit \| Set Contact Distance
 |`limit`|float|The limit position/angle of the joint \(in degrees\)\.|yes|yes|Soft Joint Limit \| Get Limit<br>Soft Joint Limit \| Set Limit
 
-### UnityEngine\.SoftJointLimitSpring
+### [UnityEngine\.SoftJointLimitSpring](https://docs.unity3d.com/ScriptReference/SoftJointLimitSpring.html)
 
 The configuration of the spring attached to the joint's limits: linear and angular\. Used by CharacterJoint and ConfigurableJoint\.
 
@@ -291,7 +291,7 @@ The configuration of the spring attached to the joint's limits: linear and angul
 
 ## Other
 
-### UnityEngine\.Physics
+### [UnityEngine\.Physics](https://docs.unity3d.com/ScriptReference/Physics.html)
 
 Global physics properties and helper methods\.
 
@@ -347,7 +347,7 @@ Global physics properties and helper methods\.
 
 ## Enums
 
-### UnityEngine\.ForceMode
+### [UnityEngine\.ForceMode](https://docs.unity3d.com/ScriptReference/ForceMode.html)
 
 Use ForceMode to specify how to apply a force using Rigidbody\.AddForce or ArticulationBody\.AddForce\.
 
@@ -360,7 +360,8 @@ Values are mutually exclusive\.
 |`Impulse`|1|Add an instant force impulse to the Rigidbody, using its mass\.
 |`VelocityChange`|2|Add an instant velocity change to the Rigidbody, ignoring its mass\.
 |`Acceleration`|5|Add a continuous acceleration to the Rigidbody, ignoring its mass\.
-### UnityEngine\.QueryTriggerInteraction
+
+### [UnityEngine\.QueryTriggerInteraction](https://docs.unity3d.com/ScriptReference/QueryTriggerInteraction.html)
 
 Overrides the global Physics\.queriesHitTriggers\.
 

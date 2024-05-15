@@ -2,7 +2,7 @@
 
 ## Scene
 
-### UnityEngine\.AudioSource
+### [UnityEngine\.AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html)
 
 A representation of audio sources in 3D\.
 
@@ -34,7 +34,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 
 ## Other
 
-### UnityEngine\.AudioClip
+### [UnityEngine\.AudioClip](https://docs.unity3d.com/ScriptReference/AudioClip.html)
 
 A container for audio data\.
 
