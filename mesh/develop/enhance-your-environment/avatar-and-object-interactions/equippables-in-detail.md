@@ -4,7 +4,7 @@ description: Learn about various equippable objects and the realistic ways they 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 5/2/2024
+ms.date: 5/15/2024
 ms.topic: overview
 keywords: interactions, interactables, equippables, throwables, avatars, grab, pick up, hold, throw, attach, activate, activation
 ---
@@ -13,7 +13,7 @@ keywords: interactions, interactables, equippables, throwables, avatars, grab, p
 
 ## Overview
 
-In the Toybox sample, certain prefabs are a type of [Interactable](./interactables.md) known as *Equippable*. When you pick up such an object, your hand and arm position adjust to hold the object in a realistic way. This is called *equipping an object to your hand*.
+When you [download our Mesh samples from GitHub](../../getting-started/samples/download-mesh-samples.md), you get a package containing prefabs that are a type of [Interactable](./interactables.md) known as *Equippable*. When you pick up an Equippable object, your avatar knows how to adjust your hand and arm position so they hold the object in a realistic way. This is called *equipping an object to your hand*.
 
 > [!NOTE]
 > The Toybox sample is where we currently showcase our Equippables prefabs, but you can use the prefabs or create your own Equippables in any project.
