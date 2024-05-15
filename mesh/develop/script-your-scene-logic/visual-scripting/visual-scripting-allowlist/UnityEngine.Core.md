@@ -2,7 +2,7 @@
 
 ## Scene
 
-### UnityEngine\.Behaviour
+### [UnityEngine\.Behaviour](https://docs.unity3d.com/ScriptReference/Behaviour.html)
 
 Behaviours are Components that can be enabled or disabled\.
 
@@ -13,7 +13,7 @@ Supports additional properties and methods from UnityEngine\.Component and Unity
 |`enabled`|bool|Enabled Behaviours are Updated, disabled Behaviours are not\.|yes|yes|yes|Behaviour \| Get Enabled<br>Behaviour \| Set Enabled
 |`isActiveAndEnabled`|bool|Reports whether a GameObject and its associated Behaviour is active and enabled\.|yes|no|no|Behaviour \| Is Active And Enabled
 
-### UnityEngine\.Component
+### [UnityEngine\.Component](https://docs.unity3d.com/ScriptReference/Component.html)
 
 Base class for everything attached to a GameObject\.
 
@@ -38,7 +38,7 @@ Supports additional properties and methods from UnityEngine\.Object.
 |`GetComponentsInParent`|`t` System\.Type|UnityEngine\.Component\[\]||Component \| Get Components In Parent
 |`GetComponentsInParent`|`t` System\.Type<br>`includeInactive` bool|UnityEngine\.Component\[\]|The non\-generic version of this method\.|Component \| Get Components In Parent
 
-### UnityEngine\.GameObject
+### [UnityEngine\.GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html)
 
 Base class for all entities in Unity Scenes\.
 
@@ -66,13 +66,13 @@ Supports additional properties and methods from UnityEngine\.Object.
 |`GetComponentsInParent`|`type` System\.Type<br>`includeInactive` bool|UnityEngine\.Component\[\]|The non\-generic version of this method\.|Game Object \| Get Components In Parent
 |`SetActive`|`value` bool|void|ActivatesDeactivates the GameObject, depending on the given true or false/ value\.|Game Object \| Set Active
 
-### UnityEngine\.Light
+### [UnityEngine\.Light](https://docs.unity3d.com/ScriptReference/Light.html)
 
-Script interface for\.
+Script interface for light components.
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
-### UnityEngine\.LineRenderer
+### [UnityEngine\.LineRenderer](https://docs.unity3d.com/ScriptReference/LineRenderer.html)
 
 The line renderer is used to draw free\-floating lines in 3D space\.
 
@@ -89,7 +89,7 @@ Supports additional properties and methods from UnityEngine\.Renderer, UnityEngi
 |`SetPosition`|`index` int<br>`position` UnityEngine\.Vector3|void|Set the position of a vertex in the line\.|Line Renderer \| Set Position
 |`SetPositions`|`positions` UnityEngine\.Vector3\[\]|void|Set the positions of all vertices in the line\.|Line Renderer \| Set Positions
 
-### UnityEngine\.MeshFilter
+### [UnityEngine\.MeshFilter](https://docs.unity3d.com/ScriptReference/MeshFilter.html)
 
 A class to access the Mesh of the\.
 
@@ -100,13 +100,13 @@ Supports additional properties and methods from UnityEngine\.Component and Unity
 |`mesh`|UnityEngine\.Mesh|Returns either a new Mesh\|mesh or a duplicate of the existing mesh, and assigns it to the mesh filter\.|yes|yes|no|Mesh Filter \| Get Mesh<br>Mesh Filter \| Set Mesh
 |`sharedMesh`|UnityEngine\.Mesh|Returns the shared mesh of the mesh filter\.|yes|no|no|Mesh Filter \| Get Shared Mesh
 
-### UnityEngine\.MeshRenderer
+### [UnityEngine\.MeshRenderer](https://docs.unity3d.com/ScriptReference/MeshRenderer.html)
 
 Renders meshes inserted by the MeshFilter or TextMesh\.
 
 Supports additional properties and methods from UnityEngine\.Renderer, UnityEngine\.Component, and UnityEngine\.Object.
 
-### UnityEngine\.RectTransform
+### [UnityEngine\.RectTransform](https://docs.unity3d.com/ScriptReference/RectTransform.html)
 
 Position, size, anchor and pivot information for a rectangle\.
 
@@ -131,7 +131,7 @@ Supports additional properties and methods from UnityEngine\.Transform, UnityEng
 |`SetInsetAndSizeFromParentEdge`|`edge` UnityEngine\.RectTransform\.Edge<br>`inset` float<br>`size` float|void||Rect Transform \| Set Inset And Size From Parent Edge
 |`SetSizeWithCurrentAnchors`|`axis` UnityEngine\.RectTransform\.Axis<br>`size` float|void||Rect Transform \| Set Size With Current Anchors
 
-### UnityEngine\.Renderer
+### [UnityEngine\.Renderer](https://docs.unity3d.com/ScriptReference/Renderer.html)
 
 General functionality for all renderers\.
 
@@ -153,7 +153,7 @@ Supports additional properties and methods from UnityEngine\.Component and Unity
 |`SetPropertyBlock`|`properties` UnityEngine\.MaterialPropertyBlock|void|Lets you set or clear per\-renderer or per\-material parameter overrides\.|Renderer \| Set Property Block
 |`SetPropertyBlock`|`properties` UnityEngine\.MaterialPropertyBlock<br>`materialIndex` int|void|Lets you set or clear per\-renderer or per\-material parameter overrides\.|Renderer \| Set Property Block
 
-### UnityEngine\.TrailRenderer
+### [UnityEngine\.TrailRenderer](https://docs.unity3d.com/ScriptReference/TrailRenderer.html)
 
 The trail renderer is used to make trails behind objects in the Scene as they move about\.
 
@@ -172,7 +172,7 @@ Supports additional properties and methods from UnityEngine\.Renderer, UnityEngi
 |`SetPosition`|`index` int<br>`position` UnityEngine\.Vector3|void|Set the position of a vertex in the trail\.|Trail Renderer \| Set Position
 |`SetPositions`|`positions` UnityEngine\.Vector3\[\]|void|Sets the positions of all vertices in the trail\.|Trail Renderer \| Set Positions
 
-### UnityEngine\.Transform
+### [UnityEngine\.Transform](https://docs.unity3d.com/ScriptReference/Transform.html)
 
 Position, rotation and scale of an object\.
 
@@ -235,7 +235,7 @@ Supports additional properties and methods from UnityEngine\.Component and Unity
 
 ## Structs
 
-### UnityEngine\.Bounds
+### [UnityEngine\.Bounds](https://docs.unity3d.com/ScriptReference/Bounds.html)
 
 Represents an axis aligned bounding box\.
 
@@ -261,7 +261,7 @@ Represents an axis aligned bounding box\.
 |`SetMinMax`|`min` UnityEngine\.Vector3<br>`max` UnityEngine\.Vector3|void|Sets the bounds to the min and max value of the box\.|Bounds \| Set Min Max
 |`SqrDistance`|`point` UnityEngine\.Vector3|float|The smallest squared distance between the point and this bounding box\.|Bounds \| Sqr Distance
 
-### UnityEngine\.Color
+### [UnityEngine\.Color](https://docs.unity3d.com/ScriptReference/Color.html)
 
 Representation of RGBA colors\.
 
@@ -286,7 +286,7 @@ Representation of RGBA colors\.
 |`Lerp`|`a` UnityEngine\.Color<br>`b` UnityEngine\.Color<br>`t` float|UnityEngine\.Color|Linearly interpolates between colors a and b by t\.|Color \| Lerp
 |`LerpUnclamped`|`a` UnityEngine\.Color<br>`b` UnityEngine\.Color<br>`t` float|UnityEngine\.Color|Linearly interpolates between colors a and b by t\.|Color \| Lerp Unclamped
 
-### UnityEngine\.Mathf
+### [UnityEngine\.Mathf](https://docs.unity3d.com/ScriptReference/Mathf.html)
 
 A collection of common math functions\.
 
@@ -350,7 +350,7 @@ A collection of common math functions\.
 |`Sqrt`|`f` float|float|Returns square root of f\.|Mathf \| Sqrt
 |`Tan`|`f` float|float|Returns the tangent of angle f in radians\.|Mathf \| Tan
 
-### UnityEngine\.Matrix4x4
+### [UnityEngine\.Matrix4x4](https://docs.unity3d.com/ScriptReference/Matrix4x4.html)
 
 A standard 4x4 transformation matrix\.
 
@@ -406,7 +406,7 @@ A standard 4x4 transformation matrix\.
 |`TRS`|`pos` UnityEngine\.Vector3<br>`q` UnityEngine\.Quaternion<br>`s` UnityEngine\.Vector3|UnityEngine\.Matrix4x4|Creates a translation, rotation and scaling matrix\.|Matrix 4x 4 \| TRS
 |`ValidTRS`||bool|Checks if this matrix is a valid transform matrix\.|Matrix 4x 4 \| Valid TRS
 
-### UnityEngine\.Quaternion
+### [UnityEngine\.Quaternion](https://docs.unity3d.com/ScriptReference/Quaternion.html)
 
 Quaternions are used to represent rotations\.
 
@@ -443,7 +443,7 @@ Quaternions are used to represent rotations\.
 |`Slerp`|`a` UnityEngine\.Quaternion<br>`b` UnityEngine\.Quaternion<br>`t` float|UnityEngine\.Quaternion|Spherically interpolates between quaternions a and b by ratio t\. The parameter t is clamped to the range \[0, 1\]\.|Quaternion \| Slerp
 |`SlerpUnclamped`|`a` UnityEngine\.Quaternion<br>`b` UnityEngine\.Quaternion<br>`t` float|UnityEngine\.Quaternion|Spherically interpolates between a and b by t\. The parameter t is not clamped\.|Quaternion \| Slerp Unclamped
 
-### UnityEngine\.Ray
+### [UnityEngine\.Ray](https://docs.unity3d.com/ScriptReference/Ray.html)
 
 Representation of rays\.
 
@@ -457,7 +457,7 @@ Representation of rays\.
 |`Ray`|`origin` UnityEngine\.Vector3<br>`direction` UnityEngine\.Vector3|UnityEngine\.Ray|Creates a ray starting at origin along direction\.|Ray \| Create Ray
 |`GetPoint`|`distance` float|UnityEngine\.Vector3|Returns a point at distance units along the ray\.|Ray \| Get Point
 
-### UnityEngine\.Rect
+### [UnityEngine\.Rect](https://docs.unity3d.com/ScriptReference/Rect.html)
 
 A 2D Rectangle defined by X and Y position, width and height\.
 
@@ -493,7 +493,7 @@ A 2D Rectangle defined by X and Y position, width and height\.
 |`PointToNormalized`|`rectangle` UnityEngine\.Rect<br>`point` UnityEngine\.Vector2|UnityEngine\.Vector2|Returns the normalized coordinates cooresponding the the point\.|Rect \| Point To Normalized
 |`Set`|`x` float<br>`y` float<br>`width` float<br>`height` float|void|Set components of an existing Rect\.|Rect \| Set
 
-### UnityEngine\.Vector2
+### [UnityEngine\.Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html)
 
 Representation of 2D vectors and points\.
 
@@ -536,7 +536,7 @@ Representation of 2D vectors and points\.
 |`SqrMagnitude`||float||Vector 2 \| Sqr Magnitude
 |`SqrMagnitude`|`a` UnityEngine\.Vector2|float||Vector 2 \| Sqr Magnitude
 
-### UnityEngine\.Vector3
+### [UnityEngine\.Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html)
 
 Representation of 3D vectors and points\.
 
@@ -588,7 +588,7 @@ Representation of 3D vectors and points\.
 |`SlerpUnclamped`|`a` UnityEngine\.Vector3<br>`b` UnityEngine\.Vector3<br>`t` float|UnityEngine\.Vector3|Spherically interpolates between two vectors\.|Vector 3 \| Slerp Unclamped
 |`SqrMagnitude`|`vector` UnityEngine\.Vector3|float||Vector 3 \| Sqr Magnitude
 
-### UnityEngine\.Vector4
+### [UnityEngine\.Vector4](https://docs.unity3d.com/ScriptReference/Vector4.html)
 
 Representation of four\-dimensional vectors\.
 
@@ -631,11 +631,11 @@ Representation of four\-dimensional vectors\.
 
 ## Other
 
-### UnityEngine\.AnimationCurve
+### [UnityEngine\.AnimationCurve](https://docs.unity3d.com/ScriptReference/AnimationCurve.html)
 
 Store a collection of Keyframes that can be evaluated over time\.
 
-### UnityEngine\.Debug
+### [UnityEngine\.Debug](https://docs.unity3d.com/ScriptReference/Debug.html)
 
 Class containing methods to ease debugging while developing a game\.
 
@@ -660,7 +660,7 @@ Class containing methods to ease debugging while developing a game\.
 |`LogWarning`|`message` object|void|A variant of Debug\.Log that logs a warning message to the console\.|Debug \| Log Warning
 |`LogWarning`|`message` object<br>`context` UnityEngine\.Object|void|A variant of Debug\.Log that logs a warning message to the console\.|Debug \| Log Warning
 
-### UnityEngine\.DynamicGI
+### [UnityEngine\.DynamicGI](https://docs.unity3d.com/ScriptReference/DynamicGI.html)
 
 Allows to control the dynamic Global Illumination\.
 
@@ -668,7 +668,7 @@ Allows to control the dynamic Global Illumination\.
 |--------|------------|---------|-------------|--------|
 |`UpdateEnvironment`||void|Schedules an update of the environment cubemap\.|Dynamic GI \| Update Environment
 
-### UnityEngine\.Material
+### [UnityEngine\.Material](https://docs.unity3d.com/ScriptReference/Material.html)
 
 The material class\.
 
@@ -712,7 +712,7 @@ Supports additional properties and methods from UnityEngine\.Object.
 |`SetTextureScale`|`name` string<br>`value` UnityEngine\.Vector2|void|Sets the placement scale of texture propertyName\.|Material \| Set Texture Scale
 |`SetVector`|`name` string<br>`value` UnityEngine\.Vector4|void|Sets a named vector value\.|Material \| Set Vector
 
-### UnityEngine\.MaterialPropertyBlock
+### [UnityEngine\.MaterialPropertyBlock](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html)
 
 A block of material values to apply\.
 
@@ -720,7 +720,7 @@ A block of material values to apply\.
 |--------|------------|---------|--------|
 |`MaterialPropertyBlock`||UnityEngine\.MaterialPropertyBlock|Material Property Block \| Create Material Property Block
 
-### UnityEngine\.Mesh
+### [UnityEngine\.Mesh](https://docs.unity3d.com/ScriptReference/Mesh.html)
 
 A class that allows you to create or modify meshes\.
 
@@ -732,7 +732,7 @@ Supports additional properties and methods from UnityEngine\.Object.
 |`isReadable`|bool|Returns true if the Mesh is read/write enabled, or false if it is not\.|yes|no|Mesh \| Is Readable
 |`vertexCount`|int|Returns the number of vertices in the Mesh \(Read Only\)\.|yes|no|Mesh \| Get Vertex Count
 
-### UnityEngine\.Object
+### [UnityEngine\.Object](https://docs.unity3d.com/ScriptReference/Object.html)
 
 Base class for all objects Unity can reference\.
 
@@ -740,7 +740,7 @@ Base class for all objects Unity can reference\.
 |----------|------|-------------|:-----:|:------:|--------|
 |`name`|string|The name of the object\.|yes|no|Unity Object \| Get Name
 
-### UnityEngine\.Random
+### [UnityEngine\.Random](https://docs.unity3d.com/ScriptReference/Random.html)
 
 Easily generate random data for games\.
 
@@ -764,7 +764,7 @@ Easily generate random data for games\.
 |`Range`|`minInclusive` float<br>`maxInclusive` float|float|Returns a random float within \[minInclusive\.\.maxInclusive\] \(range is inclusive\)\.|Random \| Range
 |`Range`|`minInclusive` int<br>`maxExclusive` int|int|Return a random int within \[minInclusive\.\.maxExclusive\) \(Read Only\)\.|Random \| Range
 
-### UnityEngine\.RenderSettings
+### [UnityEngine\.RenderSettings](https://docs.unity3d.com/ScriptReference/Experimental.GlobalIllumination.RenderSettings.html)
 
 The Render Settings contain values for a range of visual elements in your Scene, like fog and ambient light\.
 
@@ -779,7 +779,7 @@ Supports additional properties and methods from UnityEngine\.Object.
 |`ambientSkyColor`|UnityEngine\.Color|Ambient lighting coming from above\.|yes|yes|Render Settings \| Get Ambient Sky Color<br>Render Settings \| Set Ambient Sky Color
 |`skybox`|UnityEngine\.Material|The global skybox to use\.|yes|yes|Render Settings \| Get Skybox<br>Render Settings \| Set Skybox
 
-### UnityEngine\.Shader
+### [UnityEngine\.Shader](https://docs.unity3d.com/ScriptReference/Shader.html)
 
 Shader scripts used for all rendering\.
 
@@ -804,19 +804,19 @@ Supports additional properties and methods from UnityEngine\.Object.
 |`SetGlobalTexture`|`name` string<br>`value` UnityEngine\.Texture|void|Sets a global texture property for all shaders\.|Shader \| Set Global Texture
 |`SetGlobalVector`|`name` string<br>`value` UnityEngine\.Vector4|void|Sets a global vector property for all shaders\.|Shader \| Set Global Vector
 
-### UnityEngine\.TextAsset
+### [UnityEngine\.TextAsset](https://docs.unity3d.com/ScriptReference/TextAsset.html)
 
 Represents a raw text or binary file asset\.
 
 Supports additional properties and methods from UnityEngine\.Object.
 
-### UnityEngine\.Texture
+### [UnityEngine\.Texture](https://docs.unity3d.com/ScriptReference/Texture.html)
 
 Base class for Texture handling\.
 
 Supports additional properties and methods from UnityEngine\.Object.
 
-### UnityEngine\.Time
+### [UnityEngine\.Time](https://docs.unity3d.com/ScriptReference/Time.html)
 
 Provides an interface to get time information from Unity\.
 
@@ -841,8 +841,6 @@ Provides an interface to get time information from Unity\.
 
 ### UnityEngine\.RectTransform\.Axis
 
-
-
 Values are mutually exclusive\.
 \(Underlying type: int)
 
@@ -850,9 +848,8 @@ Values are mutually exclusive\.
 |------|------:|
 |`Horizontal`|0
 |`Vertical`|1
-### UnityEngine\.RectTransform\.Edge
 
-
+### [UnityEngine\.RectTransform\.Edge](https://docs.unity3d.com/ScriptReference/RectTransform.Edge.html)
 
 Values are mutually exclusive\.
 \(Underlying type: int)
@@ -863,7 +860,8 @@ Values are mutually exclusive\.
 |`Right`|1
 |`Top`|2
 |`Bottom`|3
-### UnityEngine\.Space
+
+### [UnityEngine\.Space](https://docs.unity3d.com/ScriptReference/Space.html)
 
 The coordinate space in which to operate\.
 

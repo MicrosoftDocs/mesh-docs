@@ -26,13 +26,13 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 
 ### Microsoft\.Mesh\.Interactables\.AvatarTrigger
 
-Attach this script to a GameObject containing a Collider and a \(which will be automatically added\) to invoke callbacks when a local player enters or exits the zone\.
+Attach this script to a GameObject containing a Collider and a TriggerZone (which will be automatically added) to invoke callbacks when a local player enters or exits the zone\.
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
 | Property | Type | Description | Read? | Write? | Share? | Script |
 |----------|------|-------------|:-----:|:------:|:------:|--------|
-|`LocalAvatarInTrigger`|bool|Controls our trigger state \- when this changes, and event \(and telemetry, and signal\) are sent\.|yes|no|no|Avatar Trigger \| Get Local Avatar In Trigger
+|`LocalAvatarInTrigger`|bool|Controls our trigger state \- when this changes, and event (and telemetry and signal) are sent\.|yes|no|no|Avatar Trigger \| Get Local Avatar In Trigger
 
 ### Microsoft\.Mesh\.Interactables\.MeshInteractableBody
 
@@ -69,7 +69,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 
 ### Microsoft\.Mesh\.Interactables\.TravelPoint
 
-Defines the travel target points that the user can teleport to; for example for the local player spawn\. s belong to a , and are managed by \.
+Defines the travel target points that the user can teleport to; for example, for the local player spawn, TravelPoints belong to a TravelGroup and are managed by TravelPointManager.
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
@@ -79,7 +79,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 
 ### Microsoft\.Mesh\.Interactables\.TravelPointGroup
 
-Used to group a several s together\. All the TravelPoints have to be children of the group GameObject, and the name has to be unique\. Note that manually creating a is not required\. will create one automatically for you and assign travel points to it that don't already belong to any group\. However, you can create your own groups if you want to modify the name, or if you want to divide travel points into multiple groups instead of the default one created by the manager\.
+Used to group a several TravelPoints together. All the TravelPoints have to be children of the group GameObject, and the name has to be unique\. Note that manually creating a TravelPointGroup is not required. TravelPointManager will create one automatically for you and assign travel points to it that don't already belong to any group\. However, you can create your own groups if you want to modify the name, or if you want to divide travel points into multiple groups instead of the default one created by the manager\.
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
