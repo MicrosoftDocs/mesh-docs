@@ -41,12 +41,7 @@ If you're using a custom environment or there are [**Controllable** objects in y
 
 * To ensure the event runs smoothly, ensure that you customize and save customizations at least **30 minutes before** the event start time. Once someone joins the event, saving customizations is not available.
 
-> [!TIP]
-> **Who should customize an event?**
->
-> Anyone who has been invited as a **Co-organizer** can customize an event. Do this with
-> caution, knowing that any edits you make will directly alter the Event or Template
-> that event attendees will join.
+* Anyone who has been invited as a **Co-organizer** can customize an event. Do this with caution, knowing that any edits you make will directly alter the Event or Template that event attendees will join.
 
 ## How to customize an event
 
@@ -126,8 +121,6 @@ At a high level, there are three major steps to customize your event or template
 
 Use the Editor to place content in your environment and customize the content displayed in each object.
 
-:::image type="content" source="../Resources/media/environment-editor-catalog.png" alt-text="Screenshot of editor catalog":::
-
 The three objects that you can add to through the editor are **Video**, **Screenshare**, and **Image**.
 
 |Object |Controls  |Notes  |
@@ -143,6 +136,8 @@ Use the Editor to add content to your environment that can be controlled during 
     :::image type="content" source="../media/mesh-event-producer-guide/Event-customization-editor-open.png" alt-text="Screenshot of Mesh app showing Editor open with no objects added.":::
 
 1. Select the **+** plus button to open the **Catalog** of objects that you can add. Select one to add it to the environment editor.
+
+    :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-editor-catalog.png" alt-text="Screenshot of Editor catalog in the Microsoft Mesh application.":::
 
 1. Once you've added an object, you'll see it show up in the Objects window as shown below:
 
