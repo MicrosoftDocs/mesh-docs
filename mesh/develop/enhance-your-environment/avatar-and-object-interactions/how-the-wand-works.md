@@ -1,15 +1,15 @@
 ---
-title: Equippables&mdash;How the Wand works
+title: How the Equippable Wand works
 description: Take an-indepth look at the visual script that makes the Wand Equippable object work.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 5/10/2024
+ms.date: 5/15/2024
 ms.topic: overview
 keywords: interactions, interactables, equippables, throwables, avatars, grab, pick up, hold, throw, attach, activate, activation
 ---
 
-# Equippables: How the Wand works
+# How the Equippable Wand works
 
 ## Wand Overview
 
