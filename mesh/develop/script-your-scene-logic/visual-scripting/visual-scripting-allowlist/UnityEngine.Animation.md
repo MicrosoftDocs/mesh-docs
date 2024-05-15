@@ -2,7 +2,7 @@
 
 ## Scene
 
-### UnityEngine\.Animator
+### [UnityEngine\.Animator](https://docs.unity3d.com/ScriptReference/Animator.html)
 
 Interface to control the Mecanim animation system.
 
@@ -22,7 +22,7 @@ Supports additional properties and methods from UnityEngine.Behaviour, UnityEngi
 
 ## Other
 
-### UnityEngine\.AnimationClip
+### [UnityEngine\.AnimationClip](https://docs.unity3d.com/ScriptReference/AnimationClip.html)
 
 Stores keyframe based animations\.
 
