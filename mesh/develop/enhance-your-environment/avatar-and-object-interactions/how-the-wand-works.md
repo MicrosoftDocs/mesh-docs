@@ -1,34 +1,40 @@
 ---
-title: Equippables&mdash;How the Wand works
+title: How the Equippable Wand works
 description: Take an-indepth look at the visual script that makes the Wand Equippable object work.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 5/10/2024
+ms.date: 5/15/2024
 ms.topic: overview
 keywords: interactions, interactables, equippables, throwables, avatars, grab, pick up, hold, throw, attach, activate, activation
 ---
 
-# Equippables: How the Wand works
+# How the Equippable Wand works
 
 ## Wand Overview
 
-**Activation mode**: single
+> [!IMPORTANT]
+> If you're new to Equippables, we recommend that you read the article named [Hold objects realistically with Equippables](./equippables-in-detail.md) before reading this article.
 
-In the Toybox sample, certain prefabs are a type of [Interactable](./interactables.md) known as *Equippable*. When you pick up such an object, your hand and arm position adjust to hold the object in a realistic way. When you pick up the Wand, you hold it out in front of you almost chest high and the Wand displays a sparkly vapor particle effect at its tip.
+The *Wand* is one of the Equippables available in the *Toybox* package which you receive when you [download our Mesh samples from GitHub](../../getting-started/samples/download-mesh-samples.md). When you pick up the Wand, you hold it out in front of you almost chest high and the Wand displays a sparkly vapor particle effect at its tip.
 
 :::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-holding1.gif" alt-text="GIF that shows an event attendee holding the Wand in its non-activated state.":::
 
-Click to *activate* the Wand; your arm thrusts forward and the tip of the Wand emits fireworks that are generated through another particle effect. 
+To *activate* the Wand, click your left mouse button (PC) or controller trigger button (Quest). Your arm thrusts forward and the tip of the Wand emits fireworks that are generated through another particle effect. 
 
 :::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-thrusting1.gif" alt-text="GIF that shows an event attendee activating the Wand which then generates fireworks.":::
 
-The Wand's *activate type* is set to *single*. This means that as soon as it runs through its behaviors, it de-activates and your arm returns to its initial position. Click again to repeat the behaviors.
+The Wand's *activate type* is set to *single*. This means that as soon as it runs through its behaviors, the Wand *de-activates* and your arm returns to its initial position. Click again to repeat the behaviors.
+
+## The Wand in the Toybox sample
+
+The Wand prefab is already added to the scene in the [Toybox sample](../../getting-started/samples/toybox.md), so you can simply open that sample project and experiment with the Wand there.
 
 ## The Wand script graph
 
 Let's take a look at how the Wand works by examining the script graph that's attached to it.
 
+1. Open the Toybox sample and make sure you're in the *Toybox* scene.
 1. In the **Hierarchy**, select the **Wand_Prefab** GameObject.
 
     ![A screen shot of the Hierarchy with the Wand prefab highlighted.](../../../media/enhance-your-environment/equips-in-detail/021-wand-prefab-in-hierarchy.png)
@@ -47,7 +53,7 @@ The node that determines if the Wand is picked up or not is *Mesh Interactable B
 
 ![A screen shot of the isMine node.](../../../media/enhance-your-environment/equips-in-detail/010-is-mine-node.png)
 
-When an avatar picks up the Wand, its state changes. The value of *isMine* changes to "true" and that value passed to an *if* node. This causes a "pick-up sound" to trigger ...
+When an avatar picks up the Wand, its state changes. The value of *isMine* changes to "true" and that value is passed to an *if* node. This causes a "pick-up sound" to trigger ...
 
 ![A screen shot of the on state changed, if, and play mesh audio nodes.](../../../media/enhance-your-environment/equips-in-detail/024-play-mesh-audio.png)
 
