@@ -33,9 +33,6 @@ Microsoft Mesh application
 >
 > With this change, the Public build will receive updates faster and include newer updates that would've otherwise been flighted in the Preview release before going to the Public release. Each Public build will continue to be released every 3-weeks.
 >
-> **Mesh Toolkit**
->
-> The Mesh Toolkit will continue to deliver a Preview version for testing and development purposes and remain back compatible to the Public version of the Mesh application. The delivery of the Mesh Toolkit packages will continue to be released 7 days after the release of the Public Mesh application to ensure the Mesh Toolkit package is compatible with the new version of the Mesh application.
 >
 > The Immersive spaces in Teams delivery schedule is not affected by this change.
 >
@@ -62,7 +59,7 @@ Microsoft Mesh application
 
 ### Resolved product issues
 
-* In the previous release there was requirement that single room and multi-room events required the same firewall and port configurations. This issue is resolved. For info on the firewall and port requirements, please see [Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
+* In the previous release there was requirement that single room and multi-room events required the same firewall and port configurations. This issue is resolved. Single room events now align to [the standard set by Microsoft Teams](/microsoft-365/enterprise/urls-and-ip-address-ranges), and Multi-room events still require additional ports, as noted in [Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
 
 ## Version 5.2403.0
 
