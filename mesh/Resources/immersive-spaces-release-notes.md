@@ -17,7 +17,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 * More professional wardrobe styles are coming to the Avatar builder. Customize your avatar to see all the new and updated looks available to freshen up your avatar for your next meeting.
     :::image type="content" source="media/Avatar-wardrobe-update.png" alt-text="Screenshot of Avatar wardrobe updates. ":::
-
+* Immersive spaces in Teams is now supported on Mac devices for customers in the [Teams Public Preview program](/MicrosoftTeams/public-preview-doc-updates?tabs=new-teams-client) in Rings 0, 1, 1.5, 2, and 3. 
 
 ## Version 5.2403.0 (April 18, 2024)
 
