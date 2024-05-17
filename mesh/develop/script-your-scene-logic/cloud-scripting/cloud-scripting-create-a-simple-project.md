@@ -17,7 +17,7 @@ In this article, you'll create and publish a simple project using Mesh Cloud Scr
 
 ## Create a Scene with Mesh Cloud Scripting
 
-The following instructions show how to create a simple environment with a cube that rotates when a user clicks on it.
+The following instructions show how to create a simple environment with a Cube that rotates when a user clicks on it.
 
 1. Go to the article named *Create new or update an existing project*. If you're creating a new project, make sure you follow all the steps in the section named [**Create a new project**](../../build-your-basic-environment/create-a-new-project-or-update.md#create-a-new-project). If you're updating an existing project, do the same for the section named [**Update an existing project**](../../build-your-basic-environment/create-a-new-project-or-update.md#update-an-existing-project).
 
@@ -44,7 +44,7 @@ The following instructions show how to create a simple environment with a cube t
    ![A screen shot of the Cube placed as a child to Mesh Cloud Scripting.](../../../media/mesh-scripting/getting-started/013-camera.png)
 
 1. On the menu bar, select **GameObject** > **3D object** > **Cube**.
-1. In the **Hierarchy**, drag the cube to the **Mesh Cloud Scripting** object to make the cube a child of that object.
+1. In the **Hierarchy**, drag the Cube to the **Mesh Cloud Scripting** object to make the Cube a child of that object.
 
    ![A screen shot of the Cube placed as a child to Mesh Cloud Scripting.](../../../media/mesh-scripting/getting-started/004-cube.png)
 
@@ -56,7 +56,7 @@ The following instructions show how to create a simple environment with a cube t
 
    **Tip**: The **Camera** in the **MeshEmulatorSetup[NoUpload]** prefab is a child object of **AvatarHead**.
 
-   ![A screen shot of the Camera game object in the Hierarchy and the cube placed in the Scene view.](../../../media/mesh-scripting/getting-started/004-cube.png)
+   ![A screen shot of the Camera game object in the Hierarchy and the Cube placed in the Scene view.](../../../media/mesh-scripting/getting-started/004-cube.png)
 
 1. In the **Inspector**, click **Add Component** and then select [**Mesh Interactable Setup**](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
 
@@ -112,7 +112,7 @@ The following instructions show how to create a simple environment with a cube t
 ### Run your application locally
 
 1. In Unity, click Unity Editor Play button.
-1. In the **Game** window, click on the cube. Each time you click, the cube rotates on its "X" axis.
+1. In the **Game** window, click on the Cube. Each time you click, the Cube rotates on its "X" axis.
 1. When you're finished, exit Play Mode.
 
 ### Debug your application with Visual Studio (optional)
@@ -131,9 +131,9 @@ The following instructions show how to create a simple environment with a cube t
 
    ![A screen shot of the app cs file with a break point added.](../../../media/mesh-scripting/getting-started/JITSetBreakpoint.png)
 
-1. In Unity, click the cube.
+1. In Unity, click the Cube.
 
-   ![A screen shot of feedback in Unity after clicking the cube.](../../../media/mesh-scripting/getting-started/JITHitBreakpoint.png)
+   ![A screen shot of feedback in Unity after clicking the Cube.](../../../media/mesh-scripting/getting-started/JITHitBreakpoint.png)
 
 > [!NOTE]
 > By default, the application will time out after two minutes of inactivity. To increase this window, set a `"debugTimeoutSecs"` value in your manifest file (example: `"debugTimeoutSecs": "240"`).
