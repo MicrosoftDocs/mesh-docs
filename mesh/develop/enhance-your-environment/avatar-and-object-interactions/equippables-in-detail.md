@@ -4,7 +4,7 @@ description: Learn about various equippable objects and the realistic ways they 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 5/15/2024
+ms.date: 5/17/2024
 ms.topic: overview
 keywords: interactions, interactables, equippables, throwables, avatars, grab, pick up, hold, throw, attach, activate, activation
 ---
@@ -14,9 +14,6 @@ keywords: interactions, interactables, equippables, throwables, avatars, grab, p
 ## Overview
 
 When you [download our Mesh samples from GitHub](../../getting-started/samples/download-mesh-samples.md), you get a package containing prefabs that are a type of [Interactable](./interactables.md) known as *Equippable*. When you pick up an Equippable object, your avatar knows how to adjust your hand and arm position so they can hold and handle the object in a realistic way. This is called *equipping an object to your hand*.
-
-> [!NOTE]
-> The Toybox sample is where we currently showcase our Equippables prefabs, but you can use the prefabs or create your own Equippables in any project.
 
 There are eight Equippables:
 
@@ -29,31 +26,77 @@ There are eight Equippables:
 - Coffee Cup
 - Wand
 
-To see the Equippables in Unity, in the **Scene** window, navigate into the building with the fish on the front. The Equippables are on two tables against the back wall.
+## Where to find Equippables
+
+Your first step is to download the Mesh samples.
+
+1. Navigate to the [Mesh-Toolkit-Unity](../../getting-started/samples/download-mesh-samples.md) repository on GitHub.
+1. The Equippables are currently available only in the *preview* branch of the repository. Do one of the following:
+
+    **To clone the repository**:
+    1. Select the **Code** button, and then copy the URL.
+    1. Clone the repository to your local drive, and then switch to the *preview* branch.
+
+    **To download the repository as a Zip file**:
+    1. Select the branch drop-down and then choose **preview**.
+
+        ![A screen shot of the samples repository in GitHub with the preview branch selected.](../../../media/enhance-your-environment/equips-in-detail/043-samples-in-github-preview-branch.png)
+
+    1. Select the **Code** button and then choose **Download ZIP.** The downloaded Zip file will have "preview" in the title.
+
+        ![A screen shot of the samples repository in GitHub with the preview branch selected.](../../../media/enhance-your-environment/equips-in-detail/044-samples-zip.png)
+
+    1. We recommend that you create a folder on your C: drive named "Mesh Samples" and then move or copy the downloaded Mesh toolkit Zip file to that folder. This is a good name for two reasons: it's short, so it avoids running into a problem with the Windows path length limit, which is 256 characters. Also, the Zip file contains a number of Mesh samples and this keeps them all in one place.
+
+    **IMPORTANT**: Don't place the Zip file on the Windows desktop. Behind the scenes, this creates a very long path name.
+
+    1. Unzip the samples Zip file into the same folder.
+
+### View Equippables in an existing sample
+
+The Equippable prefabs have been pre-added to the Toybox sample project.
+
+1. Open the Toybox project in Unity.
+1. In the **Scene** window, navigate into the building with the fish on the front. The Equippables are on two tables against the back wall.
 
 ![A screen shot of the first set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/012-table1.png)
 
 ![A screen shot of the second set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/013-table2.png)
 
-Note that not all the objects on the tables are Equippables--the Baseball and Beach Ball are [*throwables*](./interactables.md#throwable). 
+Note that not all the objects on the tables are Equippables--the Baseball and Beach Ball are [*throwables*](./interactables.md#throwable).
 
-**To determine an object's type**:
-1. Select the object.
+**Tip**: To quickly find a prefab in the **Project** folder, in the **Hierarchy**, select the prefab, and then, in the **Inspector**, click the **Select** button.
+
+### Use Equippables in your own project
+
+1. In your project on the menu bar, select **Windows** > **Package Manager.**
+1. In the Package Manager, click the "+" button and then select **Add package from disk ...**.
+1. In your project folder, navigate to  **Packages** > **com.microsoft.mesh.toolkit.toybox**.
+
+    ![Screen shot of the contents of the Toybox package.](../../../media/enhance-your-environment/equips-in-detail/045-toybox-package.png)
+
+1. Double-click the "package.json" file. This imports the package.
+
+### Equippables in the Project window
+
+The Equippables are located in the **Project** window's **Microsoft Mesh Toolkit Toybox** > **Runtime** folder.
+
+![Screen shot of the Equippables in the Project folder.](../../../media/enhance-your-environment/equips-in-detail/046-equips-imported-from-package.png)
+
+**To add an Equippable to your scene**:
+
+1. Expand the folder that contains the Equippable prefab.
+1. Drag the Equippable from the **Project** to your scene.
+
+    ![Screen shot of an Equippable prefab in the Project folder.](../../../media/enhance-your-environment/equips-in-detail/047-equip-prefab-in-project-window.png)
+
+## Equippable object type
+
+**To determine an Equippable object's type**:
+1. In the **Hierarchy**, select the object.
 1. In the **Inspector**, navigate to the *Mesh Interactable setup* component and then view the **Object Type** property.
 
     ![A screen shot of an object's type in its Mesh Interactabe Setup component.](../../../media/enhance-your-environment/equips-in-detail/014-object-type.png)
-
-## Where to find Equippables
-
-In the **Hierarchy**, the Equippables are nested prefabs to **Equipable Interactable Samples**, which is an instance of the prefab named *toybox_Equipable_Interactable_Samples*.
-
-![A screen shot of the equippable prefabs in the Hierarchy.](../../../media/enhance-your-environment/equips-in-detail/001-equips-in-the-hierarchy.png)
-
-In the **Project** window, the Equippable prefabs live in subfolders of the *Runtime* folder. These folders start with *Toybox_* followed by the name of the prefab. For example, the Wineglass prefab is stored in the *Toybox_Wineglass* folder.
-
-![Screen shot of the wineglass prefab in the Toybox_WineGlass folder.](../../../media/enhance-your-environment/equips-in-detail/005-wineglass-location-in-folder.png)
-
-**Tip**: To quickly find a prefab in the **Project** folder, in the **Hierarchy**, select the prefab, and then, in the **Inspector**, click the **Select** button.
 
 ## Position of objects
 

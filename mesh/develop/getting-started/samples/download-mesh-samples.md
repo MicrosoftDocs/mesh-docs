@@ -4,14 +4,14 @@ description: Step-by-step instructions for downloading Mesh samples.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 10/5/2023
+ms.date: 5/17/2024
 ms.topic: overview
 keywords: Microsoft Mesh, getting started, samples, toolkit, Mesh toolkit, tutorial
 ---
 
 # Download Mesh samples
 
-The Mesh toolkit samples repo on GitHub contains a variety of Mesh sample projects to inspire you about what you can build with Microsoft Mesh.
+The Mesh toolkit samples repository on GitHub contains a variety of Mesh sample projects to inspire you about what you can build with Microsoft Mesh.
 
 1. In your browser, go to GitHub, and then navigate to the [*Mesh-Toolkit-Unity* repository](https://github.com/microsoft/Mesh-Toolkit-Unity).
 
@@ -30,6 +30,9 @@ The Mesh toolkit samples repo on GitHub contains a variety of Mesh sample projec
     ![A screenshot of the downloaded samples zip file in the Mesh 201 folder.](../../../media/get-started-developing-mesh/061-toolkit-folder.png)
 
 1. Unzip the samples Zip file into the same folder.
+
+> [!NOTE]
+> If you want to work with Equippables, you must switch to the *preview* branch of the *Mesh-toolkit-Unity* repository or, if you're downloading the repository as a Zip file, select *preview* on the GitHub page. To learn more, see [Hold objects realistically with Equippables](../..//enhance-your-environment/avatar-and-object-interactions/equippables-in-detail.md).
 
 ## Next steps
 
