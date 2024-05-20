@@ -4,16 +4,27 @@ description: Learn about the prerequsites, set up, and then get started with the
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 4/22/2024
+ms.date: 5/17/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web
 ---
 
 # Mesh 201 Tutorial Chapter 1: Overview, set up and get started
 
-If you completed the [Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md), you got up and running with creating a Mesh experience and gaining a solid understanding of Interactables, Physics, Visual Scripting, and more. In this tutorial, you build on that knowledge and learn how to use WebSlates to display web content in your experience. The tutorial includes an interactive globe; when an attendee in your experience clicks on the globe, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate. 
+If you completed the [Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md), you got up and running with creating a Mesh experience and gaining a solid understanding of Interactables, Physics, Visual Scripting, and more. In this "Mesh 201" tutorial, you build on that knowledge. You'll visit a number of *stations* and learn about the following:
 
-![A screenshot of a computer Description ](../../../media/mesh-201/066-attendees-at-globe.png)
+- How to use WebSlates to display web content in your experience.  
+- Add an interactive globe. When an attendee in your experience clicks on the globe, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate.
+
+As of mid-May 2024, the Mesh 201 tutorial has been updated to include two additional stations featuring cloud scripting. At these stations you'll learn about the following:
+
+- How you can pull data from internal or public sources into your scene. An attendee in the event will be able to  click an interactive globe to view live weather data from three cities located around the world.
+
+![A screenshot of attendess in an event clicking an interactive globe to view live weather data. ](../../../media/mesh-201/100-using-weather-data.png)
+
+- How to set up AI-powered interactions using OpenAI.
+
+![A screenshot of attendees in an event using OpenAI to ask questions about where to build wind farms.](../../../media/mesh-201/101-using-open-ai.png)
 
 The tutorial project is named *Mesh201* and is included in the Mesh toolkit.
 
@@ -29,6 +40,10 @@ The tutorial is structured as follows:
 - [Chapter 3: Load a local shared HTML file into a WebSlate](./mesh-201-03-webslate-2.md).
 
 - [Chapter 4: Load a URL from a 3D asset](./mesh-201-04-webslate-3.md).
+
+- [Chapter 5: Click an interactive globe to get live weather data](./mesh-201-05-live-weather-data.md)
+
+- [Chapter 6: Get answers to questions using Azure OpenAI](./mesh-201-06-open-ai.md
 
 ## Prerequisites
 
@@ -49,6 +64,8 @@ If you've been developing Mesh experiences for a while and are familiar not only
 [Mesh Emulation Mode](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#add-mesh-emulation-mode-capability)
 
 [Mesh Thumbnail Camera](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#add-the-mesh-thumbnail-camera)
+
+### 
 
 ### Hardware requirements
 
