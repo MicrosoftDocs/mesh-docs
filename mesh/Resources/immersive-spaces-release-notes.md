@@ -12,7 +12,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 # Immersive spaces in Teams release notes
 
 **Release notes for the Immersive spaces in Microsoft Teams on PC & Quest 2**
-
+[https://learn.microsoft.com/en-us/MicrosoftTeams/public-preview-doc-updates?tabs=new-teams-client](/MicrosoftTeams/public-preview-doc-updates?tabs=new-teams-client)
 ## Version 5.2405.0 (May 13, 2024)
 
 * More professional wardrobe styles are coming to the Avatar builder. Customize your avatar to see all the new and updated looks available to freshen up your avatar for your next meeting.
