@@ -65,7 +65,11 @@ If you've been developing Mesh experiences for a while and are familiar not only
 
 [Mesh Thumbnail Camera](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#add-the-mesh-thumbnail-camera)
 
-### 
+### Mesh Cloud Scripting Setup
+
+The last few steps in the tutorial involve building and publishing the completed project to Mesh on the web and then creating an event from it that you can run in the Mesh app. Note that this is *not* required; thanks to the *Mesh Emulator*, you can still see how the finished project will look in the Mesh app *without* building and publishing. If you do want to step through the build-and-publish process, you need some extra preparation in order for cloud scripting to work. To learn more, see the article named [Prepare for your first Mesh Cloud Scripting Project](../../script-your-scene-logic/cloud-scripting/cloud-scripting-prepare-for-your-project.md) and make sure you've addressed the prerequisites listed there.
+
+
 
 ### Hardware requirements
 
