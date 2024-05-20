@@ -19,7 +19,11 @@ In this article, you'll learn about how to prepare for your first Mesh Cloud Scr
 
 ## Prerequisites
 
-Make sure you have the following installed:
+- An M365 Office subscription with access to SharePoint, OneDrive, and M365 Calendar.
+
+- Access to and familiarity with the Azure portal.
+
+- Make sure you have the following installed:
 
 [Azure CLI 2.40.0.](/cli/azure/install-azure-cli)
 

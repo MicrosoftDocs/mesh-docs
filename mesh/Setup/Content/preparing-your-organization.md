@@ -4,7 +4,7 @@ description: Prepare your organization to adopt Mesh and its features. Organize 
 ms.service: mesh
 author: typride
 ms.author: tmilligan
-ms.date: 10/11/2023
+ms.date: 5/20/2023
 ms.topic: overview
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -194,7 +194,7 @@ Microsoft Intune, see:
 
 If your developers plan to build custom Mesh environments that will use [Mesh Cloud Scripting](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md), they will require an Azure subscription to which they can deploy their cloud scripting service. An Azure subscription is not required for environments that only use [Mesh Visual Scripting](../../develop/script-your-scene-logic/visual-scripting/visual-scripting-overview.md).
 
-See [Set up Cloud Scripting infrastructure in Azure](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md) for more details on these requirements.
+For more details on the prerequisites for Mesh Cloud Scripting, see [Prepare for your first Mesh Cloud Scripting project](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-prepare-for-your-project.md).
 
 ## Work with your organization's security team
 
