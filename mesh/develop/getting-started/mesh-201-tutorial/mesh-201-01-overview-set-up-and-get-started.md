@@ -59,17 +59,9 @@ If you've been developing Mesh experiences for a while and are familiar not only
 
 [Turn object icons off for a clearer view](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#turn-object-icons-off-for-a-clearer-view)
 
-[Choose the right layer for objects with walkable or teleportable surfaces.](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#choose-the-groundcollision-layer).
-
-[Mesh Emulation Mode](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#add-mesh-emulation-mode-capability)
+[Mesh Emulation Mode](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#using-mesh-emulation-mode)
 
 [Mesh Thumbnail Camera](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#add-the-mesh-thumbnail-camera)
-
-### Mesh Cloud Scripting Setup
-
-The last few steps in the tutorial involve building and publishing the completed project to Mesh on the web and then creating an event from it that you can run in the Mesh app. Note that this is *not* required; thanks to the *Mesh Emulator*, you can still see how the finished project will look in the Mesh app *without* building and publishing. If you do want to step through the build-and-publish process, you need some extra preparation in order for cloud scripting to work. To learn more, see the article named [Prepare for your first Mesh Cloud Scripting Project](../../script-your-scene-logic/cloud-scripting/cloud-scripting-prepare-for-your-project.md) and make sure you've addressed the prerequisites listed there.
-
-
 
 ### Hardware requirements
 
@@ -84,6 +76,10 @@ Unity version 2022.3.15 is required for this tutorial.
 [Get help installing Unity](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 
 Your installation should include modules for Android and Windows. The Mesh app works for PC and the Meta Quest 2, and Android is the operating system for the Quest.
+
+### Mesh Cloud Scripting Setup
+
+The last few steps in the tutorial involve building and publishing the completed project to Mesh on the web and then creating an event from it that you can run in the Mesh app. Note that this is *not* required; thanks to the *Mesh Emulator*, you can still see how the finished project will look in the Mesh app *without* building and publishing. If you do want to step through the build-and-publish process, you need some extra preparation in order for cloud scripting to work. To learn more, see the article named [Prepare for your first Mesh Cloud Scripting Project](../../script-your-scene-logic/cloud-scripting/cloud-scripting-prepare-for-your-project.md) and make sure you've addressed the prerequisites listed there.
 
 ## Set things up for Mesh
 
@@ -143,25 +139,20 @@ For this tutorial, the only package you need is the Mesh toolkit package, and it
 
 ## Trying out the finished project
 
-We recommend that you open the **FinishedProject** scene and run it to get an idea of what the finished project will look like. The WebSlates we'll be updating are located on a GameObject called a *Sphere Terrace*. It contains a series of stations where you'll learn how to implement Mesh features for the WebSlates. 
+We recommend that you open the **FinishedProject** scene, run it, and visit a few of the *stations* it contains to try out some of the Mesh features you'll be implementing in the tutorial. The stations are located on a GameObject called a *Sphere Terrace*. 
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/008A-sphere-terrace-wide-view.png) 
 
 1. Click the Unity Editor Play button.
-1. Stations 2 and 3 are located on one side of the Sphere Terrace. Navigate to this area and then position yourself so that you're facing the Stations. 
+1. Stations 1, 2 and 3 are located on one side of the Sphere Terrace. Navigate to this area and then position yourself so that you're facing the Stations. 
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/008B-sphere-terrace-stations-two-and-three.png) 
 
-1. Move in closer to each Station and then click their **Load** buttons and notice that this action loads HTML pages into the WebSlates.
+1. Move in closer to Stations 1 and 2 and then click their **Load** buttons. Notice that this action loads HTML pages into the WebSlates.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/070-stations-two-and-three.png) 
 
-1. Station 4 is located on the opposite side of the Sphere Terrace:
-
-    ![A screenshot of a computer Description ](../../../media/mesh-201/049-station-one-two-overhead-view.png) 
-
-    Navigate to this area and then position yourself so that you're facing the Station.
-1. Click several different spots on the **Earth** object--you can rotate it by left-clicking on it and then dragging. Notice how each time you click, a map of that area appears on the nearby WebSlate.
+1. Move in front of Station 3, and then click several different spots on the **Earth** object--you can rotate it by left-clicking on it and then dragging. Notice how each time you click, a map of that area appears on the nearby WebSlate.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/051-webslate-with-bing-maps-loaded.png) 
 
@@ -173,6 +164,8 @@ If things look a little blurry in the **Game** window when you're in Play mode, 
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/071-scale-settings.png) 
 
+![A screenshot of a computer Description ](../../../media/mesh-201/071b-scale-settings-2.png) 
+ 
 ## Next steps
 
 > [!div class="nextstepaction"]
