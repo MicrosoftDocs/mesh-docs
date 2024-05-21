@@ -38,7 +38,6 @@ Customization in Mesh is made possible with a built-in event production system t
 
     :::image type="content" source="../media/mesh-event-producer-guide/Action-groups-gif.gif" alt-text="Gif of an avatar in the Mesh app using action groups to display imaes, a video and company logo, and screenshare.":::
 
-
 ## Considerations before starting your event
 
 * To ensure the event runs smoothly, ensure that you customize and save customizations at least **30 minutes before** the event start time. Once someone joins the event, saving customizations is not available.
