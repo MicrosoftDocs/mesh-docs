@@ -72,7 +72,7 @@ Microsoft Mesh application
 
 ### Resolved product issues
 
-* In the previous release there was requirement that single room and multi-room events required the same firewall and port configurations. This issue is resolved. For info on the firewall and port requirements, please see [Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
+* In the previous release there was requirement that single room and multi-room events required the same firewall and port configurations. This issue is resolved. Single room events now align to [the standard set by Microsoft Teams](/microsoft-365/enterprise/urls-and-ip-address-ranges), and Multi-room events still require additional ports, as noted in [Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
 
 ## Version 5.2403.0
 
