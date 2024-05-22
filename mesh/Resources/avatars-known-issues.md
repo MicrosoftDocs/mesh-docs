@@ -11,6 +11,10 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes, Mesh avatars
 
 # Active known issues - Avatars in Teams
 
+## May 22, 2024
+
+* We are tracking a known issue where roughly 5% of Avatar users across endpoints are experiencing an outage for Avatars in Teams.  When affected users try to "apply" their avatar, it will attempt to load for a few seconds, show a black screen, then the following message will pop up "we've turned your avatar off for performance reasons".  A fix is in flight and all functionality is expected to resume by Thursday, May 23rd.  
+
 ## May 13, 2024
 
 * Some users may experience a change in color on their outerwear choice. Customizing the color choice is simple, and can be done so in the Avatars for Teams app. After choosing an avatar, click ‘Customize’ and navigate to the ‘Wardrobe’ section, then choose ‘Outerwear’ in the left menu. Click the ‘color wheel’ to view the color palettes and select the color of choice. Click ‘Save’ to save and apply the changes to the avatar.
