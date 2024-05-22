@@ -35,7 +35,7 @@ Microsoft Mesh application
 >
 > **Mesh Toolkit**
 >
-> The Mesh Toolkit will continue to deliver a Preview version for testing and development purposes and remain back compatible to the Public version of the Mesh application. The delivery of the Mesh Toolkit packages will continue to be released 7 days after the release of the Public Mesh application to ensure the Mesh Toolkit package is compatible with the new version of the Mesh application.
+> The Mesh Toolkit will not be releasing Preview versions following the 5.2405 version release. The delivery of the Mesh Toolkit package will continue to be released 7 days after the release of the Public Mesh application to ensure the Mesh Toolkit package is compatible with the new version of the Mesh application.
 >
 > The Immersive spaces in Teams delivery schedule is not affected by this change.
 >
@@ -59,6 +59,14 @@ Microsoft Mesh application
 * Search and filter for content in the Editor and Control panel to search for objects or controls in a Customization session for an environment or template.
 
     :::image type="content" source="media/Customization-search-objects.png" alt-text="Screenshot of the search functionality available in the Editor tool when customizing an environment in Mesh.":::
+
+* The Lakehouse icebreaker activity is localized into various languages.
+
+### Mesh on Quest
+
+* Unexpected startup failure error related to Conditional Access has been replaced with a more verbose and helpful error message:
+
+    Either your Quest device or Mesh app is currently blocked by your organization's AAD Conditional Access policies. Please contact your IT administrator for assistance.
 
 ### Resolved product issues
 

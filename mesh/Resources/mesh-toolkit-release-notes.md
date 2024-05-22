@@ -4,7 +4,7 @@ description: Mesh toolkit release notes
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
-ms.date: 4/19/2024
+ms.date: 4/22/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
@@ -23,12 +23,51 @@ These are the offerings and packages currently available. There may be slight di
 >[!Note]
 >The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh toolkit package, which releases only after the matching Mesh app is available in stores.
 
+> [!IMPORTANT]
+> Mesh Toolkit versions older than 23.15 are officially deprecated. Additionally, we will not longer be publishing Mesh Toolkit (Preview) versions following the 5.2405 version release.
+
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2403.X | 2024-4-18     |
+| Mesh toolkit               | 5.2405.X | 2024-5-22     |
 | Mesh toolkit (Preview)     | 5.2404.X | 2024-3-12     |
-| Mesh on PC/Quest           | 5.2403.X | 2024-4-12     |
-| Mesh on PC/Quest (Preview) | 5.2404.X | 2024-4-12     |
+| Mesh on PC/Quest           | 5.2405.X | 2024-4-12     |
+
+## Mesh Toolkit 5.2405.X
+
+### What's new
+
+* Cloud Scripting could report that the **scenemap** was out of date because the scene had not yet been saved. Since saving the scene is required for upload, it didn't make sense to report this as a problem. We've moved the option to save the scene to the very beginning of the steps that the uploader performs so the scene is either saved or the operation is cancelled.
+
+* Fixed bug that happened when we tried to rename an asset copy but a previous copy was already present. It also reduces the number of leftover copies left in disk after a build failure.
+
+* Fixed a bug where some scenes using default Mesh fonts caused the Toolkit to issue an unnecessary error in the console.
+
+#### Cloud scripting
+
+Cloud scripting now only generates classes for animators that are used in the Unity scene under the scope of the cloud scripting **gameobject**.  Animators that are unused, or only used in other parts of the scene, will no longer have classes generated.
+
+If your cloud scripts include references to these classes, you will encounter compile errors like this:
+
+```cshar
+error CS0246: The type or namespace name 'MyUnusedAnimator' could not be found (are you missing a using directive or an assembly reference?)  
+To resolve, ensure that the animator in question is used within the cloud scripting portion of the scene, or remove the reference from your cloud scripts.
+```
+
+Note that this change only impacts cloud scripts built with this version of Mesh Toolkit or later. Existing Mesh environment deployments are not affected.
+
+#### Visual Scripting
+
+* Visual scripts are no longer completely disabled if the environment contains a ScriptMachine with a broken ("Missing") or unassigned ("None") asset graph reference.
+
+* The new Show Input Dialog visual script node can be used to pop up a dialog box that prompts the user for text input. The text entered by the user (and the button they pressed to close the dialog) are stored in visual script variables.
+
+    :::image type="content" source="media/Visual-scripting-Show-input-dialogue.png" alt-text="Screenshot of Show Input Dialog visual scripting node in the Mesh Toolkit.":::
+
+* Fixed the String | Create node, which previously only worked in the Emulator but failed to work in standalone builds.
+
+* The script node selector (Fuzzy Finder) in the script graph UI no longer includes nodes that access inherited properties or methods through types that cannot be accessed directly.
+
+* 
 
 ## Mesh toolkit 5.2404.X (Preview)
 
@@ -49,6 +88,23 @@ These are the offerings and packages currently available. There may be slight di
     The added prefab contains an editable root and a mock UI that will not be uploaded to help developers place and design their environments. Modifying the provided mock UI under [NoUpload] will not be reflected when uploading and joining an event on Mesh. The added prefab can be sized and placed as desired on the scene.
 
     If adding multiple Screen Share components on the scene all of them will show the same screen when a user starts Screen Sharing on Mesh.
+
+* Scene validation will now happen when entering playmode instead of only before uploading the scene.
+
+* Any scene with unsaved changes will need to be saved before proceeding with an Upload. This is to prevent the loss of these changes during the operation and some bugs which may occur from differences between the scene states.
+
+* Prevent FileNotException when getting information on the asset being uploaded.
+
+* Prevent accidental renaming of the asset copy during build which may cause the operation to fail.
+
+* Reset thumbnail camera if it already exists when adding, instead of throwing an error.
+
+* Disable Build & Publish when Playmode is active as it causes the build to fail.
+
+* Fix potentially confusing error message when upload to graph fails.
+Display a progress bar during post build operations.
+
+* Uploader now skips thumbnail generation if the build has already failed.
 
 ## Mesh toolkit 5.2403.X
 
