@@ -11,10 +11,6 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 # Active known issues - Mesh
 
-## Version 5.2405.0 (May 10, 2024)
-
-
-
 ## Version 5.2403.0 (April 18, 2024)
 
 * Single room and multi-room events require the same firewall endpoint and port configurations. We are actively working to resolve this issue and apologize for any inconvenience.
