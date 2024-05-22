@@ -18,7 +18,7 @@ If you completed the [Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overvi
 
 As of mid-May 2024, the Mesh 201 tutorial has been updated to include two additional stations featuring cloud scripting. At these stations you'll learn about the following:
 
-- How you can pull data from internal or public sources into your scene. An attendee in the event will be able to  click an interactive globe to view live weather data from three cities located around the world.
+- How you can pull data from internal or public sources into your scene. An attendee in the event will be able to click an interactive globe to view live weather data from three cities located around the world.
 
 ![A screenshot of attendess in an event clicking an interactive globe to view live weather data. ](../../../media/mesh-201/100-using-weather-data.png)
 
