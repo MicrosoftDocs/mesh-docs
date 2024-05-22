@@ -27,7 +27,7 @@ These are the offerings and packages currently available. There may be slight di
 > Mesh Toolkit versions older than 23.15 are officially deprecated.
 
 > [!IMPORTANT]
-> We will not longer be publishing Mesh Toolkit (Preview) versions following the 5.2405.X version release. This means that starting with 5.2406.X there will no longer be (Preview) toolkit.
+> We will not longer be publishing Mesh Toolkit (Preview) versions following the 5.2405.X version release. This means that starting with 5.2406.X there will no longer be (Preview) toolkit. This change is also applied to the Microsoft Mesh application: the Preview version of the Microsoft Mesh application is deprecated and will no longer be released.
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
@@ -38,6 +38,8 @@ These are the offerings and packages currently available. There may be slight di
 ## Mesh Toolkit 5.2405.X
 
 ### What's new
+
+#### Mesh Toolkit Uploader
 
 * Cloud Scripting could report that the **scenemap** was out of date because the scene had not yet been saved. Since saving the scene is required for upload, it didn't make sense to report this as a problem. We've moved the option to save the scene to the very beginning of the steps that the uploader performs so the scene is either saved or the operation is cancelled.
 
@@ -121,6 +123,8 @@ Note that this change only impacts cloud scripts built with this version of Mesh
     The added prefab contains an editable root and a mock UI that will not be uploaded to help developers place and design their environments. Modifying the provided mock UI under [NoUpload] will not be reflected when uploading and joining an event on Mesh. The added prefab can be sized and placed as desired on the scene.
 
     If adding multiple Screen Share components on the scene all of them will show the same screen when a user starts Screen Sharing on Mesh.
+
+#### Mesh Toolkit Uploader
 
 * Scene validation will now happen when entering playmode instead of only before uploading the scene.
 
