@@ -18,6 +18,9 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 * More professional wardrobe styles are coming to the Avatar builder. Customize your avatar to see all the new and updated looks available to freshen up your avatar for your next meeting.
     :::image type="content" source="media/Avatar-wardrobe-update.png" alt-text="Screenshot of Avatar wardrobe updates. ":::
 
+* Seating layout names are now translated into 41 languages in the Oasis immersive environment.
+
+* All default environments have their name and description localized into 41 languages.
 
 ## Version 5.2403.0 (April 18, 2024)
 

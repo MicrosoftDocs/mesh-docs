@@ -60,7 +60,9 @@ Microsoft Mesh application
 
     :::image type="content" source="media/Customization-search-objects.png" alt-text="Screenshot of the search functionality available in the Editor tool when customizing an environment in Mesh.":::
 
-* The Lakehouse icebreaker activity is localized into various languages.
+* The Lakehouse icebreaker activity is localized into 41 languages.
+
+* All default environments have their name and description localized into 41 languages.
 
 ### Mesh on Quest
 
@@ -109,8 +111,6 @@ The following product issues have been fixed for this release:
 * Fixed an issue where visual scripts using a computed or variable reference to access `Transform` component instances in large environments could cause a spike in network traffic on environment load.
 
 * Fixed a rare issue where an isolated `TravelPoint` (not parented by a `TravelPointGroup`) in a user environment could lead to an internal error that caused visual scripts to be deactivated.
-
-
 
 * The On State Changed event node can now be used in subgraph assets without issue. Previously, attempting to use it in a subgraph asset caused a `GraphPointerException` error to be logged.
 

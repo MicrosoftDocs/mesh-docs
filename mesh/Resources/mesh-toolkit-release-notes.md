@@ -24,7 +24,10 @@ These are the offerings and packages currently available. There may be slight di
 >The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh toolkit package, which releases only after the matching Mesh app is available in stores.
 
 > [!IMPORTANT]
-> Mesh Toolkit versions older than 23.15 are officially deprecated. Additionally, we will not longer be publishing Mesh Toolkit (Preview) versions following the 5.2405 version release.
+> Mesh Toolkit versions older than 23.15 are officially deprecated.
+
+> [!IMPORTANT]
+> We will not longer be publishing Mesh Toolkit (Preview) versions following the 5.2405.X version release. This means that starting with 5.2406.X there will no longer be (Preview) toolkit.
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
@@ -67,7 +70,37 @@ Note that this change only impacts cloud scripts built with this version of Mesh
 
 * The script node selector (Fuzzy Finder) in the script graph UI no longer includes nodes that access inherited properties or methods through types that cannot be accessed directly.
 
-* 
+* Fixed sharing tags shown in the Visual Scripting graph UI for the following Mesh Interactable Body script nodes to correctly say Shared by all clients (instead of incorrectly Local to this client): 
+    Mesh Interactable Body | Is Activated
+    Mesh Interactable Body | Get Equipped At
+    Mesh Interactable Body | Is Equipped
+    Mesh Interactable Body | Get Equip Time
+
+    The functionality of these visual script nodes is unchanged. If you need a local version of these properties, you can combine them with the Mesh Interactable Body | Is Mine property.
+
+* **On State Changed** outputs can now be read even when the **On State Changed** event itself wasn't triggered.
+
+    This makes it simpler to execute the same script flow from both an **On State Changed** event as well as, for example, an **On Start event** that leads into the same script flow in order to consistently establish some scene state based on the initial state at startup.
+
+    Previously, any attempt to read **On State Changed** outputs from outside its own script flow led to an error being logged ("The value of... cannot be fetched dynamically, it must be assigned") and the offending script flow being aborted.
+
+* Script errors at runtime are now presented with more useful diagnostics in the Emulator console:
+
+    The console error now includes the name of the `ScriptMachine` and identifies the event node that triggered the offending script flow.
+
+    Clicking the error message in the Emulator console highlights the offending `ScriptMachine` in the transform hierarchy.
+
+#### Playmode
+
+* New scene validation when entering Playmode: Before 5.2405, a scene was only validated if there was an attempt to upload a scene to Mesh. Now, scene validation occurs when a user tries to enter Playmode. 
+
+    If a user attempts to enter Playmode before a scene is validated, there is a new error message:
+
+    :::image type="content" source="media/playmode-scene-validation.png" alt-text="Screenshot of scene validation error dialog when starting playmode.":::
+
+    There is also a new menu item to **Validate Active Scene**:
+
+    :::image type="content" source="media/Playmode-validate-scene-menu-item.png" alt-text="Screenshot of Validate Active Scene menu item in the Mesh Toolkit.":::
 
 ## Mesh toolkit 5.2404.X (Preview)
 
