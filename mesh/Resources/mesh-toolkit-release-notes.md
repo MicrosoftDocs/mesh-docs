@@ -72,13 +72,15 @@ Note that this change only impacts cloud scripts built with this version of Mesh
 
 * The script node selector (Fuzzy Finder) in the script graph UI no longer includes nodes that access inherited properties or methods through types that cannot be accessed directly.
 
-* Fixed sharing tags shown in the Visual Scripting graph UI for the following Mesh Interactable Body script nodes to correctly say Shared by all clients (instead of incorrectly Local to this client): 
+* Fixed sharing tags shown in the Visual Scripting graph UI for the following Mesh Interactable Body script nodes to correctly say Shared by all clients (instead of incorrectly Local to this client):
     Mesh Interactable Body | Is Activated
     Mesh Interactable Body | Get Equipped At
     Mesh Interactable Body | Is Equipped
     Mesh Interactable Body | Get Equip Time
 
     The functionality of these visual script nodes is unchanged. If you need a local version of these properties, you can combine them with the Mesh Interactable Body | Is Mine property.
+
+* Attempting to set an undeclared script variable in a `Variables` component that's "Shared by all clients" no longer causes a flood of console errors. Instead, the attempt to set the invalid variable is ignored.
 
 * **On State Changed** outputs can now be read even when the **On State Changed** event itself wasn't triggered.
 
@@ -130,11 +132,11 @@ Note that this change only impacts cloud scripts built with this version of Mesh
 
 * Any scene with unsaved changes will need to be saved before proceeding with an Upload. This is to prevent the loss of these changes during the operation and some bugs which may occur from differences between the scene states.
 
-* Prevent FileNotException when getting information on the asset being uploaded.
+* Fix to prevent FileNotException error when getting information on the asset being uploaded.
 
-* Prevent accidental renaming of the asset copy during build which may cause the operation to fail.
+* Fug fix to prevent accidental renaming of the asset copy during build which may cause the operation to fail.
 
-* Reset thumbnail camera if it already exists when adding, instead of throwing an error.
+* Fix to reset thumbnail camera if it already exists when adding, instead of throwing an error.
 
 * Disable Build & Publish when Playmode is active as it causes the build to fail.
 
