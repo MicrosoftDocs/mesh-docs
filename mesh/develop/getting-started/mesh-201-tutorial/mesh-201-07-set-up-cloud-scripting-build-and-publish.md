@@ -19,3 +19,10 @@ TBD:
 
 Point out the different prerequisites
 
+## Setting up for this station
+
+Similar to what you did for the previous station, you'll need to insert a *key* into some code that'll enable you to access the Azure OpenAI API for this station. As before, we'll do this step first so that you don't have to interrupt your workflow later on.
+
+1. TBD - See Denis video.
+
+

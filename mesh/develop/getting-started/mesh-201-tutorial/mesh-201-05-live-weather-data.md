@@ -17,7 +17,8 @@ Stations 4 and 5 are located on the other end of the Sphere Terrace from the pre
 
 ![__________________________________](../../../media/mesh-201/073-stations-4-and-5.png)
 
-===TBD leave the "try out" section out, possibly
+===============
+TBD leave the "try out" section out, possibly
 
 ## Trying out the finished project
 
@@ -33,6 +34,37 @@ Let's run the project to get an idea of what the finished version of Station 5 w
 1. To refresh the weather information, click the **Reset** button in the information text box and then click the globe again.
 
 ======================
+
+## Setting up for this station
+
+In order to complete this station, you'll need to insert a *key* into some code that'll enable you to access the weather data API. Let's do this step first so that you don't have to interrupt your workflow later on.
+
+1. Navigate to the [weatherapi.com sign-up page](https://www.weatherapi.com/signup.aspx).
+1. On that page, follow the instructions to sign up for the trial plan.
+
+![__________________________________](../../../media/mesh-201/080-weatherapi-com-signup.png)
+
+    You'll need to open the email they send you, activate your account, and then log in on their site.
+
+1. On the **Welcome Back** page, click "Pro Plus Plan".
+
+![__________________________________](../../../media/mesh-201/081-weatherapi-welcome-back-page.png)
+
+1. For this tutorial, it's not necessary to have a paid plan. Click the **Downgrade** button under "Free", and then in the dialog that pops up, click **Close**.
+
+![__________________________________](../../../media/mesh-201/082-weatherapi-pick-plan.png)
+
+1. In the left-side menu under **Dashboard**, select **API**.
+
+![__________________________________](../../../media/mesh-201/083-API.png)
+
+1. Select the **Copy** button next to the **API Key** field, then paste the key into a text editor, and then save the text file.
+
+![__________________________________](../../../media/mesh-201/084-copy-key.png)
+
+    If the copy operation is successful, the text on the *Copy* button changes to **Copied**.
+
+## Add the Mesh Cloud Scripting prefab
 
 1. Open the *StartingPoint* scene.
 1. In the **Hierarchy**, right-click in an empty space and then, in the context menu, select **Mesh Toolkit** > **Set up Cloud Scripting**.
@@ -51,30 +83,43 @@ This adds a GameObject named **Mesh Cloud Scripting** which has a component with
 
     ![__________________________________](../../../media/mesh-201/077-drag-prefabs.png)
 
-## Get a key from weatherapi.com
+This sets things up for this station *and* the next one.
 
-
-
-
-## Set up private access keys for weatherapi.com
-
-This sets things up for Stations 4 *and* 5.
+## Insert the API key for weatherapi.com
 
 1. In the **Hierarchy**, select the **Mesh Cloud Scripting** GameObject.
 1. In the **Inspector**, navigate to the **Mesh Cloud Scripting** component and then click **Open application folder**. This opens the project folder that contains the files for Mesh Cloud Scripting in the Windows File Explorer.
 
     ![__________________________________](../../../media/mesh-201/078-open-app-folder.png)
 
-1. Open the file named *appsettings.UnityLocalDev.json* in your code editor. The last four lines of code in the file contain configuration settings. Let's take a look at each line.
+1. Open the file named *appsettings.UnityLocalDev.json* in your code editor. The last four lines of code in the file contain configuration settings.
+
+    ![__________________________________](../../../media/mesh-201/085-config-code.png)
+
+    You don't need to do anything for this first line ...
 
     `"WEATHER_API_URI": "http://api.weatherapi.com/v1/current.json?key="`
 
-    This is where the weather data comes from.
+    ... but in the next line, replace the "Paste Weather API key here" text with the API key you copied earlier.
 
-    `"WEATHER_API_KEY": "Paste Weather API key here"`
+    ![__________________________________](../../../media/mesh-201/086-api-key-pasted.png)
 
-    This is where you need to paste the API weather key.
+    You can ignore the next two lines--we'll we working with those in the new chapter.
 
-  "AZURE_OPENAI_API_URI": "Paste Azure OpenAI URI here",
-  "AZURE_OPENAI_API_KEY": "Paste Azure OpenAI key here"
+1. Save and close the JSON file.
+
+## Update the csproj file
+
+1. In the File Explorer window that displays the Mesh Cloud Scripting files, open the file named *StartingPoint.csproj* in your code editor.
+
+    ![__________________________________](../../../media/mesh-201/087-csproj-file.png)
+
+1. Note that at the bottom of the file, there's a comment with a placeholder for a package reference.
+
+    ![__________________________________](../../../media/mesh-201/088-extra-pkg-reference.png)
+
+1. Co
+py the following text and paste
+
+
 
