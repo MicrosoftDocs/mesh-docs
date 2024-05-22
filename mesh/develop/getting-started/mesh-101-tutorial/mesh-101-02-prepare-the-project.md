@@ -4,7 +4,7 @@ description: Learn about adding a few basic features that are necessary for the 
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 4/22/2023
+ms.date: 5/20/2023
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
@@ -42,40 +42,19 @@ time to confirm that you've completed tutorial steps in the
 
 ### Turn object icons off for a clearer view
 
-Many objects appear in a scene with gizmos or icons displayed by default. This can help you identify the objects, but it can also clutter the view and make objects harder to see. 
+Many objects appear in a scene with 3D icons displayed by default. This can help you identify the objects, but it can also clutter the view and make objects harder to see. 
 
 ![A screen shot of the Scene view with gizmos and icons cluttering the view.](../../../media/sample-mesh-101/499-scene-with-icons-displayed.png)
 
-Let's turn off some of the icons we don't need to make the view more clear.
+Let's turn off 3D icons to make the view more clear.
 
 1. In the toolbar above the upper right corner of the **Scene** window, select the Gizmos drop-down.
 
     ![A screen shot of the gizmos drop down button.](../../../media/sample-mesh-101/503-gizmos-drop-down.png)
 
-    The first icon we'll address is the one for *TextMeshPro*. The goal here is find **TextMeshPro** in the list and then click its **icon** toggle button, which turns off the display of the icons in the **Scene** window. You could scroll down until you find TextMeshPro in the list:
+1. Slide the **3D icons** slider all the way to the left.
 
-    ![Screenshot of the gizmos list with the TextMeshPro icon highlighted.](../../../media/sample-mesh-101/image012.png)
-
-    ... but there's a faster way to find objects than scrolling.
-
-1. In the search field, type in "text." The list narrows down to objects starting with those letters.
-
-    ![Screenshot of using the search field to find the TextMeshPro object in the list.](../../../media/sample-mesh-101/500-textmeshpro-icon-button.png)
-
-1. Click the icon toggle button for **TextMeshPro** to turn off its icons.
-1. Do the same for these objects:
-
-    **AudioSource**:
-
-    ![Screenshot of using the search field to find the AudioSource object in the list.](../../../media/sample-mesh-101/501-audiosource-icon-button.png)
-
-    **Variables**:
-
-    ![Screenshot of using the search field to find the Variables object in the list.](../../../media/sample-mesh-101/502-variables-icon-button.png)
-
-    **ScriptMachine**:
-
-    ![Screenshot of using the search field to find the Variables object in the list.](../../../media/sample-mesh-101/505-scriptmachine-icon-button.png)
+    ![A screen shot of the 3D icons slider.](../../../media/sample-mesh-101/518-3d-icons-slider.png)
 
     This will make it easier to read info dialogs, labels on buttons, and more.
 
@@ -104,62 +83,25 @@ learn about Mesh Interactables and Mesh Physics.
 
 ![A screenshot of a computer Description ](../../../media/sample-mesh-101/014-chapter-4-sphere-terrace-v2.png)
 
-### Choose the GroundCollision layer
+### Using Mesh Emulation Mode
 
-For this project, we want our avatar to be able to walk around only on the floors inside the *Sphere Terrace* objects and the floor of a platform that's attached to one of the wind turbine generators. For these areas to be teleportable, they must be on the *GroundCollision* layer. Let's add the *Sphere Terrace* in Chapter 3 to the GroundCollision layer.
+When you press the Unity Editor Play button, your project automatically enters *Mesh Emulation Mode*. This is made possible by the presence of the **MeshEmulatorSetup [NoUpload]** prefab which you can view in the **Hierarchy**.
 
-1. In the **Hierarchy**, expand the **Chapter 3** GameObject.
+![A screenshot of the Mesh Emulator prefab in the Hierarchy.](../../../media/sample-mesh-101/520-mesh-emulator-in-hierarchy.png)
 
-1. Select the **Sphere Terrace** GameObject that's a child object to
-    the **Chapter3** GameObject.
+In earlier versions of the tutorial, you needed to add this prefab intentionally when you first entered Play mode. As of mid-May 2024, the prefab comes pre-loaded into the scene.
 
-    ![A screenshot of a computer Description ](../../../media/sample-mesh-101/402-sphere-terrace.png)
+In Mesh Emulation Mode, you get an approximate preview of what the content will look and feel like when it runs in the Mesh app. The Emulator prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around. By default, the Mesh Emulator is set up to give you a single view in the **Game** window. 
 
-1. In the **Inspector**, select the **Layer** drop-down and then choose
-    **GroundCollision**.
+![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../../media/sample-mesh-101/016-playmode-v2.png)
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/514-ground-collision-layer.png)
+A key feature of Mesh Emulation Mode is the ability to run multiple clients within the same process; this allows you to easily get a first impression of a multi-user scenario. In the future, you may want to have two or more views in Mesh Emulator mode. To do this, you can navigate to the Emulator's **Mesh Emulator Setup** component in the **Inspector** and then change its **Initial Screen Count** property to 2 (or more).
 
-You don't have to add the other walkable GameObjects to the GroundCollision layer---we've already done it for you.
+![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/508-emulator-component-single.png)
 
-### Add Mesh Emulation Mode capability
+For this tutorial, we'll stay with the single view.
 
-Let's add Mesh Emulation Mode capability to your project. In this mode, when you press the Unity Editor Play button, you get an approximate preview of what the content will look and feel like when it runs in the Mesh app. A key feature of Mesh Emulation Mode is the ability to run multiple clients within the same process; this allows you to easily get a first impression of a multi-user scenario.
-
-**To add Mesh Emulation Mode capability**:  
-1. Press the Unity Editor Play button. This dialog appears:
-
-    ![A screenshot of the Mesh Emulator Setup missing dialog.](../../../media/sample-mesh-101/499-emulator-setup-missing-dialog.png)
-
-1. Select the first button, **Add working MeshEmulatorSetup prefab.** The project goes into Play mode and the **MeshEmulatorSetup [NoUpload]** prefab appears in the **Hierarchy** ...
-
-    ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/514-emulator-in-hierarchy.png)
-
-    This prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around. By default, the Mesh Emulator is set up to give you two different views in the **Game** window. 
- 
-     ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/507-emulator-double-view.png)
- 
-    For this tutorial, we only want a single view, so let's change that.
-
-1. Press the Unity Editor Play button to exit Play Mode.
-1. With **MeshEmulatorSetup** still selected in the **Hierarchy**, in the **Inspector**, navigate to the **Mesh Emulator Setup** component, and then change its **Initial Screen Count** property to 1.
-
-     ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/508-emulator-component-single.png)
-
-1. Click the Unity Editor Play button. Note that you now have a single view, from the avatar's position, in the **Game** window.
-
-    ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../../media/sample-mesh-101/016-playmode-v2.png)
-
-***
-
-**Tip**: You may have noticed that the images above of Unity in Play mode have a blue tint. You can choose to have the Unity UI display a different color tint in Play mode than in Edit mode. This can help you to tell at a glance which mode you're in. To change the Play mode tint:
-
-1. On the menu bar, select **Edit** > **Preferences**.
-1. In the left-side menu, select **Colors**.
-1. Under **General**, click the **Playmode tint** color box and then select the color you want.    
-
-***
-
+1. Press the Unity Editor Play button to enter Play mode.
 1. Use the <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys to walk around inside the Sphere Terrace. You can also use the arrow keys or drag the right mouse button to pan in any direction. When you're done experimenting, click the Unity Editor Play button again to exit Play mode.
 
 ### Check the scale of your GameObjects
