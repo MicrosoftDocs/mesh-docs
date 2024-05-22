@@ -60,8 +60,6 @@ Microsoft Mesh application
 
     :::image type="content" source="media/Customization-search-objects.png" alt-text="Screenshot of the search functionality available in the Editor tool when customizing an environment in Mesh.":::
 
-* The Lakehouse icebreaker activity is localized into 41 languages.
-
 * All default environments have their name and description localized into 41 languages.
 
 ### Mesh on Quest
