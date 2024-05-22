@@ -18,16 +18,16 @@ For purposes of this document, there are two categories of users:
 
 ## Version list and dates
 
-These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
-
->[!Note]
->The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh toolkit package, which releases only after the matching Mesh app is available in stores.
-
 > [!IMPORTANT]
-> Mesh Toolkit versions older than 23.15 are officially deprecated.
+> Mesh Toolkit versions older than 5.2315 are being deprecated. We recommend an upgrade to newer versions of the Mesh Toolkit.
 
 > [!IMPORTANT]
 > We will not longer be publishing Mesh Toolkit (Preview) versions following the 5.2405.X version release. This means that starting with 5.2406.X there will no longer be (Preview) toolkit. This change is also applied to the Microsoft Mesh application: the Preview version of the Microsoft Mesh application is deprecated and will no longer be released.
+
+These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
+
+>[!Note]
+>The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load.
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
