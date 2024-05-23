@@ -71,7 +71,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     ![__________________________________](../../../media/mesh-201/075-set-up-cloud-scripting.png)
 
-This adds a GameObject named **Mesh Cloud Scripting** which has a component with the same name attached.
+    This adds a GameObject named **Mesh Cloud Scripting** which has a component with the same name attached.
 
     ![__________________________________](../../../media/mesh-201/076-cs-component.png)
 
@@ -104,7 +104,7 @@ This sets things up for this station *and* the next one.
 
     ![__________________________________](../../../media/mesh-201/086-api-key-pasted.png)
 
-    You can ignore the next two lines--we'll we working with those in the new chapter.
+    You can ignore the next two lines--we'll we working with those in the next chapter.
 
 1. Save and close the JSON file.
 
@@ -118,8 +118,73 @@ This sets things up for this station *and* the next one.
 
     ![__________________________________](../../../media/mesh-201/088-extra-pkg-reference.png)
 
-1. Co
-py the following text and paste
+1. Delete the placeholder *PackageReference* element and replace it with the line below:
+
+   	`<PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.15" />`
+
+1. Copy the following the text below and then paste it into the file as the final *ItemGroup* element.
+
+    `<ItemGroup>
+   	<Folder Include="WeatherAPI\" />
+   </ItemGroup>`
+
+   This ensures that we include some scripts in the local *WeatherAPI* folder.
+
+   <TBD image of contents of WeatherAPI folder.>
+
+    The file should now look like this:
+
+    <TBD image>
+
+1. Save the file.
+
+## TBD title
+
+1. In the File Explorer window that displays the Mesh Cloud Scripting files, open the file named *App.cs* in your code editor.
+
+    ![__________________________________](../../../media/mesh-201/089-app-dot-cs-highlighted.png)
+
+    The first thing we'll do is ensure that when an attendee clicks the globe, the displays of the weather data are refreshed.
+
+1. In the App.cs file, navigate to line 47, where'll you see a comment telling you to paste some code there.
+
+    ![__________________________________](../../../media/mesh-201/090-paste-code-comment.png)
+
+1. Copy the code below:
+
+    `var refreshButton = _app.Scene.FindFirstChild("Earth", true) as TransformNode ?? throw new NullReferenceException("Could not find Earth");
+    var refreshButtonNode = refreshButton.FindFirstChild<InteractableNode>(true);
+
+    if (refreshButtonNode != null)
+    {
+        refreshButtonNode.Selected += async (_, _) =>
+        {
+            await GetCurrentWeather(_latlong);
+        };
+    }`
+
+    ... and then paste it into the App.cs file, replacing the "Paste code here" comment on line 47.
+
+    ![__________________________________](../../../media/mesh-201/091-pasted-code.png)
+
+    The code does the following:
+    
+    - Initializes the *refreshButton* variable with the *Earth* GameObject in the scene.
+    - Initializes the *refreshButtonNode* variable with the *InteractableNode* attached to the *Earth* GameObject. (If a GameObject in the scene has a *Mesh Interactable Setup* component attached, which *Earth* does, the component adds a Mesh Cloud Scripting [InteractableNode](../../script-your-scene-logic/cloud-scripting/cloud-scripting-programmers-guide.md#interactablenode)).
+    - When an attendee clicks on *Earth*, it fires the InteractableNode's *Selected* event and calls the *GetCurrentWeather* method. This generates an [HTTP request](https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient) to get the weather data.
+
+1. Save the file.
+
+## Test your work
+
+1. In the Unity Editor, save the project and then press the Play button.
+
+1. Your avatar is spawned on the side of the Sphere Terrace that contains the first three stations. Navigate to the opposite side of the Sphere Terrace and then position yourself in front of Station 4.
+
+    ![__________________________________](../../../media/mesh-201/092-station-4-in-play-mode.png)
+
+
+1. Click various places on the **Earth** object. TBD
 
 
 
