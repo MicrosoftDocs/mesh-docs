@@ -8,7 +8,9 @@ items:
     href: mesh-201-03-webslate-2.md
   - name: 4. Load a URL from a 3D asset
     href: mesh-201-04-webslate-3.md
-
-
+  - name: 5. Get live weather data
+    href: mesh-201-05-live-weather-data.md
+  - name: 6. Get answers to questions using Azure OpenAI
+    href: mesh-201-06-open-ai.md
 
 
