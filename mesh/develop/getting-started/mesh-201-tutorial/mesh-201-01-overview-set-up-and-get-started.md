@@ -16,7 +16,7 @@ If you completed the [Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overvi
 - How to use WebSlates to display web content in your experience.  
 - Add an interactive globe. When an attendee in your experience clicks on the globe, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate.
 
-As of mid-May 2024, the Mesh 201 tutorial has been updated to include two additional stations featuring Mesh Cloud Scripting. The Mesh 101 tutorial was designed to teach attendees in your experience about wind farms, and the two new stations follow up on that theme by providing attendees with information that can help them decide where to build a new wind farm. At these stations you'll learn how to implement the following:
+As of mid-May 2024, the Mesh 201 tutorial has been updated to include two additional stations that feature Mesh Cloud Scripting. The Mesh 101 tutorial was designed to teach attendees in your experience about wind farms, and the two new stations follow up on that theme by providing attendees with information that can help them decide where to build a new wind farm. At these stations you'll learn how to implement the following:
 
 - Pull data from internal or public sources into your scene. An attendee in the event will be able to click an interactive globe to view live weather data from three cities that they are considering for the potential location of their new wind farm.
 
@@ -81,9 +81,9 @@ Your installation should include modules for Android and Windows. The Mesh app w
 
 The last few steps in the tutorial involve building and publishing the completed project to Mesh on the web and then creating an event from it that you can run in the Mesh app. Note that this is *not* required; thanks to the *Mesh Emulator*, you can still see how the finished project will look in the Mesh app *without* building and publishing. If you do want to step through the build-and-publish process, you need some extra preparation in order for cloud scripting to work. To learn more, see the article named [Prepare for your first Mesh Cloud Scripting Project](../../script-your-scene-logic/cloud-scripting/cloud-scripting-prepare-for-your-project.md) and make sure you've addressed the prerequisites listed there.
 
-## An M365 Office subscription familiarity with the Azure portal.
+## An M365 Office subscription and familiarity with the Azure portal.
 
-You'll need these in order to use OpenAI in Chapter 6.
+You'll need to use the Azure Portal in order to set up OpenAI in Chapter 6.
 
 ## Set things up for Mesh
 

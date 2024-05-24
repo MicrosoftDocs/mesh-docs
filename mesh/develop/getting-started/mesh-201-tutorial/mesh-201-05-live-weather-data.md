@@ -24,25 +24,25 @@ In order to complete this station, you'll need to insert a *key* into some code 
 1. Navigate to the [weatherapi.com sign-up page](https://www.weatherapi.com/signup.aspx).
 1. On that page, follow the instructions to sign up for the trial plan.
 
-![__________________________________](../../../media/mesh-201/080-weatherapi-com-signup.png)
+    ![__________________________________](../../../media/mesh-201/080-weatherapi-com-signup.png)
 
     You'll need to open the email they send you, activate your account, and then log in on their site.
 
 1. On the **Welcome Back** page, click "Pro Plus Plan".
 
-![__________________________________](../../../media/mesh-201/081-weatherapi-welcome-back-page.png)
+    ![__________________________________](../../../media/mesh-201/081-weatherapi-welcome-back-page.png)
 
 1. For this tutorial, it's not necessary to have a paid plan. Click the **Downgrade** button under "Free", and then in the dialog that pops up, click **Close**.
 
-![__________________________________](../../../media/mesh-201/082-weatherapi-pick-plan.png)
+    ![__________________________________](../../../media/mesh-201/082-weatherapi-pick-plan.png)
 
 1. In the left-side menu under **Dashboard**, select **API**.
 
-![__________________________________](../../../media/mesh-201/083-API.png)
+    ![__________________________________](../../../media/mesh-201/083-API.png)
 
 1. Select the **Copy** button next to the **API Key** field, then paste the key into a text editor, and then save the text file.
 
-![__________________________________](../../../media/mesh-201/084-copy-key.png)
+    ![__________________________________](../../../media/mesh-201/084-copy-key.png)
 
     If the copy operation is successful, the text on the *Copy* button changes to **Copied**.
 
@@ -67,7 +67,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     This prefab provides the text information box and a nested prefab named **Earth** that's the model for the globe.
 
-        ![__________________________________](../../../media/mesh-201/103-earth-model.png)
+    ![__________________________________](../../../media/mesh-201/103-earth-model.png)
 
 ## Insert the API key for weatherapi.com
 
@@ -128,7 +128,8 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
 1. Copy the code below:
 
-    `var refreshButton = _app.Scene.FindFirstChild("Earth", true) as TransformNode ?? throw new NullReferenceException("Could not find Earth");
+```
+    var refreshButton = _app.Scene.FindFirstChild("Earth", true) as TransformNode ?? throw new NullReferenceException("Could not find Earth");
     var refreshButtonNode = refreshButton.FindFirstChild<InteractableNode>(true);
 
     if (refreshButtonNode != null)
@@ -137,7 +138,8 @@ In order to complete this station, you'll need to insert a *key* into some code 
         {
             await GetCurrentWeather(_latlong);
         };
-    }`
+    }
+```
 
     ... and then paste it into the App.cs file, replacing the "Paste code here" comment on line 47.
 
