@@ -33,6 +33,9 @@ Microsoft Mesh application
 >
 > With this change, the Public build will receive updates faster and include newer updates that would've otherwise been flighted in the Preview release before going to the Public release. Each Public build will continue to be released every 3-weeks.
 >
+> **Mesh Toolkit**
+>
+> The Mesh Toolkit will not be releasing Preview versions following the 5.2405 version release. The delivery of the Mesh Toolkit package will continue to be released 7 days after the release of the Public Mesh application to ensure the Mesh Toolkit package is compatible with the new version of the Mesh application.
 >
 > The Immersive spaces in Teams delivery schedule is not affected by this change.
 >
@@ -57,9 +60,19 @@ Microsoft Mesh application
 
     :::image type="content" source="media/Customization-search-objects.png" alt-text="Screenshot of the search functionality available in the Editor tool when customizing an environment in Mesh.":::
 
+* All default environments have their name and description localized into 41 languages.
+
+### Mesh on Quest
+
+* Unexpected startup failure error related to Conditional Access has been replaced with a more verbose and helpful error message:
+
+    Either your Quest device or Mesh app is currently blocked by your organization's AAD Conditional Access policies. Please contact your IT administrator for assistance.
+
 ### Resolved product issues
 
-* In the previous release there was requirement that single room and multi-room events required the same firewall and port configurations. This issue is resolved. Single room events now align to [the standard set by Microsoft Teams](/microsoft-365/enterprise/urls-and-ip-address-ranges), and Multi-room events still require additional ports, as noted in [Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
+* In the previous release, there was requirement that single room and multi-room events required the same firewall and port configurations. This issue is resolved. Single room events now align to [the standard set by Microsoft Teams](/microsoft-365/enterprise/urls-and-ip-address-ranges), and Multi-room events still require additional ports, as noted in [Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
+
+* In the previous release, there was a slight latency in audio when joining an event. This has been resolved. (29657)
 
 ## Version 5.2403.0
 
@@ -98,8 +111,6 @@ The following product issues have been fixed for this release:
 * Fixed an issue where visual scripts using a computed or variable reference to access `Transform` component instances in large environments could cause a spike in network traffic on environment load.
 
 * Fixed a rare issue where an isolated `TravelPoint` (not parented by a `TravelPointGroup`) in a user environment could lead to an internal error that caused visual scripts to be deactivated.
-
-
 
 * The On State Changed event node can now be used in subgraph assets without issue. Previously, attempting to use it in a subgraph asset caused a `GraphPointerException` error to be logged.
 

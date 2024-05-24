@@ -40,12 +40,15 @@ The following instructions show how to create a simple environment with a Cube t
 
 1. [Set up Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md). Make sure you add a GameObject to the scene that can act as a floor and set it to the *GroundCollision* layer.
 1. When you set up Mesh Emulation Mode, it adds the prefab *MeshEmulatorSetup[NoUpoload]* to the scene which contains the camera that you'll be using from this point on. You no longer need the default *Main camera* GameObject; delete it.
+
+   ![A screen shot of the Cube placed as a child to Mesh Cloud Scripting.](../../../media/mesh-scripting/getting-started/013-camera.png)
+
 1. On the menu bar, select **GameObject** > **3D object** > **Cube**.
 1. In the **Hierarchy**, drag the Cube to the **Mesh Cloud Scripting** object to make the Cube a child of that object.
 
    ![A screen shot of the Cube placed as a child to Mesh Cloud Scripting.](../../../media/mesh-scripting/getting-started/004-cube.png)
 
-1. In the **Inspector**, navigate to the **Transform** component and then change the Cube's **Position** and **Rotation** values to the following:
+1. With the Cube selected, in the **Inspector**, navigate to the **Transform** component and then change the Cube's **Position** and **Rotation** values to the following:
 
    **Position**: X = 0.1, Y = 1.5, Z = 3.3.  
 
