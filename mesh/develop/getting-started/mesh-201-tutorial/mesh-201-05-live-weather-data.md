@@ -169,4 +169,4 @@ In order to complete this station, you'll need to insert a *key* into some code 
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Chapter 5: Get answers to questions using Azure OpenAI](./mesh-201-06-open-ai.md)
+> [Chapter 6: Get answers to questions using Azure OpenAI](./mesh-201-06-open-ai.md)
