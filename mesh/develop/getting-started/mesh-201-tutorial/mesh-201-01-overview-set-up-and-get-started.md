@@ -20,11 +20,11 @@ As of mid-May 2024, the Mesh 201 tutorial has been updated to include two additi
 
 - Pull data from internal or public sources into your scene. An attendee in the event will be able to click an interactive globe to view live weather data from three cities that they are considering for the potential location of their new wind farm.
 
-![A screenshot of attendess in an event clicking an interactive globe to view live weather data. ](../../../media/mesh-201/100-using-weather-data.png)
+    ![A screenshot of attendess in an event clicking an interactive globe to view live weather data. ](../../../media/mesh-201/100-using-weather-data.png)
 
 - Set up AI-powered interactions using OpenAI. An attendee can click an "Info" button and ask questions about the best locations for wind farms. You, the developer, will add code that will provide the OpenAI LLM (Large Language Model) with some context for the wind farm-related questions attendees will likely be asking.
 
-![A screenshot of attendees in an event using OpenAI to ask questions about where to build wind farms.](../../../media/mesh-201/101-using-open-ai.png)
+    ![A screenshot of attendees in an event using OpenAI to ask questions about where to build wind farms.](../../../media/mesh-201/101-using-open-ai.png)
 
 The tutorial project is named *Mesh201* and is included in the Mesh toolkit.
 
