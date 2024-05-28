@@ -17,12 +17,21 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | May 23       | 5.2406.XX    |
 | 2024         | May 13       | 5.2405.XX    |
 | 2024         | April 18     | 5.2403.XX+   |
 | 2024         | April 9      | 5.2403.XX    |
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2406.0
+
+## Resolve product issues
+
+* Various bug fixes and reliability improvements.
+
+* After leaving a meeting and rejoining, shared video playback is synced to all users including the broadcaster. (52849)
 
 ## Version 5.2405.0
 

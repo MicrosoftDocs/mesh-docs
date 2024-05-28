@@ -76,6 +76,9 @@ The overall flow of creating an event in Mesh on the web is:
 
     :::image type="content" source="../media/events-guide-create-event/5-select-environment-from-collections-2.png" alt-text="Screenshot showing environment selection made from collections in Mesh on the web":::
 
+    > [!NOTE]
+    > If you are unable to create an event, there may be [a policy that blocks your account from creating events](../Resources/mesh-troubleshooting.md#why-cant-i-create-an-event-or-adjust-the-sensitivity-label-for-an-event).
+
 1. (Optional) Upload an event cover image.
 
 Great job! You've now created your event. Co-organizers and invitees will now see the event in their Outlook and Teams calendars. Select **Customize now** to open the Mesh app and [customize your event](customize-event.md) by adding objects to your environment to help with your meeting.
