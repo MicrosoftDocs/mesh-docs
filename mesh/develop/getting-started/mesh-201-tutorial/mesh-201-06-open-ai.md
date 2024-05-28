@@ -32,11 +32,9 @@ In order to complete this station, you'll need to visit the Azure Portal and the
 
 1. On the **Basics** page under **Product Details**, click the **Subscription** drop-down and then select _______TBD.
 
-<image>
-
 1. For **Resource group**, click **Create new** and then enter a name for the Resource Group. For this example, we'll enter ______TBD.
 
-TBD: Do we need to include something about the "request/wait 24 hours" message that appeared for me?
+    TBD: Do we need to include something about the "request/wait 24 hours" message that appeared for me?
 
 1. Instance details, Region: _____ TBD.
 
@@ -56,11 +54,11 @@ We can skip this page--click **Next**. TBD--should we skip it?
 
 **Review and Submit page**
 
-- Review the information on this page and then click the **Create** button.
+Review the information on this page and then click the **Create** button.
 
-    The resource deploys and you should see a message saying that the deployment is in progress. Eventually, you'll see a **Deployment is complete** page.
+The resource deploys and you should see a message saying that the deployment is in progress. Eventually, you'll see a **Deployment is complete** page.
 
-    ![__________________________________](../../../media/mesh-201/112-deployment-is-complete-page.png.png)
+![__________________________________](../../../media/mesh-201/112-deployment-is-complete-page.png.png)
 
 ### Create the deployment in Azure OpenAI Studio
 
