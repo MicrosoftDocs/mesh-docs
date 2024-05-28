@@ -15,9 +15,9 @@ In this chapter, we move on to the fifth and final station where where you'll le
 
 ## Setting up for this station
 
-In order to complete this station, you'll need to visit the Azure Portal and then get a *URI* and a *key* for your tenant. Later, you'll insert the key into some code that'll enable you to call Azure OpenAI. Let's do this step now so that you don't have to interrupt your workflow later on.
+In order to complete this station, you'll need to visit the Azure Portal and then get a *URI* (also called "Endpoint") and a *key* for your tenant. Later, you'll insert the key into some code that'll enable you to call Azure OpenAI. Let's do this step now so that you don't have to interrupt your workflow later on.
 
-### Get the URI and key from Azure Portal
+### Create an Azure OpenAI resource
 
 1. In your browser, navigate to the [Azure Portal](https://azure.microsoft.com/en-us/get-started/azure-portal/) and then log in.
 1. In the Search box at the top of the window, type in "azure openai" and then press the Enter key. This takes you to the **Azure AI services | Azure OpenAI** page.
@@ -28,23 +28,21 @@ In order to complete this station, you'll need to visit the Azure Portal and the
 
     ![__________________________________](../../../media/mesh-201/110-create-button.png)
 
-1. On the **Create Azure OpenAI** page under **Product Details**, click the **Subscription** drop-down and then select _______TBD.
+**Basics page**
+
+1. On the **Basics** page under **Product Details**, click the **Subscription** drop-down and then select _______TBD.
 
 <image>
 
 1. For **Resource group**, click **Create new** and then enter a name for the Resource Group. For this example, we'll enter ______TBD.
 
-1. Click the **Pricing tier** drop-down and then select _________________TBD.
-
-TBD: It looks like the reason got that "request/wait 24 hours" message was explained in this message:
+TBD: Do we need to include something about the "request/wait 24 hours" message that appeared for me?
 
 1. Instance details, Region: _____ TBD.
 
-1. Instance details, Name: ______ TBD.
+1. In the **Name** text box, type in a name.
 
-1. Pricing Tier: _____ TBD. (I got "Standard S0").
-
-1. Click **Next** to go to the next page.
+1. Click the **Pricing tier** drop-down and then select _________________TBD.
 
 **Network Page**
 
@@ -60,11 +58,11 @@ We can skip this page--click **Next**. TBD--should we skip it?
 
 - Review the information on this page and then click the **Create** button.
 
-<image>
+    The resource deploys and you should see a message saying that the deployment is in progress. Eventually, you'll see a **Deployment is complete** page.
 
-    The resource deploys and you should eventually get a message saying the deployment was successful. This takes you to the **Deployment is complete** page.
+    ![__________________________________](../../../media/mesh-201/112-deployment-is-complete-page.png.png)
 
-    ![__________________________________](../../../media/mesh-201/111-network-page.png)
+### Create the deployment in Azure OpenAI Studio
 
 1. Click the **Go to Resource** button.
 
