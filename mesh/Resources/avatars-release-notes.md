@@ -22,6 +22,10 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 | Mobile | Teams mobile | View other avatars only |
 | VDI | Teams | View other avatars only |
 
+## May 23, 2024
+
+A bug that caused roughly 5% of users to experience an outage for Avatars in Teams has been fixed.
+
 ## May 13, 2024
 
 ### More professional wardrobe styles for Avatars
