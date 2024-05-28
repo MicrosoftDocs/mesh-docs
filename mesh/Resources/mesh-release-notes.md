@@ -31,6 +31,8 @@ Microsoft Mesh application
 
 * Various bug fixes and reliability improvements.
 
+* After leaving a meeting and rejoining, shared video playback is synced to all users including the broadcaster. (52849)
+
 ## Version 5.2405.0
 
 > [!IMPORTANT]
