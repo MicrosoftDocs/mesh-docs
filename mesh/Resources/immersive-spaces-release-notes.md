@@ -15,7 +15,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.2406.0 (May 23, 2024)
 
-* Immersive spaces in Teams is now supported on Mac devices for customers in Rings 0, 1, 1.5, 2, 3, 3.6, 3.9, and Public ring 4.
+* For returning users, the pre-join screen with avatar selection and customization is skipped to make the experience of joining the immersive space faster.
 
 ## Version 5.2405.0 (May 13, 2024)
 
