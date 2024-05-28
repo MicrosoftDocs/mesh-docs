@@ -19,7 +19,100 @@ In order to complete this station, you'll need to visit the Azure Portal and the
 
 ### Get the URI and key from Azure Portal
 
-TBD
+1. In your browser, navigate to the [Azure Portal](https://azure.microsoft.com/en-us/get-started/azure-portal/) and then log in.
+1. In the Search box at the top of the window, type in "azure openai" and then press the Enter key. This takes you to the **Azure AI services | Azure OpenAI** page.
+
+    ![__________________________________](../../../media/mesh-201/109-openai-page-in-azure-portal.png)
+
+1. Click the **Create** button.
+
+    ![__________________________________](../../../media/mesh-201/110-create-button.png)
+
+1. On the **Create Azure OpenAI** page under **Product Details**, click the **Subscription** drop-down and then select _______TBD.
+
+<image>
+
+1. For **Resource group**, click **Create new** and then enter a name for the Resource Group. For this example, we'll enter ______TBD.
+
+1. Click the **Pricing tier** drop-down and then select _________________TBD.
+
+TBD: It looks like the reason got that "request/wait 24 hours" message was explained in this message:
+
+1. Instance details, Region: _____ TBD.
+
+1. Instance details, Name: ______ TBD.
+
+1. Pricing Tier: _____ TBD. (I got "Standard S0").
+
+1. Click **Next** to go to the next page.
+
+**Network Page**
+
+1. On the **Network** page, select _______ TBD (three options--which one should I choose?).
+
+    ![__________________________________](../../../media/mesh-201/111-network-page.png)
+
+**Tags page**
+
+We can skip this page--click **Next**. TBD--should we skip it?
+
+**Review and Submit page**
+
+- Review the information on this page and then click the **Create** button.
+
+<image>
+
+    The resource deploys and you should eventually get a message saying the deployment was successful. This takes you to the **Deployment is complete** page.
+
+    ![__________________________________](../../../media/mesh-201/111-network-page.png)
+
+1. Click the **Go to Resource** button.
+
+1. On the Resource page, click **Go to Azure OpenAI Studio**.
+
+    ![__________________________________](../../../media/mesh-201/113-resource-page.png)
+
+1. In the left-side menu under **Management**, select **Deployments**.
+
+    ![__________________________________](../../../media/mesh-201/114-deployments.png)
+
+1. Select **Create new deployment**.
+
+1. Click the **Select a model** drop-down and then choose "gpt-35-turbo".
+
+1. For **Model version**, keep the selected option: "Auto-update to default". TBD
+
+1. For **Deployment type**, keep the selected option: "Standard".
+
+1. In the **Deployment name** text box, type in a name. For this tutorial, we'll use "gpt-35-turbo".
+
+1. We'll keep the **Content Filter** setting of "Default."
+
+1. For **Advanced options**, ________________. TBD: do we need to do anything here?
+
+    ![__________________________________](../../../media/mesh-201/115-deployment-advanced-options.png)
+
+    If the deployment is successful, you'll see a message telling you this.
+
+    ![__________________________________](../../../media/mesh-201/016-deployment-successful.png)
+
+### Copy the URI and key
+
+1. Navigate back to the Azure main page, and then under **Resources**, select the resource you created.
+
+    ![__________________________________](../../../media/mesh-201/116-azure-main-page.png)
+
+1. On the Resource page in the left-size menu, select **Keys and Endpoint**.
+
+    ![__________________________________](../../../media/mesh-201/117-keys-and-endpoints.png)
+
+1. On the **Keys and Endpoint** page, click the "Copy to clipboard" button for **KEY 1** *or* *KEY 2* (it doesn't matter which one) and then paste it into a text file using Windows Notepad or another text editor.
+
+    ![__________________________________](../../../media/mesh-201/118-copy-key-and-endpoint.png)
+
+1. Click the "Copy to clipboard" button for **Endpoint** and paste it into the same text file.
+
+1. Save the text file. You'll need these two pieces of information later in the tutorial.
 
 ## Add the prefab for Station 5
 
