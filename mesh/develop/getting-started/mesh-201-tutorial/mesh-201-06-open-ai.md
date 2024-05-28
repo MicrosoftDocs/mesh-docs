@@ -58,7 +58,7 @@ Review the information on this page and then click the **Create** button.
 
 The resource deploys and you should see a message saying that the deployment is in progress. Eventually, you'll see a **Deployment is complete** page.
 
-![__________________________________](../../../media/mesh-201/112-deployment-is-complete-page.png.png)
+![__________________________________](../../../media/mesh-201/112-deployment-is-complete-page.png)
 
 ### Create the deployment in Azure OpenAI Studio
 
