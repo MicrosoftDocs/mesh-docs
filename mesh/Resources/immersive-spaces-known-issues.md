@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 # Active known issues and limitations - Immersive Spaces in Teams
 
-## Version 5.2403.0 (April 18, 20)
+## Version 5.2403.0 (April 18, 20) -
 
 ### Seat selection
 
