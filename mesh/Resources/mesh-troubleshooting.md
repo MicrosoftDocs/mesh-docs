@@ -51,6 +51,10 @@ We currently do not support this feature.
 
 Mesh is a part of M365, and it operates within the [M365 compliance framework](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview), including with respect to security and privacy commitments.
 
+### Why can't I create an event or adjust the Sensitivity label for an event?
+
+In some cases, your company may have policies that block a user from downloading content from a SharePoint site. Due to Mesh using SharePoint to download resources for Mesh events, any policies that block this ability may prevent a user from creating event, especially if a Sensitivity label is applied to Events. For more info, see [Block download policy for SharePoint sites and OneDrive - SharePoint in Microsoft 365 | Microsoft Learn](/sharepoint/block-download-from-sites?source=recommendations) and [Use sensitivity labels with Microsoft Teams, Microsoft 365 Groups, and SharePoint sites | Microsoft Learn](/purview/sensitivity-labels-teams-groups-sites).
+
 ### How to download Mesh on Quest 2 via App Lab
 
 Microsoft Mesh for Meta Quest devices is available through AppLab.
