@@ -126,22 +126,22 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     ![__________________________________](../../../media/mesh-201/090-paste-code-comment.png)
 
-1. Copy the code below:
+1. Copy the code below.
 
-```
-    var refreshButton = _app.Scene.FindFirstChild("Earth", true) as TransformNode ?? throw new NullReferenceException("Could not find Earth");
-    var refreshButtonNode = refreshButton.FindFirstChild<InteractableNode>(true);
+    ```
+        var refreshButton = _app.Scene.FindFirstChild("Earth", true) as TransformNode ?? throw new NullReferenceException("Could not find Earth");
+        var refreshButtonNode = refreshButton.FindFirstChild<InteractableNode>(true);
 
-    if (refreshButtonNode != null)
-    {
-        refreshButtonNode.Selected += async (_, _) =>
+        if (refreshButtonNode != null)
         {
-            await GetCurrentWeather(_latlong);
-        };
-    }
-```
+            refreshButtonNode.Selected += async (_, _) =>
+            {
+                await GetCurrentWeather(_latlong);
+            };
+        }
+    ```
 
-    ... and then paste it into the App.cs file, replacing the "Paste code here" comment on line 47.
+1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 47.
 
     ![__________________________________](../../../media/mesh-201/091-pasted-code.png)
 

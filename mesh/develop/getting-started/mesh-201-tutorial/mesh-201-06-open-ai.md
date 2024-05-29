@@ -130,29 +130,29 @@ The resource deploys and you should see a message saying that the deployment is 
     ![__________________________________](../../../media/mesh-201/094-paste-code-here.png)
 
 1. Copy the code below:
-```
-    await _app.ShowInputDialogToParticipantAsync("Ask Azure OpenAI", args.Participant).ContinueWith(async (response) =>
-    {
-        try
+    ```
+        await _app.ShowInputDialogToParticipantAsync("Ask Azure OpenAI", args.Participant).ContinueWith(async (response) =>
         {
-            if (response.Exception != null)
+            try
             {
-                throw response.Exception.InnerException ?? response.Exception;
+                if (response.Exception != null)
+                {
+                    throw response.Exception.InnerException ?? response.Exception;
+                }
+
+                string participantInput = response.Result;
+
+                // Paste code here
+
+                // Wait for a response from OpenAI based on the user's message
+                // Paste code here
             }
-
-            string participantInput = response.Result;
-
-            // Paste code here
-
-            // Wait for a response from OpenAI based on the user's message
-            // Paste code here
-        }
-        catch (Exception ex)
-        {
-            _logger.LogCritical($"Exception during OpenAI request: {ex.Message}");
-        }
-    }, TaskScheduler.Default);
-```
+            catch (Exception ex)
+            {
+                _logger.LogCritical($"Exception during OpenAI request: {ex.Message}");
+            }
+        }, TaskScheduler.Default);
+    ```
 
 1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 72.
 
@@ -170,25 +170,25 @@ The code below sends ChatGPT the result of the input dialog with instructions on
 
 1. Copy the code below:
 
-```
-    var chatCompletionsOptions = new ChatCompletionsOptions()
-    {
-        DeploymentName = "gpt-35-turbo", // Use DeploymentName for "model" with non-Azure clients
-        Messages =
+    ```
+        var chatCompletionsOptions = new ChatCompletionsOptions()
         {
-            // The system message represents instructions or other guidance about how the assistant should behave
-            new ChatRequestSystemMessage(
-                "You are a helpful assistant." +
-                "You're part of a developer sample for the Mesh Toolkit." +
-                "Use brief answers, less than 1 paragraph." +
-                "You can suggest a good location for a wind farm based on current and historical weather data." +
-                "We're looking at globe with the current weather data displayed for each of these locations:  Lagos Nigeria, Redmond WA USA, Dublin Ireland" +
-                "Current weather conditions for these locations:" + _currentWeatherText
-                ),
-            new ChatRequestUserMessage(participantInput),
-        }
-    };
-```
+            DeploymentName = "gpt-35-turbo", // Use DeploymentName for "model" with non-Azure clients
+            Messages =
+            {
+                // The system message represents instructions or other guidance about how the assistant should behave
+                new ChatRequestSystemMessage(
+                    "You are a helpful assistant." +
+                    "You're part of a developer sample for the Mesh Toolkit." +
+                    "Use brief answers, less than 1 paragraph." +
+                    "You can suggest a good location for a wind farm based on current and historical weather data." +
+                    "We're looking at globe with the current weather data displayed for each of these locations:  Lagos Nigeria, Redmond WA USA, Dublin Ireland" +
+                    "Current weather conditions for these locations:" + _currentWeatherText
+                    ),
+                new ChatRequestUserMessage(participantInput),
+            }
+        };
+    ```
 
 1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 83.
 
@@ -206,12 +206,12 @@ The code below sends ChatGPT the result of the input dialog with instructions on
 
 1. Copy the code below:
 
-```
-        var aiResponse = await _openAIClient.GetChatCompletionsAsync(chatCompletionsOptions);
+    ```
+            var aiResponse = await _openAIClient.GetChatCompletionsAsync(chatCompletionsOptions);
 
-        // Display the first response from the LLM
-        var responseMessage = aiResponse.Value.Choices[0].Message;
-        _app.ShowMessageToParticipant($"<i>You asked: {participantInput}</i>\n\nResponse: {responseMessage.Content}", args.Participant);
+            // Display the first response from the LLM
+            var responseMessage = aiResponse.Value.Choices[0].Message;
+            _app.ShowMessageToParticipant($"<i>You asked: {participantInput}</i>\n\nResponse: {responseMessage.Content}", args.Participant);
 ```
 
 1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 103.
