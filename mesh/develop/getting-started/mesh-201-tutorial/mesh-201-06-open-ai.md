@@ -4,7 +4,7 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 5/17/2024
+ms.date: 5/28/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
@@ -28,33 +28,17 @@ In order to complete this station, you'll need to visit the Azure Portal and the
 
     ![__________________________________](../../../media/mesh-201/110-create-button.png)
 
-**Basics page**
+**IMPORTANT**: For many of the settings detailed below, we don't make a specific recommendation. You should choose the options that make the most sense for you and your organization. 
 
-1. On the **Basics** page under **Product Details**, click the **Subscription** drop-down and then select _______TBD.
+1. On the **Basics page**, create names where requested, and choose the options you want for **Subscription**, **Region**, and **Pricing tier**.
 
-1. For **Resource group**, click **Create new** and then enter a name for the Resource Group. For this example, we'll enter ______TBD.
-
-    TBD: Do we need to include something about the "request/wait 24 hours" message that appeared for me?
-
-1. Instance details, Region: _____ TBD.
-
-1. In the **Name** text box, type in a name.
-
-1. Click the **Pricing tier** drop-down and then select _________________TBD.
-
-**Network Page**
-
-1. On the **Network** page, select _______ TBD (three options--which one should I choose?).
+1. On the **Network** page, choose the option you want.
 
     ![__________________________________](../../../media/mesh-201/111-network-page.png)
 
-**Tags page**
+1. On the **Tags page**, you can add tags or skip these options.
 
-We can skip this page--click **Next**. TBD--should we skip it?
-
-**Review and Submit page**
-
-Review the information on this page and then click the **Create** button.
+1. On the **Review and Submit page**, review the information and then click the **Create** button.
 
 The resource deploys and you should see a message saying that the deployment is in progress. Eventually, you'll see a **Deployment is complete** page.
 
@@ -74,23 +58,9 @@ The resource deploys and you should see a message saying that the deployment is 
 
 1. Select **Create new deployment**.
 
-1. Click the **Select a model** drop-down and then choose "gpt-35-turbo".
+1. Click the **Select a model** drop-down and then choose "gpt-35-turbo". Note that, if you prefer, you can choose a different model.
 
-1. For **Model version**, keep the selected option: "Auto-update to default". TBD
-
-1. For **Deployment type**, keep the selected option: "Standard".
-
-1. In the **Deployment name** text box, type in a name. For this tutorial, we'll use "gpt-35-turbo".
-
-1. We'll keep the **Content Filter** setting of "Default."
-
-1. For **Advanced options**, ________________. TBD: do we need to do anything here?
-
-    ![__________________________________](../../../media/mesh-201/115-deployment-advanced-options.png)
-
-    If the deployment is successful, you'll see a message telling you this.
-
-    ![__________________________________](../../../media/mesh-201/016-deployment-successful.png)
+1. For the other settings, choose the names and options that make the most sense for you and your organization.
 
 ### Copy the URI and key
 

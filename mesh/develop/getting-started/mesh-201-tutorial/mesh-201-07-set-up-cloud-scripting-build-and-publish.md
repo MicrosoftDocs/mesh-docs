@@ -1,6 +1,6 @@
 ---
 title: Mesh 201 Set up cloud scripting and build and publish
-description: Learn how to set up a question and answer dialog that uses Azure OpenAI.
+description: Learn how to set up cloud scripting and build and publish.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates
 
 # Set up cloud scripting and build and publish
 
-TBD: 
+TBD:
 --get a subscription (if needed)
 --To to Azure portal, get sub. ID, region, location
 --go through B&P process with cs info added
