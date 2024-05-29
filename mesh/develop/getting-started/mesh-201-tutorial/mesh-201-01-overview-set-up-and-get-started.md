@@ -4,16 +4,27 @@ description: Learn about the prerequsites, set up, and then get started with the
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 4/22/2024
+ms.date: 5/23/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web
 ---
 
 # Mesh 201 Tutorial Chapter 1: Overview, set up and get started
 
-If you completed the [Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md), you got up and running with creating a Mesh experience and gaining a solid understanding of Interactables, Physics, Visual Scripting, and more. In this tutorial, you build on that knowledge and learn how to use WebSlates to display web content in your experience. The tutorial includes an interactive globe; when an attendee in your experience clicks on the globe, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate. 
+If you completed the [Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md), you got up and running with creating a Mesh experience and gaining a solid understanding of Interactables, Physics, Visual Scripting, and more. In this "Mesh 201" tutorial, you build on that knowledge. You'll visit a number of *stations* and learn about the following:
 
-![A screenshot of a computer Description ](../../../media/mesh-201/066-attendees-at-globe.png)
+- How to use WebSlates to display web content in your experience.  
+- Add an interactive globe. When an attendee in your experience clicks on the globe, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate.
+
+As of mid-May 2024, the Mesh 201 tutorial has been updated to include two additional stations that feature Mesh Cloud Scripting. The Mesh 101 tutorial was designed to teach attendees in your experience about wind farms, and the two new stations follow up on that theme by providing attendees with information that can help them decide where to build a new wind farm. At these stations you'll learn how to implement the following:
+
+- Pull data from internal or public sources into your scene. An attendee in the event will be able to click an interactive globe to view live weather data from three cities that they are considering for the potential location of their new wind farm.
+
+    ![A screenshot of attendess in an event clicking an interactive globe to view live weather data. ](../../../media/mesh-201/100-using-weather-data.png)
+
+- Set up AI-powered interactions using OpenAI. An attendee can click an "Info" button and ask questions about the best locations for wind farms. You, the developer, will add code that will provide the OpenAI LLM (Large Language Model) with some context for the wind farm-related questions attendees will likely be asking.
+
+    ![A screenshot of attendees in an event using OpenAI to ask questions about where to build wind farms.](../../../media/mesh-201/101-using-open-ai.png)
 
 The tutorial project is named *Mesh201* and is included in the Mesh toolkit.
 
@@ -30,6 +41,10 @@ The tutorial is structured as follows:
 
 - [Chapter 4: Load a URL from a 3D asset](./mesh-201-04-webslate-3.md).
 
+- [Chapter 5: Click an interactive globe to get live weather data](./mesh-201-05-live-weather-data.md)
+
+- [Chapter 6: Get answers to questions using Azure OpenAI](./mesh-201-06-open-ai.md
+
 ## Prerequisites
 
 ### Familiarity with cloning from GitHub and [Git LFS](https://git-lfs.com/)
@@ -44,9 +59,7 @@ If you've been developing Mesh experiences for a while and are familiar not only
 
 [Turn object icons off for a clearer view](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#turn-object-icons-off-for-a-clearer-view)
 
-[Choose the right layer for objects with walkable or teleportable surfaces.](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#choose-the-groundcollision-layer).
-
-[Mesh Emulation Mode](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#add-mesh-emulation-mode-capability)
+[Mesh Emulation Mode](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#using-mesh-emulation-mode)
 
 [Mesh Thumbnail Camera](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#add-the-mesh-thumbnail-camera)
 
@@ -63,6 +76,14 @@ Unity version 2022.3.15 is required for this tutorial.
 [Get help installing Unity](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 
 Your installation should include modules for Android and Windows. The Mesh app works for PC and the Meta Quest 2, and Android is the operating system for the Quest.
+
+### Mesh Cloud Scripting Setup
+
+The last few steps in the tutorial involve building and publishing the completed project to Mesh on the web and then creating an event from it that you can run in the Mesh app. Note that this is *not* required; thanks to the *Mesh Emulator*, you can still see how the finished project will look in the Mesh app *without* building and publishing. If you do want to step through the build-and-publish process, you need some extra preparation in order for cloud scripting to work. To learn more, see the article named [Prepare for your first Mesh Cloud Scripting Project](../../script-your-scene-logic/cloud-scripting/cloud-scripting-prepare-for-your-project.md) and make sure you've addressed the prerequisites listed there.
+
+## An M365 Office subscription and familiarity with the Azure portal.
+
+You'll need to use the Azure Portal in order to set up OpenAI in Chapter 6.
 
 ## Set things up for Mesh
 
@@ -122,25 +143,20 @@ For this tutorial, the only package you need is the Mesh toolkit package, and it
 
 ## Trying out the finished project
 
-We recommend that you open the **FinishedProject** scene and run it to get an idea of what the finished project will look like. The WebSlates we'll be updating are located on a GameObject called a *Sphere Terrace*. It contains a series of stations where you'll learn how to implement Mesh features for the WebSlates. 
+We recommend that you open the **FinishedProject** scene, run it, and visit a few of the *stations* it contains to try out some of the Mesh features you'll be implementing in the tutorial. The stations are located on a GameObject called a *Sphere Terrace*. 
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/008A-sphere-terrace-wide-view.png) 
 
 1. Click the Unity Editor Play button.
-1. Stations 2 and 3 are located on one side of the Sphere Terrace. Navigate to this area and then position yourself so that you're facing the Stations. 
+1. Stations 1, 2 and 3 are located on one side of the Sphere Terrace. Navigate to this area and then position yourself so that you're facing the Stations. 
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/008B-sphere-terrace-stations-two-and-three.png) 
 
-1. Move in closer to each Station and then click their **Load** buttons and notice that this action loads HTML pages into the WebSlates.
+1. Move in closer to Stations 1 and 2 and then click their **Load** buttons. Notice that this action loads HTML pages into the WebSlates.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/070-stations-two-and-three.png) 
 
-1. Station 4 is located on the opposite side of the Sphere Terrace:
-
-    ![A screenshot of a computer Description ](../../../media/mesh-201/049-station-one-two-overhead-view.png) 
-
-    Navigate to this area and then position yourself so that you're facing the Station.
-1. Click several different spots on the **Earth** object--you can rotate it by left-clicking on it and then dragging. Notice how each time you click, a map of that area appears on the nearby WebSlate.
+1. Move in front of Station 3, and then click several different spots on the **Earth** object--you can rotate it by left-clicking on it and then dragging. Notice how each time you click, a map of that area appears on the nearby WebSlate.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/051-webslate-with-bing-maps-loaded.png) 
 
@@ -152,6 +168,8 @@ If things look a little blurry in the **Game** window when you're in Play mode, 
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/071-scale-settings.png) 
 
+![A screenshot of a computer Description ](../../../media/mesh-201/071b-scale-settings-2.png) 
+ 
 ## Next steps
 
 > [!div class="nextstepaction"]
