@@ -58,7 +58,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
 1. Select **Create new deployment**.
 
-1. Click the **Select a model** drop-down and then choose "gpt-35-turbo". Note that, if you prefer, you can choose a different model.
+1. Click the **Select a model** drop-down and then choose "gpt-35-turbo". Note that, if you prefer, you can choose a different model; however, this would require some changes to the code.
 
 1. For the other settings, choose the names and options that make the most sense for you and your organization.
 
