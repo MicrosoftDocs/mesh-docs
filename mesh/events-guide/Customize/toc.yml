@@ -1,0 +1,7 @@
+items:
+  - name: Customizing events Overview
+    href: customize-event.md
+  - name: Add objects
+    href: Add-objects-to-event-or-template.md
+  - name: Control objects
+    href: control-objects.md
