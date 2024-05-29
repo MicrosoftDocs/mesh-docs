@@ -212,7 +212,7 @@ The code below sends ChatGPT the result of the input dialog with instructions on
             // Display the first response from the LLM
             var responseMessage = aiResponse.Value.Choices[0].Message;
             _app.ShowMessageToParticipant($"<i>You asked: {participantInput}</i>\n\nResponse: {responseMessage.Content}", args.Participant);
-```
+    ```
 
 1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 103.
 
