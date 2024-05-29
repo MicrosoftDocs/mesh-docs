@@ -43,7 +43,7 @@ The tutorial is structured as follows:
 
 - [Chapter 5: Click an interactive globe to get live weather data](./mesh-201-05-live-weather-data.md)
 
-- [Chapter 6: Get answers to questions using Azure OpenAI](./mesh-201-06-open-ai.md
+- [Chapter 6: Get answers to questions using Azure OpenAI](./mesh-201-06-open-ai.md)
 
 ## Prerequisites
 
