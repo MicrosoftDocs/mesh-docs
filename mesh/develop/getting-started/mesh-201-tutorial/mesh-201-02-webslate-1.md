@@ -3,7 +3,7 @@ title: Mesh 201 Load a local non-shared HTML file into a WebSlate
 description: Learn about loading a local non-shared HTML file into a WebSlate.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 2/26/2024
+ms.date: 5/21/2024
 ms.topic: Tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual
 
 # Mesh 201 Tutorial Chapter 2: Load a local non-shared HTML file into a WebSlate
 
-Now that you're all set up and have had a chance to try out the project, let's move on to scripting web content in WebSlates! A WebSlate is basically a big interactive screen. You can use it to view dashboards, web pages, photos and videos or interact with maps, diagrams, and data. At Station 2, we'll load a local non-shared HTML file into a WebSlate.
+Now that you're all set up and have had a chance to try out the project, let's move on to scripting web content in WebSlates! A WebSlate is basically a big interactive screen. You can use it to view dashboards, web pages, photos and videos or interact with maps, diagrams, and data. At Station 1, we'll load a local non-shared HTML file into a WebSlate.
 
 ## Add the WebSlate to the scene
 
@@ -27,7 +27,7 @@ Now that you're all set up and have had a chance to try out the project, let's m
     ![A screenshot of a computer Description ](../../../media/mesh-201/011-mesh-webslates.png)
 
 1. In the **Hierarchy**, collapse the **staticSceneObjects** object, if needed.
-1. Expand **MeshWebSlates** and then expand its child object named **2 - LocalWebslate**.
+1. Expand **MeshWebSlates** and then expand its child object named **1 - LocalWebslate**.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/012-webslates-expanded.png)
 
@@ -41,16 +41,14 @@ Now that you're all set up and have had a chance to try out the project, let's m
 
     **Note**: You have two options when choosing a WebSlate prefab: **WebSlate**, which is a simple design with no extra components, and **WebSlateFramed**, which has a stylized frame and extra features.
 
-    Our WebSlate is now in the scene, but it doesn't have the size, position or rotation we want. (**Tip**: If your WebSlate looks dark blue, you're looking at its back, not its screen!)
+    Our WebSlate is now in the scene, but it doesn't have the size or position we want.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/016-slate-wrong-size-and-location.png)
 
     Let's change that.
 
-1. In the **Hierarchy**, ensure that **WebSlateFramed** is selected, and then, in the **Inspector**, update the values in the **Transform** component to the following:
+1. In the **Hierarchy**, ensure that **WebSlateFramed** is selected, and then, in the **Inspector**, update the **Scale** values in the **Transform** component to the following:
 
-    **Position**: X = 2, Y = 1.3, Z = 2.5  
-    **Rotation**: X = 0, Y = -180, Z = 0  
     **Scale**: X = 2.5, Y = 1.5, Z = 1
 
     This is much better!
@@ -84,7 +82,8 @@ The button object is named *LoadButton*.
     > [!TIP]
     > The **Source** property for the script has two options: *Graph* and *Embed*. Each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine article](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We use the *Embed* option here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
 
-1. The **Script Graph** window should already be open and placed next to the **Project** and **Console** tabs. Click its tab to see its contents.
+1. In the **Script Machine** component, click the **Edit Graph** button.
+1. Park the **Script Graph** window next to the **Project** and **Console** tabs. Click its tab to see its contents.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/020-script-graph.png)
 
