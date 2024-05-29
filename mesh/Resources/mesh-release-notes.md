@@ -4,7 +4,7 @@ description: Mesh release notes
 ms.service: mesh
 author: typride  
 ms.author: tmilligan
-ms.date: 05/10/2024
+ms.date: 05/29/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -27,11 +27,21 @@ Microsoft Mesh application
 
 ## Version 5.2406.0
 
+## What's new
+
+* The Mesh Toolkit contains an updated Mesh 201 tutorial. The tutorial contains two new stations:
+
+    Station 5: Pull data from internal or public sources into your scene. An attendee in the event can click an interactive globe to view live weather data from three different cities.
+
+    Station 6: Set up AI-powered interactions using Azure OpenAI. An attendee can click an "Info" button and ask questions about the best locations for wind farms.
+
+    The documentation for the tutorial has also been updated.
+
 ## Resolve product issues
 
 * Various bug fixes and reliability improvements.
 
-* After leaving a meeting and rejoining, shared video playback is synced to all users including the broadcaster. (52849)
+* After leaving a meeting and rejoining, shared video playback is synced to all users including the broadcaster.
 
 ## Version 5.2405.0
 
