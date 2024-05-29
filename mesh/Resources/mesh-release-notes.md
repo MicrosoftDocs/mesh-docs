@@ -27,7 +27,7 @@ Microsoft Mesh application
 
 ## Version 5.2406.0
 
-## What's new
+### What's new
 
 * The Mesh Toolkit contains an updated Mesh 201 tutorial. The tutorial contains two new stations:
 
@@ -60,7 +60,7 @@ Microsoft Mesh application
 >
 > We hope this delivery schedule change will lead to a faster update cadence with newer features reaching the public app sooner than before.
 
-## What's new
+### What's new
 
 * Action groups are now available in the event or template customization flow. This new feature allows an organizer to simultaneously control multiple objects in a event with the the control panel to dynamically change the environment to suit your event needs. Display several images of your team and play a video with the push of a button or show a ScreenShare screen and display supplementary images at the same time.
 
