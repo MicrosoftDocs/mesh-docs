@@ -35,6 +35,30 @@ These are the offerings and packages currently available. There may be slight di
 | Mesh toolkit (Preview)     | 5.2404.X | 2024-3-12     |
 | Mesh on PC/Quest           | 5.2406.X | 2024-4-12     |
 
+## Mesh Toolkit 5.2406.X
+
+### What's new
+
+#### Visual scripting
+
+* Fixed "Failed to deserialize scriptable object" errors in Emulator that were logged to the Unity console under certain circumstances.
+
+* Fixed an issue where an update to a shared property (or variable) applied by a visual script could sometimes be lost due to an earlier update of the same property (or variable) returning from its roundtrip through the server at an inopportune time.
+
+* Fixed an Emulator-only issue with Visual Scripting late-join in very large scenes if visual scripts were using script variables to pass `Transform` or `GameObject` references into script graphs. When this issue occurred, warnings-level messages with the following wording were logged to the console: "OnMessageReceived: Received message with correct class ID 1 but data size in packet expecting total ... with a packet of 1988, index ... does not look correct."
+
+#### Mesh Toolkit Uploader
+
+* Mesh Toolkit Uploader will check for IL2CPP module being installed to allow building for Windows Standalone (PC) platform.
+
+* Fix a bug where some scenes using default mesh fonts will cause toolkit to build the fonts incorrectly.
+
+* Improve mesh toolkit default font configuration by automatically importing TMP essentials, if needed, when configuring default font.
+
+* Fix extra errors displayed when no valid collections are found.
+
+* Add a message to fill the blank space when an environment had no prior platforms uploaded.
+
 ## Mesh Toolkit 5.2405.X
 
 ### What's new
