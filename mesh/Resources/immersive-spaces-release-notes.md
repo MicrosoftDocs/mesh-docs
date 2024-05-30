@@ -17,8 +17,6 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 * For returning users, the pre-join screen with avatar selection and customization is skipped to make the experience of joining the immersive space faster. The second pre-join screen following the avatar selection and customization screen was also removed for new and returning users.
 
-* 
-
 ## Version 5.2405.0 (May 13, 2024)
 
 * More professional wardrobe styles are coming to the Avatar builder. Customize your avatar to see all the new and updated looks available to freshen up your avatar for your next meeting.
