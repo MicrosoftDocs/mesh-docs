@@ -49,7 +49,7 @@ Each analyzer performs a different test to check if content is optimally setup. 
 | **Shader Complexity** | Checks the number of vertex and fragment stage math operations of referenced shaders. | No | Under 150 math operations for the vertex stage. Under 600 math operations for the fragment stage. | Under 30 math operations for the vertex stage. Under 120 math operations for the fragment stage. |
 | **SRP Batcher Compatible** | Checks if SRP Batcher compatible shaders are being used. | No | N/A | N/A |
 | **Terrain** | Checks for performance issues on Terrain components. | No | Under 2 Terrain components and a Heightmap Pixel Error over 4. | Same as PC |
-| **Text** | Warns if a Text Mesh Pro component is using a nonstandard font. | No | N/A | N/A |
+| **Text** | Warns if a TextMeshPro component is using a nonstandard font. | No | N/A | N/A |
 | **Texture Sizes** | Checks memory usage for textures and lightmaps. | No | Under 160 MB for textures and under 80 MB for lightmaps. | Under 16 MB for textures and under 20 MB for lightmaps. |
 | **WebSlate** | Checks the runtime render time for a WebSlate component. | Yes | Under 2 ms per WebSlate component. | Same as PC |
 
