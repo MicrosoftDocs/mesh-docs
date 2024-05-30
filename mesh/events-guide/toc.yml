@@ -4,7 +4,7 @@ items:
   - name: Create event
     href: create-event-mesh-portal.md
   - name: Customize event
-    href: Customize/toc.yml
+    href: customize-event.md
   - name: Create event template
     href: create-template.md
   - name: Produce event
