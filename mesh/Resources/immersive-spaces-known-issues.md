@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 ## Version 5.2406.0 (May 26, 2024)
 
-* If a user attempts to use the **Meet now** button in Teams then tries to change their **View** to **Immersive space (3D)**, they may encounter an error **Unable to join**.
+* If a user attempts to use the **Meet now** button in Teams then tries to change their **View** to **Immersive space (3D)**, they may encounter the error **Unable to join**. (30916)
 
 ## Version 5.2403.0 (April 18, 2024)
 
