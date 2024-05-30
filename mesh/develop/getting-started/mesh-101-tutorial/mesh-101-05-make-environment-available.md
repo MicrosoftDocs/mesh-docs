@@ -3,7 +3,7 @@ title: Mesh 101 Make your environment available for Events
 description: Learn how to uploaded your Environment and make it available for Event.
 author: typride
 ms.author: vinnietieto
-ms.date: 11/14/2023
+ms.date: 5/29/2024
 ms.topic: Tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, environment, M365, Mesh Portal, uploader, uploading, Mesh on the web
@@ -16,10 +16,6 @@ You've completed adding all the features you need for your Mesh experience using
 > [!IMPORTANT]
 > A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see [Set up M365 for Microsoft Mesh](../../../Setup/Content/setup-m365-mesh.md).
 
-## Mesh Uploader versions
-
-As explained in the article named [Add the Mesh toolkit package](../../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh toolkit: the stable build and the preview build. Note that from time to time you may see minor differences between the two versions.
-
 ## Sign in to the Mesh Uploader
 
 1. On the menu bar, select **Mesh Toolkit** > **Environments**.
@@ -31,7 +27,7 @@ As explained in the article named [Add the Mesh toolkit package](../../build-you
 1. Make sure you're in the **Create Environment** tab, and then, in
     the **Internal Name** field, type "Wind Turbine Tutorial."
 
-    ![A screenshot of the Internal name field filled out in the Mesh uploader.](../../../media/sample-mesh-101/037-upload-create-new-logo.png)
+    ![A screenshot of the Internal name field filled out in the Mesh uploader.](../../../media/sample-mesh-101/037-upload-create.png)
 
 2. In the **Description** field, type "An interactive Mesh experience
     that teaches you about wind turbines."

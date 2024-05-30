@@ -4,7 +4,7 @@ description: Learn how to create an event and invite others.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 10/5/2023
+ms.date: 5/29/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, events, experiences
 ---
@@ -16,41 +16,50 @@ create and produce an Event based on that Environment that participants
 can experience through the Mesh app for PC or Quest.
 
 > [!IMPORTANT]
-> To ensure the best experience, we recommend that attendees to an event update the latest version of the Mesh app.
+> To ensure the best experience, we recommend that attendees to an event update to the latest version of the Mesh app.
 
 1. Open [Mesh on the web](https://portal.mesh.microsoft.com/).
 1. Log in with your corporate account.
+
+## Create an event
+
 1. On the Home page, in the left-side navigation bar, select **Events**.
 
     ![___](../../../media/sample-mesh-101/466-select-events.png)
 
-1. Select **Create event** at the top right.
-1. On the **Event details** page, add the **Event name**, **Start time** and **End time**, **Description**, and an optional **Event thumbnail image**.
-1. Select a **Room configuration**. Your choices are "Single room" or "Multiple rooms."
+1. Select **Create event** at the top right. This takes you to the **Create Mesh Event** page.
 
-    - The **Room capacity** for both is *16*.
-    - The maximum number of participants allowed for a *Single room* is 16, and for **Multiple rooms** is 200. You can set the maximum number of participants for your event in the **Max participants** field.
+> [!TIP]
+> On this page, you can learn about a setting by moving the cursor over the icon to the left of the setting.
+
+    ![___](../../../media/sample-mesh-101/521-mouse-rollover-tip.png)
+
+1. Add an event title, the starting date and time, the ending date and time, and details about the event if needed. the **Event name**, **Start time** and **End time**, **Description**, and an optional **Event thumbnail image**.
 
     ![___](../../../media/sample-mesh-101/468-event-details.png)
 
-1. When you're finished, select **Next**.
-1. On the **Choose an Environment or Event template** page, select the **Start with an environment** box if it's not already selected, and then click **Next**.
+1. Click one of the room configuration thumbnails to select that configuration.
 
-    ![___](../../../media/sample-mesh-101/462-choose-env-button.png)
+    ![___](../../../media/sample-mesh-101/522-event-type.png)
 
-1. On the following page, click the **From collections** drop-down and then, in the list that appears, choose the Collection that you uploaded your Environment to.
+    For the Single and Multi-room configurations, you can add **co-organizers** and **attendees**. For the Multi-room configuration, you must also specify the number of attendees per room.
 
-    ![___](../../../media/sample-mesh-101/463-choose-worlds-drop-down.png)
+    ![___](../../../media/sample-mesh-101/523-multi-room-configuration.png)
 
-1. On the following page, select your Environment, and then select **Next**.
+    If you select **Choose a template** or **Start from scratch**, you can choose a built-in Microsoft or custom template or environment.
 
-    ![___](../../../media/sample-mesh-101/464-choose-your-env.png)
+    ![___](../../../media/sample-mesh-101/524-choose-ms-or-custom-environment.png)
 
-1. On the **Invites** page, you can add **Co-organizers** (who will be able to edit the event) and **Attendees** (who will be able to join the event). For this event, you wouldn't need anyone to do any editing, so you would only fill in the **Attendees** list.
+1. The last option on the page lets you upload an image that will become your event cover image in Mesh.
 
-    ![___](../../../media/sample-mesh-101/465-invites.png)
+    ![___](../../../media/sample-mesh-101/520-cover-image-on-event-page.png)
 
-1. When you're finished, select **Create event**.
+1. When you're finished, select **Create**.
+
+## Join the event
+
+1. In the left-side column of the Mesh Portal, select **Events**.
+1. On the **Events** page, navigate to your event and then click its **Join in Mesh app** button.
 
 ## Summary
 
