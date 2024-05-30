@@ -113,7 +113,7 @@ Toybox will now be installed in your Unity project as a package in the project's
 > [!TIP]
 > We recommend that you use a specific release of the Toybox package to ensure your project is locked to a release.
 
-You can reference a specific release version, branch, or git commit hash by altering the URL in step 3 as demonstrated below:
+You can reference a specific release version, branch, or Git commit hash by altering the URL in step 3 as demonstrated below:
 
 | Syntax           | URL example                                                                                                                                     |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
