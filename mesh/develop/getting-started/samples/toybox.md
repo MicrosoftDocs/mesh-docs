@@ -111,7 +111,7 @@ There are a couple of ways to add the Toybox package to your project.
 Toybox will now be installed in your Unity project as a package in the project's *Packages* folder with the name  *Microsoft Mesh Toolkit Toybox*.
 
 > [!TIP]
-> It is advised you use a specific release of the Toybox package to ensure your project is locked to a release.
+> We recommend that you use a specific release of the Toybox package to ensure your project is locked to a release.
 
 You can reference a specific release version, branch, or git commit hash by altering the URL in step 3 as demonstrated below:
 
