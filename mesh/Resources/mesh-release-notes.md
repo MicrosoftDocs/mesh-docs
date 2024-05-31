@@ -43,6 +43,8 @@ Microsoft Mesh application
 
 * After leaving a meeting and rejoining, shared video playback is synced to all users including the broadcaster.
 
+* Improved performance for video streams should make the overall experience of videos playing in Mesh better.
+
 ## Version 5.2405.0
 
 > [!IMPORTANT]
