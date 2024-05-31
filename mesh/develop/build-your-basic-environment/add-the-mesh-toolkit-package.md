@@ -4,7 +4,7 @@ description: Instructions for adding the Mesh toolkit package to your project.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 12/15/2023
+ms.date: 5/29/2024
 ms.topic: overview
 keywords: Microsoft Mesh, getting started, toolkit, Mesh toolkit, import, registry, scoped registry, packages
 ---
@@ -40,7 +40,7 @@ When you install the Mesh toolkit, it does the following:
 
    ![A screenshot of the Package Manager with the Packages drop down highlighted.](../../media/build-your-basic-environment/001-packages-drop-down.png)
 
-1. In the list, you'll see the stable and preview build of the **Microsoft Mesh Toolkit**. 
+1. In the list, you'll see the current build of the **Microsoft Mesh Toolkit**. 
 
     Select **Microsoft Mesh Toolkit** (the full package name should be **com.microsoft.mesh.toolkit**, as highlighted in the image below) and then click the **Install** button.
 
@@ -48,20 +48,10 @@ When you install the Mesh toolkit, it does the following:
 
 When the spinner animation next to the package list stops, the package has finished downloading.
 
-## Microsoft Mesh preview
+> [!NOTE]
+> For versions of the toolkit prior to 5.2406.X, we released both a stable build and a preview build. Starting with version 5.2406.X, there's no longer a preview build. This change also applies to the Microsoft Mesh application; the preview version is deprecated and will no longer be released.
 
-In addition to the stable release builds, we offer a preview build and preview toolkit. These are ideal for developers who want to test out upcoming features and prepare in advance for the next public build. The preview toolkit and preview build of Microsoft Mesh should be used together.
-
-We promote the preview build to the stable public build at regular intervals. As of November 2023, this happens every three weeks. If you downloaded the Mesh toolkit through the Package Manager in Unity, you should have both the Preview and Stable build.
-
-:::image type="content" source="../../media/build-your-basic-environment/003-mesh-toolkit-preview.png" alt-text="A screenshot of the Unity Package manager showing the Mesh toolkit.":::
-
-> [!Caution]
-> Take caution when developing with the preview release of the Mesh toolkit. Environments published with this preview version of the Mesh toolkit will only work with the preview version of Mesh, and **are not compatible with the stable version of Mesh**.
->
-> **Be careful not to overwrite stable environments currently in use by your company with environments using the preview toolkit.**
-
-**To download the latest Mesh toolkit or preview version via GitHub**:
+**To download the latest Mesh toolkit via GitHub**:
 See the [Mesh Toolkit for Unity | GitHub](https://github.com/microsoft/Mesh-Toolkit-Unity/releases).
 
 ## Next steps
