@@ -4,7 +4,7 @@ description: Learn how to turn your environment into an Asset and then publish i
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 3/5/2024
+ms.date: 5/30/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, environment, build, publish, build and publish, uploader, Mesh uploader, thumbnail
 ---
@@ -24,10 +24,6 @@ After you finish adding all your scene content, the next step is to build the sc
     ![A screenshot of the dialog shown in Unity asking if you are sure you want to configure the project](../../media/make-your-environment-available/image015.png)
 
 ## Using the Mesh Uploader
-
-### Mesh Uploader versions
-
-As explained in the article named [Add the Mesh toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh toolkit: the stable build and the preview build. Note that from time to time you may see minor differences between the two versions.
 
 ### Sign in to the Mesh Uploader
 
