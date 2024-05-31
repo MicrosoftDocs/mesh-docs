@@ -29,8 +29,7 @@ can experience through the Mesh app for PC or Quest.
 
 1. Select **Create event** at the top right. This takes you to the **Create Mesh Event** page.
 
-> [!TIP]
-> On this page, you can learn about a setting by moving the cursor over the icon to the left of the setting.
+    **TIP**: On this page, you can learn about a setting by moving the cursor over the icon to the left of the setting.
 
     ![___](../../../media/sample-mesh-101/521-mouse-rollover-tip.png)
 
