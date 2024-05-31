@@ -37,6 +37,12 @@ Microsoft Mesh application
 
     The documentation for the tutorial has also been updated.
 
+#### Audit logging for Microsoft Mesh
+
+Audit logging help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. This article summarizes how to query and request audit logs for Microsoft Mesh operations and events. Some operations are Mesh specific, while others are associated with other M365 operations, such as M365: Exchange, SharePoint, Microsoft Entra (Azure AD) operations, Microsoft Teams, etc. with audit logging for Mesh, an admin can gather insights into individual or bulk operations that relate to User Activity or operations which result from interactions with M365 services for Microsoft Mesh.
+
+For more info, see [Audit logging in Mesh](../Setup/Content/audit-logging-in-mesh.md).
+
 ## Resolve product issues
 
 * Various bug fixes and reliability improvements.
