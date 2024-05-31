@@ -93,7 +93,7 @@ Now that you're all set up and have had a chance to try out the project, let's m
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/027-is-selected-local-or-global.png).
 
-In our current script, we use the node with "Is Selected Locally".
+In our current script, we use the node with "Is Selected Locally". This means that when the attendee clicks the Load button, only they will see the new HTML page that loads into the attached WebSlate.
 
 ## Get the HTML page
 
@@ -128,8 +128,15 @@ We have a node in the script graph set up for this--**Get Component in Children*
 
 ## Test your work
 
-1. In Unity, save the project and then press the Unity Editor Play button.
+1. In Unity, save the project.
 
+    **WARNING**: There's a currently a bug in the project where saving it may cause the text in the information text boxes to disappear.
+
+    ![A screenshot of a computer Description ](../../../media/mesh-201/120-no-text-bug.png)
+
+    The text reappears when you enter Play mode. Keep this in mind as you work through the other stations.
+
+1. Press the Unity Editor Play button.
 1. Position yourself in front of Station 1, and notice that the WebSlate is displaying the Microsoft Mesh home page.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/028-webslate-with-default-page.png)

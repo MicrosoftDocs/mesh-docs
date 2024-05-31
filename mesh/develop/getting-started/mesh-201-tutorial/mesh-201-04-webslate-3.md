@@ -4,40 +4,43 @@ description: Learn how to load a URL from a 3D asset.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 2/27/2024
+ms.date: 5/31/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
 ---
 
 # Mesh 201 Tutorial Chapter 4: Load a URL from a 3D asset
 
-In this chapter, we move forward to Station 3 and explore a way to load data from the web into a WebSlate. There's a 3D GameObject in the scene that represents the planet Earth. We'll update a script so that when an attendee in your experience clicks on the globe, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate.
+In this chapter, we move forward to Station 3 and explore a way to load data from the web into a WebSlate. There's a 3D GameObject in the scene that represents the planet Earth; we'll call it "the globe". We'll update a script so that when an attendee in your experience clicks on the globe, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate.
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/064-station-one-two-play-mode.png)
 
 ## Try out the project
 
-1. Adjust your view so that you're directly in front of and looking at Station 4.
+1. Adjust your view so that you're directly in front of and looking at Station 3.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/050-station-one-two-closeup.png)
 
-    As you can see, there's already a WebSlate in the scene with some informational text above it, as well as the **Earth** object. Let's run the project and see what happens.
+    As you can see, there's already a WebSlate in the scene with some informational text above it, as well as the globe. Let's run the project and see what happens.
 
 1. Click the Unity editor Play button. The WebSlate displays the Bing Maps website.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/051-webslate-with-bing-maps-loaded.png)
 
-1. Click several different spots on the **Earth** object--you can rotate it by left-clicking on it and then dragging. Note that no matter where you click, the WebSlate keeps displaying the same Bing Maps page. We want to change this so that when you click the **Earth** object, the geographical area you clicked appears on the WebSlate. We'll be adding a node to a script that accomplishes this in a moment, but before that, we'll take a brief look at the scripts.
+1. Click several different spots on the **Earth** object. Note that no matter where you click, the WebSlate keeps displaying the same Bing Maps page. We want to change this so that when you click the **Earth** object, the geographical area you clicked appears on the WebSlate. We'll be adding a node to a script that accomplishes this in a moment, but before that, we'll take a brief look at the scripts.
 
 1. Click the Unity editor Play button to exit Play mode.
 
 ## Explore the Earth script
 
 1. In the **Hierarchy**, collapse the GameObject named **2 - StaticContentWebslate**.
-1. Expand **3 - LoadURL** and note that it has child objects named **EarthActions** and **Earth**. Each of these objects has a Script Machine attached. 
-1. Select **Earth**. Its script graph appears in the **Script Graph** window. 
+1. Expand **3 - LoadURL** and note that it has child objects named **EarthActions** and **Earth**. Each of these objects has a Script Machine attached.
 
-The script graph, named *Globe location on Webslate*, is designed to detect a click on the **Earth** object and to know the precise geographical location of that click (latitude and longitude) so that a map of that area can be displayed on the WebSlate. 
+    ![A screenshot of a computer Description ](../../../media/mesh-201/122-earth-url-expanded.png)
+
+1. Select the **Earth** GameObject. Its script graph appears in the **Script Graph** window. 
+
+The script graph, named *Globe location on Webslate*, is designed to detect a click on the globe and to know the precise geographical location of that click (latitude and longitude) so that a map of that area can be displayed on the WebSlate. 
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/053-earth-graph.png)
 
@@ -97,13 +100,13 @@ Now we just need to ensure that this URL (which, naturally, changes every time *
 
 1. Make sure you're positioned in front of Station 3. 
 
-1. Click various places on the **Earth** object. As noted earlier, each time you click, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to a nearby WebSlate.
+1. Click various places on the **Earth** object. As noted earlier, each time you click, the latitude and longitude of the clicked location are captured and these coordinates are incorporated into a Bing Maps URL as parameters. An HTTP request is executed using this URL; Bing Maps provides a map of the chosen area and sends it to the nearby WebSlate.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/064-station-one-two-play-mode.png)
 
 **Notes**
 - The WebSlate is *interactive* inside an event. An attendee can click the +/- buttons to zoom in or out, or drag the map to adjust its position, or click links. Note, however, that other attendees in the experience won't see these changes; they'll only see an update when the globe is clicked again.
-- A good way to get further insights into your scripts is to watch them in the **Script Graph** window as you try out features in Play mode. For example, in this project, you can see the latitude and longitude of the location clicked on the **Earth** object flowing out of the connectors from the **Microsoft Mesh: On State Changed** node.
+- If you watch the **Script Graph** window as you click the globe, you can see the latitude and longitude of the clicked location flowing out of the connectors from the **Microsoft Mesh: On State Changed** node.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/065-connector-data.png)
 
