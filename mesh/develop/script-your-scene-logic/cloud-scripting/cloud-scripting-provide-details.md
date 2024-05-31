@@ -4,7 +4,7 @@ description: Learn about adding Mesh Cloud Scripting details to your project whe
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 3/8/2024
+ms.date: 5/30/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding, Mesh Uploader, Uploader, 
 ---
@@ -29,7 +29,7 @@ At this point you should have a resource group and Subscription ID handy.
 
 1. In the Mesh Uploader, in the **Create Environment** tab, expand the **Setup Cloud Scripting Configuration** drop-down.
 
-![_______](../../../media/mesh-scripting/provide-details/001-uploader-setup-scripting-dropdown.jpg)
+![_______](../../../media/mesh-scripting/provide-details/001-uploader-setup-scripting-dropdown.png)
 
 1. Copy the subscription ID that you recorded earlier for *Mesh Cloud Scripting Service* and then paste it into the Subscription ID field.  
 1. Enter a [Resource Group](./cloud-scripting-prepare-for-your-project.md#resource-group) or let the project choose one for you.  
