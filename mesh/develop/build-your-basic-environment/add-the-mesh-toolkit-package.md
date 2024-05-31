@@ -40,7 +40,7 @@ When you install the Mesh toolkit, it does the following:
 
    ![A screenshot of the Package Manager with the Packages drop down highlighted.](../../media/build-your-basic-environment/001-packages-drop-down.png)
 
-1. In the list, you'll current build of the **Microsoft Mesh Toolkit**. 
+1. In the list, you'll see the current build of the **Microsoft Mesh Toolkit**. 
 
     Select **Microsoft Mesh Toolkit** (the full package name should be **com.microsoft.mesh.toolkit**, as highlighted in the image below) and then click the **Install** button.
 
