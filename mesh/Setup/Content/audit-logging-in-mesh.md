@@ -1,22 +1,25 @@
 ---
 title: Audit logging for Microsoft Mesh
-description: How to use audit logging to investigate events done with Mesh resources, including the Mesh standalone application and associated azure or M365 events, and immersive spaces in Teams.
+description: As an admin, use audit logging to investigate events for the Mesh application and associated Azure or M365 events, and immersive spaces in Teams.
 ms.service: mesh
 author: typride  
 ms.author: tmilligan
 ms.date: 04/22/2024
-ms.topic: Guide
+ms.topic: How-to
 keywords: Microsoft Mesh, M365, Unity, API, reference, documentation, features, performance, powershell, Microsoft Purview, Exchange Online PowerShell
+#customer intent: As a admin, I want to perform audit logging for Mesh so that organizations can respond to and track down events that occur with Mesh resources.
 ---
 
-# Audit logging in Mesh
+# How to perform audit logging for Mesh
+
+Audit logging help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. This article summarizes how to query and request audit logs for Microsoft Mesh operations and events. Some operations are Mesh specific, while others are associated with other M365 operations, such as M365: Exchange, SharePoint, Microsoft Entra (Azure AD) operations, Microsoft Teams, etc. 
 
 ## Overview
 
 <!---
 Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations.
 --->
-Audit logging help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. This article summarizes how to query and request audit logs for Microsoft Mesh operations and events. Some operations are Mesh specific, while others are associated with other M365 operations, such as M365: Exchange, SharePoint, Microsoft Entra (Azure AD) operations, Microsoft Teams, etc. with audit logging for Mesh, an admin can gather insights into individual or bulk operations that relate to User Activity or operations which result from interactions with M365 services for Microsoft Mesh.
+With audit logging for Mesh, an admin can gather insights into individual or bulk operations that relate to User Activity or operations which result from interactions with M365 services for Microsoft Mesh.
 
 Audit logging for Mesh can be done using Microsoft Purview or [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell?view=exchange-ps&preserve-view=true).
 
@@ -35,9 +38,15 @@ Examples of user activity and operations that an admin may be interested in for 
 
 Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations.
 
+## Prerequisites
+
 Before using Microsoft Purview for audit logging, [see how to get started with Microsoft Purview audit logging solutions](/purview/audit-get-started).
 
+## Get started with search
+
 Once you've completed these steps, [see how to search the audit log in Microsoft Purview](/purview/audit-search?tabs=microsoft-purview-portal).
+
+## Auditable events for Microsoft Mesh
 
 The audit events that are currently available are listed below. Events are generated based on user activity in Mesh Admin portal, or session/template customization activity in the Mesh application.
 
@@ -76,6 +85,10 @@ Some clarification on what the terminology in these events refers to:
 
 - **Component**: refers to the Objects that are rendered in an environment when a session is started for an event, template, or customization session. If a user attempts to enter an environment, the components in that environment are loaded and captured by component logs.
 
+## Export, configure, and view audit log records
+
+[How to export, configure, and view audit log records](/purview/audit-log-export-records)
+
 # [Exchange Online PowerShell](#tab/exchange-online-powershell)
 
 ## Prerequisites
@@ -87,6 +100,8 @@ In order to conduct audit logging for Mesh operations, the following prerequisit
 - Administrator permissions [required to run cmdlet commands](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps&preserve-view=true)
 - Microsoft Excel or another data analysis tool to analyze the data once it's gathered
 - PowerShell v7
+
+## Microsoft Mesh audit events
 
 The audit events that are currently available are listed below. Events are generated based on user activity in Mesh Admin portal, or session/template customization activity in the Mesh application.
 
