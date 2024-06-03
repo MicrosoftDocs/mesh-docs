@@ -1,6 +1,6 @@
 ---
 title: Meet our Mesh Early Adopters
-description: Partners of the Mesh Technology Adoption program.
+description: Partners of the Mesh Technology Adoption program are listed here. The list includes a variety of different companies from around the world.
 author: typride
 ms.author: tmilligan
 ms.date: 01/17/2024

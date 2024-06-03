@@ -1,6 +1,6 @@
 ---
 title: Release notes for Mesh toolkit
-description: Mesh toolkit release notes
+description: Release notes for the Microsoft Mesh Toolkit with a list of important updates and a list of the Microsoft Mesh Toolkit versions.
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
