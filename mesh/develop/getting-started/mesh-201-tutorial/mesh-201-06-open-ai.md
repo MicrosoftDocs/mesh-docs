@@ -4,14 +4,14 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 5/28/2024
+ms.date: 6/3/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
 
 # Mesh 201 Tutorial Chapter 6: Get answers to questions using Azure OpenAI
 
-In this chapter, we move on to the fifth and final station where where you'll learn how to implement Azure OpenAI as an AI assistant. Note that you could use any AI service you want here (for example, Copilot Studio). Keeping with the theme of searching for a location for a wind farm, the AI assistant will be customized to answer wind farm-related questions.
+In this chapter, we move on to the fifth and final station where you'll learn how to implement an Azure OpenAI-based virtual assistant or "chatbot". Note that you could use any AI service you want here (for example, Copilot Studio). Keeping with the theme of searching for a location for a wind farm, the AI assistant will be customized to answer wind farm-related questions.
 
 ## Setting up for this station
 
@@ -72,7 +72,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
     ![__________________________________](../../../media/mesh-201/117-keys-and-endpoints.png)
 
-1. On the **Keys and Endpoint** page, click the "Copy to clipboard" button for **KEY 1** *or* *KEY 2* (it doesn't matter which one) and then paste it into a text file using Windows Notepad or another text editor.
+1. On the **Keys and Endpoint** page, click the "Copy to clipboard" button for **KEY 1** *or* *KEY 2** (it doesn't matter which one) and then paste it into a text file using Windows Notepad or another text editor.
 
     ![__________________________________](../../../media/mesh-201/118-copy-key-and-endpoint.png)
 
@@ -82,7 +82,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
 ## Add the prefab for Station 5
 
-1. In the **Project** folder, navigate to **Assets** > **MeshCloudScripting** and then drag **5 - AIAssistant** to the **Hierarchy** and place it as a child object to **Mesh Cloud Scripting** and just under **4 - GlobeWithCloudScripting**.
+1. In the **Project** folder, navigate to **Assets** > **MeshCloudScripting** and then drag the **5 - AIAssistant** prefab to the **Hierarchy** and place it as a child object to **Mesh Cloud Scripting** and just under **4 - GlobeWithCloudScripting**.
 
     ![__________________________________](../../../media/mesh-201/106-add-ai-assistant-prefab.png)
 
@@ -97,7 +97,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
     ![__________________________________](../../../media/mesh-201/085-config-code.png)
 
-1. Paste the URI and key that you got earlier from the Azure Portal into these two lines, replacing the placeholder comments.
+1. Paste the URI and key that you copied earlier from the Azure Portal into these two lines, replacing the placeholder comments.
 
     ![__________________________________](../../../media/mesh-201/107-openai-uri-and-key.png)
 
@@ -111,7 +111,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
     ![__________________________________](../../../media/mesh-201/088-extra-pkg-reference.png)
 
-1. Delete the placeholder *PackageReference* element and replace it with the line below:
+1. Delete the comment and replace it with the line below:
 
    	`<PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.15" />`
 
@@ -160,13 +160,13 @@ The resource deploys and you should see a message saying that the deployment is 
 
     The code does the following:
 
-    - Call the Mesh Cloud Scripting through the method named *ShowInputDialogToParticipantAsync()*. The arguments are the message you want to prompt the user with ("Ask Azure OpoenAI"), who you want to display the input dialog to (*args.Participant*).
+    - Call Mesh Cloud Scripting through the method named *ShowInputDialogToParticipantAsync()*. The arguments are the message you want to prompt the user with ("Ask Azure OpoenAI") and who you want to display the input dialog to (*args.Participant*).
     - When the input dialog pops up, check for errors.
     - Save whatever the participant typed in (the *result*) to *participantInput* as a String. 
 
-## Send ChatGPT the result of the input dialog
+## Send GPT-3.5 Turbo the result of the input dialog
 
-The code below sends ChatGPT the result of the input dialog with instructions on how to respond with the current weather data.
+The code below sends the GPT-3.5 Turbo model the result of the input dialog with instructions on how to respond with the current weather data.
 
 1. Copy the code below:
 
@@ -197,9 +197,9 @@ The code below sends ChatGPT the result of the input dialog with instructions on
     The code does the following:
 
     - Create an instance of the *ChatCompletionOptions* class named *chatCompletionOptions*.
-    - Intialize a variable named *DeploymentName* with the version of ChatGPT we're using ("gpt-35-turbo").
-    - Initialize a new instance of *ChatRequestSystemMessage* with guidance on how the assistant should answer questions. This includes the locations with the weather data you're interested and the current conditions (*_currentWeatherText*) for those locations. The value of *_currentWeatherText* was received when we called weatherapi.com in Chapter 5.
-    - Initialize a new instance of *ChatRequestUserMessag* with the question the participant asked.
+    - Intialize a variable named *DeploymentName* with the OpenAI model we're using ("gpt-35-turbo").
+    - Initialize a new instance of *ChatRequestSystemMessage* with guidance on how the assistant should answer questions. This includes the locations with the weather data you're interested in and the current conditions (*_currentWeatherText*) for those locations. The value of *_currentWeatherText* was received when we called weatherapi.com in Chapter 5.
+    - Initialize a new instance of *ChatRequestUserMessage* with the question the participant asked.
     - Send the information about the request to the LLM (Large Language Model).
 
 ## Add the code that displays the response from the LLM
@@ -254,7 +254,7 @@ Congratulations! In this Mesh 201 tutorial, you learned about the following:
 - Loading local shared and non-shared HTML files into a WebSlate.
 - Using a 3D asset to call a Web API and download data into a WebSlate.
 - Pull data from internal or public sources into your scene and display it in 3D.
-- Set up AI-powered interactions using OpenAI.
+- Set up AI-powered interactions using an Azure OpenAI-based virtual assistant or "chatbot".
 
 Now you can put your new Mesh skills to work and build collaborative experiences that are even more useful and exciting!
 
@@ -276,4 +276,4 @@ If you want to build and publish this tutorial project, do the following:
 
 **Challenge**
 
-Try creating your own Station with a WebSlate and a button that loads an HTML file. Be sure to share your efforts in our [Mesh Developer Forum](https://techcommunity.microsoft.com/t5/mesh-creators/welcome-to-the-microsoft-mesh-creator-discussion-space-a-hub-for/m-p/3938730)!
+Try creating your own station with a WebSlate and a button that loads an HTML file. Be sure to share your efforts in our [Mesh Developer Forum](https://techcommunity.microsoft.com/t5/mesh-creators/welcome-to-the-microsoft-mesh-creator-discussion-space-a-hub-for/m-p/3938730)!

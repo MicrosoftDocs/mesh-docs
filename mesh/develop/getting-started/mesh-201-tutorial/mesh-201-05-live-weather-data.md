@@ -4,7 +4,7 @@ description: Learn how to set up an interactive globe you can click to get live 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 5/23/2024
+ms.date: 6/3/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting
 ---
@@ -57,7 +57,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     ![__________________________________](../../../media/mesh-201/076-cs-component.png)
 
-    Any GameObject that you intend to be under the control of cloud scripting must be added as a child to **Mesh Cloud Scripting**.
+    Any GameObject that you intend to be under the control of cloud scripting must be added as a child to the **Mesh Cloud Scripting** GameObject.
 
 ## Add the prefab for Station 4
 
@@ -88,7 +88,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     ![__________________________________](../../../media/mesh-201/086-api-key-pasted.png)
 
-    You can ignore the last two lines--we'll we working with those in the next chapter.
+    You can ignore the last two lines--we'll be working with those in the next chapter.
 
 1. Save and close the JSON file.
 
@@ -108,7 +108,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     ![__________________________________](../../../media/mesh-201/104-itemgroup-weatherapi.png)
 
-   This ensures that we include some scripts in the local *WeatherAPI* folder.
+   This ensures that we include some scripts from the local *WeatherAPI* folder.
 
     ![__________________________________](../../../media/mesh-201//105-weatherapi-folder.png)
 
@@ -120,7 +120,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     ![__________________________________](../../../media/mesh-201/089-app-dot-cs-highlighted.png)
 
-    The first thing we'll do is ensure that when an attendee clicks the globe, the displays of the weather data are refreshed.
+    The first thing we'll do is ensure that when an attendee clicks on the globe, the displays of the weather data are refreshed.
 
 1. In the App.cs file, navigate to line 47, where'll you see a comment telling you to paste some code there.
 
@@ -149,7 +149,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
     
     - Initializes the *refreshButton* variable with the *Earth* GameObject in the scene.
     - Initializes the *refreshButtonNode* variable with the *InteractableNode* attached to the *Earth* GameObject. (If a GameObject in the scene has a *Mesh Interactable Setup* component attached, which *Earth* does, the component adds a Mesh Cloud Scripting [InteractableNode](../../script-your-scene-logic/cloud-scripting/cloud-scripting-programmers-guide.md#interactablenode)).
-    - When an attendee clicks on *Earth*, it fires the InteractableNode's *Selected* event and calls the *GetCurrentWeather* method. This generates an [HTTP request](https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient) to get the weather data.
+    - When an attendee clicks on the globe, it fires the InteractableNode's *Selected* event and calls the *GetCurrentWeather* method. This generates an [HTTP request](https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient) to get the weather data.
 
 1. Save the file.
 
@@ -165,6 +165,8 @@ In order to complete this station, you'll need to insert a *key* into some code 
 1. To see the weather data, click anywhere on the globe. The temperature, average wind speed, and peak wind speed are shown for three cities: 1) Lagos, Nigeria, 2) Dublin, Ireland, and 3) Redmond, WA.
 
     ![__________________________________](../../../media/mesh-201/093-weather-data-displayed.png)
+
+1. When you're finished, press the Play button again to exit Play mode.
 
 ## Next Steps
 
