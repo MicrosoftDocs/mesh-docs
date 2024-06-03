@@ -5,7 +5,7 @@ ms.service: mesh
 author: typride  
 ms.author: tmilligan
 ms.date: 04/22/2024
-ms.topic: How-to
+ms.topic: Concept
 keywords: Microsoft Mesh, M365, Unity, API, reference, documentation, features, performance, powershell, Microsoft Purview, Exchange Online PowerShell
 #customer intent: As a admin, I want to perform audit logging for Mesh so that organizations can respond to and track down events that occur with Mesh resources.
 ---
@@ -72,7 +72,7 @@ Some clarification on what the terminology in these events refers to:
 
 Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations.
 
-### Prerequisites
+### Prerequisites for Purview audit logging solutions
 
 Before using Microsoft Purview for audit logging, [see how to get started with Microsoft Purview audit logging solutions](/purview/audit-get-started).
 
@@ -82,11 +82,11 @@ Once you've completed these steps, [see how to search the audit log in Microsoft
 
 ### Export, configure, and view audit log records
 
-[How to export, configure, and view audit log records](/purview/audit-log-export-records)
+[How to export, configure, and view audit log records](/purview/audit-log-export-records).
 
 ## [Exchange Online PowerShell](#tab/exchange-online-powershell)
 
-### Prerequisites
+### Prerequisites for using Exchange Online PowerShell
 
 In order to conduct audit logging for Mesh operations, the following prerequisites are required:
 
@@ -142,9 +142,11 @@ The audit record contents contain the following fields:
 ##### Search-UnifiedAuditLog example 1
 
 A basic query for audit logs with `-StartDate` and `-EndDate`.
+
 ```powershell
 Search-UnifiedAuditLog -StartDate 2024-04-01 -EndDate 2024-05-01 | Export-Csv -Path .\export-all.csv -NoTypeInformation
 ```
+
 The record contents will come in a format that may be hard to parse initially, but once formatted it should be understandable.
 
 Example response:
@@ -152,7 +154,6 @@ Example response:
 ```json
 "AzureActiveDirectory","4/9/2024 6:49:03 PM","[XXXXXXX]@[XXXXX].com","Update group.","{""CreationTime"":""2024-04-09T18:49:03"",""Id"":""871d4a2e-8e38-488e-a83e-b7a7c6c65228"",""Operation"":""Update group."",""OrganizationId"":""05e05ab5-f8a3-409d-bfa5-01edb8cecf82"",""RecordType"":8,""ResultStatus"":""Success"",""UserKey"":""10032002CCA9134A@meshrp.onmicrosoft.com"",""UserType"":0,""Version"":1,""Workload"":""AzureActiveDirectory"",""ClientIP"":""20.171.55.147"",""ObjectId"":""Group_1ae6e759-85e0-4f8f-b6b5-691b72ca1ba7"",""UserId"":""[XXXXXXX]@[XXXXX].com"",""AzureActiveDirectoryEventType"":1,""ExtendedProperties"":[{""Name"":""additionalDetails"",""Value"":""{\""GroupType\"":\""Unified\"",\""User-Agent\"":\""kiota-dotnet\/1.3.4\""}""},{""Name"":""extendedAuditEventCategory"",""Value"":""Group""}],""ModifiedProperties"":[{""Name"":""Description"",""NewValue"":""[\r\n  \""New collection of stuff for M365 Audit feature testing\""\r\n]"",""OldValue"":""[\r\n  \""New collection of stuff\""\r\n]""},{""Name"":""MailNickname"",""NewValue"":""[\r\n  \""MyCollectionofStuff2272\""\r\n]"",""OldValue"":""[\r\n  \""MyCollectionofStuff2\""\r\n]""},{""Name"":""Included Updated Properties"",""NewValue"":""Description, MailNickname"",""OldValue"":""""},{""Name"":""TargetId.GroupType"",""NewValue"":""Unified"",""OldValue"":""""}],""Actor"":[{""ID"":""[XXXXXXX]@[XXXXX].com"",""Type"":5},{""ID"":""10032002CCA9134A"",""Type"":3},{""ID"":""Microsoft Mesh Services"",""Type"":1},{""ID"":""3016d0ce-47cc-4005-b11d-5fcabb1b643d"",""Type"":2},{""ID"":""User_c7e95ea2-64f6-4743-b8e6-52ce520cba81"",""Type"":2},{""ID"":""c7e95ea2-64f6-4743-b8e6-52ce520cba81"",""Type"":2},{""ID"":""User"",""Type"":2}],""ActorContextId"":""05e05ab5-f8a3-409d-bfa5-01edb8cecf82"",""ActorIpAddress"":""20.171.55.147"",""InterSystemsId"":""2cd62b4e-4744-4c55-8a88-e64771393266"",""IntraSystemId"":""0b9fe72c-eca5-4ad5-a9c5-5986e8bc963d"",""SupportTicketId"":"""",""Target"":[{""ID"":""Group_1ae6e759-85e0-4f8f-b6b5-691b72ca1ba7"",""Type"":2},{""ID"":""1ae6e759-85e0-4f8f-b6b5-691b72ca1ba7"",""Type"":2},{""ID"":""Group"",""Type"":2},{""ID"":""My Collection of Stuff 2"",""Type"":1}],""TargetContextId"":""05e05ab5-f8a3-409d-bfa5-01edb8cecf82""}","4","2148","871d4a2e-8e38-488e-a83e-b7a7c6c65228","True","Unchanged"
 ```
-
 
 > [!TIP]
 > `-NoTypeInformation` is [a PowerShell utility](/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-7.4&preserve-view=true) to make .csv exports cleaner.
