@@ -10,7 +10,7 @@ keywords: Microsoft Mesh, M365, Unity, API, reference, documentation, features, 
 #customer intent: As a admin, I want to perform audit logging for Mesh so that organizations can respond to and track down events that occur with Mesh resources.
 ---
 
-# How to perform audit logging for Mesh
+# Audit logging for Mesh
 
 Audit logging help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. This article summarizes how to query and request audit logs for Microsoft Mesh operations and events. Some operations are Mesh specific, while others are associated with other M365 operations, such as M365: Exchange, SharePoint, Microsoft Entra (Azure AD) operations, Microsoft Teams, etc.
 
