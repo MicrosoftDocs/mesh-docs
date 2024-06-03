@@ -35,6 +35,47 @@ Examples of user activity and operations that an admin may be interested in for 
 
 Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations.
 
+Before using Microsoft Purview for audit logging, [see how to get started with Microsoft Purview audit logging solutions](/purview/audit-get-started).
+
+Once you've completed these steps, [see how to search the audit log in Microsoft Purview](/purview/audit-search?tabs=microsoft-purview-portal).
+
+The audit events that are currently available are listed below. Events are generated based on user activity in Mesh Admin portal, or session/template customization activity in the Mesh application.
+
+|Event Name| Description|
+| ------------------------------ | -----------------------------------------------------------|
+| EnvironmentDeleted             | Delete a Mesh Environment.                                 |
+| EnvironmentPublished           | Publish a new version of a Mesh Environment.               |
+| ComponentCreated               | Create a session component for a given Mesh session.       |
+| ComponentDeleted               | Delete a session component of a given Mesh session.        |
+| TemplateCreated                | Create a new Mesh World/Collection Template.               |
+| TemplateDeleted                | Delete Mesh World Template contents and metadata.          |
+| TemplateUpdated                | Update an existing Mesh World/Collection Template.         |
+| WorldCreated                   | Create a Mesh World/Collection.                            |
+| WorldDeleted                   | Delete a Mesh World/Collection.                            |
+| WorldUpdated                   | Update a Mesh World/Collection.                            |
+| WorldMembersAdded              | Add members to the Mesh World/Collection.                  |
+| WorldOwnersAdded               | Add owners of a Mesh World/Collection.                     |
+| WorldMembersRemoved            | Remove a member from a Mesh World/Collection.              |
+| WorldOwnersRemoved             | Remove an owner from a Mesh World/Collection.              |
+| EnvironmentStorageCreated      | Create a new storage location for a Mesh Environment.      |
+| SessionMetadataCreated         | Create Mesh World/Collection Session Metadata.             |
+| SessionMetadataDeleted         | Delete Mesh World/Collection Session Metadata.             |
+| SessionMetadataUpdated         | Update Mesh World/Collection Session Metadata.             |
+| SessionMetadataTemplateCreated | Create a template customization for Mesh World/Collection. |
+| SessionEnvironmentSet          | Set the environment for a collaboration session.           |
+| SessionJoin                    | Mesh service provisioned the necessary system resources and provided the client application with the information required to join a Mesh session. |
+
+Some clarification on what the terminology in these events refers to:
+
+- **Session**: refers to sessions when certain things are configured for environments or meetings. There are three types of sessions that are captured by audit logs:
+  - *Template Customization Session*: logs are captured when a user customizes an event template and saves changes in the Mesh application.
+  - *Event Customization Session*: logs are captured when a user customizes a single event and saves changes in the Mesh application.
+  - *Event Session*: logs are captured when a Mesh event occurs. Typically, the configuration is immutable since components cannot be placed by users in a live event, for example.
+
+- **World** : refers to Collections in Mesh on the web. Collections is a bucket that holds environments and templates of environments that are used in Mesh events. Audit logs capture when a user creates a Collection, deletes a Collection, adds members to a Collection, adds Owners to a Collection, or removes Owners from a collection.
+
+- **Component**: refers to the Objects that are rendered in an environment when a session is started for an event, template, or customization session. If a user attempts to enter an environment, the components in that environment are loaded and captured by component logs.
+
 # [Exchange Online PowerShell](#tab/exchange-online-powershell)
 
 ## Prerequisites
@@ -166,3 +207,5 @@ Search-UnifiedAuditLog -StartDate 2024-04-01 -EndDate 2024-04-10 -UserIds [email
 The audit log record contents return in a JSON format. AuditData analysis may require a familiarity with [parsing text as JSON or XML](https://support.microsoft.com/en-us/office/parse-text-as-json-or-xml-power-query-7436916b-210a-4299-83dd-8531a1d5e945).
 
 The set of records can be imported to Excel for analysis. For more info, see [how to import data from sources into Excel](https://support.microsoft.com/en-us/office/import-data-from-data-sources-power-query-be4330b3-5356-486c-a168-b68e9e616f5a).
+
+---
