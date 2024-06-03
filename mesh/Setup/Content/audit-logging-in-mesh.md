@@ -16,7 +16,7 @@ Audit logging help organizations effectively respond to security events, forensi
 
 With audit logging for Mesh, an admin can gather insights into individual or bulk operations that relate to User Activity or operations which result from interactions with M365 services for Microsoft Mesh.
 
-Audit logging for Mesh can be done using [Microsoft Purview](#microsoft-purviewtabmicrosoft-purview) or [Exchange Online PowerShell](#exchange-online-powershelltabexchange-online-powershell).
+Audit logging for Mesh can be done using [Microsoft Purview](#microsoft-purview) or [Exchange Online PowerShell](#exchange-online-powershell).
 
 > [!NOTE]
 > Microsoft Mesh has two main offerings for users:  Immersive spaces in Teams and custom immersive spaces. Audit logging does not treat these offerings as independent and thus the events in the audit may refer to either offering or both offerings, depending on the event you query.
