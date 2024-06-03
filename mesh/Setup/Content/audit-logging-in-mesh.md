@@ -13,15 +13,12 @@ keywords: Microsoft Mesh, M365, Unity, API, reference, documentation, features, 
 
 ## Overview
 
-> [!NOTE]
-> Currently, all audit logging is queried using Exchange Online PowerShell. Soon audit logs will be available in Microsoft Purview portal.
-
 <!---
 Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations.
 --->
 Audit logging help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. This article summarizes how to query and request audit logs for Microsoft Mesh operations and events. Some operations are Mesh specific, while others are associated with other M365 operations, such as M365: Exchange, SharePoint, Microsoft Entra (Azure AD) operations, Microsoft Teams, etc. with audit logging for Mesh, an admin can gather insights into individual or bulk operations that relate to User Activity or operations which result from interactions with M365 services for Microsoft Mesh.
 
-Audit logging for Mesh can be done using [Exchange Online Powershell](/powershell/exchange/exchange-online-powershell?view=exchange-ps&preserve-view=true).
+Audit logging for Mesh can be done using Microsoft Purview or [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell?view=exchange-ps&preserve-view=true).
 
 > [!NOTE]
 > Microsoft Mesh has two main offerings for users:  Immersive spaces in Teams and custom immersive spaces. Audit logging does not treat these offerings as independent and thus the events in the audit may refer to either offering or both offerings, depending on the event you query.
@@ -34,7 +31,13 @@ Examples of user activity and operations that an admin may be interested in for 
 
 - **Content Creators** using Mesh Toolkit (Mesh Uploader) to create and upload artifacts.
 
-### Prerequisites
+# [Microsoft Purview](#tab/microsoft-purview)
+
+Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations.
+
+# [Exchange Online PowerShell](#tab/exchange-online-powershell)
+
+## Prerequisites
 
 In order to conduct audit logging for Mesh operations, the following prerequisites are required:
 
