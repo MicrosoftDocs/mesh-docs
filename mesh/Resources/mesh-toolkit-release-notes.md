@@ -1,6 +1,6 @@
 ---
 title: Release notes for Mesh toolkit
-description: Mesh toolkit release notes
+description: Release notes for the Microsoft Mesh Toolkit with a list of important updates and a list of the Microsoft Mesh Toolkit versions.
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
@@ -38,6 +38,13 @@ These are the offerings and packages currently available. There may be slight di
 ## Mesh Toolkit 5.2406.X
 
 ### What's new
+
+#### Experimental features
+
+* This release now includes Experimental features folders with scripts and features to allow developers to test upcoming features that are not guaranteed to be forward compatible with newer versions of the Mesh Toolkit or new releases of the Mesh application.
+
+    > [!IMPORTANT]
+    > Uploading and using Experimental Features are only available to the Mesh Technology Adoption Program (Mesh TAP) partners. For those not in the Mesh TAP program, you may encounter an error stating that experimental features are limited to specific users in the Mesh TAP program.
 
 #### Visual scripting
 
