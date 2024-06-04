@@ -5,7 +5,7 @@ ms.service: mesh
 author: typride   
 ms.author: tmilligan
 ms.date: 02/15/2024
-ms.topic: Guide
+ms.topic: release-notes
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes, Mesh avatars
 ---
 
