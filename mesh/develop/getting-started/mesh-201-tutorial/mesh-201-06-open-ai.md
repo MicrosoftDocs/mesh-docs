@@ -1,11 +1,11 @@
 ---
-title: Mesh 201 Get answers to questions using Azure OpenAI
+title: Mesh 201 Pt. 6':' Get answers to questions using Azure OpenAI
 description: Learn how to set up a question and answer dialog that uses Azure OpenAI.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
 ms.date: 6/3/2024
-ms.topic: Tutorial
+ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
 

@@ -1,11 +1,11 @@
 ---
-title: Mesh 201 Overview, set up and get started
+title: Mesh 201 Pt. 1':' Overview, set up and get started
 description: Learn about the prerequsites, set up, and then get started with the Mesh 201 tutorial project.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
 ms.date: 5/31/2024
-ms.topic: Tutorial
+ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web
 ---
 

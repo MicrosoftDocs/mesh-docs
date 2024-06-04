@@ -1,11 +1,11 @@
 ---
-title: Mesh 201 Load a URL from a 3D asset
+title: Mesh 201 Pt. 4':' Load a URL from a 3D asset
 description: Learn how to load a URL from a 3D asset.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
 ms.date: 5/31/2024
-ms.topic: Tutorial
+ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
 ---
 

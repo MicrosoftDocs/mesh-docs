@@ -1,11 +1,11 @@
 ---
-title: Mesh 201 Get live weather data
+title: Mesh 201 Pt. 5':' Get live weather data
 description: Learn how to set up an interactive globe you can click to get live weather data.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
 ms.date: 6/3/2024
-ms.topic: Tutorial
+ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting
 ---
 

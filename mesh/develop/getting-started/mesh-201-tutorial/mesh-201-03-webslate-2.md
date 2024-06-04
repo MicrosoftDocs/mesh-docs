@@ -1,11 +1,11 @@
 ---
-title: Mesh 201 Load a local shared HTML file into a WebSlate
+title: Mesh 201 Pt. 3':' Load a local shared HTML file into a WebSlate
 description: Learn how to load a local shared HTML file into a WebSlate.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
 ms.date: 5/31/2024
-ms.topic: Tutorial
+ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
 ---
 
