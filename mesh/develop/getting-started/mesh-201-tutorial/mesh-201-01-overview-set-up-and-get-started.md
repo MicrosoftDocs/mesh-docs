@@ -22,7 +22,7 @@ As of late May 2024, the Mesh 201 tutorial has been updated to include two addit
 
     ![A screenshot of attendess in an event clicking an interactive globe to view live weather data. ](../../../media/mesh-201/100-using-weather-data.png)
 
-- Set up AI-powered interactions using an OpenAI-based virtual assistant or "chatbot". An attendee can click an "Info" button and ask questions about the best locations for wind farms. You, the developer, will add code that will provide the OpenAI LLM ([Large Language Model](https://learn.microsoft.com/en-us/training/modules/introduction-large-language-models/) with some context for the wind farm-related questions attendees will likely be asking.
+- Set up AI-powered interactions using an OpenAI-based virtual assistant or "chatbot". An attendee can click an "Info" button and ask questions about the best locations for wind farms. You, the developer, will add code that will provide the OpenAI LLM ([Large Language Model](https://learn.microsoft.com/training/modules/introduction-large-language-models/) with some context for the wind farm-related questions attendees will likely be asking.
 
     ![A screenshot of attendees in an event using OpenAI to ask questions about where to build wind farms.](../../../media/mesh-201/101-using-open-ai.png)
 
