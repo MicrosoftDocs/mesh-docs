@@ -96,8 +96,8 @@ The Equippables are located in the **Project** window's **Microsoft Mesh Toolkit
 
 ## Equippable object type
 
-**To determine an Equippable object's type**:
-1. In the **Hierarchy**, select the object.
+**To determine an Equippable GameObject's type**:
+1. In the **Hierarchy**, select the GameObject.
 1. In the **Inspector**, navigate to the *Mesh Interactable setup* component and then view the **Object Type** property.
 
     ![A screen shot of an object's type in its Mesh Interactabe Setup component.](../../../media/enhance-your-environment/equips-in-detail/014-object-type.png)
