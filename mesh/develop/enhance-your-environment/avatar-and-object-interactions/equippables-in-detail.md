@@ -59,7 +59,7 @@ The Equippable prefabs have been pre-added to the Toybox sample project.
 1. Open the Toybox project in Unity.
 1. In the **Scene** window, navigate into the building with the fish on the front.
 
-    ![A screen shot of the first set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/048-toybox-front-view-with-fish.png)
+    ![A screen shot of the front of the building in the Toybox project.](../../../media/enhance-your-environment/equips-in-detail/048-toybox-front-view-with-fish.png)
 
     The Equippables are on two tables against the back wall.
 
