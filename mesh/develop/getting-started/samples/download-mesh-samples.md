@@ -4,7 +4,7 @@ description: Step-by-step instructions for downloading Mesh samples.
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 5/17/2024
+ms.date: 6/4/2024
 ms.topic: overview
 keywords: Microsoft Mesh, getting started, samples, toolkit, Mesh toolkit, tutorial
 ---
@@ -15,11 +15,11 @@ The Mesh toolkit samples repository on GitHub contains a variety of Mesh sample 
 
 1. In your browser, go to GitHub, and then navigate to the [*Mesh-Toolkit-Unity* repository](https://github.com/microsoft/Mesh-Toolkit-Unity).
 
-    ![______](../../../media/samples/006-toolkit-in-github.png)
+    ![A screen of the Mesh Toolkit Unity repository on Github.](../../../media/samples/006-toolkit-in-github.png)
 
 1. Select the **Code** button, and then select **Download ZIP**.
 
-    ![______](../../../media/samples/007-code-and-download-zip.png)
+    ![A screen shot of the Code button on the Mesh Toolkit Unity page on GitHub.](../../../media/samples/007-code-and-download-zip.png)
 
 1. We recommend that you create a folder on your C: drive named "Mesh Samples" and then move or copy the downloaded Mesh toolkit Zip file to that folder. This is a good name for two reasons: it's short, so it avoids running into a problem with the Windows path length limit, which is 256 characters. Also, the Zip file contains a number of Mesh samples and this keeps them all in one place.
 

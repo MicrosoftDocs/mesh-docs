@@ -4,7 +4,7 @@ description: Learn about various equippable objects and the realistic ways they 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 5/17/2024
+ms.date: 6/4/2024
 ms.topic: overview
 keywords: interactions, interactables, equippables, throwables, avatars, grab, pick up, hold, throw, attach, activate, activation
 ---
@@ -44,7 +44,7 @@ Your first step is to download the Mesh samples.
 
     1. Select the **Code** button and then choose **Download ZIP.** The downloaded Zip file will have "preview" in the title.
 
-        ![A screen shot of the samples repository in GitHub with the preview branch selected.](../../../media/enhance-your-environment/equips-in-detail/044-samples-zip.png)
+        ![A screen shot of the downloaded Mesh toolkit Zip file.](../../../media/enhance-your-environment/equips-in-detail/044-samples-zip.png)
 
     1. We recommend that you create a folder on your C: drive named "Mesh Samples" and then move or copy the downloaded Mesh toolkit Zip file to that folder. This is a good name for two reasons: it's short, so it avoids running into a problem with the Windows path length limit, which is 256 characters. Also, the Zip file contains a number of Mesh samples and this keeps them all in one place.
 
@@ -57,11 +57,15 @@ Your first step is to download the Mesh samples.
 The Equippable prefabs have been pre-added to the Toybox sample project.
 
 1. Open the Toybox project in Unity.
-1. In the **Scene** window, navigate into the building with the fish on the front. The Equippables are on two tables against the back wall.
+1. In the **Scene** window, navigate into the building with the fish on the front.
 
-![A screen shot of the first set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/012-table1.png)
+    ![A screen shot of the first set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/048-toybox-front-view-with-fish.png)
 
-![A screen shot of the second set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/013-table2.png)
+    The Equippables are on two tables against the back wall.
+
+    ![A screen shot of the first set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/012-table1.png)
+
+    ![A screen shot of the second set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/013-table2.png)
 
 Note that not all the objects on the tables are Equippables--the Baseball and Beach Ball are [*throwables*](./interactables.md#throwable).
 
