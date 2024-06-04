@@ -5,11 +5,21 @@ ms.service: mesh
 author: typride 
 ms.author: tmilligan
 ms.date: 4/19/2024
-ms.topic: Guide
+ms.topic: release-notes
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
 
 # Active known issues - Mesh toolkit
+
+## Version 5.2405.X
+
+### Visual Scripting
+
+* An Emulator-only issue with Visual Scripting late-join in very large scenes if visual scripts were using script variables to pass `Transform` or `GameObject` references into script graphs. When this issue occurred, warnings-level messages with the following wording were logged to the console: "OnMessageReceived: Received message with correct class ID 1 but data size in packet expecting total with a packet of 1988, index does not look correct." (52729)
+
+* "Failed to deserialize scriptable object" errors in Emulator that are logged to the Unity console under certain circumstances. (47673)
+
+* An update to a shared property (or variable) applied by a visual script could sometimes be lost due to an earlier update of the same property (or variable) returning from its roundtrip through the server at an inopportune time. (51820)
 
 ## Version 5.2402.0
 

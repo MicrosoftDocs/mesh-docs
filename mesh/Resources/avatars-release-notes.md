@@ -5,7 +5,7 @@ ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 04/19/2024
-ms.topic: overview
+ms.topic: release-notes
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
@@ -21,6 +21,10 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 |  | Web  | View other avatars only |
 | Mobile | Teams mobile | View other avatars only |
 | VDI | Teams | View other avatars only |
+
+## May 23, 2024
+
+A bug that caused roughly 5% of users to experience an outage for Avatars in Teams has been fixed.
 
 ## May 13, 2024
 
