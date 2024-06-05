@@ -5,105 +5,95 @@
 ### Microsoft\.Mesh\.Physics\.AlignField
 
 
-
-Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
+Supports additional properties and methods  from UnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
 
 ### Microsoft\.Mesh\.Physics\.BouncingSurface
 
 
+Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
 
-Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
-
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`bounceEffect`|Microsoft\.Mesh\.Physics\.BouncingSurface\.BounceEffect|yes|yes|no|Bouncing  Surface  \|  Get  Bounce  Effect<br>Bouncing  Surface  \|  Set  Bounce  Effect
-|`friction`|float|yes|yes|yes|Bouncing  Surface  \|  Get  Friction<br>Bouncing  Surface  \|  Set  Friction
-|`randomizeAngle`|float|yes|yes|yes|Bouncing  Surface  \|  Get  Randomize  Angle<br>Bouncing  Surface  \|  Set  Randomize  Angle
-|`targetBody`|UnityEngine\.GameObject|yes|yes|no|Bouncing  Surface  \|  Get  Target  Body<br>Bouncing  Surface  \|  Set  Target  Body
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| BouncingSurface\|GetBounceEffect<br>BouncingSurface\|SetBounceEffect |Microsoft\.Mesh\.Physics\.BouncingSurface\.BounceEffect|yes|yes|no|
+| BouncingSurface\|GetFriction<br>BouncingSurface\|SetFriction |float|yes|yes|yes|
+| BouncingSurface\|GetRandomizeAngle<br>BouncingSurface\|SetRandomizeAngle |float|yes|yes|yes|
+| BouncingSurface\|GetTargetBody<br>BouncingSurface\|SetTargetBody |GameObject|yes|yes|no|
 
 ### Microsoft\.Mesh\.Physics\.BuoyancyField
 
 
+Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
 
-Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
-
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`BuoyancyHullPhysicMaterialName`|string|yes|no|no|Buoyancy  Field  \|  Get  Buoyancy  Hull  Physic  Material  Name
-|`density`|float|yes|yes|yes|Buoyancy  Field  \|  Get  Density<br>Buoyancy  Field  \|  Set  Density
-|`drag`|float|yes|yes|yes|Buoyancy  Field  \|  Get  Drag<br>Buoyancy  Field  \|  Set  Drag
-|`preventDrift`|bool|yes|yes|yes|Buoyancy  Field  \|  Get  Prevent  Drift<br>Buoyancy  Field  \|  Set  Prevent  Drift
-|`skinFriction`|float|yes|yes|yes|Buoyancy  Field  \|  Get  Skin  Friction<br>Buoyancy  Field  \|  Set  Skin  Friction
-|`surfaceType`|Microsoft\.Mesh\.Physics\.BuoyancyField\.SurfaceType|yes|yes|no|Buoyancy  Field  \|  Get  Surface  Type<br>Buoyancy  Field  \|  Set  Surface  Type
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| BuoyancyField\|GetBuoyancyHullPhysicMaterialName |string|yes|no|no|
+| BuoyancyField\|GetDensity<br>BuoyancyField\|SetDensity |float|yes|yes|yes|
+| BuoyancyField\|GetDrag<br>BuoyancyField\|SetDrag |float|yes|yes|yes|
+| BuoyancyField\|GetPreventDrift<br>BuoyancyField\|SetPreventDrift |bool|yes|yes|yes|
+| BuoyancyField\|GetSkinFriction<br>BuoyancyField\|SetSkinFriction |float|yes|yes|yes|
+| BuoyancyField\|GetSurfaceType<br>BuoyancyField\|SetSurfaceType |SurfaceType|yes|yes|no|
 
 ### Microsoft\.Mesh\.Physics\.BuoyancyFieldWaves
 
 
+Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
 
-Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
-
-### Microsoft\.Mesh\.Physics\.CenterOfMassOffset
-
+### icrosoft\.Mesh\.Physics\.CenterOfMassOffset
 
 
-Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
+Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
 
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`OffsetInLocalCoordinates`|UnityEngine\.Vector3|yes|yes|yes|Center  Of  Mass  Offset  \|  Get  Offset  In  Local  Coordinates<br>Center  Of  Mass  Offset  \|  Set  Offset  In  Local  Coordinates
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| CenterOfMassOffset\|GetOffsetInLocalCoordinates<br>CenterOfMassOffset\|SetOffsetInLocalCoordinates |Vector3|yes|yes|yes|
 
 ### Microsoft\.Mesh\.Physics\.ContainmentField
 
 
+Supports additional properties and methods from Behaviour,UnityEngine\.Component,and UnityEngine\.Object.
 
-Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
-
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`maxDeviationFromContainment`|float|yes|yes|yes|Containment  Field  \|  Get  Max  Deviation  From  Containment<br>Containment  Field  \|  Set  Max  Deviation  From  Containment
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| ContainmentField\|GetMaxDeviationFromContainment<br>ContainmentField\|SetMaxDeviationFromContainment |float|yes|yes|yes|
 
 ### Microsoft\.Mesh\.Physics\.DirectionalExplosion
 
 
+Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
 
-Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
-
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`angularImpulseScale`|float|yes|yes|yes|Directional  Explosion  \|  Get  Angular  Impulse  Scale<br>Directional  Explosion  \|  Set  Angular  Impulse  Scale
-|`criticalMass`|float|yes|yes|yes|Directional  Explosion  \|  Get  Critical  Mass<br>Directional  Explosion  \|  Set  Critical  Mass
-|`Direction`|UnityEngine\.Vector3|yes|yes|yes|Directional  Explosion  \|  Get  Direction<br>Directional  Explosion  \|  Set  Direction
-|`directionInLocalSpace`|bool|yes|yes|yes|Directional  Explosion  \|  Get  Direction  In  Local  Space<br>Directional  Explosion  \|  Set  Direction  In  Local  Space
-|`Strength`|float|yes|yes|yes|Directional  Explosion  \|  Get  Strength<br>Directional  Explosion  \|  Set  Strength
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| DirectionalExplosion\|GetAngularImpulseScale<br>DirectionalExplosion\|SetAngularImpulseScale |float|yes|yes|yes|
+| DirectionalExplosion\|GetCriticalMass<br>DirectionalExplosion\|SetCriticalMass |float|yes|yes|yes|
+| DirectionalExplosion\|GetDirection<br>DirectionalExplosion\|SetDirection |Vector3|yes|yes|yes|
+| DirectionalExplosion\|GetDirectionInLocalSpace<br>DirectionalExplosion\|SetDirectionInLocalSpace |bool|yes|yes|yes|
+| DirectionalExplosion\|GetStrength<br>DirectionalExplosion\|SetStrength |float|yes|yes|yes|
 
 ### Microsoft\.Mesh\.Physics\.JointStabilization
 
 
-
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`jointProjection`|bool|yes|yes|yes|Joint  Stabilization  \|  Get  Joint  Projection<br>Joint  Stabilization  \|  Set  Joint  Projection
-|`projectionDistance`|float|yes|yes|yes|Joint  Stabilization  \|  Get  Projection  Distance<br>Joint  Stabilization  \|  Set  Projection  Distance
-|`stabilizationFactor`|float|yes|yes|yes|Joint  Stabilization  \|  Get  Stabilization  Factor<br>Joint  Stabilization  \|  Set  Stabilization  Factor
+
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| JointStabilization\|GetJointProjection<br>JointStabilization\|SetJointProjection |bool|yes|yes|yes|
+| JointStabilization\|GetProjectionDistance<br>JointStabilization\|SetProjectionDistance |float|yes|yes|yes|
+| JointStabilization\|GetStabilizationFactor<br>JointStabilization\|SetStabilizationFactor |float|yes|yes|yes|
 
 ### Microsoft\.Mesh\.Physics\.MagneticBody
 
-
-
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`disableGravityOnContact`|bool|yes|yes|yes|Magnetic  Body  \|  Get  Disable  Gravity  On  Contact<br>Magnetic  Body  \|  Set  Disable  Gravity  On  Contact
-|`DistanceOfInfluence`|float|yes|yes|yes|Magnetic  Body  \|  Get  Distance  Of  Influence<br>Magnetic  Body  \|  Set  Distance  Of  Influence
-|`fieldType`|Microsoft\.Mesh\.Physics\.MagneticBody\.FieldType|yes|yes|no|Magnetic  Body  \|  Get  Field  Type<br>Magnetic  Body  \|  Set  Field  Type
-|`MagnetPole`|Microsoft\.Mesh\.Physics\.MagneticBody\.MagneticPole|yes|yes|no|Magnetic  Body  \|  Get  Magnet  Pole<br>Magnetic  Body  \|  Set  Magnet  Pole
-|`Strength`|float|yes|yes|yes|Magnetic  Body  \|  Get  Strength<br>Magnetic  Body  \|  Set  Strength
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| MagneticBody\|GetDisableGravityOnContact<br>MagneticBody\|SetDisableGravityOnContact |bool|yes|yes|yes|
+| MagneticBody\|GetDistanceOfInfluence<br>MagneticBody\|SetDistanceOfInfluence |float|yes|yes|yes|
+| MagneticBody\|GetFieldType<br>MagneticBody\|SetFieldType |FieldType|yes|yes|no|
+| MagneticBody\|GetMagnetPole<br>MagneticBody\|SetMagnetPole |MagneticPole|yes|yes|no|
+| MagneticBody\|GetStrength<br>MagneticBody\|SetStrength |float|yes|yes|yes|
 
 ### Microsoft\.Mesh\.Physics\.MaxAngularVelocity
-
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
@@ -111,88 +101,84 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 ### Microsoft\.Mesh\.Physics\.OrbitalGravityField
 
 
-
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`DefaultForceRadius`|float|yes|yes|yes|Orbital  Gravity  Field  \|  Get  Default  Force  Radius<br>Orbital  Gravity  Field  \|  Set  Default  Force  Radius
-|`disableGlobalGravity`|bool|yes|yes|yes|Orbital  Gravity  Field  \|  Get  Disable  Global  Gravity<br>Orbital  Gravity  Field  \|  Set  Disable  Global  Gravity
-|`forceMoonsOnCircularOrbit`|bool|yes|yes|yes|Orbital  Gravity  Field  \|  Get  Force  Moons  On  Circular  Orbit<br>Orbital  Gravity  Field  \|  Set  Force  Moons  On  Circular  Orbit
-|`Gravity`|float|yes|yes|yes|Orbital  Gravity  Field  \|  Get  Gravity<br>Orbital  Gravity  Field  \|  Set  Gravity
-|`setForcedRadiusWhereDropped`|bool|yes|yes|yes|Orbital  Gravity  Field  \|  Get  Set  Forced  Radius  Where  Dropped<br>Orbital  Gravity  Field  \|  Set  Set  Forced  Radius  Where  Dropped
-|`setForcedRadiusWherePlaced`|bool|yes|yes|yes|Orbital  Gravity  Field  \|  Get  Set  Forced  Radius  Where  Placed<br>Orbital  Gravity  Field  \|  Set  Set  Forced  Radius  Where  Placed
-|`strengthOfForcedOrbit`|float|yes|yes|yes|Orbital  Gravity  Field  \|  Get  Strength  Of  Forced  Orbit<br>Orbital  Gravity  Field  \|  Set  Strength  Of  Forced  Orbit
+
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| OrbitalGravityField\|GetDefaultForceRadius<br>OrbitalGravityField\|SetDefaultForceRadius |float|yes|yes|yes|
+| OrbitalGravityField\|GetDisableGlobalGravity<br>OrbitalGravityField\|SetDisableGlobalGravity |bool|yes|yes|yes|
+| OrbitalGravityField\|GetForceMoonsOnCircularOrbit<br>OrbitalGravityField\|SetForceMoonsOnCircularOrbit |bool|yes|yes|yes|
+| OrbitalGravityField\|GetGravity<br>OrbitalGravityField\|SetGravity |float|yes|yes|yes|
+| OrbitalGravityField\|GetSetForcedRadiusWhereDropped<br>OrbitalGravityField\|SetSetForcedRadiusWhereDropped |bool|yes|yes|yes|
+| OrbitalGravityField\|GetSetForcedRadiusWherePlaced<br>OrbitalGravityField\|SetSetForcedRadiusWherePlaced |bool|yes|yes|yes|
+| OrbitalGravityField\|GetStrengthOfForcedOrbit<br>OrbitalGravityField\|SetStrengthOfForcedOrbit |float|yes|yes|yes|
 
 ### Microsoft\.Mesh\.Physics\.PreventSleep
 
 
-
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`timeThreshold`|float|yes|yes|yes|Prevent  Sleep  \|  Get  Time  Threshold<br>Prevent  Sleep  \|  Set  Time  Threshold
+
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| PreventSleep\|GetTimeThreshold<br>PreventSleep\|SetTimeThreshold |float|yes|yes|yes|
 
 ### Microsoft\.Mesh\.Physics\.ResetBodyTransforms
 
 
-
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`IsResetInProgress`|bool|yes|no|no|Reset  Body  Transforms  \|  Is  Reset  In  Progress
 
-| Method | Parameters | Returns | Script |
-|--------|------------|---------|--------|
-|`ResetBodyTransformsNow`||void|Reset  Body  Transforms  \|  Reset  Body  Transforms  Now
-|`SaveBodyTransformsNow`||void|Reset  Body  Transforms  \|  Save  Body  Transforms  Now
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| ResetBodyTransforms\|IsResetInProgress |bool|yes|no|no|
+
+| Node | Inputs | Outputs | 
+|--------|------------|---------|
+| ResetBodyTransforms\|ResetBodyTransformsNow ||void|
+| ResetBodyTransforms\|SaveBodyTransformsNow ||void|
 
 ### Microsoft\.Mesh\.Physics\.ScaledGravityField
 
 
+SupportsadditionalpropertiesandmethodsfromUnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
 
-Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
-
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`GravityScale`|float|yes|yes|yes|Scaled  Gravity  Field  \|  Get  Gravity  Scale<br>Scaled  Gravity  Field  \|  Set  Gravity  Scale
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| ScaledGravityField\|GetGravityScale<br>ScaledGravityField\|SetGravityScale |float|yes|yes|yes|
 
 ### Microsoft\.Mesh\.Physics\.SphericalExplosion
 
 
-
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`angularImpulseScale`|float|yes|yes|yes|Spherical  Explosion  \|  Get  Angular  Impulse  Scale<br>Spherical  Explosion  \|  Set  Angular  Impulse  Scale
-|`criticalMass`|float|yes|yes|yes|Spherical  Explosion  \|  Get  Critical  Mass<br>Spherical  Explosion  \|  Set  Critical  Mass
-|`DistanceOfInfluence`|float|yes|yes|yes|Spherical  Explosion  \|  Get  Distance  Of  Influence<br>Spherical  Explosion  \|  Set  Distance  Of  Influence
-|`fieldType`|Microsoft\.Mesh\.Physics\.SphericalExplosion\.ExplosionType|yes|yes|no|Spherical  Explosion  \|  Get  Field  Type<br>Spherical  Explosion  \|  Set  Field  Type
-|`occlusion`|bool|yes|yes|yes|Spherical  Explosion  \|  Get  Occlusion<br>Spherical  Explosion  \|  Set  Occlusion
-|`Strength`|float|yes|yes|yes|Spherical  Explosion  \|  Get  Strength<br>Spherical  Explosion  \|  Set  Strength
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| SphericalExplosion\|GetAngularImpulseScale<br>SphericalExplosion\|SetAngularImpulseScale |float|yes|yes|yes|
+| SphericalExplosion\|GetCriticalMass<br>SphericalExplosion\|SetCriticalMass |float|yes|yes|yes|
+| SphericalExplosion\|GetDistanceOfInfluence<br>SphericalExplosion\|SetDistanceOfInfluence |float|yes|yes|yes|
+| SphericalExplosion\|GetFieldType<br>SphericalExplosion\|SetFieldType |ExplosionType|yes|yes|no|
+| SphericalExplosion\|GetOcclusion<br>SphericalExplosion\|SetOcclusion |bool|yes|yes|yes|
+| SphericalExplosion\|GetStrength<br>SphericalExplosion\|SetStrength |float|yes|yes|yes|
 
 ### Microsoft\.Mesh\.Physics\.StickyBody
 
 
-
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`CanStickToDynamic`|bool|yes|no|no|Sticky  Body  \|  Can  Stick  To  Dynamic
-|`CanStickToSpace`|bool|yes|no|no|Sticky  Body  \|  Can  Stick  To  Space
-|`CanStickToStatic`|bool|yes|no|no|Sticky  Body  \|  Can  Stick  To  Static
-|`CollisionControl`|Microsoft\.Mesh\.Physics\.StickyBody\.CollisionControlType|yes|no|no|Sticky  Body  \|  Get  Collision  Control
-|`IsSticking`|bool|yes|no|no|Sticky  Body  \|  Is  Sticking
-|`StickingTo`|UnityEngine\.Rigidbody|yes|no|no|Sticky  Body  \|  Get  Sticking  To
-|`StickTo`|Microsoft\.Mesh\.Physics\.StickyBody\.BaseType|yes|yes|no|Sticky  Body  \|  Get  Stick  To<br>Sticky  Body  \|  Set  Stick  To
-|`When`|Microsoft\.Mesh\.Physics\.StickyBody\.SettleType|yes|yes|no|Sticky  Body  \|  Get  When<br>Sticky  Body  \|  Set  When
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| StickyBody\|CanStickToDynamic |bool|yes|no|no|
+| StickyBody\|CanStickToSpace |bool|yes|no|no|
+| StickyBody\|CanStickToStatic |bool|yes|no|no|
+| StickyBody\|GetCollisionControl |CollisionControlType|yes|no|no|
+| StickyBody\|IsSticking |bool|yes|no|no|
+| StickyBody\|GetStickingTo |Rigidbody|yes|no|no|
+| StickyBody\|GetStickTo<br>StickyBody\|SetStickTo |BaseType|yes|yes|no|
+| StickyBody\|GetWhen<br>StickyBody\|SetWhen |SettleType|yes|yes|no|
 
 ### Microsoft\.Mesh\.Physics\.ThrowTrajectory
-
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
@@ -200,61 +186,51 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 ### Microsoft\.Mesh\.Physics\.VelocityDirectionField
 
 
-
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`accelerationType`|Microsoft\.Mesh\.Physics\.VelocityDirectionField\.AccelerationType|yes|yes|no|Velocity  Direction  Field  \|  Get  Acceleration  Type<br>Velocity  Direction  Field  \|  Set  Acceleration  Type
-|`directionInLocalSpace`|bool|yes|yes|yes|Velocity  Direction  Field  \|  Get  Direction  In  Local  Space<br>Velocity  Direction  Field  \|  Set  Direction  In  Local  Space
-|`followGameObject`|bool|yes|yes|yes|Velocity  Direction  Field  \|  Get  Follow  Game  Object<br>Velocity  Direction  Field  \|  Set  Follow  Game  Object
-|`MaxAcceleration`|float|yes|yes|yes|Velocity  Direction  Field  \|  Get  Max  Acceleration<br>Velocity  Direction  Field  \|  Set  Max  Acceleration
-|`targetBody`|UnityEngine\.GameObject|yes|yes|no|Velocity  Direction  Field  \|  Get  Target  Body<br>Velocity  Direction  Field  \|  Set  Target  Body
-|`TargetDirection`|UnityEngine\.Vector3|yes|yes|yes|Velocity  Direction  Field  \|  Get  Target  Direction<br>Velocity  Direction  Field  \|  Set  Target  Direction
-|`velocityType`|Microsoft\.Mesh\.Physics\.VelocityDirectionField\.VelocityType|yes|yes|no|Velocity  Direction  Field  \|  Get  Velocity  Type<br>Velocity  Direction  Field  \|  Set  Velocity  Type
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| VelocityDirectionField\|GetAccelerationType<br>VelocityDirectionField\|SetAccelerationType |AccelerationType|yes|yes|no|
+| VelocityDirectionField\|GetDirectionInLocalSpace<br>VelocityDirectionField\|SetDirectionInLocalSpace |bool|yes|yes|yes|
+| VelocityDirectionField\|GetFollowGameObject<br>VelocityDirectionField\|SetFollowGameObject |bool|yes|yes|yes|
+| VelocityDirectionField\|GetMaxAcceleration<br>VelocityDirectionField\|SetMaxAcceleration |float|yes|yes|yes|
+| VelocityDirectionField\|GetTargetBody<br>VelocityDirectionField\|SetTargetBody |GameObject|yes|yes|no|
+| VelocityDirectionField\|GetTargetDirection<br>VelocityDirectionField\|SetTargetDirection |Vector3|yes|yes|yes|
+| VelocityDirectionField\|GetVelocityType<br>VelocityDirectionField\|SetVelocityType |VelocityType|yes|yes|no|
 
 ### Microsoft\.Mesh\.Physics\.VelocityMagnitudeField
 
 
-
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`accelerationType`|Microsoft\.Mesh\.Physics\.VelocityMagnitudeField\.AccelerationType|yes|yes|no|Velocity  Magnitude  Field  \|  Get  Acceleration  Type<br>Velocity  Magnitude  Field  \|  Set  Acceleration  Type
-|`MaxAcceleration`|float|yes|yes|yes|Velocity  Magnitude  Field  \|  Get  Max  Acceleration<br>Velocity  Magnitude  Field  \|  Set  Max  Acceleration
-|`velocityType`|Microsoft\.Mesh\.Physics\.VelocityMagnitudeField\.VelocityType|yes|yes|no|Velocity  Magnitude  Field  \|  Get  Velocity  Type<br>Velocity  Magnitude  Field  \|  Set  Velocity  Type
-
-| Method | Parameters | Returns | Script |
-|--------|------------|---------|--------|
-|`setMaxSpeed`|`maxSpeed`  float|void|Velocity  Magnitude  Field  \|  Set  Max  Speed
-|`setMinSpeed`|`minSpeed`  float|void|Velocity  Magnitude  Field  \|  Set  Min  Speed
-|`setTargetSpeed`|`targetSpeed`  float|void|Velocity  Magnitude  Field  \|  Set  Target  Speed
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| VelocityMagnitudeField\|GetAccelerationType<br>VelocityMagnitudeField\|SetAccelerationType |AccelerationType|yes|yes|no|float|void|
+| VelocityMagnitudeField\|SetMinSpeed |`minSpeed`float|void|
+| VelocityMagnitudeField\|SetTargetSpeed |`targetSpeed`float|void|
 
 ### Microsoft\.Mesh\.Physics\.VelocityVectorField
 
 
-
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
-| Property | Type | Read? | Write? | Share? | Script |
-|----------|------|:-----:|:------:|:------:|--------|
-|`accelerationType`|Microsoft\.Mesh\.Physics\.VelocityVectorField\.AccelerationType|yes|yes|no|Velocity  Vector  Field  \|  Get  Acceleration  Type<br>Velocity  Vector  Field  \|  Set  Acceleration  Type
-|`directionInLocalSpace`|bool|yes|yes|yes|Velocity  Vector  Field  \|  Get  Direction  In  Local  Space<br>Velocity  Vector  Field  \|  Set  Direction  In  Local  Space
-|`MaxAcceleration`|float|yes|yes|yes|Velocity  Vector  Field  \|  Get  Max  Acceleration<br>Velocity  Vector  Field  \|  Set  Max  Acceleration
-|`TargetVelocity`|UnityEngine\.Vector3|yes|yes|yes|Velocity  Vector  Field  \|  Get  Target  Velocity<br>Velocity  Vector  Field  \|  Set  Target  Velocity
-|`velocityType`|Microsoft\.Mesh\.Physics\.VelocityVectorField\.VelocityType|yes|yes|no|Velocity  Vector  Field  \|  Get  Velocity  Type<br>Velocity  Vector  Field  \|  Set  Velocity  Type
+|Property|Type|Read?|Write?|Share?|
+|----------|------|:-----:|:------:|:------:|
+| VelocityVectorField\|GetAccelerationType<br>VelocityVectorField\|SetAccelerationType |AccelerationType|yes|yes|no|
+| VelocityVectorField\|GetDirectionInLocalSpace<br>VelocityVectorField\|SetDirectionInLocalSpace |bool|yes|yes|yes|
+| VelocityVectorField\|GetMaxAcceleration<br>VelocityVectorField\|SetMaxAcceleration |float|yes|yes|yes|
+| VelocityVectorField\|GetTargetVelocity<br>VelocityVectorField\|SetTargetVelocity |Vector3|yes|yes|yes|
+| VelocityVectorField\|GetVelocityType<br>VelocityVectorField\|SetVelocityType |VelocityType|yes|yes|no|
 
 ## Enums
 
 ### Microsoft\.Mesh\.Physics\.BouncingSurface\.BounceEffect
 
 
+Valuesaremutuallyexclusive\.
+\(Underlyingtype:int)
 
-Values are mutually exclusive\.
-\(Underlying type: int)
-
-| Enum | Value |
+|Enum|Value|
 |------|------:|
 |`PerfectBounce`|0
 |`SetVelocityMagnitude`|1
@@ -263,11 +239,10 @@ Values are mutually exclusive\.
 ### Microsoft\.Mesh\.Physics\.BuoyancyField\.SurfaceType
 
 
+Valuesaremutuallyexclusive\.
+\(Underlyingtype:int)
 
-Values are mutually exclusive\.
-\(Underlying type: int)
-
-| Enum | Value |
+|Enum|Value|
 |------|------:|
 |`StaticFlat`|0
 |`DynamicFlat`|1
@@ -275,11 +250,10 @@ Values are mutually exclusive\.
 ### Microsoft\.Mesh\.Physics\.MagneticBody\.FieldType
 
 
+Valuesaremutuallyexclusive\.
+\(Underlyingtype:int)
 
-Values are mutually exclusive\.
-\(Underlying type: int)
-
-| Enum | Value |
+|Enum|Value|
 |------|------:|
 |`Constant`|0
 |`Linear`|1
@@ -288,11 +262,10 @@ Values are mutually exclusive\.
 ### Microsoft\.Mesh\.Physics\.MagneticBody\.MagneticPole
 
 
+Valuesaremutuallyexclusive\.
+\(Underlyingtype:int)
 
-Values are mutually exclusive\.
-\(Underlying type: int)
-
-| Enum | Value |
+|Enum|Value|
 |------|------:|
 |`NorthPole`|0
 |`SouthPole`|1
@@ -300,22 +273,20 @@ Values are mutually exclusive\.
 ### Microsoft\.Mesh\.Physics\.SphericalExplosion\.ExplosionType
 
 
+Valuesaremutuallyexclusive\.
+\(Underlyingtype:int)
 
-Values are mutually exclusive\.
-\(Underlying type: int)
-
-| Enum | Value |
+|Enum|Value|
 |------|------:|
 |`Constant`|0
 |`LinearDrop`|1
 ### Microsoft\.Mesh\.Physics\.StickyBody\.BaseType
 
 
+Valuesaremutuallyexclusive\.
+\(Underlyingtype:int)
 
-Values are mutually exclusive\.
-\(Underlying type: int)
-
-| Enum | Value |
+|Enum|Value|
 |------|------:|
 |`Space`|0
 |`OnlyStatic`|1
@@ -324,11 +295,10 @@ Values are mutually exclusive\.
 ### Microsoft\.Mesh\.Physics\.StickyBody\.CollisionControlType
 
 
+Valuesaremutuallyexclusive\.
+\(Underlyingtype:int)
 
-Values are mutually exclusive\.
-\(Underlying type: int)
-
-| Enum | Value |
+|Enum|Value|
 |------|------:|
 |`CollideNormally`|0
 |`NoCollision`|1
@@ -336,22 +306,20 @@ Values are mutually exclusive\.
 ### Microsoft\.Mesh\.Physics\.StickyBody\.SettleType
 
 
+Valuesaremutuallyexclusive\.
+\(Underlyingtype:int)
 
-Values are mutually exclusive\.
-\(Underlying type: int)
-
-| Enum | Value |
+|Enum|Value|
 |------|------:|
 |`Touching`|0
 |`Settled`|1
 ### Microsoft\.Mesh\.Physics\.VelocityDirectionField\.AccelerationType
 
 
+Valuesaremutuallyexclusive\.
+\(Underlyingtype:int)
 
-Values are mutually exclusive\.
-\(Underlying type: int)
-
-| Enum | Value |
+|Enum|Value|
 |------|------:|
 |`Instantaneous`|0
 |`ConstantAcceleration`|1
@@ -359,22 +327,20 @@ Values are mutually exclusive\.
 ### Microsoft\.Mesh\.Physics\.VelocityDirectionField\.VelocityType
 
 
+Valuesaremutuallyexclusive\.
+\(Underlyingtype:int)
 
-Values are mutually exclusive\.
-\(Underlying type: int)
-
-| Enum | Value |
+|Enum|Value|
 |------|------:|
 |`LinearVelocity`|0
 |`AngularVelocity`|1
 ### Microsoft\.Mesh\.Physics\.VelocityMagnitudeField\.AccelerationType
 
 
+Valuesaremutuallyexclusive\.
+\(Underlyingtype:int)
 
-Values are mutually exclusive\.
-\(Underlying type: int)
-
-| Enum | Value |
+|Enum|Value|
 |------|------:|
 |`Instantaneous`|0
 |`ConstantAcceleration`|1
@@ -382,22 +348,20 @@ Values are mutually exclusive\.
 ### Microsoft\.Mesh\.Physics\.VelocityMagnitudeField\.VelocityType
 
 
+Valuesaremutuallyexclusive\.
+\(Underlyingtype:int)
 
-Values are mutually exclusive\.
-\(Underlying type: int)
-
-| Enum | Value |
+|Enum|Value|
 |------|------:|
 |`LinearVelocity`|0
 |`AngularVelocity`|1
 ### Microsoft\.Mesh\.Physics\.VelocityVectorField\.AccelerationType
 
 
+Valuesaremutuallyexclusive\.
+\(Underlyingtype:int)
 
-Values are mutually exclusive\.
-\(Underlying type: int)
-
-| Enum | Value |
+|Enum|Value|
 |------|------:|
 |`Instantaneous`|0
 |`ConstantAcceleration`|1
@@ -405,11 +369,12 @@ Values are mutually exclusive\.
 ### Microsoft\.Mesh\.Physics\.VelocityVectorField\.VelocityType
 
 
+Valuesaremutuallyexclusive\.
+\(Underlyingtype:int)
 
-Values are mutually exclusive\.
-\(Underlying type: int)
-
-| Enum | Value |
+|Enum|Value|
 |------|------:|
 |`LinearVelocity`|0
 |`AngularVelocity`|1
+
+
