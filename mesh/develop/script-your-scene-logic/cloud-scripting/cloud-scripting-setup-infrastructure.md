@@ -1,11 +1,11 @@
 ---
-title: Cloud Scripting infrastructure and management
+title: Mesh Cloud Scripting infrastructure and management
 description: Learn about setting up Mesh Cloud Scripting in Azure.
 ms.service: mesh
-author: typride
+author: vtieto
 ms.author: vinnietieto
-ms.date: 3/12/2024
-ms.topic: Tutorial
+ms.date: 6/6/2024
+ms.topic: conceptual
 keywords: Microsoft Mesh, Azure, admin, Mesh Cloud Scripting, scripting, cloud scripting
 ---
 
@@ -134,9 +134,9 @@ For more information, refer to the [Application Insights Docs](/azure/azure-moni
 For more information on the defaults, refer to the [Bicep & ARM template reference](/azure/templates/microsoft.insights/components?pivots=deployment-language-bicep)
  for the Virtual Network resource.
 
-### Mesh Cloud Scripting Services cloud infrastructure diagram
+### Mesh Cloud Scripting Services infrastructure diagram
 
-:::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/image016.png" alt-text="Mesh Cloud Scripting Service infrastructure diagram":::
+:::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/image016.png" alt-text="A diagram showing the Mesh Cloud Scripting services infrastructure":::
 
 ### Resource provider registrations
 
@@ -178,7 +178,7 @@ Here are a few recommendations for how to grant developers access to provision t
 
     Here are our recommended permissions for the Custom roles you create:
 
-    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/image017.png" alt-text="Mesh Cloud Scripting Service infrastructure diagram":::
+    :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/image017.png" alt-text="A screen of the page where you choose custom roles.":::
 
     The JSON file you would upload should be similar to this**:
 

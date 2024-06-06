@@ -2,10 +2,10 @@
 title: Prepare for your first Mesh Cloud Scripting project
 description: Learn how to prepare for creating your first Mesh Cloud Scripting project
 ms.service: mesh
-author: typride
+author: vtieto
 ms.author: vinnietieto
 ms.date: 6/6/2024
-ms.topic: Guide
+ms.topic: get-started
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
 
@@ -21,7 +21,7 @@ In this article, you'll learn about how to prepare for your first Mesh Cloud Scr
 
 - An M365 Office subscription with access to SharePoint, OneDrive, and M365 Calendar.
 
-- An [Azure subscription](https://azure.microsoft.com/en-us/products/cloud-services/) and familiarity with the Azure portal. Azure subscriptions come in a variety of forms; if you're unsure about this, talk to your IT admin.
+- An [Azure subscription](https://azure.microsoft.com/products/cloud-services/) and familiarity with the Azure portal. Azure subscriptions come in a variety of forms; if you're unsure about this, talk to your IT admin.
 
 - Make sure you have the following installed:
 
