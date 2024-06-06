@@ -17,7 +17,7 @@ In this article, you'll learn about various aspects of Mesh Clouding infrastruct
 
 ### Resources deployed
 
-Mesh Cloud Scripting Services are .NET-based apps that run in the Cloud. The Mesh Cloud Scripting cloud infrastructure deployed to the customer's Azure Subscription contains the following Azure resources:
+Mesh Cloud Scripting consists of .NET-based apps that run in the Cloud. The Mesh Cloud Scripting cloud infrastructure deployed to the customer's Azure Subscription contains the following Azure resources:
 
 1. **[App Service plan](/azure/app-service/overview-hosting-plans)**: Represents a compute cluster where web apps can run. It can also run one or more different web apps.
 
