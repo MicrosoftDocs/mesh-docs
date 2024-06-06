@@ -2,7 +2,7 @@
 
 ## Scene
 
-### [TMPro\.TextMeshPro](https://docs.unity3d.com/Manual/com.unity.textmeshpro.html)
+### [TextMeshPro](https://docs.unity3d.com/Manual/com.unity.textmeshpro.html)
 
 
 
@@ -10,11 +10,11 @@ Supports additional properties and methods from UnityEngine\.UI\.Graphic, UnityE
 
 | Property | Type | Read? | Write? | Share? | Script |
 |----------|------|:-----:|:------:|:------:|--------|
-|`transform`|UnityEngine\.Transform|yes|no|no|Text   Mesh   Pro   \|   Get   Transform
+|Text Mesh Pro \| Get Transform|UnityEngine\.Transform|yes|no|no|
 
 ## Enums
 
-### [TMPro\.FontStyles](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/api/TMPro.FontStyles.html)
+### [FontStyles](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/api/TMPro.FontStyles.html)
 
 
 

@@ -2,24 +2,24 @@
 
 ## Scene
 
-### Microsoft\.Mesh\.Physics\.AlignField
+### AlignField
 
 
 Supports additional properties and methods  from UnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
 
-### Microsoft\.Mesh\.Physics\.BouncingSurface
+### BouncingSurface
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
 
 |Property|Type|Read?|Write?|Share?|
 |----------|------|:-----:|:------:|:------:|
-| BouncingSurface\|GetBounceEffect<br>BouncingSurface\|SetBounceEffect |Microsoft\.Mesh\.Physics\.BouncingSurface\.BounceEffect|yes|yes|no|
+| BouncingSurface\|GetBounceEffect<br>BouncingSurface\|SetBounceEffect |BouncingSurface\.BounceEffect|yes|yes|no|
 | BouncingSurface\|GetFriction<br>BouncingSurface\|SetFriction |float|yes|yes|yes|
 | BouncingSurface\|GetRandomizeAngle<br>BouncingSurface\|SetRandomizeAngle |float|yes|yes|yes|
 | BouncingSurface\|GetTargetBody<br>BouncingSurface\|SetTargetBody |GameObject|yes|yes|no|
 
-### Microsoft\.Mesh\.Physics\.BuoyancyField
+### BuoyancyField
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
@@ -33,7 +33,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngi
 | BuoyancyField\|GetSkinFriction<br>BuoyancyField\|SetSkinFriction |float|yes|yes|yes|
 | BuoyancyField\|GetSurfaceType<br>BuoyancyField\|SetSurfaceType |SurfaceType|yes|yes|no|
 
-### Microsoft\.Mesh\.Physics\.BuoyancyFieldWaves
+### BuoyancyFieldWaves
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
@@ -47,7 +47,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngi
 |----------|------|:-----:|:------:|:------:|
 | CenterOfMassOffset\|GetOffsetInLocalCoordinates<br>CenterOfMassOffset\|SetOffsetInLocalCoordinates |Vector3|yes|yes|yes|
 
-### Microsoft\.Mesh\.Physics\.ContainmentField
+### ContainmentField
 
 
 Supports additional properties and methods from Behaviour,UnityEngine\.Component,and UnityEngine\.Object.
@@ -56,7 +56,7 @@ Supports additional properties and methods from Behaviour,UnityEngine\.Component
 |----------|------|:-----:|:------:|:------:|
 | ContainmentField\|GetMaxDeviationFromContainment<br>ContainmentField\|SetMaxDeviationFromContainment |float|yes|yes|yes|
 
-### Microsoft\.Mesh\.Physics\.DirectionalExplosion
+### DirectionalExplosion
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
@@ -69,7 +69,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngi
 | DirectionalExplosion\|GetDirectionInLocalSpace<br>DirectionalExplosion\|SetDirectionInLocalSpace |bool|yes|yes|yes|
 | DirectionalExplosion\|GetStrength<br>DirectionalExplosion\|SetStrength |float|yes|yes|yes|
 
-### Microsoft\.Mesh\.Physics\.JointStabilization
+### JointStabilization
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
@@ -81,7 +81,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 | JointStabilization\|GetProjectionDistance<br>JointStabilization\|SetProjectionDistance |float|yes|yes|yes|
 | JointStabilization\|GetStabilizationFactor<br>JointStabilization\|SetStabilizationFactor |float|yes|yes|yes|
 
-### Microsoft\.Mesh\.Physics\.MagneticBody
+### MagneticBody
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
@@ -93,12 +93,12 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 | MagneticBody\|GetMagnetPole<br>MagneticBody\|SetMagnetPole |MagneticPole|yes|yes|no|
 | MagneticBody\|GetStrength<br>MagneticBody\|SetStrength |float|yes|yes|yes|
 
-### Microsoft\.Mesh\.Physics\.MaxAngularVelocity
+### MaxAngularVelocity
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
-### Microsoft\.Mesh\.Physics\.OrbitalGravityField
+### OrbitalGravityField
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
@@ -114,7 +114,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 | OrbitalGravityField\|GetSetForcedRadiusWherePlaced<br>OrbitalGravityField\|SetSetForcedRadiusWherePlaced |bool|yes|yes|yes|
 | OrbitalGravityField\|GetStrengthOfForcedOrbit<br>OrbitalGravityField\|SetStrengthOfForcedOrbit |float|yes|yes|yes|
 
-### Microsoft\.Mesh\.Physics\.PreventSleep
+### PreventSleep
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
@@ -124,7 +124,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 |----------|------|:-----:|:------:|:------:|
 | PreventSleep\|GetTimeThreshold<br>PreventSleep\|SetTimeThreshold |float|yes|yes|yes|
 
-### Microsoft\.Mesh\.Physics\.ResetBodyTransforms
+### ResetBodyTransforms
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
@@ -139,7 +139,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 | ResetBodyTransforms\|ResetBodyTransformsNow ||void|
 | ResetBodyTransforms\|SaveBodyTransformsNow ||void|
 
-### Microsoft\.Mesh\.Physics\.ScaledGravityField
+### ScaledGravityField
 
 
 SupportsadditionalpropertiesandmethodsfromUnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
@@ -148,7 +148,7 @@ SupportsadditionalpropertiesandmethodsfromUnityEngine\.Behaviour,UnityEngine\.Co
 |----------|------|:-----:|:------:|:------:|
 | ScaledGravityField\|GetGravityScale<br>ScaledGravityField\|SetGravityScale |float|yes|yes|yes|
 
-### Microsoft\.Mesh\.Physics\.SphericalExplosion
+### SphericalExplosion
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
@@ -162,7 +162,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 | SphericalExplosion\|GetOcclusion<br>SphericalExplosion\|SetOcclusion |bool|yes|yes|yes|
 | SphericalExplosion\|GetStrength<br>SphericalExplosion\|SetStrength |float|yes|yes|yes|
 
-### Microsoft\.Mesh\.Physics\.StickyBody
+### StickyBody
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
@@ -178,12 +178,12 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 | StickyBody\|GetStickTo<br>StickyBody\|SetStickTo |BaseType|yes|yes|no|
 | StickyBody\|GetWhen<br>StickyBody\|SetWhen |SettleType|yes|yes|no|
 
-### Microsoft\.Mesh\.Physics\.ThrowTrajectory
+### ThrowTrajectory
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
-### Microsoft\.Mesh\.Physics\.VelocityDirectionField
+### VelocityDirectionField
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
@@ -198,7 +198,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 | VelocityDirectionField\|GetTargetDirection<br>VelocityDirectionField\|SetTargetDirection |Vector3|yes|yes|yes|
 | VelocityDirectionField\|GetVelocityType<br>VelocityDirectionField\|SetVelocityType |VelocityType|yes|yes|no|
 
-### Microsoft\.Mesh\.Physics\.VelocityMagnitudeField
+### VelocityMagnitudeField
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
@@ -209,7 +209,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 | VelocityMagnitudeField\|SetMinSpeed |`minSpeed`float|void|
 | VelocityMagnitudeField\|SetTargetSpeed |`targetSpeed`float|void|
 
-### Microsoft\.Mesh\.Physics\.VelocityVectorField
+### VelocityVectorField
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
@@ -224,7 +224,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 
 ## Enums
 
-### Microsoft\.Mesh\.Physics\.BouncingSurface\.BounceEffect
+### BouncingSurface\.BounceEffect
 
 
 Valuesaremutuallyexclusive\.
@@ -236,7 +236,7 @@ Valuesaremutuallyexclusive\.
 |`SetVelocityMagnitude`|1
 |`SetNormalVelocity`|2
 |`BounceTowardsTargetBody`|3
-### Microsoft\.Mesh\.Physics\.BuoyancyField\.SurfaceType
+### BuoyancyField\.SurfaceType
 
 
 Valuesaremutuallyexclusive\.
@@ -247,7 +247,7 @@ Valuesaremutuallyexclusive\.
 |`StaticFlat`|0
 |`DynamicFlat`|1
 |`DynamicFlatPerBody`|2
-### Microsoft\.Mesh\.Physics\.MagneticBody\.FieldType
+### MagneticBody\.FieldType
 
 
 Valuesaremutuallyexclusive\.
@@ -259,7 +259,7 @@ Valuesaremutuallyexclusive\.
 |`Linear`|1
 |`Inverse`|2
 |`InverseSquared`|3
-### Microsoft\.Mesh\.Physics\.MagneticBody\.MagneticPole
+### MagneticBody\.MagneticPole
 
 
 Valuesaremutuallyexclusive\.
@@ -270,7 +270,7 @@ Valuesaremutuallyexclusive\.
 |`NorthPole`|0
 |`SouthPole`|1
 |`Magnetic`|2
-### Microsoft\.Mesh\.Physics\.SphericalExplosion\.ExplosionType
+### SphericalExplosion\.ExplosionType
 
 
 Valuesaremutuallyexclusive\.
@@ -280,7 +280,7 @@ Valuesaremutuallyexclusive\.
 |------|------:|
 |`Constant`|0
 |`LinearDrop`|1
-### Microsoft\.Mesh\.Physics\.StickyBody\.BaseType
+### StickyBody\.BaseType
 
 
 Valuesaremutuallyexclusive\.
@@ -292,7 +292,7 @@ Valuesaremutuallyexclusive\.
 |`OnlyStatic`|1
 |`OnlyDynamic`|2
 |`StaticAndDynamic`|3
-### Microsoft\.Mesh\.Physics\.StickyBody\.CollisionControlType
+### StickyBody\.CollisionControlType
 
 
 Valuesaremutuallyexclusive\.
@@ -303,7 +303,7 @@ Valuesaremutuallyexclusive\.
 |`CollideNormally`|0
 |`NoCollision`|1
 |`NoCollisionWhenSticking`|2
-### Microsoft\.Mesh\.Physics\.StickyBody\.SettleType
+### StickyBody\.SettleType
 
 
 Valuesaremutuallyexclusive\.
@@ -313,7 +313,7 @@ Valuesaremutuallyexclusive\.
 |------|------:|
 |`Touching`|0
 |`Settled`|1
-### Microsoft\.Mesh\.Physics\.VelocityDirectionField\.AccelerationType
+### VelocityDirectionField\.AccelerationType
 
 
 Valuesaremutuallyexclusive\.
@@ -324,7 +324,7 @@ Valuesaremutuallyexclusive\.
 |`Instantaneous`|0
 |`ConstantAcceleration`|1
 |`SmoothApproach`|2
-### Microsoft\.Mesh\.Physics\.VelocityDirectionField\.VelocityType
+### VelocityDirectionField\.VelocityType
 
 
 Valuesaremutuallyexclusive\.
@@ -334,7 +334,7 @@ Valuesaremutuallyexclusive\.
 |------|------:|
 |`LinearVelocity`|0
 |`AngularVelocity`|1
-### Microsoft\.Mesh\.Physics\.VelocityMagnitudeField\.AccelerationType
+### VelocityMagnitudeField\.AccelerationType
 
 
 Valuesaremutuallyexclusive\.
@@ -345,7 +345,7 @@ Valuesaremutuallyexclusive\.
 |`Instantaneous`|0
 |`ConstantAcceleration`|1
 |`SmoothApproach`|2
-### Microsoft\.Mesh\.Physics\.VelocityMagnitudeField\.VelocityType
+### VelocityMagnitudeField\.VelocityType
 
 
 Valuesaremutuallyexclusive\.
@@ -355,7 +355,7 @@ Valuesaremutuallyexclusive\.
 |------|------:|
 |`LinearVelocity`|0
 |`AngularVelocity`|1
-### Microsoft\.Mesh\.Physics\.VelocityVectorField\.AccelerationType
+### VelocityVectorField\.AccelerationType
 
 
 Valuesaremutuallyexclusive\.
@@ -366,7 +366,7 @@ Valuesaremutuallyexclusive\.
 |`Instantaneous`|0
 |`ConstantAcceleration`|1
 |`SmoothApproach`|2
-### Microsoft\.Mesh\.Physics\.VelocityVectorField\.VelocityType
+### VelocityVectorField\.VelocityType
 
 
 Valuesaremutuallyexclusive\.

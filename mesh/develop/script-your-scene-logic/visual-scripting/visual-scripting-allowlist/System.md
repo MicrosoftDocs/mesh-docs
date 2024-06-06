@@ -11,7 +11,7 @@
 | Boolean \| Get False String |string|yes|no|
 | Boolean \| Get True String |string|yes|no|
 
-| Method | Parameters | Returns |
+| Node | Inputs | Outputs |
 |--------|------------|---------|
 | Boolean \| Equals |`obj` bool|bool|
 | Boolean \| Parse |`value` string|bool|
@@ -25,7 +25,7 @@
 | Character \| Get Max Value |char|yes|no|
 | Character \| Get Min Value |char|yes|no|
 
-| Method | Parameters | Returns |
+| Node | Inputs | Outputs |
 |--------|------------|---------|
 | Character \| Equals |`obj` char|bool|
 | Character \| Is Control |`c` char|bool|
@@ -56,7 +56,7 @@
 | Double \| Get Negative Infinity |double|yes|no|
 | Double \| Get Positive Infinity |double|yes|no|
 
-| Method | Parameters | Returns |
+| Node | Inputs | Outputs |
 |--------|------------|---------|
 | Double \| Is Finite |`d` double|bool|
 | Double \| Is Infinity |`d` double|bool|
@@ -80,7 +80,7 @@
 | Float \| Get Negative Infinity |float|yes|no|
 | Float \| Get Positive Infinity |float|yes|no|
 
-| Method | Parameters | Returns |
+| Node | Inputs | Outputs |
 |--------|------------|---------|
 | Float \| Equals |`obj` float|bool|
 | Float \| Is Finite |`f` float|bool||`f` float|bool|Float \| Is Infinity
@@ -101,7 +101,7 @@
 | Integer \| Get Max Value |int|yes|no|
 | Integer \| Get Min Value |int|yes|no|
 
-| Method | Parameters | Returns |
+| Node | Inputs | Outputs |
 |--------|------------|---------|
 | Integer \| Equals |`obj` int|bool|
 | Integer \| Parse |`s` string|int|
@@ -126,7 +126,7 @@
 | Date Time \| Get Today |DateTime|yes|no|
 | Date Time \| Get UTC Now |DateTime|yes|no|
 
-| Method | Parameters | Returns |
+| Node | Inputs | Outputs |
 |--------|------------|---------|
 | Date Time \| Create Date Time |`year` int<br>`month` int<br>`day` int|DateTime|
 | Date Time \| Create Date Time |`year` int<br>`month` int<br>`day` int<br>`hour` int<br>`minute` int<br>`second` int|DateTime|
@@ -156,7 +156,7 @@
 
 
 
-| Method | Parameters | Returns |
+| Node | Inputs | Outputs |
 |--------|------------|---------|
 | Date Time Offset \| Subtract |`value` DateTimeOffset|TimeSpan|
 | Date Time Offset \| Subtract |`value` TimeSpan|DateTimeOffset|
@@ -184,7 +184,7 @@
 | String \| Get Empty |string|yes|no|
 | String \| Get Length |int|yes|no|
 
-| Method | Parameters | Returns |
+| Node | Inputs | Outputs |
 |--------|------------|---------|
 | String \| Create String |`c` char<br>`count` int|string|
 | String \| Compare |`strA` string<br>`indexA` int<br>`strB` string<br>`indexB` int<br>`length` int|int|
@@ -261,7 +261,7 @@
 | Time Zone Info \| Get Supports Daylight Saving Time |bool|yes|no|
 | Time Zone Info \| Get UTC |TimeZoneInfo|yes|no|
 
-| Method | Parameters | Returns |
+| Node | Inputs | Outputs |
 |--------|------------|---------|
 | Time Zone Info \| Convert Time |`dateTime` DateTime<br>`destinationTimeZone` TimeZoneInfo|DateTime|
 | Time Zone Info \| Convert Time |`dateTime` DateTime<br>`sourceTimeZone` TimeZoneInfo<br>`destinationTimeZone` TimeZoneInfo|DateTime|
@@ -299,7 +299,7 @@
 | Uri \| Get Scheme |string|yes|no|
 | Uri \| Get User Info |string|yes|no|
 
-| Method | Parameters | Returns |
+| Node | Inputs | Outputs |
 |--------|------------|---------|
 | Uri \| Create Uri |`uriString` string|Uri|
 | Uri \| Create Uri |`baseUri` Uri<br>`relativeUri` string|Uri|

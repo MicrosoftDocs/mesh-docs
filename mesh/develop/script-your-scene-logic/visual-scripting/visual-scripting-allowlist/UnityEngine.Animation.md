@@ -1,34 +1,35 @@
-﻿# UnityEngine\.Animation
+﻿# UnityEngine.Animation
 
 ## Scene
 
-### [UnityEngine\.Animator](https://docs.unity3d.com/ScriptReference/Animator.html)
+### [Animator](https://docs.unity3d.com/ScriptReference/Animator.html)
 
 Interface to control the Mecanim animation system.
 
 Supports additional properties and methods from UnityEngine.Behaviour, UnityEngine.Component, and UnityEngine.Object.
 
-| Method | Parameters | Returns | Description | Script |
-|--------|------------|---------|-------------|--------|
-|`GetBool`|`name` string|bool|Returns the value of the given boolean parameter\.|Animator \| Get Bool
-|`GetFloat`|`name` string|float|Returns the value of the given float parameter\.|Animator \| Get Float
-|`GetInteger`|`name` string|int|Returns the value of the given integer parameter\.|Animator \| Get Integer
-|`ResetTrigger`|`name` string|void|Resets the value of the given trigger parameter\.|Animator \| Reset Trigger
-|`SetBool`|`name` string<br>`value` bool|void|Sets the value of the given boolean parameter\.|Animator \| Set Bool
-|`SetFloat`|`name` string<br>`value` float|void|Send float values to the Animator to affect transitions\.|Animator \| Set Float
-|`SetFloat`|`name` string<br>`value` float<br>`dampTime` float<br>`deltaTime` float|void|Send float values to the Animator to affect transitions\.|Animator \| Set Float
-|`SetInteger`|`name` string<br>`value` int|void|Sets the value of the given integer parameter\.|Animator \| Set Integer
-|`SetTrigger`|`name` string|void|Sets the value of the given trigger parameter\.|Animator \| Set Trigger
+| Nodes | Inputs | Outputs |
+|--------|------------|---------|
+| Animator \| Get Bool |`name` string|bool|Returns the value of the given boolean parameter\.|
+| Animator \| Get Float |`name` string|float|Returns the value of the given float parameter\.|
+| Animator \| Get Integer |`name` string|int|Returns the value of the given integer parameter\.|
+| Animator \| Reset Trigger |`name` string|void|Resets the value of the given trigger parameter\.|
+| Animator \| Set Bool |`name` string<br>`value` bool|void|Sets the value of the given boolean parameter\.|
+| Animator \| Set Float |`name` string<br>`value` float|void|Send float values to the Animator to affect transitions\.|
+| Animator \| Set Float |`name` string<br>`value` float<br>`dampTime` float<br>`deltaTime` float|void|Send float values to the Animator to affect transitions\.|
+| Animator \| Set Integer |`name` string<br>`value` int|void|Sets the value of the given integer parameter\.|
+| Animator \| Set Trigger |`name` string|void|Sets the value of the given trigger parameter\.|
 
 ## Other
 
-### [UnityEngine\.AnimationClip](https://docs.unity3d.com/ScriptReference/AnimationClip.html)
+### [AnimationClip](https://docs.unity3d.com/ScriptReference/AnimationClip.html)
 
 Stores keyframe based animations\.
 
 Supports additional properties and methods from UnityEngine\.Object.
 
-| Method | Parameters | Returns | Description | Script |
-|--------|------------|---------|-------------|--------|
-|`SampleAnimation`|`go` UnityEngine\.GameObject<br>`time` float|void|Samples an animation at a given time for any animated properties\.|Animation Clip \| Sample Animation
+| Nodes | Inputs | Outputs |
+|--------|------------|---------|
+| Animation Clip \| Sample Animation |`go` GameObject<br>`time` float|void|Samples an animation at a given time for any animated properties\.|
+
 

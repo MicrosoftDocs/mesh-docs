@@ -2,7 +2,7 @@
 
 ## Scene
 
-### Microsoft\.Mesh\.Interactables\.AvatarTether
+### AvatarTether
 
 A script that can be added to any object with settings for how this object tethers the local player\. 
 
@@ -24,7 +24,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 | Avatar Tether \| Tether Local Avatar |`tethered` bool|void|
 | Avatar Tether \| Toggle Tether ||void|
 
-### Microsoft\.Mesh\.Interactables\.AvatarTrigger
+### AvatarTrigger
 
 Attach this script to a GameObject containing a Collider and a TriggerZone (which will be automatically added) to invoke callbacks when a local player enters or exits the zone\.
 
@@ -34,13 +34,13 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 |----------|------|-------------|:-----:|:------:|:------:|
 | Avatar Trigger \| Get Local Avatar In Trigger |bool|Controls our trigger state \- when this changes, and event (and telemetry and signal) are sent\.|yes|no|no|
 
-### Microsoft\.Mesh\.Interactables\.MeshInteractableBody
+### MeshInteractableBody
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
 | Property | Type | Read? | Write? | Share? | Script |
 |----------|------|:-----:|:------:|:------:|--------|
-| Mesh Interactable Body \| Get Equipped At |Microsoft\.Mesh\.Interactables\.EquipLocation|yes|no|yes|
+| Mesh Interactable Body \| Get Equipped At |EquipLocation|yes|no|yes|
 | Mesh Interactable Body \| Get Equip Time |System\.DateTime|yes|no|yes|
 | Mesh Interactable Body \| Is Activated |bool|yes|no|yes|
 | Mesh Interactable Body \| Is Aiming |bool|yes|no|no|
@@ -65,7 +65,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 | Mesh Interactable Body \| Drop Object ||void|
 | Mesh Interactable Body \| Equip Object ||void|
 
-### Microsoft\.Mesh\.Interactables\.TravelPoint
+### TravelPoint
 
 Defines the travel target points that the user can teleport to; for example, for the local player spawn, TravelPoints belong to a TravelGroup and are managed by TravelPointManager.
 
@@ -75,7 +75,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 |--------|------------|---------|
 |Travel Point \| Travel To Point||void|
 
-### Microsoft\.Mesh\.Interactables\.TravelPointGroup
+### TravelPointGroup
 
 Used to group a several TravelPoints together. All the TravelPoints have to be children of the group GameObject, and the name has to be unique\. Note that manually creating a TravelPointGroup is not required. TravelPointManager will create one automatically for you and assign travel points to it that don't already belong to any group\. However, you can create your own groups if you want to modify the name, or if you want to divide travel points into multiple groups instead of the default one created by the manager\.
 
@@ -87,7 +87,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 
 ## Enums
 
-### Microsoft\.Mesh\.Interactables\.EquipLocation
+### EquipLocation
 
 
 
