@@ -4,7 +4,7 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/3/2024
+ms.date: 6/6/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
@@ -125,7 +125,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
     ![__________________________________](../../../media/mesh-201/089-app-dot-cs-highlighted.png)
 
-1. In the App.cs file, navigate to line 72, where'll you see a comment telling you to paste some code there.
+1. In the App.cs file, navigate to line 71 (or close to it), where'll you see a comment telling you to paste some code there.
 
     ![__________________________________](../../../media/mesh-201/094-paste-code-here.png)
 
@@ -154,7 +154,7 @@ The resource deploys and you should see a message saying that the deployment is 
         }, TaskScheduler.Default);
     ```
 
-1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 72.
+1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 71 (or close by).
 
     ![__________________________________](../../../media/mesh-201/095-pasted-code.png)
 
@@ -190,7 +190,7 @@ The code below sends the GPT-3.5 Turbo model the result of the input dialog with
         };
     ```
 
-1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 83.
+1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 83 (or close by).
 
     ![__________________________________](../../../media/mesh-201/096-code-system-messages.png)
 
@@ -214,7 +214,7 @@ The code below sends the GPT-3.5 Turbo model the result of the input dialog with
             _app.ShowMessageToParticipant($"<i>You asked: {participantInput}</i>\n\nResponse: {responseMessage.Content}", args.Participant);
     ```
 
-1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 103.
+1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 103 (or close by).
 
     ![__________________________________](../../../media/mesh-201/097-pasted-code-3.png)
 
