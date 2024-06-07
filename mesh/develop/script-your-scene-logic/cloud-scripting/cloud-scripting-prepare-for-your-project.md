@@ -4,7 +4,7 @@ description: Learn how to prepare for creating your first Mesh Cloud Scripting p
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/6/2024
+ms.date: 6/7/2024
 ms.topic: get-started
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
@@ -27,7 +27,7 @@ In this article, you'll learn about how to prepare for your first Mesh Cloud Scr
 
 [Azure CLI 2.40.0.](/cli/azure/install-azure-cli)
 
-[.NET 6.0 SDK Windows](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) (This supports the [Mesh Emulator](../../../develop/debug-and-optimize-performance/mesh-emulator.md) in Unity.)
+[.NET 6.0 SDK Windows](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) (This is needed by the Cloud Scripting cloud deployment tool.)
 
 [.NET 7.0 SDK Windows](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 
