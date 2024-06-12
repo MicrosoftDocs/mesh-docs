@@ -18,7 +18,7 @@ keywords: Microsoft Mesh, Immersive spaces, setup, admin, M365, ports and firewa
 
 To learn more about single room vs. multi room events, see [Create an event in Mesh](/mesh/events-guide/create-event-mesh-portal).
 
-### Allowlisting requirements for objects and scripted custom immersive experiences
+### Allowlisting requirements for objects and cloud scripting in custom immersive experiences
 
 The Mesh app enables dynamic content experiences leveraging the web and Azure, empowering no-code users to place content such as Video and Image Objects and for developers to add interactivity with Mesh Scripting via Azure.
 
@@ -26,15 +26,10 @@ Dynamically loaded content is a unique requirement for immersive experiences bec
 
 #### Scenarios with unique allowlisting requirements
 
-In Teams, you generally see people’s content through a screenshare or as an image or video pasted into the Teams chat - that uploads the content into M365 whenever that person adds it.
-
-Whereas with Mesh, that content is dynamically linked by URL as is, so clients will need access to that original URL themselves.  That is not just domain/IP network access but also M365 permission access to that resource.
-
 There are a few unique permissions and allowlisting considerations for the following objects and scenarios:
 
 |Scenario  |Unique permissions or allowlisting requirements |
 |---------|---------|
 |[Video and image objects](../events-guide/customize-event.md#types-of-customizations) added to events or templates within a customization session.    |  Existing Entra ID rules apply: If a link is accessible to them, it will be visible. If permissions limit access to the content, users will not be able to see the content.       |
-|[Interactive web content](../develop/enhance-your-environment/webcontent.md), such as WebSlates, added in Unity with the Mesh Toolkit.    |   WebSlates require allowing direct traffic to the sites they render. 
-[See Security Restrictions & Domain allowlist here](../develop/enhance-your-environment/webcontent.md) |
-|[Cloud scripting](../develop/script-your-scene-logic/mesh-scripting-overview.md#benefits-of-cloud-scripting) to expand your environment by calling any .NET API and connecting to any of your Azure resources.    |  (Optional) If your event uses [Cloud scripting](../develop/script-your-scene-logic/mesh-scripting-overview.md), you'll need to allow traffic to the Azure resources that your enterprise hosts for cloud scripting. You can do this by allowing traffic on TCP port 443 (HTTPS) to your hosted app: <p><p> `<app>.azurewebsites.net`.       |
+|[Interactive web content](../develop/enhance-your-environment/webcontent.md), such as WebSlates, added in Unity with the Mesh Toolkit.    |   WebSlates require allowing direct traffic to the sites they render. [See Security Restrictions & Domain allowlist here](../develop/enhance-your-environment/webcontent.md)  |
+|[Cloud scripting](../develop/script-your-scene-logic/mesh-scripting-overview.md#benefits-of-cloud-scripting) to expand your environment by calling any .NET API and connecting to any of your Azure resources.    |  (Optional) If your event uses [Cloud scripting](../develop/script-your-scene-logic/mesh-scripting-overview.md), you'll need to allow traffic to the Azure resources that your enterprise hosts for cloud scripting. <p><p>You can do this by allowing traffic on TCP port 443 (HTTPS) to your hosted app: <p><p> `<app>.azurewebsites.net`.       |
