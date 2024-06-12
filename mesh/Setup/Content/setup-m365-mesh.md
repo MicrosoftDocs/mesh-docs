@@ -5,7 +5,7 @@ ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 7/27/2023
-ms.topic: Tutorial
+ms.topic: install-set-up-deploy
 search.appverid: MET150
 audience: admin
 keywords: Microsoft Mesh, M365, OCPS, Immersive spaces, Avatars, getting started, documentation, features
@@ -38,8 +38,6 @@ To configure access to Mesh in your tenant, you must have one of the following r
 
 For help, see the [immersive spaces in mesh licensing Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-mesh).
 
-### Firewall and endpoint requirements for Microsoft Mesh
-
 [!INCLUDE [Include file for the custom immersive spaces ports and firewall requirements in Mesh article](../../Includes/custom-immersive-spaces-ports-firewall.md)]
 
 ## Configure access to Mesh using service plans
@@ -63,7 +61,7 @@ For help, see the [immersive spaces in mesh licensing Troubleshooting and FAQs](
 
 For additional guidance for assigning licenses in M365, see:
 
-[Assign or unassign licenses for users in the Microsoft 365 admin center - Microsoft 365 admin | Microsoft Learn](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
+[Assign or unassign licenses for users in the Microsoft 365 admin center - Microsoft 365 admin | Microsoft Learn](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide&preserve-view=true)
 
 For more complex and larger group license management, you can do so in Entra ID:
 

@@ -9,12 +9,12 @@ ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, setup, admin, M365, ports and firewall, requirements
 ---
 
-### Endpoints and firewall ports for custom immersive spaces in Mesh (Mesh app)
+### Endpoints and firewall ports for custom immersive spaces in Mesh
 
 |   | Single room event in the Mesh app | Multi room event in the Mesh app  | 
 |---|---|---|
 | **Required endpoints** | Aligned to standard set of Microsoft Teams requirements outlined in [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams&preserve-view=true). | To ensure Mesh works properly, allow the following endpoints. All endpoints need to allow traffic on TCP ports 443: <p><p> \*.officeapps.live.com <br> \*.microsoft.com <br> \*.office365.com <br> \*.office.com <br> \*.office.net <br> \*.cloud.microsoft <p><p> |
-| **Firewall ports** | Aligned to standard set of Microsoft Teams requirements outlined in [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams&preserve-view=true). | In addition to the endpoints listed above, Mesh also requires that outgoing traffic be allowed to IP addresses in the "AzureCloud" service tag over the following protocols and ports: <p><p> TCP ports 80 <br> TCP & UDP ports 30,000-30,499 <br> UDP ports 3478-3481 <p><p> TCP port 443  <p><p>If you need to resolve a service tag to a list of IP ranges, you can periodically use the [service tag API][service-tag-api] or [download a snapshot][service-tag-download]. <p><p> For more information about service tags, see the [Azure service tags overview][service-tag]. |
+| **Firewall ports** | Aligned to standard set of Microsoft Teams requirements outlined in [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams&preserve-view=true). | In addition to the endpoints listed above, Mesh also requires that outgoing traffic be allowed to IP addresses in the "AzureCloud" service tag over the following protocols and ports: <p><p> TCP ports 80 <br> TCP & UDP ports 30,000-30,499 <br> UDP ports 3478-3481 <p><p> TCP port 443  <p><p>If you need to resolve a service tag to a list of IP ranges, you can periodically use the [service tag API](/azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api&preserve-view=true) or [download a snapshot](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files&preserve-view=true). <p><p> For more information about service tags, see the [Azure service tags overview](/azure/virtual-network/service-tags-overview). |
 
 To learn more about single room vs. multi room events, see [Create an event in Mesh](/mesh/events-guide/create-event-mesh-portal).
 

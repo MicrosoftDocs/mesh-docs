@@ -97,7 +97,7 @@ For more info, see [Audit logging in Mesh](../Setup/Content/audit-logging-in-mes
 
 ### Resolved product issues
 
-* In the previous release, there was requirement that single room and multi-room events required the same firewall and port configurations. This issue is resolved. Single room events now align to [the standard set by Microsoft Teams](/microsoft-365/enterprise/urls-and-ip-address-ranges), and Multi-room events still require additional ports, as noted in [Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
+* In the previous release, there was requirement that single room and multi-room events required the same firewall and port configurations. This issue is resolved. Single room events now align to [the standard set by Microsoft Teams](/microsoft-365/enterprise/urls-and-ip-address-ranges), and Multi-room events still require additional ports, as noted in [Endpoints and firewall ports for custom immersive spaces in Mesh](../Setup/Content/preparing-your-organization.md#work-with-your-organizations-security-team).
 
 * In the previous release, there was a slight latency in audio when joining an event. This has been resolved. (29657)
 
@@ -105,7 +105,7 @@ For more info, see [Audit logging in Mesh](../Setup/Content/audit-logging-in-mes
 
 ### What's new
 
-* [Updated firewall requirements](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app) for single room events in the Microsoft Mesh app.
+* [Updated firewall requirements](../Setup/Content/preparing-your-organization.md#work-with-your-organizations-security-team) for single room events in the Microsoft Mesh app.
 
 #### Accessibility features
 
