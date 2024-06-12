@@ -38,6 +38,10 @@ To configure access to Mesh in your tenant, you must have one of the following r
 
 For help, see the [immersive spaces in mesh licensing Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-mesh).
 
+### Firewall and endpoint requirements for Microsoft Mesh
+
+[!INCLUDE [Include file for the custom immersive spaces ports and firewall requirements in Mesh article](../../Includes/custom-immersive-spaces-ports-firewall.md)]
+
 ## Configure access to Mesh using service plans
 
 > [!IMPORTANT]
