@@ -23,9 +23,9 @@ Configure your enterprise firewall settings to align with the standard set of Mi
     * TCP & UDP: 30,000-30,499
     * UDP: 3478-3481
 
-If you need to resolve a service tag to a list of IP ranges, you can periodically use the [Service Tag API](azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api&preserve-view=true) or [download a snapshot](azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files&preserve-view=true).
+If you need to resolve a service tag to a list of IP ranges, you can periodically use the [service tag API][service-tag-api] or [download a snapshot][service-tag-download].
 
-For more information about service tags, see the [Azure service tags overview](/azure/virtual-network/service-tags-overview).
+For more information about service tags, see the [Azure service tags overview][service-tag].
 
 #### Avatars in Teams
 

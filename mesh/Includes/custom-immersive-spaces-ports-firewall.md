@@ -32,9 +32,9 @@ In addition to the endpoints listed above, Mesh also requires that outgoing traf
 - TCP & UDP: 30,000-30,499
 - UDP: 3478-3481
 
-If you need to resolve a service tag to a list of IP ranges, you can periodically use the [Service Tag API](azure/virtual-network/service-tags-overview) or [download a snapshot](azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files).
+If you need to resolve a service tag to a list of IP ranges, you can periodically use the [service tag API][service-tag-api] or [download a snapshot][service-tag-download].
 
-For more information about service tags, see the [Azure service tags overview](/azure/virtual-network/service-tags-overview).
+For more information about service tags, see the [Azure service tags overview][service-tag].
 
 To learn more about single room vs. multi room events, see [Create an event in Mesh](/mesh/events-guide/create-event-mesh-portal).
 
@@ -56,8 +56,7 @@ Dynamically loaded, embedded content have unique requirements for immersive expe
 > - **If stored in SharePoint, the content will follow M365 requirements**: Organizers must ensure attendees have access to URL. Attendees must have permissions to the specified file or Share link.
 > - **If not in SharePoint, follow the endpoints and firewall rules**: Organizers must ensure the domain is in the firewall/allowlist for TCP Port 443 (HTTPS). Make sure the URL is in firewall/port allowlist.
 
-
-The embedded content types are:
+**The embedded content types are:**
 
 |Content type  |How it works |
 |---------|---------|
