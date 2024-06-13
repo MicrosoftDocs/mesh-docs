@@ -22,9 +22,9 @@ Aligned to standard set of Microsoft 365 requirements outlined in [Microsoft M36
 
 In addition to the endpoints listed above, Mesh also requires that outgoing traffic be allowed to IP addresses in the "AzureCloud" service tag over the following protocols and ports:
 
-    - TCP: 443, 80
-    - TCP & UDP: 30,000-30,499
-    - UDP: 3478-3481
+- TCP: 443, 80
+- TCP & UDP: 30,000-30,499
+- UDP: 3478-3481
 
 If you need to resolve a service tag to a list of IP ranges, you can periodically use the [Service Tag API](azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api&preserve-view=true) or [download a snapshot](azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files&preserve-view=true).
 
@@ -45,7 +45,6 @@ The Mesh app enables dynamic content experiences leveraging the web and Azure. T
 Dynamically loaded, embedded content have unique requirements for immersive experiences due to the unique permissions required to access resources while within Mesh experiences.
 
 The embedded content types are:
-
 |Content type  |How it works |
 |---------|---------|
 |**WebSlate** <p><p> Embed interactive web content in Mesh environments.     | **WebSlates** use the WebView system, which respects all corporate network restrictions implemented by IT Admins. If content is blocked to load in a browser, then it will also be blocked in WebSlate. |
