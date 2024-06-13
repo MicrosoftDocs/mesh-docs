@@ -60,7 +60,7 @@ Dynamically loaded, embedded content have unique requirements for immersive expe
 
 |Content type  |How it works |
 |---------|---------|
-|**WebSlate** <p><p> Embed interactive web content in Mesh environments.     | **WebSlates** use the WebView system, which respects all corporate network restrictions implemented by IT Admins. If content is blocked to load in a browser, then it will also be blocked in WebSlate. |
+|**WebSlate** <p><p> Embed interactive web content in Mesh environments.     | **WebSlates** display web content using a client WebView on each attendee's device.  If their target URLs are blocked for an attendee in a browser, then they will also be blocked in Mesh. |
 | **Video & Image Objects** Embed videos and images into Mesh environments. | The Mesh app Editor enables organizers to customize experiences for their Mesh Event. <p><p>To ensure the best experience, direct links to videos and images hosted via SharePoint or HTTPS URLs.         |
 
 > [!TIP]
