@@ -203,6 +203,10 @@ implications and work closely with your security team to make sure you
 comply with all standard security policies. Discuss the following Mesh
 requirements in advance with the appropriate Security owners.
 
+## Endpoints and firewall configuration
+
+As with all Microsoft products, allowing the endpoints/URLs and ports required for Mesh experiences is necessary to achieve full functionality and optimal performance for your users. How you use the network configuration requirements for Mesh depends on your enterprise organization network architecture.
+
 [!INCLUDE [Include file for the immersive spaces ports and firewall requirements article](../../Includes/immersive-spaces-teams-ports-firewall.md)]
 
 [!INCLUDE [Include file for the custom immersive spaces ports and firewall requirements in Mesh article](../../Includes/custom-immersive-spaces-ports-firewall.md)]

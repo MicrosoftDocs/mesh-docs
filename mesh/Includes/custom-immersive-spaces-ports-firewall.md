@@ -11,9 +11,7 @@ keywords: Microsoft Mesh, Immersive spaces, setup, admin, M365, ports and firewa
 
 ### Endpoints and firewall requirements for immersive spaces in Mesh
 
-As with all Microsoft products, allowing the endpoints/URLs and ports required for Mesh experiences is necessary to achieve full functionality and optimal performance for your users. How you use the network configuration requirements for Mesh depends on your enterprise organization network architecture. 
-
-This article outlines the specific requirements for Immersive experiences in Mesh, inclusive of the Mesh application and its unique features that your organization can leverage to create dynamic corporate events.
+This section outlines the specific requirements for Immersive experiences in Mesh, inclusive of the Mesh application and its unique features that your organization can leverage to create dynamic corporate events.
 
 In general, the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true) applies to all Mesh experiences.
 
