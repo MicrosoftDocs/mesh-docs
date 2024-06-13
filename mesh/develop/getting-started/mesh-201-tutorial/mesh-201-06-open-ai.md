@@ -4,7 +4,7 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/12/2024
+ms.date: 6/13/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
@@ -119,69 +119,107 @@ The resource deploys and you should see a message saying that the deployment is 
 
 1. Save the file.
 
-## Add the code that displays the OpenAI input dialog
+## Add the code that enables OpenAI
 
-1. In the File Explorer window that displays the Mesh Cloud Scripting files, open the file named *App.cs* in your code editor.
+1. In the File Explorer window that displays the Mesh Cloud Scripting files, navigate to the *StartingPoint* folder and then open the file named *App.cs* in your code editor.
 
     ![__________________________________](../../../media/mesh-201/089-app-dot-cs-highlighted.png)
 
-1. In the App.cs file, add the code below to the list of `using` directives.
+1. In the App.cs file, find the "Paste code here" comment at the top of the list of `using` directives.
+
+    ![__________________________________](../../../media/mesh-201/124-paste-code-using-directives.png)
+
+1. Copy the code below.
 
     ```
     using Azure;
     using Azure.AI.OpenAI;
     ```
+1. Replace the "Paste code here" comment you just found with the code you copied.
 
-1. Navigate to the "Paste code here" comment located below the `_weatherAPIKey_` field and then replace that comment with the field below: <image tbd>
+    ![__________________________________](../../../media/mesh-201/125-code-inserted-using-directives.png)
+
+1. Find the "Paste code here" comment located below the `_weatherAPIKey_` field. 
+
+    ![__________________________________](../../../media/mesh-201/126-paste-code-below-weatherapi-key.png)
+
+1. Copy the code below.
 
     ```
     private OpenAIClient _openAIClient;
     ```
-1. Navigate to the "Paste code here" comment located in the body of the constructor and then replace it with the code below: <image tbd>
+
+1. Replace the "Paste code here" comment you just found with the code you copied.
+
+    ![___](../../../media/mesh-201/127-code-inserted-below-fields.png)
+
+1. Find the "Paste code here" comment located in the body of the constructor.
+
+    ![__________________________________](../../../media/mesh-201/128-paste-code-in-constructor.png)
+
+1. Copy the code below.
 
     ```
     Uri azureOpenAIResourceUri = new(configuration.GetValue<string>("AZURE_OPENAI_API_URI"));
     AzureKeyCredential azureOpenAIApiKey = new(configuration.GetValue<string>("AZURE_OPENAI_API_KEY"));
     _openAIClient = new(azureOpenAIResourceUri, azureOpenAIApiKey);
     ```
-1. Navigate to the "Paste code here" comment located in the `StartAsync()` method and then replace it with the code below:
+
+1. Replace the "Paste code here" comment you just found with the code you copied.
+
+    ![__________________________________](../../../media/mesh-201/129-code-inserted-in-constructor.png)
+
+1. Find the "Paste code here" comment located in the `refreshButtonNode` *if* statement inside the `StartAsync()` method.
+
+    ![__________________________________](../../../media/mesh-201/130-paste-code-in-startsync-method.png)
+
+1. Copy the code below.
 
     ```
-    var aiParentNode = _app.Scene.FindFirstChild("5 - AIAssistant", true) as TransformNode
-        ?? throw new NullReferenceException("Could not find infoButtonParent");
-    var infoButton = aiParentNode.FindFirstChild<InteractableNode>(true);
+                var aiParentNode = _app.Scene.FindFirstChild("5 - AIAssistant", true) as TransformNode
+                    ?? throw new NullReferenceException("Could not find infoButtonParent");
+                var infoButton = aiParentNode.FindFirstChild<InteractableNode>(true);
     ```
-1. Navigate to the "Paste code here" comment located shortly after the `GetCurrentWeather()` method in the `if` statement...
 
-    ![__________________________________](../../../media/mesh-201/094-paste-code-here.png)
+1. Replace the "Paste code here" comment you just found with the code you copied.
 
-    ... and then replace it with the code below:
+    ![__________________________________](../../../media/mesh-201/131-code-inserted-in-start-async-method.png)
+
+
+## Add the code that displays the OpenAI input dialog
+
+1. Find the "Paste code here" comment located shortly after the `GetCurrentWeather()` method in the `infoButton` *if* statement.
+
+    ![__________________________________](../../../media/mesh-201/094-paste-code-get-current-weather-method.png)
+
+1. Copy the code below.
 
     ```
-        await _app.ShowInputDialogToParticipantAsync("Ask Azure OpenAI", args.Participant).ContinueWith(async (response) =>
+    await _app.ShowInputDialogToParticipantAsync("Ask Azure OpenAI", args.Participant).ContinueWith(async (response) =>
+    {
+        try
         {
-            try
+            if (response.Exception != null)
             {
-                if (response.Exception != null)
-                {
-                    throw response.Exception.InnerException ?? response.Exception;
-                }
-
-                string participantInput = response.Result;
-
-                // Paste code here
-
-                // Wait for a response from OpenAI based on the user's message
-                // Paste code here
+                throw response.Exception.InnerException ?? response.Exception;
             }
-            catch (Exception ex)
-            {
-                _logger.LogCritical($"Exception during OpenAI request: {ex.Message}");
-            }
-        }, TaskScheduler.Default);
+    
+            string participantInput = response.Result;
+    
+            // Paste code here
+    
+            // Wait for a response from OpenAI based on the user's message
+            // Paste code here
+        }
+        catch (Exception ex)
+        {
+            _logger.LogCritical($"Exception during OpenAI request: {ex.Message}");
+        }
+    }, TaskScheduler.Default);
     ```
+1. Replace the "Paste code here" comment you just found with the code you copied.
 
-    ![__________________________________](../../../media/mesh-201/095-pasted-code.png)
+    ![__________________________________](../../../media/mesh-201/132-code-inserted-after-get-weather-method.png)
 
     The code does the following:
 
@@ -193,11 +231,9 @@ The resource deploys and you should see a message saying that the deployment is 
 
 The code below sends the GPT-3.5 Turbo model the result of the input dialog with instructions on how to respond with the current weather data.
 
-1. Navigate to "Paste code here" comment in the try...catch block you just pasted ...
+1. Find the first "Paste code here" comment in the try...catch block you just pasted.
 
-<image tbd>
-
-... and then replace it with the code below
+    ![__________________________________](../../../media/mesh-201/133-paste-code-in-try-catch-block.png)
 
 1. Copy the code below:
 
@@ -221,7 +257,7 @@ The code below sends the GPT-3.5 Turbo model the result of the input dialog with
         };
     ```
 
-1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 83 (or close by).
+1. Replace the "Paste code here" comment you just found with the code you copied.
 
     ![__________________________________](../../../media/mesh-201/096-code-system-messages.png)
 
@@ -235,6 +271,10 @@ The code below sends the GPT-3.5 Turbo model the result of the input dialog with
 
 ## Add the code that displays the response from the LLM
 
+1. Find the remaining "Paste code here" comment in the try...catch block you just pasted.
+
+    ![__________________________________](../../../media/mesh-201/134-paste-code-again-in-try-catch-block.png)
+
 1. Copy the code below:
 
     ```
@@ -245,7 +285,7 @@ The code below sends the GPT-3.5 Turbo model the result of the input dialog with
             _app.ShowMessageToParticipant($"<i>You asked: {participantInput}</i>\n\nResponse: {responseMessage.Content}", args.Participant);
     ```
 
-1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 103 (or close by).
+1. Replace the "Paste code here" comment you just found with the code you copied.
 
     ![__________________________________](../../../media/mesh-201/097-pasted-code-3.png)
 
