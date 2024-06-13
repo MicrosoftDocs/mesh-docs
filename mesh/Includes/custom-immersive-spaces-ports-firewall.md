@@ -32,7 +32,7 @@ In addition to the endpoints listed above, Mesh also requires that outgoing traf
 - TCP & UDP: 30,000-30,499
 - UDP: 3478-3481
 
-If you need to resolve a service tag to a list of IP ranges, you can periodically use the [Service Tag API](azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api&preserve-view=true) or [download a snapshot](azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files&preserve-view=true).
+If you need to resolve a service tag to a list of IP ranges, you can periodically use the [Service Tag API](azure/virtual-network/service-tags-overview) or [download a snapshot](azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files).
 
 For more information about service tags, see the [Azure service tags overview](/azure/virtual-network/service-tags-overview).
 
