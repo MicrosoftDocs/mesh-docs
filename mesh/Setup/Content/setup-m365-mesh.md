@@ -1,30 +1,22 @@
 ---
-title: Set up Microsoft Mesh
-description: Set up Microsoft Mesh with M365.
+title: Configure Microsoft Mesh
+description: Configure user access and usage for Microsoft Mesh on PC, Mesh on Quest, or Mesh on the web with M365 for your enterprise.
 ms.service: mesh
 author: typride
 ms.author: tmilligan
-ms.date: 7/27/2023
+ms.date: 06/13/2024
 ms.topic: install-set-up-deploy
 search.appverid: MET150
 audience: admin
-keywords: Microsoft Mesh, M365, OCPS, Immersive spaces, Avatars, getting started, documentation, features
+keywords: Microsoft Mesh, M365, OCPS, Immersive spaces in Mesh, Mesh experiences, getting started, documentation, features
 ---
 
 # Configure Microsoft Mesh
 
+This article covers how to setup and deploy the Microsoft Mesh from an IT perspective for the Mesh app on PC, Mesh app on Quest 2, and Mesh on the web. Before setting up Microsoft Mesh, we recommend reading the [Preparing your organization for Mesh](preparing-your-organization.md) to ensure your enterprise is prepared to set up and deploy Mesh. If you're looking to manage the Mesh or Avatars app for Teams, please refer to [Manage the avatars app in Microsoft Teams](/microsoftteams/meeting-avatars) or [Manage the Mesh app in Microsoft Teams](/microsoftteams/meeting-immersive-spaces).
+
 > [!IMPORTANT]
 > In order to streamline the admin experience, admins will no longer need to configure Mesh in M365 Apps Admin Center. If you had previously restricted Mesh access to users or groups in your organization via the Mesh policy found in the M365 Apps Admin Center, you will need to switch to restricting access via the Mesh service plan instead in the M365 Admin Center (MAC).
-
-The Mesh app is by default available to all users in the M365 Admin Center. Admins can block the app for specific users or user groups by turning off the Microsoft Mesh service plan.
-
-This covers access to the following experiences:
-
-- Mesh app on PC
-- Mesh app on Quest 2
-- Mesh on the web
-
-By default, these Mesh experiences will be available to all users if a service plan or policy does not restrict access. Follow the [Configure access to Mesh using service plans](#configure-access-to-mesh-using-service-plans) or [Configure access to Mesh using policies](#configure-access-to-mesh-using-service-plans) steps below to block specific groups or people.
 
 ## Prerequisites
 
@@ -37,6 +29,16 @@ For help, see the [immersive spaces in mesh licensing Troubleshooting and FAQs](
 [!INCLUDE [Include file for the custom immersive spaces ports and firewall requirements in Mesh article](../../Includes/custom-immersive-spaces-ports-firewall.md)]
 
 ## Configure access to Mesh using service plans
+
+The Mesh app is by default available to all users in the M365 Admin Center. Admins can block the app for specific users or user groups by turning off the Microsoft Mesh service plan.
+
+This covers access to the following experiences:
+
+- Mesh app on PC
+- Mesh app on Quest 2
+- Mesh on the web
+
+By default, these Mesh experiences will be available to all users if a service plan or policy does not restrict access. Follow the [Configure access to Mesh using service plans](#configure-access-to-mesh-using-service-plans) or [Configure access to Mesh using policies](#configure-access-to-mesh-using-service-plans) steps below to block specific groups or people.
 
 To configure access to Mesh in your tenant, you must have one of the following roles in Azure Active Directory:
 
