@@ -9,11 +9,19 @@ ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, setup, admin, M365, ports and firewall, requirements
 ---
 
-### Endpoints and firewall ports for immersive experiences in Mesh
+### Endpoints and firewall requirements for immersive spaces in Mesh
 
-Configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
+As with all Microsoft products, allowing the endpoints/URLs and ports required for Mesh experiences is necessary to achieve full functionality and optimal performance for your users. How you use the network configuration requirements for Mesh depends on your enterprise organization network architecture. 
 
-#### Additional requirements for optional features
+This article outlines the specific requirements for Immersive experiences in Mesh, inclusive of the Mesh application and its unique features that your organization can leverage to create dynamic corporate events.
+
+In general, the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true) applies to all Mesh experiences.
+
+#### Step 1: Configure according to Microsoft M365 requirements
+
+First, configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
+
+#### Step 2: Configure for additional Mesh features
 
 ##### Larger events (Multi-room)
 
@@ -44,6 +52,13 @@ The Mesh app enables dynamic content experiences leveraging the web and Azure. T
 
 Dynamically loaded, embedded content have unique requirements for immersive experiences due to the unique permissions required to access resources while within Mesh experiences.
 
+> [!IMPORTANT]
+> There are two considerations to ensure that embedded content is accessible in immersive spaces in Mesh:
+>
+> - **If stored in SharePoint, the content will follow M365 requirements**: Organizers must ensure attendees have access to URL. Attendees must have permissions to the specified file or Share link.
+> - **If not in SharePoint, follow the endpoints and firewall rules**: Organizers must ensure the domain is in the firewall/allowlist for TCP Port 443 (HTTPS). Make sure the URL is in firewall/port allowlist.
+
+
 The embedded content types are:
 
 |Content type  |How it works |
@@ -51,14 +66,7 @@ The embedded content types are:
 |**WebSlate** <p><p> Embed interactive web content in Mesh environments.     | **WebSlates** use the WebView system, which respects all corporate network restrictions implemented by IT Admins. If content is blocked to load in a browser, then it will also be blocked in WebSlate. |
 | **Video & Image Objects** Embed videos and images into Mesh environments. | The Mesh app Editor enables organizers to customize experiences for their Mesh Event. <p><p>To ensure the best experience, direct links to videos and images hosted via SharePoint or HTTPS URLs.         |
 
-There are two considerations to ensure that embedded content is accessible in immersive spaces in Mesh:
-
-1. **If stored in SharePoint, the content will follow M365 requirements**: Organizers must ensure attendees have access to URL. Attendees must have permissions to the specified file or Share link.
-
-1. **If not in SharePoint, follow the endpoints and firewall rules**: Organizers must ensure the domain is in the firewall/allowlist for TCP Port 443 (HTTPS). Make sure the URL is in firewall/port allowlist.  
-
 > [!TIP]
 > Webslates require that the developers add a URL to the Allowlist in Unity. Those URLs must also be added to the firewall/allowlist for TCP Port 443 (HTTPS).
 > 
 > For more information about WebSlate security and allowlisting, see how to [Display and interact with Web content in Microsoft Mesh | Microsoft Learn](../develop/enhance-your-environment/webcontent.md).
-
