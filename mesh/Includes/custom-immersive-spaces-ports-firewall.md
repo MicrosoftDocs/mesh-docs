@@ -64,6 +64,6 @@ Dynamically loaded, embedded content have unique requirements for immersive expe
 | **Video & Image Objects** Embed videos and images into Mesh environments. | The Mesh app Editor enables organizers to customize experiences for their Mesh Event. <p><p>To ensure the best experience, direct links to videos and images hosted via SharePoint or HTTPS URLs.         |
 
 > [!TIP]
-> Webslates require that the developers add a URL to the Allowlist in Unity. Those URLs must also be added to the firewall/allowlist for TCP Port 443 (HTTPS).
+> In addition to firewall allow lists, WebSlates require that environment developers add the URL's domain to the Unity WebSlate component's allow list as well.
 > 
 > For more information about WebSlate security and allowlisting, see how to [Display and interact with Web content in Microsoft Mesh | Microsoft Learn](../develop/enhance-your-environment/webcontent.md).

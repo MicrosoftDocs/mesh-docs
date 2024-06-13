@@ -180,7 +180,7 @@ If an admin does not agree to the license agreement terms, then admins can disab
 
 For more info about service plans and the end user license agreement, see [End user license agreement](setup-m365-mesh.md#end-user-license-agreement).
 
-## Review endptoint managers
+## Review endpoint managers
 
 Make sure you know your organization's process for deploying apps. The Mesh app is available in the Microsoft Store and can be depoloyed from there using your MDM
 (mobile device management) solution like Microsoft Intune to deploy the
