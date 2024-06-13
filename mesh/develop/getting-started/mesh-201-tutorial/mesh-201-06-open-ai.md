@@ -4,7 +4,7 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/6/2024
+ms.date: 6/12/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
@@ -125,11 +125,38 @@ The resource deploys and you should see a message saying that the deployment is 
 
     ![__________________________________](../../../media/mesh-201/089-app-dot-cs-highlighted.png)
 
-1. In the App.cs file, navigate to line 71 (or close to it), where'll you see a comment telling you to paste some code there.
+1. In the App.cs file, add the code below to the list of `using` directives.
+
+    ```
+    using Azure;
+    using Azure.AI.OpenAI;
+    ```
+
+1. Navigate to the "Paste code here" comment located below the `_weatherAPIKey_` field and then replace that comment with the field below: <image tbd>
+
+    ```
+    private OpenAIClient _openAIClient;
+    ```
+1. Navigate to the "Paste code here" comment located in the body of the constructor and then replace it with the code below: <image tbd>
+
+    ```
+    Uri azureOpenAIResourceUri = new(configuration.GetValue<string>("AZURE_OPENAI_API_URI"));
+    AzureKeyCredential azureOpenAIApiKey = new(configuration.GetValue<string>("AZURE_OPENAI_API_KEY"));
+    _openAIClient = new(azureOpenAIResourceUri, azureOpenAIApiKey);
+    ```
+1. Navigate to the "Paste code here" comment located in the `StartAsync()` method and then replace it with the code below:
+
+    ```
+    var aiParentNode = _app.Scene.FindFirstChild("5 - AIAssistant", true) as TransformNode
+        ?? throw new NullReferenceException("Could not find infoButtonParent");
+    var infoButton = aiParentNode.FindFirstChild<InteractableNode>(true);
+    ```
+1. Navigate to the "Paste code here" comment located shortly after the `GetCurrentWeather()` method in the `if` statement...
 
     ![__________________________________](../../../media/mesh-201/094-paste-code-here.png)
 
-1. Copy the code below:
+    ... and then replace it with the code below:
+
     ```
         await _app.ShowInputDialogToParticipantAsync("Ask Azure OpenAI", args.Participant).ContinueWith(async (response) =>
         {
@@ -154,8 +181,6 @@ The resource deploys and you should see a message saying that the deployment is 
         }, TaskScheduler.Default);
     ```
 
-1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 71 (or close by).
-
     ![__________________________________](../../../media/mesh-201/095-pasted-code.png)
 
     The code does the following:
@@ -167,6 +192,12 @@ The resource deploys and you should see a message saying that the deployment is 
 ## Send GPT-3.5 Turbo the result of the input dialog
 
 The code below sends the GPT-3.5 Turbo model the result of the input dialog with instructions on how to respond with the current weather data.
+
+1. Navigate to "Paste code here" comment in the try...catch block you just pasted ...
+
+<image tbd>
+
+... and then replace it with the code below
 
 1. Copy the code below:
 
