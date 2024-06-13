@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, Immersive spaces, Immersive spaces in Teams, setup, ad
 
 ### Endpoints and firewall ports for Mesh experiences in Teams
 
-The endpoints and firewall ports for Mesh experiences in Teams follow the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true). 
+Configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
 
 #### Immersive spaces in Teams
 

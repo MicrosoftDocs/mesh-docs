@@ -11,14 +11,14 @@ keywords: Microsoft Mesh, Immersive spaces, setup, admin, M365, ports and firewa
 
 ### Endpoints and firewall ports for immersive experiences in Mesh
 
-Aligned to standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
+Configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
 
 #### Additional requirements for optional features
 
-##### Larger events (17+ people, Multi-room)
+##### Larger events (Multi-room)
 
 > [!NOTE]
-> Currently, there are extra firewall ports required when events in the Mesh app are held with 17 or more people. We appreciate your patience as we move to align with the standards outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
+> Currently, there are extra firewall ports required when events in the Mesh app are held with more than 16 people. We appreciate your patience as we move to align with the standards outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
 
 In addition to the endpoints listed above, Mesh also requires that outgoing traffic be allowed to IP addresses in the "AzureCloud" service tag over the following protocols and ports:
 
@@ -45,6 +45,7 @@ The Mesh app enables dynamic content experiences leveraging the web and Azure. T
 Dynamically loaded, embedded content have unique requirements for immersive experiences due to the unique permissions required to access resources while within Mesh experiences.
 
 The embedded content types are:
+
 |Content type  |How it works |
 |---------|---------|
 |**WebSlate** <p><p> Embed interactive web content in Mesh environments.     | **WebSlates** use the WebView system, which respects all corporate network restrictions implemented by IT Admins. If content is blocked to load in a browser, then it will also be blocked in WebSlate. |
