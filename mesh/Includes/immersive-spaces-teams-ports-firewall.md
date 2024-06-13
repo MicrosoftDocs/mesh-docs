@@ -9,11 +9,24 @@ ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, Immersive spaces in Teams, setup, admin, M365, ports and firewall, requirements
 ---
 
-### Endpoints and firewall ports for experiences in Teams
+### Endpoints and firewall ports for Mesh experiences in Teams
 
-|   | Immersive spaces in Teams | Avatars in Teams  | 
-|---|---|---|
-| **Required endpoints** | The following endpoints **must** be allowed through your firewall or proxy server. All endpoints need to allow traffic on TCP ports 80 and 443: <p><p> \*.microsoft.com <br> \*.office.com <br> \*.office.net <br> \*.cloud.microsoft |The following endpoints **must** be allowed through your firewall or proxy server. All endpoints need to allow traffic on TCP ports 80 and 443: <p><p> \*.microsoft.com <br> \*.office.com <br> \*.office.net <br> \*.cloud.microsoft |
-| **Firewall ports** | Aligned to standard set of Microsoft Teams requirements outlined in [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams&preserve-view=true). | Aligned to standard set of Microsoft Teams requirements outlined in [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams&preserve-view=true). |
+The endpoints and firewall ports for Mesh experiences in Teams follow the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true). 
 
-To learn more, see [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces) and [Set up avatars in Microsoft Teams](/microsoftteams/meeting-avatars).
+#### Immersive spaces in Teams
+
+1. Aligned to standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
+
+1. In addition to the endpoints listed above, Mesh also requires that outgoing traffic be allowed to IP addresses in the "AzureCloud" service tag over the following protocols and ports:
+
+    * TCP: 443, 80
+    * TCP & UDP: 30,000-30,499
+    * UDP: 3478-3481
+
+If you need to resolve a service tag to a list of IP ranges, you can periodically use the [Service Tag API](azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api&preserve-view=true) or [download a snapshot](azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files&preserve-view=true).
+
+For more information about service tags, see the [Azure service tags overview](/azure/virtual-network/service-tags-overview).
+
+#### Avatars in Teams
+
+Aligned to standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).

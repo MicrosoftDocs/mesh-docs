@@ -28,11 +28,7 @@ By default, these Mesh experiences will be available to all users if a service p
 
 ## Prerequisites
 
-To configure access to Mesh in your tenant, you must have one of the following roles in Azure Active Directory:
-
-- Global Administrator
-- Security Administrator
-- Office Apps Admin
+Before deploying  Mesh, ensure that the following endpoints and firewall ports are allowed:
 
 [!INCLUDE [Include file for the immersive spaces in Mesh article](../../Includes/license-requirements-for-Mesh.md)]
 
@@ -41,6 +37,12 @@ For help, see the [immersive spaces in mesh licensing Troubleshooting and FAQs](
 [!INCLUDE [Include file for the custom immersive spaces ports and firewall requirements in Mesh article](../../Includes/custom-immersive-spaces-ports-firewall.md)]
 
 ## Configure access to Mesh using service plans
+
+To configure access to Mesh in your tenant, you must have one of the following roles in Azure Active Directory:
+
+- Global Administrator
+- Security Administrator
+- Office Apps Admin
 
 > [!IMPORTANT]
 > In order to streamline the admin experience, admins will no longer need to configure Mesh in M365 Apps Admin Center. If you had previously restricted Mesh access to users or groups in your organization via the Mesh policy found in the M365 Apps Admin Center, you will need to switch to restricting access via the Mesh service plan instead in the M365 Admin Center (MAC) by the end of February, 2024.
