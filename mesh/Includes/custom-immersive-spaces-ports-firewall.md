@@ -54,7 +54,7 @@ Dynamically loaded, embedded content have unique requirements for immersive expe
 > There are two considerations to ensure that embedded content is accessible in immersive spaces in Mesh:
 >
 > - **If stored in SharePoint, the content will follow M365 requirements**: Organizers must ensure attendees have access to URL. Attendees must have permissions to the specified file or Share link.
-> - **If not in SharePoint, follow the endpoints and firewall rules**: Organizers must ensure the domain is in the firewall/allowlist for TCP Port 443 (HTTPS). Make sure the URL is in firewall/port allowlist.
+> - **If not in SharePoint, the content will follow firewall rules**: Organizers must ensure the URL domain is in the firewall/allowlist for TCP Port 443 (HTTPS).  Attendee client devices will download from this URL directly.
 
 **The embedded content types are:**
 
