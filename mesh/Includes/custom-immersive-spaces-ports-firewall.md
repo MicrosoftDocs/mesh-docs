@@ -42,7 +42,7 @@ To learn more about single room vs. multi room events, see [Create an event in M
 
 If you or your development team plans to use [Cloud scripting](../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md) to display dynamic and rich data in Mesh environments by interfacing with Azure, you'll need to allow traffic to the Azure resources that your enterprise hosts for cloud scripting.
 
-You can do this by allowing traffic on TCP port 443 (HTTPS) to your hosted app: `<app>.azurewebsites.net`.
+You can do this as new environments using cloud scripting are published by allowing traffic on TCP port 443 (HTTPS) to that environment's hosted app: `<app>.azurewebsites.net`.
 
 #### Embedded content (WebSlate, video/image)
 
