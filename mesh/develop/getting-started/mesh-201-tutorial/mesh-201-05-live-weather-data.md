@@ -4,7 +4,7 @@ description: Learn how to set up an interactive globe you can click to get live 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/6/2024
+ms.date: 6/13/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting
 ---
@@ -76,9 +76,11 @@ In order to complete this station, you'll need to insert a *key* into some code 
 ## Insert the API key for weatherapi.com
 
 1. In the **Hierarchy**, select the **Mesh Cloud Scripting** GameObject.
-1. In the **Inspector**, navigate to the **Mesh Cloud Scripting** component and then click **Open application folder**. This opens the project folder that contains the files for Mesh Cloud Scripting in the Windows File Explorer.
+1. In the **Inspector**, navigate to the **Mesh Cloud Scripting** component and then click **Open application folder**.
 
     ![__________________________________](../../../media/mesh-201/078-open-app-folder.png)
+
+    This opens the project folder that contains the files for Mesh Cloud Scripting in the Windows File Explorer.
 
 1. Open the file named *appsettings.UnityLocalDev.json* in your code editor. The last four lines of code in the file contain configuration settings.
 
@@ -126,9 +128,9 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     The first thing we'll do is ensure that when an attendee clicks on the globe, the displays of the weather data are refreshed.
 
-1. In the App.cs file, navigate to line 47, where'll you see a comment telling you to paste some code there.
+1. In the App.cs file, find the first "Paste code here" commented located inside the `StartAsync()` method.
 
-    ![__________________________________](../../../media/mesh-201/090-paste-code-comment.png)
+    ![__________________________________](../../../media/mesh-201/135-paste-code-for-weather-station.png)
 
 1. Copy the code below.
 
@@ -145,7 +147,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
         }
     ```
 
-1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 47.
+1. Replace the "Paste code here" comment you just found with the code you copied.
 
     ![__________________________________](../../../media/mesh-201/091-pasted-code.png)
 
