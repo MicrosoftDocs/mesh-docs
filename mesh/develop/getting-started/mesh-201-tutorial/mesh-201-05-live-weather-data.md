@@ -4,7 +4,7 @@ description: Learn how to set up an interactive globe you can click to get live 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/13/2024
+ms.date: 6/14/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting
 ---
@@ -57,7 +57,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     ![__________________________________](../../../media/mesh-201/076-cs-component.png)
 
-    Any GameObject that you intend to be under the control of cloud scripting must be added as a child to the **Mesh Cloud Scripting** GameObject.
+    Any GameObject that you intend to have under the control of cloud scripting must be added as a child to the **Mesh Cloud Scripting** GameObject.
 
 ## Add the prefab for Station 4
 
@@ -65,7 +65,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     ![__________________________________](../../../media/mesh-201/077-drag-prefabs.png)
 
-    This prefab provides the text information box and a nested prefab named **Earth** that provides the model for the globe.
+    This prefab provides the text information box and a nested prefab named **Earth** that contains the model for the globe.
 
     ![__________________________________](../../../media/mesh-201/103-earth-model.png)
 
@@ -80,7 +80,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     ![__________________________________](../../../media/mesh-201/078-open-app-folder.png)
 
-    This opens the project folder that contains the files for Mesh Cloud Scripting in the Windows File Explorer.
+    This opens the folder that contains the files for Mesh Cloud Scripting in the Windows File Explorer.
 
 1. Open the file named *appsettings.UnityLocalDev.json* in your code editor. The last four lines of code in the file contain configuration settings.
 
@@ -118,7 +118,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     ![__________________________________](../../../media/mesh-201//105-weatherapi-folder.png)
 
-1. Save the file.
+1. Save and close the file.
 
 ## Add code that makes the globe interactive
 
@@ -128,7 +128,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     The first thing we'll do is ensure that when an attendee clicks on the globe, the displays of the weather data are refreshed.
 
-1. In the App.cs file, find the first "Paste code here" commented located inside the `StartAsync()` method.
+1. In the App.cs file, find the first "Paste code here" comment located inside the `StartAsync()` method.
 
     ![__________________________________](../../../media/mesh-201/135-paste-code-for-weather-station.png)
 
