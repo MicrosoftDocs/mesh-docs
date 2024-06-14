@@ -1,6 +1,6 @@
 ---
 title: Preparing your organization for Mesh
-description: Prepare your organization to adopt Mesh and its features. Organize a team to manage setup and distribution.
+description: Prepare your organization to adopt Mesh and its features. Organize a team to manage setup, deployment, and onboarding.
 ms.service: mesh
 author: typride
 ms.author: tmilligan
@@ -27,7 +27,7 @@ This content covers requirements for Mesh implementations for Immersive spaces i
 
 1. [Configure service plan to allow user access](#configure-service-plan-to-allow-user-access)
 
-1. [Work with your security team](#work-with-your-organizations-security-team)
+1. [Configure your network for Mesh experiences](#work-with-your-organizations-security-team)
 
 1. [Work with stakeholders to begin deployment](#work-with-stakeholders-that-communicate-change)
 
@@ -133,7 +133,7 @@ The following section lists organizational roles that you will probably need to 
 
 #### Teams apps managers
 
-The adminsitration for immersive spaces and avatars will happen in the Teams admin
+The administration for immersive spaces and avatars will happen in the Teams admin
 portal, [admin.teams.microsoft.com](https://admin.teams.microsoft.com).
 You will need the tenant Global Administrator to assign someone on the
 Mesh team the [role of Teams Administrator in Microsoft Entra](/microsoftteams/using-admin-roles), or

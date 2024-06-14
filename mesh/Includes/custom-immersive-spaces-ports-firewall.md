@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, Immersive spaces, setup, admin, M365, ports and firewa
 
 ### Endpoints and firewall requirements for immersive spaces in Mesh
 
-This section outlines the specific requirements for **Immersive experiences in Mesh**, inclusive of the Mesh application and its features that your organization can leverage to create dynamic corporate events.
+This section outlines the specific endpoints and firewall requirements for **Immersive experiences in Mesh**, inclusive of the Mesh application and its features that your organization can leverage to create dynamic corporate events.
 
 In general, the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true) applies to all Mesh experiences with some extra steps to enable additional Mesh features like larger multi-room events, Cloud Scripting, and embedded content (WebSlate, Video/Image objects).
 
@@ -38,13 +38,15 @@ For more information about service tags, see the [Azure service tags overview][s
 
 To learn more about single room vs. multi room events, see [Create an event in Mesh](/mesh/events-guide/create-event-mesh-portal).
 
-#### Cloud scripting
+#### Step 3: Enable attendee access to scripts and content over time
+
+##### Cloud scripting
 
 If you or your development team plans to use [Cloud scripting](../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md) to display dynamic and rich data in Mesh environments by interfacing with Azure, you'll need to allow traffic to the Azure resources that your enterprise hosts for cloud scripting.
 
 You can do this as new environments using cloud scripting are published by allowing traffic on TCP port 443 (HTTPS) to that environment's hosted app: `<app>.azurewebsites.net`.
 
-#### Embedded content (WebSlate, video/image)
+##### Embedded content (WebSlate, video/image)
 
 The Mesh app enables dynamic content experiences leveraging the web and Azure. This empowers event organizers to place Video and Image Objects with a no-code event customization experience, and developers to add web interactivity with WebSlates.
 
@@ -60,8 +62,8 @@ Dynamically loaded, embedded content have unique requirements for immersive expe
 
 |Content type  |How it works |
 |---------|---------|
-|**WebSlate** <p><p> Embed interactive web content in Mesh environments.     | **WebSlates** display web content using a client WebView on each attendee's device.  If their target URLs are blocked for an attendee in a browser, then they will also be blocked in Mesh. |
-| **Video & Image Objects** Embed videos and images into Mesh environments. | The Mesh app Editor enables organizers to customize experiences for their Mesh Event. <p><p>To ensure the best experience, direct links to videos and images hosted via SharePoint or HTTPS URLs.         |
+|**WebSlate** <p><p> Embed interactive web content in Mesh environments or templates.     | **WebSlates** display web content using a client WebView on each attendee's device.  If their target URLs are blocked for an attendee in a browser, then they will also be blocked in Mesh. |
+| **Video & Image Objects** Embed videos and images into Mesh environments. | The Mesh app enables organizers to customize experiences for their Mesh Event by referencing image and video URLs. <p><p>If these URLs are blocked for an attendee in a browser, then they will also be blocked in Mesh. |
 
 > [!TIP]
 > In addition to firewall allow lists, WebSlates require that environment developers add the URL's domain to the Unity WebSlate component's allow list as well.
