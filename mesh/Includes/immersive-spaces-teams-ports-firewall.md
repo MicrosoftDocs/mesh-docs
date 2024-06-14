@@ -13,6 +13,9 @@ keywords: Microsoft Mesh, Immersive spaces, Immersive spaces in Teams, setup, ad
 
 Configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
 
+> [!NOTE]
+> Currently, there are extra firewall ports required when in an immersive spaces are held with more than 16 people. We are currently working to align with the standards outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true). We appreciate your patience as we make this infrastructure change.
+
 #### Immersive spaces in Teams
 
 1. Aligned to standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).

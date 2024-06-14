@@ -11,9 +11,9 @@ keywords: Microsoft Mesh, Immersive spaces, setup, admin, M365, ports and firewa
 
 ### Endpoints and firewall requirements for immersive spaces in Mesh
 
-This section outlines the specific requirements for **Immersive experiences in Mesh**, inclusive of the Mesh application and its unique features that your organization can leverage to create dynamic corporate events.
+This section outlines the specific requirements for **Immersive experiences in Mesh**, inclusive of the Mesh application and its features that your organization can leverage to create dynamic corporate events.
 
-In general, the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true) applies to all Mesh experiences with some extra steps to enable additional Mesh features like larger multi-room events and Cloud Scripting.
+In general, the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true) applies to all Mesh experiences with some extra steps to enable additional Mesh features like larger multi-room events, Cloud Scripting, and embedded content (WebSlate, Video/Image objects).
 
 #### Step 1: Configure according to Microsoft M365 requirements
 
@@ -24,7 +24,7 @@ First, configure your enterprise firewall settings to align with the standard se
 ##### Larger events (Multi-room)
 
 > [!NOTE]
-> Currently, there are extra firewall ports required when events in the Mesh app are held with more than 16 people. We appreciate your patience as we move to align with the standards outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
+> Currently, there are extra firewall ports required when events in the Mesh app are held with more than 16 people. We are currently working to align with the standards outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true). We appreciate your patience as we make this infrastructure change.
 
 When organizing multi-room events, Mesh also requires that outgoing traffic be allowed to IP addresses in the "AzureCloud" service tag over the following protocols and ports:
 
