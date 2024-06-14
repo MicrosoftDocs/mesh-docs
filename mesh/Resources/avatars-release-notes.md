@@ -22,6 +22,16 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 | Mobile | Teams mobile | View other avatars only |
 | VDI | Teams | View other avatars only |
 
+## June 12, 2024
+
+* Avatar autogeneration is now available if your tenant is opted into the [M365 Targeted Release channels process](/deployoffice/updates/overview-update-channels) and a user is in the [Teams preview experience](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/launch-of-microsoft-teams-preview-experience-and-alignment-with/ba-p/1964899) (Rings 0 through 3.6).
+
+    Simply create an avatar, choose to Create from photo, then upload an image or use your webcam to take a photo and let the Avatars app do the work.
+
+    :::image type="content" source="media/avatar-autogenerate.png" alt-text="Screenshot of the Avatars app showing the ability to create an avatar from an uploaded photo or from a photo taken using your webcam.":::
+
+* Accessibility fixes for keyboard navigation now make accessing the avatar customizer sliders possible.
+
 ## May 23, 2024
 
 A bug that caused roughly 5% of users to experience an outage for Avatars in Teams has been fixed.
