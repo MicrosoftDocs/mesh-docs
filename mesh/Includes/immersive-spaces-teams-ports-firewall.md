@@ -14,7 +14,7 @@ keywords: Microsoft Mesh, Immersive spaces, Immersive spaces in Teams, setup, ad
 This section outlines the specific endpoints and firewall requirements for the Mesh app in Teams and the Avatars app, which allow users to join an immersive space (3D) while in a Teams meeting and use avatars in meetings.
 
 > [!NOTE]
-> Currently, there are extra firewall ports required when in an immersive spaces are held with more than 16 people. We are currently working to align with the standards outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true). We appreciate your patience as we make this infrastructure change.
+> Currently, there are extra firewall ports required for immersive spaces in Teams beyond the standard set of Microsoft 365 requirements. We are working to align with the standards outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true) and appreciate your patience as we make this infrastructure change.
 
 #### Avatars in Teams
 
