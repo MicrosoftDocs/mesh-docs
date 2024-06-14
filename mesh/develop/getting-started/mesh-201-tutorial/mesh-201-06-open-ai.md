@@ -113,11 +113,13 @@ The resource deploys and you should see a message saying that the deployment is 
 
 1. Delete the comment and replace it with the line below:
 
-   	`<PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.15" />`
+```
+<PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.15" />
+```
 
     ![__________________________________](../../../media/mesh-201/108-open-ai-pasted.png)
 
-1. Save the file.
+1. Save and close the file.
 
 ## Add the code that enables OpenAI
 
@@ -176,9 +178,8 @@ The resource deploys and you should see a message saying that the deployment is 
 1. Copy the code below.
 
     ```
-                var aiParentNode = _app.Scene.FindFirstChild("5 - AIAssistant", true) as TransformNode
-                    ?? throw new NullReferenceException("Could not find infoButtonParent");
-                var infoButton = aiParentNode.FindFirstChild<InteractableNode>(true);
+    var aiParentNode = _app.Scene.FindFirstChild("5 - AIAssistant", true) as TransformNode;
+    var infoButton = aiParentNode?.FindFirstChild<InteractableNode>(true);
     ```
 
 1. Replace the "Paste code here" comment you just found with the code you copied.

@@ -135,8 +135,8 @@ In order to complete this station, you'll need to insert a *key* into some code 
 1. Copy the code below.
 
     ```
-        var refreshButton = _app.Scene.FindFirstChild("Earth", true) as TransformNode ?? throw new NullReferenceException("Could not find Earth");
-        var refreshButtonNode = refreshButton.FindFirstChild<InteractableNode>(true);
+        var refreshButton = _app.Scene.FindFirstChild("Earth", true) as TransformNode;
+        var refreshButtonNode = refreshButton?.FindFirstChild<InteractableNode>(true);
 
         if (refreshButtonNode != null)
         {
@@ -154,7 +154,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
     The code does the following:
     
     - Initializes the *refreshButton* variable with the *Earth* GameObject in the scene.
-    - Initializes the *refreshButtonNode* variable with the *InteractableNode* attached to the *Earth* GameObject. (If a GameObject in the scene has a *Mesh Interactable Setup* component attached, which *Earth* does, the component adds a Mesh Cloud Scripting [InteractableNode](../../script-your-scene-logic/cloud-scripting/cloud-scripting-programmers-guide.md#interactablenode)).
+    - Initializes the *refreshButtonNode* variable with the *InteractableNode* attached to the *Earth* GameObject. (If a GameObject in the scene hAs a *Mesh Interactable Setup* component attached, which *Earth* does, the component adds a Mesh Cloud Scripting [InteractableNode](../../script-your-scene-logic/cloud-scripting/cloud-scripting-programmers-guide.md#interactablenode)).
     - When an attendee clicks on the globe, it fires the InteractableNode's *Selected* event and calls the *GetCurrentWeather* method. This generates an [HTTP request](https://learn.microsoft.com/dotnet/fundamentals/networking/http/httpclient) to get the weather data.
 
 1. Save the file.
