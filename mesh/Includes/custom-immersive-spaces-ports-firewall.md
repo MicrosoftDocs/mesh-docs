@@ -69,3 +69,7 @@ Dynamically loaded, embedded content have unique requirements for immersive expe
 > In addition to firewall allow lists, WebSlates require that environment developers add the URL's domain to the Unity WebSlate component's allow list as well.
 > 
 > For more information about WebSlate security and allowlisting, see how to [Display and interact with Web content in Microsoft Mesh | Microsoft Learn](../develop/enhance-your-environment/webcontent.md).
+
+[service-tag]: /azure/virtual-network/service-tags-overview
+[service-tag-api]: /azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api
+[service-tag-download]: /azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files
