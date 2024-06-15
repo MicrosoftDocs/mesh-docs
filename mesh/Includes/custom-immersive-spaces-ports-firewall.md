@@ -59,7 +59,6 @@ Dynamically loaded, embedded content have unique requirements for immersive expe
 > - **If not in SharePoint, the content will follow firewall rules**: Organizers must ensure the URL domain is in the firewall/allowlist for TCP Port 443 (HTTPS).  Attendee client devices will download from this URL directly.
 
 **The embedded content types are:**
-
 |Content type  |How it works |
 |---------|---------|
 |**WebSlate** <p><p> Embed interactive web content in Mesh environments or templates.     | **WebSlates** display web content using a client WebView on each attendee's device.  If their target URLs are blocked for an attendee in a browser, then they will also be blocked in Mesh. |
