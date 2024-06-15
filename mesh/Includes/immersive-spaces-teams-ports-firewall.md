@@ -33,3 +33,7 @@ Configure your enterprise firewall settings to align with the standard set of Mi
 If you need to resolve a service tag to a list of IP ranges, you can periodically use the [service tag API][service-tag-api] or [download a snapshot][service-tag-download].
 
 For more information about service tags, see the [Azure service tags overview][service-tag].
+
+[service-tag]: /azure/virtual-network/service-tags-overview
+[service-tag-api]: /azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api
+[service-tag-download]: /azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files
