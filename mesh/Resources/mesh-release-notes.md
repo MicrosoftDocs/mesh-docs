@@ -17,6 +17,7 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | June 17      | 5.2407.XX    |
 | 2024         | May 23       | 5.2406.XX    |
 | 2024         | May 13       | 5.2405.XX    |
 | 2024         | April 18     | 5.2403.XX+   |
@@ -24,6 +25,16 @@ Microsoft Mesh application
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2407.0
+
+### What's new
+
+### Resolved product issues
+
+* Fixed a keyboard navigation issue in the avatar customizer.
+
+* Fixed an issue where you might not always see your avatar's reaction after you click on a reaction button.
 
 ## Version 5.2406.0
 
