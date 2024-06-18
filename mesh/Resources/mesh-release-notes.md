@@ -30,6 +30,12 @@ Microsoft Mesh application
 
 ### What's new
 
+#### Improved guidance for endpoint and firewall requirements
+
+Guidance for endpoints and firewall requirements has been improved to cover the base requirements and additional steps required for cloud scripting and shared content.
+
+For more info, see the improved [endpoints and firewall configuration guidance](../Setup/Content/preparing-your-organization.md#work-with-your-organizations-security-team).
+
 ### Resolved product issues
 
 * Fixed a keyboard navigation issue in the avatar customizer.

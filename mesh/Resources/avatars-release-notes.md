@@ -22,6 +22,18 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 | Mobile | Teams mobile | View other avatars only |
 | VDI | Teams | View other avatars only |
 
+## June 18, 2024
+
+Create your avatar from a photo! You can now upload an image or use your camera to generate an avatar with your likeness, making avatar creation easier than ever.
+
+Open the avatars app and select the '+' plus symbol, then select **Create from photo**.
+
+:::image type="content" source="media/Auto-generate-avatars-from-photo.png" alt-text="Screenshot of avatars app showing the ability to create an avatar from a photo.":::
+
+Then choose to **Upload an image** or **Use camera**.
+
+:::image type="content" source="media/Avatar-create-from-photo.png" alt-text="Screenshot of avatars app in Teams showing the ability to create an avatar from a photo or use your camera.":::
+
 ## May 23, 2024
 
 A bug that caused roughly 5% of users to experience an outage for Avatars in Teams has been fixed.
