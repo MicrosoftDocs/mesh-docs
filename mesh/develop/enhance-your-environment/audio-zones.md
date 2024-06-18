@@ -29,7 +29,13 @@ the benefits:
 
 Common scenarios:
 
-1. In an environment, create a small "discussion area" with a few chairs or couches. Place an Audio Zone over the area. Select the Audio Zone setting called "low attentuation." Anyone inside of this Audio Zone will hear anyone else inside the Zone clearly. You can also choose a setting called "Muffled voices outside" (tbd -- check on name) which muffles the voices of anyone outside the Audio Zone, making it easier for people inside the Zone to hear each other.
+- In an environment, create a small "discussion area" with a few chairs or couches. Place an Audio Zone over the area. Select the Audio Zone setting called "low attentuation." Anyone inside of this Audio Zone will hear anyone else inside the Zone clearly. You can also choose a setting called "Muffled voices outside" (tbd -- check on name) which muffles the voices of anyone outside the Audio Zone, making it easier for people inside the Zone to hear each other.
+
+- Set up walls and create distinct seperations between rooms.
+
+- Create tunnels that have more reverberation.
+
+- Have distinct acoustic features for different areas. For example, you can have an "outdoor space" where there's no echo and things sound flat, and an "indoor space" where concrete and glass surfaces result in more echo.
 
 
 =====================
@@ -37,4 +43,16 @@ Common scenarios:
 Solution for Organizer/Megaphone problem: create a *stage* area. Anyone who walks into this area is automatically heard by everyone in the environment. 
 
 ## Create an Audio Zone
+
+1. Add an empty GameObject to the scene.
+1. Add an Audio Zone script to this new GameObject.
+1. Add a trigger collider in the shape you want (capsule collider, or rectangle).
+1. Adjust the trigger collider to the size you want.
+1. Specify the Audio Zone options you want. For example:
+    1. For Default Voice, choose "Low attenuation."
+    1. Choose "Muffled voices."
+
+Note: these steps aren't the preferred way to set up an Audio Zone. We want Audio Zones to be Objects. the Audio Zones in the environment should be more about defining acoustics than user functionality (for example, muffled voices). By configuring these options within objects, the environment creator can place the objects in an environment. the environment can then be used as the basis for tEmplates. An Organizer can then choose the template that has the Audio Zone-based objects they want for an event. 
+
+Prefabs
 
