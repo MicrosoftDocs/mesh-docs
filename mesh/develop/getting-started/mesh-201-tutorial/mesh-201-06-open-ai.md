@@ -101,6 +101,8 @@ The resource deploys and you should see a message saying that the deployment is 
 
     ![__________________________________](../../../media/mesh-201/107-openai-uri-and-key.png)
 
+1. Save and close the file.
+
 ## Update the csproj file
 
 1. In the File Explorer window that displays the Mesh Cloud Scripting files, open the file named *StartingPoint.csproj* in your code editor.
@@ -113,9 +115,9 @@ The resource deploys and you should see a message saying that the deployment is 
 
 1. Delete the comment and replace it with the line below:
 
-```
-<PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.15" />
-```
+    ```
+    <PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.15" />
+    ```
 
     ![__________________________________](../../../media/mesh-201/108-open-ai-pasted.png)
 
@@ -296,7 +298,7 @@ The code below sends the GPT-3.5 Turbo model the result of the input dialog with
     - The LLM sends back several responses in an array (*responseMessage*). You can choose the one you want to show. 
     - Call *ShowMessageToParticipant()* in the Mesh Cloud Scripting API to display the response.
 
-1. Save the file.
+1. Save and close the file.
 
 ## Test your work
 
