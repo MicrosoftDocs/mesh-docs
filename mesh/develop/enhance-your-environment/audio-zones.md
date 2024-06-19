@@ -37,6 +37,9 @@ Common scenarios:
 
 - Have distinct acoustic features for different areas. For example, you can have an "outdoor space" where there's no echo and things sound flat, and an "indoor space" where concrete and glass surfaces result in more echo.
 
+- Create a "production booth" for people who are in the event to help the host (for example, running the lights). they can talk normally and no one outside the booth can hear them but they can hear everything that's going on outside the booth.
+
+
 
 =====================
 
@@ -55,4 +58,19 @@ Solution for Organizer/Megaphone problem: create a *stage* area. Anyone who walk
 Note: these steps aren't the preferred way to set up an Audio Zone. We want Audio Zones to be Objects. the Audio Zones in the environment should be more about defining acoustics than user functionality (for example, muffled voices). By configuring these options within objects, the environment creator can place the objects in an environment. the environment can then be used as the basis for tEmplates. An Organizer can then choose the template that has the Audio Zone-based objects they want for an event. 
 
 Prefabs
+
+Rectangular acoustic zone
+Circular acoustic zone
+
+these aren't audio zones. they're "marker prefabs" used at runtime to configure an acoustically-oriented audio zone. 
+
+## Step by Step
+
+
+
+![______](../../media/enhance-your-environment/audio-zones/001-audio-zones-package.png)
+
+![______](../../media/enhance-your-environment/audio-zones/002-shipped.png)
+
+
 
