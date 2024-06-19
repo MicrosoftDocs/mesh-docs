@@ -17,6 +17,7 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | June 17      | 5.2407.XX    |
 | 2024         | May 23       | 5.2406.XX    |
 | 2024         | May 13       | 5.2405.XX    |
 | 2024         | April 18     | 5.2403.XX+   |
@@ -24,6 +25,26 @@ Microsoft Mesh application
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2407.0
+
+### What's new
+
+#### Endpoint and firewall requirements
+
+* Guidance for endpoints and firewall requirements has been improved to cover the base requirements and additional steps required for cloud scripting and shared content.
+
+    For more info, see the improved [endpoints and firewall configuration guidance](../Setup/Content/preparing-your-organization.md#work-with-your-organizations-security-team).
+
+* With this release, we are starting to transition multi room events in the Mesh app on PC and Quest to use the same backend infrastructure as Teams for spatial audio. This will result in improved audio quality and simplify the set of URL/port requirements needed to run events in Mesh once the rollout is complete later in July.
+
+    For more info, see [Endpoints and firewall configuration](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-configuration) in the Preparing your organization for Mesh article.
+
+### Resolved product issues
+
+* Fixed a keyboard navigation issue in the avatar customizer.
+
+* Fixed an issue where you might not always see your avatar's reaction after you click on a reaction button.
 
 ## Version 5.2406.0
 
