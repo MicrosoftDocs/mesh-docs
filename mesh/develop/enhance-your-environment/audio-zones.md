@@ -119,7 +119,13 @@ the voice setting was made out of these filters:
 
 ![______](../../media/enhance-your-environment/audio-zones/012-filters.png)
 
+tbd (I think) A "voice settings" is a collection of individual settings. Each item listed here in the Packages > MM AudioZones > VoiceSetting window is a "voice settings." If you select the voice setting "MixedVoicesLowAttenuation", its individual features (and settings) are shown in the window above. In this case, the VS has three filters.
 
+![______](../../media/enhance-your-environment/audio-zones/013-low-atten.png)
+
+Note: You get a lot more control over audio with these voice settings than by using Unity Spatial Audio source. 
+
+We want this voice setting, 
 
 
 
