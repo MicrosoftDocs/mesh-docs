@@ -66,11 +66,68 @@ these aren't audio zones. they're "marker prefabs" used at runtime to configure 
 
 ## Step by Step
 
-
+Packages:
 
 ![______](../../media/enhance-your-environment/audio-zones/001-audio-zones-package.png)
 
+(tbd this is what we're shipping with:)
+
 ![______](../../media/enhance-your-environment/audio-zones/002-shipped.png)
+
+![______](../../media/enhance-your-environment/audio-zones/003-manifest.png)
+
+Here are audio assets in the project. 
+
+![______](../../media/enhance-your-environment/audio-zones/004-audio-assets.png)
+
+
+there are birds, etc. that's a different workflow.
+
+Now we want ensure that when someone steps into this room:
+
+![______](../../media/enhance-your-environment/audio-zones/005-room.png)
+
+... they don't hear people in the room next to them.
+
+![______](../../media/enhance-your-environment/audio-zones/006-adjacent-room.png)
+
+We have various tools we can use here.
+
+### VoiceSetting Collection
+
+his is the top level of settings.
+
+![______](../../media/enhance-your-environment/audio-zones/007-voice-collection.png)
+
+### Default Voices
+
+![______](../../media/enhance-your-environment/audio-zones/008-default-voices.png)
+
+If you don't change any voice settings, you get these defaults.
+
+![______](../../media/enhance-your-environment/audio-zones/009-default-settings.png)
+
+the settings originate from here:
+
+![______](../../media/enhance-your-environment/audio-zones/010-voice-settings.png)
+
+Each setting has a *Use* assigned to it.
+
+![______](../../media/enhance-your-environment/audio-zones/011-use.png)
+
+the voice setting was made out of these filters:
+
+![______](../../media/enhance-your-environment/audio-zones/012-filters.png)
+
+
+
+
+
+
+
+
+
+
 
 
 
