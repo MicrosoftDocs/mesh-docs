@@ -173,7 +173,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
     ![__________________________________](../../../media/mesh-201/129-code-inserted-in-constructor.png)
 
-1. Find the "Paste code here" comment located in the `refreshButtonNode` *if* statement inside the `StartAsync()` method.
+1. Find the "Paste code here" comment that follows the `refreshButtonNode` *if* statement inside the `StartAsync()` method.
 
     ![__________________________________](../../../media/mesh-201/130-paste-code-in-startsync-method.png)
 
@@ -182,12 +182,23 @@ The resource deploys and you should see a message saying that the deployment is 
     ```
     var aiParentNode = _app.Scene.FindFirstChild("5 - AIAssistant", true) as TransformNode;
     var infoButton = aiParentNode?.FindFirstChild<InteractableNode>(true);
+    
+    if (infoButton != null)
+    {
+        infoButton.Selected += async (sender, args) =>
+        {
+            // Ensure we have weather data before beginning the conversation
+            await GetCurrentWeather(_latlong);
+    
+            // Display an input dialog for the user to send a message to the large language model (LLM)
+            // Paste code here
+        };
+    }
     ```
 
 1. Replace the "Paste code here" comment you just found with the code you copied.
 
     ![__________________________________](../../../media/mesh-201/131-code-inserted-in-start-async-method.png)
-
 
 ## Add the code that displays the OpenAI input dialog
 
