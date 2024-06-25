@@ -11,9 +11,9 @@ keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, sound
 
 # Audio Zones in Mesh
 
-A Mesh event has *audio spatialization* (we describe this as "the way a sound behaves in a 3D space"). However, until now, you've had limited control over how spatialization works; there's one default audio setting and it hasn't been customizable for different event sizes and scenarios. this can be a problem if, for example, your event takes place in a large room and you want the volume of the voices between attendees to fade out more gradually as the attendees get further apart. Another example is an event where there's a large table and attendees at the extreme ends of the table are far enough apart that they can't hear each other. In real life, if you're far away, you can speak louder, but in a Mesh event all voice volumes are *normalized* so this doesn't work. In some cases, there are workarounds (for example, make everyone in the event an *Organizer* so they can push the *megaphone* button to make themselves heard by everyone) but these limitations and workarounds can detract from immersion and presence. 
+A Mesh event has *audio spatialization* (we describe this as "the way a sound behaves in a 3D space"). However, until now, you've had limited control over how spatialization works; there's one default audio setting and it hasn't been customizable for different event sizes and scenarios. this can be a problem if, for example, your event takes place in a large room and you want the volume of the voices between attendees to fade out more gradually as the attendees get further apart. Another example is an event where there's a large table and attendees at the extreme ends of the table are far enough apart that they can't hear each other. In real life, if you're far away, you can speak louder, but in a Mesh event all voice volumes are *normalized* so this doesn't work. In some cases, there are workarounds (for example, make everyone in the event an *Organizer* so they can push the *megaphone* button to make themselves heard by everyone) but these limitations and workarounds can detract from immersion and presence.
 
-With our latest Mesh toolkit updates, you have much more control over how sound behaves in your environment. You can customize the sound settings for the whole space or create *Audio Zones* which are individual areas in the space that override the audio settings of the environment with their own unique audio settings. this gives you the ability to not simply equal the experience of being in a real-life acoustic space but to go surpass it. 
+With our latest Mesh toolkit updates, you have much more control over how sound behaves in your environment. You can customize the sound settings for the whole space or create *Audio Zones* which are individual areas in the space that override the audio settings of the environment. In a sense, this gives you audio "super powers; you can go beyond simply providing a real-life experience and give event attendees capabilities they don't have in everyday life.
 
 - No matter how large the space is, you can give certain attendees the ability to be heard throughout the entire space.
 
@@ -27,7 +27,7 @@ the benefits:
 
 --If you want to change an audio setting, you can do this __________________ tbd without having to edit the environment itself.
 
---Audio Zones can be user-facing or function invisibly.
+--You can set up Audio Zones to be very visible to attendees by using properties such as glowing borders or short messages called *toasts* that display when an attendee enters or exits the Zone. However, you can also design Audio Zones to work without any of these visual cues.
 
 Common scenarios:
 
@@ -215,7 +215,14 @@ See 29:30. -->
 
 At runtime, you might have different audio sources inside an Audio Zone (for example, attendees, video players, and radios). Mesh determines which Voice should be assigned to which source and then applies the appropriate setting using the Spatializer. Every time someone enters or exists an Audio Zone, the settings are adjusted.
 
-1. 
+## Distance attenuation curves
+
+In each Volume Filter, you not only get a **Distance Curve** for attenuation (the sound volume decreases based on the attendee's distance from the sound source), you also get an **Angle  Curve** (the sound volume decreases based on the angle of the attendee's head relative to the sound source). For example, if you want something to sound much quieter when it's behind the attendee's head, you can control this by adjusting the Angle Curve.
+
+    ![______](../../media/enhance-your-environment/audio-zones/029-angle-curve.png)
+
+
+
 
 ## Audio Zone properties
 
@@ -269,29 +276,43 @@ Muffle Voices Outside: Allows attendees inside the Audio Zone to hear voices out
 
 ![______](../../media/enhance-your-environment/audio-zones/027-muffled-filters.png)
 
+Much of the "muffled" effect from this voice is due to the strong influence of the [Low Pass Filter](https://docs.unity3d.com/Manual/class-AudioLowPassFilter.html).
+
+ ![______](../../media/enhance-your-environment/audio-zones/028-low-pass-filter.png)
 
 
 
-Can Audio Exit:
-
-Can Audio Enter:
-
-Glow Sound at Border: This works best when you have some sort of visual representation for the border of the Audio Zone. When this property is selected, a sound triggers when an attendee gets close to the border. For example, you could create an Audio Zone that has an electric fence as its border, and then when an attendee approaches the fence, they hear a crackling electrical sound.
 
 
-Attenuate Voices at Border: As an attendee approaches the border of the Audio Zone, overall volume of voices is lowered.
+**Can Audio Exit** and **Can Audio Enter**: these properties are useful for controlling privacy. Let's say this current Audio Zone is for Room #1, and Room #2 next to it has an Audio Zone with its "Muffle Voices Outside" property selected. 
 
-Walla Murmur:
+    **to allow sounds from Room #1 to be heard in Room #2 (or any area outside the room)**:
+    Select **Can Audio Exit**. 
+    
+    **to prevent sounds from Room #1 from being heard outside the room**:
+    Make sure **Can Audio Exit** is unselected. 
+    
+    **to allow sounds from outside of Room #1 to be heard inside the room:
+    Select **Can Audio enter**.
+    
+    **to prevent sounds from outside Room #1 from being heard inside the room:
+    Make sure **Can Audio Enter** is unselected.
+
+**Glow Sound at Border**: This works best when you have some sort of visual representation for the border of the Audio Zone. When this property is selected, a sound triggers when an attendee gets close to the border. For example, you could create an Audio Zone that has an electric fence as its border, and then when an attendee approaches the fence, they hear a crackling electrical sound.
+
+**Attenuate Voices at Border**: As an attendee approaches the border of the Audio Zone, overall volume of voices is lowered.
+
+**Walla Murmur**: this is another property that's useful when you want a certain level of privacy. Let's say that for this room/Audio Zone, you have **Can Audio Exit** deselected, meaning you don't want attendees outside the room to hear what's being said inside the room. However, in this instance, you *do* want attendees outside the room to detect that attendees are inside the room and talking. With **Walla Murmur** selected, when attendees inside the room talk, attendees outside the room will hear what *sounds* like conversation coming from the room but is actually just a sound effect that mimics talking and doesn't represent the actual conversation.
+
+**tip**: **Glow Sound at Border**, **Attenuate Voices at Border**, and **Walla Murmur** are designed to work together. Imagine this scenario: you're in an open space, with attendees talking around you, and you walk towards Room #1 which has an Audio Zone with the three above-mentioned features turned on. As you approach the room, you can hear that attendees inside the room are talking (*Walla Murmur*). the volume levels of the voices around you fade to nothing (*Attenuate Voices at Border*). At the same time, you start to hear a sound that steadily increases in volume as you approach the border of the room (*Glow Sound at Border*). As you walk into the room, the glow sound gets quieter and the volume of the voices inside the room increases. the result is a smooth transition from the voices you were hearing outside the room to the voices inside it.
+
 
 Entry toast title:
-
 Entry toast body:
-
 Exit toast title:
-
 Exit toast body:
 
-
+A *toast* is a short message that pops up on the screen and then, after a brief period of time, disappears. You can create a toast that will be displayed when an attendee enters or exits the Audio Zone. 
 
 
 
