@@ -85,11 +85,11 @@ Here are audio assets in the project. Note that there's a folder named "AudioZon
 
 there are birds, etc. that's a different workflow.
 
-Now we want ensure that when someone steps into this room:
+Now we want ensure that when someone steps into this room (Room #1):
 
 ![______](../../media/enhance-your-environment/audio-zones/005-room.png)
 
-... they don't hear people in the room next to them.
+... they don't hear people in the room next to them (Room #2).
 
 ![______](../../media/enhance-your-environment/audio-zones/006-adjacent-room.png)
 
@@ -105,7 +105,7 @@ the items in this folder are (I think) made up of individual "voice settings". O
 
 ![______](../../media/enhance-your-environment/audio-zones/008-default-voices.png)
 
-If you don't select a specific Voice Settings, the event will be set up with "Default Voices" voice setting which contains these six default "filters" or "voices". tbd
+If you don't select a specific Voice Setting Collection, the event will be set up with the "Default Voices" Voice Setting Collection which contains these six default "voices". tbd
 
 ![______](../../media/enhance-your-environment/audio-zones/009-default-settings.png)
 
@@ -120,6 +120,8 @@ Each setting has a *Use* assigned to it. (I think ... tbd ... this means that ..
 the six voices/filters that make up the Default Voices voice setting are found in the **Filters** folder:
 
 ![______](../../media/enhance-your-environment/audio-zones/012-filters.png)
+
+**tip**: Voice Settings and Voice Setting Collections are *Scriptable Objects*. A Voice Setting Collection Scriptable Object can be added to the overall environment, to an acoustic zone (tbd what is this?) in the environment, or to an Audio Zone in the environment. 
 
 Breakdown
 tbd (I think):
@@ -200,7 +202,7 @@ to achieve this:
 
     ![______](../../media/enhance-your-environment/audio-zones/021-select-vc.png)
 
-1. We want attendees in the room to hear if something is going on outside the room, but at a low volume. to make this happen, select **Muffle Voices Outside**. the Voice Collection selected for this Audio Zone contains a "Muffle Voice" setting that makes this work.
+1. We want attendees in the room to hear if something is going on outside the room, but at a low volume. to make this happen, select **Muffle Voices Outside**. the Voice Setting Collection selected for this Audio Zone contains a "Muffled Voice" setting that makes this work.
 1. 
 
 <!-- Note tbd: it looks like there are more settings in the Audio Zone component that are already in place:
@@ -211,39 +213,73 @@ Voices: WorkshopRoomVoices (Voice Setting _____).
 
 See 29:30. -->
 
+At runtime, you might have different audio sources inside an Audio Zone (for example, attendees, video players, and radios). Mesh determines which Voice should be assigned to which source and then applies the appropriate setting using the Spatializer. Every time someone enters or exists an Audio Zone, the settings are adjusted.
+
 1. 
 
 ## Audio Zone properties
 
-State:
+**Trigger Collider**: This property contains the GameObject that has an attached Trigger Collider that defines the boundary of the Audio Zone. In most cases, this will be the GameObject the Audio Zone component is attached to. You can set this by dragging the GameObject from the **Hierarchy** and dropping it onto the **Trigger Collider** property, or clicking the round button in the property and then selected a GameObject in the **Select Collider** window.
 
-Zone type:
+    ![______](../../media/enhance-your-environment/audio-zones/023-trigger-collider.png)
 
-Priority:
+
+
+
+State: Leave this set to **Uninitialized**.
+
+Zone type: Leave this set to **Normal**.
+
+Priority: You can assign a priority value to the Audio Zone which can be useful if there are several Audio Zones in the scene. For more details, hover the cursory over this property and read the informational popup.
+
+    ![______](../../media/enhance-your-environment/audio-zones/024-priority.png)
+
+
+
 
 Applicability:
 
 - **When both inside**: the Zone's rules apply only if the attendee *and* the source of the audio are both inside the Audio Zone.
-- **When Audio Source inside**: the Zone's rules apply if the source of the audio is inside the Audio Zone. (this is how a stage works, for example. When the presenter is on the stage, the stage's audio effects go into effect.) 
+- **When Audio Source inside**: the Zone's rules apply if the source of the audio is inside the Audio Zone. (this is how a stage works, for example. When the presenter is on the stage, the stage's Audio Zone settings go into effect.) 
 
 ![______](../../media/enhance-your-environment/audio-zones/022-applicability.png)
 
     
 
 
-Voices:
+Voices: Choose the Voice Settings Collection that contains the Voice Settings you want for this Audio Zone. Click the round button in the property and then search for and choose a Collection in the **Select Voice Setting Collection" window.
 
-Default Voice Selection:
+![______](../../media/enhance-your-environment/audio-zones/025-collection.png)
 
-Muffle Voices Outside:
+
+
+
+
+Default Voice Selection: the drop-down for this property contains a list of various *uses* you may be interested in. If, for example, you want the Audio Zone to use the settings for the *Natural* use, select *Natural* here and the Audio Zone will look for and use a Voice within the Collection you chose that has *Natural* set for its Use. If no Voices with that Use can be found in the Collection and there are nested Audio Zones, the Audio Zone will look in the Collections for other Audio Zones (going from highest Priority to lowest Priority) for a Voice with that Use. If no Audio Zones have such a Voice, the Audio Zone looks to the Environment for such a Voice. If it still can't be found, the default settings for all environments are used.
+
+
+the voice in the Voice Collection you chose that you want to be used by default for any attendee who enters the Audio Zone. this property contains a drop-down list with a number of choices. the "standard" option is **Normal**. However, if you want everyone inside the Zone to be heard easily, then **Low Attenuation" might be a better option.
+
+![______](../../media/enhance-your-environment/audio-zones/026-default-voice.png)
+
+
+
+
+Muffle Voices Outside: Allows attendees inside the Audio Zone to hear voices outside the Zone and applies settings that make those voices sound muffled. the "Muffled" Voice Setting uses three filters.
+
+![______](../../media/enhance-your-environment/audio-zones/027-muffled-filters.png)
+
+
+
 
 Can Audio Exit:
 
 Can Audio Enter:
 
-Glow Sound at Border:
+Glow Sound at Border: This works best when you have some sort of visual representation for the border of the Audio Zone. When this property is selected, a sound triggers when an attendee gets close to the border. For example, you could create an Audio Zone that has an electric fence as its border, and then when an attendee approaches the fence, they hear a crackling electrical sound.
 
-Attenuate Voices at Border:
+
+Attenuate Voices at Border: As an attendee approaches the border of the Audio Zone, overall volume of voices is lowered.
 
 Walla Murmur:
 
@@ -262,9 +298,7 @@ Exit toast body:
 
 1
 
-
-
-
+T
 
 
 
