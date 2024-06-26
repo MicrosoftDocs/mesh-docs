@@ -25,7 +25,7 @@ If you're using a custom environment or there are [**Controllable** objects in y
 
 ### Types of customizations
 
-* Add objects through the **Editor** like Screenshares, Images, or Videos. Drag and resize the these objects easily by selecting the objects and moving them around the environment.
+* Add objects through the **Editor** like Screenshares, Images, Videos, or Text. Drag and resize the these objects easily by selecting the objects and moving them around the environment.
 
     :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-editor-catalog.png" alt-text="Screenshot of Editor catalog in the Microsoft Mesh application.":::
 
@@ -128,6 +128,7 @@ The three objects that you can add to through the editor are **Video**, **Screen
 |Video   |   URL, Looping, Volume, Backplate, Visible      |  Direct links to videos hosted via SharePoint or HTTPS URLs and **.MP4** file types only.       |
 |Screenshare     |  Visible       |  Display screen as an event host with Organizer or Co-Organizer privileges.       |
 |Image     |  URL, Orientation, Backplate, Visible      |   Direct links to images hosted via SharePoint or HTTPS URLs      |
+|Text     |  Display text, Auto resize, Text style, Font Size, Show backplate, Visible      |   Simple text for labels, signage, and attendee instructions      |
 
 Use the Editor to add content to your environment that can be controlled during your run-of-show.
 
