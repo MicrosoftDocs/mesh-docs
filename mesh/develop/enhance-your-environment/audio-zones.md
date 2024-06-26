@@ -4,7 +4,7 @@ description: Learn how to provide the optimal audio experience for all attendees
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/14/2024
+ms.date: 6/25/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, sound
 ---
@@ -40,8 +40,6 @@ Common scenarios:
 - Have distinct acoustic features for different areas. For example, you can have an "outdoor space" where there's no echo and things sound flat, and an "indoor space" where concrete and glass surfaces cause more echo.
 
 - Create a "production booth" for people who are in the event to help the host (for example, running the lights). they can talk normally and no one outside the booth can hear them but they can hear everything that's going on outside the booth.
-
-
 
 =====================
 
@@ -190,20 +188,35 @@ to achieve this:
 
     ![______](../../media/enhance-your-environment/audio-zones/020-new-filter.png)
 
-## Create the Audio Zone
+## Common Audio Zone use cases
 
+### Simple meeting room
+
+In this example, we just want a basic discussion environment where attendees can talk easily. this will only require one Audio Zone, but you could add several Audio Zones and customize the settings for each one.
+
+1. Create an environment that will act as a meeting room.
 1. Add an empty GameObject to the scene and then name it "Acoustics".
 
     In this example scenario, there's a child object to *Acoustics* named "teamArea" that has its own Audio Zone. We've also create another child object that's a container for several objects that each have their own custom Audio Zone: **Room_1**, **Room_2**, and more. We'll take a look at how the **Room_1** object is constructed. As the name implies, this is the Audio Zone object that will be applied to Room 1 in the scene.
 
 1. In the **Inspector**, click the **Add Component** button and then search for and add the "Audio Zone" component.
+1. In the Audio Zone component, click the **Default Voice Selection** drop-down and then select **Low Attenuation**.
 1. Add the "Box Collider" component and then select its **Is trigger** property to *true*.
-1. to choose a collection, click the round button in the **Voices** field and then, in the **Select Voice Setting Collection" window, search for and select the Voice Collection you want.
+1. to choose a collection, click the round button in the **Voices** field and then, in the **Select Voice Setting Collection** window, search for and select the Voice Collection you want.
 
     ![______](../../media/enhance-your-environment/audio-zones/021-select-vc.png)
 
 1. We want attendees in the room to hear if something is going on outside the room, but at a low volume. to make this happen, select **Muffle Voices Outside**. the Voice Setting Collection selected for this Audio Zone contains a "Muffled Voice" setting that makes this work.
 1. 
+
+### Stage
+
+1. Create an environment that will act as a meeting room as described in the previous section.
+1. Add a GameObject that will act as a stage in front of the room.
+1. Follow the steps in the previous section to add an Audio zone to the stage and choose its settings.
+1. In the **Audio Zone** component attached to the stage, then click the **Applicability** drop-down, and then select **When Audio Source inside**.
+
+    
 
 <!-- Note tbd: it looks like there are more settings in the Audio Zone component that are already in place:
 
@@ -262,7 +275,7 @@ Voices: Choose the Voice Settings Collection that contains the Voice Settings yo
 
 
 
-Default Voice Selection: the drop-down for this property contains a list of various *uses* you may be interested in. If, for example, you want the Audio Zone to use the settings for the *Natural* use, select *Natural* here and the Audio Zone will look for and use a Voice within the Collection you chose that has *Natural* set for its Use. If no Voices with that Use can be found in the Collection and there are nested Audio Zones, the Audio Zone will look in the Collections for other Audio Zones (going from highest Priority to lowest Priority) for a Voice with that Use. If no Audio Zones have such a Voice, the Audio Zone looks to the Environment for such a Voice. If it still can't be found, the default settings for all environments are used.
+**Default Voice Selection**: the drop-down for this property contains a list of various *uses* you may be interested in. If, for example, you want the Audio Zone to use the settings for the *Natural* use, select *Natural* here and the Audio Zone will look for and use a Voice within the Collection you chose that has *Natural* set for its Use. If no Voices with that Use can be found in the Collection and there are nested Audio Zones, the Audio Zone will look in the Collections for other Audio Zones (going from highest Priority to lowest Priority) for a Voice with that Use. If no Audio Zones have such a Voice, the Audio Zone looks to the Environment for such a Voice. If it still can't be found, the default settings for all environments are used.
 
 
 the voice in the Voice Collection you chose that you want to be used by default for any attendee who enters the Audio Zone. this property contains a drop-down list with a number of choices. the "standard" option is **Normal**. However, if you want everyone inside the Zone to be heard easily, then **Low Attenuation" might be a better option.
@@ -314,10 +327,24 @@ Exit toast body:
 
 A *toast* is a short message that pops up on the screen and then, after a brief period of time, disappears. You can create a toast that will be displayed when an attendee enters or exits the Audio Zone. 
 
+## Acoustic Zones
+
+If you don't need all the properties that come with an Audio Zone and you just want to specify a particular set of Voice Settings for a bounded region, you can use an *Acoustic Zone* prefab. 
+
+ ![______](../../media/enhance-your-environment/audio-zones/030-acoustic-zones.png)
+
+An Acoustic Zone prefab comes with the *Environment Acoustic Zone* script and is like a simplified Audio Zone. It lets you select a Voice Setting Collection and the trigger Collider it applies to.
+
+ ![______](../../media/enhance-your-environment/audio-zones/031-env-acoustic-zone-script.png)
+
+## Simple Acoustic Zones experiment
+
+1. Apply an Acoustic Zone prefab that uses the *DefaultEnvironmentAcoustics* script to your whole environment.
+1. Select a Voice Settings Collection for the whole environment.
+1. Apply an Acoustic Zone prefab that uses the *RectangularAcousticZone* script for a specific area in the environment.
 
 
 
-1
 
 T
 
