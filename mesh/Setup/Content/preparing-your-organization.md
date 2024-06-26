@@ -1,10 +1,10 @@
 ---
 title: Preparing your organization for Mesh
-description: Prepare your organization to adopt Mesh and its features. Organize a team to manage setup and distribution.
+description: Prepare your organization to adopt Mesh and its features. Organize a team to manage setup, deployment, and onboarding.
 ms.service: mesh
 author: typride
 ms.author: tmilligan
-ms.date: 10/11/2023
+ms.date: 5/20/2023
 ms.topic: overview
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -27,7 +27,7 @@ This content covers requirements for Mesh implementations for Immersive spaces i
 
 1. [Configure service plan to allow user access](#configure-service-plan-to-allow-user-access)
 
-1. [Work with your security team](#work-with-your-organizations-security-team)
+1. [Configure your network for Mesh experiences](#work-with-your-organizations-security-team)
 
 1. [Work with stakeholders to begin deployment](#work-with-stakeholders-that-communicate-change)
 
@@ -133,7 +133,7 @@ The following section lists organizational roles that you will probably need to 
 
 #### Teams apps managers
 
-The adminsitration for immersive spaces and avatars will happen in the Teams admin
+The administration for immersive spaces and avatars will happen in the Teams admin
 portal, [admin.teams.microsoft.com](https://admin.teams.microsoft.com).
 You will need the tenant Global Administrator to assign someone on the
 Mesh team the [role of Teams Administrator in Microsoft Entra](/microsoftteams/using-admin-roles), or
@@ -194,7 +194,7 @@ Microsoft Intune, see:
 
 If your developers plan to build custom Mesh environments that will use [Mesh Cloud Scripting](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md), they will require an Azure subscription to which they can deploy their cloud scripting service. An Azure subscription is not required for environments that only use [Mesh Visual Scripting](../../develop/script-your-scene-logic/visual-scripting/visual-scripting-overview.md).
 
-See [Set up Cloud Scripting infrastructure in Azure](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md) for more details on these requirements.
+For more details on the prerequisites for Mesh Cloud Scripting, see [Prepare for your first Mesh Cloud Scripting project](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-prepare-for-your-project.md).
 
 ## Work with your organization's security team
 
@@ -203,23 +203,13 @@ implications and work closely with your security team to make sure you
 comply with all standard security policies. Discuss the following Mesh
 requirements in advance with the appropriate Security owners.
 
-### Endpoints and firewall ports for experiences in Teams
+## Endpoints and firewall configuration
 
-|   | Immersive spaces in Teams | Avatars in Teams  | 
-|---|---|---|
-| **Required endpoints** | The following endpoints **must** be allowed through your firewall or proxy server. All endpoints need to allow traffic on TCP ports 80 and 443: <p><p> \*.microsoft.com <br> \*.office.com <br> \*.office.net <br> \*.cloud.microsoft |The following endpoints **must** be allowed through your firewall or proxy server. All endpoints need to allow traffic on TCP ports 80 and 443: <p><p> \*.microsoft.com <br> \*.office.com <br> \*.office.net <br> \*.cloud.microsoft |
-| **Firewall ports** | In addition to the endpoints listed above, Mesh also requires that outgoing traffic be allowed to IP addresses in the "AzureCloud" service tag over the following protocols and ports: <p><p> TCP ports 80, 443 <br> TCP & UDP ports 30,000-30,499 <br> UDP ports 3478-3481 <p><p> If you need to resolve a service tag to a list of IP ranges, you can periodically use the [service tag API][service-tag-api] or [download a snapshot][service-tag-download]. <p> For more information about service tags, see the [Azure service tags overview][service-tag]. | Aligned to standard set of Microsoft Teams requirements outlined in [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams&preserve-view=true). |
+As with all Microsoft products, allowing the endpoints and ports required for Mesh experiences is necessary to achieve full functionality and optimal performance for your users. How you use the network configuration requirements for Mesh depends on your enterprise organization network architecture.
 
-To learn more, see [Set up immersive spaces in Teams](/microsoftteams/meeting-immersive-spaces) and [Set up avatars in Microsoft Teams](/microsoftteams/meeting-avatars).
+[!INCLUDE [Include file for the immersive spaces ports and firewall requirements article](../../Includes/immersive-spaces-teams-ports-firewall.md)]
 
-### Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)
-
-|   | Single room event in the Mesh app | Multi room event in the Mesh app  | 
-|---|---|---|
-| **Required endpoints** | Aligned to standard set of Microsoft Teams requirements outlined in [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams&preserve-view=true). | To ensure Mesh works properly, allow the following endpoints. All endpoints need to allow traffic on TCP ports 80 and 443: <p><p> \*.officeapps.live.com <br> \*.microsoft.com <br> \*.office365.com <br> \*.office.com <br> \*.office.net <br> \*.cloud.microsoft <p><p> |
-| **Firewall ports** | Aligned to standard set of Microsoft Teams requirements outlined in [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams&preserve-view=true). | In addition to the endpoints listed above, Mesh also requires that outgoing traffic be allowed to IP addresses in the "AzureCloud" service tag over the following protocols and ports: <p><p> TCP ports 80, 443 <br> TCP & UDP ports 30,000-30,499 <br> UDP ports 3478-3481 <p><p> If you need to resolve a service tag to a list of IP ranges, you can periodically use the [service tag API][service-tag-api] or [download a snapshot][service-tag-download]. <p><p> For more information about service tags, see the [Azure service tags overview][service-tag]. |
-
-To learn more about single room vs. multi room events, see [Create an event in Mesh](/mesh/events-guide/create-event-mesh-portal).
+[!INCLUDE [Include file for the custom immersive spaces ports and firewall requirements in Mesh article](../../Includes/custom-immersive-spaces-ports-firewall.md)]
 
 ### Conditional Access & Quest
 

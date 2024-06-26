@@ -4,8 +4,8 @@ description: Mesh release notes
 ms.service: mesh
 author: typride  
 ms.author: tmilligan
-ms.date: 05/10/2024
-ms.topic: Guide
+ms.date: 05/29/2024
+ms.topic: release-notes
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
 
@@ -17,12 +17,60 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | June 17      | 5.2407.XX    |
+| 2024         | May 23       | 5.2406.XX    |
 | 2024         | May 13       | 5.2405.XX    |
 | 2024         | April 18     | 5.2403.XX+   |
 | 2024         | April 9      | 5.2403.XX    |
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2407.0
+
+### What's new
+
+#### Endpoint and firewall requirements
+
+* Guidance for endpoints and firewall requirements has been improved to cover the base requirements and additional steps required for cloud scripting and shared content.
+
+    For more info, see the improved [endpoints and firewall configuration guidance](../Setup/Content/preparing-your-organization.md#work-with-your-organizations-security-team).
+
+* With this release, we are starting to transition multi room events in the Mesh app on PC and Quest to use the same backend infrastructure as Teams for spatial audio. This will result in improved audio quality and simplify the set of URL/port requirements needed to run events in Mesh once the rollout is complete later in July.
+
+    For more info, see [Endpoints and firewall configuration](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-configuration) in the Preparing your organization for Mesh article.
+
+### Resolved product issues
+
+* Fixed a keyboard navigation issue in the avatar customizer.
+
+* Fixed an issue where you might not always see your avatar's reaction after you click on a reaction button.
+
+## Version 5.2406.0
+
+### What's new
+
+* The Mesh Toolkit contains an updated Mesh 201 tutorial. The tutorial contains two new stations:
+
+    Station 5: Pull data from internal or public sources into your scene. An attendee in the event can click an interactive globe to view live weather data from three different cities.
+
+    Station 6: Set up AI-powered interactions using Azure OpenAI. An attendee can click an "Info" button and ask questions about the best locations for wind farms.
+
+    The documentation for the tutorial has also been updated.
+
+#### Audit logging for Microsoft Mesh
+
+Audit logging help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. This article summarizes how to query and request audit logs for Microsoft Mesh operations and events. Some operations are Mesh specific, while others are associated with other M365 operations, such as M365: Exchange, SharePoint, Microsoft Entra (Azure AD) operations, Microsoft Teams, etc. With audit logging for Mesh, an admin can gather insights into individual or bulk operations that relate to User Activity or operations which result from interactions with M365 services for Microsoft Mesh. Audit logging can be performed using Exchange Online PowerShell or Microsoft Purview.
+
+For more info, see [Audit logging in Mesh](../Setup/Content/audit-logging-in-mesh.md).
+
+## Resolved product issues
+
+* Various bug fixes and reliability improvements.
+
+* After leaving a meeting and rejoining, shared video playback is synced to all users including the broadcaster.
+
+* Improved performance for video streams should make the overall experience of videos playing in Mesh better.
 
 ## Version 5.2405.0
 
@@ -33,12 +81,15 @@ Microsoft Mesh application
 >
 > With this change, the Public build will receive updates faster and include newer updates that would've otherwise been flighted in the Preview release before going to the Public release. Each Public build will continue to be released every 3-weeks.
 >
+> **Mesh Toolkit**
+>
+> The Mesh Toolkit will not be releasing Preview versions following the 5.2405 version release. The delivery of the Mesh Toolkit package will continue to be released 7 days after the release of the Public Mesh application to ensure the Mesh Toolkit package is compatible with the new version of the Mesh application.
 >
 > The Immersive spaces in Teams delivery schedule is not affected by this change.
 >
 > We hope this delivery schedule change will lead to a faster update cadence with newer features reaching the public app sooner than before.
 
-## What's new
+### What's new
 
 * Action groups are now available in the event or template customization flow. This new feature allows an organizer to simultaneously control multiple objects in a event with the the control panel to dynamically change the environment to suit your event needs. Display several images of your team and play a video with the push of a button or show a ScreenShare screen and display supplementary images at the same time.
 
@@ -57,15 +108,25 @@ Microsoft Mesh application
 
     :::image type="content" source="media/Customization-search-objects.png" alt-text="Screenshot of the search functionality available in the Editor tool when customizing an environment in Mesh.":::
 
+* All default environments have their name and description localized into 41 languages.
+
+### Mesh on Quest
+
+* Unexpected startup failure error related to Conditional Access has been replaced with a more verbose and helpful error message:
+
+    Either your Quest device or Mesh app is currently blocked by your organization's AAD Conditional Access policies. Please contact your IT administrator for assistance.
+
 ### Resolved product issues
 
-* In the previous release there was requirement that single room and multi-room events required the same firewall and port configurations. This issue is resolved. Single room events now align to [the standard set by Microsoft Teams](/microsoft-365/enterprise/urls-and-ip-address-ranges), and Multi-room events still require additional ports, as noted in [Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
+* In the previous release, there was requirement that single room and multi-room events required the same firewall and port configurations. This issue is resolved. Single room events now align to [the standard set by Microsoft Teams](/microsoft-365/enterprise/urls-and-ip-address-ranges), and Multi-room events still require additional ports, as noted in [Endpoints and firewall ports for custom immersive spaces in Mesh](../Setup/Content/preparing-your-organization.md#work-with-your-organizations-security-team).
+
+* In the previous release, there was a slight latency in audio when joining an event. This has been resolved. (29657)
 
 ## Version 5.2403.0
 
 ### What's new
 
-* [Updated firewall requirements](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app) for single room events in the Microsoft Mesh app.
+* [Updated firewall requirements](../Setup/Content/preparing-your-organization.md#work-with-your-organizations-security-team) for single room events in the Microsoft Mesh app.
 
 #### Accessibility features
 
@@ -98,8 +159,6 @@ The following product issues have been fixed for this release:
 * Fixed an issue where visual scripts using a computed or variable reference to access `Transform` component instances in large environments could cause a spike in network traffic on environment load.
 
 * Fixed a rare issue where an isolated `TravelPoint` (not parented by a `TravelPointGroup`) in a user environment could lead to an internal error that caused visual scripts to be deactivated.
-
-
 
 * The On State Changed event node can now be used in subgraph assets without issue. Previously, attempting to use it in a subgraph asset caused a `GraphPointerException` error to be logged.
 
@@ -135,7 +194,7 @@ The following product issues have been fixed for this release:
 
 ### Mesh on the web
 
-Mesh on the web is moving to cloud.microsoft with the [Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). Currently, we are providing two links for Mesh on the web to ensure a smooth transition. For the new [cloud.microsoft](https://mesh.cloud.microsoft) link, make sure you have allowed the proper endpoints. See [Preparing your organization](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app) for details.
+Mesh on the web is moving to cloud.microsoft with the [Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). Currently, we are providing two links for Mesh on the web to ensure a smooth transition. For the new [cloud.microsoft](https://mesh.cloud.microsoft) link, make sure you have allowed the proper endpoints. See [Preparing your organization](../Setup/Content/preparing-your-organization.md#work-with-your-organizations-security-team) for details.
 
 The Mesh on the web link is:
 

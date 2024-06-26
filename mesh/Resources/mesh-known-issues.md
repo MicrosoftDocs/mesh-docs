@@ -5,15 +5,11 @@ ms.service: mesh
 author: typride    
 ms.author: tmilligan
 ms.date: 4/19/2024
-ms.topic: Guide
+ms.topic: release-notes
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
 
 # Active known issues - Mesh
-
-## Version 5.2405.0 (May 10, 2024)
-
-
 
 ## Version 5.2403.0 (April 18, 2024)
 

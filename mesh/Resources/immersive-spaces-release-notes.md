@@ -5,7 +5,7 @@ ms.service: mesh
 author: typride 
 ms.author: tmilligan
 ms.date: 4/19/2024
-ms.topic: Guide
+ms.topic: release-notes
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
 
@@ -13,11 +13,25 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
+## Version 5.2406.0 (May 23, 2024)
+
+* For returning users, the pre-join screen with avatar selection and customization is skipped to make the experience of joining the immersive space faster. The second pre-join screen following the avatar selection and customization screen was also removed for new and returning users.
+
+* If a user rejects the Terms of service, there is now the option to go Back to the Teams meeting.
+
 ## Version 5.2405.0 (May 13, 2024)
 
 * More professional wardrobe styles are coming to the Avatar builder. Customize your avatar to see all the new and updated looks available to freshen up your avatar for your next meeting.
+
     :::image type="content" source="media/Avatar-wardrobe-update.png" alt-text="Screenshot of Avatar wardrobe updates. ":::
 
+* Immersive spaces in Teams is now supported on Mac devices for customers in the [Teams Public Preview program](/MicrosoftTeams/public-preview-doc-updates?tabs=new-teams-client) in Rings 0, 1, 1.5, 2, and 3. 
+
+* The Lakehouse icebreaker activity is localized into 41 languages.
+
+* Seating layout names are now translated into 41 languages in the Oasis immersive environment.
+
+* All default environments have their name and description localized into 41 languages.
 
 ## Version 5.2403.0 (April 18, 2024)
 

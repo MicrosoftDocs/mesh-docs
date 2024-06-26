@@ -5,7 +5,7 @@ ms.service: mesh
 author: typride   
 ms.author: tmilligan
 ms.date: 02/15/2024
-ms.topic: Guide
+ms.topic: release-notes
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes, Mesh avatars
 ---
 
@@ -28,3 +28,4 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes, Mesh avatars
 * When a user with a Teams 2.1 ARM device tries to enable Avatars in Teams, the app may crash. Why? The Onnx runtime that is used for Avatars is not included in Teams 2.1.
 
 * In the eye color customizer, users may not see the correct colors displaying on their avatar and may seem unsaturated. (34981)
+ 

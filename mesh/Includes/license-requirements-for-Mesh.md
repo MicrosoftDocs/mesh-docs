@@ -26,7 +26,7 @@ For Microsoft Mesh, you will need the following:
 
 - **(Optional) Unity license(s) and Azure subscription with storage** to develop custom immersive spaces and deploy Cloud Scripting for Mesh environments.
 
-  Learn more about [Cloud scripting for custom immersive spaces in Microsoft Mesh](../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md).
+  Learn more about [Mesh Cloud Scripting infrastructure and management](../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md).
 
 #### Subscription requirements
 
