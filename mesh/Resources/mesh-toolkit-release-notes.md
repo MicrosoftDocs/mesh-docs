@@ -31,9 +31,30 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2405.X | 2024-5-22     |
-| Mesh toolkit (Preview)     | 5.2404.X | 2024-3-12     |
-| Mesh on PC/Quest           | 5.2406.X | 2024-4-12     |
+| Mesh toolkit               | 5.2407.X | 2024-5-22     |
+| Mesh on PC/Quest           | 5.2407.X | 2024-4-12     |
+
+## Mesh Toolkit 5.2407.X
+
+### What's new
+
+### Experimental features
+
+This release includes an experimental Audio Zones feature available in the "Experimental features" folder. These features are designed to work with the Mesh application of the same version. For this version of the Mesh Toolkit, v5.2407.225, the version of the Mesh application that Experimental features work with is 5.2407.XX.
+
+If you incorporate experimental features into your project and upload it to be used for events, note that any events run with the future versions of the Mesh application will not work the previous version of the Toolkit. Using experimental features, in effect, will break any events using future versions of the Mesh application.
+
+Upon the next release of the Mesh application, you must reupload your environment with the same version of the Mesh Toolkit once the Toolkit is released (which is approximately a week after the Mesh application release) to avoid breaking events that may be created with that environment.
+
+#### User experience in Mesh on the Web
+
+When creating events in Mesh on the web, if a user tries to make an event an environment with experimental features, they will be notified that the environment uses experimental features.
+
+#### Audio zones
+
+* **Audio Zone Object** component prefab is now available in this release. Once placed in a scene and configured, it will show up as an object in the Control Panel and be controllable by a host in an event.
+
+    For more information on the Audio Zone Object, see [Developer article]().
 
 ## Mesh Toolkit 5.2406.X
 
