@@ -40,7 +40,7 @@ These are the offerings and packages currently available. There may be slight di
 
 ### Experimental features
 
-This release includes an experimental Audio Zones feature available in the "Experimental features" folder. These features are designed to work with the Mesh application of the same version. For this version of the Mesh Toolkit, v5.2407.225, the version of the Mesh application that Experimental features work with is 5.2407.XX.
+This release includes an experimental Audio Zones feature available in the "Experimental features" folder. These features are designed to work with the Mesh application of the same version. For example, this version of the Mesh Toolkit, v5.2407.225, should be used with the Mesh application version 5.2407.XX.
 
 If you incorporate experimental features into your project and upload it to be used for events, note that any events run with the future versions of the Mesh application will not work the previous version of the Toolkit. Using experimental features, in effect, will break any events using future versions of the Mesh application.
 
