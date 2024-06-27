@@ -1,5 +1,5 @@
 items:
-  - name: Mesh Emulation Mode testing in Unity
+  - name: Play Mode with Mesh Emulation testing in Unity
     href: mesh-emulator.md
   - name: Speed up Mesh Emulation Mode
     href: speed-up-mesh-emulation.md
