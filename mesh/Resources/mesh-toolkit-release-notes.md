@@ -4,7 +4,7 @@ description: Release notes for the Microsoft Mesh Toolkit with a list of importa
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
-ms.date: 4/22/2024
+ms.date: 06/27/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
@@ -31,16 +31,16 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2407.X | 2024-5-22     |
-| Mesh on PC/Quest           | 5.2407.X | 2024-4-12     |
+| Mesh toolkit               | 5.2408.X | 2024-5-22     |
+| Mesh on PC/Quest           | 5.2408.X | 2024-4-12     |
 
-## Mesh Toolkit 5.2407.X
+## Mesh Toolkit 5.2408.X
 
 ### What's new
 
 ### Experimental features
 
-This release includes an experimental Audio Zones feature available in the "Experimental features" folder. These features are designed to work with the Mesh application of the same version. For example, this version of the Mesh Toolkit, v5.2407.225, should be used with the Mesh application version 5.2407.XX.
+This release includes an experimental Audio Zones feature available in the "Experimental features" folder. These features are designed to work with the Mesh application of the same version. For example, this version of the Mesh Toolkit, v5.2408.XXX, should be used with the Mesh application version 5.2408.XXX.
 
 If you incorporate experimental features into your project and upload it to be used for events, note that any events run with the future versions of the Mesh application will not work the previous version of the Toolkit. Using experimental features, in effect, will break any events using future versions of the Mesh application.
 
