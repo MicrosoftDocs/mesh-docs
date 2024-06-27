@@ -25,7 +25,7 @@ Microsoft Mesh application
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
-## Version 5.2406.0
+## Version 5.2406.0 
 
 ### What's new
 
