@@ -2,9 +2,9 @@
 title: Personalize your avatars
 description: Represent yourself in Mesh events as an avatar
 ms.service: mesh
-author: qianw211    
-ms.author: qianwen
-ms.date: 10/7/2023
+author: typride    
+ms.author: tmilligan
+ms.date: 06/18/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -22,10 +22,26 @@ For more information, see [Join a meeting as an avatar in Microsoft Teams](https
 
 You can access avatar customization from the following entry points:
 
+* Avatars app in Teams
 * Mesh app on PC
 * Mesh app on Quest
 
 You can create up to three different versions of your avatar to show off your personas in Mesh experiences. 
+
+### In the Avatars app
+
+To create a new avatar, open the avatars app in Teams.
+
+> [!TIP]
+> You may need to search for the app if you haven't pinned it to your sidebar.
+>
+> :::image type="content" source="../Resources/media/Avatars-search-for-app.png" alt-text="Screenshot of the Teams app, showing how a user can search for the avatars application.":::
+
+Select the **+** plus symbol to create a new avatar then select **Create from photo** to upload a photo or use your camera to generate a base avatar with your likeness.
+
+:::image type="content" source="../Resources/media/Auto-generate-avatars-from-photo.png" alt-text="Screenshot of the avatars app showing how you can create an avatar from a photo.":::
+
+### In the Mesh app on PC or Quest
 
 To create a new avatar, select **+** after clicking the **Profiles** button in the lower right corner of your Mesh App. You can also click on any of the existing avatars you have previously built to start [customizing](#customize-your-avatars).
 
@@ -39,7 +55,7 @@ Select your desired avatar that looks closest to you and click **Use Avatar**. Y
 
 ## Customize your avatars
 
-Once you're inside Mesh, hover over your **Profile** bubble and select **Customize** to start customizing your avatar at any time. 
+Once you're inside Mesh, hover over your **Profile** bubble and select **Customize** to start customizing your avatar at any time.
 
 ![A screenshot of the Profile menu highlighting the customize button](media/profile-customize.png)
 
