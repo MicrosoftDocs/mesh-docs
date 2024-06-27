@@ -1,6 +1,8 @@
 items:
   - name: Mesh Emulation Mode testing in Unity
     href: mesh-emulator.md
+  - name: Speed up Mesh Emulation Mode
+    href: speed-up-mesh-emulation.md
   - name: Performance guidelines
     href: performance-guidelines.md
   - name: Content Performance Analyzer
