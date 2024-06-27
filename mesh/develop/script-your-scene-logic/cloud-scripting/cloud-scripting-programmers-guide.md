@@ -207,6 +207,34 @@ TextNode maps to Unity's TextMeshPro component. If you add a TextMeshPro compone
 
 Meshes are currently "hidden" components to the Mesh Cloud Scripting API. They can be created in the Unity editor, and can be manipulated by manipulating their parent game objects/Transform components, but they can't be created programmatically, nor can their properties be edited at runtime through the Mesh API.
 
+## Visual Scripts
+
+You can create and add a Unity Script Machine to your scene and control it through Mesh Cloud Scripting. The Mesh toolkit plugin will look through the assets in your Unity project, and for each Script Machine that's found, it'll generate a class in a "VisualScripts" folder in your Mesh Cloud Scripting project. This class derives from VisualScriptNode and can be used to manipulate the Unity variables associated with the Script Machine from Mesh Cloud Scripting. When you add the Script Machine as a component to a GameObject in Unity, you'll find a corresponding instance of the generated class as a child of the corresponding TransformNode. Using the API of this class, you can control the Script Machine's variables.
+
+### State synchronization
+
+By default, Mesh automatically replicates scene changes done by visual scripts on one client to all other clients. For Mesh Cloud Scripting to be aware of a change made through visual scripting, the following preconditions have to be met:
+- The Script Machine component is on a GameObject that's a descendant of the Mesh Cloud Scripting scene root.
+- The "Enable Visual Scripting" option of the Mesh Cloud Scripting component is enabled.
+
+If either one of the above conditions isn't met, the Mesh Visual Scripting runtime will continue to replicate the scene changes, but Mesh Cloud Scripting will remain oblivious to these changes.
+
+### Initial state
+
+We recommend that your visual scripts don't modify or rely on shared state on start. The *On Start* event typically happens before the Mesh Cloud Scripting Service connection occurs; therefore, there's no way to synchronize state at that point in time, and behavior may not what you desire.
+
+### Late Join
+
+When clients join a Mesh Event, they synchronize to the current state of all Visual Script nodes. Any State Changed event that may have been previously raised on the other clients will *not* be raised on the late joined client. Some other scenarios might not work as expected; for example, if you trigger a sound by enabling an *AudioSource* in response to an *On State Changed* event, that AudioSource will still be enabled in the late join client, but will start playing at the beginning of the audio clip.
+
+### Reparenting and cloning
+
+*VisualScriptNode* can't be created through the Mesh Cloud Scripting API. The only way to create a VisualScriptNode is by exporting a Unity scene that contains a Script Machine component. If you try to clone or reparent the VisualScriptNode, you'll get an error because there's no way to support this action. It's still possible to clone or reparent the parent of the VisualScriptNode, as this corresponds to the containing Unity GameObject which can be cloned and parented.
+
+### Notes on Generated Code
+
+The generated code will remove spaces from names of Script Machines and variables; for example, the variable name "my var" becomes "MyVar" in code. Because of this, it's possible to create Script Machines that won't generate valid code. For example, if you have two variables named "my var" and "myVar", you'll get an error during generation and a message asking you to rename the variable(s).
+
 ## Other Mesh Cloud Scripting topics
 
 ### Adding resources to the Mesh Cloud Scripting Service
