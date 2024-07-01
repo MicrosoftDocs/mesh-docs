@@ -138,7 +138,7 @@ Use the Editor to add content to your environment that can be controlled during 
 
 1. Select the **+** plus button to open the **Catalog** of objects that you can add. Select one to add it to the environment editor.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Customize-event-editor-catalog.png" alt-text="Screenshot of Editor catalog in the Microsoft Mesh application.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/customize-event-add-objects-catalog.png" alt-text="Screenshot showing the catalog of possible objects to add when customizing an event in the Mesh application.":::
 
 1. Once you've added an object, you'll see it show up in the Objects window as shown below:
 
