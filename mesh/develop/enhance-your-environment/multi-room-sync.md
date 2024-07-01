@@ -4,8 +4,8 @@ description: Learn about the multi-room sync features you can add to your Enviro
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/1/24
-ms.topic: Guide
+ms.date: 7/1/2024
+ms.topic: conceptual
 keywords: Microsoft Mesh, Unity, environments, scenes, events, animations, timelines, templates, video, playables
 ---
 
