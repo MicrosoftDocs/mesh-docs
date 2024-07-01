@@ -2,9 +2,9 @@
 title: Multi-room sync (animations, timelines, and video)
 description: Learn about the multi-room sync features you can add to your Environment.
 ms.service: mesh
-author: typride
+author: vtieto
 ms.author: vinnietieto
-ms.date: 10/23/2023
+ms.date: 7/1/24
 ms.topic: Guide
 keywords: Microsoft Mesh, Unity, environments, scenes, events, animations, timelines, templates, video, playables
 ---
@@ -89,6 +89,9 @@ To learn more about the Unity Playables API in general, see [Playables in the Un
     create a new folder named *Animations*.
 
 1. In the **Hierarchy**, select **Timeline1**, and then select **Window** > **Sequencing** > **Timeline**.
+
+    > [!NOTE]
+    > If you don't see the **Timeline** menu item, open the Package Manager, and then, in the Unity Registry, search for and install the "Timeline" package.
 
 1. We recommend that you move the **Timeline** tab next to the
     **Project** and **Console** tabs. This allows you to view the
