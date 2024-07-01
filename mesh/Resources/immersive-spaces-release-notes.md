@@ -13,6 +13,10 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
+## Version 5.2408.XX (July 01, 2024)
+
+* Fixed an issue where changing the environment settings in a Teams meeting in a channel didn't apply correctly. (17706)
+
 ## Version 5.2406.0 (May 23, 2024)
 
 * For returning users, the pre-join screen with avatar selection and customization is skipped to make the experience of joining the immersive space faster. The second pre-join screen following the avatar selection and customization screen was also removed for new and returning users.

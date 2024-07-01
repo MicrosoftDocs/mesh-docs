@@ -22,6 +22,9 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 | Mobile | Teams mobile | View other avatars only |
 | VDI | Teams | View other avatars only |
 
+## July 01, 2024
+
+* Fixed an issue where Avatar visual quality could pop in/out aggressively especially in quest devices. (16748)
 
 ## June 18, 2024
 

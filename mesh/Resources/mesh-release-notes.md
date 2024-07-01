@@ -17,16 +17,35 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | July 02      | 5.2408.XX    |
 | 2024         | June 17      | 5.2407.XX    |
 | 2024         | May 23       | 5.2406.XX    |
 | 2024         | May 13       | 5.2405.XX    |
 | 2024         | April 18     | 5.2403.XX+   |
-| 2024         | April 9      | 5.2403.XX    |
+| 2024         | April 09      | 5.2403.XX   |
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
-## Version 5.2407.0
+## Version 5.2408.XX
+
+### What's new
+
+#### Click-on-avatar interaction
+
+* Selecting on or "clicking" an avatar in a Mesh event now opens a radial menu with unique options to event attendees and hosts. For hosts, selecting an avatar opens a small radial menu with Mute, Contact, and Call on options, empowering event hosts to better control microphone permissions and more easily call on attendees. For attendees, selecting an avatar will open a radial menu with Mute, and Contact.
+
+[Image]
+
+
+
+
+
+### Resolved product issues
+
+
+
+## Version 5.2407.XX
 
 ### What's new
 
@@ -46,7 +65,7 @@ Microsoft Mesh application
 
 * Fixed an issue where you might not always see your avatar's reaction after you click on a reaction button.
 
-## Version 5.2406.0
+## Version 5.2406.XX
 
 ### What's new
 
