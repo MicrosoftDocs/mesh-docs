@@ -31,23 +31,19 @@ Microsoft Mesh application
 
 ### What's new
 
-#### Click-on-avatar interaction
-
-* Selecting on or "clicking" an avatar in a Mesh event now opens a radial menu with unique options to event attendees and hosts. For hosts, selecting an avatar opens a small radial menu with Mute, Contact, and Call on options, empowering event hosts to better control microphone permissions and more easily call on attendees. For attendees, selecting an avatar will open a radial menu with Mute, and Contact.
-
-[Image]
-
 #### Broadcasting
 
 * We now support up to five broadcasters in multi-room events, up from the previous limit of three. With this change, more people can engage across rooms, including hosts that broadcast themselves or attendees who raise their hand.
 
     For more info, see [how to Broadcast when producing an event](../events-guide/produce-event.md#broadcast).
 
-### Resolved product issues
-
 ## Version 5.2407.XX
 
 ### What's new
+
+#### Text object added to event customization catalog
+
+* There's now a Text object available in the Catalog when customizing an event. The text object has a cou
 
 #### Endpoint and firewall requirements
 
