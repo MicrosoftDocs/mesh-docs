@@ -81,3 +81,8 @@ Examples:
 
 - A malicious local visual script wants to give all avatars bobble heads. To that end, it attempts to scan the entire scene for GameObjects that represent avatar heads. Mesh automatically filters the scanning results to exclude the avatar system.
 - A malicious remote client wants to deface the scene by flipping all GameObjects upside down. To achieve that, it sends a property update that sets the vertical scale of each GameObject in the scene. However, since no visual script on the receiving client is designed to do anything like that, the local client ignores the remote input.
+
+## See also
+
+> [!div class="nextstepaction"]
+> [Play audio in Mesh](../../enhance-your-environment/play-audio-in-mesh.md)
