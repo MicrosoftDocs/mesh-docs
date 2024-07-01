@@ -37,13 +37,13 @@ Microsoft Mesh application
 
 [Image]
 
+#### Broadcasting
 
+* We now support up to five broadcasters in multi-room events, up from the previous limit of three. With this change, more people can engage across rooms, including hosts that broadcast themselves or attendees who raise their hand.
 
-
+    For more info, see [how to Broadcast when producing an event](../events-guide/produce-event.md#broadcast).
 
 ### Resolved product issues
-
-
 
 ## Version 5.2407.XX
 
