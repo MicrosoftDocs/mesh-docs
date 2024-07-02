@@ -31,9 +31,14 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2405.X | 2024-5-22     |
-| Mesh toolkit (Preview)     | 5.2404.X | 2024-3-12     |
-| Mesh on PC/Quest           | 5.2406.X | 2024-4-12     |
+| Mesh toolkit               | 5.2407.X | 2024-6-26     |
+| Mesh on PC/Quest           | 5.2407.X | 2024-6-26     |
+
+## Mesh Toolkit 5.2407.X
+
+### What's new
+
+- You can now enter [Play Mode with Mesh Emulation](../develop/debug-and-optimize-performance/mesh-emulator.md) with [Domain Reloading disabled](../develop/debug-and-optimize-performance/speed-up-mesh-emulation.md). This should significantly speed up the start and stop times of the Mesh Emulator, allowing you to iterate faster.
 
 ## Mesh Toolkit 5.2406.X
 
