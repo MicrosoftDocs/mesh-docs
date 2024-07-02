@@ -27,7 +27,7 @@ First, configure your enterprise firewall settings to align with the standard se
 > Currently, there are extra firewall ports required when events in the Mesh app are held with more than 16 people. We are currently working to align with the standards outlined in Microsoft M365 URLs and IP address ranges. We appreciate your patience as we make this infrastructure change.
 
 > [!IMPORTANT]
-> We are currently rolling out an update to transition multi room events in the Mesh app on PC and Quest to use the same backend infrastructure as Teams for spatial audio. During rollout, you may find that these additional endpoint and firewall requirements for multi-room may not be required. This rollout should complete by the end of July, 2024.
+> We are currently rolling out an update to transition multi room events in the Mesh app on PC and Quest to use the same backend infrastructure as Teams for spatial audio. During the rollout, you may find that the additional endpoint and firewall requirements for multi-room may not be required. This rollout should complete by the end of July, 2024.
 >
 >To prevent an interruption in service, we recommend continuing to support the full set of URLs/ports listed on this page. We will update this page once the infrastructure transition is complete with a simplified set of URL/port requirements.
 >
