@@ -31,15 +31,15 @@ Microsoft Mesh application
 
 ### What's new
 
-#### Mult-room events
+#### Multi-room events
 
 * We now support up to five broadcasters in multi-room events, up from the previous limit of three. With this change, more people can engage across rooms, including hosts that broadcast themselves or attendees who raise their hand.
 
     For more info, see [how to Broadcast when producing an event](../events-guide/produce-event.md#broadcast).
 
-* When broadcasting, hosts can call on attendees to instantly begin broadcasting them.
+* Event hosts can call on attendees from the Host panel when attendees raise their hand to directly to start broadcasting them.
 
-* As a host you can now see attendees profile bubbles when they raise their hand and see emojis that that emote with!
+* As a host you can now see attendees' profile bubbles when they raise their hand and see emojis that that emote with!
 
     :::image type="content" source="media/Emoji-reactions-hand-raise-multi-room.png" alt-text="Screenshot of Mesh app showing attendees with profile bubbles reacting with emojis.":::
 
