@@ -4,7 +4,7 @@ description: Avatars in Microsoft Teams - Latest feature release
 ms.service: mesh
 author: typride
 ms.author: tmilligan
-ms.date: 04/19/2024
+ms.date: 07/02/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
@@ -22,6 +22,9 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 | Mobile | Teams mobile | View other avatars only |
 | VDI | Teams | View other avatars only |
 
+## July 01, 2024
+
+* Fixed an issue where Avatar visual quality could pop in/out aggressively especially in quest devices. (16748)
 
 ## June 18, 2024
 

@@ -2,10 +2,10 @@
 title: Join an event
 description: Joining an event in Mesh
 ms.service: mesh
-author: qianw211    
-ms.author: qianwen
+author: typride    
+ms.author: tmilligan
 ms.date: 10/7/2023
-ms.topic: Guide
+ms.topic: conceptual
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
 

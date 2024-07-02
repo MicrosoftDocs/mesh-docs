@@ -4,7 +4,7 @@ description: Mesh release notes
 ms.service: mesh
 author: typride  
 ms.author: tmilligan
-ms.date: 05/29/2024
+ms.date: 07/02/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -17,18 +17,67 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | July 02      | 5.2408.XX    |
 | 2024         | June 17      | 5.2407.XX    |
 | 2024         | May 23       | 5.2406.XX    |
 | 2024         | May 13       | 5.2405.XX    |
 | 2024         | April 18     | 5.2403.XX+   |
-| 2024         | April 9      | 5.2403.XX    |
+| 2024         | April 09      | 5.2403.XX   |
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
-## Version 5.2407.0
+## Version 5.2408.XX
 
 ### What's new
+
+#### Multi-room events
+
+* We now support up to five broadcasters in multi-room events, up from the previous limit of three. With this change, more people can engage across rooms, including hosts that broadcast themselves or attendees who raise their hand.
+
+    For more info, see [how to Broadcast when producing an event](../events-guide/produce-event.md#broadcast).
+
+* Event hosts can call on attendees from the Host panel when attendees raise their hand to directly to start broadcasting them.
+
+* Introducing a first look at cross-room visualizations of people! Event hosts can now see spatialized profile bubbles of attendees who are actively sharing emojis or raising their hands.
+
+* Calling on a hand raise is still available in the Host Panel, but can also now be done by clicking directly on the avatar or profile bubble of an attendee.
+
+    :::image type="content" source="media/Emoji-reactions-hand-raise-multi-room.png" alt-text="Screenshot of Mesh app showing attendees with profile bubbles reacting with emojis.":::
+
+#### Event customization
+
+* Text object is now available when customizing your event. Add text like any other object (Screenshare, Image, Video), move it around the environment, then edit its properties like text style, or size.
+
+    :::image type="content" source="media/Customization-editor-text.png" alt-text="Screenshot of customization session in the Mesh app showing the Text  object.":::
+
+#### Error messaging
+
+* Improved error messaging when a user joins an environment that is not compatible with their application version. In most cases, this is specific to when experimental features are in use.
+
+* Added a **Give feedback** button to error messages that may be hard to diagnose or don't have adequate resolution steps provided.
+
+* Improved error messaging should better inform the user as to why the error occurred.
+
+#### Resolved issues
+
+* Fixed issues that can prevent people from joining an event. (17412, 18048)
+
+* Fixed issue with error message being dismissible when joining events through a link. (18081)
+
+* Fixes to host panel and host user experience. (16512, 16397, 16874)
+
+* The loading background should now display when joining an event directly from Mesh on the web.
+(17420)
+
+
+## Version 5.2407.XX
+
+### What's new
+
+#### Text object added to event customization catalog
+
+* There's now a Text object available in the Catalog when customizing an event. The text object has a cou
 
 #### Endpoint and firewall requirements
 
@@ -46,7 +95,7 @@ Microsoft Mesh application
 
 * Fixed an issue where you might not always see your avatar's reaction after you click on a reaction button.
 
-## Version 5.2406.0
+## Version 5.2406.XX
 
 ### What's new
 

@@ -2,10 +2,10 @@
 title: Social games and activities
 description: Interactive elements in environments
 ms.service: mesh
-author: qianw211    
-ms.author: qianwen
+author: typride    
+ms.author: tmilligan
 ms.date: 1/18/2023
-ms.topic: Guide
+ms.topic: conceptual
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
