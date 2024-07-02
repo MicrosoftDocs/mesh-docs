@@ -113,8 +113,6 @@ To find out about another participant in your event, click the nametag above an 
 
 ![screenshot of the name card contact info button](media/name-card.png)
 
-Or simply select another participant in your event, then select **Contact** or **Mute** from the radial menu that appears.
-
 ## Next steps
 
   > [!div class="nextstepaction"]
