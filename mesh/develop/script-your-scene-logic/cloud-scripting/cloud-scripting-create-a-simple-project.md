@@ -2,9 +2,9 @@
 title: Create a simple Cloud Scripting project
 description: Create a simple project that uses Mesh Cloud Scripting.
 ms.service: mesh
-author: typride
+author: vtieto
 ms.author: vinnietieto
-ms.date: 3/12/2024
+ms.date: 6/27/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding, tutorial, getting started
 ---
@@ -38,8 +38,8 @@ The following instructions show how to create a simple environment with a Cube t
 
 ### Modify the scene
 
-1. [Set up Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md). Make sure you add a GameObject to the scene that can act as a floor and set it to the *GroundCollision* layer.
-1. When you set up Mesh Emulation Mode, it adds the prefab *MeshEmulatorSetup[NoUpoload]* to the scene which contains the camera that you'll be using from this point on. You no longer need the default *Main camera* GameObject; delete it.
+1. [Set up Play Mode with Mesh Emulation](../../debug-and-optimize-performance/mesh-emulator.md). Make sure you add a GameObject to the scene that can act as a floor and set it to the *GroundCollision* layer.
+1. When you set up Play Mode with Mesh Emulation, it adds the prefab *MeshEmulatorSetup[NoUpoload]* to the scene which contains the camera that you'll be using from this point on. You no longer need the default *Main camera* GameObject; delete it.
 
    ![A screen shot of the Cube placed as a child to Mesh Cloud Scripting.](../../../media/mesh-scripting/getting-started/013-camera.png)
 
