@@ -3,7 +3,7 @@ title: Explore Mesh Physics in sample projects
 description: Guide to using Mesh physics when creating Environments for Mesh.
 author: michael-buschbeck-ms
 ms.author: vinnietieto
-ms.date: 10/18/2023
+ms.date: 6/27/2024
 ms.topic: Guide
 ms.service: mesh
 keywords: Microsoft Mesh, Mesh physics, physics, environments, interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw
@@ -57,9 +57,9 @@ As you explore our other sample projects, you'll find various instances of Mesh 
 
 1. Open the sample project in Unity.
 
-### Run the Project in Mesh Emulation Mode
+### Run the Project in Play Mode with Mesh Emulation
 
-The project is already configured to run in [Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md).
+The project is already configured to run in [Play Mode with Mesh Emulation](../../debug-and-optimize-performance/mesh-emulator.md).
 
 1. Open the project in Unity.
 1. Navigate to the **Assets > Scenes** folder, and then load the **DartRoom** scene.
@@ -67,7 +67,7 @@ The project is already configured to run in [Mesh Emulation Mode](../../debug-an
 
 ### Run Split Screen with multiple players
 
-By default, Mesh Emulation Mode runs with a single player. To add a second player with emulated networking:
+By default, Play Mode with Mesh Emulation runs with a single player. To add a second player with emulated networking:
 
 1. In the **Hierarchy**, select **MeshEmulatorSetup [NoUpload]**.
 1. In the **Inspector**, navigate to the **Mesh Emulator Setup** component, then increase the Inital Screen Count to 2.
