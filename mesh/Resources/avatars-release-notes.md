@@ -4,7 +4,7 @@ description: Avatars in Microsoft Teams - Latest feature release
 ms.service: mesh
 author: typride
 ms.author: tmilligan
-ms.date: 04/19/2024
+ms.date: 07/02/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---

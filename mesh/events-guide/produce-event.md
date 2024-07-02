@@ -5,7 +5,7 @@ ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 9/07/2023
-ms.topic: Guide
+ms.topic: conceptual
 keywords: Microsoft Mesh, Producing, M365, events, hosting, event producer, event organizer
 ---
 

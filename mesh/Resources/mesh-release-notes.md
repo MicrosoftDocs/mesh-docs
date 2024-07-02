@@ -4,7 +4,7 @@ description: Mesh release notes
 ms.service: mesh
 author: typride  
 ms.author: tmilligan
-ms.date: 05/29/2024
+ms.date: 07/02/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -31,11 +31,43 @@ Microsoft Mesh application
 
 ### What's new
 
-#### Broadcasting
+#### Mult-room events
 
 * We now support up to five broadcasters in multi-room events, up from the previous limit of three. With this change, more people can engage across rooms, including hosts that broadcast themselves or attendees who raise their hand.
 
     For more info, see [how to Broadcast when producing an event](../events-guide/produce-event.md#broadcast).
+
+* When broadcasting, hosts can call on attendees to instantly begin broadcasting them.
+
+* As a host you can now see attendees profile bubbles when they raise their hand and see emojis that that emote with!
+
+    :::image type="content" source="media/Emoji-reactions-hand-raise-multi-room.png" alt-text="Screenshot of Mesh app showing attendees with profile bubbles reacting with emojis.":::
+
+#### Event customization
+
+* Text object is now available when customizing your event. Add text like any other object (Screenshare, Image, Video), move it around the environment, then edit its properties like text style, or size.
+
+    :::image type="content" source="media/Customization-editor-text.png" alt-text="Screenshot of customization session in the Mesh app showing the Text  object.":::
+
+#### Error messaging
+
+* Improved error messaging when a user joins an environment that is not compatible with their application version. In most cases, this is specific to when experimental features are in use.
+
+* Added a **Give feedback** button to error messages that may be hard to diagnose or don't have adequate resolution steps provided.
+
+* Improved error messaging should better inform the user as to why the error occurred.
+
+#### Resolved issues
+
+* Fixed issues that can prevent people from joining an event. (17412, 18048)
+
+* Fixed issue with error message being dismissible when joining events through a link. (18081)
+
+* Fixes to host panel and host user experience. (16512, 16397, 16874)
+
+* The loading background should now display when joining an event directly from Mesh on the web.
+(17420)
+
 
 ## Version 5.2407.XX
 
