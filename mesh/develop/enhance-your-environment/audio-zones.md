@@ -4,30 +4,28 @@ description: Learn how to provide the optimal audio experience for all attendees
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/25/2024
+ms.date: 7/2/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, sound
 ---
 
 # Audio Zones in Mesh
 
-A Mesh event has *audio spatialization* (we describe this as "the way a sound behaves in a 3D space"). However, until now, you've had limited control over how spatialization works; there's one default audio setting and it hasn't been customizable for different event sizes and scenarios. this can be a problem if, for example, your event takes place in a large room and you want the volume of the voices between attendees to fade out more gradually as the attendees get further apart. Another example is an event where there's a large table and attendees at the extreme ends of the table are far enough apart that they can't hear each other. In real life, if you're far away, you can speak louder, but in a Mesh event all voice volumes are *normalized* so this doesn't work. In some cases, there are workarounds (for example, make everyone in the event an *Organizer* so they can push the *megaphone* button to make themselves heard by everyone) but these limitations and workarounds can detract from immersion and presence.
+## Overview
 
-With our latest Mesh toolkit updates, you have much more control over how sound behaves in your environment. You can customize the sound settings for the whole space or create *Audio Zones* which are individual areas in the space that override the audio settings of the environment. In a sense, this gives you audio "super powers; you can go beyond simply providing a real-life experience and give event attendees capabilities they don't have in everyday life.
+A Mesh event has *audio spatialization* (we describe this as "the way a sound behaves in a 3D space"). However, until now, you've had limited control over how spatialization works; there's one default audio setting and it hasn't been customizable for different event sizes and scenarios. This can be a problem if, for example, your event takes place in a large room and you want the volume of the voices between attendees to fade out more gradually as the attendees get further apart. Another example is an event where there's a large table and attendees at the extreme ends of the table are far enough apart that they can't hear each other. In real life, if you're far away, you can speak louder, but in a Mesh event all voice volumes are *normalized* so this doesn't work. In some cases, there are workarounds (for example, make everyone in the event an *Organizer* so they can push the *megaphone* button to make themselves heard by everyone) but these limitations and workarounds can detract from immersion and presence.
 
-- No matter how large the space is, you can give certain attendees the ability to be heard throughout the entire space.
+With our latest Mesh toolkit updates, you have much more control over how sound behaves in your environment. You can customize the sound settings for the whole space or create *Audio Zones* which are individual areas in the space with customized audio settings that override the settings of the environment. In a sense, this gives you audio "super powers; you can Give event attendees audio experiences beyond what they could have in real life. For example, no matter how large the space is, you can give certain attendees the ability to be heard throughout the entire space. Attendees can have multi-directional conversations without interrupting each other. tbd - more detail.
 
-- Certain attendees can have multi-directional conversations without interrupting each other. tbd - more detail.
-
-the benefits:
+## Audio Zone benefits
 
 --Increase productivity, interaction and engagement.
 
---Decrease mis-communication.
+--Decrease miscommunication.
 
 --If you want to change an audio setting, you can do this __________________ tbd without having to edit the environment itself.
 
---You can set up Audio Zones to be very visible to attendees by using properties such as glowing borders or short messages called *toasts* that display when an attendee enters or exits the Zone. However, you can also design Audio Zones to work without any of these visual cues.
+--You can set up Audio Zones to be very visible to attendees by using properties such as glowing borders or short messages called *toasts* that display when an attendee enters or exits the Zone. However, you can also design Audio Zones to work "behind the scenes" without any of these visual cues.
 
 Common scenarios:
 
@@ -35,105 +33,121 @@ Common scenarios:
 
 - Set up walls and create distinct separations between rooms.
 
-- Create tunnels that have more reverberation.
+- Provide a more realistic ambience to tunnels by increasing reverberation.
 
 - Have distinct acoustic features for different areas. For example, you can have an "outdoor space" where there's no echo and things sound flat, and an "indoor space" where concrete and glass surfaces cause more echo.
 
-- Create a "production booth" for people who are in the event to help the host (for example, running the lights). they can talk normally and no one outside the booth can hear them but they can hear everything that's going on outside the booth.
+- Create a "production booth" for people who are in the event who are tasked with helping the host (for example, running the lights).  When they talk normally, no one outside the booth can hear them, but they can hear voices and sounds from outside the booth.
 
-=====================
+- Create a "stage" Audio Zone. Anyone who walks into this Zone is automatically heard by everyone in the event.
 
-Solution for Organizer/Megaphone problem: create a *stage* area. Anyone who walks into this area is automatically heard by everyone in the environment. 
+## Audio terminology
+
+In order to fully understand how you can control sound with Audio Zones, it's useful to be familiar with some audio terminology.
+
+**attenuation**: the lowering of sound volume levels. If you create an Audio Zone and you want the sounds outside of the Zone to barely be audible inside the Zone, you can *attenuate* those incoming sounds using the *Low Attenuation Volume** filter.
+
+**frequency**: the property of sound that most determines its pitch. We perceive tones coming from a bass guitar as having low frequencies, while tones from a flute are perceived as high frequency.
+
+**low pass filter**: this is a filter that you can apply to an Audio Zone. Lower frequencies in a sound will *pass through* the filter and be audible, while higher frequencies will be *attentuated*.
+
+ **reverb** (short for "reverbation"): the amount of echo in a sound. Sounds in a cave, tunnel or large cathedral typically have a lot of reverb; sounds in a small room have a little to no reverb.
+
+**Megaphone**: When an attendee in an event has their *Megaphone* turned on, they can be heard by everyone in the event regardless of location.
+
+## Audio Zone Package
+
+the Audio Zone package is included with the Mesh toolkit.
+
+![______](../../media/enhance-your-environment/audio-zones/033-audio-zones-package.png)
 
 ## Create an Audio Zone
 
-1. Add an empty GameObject to the scene.
-1. Add an Audio Zone script (component? tbd) to this new GameObject.
-1. Add a trigger collider in the shape you want (capsule collider, or rectangle).
-1. Adjust the trigger collider to the size you want.
-1. Specify the Audio Zone options you want. For example:
-    1. For **Default Voice**, choose "Low attenuation."
-    1. Choose "Muffled voices."
+1. Add an empty GameObject to the scene and select it.
+1. In the **Inspector**, click the **Add Component** button and then search for and add the "Audio Zone" component.
 
-Note: these steps aren't the preferred way to set up an Audio Zone. We want Audio Zones to be Objects. the Audio Zones in the environment should be more about defining acoustics than user functionality (for example, muffled voices). By configuring these options within objects, the environment creator can place the objects in an environment. the environment can then be used as the basis for templates. An Organizer can then choose the template that has the Audio Zone-based objects they want for an event. 
+![______](../../media/enhance-your-environment/audio-zones/032-add-audio-zone-component.png)
 
-Prefabs
+1. Click the **Add Component** button again and then add the collider that comes closest to the shape of the Audio Zone you have in mind. For example, for a rectangular room, your best choice is probably the "Box Collider".
+1. If needed, in the **Box Collider** component, click the **Edit Collider** button and then adjust the shape of the Collider.
+1. In the **AudioZone** component, specify the settings you want. [Audio Zone properties are explained further below](#audio-zone-properties).
 
-Rectangular acoustic zone
-Circular acoustic zone
+## Audio Zone flow from creator to event Organizer
 
-these aren't audio zones. they're "marker prefabs" used at runtime to configure an acoustically-oriented audio zone. 
+1. You, the environment creator, create
 
-## Step by Step
-
-Packages:
-
-![______](../../media/enhance-your-environment/audio-zones/001-audio-zones-package.png)
-
-(tbd this is what we're shipping with:)
-
-![______](../../media/enhance-your-environment/audio-zones/002-shipped.png)
-
-![______](../../media/enhance-your-environment/audio-zones/003-manifest.png)
-
-Here are audio assets in the project. Note that there's a folder named "AudioZonePrefabs".
-
-![______](../../media/enhance-your-environment/audio-zones/004-audio-assets.png)
+Note: these steps aren't the preferred way to set up an Audio Zone. We want Audio Zones to be Objects. the Audio Zones in the environment should be more about defining acoustics than user functionality (for example, muffled voices). By configuring these options within objects, the environment creator can place the objects in an environment. the environment can then be used as the basis for templates. An Organizer can then choose the template that has the Audio Zone-based objects they want for an event. tbd
 
 
-there are birds, etc. that's a different workflow.
 
-Now we want ensure that when someone steps into this room (Room #1):
+## Elements of an Audio Zone
 
-![______](../../media/enhance-your-environment/audio-zones/005-room.png)
+### Voice Settings Collection
 
-... they don't hear people in the room next to them (Room #2).
+-In the Audio Zone component, you can choose an existing *Voice Settings Collection* prefab for the Zone. You can also choose "no Collection"; if you do this, the "Default Voices" Collection prefab is applied.
 
-![______](../../media/enhance-your-environment/audio-zones/006-adjacent-room.png)
+![______](../../media/enhance-your-environment/audio-zones/035-default-voice-collection.png)
 
-We have various tools we can use here.
+### Voice Setting
 
-### VoiceSetting Collection
+The purpose of a Voice Collection is to make a variety of *Voice Settings* available for the Audio Zone to use. You can think of a Voice setting as "the thing you apply to a sound to give it the qualities you want." In the Default Voices Collection, there are seven available Voice Settings.
 
-the items in this folder are (I think) made up of individual "voice settings". One of these Voice Settings is "Default Voices".
+![______](../../media/enhance-your-environment/audio-zones/036-voices.png.png)
 
-![______](../../media/enhance-your-environment/audio-zones/007-voice-collection.png)
+The Voice Settings prefabs are located in the **VoiceSetting* folder.
 
-### Default Voices
+![______](../../media/enhance-your-environment/audio-zones/037-voice-setting-folder.png)
 
-![______](../../media/enhance-your-environment/audio-zones/008-default-voices.png)
+Why would you want up to seven different Voice Setting options for one Audio Zone? Different circumstances, and different Objects in the Audio Zone, may require different sets of audio qualities. You can set a default Voice Setting for the Zone in the Audio Zone component. Let's say we want voices outside of the Audio Zone to sound audible but muffled to anyone inside the Zone. For **Default Voice Selection*, we'll choose "Muffled".
 
-If you don't select a specific Voice Setting Collection, the event will be set up with the "Default Voices" Voice Setting Collection which contains these six default "voices". tbd
+![______](../../media/enhance-your-environment/audio-zones/038-muffled.png)
 
-![______](../../media/enhance-your-environment/audio-zones/009-default-settings.png)
+However, if someone in the event turns on the Megaphone, we don't want attendees in our Audio Zone to hear that voice as sounding muffled; we want it heard clearly. This is, in fact, what happens; we have the "Megaphone" Voice Setting the Collection chosen for our Audio Zone, so the Zone switches to that Voice Setting while the Megaphone is on.
 
-these voices are found in the "VoiceSetting" folder.
+![______](../../media/enhance-your-environment/audio-zones/039-megaphone.png)
 
-![______](../../media/enhance-your-environment/audio-zones/010-voice-settings.png)
+Also, let's say you have a Media Player Object in the Audio Zone. When the Player is turned on, the "Media" Voice Setting becomes the active setting for the Audio Zone.
 
-Each setting has a *Use* assigned to it. (I think ... tbd ... this means that ...) For example, the Default Voices voice settings include the Megaphone filter, which **Uses* set to "Megaphone." (I think ... tbd) this means that when the Megaphone is turned on in an event, this filter becomes active.
+![______](../../media/enhance-your-environment/audio-zones/040-media.png)
+
+How does this happen? Each Voice Setting has a **Uses** property. For the *Media* Voice Setting, this property is set to "Media.
+
+![______](../../media/enhance-your-environment/audio-zones/041-uses.png)
+
+This property tells the Audio Zone to detect if a Media Player in the Zone gets turned on. If it does, the Zone switches its Voice Setting to "Media" 
+ 
+
+
+
+**Filters**: the **Filters* folder contains the following:
+
+- Filter Scripts that provide basic sound elements such as volume and reverb.
+- Filter Prefabs. Each prefab has a Filter Script plus some control settings that are unique to the sound element being controlled. For example, the *LowAttenuationReverbFilter* has the *ReverbFilter* attached plus controls for the amount of reverb, the amount of time it takes for the reverb to fade out, and more.
+
+    ![______](../../media/enhance-your-environment/audio-zones/034-low-atten-rev-filter.png)
+
+**VoiceSetting**: a *VoiceSetting* is made of the *VoiceSetting* script, a couple of control settings (*Spread* and *Spatial Blend*), and one or more filters that affect the sound of the VoiceSetting in various ways. It also has a *Uses* setting that determines *when* the VoiceSetting is used. For example, the *Megaphone* VoiceSetting has its **Uses* set to "Megaphone." This means that when the Megaphone is turned on in an event, this VoiceSetting becomes the active VoiceSetting in the Collection.
 
 ![______](../../media/enhance-your-environment/audio-zones/011-use.png)
 
-the six voices/filters that make up the Default Voices voice setting are found in the **Filters** folder:
 
-![______](../../media/enhance-your-environment/audio-zones/012-filters.png)
 
-**tip**: Voice Settings and Voice Setting Collections are *Scriptable Objects*. A Voice Setting Collection Scriptable Object can be added to the overall environment, to an acoustic zone (tbd what is this?) in the environment, or to an Audio Zone in the environment. 
 
-Breakdown
-tbd (I think):
-In the Voice Setting Collection folder, you have various VS Collections. One of these is "Default Voices."
-Default Voices is made up of seven "voice settings". One of these is "Megaphone."
-the Megaphone voice setting has its Uses property set to "Megaphone." So it goes into action when the event Megaphone is turned on. 
-You can assign a different "Use" for each voice setting so that the voice setting only becomes active when a specific circumstance exists. See the Megaphone example. Another example: you have an event with an Audio Zone that has the Default Voices collection, which has the Media Voice Setting. You can configure a Media Player to use the "Media" Voice Setting. A Media Player that's dropped as an Object outdoors might sound a little different than the same Media Player that' located indoors. It picks up a different Voice Setting from whatever Voice Setting applies in that area.
-there's also a "Filters" folder with various filters (they all have "Filter" in the name). image 012
-A "voice setting" is made up of various filters. See image 013. Ex: Mixed Voices Low Attenuation.
-You can have a voice setting collection set up for:
-- the entire environment
-- a specific region in the environment
-- a specific object (? --tbd)
-- 
+
+
+
+
+
+### VoiceSetting Collection
+
+the items in this folder are (I think) made up of collections of individual "voice settings". One of these Voice Settings is "Default Voices".
+
+![______](../../media/enhance-your-environment/audio-zones/007-voice-collection.png)
+
+**Tip**: Voice Settings and Voice Setting Collections are *Scriptable Objects*. A Voice Setting Collection Scriptable Object can be added to the overall environment, to an acoustic zone (tbd what is this?) in the environment, or to an Audio Zone in the environment. 
+
+
+
 
 ======
 
@@ -336,6 +350,13 @@ If you don't need all the properties that come with an Audio Zone and you just w
 An Acoustic Zone prefab comes with the *Environment Acoustic Zone* script and is like a simplified Audio Zone. It lets you select a Voice Setting Collection and the trigger Collider it applies to.
 
  ![______](../../media/enhance-your-environment/audio-zones/031-env-acoustic-zone-script.png)
+
+Prefabs
+
+Rectangular acoustic zone
+Circular acoustic zone
+
+these aren't audio zones. they're "marker prefabs" used at runtime to configure an acoustically-oriented audio zone. tbd
 
 ## Simple Acoustic Zones experiment
 
