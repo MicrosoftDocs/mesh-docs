@@ -33,6 +33,11 @@ Microsoft Mesh application
 
 #### Multi-room events
 
+> [!IMPORTANT]
+> We are currently rolling out an update to transition multi room events in the Mesh app on PC and Quest to use the same backend infrastructure as Teams for spatial audio. During the rollout, you may find that the additional endpoint and firewall requirements for multi-room may not be required. This rollout should complete by the end of July, 2024.
+>
+> For more information, please see the admin portal message center post at [https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC807460](https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC807460) or read our documentation for the Mesh [Endpoints and firewall configuration](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-configuration).
+
 * We now support up to five broadcasters in multi-room events, up from the previous limit of three. With this change, more people can engage across rooms, including hosts that broadcast themselves or attendees who raise their hand.
 
     For more info, see [how to Broadcast when producing an event](../events-guide/produce-event.md#broadcast).
@@ -47,22 +52,23 @@ Microsoft Mesh application
 
 #### Avatar emotes
 
-Ready to dance in Mesh? Meet Avatar Emotes!
+* Ready to dance in Mesh? Meet Avatar Emotes!
 
-:::image type="content" source="media/Avatar-emotes.gif" alt-text="Gif showing an avatar emoting in a the Mesh application.":::
+    We are excited to announce the release of Avatar Emotes for the Mesh app and Immersive Meetings! This feature allows users to express their emotions and reactions through their avatars, making interactions more dynamic and engaging. 
 
-We are excited to announce the release of Avatar Emotes for the Mesh app and Immersive Meetings! This feature allows users to express their emotions and reactions through their avatars, making interactions more dynamic and engaging. There are basic emotes available  in the Emote panel
+    **Key Features:**
 
-  :::image type="content" source="media/Basic-avatar-emotes-standalone.png" alt-text="Screenshot of basic avatar emotes in the Mesh application.":::
+    *Expressive Animations:* Avatars can now perform a variety of emotes, including dancing, celebrating, and more.
 
-In addition to the basic Avatar reactions, you can select from a wide selection of more reactions, sorted into seven categories, including a category for ASL signs.
+    *Real-Time Reactions:* Emotes are performed in real-time, enhancing the liveliness of virtual meetings and interactions.
 
-:::image type="content" source="media/Catalog-avatar-reactions-emotes-standalone.png" alt-text="Screenshot of avatar reactions catalog in standalone application for Mesh.":::
+    :::image type="content" source="media/Basic-avatar-emotes-standalone.png" alt-text="Screenshot of basic avatar emotes in the Mesh application.":::
 
-Key Features:
+    In addition to the basic Avatar reactions, you can select from a wide selection of more reactions, sorted into seven categories, including a category for ASL signs.
 
-Expressive Animations: Avatars can now perform a variety of emotes, including dancing, celebrating, and more.
-Real-Time Reactions: Emotes are performed in real-time, enhancing the liveliness of virtual meetings and interactions.
+    :::image type="content" source="media/Catalog-avatar-reactions-emotes-standalone.png" alt-text="Screenshot of avatar reactions catalog in standalone application for Mesh.":::
+
+
  
 #### Event customization
 
