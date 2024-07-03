@@ -15,7 +15,23 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.2408.XX (July 01, 2024)
 
+### Avatar emotes
+
+Ready to dance in Mesh? Meet Avatar Emotes!
+
+We are excited to announce the release of Avatar Emotes for the Mesh app and Immersive Meetings! This feature allows users to express their emotions and reactions through their avatars, making interactions more dynamic and engaging.
+
+:::image type="content" source="media/Avatar-emotes-and-reactions-immersive-spaces.png" alt-text="Screenshot of avatar emotes panel in an immersive space 3D in a Teams meeting.":::
+
+Key Features:
+
+**Expressive Animations:** Avatars can now perform a variety of emotes, including dancing, celebrating, and more.
+**Real-Time Reactions:** Emotes are performed in real-time, enhancing the liveliness of virtual meetings and interactions.
+
+### Resolved issues
+
 * Fixed an issue where changing the environment settings in a Teams meeting in a channel didn't apply correctly. (17706)
+
 
 ## Version 5.2406.0 (May 23, 2024)
 
