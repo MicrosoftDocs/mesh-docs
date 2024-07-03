@@ -17,16 +17,18 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ### Avatar emotes
 
-Ready to dance in Mesh? Meet Avatar Emotes!
+**Ready to dance in Mesh? Meet Avatar Emotes!**
 
 We are excited to announce the release of Avatar Emotes for the Mesh app and Immersive Meetings! This feature allows users to express their emotions and reactions through their avatars, making interactions more dynamic and engaging.
 
+In addition to the basic Avatar reactions, you can select from a wide selection of more reactions, sorted into seven categories, including a category for ASL signs.
+
+**Key Features:**
+
+*Expressive Animations:* Avatars can now perform a variety of emotes, including dancing, celebrating, and more.
+*Real-Time Reactions:* Emotes are performed in real-time, enhancing the liveliness of virtual meetings and interactions.
+
 :::image type="content" source="media/Avatar-emotes-and-reactions-immersive-spaces.png" alt-text="Screenshot of avatar emotes panel in an immersive space 3D in a Teams meeting.":::
-
-Key Features:
-
-**Expressive Animations:** Avatars can now perform a variety of emotes, including dancing, celebrating, and more.
-**Real-Time Reactions:** Emotes are performed in real-time, enhancing the liveliness of virtual meetings and interactions.
 
 ### Resolved issues
 
