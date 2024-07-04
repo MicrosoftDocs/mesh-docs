@@ -45,7 +45,7 @@ Common scenarios:
 
 In order to fully understand how you can control sound with Audio Zones, it's useful to be familiar with some audio terminology.
 
-**attenuation**: the lowering of sound volume levels. If you create an Audio Zone and you want the sounds outside of the Zone to barely be audible inside the Zone, you can *attenuate* those incoming sounds using the *Low Attenuation Volume** filter.
+**attenuation**: a decrease in intensity. If you create an Audio Zone and you want the sounds outside of the Zone to barely be audible inside the Zone, you can *attenuate* those incoming sounds using the *Low Attenuation Volume** filter.
 
 **frequency**: the property of sound that most determines its pitch. We perceive tones coming from a bass guitar as having low frequencies, while tones from a flute are perceived as high frequency.
 
@@ -110,60 +110,32 @@ Also, let's say you have a Media Player Object in the Audio Zone. When the Playe
 
 ![______](../../media/enhance-your-environment/audio-zones/040-media.png)
 
-How does this happen? Each Voice Setting has a **Uses** property. For the *Media* Voice Setting, this property is set to "Media.
+How does this happen? Each Voice Setting has a **Uses** property. The Collection attached to the Audio Zone contains a Voice Setting named *Media*. The "Uses" property for this Voice Setting is set to "Media.
 
 ![______](../../media/enhance-your-environment/audio-zones/041-uses.png)
 
-This property tells the Audio Zone to detect if a Media Player in the Zone gets turned on. If it does, the Zone switches its Voice Setting to "Media" 
- 
+This property tells the Audio Zone to detect if a Media Player in the Zone gets turned on. If it does, the Zone switches to the "Media" Voice Setting.
+
+In addition to the *Uses* property, a Voice Setting has the *VoiceSetting* script attached, a couple of control settings (*Spread* and *Spatial Blend*), and one or more *filters*.
+
+### Filters
+
+You can think of filters as the lowest level unit that affects the sound.
+
+![______](../../media/enhance-your-environment/audio-zones/042-filters.png)
+
+There are four filter scripts and a variety of filter prefabs. Each prefab has a Filter Script plus some control settings that are unique to the sound element being controlled. For example, the *LowAttenuationReverbFilter* has the *ReverbFilter* attached plus controls for the amount of reverb, the amount of time it takes for the reverb to fade out, and more.
+
+![______](../../media/enhance-your-environment/audio-zones/044-low-atten-reverb-filter.png)
 
 
+**Tip**: Voice Settings and Voice Setting Collections are *Scriptable Objects*. A Voice Setting Collection Scriptable Object can be added to the overall environment, to an acoustic zone, (tbd what is this?) in the environment, or to an Audio Zone in the environment.
 
-**Filters**: the **Filters* folder contains the following:
-
-- Filter Scripts that provide basic sound elements such as volume and reverb.
-- Filter Prefabs. Each prefab has a Filter Script plus some control settings that are unique to the sound element being controlled. For example, the *LowAttenuationReverbFilter* has the *ReverbFilter* attached plus controls for the amount of reverb, the amount of time it takes for the reverb to fade out, and more.
-
-    ![______](../../media/enhance-your-environment/audio-zones/034-low-atten-rev-filter.png)
-
-**VoiceSetting**: a *VoiceSetting* is made of the *VoiceSetting* script, a couple of control settings (*Spread* and *Spatial Blend*), and one or more filters that affect the sound of the VoiceSetting in various ways. It also has a *Uses* setting that determines *when* the VoiceSetting is used. For example, the *Megaphone* VoiceSetting has its **Uses* set to "Megaphone." This means that when the Megaphone is turned on in an event, this VoiceSetting becomes the active VoiceSetting in the Collection.
-
-![______](../../media/enhance-your-environment/audio-zones/011-use.png)
-
-
-
-
-
-
-
-
-
-### VoiceSetting Collection
-
-the items in this folder are (I think) made up of collections of individual "voice settings". One of these Voice Settings is "Default Voices".
-
-![______](../../media/enhance-your-environment/audio-zones/007-voice-collection.png)
-
-**Tip**: Voice Settings and Voice Setting Collections are *Scriptable Objects*. A Voice Setting Collection Scriptable Object can be added to the overall environment, to an acoustic zone (tbd what is this?) in the environment, or to an Audio Zone in the environment. 
+**Note**: You get a lot more control over audio with the Voice Setting properties than by using Unity Spatial Audio source.
 
 
 
 
-======
-
- Each item listed here in the Packages > MM AudioZones > VoiceSetting window is a "voice setting." If you select the voice setting "MixedVoicesLowAttenuation", its individual features (and settings) are shown in the window above. In this case, the VS has three filters (volume, low pass, reverb)
-
-![______](../../media/enhance-your-environment/audio-zones/013-low-atten.png)
-
-Note: You get a lot more control over audio with these voice settings than by using Unity Spatial Audio source. 
-
-We want this "Megaphone" voice setting to apply to people who are "megaphoned" in the space.
-
-![______](../../media/enhance-your-environment/audio-zones/014-megaphoned.png)
-
-this has:
---flat volume filter (similar to the attenuation filter)
---reverb filter (we want lots of reverb--"Wizard of Oz" effect)
 
 the "Use" is set to "Megaphone", which is found in the "Default Voices" collection.
 
@@ -177,9 +149,12 @@ to achieve this:
 
 1. Create a folder to hold your custom Voice Collections. In this example, the folder is named "Workshop_Voice_Collections".
 
+045 / untitled 1
 ![______](../../media/enhance-your-environment/audio-zones/017-custom-folder.png)
 
 1. Copy the Default Voices Voice Collecion to this new folder and then rename. Here, we renamed it to "ImaginaryRoomVoices".
+
+046 / untitled 2
 
     We don't want to use any of the existing Voice Settings so we'll make a new one.
 
@@ -240,7 +215,9 @@ Voices: WorkshopRoomVoices (Voice Setting _____).
 
 See 29:30. -->
 
-At runtime, you might have different audio sources inside an Audio Zone (for example, attendees, video players, and radios). Mesh determines which Voice should be assigned to which source and then applies the appropriate setting using the Spatializer. Every time someone enters or exists an Audio Zone, the settings are adjusted.
+## 
+
+At runtime, you might have different audio sources inside an Audio Zone (for example, attendees, video players, and radios). Mesh determines which Voice should be assigned to which source and then applies the appropriate setting using the Spatializer. Every time someone enters or exits an Audio Zone, the settings are adjusted.
 
 ## Distance attenuation curves
 
