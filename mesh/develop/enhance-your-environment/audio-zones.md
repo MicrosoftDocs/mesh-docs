@@ -133,49 +133,78 @@ There are four filter scripts and a variety of filter prefabs. Each prefab has a
 
 **Note**: You get a lot more control over audio with the Voice Setting properties than by using Unity Spatial Audio source.
 
+## Customizing
 
+You don't have to be limited to the Voice Collections, Voice Settings and Filters that come with the Audio Zone package. You can copy any of these and then alter them to create your own customized features. In this example, let's assume we want a Voice Setting with a slightly different Reverb Filter.
 
+1. In your project, right-click the **Project** tab and then select **Add tab** > **Project**.
+1. Relocate the second **Project** window so that it's to the right of the first **Project** window.
 
+![______](../../media/enhance-your-environment/audio-zones/045-project-windows.png)
 
-the "Use" is set to "Megaphone", which is found in the "Default Voices" collection.
+1. In the second **Project** window, right-click and then select **Create** > **Folder**.
+1. Rename the folder to "My Voice Collections".
+1. Create two more folders the same way. Rename them to "My Voice Settings" and "My Filters".
 
-![______](../../media/enhance-your-environment/audio-zones/015-voices-collection.png
+![______](../../media/enhance-your-environment/audio-zones/046-new-folders.png)
 
-Example: in Room #1 here, you don't want to use the Voice Settings in the Default Voices Collection--you want it to sound different for the immersed and Megaphone attendees.
+1. Click the Lock button in the upper right corner of the second **Project** window to lock that window's view in place.
 
-![______](../../media/enhance-your-environment/audio-zones/016-room-one.png)
+![______](../../media/enhance-your-environment/audio-zones/047-lock-button.png)
 
-to achieve this:
+1. In the first **Project** window, navigate to the **Packages** > **Microsoft Mesh Audio Zones** > **VoiceSettingCollection** folder and then expand it.
+1. Drag the **DefaultVoices** Voice Setting Collection prefab from Project window #1 and then drop it on the **My Voice Collections** folder in Project window #2.
 
-1. Create a folder to hold your custom Voice Collections. In this example, the folder is named "Workshop_Voice_Collections".
+![______](../../media/enhance-your-environment/audio-zones/048-default-voices.png)
 
-045 / untitled 1
-![______](../../media/enhance-your-environment/audio-zones/017-custom-folder.png)
+1. Rename the prefab to "MyDefaultVoices".
 
-1. Copy the Default Voices Voice Collecion to this new folder and then rename. Here, we renamed it to "ImaginaryRoomVoices".
+    We don't want to use any of the existing Voice Settings in this prefab so we'll make a new one.
 
-046 / untitled 2
+1. In Project window #1, navigate to the **Packages** > **Microsoft Mesh Audio Zones** > **VoiceSetting** folder and then expand it.
+1. Drag the **LowAttenuation** Voice Setting prefab from Project window #1 and then drop it on the **My Voice Settings** folder in Project window #2.
 
-    We don't want to use any of the existing Voice Settings so we'll make a new one.
+![______](../../media/enhance-your-environment/audio-zones/049-voice-setting-copied.png)
 
-1. Create a folder to hold your custom Voice Settings. Here, we named it "Workshop_Voice_Settings".
-1. Drag an existing Voice Setting (we'll use "Low Attenuation") to copy it into the new folder and then rename it "ImaginaryRoomImmersiveSetting".
+1. Rename the prefab to "MyLowAttenuation".
 
-![______](../../media/enhance-your-environment/audio-zones/018-new-voice-setting.png)
+    We don't want the Reverb filter that's include with this prefab, so let's delete it. 
 
-    We don't want the current Reverb filter, so let's delete that. Click the "-" button next to that filter.
+1. In Project window #2, ensure that the "MyLowAttenuation" prefab is selected.
+1. In the **Inspector**, select **Element 2**, which contains the filter named "LowAttenuationReverbFilter", and click the "-" button to delete it.
 
-![______](../../media/enhance-your-environment/audio-zones/019-delete-reverb-filter.png)
+![______](../../media/enhance-your-environment/audio-zones/050-delete-reverb-filter.png)
 
-    We'll add a new Reverb filter with settings more in line with our needs
+    We'll add a new Reverb filter with settings more in line with our needs.
 
-1. Create a new folder. We'll name it "Workshop_Voice_Filters".
-1. Drag an existing filter (we'll use "NaturalReverbFilter") to copy it into the new folder and then rename it "ImaginaryRoomImmersedSetting".
+1. In the first **Project** window, navigate to the **Packages** > **Microsoft Mesh Audio Zones** > **Filters** folder and then expand it.
+1. Drag the **NaturalReverbFilter** Filter prefab from Project window #1 and then drop it on the **My Filters** folder in Project window #2.
 
-1. In the **Inspector** window for our "ImaginaryRoomImmersedSetting" Voice Setting, click the "+" button.
-1. In the **Select Voice Filter** window, search for and then select the new filter you created.
+![______](../../media/enhance-your-environment/audio-zones/051-copy-reverb-filter.png)
 
-    ![______](../../media/enhance-your-environment/audio-zones/020-new-filter.png)
+1. Rename the prefab to "MyNaturalReverbFilter".
+1. Select this prefab, and then, in the **Inspector**, adjust any of the controls needed to create the reverb you want. You can also change the **Description**.
+
+![______](../../media/enhance-your-environment/audio-zones/052-my-reverb-filter-updates.png)
+
+**tip**: to adjust any of the curve-based properties (the ones with the green lines), click the property, and then in the **Curve** window, choose a preset (see #1 in the image below), or drag the control points on the curve in the graph (this is similar to editing [Bezier curves](https://en.wikipedia.org/wiki/B%C3%A9zier_curve) in a graphics program)
+
+    Let's add our new customized Reverb Filter to our customized Voice Setting.
+
+1. In Project window #2, select the **MyLowAttenuation** prefab.
+1. In the **Inspector** in the **Filters** section, click the "+" button.
+1. Click the round button in the newly added Element, and then, in the **Select Voice Filter** window, select **MyNaturalReverbFilter**.
+
+![______](../../media/enhance-your-environment/audio-zones/053-add-filter.png)
+
+    Finally, let's add our new customized Voice Setting to our customized Voice Setting Collection.
+
+1. In Project window #2, select the **MyDefaultVoices** prefab.
+1. In the **Inspector** in the **Voices** section, click the "+" button.
+1. Click the round button in the newly added Element, and then, in the **Select Voice Setting** window, select **MyNaturalReverbFilter**.
+
+![______](../../media/enhance-your-environment/audio-zones/054-add-voice-setting.png)
+
 
 ## Common Audio Zone use cases
 
@@ -308,7 +337,7 @@ Much of the "muffled" effect from this voice is due to the strong influence of t
 
 **Walla Murmur**: this is another property that's useful when you want a certain level of privacy. Let's say that for this room/Audio Zone, you have **Can Audio Exit** deselected, meaning you don't want attendees outside the room to hear what's being said inside the room. However, in this instance, you *do* want attendees outside the room to detect that attendees are inside the room and talking. With **Walla Murmur** selected, when attendees inside the room talk, attendees outside the room will hear what *sounds* like conversation coming from the room but is actually just a sound effect that mimics talking and doesn't represent the actual conversation.
 
-**tip**: **Glow Sound at Border**, **Attenuate Voices at Border**, and **Walla Murmur** are designed to work together. Imagine this scenario: you're in an open space, with attendees talking around you, and you walk towards Room #1 which has an Audio Zone with the three above-mentioned features turned on. As you approach the room, you can hear that attendees inside the room are talking (*Walla Murmur*). the volume levels of the voices around you fade to nothing (*Attenuate Voices at Border*). At the same time, you start to hear a sound that steadily increases in volume as you approach the border of the room (*Glow Sound at Border*). As you walk into the room, the glow sound gets quieter and the volume of the voices inside the room increases. the result is a smooth transition from the voices you were hearing outside the room to the voices inside it.
+*tip**: **Glow Sound at Border**, **Attenuate Voices at Border**, and **Walla Murmur** are designed to work together. Imagine this scenario: you're in an open space, with attendees talking around you, and you walk towards Room #1 which has an Audio Zone with the three above-mentioned features turned on. As you approach the room, you can hear that attendees inside the room are talking (*Walla Murmur*). the volume levels of the voices around you fade to nothing (*Attenuate Voices at Border*). At the same time, you start to hear a sound that steadily increases in volume as you approach the border of the room (*Glow Sound at Border*). As you walk into the room, the glow sound gets quieter and the volume of the voices inside the room increases. the result is a smooth transition from the voices you were hearing outside the room to the voices inside it.
 
 
 Entry toast title:
