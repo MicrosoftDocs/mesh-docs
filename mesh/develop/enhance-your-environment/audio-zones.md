@@ -4,7 +4,7 @@ description: Learn how to provide the optimal audio experience for all attendees
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/2/2024
+ms.date: 7/5/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, sound
 ---
@@ -80,7 +80,9 @@ Note: these steps aren't the preferred way to set up an Audio Zone. We want Audi
 
 
 
-## Elements of an Audio Zone
+## Features of an Audio Zone
+
+there are three main components, or what we'll call "features" of an Audio Zone. Each is detailed below.
 
 ### Voice Settings Collection
 
@@ -88,9 +90,11 @@ Note: these steps aren't the preferred way to set up an Audio Zone. We want Audi
 
 ![______](../../media/enhance-your-environment/audio-zones/035-default-voice-collection.png)
 
+The purpose of a Voice Collection is to make a variety of *Voice Settings* available for the Audio Zone to use.
+
 ### Voice Setting
 
-The purpose of a Voice Collection is to make a variety of *Voice Settings* available for the Audio Zone to use. You can think of a Voice setting as "the thing you apply to a sound to give it the qualities you want." In the Default Voices Collection, there are seven available Voice Settings.
+You can think of a Voice setting as "the thing you apply to a sound to give it the qualities you want." In the Default Voices Collection, there are seven available Voice Settings.
 
 ![______](../../media/enhance-your-environment/audio-zones/036-voices.png.png)
 
@@ -98,19 +102,21 @@ The Voice Settings prefabs are located in the **VoiceSetting* folder.
 
 ![______](../../media/enhance-your-environment/audio-zones/037-voice-setting-folder.png)
 
-Why would you want up to seven different Voice Setting options for one Audio Zone? Different circumstances, and different Objects in the Audio Zone, may require different sets of audio qualities. You can set a default Voice Setting for the Zone in the Audio Zone component. Let's say we want voices outside of the Audio Zone to sound audible but muffled to anyone inside the Zone. For **Default Voice Selection*, we'll choose "Muffled".
+Why would you want up to seven different Voice Setting options for one Audio Zone? Different circumstances, and different Objects in the Audio Zone, may require different sets of audio qualities. 
+
+You can set a default Voice Setting for an Audio Zone in the *Audio Zone* component. Let's say you apply an Audio Zone to a specific room in your experience and you want voices outside of the room to sound audible but muffled to anyone inside the room. For **Default Voice Selection*, we'll choose "Muffled".
 
 ![______](../../media/enhance-your-environment/audio-zones/038-muffled.png)
 
-However, if someone in the event turns on the Megaphone, we don't want attendees in our Audio Zone to hear that voice as sounding muffled; we want it heard clearly. This is, in fact, what happens; we have the "Megaphone" Voice Setting the Collection chosen for our Audio Zone, so the Zone switches to that Voice Setting while the Megaphone is on.
+However, if someone in the event turns on the Megaphone, we don't want attendees in our Audio Zone to hear that voice as sounding muffled; we want it heard clearly. Since we have the "Megaphone" Voice Setting the Collection that's chosen for our Audio Zone, the Zone switches to that Voice Setting if the Megaphone is turned on.
 
 ![______](../../media/enhance-your-environment/audio-zones/039-megaphone.png)
 
-Also, let's say you have a Media Player Object in the Audio Zone. When the Player is turned on, the "Media" Voice Setting becomes the active setting for the Audio Zone.
+Also, let's say you have a Media Player Object in the Audio Zone. this Object requires different sound settings than the ones supplied by the default Voice Setting for the Zone. When the Player is turned on, the "Media" Voice Setting becomes the active setting for the Zone.
 
 ![______](../../media/enhance-your-environment/audio-zones/040-media.png)
 
-How does this happen? Each Voice Setting has a **Uses** property. The Collection attached to the Audio Zone contains a Voice Setting named *Media*. The "Uses" property for this Voice Setting is set to "Media.
+What makes this happen? Each Voice Setting has a **Uses** property. The Collection attached to the Audio Zone contains a Voice Setting named *Media*. The "Uses" property for this Voice Setting is set to "Media".
 
 ![______](../../media/enhance-your-environment/audio-zones/041-uses.png)
 
@@ -128,6 +134,11 @@ There are four filter scripts and a variety of filter prefabs. Each prefab has a
 
 ![______](../../media/enhance-your-environment/audio-zones/044-low-atten-reverb-filter.png)
 
+**Distance and Angle attenuation curves**
+
+In each Volume Filter, you not only get a **Distance Curve** for attenuation (the sound volume decreases based on the attendee's distance from the sound source), you also get an **Angle  Curve** (the sound volume decreases based on the angle of the attendee's head relative to the sound source). For example, if you want something to sound much quieter when it's behind the attendee's head, you can control this by adjusting the Angle Curve.
+
+![______](../../media/enhance-your-environment/audio-zones/029-angle-curve.png)
 
 **Tip**: Voice Settings and Voice Setting Collections are *Scriptable Objects*. A Voice Setting Collection Scriptable Object can be added to the overall environment, to an acoustic zone, (tbd what is this?) in the environment, or to an Audio Zone in the environment.
 
@@ -205,7 +216,6 @@ You don't have to be limited to the Voice Collections, Voice Settings and Filter
 
 ![______](../../media/enhance-your-environment/audio-zones/054-add-voice-setting.png)
 
-
 ## Common Audio Zone use cases
 
 ### Simple meeting room
@@ -215,44 +225,32 @@ In this example, we just want a basic discussion environment where attendees can
 1. Create an environment that will act as a meeting room.
 1. Add an empty GameObject to the scene and then name it "Acoustics".
 
-    In this example scenario, there's a child object to *Acoustics* named "teamArea" that has its own Audio Zone. We've also create another child object that's a container for several objects that each have their own custom Audio Zone: **Room_1**, **Room_2**, and more. We'll take a look at how the **Room_1** object is constructed. As the name implies, this is the Audio Zone object that will be applied to Room 1 in the scene.
+    In this example scenario, there's a child object to *Acoustics* named "teamArea" that has its own Audio Zone. We've also create another child object that's a container for several objects that each have their own custom Audio Zone: **Room 2** and **Room 3**. We'll take a look at how the Audio Zone GameObject for **Room 2**  is constructed.
 
+1. In the **Hierarchy**, select **Room 2**.
 1. In the **Inspector**, click the **Add Component** button and then search for and add the "Audio Zone" component.
 1. In the Audio Zone component, click the **Default Voice Selection** drop-down and then select **Low Attenuation**.
 1. Add the "Box Collider" component and then select its **Is trigger** property to *true*.
-1. to choose a collection, click the round button in the **Voices** field and then, in the **Select Voice Setting Collection** window, search for and select the Voice Collection you want.
+1. Choose a collection: click the round button in the **Voices** field and then, in the **Select Voice Setting Collection** window, search for and select the Voice Collection you want.
 
     ![______](../../media/enhance-your-environment/audio-zones/021-select-vc.png)
 
-1. We want attendees in the room to hear if something is going on outside the room, but at a low volume. to make this happen, select **Muffle Voices Outside**. the Voice Setting Collection selected for this Audio Zone contains a "Muffled Voice" setting that makes this work.
-1. 
+1. We want attendees in the room to hear if something is going on outside the room, but at a low volume. to make this happen, select **Muffle Voices Outside**. the *DefaultVoices* Voice Setting Collection selected for this Audio Zone contains a "Muffled Voice" Voice Setting that makes this happen.
 
 ### Stage
 
 1. Create an environment that will act as a meeting room as described in the previous section.
 1. Add a GameObject that will act as a stage in front of the room.
 1. Follow the steps in the previous section to add an Audio zone to the stage and choose its settings.
-1. In the **Audio Zone** component attached to the stage, then click the **Applicability** drop-down, and then select **When Audio Source inside**.
+1. In the **Audio Zone** component attached to the stage, click the **Applicability** drop-down, and then select **When Audio Source inside**.
 
-    
-
-<!-- Note tbd: it looks like there are more settings in the Audio Zone component that are already in place:
-
-trigger collider: Room_1 (Box Collider)
-Applicability: When Both Inside
-Voices: WorkshopRoomVoices (Voice Setting _____).
-
-See 29:30. -->
+When an attendee in the event enters the Stage GameObject and speaks, everyone in the event will hear them.
 
 ## 
 
 At runtime, you might have different audio sources inside an Audio Zone (for example, attendees, video players, and radios). Mesh determines which Voice should be assigned to which source and then applies the appropriate setting using the Spatializer. Every time someone enters or exits an Audio Zone, the settings are adjusted.
 
-## Distance attenuation curves
 
-In each Volume Filter, you not only get a **Distance Curve** for attenuation (the sound volume decreases based on the attendee's distance from the sound source), you also get an **Angle  Curve** (the sound volume decreases based on the angle of the attendee's head relative to the sound source). For example, if you want something to sound much quieter when it's behind the attendee's head, you can control this by adjusting the Angle Curve.
-
-    ![______](../../media/enhance-your-environment/audio-zones/029-angle-curve.png)
 
 
 
