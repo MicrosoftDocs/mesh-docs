@@ -169,7 +169,7 @@ Use the Editor to add content to your environment that can be controlled during 
 
 #### Edit object controls
 
-Once you've added an object, you can maneuver it around the spaces and select the it to edit the controls.
+Once you've added an object, you can maneuver it around the spaces and select it to edit the controls.
 
 1. Select an added object and adjust the controls to suit your preferences.
 
