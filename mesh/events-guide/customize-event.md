@@ -25,7 +25,7 @@ If you're using a custom environment or there are [**Controllable** objects in y
 
 ### Types of customizations
 
-* Add objects through the **Editor** like Screenshares, Images, Videos, or Text. Drag and resize the these objects easily by selecting the objects and moving them around the environment.
+* Add objects through the **Editor** like Screenshares, Images, Videos, or Text. Drag and resize these objects easily by selecting the objects and moving them around the environment.
 
     :::image type="content" source="../media/mesh-event-producer-guide/customize-event-add-objects-catalog.png" alt-text="Screenshot showing the catalog of possible objects to add when customizing an event in the Mesh application.":::
 
