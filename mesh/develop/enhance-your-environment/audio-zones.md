@@ -13,15 +13,19 @@ keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, sound
 
 ## Overview
 
-A Mesh event has *audio spatialization* (we describe this as "the way a sound behaves in a 3D space"). However, until now, you've had limited control over how spatialization works; there's one default audio setting and it hasn't been customizable for different event sizes and scenarios. This can be a problem if, for example, your event takes place in a large room and you want the volume of the voices between attendees to fade out more gradually as the attendees get further apart. Another example is an event where there's a large table and attendees at the extreme ends of the table are far enough apart that they can't hear each other. In real life, if you're far away, you can speak louder, but in a Mesh event all voice volumes are *normalized* so this doesn't work. In some cases, there are workarounds (for example, make everyone in the event an *Organizer* so they can push the *megaphone* button to make themselves heard by everyone) but these limitations and workarounds can detract from immersion and presence.
+A Mesh event has *audio spatialization* (think of this as "the way a sound behaves in a 3D space"). However, in the past, you had limited control over how spatialization works in an event; there's one default audio setting for the whole environment and it hasn't been customizable for different event sizes and scenarios. This can be a problem if, for example, your event takes place in a large room and you want the volume of the voices between attendees to fade out more gradually as the attendees get further apart. Another example is an event where there's a large table and attendees at the extreme ends of the table are far enough apart that they can't hear each other. In real life, if you're far away, you can speak louder, but in a Mesh event all voice volumes are *normalized* so this doesn't work. In some cases, there are workarounds (for example, make everyone in the event an *Organizer* so they can push the *megaphone* button to make themselves heard by everyone) but these limitations and workarounds can detract from immersion and presence.
 
-With our latest Mesh toolkit updates, you have much more control over how sound behaves in your environment. You can customize the sound settings for the whole space or create *Audio Zones* which are individual areas in the space with customized audio settings that override the settings of the environment. In a sense, this gives you audio "super powers; you can give event attendees audio experiences beyond what they could have in real life. For example, no matter how large the space is, you can give certain attendees the ability to be heard throughout the entire space. Another example is that Attendees can have multi-directional conversations without interrupting each other.
+With our latest experimental Mesh toolkit update, you have much more control over how sound behaves in your environment. You can customize the sound settings for the whole environment or create *Audio Zones* which are individual areas in the environment with customized audio settings that override the default settings determined by the Mesh app for environment. For example, you could have an environment that has five different "rooms", with each room serving a different purpose and each one having its own unique Audio Zone.
+
+![______](../../media/enhance-your-environment/audio-zones/076-zones-overhead-view.png)
+
+In a sense, this gives you audio "super powers; you can provide event attendees with audio experiences beyond what they could have in real life. For example, no matter how large the space is, you can give certain attendees the ability to be heard throughout the entire space. Another example is that Attendees can have multi-directional conversations without interrupting each other.
 
 **three levels of audio control**
 
-there are three different approaches to adding audio control to your environment. From most powerful to least, there are *Audio Zones*, *Acoustic Zones*, and the *Default Environment Acoustics* script. to fully understand these, we recommend that you first learn about *Voice Collections* and *Voice Settings*. You'll then be better equipped to implement these various approaches.
+there are three different approaches to adding audio control to your environment. From most powerful to least, there are *Audio Zones*, *Acoustic Zones*, and the *Default Environment Acoustics* script. to fully understand these, we recommend that you first learn about *Voice Collections* and *Voice Settings*. You'll then be better equipped to choose and implement these various approaches.
 
-Since *Audio Zones* are the most powerful, our documentation takes the position that this is the approach most devs will be interested in.
+Since *Audio Zones* give you the most extensive control over sound, our documentation emphasizes their use.
 
 ## Audio Zone benefits
 
@@ -53,16 +57,15 @@ In order to fully understand how you can control sound with Audio Zones, it's us
 
 ![______](../../media/enhance-your-environment/audio-zones/070-attenuation-filters.png)
 
-
 For example, if you create an Audio Zone and you want the sounds outside of the Zone to barely be audible inside the Zone, you can *attenuate* those incoming sounds using the *LowAttenuation VolumeFilter** prefab.
 
-You'll see "low" in the names of a number of sound-related prefabs; for example, "LowAttenuationVolumeFilter" or "LowAttenuationReverbFilter". In normal attenuation, the further away you get from a sound source, the more the element of the sound being attenuated decreases until it reaches zero. the "Low" part of the names here indicate that there is some attenuation, but it's a lower amount than usual; the element of the sound being attenuated decreases somewhat but never quite reaches zero.
+You'll see "low" in the names of a number of sound-related prefabs; for example, "LowAttenuationVolumeFilter" or "LowAttenuationReverbFilter". In normal attenuation, the further away you get from a sound source, the more the element of the sound being attenuated decreases until it finally reaches zero. the inclusion of "Low" in the names here indicate that there is some attenuation, but it's a lower amount than usual; the element of the sound being attenuated decreases somewhat but never quite reaches zero.
 
-**frequency**: the property of sound that most determines its pitch. We perceive tones coming from a bass guitar as having low frequencies, while tones from a flute are perceived as high frequency.
+**frequency**: the property of sound that determines its pitch. We perceive tones coming from a bass guitar as having low frequencies, while tones from a flute are perceived as high frequency.
 
-**low pass filter**: this is a filter that you can apply to an Audio Zone. Lower frequencies in a sound will *pass through* the filter and be audible, while higher frequencies will be *attenuated*.
+**low pass filter**: this is a filter that you can apply to a Voice Setting. Lower frequencies in a sound will *pass through* the filter and be audible, while higher frequencies will be *attenuated*.
 
- **reverb** (short for "reverbation"): the amount of echo in a sound. Sounds in a cave, tunnel or large cathedral typically have a lot of reverb; sounds in a small room have a little to no reverb.
+ **reverb** (short for "reverbation"): the amount of echo in a sound. Sounds in a cave, tunnel or large room typically have noticeable reverb; sounds in a small room have little to no reverb.
 
 **Megaphone**: this is a Mesh term. When an attendee in an event has their *Megaphone* turned on, they can be heard by everyone in the event regardless of location.
 
@@ -398,9 +401,4 @@ You do this by using the *Spatializer* and associated prefab and scripts.
 
     ![______](../../media/enhance-your-environment/audio-zones/075-source.png)
 
-1. Run the project. You should hear the audio clip you chose with use you chose for the **Default Voice Selection** property. Note that this is fairly simple simulation; you can't walk around and trigger different audio settings.
-1. 
-
-
-
-
+1. Run the project. You should hear the audio clip you chose with the use you chose for the **Default Voice Selection** property. Note that this is fairly simple simulation; you can't walk around and trigger different audio settings.
