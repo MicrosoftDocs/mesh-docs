@@ -67,9 +67,9 @@ If you've been developing Mesh experiences for a while and are familiar not only
 
 Minimum PC requirements: 4 CPU cores, 8GB RAM
 
-### Unity version 2022.3.15
+### Unity version 2022.3.34
 
-Unity version 2022.3.15 is required for this tutorial.
+Unity version 2022.3.34 is required for this tutorial.
 
 [Review system requirements for Unity](https://docs.unity3d.com/Manual/system-requirements.html)
 
@@ -124,7 +124,7 @@ For this tutorial, the only package you need is the Mesh toolkit package, and it
 
 ## Scenes in the project
 
-1. Open the **Mesh201** project in Unity. If you have more than  one version of Unity installed, be sure to open the project with `Unity 2022.3.15` which is required for this tutorial.
+1. Open the **Mesh201** project in Unity. If you have more than  one version of Unity installed, be sure to open the project with `Unity 2022.3.34` which is required for this tutorial.
 
     **WARNING**: The project could take 15 minutes or slightly longer to load due to large asset sizes. If you need to, change your Sleep mode setting so that the computer doesn't go to sleep while the project is loading. If this happens, it could cause the project to not load properly.
     
