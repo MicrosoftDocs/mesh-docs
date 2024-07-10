@@ -4,7 +4,7 @@ description: Learn how to provide the optimal audio experience for all attendees
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/8/2024
+ms.date: 7/9/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, sound
 ---
@@ -15,7 +15,13 @@ keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, sound
 
 A Mesh event has *audio spatialization* (we describe this as "the way a sound behaves in a 3D space"). However, until now, you've had limited control over how spatialization works; there's one default audio setting and it hasn't been customizable for different event sizes and scenarios. This can be a problem if, for example, your event takes place in a large room and you want the volume of the voices between attendees to fade out more gradually as the attendees get further apart. Another example is an event where there's a large table and attendees at the extreme ends of the table are far enough apart that they can't hear each other. In real life, if you're far away, you can speak louder, but in a Mesh event all voice volumes are *normalized* so this doesn't work. In some cases, there are workarounds (for example, make everyone in the event an *Organizer* so they can push the *megaphone* button to make themselves heard by everyone) but these limitations and workarounds can detract from immersion and presence.
 
-With our latest Mesh toolkit updates, you have much more control over how sound behaves in your environment. You can customize the sound settings for the whole space or create *Audio Zones* which are individual areas in the space with customized audio settings that override the settings of the environment. In a sense, this gives you audio "super powers; you can Give event attendees audio experiences beyond what they could have in real life. For example, no matter how large the space is, you can give certain attendees the ability to be heard throughout the entire space. Attendees can have multi-directional conversations without interrupting each other. tbd - more detail.
+With our latest Mesh toolkit updates, you have much more control over how sound behaves in your environment. You can customize the sound settings for the whole space or create *Audio Zones* which are individual areas in the space with customized audio settings that override the settings of the environment. In a sense, this gives you audio "super powers; you can give event attendees audio experiences beyond what they could have in real life. For example, no matter how large the space is, you can give certain attendees the ability to be heard throughout the entire space. Another example is that Attendees can have multi-directional conversations without interrupting each other.
+
+**three levels of audio control**
+
+there are three different approaches to adding audio control to your environment. From most powerful to least, there are *Audio Zones*, *Acoustic Zones*, and the *Default Environment Acoustics* script. to fully understand these, we recommend that you first learn about *Voice Collections* and *Voice Settings*. You'll then be better equipped to implement these various approaches.
+
+Since *Audio Zones* are the most powerful, our documentation takes the position that this is the approach most devs will be interested in.
 
 ## Audio Zone benefits
 
@@ -23,13 +29,11 @@ With our latest Mesh toolkit updates, you have much more control over how sound 
 
 --Decrease miscommunication.
 
---If you want to change an audio setting, you can do this __________________ tbd without having to edit the environment itself.
-
 --You can set up Audio Zones to be very visible to attendees by using properties such as glowing borders or short messages called *toasts* that display when an attendee enters or exits the Zone. However, you can also design Audio Zones to work "behind the scenes" without any of these visual cues.
 
 ## Common scenarios
 
-- In an environment, create a small "discussion area" with a few chairs or couches. Place an Audio Zone over the area. Select the Audio Zone setting called "low attenuation." Anyone inside of this Audio Zone will hear anyone else inside the Zone clearly. You can also choose a setting called "Muffled voices outside" (tbd -- check on name) which muffles the voices of anyone outside the Audio Zone, making it easier for people inside the Zone to hear each other.
+- In an environment, create a small "discussion area" with a few chairs or couches. Place an Audio Zone over the area. Select the Audio Zone setting called "low attenuation." Anyone inside of this Audio Zone will hear anyone else inside the Zone clearly. You can also choose a setting called "Muffle Voices Outside", which muffles the voices of anyone outside the Audio Zone, making it easier for people inside the Zone to hear each other.
 
 - Set up walls and create distinct separations between rooms.
 
@@ -45,7 +49,14 @@ With our latest Mesh toolkit updates, you have much more control over how sound 
 
 In order to fully understand how you can control sound with Audio Zones, it's useful to be familiar with some audio terminology.
 
-**attenuation**: a decrease in intensity. If you create an Audio Zone and you want the sounds outside of the Zone to barely be audible inside the Zone, you can *attenuate* those incoming sounds using the *Low Attenuation Volume** filter.
+**attenuation**: a decrease in the intensity of certain elements of a sound. For our purposes, that means a lowering of volume, a lessening of reverb, or a lessening of high frequencies ("low pass"). the names of the prefabs indicate which elements of the sound they're affecting.
+
+![______](../../media/enhance-your-environment/audio-zones/070-attenuation-filters.png)
+
+
+For example, if you create an Audio Zone and you want the sounds outside of the Zone to barely be audible inside the Zone, you can *attenuate* those incoming sounds using the *LowAttenuation VolumeFilter** prefab.
+
+You'll see "low" in the names of a number of sound-related prefabs; for example, "LowAttenuationVolumeFilter" or "LowAttenuationReverbFilter". In normal attenuation, the further away you get from a sound source, the more the element of the sound being attenuated decreases until it reaches zero. the "Low" part of the names here indicate that there is some attenuation, but it's a lower amount than usual; the element of the sound being attenuated decreases somewhat but never quite reaches zero.
 
 **frequency**: the property of sound that most determines its pitch. We perceive tones coming from a bass guitar as having low frequencies, while tones from a flute are perceived as high frequency.
 
@@ -61,7 +72,13 @@ the Audio Zone package is included with the Mesh toolkit.
 
 ![______](../../media/enhance-your-environment/audio-zones/033-audio-zones-package.png)
 
-## Create an Audio Zone
+## Create Audio Zones and Acoustic Zones
+
+### Create an Audio Zone
+
+the *Audio Zone* component lets you indicate a specific area inside the environment, in the form of a trigger collider, that will have its own unique audio settings. You can choose a default Voice Setting for the Zone, a Voice Collection that gives the Zone a range of Voice Setting options to choose from depending on changing circumstances, and numerous customization properties.
+
+![______](../../media/enhance-your-environment/audio-zones/067-audio-zone-component.png)
 
 1. Add an empty GameObject to the scene and select it.
 1. In the **Inspector**, click the **Add Component** button and then search for and add the "Audio Zone" component.
@@ -72,11 +89,46 @@ the Audio Zone package is included with the Mesh toolkit.
 1. If needed, in the **Box Collider** component, click the **Edit Collider** button and then adjust the shape of the Collider.
 1. In the **AudioZone** component, specify the settings you want. [Audio Zone properties are explained further below](#audio-zone-properties).
 
+### Create an Acoustic Zone
 
+An Acoustic Zone comes in the form of a prefab; you can think of it as a simplied Audio Zone. You get the trigger collider, default Voice, and Voice Collection choices, but not the more extensive customization properties.
 
-## Features of an Audio Zone
+ ![______](../../media/enhance-your-environment/audio-zones/030-acoustic-zones.png)
 
-there are three main components, or what we'll call "features", of an Audio Zone. Each is detailed below.
+An Acoustic Zone prefab comes with the *Environment Acoustic Zone* script.
+
+ ![______](../../media/enhance-your-environment/audio-zones/031-env-acoustic-zone-script.png)
+
+1. Create an environment that will act as a large conference hall.
+1. Add a Cube to the scene and then rename it "Meeting Room".
+1. Adjust the dimensions of **Meeting Room** to give it a rectangular shape at the scale you want.
+1. Drag the **RectangularAcousticZone** prefab from the **VoiceSettingCollection** folder and then drop it on the **Meeting Room** GameObject in the scene, making it a child to **Meeting Room**.
+
+    ![______](../../media/enhance-your-environment/audio-zones/063-add-rect-acoustic-zone.png)
+
+1. In the **Inspector**, edit the **Box Collider** for the **RectangularAcousticZone** prefab to have the same size and location as the **Meeting Zone** GameObject.
+1. Follow the instructions in the **Description** for the prefab to choose a Voice Collection in the **Voices** property (we recommend that you drag the Voice Collection from the **Project** window). 
+
+    ![______](../../media/enhance-your-environment/audio-zones/064-prefab-description.png)
+
+1. If desired, rename the prefab so its name is more descriptive.
+
+### Add Default Environment Acoustics
+
+the Mesh app comes with its own default Voice Collection that provides the acoustics for an event. to override that Voice Collection with a different one:
+
+1. In your scene, create an empty GameObject and then rename it to something meaningful. In this example, we'll use "My custom acoustics."
+1. In the **Project** window, navigate to the *Default Environment Acoustics* script, and then drag it to the **Inspector** panel for the new GameObject.
+
+    ![______](../../media/enhance-your-environment/audio-zones/068-env-acoustic-zone.png)
+
+1. In the **Project** window, navigate to the *Voice Setting Collection* you want, and then drag it to the **Voices** field in the **Default Environment Acoustics** component.
+
+    ![______](../../media/enhance-your-environment/audio-zones/069-my-default-voices.png)
+
+## Mesh spatial audio features
+
+there are three main components, or what we'll call "features", available for an Audio Zone. Each is detailed below.
 
 ### Voice Settings Collection
 
@@ -85,6 +137,10 @@ there are three main components, or what we'll call "features", of an Audio Zone
 ![______](../../media/enhance-your-environment/audio-zones/035-default-voice-collection.png)
 
 The purpose of a Voice Collection is to make a variety of *Voice Settings* available for the Audio Zone to use.
+
+**Note**: You have the option to choose no Voice Collection. In this case, the Audio Zone will use the default Voice Settings that come with the Mesh app.
+
+![______](../../media/enhance-your-environment/audio-zones/071-no-voice-collection.png)
 
 ### Voice Setting
 
@@ -241,17 +297,9 @@ In this example, our environment is a large conference hall. We want to add a sm
 
 When an attendee in the event enters the Stage GameObject and speaks, everyone in the event will hear them.
 
-## Audio control in an Event
-
-From the developer perspective, Audio Zones in the environment should be more about defining acoustics than user options such as muffled voices. You can configure these options within Objects; your environment can then be used as the basis for templates. An Organizer can choose the template that has the Audio Zone-based objects they want for an event.
-
-In a Mesh event, you might want a variety of audio sources inside an Audio Zone (for example, attendees, video players, and radios). Mesh determines which Voice should be assigned to which source and then applies the appropriate setting using the Spatializer. Every time someone enters or exits an Audio Zone, the settings are adjusted.
-
-
 ## Audio Zone properties
 
 ![______](../../media/enhance-your-environment/audio-zones/057-audio-zone-properties.png)
-
 
 **Trigger Collider**: This property contains the GameObject that has an attached Trigger Collider that defines the boundary of the Audio Zone. In most cases, this will be the GameObject the Audio Zone component is attached to. You can set this by dragging the GameObject from the **Hierarchy** and dropping it onto the **Trigger Collider** property, or clicking the round button in the property and then selected a GameObject in the **Select Collider** window.
 
@@ -268,10 +316,11 @@ In a Mesh event, you might want a variety of audio sources inside an Audio Zone 
 - **When both inside**: the Zone's rules apply only if the attendee *and* the source of the audio are both inside the Audio Zone.
 - **When Audio Source inside**: the Zone's rules apply if the source of the audio is inside the Audio Zone. (this is how a stage works, for example. When the presenter is on the stage, the stage's Audio Zone settings go into effect.) 
 
-**Voices**: Choose the Voice Settings Collection that contains the Voice Settings you want for this Audio Zone. Click the round button in the property and then search for and choose a Collection in the **Select Voice Setting Collection" window.
+**Voices**: Select the Voice Settings Collection that contains the Voice Setting you want for this Audio Zone. to do so, in the **Project** window, navigate to the Voice Setting you want, and then drag it to the **Voices** field in the **AudioZone** component.
+
+    ![______](../../media/enhance-your-environment/audio-zones/066-voice-setting.png)
 
 **Default Voice Selection**: the drop-down for this property contains a list of various *uses* you may be interested in. If, for example, you want the Audio Zone to use the settings for the *Natural* use, select *Natural* here and the Audio Zone will look for and use a Voice within the Collection you chose that has *Natural* set for its use. If no Voices with that use can be found in the Collection and there are nested Audio Zones, the Audio Zone will look in the Collections for other Audio Zones (going from highest Priority to lowest Priority) for a Voice with that use. If no Audio Zones have such a Voice, the Audio Zone looks to the Environment for such a Voice. If it still can't be found, the default settings for all environments are used.
-
 
 the standard default voice is **Normal**. However, if you want everyone inside the Zone to be heard easily, then **Low Attenuation** might be a better option.
 
@@ -314,26 +363,44 @@ Much of the "muffled" effect from this voice is due to the strong influence of t
 
 A *toast* is a short message that pops up on the screen and then, after a brief period of time, disappears. You can create a toast that will be displayed when an attendee enters or exits the Audio Zone. 
 
-## Acoustic Zones
+## Testing a Voice Setting
 
-If you don't need all the properties that come with an Audio Zone and you just want to specify a particular set of voice settings for a bounded region, you can use an *Acoustic Zone* prefab. 
+You can "try out" a Voice Setting in your environment to see how it will eventually sound in a Mesh event. This is an efficient way to make minor changes and hear the results without having to build, deploy and test in the Mesh app each time.
 
- ![______](../../media/enhance-your-environment/audio-zones/030-acoustic-zones.png)
+You do this by using the *Spatializer* and associated prefab and scripts.
 
-An Acoustic Zone prefab comes with the *Environment Acoustic Zone* script and is like a simplified Audio Zone. It lets you select a Voice Setting Collection and the trigger Collider it applies to.
+1. Add a new empty GameObject to your scene and rename it. For this example, we'll rename it "Audio test".
+1. In the **Project** window, navigate to the *SpatializerTestAudioSource* prefab, and then drag it to the **Hierarchy** and make a child object to **Audio test**.
 
- ![______](../../media/enhance-your-environment/audio-zones/031-env-acoustic-zone-script.png)
+    ![______](../../media/enhance-your-environment/audio-zones/072-spatializer-prefab.png)
 
-### Create a simple Acoustic Zone
+1. In the **Inspector**, navigate to the **Spatializer** script, and then note the *Spatializer Type* setting of **Default**. If you want a different setting, click the drop-down and then make your selection. Each option gives you the following:
 
-1. Create an environment that will act as a large conference hall.
-1. Add a Cube to the scene and then rename it "Meeting Room".
-1. Adjust the dimensions of **Meeting Room** to give it a rectangular shape at the scale you want.
-1. Drag the **RectangularAcousticZone** prefab from the **VoiceSettingCollection** folder and then drop it on the **Meeting Room** GameObject in the scene, making it a child to **Meeting Room**.
+    **Default**:
+    
+    **Avatar**:
+    
+    **Acs Mixed Audio**:
 
-    ![______](../../media/enhance-your-environment/audio-zones/063-add-rect-acoustic-zone.png)
+1. Note that the *SpatializeTestAudioSource* prefab has a component attached named **Audio Source**. this component has an **AudioClip** property that uses an audio clip named **Scale Free Clip**.
 
-1. In the **Inspector**, edit the **Box Collider** for the **RectangularAcousticZone** prefab to have the same size and location as the **Meeting Zone** GameObject.
-1. Follow the instructions in the **Description** for the prefab to choice a Voice Collection with the **Voices** property and, if desired, rename the prefab so its name is more descriptive.
+    ![______](../../media/enhance-your-environment/audio-zones/073-audio-source.png)
 
-    ![______](../../media/enhance-your-environment/audio-zones/064-prefab-description.png)
+    this audio clip is located in the **Spatialization** folder.
+
+    ![______](../../media/enhance-your-environment/audio-zones/074-scale-free-clip.png)
+
+    You can select the clip and then play it in the **Inspector** to hear what it sounds like. If you wish, you can add your own audio clips to the project and use one of those in the **Audio Source** component instead of the *Scale Free Clip* audio clip.
+
+1. In the **Spatializer** component, keep the **Default Voice Selection** property set to *Natural* or click the drop-down and choose a different setting. This is similar to choosing a "Use" in the Audio Zone component.
+1. For the **Ear** property, choose the camera in the scene. If you don't yet have a camera, you'll need to add one.
+1. For the **Source** property, drag the *SpatializerTestAudioSource** prefab from the **Hierarchy** and then drop it in the **Source** field.
+
+    ![______](../../media/enhance-your-environment/audio-zones/075-source.png)
+
+1. Run the project. You should hear the audio clip you chose with use you chose for the **Default Voice Selection** property. Note that this is fairly simple simulation; you can't walk around and trigger different audio settings.
+1. 
+
+
+
+
