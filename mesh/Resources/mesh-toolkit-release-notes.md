@@ -56,6 +56,16 @@ When creating events in Mesh on the web, if a user tries to make an event an env
 
     For more information on the Audio Zone Object, see [Developer article]().
 
+#### Mesh Toolkit Uploader
+
+* Fixed bug which caused the upload to fail during thumbnail generation when the file was not on disk.
+
+* Fix a bug where saving a scene with TMP text caused the mesh toolkit package to reimport.
+
+* Fix a bug that allowed the user to still use a deprecated version of the toolkit.
+
+* Settings title changed from "Mesh Uploader Settings" to "Mesh Toolkit Settings"
+
 ## Mesh Toolkit 5.2407.X
 
 ### What's new
