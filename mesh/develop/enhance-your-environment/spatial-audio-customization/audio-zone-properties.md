@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, spatial audio, spatia
 
 # Audio Zone properties
 
-When you [create an Audio Zone in your environment](./create-zones-and-environment-audio.md#create-an-audio-zone), the process includes adding the *Audio Zone* component. this component includes a range of properties that are described below.
+When you [create an Audio Zone in your environment](./create-zones-and-environment-audio.md#create-an-audio-zone), the process includes adding the *Audio Zone* component. This component includes a range of properties that are described below.
 
 ![______](../../../media/enhance-your-environment/audio-zones/057-audio-zone-properties.png)
 
@@ -23,7 +23,7 @@ When you [create an Audio Zone in your environment](./create-zones-and-environme
 
 **Priority**: You can assign a priority value to the Audio Zone which can be useful if there are several Audio Zones in the scene. For more details, hover the cursory over this property and read the informational popup.
 
-    ![______](../../../media/enhance-your-environment/audio-zones/058-priority.png)
+![______](../../../media/enhance-your-environment/audio-zones/058-priority.png)
 
 **Applicability**:
 
@@ -32,11 +32,11 @@ When you [create an Audio Zone in your environment](./create-zones-and-environme
 
 **Voices**: Select the Voice Settings Collection that contains the Voice Setting you want for this Audio Zone. To do so, in the **Project** window, navigate to the Voice Setting you want, and then drag it to the **Voices** field in the **AudioZone** component.
 
-    ![______](../../../media/enhance-your-environment/audio-zones/066-voice-setting.png)
+![______](../../../media/enhance-your-environment/audio-zones/066-voice-setting.png)
 
 **Default Voice Selection**: the drop-down for this property contains a list of various *uses* you may be interested in. If, for example, you want the Audio Zone to use the settings for the *Natural* use, select *Natural* here and the Audio Zone will look for and use a Voice within the Collection you chose that has *Natural* set for its use. If no Voices with that use can be found in the Collection and there are nested Audio Zones, the Audio Zone will look in the Collections for other Audio Zones (going from highest Priority to lowest Priority) for a Voice with that use. If no Audio Zones have such a Voice, the Audio Zone looks to the Environment for such a Voice. If it still can't be found, the default settings for all environments are used.
 
-the standard default voice is **Normal**. However, if you want everyone inside the Zone to be heard easily, then **Low Attenuation** might be a better option.
+The standard default voice is **Normal**. However, if you want everyone inside the Zone to be heard easily, then **Low Attenuation** might be a better option.
 
 ![______](../../../media/enhance-your-environment/audio-zones/059-low-atten.png)
 
@@ -48,31 +48,36 @@ Much of the "muffled" effect from this voice is due to the strong influence of t
 
  ![______](../../../media/enhance-your-environment/audio-zones/061-muffled-low-pass-filter.png)
 
-**Can Audio Exit** and **Can Audio Enter**: these properties are useful for controlling privacy. Let's say this current Audio Zone is for Room #1, and Room #2 next to it has an Audio Zone with its "Muffle Voices Outside" property selected. 
+**Can Audio Exit** and **Can Audio Enter**: these properties are useful for controlling privacy. Let's say this current Audio Zone is for Room #1, and Room #2 next To it has an Audio Zone with its "Muffle Voices Outside" property selected. 
 
-    **to allow sounds from Room #1 to be heard in Room #2 (or any area outside the room)**:
-    Select **Can Audio Exit**. 
+**To allow sounds from Room #1 to be heard in Room #2 (or any area outside the room)**:
+Select **Can Audio Exit**. 
     
-    **to prevent sounds from Room #1 from being heard outside the room**:
-    Make sure **Can Audio Exit** is unselected. 
+**To prevent sounds from Room #1 from being heard outside the room**:
+Make sure **Can Audio Exit** is unselected. 
     
-    **to allow sounds from outside of Room #1 to be heard inside the room:
-    Select **Can Audio enter**.
+**To allow sounds from outside of Room #1 to be heard inside the room:
+Select **Can Audio enter**.
     
-    **to prevent sounds from outside Room #1 from being heard inside the room:
-    Make sure **Can Audio Enter** is unselected.
+**To prevent sounds from outside Room #1 from being heard inside the room:
+Make sure **Can Audio Enter** is unselected.
 
 **Glow Sound at Border**: This works best when you have some sort of visual representation for the border of the Audio Zone. When this property is selected, a sound triggers when an attendee gets close to the border. For example, you could create an Audio Zone that has an electric fence as its border, and then when an attendee approaches the fence, they hear a crackling electrical sound.
 
 **Attenuate Voices at Border**: As an attendee approaches the border of the Audio Zone, overall volume of voices is lowered.
 
-**Walla Murmur**: this is another property that's useful when you want a certain level of privacy. Let's say that for this room/Audio Zone, you have **Can Audio Exit** deselected, meaning you don't want attendees outside the room to hear what's being said inside the room. However, in this instance, you *do* want attendees outside the room to detect that attendees are inside the room and talking. With **Walla Murmur** selected, when attendees inside the room talk, attendees outside the room will hear what *sounds* like conversation coming from the room but is actually just a sound effect that mimics talking and doesn't represent the actual conversation.
+**Walla Murmur**: This is another property that's useful when you want a certain level of privacy. Let's say that for this room/Audio Zone, you have **Can Audio Exit** deselected, meaning you don't want attendees outside the room to hear what's being said inside the room. However, in this instance, you *do* want attendees outside the room to detect that attendees are inside the room and talking. With **Walla Murmur** selected, when attendees inside the room talk, attendees outside the room will hear what *sounds* like conversation coming from the room but is actually just a sound effect that mimics talking and doesn't represent the actual conversation.
 
-*tip**: **Glow Sound at Border**, **Attenuate Voices at Border**, and **Walla Murmur** are designed to work together. Imagine this scenario: you're in an open space, with attendees talking around you, and you walk towards Room #1 which has an Audio Zone with the three above-mentioned features turned on. As you approach the room, you can hear that attendees inside the room are talking (*Walla Murmur*). The volume levels of the voices around you fade to nothing (*Attenuate Voices at Border*). At the same time, you start to hear a sound that steadily increases in volume as you approach the border of the room (*Glow Sound at Border*). As you walk into the room, the glow sound gets quieter and the volume of the voices inside the room increases. The result is a smooth transition from the voices you were hearing outside the room to the voices inside it.
+**Tip**: **Glow Sound at Border**, **Attenuate Voices at Border**, and **Walla Murmur** are designed to work together. Imagine this scenario: you're in an open space, with attendees talking around you, and you walk towards Room #1 which has an Audio Zone with the three above-mentioned features turned on. As you approach the room, you can hear that attendees inside the room are talking (*Walla Murmur*). The volume levels of the voices around you fade to nothing (*Attenuate Voices at Border*). At the same time, you start to hear a sound that steadily increases in volume as you approach the border of the room (*Glow Sound at Border*). As you walk into the room, the glow sound gets quieter and the volume of the voices inside the room increases. The result is a smooth transition from the voices you were hearing outside the room to the voices inside it.
 
-**Entry toast title:**
-**Entry toast body:**
-**Exit toast title:**
+**Entry toast title:**  
+**Entry toast body:**  
+**Exit toast title:**  
 **Exit toast body:**
 
 A *toast* is a short message that pops up on the screen and then, after a brief period of time, disappears. You can create a toast that will be displayed when an attendee enters or exits the Audio Zone. 
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Spatial audio custom features](spatial-audio-custom-features.md)

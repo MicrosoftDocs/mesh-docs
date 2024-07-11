@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, spatial audio, spatia
 
 ## Create an Audio Zone
 
-the *Audio Zone* component lets you indicate a specific area inside the environment, in the form of a trigger collider, that will have its own unique audio settings. You can choose a default Voice Setting for the Zone, a Voice Collection that gives the Zone a range of Voice Setting options to choose from depending on changing circumstances, and numerous customization properties.
+To create an Audio Zone, you add the *Audio Zone* component to a room or space in your environment that you want to have customized spatial audio settings. The *Audio Zone* component lets you indicate a specific area inside the environment, in the form of a trigger collider, that will have its own unique audio settings. You can choose a default [Voice Setting](./spatial-audio-basic-features.md#voice-setting) for the Zone and a [Voice Collection](./spatial-audio-basic-features.md#voice-settings-collection) that gives the Zone a range of Voice Settings to choose from, depending on changing circumstances. You can also adjust numerous properties.
 
 ![______](../../../media/enhance-your-environment/audio-zones/067-audio-zone-component.png)
 
@@ -24,7 +24,7 @@ the *Audio Zone* component lets you indicate a specific area inside the environm
 
 1. Click the **Add Component** button again and then add the collider that comes closest to the shape of the Audio Zone you have in mind. For example, for a rectangular room, your best choice is probably the "Box Collider".
 1. If needed, in the **Box Collider** component, click the **Edit Collider** button and then adjust the shape of the Collider.
-1. In the **AudioZone** component, specify the settings you want. [Audio Zone properties are explained further below](#audio-zone-properties).
+1. In the **AudioZone** component, specify the property settings you want.
 
 [Learn about Audio Zone properties](./audio-zone-properties.md)
 
@@ -32,7 +32,7 @@ the *Audio Zone* component lets you indicate a specific area inside the environm
 
 ### Create an Acoustic Zone
 
-An Acoustic Zone comes in the form of a prefab; you can think of it as a simplied Audio Zone. You get the trigger collider, default Voice, and Voice Collection choices, but not the more extensive customization properties.
+An Acoustic Zone comes in the form of a prefab; you can think of it as a simplied Audio Zone. You get the trigger collider and default Voice Setting and Voice Collection choices, but not the more extensive customization properties found in Audio Zones.
 
  ![______](../../../media/enhance-your-environment/audio-zones/030-acoustic-zones.png)
 
@@ -63,21 +63,21 @@ The Mesh app comes with its own default Voice Collection that provides the acous
 
     ![______](../../../media/enhance-your-environment/audio-zones/068-env-acoustic-zone.png)
 
-1. In the **Project** window, navigate to the *Voice Setting Collection* you want, and then drag it to the **Voices** field in the **Default Environment Acoustics** component.
+1. In the **Project** window, navigate to the Voice Setting Collection you want, and then drag it to the **Voices** field in the **Default Environment Acoustics** component.
 
     ![______](../../../media/enhance-your-environment/audio-zones/069-my-default-voices.png)
 
 ## How a Voice Setting gets chosen for Audio Zones, Acoustic Zones or Custom Environment Audio
 
-As mentioned earlier, you can apply a Voice Setting Collection to an Audio Zone or Acoustic Zone or Custom Environment Audio, and the Collection can contain a varety of Voice Settings (the *DefaultVoices* Collection has seven). In this section, we'll assume you're working with an Audio Zone.
+As mentioned earlier, you can apply a Voice Setting Collection to an Audio Zone or Acoustic Zone or choose it to override the default Mesh app acoustics, and the Collection can contain a variety of Voice Settings (the *DefaultVoices* Collection has seven). In this section, we'll assume you're working with an Audio Zone.
 
-Why would you need this many Voice Setting options for one Audio Zone? Different circumstances, and different Objects in the Audio Zone, may require different sets of audio qualities.
+Why would you need this many Voice Setting options for one Audio Zone? Different circumstances, and different Objects in the Audio Zone, may require different audio qualities.
 
 You can set a default Voice Setting for an Audio Zone in the *Audio Zone* component. Let's say you apply an Audio Zone to a specific room in your experience and you want voices outside of the room to sound audible but muffled to anyone inside the room. For **Default Voice Selection*, we'll choose "Muffled".
 
 ![______](../../../media/enhance-your-environment/audio-zones/038-muffled.png)
 
-However, if someone in the event turns on the Megaphone, we don't want attendees in our Audio Zone to hear that voice as sounding muffled; we want it heard clearly. Since we have the "Megaphone" Voice Setting the Collection that's chosen for our Audio Zone, the Zone switches to that Voice Setting if the Megaphone is turned on.
+However, if someone in the event turns on the Megaphone, we don't want attendees in our Audio Zone to hear their  voice as sounding muffled; we want it heard clearly. Since we have the "Megaphone" Voice Setting in the Collection that's chosen for our Audio Zone, the Zone switches to that Voice Setting if the Megaphone is turned on.
 
 ![______](../../../media/enhance-your-environment/audio-zones/039-megaphone.png)
 
@@ -97,7 +97,7 @@ In addition to the *Uses* property, a Voice Setting has the *VoiceSetting* scrip
 
 ### Simple meeting room
 
-In this example, our environment is a large conference hall. We want to add a smaller room with its own Audio Zone that attendees can go into for a more private conversation.
+In this example, our environment is a large conference hall. We want to add a small meeting area to the hall with its own Audio Zone that attendees can go into for a more private conversation.
 
 1. Create an environment that will act as a large conference hall.
 1. Add an empty GameObject to the scene and then rename it "Meeting Room".
@@ -109,9 +109,9 @@ In this example, our environment is a large conference hall. We want to add a sm
 1. In the **Inspector**, click the **Add Component** button and then search for and add the "Audio Zone" component.
 1. In the Audio Zone component, click the **Default Voice Selection** drop-down and then select **Low Attenuation**.
 1. Add the "Box Collider" component and then select its **Is trigger** property.
-1. Choose a collection: click the round button in the **Voices** field and then, in the **Select Voice Setting Collection** window, search for and select the Voice Collection you want.
+1. Choose a collection: in the **Project** window, navigate to the Voice Collection you want, and then drag it to the **Voices** field in the **Inspector.
 
-    ![______](../../../media/enhance-your-environment/audio-zones/055-select-voice-collection.png)
+    ![______](../../../media/enhance-your-environment/audio-zones/083-voices.png)
 
 1. We want attendees in the room to hear if something is going on outside the room, but at a low volume. To make this happen, select **Muffle Voices Outside**. The Voice Setting Collection selected for this Audio Zone contains a "Muffled Voice" Voice Setting that makes this happen.
 
@@ -122,5 +122,12 @@ In this example, our environment is a large conference hall. We want to add a sm
 1. Follow the steps in the previous section to add an Audio zone to the stage and choose its settings.
 1. In the **Audio Zone** component attached to the stage, click the **Applicability** drop-down, and then select **When Audio Source inside**.
 
-When an attendee in the event enters the Stage GameObject and speaks, everyone in the event will hear them.
+    ![______](../../../media/enhance-your-environment/audio-zones/084-when-audio-source-inside.png)
+
+    When an attendee in the event enters the Stage GameObject and speaks, everyone in the event will hear them.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Audio Zone Properties](audio-zone-properties.md)
 
