@@ -2,10 +2,10 @@
 title: Prepare for your first Mesh Cloud Scripting project
 description: Learn how to prepare for creating your first Mesh Cloud Scripting project
 ms.service: mesh
-author: typride
+author: vtieto
 ms.author: vinnietieto
-ms.date: 4/18/2024
-ms.topic: Guide
+ms.date: 6/7/2024
+ms.topic: get-started
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding
 ---
 
@@ -21,19 +21,21 @@ In this article, you'll learn about how to prepare for your first Mesh Cloud Scr
 
 - An M365 Office subscription with access to SharePoint, OneDrive, and M365 Calendar.
 
-- Access to and familiarity with the Azure portal.
+- An [Azure subscription](https://azure.microsoft.com/products/cloud-services/) and familiarity with the Azure portal. Azure subscriptions come in a variety of forms; if you're unsure about this, talk to your IT admin.
 
 - Make sure you have the following installed:
 
-[Azure CLI 2.40.0.](/cli/azure/install-azure-cli)
+[Azure CLI 2.40.0](/cli/azure/install-azure-cli). This is needed for authenticating and deploying the Mesh Cloud Scripting solution to Azure.
 
-[.NET 7.0 SDK Windows](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
+[.NET 6.0 SDK Windows](https://dotnet.microsoft.com/en-us/download/dotnet/6.0). This is needed by the cloud infrastructure tools for publishing and as well, for running the Mesh Cloud Scripting project locally.
+
+[.NET 8.0 SDK Windows](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). This is needed for building the Mesh Cloud Scripting project, as the latter needs to target .NET 8.
 
 **To confirm that you have the Azure CLI installed**:
 
 - Run the az --version command. (Learn about [choosing the right Azure command-line tool](/cli/azure/choose-the-right-azure-command-line-tool).)
 
-**To confirm that you're logged in to the subscription where you have permissions to deploy MeshApp's cloud infrastructure**:
+**To confirm that you're logged in to the subscription where you have permissions to deploy Mesh Cloud Scripting's infrastructure**:
 
 - Run the **az account show** command. If you're not logged in to the correct subscription, run **az logout** and then **az login** to log in to the right account. If you have access to multiple Azure subscriptions in different tenants, it's easier to log in using the **az login --use-device-code** command.
 
@@ -57,7 +59,7 @@ This is the subscription ID for your chosen resource group.
 
 ![_________________________](../../../media/mesh-scripting/setup-in-uploader/001-subscription-id.png)
 
-**IMPORTANT**: The configuration of a subscription and resource group for the Mesh Collection that you'll publish your Environment to may or may not be the same as the configuration of a subscription and resource group for MeshApp.
+**IMPORTANT**: The configuration of a subscription and resource group for the Mesh Collection that you'll publish your Environment to may or may not be the same as the configuration of a subscription and resource group for Mesh Cloud Scripting.
 
 ### Supported regions and abbreviations
 

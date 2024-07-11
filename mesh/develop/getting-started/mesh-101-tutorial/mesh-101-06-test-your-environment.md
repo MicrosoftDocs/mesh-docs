@@ -4,14 +4,14 @@ description: Learn how to test the Mesh 101 environment with a Template.
 ms.service: mesh
 author: thetuvix
 ms.author: alexturn
-ms.date: 2/7/2024
+ms.date: 6/27/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, events, experiences
 ---
 
 # Mesh 101 Tutorial Chapter 6: Test your environment within the Mesh app
 
-While the [Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md) is great for trying out your environment as you build it, at some point you'll want to see how your creation feels and performs in a headset or with multiple human attendees. At that point, it's time to launch the Mesh app and create a **Template** you can use to test and iterate on your environment.
+While [Play Mode with Mesh Emulation](../../debug-and-optimize-performance/mesh-emulator.md) is great for trying out your environment as you build it, at some point you'll want to see how your creation feels and performs in a headset or with multiple human attendees. At that point, it's time to launch the Mesh app and create a **Template** you can use to test and iterate on your environment.
 
 ## Testing your environment in Mesh
 

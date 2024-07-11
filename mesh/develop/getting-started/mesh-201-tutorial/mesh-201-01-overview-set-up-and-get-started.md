@@ -59,7 +59,7 @@ If you've been developing Mesh experiences for a while and are familiar not only
 
 [Turn object icons off for a clearer view](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#turn-object-icons-off-for-a-clearer-view)
 
-[Mesh Emulation Mode](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#using-mesh-emulation-mode)
+[Play Mode with Mesh Emulation](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#using-play-mode-with-mesh-emulation)
 
 [Mesh Thumbnail Camera](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#add-the-mesh-thumbnail-camera)
 
