@@ -62,6 +62,11 @@ When creating events in Mesh on the web, if a user tries to make an event an env
 
 - You can now enter [Play Mode with Mesh Emulation](../develop/debug-and-optimize-performance/mesh-emulator.md) with [Domain Reloading disabled](../develop/debug-and-optimize-performance/speed-up-mesh-emulation.md). This should significantly speed up the start and stop times of the Mesh Emulator, allowing you to iterate faster.
 
+- Fixed a bug where saving a scene with TMP text caused the mesh toolkit package to reimport.
+
+- Duplicate environment names are no longer allowed in the same collection.
+
+- Add menu "Mesh Toolkit/Configure/Apply Mesh Font to Open Scenes" that will update fonts on open scenes TextMesh pro components to use default Mesh font.
 
 ## Mesh Toolkit 5.2406.X
 
