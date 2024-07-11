@@ -39,7 +39,7 @@ The Voice Setting Collections are located in the **VoiceSettingCollection** fold
 
 ![______](../../../media/enhance-your-environment/audio-zones/079-voice-setting-collection.png)
 
-The only VoiceCollection in the folder currently is *DefaultVoices*. It contains the default Voice Settings that ship with Mesh. If you select *DefaultVoices* in the **Project** folder, you can see the Voice Settings listed as *Elements* in the **Inspector.
+The only VoiceCollection in the folder currently is *DefaultVoices*. It contains the default Voice Settings that ship with Mesh. If you select *DefaultVoices* in the **Project** folder, you can see the Voice Settings it contains listed as *Elements* in the **Inspector.
 
 ![______](../../../media/enhance-your-environment/audio-zones/080-voices.png)
 
@@ -49,11 +49,7 @@ The only VoiceCollection in the folder currently is *DefaultVoices*. It contains
 
 ![______](../../../media/enhance-your-environment/audio-zones/081-filters.png)
 
-You can think of filters as the lowest level unit that affects the sound.
-
-![______](../../../media/enhance-your-environment/audio-zones/042-filters.png)
-
-Filters are typically added to a *Voice Setting* prefab; they play an important role in determining how that prefab shapes the sound. 
+You can think of filters as the lowest level unit that affects the sound. Filters are typically added to a *Voice Setting* prefab; they play an important role in determining how that prefab shapes the sound. 
 
 ![______](../../../media/enhance-your-environment/audio-zones/082-filters.png)
 
