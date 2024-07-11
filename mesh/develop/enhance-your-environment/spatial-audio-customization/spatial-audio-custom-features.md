@@ -11,7 +11,9 @@ keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, spatial audio, spatia
 
 # Spatial audio custom features
 
-The three core components, or what we call "features", for Mesh custom spatial audio, are [*Voice Settings*](./spatial-audio-basic-features.md#voice-setting), [*Voice Setting Collections*](./spatial-audio-basic-features.md#voice-settings-collection), and [*Filters*](./spatial-audio-basic-features.md#filters). However, you don't have to be limited to just the features that come with the Audio Zone package. You can copy any of these and then alter them to create your own customized features. In this example, let's assume we want a Voice Setting with a slightly different Reverb Filter.
+The three core components, or what we call "features", for Mesh custom spatial audio, are [*Voice Settings*](./spatial-audio-basic-features.md#voice-setting), [*Voice Setting Collections*](./spatial-audio-basic-features.md#voice-settings-collection), and [*Filters*](./spatial-audio-basic-features.md#filters). However, you don't have to be limited to just the features that come with the Audio Zone package. You can copy any of these and then alter them to create your own customized features. In this example, we'll create new versions of each feature.
+
+## Create new folders for your custom features
 
 1. In your project, right-click the **Project** tab and then select **Add tab** > **Project**.
 1. Relocate the second **Project** window so that it's to the right of the first **Project** window.
@@ -24,6 +26,8 @@ The three core components, or what we call "features", for Mesh custom spatial a
 
     ![______](../../../media/enhance-your-environment/audio-zones/046-new-folders.png)
 
+## Create a new custom Voice Setting Collection
+
 1. Click the Lock button in the upper right corner of the second **Project** window to lock that window's view in place.
 
     ![______](../../../media/enhance-your-environment/audio-zones/047-lock-button.png)
@@ -35,7 +39,9 @@ The three core components, or what we call "features", for Mesh custom spatial a
 
 1. Rename the prefab to "MyDefaultVoices".
 
-    We don't want to use any of the existing Voice Settings in this prefab so we'll make a new one.
+## Create a new custom Voice Setting
+
+We don't want to use any of the existing Voice Settings in this Collection so we'll make a new Voice Setting and then add it to the Collection.
 
 1. In Project window #1, navigate to the **Packages** > **Microsoft Mesh Audio Zones** > **VoiceSetting** folder and then expand it.
 1. Drag the **LowAttenuation** Voice Setting prefab from Project window #1 and then drop it on the **My Voice Settings** folder in Project window #2.
@@ -47,11 +53,13 @@ The three core components, or what we call "features", for Mesh custom spatial a
     We don't want the Reverb filter that's include with this prefab, so let's delete it. 
 
 1. In Project window #2, ensure that the "MyLowAttenuation" prefab is selected.
-1. In the **Inspector**, select **Element 2**, which contains the filter named "LowAttenuationReverbFilter", and click the "-" button to delete it.
+1. In the **Inspector**, select **Element 2**, which contains the filter named "LowAttenuationReverbFilter", and then click the "-" button to delete it.
 
     ![______](../../../media/enhance-your-environment/audio-zones/050-delete-reverb-filter.png)
 
-    We'll add a new Reverb filter with settings more in line with our needs.
+## Create a new filter
+
+We'll add a new Reverb filter with settings more in line with our needs.
 
 1. In the first **Project** window, navigate to the **Packages** > **Microsoft Mesh Audio Zones** > **Filters** folder and then expand it.
 1. Drag the **NaturalReverbFilter** Filter prefab from Project window #1 and then drop it on the **My Filters** folder in Project window #2.
@@ -59,7 +67,7 @@ The three core components, or what we call "features", for Mesh custom spatial a
     ![______](../../../media/enhance-your-environment/audio-zones/051-copy-reverb-filter.png)
 
 1. Rename the prefab to "MyNaturalReverbFilter".
-1. Select this prefab, and then, in the **Inspector**, adjust any of the controls needed to create the reverb you want. You can also change the **Description**.
+1. Select this prefab, and then, in the **Inspector**, adjust any of the properties or curves needed to create the reverb you want. You can also change the **Description**.
 
     ![______](../../../media/enhance-your-environment/audio-zones/052-my-reverb-filter-updates.png)
 
@@ -67,7 +75,7 @@ The three core components, or what we call "features", for Mesh custom spatial a
 
     ![______](../../../media/enhance-your-environment/audio-zones/085-curve.png)
 
-    Let's add our new customized Reverb Filter to our customized Voice Setting.
+## Add the new reverb filter to the new Voice Setting
 
 1. In Project window #2, select the **MyLowAttenuation** prefab.
 1. In the **Inspector** in the **Filters** section, click the "+" button.
@@ -75,11 +83,11 @@ The three core components, or what we call "features", for Mesh custom spatial a
 
     ![______](../../../media/enhance-your-environment/audio-zones/053-add-filter.png)
 
-    Finally, let's add our new customized Voice Setting to our customized Voice Setting Collection.
+## Add the new Voice Setting to the new Voice Setting Collection
 
 1. In Project window #2, select the **MyDefaultVoices** prefab.
 1. In the **Inspector** in the **Voices** section, click the "+" button.
-1. Click the round button in the newly added Element, and then, in the **Select Voice Setting** window, select **MyNaturalReverbFilter**.
+1. Drag **MyLowAttenuation** from the **Project** window and then drop it in the Element you just added to the **My Default Voices** Voice Collection.
 
     ![______](../../../media/enhance-your-environment/audio-zones/054-add-voice-setting.png)
 

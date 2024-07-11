@@ -74,4 +74,4 @@ In each Volume Filter, you not only get a **Distance Curve** for attenuation (th
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create audio zones and custom environment acoustics](create-zones-and-environment-audio.md)
+> [Create Audio Zones and custom environment acoustics](create-zones-and-environment-audio.md)

@@ -56,10 +56,10 @@ Select **Can Audio Exit**.
 **To prevent sounds from Room #1 from being heard outside the room**:
 Make sure **Can Audio Exit** is unselected. 
     
-**To allow sounds from outside of Room #1 to be heard inside the room:
+**To allow sounds from outside of Room #1 to be heard inside the room**:
 Select **Can Audio enter**.
     
-**To prevent sounds from outside Room #1 from being heard inside the room:
+**To prevent sounds from outside Room #1 from being heard inside the room**:
 Make sure **Can Audio Enter** is unselected.
 
 **Glow Sound at Border**: This works best when you have some sort of visual representation for the border of the Audio Zone. When this property is selected, a sound triggers when an attendee gets close to the border. For example, you could create an Audio Zone that has an electric fence as its border, and then when an attendee approaches the fence, they hear a crackling electrical sound.

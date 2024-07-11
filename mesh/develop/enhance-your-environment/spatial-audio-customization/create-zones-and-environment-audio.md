@@ -20,7 +20,7 @@ To create an Audio Zone, you add the *Audio Zone* component to a room or space i
 1. Add an empty GameObject to the scene and select it.
 1. In the **Inspector**, click the **Add Component** button and then search for and add the "Audio Zone" component.
 
-![______](../../../media/enhance-your-environment/audio-zones/032-add-audio-zone-component.png)
+    ![______](../../../media/enhance-your-environment/audio-zones/032-add-audio-zone-component.png)
 
 1. Click the **Add Component** button again and then add the collider that comes closest to the shape of the Audio Zone you have in mind. For example, for a rectangular room, your best choice is probably the "Box Collider".
 1. If needed, in the **Box Collider** component, click the **Edit Collider** button and then adjust the shape of the Collider.
@@ -67,7 +67,7 @@ The Mesh app comes with its own default Voice Collection that provides the acous
 
     ![______](../../../media/enhance-your-environment/audio-zones/069-my-default-voices.png)
 
-## How a Voice Setting gets chosen for Audio Zones, Acoustic Zones or Custom Environment Audio
+## How a Voice Setting gets chosen for Audio Zones, Acoustic Zones or Custom Environment Acoustics
 
 As mentioned earlier, you can apply a Voice Setting Collection to an Audio Zone or Acoustic Zone or choose it to override the default Mesh app acoustics, and the Collection can contain a variety of Voice Settings (the *DefaultVoices* Collection has seven). In this section, we'll assume you're working with an Audio Zone.
 
