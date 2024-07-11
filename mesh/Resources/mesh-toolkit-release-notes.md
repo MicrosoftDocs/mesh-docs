@@ -31,8 +31,8 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2408.X | 2024-5-22     |
-| Mesh on PC/Quest           | 5.2408.X | 2024-4-12     |
+| Mesh toolkit               | 5.2408.X | 2024-07-10     |
+| Mesh on PC/Quest           | 5.2408.X | 2024-07-10     |
 
 ## Mesh Toolkit 5.2408.X
 
@@ -55,6 +55,13 @@ When creating events in Mesh on the web, if a user tries to make an event an env
 * **Audio Zone Object** component prefab is now available in this release. Once placed in a scene and configured, it will show up as an object in the Control Panel and be controllable by a host in an event.
 
     For more information on the Audio Zone Object, see [Developer article]().
+
+## Mesh Toolkit 5.2407.X
+
+### What's new
+
+- You can now enter [Play Mode with Mesh Emulation](../develop/debug-and-optimize-performance/mesh-emulator.md) with [Domain Reloading disabled](../develop/debug-and-optimize-performance/speed-up-mesh-emulation.md). This should significantly speed up the start and stop times of the Mesh Emulator, allowing you to iterate faster.
+
 
 ## Mesh Toolkit 5.2406.X
 

@@ -3,7 +3,7 @@ title: Mesh physics overview
 description: Read an overview of how to use Mesh physics when creating Environments for Mesh.
 author: michael-buschbeck-ms
 ms.author: vinnietieto
-ms.date: 10/18/2023
+ms.date: 6/27/2024
 ms.topic: Guide
 ms.service: mesh
 keywords: Microsoft Mesh, Mesh physics, physics, environments, interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw
@@ -31,7 +31,7 @@ Mesh Physics offers interaction and additional physics-related functionalities s
 * various fields to physically influence bodies inside (buoyancy, gravity)
 * various components to modify the behavior of individual bodies (magnetic, sticky, throwable)
 * the ability to reset bodies to their startup positions (selective scene cleanup)
-* [Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md) support for multi-user testing of the features above
+* [Play Mode with Mesh Emulation](../../debug-and-optimize-performance/mesh-emulator.md) support for multi-user testing of the features above
 
 Here are more things you can do with Mesh Physics features:
 

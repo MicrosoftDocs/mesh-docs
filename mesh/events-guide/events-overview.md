@@ -5,7 +5,7 @@ ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 9/07/2023
-ms.topic: Overview
+ms.topic: overview
 keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer, customize
 ---
 
@@ -23,7 +23,7 @@ Create the event in Mesh on the Web, customize it in the Microsoft Mesh app, cre
 
 - **Single vs multiroom events:** Single room events can host up-to 16 people. For larger events, participants are grouped into 16 person rooms to provide the optimal experience for all users.
 
-- **Broadcasting in multiroom events:** Broadcast to all attendees in all rooms simultaneously to ensure all attendees can hear and follow your lead as an event host.
+- **Broadcasting in multiroom events:** Broadcast up-to five host avatars or attendee avatars to all attendees in all rooms simultaneously to ensure all attendees can hear and follow the broadcasted avatar.
 
 - **Event production tools:** Control the objects and content you add to orchestrate an immersive experience.
 
