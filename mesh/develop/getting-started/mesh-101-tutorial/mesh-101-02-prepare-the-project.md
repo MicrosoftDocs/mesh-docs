@@ -4,7 +4,7 @@ description: Learn about adding a few basic features that are necessary for the 
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 5/20/2023
+ms.date: 6/27/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 ---
@@ -83,19 +83,19 @@ learn about Mesh Interactables and Mesh Physics.
 
 ![A screenshot of a computer Description ](../../../media/sample-mesh-101/014-chapter-4-sphere-terrace-v2.png)
 
-### Using Mesh Emulation Mode
+### Using Play Mode with Mesh Emulation
 
-When you press the Unity Editor Play button, your project automatically enters *Mesh Emulation Mode*. This is made possible by the presence of the **MeshEmulatorSetup [NoUpload]** prefab which you can view in the **Hierarchy**.
+When you press the Unity Editor Play button, your project automatically uses *Mesh Emulation*. This is made possible by the presence of the **MeshEmulatorSetup [NoUpload]** prefab which you can view in the **Hierarchy**.
 
 ![A screenshot of the Mesh Emulator prefab in the Hierarchy.](../../../media/sample-mesh-101/520-mesh-emulator-in-hierarchy.png)
 
 In earlier versions of the tutorial, you needed to add this prefab intentionally when you first entered Play mode. As of mid-May 2024, the prefab comes pre-loaded into the scene.
 
-In Mesh Emulation Mode, you get an approximate preview of what the content will look and feel like when it runs in the Mesh app. The Emulator prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around. By default, the Mesh Emulator is set up to give you a single view in the **Game** window. 
+In Play Mode with Mesh Emulation, you get an approximate preview of what the content will look and feel like when it runs in the Mesh app. The Emulator prefab provides you with a highly stylized avatar controller that has a camera attached, so now when we "play" the project we can have a look around. By default, the Mesh Emulator is set up to give you a single view in the **Game** window. 
 
 ![A picture containing screenshot, pc game, video game software,3d modeling Description automatically generated](../../../media/sample-mesh-101/016-playmode-v2.png)
 
-A key feature of Mesh Emulation Mode is the ability to run multiple clients within the same process; this allows you to easily get a first impression of a multi-user scenario. In the future, you may want to have two or more views in Mesh Emulator mode. To do this, you can navigate to the Emulator's **Mesh Emulator Setup** component in the **Inspector** and then change its **Initial Screen Count** property to 2 (or more).
+A key feature of Play Mode with Mesh Emulation is the ability to run multiple clients within the same process; this allows you to easily get a first impression of a multi-user scenario. In the future, you may want to have two or more views in Mesh Emulator mode. To do this, you can navigate to the Emulator's **Mesh Emulator Setup** component in the **Inspector** and then change its **Initial Screen Count** property to 2 (or more).
 
 ![A screenshot of the Mesh Emulator Setup No Upload prefab added to the Hierarchy.](../../../media/sample-mesh-101/508-emulator-component-single.png)
 

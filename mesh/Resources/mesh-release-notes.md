@@ -4,7 +4,7 @@ description: Mesh release notes
 ms.service: mesh
 author: typride  
 ms.author: tmilligan
-ms.date: 05/29/2024
+ms.date: 07/02/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -17,15 +17,110 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | July 02      | 5.2408.XX    |
+| 2024         | June 17      | 5.2407.XX    |
 | 2024         | May 23       | 5.2406.XX    |
 | 2024         | May 13       | 5.2405.XX    |
 | 2024         | April 18     | 5.2403.XX+   |
-| 2024         | April 9      | 5.2403.XX    |
+| 2024         | April 09      | 5.2403.XX   |
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
-## Version 5.2406.0
+## Version 5.2408.XX
+
+### What's new
+
+#### Multi-room events
+
+> [!IMPORTANT]
+> We are currently rolling out an update to transition multi room events in the Mesh app on PC and Quest to use the same backend infrastructure as Teams for spatial audio. During the rollout, you may find that the additional endpoint and firewall requirements for multi-room may not be required. This rollout should complete by the end of July, 2024.
+>
+> For more information, please see the admin portal message center post at [https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC807460](https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC807460) or read our documentation for the Mesh [Endpoints and firewall configuration](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-configuration).
+
+* We now support up to five broadcasters in multi-room events, up from the previous limit of three. With this change, more people can engage across rooms, including hosts that broadcast themselves or attendees who raise their hand.
+
+    For more info, see [how to Broadcast when producing an event](../events-guide/produce-event.md#broadcast).
+
+* Event hosts can call on attendees from the Host panel when attendees raise their hand to directly to start broadcasting them.
+
+* Introducing a first look at cross-room visualizations of people! Event hosts can now see spatialized profile bubbles of attendees who are actively sharing emojis or raising their hands.
+
+* Calling on a hand raise is still available in the Host Panel, but can also now be done by clicking directly on the avatar or profile bubble of an attendee.
+
+    :::image type="content" source="media/Emoji-reactions-hand-raise-multi-room.png" alt-text="Screenshot of Mesh app showing attendees with profile bubbles reacting with emojis.":::
+
+#### Avatar emotes
+
+* Ready to dance in Mesh? Meet Avatar Emotes!
+
+    We are excited to announce the release of Avatar Emotes for the Mesh app and Immersive Meetings! This feature allows users to express their emotions and reactions through their avatars, making interactions more dynamic and engaging. 
+
+    **Key Features:**
+
+    *Expressive Animations:* Avatars can now perform a variety of emotes, including dancing, celebrating, and more.
+
+    *Real-Time Reactions:* Emotes are performed in real-time, enhancing the liveliness of virtual meetings and interactions.
+
+    :::image type="content" source="media/Basic-avatar-emotes-standalone.png" alt-text="Screenshot of basic avatar emotes in the Mesh application.":::
+
+    In addition to the basic Avatar reactions, you can select from a wide selection of more reactions, sorted into seven categories, including a category for ASL signs.
+
+    :::image type="content" source="media/Catalog-avatar-reactions-emotes-standalone.png" alt-text="Screenshot of avatar reactions catalog in standalone application for Mesh.":::
+
+
+ 
+#### Event customization
+
+* Text object is now available when customizing your event. Add text like any other object (Screenshare, Image, Video), move it around the environment, then edit its properties like text style, or size.
+
+    :::image type="content" source="media/Customization-editor-text.png" alt-text="Screenshot of customization session in the Mesh app showing the Text  object.":::
+
+#### Error messaging
+
+* Improved error messaging when a user joins an environment that is not compatible with their application version. In most cases, this is specific to when experimental features are in use.
+
+* Added a **Give feedback** button to error messages that may be hard to diagnose or don't have adequate resolution steps provided.
+
+* Improved error messaging should better inform the user as to why the error occurred.
+
+#### Resolved issues
+
+* Fixed issues that can prevent people from joining an event. (17412, 18048)
+
+* Fixed issue with error message being dismissible when joining events through a link. (18081)
+
+* Fixes to host panel and host user experience. (16512, 16397, 16874)
+
+* The loading background should now display when joining an event directly from Mesh on the web.
+(17420)
+
+
+## Version 5.2407.XX
+
+### What's new
+
+#### Text object added to event customization catalog
+
+* There's now a Text object available in the Catalog when customizing an event. The text object has a cou
+
+#### Endpoint and firewall requirements
+
+* Guidance for endpoints and firewall requirements has been improved to cover the base requirements and additional steps required for cloud scripting and shared content.
+
+    For more info, see the improved [endpoints and firewall configuration guidance](../Setup/Content/preparing-your-organization.md#work-with-your-organizations-security-team).
+
+* With this release, we are starting to transition multi room events in the Mesh app on PC and Quest to use the same backend infrastructure as Teams for spatial audio. This will result in improved audio quality and simplify the set of URL/port requirements needed to run events in Mesh once the rollout is complete later in July.
+
+    For more info, see [Endpoints and firewall configuration](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-configuration) in the Preparing your organization for Mesh article.
+
+### Resolved product issues
+
+* Fixed a keyboard navigation issue in the avatar customizer.
+
+* Fixed an issue where you might not always see your avatar's reaction after you click on a reaction button.
+
+## Version 5.2406.XX
 
 ### What's new
 
@@ -97,7 +192,7 @@ For more info, see [Audit logging in Mesh](../Setup/Content/audit-logging-in-mes
 
 ### Resolved product issues
 
-* In the previous release, there was requirement that single room and multi-room events required the same firewall and port configurations. This issue is resolved. Single room events now align to [the standard set by Microsoft Teams](/microsoft-365/enterprise/urls-and-ip-address-ranges), and Multi-room events still require additional ports, as noted in [Endpoints and firewall ports for immersive spaces in Mesh (Mesh app)](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
+* In the previous release, there was requirement that single room and multi-room events required the same firewall and port configurations. This issue is resolved. Single room events now align to [the standard set by Microsoft Teams](/microsoft-365/enterprise/urls-and-ip-address-ranges), and Multi-room events still require additional ports, as noted in [Endpoints and firewall ports for custom immersive spaces in Mesh](../Setup/Content/preparing-your-organization.md#work-with-your-organizations-security-team).
 
 * In the previous release, there was a slight latency in audio when joining an event. This has been resolved. (29657)
 
@@ -105,7 +200,7 @@ For more info, see [Audit logging in Mesh](../Setup/Content/audit-logging-in-mes
 
 ### What's new
 
-* [Updated firewall requirements](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app) for single room events in the Microsoft Mesh app.
+* [Updated firewall requirements](../Setup/Content/preparing-your-organization.md#work-with-your-organizations-security-team) for single room events in the Microsoft Mesh app.
 
 #### Accessibility features
 
@@ -173,7 +268,7 @@ The following product issues have been fixed for this release:
 
 ### Mesh on the web
 
-Mesh on the web is moving to cloud.microsoft with the [Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). Currently, we are providing two links for Mesh on the web to ensure a smooth transition. For the new [cloud.microsoft](https://mesh.cloud.microsoft) link, make sure you have allowed the proper endpoints. See [Preparing your organization](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app) for details.
+Mesh on the web is moving to cloud.microsoft with the [Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). Currently, we are providing two links for Mesh on the web to ensure a smooth transition. For the new [cloud.microsoft](https://mesh.cloud.microsoft) link, make sure you have allowed the proper endpoints. See [Preparing your organization](../Setup/Content/preparing-your-organization.md#work-with-your-organizations-security-team) for details.
 
 The Mesh on the web link is:
 
