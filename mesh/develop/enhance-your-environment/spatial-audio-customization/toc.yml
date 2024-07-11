@@ -5,7 +5,7 @@ items:
 - name: Spatial audio basic features
   href: spatial-audio-basic-features.md
   displayName: audio
-- name: Create audio zones and custom environment acoustics
+- name: Create Audio Zones and custom environment acoustics
   href: create-zones-and-environment-audio.md
   displayName: audio
 - name: Audio Zone Properties
