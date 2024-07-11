@@ -3,7 +3,7 @@ items:
   href: audio-customization-overview.md
   displayName: audio
 - name: Spatial audio basic features
-  href: mesh-audio-basic-features.md
+  href: spatial-audio-basic-features.md
   displayName: audio
 - name: Create audio zones and custom environment acoustics
   href: create-zones-and-environment-audio.md
@@ -12,7 +12,7 @@ items:
   href: audio-zone-properties.md
   displayName: audio
 - name: Spatial audio custom features
-  href: mesh-audio-custom-features.md
+  href: spatial-audio-custom-features.md
   displayName: audio
 - name: Test a Voice Setting
   href: test-a-voice-setting.md

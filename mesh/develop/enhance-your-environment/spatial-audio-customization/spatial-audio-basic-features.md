@@ -15,7 +15,7 @@ There are three different approaches to adding audio control to your environment
 
 [*Audio Zones*](./create-zones-and-environment-audio.md#create-an-audio-zone)  
 [*Acoustic Zones*](./create-zones-and-environment-audio.md#create-an-acoustic-zone)  
-[*Custom environment acoustics*](./create-zones-and-environment-audio.md#add-default-environment-acoustics)
+[*Custom environment acoustics*](./create-zones-and-environment-audio.md#choose-custom-environment-acoustics)
 
 To fully understand these, we recommend that you first learn about *Voice Settings*, *Voice Setting Collections*,  and *Filters*, explained below. You'll then be better equipped to choose and implement these various approaches.
 
