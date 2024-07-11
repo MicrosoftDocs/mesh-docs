@@ -19,9 +19,9 @@ Mesh is available for PC and Quest 2. The Mesh toolkit does *not* work on the Ma
 
 A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see the article named [Set up Microsoft Mesh](../../Setup/Content/setup-m365-mesh.md).
 
-## Unity version 2022.3.34
+## Unity version 2022.3.15
 
-- You must use Unity version 2022.3.34. [Get help installing Unity Template](https://docs.unity3d.com/hub/manual/InstallEditors.html)
+- You must use Unity version 2022.3.15. [Get help installing Unity Template](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 - Your installation should include modules for Android, Windows and *Windows Build Support IL2CPP*. 
 
 ![A screenshot of the required version of Unity.](../../media/get-started-developing-mesh/image002.png)
