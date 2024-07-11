@@ -15,6 +15,10 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.2408.XX (July 01, 2024)
 
+### Immersive spaces available on Mac
+
+As of July 8th, 2024, the View > Immersive space (3D) option is available in Teams desktop for Mac, removing the requirement to be a part of the Teams Preview Experience to access immersive spaces on Mac.
+
 ### Avatar emotes
 
 **Ready to dance in Mesh? Meet Avatar Emotes!**
