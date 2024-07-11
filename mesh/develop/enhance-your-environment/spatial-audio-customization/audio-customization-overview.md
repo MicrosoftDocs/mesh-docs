@@ -25,8 +25,8 @@ In a sense, this gives you audio "super powers; you can provide event attendees 
 
 There are three different approaches to adding audio control to your environment. From the most powerful to the least, these are:
 
-[*Audio Zones*](./create-zones-and-environment-audio.md#create-an-audio-zone)
-[*Acoustic Zones*](./create-zones-and-environment-audio.md#create-an-acoustic-zone) 
+[*Audio Zones*](./create-zones-and-environment-audio.md#create-an-audio-zone)  
+[*Acoustic Zones*](./create-zones-and-environment-audio.md#create-an-acoustic-zone)  
 [*Custom environment acoustics*](./create-zones-and-environment-audio.md#choose-custom-environment-acoustics)
 
 To fully understand these, we recommend that you first become familiar with three basic Mesh spatial audio features: [*Voice Settings*, *Voice Setting Collections*, and *Filters*](./spatial-audio-basic-features.md). You'll then be better equipped to choose and implement these various approaches.
