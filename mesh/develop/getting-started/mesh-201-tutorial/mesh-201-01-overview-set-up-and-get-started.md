@@ -4,7 +4,7 @@ description: Learn about the prerequsites, set up, and then get started with the
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/14/2024
+ms.date: 7/11/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web
 ---

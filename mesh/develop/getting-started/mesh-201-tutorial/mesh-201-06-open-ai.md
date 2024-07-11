@@ -4,7 +4,7 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/13/2024
+ms.date: 7/11/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
@@ -19,7 +19,7 @@ In order to complete this station, you'll need to visit the Azure Portal and the
 
 ### Create an Azure OpenAI resource
 
-1. In your browser, navigate to the [Azure Portal](https://azure.microsoft.com/en-us/get-started/azure-portal/) and then log in.
+1. In your browser, navigate to the [Azure Portal](https://azure.microsoft.com/get-started/azure-portal/) and then log in.
 1. In the Search box at the top of the window, type in "azure openai" and then press the Enter key. This takes you to the **Azure AI services | Azure OpenAI** page.
 
     ![__________________________________](../../../media/mesh-201/109-openai-page-in-azure-portal.png)
