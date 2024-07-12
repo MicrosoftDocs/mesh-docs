@@ -50,26 +50,6 @@ Microsoft Mesh application
 
     :::image type="content" source="media/Emoji-reactions-hand-raise-multi-room.png" alt-text="Screenshot of Mesh app showing attendees with profile bubbles reacting with emojis.":::
 
-#### Avatar emotes
-
-* Ready to dance in Mesh? Meet Avatar Emotes!
-
-    We are excited to announce the release of Avatar Emotes for the Mesh app and Immersive Meetings! This feature allows users to express their emotions and reactions through their avatars, making interactions more dynamic and engaging. 
-
-    **Key Features:**
-
-    *Expressive Animations:* Avatars can now perform a variety of emotes, including dancing, celebrating, and more.
-
-    *Real-Time Reactions:* Emotes are performed in real-time, enhancing the liveliness of virtual meetings and interactions.
-
-    :::image type="content" source="media/Basic-avatar-emotes-standalone.png" alt-text="Screenshot of basic avatar emotes in the Mesh application.":::
-
-    In addition to the basic Avatar reactions, you can select from a wide selection of more reactions, sorted into seven categories, including a category for ASL signs.
-
-    :::image type="content" source="media/Catalog-avatar-reactions-emotes-standalone.png" alt-text="Screenshot of avatar reactions catalog in standalone application for Mesh.":::
-
-
- 
 #### Event customization
 
 * Text object is now available when customizing your event. Add text like any other object (Screenshare, Image, Video), move it around the environment, then edit its properties like text style, or size.
