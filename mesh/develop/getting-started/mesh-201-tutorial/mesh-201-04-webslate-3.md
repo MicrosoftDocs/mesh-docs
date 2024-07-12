@@ -4,7 +4,7 @@ description: Learn how to load a URL from a 3D asset.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 5/31/2024
+ms.date: 7/11/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
 ---
