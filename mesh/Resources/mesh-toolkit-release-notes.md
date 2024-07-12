@@ -54,6 +54,8 @@ When creating events in Mesh on the web, if a user tries to make an event an env
 
 * **Audio Zone Object** component prefab is now available in this release. Once placed in a scene and configured, it will show up as an object in the Control Panel and be controllable by a host in an event.
 
+    :::image type="content" source="media/076-audio-zones-overhead-view.png" alt-text="Screenshot of an environment in Mesh showing audio zones highlighted.":::
+
     For more information on the Audio Zone Object, see [Developer article]().
 
 #### Mesh Toolkit Uploader
