@@ -95,7 +95,7 @@ Lower your hand to finish answering your question and speaking to the whole even
 In the app bar, you can trigger **Reactions**, that cause your avatar to
 react with body gestures as well as emotes.
 
-:::image type="content" source="../Resources/media/Basic-avatar-emotes-standalone.png" alt-text="Screenshot of Avatar reactions in the Mesh application.":::
+:::image type="content" source="media/emote-menu.png" alt-text="Screenshot of the emote menu in the Mesh application showing hte available emotes.":::
 
 ### Profile
 
