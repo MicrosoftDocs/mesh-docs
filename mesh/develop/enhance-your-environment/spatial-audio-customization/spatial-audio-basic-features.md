@@ -4,7 +4,7 @@ description: Learn about three basic features that are essential to creating spa
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/10/2024
+ms.date: 7/12/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, spatial audio, spatialization, voices, 3D audio, surround sound
 ---

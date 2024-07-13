@@ -4,7 +4,7 @@ description: Learn how to add custom spatial audio zones or change the default a
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/10/2024
+ms.date: 7/12/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, spatial audio, spatialization, voices, 3D audio, surround sound, acoustics
 ---
@@ -17,14 +17,23 @@ To create an Audio Zone, you add the *Audio Zone* component to a room or space i
 
 ![______](../../../media/enhance-your-environment/audio-zones/067-audio-zone-component.png)
 
-1. Add an empty GameObject to the scene and select it.
+1. Add an empty GameObject to the scene and then rename it something appropriate. For this example, we'll use the name "Room 1".
+1. Add an empty child GameObject to Room 1 and then rename it "Room 1 Audio Zone".
+
+    **Important**: No two GameObjects with Audio Zones attached can have the same name.
+
 1. In the **Inspector**, click the **Add Component** button and then search for and add the "Audio Zone" component.
 
     ![______](../../../media/enhance-your-environment/audio-zones/032-add-audio-zone-component.png)
 
 1. Click the **Add Component** button again and then add the collider that comes closest to the shape of the Audio Zone you have in mind. For example, for a rectangular room, your best choice is probably the "Box Collider".
-1. If needed, in the **Box Collider** component, click the **Edit Collider** button and then adjust the shape of the Collider.
-1. In the **AudioZone** component, specify the property settings you want.
+1. If needed, in the **Box Collider** component, click the **Edit Collider** button and then adjust the shape of the Collider to conform to the dimensions of the room.
+1. In the **AudioZone** component, click the button in the **Voices** property and then choose a Voice Setting Collection. You can also drag a Voice Setting Collection from the **Project** window and drop it in this field.
+
+    **Note**: Choosing a Voice Setting Collection here is optional. If you want to use the Voice Setting Collection assigned to the environment or to other Audio Zones or Acoustic Zones that overlap with this Audio Zone, you can leave this setting at "None".
+    
+1. Click the [**Default Voice Selection**](./audio-zone-properties.md#default-voice-selection) drop-down and then choose one of the options in the menu.
+1. The **Trigger Collider** property contains the GameObject that has an attached Trigger Collider that defines the boundary of the Audio Zone. In most cases, this will be the GameObject the Audio Zone component is attached to.
 
 [Learn about Audio Zone properties](./audio-zone-properties.md)
 
@@ -32,25 +41,40 @@ To create an Audio Zone, you add the *Audio Zone* component to a room or space i
 
 ### Create an Acoustic Zone
 
-An Acoustic Zone comes in the form of a prefab; you can think of it as a simplied Audio Zone. You get the trigger collider and default Voice Setting and Voice Collection choices, but not the more extensive customization properties found in Audio Zones.
+Like with Audio Zones, you can add a component to a room or space in your environment that you want to have customized spatial audio settings (in this case, the component is called "Environment Acoustic Zone"). However, an Acoustic Zone is simpler than an Audio Zone; with the Environment Acoustic Zone component, you get the trigger collider and Voice Collection options, but no default Voice Setting and none of the additional customization properties.
+
+![______](../../../media/enhance-your-environment/audio-zones/086-env-acoustic-zone.png)
+
+1. Create an environment that will act as a large conference hall.
+1. Add a Cube to the scene and then rename it something appropriate. For this example, we'll rename it "Room 2".
+1. Add an empty child GameObject to Room 2 and then rename it "Room 2 Acoustic Zone".
+1. In the **Inspector**, click the **Add Component** button and then search for and add the "Environment Acoustic Zone" component.
+
+    ![______](../../../media/enhance-your-environment/audio-zones/032-add-audio-zone-component.png)
+
+1. Click the **Add Component** button again and then add the collider that comes closest to the shape of the Acoustic Zone you have in mind. For example, for a rectangular room, your best choice is probably the "Box Collider".
+1. If needed, in the **Box Collider** component, click the **Edit Collider** button and then adjust the shape of the Collider to conform to the dimensions of the room.
+1. In the **Environment Acoustic Zone** component, specify the settings you want. You can choose a default [Voice Collection](./spatial-audio-basic-features.md#voice-settings-collection) that gives the Zone a range of Voice Settings to choose from, depending on changing circumstances.
+
+    **Note**: Choosing a Voice Setting Collection here is optional. If you want to use the Voice Setting Collection assigned to the environment or to other Audio Zones or Acoustic Zones that overlap with this Acoustic Zone, you can leave this setting at "None".
+    
+1. The **Trigger Collider** property contains the GameObject that has an attached Trigger Collider that defines the boundary of the Acoustic Zone. In most cases, this will be the GameObject the Acoustic Zone component is attached to.
+
+### Acoustic Zone prefabs
+
+The Audio Zone package comes with two Acoustic Zone prefabs: *CircularAcousticZone* and *RectangularAcousticZone*. You can simply drag one of these into your scene to create an Acoustic Zone; each one comes with the Environment Acoustic Zone script and a trigger collider already attached. 
 
  ![______](../../../media/enhance-your-environment/audio-zones/030-acoustic-zones.png)
 
-An Acoustic Zone prefab comes with the *Environment Acoustic Zone* script.
-
- ![______](../../../media/enhance-your-environment/audio-zones/031-env-acoustic-zone-script.png)
-
 1. Create an environment that will act as a large conference hall.
-1. Add a Cube to the scene and then rename it "Meeting Room".
-1. Adjust the dimensions of **Meeting Room** to give it a rectangular shape at the scale you want.
-1. Drag the **RectangularAcousticZone** prefab from the **VoiceSettingCollection** folder and then drop it on the **Meeting Room** GameObject in the scene, making it a child to **Meeting Room**.
-
-    ![______](../../../media/enhance-your-environment/audio-zones/063-add-rect-acoustic-zone.png)
-
-1. In the **Inspector**, edit the **Box Collider** for the **RectangularAcousticZone** prefab to have the same size and location as the **Meeting Zone** GameObject.
+1. Add a Cube to the scene and then rename it something appropriate. For this example, we'll rename it "Room 3".
+1. Drag the **CircularAcousticZone** or **RectangularAcousticZone** prefab from the **VoiceSettingCollection** folder and then drop it on the **Room 3** GameObject in the **Hierarchy**, making it a child to **Room 3**.
+1. In the **Inspector**, edit the **Box Collider** for the **RectangularAcousticZone** prefab to have the same size and location as the **Room 3** GameObject.
 1. Follow the instructions in the **Description** for the prefab to choose a Voice Collection in the **Voices** property (we recommend that you drag the Voice Collection from the **Project** window). 
 
     ![______](../../../media/enhance-your-environment/audio-zones/064-prefab-description.png)
+
+    **Note**: Choosing a Voice Setting Collection here is optional. If you want to use the Voice Setting Collection assigned to the environment or to other Audio Zones or Acoustic Zones that overlap with this Acoustic Zone, you can leave this setting at "None".
 
 1. If desired, rename the prefab so its name is more descriptive.
 
