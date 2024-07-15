@@ -17,7 +17,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ### Immersive spaces available on Mac
 
-As of July 8th, 2024, the View > Immersive space (3D) option is available in Teams desktop for Mac, removing the requirement to be a part of the Teams Preview Experience to access immersive spaces on Mac.
+As of July 8th, 2024, the **View** > **Immersive space (3D)** option is available in Teams desktop for Mac, removing the requirement to be a part of the Teams Preview Experience to access immersive spaces on Mac.
 
 ### Resolved issues
 
