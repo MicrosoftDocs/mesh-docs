@@ -98,7 +98,7 @@ As mentioned earlier, you can apply a Voice Setting Collection to an Audio Zone 
 
 Why would you need this many Voice Setting options for one Audio Zone? Different circumstances, and different Objects in the Audio Zone, may require different audio qualities.
 
-You can set a default Voice Setting f or an Audio Zone in the *Audio Zone* component. Let's say you apply an Audio Zone to a specific room in your experience and you want voices outside of the room to sound audible but muffled to anyone inside the room. For **Default Voice Selection*, we'll choose "Muffled".
+You can set a default Voice Setting for an Audio Zone in the *Audio Zone* component. Let's say you apply an Audio Zone to a specific room in your experience and you want voices outside of the room to sound audible but muffled to anyone inside the room. For **Default Voice Selection*, we'll choose "Muffled".
 
 ![______](../../../media/enhance-your-environment/audio-zones/038-muffled.png)
 
@@ -106,17 +106,21 @@ However, if someone in the event turns on the Megaphone, we don't want attendees
 
 ![______](../../../media/enhance-your-environment/audio-zones/039-megaphone.png)
 
-Also, let's say you have a Media Player Object in the Audio Zone. This Object requires different sound settings than the ones supplied by the default Voice Setting for the Zone. When the Player is turned on, the "Media" Voice Setting becomes the active setting for the Zone.
+Also, let's say you have a Media Player Object in the Audio Zone. This Object requires different sound settings than the ones supplied by the default Voice Setting for the Zone. When the Player is turned on, the "Media" Voice Setting, which is available in the chosen Voice Collection, becomes the active setting for the Zone.
 
 ![______](../../../media/enhance-your-environment/audio-zones/040-media.png)
 
-What makes this happen? Each Voice Setting has a **Uses** property. The Collection attached to the Audio Zone contains a Voice Setting named *Media*. The "Uses" property for this Voice Setting is set to "Media".
+How is this Voice Setting chosen? The Audio Zone searches for a Voice Setting in its Voice Collection, if one is assigned, or in the Voice Collection for the environment, that has its **Uses** property set to "Media." In this example, that's the "Media" Voice Setting, so the Audio Zone assigns that Voice Setting to all Media-type Spatializers in the Zone that are configured to get their Voice Setting from the environment.
 
 ![______](../../../media/enhance-your-environment/audio-zones/041-uses.png)
 
-This property tells the Audio Zone to detect if a Media Player in the Zone gets turned on. If it does, the Zone switches to the "Media" Voice Setting.
+**Note**: You can have multiple spatializers (in other words, sound sources) inside an Audio Zone at the same time that are each assigned a different Voice Setting. For example:
 
-In addition to the *Uses* property, a Voice Setting has the *VoiceSetting* script attached, a couple of control settings (*Spread* and *Spatial Blend*), and one or more *filters*.
+1. A regular Avatar could have the Voice Setting that has its **Uses** property set to 'Natural'.
+1. A Megaphoned Avatar could have the Voice Setting that has its **Uses** property set to 'Megaphone'.
+1. A Media Object could have the the Voice Setting that has its **Uses** property set to 'Media'.
+
+In addition to the *Uses* property, a Voice Setting has a couple of control settings (*Spread* and *Spatial Blend*), and one or more *filters*.
 
 ## Common Audio Zone use cases
 
@@ -137,6 +141,8 @@ In this example, our environment is a large conference hall. We want to add a sm
 1. Choose a collection: in the **Project** window, navigate to the Voice Collection you want, and then drag it to the **Voices** field in the **Inspector.
 
     ![______](../../../media/enhance-your-environment/audio-zones/083-voices.png)
+
+    **Note**: Choosing a Voice Setting Collection here is optional. If you want to use the Voice Setting Collection assigned to the environment or to other Audio Zones or Acoustic Zones that overlap with this Audio Zone, you can leave this setting at "None".
 
 1. We want attendees in the room to hear if something is going on outside the room, but at a low volume. To make this happen, select **Muffle Voices Outside**. The Voice Setting Collection selected for this Audio Zone contains a "Muffled Voice" Voice Setting that makes this happen.
 

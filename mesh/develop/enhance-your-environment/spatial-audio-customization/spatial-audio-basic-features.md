@@ -21,11 +21,11 @@ To fully understand these, we recommend that you first learn about *Voice Settin
 
 ### Voice Setting
 
-You can think of a Voice setting as "the thing you apply to a sound to give it the qualities you want." The Voice Setting prefabs are located in the *VoiceSetting* folder.
+You can think of a Voice setting as "the thing you apply to a sound to give it the qualities you want." Voice Settings are [ScriptableObjects](https://docs.unity3d.com/Manual/class-ScriptableObject.html) and are located in the *VoiceSetting* folder.
 
 ![______](../../../media/enhance-your-environment/audio-zones/036-voices.png)
 
-A Voice Setting has the *VoiceSetting* script attached and is made up of several properties and one or more [*filters*](#filters).
+A Voice Setting ScriptableObject is defined by the VoiceSetting.cs script. It's made up of several properties and one or more [*filters*](#filters).
 
 ![______](../../../media/enhance-your-environment/audio-zones/078-voice-setting.png)
 
@@ -33,7 +33,7 @@ A Voice Setting can be applied to a Zone in several ways; you can choose it expl
 
 ### Voice Settings Collection
 
-As the name implies, a Voice Setting Collection is a collection of Voice Settings. The purpose of a Voice Collection is to make the voices it contains available for use for Audio Zones, Acoustic Zones, or Custom Environment Acoustics.
+As the name implies, a Voice Setting Collection is a collection of Voice Settings. It's a [ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html), and its purpose is to make the voices it contains available for use for Audio Zones, Acoustic Zones, or Custom Environment Acoustics.
 
 The Voice Setting Collections are located in the **VoiceSettingCollection** folder.
 
@@ -62,8 +62,6 @@ There are four filter scripts and a variety of filter prefabs. Each prefab has a
 In each Volume Filter, you not only get a **Distance Curve** for attenuation (the sound volume decreases based on the attendee's distance from the sound source), you also get an **Angle  Curve** (the sound volume decreases based on the angle of the attendee's head relative to the sound source). For example, if you want something to sound much quieter when it's behind the attendee's head, you can control this by adjusting the Angle Curve.
 
 ![______](../../../media/enhance-your-environment/audio-zones/029-angle-curve.png)
-
-**Tip**: Voice Settings and Voice Setting Collections are [*Scriptable Objects*](https://docs.unity3d.com/Manual/class-ScriptableObject.html).
 
 **Note**: You get a lot more control over audio with the [Voice Setting properties](./audio-zone-properties.md) than by using Unity Spatial Audio source.
 
