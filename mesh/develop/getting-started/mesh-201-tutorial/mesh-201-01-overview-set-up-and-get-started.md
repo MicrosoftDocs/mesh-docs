@@ -85,9 +85,7 @@ At the end of this tutorial, you have the option to build and publish the comple
 
 You'll need to use the Azure Portal in order to set up OpenAI in Chapter 6.
 
-## Azure OpenAI registration
-
-OpenAI, which you'll use in Chapter 6, is currently only available to approved enterprise customers and partners. If you're not yet in this group, you must submit a [registration form](https://aka.ms/oai/access). [Learn more about the registration process](/legal/cognitive-services/openai/limited-access).
+**Important**: OpenAI is only available to approved enterprise customers and partners. If you're not yet in this group, you must submit a [registration form](https://aka.ms/oai/access). [Learn more about the registration process](/legal/cognitive-services/openai/limited-access).
 
 ## Set things up for Mesh
 
