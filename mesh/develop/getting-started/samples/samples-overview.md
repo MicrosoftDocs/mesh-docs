@@ -3,7 +3,7 @@ title: Mesh Samples overview
 description: Read an overview of the Mesh sample Unity projects available in the Mesh toolkit.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 4/15/2024
+ms.date: 7/16/2024
 ms.topic: overview
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, toolkit, Mesh toolkit
@@ -28,7 +28,9 @@ Studying the Mesh sample projects will help you learn about the following:
 
 ## About the sample projects
 
-- **Mesh 101**: Mesh 101 is a tutorial, but it also doubles as a sample. In the project, you can open the *StartingPoint* scene and begin walking through the tutorial. However, the project contains another scene named *FinishedProject* which is a completed version of the tutorial. You can view this scene as a sample and use it as starting point for your project just as you would with any of the other samples. [Get started with the Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md).
+- **Mesh 101**: Mesh 101 is a tutorial, but it also doubles as a sample. The tutorial part teaches you how to set up an educational experience about wind farms using Mesh Interactables, physics, scripting and more. In the project, you can open the *StartingPoint* scene and begin walking through the tutorial. However, the project contains another scene named *FinishedProject* which is a completed version of the tutorial. You can view this scene as a sample and use it as starting point for your project just as you would with any of the other samples. [Get started with the Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md).
+
+- **Mesh 201**: Continuing with the wind farm theme of *Mesh 101*, this tutorial/sample takes your Mesh knowledge to the next level. You'll learn how to use WebSlates to display web content and add an interactive globe that, when clicked, gets data from Bing Maps and displays it in your environment. You'll also use Mesh Cloud Scripting to download and display real-time weather data in 3D and you'll set up an OpenAI chatbot which attendees can use to ask questions about wind farms. [Get started with the Mesh 201 tutorial](../mesh-201-tutorial/mesh-201-01-overview-set-up-and-get-started.md).
 
 - **Toybox**: A project that showcases a number of useful Mesh features: assets, shaders, visual scripting, animations, VFX, and SoundFX. [Learn more about the Toybox sample](toybox.md).
 
