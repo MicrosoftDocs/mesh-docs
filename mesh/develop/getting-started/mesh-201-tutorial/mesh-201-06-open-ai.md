@@ -30,8 +30,8 @@ In order to complete this station, you'll need to visit the Azure Portal and the
 
     ![__________________________________](../../../media/mesh-201/110-create-button.png)
 
-**IMPORTANT**: For many of the settings detailed below, we don't make a specific recommendation. You should choose the options that make the most sense for you and your organization. 
-
+    **IMPORTANT**: For many of the settings detailed below, we don't make a specific recommendation. You should choose the options that make the most sense for you and your organization. 
+    
 1. On the **Basics page**, create names where requested, and choose the options you want for **Subscription**, **Region**, and **Pricing tier**.
 
 1. On the **Network** page, choose the option you want.
@@ -74,7 +74,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
     ![__________________________________](../../../media/mesh-201/117-keys-and-endpoints.png)
 
-1. On the **Keys and Endpoint** page, click the "Copy to clipboard" button for **KEY 1** *or* *KEY 2** (it doesn't matter which one) and then paste it into a text file using Windows Notepad or another text editor.
+1. On the **Keys and Endpoint** page, click the "Copy to clipboard" button for **KEY 1** *or* **KEY 2** (it doesn't matter which one) and then paste it into a text file using Windows Notepad or another text editor.
 
     ![__________________________________](../../../media/mesh-201/118-copy-key-and-endpoint.png)
 
