@@ -4,7 +4,7 @@ description: Learn about three basic features that are essential to creating spa
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/12/2024
+ms.date: 7/22/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, spatial audio, spatialization, voices, 3D audio, surround sound
 ---
@@ -29,11 +29,11 @@ A Voice Setting ScriptableObject is defined by the VoiceSetting.cs script. It's 
 
 ![______](../../../media/enhance-your-environment/audio-zones/078-voice-setting.png)
 
-A Voice Setting can be applied to a Zone in several ways; you can choose it explicitly as the default VoiceSetting for the Zone, or it can be chosen automatically from a collection of Voice Settings if the Zone determines that it's the most appropriate VoiceSetting for a given circumstance.
+Voice Settings are contained in Voice Setting Collections. Each Audio Zone has a Voice Collection attached; the Zone determines the best Voice Setting for a given use and looks for that Voice Setting in the Collection attached to it.
 
 ### Voice Settings Collection
 
-As the name implies, a Voice Setting Collection is a collection of Voice Settings. It's a [ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html), and its purpose is to make the voices it contains available for use for Audio Zones, Acoustic Zones, or Custom Environment Acoustics.
+As the name implies, a Voice Setting Collection is a collection of Voice Settings. It's a [ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html), and its purpose is to make the voices it contains available for use for Audio Zones, Acoustic Zones, or Custom Environment Acoustics. 
 
 The Voice Setting Collections are located in the **VoiceSettingCollection** folder.
 
@@ -43,17 +43,19 @@ The only VoiceCollection in the folder currently is *DefaultVoices*. It contains
 
 ![______](../../../media/enhance-your-environment/audio-zones/080-voices.png)
 
+As mentioned earlier, each Audio Zone has a Voice Setting Collection attached, and the Zone determines the best Voice Setting for a given use and looks for that Voice Setting in the Collection attached to it. Note, however, that a Collection doesn't need to cover all possible uses. If a Voice Setting for a particular use can't be found in the Voice Collection attached to the Zone, an appropriate Voice Setting will be picked up from other another Audio Zone or from the environment. This is especially relevant if, for example, you only want to customize the Media voice in a given Audio Zone and leave the avatar voices free to be specified by the environment. In this case, you can assign the Audio Zone a Voice Setting Collection that contains a single Voice Setting that has the 'Media' use set on it.
+
 ### Filters
 
 *Filters* are found in the **Filters** folder.
 
 ![______](../../../media/enhance-your-environment/audio-zones/081-filters.png)
 
-You can think of filters as the lowest level unit that affects the sound. Filters are typically added to a *Voice Setting* prefab; they play an important role in determining how that prefab shapes the sound. 
+You can think of filters as the lowest level unit that affects the sound. Filters are typically added to a *Voice Setting* ScriptableObject; they play an important role in determining how that Voice Setting shapes the sound. 
 
 ![______](../../../media/enhance-your-environment/audio-zones/082-filters.png)
 
-There are four filter scripts and a variety of filter prefabs. Each prefab has a filter script attached and some control settings that are unique to the sound element being controlled. For example, the *LowAttenuationReverbFilter* has the *ReverbFilter* script attached plus controls for the amount of reverb, the amount of time it takes for the reverb to fade out, and more.
+There are four filter scripts and a variety of filter ScriptableObjects. Each instance of a ScriptableObject has a filter script attached and some control settings that are unique to the sound element being controlled. For example, the *LowAttenuationReverbFilter* has the *ReverbFilter* script attached plus controls for the amount of reverb, the amount of time it takes for the reverb to fade out, and more.
 
 ![______](../../../media/enhance-your-environment/audio-zones/044-low-atten-reverb-filter.png)
 
@@ -63,7 +65,7 @@ In each Volume Filter, you not only get a **Distance Curve** for attenuation (th
 
 ![______](../../../media/enhance-your-environment/audio-zones/029-angle-curve.png)
 
-**Note**: You get a lot more control over audio with the [Voice Setting properties](./audio-zone-properties.md) than by using Unity Spatial Audio source.
+**Note**: You get a lot more control over audio with the [Audio Zone properties](./audio-zone-properties.md) than by using Unity Spatial Audio source.
 
 ## Next steps
 

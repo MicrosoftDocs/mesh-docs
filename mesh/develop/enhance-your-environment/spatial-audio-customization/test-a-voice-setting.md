@@ -4,7 +4,7 @@ description: Learn how to add custom spatial audio spaces to your Mesh environme
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/10/2024
+ms.date: 7/22/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, spatial audio, spatialization, voices, 3D audio, surround sound, acoustics
 ---

@@ -4,7 +4,7 @@ description: Learn about creating your own custom versions of the basic spatial 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/10/2024
+ms.date: 7/22/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, spatial audio, spatialization, voices, 3D audio, surround sound
 ---
@@ -33,26 +33,26 @@ The three core components, or what we call "features", for Mesh custom spatial a
     ![______](../../../media/enhance-your-environment/audio-zones/047-lock-button.png)
 
 1. In the first **Project** window, navigate to the **Packages** > **Microsoft Mesh Audio Zones** > **VoiceSettingCollection** folder and then expand it.
-1. Drag the **DefaultVoices** Voice Setting Collection prefab from Project window #1 and then drop it on the **My Voice Collections** folder in Project window #2.
+1. Drag the **DefaultVoices** Voice Setting Collection ScriptableObject from Project window #1 and then drop it on the **My Voice Collections** folder in Project window #2.
 
     ![______](../../../media/enhance-your-environment/audio-zones/048-default-voices.png)
 
-1. Rename the prefab to "MyDefaultVoices".
+1. Rename the ScriptableObject to "MyDefaultVoices".
 
 ## Create a new custom Voice Setting
 
 We don't want to use any of the existing Voice Settings in this Collection so we'll make a new Voice Setting and then add it to the Collection.
 
 1. In Project window #1, navigate to the **Packages** > **Microsoft Mesh Audio Zones** > **VoiceSetting** folder and then expand it.
-1. Drag the **LowAttenuation** Voice Setting prefab from Project window #1 and then drop it on the **My Voice Settings** folder in Project window #2.
+1. Drag the **LowAttenuation** Voice Setting ScriptableObject from Project window #1 and then drop it on the **My Voice Settings** folder in Project window #2.
 
     ![______](../../../media/enhance-your-environment/audio-zones/049-voice-setting-copied.png)
 
-1. Rename the prefab to "MyLowAttenuation".
+1. Rename the ScriptableObject to "MyLowAttenuation".
 
-    We don't want the Reverb filter that's include with this prefab, so let's delete it. 
+    We don't want the Reverb filter that's include with this ScriptableObject, so let's delete it. 
 
-1. In Project window #2, ensure that the "MyLowAttenuation" prefab is selected.
+1. In Project window #2, ensure that the "MyLowAttenuation" ScriptableObject is selected.
 1. In the **Inspector**, select **Element 2**, which contains the filter named "LowAttenuationReverbFilter", and then click the "-" button to delete it.
 
     ![______](../../../media/enhance-your-environment/audio-zones/050-delete-reverb-filter.png)
@@ -62,12 +62,12 @@ We don't want to use any of the existing Voice Settings in this Collection so we
 We'll add a new Reverb filter with settings more in line with our needs.
 
 1. In the first **Project** window, navigate to the **Packages** > **Microsoft Mesh Audio Zones** > **Filters** folder and then expand it.
-1. Drag the **NaturalReverbFilter** Filter prefab from Project window #1 and then drop it on the **My Filters** folder in Project window #2.
+1. Drag the **NaturalReverbFilter** Filter ScriptableObject from Project window #1 and then drop it on the **My Filters** folder in Project window #2.
 
     ![______](../../../media/enhance-your-environment/audio-zones/051-copy-reverb-filter.png)
 
-1. Rename the prefab to "MyNaturalReverbFilter".
-1. Select this prefab, and then, in the **Inspector**, adjust any of the properties or curves needed to create the reverb you want. You can also change the **Description**.
+1. Rename the ScriptableObject to "MyNaturalReverbFilter".
+1. Select this ScriptableObject, and then, in the **Inspector**, adjust any of the properties or curves needed to create the reverb you want. You can also change the **Description**.
 
     ![______](../../../media/enhance-your-environment/audio-zones/052-my-reverb-filter-updates.png)
 
@@ -77,7 +77,7 @@ We'll add a new Reverb filter with settings more in line with our needs.
 
 ## Add the new reverb filter to the new Voice Setting
 
-1. In Project window #2, select the **MyLowAttenuation** prefab.
+1. In Project window #2, select the **MyLowAttenuation** ScriptableObject.
 1. In the **Inspector** in the **Filters** section, click the "+" button.
 1. Click the round button in the newly added Element, and then, in the **Select Voice Filter** window, select **MyNaturalReverbFilter**.
 
@@ -85,7 +85,7 @@ We'll add a new Reverb filter with settings more in line with our needs.
 
 ## Add the new Voice Setting to the new Voice Setting Collection
 
-1. In Project window #2, select the **MyDefaultVoices** prefab.
+1. In Project window #2, select the **MyDefaultVoices** ScriptableObject.
 1. In the **Inspector** in the **Voices** section, click the "+" button.
 1. Drag **MyLowAttenuation** from the **Project** window and then drop it in the Element you just added to the **My Default Voices** Voice Collection.
 

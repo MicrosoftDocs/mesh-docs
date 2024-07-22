@@ -4,7 +4,7 @@ description: Learn how to add custom spatial audio zones or change the default a
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/12/2024
+ms.date: 7/22/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, spatial audio, spatialization, voices, 3D audio, surround sound, acoustics
 ---
@@ -96,11 +96,13 @@ The Mesh app comes with its own default Voice Collection that provides the acous
 
 As mentioned earlier, you can apply a Voice Setting Collection to an Audio Zone or Acoustic Zone or choose it to override the default Mesh app acoustics, and the Collection can contain a variety of Voice Settings (the *DefaultVoices* Collection has seven). In this section, we'll assume you're working with an Audio Zone.
 
-Why would you need this many Voice Setting options for one Audio Zone? Different circumstances, and different Objects in the Audio Zone, may require different audio qualities.
+Why would you need this many Voice Setting options for one Audio Zone? Different circumstances, and different Objects in the Audio Zone, may require different audio qualities. Let's say you apply an Audio Zone to a specific room in your experience and you want voices outside of the room to sound audible but muffled to anyone inside the room. In the **Audio Zone** component, you would select the **Muffle Voices Outside** property.
 
-You can set a default Voice Setting for an Audio Zone in the *Audio Zone* component. Let's say you apply an Audio Zone to a specific room in your experience and you want voices outside of the room to sound audible but muffled to anyone inside the room. For **Default Voice Selection*, we'll choose "Muffled".
+![______](../../../media/enhance-your-environment/audio-zones/088-muffle-voices-outside.png)
 
-![______](../../../media/enhance-your-environment/audio-zones/038-muffled.png)
+The Audio Zone would find a Voice Setting that has its **Uses** field set to "Muffled" and assign that Voice Setting to everyone outside the Zone.
+
+![______](../../../media/enhance-your-environment/audio-zones/089-uses-muffled.png)
 
 However, if someone in the event turns on the Megaphone, we don't want attendees in our Audio Zone to hear their  voice as sounding muffled; we want it heard clearly. Since we have the "Megaphone" Voice Setting in the Collection that's chosen for our Audio Zone, the Zone switches to that Voice Setting if the Megaphone is turned on.
 

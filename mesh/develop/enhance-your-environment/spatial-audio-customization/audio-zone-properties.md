@@ -4,7 +4,7 @@ description: Learn about the properties that help you customize a Mesh Audio Zon
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/12/2024
+ms.date: 7/22/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Mesh, audio, sound, audio zones, spatial audio, spatialization, voices, 3D audio, surround sound, acoustics
 ---
@@ -17,7 +17,9 @@ When you [create an Audio Zone in your environment](./create-zones-and-environme
 
 ### Trigger Collider 
 
-This property contains the GameObject that has an attached Trigger Collider that defines the boundary of the Audio Zone. In most cases, this will be the GameObject the Audio Zone component is attached to. You can set this by dragging the GameObject from the **Hierarchy** and dropping it onto the **Trigger Collider** property, or clicking the round button in the property and then selected a GameObject in the **Select Collider** window.
+This property contains the GameObject that has an attached Trigger Collider that defines the boundary of the Audio Zone. In most cases, this will be the GameObject the Audio Zone component is attached to. You can set this by dragging the GameObject from the **Hierarchy** and dropping it onto the **Trigger Collider** property, or clicking the round button in the property and then selecting a GameObject in the **Select Collider** window. In the Collider, the **Is Trigger** property must be selected.
+
+![______](../../../media/enhance-your-environment/audio-zones/087-is-trigger.png)
 
 ### State
 
@@ -60,7 +62,7 @@ Allows attendees inside the Audio Zone to hear voices outside the Zone and appli
 
 ![______](../../../media/enhance-your-environment/audio-zones/060-muffled.png)
 
-Much of the "muffled" effect from this voice is due to the strong influence of the [Low Pass Filter](https://docs.unity3d.com/Manual/class-AudioLowPassFilter.html).
+Much of the "muffled" effect from this voice is due to the strong influence of the distance-based [Low Pass Filter](https://docs.unity3d.com/Manual/class-AudioLowPassFilter.html).
 
  ![______](../../../media/enhance-your-environment/audio-zones/061-muffled-low-pass-filter.png)
 
