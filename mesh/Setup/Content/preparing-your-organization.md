@@ -213,6 +213,12 @@ As with all Microsoft products, allowing the endpoints and ports required for Me
 
 ### Conditional Access & Quest
 
+> [!NOTE]
+> Conditional Access policies should be modified only by someone in your organization with a clear understanding of the implications of the changes. Consult your security team or other expert in your company security policies before making any changes.
+
+> [!NOTE]
+> Mesh does not currently support Mobile Application Management (MAM) which would be needed in situations where your organization supports the use of Personal Quest devices (BYOD).
+
 Conditional access is an important part of a zero-trust approach to helping secure your network and resources. As part of zero trust, many companies use conditional access features policies with Microsoft Entra and Microsoft Intune to restrict the types of devices that are permitted to access company resources, and even the operating system version and configuration on those devices; devices that meet the defined profile are allowed in, and any other device that is not specified is denied access. Meta has released a beta GA version MDM support for Quest that works with Intune. Each company using Mesh in pre-release will have to work with their security and endpoint management teams to decide if a policy can be constructed that is acceptable to the company's risk profile while still permitting access to Quest devices.
 
 There is one solution currently: In order to access Mesh on Quest with conditional access policies that may block Mesh on Quest, the solution is to create a custom conditional access policy in Microsoft Entra to exclude Microsoft Mesh Services and Office 365.

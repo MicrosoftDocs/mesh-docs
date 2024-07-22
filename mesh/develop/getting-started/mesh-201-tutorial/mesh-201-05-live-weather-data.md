@@ -4,7 +4,7 @@ description: Learn how to set up an interactive globe you can click to get live 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/3/2024
+ms.date: 7/11/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting
 ---
@@ -57,7 +57,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     ![__________________________________](../../../media/mesh-201/076-cs-component.png)
 
-    Any GameObject that you intend to be under the control of cloud scripting must be added as a child to the **Mesh Cloud Scripting** GameObject.
+    Any GameObject that you intend to have under the control of cloud scripting must be added as a child to the **Mesh Cloud Scripting** GameObject.
 
 ## Add the prefab for Station 4
 
@@ -65,16 +65,22 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     ![__________________________________](../../../media/mesh-201/077-drag-prefabs.png)
 
-    This prefab provides the text information box and a nested prefab named **Earth** that's the model for the globe.
+    This prefab provides the text information box and a nested prefab named **Earth** that contains the model for the globe.
 
     ![__________________________________](../../../media/mesh-201/103-earth-model.png)
+
+1. Adjust your view so that you're directly in front of and looking at Station 4.
+
+    ![__________________________________](../../../media/mesh-201/123-station-4-front-view.png)
 
 ## Insert the API key for weatherapi.com
 
 1. In the **Hierarchy**, select the **Mesh Cloud Scripting** GameObject.
-1. In the **Inspector**, navigate to the **Mesh Cloud Scripting** component and then click **Open application folder**. This opens the project folder that contains the files for Mesh Cloud Scripting in the Windows File Explorer.
+1. In the **Inspector**, navigate to the **Mesh Cloud Scripting** component and then click **Open application folder**.
 
     ![__________________________________](../../../media/mesh-201/078-open-app-folder.png)
+
+    This opens the folder that contains the files for Mesh Cloud Scripting in the Windows File Explorer.
 
 1. Open the file named *appsettings.UnityLocalDev.json* in your code editor. The last four lines of code in the file contain configuration settings.
 
@@ -98,10 +104,10 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     ![__________________________________](../../../media/mesh-201/087-csproj-file.png)
 
-1. Copy the following the text: 
+1. Copy the following text: 
 
-    `<ItemGroup>
-   	<Folder Include="WeatherAPI\" />
+    `<ItemGroup>  
+   	<Folder Include="WeatherAPI\" />  
    </ItemGroup>`
 
     ... and then paste it into the file just above `</Project>` at the end of the file.
@@ -112,7 +118,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     ![__________________________________](../../../media/mesh-201//105-weatherapi-folder.png)
 
-1. Save the file.
+1. Save and close the file.
 
 ## Add code that makes the globe interactive
 
@@ -122,15 +128,15 @@ In order to complete this station, you'll need to insert a *key* into some code 
 
     The first thing we'll do is ensure that when an attendee clicks on the globe, the displays of the weather data are refreshed.
 
-1. In the App.cs file, navigate to line 47, where'll you see a comment telling you to paste some code there.
+1. In the App.cs file, find the first "Paste code here" comment located inside the `StartAsync()` method.
 
-    ![__________________________________](../../../media/mesh-201/090-paste-code-comment.png)
+    ![__________________________________](../../../media/mesh-201/135-paste-code-for-weather-station.png)
 
 1. Copy the code below.
 
     ```
-        var refreshButton = _app.Scene.FindFirstChild("Earth", true) as TransformNode ?? throw new NullReferenceException("Could not find Earth");
-        var refreshButtonNode = refreshButton.FindFirstChild<InteractableNode>(true);
+        var refreshButton = _app.Scene.FindFirstChild("Earth", true) as TransformNode;
+        var refreshButtonNode = refreshButton?.FindFirstChild<InteractableNode>(true);
 
         if (refreshButtonNode != null)
         {
@@ -141,7 +147,7 @@ In order to complete this station, you'll need to insert a *key* into some code 
         }
     ```
 
-1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 47.
+1. Replace the "Paste code here" comment you just found with the code you copied.
 
     ![__________________________________](../../../media/mesh-201/091-pasted-code.png)
 
