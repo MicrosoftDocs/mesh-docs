@@ -38,7 +38,7 @@ You do this by using the *Spatializer* and associated prefab and scripts.
 
     You can select the clip and then play it in the **Inspector** to hear what it sounds like. If you wish, you can add your own audio clips to the project and use one of those in the **Audio Source** component instead of the *Scale Free Clip* audio clip.
 
-1. In the **Spatializer** component, keep the **Default Voice Selection** property set to *Natural* or click the drop-down and then choose a different setting. This is similar to [choosing a "Use" in the Audio Zone component](./create-zones-and-environment-audio.md#how-a-voice-setting-gets-chosen-for-audio-zones-acoustic-zones-or-custom-environment-audio).
+1. In the **Spatializer** component, keep the **Default Voice Selection** property set to *Natural* or click the drop-down and then choose a different setting. This is similar to [choosing a "Use" in the Audio Zone component](./create-zones-and-environment-audio.md#how-a-voice-setting-gets-chosen-for-audio-zones-acoustic-zones-or-custom-environment-acoustics)
 1. For the **Ear** property, choose the camera in the scene. If you don't yet have a camera, you'll need to add one.
 1. For the **Source** property, drag the *SpatializerTestAudioSource** prefab from the **Hierarchy** and then drop it in the **Source** field.
 
