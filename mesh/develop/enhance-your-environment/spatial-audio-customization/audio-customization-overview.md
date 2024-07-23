@@ -67,11 +67,11 @@ In order to fully understand how you can control sound with Audio Zones, it's us
 
 ### attenuation
 
-A decrease in the intensity of certain elements of a sound. For our purposes, that means a lowering of volume, a lessening of reverb, or a lessening of high frequencies (["low pass"](https://en.wikipedia.org/wiki/Low-pass_filter)). The names of the ScriptableObjects indicate which elements of the sound they're affecting.
+A decrease in the intensity of certain elements of a sound. For our purposes, that means a lowering of volume, a lessening of reverb, or a lessening of high frequencies (["low pass"](https://en.wikipedia.org/wiki/Low-pass_filter)). The names of the [ScriptableObjects](https://docs.unity3d.com/Manual/class-ScriptableObject.html) indicate which elements of the sound they're affecting.
 
 ![______](../../../media/enhance-your-environment/audio-zones/070-attenuation-filters.png)
 
-For example, if you create an Audio Zone and you want the sounds outside of the Zone to barely be audible inside the Zone, you can *attenuate* those incoming sounds using the *LowAttenuation VolumeFilter* ScriptableObject. Pairing the volume, low pass, and reverb filters can create more natural sounding spaces where attendees can have multiple conversations in the same space without interrupting each other while also being aware of other conversations around them. You can also use gaze to focus in and out of conversations. The result of all this is sometimes called the []"cocktail party effect"](https://en.wikipedia.org/wiki/Cocktail_party_effect).
+For example, if you create an Audio Zone and you want the sounds outside of the Zone to barely be audible inside the Zone, you can *attenuate* those incoming sounds using the *LowAttenuation VolumeFilter* ScriptableObject. Pairing the volume, low pass, and reverb filters can create more natural sounding spaces where attendees can have multiple conversations in the same space without interrupting each other while also being aware of other conversations around them. You can also use gaze to focus in and out of conversations. The result of all this is sometimes called the ["cocktail party effect"](https://en.wikipedia.org/wiki/Cocktail_party_effect).
 
 You'll see "low" in the names of a number of sound-related ScriptableObjects; for example, "LowAttenuationVolumeFilter" or "LowAttenuationReverbFilter". In normal attenuation, the further away you get from a sound source, the more the element of the sound being attenuated decreases until it finally reaches zero. The inclusion of "Low" in the names here indicate that there is some attenuation, but it's a lower amount than usual; the element of the sound being attenuated decreases somewhat but never quite reaches zero.
 
@@ -93,7 +93,7 @@ This is a Mesh term. When an attendee in an event has their *Megaphone* turned o
 
 ## Audio Zone Package
 
-The Mesh spatial audio features are located in the Audio Zone package which is included with the Mesh toolkit.
+The Mesh spatial audio features are located in the mesh.audiozones package which is included with the Mesh experimental toolkit.
 
 ![______](../../../media/enhance-your-environment/audio-zones/033-audio-zones-package.png)
 
