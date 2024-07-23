@@ -4,7 +4,7 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/16/2024
+ms.date: 7/18/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
@@ -82,6 +82,27 @@ The resource deploys and you should see a message saying that the deployment is 
 
 1. Save the text file. You'll need these two pieces of information later in the tutorial.
 
+### Create a packages loading file
+
+In order for packages to load correctly, you must add a special file to the project.
+
+1. In your code editor, create a file named "Directory.Packages.props", and then add the following text to it:
+
+    ```
+    <Project>
+    <Import Project="$([MSBuild]::GetPathOfFileAbove(Directory.Packages.props, $(MSBuildThisFileDirectory)..))" />
+
+    <ItemGroup>
+        <PackageVersion Include="Azure.AI.OpenAI" Version="1.0.0-beta.15"/>
+    </ItemGroup>
+    
+    </Project>
+    ```
+
+1. Save the file in your project in the **Assets** > **.MeshCloudScripting** > **StartingPoint** folder.
+
+**Important**: If you plan to run the **FinishedProject** scene and try out Station 5, you must also add this file to the **Assets** > **.MeshCloudScripting** > **FinishedProject** folder.
+
 ## Add the prefab for Station 5
 
 1. In the **Project** folder, navigate to **Assets** > **MeshCloudScripting** and then drag the **5 - AIAssistant** prefab to the **Hierarchy** and place it as a child object to **Mesh Cloud Scripting** and just under **4 - GlobeWithCloudScripting**.
@@ -118,7 +139,7 @@ The resource deploys and you should see a message saying that the deployment is 
 1. Delete the comment and replace it with the line below:
 
     ```
-    <PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.15" />
+    <PackageReference Include="Azure.AI.OpenAI" />
     ```
 
     ![__________________________________](../../../media/mesh-201/108-open-ai-pasted.png)
@@ -229,7 +250,13 @@ The resource deploys and you should see a message saying that the deployment is 
         }
         catch (Exception ex)
         {
-            _logger.LogCritical($"Exception during OpenAI request: {ex.Message}");
+            var log = $"Exception during OpenAI request: {ex.Message}";
+            _logger.LogCritical(log);
+        
+            if (!response.IsCanceled)
+            {
+                _app.ShowMessageToParticipant(log, args.Participant);
+            }
         }
     }, TaskScheduler.Default);
     ```

@@ -19,4 +19,6 @@ After you've created a basic Environment, take it to the next level by incorpora
 
 * [Mesh controllables](multi-room-sync.md), enabling event hosts to control and sync video and timeline playback across multiple rooms of a large event.
 
-* [Mesh web slates](webcontent.md), enabling designers to add a panel that displays a given web page.
+* [Mesh WebSlates](webcontent.md), enabling designers to add a panel that displays a given web page.
+
+* [Mesh Spatial Audio](./spatial-audio-customization/audio-customization-overview.md), which lets you create individual spaces in an environment, with each having their own unique audio settings.
