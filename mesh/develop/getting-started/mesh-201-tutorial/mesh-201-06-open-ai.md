@@ -4,7 +4,7 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/16/2024
+ms.date: 7/18/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
@@ -30,8 +30,8 @@ In order to complete this station, you'll need to visit the Azure Portal and the
 
     ![__________________________________](../../../media/mesh-201/110-create-button.png)
 
-**IMPORTANT**: For many of the settings detailed below, we don't make a specific recommendation. You should choose the options that make the most sense for you and your organization. 
-
+    **IMPORTANT**: For many of the settings detailed below, we don't make a specific recommendation. You should choose the options that make the most sense for you and your organization. 
+    
 1. On the **Basics page**, create names where requested, and choose the options you want for **Subscription**, **Region**, and **Pricing tier**.
 
 1. On the **Network** page, choose the option you want.
@@ -74,13 +74,34 @@ The resource deploys and you should see a message saying that the deployment is 
 
     ![__________________________________](../../../media/mesh-201/117-keys-and-endpoints.png)
 
-1. On the **Keys and Endpoint** page, click the "Copy to clipboard" button for **KEY 1** *or* *KEY 2** (it doesn't matter which one) and then paste it into a text file using Windows Notepad or another text editor.
+1. On the **Keys and Endpoint** page, click the "Copy to clipboard" button for **KEY 1** *or* **KEY 2** (it doesn't matter which one) and then paste it into a text file using Windows Notepad or another text editor.
 
     ![__________________________________](../../../media/mesh-201/118-copy-key-and-endpoint.png)
 
 1. Click the "Copy to clipboard" button for **Endpoint** and paste it into the same text file.
 
 1. Save the text file. You'll need these two pieces of information later in the tutorial.
+
+### Create a packages loading file
+
+In order for packages to load correctly, you must add a special file to the project.
+
+1. In your code editor, create a file named "Directory.Packages.props", and then add the following text to it:
+
+    ```
+    <Project>
+    <Import Project="$([MSBuild]::GetPathOfFileAbove(Directory.Packages.props, $(MSBuildThisFileDirectory)..))" />
+
+    <ItemGroup>
+        <PackageVersion Include="Azure.AI.OpenAI" Version="1.0.0-beta.15"/>
+    </ItemGroup>
+    
+    </Project>
+    ```
+
+1. Save the file in your project in the **Assets** > **.MeshCloudScripting** > **StartingPoint** folder.
+
+**Important**: If you plan to run the **FinishedProject** scene and try out Station 5, you must also add this file to the **Assets** > **.MeshCloudScripting** > **FinishedProject** folder.
 
 ## Add the prefab for Station 5
 
@@ -118,7 +139,7 @@ The resource deploys and you should see a message saying that the deployment is 
 1. Delete the comment and replace it with the line below:
 
     ```
-    <PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.15" />
+    <PackageReference Include="Azure.AI.OpenAI" />
     ```
 
     ![__________________________________](../../../media/mesh-201/108-open-ai-pasted.png)
@@ -229,7 +250,13 @@ The resource deploys and you should see a message saying that the deployment is 
         }
         catch (Exception ex)
         {
-            _logger.LogCritical($"Exception during OpenAI request: {ex.Message}");
+            var log = $"Exception during OpenAI request: {ex.Message}";
+            _logger.LogCritical(log);
+        
+            if (!response.IsCanceled)
+            {
+                _app.ShowMessageToParticipant(log, args.Participant);
+            }
         }
     }, TaskScheduler.Default);
     ```

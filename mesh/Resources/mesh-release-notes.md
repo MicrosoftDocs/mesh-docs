@@ -63,12 +63,6 @@ Microsoft Mesh application
 
 * Event hosts can call on attendees from the Host panel when attendees raise their hand to directly to start broadcasting them.
 
-* Introducing a first look at cross-room visualizations of people! Event hosts can now see spatialized profile bubbles of attendees who are actively sharing emojis or raising their hands.
-
-* Calling on a hand raise is still available in the Host Panel, but can also now be done by clicking directly on the avatar or profile bubble of an attendee.
-
-    :::image type="content" source="media/Emoji-reactions-hand-raise-multi-room.png" alt-text="Screenshot of Mesh app showing attendees with profile bubbles reacting with emojis.":::
-
 #### Event customization
 
 * Text object is now available when customizing your event. Add text like any other object (Screenshare, Image, Video), move it around the environment, then edit its properties like text style, or size.
