@@ -43,14 +43,14 @@ The three core components, or what we call "features", for Mesh custom spatial a
 
 We don't want to use any of the existing Voice Settings in this Collection so we'll make a new Voice Setting and then add it to the Collection.
 
-1. In Project window #1, navigate to the **Packages** > **Microsoft Mesh Audio Zones** > **VoiceSetting** folder and then expand it.
+1. In Project window #1, navigate to the **Packages** > **Microsoft Mesh Toolkit Experimental** > **mesh.audiozones** > **VoiceSetting** folder and then expand it.
 1. Drag the **LowAttenuation** Voice Setting ScriptableObject from Project window #1 and then drop it on the **My Voice Settings** folder in Project window #2.
 
     ![______](../../../media/enhance-your-environment/audio-zones/049-voice-setting-copied.png)
 
 1. Rename the ScriptableObject to "MyLowAttenuation".
 
-    We don't want the Reverb filter that's include with this ScriptableObject, so let's delete it. 
+    We don't want the Reverb filter that's included with this ScriptableObject, so let's delete it. 
 
 1. In Project window #2, ensure that the "MyLowAttenuation" ScriptableObject is selected.
 1. In the **Inspector**, select **Element 2**, which contains the filter named "LowAttenuationReverbFilter", and then click the "-" button to delete it.
@@ -61,7 +61,7 @@ We don't want to use any of the existing Voice Settings in this Collection so we
 
 We'll add a new Reverb filter with settings more in line with our needs.
 
-1. In the first **Project** window, navigate to the **Packages** > **Microsoft Mesh Audio Zones** > **Filters** folder and then expand it.
+1. In the first **Project** window, navigate to the **Packages** > **Microsoft Mesh Toolkit Experimental** > **mesh.audiozones** > **Filters** folder and then expand it.
 1. Drag the **NaturalReverbFilter** Filter ScriptableObject from Project window #1 and then drop it on the **My Filters** folder in Project window #2.
 
     ![______](../../../media/enhance-your-environment/audio-zones/051-copy-reverb-filter.png)
@@ -87,9 +87,9 @@ We'll add a new Reverb filter with settings more in line with our needs.
 
 1. In Project window #2, select the **MyDefaultVoices** ScriptableObject.
 1. In the **Inspector** in the **Voices** section, click the "+" button.
-1. Drag **MyLowAttenuation** from the **Project** window and then drop it in the Element you just added to the **My Default Voices** Voice Collection.
+1. Click the round button in the newly added Element, and then, in the **Select Voice Setting** window, select **MyLowAttenuation**.
 
-    ![______](../../../media/enhance-your-environment/audio-zones/054-add-voice-setting.png)
+    ![______](../../../media/enhance-your-environment/audio-zones/090-select-my-low-attenuation.png)
 
 ## Next steps
 

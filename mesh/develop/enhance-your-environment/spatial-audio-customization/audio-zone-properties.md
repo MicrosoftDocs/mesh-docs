@@ -66,20 +66,20 @@ Much of the "muffled" effect from this voice is due to the strong influence of t
 
  ![______](../../../media/enhance-your-environment/audio-zones/061-muffled-low-pass-filter.png)
 
-### Can Audio Exit** and **Can Audio Enter 
+### Can Audio Exit and Can Audio Enter 
 
 These properties are useful for controlling privacy. Let's say this current Audio Zone is for Room #1, and Room #2 next To it has an Audio Zone with its "Muffle Voices Outside" property selected. 
 
-**To allow sounds from Room #1 to be heard in Room #2 (or any area outside the room)**:
+**To allow sounds from Room #1 to be heard in Room #2 (or any area outside the room)**:  
 Select **Can Audio Exit**. 
     
-**To prevent sounds from Room #1 from being heard outside the room**:
+**To prevent sounds from Room #1 from being heard outside the room**:  
 Make sure **Can Audio Exit** is unselected. 
     
-**To allow sounds from outside of Room #1 to be heard inside the room**:
+**To allow sounds from outside of Room #1 to be heard inside the room**:  
 Select **Can Audio enter**.
     
-**To prevent sounds from outside Room #1 from being heard inside the room**:
+**To prevent sounds from outside Room #1 from being heard inside the room**:  
 Make sure **Can Audio Enter** is unselected.
 
 ### Glow Sound at Border 
@@ -98,10 +98,10 @@ This is another property that's useful when you want a certain level of privacy.
 
 ### Toasts
 
-**Entry toast title:**  
-**Entry toast body:**  
-**Exit toast title:**  
-**Exit toast body:**
+**Entry toast title**  
+**Entry toast body**  
+**Exit toast title**  
+**Exit toast body**
 
 A *toast* is a short message that pops up on the screen and then, after a brief period of time, disappears. You can create a toast that will be displayed when an attendee enters or exits the Audio Zone. 
 
