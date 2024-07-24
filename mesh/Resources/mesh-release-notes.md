@@ -32,6 +32,12 @@ Microsoft Mesh application
 
 ### What's new
 
+#### Personal boundary
+
+* Avatars now have a Personal Boundary that prevents other avatars from walking, standing, and teleporting too close to your avatar.
+
+* If you're in the middle of a crowd, you can now also teleport through other avatars to move away from the crowd.
+
 ### Resolved issues
 
 #### Reliability improvements

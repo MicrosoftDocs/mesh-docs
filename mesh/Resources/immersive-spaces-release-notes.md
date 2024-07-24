@@ -19,6 +19,12 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 * Updated images and text when joining an Immersive Space in Teams. (17435)
 
+### Personal boundary
+
+* Avatars now have a Personal Boundary that prevents other avatars from walking, standing, and teleporting too close to your avatar.
+
+* If you're in the middle of a crowd, you can now also teleport through other avatars to move away from the crowd.
+
 ## Version 5.2408.XX (July 01, 2024)
 
 ### Immersive spaces available on Mac
