@@ -42,10 +42,6 @@ Microsoft Mesh application
 
 #### Reliability improvements
 
-- Fixed an issue where the app could fail to join an event via a deep link. (18014)
-
-- Fixed an issue where users could join an event before its start time via a deep link. (18014)
-
 - Improved the ability to join an event when experiencing poor network conditions. (17760)
 
 - Improved performance when viewing an Immersive Space in Teams. (18128, 18156, 18351, 18280)
