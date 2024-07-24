@@ -42,8 +42,6 @@ Microsoft Mesh application
 
 #### Reliability improvements
 
-- Fixed an issue where the app could be unresponsive after the user user cancels joining an event via a deep link. (17774)
-
 - Fixed an issue where the app could fail to join an event via a deep link. (18014)
 
 - Fixed an issue where users could join an event before its start time via a deep link. (18014)
