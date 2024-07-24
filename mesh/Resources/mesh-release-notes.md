@@ -44,8 +44,6 @@ Microsoft Mesh application
 
 - Improved the ability to join an event when experiencing poor network conditions. (17760)
 
-- Improved performance when viewing an Immersive Space in Teams. (18128, 18156, 18351, 18280)
-
 ## Version 5.2408.XX
 
 ### What's new
