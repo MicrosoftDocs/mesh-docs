@@ -17,6 +17,7 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | July 23      | 5.2409.XX    |
 | 2024         | July 02      | 5.2408.XX    |
 | 2024         | June 17      | 5.2407.XX    |
 | 2024         | May 23       | 5.2406.XX    |
@@ -26,6 +27,30 @@ Microsoft Mesh application
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2409.XX
+
+### What's new
+
+#### Personal boundary
+
+* Avatars now have a Personal Boundary that prevents other avatars from walking, standing, and teleporting too close to your avatar.
+
+* If you're in the middle of a crowd, you can now also teleport through other avatars to move away from the crowd.
+
+### Resolved issues
+
+#### Reliability improvements
+
+- Fixed an issue where the app could be unresponsive after the user user cancels joining an event via a deep link. (17774)
+
+- Fixed an issue where the app could fail to join an event via a deep link. (18014)
+
+- Fixed an issue where users could join an event before its start time via a deep link. (18014)
+
+- Improved the ability to join an event when experiencing poor network conditions. (17760)
+
+- Improved performance when viewing an Immersive Space in Teams. (18128, 18156, 18351, 18280)
 
 ## Version 5.2408.XX
 
