@@ -42,7 +42,7 @@ Microsoft Mesh application
 
 #### Reliability improvements
 
-- Improved the ability to join an event when experiencing poor network conditions.
+- Improved the ability to join an event when experiencing poor network conditions. (56032)
 
 ## Version 5.2408.XX
 
