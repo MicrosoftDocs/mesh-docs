@@ -170,15 +170,7 @@ about managing feedback, see
 > [!IMPORTANT]
 > In order to streamline the admin experience, admins will no longer need to configure Mesh in M365 Apps Admin Center. If you had previously restricted Mesh access to users or groups in your organization via the Mesh policy found in the M365 Apps Admin Center, you will need to switch to restricting access via the Mesh service plan instead in the M365 Admin Center (MAC) **by the end of February, 2024**.
 
-For more information about service plans, see [Configure access to Mesh using service plans](setup-m365-mesh.md#configure-access-to-mesh-using-service-plans). 
-
-## End user license agreement
-
-Your users must enter a separate agreement directly with Microsoft to enable spatial audio for Mesh experiences. That agreement is presented to your users before the user's first use of Mesh. If a user does not wish to enter into that agreement, the user cannot use Mesh.
-
-If an admin does not agree to the license agreement terms, then admins can disable Mesh for users via Service Plans described above.
-
-For more info about service plans and the end user license agreement, see [End user license agreement](setup-m365-mesh.md#end-user-license-agreement).
+For more information about service plans, see [Configure access to Mesh using service plans](setup-m365-mesh.md#configure-access-to-mesh-using-service-plans).
 
 ## Review endpoint managers
 
