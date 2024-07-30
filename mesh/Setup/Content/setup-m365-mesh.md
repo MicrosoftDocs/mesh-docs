@@ -15,9 +15,6 @@ keywords: Microsoft Mesh, M365, OCPS, Immersive spaces in Mesh, Mesh experiences
 
 This article covers how to setup and deploy the Microsoft Mesh from an IT perspective for the Mesh app on PC, Mesh app on Quest 2, and Mesh on the web. Before setting up Microsoft Mesh, we recommend reading the [Preparing your organization for Mesh](preparing-your-organization.md) to ensure your enterprise is prepared to set up and deploy Mesh. If you're looking to manage the Avatars app or Mesh app in Teams, please refer to [Manage the avatars app in Microsoft Teams](/microsoftteams/meeting-avatars) or [Manage the Mesh app in Microsoft Teams](/microsoftteams/meeting-immersive-spaces).
 
-> [!IMPORTANT]
-> In order to streamline the admin experience, admins will no longer need to configure Mesh in M365 Apps Admin Center. If you had previously restricted Mesh access to users or groups in your organization via the Mesh policy found in the M365 Apps Admin Center, you will need to switch to restricting access via the Mesh service plan instead in the M365 Admin Center (MAC).
-
 ## Prerequisites
 
 Before deploying  Mesh, ensure that the following endpoints and firewall ports are allowed:
