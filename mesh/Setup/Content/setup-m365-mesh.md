@@ -71,13 +71,5 @@ For more complex and larger group license management, you can do so in Entra ID:
 
 [Assign licenses to a group - Microsoft Entra ID | Microsoft Learn](/entra/identity/users/licensing-groups-assign)
 
-## End user license agreement
-
-Your users must enter a separate agreement directly with Microsoft to enable spatial audio for Mesh experiences. That agreement is presented to your users before the user's first use of Mesh. If a user does not wish to enter into that agreement, the user cannot use Mesh.
-
-If an admin does not agree to the license agreement terms, then admins can disable Mesh for users via Service Plans described above.
-
-:::image type="content" source="../../media/m365-setup-guide/EULA-agreemnet-small.png" alt-text="Screenshot of end user license agreement for Mesh and spatial audio." lightbox="../../media/m365-setup-guide/EULA-agreemnet.png":::
-
    > [!div class="nextstepaction"]
    > [Manage Environment collections](manage-mesh-on-web.md)
