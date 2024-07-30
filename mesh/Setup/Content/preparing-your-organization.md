@@ -167,9 +167,6 @@ about managing feedback, see
 
 ## Configure service plan to allow user access
 
-> [!IMPORTANT]
-> In order to streamline the admin experience, admins will no longer need to configure Mesh in M365 Apps Admin Center. If you had previously restricted Mesh access to users or groups in your organization via the Mesh policy found in the M365 Apps Admin Center, you will need to switch to restricting access via the Mesh service plan instead in the M365 Admin Center (MAC) **by the end of February, 2024**.
-
 For more information about service plans, see [Configure access to Mesh using service plans](setup-m365-mesh.md#configure-access-to-mesh-using-service-plans).
 
 ## Review endpoint managers
