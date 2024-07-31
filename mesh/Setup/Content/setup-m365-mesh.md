@@ -17,8 +17,6 @@ This article covers how to setup and deploy the Microsoft Mesh from an IT perspe
 
 ## Prerequisites
 
-Before deploying  Mesh, ensure that the following endpoints and firewall ports are allowed:
-
 [!INCLUDE [Include file for the immersive spaces in Mesh article](../../Includes/license-requirements-for-Mesh.md)]
 
 For help, see the [immersive spaces in mesh licensing Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-mesh).
