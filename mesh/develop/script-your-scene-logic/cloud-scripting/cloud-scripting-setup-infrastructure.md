@@ -4,7 +4,7 @@ description: Learn about setting up Mesh Cloud Scripting in Azure.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/6/2024
+ms.date: 7/31/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Azure, admin, Mesh Cloud Scripting, scripting, cloud scripting
 ---
@@ -29,6 +29,18 @@ Mesh Cloud Scripting consists of .NET-based apps that run in the Cloud. The Mesh
     2. **[The Orleans Membership Table](/dotnet/orleans/overview)**: Holds information about the liveness of the Orleans Silo instances.
 1. **[Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal)**: Holds the logs emitted from the Mesh Cloud Scripting Service running on App Service.
 1. **[Application Insights](/azure/azure-monitor/app/app-insights-overview?tabs=net)**: Provides application performance monitoring (APM) features. APM tools are useful to monitor applications from development, through test, and into production.
+
+### Traffic flows through each component
+
+**Client <-> AppService Instances**: Client requests/responses (connect requests, cloud script notifications, and more).
+
+**App Service Instances**: TCP ping messages to determine liveness.
+
+**App Service Instances <-> LogAnalytics/AppInsights**: Application Telemetry (application logs).
+
+**App Service Instances <-> Membership Table**: Liveness information about each app service instance.
+
+**App Service Instance <-> Blob Storage**: The zip of the cloud scripts running in the cloud.
 
 #### App Service Plan
 
