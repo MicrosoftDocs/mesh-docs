@@ -1,50 +1,16 @@
 ---
-title: Mesh Visual Scripting Best Practices
-description: Learn about best practices for Visual Scripting in Mesh.
+title: Mesh Visual Scripting Networking Basics
+description: Learn about how networking works with Visual Scripting in Mesh.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
 ms.date: 8/1/2024
 ms.topic: conceptual
-keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, graphs, Mesh, best practices
+keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, graphs, Mesh, best practices, performance, networking
 ---
 
-# Mesh Visual Scripting Best Practices
+# Mesh Visual Scripting Networking Basics
 
-
-Introduction
-At its core, Mesh Visual Scripting is simply Unity Visual Scripting extended and augmented to work well in Mesh:
-- Interface with Interactables, Physics, Web Slates, Audio, Audio Zones, Cloud Scripting, and many more Mesh features through visual scripts.
-- Share scene state and visual script variables across all clients connected to a room.
-- Test your custom environments that contain Physics, Interactables, and visual scripts directly in Unity Editor with Mesh Emulator--even with multiple simulated clients in split-screen mode.
-- Get actionable guidance on correctness issues and potential bandwidth or performance bottlenecks with on-the-fly diagnostics in Mesh Emulator and across your entire environment with Content Performance Analyzer (CPA).
-- Investigate bandwidth and performance issues with real-time on-screen diagnostics in Mesh Emulator and inside Mesh.
-Mesh Visual Scripting also comes with some restrictions:
-- Mesh puts limits on the subset of the Unity and C# API that can be used by visual scripts. Some of these restrictions are for security and safety reasons; some restrictions are just technical and may be lifted in future versions.
-- Mesh restricts scene access by visual scripts to those parts of the scene that were uploaded by the environment creator. Avatars, Mesh user interfaces, and other Mesh-internal additions to the scene are out of bounds for visual scripts.
-Visual Scripting is easy to get started with, but it can be tricky to get all the nuances right--especially for visual scripts that share state across clients in a room. Keep reading to learn about best practices that'll make your visual script-enhanced Mesh experience run delightfully fast and solidly shared for all users that participate in it.
-Performance basics
-Visual scripts aren't slow, but they're much, much slower than--for example--C# code.
-When you create visual scripts in your environment, it's best to use them to connect existing functionality, not for heavy lifting: Make glue, not girders. The simplest way to ensure that your visual scripts don't impact the overall performance of your environment is to make sure they're not doing much at all in the first place.
-High- and low-frequency script events
-Visual Scripting offers a wide selection of events you can use to trigger visual script flows.
-Try to avoid:
-- On Update, On Fixed Update, On Late Update, and similar. These events trigger very frequently (often at the same rate as render frames), and even if your script doesn't do a lot, even just starting it up has an overhead that can noticeably impact your environment's performance if it happens in many places at once. 
-- On Trigger Stay and On Collision Stay. Even though these events are only active under certain conditions (when a physics object is inside a physics trigger volume or touching a collider)--while those conditions are given, they'll trigger very frequently.
-There's no direct preferred replacement for these high-frequency events. (But they're not disabled, so you can use them if absolutely necessary.)
-You should instead either try to leverage built-in functionality such as the Animator component (which can be controlled by visual scripts) or try to restructure your script logic to be reactive rather than active--for example, by using On State Changed events.
-If you absolutely can't avoid these high-frequency events, you may be able to reduce their impact by keeping the entire Script Machine component inactive when it's not needed: Another visual script can use Script Machine | Set Enabled to disable and enable an entire script graph; while disabled, none of its event nodes trigger, and it has zero runtime cost.
-Slightly dangerous for performance but sometimes necessary:
-- On Collision Enter and On Collision Exit. Normally, these events are triggered only once when a physics body touches the collider, and once again when it's removed from touch. But sometimes a physics body gets stuck between two colliders; in that case, it can start jittering rapidly back and forth, triggering many On Collision events in very quick succession. Better use On Trigger events instead.
-Okay to use judiciously:
-- On Interval lets you trigger script flows in customizable intervals (for example, once per second) defined through its Interval setting. You can use the Delay setting to stagger execution of different On Interval events that have the same interval.
-- The Timer node isn't an event but will trigger its Tick port once per frame for the timer's duration once it has been started by entering its Start port. When the timer isn't running, it has zero runtime cost.
-Try not to use these events to keep checking if certain variables, properties, or conditions have changed--instead, it's better to use an On State Changed event to listen to changes at zero idle cost.
-Always okay:
-- On State Changed triggers only if and when any of its input ports change their value. For script variables and component properties, this is implemented very efficiently in a way that incurs zero runtime cost as long as nothing changes.
-- On State Changed can also be used to observe more complex inputs (for example, the results of a calculation) that require it to re-evaluate the input once per frame to determine if it has changed. You'll have to enable the Allow Polling option to enable this feature. (The script editing user interface will inform you of this and warn of the potential performance impact.) Even so, it'll still be a bit more efficient than to script your own polling logic using an On Update event.
-- On Dictionary Item Added and On Dictionary Item Removed work in a similar way and have zero runtime cost as long as nothing changes.
-- On Trigger Enter and On Trigger Exit have none of the potential performance dangers of the corresponding On Collision events (see above).
 Networking basics
 In Mesh, most scene properties are by default automatically shared across all clients connected to the same room: for example, a scene object's Transform position and rotation, a Component's enabled state, or a TextMeshPro's text.
 As a rule of thumb, component properties that have simple scalar types (Boolean, Integer, Float, or String) are automatically shared by default. Collection types (lists and sets) and scene object references aren't shared.
@@ -155,49 +121,3 @@ What could possibly go wrong?
 Unfortunately, the Random | Range script node used in this example comes in two flavors: one that produces a random Integer value, and one that produces a random Float value. The difference is between those two script nodes in the node selector panel is subtle:
      
 Keep this in mind as a potential reason why a share variable you've created may seem to have stopped being shared. Future releases of Mesh Visual Scripting may warn of this kind of script error when they can detect it.
-Debugging issues and bottlenecks
-Edit-time diagnostics
-In Unity Editor, you can view on-the-fly guidance on errors and potential bandwidth or performance bottlenecks for the Script Machine you're currently editing in the Mesh Visual Scripting Diagnostics panel at the bottom of Unity Editor's Inspector panel.
-Hovering the mouse pointer over an error, warning, or notice in the Diagnostics panel pops up a tooltip with a detailed explanation:
-      
-You can get a compilation of the same diagnostics across your entire environment by opening Content Performance Analyzer (CPA) though the Mesh Toolkit > Content Performance Analyzer menu command and clicking the Run All button:
- 
-Runtime diagnostics in Mesh Emulator
-When you test-run your environment in Unity Editor, enable the Perf Stats checkbox in the upper-right corner of the Game panel to show real-time summary statistics across all aspects of your environment:
- 
-The right-most column in the lower-right corner provide summary information on visual script performance, with times given in milliseconds per frame:
-- VS User shows time spent on executing the visual script flows you've created, excluding any overhead incurred by Mesh.
-- VS Env shows overhead incurred by the Mesh Visual Scripting runtime environment.
-- VS Net shows overhead incurred by the Mesh networking stack underneath the Mesh Visual Scripting runtime, dispatching and receiving updates to shared state.
-To get more detailed information on individual visual scripts executing in the environment, you can enable real-time runtime statistics on visual script execution by enabling the Script Stats checkbox in the upper-right corner of the Game panel:
- 
-The Highest processing load section lists the script flows that have taken the most time to run within the last second, shown as an average time cost per frame.
-- The number of script flows appearing in this section and their total time cost should be as low as possible.
-- Ideally, when the environment is idle, there shouldn't be any script flows executing at all.
-The Highest shared update load section lists shared scene properties and script variables that were most frequently updated within the last second. A load of 100% means that the property or variable was updated in every frame in that second.
-- The number of shared property and script variable updates and their total load in this section should be as low as possible.
-- Ideally, when the environment is idle, no shared properties or variables should be updated at all.
-- If you notice any properties or script variables showing up in this section that you didn't intend to be synchronized over network across clients, consider adding Local Script Scope components to make them local.
-You can click on any game object name in the middle column to directly jump to the corresponding game object in the Hierarchy panel.
-You can click any other part of the Script Stats panel, or press Shift+X, to temporarily halt its updates if you want to have a closer look at a situation. Click it again, or press Shift+X again, to resume updating it.
-Runtime diagnostics in Mesh
-When running an environment in Mesh (for example, in a Teams event), you can press Ctrl+Shift+F1 to pop up the Networking Info sidebar, which shows lots of very technical information about the current session. Scroll down to find detailed information on visual scripts running in the environment:
- 
-The "(last … seconds, … frames)" statement directly below the Visual Scripting section heading shows the number of seconds and frames aggregated for the counters shown below. Up to 90 seconds of data is aggregated before the counters reset.
-The table directly below shows information on sharing:
-- The Props, Var, and Event rows describe shared properties, shared script variables, and shared events, respectively.
-- The Update column counts how often properties or variables were updated by visual scripts.
-- The Send (and the adjacent Bytes) column counts how often property, variable, or event updates were sent over network. This number can be lower than the Update count due to rate limiting and because redundant updates may not be sent at all.
-- The Recv (and the adjacent Bytes) column counts how often property, variable, or event updates were received over network from other clients.
-- The Bytes columns in this table don't account for all networking overheads and can only be meaningfully used to compare between runs. Actual bandwidth use may be much higher.
-The Most execution time table lists all visual script flows by how much time they took to execute. The highlighted row labeled "[all]" shows cumulative data across all rows, including rows currently not shown. Click "Show more rows…" to reveal more rows.
-- The Count column counts how often this script flow was executed.
-- The Mean column shows the average time cost per frame, in milliseconds, of this script flow.
-- The Event column names the event node that triggered the script flow.
-- The Target column names the Script Machine that executed the script flow.
-The Most frequent shared updates and Most frequent shared sends tables list shared properties and shared script variables that were most frequently updated by visual scripts or had updates dispatched over network, respectively. The highlighted rows labeled "[all]" show cumulative data across all rows, including rows currently not shown. Click "Show more rows…" to reveal more rows.
-- The Count column counts how often this shared property or shared variable was updated or had an update dispatched over network, respectively.
-- The Name column names the shared property or shared variable.
-- The Target column names the component hosting the property or variable.
-Press Ctrl+Shift+F1 for a second time to enlarge the Networking Info panel, which reveals the entire transform path of the Target game objects in the tables shown above.
-To close the panel, press Ctrl+Shift+F1 for a third time.
