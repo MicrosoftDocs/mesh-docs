@@ -3,7 +3,7 @@ title: Getting started with 3D models
 description: Get a comprehensive overview of 3D modeling options for your Mesh experience.
 author: vtieto    
 ms.author: vinnietieto
-ms.date: 1/23/2024
+ms.date: 7/24/2024
 ms.topic: article
 keywords: 3D, 3D models, modeling, exporting, importing
 ---
@@ -16,7 +16,7 @@ If you want your Mesh experience to be rich in content, you'll probably want to 
 
 For general best practices on preparing your own 3D models for use in a range of Microsoft apps including Mesh, see Microsoft's [real-time 3D model conversion and optimization guide](/dynamics365/mixed-reality/import-tool/best-practices). 
 
-If you're looking for other tools to post-process 3D models, you can optimize any glTF 2.0 model using the [Windows Mixed Reality Asset Converter](https://github.com/microsoft/glTF-Toolkit) available on GitHub. This toolkit includes a command line tool that uses these steps in sequence in order to convert a glTF 2.0 core asset for use in the Windows Mixed Reality home. We also recommend [this Unity plugin](https://github.com/KhronosGroup/UnityGLTF); it's maintained by the creators of glTF.
+To import and optimize [glTF models](https://en.wikipedia.org/wiki/GlTF), you can use [Unity's official glTF plugin](https://docs.unity3d.com/Packages/com.unity.cloud.gltfast@6.7/manual/index.html).
 
 Once your models are in your project, you'll want to ensure that the project as a whole will meet your performance expectations. We recommend that you regularly use the [Content Performance Analyzer](../debug-and-optimize-performance/cpa.md) (CPA) tool to keep track of your project statistics. 
 
