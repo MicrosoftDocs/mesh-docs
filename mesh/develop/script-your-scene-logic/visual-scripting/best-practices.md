@@ -1,0 +1,203 @@
+---
+title: Mesh Visual Scripting Best Practices
+description: Learn about best practices for Visual Scripting in Mesh.
+ms.service: mesh
+author: vtieto
+ms.author: vinnietieto
+ms.date: 8/1/2024
+ms.topic: conceptual
+keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, graphs, Mesh, best practices
+---
+
+# Mesh Visual Scripting Best Practices
+
+
+Introduction
+At its core, Mesh Visual Scripting is simply Unity Visual Scripting extended and augmented to work well in Mesh:
+- Interface with Interactables, Physics, Web Slates, Audio, Audio Zones, Cloud Scripting, and many more Mesh features through visual scripts.
+- Share scene state and visual script variables across all clients connected to a room.
+- Test your custom environments that contain Physics, Interactables, and visual scripts directly in Unity Editor with Mesh Emulator--even with multiple simulated clients in split-screen mode.
+- Get actionable guidance on correctness issues and potential bandwidth or performance bottlenecks with on-the-fly diagnostics in Mesh Emulator and across your entire environment with Content Performance Analyzer (CPA).
+- Investigate bandwidth and performance issues with real-time on-screen diagnostics in Mesh Emulator and inside Mesh.
+Mesh Visual Scripting also comes with some restrictions:
+- Mesh puts limits on the subset of the Unity and C# API that can be used by visual scripts. Some of these restrictions are for security and safety reasons; some restrictions are just technical and may be lifted in future versions.
+- Mesh restricts scene access by visual scripts to those parts of the scene that were uploaded by the environment creator. Avatars, Mesh user interfaces, and other Mesh-internal additions to the scene are out of bounds for visual scripts.
+Visual Scripting is easy to get started with, but it can be tricky to get all the nuances right--especially for visual scripts that share state across clients in a room. Keep reading to learn about best practices that'll make your visual script-enhanced Mesh experience run delightfully fast and solidly shared for all users that participate in it.
+Performance basics
+Visual scripts aren't slow, but they're much, much slower than--for example--C# code.
+When you create visual scripts in your environment, it's best to use them to connect existing functionality, not for heavy lifting: Make glue, not girders. The simplest way to ensure that your visual scripts don't impact the overall performance of your environment is to make sure they're not doing much at all in the first place.
+High- and low-frequency script events
+Visual Scripting offers a wide selection of events you can use to trigger visual script flows.
+Try to avoid:
+- On Update, On Fixed Update, On Late Update, and similar. These events trigger very frequently (often at the same rate as render frames), and even if your script doesn't do a lot, even just starting it up has an overhead that can noticeably impact your environment's performance if it happens in many places at once. 
+- On Trigger Stay and On Collision Stay. Even though these events are only active under certain conditions (when a physics object is inside a physics trigger volume or touching a collider)--while those conditions are given, they'll trigger very frequently.
+There's no direct preferred replacement for these high-frequency events. (But they're not disabled, so you can use them if absolutely necessary.)
+You should instead either try to leverage built-in functionality such as the Animator component (which can be controlled by visual scripts) or try to restructure your script logic to be reactive rather than active--for example, by using On State Changed events.
+If you absolutely can't avoid these high-frequency events, you may be able to reduce their impact by keeping the entire Script Machine component inactive when it's not needed: Another visual script can use Script Machine | Set Enabled to disable and enable an entire script graph; while disabled, none of its event nodes trigger, and it has zero runtime cost.
+Slightly dangerous for performance but sometimes necessary:
+- On Collision Enter and On Collision Exit. Normally, these events are triggered only once when a physics body touches the collider, and once again when it's removed from touch. But sometimes a physics body gets stuck between two colliders; in that case, it can start jittering rapidly back and forth, triggering many On Collision events in very quick succession. Better use On Trigger events instead.
+Okay to use judiciously:
+- On Interval lets you trigger script flows in customizable intervals (for example, once per second) defined through its Interval setting. You can use the Delay setting to stagger execution of different On Interval events that have the same interval.
+- The Timer node isn't an event but will trigger its Tick port once per frame for the timer's duration once it has been started by entering its Start port. When the timer isn't running, it has zero runtime cost.
+Try not to use these events to keep checking if certain variables, properties, or conditions have changed--instead, it's better to use an On State Changed event to listen to changes at zero idle cost.
+Always okay:
+- On State Changed triggers only if and when any of its input ports change their value. For script variables and component properties, this is implemented very efficiently in a way that incurs zero runtime cost as long as nothing changes.
+- On State Changed can also be used to observe more complex inputs (for example, the results of a calculation) that require it to re-evaluate the input once per frame to determine if it has changed. You'll have to enable the Allow Polling option to enable this feature. (The script editing user interface will inform you of this and warn of the potential performance impact.) Even so, it'll still be a bit more efficient than to script your own polling logic using an On Update event.
+- On Dictionary Item Added and On Dictionary Item Removed work in a similar way and have zero runtime cost as long as nothing changes.
+- On Trigger Enter and On Trigger Exit have none of the potential performance dangers of the corresponding On Collision events (see above).
+Networking basics
+In Mesh, most scene properties are by default automatically shared across all clients connected to the same room: for example, a scene object's Transform position and rotation, a Component's enabled state, or a TextMeshPro's text.
+As a rule of thumb, component properties that have simple scalar types (Boolean, Integer, Float, or String) are automatically shared by default. Collection types (lists and sets) and scene object references aren't shared.
+Visual script nodes that access or modify properties in Mesh are tagged with a label that indicates if they're "Shared by all clients" or "Local to this client":
+         
+Script Object variables are shared by default as well if you've declared them with a simple scalar type (Boolean, Integer, Float, or String):
+ 
+Mesh doesn't support Scene variables; but you can use standalone Variables components in the environment to stash variables (that can be shared) independently from any specific Script Machine component.
+If you don't want auto-sharing of properties or Object variables, you can add a Local Script Scope component to your scene. This will make all scene properties and script variables on this game object and any of its descendants local. 
+ 
+For local script variables that you're only using in a single Script Machine, it's best to use Graph variables, which are never shared across clients by Mesh.
+Sharing through Mesh Visual Scripting gives the following guarantees:
+- Guaranteed eventual consistency: All clients will eventually arrive at the same shared state.
+- Guaranteed per-component atomicity:  All updates to properties of the same scene component (or the same Variables component) in the same update will be applied atomically on each client.
+However:
+- No ordering guarantee: Updates applied by one client to several different scene components may arrive in different orders on different clients.
+- No timeliness guarantee: Mesh will try its best to replicate state changes across clients as quickly as possible, but networking conditions can delay the arrival of any given state update on some or all clients.
+- No granularity guarantee: Any client may not see all individual incremental updates to shared state. This can happen when networking conditions force the Mesh server to rate-limit updates. It also happens when a client late-joins a room.
+State is shared--not events
+You can't send or receive explicit network messages with Mesh Visual Scripting. This might be surprising at first, but it helps establish a networking paradigm that makes it easy to uniformly handle runtime changes as well as late join. 
+Instead of messages, there's shared state (in scene properties and script variables).
+Your scripts can respond to shared state updates in a uniform way--regardless of whether those updates were by a local script or user, or by another client who shares the experience in the same room, or by other clients that were already in the room before you even joined it yourself.
+Not being able to explicitly send network messages means that you'll have to start thinking about shared state (…that gets updates) instead of thinking about shared events (…that may change state). Shared events are a consequence of shared state getting updated, not the opposite.
+Fortunately, Mesh Visual Scripting makes it easy for your visual scripts to react to state updates.
+Use the On State Changed event node and connect its left-hand inputs with any script variable or Component property you'd like to observe for changes, and the event node will trigger your script (connected to its right-hand side) whenever any of the variables or properties connected to it change their value.
+ 
+ 
+ 
+This works with shared state as well as with local state. The On State Changed event will trigger regardless of whether the variables or properties it's observing were changed by the local client, by a remote client, or even by a remote client before the local client even joined the room.
+Using On State Changed to respond to state changes is efficient: There's no idle bandwidth or performance cost. You can have any number of visual scripts passively listen for state updates in this way without negatively affecting the frame rate or bandwidth use of your environment.
+Late join
+Late join happens when a client joins a room that already has other clients connected to it.
+On late join, Mesh receives the room's current state from the server--for example, who's already in the room, and where their avatars are currently located –, and quickly prepares the joining client's local version of the shared environment so that it matches the state shared by everyone in the room.
+For a large part, Mesh Visual Scripting does the same: Any shared Component properties and visual script variables that were changed in the room before the client just joined are updated locally to match the shared state, and then any On State Changed event nodes observing these properties or variables are triggered.
+Late joiners don't replay shared events--they get shared state.
+From the local client's point of view, the environment always evolves from its initial state it had just after loading the scene you've uploaded to Mesh. In the case of late join, the first state change may be larger than what happens while the local user is interacting with the room in an ongoing session, but it's the exact same thing in principle.
+All of this happens as the environment loads up before it even fades in from black. As soon as the user can actually see and interact with the environment, late join is already done.
+Make local state follow shared state
+Very often, the "shared state" a user can observe in an environment is actually a combination of state shared directly by Mesh and local state that was established by visual scripts in response to an event that occurred in the room.
+For example, when a user flips a switch in the environment (shared state), a visual script might change the color of the skybox (local state).
+You might be tempted to apply the local change (update the skybox color) directly in response to the user interacting with the switch. However, even if the interaction event occurs on all clients currently in the room, any client that joins the room later won't get that event simply because they weren't there when it happened.
+Instead, you should make local state follow shared state like this:
+1.	When the user interacts (for example, flips the switch), make this trigger a local event that updates a shared variable (for example, the on/off state of the switch).
+2.	Use On State Changed to observe the shared variable.
+3.	When the On State Changed event triggers (because the shared variable changed its value), apply any local change you want (for example, update the skybox color).
+In this way, local state (the skybox color) is following shared state (the state of the switch).
+What's nice about this is that it works without change for the local client that flipped the switch; for all other, remote clients that are present in the room at the same time; and for any future clients that will join the room later.
+Make local state follow shared state: Best practices
+Local events--for example, an On State Changed event node observing the Is Selected Locally property of a Mesh Interactable Body component:
+- Can change local state that's private to a client. These state changes will remain strictly on the local client and they'll vanish when the client leaves the session.
+- Can change shared state.
+- Cannot change local state to be consistent across clients. A local event only executes on one client, so the updates necessary to keep the local state consistent across clients simply won't happen on any other client.
+Shared events--for example, an On Trigger Enter event node attached to a shared physics trigger collider:
+- Can change local state for momentary effects (for example, a particle effect or a short audio effect). Only clients present in the room when the shared event occurs will be able to see the local effect; any clients joining the room later won't.
+- Cannot change local state to be consistent across clients. A shared event only executes on clients who are present at the time it occurs, but it won't be replayed for clients that join the session later.
+- Must not change shared state. Since a shared event executes on all clients, anything it does is done by all clients very close in time. Depending on the nature of the change, it might end up being repeated several times (for example, a score counter might be incremented by more than one in response to a single event).
+On State Changed events that observe shared state in shared variables or shared component properties:
+- Can change local state to be consistent with the shared state across clients. For this to work well in a repeatable and consistent way for all clients, you must translate every possible new value of the observed shared state into local state, not just a few cherry-picked state transitions (such as Is Selected becoming true).
+Make local state follow shared state: Example
+In this example, there are two interactive buttons in this environment: one labeled with "Star", the other one labeled with "Sponge". Selecting either of the buttons is supposed to do two things:
+- Store the corresponding label in a shared string variable named ObjectKind.
+- Store the reference to a corresponding scene object in a local GameObject reference variable named ObjectRef.
+Here are the two script flows, one for each button. Each listens to the shared Is Selected property of one button's Mesh Interactable Body component and updates ObjectKind and ObjectRef depending on which button was selected:
+  
+Everything seems to work fine…
+ …but only for users who are already in the room when one of the buttons is selected. Any user who joins the session later finds an inconsistent state in their local version of the shared environment: Only ObjectKind is correctly set according to the most recently selected button, but ObjectRef remains null.
+What's wrong with these two script flows?
+First, notice that these script flows are triggered by a shared event because they're both listening to each button's shared Is Selected property changing. This seems to make sense because it's the only way to get the local ObjectRef variable to be updated on all clients.
+However:
+- Shared events must not change shared state--but these script flows are updating the shared ObjectKind variable.
+- Shared events cannot change local state to be consistent across clients--but these script flows are updating the local ObjectRef variable, which we're intending to be consistent on all clients, just like ObjectKind.
+So the way this is currently set up, we actually shouldn't be doing either of the things we need the buttons to do.
+The only obvious way to get out of this conundrum is to make the events that trigger these flows local. We can do that by making the On State Changed event node observe the Is Selected Locally property instead of Is Selected.
+With the event now being local, this means…
+- Local events can change shared state--so we can now safely update the shared ObjectKind variable, and its value will be automatically shared across clients by Mesh Visual Scripting's built-in networking.
+- Local events cannot change local state to be consistent across clients--so we still can't update the local ObjectRef variable in these script flows. We'll have to find another way.
+This is how the two script flows look after these changes:
+ 
+ 
+Now, what can we do to set the local ObjectRef variable so it stays consistent with this?
+Fortunately, these two script flows already establish some shared state we could follow: the shared ObjectKind variable. All we have to do is to use an On State Changed event that observes this variable and updates the local ObjectRef variable depending on its value:
+ 
+This is a fine way to do it because On State Changed events that observe shared state can change local state to be consistent with it--and this will work for the client who pressed the button, and for all other clients present in the same room at the same time, and for all clients who will join the session later.
+Networking pitfalls
+High-frequency shared updates
+Almost the entire scene state is shared by Mesh Visual Scripting by default. That's great for sharing, but it can also sneak in by accident and cause unnecessary network load.
+For example, the following script flow will flood the network with redundant updates to the Transform's rotation--but since all clients are executing it at the same time, none of the remote updates will ever have an actual impact on any client locally:
+ 
+In this case, you should probably use a Local Script Scope to make the Transform component local to every client. (And you should probably use an Animator component rather than an On Update script flow to start with.)
+The Mesh Visual Scripting Diagnostics panel and Content Performance Analyzer (CPA) (as of Mesh Toolkit 5.2411) show a "High-frequency shared update" warning for this kind of construct.
+On Start runs on each client
+You may be tempted to think of the On Start event as something that runs at session startup, but it's actually triggered on each client, locally, when they join the session.
+So it's perfectly suited for initializing local state:
+ 
+But when you try to use On Start to initialize shared state, you'll find that the shared state will unintentionally get re-initialized for everyone whenever anyone joins the session:
+ 
+The Mesh Visual Scripting Diagnostics panel (as of Mesh Toolkit 5.2410) and Content Performance Analyzer (CPA) (as of Mesh Toolkit 5.2411) show a "Shared update on session join" warning when they detect this.
+Sharing is typed--but variable assignment isn't
+For safety and security reasons, shared visual script variables are strongly typed. This means that the type you select in the Variables component for the script variables you've declared defines which exact value type that will be synchronized between clients.
+Unfortunately, Unity Visual Scripting completely ignores declared a variable's declared type when you update its value: For example, you can easily by accident store a Float-typed value in a variable that was declared for type Integer.
+Within the local client, your visual scripts won't notice this error because Visual Scripting will auto-convert the erroneous Float to the expected Integer where needed.
+However, when it comes to synchronizing this value across clients, Mesh Visual Scripting can't take the same liberties: The "eventual consistency" guarantee precludes any value conversion in flight; and safety and security considerations make it unadvisable to accept a different value type from a remote client than what was declared for the variable.
+For example, consider this declaration of a shared variable named MyIntegerVar:
+ 
+Here's a script flow that updates this variable:
+ 
+What could possibly go wrong?
+Unfortunately, the Random | Range script node used in this example comes in two flavors: one that produces a random Integer value, and one that produces a random Float value. The difference is between those two script nodes in the node selector panel is subtle:
+     
+Keep this in mind as a potential reason why a share variable you've created may seem to have stopped being shared. Future releases of Mesh Visual Scripting may warn of this kind of script error when they can detect it.
+Debugging issues and bottlenecks
+Edit-time diagnostics
+In Unity Editor, you can view on-the-fly guidance on errors and potential bandwidth or performance bottlenecks for the Script Machine you're currently editing in the Mesh Visual Scripting Diagnostics panel at the bottom of Unity Editor's Inspector panel.
+Hovering the mouse pointer over an error, warning, or notice in the Diagnostics panel pops up a tooltip with a detailed explanation:
+      
+You can get a compilation of the same diagnostics across your entire environment by opening Content Performance Analyzer (CPA) though the Mesh Toolkit > Content Performance Analyzer menu command and clicking the Run All button:
+ 
+Runtime diagnostics in Mesh Emulator
+When you test-run your environment in Unity Editor, enable the Perf Stats checkbox in the upper-right corner of the Game panel to show real-time summary statistics across all aspects of your environment:
+ 
+The right-most column in the lower-right corner provide summary information on visual script performance, with times given in milliseconds per frame:
+- VS User shows time spent on executing the visual script flows you've created, excluding any overhead incurred by Mesh.
+- VS Env shows overhead incurred by the Mesh Visual Scripting runtime environment.
+- VS Net shows overhead incurred by the Mesh networking stack underneath the Mesh Visual Scripting runtime, dispatching and receiving updates to shared state.
+To get more detailed information on individual visual scripts executing in the environment, you can enable real-time runtime statistics on visual script execution by enabling the Script Stats checkbox in the upper-right corner of the Game panel:
+ 
+The Highest processing load section lists the script flows that have taken the most time to run within the last second, shown as an average time cost per frame.
+- The number of script flows appearing in this section and their total time cost should be as low as possible.
+- Ideally, when the environment is idle, there shouldn't be any script flows executing at all.
+The Highest shared update load section lists shared scene properties and script variables that were most frequently updated within the last second. A load of 100% means that the property or variable was updated in every frame in that second.
+- The number of shared property and script variable updates and their total load in this section should be as low as possible.
+- Ideally, when the environment is idle, no shared properties or variables should be updated at all.
+- If you notice any properties or script variables showing up in this section that you didn't intend to be synchronized over network across clients, consider adding Local Script Scope components to make them local.
+You can click on any game object name in the middle column to directly jump to the corresponding game object in the Hierarchy panel.
+You can click any other part of the Script Stats panel, or press Shift+X, to temporarily halt its updates if you want to have a closer look at a situation. Click it again, or press Shift+X again, to resume updating it.
+Runtime diagnostics in Mesh
+When running an environment in Mesh (for example, in a Teams event), you can press Ctrl+Shift+F1 to pop up the Networking Info sidebar, which shows lots of very technical information about the current session. Scroll down to find detailed information on visual scripts running in the environment:
+ 
+The "(last … seconds, … frames)" statement directly below the Visual Scripting section heading shows the number of seconds and frames aggregated for the counters shown below. Up to 90 seconds of data is aggregated before the counters reset.
+The table directly below shows information on sharing:
+- The Props, Var, and Event rows describe shared properties, shared script variables, and shared events, respectively.
+- The Update column counts how often properties or variables were updated by visual scripts.
+- The Send (and the adjacent Bytes) column counts how often property, variable, or event updates were sent over network. This number can be lower than the Update count due to rate limiting and because redundant updates may not be sent at all.
+- The Recv (and the adjacent Bytes) column counts how often property, variable, or event updates were received over network from other clients.
+- The Bytes columns in this table don't account for all networking overheads and can only be meaningfully used to compare between runs. Actual bandwidth use may be much higher.
+The Most execution time table lists all visual script flows by how much time they took to execute. The highlighted row labeled "[all]" shows cumulative data across all rows, including rows currently not shown. Click "Show more rows…" to reveal more rows.
+- The Count column counts how often this script flow was executed.
+- The Mean column shows the average time cost per frame, in milliseconds, of this script flow.
+- The Event column names the event node that triggered the script flow.
+- The Target column names the Script Machine that executed the script flow.
+The Most frequent shared updates and Most frequent shared sends tables list shared properties and shared script variables that were most frequently updated by visual scripts or had updates dispatched over network, respectively. The highlighted rows labeled "[all]" show cumulative data across all rows, including rows currently not shown. Click "Show more rows…" to reveal more rows.
+- The Count column counts how often this shared property or shared variable was updated or had an update dispatched over network, respectively.
+- The Name column names the shared property or shared variable.
+- The Target column names the component hosting the property or variable.
+Press Ctrl+Shift+F1 for a second time to enlarge the Networking Info panel, which reveals the entire transform path of the Target game objects in the tables shown above.
+To close the panel, press Ctrl+Shift+F1 for a third time.
