@@ -4,7 +4,7 @@ description: Release notes for the Microsoft Mesh Toolkit with a list of importa
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
-ms.date: 4/22/2024
+ms.date: 07/11/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
@@ -31,9 +31,40 @@ These are the offerings and packages currently available. There may be slight di
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2405.X | 2024-5-22     |
-| Mesh toolkit (Preview)     | 5.2404.X | 2024-3-12     |
-| Mesh on PC/Quest           | 5.2406.X | 2024-4-12     |
+| Mesh toolkit               | 5.2408.X | 2024-07-10     |
+| Mesh on PC/Quest           | 5.2408.X | 2024-07-10     |
+
+## Mesh Toolkit 5.2408.X
+
+### What's new
+
+#### Content Performance Analyzer (CPA)
+
+* The CPA tool now contains a new analyzer to check for occlusion culling data. If static objects exist in the scene without occlusion data, this will block upload until resolved.
+
+* The CPA tool now contains AVP quality options for AVP simulation.
+
+#### Mesh Toolkit Uploader
+
+* Fixed bug which caused the upload to fail during thumbnail generation when the file was not on disk.
+
+* Fix a bug where saving a scene with TMP text caused the mesh toolkit package to reimport.
+
+* Fix a bug that allowed the user to still use a deprecated version of the toolkit.
+
+* Settings title changed from "Mesh Uploader Settings" to "Mesh Toolkit Settings"
+
+## Mesh Toolkit 5.2407.X
+
+### What's new
+
+- You can now enter [Play Mode with Mesh Emulation](../develop/debug-and-optimize-performance/mesh-emulator.md) with [Domain Reloading disabled](../develop/debug-and-optimize-performance/speed-up-mesh-emulation.md). This should significantly speed up the start and stop times of the Mesh Emulator, allowing you to iterate faster.
+
+- Fixed a bug where saving a scene with TMP text caused the mesh toolkit package to reimport.
+
+- Duplicate environment names are no longer allowed in the same collection.
+
+- Add menu "Mesh Toolkit/Configure/Apply Mesh Font to Open Scenes" that will update fonts on open scenes TextMesh pro components to use default Mesh font.
 
 ## Mesh Toolkit 5.2406.X
 

@@ -13,6 +13,27 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
+## Version 5.2409.XX (July 23, 2024)
+
+### New loading screens
+
+* Updated images and text when joining an Immersive Space in Teams.
+### Personal boundary
+
+* Avatars now have a Personal Boundary that prevents other avatars from walking, standing, and teleporting too close to your avatar.
+
+* If you're in the middle of a crowd, you can now also teleport through other avatars to move away from the crowd.
+
+## Version 5.2408.XX (July 01, 2024)
+
+### Immersive spaces available on Mac
+
+As of July 8th, 2024, the **View** > **Immersive space (3D)** option is available in Teams desktop for Mac, removing the requirement to be a part of the Teams Preview Experience to access immersive spaces on Mac.
+
+### Resolved issues
+
+* Fixed an issue where changing the environment settings in a Teams meeting in a channel didn't apply correctly. (17706)
+
 ## Version 5.2406.0 (May 23, 2024)
 
 * For returning users, the pre-join screen with avatar selection and customization is skipped to make the experience of joining the immersive space faster. The second pre-join screen following the avatar selection and customization screen was also removed for new and returning users.

@@ -167,18 +167,7 @@ about managing feedback, see
 
 ## Configure service plan to allow user access
 
-> [!IMPORTANT]
-> In order to streamline the admin experience, admins will no longer need to configure Mesh in M365 Apps Admin Center. If you had previously restricted Mesh access to users or groups in your organization via the Mesh policy found in the M365 Apps Admin Center, you will need to switch to restricting access via the Mesh service plan instead in the M365 Admin Center (MAC) **by the end of February, 2024**.
-
-For more information about service plans, see [Configure access to Mesh using service plans](setup-m365-mesh.md#configure-access-to-mesh-using-service-plans). 
-
-## End user license agreement
-
-Your users must enter a separate agreement directly with Microsoft to enable spatial audio for Mesh experiences. That agreement is presented to your users before the user's first use of Mesh. If a user does not wish to enter into that agreement, the user cannot use Mesh.
-
-If an admin does not agree to the license agreement terms, then admins can disable Mesh for users via Service Plans described above.
-
-For more info about service plans and the end user license agreement, see [End user license agreement](setup-m365-mesh.md#end-user-license-agreement).
+For more information about service plans, see [Configure access to Mesh using service plans](setup-m365-mesh.md#configure-access-to-mesh-using-service-plans).
 
 ## Review endpoint managers
 
@@ -212,6 +201,12 @@ As with all Microsoft products, allowing the endpoints and ports required for Me
 [!INCLUDE [Include file for the custom immersive spaces ports and firewall requirements in Mesh article](../../Includes/custom-immersive-spaces-ports-firewall.md)]
 
 ### Conditional Access & Quest
+
+> [!NOTE]
+> Conditional Access policies should be modified only by someone in your organization with a clear understanding of the implications of the changes. Consult your security team or other expert in your company security policies before making any changes.
+
+> [!NOTE]
+> Mesh does not currently support Mobile Application Management (MAM) which would be needed in situations where your organization supports the use of Personal Quest devices (BYOD).
 
 Conditional access is an important part of a zero-trust approach to helping secure your network and resources. As part of zero trust, many companies use conditional access features policies with Microsoft Entra and Microsoft Intune to restrict the types of devices that are permitted to access company resources, and even the operating system version and configuration on those devices; devices that meet the defined profile are allowed in, and any other device that is not specified is denied access. Meta has released a beta GA version MDM support for Quest that works with Intune. Each company using Mesh in pre-release will have to work with their security and endpoint management teams to decide if a policy can be constructed that is acceptable to the company's risk profile while still permitting access to Quest devices.
 

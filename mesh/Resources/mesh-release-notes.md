@@ -4,7 +4,7 @@ description: Mesh release notes
 ms.service: mesh
 author: typride  
 ms.author: tmilligan
-ms.date: 05/29/2024
+ms.date: 07/02/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -17,18 +17,101 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | July 23      | 5.2409.XX    |
+| 2024         | July 02      | 5.2408.XX    |
 | 2024         | June 17      | 5.2407.XX    |
 | 2024         | May 23       | 5.2406.XX    |
 | 2024         | May 13       | 5.2405.XX    |
 | 2024         | April 18     | 5.2403.XX+   |
-| 2024         | April 9      | 5.2403.XX    |
+| 2024         | April 09      | 5.2403.XX   |
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
-## Version 5.2407.0
+## Version 5.2409.XX
 
 ### What's new
+
+#### Avatar Reactions
+
+* Ready to dance in Mesh? Get groovy with Avatar Reactions!
+
+    We are excited to announce the release of Avatar Reactions for Mesh immersive experiences! In addition to the standard emoji-based reactions, you can now react with a wider variety of Avatar reactions, making avatar interactions more dynamic, personal, and fun!
+
+    **Key Features:**
+
+    *Expressive Animations:* Avatars can now perform a wider variety of reactions, including dancing, celebrating, and more.
+
+    *Real-Time Reactions:* Reactions are performed in real-time, enhancing the liveliness of virtual meetings and interactions.
+
+    :::image type="content" source="media/Basic-avatar-emotes-standalone.png" alt-text="Screenshot of basic avatar emotes in the Mesh application.":::
+
+    In addition to the standard Avatar reactions, you can find a lot of other reactions sorted into seven categories, including a category for ASL signs.
+
+    :::image type="content" source="media/Catalog-avatar-reactions-emotes-standalone.png" alt-text="Screenshot of avatar reactions catalog in standalone application for Mesh.":::
+
+#### Personal boundary
+
+* Avatars now have a Personal Boundary that prevents other avatars from walking, standing, and teleporting too close to your avatar.
+
+* If you're in the middle of a crowd, you can now also teleport through other avatars to move away from the crowd.
+
+### Resolved issues
+
+#### Reliability improvements
+
+- Improved the ability to join an event when experiencing poor network conditions. (56032)
+
+## Version 5.2408.XX
+
+### What's new
+
+#### Multi-room events
+
+> [!IMPORTANT]
+> We are currently rolling out an update to transition multi room events in the Mesh app on PC and Quest to use the same backend infrastructure as Teams for spatial audio. During the rollout, you may find that the additional endpoint and firewall requirements for multi-room may not be required. This rollout should complete by the end of July, 2024.
+>
+> For more information, please see the admin portal message center post at [https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC807460](https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC807460) or read our documentation for the Mesh [Endpoints and firewall configuration](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-configuration).
+
+* We now support up to five broadcasters in multi-room events, up from the previous limit of three. With this change, more people can engage across rooms, including hosts that broadcast themselves or attendees who raise their hand.
+
+    For more info, see [how to Broadcast when producing an event](../events-guide/produce-event.md#broadcast).
+
+* Event hosts can call on attendees from the Host panel when attendees raise their hand to directly to start broadcasting them.
+
+#### Event customization
+
+* Text object is now available when customizing your event. Add text like any other object (Screenshare, Image, Video), move it around the environment, then edit its properties like text style, or size.
+
+    :::image type="content" source="media/Customization-editor-text.png" alt-text="Screenshot of customization session in the Mesh app showing the Text  object.":::
+
+#### Error messaging
+
+* Improved error messaging when a user joins an environment that is not compatible with their application version. In most cases, this is specific to when experimental features are in use.
+
+* Added a **Give feedback** button to error messages that may be hard to diagnose or don't have adequate resolution steps provided.
+
+* Improved error messaging should better inform the user as to why the error occurred.
+
+#### Resolved issues
+
+* Fixed issues that can prevent people from joining an event. (17412, 18048)
+
+* Fixed issue with error message being dismissible when joining events through a link. (18081)
+
+* Fixes to host panel and host user experience. (16512, 16397, 16874)
+
+* The loading background should now display when joining an event directly from Mesh on the web.
+(17420)
+
+
+## Version 5.2407.XX
+
+### What's new
+
+#### Text object added to event customization catalog
+
+* There's now a Text object available in the Catalog when customizing an event. The text object has a cou
 
 #### Endpoint and firewall requirements
 
@@ -46,7 +129,7 @@ Microsoft Mesh application
 
 * Fixed an issue where you might not always see your avatar's reaction after you click on a reaction button.
 
-## Version 5.2406.0
+## Version 5.2406.XX
 
 ### What's new
 

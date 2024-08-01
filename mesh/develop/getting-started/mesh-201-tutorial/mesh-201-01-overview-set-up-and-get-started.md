@@ -59,7 +59,7 @@ If you've been developing Mesh experiences for a while and are familiar not only
 
 [Turn object icons off for a clearer view](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#turn-object-icons-off-for-a-clearer-view)
 
-[Mesh Emulation Mode](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#using-mesh-emulation-mode)
+[Play Mode with Mesh Emulation](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#using-play-mode-with-mesh-emulation)
 
 [Mesh Thumbnail Camera](../mesh-101-tutorial/mesh-101-02-prepare-the-project.md#add-the-mesh-thumbnail-camera)
 
@@ -84,6 +84,8 @@ At the end of this tutorial, you have the option to build and publish the comple
 ## An M365 Office subscription and familiarity with the Azure portal.
 
 You'll need to use the Azure Portal in order to set up OpenAI in Chapter 6.
+
+**Important**: OpenAI is only available to approved enterprise customers and partners. If you're not yet in this group, you must submit a [registration form](https://aka.ms/oai/access). [Learn more about the registration process](/legal/cognitive-services/openai/limited-access).
 
 ## Set things up for Mesh
 
@@ -164,7 +166,7 @@ We recommend that you open the **FinishedProject** scene, run it, and visit a fe
 
 ## Check the Scene window "Scale" setting
 
-If things look a little blurry in the **Game** window when you're in Play mode, take a look at the **Scale** slider located just above the window. For the best visual fidelity, the slider show be moved all the way to the left so the scale equals "1x."
+If things look a little blurry in the **Game** window when you're in Play mode, take a look at the **Scale** slider located just above the window. For the best visual fidelity, the slider should be moved all the way to the left so the scale equals "1x."
 
 ![A screenshot of a computer Description ](../../../media/mesh-201/071-scale-settings.png) 
 
