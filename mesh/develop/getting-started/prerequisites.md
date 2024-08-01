@@ -3,7 +3,7 @@ title: Prerequisites for Mesh development
 description: Prerequisites required for Mesh development, including Unity information.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/25/2024
+ms.date: 8/1/2024
 ms.topic: overload
 ms.service: mesh
 keywords: Microsoft Mesh, prerequisites, getting started, Unity, license

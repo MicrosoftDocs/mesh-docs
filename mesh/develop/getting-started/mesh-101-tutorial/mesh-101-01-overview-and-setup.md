@@ -4,7 +4,7 @@ description: Learn about the prerequsites and setup process for the Mesh 101 tut
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/25/2024
+ms.date: 8/1/2024
 ms.topic: Tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, GitHub
 ---
