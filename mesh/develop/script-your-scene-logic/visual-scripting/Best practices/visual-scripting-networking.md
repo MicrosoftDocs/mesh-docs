@@ -9,35 +9,53 @@ ms.topic: conceptual
 keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, graphs, Mesh, best practices, performance, networking
 ---
 
-# Mesh Visual Scripting Networking Basics
+# Mesh Visual Scripting best practices for Networking
 
-Networking basics
-In Mesh, most scene properties are by default automatically shared across all clients connected to the same room: for example, a scene object's Transform position and rotation, a Component's enabled state, or a TextMeshPro's text.
+## Overview
+
+In Mesh, most scene properties are by default automatically shared across all clients connected to the same room. For example, a scene object's Transform position and rotation, a Component's enabled state, or a TextMeshPro's text.
+
 As a rule of thumb, component properties that have simple scalar types (Boolean, Integer, Float, or String) are automatically shared by default. Collection types (lists and sets) and scene object references aren't shared.
+
 Visual script nodes that access or modify properties in Mesh are tagged with a label that indicates if they're "Shared by all clients" or "Local to this client":
-         
-Script Object variables are shared by default as well if you've declared them with a simple scalar type (Boolean, Integer, Float, or String):
+
+![______________](../../../../media/mesh-scripting/vs-best-practices/001-node-labels.png)
+
+Script Object variables are shared by default as well if you've declared them with a simple scalar type (*Boolean*, *Integer*, *Float*, or *String*):
+
+![______________](../../../../media/mesh-scripting/vs-best-practices/002-script-variable.png)
  
-Mesh doesn't support Scene variables; but you can use standalone Variables components in the environment to stash variables (that can be shared) independently from any specific Script Machine component.
-If you don't want auto-sharing of properties or Object variables, you can add a Local Script Scope component to your scene. This will make all scene properties and script variables on this game object and any of its descendants local. 
+Mesh doesn't support *Scene* variables, but you can use standalone *Variables* components in the environment to stash variables that can be shared independently from any specific *Script Machine* component.
+
+If you don't want auto-sharing of properties or *Object* variables, you can add a *Local Script Scope* component to your scene. This will make all scene properties and script variables on this game object and any of its descendants local.
+
+![______________](../../../../media/mesh-scripting/vs-best-practices/003-local-script-scope-component.png)
  
-For local script variables that you're only using in a single Script Machine, it's best to use Graph variables, which are never shared across clients by Mesh.
+For local script variables that you're only using in a single *Script Machine*, it's best to use *Graph*  variables, which are never shared across clients by Mesh.
+
 Sharing through Mesh Visual Scripting gives the following guarantees:
-- Guaranteed eventual consistency: All clients will eventually arrive at the same shared state.
-- Guaranteed per-component atomicity:  All updates to properties of the same scene component (or the same Variables component) in the same update will be applied atomically on each client.
+
+- **Guaranteed eventual consistency**: All clients will eventually arrive at the same shared state.
+
+- **Guaranteed per-component atomicity**: All updates to properties of the same scene component (or the same *Variables* component) in the same update will be applied atomically on each client.
+
 However:
-- No ordering guarantee: Updates applied by one client to several different scene components may arrive in different orders on different clients.
-- No timeliness guarantee: Mesh will try its best to replicate state changes across clients as quickly as possible, but networking conditions can delay the arrival of any given state update on some or all clients.
-- No granularity guarantee: Any client may not see all individual incremental updates to shared state. This can happen when networking conditions force the Mesh server to rate-limit updates. It also happens when a client late-joins a room.
-State is shared--not events
-You can't send or receive explicit network messages with Mesh Visual Scripting. This might be surprising at first, but it helps establish a networking paradigm that makes it easy to uniformly handle runtime changes as well as late join. 
-Instead of messages, there's shared state (in scene properties and script variables).
-Your scripts can respond to shared state updates in a uniform way--regardless of whether those updates were by a local script or user, or by another client who shares the experience in the same room, or by other clients that were already in the room before you even joined it yourself.
-Not being able to explicitly send network messages means that you'll have to start thinking about shared state (…that gets updates) instead of thinking about shared events (…that may change state). Shared events are a consequence of shared state getting updated, not the opposite.
-Fortunately, Mesh Visual Scripting makes it easy for your visual scripts to react to state updates.
-Use the On State Changed event node and connect its left-hand inputs with any script variable or Component property you'd like to observe for changes, and the event node will trigger your script (connected to its right-hand side) whenever any of the variables or properties connected to it change their value.
- 
- 
+
+- **No ordering guarantee**: Updates applied by one client to several *different* scene components may arrive in different orders on different clients.
+
+- **No timeliness guarantee**: Mesh will try its best to replicate state changes across clients as quickly as possible, but networking conditions can delay the arrival of any given state update on some or all clients.
+
+- **No granularity guarantee**: Any client may not see all individual incremental updates to shared state. This can happen when networking conditions force the Mesh server to rate-limit updates. It also happens when a client late-joins a room.
+
+## State is shared--not events
+
+You can't send or receive explicit network messages with Mesh Visual Scripting. This might be surprising at first, but it helps establish a networking paradigm that makes it easy to uniformly handle runtime changes as well as late join. Instead of messages, there's *shared state* in scene properties and script variables.
+
+Your scripts can respond to shared state updates in a uniform way regardless of whether those updates were by a local script or user, or by another client who shares the experience in the same room, or by other clients that were already in the room before you even joined it yourself.
+
+Not being able to explicitly send network messages means that you'll have to start thinking about *shared state that gets updates* instead of thinking about *shared events that may change state*. Shared events are a consequence of shared state getting updated, not the opposite.
+
+Fortunately, Mesh Visual Scripting makes it easy for your visual scripts to react to state updates. Use the *On State Changed* event node and connect its left-hand side inputs with any script variable or Component property you'd like to observe for changes, and the event node will trigger your script (connected to its right-hand side) whenever any of the variables or properties connected to it change their value.
  
 This works with shared state as well as with local state. The On State Changed event will trigger regardless of whether the variables or properties it's observing were changed by the local client, by a remote client, or even by a remote client before the local client even joined the room.
 Using On State Changed to respond to state changes is efficient: There's no idle bandwidth or performance cost. You can have any number of visual scripts passively listen for state updates in this way without negatively affecting the frame rate or bandwidth use of your environment.
