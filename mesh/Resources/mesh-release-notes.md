@@ -36,11 +36,11 @@ Microsoft Mesh application
 
 * Ready to dance in Mesh? Get groovy with Avatar Reactions!
 
-    We are excited to announce the release of Avatar Reactions for Mesh immersive experiences! In addition to the standard emoji-based reactions, you can now react with a wider variety of Avatar movements, making avatar interactions more dynamic, personal, and fun!
+    We are excited to announce the release of Avatar Reactions for Mesh immersive experiences! In addition to the standard emoji-based reactions, you can now react with a wider variety of Avatar reactions, making avatar interactions more dynamic, personal, and fun!
 
     **Key Features:**
 
-    *Expressive Animations:* Avatars can now perform a variety of reactions, including dancing, celebrating, and more.
+    *Expressive Animations:* Avatars can now perform a wider variety of reactions, including dancing, celebrating, and more.
 
     *Real-Time Reactions:* Reactions are performed in real-time, enhancing the liveliness of virtual meetings and interactions.
 
