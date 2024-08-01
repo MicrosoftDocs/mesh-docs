@@ -12,3 +12,5 @@ items:
   href: physics/toc.yml  
 - name: Avatar and object interactions
   href: avatar-and-object-interactions/toc.yml   
+- name: Spatial Audio Customization
+  href: spatial-audio-customization/toc.yml

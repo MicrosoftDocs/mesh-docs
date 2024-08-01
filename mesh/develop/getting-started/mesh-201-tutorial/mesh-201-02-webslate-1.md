@@ -3,7 +3,7 @@ title: Mesh 201 Pt. 2':' Load a local non-shared HTML file into a WebSlate
 description: Learn about loading a local non-shared HTML file into a WebSlate.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 5/21/2024
+ms.date: 7/11/2024
 ms.topic: tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML

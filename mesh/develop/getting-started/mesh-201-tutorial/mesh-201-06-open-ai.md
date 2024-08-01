@@ -4,7 +4,7 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/3/2024
+ms.date: 7/18/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
@@ -13,13 +13,15 @@ keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates
 
 In this chapter, we move on to the fifth and final station where you'll learn how to implement an Azure OpenAI-based virtual assistant or "chatbot". Note that you could use any AI service you want here (for example, Copilot Studio). Keeping with the theme of searching for a location for a wind farm, the AI assistant will be customized to answer wind farm-related questions.
 
+**Important**: OpenAI is only available to approved enterprise customers and partners. If you're not yet in this group, you must submit a [registration form](https://aka.ms/oai/access). [Learn more about the registration process](/legal/cognitive-services/openai/limited-access).
+
 ## Setting up for this station
 
 In order to complete this station, you'll need to visit the Azure Portal and then get a *URI* (also called "Endpoint") and a *key* for your tenant. Later, you'll insert the key into some code that'll enable you to call Azure OpenAI. Let's do this step now so that you don't have to interrupt your workflow later on.
 
 ### Create an Azure OpenAI resource
 
-1. In your browser, navigate to the [Azure Portal](https://azure.microsoft.com/en-us/get-started/azure-portal/) and then log in.
+1. In your browser, navigate to the [Azure Portal](https://azure.microsoft.com/get-started/azure-portal/) and then log in.
 1. In the Search box at the top of the window, type in "azure openai" and then press the Enter key. This takes you to the **Azure AI services | Azure OpenAI** page.
 
     ![__________________________________](../../../media/mesh-201/109-openai-page-in-azure-portal.png)
@@ -28,8 +30,8 @@ In order to complete this station, you'll need to visit the Azure Portal and the
 
     ![__________________________________](../../../media/mesh-201/110-create-button.png)
 
-**IMPORTANT**: For many of the settings detailed below, we don't make a specific recommendation. You should choose the options that make the most sense for you and your organization. 
-
+    **IMPORTANT**: For many of the settings detailed below, we don't make a specific recommendation. You should choose the options that make the most sense for you and your organization. 
+    
 1. On the **Basics page**, create names where requested, and choose the options you want for **Subscription**, **Region**, and **Pricing tier**.
 
 1. On the **Network** page, choose the option you want.
@@ -72,13 +74,34 @@ The resource deploys and you should see a message saying that the deployment is 
 
     ![__________________________________](../../../media/mesh-201/117-keys-and-endpoints.png)
 
-1. On the **Keys and Endpoint** page, click the "Copy to clipboard" button for **KEY 1** *or* *KEY 2** (it doesn't matter which one) and then paste it into a text file using Windows Notepad or another text editor.
+1. On the **Keys and Endpoint** page, click the "Copy to clipboard" button for **KEY 1** *or* **KEY 2** (it doesn't matter which one) and then paste it into a text file using Windows Notepad or another text editor.
 
     ![__________________________________](../../../media/mesh-201/118-copy-key-and-endpoint.png)
 
 1. Click the "Copy to clipboard" button for **Endpoint** and paste it into the same text file.
 
 1. Save the text file. You'll need these two pieces of information later in the tutorial.
+
+### Create a packages loading file
+
+In order for packages to load correctly, you must add a special file to the project.
+
+1. In your code editor, create a file named "Directory.Packages.props", and then add the following text to it:
+
+    ```
+    <Project>
+    <Import Project="$([MSBuild]::GetPathOfFileAbove(Directory.Packages.props, $(MSBuildThisFileDirectory)..))" />
+
+    <ItemGroup>
+        <PackageVersion Include="Azure.AI.OpenAI" Version="1.0.0-beta.15"/>
+    </ItemGroup>
+    
+    </Project>
+    ```
+
+1. Save the file in your project in the **Assets** > **.MeshCloudScripting** > **StartingPoint** folder.
+
+**Important**: If you plan to run the **FinishedProject** scene and try out Station 5, you must also add this file to the **Assets** > **.MeshCloudScripting** > **FinishedProject** folder.
 
 ## Add the prefab for Station 5
 
@@ -101,6 +124,8 @@ The resource deploys and you should see a message saying that the deployment is 
 
     ![__________________________________](../../../media/mesh-201/107-openai-uri-and-key.png)
 
+1. Save and close the file.
+
 ## Update the csproj file
 
 1. In the File Explorer window that displays the Mesh Cloud Scripting files, open the file named *StartingPoint.csproj* in your code editor.
@@ -113,50 +138,131 @@ The resource deploys and you should see a message saying that the deployment is 
 
 1. Delete the comment and replace it with the line below:
 
-   	`<PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.15" />`
+    ```
+    <PackageReference Include="Azure.AI.OpenAI" />
+    ```
 
     ![__________________________________](../../../media/mesh-201/108-open-ai-pasted.png)
 
-1. Save the file.
+1. Save and close the file.
 
-## Add the code that displays the OpenAI input dialog
+## Add the code that enables OpenAI
 
-1. In the File Explorer window that displays the Mesh Cloud Scripting files, open the file named *App.cs* in your code editor.
+1. In the File Explorer window that displays the Mesh Cloud Scripting files, navigate to the *StartingPoint* folder and then open the file named *App.cs* in your code editor.
 
     ![__________________________________](../../../media/mesh-201/089-app-dot-cs-highlighted.png)
 
-1. In the App.cs file, navigate to line 72, where'll you see a comment telling you to paste some code there.
+1. In the App.cs file, find the "Paste code here" comment at the top of the list of `using` directives.
 
-    ![__________________________________](../../../media/mesh-201/094-paste-code-here.png)
+    ![__________________________________](../../../media/mesh-201/124-paste-code-using-directives.png)
 
-1. Copy the code below:
+1. Copy the code below.
+
     ```
-        await _app.ShowInputDialogToParticipantAsync("Ask Azure OpenAI", args.Participant).ContinueWith(async (response) =>
+    using Azure;
+    using Azure.AI.OpenAI;
+    ```
+1. Replace the "Paste code here" comment you just found with the code you copied.
+
+    ![__________________________________](../../../media/mesh-201/125-code-inserted-using-directives.png)
+
+1. Find the "Paste code here" comment located below the `_weatherAPIKey_` field. 
+
+    ![__________________________________](../../../media/mesh-201/126-paste-code-below-weatherapi-key.png)
+
+1. Copy the code below.
+
+    ```
+    private OpenAIClient _openAIClient;
+    ```
+
+1. Replace the "Paste code here" comment you just found with the code you copied.
+
+    ![___](../../../media/mesh-201/127-code-inserted-below-fields.png)
+
+1. Find the "Paste code here" comment located in the body of the constructor.
+
+    ![__________________________________](../../../media/mesh-201/128-paste-code-in-constructor.png)
+
+1. Copy the code below.
+
+    ```
+    Uri azureOpenAIResourceUri = new(configuration.GetValue<string>("AZURE_OPENAI_API_URI"));
+    AzureKeyCredential azureOpenAIApiKey = new(configuration.GetValue<string>("AZURE_OPENAI_API_KEY"));
+    _openAIClient = new(azureOpenAIResourceUri, azureOpenAIApiKey);
+    ```
+
+1. Replace the "Paste code here" comment you just found with the code you copied.
+
+    ![__________________________________](../../../media/mesh-201/129-code-inserted-in-constructor.png)
+
+1. Find the "Paste code here" comment that follows the `refreshButtonNode` *if* statement inside the `StartAsync()` method.
+
+    ![__________________________________](../../../media/mesh-201/130-paste-code-in-startsync-method.png)
+
+1. Copy the code below.
+
+    ```
+    var aiParentNode = _app.Scene.FindFirstChild("5 - AIAssistant", true) as TransformNode;
+    var infoButton = aiParentNode?.FindFirstChild<InteractableNode>(true);
+    
+    if (infoButton != null)
+    {
+        infoButton.Selected += async (sender, args) =>
         {
-            try
-            {
-                if (response.Exception != null)
-                {
-                    throw response.Exception.InnerException ?? response.Exception;
-                }
-
-                string participantInput = response.Result;
-
-                // Paste code here
-
-                // Wait for a response from OpenAI based on the user's message
-                // Paste code here
-            }
-            catch (Exception ex)
-            {
-                _logger.LogCritical($"Exception during OpenAI request: {ex.Message}");
-            }
-        }, TaskScheduler.Default);
+            // Ensure we have weather data before beginning the conversation
+            await GetCurrentWeather(_latlong);
+    
+            // Display an input dialog for the user to send a message to the large language model (LLM)
+            // Paste code here
+        };
+    }
     ```
 
-1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 72.
+1. Replace the "Paste code here" comment you just found with the code you copied.
 
-    ![__________________________________](../../../media/mesh-201/095-pasted-code.png)
+    ![__________________________________](../../../media/mesh-201/131-code-inserted-in-start-async-method.png)
+
+## Add the code that displays the OpenAI input dialog
+
+1. Find the "Paste code here" comment located shortly after the `GetCurrentWeather()` method in the `infoButton` *if* statement.
+
+    ![__________________________________](../../../media/mesh-201/094-paste-code-get-current-weather-method.png)
+
+1. Copy the code below.
+
+    ```
+    await _app.ShowInputDialogToParticipantAsync("Ask Azure OpenAI", args.Participant).ContinueWith(async (response) =>
+    {
+        try
+        {
+            if (response.Exception != null)
+            {
+                throw response.Exception.InnerException ?? response.Exception;
+            }
+    
+            string participantInput = response.Result;
+    
+            // Paste code here
+    
+            // Wait for a response from OpenAI based on the user's message
+            // Paste code here
+        }
+        catch (Exception ex)
+        {
+            var log = $"Exception during OpenAI request: {ex.Message}";
+            _logger.LogCritical(log);
+        
+            if (!response.IsCanceled)
+            {
+                _app.ShowMessageToParticipant(log, args.Participant);
+            }
+        }
+    }, TaskScheduler.Default);
+    ```
+1. Replace the "Paste code here" comment you just found with the code you copied.
+
+    ![__________________________________](../../../media/mesh-201/132-code-inserted-after-get-weather-method.png)
 
     The code does the following:
 
@@ -167,6 +273,10 @@ The resource deploys and you should see a message saying that the deployment is 
 ## Send GPT-3.5 Turbo the result of the input dialog
 
 The code below sends the GPT-3.5 Turbo model the result of the input dialog with instructions on how to respond with the current weather data.
+
+1. Find the first "Paste code here" comment in the try...catch block you just pasted.
+
+    ![__________________________________](../../../media/mesh-201/133-paste-code-in-try-catch-block.png)
 
 1. Copy the code below:
 
@@ -190,7 +300,7 @@ The code below sends the GPT-3.5 Turbo model the result of the input dialog with
         };
     ```
 
-1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 83.
+1. Replace the "Paste code here" comment you just found with the code you copied.
 
     ![__________________________________](../../../media/mesh-201/096-code-system-messages.png)
 
@@ -204,6 +314,10 @@ The code below sends the GPT-3.5 Turbo model the result of the input dialog with
 
 ## Add the code that displays the response from the LLM
 
+1. Find the remaining "Paste code here" comment in the try...catch block you just pasted.
+
+    ![__________________________________](../../../media/mesh-201/134-paste-code-again-in-try-catch-block.png)
+
 1. Copy the code below:
 
     ```
@@ -214,7 +328,7 @@ The code below sends the GPT-3.5 Turbo model the result of the input dialog with
             _app.ShowMessageToParticipant($"<i>You asked: {participantInput}</i>\n\nResponse: {responseMessage.Content}", args.Participant);
     ```
 
-1. Paste the code into the App.cs file, replacing the "Paste code here" comment on line 103.
+1. Replace the "Paste code here" comment you just found with the code you copied.
 
     ![__________________________________](../../../media/mesh-201/097-pasted-code-3.png)
 
@@ -224,7 +338,7 @@ The code below sends the GPT-3.5 Turbo model the result of the input dialog with
     - The LLM sends back several responses in an array (*responseMessage*). You can choose the one you want to show. 
     - Call *ShowMessageToParticipant()* in the Mesh Cloud Scripting API to display the response.
 
-1. Save the file.
+1. Save and close the file.
 
 ## Test your work
 

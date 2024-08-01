@@ -25,11 +25,11 @@ In this article, you'll learn about how to prepare for your first Mesh Cloud Scr
 
 - Make sure you have the following installed:
 
-[Azure CLI 2.40.0.](/cli/azure/install-azure-cli)
+[Azure CLI 2.40.0](/cli/azure/install-azure-cli). This is needed for authenticating and deploying the Mesh Cloud Scripting solution to Azure.
 
-[.NET 6.0 SDK Windows](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) (This is needed by the Mesh Cloud Scripting cloud deployment tool.)
+[.NET 6.0 SDK Windows](https://dotnet.microsoft.com/en-us/download/dotnet/6.0). This is needed by the cloud infrastructure tools for publishing and as well, for running the Mesh Cloud Scripting project locally.
 
-[.NET 7.0 SDK Windows](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
+[.NET 8.0 SDK Windows](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). This is needed for building the Mesh Cloud Scripting project, as the latter needs to target .NET 8.
 
 **To confirm that you have the Azure CLI installed**:
 
