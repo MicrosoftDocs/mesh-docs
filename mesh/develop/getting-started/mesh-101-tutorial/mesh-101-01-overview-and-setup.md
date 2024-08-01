@@ -5,7 +5,7 @@ ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
 ms.date: 8/1/2024
-ms.topic: Tutorial
+ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, GitHub
 ---
 
