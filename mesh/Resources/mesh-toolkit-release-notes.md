@@ -26,8 +26,8 @@ For purposes of this document, there are two categories of users:
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2408.X | 2024-08-01     |
-| Mesh on PC/Quest           | 5.2408.X | 2024-07-10     |
+| Mesh toolkit               | 5.2409.X | 2024-08-01     |
+| Mesh on PC/Quest           | 5.2409.X | 2024-07-23     |
 
 ## Mesh Toolkit 5.2409.X
 
