@@ -57,5 +57,5 @@ These are always okay to use:
 
 > [!div class="nextstepaction"]
 > [Visual Scripting best practices overview](./visual-scripting-best-practices-overview.md)
-> [Visual Scripting best practices for networking](./visual-scripting-networking.md)
-> [Visual Scripting best practices for debugging](./visual-scripting-debugging.md)
+> [Visual Scripting best practices for networking](./visual-scripting-best-practices-networking.md)
+> [Visual Scripting best practices for debugging](./visual-scripting-best-practices-debugging.md)

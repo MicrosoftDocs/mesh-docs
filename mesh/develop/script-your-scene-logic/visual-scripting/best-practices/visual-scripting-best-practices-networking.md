@@ -189,3 +189,10 @@ What could possibly go wrong? Unfortunately, the *Random* | *Range* script node 
 ![______________](../../../../media/mesh-scripting/vs-best-practices/013-random-range-node-two-flavors.png)
      
 Keep this in mind as a potential reason why a share variable you've created may seem to have stopped being shared. Future releases of Mesh Visual Scripting may warn of this kind of script error when they can detect it.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Visual Scripting best practices overview](./visual-scripting-best-practices-overview.md)
+> [Visual Scripting best practices for performance](./visual-scripting-best-practices-performance.md)
+> [Visual Scripting best practices for debugging](./visual-scripting-best-practices-debugging.md)

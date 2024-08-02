@@ -92,6 +92,6 @@ Press Ctrl+Shift+F1 for a third time.
 
 > [!div class="nextstepaction"]
 > [Visual Scripting best practices overview](./visual-scripting-best-practices-overview.md)
-> [Visual Scripting best practices for performance](./visual-scripting-performance.md)
-> [Visual Scripting best practices for networking](./visual-scripting-networking.md)
+> [Visual Scripting best practices for performance](./visual-scripting-best-practices-performance.md)
+> [Visual Scripting best practices for networking](./visual-scripting-best-practices-networking.md)
 
