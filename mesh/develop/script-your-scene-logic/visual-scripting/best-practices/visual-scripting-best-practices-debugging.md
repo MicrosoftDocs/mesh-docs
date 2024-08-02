@@ -65,7 +65,7 @@ When running an environment in Mesh (for example, in a Teams event), you can pre
  
 The **last (number) seconds, (number) frames** statement directly below the **Visual Scripting** section heading shows the number of seconds and frames aggregated for the counters shown below. Up to 90 seconds of data is aggregated before the counters reset. The table directly below shows information on sharing:
 
-- The **Props**, **Var**, and **Event** rows describe shared properties, shared script variables, and shared events, respectively.  
+- The **Prop**, **Var**, and **Event** rows describe shared properties, shared script variables, and shared events, respectively.  
 - The **Update** column counts how often properties or variables were updated by visual scripts.  
 - The **Send** and **Bytes** columns count how often property, variable, or event updates were sent over  network. This number can be lower than the *Update* count due to rate limiting and because redundant updates may not be sent at all.  
 - The **Recv** and **Bytes** columns count how often property, variable, or event updates were received over network from other clients.

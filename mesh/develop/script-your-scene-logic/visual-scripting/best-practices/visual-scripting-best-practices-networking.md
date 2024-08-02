@@ -13,15 +13,15 @@ keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, gra
 
 ## Overview
 
-In Mesh, most scene properties are by default automatically shared across all clients connected to the same room. For example, a scene object's Transform position and rotation, a Component's enabled state, or a TextMeshPro's text.
+In Mesh, most scene properties are by default automatically shared across all clients connected to the same room. For example, a scene object's Transform position and rotation, a component's enabled state, or a TextMeshPro's text.
 
-As a rule of thumb, component properties that have simple scalar types (Boolean, Integer, Float, or String) are automatically shared by default. Collection types (lists and sets) and scene object references aren't shared.
+As a rule of thumb, component properties that have simple scalar types (*Boolean*, *Integer*, *Float*, or *String*) are automatically shared by default. Collection types (lists and sets) and scene object references aren't shared.
 
 Visual script nodes that access or modify properties in Mesh are tagged with a label that indicates if they're "Shared by all clients" or "Local to this client":
 
 ![______________](../../../../media/mesh-scripting/vs-best-practices/001-node-labels.png)
 
-Script Object variables are shared by default as well if you've declared them with a simple scalar type (*Boolean*, *Integer*, *Float*, or *String*):
+Script *Object* variables are shared by default as well if you've declared them with a simple scalar type (*Boolean*, *Integer*, *Float*, or *String*):
 
 ![______________](../../../../media/mesh-scripting/vs-best-practices/002-script-variable.png)
  
@@ -53,9 +53,9 @@ You can't send or receive explicit network messages with Mesh Visual Scripting. 
 
 Your scripts can respond to shared state updates in a uniform way regardless of whether those updates were by a local script or user, or by another client who shares the experience in the same room, or by other clients that were already in the room before you even joined it yourself.
 
-Not being able to explicitly send network messages means that you'll have to start thinking about *shared state that gets updates* instead of thinking about *shared events that may change state*. Shared events are a consequence of shared state getting updated, not the opposite.
+Not being able to explicitly send network messages means that you'll have to start thinking about **shared state that gets updates** instead of thinking about *shared events that cause state updates*. Shared events are a consequence of shared state getting updated, not the opposite.
 
-Fortunately, Mesh Visual Scripting makes it easy for your visual scripts to react to state updates. Use the *On State Changed* event node and connect its left-hand side inputs with any script variable or Component property you'd like to observe for changes, and the event node will trigger your script (connected to its right-hand side) whenever any of the variables or properties connected to it change their value.
+Fortunately, Mesh Visual Scripting makes it easy for your visual scripts to react to state updates. Use the *On State Changed* event node and connect its left-hand side inputs with any script variable or component property you'd like to observe for changes, and the event node will trigger your script (connected to its right-hand side) whenever any of the variables or properties connected to it change their value.
 
 ![______________](../../../../media/mesh-scripting/vs-best-practices/004-on-state-changed-node.png)
  
@@ -69,7 +69,7 @@ Late join happens when a client joins a room that already has other clients conn
 
 On late join, Mesh receives the room's current state from the server--for example, who's already in the room and where their avatars are currently located--and quickly prepares the joining client's local version of the shared environment so that it matches the state shared by everyone in the room.
 
-For a large part, Mesh Visual Scripting does the same. Any shared Component properties and visual script variables that were changed in the room before the client just joined are updated locally to match the shared state, and then any *On State Changed* event nodes observing these properties or variables are triggered.
+For a large part, Mesh Visual Scripting does the same. Any shared component properties and visual script variables that were changed in the room before the client just joined are updated locally to match the shared state, and then any *On State Changed* event nodes observing these properties or variables are triggered.
 
 Late joiners don't replay shared events--they get shared state.
 
@@ -79,7 +79,7 @@ All of this happens as the environment loads up before it even fades in from bla
 
 ## Make local state follow shared state
 
-Very often, the "shared state" a user can observe in an environment is actually a combination of state shared directly by Mesh and local state that was established by visual scripts in response to an event that occurred in the room. For example, when a user flips a switch in the environment (shared state), a visual script might change the color of the skybox (local state). You might be tempted to apply the local change (update the skybox color) directly in response to the user interacting with the switch. However, even if the interaction event occurs on all clients currently in the room, any client that joins the room later won't get that event simply because they weren't there when it happened. Instead, you should *make local state follow shared state* like this:
+Very often, the "shared state" a user can observe in an environment is actually a combination of state shared directly by Mesh and local state that was established by visual scripts in response to an event that occurred in the room. For example, when a user flips a switch in the environment (shared state), a visual script might change the color of the skybox (local state). You might be tempted to apply the local change (update the skybox color) directly in response to the user interacting with the switch. However, even if the interaction event occurs on all clients currently in the room, any client that joins the room later won't get that event simply because they weren't there when it happened. Instead, you should **make local state follow shared state** like this:
 
 1. When the user interacts (for example, flips the switch), make this trigger a *local* event that updates a shared variable (for example, the on/off state of the switch).  
 2.	Use *On State Changed* to observe the shared variable.
@@ -89,21 +89,21 @@ In this way, local state (the skybox color) is following shared state (the state
 
 ## Make local state follow shared state: Best practices
 
-**Local events**: For example, an *On State Changed* event node observing the *Is Selected Locally*  property of a Mesh Interactable Body component:
+**Local events**: For example, an *On State Changed* event node observing the *Is Selected Locally*  property of a *Mesh Interactable Body* component:
 
-- **Can change local state that's private to a client**. These state changes will remain strictly on the local client and they'll vanish when the client leaves the session.  
-- **Can change shared state**.  
-- **Cannot change local state to be consistent across clients**. A local event only executes on one client, so the updates necessary to keep the local state consistent across clients simply won't happen on any other client.
+- 🆗 **Can change local state that's private to a client**. These state changes will remain strictly on the local client and they'll vanish when the client leaves the session.  
+- 🆗 **Can change shared state**.  
+- ❌ **Cannot change local state to be consistent across clients**. A local event only executes on one client, so the updates necessary to keep the local state consistent across clients simply won't happen on any other client.
 
 **Shared events**: For example, an *On Trigger Enter* event node attached to a shared physics trigger collider:
 
-- **Can change local state for momentary effects**: For example, a particle effect or a short audio effect. Only clients present in the room when the shared event occurs will be able to see the local effect; any clients joining the room later won't.  
-- **Cannot change local state to be consistent across clients**. A shared event only executes on clients who are present at the time it occurs, but it won't be replayed for clients that join the session later.  
-- **Must not change shared state**. Since a shared event executes on all clients, anything it does is done by all clients very close in time. Depending on the nature of the change, it might end up being repeated several times (for example, a score counter might be incremented by more than one in response to a single event).
+- 🆗 **Can change local state for momentary effects**: For example, a particle effect or a short audio effect. Only clients present in the room when the shared event occurs will be able to see the local effect; any clients joining the room later won't.  
+- ❌ **Cannot change local state to be consistent across clients**. A shared event only executes on clients who are present at the time it occurs, but it won't be replayed for clients that join the session later.  
+- ⛔ **Must not change shared state**. Since a shared event executes on all clients, anything it does is done by all clients very close in time. Depending on the nature of the change, it might end up being repeated several times (for example, a score counter might be incremented by more than one in response to a single event).
 
-**On State Changed events that observe shared state** in shared variables or shared component properties:
+***On State Changed* events that observe shared state** in shared variables or shared component properties:
 
-- **Can change local state to be consistent with the shared state** across clients. For this to work well in a repeatable and consistent way for all clients, you must translate every possible new value of the observed shared state into local state, not just a few cherry-picked state transitions (such as *Is Selected* becoming true).
+- 🆗 **Can change local state to be consistent with shared state** across clients. For this to work well in a repeatable and consistent way for all clients, you must translate every possible new value of the observed shared state into local state, not just a few cherry-picked state transitions (such as *Is Selected* becoming true).
 
 ## Make local state follow shared state: Example
 
@@ -133,7 +133,7 @@ The only obvious way to get out of this problem is to make the events that trigg
 
 With the event now being local, this means…
 
-- **Local events can change shared** so we can now safely update the shared *ObjectKind* variable and its value will be automatically shared across clients by Mesh Visual Scripting's built-in networking.  
+- **Local events can change shared state** so we can now safely update the shared *ObjectKind* variable and its value will be automatically shared across clients by Mesh Visual Scripting's built-in networking.  
 - **Local events cannot change local state to be consistent across clients** so we still can't update the local *ObjectRef* variable in these script flows. We'll have to find another way.
 
 This is how the two script flows look after these changes:
@@ -158,13 +158,13 @@ In this case, you should probably use a *Local Script Scope* to make the Transfo
 
 The *Mesh Visual Scripting Diagnostics* panel and *Content Performance Analyzer* (CPA), as of Mesh Toolkit 5.2411, show a "High-frequency shared update" warning for this kind of construct.
 
-### On Start runs on each client
+### *On Start* runs on each client
 
 You may be tempted to think of the *On Start* event as something that runs at session startup, but it's actually triggered on each client, locally, when they join the session. It's perfectly suited for initializing local state:
 
 ![______________](../../../../media/mesh-scripting/vs-best-practices/009-initialize-local-state.png)
  
-However, when you try to use *On Star*t to initialize shared state, you'll find that the shared state will unintentionally get re-initialized for everyone whenever anyone joins the session:
+However, when you try to use *On Start* to initialize shared state, you'll find that the shared state will unintentionally get re-initialized for everyone whenever anyone joins the session:
 
 ![______________](../../../../media/mesh-scripting/vs-best-practices/010-initialize-shared-state.png)
  
@@ -172,9 +172,9 @@ The *Mesh Visual Scripting Diagnostics* panel (as of Mesh Toolkit 5.2410) and *C
 
 ### Sharing is typed--but variable assignment isn't
 
-For safety and security reasons, shared visual script variables are strongly typed. This means that the type you select in the *Variables* component for the script variables you've declared defines which exact value type that will be synchronized between clients.
+For safety and security reasons, shared visual script variables are strongly typed. This means that the type you select in the *Variables* component for the script variables you've declared defines which exact value type will be synchronized between clients.
 
-Unfortunately, Unity Visual Scripting completely ignores a variable's declared type when you update its value. For example, it's easy to accidentally store a Float-typed value in a variable that was declared for type *Integer*. Within the local client, your visual scripts won't notice this error because Visual Scripting will auto-convert the erroneous *Float* to the expected *Integer* where needed. However, when it comes to synchronizing this value across clients, Mesh Visual Scripting can't take the same liberties: The "eventual consistency" guarantee precludes any value conversion in flight, and safety and security considerations make it unadvisable to accept a different value type from a remote client than what was declared for the variable.
+Unfortunately, Unity Visual Scripting completely ignores a variable's declared type when you update its value. For example, it's easy to accidentally store a *Float*-typed value in a variable that was declared for type *Integer*. Within the local client, your visual scripts won't notice this error because Visual Scripting will auto-convert the erroneous *Float* to the expected *Integer* where needed. However, when it comes to synchronizing this value across clients, Mesh Visual Scripting can't take the same liberties: The "eventual consistency" guarantee precludes any value conversion in flight, and safety and security considerations make it unadvisable to accept a different value type from a remote client than what was declared for the variable.
 
 For example, consider this declaration of a shared variable named *MyIntegerVar*:
 
@@ -187,8 +187,10 @@ Here's a script flow that updates this variable:
 What could possibly go wrong? Unfortunately, the *Random* | *Range* script node used in this example comes in two flavors: one that produces a random *Integer* value, and one that produces a random *Float* value. The difference between those two script nodes in the node selector panel is subtle:
 
 ![______________](../../../../media/mesh-scripting/vs-best-practices/013-random-range-node-two-flavors.png)
-     
-Keep this in mind as a potential reason why a share variable you've created may seem to have stopped being shared. Future releases of Mesh Visual Scripting may warn of this kind of script error when they can detect it.
+ 
+So if you accidentally select the wrong *Random* | *Range* script node there, your script might end up unintentionally storing a *Float* value in your *Integer*-type variable, but that erroneous *Float* value won't be replicated to any other clients.
+
+Keep this in mind as a potential reason why a shared variable you've created may seem to have stopped being shared. Future releases of Mesh Visual Scripting may warn of this kind of script error when they can detect it.
 
 ## Next steps
 
