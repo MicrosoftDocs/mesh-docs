@@ -4,7 +4,7 @@ description: Release notes for the Microsoft Mesh Toolkit with a list of importa
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
-ms.date: 07/11/2024
+ms.date: 08/02/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
@@ -21,18 +21,43 @@ For purposes of this document, there are two categories of users:
 > [!IMPORTANT]
 > Mesh Toolkit versions older than 5.2315 are being deprecated. We recommend an upgrade to newer versions of the Mesh Toolkit.
 
-> [!IMPORTANT]
-> We will not longer be publishing Mesh Toolkit (Preview) versions following the 5.2405.X version release. This means that starting with 5.2406.X there will no longer be (Preview) toolkit. This change is also applied to the Microsoft Mesh application: the Preview version of the Microsoft Mesh application is deprecated and will no longer be released.
-
-These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
-
 >[!Note]
 >The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load.
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2408.X | 2024-07-10     |
+| Mesh toolkit               | 5.2408.X | 2024-08-01     |
 | Mesh on PC/Quest           | 5.2408.X | 2024-07-10     |
+
+## Mesh Toolkit 5.2409.X
+
+### What's new
+
+#### Mesh Toolkit Uploader
+
+* **Unity Upgrade**: The 24.9 Toolkit requires the use of the Unity Editor version 2022.3.34f1. This is a minor upgrade, so content that is already published will continue to work.
+
+* The result view at the end of an environment upload process show the state of pre-processors and validators.
+
+* The same visualization is also available via Mesh Toolkit > Validate > Validate Active Scene
+
+* Updated display for platform support for each environment. Currently selected platforms appear in white and unselected platforms appear in red with a tooltip warning.
+
+* Replaced popup that warned of previously uploaded platforms that are not in the current selection with a warning in the UI text instead.
+
+#### Visual scripting
+
+* Visual scripts now have access to **Physics | Raycast nodes** that provide Hit Info output. The value returned through this port can be inspected using **Raycast Hit | ...** property accessor nodes.
+
+#### Resolved issues
+
+* Using **Rigidbody | Set Position** and **Rigidbody | Set Rotation** now works as expected and no longer causes the affected physics bodies to be repositioned back to where a visual script most recently placed them on late join.
+
+* The **Rigidbody | Get/Set Position** and **Rigidbody | Get/Set Rotation** nodes as well as the **Transform | Get/Set Position** and **Transform | Get/Set Position** nodes for physics bodies are now correctly annotated with Shared by all clients or Local to this client in the absence or presence of Local Physics Scope components in the transform hierarchy.
+
+* **Transform | Set Local Scale** now correctly synchronizes across clients when applied to physics bodies.
+
+* Fixed raycasts in visual scripts in Emulator split-screen mode always targeting the first client's physics colliders instead of their own client's. This issue was only noticeable if collider geometry was different across clients, which usually isn't the case unless done explicitly.
 
 ## Mesh Toolkit 5.2408.X
 
