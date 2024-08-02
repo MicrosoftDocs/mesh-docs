@@ -39,7 +39,9 @@ Mesh doesn't support Scene variables, but you can use standalone *Variables* com
 If you don't want auto-sharing of properties or *Object* variables, you can add a *Local Script Scope* component to your scene. This will make all scene properties and script variables on this game object and any of its descendants local.
 
 ![______________](../../../../media/mesh-scripting/vs-best-practices/003-local-script-scope-component.png)
- 
+
+**Tip**: You can see several examples of how the Local Script Scope component is used in [Chapter 3 of our Mesh 101 tutorial](../../../getting-started/mesh-101-tutorial/mesh-101-03-visual-scripting.md) which focuses on visual scripting.
+
 For local script variables that you're only using in a single *Script Machine*, it's best to use *Graph*  variables, which are never shared across clients by Mesh.
 
 Sharing through Mesh Visual Scripting gives the following guarantees:
