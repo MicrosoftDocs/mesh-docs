@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, gra
 
 ## Overview
 
-Visual scripts aren't slow, but they're much, much slower than, for example, C# code.
+Visual scripts aren't inherently slow, but they're significantly slower than, say, C# code.
 
 When you create visual scripts in your environment, it's best to use them to connect existing functionality, not for heavy lifting: **make glue, not girders**. The simplest way to ensure that your visual scripts don't impact the overall performance of your environment is to make sure they're not doing much at all in the first place.
 
@@ -55,7 +55,7 @@ These are always okay to use:
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Visual Scripting best practices overview](./visual-scripting-best-practices-overview.md)
-> [Visual Scripting best practices for networking](./visual-scripting-best-practices-networking.md)
+> [!div class="nextstepaction"]  
+> [Visual Scripting best practices overview](./visual-scripting-best-practices-overview.md)  
+> [Visual Scripting best practices for networking](./visual-scripting-best-practices-networking.md)  
 > [Visual Scripting best practices for debugging](./visual-scripting-best-practices-debugging.md)

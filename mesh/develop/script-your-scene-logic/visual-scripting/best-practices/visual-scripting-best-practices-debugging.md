@@ -90,8 +90,8 @@ Press Ctrl+Shift+F1 for a third time.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Visual Scripting best practices overview](./visual-scripting-best-practices-overview.md)
-> [Visual Scripting best practices for performance](./visual-scripting-best-practices-performance.md)
+> [!div class="nextstepaction"]  
+> [Visual Scripting best practices overview](./visual-scripting-best-practices-overview.md)  
+> [Visual Scripting best practices for performance](./visual-scripting-best-practices-performance.md)  
 > [Visual Scripting best practices for networking](./visual-scripting-best-practices-networking.md)
 

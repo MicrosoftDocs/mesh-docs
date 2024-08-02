@@ -9,23 +9,32 @@ ms.topic: conceptual
 keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, graphs, Mesh, best practices, performance, networking
 ---
 
-# Mesh Visual Scripting best practices for Networking
+# Mesh Visual Scripting best practices for networking
 
 ## Overview
 
 In Mesh, most scene properties are by default automatically shared across all clients connected to the same room. For example, a scene object's Transform position and rotation, a component's enabled state, or a TextMeshPro's text.
 
-As a rule of thumb, component properties that have simple scalar types (*Boolean*, *Integer*, *Float*, or *String*) are automatically shared by default. Collection types (lists and sets) and scene object references aren't shared.
+As a rule of thumb, component properties that have the following value types are automatically shared by default:
+
+- Boolean, Integer, Float, and String
+- [Color](https://docs.unity3d.com/ScriptReference/Color.html)
+- [Rect](https://docs.unity3d.com/ScriptReference/Rect.html)
+- [Vector 2](https://docs.unity3d.com/ScriptReference/Vector2.html), [Vector 3](https://docs.unity3d.com/ScriptReference/Vector3.html), and [Vector 4](https://docs.unity3d.com/ScriptReference/Vector4.html)
+- [Quaternion](https://docs.unity3d.com/ScriptReference/Quaternion.html)
+- [Matrix 4x4](https://docs.unity3d.com/ScriptReference/Matrix4x4.html)
+
+Collection types (lists and sets) and scene object references aren't shared.
 
 Visual script nodes that access or modify properties in Mesh are tagged with a label that indicates if they're "Shared by all clients" or "Local to this client":
 
 ![______________](../../../../media/mesh-scripting/vs-best-practices/001-node-labels.png)
 
-Script *Object* variables are shared by default as well if you've declared them with a simple scalar type (*Boolean*, *Integer*, *Float*, or *String*):
+Object variables are shared by default as well if you've declared them with a simple scalar type (*Boolean*, *Integer*, *Float*, or *String*):
 
 ![______________](../../../../media/mesh-scripting/vs-best-practices/002-script-variable.png)
  
-Mesh doesn't support *Scene* variables, but you can use standalone *Variables* components in the environment to stash variables that can be shared independently from any specific *Script Machine* component.
+Mesh doesn't support Scene variables, but you can use standalone *Variables* components in the environment to stash variables that can be shared independently from any specific *Script Machine* component.
 
 If you don't want auto-sharing of properties or *Object* variables, you can add a *Local Script Scope* component to your scene. This will make all scene properties and script variables on this game object and any of its descendants local.
 
@@ -51,9 +60,9 @@ However:
 
 You can't send or receive explicit network messages with Mesh Visual Scripting. This might be surprising at first, but it helps establish a networking paradigm that makes it easy to uniformly handle runtime changes as well as late join. Instead of messages, there's *shared state* in scene properties and script variables.
 
-Your scripts can respond to shared state updates in a uniform way regardless of whether those updates were by a local script or user, or by another client who shares the experience in the same room, or by other clients that were already in the room before you even joined it yourself.
+Your scripts can respond to shared state updates in a uniform way regardless of whether those updates were by a local script or user, by another client who shares the experience in the same room, or by other clients that were already in the room before you even joined it yourself.
 
-Not being able to explicitly send network messages means that you'll have to start thinking about **shared state that gets updates** instead of thinking about *shared events that cause state updates*. Shared events are a consequence of shared state getting updated, not the opposite.
+Not being able to explicitly send network messages means that you'll have to start thinking about **shared state that gets updates** instead of *shared events that cause state updates*. Shared events are a consequence of shared state getting updated, not the opposite.
 
 Fortunately, Mesh Visual Scripting makes it easy for your visual scripts to react to state updates. Use the *On State Changed* event node and connect its left-hand side inputs with any script variable or component property you'd like to observe for changes, and the event node will trigger your script (connected to its right-hand side) whenever any of the variables or properties connected to it change their value.
 
@@ -194,7 +203,7 @@ Keep this in mind as a potential reason why a shared variable you've created may
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Visual Scripting best practices overview](./visual-scripting-best-practices-overview.md)
-> [Visual Scripting best practices for performance](./visual-scripting-best-practices-performance.md)
+> [!div class="nextstepaction"]  
+> [Visual Scripting best practices overview](./visual-scripting-best-practices-overview.md)  
+> [Visual Scripting best practices for performance](./visual-scripting-best-practices-performance.md)  
 > [Visual Scripting best practices for debugging](./visual-scripting-best-practices-debugging.md)
