@@ -19,7 +19,7 @@ At its core, Mesh Visual Scripting is simply Unity Visual Scripting extended and
 
 - Test your custom environments that contain Physics, Interactables, and visual scripts directly in the  Unity Editor with [Mesh Emulator](../../../debug-and-optimize-performance/mesh-emulator.md)--even with multiple simulated clients in split-screen mode.  
 
-- Get actionable guidance on correctness issues and potential [bandwidth or performance bottlenecks](./visual-scripting-debugging.md) with on-the-fly diagnostics in Mesh Emulator and across your entire environment with [Content Performance Analyzer (CPA)](../../../debug-and-optimize-performance/cpa.md).
+- Get actionable guidance on correctness issues and potential [bandwidth or performance bottlenecks](./visual-scripting-best-practices-debugging.md) with on-the-fly diagnostics in Mesh Emulator and across your entire environment with [Content Performance Analyzer (CPA)](../../../debug-and-optimize-performance/cpa.md).
 
 Mesh Visual Scripting also comes with some restrictions:
 
