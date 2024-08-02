@@ -118,7 +118,7 @@ Here are the two script flows, one for each button. Each listens to the shared *
   
 Everything seems to work fine, but only for users who are already in the room when one of the buttons is selected. Any user who joins the session later finds an inconsistent state in their local version of the shared environment: Only *ObjectKind* is correctly set according to the most recently selected button, but *ObjectRef* remains null.
 
-** What's wrong with these two script flows?**
+**What's wrong with these two script flows?**
 
 First, notice that these script flows are triggered by a shared event because they're both listening to each button's shared *Is Selected* property changing. This seems to make sense because it's the only way to get the local *ObjectRef* variable to be updated on all clients.
 
@@ -133,7 +133,7 @@ The only obvious way to get out of this problem is to make the events that trigg
 
 With the event now being local, this means…
 
-- **Local events can change shared ** so we can now safely update the shared *ObjectKind* variable and its value will be automatically shared across clients by Mesh Visual Scripting's built-in networking.  
+- **Local events can change shared** so we can now safely update the shared *ObjectKind* variable and its value will be automatically shared across clients by Mesh Visual Scripting's built-in networking.  
 - **Local events cannot change local state to be consistent across clients** so we still can't update the local *ObjectRef* variable in these script flows. We'll have to find another way.
 
 This is how the two script flows look after these changes:
