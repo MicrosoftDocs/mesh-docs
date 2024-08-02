@@ -17,8 +17,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ### New loading screens
 
-* Updated images and text when joining an Immersive Space in Teams. (17435)
-
+* Updated images and text when joining an Immersive Space in Teams.
 ### Personal boundary
 
 * Avatars now have a Personal Boundary that prevents other avatars from walking, standing, and teleporting too close to your avatar.
