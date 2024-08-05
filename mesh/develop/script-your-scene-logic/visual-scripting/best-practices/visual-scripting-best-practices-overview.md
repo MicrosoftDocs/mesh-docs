@@ -9,7 +9,7 @@ ms.topic: conceptual
 keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, graphs, Mesh, best practices
 ---
 
-# Mesh Visual Scripting Best Practices
+# Mesh Visual Scripting best practices overview
 
 At its core, Mesh Visual Scripting is simply Unity Visual Scripting extended and augmented to work well in Mesh:  
 
@@ -32,8 +32,10 @@ Visual Scripting is easy to get started with, but it can be tricky to get all th
 ## Next steps
 
 > [!div class="nextstepaction"]  
-> [Visual Scripting best practices for performance](./visual-scripting-best-practices-performance.md)  
+> [Visual Scripting best practices for performance](./visual-scripting-best-practices-performance.md) 
+
 > [Visual Scripting best practices for networking](./visual-scripting-best-practices-networking.md)  
+
 > [Visual Scripting best practices for debugging](./visual-scripting-best-practices-debugging.md)
 
 
