@@ -34,8 +34,10 @@ Visual Scripting is easy to get started with, but it can be tricky to get all th
 > [!div class="nextstepaction"]  
 > [Visual Scripting best practices for performance](./visual-scripting-best-practices-performance.md) 
 
+> [!div class="nextstepaction"]  
 > [Visual Scripting best practices for networking](./visual-scripting-best-practices-networking.md)  
 
+> [!div class="nextstepaction"]  
 > [Visual Scripting best practices for debugging](./visual-scripting-best-practices-debugging.md)
 
 

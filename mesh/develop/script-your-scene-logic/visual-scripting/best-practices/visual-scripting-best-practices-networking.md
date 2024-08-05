@@ -208,6 +208,8 @@ Keep this in mind as a potential reason why a shared variable you've created may
 > [!div class="nextstepaction"]  
 > [Visual Scripting best practices overview](./visual-scripting-best-practices-overview.md)  
 
+> [!div class="nextstepaction"]  
 > [Visual Scripting best practices for performance](./visual-scripting-best-practices-performance.md)  
 
+> [!div class="nextstepaction"]  
 > [Visual Scripting best practices for debugging](./visual-scripting-best-practices-debugging.md)
