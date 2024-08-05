@@ -3,7 +3,7 @@ title: Mesh Development overview
 description: Development overview for Mesh using Unity.
 author: typride
 ms.author: vinnietieto
-ms.date: 1/10/2024
+ms.date: 8/2/2024
 ms.topic: Guide
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environments
