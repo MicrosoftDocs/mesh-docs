@@ -15,7 +15,7 @@ keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, gra
 
 In Mesh, most scene properties are by default automatically shared across all clients connected to the same room. For example, a scene object's Transform position and rotation, a component's enabled state, or a TextMeshPro's text.
 
-As a rule of thumb, component properties that have the following value types are automatically shared by default:
+As a rule of thumb, component properties and Object variables that have the following value types are automatically shared by default:
 
 - Boolean, Integer, Float, and String
 - [Color](https://docs.unity3d.com/ScriptReference/Color.html)
@@ -30,19 +30,19 @@ Visual script nodes that access or modify properties in Mesh are tagged with a l
 
 ![______________](../../../../media/mesh-scripting/vs-best-practices/001-node-labels.png)
 
-Object variables are shared by default as well if you've declared them with a simple scalar type (*Boolean*, *Integer*, *Float*, or *String*):
+Object variables are shared by default as well if you've declared them with one of the value types listed above:
 
 ![______________](../../../../media/mesh-scripting/vs-best-practices/002-script-variable.png)
  
 Mesh doesn't support Scene variables, but you can use standalone *Variables* components in the environment to stash variables that can be shared independently from any specific *Script Machine* component.
 
-If you don't want auto-sharing of properties or *Object* variables, you can add a *Local Script Scope* component to your scene. This will make all scene properties and script variables on this game object and any of its descendants local.
+If you don't want auto-sharing of properties or Object variables, you can add a *Local Script Scope* component to your scene. This will make all scene properties and script variables on this game object and any of its descendants local.
 
 ![______________](../../../../media/mesh-scripting/vs-best-practices/003-local-script-scope-component.png)
 
 **Tip**: You can see several examples of how the Local Script Scope component is used in [Chapter 3 of our Mesh 101 tutorial](../../../getting-started/mesh-101-tutorial/mesh-101-03-visual-scripting.md) which focuses on visual scripting.
 
-For local script variables that you're only using in a single *Script Machine*, it's best to use *Graph*  variables, which are never shared across clients by Mesh.
+For local script variables that you're only using in a single *Script Machine*, it's best to use Graph  variables, which are never shared across clients by Mesh.
 
 Sharing through Mesh Visual Scripting gives the following guarantees:
 
