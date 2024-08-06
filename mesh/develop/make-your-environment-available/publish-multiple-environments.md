@@ -34,7 +34,7 @@ As explained in the article named [Add the Mesh toolkit package](../build-your-b
 
     ![A screenshot of the Mesh Uploader window in the Create Environment tab with information for the DartsRoom Environment.](../../media/make-your-environment-available/011-create-dartsroom-asset-logo.png)
 
-1. Select **Create Environment**.
+1. Click the **Create Environment** button.
 1. In the **Mesh Environment Results** window, confirm that the operation was successful and then click the **Close** button. 
 
     The Uploader automatically takes you to the **Update Environment** tab. If you were creating a single Environment, this would be the right place to continue the process. However, in this example, we're creating multiple Environments, which means we have more work to do in the **Create Environment** tab.
