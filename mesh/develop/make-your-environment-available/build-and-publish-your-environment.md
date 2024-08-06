@@ -71,7 +71,7 @@ You should now be in the **Update Environment** tab of the Mesh Uploader.
 
 Note that in the **Environment Configurations** section, you already
 have an Environment configuration created which displays the name you
-added in the **Create Environment** tab: *Vinnie's Dartroom*.
+added in the **Create Environment** tab: *Vinnie's Dartroom 080524*.
 
 ### Configure the Environment for build and publish
 
@@ -114,9 +114,13 @@ If you create repeated builds of the same Environment but want to change the pla
 
 1.  If the Environment builds and publishes successfully, the **Build and Upload Results** window appears and confirms the results.
 
-    ![A screenshot of the dialog shown with the sucessful results of the build and upload operation](../../media/make-your-environment-available/005-build-succeeded.png)
+    ![A screenshot of the Build and Upload results window showing successful results.](../../media/make-your-environment-available/005-build-succeeded.png)
 
-    However, you may get **Warning** or even **Failed** indicators in this window. To learn more about what these mean and how to make needed corrections, see the article named [Understanding your Build and Publish results](./understanding-build-and-publish-results.md).
+    This window contains several sections that you can expand to view more details.
+
+    ![A screenshot of the Build and Upload results window with sections expanded and all the details displayed.](../../media/make-your-environment-available/068-mesh-results-expanded.png)
+
+    You may get **Warning** or even **Failed** indicators in this window. To learn more about what these mean and how to make needed corrections, see the article named [Understanding your Build and Publish results](./understanding-build-and-publish-results.md).
 
     > [!TIP]
     > If a build and publish process fails, look in the **Console** for clues about what might have happened.
