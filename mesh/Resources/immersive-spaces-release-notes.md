@@ -15,7 +15,6 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.2410.XX (August 5, 2024)
 
-
 ## Version 5.2409.XX (July 23, 2024)
 
 ### Avatar Reactions

@@ -33,7 +33,7 @@ For details, you can also access the **Control tutorial** from the **Help** menu
 
 ![A screenshot of the Help > Control tutorial dialog on PC](media/help-control-tutorial-pc.png)
 
-Use **V** to toggle between direct view and avatar view (1st and 3rd     person views)
+To change your view, use **V** to toggle between 1st person view and two 3rd person views with different camera zoom level and use the mouse scroll wheel to change the camera zoom level.
 
 ### On Quest
 
