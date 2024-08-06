@@ -4,7 +4,7 @@ description: Learn about setting up Mesh Cloud Scripting in Azure.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/6/2024
+ms.date: 7/31/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Azure, admin, Mesh Cloud Scripting, scripting, cloud scripting
 ---
@@ -137,6 +137,18 @@ For more information on the defaults, refer to the [Bicep & ARM template referen
 ### Mesh Cloud Scripting Services infrastructure diagram
 
 :::image type="content" source="../../../media/cloud-scripting-infrastructure-guide/image016.png" alt-text="A diagram showing the Mesh Cloud Scripting services infrastructure":::
+
+### Traffic flows through each component
+
+**Client <-> AppService Instances**: Client requests/responses (connect requests, cloud script notifications, and more).
+
+**App Service Instances**: TCP ping messages to determine liveness.
+
+**App Service Instances <-> LogAnalytics/AppInsights**: Application Telemetry (application logs).
+
+**App Service Instances <-> Membership Table**: Liveness information about each app service instance.
+
+**App Service Instance <-> Blob Storage**: The zip of the cloud scripts running in the cloud.
 
 ### Resource provider registrations
 
