@@ -3,9 +3,9 @@ title: Optimize as you build
 description: View tips and tool suggestions for optimizing your Mesh project as you build it.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 1/19/2024
+ms.date: 8/6/2024
 ms.service: mesh
-ms.topic: How to
+ms.topic: how to
 keywords: Microsoft Mesh, Unity, getting started, Unity, scene, teleportation, navmesh, travel point, travelgroup, player movement
 ---
 
@@ -33,9 +33,13 @@ You can also use these tools which are useful for profiling content in Unity:
 - [Unity's Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html)
 - [RenderDoc](https://docs.unity3d.com/Manual/RenderDocIntegration.html) (**IMPORTANT**: RenderDoc can only perform captures from the Unity editor. Mesh app builds won't work).
 
-**Note**: After you build and publish your project, the **Build and Upload Results** window appears. It contains a **Content Performance** indicator which gives you a results message related to content in your project. To learn more about these messages and what they mean, see the "Content Performance" section in [Understanding your Build and Publish results](../make-your-environment-available/understanding-build-and-publish-results.md#content-performance).
+**Note**: After you build and publish your project, the **Mesh Environment Results** window appears. It contains a **Content Performance** indicator which gives you a results message related to content in your project. To learn more about these messages and what they mean, see [Understanding your Build and Publish results](../make-your-environment-available/understanding-build-and-publish-results.md#what-the-indicators-mean).
 
 ![A screenshot of the Build and Upload results window with the Content Performance indicator highlighted.](../../media/build-your-basic-environment/007-build-and-upload-expanded.png)
+
+**Tip**: After you close the **Build and Upload Results** window, you can see validation results at any time: in Unity on the menu bar, select **Mesh Toolkit** > **Validate** > **Validate Active Scene**.
+
+![A screenshot of the Mesh Content Validation window.](../../media/build-your-basic-environment/009-mesh-content-validation-window.png)
 
 ## Next Steps
 
