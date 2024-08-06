@@ -102,6 +102,10 @@ added in the **Create Environment** tab: *Vinnie's Dartroom 080524*.
 
 If you create repeated builds of the same Environment but want to change the platform(s) they're being created for, make sure you choose the correct **Build for Platforms** buttons.
 
+**Tip**: If you selected a platform for a previous upload but aren't selecting it for the current upload, a warning appears to bring this to your attention.
+
+![A screen shot of the PC and Android platforms buttons with both platforms selected](../../media/make-your-environment-available/070-previous-upload-warning.png)
+
 ### Build and publish the Environment
 
 1. Select the **Build and Publish** button.
