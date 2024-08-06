@@ -2,10 +2,10 @@
 title: Build and publish your environment
 description: Learn how to turn your environment into an Asset and then publish it in Mesh on the web.
 ms.service: mesh
-author: typride
+author: vtieto
 ms.author: vinnietieto
-ms.date: 5/30/2024
-ms.topic: Guide
+ms.date: 8/6/2024
+ms.topic: how-to
 keywords: Microsoft Mesh, environment, build, publish, build and publish, uploader, Mesh uploader, thumbnail
 ---
 

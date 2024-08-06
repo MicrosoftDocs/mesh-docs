@@ -5,7 +5,7 @@ ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
 ms.date: 8/6/2024
-ms.topic: Guide
+ms.topic: conceptual
 keywords: Microsoft Mesh, environment, build, publish, build and upload, uploader, Mesh uploader, thumbnail
 ---
 
