@@ -1,10 +1,10 @@
 ---
 title: Microsoft Mesh overview
-description: Microsoft Mesh overview.
+description: Microsoft Mesh overview article that describes the different experiences of Mesh and the different reasons to use each of them.
 ms.service: mesh
 author: typride
 ms.author: tmilligan
-ms.date: 02/14/2024
+ms.date: 08/07/2024
 ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
