@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, setup, admin, M365, getting
 
 For Microsoft Mesh, you will need the following:
 
-- **Teams Premium license in a tenant for Commercial use**. Learn more about [Microsoft Teams Premium licensing - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
+- **Teams Premium license in a tenant for Commercial use** (currently only available in Teams Premium Introductory Pricing or Teams Premium for Departments). Learn more about [Microsoft Teams Premium licensing - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
 
   > [!NOTE]
   > We don't support tenants with worldwide public sector, EDU, or GCC licenses.
