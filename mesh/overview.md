@@ -27,16 +27,16 @@ Immersive experiences have unique attributes, including spatial interaction, co-
 
 **Co-presence** can lead to spontaneous moments of conversation or even just the deepened connection of a shared experience. Mesh allows you to focus on what matters: people, conversations, and a unique shared space.
 
-## Immersive spaces in Teams or custom immersive experiences?
+## Immersive spaces in Teams meetings or Mesh application?
 
-|**[Immersive spaces in Teams](#immersive-spaces-in-microsoft-teams)** |[**Custom immersive experiences in Mesh**](#what-can-you-do-in-custom-immersive-experiences)  |
+|**[Immersive spaces in Teams](#immersive-spaces-in-microsoft-teams)** |[**Mesh application**](#what-can-you-do-in-custom-immersive-experiences)  |
 |:---------|:---------|
 | For small meetings, *up-to 16 people* can quickly join an immersive space directly in a Teams meeting. <br><br> Host casual team bonding get-togethers, weekly scrums or standups with your team, or brainstorming sessions with breakout groups. <br><br> | For medium-to-large events, *up-to 200* people can join from the Mesh application after Mesh is [set up for your organization](Setup/Content/preparing-your-organization.md). <br><br> Host large immersive employee experiences such as all-hands, town halls, and new-hire onboarding with Mesh <br><br> |
-|**Key benefits:** <br><br> **Lower effort** to set up for and have users get familiar with immersive experiences. <br><br>**[Integrated into Microsoft Teams](https://support.microsoft.com/en-us/office/get-started-with-immersive-spaces-in-microsoft-teams-4a6182f8-0f43-4c24-bb66-ef229fa221d8)** – a tool you use every day – bringing co-presence to hybrid or remote teams. <br><br> **[Provides Icebreakers and activities](https://support.microsoft.com/en-us/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games)**, ready for you to enjoy and share with your teams. | **Key benefits:** <br><br> **[Create custom experiences](develop/development-overview.md#what-you-can-do-with-mesh)** using the Mesh toolkit, leveraging physics, scripting, and web content.  <br><br> **[Interact with engaging and dynamic](user-guide/join-an-event.md)** environments synchronized across all attendees simultaneously. <br><br> **[Customize and create events that tell stories](events-guide/customize-event.md)** by adding objects that can be used in your events.  <br><br>   |
+|**Key benefits:** <br><br> **Lower effort** to set up for and have users get familiar with immersive experiences. <br><br>**[Integrated into Microsoft Teams meetings](https://support.microsoft.com/en-us/office/get-started-with-immersive-spaces-in-microsoft-teams-4a6182f8-0f43-4c24-bb66-ef229fa221d8)** – a tool you use every day – bringing co-presence to hybrid or remote teams. <br><br> **[Provides Icebreakers and activities](https://support.microsoft.com/en-us/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games)**, ready for you to enjoy and share with your teams. | **Key benefits:** <br><br> **[Use Microsoft environments or create custom environments](develop/development-overview.md#what-you-can-do-with-mesh)** using the Mesh toolkit, leveraging physics, scripting, and web content.  <br><br> **[Interact with engaging and dynamic](user-guide/join-an-event.md)** environments synchronized across all attendees simultaneously. <br><br> **[Customize and create events that tell stories](events-guide/customize-event.md)** by adding objects that can be used in your events.  <br><br>   |
 
-## Immersive spaces in Microsoft Teams
+## Immersive spaces in Teams meetings
 
-:::image type="content" source="media/welcome-to-mesh/04_ImmersiveSpaces_Splice.gif" alt-text="GIF of selecting view then immersive space in teams":::
+:::image type="content" source="media/welcome-to-mesh/04_ImmersiveSpaces_Splice.gif" alt-text="GIF of selecting view then immersive space (3D) in teams":::
 
 Use [immersive spaces in Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams) for small meetings of up to 16 coworkers. Hop into stunning pre-made virtual environments, offering icebreakers and activities with two clicks of a button, right from a Teams meeting.
 
@@ -51,13 +51,16 @@ Getting started is easy! From the **View menu** in a Teams meeting, select the *
 - **Join right from Microsoft Teams**&#8212;
 a tool you use every day&#8212;bringing co-presence to hybrid or remote teams.
 
-## Custom immersive experiences in Mesh
+## Mesh application
 
-Use Microsoft Mesh for medium-to-large events with up to 200 people. Create custom experiences that are tailored to your specific business needs, such as employee events, training, guided tours, or internal product showcases.
+> [!NOTE]
+> Microsoft Mesh can be experienced from the standalone Microsoft Mesh application or experienced while in Teams with the Mesh application. Using the Mesh app in Teams is only available currently to [Mesh TAP participants](develop/mesh-tap-participants.md).
 
-Deliver dazzling immersive experiences that can be experienced across on PC or Meta headsets. You can start with ready-to-use environments or develop your own custom environments using Unity and the Mesh toolkit. You can then use no-code customization to enhance your events with images, videos, or screen shares.
+Use the Microsoft Mesh app for medium-to-large events with up to 200 people. Create custom experiences that are tailored to your specific business needs, such as employee events, training, guided tours, or internal product showcases.
 
-### What can you do in custom immersive experiences?
+Deliver dazzling immersive experiences that can be experienced on your computer or Meta headsets. You can start with ready-to-use environments or develop your own custom environments using Unity and the Mesh toolkit. You can then use no-code customization to enhance your events with images, videos, or screen shares.
+
+### What can you do with the Mesh application?
 
 - **Create and customize events that tell stories** by adding objects that can be used in your events with no-code in-experience tools like screen shares, images, and videos.
 
