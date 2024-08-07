@@ -84,8 +84,11 @@ added in the **Create Environment** tab: *Vinnie's Dartroom 080524*.
 
 1. In the **Build for Platforms** section, you choose which platforms
     to build for. Note that when a button background is gray, the button
-    is "on"; when the background is black, the button is "off." Do one
-    of the following:
+    is "on"; when the background is black, the button is "off." 
+    
+    **Note**: There are two currently available build options: PC (for users running the Mesh app on a PC) and Android (for users running in the Mesh app on the Meta Quest 2). The **Platforms** section displays a third option for HTML5; this is for a feature that will be turned on for [Mesh TAP participants](../mesh-tap-participants.md) in mid-August 2024.
+    
+    Do one of the following:
 
     - To build for PC only, make sure that only the PC button ("Mesh
         app on PC", the button on the left) is "on."
