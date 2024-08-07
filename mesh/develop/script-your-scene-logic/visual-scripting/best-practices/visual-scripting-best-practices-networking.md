@@ -1,5 +1,5 @@
 ---
-title: Mesh Visual Scripting Networking Basics
+title: Mesh Visual Scripting best practices for networking
 description: Learn about how networking works with Visual Scripting in Mesh.
 ms.service: mesh
 author: vtieto
