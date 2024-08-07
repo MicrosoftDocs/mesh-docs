@@ -55,7 +55,7 @@ For purposes of this document, there are two categories of users:
 
 * **Transform | Set Local Scale** now correctly synchronizes across clients when applied to physics bodies.
 
-* The problem that raycasts in visual scripts in Mesh Emulator split-screen mode alway targeted the first client's physics colliders instead of their own client's has been fixed. This issue was only noticeable if collider geometry was different across clients, which usually isn't the case unless done explicitly.
+* The problem that raycasts in visual scripts in Mesh Emulator split-screen mode always targeted the first client's physics colliders instead of their own client's has been fixed. This issue was only noticeable if collider geometry was different across clients, which usually isn't the case unless done explicitly.
 
 ## Mesh Toolkit 5.2408.X
 
