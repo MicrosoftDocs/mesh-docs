@@ -13,11 +13,31 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
+## Version 5.2410.XX (August 5, 2024)
+
 ## Version 5.2409.XX (July 23, 2024)
+
+### Avatar Reactions
+
+* Ready to dance in Mesh? Get groovy with Avatar Reactions!
+
+    We are excited to announce the release of Avatar Reactions for Mesh immersive experiences! In addition to the standard emoji-based reactions, you can now react with a wider variety of Avatar reactions, making avatar interactions more dynamic, personal, and fun!
+
+    **Key Features:**
+
+    *Expressive Animations:* Avatars can now perform a wider variety of reactions, including dancing, celebrating, and more.
+
+    *Real-Time Reactions:* Reactions are performed in real-time, enhancing the liveliness of virtual meetings and interactions.
+
+    :::image type="content" source="media/Avatar-reactions-immersive-space.png" alt-text="Screenshot of the reactions menu in an immersive space (3D).":::
+
+    In addition to the standard Avatar reactions, you can find a lot of other reactions sorted into seven categories, including a category for ASL signs.
+
+    :::image type="content" source="media/Reactions-immersive-spaces-menu-expanded.png" alt-text="Screenshot of the Reactions menu in an immersive space (3D)":::
 
 ### New loading screens
 
-* Updated images and text when joining an Immersive Space in Teams. (17435)
+* Updated images and text when joining an Immersive Space in Teams.
 
 ### Personal boundary
 

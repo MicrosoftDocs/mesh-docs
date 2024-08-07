@@ -17,20 +17,47 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | August 05    | 5.2410.XX     |
 | 2024         | July 23      | 5.2409.XX    |
 | 2024         | July 02      | 5.2408.XX    |
 | 2024         | June 17      | 5.2407.XX    |
 | 2024         | May 23       | 5.2406.XX    |
 | 2024         | May 13       | 5.2405.XX    |
 | 2024         | April 18     | 5.2403.XX+   |
-| 2024         | April 09      | 5.2403.XX   |
+| 2024         | April 09     | 5.2403.XX    |
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
+## Version 5.2410.XX
+
+### Resolved issues
+
+* Fixed issue executing ActionGroups for Streamed and Embedded Video Controllables with no backplate. (19130)
+
+* Added a volume setting for controlling UI audio. (18650)
+
 ## Version 5.2409.XX
 
 ### What's new
+
+#### Avatar Reactions
+
+* Ready to dance in Mesh? Get groovy with Avatar Reactions!
+
+    We are excited to announce the release of Avatar Reactions for Mesh immersive experiences! In addition to the standard emoji-based reactions, you can now react with a wider variety of Avatar reactions, making avatar interactions more dynamic, personal, and fun!
+
+    **Key Features:**
+
+    *Expressive Animations:* Avatars can now perform a wider variety of reactions, including dancing, celebrating, and more.
+
+    *Real-Time Reactions:* Reactions are performed in real-time, enhancing the liveliness of virtual meetings and interactions.
+
+    :::image type="content" source="media/Basic-avatar-emotes-standalone.png" alt-text="Screenshot of basic avatar emotes in the Mesh application.":::
+
+    In addition to the standard Avatar reactions, you can find a lot of other reactions sorted into seven categories, including a category for ASL signs.
+
+    :::image type="content" source="media/Catalog-avatar-reactions-emotes-standalone.png" alt-text="Screenshot of avatar reactions catalog in standalone application for Mesh.":::
 
 #### Personal boundary
 
@@ -42,7 +69,7 @@ Microsoft Mesh application
 
 #### Reliability improvements
 
-- Improved the ability to join an event when experiencing poor network conditions. (17760)
+- Improved the ability to join an event when experiencing poor network conditions. (56032)
 
 ## Version 5.2408.XX
 
