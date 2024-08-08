@@ -3,7 +3,7 @@ title: Prerequisites for Mesh development
 description: Prerequisites required for Mesh development, including Unity information.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/1/2024
+ms.date: 8/1/2024
 ms.topic: overview
 ms.service: mesh
 keywords: Microsoft Mesh, prerequisites, getting started, Unity, license, Mac, macOS, Apple
@@ -19,14 +19,14 @@ Mesh is available for PC and Quest 2. The Mesh toolkit does *not* work on the Ma
 
 A Teams Premium license is required for using the Mesh application for custom immersive spaces in Mesh on PC and Quest. A license isn't required to develop with the Mesh toolkit, but you'll be blocked from building and publishing Environments to Mesh and organizing or joining events in Mesh if you and your users don't have Teams Premium licenses. For more information, see the article named [Set up Microsoft Mesh](../../Setup/Content/setup-m365-mesh.md).
 
-## Unity version 2022.3.15
+## Unity version 2022.3.34
 
-- You must use Unity version 2022.3.15. [Get help installing Unity Template](https://docs.unity3d.com/hub/manual/InstallEditors.html)
+- You must use Unity version 2022.3.34. [Get help installing Unity Template](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 - Your installation should include modules for Android, Windows and *Windows Build Support IL2CPP*. 
 
-![A screenshot of the required version of Unity.](../../media/get-started-developing-mesh/image002.png)
+![A screenshot of the required version of Unity.](../../media/get-started-developing-mesh/063-unity-version.png)
 
-![A screenshot of the IL2CPP module in the Add Modules window.](../../media/get-started-developing-mesh/062-install-il2cpp.png)
+![A screenshot of the IL2CPP module in the Add Modules window.](../../media/get-started-developing-mesh/064-install-il2cpp.png)
 
 > [!IMPORTANT]
 > - The [`Windows Build Support (IL2CPP)`](https://docs.unity3d.com/2023.2/Documentation/Manual/IL2CPP.html) is required; if it's not installed, you might experience build failures for your environments and see this message: `error CS7036: There is no argument given that corresponds to the required formal parameter 'safety' of 'NativeArray<T>.ReadOnly.ReadOnly(void*, int, ref AtomicSafetyHandle)'`
