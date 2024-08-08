@@ -39,10 +39,6 @@ Microsoft Mesh application
 
     :::image type="content" source="media/Emoji-reactions-hand-raise-multi-room.png" alt-text="Screenshot of a multi-room event in Mesh showing the emojis for other people in the event.":::
 
-#### Revisit events after they've finished
-
-* Revisit any past event using the link in the calendar invite or the invite you get when creating the event, allowing events to be reused or revisited at any time in the future.
-
 ### Resolved issues
 
 * Fixed issue executing ActionGroups for Streamed and Embedded Video Controllables with no backplate. (19130)
