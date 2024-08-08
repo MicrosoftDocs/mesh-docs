@@ -62,9 +62,9 @@ In single room events, as a host you'll see who has their hand raised in the hos
 
 ### Call on people in multi-room events
 
-In multi-room scenarios, attendees will only be able to talk to other people in their room. As a host, you will not see or hear the attendees until you broadcast them.
+In multi-room scenarios, attendees will only be able to talk to other people in their room. As a host, you will not see or hear attendees unless they raise their hand or you call on them. If attendees use emojis, however, you will you able to see their emojis and location across rooms!
 
-To call on them, look in the host panel and select the **Broadcast** button, as shown below.
+To call on attendees, look in the host panel and select the **Broadcast** button, as shown below.
 
 :::image type="content" source="../media/common-event-scenarios/Multi-room-broadcast-hand-raise.png" alt-text="Screenshot of Mesh multi-room scenario, broadcast button highlighted next to attendee name.":::
 
