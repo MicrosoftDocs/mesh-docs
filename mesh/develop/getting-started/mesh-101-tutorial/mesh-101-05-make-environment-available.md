@@ -67,7 +67,7 @@ Environments** window.
 
 For the general developer audience, Mesh experiences can be built for two different platforms: desktop PC and Android, which powers the Meta Quest headset. 
 
-**Note**: Starting some time in mid-August 2024, [TAP participants](../../mesh-tap-participants.md) will also be able to build their experiences to the WebGL platform; this enables event organizers to create events for both Windows and Mac users that run in the Mesh app for Teams. For this tutorial, we won't consider the WebGL option.
+**Note**: Starting sometime in mid-August 2024, [TAP participants](../../mesh-tap-participants.md) will also be able to build their experiences to the WebGL platform; this enables event organizers to create events for both Windows and Mac users that run in the Mesh app for Teams. For this tutorial, we won't consider the WebGL option.
 
 Since desktop PCs typically have far more power than mobile devices using Android, when you're creating your own project, there are several potential scenarios to consider: build and publish your scene for PC only, Android only, or both PC and Android. For this tutorial, we'll build for both PC and Android. To learn more about building for single and multiple platforms, see our article titled [Build for single and multiple platforms](../../build-your-basic-environment/build-for-single-and-multiple-platforms.md).
 
