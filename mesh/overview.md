@@ -54,7 +54,9 @@ a tool you use every day&#8212;bringing co-presence to hybrid or remote teams.
 ## Mesh application
 
 > [!NOTE]
-> Microsoft Mesh can be experienced from the standalone Microsoft Mesh application or experienced while in Teams with the Mesh application. Using the Mesh app in Teams is only available currently to [Mesh TAP participants](develop/mesh-tap-participants.md).
+> **Coming soon**! The Mesh application will soon be available inside Microsoft Teams. Currently, this is only available to organizations in the [Mesh TAP](develop/mesh-tap-participants.md).
+>
+> :::image type="content" source="media/welcome-to-mesh/Open-mesh-app-in-teams-2.png" alt-text="Screenshot showing the Teams app, more apps selected and Mesh typed in search bar with the Mesh app highlighted.":::
 
 Use the Microsoft Mesh app for medium-to-large events with up to 200 people. Create custom experiences that are tailored to your specific business needs, such as employee events, training, guided tours, or internal product showcases.
 
