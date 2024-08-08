@@ -54,7 +54,7 @@ a tool you use every day&#8212;bringing co-presence to hybrid or remote teams.
 ## Mesh application
 
 > [!NOTE]
-> **Coming soon**! The Mesh application will soon be available inside Microsoft Teams. Currently, this is only available to organizations in the [Mesh TAP](develop/mesh-tap-participants.md).
+> **Coming soon**! The Mesh application will soon be available inside Microsoft Teams as an application that a user can search for and open, allowing Teams users on Windows and Mac machines to join Mesh events and custom immersive experiences. Currently, this is only available to organizations in the [Mesh TAP](develop/mesh-tap-participants.md).
 >
 > :::image type="content" source="media/welcome-to-mesh/Open-mesh-app-in-teams-2.png" alt-text="Screenshot showing the Teams app, more apps selected and Mesh typed in search bar with the Mesh app highlighted.":::
 

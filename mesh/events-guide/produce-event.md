@@ -79,7 +79,7 @@ Mute all attendees in the event. Hosts in the event can still use their mics and
 
 #### Hand Raise
 
-Enable or disable Hand Raise for participants. Hand Raise is ideal for Question and Answer scenarios. When someone raises their hand, there will be an indicator next to their name in the host panel. This allows you as a the host to call on attendees.
+Enable or disable Hand Raise for participants. Hand Raise is ideal for Question and Answer scenarios. When someone raises their hand, there will be an indicator next to their name in the host panel and the attendees will show a hand raise icon above their avatar.
 
 **Hand raise enabled:** Participants can raise their hand to await being called on and megaphoned.
 
