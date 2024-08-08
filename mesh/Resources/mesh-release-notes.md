@@ -28,6 +28,18 @@ Microsoft Mesh application
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
+## What's new
+
+### Multi-room user visualization
+
+* We are improving our cross-room visualization for event hosts, allowing hosts to see attendees who have raised their hand. Additionally, hosts can now see emojis that attendees use in other rooms.
+
+    :::image type="content" source="media/Emoji-reactions-hand-raise-multi-room.png" alt-text="Screenshot of a multi-room event in Mesh showing the emojis for other people in the event.":::
+
+### Revisit events after they've finished
+
+* Revisit any past event using the link in the calendar invite or the invite you get when creating the event, allowing events to be reused or revisited at any time in the future.
+
 ## Version 5.2409.XX
 
 ### What's new
