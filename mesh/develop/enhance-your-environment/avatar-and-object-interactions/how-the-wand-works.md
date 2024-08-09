@@ -4,7 +4,7 @@ description: Take an-indepth look at the visual script that makes the Wand Equip
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 5/15/2024
+ms.date: 8/9/2024
 ms.topic: overview
 keywords: interactions, interactables, equippables, throwables, avatars, grab, pick up, hold, throw, attach, activate, activation
 ---
@@ -159,7 +159,7 @@ This once again triggers the nodes in the **Networking startMagic** node group a
 
 - Create different effects that could be triggered when one of the existing Equippables is picked up and held.  
 - Create new Equippables that could use some of the existing effects. For example, certain types of fireworks could use the "sparkle" effects that are currently used by the Wand.  
-- Create different effects and behaviors for a new Equippable that could be triggered when the Equippable is held and the left mouse button (PC) or controller button (Quest 2) is pressed. For example, instead of a Wand, you could have a fishing rod that casts out a lure when you press the button.  
+- Create different effects and behaviors for a new Equippable that could be triggered when the Equippable is held and the left mouse button (PC) or controller button (Quest) is pressed. For example, instead of a Wand, you could have a fishing rod that casts out a lure when you press the button.  
 - Think about the difference between having an object move right into its activated state when picked up (for example, the Drill) and having an object that starts off non-activated and then moves into its activated state after the attendee clicks (for example, the Tablet). Make objects that take advantage of both approaches.
 
 ## Next steps

@@ -4,7 +4,7 @@ description: Learn about various equippable objects and the realistic ways they 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/4/2024
+ms.date: 8/9/2024
 ms.topic: overview
 keywords: interactions, interactables, equippables, throwables, avatars, grab, pick up, hold, throw, attach, activate, activation
 ---
@@ -108,7 +108,7 @@ There are different ways of holding an Equippable object. Some objects, when whe
 
 ## Equippable behaviors
 
-For some Equippables, you can pick them up and then press the left mouse button (PC) or controller button (Quest 2) to trigger an action that's appropriate for that Equippable. Examples:
+For some Equippables, you can pick them up and then press the left mouse button (PC) or controller button (Quest) to trigger an action that's appropriate for that Equippable. Examples:
 
 - Raise and lower a Wine glass.
 - Generate sparkles from the end of a Wand.

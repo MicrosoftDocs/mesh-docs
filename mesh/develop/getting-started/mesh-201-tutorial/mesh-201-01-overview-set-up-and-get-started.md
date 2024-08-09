@@ -4,7 +4,7 @@ description: Learn about the prerequsites, set up, and then get started with the
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/1/2024
+ms.date: 8/9/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web
 ---
@@ -75,7 +75,7 @@ Unity version 2022.3.34 is required for this tutorial.
 
 [Get help installing Unity](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 
-Your installation should include modules for Android and Windows. The Mesh app works for PC and the Meta Quest 2, and Android is the operating system for the Quest.
+Your installation should include modules for Android and Windows. The Mesh app works for PC and the Meta Quest, and Android is the operating system for the Quest.
 
 ### Mesh Cloud Scripting Setup
 
