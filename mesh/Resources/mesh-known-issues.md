@@ -14,7 +14,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 ## Mesh app in Teams (August 12, 2024)
 
 > [!IMPORTANT]
-> Currently, the Mesh app in Teams only available to organizations in [Mesh TAP](develop/mesh-tap-participants.md).
+> Currently, the Mesh app in Teams only available to organizations in [Mesh TAP](../develop/mesh-tap-participants.md).
 
 For Mesh TAP participants that are testing the Mesh app in Teams, please read through the known issues and limitations listed below:
 

@@ -26,6 +26,6 @@ Need help? See [how to download Mesh on Meta Quest](../Resources/mesh-troublesho
 > [!IMPORTANT]
 > Currently, this is only available to organizations in the [Mesh TAP](develop/mesh-tap-participants.md).
 
-The Mesh app will soon be available as an app in Microsoft Teams, allowing Teams users to access Mesh events and custom immersive experiences in the Teams application.
+The Mesh application will soon be available as an app in Microsoft Teams, allowing users to access Mesh events and custom immersive experiences without having to download the Mesh app for Windows.
 
 :::image type="content" source="media/welcome-to-mesh/Open-mesh-app-in-teams-2.png" alt-text="Screenshot showing the Teams app, more apps selected and Mesh typed in search bar with the Mesh app highlighted.":::
