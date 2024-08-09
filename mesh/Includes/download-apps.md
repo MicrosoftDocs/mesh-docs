@@ -24,6 +24,8 @@ Need help? See [how to download Mesh on Quest 2 via App Lab](../Resources/mesh-t
 ## Microsoft Mesh app in Teams
 
 > [!IMPORTANT]
-> **Coming soon**! The Mesh application will soon be available inside Microsoft Teams as an application that a user can search for and open, allowing Teams users on Windows and Mac machines to join Mesh events and custom immersive experiences. Currently, this is only available to organizations in the [Mesh TAP](develop/mesh-tap-participants.md).
->
-> :::image type="content" source="media/welcome-to-mesh/Open-mesh-app-in-teams-2.png" alt-text="Screenshot showing the Teams app, more apps selected and Mesh typed in search bar with the Mesh app highlighted.":::
+> Currently, this is only available to organizations in the [Mesh TAP](develop/mesh-tap-participants.md).
+
+The Mesh app will soon be available as an app in Microsoft Teams, allowing Teams users to access Mesh events and custom immersive experiences in the Teams application.
+
+:::image type="content" source="media/welcome-to-mesh/Open-mesh-app-in-teams-2.png" alt-text="Screenshot showing the Teams app, more apps selected and Mesh typed in search bar with the Mesh app highlighted.":::
