@@ -4,7 +4,7 @@ description: Learn how to turn your environment into an Asset and then publish i
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/6/2024
+ms.date: 8/9/2024
 ms.topic: how-to
 keywords: Microsoft Mesh, environment, build, publish, build and publish, uploader, Mesh uploader, thumbnail
 ---
@@ -86,7 +86,7 @@ added in the **Create Environment** tab: *Vinnie's Dartroom 080524*.
     to build for. Note that when a button background is gray, the button
     is "on"; when the background is black, the button is "off." 
     
-    **Note**: There are two currently available build options: PC (for users running the Mesh app on a PC) and Android (for users running in the Mesh app on the Meta Quest 2). The **Platforms** section displays a third option for HTML5; this is for a feature that will be turned on for [Mesh TAP participants](../mesh-tap-participants.md) in mid-August 2024.
+    **Note**: There are two currently available build options: PC (for users running the Mesh app on a PC) and Android (for users running in the Mesh app on the Meta Quest). The **Platforms** section displays a third option for HTML5; this is for a feature that will be turned on for [Mesh TAP participants](../mesh-tap-participants.md) in mid-August 2024.
     
     Do one of the following:
 
