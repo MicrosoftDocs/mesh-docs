@@ -81,7 +81,7 @@ Unity version 2022.3.34 is required for this tutorial.
 
 [Get help installing Unity](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 
-Your installation should include modules for Android and Windows. The Mesh app works for PC and the Meta 2, and Android is the operating system for the Quest.
+Your installation should include modules for Android and Windows. The Mesh app works for PC and the Meta Quest 2, and Android is the operating system for the Quest.
 
 ## Set things up for Mesh
 
