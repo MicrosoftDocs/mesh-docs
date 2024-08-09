@@ -4,7 +4,7 @@ description: Learn about the prerequsites and setup process for the Mesh 101 tut
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/1/2024
+ms.date: 8/9/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, GitHub
 ---
@@ -81,7 +81,7 @@ Unity version 2022.3.34 is required for this tutorial.
 
 [Get help installing Unity](https://docs.unity3d.com/hub/manual/InstallEditors.html)
 
-Your installation should include modules for Android and Windows. The Mesh app works for PC and the Oculus Quest 2, and Android is the operating system for the Quest.
+Your installation should include modules for Android and Windows. The Mesh app works for PC and the Meta Quest 2, and Android is the operating system for the Quest.
 
 ## Set things up for Mesh
 
