@@ -11,6 +11,34 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 # Active known issues - Mesh
 
+## Mesh app in Teams (August 12, 2024)
+
+> [!IMPORTANT]
+> Currently, the Mesh app in Teams only available to organizations in [Mesh TAP](develop/mesh-tap-participants.md).
+
+For Mesh TAP participants that are testing the Mesh app in Teams, please read through the known issues and limitations listed below:
+
+* **Outlook Calendar invites** for Mesh events will provide the option to open the Mesh app for Windows only. To join events using the Mesh app in Teams, please open to the Mesh app in Teams and join events directly.
+
+* **Attendees**
+
+  * Audio device selection does not inherit automatically from Teams.
+  * Some text that is shown as users launch the Mesh app may not yet be localized into languages other than English.
+  * The selfie feature is disabled currently.
+  * Outgoing screenshare is not currently supported.
+
+* **Organizers**
+
+  * Image/Video objects cannot reference SharePoint URLs.
+  * There is currently no warning to organizers when attempting to create an event and use environment in the Mesh app in Teams that does not have the WebGL build module. For environments to be used in the Mesh app in Teams they must have been published using the Mesh Toolkit uploader with the WebGL build module.
+
+* **Developers**
+
+  * Visual artifacts may arise if custom Unity materials write to depth (e.g., translucency).
+  * If you intend to use WebSlates in an environment for the Mesh app in Teams (building environments for HTML5), we recommend ensuring that all content can run inside of an `<iframe>`. To ensure this, use embeddable content URLs on WebSlates.
+  * WebSlates that do not work in an `<iframe>` will show an error message on the slate. Keep in mind that testing in Play Mode will show content as if it's running on native PC app.
+  * Coming soon: Web content incapable of running in the Mesh app in Teams will show an error message during Build and Publish in the Mesh Uploader.
+
 ## Version 5.2403.0 (April 18, 2024)
 
 * Single room and multi-room events require the same firewall endpoint and port configurations. We are actively working to resolve this issue and apologize for any inconvenience.
