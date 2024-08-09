@@ -19,7 +19,7 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 > [!div class="nextstepaction"]
 > [Download Microsoft Mesh on Meta Quest | Meta Store](https://aka.ms/MeshDownloadQuest)
 
-Need help? See [how to download Mesh on Quest 2 via App Lab](../Resources/mesh-troubleshooting.md#how-to-download-mesh-on-quest-2-via-app-lab).
+Need help? See [how to download Mesh on Meta Quest](../Resources/mesh-troubleshooting.md#how-to-download-mesh-on-quest-2-via-app-lab).
 
 ## Microsoft Mesh app in Teams
 

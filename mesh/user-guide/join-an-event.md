@@ -25,6 +25,9 @@ You can easily find Mesh events right within your daily Outlook and Teams calend
 
 ![Animation of joining a Mesh event from Outlook or Teams calendar](media/mesh-entry-points.gif)
 
+> [!NOTE]
+> For Mesh TAP participants, we are rolling out the option to choose how you'd like to open Mesh: Use the Mesh app in Teams or the Mesh app for Windows.
+
 ## Join from Microsoft Mesh on PC
 
 In the Mesh app on PC or Quest, you can attend social gatherings, conferences, and all-hands events all within a wide selection of Environments. In these events, you can view content, interact with physical objects, and meet or network with your colleagues.s
