@@ -4,7 +4,7 @@ description: Download mesh apps links and preview build notes.
 ms.service: mesh
 author: typride
 ms.author: tmilligan
-ms.date: 10/30/2023
+ms.date: 8/8/24
 ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
