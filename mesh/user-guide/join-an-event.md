@@ -13,9 +13,9 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 The three entrypoints that you can use to join a Mesh event are:
 
-1. [Mesh app for Windows](#windowstabwindows) (**Windows PC**)
-1. [Mesh app for Meta Quest VR devices](#meta-questtabmeta-quest) (**VR**)
-1. [Mesh app in Teams](#mesh-app-in-teamstabmesh-app-in-teams) (**Windows PC** or **Mac**)
+1. [Mesh app for Windows](#join-using-the-mesh-app-for-windows) (**Windows PC**)
+1. [Mesh app for Meta Quest VR devices](#join-using-microsoft-mesh-on-quest-2) (**VR**)
+1. [Mesh app in Teams](#join-using-the-mesh-app-in-teams-windows-or-mac) (**Windows PC** or **Mac**)
 
 You can open these apps to find your event or use the meeting invite link for the Mesh event in your Outlook or Microsoft Teams calendar.
 
@@ -61,7 +61,7 @@ Follow the steps below to see a list of events and join an event.
 
     ![A screenshot of the audio device test dialog that can be accessed from the prejoin screen](media/audio-device-test-ui.png)
 
-# [Meta Quest](#tab/Meta Quest)
+# [Quest](#tab/Quest)
 
 ## Join using Microsoft Mesh on Quest 2
 
@@ -77,7 +77,7 @@ If you're running the Mesh app on Quest, you can use the **Dashboard** shown bel
 
 4. Click on any of the events to **View event details**, or select **Join**.
 
-# [Mesh app in Teams](#tab/Mesh app in Teams)
+# [Teams](#tab/Teams)
 
 ## Join using the Mesh app in Teams (Windows or Mac)
 
