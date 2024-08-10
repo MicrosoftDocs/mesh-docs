@@ -102,9 +102,7 @@ To join a Mesh event using the Mesh app in Teams:
 
 You can now view content, communicate with other users, listen to guests speaking, use emojis or dance, and take selfies.
 
-Try interacting with any games or interactive elements in the event environment.
-
-![an image of the Meadows meeting space](media/the-meadows-meeting-space.png)
+Try interacting with any games or interactive elements in the event environment and enjoy!
 
 ## Next steps
 
