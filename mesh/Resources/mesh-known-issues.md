@@ -30,7 +30,7 @@ For Mesh TAP participants that are testing the Mesh app in Teams, please read th
 * **Organizers**
 
   * Image/Video objects cannot reference SharePoint URLs.
-  * There is currently no warning to organizers when attempting to create an event and use an environment in the Mesh app in Teams that does not have the WebGL build module. For environments to be used in the Mesh app in Teams they must have been published with the HTML5/WebGL build module using the Mesh Toolkit uploader.
+  * If an organizer attempts to create an event and use an environment that does not have the HTML5/WebGL build module, there is currently no warning that notifies them that this environment will not work in the Mesh app in Teams.
 
 * **Developers**
 
