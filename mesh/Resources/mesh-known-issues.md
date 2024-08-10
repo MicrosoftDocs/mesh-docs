@@ -16,7 +16,7 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 > [!IMPORTANT]
 > Currently, the Mesh app in Teams only available to organizations in [Mesh TAP](../develop/mesh-tap-participants.md).
 
-For Mesh TAP participants that are testing the Mesh app in Teams, please read through the known issues and limitations listed below:
+ We're excited to introduce the Mesh app in Teams to our Mesh TAP participants and appreciate your understanding as we work through the issues and limitations listed below:
 
 * **Outlook Calendar invites** for Mesh events will provide the option to open the Mesh app for Windows only. To join events using the Mesh app in Teams, please open to the Mesh app in Teams and join events directly.
 
