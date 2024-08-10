@@ -30,7 +30,8 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 * **Organizers**
 
   * Image/Video objects cannot reference SharePoint URLs.
-  * If an organizer attempts to create an event and use an environment that does not have the HTML5/WebGL build module, there is currently no warning that notifies them that this environment will not work in the Mesh app in Teams.
+  * If an organizer creates an event that they expect some people will join using the
+Mesh app in Teams, but the environment they choose wasn't built to include that option, there's no warning about this. Environments intended to be used in events in the Mesh app in Teams must be built by choosing the HTML5 button in the "Build for Platforms" section of the Mesh Uploader.
 
 * **Developers**
 

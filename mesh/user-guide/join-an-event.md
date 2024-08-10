@@ -82,7 +82,7 @@ If you're running the Mesh app on Quest, you can use the **Dashboard** shown bel
 ## Join using the Mesh app in Teams (Windows or Mac)
 
 > [!IMPORTANT]
-> Currently, the Mesh app in Teams only available to organizations in [Mesh TAP](develop/mesh-tap-participants.md).\
+> We're excited to introduce the Mesh app in Teams, bring Mesh closer to where you do your day to day work.Currently, the Mesh app in Teams only available to organizations in [Mesh TAP](develop/mesh-tap-participants.md).
 
 To join a Mesh event using the Mesh app in Teams:
 
