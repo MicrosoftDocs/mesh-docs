@@ -15,11 +15,11 @@ The three entrypoints that you can use to join a Mesh event are:
 
 1. [Mesh app for Windows](#join-using-the-mesh-app-for-windows) (**Windows PC**)
 1. [Mesh app for Meta Quest VR devices](#join-using-microsoft-mesh-on-quest-2) (**VR**)
-1. [Mesh app in Teams](#teamstabteams) (**Windows PC** or **Mac**)
+1. [Mesh app in Teams]() (**Windows PC** or **Mac**)
 
 You can open these apps to find your event or use the meeting invite link for the Mesh event in your Outlook or Microsoft Teams calendar.
 
-# [Windows](#tab/Windows)
+## [Windows](#tab/Windows)
 
 ## Join using Microsoft Outlook and Teams
 
@@ -30,9 +30,9 @@ You can easily find Mesh events right within your daily Outlook and Teams calend
 > [!NOTE]
 > For Mesh TAP participants, we are rolling out the option to choose how you'd like to open Mesh: Use the Mesh app in Teams or the Mesh app for Windows.
 
-## Join using the Mesh app for Windows
+### Join using the Mesh app for Windows
 
-In the Mesh app on PC or Quest, you can attend social gatherings, conferences, and all-hands events all within a wide selection of Environments. In these events, you can view content, interact with physical objects, and meet or network with your colleagues.s
+In the Mesh app on PC or Quest, you can attend social gatherings, conferences, and all-hands events all within a wide selection of Environments. In these events, you can view content, interact with physical objects, and meet or network with your colleagues.
 
 Follow the steps below to see a list of events and join an event.
 
@@ -61,9 +61,9 @@ Follow the steps below to see a list of events and join an event.
 
     ![A screenshot of the audio device test dialog that can be accessed from the prejoin screen](media/audio-device-test-ui.png)
 
-# [Quest](#tab/Quest)
+## [Quest](#tab/Quest)
 
-## Join using Microsoft Mesh on Meta Quest devices
+### Join using Microsoft Mesh on Meta Quest devices
 
 If you're running the Mesh app on Quest, you can use the **Dashboard** shown below to find and join your Teams events.
 
@@ -79,9 +79,9 @@ If you're running the Mesh app on Quest, you can use the **Dashboard** shown bel
 
 1. Click on any of the events to **View event details**, or select **Join**.
 
-# [Teams](#tab/Teams)
+## [Teams](#tab/Teams)
 
-## Join using the Mesh app in Teams (Windows or Mac)
+### Join using the Mesh app in Teams (Windows or Mac)
 
 > [!IMPORTANT]
 > We're excited to introduce the Mesh app in Teams, bring Mesh closer to where you do your day to day work.Currently, the Mesh app in Teams only available to organizations in [Mesh TAP](develop/mesh-tap-participants.md).
