@@ -63,21 +63,23 @@ Follow the steps below to see a list of events and join an event.
 
 # [Quest](#tab/Quest)
 
-## Join using Microsoft Mesh on Quest 2
+## Join using Microsoft Mesh on Meta Quest devices
 
 If you're running the Mesh app on Quest, you can use the **Dashboard** shown below to find and join your Teams events.
 
-1. Open the Mesh app on Quest 2.
+1. If you don't have the Microsoft Mesh app on your device, [download Microsoft Mesh on Meta Quest | Meta Store](https://aka.ms/MeshDownloadQuest).
 
-2. Log in with your corporate email account.
+1. Open the Mesh app on your Meta Quest VR device or search for Mesh and download the app from the Quest store.
 
-3. Select the **Dashboard** by clicking on the systems bubble on the lower left of your view.
+1. Log in with your corporate email account.
+
+1. Select the **Dashboard** by clicking on the systems bubble on the lower left of your view.
 
     ![A screenshot of the Mesh dashboard on Quest](media/mesh-dashboard.png)
 
-4. Click on any of the events to **View event details**, or select **Join**.
+1. Click on any of the events to **View event details**, or select **Join**.
 
-# [Teams](#tab/Teams)
+# [Teams/Windows/Mac](#tab/Teams/Windows/Mac)
 
 ## Join using the Mesh app in Teams (Windows or Mac)
 
