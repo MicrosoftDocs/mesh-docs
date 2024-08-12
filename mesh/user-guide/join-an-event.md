@@ -79,7 +79,7 @@ If you're running the Mesh app on Quest, you can use the **Dashboard** shown bel
 
 1. Click on any of the events to **View event details**, or select **Join**.
 
-# [Teams/Windows/Mac](#tab/Teams/Windows/Mac)
+# [Teams](#tab/Teams)
 
 ## Join using the Mesh app in Teams (Windows or Mac)
 
