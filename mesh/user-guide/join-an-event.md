@@ -15,7 +15,7 @@ The three entrypoints that you can use to join a Mesh event are:
 
 1. [Mesh app for Windows](#join-using-the-mesh-app-for-windows) (**Windows PC**)
 1. [Mesh app for Meta Quest VR devices](#join-using-microsoft-mesh-on-quest-2) (**VR**)
-1. [Mesh app in Teams](#join-using-the-mesh-app-in-teams-windows-or-mac) (**Windows PC** or **Mac**)
+1. [Mesh app in Teams](#teamstabteams) (**Windows PC** or **Mac**)
 
 You can open these apps to find your event or use the meeting invite link for the Mesh event in your Outlook or Microsoft Teams calendar.
 
