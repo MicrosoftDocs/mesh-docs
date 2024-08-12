@@ -9,7 +9,7 @@ ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-## Microsoft Mesh on PC
+## Microsoft Mesh app for Windows
 
 > [!div class="nextstepaction"]
 > [Download Microsoft Mesh - Microsoft Store Apps](https://aka.ms/MeshDownloadPC)
@@ -24,7 +24,7 @@ Need help? See [how to download Mesh on Meta Quest](../Resources/mesh-troublesho
 ## Microsoft Mesh app in Teams
 
 > [!IMPORTANT]
-> Currently, this is only available to organizations in the [Mesh TAP](../develop/mesh-tap-participants.md).
+> Currently, this is only available to organizations in [Mesh TAP](../develop/mesh-tap-participants.md).
 
 The Mesh application will soon be available as an app in Microsoft Teams, allowing users to access Mesh events and custom immersive experiences without having to download the Mesh app for Windows.
 
