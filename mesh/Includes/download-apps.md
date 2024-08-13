@@ -19,10 +19,6 @@ To make your Teams meetings immersive, learn how to get started with immersive s
 
 ## Host or join Mesh events
 
-Mesh events are hosted and joined via the Mesh app for your device.
-
-### Download the Mesh app
-
 | **App & Device**                | **Download**                                                                    |
 |---------------------------------|---------------------------------------------------------------------------------|
 | Mesh for Windows                | [Download Microsoft Mesh - Microsoft Store Apps](https://aka.ms/MeshDownloadPC) |
