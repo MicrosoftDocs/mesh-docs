@@ -35,7 +35,7 @@ Immersive experiences have unique attributes, including spatial interaction, co-
 |**Device support:** Windows & Mac through the Teams application or join the immersive space in a Teams meeting on your Meta Quest VR device.| **Device support:** Windows, Mac, Meta Quest through the Mesh app|
 |**Key benefits:** <br><br> **Lower effort** to set up for and have users get familiar with immersive experiences. <br><br>**[Integrated into Microsoft Teams meetings](https://support.microsoft.com/en-us/office/get-started-with-immersive-spaces-in-microsoft-teams-4a6182f8-0f43-4c24-bb66-ef229fa221d8)** – a tool you use every day – bringing co-presence to hybrid or remote teams. <br><br> **[Provides Icebreakers and activities](https://support.microsoft.com/en-us/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games)**, ready for you to enjoy and share with your teams. | **Key benefits:** <br><br> **[Use Microsoft environments or create custom environments](develop/development-overview.md#what-you-can-do-with-mesh)** using the Mesh toolkit, leveraging physics, scripting, and web content.  <br><br> **[Interact with engaging and dynamic](user-guide/join-an-event.md)** environments synchronized across all attendees simultaneously. <br><br> **[Customize and create events that tell stories](events-guide/customize-event.md)** by adding objects that can be used in your events.  <br><br>   |
 
-## Immersive spaces in Teams meetings
+## Make Teams meetings immersive
 
 :::image type="content" source="media/welcome-to-mesh/04_ImmersiveSpaces_Splice.gif" alt-text="GIF of selecting view then immersive space (3D) in teams":::
 
@@ -51,7 +51,8 @@ Getting started is easy! From the **View menu** in a Teams meeting, select the *
 
 - **Join right from Microsoft Teams**&#8212;a tool you use every day&#8212;bringing co-presence to hybrid or remote teams.
 
-## Mesh application
+## Join Mesh events
+
 
 > [!NOTE]
 > **Coming soon**! The Mesh application will soon be available inside Microsoft Teams as an application that a user can search for and open, allowing Teams users on Windows and Mac machines to join Mesh events and custom immersive experiences. Currently, this experience is only available to organizations in [Mesh TAP](develop/mesh-tap-participants.md).

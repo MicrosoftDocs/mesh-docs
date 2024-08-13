@@ -17,11 +17,17 @@ If Mesh is not set up for your organization, see how to [Set up Microsoft Mesh](
 
 [!INCLUDE [<download-apps>](<includes/download-apps.md>)]
 
+>[!IMPORTANT]
+> We're excited to announce that Windows and Mac users will soon be able to join Mesh events from within Teams with the Mesh app. Currently, this is only available to organizations in [Mesh TAP](../develop/mesh-tap-participants.md).
+>
+> :::image type="content" source="media/welcome-to-mesh/Open-mesh-app-in-teams-2.png" alt-text="Screenshot showing the Teams app, more apps selected and Mesh typed in search bar with the Mesh app highlighted.":::
+
 ## Create events with Mesh on the web
 
 Use Mesh on the web to create events, invite co-organizers or attendees, manage environments and templates, and create collections to hold custom environments.
 
-Create events, and manage collections, environments, and templates at [https://mesh.cloud.microsoft/](https://mesh.cloud.microsoft/).
+> [!div class="nextstepaction"]
+> [Create a Mesh event](https://mesh.cloud.microsoft/)
 
 ## Build environments with the Mesh Toolkit
 
