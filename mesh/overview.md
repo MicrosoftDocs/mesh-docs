@@ -27,7 +27,7 @@ Immersive experiences have unique attributes, including spatial interaction, co-
 
 **Co-presence** can lead to spontaneous moments of conversation or even just the deepened connection of a shared experience. Mesh allows you to focus on what matters: people, conversations, and a unique shared space.
 
-## Make Teams meetings immersive or host a Mesh event?
+## Immersive spaces in Teams or Mesh events?
 
 |**[Immersive spaces in Teams](#what-can-you-do-in-immersive-spaces-in-teams)** |[**Mesh events**](#what-can-you-do-with-the-mesh-application)  |
 |:---------|:---------|
@@ -50,8 +50,7 @@ Getting started is easy! From the **View menu** in a Teams meeting, select the *
 
 - **Join right from Microsoft Teams**&#8212;a tool you use every day&#8212;bringing co-presence to hybrid or remote teams.
 
-## Join Mesh events
-
+## Host or Join Mesh events
 
 > [!NOTE]
 > **Coming soon**! The Mesh application will soon be available inside Microsoft Teams as an application that a user can search for and open, allowing Teams users on Windows and Mac machines to join Mesh events and custom immersive experiences. Currently, this experience is only available to organizations in [Mesh TAP](develop/mesh-tap-participants.md).
