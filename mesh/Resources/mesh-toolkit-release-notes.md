@@ -41,13 +41,17 @@ For purposes of this document, there are two categories of users:
 
 #### WebSlate Controllable
 
-Developers can add WebSlate Controllables to their environment, unlocking the ability for Event organizers to update content URLs during live events.
+Developers can add WebSlate Controllables to their environment, unlocking the ability for Event organizers to update content URLs during live events. 
 
 * **Developers:** Same simple workflow for adding Webslates, with minor additional configurations to add Controllable capabilities.
 
-* **Event organizers:** Toggle URLs, visibility (on/off), and optionally Prevent suspension (to keep WebSlates always on). Via the host panel, changing the URL at runtime updates WebSlates for all users in the event, instantly (global refresh).
+* **Event organizers:** Toggle URLs, visibility (on/off), and optionally Prevent suspension (to keep WebSlates always on). Via the Control panel, changing the URL at runtime updates WebSlates for all users in the event, instantly (global refresh).
 
 * **End users:** Upon cursor/controller hover, a menu bar with a built-in refresh button and a tooltip briefly explaining single-user nature of webslates has been added (some webapps may offer shared experiences). This provides a way to return to the URL set by organizers (in the case the user navigates away) and can be used incase webapps have issues during experiences.
+
+**24.10 Toolkit upgrade note  for WebSlates:**
+
+* For existing environments with the WebSlateFramed component in their Unity scene, upgrading Mesh Toolkit to 24.10 will automatically provide organizers with WebSlate Controllable functionality. This means that organizers will be able to toggle the URL for their WebSlates at runtime via the Control Panel, and that end users will see a refresh button/info coin upon hovering the slate. For those who want fixed content that cannot be controlled by organizers, the WebSlate Controllable can be turned off by removing the "WebSlate Controllable (Script) from their WebSlate GameObject.
 
 ### Visual scripting
 
