@@ -73,8 +73,7 @@ Developers can add WebSlate Controllables to their environment, unlocking the ab
 
   * `Cannot modify prefab definition`
   * `Invalid reference`
-
-    However, these errors do point to actual content issues if they appear when editing visual scripts in a prefab definition edited in scene context or opened in isolation from the Hierarchy panel. (60475)
+  However, these errors do point to actual content issues if they appear when editing visual scripts in a prefab definition edited in scene context or opened in isolation from the Hierarchy panel. (60475)
 
 ## Mesh Toolkit 5.2409.X
 
