@@ -39,11 +39,11 @@ For purposes of this document, there are two categories of users:
 
 * Fixed bug where the Unity Package Manager failed to get information and the console was spammed by the same message on repeat.
 
-#### WebSlate controllable
+#### WebSlate Controllable
 
 Developers can add WebSlate Controllables to their environment, unlocking the ability for Event organizers to update content URLs during live events.
 
-***Developers:** Same simple workflow for adding Webslates, with minor additional configurations to add Controllable capabilities.
+* **Developers:** Same simple workflow for adding Webslates, with minor additional configurations to add Controllable capabilities.
 
 * **Event organizers:** Toggle URLs, visibility (on/off), and optionally Prevent suspension (to keep WebSlates always on). Via the host panel, changing the URL at runtime updates WebSlates for all users in the event, instantly (global refresh).
 
