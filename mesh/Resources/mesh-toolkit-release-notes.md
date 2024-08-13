@@ -4,7 +4,7 @@ description: Release notes for the Microsoft Mesh Toolkit with a list of importa
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
-ms.date: 08/02/2024
+ms.date: 08/13/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
