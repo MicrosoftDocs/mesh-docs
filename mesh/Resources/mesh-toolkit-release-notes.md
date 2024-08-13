@@ -26,8 +26,55 @@ For purposes of this document, there are two categories of users:
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2409.X | 2024-08-01     |
-| Mesh on PC/Quest           | 5.2409.X | 2024-07-23     |
+| Mesh toolkit               | 5.2410.X | 2024-08-13     |
+| Mesh on PC/Quest           | 5.2410.X | 2024-08-05     |
+
+## Mesh Toolkit 5.2410.X
+
+### What's new
+
+#### Mesh Toolkit uploader
+
+* Where there is an issue between Uploader Tool and Mesh Services during the Upload process, we now display a message to the user that the operation is taking longer than expected but still running.
+
+* Fixed bug where the Unity Package Manager failed to get information and the console was spammed by the same message on repeat.
+
+#### WebSlate controllable
+
+Developers can add WebSlate Controllables to their environment, unlocking the ability for Event organizers to update content URLs during live events.
+
+* Developers: Same simple workflow for adding Webslates, with minor additional configurations to add Controllable capabilities.
+
+* Event organizers: Toggle URLs, visibility (on/off), and optionally Prevent suspension (to keep WebSlates always on). Via the host panel, changing the URL at runtime updates WebSlates for all users in the event, instantly (global refresh).
+
+* End users: Upon cursor/controller hover, a menu bar with a built-in refresh button and a tooltip briefly explaining single-user nature of webslates has been added (some webapps may offer shared experiences). This provides a way to return to the URL set by organizers (in the case the user navigates away) and can be used incase webapps have issues during experiences.
+
+### Visual scripting
+
+* Improved and extended the diagnostics shown in the Mesh Visual Scripting Diagnostics panel (at the bottom of the Inspector panel) and made them more actionable by including an extended description that can be viewed in a tooltip by hovering any entry in the Diagnostics panel.
+
+* Some of the new diagnostics (for example, "Variable not declared" and "Cannot modify prefab definition") block the environment's upload until they are fixed. Already uploaded environments are not affected.
+
+* Added **On Dictionary Item Added** and **On Dictionary Item Removed** events that allow visual scripts to efficiently respond to items being added to or removed from dictionary-type component properties and visual script variables.
+
+    :::image type="content" source="media/Visual-scripting-dictionary-item-24.10.png" alt-text="Screenshot of the Mesh Toolkit showing hte On Dictionary Item Added or Removed.":::
+
+* Client startup time in Emulator has been improved significantly for large scenes (with thousands of visual scripts and tens of thousands of scene objects). (60475)
+
+#### Resolved issues
+
+* For Mesh Physics, we removed problematic and unnecessary mechanism that disabled Renderer components below Rigidbody at start-up and re-enabled them when fully connected. (59804)
+
+* For Visual Scripting, we fixed an issue that caused embedded subgraphs to be corrupted when saved in Unity Editor. (Subgraphs saved in separate asset files were not affected by this issue.) (60183)
+
+* For Visual Scripting, loading a corrupted embedded subgraph into Unity Editor causes these warnings to be logged to the Editor console: `Failed to add element to graph during deserialization: [...]`. (60183)
+
+* For Visual Scripting, When editing visual scripts in a prefab definition by selecting the prefab asset in the Project panel (instead of opening the prefab definition in scene context or in isolation from the Hierarchy panel), the Mesh Visual Scripting Diagnostics panel may show false-positive diagnostic errors:
+
+  * `Cannot modify prefab definition`
+  * `Invalid reference`
+
+However, these errors do point to actual content issues if they appear when editing visual scripts in a prefab definition edited in scene context or opened in isolation from the Hierarchy panel. (60475)
 
 ## Mesh Toolkit 5.2409.X
 
