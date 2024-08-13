@@ -49,8 +49,7 @@ Getting started is easy! From the **View menu** in a Teams meeting, select the *
 
 - **Play as a team with ready-to-use icebreakers and activities** like prompt bubbles, marshmallow roasting, and bean bag toss.
 
-- **Join right from Microsoft Teams**&#8212;
-a tool you use every day&#8212;bringing co-presence to hybrid or remote teams.
+- **Join right from Microsoft Teams**&#8212;a tool you use every day&#8212;bringing co-presence to hybrid or remote teams.
 
 ## Mesh application
 
