@@ -39,15 +39,29 @@ For purposes of this document, there are two categories of users:
 
 * Fixed bug where the Unity Package Manager failed to get information and the console was spammed by the same message on repeat.
 
-#### WebSlate Controllable
+#### WebSlate Controllables to display URls in Mesh events
 
-Developers can add WebSlate Controllables to their environment, unlocking the ability for Event organizers to update content URLs during live events. 
+* With the release of the 24.10 Mesh Toolkit, developers now have the ability to add WebSlate Controllables to environments. These WebSlates enable event attendees to interact with a webpage while in a Mesh event, empowering event organizers to dynamically change the content that's displayed on WebSlates in real-time.
 
-* **Developers:** Same simple workflow for adding Webslates, with minor additional configurations to add Controllable capabilities.
+* Developers: Same simple workflow for adding Webslates, with minor additional configurations to add Controllable capabilities
+Event organizers: Toggle URLs, visibility (on/off), and optionally Prevent suspension (to keep WebSlates always on). Via the host panel, changing the URL at runtime updates WebSlates for all users in the event, instantly (global refresh).
 
-* **Event organizers:** Toggle URLs, visibility (on/off), and optionally Prevent suspension (to keep WebSlates always on). Via the Control panel, changing the URL at runtime updates WebSlates for all users in the event, instantly (global refresh).
+* End users: Upon cursor/controller hover, a menu bar with a built-in refresh button and a tooltip briefly explaining single-user nature of webslates has been added (some webapps may offer shared experiences). This provides a way to return to the URL set by organizers (in the case the user navigates away) and can be used incase webapps have issues during experiences.
 
-* **End users:** Upon cursor/controller hover, a menu bar with a built-in refresh button and a tooltip briefly explaining single-user nature of webslates has been added (some webapps may offer shared experiences). This provides a way to return to the URL set by organizers (in the case the user navigates away) and can be used incase webapps have issues during experiences.
+Some notable details to consider are:
+
+* Developers have the option to select if a URL can be changed while an event is occurring or not by removing the WebSlate Controllable script in the parent WebSlateFramed GameObject.
+
+* Developers choose the location of the WebSlate in the environment. Currently, WebSlate positioning is not adjustable after they are uploaded to an environment (this is not an Object in the Catalog). 
+
+* The content and interaction of the WebSlate will depend on which webapp is displayed on it. For example, some webapps will provide synchronized inputs for all users, creating a sense of a shared interaction - but navigation and scrolling will not be synced across users. Choosing which URLs are displayed in the WebSlate and testing them is important to achieve the desired experience.
+
+* Currently SSO is not supported for any webapps in Mesh. However, on Mesh for Windows (not Quest), signing into certain apps does work via manual authentication. Within the WebSlate, the Microsoft account manager will allow sign in using the credentials that are present on the user's machine for easy and secure content access. Note: Although this unlocks the ability to use Fluid Framework apps like Microsoft Whiteboard and Loop, only inputs are synced across users, not navigation or scrolling.
+
+24.10 Toolkit upgrade note:
+
+For existing environments with the WebSlateFramed component in the Unity scene, upgrading Mesh Toolkit to 24.10 will automatically provide organizers with WebSlate Controllable functionality upon Upload. This means that organizers will be able to toggle the URL for their WebSlates at runtime via the Control Panel, and that end users will see a refresh button/info coin upon hovering the slate. We suggest double checking WebSlate positioning in environments to ensure the user-facing menu bar that appears at runtime upon hover (located below the slate in the center) is not colliding with any other parts of the environment.  
+For those who don't want URLs to be controlled by organizers, the WebSlate Controllable can be turned off by removing the "WebSlate Controllable" script from their WebSlate GameObject.
 
 **24.10 Toolkit upgrade note  for WebSlates:**
 
