@@ -1,11 +1,11 @@
 ---
 title: Common scenarios for event hosts
-description: How to run or manage common event scenarios in Microsoft Mesh.
+description: How to run or manage common event scenarios in Mesh events while using the Mesh app for Windows, Mesh app for Teams or Mesh app on Meta Quest.
 ms.service: mesh
 author: typride
 ms.author: tmilligan
-ms.date: 12/01/2023
-ms.topic: Overview
+ms.date: 08/14/2024
+ms.topic: best-practice
 keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer, Q&A, scenarios
 ---
 
@@ -25,13 +25,13 @@ As a host, your host tools will be slightly different in a multi-room scenario.
 
 In a single room event, you have access to the **Mute all**, **Hand Raise**, **Megaphone**, and **Screenshare** controls.
 
-:::image type="content" source="../media/common-event-scenarios/single-room-host-tools.png" alt-text="Screenshot of the host tools in a single room event.":::
+:::image type="content" source="../media/common-event-scenarios/single-room-host-tools.png" alt-text="Screenshot of the host tools in the menu bar for a single room event.":::
 
 ### Host tools in a multi-room event
 
 In a multi-room event, you have access to the **Mute all**, **Hand Raise**, **Megaphone**, **Broadcast**, and **Screenshare** controls.
 
-:::image type="content" source="../media/common-event-scenarios/multi-room-host-tools.png" alt-text="Screenshot of the host tools in a single room event.":::
+:::image type="content" source="../media/common-event-scenarios/multi-room-host-tools.png" alt-text="Screenshot of the host tools in a multi room event.":::
 
 Broadcast is the notable difference here, which shows your avatar and makes your voice audible to all participants in all rooms.
 
