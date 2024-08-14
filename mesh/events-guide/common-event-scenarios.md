@@ -44,7 +44,7 @@ As a host, you may want participants to be able to ask their questions or say co
 
 ### Enable Hand Raise for all participants
 
-To allow participants to raise their hand, you must **enable Hand Raise** bold **Host Panel**.
+To allow participants to raise their hand, you must **enable Hand Raise** in the **Host Panel**.
 
 1. Open the Host Panel.
 
