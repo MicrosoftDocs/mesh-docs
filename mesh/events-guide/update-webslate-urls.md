@@ -17,7 +17,7 @@ Event Organizers can use the Control Panel to change the URL for a WebSlate duri
 
 ## Control a WebSlate in an event
 
-## Change the WeblSlate's URL
+## Change the WebSlate's URL
 
 1. Create an event in the Mesh Portal.  
 1. Up to 10 minutes prior to the event (or at Start time), join the event (not Customization mode) and then navigate to a WebSlate you want control.  
@@ -32,6 +32,8 @@ Event Organizers can use the Control Panel to change the URL for a WebSlate duri
 
 ## Configure settings (optional)
 
+   ![A screenshot of settings for a WebSlate in the Control Panel.](../media/organize-events/control-webslate-urls/005-other-no-code-features.png)
+
 **Prevent Suspension**: If an attendee moves away from a WebSlate such that the WebSlate is no longer in their view for 30 seconds or longer, the Webslate is automatically suspended to conserve memory and will reload if the WebSlate returns to the attendee's view. In some situations, content may need to play for attendees regardless of their position in the event (for example, if the WebSlate is running live strea content). In this case, keep the *Prevent Suspension* setting toggled **on**. 
 
 **Show backplate**: Adds a frame around the WebSlate and is for visual purposes only. 
@@ -42,11 +44,16 @@ Event Organizers can use the Control Panel to change the URL for a WebSlate duri
 
 ## WebSlate menu
 
-When anyone (users or organizers) approaches the WebSlate and hovers over it with their cursor or VR controller, the WebSlate menu appears. The menu contains the following:  
+When anyone (users or organizers) approaches the WebSlate and hovers over it with their cursor or VR controller, the WebSlate menu appears. 
 
-**Refresh button**: Reloads the default URL for the attendee who presses the button. This can be useful in case the attendee has navigated away from the original content and wants to return to it, or if they get an unexpected error with the web content.
+![A screenshot of settings for a WebSlate in the Control Panel.](../media/organize-events/control-webslate-urls/006-webslate-menu.png)
 
-**Eye icon**: Provides a tooltip explaining that web content on the slate is unique to the user’s view. Some experiences may be shared--for example, a Whiteboard web app.
+
+The menu contains the following:  
+
+**Refresh button** (left button): Reloads the default URL for the attendee who presses the button. This can be useful in case the attendee has navigated away from the original content and wants to return to it, or if they get an unexpected error with the web content.
+
+**Eye icon** (right button): Provides a tooltip explaining that web content on the slate is unique to the user’s view. Some experiences may be shared--for example, a Whiteboard web app.
 
    ![A screenshot of a WebSlate displaying a whiteboard app.](../media/organize-events/control-webslate-urls/003-whiteboard-app.png)
 
@@ -60,11 +67,17 @@ When anyone (users or organizers) approaches the WebSlate and hovers over it wit
  
 ## Limitations:  
 
-- Web content in Mesh behaves like it would in a browser: All web content experienced in Mesh is unique to an individual attendee's view, meaning multiple people may see the same URL but the places they navigate to on a given page or app will not be synced. There are some exceptions to this when using apps designed for multi-user experiences--for example, Microsoft Whiteboard and Loop (Fluid Framework apps), which show where other attendees are drawing or typing.  
+### WebSlate behavior
 
-- URL editing during customization sessions: WebSlate URLs don't persist between events or saved during the customizing of an event before its intended start time (before the event). **Workaround**: Join your event up to 10 minutes prior to start time, then open the Control Panel, and then change WebSlate URLs to point to your desired content.
+Web content in Mesh behaves like it would in a browser: All web content experienced in Mesh is unique to an individual attendee's view, meaning multiple people may see the same URL but the places they navigate to on a given page or app will not be synced. There are some exceptions to this when using apps designed for multi-user experiences--for example, Microsoft Whiteboard and Loop (Fluid Framework apps), which show where other attendees are drawing or typing.  
 
-- SSO Support: Currently, WebSlate doesn’t offer SSO support for apps. For secure access content, all users must manually sign in to each web application displaying on a WebSlate.  
+### URL editing during customization sessions
+
+WebSlate URLs don't persist between events or saved during the customizing of an event before its intended start time (before the event). **Workaround**: Join your event up to 10 minutes prior to start time, then open the Control Panel, and then change WebSlate URLs to point to your desired content.
+
+### SSO Support
+
+Currently, WebSlate doesn’t offer SSO support for apps. For secure access content, all users must manually sign in to each web application displaying on a WebSlate.  
  
 **Workaround**:
 
