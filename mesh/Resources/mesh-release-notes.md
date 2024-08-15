@@ -41,7 +41,7 @@ An event host could display Microsoft Whiteboard, for example:
 
 * **Developer updates:** Same simple workflow for adding Webslates, with minor additional configurations to add Controllable capabilities.
 
-* **Event organizer experience:** Toggle URLs, visibility (on/off), and optionally Prevent suspension (to keep WebSlates always on). Via the host panel, changing the URL at runtime updates WebSlates for all users in the event, instantly (global refresh).
+* **Event organizer experience:** Toggle URLs, visibility (on/off), and optionally Prevent suspension (to keep WebSlates always on). Via the Control Panel, changing the URL at runtime updates WebSlates for all users in the event, instantly (global refresh).
 
 * **End user experience:** Upon cursor/controller hover, a menu bar with a built-in refresh button and a tooltip briefly explaining single-user nature of webslates has been added (some webapps may offer shared experiences). This provides a way to return to the URL set by organizers (in the case the user navigates away) and can be used incase webapps have issues during experiences.
 
