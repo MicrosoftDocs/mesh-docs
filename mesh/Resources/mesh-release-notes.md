@@ -33,14 +33,17 @@ Microsoft Mesh application
 
 ### What's new
 
-#### WebSlate Controllables to display URls in Mesh events
+With the release of the 24.10 Mesh Toolkit, developers now have the ability to add WebSlate Controllables to environments. These WebSlates enable event attendees to interact with a webpage through WebSlates while in a Mesh event and empower event organizers to dynamically change the content that's displayed on the WebSlates in real-time.
 
-* With the release of the 24.10 Mesh Toolkit, developers now have the ability to add WebSlate Controllables to environments. These WebSlates enable event attendees to interact with a webpage while in a Mesh event, empowering event organizers to dynamically change the content that's displayed on WebSlates in real-time.
+An event host could display Microsoft Whiteboard, for example:
 
-* Developers: Same simple workflow for adding Webslates, with minor additional configurations to add Controllable capabilities
-Event organizers: Toggle URLs, visibility (on/off), and optionally Prevent suspension (to keep WebSlates always on). Via the host panel, changing the URL at runtime updates WebSlates for all users in the event, instantly (global refresh).
+:::image type="content" source="media/WebSlate-example-of-whiteboard.png" alt-text="Screenshot of a Mesh event with a WebSlate showing Microsoft Whiteboard with two avatars interacting with it.":::
 
-* End users: Upon cursor/controller hover, a menu bar with a built-in refresh button and a tooltip briefly explaining single-user nature of webslates has been added (some webapps may offer shared experiences). This provides a way to return to the URL set by organizers (in the case the user navigates away) and can be used incase webapps have issues during experiences.
+* **Developer updates:** Same simple workflow for adding Webslates, with minor additional configurations to add Controllable capabilities.
+
+* **Event organizer experience:** Toggle URLs, visibility (on/off), and optionally Prevent suspension (to keep WebSlates always on). Via the host panel, changing the URL at runtime updates WebSlates for all users in the event, instantly (global refresh).
+
+* **End user experience:** Upon cursor/controller hover, a menu bar with a built-in refresh button and a tooltip briefly explaining single-user nature of webslates has been added (some webapps may offer shared experiences). This provides a way to return to the URL set by organizers (in the case the user navigates away) and can be used incase webapps have issues during experiences.
 
 ### Resolved issues
 
