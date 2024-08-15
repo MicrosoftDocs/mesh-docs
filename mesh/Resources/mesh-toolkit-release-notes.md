@@ -4,7 +4,7 @@ description: Release notes for the Microsoft Mesh Toolkit with a list of importa
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
-ms.date: 08/02/2024
+ms.date: 08/13/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
@@ -26,8 +26,75 @@ For purposes of this document, there are two categories of users:
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2409.X | 2024-08-01     |
-| Mesh on PC/Quest           | 5.2409.X | 2024-07-23     |
+| Mesh toolkit               | 5.2410.X | 2024-08-13     |
+| Mesh on PC/Quest           | 5.2410.X | 2024-08-05     |
+
+## Mesh Toolkit 5.2410.X
+
+### What's new
+
+#### Mesh Toolkit uploader
+
+* Where there is an issue between Uploader Tool and Mesh Services during the Upload process, we now display a message to the user that the operation is taking longer than expected but still running.
+
+* Fixed bug where the Unity Package Manager failed to get information and the console was spammed by the same message on repeat.
+
+#### WebSlate Controllables to display URls in Mesh events
+
+With the release of the 24.10 Mesh Toolkit, developers now have the ability to add WebSlate Controllables to environments. These WebSlates enable event attendees to interact with a webpage through WebSlates while in a Mesh event and empower event organizers to dynamically change the content that's displayed on the WebSlates in real-time.
+
+An event host could display Microsoft Whiteboard, for example:
+
+:::image type="content" source="media/WebSlate-example-of-whiteboard.png" alt-text="Screenshot of a Mesh event with a WebSlate showing Microsoft Whiteboard with two avatars interacting with it.":::
+
+* **Developer updates:** Same simple workflow for adding Webslates, with minor additional configurations to add Controllable capabilities.
+
+* **Event organizer experience:** Toggle URLs, visibility (on/off), and optionally Prevent suspension (to keep WebSlates always on). Via the Control Panel, changing the URL at runtime updates WebSlates for all users in the event, instantly (global refresh).
+
+* **End user experience:** Upon cursor/controller hover, a menu bar with a built-in refresh button and a tooltip briefly explaining single-user nature of webslates has been added (some webapps may offer shared experiences). This provides a way to return to the URL set by organizers (in the case the user navigates away) and can be used incase webapps have issues during experiences.
+
+Some notable details to consider are:
+
+* Developers have the option to select if a URL can be changed while an event is occurring or not by removing the WebSlate Controllable script in the parent WebSlateFramed GameObject.
+
+* Developers choose the location of the WebSlate in the environment. Currently, WebSlate positioning is not adjustable after they are uploaded to an environment (this is not an Object in the Catalog)
+
+* The content and interaction of the WebSlate will depend on which webapp is displayed on it. For example, some webapps will provide synchronized inputs for all users, creating a sense of a shared interaction - but navigation and scrolling will not be synced across users. Choosing which URLs are displayed in the WebSlate and testing them is important to achieve the desired experience.
+
+* Currently SSO is not supported for any webapps in Mesh. However, on Mesh for Windows (not Quest), signing into certain apps does work via manual authentication. Within the WebSlate, the Microsoft account manager will allow sign in using the credentials that are present on the user's machine for easy and secure content access. Note: Although this unlocks the ability to use Fluid Framework apps like Microsoft Whiteboard and Loop, only inputs are synced across users, not navigation or scrolling.
+
+**24.10 Toolkit upgrade note:**
+
+For existing environments with the WebSlateFramed component in the Unity scene, upgrading Mesh Toolkit to 24.10 will automatically provide organizers with WebSlate Controllable functionality upon Upload. This means that organizers will be able to toggle the URL for their WebSlates at runtime via the Control Panel, and that end users will see a refresh button/info coin upon hovering the slate. We suggest double checking WebSlate positioning in environments to ensure the user-facing menu bar that appears at runtime upon hover (located below the slate in the center) is not colliding with any other parts of the environment.
+
+For those who don't want URLs to be controlled by organizers, the WebSlate Controllable can be turned off by removing the "WebSlate Controllable" script from their WebSlate GameObject.
+
+### Visual scripting
+
+* Improved and extended the diagnostics shown in the Mesh Visual Scripting Diagnostics panel (at the bottom of the Inspector panel) and made them more actionable by including an extended description that can be viewed in a tooltip by hovering any entry in the Diagnostics panel.
+
+* Some of the new diagnostics (for example, "Variable not declared" and "Cannot modify prefab definition") block the environment's upload until they are fixed. Already uploaded environments are not affected.
+
+* Added **On Dictionary Item Added** and **On Dictionary Item Removed** events that allow visual scripts to efficiently respond to items being added to or removed from dictionary-type component properties and visual script variables.
+
+    :::image type="content" source="media/Visual-scripting-dictionary-item-24.10.png" alt-text="Screenshot of the Mesh Toolkit showing hte On Dictionary Item Added or Removed.":::
+
+* Client startup time in Emulator has been improved significantly for large scenes (with thousands of visual scripts and tens of thousands of scene objects). (60475)
+
+#### Resolved issues
+
+* For Mesh Physics, we removed problematic and unnecessary mechanism that disabled Renderer components below Rigidbody at start-up and re-enabled them when fully connected. (59804)
+
+* For Visual Scripting, we fixed an issue that caused embedded subgraphs to be corrupted when saved in Unity Editor. (Subgraphs saved in separate asset files were not affected by this issue.) (60183)
+
+* For Visual Scripting, loading a corrupted embedded subgraph into Unity Editor causes these warnings to be logged to the Editor console: `Failed to add element to graph during deserialization: [...]`. (60183)
+
+* For Visual Scripting, When editing visual scripts in a prefab definition by selecting the prefab asset in the Project panel (instead of opening the prefab definition in scene context or in isolation from the Hierarchy panel), the Mesh Visual Scripting Diagnostics panel may show false-positive diagnostic errors:
+
+  * `Cannot modify prefab definition`
+  * `Invalid reference`
+
+    However, these errors do point to actual content issues if they appear when editing visual scripts in a prefab definition edited in scene context or opened in isolation from the Hierarchy panel. (60475)
 
 ## Mesh Toolkit 5.2409.X
 
