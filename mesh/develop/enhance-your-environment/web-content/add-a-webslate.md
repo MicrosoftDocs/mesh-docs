@@ -13,68 +13,57 @@ keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming vide
 
 ## Overview
 
-In the Mesh toolkit, the WebSlate prefab contains a URL parameter that you can specify to control the content the WebSlate displays. In a Mesh event, the WebSlate will loads its content using the URL you provided.
+In the Mesh toolkit, the WebSlate Prefab that we want to use is called *WebSlateFramed*. It contains a URL parameter that you can specify to control the content the WebSlate displays. It also comes with a component that lets an Event Organizer change the URL for the WebSlate in an event in real time. When a Mesh event containing the WebSlate starts, the WebSlate will loads its content using the URL you provided.
+
+If you don't want the stylized frame provided in the *WebSlateFramed* prefab, you can turn it off. Instructions for this are provided below.
 
 **Notes**
 
+- There's a also a *WebSlate* Prefab in the Mesh toolkit but it doesn't support the updating of the URL in a Mesh event in real time so we don't recommend it.
+
 - The size and shape of the WebSlate will match that of the quad GameObject it's placed on. Typically, this is the quad baked inside of the WebSlate prefab.
 
-- You can add multiple WebSlates can to a scene. The number of users in a Mesh event based on Mesh won't WebSlate performance; WebSlate resources are initialized locally on the user's machine.
+- You can add multiple WebSlates can to a scene. The number of users in a Mesh event based on Mesh won't affect WebSlate performance; WebSlate resources are initialized locally on the user's machine.
 
 ## Add a WebSlate
 
-There are two flavors of WebSlate prefabs available in the Mesh toolkit that you can add to your scene. If you prefer a clean WebSlate with no extra components, add the _WebSlate_ prefab. If you'd like a WebSlate contained in a stylized frame with extra features, add the _WebSlateFramed_ prefab.
+### Add the WebSlateFramed prefab from a menu
 
-![Image showcasing two webslate prefabs.](../../../media/webview-developer-guide/image025.png)
-
-**Note**: If you want the WebSlate to be [controllable by an organizer](./control-webslates.md) in a Mesh event, use the *WebSlateFramed* prefab.
-
-### Add the WebSlate prefab from a menu
-
-**To add either of the prefabs to your scene**:
-
-1. Right-click inside the **Hierarchy**, and then in the context menu, do one of the following:
-
-   **To add the clean WebSlate with no extra components**:  
-   Select **Mesh Toolkit** > **WebSlate**.
-
-   **To add the WebSlate with the stylized frame and extra features**:  
-   Select **Mesh Toolkit** > **WebSlateFramed**.
+1. Right-click inside the **Hierarchy**, and then in the context menu, select **Mesh Toolkit** > **WebSlateFramed**.
 
    **Tip**: You can also click the "+" button at the top left of the Hierarchy window to see the same menu.
 
-   ![Image of adding the Mesh toolkit using the context menu.](../../../media/webview-developer-guide/image006.png)
+   ![A screen shot of the list of results after WebSlate has been searched for.](../../../media/enhance-your-environment/web_content/013-webslateframed-in-context-menu.png)
 
-   ![Add Mesh toolkit to Hierarchy in Unity.](../../../media/webview-developer-guide/image007.png)
+### Search for and add the WebSlateFramed prefab
 
-### Search for and add the WebSlate prefab
+You can also search for and add the WebSlateFramed prefab.
 
-You can also search for and add a WebSlate prefab.
-
-1. In the Search field, type in "WebSlate." Make sure you have the **All** filter selected.
+1. In the Search field, type in "WebSlateFramed." Make sure you have the **All** filter selected.
 
    ![A screen shot of the list of results after WebSlate has been searched for.](../../../media/enhance-your-environment/web_content/001-webslate-search-results.png)
 
 1. Drag the prefab you want into **Scene** view or the **Hierarchy**.
 
-   ![A screenshot of the WebSlate prefab added to the Hierarchy.](../../../media/enhance-your-environment/web_content/002-webslate-in-scene-and-hierarchy.png)
-
 ### Specify the default URL
 
-1. Do one of the following:
+1. In the **Hierarchy**, expand the **WebSlateFramed** GameObject and then select its child object named **WebSlate**.
 
-    **If you're using the *WebSlate* prefab**:  
-    Make sure the prefab is selected in the **Hierarchy**, and then, in the **Inspector**, navigate to the **WebSlate** component.
-    
-    **If you're using the *WebSlateFramed* prefab**:
-    1. In the **Hierarchy**, expand the **WebSlateFramed** GameObject and then select its child object named **WebSlate**.
-    1. In the **Inspector**, navigate to the **WebSlate** component.
+   ![A screenshot of the WebSlateFramed child object named WebSlate highlighted in the Hierarchy.](../../../media/enhance-your-environment/web_content/005-webslate-child.png)
 
-   ![A screenshot of the WebSlate child object highlighted in the Hierarchy.](../../../media/enhance-your-environment/web_content/005-webslate-child.png)
-
+1. In the **Inspector**, navigate to the **WebSlate** component.
 1. Update the **Current URL** field to the URL you want the WebSlate to load by default in a Mesh event.
 
-   ![A screenshot of the WebSlate child object highlighted in the Hierarchy.](../../../media/enhance-your-environment/web_content/006-current-url.png)
+   ![A screenshot of the Current URL field for the WebSlate highlighted.](../../../media/enhance-your-environment/web_content/006-current-url.png)
+
+**To turn off the frame for the WebSlate**:
+1. With the WebSlateFramed Prefab in the **Hierarchy** expanded, select its child object named **Backplate**.
+
+   ![A screenshot of the WebSlate child object named Backplate highlighted in the Hierarchy.](../../../media/enhance-your-environment/web_content/014-backplate.png)
+
+1. In the **Inspector**, clear the check box to the left of "Backplate" to turn the GameObject off.
+
+   ![A screenshot of the on off switch for the Backplate GameObject.](../../../media/enhance-your-environment/web_content/015-backplate-turned-off.png)
 
 ## Tips
 
@@ -102,8 +91,7 @@ To have your WebSlate display a live stream, in the **Current URL** field for th
 
 ![A screen shot of a Mesh event with attendees watching a live stream of the Microsoft Ignite event.](../../../media/webview-developer-guide/ignite-livestream.png)
 
+## Next steps
 
-
-
-
-
+> [!div class="nextstepaction"]
+> [Test your WebSlate](./test-your-webslate.md)

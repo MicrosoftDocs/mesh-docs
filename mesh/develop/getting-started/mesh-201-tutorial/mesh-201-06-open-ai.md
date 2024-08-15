@@ -4,7 +4,7 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/13/2024
+ms.date: 8/15/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
@@ -384,7 +384,7 @@ If you want to build and publish this tutorial project, do the following:
 
 **Learn more about WebSlates**
 
-[Visit the WebSlates article on the Mesh Help site](../../enhance-your-environment/webcontent.md).
+[Visit the WebSlates article on the Mesh Help site](../../enhance-your-environment/web-content/webcontent.md).
 
 [Read a blog post written by the WebSlates product manager](https://devblogs.microsoft.com/microsoft365dev/web-content-in-microsoft-mesh-powered-by-webview/).
 

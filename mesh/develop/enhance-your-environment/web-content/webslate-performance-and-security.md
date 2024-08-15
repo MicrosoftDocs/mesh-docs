@@ -78,3 +78,7 @@ If you already know which domains you'll need, you can manually add them to the 
 
 ![Manually adding allowed domains with the plus button](../../../media/webview-developer-guide/allowed-domains-manual.png)
 
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Make web content controllable in an event](./control-webslates.md)

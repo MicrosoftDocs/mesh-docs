@@ -59,5 +59,9 @@ Developers can add a WebSlate to Environments using Mesh cloud scripting, as wel
 
 ![A screenshot of a WebSlate with buttons added through cloud scripting.](../../../media/webview-developer-guide/ArcadeWebSlate.png)
 
-For further guidance on the WebSlate node in Mesh Apps, see the [Visual scripting overview](../script-your-scene-logic/mesh-scripting-overview.md).
+For further guidance on the WebSlate node in Mesh Apps, see the [Visual scripting overview](../../script-your-scene-logic/mesh-scripting-overview.md).
 
+## Next steps
+
+> [!div class="nextstepaction"]
+> [WebSlate performance and security](./webslate-performance-and-security.md)

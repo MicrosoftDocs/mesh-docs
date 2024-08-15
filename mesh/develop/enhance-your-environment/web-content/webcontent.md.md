@@ -4,7 +4,7 @@ description: Learn how to display Web content in Mesh Environments.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/27/2024
+ms.date: 8/15/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming video, whiteboard
 ---
@@ -33,9 +33,9 @@ For business needs, WebSlates can feature everyday productivity and information 
 
 - **Visual customization:** Modify quality to optimize for users' devices. Attract users from a distance with easy-to-view content.
 
-- **Scriptable:** With [visual scripting and cloud scripting](../script-your-scene-logic/mesh-scripting-overview.md), you can enable toggling between pages with a button.
+- **Scriptable:** With [visual scripting and cloud scripting](../../script-your-scene-logic/mesh-scripting-overview.md), you can enable toggling between pages with a button.
 
-- **[Content Performance Analyzer tool](../debug-and-optimize-performance/cpa.md) integration:** Measure the average time it takes for URP to render WebSlates in a frame and find content loading issues.
+- **[Content Performance Analyzer tool](../../debug-and-optimize-performance/cpa.md) integration:** Measure the average time it takes for URP to render WebSlates in a frame and find content loading issues.
 
 - **Testing in Play Mode with Mesh Emulation:** Interact with your content as a user would, directly from the Unity editor.
 
@@ -45,7 +45,7 @@ For business needs, WebSlates can feature everyday productivity and information 
 
 ## Single user and collaborative WebSlate experiences
 
-By design, a WebSlate in a Mesh event is a "single user" experience; WebSlates run individual instances of web content specific to each user, ensuring security and privacy of data viewed and inputs into the slate. Most webpages (for example, Microsoft.com) are single-user experiences that are useful for asynchronous content consumption (viewing or reading). 
+By design, a WebSlate in a Mesh event is a "single user" experience; WebSlates run individual instances of web content specific to each user, ensuring the security and privacy of any data viewed and any inputs made into the WebSlate. Most webpages (for example, Microsoft.com) are single-user experiences that are useful for asynchronous content consumption (viewing or reading). 
 
 Collaborative web apps are an exception to this design; they're "shared" experiences. For example, Whiteboard web applications often allow multiple users accessing the same URL to collaborate in real time. However, while the interactions may be multi-user, navigation and scrolling are unique to each user's view. 
 
@@ -73,12 +73,16 @@ WebSlates depend on the _Unity.InputSystem_ and _Unity.XR.Interaction.Toolkit_ 
 
 ### Known issues
 
-See the [WebSlate sections in the Mesh toolkit known issues article](../../Resources/mesh-toolkit-known-issues.md).
+See the [WebSlate sections in the Mesh toolkit known issues article](../../../../Resources/mesh-toolkit-known-issues.md).
 
 ## Feedback for Web content in Mesh
 
 We love feedback and bug reports! If you'd like to provide feedback, use the Feedback button inside any Mesh experience. This ensures that your feedback and bug reporting will be reviewed and incorporated quickly. For WebSlate feedback, include "**[web content]**" or **a mention of WebSlate** in your feedback.
 
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Add a WebSlate to your environment](./add-a-webslate.md)
 
 
 

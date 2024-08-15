@@ -70,6 +70,7 @@ The WebSlate menu, consisting of two buttons, appears below the WebSlate.
 
    ![A screenshot of the Control Panel with various features for the WebSlate highlighted.](../../../media/enhance-your-environment/web_content/012-webslate-menu.png)
 
+## Next steps
 
- 
-
+> [!div class="nextstepaction"]
+> [Enhanced features overview](../enhanced-features-overview.md)

@@ -32,7 +32,7 @@ Press the Unity editor Play button.
 
 To enable interaction in the WebSlate, you have to set up a few things.
 
-1. Add the [Mesh Emulator](../debug-and-optimize-performance/mesh-emulator.md) to your scene to enable Play Mode with Mesh Emulation.
+1. Add the [Mesh Emulator](../../debug-and-optimize-performance/mesh-emulator.md) to your scene to enable Play Mode with Mesh Emulation.
 
 1. Create a new **Plane** GameObject. This will be your floor. Ensure the GameObject is positioned at the origin (0,0,0):
 
@@ -49,3 +49,8 @@ To enable interaction in the WebSlate, you have to set up a few things.
 Great job! You added a custom WebSlate to your Unity scene and tested the interaction in Play Mode with Mesh Emulation.
 
 Now you're ready to upload the Environment to Mesh and share your creation with the world!
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [WebSlates and Mesh Scripting](./webslates-and-mesh-scripting.md)

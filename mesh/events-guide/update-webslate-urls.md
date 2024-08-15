@@ -4,12 +4,14 @@ description: Learn about how to update the URL for a WebSlate during a Mesh even
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/14/2024
+ms.date: 8/15/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming video, whiteboard
 ---
 
 ## Update WebSlate URLs during an event
+
+A WebSlate in your event lets you view and interact with web content. 
 
 ## Create an event in the Mesh Portal.  
 
