@@ -47,6 +47,8 @@
       "titleSuffix": "Microsoft Mesh",
       "feedback_system": "Standard",
       "feedback_product_url": "https://docs.microsoft.com/mesh/resources/feedback",
+      "feedback_help_link_url": "https://techcommunity.microsoft.com/t5/mesh-creators/bd-p/MeshCreators",
+      "feedback_help_link_type": "ask-the-community",
       "searchScope": ["Mesh"]  
     },
     "fileMetadata": {},
