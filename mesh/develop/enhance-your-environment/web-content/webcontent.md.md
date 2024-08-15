@@ -83,8 +83,3 @@ We love feedback and bug reports! If you'd like to provide feedback, use the Fee
 
 > [!div class="nextstepaction"]
 > [Add a WebSlate to your environment](./add-a-webslate.md)
-
-
-
-
-
