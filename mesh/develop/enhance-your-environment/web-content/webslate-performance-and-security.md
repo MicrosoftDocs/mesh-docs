@@ -13,13 +13,13 @@ keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming vide
 
 ## Performance
 
-- Since a WebSlate is a loaded web page, it's important to consider performance implications:
+Since a WebSlate is a loaded web page, it's important to consider performance implications:
 
-  - Scenes are typically performant at 60fps with up to 10 active WebSlates. Framerate and general performance degradation may be observed in proportion to the number of WebSlates placed in a scene, regardless of content.
+- Scenes are typically performant at 60fps with up to 10 active WebSlates. Framerate and general performance degradation may be observed in proportion to the number of WebSlates placed in a scene, regardless of content.
 
-  - Content is loaded and executed in the WebSlate on a thread separate from the scene's update and rendering thread(s), and is therefore unlikely to directly affect frame rate. However, it's still important to consider the cost of JavaScript running on a Web page both in terms of runtime complexity and memory usage.
+- Content is loaded and executed in the WebSlate on a thread separate from the scene's update and rendering thread(s), and is therefore unlikely to directly affect frame rate. However, it's still important to consider the cost of JavaScript running on a Web page both in terms of runtime complexity and memory usage.
 
-  - To help save on performance, WebSlates that are offscreen for over 30s are automatically suspended. They quickly resume on coming back onscreen, but this can impact actively-running services on the hosted page. If this is an issue, developers can disable suspension with the prefab's "Prevent Suspension" checkbox. Note that doing so can cause the scene to consume more resources, as these WebSlates remain active at all times.
+- To help save on performance, WebSlates that are offscreen for over 30s are automatically suspended. They quickly resume on coming back onscreen, but this can impact actively-running services on the hosted page. If this is an issue, developers can disable suspension with the prefab's "Prevent Suspension" checkbox. Note that doing so can cause the scene to consume more resources, as these WebSlates remain active at all times.
 
   ![WebSlate with Suspension Prevention circled](../../../media/webview-developer-guide/WebSlate-Prevent-Suspension.png)
 
@@ -35,7 +35,7 @@ keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming vide
 
   - The same measurements are also available to the Performance Profiler. The group on the Performance Profiler typically changes colors from green to red when the budget allowance for a category is surpassed. For now, the WebSlate group only shows as green until a reasonable render time budget is rationalized for WebSlates.
 
-  ![WebSlate performance analysis using CPA tool.](../../../media/webview-developer-guide/CPAwebslate.png)
+  ![WebSlate performance analysis using CPA tool.](../../../media/enhance-your-environment/web_content/016-cpa-webslate.png)
 
 ## Security restrictions
 

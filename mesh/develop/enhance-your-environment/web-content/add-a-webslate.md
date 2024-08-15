@@ -13,13 +13,13 @@ keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming vide
 
 ## Overview
 
-In the Mesh toolkit, the WebSlate Prefab that we want to use is called *WebSlateFramed*. It contains a URL parameter that you can specify to control the content the WebSlate displays. It also comes with a component that lets an Event Organizer change the URL for the WebSlate in an event in real time. When a Mesh event containing the WebSlate starts, the WebSlate will loads its content using the URL you provided.
+In the Mesh toolkit, the WebSlate Prefab that we want to use is called *WebSlateFramed*. It contains a URL parameter that you can specify to control the content the WebSlate displays. It also comes with a component that lets an Event Organizer [change the URL for the WebSlate](./control-webslates.md) in an event in real time. When a Mesh event containing the WebSlate starts, the WebSlate will loads its content using the URL you provided.
 
 If you don't want the stylized frame provided in the *WebSlateFramed* prefab, you can turn it off. Instructions for this are provided below.
 
 **Notes**
 
-- There's a also a *WebSlate* Prefab in the Mesh toolkit but it doesn't support the updating of the URL in a Mesh event in real time so we don't recommend it.
+- There's a also a Prefab named *WebSlate* in the Mesh toolkit but it doesn't support the updating of the URL in a Mesh event in real time so we don't recommend it.
 
 - The size and shape of the WebSlate will match that of the quad GameObject it's placed on. Typically, this is the quad baked inside of the WebSlate prefab.
 
@@ -37,13 +37,11 @@ If you don't want the stylized frame provided in the *WebSlateFramed* prefab, yo
 
 ### Search for and add the WebSlateFramed prefab
 
-You can also search for and add the WebSlateFramed prefab.
-
 1. In the Search field, type in "WebSlateFramed." Make sure you have the **All** filter selected.
 
    ![A screen shot of the list of results after WebSlate has been searched for.](../../../media/enhance-your-environment/web_content/001-webslate-search-results.png)
 
-1. Drag the prefab you want into **Scene** view or the **Hierarchy**.
+1. Drag the prefab you want into the **Scene** view or the **Hierarchy**.
 
 ### Specify the default URL
 
@@ -71,11 +69,9 @@ You can also search for and add the WebSlateFramed prefab.
 
 - A WebSlate loads a default URL. You should replace this URL with one that you prefer for each WebSlate in use. The brightness parameter is set to 1.0 (100% of the browser's brightness).
 
-- WebSlates will automatically suspend themselves after being offscreen for too long. If you need to ensure a given slate is always running (such as a livestream or continuous audio playback), then check the "Prevent Suspension" button on the association WebSlate. See below for performance implications.
+- WebSlates will automatically suspend themselves after being offscreen for too long. If you need to ensure that a given WebSlate is always running (such as a live stream or continuous audio playback), in the **WebSlate** component, select **Prevent Suspension**. Note that doing so can cause the scene to consume more resources, since the WebSlate will remain active at all times.
 
-![Unity usage of WebSlate](../../../media/webview-developer-guide/image004.png)
-
-- To size the image URL to the size of the WebSlate, wrap the URL in HTML. Make use of the WebSlate LoadHTML API via visual scripting to render this HTML content onto your WebSlate. Add the constructed HTML to the HTMLContent property. Alternatively, you can use the LoadHTMAsset API and pass the HTML as an asset. Replace the image URL with your image URL.
+- To size the image URL to the size of the WebSlate, wrap the URL in HTML. Make use of the WebSlate LoadHTML API through visual scripting to render this HTML content onto your WebSlate. Add the constructed HTML to the HTMLContent property. Alternatively, you can use the LoadHTMAsset API and pass the HTML as an asset. Replace the image URL with your image URL.
 
   Sample HTML with the image URL and Visual scripting graph using the LoadHTML and LoadHTMLAsset API:
 
@@ -87,7 +83,7 @@ You can also search for and add the WebSlateFramed prefab.
 
 ## Live streams powered by WebSlate
 
-To have your WebSlate display a live stream, in the **Current URL** field for the WebSlate, provide the live stream URL. In the case where the live stream URL isn't available beforehand, you could utilize a URL redirection service to generate a URL and provide that to the WebSlate. This approach provides the flexibility to update the redirection URL at the last moment without needing to re-publish the large environment with the live stream URL. Ensure that you select the 'Prevent Suspension' option during the WebSlate setup to prevent it from suspending after 30 seconds if someone isn't actively viewing the WebSlate. WebSlates don't require configuration with the Host Tools, so host-less events can be created and serve as drop-in spaces with meaningful content.
+To have your WebSlate display a live stream, in the **Current URL** field for the WebSlate, provide the live stream URL. In the case where the live stream URL isn't available beforehand, you could utilize a URL redirection service to generate a URL and provide that to the WebSlate. This approach provides the flexibility to update the redirection URL at the last moment without needing to re-publish the large environment with the live stream URL. Ensure that you select the *Prevent Suspension* option during the WebSlate setup to prevent it from suspending after 30 seconds if someone isn't actively viewing the WebSlate. WebSlates don't require configuration with the Host Tools, so host-less events can be created and serve as drop-in spaces with meaningful content.
 
 ![A screen shot of a Mesh event with attendees watching a live stream of the Microsoft Ignite event.](../../../media/webview-developer-guide/ignite-livestream.png)
 

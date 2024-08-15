@@ -4,7 +4,7 @@ description: Learn about the Unity component that makes web content in Mesh cont
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/14/2024
+ms.date: 8/15/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming video, whiteboard
 ---
@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming vide
 
 ## Overview  
 
-When you add a WebSlate to your environment, you can set a default URL for it, but what if an event organizer wants to change the URL in real time during an event using the Control Panel? To accommodate this, you should use the *WebSlateFramed* prefab which comes with a component named *WebSlate Controllable* for just this purpose. It also comes with the *Object Controllable* component which lets an event organizer enable or disable the WebSlate during an event.
+When you add a WebSlate to your environment, you can set a default URL for it, but what if an event organizer wants to change the URL in real time during an event using the Control Panel? To accommodate this, the *WebSlateFramed* Prefab that you [add to your scene](./add-a-webslate.md) comes with a component named *WebSlate Controllable* for just this purpose. It also comes with the *Object Controllable* component which lets an event organizer enable or disable the WebSlate during an event.
 
 WebSlate controllables are great for environment creators who want to retain the design and aesthetics of the environment while enabling Organizers who run multiple events (as a Template or not) to change content depending on the theme of their event. Note that Controllable URLs can be added or changed *only* during live events. URLs added during customization (in Edit mode) won't be saved and thus won't persist across multiple events; WebSlates will default to the URL added by developers in Unity each time.
 
@@ -48,27 +48,27 @@ With this feature, WebSlates provide the following capabilities:
 
 ## Testing the Controllable in a Mesh event
 
-Testing the full controllable functionality can only happen at runtime. The Control Panel and WebSlate menu are available in the Mesh app. In a Mesh event based on your environment, our example Controllable WebSlate, "Azure Dashboard", appears in the Control Panel.
+Testing the full controllable functionality of a WebSlate can only happen in a Mesh event. In our example event based on your environment, our example Controllable WebSlate, "Azure Dashboard", appears in the Control Panel.
 
-   ![A screenshot of the Control Panel with our controllable Webslate highlighted.](../../../media/enhance-your-environment/web_content/009-azure-dashboard.png)
+![A screenshot of the Control Panel with our controllable Webslate highlighted.](../../../media/enhance-your-environment/web_content/009-azure-dashboard.png)
 
 The event Organizer can click the down-facing arrow on **Azure Dashboard** to view the URL, which they can then change.
 
-   ![A screenshot of the Control Panel with the editable URL for the WebSlate highlighted.](../../../media/enhance-your-environment/web_content/010-url.png)
+![A screenshot of the Control Panel with the editable URL for the WebSlate highlighted.](../../../media/enhance-your-environment/web_content/010-url.png)
 
-The Organizer can configure other no-code features of the WebSlate during the event, such as **Prevent Suspension**, **Show Backplate**, and **Visible** (toggle on/off) 
+The Organizer can configure other no-code features of the WebSlate during the event, such as **Prevent Suspension**, **Show Backplate**, and **Visible** (toggle on/off). [Learn more about these settings](../../../events-guide/update-webslate-urls.md#configure-settings-optional).
 
-   ![A screenshot of the Control Panel with various features for the WebSlate highlighted.](../../../media/enhance-your-environment/web_content/011-other-no-code-features.png)
+![A screenshot of the Control Panel with various features for the WebSlate highlighted.](../../../media/enhance-your-environment/web_content/011-other-no-code-features.png)
 
 ## WebSlate menu
 
-The WebSlate menu, consisting of two buttons, appears below the WebSlate.
+When anyone (users or organizers) approaches a WebSlate and hovers over it with their cursor or VR controller, the WebSlate menu appears.
+
+![A screenshot of the Control Panel with various features for the WebSlate highlighted.](../../../media/enhance-your-environment/web_content/012-webslate-menu.png)
 
 **Refresh** (left button): The attendee can click this to return their personal view back to the default webpage for the WebSlate.
 
 **Information** (right button): This provides a tooltip to remind the attendee that what they're seeing is unique to them and not shared with other attendees unless the WebSlate is showing a [collaborative web app](./webcontent.md#single-user-and-collaborative-webslate-experiences). 
-
-   ![A screenshot of the Control Panel with various features for the WebSlate highlighted.](../../../media/enhance-your-environment/web_content/012-webslate-menu.png)
 
 ## Next steps
 
