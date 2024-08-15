@@ -1,0 +1,13 @@
+items: 
+- name: Display and interact with web content overview
+  href: webcontent.md
+- name: Add a WebSlate to your environment
+  href: add-a-webslate.md
+- name: Test your WebSlate
+  href: test-your-webslate.md
+- name: WebSlates and Mesh Scripting
+  href: webslates-and-mesh-scripting.md
+- name: WebSlate performance and security
+  href: webslate-performance-and-security.md
+- name: Make web content controllable in an event
+  href: control-webslates.md

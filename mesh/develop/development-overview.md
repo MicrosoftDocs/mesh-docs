@@ -77,7 +77,7 @@ In the *Develop environnments* section of the Mesh help site, you'll find articl
 
     ![A screenshot of avatars spawned in a Mesh experience.](../media/get-started-developing-mesh/059-avatars-spawned.png)
 
-* [Mesh WebSlates](enhance-your-environment/webcontent.md) are panels that display web content.
+* [Mesh WebSlates](./enhance-your-environment/web-content/webcontent.md) are panels that display web content.
 
     ![A screenshot of a Mesh experience with a WebSlate on the wall showing a video.](../media/get-started-developing-mesh/050-webslate.png)
 

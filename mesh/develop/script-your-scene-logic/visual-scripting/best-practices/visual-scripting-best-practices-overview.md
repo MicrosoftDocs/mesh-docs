@@ -4,7 +4,7 @@ description: Learn about best practices for Visual Scripting in Mesh.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/1/2024
+ms.date: 8/15/2024
 ms.topic: conceptual
 keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, graphs, Mesh, best practices
 ---
@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, scripting, visual scripting, coding, nodes, units, gra
 
 At its core, Mesh Visual Scripting is simply Unity Visual Scripting extended and augmented to work well in Mesh:  
 
-- Interface with [Interactables](../../../enhance-your-environment/avatar-and-object-interactions/interactables.md), [Physics](../../../enhance-your-environment/physics/mesh-physics-overview.md), [WebSlates](../../../enhance-your-environment/webcontent.md), [Audio](../../../enhance-your-environment/play-audio-in-mesh.md), [Cloud Scripting](../../cloud-scripting/cloud-scripting-basic-concepts.md), and many more Mesh features through visual scripts.
+- Interface with [Interactables](../../../enhance-your-environment/avatar-and-object-interactions/interactables.md), [Physics](../../../enhance-your-environment/physics/mesh-physics-overview.md), [WebSlates](../../../enhance-your-environment/web-content/webcontent.md), [Audio](../../../enhance-your-environment/play-audio-in-mesh.md), [Cloud Scripting](../../cloud-scripting/cloud-scripting-basic-concepts.md), and many more Mesh features through visual scripts.
 
 - Share scene state and visual script variables across all clients connected to a room.  
 
