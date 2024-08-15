@@ -73,7 +73,7 @@ WebSlates depend on the _Unity.InputSystem_ and _Unity.XR.Interaction.Toolkit_ 
 
 ### Known issues
 
-See the [WebSlate sections in the Mesh toolkit known issues article](../../../../Resources/mesh-toolkit-known-issues.md).
+See the [WebSlate sections in the Mesh toolkit known issues article](../../../Resources/mesh-toolkit-known-issues.md).
 
 ## Feedback for Web content in Mesh
 

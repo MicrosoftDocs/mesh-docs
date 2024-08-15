@@ -21,7 +21,7 @@ It's important to ensure that all the attendees in a Mesh experience can read al
 
 To view a URL displayed in your WebSlate more quickly, you can use Play Mode with Mesh Emulation. Aside from testing in this mode, the only other way to see your WebSlate is to upload it using the Mesh toolkit Uploader and view it in a Mesh experience.
 
-To add Play Mode with Mesh Emulation to your project, follow the instructions in the [Mesh Emulator article](../debug-and-optimize-performance/mesh-emulator.md).
+To add Play Mode with Mesh Emulation to your project, follow the instructions in the [Mesh Emulator article](../../debug-and-optimize-performance/mesh-emulator.md).
 
 **To view your Web page in the WebSlate**:  
 Press the Unity editor Play button.
