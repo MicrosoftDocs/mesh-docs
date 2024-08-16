@@ -23,9 +23,7 @@ items:
       href: mesh-toolkit-release-notes.md 
     - name: Known issues
       href: mesh-toolkit-known-issues.md
-  - name: Troubleshooting for IT Admins and Attendees
+  - name: Troubleshooting & FAQ
     href: mesh-troubleshooting.md
-  - name: Troubleshooting for Developers
-    href: troubleshooting-for-devs.md
   - name: Feedback and support
     href: feedback.md
