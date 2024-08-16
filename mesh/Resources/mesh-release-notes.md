@@ -39,6 +39,19 @@ Microsoft Mesh application
 
     :::image type="content" source="media/Emoji-reactions-hand-raise-multi-room.png" alt-text="Screenshot of a multi-room event in Mesh showing the emojis for other people in the event.":::
 
+#### WebSlate
+With the release of the 24.10 Mesh Toolkit, developers now have the ability to add WebSlate Controllables to environments. These WebSlates enable event attendees to interact with a webpage through WebSlates while in a Mesh event and empower event organizers to dynamically change the content that's displayed on the WebSlates in real-time.
+
+An event host could display Microsoft Whiteboard, for example:
+
+:::image type="content" source="media/WebSlate-example-of-whiteboard.png" alt-text="Screenshot of a Mesh event with a WebSlate showing Microsoft Whiteboard with two avatars interacting with it.":::
+
+* **Developer updates:** Same simple workflow for adding Webslates, with minor additional configurations to add Controllable capabilities.
+
+* **Event organizer experience:** Toggle URLs, visibility (on/off), and optionally Prevent suspension (to keep WebSlates always on). Via the Control Panel, changing the URL at runtime updates WebSlates for all users in the event, instantly (global refresh).
+
+* **End user experience:** Upon cursor/controller hover, a menu bar with a built-in refresh button and a tooltip briefly explaining single-user nature of webslates has been added (some webapps may offer shared experiences). This provides a way to return to the URL set by organizers (in the case the user navigates away) and can be used incase webapps have issues during experiences.
+
 ### Resolved issues
 
 * Fixed issue executing ActionGroups for Streamed and Embedded Video Controllables with no backplate. (19130)
