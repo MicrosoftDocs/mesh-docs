@@ -1,5 +1,5 @@
 items: 
-- name: Display and interact with web content overview
+- name: Overview
   href: webcontent.md
 - name: Add a WebSlate to your environment
   href: add-a-webslate.md
@@ -9,5 +9,3 @@ items:
   href: webslates-and-mesh-scripting.md
 - name: WebSlate performance and security
   href: webslate-performance-and-security.md
-- name: Make web content controllable in an event
-  href: control-webslates.md

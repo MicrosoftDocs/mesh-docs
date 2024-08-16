@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming vide
 
 # Update WebSlate URLs during an event
 
-In a Mesh event, you can view and interact with web content displayed on a WebSlate. If you aren't already familiar with WebSlates, we recommend that you review our [WebSlate overview article](../develop/enhance-your-environment/web-content/webcontent.md).
+If you want to view and control web content in an event, your developer needs to have added one or more WebSlates to the environment the event is based on. These WebSlates will show up in the Control Panel for your event. If you aren't already familiar with WebSlates, we recommend that you review our [WebSlate overview article](../develop/enhance-your-environment/web-content/webcontent.md).
 
 Event Organizers can use the Control Panel to change the URL for a WebSlate during an event, as explained below.
 
@@ -48,10 +48,9 @@ When anyone (users or organizers) approaches the WebSlate and hovers over it wit
 
 ![A screenshot of settings for a WebSlate in the Control Panel.](../media/organize-events/control-webslate-urls/006-webslate-menu.png)
 
-
 The menu contains the following:  
 
-**Refresh button** (left button): Reloads the default URL for the attendee who presses the button. This can be useful in case the attendee has navigated away from the original content and wants to return to it, or if they get an unexpected error with the web content.
+**Refresh button** (left button): Reloads the default URL or URL set by the Organizer for the attendee who presses the button. This can be useful in case the attendee has navigated away from the original content and wants to return to it, or if they get an unexpected error with the web content.
 
 **Eye icon** (right button): Provides a tooltip explaining that web content on the slate is unique to the user’s view. Some experiences may be shared--for example, a Whiteboard web app.
 
