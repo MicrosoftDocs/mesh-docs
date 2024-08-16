@@ -19,6 +19,11 @@ The three entrypoints that you can use to join a Mesh event are:
 
 You can open these apps to find your event or use the meeting invite link for the Mesh event in your Outlook or Microsoft Teams calendar.
 
+Need to get Mesh for your device(s)?
+
+> [!div class="nextstepaction"]
+> [Get Mesh](../download-mesh-app-tools.md)
+
 ## [Windows](#tab/Windows)
 
 ## Join using Microsoft Outlook and Teams
