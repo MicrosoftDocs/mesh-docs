@@ -1,15 +1,15 @@
 ---
-title: Troubleshooting & FAQs - Microsoft Mesh
+title: Troubleshooting for IT Admins and Attendees - Microsoft Mesh
 description: Various help guides and FAQ answers regarding Mesh events.
 ms.service: mesh
 author: typride
 ms.author: tmilligan
-ms.date: 04/15/2024
+ms.date: 8/16/2024
 ms.topic: troubleshooting
 keywords: Microsoft Mesh, M365, events, join events, organize events, immersive spaces, documentation
 ---
 
-# Troubleshooting & FAQ
+# Troubleshooting for IT Admins and Attendees
 
 ## What are the license requirements for immersive spaces in Mesh?
 
