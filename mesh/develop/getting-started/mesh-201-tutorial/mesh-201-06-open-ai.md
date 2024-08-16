@@ -105,9 +105,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
 1. Save and close the file.
 
-### Add a package reference
-
-In order for packages to load correctly, you must add a package reference to the project.
+## Update the Directory.packages.props file
 
 1. In the File Explorer window that displays the Mesh Cloud Scripting files, open the file named *Directory.Packages.props* in your code editor. Note the comment about adding package references.
 
