@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, M365, events, join events, organize events, immersive 
 
 # Troubleshooting for Mesh Developers
 
-**I want to enable some URP post-processes for the PC. I created my own URP configuration files and set the project to use them, but then I get an error when I try to run or build the scene. Modifying quality levels or setting URP assets to my own resets them to default settings when I build. Most of the options in existing URP asset files are grayed out. Is this expected behavior?**
+**I want to enable URP post-processes for PC. I created custom URP configuration files and set the project to use them, but I get an error when running or building the scene. Modifying quality levels or setting URP assets to my own resets them to default settings during the build. Most options in existing URP asset files are grayed out. Is this expected behavior?**
 
  Yes, it's expected. We don't support the addition of post-processing to any uploaded environment. We enforce URP assets and configurations to ensure that your content looks as expected when it appears in Mesh.
 
