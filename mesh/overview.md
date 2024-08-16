@@ -37,10 +37,11 @@ Immersive experiences have unique attributes, including spatial interaction, co-
 ## Make Teams meetings immersive
 
 :::image type="content" source="media/welcome-to-mesh/04_ImmersiveSpaces_Splice.gif" alt-text="GIF of selecting view then immersive space (3D) in teams":::
-
-Use [immersive spaces in Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams) for small meetings of up to 16 coworkers. Hop into stunning pre-made virtual environments, offering icebreakers and activities with two clicks of a button, right from a Teams meeting.
+Get started with immersive experiences by making your Teams meetings immersive! Use [immersive spaces in Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams) for small meetings of up to 16 coworkers. Hop into stunning pre-made virtual environments, offering icebreakers and activities with two clicks of a button, right from a Teams meeting.
 
 Getting started is easy! From the **View menu** in a Teams meeting, select the **Immersive space (3D)** option. With just few a clicks, transform your two-dimensional (2D) meeting into a 3D immersive experience.
+
+See how to get started with [Immersive spaces in Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams).
 
 ### What can you do in immersive spaces in Teams?
 
@@ -52,10 +53,6 @@ Getting started is easy! From the **View menu** in a Teams meeting, select the *
 
 ## Host or Join Mesh events
 
-> [!NOTE]
-> **Coming soon**! The Mesh application will soon be available inside Microsoft Teams as an application that a user can search for and open, allowing Teams users on Windows and Mac machines to join Mesh events and custom immersive experiences. Currently, this experience is only available to organizations in [Mesh TAP](develop/mesh-tap-participants.md).
->
-> :::image type="content" source="media/welcome-to-mesh/Open-mesh-app-in-teams-2.png" alt-text="Screenshot showing the Teams app, more apps selected and Mesh typed in search bar with the Mesh app highlighted.":::
 
 Use the Microsoft Mesh app for medium-to-large events with up to 200 people. Create custom experiences that are tailored to your specific business needs, such as employee events, training, guided tours, or internal product showcases.
 
@@ -70,6 +67,11 @@ Deliver dazzling immersive experiences that can be experienced on your computer 
 - **Use Mesh on the web** to create or manage events, create event templates to be reused in the future, and manage all your uploaded environments. See [how collections are used to manage your uploaded environments](setup/Content/manage-mesh-on-web.md).
 
 - **Integrate with M365** using a secure immersive app that's performant and highly customizable.
+
+## Get Mesh
+
+> [!div class="nextstepaction"]
+> [Experience Mesh](download-mesh-app-tools.md)
 
 #### Develop custom immersive experiences in Mesh
 
