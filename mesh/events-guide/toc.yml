@@ -11,4 +11,5 @@ items:
     href: produce-event.md
   - name: Common event scenarios
     href: common-event-scenarios.md
-
+  - name: Update WebSlate URLs during an event
+    href: update-webslate-urls.md
