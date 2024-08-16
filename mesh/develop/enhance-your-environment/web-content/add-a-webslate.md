@@ -13,7 +13,9 @@ keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming vide
 
 ## Overview
 
-In the Mesh toolkit, the WebSlate Prefab that we want to use is called *WebSlateFramed*. It contains a URL parameter that you can specify to control the content the WebSlate displays. It also comes with a component that lets an Event Organizer [change the URL for the WebSlate](./control-webslates.md) in an event in real time. When a Mesh event containing the WebSlate starts, the WebSlate will load its content using the URL you provided.
+[Display and interact with web content overview](./webcontent.md)
+
+In the Mesh toolkit, the WebSlate Prefab that we want to use is called *WebSlateFramed*. It contains a URL parameter that you can specify to control the content the WebSlate displays. It also comes with a component that lets an Event Organizer [change the URL for the WebSlate](#make-the-webslate-controllable-in-an-event) in an event in real time. When a Mesh event containing the WebSlate starts, the WebSlate will load its content using the URL you provided.
 
 **Notes**
 

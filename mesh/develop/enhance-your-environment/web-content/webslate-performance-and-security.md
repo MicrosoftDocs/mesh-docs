@@ -13,6 +13,8 @@ keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming vide
 
 ## Performance
 
+[Display and interact with web content overview](./webcontent.md)
+
 Since a WebSlate is a loaded web page, it's important to consider performance implications:
 
 - Scenes are typically performant at 60fps with up to 10 active WebSlates. Framerate and general performance degradation may be observed in proportion to the number of WebSlates placed in a scene, regardless of content.
@@ -81,4 +83,4 @@ If you already know which domains you'll need, you can manually add them to the 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Make web content controllable in an event](./control-webslates.md)
+> [Enhanced features overview](../enhanced-features-overview.md)
