@@ -35,7 +35,7 @@ Mesh app in Teams, but the environment they choose wasn't built to include that 
 
 * **Developers**
 
-  * Visual artifacts may arise if custom Unity materials write to depth (e.g., translucency).
+  * Visual artifacts may arise if custom Unity materials write to alpha (e.g., translucency).
   * If you intend to use WebSlates in an environment for the Mesh app in Teams (building environments for HTML5), we recommend ensuring that all content can run inside of an `<iframe>`. To ensure this, use embeddable content URLs on WebSlates.
   * WebSlates that do not work in an `<iframe>` will show an error message on the slate. Keep in mind that testing in Play Mode will show content as if it's running on native PC app.
   * Coming soon: Web content incapable of running in the Mesh app in Teams will show an error message during Build and Publish in the Mesh Uploader.
