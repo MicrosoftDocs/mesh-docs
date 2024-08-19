@@ -17,7 +17,8 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
-| 2024         | August 05    | 5.2410.XX     |
+| 2024         | August 19    | 5.2411.XX    |
+| 2024         | August 05    | 5.2410.XX    |
 | 2024         | July 23      | 5.2409.XX    |
 | 2024         | July 02      | 5.2408.XX    |
 | 2024         | June 17      | 5.2407.XX    |
@@ -29,15 +30,19 @@ Microsoft Mesh application
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
-## Version 5.2410.XX
+## Version 5.2411.XX
 
-### What's new
+## What's new
 
 #### Multi-room user visualization
 
 * We are improving our cross-room visualization for event hosts, allowing hosts to see attendees who have raised their hand. Additionally, hosts can now see emojis that attendees use in other rooms.
 
     :::image type="content" source="media/Emoji-reactions-hand-raise-multi-room.png" alt-text="Screenshot of a multi-room event in Mesh showing the emojis for other people in the event.":::
+
+## Version 5.2410.XX
+
+### What's new
 
 #### WebSlate
 With the release of the 24.10 Mesh Toolkit, developers now have the ability to add WebSlate Controllables to environments. These WebSlates enable event attendees to interact with a webpage through WebSlates while in a Mesh event and empower event organizers to dynamically change the content that's displayed on the WebSlates in real-time.
