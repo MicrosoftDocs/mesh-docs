@@ -59,7 +59,6 @@ Create an event in Mesh on the Web and invite participants. Once created, partic
 > [!div class="nextstepaction"]
 > [Create an event in Mesh on the Web](create-event-mesh-portal.md)
 
-
 ### Customize your event
 
 You can customize the environment for events and or customize the environment to be reused in event experience templates. Whether it's a default environment or a custom one, use the Mesh editor in the menu bar to customize immersive experiences to address the unique needs of your event—without writing a line of code.

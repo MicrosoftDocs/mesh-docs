@@ -79,7 +79,7 @@ Mute all attendees in the event. Hosts in the event can still use their mics and
 
 #### Hand Raise
 
-Enable or disable Hand Raise for participants. Hand Raise is ideal for Question and Answer scenarios. When someone raises their hand, there will be an indicator next to their name in the host panel and the attendees will show a hand raise icon above their avatar.
+Enable or disable Hand Raise for participants. Hand Raise is ideal for Question and Answer scenarios. When an attendee raises their hand, there will be an indicator next to their name in the host panel and a hand raise emoji their avatar or profile bubble.
 
 **Hand raise enabled:** Participants can raise their hand to await being called on and megaphoned.
 
@@ -87,7 +87,11 @@ Enable or disable Hand Raise for participants. Hand Raise is ideal for Question 
 
 :::image type="content" source="../media/common-event-scenarios\producer-tools-hand-raise-2314.png" alt-text="Hand raise button highlighted in host panel.":::
 
-When an attendee has their hand raised, you'll see the hand raise notification next to their name in the host panel. In a single room event, you'll also see hand raise icon above their avatar.
+When an attendee has their hand raised, you'll see the hand raise notification next to their name in the host panel and see a hand raise icon above their profile bubble.
+
+:::image type="content" source="../Resources/media/Emoji-reactions-hand-raise-multi-room.png" alt-text="Screenshot of hand raise icon above another avatars name in a multi-room event.":::
+
+In a single room event, you'll also see hand raise icon above their avatar.
 
 :::image type="content" source="../media/common-event-scenarios/Event-host-Hand-raise-notifications.png" alt-text="Screenshot of Mesh app showing hand raise notification next to participant names and avatar.":::
 
