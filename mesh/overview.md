@@ -41,8 +41,6 @@ Get started with immersive experiences by making your Teams meetings immersive! 
 
 Getting started is easy! From the **View menu** in a Teams meeting, select the **Immersive space (3D)** option. With just few a clicks, transform your two-dimensional (2D) meeting into a 3D immersive experience.
 
-See how to get started with [Immersive spaces in Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams).
-
 ### What can you do in immersive spaces in Teams?
 
 - **Connect with colleagues in new ways** right from your pre-existing Teams meeting. Experience the benefits of spatial audio and 3D interaction.
@@ -51,8 +49,12 @@ See how to get started with [Immersive spaces in Teams](https://support.microsof
 
 - **Join right from Microsoft Teams**&#8212;a tool you use every day&#8212;bringing co-presence to hybrid or remote teams.
 
-## Host or Join Mesh events
+#### Get started with immersive spaces in Teams
 
+> [!div class="nextstepaction"]
+> [Get started with Immersive spaces in Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams)
+
+## Host or Join Mesh events
 
 Use the Microsoft Mesh app for medium-to-large events with up to 200 people. Create custom experiences that are tailored to your specific business needs, such as employee events, training, guided tours, or internal product showcases.
 
@@ -68,12 +70,14 @@ Deliver dazzling immersive experiences that can be experienced on your computer 
 
 - **Integrate with M365** using a secure immersive app that's performant and highly customizable.
 
-## Get Mesh
+#### Get started with Mesh events
 
 > [!div class="nextstepaction"]
 > [Experience Mesh](download-mesh-app-tools.md)
 
-#### Develop custom immersive experiences in Mesh
+## Develop custom immersive experiences in Mesh
+
+Leverage the Mesh Toolkit for Unity to create your own environment to curate the experience that you want for your organization.
 
 - **Import 3D models** that will be used in an interactable and navigable environment.
 
