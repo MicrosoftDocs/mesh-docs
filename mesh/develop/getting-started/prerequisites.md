@@ -29,9 +29,9 @@ A Teams Premium license is required for using the Mesh application for custom im
 
     - [View the page with the download link for version 2022.3.34](https://unity.com/releases/editor/archive).
 
-2. Your installation should include modules for Android, Windows, and *Windows Build Support IL2CPP*. 
+1. Your installation should include modules for Android, Windows, and *Windows Build Support IL2CPP*. 
 
-    ![A screenshot of the IL2CPP module in the Add Modules window.](../../media/get-started-developing-mesh/065-install-il2cpp-and-webgl.png)
+    ![A screenshot of the IL2CPP module in the Add Modules window.](../../media/get-started-developing-mesh/064-install-il2cpp.png)
 
     - [Learn about adding modules](https://docs.unity3d.com/hub/manual/AddModules.html).
 
