@@ -4,7 +4,7 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/19/2024
+ms.date: 8/20/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
@@ -61,6 +61,8 @@ The resource deploys and you should see a message saying that the deployment is 
 1. Select **Create new deployment**.
 
 1. Click the **Select a model** drop-down and then choose "gpt-35-turbo". Note that, if you prefer, you can choose a different model; however, this would require some changes to the code.
+
+1. In the **Deployment name** field, type in "gpt-35-turbo".
 
 1. For the other settings, choose the names and options that make the most sense for you and your organization.
 
@@ -299,7 +301,7 @@ The code below sends the GPT-3.5 Turbo model the result of the input dialog with
     The code does the following:
 
     - Create an instance of the *ChatCompletionOptions* class named *chatCompletionOptions*.
-    - Intialize a variable named *DeploymentName* with the deployment name we're using ("gpt-35-turbo").
+    - Intialize a variable named *DeploymentName* with the deployment name you created earlier ("gpt-35-turbo").
     - Initialize a new instance of *ChatRequestSystemMessage* with guidance on how the assistant should answer questions. This includes the locations with the weather data you're interested in and the current conditions (*_currentWeatherText*) for those locations. The value of *_currentWeatherText* was received when we called weatherapi.com in Chapter 5.
     - Initialize a new instance of *ChatRequestUserMessage* with the question the participant asked.
     - Send the information about the request to the LLM (Large Language Model).
