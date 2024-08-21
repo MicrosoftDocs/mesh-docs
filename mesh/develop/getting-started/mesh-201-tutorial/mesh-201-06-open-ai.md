@@ -301,7 +301,7 @@ The code below sends the GPT-3.5 Turbo model the result of the input dialog with
     The code does the following:
 
     - Create an instance of the *ChatCompletionOptions* class named *chatCompletionOptions*.
-    - Intialize a variable named *DeploymentName* with the deployment name you created earlier ("gpt-35-turbo").
+    - Initialize a variable named *DeploymentName* with the deployment name you created earlier ("gpt-35-turbo").
     - Initialize a new instance of *ChatRequestSystemMessage* with guidance on how the assistant should answer questions. This includes the locations with the weather data you're interested in and the current conditions (*_currentWeatherText*) for those locations. The value of *_currentWeatherText* was received when we called weatherapi.com in Chapter 5.
     - Initialize a new instance of *ChatRequestUserMessage* with the question the participant asked.
     - Send the information about the request to the LLM (Large Language Model).
