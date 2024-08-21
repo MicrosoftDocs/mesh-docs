@@ -4,7 +4,7 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/15/2024
+ms.date: 8/21/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
@@ -13,7 +13,11 @@ keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates
 
 In this chapter, we move on to the fifth and final station where you'll learn how to implement an Azure OpenAI-based virtual assistant or "chatbot". Note that you could use any AI service you want here (for example, Copilot Studio). Keeping with the theme of searching for a location for a wind farm, the AI assistant will be customized to answer wind farm-related questions.
 
-**Important**: OpenAI is only available to approved enterprise customers and partners. If you're not yet in this group, you must submit a [registration form](https://aka.ms/oai/access). [Learn more about the registration process](/legal/cognitive-services/openai/limited-access).
+**Important notes**: 
+
+- OpenAI is only available to approved enterprise customers and partners. If you're not yet in this group, you must submit a [registration form](https://aka.ms/oai/access). [Learn more about the registration process](/legal/cognitive-services/openai/limited-access).
+
+- If you run into issues with subscriptions and OpenAI, you may find an answer by posting in our [Mesh Creator Forum](https://techcommunity.microsoft.com/t5/mesh-creators/bd-p/MeshCreators).
 
 ## Setting up for this station
 
