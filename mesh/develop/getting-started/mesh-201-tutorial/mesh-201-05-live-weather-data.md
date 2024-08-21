@@ -4,7 +4,7 @@ description: Learn how to set up an interactive globe you can click to get live 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/11/2024
+ms.date: 8/21/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting
 ---
@@ -58,6 +58,8 @@ In order to complete this station, you'll need to insert a *key* into some code 
     ![__________________________________](../../../media/mesh-201/076-cs-component.png)
 
     Any GameObject that you intend to have under the control of cloud scripting must be added as a child to the **Mesh Cloud Scripting** GameObject.
+
+    **Note**: The **Mesh Cloud Scripting** component contains a property named **Enable Visual Scripting**. This enables Mesh cloud scripts to communicate with visual scripts. You can leave this unselected.
 
 ## Add the prefab for Station 4
 

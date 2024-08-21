@@ -4,7 +4,7 @@ description: Learn about the prerequsites and setup process for the Mesh 101 tut
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/9/2024
+ms.date: 8/21/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, GitHub
 ---
@@ -94,27 +94,27 @@ Download Microsoft Mesh on PC
 
 ![______](../../../media/get-started-developing-mesh/006-mesh-download-for-pc.png)
 
-### Download the Mesh Toolkit samples
+### Download the Mesh samples and tutorials
 
-The *Mesh 101* tutorial project is available in the [*Mesh-Toolkit-Unity*](https://github.com/microsoft/Mesh-Toolkit-Unity) GitHub repository.
+To get the Mesh 101 tutorial, you must go to the [*Mesh-Toolkit-Unity* repository](https://github.com/microsoft/Mesh-Toolkit-Unity) and then clone the repo.
 
-1. In your browser, go to GitHub, and then navigate to the [*Mesh-Toolkit-Unity* repository](https://github.com/microsoft/Mesh-Toolkit-Unity).
+![______](../../../media/mesh-201/001A-toolkit-in-github.png)
 
-    ![______](../../../media/sample-mesh-101/469-toolkit-in-github.png)
+**NOTES**:
 
-1. Select the **Code** button, and then select **Download ZIP**.
+- GitHub also gives you the option to download the samples in a Zip file. We recommend that you clone the repo since it's more convenient to get future updates simply by updating the repo rather than downloading a new Zip file every time.  
+- We're not currently accepting code contributions to our samples. If you have any feedback or if you run into any issues with the samples or the Mesh toolkit, do the following: in a Unity project that has the Mesh toolkit package installed, select **Mesh Toolkit** > **Give feedback to Microsoft** and then use the feedback link in the Mesh toolkit to let us know.
 
-    ![______](../../../media/sample-mesh-101/470-code-and-download-zip.png)
+**Important**: If you're cloning, you should have [Git LFS installed](https://git-lfs.com/).
 
-1. On your C: drive, create a folder with a one-word name (for example, "Mesh101") and then move or copy the downloaded Mesh toolkit Zip file to that folder. This is done to avoid running into a problem with the Windows path length limit, which is 256 characters. **IMPORTANT**: *Don't* place the Zip file on the Windows desktop. Behind the scenes, this creates a very long path name.
+1. Select the **Code** button, and then click the "Copy url to clipboard" button.
 
-    In the example below, the user created a folder on their C: drive named *Mesh101.* Next, they moved the downloaded Mesh toolkit Zip file to the *Mesh101* folder.
+    ![A screenshot of a computer Description automatically generated](../../../media/mesh-201/068-copy-url.png)
 
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/471-toolkit-zip-in-folder.png)
+1. We recommend that you create a folder on your C: drive named "Mesh Samples" and then clone the repo to that folder. This is a good name for two reasons: it's short, so it avoids running into a problem with the Windows path length limit, which is 256 characters. Also, there are other Mesh samples in addition to the Mesh 101 tutorial, so all your samples will be located in one place.
+1. In the newly created folder, create a Git repo and then clone the repo by pasting the copied URL after the *git clone* command in Git Bash and then pressing the Enter key.
 
-1. Unzip the samples Zip file into the same folder, and then navigate through the unzipped folder hierarchy until you see the **Mesh101** folder. This contains the tutorial project which you'll open in the next chapter.
-
-    ![A screenshot of a computer Description automatically generated](../../../media/sample-mesh-101/472-mesh-tutorial-folder.png)
+    ![A screenshot of a computer Description automatically generated](../../../media/mesh-201/069-git-bash-with-clone-command.png)
 
 ### Mesh toolkit package
 
