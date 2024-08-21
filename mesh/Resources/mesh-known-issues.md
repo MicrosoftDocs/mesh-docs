@@ -18,20 +18,18 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
  We're excited to introduce the Mesh app in Teams to our Mesh TAP participants and appreciate your understanding as we work through the issues and limitations listed below:
 
-* **Outlook Calendar invites** for Mesh events will provide the option to open the Mesh app for Windows only. To join events using the Mesh app in Teams, please open to the Mesh app in Teams and join events directly.
 
 * **Attendees**
 
   * Audio device selection does not inherit automatically from Teams.
   * Some text that is shown as users launch the Mesh app may not yet be localized into languages other than English.
-  * The selfie feature is disabled currently.
   * Outgoing screenshare is not currently supported.
 
 * **Organizers**
 
-  * Image/Video objects cannot reference SharePoint URLs.
+  * Image/Video objects cannot reference SharePoint URLs at the moment.
   * If an organizer creates an event that they expect some people will join using the
-Mesh app in Teams, but the environment they choose wasn't built to include that option, there's no warning about this. Environments intended to be used in events in the Mesh app in Teams must be built by choosing the HTML5 button in the "Build for Platforms" section of the Mesh Uploader.
+Mesh app in Teams, but the environment they choose wasn't built to include that option, there's no warning about this for organizers. Attendees, however, will be notified about the environment not being supported for the Mesh app in Teams. Environments intended to be used in events in the Mesh app in Teams must be built by choosing the HTML5 button in the "Build for Platforms" section of the Mesh Uploader.
 
 * **Developers**
 
