@@ -19,7 +19,7 @@ In this chapter, we move on to the fifth and final station where you'll learn ho
 
 In order to complete this station, you'll need to visit the Azure Portal and then get a *URI* (also called "Endpoint") and a *key* for your tenant. Later, you'll insert the key into some code that'll enable you to call Azure OpenAI. Let's do this step now so that you don't have to interrupt your workflow later on.
 
-### Create an Azure OpenAI resource
+### Create and deploy an Azure OpenAI resource
 
 1. In your browser, navigate to the [Azure Portal](https://azure.microsoft.com/get-started/azure-portal/) and then log in.
 1. In the Search box at the top of the window, type in "azure openai" and then press the Enter key. This takes you to the **Azure AI services | Azure OpenAI** page.
@@ -46,7 +46,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
 ![__________________________________](../../../media/mesh-201/112-deployment-is-complete-page.png)
 
-### Create the deployment in Azure OpenAI Studio
+### Deploy the model in Azure OpenAI Studio
 
 1. Click the **Go to Resource** button.
 
@@ -70,7 +70,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
     ![__________________________________](../../../media/mesh-201/116-azure-main-page.png)
 
-1. On the Resource page in the left-size menu, select **Keys and Endpoint**.
+1. On the Resource page in the left-side menu, select **Keys and Endpoint**.
 
     ![__________________________________](../../../media/mesh-201/117-keys-and-endpoints.png)
 
