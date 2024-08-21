@@ -4,7 +4,7 @@ description: Learn about the prerequsites, set up, and then get started with the
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/9/2024
+ms.date: 8/21/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web
 ---
@@ -107,7 +107,6 @@ To get the Mesh 201 tutorial, you must go to the [*Mesh-Toolkit-Unity* repositor
 **NOTES**:
 
 - GitHub also gives you the option to download the samples in a Zip file. We recommend that you clone the repo since it's more convenient to get future updates simply by updating the repo rather than downloading a new Zip file every time.  
-- If you previously did the [Mesh 101 tutorial](../mesh-101-tutorial/mesh-101-01-overview-and-setup.md)  and you cloned the repo at that time, you should run a *pull* operation on the repo so you have the latest changes for Mesh 201. 
 - We're not currently accepting code contributions to our samples. If you have any feedback or if you run into any issues with the samples or the Mesh toolkit, do the following: in a Unity project that has the Mesh toolkit package installed, select **Mesh Toolkit** > **Give feedback to Microsoft** and then use the feedback link in the Mesh toolkit to let us know.
 
 **Important**: If you're cloning, you should have [Git LFS installed](https://git-lfs.com/).
