@@ -4,7 +4,7 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/20/2024
+ms.date: 8/21/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
@@ -13,13 +13,17 @@ keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates
 
 In this chapter, we move on to the fifth and final station where you'll learn how to implement an Azure OpenAI-based virtual assistant or "chatbot". Note that you could use any AI service you want here (for example, Copilot Studio). Keeping with the theme of searching for a location for a wind farm, the AI assistant will be customized to answer wind farm-related questions.
 
-**Important**: OpenAI is only available to approved enterprise customers and partners. If you're not yet in this group, you must submit a [registration form](https://aka.ms/oai/access). [Learn more about the registration process](/legal/cognitive-services/openai/limited-access).
+**Important notes**: 
+
+- OpenAI is only available to approved enterprise customers and partners. If you're not yet in this group, you must submit a [registration form](https://aka.ms/oai/access). [Learn more about the registration process](/legal/cognitive-services/openai/limited-access).
+
+- If you run into issues with subscriptions and OpenAI, you may find an answer by posting in our [Mesh Creator Forum](https://techcommunity.microsoft.com/t5/mesh-creators/bd-p/MeshCreators).
 
 ## Setting up for this station
 
 In order to complete this station, you'll need to visit the Azure Portal and then get a *URI* (also called "Endpoint") and a *key* for your tenant. Later, you'll insert the key into some code that'll enable you to call Azure OpenAI. Let's do this step now so that you don't have to interrupt your workflow later on.
 
-### Create an Azure OpenAI resource
+### Create and deploy an Azure OpenAI resource
 
 1. In your browser, navigate to the [Azure Portal](https://azure.microsoft.com/get-started/azure-portal/) and then log in.
 1. In the Search box at the top of the window, type in "azure openai" and then press the Enter key. This takes you to the **Azure AI services | Azure OpenAI** page.
@@ -46,7 +50,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
 ![__________________________________](../../../media/mesh-201/112-deployment-is-complete-page.png)
 
-### Create the deployment in Azure OpenAI Studio
+### Deploy the model in Azure OpenAI Studio
 
 1. Click the **Go to Resource** button.
 
@@ -72,7 +76,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
     ![__________________________________](../../../media/mesh-201/116-azure-main-page.png)
 
-1. On the Resource page in the left-size menu, select **Keys and Endpoint**.
+1. On the Resource page in the left-side menu, select **Keys and Endpoint**.
 
     ![__________________________________](../../../media/mesh-201/117-keys-and-endpoints.png)
 
