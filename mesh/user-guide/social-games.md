@@ -11,11 +11,15 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 # Social games and activities
 
-Immersive experiences provide a unique environment to bond, collaborate, and play alike we would in real life.
+Immersive experiences provide a unique opportunity to bond, collaborate, and play alike we would in real life without having to physically be together. 
 
 ![A screenshot of a team gathered around a science museum exhibit](media/social-games-hero-image.jpg)
 
-Currently the default environments that come with Immersive spaces in Mesh do not offer social games and activities. You will need one of the following to try out some of the activities:
+Whether you want to try out the activities provided by Microsoft in the Lakehouse 
+
+## Activities in Immersive spaces in Teams
+
+
 
 - Join the Lake house environment in the immersive space in Teams from a Teams meeting.  For more information, see the [Social games and activities](https://support.microsoft.com/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games) section in the Immersive spaces in Teams documentation.
 - Upload and deploy a sample environment from Mesh that has interactive games built-in.  See the [Samples overview](/mesh/develop/getting-started/samples/samples-overview) for a list of Mesh samples.

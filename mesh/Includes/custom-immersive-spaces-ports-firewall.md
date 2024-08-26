@@ -56,6 +56,9 @@ Dynamically loaded, embedded content have unique requirements for immersive expe
 > 
 > For more information about WebSlate security and allowlisting, see [WebSlate performance and security](../develop/enhance-your-environment/web-content/webslate-performance-and-security.md).
 
+> [!TIP]
+> If using the Mesh app in Teams (building environments for HTML5), we recommend ensuring that all content can run inside of an <iframe>. To ensure this, use content with the appropriate CORS/CSP headers on WebSlates.
+
 [service-tag]: /azure/virtual-network/service-tags-overview
 [service-tag-api]: /azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api
 [service-tag-download]: /azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files
