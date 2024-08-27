@@ -17,6 +17,7 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | August 30    | 5.2412.XX    |
 | 2024         | August 19    | 5.2411.XX    |
 | 2024         | August 05    | 5.2410.XX    |
 | 2024         | July 23      | 5.2409.XX    |
@@ -29,6 +30,12 @@ Microsoft Mesh application
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2412.XX
+
+## What's new
+
+
 
 ## Version 5.2411.XX
 
