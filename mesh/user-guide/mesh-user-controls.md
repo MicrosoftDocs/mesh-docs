@@ -93,7 +93,7 @@ Lower your hand to finish answering your question and speaking to the whole even
 ### React with emotes
 
 In the app bar, you can trigger **Reactions**, that cause your avatar to
-react with body gestures as well as emotes.
+react with body gestures as well as emojis. When you use emojis, hosts in other rooms wil able to see your emojis emanate from your location!
 
 :::image type="content" source="media/emote-menu.png" alt-text="Screenshot of the emote menu in the Mesh application showing hte available emotes.":::
 
