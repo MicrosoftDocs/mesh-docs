@@ -4,7 +4,7 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/18/2024
+ms.date: 8/21/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
@@ -13,13 +13,17 @@ keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates
 
 In this chapter, we move on to the fifth and final station where you'll learn how to implement an Azure OpenAI-based virtual assistant or "chatbot". Note that you could use any AI service you want here (for example, Copilot Studio). Keeping with the theme of searching for a location for a wind farm, the AI assistant will be customized to answer wind farm-related questions.
 
-**Important**: OpenAI is only available to approved enterprise customers and partners. If you're not yet in this group, you must submit a [registration form](https://aka.ms/oai/access). [Learn more about the registration process](/legal/cognitive-services/openai/limited-access).
+**Important notes**: 
+
+- OpenAI is only available to approved enterprise customers and partners. If you're not yet in this group, you must submit a [registration form](https://aka.ms/oai/access). [Learn more about the registration process](/legal/cognitive-services/openai/limited-access).
+
+- If you run into issues with subscriptions and OpenAI, you may find an answer by posting in our [Mesh Creator Forum](https://techcommunity.microsoft.com/t5/mesh-creators/bd-p/MeshCreators).
 
 ## Setting up for this station
 
 In order to complete this station, you'll need to visit the Azure Portal and then get a *URI* (also called "Endpoint") and a *key* for your tenant. Later, you'll insert the key into some code that'll enable you to call Azure OpenAI. Let's do this step now so that you don't have to interrupt your workflow later on.
 
-### Create an Azure OpenAI resource
+### Create and deploy an Azure OpenAI resource
 
 1. In your browser, navigate to the [Azure Portal](https://azure.microsoft.com/get-started/azure-portal/) and then log in.
 1. In the Search box at the top of the window, type in "azure openai" and then press the Enter key. This takes you to the **Azure AI services | Azure OpenAI** page.
@@ -46,7 +50,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
 ![__________________________________](../../../media/mesh-201/112-deployment-is-complete-page.png)
 
-### Create the deployment in Azure OpenAI Studio
+### Deploy the model in Azure OpenAI Studio
 
 1. Click the **Go to Resource** button.
 
@@ -62,6 +66,8 @@ The resource deploys and you should see a message saying that the deployment is 
 
 1. Click the **Select a model** drop-down and then choose "gpt-35-turbo". Note that, if you prefer, you can choose a different model; however, this would require some changes to the code.
 
+1. In the **Deployment name** field, type in "gpt-35-turbo".
+
 1. For the other settings, choose the names and options that make the most sense for you and your organization.
 
 ### Copy the URI and key
@@ -70,7 +76,7 @@ The resource deploys and you should see a message saying that the deployment is 
 
     ![__________________________________](../../../media/mesh-201/116-azure-main-page.png)
 
-1. On the Resource page in the left-size menu, select **Keys and Endpoint**.
+1. On the Resource page in the left-side menu, select **Keys and Endpoint**.
 
     ![__________________________________](../../../media/mesh-201/117-keys-and-endpoints.png)
 
@@ -81,27 +87,6 @@ The resource deploys and you should see a message saying that the deployment is 
 1. Click the "Copy to clipboard" button for **Endpoint** and paste it into the same text file.
 
 1. Save the text file. You'll need these two pieces of information later in the tutorial.
-
-### Create a packages loading file
-
-In order for packages to load correctly, you must add a special file to the project.
-
-1. In your code editor, create a file named "Directory.Packages.props", and then add the following text to it:
-
-    ```
-    <Project>
-    <Import Project="$([MSBuild]::GetPathOfFileAbove(Directory.Packages.props, $(MSBuildThisFileDirectory)..))" />
-
-    <ItemGroup>
-        <PackageVersion Include="Azure.AI.OpenAI" Version="1.0.0-beta.15"/>
-    </ItemGroup>
-    
-    </Project>
-    ```
-
-1. Save the file in your project in the **Assets** > **.MeshCloudScripting** > **StartingPoint** folder.
-
-**Important**: If you plan to run the **FinishedProject** scene and try out Station 5, you must also add this file to the **Assets** > **.MeshCloudScripting** > **FinishedProject** folder.
 
 ## Add the prefab for Station 5
 
@@ -124,6 +109,19 @@ In order for packages to load correctly, you must add a special file to the proj
 
     ![__________________________________](../../../media/mesh-201/107-openai-uri-and-key.png)
 
+1. Save and close the file.
+
+## Update the Directory.packages.props file
+
+1. In the File Explorer window that displays the Mesh Cloud Scripting files, open the file named *Directory.Packages.props* in your code editor. Note the comment about adding package references.
+
+    ![__________________________________](../../../media/mesh-201/136-package-reference.png)
+
+1. Replace the comment with the line below:
+
+    ```
+    <PackageVersion Include="Azure.AI.OpenAI" Version="1.0.0-beta.15"/>
+    ```
 1. Save and close the file.
 
 ## Update the csproj file
@@ -266,7 +264,7 @@ In order for packages to load correctly, you must add a special file to the proj
 
     The code does the following:
 
-    - Call Mesh Cloud Scripting through the method named *ShowInputDialogToParticipantAsync()*. The arguments are the message you want to prompt the user with ("Ask Azure OpoenAI") and who you want to display the input dialog to (*args.Participant*).
+    - Call Mesh Cloud Scripting through the method named *ShowInputDialogToParticipantAsync()*. The arguments are the message you want to prompt the user with ("Ask Azure OpenAI") and who you want to display the input dialog to (*args.Participant*).
     - When the input dialog pops up, check for errors.
     - Save whatever the participant typed in (the *result*) to *participantInput* as a String. 
 
@@ -307,7 +305,7 @@ The code below sends the GPT-3.5 Turbo model the result of the input dialog with
     The code does the following:
 
     - Create an instance of the *ChatCompletionOptions* class named *chatCompletionOptions*.
-    - Intialize a variable named *DeploymentName* with the OpenAI model we're using ("gpt-35-turbo").
+    - Initialize a variable named *DeploymentName* with the deployment name you created earlier ("gpt-35-turbo").
     - Initialize a new instance of *ChatRequestSystemMessage* with guidance on how the assistant should answer questions. This includes the locations with the weather data you're interested in and the current conditions (*_currentWeatherText*) for those locations. The value of *_currentWeatherText* was received when we called weatherapi.com in Chapter 5.
     - Initialize a new instance of *ChatRequestUserMessage* with the question the participant asked.
     - Send the information about the request to the LLM (Large Language Model).
@@ -384,7 +382,7 @@ If you want to build and publish this tutorial project, do the following:
 
 **Learn more about WebSlates**
 
-[Visit the WebSlates article on the Mesh Help site](../../enhance-your-environment/webcontent.md).
+[Visit the WebSlates article on the Mesh Help site](../../enhance-your-environment/web-content/webcontent.md).
 
 [Read a blog post written by the WebSlates product manager](https://devblogs.microsoft.com/microsoft365dev/web-content-in-microsoft-mesh-powered-by-webview/).
 

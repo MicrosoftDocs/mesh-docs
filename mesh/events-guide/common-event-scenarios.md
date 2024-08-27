@@ -1,11 +1,11 @@
 ---
 title: Common scenarios for event hosts
-description: How to run or manage common event scenarios in Microsoft Mesh.
+description: How to run or manage common event scenarios in Mesh events while using the Mesh app for Windows, Mesh app for Teams or Mesh app on Meta Quest.
 ms.service: mesh
 author: typride
 ms.author: tmilligan
-ms.date: 12/01/2023
-ms.topic: Overview
+ms.date: 08/14/2024
+ms.topic: best-practice
 keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer, Q&A, scenarios
 ---
 
@@ -25,13 +25,13 @@ As a host, your host tools will be slightly different in a multi-room scenario.
 
 In a single room event, you have access to the **Mute all**, **Hand Raise**, **Megaphone**, and **Screenshare** controls.
 
-:::image type="content" source="../media/common-event-scenarios/single-room-host-tools.png" alt-text="Screenshot of the host tools in a single room event.":::
+:::image type="content" source="../media/common-event-scenarios/single-room-host-tools.png" alt-text="Screenshot of the host tools in the menu bar for a single room event.":::
 
 ### Host tools in a multi-room event
 
 In a multi-room event, you have access to the **Mute all**, **Hand Raise**, **Megaphone**, **Broadcast**, and **Screenshare** controls.
 
-:::image type="content" source="../media/common-event-scenarios/multi-room-host-tools.png" alt-text="Screenshot of the host tools in a single room event.":::
+:::image type="content" source="../media/common-event-scenarios/multi-room-host-tools.png" alt-text="Screenshot of the host tools in a multi room event.":::
 
 Broadcast is the notable difference here, which shows your avatar and makes your voice audible to all participants in all rooms.
 
@@ -44,7 +44,7 @@ As a host, you may want participants to be able to ask their questions or say co
 
 ### Enable Hand Raise for all participants
 
-To allow participants to raise their hand, you must **enable Hand Raise** bold **Host Panel**.
+To allow participants to raise their hand, you must **enable Hand Raise** in the **Host Panel**.
 
 1. Open the Host Panel.
 
@@ -62,9 +62,9 @@ In single room events, as a host you'll see who has their hand raised in the hos
 
 ### Call on people in multi-room events
 
-In multi-room scenarios, attendees will only be able to talk to other people in their room. As a host, you will not see or hear the attendees until you broadcast them.
+In multi-room scenarios, attendees will only be able to talk to other people in their room. As a host, you will not see or hear attendees unless they raise their hand or you call on them. If attendees use emojis, however, you will you able to see their emojis and location across rooms!
 
-To call on them, look in the host panel and select the **Broadcast** button, as shown below.
+To call on attendees, look in the host panel and select the **Broadcast** button, as shown below.
 
 :::image type="content" source="../media/common-event-scenarios/Multi-room-broadcast-hand-raise.png" alt-text="Screenshot of Mesh multi-room scenario, broadcast button highlighted next to attendee name.":::
 
