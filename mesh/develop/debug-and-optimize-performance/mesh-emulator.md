@@ -4,7 +4,7 @@ description: Test your Mesh environment using Play Mode with Mesh Emulation in U
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 6/27/2024
+ms.date: 8/15/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, testing, troubleshooting, Mesh emulator, emulator, troubleshooting, debugging, Mesh Emulation Mode, emulation
 ---
@@ -52,7 +52,7 @@ This feature lets you run multiple clients within the same process and show them
 
 ![A screenshot of multiple clients displayed side-by-side in Mesh Emulation Mode.](../../media/debug-and-optimize/image043.png)
 
-This is sufficient for previewing static content. When developing interactive content, [visual scripting](../script-your-scene-logic/visual-scripting/visual-scripting-overview.md), [cloud scripting](../script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md) and/or [WebSlate](../enhance-your-environment/webcontent.md), keep in mind that those features each contain their own networking mechanisms which provide a Mesh Emulation preview of a synchronized experience with multiple users.
+This is sufficient for previewing static content. When developing interactive content, [visual scripting](../script-your-scene-logic/visual-scripting/visual-scripting-overview.md), [cloud scripting](../script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md) and/or [WebSlate](../enhance-your-environment/web-content/webcontent.md), keep in mind that those features each contain their own networking mechanisms which provide a Mesh Emulation preview of a synchronized experience with multiple users.
 
 Do one of the following:
 
