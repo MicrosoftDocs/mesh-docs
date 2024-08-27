@@ -47,7 +47,6 @@ Events in Mesh should be familiar to most organizations that work with Microsoft
 
 1. **[Produce your event in Mesh](produce-event.md):** Leverage a set of tools to manage participants and control the objects that you've added to your environment.
 
-
 ### Create your event in Mesh on the Web
 
 Create an event in Mesh on the Web and invite participants. Once created, participants will see the event in their calendars in Microsoft Teams and Outlook.
@@ -56,7 +55,6 @@ Create an event in Mesh on the Web and invite participants. Once created, partic
 
 > [!div class="nextstepaction"]
 > [Create an event in Mesh on the Web](create-event-mesh-portal.md)
-
 
 ### Customize your event
 
