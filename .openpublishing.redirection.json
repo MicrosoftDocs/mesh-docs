@@ -81,6 +81,11 @@
 			"source_path": "mesh/develop/debug-and-optimize-performance/test-your-environment.md",
 			"redirect_url": "/mesh/develop/make-your-environment-available/test-your-environment",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/debug-and-optimize-performance/webcontent.md",
+			"redirect_url": "/mesh/develop/debug-and-optimize-performance/webcontent/webcontent",
+			"redirect_document_id": false
 		}
 	]
 	
