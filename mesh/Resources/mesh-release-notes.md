@@ -63,7 +63,7 @@ There are two notable changes:
 
 ### Larger events supported
 
-Multi-room events now support up-to 330 people, up from the previous limit of 200.
+Multi-room events now support up to 330 people, up from the previous limit of 200.
 
 ## Version 5.2411.XX
 
