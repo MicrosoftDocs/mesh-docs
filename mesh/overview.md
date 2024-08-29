@@ -54,7 +54,7 @@ Getting started is easy! From the **View menu** in a Teams meeting, select the *
 > [!div class="nextstepaction"]
 > [Get started with Immersive spaces in Teams](https://support.microsoft.com/en-us/topic/4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams)
 
-## Host or Join Mesh events
+## Host or join Mesh events
 
 Use the Microsoft Mesh app for medium-to-large events with up to 200 people. Create custom experiences that are tailored to your specific business needs, such as employee events, training, guided tours, or internal product showcases.
 
