@@ -37,9 +37,7 @@ Microsoft Mesh application
 
 ### Organizer tools and People panel
 
-The menu bar in the Mesh application has been reorganized to help Mesh event organizers manage attendee participation.
-
-There are two notable changes:
+The menu bar in the Mesh application has been reorganized to help Mesh event organizers better manage attendee participation and see who is in their Mesh event.
 
 1. **Organizer tools**: Mute all, enable/disable Handraise, Megaphone, Screenshare, and Broadcast (for Multi-room events) are all located in the left Organizer tools button in the Menu bar.
 
@@ -58,12 +56,13 @@ There are two notable changes:
     :::image type="content" source="media/People-panel-single-room-2412.png" alt-text="Screenshot of the Mesh app showing the people panel in a single room event.":::
 
     **Multi-room events**
+    For Multi-room events, you'll be able to switch between the People tab and the Additional rooms tab
 
     :::image type="content" source="media/People-panel-multi-room-2412.png" alt-text="Screenshot of Mesh app showing the people panel expanded in a multi-room event.":::
 
 ### Larger events supported
 
-Multi-room events now support up to 330 people, up from the previous limit of 200.
+Multi-room events now support up-to 330 people, up from the previous limit of 200.
 
 ## Version 5.2411.XX
 
