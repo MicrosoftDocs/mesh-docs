@@ -5,7 +5,7 @@ ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 7/27/2023
-ms.topic: overview
+ms.topic: conceptual
 keywords: Microsoft Mesh, M365, Mesh on the web, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
@@ -39,10 +39,12 @@ Before you can [upload custom environments](../../develop/make-your-environment-
 
 ## Create a Collection
 
+See how to create a collection to house your uploaded environments and any templates you create.
+
 1. Open Mesh on the web at [https://portal.mesh.microsoft.com/](https://portal.mesh.microsoft.com/) or [https://mesh.cloud.microsoft/](https://mesh.cloud.microsoft/).
 
     > [!NOTE]
-    > Mesh on the web is moving to cloud.microsoft [with all Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). To help ease this transition, we are providing two links for Mesh on the web. To use the new cloud.microsoft endpoint, ensure you have allowed the proper endpoints allowed, as detailed in the [Preparing your organization article](preparing-your-organization.md#endoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
+    > Mesh on the web is moving to cloud.microsoft [with all Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). To help ease this transition, we are providing two links for Mesh on the web. To use the new cloud.microsoft endpoint, ensure you have allowed the proper endpoints allowed, as detailed in the [Preparing your organization article](preparing-your-organization.md).
     >
     > If you have any issues with the new Mesh on the web experience, you can continue to use *portal.mesh.microsoft.com*.
 
@@ -52,6 +54,9 @@ Before you can [upload custom environments](../../develop/make-your-environment-
 
 1. Select **Create collection** in the top right.
 1. Fill out the **Collection name**, **Description**, adjust the **Sensitivity** and **Privacy**.
+
+    > [!IMPORTANT]
+    > Collections can only be Private. There is no Public option for Collections.
 
     :::image type="content" source="../../media/mesh-on-web/Enter-collection-details-and-select-sensitivity.png" alt-text="Screenshot of Mesh on the web showing collection details filled out.":::
 
