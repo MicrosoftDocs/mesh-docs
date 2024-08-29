@@ -25,11 +25,11 @@ Join the Lake house environment in the immersive space in Teams from a Teams mee
 
 Upload and deploy a sample environment from Mesh that has interactive games built-in.
 
-## Explore the samples
+### Explore the samples
 
 We cover a few examples of the activities found in the samples. For more detail, see the [Samples overview](/mesh/develop/getting-started/samples/samples-overview).
 
-### The Toybox sample
+#### The Toybox sample
 
 ![the Toybox sample environment](media/toybox-environment.png)
 
@@ -71,7 +71,7 @@ The Toybox sample environment comes with a number of activities to drive social 
 
     ![A screenshot of the Astronaut game](media/astronaut.png)
 
-### The Science Building
+#### The Science Building
 
 The *ScienceBuilding* project provides many fun-filled and interactive exhibits for you to explore Mesh physics games.
 

@@ -18,25 +18,11 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
  We're excited to introduce the Mesh app in Teams to our Mesh TAP participants and appreciate your understanding as we work through the issues and limitations listed below:
 
-
 * **Attendees**
 
   * Audio device selection does not inherit automatically from Teams.
   * Some text that is shown as users launch the Mesh app may not yet be localized into languages other than English.
   * Outgoing screenshare is not currently supported.
-
-* **Organizers**
-
-  * Image/Video objects cannot reference SharePoint URLs at the moment.
-  * If an organizer creates an event that they expect some people will join using the
-Mesh app in Teams, but the environment they choose wasn't built to include that option, there's no warning about this for organizers. Attendees, however, will be notified about the environment not being supported for the Mesh app in Teams. Environments intended to be used in events in the Mesh app in Teams must be built by choosing the HTML5 button in the "Build for Platforms" section of the Mesh Uploader.
-
-* **Developers**
-
-  * Visual artifacts may arise if custom Unity materials write to alpha (e.g., translucency).
-  * If you intend to use WebSlates in an environment for the Mesh app in Teams (building environments for HTML5), we recommend ensuring that all content can run inside of an `<iframe>`. To ensure this, use content with the appropriate CORS/CSP headers on WebSlates.
-  * WebSlates that do not work in an `<iframe>` will show an error message on the slate. Keep in mind that testing in Play Mode will show content as if it's running on native PC app.
-  * Coming soon: Web content incapable of running in the Mesh app in Teams will show an error message during Build and Publish in the Mesh Uploader.
 
 ## Version 5.2403.0 (April 18, 2024)
 
