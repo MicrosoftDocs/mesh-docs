@@ -19,7 +19,7 @@ Try out an Immersive space (3D) in Microsoft Teams or create your own activities
 
 ## Activities in Immersive spaces in Teams
 
-Join the Lake house environment in the immersive space in Teams from a Teams meeting.  For more information, see the [Social games and activities](https://support.microsoft.com/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games) section in the Immersive spaces in Teams documentation.
+Join the Lakehouse environment in the immersive space in Teams from a Teams meeting.  For more information, see the [Social games and activities](https://support.microsoft.com/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games) section in the Immersive spaces in Teams documentation.
 
 ## Create your own activities and leverage the samples
 
