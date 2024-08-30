@@ -3,7 +3,7 @@ title: Mesh 201 Pt. 2':' Load a local non-shared HTML file into a WebSlate
 description: Learn about loading a local non-shared HTML file into a WebSlate.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/11/2024
+ms.date: 8/29/2024
 ms.topic: tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
@@ -39,8 +39,6 @@ Now that you're all set up and have had a chance to try out the project, let's m
  
     ![A screenshot of a computer Description ](../../../media/mesh-201/015-webslateframed-in-hierarchy.png)
 
-    **Note**: You have two options when choosing a WebSlate prefab: **WebSlate**, which is a simple design with no extra components, and **WebSlateFramed**, which has a stylized frame and extra features.
-
     Our WebSlate is now in the scene, but it doesn't have the size or position we want.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/016-slate-wrong-size-and-location.png)
@@ -59,7 +57,7 @@ Now that you're all set up and have had a chance to try out the project, let's m
 
 1. In the **Hierarchy**, expand the **WebSlateFramed** prefab.
 1. Select the child object of **WebSlateFramed** named **WebSlate**.
-1. In the **Inspector**, navigate to the **WebSlate** component and note that the **Current URL** property is set to the home page for all of Microsoft.
+1. In the **Inspector**, navigate to the **WebSlate** component and note that the **Current URL** property (the default URL or the WebSlate) is set to the home page for all of Microsoft.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/029-default-url.png)
 
@@ -75,12 +73,12 @@ Now that you're all set up and have had a chance to try out the project, let's m
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/018-loadbutton-selected.png)
 
-    In the **Inspector**, you can see that that **LoadButton** has a **Script Machine** component containing an embedded script named **Load HTML**, and a variable that we'll be using in the script.
+    In the **Inspector**, you can see that that **LoadButton** with the name "Load HTML". The component has its **Source** property set to **Graph**, and it connects to a script asset file named "LoadButtonLocalStart". The **LoadButton** GameObject also has variables that we'll be using in the script.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/019-button-components.png)
 
     > [!TIP]
-    > The **Source** property for the script has two options: *Graph* and *Embed*. Each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine article](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We use the *Embed* option here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
+    > The **Source** property for the script has two options: *Graph* and *Embed*. Each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine article](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We use the *Graph* option here because this "Source" type has greater flexibility when connecting to Mesh Cloud Scripting.
 
 1. In the **Script Machine** component, click the **Edit Graph** button.
 1. Park the **Script Graph** window next to the **Project** and **Console** tabs. Click its tab to see its contents.
@@ -95,36 +93,45 @@ Now that you're all set up and have had a chance to try out the project, let's m
 
 In our current script, we use the node with "Is Selected Locally". This means that when the attendee clicks the Load button, only they will see the new HTML page that loads into the attached WebSlate.
 
-## Get the HTML page
+## Create a WebSlate object variable
 
 The script graph has already been started for you. We'll complete the tasks needed to enable the **Load** button at Station 1 to load the HTML page.
 
-The first thing we need to do is get access to the **WebSlate** component that's attached to the **WebSlate** object.
+The first thing we need to do is create an Object Variable that has the value of the **WebSlate** GameObject that's a child to the **WebSlateFramed** GameObject.
 
-![A screenshot of a computer Description ](../../../media/mesh-201/021-webslate-component.png)
+1. In the **New Variable Name** field, type in the name "WebSlate" and then press the Enter key.
 
-We have a node in the script graph set up for this--**Get Component in Children**--so ...
+![____________](../../../media/mesh-201/137-new-object-variable.png).
 
-1. Drag the **WebSlateFramed** object from the **Hierarchy** and then drop it in the first field in the **Get Component in Children** node.
+1. Click the **Type** drop-down and then search and select "WebSlate".
 
-    ![A screenshot of a computer Description ](../../../media/mesh-201/022-drag-slate-object.png)
+![____________](../../../media/mesh-201/138-select-webslate.png).
 
-1. Click the Control Output port of the **Get Component in Children** node, and then drag to the right. This opens the Fuzzy Finder. **WARNING**: Once you open the Fuzzy Finder, don't click anywhere outside of the Unity interface. This closes the Fuzzy Finder and causes unpredictable behavior in the Script Graph.
+1. Drag the **WebSlate** GameObject from the **Hierarchy** and then drop it in the **Value** field for the new variable.
+
+![____________](../../../media/mesh-201/139-drag-webslate.png).
+
+## Get the HTML Page
+
+
+
+1. Click the Control Output port of the **If** node, and then drag to the right. This opens the Fuzzy Finder. **WARNING**: Once you open the Fuzzy Finder, don't click anywhere outside of the Unity interface. This closes the Fuzzy Finder and causes unpredictable behavior in the Script Graph.
 1. In the Fuzzy Finder, search for "Web Slate: Load HTML Content (Html Asset)" and then select it. **Note** that there are two nodes with very similar names. 
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/023-load-html-content.png)
 
     You want the one that says **Html Asset**, not **Html Content**.
 
-    ![A screenshot of a computer Description ](../../../media/mesh-201/024-node-content-or-asset.png)
+    ![__________________](../../../media/mesh-201/024-node-content-or-asset.png)
 
-1. Drag a connector from the Data Output port of the **Get Component in Children** node and then connect it to the Data Input port of the **Load HTML Content** node.
+1. Drag the newly-created **WebSlate** Object Variable and then place the node it generates above and to the left of the **Load HTML Content** node.  
+1. Connect the data output port of the **Get Object Variable** node to the first data input port of the **Load HTML Content** node.
 
-    ![A screenshot of a computer Description ](../../../media/mesh-201/026-connector-to-html-content.png)
+    ![____________](../../../media/mesh-201/140-connect-webslate-variable.png)
 
 1. We already have the web page we want to load in a **Get Variable** node in the script graph. Drag a connector from the Data Output port of the **Get Variable** node and then connect it to the Data Input port of the **Load HTML Content** node.
 
-    ![A screenshot of a computer Description ](../../../media/mesh-201/025-connect-variable-node.png)
+    ![____________](../../../media/mesh-201/141-connect-webslate-variable.png)
 
 ## Test your work
 
@@ -141,7 +148,7 @@ We have a node in the script graph set up for this--**Get Component in Children*
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/028-webslate-with-default-page.png)
 
-1. Click the **Load** button. The WebSlate loads and displays a page from the variable you connected in the Scrip Graph that says "Hello World."
+1. Click the **Load** button. The WebSlate loads and displays a page from the variable you connected in the Script Graph that says "Hello World."
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/030-webslate-with-loaded-page.png)
 
@@ -150,8 +157,6 @@ We have a node in the script graph set up for this--**Get Component in Children*
     ![A screenshot of a computer Description ](../../../media/mesh-201/031-hello-world-page.png)
 
     **TIP**: To get some extra insights into how the script works, watch it in the **Script Graph** as you click the **Load** button. The connectors between the nodes display informational tips and animations.
-
-    ![A screenshot of a computer Description ](../../../media/mesh-201/119-runtime-connector-tips.png)
 
 1. When you're finished, click the Unity Editor Play button to exit Play mode.
 
