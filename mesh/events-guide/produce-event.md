@@ -19,7 +19,7 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 
 ### Event capacity
 
-- 200 attendees per event
+- 330 attendees per event
 - 16 attendees per room
 - Up to 16 hosts in a separate room, additional to the 200 attendees
 
@@ -121,7 +121,6 @@ Amplify your voice to all participants with Megaphone and show your avatar to al
 **Megaphone enabled/disabled:** Choose whether your voice is amplified to all participants in all rooms.
 
 **Broadcast Enable/disabled:** Control whether or not your host avatar and voice are broadcast to all rooms in the event.
-
 
 #### Megaphone or broadcast other participants
 
