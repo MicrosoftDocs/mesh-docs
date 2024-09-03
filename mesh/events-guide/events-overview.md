@@ -79,9 +79,9 @@ To learn how, see [Create Template](create-template.md).
 
 ## Produce your event
 
-When it's time for your event, join in Mesh and [leverage a set of host tools](produce-event.md#event-producers-tools) accessed via the Menu bar (seen below) to interact with participants, and curate your event experience.
+When it's time for your event, join in Mesh and [leverage the Organizer tools](produce-event.md#event-producers-tools) accessed via the Menu bar (seen below) to interact with participants, and curate your event experience.
 
-:::image type="content" source="../media/mesh-event-producer-guide/host-panel-menu-bar-2314.png" alt-text="Host panel button to see participant list and tools":::
+:::image type="content" source="../Resources/media/Organizer-tools-people-panel-multi-room-2412.png" alt-text="Screenshot of the organizer tools in the Mesh app showinig the organizer tools highlighted.":::
 
 > [!div class="nextstepaction"]
 > [Produce your event](create-event-mesh-portal.md)

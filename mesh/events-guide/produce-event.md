@@ -25,7 +25,27 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 
 ## Event Producers tools
 
-- **[Host panel:](#host-panel)** See the participants in your event and use the host panel toolbar to access the *[Mute all](#mute-all)*, *[Hand Raise](#hand-raise)*, *[Megaphone](#megaphone)*, *[Broadcast](#broadcast)*, and  *[Share](#share)* buttons.
+- **[Organizer tools](#organizer-tools)**: Mute all, enable/disable Handraise, Megaphone, Screenshare, and Broadcast (for Multi-room events) are all located in the left Organizer tools button in the Menu bar.
+
+    **Single room events**
+
+    :::image type="content" source="../Resources/media/Organizer-tools-people-panel-single-room-2412.png" alt-text="Screenshot of the organizer tools and people panel in the Mesh app.":::
+
+    **Multi-room events**
+
+    :::image type="content" source="../Resources/media/Organizer-tools-people-panel-multi-room-2412.png" alt-text="Screenshot of Organizer tools and People panel in the Mesh app.":::
+
+- **[People panel](#people-panel)**: The people in your event can now be found in the People panel. In this panel, you can see who has raised their hand and megaphone or broadcast (in multi-room events) them.
+
+    **Single room events**
+
+    :::image type="content" source="../Resources/media/People-panel-single-room-2412.png" alt-text="Screenshot of the Mesh app showing the people panel in a single room event.":::
+
+    **Multi-room events**
+    For Multi-room events, you'll be able to switch between the People tab and the Additional rooms tab
+
+    :::image type="content" source="../Resources/media/People-panel-multi-room-2412.png" alt-text="Screenshot of Mesh app showing the people panel expanded in a multi-room event.":::
+
 - **[Control panel](#control-panel):** Control the elements that were added in a Customization session. [Play a video](#control-objects-in-the-control-panel), for example, or control custom objects that you may have added!
 
 ## Common event scenarios
@@ -55,17 +75,7 @@ After you've created your event, customized it, and added content to the control
 
 Once you select **Join now**, you'll utilize two main tools, Host panel and the Control panel, for your run of show:
 
-## Host panel
-
-1. Select the **Host panel** button in the menu bar.
-
-    :::image type="content" source="../media/mesh-event-producer-guide/host-panel-menu-bar-2314.png" alt-text="Host panel button to see participant list and tools":::
-
-1. In the window that opens, you'll see the following tools at the top:
-
-    :::image type="content" source="../media/mesh-event-producer-guide/producer-tools-2314.png" alt-text="Host panel tool bar":::
-
-### Host panel tools
+### Organizer tools
 
 #### Mute all
 
@@ -164,11 +174,11 @@ Share your screen or a specific window on your PC to all participants. Screensha
 
     :::image type="content" source="../media/mesh-event-producer-guide/producer-tools-sharing-stop-2314.png" alt-text="Screenshot of Mesh app showing stop sharing button in host panel.":::
 
-### Social panel
+### People panel
 
-See the event participants and use various controls available to manage individual participants.
+The people panel allows you to see who is in event, including those that have their hands raised and who is in each room.
 
-:::image type="content" source="../media/mesh-event-producer-guide/Participant-host-panel-window.png" alt-text="Participant panel for host panel":::
+:::image type="content" source="../Resources/media/People-panel-single-room-2412.png" alt-text="Screenshot of people panel in a single room in the Mesh app.":::
 
 At the top of the panel, you have *two tabs* to choose from:
 
