@@ -15,9 +15,12 @@ Events experiences in Microsoft Mesh can vary widely—in their look, feel, and 
 
 Create the event in Mesh on the Web, customize it in the Microsoft Mesh app, create a template to reuse your customizations in the future, and use the powerful suite of tools to produce it.
 
-## Download Mesh apps
+## Get Mesh
 
-[!INCLUDE [<download-apps>](<../includes/download-apps.md>)]
+Ensure you have Mesh for your device(s).
+
+> [!div class="nextstepaction"]
+> [Get Mesh](../download-mesh-app-tools.md)
 
 ## Key capabilities of Mesh event experiences
 
@@ -41,7 +44,7 @@ Events in Mesh should be familiar to most organizations that work with Microsoft
 
 1. **[Create an event in Mesh on the Web](create-event-mesh-portal.md):** Start with Mesh on the Web to create or edit your event, invite participants, and manage Mesh worlds.
 
-1. **[Customize and save the event experience in the Mesh app](customize-event.md):** Customize your event at least 30 minutes before the start time to add text, video, and/or screenshare objects and prepare your environment for your event.
+1. **[Customize and save the event experience in Mesh](customize-event.md):** Customize your event at least 30 minutes before the start time to add text, video, and/or screenshare objects and prepare your environment for your event.
 
 1. **[Create Template](create-template.md) (Optional):** Save your customizations in a Template to be reused in future events.
 
