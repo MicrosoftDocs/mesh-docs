@@ -176,14 +176,15 @@ Share your screen or a specific window on your PC to all participants. Screensha
 
 ### People panel
 
-The people panel allows you to see who is in event, including those that have their hands raised and who is in each room.
+The people panel allows you to see who is in your event, and call on participants when they raise their hand. In a single room, you'll be able to megaphone or broadcast participants to make them audible (and visible in multi-room events) to all participants in the event.
+
+**Single room**
 
 :::image type="content" source="../Resources/media/People-panel-single-room-2412.png" alt-text="Screenshot of people panel in a single room in the Mesh app.":::
 
-At the top of the panel, you have *two tabs* to choose from:
+**Multi-room**
 
-- **Participants:** See participants in your room, which can be sorted by *All*, *Hand raised*, or *Broadcasting*.
-- **Rooms:** See a list of all of the rooms in your multiroom event, including the Host Room. For each room, there's a attendee count to see how many people are in each room.
+:::image type="content" source="../Resources/media/People-panel-multi-room-2412.png" alt-text="Screenshot of the people panel in a multi-room event in the Mesh app.":::
 
 ## Control panel
 
