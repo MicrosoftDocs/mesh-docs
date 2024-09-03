@@ -38,7 +38,7 @@ In this article, we'll cover how to run a Q&A session; involve the audience and 
 
     :::image type="content" source="../Resources/media/People-panel-multi-room-2412.png" alt-text="Screenshot of Mesh app showing the people panel expanded in a multi-room event.":::
 
-- **Control panel:** Control the elements that were added in a Customization session. [Play a video](#control-objects-in-the-control-panel), for example, or control custom objects that you may have added!
+- **Control panel:** Control the elements that were added in a Customization session. Play a video, for example, or control custom objects that you may have added!
 
 ## Using hand raise for Q&A
 
