@@ -32,7 +32,7 @@ In the previous chapter of this tutorial, you enabled a button to load a local n
 
 ## Edit the script graph
 
-1. In the **Hierarchy**, select **LoadButton1**. In the **Inspector**, note that **LoadButton1** has a **Script Machine** component with a script attached named **LoadButtonSharedStart** and a variable that we'll be using in the script.
+1. In the **Hierarchy**, select **LoadButton1**. In the **Inspector**, note that **LoadButton1** has a **Script Machine** component with a script attached named **LoadButtonSharedStart**. It also has several Object Variables attached that are used in the script graph.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/035-loadbutton1-script-graph.png)
 
@@ -61,9 +61,9 @@ For Station 1, we wanted only the person triggering the event to experience it, 
 
 ### Add the *Web Slate: Load HTML Content (HTML Asset)* node
 
-The **Get Component in Children** node already contains the target we want--**WebSlateFramed**--so we can move forward and add the next node.
+The script graph already contains the two Object Variable nodes we need, so we can move forward and add the final node we need.
 
-1. Drag a connector from the Control Output port of the **Component: Get Component in Children** node and then create a new *Web Slate: Load HTML Content (HTML Asset)* node. As discussed in the previous chapter, keep in mind that there are two nodes with very similar names. 
+1. Drag a connector from the Control Output port of the **If** node and then create a new *Web Slate: Load HTML Content (HTML Asset)* node. As discussed in the previous chapter, keep in mind that there are two nodes with very similar names. 
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/023-load-html-content.png)
 
@@ -71,9 +71,11 @@ The **Get Component in Children** node already contains the target we want--**We
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/024-node-content-or-asset.png)
 
-1. Drag a connector from the Data Output port of the **Get Component in Children** node and then connect it to the Data Input port of the **Web Slate: Load HTML Content** node.
+1. Drag a connector from the Data Output port of the **Get Object Variable** node with the value "WebSlate" and then connect it to the first Data Input port of the **Web Slate: Load HTML Content** node.
 
-1. We already have the web page we want to load in a **Get Variable** node. Drag a connector from the Data Output port of the **Get Variable** node and then connect it to the Data Input port of the **Web Slate: Load HTML Content** node.
+    ![A screenshot of a computer Description ](../../../media/mesh-201/142-connect-webslate-to-load-content.png)
+
+1. The web page we want to load is in the other **Get Object Variable** node. Drag a connector from the Data Output port of the that node and then connect it to the second Data Input port of the **Web Slate: Load HTML Content** node.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/041-connect-variable-node.png)
 
@@ -81,7 +83,7 @@ The **Get Component in Children** node already contains the target we want--**We
 
 1. In Unity, save the project and then press the Unity Editor Play button.
 
-1. Position yourself in front of Station 2. As in the previous chapter, WebSlate is displaying some information about Microsoft because the default URL in the **WebSlate** component is set to the Microsoft home page.
+1. Position yourself in front of Station 2. As in the previous chapter, the WebSlate is displaying some information about Microsoft because the default URL in the **WebSlate** component is set to the Microsoft home page.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/042-station-one-one-with-default-homepage.png)
 
