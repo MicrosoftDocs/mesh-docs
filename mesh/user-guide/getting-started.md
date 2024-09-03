@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 Join an event in Microsoft Mesh to experience spatial interaction and feel a sense of co-presence.
 
-## Download Mesh apps
+## Experience Mesh
 
 [!INCLUDE [<download-apps>](<../includes/download-apps.md>)]
 
