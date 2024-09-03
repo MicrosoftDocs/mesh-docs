@@ -9,14 +9,19 @@ ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
-## Microsoft Mesh on PC
+
+## Make Teams meetings immersive
+
+To make your Teams meetings immersive, learn how to get started with immersive spaces in Teams meetings.
 
 > [!div class="nextstepaction"]
-> [Download Microsoft Mesh - Microsoft Store Apps](https://aka.ms/MeshDownloadPC)
+> [Get started with Immersive spaces in Teams](https://support.microsoft.com/en-us/office/get-started-with-immersive-spaces-in-microsoft-teams-4a6182f8-0f43-4c24-bb66-ef229fa221d8)
 
-## Microsoft Mesh for Meta Quest devices
+## Host or join Mesh events
+To join Mesh events with up-to 200 people and leverage host tools for experiences like town-halls, onboarding, or all-hands in your uploaded environments, use Mesh for your device or the Mesh app in Teams.
 
-> [!div class="nextstepaction"]
-> [Download Microsoft Mesh on Meta Quest | Meta Store](https://aka.ms/MeshDownloadQuest)
-
-Need help? See [how to download Mesh on Quest via App Lab](../Resources/mesh-troubleshooting.md#how-to-download-mesh-on-quest-2-via-app-lab). Mesh is available for Quest 2, 3, and Pro.
+| **App & Device**                | **Download**                                                                    |
+|---------------------------------|---------------------------------------------------------------------------------|
+| Mesh for Windows                | [Download Microsoft Mesh - Microsoft Store Apps](https://aka.ms/MeshDownloadPC) |
+| Mesh for Meta Quest             | [Download Microsoft Mesh on Meta Meta Store](https://aka.ms/MeshDownloadQuest)  |
+| Mesh in Teams for Windows & Mac | Currently available to Mesh TAP participants                                    |
