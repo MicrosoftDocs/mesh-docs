@@ -77,6 +77,14 @@ Once you select **Join now**, you'll utilize two main tools, Host panel and the 
 
 ### Organizer tools
 
+#### Organizer tools in a single room event
+
+:::image type="content" source="../media/mesh-event-producer-guide/Organizer-tools-single-room-2412.png" alt-text="Screenshot of organizer tools in the Mesh app showing the single room options available.":::
+
+#### Organizer tools in a multi-room event
+
+:::image type="content" source="../media/mesh-event-producer-guide/Organizer-tools-multi-room-2412.png" alt-text="Screenshot of organizer tools in the Mesh app showing the multi-room options available.":::
+
 #### Mute all
 
 Mute all attendees in the event. Hosts in the event can still use their mics and mute or unmute.
@@ -85,8 +93,6 @@ Mute all attendees in the event. Hosts in the event can still use their mics and
 
 **Disabled:** Attendees can now use their microphone.
 
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-mute-all-2314.png" alt-text="Mute all button highlighted in host panel":::
-
 #### Hand Raise
 
 Enable or disable Hand Raise for participants. Hand Raise is ideal for Question and Answer scenarios. When an attendee raises their hand, there will be an indicator next to their name in the host panel and a hand raise emoji their avatar or profile bubble.
@@ -94,8 +100,6 @@ Enable or disable Hand Raise for participants. Hand Raise is ideal for Question 
 **Hand raise enabled:** Participants can raise their hand to await being called on and megaphoned.
 
 **Hand raise disabled:** Participants cannot raise their hand.
-
-:::image type="content" source="../media/common-event-scenarios\producer-tools-hand-raise-2314.png" alt-text="Hand raise button highlighted in host panel.":::
 
 When an attendee has their hand raised, you'll see the hand raise notification next to their name in the host panel and see a hand raise icon above their profile bubble.
 
@@ -120,17 +124,12 @@ Amplify your voice to all participants in the event. A great tool when broadcast
 
 **Disabled:** Host voice is not amplified.
 
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-megaphone-2314.png" alt-text="Megaphone button in host panel":::
-
-#### Broadcast
-
-In multi-room events, use broadcast anytime you wish to be seen or heard by your whole audience in all rooms. Broadcasted avatars are visually distinguished by a purple-rings effect applied to their avatar.
+#### Megaphone or Broadcast (in multi-room events)
 
 **Enabled:** Host avatar and voice are broadcast to all rooms in the event.
 
 **Disabled:** Host avatar and voice are not broadcasted to all rooms.
 
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-broadcast-2314-multi-room.png" alt-text="Broadcast button in a Mesh event in the host panel.":::
 
 #### Broadcast or Megaphone other participants
 
