@@ -164,7 +164,7 @@ An event host could display Microsoft Whiteboard, for example:
 
 * We now support up to five broadcasters in multi-room events, up from the previous limit of three. With this change, more people can engage across rooms, including hosts that broadcast themselves or attendees who raise their hand.
 
-    For more info, see [how to Broadcast when producing an event](../events-guide/produce-event.md#broadcast).
+    For more info, see [how to Broadcast when producing an event](../events-guide/produce-event.md#megaphone-or-broadcast-in-multi-room-events).
 
 * Event hosts can call on attendees from the Host panel when attendees raise their hand to directly to start broadcasting them.
 
