@@ -25,7 +25,7 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 
 ## Event Producers tools
 
-- **[Organizer tools](#organizer-tools)**: Mute all, enable/disable Handraise, Megaphone, Screenshare, and Broadcast (for Multi-room events) are all located in the left Organizer tools button in the Menu bar.
+- **[Organizer tools](#organizer-tools)**: Mute all, enable/disable Hand Raise, Megaphone, Screenshare, and Broadcast (for Multi-room events) are all located in the left Organizer tools button in the Menu bar.
 
     **Single room events**
 
@@ -97,9 +97,9 @@ Mute all attendees in the event. Hosts in the event can still use their mics and
 
 Enable or disable Hand Raise for participants. Hand Raise is ideal for Question and Answer scenarios. When an attendee raises their hand, there will be an indicator next to their name in the host panel and a hand raise emoji their avatar or profile bubble.
 
-**Hand raise enabled:** Participants can raise their hand to await being called on and megaphoned.
+**Hand Raise enabled:** Participants can raise their hand to await being called on and megaphoned.
 
-**Hand raise disabled:** Participants cannot raise their hand.
+**Hand Raise disabled:** Participants cannot raise their hand.
 
 When an attendee has their hand raised, you'll see the hand raise notification next to their name in the People panel.
 
@@ -127,11 +127,11 @@ Amplify your voice to all participants with Megaphone and show your avatar to al
 
 As an event organizer or host, you'll have the ability to megaphone or broadcast attendees when someone wants to ask a question, for example, or lead a presentation using the Screenshare.
 
-In a **single room event**, you'll see the handraise icon next to the person who is raising their hand. Next to the raised hand, you can choose to Megaphone them:
+In a **single room event**, you'll see the Hand Raise icon next to the person who is raising their hand. Next to the raised hand, you can choose to Megaphone them:
 
 :::image type="content" source="../media/mesh-event-producer-guide/People-panel-handraise-2412.png" alt-text="Screenshot of the people panel in the Mesh app showing a hand raise icon next to a profile in the panel.":::
 
-In a **multi-room event**, you'll see the handraise icon next to the person who is raising their hand. Next to the raised hand, you can choose to broadcast them, making their avatar visible and voice audible to all rooms in the event:
+In a **multi-room event**, you'll see the Hand Raise icon next to the person who is raising their hand. Next to the raised hand, you can choose to broadcast them, making their avatar visible and voice audible to all rooms in the event:
 
 :::image type="content" source="../Resources/media/People-panel-multi-room-2412.png" alt-text="Screenshot of multi-room scenario with hand raise icon next to their name visible and broadcast button.":::
 
