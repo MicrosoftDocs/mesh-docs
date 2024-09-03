@@ -17,7 +17,7 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
-| 2024         | August 30    | 5.2412.XX    |
+| 2024         | September 02 | 5.2412.XX    |
 | 2024         | August 19    | 5.2411.XX    |
 | 2024         | August 05    | 5.2410.XX    |
 | 2024         | July 23      | 5.2409.XX    |
@@ -39,15 +39,17 @@ Microsoft Mesh application
 
 We're excited to announce our first Mesh TAP preview of Mesh events running inside Teams!
 
+:::image type="content" source="media/Mesh-in-teams-marketing-3.png" alt-text="Screenshot of Mesh in Teams showing the Mesh app open in Teams.":::
+
 This key next step for Mesh addresses many of the top requests we've heard from you since Mesh reached GA:
 
-- Mac support: Attendees can now join Mesh events from Mac devices
+- **Mac support:** Attendees can now join Mesh events from Mac devices
 
-- No native app needed: IT admins no longer need to deploy a Mesh native app for Windows
+- **No native app needed:** IT admins no longer need to deploy a Mesh native app for Windows
 
-- Runs in web browsers: Supports the Teams web client in Edge/Chrome, in addition to the Teams desktop client
+- **Runs in web browsers:** Supports the Teams web client in Edge/Chrome, in addition to the Teams desktop client
 
-- Trust: Run your Mesh events inside Teams, the app your employees already trust for secure communication
+- **Trust:** Run your Mesh events inside Teams, the app your employees already trust for secure communication
 
 Mesh events run inside the Mesh app within Teams.  This app is available to preview now for Mesh events that you organize in any
 Mesh TAP tenant, even if your tenant runs Teams in its Public ring.  This Mesh app is the same app that has supported
