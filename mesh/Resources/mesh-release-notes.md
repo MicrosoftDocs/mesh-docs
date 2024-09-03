@@ -35,6 +35,26 @@ Microsoft Mesh application
 
 ## What's new
 
+### Mesh in Teams
+
+We're excited to announce our first Mesh TAP preview of Mesh events running inside Teams!
+
+This key next step for Mesh addresses many of the top requests we've heard from you since Mesh reached GA:
+
+- Mac support: Attendees can now join Mesh events from Mac devices
+
+- No native app needed: IT admins no longer need to deploy a Mesh native app for Windows
+
+- Runs in web browsers: Supports the Teams web client in Edge/Chrome, in addition to the Teams desktop client
+
+- Trust: Run your Mesh events inside Teams, the app your employees already trust for secure communication
+
+Mesh events run inside the Mesh app within Teams.  This app is available to preview now for Mesh events that you organize in any
+Mesh TAP tenant, even if your tenant runs Teams in its Public ring.  This Mesh app is the same app that has supported
+immersive spaces in Teams meetings since GA. What's new now is that the app is visible in the left rail of the Teams client and can be used to browse/join Mesh events.
+
+This Mesh TAP preview supports creating Mesh events using the built-in environments, Oasis and Meadow. This preview does not support other environments you upload from Unity using the Mesh Toolkit, as they will not contain a WebGL asset bundle.  We don't have anything to announce today regarding support for custom environments uploaded with the Mesh toolkit.
+
 ### Organizer tools and People panel
 
 The menu bar in the Mesh application has been reorganized to help Mesh event organizers better manage attendee participation and see who is in their Mesh event.

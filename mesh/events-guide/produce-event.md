@@ -73,7 +73,7 @@ After you've created your event, customized it, and added content to the control
 
     :::image type="content" source="../media/mesh-event-producer-guide/Device-settings-setup-before-join.png" alt-text="Device settings adjustment  inside pre-join window for Mesh event.":::
 
-Once you select **Join now**, you'll utilize two main tools, Host panel and the Control panel, for your run of show:
+Once you select **Join now**, you'll utilize two main tools, Organizer tools and the People panel, for your run of show:
 
 ### Organizer tools
 
@@ -93,7 +93,7 @@ Mute all attendees in the event. Hosts in the event can still use their mics and
 
 **Disabled:** Attendees can now use their microphone.
 
-#### Hand Raise
+#### Hand raise
 
 Enable or disable Hand Raise for participants. Hand Raise is ideal for Question and Answer scenarios. When an attendee raises their hand, there will be an indicator next to their name in the host panel and a hand raise emoji their avatar or profile bubble.
 
@@ -101,44 +101,39 @@ Enable or disable Hand Raise for participants. Hand Raise is ideal for Question 
 
 **Hand raise disabled:** Participants cannot raise their hand.
 
-When an attendee has their hand raised, you'll see the hand raise notification next to their name in the host panel and see a hand raise icon above their profile bubble.
-
-:::image type="content" source="../Resources/media/Emoji-reactions-hand-raise-multi-room.png" alt-text="Screenshot of hand raise icon above another avatars name in a multi-room event.":::
+When an attendee has their hand raised, you'll see the hand raise notification next to their name in the People panel.
 
 In a single room event, you'll also see hand raise icon above their avatar.
-
-:::image type="content" source="../media/common-event-scenarios/Event-host-Hand-raise-notifications.png" alt-text="Screenshot of Mesh app showing hand raise notification next to participant names and avatar.":::
 
 > [!TIP]
 > In multi-room events, you won't see any attendee avatars until they are broadcast.
 
 Learn how to [use Hand Raise for question and answer (Q&A) scenarios](common-event-scenarios.md#using-hand-raise-for-qa)
 
-#### Megaphone
-
-Amplify your voice to all participants in the event. A great tool when broadcasting or using a screenshare.
-
-**Megaphone and Broadcast enabled:** Host voice is amplified to all participants in all rooms.
-
-**Megaphone enabled:** Host voice is amplified to all participants in the Host's room only.
-
-**Disabled:** Host voice is not amplified.
 
 #### Megaphone or Broadcast (in multi-room events)
 
-**Enabled:** Host avatar and voice are broadcast to all rooms in the event.
-
-**Disabled:** Host avatar and voice are not broadcasted to all rooms.
-
-
-#### Broadcast or Megaphone other participants
-
-In a multi-room scenario, you'll use Broadcast to make the participant visible to all other participants. This is ideal when someone has raised their hand, as shown below:
-
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-hand-raise-2314-multi-room.png" alt-text="Hand raise and broadcast  in a multi-room Mesh event in the host panel.":::
+Amplify your voice to all participants with Megaphone and show your avatar to all participants with Broadcast. The megaphone and broadcast features are essential when leading a meeting, especially in multi-room events where you as a host are in your own room without general attendees.
 
 > [!NOTE]
 > A maximum of five people can broadcast at the same time, including host avatars and attendee avatars.
+
+**Megaphone enabled/disabled:** Choose whether your voice is amplified to all participants in all rooms.
+
+**Broadcast Enable/disabled:** Control whether or not your host avatar and voice are broadcast to all rooms in the event.
+
+
+#### Megaphone or broadcast other participants
+
+As an event organizer or host, you'll have the ability to megaphone or broadcast attendees when someone wants to ask a question, for example, or lead a presentation using the Screenshare.
+
+In a **single room event**, you'll see the handraise icon next to the person who is raising their hand. Next to the raised hand, you can choose to Megaphone them:
+
+:::image type="content" source="../media/mesh-event-producer-guide/People-panel-handraise-2412.png" alt-text="Screenshot of the people panel in the Mesh app showing a hand raise icon next to a profile in the panel.":::
+
+In a **multi-room event**, you'll see the handraise icon next to the person who is raising their hand. Next to the raised hand, you can choose to broadcast them, making their avatar visible and voice audible to all rooms in the event:
+
+:::image type="content" source="../Resources/media/People-panel-multi-room-2412.png" alt-text="Screenshot of multi-room scenario with hand raise icon next to their name visible and broadcast button.":::
 
 When you request an attendee to broadcast or megaphone, you'll receive a notification. Once you request it, the attendee will also receive the request and be able to accept or deny the option.
 
@@ -151,8 +146,6 @@ Share your screen or a specific window on your PC to all participants. Screensha
 **Enabled:** Host screen or window will be shown to all participants.
 
 **Disabled:** Host screen or window is not shown.
-
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-sharing-2314.png" alt-text="Share button in host panel":::
 
 > [!NOTE]
 > As with Microsoft Teams, an organizer will not see their active screen share. However, all non-sharing attendees will be able to see the screen share.
@@ -173,7 +166,7 @@ Share your screen or a specific window on your PC to all participants. Screensha
 
     :::image type="content" source="../media/mesh-event-producer-guide/producer-tools-sharing-stop-2314.png" alt-text="Screenshot of Mesh app showing stop sharing button in host panel.":::
 
-### People panel
+## People panel
 
 The people panel allows you to see who is in your event, and call on participants when they raise their hand. In a single room, you'll be able to megaphone or broadcast participants to make them audible (and visible in multi-room events) to all participants in the event.
 
