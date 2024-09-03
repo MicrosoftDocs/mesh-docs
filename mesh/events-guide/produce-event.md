@@ -35,7 +35,7 @@ To ensure the event runs smoothly, ensure that you customize and save customizat
 
     :::image type="content" source="../Resources/media/Organizer-tools-people-panel-multi-room-2412.png" alt-text="Screenshot of Organizer tools and People panel in the Mesh app.":::
 
-- **[People panel](#people-panel)**: The people in your event can now be found in the People panel. In this panel, you can see who has raised their hand and megaphone or broadcast (in multi-room events) them.
+- **[People panel](#people-panel)**: The people in your event can be found in the People panel. In this panel, you can see who has raised their hand and megaphone or broadcast (in multi-room events) them.
 
     **Single room events**
 
