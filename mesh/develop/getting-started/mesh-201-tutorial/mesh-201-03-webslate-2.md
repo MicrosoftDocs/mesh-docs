@@ -4,7 +4,7 @@ description: Learn how to load a local shared HTML file into a WebSlate.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/11/2024
+ms.date: 8/29/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
 ---
@@ -32,7 +32,7 @@ In the previous chapter of this tutorial, you enabled a button to load a local n
 
 ## Edit the script graph
 
-1. In the **Hierarchy**, select **LoadButton1**. In the **Inspector**, note that **LoadButton1** has a **Script Machine** component containing an embedded script named **Load HTML on a Shared Webslate** and a variable that we'll be using in the script.
+1. In the **Hierarchy**, select **LoadButton1**. In the **Inspector**, note that **LoadButton1** has a **Script Machine** component with a script attached named **LoadButtonSharedStart** and a variable that we'll be using in the script.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/035-loadbutton1-script-graph.png)
 
