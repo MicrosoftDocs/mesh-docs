@@ -19,6 +19,8 @@ Create the event in Mesh on the Web, customize it in the Microsoft Mesh app, cre
 
 [!INCLUDE [<download-apps>](<../includes/download-apps.md>)]
 
+[Get Mesh](../download-mesh-app-tools.md)
+
 ## Key capabilities of Mesh event experiences
 
 - **Single vs multiroom events:** Single room events can host up-to 16 people. For larger events, participants are grouped into 16 person rooms to provide the optimal experience for all users.
