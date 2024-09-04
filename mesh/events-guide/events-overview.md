@@ -20,7 +20,7 @@ Create the event in Mesh on the Web, customize it in the Microsoft Mesh app, cre
 [!INCLUDE [<download-apps>](<../includes/download-apps.md>)]
 
 > [!div class="nextstepaction"]
-> [Get Mesh](../download-mesh-app-tools.md)
+> [Experience Microsoft Mesh](../download-mesh-app-tools.md)
 
 ## Key capabilities of Mesh event experiences
 
