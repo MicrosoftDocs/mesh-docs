@@ -19,8 +19,8 @@ The overall flow of creating an event in Mesh on the web is:
 1. Select **Create event** in the top right.
 1. Add the **Title**, **Date/Duration**, and **Details about the event**.
 1. Choose your room settings like:
-    1. **Single room** (up to 16 people, 24-hour time limit)
-    1. **Multi-room** (up to 200 people, hosts are grouped in one room, 3-hour time limit)
+    1. **Single room**
+    1. **Multi-room**
 1. Invite people:
     1. **Co-organizers** (People to help set up and run the event)
     1. **Attendees** (People to join the event)
@@ -32,10 +32,19 @@ The overall flow of creating an event in Mesh on the web is:
 
 ## Considerations before your event
 
-- **Single room events (16 people max)**: 24-hour time limit.
-- **Multi-room events (200 people max)**: 3-hour time limit.
-  - Hosts are grouped into a separate room (up-to 16 hosts + 200 attendees)
-- **Customize and save edits at least 30 minutes** before your event to ensure the event runs smoothly.
+- **Single room events:**
+    - Capacity: 16 people
+    - Time limit: 24-hours
+    - Events can be rejoined from the Mesh Dashboard or via the link created for the event
+
+- **Multi-room events:**
+    - Capacity: 330 people
+    - Time limit: 3-hours
+    - Events can be rejoined from the Mesh Dashboard or via the link created for the event
+    - Hosts are grouped into their own room and attendees are grouped into 16 person rooms
+  - Hosts are grouped into a separate room (up-to 16 hosts + up-to 330 attendees)
+
+- **Customize and save edits at least 30 minutes** before your event to ensure the event runs smoothly
 
 ## Create an event
 
