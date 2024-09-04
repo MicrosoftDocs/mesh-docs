@@ -17,11 +17,21 @@ keywords: Microsoft Mesh, Producing, M365, events, hosting, event producer, even
 
 To ensure the event runs smoothly, ensure that you customize and save customizations at least 30 minutes before the event start time.
 
-### Event capacity
+#### Capacity and event type considerations
 
-- 330 attendees per event
-- 16 attendees per room
-- Up to 16 hosts in a separate room, additional to the 200 attendees
+**Single room events:**
+
+- Capacity: 16 people
+- Time limit: 24-hours
+- Events can be rejoined from the Mesh Dashboard or via the join link created for the event
+
+**Multi-room events:**
+
+- Capacity: 330 people
+- Time limit: 3-hours
+- Events can be rejoined from the Mesh Dashboard or via the join link created for the event
+- Co-organizers are in their own room and attendees are grouped into 16 person rooms
+
 
 ## Event Producers tools
 
