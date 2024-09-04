@@ -17,6 +17,7 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | September 02 | 5.2412.XX    |
 | 2024         | August 19    | 5.2411.XX    |
 | 2024         | August 05    | 5.2410.XX    |
 | 2024         | July 23      | 5.2409.XX    |
@@ -29,6 +30,61 @@ Microsoft Mesh application
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2412.XX
+
+## What's new
+
+### Mesh in Teams
+
+We're excited to announce our first Mesh TAP preview of Mesh events running inside Teams!
+
+:::image type="content" source="media/Mesh-in-teams-marketing-3.png" alt-text="Screenshot of Mesh in Teams showing the Mesh app open in Teams.":::
+
+This key next step for Mesh addresses many of the top requests we've heard from you since Mesh reached GA:
+
+- **Mac support:** Attendees can now join Mesh events from Mac devices
+
+- **No native app needed:** IT admins no longer need to deploy a Mesh native app for Windows
+
+- **Runs in web browsers:** Supports the Teams web client in Edge/Chrome, in addition to the Teams desktop client
+
+- **Trust:** Run your Mesh events inside Teams, the app your employees already trust for secure communication
+
+Mesh events run inside the Mesh app within Teams.  This app is available to preview now for Mesh events that you organize in any
+Mesh TAP tenant, even if your tenant runs Teams in its Public ring.  This Mesh app is the same app that has supported
+immersive spaces in Teams meetings since GA. What's new now is that the app is visible in the left rail of the Teams client and can be used to browse/join Mesh events.
+
+This Mesh TAP preview supports creating Mesh events using the built-in environments, Oasis and Meadow. This preview does not support other environments you upload from Unity using the Mesh Toolkit, as they will not contain a WebGL asset bundle.  We don't have anything to announce today regarding support for custom environments uploaded with the Mesh toolkit.
+
+### Organizer tools and People panel
+
+The menu bar in the Mesh application has been reorganized to help Mesh event organizers better manage attendee participation and see who is in their Mesh event.
+
+1. **Organizer tools**: Mute all, enable/disable Handraise, Megaphone, Screenshare, and Broadcast (for Multi-room events) are all located in the left Organizer tools button in the Menu bar.
+
+    **Single room events**
+
+    :::image type="content" source="media/Organizer-tools-people-panel-single-room-2412.png" alt-text="Screenshot of the organizer tools and people panel in the Mesh app.":::
+
+    **Multi-room events**
+
+    :::image type="content" source="media/Organizer-tools-people-panel-multi-room-2412.png" alt-text="Screenshot of Organizer tools and People panel in the Mesh app.":::
+
+1. **People panel**: The people in your event can now be found in the People panel. In this panel, you can see who has raised their hand and megaphone or broadcast (in multi-room events) them.
+
+    **Single room events**
+
+    :::image type="content" source="media/People-panel-single-room-2412.png" alt-text="Screenshot of the Mesh app showing the people panel in a single room event.":::
+
+    **Multi-room events**
+    For Multi-room events, you'll be able to switch between the People tab and the Additional rooms tab
+
+    :::image type="content" source="media/People-panel-multi-room-2412.png" alt-text="Screenshot of Mesh app showing the people panel expanded in a multi-room event.":::
+
+### Larger events supported
+
+Multi-room events now support up-to 330 people, up from the previous limit of 200.
 
 ## Version 5.2411.XX
 
@@ -110,7 +166,7 @@ An event host could display Microsoft Whiteboard, for example:
 
 * We now support up to five broadcasters in multi-room events, up from the previous limit of three. With this change, more people can engage across rooms, including hosts that broadcast themselves or attendees who raise their hand.
 
-    For more info, see [how to Broadcast when producing an event](../events-guide/produce-event.md#broadcast).
+    For more info, see [how to Broadcast when producing an event](../events-guide/produce-event.md#megaphone-or-broadcast-in-multi-room-events).
 
 * Event hosts can call on attendees from the Host panel when attendees raise their hand to directly to start broadcasting them.
 

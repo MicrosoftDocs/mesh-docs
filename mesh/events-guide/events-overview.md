@@ -15,9 +15,12 @@ Events experiences in Microsoft Mesh can vary widely—in their look, feel, and 
 
 Create the event in Mesh on the Web, customize it in the Microsoft Mesh app, create a template to reuse your customizations in the future, and use the powerful suite of tools to produce it.
 
-## Download Mesh apps
+## Get Mesh
 
-[!INCLUDE [<download-apps>](<../includes/download-apps.md>)]
+Ensure you have Mesh for your device(s).
+
+> [!div class="nextstepaction"]
+> [Get Mesh](../download-mesh-app-tools.md)
 
 ## Key capabilities of Mesh event experiences
 
@@ -41,7 +44,7 @@ Events in Mesh should be familiar to most organizations that work with Microsoft
 
 1. **[Create an event in Mesh on the Web](create-event-mesh-portal.md):** Start with Mesh on the Web to create or edit your event, invite participants, and manage Mesh worlds.
 
-1. **[Customize and save the event experience in the Mesh app](customize-event.md):** Customize your event at least 30 minutes before the start time to add text, video, and/or screenshare objects and prepare your environment for your event.
+1. **[Customize and save the event experience in Mesh](customize-event.md):** Customize your event at least 30 minutes before the start time to add text, video, and/or screenshare objects and prepare your environment for your event.
 
 1. **[Create Template](create-template.md) (Optional):** Save your customizations in a Template to be reused in future events.
 
@@ -79,9 +82,9 @@ To learn how, see [Create Template](create-template.md).
 
 ## Produce your event
 
-When it's time for your event, join in Mesh and [leverage a set of host tools](produce-event.md#event-producers-tools) accessed via the Menu bar (seen below) to interact with participants, and curate your event experience.
+When it's time for your event, join in Mesh and [leverage the Organizer tools](produce-event.md#event-producers-tools) accessed via the Menu bar (seen below) to interact with participants, and curate your event experience.
 
-:::image type="content" source="../media/mesh-event-producer-guide/host-panel-menu-bar-2314.png" alt-text="Host panel button to see participant list and tools":::
+:::image type="content" source="../Resources/media/Organizer-tools-people-panel-multi-room-2412.png" alt-text="Screenshot of the organizer tools in the Mesh app showinig the organizer tools highlighted.":::
 
 > [!div class="nextstepaction"]
 > [Produce your event](create-event-mesh-portal.md)

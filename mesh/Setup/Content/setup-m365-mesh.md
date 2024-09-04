@@ -17,11 +17,11 @@ This article covers how to setup and deploy the Microsoft Mesh from an IT perspe
 
 ## Prerequisites
 
-[!INCLUDE [Include file for the immersive spaces in Mesh article](../../Includes/license-requirements-for-Mesh.md)]
+Before you configure access to Mesh using service plans, we recommend you:
 
-For help, see the [immersive spaces in mesh licensing Troubleshooting and FAQs](../../Resources/mesh-troubleshooting.md#what-are-the-license-requirements-for-immersive-spaces-in-mesh).
+1. Review the [license and policy requirements](preparing-your-organization.md#verify-your-licenses-and-policies).
 
-[!INCLUDE [Include file for the custom immersive spaces ports and firewall requirements in Mesh article](../../Includes/custom-immersive-spaces-ports-firewall.md)]
+1. Review the [endpoints and firewall configuration steps](preparing-your-organization.md#endpoints-and-firewall-configuration).
 
 ## Configure access to Mesh using service plans
 
