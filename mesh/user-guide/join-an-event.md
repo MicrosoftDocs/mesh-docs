@@ -11,23 +11,33 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 # Join an Event
 
-There are three ways for you to join an event in Immersive space in Microsoft Mesh:
+The three entrypoints that you can use to join a Mesh event are:
 
-1. Microsoft Outlook or Teams meeting invites on your calendar
-1. The Microsoft Mesh application on PC or Quest
-1. Mesh on the web: https://portal.mesh.microsoft.com/ 
+1. **Mesh app for Windows** (**Windows PC**)
+1. **Mesh app for Meta Quest VR device** (**VR**)
+1. **Mesh app in Teams** (**Windows PC** or **Mac**)
 
-# [PC](#tab/pc)
+You can open these apps to find your event or use the meeting invite link for the Mesh event in your Outlook or Microsoft Teams calendar.
 
-## Join from Microsoft Outlook and Teams
+Need to get Mesh for your device(s)?
+
+> [!div class="nextstepaction"]
+> [Get Mesh](../download-mesh-app-tools.md)
+
+## [Windows](#tab/Windows)
+
+## Join using Microsoft Outlook and Teams
 
 You can easily find Mesh events right within your daily Outlook and Teams calendars without needing to go to another place to see and join the events.
 
 ![Animation of joining a Mesh event from Outlook or Teams calendar](media/mesh-entry-points.gif)
 
-## Join from Microsoft Mesh on PC
+> [!NOTE]
+> For Mesh TAP participants, we are rolling out the option to choose how you'd like to open Mesh: Use the Mesh app in Teams or the Mesh app for Windows.
 
-In the Mesh app on PC or Quest, you can attend social gatherings, conferences, and all-hands events all within a wide selection of Environments. In these events, you can view content, interact with physical objects, and meet or network with your colleagues.s
+### Join using the Mesh app for Windows
+
+In the Mesh app on PC or Quest, you can attend social gatherings, conferences, and all-hands events all within a wide selection of Environments. In these events, you can view content, interact with physical objects, and meet or network with your colleagues.
 
 Follow the steps below to see a list of events and join an event.
 
@@ -56,39 +66,50 @@ Follow the steps below to see a list of events and join an event.
 
     ![A screenshot of the audio device test dialog that can be accessed from the prejoin screen](media/audio-device-test-ui.png)
 
-    >[!Note] 
-    >In the Mesh app on PC, the Windows default speaker will always be used by Mesh. You can change the speaker settings in the Windows **Settings** -\> **System** -\> **Sound settings** dialog box.
+## [Quest](#tab/Quest)
 
-    Learn more about frequently asked questions related to audio in Mesh [here](../Resources/mesh-troubleshooting.md#audio-setup-in-mesh-faq).
+### Join using Microsoft Mesh on Meta Quest devices
 
-# [Quest](#tab/quest)
+If you're running the Mesh app on Quest, you can use the **Dashboard** shown below to find and join your Teams events.
 
-## Join from Microsoft Mesh on Quest 2
+1. If you don't have the Microsoft Mesh app on your device, [download Microsoft Mesh on Meta Quest | Meta Store](https://aka.ms/MeshDownloadQuest).
 
-If you're running the Mesh app on Quest, you can use the **Dashboard**
-shown below to find and join your Teams events.
+1. Open the Mesh app on your Meta Quest VR device or search for Mesh and download the app from the Quest store.
 
-1. Open the Mesh app on Quest 2.
+1. Log in with your corporate email account.
 
-2. Log in with your corporate email account.
-
-3. Select the **Dashboard** by clicking on the systems bubble on the lower left of your view.
+1. Select the **Dashboard** by clicking on the systems bubble on the lower left of your view.
 
     ![A screenshot of the Mesh dashboard on Quest](media/mesh-dashboard.png)
 
-4. Click on any of the events to **View event details**, or select **Join**.
+1. Click on any of the events to **View event details**, or select **Join**.
 
-Go through the Mesh pre-join screen to setup/select/customize your avatar and select **Join** when ready.
+## [Teams](#tab/Teams)
+
+### Join using the Mesh app in Teams (Windows or Mac)
+
+> [!IMPORTANT]
+> We're excited to introduce the Mesh app in Microsoft Teams, bringing Mesh closer to where you do your day to day work. Currently, the Mesh app in Teams only available to organizations in [Mesh TAP](../develop/mesh-tap-participants.md).
+
+To join a Mesh event using the Mesh app in Teams:
+
+1. Open Microsoft Teams.
+1. In the left nav, select the **...** more apps button to search for Microsoft Mesh
+
+    :::image type="content" source="../media/welcome-to-mesh/Open-mesh-app-in-teams-2.png" alt-text="Screenshot of Microsoft Teams showing how to search for the Mesh app in Teams.":::
+
+1. Search for **Mesh** and select the app to open it.
+1. Mesh will open in a separate window that can be moved to your preferred area or monitor.
+
+    :::image type="content" source="media/Mesh-app-in-teams-marketing.png" alt-text="Screenshot of the  Mesh app in Teams showing the Mesh app open in the Teams application with the words Join Mesh events in Teams with the Mesh app.":::
 
 ---
 
 ## Enjoy your event
 
-You can now view content, communicate with other users, listen to guests speaking, emote, and take selfies.
+You can now view content, communicate with other users, listen to guests speaking, use emojis or dance, and take selfies.
 
-You can interact with any games, puzzles, or interactive elements in the event environment.
-
-![an image of the Meadows meeting space](media/the-meadows-meeting-space.png)
+Try interacting with any games or interactive elements in the event environment and enjoy!
 
 ## Next steps
 
