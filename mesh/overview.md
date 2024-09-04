@@ -56,7 +56,7 @@ Getting started is easy! From the **View menu** in a Teams meeting, select the *
 
 ## Host or join Mesh events
 
-Use the Microsoft Mesh app for medium-to-large events with up to 200 people. Create custom experiences that are tailored to your specific business needs, such as employee events, training, guided tours, or internal product showcases.
+Use the Microsoft Mesh app for medium-to-large events with up to 330 people. Create custom experiences that are tailored to your specific business needs, such as employee events, training, guided tours, or internal product showcases.
 
 Deliver dazzling immersive experiences that can be experienced on your computer or Meta headsets. You can start with ready-to-use environments or develop your own custom environments using Unity and the Mesh toolkit. You can then use no-code customization to enhance your events with images, videos, or screen shares.
 
@@ -73,7 +73,7 @@ Deliver dazzling immersive experiences that can be experienced on your computer 
 #### Get started with Mesh events
 
 > [!div class="nextstepaction"]
-> [Experience Mesh](download-mesh-app-tools.md)
+> [Get started with Mesh events](download-mesh-app-tools.md)
 
 ## Develop custom immersive experiences in Mesh
 
