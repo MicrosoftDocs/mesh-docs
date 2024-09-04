@@ -3,7 +3,7 @@ items:
     href: Content/preparing-your-organization.md
   - name: IT admin-led trial for Mesh
     href: Content/it-admin-led-trials.md
-  - name: Mesh setup for admins
+  - name: Configure Mesh
     href: Content/setup-m365-mesh.md
   - name: Manage Mesh collections
     href: Content/manage-mesh-on-web.md
