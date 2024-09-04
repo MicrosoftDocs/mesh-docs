@@ -15,7 +15,7 @@ Events experiences in Microsoft Mesh can vary widely—in their look, feel, and 
 
 Create the event in Mesh on the Web, customize it in the Microsoft Mesh app, create a template to reuse your customizations in the future, and use the powerful suite of tools to produce it.
 
-## Download Mesh apps
+## Get Mesh
 
 [!INCLUDE [<download-apps>](<../includes/download-apps.md>)]
 
