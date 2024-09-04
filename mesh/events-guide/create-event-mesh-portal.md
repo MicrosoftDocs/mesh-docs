@@ -4,7 +4,7 @@ description: Guide to creating an event or template in Mesh using Mesh on the We
 ms.service: mesh
 author: typride
 ms.author: tmilligan
-ms.date: 1/11/2024
+ms.date: 09/04/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh on Web, M365, events, hosting, event producer, event organizer
 ---
