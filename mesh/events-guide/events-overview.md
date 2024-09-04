@@ -79,7 +79,7 @@ To learn how, see [Create Template](create-template.md).
 
 ## Produce your event
 
-When it's time for your event, join in Mesh and [leverage a set of host tools](produce-event.md#event-producers-tools) accessed via the Menu bar (seen below) to manage participants, and curate your event experience.
+When it's time for your event, join in Mesh and [leverage a set of host tools](produce-event.md#event-producers-tools) like Mute all, Hand Raise, Megaphone, Broadcast, and Screenshare accessed via the Menu bar (seen below) to manage participants, and curate your event experience.
 
 :::image type="content" source="../media/mesh-event-producer-guide/Organizer-tools-single-room-2412.png" alt-text="Screenshot of organizer tools in a Mesh event for single room.":::
 
