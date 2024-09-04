@@ -41,8 +41,7 @@ The overall flow of creating an event in Mesh on the web is:
     - Capacity: 330 people
     - Time limit: 3-hours
     - Events can be rejoined from the Mesh Dashboard or via the link created for the event
-    - Hosts are grouped into their own room and attendees are grouped into 16 person rooms
-  - Hosts are grouped into a separate room (up-to 16 hosts + up-to 330 attendees)
+    - Co-organizers are in their own room and attendees are grouped into 16 person rooms
 
 - **Customize and save edits at least 30 minutes** before your event to ensure the event runs smoothly
 
