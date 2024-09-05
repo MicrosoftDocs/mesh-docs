@@ -24,13 +24,11 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview of Microsoft Mesh
-            url: develop/design/overview.md
-      - linkListType: video
-        links:
           - text: Introducing Microsoft Mesh
             url: https://aka.ms/MeshAdoptionMaterials
-
+          - text: Overview of Microsoft Mesh
+            url: overview.md
+          
   # Card
   - title: Immersive spaces in Teams & avatars
     linkLists:
