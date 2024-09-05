@@ -4,7 +4,7 @@ description: Learn how to create grab, hold, and throw interactions between avat
 ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 6/27/2024
+ms.date: 9/4/2024
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation
 ---
@@ -24,7 +24,7 @@ To make an object interactable, you must add the *Mesh Interactable Setup* compo
 
 ![A screen shot of the Add Component dialog with the Mesh Interactable Setup component select.](../../../media/enhance-your-environment/object-player-interactions/015-interactable-add-component.png)
 
-The component is added and with its default **Object Type** property set to **Interactable**. (Object types will be explained in the next section.)
+The component is added with its default **Interactable Type** property set to **Basic**. (Object types will be explained in the next section.)
 
 ![A screen shot of the Mesh Interactable Setup component with Object Type set to Interactable.](../../../media/enhance-your-environment/object-player-interactions/009-interactables-common-settings.png)
 
@@ -42,19 +42,19 @@ The properties for a group of objects that all behave the same can be set up wit
 
 There are four object types:
 
-- Interactable  
+- Basic  
 - Manipulable  
 - Equippable  
 - Throwable  
 
 **To choose an object type**:
-- In the **Mesh Interactable Setup** component, click the **Object Type** drop-down and then select one of the four options.
+- In the **Mesh Interactable Setup** component, click the **Interactable  Type** drop-down and then select one of the four options.
 
 ![A screen shot of the Object Type menu options in the Mesh Interactable Body component.](../../../media/enhance-your-environment/object-player-interactions/014-interactables-object-type-drop-down.png)
 
-### Interactable
+### Basic
 
-As mentioned above, this is the default type and the most basic one. It gives you access to callbacks that can be invoked when the user hovers over or selects the object that you can have other scripts react to. For example, if you have a button that you want to use to enable another object, add this type to the object with an *OnSelected* callback to enable that other object. The button will be fully interactable just by adding this type and a collider; you won't have to do anything else. 
+As mentioned above, this is the default type. When the user hovers over or selects the object, it can invoke callbacks and other scripts can react.  For example, if you have a button that you want to use to enable another object, add this Interactable type to the button with an *OnSelected* callback to enable that other object. The button will be fully interactable just by adding this type and a collider; you won't have to do anything else. 
 
 ### Manipulable
 
@@ -64,7 +64,7 @@ An object of this type can have its transform manipulated at runtime and will mo
 
 ### Equippable
 
-An object of this type will attach to your avatar's hand. The PC controls for equip are clicking the object or pressing ‘F' while the object is selected. The Quest controls for equip are pressing the 'Grip' button while the object is selected. Equippable objects contain settings for IK targets for your avatar's arm pose while the object is equipped. The IK targets are an offset from the avatar's chest; this determines where the hand goes while the object is held or activated.
+An object of this type will attach to your avatar's hand. The PC controls for equip are clicking the object or pressing <kbd>F</kbd> while the object is selected. The Quest controls for equip are pressing the 'Grip' button while the object is selected. Equippable objects contain settings for IK targets for your avatar's arm pose while the object is equipped. The IK targets are an offset from the avatar's chest; this determines where the hand goes while the object is held or activated.
 
 ### Throwable
 
