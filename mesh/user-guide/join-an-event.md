@@ -101,7 +101,7 @@ To join a Mesh event using the Mesh app in Teams:
 1. Search for **Mesh** and select the app to open it.
 1. Mesh will open in a separate window that can be moved to your preferred area or monitor.
 
-    :::image type="content" source="media/Mesh-app-in-teams-marketing.png" alt-text="Screenshot of the  Mesh app in Teams showing the Mesh app open in the Teams application with the words Join Mesh events in Teams with the Mesh app.":::
+    :::image type="content" source="media/Mesh-app-in-teams-open-in-Microsoft-teams.png" alt-text="Screenshot of Mesh app in Teams.":::
 
 ---
 

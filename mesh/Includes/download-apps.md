@@ -18,7 +18,7 @@ To make your Teams meetings immersive, learn how to get started with immersive s
 > [Get started with Immersive spaces in Teams](https://support.microsoft.com/en-us/office/get-started-with-immersive-spaces-in-microsoft-teams-4a6182f8-0f43-4c24-bb66-ef229fa221d8)
 
 ## Host or join Mesh events
-To join Mesh events with up-to 200 people and leverage host tools for experiences like town-halls, onboarding, or all-hands in your uploaded environments, use Mesh for your device or the Mesh app in Teams.
+To join Mesh events with up-to 330 people and leverage host tools for experiences like town-halls, onboarding, or all-hands in your uploaded environments, use Mesh for your device or the Mesh app in Teams.
 
 | **App & Device**                | **Download**                                                                    |
 |---------------------------------|---------------------------------------------------------------------------------|
