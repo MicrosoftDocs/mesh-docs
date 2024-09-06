@@ -3,7 +3,7 @@ title: Mesh 201 Pt. 2':' Load a local non-shared HTML file into a WebSlate
 description: Learn about loading a local non-shared HTML file into a WebSlate.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/29/2024
+ms.date: 9/6/2024
 ms.topic: tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
@@ -57,7 +57,7 @@ Now that you're all set up and have had a chance to try out the project, let's m
 
 1. In the **Hierarchy**, expand the **WebSlateFramed** prefab.
 1. Select the child object of **WebSlateFramed** named **WebSlate**.
-1. In the **Inspector**, navigate to the **WebSlate** component and note that the **Current URL** property (the default URL or the WebSlate) is set to the home page for all of Microsoft.
+1. In the **Inspector**, navigate to the **WebSlate** component and note that the **Current URL** property (the default URL for the WebSlate) is set to the home page for all of Microsoft.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/029-default-url.png)
 
