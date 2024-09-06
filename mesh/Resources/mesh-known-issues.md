@@ -24,6 +24,10 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
   * Some text that is shown as users launch the Mesh app may not yet be localized into languages other than English.
   * Outgoing screenshare is not currently supported.
 
+* **Organizers**
+
+  * Image/Video objects cannot reference SharePoint URLs at the moment.
+
 ## Version 5.2403.0 (April 18, 2024)
 
 * Single room and multi-room events require the same firewall endpoint and port configurations. We are actively working to resolve this issue and apologize for any inconvenience.
