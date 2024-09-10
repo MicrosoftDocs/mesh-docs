@@ -85,6 +85,10 @@ After you've created your event, customized it, and added content to the control
 
 Once you select **Join now**, you'll utilize two main tools, Organizer tools and the People panel, for your run of show:
 
+## Produce your event
+
+Use the organizer tools to access the tools that you'll use to help run your event like the Mute, Hand raise, Megaphone and/or Broadcast, and Share features.
+
 ### Organizer tools
 
 #### Organizer tools in a single room event
@@ -119,7 +123,6 @@ In a single room event, you'll also see hand raise icon above their avatar.
 > In multi-room events, you won't see any attendee avatars until they are broadcast.
 
 Learn how to [use Hand Raise for question and answer (Q&A) scenarios](common-event-scenarios.md#using-hand-raise-for-qa)
-
 
 #### Megaphone or Broadcast (in multi-room events)
 
@@ -163,19 +166,13 @@ Share your screen or a specific window on your PC to all participants. Screensha
 
 **How to screenshare:**
 
-1. Select the **Screenshare** button in the menu bar at the top.
+1. Open the **Organizer tools** in the menu bar and select the Share button.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Event-production-screenshare-button-pushed.png" alt-text="Screenshot of Mesh app, host panel open, screenshare selected.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Screenshare-single-room-2412.png" alt-text="Screenshot of single room event showing the Share button highlighted.":::
 
 1. Select the monitor screen or window that you want to share.
 
-1. You will have two notifications visible to indicate that you are screensharing.
-
-    :::image type="content" source="../media/mesh-event-producer-guide/Screenshare-alerts-shown.png" alt-text="Screenshot of Mesh app showing alerts for screenshare.":::
-
-1. Exit or stop sharing your screen by selecting the Share button again at the top of host panel.
-
-    :::image type="content" source="../media/mesh-event-producer-guide/producer-tools-sharing-stop-2314.png" alt-text="Screenshot of Mesh app showing stop sharing button in host panel.":::
+1. Exit or stop sharing your screen by selecting the Share button again in the **Organizer tools**.
 
 ## People panel
 
