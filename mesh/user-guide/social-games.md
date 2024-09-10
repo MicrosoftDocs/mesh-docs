@@ -11,22 +11,25 @@ keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, docu
 
 # Social games and activities
 
-Play built-in social games and interactive activities for team bonding in Mesh immersive spaces. We offer several sample environments that come with built-in games and activities. 
+Immersive experiences provide a unique opportunity to bond, collaborate, and play similar to how we would in real life without having to physically be together.
 
 ![A screenshot of a team gathered around a science museum exhibit](media/social-games-hero-image.jpg)
 
-Currently the default environments that come with Immersive spaces in Mesh do not offer social games and activities. You will need one of the following to try out some of the activities:
+Try out an Immersive space (3D) in Microsoft Teams or create your own activities for the Mesh app by exploring the samples like the Toybox environment.
 
-- Join the Lake house environment in the immersive space in Teams from a Teams meeting.  For more information, see the [Social games and activities](https://support.microsoft.com/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games) section in the Immersive spaces in Teams documentation.
+## Activities in Immersive spaces in Teams
 
-- Upload and deploy a sample environment from Mesh that has interactive games built-in.  See the [Samples overview](/mesh/develop/getting-started/samples/samples-overview) for a list of Mesh samples.
+Join the Lakehouse environment in the immersive space in Teams from a Teams meeting.  For more information, see the [Social games and activities](https://support.microsoft.com/office/use-in-meeting-controls-for-immersive-spaces-in-microsoft-teams-ccf689d0-b47e-4e11-9eff-2ca0ce87f422#bkmk_social_games) section in the Immersive spaces in Teams documentation.
 
-    >[!Note]
-    >This option assumes that you have gone through the steps outlined in the [Mesh Development Overview](/mesh/develop/development-overview) to build and deploy Mesh sample environments.
+## Create your own activities for Mesh events
 
-Some social games and activities from the Mesh sample environments are covered in detail here.
+Explore what's possible with the samples provided by Microsoft! Try out the various social scenario activities in the Toybox environment or walk around the Science Building to see the science exhibits.
 
-## The Toybox sample
+### Explore the samples
+
+We cover a few examples of the activities found in the samples. For more detail, see the [Samples overview](/mesh/develop/getting-started/samples/samples-overview).
+
+#### The Toybox sample
 
 ![the Toybox sample environment](media/toybox-environment.png)
 
@@ -68,7 +71,7 @@ The Toybox sample environment comes with a number of activities to drive social 
 
     ![A screenshot of the Astronaut game](media/astronaut.png)
 
-## The Science Building
+#### The Science Building
 
 The *ScienceBuilding* project provides many fun-filled and interactive exhibits for you to explore Mesh physics games.
 

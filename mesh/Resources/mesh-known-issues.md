@@ -11,6 +11,23 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 # Active known issues - Mesh
 
+## Mesh app in Teams (August 12, 2024)
+
+> [!IMPORTANT]
+> Currently, the Mesh app in Teams only available to organizations in [Mesh TAP](../develop/mesh-tap-participants.md).
+
+ We're excited to introduce the Mesh app in Teams to our Mesh TAP participants and appreciate your understanding as we work through the issues and limitations listed below:
+
+* **Attendees**
+
+  * Audio device selection does not inherit automatically from Teams.
+  * Some text that is shown as users launch the Mesh app may not yet be localized into languages other than English.
+  * Outgoing screenshare is not currently supported.
+
+* **Organizers**
+
+  * Image/Video objects cannot reference SharePoint URLs at the moment.
+
 ## Version 5.2403.0 (April 18, 2024)
 
 * Single room and multi-room events require the same firewall endpoint and port configurations. We are actively working to resolve this issue and apologize for any inconvenience.
