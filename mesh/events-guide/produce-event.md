@@ -143,7 +143,7 @@ Share your screen or a specific window on your PC to all participants. Screensha
 
 **Disabled:** Host screen or window is not shown.
 
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-sharing-2314.png" alt-text="Share button in host panel":::
+s:::image type="content" source="../media/mesh-event-producer-guide/Screenshare-single-room-2412.png" alt-text="Screenshot of single room event showing the Share button highlighted.":::
 
 > [!NOTE]
 > As with Microsoft Teams, an organizer will not see their active screen share. However, all non-sharing attendees will be able to see the screen share.
