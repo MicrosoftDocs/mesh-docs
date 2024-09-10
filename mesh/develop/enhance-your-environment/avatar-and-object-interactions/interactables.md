@@ -4,7 +4,7 @@ description: Learn how to create grab, hold, and throw interactions between avat
 ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 9/4/2024
+ms.date: 9/6/2024
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation
 ---
@@ -54,7 +54,9 @@ There are four object types:
 
 ### Basic
 
-As mentioned above, this is the default type. When the user hovers over or selects the object, it can invoke callbacks and other scripts can react.  For example, if you have a button that you want to use to enable another object, add this Interactable type to the button with an *OnSelected* callback to enable that other object. The button will be fully interactable just by adding this type and a collider; you won't have to do anything else. 
+As mentioned above, this is the default type. When the user hovers over or selects the object, it can invoke callbacks and other scripts can react.  For example, if you have a button that you want to use to enable another object, add this Interactable type to the button with an *OnSelected* callback to enable that other object. The button will be fully interactable just by adding this type and a collider; you won't have to do anything else.
+
+[Learn more about Basic object type settings](./interactable-setup-types/basic-setup.md)
 
 ### Manipulable
 
@@ -62,21 +64,25 @@ An object of this type can have its transform manipulated at runtime and will mo
 
 ![A screen shot of a Mesh experience with a coffee pot being manipulated.](../../../media/enhance-your-environment/object-player-interactions/017-manipulable-coffeepot.png)
 
+[Learn more about Manipulable object type settings](./interactable-setup-types/manipulable-setup.md)
+
 ### Equippable
 
-An object of this type will attach to your avatar's hand. The PC controls for equip are clicking the object or pressing <kbd>F</kbd> while the object is selected. The Quest controls for equip are pressing the 'Grip' button while the object is selected. Equippable objects contain settings for IK targets for your avatar's arm pose while the object is equipped. The IK targets are an offset from the avatar's chest; this determines where the hand goes while the object is held or activated.
+An object of this type will attach, or "equip itself", to your avatar's hand. To equip can object on the PC, click the object or press <kbd>F</kbd> while the object is selected. To equip the object on the Quest, press the 'Grip' button while the object is selected. Equippable objects contain settings for IK targets for your avatar's arm pose while the object is equipped. The IK targets are an offset from the avatar's chest; this determines where the hand goes while the object is held or activated.
+
+[Learn more about Equippable object type settings](./interactable-setup-types/equippable-setup.md.md)
 
 ### Throwable
 
-As the name implies, you can grab and throw an object of this type. After grabbing, you can enter into aim mode by pressing and holding the left mouse button. This will allow your avatar's arm to follow your mouse target; to throw the object, release the left mouse button.
+As the name implies, you can grab and throw an object of this type. After grabbing, you can enter *aim mode* by pressing and holding the left mouse button. This will allow your avatar's arm to follow your mouse target; to throw the object, release the left mouse button.
 
 ![A screen shot of a dart game with a dart grabbed and read to be thrown.](../../../media/enhance-your-environment/object-player-interactions/018-throwable-dart.png)
 
-All the Interactables components have interaction properties and methods available to Visual Scripting so you have an unlimited amount of ways to make them work together. 
+[Learn more about Throwable object type settings](./interactable-setup-types/throwable-setup.md)
 
 ## Make objects interactable with Visual Scripting
 
-If you want to set up reactions to an object's interactions with [Visual Scripting](../../script-your-scene-logic/visual-scripting/visual-scripting-overview.md), you can make use of the *Mesh Interactable Body* component inside a script graph with a node to an available property, such as *OnHovered* or *OnSelected*, hooked up to an *OnStateChanged* node. For example, the following script graph will enable the cylinder while the button is pressed and disable it when the button is released. The button is fully interactable just by adding the script and a collider; you don't have to do anything else.
+All the Interactables components have interaction properties and methods available to [Visual Scripting](../../script-your-scene-logic/visual-scripting/visual-scripting-overview.md) so you have an unlimited amount of ways to make them work together. To take advantage of this, use the *Mesh Interactable Body* component inside a script graph with a node to an available property, such as *OnHovered* or *OnSelected*, hooked up to an *OnStateChanged* node. For example, the following script graph will enable the cylinder while the button is pressed and disable it when the button is released. The button is fully interactable just by adding the script and a collider; you don't have to do anything else.
 
 ![A screen shot of a script graph with a Mesh Interactable body Is Selected node.](../../../media/enhance-your-environment/object-player-interactions/Picture10.png)
 
