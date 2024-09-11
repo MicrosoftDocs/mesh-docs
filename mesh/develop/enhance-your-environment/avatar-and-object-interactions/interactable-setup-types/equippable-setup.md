@@ -13,15 +13,24 @@ keywords: Microsoft Mesh, object and player interactions, interactables, manipul
 
 ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/003-interactable-setup-equippable.png)
 
+## Terminology
+
+In this article, "hover" means "when the cursor (PC or Mac) or controller pointer (Quest) is over the object."
+
 ## Interaction Settings
 
-- **Interaction Range**: Furthest distance the avatar can be to interact with this object.
+- **Interaction Range**: Furthest distance, in meters, the avatar can be to interact with this object.
 
-- **Aim IK arm on Hover**:
+- **Aim IK arm on Hover**: Whether or not the avatar's arm will reach towards the object while hovering using IK targeting.
 
-- **Hover Hand Pos**: TBD
+- **Hover Hand Pos**: The hand pose shape to put the avatar's hand into when hovering over the object.
 
     ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/002-hover-hand-position.png)
+
+    For example, if you choose *Pinch*, when the avatar reaches for the object, its hand will assume the pinch position.
+
+    ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/007-hand-hover-pinch.png)
+
 
 ## Highlight Settings
 
@@ -53,17 +62,57 @@ keywords: Microsoft Mesh, object and player interactions, interactables, manipul
 
 ## Object Positioning
 
-- **Position** and **Rotation**: The position and rotation offset relative to the avatar's hand to place the object. (TBD--this is a little different from the previous version. Verify with SMEs.)
+- **Position** and **Rotation**: Use these settings to fine-tune the position and rotation of the object relative to the avatar's hand. Small adjustments here can significantly improve the realism of how the object is held.
+
+    Use these settings to fine-tune how the object looks when the avatar is holding it.
+
+## **Hand Positioning**
+
+These settings determine the position of the avatar's hand (specifically, the wrist) relative to the position of its chest. 
+
+### Presets
+
+In addition to the *default* pose for the avatar's hand, there are nine presets that give you a variety of pose choices. For example, if you choose *Preset 1*, the avatar will hold the object with its palm facing up.
+
+![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/010-preset-1-palm-up.png)
+
+**To select a preset**:
+Do one of the following:
+
+- Click the button that displays **Default Pose**, and then select a preset from the list.
+
+![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/009-preset-list.png)
+
+-or-
+
+- Click the forward/backward arrows to the right of **Hand Positioning**.
+
+![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/008-preset-arrows.png)
+
+#### Change a preset's settings
+
+Navigate through the preset list using the forward/backward buttons and note that each preset has its own unique settings.
+
+![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/011-preset-settings.png)
+
+- **Position**: The distance from the avatar's hand to its chest when an object is equipped.  
+- **Rotation**: The amount to rotate the wrist when an object is equipped.  
+- **Hand Pose Shape:** This is a drop-down that provides a range of hand pose shapes to put the avatar's hand into when equipped. You can also choose *none*.
+- **Hand Pose Size:** Size of the hand pose from 0 – 1.  
+
+#### Reset to the default preset settings
+
+If you find that a preset doesn't give you the precise pose you're looking for, you can change these settings for further improvement. As soon as you make any changes, a message appears telling you that you can restore the default preset settings by clicking the **Reset** button.
+
+![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/012-hand-positioning-reset.png)
+
+## Create your own presets
 
 
-- **Hand Positioning**
 
-    Presets: TBD
 
-    - **Position**: The distance from the avatar's chest to place the hand when an item is equipped.  
-    - **Rotation**: The amount to rotate the wrist when an item is equipped.  
-    - **Hand Pose Shape:** This is a drop-down that provides a range of hand pose shapes to put the avatar's hand into when equipped. You can also choose *none*.
-    - **Hand Pose Size:** Size of the hand pose from 0 – 1.  
+
+
 
 - **Activation Settings**  
 

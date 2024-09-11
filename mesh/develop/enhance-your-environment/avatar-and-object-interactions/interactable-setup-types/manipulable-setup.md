@@ -56,7 +56,7 @@ keywords: Microsoft Mesh, object and player interactions, interactables, manipul
     - **Hand Pose Size**: Size of the hand pose from 0 – 1.  
     - **Override Hand Rotation:** TBD  
     - **Enable IK Tracking**: Whether or not the avatar's arm will reach towards the object while manipulating using IK targeting.
-        -   **Constrain IK Spherical**: If true, arm IK will be done on a sphere. This will cause the avatar arm to not stick straight out.
+        -   **Constrain Arm Within Sphere**: If true, arm IK will be done on a sphere. This will cause the avatar arm to not stick straight out.
 
 ## Highlight Settings
 
@@ -89,7 +89,9 @@ keywords: Microsoft Mesh, object and player interactions, interactables, manipul
 ## Hover IK Settings
 
 IK settings to be used when hovering over an object.
-- **Hand Pose Shape**: The hand pose shape to put the avatar's hand into when hovering over the object
-- **Hand Pose Size**: Size of the hand pose from 0 – 1.
+
+- **Hover Hand Pos**: The hand pose shape to put the avatar's hand into when hovering over the object.
+- **Hover Hand Pose Size:** Size of the hand pose from 0 – 1. Note that this setting is only adjustable for some of the positions listed in the **Hover Hand Pos** drop-down: *Pinch*, *Cylinder* and *Ball*. For the remaining positions, the setting is set to a default of 0.5 and is grayed out. 
+- **Override Hover Hand Rotation**: TBD
 - **Enable IK Tracking**: Whether or not the avatar's arm will reach towards the object while hovering using IK targeting.
     - **Constrain IK Spherical**: If true, arm IK will be done on a sphere. This will cause the avatar arm to not stick straight out.

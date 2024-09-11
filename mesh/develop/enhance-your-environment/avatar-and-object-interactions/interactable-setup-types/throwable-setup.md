@@ -13,6 +13,10 @@ keywords: Microsoft Mesh, object and player interactions, interactables, manipul
 
 ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/005-interactable-setup-throwable.png)
 
+## Terminology
+
+In this article, "hover" means "when the cursor (PC or Mac) or controller pointer (Quest) is over the object."
+
 ## Interaction Settings
 
 - **Aim Configuration Settings**  
@@ -47,7 +51,8 @@ keywords: Microsoft Mesh, object and player interactions, interactables, manipul
 
 **Highlight Settings**
 
-- **Hovered/Selected**: Whether or not to highlight the object if it's highlighted or selected.
+- **Hovered/Selected**: Whether or not to highlight the object if it's hovered over or selected.  
+
 - **Highlight Mechanism**
 
     - Menu item 1: **Shader Properties**
