@@ -90,7 +90,7 @@ Multi-room events now support up-to 330 people, up from the previous limit of 20
 
 It's now possible to rejoin past events! Using the invite link for the Mesh event (found in the calendar invite or via Mesh on the web), anyone can rejoin past events for up-to 5 years after an event completes.
 
-Whether you loved the experience so much that you want to join again or you want a Mesh drop-in space for your team, now you can by rejoining using the Mesh event link.
+Whether you loved the experience so much that you want to go back to the event or you want a Mesh drop-in space for your team, now you can by rejoining using the Mesh event link.
 
 :::image type="content" source="../media/mesh-event-producer-guide/Join-event-link-calendar-rejoin.png" alt-text="Screenshot of calendar invite for a Mesh event showing the join the event link highlighted.":::
 
