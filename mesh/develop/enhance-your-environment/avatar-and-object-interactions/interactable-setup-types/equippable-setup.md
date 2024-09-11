@@ -109,6 +109,16 @@ If you find that a preset doesn't give you the precise pose you're looking for, 
 ## Create your own presets
 
 
+1. In the **Project** tab, navigate to **Packages** > **Microsoft Mesh Interactables** > **Interactables Core** > **Resources** > **EquipablePresets**.
+
+    Note that the *Default Pose* and presets are stored in this folder as [Scriptable Objects](TBD).
+
+1. Select **Default Pose**.
+1. In the **Inspector**, click the Lock button.
+
+    ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/013-inspector-lock.png)
+
+
 
 
 

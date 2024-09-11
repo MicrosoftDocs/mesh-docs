@@ -13,15 +13,23 @@ keywords: Microsoft Mesh, object and player interactions, interactables, manipul
 
 ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/001-interactacle-setup-basic.png)
 
+## Terminology
+
+In this article, "hover" means "when the cursor (PC or Mac) or controller pointer (Quest) is over the object."
+
 ## Interaction Settings
 
-- **Interaction Range**: Furthest distance the avatar can be to interact with this object.
+- **Interaction Range**: Furthest distance, in meters, the avatar can be to interact with this object.
 
 - **Aim IK arm on Hover**: Whether or not the avatar's arm will reach towards the object while hovering using IK targeting.
 
 - **Hover Hand Pos**: The hand pose shape to put the avatar's hand into when hovering over the object.
 
     ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/002-hover-hand-position.png)
+
+    For example, if you choose *Pinch*, when the avatar reaches for the object, its hand will assume the pinch position.
+
+    ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/007-hand-hover-pinch.png)
 
     - **Constrain IK Spherical**: If true, arm IK will be done on a sphere. This will cause the avatar arm to not stick straight out.
 
