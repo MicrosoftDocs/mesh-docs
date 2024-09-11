@@ -81,10 +81,9 @@ In this article, "hover" means "when the cursor (PC or Mac) or controller pointe
 
 - **Position** and **Rotation**: The position and rotation offset relative to the avatar's hand to place the object. (TBD--this is a little different from the previous version. Verify with SMEs.)
 
+## Hand Positioning**
 
-- **Hand Positioning**
-
-    - **Position**: The distance from the avatar's chest to place the hand when an item is equipped.  
-    - **Rotation**: The amount to rotate the wrist when an item is equipped.  
-    - **Hand Pose Shape:** This is a drop-down that provides a range of hand pose shapes to put the avatar's hand into when equipped. You can also choose *none*.
-    - **Hand Pose Size:** Size of the hand pose from 0 – 1.  
+- **Position**: The distance from the avatar's chest to place the hand when an item is equipped.  
+- **Rotation**: The amount to rotate the wrist when an item is equipped.  
+- **Hand Pose Shape:** This is a drop-down that provides a range of hand pose shapes to put the avatar's hand into when equipped. You can also choose *none*.
+- **Hand Pose Size:** Size of the hand pose from 0 – 1.  

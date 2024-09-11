@@ -89,7 +89,7 @@ Do one of the following:
 
 ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/008-preset-arrows.png)
 
-#### Change a preset's settings
+### Change a preset's settings
 
 Navigate through the preset list using the forward/backward buttons and note that each preset has its own unique settings.
 
@@ -100,33 +100,48 @@ Navigate through the preset list using the forward/backward buttons and note tha
 - **Hand Pose Shape:** This is a drop-down that provides a range of hand pose shapes to put the avatar's hand into when equipped. You can also choose *none*.
 - **Hand Pose Size:** Size of the hand pose from 0 – 1.  
 
-#### Reset to the default preset settings
+### Reset to the default preset settings
 
 If you find that a preset doesn't give you the precise pose you're looking for, you can change these settings for further improvement. As soon as you make any changes, a message appears telling you that you can restore the default preset settings by clicking the **Reset** button.
 
 ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/012-hand-positioning-reset.png)
 
-## Create your own presets
+### Create your own presets
+
+If you have an object in your scene that doesn't quite look right with any of the existing presets, you can make your own custom preset. You can't copy a file that's located in a package, so our first step will be to copy the whole *EquipablePresets* folder and work with the files in that copied folder. This will be the folder that the presets drop-down looks in for its presets. 
+
+1. In the **Project** tab, navigate to the **Packages** > **Microsoft Mesh Interactables** > **Interactables Core** > **Resources** > **EquipablePresets** folder.
+
+        Note that the presets are stored in this folder as [Scriptable Objects](https://docs.unity3d.com/Manual/class-ScriptableObject.html).
+
+1. Drag the folder and drop it on the **Assets** folder to copy it there.
+
+    ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/014-copied-equipable-presets.png)
+
+1. Select the preset you want to copy--in this example, we'll use *Preset 9*--and then press Ctrl + D to make a copy, which is automatically named *Preset 10*.
+1. Rename the copied preset to something more descriptive. In our example, we intend to apply the preset to a jug in the scene, so we'll rename the preset to "Jug".
+1. With *Jug* selected, in the **Inspector**, make the changes you want. The changes will be persistent; if you click another preset and then click *Preset 10* again, you'll see that it still retains the changes you made.
+1. In the **Hierarchy** or the **Scene** window, select the GameObject you want to apply the preset to.
+1. In the **Inspector**, navigate to the GameObject's **Mesh Interactable Setup** component.
+1. Click the presets drop-down (it displays **Default Post**), and then choose *Jug* from the list.
+
+    ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/015-jug-preset.png)
+
+## Activation Settings**  
+
+Activation is explained in detail in the [Hold objects realistically with Equippables](../equippables-in-detail.md/#equippable-behaviors) article.
+
+- **Activate Type:** When to set the item as active. Throwable objects cannot be activated and will always have activated type set to none.
+    - **None**: This item can't be activated.  
+    - **Toggle:** This item toggles between active/not active every time the activate control is clicked.  
+    - **Single:** This item is activated when the activate control is clicked and then automatically deactivated once it reaches its last target pose.
+
+- **IK Target Position**
+
+This section contains a list of one or more target poses used to place the avatar's hand when an item is activated. Each pose consists of four properties: **Position**, **Rotation**, **Interpolation time**, and **Animation Curve**. The position and rotation offsets are relative to the avatar's chest. The avatar will interpolate using the animation curve from the previous pose to the current one sequentially down the list for the amount of time defined in the **Interpolation time** property, staying at the final pose until deactivated. When deactivated, the avatar hand pose will move backwards through the list.
+
+You can add or remove poses by clicking the "+" or "-" buttons located below the list. The number to the right of **IK Target Position** tells you how many poses are in the list.
+
+    ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/016-ik-target-position.png)
 
 
-1. In the **Project** tab, navigate to **Packages** > **Microsoft Mesh Interactables** > **Interactables Core** > **Resources** > **EquipablePresets**.
-
-    Note that the *Default Pose* and presets are stored in this folder as [Scriptable Objects](TBD).
-
-1. Select **Default Pose**.
-1. In the **Inspector**, click the Lock button.
-
-    ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/013-inspector-lock.png)
-
-
-
-
-
-
-
-- **Activation Settings**  
-
-    - **Activate Type:** When to set the item as active. Throwable objects cannot be activated and will always have activated type set to none.
-        - **None**: This item can't be activated.  
-        - **Toggle:** This item toggles between active/not active every time the activate control is clicked.  
-        - **Single:** This item is activated when the activate control is clicked and then automatically deactivated once it reaches its last target pose.
