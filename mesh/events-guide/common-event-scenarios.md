@@ -15,6 +15,9 @@ There are a host of scenarios that Mesh can be used for, including Q&A (Question
 
 In this article, we'll cover how to run a Q&A session; involve the audience and make attendees audible to all participants even if they aren't a host.
 
+> [!TIP]
+> Did you know you can rejoin past events? Revisit your favorite events or use a Mesh event as a drop-in space!
+
 ## Event Producers tools
 
 - **Organizer tools**: Mute all, enable/disable Handraise, Megaphone, Screenshare, and Broadcast (for Multi-room events) are all located in the left Organizer tools button in the Menu bar.
