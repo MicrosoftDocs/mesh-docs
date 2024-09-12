@@ -13,6 +13,22 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
+## Version 5.2412.XX (September 03, 2024)
+
+* Fixed an issue where customizing an avatar during a meeting could sometimes cause that avatar to not render correctly (shadows would be too strong).
+
+* Fixed an issue where avatars could become invisible if more than six participants joined an Immersive Meeting.
+
+* Fixed an issue where some avatars would only partially render (e.g., torso would be invisible) during an Event after teleporting.
+
+## Version 5.2411.XX (August 20, 2024)
+
+* Mesh participants will see reaction animations from Teams 2D participants overlaid on the appropriate webcam gallery tile inside the immersive space.
+
+* Adding multi-keyboard support to Mesh, enabling keyboard interaction for millions of people that use languages like Hindi, Arabic, French (Azerty format) Russian, Thai, Kazakh, Bulgarian, Dvorak and Colemak.
+
+* Multiple accessibility improvements including high contrast focus indicator, screen reader announcements, zoom in/out tooltips, and high contrast green screen settings.
+
 ## Version 5.2410.XX (August 5, 2024)
 
 ## Version 5.2409.XX (July 23, 2024)
