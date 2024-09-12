@@ -13,6 +13,10 @@ keywords: Microsoft Mesh, object and player interactions, interactables, manipul
 
 ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/004-interactable-setup-manipulable.png)
 
+## Terminology
+
+In this article, "hover" means "when the cursor (PC or Mac) or controller pointer (Quest) is over the object."
+
 ## Interaction Settings
 
 - **Interaction Cooldown Time:** TBD

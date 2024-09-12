@@ -19,6 +19,14 @@ In this article, "hover" means "when the cursor (PC or Mac) or controller pointe
 
 ## Interaction Settings
 
+With Throwables, it's helpful to think of a throw as occurring in three phases:
+
+1. The avatar is holding the object (in other words, the object is "equipped").
+2. The avatar is aiming the object.
+3. The avatar is throwing the object.
+
+Each of these phases has its own distinct settings, but some settings are found in all the phases. For example, each phase has a *Hand Pose Shape* that's unique to that phase. Note that the phases aren't listed in order in the *Mesh Interactable Setup* component; the settings for phase 1, holding the object, are in the **Hand positioning** section at the bottom of the component. Settings for phase 2, aiming the object, are in the **Aim Configuration Settings**, and settings for phase 3, throwing the object, are in the **Throw Configuration Settings** section.
+
 - **Aim Configuration Settings**  
         - **Use Aim Animation System:**: TBD  
         - **Release Time:** TBD  
@@ -30,7 +38,7 @@ In this article, "hover" means "when the cursor (PC or Mac) or controller pointe
 - **Throw Configuration Settings**
 
     - **Throw Hand Pose Settings:**  
-        - **Hand Pose Shape:** The hand pose shape to put the avatar's hand into when the throw is released  
+        - **Hand Pose Shape:** The hand pose shape to put the avatar's hand into when the throw is released.
         - **Hand Pose Size:** Size of the hand pose from 0 – 1.
 
     - **VR Settings**
@@ -79,11 +87,11 @@ In this article, "hover" means "when the cursor (PC or Mac) or controller pointe
 
 ## Object Positioning
 
-- **Position** and **Rotation**: The position and rotation offset relative to the avatar's hand to place the object. (TBD--this is a little different from the previous version. Verify with SMEs.)
+- **Position** and **Rotation**: Use these settings to fine-tune the position and rotation of the object relative to the avatar's hand. Small adjustments here can significantly improve the realism of how the object is held.
 
 ## Hand Positioning**
 
-- **Position**: The distance from the avatar's chest to place the hand when an item is equipped.  
-- **Rotation**: The amount to rotate the wrist when an item is equipped.  
+- **Position**: The distance from the avatar's hand to its chest when an object is equipped.  
+- **Rotation**: The amount to rotate the wrist when an object is equipped.  
 - **Hand Pose Shape:** This is a drop-down that provides a range of hand pose shapes to put the avatar's hand into when equipped. You can also choose *none*.
 - **Hand Pose Size:** Size of the hand pose from 0 – 1.  

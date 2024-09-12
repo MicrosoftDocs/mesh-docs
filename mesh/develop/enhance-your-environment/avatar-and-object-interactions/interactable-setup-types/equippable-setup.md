@@ -64,8 +64,6 @@ In this article, "hover" means "when the cursor (PC or Mac) or controller pointe
 
 - **Position** and **Rotation**: Use these settings to fine-tune the position and rotation of the object relative to the avatar's hand. Small adjustments here can significantly improve the realism of how the object is held.
 
-    Use these settings to fine-tune how the object looks when the avatar is holding it.
-
 ## **Hand Positioning**
 
 These settings determine the position of the avatar's hand (specifically, the wrist) relative to the position of its chest. 
