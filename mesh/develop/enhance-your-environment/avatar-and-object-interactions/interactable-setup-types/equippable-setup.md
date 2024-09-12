@@ -4,7 +4,7 @@ description: Learn about the settings in the Setup component for Interactable ty
 ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 9/9/2024
+ms.date: 9/12/2024
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation, Basic
 ---
@@ -16,6 +16,12 @@ keywords: Microsoft Mesh, object and player interactions, interactables, manipul
 ## Terminology
 
 In this article, "hover" means "when the cursor (PC or Mac) or controller pointer (Quest) is over the object."
+
+To "equip" an object means to hold the object in your hand. Objects that can be grabbed and held are "equippable". When an avatar is holding an object, we say that the object is "equipped".
+
+## Testing limitations
+
+**Important**: In the *Object Positioning*, *Hand Positioning*, and *Presets* features described in this article, you have the ability to make adjustments to the position and rotation of an object relative to the avatar's hand or chest. Note that in the Unity Editor, you can only see the results using the Mesh Emulator avatar, which is limited. In order to see the results of these adjustments with a full Mesh event avatar, you must build and publish your project, then create a Mesh event, and then grab and hold the object in the scene. 
 
 ## Interaction Settings
 
@@ -98,11 +104,15 @@ Navigate through the preset list using the forward/backward buttons and note tha
 - **Hand Pose Shape:** This is a drop-down that provides a range of hand pose shapes to put the avatar's hand into when equipped. You can also choose *none*.
 - **Hand Pose Size:** Size of the hand pose from 0 – 1.  
 
-### Reset to the default preset settings
-
 If you find that a preset doesn't give you the precise pose you're looking for, you can change these settings for further improvement. As soon as you make any changes, a message appears telling you that you can restore the default preset settings by clicking the **Reset** button.
 
 ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/012-hand-positioning-reset.png)
+
+If, after changing one or more settings, you select a different object in the scene, and then re-select the object whose settings you changed, the word "Custom" appears in place of the *Presets* drop-down.
+
+![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/017-custom.png)
+
+You can continue making changes, but you can't save the changes as a new preset. However, you *can* create a unique new preset as explained below.
 
 ### Create your own presets
 
@@ -129,7 +139,8 @@ If you have an object in your scene that doesn't quite look right with any of th
 
 Activation is explained in detail in the [Hold objects realistically with Equippables](../equippables-in-detail.md/#equippable-behaviors) article.
 
-- **Activate Type:** When to set the item as active. Throwable objects cannot be activated and will always have activated type set to none.
+- **Activate Type** 
+
     - **None**: This item can't be activated.  
     - **Toggle:** This item toggles between active/not active every time the activate control is clicked.  
     - **Single:** This item is activated when the activate control is clicked and then automatically deactivated once it reaches its last target pose.

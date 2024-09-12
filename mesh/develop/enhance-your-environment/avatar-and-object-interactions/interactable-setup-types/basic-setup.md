@@ -4,7 +4,7 @@ description: Learn about the settings in the Setup component for Interactable ty
 ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 9/6/2024
+ms.date: 9/12/2024
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation, Basic
 ---

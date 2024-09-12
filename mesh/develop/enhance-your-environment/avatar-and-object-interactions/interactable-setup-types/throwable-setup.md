@@ -4,7 +4,7 @@ description: Learn about the settings in the Setup component for Interactable ty
 ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 9/9/2024
+ms.date: 9/12/2024
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation, Basic, throwable
 ---
@@ -17,7 +17,11 @@ keywords: Microsoft Mesh, object and player interactions, interactables, manipul
 
 In this article, "hover" means "when the cursor (PC or Mac) or controller pointer (Quest) is over the object."
 
-## Interaction Settings
+## Testing limitations
+
+**Important**: In the *Aim Configuration Settings*, *Throw Configuration Settings*, *Object Positioning*, and *Hand Positioning* features described in this article, you have the ability to make adjustments to the position and rotation of an object relative to the avatar's hand or chest. Note that in the Unity Editor, you can only see the results using the Mesh Emulator avatar, which is limited. In order to see the results of these adjustments with a full Mesh event avatar, you must build and publish your project, then create a Mesh event, and then grab and hold the object in the scene. 
+
+## The three phases of Throwable behavior
 
 With Throwables, it's helpful to think of a throw as occurring in three phases:
 
@@ -25,7 +29,11 @@ With Throwables, it's helpful to think of a throw as occurring in three phases:
 2. The avatar is aiming the object.
 3. The avatar is throwing the object.
 
-Each of these phases has its own distinct settings, but some settings are found in all the phases. For example, each phase has a *Hand Pose Shape* that's unique to that phase. Note that the phases aren't listed in order in the *Mesh Interactable Setup* component; the settings for phase 1, holding the object, are in the **Hand positioning** section at the bottom of the component. Settings for phase 2, aiming the object, are in the **Aim Configuration Settings**, and settings for phase 3, throwing the object, are in the **Throw Configuration Settings** section.
+Each of these phases has its own distinct settings, but some settings are found in three phases. For example, each phase has a *Hand Pose Shape* that's unique to that phase. Note that the phases aren't listed in order in the *Mesh Interactable Setup* component; the settings for phase 1, holding the object, are in the **Hand positioning** section at the bottom of the component. Settings for phase 2, aiming the object, are in the **Interaction Settings** > **Aim Configuration Settings**, and settings for phase 3, throwing the object, are in the **Interaction Settings** > **Throw Configuration Settings** section.
+
+
+
+## Interaction Settings
 
 - **Aim Configuration Settings**  
         - **Use Aim Animation System:**: TBD  
