@@ -109,6 +109,7 @@ Whether you loved the experience so much that you want to go back to the event o
 ### What's new
 
 #### WebSlate
+
 With the release of the 24.10 Mesh Toolkit, developers now have the ability to add WebSlate Controllables to environments. These WebSlates enable event attendees to interact with a webpage through WebSlates while in a Mesh event and empower event organizers to dynamically change the content that's displayed on the WebSlates in real-time.
 
 An event host could display Microsoft Whiteboard, for example:
