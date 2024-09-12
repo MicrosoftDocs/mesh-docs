@@ -52,6 +52,9 @@ Follow the steps below to see a list of events and join an event.
 
     ![A screenshot of a computer Description automatically > generated](media/dashboard-view-event.png)
 
+    > [!TIP]
+    > Did you know you can rejoin past events? Revisit your favorite events or use a Mesh event as a drop-in space!
+
 3. A **Pre-join** dialog box will appear before you join an event. You can select or customize your avatars from the pre-join dialog.
 
     ![A screenshot of the pre-join dialog with Avatars menu items highlighted](media/prejoin-dialog-avatars.png)
@@ -84,6 +87,9 @@ If you're running the Mesh app on Quest, you can use the **Dashboard** shown bel
 
 1. Click on any of the events to **View event details**, or select **Join**.
 
+> [!TIP]
+> Did you know you can rejoin past events? Revisit your favorite events or use a Mesh event as a drop-in space!
+
 ## [Teams](#tab/Teams)
 
 ### Join using the Mesh app in Teams (Windows or Mac)
@@ -103,6 +109,8 @@ To join a Mesh event using the Mesh app in Teams:
 
     :::image type="content" source="media/Mesh-app-in-teams-open-in-Microsoft-teams.png" alt-text="Screenshot of Mesh app in Teams.":::
 
+> [!TIP]
+> Did you know you can rejoin past events? Revisit your favorite events or use a Mesh event as a drop-in space!
 ---
 
 ## Enjoy your event
