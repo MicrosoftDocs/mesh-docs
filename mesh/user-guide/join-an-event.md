@@ -53,7 +53,7 @@ Follow the steps below to see a list of events and join an event.
     ![A screenshot of a computer Description automatically > generated](media/dashboard-view-event.png)
 
     > [!TIP]
-> Did you know you can rejoin past events? Revisit your favorite events or use a Mesh event as a drop-in space!
+    > Did you know you can rejoin past events? Revisit your favorite events or use a Mesh event as a drop-in space!
 
 3. A **Pre-join** dialog box will appear before you join an event. You can select or customize your avatars from the pre-join dialog.
 
