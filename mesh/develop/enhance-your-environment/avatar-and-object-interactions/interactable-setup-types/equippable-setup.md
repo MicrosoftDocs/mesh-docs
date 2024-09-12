@@ -21,7 +21,7 @@ To "equip" an object means to hold the object in your hand. Objects that can be 
 
 ## Testing limitations
 
-**Important**: In the *Object Positioning*, *Hand Positioning*, and *Presets* features described in this article, you have the ability to make adjustments to the position and rotation of an object relative to the avatar's hand or chest. Note that in the Unity Editor, you can only see the results using the Mesh Emulator avatar, which is limited. In order to see the results of these adjustments with a full Mesh event avatar, you must build and publish your project, then create a Mesh event, and then grab and hold the object in the scene. 
+**Important**: In the *Object Positioning*, *Hand Positioning*, and *Presets* features described in this article, you have the ability to make adjustments to the position and rotation of an object relative to the avatar's hand or chest. Note that in the Unity Editor, you can only see the results using the Mesh Emulator avatar, which is limited. In order to see the results of these adjustments with a full Mesh event avatar, you must build and publish your project, then create a Mesh event, and then join the event and grab and hold the object in the scene. 
 
 ## Interaction Settings
 
@@ -37,6 +37,7 @@ To "equip" an object means to hold the object in your hand. Objects that can be 
 
     ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/007-hand-hover-pinch.png)
 
+- **Hover Hand Pose Size:** TBD
 
 ## Highlight Settings
 
@@ -85,13 +86,13 @@ Do one of the following:
 
 - Click the button that displays **Default Pose**, and then select a preset from the list.
 
-![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/009-preset-list.png)
+    ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/009-preset-list.png)
 
 -or-
 
 - Click the forward/backward arrows to the right of **Hand Positioning**.
 
-![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/008-preset-arrows.png)
+    ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/008-preset-arrows.png)
 
 ### Change a preset's settings
 
@@ -135,7 +136,7 @@ If you have an object in your scene that doesn't quite look right with any of th
 
     ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/015-jug-preset.png)
 
-## Activation Settings**  
+## Activation Settings
 
 Activation is explained in detail in the [Hold objects realistically with Equippables](../equippables-in-detail.md#equippable-behaviors) article.
 

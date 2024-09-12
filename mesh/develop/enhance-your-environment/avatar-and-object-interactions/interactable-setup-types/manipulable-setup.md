@@ -29,27 +29,33 @@ In this article, "hover" means "when the cursor (PC or Mac) or controller pointe
 
         - **Enable Translation:** Whether or not the object can be translated while manipulating. Each axis can be set individually.
 
+            - **Manipulable Translation Logic:** 
+                - **Default:** TBD
+                - **Restrictive:** TBD
+
         - **Enable Rotation:** Whether or not the object can be rotated while manipulating. Each axis can be set individually. 
 
-        Manipulable Rotation Logic TBD
+            - **Manipulable Rotation Logic:** 
 
-        - **Default**: When manipulating an object, it will rotate around the camera and stay at the same orientation relative to the camera (actual transform values will rotate).  
-        - **Restrictive**: When manipulating an object, it will not rotate its transform and will not stay at the same orientation relative to the camera. 
+                - **Default**: When manipulating an object, it will rotate around the camera and stay at the same orientation relative to the camera (actual transform values will rotate).  
+                - **Restrictive**: When manipulating an object, it will not rotate its transform and will not stay at the same orientation relative to the camera. 
+                - **Inverted:** TBD
 
-- **Scale All:** TBD
+- **Scale All:** 
 
-    - **Point Spring:** Alternative behavior that moves the object by applying force at a grab point (works only for rigidbodies).
-
-        - **Spring strength:** The force of the spring which pulls the object. The higher the value, the faster it will reach the target point.  
-        - **Damping Factor:** How much damping is applied to prevent oscillation around the grab point.  
+    - **Enabled**: TBD  
+    - **Uniform Scale**: TBD
+    - **Min Scale**: TBD
+    - **Max Scale**: TBD
 
 - **Modify Target Transform:** Gives user the option to override the default transform and set the desired position and rotation of object relative to camera/avatar while object is selected. When this is set to **Enabled**, you get the following three properties:
 
     - **Target Space:**  
 
-        - **Local Space Of Camera:** Whether to specify position and rotation in the camera local space.
 
         - **Local Space Of Avatar:** Whether to specify position and rotation in the avatar local space.
+        - **Local Space Of Camera:** Whether to specify position and rotation in the camera local space.
+
 
     - **New Target Position:** New target position (z component is the direction where camera/avatar is facing)
     - **New Target Rotation:** New target rotation
@@ -96,9 +102,10 @@ IK settings to be used when hovering over an object.
 
 - **Hover Hand Pos**: The hand pose shape to put the avatar's hand into when hovering over the object.
 - **Hover Hand Pose Size:** Size of the hand pose from 0 – 1. Note that this setting is only adjustable for some of the positions listed in the **Hover Hand Pos** drop-down: *Pinch*, *Cylinder* and *Ball*. For the remaining positions, the setting is set to a default of 0.5 and is grayed out. 
-- **Override Hover Hand Rotation**: TBD
+- **Override Hover Hand Rotation:** TBD
+    - **Hand Rotation**: TBD
 - **Enable IK Tracking**: Whether or not the avatar's arm will reach towards the object while hovering using IK targeting.
-    - **Constrain IK Spherical**: If true, arm IK will be done on a sphere. This will cause the avatar arm to not stick straight out.
+    - **Hover Constrain Arm Within Sphere**: If true, arm IK will be done on a sphere. This will cause the avatar arm to not stick straight out.
 
 ## Next steps
 

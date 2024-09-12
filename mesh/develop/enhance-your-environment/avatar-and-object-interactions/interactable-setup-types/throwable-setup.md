@@ -17,9 +17,11 @@ keywords: Microsoft Mesh, object and player interactions, interactables, manipul
 
 In this article, "hover" means "when the cursor (PC or Mac) or controller pointer (Quest) is over the object."
 
+To "equip" an object means to hold the object in your hand. Objects that can be grabbed and held are "equippable". When an avatar is holding an object, we say that the object is "equipped".
+
 ## Testing limitations
 
-**Important**: In the *Aim Configuration Settings*, *Throw Configuration Settings*, *Object Positioning*, and *Hand Positioning* features described in this article, you have the ability to make adjustments to the position and rotation of an object relative to the avatar's hand or chest. Note that in the Unity Editor, you can only see the results using the Mesh Emulator avatar, which is limited. In order to see the results of these adjustments with a full Mesh event avatar, you must build and publish your project, then create a Mesh event, and then grab and hold the object in the scene. 
+**Important**: In the *Aim Configuration Settings*, *Throw Configuration Settings*, *Object Positioning*, and *Hand Positioning* features described in this article, you have the ability to make adjustments to the position and rotation of an object relative to the avatar's hand or chest. Note that in the Unity Editor, you can only see the results using the Mesh Emulator avatar, which is limited. In order to see the results of these adjustments with a full Mesh event avatar, you must build and publish your project, then create a Mesh event, and then join the event and grab and hold the object in the scene. 
 
 ## The three phases of Throwable behavior
 
@@ -29,9 +31,7 @@ With Throwables, it's helpful to think of a throw as occurring in three phases:
 2. The avatar is aiming the object.
 3. The avatar is throwing the object.
 
-Each of these phases has its own distinct settings, but some settings are found in three phases. For example, each phase has a *Hand Pose Shape* that's unique to that phase. Note that the phases aren't listed in order in the *Mesh Interactable Setup* component; the settings for phase 1, holding the object, are in the **Hand positioning** section at the bottom of the component. Settings for phase 2, aiming the object, are in the **Interaction Settings** > **Aim Configuration Settings**, and settings for phase 3, throwing the object, are in the **Interaction Settings** > **Throw Configuration Settings** section.
-
-
+Each of these phases has its own distinct settings, but some settings are found in all three phases. For example, each phase has a *Hand Pose Shape* that's unique to that phase. Note that the phases aren't listed in order in the *Mesh Interactable Setup* component; the settings for phase 1, holding the object, are in the **Hand positioning** section at the bottom of the component. Settings for phase 2, aiming the object, are in the **Interaction Settings** > **Aim Configuration Settings** section, and settings for phase 3, throwing the object, are in the **Interaction Settings** > **Throw Configuration Settings** section.
 
 ## Interaction Settings
 
@@ -61,6 +61,8 @@ Each of these phases has its own distinct settings, but some settings are found 
         - **2D Throw Velocity**: The velocity to apply to an object when it's thrown on PC.
         - **Throw Direction Offset**: A directional offset to apply to an object when it's thrown on PC.
         - **Throw Target Poses:** A list of target poses used to place the avatar's hand when an item is thrown. The position and rotation offsets are relative to the position of the avatar's hand when the throw was initiated. The avatar will interpolate using the animation curve from the previous pose to the current one sequentially down the list for the amount of time defined in interpolation time. The object will be released and the throw hand pose will be used at the second to last target.
+
+        You can add or remove poses by clicking the "+" or "-" buttons located below the list. The number to the right of **Throw Target Poses** tells you how many poses are in the list.
         - **Show Aim arc::** TBD  
             - **Aim Arc Origin:** TBD
             - **Override Aim Arc Color:** TBD
@@ -97,7 +99,7 @@ Each of these phases has its own distinct settings, but some settings are found 
 
 - **Position** and **Rotation**: Use these settings to fine-tune the position and rotation of the object relative to the avatar's hand. Small adjustments here can significantly improve the realism of how the object is held.
 
-## Hand Positioning**
+## Hand Positioning
 
 - **Position**: The distance from the avatar's hand to its chest when an object is equipped.  
 - **Rotation**: The amount to rotate the wrist when an object is equipped.  
