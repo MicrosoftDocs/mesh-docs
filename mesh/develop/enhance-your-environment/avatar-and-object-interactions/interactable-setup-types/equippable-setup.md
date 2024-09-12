@@ -120,7 +120,7 @@ If you have an object in your scene that doesn't quite look right with any of th
 
 1. In the **Project** tab, navigate to the **Packages** > **Microsoft Mesh Interactables** > **Interactables Core** > **Resources** > **EquipablePresets** folder.
 
-        Note that the presets are stored in this folder as [Scriptable Objects](https://docs.unity3d.com/Manual/class-ScriptableObject.html).
+    Note that the presets are stored in this folder as [Scriptable Objects](https://docs.unity3d.com/Manual/class-ScriptableObject.html).
 
 1. Drag the folder and drop it on the **Assets** folder to copy it there.
 
@@ -137,7 +137,7 @@ If you have an object in your scene that doesn't quite look right with any of th
 
 ## Activation Settings**  
 
-Activation is explained in detail in the [Hold objects realistically with Equippables](../equippables-in-detail.md/#equippable-behaviors) article.
+Activation is explained in detail in the [Hold objects realistically with Equippables](../equippables-in-detail.md#equippable-behaviors) article.
 
 - **Activate Type** 
 
@@ -151,7 +151,7 @@ This section contains a list of one or more target poses used to place the avata
 
 You can add or remove poses by clicking the "+" or "-" buttons located below the list. The number to the right of **IK Target Position** tells you how many poses are in the list.
 
-    ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/016-ik-target-position.png)
+![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/016-ik-target-position.png)
 
 ## Next steps
 

@@ -28,7 +28,7 @@ The component is added with its default **Interactable Type** property set to **
 
 ![A screen shot of the Mesh Interactable Setup component with Object Type set to Interactable.](../../../media/enhance-your-environment/object-player-interactions/009-interactables-common-settings.png)
 
-The properties for a group of objects that all behave the same can be set up with a parent *Mesh Interactable Setup* component. The properties will be applied to all children with rigidbodies at runtime by automatically adding a *Mesh Interactable Body* component to each child object. You may want to add *Mesh Interactable Body* manually to use Mesh interactables with [Visual Scripting](#visual-scripting), such as with interaction events or to modify the manipulable target transform through the visual script.
+The properties for a group of objects that all behave the same can be set up with a parent *Mesh Interactable Setup* component. The properties will be applied to all children with rigidbodies at runtime by automatically adding a *Mesh Interactable Body* component to each child object. You may want to add *Mesh Interactable Body* manually to use Mesh interactables with [Visual Scripting](#make-objects-interactable-with-visual-scripting), such as with interaction events or to modify the manipulable target transform through the visual script.
 
 ![A screen shot of the Mesh Interactable Body component.](../../../media/enhance-your-environment/object-player-interactions/016-mesh-interactable-body.png)
 
@@ -78,7 +78,7 @@ You can move an object of this type from a distance; specifically, you manipulat
 
 You can grab an object of this type. In Mesh terms, we say that you "equip" the object to your avatar's hand. To equip an object on the PC, click the object or press <kbd>F</kbd> while the object is selected. To equip an object on the Quest, press the 'Grip' button while the object is selected. Equippable objects contain settings for IK targets for your avatar's arm pose while the object is equipped. The IK targets are an offset from the avatar's chest; this determines where the hand goes while the object is held or activated.
 
-[Learn more about Equippable object type settings](./interactable-setup-types/equippable-setup.md.md)
+[Learn more about Equippable object type settings](./interactable-setup-types/equippable-setup.md)
 
 ### Throwable
 

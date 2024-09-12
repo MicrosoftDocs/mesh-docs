@@ -9,7 +9,7 @@ ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation, Basic, throwable
 ---
 
-# Setup for Interactable type Equippable
+# Setup for Interactable type Throwable
 
 ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/005-interactable-setup-throwable.png)
 
