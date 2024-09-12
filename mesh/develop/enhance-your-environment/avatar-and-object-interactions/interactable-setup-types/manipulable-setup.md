@@ -99,3 +99,8 @@ IK settings to be used when hovering over an object.
 - **Override Hover Hand Rotation**: TBD
 - **Enable IK Tracking**: Whether or not the avatar's arm will reach towards the object while hovering using IK targeting.
     - **Constrain IK Spherical**: If true, arm IK will be done on a sphere. This will cause the avatar arm to not stick straight out.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Equippable type settings](./equippable-setup.md)

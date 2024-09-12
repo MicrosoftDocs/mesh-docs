@@ -103,3 +103,8 @@ Each of these phases has its own distinct settings, but some settings are found 
 - **Rotation**: The amount to rotate the wrist when an object is equipped.  
 - **Hand Pose Shape:** This is a drop-down that provides a range of hand pose shapes to put the avatar's hand into when equipped. You can also choose *none*.
 - **Hand Pose Size:** Size of the hand pose from 0 – 1.  
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Grab, hold and throw with Interactables](../interactables.md)

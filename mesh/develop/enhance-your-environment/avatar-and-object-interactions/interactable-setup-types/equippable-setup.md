@@ -153,4 +153,8 @@ You can add or remove poses by clicking the "+" or "-" buttons located below the
 
     ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/016-ik-target-position.png)
 
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Throwable type settings](./throwable-setup.md)
 

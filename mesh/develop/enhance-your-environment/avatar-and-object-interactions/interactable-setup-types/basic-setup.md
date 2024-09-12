@@ -63,4 +63,7 @@ In this article, "hover" means "when the cursor (PC or Mac) or controller pointe
         - **Custom highlight material**: Override option specific to this object to set the material used for the glow. If this isn't set, the default material from the settings asset will be used.
         -  **Exclusion string:** If this is set then any Game Object with a name containing the exclusion string will be excluded from the highlight.
 
+## Next steps
 
+> [!div class="nextstepaction"]
+> [Manipulable type settings](./manipulable-setup.md)

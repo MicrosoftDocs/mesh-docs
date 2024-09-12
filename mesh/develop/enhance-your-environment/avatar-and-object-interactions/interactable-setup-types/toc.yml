@@ -1,0 +1,9 @@
+items: 
+- name: Basic type settings
+  href: basic-setup.md
+- name: Manipulable type settings
+- name: Equippable type settings
+  href: equippable-setup.md
+  href: manipulable-setup.md
+- name: Throwable type settings
+  href: throwable-setup.md
