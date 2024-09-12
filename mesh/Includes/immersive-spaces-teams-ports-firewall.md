@@ -16,6 +16,9 @@ This section outlines the specific endpoints and firewall requirements for the M
 > [!NOTE]
 > Currently, there are extra firewall ports required for immersive spaces in Teams beyond the standard set of Microsoft 365 requirements. We are working to align with the standards outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true) and appreciate your patience as we make this infrastructure change.
 
+> [!IMPORTANT]
+> We're rolling out changes to simplify the network setup requirements for immersive spaces in Teams. This change is targeted to be completed by the end of September, 2024.  If you're a tenant admin, you can read more about this change in the Message Center post at [https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC855701](https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC855701).
+
 #### Avatars in Teams
 
 Configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
