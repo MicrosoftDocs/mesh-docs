@@ -4,7 +4,7 @@ description: Release notes for the Microsoft Mesh Toolkit with a list of importa
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
-ms.date: 08/13/2024
+ms.date: 09/12/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
@@ -26,8 +26,45 @@ For purposes of this document, there are two categories of users:
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2410.X | 2024-08-13     |
-| Mesh on PC/Quest           | 5.2410.X | 2024-08-05     |
+| Mesh toolkit               | 5.2412.X | 2024-09-10     |
+| Mesh on PC/Quest           | 5.2412.X | 2024-09-02     |
+
+## Mesh Toolkit 5.2412.X
+
+### What's new
+
+### Mesh Toolkit uploader
+
+* Fixed bug that caused uploads to fail with a FileNotFoundException on a retry.
+
+* Extend retries around graph operations to hopefully get past temporary issues.
+
+* Removed the option to select the Unity build pipeline in the Mesh Toolkit Settings.
+
+* Fix an issue that caused validation to fail on retry even when the scene was fixed and appeared to be saved.
+
+* Default font settings commands now output a messages to console.
+
+### Interactables
+
+The component for Interactables (“Mesh Interactable Setup”) has been updated with the following:
+
+* UI redesign, with a cleaner look and better organization and usability.
+
+* “Interactables” is now an umbrella term for the four Interactable types: **Basic**, **Manipulable**, **Equippable**, and **Throwable**.
+
+* In the Equippable type, there are ten presets for hand positioning, and you can also create your own custom presets.
+
+* The component now has context-sensitive help buttons.
+
+## Mesh Toolkit 5.2411.X
+
+### What's new
+
+#### Mesh Toolkit uploader
+
+* Updated Build Target selection with more information on the platforms that target supports. Also added a general warning when uploading an environment with a subset of targets selected.
+
 
 ## Mesh Toolkit 5.2410.X
 
