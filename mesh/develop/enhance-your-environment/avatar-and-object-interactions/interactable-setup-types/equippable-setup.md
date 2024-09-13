@@ -4,7 +4,7 @@ description: Learn about the settings in the Setup component for Interactable ty
 ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 9/12/2024
+ms.date: 9/13/2024
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation, Basic
 ---
@@ -37,7 +37,7 @@ To "equip" an object means to hold the object in your hand. Objects that can be 
 
     ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/007-hand-hover-pinch.png)
 
-- **Hover Hand Pose Size:** TBD
+- **Hover Hand Pose Size:** This determines the spacing of the avatar fingers on a scale of 0 to 1. At zero, the fingers will be touching; increasing the value of the slider makes the fingers further apart.Note that this is directly influenced by the shape chosen in the **Hover Hand Pos** drop-down.
 
 ## Highlight Settings
 
@@ -148,9 +148,9 @@ Activation is explained in detail in the [Hold objects realistically with Equipp
 
 - **IK Target Position**
 
-This section contains a list of one or more target poses used to place the avatar's hand when an item is activated. Each pose consists of four properties: **Position**, **Rotation**, **Interpolation time**, and **Animation Curve**. The position and rotation offsets are relative to the avatar's chest. The avatar will interpolate using the animation curve from the previous pose to the current one sequentially down the list for the amount of time defined in the **Interpolation time** property, staying at the final pose until deactivated. When deactivated, the avatar hand pose will move backwards through the list.
+This section contains a list of up to two target poses used to place the avatar's hand when an item is activated. Each pose consists of four properties: **Position**, **Rotation**, **Interpolation time**, and **Animation Curve**. The position and rotation offsets are relative to the avatar's chest. The avatar will interpolate using the animation curve from the previous pose to the current one sequentially down the list for the amount of time defined in the **Interpolation time** property, staying at the final pose until deactivated. When deactivated, the avatar hand pose will move backwards through the list.
 
-You can add or remove poses by clicking the "+" or "-" buttons located below the list. The number to the right of **IK Target Position** tells you how many poses are in the list.
+If the list contains a single pose, you can add an additional one by clicking the "+" button. To remove a pose, select it and then click the "-" button. The number to the right of **IK Target Position** tells you how many poses are in the list. **Important**: You *can* add more than two poses to the list with the "+" button, but only two will be registered.
 
 ![__________________](../../../../media/enhance-your-environment/object-player-interactions/interactable-types/016-ik-target-position.png)
 
