@@ -19,9 +19,9 @@ In this article, "hover" means "when the cursor (PC or Mac) or controller pointe
 
 ## Interaction Settings
 
-- **Interaction Cooldown Time:** TBD
+- **Interaction Cooldown Time:** Allows you to create a delay before the next interaction can be registered, preventing users from clicking Interactables excessively. For example, if you have a button Interactable with an *Interaction Cooldown Time* set to 1, the user must wait one second before they can click the button again. This is a great way to improve performance and prevent frame drops.
 
-- **Interaction Range:** TBD
+- **Interaction Range:** The maximum distance an object can be from the avatar while still registering a user interaction. The higher the amount, the further the distance.
 
 - **Force Mode:** The mode to use to force the object through space.
 
@@ -30,8 +30,8 @@ In this article, "hover" means "when the cursor (PC or Mac) or controller pointe
         - **Enable Translation:** Whether or not the object can be translated while manipulating. Each axis can be set individually.
 
             - **Manipulable Translation Logic:** 
-                - **Default:** TBD
-                - **Restrictive:** TBD
+                - **Default:** Allows the object to be manipulated without constraint.
+                - **Restrictive:** Allows you to constrain an object to moving only on a specified axis. This is useful for creating interactive objects such as levers, gears, doors or anything else that needs to be locked to a specific axis when an attendee interacts with it.
 
         - **Enable Rotation:** Whether or not the object can be rotated while manipulating. Each axis can be set individually. 
 
@@ -40,13 +40,6 @@ In this article, "hover" means "when the cursor (PC or Mac) or controller pointe
                 - **Default**: When manipulating an object, it will rotate around the camera and stay at the same orientation relative to the camera (actual transform values will rotate).  
                 - **Restrictive**: When manipulating an object, it will not rotate its transform and will not stay at the same orientation relative to the camera. 
                 - **Inverted:** TBD
-
-- **Scale All:** 
-
-    - **Enabled**: TBD  
-    - **Uniform Scale**: TBD
-    - **Min Scale**: TBD
-    - **Max Scale**: TBD
 
 - **Modify Target Transform:** Gives user the option to override the default transform and set the desired position and rotation of object relative to camera/avatar while object is selected. When this is set to **Enabled**, you get the following three properties:
 
@@ -102,8 +95,7 @@ IK settings to be used when hovering over an object.
 
 - **Hover Hand Pos**: The hand pose shape to put the avatar's hand into when hovering over the object.
 - **Hover Hand Pose Size:** Size of the hand pose from 0 – 1. Note that this setting is only adjustable for some of the positions listed in the **Hover Hand Pos** drop-down: *Pinch*, *Cylinder* and *Ball*. For the remaining positions, the setting is set to a default of 0.5 and is grayed out. 
-- **Override Hover Hand Rotation:** TBD
-    - **Hand Rotation**: TBD
+- **Override Hover Hand Rotation:** Select this to override the default hover hand rotation and instead use your own custom **Hand Rotation** values. The fields for these XYZ values appear when this property is selected. The avatar hand rotates when the cursor (PC) or laser pointer (Quest) overlaps with the object.
 - **Enable IK Tracking**: Whether or not the avatar's arm will reach towards the object while hovering using IK targeting.
     - **Hover Constrain Arm Within Sphere**: If true, arm IK will be done on a sphere. This will cause the avatar arm to not stick straight out.
 

@@ -63,9 +63,9 @@ Each of these phases has its own distinct settings, but some settings are found 
         - **Throw Target Poses:** A list of target poses used to place the avatar's hand when an item is thrown. The position and rotation offsets are relative to the position of the avatar's hand when the throw was initiated. The avatar will interpolate using the animation curve from the previous pose to the current one sequentially down the list for the amount of time defined in interpolation time. The object will be released and the throw hand pose will be used at the second to last target.
 
         You can add or remove poses by clicking the "+" or "-" buttons located below the list. The number to the right of **Throw Target Poses** tells you how many poses are in the list.
-        - **Show Aim arc::** TBD  
-            - **Aim Arc Origin:** TBD
-            - **Override Aim Arc Color:** TBD
+        - **Show Aim arc:**  The Aim Arc is the curved visual indicator that projects from the avatar's hand outward. This indicator helps to determine where the object will be thrown in 3D space.
+            - **Aim Arc Origin:** Click the round button in this field to open the **Select Transform** window. You can then select an object whose transform determines the point in 3D space where the Aim Arc starts. This is useful for situations where you want the equipped object to show in the avatars hand while establishing some distance between the arc and the object. 
+            - **Override Aim Arc Color:** When you select this, the **Aim Arc Color** property appears with a color box that allows you to select a custom color to override the default Aim Arc color. One use for this is to set the Aim Arc color to red when the cursor (PC) or laser pointer (Quest) lands in an area where you don't want the attendee to throw an object. When the cursor/laser pointer moves to an area where an object *can* be thrown, the Aim Arc turns to green.
 
 **Highlight Settings**
 
