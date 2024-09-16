@@ -4,7 +4,7 @@ description: Learn about the settings in the Setup component for Interactable ty
 ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 9/12/2024
+ms.date: 9/16/2024
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation, Basic, throwable
 ---
@@ -36,8 +36,6 @@ Each of these phases has its own distinct settings, but some settings are found 
 ## Interaction Settings
 
 - **Aim Configuration Settings**  
-        - **Use Aim Animation System:**: TBD  
-        - **Release Time:** TBD  
         - **Arm Extension on Aim** – The amount to extend the arm when in aim mode.  
         - **Hand Pose Shape:** The hand pose shape to put the avatar's hand into when aiming.  
         - **Hand Pose Size:** Size of the hand pose from 0 – 1.
