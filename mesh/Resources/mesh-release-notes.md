@@ -17,6 +17,7 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | September 17 | 5.2413.XX   |
 | 2024         | September 02 | 5.2412.XX    |
 | 2024         | August 19    | 5.2411.XX    |
 | 2024         | August 05    | 5.2410.XX    |
