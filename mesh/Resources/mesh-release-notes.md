@@ -31,6 +31,28 @@ Microsoft Mesh application
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
+## Version 5.1413.XX
+
+## What's new
+
+### New Workshop environment
+
+The Workshop environment is now available to all customers for use in Events or immersive spaces in Teams meetings.
+
+:::image type="content" source="media/Workshop-environment.png" alt-text="Screenshot of workshop environment in the Mesh app in Teams, the environment switcher is open.":::
+
+Use the main stage to get the whole the team together then use the four breakout spaces to convene in and workshop ideas.
+
+:::image type="content" source="media/Workshop-environment-2.png" alt-text="Screenshot of workshop environment in Mesh.":::
+
+## Resolved issues
+
+* Closing the standalone app, while joining an event, won't show an error to the user anymore. (20151)
+
+* Network connection issues, when in an event, would sometimes show a generic error message instead of telling the user they lost their network connection. (20760)
+
+* Fixed a regression in app startup performance introduced in 24.12. (202250)
+
 ## Version 5.2412.XX
 
 ## What's new
