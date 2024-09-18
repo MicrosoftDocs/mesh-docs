@@ -45,6 +45,25 @@ Use the main stage to get the whole the team together then use the four breakout
 
 :::image type="content" source="media/Workshop-environment-2.png" alt-text="Screenshot of workshop environment in Mesh.":::
 
+### Anyone in your organization can now join Mesh events using the event link
+
+Now anyone in your organization can join a Mesh event using just the Mesh event link.
+
+Using the same link that's used to join a Mesh event directly or rejoin past events, you can now share that link with other people in your organization who you didn't specifically invite in Mesh on the web.
+
+:::image type="content" source="../media/mesh-event-producer-guide/Join-event-link-calendar-rejoin.png" alt-text="Screenshot of calendar invite for a Mesh event showing the join the event link highlighted.":::
+
+> [!IMPORTANT]
+> As of now, in order for someone to join using the event link without being invited, someone who is invited must join first, such as a the organizer, co-organizer(s), or attendee(s).
+
+To recap some great new features, Mesh event links can be:
+
+* Shared with anyone in your organization to join Mesh events directly (as long as someone who *is* invited joins first)
+
+* Used to rejoin past events
+
+* Used to join Mesh events directly
+
 ## Resolved issues
 
 * Closing the standalone app, while joining an event, won't show an error to the user anymore. (20151)
@@ -52,6 +71,8 @@ Use the main stage to get the whole the team together then use the four breakout
 * Network connection issues, when in an event, would sometimes show a generic error message instead of telling the user they lost their network connection. (20760)
 
 * Fixed a regression in app startup performance introduced in 24.12. (202250)
+
+* Resolved an issue where cross-room reaction visualizations might not appear for organizers. (211430)
 
 ## Version 5.2412.XX
 
