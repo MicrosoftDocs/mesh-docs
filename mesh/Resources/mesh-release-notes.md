@@ -4,7 +4,7 @@ description: Mesh release notes
 ms.service: mesh
 author: typride  
 ms.author: tmilligan
-ms.date: 07/02/2024
+ms.date: 09/18/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
