@@ -32,7 +32,7 @@ Microsoft Mesh application
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
-## Version 5.1413.XX
+## Version 5.2413.XX
 
 ## What's new
 
