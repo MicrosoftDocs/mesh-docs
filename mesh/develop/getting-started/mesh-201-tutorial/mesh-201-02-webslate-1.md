@@ -73,7 +73,7 @@ Now that you're all set up and have had a chance to try out the project, let's m
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/018-loadbutton-selected.png)
 
-    In the **Inspector**, you can see that that **LoadButton** with the name "Load HTML". The component has its **Source** property set to **Graph**, and it connects to a script asset file named "LoadButtonLocalStart". The **LoadButton** GameObject also has variables that we'll be using in the script.
+    In the **Inspector**, you can see that **LoadButton** with the name "Load HTML". The component has its **Source** property set to **Graph**, and it connects to a script asset file named "LoadButtonLocalStart". The **LoadButton** GameObject also has variables that we'll be using in the script.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/019-button-components.png)
 
