@@ -3,7 +3,7 @@ title: Mesh 101 Add interactivity with Mesh Visual Scripting
 description: Learn adding about adding interactivity to objects with Mesh Visual Scripting.
 author: typride
 ms.author: vinnietieto
-ms.date: 2/22/2024
+ms.date: 9/20/2024
 ms.topic: Tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
@@ -101,13 +101,19 @@ Right now, the text on the button says **Label**. Let's change that to
 
     ![A screenshot of a Unity showing two components that were added, Script Machine and Variables.](../../../media/sample-mesh-101/201-script-machine-v2.png)
 
-1. Note that in the **Script Machine** component, the **Source** option is set to **Graph**. You have two choices for **Source**: *Graph* and *Embed*. Click the **Source** drop-down and then select **Embed**.
+1. Note that in the **Script Machine** component, the **Source** option is set to **Graph**. You have two choices for **Source**: *Graph* and *Embed*. Each has advantages and disadvantages. We'll be choosing *Graph* for our scripts because a Graph script is saved as a separate file and this provides greater flexibility.
 
     > [!TIP]
-    > *Graph* and *Embed* each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine article](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We're choosing to use *Embed* here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
+    > *Graph* and *Embed* are described in more detail in the [Unity Script Machine article](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html).
 
-1. In the **Script Machine** component, enter a name in the *Title* field for the graph: "Video Player Behavior."
-1. Enter a description in the *Summary* field for the graph: "Video player behavior definition."
+1. In the **Script Machine** component, click the **New** button.
+1. In the **Save Graph** window, create a new folder and then rename it to "Scripts".
+1. Open the Scripts folder and then, in the **File name** text box, type "PlayVideoButton".
+1. When you're finished, click the **Save** button.
+1. In the **Script Machine** component, enter a name in the *Title* field for the graph: "Video Player."
+1. Enter a description in the *Summary* field for the graph: "Defines how the video player responds to play/stop actions."
+
+    ![__________________](../../../media/sample-mesh-101/526-script-machine-playvideo.png)
 
 ### Setting up the script graph
 
@@ -237,7 +243,7 @@ Now we'll add the nodes that detect if *isPlaying* changes; the video will play 
 
 ### Making the video play
 
-1. In the **Hierarchy**, expand the **VideoPlayer** GameObject and and note that it has two child objects: **Video** and **VideoStill**.
+1. In the **Hierarchy**, expand the **VideoPlayer** GameObject and note that it has two child objects: **Video** and **VideoStill**.
 
 1. Select **Video** and then, in the **Inspector**, note the following:
 
