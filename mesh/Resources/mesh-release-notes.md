@@ -4,7 +4,7 @@ description: Mesh release notes
 ms.service: mesh
 author: typride  
 ms.author: tmilligan
-ms.date: 07/02/2024
+ms.date: 09/18/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
@@ -17,6 +17,7 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+| 2024         | September 17 | 5.2413.XX   |
 | 2024         | September 02 | 5.2412.XX    |
 | 2024         | August 19    | 5.2411.XX    |
 | 2024         | August 05    | 5.2410.XX    |
@@ -30,6 +31,49 @@ Microsoft Mesh application
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2413.XX
+
+## What's new
+
+### New Workshop environment
+
+The Workshop environment is now available to all customers for use in Events or immersive spaces in Teams meetings.
+
+:::image type="content" source="media/Workshop-environment.png" alt-text="Screenshot of workshop environment in the Mesh app in Teams, the environment switcher is open.":::
+
+Use the main stage to get the whole the team together then use the four breakout spaces to convene in and workshop ideas.
+
+:::image type="content" source="media/Workshop-environment-2.png" alt-text="Screenshot of workshop environment in Mesh.":::
+
+### Anyone in your organization can now join Mesh events using the event link
+
+Now anyone in your organization can join a Mesh event using just the Mesh event link.
+
+Using the same link that's used to join a Mesh event directly or rejoin past events, you can now share that link with other people in your organization who you didn't specifically invite in Mesh on the web.
+
+:::image type="content" source="../media/mesh-event-producer-guide/Join-event-link-calendar-rejoin.png" alt-text="Screenshot of calendar invite for a Mesh event showing the join the event link highlighted.":::
+
+> [!IMPORTANT]
+> As of now, in order for someone to join using the event link without being invited, someone who is invited must join first, such as a the organizer, co-organizer(s), or attendee(s).
+
+To recap some great new features, Mesh event links can be:
+
+* Shared with anyone in your organization to join Mesh events directly (as long as someone who *is* invited joins first)
+
+* Used to rejoin past events
+
+* Used to join Mesh events directly
+
+## Resolved issues
+
+* Closing the standalone app, while joining an event, won't show an error to the user anymore. (20151)
+
+* Network connection issues, when in an event, would sometimes show a generic error message instead of telling the user they lost their network connection. (20760)
+
+* Fixed a regression in app startup performance introduced in 24.12. (202250)
+
+* Resolved an issue where cross-room reaction visualizations might not appear for organizers. (211430)
 
 ## Version 5.2412.XX
 
