@@ -3,7 +3,7 @@ title: Mesh 101 Add interactivity with Mesh Visual Scripting
 description: Learn adding about adding interactivity to objects with Mesh Visual Scripting.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/23/2024
+ms.date: 9/24/2024
 ms.topic: Tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
@@ -298,80 +298,92 @@ Let's create the Object Variables that hold the values for the *Video* and *Vide
 
 ### Script graph structure
 
-This is a good place to stop and consider how we want to design the rest of Section 2 of our script graph. Our "if" node will branch off in a "true" flow and a "false" flow. Our Object Variables need to be easily accessible to both flows, so we'll place them on a row between the flows as shown here:
+This is a good place to stop and consider how we want to design the rest of Section 2 of our script graph. Our "If" node will branch off in a "true" flow and a "false" flow. Our Object Variables need to be easily accessible to both flows, so we'll place them on a row between the flows as shown here:
 
-    ![________________](../../../media/sample-mesh-101/536-section-two-design.png)
+![________________](../../../media/sample-mesh-101/536-section-two-design.png)
 
+## Add the Video and VideoStill Object Variables to the script graph
 
-### 
+1. Drag the **Video** Object Variable from the **Blackboard** and then drop it in the script graph to add it as a node. Place it under the **If** node.
 
-=====
+    ![________________](../../../media/sample-mesh-101/537-place-video-node.png)
 
-1. Drag the **Button** Object Variable from the **Blackboard** and then drop it in the script graph to add it as a node. 
+1. Drag the **VideoStill** Object Variable from the **Blackboard** and then drop it in the script graph to add it as a node. Place it to the right of the **Get Object Variable: Video** node.
 
-    ![________________](../../../media/sample-mesh-101/531-button-in-graph.png)
+    ![________________](../../../media/sample-mesh-101/538-place-videostill-node.png)
 
+### Turn the video on
 
-To make the video
-
-1. In the **Hierarchy**, select **PlayVideoButton** to display its script graph in the **Script Graph** window.
-1. In the Script Graph **Blackboard**, create a new Object variable: Type the name "Video" in the **(New Variable Name)** field, and then click the "+" button.
-
-    ![________________](../../../media/sample-mesh-101/527-new-object-variable.png)
-
-1. Set the Object Variable's type to *Game Object*.
-1. Click the round button in the **Value** field, and then, in the **Select Game Object** window, search for and add the "Video" GameObject.
-
-    ![________________](../../../media/sample-mesh-101/528-add-video-game-object.png)
-
-1. Drag the **Video** Object Variable into the script graph to add it as a node.
-
-
-
-1. In that window, drag a connector from the True Control Output port of the **if** node and create a new *Game Object: Set Active* node. (In the Fuzzy Finder, search for **set active**.)
-1. In the *Game Object: Set Active* node, click the round button in the GameObject field, and then, in the **Select GameObject** window, search for and select **Video**.
+1. Drag a connector from the "True" Control Output port of the **If** node and then create a new *Game Object: Set Active* node. (In the Fuzzy Finder, search for **set active**.)
+1. Drag a connector from the Data Output port of the **Get Object Variable: Video** node and then connect it to the first Data Input port of the **Game Object: Set Active** node.
 1. Select the node's **Value** check box, which makes the node active.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/426-set-active-video-node.png)
+    ![____________](../../../media/sample-mesh-101/539-set-active-node.png)
 
-1. Drag a connector from the Control Output port of the **Game Object: Set Active** node and then create another new *Game Object: Set Active* node.
-1. In the new *Game Object: Set Active* node, click the round button in the GameObject field (which currently displays **This**), and then, in the **Select GameObject** window, search for and select **VideoStill**.
-1. Keep the **Value** check box unselected. This makes the node inactive.
+1. Drag a connector from the Data Output port of the **Get Object Variable: VideoStill** node and then connect it to the first Data Input port of the *Game Object: Set Active* node you just created.
 
-    Now when the button is clicked, the video will play and the still image will be hidden. We need just one more thing in this sequence. Since the Play/Stop button is a toggle, we have to make sure that after the attendee clicks **Play,** the button's label changes to **Stop,** and then when it's clicked again, the label changes back to **Play**. To achieve this, we'll add a *TextMeshPro* node.
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/540-connect-videostill-node.png)
 
-1. Drag a connector from the Control Output port of the last **Game Object: Set Active** node and create a new *Text Mesh Pro: Set Text* node. (In the Fuzzy Finder, search for **set text**.)
+1. Keep the node's **Value** check box unselected. This ensures that the node inactive.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/427-set-text.png)
+    Now when the button is clicked, the video will play and the still image will be hidden. We need just one more thing in this sequence. Since the Play/Stop button is a toggle, we have to make sure that after the attendee clicks **Play,** the button's label changes to **Stop,** and then when it's clicked again, the label changes back to **Play**. To achieve this, we need to create and add an Object Variable and then add a *TextMeshPro* node.
 
-    We need to set this node's target GameObject to **Label**. However, there are lots of "Label" GameObjects in the project, and they all look the same in the node's popup list, so let's add this object by using the drag and drop method.
+### Create and add the Label Object Variable
 
-1. Drag the **Label** GameObject that's a child of the **Button** object from the **Hierarchy** and then drop it in the first field in the *Set Test* node.
+1. In the **Hierarchy**, make sure that **PlayVideoButton** and its child object **Button** are expanded.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/428-drag-label.png)
+    ![________________](../../../media/sample-mesh-101/541-playvideobutton-expanded.png)
 
+1. In the Script Graph **Blackboard**, create a new Object variable: Type the name "Label" in the **(New Variable Name)** field, and then click the "+" button.
+1. Set the Object Variable's type to *Game Object*.
+1. From the **Hierarchy**, drag the **Label** GameObject, and then drop it in the **Value** field of the new variable.
+
+    ![________________](../../../media/sample-mesh-101/542-value-label.png)
+
+1. Drag the **Label** Object Variable from the **Blackboard** and then drop it in the script graph to add it as a node. Place it to the right of the **Get Object Variable: VideoStill** node.
+
+    ![________________](../../../media/sample-mesh-101/543-add-label-node.png)
+
+### Add the Text Mesh Pro node
+
+1. Drag a connector from the Control Output port of the **Game Object: Set Active** node and then create a new *Text Mesh Pro: Set Text* node. (In the Fuzzy Finder, search for **set text**.) Place it on the upper row to the right of the **Game Object: Set Active** node.
+
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/544-textmeshpro-node.png)
+
+1. Drag a connector from the Data Output port of the **Get Object Variable: Label** node and then connect it to the top Data Input port on the **Text Mesh Pro: Set Text** node.
 1. In the text field for the node, type in "Stop."
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/429-stop.png)
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/545-textmeshpro-data-input.png)
 
-### Making the video stop
+### Add the nodes to make the video stop
 
 Just three more nodes to go for this graph! We need to set up the false condition for the button, so that if the button is clicked while the video is playing, the *isPlaying* variable becomes false and it causes the video to stop and the button label to change to **Play** again.
 
 We can take a shortcut here.
 
-1. Control-click the last three nodes you added. This selects them.
+1. Control-click the three nodes in the top row that make up the "if true" flow.
+
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/546-if-true-flow-nodes.png)
+
 1. Right-click in the script graph and then, in the popup menu, select **Duplicate Selection**.
-1. Drag the duplicated nodes to an empty space in the graph just below the nodes you duplicated.
+1. Drag the duplicated nodes down in the graph and place them below the row of variables.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/430-duplicated-nodes.png)
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/547-copied-nodes.png)
 
-1. Drag a connector from the False Control Output port of the last **if** node and connect it to the control input port of the first *Game Object: Set Active* node in the duplicated set of nodes.
-1. In that same first *Game Object: Set Active* node (the one that contains **Video**), deselect **Value**.
-1. In the second *Game Object: Set Active* node in the duplicated set (the one that contains **VideoStill**), select **Value**.
-1. In the **Set Text** node, change the text from **Stop** to **Play**.
+### Set up the "if false" nodes
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/431-final-node-settings-for-button.png)
+1. Drag a connector from the Data Output port of the **Get Object Variable: Video** node and then connect it to the top Data Input port of the first **Game Object: Set Active** node in the bottom row of nodes.
+
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/548-connect-video-node.png)
+
+1. In that same first *Game Object: Set Active* node, deselect **Value**.
+1. Drag a connector from the Data Output port of the **Get Object Variable: VideoStill** node and then connect it to the top Data Input port of the second **Game Object: Set Active** node in the bottom row of nodes.
+1. In that second *Game Object: Set Active* node, select **Value**.
+1. Drag a connector from the Data Output port of the **Get Object Variable: Label** node and then connect it to the top Data Input port of the **Text Mesh Pro: Set Text** node to its right.
+1. In that same **Text Mesh Pro: Set Text** node, change the text from **Stop** to **Play**.
+1. Drag a connector from the "False" Control Output port of the **If** node and then connect it to the Control Input port of the first *Game Object: Set Active* node in the bottom row of nodes.
+
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/549-section-two-final.png)
 
 ### Share the video player interactions with others in the experience
 
