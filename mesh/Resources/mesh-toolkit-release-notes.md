@@ -26,8 +26,26 @@ For purposes of this document, there are two categories of users:
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2412.X | 2024-09-10     |
-| Mesh on PC/Quest           | 5.2412.X | 2024-09-02     |
+| Mesh toolkit               | 5.2413.X | 2024-09-24     |
+| Mesh on PC/Quest           | 5.2413.X | 2024-09-24     |
+
+## Mesh Toolkit 5.2413.X
+
+### What's new
+
+### Mesh Toolkit uploader
+
+* Older uploader versions will warn before changing assets made using a newer version. While the Mesh runtime is backwards compatible with older assets, we cannot guarantee compatibility with an asset that has subsequently been downgraded from a newer version. In the unlikely event that downgrading an asset was somehow unavoidable, please test your asset thoroughly before using in an event.
+
+* Versions of Mesh toolkit older than 5.2406 (released May 2024) will be deprecated starting October 1st. (Note: No action is needed for environments that are already published on the affected toolkit versions earlier than 24.6, existing uploads will continue to function as they do today.)
+
+### Visual scripting
+
+* Users can control whether Visual Scripting errors block upload by using the new settings under Project Settings > Mesh Toolkit Settings > Extensions > Visual Scripting.
+
+* If a visual script variable is accidentally set to a value that's incompatible with its declared type (for example, if you're using "Add (in Math/Scalar)" as the input for setting an Integer-type variable), content validation now flags this as a correctness issue. This shows up in the Mesh Visual Scripting Diagnostics panel, in CPA (Content Performance Analyzer), and before upload.
+
+* Visual scripts can now access properties and methods of Text Mesh Pro - Text (UI). The new script nodes have names starting with Text Mesh Pro UGUI in the script node selector.
 
 ## Mesh Toolkit 5.2412.X
 
