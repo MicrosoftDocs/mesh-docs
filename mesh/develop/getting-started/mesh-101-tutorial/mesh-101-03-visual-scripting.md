@@ -3,7 +3,7 @@ title: Mesh 101 Add interactivity with Mesh Visual Scripting
 description: Learn adding about adding interactivity to objects with Mesh Visual Scripting.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/20/2024
+ms.date: 9/23/2024
 ms.topic: Tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
@@ -138,13 +138,21 @@ The first goal, detect when the button gets clicked, will require three nodes. T
 > [!NOTE]
 > A node is also called a *unit* in Visual Scripting. In this tutorial, we'll continue using the term *node*.
 
-1. Drag **Button** from the **Hierarchy** and then drop it in the script graph.
+### Create a Button Object Variable
 
-    ![A screenshot of Uniy showing the Button being dragged to the script graph.](../../../media/sample-mesh-101/410-drag-button.png)
+1. In the **Hierarchy**, expand **PlayVideoButton**.
+1. In the Script Graph **Blackboard**, create a new Object variable: Type the name "Button" in the **(New Variable Name)** field, and then click the "+" button.
 
-1. In the **Node** menu, select **Button**. A *Game Object Literal* node referencing that object is added to the graph.
+    ![________________](../../../media/sample-mesh-101/529-new-button-var.png)
 
-    ![A screenshot of Unity showing the Script graph selected and button object displaying in the Script Graph window.](../../../media/sample-mesh-101/411-game-object-button-node.png)
+1. Set the Object Variable's type to *Game Object*.
+1. From the **Hierarchy**, drag the **Button** GameObject, and then drop it in the **Value** field of the new variable.
+
+    ![________________](../../../media/sample-mesh-101/530-value-button.png)
+
+1. Drag the **Button** Object Variable from the **Blackboard** and then drop it in the script graph to add it as a node. 
+
+    ![________________](../../../media/sample-mesh-101/531-button-in-graph.png)
 
 ***
 
@@ -168,8 +176,8 @@ This component is added automatically at runtime to interactable bodies; it expo
 
 In the script graph, let's add a node that lets us know when the button is selected.
 
-1. If you need to, exit Play mode, and then select **PlayVideoButton** in the **Hierarchy** to ensure that you're seeing its embedded graph in the **Script Graph** window. 
-1. In the script graph, click and hold on the outport port of the **Game Object** node, and then release the mouse button. This opens the Fuzzy Finder. **WARNING**: Once you open the Fuzzy Finder, don't click anywhere outside of the Unity interface. This closes the Fuzzy Finder and causes unpredictable behavior in the Script Graph.
+1. If you need to, exit Play mode, and then select **PlayVideoButton** in the **Hierarchy** to ensure that you're seeing its graph in the **Script Graph** window. 
+1. In the script graph, click and hold on the outport port of the **Get Object Variable** node, and then release the mouse button. This opens the Fuzzy Finder. **WARNING**: Once you open the Fuzzy Finder, don't click anywhere outside of the Unity interface. This closes the Fuzzy Finder and causes unpredictable behavior in the Script Graph.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/413-fuzzy-finder.png)
 
@@ -203,7 +211,8 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/454-isplaying-var.png)
 
-1. Drag a connector from the **True** Control Output port of the **If** node and then create a new *Set Object Variable* node. (In the Fuzzy Finder, search for **set object**.). 
+1. Drag the "isPlaying" variable to the script graph and then drop it to the right of the **If* node. 
+1. Drag a connector from the *True* Control Output port of the *If* node and then create a new *Set Object Variable* node. (In the Fuzzy Finder, search for set object.).
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/417-set-object-variable-node.png)
 
@@ -213,7 +222,7 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
     The *isPlaying* variable has to perform double-duty here. To ensure that *isPlaying* always has the correct value, let's give it input from a *Negate* node.
 
-1. Drag a connector from the Data Input port of the **Set Object Variable: isPlaying** node and then create a new *Negate* node. (In the Fuzzy Finder, search for **negate**.)
+1. Drag a connector from the bottom Data Input port of the **Set Object Variable: isPlaying** node and then create a new *Negate* node. (In the Fuzzy Finder, search for **negate**.)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/419-add-negate-node.png)
 
@@ -228,7 +237,7 @@ The *Negate* node makes the value of *IsPlaying* change to the opposite of whate
 
 Now we'll add the nodes that detect if *isPlaying* changes; the video will play or stop based on that change.
 
-1. In the lower part of the graph, add a *Get Object Variable* node and set its value to *isPlaying*. (You can right-click in the graph and then select **Add Node**.)
+1. In the lower part of the graph, add a *Get Object Variable* node and set its value to *isPlaying*. (You can right-click in the graph and then select **Add Node**. Search for *get object*.)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/421-get-var-is-playing-second-node.png)
 
@@ -247,9 +256,7 @@ Now we'll add the nodes that detect if *isPlaying* changes; the video will play 
 
 1. Select **Video** and then, in the **Inspector**, note the following:
 
-    - **Video** has a component named **Video Player**, which has a video attached named **WindTurbine**.
-
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/424-video-player.png)
+    - **Video** has a component named **Video Player**, which has a link to a Wind Turbine video.
 
     - **Video** is inactive (the check box next to its name is empty).
 
@@ -265,7 +272,21 @@ When the scene starts, the video screen displays a still image (due to **VideoSt
 
 The remaining nodes in our graph make all of this happen.
 
-1. Drag a connector from the True Control Output port of the **if** node and create a new *Game Object: Set Active* node. (In the Fuzzy Finder, search for **set active**.)
+1. In the **Hierarchy**, select **PlayVideoButton** to display its script graph in the **Script Graph** window.
+1. In the Script Graph **Blackboard**, create a new Object variable: Type the name "Video" in the **(New Variable Name)** field, and then click the "+" button.
+
+    ![________________](../../../media/sample-mesh-101/527-new-object-variable.png)
+
+1. Set the Object Variable's type to *Game Object*.
+1. Click the round button in the **Value** field, and then, in the **Select Game Object** window, search for and add the "Video" GameObject.
+
+    ![________________](../../../media/sample-mesh-101/528-add-video-game-object.png)
+
+1. Drag the **Video** Object Variable into the script graph to add it as a node.
+
+
+
+1. In that window, drag a connector from the True Control Output port of the **if** node and create a new *Game Object: Set Active* node. (In the Fuzzy Finder, search for **set active**.)
 1. In the *Game Object: Set Active* node, click the round button in the GameObject field, and then, in the **Select GameObject** window, search for and select **Video**.
 1. Select the node's **Value** check box, which makes the node active.
 
