@@ -4,7 +4,7 @@ description: Mesh toolkit active known issues
 ms.service: mesh
 author: typride 
 ms.author: tmilligan
-ms.date: 4/19/2024
+ms.date: 9/24/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
