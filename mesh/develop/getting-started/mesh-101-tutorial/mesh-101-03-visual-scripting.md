@@ -479,7 +479,7 @@ For this feature, we'll enhance an existing visual script that causes an info di
 ## Station 3.3: Teleport to the turbine generator
 
 For this feature, we'll add some nodes to a script graph that allows attendees
-in the scene to teleport. When a attendee presses the button, they're
+in the scene to teleport. When an attendee presses the button, they're
 teleported from their current location at Station 3.3 to an elevated
 platform that's attached to a wind turbine generator. They can then
 examine the generator.
@@ -500,9 +500,9 @@ examine the generator.
 
     ![A screen shot](../../../media/sample-mesh-101/439-teleport-button.png)
 
-    Note that in the **Inspector**, there's a **Script Machine** component with a script graph named *Teleport to Open Air Platform*. The **Source** option is set to **Embed**, which means the script graph is embedded in the scene.
+    Note that in the **Inspector**, there's a **Script Machine** component named *Teleport to Location* with a script attached named *TeleportToLocationButtonStart*. The **Source** option is set to **Graph**, which means the script graph is stored in the project as an independant file.
 
-    ![A screen shot](../../../media/sample-mesh-101/440-teleport-graph-embedded.png)
+    ![A screen shot](../../../media/sample-mesh-101/440-teleport-graph.png)
 
 1. Click the **Edit Graph** button. Just as in the previous chapter, our graph already has some nodes set up for you. 
 
@@ -527,13 +527,13 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
     **Position**:
 
     X = 6  
-    Y = 58  
-    Z = 61
+    Y = 56
+    Z = 60
 
     **Rotation**: 
 
     X = 0  
-    Y = 270  
+    Y = 255   
     Z = 0
 
     ![A screen shot](../../../media/sample-mesh-101/455-teleport-transform-settings.png)
@@ -544,15 +544,24 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
 
     ![A screen shot](../../../media/sample-mesh-101/442-active-travel-point.png)
 
-### Adding the teleport nodes
+### Create and add a Teleport Location Object Variable
 
-1. In the **Teleport to Open Air Platform** script graph, drag a connector from the True output control port of the **If** node and then create a new node called **Game Object: Set Active**. (In the Fuzzy Finder, search for **set active**.)
+1. In the Script Graph **Blackboard**, create a new Object variable: Type the name "TeleportLocation" in the **(New Variable Name)** field, and then click the "+" button.
+1. Set the Object Variable's type to *Game Object*.
+1. From the **Hierarchy**, drag the **TeleportLocationWindTurbine** GameObject, and then drop it in the **Value** field of the new variable.
+
+    ![________________](../../../media/sample-mesh-101/551-value-teleport.png)
+
+1. Drag the **Button** Object Variable from the **Blackboard** and then drop it in the script graph to add it as a node. Place it below the **If** node.
+
+    ![________________](../../../media/sample-mesh-101/552-add-teleport-node.png)
+
+### Add the teleport nodes
+
+1. Drag a connector from the "True" output control port of the **If** node and then create a new node called **Game Object: Set Active**. (In the Fuzzy Finder, search for **set active**.)
+1. Drag a connector from the Data Output port of the **Get Object Variable: TeleportLocation** node and then connect it to the first Data Input port of the **Game Object: Set Active** node. 
 
     ![A screen shot](../../../media/sample-mesh-101/314-set-active-node.png)
-
-1. Drag the **TeleportLocationWindTurbine**  object from the **Hierarchy** and then drop it in the field that displays **This** in the *Game Object: Set Active* node.
-
-    ![A screen shot](../../../media/sample-mesh-101/443-set-active-teleport.png)
 
 1. Select the node's **Value** option to make it active.
 
@@ -560,13 +569,11 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
 
 1. Drag a connector from the Control Output port of the **Game Object: Set Active** node and then create a new node called **Travel Point: Travel to Point**. (In the Fuzzy Finder, search for **travel point: travel**.)
 
-1. In the **Travel Point: Travel to Point** node, click the round button in the field that displays **This**, and then, in the **Select TravelPoint** window, select **TeleportLocationWindTurbine**.
+1. Drag a connector from the Data Output port of the **Get Object Variable: TeleportLocation** node and then connect it to the Data Input port of the  **Travel Point: Travel to Point** node. 
 
-    ![A screen shot](../../../media/sample-mesh-101/444-select-travel-point.png)
+    ![A screen shot](../../../media/sample-mesh-101/553-connect-travelpoint-node.png)
 
 This completes the graph.
-
-![A screen shot](../../../media/sample-mesh-101/516-graph-completed.png)
 
 ### Test your work
 
