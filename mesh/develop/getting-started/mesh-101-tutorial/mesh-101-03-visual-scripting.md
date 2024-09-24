@@ -123,20 +123,25 @@ Right now, the text on the button says **Label**. Let's change that to
 
     As we add nodes, you may want more space in the window; you can click the three-dot button and then select **Maximize** to achieve this, or click the **Full Screen** button in the upper right corner of the window.
 
+    > [!NOTE]
+    > A node is also called a *unit* in Visual Scripting. In this tutorial, we'll continue using the term *node*.
+
 1. We don't need the default **OnStart** and **OnUpdate** nodes; delete them.
+
+### Script graph layout
+
+Our script graph will have two sections:
+
+**Section 1**: Detect when the video player Play/Stop button gets clicked.
+**Section 2**: When it gets clicked, play the video. When it gets clicked again, stop the video.
+
+Here's a preview of what the end result will look like:
+
+    ![_______________](../../../media/sample-mesh-101/532-graph-logic.png)
 
 ### Detect if the button is clicked
 
-We can think of this script graph as having three main goals:
-
-1. Detect when the video player Play/Stop button gets clicked.
-1. When it gets clicked, play the video.
-1. When it gets clicked again, stop the video.
-
-The first goal, detect when the button gets clicked, will require three nodes. The GameObject in the project that actually "listens" for and reacts to a click is **Button**. Let's add that to the script graph.
-
-> [!NOTE]
-> A node is also called a *unit* in Visual Scripting. In this tutorial, we'll continue using the term *node*.
+The first section, which detects if the button gets clicked, will require three nodes. The GameObject in the project that actually "listens" for and reacts to a click is **Button**. Let's add that to the script graph.
 
 ### Create a Button Object Variable
 
@@ -195,7 +200,9 @@ These are our three button-click detection nodes. The *Is Selected* node starts 
 
 ### Play or stop the video
 
-If *On State Changed* has a value of true, the video will play. If it's already playing and the button is pressed, *On State Changed* changes to a value of false and the video stops playing. Our next step is to add an *if* node to determine this flow.
+If *On State Changed* has a value of true, the video will play. If it's already playing and the button is pressed, *On State Changed* changes to a value of false and the video stops playing. This affects the nodes in Section 2 of the script graph which we'll soon be adding to provide the video and still image that can be displayed.
+
+Our next step here is to add an *if* node to determine the flow.
 
 1. Drag a connector from the Control Output port of the **On State Changed** node and then create a new *if* node. (In the Fuzzy Finder, search for **if**.)
 
@@ -233,9 +240,9 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
 The *Negate* node makes the value of *IsPlaying* change to the opposite of whatever it's currently set to. When the scene starts, *isPlaying* is false (the default). When the Play/Stop button is clicked, the *Negate* node causes *isPlaying* in the **Set Object Variable** node to be set to true and this makes the video play. When the button is clicked again, the *Negate* node will cause *isPlaying* to be reset to false and this will make the video stop.
 
-### Turning the video on or off
+### Play the video or display a still image
 
-Now we'll add the nodes that detect if *isPlaying* changes; the video will play or stop based on that change.
+Now we'll start creating Section 2 of the script graph. You'll add the nodes that detect if *isPlaying* changes; this determines whether to play the video or display a still image in Station 3.1's WebSlate.
 
 1. In the lower part of the graph, add a *Get Object Variable* node and set its value to *isPlaying*. (You can right-click in the graph and then select **Add Node**. Search for *get object*.)
 
@@ -250,7 +257,7 @@ Now we'll add the nodes that detect if *isPlaying* changes; the video will play 
 
     ![A screenshot of a video play Description](../../../media/sample-mesh-101/423-if-node.png)
 
-### Making the video play
+### The Video and VideoStill (image) GameObjects
 
 1. In the **Hierarchy**, expand the **VideoPlayer** GameObject and note that it has two child objects: **Video** and **VideoStill**.
 
@@ -271,6 +278,41 @@ Now we'll add the nodes that detect if *isPlaying* changes; the video will play 
 When the scene starts, the video screen displays a still image (due to **VideoStill** being active) and does *not* play a video (which is due to **Video** being inactive). When the attendee presses the Play/Stop button while it's showing **Play**, it makes **Video**  active, which causes the video to play, and simultaneously makes **VideoStill** inactive, which hides the still image. The button's label  also changes from **Play** to **Stop** When the attendee presses the button again, **Video** is made inactive, stopping the video, and **VideoStill** is made active again, which makes the video screen display the still image again. 
 
 The remaining nodes in our graph make all of this happen.
+
+### Create the Video and VideoStill (image) Object Variables
+
+Let's create the Object Variables that hold the values for the *Video* and *VideoStill* GameObjects.
+
+1. In the **Hierarchy**, expand **VideoPlayer**.
+1. In the Script Graph **Blackboard**, create a new Object variable: Type the name "Video" in the **(New Variable Name)** field, and then click the "+" button.
+1. Set the Object Variable's type to *Game Object*.
+1. From the **Hierarchy**, drag the **Video** GameObject, and then drop it in the **Value** field of the new variable.
+
+    ![________________](../../../media/sample-mesh-101/534-video-value.png)
+
+1. In the **Blackboard**, create a new Object variable: Type the name "VideoStill" in the **(New Variable Name)** field, and then click the "+" button.
+1. Set the Object Variable's type to *Game Object*.
+1. From the **Hierarchy**, drag the **VideoStill** GameObject, and then drop it in the **Value** field of the new variable.
+
+    ![________________](../../../media/sample-mesh-101/535-videostill-value.png)
+
+### Script graph structure
+
+This is a good place to stop and consider how we want to design the rest of Section 2 of our script graph. Our "if" node will branch off in a "true" flow and a "false" flow. Our Object Variables need to be easily accessible to both flows, so we'll place them on a row between the flows as shown here:
+
+    ![________________](../../../media/sample-mesh-101/536-section-two-design.png)
+
+
+### 
+
+=====
+
+1. Drag the **Button** Object Variable from the **Blackboard** and then drop it in the script graph to add it as a node. 
+
+    ![________________](../../../media/sample-mesh-101/531-button-in-graph.png)
+
+
+To make the video
 
 1. In the **Hierarchy**, select **PlayVideoButton** to display its script graph in the **Script Graph** window.
 1. In the Script Graph **Blackboard**, create a new Object variable: Type the name "Video" in the **(New Variable Name)** field, and then click the "+" button.
