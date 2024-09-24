@@ -4,7 +4,7 @@ description: Learn how to load a URL from a 3D asset.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/11/2024
+ms.date: 9/3/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity, webslates, HTML
 ---
@@ -34,9 +34,13 @@ In this chapter, we move forward to Station 3 and explore a way to load data fro
 ## Explore the Earth script
 
 1. In the **Hierarchy**, collapse the GameObject named **2 - StaticContentWebslate**.
-1. Expand **3 - LoadURL** and note that it has child objects named **EarthActions** and **Earth**. Each of these objects has a Script Machine attached.
+1. Expand **3 - LoadURL** and note that it has child objects named **EarthActions** and **Earth**. 
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/122-earth-url-expanded.png)
+
+    Each of these objects has a Script Machine attached with the **Source** set to "Graph."
+
+    ![A screenshot of a computer Description ](../../../media/mesh-201/143-source-graph.png)
 
 1. Select the **Earth** GameObject. Its script graph appears in the **Script Graph** window. 
 
@@ -52,7 +56,7 @@ This script is where we need to make our update.
 
 1. In the **Hierarchy**, select the **EarthActions** GameObject. Its script graph appears in the **Script Graph** window. 
 
-    This script graph is named *Load Webslate from Globe click* and has two groups: **Custom Default Webslate Behavior** and **URL Builder.**
+    This script graph is named *Load Webslate from Globe click* and has three groups: **Custom Default Webslate Behavior** and **URL Builder**, and **Update webslate**.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/054-earthactions-script.png)
 
@@ -82,17 +86,13 @@ Now we just need to ensure that this URL (which, naturally, changes every time *
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/060-web-slate-load-url-node.png)
 
-1. Drag a connector from the Data Output port of the **Set Variable: Object** node and then attach it to the **Url** Data Input port of the **Web Slate: Load** node.
+1. Drag a connector from the Data Output port of the **Set Variable: Object** node with the "WebSlateURL" variable and then attach it to the **Url** Data Input port of the **Web Slate: Load** node.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/061-data-connector-web-slate-load.png)
 
-1. In the **Hierarchy**, expand the **WebSlateFramed** object.
+1. Drag a connector from the Data Output port of the **Set Variable: Object** node with the "WebSlate" variable and then attach it to the first Data Input port of the **Web Slate: Load** node.
 
-    ![A screenshot of a computer Description ](../../../media/mesh-201/062-webslateframed-expanded.png)
-
-1. Drag the **WebSlateFramed** child object named **WebSlate** from the **Hierarchy** and then drop it in the field that displays **This** in the **Web Slate: Load** node.
-
-    ![A screenshot of a computer Description ](../../../media/mesh-201/063-drag-and-drop-webslate.png)
+    ![A screenshot of a computer Description ](../../../media/mesh-201/144-connect-webslate-var-to-load-node.png)
 
 ## Test your work
 
@@ -106,7 +106,7 @@ Now we just need to ensure that this URL (which, naturally, changes every time *
 
 **Notes**
 - The WebSlate is *interactive* inside an event. An attendee can click the +/- buttons to zoom in or out, or drag the map to adjust its position, or click links. Note, however, that other attendees in the experience won't see these changes; they'll only see an update when the globe is clicked again.
-- If you watch the **Script Graph** window as you click the globe, you can see the latitude and longitude of the clicked location flowing out of the connectors from the **Microsoft Mesh: On State Changed** node.
+- If you turn on the **Values** feature in the **Script Graph** window and then watch the script as you click the globe, you can see the latitude and longitude of the clicked location flowing out of the connectors from the **Microsoft Mesh: On State Changed** node.
 
     ![A screenshot of a computer Description ](../../../media/mesh-201/065-connector-data.png)
 
