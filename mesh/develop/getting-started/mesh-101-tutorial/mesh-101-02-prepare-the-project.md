@@ -17,6 +17,9 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial
 
 <br>
 
+> [!NOTE]
+> We make regular updates to the Mesh toolkit and this video may not reflect all the latest changes. You should view the content of this article as the source of truth.
+
 ## Scenes in the project
 
 1. Open the **Mesh101** project in Unity. If you have more than one version of Unity installed, be sure to open the project with `Unity 2022.3.34` which is required for this tutorial.
