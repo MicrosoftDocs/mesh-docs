@@ -4,7 +4,7 @@ description: Learn how to set up a question and answer dialog that uses Azure Op
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/21/2024
+ms.date: 9/25/2024
 ms.topic: tutorial
 keywords: Microsoft Mesh, getting started, Mesh 201, tutorial, GitHub, WebSlates, web, cloud scripting, AI, Azure AI, artificial intelligence
 ---
@@ -64,11 +64,17 @@ The resource deploys and you should see a message saying that the deployment is 
 
 1. Select **Create new deployment**.
 
-1. Click the **Select a model** drop-down and then choose "gpt-35-turbo". Note that, if you prefer, you can choose a different model; however, this would require some changes to the code.
+%%%1. Click the **Deploy Model** drop-down and then select **Deploy base Model**.
+%%%1.In the **Select a model** dialog, select "gpt-35-turbo".
+%%%1. If you wish, take a moment to view the description. When you're finished, click the **Confirm** button.
+
+    ![__________________________________](../../../media/mesh-201/145-select-a-model.png)
+
+**Note**: You can choose a different model, but this would require some changes to the code.
 
 1. In the **Deployment name** field, type in "gpt-35-turbo".
 
-1. For the other settings, choose the names and options that make the most sense for you and your organization.
+1. For the other settings, choose the names and options that make the most sense for you and your organization. When you're finished, click the **Deploy** button.
 
 ### Copy the URI and key
 
