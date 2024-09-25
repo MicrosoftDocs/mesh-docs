@@ -4,7 +4,7 @@ description: Learn how to troubleshoot certain issues with Cloud Scripting for M
 ms.service: mesh
 author: typride
 ms.author: vinnietieto
-ms.date: 02/29/2024
+ms.date: 9/24/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, scripting, cloud scripting, visual scripting, coding, troubleshooting, problems
 ---
@@ -73,7 +73,7 @@ Configure the PC client logs by creating a file on the Desktop named "startup_se
 }
 ```
 
-Reproduce the issue, and then share the Unity logs. Microsoft Mesh application logs can be found at `%USERPROFILE%\AppData\LocalLow\Microsoft Corporation\Microsoft Mesh\player.log`
+Reproduce the issue, and then share the Unity logs. Microsoft Mesh application logs can be found at `%USERPROFILE%\AppData\LocalLow\Microsoft\Microsoft Mesh\Player.log`
 
 ### Collecting server logs
 

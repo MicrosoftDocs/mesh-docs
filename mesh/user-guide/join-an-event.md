@@ -110,7 +110,8 @@ To join a Mesh event using the Mesh app in Teams:
     :::image type="content" source="media/Mesh-app-in-teams-open-in-Microsoft-teams.png" alt-text="Screenshot of Mesh app in Teams.":::
 
 > [!TIP]
-> Did you know you can rejoin past events? Revisit your favorite events or use a Mesh event as a drop-in space!
+> Did you know you can rejoin past events? Use the Mesh event link to revisit your favorite events or use a Mesh event as a drop-in space.
+
 ---
 
 ## Enjoy your event
