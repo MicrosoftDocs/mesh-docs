@@ -527,7 +527,7 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
     **Position**:
 
     X = 6  
-    Y = 56
+    Y = 56  
     Z = 60
 
     **Rotation**: 
