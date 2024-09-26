@@ -3,7 +3,7 @@ title: Mesh 101 Add interactivity with Mesh Visual Scripting
 description: Learn adding about adding interactivity to objects with Mesh Visual Scripting.
 author: typride
 ms.author: vinnietieto
-ms.date: 2/22/2024
+ms.date: 9/24/2024
 ms.topic: Tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
@@ -16,6 +16,9 @@ keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=6b52c8c4-06cd-4908-b31b-7f9c3650134f]
 
 <br>
+
+> [!NOTE]
+> We make regular updates to the Mesh toolkit and this video may not reflect all the latest changes. You should view the content of this article as the source of truth.
 
 Now that we've completed the setup phase, let's move on to making your GameObjects interactive! In this chapter, we'll dive into Mesh Visual Scripting, which you can use to add custom logic to your Environment.
 
@@ -101,44 +104,63 @@ Right now, the text on the button says **Label**. Let's change that to
 
     ![A screenshot of a Unity showing two components that were added, Script Machine and Variables.](../../../media/sample-mesh-101/201-script-machine-v2.png)
 
-1. Note that in the **Script Machine** component, the **Source** option is set to **Graph**. You have two choices for **Source**: *Graph* and *Embed*. Click the **Source** drop-down and then select **Embed**.
+1. Note that in the **Script Machine** component, the **Source** option is set to **Graph**. You have two choices for **Source**: *Graph* and *Embed*. Each has advantages and disadvantages. We'll be choosing *Graph* for our scripts because a Graph script is saved as a separate file and this provides greater flexibility.
 
     > [!TIP]
-    > *Graph* and *Embed* each have advantages and disadvantages; you can learn more about them in the [Unity Script Machine article](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html). We're choosing to use *Embed* here because, among other things, you can directly reference your scene nodes without making intermediate Object variables.
+    > *Graph* and *Embed* are described in more detail in the [Unity Script Machine article](https://docs.unity3d.com/Packages/com.unity.visualscripting@1.8/manual/vs-graph-machine-types.html).
 
-1. In the **Script Machine** component, enter a name in the *Title* field for the graph: "Video Player Behavior."
-1. Enter a description in the *Summary* field for the graph: "Video player behavior definition."
+1. In the **Script Machine** component, click the **New** button.
+1. In the **Save Graph** window, create a new folder and then rename it to "Scripts".
+1. Open the Scripts folder and then, in the **File name** text box, type "PlayVideoButton".
+1. When you're finished, click the **Save** button.
+1. In the **Script Machine** component, enter a name in the *Title* field for the graph: "Video Player."
+1. Enter a description in the *Summary* field for the graph: "Defines how the video player responds to play/stop actions."
 
-### Setting up the script graph
+    ![__________________](../../../media/sample-mesh-101/526-script-machine-playvideo.png)
 
-1. In the **Script Machine** component, click **Edit Graph**. This opens the **Script Graph** window. Drag and place it next to the **Project** and **Console** tab, if it's not already there, so that we can see the script graph and **Scene** window at the same time.
+### Setting up the Script Graph
+
+1. In the **Script Machine** component, click **Edit Graph**. This opens the **Script Graph** window. Drag and place it next to the **Project** and **Console** tab, if it's not already there, so that we can see the Script Graph and **Scene** window at the same time.
 
     ![A screenshot of Unity showing the Script Machine component highlighted with Script graph open.](../../../media/sample-mesh-101/409-script-graph-docked.png)
 
     As we add nodes, you may want more space in the window; you can click the three-dot button and then select **Maximize** to achieve this, or click the **Full Screen** button in the upper right corner of the window.
 
+    > [!NOTE]
+    > A node is also called a *unit* in Visual Scripting. In this tutorial, we'll continue using the term *node*.
+
 1. We don't need the default **OnStart** and **OnUpdate** nodes; delete them.
+
+### Script graph layout
+
+Our Script Graph will have two sections:
+
+**Section 1**: Detect when the video player Play/Stop button gets clicked.
+**Section 2**: When it gets clicked, play the video. When it gets clicked again, stop the video.
+
+Here's a preview of what the end result will look like:
+
+![_______________](../../../media/sample-mesh-101/532-graph-logic.png)
 
 ### Detect if the button is clicked
 
-We can think of this script graph as having three main goals:
+The first section, which detects if the button gets clicked, will require three nodes. The GameObject in the project that actually "listens" for and reacts to a click is **Button**. Let's add that to the Script Graph.
 
-1. Detect when the video player Play/Stop button gets clicked.
-1. When it gets clicked, play the video.
-1. When it gets clicked again, stop the video.
+### Create a Button Object Variable
 
-The first goal, detect when the button gets clicked, will require three nodes. The GameObject in the project that actually "listens" for and reacts to a click is **Button**. Let's add that to the script graph.
+1. In the **Hierarchy**, expand **PlayVideoButton**.
+1. In the Script Graph **Blackboard**, create a new Object variable: Type the name "Button" in the **(New Variable Name)** field, and then click the "+" button.
 
-> [!NOTE]
-> A node is also called a *unit* in Visual Scripting. In this tutorial, we'll continue using the term *node*.
+    ![________________](../../../media/sample-mesh-101/529-new-button-var.png)
 
-1. Drag **Button** from the **Hierarchy** and then drop it in the script graph.
+1. Set the Object Variable's type to *Game Object*.
+1. From the **Hierarchy**, drag the **Button** GameObject, and then drop it in the **Value** field of the new variable.
 
-    ![A screenshot of Uniy showing the Button being dragged to the script graph.](../../../media/sample-mesh-101/410-drag-button.png)
+    ![________________](../../../media/sample-mesh-101/530-value-button.png)
 
-1. In the **Node** menu, select **Button**. A *Game Object Literal* node referencing that object is added to the graph.
+1. Drag the **Button** Object Variable from the **Blackboard** and then drop it in the Script Graph to add it as a node. 
 
-    ![A screenshot of Unity showing the Script graph selected and button object displaying in the Script Graph window.](../../../media/sample-mesh-101/411-game-object-button-node.png)
+    ![________________](../../../media/sample-mesh-101/531-button-in-graph.png)
 
 ***
 
@@ -148,7 +170,7 @@ The first goal, detect when the button gets clicked, will require three nodes. T
 
 ![A screenshot of Unity showing the Mesh interactable setup window and included settings.](../../../media/sample-mesh-101/478-mesh-interactable-setup.png)
 
-*Script Machine*: This has a script graph named *Button Base Behaviour.*
+*Script Machine*: This has a Script Graph named *Button Base Behaviour.*
 
 ![A screenshot of Unity showing hte Button Base behavior window for Script Machine.](../../../media/sample-mesh-101/479-script-machine-button-base.png)
 
@@ -160,10 +182,10 @@ This component is added automatically at runtime to interactable bodies; it expo
 
 ***
 
-In the script graph, let's add a node that lets us know when the button is selected.
+In the Script Graph, let's add a node that lets us know when the button is selected.
 
-1. If you need to, exit Play mode, and then select **PlayVideoButton** in the **Hierarchy** to ensure that you're seeing its embedded graph in the **Script Graph** window. 
-1. In the script graph, click and hold on the outport port of the **Game Object** node, and then release the mouse button. This opens the Fuzzy Finder. **WARNING**: Once you open the Fuzzy Finder, don't click anywhere outside of the Unity interface. This closes the Fuzzy Finder and causes unpredictable behavior in the Script Graph.
+1. If you need to, exit Play mode, and then select **PlayVideoButton** in the **Hierarchy** to ensure that you're seeing its graph in the **Script Graph** window. 
+1. In the Script Graph, click and hold on the outport port of the **Get Object Variable** node, and then release the mouse button. This opens the Fuzzy Finder. **WARNING**: Once you open the Fuzzy Finder, don't click anywhere outside of the Unity interface. This closes the Fuzzy Finder and causes unpredictable behavior in the Script Graph.
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/413-fuzzy-finder.png)
 
@@ -181,7 +203,9 @@ These are our three button-click detection nodes. The *Is Selected* node starts 
 
 ### Play or stop the video
 
-If *On State Changed* has a value of true, the video will play. If it's already playing and the button is pressed, *On State Changed* changes to a value of false and the video stops playing. Our next step is to add an *if* node to determine this flow.
+If *On State Changed* has a value of true, the video will play. If it's already playing and the button is pressed, *On State Changed* changes to a value of false and the video stops playing. This affects the nodes in Section 2 of the Script Graph which we'll soon be adding to provide the video and still image that can be displayed.
+
+Our next step here is to add an *if* node to determine the flow.
 
 1. Drag a connector from the Control Output port of the **On State Changed** node and then create a new *if* node. (In the Fuzzy Finder, search for **if**.)
 
@@ -197,7 +221,8 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/454-isplaying-var.png)
 
-1. Drag a connector from the **True** Control Output port of the **If** node and then create a new *Set Object Variable* node. (In the Fuzzy Finder, search for **set object**.). 
+1. Drag the "isPlaying" variable to the Script Graph and then drop it to the right of the **If* node. 
+1. Drag a connector from the *True* Control Output port of the *If* node and then create a new *Set Object Variable* node. (In the Fuzzy Finder, search for set object.).
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/417-set-object-variable-node.png)
 
@@ -207,7 +232,7 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
     The *isPlaying* variable has to perform double-duty here. To ensure that *isPlaying* always has the correct value, let's give it input from a *Negate* node.
 
-1. Drag a connector from the Data Input port of the **Set Object Variable: isPlaying** node and then create a new *Negate* node. (In the Fuzzy Finder, search for **negate**.)
+1. Drag a connector from the bottom Data Input port of the **Set Object Variable: isPlaying** node and then create a new *Negate* node. (In the Fuzzy Finder, search for **negate**.)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/419-add-negate-node.png)
 
@@ -218,11 +243,11 @@ If *On State Changed* has a value of true, the video will play. If it's already 
 
 The *Negate* node makes the value of *IsPlaying* change to the opposite of whatever it's currently set to. When the scene starts, *isPlaying* is false (the default). When the Play/Stop button is clicked, the *Negate* node causes *isPlaying* in the **Set Object Variable** node to be set to true and this makes the video play. When the button is clicked again, the *Negate* node will cause *isPlaying* to be reset to false and this will make the video stop.
 
-### Turning the video on or off
+### Play the video or display a still image
 
-Now we'll add the nodes that detect if *isPlaying* changes; the video will play or stop based on that change.
+Now we'll start creating Section 2 of the Script Graph. You'll add the nodes that detect if *isPlaying* changes; this determines whether to play the video or display a still image in Station 3.1's WebSlate.
 
-1. In the lower part of the graph, add a *Get Object Variable* node and set its value to *isPlaying*. (You can right-click in the graph and then select **Add Node**.)
+1. In the lower part of the graph, add a *Get Object Variable* node and set its value to *isPlaying*. (You can right-click in the graph and then select **Add Node**. Search for *get object*.)
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/421-get-var-is-playing-second-node.png)
 
@@ -235,15 +260,13 @@ Now we'll add the nodes that detect if *isPlaying* changes; the video will play 
 
     ![A screenshot of a video play Description](../../../media/sample-mesh-101/423-if-node.png)
 
-### Making the video play
+### The Video and VideoStill (image) GameObjects
 
-1. In the **Hierarchy**, expand the **VideoPlayer** GameObject and and note that it has two child objects: **Video** and **VideoStill**.
+1. In the **Hierarchy**, expand the **VideoPlayer** GameObject and note that it has two child objects: **Video** and **VideoStill**.
 
 1. Select **Video** and then, in the **Inspector**, note the following:
 
-    - **Video** has a component named **Video Player**, which has a video attached named **WindTurbine**.
-
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/424-video-player.png)
+    - **Video** has a component named **Video Player**, which has a link to a Wind Turbine video.
 
     - **Video** is inactive (the check box next to its name is empty).
 
@@ -259,50 +282,111 @@ When the scene starts, the video screen displays a still image (due to **VideoSt
 
 The remaining nodes in our graph make all of this happen.
 
-1. Drag a connector from the True Control Output port of the **if** node and create a new *Game Object: Set Active* node. (In the Fuzzy Finder, search for **set active**.)
-1. In the *Game Object: Set Active* node, click the round button in the GameObject field, and then, in the **Select GameObject** window, search for and select **Video**.
+### Create the Video and VideoStill (image) Object Variables
+
+Let's create the Object Variables that hold the values for the *Video* and *VideoStill* GameObjects.
+
+1. In the **Hierarchy**, expand **VideoPlayer**.
+1. In the Script Graph **Blackboard**, create a new Object variable: Type the name "Video" in the **(New Variable Name)** field, and then click the "+" button.
+1. Set the Object Variable's type to *Game Object*.
+1. From the **Hierarchy**, drag the **Video** GameObject, and then drop it in the **Value** field of the new variable.
+
+    ![________________](../../../media/sample-mesh-101/534-video-value.png)
+
+1. In the **Blackboard**, create a new Object variable: Type the name "VideoStill" in the **(New Variable Name)** field, and then click the "+" button.
+1. Set the Object Variable's type to *Game Object*.
+1. From the **Hierarchy**, drag the **VideoStill** GameObject, and then drop it in the **Value** field of the new variable.
+
+    ![________________](../../../media/sample-mesh-101/535-videostill-value.png)
+
+### Script graph structure
+
+This is a good place to stop and consider how we want to design the rest of Section 2 of our Script Graph. Our "If" node will branch off in a "true" flow and a "false" flow. Our Object Variables need to be easily accessible to both flows, so we'll place them on a row between the flows as shown here:
+
+![________________](../../../media/sample-mesh-101/536-section-two-design.png)
+
+## Add the Video and VideoStill Object Variables to the Script Graph
+
+1. Drag the **Video** Object Variable from the **Blackboard** and then drop it in the Script Graph to add it as a node. Place it under the **If** node.
+
+    ![________________](../../../media/sample-mesh-101/537-place-video-node.png)
+
+1. Drag the **VideoStill** Object Variable from the **Blackboard** and then drop it in the Script Graph to add it as a node. Place it to the right of the **Get Object Variable: Video** node.
+
+    ![________________](../../../media/sample-mesh-101/538-place-videostill-node.png)
+
+### Turn the video on
+
+1. Drag a connector from the "True" Control Output port of the **If** node and then create a new *Game Object: Set Active* node. (In the Fuzzy Finder, search for **set active**.)
+1. Drag a connector from the Data Output port of the **Get Object Variable: Video** node and then connect it to the first Data Input port of the **Game Object: Set Active** node.
 1. Select the node's **Value** check box, which makes the node active.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/426-set-active-video-node.png)
+    ![____________](../../../media/sample-mesh-101/539-set-active-node.png)
 
-1. Drag a connector from the Control Output port of the **Game Object: Set Active** node and then create another new *Game Object: Set Active* node.
-1. In the new *Game Object: Set Active* node, click the round button in the GameObject field (which currently displays **This**), and then, in the **Select GameObject** window, search for and select **VideoStill**.
-1. Keep the **Value** check box unselected. This makes the node inactive.
+1. Drag a connector from the Data Output port of the **Get Object Variable: VideoStill** node and then connect it to the first Data Input port of the *Game Object: Set Active* node you just created.
 
-    Now when the button is clicked, the video will play and the still image will be hidden. We need just one more thing in this sequence. Since the Play/Stop button is a toggle, we have to make sure that after the attendee clicks **Play,** the button's label changes to **Stop,** and then when it's clicked again, the label changes back to **Play**. To achieve this, we'll add a *TextMeshPro* node.
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/540-connect-videostill-node.png)
 
-1. Drag a connector from the Control Output port of the last **Game Object: Set Active** node and create a new *Text Mesh Pro: Set Text* node. (In the Fuzzy Finder, search for **set text**.)
+1. Keep the node's **Value** check box unselected. This ensures that the node is inactive.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/427-set-text.png)
+    Now when the button is clicked, the video will play and the still image will be hidden. We need just one more thing in this sequence. Since the Play/Stop button is a toggle, we have to make sure that after the attendee clicks **Play,** the button's label changes to **Stop,** and then when it's clicked again, the label changes back to **Play**. To achieve this, we need to create and add an Object Variable and then add a *TextMeshPro* node.
 
-    We need to set this node's target GameObject to **Label**. However, there are lots of "Label" GameObjects in the project, and they all look the same in the node's popup list, so let's add this object by using the drag and drop method.
+### Create and add the Label Object Variable
 
-1. Drag the **Label** GameObject that's a child of the **Button** object from the **Hierarchy** and then drop it in the first field in the *Set Test* node.
+1. In the **Hierarchy**, make sure that **PlayVideoButton** and its child object **Button** are expanded.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/428-drag-label.png)
+    ![________________](../../../media/sample-mesh-101/541-playvideobutton-expanded.png)
 
+1. In the Script Graph **Blackboard**, create a new Object variable: Type the name "Label" in the **(New Variable Name)** field, and then click the "+" button.
+1. Set the Object Variable's type to *Game Object*.
+1. From the **Hierarchy**, drag the **Label** GameObject, and then drop it in the **Value** field of the new variable.
+
+    ![________________](../../../media/sample-mesh-101/542-value-label.png)
+
+1. Drag the **Label** Object Variable from the **Blackboard** and then drop it in the Script Graph to add it as a node. Place it to the right of the **Get Object Variable: VideoStill** node.
+
+    ![________________](../../../media/sample-mesh-101/543-add-label-node.png)
+
+### Add the Text Mesh Pro node
+
+1. Drag a connector from the Control Output port of the **Game Object: Set Active** node and then create a new *Text Mesh Pro: Set Text* node. (In the Fuzzy Finder, search for **set text**.) Place it on the upper row to the right of the **Game Object: Set Active** node.
+
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/544-textmeshpro-node.png)
+
+1. Drag a connector from the Data Output port of the **Get Object Variable: Label** node and then connect it to the top Data Input port on the **Text Mesh Pro: Set Text** node.
 1. In the text field for the node, type in "Stop."
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/429-stop.png)
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/545-textmeshpro-data-input.png)
 
-### Making the video stop
+### Add the nodes to make the video stop
 
 Just three more nodes to go for this graph! We need to set up the false condition for the button, so that if the button is clicked while the video is playing, the *isPlaying* variable becomes false and it causes the video to stop and the button label to change to **Play** again.
 
 We can take a shortcut here.
 
-1. Control-click the last three nodes you added. This selects them.
-1. Right-click in the script graph and then, in the popup menu, select **Duplicate Selection**.
-1. Drag the duplicated nodes to an empty space in the graph just below the nodes you duplicated.
+1. Control-click the three nodes in the top row that make up the "if true" flow.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/430-duplicated-nodes.png)
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/546-if-true-flow-nodes.png)
 
-1. Drag a connector from the False Control Output port of the last **if** node and connect it to the control input port of the first *Game Object: Set Active* node in the duplicated set of nodes.
-1. In that same first *Game Object: Set Active* node (the one that contains **Video**), deselect **Value**.
-1. In the second *Game Object: Set Active* node in the duplicated set (the one that contains **VideoStill**), select **Value**.
-1. In the **Set Text** node, change the text from **Stop** to **Play**.
+1. Right-click in the Script Graph and then, in the popup menu, select **Duplicate Selection**.
+1. Drag the duplicated nodes down in the graph and place them below the row of variables.
 
-    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/431-final-node-settings-for-button.png)
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/547-copied-nodes.png)
+
+### Set up the "if false" nodes
+
+1. Drag a connector from the Data Output port of the **Get Object Variable: Video** node and then connect it to the top Data Input port of the first **Game Object: Set Active** node in the bottom row of nodes.
+
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/548-connect-video-node.png)
+
+1. In that same first *Game Object: Set Active* node, deselect **Value**.
+1. Drag a connector from the Data Output port of the **Get Object Variable: VideoStill** node and then connect it to the top Data Input port of the second **Game Object: Set Active** node in the bottom row of nodes.
+1. In that second *Game Object: Set Active* node, select **Value**.
+1. Drag a connector from the Data Output port of the **Get Object Variable: Label** node and then connect it to the top Data Input port of the **Text Mesh Pro: Set Text** node to its right.
+1. In that same **Text Mesh Pro: Set Text** node, change the text from **Stop** to **Play**.
+1. Drag a connector from the "False" Control Output port of the **If** node and then connect it to the Control Input port of the first *Game Object: Set Active* node in the bottom row of nodes.
+
+    ![A screenshot of a video play Description ](../../../media/sample-mesh-101/549-section-two-final.png)
 
 ### Share the video player interactions with others in the experience
 
@@ -397,37 +481,37 @@ For this feature, we'll enhance an existing visual script that causes an info di
 
 ## Station 3.3: Teleport to the turbine generator
 
-For this feature, we'll add some nodes to a script graph that allows attendees
-in the scene to teleport. When a attendee presses the button, they're
+For this feature, we'll add some nodes to a Script Graph that allows attendees
+in the scene to teleport. When an attendee presses the button, they're
 teleported from their current location at Station 3.3 to an elevated
 platform that's attached to a wind turbine generator. They can then
 examine the generator.
 
 ![A picture containing outdoor, text, screenshot, windmill Description automatically generated](../../../media/sample-mesh-101/460-teleport-to-turbine.png)
 
-### Update the script graph
+### Update the Script Graph
 
 1. In the **Scene** window, note that the **3.3 -** **Teleport to Turbine** station is to the right of the **3.2 -- Info Dialog  Trigger** station. Adjust the view so that you can clearly see Station 3.3.
 1. In the **Hierarchy**, collapse the **3.2 - Info Dialog** GameObject, and then expand the **3.3 - Teleport** GameObject.
 
     ![A screen shot](../../../media/sample-mesh-101/438-teleport.png)
 
-    The button is all set up for you---we just need to add the nodes in the script graph that
+    The button is all set up for you---we just need to add the nodes in the Script Graph that
     give it the teleport behavior.
 
 1. In the **Hierarchy**, expand the **ChapterLabel** GameObject and then select the **TeleportToWindTurbineButton** GameObject.
 
     ![A screen shot](../../../media/sample-mesh-101/439-teleport-button.png)
 
-    Note that in the **Inspector**, there's a **Script Machine** component with a script graph named *Teleport to Open Air Platform*. The **Source** option is set to **Embed**, which means the script graph is embedded in the scene.
+    Note that in the **Inspector**, there's a **Script Machine** component named *Teleport to Location* with a script attached named *TeleportToLocationButtonStart*. The **Source** option is set to **Graph**, which means the Script Graph is stored in the project as an independant file.
 
-    ![A screen shot](../../../media/sample-mesh-101/440-teleport-graph-embedded.png)
+    ![A screen shot](../../../media/sample-mesh-101/440-teleport-graph.png)
 
 1. Click the **Edit Graph** button. Just as in the previous chapter, our graph already has some nodes set up for you. 
 
     ![A screen shot](../../../media/sample-mesh-101/515-teleport-existing-nodes.png)
 
-We'll add nodes to this script graph in a moment.
+We'll add nodes to this Script Graph in a moment.
 
 ### Create a Travel Point and add a reference to it
 
@@ -446,13 +530,13 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
     **Position**:
 
     X = 6  
-    Y = 58  
-    Z = 61
+    Y = 56  
+    Z = 60
 
     **Rotation**: 
 
     X = 0  
-    Y = 270  
+    Y = 255   
     Z = 0
 
     ![A screen shot](../../../media/sample-mesh-101/455-teleport-transform-settings.png)
@@ -463,15 +547,24 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
 
     ![A screen shot](../../../media/sample-mesh-101/442-active-travel-point.png)
 
-### Adding the teleport nodes
+### Create and add a Teleport Location Object Variable
 
-1. In the **Teleport to Open Air Platform** script graph, drag a connector from the True output control port of the **If** node and then create a new node called **Game Object: Set Active**. (In the Fuzzy Finder, search for **set active**.)
+1. In the Script Graph **Blackboard**, create a new Object variable: Type the name "TeleportLocation" in the **(New Variable Name)** field, and then click the "+" button.
+1. Set the Object Variable's type to *Game Object*.
+1. From the **Hierarchy**, drag the **TeleportLocationWindTurbine** GameObject, and then drop it in the **Value** field of the new variable.
+
+    ![________________](../../../media/sample-mesh-101/551-value-teleport.png)
+
+1. Drag the **Button** Object Variable from the **Blackboard** and then drop it in the Script Graph to add it as a node. Place it below the **If** node.
+
+    ![________________](../../../media/sample-mesh-101/552-add-teleport-node.png)
+
+### Add the teleport nodes
+
+1. Drag a connector from the "True" output control port of the **If** node and then create a new node called **Game Object: Set Active**. (In the Fuzzy Finder, search for **set active**.)
+1. Drag a connector from the Data Output port of the **Get Object Variable: TeleportLocation** node and then connect it to the first Data Input port of the **Game Object: Set Active** node. 
 
     ![A screen shot](../../../media/sample-mesh-101/314-set-active-node.png)
-
-1. Drag the **TeleportLocationWindTurbine**  object from the **Hierarchy** and then drop it in the field that displays **This** in the *Game Object: Set Active* node.
-
-    ![A screen shot](../../../media/sample-mesh-101/443-set-active-teleport.png)
 
 1. Select the node's **Value** option to make it active.
 
@@ -479,13 +572,11 @@ So what's a "Travel Point", you might be asking ... ? Basically, it's a componen
 
 1. Drag a connector from the Control Output port of the **Game Object: Set Active** node and then create a new node called **Travel Point: Travel to Point**. (In the Fuzzy Finder, search for **travel point: travel**.)
 
-1. In the **Travel Point: Travel to Point** node, click the round button in the field that displays **This**, and then, in the **Select TravelPoint** window, select **TeleportLocationWindTurbine**.
+1. Drag a connector from the Data Output port of the **Get Object Variable: TeleportLocation** node and then connect it to the Data Input port of the  **Travel Point: Travel to Point** node. 
 
-    ![A screen shot](../../../media/sample-mesh-101/444-select-travel-point.png)
+    ![A screen shot](../../../media/sample-mesh-101/553-connect-travelpoint-node.png)
 
 This completes the graph.
-
-![A screen shot](../../../media/sample-mesh-101/516-graph-completed.png)
 
 ### Test your work
 

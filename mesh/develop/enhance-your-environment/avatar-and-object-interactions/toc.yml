@@ -1,6 +1,8 @@
 items: 
 - name: Grab, hold and throw with Interactables
   href: interactables.md
+- name: Interactable type settings
+  href: interactable-setup-types/toc.yml
 - name: Hold objects realistically with Equippables
   href: equippables-in-detail.md
 - name: How the Equippable Wand works
