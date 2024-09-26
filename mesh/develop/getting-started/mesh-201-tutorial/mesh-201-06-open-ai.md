@@ -64,9 +64,9 @@ The resource deploys and you should see a message saying that the deployment is 
 
 1. Select **Create new deployment**.
 
-%%%1. Click the **Deploy Model** drop-down and then select **Deploy base Model**.
-%%%1.In the **Select a model** dialog, select "gpt-35-turbo".
-%%%1. If you wish, take a moment to view the description. When you're finished, click the **Confirm** button.
+1. Click the **Deploy Model** drop-down and then select **Deploy base Model**.
+1. In the **Select a model** dialog, select "gpt-35-turbo".
+1. If you wish, take a moment to view the description. When you're finished, click the **Confirm** button.
 
     ![__________________________________](../../../media/mesh-201/145-select-a-model.png)
 
