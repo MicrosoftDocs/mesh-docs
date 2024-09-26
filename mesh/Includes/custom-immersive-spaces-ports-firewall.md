@@ -17,7 +17,7 @@ In general, the standard set of Microsoft 365 requirements outlined in [Microsof
 
 #### Step 1: Configure according to Microsoft M365 requirements
 
-First, configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
+Configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
 
 Mesh also requires the IP addresses and port ranges detailed in [Firewall configuration for Azure Communication Services](/azure/communication-services/concepts/voice-video-calling/network-requirements#firewall-configuration&preserve-view=true) for media capabilities such as audio, video, and screenshare.
 

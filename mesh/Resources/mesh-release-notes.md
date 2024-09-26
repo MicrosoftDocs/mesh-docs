@@ -17,7 +17,8 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
-| 2024         | September 17 | 5.2413.XX   |
+| 2024         | September 30 | 5.2414.XX    |
+| 2024         | September 17 | 5.2413.XX    |
 | 2024         | September 02 | 5.2412.XX    |
 | 2024         | August 19    | 5.2411.XX    |
 | 2024         | August 05    | 5.2410.XX    |
@@ -31,6 +32,18 @@ Microsoft Mesh application
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2414.XX
+
+## What's new
+
+### Simplified firewall setup requirements
+
+We have completed the rollout to simplify firewall setup requirements for immersive spaces in Teams. As part of this, you will no longer need to allow traffic to IP addresses in the "AzureCloud" service tag. To read more about the updated firewall setup requirements, see how to [Manage the Mesh app in Microsoft Teams](/microsoftteams/meeting-immersive-spaces).
+
+Additionally, users will no longer need to agree to the terms associated with Mesh's previous spatial audio infrastructure. Mesh events now use the same spatial audio infrastructure as Teams, which [allows people to hear the relative positions of people based on their video positions in a Teams meeting](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/follow-conversations-with-ease-using-spatial-audio-in-microsoft/ba-p/3888524).
+
+
 
 ## Version 5.2413.XX
 
