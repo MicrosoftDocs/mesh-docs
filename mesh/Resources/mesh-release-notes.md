@@ -41,7 +41,7 @@ Microsoft Mesh application
 
 We have completed the rollout to simplify firewall setup requirements for immersive spaces in Teams. As part of this, you will no longer need to allow traffic to IP addresses in the "AzureCloud" service tag. To read more about the updated firewall setup requirements, see how to [Manage the Mesh app in Microsoft Teams](/microsoftteams/meeting-immersive-spaces).
 
-Additionally, users will no longer need to agree to the terms associated with Mesh's previous spatial audio infrastructure. Mesh events now use the same spatial audio infrastructure as Teams, which [allows people to hear the relative positions of people based on their video positions in a Teams meeting](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/follow-conversations-with-ease-using-spatial-audio-in-microsoft/ba-p/3888524).
+Additionally, users will no longer need to agree to the terms associated with Mesh's previous spatial audio infrastructure. Mesh events now use the same audio infrastructure as Microsoft Teams.
 
 Please refer to [firewall requirements for Microsoft Mesh and immersive spaces in Teams](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-configuration) for more info.
 
