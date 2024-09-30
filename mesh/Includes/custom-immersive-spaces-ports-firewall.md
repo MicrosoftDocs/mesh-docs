@@ -19,7 +19,7 @@ In general, the standard set of Microsoft 365 requirements outlined in [Microsof
 
 Configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
 
-Mesh also requires the IP addresses and port ranges detailed in [Firewall configuration for Azure Communication Services](/azure/communication-services/concepts/voice-video-calling/network-requirements#firewall-configuration&preserve-view=true) for media capabilities such as audio, video, and screenshare.
+Mesh also requires the IP addresses and port ranges detailed in [Firewall configuration for Azure Communication Services](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/network-requirements#firewall-configuration) for media capabilities such as audio, video, and screenshare.
 
 Without access to these, Mesh won't work properly for users in your organization.
 
@@ -53,6 +53,3 @@ Dynamically loaded, embedded content have unique requirements for immersive expe
 > 
 > For more information about WebSlate security and allowlisting, see [WebSlate performance and security](../develop/enhance-your-environment/web-content/webslate-performance-and-security.md).
 
-[service-tag]: /azure/virtual-network/service-tags-overview
-[service-tag-api]: /azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api
-[service-tag-download]: /azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files
