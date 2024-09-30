@@ -22,7 +22,7 @@ As part of this, ensure that you have configured your firewall to enable traffic
 #### Immersive spaces in Teams
 
 > [!IMPORTANT]
-> We've simplified the network setup requirements for immersive spaces in Teams. This will remove the need for extra network setup requirements as mentioned in the above note. This change is targeted to be completed by the end of September, 2024.  If you're a tenant admin, you can read more about this change in the Message Center post at [https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC855701](https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC855701).
+> As of September 2024, we've simplified the network setup requirements for immersive spaces in Teams to align the standard set of firewall requirements as Microsoft Teams and Azure Communication Services. If you're a tenant admin, you can read more about the rollout of this change in the Message Center post at [https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC855701](https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC855701).
 
 Ensure you have configured your enterprise firewall settings to align with the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
 
