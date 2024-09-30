@@ -43,7 +43,17 @@ We have completed the rollout to simplify firewall setup requirements for immers
 
 Additionally, users will no longer need to agree to the terms associated with Mesh's previous spatial audio infrastructure. Mesh events now use the same spatial audio infrastructure as Teams, which [allows people to hear the relative positions of people based on their video positions in a Teams meeting](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/follow-conversations-with-ease-using-spatial-audio-in-microsoft/ba-p/3888524).
 
+Please refer to [firewall requirements for Microsoft Mesh and immersive spaces in Teams](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-configuration) for more info.
 
+### Avatar mouth movement
+
+Avatar mouth movement is now more realistic, conveying the words you speak or vocalize more accurately than before. Mouth movement for avatars in Mesh events is now equivalent in terms of realism to the mouth movement seen in Avatars in Teams.
+
+## Resolved issues
+
+* Avatar body now disappears when the camera or perspective enters the avatar position to prevent the avatar body from obscuring anybody's perspective. (63532)
+
+* App crashes caused by leaving a session or loading the text controllable. (63983, 640530)
 
 ## Version 5.2413.XX
 
