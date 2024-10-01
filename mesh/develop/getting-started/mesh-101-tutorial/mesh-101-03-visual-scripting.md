@@ -327,7 +327,7 @@ This is a good place to stop and consider how we want to design the rest of Sect
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/540-connect-videostill-node.png)
 
-1. Keep the node's **Value** check box unselected. This ensures that the node inactive.
+1. Keep the node's **Value** check box unselected. This ensures that the node is inactive.
 
     Now when the button is clicked, the video will play and the still image will be hidden. We need just one more thing in this sequence. Since the Play/Stop button is a toggle, we have to make sure that after the attendee clicks **Play,** the button's label changes to **Stop,** and then when it's clicked again, the label changes back to **Play**. To achieve this, we need to create and add an Object Variable and then add a *TextMeshPro* node.
 
