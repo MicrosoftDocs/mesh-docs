@@ -15,17 +15,14 @@ This section outlines the specific endpoints and firewall requirements for the M
 
 #### Avatars in Teams
 
+Configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
+
+#### Immersive spaces in Teams
+
 Configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements for **Microsoft Teams**, and **Microsoft 365 Common** outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
 
 As part of this, ensure that you have configured your firewall to enable traffic to `*.cloud.microsoft.com`, `*.office.com`, and `*.microsoft.com` over `TCP 443`, `80`.
 
-#### Immersive spaces in Teams
-
-> [!IMPORTANT]
-> We've simplified the network setup requirements for immersive spaces in Teams. This will remove the need for extra network setup requirements as mentioned in the above note. This change is targeted to be completed by the end of September, 2024.  If you're a tenant admin, you can read more about this change in the Message Center post at [https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC855701](https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC855701).
-
-Ensure you have configured your enterprise firewall settings to align with the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
-
-Mesh also requires the IP addresses and port ranges detailed in [Firewall configuration for Azure Communication Services](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/network-requirements#firewall-configuration) for media capabilities such as audio, video, and screenshare.
+Mesh also requires the IP addresses and port ranges detailed in [Firewall configuration for Azure Communication Services](/azure/communication-services/concepts/voice-video-calling/network-requirements#firewall-configuration&preserve-view=true) for media capabilities such as audio, video, and screenshare.
 
 Without access to these, Mesh won't work properly for users in your organization.
