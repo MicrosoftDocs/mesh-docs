@@ -24,7 +24,7 @@ Mesh immersive experiences build on top of [Microsoft Teams network bandwidth re
 | Avatar movement  & audio                                                              | 30/370             | 80/700                 | 100/850                     |
 | Screenshare ([Same as Teams](/microsoftteams/prepare-network#bandwidth-requirements)) | 250/250            | 2,500/2,500            | 4,000/4,000                 |
 
-### Addditional bandwidth requirements for multi-room events
+### Additional bandwidth requirements for multi-room events
 
 | **Modality**                                                                                         | **Minimum (kbps)** | **Recommended (kbps)** | **Best performance (kbps)** |
 |------------------------------------------------------------------------------------------------------|--------------------|------------------------|-----------------------------|
