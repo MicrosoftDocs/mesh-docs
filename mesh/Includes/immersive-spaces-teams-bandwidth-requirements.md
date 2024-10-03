@@ -23,14 +23,13 @@ Mesh immersive experiences build on top of [Microsoft Teams network bandwidth re
 |--------------------------|--------------------|------------------------|-----------------------------|
 | Avatar movement  & audio | 30/370             | 80/700                 | 100/850                     |
 
-
 ### Non-immersive participants
 
 | **Modality**                     | **Minimum (kbps)** | **Recommended (kbps)** | **Best performance (kbps)** |
 |----------------------------------|--------------------|------------------------|-----------------------------|
-| Audio [Same as Teams](/microsoftteams/prepare-network#bandwidth-requirements)         | 30/370             | 80/700                 | 100/850                     |
-| Video [Same as Teams](/microsoftteams/prepare-network#bandwidth-requirements) | 150/200              | 2,500/4,000                      | 4,000/4,000                           |
-| Screenshare [Same as Teams](/microsoftteams/prepare-network#bandwidth-requirements)              | 250/250            | 2,500/2,500            | 4,000/4,000                 |
+| Audio ([Same as Teams](/microsoftteams/prepare-network#bandwidth-requirements))        | 30/370             | 80/700                 | 100/850                     |
+| Video ([Same as Teams](/microsoftteams/prepare-network#bandwidth-requirements)) | 150/200              | 2,500/4,000                      | 4,000/4,000                           |
+| Screenshare ([Same as Teams](/microsoftteams/prepare-network#bandwidth-requirements))              | 250/250            | 2,500/2,500            | 4,000/4,000                 |
 
 As an example, a multi-room event such as a team all hands with screenshare, broadcasted presenters, and visualization for users in other rooms will require a minimum of 375 kbps downstream, and 795 kbps upstream, and a maximum of 4,265 kbps downstream and 5,095 kbps upstream.
 
