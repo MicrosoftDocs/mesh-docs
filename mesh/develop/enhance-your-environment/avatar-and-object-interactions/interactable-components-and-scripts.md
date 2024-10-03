@@ -65,7 +65,7 @@ These are the activities or objects in the Pavilion sample that contain Interact
 | BeanBags, Marshmallow Holder, Marshmallow_Pos | [Reset Body Transform](../../enhance-your-environment/physics/mesh-physics-programmers-guide.md#reset-body-transforms) |
 | Marshmallow_Pos | Reset Body Transforms |
 
-### Mesh nodes used in script graphs
+## Mesh nodes used in script graphs
 
 **[Microsoft Mesh: On State Changed](../../script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md#on-state-changed)**
 ***
