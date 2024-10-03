@@ -106,7 +106,7 @@ The Glove prefab represents planet Earth; you can spin and select it. When selec
 
 * **Art assets**                                                 
                          
-Throughout the Mesh Pavilion, you'll discover a variety of art assets that help to create a pleasing environment, including lush plants, shimmering water shaders, and stylish furniture. You can duplicate these assets to enrich your own environments.
+Throughout the Mesh Pavilion, you'll discover a variety of art assets that help to create a pleasing environment, including lush plants, shimmering water shaders, and stylish furniture. You can utilize these assets to enrich your own environments.
 
 ## Modules scene (*MeshPavillion_moduleGallery*)
 
