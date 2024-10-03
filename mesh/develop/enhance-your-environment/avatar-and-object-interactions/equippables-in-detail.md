@@ -21,15 +21,15 @@ An object is made equippable by adding the *Mesh Interactable Setup* component t
 
 ## Equippables in the Mesh toolkit
 
-Here's a look at the Equippables in the Mesh toolkit:
+Here's a look at the Equippables that you can add from the Mesh toolkit:
 
 ***
 
-    ![A screen shot of the first set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/012-table1.png)
+![A screen shot of the first set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/012-table1.png)
 
 ***
 
-    ![A screen shot of the second set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/013-table2.png)
+![A screen shot of the second set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/013-table2.png)
 
 ***
 
