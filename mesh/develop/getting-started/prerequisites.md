@@ -21,10 +21,10 @@ A Teams Premium license is required for using the Mesh application for custom im
 
 ## Unity version 2022.3.34
 
-1. You must use Unity version 2022.3.34.
-
-    > [!Note]
+> [!Note]
 >  Versions of Mesh toolkit older than 5.2406 (released May 2024) will be deprecated starting October 1st. (Note: No action is needed for environments that are already published on the affected toolkit versions earlier than 24.6, existing uploads will continue to function as they do today.)
+
+1. You must use Unity version 2022.3.34.
 
    ![A screenshot of the required version of Unity.](../../media/get-started-developing-mesh/063-unity-version.png)
 
