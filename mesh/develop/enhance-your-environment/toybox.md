@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics
 
 # Add interactive games and activities
 
-If you want to add interactive games and activities to your environment, we recommend that you[download our Mesh samples](../getting-started/enhance-your-environment/toybox-package/download-mesh-samples.md), take a thorough look at our [Pavilion sample](../getting-started/enhance-your-environment/toybox-package/pavilion.md), and then import the Toolbox package into your project. This package provides the building blocks for the games and activities in the Pavilion sample. The package is named *com.microsoft.mesh.toolkit.toybox* and can be found in File Explorer in the *Packages* folder.
+If you want to add interactive games and activities to your environment, we recommend that you[download our Mesh samples](../getting-started/samples/download-mesh-samples.md), take a thorough look at our [Pavilion sample](../getting-started/samples/pavilion.md), and then import the Toolbox package into your project. This package provides the building blocks for the games and activities in the Pavilion sample. The package is named *com.microsoft.mesh.toolkit.toybox* and can be found in File Explorer in the *Packages* folder.
 
 ![A screen shot of the Toybox package in File Explorer.](../../media/enhance-your-environment/toybox-package/010-toybox-pkg-in-file-explorer.png)
 

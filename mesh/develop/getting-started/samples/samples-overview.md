@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, toolkit
 
 There are a number of Mesh sample projects available that you can use as starting points for your own custom environments. Each project is already set up with the Mesh toolkit package and contains many assets that you might find useful.
 
-When you [download the samples from GitHub](./download-mesh-samples.md), you also get a [Control Samples package](./control-samples.md) that contains user interface controls you can use in your projects. The control samples were built using the Mesh Toolkit.
+When you [download the samples from GitHub](./download-mesh-samples.md), you also get a [Control Samples package](../../build-your-basic-environment/control-samples.md) that contains user interface controls you can use in your projects. The control samples were built using the Mesh Toolkit.
 
 Studying the Mesh sample projects will help you learn about the following:
 

@@ -102,7 +102,7 @@ You can resize and change the location of the ScreenShare prefab.
 
 * **Globe**
 
-The Glove prefab represents planet Earth; you can spin and select it. When selected, the globe generates a latitude and longitude position and adds a marker. This functionality can be extended and modified with Visual Scripting and all actions are shared by all clients by default. Globe is one of the samples in the [Control Samples](./control-samples.md) package, a sample library of user interface controls built using the Mesh Toolkit.                                                                                                             
+The Glove prefab represents planet Earth; you can spin and select it. When selected, the globe generates a latitude and longitude position and adds a marker. This functionality can be extended and modified with Visual Scripting and all actions are shared by all clients by default. Globe is one of the samples in the [Control Samples](../../build-your-basic-environment/control-samples.md) package, a sample library of user interface controls built using the Mesh Toolkit.                                                                                                             
 
 * **Art assets**                                                 
                          
