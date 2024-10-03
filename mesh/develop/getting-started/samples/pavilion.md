@@ -15,7 +15,7 @@ The Mesh Pavillion sample lets you create environments that contain interactive 
 
 ## Samples scene (*MeshPavillion_Samples*)
 
-In the **Samples** scene, you'll find activities constructed from objects [found in the Toybox package](./toybox.md), a globe from our [Control Samples](../../getting-started/samples/control-samples.md) package, various art assets, and Mesh toolkit features like screenshare that you can pull into your own environments.
+In the **Samples** scene, you'll find activities constructed from objects [found in the Toybox package](../../enhance-your-environment/toybox.md), a globe from our [Control Samples](../../build-your-basic-environment/control-samples.md) package, various art assets, and Mesh toolkit features like screenshare that you can pull into your own environments.
 
 ![______](../../../media/samples/pavilion/001-campfire.png)
 

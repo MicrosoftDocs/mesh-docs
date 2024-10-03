@@ -3,7 +3,7 @@ title: Mesh Samples overview
 description: Read an overview of the Mesh sample Unity projects available in the Mesh toolkit.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 7/16/2024
+ms.date: 10/03/2024
 ms.topic: overview
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, toolkit, Mesh toolkit
@@ -32,7 +32,7 @@ Studying the Mesh sample projects will help you learn about the following:
 
 - **Mesh 201**: Continuing with the wind farm theme of *Mesh 101*, this tutorial/sample takes your Mesh knowledge to the next level. You'll learn how to use WebSlates to display web content and add an interactive globe that, when clicked, gets data from Bing Maps and displays it in your environment. You'll also use Mesh Cloud Scripting to download and display real-time weather data in 3D and you'll set up an OpenAI chatbot which attendees can use to ask questions about wind farms. [Get started with the Mesh 201 tutorial](../mesh-201-tutorial/mesh-201-01-overview-set-up-and-get-started.md).
 
-- **Toybox**: A project that showcases a number of useful Mesh features: assets, shaders, visual scripting, animations, VFX, and SoundFX. [Learn more about the Toybox sample](toybox.md).
+- **Pavilion**: A project that showcases a number of useful Mesh features: assets, shaders, visual scripting, animations, VFX, and SoundFX. [Learn more about the Pavilion sample](./pavilion.md).
 
 - **Physics Effects Gallery**: Contains a programmer-art designed scene that demonstrates the power of combining appealing visuals with the creative use of Mesh Physics features. [Learn more about the Physics Effects Gallery sample](physics-effects-gallery.md).
 
