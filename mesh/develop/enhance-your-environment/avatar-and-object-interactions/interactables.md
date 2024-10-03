@@ -128,6 +128,9 @@ All the Interactables components have interaction properties and methods availab
 ## Next steps
 
 > [!div class="nextstepaction"]
+> [Understanding Interactable components and scripts](./interactable-components-and-scripts.md)
+
+> [!div class="nextstepaction"]
 > [Triggers, anchors and tethers](./triggers-anchors-and-tethers.md)
 
 > [!div class="nextstepaction"]
