@@ -1,17 +1,15 @@
 ---
-title: Mesh toolkit Toybox sample
+title: Mesh toolkit Toybox package
 description: Learn about the Mesh toolkit Toybox sample.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 10/02/2024
+ms.date: 10/03/2024
 ms.topic: overview
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, toybox, interactables
 ---
 
-# Microsoft Mesh toolkit Sample: Toybox
-
-## The Toybox Package
+# Mesh toolkit Toybox package
 
 The Toybox package is named *com.microsoft.mesh.toolkit.toybox* and can be found in File Explorer in the *Packages* folder.
 
@@ -27,7 +25,7 @@ In order to understand the interactions between objects in the scene, we recomme
 
 ## Toybox Activities
 
-The following activities have been removed from the Toybox sample and are now being showcased in the [Mesh Pavilion sample](./pavilion.md).
+The following activities have been removed from the Toybox sample and are now being showcased in the [Mesh Pavilion sample](./pavilion.md). These contain many of the objects found in the Toybox package.
 
 1. Bean Bag Toss
 1. Fire Pit and Roasting Marshmallows
@@ -41,8 +39,8 @@ The following activities have been removed from the Toybox sample and are now be
 
 There are a couple of ways to add the Toybox package to your project.
 
-1. Copy and paste the *com.microsoft.mesh.toolkit.toybox* folder located in the [Packages](https://github.com/microsoft/Mesh-Toolkit-Unity/tree/main/Packages) folder into your project's Packages folder.
-2. Reference the Toybox package from GitHub.
+- Copy and paste the *com.microsoft.mesh.toolkit.toybox* folder located in the [Packages](https://github.com/microsoft/Mesh-Toolkit-Unity/tree/main/Packages) folder into your project's Packages folder.
+- Reference the Toybox package from GitHub.
 
 > [!IMPORTANT]
 > To reference the Toybox package from GitHub you must have [Git](https://gitforwindows.org/) installed on your computer.

@@ -3,8 +3,6 @@ items:
     href: samples-overview.md
   - name: Download Mesh samples
     href: download-mesh-samples.md    
-  - name: Toybox
-    href: toybox.md
     displayName: samples
   - name: Pavilion
     href: pavilion.md
@@ -20,3 +18,5 @@ items:
     displayName: samples
   - name: Control samples
     href: control-samples.md
+  - name: Toybox package
+    href: toybox.md
