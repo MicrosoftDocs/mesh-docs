@@ -15,13 +15,19 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.1414.XX (September 30, 2024)
 
+### Limitations & specifications for Immersive spaces
+
+We have released a page describing the [limitations and specifications for immersive spaces in Teams](limitations-specifications-mesh.md), including the max number of participants across Mesh event scenarios, max duration of events, and more.
+
+### Network bandwidth requirements for Immersive spaces
+
+We have released the [network bandwidth requirements for various immersive experience scenarios](../Setup/Content/preparing-your-organization.md#network-bandwidth-requirements).
+
 ### Simplified firewall setup requirements
 
 We have completed the rollout to simplify firewall setup requirements for immersive spaces in Teams. As part of this, you will no longer need to allow traffic to IP addresses in the "AzureCloud" service tag. To read more about the updated firewall setup requirements, see how to [Manage the Mesh app in Microsoft Teams](/microsoftteams/meeting-immersive-spaces).
 
-Additionally, users will no longer need to agree to the terms associated with Mesh's previous spatial audio infrastructure. Mesh events now use the same audio infrastructure as Microsoft Teams.
-
-Please refer to [firewall requirements for Microsoft Mesh and immersive spaces in Teams](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-configuration) for more info.
+For more info, please refer to [firewall requirements for Microsoft Mesh and immersive spaces in Teams](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-configuration).
 
 ## Version 5.2412.XX (September 03, 2024)
 
