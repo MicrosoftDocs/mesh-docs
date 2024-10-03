@@ -39,14 +39,16 @@ A few important notes to consider are:
 
 * Guest access is not supported on the Mesh app for Quest.
 
+### Event tools for hosts and attendees
+
+* Crowd visualization for hosts and attendees is coming to make it possible to see Mesh event participants in other rooms. The visualization of people in other rooms is proximity based and does not include interaction with people in other rooms at the moment. With the room size limitation, we hope this improvement can breakdown the room barriers and give people a visualization that shows the true scale of Mesh events.
+
+* We are improving the attendee to attendee and host to attendee interactions with avatar selection or click. As an attendee, selecting or clicking on an avatar will raise a menu with the option to open their profile card. As a host, selecting or clicking an attendee avatar will raise a menu with options to megaphone or broadcast (dependent on the room size of the event: single or multi-room) an attendee, mute the attendee, or open their profile card.
+
 ## September 2024
 
 Theses are features that we are rolling out as of September 2024.
 
 * In the Microsoft Mesh application, the mouth movement and lip synchronization for avatars will soon more accurately reflect words spoken by users.
-
-* Crowd visualization for hosts and attendees is coming to make it possible to see Mesh event participants in other rooms. The visualization of people in other rooms is proximity based and does not include interaction with people in other rooms at the moment. With the room size limitation, we hope this improvement can breakdown the room barriers and give people a visualization that shows the true scale of Mesh events.
-
-* We are improving the attendee to attendee and host to attendee interactions with avatar selecting/clicking. As an attendee, selecting/clicking an avatar will raise a menu with the option to open their profile card. As a host, selecting/clicking an attendee avatar will raise a menu with options to megaphone/broadcast (dependent on the room size of the event: single or multi-room) an attendee, mute the attendee, or open their profile card.
 
 * We are rolling out the ability to room hop as a host, empowering hosts to connect with attendees in each room.
