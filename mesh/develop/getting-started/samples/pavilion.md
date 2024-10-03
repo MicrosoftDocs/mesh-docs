@@ -15,7 +15,7 @@ The Mesh Pavillion sample lets you create environments that contain interactive 
 
 ## Samples scene (*MeshPavillion_Samples*)
 
-In the **Samples** scene, you'll find activities from the Toybox package, a globe from our Control Samples package, various art assets, and Mesh toolkit features like screenshare that you can pull into your own environments.
+In the **Samples** scene, you'll find activities constructed from objects [found in the Toybox package](./toybox.md), a globe from our [Control Samples](../../getting-started/samples/control-samples.md) package, various art assets, and Mesh toolkit features like screenshare that you can pull into your own environments.
 
 ![______](../../../media/samples/pavilion/001-campfire.png)
 
@@ -125,7 +125,7 @@ We’ll need to activate Grid Snapping inside the Unity editor to be able to ali
 1. Toggle the Grid Snapping button to "on" (this should also be blue).
 1. Click the Grid Snapping icon and then, in the **Grid Snapping** dialog, set the **Grid Size: X** value to 0.5.
 
-![______](../../../media/samples/pavilion/005-grid-snapping.png)
+    ![______](../../../media/samples/pavilion/005-grid-snapping.png)
 
 ### Create a layout
 
@@ -139,7 +139,7 @@ We’ll need to activate Grid Snapping inside the Unity editor to be able to ali
 
 **Tip**: You can create new openings by deactivating the cover object at the center of each wall. Attach a new corridor to extend the environment in all directions.
 
-    ![______](../../../media/samples/pavilion/008-new-openings.gif)
+![______](../../../media/samples/pavilion/008-new-openings.gif)
 
 ## Contributions
 
