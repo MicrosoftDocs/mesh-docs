@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics
 
 # Mesh toolkit Toybox package
 
-The Mesh toolkit Toybox package contains the prefabs and assets that are found in the activities in the Mesh Pavilion sample and much more. The package is named *com.microsoft.mesh.toolkit.toybox* and can be found in File Explorer in the *Packages* folder.
+The Mesh toolkit Toybox package contains the prefabs and assets that are found in the activities in the [Mesh Pavilion sample](../../getting-started/samples/pavilion.md) and much more. The package is named *com.microsoft.mesh.toolkit.toybox* and can be found in File Explorer in the *Packages* folder.
 
 ![A screen shot of the Toybox package in File Explorer.](../../../media/samples/010-toybox-pkg-in-file-explorer.png)
 

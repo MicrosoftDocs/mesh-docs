@@ -9,7 +9,7 @@ ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, pavilion, interactables
 ---
 
-# Microsoft Mesh toolkit Sample: Pavilion
+# Microsoft Mesh toolkit sample: Pavilion
 
 The Mesh Pavillion sample lets you create environments that contain interactive activities and various assets found in the Mesh Toolkit. It features a simple, high-performance design. The Pavilion Unity project contains two scenes. 
 
