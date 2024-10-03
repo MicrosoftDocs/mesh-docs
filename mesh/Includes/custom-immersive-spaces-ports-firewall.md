@@ -13,18 +13,17 @@ keywords: Microsoft Mesh, Immersive spaces, setup, admin, M365, ports and firewa
 
 This section outlines the specific endpoints and firewall requirements for **Immersive experiences in Mesh**, inclusive of the Mesh application and its features that your organization can leverage to create dynamic corporate events.
 
-In general, the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true) applies to all Mesh experiences with some extra steps to enable additional Mesh features like larger multi-room events, Cloud Scripting, and embedded content (WebSlate, Video/Image objects). 
+In general, the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true) applies to all Mesh experiences with some extra steps to enable additional Mesh features like larger multi-room events, Cloud Scripting, and embedded content (WebSlate, Video/Image objects).
 
 #### Step 1: Configure according to Microsoft M365 requirements
 
-First, configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
+Configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements for **Microsoft Teams**, and **Microsoft 365 Common** outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
 
-Mesh also requires the IP addresses and port ranges detailed in [Firewall configuration for Azure Communication Services](/azure/communication-services/concepts/voice-video-calling/network-requirements#firewall-configuration&preserve-view=true) for media capabilities such as audio, video, and screenshare.
+As part of this, ensure that you have configured your firewall to enable traffic to `*.cloud.microsoft.com`, `*.office.com`, and `*.microsoft.com` over `TCP 443`, `80`.
+
+Mesh also requires the IP addresses and port ranges detailed in [Firewall configuration for Azure Communication Services](https://learn.microsoft.com/azure/communication-services/concepts/voice-video-calling/network-requirements#firewall-configuration) for media capabilities such as audio, video, and screenshare.
 
 Without access to these, Mesh won't work properly for users in your organization.
-
-> [!IMPORTANT]
-> We've simplified the network setup requirements for getting started with the Mesh app on PC and Meta Quest headsets. Previously, there were extra requirements for larger, multi-room events. If you're a tenant admin, you can read more about this change in the Message Center post at [https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC807460](https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC807460).
 
 #### Step 2: Enable attendee access to scripts and content over time
 
@@ -56,6 +55,3 @@ Dynamically loaded, embedded content have unique requirements for immersive expe
 > 
 > For more information about WebSlate security and allowlisting, see [WebSlate performance and security](../develop/enhance-your-environment/web-content/webslate-performance-and-security.md).
 
-[service-tag]: /azure/virtual-network/service-tags-overview
-[service-tag-api]: /azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api
-[service-tag-download]: /azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files
