@@ -41,9 +41,9 @@ A few important notes to consider are:
 
 ### Event tools for hosts and attendees
 
-* Crowd visualization for hosts and attendees is coming to make it possible to see Mesh event participants in other rooms. The visualization of people in other rooms is proximity based and does not include interaction with people in other rooms at the moment. With the room size limitation, we hope this improvement can breakdown the room barriers and give people a visualization that shows the true scale of Mesh events.
+* Reaction visualization for attendees is coming to multi-room Mesh events. Attendees who are raising their hand or actively reacting with emojis are now visualized across all rooms as spatial 3D bubbles. These simple visualizations persist ephemerally and dynamically display information about others who are in the event based on proximity and location. They do not support direct interaction, but rather aim to create a sense of the audience-as-a-whole and communicate the general sentiment of participants in multi-room events. This visualization can be toggled on or off for each individual by navigating to Menu > Settings > Controls.
 
-* We are improving the attendee to attendee and host to attendee interactions with avatar selection or click. As an attendee, selecting or clicking on an avatar will raise a menu with the option to open their profile card. As a host, selecting or clicking an attendee avatar will raise a menu with options to megaphone or broadcast (dependent on the room size of the event: single or multi-room) an attendee, mute the attendee, or open their profile card.
+* We are also adding a new interaction capability for both attendees and hosts. As an attendee, selecting or clicking on an avatar will now raise a menu with the option to open someone's profile card or view their current mic-state. As a host, selecting or clicking an attendee avatar will raise a menu with options to megaphone or broadcast (dependent on the room size of the event: single or multi-room), mute the attendee, or open their profile card.
 
 ## September 2024
 
