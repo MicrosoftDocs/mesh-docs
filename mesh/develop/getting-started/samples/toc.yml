@@ -6,6 +6,9 @@ items:
   - name: Toybox
     href: toybox.md
     displayName: samples
+  - name: Pavilion
+    href: pavilion.md
+    displayName: samples    
   - name: Physics Effects Gallery
     href: physics-effects-gallery.md
     displayName: samples
