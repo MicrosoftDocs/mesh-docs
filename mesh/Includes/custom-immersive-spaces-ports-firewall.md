@@ -8,7 +8,7 @@ ms.date: 8/15/2024
 ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, setup, admin, M365, ports and firewall, requirements
 ---
-
+ 
 ### Endpoints and firewall requirements for immersive spaces in Mesh
 
 This section outlines the specific endpoints and firewall requirements for **Immersive experiences in Mesh**, inclusive of the Mesh application and its features that your organization can leverage to create dynamic corporate events.
