@@ -17,11 +17,17 @@ The Mesh Pavillion sample lets you create environments that contain interactive 
 
 In the **Samples** scene, you'll find activities constructed from objects [found in the Toybox package](./toybox.md), a globe from our [Control Samples](../../getting-started/samples/control-samples.md) package, various art assets, and Mesh toolkit features like screenshare that you can pull into your own environments.
 
-![______](../../../media/samples/pavilion/001-campfire.png)
+:::image type="content" source="../../../media/samples/pavilion/007-campfire-small-350.png" alt-text="________" lightbox="../../../media/samples/009-campfire-large-1250.png":::
 
-***
+:::image type="content" source="../../../media/samples/pavilion/011-icebreaker-small-250.png" alt-text="________" lightbox="../../../media/samples/010-icebreaker-large-1250.png":::
 
-![______](../../../media/samples/pavilion/002-icebreaker.png)
+:::image type="content" source="../../../media/samples/pavilion/013-beanbag-small-350.png" alt-text="________" lightbox="../../../media/samples/012-beanbag-large-1250.png":::
+
+:::image type="content" source="../../../media/samples/pavilion/015-mesh-physics-small-350.png" alt-text="________" lightbox="../../../media/samples/014-mesh-physics-large-1250.png":::
+
+:::image type="content" source="../../../media/samples/pavilion/017-globe-small-350.png" alt-text="________" lightbox="../../../media/samples/016-globe-large-1250.png":::
+
+:::image type="content" source="../../../media/samples/pavilion/019-sound-spheres-small-350.png" alt-text="________" lightbox="../../../media/samples/018-sound-spheres-large-1250.png":::
 
 ***
 
