@@ -4,7 +4,7 @@ description: Learn about various equippable objects and the realistic ways they 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 9/25/2024
+ms.date: 10/03/2024
 ms.topic: overview
 keywords: interactions, interactables, equippables, throwables, avatars, grab, pick up, hold, throw, attach, activate, activation
 ---
@@ -19,31 +19,27 @@ An object is made equippable by adding the *Mesh Interactable Setup* component t
 
 ![________](../../../media/enhance-your-environment/equips-in-detail/049-mesh-interactables-setup-updated.png)
 
-### View Equippables in an existing sample
+## Equippables in the Mesh toolkit
 
-The Equippable prefabs have been pre-added to the Toybox sample project.
+Here's a look at the Equippables that you can add from the Mesh toolkit:
 
-1. Open the Toybox project in Unity.
-1. Navigate to the **Assets** > **_Scenes** folder and then open the *Toybox* scene.
-1. In the **Scene** window, navigate into the building with the fish on the front.
+***
 
-    ![A screen shot of the front of the building in the Toybox project.](../../../media/enhance-your-environment/equips-in-detail/048-toybox-front-view-with-fish.png)
+![A screen shot of the first set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/012-table1.png)
 
-    The Equippables are on two tables against the back wall.
+***
 
-    ![A screen shot of the first set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/012-table1.png)
+![A screen shot of the second set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/013-table2.png)
 
-    ![A screen shot of the second set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/013-table2.png)
-
-Note that not all the objects on the tables are Equippables--the Baseball and Beach Ball are [*throwables*](./interactables.md#throwable). (A *throwable* object is an Equippable with the additional ability to be thrown.)
-
-**Tip**: To quickly find a prefab in the **Project** folder, in the **Hierarchy**, select the prefab, and then, in the **Inspector**, click the **Select** button.
-
-### Equippables in the Project window
+***
 
 The Equippables are located in the **Project** window's **Microsoft Mesh Toolkit Toybox** > **Runtime** folder.
 
 ![Screen shot of the Equippables in the Project folder.](../../../media/enhance-your-environment/equips-in-detail/046-equips-imported-from-package.png)
+
+Note that two of the objects shown here--the Baseball and Beach Ball--are [*throwables*](./interactables.md#throwable). A *throwable* object is an Equippable with the additional ability to be thrown.
+
+**Tip**: To quickly find a prefab in the **Project** folder, in the **Hierarchy**, select the prefab, and then, in the **Inspector**, click the **Select** button.
 
 **To add an Equippable to your scene**:
 

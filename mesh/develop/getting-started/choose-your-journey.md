@@ -27,8 +27,6 @@ If you're new to Mesh and like the idea of learning through a step-by-step tutor
 
 You can start with a sample project to quickly get inspired about what you can build with Mesh. These projects are already set up with the Mesh toolkit.
 
-[Learn more about starting with a Mesh sample](samples/samples-overview.md).
-
    > [!div class="nextstepaction"]
    > [Start with a Mesh sample](samples/samples-overview.md)
 
