@@ -9,7 +9,7 @@ ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, toolkit, Mesh toolkit
 ---
 
-# Mesh Samples Overview
+# Mesh samples overview
 
 There are a number of Mesh sample projects available that you can use as starting points for your own custom environments. Each project is already set up with the Mesh toolkit package and contains many assets that you might find useful.
 
