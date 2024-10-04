@@ -9,7 +9,7 @@ ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, dartroom
 ---
 
-# Microsoft Mesh toolkit Sample: Dart Room
+# Microsoft Mesh toolkit sample: Dart Room
 
 ![Gallery View](../../../media/samples/003-dartroom.png)
 
