@@ -27,7 +27,7 @@ Theses are features that we are rolling out as of October 2024.
 
 ### Guest access
 
-We are rolling out guest access for Mesh in the Mesh application for PC and Mac! Event organizers will soon be able to invite guest users outside their organization, providing an opportunity for broader collaboration and networking in Mesh events. Guests can sign in to the Mesh app to join events, participate in discussions, and experience the same interactive features as internal users, all while maintaining secure access control.
+We are rolling out guest access for Mesh in the Mesh application for PC! Event organizers will soon be able to invite guest users outside their organization, providing an opportunity for broader collaboration and networking in Mesh events. Guests can sign in to the Mesh app to join events, participate in discussions, and experience the same interactive features as internal users, all while maintaining secure access control.
 
 **Guests** - people who are logged in from outside your organization who access shared resources by signing in using a guest account in your directory. Guests appear with "(Guest)" appended to their name in meetings. A guest user is invited as guest to the organizer tenant. They must have a guest account created for them with Microsoft Entra ID, which provides the same compliance and auditing protection as other Microsoft 365 users. Anyone with a business or consumer email account, such as Outlook, Gmail, or others, can participate as a guest in Mesh events.
 

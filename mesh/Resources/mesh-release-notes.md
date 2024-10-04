@@ -37,6 +37,10 @@ Microsoft Mesh application
 
 ## What's new
 
+### Features in development
+
+We've released a new page to cover [features in development](features-in-development.md) that we're rolling out that customers may see.
+
 ### Limitations & specifications for Mesh
 
 We have released a page describing the [limitations and specifications for Microsoft Mesh](limitations-specifications-mesh.md), including the max number of participants across Mesh event scenarios, max duration of events, and more.

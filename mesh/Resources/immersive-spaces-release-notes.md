@@ -15,6 +15,14 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 ## Version 5.1414.XX (September 30, 2024)
 
+### Features in development
+
+We've released a new page to cover [features in development](features-in-development.md) that we're rolling out that customers may see.
+
+### Network bandwidth requirements
+
+We have released the [network bandwidth requirements for various Mesh event scenarios](../Setup/Content/preparing-your-organization.md#network-bandwidth-requirements).
+
 ### Limitations & specifications for Immersive spaces
 
 We have released a page describing the [limitations and specifications for immersive spaces in Teams](limitations-specifications-mesh.md), including the max number of participants across Mesh event scenarios, max duration of events, and more.
