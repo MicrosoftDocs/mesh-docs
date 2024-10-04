@@ -8,7 +8,7 @@ ms.date: 8/15/2024
 ms.topic: overview
 keywords: Microsoft Mesh, Immersive spaces, setup, admin, M365, ports and firewall, requirements
 ---
-
+ 
 ### Endpoints and firewall requirements for immersive spaces in Mesh
 
 This section outlines the specific endpoints and firewall requirements for **Immersive experiences in Mesh**, inclusive of the Mesh application and its features that your organization can leverage to create dynamic corporate events.
@@ -21,7 +21,7 @@ Configure your enterprise firewall settings to align with the standard set of Mi
 
 As part of this, ensure that you have configured your firewall to enable traffic to `*.cloud.microsoft.com`, `*.office.com`, and `*.microsoft.com` over `TCP 443`, `80`.
 
-Mesh also requires the IP addresses and port ranges detailed in [Firewall configuration for Azure Communication Services](https://learn.microsoft.com/azure/communication-services/concepts/voice-video-calling/network-requirements#firewall-configuration) for media capabilities such as audio, video, and screenshare.
+Mesh also requires the IP addresses and port ranges detailed in [Firewall configuration for Azure Communication Services](/azure/communication-services/concepts/voice-video-calling/network-requirements#firewall-configuration) for media capabilities such as audio, video, and screenshare.
 
 Without access to these, Mesh won't work properly for users in your organization.
 

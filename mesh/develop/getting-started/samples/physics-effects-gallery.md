@@ -9,7 +9,7 @@ ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics
 ---
 
-# Microsoft Mesh toolkit Sample: Physics Effects Gallery
+# Microsoft Mesh toolkit sample: Physics Effects Gallery
 
 ![Gallery View](../../../media/samples/001-physics-effects-gallery.png)
 
