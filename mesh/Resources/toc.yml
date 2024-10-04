@@ -1,4 +1,6 @@
 items:
+  - name: Features in development
+    href: features-in-development.md
   - name: Avatars for Teams release notes
     items:
     - name: What's new
