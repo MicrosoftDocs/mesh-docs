@@ -9,7 +9,7 @@ ms.service: mesh
 keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics, science, sciencebuilding
 ---
 
-# Microsoft Mesh toolkit Sample: ScienceBuilding
+# Microsoft Mesh toolkit sample: ScienceBuilding
 
 ## Overview
 
