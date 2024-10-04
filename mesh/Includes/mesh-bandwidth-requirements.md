@@ -15,7 +15,7 @@ The following network bandwidth requirements are designed to help users in your 
 
 While we are constantly working on improving how Mesh works even in poor network conditions, you may want to further optimize your network if users in your organization report poor audio quality, audio cutting out, or delayed or jerky avatar movement.
 
-Mesh immersive experiences build on top of [Microsoft Teams network bandwidth requirements](/microsoftteams/prepare-network#bandwidth-requirements) for capabilities such as audio from non-immersive participants, video, and screenshare, with additional bandwidth needed for immersive capabilities such as avatar movement and spatial audio, shared physics and crowd visualization.
+Mesh immersive experiences build on top of [Microsoft Teams network bandwidth requirements](/microsoftteams/prepare-network#bandwidth-requirements) for capabilities such as screenshare, with additional bandwidth needed for immersive capabilities such as avatar movement and spatial audio, and to be able to visualize users in other rooms.
 
 ### Bandwidth requirements for all events
 

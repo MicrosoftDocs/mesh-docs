@@ -17,6 +17,8 @@ keywords: Microsoft Mesh, limitations, specifications, platform support, maximum
 |----------------------------------------------------------------|------------------------------|
 | Platform availability for immersive spaces (3D) view in Teams  | PC, Mac, Meta Quest headsets |
 | Max number of attendees that can join the meeting in immersive | 16                           |
+| Minimum hardware requirements to see immersive spaces (3D) in view picker in Teams | 4-core CPU & 8 GB RAM                           |
+
 
 ## Microsoft Mesh event experiences
 
