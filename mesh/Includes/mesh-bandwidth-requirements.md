@@ -33,6 +33,6 @@ Mesh immersive experiences build on top of [Microsoft Teams network bandwidth re
 
 As an example, a multi-room event such as a team all hands with screenshare, broadcasted presenters, and visualization for users in other rooms will require a minimum of 375 kbps downstream, and 795 kbps upstream, and a maximum of 4,265 kbps downstream and 5,095 kbps upstream.
 
-Note: these metrics are calculated based on maximum room, presenter, and event capacities as documented in Mesh limits and specifications [link to be added], to help you best prepare your organization's network for Mesh. Smaller event sizes will have lower network requirements, for example due to there being fewer avatars, speakers, and rooms.
+Note: these metrics are calculated based on maximum room, presenter, and event capacities as documented in [Mesh limitations and specifications](../Resources/limitations-specifications-mesh.md), to help you best prepare your organization's network for Mesh. Smaller event sizes will have lower network requirements, for example due to there being fewer avatars, speakers, and rooms.
 
 Custom content such as videos added [through Mesh event customization](../events-guide/customize-event.md) may require further bandwidth. For events with custom content, we recommend testing your event beforehand with a representative network connection to make sure that content loads correctly and experience performance is adequate.
