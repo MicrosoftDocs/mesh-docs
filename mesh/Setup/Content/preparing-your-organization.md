@@ -200,6 +200,12 @@ As with all Microsoft products, allowing the endpoints and ports required for Me
 
 [!INCLUDE [Include file for the custom immersive spaces ports and firewall requirements in Mesh article](../../Includes/custom-immersive-spaces-ports-firewall.md)]
 
+## Network bandwidth requirements
+
+[!INCLUDE[Include file for Mesh bandwidth requirements](../../Includes/mesh-bandwidth-requirements.md)]
+
+[!INCLUDE[Include file for Immersive spaces in Teams bandwidth requirements](../../Includes/immersive-spaces-teams-bandwidth-requirements.md)]
+
 ### Conditional Access & Quest
 
 > [!NOTE]
