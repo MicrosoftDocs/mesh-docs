@@ -37,9 +37,21 @@ Microsoft Mesh application
 
 ## What's new
 
+### Features in development
+
+We've released a new page to cover [features in development](features-in-development.md) that we're rolling out that customers may see.
+
+### Limitations & specifications for Mesh
+
+We've released a page describing the [limitations and specifications for Microsoft Mesh](limitations-specifications-mesh.md), including the max number of participants across Mesh event scenarios, max duration of events, and more.
+
+### Network bandwidth requirements
+
+We've released the [network bandwidth requirements for various Mesh event scenarios](../Setup/Content/preparing-your-organization.md#network-bandwidth-requirements).
+
 ### Simplified firewall setup requirements
 
-We have completed the rollout to simplify firewall setup requirements for immersive spaces in Teams. As part of this, you will no longer need to allow traffic to IP addresses in the "AzureCloud" service tag. To read more about the updated firewall setup requirements, see how to [Manage the Mesh app in Microsoft Teams](/microsoftteams/meeting-immersive-spaces).
+We've completed the rollout to simplify firewall setup requirements for immersive spaces in Teams. As part of this, you'll no longer need to allow traffic to IP addresses in the "AzureCloud" service tag. To read more about the updated firewall setup requirements, see how to [Manage the Mesh app in Microsoft Teams](/microsoftteams/meeting-immersive-spaces).
 
 Additionally, users will no longer need to agree to the terms associated with Mesh's previous spatial audio infrastructure. Mesh events now use the same audio infrastructure as Microsoft Teams.
 
