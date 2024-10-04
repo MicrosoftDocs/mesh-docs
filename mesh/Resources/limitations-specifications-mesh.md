@@ -1,6 +1,6 @@
 ---
 title: Limitations and specifications for Microsoft Mesh
-description: Limitations and specifications for Microosoft Mesh, including the platform support and maximum number of participants.
+description: Limitations and specifications for Microsoft Mesh, including the platform support and maximum number of participants.
 ms.service: mesh
 author: typride 
 ms.author: tmilligan
