@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, getting started, samples, tutorials, features, physics
 
 The Mesh Pavillion sample lets you create environments that contain interactive activities and various assets found in the Mesh Toolkit. It features a simple, high-performance design. The Pavilion Unity project contains two scenes. 
 
-## The *MeshPavillion_Samples" scene
+## The *MeshPavillion_Samples* scene
 
 In this scene, you'll find activities constructed from objects [found in the Toybox package](../../enhance-your-environment/toybox.md), a globe from our [Control Samples](../../build-your-basic-environment/control-samples.md) package, various art assets, and Mesh toolkit features like screenshare that you can pull into your own environments.
 
