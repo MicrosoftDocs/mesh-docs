@@ -15,13 +15,13 @@ The Mesh Pavillion sample lets you create environments that contain interactive 
 
 ## Samples scene (*MeshPavillion_Samples*)
 
-In the **Samples** scene, you'll find activities constructed from objects [found in the Toybox package](./toybox.md), a globe from our [Control Samples](../../getting-started/samples/control-samples.md) package, various art assets, and Mesh toolkit features like screenshare that you can pull into your own environments.
+In the **Samples** scene, you'll find activities constructed from objects [found in the Toybox package](../../enhance-your-environment/toybox.md), a globe from our [Control Samples](../../build-your-basic-environment/control-samples.md) package, various art assets, and Mesh toolkit features like screenshare that you can pull into your own environments.
 
-![______](../../../media/samples/pavilion/001-campfire.png)
+:::image type="content" source="../../../media/samples/pavilion/007-campfire-small-350.png" alt-text="Screen shot of the Campfire activity in the Pavilion sample." lightbox="../../../media/samples/pavilion/009-campfire-large-1250.png"::: :::image type="content" source="../../../media/samples/pavilion/011-icebreaker-small-250.png" alt-text="________" lightbox="../../../media/samples/pavilion/010-icebreaker-large-1250.png":::
 
-***
+:::image type="content" source="../../../media/samples/pavilion/013-beanbag-small-350.png" alt-text="________" lightbox="../../../media/samples/pavilion/012-beanbag-large-1250.png"::: :::image type="content" source="../../../media/samples/pavilion/015-mesh-physics-small-350.png" alt-text="________" lightbox="../../../media/samples/pavilion/014-mesh-physics-large-1250.png":::
 
-![______](../../../media/samples/pavilion/002-icebreaker.png)
+:::image type="content" source="../../../media/samples/pavilion/017-globe-small-350.png" alt-text="________" lightbox="../../../media/samples/pavilion/016-globe-large-1250.png"::: :::image type="content" source="../../../media/samples/pavilion/019-sound-spheres-small-350.png" alt-text="________" lightbox="../../../media/samples/pavilion/018-sound-spheres-large-1250.png":::
 
 ***
 
@@ -102,7 +102,7 @@ You can resize and change the location of the ScreenShare prefab.
 
 * **Globe**
 
-The Glove prefab represents planet Earth; you can spin and select it. When selected, the globe generates a latitude and longitude position and adds a marker. This functionality can be extended and modified with Visual Scripting and all actions are shared by all clients by default. Globe is one of the samples in the [Control Samples](./control-samples.md) package, a sample library of user interface controls built using the Mesh Toolkit.                                                                                                             
+The Glove prefab represents planet Earth; you can spin and select it. When selected, the globe generates a latitude and longitude position and adds a marker. This functionality can be extended and modified with Visual Scripting and all actions are shared by all clients by default. Globe is one of the samples in the [Control Samples](../../build-your-basic-environment/control-samples.md) package, a sample library of user interface controls built using the Mesh Toolkit.                                                                                                             
 
 * **Art assets**                                                 
                          
