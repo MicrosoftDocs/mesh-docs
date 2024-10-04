@@ -1,6 +1,8 @@
 items:
   - name: Features in development
     href: features-in-development.md
+  - name: Limitations and specifications
+    href: limitations-specifications-mesh.md
   - name: Avatars for Teams release notes
     items:
     - name: What's new
