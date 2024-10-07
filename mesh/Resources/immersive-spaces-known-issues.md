@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 
 # Active known issues and limitations - Immersive Spaces in Teams
 
-## Version 5.2414.X (OCtober 7, 2024)
+## Version 5.2414.X (October 7, 2024)
 
 ### Audio issues from poor network conditions
 
