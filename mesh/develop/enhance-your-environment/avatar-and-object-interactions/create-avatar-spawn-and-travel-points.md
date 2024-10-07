@@ -4,7 +4,7 @@ description: Learn how to create points that an avatar will spawn to or travel t
 ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 3/7/2024
+ms.date: 10/04/2024
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, teleport, spawn, travel points
 ---
@@ -13,23 +13,23 @@ keywords: Microsoft Mesh, object and player interactions, interactables, avatars
 
 ## Travel Point Overview
 
-*Travel Point* is a component in the Mesh toolkit that can be used to define where an attendee's avatar is placed when it joins an Event and also to teleport avatars during an Event using Visual Scripting.
+*Travel Point* is a component in the Mesh toolkit that can be used to define where an attendee's avatar is placed when it joins an Event or where it teleports to, as determined by Visual Scripting, during the Event.
 
-If a Travel Point isn't present in an Environment, and there's a GameObject that represents a floor at the origin, the avatar will be grounded on the floor when spawned. If no floor is present near the origin, the avatar will spawn above the origin, fall for a little while, and then respawn in a loop.
+If a Travel Point isn't present in an Environment, and there's a GameObject that represents a floor at the origin, the avatar will be grounded on the floor when the avatar spawns. If no floor is present near the origin, the avatar will spawn above the origin, fall for a little while, and then respawn in a loop.
 
 ### Travel Point Group Overview
 
-All Travel Points must belong to a Travel Point Group. If you add a Travel Point without first assigning it to a group ...
+You can have single Travel Points as part of various different GameObjects such as [tethers and anchors](./triggers-anchors-and-tethers.md). If you have a Travel Point GameObject in your scene but no Travel Point Group ...
 
 ![A screen shot of a Travel Point in the Hierarchy that's not assigned to a Travel Point Group.](../../../media/enhance-your-environment/object-player-interactions/007-travel-point.png)
 
-... when you enter Play Mode, a Travel Point Group will be automatically created and the Travel Point will be assigned to it.
+... when you enter Play Mode, a Travel Point Group named *DefaultTravelGroup* will be automatically created and the Travel Point will be assigned to it, though the Travel Point *won't* appear as a child object to *DefaultTravelGroup*.
 
 ![A screen shot of a Travel Point that is automatically assigned to an automatically created Travel Point Group in Play Mode.](../../../media/enhance-your-environment/object-player-interactions/022-travel-point-in-group.png)
 
-Every Travel Point Group must have a unique name. 
+Every Travel Point Group must have a unique name.
 
-The *Default Spawn Group* is the group you want avatars to spawn into when they initially join an event. If you only have one Travel Point Group, it'll be selected as the Default Spawn Group by default. If you have two or more Travel Point Groups, you can select which you group you want as the Default Spawn Group.
+The *Default Spawn Group* is the group you want avatars to spawn into when they initially join an event. If you only have one Travel Point Group, it'll be selected as the Default Spawn Group. If you have two or more Travel Point Groups, you can select which you group you want as the Default Spawn Group.
 
 ### Create a Travel Point Group
 
