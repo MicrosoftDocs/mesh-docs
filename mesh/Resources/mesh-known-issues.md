@@ -4,12 +4,22 @@ description: Active known issues for Mesh
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
-ms.date: 4/19/2024
+ms.date: 10/07/2024
 ms.topic: release-notes
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
 
 # Active known issues - Mesh
+
+## Version 5.1414.X (October 7, 2024)
+
+### Audio distortion
+
+Users have previously cited audio distortion impacting their meeting.  This issue has been resolved.  Users are encouraged to file feedback in the event of future occurrence.
+
+### Audio causing nameplate to disappear
+
+Avatar nameplate may not light up when users are speaking and/or may light up when users are not speaking, contributing to a confusing experience regarding who is speaking. The event of this occurrence is not expected to impact audio spatialization. Users will be able to detect audio directionality and proximity of other speaking avatars.
 
 ## Mesh app in Teams (August 12, 2024)
 
