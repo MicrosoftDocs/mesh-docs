@@ -35,6 +35,8 @@ We've released the [network bandwidth requirements for various immersive experie
 
 We've completed the rollout to simplify firewall setup requirements for immersive spaces in Teams. As part of this, you'll no longer need to allow traffic to IP addresses in the "AzureCloud" service tag. To read more about the updated firewall setup requirements, see how to [Manage the Mesh app in Microsoft Teams](/microsoftteams/meeting-immersive-spaces).
 
+Please note that there are a few [outstanding known issues for audio](immersive-spaces-known-issues.md) that are a result of our simplified firewall requirements.
+
 For more info, please refer to [firewall requirements for Microsoft Mesh and immersive spaces in Teams](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-configuration).
 
 ## Version 5.2412.XX (September 03, 2024)
