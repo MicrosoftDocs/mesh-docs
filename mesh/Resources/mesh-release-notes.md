@@ -55,6 +55,8 @@ We've completed the rollout to simplify firewall setup requirements for immersiv
 
 Additionally, users will no longer need to agree to the terms associated with Mesh's previous spatial audio infrastructure. Mesh events now use the same audio infrastructure as Microsoft Teams.
 
+Please note that there are a few [outstanding known issues for audio](mesh-known-issues.md) that are a result of our simplified firewall requirements.
+
 Please refer to [firewall requirements for Microsoft Mesh and immersive spaces in Teams](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-configuration) for more info.
 
 ### Avatar mouth movement
