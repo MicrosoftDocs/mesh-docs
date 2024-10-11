@@ -5,13 +5,45 @@ ms.service: mesh
 author: typride  
 ms.author: tmilligan
 ms.date: 4/19/2024
-ms.topic: Guide
+ms.topic: release-notes
 keywords: Microsoft Mesh, immersive spaces, Mesh, release notes
 ---
 
 # Active known issues and limitations - Immersive Spaces in Teams
 
-## Version 5.2403.0 (April 18, 20)
+## Version 5.2414.X (October 7, 2024)
+
+### Audio issues from poor network conditions
+
+We are currently addressing known issues that may result in temporary audio loss during a meeting. These issues, which can be driven by poor network conditions, including temporary drops in network bandwidth are:
+
+* Users receive a notification advising them to rejoin the meeting. We recommend that users rejoin the meeting if the issue persists to improve the experience.
+
+* Audio loss after changing the immersive environment meeting space from the default Lakehouse environment. We recommend users remain in the default space to reduce the risk of losing audio.
+
+* Audio loss after "On Hold" status while in Immersive Space.  For an optimal experience, users are asked not to join multiple calls simultaneously.
+
+**In the event of any audio loss, we recommend users leave Immersive meeting and rejoin the experience to continue.**
+
+### Audio issues from device selection
+
+We are currently addressing some known issues as a result of audio device selection for bluetooth devices:
+
+* Users using a Bluetooth device may experience their mic selection and speaker selection set to different devices, impacting the ability to hear or be heard in a meeting. When using Bluetooth speakers, users should check their audio settings to make sure microphone and speaker are set to the same audio device.
+
+### Audio distortion
+
+Users have previously cited audio distortion impacting their meeting.  This issue has been resolved.  Users are encouraged to file feedback in the event of future occurrence.
+
+### Audio causing nameplate to disappear
+
+Avatar nameplate may not light up when users are speaking and/or may light up when users are not speaking, contributing to a confusing experience regarding who is speaking. The event of this occurrence is not expected to impact audio spatialization. Users will be able to detect audio directionality and proximity of other speaking avatars.
+
+## Version 5.2406.0 (May 26, 2024)
+
+* If a user attempts to use the **Meet now** button in Teams then tries to change their **View** to **Immersive space (3D)**, they may encounter the error **Unable to join**. (30916)
+
+## Version 5.2403.0 (April 18, 2024)
 
 ### Seat selection
 

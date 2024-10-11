@@ -3,7 +3,7 @@ title: Mesh Development overview
 description: Development overview for Mesh using Unity.
 author: typride
 ms.author: vinnietieto
-ms.date: 1/10/2024
+ms.date: 8/9/2024
 ms.topic: Guide
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environments
@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, getting started, Mesh on the web, experiences, environ
 
 ## What you can do with Mesh
 
-As a Mesh developer, you have an exciting opportunity to bring people together in shared immersive experiences in 2D (PC) or 3D (Oculus Quest). Microsoft Teams offers the Mesh experience in pre-built [Immersive Spaces](https://support.microsoft.com/en-us/office/get-started-with-immersive-spaces-in-microsoft-teams-4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams), but you can create custom experiences that take full advantage of your creativity. Build imaginative settings in Unity, add 3D models created by you and others, and develop activities that will delight visitors to your experiences. You'll also help the hosts of your experiences reduce business costs by bringing distributed teams together.
+As a Mesh developer, you have an exciting opportunity to bring people together in shared immersive experiences in 2D (PC) or 3D (Quest). Microsoft Teams offers the Mesh experience in pre-built [Immersive Spaces](https://support.microsoft.com/en-us/office/get-started-with-immersive-spaces-in-microsoft-teams-4a6182f8-0f43-4c24-bb66-ef229fa221d8#ID0EBH=Microsoft_Teams), but you can create custom experiences that take full advantage of your creativity. Build imaginative settings in Unity, add 3D models created by you and others, and develop activities that will delight visitors to your experiences. You'll also help the hosts of your experiences reduce business costs by bringing distributed teams together.
 
 Here are some examples of the types of experiences you can create:
 
@@ -77,7 +77,7 @@ In the *Develop environnments* section of the Mesh help site, you'll find articl
 
     ![A screenshot of avatars spawned in a Mesh experience.](../media/get-started-developing-mesh/059-avatars-spawned.png)
 
-* [Mesh WebSlates](enhance-your-environment/webcontent.md) are panels that display web content.
+* [Mesh WebSlates](./enhance-your-environment/web-content/webcontent.md) are panels that display web content.
 
     ![A screenshot of a Mesh experience with a WebSlate on the wall showing a video.](../media/get-started-developing-mesh/050-webslate.png)
 

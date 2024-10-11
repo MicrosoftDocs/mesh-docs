@@ -32,7 +32,7 @@ This is how it looks in Mesh:
 
 ## Testing your scripts
 
-Before you upload your scene to Mesh, you can develop and test visual scripts, even with multiple clients in split screen mode, using [Mesh Emulation Mode](../../debug-and-optimize-performance/mesh-emulator.md).
+Before you upload your scene to Mesh, you can develop and test visual scripts, even with multiple clients in split screen mode, using [Play Mode with Mesh Emulation](../../debug-and-optimize-performance/mesh-emulator.md).
 
 ## Visual script diagnostics in the Editor
 
@@ -109,51 +109,12 @@ Mesh makes certain trade-offs in favor of simplicity:
 
 ## Best practices
 
-Visual scripts are significantly slower than native C# code. In addition, Mesh augments visual scripts with network and other integration features, and seemingly low-overhead visual script actions may result in network traffic.
+Visual scripts are significantly slower than native C# code. In addition, Mesh augments visual scripts with network and other integration features, and seemingly low-overhead visual script actions may result in network traffic. To learn about getting the best performance from your visual scripts, we recommend that you view the following articles:
 
-Performance issues in visual scripts are almost always caused by the scripts doing high-frequency updates of variables or component properties that are shared by default.
-
-- Do use **Local Script Scope** components liberally to make sure only variables and component properties that _need_ to be synchronized across clients incur networking overhead. Anything animated locally with a visual script should not be shared.
-
-- Do use the **On State Changed** script trigger to start script flows in response to changing variables or component properties. This works both for local and shared state. It's also the recommended way to synchronize local animations.
-
-- Do use the **On Interval** script trigger instead of a high-frequency trigger like **On Update** to start script flows in controllable, regular intervals.
-
-Things to be aware of:
-
-- Whenever possible, avoid triggering visual scripts every frame. Instead of using **On Update**, use **On State Changed** or **On Interval**.
-
-- If you must trigger a visual script every frame, do it on as few objects as possible.
-
-- Don't update shared properties at high frequency. Instead, consider making high-frequency updated properties local by using the **Local Script Scope** component. Remember that visual script variables are also shared by default!
-
-- Don't use object variables if flow variables would work.
-
-- Avoid updating shared properties or variables in visual scripts that are triggered simultaneously on all clients.
-
-- Avoid setting physics properties (transform and velocity) on the same physics body on multiple clients at the same time. This can easily happen by accident in visual scripts that respond to shared scene change triggers.
-
-- Don't try to fix performance problems by consolidating several script flows that work on individual objects into a single script flow that works on many objects. The overhead of starting a script flow is negligible, and the added complexity you have to add to consolidate your script may very well negate any slight performance benefit you might get from reducing the number of ScriptMachines.
-
-**Tips**
-
-- Component properties and visual script variables that have simple types are automatically shared across clients in a session. To reduce overhead by limiting the amount of sharing, add a **Local Script Scope** component to the relevant GameObject, and then do one of the following:
-
-    **To share visual script variables but not component properties or the script variables or component properties of child objects**:  
-    In the **Local Script Scope** component, select **Share visual script variables on this Game Object**.
-
-    ![Screen shot of the local script scope component with its property named "Share visual script variables on this Game Object" selected.](../../../media/mesh-scripting/visual-scripting/002-share-variables.png)
-
-    **To keep all visual script variables and component properties for the current object and its child objects local**:  
-    This is achieved by just adding the **Local Script Scope** component and keeping **Share visual script variables on this Game Object** unselected.
-
-    ![Screen shot of the local script scope component with its property named "Share visual script variables on this Game Object" left unselected.](../../../media/mesh-scripting/visual-scripting/003-event-not-shared.png)
-
-    You can see several examples of how the *Local Script Scope* component is used in [Chapter 3 of our Mesh 101 tutorial](../../getting-started/mesh-101-tutorial/mesh-101-03-visual-scripting.md) which focuses on visual scripting.
-
-- To do something in regular time intervals in sync across clients, use the **On Interval** trigger node.
-- To do something in response to certain component properties or visual script variables changing (for example, because this or some other client was setting them in a visual script), use the **On State Changed** trigger
-- There are additional Visual Scripting functions provided by Mesh&#8212;see the _Microsoft_ > _Mesh_ and _Microsoft_ > _Events_ > _Mesh_ sections in the Fuzzy Finder.
+[Visual Scripting best practices overview](./best-practices/visual-scripting-best-practices-overview.md)    
+[Visual Scripting best practices for performance](./best-practices/visual-scripting-best-practices-performance.md)    
+[Visual Scripting best practices for networking](./best-practices/visual-scripting-best-practices-networking.md)    
+[Visual Scripting best practices for debugging](./best-practices/visual-scripting-best-practices-debugging.md)
 
 ## Security
 

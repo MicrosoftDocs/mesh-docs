@@ -1,10 +1,10 @@
 ---
 title: Create event in Mesh on Web
-description: Guide to creating an event in Mesh using Mesh on the Web.
+description: Guide to creating an event or template in Mesh using Mesh on the Web, including the ability to create collections or manage them.
 ms.service: mesh
 author: typride
-ms.author: vinnietieto
-ms.date: 1/11/2024
+ms.author: tmilligan
+ms.date: 09/04/2024
 ms.topic: Guide
 keywords: Microsoft Mesh, Mesh on Web, M365, events, hosting, event producer, event organizer
 ---
@@ -19,8 +19,8 @@ The overall flow of creating an event in Mesh on the web is:
 1. Select **Create event** in the top right.
 1. Add the **Title**, **Date/Duration**, and **Details about the event**.
 1. Choose your room settings like:
-    1. **Single room** (up to 16 people, 24-hour time limit)
-    1. **Multi-room** (up to 200 people, hosts are grouped in one room, 3-hour time limit)
+    1. **Single room**
+    1. **Multi-room**
 1. Invite people:
     1. **Co-organizers** (People to help set up and run the event)
     1. **Attendees** (People to join the event)
@@ -32,19 +32,22 @@ The overall flow of creating an event in Mesh on the web is:
 
 ## Considerations before your event
 
-- **Single room events (16 people max)**: 24-hour time limit.
-- **Multi-room events (200 people max)**: 3-hour time limit.
-  - Hosts are grouped into a separate room (up-to 16 hosts + 200 attendees)
-- **Customize and save edits at least 30 minutes** before your event to ensure the event runs smoothly.
+- **Single room events:**
+    - Capacity: 16 people
+    - Time limit: 24-hours
+    - Events can be rejoined from the Mesh Dashboard or via the link created for the event
+
+- **Multi-room events:**
+    - Capacity: 330 people
+    - Time limit: 3-hours
+    - Events can be rejoined from the Mesh Dashboard or via the link created for the event
+    - Co-organizers are in their own room and attendees are grouped into 16 person rooms
+
+- **Customize and save edits at least 30 minutes** before your event to ensure the event runs smoothly
 
 ## Create an event
 
 1. Open Mesh on the web at [https://mesh.cloud.microsoft/](https://mesh.cloud.microsoft/).
-
-    > [!NOTE]
-    > Mesh on the web is moving to cloud.microsoft [with all Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). To use the new cloud.microsoft endpoint, ensure you have allowed the proper endpoints allowed, as detailed in the [Preparing your organization article](../Setup/Content/preparing-your-organization.md#endoints-and-firewall-ports-for-immersive-spaces-in-mesh-mesh-app).
-    >
-    > If you have any issues with the new Mesh on the web experience, you can continue to use *portal.mesh.microsoft.com*.
 
 1. Log in with your corporate account.
 
@@ -74,7 +77,12 @@ The overall flow of creating an event in Mesh on the web is:
 
     1. Whether you **Choose a template** or **Start from scratch**, you can choose environments from Microsoft directly or from your Collections.
 
-    :::image type="content" source="../media/events-guide-create-event/5-select-environment-from-collections-2.png" alt-text="Screenshot showing environment selection made from collections in Mesh on the web":::
+        For example, when you **Choose a template**, you can see the templates provided from Microsoft below:
+
+        :::image type="content" source="../Resources/media/Microsoft-template-options.png" alt-text="Screenshot of Mesh on the web showing the ability to choose templates from Microsoft or your personal or work collections.":::
+
+    > [!NOTE]
+    > If you are unable to create an event, there may be [a policy that blocks your account from creating events](../Resources/mesh-troubleshooting.md#why-cant-i-create-an-event-or-adjust-the-sensitivity-label-for-an-event).
 
 1. (Optional) Upload an event cover image.
 

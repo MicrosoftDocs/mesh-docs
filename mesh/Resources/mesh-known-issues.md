@@ -4,16 +4,39 @@ description: Active known issues for Mesh
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
-ms.date: 4/19/2024
-ms.topic: Guide
+ms.date: 10/07/2024
+ms.topic: release-notes
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
 
 # Active known issues - Mesh
 
-## Version 5.2405.0 (May 10, 2024)
+## Version 5.1414.X (October 7, 2024)
 
+### Audio distortion
 
+Users have previously cited audio distortion impacting their meeting.  This issue has been resolved.  Users are encouraged to file feedback in the event of future occurrence.
+
+### Audio causing nameplate to disappear
+
+Avatar nameplate may not light up when users are speaking and/or may light up when users are not speaking, contributing to a confusing experience regarding who is speaking. The event of this occurrence is not expected to impact audio spatialization. Users will be able to detect audio directionality and proximity of other speaking avatars.
+
+## Mesh app in Teams (August 12, 2024)
+
+> [!IMPORTANT]
+> Currently, the Mesh app in Teams only available to organizations in [Mesh TAP](../develop/mesh-tap-participants.md).
+
+ We're excited to introduce the Mesh app in Teams to our Mesh TAP participants and appreciate your understanding as we work through the issues and limitations listed below:
+
+* **Attendees**
+
+  * Audio device selection does not inherit automatically from Teams.
+  * Some text that is shown as users launch the Mesh app may not yet be localized into languages other than English.
+  * Outgoing screenshare is not currently supported.
+
+* **Organizers**
+
+  * Image/Video objects cannot reference SharePoint URLs at the moment.
 
 ## Version 5.2403.0 (April 18, 2024)
 

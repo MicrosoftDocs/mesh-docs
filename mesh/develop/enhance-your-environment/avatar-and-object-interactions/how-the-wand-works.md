@@ -1,34 +1,36 @@
 ---
-title: Equippables&mdash;How the Wand works
+title: How the Equippable Wand works
 description: Take an-indepth look at the visual script that makes the Wand Equippable object work.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 5/10/2024
+ms.date: 10/03/2024
 ms.topic: overview
 keywords: interactions, interactables, equippables, throwables, avatars, grab, pick up, hold, throw, attach, activate, activation
 ---
 
-# Equippables: How the Wand works
+# How the Equippable Wand works
 
 ## Wand Overview
 
-**Activation mode**: single
+> [!IMPORTANT]
+> If you're new to Equippables, we recommend that you read the article named [Hold objects realistically with Equippables](./equippables-in-detail.md) before reading this article.
 
-In the Toybox sample, certain prefabs are a type of [Interactable](./interactables.md) known as *Equippable*. When you pick up such an object, your hand and arm position adjust to hold the object in a realistic way. When you pick up the Wand, you hold it out in front of you almost chest high and the Wand displays a sparkly vapor particle effect at its tip.
+The *Wand* is one of the Equippables available in the *Toybox* package which you receive when you [download our Mesh samples from GitHub](../../getting-started/samples/download-mesh-samples.md). When you pick up the Wand, you hold it out in front of you almost chest high and the Wand displays a sparkly vapor particle effect at its tip.
 
 :::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-holding1.gif" alt-text="GIF that shows an event attendee holding the Wand in its non-activated state.":::
 
-Click to *activate* the Wand; your arm thrusts forward and the tip of the Wand emits fireworks that are generated through another particle effect. 
+To *activate* the Wand, click your left mouse button (PC) or controller trigger button (Quest). Your arm thrusts forward and the tip of the Wand emits fireworks that are generated through another particle effect. 
 
 :::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-thrusting1.gif" alt-text="GIF that shows an event attendee activating the Wand which then generates fireworks.":::
 
-The Wand's *activate type* is set to *single*. This means that as soon as it runs through its behaviors, it de-activates and your arm returns to its initial position. Click again to repeat the behaviors.
+The Wand's *activate type* is set to *single*. This means that as soon as it runs through its behaviors, the Wand *de-activates* and your arm returns to its initial position. Click again to repeat the behaviors.
 
 ## The Wand script graph
 
 Let's take a look at how the Wand works by examining the script graph that's attached to it.
 
+1. Open the Toybox sample and make sure you're in the *Toybox* scene.
 1. In the **Hierarchy**, select the **Wand_Prefab** GameObject.
 
     ![A screen shot of the Hierarchy with the Wand prefab highlighted.](../../../media/enhance-your-environment/equips-in-detail/021-wand-prefab-in-hierarchy.png)
@@ -153,10 +155,10 @@ This once again triggers the nodes in the **Networking startMagic** node group a
 
 - Create different effects that could be triggered when one of the existing Equippables is picked up and held.  
 - Create new Equippables that could use some of the existing effects. For example, certain types of fireworks could use the "sparkle" effects that are currently used by the Wand.  
-- Create different effects and behaviors for a new Equippable that could be triggered when the Equippable is held and the left mouse button (PC) or controller button (Quest 2) is pressed. For example, instead of a Wand, you could have a fishing rod that casts out a lure when you press the button.  
+- Create different effects and behaviors for a new Equippable that could be triggered when the Equippable is held and the left mouse button (PC) or controller button (Quest) is pressed. For example, instead of a Wand, you could have a fishing rod that casts out a lure when you press the button.  
 - Think about the difference between having an object move right into its activated state when picked up (for example, the Drill) and having an object that starts off non-activated and then moves into its activated state after the attendee clicks (for example, the Tablet). Make objects that take advantage of both approaches.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Equippables&#8212;How the Wand works](./interactables.md)
+> [Grab, hold and throw with Interactables](./interactables.md)

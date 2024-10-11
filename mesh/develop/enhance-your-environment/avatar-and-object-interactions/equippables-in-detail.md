@@ -4,7 +4,7 @@ description: Learn about various equippable objects and the realistic ways they 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 5/2/2024
+ms.date: 10/03/2024
 ms.topic: overview
 keywords: interactions, interactables, equippables, throwables, avatars, grab, pick up, hold, throw, attach, activate, activation
 ---
@@ -13,55 +13,48 @@ keywords: interactions, interactables, equippables, throwables, avatars, grab, p
 
 ## Overview
 
-In the Toybox sample, certain prefabs are a type of [Interactable](./interactables.md) known as *Equippable*. When you pick up such an object, your hand and arm position adjust to hold the object in a realistic way. This is called *equipping an object to your hand*.
+The Mesh toolkit contains prefabs that are a type of [Interactable](./interactables.md) known as *Equippable*. When you pick up an Equippable object, your avatar knows how to adjust your hand and arm position so they can hold and handle the object in a realistic way. This is called *equipping an object to your hand*.
 
-> [!NOTE]
-> The Toybox sample is where we currently showcase our Equippables prefabs, but you can use the prefabs or create your own Equippables in any project.
+An object is made equippable by adding the *Mesh Interactable Setup* component to it and then choosing the *Equippable* type. There are [many settings](../avatar-and-object-interactions/interactable-setup-types/equippable-setup.md) in this component that you can adjust. There are also ten [presets](../avatar-and-object-interactions/interactable-setup-types/equippable-setup.md#presets) available; you can try these out and see if they fit your object, or at least come close enough to work with some additional fine-tuning. 
 
-There are eight Equippables:
+![________](../../../media/enhance-your-environment/equips-in-detail/049-mesh-interactables-setup-updated.png)
 
-- Wine glass
-- Birthday cake
-- Drill
-- Wrench
-- Trophy
-- Tablet
-- Coffee Cup
-- Wand
+## Equippables in the Mesh toolkit
 
-To see the Equippables in Unity, in the **Scene** window, navigate into the building with the fish on the front. The Equippables are on two tables against the back wall.
+Here's a look at the Equippables that you can add from the Mesh toolkit:
+
+***
 
 ![A screen shot of the first set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/012-table1.png)
 
+***
+
 ![A screen shot of the second set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/013-table2.png)
 
-Note that not all the objects on the tables are Equippables--the Baseball and Beach Ball are [*throwables*](./interactables.md#throwable). 
+***
 
-**To determine an object's type**:
-1. Select the object.
-1. In the **Inspector**, navigate to the *Mesh Interactable setup* component and then view the **Object Type** property.
+The Equippables are located in the **Project** window's **Microsoft Mesh Toolkit Toybox** > **Runtime** folder.
 
-    ![A screen shot of an object's type in its Mesh Interactabe Setup component.](../../../media/enhance-your-environment/equips-in-detail/014-object-type.png)
+![Screen shot of the Equippables in the Project folder.](../../../media/enhance-your-environment/equips-in-detail/046-equips-imported-from-package.png)
 
-## Where to find Equippables
-
-In the **Hierarchy**, the Equippables are nested prefabs to **Equipable Interactable Samples**, which is an instance of the prefab named *toybox_Equipable_Interactable_Samples*.
-
-![A screen shot of the equippable prefabs in the Hierarchy.](../../../media/enhance-your-environment/equips-in-detail/001-equips-in-the-hierarchy.png)
-
-In the **Project** window, the Equippable prefabs live in subfolders of the *Runtime* folder. These folders start with *Toybox_* followed by the name of the prefab. For example, the Wineglass prefab is stored in the *Toybox_Wineglass* folder.
-
-![Screen shot of the wineglass prefab in the Toybox_WineGlass folder.](../../../media/enhance-your-environment/equips-in-detail/005-wineglass-location-in-folder.png)
+Note that two of the objects shown here--the Baseball and Beach Ball--are [*throwables*](./interactables.md#throwable). A *throwable* object is an Equippable with the additional ability to be thrown.
 
 **Tip**: To quickly find a prefab in the **Project** folder, in the **Hierarchy**, select the prefab, and then, in the **Inspector**, click the **Select** button.
 
+**To add an Equippable to your scene**:
+
+1. Expand the folder that contains the Equippable prefab.
+1. Drag the Equippable prefab from the **Project** to your scene.
+
+    ![Screen shot of an Equippable prefab in the Project folder.](../../../media/enhance-your-environment/equips-in-detail/047-equip-prefab-in-project-window.png)
+
 ## Position of objects
 
-There are different ways of holding an Equippable object. Some objects, when when picked up, are designed to be held away from the body and high enough to be in your field of view (for example, the Wineglass or Trophy). Other objects are designed to be held closer to the body and *not* in your field of view (for example, the Wrench).
+There are different ways of holding an Equippable object. Some objects, when picked up, are designed to be held away from the body and high enough to be in your field of view (for example, the Wineglass or Trophy). Other objects are designed to be held closer to the body and *not* in your field of view (for example, the Wrench).
 
 ## Equippable behaviors
 
-For some Equippables, you can pick them up and then press the left mouse button (PC) or controller button (Quest 2) to trigger an action that's appropriate for that Equippable. Examples:
+For some Equippables, you can pick them up and then press the left mouse button (PC) or controller button (Quest) to trigger an action that's appropriate for that Equippable. Examples:
 
 - Raise and lower a Wine glass.
 - Generate sparkles from the end of a Wand.
@@ -79,11 +72,11 @@ This is called *activating* the object. You can see the possible activate types 
 
 ![Screen shots of avatars holding the Wand, which is the single equippable activation type, and the Drill, which is the toggle equippable activation type.](../../../media/enhance-your-environment/equips-in-detail/003-activation-type-examples.png)
 
-**Release an Equippable**
+## Release an Equippable
 
 To release an Equippable, press the Space bar. This causes the Equippable to drop downwards.
 
-## How each Equippable object works
+## How each Equippable prefab works
 
 ### Wine glass
 
@@ -127,7 +120,7 @@ When you pick up the Trophy, you hold it out in front of you chest high. Click t
 
 **Activation mode**: toggle
 
-The Tablet is viewed by many as one of the more useful Equippables because you can attach a UI object with buttons or a [WebSlate](../webcontent.md) to its screen and then move around the scene with it. When you pick up the Tablet, you hold it out in front of you chest high. Click once to activate the Tablet--this raises it up to almost eye level, but leaves you with an unobstructed view if you wish to look around the room. Click again to lower it back to its initial position (and de-activate it).
+The Tablet is viewed by many as one of the more useful Equippables because you can attach a UI object with buttons or a [WebSlate](../web-content/webcontent.md) to its screen and then move around the scene with it. When you pick up the Tablet, you hold it out in front of you chest high. Click once to activate the Tablet--this raises it up to almost eye level, but leaves you with an unobstructed view if you wish to look around the room. Click again to lower it back to its initial position (and de-activate it).
 
 ![Screen shot of an avatar holding the Tablet.](../../../media/enhance-your-environment/equips-in-detail/019-tablet.png)
 

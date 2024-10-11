@@ -2,10 +2,10 @@
 title: Mesh user controls
 description: What you can do when you have joined an event
 ms.service: mesh
-author: qianw211    
-ms.author: qianwen
+author: typride   
+ms.author: tmilligan
 ms.date: 10/4/2023
-ms.topic: Guide
+ms.topic: conceptual
 keywords: Microsoft Mesh, M365, Immersive spaces, Avatars, getting started, documentation, features
 ---
 
@@ -33,7 +33,7 @@ For details, you can also access the **Control tutorial** from the **Help** menu
 
 ![A screenshot of the Help > Control tutorial dialog on PC](media/help-control-tutorial-pc.png)
 
-Use **V** to toggle between direct view and avatar view (1st and 3rd     person views)
+To change your view, use **V** to toggle between 1st person view and two 3rd person views with different camera zoom level and use the mouse scroll wheel to change the camera zoom level.
 
 ### On Quest
 
@@ -93,9 +93,9 @@ Lower your hand to finish answering your question and speaking to the whole even
 ### React with emotes
 
 In the app bar, you can trigger **Reactions**, that cause your avatar to
-react with body gestures as well as emotes.
+react with body gestures as well as emojis. When you use emojis, hosts in other rooms wil able to see your emojis emanate from your location!
 
-![A screenshot of emote menu](media/emote-menu.png)
+:::image type="content" source="media/emote-menu.png" alt-text="Screenshot of the emote menu in the Mesh application showing hte available emotes.":::
 
 ### Profile
 

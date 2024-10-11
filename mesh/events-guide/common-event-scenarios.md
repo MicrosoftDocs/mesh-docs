@@ -1,11 +1,11 @@
 ---
 title: Common scenarios for event hosts
-description: How to run or manage common event scenarios in Microsoft Mesh.
+description: How to run or manage common event scenarios in Mesh events while using the Mesh app for Windows, Mesh app for Teams or Mesh app on Meta Quest.
 ms.service: mesh
 author: typride
 ms.author: tmilligan
-ms.date: 12/01/2023
-ms.topic: Overview
+ms.date: 08/14/2024
+ms.topic: best-practice
 keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer, Q&A, scenarios
 ---
 
@@ -15,28 +15,33 @@ There are a host of scenarios that Mesh can be used for, including Q&A (Question
 
 In this article, we'll cover how to run a Q&A session; involve the audience and make attendees audible to all participants even if they aren't a host.
 
-## Multi-room vs single room events
-
-Single room events can host up-to 16 people. For larger events, participants are grouped into 16 person rooms to provide the optimal experience for all users.
-
-As a host, your host tools will be slightly different in a multi-room scenario.
-
-### Host tools in a single room event
-
-In a single room event, you have access to the **Mute all**, **Hand Raise**, **Megaphone**, and **Screenshare** controls.
-
-:::image type="content" source="../media/common-event-scenarios/single-room-host-tools.png" alt-text="Screenshot of the host tools in a single room event.":::
-
-### Host tools in a multi-room event
-
-In a multi-room event, you have access to the **Mute all**, **Hand Raise**, **Megaphone**, **Broadcast**, and **Screenshare** controls.
-
-:::image type="content" source="../media/common-event-scenarios/multi-room-host-tools.png" alt-text="Screenshot of the host tools in a single room event.":::
-
-Broadcast is the notable difference here, which shows your avatar and makes your voice audible to all participants in all rooms.
-
 > [!TIP]
-> Use **Broadcast** as a host while in a multi-room event otherwise participants won't be able to see or hear you.
+> Did you know you can rejoin past events? Revisit your favorite events or use a Mesh event as a drop-in space!
+
+## Event Producers tools
+
+- **Organizer tools**: Mute all, enable/disable Handraise, Megaphone, Screenshare, and Broadcast (for Multi-room events) are all located in the left Organizer tools button in the Menu bar.
+
+    **Single room events**
+
+    :::image type="content" source="../Resources/media/Organizer-tools-people-panel-single-room-2412.png" alt-text="Screenshot of the organizer tools and people panel in the Mesh app.":::
+
+    **Multi-room events**
+
+    :::image type="content" source="../Resources/media/Organizer-tools-people-panel-multi-room-2412.png" alt-text="Screenshot of Organizer tools and People panel in the Mesh app.":::
+
+- **People panel**: The people in your event can be found in the People panel. In this panel, you can see who has raised their hand and megaphone or broadcast (in multi-room events) them.
+
+    **Single room events**
+
+    :::image type="content" source="../Resources/media/People-panel-single-room-2412.png" alt-text="Screenshot of the Mesh app showing the people panel in a single room event.":::
+
+    **Multi-room events**
+    For Multi-room events, you'll be able to switch between the People tab and the Additional rooms tab
+
+    :::image type="content" source="../Resources/media/People-panel-multi-room-2412.png" alt-text="Screenshot of Mesh app showing the people panel expanded in a multi-room event.":::
+
+- **Control panel:** Control the elements that were added in a Customization session. Play a video, for example, or control custom objects that you may have added!
 
 ## Using hand raise for Q&A
 
@@ -44,41 +49,35 @@ As a host, you may want participants to be able to ask their questions or say co
 
 ### Enable Hand Raise for all participants
 
-To allow participants to raise their hand, you must **enable Hand Raise** bold **Host Panel**.
+To allow participants to raise their hand, you must **enable Hand Raise** using the **Organizer tools**.
 
-1. Open the Host Panel.
+1. Open the **Organizer tools**.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/host-panel-menu-bar-2314.png" alt-text="Host panel button to see participant list and tools":::
-
-1. Select the Hand Raise button in the host panel to enable it.
-
-    :::image type="content" source="../media/common-event-scenarios\producer-tools-hand-raise-2314.png" alt-text="Mute all button in host panel":::
+1. Select the Hand Raise button in the Organizer tools to enable it.
 
 ### Call on people in single room events
 
-In single room events, as a host you'll see who has their hand raised in the host panel and in the event. Use the Megaphone button next to their name to enable **Megaphone** for attendees so all participants can hear them.
+In single room events, as a host you'll see who has their hand raised in the People panel and in the event. Use the Megaphone button next to their name to enable **Megaphone** for attendees so all participants can hear them.
 
-:::image type="content" source="../media/common-event-scenarios/hand-raise-call-on-attendees.png" alt-text="Screenshot of Mesh showing hand raise icon next to attendee names that indicates they have hand raised.":::
+:::image type="content" source="../media/mesh-event-producer-guide/People-panel-handraise-megaphone-2412.png" alt-text="Screenshot of people panel in single room event in Mesh app.":::
 
 ### Call on people in multi-room events
 
-In multi-room scenarios, attendees will only be able to talk to other people in their room. As a host, you will not see or hear the attendees until you broadcast them.
+In multi-room scenarios, attendees will only be able to talk to other people in their room. As a host, you will not see or hear attendees unless they raise their hand or you call on them. If attendees use emojis, however, you will you able to see their emojis and location across rooms!
 
-To call on them, look in the host panel and select the **Broadcast** button, as shown below.
+To call on attendees, look in the People panel and select the **Broadcast** button, as shown below.
 
-:::image type="content" source="../media/common-event-scenarios/Multi-room-broadcast-hand-raise.png" alt-text="Screenshot of Mesh multi-room scenario, broadcast button highlighted next to attendee name.":::
+:::image type="content" source="../Resources/media/People-panel-multi-room-2412.png" alt-text="Screenshot of multi-room event showing the hand raise button and broadcast button being clicked.":::
 
 Once you select broadcast, they will receive a notification request for them to be broadcast. Once they accept, they will then be broadcast to the whole event and all participants.
 
 #### Visual indicators for attendee megaphone or broadcast
 
-When an attendee is megaphoned or broadcast, there are a few visual indicators and notifications that you will see in the host panel, and all participants will see in the Mesh window.
+When an attendee is megaphoned or broadcast, there are a few visual indicators and notifications that you will see. In the People panel, anybody who is broadcasting will have their profile highlighted and the Megaphone or broadcast logo will show next to their name.
 
-In the host panel, their name will be highlighted and show a Megaphone or broadcast logo next to their name.
+:::image type="content" source="../media/mesh-event-producer-guide/People-panel-multi-room-broadcasting-indictor.png" alt-text="Screenshot of Mesh app showing the people panel open with a profile highlighted that is broadcasting.":::
 
-In the Mesh window there is a notification at the bottom of the screen, as shown below:
-
-:::image type="content" source="../media/common-event-scenarios/Megaphone-broadcast-Visual-indicator.png" alt-text="Screenshot of Mesh showing visual indicators that attendees are megaphoned or broadcast.":::
+Their avatars will also have a purple ring animation to indicate that their broadcasting or megaphoning.
 
 ### Controls while attendee is Megaphoned or Broadcasted
 
@@ -86,17 +85,7 @@ As a host, you'll be able to disable attendee Megaphone or Megaphone or broadcas
 
 Simply select the **Megaphone** or **Broadcast** button, or select the **Mute microphone** button next to their name to disable their communication abilities.
 
-#### In a single room event
-
-Use the **Megaphone** or **Mute Microphone** to stop their megaphone or mute their microphone.
-
-:::image type="content" source="../media/common-event-scenarios/Controls-during-attendee-answer-single-room.png" alt-text="Screenshot of Mesh showing controls that host has to limit attendee answer communication.":::
-
-#### In a multi-room event
-
-Use the **Broadcast** or **Mute Microphone** to stop their broadcast or mute their microphone.
-
-:::image type="content" source="../media/common-event-scenarios/Controls-during-attendee-answer.png" alt-text="Screenshot of Mesh showing controls that a host has to disable attendee communication.":::
+You can stop their Megaphone or Broadcast or Mute any attendee by selecting these buttons next to their name in the People panel.
 
 ## Next steps
 

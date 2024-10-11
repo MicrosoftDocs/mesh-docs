@@ -5,7 +5,7 @@ ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 9/07/2023
-ms.topic: Overview
+ms.topic: overview
 keywords: Microsoft Mesh, M365, events, hosting, event producer, event organizer, customize
 ---
 
@@ -15,15 +15,18 @@ Events experiences in Microsoft Mesh can vary widely—in their look, feel, and 
 
 Create the event in Mesh on the Web, customize it in the Microsoft Mesh app, create a template to reuse your customizations in the future, and use the powerful suite of tools to produce it.
 
-## Download Mesh apps
+## Get Mesh
 
 [!INCLUDE [<download-apps>](<../includes/download-apps.md>)]
+
+> [!div class="nextstepaction"]
+> [Experience Microsoft Mesh](../download-mesh-app-tools.md)
 
 ## Key capabilities of Mesh event experiences
 
 - **Single vs multiroom events:** Single room events can host up-to 16 people. For larger events, participants are grouped into 16 person rooms to provide the optimal experience for all users.
 
-- **Broadcasting in multiroom events:** Broadcast to all attendees in all rooms simultaneously to ensure all attendees can hear and follow your lead as an event host.
+- **Broadcasting in multiroom events:** Broadcast up-to five host avatars or attendee avatars to all attendees in all rooms simultaneously to ensure all attendees can hear and follow the broadcasted avatar.
 
 - **Event production tools:** Control the objects and content you add to orchestrate an immersive experience.
 
@@ -47,7 +50,6 @@ Events in Mesh should be familiar to most organizations that work with Microsoft
 
 1. **[Produce your event in Mesh](produce-event.md):** Leverage a set of tools to manage participants and control the objects that you've added to your environment.
 
-
 ### Create your event in Mesh on the Web
 
 Create an event in Mesh on the Web and invite participants. Once created, participants will see the event in their calendars in Microsoft Teams and Outlook.
@@ -56,7 +58,6 @@ Create an event in Mesh on the Web and invite participants. Once created, partic
 
 > [!div class="nextstepaction"]
 > [Create an event in Mesh on the Web](create-event-mesh-portal.md)
-
 
 ### Customize your event
 
@@ -81,9 +82,9 @@ To learn how, see [Create Template](create-template.md).
 
 ## Produce your event
 
-When it's time for your event, join in Mesh and [leverage a set of host tools](produce-event.md#event-producers-tools) accessed via the Menu bar (seen below) to interact with participants, and curate your event experience.
+When it's time for your event, join in Mesh and [leverage a set of host tools](produce-event.md#event-producers-tools) like Mute all, Hand Raise, Megaphone, Broadcast, and Screenshare accessed via the Menu bar (seen below) to manage participants, and curate your event experience.
 
-:::image type="content" source="../media/mesh-event-producer-guide/host-panel-menu-bar-2314.png" alt-text="Host panel button to see participant list and tools":::
+:::image type="content" source="../media/mesh-event-producer-guide/Organizer-tools-single-room-2412.png" alt-text="Screenshot of organizer tools in a Mesh event for single room.":::
 
 > [!div class="nextstepaction"]
 > [Produce your event](create-event-mesh-portal.md)

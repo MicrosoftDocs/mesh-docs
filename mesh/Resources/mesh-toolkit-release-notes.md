@@ -1,11 +1,11 @@
 ---
 title: Release notes for Mesh toolkit
-description: Mesh toolkit release notes
+description: Release notes for the Microsoft Mesh Toolkit with a list of important updates and a list of the Microsoft Mesh Toolkit versions.
 ms.service: mesh
 author: typride    
 ms.author: tmilligan
-ms.date: 4/19/2024
-ms.topic: Guide
+ms.date: 09/12/2024
+ms.topic: release-notes
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
 
@@ -18,17 +18,293 @@ For purposes of this document, there are two categories of users:
 
 ## Version list and dates
 
-These are the offerings and packages currently available. There may be slight differences in the list you see here and the packages you have or see.
+> [!IMPORTANT]
+> Mesh Toolkit versions older than 5.2315 are being deprecated. We recommend an upgrade to newer versions of the Mesh Toolkit.
 
 >[!Note]
->The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load. You can generally ensure this is true by using the non-preview Mesh toolkit package, which releases only after the matching Mesh app is available in stores.
+>The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load.
 
 | Mesh offering/package      | Version  | Date released |
 |----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2403.X | 2024-4-18     |
-| Mesh toolkit (Preview)     | 5.2404.X | 2024-3-12     |
-| Mesh on PC/Quest           | 5.2403.X | 2024-4-12     |
-| Mesh on PC/Quest (Preview) | 5.2404.X | 2024-4-12     |
+| Mesh toolkit               | 5.2413.X | 2024-09-24     |
+| Mesh on PC/Quest           | 5.2413.X | 2024-09-24     |
+
+## Mesh Toolkit 5.2413.X
+
+### What's new
+
+### Mesh Toolkit uploader
+
+* Older uploader versions will warn before changing assets made using a newer version. While the Mesh runtime is backwards compatible with older assets, we cannot guarantee compatibility with an asset that has subsequently been downgraded from a newer version. In the unlikely event that downgrading an asset was somehow unavoidable, please test your asset thoroughly before using in an event.
+
+* Versions of Mesh toolkit older than 5.2406 (released May 2024) will be deprecated starting October 1st. (Note: No action is needed for environments that are already published on the affected toolkit versions earlier than 24.6, existing uploads will continue to function as they do today.)
+
+### Visual scripting
+
+* Users can control whether Visual Scripting errors block upload by using the new settings under Project Settings > Mesh Toolkit Settings > Extensions > Visual Scripting.
+
+* If a visual script variable is accidentally set to a value that's incompatible with its declared type (for example, if you're using "Add (in Math/Scalar)" as the input for setting an Integer-type variable), content validation now flags this as a correctness issue. This shows up in the Mesh Visual Scripting Diagnostics panel, in CPA (Content Performance Analyzer), and before upload.
+
+* Visual scripts can now access properties and methods of Text Mesh Pro - Text (UI). The new script nodes have names starting with Text Mesh Pro UGUI in the script node selector.
+
+## Mesh Toolkit 5.2412.X
+
+### What's new
+
+### Mesh Toolkit uploader
+
+* Fixed bug that caused uploads to fail with a FileNotFoundException on a retry.
+
+* Extend retries around graph operations to hopefully get past temporary issues.
+
+* Removed the option to select the Unity build pipeline in the Mesh Toolkit Settings.
+
+* Fix an issue that caused validation to fail on retry even when the scene was fixed and appeared to be saved.
+
+* Default font settings commands now output a messages to console.
+
+### Interactables
+
+The component for Interactables (“Mesh Interactable Setup”) has been updated with the following:
+
+* UI redesign, with a cleaner look and better organization and usability.
+
+* “Interactables” is now an umbrella term for the four Interactable types: **Basic**, **Manipulable**, **Equippable**, and **Throwable**.
+
+* In the Equippable type, there are ten presets for hand positioning, and you can also create your own custom presets.
+
+* The component now has context-sensitive help buttons.
+
+## Mesh Toolkit 5.2411.X
+
+### What's new
+
+#### Mesh Toolkit uploader
+
+* Updated Build Target selection with more information on the platforms that target supports. Also added a general warning when uploading an environment with a subset of targets selected.
+
+
+## Mesh Toolkit 5.2410.X
+
+### What's new
+
+#### Mesh Toolkit uploader
+
+* Where there is an issue between Uploader Tool and Mesh Services during the Upload process, we now display a message to the user that the operation is taking longer than expected but still running.
+
+* Fixed bug where the Unity Package Manager failed to get information and the console was spammed by the same message on repeat.
+
+#### WebSlate Controllables to display URls in Mesh events
+
+With the release of the 24.10 Mesh Toolkit, developers now have the ability to add WebSlate Controllables to environments. These WebSlates enable event attendees to interact with a webpage through WebSlates while in a Mesh event and empower event organizers to dynamically change the content that's displayed on the WebSlates in real-time.
+
+An event host could display Microsoft Whiteboard, for example:
+
+:::image type="content" source="media/WebSlate-example-of-whiteboard.png" alt-text="Screenshot of a Mesh event with a WebSlate showing Microsoft Whiteboard with two avatars interacting with it.":::
+
+* **Developer updates:** Same simple workflow for adding Webslates, with minor additional configurations to add Controllable capabilities.
+
+* **Event organizer experience:** Toggle URLs, visibility (on/off), and optionally Prevent suspension (to keep WebSlates always on). Via the Control Panel, changing the URL at runtime updates WebSlates for all users in the event, instantly (global refresh).
+
+* **End user experience:** Upon cursor/controller hover, a menu bar with a built-in refresh button and a tooltip briefly explaining single-user nature of webslates has been added (some webapps may offer shared experiences). This provides a way to return to the URL set by organizers (in the case the user navigates away) and can be used incase webapps have issues during experiences.
+
+Some notable details to consider are:
+
+* Developers have the option to select if a URL can be changed while an event is occurring or not by removing the WebSlate Controllable script in the parent WebSlateFramed GameObject.
+
+* Developers choose the location of the WebSlate in the environment. Currently, WebSlate positioning is not adjustable after they are uploaded to an environment (this is not an Object in the Catalog)
+
+* The content and interaction of the WebSlate will depend on which webapp is displayed on it. For example, some webapps will provide synchronized inputs for all users, creating a sense of a shared interaction - but navigation and scrolling will not be synced across users. Choosing which URLs are displayed in the WebSlate and testing them is important to achieve the desired experience.
+
+* Currently SSO is not supported for any webapps in Mesh. However, on Mesh for Windows (not Quest), signing into certain apps does work via manual authentication. Within the WebSlate, the Microsoft account manager will allow sign in using the credentials that are present on the user's machine for easy and secure content access. Note: Although this unlocks the ability to use Fluid Framework apps like Microsoft Whiteboard and Loop, only inputs are synced across users, not navigation or scrolling.
+
+**24.10 Toolkit upgrade note:**
+
+For existing environments with the WebSlateFramed component in the Unity scene, upgrading Mesh Toolkit to 24.10 will automatically provide organizers with WebSlate Controllable functionality upon Upload. This means that organizers will be able to toggle the URL for their WebSlates at runtime via the Control Panel, and that end users will see a refresh button/info coin upon hovering the slate. We suggest double checking WebSlate positioning in environments to ensure the user-facing menu bar that appears at runtime upon hover (located below the slate in the center) is not colliding with any other parts of the environment.
+
+For those who don't want URLs to be controlled by organizers, the WebSlate Controllable can be turned off by removing the "WebSlate Controllable" script from their WebSlate GameObject.
+
+### Visual scripting
+
+* Improved and extended the diagnostics shown in the Mesh Visual Scripting Diagnostics panel (at the bottom of the Inspector panel) and made them more actionable by including an extended description that can be viewed in a tooltip by hovering any entry in the Diagnostics panel.
+
+* Some of the new diagnostics (for example, "Variable not declared" and "Cannot modify prefab definition") block the environment's upload until they are fixed. Already uploaded environments are not affected.
+
+* Added **On Dictionary Item Added** and **On Dictionary Item Removed** events that allow visual scripts to efficiently respond to items being added to or removed from dictionary-type component properties and visual script variables.
+
+    :::image type="content" source="media/Visual-scripting-dictionary-item-24.10.png" alt-text="Screenshot of the Mesh Toolkit showing hte On Dictionary Item Added or Removed.":::
+
+* Client startup time in Emulator has been improved significantly for large scenes (with thousands of visual scripts and tens of thousands of scene objects). (60475)
+
+#### Resolved issues
+
+* For Mesh Physics, we removed problematic and unnecessary mechanism that disabled Renderer components below Rigidbody at start-up and re-enabled them when fully connected. (59804)
+
+* For Visual Scripting, we fixed an issue that caused embedded subgraphs to be corrupted when saved in Unity Editor. (Subgraphs saved in separate asset files were not affected by this issue.) (60183)
+
+* For Visual Scripting, loading a corrupted embedded subgraph into Unity Editor causes these warnings to be logged to the Editor console: `Failed to add element to graph during deserialization: [...]`. (60183)
+
+* For Visual Scripting, When editing visual scripts in a prefab definition by selecting the prefab asset in the Project panel (instead of opening the prefab definition in scene context or in isolation from the Hierarchy panel), the Mesh Visual Scripting Diagnostics panel may show false-positive diagnostic errors:
+
+  * `Cannot modify prefab definition`
+  * `Invalid reference`
+
+    However, these errors do point to actual content issues if they appear when editing visual scripts in a prefab definition edited in scene context or opened in isolation from the Hierarchy panel. (60475)
+
+## Mesh Toolkit 5.2409.X
+
+### What's new
+
+#### Mesh Toolkit Uploader
+
+* **Unity Upgrade**: The 24.9 Toolkit requires the use of the Unity Editor version 2022.3.34f1. This is a minor upgrade, so content that is already published will continue to work.
+
+* The **Build and Upload Results** window which displays at the end of the environment upload process shows the state of pre-processors and validators. To see these results again, in Unity on the menu bar, select **Mesh Toolkit** > **Validate** > **Validate Active Scene**.
+
+* In the Mesh Uploader, there's an updated display for platform support for each environment. The icons for currently selected platforms appear in white; unselected platforms appear in red and display a tooltip warning when you scroll over them.
+
+* Replaced the popup that warned of previously uploaded platforms that aren't in the current selection with a warning in the UI text instead.
+
+#### Visual scripting
+
+* Visual scripts now have access to **Physics | Raycast nodes** that provide Hit Info output. The value returned through this port can be inspected using **Raycast Hit | ...** property accessor nodes.
+
+#### Resolved issues
+
+* Using **Rigidbody | Set Position** and **Rigidbody | Set Rotation** now works as expected and no longer causes the affected physics bodies to be repositioned back to where a visual script most recently placed them on late join.
+
+* The **Rigidbody | Get/Set Position** and **Rigidbody | Get/Set Rotation** nodes as well as the **Transform | Get/Set Position** and **Transform | Get/Set Position** nodes for physics bodies are now correctly annotated with "Shared by all clients" or "Local to this client" in the absence or presence of *Local Physics Scope* components in the Transform hierarchy.
+
+* **Transform | Set Local Scale** now correctly synchronizes across clients when applied to physics bodies.
+
+* The problem that raycasts in visual scripts in Mesh Emulator split-screen mode always targeted the first client's physics colliders instead of their own client's has been fixed. This issue was only noticeable if collider geometry was different across clients, which usually isn't the case unless done explicitly.
+
+## Mesh Toolkit 5.2408.X
+
+### What's new
+
+#### Content Performance Analyzer (CPA)
+
+* The CPA tool now contains a new analyzer to check for occlusion culling data. If static objects exist in the scene without occlusion data, this will block upload until resolved.
+
+* The CPA tool now contains AVP quality options for AVP simulation.
+
+#### Mesh Toolkit Uploader
+
+* Fixed bug which caused the upload to fail during thumbnail generation when the file was not on disk.
+
+* Fix a bug where saving a scene with TMP text caused the mesh toolkit package to reimport.
+
+* Fix a bug that allowed the user to still use a deprecated version of the toolkit.
+
+* Settings title changed from "Mesh Uploader Settings" to "Mesh Toolkit Settings"
+
+## Mesh Toolkit 5.2407.X
+
+### What's new
+
+- You can now enter [Play Mode with Mesh Emulation](../develop/debug-and-optimize-performance/mesh-emulator.md) with [Domain Reloading disabled](../develop/debug-and-optimize-performance/speed-up-mesh-emulation.md). This should significantly speed up the start and stop times of the Mesh Emulator, allowing you to iterate faster.
+
+- Fixed a bug where saving a scene with TMP text caused the mesh toolkit package to reimport.
+
+- Duplicate environment names are no longer allowed in the same collection.
+
+- Add menu "Mesh Toolkit/Configure/Apply Mesh Font to Open Scenes" that will update fonts on open scenes TextMesh pro components to use default Mesh font.
+
+## Mesh Toolkit 5.2406.X
+
+### What's new
+
+#### Visual scripting
+
+* Fixed "Failed to deserialize scriptable object" errors in Emulator that were logged to the Unity console under certain circumstances.
+
+* Fixed an issue where an update to a shared property (or variable) applied by a visual script could sometimes be lost due to an earlier update of the same property (or variable) returning from its roundtrip through the server at an inopportune time.
+
+* Fixed an Emulator-only issue with Visual Scripting late-join in very large scenes if visual scripts were using script variables to pass `Transform` or `GameObject` references into script graphs. When this issue occurred, warnings-level messages with the following wording were logged to the console: "OnMessageReceived: Received message with correct class ID 1 but data size in packet expecting total ... with a packet of 1988, index ... does not look correct."
+
+#### Mesh Toolkit Uploader
+
+* Mesh Toolkit Uploader will check for IL2CPP module being installed to allow building for Windows Standalone (PC) platform.
+
+* Fix a bug where some scenes using default mesh fonts will cause toolkit to build the fonts incorrectly.
+
+* Improve mesh toolkit default font configuration by automatically importing TMP essentials, if needed, when configuring default font.
+
+* Fix extra errors displayed when no valid collections are found.
+
+* Add a message to fill the blank space when an environment had no prior platforms uploaded.
+
+## Mesh Toolkit 5.2405.X
+
+### What's new
+
+#### Mesh Toolkit Uploader
+
+* Cloud Scripting could report that the **scenemap** was out of date because the scene had not yet been saved. Since saving the scene is required for upload, it didn't make sense to report this as a problem. We've moved the option to save the scene to the very beginning of the steps that the uploader performs so the scene is either saved or the operation is cancelled.
+
+* Fixed bug that happened when we tried to rename an asset copy but a previous copy was already present. It also reduces the number of leftover copies left in disk after a build failure.
+
+* Fixed a bug where some scenes using default Mesh fonts caused the Toolkit to issue an unnecessary error in the console.
+
+#### Cloud scripting
+
+Cloud scripting now only generates classes for animators that are used in the Unity scene under the scope of the cloud scripting **gameobject**.  Animators that are unused, or only used in other parts of the scene, will no longer have classes generated.
+
+If your cloud scripts include references to these classes, you will encounter compile errors like this:
+
+```cshar
+error CS0246: The type or namespace name 'MyUnusedAnimator' could not be found (are you missing a using directive or an assembly reference?)  
+To resolve, ensure that the animator in question is used within the cloud scripting portion of the scene, or remove the reference from your cloud scripts.
+```
+
+Note that this change only impacts cloud scripts built with this version of Mesh Toolkit or later. Existing Mesh environment deployments are not affected.
+
+#### Visual Scripting
+
+* Visual scripts are no longer completely disabled if the environment contains a ScriptMachine with a broken ("Missing") or unassigned ("None") asset graph reference.
+
+* The new Show Input Dialog visual script node can be used to pop up a dialog box that prompts the user for text input. The text entered by the user (and the button they pressed to close the dialog) are stored in visual script variables.
+
+    :::image type="content" source="media/Visual-scripting-Show-input-dialogue.png" alt-text="Screenshot of Show Input Dialog visual scripting node in the Mesh Toolkit.":::
+
+* Fixed the String | Create node, which previously only worked in the Emulator but failed to work in standalone builds.
+
+* The script node selector (Fuzzy Finder) in the script graph UI no longer includes nodes that access inherited properties or methods through types that cannot be accessed directly.
+
+* Fixed sharing tags shown in the Visual Scripting graph UI for the following Mesh Interactable Body script nodes to correctly say Shared by all clients (instead of incorrectly Local to this client):
+    Mesh Interactable Body | Is Activated
+    Mesh Interactable Body | Get Equipped At
+    Mesh Interactable Body | Is Equipped
+    Mesh Interactable Body | Get Equip Time
+
+    The functionality of these visual script nodes is unchanged. If you need a local version of these properties, you can combine them with the Mesh Interactable Body | Is Mine property.
+
+* Attempting to set an undeclared script variable in a `Variables` component that's "Shared by all clients" no longer causes a flood of console errors. Instead, the attempt to set the invalid variable is ignored.
+
+* **On State Changed** outputs can now be read even when the **On State Changed** event itself wasn't triggered.
+
+    This makes it simpler to execute the same script flow from both an **On State Changed** event as well as, for example, an **On Start event** that leads into the same script flow in order to consistently establish some scene state based on the initial state at startup.
+
+    Previously, any attempt to read **On State Changed** outputs from outside its own script flow led to an error being logged ("The value of... cannot be fetched dynamically, it must be assigned") and the offending script flow being aborted.
+
+* Script errors at runtime are now presented with more useful diagnostics in the Emulator console:
+
+    The console error now includes the name of the `ScriptMachine` and identifies the event node that triggered the offending script flow.
+
+    Clicking the error message in the Emulator console highlights the offending `ScriptMachine` in the transform hierarchy.
+
+#### Playmode
+
+* New scene validation when entering Playmode: Before 5.2405, a scene was only validated if there was an attempt to upload a scene to Mesh. Now, scene validation occurs when a user tries to enter Playmode. 
+
+    If a user attempts to enter Playmode before a scene is validated, there is a new error message:
+
+    :::image type="content" source="media/playmode-scene-validation.png" alt-text="Screenshot of scene validation error dialog when starting playmode.":::
+
+    There is also a new menu item to **Validate Active Scene**:
+
+    :::image type="content" source="media/Playmode-validate-scene-menu-item.png" alt-text="Screenshot of Validate Active Scene menu item in the Mesh Toolkit.":::
 
 ## Mesh toolkit 5.2404.X (Preview)
 
@@ -49,6 +325,25 @@ These are the offerings and packages currently available. There may be slight di
     The added prefab contains an editable root and a mock UI that will not be uploaded to help developers place and design their environments. Modifying the provided mock UI under [NoUpload] will not be reflected when uploading and joining an event on Mesh. The added prefab can be sized and placed as desired on the scene.
 
     If adding multiple Screen Share components on the scene all of them will show the same screen when a user starts Screen Sharing on Mesh.
+
+#### Mesh Toolkit Uploader
+
+* Scene validation will now happen when entering playmode instead of only before uploading the scene.
+
+* Any scene with unsaved changes will need to be saved before proceeding with an Upload. This is to prevent the loss of these changes during the operation and some bugs which may occur from differences between the scene states.
+
+* Fix to prevent FileNotException error when getting information on the asset being uploaded.
+
+* Fug fix to prevent accidental renaming of the asset copy during build which may cause the operation to fail.
+
+* Fix to reset thumbnail camera if it already exists when adding, instead of throwing an error.
+
+* Disable Build & Publish when Playmode is active as it causes the build to fail.
+
+* Fix potentially confusing error message when upload to graph fails.
+Display a progress bar during post build operations.
+
+* Uploader now skips thumbnail generation if the build has already failed.
 
 ## Mesh toolkit 5.2403.X
 

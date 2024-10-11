@@ -17,3 +17,5 @@ items:
   - name: Visual Scripting allowlist
     href: visual-scripting-allowlist/toc.yml
     displayName: visual scripting, script, scripting, units, nodes, troubleshooting, allowlist
+  - name: Visual scripting best practices
+    href: best-practices/toc.yml

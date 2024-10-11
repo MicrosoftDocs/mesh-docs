@@ -5,7 +5,7 @@ ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 9/07/2023
-ms.topic: Guide
+ms.topic: conceptual
 keywords: Microsoft Mesh, Producing, M365, events, hosting, event producer, event organizer
 ---
 
@@ -17,15 +17,45 @@ keywords: Microsoft Mesh, Producing, M365, events, hosting, event producer, even
 
 To ensure the event runs smoothly, ensure that you customize and save customizations at least 30 minutes before the event start time.
 
-### Event capacity
+#### Capacity and event type considerations
 
-- 200 attendees per event
-- 16 attendees per room
-- Up to 16 hosts in a separate room, additional to the 200 attendees
+**Single room events:**
+
+- Capacity: 16 people
+- Time limit: 24-hours
+- Events can be rejoined from the Mesh Dashboard or via the join link created for the event
+
+**Multi-room events:**
+
+- Capacity: 330 people
+- Time limit: 3-hours
+- Events can be rejoined from the Mesh Dashboard or via the join link created for the event
+- Co-organizers are in their own room and attendees are grouped into 16 person rooms
+
 
 ## Event Producers tools
 
-- **[Host panel:](#host-panel)** See the participants in your event and use the host panel toolbar to access the *[Mute all](#mute-all)*, *[Hand Raise](#hand-raise)*, *[Megaphone](#megaphone)*, *[Broadcast](#broadcast)*, and  *[Share](#share)* buttons.
+- **[Organizer tools](#organizer-tools)**: Mute all, enable/disable Hand Raise, Megaphone, Screenshare, and Broadcast (for Multi-room events) are all located in the left Organizer tools button in the Menu bar.
+
+    **Single room events**
+
+    :::image type="content" source="../Resources/media/Organizer-tools-people-panel-single-room-2412.png" alt-text="Screenshot of the organizer tools and people panel in the Mesh app.":::
+
+    **Multi-room events**
+
+    :::image type="content" source="../Resources/media/Organizer-tools-people-panel-multi-room-2412.png" alt-text="Screenshot of Organizer tools and People panel in the Mesh app.":::
+
+- **[People panel](#people-panel)**: The people in your event can be found in the People panel. In this panel, you can see who has raised their hand and megaphone or broadcast (in multi-room events) them.
+
+    **Single room events**
+
+    :::image type="content" source="../Resources/media/People-panel-single-room-2412.png" alt-text="Screenshot of the Mesh app showing the people panel in a single room event.":::
+
+    **Multi-room events**
+    For Multi-room events, you'll be able to switch between the People tab and the Additional rooms tab
+
+    :::image type="content" source="../Resources/media/People-panel-multi-room-2412.png" alt-text="Screenshot of Mesh app showing the people panel expanded in a multi-room event.":::
+
 - **[Control panel](#control-panel):** Control the elements that were added in a Customization session. [Play a video](#control-objects-in-the-control-panel), for example, or control custom objects that you may have added!
 
 ## Common event scenarios
@@ -53,19 +83,21 @@ After you've created your event, customized it, and added content to the control
 
     :::image type="content" source="../media/mesh-event-producer-guide/Device-settings-setup-before-join.png" alt-text="Device settings adjustment  inside pre-join window for Mesh event.":::
 
-Once you select **Join now**, you'll utilize two main tools, Host panel and the Control panel, for your run of show:
+Once you select **Join now**, you'll utilize two main tools, Organizer tools and the People panel, for your run of show:
 
-## Host panel
+## Produce your event
 
-1. Select the **Host panel** button in the menu bar.
+Use the organizer tools to access the tools that you'll use to help run your event like the Mute, Hand raise, Megaphone and/or Broadcast, and Share features.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/host-panel-menu-bar-2314.png" alt-text="Host panel button to see participant list and tools":::
+### Organizer tools
 
-1. In the window that opens, you'll see the following tools at the top:
+#### Organizer tools in a single room event
 
-    :::image type="content" source="../media/mesh-event-producer-guide/producer-tools-2314.png" alt-text="Host panel tool bar":::
+:::image type="content" source="../media/mesh-event-producer-guide/Organizer-tools-single-room-2412.png" alt-text="Screenshot of organizer tools in the Mesh app showing the single room options available.":::
 
-### Host panel tools
+#### Organizer tools in a multi-room event
+
+:::image type="content" source="../media/mesh-event-producer-guide/Organizer-tools-multi-room-2412.png" alt-text="Screenshot of organizer tools in the Mesh app showing the multi-room options available.":::
 
 #### Mute all
 
@@ -75,57 +107,45 @@ Mute all attendees in the event. Hosts in the event can still use their mics and
 
 **Disabled:** Attendees can now use their microphone.
 
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-mute-all-2314.png" alt-text="Mute all button highlighted in host panel":::
+#### Hand raise
 
-#### Hand Raise
+Enable or disable Hand Raise for participants. Hand Raise is ideal for Question and Answer scenarios. When an attendee raises their hand, there will be an indicator next to their name in the host panel and a hand raise emoji their avatar or profile bubble.
 
-Enable or disable Hand Raise for participants. Hand Raise is ideal for Question and Answer scenarios. When someone raises their hand, there will be an indicator next to their name in the host panel. This allows you as a the host to call on attendees.
+**Hand Raise enabled:** Participants can raise their hand to await being called on and megaphoned.
 
-**Hand raise enabled:** Participants can raise their hand to await being called on and megaphoned.
+**Hand Raise disabled:** Participants cannot raise their hand.
 
-**Hand raise disabled:** Participants cannot raise their hand.
+When an attendee has their hand raised, you'll see the hand raise notification next to their name in the People panel.
 
-:::image type="content" source="../media/common-event-scenarios\producer-tools-hand-raise-2314.png" alt-text="Hand raise button highlighted in host panel.":::
-
-When an attendee has their hand raised, you'll see the hand raise notification next to their name in the host panel. In a single room event, you'll also see hand raise icon above their avatar.
-
-:::image type="content" source="../media/common-event-scenarios/Event-host-Hand-raise-notifications.png" alt-text="Screenshot of Mesh app showing hand raise notification next to participant names and avatar.":::
+In a single room event, you'll also see hand raise icon above their avatar.
 
 > [!TIP]
 > In multi-room events, you won't see any attendee avatars until they are broadcast.
 
 Learn how to [use Hand Raise for question and answer (Q&A) scenarios](common-event-scenarios.md#using-hand-raise-for-qa)
 
-#### Megaphone
+#### Megaphone or Broadcast (in multi-room events)
 
-Amplify your voice to all participants in the event. A great tool when broadcasting or using a screenshare.
-
-**Megaphone and Broadcast enabled:** Host voice is amplified to all participants in all rooms.
-
-**Megaphone enabled:** Host voice is amplified to all participants in the Host's room only.
-
-**Disabled:** Host voice is not amplified.
-
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-megaphone-2314.png" alt-text="Megaphone button in host panel":::
-
-#### Broadcast
-
-In multi-room events, use broadcast anytime you wish to be seen or heard by your whole audience in all rooms. Broadcasted avatars are visually distinguished by a purple-rings effect applied to their avatar.
-
-**Enabled:** Host avatar and voice are broadcast to all rooms in the event.
-
-**Disabled:** Host avatar and voice are not broadcasted to all rooms.
-
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-broadcast-2314-multi-room.png" alt-text="Broadcast button in a Mesh event in the host panel.":::
-
-#### Broadcast or Megaphone other participants
-
-In a multi-room scenario, you'll use Broadcast to make the participant visible to all other participants. This is ideal when someone has raised their hand, as shown below:
-
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-hand-raise-2314-multi-room.png" alt-text="Hand raise and broadcast  in a multi-room Mesh event in the host panel.":::
+Amplify your voice to all participants with Megaphone and show your avatar to all participants with Broadcast. The megaphone and broadcast features are essential when leading a meeting, especially in multi-room events where you as a host are in your own room without general attendees.
 
 > [!NOTE]
-> A maximum of three people can broadcast at the same time.
+> A maximum of five people can broadcast at the same time, including host avatars and attendee avatars.
+
+**Megaphone enabled/disabled:** Choose whether your voice is amplified to all participants in all rooms.
+
+**Broadcast Enable/disabled:** Control whether or not your host avatar and voice are broadcast to all rooms in the event.
+
+#### Megaphone or broadcast other participants
+
+As an event organizer or host, you'll have the ability to megaphone or broadcast attendees when someone wants to ask a question, for example, or lead a presentation using the Screenshare.
+
+In a **single room event**, you'll see the Hand Raise icon next to the person who is raising their hand. Next to the raised hand, you can choose to Megaphone them:
+
+:::image type="content" source="../media/mesh-event-producer-guide/People-panel-handraise-2412.png" alt-text="Screenshot of the people panel in the Mesh app showing a hand raise icon next to a profile in the panel.":::
+
+In a **multi-room event**, you'll see the Hand Raise icon next to the person who is raising their hand. Next to the raised hand, you can choose to broadcast them, making their avatar visible and voice audible to all rooms in the event:
+
+:::image type="content" source="../Resources/media/People-panel-multi-room-2412.png" alt-text="Screenshot of multi-room scenario with hand raise icon next to their name visible and broadcast button.":::
 
 When you request an attendee to broadcast or megaphone, you'll receive a notification. Once you request it, the attendee will also receive the request and be able to accept or deny the option.
 
@@ -139,37 +159,32 @@ Share your screen or a specific window on your PC to all participants. Screensha
 
 **Disabled:** Host screen or window is not shown.
 
-:::image type="content" source="../media/mesh-event-producer-guide/producer-tools-sharing-2314.png" alt-text="Share button in host panel":::
+:::image type="content" source="../media/mesh-event-producer-guide/Screenshare-single-room-2412.png" alt-text="Screenshot of single room event showing the Share button highlighted.":::
 
 > [!NOTE]
 > As with Microsoft Teams, an organizer will not see their active screen share. However, all non-sharing attendees will be able to see the screen share.
 
 **How to screenshare:**
 
-1. Select the **Screenshare** button in the menu bar at the top.
+1. Open the **Organizer tools** in the menu bar and select the Share button.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Event-production-screenshare-button-pushed.png" alt-text="Screenshot of Mesh app, host panel open, screenshare selected.":::
+    :::image type="content" source="../media/mesh-event-producer-guide/Screenshare-single-room-2412.png" alt-text="Screenshot of single room event showing the Share button highlighted.":::
 
 1. Select the monitor screen or window that you want to share.
 
-1. You will have two notifications visible to indicate that you are screensharing.
+1. Exit or stop sharing your screen by selecting the Share button again in the **Organizer tools**.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/Screenshare-alerts-shown.png" alt-text="Screenshot of Mesh app showing alerts for screenshare.":::
+## People panel
 
-1. Exit or stop sharing your screen by selecting the Share button again at the top of host panel.
+The people panel allows you to see who is in your event, and call on participants when they raise their hand. In a single room, you'll be able to megaphone or broadcast participants to make them audible (and visible in multi-room events) to all participants in the event.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/producer-tools-sharing-stop-2314.png" alt-text="Screenshot of Mesh app showing stop sharing button in host panel.":::
+**Single room**
 
-### Social panel
+:::image type="content" source="../Resources/media/People-panel-single-room-2412.png" alt-text="Screenshot of people panel in a single room in the Mesh app.":::
 
-See the event participants and use various controls available to manage individual participants.
+**Multi-room**
 
-:::image type="content" source="../media/mesh-event-producer-guide/Participant-host-panel-window.png" alt-text="Participant panel for host panel":::
-
-At the top of the panel, you have *two tabs* to choose from:
-
-- **Participants:** See participants in your room, which can be sorted by *All*, *Hand raised*, or *Broadcasting*.
-- **Rooms:** See a list of all of the rooms in your multiroom event, including the Host Room. For each room, there's a attendee count to see how many people are in each room.
+:::image type="content" source="../Resources/media/People-panel-multi-room-2412.png" alt-text="Screenshot of the people panel in a multi-room event in the Mesh app.":::
 
 ## Control panel
 

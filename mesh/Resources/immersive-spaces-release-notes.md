@@ -5,7 +5,7 @@ ms.service: mesh
 author: typride 
 ms.author: tmilligan
 ms.date: 4/19/2024
-ms.topic: Guide
+ms.topic: release-notes
 keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentation, features, performance
 ---
 
@@ -13,11 +13,109 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
+## Version 5.1414.XX (September 30, 2024)
+
+### Features in development
+
+We've released a new page to cover [features in development](features-in-development.md) that we're rolling out that customers may see.
+
+### Network bandwidth requirements
+
+We've released the [network bandwidth requirements for various Mesh event scenarios](../Setup/Content/preparing-your-organization.md#network-bandwidth-requirements).
+
+### Limitations & specifications for Immersive spaces
+
+We've released a page describing the [limitations and specifications for immersive spaces in Teams](limitations-specifications-mesh.md), including the max number of participants across Mesh event scenarios, max duration of events, and more.
+
+### Network bandwidth requirements for Immersive spaces
+
+We've released the [network bandwidth requirements for various immersive experience scenarios](../Setup/Content/preparing-your-organization.md#network-bandwidth-requirements).
+
+### Simplified firewall setup requirements
+
+We've completed the rollout to simplify firewall setup requirements for immersive spaces in Teams. As part of this, you'll no longer need to allow traffic to IP addresses in the "AzureCloud" service tag. To read more about the updated firewall setup requirements, see how to [Manage the Mesh app in Microsoft Teams](/microsoftteams/meeting-immersive-spaces).
+
+Please note that there are a few [outstanding known issues for audio](immersive-spaces-known-issues.md) that are a result of our simplified firewall requirements.
+
+For more info, please refer to [firewall requirements for Microsoft Mesh and immersive spaces in Teams](../Setup/Content/preparing-your-organization.md#endpoints-and-firewall-configuration).
+
+## Version 5.2412.XX (September 03, 2024)
+
+* Fixed an issue where customizing an avatar during a meeting could sometimes cause that avatar to not render correctly (shadows would be too strong).
+
+* Fixed an issue where avatars could become invisible if more than six participants joined an Immersive Meeting.
+
+* Fixed an issue where some avatars would only partially render (e.g., torso would be invisible) during an Event after teleporting.
+
+## Version 5.2411.XX (August 20, 2024)
+
+* Mesh participants will see reaction animations from Teams 2D participants overlaid on the appropriate webcam gallery tile inside the immersive space.
+
+* Adding multi-keyboard support to Mesh, enabling keyboard interaction for millions of people that use languages like Hindi, Arabic, French (Azerty format) Russian, Thai, Kazakh, Bulgarian, Dvorak and Colemak.
+
+* Multiple accessibility improvements including high contrast focus indicator, screen reader announcements, zoom in/out tooltips, and high contrast green screen settings.
+
+## Version 5.2410.XX (August 5, 2024)
+
+## Version 5.2409.XX (July 23, 2024)
+
+### Avatar Reactions
+
+* Ready to dance in Mesh? Get groovy with Avatar Reactions!
+
+    We are excited to announce the release of Avatar Reactions for Mesh immersive experiences! In addition to the standard emoji-based reactions, you can now react with a wider variety of Avatar reactions, making avatar interactions more dynamic, personal, and fun!
+
+    **Key Features:**
+
+    *Expressive Animations:* Avatars can now perform a wider variety of reactions, including dancing, celebrating, and more.
+
+    *Real-Time Reactions:* Reactions are performed in real-time, enhancing the liveliness of virtual meetings and interactions.
+
+    :::image type="content" source="media/Avatar-reactions-immersive-space.png" alt-text="Screenshot of the reactions menu in an immersive space (3D).":::
+
+    In addition to the standard Avatar reactions, you can find a lot of other reactions sorted into seven categories, including a category for ASL signs.
+
+    :::image type="content" source="media/Reactions-immersive-spaces-menu-expanded.png" alt-text="Screenshot of the Reactions menu in an immersive space (3D)":::
+
+### New loading screens
+
+* Updated images and text when joining an Immersive Space in Teams.
+
+### Personal boundary
+
+* Avatars now have a Personal Boundary that prevents other avatars from walking, standing, and teleporting too close to your avatar.
+
+* If you're in the middle of a crowd, you can now also teleport through other avatars to move away from the crowd.
+
+## Version 5.2408.XX (July 01, 2024)
+
+### Immersive spaces available on Mac
+
+As of July 8th, 2024, the **View** > **Immersive space (3D)** option is available in Teams desktop for Mac, removing the requirement to be a part of the Teams Preview Experience to access immersive spaces on Mac.
+
+### Resolved issues
+
+* Fixed an issue where changing the environment settings in a Teams meeting in a channel didn't apply correctly. (17706)
+
+## Version 5.2406.0 (May 23, 2024)
+
+* For returning users, the pre-join screen with avatar selection and customization is skipped to make the experience of joining the immersive space faster. The second pre-join screen following the avatar selection and customization screen was also removed for new and returning users.
+
+* If a user rejects the Terms of service, there is now the option to go Back to the Teams meeting.
+
 ## Version 5.2405.0 (May 13, 2024)
 
 * More professional wardrobe styles are coming to the Avatar builder. Customize your avatar to see all the new and updated looks available to freshen up your avatar for your next meeting.
+
     :::image type="content" source="media/Avatar-wardrobe-update.png" alt-text="Screenshot of Avatar wardrobe updates. ":::
 
+* Immersive spaces in Teams is now supported on Mac devices for customers in the [Teams Public Preview program](/MicrosoftTeams/public-preview-doc-updates?tabs=new-teams-client) in Rings 0, 1, 1.5, 2, and 3. 
+
+* The Lakehouse icebreaker activity is localized into 41 languages.
+
+* Seating layout names are now translated into 41 languages in the Oasis immersive environment.
+
+* All default environments have their name and description localized into 41 languages.
 
 ## Version 5.2403.0 (April 18, 2024)
 

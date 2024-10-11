@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, setup, admin, M365, getting
 
 For Microsoft Mesh, you will need the following:
 
-- **Teams Premium license in a tenant for Commercial use**. Learn more about [Microsoft Teams Premium licensing - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
+- **Teams Premium license in a tenant for Commercial use** (currently only available in Teams Premium Introductory Pricing or Teams Premium for Departments). Learn more about [Microsoft Teams Premium licensing - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
 
   > [!NOTE]
   > We don't support tenants with worldwide public sector, EDU, or GCC licenses.
@@ -26,7 +26,7 @@ For Microsoft Mesh, you will need the following:
 
 - **(Optional) Unity license(s) and Azure subscription with storage** to develop custom immersive spaces and deploy Cloud Scripting for Mesh environments.
 
-  Learn more about [Cloud scripting for custom immersive spaces in Microsoft Mesh](../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md).
+  Learn more about [Mesh Cloud Scripting infrastructure and management](../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md).
 
 #### Subscription requirements
 

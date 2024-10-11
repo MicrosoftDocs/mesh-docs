@@ -2,10 +2,10 @@
 title: Build and publish your environment
 description: Learn how to turn your environment into an Asset and then publish it in Mesh on the web.
 ms.service: mesh
-author: typride
+author: vtieto
 ms.author: vinnietieto
-ms.date: 3/5/2024
-ms.topic: Guide
+ms.date: 8/9/2024
+ms.topic: how-to
 keywords: Microsoft Mesh, environment, build, publish, build and publish, uploader, Mesh uploader, thumbnail
 ---
 
@@ -24,10 +24,6 @@ After you finish adding all your scene content, the next step is to build the sc
     ![A screenshot of the dialog shown in Unity asking if you are sure you want to configure the project](../../media/make-your-environment-available/image015.png)
 
 ## Using the Mesh Uploader
-
-### Mesh Uploader versions
-
-As explained in the article named [Add the Mesh toolkit package](../build-your-basic-environment/add-the-mesh-toolkit-package.md), there are two versions of the Mesh toolkit: the stable build and the preview build. Note that from time to time you may see minor differences between the two versions.
 
 ### Sign in to the Mesh Uploader
 
@@ -75,7 +71,7 @@ You should now be in the **Update Environment** tab of the Mesh Uploader.
 
 Note that in the **Environment Configurations** section, you already
 have an Environment configuration created which displays the name you
-added in the **Create Environment** tab: *Vinnie's Dartroom*.
+added in the **Create Environment** tab: *Vinnie's Dartroom 080524*.
 
 ### Configure the Environment for build and publish
 
@@ -88,8 +84,11 @@ added in the **Create Environment** tab: *Vinnie's Dartroom*.
 
 1. In the **Build for Platforms** section, you choose which platforms
     to build for. Note that when a button background is gray, the button
-    is "on"; when the background is black, the button is "off." Do one
-    of the following:
+    is "on"; when the background is black, the button is "off." 
+    
+    **Note**: There are two currently available build options: PC (for users running the Mesh app on a PC) and Android (for users running in the Mesh app on the Meta Quest). The **Platforms** section displays a third option for HTML5; this is for a feature that will be turned on for [Mesh TAP participants](../mesh-tap-participants.md) in mid-August 2024.
+    
+    Do one of the following:
 
     - To build for PC only, make sure that only the PC button ("Mesh
         app on PC", the button on the left) is "on."
@@ -106,6 +105,10 @@ added in the **Create Environment** tab: *Vinnie's Dartroom*.
 
 If you create repeated builds of the same Environment but want to change the platform(s) they're being created for, make sure you choose the correct **Build for Platforms** buttons.
 
+**Tip**: If you selected a platform for a previous upload but aren't selecting it for the current upload, a warning appears to bring this to your attention.
+
+![A screen shot of the PC and Android platforms buttons with both platforms selected](../../media/make-your-environment-available/070-previous-upload-warning.png)
+
 ### Build and publish the Environment
 
 1. Select the **Build and Publish** button.
@@ -118,9 +121,13 @@ If you create repeated builds of the same Environment but want to change the pla
 
 1.  If the Environment builds and publishes successfully, the **Build and Upload Results** window appears and confirms the results.
 
-    ![A screenshot of the dialog shown with the sucessful results of the build and upload operation](../../media/make-your-environment-available/005-build-succeeded.png)
+    ![A screenshot of the Build and Upload results window showing successful results.](../../media/make-your-environment-available/005-build-succeeded.png)
 
-    However, you may get **Warning** or even **Failed** indicators in this window. To learn more about what these mean and how to make needed corrections, see the article named [Understanding your Build and Publish results](./understanding-build-and-publish-results.md).
+    This window contains several sections that you can expand to view more details.
+
+    ![A screenshot of the Build and Upload results window with sections expanded and all the details displayed.](../../media/make-your-environment-available/068-mesh-results-expanded.png)
+
+    You may get **Warning** or even **Failed** indicators in this window. To learn more about what these mean and how to make needed corrections, see the article named [Understanding your Build and Publish results](./understanding-build-and-publish-results.md).
 
     > [!TIP]
     > If a build and publish process fails, look in the **Console** for clues about what might have happened.
