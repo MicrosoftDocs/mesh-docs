@@ -17,8 +17,8 @@ items:
     href: UnityEngine.UI.md
   - name: UnityEngine.Video.md
     href: UnityEngine.Video.md
-  - name: UnityEngine.TextMeshPro.md
-    href: UnityEngine.TextMeshPro.md
+  - name: Unity.TextMeshPro.md
+    href: Unity.TextMeshPro.md
   - name: Microsoft.Mesh.Interactions.md
     href: Microsoft.Mesh.Interactions.md
   - name: Microsoft.Mesh.Physics.md

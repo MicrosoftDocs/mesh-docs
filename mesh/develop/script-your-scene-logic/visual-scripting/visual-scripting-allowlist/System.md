@@ -44,9 +44,7 @@
 | Character \| To Upper |`c` char|char|
 | Character \| To Upper Invariant |`c` char|char|
 
- ### [double([_______](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0))
-
-
+ ### [double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0))
 
 | Property | Type | Read? | Write? |
 |----------|------|:-----:|:------:|

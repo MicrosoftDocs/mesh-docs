@@ -38,7 +38,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngi
 
 Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
 
-### icrosoft\.Mesh\.Physics\.CenterOfMassOffset
+### Microsoft\.Mesh\.Physics\.CenterOfMassOffset
 
 
 Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
@@ -71,7 +71,6 @@ Supports additional properties and methods from UnityEngine\.Behaviour,UnityEngi
 
 ### JointStabilization
 
-
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
 
@@ -95,11 +94,9 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 
 ### MaxAngularVelocity
 
-
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
 ### OrbitalGravityField
-
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
@@ -141,8 +138,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 
 ### ScaledGravityField
 
-
-SupportsadditionalpropertiesandmethodsfromUnityEngine\.Behaviour,UnityEngine\.Component,andUnityEngine\.Object.
+Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
 |Property|Type|Read?|Write?|Share?|
 |----------|------|:-----:|:------:|:------:|
@@ -227,7 +223,7 @@ Supports additional properties and methods from UnityEngine\.Behaviour, UnityEng
 ### BouncingSurface\.BounceEffect
 
 
-Valuesaremutuallyexclusive\.
+Values are mutually exclusive\.
 \(Underlyingtype:int)
 
 |Enum|Value|
@@ -239,7 +235,7 @@ Valuesaremutuallyexclusive\.
 ### BuoyancyField\.SurfaceType
 
 
-Valuesaremutuallyexclusive\.
+Values are mutually exclusive\.
 \(Underlyingtype:int)
 
 |Enum|Value|
@@ -250,7 +246,7 @@ Valuesaremutuallyexclusive\.
 ### MagneticBody\.FieldType
 
 
-Valuesaremutuallyexclusive\.
+Values are mutually exclusive\.
 \(Underlyingtype:int)
 
 |Enum|Value|
@@ -262,7 +258,7 @@ Valuesaremutuallyexclusive\.
 ### MagneticBody\.MagneticPole
 
 
-Valuesaremutuallyexclusive\.
+Values are mutually exclusive\.
 \(Underlyingtype:int)
 
 |Enum|Value|
@@ -273,7 +269,7 @@ Valuesaremutuallyexclusive\.
 ### SphericalExplosion\.ExplosionType
 
 
-Valuesaremutuallyexclusive\.
+Values are mutually exclusive\.
 \(Underlyingtype:int)
 
 |Enum|Value|
@@ -283,7 +279,7 @@ Valuesaremutuallyexclusive\.
 ### StickyBody\.BaseType
 
 
-Valuesaremutuallyexclusive\.
+Values are mutually exclusive\.
 \(Underlyingtype:int)
 
 |Enum|Value|
@@ -295,7 +291,7 @@ Valuesaremutuallyexclusive\.
 ### StickyBody\.CollisionControlType
 
 
-Valuesaremutuallyexclusive\.
+Values are mutually exclusive\.
 \(Underlyingtype:int)
 
 |Enum|Value|
@@ -306,7 +302,7 @@ Valuesaremutuallyexclusive\.
 ### StickyBody\.SettleType
 
 
-Valuesaremutuallyexclusive\.
+Values are mutually exclusive\.
 \(Underlyingtype:int)
 
 |Enum|Value|
@@ -316,7 +312,7 @@ Valuesaremutuallyexclusive\.
 ### VelocityDirectionField\.AccelerationType
 
 
-Valuesaremutuallyexclusive\.
+Values are mutually exclusive\.
 \(Underlyingtype:int)
 
 |Enum|Value|
@@ -327,7 +323,7 @@ Valuesaremutuallyexclusive\.
 ### VelocityDirectionField\.VelocityType
 
 
-Valuesaremutuallyexclusive\.
+Values are mutually exclusive\.
 \(Underlyingtype:int)
 
 |Enum|Value|
@@ -337,7 +333,7 @@ Valuesaremutuallyexclusive\.
 ### VelocityMagnitudeField\.AccelerationType
 
 
-Valuesaremutuallyexclusive\.
+Values are mutually exclusive\.
 \(Underlyingtype:int)
 
 |Enum|Value|
@@ -348,7 +344,7 @@ Valuesaremutuallyexclusive\.
 ### VelocityMagnitudeField\.VelocityType
 
 
-Valuesaremutuallyexclusive\.
+Values are mutually exclusive\.
 \(Underlyingtype:int)
 
 |Enum|Value|
@@ -358,7 +354,7 @@ Valuesaremutuallyexclusive\.
 ### VelocityVectorField\.AccelerationType
 
 
-Valuesaremutuallyexclusive\.
+Values are mutually exclusive\.
 \(Underlyingtype:int)
 
 |Enum|Value|
@@ -369,7 +365,7 @@ Valuesaremutuallyexclusive\.
 ### VelocityVectorField\.VelocityType
 
 
-Valuesaremutuallyexclusive\.
+Values are mutually exclusive\.
 \(Underlyingtype:int)
 
 |Enum|Value|

@@ -4,8 +4,6 @@
 
 ### [TextMeshPro](https://docs.unity3d.com/Manual/com.unity.textmeshpro.html)
 
-
-
 Supports additional properties and methods from UnityEngine\.UI\.Graphic, UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
 | Property | Type | Read? | Write? | Share? | Script |
@@ -15,8 +13,6 @@ Supports additional properties and methods from UnityEngine\.UI\.Graphic, UnityE
 ## Enums
 
 ### [FontStyles](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/api/TMPro.FontStyles.html)
-
-
 
 Values can be combined like flags\.
 \(Underlying type: int)
