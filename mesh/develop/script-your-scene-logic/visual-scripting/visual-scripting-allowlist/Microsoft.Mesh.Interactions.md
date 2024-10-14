@@ -8,9 +8,9 @@ A script that can be added to any object with settings for how this object tethe
 
 Example use cases: 
 
-\- Default interactable object, add a Unity event callback to SendTetherPlayerSignal for OnSelected\. When user clicks on the object they get tethered to the object\.  
-\- Player trigger object, add a Unity event callback to SendTetherPlayerSignal for OnActivated\. When a user walks into the object they get tethered to a point within the object\.  
-\- Moving platform and zipline, etc\.
+- Default interactable object, add a Unity event callback to SendTetherPlayerSignal for OnSelected\. When user clicks on the object they get tethered to the object\.  
+- Player trigger object, add a Unity event callback to SendTetherPlayerSignal for OnActivated\. When a user walks into the object they get tethered to a point within the object\.  
+- Moving platform and zipline, etc\.
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
