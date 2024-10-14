@@ -14,6 +14,8 @@ items:
   - name: Visual Scripting troubleshooting
     href: visual-scripting-troubleshooting.md
     displayName: visual scripting, script, scripting, units, nodes, troubleshooting
+  - name: Visual Scripting allowlist
+    href: visual-scripting-allowlist/toc.yml
+    displayName: visual scripting, script, scripting, units, nodes, troubleshooting, allowlist
   - name: Visual scripting best practices
     href: best-practices/toc.yml
-

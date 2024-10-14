@@ -4,7 +4,7 @@ description: Learn about various equippable objects and the realistic ways they 
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/15/2024
+ms.date: 10/03/2024
 ms.topic: overview
 keywords: interactions, interactables, equippables, throwables, avatars, grab, pick up, hold, throw, attach, activate, activation
 ---
@@ -13,98 +13,44 @@ keywords: interactions, interactables, equippables, throwables, avatars, grab, p
 
 ## Overview
 
-When you [download our Mesh samples from GitHub](../../getting-started/samples/download-mesh-samples.md), you get a package containing prefabs that are a type of [Interactable](./interactables.md) known as *Equippable*. When you pick up an Equippable object, your avatar knows how to adjust your hand and arm position so they can hold and handle the object in a realistic way. This is called *equipping an object to your hand*.
+The Mesh toolkit contains prefabs that are a type of [Interactable](./interactables.md) known as *Equippable*. When you pick up an Equippable object, your avatar knows how to adjust your hand and arm position so they can hold and handle the object in a realistic way. This is called *equipping an object to your hand*.
 
-There are eight Equippables:
+An object is made equippable by adding the *Mesh Interactable Setup* component to it and then choosing the *Equippable* type. There are [many settings](../avatar-and-object-interactions/interactable-setup-types/equippable-setup.md) in this component that you can adjust. There are also ten [presets](../avatar-and-object-interactions/interactable-setup-types/equippable-setup.md#presets) available; you can try these out and see if they fit your object, or at least come close enough to work with some additional fine-tuning. 
 
-- Wine glass
-- Birthday cake
-- Drill
-- Wrench
-- Trophy
-- Tablet
-- Coffee Cup
-- Wand
+![________](../../../media/enhance-your-environment/equips-in-detail/049-mesh-interactables-setup-updated.png)
 
-## Where to find Equippables
+## Equippables in the Mesh toolkit
 
-Your first step is to download the Mesh samples.
+Here's a look at the Equippables that you can add from the Mesh toolkit:
 
-1. Navigate to the [Mesh-Toolkit-Unity](../../getting-started/samples/download-mesh-samples.md) repository on GitHub.
-1. The Equippables are currently available only in the *preview* branch of the repository. Do one of the following:
+***
 
-    **To clone the repository**:
-    1. Select the **Code** button, and then copy the URL.
-    1. Clone the repository to your local drive, and then switch to the *preview* branch.
+![A screen shot of the first set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/012-table1.png)
 
-    **To download the repository as a Zip file**:
-    1. Select the branch drop-down and then choose **preview**.
+***
 
-        ![A screen shot of the samples repository in GitHub with the preview branch selected.](../../../media/enhance-your-environment/equips-in-detail/043-samples-in-github-preview-branch.png)
+![A screen shot of the second set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/013-table2.png)
 
-    1. Select the **Code** button and then choose **Download ZIP.** The downloaded Zip file will have "preview" in the title.
-
-        ![A screen shot of the downloaded Mesh toolkit Zip file.](../../../media/enhance-your-environment/equips-in-detail/044-samples-zip.png)
-
-    1. We recommend that you create a folder on your C: drive named "Mesh Samples" and then move or copy the downloaded Mesh toolkit Zip file to that folder. This is a good name for two reasons: it's short, so it avoids running into a problem with the Windows path length limit, which is 256 characters. Also, the Zip file contains a number of Mesh samples and this keeps them all in one place.
-
-    **IMPORTANT**: Don't place the Zip file on the Windows desktop. Behind the scenes, this creates a very long path name.
-
-    1. Unzip the samples Zip file into the same folder.
-
-### View Equippables in an existing sample
-
-The Equippable prefabs have been pre-added to the Toybox sample project.
-
-1. Open the Toybox project in Unity.
-1. In the **Scene** window, navigate into the building with the fish on the front.
-
-    ![A screen shot of the front of the building in the Toybox project.](../../../media/enhance-your-environment/equips-in-detail/048-toybox-front-view-with-fish.png)
-
-    The Equippables are on two tables against the back wall.
-
-    ![A screen shot of the first set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/012-table1.png)
-
-    ![A screen shot of the second set of equippables in the Scene window.](../../../media/enhance-your-environment/equips-in-detail/013-table2.png)
-
-Note that not all the objects on the tables are Equippables--the Baseball and Beach Ball are [*throwables*](./interactables.md#throwable).
-
-**Tip**: To quickly find a prefab in the **Project** folder, in the **Hierarchy**, select the prefab, and then, in the **Inspector**, click the **Select** button.
-
-### Use Equippables in your own project
-
-1. In your project on the menu bar, select **Windows** > **Package Manager.**
-1. In the Package Manager, click the "+" button and then select **Add package from disk ...**.
-1. In your project folder, navigate to  **Packages** > **com.microsoft.mesh.toolkit.toybox**.
-
-    ![Screen shot of the contents of the Toybox package.](../../../media/enhance-your-environment/equips-in-detail/045-toybox-package.png)
-
-1. Double-click the "package.json" file. This imports the package.
-
-### Equippables in the Project window
+***
 
 The Equippables are located in the **Project** window's **Microsoft Mesh Toolkit Toybox** > **Runtime** folder.
 
 ![Screen shot of the Equippables in the Project folder.](../../../media/enhance-your-environment/equips-in-detail/046-equips-imported-from-package.png)
 
+Note that two of the objects shown here--the Baseball and Beach Ball--are [*throwables*](./interactables.md#throwable). A *throwable* object is an Equippable with the additional ability to be thrown.
+
+**Tip**: To quickly find a prefab in the **Project** folder, in the **Hierarchy**, select the prefab, and then, in the **Inspector**, click the **Select** button.
+
 **To add an Equippable to your scene**:
 
 1. Expand the folder that contains the Equippable prefab.
-1. Drag the Equippable from the **Project** to your scene.
+1. Drag the Equippable prefab from the **Project** to your scene.
 
     ![Screen shot of an Equippable prefab in the Project folder.](../../../media/enhance-your-environment/equips-in-detail/047-equip-prefab-in-project-window.png)
 
-## Equippable object type
-
-**To determine an Equippable GameObject's type**:
-1. In the **Hierarchy**, select the GameObject.
-1. In the **Inspector**, navigate to the *Mesh Interactable setup* component and then view the **Object Type** property.
-
-    ![A screen shot of an object's type in its Mesh Interactabe Setup component.](../../../media/enhance-your-environment/equips-in-detail/014-object-type.png)
-
 ## Position of objects
 
-There are different ways of holding an Equippable object. Some objects, when when picked up, are designed to be held away from the body and high enough to be in your field of view (for example, the Wineglass or Trophy). Other objects are designed to be held closer to the body and *not* in your field of view (for example, the Wrench).
+There are different ways of holding an Equippable object. Some objects, when picked up, are designed to be held away from the body and high enough to be in your field of view (for example, the Wineglass or Trophy). Other objects are designed to be held closer to the body and *not* in your field of view (for example, the Wrench).
 
 ## Equippable behaviors
 
@@ -126,11 +72,11 @@ This is called *activating* the object. You can see the possible activate types 
 
 ![Screen shots of avatars holding the Wand, which is the single equippable activation type, and the Drill, which is the toggle equippable activation type.](../../../media/enhance-your-environment/equips-in-detail/003-activation-type-examples.png)
 
-**Release an Equippable**
+## Release an Equippable
 
 To release an Equippable, press the Space bar. This causes the Equippable to drop downwards.
 
-## How each Equippable object works
+## How each Equippable prefab works
 
 ### Wine glass
 

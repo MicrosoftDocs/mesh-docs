@@ -4,7 +4,7 @@ description: Take an-indepth look at the visual script that makes the Wand Equip
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
-ms.date: 8/9/2024
+ms.date: 10/03/2024
 ms.topic: overview
 keywords: interactions, interactables, equippables, throwables, avatars, grab, pick up, hold, throw, attach, activate, activation
 ---
@@ -25,10 +25,6 @@ To *activate* the Wand, click your left mouse button (PC) or controller trigger 
 :::image type="content" source="../../../media/enhance-your-environment/equips-in-detail/wand-thrusting1.gif" alt-text="GIF that shows an event attendee activating the Wand which then generates fireworks.":::
 
 The Wand's *activate type* is set to *single*. This means that as soon as it runs through its behaviors, the Wand *de-activates* and your arm returns to its initial position. Click again to repeat the behaviors.
-
-## The Wand in the Toybox sample
-
-The Wand prefab is already added to the scene in the [Toybox sample](../../getting-started/samples/toybox.md), so you can simply open that sample project and experiment with the Wand there.
 
 ## The Wand script graph
 
@@ -165,4 +161,4 @@ This once again triggers the nodes in the **Networking startMagic** node group a
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Equippables&#8212;How the Wand works](./interactables.md)
+> [Grab, hold and throw with Interactables](./interactables.md)

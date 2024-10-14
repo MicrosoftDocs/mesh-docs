@@ -3,7 +3,7 @@ title: Mesh 101 Add interactivity with Mesh Visual Scripting
 description: Learn adding about adding interactivity to objects with Mesh Visual Scripting.
 author: typride
 ms.author: vinnietieto
-ms.date: 9/24/2024
+ms.date: 9/25/2024
 ms.topic: Tutorial
 ms.service: mesh
 keywords: Microsoft Mesh, getting started, Mesh 101, tutorial, scripting, visual scripting, code, coding, interactivity
@@ -166,7 +166,7 @@ The first section, which detects if the button gets clicked, will require three 
 
 **TIP**: You may want to take a moment here to examine some of the components for the **Button** GameObject:
 
-*Mesh Interactable Setup*: This makes *Button* an object that you can interact with. This component helps to track interactions--note that in the image below it has some "hover" settings chosen. You can learn more about this component in our article named [*Grab, hold and throw with Interactables*](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
+*Mesh Interactable Setup*: This component makes *Button* an object that you can interact with. To learn more, see [*Grab, hold and throw with Interactables*](../../enhance-your-environment/avatar-and-object-interactions/interactables.md).
 
 ![A screenshot of Unity showing the Mesh interactable setup window and included settings.](../../../media/sample-mesh-101/478-mesh-interactable-setup.png)
 
@@ -327,7 +327,7 @@ This is a good place to stop and consider how we want to design the rest of Sect
 
     ![A screenshot of a video play Description ](../../../media/sample-mesh-101/540-connect-videostill-node.png)
 
-1. Keep the node's **Value** check box unselected. This ensures that the node inactive.
+1. Keep the node's **Value** check box unselected. This ensures that the node is inactive.
 
     Now when the button is clicked, the video will play and the still image will be hidden. We need just one more thing in this sequence. Since the Play/Stop button is a toggle, we have to make sure that after the attendee clicks **Play,** the button's label changes to **Stop,** and then when it's clicked again, the label changes back to **Play**. To achieve this, we need to create and add an Object Variable and then add a *TextMeshPro* node.
 

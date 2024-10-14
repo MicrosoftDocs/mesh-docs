@@ -3,9 +3,10 @@ items:
     href: samples-overview.md
   - name: Download Mesh samples
     href: download-mesh-samples.md    
-  - name: Toybox
-    href: toybox.md
     displayName: samples
+  - name: Pavilion
+    href: pavilion.md
+    displayName: samples    
   - name: Physics Effects Gallery
     href: physics-effects-gallery.md
     displayName: samples
@@ -15,5 +16,4 @@ items:
   - name: Dart Room
     href: dart-room.md
     displayName: samples
-  - name: Control samples
-    href: control-samples.md
+

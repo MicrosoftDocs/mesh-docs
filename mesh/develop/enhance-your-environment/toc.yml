@@ -9,5 +9,7 @@ items:
   href: physics/toc.yml  
 - name: Avatar and object interactions
   href: avatar-and-object-interactions/toc.yml
+- name: Add interactive games, activities and objects
+  href: toybox.md
 - name: Display and interact with Web content
   href: web-content/toc.yml

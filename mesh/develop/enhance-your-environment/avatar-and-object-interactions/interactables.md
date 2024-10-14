@@ -4,7 +4,7 @@ description: Learn how to create grab, hold, and throw interactions between avat
 ms.service: mesh
 author: jackiecurley
 ms.author: vinnietieto
-ms.date: 9/6/2024
+ms.date: 9/25/2024
 ms.topic: overview
 keywords: Microsoft Mesh, object and player interactions, interactables, manipulables, equippables, throwables, avatars, anchors, tethers, triggers, trigger volumes, grab, hold, throw, attach, Mesh emulator, emulator, Mesh Emulation
 ---
@@ -22,7 +22,7 @@ To make an object interactable, you must add the *Mesh Interactable Setup* compo
 1. In the **Hierarchy**, select the object.
 1. In the **Inspector**, click the **Add Component** button and then select **Mesh Interactable Setup**.
 
-![A screen shot of the Add Component dialog with the Mesh Interactable Setup component select.](../../../media/enhance-your-environment/object-player-interactions/015-interactable-add-component.png)
+    ![A screen shot of the Add Component dialog with the Mesh Interactable Setup component select.](../../../media/enhance-your-environment/object-player-interactions/015-interactable-add-component.png)
 
 The component is added with its default **Interactable Type** property set to **Basic**. (Object types will be explained in the next section.)
 
@@ -125,12 +125,10 @@ All the Interactables components have interaction properties and methods availab
     - Using On Late Update. If you require to change the target transform in every frame, do it in late update so that the new target transform is available immediately in the next frame.  
 - **Modified Target Rotation (read and write)**: Used to set the new target rotation by the visual script. This will override the default target position.
 
-### Settings
-
-**Modify With Visual Script:** Enable this to modify target transform for manipulable bodies using visual script. 
-![Modify-with-visual-script](../../../media/enhance-your-environment/object-player-interactions/Picture9.png)
-
 ## Next steps
+
+> [!div class="nextstepaction"]
+> [Understanding Interactable components and scripts](./interactable-components-and-scripts.md)
 
 > [!div class="nextstepaction"]
 > [Triggers, anchors and tethers](./triggers-anchors-and-tethers.md)

@@ -1,6 +1,8 @@
 items: 
 - name: Grab, hold and throw with Interactables
   href: interactables.md
+- name: Understanding Interactable components and scripts
+  href: interactable-components-and-scripts.md
 - name: Interactable type settings
   href: interactable-setup-types/toc.yml
 - name: Hold objects realistically with Equippables
