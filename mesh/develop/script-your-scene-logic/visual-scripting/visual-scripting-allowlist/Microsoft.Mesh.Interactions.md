@@ -1,4 +1,15 @@
-﻿# Microsoft\.Mesh\.Interactions
+﻿---
+title: Microsoft.Mesh.Interactions
+description: Microsoft.Mesh.Interactions allowlist for Visual Scripting in Mesh.
+ms.service: mesh
+author: vtieto
+ms.author: vinnietieto
+ms.date: 10/14/2024
+ms.topic: managed-reference
+keywords: Microsoft Mesh, scripting, visual scripting, nodes, allowlist
+---
+
+# Microsoft\.Mesh\.Interactions
 
 ## Scene
 
@@ -8,9 +19,9 @@ A script that can be added to any object with settings for how this object tethe
 
 Example use cases: 
 
-\- Default interactable object, add a Unity event callback to SendTetherPlayerSignal for OnSelected\. When user clicks on the object they get tethered to the object\.  
-\- Player trigger object, add a Unity event callback to SendTetherPlayerSignal for OnActivated\. When a user walks into the object they get tethered to a point within the object\.  
-\- Moving platform and zipline, etc\.
+- Default interactable object, add a Unity event callback to SendTetherPlayerSignal for OnSelected\. When user clicks on the object they get tethered to the object\.  
+- Player trigger object, add a Unity event callback to SendTetherPlayerSignal for OnActivated\. When a user walks into the object they get tethered to a point within the object\.  
+- Moving platform and zipline, etc\.
 
 Supports additional properties and methods from UnityEngine\.Behaviour, UnityEngine\.Component, and UnityEngine\.Object.
 
