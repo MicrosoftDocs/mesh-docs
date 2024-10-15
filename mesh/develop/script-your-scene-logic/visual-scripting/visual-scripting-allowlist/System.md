@@ -1,4 +1,15 @@
-﻿# System
+﻿---
+title: System
+description: System allowlist for Visual Scripting in Mesh.
+ms.service: mesh
+author: vtieto
+ms.author: vinnietieto
+ms.date: 10/14/2024
+ms.topic: managed-reference
+keywords: Microsoft Mesh, scripting, visual scripting, nodes, allowlist
+---
+
+# System
 
 ## Structs
 
