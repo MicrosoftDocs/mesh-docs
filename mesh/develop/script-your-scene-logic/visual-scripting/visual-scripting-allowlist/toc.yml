@@ -1,27 +1,27 @@
 items:
-  - name: System.md
+  - name: System
     href: System.md
-  - name: UnityEngine.Animation.md
+  - name: UnityEngine.Animation
     href: UnityEngine.Animation.md
-  - name: UnityEngine.Audio.md
+  - name: UnityEngine.Audio
     href: UnityEngine.Audio.md
-  - name: UnityEngine.Core.md
+  - name: UnityEngine.Core
     href: UnityEngine.Core.md
-  - name: UnityEngine.ParticleSystem.md
+  - name: UnityEngine.ParticleSystem
     href: UnityEngine.ParticleSystem.md
-  - name: UnityEngine.Physics.md
+  - name: UnityEngine.Physics
     href: UnityEngine.Physics.md
-  - name: UnityEngine.Timeline.md
+  - name: UnityEngine.Timeline
     href: UnityEngine.Timeline.md
-  - name: UnityEngine.UI.md
+  - name: UnityEngine.UI
     href: UnityEngine.UI.md
-  - name: UnityEngine.Video.md
+  - name: UnityEngine.Video
     href: UnityEngine.Video.md
-  - name: Unity.TextMeshPro.md
+  - name: Unity.TextMeshPro
     href: Unity.TextMeshPro.md
-  - name: Microsoft.Mesh.Interactions.md
+  - name: Microsoft.Mesh.Interactions
     href: Microsoft.Mesh.Interactions.md
-  - name: Microsoft.Mesh.Physics.md
+  - name: Microsoft.Mesh.Physics
     href: Microsoft.Mesh.Physics.md
                  
   
