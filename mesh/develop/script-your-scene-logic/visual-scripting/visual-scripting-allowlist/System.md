@@ -1,4 +1,15 @@
-﻿# System
+﻿---
+title: System
+description: System allowlist for Visual Scripting in Mesh.
+ms.service: mesh
+author: vtieto
+ms.author: vinnietieto
+ms.date: 10/14/2024
+ms.topic: managed-reference
+keywords: Microsoft Mesh, scripting, visual scripting, nodes, allowlist
+---
+
+# System
 
 ## Structs
 
@@ -44,7 +55,7 @@
 | Character \| To Upper |`c` char|char|
 | Character \| To Upper Invariant |`c` char|char|
 
- ### [double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0))
+ ### [double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0)
 
 | Property | Type | Read? | Write? |
 |----------|------|:-----:|:------:|
@@ -150,7 +161,7 @@
 | Date Time \| To String |`format` string|string|
 | Date Time \| To Universal Time ||DateTime|
 
- ### [DateTimeOffset([_______](https://learn.microsoft.com/en-us/dotnet/api/system.datetimeoffset?view=net-8.0))
+ ### [DateTimeOffset](https://learn.microsoft.com/en-us/dotnet/api/system.datetimeoffset?view=net-8.0)
 
 
 
