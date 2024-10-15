@@ -17,7 +17,8 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
-| 2024         | September 30 | 5.2414.XX    |
+| 2024         | October 15 | 5.2415.XX    |
+| 2024|September 30| 5.2414.XX|
 | 2024         | September 17 | 5.2413.XX    |
 | 2024         | September 02 | 5.2412.XX    |
 | 2024         | August 19    | 5.2411.XX    |
@@ -32,6 +33,32 @@ Microsoft Mesh application
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2415.XX
+
+## What's new
+
+### Avatar experience 
+
+- Improvements to Avatar animations for more natural transitions
+
+- Improvements to personal boundary for better interactions and navigation
+
+### Event discovery and customization
+
+**More intuitive past and future event discovery:** You can now re-join Past events and Upcoming events (90 days in the past or future) by clicking **Check more days**. By default, the Mesh Dashboard displays events past and future events within 30 days.
+
+![Mesh Event showing Check more days option.](media/mesh-release-notes/eventsshowing.png)
+
+**Easier image orientation editing:** We've updated orientation icons in the **Environment Editor** to be more intuitive. (21109)
+
+![OrientationIcon](media/mesh-release-notes/orientationicon.png)
+
+## Resolved issues
+
+- Stability fixes for event organizers and starting/stopping broadcasting. (21616, 21445)
+
+- Performance improvements when joining an event. (21248)
 
 ## Version 5.2414.XX
 
@@ -455,7 +482,7 @@ The following product issues have been fixed for this release:
 * We have improved ambient indicators as to who is megaphoning, broadcasting, or screen sharing.
 
     ![A screenshot showing the improved ambient indicators](media/ambient-indicators.png)
-
+  
 ### Mesh on the web
 
 Mesh on the web is moving to cloud.microsoft with the [Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961). Currently, we are providing two links for Mesh on the web to ensure a smooth transition. For the new [cloud.microsoft](https://mesh.cloud.microsoft) link, make sure you have allowed the proper endpoints. See [Preparing your organization](../Setup/Content/preparing-your-organization.md#work-with-your-organizations-security-team) for details.
@@ -502,20 +529,20 @@ The following product issues have been fixed for this release:
 * Updated the dialog box for when an attendee is invited to accept broadcast. You can either choose to **Decline** or **Confirm** to start broadcasting. (24459)
 
     ![A screenshot of the go-on the air dialog](media/go-on-the-air-dialog.png)
-
+  
 * New screen share UI:
 
-    * Before starting a screen share, the dotted line indicates you can share to that screen.
-
-        ![A screenshot of the screen sharing UI](media/before-screen-share.png)
-
+  * Before starting a screen share, the dotted line indicates you can share to that screen.
+  
+      ![A screenshot of the screen sharing UI](media/before-screen-share.png)
+    
     * Once screen sharing is started, you see a **You are screen sharing** toast notification, and the **Stop sharring** option. The solid line indicates you're currently sharing a screen.
 
         ![A screenshot of the screen sharing UI during a screen share](media/after-screen-share.png)
 
 * New **Control panel** dialog where the **Controls** list is now on a separate tab:
 
-    ![A screenshot of the **Control panel** dialog showing the **Controls** tab](media/controls-tab.png)
+    ![A screenshot of the ](media/controls-tab.png)
   
 * Save customizations in a customization session using the **Save** buttton.
 
