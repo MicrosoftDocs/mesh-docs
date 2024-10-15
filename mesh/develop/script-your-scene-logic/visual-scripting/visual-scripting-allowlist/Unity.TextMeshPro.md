@@ -1,4 +1,15 @@
-﻿ # Unity\.TextMeshPro
+﻿---
+title: UnityEngine.TextMeshPro
+description: UnityEngine.TextMeshPro allowlist for Visual Scripting in Mesh.
+ms.service: mesh
+author: vtieto
+ms.author: vinnietieto
+ms.date: 10/14/2024
+ms.topic: Guide
+keywords: Microsoft Mesh, scripting, visual scripting, nodes, allowlist
+---
+
+# Unity\.TextMeshPro
 
 ## Scene
 
