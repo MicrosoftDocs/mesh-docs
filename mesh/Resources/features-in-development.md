@@ -41,9 +41,11 @@ A few important notes to consider are:
 
 ### Event tools for hosts and attendees
 
-* Reaction visualization for attendees is coming to multi-room Mesh events. Attendees who are raising their hand or actively reacting with emojis are now visualized across all rooms as spatial 3D bubbles. These simple visualizations persist ephemerally and dynamically display information about others who are in the event based on proximity and location. They do not support direct interaction, but rather aim to create a sense of the audience-as-a-whole and communicate the general sentiment of participants in multi-room events. This visualization can be toggled on or off for each individual by navigating to Menu > Settings > Controls.
+* Reaction visualization for attendees is coming to multi-room Mesh events. Attendees who are raising their hand or actively reacting with emojis are now visualized across all rooms as spatial 3D bubbles. These simple visualizations persist ephemerally and dynamically display information about others who are in the event based on proximity and location. They do not support direct interaction, but rather aim to create a sense of the audience-as-a-whole and communicate the general sentiment of participants in multi-room events.
 
 * We are also adding a new interaction capability for both attendees and hosts. As an attendee, selecting or clicking on an avatar will now raise a menu with the option to open someone's profile card or view their current mic-state. As a host, selecting or clicking an attendee avatar will raise a menu with options to megaphone or broadcast (dependent on the room size of the event: single or multi-room), mute the attendee, or open their profile card.
+
+* Room Hopping for event hosts is coming to multi-room Mesh events. Hosts will be able to open the People Panel, navigate to the Rooms tab, and select a room to travel to. Movement between rooms will fade out the people and content from the current room, while loading the people and content in the new room. Hosts can freely move between any open rooms and a maximum of two hosts will be able to bypass the capacity limit for currently full rooms. (Note: Certain scripting content may have a degraded experience after Room Hopping. We recommend pre-event testing to ensure experience predictability.)
 
 ## September 2024
 
