@@ -19,8 +19,7 @@ For purposes of this document, there are two categories of users:
 ## Version list and dates
 
 > [!IMPORTANT]
-> Mesh Toolkit versions older than 5.2315 are being deprecated. We recommend an upgrade to newer versions of the Mesh Toolkit.
-
+> Mesh Toolkit versions older than 5.2406 have being deprecated. We recommend upgrading to a newer version of the Mesh Toolkit.
 >[!Note]
 >The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load.
 
@@ -606,18 +605,18 @@ These are the offerings and packages currently available. There may be slight di
 
     * The visual footprint of injected nodes has been reduced to remove visual clutter and to make script flows easier to follow while they're executing. They're now firmly attached to one of the neighboring user-defined nodes.
 
-    * New visuals of injected nodes:
-
-        | New visuals | Injected nodes |
-        | -------- | ------- |
-        | ![an image of the profiling visual](media/profiling.png)  | profiling (start of flow)    |
-        | ![an image of the data filtering visual](media/data-filtering.png) | data filtering   |
-        | ![an image of the state tracking visual](media/state-tracking.png)    | state tracking    |
-
-    * When the data filtering node blocks data and passes on a `Null` value instead, its icon changes and its tooltip shows diagnostic information on what data is blocked most recently:
-
-        ![an image of the data filter node blocking data showing diagnostic information on what data is blocked most recently](media/blocked-data-forbidden-text.png)
-
+  * New visuals of injected nodes:
+  
+    | New visuals | Injected nodes |
+    | -------- | ------- |
+    | ![an image of the profiling visual](media/profiling.png)  | profiling (start of flow)    |
+    | ![an image of the data filtering visual](media/data-filtering.png) | data filtering   |
+    | ![an image of the state tracking visual](media/state-tracking.png)    | state tracking    |
+    
+  * When the data filtering node blocks data and passes on a `Null` value instead, its icon changes and its tooltip shows diagnostic information on what data is blocked most recently:
+  
+      ![an image of the data filter node blocking data showing diagnostic information on what data is blocked most recently](media/blocked-data-forbidden-text.png)
+    
     * When you edit script graphs at runtime in the Emulator, injected nodes are now automatically injected and removed as required.
 
 * Script graphs were saved with redundant type and versioning information in some object references. This will not visibly impact user experience. This redundant information is no longer included. (30688)
@@ -761,17 +760,17 @@ Here's what to do for UnityEvent in a `SignalReceiver` as the starting point:
  
 1. Choose a descriptive name for the UnityEvent trigger, for example `DoThing`:
 
-    ![Dialog box for UnityEvent and `TriggerAnimationEvent`](media/unity-event-dialog.png)
- 
+    ![Dialog box for UnityEvent and ](media/unity-event-dialog.png)
+   
 1. In the `SignalReceiver`, set up the UnityEvent by the following steps:
 
-    1. Target the `ScriptMachine` you've created for the visual script.
+1. Target the `ScriptMachine` you've created for the visual script.
 
     1. For the function to call, select `ScriptMachine > TriggerUnityEvent (string)`.
     1. In the parameter field, enter the name of the UnityEvent trigger (for example, `DoThing`).
 
-    ![Dialog box for `SignalReceiver`](media/signal-receiver-box.png)
-
+    ![Dialog box for ](media/signal-receiver-box.png)
+   
 #### Physics
 
 * Added the component `LocalPhysicsScope`to create a part of the scene hierarchy where rigidbodies are not synced among clients.
