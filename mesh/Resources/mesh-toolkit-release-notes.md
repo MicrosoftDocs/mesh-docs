@@ -19,7 +19,7 @@ For purposes of this document, there are two categories of users:
 ## Version list and dates
 
 > [!IMPORTANT]
-> Mesh Toolkit versions older than 5.2406 have being deprecated. We recommend upgrading to a newer version of the Mesh Toolkit.
+> Mesh Toolkit versions older than 5.2406 have being deprecated. We recommend upgrading to the newest version of the Mesh Toolkit.
 >[!Note]
 >The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load.
 
