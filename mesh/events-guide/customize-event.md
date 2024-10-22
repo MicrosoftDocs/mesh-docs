@@ -226,5 +226,5 @@ Select the **Save button** or **Revert changes.**
 
 ## Next steps
 
-   > [!div class="nextstepaction"]
+> [!div class="nextstepaction"]
    > [Produce your event](produce-event.md)
