@@ -13,6 +13,10 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 **Release notes for the Immersive spaces in Microsoft Teams on PC & Quest 2**
 
+## Version 5.2415.XX (October 15, 2024)
+
+We've deprecated immersive spaces in Teams channel meetings, so customers won't have the "Immersive space (3D)" view option in that context. You can still join an immersive space in Teams by scheduling a meeting through Teams or Outlook, as well as starting a meeting using "Meet now."
+
 ## Version 5.1414.XX (September 30, 2024)
 
 ### Features in development
@@ -154,13 +158,13 @@ The following product issues have been fixed for this release:
 * If a user declines to give Mesh access to their microphone upon first launch in immersive spaces, they'll be completely muted without additional notification. 
 
     *Workaround:* If this occurs, you need to first switch to the new Teams client, and then try either of the following:
+  
+  - go into your Teams **Settings -> App permissions**. Select the **Mesh** app, and switch the **Media permissions** on.
+  
+      ![A screenshot of the Teams settings menu](media/teams-settings.png)
     
-    - go into your Teams **Settings -> App permissions**. Select the **Mesh** app, and switch the **Media permissions** on.
-
-        ![A screenshot of the Teams settings menu](media/teams-settings.png)
-
-        ![the Mesh app permissions dialog in Teams settings](media/teams-app-permissions.png)
-
+      ![the Mesh app permissions dialog in Teams settings](media/teams-app-permissions.png)
+    
     - or [clear the Teams cache](/microsoftteams/troubleshoot/teams-administration/clear-teams-cache).
 
 
@@ -222,9 +226,8 @@ New interactions for [equippable objects](/mesh/develop/enhance-your-environment
 
 * To roast the marshmallow, you simply walk up to the firepit so the marshmallow is over the fire.  
 
-    >[!Note]
-    >It's no longer required to left mouse click to extend the marshmallow into the fire.
-
+  > [!Note]
+  > It's no longer required to left mouse click to extend the marshmallow into the fire.
 * To drop the marshmallow, click **Space bar** on your keyboard
 
 
