@@ -1,15 +1,15 @@
 ---
-title: License requirements for Immersive spaces in Mesh
+title: License requirements for Mesh events
 description: License requirements for Microsoft Mesh.
 ms.service: mesh
 author: typride
 ms.author: tmilligan
 ms.date: 11/08/2023
 ms.topic: overview
-keywords: Microsoft Mesh, Immersive spaces, Avatars, setup, admin, M365, getting started, documentation, licenses
+keywords: Microsoft Mesh, Avatars, setup, admin, M365, getting started, documentation, licenses
 ---
 
-### License requirements for Immersive spaces in Mesh
+### License requirements for Mesh events
 
 For Microsoft Mesh, you will need the following:
 
@@ -24,7 +24,7 @@ For Microsoft Mesh, you will need the following:
   > All Teams Premium prerequisite licenses include Sharepoint, OneDrive, and M365 Calendar.
     Learn more about [Teams for enterprise](https://www.microsoft.com/microsoft-teams/enterprise#pricing) and [Teams Premium trial license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#can-i-experience-teams-premium-before-buying-licenses).
 
-- **(Optional) Unity license(s) and Azure subscription with storage** to develop custom immersive spaces and deploy Cloud Scripting for Mesh environments.
+- **(Optional) Unity license(s) and Azure subscription with storage** to develop custom immersive environments with the Mesh Toolkit and deploy Cloud Scripting for Mesh environments.
 
   Learn more about [Mesh Cloud Scripting infrastructure and management](../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md).
 
