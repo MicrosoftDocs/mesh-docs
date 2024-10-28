@@ -21,7 +21,7 @@ Mesh events allow for even better collaboration for more people by supporting gu
 
 - Admins (Global Admins, User Admins, Guest Inviters) add Guests via the Microsoft Admin Center 
 
-- Guests need licenses (any Teams Premium prerequisite + Mesh Trial, or Teams Premium) 
+- Guests need licenses (any Teams Premium prerequisite + Teams Premium or Mesh Trial) 
 
 - Guests log in securely and enter a deep join link in the Mesh app 
 
@@ -31,12 +31,20 @@ Mesh events allow for even better collaboration for more people by supporting gu
 
 **Invite an external guest user to a Mesh event**
 
-1. Add a Guest user Follow the existing process for [tenant guest user creation using Microsoft Entra ID](/entra/external-id/b2b-quickstart-add-guest-users-portal).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least a User Administrator, then browse to **Identity > Users > All users.**
 
-1. 1. x
+1. In **All users**, select **New user > Invite external user** to add a guest to the tenant.   
+For more detail, follow the existing process for [tenant guest user creation using Microsoft Entra ID](/entra/external-id/b2b-quickstart-add-guest-users-portal).  
+![Screenshot of the invite external user menu option.](media/guest-access/image.png)
+
+1. Navigate to the **[Microsoft 365 admin center](https://admin.microsoft.com/)**, then go to **Users > Guest users** and assign a Teams Premium license or [Microsoft Mesh Trial](/mesh/setup/content/it-admin-led-trials) license.
+
+1. Apply any 
 
 For this release, guest users would require a Teams Premium license, just like regular tenant attendees, to collaborate within Mesh.
 
+> [!TIP]
+> When no longer needed, delete guest users via the Microsoft Entra admin center. [Learn more](/entra/external-id/b2b-quickstart-add-guest-users-portal)
 Limitations
 
 - Organizers must share event links with Guests 
