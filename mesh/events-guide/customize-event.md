@@ -150,23 +150,19 @@ Use the Editor to add content to your environment that can be controlled during 
     >  Playable content can be added from the environment editor or from a Unity project that has been uploaded to a custom environment. Reference the [Choose your journey article](../develop/getting-started/choose-your-journey.md)
     >     to get started with adding custom content.
 
-1. Now you can manipulate the object as you'd like by selecting it with your cursor, dragging it to another location, or using the edges of the objects to scale them as you see fit.
+1. Now you can manipulate the object as you'd like. Select it with your cursor and then use the manipulation tool to adjust position, rotation, and scale.
 
-    :::image type="content" source="../media/mesh-event-producer-guide/environment-editor-maneuver-artifact2.png" alt-text="Move object with avatar arm up":::
-
-    To position your object - with the environment editor open:
-
-    1. Select and drag your object to move it left, right, up, or down.
-    1. **Alt + Select** and drag up or down to move the object toward and away from you.
-    1. **Shift + Select** and drag up or down to make the object bigger or smaller.
-    1. You can also use the rotation and scale handles on the object to rotate and scale your object. Just select the handle and drag to rotate or scale.
-
-    Make sure you check out the position from different angles to verify you’ve placed it properly.
-
-    >[!Tip]
-    >while you are moving an object you’ll see a small line drawn from your object down to the floor. This can help you position your objects relative to landmarks in the scene such as the edge of a stage or a piece of furniture.
-
-
+    
+   
+   ![Image of an Object showing manipulator controls for position, rotation, and scale.](media/customize-event/manipulationwidget-detail.png)
+   
+   You can also use a few other shortcuts for moving Objects around:
+   
+   1. Select and drag your object to move it left, right, up, or down.
+   1. **Alt + Select** and drag up or down to move the object toward and away from you.
+   1. **Shift + Select** and drag up or down to make the object bigger or smaller.
+   > [!Tip]
+   > while you are moving an object you’ll see a small line drawn from your object down to the floor. This can help you position your objects relative to landmarks in the scene such as the edge of a stage or a piece of furniture.
 #### Edit object controls
 
 Once you've added an object, you can maneuver it around the spaces and select it to edit the controls.
@@ -227,4 +223,4 @@ Select the **Save button** or **Revert changes.**
 ## Next steps
 
 > [!div class="nextstepaction"]
-   > [Produce your event](produce-event.md)
+> [Produce your event](produce-event.md)
