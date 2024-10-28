@@ -15,3 +15,9 @@ ms.date:     10/28/2024
 
 # Invite guest attendees to Mesh events
 
+> [!NOTE]
+> **Guest access is currently limited to Mesh Technology Adoption Program (Mesh TAP) customers.** The capability is rolling out to broader audiences starting in November 2024, in accordance with the **[Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?msockid=36ab16f6af646d611d69025aaede6c56&filters=&searchterms=guest%2Caccess)**, Feature ID: 413713
+x
+
+x
+
