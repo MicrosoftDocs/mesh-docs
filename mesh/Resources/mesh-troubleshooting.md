@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, M365, events, join events, organize events, immersive 
 
 # Troubleshooting and FAQ
 
-## What are the license requirements for immersive spaces in Mesh?
+## What are the license requirements for Mesh events?
 
 [!INCLUDE [The include file for the license requirements in Mesh](../Includes/license-requirements-for-Mesh.md)]
 
