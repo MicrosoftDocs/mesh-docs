@@ -19,17 +19,21 @@ The overall flow of creating an event in Mesh on the web is:
 1. Select **Create event** in the top right.
 1. Add the **Title**, **Date/Duration**, and **Details about the event**.
 1. Choose your room settings like:
-    1. **Single room**
-    1. **Multi-room**
+   1. **Single room**
+      
+   1. **Multi-room**
+      
 1. Invite people:
-    1. **Co-organizers** (People to help set up and run the event)
-    1. **Attendees** (People to join the event)
+   1. **Co-organizers** (People to help set up and run the event)
+   1. **Attendees** (People to join the event)
 1. Choose the event space:
-    1. **Choose a template** (that you or someone previously created)
-    1. **Start from scratch** (a default environment or custom environment with no customizations)
+   1. **Choose a template** (that you or someone previously created)
+   1. **Start from scratch** (a default environment or custom environment with no customizations)
 1. (Optional) Upload a event cover image (size 512x256 px)
 1. (Optional) Customize your event 30 minutes before it starts!
 
+> [!IMPORTANT]
+> 
 ## Considerations before your event
 
 - **Single room events:**
@@ -94,5 +98,5 @@ You can also review your event in the **Events** tab in Mesh on the web.
 
 :::image type="content" source="../media/events-guide-create-event/6-review-event-or-join.png" alt-text="Screenshot showing created event in the Events tab in Mesh on the web.":::
 
-   > [!div class="nextstepaction"]
+> [!div class="nextstepaction"]
    > [Customize an event](customize-event.md)
