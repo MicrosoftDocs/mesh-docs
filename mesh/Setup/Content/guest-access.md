@@ -42,8 +42,7 @@ Mesh events allow for even better collaboration for more people by supporting gu
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least a User Administrator, then browse to **Identity > Users > All users.**
 
-1. In **All users**, select **New user > Invite external user** to add a guest to the tenant. Repeat this step for all Guests you want to add.  
-For more detail, follow the existing process for [tenant guest user creation using Microsoft Entra ID](/entra/external-id/b2b-quickstart-add-guest-users-portal).  
+1. In **All users**, select **New user > Invite external user** to add a guest to the tenant. Repeat this step for all Guests you want to add. For more detail, follow the existing process for [tenant guest user creation using Microsoft Entra ID](/entra/external-id/b2b-quickstart-add-guest-users-portal).  
 ![Screenshot of the invite external user menu option.](media/guest-access/image.png)
 
 1. Navigate to the **[Microsoft 365 admin center](https://admin.microsoft.com/)**, then go to **Users > Guest users** and assign a Teams Premium prerequisite license *and* a Teams Premium or [Microsoft Mesh Trial](/mesh/setup/content/it-admin-led-trials) license.
@@ -80,9 +79,9 @@ Congrats! You now have Guest users ready to join Mesh events. Next, Mesh event o
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create a Mesh event](code-in-docs.md)
+> [Create a Mesh event](https://aka.ms/MeshEventCreate)
 
 or 
 
 > [!div class="nextstepaction"]
-> [Join events as a Guest](code-in-docs.md)
+> [Join events as a Guest](https://aka.ms/MeshGuests)
