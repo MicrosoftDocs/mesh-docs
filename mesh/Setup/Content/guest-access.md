@@ -80,7 +80,7 @@ Congrats! You now have Guest users ready to join Mesh events. Next, Mesh event o
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create a Mesh event](code-in-docs.md)
+> [Create a Mesh event](create-event-mesh-portal.md)
 
 or 
 
