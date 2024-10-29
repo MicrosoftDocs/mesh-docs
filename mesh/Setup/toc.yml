@@ -7,6 +7,8 @@ items:
     href: Content/setup-m365-mesh.md
   - name: Manage Mesh collections
     href: Content/manage-mesh-on-web.md
+  - name: Invite guest users
+    href: guest-access.md
   - name: Audit logging in Mesh
     href: Content/audit-logging-in-mesh.md
 
