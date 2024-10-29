@@ -25,11 +25,19 @@ Mesh events allow for even better collaboration for more people by supporting gu
 
 - Guests log in securely and enter a deep join link in the Mesh app 
 
-- Base tenant user must join before Guest 
+- To successfully join an event, a base tenant user must join before Guest 
 
-- No prompt is needed to accept joining users
+- If the Guest meets your organization's criteria, attendees and organizers will not need to accept Guest users into events
 
-**Invite an external guest user to a Mesh event**
+### What you'll need 
+
+- Teams Premium prerequisite license and Teams Premium or Mesh Trial license 
+
+- Guest users' existing email address
+
+- Admin access role that allows adding Guests to a tenant (level greater than or equivalent to User Administrator)
+
+### Invite an external guest user to a Mesh event
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least a User Administrator, then browse to **Identity > Users > All users.**
 
@@ -37,15 +45,22 @@ Mesh events allow for even better collaboration for more people by supporting gu
 For more detail, follow the existing process for [tenant guest user creation using Microsoft Entra ID](/entra/external-id/b2b-quickstart-add-guest-users-portal).  
 ![Screenshot of the invite external user menu option.](media/guest-access/image.png)
 
-1. Navigate to the **[Microsoft 365 admin center](https://admin.microsoft.com/)**, then go to **Users > Guest users** and assign a Teams Premium license or [Microsoft Mesh Trial](/mesh/setup/content/it-admin-led-trials) license.
+1. Navigate to the **[Microsoft 365 admin center](https://admin.microsoft.com/)**, then go to **Users > Guest users** and assign a Teams Premium prerequisite license *and* a Teams Premium or [Microsoft Mesh Trial](/mesh/setup/content/it-admin-led-trials) license.
 
-1. Apply any 
+   > [!NOTE]
+   > For more info, see [license requirements for Mesh events](/mesh/setup/content/preparing-your-organization).
+1. The new Guest user will receive an email invitation notifying them of an invite to access your tenant. To save time, request the Guest(s) to login to their account before their first Mesh event to set up Multi-Factor Authentication (MFA) and any other required account details. 
 
-For this release, guest users would require a Teams Premium license, just like regular tenant attendees, to collaborate within Mesh.
+#### Optional configurations
+
+- Apply [conditional access policies](/entra/identity/conditional-access/concept-conditional-access-policies) and configure [cross-tenant access settings](/entra/external-id/cross-tenant-access-settings-b2b-collaboration) in the Microsoft Entra admin center to suit your security and business needs. 
+
+- (Recommended) Enable Guests to use Teams. Navigate to the [Teams admin center](https://admin.teams.microsoft.com/), then go to **Users > Guest access** to turn On the Guest user experience in Teams. Note that Teams Admin Center Guest access configurations do not apply to Mesh directly, but accessing Teams helps for guests who may need to receive Mesh event deep links (some may prefer to share links via Outlook).  
+![User's image](media/guest-access/image1.png)
 
 > [!TIP]
 > When no longer needed, delete guest users via the Microsoft Entra admin center. [Learn more](/entra/external-id/b2b-quickstart-add-guest-users-portal)
-Limitations
+### Limitations
 
 - Organizers must share event links with Guests 
 
