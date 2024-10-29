@@ -85,4 +85,4 @@ Congrats! You now have Guest users ready to join Mesh events. Next, Mesh event o
 or 
 
 > [!div class="nextstepaction"]
-> [Join events as a Guest](code-in-docs.md)
+> [Join events as a Guest](join-an-event.md#join-as-a-guest)
