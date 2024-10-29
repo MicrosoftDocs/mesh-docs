@@ -8,7 +8,7 @@ items:
   - name: Manage Mesh collections
     href: Content/manage-mesh-on-web.md
   - name: Invite guest users
-    href: guest-access.md
+    href: Content/guest-access.md
   - name: Audit logging in Mesh
     href: Content/audit-logging-in-mesh.md
 
