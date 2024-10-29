@@ -76,3 +76,10 @@ Congrats! You now have Guest users ready to join Mesh events. Next, Mesh event o
 
 - Guest users may need to sign in twice 
 
+> [!div class="nextstepaction"]
+> [Create a Mesh event](code-in-docs.md)
+
+or 
+
+> [!div class="nextstepaction"]
+> [Join events as a Guest](code-in-docs.md)
