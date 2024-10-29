@@ -55,7 +55,7 @@ For more detail, follow the existing process for [tenant guest user creation usi
 
 - Apply [conditional access policies](/entra/identity/conditional-access/concept-conditional-access-policies) and configure [cross-tenant access settings](/entra/external-id/cross-tenant-access-settings-b2b-collaboration) in the Microsoft Entra admin center to suit your security and business needs. 
 
-- (Recommended) Enable Guests to use Teams. Navigate to the [Teams admin center](https://admin.teams.microsoft.com/), then go to **Users > Guest access** to turn On the Guest user experience in Teams. Note that Teams Admin Center Guest access configurations do not apply to Mesh directly, but accessing Teams helps for guests who may need to receive Mesh event deep links (some may prefer to share links via Outlook).  
+- (Recommended) Enable Guests to use Teams. Learn more about [why we recommend this](/microsoftteams/guest-access). Navigate to the [Teams admin center](https://admin.teams.microsoft.com/), then go to **Users > Guest access** to turn On the Guest user experience in Teams. Note that Teams Admin Center Guest access configurations do not apply to Mesh directly, but accessing Teams helps for guests who may need to receive Mesh event deep links (some may prefer to share links via Outlook).  
 ![User's image](media/guest-access/image1.png)
 
 > [!TIP]
