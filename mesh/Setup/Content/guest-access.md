@@ -80,9 +80,9 @@ Congrats! You now have Guest users ready to join Mesh events. Next, Mesh event o
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create a Mesh event](create-event-mesh-portal.md#)
+> [Create a Mesh event](/events-guide/create-event-mesh-portal.md#)
 
 or 
 
 > [!div class="nextstepaction"]
-> [Join events as a Guest](user-guide/join-an-event.md#join-as-a-guest)
+> [Join events as a Guest](/user-guide/join-an-event.md#join-as-a-guest)
