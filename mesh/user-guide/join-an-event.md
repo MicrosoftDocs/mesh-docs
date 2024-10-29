@@ -52,21 +52,24 @@ you a list of events you can join.
 
     ![A screenshot of a computer Description automatically > generated](media/dashboard-view-event.png)
    
-       > [!TIP]
-    > Did you know you can rejoin past events? Revisit your favorite events or use a Mesh event as a drop-in space!
+   ```
+   > [!TIP]
+   ```
+   > Did you know you can rejoin past events? Revisit your favorite events or use a Mesh event as a drop-in space!
 
 1. A **Pre-join** dialog box will appear before you join an event. You can select or customize your avatars from the pre-join dialog.
 
     ![A screenshot of the pre-join dialog with Avatars menu items highlighted](media/prejoin-dialog-avatars.png)
    
-       For more information, see [Personalize your avatar](avatars.md).
-
-1. You can also select your audio devices from the **Pre-join** dialog.
+   ```
+   For more information, see [Personalize your avatar](avatars.md).
+   ```1. You can also select your audio devices from the **Pre-join** dialog.
 
     ![A screenshot of the Mesh prejoin screen](media/prejoin-dialog-audio.png)
    
-       and the **Devices** dialog box appears, where you can test your audio devices:
-
+   ```
+   and the **Devices** dialog box appears, where you can test your audio devices:
+   ```
     ![A screenshot of the audio device test dialog that can be accessed from the prejoin screen](media/audio-device-test-ui.png)
    
 ## [Quest](#tab/Quest)
@@ -127,7 +130,7 @@ If you've been added to a different organization as a Guest, you'll need to foll
 
 1. Get the [Mesh app for Windows](/mesh/user-guide/getting-started).
 
-1. Once the app is open, click **Sign in**.  
+1. Open the Mesh app, then click **Sign in**.  
 ![User's image](media/join-an-event/image.png)
 
 1. Navigate to **Use a different account**, then select **Work or school account**.
@@ -154,7 +157,7 @@ If you've been added to a different organization as a Guest, you'll need to foll
 
 Now that you're successfully signed in, you can easily repeat Steps 3 through 9 when it's time to join an event. 
 
-**When it's time to join the event**
+### When it's time to join the event
 
 1. Open the Mesh app on PC.
 
@@ -169,7 +172,7 @@ Now that you're successfully signed in, you can easily repeat Steps 3 through 9 
 
    > [!WARNING]
    > You may see an error stating "Oops, check the event's schedule" if someone from the host organization hasn't joined yet. If this occurs, attempt to re-join once you're certain a host or attendee from the organization hosting the event has joined. 
-1. Enjoy your event! 
+1. Enjoy your event! All other attendees will see "Guest" appended to your name when upon joining and when hovering over your contact card with their cursor or controller. 
 
 #### Limitations for Guest users in Mesh events
 
@@ -196,10 +199,10 @@ Try interacting with any games or interactive elements in the event environment 
 ## Next steps
 
 > [!div class="nextstepaction"]
-   > [Personalize your avatars](avatars.md)
+> [Personalize your avatars](avatars.md)
 
 > [!div class="nextstepaction"]
-   > [Mesh user controls](mesh-user-controls.md#mesh-controls-overview)
+> [Mesh user controls](mesh-user-controls.md#mesh-controls-overview)
 
 > [!div class="nextstepaction"]
-   > [Create an event in Mesh on the web](../events-guide/create-event-mesh-portal.md)
+> [Create an event in Mesh on the web](../events-guide/create-event-mesh-portal.md)
