@@ -157,7 +157,7 @@ If you've been added to a different organization as a Guest, you'll need to foll
 
 Now that you're successfully signed in, you can easily repeat Steps 3 through 9 when it's time to join an event. 
 
-### When it's time to join the event
+### At event start time
 
 1. Open the Mesh app on PC.
 
