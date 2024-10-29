@@ -31,25 +31,25 @@ Mesh events allow for even better collaboration for more people by supporting gu
 
 ### What you'll need 
 
-- Teams Premium prerequisite license and Teams Premium or Mesh Trial license 
+- Teams Premium prerequisite license *and* Teams Premium or Mesh Trial license seat for the Guest user. For more info, see [license requirements for Mesh events](/mesh/setup/content/preparing-your-organization).
 
 - Guest users' existing email address
 
 - Admin access role that allows adding Guests to a tenant (level greater than or equivalent to User Administrator)
 
-### Invite an external guest user to a Mesh event
+### Invite external guest users to a Mesh event
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least a User Administrator, then browse to **Identity > Users > All users.**
 
-1. In **All users**, select **New user > Invite external user** to add a guest to the tenant.   
+1. In **All users**, select **New user > Invite external user** to add a guest to the tenant. Repeat this step for all Guests you want to add.  
 For more detail, follow the existing process for [tenant guest user creation using Microsoft Entra ID](/entra/external-id/b2b-quickstart-add-guest-users-portal).  
 ![Screenshot of the invite external user menu option.](media/guest-access/image.png)
 
 1. Navigate to the **[Microsoft 365 admin center](https://admin.microsoft.com/)**, then go to **Users > Guest users** and assign a Teams Premium prerequisite license *and* a Teams Premium or [Microsoft Mesh Trial](/mesh/setup/content/it-admin-led-trials) license.
 
-   > [!NOTE]
-   > For more info, see [license requirements for Mesh events](/mesh/setup/content/preparing-your-organization).
 1. The new Guest user will receive an email invitation notifying them of an invite to access your tenant. To save time, request the Guest(s) to login to their account before their first Mesh event to set up Multi-Factor Authentication (MFA) and any other required account details. 
+
+Congrats! You now have Guest users ready to join Mesh events. Next, Mesh event organizers will need to create an event, invite attendees, and share the join link directly with the guests. See [Join events as a guest](https://aka.ms/MeshGuests) for more details. 
 
 #### Optional configurations
 
@@ -60,7 +60,7 @@ For more detail, follow the existing process for [tenant guest user creation usi
 
 > [!TIP]
 > When no longer needed, delete guest users via the Microsoft Entra admin center. [Learn more](/entra/external-id/b2b-quickstart-add-guest-users-portal)
-### Limitations
+### Limitations and known issues
 
 - Organizers must share event links with Guests 
 
@@ -70,9 +70,9 @@ For more detail, follow the existing process for [tenant guest user creation usi
 
 - Guests won't see Mesh events in their calendar 
 
-- Guest access not supported on WebGL or Quest 
+- Guest access not supported for Mesh in Teams or Quest 
 
-- Images and Video links must be properly permissioned for Guest
+- Images and Video links must be properly permissioned for Guest sharing
 
 - Guest users may need to sign in twice 
 
