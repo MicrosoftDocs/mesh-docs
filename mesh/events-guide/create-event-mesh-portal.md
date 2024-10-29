@@ -31,9 +31,9 @@ The overall flow of creating an event in Mesh on the web is:
    1. **Start from scratch** (a default environment or custom environment with no customizations)
 1. (Optional) Upload an event cover image (size 512x256 px)
 
-1. Select **Create**
+1. Select **Create** to finalize event creation.
 
-1. In Outlook, all co-organizers and attendees will receive the Mesh event invite.
+1. In Outlook, all co-organizers and attendees will receive the Mesh event invite which can be viewed on their Calendar.
 
    1. Forward the event invite to add more attendees
       
