@@ -52,7 +52,7 @@ you a list of events you can join.
 
     ![A screenshot of a computer Description automatically > generated](media/dashboard-view-event.png)
    
-   ```
+      ```
    > [!TIP]
    ```
    > Did you know you can rejoin past events? Revisit your favorite events or use a Mesh event as a drop-in space!
@@ -61,15 +61,15 @@ you a list of events you can join.
 
     ![A screenshot of the pre-join dialog with Avatars menu items highlighted](media/prejoin-dialog-avatars.png)
    
-   ```
+      ```
    For more information, see [Personalize your avatar](avatars.md).
    ```1. You can also select your audio devices from the **Pre-join** dialog.
 
     ![A screenshot of the Mesh prejoin screen](media/prejoin-dialog-audio.png)
    
    ```
-   and the **Devices** dialog box appears, where you can test your audio devices:
-   ```
+      and the **Devices** dialog box appears, where you can test your audio devices:
+      ```
     ![A screenshot of the audio device test dialog that can be accessed from the prejoin screen](media/audio-device-test-ui.png)
    
 ## [Quest](#tab/Quest)
@@ -157,7 +157,7 @@ If you've been added to a different organization as a Guest, you'll need to foll
 
 Now that you're successfully signed in, you can easily repeat Steps 3 through 9 when it's time to join an event. 
 
-### At event start time
+### When the event starts
 
 1. Open the Mesh app on PC.
 
