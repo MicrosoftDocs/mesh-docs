@@ -35,7 +35,7 @@ A few important notes to consider are:
 
 * Guest users' creation [follows the existing process for tenant guest user creation using Microsoft Entra ID](/entra/external-id/b2b-quickstart-add-guest-users-portal).
 
-* As of now, guest users also require a [Teams Premium license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) and [Mesh license](../Setup/Content/it-admin-led-trials.md) similar to all other Mesh event attendees.
+* As of now, guest users also require a [Teams Premium license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) or [Mesh license](../Setup/Content/it-admin-led-trials.md) similar to all other Mesh event attendees.
 
 * Guest access is not supported on the Mesh app for Quest.
 
