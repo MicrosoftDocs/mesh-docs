@@ -118,7 +118,12 @@ To join a Mesh event using the Mesh app in Teams:
 
 > [!IMPORTANT]
 > Currently, guest access is only supported for Mesh events on Windows (PC). 
-If you've been added to a different organization as a Guest, you'll need to follow these steps to join:
+> To ensure a successful experience when the event starts, we recommend you follow these steps to trigger any required setup steps that involve account setup, including but not limited to Multi-Factor Authentication (MFA).
+If you've been added to a different organization as a Guest, you'll need to follow these steps to join a Mesh event hosted by that organization:
+
+### Before the event
+
+1. You will receive an invitation to join the organization (example subject line: "[User name] invited you to access applications within their organization"). Take a moment to Accept the invite and follow all required account setup steps. This is very important to ensure a smooth experience for the following steps.
 
 1. Get the [Mesh app for Windows](/mesh/user-guide/getting-started)
 
@@ -134,22 +139,32 @@ If you've been added to a different organization as a Guest, you'll need to foll
 ![User's image](media/join-an-event/image2.png)
 
 1. Add the **Domain name** of the organization you'd like to sign in to  
-![User's image](media/join-an-event/image2.png)
+![User's image](media/join-an-event/image4.png)
 
    > [!TIP]
-   > Example: If JaneDoe@ContosoElectronics.com is added to the Microsoft organization, Jane will sign in as their Contoso Electronics email, then specify the domain of the company whose resources they're accessing as a guest - in this case it would be Microsoft.com.
+   > Example: If someone@Microsoft.com is added to the Contoso Electronics organization, that individual will specify the domain of the company whose resources they're accessing as a guest during sign in - in this case it would be ContosoElectronics.com.
    > If you can't find the organization's domain, ask the Mesh event organizer or check your email inbox for the invitation to access applications within the organization. Within the invitation email, you'll notice the Domain name is listed. 
-1. The sign in page will now specify the name of the organization. Enter your email and password to sign in to the organization.
+1. The sign in page will now specify the name of the organization. Enter your email and password to sign in to the organization.  
+![User's image](media/join-an-event/image5.png)
 
    > [!WARNING]
-   > 1. You may be asked to enter your email and password twice. 
+   > 1. You may be asked to enter your email and password more than once to maximize security. 
    > 1. The first time you sign in to Mesh as a guest in another organization, you'll need to **Accept** permissions requested by the organization and there may be More information requested. 
-   > 1. If you receive an error stating "You cannot access this right now", ask the admin or event organizer to confirm you have the correct licenses assigned in order to join as a guest. 
-1. Once you've added the domain, you'll see a Sign in page similar to Step 4. However, now that you've specified the domain name of the organization you're joining, you can a
+   > 1. If you receive an error stating "You cannot access this right now", check to ensure you've provided all requested information in step 1.
+1. Once you've added the domain, you'll see a Sign in page similar to Step 4. However, now that you've specified the domain name of the organization you're joining, you can sign in using your email address.
 
-1. Upon entering Mesh, you'll see a box that asks for a URL. This URL must be provided by the event organizer, so reach out to them if you don't have it.   
-Note: Organizers can find the Mesh event link in the **Join on your computer** section of the Outlook invite, titled "Click here to join in Mesh". 
+Now that you're successfully signed in, you can easily repeat Steps 3 through 9 when it's time to join an event. 
 
+**When it's time to join the event**
+
+1. Sign in to the organization as a Guest using Steps 3-9 above. 
+
+1. Upon entering Mesh, you'll see a box that asks for a **URL** for the specific Mesh event. This URL must be provided by the event organizer, so reach out to them if you don't have it. Organizers can find the Mesh event link in the **Join on your computer** section of the Outlook invite, titled "Click here to join in Mesh". 
+
+1. Enter the URL for the event you wish to join. 
+
+   > [!WARNING]
+   > You may see an error stating "Oops, check the event's schedule" if someone from the host organization hasn't joined yet. If this occurs, attempt to re-join once you're certain a host or attendee from the organization hosting the event has joined. 
 1. Enjoy your event! 
 
 
