@@ -62,17 +62,17 @@ Congrats! You now have Guest users ready to join Mesh events. Next, Mesh event o
 > When no longer needed, delete guest users via the Microsoft Entra admin center. [Learn more](/entra/external-id/b2b-quickstart-add-guest-users-portal)
 ### Limitations and known issues
 
-- Organizers must share event links with Guests 
+- Organizers must share event links with Guests - Guests will not see the event on their Mesh dashboard or Outlook calendar
 
 - Guests can only be Attendees, not Organizers 
 
 - Guests cannot schedule or customize events 
 
-- Guests won't see Mesh events in their calendar 
-
 - Guest access not supported for Mesh in Teams or Quest 
 
-- Images and Video links must be properly permissioned for Guest sharing
+- Guest access is supported only for events in the default Mesh environments - Meadow, Oasis, and Workshop. 
+
+- When adding images and videos to customize the environment, make sure the URL you use to share the object will allow Guests to view the object on the SharePoint or OneDrive where it is store. 
 
 - Guest users may need to sign in twice 
 
