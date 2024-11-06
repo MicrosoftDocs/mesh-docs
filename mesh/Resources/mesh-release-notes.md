@@ -17,6 +17,7 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+|2024|Nov 5|5.2416.XX|
 | 2024         | October 15 | 5.2415.XX    |
 | 2024|September 30| 5.2414.XX|
 | 2024         | September 17 | 5.2413.XX    |
@@ -33,6 +34,16 @@ Microsoft Mesh application
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2416.XX
+
+## What's new
+
+- New and improved controls for positioning objects.
+
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/mesh-release-notes/image.png)
+
+- Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 
 ## Version 5.2415.XX
 
@@ -537,9 +548,9 @@ The following product issues have been fixed for this release:
       ![A screenshot of the screen sharing UI](media/before-screen-share.png)
     
     * Once screen sharing is started, you see a **You are screen sharing** toast notification, and the **Stop sharring** option. The solid line indicates you're currently sharing a screen.
-
+    
         ![A screenshot of the screen sharing UI during a screen share](media/after-screen-share.png)
-
+      
 * New **Control panel** dialog where the **Controls** list is now on a separate tab:
 
     ![A screenshot of the ](media/controls-tab.png)
