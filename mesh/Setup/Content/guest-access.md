@@ -16,7 +16,7 @@ ms.date:     10/28/2024
 # Invite guest attendees to Mesh events
 
 > [!NOTE]
-> **Guest access is currently limited to Mesh Technology Adoption Program (Mesh TAP) customers.** The capability is rolling out to broader audiences starting in November 2024, in accordance with the **[Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?msockid=36ab16f6af646d611d69025aaede6c56&filters=&searchterms=guest%2Caccess)**.
+> **Guest access is currently in public preview.**  The capability is rolling out to broader audiences starting in November 2024, in accordance with the **[Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?msockid=36ab16f6af646d611d69025aaede6c56&filters=&searchterms=guest%2Caccess)**.
 
 Mesh events allow for even better collaboration for more people by supporting guest user attendees into the Mesh PC app. Event organizers can invite guest users outside their organization, providing an opportunity for broader collaboration and networking in Mesh events. Guests can sign in to the Mesh app to join events, participate in discussions, and experience the same interactive features as internal users, all while maintaining secure access control. Guest user creation follows the existing process for tenant guest user creation (outside of Mesh). 
 
@@ -37,6 +37,12 @@ Mesh events allow for even better collaboration for more people by supporting gu
 - Guest users' existing email address
 
 - Admin access role that allows adding Guests to a tenant (level greater than or equivalent to User Administrator)
+
+#### Enable Targeted Release
+
+Guest access is in public preview. Your tenant must enable Targeted release for everyone for guests to access Mesh. For more information, see [Set up the Standard or Targeted release options](https://https://learn.microsoft.com/en-us/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide&WT.mc_id=365AdminCSH_inproduct#targeted-release). This setting will not be necessary after guest access is generally available. 
+
+![targeted access](media/guest-access/targeted-access.png)
 
 ### Invite external guest users to a Mesh event
 
