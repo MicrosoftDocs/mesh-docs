@@ -186,6 +186,24 @@ The people panel allows you to see who is in your event, and call on participant
 
 :::image type="content" source="../Resources/media/People-panel-multi-room-2412.png" alt-text="Screenshot of the people panel in a multi-room event in the Mesh app.":::
 
+## Room Hopping for Hosts
+
+Hosts are able to move freely between rooms in their multiroom events in order to connect to their audiences. To Room Hop you must:
+
+1. Open the People Panel
+
+1. Navigate to the Additional Rooms tab
+
+1. Select a room to travel to
+
+
+![Room Hopping](media/produce-event/room-hopping.jpg)
+
+Movement between rooms will fade out the people and content from the current room, while loading the people and content in the new room. Hosts can freely move between any open rooms and a maximum of two hosts will be able to simultaneously bypass the capacity limit for rooms that are currently full.
+
+> [!NOTE]
+> Certain scripting content may differ after Room Hopping. We recommend pre-event testing to ensure experience predictability.
+> 
 ## Control panel
 
 The Control panel is used to control the content or objects that were added when customizing an Event or Template. To learn more, see how to [Customize your event](customize-event.md).
