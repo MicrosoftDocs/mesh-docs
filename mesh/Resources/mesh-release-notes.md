@@ -40,21 +40,23 @@ Microsoft Mesh application
 
 ## What's new
 
+The Project Studio environment is now available. Tip: Make sure you select **Start from scratch**, not **Choose a template**. 
+
+## ![Screen shot of environment choices when creating a Mesh event.](media/mesh-release-notes/image1.png)
+
 Host Room Hopping
 
-- This feature gives Hosts in a multi-room event the ability to quickly move between rooms of the event. Previously, the Organizer and any Co-organizers specified in the Mesh Event would automatically enter the Organizer room and be able to interact only with other organizers in the Organizer room. Now Organizer and Co-organizers automatically start in the Organizer room but can use the **Additional rooms** panel to switch to any room they want, as often as they want. 
+- This feature gives Hosts in a multi-room event the ability to quickly move between rooms of the event. Previously, the Organizer and any Co-organizers specified in the Mesh Event would automatically enter the Organizer room and be able to interact only with other organizers in the Organizer room. Now all organizers automatically start in the Organizer room but can use the **Additional rooms** panel to switch to any room they want, as often as they want. To access the **Additional rooms** panel, organizers can click the People panel from the main Mesh menu.  
 
 
 
--  unable to directly interact with attendees in the other rooms. Now they can hop as many times as they want to directly reach their audience, without leaving the event.
 
-Attendee cross-room hand-raise visualization
 
-- Enables attendees to see cross-room hand-raises
+![Screen shot of the Additional rooms panel in Mesh.](media/mesh-release-notes/additionalrooms3.png)
 
-Attendee cross-room reaction visualization
+Attendee cross-room hand-raise visualization and room reaction visualization
 
-- Enables attendees to view cross-room emoji visuals from attendees in other rooms. This only appears in the Standalone Events multi-room scenario.
+- We previously released cross-room visualization for organizers in 5.2411 and now with this release, attendees can see images representing other attendees who have raised their hands as well as emojis sent by attendees in other rooms. 
 
 ## Version 5.2416.XX
 
