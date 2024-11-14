@@ -17,7 +17,8 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
-|2024|Nov 5|5.2416.XX|
+|2024|November 12|5.2417.XX|
+|2024|November 5|5.2416.XX|
 | 2024         | October 15 | 5.2415.XX    |
 | 2024|September 30| 5.2414.XX|
 | 2024         | September 17 | 5.2413.XX    |
@@ -35,13 +36,33 @@ Microsoft Mesh application
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
+## Version 5.2417.XX
+
+## What's new
+
+Host Room Hopping
+
+- This feature gives Hosts in a multi-room event the ability to quickly move between rooms of the event. Previously, the Organizer and any Co-organizers specified in the Mesh Event would automatically enter the Organizer room and be able to interact only with other organizers in the Organizer room. Now Organizer and Co-organizers automatically start in the Organizer room but can use the **Additional rooms** panel to switch to any room they want, as often as they want. 
+
+
+
+-  unable to directly interact with attendees in the other rooms. Now they can hop as many times as they want to directly reach their audience, without leaving the event.
+
+Attendee cross-room hand-raise visualization
+
+- Enables attendees to see cross-room hand-raises
+
+Attendee cross-room reaction visualization
+
+- Enables attendees to view cross-room emoji visuals from attendees in other rooms. This only appears in the Standalone Events multi-room scenario.
+
 ## Version 5.2416.XX
 
 ## What's new
 
 - New and improved controls for positioning objects.
 
-![Image of an Object showing manipulator controls for position, rotation, and scale.](media/mesh-release-notes/image.png)
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Workshop-environment.png)
 
 - Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 
