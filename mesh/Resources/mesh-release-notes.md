@@ -44,7 +44,7 @@ The Project Studio environment is now available. Tip: Make sure you select **Sta
 
 ### Host Room Hopping
 
-- This feature gives Hosts in a multi-room event the ability to quickly move between rooms of the event. Previously, the Organizer and any Co-organizers specified in the Mesh Event would automatically enter the Organizer room and be able to interact only with other organizers in the Organizer room. Now all organizers automatically start in the Organizer room but can use the **Additional rooms** panel to switch to any room they want, as often as they want. To access the **Additional rooms** panel, organizers can click the People panel from the main Mesh menu.  
+This feature gives Hosts in a multi-room event the ability to quickly move between rooms of the event. Previously, the Organizer and any Co-organizers specified in the Mesh Event would automatically enter the Organizer room and be able to interact only with other organizers in the Organizer room. Now all organizers automatically start in the Organizer room but can use the **Additional rooms** panel to switch to any room they want, as often as they want. To access the **Additional rooms** panel, organizers can click the People panel from the main Mesh menu.  
 
 
 
@@ -62,13 +62,17 @@ Mesh events allow for even better collaboration for more people by supporting gu
 
 [Get started by inviting guest users.](/mesh/setup/content/guest-access)
 
+### Hand interactions support on Meta Quest devices
+
+Microsoft Mesh app users on Meta Quest 2, 3, and Pro devices can now use their hands to use the app, move around in event environments, and interact with objects. Motion controllers continue to be supported, and users can switch between using controllers or their hands while using the app. 
+
 ## Version 5.2416.XX
 
 ## What's new
 
 - New and improved controls for positioning objects.
 
-![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Catalog-avatar-reactions-emotes-standalone.png)
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Customization-editor-text.png)
 
 - Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 
