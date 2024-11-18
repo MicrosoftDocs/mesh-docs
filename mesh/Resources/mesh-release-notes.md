@@ -40,11 +40,9 @@ Microsoft Mesh application
 
 ## What's new
 
-The Project Studio environment is now available. Tip: Make sure you select **Start from scratch**, not **Choose a template**. 
+The Project Studio environment is now available. Tip: Make sure you select **Start from scratch**, not **Choose a template**. ![Screen shot of environment choices when creating a Mesh event.](media/mesh-release-notes/image1.png)
 
-## ![Screen shot of environment choices when creating a Mesh event.](media/mesh-release-notes/image1.png)
-
-Host Room Hopping
+### Host Room Hopping
 
 - This feature gives Hosts in a multi-room event the ability to quickly move between rooms of the event. Previously, the Organizer and any Co-organizers specified in the Mesh Event would automatically enter the Organizer room and be able to interact only with other organizers in the Organizer room. Now all organizers automatically start in the Organizer room but can use the **Additional rooms** panel to switch to any room they want, as often as they want. To access the **Additional rooms** panel, organizers can click the People panel from the main Mesh menu.  
 
@@ -54,9 +52,9 @@ Host Room Hopping
 
 ![Screen shot of the Additional rooms panel in Mesh.](media/mesh-release-notes/additionalrooms3.png)
 
-Attendee cross-room hand-raise visualization and room reaction visualization
+### Attendee cross-room hand-raise visualization and room reaction visualization
 
-- We previously released cross-room visualization for organizers in 5.2411 and now with this release, attendees can see images representing other attendees who have raised their hands as well as emojis sent by attendees in other rooms. 
+- We previously released cross-room visualization for organizers in 5.2411 and now with this release, attendees can see coin-shaped avatar images representing other attendees who have raised their hands as well as emojis sent by attendees in other rooms. 
 
 ## Version 5.2416.XX
 
@@ -64,7 +62,7 @@ Attendee cross-room hand-raise visualization and room reaction visualization
 
 - New and improved controls for positioning objects.
 
-![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Workshop-environment.png)
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Workshop-environment-2.png)
 
 - Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 
