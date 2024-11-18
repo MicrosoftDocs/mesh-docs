@@ -68,7 +68,7 @@ Mesh events allow for even better collaboration for more people by supporting gu
 
 - New and improved controls for positioning objects.
 
-![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Workshop-environment.png)
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Catalog-avatar-reactions-emotes-standalone.png)
 
 - Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 
