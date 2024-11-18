@@ -54,7 +54,13 @@ The Project Studio environment is now available. Tip: Make sure you select **Sta
 
 ### Attendee cross-room hand-raise visualization and room reaction visualization
 
-- We previously released cross-room visualization for organizers in 5.2411 and now with this release, attendees can see coin-shaped avatar images representing other attendees who have raised their hands as well as emojis sent by attendees in other rooms. 
+We previously released cross-room visualization for organizers in 5.2411 and now with this release, attendees can see coin-shaped avatar images representing other attendees who have raised their hands as well as emojis sent by attendees in other rooms. 
+
+### Guest Access
+
+Mesh events allow for even better collaboration for more people by supporting guest user attendees into the Mesh PC app. Event organizers can invite guest users outside their organization, providing an opportunity for broader collaboration and networking in Mesh events. Guests can sign in to the Mesh app to join events, participate in discussions, and experience the same interactive features as internal users, all while maintaining secure access control. Guest user creation follows the existing process for tenant guest user creation (outside of Mesh). This feature is only available for default Mesh environments, not custom environments built in Unity. 
+
+[Get started by inviting guest users.](/mesh/setup/content/guest-access)
 
 ## Version 5.2416.XX
 
@@ -62,7 +68,7 @@ The Project Studio environment is now available. Tip: Make sure you select **Sta
 
 - New and improved controls for positioning objects.
 
-![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Workshop-environment-2.png)
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Catalog-avatar-reactions-emotes-standalone.png)
 
 - Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 
