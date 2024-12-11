@@ -220,11 +220,17 @@ With native authentication support for Mesh on Quest, organizations can implemen
 
 Each company using Mesh will have to work with their security and endpoint management teams to decide the following: Do we need to have a managed Quest device fleet? Doing so can ensure compliance with corporate policies and will require the following: 
 
-- **If the organization chooses to have managed Quest devices:** You will need to ensure your Quest device fleet is managed through Quest for Business and an MDM provider. Once managed, [create a device-based Conditional Access policy](/mem/intune/protect/create-conditional-access-intune) to specify the conditions for signing in to applications on the Quest. 
+- **If the organization chooses to have managed Quest devices:** You will need to ensure your Quest device fleet is managed through Quest for Business and an MDM provider. 
 
-- **If the organization wants to make an exception for Quest:** Create a Conditional Access policy that is acceptable to the company's risk profile while still permitting access to Quest devices. You will need to exclude the Quest device by [filtering for devices](/entra/identity/conditional-access/concept-condition-filters-for-devices) on a new or existing Conditional Access policy.   
+  - Learn more and get started with Quest for Business in the Meta for Work Help Center, [here](https://work.meta.com/help/258897560520071/?helpref=hc_fnav). 
+    
+  - For those getting started with Quest enrollment, check out the Microsoft Intune [enrollment guide](/mem/intune/fundamentals/deployment-guide-enrollment). 
+    
+  - Once enrolled and configured, create a [device-based Conditional Access policy](/mem/intune/protect/create-conditional-access-intune) to create sign-in conditions unique to your organization's device usage scenarios. 
   
-To exclude filtered devices like the Quest model and Meta manufacturer that are not registered in Entra ID, you can set up a Conditional Access policy using the **negative operator**. To apply a **negative operator**, reference [policy behavior with filter for devices](/entra/identity/conditional-access/concept-condition-filters-for-devices). If you were to use a positive operator, the filter rule would only apply when a device exists in the directory and the configured rule matches the attribute on the device.
+- **If the organization wants to make an exception for Quest:** Create a Conditional Access policy that is acceptable to the company's risk profile while still permitting access to Quest devices. You will need to exclude the Quest device by [filtering for devices](/entra/identity/conditional-access/concept-condition-filters-for-devices) on a new or existing Conditional Access policy.   
+
+To exclude filtered devices like the Quest model and Meta manufacturer that are not registered in Entra ID, you can set up a Conditional Access policy using the negative operator. To apply a negative operator, reference [policy behavior with filter for devices](/entra/identity/conditional-access/concept-condition-filters-for-devices). If you were to use a positive operator, the filter rule would only apply when a device exists in the directory and the configured rule matches the attribute on the device.
 
 Both options will enable the use of Mesh. However, it's recommended that organizations manage their Quest devices to ensure security and compliance. If neither action is taken and a user in your organization attempts to launch Mesh on Quest for an unmanaged device where conditional access policies are applied, they will receive errors [AADSTS50199](/entra/identity-platform/reference-error-codes) and [AADSTS53003](/entra/identity-platform/reference-error-codes).  
 
