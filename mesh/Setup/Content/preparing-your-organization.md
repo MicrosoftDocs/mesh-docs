@@ -85,9 +85,9 @@ provision for Mesh are:
 
 1. Which users should be able to access immersive experiences.
 
-    All users who will be participating in immersive experiences together must
-have native accounts in the same Microsoft Entra ID ([formerly Azure Active Directory](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) - guest access to the tenant does not work.
-
+    Users with native accounts in your Microsoft Entra ID will have the easiest time accessing your events. You can invite users with Guest accounts in your Microsoft Entra ID to attend your events, but they will have to do extra steps to log into Mesh with their Guest account. Also, Guest users cannot create events or be co-organizers for Mesh events. For more information, see [Invite guest attendees to Mesh events](/mesh/setup/content/guest-access).
+   
+   
 1. The tradeoffs between having unlimited control of a domain and
     having ultimate responsibility for running the domain securely and
     effectively.
@@ -243,14 +243,14 @@ before you deploy.
     as needed.
 
 - Human Resources: While Mesh does not require any specific action
-    from Human Resources for deployment or operations, HR may be
-    interested that Mesh is about creating immersive experiences for
-    users. Check with your HR department for any policies that may
-    impact your Mesh meeting experience.
+from Human Resources for deployment or operations, HR may be
+interested that Mesh is about creating immersive experiences for
+users. Check with your HR department for any policies that may
+impact your Mesh meeting experience.
 
 - Company Branding: If you decide to create custom meeting experiences
-    for your users, you should check with your company branding experts
-    to make sure any meeting assets meets branding standards.
+for your users, you should check with your company branding experts
+to make sure any meeting assets meets branding standards.
 
 ### Preparing Users for Mesh Avatars
 
