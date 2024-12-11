@@ -17,7 +17,8 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
-| 2024|December 10|5.2418.XX|
+|2024|December 10|5.2419.XX|
+| 2024|December 02 (PC) & December 10 (Quest)|5.2418.XX|
 | 2024|November 12|5.2417.XX|
 | 2024|November 5|5.2416.XX|
 | 2024         | October 15 | 5.2415.XX    |
@@ -37,13 +38,19 @@ Microsoft Mesh application
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
+## Version 5.2419.XX
+
+### What's new
+
+Minor bug fixes and improvements. 
+
 ## Version 5.2418.XX
 
 ## What's new
 
 ### Improved sign-in experience on Quest 
 
-The Mesh app on Quest has a new and improved native authentication flow. Upon opening the Mesh app, a window will appear for adding your credentials into a sign-in window directly from your device's home screen.
+The Mesh app on Quest has a new and improved native authentication flow. Upon opening the Mesh app, a window will appear for adding your credentials into a sign-in window directly from your device's home screen (instead of from immersive view after opening the Mesh app. 
 
 Mesh sign-in experience now supports multi-factor authentication via the Microsoft Authenticator app, allowing you to use your phone (instead of PC) for quicker and more secure sign-in. 
 
@@ -104,7 +111,7 @@ Microsoft Mesh app users on Meta Quest 2, 3, and Pro devices can now use their h
 
 - New and improved controls for positioning objects.
 
-![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Emoji-reactions-hand-raise-multi-room.png)
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/People-panel-single-room-2412.png)
 
 - Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 
