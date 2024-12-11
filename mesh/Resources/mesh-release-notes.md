@@ -17,8 +17,9 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
-|2024|November 12|5.2417.XX|
-|2024|November 5|5.2416.XX|
+| 2024|December 10|5.2418.XX|
+| 2024|November 12|5.2417.XX|
+| 2024|November 5|5.2416.XX|
 | 2024         | October 15 | 5.2415.XX    |
 | 2024|September 30| 5.2414.XX|
 | 2024         | September 17 | 5.2413.XX    |
@@ -44,7 +45,7 @@ Microsoft Mesh application
 
 The Mesh app on Quest has a new and improved native authentication flow. Upon opening the Mesh app, a window will appear for adding your credentials into a sign-in window directly from your device's home screen.
 
-Mesh sign-in experience now supports multi-factor authentication via the Microsoft Authenticator app, allowing you to use your phone (instead of your PC) for quicker secure sign on. 
+Mesh sign-in experience now supports multi-factor authentication via the Microsoft Authenticator app, allowing you to use your phone (instead of PC) for quicker and more secure sign-in. 
 
 ### Conditional Access policy support for native authentication on Quest
 
@@ -71,7 +72,7 @@ Learn more and get started with Quest for Business in the Meta for Work Help Cen
 ## What's new
 
 The Project Studio environment is now available. Tip: Make sure you select **Start from scratch**, not **Choose a template**.  
- ![Screen shot of environment choices when creating a Mesh event.](media/mesh-release-notes/image1.png)
+![Screen shot of environment choices when creating a Mesh event.](media/mesh-release-notes/image1.png)
 
 ### Host Room Hopping
 
