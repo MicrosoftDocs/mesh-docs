@@ -42,6 +42,10 @@ Microsoft Mesh application
 
 ### What's new
 
+### Audio support for screensharing
+
+### Resolved issues
+
 Minor bug fixes and improvements. 
 
 ## Version 5.2418.XX
@@ -111,7 +115,7 @@ Microsoft Mesh app users on Meta Quest 2, 3, and Pro devices can now use their h
 
 - New and improved controls for positioning objects.
 
-![Image of an Object showing manipulator controls for position, rotation, and scale.](media/People-panel-single-room-2412.png)
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Emoji-reactions-hand-raise-multi-room.png)
 
 - Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 
