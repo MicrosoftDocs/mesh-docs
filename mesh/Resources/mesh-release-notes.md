@@ -42,7 +42,9 @@ Microsoft Mesh application
 
 ### What's new
 
-### Audio support for screensharing
+### Audio support for screen sharing
+
+Presenters will now be able to choose whether they'd like to include system audio when starting a screen share in a Mesh event. This feature is rolling out to Mesh TAP customers.
 
 ### Resolved issues
 
@@ -115,7 +117,7 @@ Microsoft Mesh app users on Meta Quest 2, 3, and Pro devices can now use their h
 
 - New and improved controls for positioning objects.
 
-![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Emoji-reactions-hand-raise-multi-room.png)
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/People-panel-multi-room-2412.png)
 
 - Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 
