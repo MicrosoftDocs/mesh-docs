@@ -17,7 +17,8 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
-| 2024|December 10|5.2418.XX|
+|2024|December 10|5.2419.XX|
+| 2024|December 02 (PC) & December 10 (Quest)|5.2418.XX|
 | 2024|November 12|5.2417.XX|
 | 2024|November 5|5.2416.XX|
 | 2024         | October 15 | 5.2415.XX    |
@@ -37,13 +38,25 @@ Microsoft Mesh application
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
 
+## Version 5.2419.XX
+
+### What's new
+
+### Audio support for screen sharing
+
+Presenters will now be able to choose whether they'd like to include system audio when starting a screen share in a Mesh event. This feature is rolling out to Mesh TAP customers.
+
+### Resolved issues
+
+Minor bug fixes and improvements. 
+
 ## Version 5.2418.XX
 
 ## What's new
 
 ### Improved sign-in experience on Quest 
 
-The Mesh app on Quest has a new and improved native authentication flow. Upon opening the Mesh app, a window will appear for adding your credentials into a sign-in window directly from your device's home screen.
+The Mesh app on Quest has a new and improved native authentication flow. Upon opening the Mesh app, a window will appear for adding your credentials into a sign-in window directly from your device's home screen (instead of from immersive view after opening the Mesh app. 
 
 Mesh sign-in experience now supports multi-factor authentication via the Microsoft Authenticator app, allowing you to use your phone (instead of PC) for quicker and more secure sign-in. 
 
@@ -57,7 +70,7 @@ Additionally, note the following behaviors:
 
 - Non-compliant users on managed Quest devices (using Quest for Business and an MDM provider) will not successfully sign-in. Be sure to request users stay compliant. 
 
-- Only phone multi-factor authentication is supported right now. Its possible other methods lead to errors.
+- Only phone multi-factor authentication is supported right now. It's possible other methods lead to errors.
 
 Learn more and get started with Quest for Business in the Meta for Work Help Center, [here](https://work.meta.com/help/258897560520071/?helpref=hc_fnav). For those getting started with Quest enrollment, check out the Microsoft Intune [enrollment guide](/mem/intune/fundamentals/deployment-guide-enrollment). Once enrolled and configured, create a [device-based Conditional Access policy](/mem/intune/protect/create-conditional-access-intune) to create sign-in conditions unique to your organization's device usage scenarios. 
 
@@ -104,7 +117,7 @@ Microsoft Mesh app users on Meta Quest 2, 3, and Pro devices can now use their h
 
 - New and improved controls for positioning objects.
 
-![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Emoji-reactions-hand-raise-multi-room.png)
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Workshop-environment-2.png)
 
 - Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 

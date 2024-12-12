@@ -70,22 +70,22 @@ If you had previously downloaded the **Napili** app on your Quest 2 device, you 
 
     If the URL doesn't work, use a new private window in your browser.
 
-2. Sign in with your **Meta device account** (*not* your corporate AAD account). This could be your Meta ID, Facebook account, or another
-    email.
+1. Sign in with your **Meta device account** (*not* your corporate AAD account). This could be your Meta ID, Facebook account, or another
+email.
 
     [Can't find your Meta account associated with your Quest 2 device?](#how-do-i-find-my-meta-id)
 
     ![Log in to meta account](media/log-in-meta.png)
-
-3. Once authenticated, select the **Get** button.
+   
+1. Once authenticated, select the **Get** button.
 
     ![Screenshot of the Meta Mesh page on Meta](media/mesh-meta-quest-get.png)
-
-4. You'll see the button grey out and change from **Get** to **Purchased** which indicates that the app has been acquired.
+   
+1. You'll see the button grey out and change from **Get** to **Purchased** which indicates that the app has been acquired.
 
     ![Log in with your Meta account confirmation page](media/mesh-meta-purchased.png)
-
-    >[!Note]
+   
+       >[!Note]
     >You may need to restart your headset to ensure the app loads.
 
 ### How do I find my Meta ID?
@@ -96,10 +96,10 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 2. Continue with your Facebook account or log in with your Oculus account.
 
-3. It should bring you to your **Profile** page. If not, click your **Profile** icon in the top right corner.
+1. It should bring you to your **Profile** page. If not, click your **Profile** icon in the top right corner.
 
    ![A screenshot of profile icon](media/meta-profile.png)
-
+   
 4. Select **Profile**. From there you should see your Email.
 
 #### How to open Mesh on Quest 2
@@ -109,20 +109,20 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 1. Select the **App library** button.
 
     ![the App library button on your Quest menu](media/meta-menu.png)
-
+   
 1. Find the **Microsoft Mesh (Preview)** app in the App library.
 
 1. Select to **Install** then **Open** the app by selecting it again.
 
 1. Complete the device login flow using the link below on your computer (*this requires a mobile phone for verification*): https://login.microsoftonline.com/common/oauth2/deviceauth
 
-    >[!Note]
+       >[!Note]
     >If the code doesn't work, quit the Microsoft Mesh app and restart it.
 
-    You'll see a window like this when the authentication is complete:
+       You'll see a window like this when the authentication is complete:
 
     ![A screenshot of the Mesh startup page as you verify the Quest device on your Microsoft webpage](media/mesh-startup-page.png)
-
+   
 1. Select to **Allow** any **Terms of service & Allow Diagnostic data**.
 
 1. Accept the **Terms of service & Allow Diagnostic data**.
@@ -143,9 +143,16 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 ### Why am I getting an error when accessing Mesh on Quest?
 
-Mesh on Quest currently doesn't support [Azure Active Directory Conditional Access](/appcenter/general/configuring-aad-conditional-access). If your organization applies Conditional Access policies for managed or unmanaged devices, then you won’t be able to access Mesh on Quest. If a user in your organization attempts to launch Mesh on Quest where conditional access policies are applied, they will receive errors [AADSTS50199](/entra/identity-platform/reference-error-codes) and [AADSTS53003](/entra/identity-platform/reference-error-codes).
+Mesh on Quest supports Conditional Access via the native authentication flow as of version 24.18. If a user in your organization attempts to launch Mesh on Quest for an unmanaged device where conditional access policies are applied, they will receive errors [AADSTS50199](/entra/identity-platform/reference-error-codes) and [AADSTS53003](/entra/identity-platform/reference-error-codes).  
+  
+It's possible Conditional Access policies applied to your work account (Entra ID) enforce the use of managed devices only.   
+The resolution will require an IT admin with at least Security administrator or Conditional Access administrator permissions in your tenant's Intune admin center. 
 
-If you would like to test Mesh on Quest, we recommend **either** deploying Mesh on a test tenant with test accounts where conditional access policies are not applied **or** work with your security IT Administration team to see if they are willing to make a policy exception for select Quest devices. Mesh expects to support conditional access in the future.
+- **If your organization applies Conditional Access policies for unmanaged devices:** You will need to ensure your Quest device fleet is managed through Quest for Business and an MDM provider. Once managed, [create a device-based Conditional Access policy](/mem/intune/protect/create-conditional-access-intune) to specify the conditions for signing in to applications on the Quest. 
+
+- **If your organization is willing to make an exception for using Quest and do NOT intend to use Quest for Business:** You will need to exclude the Quest device by [filtering for devices](/entra/identity/conditional-access/concept-condition-filters-for-devices) on a new or existing Conditional Access policy. 
+
+To exclude filtered devices like the Quest model and Meta manufacturer that are not registered in Entra ID, you can set up a Conditional Access policy using the __negative operator__. To apply a negative operator, reference [policy behavior with filter for devices](/entra/identity/conditional-access/concept-condition-filters-for-devices). If you were to use a positive operator, the filter rule would only apply when a device exists in the directory and the configured rule matches the attribute on the device.
 
 ### How can I manage Quest VR headsets for my organization?
 
@@ -205,7 +212,7 @@ You'll need to first reproduce the problem, and then follow the steps below to c
 1. Click the **?** help icon in the M365 header.
 
     ![A screenshot of the About Mesh dialog in the Mesh Portal](media/m365-about-mesh.png)
-
+   
 1. Click the **About Mesh** link in the **Other resources** section. You may need to scroll down to the bottom of the screen to see this option.
 1. Click the **Copy all** button.
 1. Share that data with [Microsoft support](https://admin.microsoft.com) (this support link may only be available to M365 admins).
@@ -260,7 +267,7 @@ Wired headphones work best for a full spatial audio experience where you will be
 1. Go to **Settings > Display & sound**. There you can select your audio devices.
 
     ![A screenshot of the Settings dialog](media/settings-display-sound-dialog.png)
-
+   
 For advanced audio settings, you can adjust:
 
 - *Environment volume:* You can adjust the loudness of the ambient sounds up or down.
