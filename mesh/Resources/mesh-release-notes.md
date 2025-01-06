@@ -61,7 +61,7 @@ The Mesh app on Quest has a new and improved native authentication flow. Upon op
 Mesh sign-in experience now supports multi-factor authentication via the Microsoft Authenticator app, allowing you to use your phone (instead of PC) for quicker and more secure sign-in. 
 
 > [!NOTE]
-> **Active Known Issue:** Users may encounter multiple prompts for entering their password when signing in to the Mesh app on Quest. To resolve this issue, we recommend uninstalling and reinstalling the application. After reinstallation, users will be prompted to enter their password only once during sign-in.
+> **Active known issue:** Users may encounter multiple prompts for entering their password when signing in to the Mesh app on Quest. To resolve this issue, we recommend uninstalling and reinstalling the application. After reinstallation, users will be prompted to enter their password only once during sign-in.
 
 ### Conditional Access policy support for native authentication on Quest
 
@@ -120,7 +120,7 @@ Microsoft Mesh app users on Meta Quest 2, 3, and Pro devices can now use their h
 
 - New and improved controls for positioning objects.
 
-![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Workshop-environment-2.png)
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Workshop-environment.png)
 
 - Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 
