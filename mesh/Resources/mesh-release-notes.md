@@ -60,6 +60,9 @@ The Mesh app on Quest has a new and improved native authentication flow. Upon op
 
 Mesh sign-in experience now supports multi-factor authentication via the Microsoft Authenticator app, allowing you to use your phone (instead of PC) for quicker and more secure sign-in. 
 
+> [!NOTE]
+> **Active Known Issue:** Users may encounter multiple prompts for entering their password when signing in to the Mesh app on Quest. To resolve this issue, we recommend uninstalling and reinstalling the application. After reinstallation, users will be prompted to enter their password only once during sign-in.
+
 ### Conditional Access policy support for native authentication on Quest
 
 For organizations with managed Quest device fleets using Quest for Business, the improved native authentication flow supports your organization's Conditional Access policies. This keeps devices secure and compliant for IT departments using Microsoft Intune Mobile Device Management (MDM) certificates on enrolled devices. 
