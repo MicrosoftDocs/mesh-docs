@@ -11,7 +11,13 @@ keywords: Microsoft Mesh, M365, Unity, API, release notes, reference, documentat
 
 # Active known issues - Mesh
 
-## Version 5.1414.X (October 7, 2024)
+## Version 5.2418.X (December 2, 2024)
+
+### Multiple password prompts in Mesh on Quest
+
+Users may receive multiple prompts for entering their password when signing in to Mesh app on Quest. To resolve this issue, we recommend uninstalling and re-installing the application. Once re-installed, users will be prompted for password once during sign-in. 
+
+## Version 5.2414.X (October 7, 2024)
 
 ### Audio distortion
 
