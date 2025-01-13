@@ -85,7 +85,7 @@ email.
 
     ![Log in with your Meta account confirmation page](media/mesh-meta-purchased.png)
    
-   ```
+      ```
    >[!Note]
    ```
    >You may need to restart your headset to ensure the app loads.
@@ -118,12 +118,12 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 1. Complete the device login flow using the link below on your computer (*this requires a mobile phone for verification*): https://login.microsoftonline.com/common/oauth2/deviceauth
 
-   ```
+      ```
    >[!Note]
    ```
    >If the code doesn't work, quit the Microsoft Mesh app and restart it.
 
-   ```
+      ```
    You'll see a window like this when the authentication is complete:
    ```
     ![A screenshot of the Mesh startup page as you verify the Quest device on your Microsoft webpage](media/mesh-startup-page.png)
@@ -271,7 +271,7 @@ To use your microphone with apps on Windows, you'll need to turn on some permiss
 
 1. Select __**Start**__ > __**Settings**__ > __**Privacy & security**__. Then look for __**Microphone**__ under __**App permissions**__ and make sure __**Microphone access**__ is turned on.
 
-Then, allow apps access to your microphone. In __**Microphone**__ settings, go to __**Let apps access your microphone**__ and make sure it's turned __**On**__.
+1. Then, allow apps access to your microphone. In __**Microphone**__ settings, go to __**Let apps access your microphone**__ and make sure it's turned __**On**__.
 
 1. Once you've allowed microphone access to your apps, you can change the settings for each app. In __**Microphone**__ settings, go to __**Choose which apps can access your microphone**__, and turn on **Mesh** and **Teams**. 
 
