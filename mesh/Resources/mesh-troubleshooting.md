@@ -85,8 +85,10 @@ email.
 
     ![Log in with your Meta account confirmation page](media/mesh-meta-purchased.png)
    
-       >[!Note]
-    >You may need to restart your headset to ensure the app loads.
+      ```
+   >[!Note]
+   ```
+   >You may need to restart your headset to ensure the app loads.
 
 ### How do I find my Meta ID?
 
@@ -116,11 +118,14 @@ Log in to Oculus in a web browser, go to **Profile**, and get your email.
 
 1. Complete the device login flow using the link below on your computer (*this requires a mobile phone for verification*): https://login.microsoftonline.com/common/oauth2/deviceauth
 
-       >[!Note]
-    >If the code doesn't work, quit the Microsoft Mesh app and restart it.
+      ```
+   >[!Note]
+   ```
+   >If the code doesn't work, quit the Microsoft Mesh app and restart it.
 
-       You'll see a window like this when the authentication is complete:
-
+      ```
+   You'll see a window like this when the authentication is complete:
+   ```
     ![A screenshot of the Mesh startup page as you verify the Quest device on your Microsoft webpage](media/mesh-startup-page.png)
    
 1. Select to **Allow** any **Terms of service & Allow Diagnostic data**.
@@ -238,7 +243,7 @@ Our goal is to use the latest technologies to their fullest to represent users' 
 
 Spatial audio works best with **wired headphones**.
 
-Using bluetooth headphones will not provide the most optimal spatial audio experience.
+Using Bluetooth headphones will not provide the most optimal spatial audio experience.
 
 #### Where do I access audio input/output settings?
 
@@ -256,7 +261,21 @@ For advanced audio settings, you can adjust:
 - Effects volume
 - Incoming Voices
 
-#### Does spatial audio work with bluetooth headphones? what about wired headphones? 
+### How do I turn on app permissions for my microphone? 
+
+Microphone permissions can prevent Mesh from capturing audio from a microphone, causing issues when communicating with others in an event. 
+
+![User's image](media/mesh-troubleshooting/image.png)
+
+To use your microphone with apps on Windows, you'll need to turn on some permissions in __**Privacy & security**__ settings. Here's how:
+
+1. Select __**Start**__ > __**Settings**__ > __**Privacy & security**__. Then look for __**Microphone**__ under __**App permissions**__ and make sure __**Microphone access**__ is turned on.
+
+1. Then, allow apps access to your microphone. In __**Microphone**__ settings, go to __**Let apps access your microphone**__ and make sure it's turned __**On**__.
+
+1. Once you've allowed microphone access to your apps, you can change the settings for each app. In __**Microphone**__ settings, go to __**Choose which apps can access your microphone**__, and turn on **Mesh** and **Teams**. 
+
+#### Does spatial audio work with Bluetooth headphones? what about wired headphones?
 
 Wired headphones work best for a full spatial audio experience where you will be able to detect audio distance (attenuation) and directionality.  When using a wireless or Bluetooth headphones, audio attenuation will be present but directionality will not be present.
 
@@ -280,7 +299,7 @@ Incoming Voices:* You can adjust the loudness of participant activity around you
 
 #### What do I do if I can't hear audio from other participants in immersive space in Mesh?
 
-This can be fixed by switching off the **Exclusive mode** for your bluetooth headphones. To turn off the **Exclusive mode** for your headphones, go to **Settings > System > Sound**.  Select **Advanced > More sound settings**.
+This can be fixed by switching off the **Exclusive mode** for your Bluetooth headphones. To turn off the **Exclusive mode** for your headphones, go to **Settings > System > Sound**.  Select **Advanced > More sound settings**.
 
 ![A screenshot of the System > Sound settings](media/system-sound.png)
 
@@ -288,7 +307,7 @@ In the **Sound** dialog box, select **Headset Earphone > Properties**.
 
 ![A screenshot of the Sound dialog](media/sound-properties.png)
 
-In **Headset Earphone Properties** dialogbox, select the **Advanced** tab. Uncheck **Allow applications to take exclusive control of this device**, and then click **Apply**.
+In **Headset Earphone Properties** dialog box, select the **Advanced** tab. Uncheck **Allow applications to take exclusive control of this device**, and then click **Apply**.
 
 ![A screenshot of the Headset Earphone Properties dialog](media/headset-properties.png)
 
