@@ -162,7 +162,7 @@ Share your screen or a specific window on your PC to all participants. Screensha
 :::image type="content" source="../media/mesh-event-producer-guide/Screenshare-single-room-2412.png" alt-text="Screenshot of single room event showing the Share button highlighted.":::
 
 > [!NOTE]
-> As with Microsoft Teams, an organizer will not see their active screen share. However, all non-sharing attendees will be able to see the screen share.
+> When sharing content with system audio on, the organizer will be heard in a non-spatialized or megaphoned manner. It is not currently possible to share content with audio without simultaneously being megaphoned.
 
 **How to screenshare:**
 
