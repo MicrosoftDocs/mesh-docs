@@ -84,7 +84,7 @@ How this works:
 - Mesh application on Quest currently doesn't support MAM, we recommend excluding Mesh from Android app protection policies configured in Intune. [Learn more here.](/mem/intune/apps/app-protection-policies"https://learn.microsoft.com/en-us/mem/intune/apps/app-protection-policies#app-protection-policies-for-iosipados-and-android-apps")
 
 > [!NOTE]
-> **Active known issue:** Organizations enforcing Conditional Access policies are prevented from signing in on Quest. Users will see an error "Set up your device to get access" and will not be able to sign in. We're currently working on a fix as of Janurary 2025. 
+> **Active known issue:** Organizations enforcing Conditional Access policies are prevented from signing in on Quest. Users will see an error "Set up your device to get access" and will not be able to sign in. We're currently working on a fix as of January 2025. 
 
 Learn more and get started with Quest for Business in the Meta for Work Help Center, [here](https://work.meta.com/help/258897560520071/?helpref=hc_fnav). For those getting started with Quest enrollment, check out the Microsoft Intune [enrollment guide](/mem/intune/fundamentals/deployment-guide-enrollment). Once enrolled and configured, create a [device-based Conditional Access policy](/mem/intune/protect/create-conditional-access-intune) to create sign-in conditions unique to your organization's device usage scenarios. 
 
