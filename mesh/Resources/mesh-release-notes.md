@@ -80,11 +80,11 @@ Additionally, note the following behaviors:
 
 Mesh app device and app management compatibility summary: 
 
-- **Personal Device without MDM/MAM** (Supported): If the Meta Quest device is a personal device and the user's organization does not apply Mobile Device Management (MDM) or Mobile Application Management (MAM) conditional access policies (either by not using the feature or by creating an exception in Intune), *users can sign in to Mesh*. 
+- **Personal Device without MDM/MAM** (supported): If the Meta Quest device is a personal device and the user's organization does not apply Mobile Device Management (MDM) or Mobile Application Management (MAM) conditional access policies (either by not using the feature or by creating an exception in Intune), *users can sign in to Mesh*. 
 
-- **Managed Device with MDM** (Supported): If the Meta Quest device is enrolled in Quest for Business and Intune (making it a managed device), and has MDM conditional access policies applied for enforcement, *users can sign in to Mesh*.
+- **Managed Device with MDM** (supported): If the Meta Quest device is enrolled in Quest for Business and Intune (making it a managed device), and has MDM conditional access policies applied for enforcement, *users can sign in to Mesh*.
 
-- **Device with App Protection Policies** (Not supported): If the Meta Quest device, whether personal or managed, has App Protection Policies applied, *users cannot sign in to Mesh.*
+- **Device with App Protection Policies for Mesh** (not supported): If the Meta Quest device, whether personal or managed, has App Protection Policies targeting the Mesh app, *users cannot sign in to Mesh.*
 
   - The Mesh application on Quest currently does not support MAM. Therefore, we recommend excluding Mesh from Android app protection policies configured in Intune. [Learn more here.](/mem/intune/apps/app-protection-policies%22https://learn.microsoft.com/en-us/mem/intune/apps/app-protection-policies#app-protection-policies-for-iosipados-and-android-apps%22)
   
