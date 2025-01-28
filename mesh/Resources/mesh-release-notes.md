@@ -78,7 +78,7 @@ Additionally, note the following behaviors:
 > [!NOTE]
 > **Active known issue:** Organizations enforcing Conditional Access policies are prevented from signing in on Quest. Users will see an error "Set up your device to get access" and will not be able to sign in. We're currently working on a fix as of January 2025. 
 
-Mesh app compatibility summary: 
+Mesh app device and app management compatibility summary: 
 
 - **Personal Device without MDM/MAM** (Supported): If the Meta Quest device is a personal device and the user's organization does not apply Mobile Device Management (MDM) or Mobile Application Management (MAM) conditional access policies (either by not using the feature or by creating an exception in Intune), *users can sign in to Mesh*. 
 
