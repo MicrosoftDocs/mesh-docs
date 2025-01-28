@@ -75,17 +75,19 @@ Additionally, note the following behaviors:
 
 - Only phone multi-factor authentication is supported right now. It's possible other methods lead to errors.
 
-How this works: 
-
-- If the Meta Quest is a personal device and the user's organization doesn't have MDM or MAM conditional access policies, users can log in.
-
-- If the Meta Quest is a managed corporate device enforced with MDM conditional access policies, users can sign in. 
-
-- Mesh application on Quest currently doesn't support MAM, we recommend excluding Mesh from Android app protection policies configured in Intune. [Learn more here.](/mem/intune/apps/app-protection-policies"https://learn.microsoft.com/en-us/mem/intune/apps/app-protection-policies#app-protection-policies-for-iosipados-and-android-apps")
-
 > [!NOTE]
 > **Active known issue:** Organizations enforcing Conditional Access policies are prevented from signing in on Quest. Users will see an error "Set up your device to get access" and will not be able to sign in. We're currently working on a fix as of January 2025. 
 
+Mesh app compatibility summary: 
+
+- **Personal Device without MDM/MAM** (Supported): If the Meta Quest device is a personal device and the user's organization does not apply Mobile Device Management (MDM) or Mobile Application Management (MAM) conditional access policies (either by not using the feature or by creating an exception in Intune), *users can sign in to Mesh*. 
+
+- **Managed Device with MDM** (Supported): If the Meta Quest device is enrolled in Quest for Business and Intune (making it a managed device), and has MDM conditional access policies applied for enforcement, *users can sign in to Mesh*.
+
+- **Device with App Protection Policies** (Not supported): If the Meta Quest device, whether personal or managed, has App Protection Policies applied, *users cannot sign in to Mesh.*
+
+  - The Mesh application on Quest currently does not support MAM. Therefore, we recommend excluding Mesh from Android app protection policies configured in Intune. [Learn more here.](/mem/intune/apps/app-protection-policies%22https://learn.microsoft.com/en-us/mem/intune/apps/app-protection-policies#app-protection-policies-for-iosipados-and-android-apps%22)
+  
 Learn more and get started with Quest for Business in the Meta for Work Help Center, [here](https://work.meta.com/help/258897560520071/?helpref=hc_fnav). For those getting started with Quest enrollment, check out the Microsoft Intune [enrollment guide](/mem/intune/fundamentals/deployment-guide-enrollment). Once enrolled and configured, create a [device-based Conditional Access policy](/mem/intune/protect/create-conditional-access-intune) to create sign-in conditions unique to your organization's device usage scenarios. 
 
 ## Resolved issues
@@ -131,7 +133,7 @@ Microsoft Mesh app users on Meta Quest 2, 3, and Pro devices can now use their h
 
 - New and improved controls for positioning objects.
 
-![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Workshop-environment.png)
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Workshop-environment-2.png)
 
 - Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 
