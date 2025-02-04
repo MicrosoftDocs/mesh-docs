@@ -13,7 +13,7 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 ## Introducing Microsoft Mesh
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1eO6Z]
+> [!VIDEO 36f71bda-5a75-43b8-a674-f566f00fadd8]
 
 We're reimagining the way employees come together with [Microsoft Mesh](https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh), powering several immersive experiences across the devices you use every day.
 
