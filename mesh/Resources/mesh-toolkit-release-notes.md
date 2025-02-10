@@ -28,7 +28,7 @@ For purposes of this document, there are two categories of users:
 
 ### What's new
 
-* Service updates
+* Minor fixes and improvements
 
 ## Mesh Toolkit 5.2413.X
 
