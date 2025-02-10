@@ -23,10 +23,14 @@ For purposes of this document, there are two categories of users:
 >[!Note]
 >The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load.
 
-| Mesh offering/package      | Version  | Date released |
-|----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2413.X | 2024-09-24     |
-| Mesh on PC/Quest           | 5.2413.X | 2024-09-24     |
+
+## Mesh Toolkit 5.2414.X
+
+### What's new
+
+### Mesh Toolkit uploader
+
+* Service updates
 
 ## Mesh Toolkit 5.2413.X
 
@@ -766,7 +770,7 @@ Here's what to do for UnityEvent in a `SignalReceiver` as the starting point:
 
 1. Target the `ScriptMachine` you've created for the visual script.
 
-    1. For the function to call, select `ScriptMachine > TriggerUnityEvent (string)`.
+1. For the function to call, select `ScriptMachine > TriggerUnityEvent (string)`.
     1. In the parameter field, enter the name of the UnityEvent trigger (for example, `DoThing`).
 
     ![Dialog box for ](media/signal-receiver-box.png)
