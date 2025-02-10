@@ -28,8 +28,6 @@ For purposes of this document, there are two categories of users:
 
 ### What's new
 
-### Mesh Toolkit uploader
-
 * Service updates
 
 ## Mesh Toolkit 5.2413.X
