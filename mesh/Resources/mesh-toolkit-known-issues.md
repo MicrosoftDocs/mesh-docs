@@ -2,56 +2,16 @@
 title: Known issues for Mesh toolkit
 description: Mesh toolkit active known issues
 ms.service: mesh
-author: typride 
-ms.author: tmilligan
-ms.date: 9/24/2024
+author: jbrentj 
+ms.author: jejacks
+ms.date: 02/10/2025
 ms.topic: release-notes
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
 
-# Active known issues - Mesh toolkit
+# Known issues - Mesh toolkit
 
-## Version 5.2405.X
-
-### Visual Scripting
-
-* An Emulator-only issue with Visual Scripting late-join in very large scenes if visual scripts were using script variables to pass `Transform` or `GameObject` references into script graphs. When this issue occurred, warnings-level messages with the following wording were logged to the console: "OnMessageReceived: Received message with correct class ID 1 but data size in packet expecting total with a packet of 1988, index does not look correct." (52729)
-
-* "Failed to deserialize scriptable object" errors in Emulator that are logged to the Unity console under certain circumstances. (47673)
-
-* An update to a shared property (or variable) applied by a visual script could sometimes be lost due to an earlier update of the same property (or variable) returning from its roundtrip through the server at an inopportune time. (51820)
-
-## Version 5.2402.0
-
-* On public toolkit controllables there was a "Name" property that was not correctly being resolved to the internal field of "Display Name" (it was being mitigated by using the GameObject name directly). This has been fixed in 24.3, however, it will require setting the property on the new DisplayName field on the controllable and reupload with the new Toolkit. (42638)
-
-* The **Align Field | Set Enabled** and **Align Field | Get Enabled** visual script nodes are directly available for use again.
-
-    Workaround: **Use Behaviour | Set Enabled** or **Behaviour | Get Enabled** instead.
-
-### Webslate
-
-* On Quest, the system webview was about two years behind and causes some websites to show an Unsupported browser message. Weve worked with Meta to update Chromium to a more recent version and is now available in Meta Quest's v64 software update.
-
-## Version 5.2315.0
-
-* The embedded videos show as black on Quest 2. (24096)
-
-    *Workaround:*  If you run into an issue where videos display and behave as expected on PC but not on Quest, add the video script to the video player.
-
-### Events
-
-* You may not able to access **host tools** in an event template or customization session. Here are the steps to reproduce this issue: (33738)
-
-    * Open your project in the Unity editor;
-
-    * Join a customization session or event template;
-
-    * You'll find no **host tools** available;
-
-    * Add a screenshare, and you won't be able to access **host tools* to start the screenshare for validation.
-
-### WebSlate
+### WebSlate known limitations
 
 * On Quest, the system webview is about two years behind and causes some websites to show an *Unsupported browser* message. We're working with Meta to update Chromium to a more recent version. (28696)
 
@@ -70,7 +30,7 @@ keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ## Cloud Scripting known limitations
 
 ### Azure Login Expired
-Some users are experiencing an error during deploy and publish that shows the a similar log output to the following: `The client 'YOUR_USER_EMAIL' with object id 'YOUR_AAD_ID' does not have authorization to perform action 'Microsoft.Resources/deployments/write' over scope ...` This occurs when the locally cached login as expired. The expiration can be checked by running `az account get-access-token --query "expiresOn" --output tsv` in command line. As a workaround, manually run `az login` from the command line.
+Some users are experiencing an error during deploy and publish that shows a similar log output to the following: `The client 'YOUR_USER_EMAIL' with object id 'YOUR_AAD_ID' does not have authorization to perform action 'Microsoft.Resources/deployments/write' over scope ...` This occurs when the locally cached login as expired. The expiration can be checked by running `az account get-access-token --query "expiresOn" --output tsv` in command line. As a workaround, manually run `az login` from the command line.
 
 ### The performance of deployed apps with high frequency messages is sub optimal
 
@@ -84,7 +44,7 @@ If you switch the focus from Unity to another app while Unity is playing, the Me
 
 Changing floor or any platform game object's layer to 'GroundCollision' is sufficient.
 
-#### Adding multiple lights as children of the same transform  will cause an error
+#### Adding multiple lights as children of the same transform will cause an error
 
 Unity doesn't support adding multiple lights to the same game object, so adding two light nodes to the same transform node will cause a runtime error.
 
