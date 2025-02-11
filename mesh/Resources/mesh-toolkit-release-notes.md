@@ -2,9 +2,9 @@
 title: Release notes for Mesh toolkit
 description: Release notes for the Microsoft Mesh Toolkit with a list of important updates and a list of the Microsoft Mesh Toolkit versions.
 ms.service: mesh
-author: typride    
-ms.author: tmilligan
-ms.date: 09/12/2024
+author: jbrentj    
+ms.author: jejacks
+ms.date: 02/10/2025
 ms.topic: release-notes
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
@@ -20,13 +20,14 @@ For purposes of this document, there are two categories of users:
 
 > [!IMPORTANT]
 > Mesh Toolkit versions older than 5.2406 have being deprecated. We recommend upgrading to the newest version of the Mesh Toolkit.
->[!Note]
->The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load.
 
-| Mesh offering/package      | Version  | Date released |
-|----------------------------|----------|---------------|
-| Mesh toolkit               | 5.2413.X | 2024-09-24     |
-| Mesh on PC/Quest           | 5.2413.X | 2024-09-24     |
+
+
+## Mesh Toolkit 5.2414.X
+
+### What's new
+
+* This release contains minor fixes and improvements.
 
 ## Mesh Toolkit 5.2413.X
 
@@ -766,7 +767,7 @@ Here's what to do for UnityEvent in a `SignalReceiver` as the starting point:
 
 1. Target the `ScriptMachine` you've created for the visual script.
 
-    1. For the function to call, select `ScriptMachine > TriggerUnityEvent (string)`.
+1. For the function to call, select `ScriptMachine > TriggerUnityEvent (string)`.
     1. In the parameter field, enter the name of the UnityEvent trigger (for example, `DoThing`).
 
     ![Dialog box for ](media/signal-receiver-box.png)
