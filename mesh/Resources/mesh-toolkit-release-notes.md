@@ -2,9 +2,9 @@
 title: Release notes for Mesh toolkit
 description: Release notes for the Microsoft Mesh Toolkit with a list of important updates and a list of the Microsoft Mesh Toolkit versions.
 ms.service: mesh
-author: typride    
-ms.author: tmilligan
-ms.date: 09/12/2024
+author: jbrentj    
+ms.author: jejacks
+ms.date: 02/10/2025
 ms.topic: release-notes
 keywords: Microsoft Mesh, Mesh toolkit, Mesh Developer
 ---
@@ -20,15 +20,14 @@ For purposes of this document, there are two categories of users:
 
 > [!IMPORTANT]
 > Mesh Toolkit versions older than 5.2406 have being deprecated. We recommend upgrading to the newest version of the Mesh Toolkit.
->[!Note]
->The version number for your environment project's Mesh toolkit package **must** be equal to or older than the Mesh app (PC or Quest) your environment is targeting, otherwise the environment will not load.
+
 
 
 ## Mesh Toolkit 5.2414.X
 
 ### What's new
 
-* Minor fixes and improvements
+* This release contains minor fixes and improvements.
 
 ## Mesh Toolkit 5.2413.X
 
