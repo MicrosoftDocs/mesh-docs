@@ -17,6 +17,7 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+|2025|February 11 |5.2502.XX|
 |2025|January 27|5.2501.XX|
 |2024|December 10|5.2419.XX|
 | 2024|December 02 (PC) & December 10 (Quest)|5.2418.XX|
@@ -38,6 +39,12 @@ Microsoft Mesh application
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2502.XX
+
+### What's new
+
+This release contains minor fixes and improvements to Mesh.
 
 ## Version 5.2501.XX
 
@@ -142,7 +149,7 @@ Microsoft Mesh app users on Meta Quest 2, 3, and Pro devices can now use their h
 
 - New and improved controls for positioning objects.
 
-![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Workshop-environment.png)
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/People-panel-single-room-2412.png)
 
 - Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 
