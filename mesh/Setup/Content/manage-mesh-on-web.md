@@ -63,11 +63,11 @@ See how to create a collection to house your uploaded environments and any templ
     Learn more about [M365 group public and private settings](https://support.microsoft.com/en-us/office/make-microsoft-365-groups-public-or-private-c0a991b3-9c56-48b8-bf0f-05530f836b1b).
 
 1. Add **Owners**, and **Members**.
-    - **Owners**: Can change membership and settings for a collection.
+- **Owners**: Can change membership and settings for a collection.
     - **Members**: Can access and edit templates and upload environments in a collection.
 
-    :::image type="content" source="../../media/mesh-on-web/Enter-collection-owners-members.png" alt-text="Screenshot of Mesh on web showing Owners and members filled out.":::
-
+    Collections can contain users or distribution groups. Learn more about [types of groups in Microsoft 365.](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide):::image type="content" source="../../media/mesh-on-web/Enter-collection-owners-members.png" alt-text="Screenshot of Mesh on web showing Owners and members filled out.":::
+   
 1. Select **Create collection**.
 
 Now your Collection is created, you can now upload environments from the Mesh toolkit Uploader to your Collection and create events.
@@ -91,10 +91,10 @@ In the Environments tab, you can see custom environments that were uploaded, and
 
 Now that you've set up Microsoft Mesh, dive in to organize your first Mesh event:
 
-   > [!div class="nextstepaction"]
+> [!div class="nextstepaction"]
    > [Organize your event in the Mesh app](../../events-guide/events-overview.md)
 
 If you have skills using Unity, get started building your own custom environment for your new Collection:
 
-   > [!div class="nextstepaction"]
+> [!div class="nextstepaction"]
    > [Develop Mesh environments](../../develop/development-overview.md)
