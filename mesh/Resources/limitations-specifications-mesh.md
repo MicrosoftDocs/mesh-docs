@@ -17,6 +17,7 @@ keywords: Microsoft Mesh, limitations, specifications, platform support, maximum
 |----------------------------------------------------------------|------------------------------|
 | Platform availability for immersive spaces (3D) view in Teams  | PC, Mac, Meta Quest headsets |
 | Max number of attendees that can join the meeting in immersive | 16                           |
+|Microsoft Whiteboard in Immersive spaces in Teams|Whiteboard is not supported|
 | Minimum hardware requirements to see immersive spaces (3D) in view picker in Teams | 4-core CPU & 8 GB RAM                           |
 
 
@@ -32,4 +33,5 @@ keywords: Microsoft Mesh, limitations, specifications, platform support, maximum
 | Max number of broadcasters in a multi room event                                              | 5                                                                                                          |
 | Max event duration for a multi room event                                                     | 3 hours                                                                                                    |
 | Max number of attendees across all concurrent events using cloud scripting in a single tenant | 800                                                                                                        |
+|Microsoft Whiteboard in Mesh experiences|Whiteboard is not supported|
 | Performance guidelines and thresholds for developers                                          | See [Performance guidelines for Mesh](../develop/debug-and-optimize-performance/performance-guidelines.md) |
