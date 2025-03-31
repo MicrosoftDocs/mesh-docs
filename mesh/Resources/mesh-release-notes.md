@@ -17,6 +17,7 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+|2025|March 31|5.2505.XX|
 |2025|March 14|5.2504.XX|
 |2025|February 28|5.2503.XX|
 |2025|February 11 |5.2502.XX|
@@ -41,6 +42,12 @@ Microsoft Mesh application
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2505.XX
+
+### What's new
+
+Meta Quest devices enrolled with Horizon Managed Services (formerly Quest for Business) can now sign in to Mesh while respecting device-level Conditional Access policies. This enables users to successfully authenticate into Mesh application on Quest in Mobile Device Management (MDM) scenarios. Mesh currently does not support Mobile Application Management (MAM). 
 
 ## Version 5.2504.XX
 
@@ -90,9 +97,6 @@ The Mesh app on Quest has a new and improved native authentication flow. Upon op
 
 Mesh sign-in experience now supports multi-factor authentication via the Microsoft Authenticator app, allowing you to use your phone (instead of PC) for quicker and more secure sign-in. 
 
-> [!NOTE]
-> **Active known issue:** Users may encounter multiple prompts for entering their password when signing in to the Mesh app on Quest. To resolve this issue, we recommend uninstalling and reinstalling the application. After reinstallation, users will be prompted to enter their password only once during sign-in.
-
 ### Conditional Access policy support for native authentication on Quest
 
 For organizations with managed Quest device fleets using Quest for Business, the improved native authentication flow supports your organization's Conditional Access policies. This keeps devices secure and compliant for IT admins using Microsoft Intune Mobile Device Management (MDM) for enrolled devices. 
@@ -106,7 +110,7 @@ Additionally, note the following behaviors:
 - Only phone multi-factor authentication is supported right now. It's possible other methods lead to errors.
 
 > [!NOTE]
-> **Active known issue:** Organizations enforcing Conditional Access policies are prevented from signing in on Quest. Users will see an error "Set up your device to get access" and will not be able to sign in. We're currently working on a fix as of January 2025. 
+> **Previous known Issue (resolved in version 5.2505.XX)****:** Organizations enforcing Conditional Access policies are prevented from signing in on Quest. Users will see an error "Set up your device to get access" and will not be able to sign in. We're currently working on a fix as of January 2025. 
 
 Mesh app device and app management compatibility summary: 
 
@@ -163,7 +167,7 @@ Microsoft Mesh app users on Meta Quest 2, 3, and Pro devices can now use their h
 
 - New and improved controls for positioning objects.
 
-![Image of an Object showing manipulator controls for position, rotation, and scale.](media/People-panel-single-room-2412.png)
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Workshop-environment-2.png)
 
 - Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 
