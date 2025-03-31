@@ -210,16 +210,13 @@ As with all Microsoft products, allowing the endpoints and ports required for Me
 
 > [!NOTE]
 > Conditional Access policies should be modified only by someone in your organization with a clear understanding of the implications of the changes. Consult your security team or other expert in your company security policies before making any changes.
-> > Mesh does not currently support Mobile Application Management (MAM) which would be needed in situations where your organization supports the use of Personal Quest devices (BYOD). As of version 24.18, Mesh now supports conditional access policies through the new and improved native authentication flow on Quest. 
-
-> [!WARNING]
-> **Active known issue:** Organizations enforcing Conditional Access policies are prevented from signing in on Quest. Users will see an error "Set up your device to get access" and will not be able to sign in. We're currently working on a fix as of January 2025.
+> > Mesh does not currently support Mobile Application Management (MAM) which would be needed in situations where your organization supports the use of Personal Quest devices (BYOD). As of version 5.2505, Mesh now supports device-level conditional access policies through the new and improved native authentication flow on Quest. 
 
 Conditional access is a crucial component of a zero-trust strategy for securing your network and resources. Many companies implement conditional access policies using Microsoft Entra and Microsoft Intune to control which devices are permitted to access company resources. These policies can restrict access based on device types, operating system versions, and configurations. Only devices that meet the specified criteria are granted access; all others are denied.
 
-With native authentication support for Mesh on Quest, organizations can implement managed devices with Quest for Business and use Intune to manage device profiles, conditional access policies, and more. 
+With native authentication support for Mesh on Quest, organizations can implement managed devices with Meta Horizon managed services (formerly Quest for Business) and use Intune to manage device profiles, conditional access policies, and more. 
 
-Each company using Mesh will have to work with their security and endpoint management teams to decide the following: Do we need to have a managed Quest device fleet? Doing so can ensure compliance with corporate policies and will require the following: 
+Each company using Mesh on Quest will have to work with their security and endpoint management teams to properly configure Quest devices for secure use in their enterprise, in accordance with their security and compliance policies. It is recommended that organizations centrally manage their Meta Quest device fleet via Intune (as MDM provider) and Entra (as Identity provider) in order to ensure a secure and compliant experience for end users.  
 
 - **If the organization chooses to have managed Quest devices:** You will need to ensure your Quest device fleet is managed through Quest for Business and an MDM provider. 
 
