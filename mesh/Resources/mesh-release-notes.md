@@ -47,7 +47,7 @@ Microsoft Mesh application
 
 ### What's new
 
-Users with Meta Quest devices enrolled in Horizon Managed Services (previously known as Quest for Business) can now sign in to Mesh while adhering to device-level Conditional Access policies. This allows users to securely authenticate into the Mesh application on Quest within Mobile Device Management (MDM) environments. Please note that Mesh does not currently support Mobile Application Management (MAM).
+Users with Meta Quest devices enrolled in Horizon Managed Services (previously known as Quest for Business) can now sign in to Mesh while adhering to device-level Conditional Access policies. This allows users to securely authenticate into the Mesh application on Quest within Mobile Device Management (MDM) environments. Note that Mesh does not currently support Mobile Application Management (MAM).
 
 ## Version 5.2504.XX
 
