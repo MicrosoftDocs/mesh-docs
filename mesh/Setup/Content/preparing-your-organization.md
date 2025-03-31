@@ -210,32 +210,34 @@ As with all Microsoft products, allowing the endpoints and ports required for Me
 
 > [!NOTE]
 > Conditional Access policies should be modified only by someone in your organization with a clear understanding of the implications of the changes. Consult your security team or other expert in your company security policies before making any changes.
-> > Mesh does not currently support Mobile Application Management (MAM) which would be needed in situations where your organization supports the use of Personal Quest devices (BYOD). As of version 24.18, Mesh now supports conditional access policies through the new and improved native authentication flow on Quest. 
-
-> [!WARNING]
-> **Active known issue:** Organizations enforcing Conditional Access policies are prevented from signing in on Quest. Users will see an error "Set up your device to get access" and will not be able to sign in. We're currently working on a fix as of January 2025.
+> > Mesh does not currently support Mobile Application Management (MAM) which would be needed in situations where your organization supports the use of Personal Quest devices (BYOD). As of version 5.2505, Mesh now supports device-level conditional access policies through the new and improved native authentication flow on Quest. 
 
 Conditional access is a crucial component of a zero-trust strategy for securing your network and resources. Many companies implement conditional access policies using Microsoft Entra and Microsoft Intune to control which devices are permitted to access company resources. These policies can restrict access based on device types, operating system versions, and configurations. Only devices that meet the specified criteria are granted access; all others are denied.
 
-With native authentication support for Mesh on Quest, organizations can implement managed devices with Quest for Business and use Intune to manage device profiles, conditional access policies, and more. 
+With native authentication support for Mesh on Quest, organizations can implement managed devices with Meta Horizon managed services (formerly Quest for Business) and use Intune to manage device profiles, conditional access policies, and more. 
 
-Each company using Mesh will have to work with their security and endpoint management teams to decide the following: Do we need to have a managed Quest device fleet? Doing so can ensure compliance with corporate policies and will require the following: 
+Each company using Mesh on Quest will have to work with their security and endpoint management teams to properly configure Quest devices for secure use in their enterprise, in accordance with their security and compliance policies. It is recommended that organizations centrally manage their Meta Quest device fleet via Intune (as MDM provider) and Entra (as Identity provider) in order to ensure a secure and compliant experience for end users.  
 
-- **If the organization chooses to have managed Quest devices:** You will need to ensure your Quest device fleet is managed through Quest for Business and an MDM provider. 
+- **If the organization chooses to have managed Quest devices:** You will need to ensure your Quest device fleet is managed through Horizon managed services (formerly Quest for Business), an MDM provider (i.e. Intune), and an identity provider (i.e. Entra). 
 
-  - Learn more and get started with Quest for Business in the Meta for Work Help Center, [here](https://work.meta.com/help/258897560520071/?helpref=hc_fnav). 
+  - Learn more and get started with Horizon managed services in the Meta for Work Help Center, [here](https://work.meta.com/help/258897560520071/?helpref=hc_fnav). 
     
   - For those getting started with Quest enrollment, check out the Microsoft Intune [enrollment guide](/mem/intune/fundamentals/deployment-guide-enrollment). 
     
   - Once enrolled and configured, create a [device-based Conditional Access policy](/mem/intune/protect/create-conditional-access-intune) to create sign-in conditions unique to your organization's device usage scenarios. App protection policies (MAM) is not currently supported.
     
+    > [!NOTE]
+    > As of Mesh version 5.2505, device-level CAPs are supported. Organizations must exclude App Protection policies targeting Mesh, Graph, and SharePoint for the Quest device to enable successful user sign in. Organizations enforcing Phishing-Resistant MFA (PRMFA) must also exclude the PRMFA requirement to ensure successful user sign-in to the Mesh application.   
+    >   
+    > Improvements to this flow, including the reduction of exclusions for MAM and PRMFA, are actively being investigated by the Mesh team. 
+    
 - **If the organization wants to make an exception for Quest:** Create a Conditional Access policy that is acceptable to the company's risk profile while still permitting access to Quest devices. To do so, IT admins must configure the following MDM and MAM exclusions in Intune Admin Center: 
 
-  - **Exclude the Quest device by [filtering for devices](/entra/identity/conditional-access/concept-condition-filters-for-devices) on a new or existing Conditional Access policy.** To exclude filtered devices like the Quest model and Meta manufacturer that are not registered in Entra ID, you can set up a Conditional Access policy using the negative operator. To apply a negative operator, reference [policy behavior with filter for devices](/entra/identity/conditional-access/concept-condition-filters-for-devices). If you were to use a positive operator, the filter rule would only apply when a device exists in the directory and the configured rule matches the attribute on the device.
-  
-  - **Exclude the Mesh application from new or existing [Android app protection policies ](/mem/intune/apps/app-protection-policies)**
-  
-Both options will enable the use of Mesh. However, it's recommended that organizations manage their Quest devices to ensure security and compliance. If neither action is taken and a user in your organization attempts to launch Mesh on Quest for an unmanaged device where conditional access policies are applied, they will receive errors [AADSTS50199](/entra/identity-platform/reference-error-codes) and/or [AADSTS53003](/entra/identity-platform/reference-error-codes).  
+  - **Exclude the Quest device by [filtering for devices](/entra/identity/conditional-access/concept-condition-filters-for-devices) on a new or existing Conditional Access policy.** To exclude filtered devices like the Quest model and Meta manufacturer that are not registered in Entra ID, you can set up a Conditional Access policy. To create a device exclusion, reference [policy behavior with filter for devices](/entra/identity/conditional-access/concept-condition-filters-for-devices). 
+    
+  - **Exclude the Mesh application from new or existing [Android app protection policies](/mem/intune/apps/app-protection-policies).**
+    
+Both options will enable the use of Mesh. However, as stated above, it's recommended that organizations manage their Quest devices to ensure security and compliance. If neither action is taken and a user in your organization attempts to launch Mesh on Quest for an unmanaged device where conditional access policies are applied, they will receive sign-in errors (examples include [AADSTS50199](/entra/identity-platform/reference-error-codes) and/or [AADSTS53003](/entra/identity-platform/reference-error-codes)).
 
 For more information about Conditional Access, see:
 
