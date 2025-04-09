@@ -19,9 +19,20 @@ For purposes of this document, there are two categories of users:
 ## Version list and dates
 
 > [!IMPORTANT]
-> Mesh Toolkit versions older than 5.2406 have being deprecated. We recommend upgrading to the newest version of the Mesh Toolkit.
+> Mesh Toolkit versions older than 5.2414.143 have been deprecated. We recommend upgrading to the newest version of the Mesh Toolkit.
 
+## Mesh Toolkit 5.2414.143
 
+### What's new
+
+Cloud scripting projects now require .NET 8. Previous versions of .NET are no longer supported. See [https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) for more details on the .NET lifecycle.
+
+Attempts to test or publish a project that depends on an older version of .NET will fail. To update, select the Mesh Cloud Scripting component in Unity and click "Open application folder" to locate the cloud scripting project. It can be found under `Assets\.MeshCloudScripting\<Project Name>`. Open the csproj file in a text editor and modify the `TargetFramework` element to read: `<TargetFramework>net8.0</TargetFramework>`.
+
+This change can also be made in Visual Studio. After opening the cloud scripting project, select its project properties and, under Application | General, modify Target framework to .NET 8.0.
+
+> [!WARNING]
+> Updating an existing environment using this version of the toolkit will remove unsupported .NET versions from the service deployment. If an event is active and is using an older version of your environment that relies on .NET 6 or 7, that event may be disrupted. It is recommended to perform this first update at a time when no events are active, or to publish a new environment for use in future events.
 
 ## Mesh Toolkit 5.2414.X
 
