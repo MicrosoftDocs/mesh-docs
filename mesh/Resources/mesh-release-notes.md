@@ -49,6 +49,10 @@ Microsoft Mesh application
 
 Users with Meta Quest devices enrolled in Horizon Managed Services (previously known as Quest for Business) can now sign in to Mesh while adhering to device-level Conditional Access policies. This allows users to securely authenticate into the Mesh application on Quest within Mobile Device Management (MDM) environments. Note that Mesh does not currently support Mobile Application Management (MAM).
 
+### Resolved issues
+
+Meta Quest v74 can now load the Mesh application successfully. Versions before v74 are unaffected.
+
 ## Version 5.2504.XX
 
 ### What's new
@@ -167,7 +171,7 @@ Microsoft Mesh app users on Meta Quest 2, 3, and Pro devices can now use their h
 
 - New and improved controls for positioning objects.
 
-![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Workshop-environment-2.png)
+![Image of an Object showing manipulator controls for position, rotation, and scale.](media/Workshop-environment.png)
 
 - Mesh in Quest now has a walk vignette option, a feature to help avoid motion sickness. This feature works by gradually darkening the edges of the user’s field of view when they move in the virtual environment. By reducing the peripheral vision, it minimizes the sensory conflict between what the eyes see and what the inner ear senses, which is a common cause of motion sickness.
 
