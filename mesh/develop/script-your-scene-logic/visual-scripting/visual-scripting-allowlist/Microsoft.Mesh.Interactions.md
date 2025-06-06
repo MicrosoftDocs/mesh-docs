@@ -1,11 +1,11 @@
-﻿---
+---
 title: Microsoft.Mesh.Interactions
 description: Microsoft.Mesh.Interactions allowlist for Visual Scripting in Mesh.
 ms.service: mesh
 author: vtieto
 ms.author: vinnietieto
 ms.date: 10/14/2024
-ms.topic: managed-reference
+ms.topic: reference
 keywords: Microsoft Mesh, scripting, visual scripting, nodes, allowlist
 ---
 
