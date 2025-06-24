@@ -17,6 +17,11 @@ Microsoft Mesh application
 
 | Release year | Release date | Mesh version |
 |--------------|--------------|--------------|
+|2025|June 20|5.2512.XX|
+|2025|June 6|5.2511.XX|
+|2025|May 23|5.2510.XX|
+|2025|May 9|5.2509.XX|
+|2025|April 25|5.2506.XX-5.2508.XX|
 |2025|March 31|5.2505.XX|
 |2025|March 14|5.2504.XX|
 |2025|February 28|5.2503.XX|
@@ -42,6 +47,30 @@ Microsoft Mesh application
 | 2024         | March 11     | 5.2402.XX    |
 
 **Release notes for Microsoft Mesh on PC & Quest 2**
+
+## Version 5.2511.XX - 5.2512.XX
+
+### What's new
+
+This release contains minor fixes and improvements to Mesh.
+
+## Version 5.2510.XX 
+
+### What's new
+
+This release contains minor fixes and improvements to Mesh.
+
+## Version 5.2509.XX
+
+### What's new
+
+This release contains minor fixes and improvements to Mesh.
+
+## Version 5.2506.XX - 5.2508.XX
+
+### What's new
+
+This release contains minor fixes and improvements to Mesh.
 
 ## Version 5.2505.XX
 
