@@ -21,12 +21,6 @@ items:
       href: mesh-release-notes.md
     - name: Known issues
       href: mesh-known-issues.md
-  - name: Mesh Toolkit release notes
-    items:
-    - name: What's new
-      href: mesh-toolkit-release-notes.md 
-    - name: Known issues
-      href: mesh-toolkit-known-issues.md
   - name: Troubleshooting & FAQ
     href: mesh-troubleshooting.md
   - name: Feedback and support

@@ -11,7 +11,7 @@ keywords: Microsoft Mesh, Web content, Web, webslate, URL, video, streaming vide
 
 # Update WebSlate URLs during an event
 
-If you want to view and control web content in an event, your developer needs to have added one or more WebSlates to the environment the event is based on. These WebSlates will show up in the Control Panel for your event. If you aren't already familiar with WebSlates, we recommend that you review our [WebSlate overview article](../develop/enhance-your-environment/web-content/webcontent.md).
+If you want to view and control web content in an event, your developer needs to have added one or more WebSlates to the environment the event is based on. These WebSlates will show up in the Control Panel for your event. 
 
 Event Organizers can use the Control Panel to change the URL for a WebSlate during an event, as explained below.
 
@@ -85,8 +85,3 @@ Currently, WebSlate doesn’t offer SSO support for apps. For secure access cont
 - For Quest, users must manually input their credentials using the keyboard. There is no option for Account picker-based sign-in.  
  
 In the example below, the other attendee in the space sees their own account picker and doesn't see the same view. Once both users individually log in to the content, both will see the same webpage. Further navigation and scrolling won't be synced, but inputs will be synced if the web app supports this. 
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [WebSlate performance and security](../develop/enhance-your-environment/web-content/webslate-performance-and-security.md)

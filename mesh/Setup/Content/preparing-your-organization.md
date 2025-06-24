@@ -117,10 +117,6 @@ to want to log out of their main Teams account to log into a different
 account in a different tenant. A separate tenant is more practical for
 the Mesh app, where it's simpler to flip between accounts.
 
-Each tenant can have multiple Azure Storage subscriptions, but the Azure
-Storage subscription used for Mesh cloud scripting must be in the same EntraID as
-the users who will attend events and the developers who will upload and manage the scripts.
-
 ### Contact owners of supporting teams
 
 To complete the steps to get Mesh running, you will need to either
@@ -178,12 +174,6 @@ access to the Microsoft Store, you can use WinGet instead. For more information 
 Microsoft Intune, see:
 
 [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-microsoft)
-
-## Configure Azure for Cloud Scripting
-
-If your developers plan to build custom Mesh environments that will use [Mesh Cloud Scripting](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md), they will require an Azure subscription to which they can deploy their cloud scripting service. An Azure subscription is not required for environments that only use [Mesh Visual Scripting](../../develop/script-your-scene-logic/visual-scripting/visual-scripting-overview.md).
-
-For more details on the prerequisites for Mesh Cloud Scripting, see [Prepare for your first Mesh Cloud Scripting project](../../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-prepare-for-your-project.md).
 
 ## Work with your organization's security team
 

@@ -3,7 +3,7 @@
 
 
 		{
-			"source_path": "ignore",
+			"source_path": "ignore.md",
 			"redirect_url": "ignore",
 			"redirect_document_id": false,
 			"//": "COMMENT:",
@@ -79,12 +79,422 @@
 		},
 		{
 			"source_path": "mesh/develop/debug-and-optimize-performance/test-your-environment.md",
-			"redirect_url": "/mesh/develop/make-your-environment-available/test-your-environment",
+			"redirect_url": "/mesh/develop/test-your-environment",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "mesh/develop/debug-and-optimize-performance/webcontent.md",
-			"redirect_url": "/mesh/develop/debug-and-optimize-performance/webcontent/webcontent",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/avatar-and-object-interactions/create-avatar-spawn-and-travel-points.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/avatar-and-object-interactions/equippables-in-detail.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/avatar-and-object-interactions/how-the-wand-works.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactable-components-and-scripts.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactable-setup-types/basic-setup.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactable-setup-types/equippable-setup.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactable-setup-types/manipulable-setup.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactable-setup-types/throwable-setup.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactables.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/avatar-and-object-interactions/triggers-anchors-and-tethers.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/enhanced-features-overview.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/multi-room-sync.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/physics/mesh-physics-in-samples.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/physics/mesh-physics-overview.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/physics/mesh-physics-programmers-guide.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/physics/set-conditions.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/play-audio-in-mesh.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/toybox.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/web-content/add-a-webslate.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/web-content/test-your-webslate.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/web-content/webcontent.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/web-content/webslate-performance-and-security.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/web-content/webslates-and-mesh-scripting.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/choose-your-journey.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/mesh-101-tutorial/mesh-101-02-prepare-the-project.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/mesh-101-tutorial/mesh-101-03-visual-scripting.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/mesh-101-tutorial/mesh-101-04-physics.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/mesh-101-tutorial/mesh-101-05-make-environment-available.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/mesh-101-tutorial/mesh-101-06-test-your-environment.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/mesh-101-tutorial/mesh-101-07-create-an-event-and-invite-others.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/mesh-201-tutorial/mesh-201-01-overview-set-up-and-get-started.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/mesh-201-tutorial/mesh-201-02-webslate-1.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/mesh-201-tutorial/mesh-201-03-webslate-2.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/mesh-201-tutorial/mesh-201-04-webslate-3.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/mesh-201-tutorial/mesh-201-05-live-weather-data.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/mesh-201-tutorial/mesh-201-06-open-ai.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/prerequisites.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/samples/dart-room.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/samples/download-mesh-samples.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/samples/pavilion.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/samples/physics-effects-gallery.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/samples/samples-overview.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/getting-started/samples/science-building.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/make-your-environment-available/build-and-publish-your-environment.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/make-your-environment-available/publish-multiple-environments.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/make-your-environment-available/understanding-build-and-publish-results.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/animationevents.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/cloud-scripting/cloud-scripting-create-a-simple-project.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/cloud-scripting/cloud-scripting-prepare-for-your-project.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/cloud-scripting/cloud-scripting-programmers-guide.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/cloud-scripting/cloud-scripting-provide-details.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/cloud-scripting/cloud-scripting-troubleshooting.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/mesh-scripting-overview.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/unityevents.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/best-practices/visual-scripting-best-practices-debugging.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/best-practices/visual-scripting-best-practices-networking.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/best-practices/visual-scripting-best-practices-overview.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/best-practices/visual-scripting-best-practices-performance.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/types-and-node-options.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-allowlist/Microsoft.Mesh.Interactions.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-allowlist/Microsoft.Mesh.Physics.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-allowlist/README.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-allowlist/System.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-allowlist/Unity.TextMeshPro.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-allowlist/UnityEngine.Animation.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-allowlist/UnityEngine.Audio.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-allowlist/UnityEngine.Core.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-allowlist/UnityEngine.ParticleSystem.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-allowlist/UnityEngine.Physics.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-allowlist/UnityEngine.Timeline.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-allowlist/UnityEngine.UI.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-allowlist/UnityEngine.Video.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-node-reference.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-overview.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-programmers-guide.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/script-your-scene-logic/visual-scripting/visual-scripting-troubleshooting.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/develop/enhance-your-environment/test-your-environment.md",
+			"redirect_url": "/mesh/develop/test-your-environment",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/Resources/mesh-toolkit-known-issues.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/Resources/mesh-toolkit-release-notes.md",
+			"redirect_url": "/mesh/develop/development-overview",
 			"redirect_document_id": false
 		}
 	]

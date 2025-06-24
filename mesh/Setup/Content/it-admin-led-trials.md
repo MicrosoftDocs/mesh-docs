@@ -104,10 +104,6 @@ It's time to get started with Mesh! Start by [creating your first event](../../e
 
     :::image type="content" source="../../user-guide/media/Events-customization.gif" alt-text="Event customization gif":::
 
-- **Develop** 3D experiences for Mesh and explore samples with the Mesh toolkit available for Unity.
-
-    :::image type="content" source="../../media/get-started-developing-mesh/image040-unity-overview-hero.png#lightbox" alt-text="Overview image of Unity development environment for Mesh":::
-
 For more adoption and deployment resources, visit our Mesh Adoption page found at [Mesh Adoption - Home](https://aka.ms/MeshAdoptionPage)
 
 ## After the Trial

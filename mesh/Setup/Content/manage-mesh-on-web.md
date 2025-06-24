@@ -20,9 +20,6 @@ To provide context, Mesh on the web has the following pages:
 - **Home:** See upcoming events and access some useful articles.
 - **Events:** [Create or manage events](../../events-guide/create-event-mesh-portal.md) that are joined view the Microsoft Mesh application.
 - **Environments:** View and manage the environments that are available from Microsoft or view the environments and Templates that were uploaded to your collections.
-
-    Learn more about [how to create custom environments for Mesh](../../develop/development-overview.md).
-
 - **Collections:** View, manage, and [create collections](#create-a-collection) to hold custom environments and templates.
 
 ## Prerequisites
@@ -34,8 +31,6 @@ Learn more about [how to set up Mesh experiences in M365](setup-m365-mesh.md).
 ## Overview of Collections
 
 Collections are the home for your custom environments that are developed in Unity and uploaded using the Mesh toolkit uploader, as well as a place to review [Templates that you create](../../events-guide/create-template.md) to be reused in events.
-
-Before you can [upload custom environments](../../develop/make-your-environment-available/build-and-publish-your-environment.md) and [create templates](../../events-guide/create-template.md), you'll need to create a Collection to hold them.
 
 ## Create a Collection
 
@@ -93,8 +88,3 @@ Now that you've set up Microsoft Mesh, dive in to organize your first Mesh event
 
 > [!div class="nextstepaction"]
    > [Organize your event in the Mesh app](../../events-guide/events-overview.md)
-
-If you have skills using Unity, get started building your own custom environment for your new Collection:
-
-> [!div class="nextstepaction"]
-   > [Develop Mesh environments](../../develop/development-overview.md)
