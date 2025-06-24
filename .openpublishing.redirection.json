@@ -486,6 +486,16 @@
 			"source_path": "mesh/develop/enhance-your-environment/test-your-environment.md",
 			"redirect_url": "/mesh/develop/test-your-environment",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/Resources/mesh-toolkit-known-issues.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mesh/Resources/mesh-toolkit-release-notes.md",
+			"redirect_url": "/mesh/develop/development-overview",
+			"redirect_document_id": false
 		}
 	]
 	
