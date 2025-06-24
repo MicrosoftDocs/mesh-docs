@@ -335,7 +335,7 @@ This is likely a network setup issue with your organization. See [Work with your
 
 #### The space {0} does not currently support the {1} endpoint, try using another device.
 
-For supported devices to run Mesh, see [Download Mesh apps](/mesh/user-guide/getting-started#download-mesh-apps). Also see [Configure the Environment to build and publish](/mesh/develop/make-your-environment-available/build-and-publish-your-environment#configure-the-environment-for-build-and-publish).
+For supported devices to run Mesh, see [Download Mesh apps](/mesh/user-guide/getting-started#download-mesh-apps).
 
 #### Failed to get Teams meeting info from service. Or: Failed to find meeting.
 

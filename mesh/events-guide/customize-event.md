@@ -21,8 +21,6 @@ Along with [tools to interact with and manage attendees](produce-event.md#event-
 
 With the Control panel, you can control individual objects like playing a video when people enter the event, or execute a pre-planned sequence of actions like queuing a video, displaying images, and showing a Screenshare simultaneously.
 
-If you're using a custom environment or there are [**Controllable** objects in your environment that have been added through Unity](../develop/enhance-your-environment/multi-room-sync.md#controllables), these will also show up in the Control panel as well.
-
 ### Types of customizations
 
 * Add objects through the **Editor** like Screenshares, Images, Videos, or Text. Drag and resize these objects easily by selecting the objects and moving them around the environment.
@@ -145,10 +143,6 @@ Use the Editor to add content to your environment that can be controlled during 
     :::image type="content" source="../media/mesh-event-producer-guide/image-environment-editor-added-artifact.png" alt-text="Video player object shown in list of objects":::
 
     Note the **Edit**, **Duplicate**, and **Delete** buttons for the selected object.
-
-    > [!TIP]
-    >  Playable content can be added from the environment editor or from a Unity project that has been uploaded to a custom environment. Reference the [Choose your journey article](../develop/getting-started/choose-your-journey.md)
-    >     to get started with adding custom content.
 
 1. Now you can manipulate the object as you'd like. Select it with your cursor and then use the manipulation tool to adjust position, rotation, and scale.
 

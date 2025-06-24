@@ -34,4 +34,3 @@ keywords: Microsoft Mesh, limitations, specifications, platform support, maximum
 | Max event duration for a multi room event                                                     | 3 hours                                                                                                    |
 | Max number of attendees across all concurrent events using cloud scripting in a single tenant | 800                                                                                                        |
 |Microsoft Whiteboard in Mesh experiences|Whiteboard is not supported|
-| Performance guidelines and thresholds for developers                                          | See [Performance guidelines for Mesh](../develop/debug-and-optimize-performance/performance-guidelines.md) |

@@ -27,12 +27,6 @@ Without access to these, Mesh won't work properly for users in your organization
 
 #### Step 2: Enable attendee access to scripts and content over time
 
-##### Cloud scripting
-
-If you or your development team plans to use [Cloud scripting](../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-basic-concepts.md) to display dynamic and rich data in Mesh environments by interfacing with Azure, you'll need to allow traffic to the Azure resources that your enterprise hosts for cloud scripting.
-
-You can do this as new environments using cloud scripting are published by allowing traffic on TCP port 443 (HTTPS) to that environment's hosted app: `<app>.azurewebsites.net`.
-
 ##### Embedded content (WebSlate, video/image)
 
 The Mesh app enables dynamic content experiences leveraging the web and Azure. This empowers event organizers to place Video and Image Objects with a no-code event customization experience, and developers to add web interactivity with WebSlates.
@@ -49,9 +43,3 @@ Dynamically loaded, embedded content have unique requirements for immersive expe
 |---------|---------|
 |**WebSlate** <p><p> Embed interactive web content in Mesh environments or templates.     | **WebSlates** display web content using a client WebView on each attendee's device.  If their target URLs are blocked for an attendee in a browser, then they will also be blocked in Mesh. |
 | **Video & Image Objects** Embed videos and images into Mesh environments. | The Mesh app enables organizers to customize experiences for their Mesh Event by referencing image and video URLs. <p><p>If these URLs are blocked for an attendee in a browser, then they will also be blocked in Mesh. |
-
-> [!TIP]
-> In addition to firewall allow lists, WebSlates require that environment developers add the URL's domain to the Unity WebSlate component's allow list as well.
-> 
-> For more information about WebSlate security and allowlisting, see [WebSlate performance and security](../develop/enhance-your-environment/web-content/webslate-performance-and-security.md).
-
