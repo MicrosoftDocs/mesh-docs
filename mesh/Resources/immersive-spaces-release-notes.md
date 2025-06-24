@@ -206,7 +206,7 @@ The following product issues have been fixed for this release:
 
 ### What's new
 
-New interactions for [equippable objects](/mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactables#equippable-objects) in the Bean Bag Toss and Marshmallow social games and activities.
+New interactions for equippable objects in the Bean Bag Toss and Marshmallow social games and activities.
 
 #### For Bean Bag Toss on PC (in Teams)
 

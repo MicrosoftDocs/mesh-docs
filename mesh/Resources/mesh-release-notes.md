@@ -732,7 +732,7 @@ The following product issues have been fixed for this release:
 
     * Press **Space bar** to drop
 
-* [Equippable objects](/mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactables#equippable-objects) without any special interactions:
+* Equippable objects without any special interactions:
 
     * Press **Space bar** to drop
 
@@ -751,7 +751,7 @@ The following product issues have been fixed for this release:
 
 * When trying to throw an object by clicking on the object, the cursor no longer shows. (25542)
 
-* On Quest devices: to pick up an [equippable object](/mesh/develop/enhance-your-environment/avatar-and-object-interactions/interactables#equippable-objects), you can simply bring your hand close to the object and click the Grip button.  
+* On Quest devices: to pick up an equippable object, you can simply bring your hand close to the object and click the Grip button.  
 
     Previously, you need to point the controller ray at the object and click the **Grip** button. This feels very unnatural for interaction with objects that are near.  When you're very close to an object, it's hard to point your controller ray at it to interact. (24187)
 
