@@ -24,10 +24,6 @@ For Microsoft Mesh, you will need the following:
   > All Teams Premium prerequisite licenses include Sharepoint, OneDrive, and M365 Calendar.
     Learn more about [Teams for enterprise](https://www.microsoft.com/microsoft-teams/enterprise#pricing) and [Teams Premium trial license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams#can-i-experience-teams-premium-before-buying-licenses).
 
-- **(Optional) Unity license(s) and Azure subscription with storage** to develop custom immersive environments with the Mesh Toolkit and deploy Cloud Scripting for Mesh environments.
-
-  Learn more about [Mesh Cloud Scripting infrastructure and management](../develop/script-your-scene-logic/cloud-scripting/cloud-scripting-setup-infrastructure.md).
-
 #### Subscription requirements
 
 To use Microsoft Mesh, all users (including developers, event organizers, and event attendees/users) are required to have a M365 Office subscription with access to SharePoint, OneDrive, and M365 Calendar.

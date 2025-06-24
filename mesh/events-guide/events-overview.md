@@ -36,8 +36,6 @@ Create the event in Mesh on the Web, customize it in the Microsoft Mesh app, cre
 
 - **Templates:** Save any customization you make in an environment for a Template to be reused in future events.
 
-- **Custom environments:** Create custom interactive experiences in Unity with the Mesh toolkit, designing and developing environments that best suit your business needs.
-
 ## Event flow
 
 Events in Mesh should be familiar to most organizations that work with Microsoft Teams with the added step of customization. So, Create, customize, and host:
@@ -69,10 +67,6 @@ The power of Mesh really becomes clear when you customize your event by adding o
 
 > [!div class="nextstepaction"]
 > [Customize your event](customize-event.md)
-
-#### Custom environments and objects
-
-In addition to the default environments that are customizable with objects, you can leverage Unity and the Mesh toolkit to create custom environments and rich content that can be used in event experiences. To learn more about creating custom environments and objects, see the [Choose your journey](../develop/getting-started/choose-your-journey.md) developer docs to get started.
 
 ### Create your Template
 

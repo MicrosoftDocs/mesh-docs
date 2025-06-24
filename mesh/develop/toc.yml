@@ -1,19 +1,7 @@
 items:
   - name: Overview
     href: development-overview.md
-  - name: Getting started
-    href: getting-started/toc.yml
-  - name: Build your basic environment
-    href: build-your-basic-environment/toc.yml
-  - name: Design your environment
-    href: design/toc.yml
-  - name: Enhance your environment
-    href: enhance-your-environment/toc.yml
-  - name: Script your scene logic
-    href: script-your-scene-logic/toc.yml
-  - name: Debug and optimize performance
-    href: debug-and-optimize-performance/toc.yml
-  - name: Make your environment available in Mesh
-    href: make-your-environment-available/toc.yml
+  - name: Test Your Environment
+    href: test-your-environment.md
   - name: Mesh Early Adopters
     href: mesh-tap-participants.md

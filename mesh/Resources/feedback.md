@@ -21,12 +21,6 @@ For product feedback, use the **Feedback** button inside your Mesh experience. T
 
 ![A screenshot of the Feedback menu in Mesh](media/feedback-dialog.png)
 
-## Developer feedback for Mesh
-
-For feedback on the development experience, once you've [downloaded the Mesh toolkit](../develop/build-your-basic-environment/add-the-mesh-toolkit-package.md), use the **Mesh Toolkit** > **Give Feedback to Microsoft** menu option to provide feedback.
-
-We truly appreciate feedback!
-
 ## Get support
 
 > [!div class="nextstepaction"]

@@ -82,22 +82,8 @@ landingContent:
         links:
           - text: Mesh development overview
             url: develop/development-overview.md
-          - text: Choose your journey
-            url: develop/getting-started/choose-your-journey.md
-          - text: Samples overview
-            url: develop/getting-started/samples/samples-overview.md
-          - text: Start creating your experience
-            url: develop/build-your-basic-environment/create-a-new-project-or-update.md
-      - linkListType: training
-        links:
-          - text: Add Mesh features
-            url: develop/enhance-your-environment/enhanced-features-overview.md
-          - text: Make your experience available for events
-            url: develop/make-your-environment-available/build-and-publish-your-environment.md
-      - linkListType: how-to-guide
-        links:
-          - text: Mesh 101 tutorial
-            url: develop/getting-started/mesh-101-tutorial/mesh-101-01-overview-and-setup.md
+          - text: Test your environment
+            url: develop/test-your-environment.md
 
 # Card
   - title: Resources
@@ -106,8 +92,6 @@ landingContent:
         links:
           - text: Mesh release notes
             url: Resources/mesh-release-notes.md
-          - text: Mesh toolkit release notes
-            url: Resources/mesh-toolkit-release-notes.md
           - text: Immersive spaces in Teams release notes
             url: Resources/immersive-spaces-release-notes.md
           - text: Avatars in Teams release notes
