@@ -11,9 +11,30 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 # Microsoft Mesh overview
 
-## Introducing Microsoft Mesh
 
-> [!VIDEO 36f71bda-5a75-43b8-a674-f566f00fadd8]
+> [!IMPORTANT]
+> **Transition to Teams immersive**  
+> As of December 1st, 2025, Microsoft will retire the Immersive space (3D) view in Teams meetings, Microsoft Mesh on the web, and the Microsoft Mesh PC and Quest apps. These experiences will be replaced by **Teams immersive**, where we are continuing to invest in delivering engaging, collaborative immersive events.  
+> 
+> Click here to learn more about Teams Immersive. Build right in Teams, so you can plan, manage and launch immersive experiences using the tools you already know.  
+> 
+> After this date:  
+> 
+> - The “immersive space (3D)” view will no longer be available in Teams meetings.  
+> - The mesh.cloud.microsoft website will no longer support scheduling events or managing templates and environments.  
+> - The Mesh PC and Quest apps will no longer support attending Mesh events.  
+> 
+> **Important Update: Transition to Teams immersive**  
+> As of December 1st, 2025, Microsoft will retire the Immersive space (3D) view in Teams meetings, Microsoft Mesh on the web, and the Microsoft Mesh PC and Quest apps. These experiences will be replaced by **Teams immersive**, where we are continuing to invest in delivering engaging, collaborative immersive events.  
+> 
+> Click here to learn more about Teams Immersive. Build right in Teams, so you can plan, manage and launch immersive experiences using the tools you already know.  
+> 
+> After this date:  
+> - The “immersive space (3D)” view will no longer be available in Teams meetings.  
+> - The mesh.cloud.microsoft website will no longer support scheduling events or managing templates and environments.  
+> - The Mesh PC and Quest apps will no longer support attending Mesh events.  
+
+## Microsoft Mesh
 
 We're reimagining the way employees come together with [Microsoft Mesh](https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh), powering several immersive experiences across the devices you use every day.
 
