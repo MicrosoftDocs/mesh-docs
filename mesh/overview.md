@@ -13,10 +13,10 @@ keywords: Microsoft Mesh, Immersive spaces, Avatars, getting started, documentat
 
 
 > [!IMPORTANT]
-> **Important Update: Transition to Teams immersive**  
-> As of December 1st, 2025, Microsoft will retire the Immersive space (3D) view in Teams meetings, Microsoft Mesh on the web, and the Microsoft Mesh PC and Quest apps. These experiences will be replaced by [**Teams immersive**](https://aka.ms/teams-immersive-blog), where we are continuing to invest in delivering engaging, collaborative immersive events.  
+> **Important Update: Transition to immersive events in Teams**  
+> As of December 1st, 2025, Microsoft will retire the Immersive space (3D) view in Teams meetings, Microsoft Mesh on the web, and the Microsoft Mesh PC and Quest apps. These experiences will be replaced by [**immersive events in Teams**](https://aka.ms/teams-immersive-blog), where we are continuing to invest in delivering engaging, collaborative immersive events.  
 > 
-> [Get started with Teams Immersive](https://aka.ms/teams-immersive-docs). Build right in Teams, so you can plan, manage and launch immersive experiences using the tools you already know.  
+> [Get started with immersive events in Teams](https://aka.ms/teams-immersive-docs). Build right in Teams, so you can plan, manage and launch immersive experiences using the tools you already know.  
 > 
 > After this date:  
 > - The “immersive space (3D)” view will no longer be available in Teams meetings.  
