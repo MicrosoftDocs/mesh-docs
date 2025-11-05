@@ -1,6 +1,6 @@
 ---
 title: Microsoft Mesh overview
-description: Microsoft Mesh overview article that describes the different experiences of Mesh and the different reasons to use each of them.
+description: Microsoft Mesh overview article that describes the different periences of Mesh and the different reasons to use each of them.
 ms.service: mesh
 author: typride
 ms.author: tmilligan
